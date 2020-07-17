@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 60b279b0-a726-46d2-8c53-76986a007ebb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::Breakpoint Method
 Notifies the debugger when a breakpoint is encountered.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Breakpoint (  
     [in] ICorDebugAppDomain  *pAppDomain,  
     [in] ICorDebugThread     *pThread,  
@@ -31,7 +29,7 @@ HRESULT Breakpoint (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain that contains the breakpoint.  
   
@@ -42,7 +40,7 @@ HRESULT Breakpoint (
  [in] A pointer to an ICorDebugBreakpoint object that represents the breakpoint.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -50,5 +48,6 @@ HRESULT Breakpoint (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## See also
+
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

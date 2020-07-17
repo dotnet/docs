@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: a684f7d7-d0c2-4690-b721-639e613f11f8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugUnmappedStop Enumeration
 Specifies the type of unmapped code that can trigger a halt in code execution by the stepper.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugUnmappedStop {  
     STOP_NONE               = 0x0,  
     STOP_PROLOG             = 0x01,  
@@ -47,10 +45,10 @@ typedef enum CorDebugUnmappedStop {
 |`STOP_ALL`|Stop in all types of unmapped code.|  
   
 ## Remarks  
- Use the [ICorDebugStepper::SetUnmappedStopMask](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-setunmappedstopmask-method.md) method to set the flags that specify the unmapped code in which the stepper will stop.  
+ Use the [ICorDebugStepper::SetUnmappedStopMask](icordebugstepper-setunmappedstopmask-method.md) method to set the flags that specify the unmapped code in which the stepper will stop.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -58,5 +56,6 @@ typedef enum CorDebugUnmappedStop {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+## See also
+
+- [Debugging Enumerations](debugging-enumerations.md)

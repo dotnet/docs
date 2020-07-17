@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: bdda4bd7-4743-4d58-a22b-8067e967db95
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::SetAllThreadsDebugState Method
 Sets the debug state of all managed threads in the process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAllThreadsDebugState (  
     [in] CorDebugThreadState  state,  
     [in] ICorDebugThread      *pExceptThisThread  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `state`  
  [in] A value of the "CorDebugThreadState" enumeration that specifies the state of the thread for debugging.  
   
@@ -38,10 +36,10 @@ HRESULT SetAllThreadsDebugState (
  [in] A pointer to an "ICorDebugThread" object that represents a thread to be exempted from the debug state setting. If this value is null, no thread is exempted.  
   
 ## Remarks  
- The `SetAllThreadsDebugState` method may affect threads that are not visible via [EnumerateThreads Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-enumeratethreads-method.md), so threads that were suspended with the `SetAllThreadsDebugState` method will need to be resumed with the `SetAllThreadsDebugState` method.  
+ The `SetAllThreadsDebugState` method may affect threads that are not visible via [EnumerateThreads Method](icordebugcontroller-enumeratethreads-method.md), so threads that were suspended with the `SetAllThreadsDebugState` method will need to be resumed with the `SetAllThreadsDebugState` method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -49,5 +47,4 @@ HRESULT SetAllThreadsDebugState (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also

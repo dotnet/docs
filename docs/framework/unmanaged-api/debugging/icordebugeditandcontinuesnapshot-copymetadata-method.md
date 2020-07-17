@@ -15,11 +15,10 @@ helpviewer_keywords:
 ms.assetid: bf116077-1f44-4f76-962c-76d0c202017d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueSnapshot::CopyMetaData Method
 `CopyMetaData` is obsolete. Do not call this method.  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

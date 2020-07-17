@@ -1,0 +1,23 @@
+- name: Open-source library guidance
+  href: index.md
+  items:
+  - name: Get started
+    href: get-started.md
+  - name: Cross-platform targeting
+    href: cross-platform-targeting.md
+  - name: Strong naming
+    href: strong-naming.md
+  - name: NuGet
+    href: nuget.md
+    items:
+    - name: Dependencies
+      href: dependencies.md
+    - name: Source Link
+      href: sourcelink.md
+    - name: Publishing
+      href: publish-nuget-package.md
+  - name: Versioning
+    href: versioning.md
+    items:
+    - name: Breaking changes
+      href: breaking-changes.md

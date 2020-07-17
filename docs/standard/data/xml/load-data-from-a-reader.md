@@ -3,19 +3,17 @@ title: "Load Data from a Reader"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 7e74918c-bc72-4977-a49b-e1520a6d8f60
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Load Data from a Reader
 If an XML document is loaded using the <xref:System.Xml.XmlDocument.Load%2A> method and a parameter of an <xref:System.Xml.XmlReader>, there are differences in the behavior that occurs when compared to the behavior of loading data from the other formats. If the reader is in its initial state, <xref:System.Xml.XmlDocument.Load%2A> consumes the entire contents from the reader and builds the XML Document Object Model (DOM) from all the data in the reader.  
   
  If the reader is already positioned on a node somewhere in the document, and the reader is then passed to the <xref:System.Xml.XmlDocument.Load%2A> method, <xref:System.Xml.XmlDocument.Load%2A> attempts to read the current node and all of its siblings, up to the end tag that closes the current depth into memory. The success of the attempted <xref:System.Xml.XmlDocument.Load%2A> depends on the node that the reader is on when the load is attempted, as <xref:System.Xml.XmlDocument.Load%2A> verifies that the XML from the reader is well-formed. If the XML is not well-formed, the <xref:System.Xml.XmlDocument.Load%2A> throws an exception. For example, the following set of nodes contain two root-level elements, the XML is not well-formed, and <xref:System.Xml.XmlDocument.Load%2A> throws an exception.  
   
--   Comment node, followed by an Element node, followed by an Element node, followed by an EndElement node.  
+- Comment node, followed by an Element node, followed by an Element node, followed by an EndElement node.  
   
  The following set of nodes creates an incomplete DOM, because there is no root-level element.  
   
--   Comment node followed by a ProcessingInstruction node followed by a Comment node followed by an EndElement node.  
+- Comment node followed by a ProcessingInstruction node followed by a Comment node followed by an EndElement node.  
   
  This does not throw an exception, and the data is loaded. You can add a root element to the top of these nodes and create well-formed XML that can be saved without error.  
   
@@ -25,4 +23,4 @@ If an XML document is loaded using the <xref:System.Xml.XmlDocument.Load%2A> met
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

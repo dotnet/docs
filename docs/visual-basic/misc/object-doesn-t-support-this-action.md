@@ -1,5 +1,5 @@
 ---
-title: "Object doesn't support this action (Visual Basic)"
+title: "Object doesn't support this action"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID445"
@@ -10,9 +10,10 @@ You referenced a method or property that is not supported by this object.
   
 ## To correct this error  
   
-1.  Read the object's documentation for more information on the object.  
+1. Read the object's documentation for more information on the object.  
   
-2.  Ensure that the names of properties and methods are spelled correctly.  
+2. Ensure that the names of properties and methods are spelled correctly.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../programming-guide/language-features/error-types.md)

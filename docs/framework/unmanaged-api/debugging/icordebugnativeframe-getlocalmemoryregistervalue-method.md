@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 33a19f6e-1029-4d53-af64-19591c6e58ee
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetLocalMemoryRegisterValue Method
 Gets the value of an argument or local variable, of which the low word and high word are stored in the specified register and memory location, respectively, for this native frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalMemoryRegisterValue (  
     [in] CORDB_ADDRESS      highWordAddress,  
     [in] CorDebugRegister   lowWordRegister,  
@@ -33,7 +31,7 @@ HRESULT GetLocalMemoryRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `highWordAddress`  
  [in] A `CORDB_ADDRESS` value that specifies the memory location containing the high word of the value.  
   
@@ -50,7 +48,7 @@ HRESULT GetLocalMemoryRegisterValue (
  [out] A pointer to the address of an "ICorDebugValue" object representing the retrieved value that is stored in the specified register and memory location.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -58,5 +56,4 @@ HRESULT GetLocalMemoryRegisterValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also

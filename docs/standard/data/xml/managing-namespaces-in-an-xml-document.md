@@ -1,15 +1,14 @@
 ---
 title: "Managing Namespaces in an XML Document"
+description: Learn how to manage namespaces in an XML document. XML namespaces associate element and attribute names in an XML document with custom and predefined URIs.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 682643fc-b848-4e42-8c0d-50deeaeb5f2a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Managing Namespaces in an XML Document
 XML namespaces associate element and attribute names in an XML document with custom and predefined URIs. To create these associations, you define prefixes for namespace URIs, and use those prefixes to qualify element and attribute names in XML data. Namespaces prevent element and attribute name collisions, and enable elements and attributes of the same name to be handled and validated differently.  
   
-<a name="declare"></a>   
+<a name="declare"></a>
 ## Declaring namespaces  
  To declare a namespace on an element, you use the `xmlns:` attribute:  
   
@@ -21,12 +20,13 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ```xml  
 <mybook:BOOK xmlns:mybook="http://www.contoso.com/books.dtd">  
-<bb:BOOK xmlns:bb="urn:blueyonderairlines">  
+<bb:BOOK xmlns:bb="urn:blueyonderairlines" />
+</mybook>
 ```  
   
  To signify that an element is a part of a particular namespace, add the namespace prefix to it. For example, if a `Author` element belongs to the `mybook` namespace, it is declared as `<mybook:Author>`.  
   
-<a name="scope"></a>   
+<a name="scope"></a>
 ## Declaration scope  
  A namespace is effective from its point of declaration until the end of the element it was declared in. In this example, the namespace defined in the `BOOK` element doesn't apply to elements outside the `BOOK` element, such as the `Publisher` element:  
   
@@ -49,6 +49,8 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ```xml  
 <BOOK xmlns="http://www.contoso.com/books.dtd">  
+...
+</BOOK>
 ```  
   
 ## Managing namespaces  
@@ -57,7 +59,7 @@ XML namespaces associate element and attribute names in an XML document with cus
  The namespace manager doesn't perform any validation on the namespaces, but assumes that prefixes and namespaces have already been verified and conform to the [W3C Namespaces](https://www.w3.org/TR/REC-xml-names/) specification.  
   
 > [!NOTE]
->  [LINQ to XML](https://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13) doesn't use <xref:System.Xml.XmlNamespaceManager> to manage namespaces. See [Working with XML Namespaces](https://msdn.microsoft.com/library/e3003209-3234-45be-a832-47feb7927430) in the LINQ documentation for information about managing namespaces when using LINQ to XML.  
+> LINQ TO XML in [C#](../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) and [Visual Basic](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md) don't use <xref:System.Xml.XmlNamespaceManager> to manage namespaces. See [Working with XML Namespaces (C#)](../../../csharp/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md) and [Working with XML Namespaces (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md) in the LINQ documentation for information about managing namespaces when using LINQ to XML.  
   
  Here are some of the management and lookup tasks you can perform with the <xref:System.Xml.XmlNamespaceManager> class. For more information and examples, follow the links to the reference page for each method or property.  
   
@@ -75,5 +77,5 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ## See also
 
-- <xref:System.Xml.XmlNamespaceManager>  
-- [XML Documents and Data](../../../../docs/standard/data/xml/index.md)
+- <xref:System.Xml.XmlNamespaceManager>
+- [XML Documents and Data](index.md)

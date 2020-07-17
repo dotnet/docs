@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 9afd0e04-a403-41e2-9528-a6dcbcdcbd4d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain3::GetCachedWinRTTypes Method
-Gets an enumerator for all cached [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types.  
+Gets an enumerator for all cached Windows Runtime types.  
   
 ## Syntax  
   
-```  
-HRESULT GetCachedWinRTTypes (   
+```cpp  
+HRESULT GetCachedWinRTTypes (
     [out] ICorDebugGuidToTypeEnum **ppGuidToTypeEnum)  
 ;  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppGuidToTypeEnum`  
- [out] A pointer to an [ICorDebugGuidToTypeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md) interface object that can enumerate the managed representations of [!INCLUDE[wrt](../../../../includes/wrt-md.md)] types currently loaded in the application domain.  
+ [out] A pointer to an [ICorDebugGuidToTypeEnum](icordebugguidtotypeenum-interface.md) interface object that can enumerate the managed representations of Windows Runtime types currently loaded in the application domain.  
   
 ## Requirements  
- **Platforms:** [!INCLUDE[wrt](../../../../includes/wrt-md.md)]  
+ **Platforms:** Windows Runtime  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -42,5 +40,6 @@ HRESULT GetCachedWinRTTypes (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorDebugAppDomain3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain3-interface.md)
+## See also
+
+- [ICorDebugAppDomain3 Interface](icordebugappdomain3-interface.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 57c33c58-bf0b-4533-b569-e6a682d02cba
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IApartmentCallback Interface
 Provides methods for making callbacks within an apartment. An *apartment* is a logical container within a process for objects that share the same thread access requirements.  
@@ -24,10 +22,10 @@ Provides methods for making callbacks within an apartment. An *apartment* is a l
   
 |Method|Description|  
 |------------|-----------------|  
-|[DoCallback Method](../../../../docs/framework/unmanaged-api/hosting/iapartmentcallback-docallback-method.md)|Executes the specified function within an apartment.|  
+|[DoCallback Method](iapartmentcallback-docallback-method.md)|Executes the specified function within an apartment.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -35,5 +33,6 @@ Provides methods for making callbacks within an apartment. An *apartment* is a l
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [Hosting Interfaces](hosting-interfaces.md)

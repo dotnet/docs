@@ -15,25 +15,24 @@ helpviewer_keywords:
 ms.assetid: c7f941cd-e25b-4b85-b1ce-5f77c9208fa9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetCheckSumAlgorithmId Method
 Gets the checksum algorithm identifier, or returns a GUID of all zeros if there is no checksum.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCheckSumAlgorithmId(  
     [out, retval] GUID*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that receives the checksum algorithm identifier.  
   
 ## Return Value  
  S_OK if the method succeeds.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

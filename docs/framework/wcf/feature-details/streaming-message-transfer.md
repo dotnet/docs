@@ -6,11 +6,11 @@ ms.assetid: 72a47a51-e5e7-4b76-b24a-299d51e0ae5a
 # Streaming Message Transfer
 Windows Communication Foundation (WCF) transports support two modes for transferring messages:  
   
--   Buffered transfers hold the entire message in a memory buffer until the transfer is complete. A buffered message must be completely delivered before a receiver can read it.  
+- Buffered transfers hold the entire message in a memory buffer until the transfer is complete. A buffered message must be completely delivered before a receiver can read it.  
   
--   Streamed transfers expose the message as a stream. The receiver starts processing the message before it is completely delivered.  
+- Streamed transfers expose the message as a stream. The receiver starts processing the message before it is completely delivered.  
   
--   Streamed transfers can improve the scalability of a service by eliminating the requirement for large memory buffers. Whether changing the transfer mode improves scalability depends on the size of the messages being transferred. Large message sizes favor using streamed transfers.  
+- Streamed transfers can improve the scalability of a service by eliminating the requirement for large memory buffers. Whether changing the transfer mode improves scalability depends on the size of the messages being transferred. Large message sizes favor using streamed transfers.  
   
  By default, the HTTP, TCP/IP, and named pipe transports use buffered transfers. This document describes how to switch these transports from a buffered to streamed transfer mode and the consequences of doing so.  
   
@@ -21,7 +21,7 @@ Windows Communication Foundation (WCF) transports support two modes for transfer
   
  The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection, or to servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a client class for a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
- For code samples, see [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md).  
+ For code samples, see [How to: Enable Streaming](how-to-enable-streaming.md).  
   
 ## Enabling Asynchronous Streaming  
  To enable asynchronous streaming, add the  <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior> endpoint behavior to the service host and set its <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.AsynchronousSendEnabled%2A> property to `true`.  
@@ -35,10 +35,11 @@ Windows Communication Foundation (WCF) transports support two modes for transfer
   
  Some WCF features, such as reliable messaging, transactions, and SOAP message-level security, rely on buffering messages for transmissions. Using these features may reduce or eliminate the performance benefits gained by using streaming. To secure a streamed transport, use transport-level security only or use transport-level security plus authentication-only message security.  
   
- SOAP headers are always buffered, even when the transfer mode is set to streamed. The headers for a message must not exceed the size of the `MaxBufferSize` transport quota. For more information about this setting, see [Transport Quotas](../../../../docs/framework/wcf/feature-details/transport-quotas.md).  
+ SOAP headers are always buffered, even when the transfer mode is set to streamed. The headers for a message must not exceed the size of the `MaxBufferSize` transport quota. For more information about this setting, see [Transport Quotas](transport-quotas.md).  
   
 ## Differences Between Buffered and Streamed Transfers  
  Changing the transfer mode from buffered to streamed also changes the native channel shape of the TCP and named pipe transports. For buffered transfers, the native channel shape is <xref:System.ServiceModel.Channels.IDuplexSessionChannel>. For streamed transfers, the native channels are <xref:System.ServiceModel.Channels.IRequestChannel> and <xref:System.ServiceModel.Channels.IReplyChannel>. Changing the transfer mode in an existing application that uses these transports directly (that is, not through a service contract) requires changing the expected channel shape for channel factories and listeners.  
   
-## See Also  
- [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)
+## See also
+
+- [How to: Enable Streaming](how-to-enable-streaming.md)

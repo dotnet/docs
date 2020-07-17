@@ -33,16 +33,16 @@ You can use constraints to enforce restrictions on the data in a <xref:System.Da
 Dim custOrderFK As ForeignKeyConstraint = New ForeignKeyConstraint("CustOrderFK", _  
   custDS.Tables("CustTable").Columns("CustomerID"), _  
   custDS.Tables("OrdersTable").Columns("CustomerID"))  
-custOrderFK.DeleteRule = Rule.None    
+custOrderFK.DeleteRule = Rule.None
 ' Cannot delete a customer value that has associated existing orders.  
 custDS.Tables("OrdersTable").Constraints.Add(custOrderFK)  
 ```  
   
 ```csharp  
 ForeignKeyConstraint custOrderFK = new ForeignKeyConstraint("CustOrderFK",  
-  custDS.Tables["CustTable"].Columns["CustomerID"],   
+  custDS.Tables["CustTable"].Columns["CustomerID"],
   custDS.Tables["OrdersTable"].Columns["CustomerID"]);  
-custOrderFK.DeleteRule = Rule.None;    
+custOrderFK.DeleteRule = Rule.None;
 // Cannot delete a customer value that has associated existing orders.  
 custDS.Tables["OrdersTable"].Constraints.Add(custOrderFK);  
 ```  
@@ -80,17 +80,18 @@ custDS.Tables("Customers").Constraints.Add(custUnique)
   
 ```csharp  
 DataTable custTable = custDS.Tables["Customers"];  
-UniqueConstraint custUnique = new UniqueConstraint(new DataColumn[]   
-    {custTable.Columns["CustomerID"],   
+UniqueConstraint custUnique = new UniqueConstraint(new DataColumn[]
+    {custTable.Columns["CustomerID"],
     custTable.Columns["CompanyName"]});  
 custDS.Tables["Customers"].Constraints.Add(custUnique);  
 ```  
   
-## See Also  
- <xref:System.Data.DataRelation>  
- <xref:System.Data.DataTable>  
- <xref:System.Data.ForeignKeyConstraint>  
- <xref:System.Data.UniqueConstraint>  
- [DataTable Schema Definition](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/datatable-schema-definition.md)  
- [DataSets, DataTables, and DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- <xref:System.Data.DataRelation>
+- <xref:System.Data.DataTable>
+- <xref:System.Data.ForeignKeyConstraint>
+- <xref:System.Data.UniqueConstraint>
+- [DataTable Schema Definition](datatable-schema-definition.md)
+- [DataSets, DataTables, and DataViews](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

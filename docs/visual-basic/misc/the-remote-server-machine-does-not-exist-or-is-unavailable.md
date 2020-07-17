@@ -1,5 +1,5 @@
 ---
-title: "The remote server machine does not exist or is unavailable (Visual Basic)"
+title: "The remote server machine does not exist or is unavailable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID462"
@@ -10,7 +10,8 @@ You are trying to connect to a remote server that is unavailable or does not exi
   
 ## To correct this error  
   
--   Reconnect to the network and try again.  
+- Reconnect to the network and try again.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../programming-guide/language-features/error-types.md)

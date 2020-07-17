@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ced9c82e-d7b0-4806-a151-98b6611d3097
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess3 Interface
 Controls custom debugger notifications.  
@@ -24,16 +22,16 @@ Controls custom debugger notifications.
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetEnableCustomNotification Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess3-setenablecustomnotification-method.md)|Enables and disables custom debugger notifications of the specified type.|  
+|[SetEnableCustomNotification Method](icordebugprocess3-setenablecustomnotification-method.md)|Enables and disables custom debugger notifications of the specified type.|  
   
 ## Remarks  
  This interface logically extends the ICorDebugProcess and ICorDebugProcess2 interfaces.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -41,6 +39,7 @@ Controls custom debugger notifications.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

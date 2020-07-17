@@ -1,8 +1,6 @@
 ---
 title: "Ref return values and ref locals (C# Guide)"
 description: "Learn how to define and use ref return and ref local values"
-author: "rpetrusha"
-ms.author: "ronpet"
 ms.date: "04/04/2018"
 ---
 # Ref returns and ref locals
@@ -21,12 +19,12 @@ There are some restrictions on the expression that a method can return as a refe
 
 - The return value cannot be the literal `null`. Returning `null` generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
-   A method with a ref return can return an alias to a variable whose value is currently the null (uninstantiated) value or a [nullable type](../nullable-types/index.md) for a value type.
- 
+   A method with a ref return can return an alias to a variable whose value is currently the null (uninstantiated) value or a [nullable value type](../../language-reference/builtin-types/nullable-value-types.md) for a value type.
+
 - The return value cannot be a constant, an enumeration member, the by-value return value from a property, or a method of a `class` or `struct`. Violating this rule generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
 In addition, reference return values are not allowed on async methods. An asynchronous method may return before it has finished execution, while its return value is still unknown.
- 
+
 ## Defining a ref return value
 
 A method that returns a *reference return value* must satisfy the following two conditions:
@@ -54,7 +52,6 @@ The ref return value is an alias to another variable in the called method's scop
 - If you pass it to another method *by reference*, you are passing a reference to the variable it aliases.
 - When you make a [ref local](#ref-locals) alias, you make a new alias to the same variable.
 
-
 ## Ref locals
 
 Assume the `GetContactInformation` method is declared as a ref return:
@@ -79,7 +76,7 @@ ref Person p = ref contacts.GetContactInformation("Brandie", "Best");
 
 Subsequent usage of `p` is the same as using the variable returned by `GetContactInformation` because `p` is an alias for that variable. Changes to `p` also change the variable returned from `GetContactInformation`.
 
-The `ref` keyword is used both before the local variable declaration *and* before the method call. 
+The `ref` keyword is used both before the local variable declaration *and* before the method call.
 
 You can access a value by reference in the same way. In some cases, accessing a value by reference increases performance by avoiding a potentially expensive copy operation. For example, the following statement shows how one can define a ref local value that is used to reference a value.
 
@@ -87,7 +84,7 @@ You can access a value by reference in the same way. In some cases, accessing a 
 ref VeryLargeStruct reflocal = ref veryLargeStruct;
 ```
 
-The `ref` keyword is used both before the local variable declaration *and* before the value in the second example. Failure to include both `ref` keywords in the variable declaration and assignment in both examples results in compiler error CS8172, "Cannot initialize a by-reference variable with a value." 
+The `ref` keyword is used both before the local variable declaration *and* before the value in the second example. Failure to include both `ref` keywords in the variable declaration and assignment in both examples results in compiler error CS8172, "Cannot initialize a by-reference variable with a value."
 
 Prior to C# 7.3, ref local variables couldn't be reassigned to refer to different storage after being initialized. That restriction has been removed. The following example shows a reassignment:
 
@@ -100,7 +97,7 @@ refLocal = ref anotherVeryLargeStruct; // reassigned, refLocal refers to differe
 
 ## Ref returns and ref locals: an example
 
-The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0. 
+The following example defines a `NumberStore` class that stores an array of integer values. The `FindNumber` method returns by reference the first number that is greater than or equal to the number passed as an argument. If no number is greater than or equal to the argument, the method returns the number in index 0.
 
 [!code-csharp[ref-returns](../../../../samples/snippets/csharp/programming-guide/ref-returns/NumberStore.cs#1)]
 
@@ -120,5 +117,5 @@ closer to the end of the array.
 
 ## See also
 
-- [ref keyword](../../language-reference/keywords/ref.md)  
+- [ref keyword](../../language-reference/keywords/ref.md)
 - [Write safe efficient code](../../write-safe-efficient-code.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLRCreateInstance Function
-Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
+Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CLRCreateInstance(  
     [in]  REFCLSID  clsid,  
     [in]  REFIID     riid,  
@@ -31,7 +29,7 @@ HRESULT CLRCreateInstance(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `clsid`  
  [in] One of three class identifiers: CLSID_CLRMetaHost, CLSID_CLRMetaHostPolicy, or CLSID_CLRDebugging.  
   
@@ -39,7 +37,7 @@ HRESULT CLRCreateInstance(
  [in] One of three interface identifiers (IIDs): IID_ICLRMetaHost, IID_ICLRMetaHostPolicy, or IID_ICLRDebugging.  
   
  `ppInterface`  
- [out] One of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
+ [out] One of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
 ## Return Value  
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
@@ -60,7 +58,7 @@ HRESULT CLRCreateInstance(
   
  The following code shows how to use `CLRCreateInstance` to get all three interfaces:  
   
-```  
+```cpp  
 #include <metahost.h>  
 #pragma comment(lib, "mscoree.lib")  
   
@@ -77,7 +75,7 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -85,5 +83,6 @@ hr = CLRCreateInstance (CLSID_CLRDebugging, IID_ICLRDebugging,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+
+- [Hosting](index.md)

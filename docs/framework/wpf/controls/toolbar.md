@@ -13,15 +13,15 @@ The <xref:System.Windows.Controls.ToolBar> control is a container for a group of
   
  The following illustrations show horizontal and vertical <xref:System.Windows.Controls.ToolBar> controls.  
   
- ![Horizontal ToolBar](../../../../docs/framework/wpf/controls/media/ss-ctl-horztoolbar.GIF "SS_CTL_horztoolbar")  
+ ![Horizontal ToolBar](./media/ss-ctl-horztoolbar.GIF "SS_CTL_horztoolbar")  
 Horizontal Toolbar  
   
- ![Vertical ToolBar](../../../../docs/framework/wpf/controls/media/ss-ctl-verttoolbar.GIF "SS_CTL_verttoolbar")  
+ ![Vertical ToolBar](./media/ss-ctl-verttoolbar.GIF "SS_CTL_verttoolbar")  
 Vertical Toolbar  
   
 ## In This Section  
- [ToolBar Overview](../../../../docs/framework/wpf/controls/toolbar-overview.md)  
-  [Style Controls on a ToolBar](../../../../docs/framework/wpf/controls/how-to-style-controls-on-a-toolbar.md)  
+ [ToolBar Overview](toolbar-overview.md)  
+  [Style Controls on a ToolBar](how-to-style-controls-on-a-toolbar.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.ToolBar>  

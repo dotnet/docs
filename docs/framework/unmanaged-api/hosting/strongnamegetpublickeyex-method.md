@@ -15,16 +15,14 @@ helpviewer_keywords:
 ms.assetid: 63d8260c-fb32-4f8f-a357-768afd570f68
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameGetPublicKeyEx Method
 Gets the public key from a public/private key pair, and specifies a hash algorithm and a signature algorithm.  
   
 ## Syntax  
   
-```  
-HRESULT StrongNameGetPublicKey (   
+```cpp  
+HRESULT StrongNameGetPublicKey (
     [in]  LPCWSTR   pwzKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  
     [in]  ULONG     cbKeyBlob,  
@@ -35,7 +33,7 @@ HRESULT StrongNameGetPublicKey (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzKeyContainer`  
  [in] The name of the key container that contains the public/private key pair. If `pbKeyBlob` is null, `szKeyContainer` must specify a valid container within the cryptographic service provider (CSP). In this case, the `StrongNameGetPublicKeyEx` method extracts the public key from the key pair stored in the container.  
   
@@ -50,7 +48,7 @@ HRESULT StrongNameGetPublicKey (
  [in] The size, in bytes, of `pbKeyBlob`.  
   
  `ppbPublicKeyBlob`  
- [out] The returned public key BLOB. The `ppbPublicKeyBlob` parameter is allocated by the common language runtime and returned to the caller. The caller must free the memory by using the [ICLRStrongName::StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md) method.  
+ [out] The returned public key BLOB. The `ppbPublicKeyBlob` parameter is allocated by the common language runtime and returned to the caller. The caller must free the memory by using the [ICLRStrongName::StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md) method.  
   
  `pcbPublicKeyBlob`  
  [out] The size of the returned public key BLOB.  
@@ -62,10 +60,10 @@ HRESULT StrongNameGetPublicKey (
  [in] Reserved for future use; defaults to null.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Remarks  
- The public key is contained in a [PublicKeyBlob](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md) structure.  
+ The public key is contained in a [PublicKeyBlob](../strong-naming/publickeyblob-structure.md) structure.  
   
 ## Remarks  
  The following table shows the set of accepted values for the `uHashAlgId` parameter.  
@@ -79,7 +77,7 @@ HRESULT StrongNameGetPublicKey (
 |SHA-512|0x800e|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -87,8 +85,9 @@ HRESULT StrongNameGetPublicKey (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [StrongNameTokenFromPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfrompublickey-method.md)  
- [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)  
- [StrongNameGetPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetpublickey-method.md)
+## See also
+
+- [StrongNameTokenFromPublicKey Method](iclrstrongname-strongnametokenfrompublickey-method.md)
+- [PublicKeyBlob Structure](../strong-naming/publickeyblob-structure.md)
+- [ICLRStrongName Interface](iclrstrongname-interface.md)
+- [StrongNameGetPublicKey Method](iclrstrongname-strongnamegetpublickey-method.md)

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::FindClosestLine Method
 Returns the closest line that is a sequence point, given a line in this document that may or may not be a sequence point.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindClosestLine(  
     [in]  ULONG32  line,  
     [out, retval] ULONG32*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `line`  
  [in] A line in this document.  
   
@@ -39,5 +37,6 @@ HRESULT FindClosestLine(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

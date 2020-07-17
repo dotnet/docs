@@ -1,5 +1,6 @@
 ---
 title: "How to: Create and Initialize Trace Sources"
+description: Create and initialize trace sources using TraceSource class in .NET. This class provides methods for tracing events and data and issuing informational traces.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -9,34 +10,32 @@ helpviewer_keywords:
   - "initializing trace sources"
   - "configuration files [.NET Framework], trace sources"
 ms.assetid: f88dda6f-5fda-45be-9b3c-745a9b708c4d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Create and Initialize Trace Sources
 The <xref:System.Diagnostics.TraceSource> class is used by applications to produce traces that can be associated with the application. <xref:System.Diagnostics.TraceSource> provides tracing methods that allow you to easily trace events, trace data, and issue informational traces. Trace output from <xref:System.Diagnostics.TraceSource> can be created and initialized with or without the use of configuration files. This topic provides instructions for both options. However, we recommend that you use configuration files to facilitate the reconfiguration of the traces produced by trace sources at run time.  
   
 ### To create and initialize a trace source using a configuration file  
   
-1.  Create a Visual Studio console application project and replace the supplied code with the following code. This code logs errors and warnings and outputs some of them to the console, and some of them to the myListener file that is created by the entries in the configuration file.  
+1. Create a Visual Studio console application project (.NET Framework) and replace the supplied code with the following code. This code logs errors and warnings and outputs some of them to the console, and some of them to the myListener file that is created by the entries in the configuration file.  
   
      [!code-csharp[TraceSourceExample1#1](../../../samples/snippets/csharp/VS_Snippets_CLR/tracesourceexample1/cs/program.cs#1)]
      [!code-vb[TraceSourceExample1#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/tracesourceexample1/vb/program.vb#1)]  
   
-2.  Add an application configuration file, if one is not present, to the project to initialize the trace source named `TraceSourceApp` in the code example in step 1.  
+2. Add an application configuration file, if one is not present, to the project to initialize the trace source named `TraceSourceApp` in the code example in step 1.  
   
-3.  Replace the default configuration file content with the following settings to initialize a console trace listener and a text writer trace listener for the trace source that was created in step 1.  
+3. Replace the default configuration file content with the following settings to initialize a console trace listener and a text writer trace listener for the trace source that was created in step 1.  
   
     ```xml  
     <configuration>  
       <system.diagnostics>  
         <sources>  
-          <source name="TraceSourceApp"   
-            switchName="sourceSwitch"   
+          <source name="TraceSourceApp"
+            switchName="sourceSwitch"
             switchType="System.Diagnostics.SourceSwitch">  
             <listeners>  
-              <add name="console"   
+              <add name="console"
                 type="System.Diagnostics.ConsoleTraceListener">  
-                <filter type="System.Diagnostics.EventTypeFilter"   
+                <filter type="System.Diagnostics.EventTypeFilter"
                   initializeData="Error"/>  
               </add>  
               <add name="myListener"/>  
@@ -48,10 +47,10 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
           <add name="sourceSwitch" value="Error"/>  
         </switches>  
         <sharedListeners>  
-          <add name="myListener"   
-            type="System.Diagnostics.TextWriterTraceListener"   
+          <add name="myListener"
+            type="System.Diagnostics.TextWriterTraceListener"
             initializeData="myListener.log">  
-            <filter type="System.Diagnostics.EventTypeFilter"   
+            <filter type="System.Diagnostics.EventTypeFilter"
               initializeData="Error"/>  
           </add>  
         </sharedListeners>  
@@ -67,14 +66,15 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
   
 ### To initialize trace sources, listeners, and filters without a configuration file  
   
--   Use the following example code to enable tracing through a trace source without using a configuration file. This is not a recommended practice, but there may be circumstances in which you do not want to depend on configuration files to ensure tracing.  
+- Use the following example code to enable tracing through a trace source without using a configuration file. This is not a recommended practice, but there may be circumstances in which you do not want to depend on configuration files to ensure tracing.  
   
      [!code-csharp[TraceSourceExample2#1](../../../samples/snippets/csharp/VS_Snippets_CLR/tracesourceexample2/cs/program.cs#1)]
      [!code-vb[TraceSourceExample2#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/tracesourceexample2/vb/program.vb#1)]  
   
-## See Also  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TextWriterTraceListener>  
- <xref:System.Diagnostics.ConsoleTraceListener>  
- <xref:System.Diagnostics.EventTypeFilter>  
- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
+## See also
+
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TextWriterTraceListener>
+- <xref:System.Diagnostics.ConsoleTraceListener>
+- <xref:System.Diagnostics.EventTypeFilter>
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)

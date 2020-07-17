@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for authenticationModules (Network Settings)"
+title: "<clear> Element for authenticationModules (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/clear"
@@ -11,14 +11,14 @@ helpviewer_keywords:
   - "authenticationModules, clear element"
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
 ---
-# &lt;clear&gt; Element for authenticationModules (Network Settings)
+# \<clear> Element for authenticationModules (Network Settings)
 Clears all authentication modules from the application.  
-  
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<clear>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+
 ## Syntax  
   
 ```xml  
@@ -38,7 +38,7 @@ Clears all authentication modules from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
  The `clear` element removes all authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
@@ -59,7 +59,8 @@ Clears all authentication modules from the application.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.IAuthenticationModule>  
-- <xref:System.Net.AuthenticationManager>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
+- [Network Settings Schema](index.md)

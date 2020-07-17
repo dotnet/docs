@@ -15,25 +15,23 @@ helpviewer_keywords:
 ms.assetid: d6dbdc4a-6115-455d-a3f3-704a81d3646b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerThreadEnum::GetCount Method
 Gets the number of threads that are used by the application.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (    [out] ULONG * pcelt  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [out] The number of threads used by the application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -41,6 +39,7 @@ HRESULT GetCount (    [out] ULONG * pcelt
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerThreadEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+## See also
+
+- [ICorProfilerThreadEnum Interface](icorprofilerthreadenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

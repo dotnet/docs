@@ -1,5 +1,5 @@
 ---
-title: "AddImport Method1"
+title: "AddImport Method"
 ms.date: "03/30/2017"
 api_name: 
   - "AddImport"
@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4fedf8a0-08c8-43d0-aa00-20f2a521c991
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
-# AddImport Method1
+# AddImport Method
 Adds imports to the assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddImport(  
     mdAssembly      AssemblyID,  
     mdToken         ImportToken,  
@@ -32,15 +30,15 @@ HRESULT AddImport(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  Unique ID of assembly to be augmented.  
   
  `ImportToken`  
- Unique ID, retrieved from [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md), of file to be imported.  
+ Unique ID, retrieved from [ImportFile Method](importfile-method.md), of file to be imported.  
   
  `dwFlags`  
- COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definefile-method.md).  
+ COM+ FileDef flags such as `ffContainsNoMetaData` and `ffWriteable`. `dwFlags` is passed to [DefineFile Method](../metadata/imetadataassemblyemit-definefile-method.md).  
   
  `pFileToken`  
  Pointer to token that receives the ID for the resulting file.  
@@ -51,7 +49,8 @@ HRESULT AddImport(
 ## Requirements  
  Requires alink.h  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

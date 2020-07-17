@@ -1,26 +1,26 @@
 ---
-title: "&lt;clientCertificate&gt; of &lt;clientCredentials&gt; Element"
+title: "<clientCertificate> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: 3b3fa000-3434-4142-a178-11903bdd2c5d
 ---
-# &lt;clientCertificate&gt; of &lt;clientCredentials&gt; Element
+# \<clientCertificate> of \<clientCredentials> Element
 Defines an X.509 certificate used to authenticate a client to a service.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
-\<clientCredentials>  
-\<clientCertificate>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clientCertificate>**  
   
 ## Syntax  
   
 ```xml  
-<clientCertificate findValue="String"   
-    storeLocation="LocalMachine/CurrentUser"  
-    storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
-X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"  
-/>  
+<clientCertificate findValue="String"
+                   storeLocation="LocalMachine/CurrentUser"
+                   storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"
+                   X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />
 ```  
   
 ## Attributes and Elements  
@@ -42,20 +42,21 @@ X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
+|[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
   
 ## Remarks  
- This configuration element specifies the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
+ This configuration element specifies the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md).  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ClientCertificate%2A>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A>  
- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>  
- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [How to: Specify Client Credential Values](../../../../../docs/framework/wcf/how-to-specify-client-credential-values.md)  
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.ClientCertificate%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ClientCredentials.ClientCertificate%2A>
+- <xref:System.ServiceModel.Configuration.X509InitiatorCertificateServiceElement>
+- <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md)
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

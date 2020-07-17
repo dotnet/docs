@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Socket"
+description: Learn how to initialize a socket to communicate with remote devices. Use the Socket class to specify the address family, socket type, and protocol type.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -25,7 +26,7 @@ Before you can use a socket to communicate with remote devices, the socket must 
  The following example creates a Socket that can be used to communicate on a TCP/IP-based network, such as the Internet.  
   
 ```csharp  
-Socket s = new Socket(AddressFamily.InterNetwork,   
+Socket s = new Socket(AddressFamily.InterNetwork,
    SocketType.Stream, ProtocolType.Tcp);  
 ```  
   
@@ -37,7 +38,7 @@ Dim s as New Socket(AddressFamily.InterNetwork, _
  To use UDP instead of TCP, change the protocol type, as in the following example:  
   
 ```csharp  
-Socket s = new Socket(AddressFamily.InterNetwork,   
+Socket s = new Socket(AddressFamily.InterNetwork,
    SocketType.Dgram, ProtocolType.Udp);  
 ```  
   
@@ -54,6 +55,7 @@ Dim s as New Socket(AddressFamily.InterNetwork, _
   
  After a **Socket** is created, it can either initiate a connection to a remote endpoint or receive connections from remote devices.  
   
-## See Also  
- [Using Client Sockets](../../../docs/framework/network-programming/using-client-sockets.md)  
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)
+## See also
+
+- [Using Client Sockets](using-client-sockets.md)
+- [Listening with Sockets](listening-with-sockets.md)

@@ -8,6 +8,7 @@ api_location:
   - "clr.dll"
   - "mscorwks.dll"
   - "mscoreei.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -17,33 +18,31 @@ helpviewer_keywords:
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorExitProcess Function
 Shuts down the current unmanaged process.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. Use the [ICLRMetaHost::ExitProcess](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-exitprocess-method.md) method instead.  
+ This function has been deprecated in the .NET Framework 4. Use the [ICLRMetaHost::ExitProcess](iclrmetahost-exitprocess-method.md) method instead.  
   
 ## Syntax  
   
-```  
-void STDMETHODCALLTYPE CorExitProcess (   
+```cpp  
+void STDMETHODCALLTYPE CorExitProcess (
   int  exitCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `exitCode`  
  An integer that specifies the process exit code.  
   
 ## Remarks  
   
 > [!NOTE]
->  Beginning with the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)], `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.  
+> Beginning with the .NET Framework 4, `CorExitProcess` exits every started runtime in the process, not just the runtime to which the legacy APIs have been bound.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -51,5 +50,6 @@ void STDMETHODCALLTYPE CorExitProcess (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a2267d39-69d1-4de1-bf37-f752cafacc71
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetStringSection Method
 Gets a string representation of the code section referenced by the specified handle.  
@@ -25,18 +23,18 @@ Gets a string representation of the code section referenced by the specified han
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStringSection (  
     [in, out] HCEESECTION     *section  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in, out] The handle to the code section.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -44,5 +42,6 @@ HRESULT GetStringSection (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+
+- [ICeeGen Interface](iceegen-interface.md)

@@ -1,5 +1,6 @@
 ---
 title: "How to: Set JPEG Compression Level"
+description: Learn how to adjust the quality of a JPEG image by modifying its compression level on Windows Forms.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -117,13 +118,14 @@ End Function
 ## Compiling the Code  
  This example requires:  
   
--   A Windows Forms application.  
+- A Windows Forms application.  
   
--   A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
+- A <xref:System.Windows.Forms.PaintEventArgs>, which is a parameter of <xref:System.Windows.Forms.PaintEventHandler>.  
   
--   An image file that is named `TestPhoto.jpg` and located at **c:\\**.  
+- An image file that is named `TestPhoto.jpg` and located at **c:\\**.  
   
-## See Also  
- [How to: Determine the Parameters Supported by an Encoder](../../../../docs/framework/winforms/advanced/how-to-determine-the-parameters-supported-by-an-encoder.md)  
- [Types of Bitmaps](../../../../docs/framework/winforms/advanced/types-of-bitmaps.md)  
- [Using Image Encoders and Decoders in Managed GDI+](../../../../docs/framework/winforms/advanced/using-image-encoders-and-decoders-in-managed-gdi.md)
+## See also
+
+- [How to: Determine the Parameters Supported by an Encoder](how-to-determine-the-parameters-supported-by-an-encoder.md)
+- [Types of Bitmaps](types-of-bitmaps.md)
+- [Using Image Encoders and Decoders in Managed GDI+](using-image-encoders-and-decoders-in-managed-gdi.md)

@@ -1,164 +1,163 @@
 ---
 title: dotnet command
-description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
-ms.date: 06/04/2018
+description: Learn about the dotnet command (the generic driver for the .NET Core CLI) and its usage.
+ms.date: 02/13/2020
 ---
 # dotnet command
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 ## Name
 
-`dotnet` - A tool for managing .NET source code and binaries.
+`dotnet` - The generic driver for the .NET Core CLI.
 
 ## Synopsis
 
-# [.NET Core 2.1](#tab/netcore21)
+To get information about the available commands and the environment:
+
+```dotnetcli
+dotnet [--version] [--info] [--list-runtimes] [--list-sdks]
+
+dotnet -h|--help
 ```
-dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
-    [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
+
+To run a command (requires SDK installation):
+
+```dotnetcli
+dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity <LEVEL>]
+    [command-options] [arguments]
 ```
-# [.NET Core 2.0](#tab/netcore20)
+
+To run an application:
+
+```dotnetcli
+dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
+    <PATH_TO_APPLICATION> [arguments]
+
+dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
+    <PATH_TO_APPLICATION> [arguments]
 ```
-dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics]
-    [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
-```
-# [.NET Core 1.x](#tab/netcore1x)
-```
-dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
-    [-h|--help] [--info] [-v|--verbosity] [--version]
-```
----
+
+`--roll-forward` is available since .NET Core 3.x. Use `--roll-forward-on-no-candidate-fx` for .NET Core 2.x.
 
 ## Description
 
-`dotnet` is a tool for managing .NET source code and binaries. It exposes commands that perform specific tasks, such as [`dotnet build`](dotnet-build.md) and [`dotnet run`](dotnet-run.md). Each command defines its own arguments. Type `--help` after each command to access brief help documentation.
+The `dotnet` command has two functions:
 
-`dotnet` can be used to run applications, by specifying an application DLL, such as `dotnet myapp.dll`. See [.NET Core application deployment](../deploying/index.md) for to learn about deployment options.
+- It provides commands for working with .NET Core projects.
+
+  For example, [`dotnet build`](dotnet-build.md) builds a project. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
+
+- It runs .NET Core applications.
+
+  You specify the path to an application `.dll` file to run the application.  To run the application means to find and execute the entry point, which in the case of console apps is the `Main` method. For example, `dotnet myapp.dll` runs the `myapp` application. See [.NET Core application deployment](../deploying/index.md) to learn about deployment options.
 
 ## Options
 
-# [.NET Core 2.1](#tab/netcore21)
+Different options are available for `dotnet` by itself, for running a command, and for running an application.
 
-`--additional-deps <PATH>`
+### Options for dotnet by itself
 
-Path to additional *deps.json* file.
+The following options are for `dotnet` by itself. For example, `dotnet --info`. They print out information about the environment.
 
-`--additionalprobingpath <PATH>`
+- **`--info`**
 
-Path containing probing policy and assemblies to probe.
+  Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
 
-`-d|--diagnostics`
+- **`--version`**
 
-Enables diagnostic output.
+  Prints out the version of the .NET Core SDK in use.
 
-`--fx-version <VERSION>`
+- **`--list-runtimes`**
 
-Version of the .NET Core runtime to use to run the application.
+  Prints out a list of the installed .NET Core runtimes. An x86 version of the SDK lists only x86 runtimes, and an x64 version of the SDK lists only x64 runtimes.
 
-`-h|--help`
+- **`--list-sdks`**
 
-Prints out documentation for a given command, such as `dotnet build --help`. `dotnet --help` prints a list of available commands.
+  Prints out a list of the installed .NET Core SDKs.
 
-`--info`
+- **`-h|--help`**
 
-Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
+  Prints out a list of available commands.
 
-`--list-runtimes`
+### SDK options for running a command
 
-Displays the installed .NET Core runtimes.
+The following options are for `dotnet` with a command. For example, `dotnet build --help`.
 
-`--list-sdks`
+- **`-d|--diagnostics`**
 
-Displays the installed .NET Core SDKs.
+  Enables diagnostic output.
 
-`--roll-forward-on-no-candidate-fx`
+- **`-v|--verbosity <LEVEL>`**
 
- Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available.
 
-`-v|--verbosity <LEVEL>`
+- **`-h|--help`**
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
+  Prints out documentation for a given command, such as `dotnet build --help`.
 
-`--version`
+- **`command options`**
 
-Prints out the version of the .NET Core SDK in use.
+  Each command defines options specific to that command. See specific command page for a list of available options.
 
-# [.NET Core 2.0](#tab/netcore20)
+### Runtime options
 
-`--additional-deps <PATH>`
+The following options are available when `dotnet` runs an application. For example, `dotnet myapp.dll --roll-forward Major`.
 
-Path to additional *deps.json* file.
+- **`--additionalprobingpath <PATH>`**
 
-`--additionalprobingpath <PATH>`
+  Path containing probing policy and assemblies to probe.
 
-Path containing probing policy and assemblies to probe.
+- **`--additional-deps <PATH>`**
 
-`-d|--diagnostics`
+  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
-Enables diagnostic output.
+- **`--depsfile <PATH_TO_DEPSFILE>`**
 
-`--fx-version <VERSION>`
+  Path to the *deps.json* file. A *deps.json* file is a configuration file that contains information about dependencies necessary to run the application. This file is generated by the .NET Core SDK.
 
-Version of the .NET Core runtime to use to run the application.
+- **`--runtimeconfig`**
 
-`-h|--help`
+  Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file is a configuration file that contains run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
-Prints out documentation for a given command, such as `dotnet build --help`. `dotnet --help` prints a list of available commands.
+- **`--roll-forward <SETTING>`** **Available starting with .NET Core SDK 3.0.**
 
-`--info`
+  Controls how roll forward is applied to the app. The `SETTING` can be one of the following values. If not specified, `Minor` is the default.
 
-Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
+  - `LatestPatch` - Roll forward to the highest patch version. This disables minor version roll forward.
+  - `Minor` - Roll forward to the lowest higher minor version, if requested minor version is missing. If the requested minor version is present, then the LatestPatch policy is used.
+  - `Major` - Roll forward to lowest higher major version, and lowest minor version, if requested major version is missing. If the requested major version is present, then the Minor policy is used.
+  - `LatestMinor` - Roll forward to highest minor version, even if requested minor version is present. Intended for component hosting scenarios.
+  - `LatestMajor` - Roll forward to highest major and highest minor version, even if requested major is present. Intended for component hosting scenarios.
+  - `Disable` - Don't roll forward. Only bind to specified version. This policy isn't recommended for general use because it disables the ability to roll forward to the latest patches. This value is only recommended for testing.
 
-`--roll-forward-on-no-candidate-fx`
+  With the exception of `Disable`, all settings will use the highest available patch version.
 
- Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+  Roll forward behavior can also be configured in a project file property, a run-time configuration file property, and an environment variable. For more information, see [Major-version runtime roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
 
-`-v|--verbosity <LEVEL>`
+- **`--roll-forward-on-no-candidate-fx <N>`** **Available in .NET Core 2.x SDK.**
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
+  Defines behavior when the required shared framework is not available. `N` can be:
 
-`--version`
+  - `0` - Disable even minor version roll forward.
+  - `1` - Roll forward on minor version, but not on major version. This is the default behavior.
+  - `2` - Roll forward on minor and major versions.
 
-Prints out the version of the .NET Core SDK in use.
+  For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
-# [.NET Core 1.x](#tab/netcore1x)
+  Starting with .NET Core 3.0, this option is superseded by `--roll-forward`, and that option should be used instead.
 
-`--additionalprobingpath <PATH>`
+- **`--fx-version <VERSION>`**
 
-Path containing probing policy and assemblies to probe.
+  Version of the .NET Core runtime to use to run the application.
 
-`-d|--diagnostics`
-
-Enables diagnostic output.
-
-`--fx-version <VERSION>`
-
-Version of the .NET Core runtime to use to run the application.
-
-`-h|--help`
-
-Prints out documentation for a given command, such as `dotnet build --help`. `dotnet --help` prints a list of available commands.
-
-`--info`
-
-Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
-
-`-v|--verbosity <LEVEL>`
-
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
-
-`--version`
-
-Prints out the version of the .NET Core SDK in use.
-
----
+  This option overrides the version of the first framework reference in the application's `.runtimeconfig.json` file. This means it only works as expected if there's just one framework reference. If the application has more than one framework reference, using this option may cause errors.
 
 ## dotnet commands
 
 ### General
-
-# [.NET Core 2.1](#tab/netcore21)
 
 | Command                                       | Function                                                            |
 | --------------------------------------------- | ------------------------------------------------------------------- |
@@ -176,42 +175,6 @@ Prints out the version of the .NET Core SDK in use.
 | [dotnet sln](dotnet-sln.md)                   | Options to add, remove, and list projects in a solution file.       |
 | [dotnet store](dotnet-store.md)               | Stores assemblies in the runtime package store.                     |
 | [dotnet test](dotnet-test.md)                 | Runs tests using a test runner.                                     |
-
-# [.NET Core 2.0](#tab/netcore20)
-
-| Command                             | Function                                                            |
-| ----------------------------------- | ------------------------------------------------------------------- |
-| [dotnet build](dotnet-build.md)     | Builds a .NET Core application.                                     |
-| [dotnet clean](dotnet-clean.md)     | Clean build outputs.                                              |
-| [dotnet help](dotnet-help.md)       | Shows more detailed documentation online for the command.           |
-| [dotnet migrate](dotnet-migrate.md) | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
-| [dotnet msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.                        |
-| [dotnet new](dotnet-new.md)         | Initializes a C# or F# project for a given template.                |
-| [dotnet pack](dotnet-pack.md)       | Creates a NuGet package of your code.                               |
-| [dotnet publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained application. |
-| [dotnet restore](dotnet-restore.md) | Restores the dependencies for a given application.                  |
-| [dotnet run](dotnet-run.md)         | Runs the application from source.                                   |
-| [dotnet sln](dotnet-sln.md)         | Options to add, remove, and list projects in a solution file.       |
-| [dotnet store](dotnet-store.md)     | Stores assemblies in the runtime package store.                     |
-| [dotnet test](dotnet-test.md)       | Runs tests using a test runner.                                     |
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-| Command                             | Function                                                            |
-| ----------------------------------- | ------------------------------------------------------------------- |
-| [dotnet build](dotnet-build.md)     | Builds a .NET Core application.                                     |
-| [dotnet clean](dotnet-clean.md)     | Clean build outputs.                                              |
-| [dotnet migrate](dotnet-migrate.md) | Migrates a valid Preview 2 project to a .NET Core SDK 1.0 project.  |
-| [dotnet msbuild](dotnet-msbuild.md) | Provides access to the MSBuild command line.                        |
-| [dotnet new](dotnet-new.md)         | Initializes a C# or F# project for a given template.                |
-| [dotnet pack](dotnet-pack.md)       | Creates a NuGet package of your code.                               |
-| [dotnet publish](dotnet-publish.md) | Publishes a .NET framework-dependent or self-contained application. |
-| [dotnet restore](dotnet-restore.md) | Restores the dependencies for a given application.                  |
-| [dotnet run](dotnet-run.md)         | Runs the application from source.                                   |
-| [dotnet sln](dotnet-sln.md)         | Options to add, remove, and list projects in a solution file.       |
-| [dotnet test](dotnet-test.md)       | Runs tests using a test runner.                                     |
-
----
 
 ### Project references
 
@@ -233,19 +196,25 @@ Command | Function
 Command | Function
 --- | ---
 [dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.
-[dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 [dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
+[dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
+[dotnet nuget add source](dotnet-nuget-add-source.md) | Adds a NuGet source.
+[dotnet nuget disable source](dotnet-nuget-disable-source.md) | Disables a NuGet source.
+[dotnet nuget enable source](dotnet-nuget-enable-source.md) | Enables a NuGet source.
+[dotnet nuget list source](dotnet-nuget-list-source.md) | Lists all configured NuGet sources.
+[dotnet nuget remove source](dotnet-nuget-remove-source.md) | Removes a NuGet source.
+[dotnet nuget update source](dotnet-nuget-update-source.md) | Updates a NuGet source.
 
-### Global Tools commands
+### Global, tool-path, and local tools commands
 
-[.NET Core Global Tools](global-tools.md) are available starting with .NET Core SDK 2.1.300:
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET Core tools overview](global-tools.md). Global and tool-path tools are available starting with .NET Core SDK 2.1. Local tools are available starting with .NET Core SDK 3.0.
 
 Command | Function
 --- | ---
-[dotnet tool install](dotnet-tool-install.md) | Installs a Global Tool on your machine.
-[dotnet tool list](dotnet-tool-list.md) | Lists all Global Tools currently installed in the default directory on your machine or in the specified path.
-[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a Global Tool from your machine.
-[dotnet tool update](dotnet-tool-update.md) | Updates a Global Tool on your machine.
+[dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine.
+[dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine.
+[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine.
+[dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine.
 
 ### Additional tools
 
@@ -263,78 +232,111 @@ For more information about each tool, type `dotnet <tool-name> --help`.
 
 ## Examples
 
-Creates a new .NET Core console application:
+Create a new .NET Core console application:
 
-`dotnet new console`
-
-Restore dependencies for a given application:
-
-`dotnet restore`
-
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+```dotnetcli
+dotnet new console
+```
 
 Build a project and its dependencies in a given directory:
 
-`dotnet build`
+```dotnetcli
+dotnet build
+```
 
-Run an application DLL, such as `myapp.dll`:
+Run an application:
 
-`dotnet myapp.dll`
+```dotnetcli
+dotnet myapp.dll
+```
 
 ## Environment variables
 
-# [.NET Core 2.1](#tab/netcore21)
+- `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
 
-`DOTNET_PACKAGES`
+  Specifies the location of the .NET Core runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+- `DOTNET_PACKAGES`
 
-`DOTNET_SERVICING`
+  The global packages folder. If not set, it defaults to `~/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 
-Specifies the location of the servicing index to use by the shared host when loading the runtime.
+- `DOTNET_SERVICING`
 
-`DOTNET_CLI_TELEMETRY_OPTOUT`
+  Specifies the location of the servicing index to use by the shared host when loading the runtime.
 
-Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
+- `DOTNET_NOLOGO`
 
-`DOTNET_MULTILEVEL_LOOKUP`
+  Specifies whether .NET Core welcome and telemetry messages are displayed on first run. Set to `true` to mute these messages (values `true`, `1`, or `yes` accepted) or set to `false` to allow (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the messages will be displayed on first run. This flag has no effect on telemetry (see `DOTNET_CLI_TELEMETRY_OPTOUT` for opting out of sending telemetry).
 
-Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+- `DOTNET_CLI_TELEMETRY_OPTOUT`
 
-`DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
+  Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
-Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+- `DOTNET_MULTILEVEL_LOOKUP`
 
-# [.NET Core 2.0](#tab/netcore20)
+  Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET Core installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
-`DOTNET_PACKAGES`
+- `DOTNET_ROLL_FORWARD` **Available starting with .NET Core 3.x.**
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+  Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.
 
-`DOTNET_SERVICING`
+- `DOTNET_ROLL_FORWARD_TO_PRERELEASE` **Available starting with .NET Core 3.x.**
 
-Specifies the location of the servicing index to use by the shared host when loading the runtime.
+  If set to `1` (enabled), enables rolling forward to a pre-release version from a release version. By default (`0` - disabled), when a release version of .NET Core runtime is requested, roll-forward will only consider installed release versions.
 
-`DOTNET_CLI_TELEMETRY_OPTOUT`
+  For more information, see [Roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
 
-Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
+- `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` **Available in .NET Core 2.x.**
 
-`DOTNET_MULTILEVEL_LOOKUP`
+  Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
-Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+  This setting is superseded in .NET Core 3.0 by `DOTNET_ROLL_FORWARD`. The new settings should be used instead.
 
-# [.NET Core 1.x](#tab/netcore1x)
+- `DOTNET_CLI_UI_LANGUAGE`
 
-`DOTNET_PACKAGES`
+  Sets the language of the CLI UI using a locale value such as `en-us`. The supported values are the same as for Visual Studio. For more information, see the section on changing the installer language in the [Visual Studio installation documentation](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019). The .NET resource manager rules apply, so you don't have to pick an exact match&mdash;you can also pick descendants in the `CultureInfo` tree. For example, if you set it to `fr-CA`, the CLI will find and use the `fr` translations. If you set it to a language that is not supported, the CLI falls back to English.
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+- `DOTNET_DISABLE_GUI_ERRORS`
 
-`DOTNET_SERVICING`
+  For GUI-enabled generated executables - disables dialog popup, which normally shows for certain classes of errors. It only writes to `stderr` and exits in those cases.
+  
+- `DOTNET_ADDITIONAL_DEPS`
 
-Specifies the location of the servicing index to use by the shared host when loading the runtime.
+  Equivalent to CLI option `--additional-deps`.
 
-`DOTNET_CLI_TELEMETRY_OPTOUT`
+- `DOTNET_RUNTIME_ID`
 
-Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
+  Overrides the detected RID.
 
----
+- `DOTNET_SHARED_STORE`
+
+  Location of the "shared store" which assembly resolution falls back to in some cases.
+
+- `DOTNET_STARTUP_HOOKS`
+
+  List of assemblies to load and execute startup hooks from.
+
+- `DOTNET_BUNDLE_EXTRACT_BASE_DIR` **Available starting with .NET Core 3.x.**
+
+  Specifies a directory to which a single-file application is extracted before it is executed.
+
+  For more information, see [Single-file executables](../whats-new/dotnet-core-3-0.md#single-file-executables).
+
+- `COREHOST_TRACE`, `COREHOST_TRACEFILE`, `COREHOST_TRACE_VERBOSITY`
+
+  Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
+
+  * `COREHOST_TRACE=[0/1]` - default is `0` - tracing disabled. If set to `1`, diagnostics tracing is enabled.
+  * `COREHOST_TRACEFILE=<file path>` - only has effect if tracing is enabled via `COREHOST_TRACE=1`. When set, the tracing information is written to the specified file, otherwise the tracing information is written to `stderr`. **Available starting with .NET Core 3.x.**
+  * `COREHOST_TRACE_VERBOSITY=[1/2/3/4]` - default is `4`. The setting is used only when tracing is enabled via `COREHOST_TRACE=1`. **Available starting with .NET Core 3.x.**
+    * `4` - all tracing information is written
+    * `3` - only informational, warning and error messages are written
+    * `2` - only warning and error messages are written
+    * `1` - only error messages are written
+
+  The typical way to get detailed trace information about application startup is to set `COREHOST_TRACE=1` and `COREHOST_TRACEFILE=host_trace.txt` and then run the application. A new file `host_trace.txt` will be created in the current directory with the detailed information.
+
+## See also
+
+- [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)
+- [.NET Core run-time configuration settings](../run-time-config/index.md)

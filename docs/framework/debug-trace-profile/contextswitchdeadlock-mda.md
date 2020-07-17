@@ -1,5 +1,6 @@
 ---
 title: "contextSwitchDeadlock MDA"
+description: Read about the contextSwitchDeadlock managed debugging assistant (MDA) in .NET, which is activated when a deadlock is detected during a COM context transition.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "deadlocks [.NET Framework]"
@@ -12,8 +13,6 @@ helpviewer_keywords:
   - "message pumping"
   - "context switching deadlocks"
 ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # contextSwitchDeadlock MDA
 
@@ -33,16 +32,16 @@ By default, the threading model for the main thread of Visual Basic console appl
 
 It is possible for this MDA to be falsely activated when all of the following conditions are met:
 
--   An application creates COM components from STA threads either directly or indirectly through libraries.
+- An application creates COM components from STA threads either directly or indirectly through libraries.
 
--   The application was stopped in the debugger and the user either continued the application or performed a step operation.
+- The application was stopped in the debugger and the user either continued the application or performed a step operation.
 
--   Unmanaged debugging is not enabled.
+- Unmanaged debugging is not enabled.
 
 To determine if the MDA is being falsely activated, disable all breakpoints, restart the application, and allow it to run without stopping. If the MDA is not activated, it is likely the initial activation was false. In this case, disable the MDA to avoid interference with the debugging session.
 
 > [!NOTE]
-> This MDA is in the default set for Visual Studio. For information about how to disable MDAs, see [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md#enable-and-disable-mdas).
+> This MDA is in the default set for Visual Studio. For information about how to disable MDAs, see [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md#enable-and-disable-mdas).
 
 ## Resolution
 
@@ -66,8 +65,8 @@ A message describing the current context and the target context.
 </mdaConfig>
 ```
 
-## See Also
+## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

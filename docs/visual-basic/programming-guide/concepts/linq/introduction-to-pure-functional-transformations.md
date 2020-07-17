@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Pure Functional Transformations (Visual Basic)"
+title: "Introduction to Pure Functional Transformations"
 ms.date: 07/20/2015
 ms.assetid: 82bf3348-c503-4854-a91f-71f9835779ff
 ---
@@ -10,11 +10,12 @@ This section introduces functional transformations, including the underlying con
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Concepts and Terminology (Functional Transformation) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md)|Introduces the concepts and terminology of pure functional transformations.|  
-|[Functional Programming vs. Imperative Programming (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md)|Compares and contrasts functional programming to more traditional imperative (procedural) programming.|  
-|[Refactoring Into Pure Functions (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-into-pure-functions.md)|Introduces pure functions, and shows examples of and pure and impure functions.|  
-|[Applicability of Functional Transformation (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/applicability-of-functional-transformation.md)|Describes typical scenarios for functional transformations.|  
-|[Functional Transformation of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/functional-transformation-of-xml.md)|Describes functional transformations in the context of transforming XML trees.|  
+|[Concepts and Terminology (Functional Transformation) (Visual Basic)](concepts-and-terminology-functional-transformation.md)|Introduces the concepts and terminology of pure functional transformations.|  
+|[Functional Programming vs. Imperative Programming (Visual Basic)](functional-programming-vs-imperative-programming.md)|Compares and contrasts functional programming to more traditional imperative (procedural) programming.|  
+|[Refactoring Into Pure Functions (Visual Basic)](refactoring-into-pure-functions.md)|Introduces pure functions, and shows examples of and pure and impure functions.|  
+|[Applicability of Functional Transformation (Visual Basic)](applicability-of-functional-transformation.md)|Describes typical scenarios for functional transformations.|  
+|[Functional Transformation of XML (Visual Basic)](functional-transformation-of-xml.md)|Describes functional transformations in the context of transforming XML trees.|  
   
-## See Also  
- [Pure Functional Transformations of XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md)
+## See also
+
+- [Pure Functional Transformations of XML (Visual Basic)](pure-functional-transformations-of-xml.md)

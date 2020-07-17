@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 081d1c95-152b-4797-8552-18453eb7b14b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStackWalk::GetContext Method
-Returns the context for the current frame in the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object.  
+Returns the context for the current frame in the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetContext([in]  ULONG32 contextFlags,  
                    [in]  ULONG32 contextBufSize,  
                    [out] ULONG32* contextSize,  
                    [out, size_is(contextBufSize)] BYTE contextBuf[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `contextFlags`  
  [in] Flags that indicate the requested contents of the context buffer (defined in WinNT.h).  
   
@@ -59,7 +57,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
  Because unwinding restores only a subset of the registers, such as non-volatile registers, the context may not exactly match the register state at the time of the call.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -67,6 +65,7 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

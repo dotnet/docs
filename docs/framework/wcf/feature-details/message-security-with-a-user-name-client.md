@@ -9,9 +9,9 @@ ms.assetid: 36335cb9-76b8-4443-92c7-44f081eabb21
 # Message Security with a User Name Client
 The following illustration shows an Windows Communication Foundation (WCF) service and client secured using message-level security. The service is authenticated with an X.509 certificate. The client authenticates using a user name and password.  
   
- For a sample application, see [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md).  
+ For a sample application, see [Message Security User Name](../samples/message-security-user-name.md).  
   
- ![Message security using username authentication](../../../../docs/framework/wcf/feature-details/media/1fb10a61-7e1d-42f5-b1af-195bfee5b3c6.gif "1fb10a61-7e1d-42f5-b1af-195bfee5b3c6")  
+ ![Message security using username authentication](media/1fb10a61-7e1d-42f5-b1af-195bfee5b3c6.gif "1fb10a61-7e1d-42f5-b1af-195bfee5b3c6")  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -27,9 +27,9 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 ## Service  
  The following code and configuration are meant to run independently. Do one of the following:  
   
--   Create a stand-alone service using the code with no configuration.  
+- Create a stand-alone service using the code with no configuration.  
   
--   Create a service using the supplied configuration, but do not define any endpoints.  
+- Create a service using the supplied configuration, but do not define any endpoints.  
   
 ### Code  
  The following code shows how to create a service endpoint that uses message security.  
@@ -48,9 +48,9 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
       <serviceBehaviors>  
         <behavior name="ServiceCredentialsBehavior">  
           <serviceCredentials>  
-            <serviceCertificate findValue="Contoso.com"   
+            <serviceCertificate findValue="Contoso.com"
                                 storeLocation="LocalMachine"  
-                                storeName="My"     
+                                storeName="My"
                                 x509FindType="FindBySubjectName" />  
           </serviceCredentials>  
         </behavior>  
@@ -69,7 +69,7 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
     <bindings>  
       <wsHttpBinding>  
         <binding name="MessageAndUserName">  
-          <security mode="Message">              
+          <security mode="Message">
             <message clientCredentialType="UserName" />  
           </security>  
         </binding>  
@@ -105,9 +105,9 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
       </wsHttpBinding>  
     </bindings>  
     <client>  
-      <endpoint address="http://machineName/Calculator"   
+      <endpoint address="http://machineName/Calculator"
                 binding="wsHttpBinding"  
-                bindingConfiguration="WSHttpBinding_ICalculator"   
+                bindingConfiguration="WSHttpBinding_ICalculator"
                 contract="ICalculator"  
                 name="WSHttpBinding_ICalculator">  
         <identity>  
@@ -119,9 +119,10 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
 </configuration>  
 ```  
   
-## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)  
- [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)  
- [\<identity>](../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+
+- [Security Overview](security-overview.md)
+- [Message Security User Name](../samples/message-security-user-name.md)
+- [Service Identity and Authentication](service-identity-and-authentication.md)
+- [\<identity>](../../configure-apps/file-schema/wcf/identity.md)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

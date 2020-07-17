@@ -1,5 +1,6 @@
 ---
 title: "The Regular Expression Object Model"
+description: Review the regular expression object model in .NET. Work with the regular expression engine, & objects & collections related to matching, grouping, & capturing.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -35,45 +36,43 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, classes"
   - "GroupCollection class"
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # The Regular Expression Object Model
 <a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  
   
--   [The Regular Expression Engine](#Engine)  
+- [The Regular Expression Engine](#Engine)  
   
--   [The MatchCollection and Match Objects](#Match_and_MCollection)  
+- [The MatchCollection and Match Objects](#Match_and_MCollection)  
   
--   [The Group Collection](#GroupCollection)  
+- [The Group Collection](#GroupCollection)  
   
--   [The Captured Group](#the_captured_group)  
+- [The Captured Group](#the_captured_group)  
   
--   [The Capture Collection](#CaptureCollection)  
+- [The Capture Collection](#CaptureCollection)  
   
--   [The Individual Capture](#the_individual_capture)  
+- [The Individual Capture](#the_individual_capture)  
   
-<a name="Engine"></a>   
+<a name="Engine"></a>
 ## The Regular Expression Engine  
  The regular expression engine in .NET is represented by the <xref:System.Text.RegularExpressions.Regex> class. The regular expression engine is responsible for parsing and compiling a regular expression, and for performing operations that match the regular expression pattern with an input string. The engine is the central component in the .NET regular expression object model.  
   
  You can use the regular expression engine in either of two ways:  
   
--   By calling the static methods of the <xref:System.Text.RegularExpressions.Regex> class. The method parameters include the input string and the regular expression pattern. The regular expression engine caches regular expressions that are used in static method calls, so repeated calls to static regular expression methods that use the same regular expression offer relatively good performance.  
+- By calling the static methods of the <xref:System.Text.RegularExpressions.Regex> class. The method parameters include the input string and the regular expression pattern. The regular expression engine caches regular expressions that are used in static method calls, so repeated calls to static regular expression methods that use the same regular expression offer relatively good performance.  
   
--   By instantiating a <xref:System.Text.RegularExpressions.Regex> object, by passing a regular expression to the class constructor. In this case, the <xref:System.Text.RegularExpressions.Regex> object is immutable (read-only) and represents a regular expression engine that is tightly coupled with a single regular expression. Because regular expressions used by <xref:System.Text.RegularExpressions.Regex> instances are not cached, you should not instantiate a <xref:System.Text.RegularExpressions.Regex> object multiple times with the same regular expression.  
+- By instantiating a <xref:System.Text.RegularExpressions.Regex> object, by passing a regular expression to the class constructor. In this case, the <xref:System.Text.RegularExpressions.Regex> object is immutable (read-only) and represents a regular expression engine that is tightly coupled with a single regular expression. Because regular expressions used by <xref:System.Text.RegularExpressions.Regex> instances are not cached, you should not instantiate a <xref:System.Text.RegularExpressions.Regex> object multiple times with the same regular expression.  
   
  You can call the methods of the <xref:System.Text.RegularExpressions.Regex> class to perform the following operations:  
   
--   Determine whether a string matches a regular expression pattern.  
+- Determine whether a string matches a regular expression pattern.  
   
--   Extract a single match or the first match.  
+- Extract a single match or the first match.  
   
--   Extract all matches.  
+- Extract all matches.  
   
--   Replace a matched substring.  
+- Replace a matched substring.  
   
--   Split a single string into an array of strings.  
+- Split a single string into an array of strings.  
   
  These operations are described in the following sections.  
   
@@ -155,11 +154,11 @@ ms.author: "ronpet"
 |`\.`|Match a period.|  
 |`\s`|Match a white-space character.|  
   
-<a name="Match_and_MCollection"></a>   
+<a name="Match_and_MCollection"></a>
 ## The MatchCollection and Match Objects  
  Regex methods return two objects that are part of the regular expression object model: the <xref:System.Text.RegularExpressions.MatchCollection> object, and the <xref:System.Text.RegularExpressions.Match> object.  
   
-<a name="the_match_collection"></a>   
+<a name="the_match_collection"></a>
 ### The Match Collection  
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains <xref:System.Text.RegularExpressions.Match> objects that represent all the matches that the regular expression engine found, in the order in which they occur in the input string. If there are no matches, the method returns a <xref:System.Text.RegularExpressions.MatchCollection> object with no members. The <xref:System.Text.RegularExpressions.MatchCollection.Item%2A?displayProperty=nameWithType> property lets you access individual members of the collection by index, from zero to one less than the value of the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=nameWithType> property. <xref:System.Text.RegularExpressions.MatchCollection.Item%2A> is the collection's indexer (in C#) and default property (in Visual Basic).  
   
@@ -170,18 +169,18 @@ ms.author: "ronpet"
  [!code-csharp[Conceptual.RegularExpressions.ObjectModel#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/cs/matchcollection1.cs#6)]
  [!code-vb[Conceptual.RegularExpressions.ObjectModel#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/vb/matchcollection1.vb#6)]  
   
-<a name="the_match"></a>   
+<a name="the_match"></a>
 ### The Match  
  The <xref:System.Text.RegularExpressions.Match> class represents the result of a single regular expression match. You can access <xref:System.Text.RegularExpressions.Match> objects in two ways:  
   
--   By retrieving them from the <xref:System.Text.RegularExpressions.MatchCollection> object that is returned by the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method. To retrieve individual <xref:System.Text.RegularExpressions.Match> objects, iterate the collection by using a `foreach` (in C#) or `For Each`...`Next` (in Visual Basic) construct, or use the <xref:System.Text.RegularExpressions.MatchCollection.Item%2A?displayProperty=nameWithType> property to retrieve a specific <xref:System.Text.RegularExpressions.Match> object either by index or by name. You can also retrieve individual <xref:System.Text.RegularExpressions.Match> objects from the collection by iterating the collection by index, from zero to one less that the number of objects in the collection. However, this method does not take advantage of lazy evaluation, because it accesses the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=nameWithType> property.  
+- By retrieving them from the <xref:System.Text.RegularExpressions.MatchCollection> object that is returned by the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method. To retrieve individual <xref:System.Text.RegularExpressions.Match> objects, iterate the collection by using a `foreach` (in C#) or `For Each`...`Next` (in Visual Basic) construct, or use the <xref:System.Text.RegularExpressions.MatchCollection.Item%2A?displayProperty=nameWithType> property to retrieve a specific <xref:System.Text.RegularExpressions.Match> object either by index or by name. You can also retrieve individual <xref:System.Text.RegularExpressions.Match> objects from the collection by iterating the collection by index, from zero to one less that the number of objects in the collection. However, this method does not take advantage of lazy evaluation, because it accesses the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=nameWithType> property.  
   
      The following example retrieves individual <xref:System.Text.RegularExpressions.Match> objects from a <xref:System.Text.RegularExpressions.MatchCollection> object by iterating the collection using the `foreach` or `For Each`...`Next` construct. The regular expression simply matches the string "abc" in the input string.  
   
      [!code-csharp[Conceptual.RegularExpressions.ObjectModel#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/cs/match2.cs#7)]
      [!code-vb[Conceptual.RegularExpressions.ObjectModel#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/vb/match2.vb#7)]  
   
--   By calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> method, which returns a <xref:System.Text.RegularExpressions.Match> object that represents the first match in a string or a portion of a string. You can determine whether the match has been found by retrieving the value of the `Match.Success` property. To retrieve <xref:System.Text.RegularExpressions.Match> objects that represent subsequent matches, call the <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method repeatedly, until the `Success` property of the returned <xref:System.Text.RegularExpressions.Match> object is `false`.  
+- By calling the <xref:System.Text.RegularExpressions.Regex.Match%2A?displayProperty=nameWithType> method, which returns a <xref:System.Text.RegularExpressions.Match> object that represents the first match in a string or a portion of a string. You can determine whether the match has been found by retrieving the value of the `Match.Success` property. To retrieve <xref:System.Text.RegularExpressions.Match> objects that represent subsequent matches, call the <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method repeatedly, until the `Success` property of the returned <xref:System.Text.RegularExpressions.Match> object is `false`.  
   
      The following example uses the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> methods to match the string "abc" in the input string.  
   
@@ -190,9 +189,9 @@ ms.author: "ronpet"
   
  Two properties of the <xref:System.Text.RegularExpressions.Match> class return collection objects:  
   
--   The <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property returns a <xref:System.Text.RegularExpressions.GroupCollection> object that contains information about the substrings that match capturing groups in the regular expression pattern.  
+- The <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property returns a <xref:System.Text.RegularExpressions.GroupCollection> object that contains information about the substrings that match capturing groups in the regular expression pattern.  
   
--   The `Match.Captures` property returns a <xref:System.Text.RegularExpressions.CaptureCollection> object that is of limited use. The collection is not populated for a <xref:System.Text.RegularExpressions.Match> object whose `Success` property is `false`. Otherwise, it contains a single <xref:System.Text.RegularExpressions.Capture> object that has the same information as the <xref:System.Text.RegularExpressions.Match> object.  
+- The `Match.Captures` property returns a <xref:System.Text.RegularExpressions.CaptureCollection> object that is of limited use. The collection is not populated for a <xref:System.Text.RegularExpressions.Match> object whose `Success` property is `false`. Otherwise, it contains a single <xref:System.Text.RegularExpressions.Capture> object that has the same information as the <xref:System.Text.RegularExpressions.Match> object.  
   
  For more information about these objects, see [The Group Collection](#GroupCollection) and [The Capture Collection](#CaptureCollection) sections later in this topic.  
   
@@ -200,9 +199,9 @@ ms.author: "ronpet"
   
  The <xref:System.Text.RegularExpressions.Match> class also has two pattern-matching methods:  
   
--   The <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method finds the match after the match represented by the current <xref:System.Text.RegularExpressions.Match> object, and returns a <xref:System.Text.RegularExpressions.Match> object that represents that match.  
+- The <xref:System.Text.RegularExpressions.Match.NextMatch%2A?displayProperty=nameWithType> method finds the match after the match represented by the current <xref:System.Text.RegularExpressions.Match> object, and returns a <xref:System.Text.RegularExpressions.Match> object that represents that match.  
   
--   The <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method performs a specified replacement operation on the matched string and returns the result.  
+- The <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method performs a specified replacement operation on the matched string and returns the result.  
   
  The following example uses the <xref:System.Text.RegularExpressions.Match.Result%2A?displayProperty=nameWithType> method to prepend a $ symbol and a space before every number that includes two fractional digits.  
   
@@ -224,7 +223,7 @@ ms.author: "ronpet"
   
  [Back to top](#introduction)  
   
-<a name="GroupCollection"></a>   
+<a name="GroupCollection"></a>
 ## The Group Collection  
  The <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property returns a <xref:System.Text.RegularExpressions.GroupCollection> object that contains <xref:System.Text.RegularExpressions.Group> objects that represent captured groups in a single match. The first <xref:System.Text.RegularExpressions.Group> object in the collection (at index 0) represents the entire match. Each object that follows represents the results of a single capturing group.  
   
@@ -255,7 +254,7 @@ ms.author: "ronpet"
   
  [Back to top](#introduction)  
   
-<a name="the_captured_group"></a>   
+<a name="the_captured_group"></a>
 ## The Captured Group  
  The <xref:System.Text.RegularExpressions.Group> class represents the result from a single capturing group. Group objects that represent the capturing groups defined in a regular expression are returned by the <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property of the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property is the indexer (in C#) and the default property (in Visual Basic) of the <xref:System.Text.RegularExpressions.Group> class. You can also retrieve individual members by iterating the collection using the `foreach` or `For Each` construct. For an example, see the previous section.  
   
@@ -280,9 +279,9 @@ ms.author: "ronpet"
   
  The properties of the <xref:System.Text.RegularExpressions.Group> class provide information about the captured group: The `Group.Value` property contains the captured substring, the `Group.Index` property indicates the starting position of the captured group in the input text, the `Group.Length` property contains the length of the captured text, and the `Group.Success` property indicates whether a substring matched the pattern defined by the capturing group.  
   
- Applying quantifiers to a group (for more information, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md)) modifies the relationship of one capture per capturing group in two ways:  
+ Applying quantifiers to a group (for more information, see [Quantifiers](quantifiers-in-regular-expressions.md)) modifies the relationship of one capture per capturing group in two ways:  
   
--   If the `*` or `*?` quantifier (which specifies zero or more matches) is applied to a group, a capturing group may not have a match in the input string. When there is no captured text, the properties of the <xref:System.Text.RegularExpressions.Group> object are set as shown in the following table.  
+- If the `*` or `*?` quantifier (which specifies zero or more matches) is applied to a group, a capturing group may not have a match in the input string. When there is no captured text, the properties of the <xref:System.Text.RegularExpressions.Group> object are set as shown in the following table.  
   
     |Group property|Value|  
     |--------------------|-----------|  
@@ -295,20 +294,20 @@ ms.author: "ronpet"
      [!code-csharp[Conceptual.RegularExpressions.ObjectModel#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/cs/nocapture1.cs#11)]
      [!code-vb[Conceptual.RegularExpressions.ObjectModel#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/vb/nocapture1.vb#11)]  
   
--   Quantifiers can match multiple occurrences of a pattern that is defined by a capturing group. In this case, the `Value` and `Length` properties of a <xref:System.Text.RegularExpressions.Group> object contain information only about the last captured substring. For example, the following regular expression matches a single sentence that ends in a period. It uses two grouping constructs: The first captures individual words along with a white-space character; the second captures individual words. As the output from the example shows, although the regular expression succeeds in capturing an entire sentence, the second capturing group captures only the last word.  
+- Quantifiers can match multiple occurrences of a pattern that is defined by a capturing group. In this case, the `Value` and `Length` properties of a <xref:System.Text.RegularExpressions.Group> object contain information only about the last captured substring. For example, the following regular expression matches a single sentence that ends in a period. It uses two grouping constructs: The first captures individual words along with a white-space character; the second captures individual words. As the output from the example shows, although the regular expression succeeds in capturing an entire sentence, the second capturing group captures only the last word.  
   
      [!code-csharp[Conceptual.RegularExpressions.ObjectModel#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/cs/lastcapture1.cs#12)]
      [!code-vb[Conceptual.RegularExpressions.ObjectModel#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/vb/lastcapture1.vb#12)]  
   
  [Back to top](#introduction)  
   
-<a name="CaptureCollection"></a>   
+<a name="CaptureCollection"></a>
 ## The Capture Collection  
  The <xref:System.Text.RegularExpressions.Group> object contains information only about the last capture. However, the entire set of captures made by a capturing group is still available from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property. Each member of the collection is a <xref:System.Text.RegularExpressions.Capture> object that represents a capture made by that capturing group, in the order in which they were captured (and, therefore, in the order in which the captured strings were matched from left to right in the input string). You can retrieve individual <xref:System.Text.RegularExpressions.Capture> objects from the collection in either of two ways:  
   
--   By iterating through the collection using a construct such as `foreach` (in C#) or `For Each` (in Visual Basic).  
+- By iterating through the collection using a construct such as `foreach` (in C#) or `For Each` (in Visual Basic).  
   
--   By using the <xref:System.Text.RegularExpressions.CaptureCollection.Item%2A?displayProperty=nameWithType> property to retrieve a specific object by index. The <xref:System.Text.RegularExpressions.CaptureCollection.Item%2A> property is the <xref:System.Text.RegularExpressions.CaptureCollection> object's default property (in Visual Basic) or indexer (in C#).  
+- By using the <xref:System.Text.RegularExpressions.CaptureCollection.Item%2A?displayProperty=nameWithType> property to retrieve a specific object by index. The <xref:System.Text.RegularExpressions.CaptureCollection.Item%2A> property is the <xref:System.Text.RegularExpressions.CaptureCollection> object's default property (in Visual Basic) or indexer (in C#).  
   
  If a quantifier is not applied to a capturing group, the <xref:System.Text.RegularExpressions.CaptureCollection> object contains a single <xref:System.Text.RegularExpressions.Capture> object that is of little interest, because it provides information about the same match as its <xref:System.Text.RegularExpressions.Group> object. If a quantifier is applied to a capturing group, the <xref:System.Text.RegularExpressions.CaptureCollection> object contains all captures made by the capturing group, and the last member of the collection represents the same capture as the <xref:System.Text.RegularExpressions.Group> object.  
   
@@ -324,7 +323,7 @@ ms.author: "ronpet"
   
  [Back to top](#introduction)  
   
-<a name="the_individual_capture"></a>   
+<a name="the_individual_capture"></a>
 ## The Individual Capture  
  The <xref:System.Text.RegularExpressions.Capture> class contains the results from a single subexpression capture. The <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=nameWithType> property contains the matched text, and the <xref:System.Text.RegularExpressions.Capture.Index%2A?displayProperty=nameWithType> property indicates the zero-based position in the input string at which the matched substring begins.  
   
@@ -347,6 +346,6 @@ ms.author: "ronpet"
   
 ## See also
 
-- <xref:System.Text.RegularExpressions>  
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)  
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- <xref:System.Text.RegularExpressions>
+- [.NET Regular Expressions](regular-expressions.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)

@@ -1,5 +1,6 @@
 ---
 title: "Certificate Validation Differences Between HTTPS, SSL over TCP, and SOAP Security"
+description: Learn about certificates with message-layer (SOAP) security that WCF offers in addition to HTTPS or TCP, and how WCF validates such certificates.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -17,7 +18,7 @@ You can use certificates in Windows Communication Foundation (WCF) with message-
 ## Validation of HTTPS Service Certificates  
  When using HTTPS to communicate between a client and a service, the certificate that the server authenticates with must support chain trust by default. That is, it must chain to a trusted root certificate authority. No online check is performed to see whether the certificate has been revoked. You can override this behavior by registering a <xref:System.Net.Security.RemoteCertificateValidationCallback> callback, as shown in the following code.  
   
- [!code-csharp[c_CertificateValidationDifferences#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_certificatevalidationdifferences/cs/source.cs#1)] 
+ [!code-csharp[c_CertificateValidationDifferences#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_certificatevalidationdifferences/cs/source.cs#1)]
  [!code-vb[c_CertificateValidationDifferences#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb/source.vb#1)]  
   
  where the signature for `ValidateServerCertificate` is as follows:  
@@ -41,6 +42,7 @@ You can use certificates in Windows Communication Foundation (WCF) with message-
  [!code-csharp[c_CertificateValidationDifferences#4](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_certificatevalidationdifferences/cs/source.cs#4)]
  [!code-vb[c_CertificateValidationDifferences#4](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_certificatevalidationdifferences/vb/source.vb#4)]  
   
-## See Also  
- <xref:System.Net.Security.RemoteCertificateValidationCallback>  
- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+## See also
+
+- <xref:System.Net.Security.RemoteCertificateValidationCallback>
+- [Working with Certificates](working-with-certificates.md)

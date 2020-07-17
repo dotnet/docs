@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Collection of Elements (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve a Collection of Elements (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 2269f9de-8fb9-4666-b8a1-a4e754fa6a81
 ---
@@ -9,7 +9,7 @@ This topic demonstrates the <xref:System.Xml.Linq.XContainer.Elements%2A> method
 ## Example  
  This example iterates through the child elements of the `purchaseOrder` element.  
   
- This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](sample-xml-file-typical-purchase-order-linq-to-xml.md).  
   
 ```vb  
 Dim po As XElement = XElement.Load("PurchaseOrder.xml")  
@@ -24,12 +24,13 @@ Next
   
  This example produces the following output.  
   
-```  
+```console  
 Name: Address  
 Name: Address  
 Name: DeliveryNotes  
 Name: Items  
 ```  
   
-## See Also  
- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## See also
+
+- [LINQ to XML Axes (Visual Basic)](linq-to-xml-axes.md)

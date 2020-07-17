@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5ccb74f3-f891-430c-b70a-e370624edde2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetLocalRegisterValue Method
 Gets the value of an argument or local variable that is stored in the specified register for this native frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalRegisterValue (  
     [in]  CorDebugRegister   reg,  
     [in]  ULONG              cbSigBlob,  
@@ -32,7 +30,7 @@ HRESULT GetLocalRegisterValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `reg`  
  [in] A value of the "CorDebugRegister" enumeration that specifies the register containing the value.  
   
@@ -49,7 +47,7 @@ HRESULT GetLocalRegisterValue (
  The `GetLocalRegisterValue` method can be used either in a native frame or a just-in-time (JIT)-compiled frame.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -57,5 +55,4 @@ HRESULT GetLocalRegisterValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also

@@ -1,5 +1,6 @@
 ---
 title: "How to: Cancel a Task and Its Children"
+description: See examples of how to cancel a task and its children in .NET. The examples cover steps from cancelable task creation, to the notice that the task was canceled.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -8,19 +9,17 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, how to cancel"
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Cancel a Task and Its Children
 These examples show how to perform the following tasks:  
   
-1.  Create and start a cancelable task.  
+1. Create and start a cancelable task.  
   
-2.  Pass a cancellation token to your user delegate and optionally to the task instance.  
+2. Pass a cancellation token to your user delegate and optionally to the task instance.  
   
-3.  Notice and respond to the cancellation request in your user delegate.  
+3. Notice and respond to the cancellation request in your user delegate.  
   
-4.  Optionally notice on the calling thread that the task was canceled.  
+4. Optionally notice on the calling thread that the task was canceled.  
   
  The calling thread does not forcibly end the task; it only signals that cancellation is requested. If the task is already running, it is up to the user delegate to notice the request and respond appropriately. If cancellation is requested before the task runs, then the user delegate is never executed and the task object transitions into the Canceled state.  
   
@@ -30,14 +29,14 @@ These examples show how to perform the following tasks:
  [!code-csharp[TPL_Cancellation#04](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_cancellation/cs/cancel1.cs#04)]
  [!code-vb[TPL_Cancellation#04](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_cancellation/vb/cancel1.vb#04)]  
   
- The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class is fully integrated with the cancellation model that is based on the <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType> and <xref:System.Threading.CancellationToken?displayProperty=nameWithType> types. For more information, see [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md) and [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md).  
+ The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> class is fully integrated with the cancellation model that is based on the <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType> and <xref:System.Threading.CancellationToken?displayProperty=nameWithType> types. For more information, see [Cancellation in Managed Threads](../threading/cancellation-in-managed-threads.md) and [Task Cancellation](task-cancellation.md).  
   
 ## See also
 
-- <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType>  
-- <xref:System.Threading.CancellationToken?displayProperty=nameWithType>  
-- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>  
-- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>  
-- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)  
-- [Attached and Detached Child Tasks](../../../docs/standard/parallel-programming/attached-and-detached-child-tasks.md)  
-- [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- <xref:System.Threading.CancellationTokenSource?displayProperty=nameWithType>
+- <xref:System.Threading.CancellationToken?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType>
+- <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>
+- [Task-based Asynchronous Programming](task-based-asynchronous-programming.md)
+- [Attached and Detached Child Tasks](attached-and-detached-child-tasks.md)
+- [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md)

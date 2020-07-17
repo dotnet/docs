@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: bba941c2-1c57-46d3-bbf5-5fb92700c490
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost2::SetGCStartupLimitsEx Method
 Sets the segment size and the maximum size for generation 0.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCStartupLimitsEx (  
     [in] SIZE_T SegmentSize,  
     [in] SIZE_T MaxGen0Size  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `SegmentSize`  
  [in] The size of the segment used by the garbage collection system.  
   
@@ -41,7 +39,7 @@ HRESULT SetGCStartupLimitsEx (
  The values that `SetGCStartupLimitsEx` sets can be specified only before the host is started. These values cannot be changed later.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   
@@ -49,5 +47,6 @@ HRESULT SetGCStartupLimitsEx (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [IGCHost2 Interface](../../../../docs/framework/unmanaged-api/hosting/igchost2-interface.md)
+## See also
+
+- [IGCHost2 Interface](igchost2-interface.md)

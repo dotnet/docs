@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugStepper2 Interface1"
+title: "ICorDebugStepper2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugStepper2"
@@ -14,25 +14,23 @@ helpviewer_keywords:
 ms.assetid: 7a191c2a-95ea-4d47-83b0-44de2b632d63
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugStepper2 Interface1
+# ICorDebugStepper2 Interface
 Provides support for just my code (JMC) debugging.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetJMC Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper2-setjmc-method.md)|Sets a value that specifies whether this ICorDebugStepper steps only through code that is authored by an application's developer.|  
+|[SetJMC Method](icordebugstepper2-setjmc-method.md)|Sets a value that specifies whether this ICorDebugStepper steps only through code that is authored by an application's developer.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -40,5 +38,6 @@ Provides support for just my code (JMC) debugging.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -15,7 +15,8 @@ Source text lines cannot exceed 65535 characters.
   
 ## To correct this error  
   
--   Shorten the length of the line to 65535 characters or fewer.  
+- Shorten the length of the line to 65535 characters or fewer.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../../programming-guide/language-features/error-types.md)

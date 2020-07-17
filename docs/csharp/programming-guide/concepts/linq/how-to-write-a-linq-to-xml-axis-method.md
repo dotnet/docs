@@ -1,15 +1,16 @@
 ---
-title: "How to: Write a LINQ to XML Axis Method (C#)"
+title: "How to write a LINQ to XML axis method (C#)"
 ms.date: 07/20/2015
 ms.assetid: 50aef06b-1d22-4718-a18a-21237e26d7c1
 ---
-# How to: Write a LINQ to XML Axis Method (C#)
-You can write your own axis methods to retrieve collections from an XML tree. One of the best ways to do this is to write an extension method that returns a collection of elements or attributes. You can write your extension method to return specific subsets of elements or attributes, based on the requirements of your application.  
+# How to write a LINQ to XML axis method (C#)
+
+An XML [axis method](linq-to-xml-axes-overview.md) retrieves a collection of XML elements from an XML document or ancestor element. You can write your own axis methods to retrieve collections from an XML tree. One of the best ways to do this is to write an extension method that returns a collection of elements or attributes. You can write your extension method to return specific subsets of elements or attributes, based on the requirements of your application.  
   
 ## Example  
  The following example uses two extension methods. The first extension method, `GetXPath`, operates on <xref:System.Xml.Linq.XObject>, and returns an XPath expression that when evaluated will return the node or attribute. The second extension method, `Find`, operates on <xref:System.Xml.Linq.XElement>. It returns a collection of <xref:System.Xml.Linq.XAttribute> objects and <xref:System.Xml.Linq.XElement> objects that contain some specified text.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 public static class MyExtensions  
@@ -36,7 +37,7 @@ public static class MyExtensions
     private static string NameWithPredicate(XElement el)  
     {  
         if (el.Parent != null && el.Parent.Elements(el.Name).Count() != 1)  
-            return GetQName(el) + "[" +   
+            return GetQName(el) + "[" +
                 (el.ElementsBeforeSelf(el.Name).Count() + 1) + "]";  
         else  
             return GetQName(el);  
@@ -274,7 +275,7 @@ class Program
   
  This code produces the following output:  
   
-```  
+```output  
 /PurchaseOrders/PurchaseOrder[1]/@OrderDate  
 1999-10-20  
 /PurchaseOrders/PurchaseOrder[1]/Items/Item[2]/ShipDate  
@@ -284,7 +285,3 @@ class Program
 /PurchaseOrders/PurchaseOrder[3]/@OrderDate  
 1999-10-22  
 ```  
-  
-## See Also
-
-- [Advanced Query Techniques (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)

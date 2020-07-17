@@ -6,9 +6,9 @@ ms.assetid: ccdffa07-9503-4eea-a61b-17f1564368b7
 # Activity Definition Scoping and Visibility
 Activity definition scoping and visibility, just like scoping and visibility of an object, is the ability of other objects or activities to access members of the activity. Activity definition is performed by the following implementations:  
   
-1.  Determining the members (<xref:System.Activities.Argument>, <xref:System.Activities.Variable>, and <xref:System.Activities.ActivityDelegate> objects, and child activities) an activity exposes to its users.  
+1. Determining the members (<xref:System.Activities.Argument>, <xref:System.Activities.Variable>, and <xref:System.Activities.ActivityDelegate> objects, and child activities) an activity exposes to its users.  
   
-2.  Implementing the execution logic of the activity  
+2. Implementing the execution logic of the activity  
   
  The implementation may involve members that are not exposed to consumers of the activity, but are rather details of the implementation.  Similar to type definition, the activity model allows an author to qualify the visibility of an activity member regarding the definition of the activity being defined.  This visibility governs aspects of member usage, such as data scoping.  
   
@@ -16,14 +16,14 @@ Activity definition scoping and visibility, just like scoping and visibility of 
  In addition to data scoping, activity model visibility can restrict access to other aspects of the activity, such as validation, debugging, tracking, or tracing. Execution properties use visibility and scoping for constraining execution characteristics to a particular scope of definition. Secondary roots use visibility and scoping to constrain the state captured by a <xref:System.Activities.Statements.CompensableActivity> to the scope of definition in which the compensable activities are used.  
   
 ## Definition and usage  
- A workflow is written by authoring new activities by inheriting from base activity classes, and by using activities from the [Built-In Activity Library](../../../docs/framework/windows-workflow-foundation/net-framework-4-5-built-in-activity-library.md). In order to use an activity, the activity author must configure the visibility of each component of its definition.  
+ A workflow is written by authoring new activities by inheriting from base activity classes, and by using activities from the [Built-In Activity Library](net-framework-4-5-built-in-activity-library.md). In order to use an activity, the activity author must configure the visibility of each component of its definition.  
   
 ### Activity Members  
  The activity model defines the arguments, variables, delegates, and child activities that the activity makes available to consumers. Each of these members can be declared as `public` or `private`. Public members are configured by the consumer of the activity, whereas `private` members use an implementation fixed by the author of the activity. The visibility rules for data scoping are as follows:  
   
-1.  Public members and the public members of public child activities can reference public variables.  
+1. Public members and the public members of public child activities can reference public variables.  
   
-2.  Private members and the public members of public child activities can reference arguments and private variables.  
+2. Private members and the public members of public child activities can reference arguments and private variables.  
   
  A member that can be set by the consumer of an activity should never be made private.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Data Types Summary (Visual Basic)"
+title: "Data Types Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "data types [Visual Basic], Visual Basic"
@@ -10,10 +10,11 @@ Visual Basic language keywords and run-time library members are organized by pur
   
 |Action|Language element|  
 |------------|----------------------|  
-|Convert between data types|[CBool](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CByte](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CChar](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CDate](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CDbl](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CDec](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CInt](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CLng](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CObj](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CShort](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CSng](../../../visual-basic/language-reference/functions/type-conversion-functions.md), [CStr](../../../visual-basic/language-reference/functions/type-conversion-functions.md), <xref:Microsoft.VisualBasic.Conversion.Fix%2A>, <xref:Microsoft.VisualBasic.Conversion.Int%2A>|  
-|Set intrinsic data types|[Boolean](../../../visual-basic/language-reference/data-types/boolean-data-type.md), [Byte](../../../visual-basic/language-reference/data-types/byte-data-type.md), [Char](../../../visual-basic/language-reference/data-types/char-data-type.md), [Date](../../../visual-basic/language-reference/data-types/date-data-type.md), [Decimal](../../../visual-basic/language-reference/data-types/decimal-data-type.md), [Double](../../../visual-basic/language-reference/data-types/double-data-type.md), [Integer](../../../visual-basic/language-reference/data-types/integer-data-type.md), [Long](../../../visual-basic/language-reference/data-types/long-data-type.md), [Object](../../../visual-basic/language-reference/data-types/object-data-type.md), [Short](../../../visual-basic/language-reference/data-types/short-data-type.md), [Single](../../../visual-basic/language-reference/data-types/single-data-type.md), [String](../../../visual-basic/language-reference/data-types/string-data-type.md)|  
+|Convert between data types|[CBool](../functions/type-conversion-functions.md), [CByte](../functions/type-conversion-functions.md), [CChar](../functions/type-conversion-functions.md), [CDate](../functions/type-conversion-functions.md), [CDbl](../functions/type-conversion-functions.md), [CDec](../functions/type-conversion-functions.md), [CInt](../functions/type-conversion-functions.md), [CLng](../functions/type-conversion-functions.md), [CObj](../functions/type-conversion-functions.md), [CShort](../functions/type-conversion-functions.md), [CSng](../functions/type-conversion-functions.md), [CStr](../functions/type-conversion-functions.md), <xref:Microsoft.VisualBasic.Conversion.Fix%2A>, <xref:Microsoft.VisualBasic.Conversion.Int%2A>|  
+|Set intrinsic data types|[Boolean](../data-types/boolean-data-type.md), [Byte](../data-types/byte-data-type.md), [Char](../data-types/char-data-type.md), [Date](../data-types/date-data-type.md), [Decimal](../data-types/decimal-data-type.md), [Double](../data-types/double-data-type.md), [Integer](../data-types/integer-data-type.md), [Long](../data-types/long-data-type.md), [Object](../data-types/object-data-type.md), [Short](../data-types/short-data-type.md), [Single](../data-types/single-data-type.md), [String](../data-types/string-data-type.md)|  
 |Verify data types|<xref:Microsoft.VisualBasic.Information.IsArray%2A>, <xref:Microsoft.VisualBasic.Information.IsDate%2A>, <xref:Microsoft.VisualBasic.Information.IsDBNull%2A>, <xref:Microsoft.VisualBasic.Information.IsError%2A>, <xref:Microsoft.VisualBasic.Information.IsNothing%2A>, <xref:Microsoft.VisualBasic.Information.IsNumeric%2A>, <xref:Microsoft.VisualBasic.Information.IsReference%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)

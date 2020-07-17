@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for webRequestModules (Network Settings)"
+title: "<clear> Element for webRequestModules (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/webRequestModules/clear"
@@ -11,14 +11,14 @@ helpviewer_keywords:
   - "clear element, webRequestModules"
 ms.assetid: 48f38bcb-f30c-4b74-a8f0-1a3caf1aa96f
 ---
-# &lt;clear&gt; Element for webRequestModules (Network Settings)
+# \<clear> Element for webRequestModules (Network Settings)
 Removes all registered Web request modules from the application.  
-  
- \<configuration>  
-\<system.net>  
-\<webRequestModules>  
-\<clear>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<webRequestModules>**](webrequestmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+
 ## Syntax  
   
 ```xml  
@@ -38,7 +38,7 @@ Removes all registered Web request modules from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[webRequestModules](../../../../../docs/framework/configure-apps/file-schema/network/webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
+|[webRequestModules](webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
   
 ## Remarks  
  The `clear` element removes all registered Web request modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
@@ -63,6 +63,7 @@ Removes all registered Web request modules from the application.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.WebRequest>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.WebRequest>
+- [Network Settings Schema](index.md)

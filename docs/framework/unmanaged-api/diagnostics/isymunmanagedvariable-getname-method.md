@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedVariable::GetName Method
 Gets the name of this variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName(  
     [in]  ULONG32  cchName,  
     [out] ULONG32  *pcchName,  
@@ -31,7 +29,7 @@ HRESULT GetName(
         length_is(*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The length of the buffer that the `pcchName` parameter points to.  
   
@@ -47,5 +45,6 @@ HRESULT GetName(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
+## See also
+
+- [ISymUnmanagedVariable Interface](isymunmanagedvariable-interface.md)

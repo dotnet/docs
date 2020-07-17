@@ -15,25 +15,25 @@ helpviewer_keywords:
 ms.assetid: bfd54573-b7e6-4bd1-a184-7f08a8b39fae
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionSearchFunctionEnter Method
 Notifies the profiler that the search phase of exception handling has begun searching a function to find a handler for the current exception.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionSearchFunctionEnter(  
     [in] FunctionID functionId);  
 ```  
   
-#### Parameters  
- `functionId`  
- [in] The ID of the function that has been entered.  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that has been entered.
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -41,6 +41,7 @@ HRESULT ExceptionSearchFunctionEnter(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ExceptionSearchFunctionLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionsearchfunctionleave-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionSearchFunctionLeave Method](icorprofilercallback-exceptionsearchfunctionleave-method.md)

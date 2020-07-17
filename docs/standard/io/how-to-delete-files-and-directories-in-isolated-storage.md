@@ -17,15 +17,13 @@ helpviewer_keywords:
   - "storing data using isolated storage, deleting files and directories"
   - "deleting directories within isolated stage file"
 ms.assetid: 8fcc0dea-435b-4d40-ba4d-ba056265c202
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Delete Files and Directories in Isolated Storage
 You can delete directories and files within an isolated storage file. Within a store, file and directory names are operating-system dependent and are specified as relative to the root of the virtual file system. They are not case-sensitive on Windows operating systems.  
   
  The <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType> class supplies two methods for deleting directories and files: <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> and <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A>. An <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception is thrown if you try to delete a file or directory that does not exist. If you include a wildcard character in the name, <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> throws an <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception, and <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteFile%2A> throws an <xref:System.ArgumentException> exception.  
   
- The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> method fails if the directory contains any files or subdirectories. You can use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> and <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> methods to retrieve the existing files and directories. For more information about searching the virtual file system of a store, see [How to: Find Existing Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md).  
+ The <xref:System.IO.IsolatedStorage.IsolatedStorageFile.DeleteDirectory%2A> method fails if the directory contains any files or subdirectories. You can use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames%2A> and <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames%2A> methods to retrieve the existing files and directories. For more information about searching the virtual file system of a store, see [How to: Find Existing Files and Directories in Isolated Storage](how-to-find-existing-files-and-directories-in-isolated-storage.md).  
   
 ## Example  
  The following code example creates and then deletes several directories and files.  
@@ -36,5 +34,5 @@ You can delete directories and files within an isolated storage file. Within a s
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>  
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile?displayProperty=nameWithType>
+- [Isolated Storage](isolated-storage.md)

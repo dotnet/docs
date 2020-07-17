@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: ea52be06-0a16-4f57-afca-4287d72e76c4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly::GetProcess Method
 Gets an interface pointer to the process in which this ICorDebugAssembly instance is running.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess (  
     [out] ICorDebugProcess **ppProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppProcess`  
  [out] A pointer to an ICorDebugProcess interface that represents the process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

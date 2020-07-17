@@ -12,14 +12,14 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
   
 |Prefix|Namespace|  
 |------------|---------------|  
-|wsp (WS-Policy 1.2)|http://schemas.xmlsoap.org/ws/2004/09/policy|  
-|wsp (WS-Policy 1.5)|http://www.w3.org/ns/ws-policy|  
-|http|http://schemas.microsoft.com/ws/06/2004/policy/http|  
-|msmq|http://schemas.microsoft.com/ws/06/2004/mspolicy/msmq|  
-|msf|http://schemas.microsoft.com/ws/2006/05/framing/policy|  
-|mssp|http://schemas.microsoft.com/ws/2005/07/securitypolicy|  
-|msc|http://schemas.microsoft.com/ws/2005/12/wsdl/contract|  
-|cdp|http://schemas.microsoft.com/net/2006/06/duplex|  
+|wsp (WS-Policy 1.2)|`http://schemas.xmlsoap.org/ws/2004/09/policy`|  
+|wsp (WS-Policy 1.5)|`http://www.w3.org/ns/ws-policy`|  
+|http|`http://schemas.microsoft.com/ws/06/2004/policy/http`|  
+|msmq|`http://schemas.microsoft.com/ws/06/2004/mspolicy/msmq`|  
+|msf|`http://schemas.microsoft.com/ws/2006/05/framing/policy`|  
+|mssp|`http://schemas.microsoft.com/ws/2005/07/securitypolicy`|  
+|msc|`http://schemas.microsoft.com/ws/2005/12/wsdl/contract`|  
+|cdp|`http://schemas.microsoft.com/net/2006/06/duplex`|  
   
 ## WCF WSDL1.1 Extensions  
  WCF uses the following WSDL1.1 extensions to describe contract session requirements.  
@@ -38,10 +38,10 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
   
 |Transport|URI|  
 |---------------|---------|  
-|HTTP|http://schemas.xmlsoap.org/soap/http|  
-|TCP|http://schemas.microsoft.com/soap/tcp|  
-|MSMQ|http://schemas.microsoft.com/soap/msmq|  
-|Named Pipes|http://schemas.microsoft.com/soap/named-pipe|  
+|HTTP|`http://schemas.xmlsoap.org/soap/http`|  
+|TCP|`http://schemas.microsoft.com/soap/tcp`|  
+|MSMQ|`http://schemas.microsoft.com/soap/msmq`|  
+|Named Pipes|`http://schemas.microsoft.com/soap/named-pipe`|  
   
 ## Policy Assertions Implemented by WCF  
  In addition to policy assertions introduced in the Web Services specifications (WS-*) and mentioned in other sections of this document, WCF implements the following policy assertions.  
@@ -66,7 +66,8 @@ This topic covers Windows Communication Foundation (WCF) WSDL 1.1, WS-Policy and
 |mssp:MustNotSendCancel|Nested|Specifies a requirement that a request security token (RST) request messages [WS-Trust] using the Cancel binding [WS-Trust, WS-SC] not be sent to the issuer of a given SecurityContextToken. If this assertion is present, then such request messages must not be sent to the issuer. If this assertion is not present, then such request messages can be sent to the issuer.|  
 |mssp:RequireClientCertificate|Nested|This optional element specifies a requirement for a client certificate to be provided as part of the TLSNEGO protocol. If this assertion is present, then a client certificate must be provided. If this assertion is not present, then a client certificate must not be provided. This assertion must not be used outside of mssp:SslContextToken.|  
   
-## See Also  
- [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md)  
- [How to: Export Custom WSDL](../../../../docs/framework/wcf/extending/how-to-export-custom-wsdl.md)  
- [How to: Import Custom WSDL](../../../../docs/framework/wcf/extending/how-to-import-custom-wsdl.md)
+## See also
+
+- [Custom WSDL Publication](../samples/custom-wsdl-publication.md)
+- [How to: Export Custom WSDL](../extending/how-to-export-custom-wsdl.md)
+- [How to: Import Custom WSDL](../extending/how-to-import-custom-wsdl.md)

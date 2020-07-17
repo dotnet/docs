@@ -15,17 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8f35414d-f40b-4b99-8768-9adb675c622a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetClassLayout Method
 Gets layout information for the class referenced by the specified TypeDef token.  
   
 ## Syntax  
   
-```  
-HRESULT GetClassLayout  (   
-   [in]  mdTypeDef          td,   
+```cpp  
+HRESULT GetClassLayout  (
+   [in]  mdTypeDef          td,
    [out] DWORD              *pdwPackSize,  
    [out] COR_FIELD_OFFSET   rFieldOffset[],  
    [in]  ULONG              cMax,  
@@ -34,7 +32,7 @@ HRESULT GetClassLayout  (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `td`  
  [in] The TypeDef token for the class with the layout to return.  
   
@@ -42,7 +40,7 @@ HRESULT GetClassLayout  (
  [out] One of the values 1, 2, 4, 8, or 16, representing the pack size of the class.  
   
  `rFieldOffset`  
- [out] An array of [COR_FIELD_OFFSET](../../../../docs/framework/unmanaged-api/metadata/cor-field-offset-structure.md) values.  
+ [out] An array of [COR_FIELD_OFFSET](cor-field-offset-structure.md) values.  
   
  `cMax`  
  [in] The maximum size of the `rFieldOffset` array.  
@@ -54,7 +52,7 @@ HRESULT GetClassLayout  (
  [out] The size in bytes of the class represented by `td`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -62,6 +60,7 @@ HRESULT GetClassLayout  (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

@@ -1,0 +1,15 @@
+CMFCRibbonPanel* pPanel5 = pCategory->AddPanel(_T("Progress Bars"));
+pPanel5->SetCenterColumnVert();
+
+pPanel5->Add(new CMFCRibbonLabel(_T("Simple Progress:")));
+pPanel5->Add(new CMFCRibbonProgressBar(ID_RIBBON_OBTN_7, 100 /* Bar width */));
+pPanel5->Add(new CMFCRibbonButton(ID_RIBBON_OBTN_8, _T("Show Progress 1")));
+
+pPanel5->Add(new CMFCRibbonSeparator());
+
+pPanel5->Add(new CMFCRibbonLabel(_T("Infinite Progress:")));
+CMFCRibbonProgressBar* pBtn9 = new CMFCRibbonProgressBar(ID_RIBBON_OBTN_9, 100 /* Bar width */);
+pBtn9->SetInfiniteMode();
+pPanel5->Add(pBtn9);
+
+pPanel5->Add(new CMFCRibbonButton(ID_RIBBON_OBTN_10, _T("Show Progress 2")));

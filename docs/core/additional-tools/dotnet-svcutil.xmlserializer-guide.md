@@ -1,5 +1,5 @@
 ---
-title: Using dotnet-svcutil.xmlserializer on .NET Core
+title: Using dotnet-svcutil.xmlserializer
 description: Learn how you can use the `dotnet-svcutil.xmlserializer` NuGet package to pre-generate a serialization assembly for .NET Core projects.
 author: huanwu
 ms.date: 11/27/2018
@@ -10,7 +10,7 @@ The `dotnet-svcutil.xmlserializer` NuGet package can pre-generate a serializatio
 
 ## Prerequisites
 
-* [.NET Core 2.1 SDK](https://www.microsoft.com/net/download) or later
+* [.NET Core 2.1 SDK](https://dotnet.microsoft.com/download) or later
 * Your favorite code editor
 
 You can use the command `dotnet --info` to check which versions of .NET Core SDK and runtime you already have installed.
@@ -33,7 +33,7 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
 
 2. Create a .NET Core console application as WCF client application that targets at .NET Core 2.1 or later versions. For example, create an app named 'MyWCFClient' with the following command:
 
-    ```console
+    ```dotnetcli
     dotnet new console --name MyWCFClient
     ```
 
@@ -45,7 +45,7 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
 
 3. Add a package reference to `System.ServiceModel.Http` by running the following command:
 
-    ```console
+    ```dotnetcli
     dotnet add package System.ServiceModel.Http
     ```
 
@@ -78,7 +78,7 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
 
 5. Add a reference to the `dotnet-svcutil.xmlserializer` package by running the following command:
   
-    ```console
+    ```dotnetcli
     dotnet add package dotnet-svcutil.xmlserializer
     ```
 
@@ -92,4 +92,4 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
 
 6. Build the application by running `dotnet build`. If everything succeeds, an assembly named *MyWCFClient.XmlSerializers.dll* is generated in the output folder. If the tool failed to generate the assembly, you'll see warnings in the build output.
 
-7. Start the WCF service by, for example, running `http://localhost:2561/Service1.svc` in the browser. Then start the client application, and it will automatically load and use the pre-generated serializers at runtime.
+7. Start the WCF service by, for example, running `http://localhost:2561/Service1.svc` in the browser. Then start the client application, and it will automatically load and use the pre-generated serializers at run time.

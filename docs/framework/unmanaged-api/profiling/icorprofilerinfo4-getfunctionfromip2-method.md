@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 46ff70f4-13e9-40a0-802a-0a40abcfc6a0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::GetFunctionFromIP2 Method
 Maps a managed code instruction pointer to the JIT-recompiled version of a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromIP2(  
     [in]  LPCBYTE    ip,  
     [out] FunctionID *pFunctionId,  
     [out] ReJITID *pReJitId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ip`  
  [in] The instruction pointer in managed code.  
   
@@ -44,10 +42,10 @@ HRESULT GetFunctionFromIP2(
  `GetFunctionFromIP2` is similar to `GetFunctionFromIP`, except that it gets the JIT-recompiled ID instead of the function ID of the function that contains the specified IP address.  
   
 > [!NOTE]
->  `GetFunctionFromIP2` can trigger a garbage collection, whereas `GetFunctionFromIP` will not.  For more information, see [CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](../../../../docs/framework/unmanaged-api/profiling/corprof-e-unsupported-call-sequence-hresult.md).  
+> `GetFunctionFromIP2` can trigger a garbage collection, whereas `GetFunctionFromIP` will not.  For more information, see [CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT](corprof-e-unsupported-call-sequence-hresult.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -55,5 +53,6 @@ HRESULT GetFunctionFromIP2(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

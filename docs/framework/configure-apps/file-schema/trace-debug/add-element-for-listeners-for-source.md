@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;"
+title: "<add> Element for <listeners> for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/add"
@@ -8,23 +8,21 @@ helpviewer_keywords:
   - "add element for <listeners> for <source>"
   - "<add> element for <listeners> for <source>"
 ms.assetid: 4ce36ac1-81ef-48e8-b8b2-b5a5b0e2adcb
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;add&gt; Element for &lt;listeners&gt; for &lt;source&gt;
+# \<add> Element for \<listeners> for \<source>
 Adds a listener to the `Listeners` collection for a trace source.  
-  
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-\<source>  
-\<listeners>  
-\<add>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+
 ## Syntax  
   
 ```xml  
-<add name="name"   
+<add name="name"
   type="TraceListenerClassName, Version, Culture, PublicKeyToken"  
   initializeData="data"/>  
 ```  
@@ -36,7 +34,7 @@ Adds a listener to the `Listeners` collection for a trace source.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`type`|Required attribute, unless you're referencing a listener in the `sharedListeners` collection, in which case you only need to refer to it by name (see the [Example](#example)).<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`type`|Required attribute, unless you're referencing a listener in the `sharedListeners` collection, in which case you only need to refer to it by name (see the [Example](#example)).<br /><br /> Specifies the type of the listener. You must use a string that meets the requirements specified in [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified class. A <xref:System.Configuration.ConfigurationException> is thrown if the class does not have a constructor that takes a string.|  
 |`name`|Optional attribute.<br /><br /> Specifies the name of the listener.|  
 |`traceOutputOptions`|Optional attribute.<br /><br /> Specifies the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property value for the trace listener.|  
@@ -46,7 +44,7 @@ Adds a listener to the `Listeners` collection for a trace source.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<filter>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/filter-element-for-add-for-listeners-for-source.md)|Adds a filter to a listener in the `Listeners` collection for a trace source.|  
+|[\<filter>](filter-element-for-add-for-listeners-for-source.md)|Adds a filter to a listener in the `Listeners` collection for a trace source.|  
   
 ### Parent Elements  
   
@@ -64,12 +62,12 @@ Adds a listener to the `Listeners` collection for a trace source.
  If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> property of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and you can remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify a unique name for each trace listener, which allows you to identify and manage individual trace listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A?displayProperty=nameWithType> collection.  
   
 > [!NOTE]
->  Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.  
+> Adding more than one trace listener of the same type and with the same name results in only one trace listener of that type and name being added to the `Listeners` collection. However, you can programmatically add multiple identical listeners to the `Listeners` collection.  
   
  The value for the `initializeData` attribute depends on the type of listener you create. Not all trace listeners require that you specify `initializeData`.  
   
 > [!NOTE]
->  When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
+> When you use the `initializeData` attribute, you may get the compiler warning "The 'initializeData' attribute is not declared." This warning occurs because the configuration settings are validated against the abstract base class <xref:System.Diagnostics.TraceListener>, which does not recognize the `initializeData` attribute. Typically, you can ignore this warning for trace listener implementations that have a constructor that takes a parameter.  
   
  The following table shows the trace listeners that are included with the .NET Framework and describes the value of their `initializeData` attributes.  
   
@@ -92,10 +90,10 @@ Adds a listener to the `Listeners` collection for a trace source.
 <configuration>  
   <system.diagnostics>  
     <sources>  
-      <source name="TraceSourceApp" switchName="sourceSwitch"   
+      <source name="TraceSourceApp" switchName="sourceSwitch"
         switchType="System.Diagnostics.SourceSwitch">  
         <listeners>  
-          <add name="console"   
+          <add name="console"
             type="System.Diagnostics.ConsoleTraceListener"/>  
           <add name="textListener"/>  
           <remove name="Default"/>  
@@ -103,19 +101,20 @@ Adds a listener to the `Listeners` collection for a trace source.
       </source>  
     </sources>  
     <sharedListeners>  
-      <add name="textListener"   
-        type="System.Diagnostics.TextWriterTraceListener"   
+      <add name="textListener"
+        type="System.Diagnostics.TextWriterTraceListener"
         initializeData="myListener.log"/>  
     </sharedListeners>  
     <switches>  
       <add name="sourceSwitch" value="Warning"/>  
     </switches>  
   </system.diagnostics>  
-</configuration>   
+</configuration>
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceSource>  
- <xref:System.Diagnostics.TraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+
+- <xref:System.Diagnostics.TraceSource>
+- <xref:System.Diagnostics.TraceListener>
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

@@ -10,19 +10,17 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], attributes"
   - "attributes [.NET Framework], applying"
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Applying Attributes
 Use the following process to apply an attribute to an element of your code.  
   
-1.  Define a new attribute or use an existing attribute by importing its namespace from the .NET Framework.  
+1. Define a new attribute or use an existing attribute by importing its namespace from the .NET Framework.  
   
-2.  Apply the attribute to the code element by placing it immediately before the element.  
+2. Apply the attribute to the code element by placing it immediately before the element.  
   
      Each language has its own attribute syntax. In C++ and C#, the attribute is surrounded by square brackets and separated from the element by white space, which can include a line break. In Visual Basic, the attribute is surrounded by angle brackets and must be on the same logical line; the line continuation character can be used if a line break is desired.
   
-3.  Specify positional parameters and named parameters for the attribute.  
+3. Specify positional parameters and named parameters for the attribute.  
   
      Positional parameters are required and must come before any named parameters; they correspond to the parameters of one of the attribute's constructors. Named parameters are optional and correspond to read/write properties of the attribute. In C++, and C#, specify `name`=`value` for each optional parameter, where `name` is the name of the property. In Visual Basic, specify `name`:=`value`.  
   
@@ -44,11 +42,12 @@ Use the following process to apply an attribute to an element of your code.
  [!code-csharp[Conceptual.Attributes.Usage#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.attributes.usage/cs/source1.cs#2)]
  [!code-vb[Conceptual.Attributes.Usage#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.attributes.usage/vb/source1.vb#2)]  
   
- When this attribute is applied, the string `"My Assembly"` is placed in the assembly manifest in the metadata portion of the file. You can view the attribute either by using the [MSIL Disassembler (Ildasm.exe)](../../../docs/framework/tools/ildasm-exe-il-disassembler.md) or by creating a custom program to retrieve the attribute.  
+ When this attribute is applied, the string `"My Assembly"` is placed in the assembly manifest in the metadata portion of the file. You can view the attribute either by using the [MSIL Disassembler (Ildasm.exe)](../../framework/tools/ildasm-exe-il-disassembler.md) or by creating a custom program to retrieve the attribute.  
   
 ## See also
 
-- [Attributes](../../../docs/standard/attributes/index.md)  
-- [Retrieving Information Stored in Attributes](../../../docs/standard/attributes/retrieving-information-stored-in-attributes.md)  
-- [Concepts](/cpp/windows/attributed-programming-concepts)  
-- [Attributes](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+- [Attributes](index.md)
+- [Retrieving Information Stored in Attributes](retrieving-information-stored-in-attributes.md)
+- [Concepts](/cpp/windows/attributed-programming-concepts)
+- [Attributes (C#)](../../csharp/programming-guide/concepts/attributes/index.md)
+- [Attributes overview (Visual Basic)](../../visual-basic/programming-guide/concepts/attributes/index.md)

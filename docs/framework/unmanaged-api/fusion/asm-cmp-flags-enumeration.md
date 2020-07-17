@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4d1e6700-d4be-4fbd-8796-bfb4c07abbc8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ASM_CMP_FLAGS Enumeration
-Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-isequal-method.md) method.  
+Indicates the version, build, culture, signature, and so on, of two assemblies to be compared by the [IAssemblyName::IsEqual](iassemblyname-isequal-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
   
     ASM_CMPF_NAME                   = 0x1,  
@@ -31,10 +29,10 @@ typedef enum {
     ASM_CMPF_BUILD_NUMBER           = 0x8,  
     ASM_CMPF_REVISION_NUMBER        = 0x10,  
   
-    ASM_CMPF_VERSION                =   
-                 ASM_CMPF_MAJOR_VERSION |   
-                 ASM_CMPF_MINOR_VERSION |   
-                 ASM_CMPF_BUILD_NUMBER  |   
+    ASM_CMPF_VERSION                =
+                 ASM_CMPF_MAJOR_VERSION |
+                 ASM_CMPF_MINOR_VERSION |
+                 ASM_CMPF_BUILD_NUMBER  |
                  ASM_CMPF_REVISION_NUMBER,  
   
     ASM_CMPF_PUBLIC_KEY_TOKEN       = 0x20,  
@@ -47,22 +45,22 @@ typedef enum {
     ASM_CMPF_MVID                   = 0x1000,  
     ASM_CMPF_SIGNATURE              = 0x2000,  
   
-    ASM_CMPF_IL_ALL                 =   
-                 ASM_CMPF_NAME             |   
-                 ASM_CMPF_VERSION          |   
-                 ASM_CMPF_PUBLIC_KEY_TOKEN |   
+    ASM_CMPF_IL_ALL                 =
+                 ASM_CMPF_NAME             |
+                 ASM_CMPF_VERSION          |
+                 ASM_CMPF_PUBLIC_KEY_TOKEN |
                  ASM_CMPF_CULTURE,  
   
-    ASM_CMPF_IL_NO_VERSION          =   
-                 ASM_CMPF_NAME             |   
-                 ASM_CMPF_PUBLIC_KEY_TOKEN |   
+    ASM_CMPF_IL_NO_VERSION          =
+                 ASM_CMPF_NAME             |
+                 ASM_CMPF_PUBLIC_KEY_TOKEN |
                  ASM_CMPF_CULTURE  
   
 } ASM_CMP_FLAGS;  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -70,6 +68,7 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)  
- [Fusion Enumerations](../../../../docs/framework/unmanaged-api/fusion/fusion-enumerations.md)
+## See also
+
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [Fusion Enumerations](fusion-enumerations.md)

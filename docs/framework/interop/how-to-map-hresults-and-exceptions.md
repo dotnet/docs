@@ -1,5 +1,6 @@
 ---
 title: "How to: Map HRESULTs and Exceptions"
+description: Review how to map HRESULT values returned from COM methods to exceptions thrown by .NET methods. The runtime handles the transition between COM and .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -11,8 +12,6 @@ helpviewer_keywords:
   - "COM interop, HRESULTs"
   - "COM interop, exceptions"
 ms.assetid: 610b364b-2761-429d-9c4a-afbc3e66f1b9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Map HRESULTs and Exceptions
 COM methods report errors by returning HRESULTs; .NET methods report them by throwing exceptions. The runtime handles the transition between the two. Each exception class in the .NET Framework maps to an HRESULT.  
@@ -25,13 +24,13 @@ COM methods report errors by returning HRESULTs; .NET methods report them by thr
   
 ### To create a new exception class and map it to an HRESULT  
   
-1.  Use the following code to create a new exception class called `NoAccessException` and map it to the HRESULT `E_ACCESSDENIED`.  
+1. Use the following code to create a new exception class called `NoAccessException` and map it to the HRESULT `E_ACCESSDENIED`.  
   
     ```cpp  
     Class NoAccessException : public ApplicationException  
     {  
         NoAccessException () {  
-        HResult = E_ACCESSDENIED;   
+        HResult = E_ACCESSDENIED;
     }  
     }  
     CMyClass::MethodThatThrows  
@@ -136,6 +135,7 @@ CMyClass::MethodThatThrows
   
  Exception fields, such as **Message**, **Source**, and **StackTrace** are not available for the **StackOverflowException**.  
   
-## See Also  
- [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))  
- [Exceptions](../../standard/exceptions/index.md)
+## See also
+
+- [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))
+- [Exceptions](../../standard/exceptions/index.md)

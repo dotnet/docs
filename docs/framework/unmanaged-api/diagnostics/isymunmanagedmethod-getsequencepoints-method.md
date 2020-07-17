@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f909ac48-3d8f-49fb-a369-e3d9959151cd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetSequencePoints Method
 Gets all the sequence points within this method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSequencePoints(  
     [in]  ULONG32  cPoints,  
     [out] ULONG32  *pcPoints,  
@@ -35,7 +33,7 @@ HRESULT GetSequencePoints(
     [in, size_is(cPoints)] ULONG32  endColumns[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cPoints`  
  [in] A `ULONG32` that receives the size of the `offsets`, `documents`, `lines`, `columns`, `endLines`, and `endColumns` arrays.  
   
@@ -66,5 +64,6 @@ HRESULT GetSequencePoints(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+## See also
+
+- [ISymUnmanagedMethod Interface](isymunmanagedmethod-interface.md)

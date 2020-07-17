@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: c9110b49-823c-4ba9-9a4c-198afeb7780e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerModuleEnum::Reset Method
 Moves this enumerator's cursor to the starting position of the sequence.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset();  
 ```  
   
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -38,6 +36,7 @@ HRESULT Reset();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+## See also
+
+- [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

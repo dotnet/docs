@@ -2,7 +2,7 @@
 title: "Routing Scenarios"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "rounting [WCF], scenarios"
+  - "routing [WCF], scenarios"
 ms.assetid: ec22f308-665a-413e-9f94-7267cb665dab
 ---
 # Routing Scenarios
@@ -21,31 +21,31 @@ While the Routing Service is highly customizable, it can be a challenge to desig
 |Error Handling|You need to provide resilience to network outages and communication failures|  
   
 > [!NOTE]
->  While many of the scenarios presented are specific to certain business needs or processing requirements, planning to support dynamic updates and utilizing error handling can often be considered as best practices as they allow you to modify routing logic at runtime and recover from transient network and communication failures.  
+> While many of the scenarios presented are specific to certain business needs or processing requirements, planning to support dynamic updates and utilizing error handling can often be considered as best practices as they allow you to modify routing logic at runtime and recover from transient network and communication failures.  
   
 ### Service Versioning  
  When introducing a new version of a service, you must often maintain the previous version until all clients have transitioned to the new service. This is especially critical if the service is a long-running process that takes days, weeks, or even months to complete. Usually this requires implementing a new endpoint address for the new service while maintaining the original endpoint for the previous version.  
   
  By using the Routing Service, you can expose one endpoint to receive messages from client applications and then route each message to the correct service version based on the message content. The most basic implementation involves adding a custom header to the message that indicates the version of the service that the message is to be processed by. The Routing Service can use the XPathMessageFilter to inspect each message for the presence of the custom header and route the message to the appropriate destination endpoint.  
   
- For the steps used to create a service versioning configuration, see [How To: Service Versioning](../../../../docs/framework/wcf/feature-details/how-to-service-versioning.md).
+ For the steps used to create a service versioning configuration, see [How To: Service Versioning](how-to-service-versioning.md).
   
 ### Service Data Partitioning  
  When designing a distributed environment, it is often desirable to spread processing load across multiple computers in order to provide high availability, decrease processing load on individual computers, or to provide dedicated resources for a specific subset of messages. While the Routing Service does not replace a dedicated load balancing solution, its ability to perform content based routing can be used to route otherwise similar messages to specific destinations. For example, you may have a requirement to process messages from a specific client separately from messages received from other clients.  
   
- For the steps used to create a service data partitioning configuration, see [How To: Service Data Partitioning](../../../../docs/framework/wcf/feature-details/how-to-service-data-partitioning.md).  
+ For the steps used to create a service data partitioning configuration, see [How To: Service Data Partitioning](how-to-service-data-partitioning.md).  
   
 ### Dynamic Routing  
  Often it is desirable to modify the routing configuration to satisfy changing business needs, such as adding a route to a newer version of a service, changing routing criteria, or changing the destination endpoint a specific message that the filter routes to. The Routing Service allows you to do this through the <xref:System.ServiceModel.Routing.RoutingExtension>, which allows you to provide a new RoutingConfiguration during run time. The new configuration takes effect immediately, but only affects any new sessions processed by the Routing Service.  
   
- For the steps used to implement dynamic routing, see [How To: Dynamic Update](../../../../docs/framework/wcf/feature-details/how-to-dynamic-update.md).
+ For the steps used to implement dynamic routing, see [How To: Dynamic Update](how-to-dynamic-update.md).
   
 ### Multicast  
  When routing messages, usually you routing each message to one specific destination endpoint.  However, you may occasionally need to route a copy of the message to multiple destination endpoints. To perform multicast routing, the following conditions must be true:  
   
--   The channel shape must not be request-reply (though it may be one-way or duplex,) because request-reply mandates that only one reply can be received by the client application in response to the request.  
+- The channel shape must not be request-reply (though it may be one-way or duplex,) because request-reply mandates that only one reply can be received by the client application in response to the request.  
   
--   Multiple filters must return **true** when evaluating the message.  
+- Multiple filters must return **true** when evaluating the message.  
   
  If these conditions are met, each destination endpoint that is associated with a filter that returns true will receive a copy of the message.  
   
@@ -57,16 +57,17 @@ While the Routing Service is highly customizable, it can be a challenge to desig
   
  The Routing Service attempts to remedy this scenario by providing robust error handling capabilities for messages that encounter network or communication-related failures. By creating a list of possible destination endpoints and associating this list with each message filter, you remove the single point of failure incurred by having only one possible destination. In the event of a failure, the Routing Service will attempt to deliver the message to the next endpoint in the list until the message has been delivered, a non-communication failure occurs, or all endpoints have been exhausted.  
   
- For the steps used to configure error handling, see [How To: Error Handling](../../../../docs/framework/wcf/feature-details/how-to-error-handling.md).
+ For the steps used to configure error handling, see [How To: Error Handling](how-to-error-handling.md).
   
 ### In This Section  
- [How To: Service Versioning](../../../../docs/framework/wcf/feature-details/how-to-service-versioning.md)  
+ [How To: Service Versioning](how-to-service-versioning.md)  
   
- [How To: Service Data Partitioning](../../../../docs/framework/wcf/feature-details/how-to-service-data-partitioning.md)  
+ [How To: Service Data Partitioning](how-to-service-data-partitioning.md)  
   
- [How To: Dynamic Update](../../../../docs/framework/wcf/feature-details/how-to-dynamic-update.md)  
+ [How To: Dynamic Update](how-to-dynamic-update.md)  
   
- [How To: Error Handling](../../../../docs/framework/wcf/feature-details/how-to-error-handling.md)  
+ [How To: Error Handling](how-to-error-handling.md)  
   
-## See Also  
- [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md)
+## See also
+
+- [Routing Introduction](routing-introduction.md)

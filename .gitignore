@@ -26,7 +26,11 @@ _dependentPackages/
 !/xml/System.Net.Cache/
 
 # Visual Studio Code
-.vscode
+.vscode/
+!.vscode/extensions.json
+
+# Visual Studio 2019
+.vs
 
 # Windows thumbnail cache files
 Thumbs.db
@@ -35,3 +39,8 @@ ehthumbs_vista.db
 
 # Windows shortcuts
 *.lnk
+
+[Bb]in/
+[Oo]bj/
+*.sln
+*.user

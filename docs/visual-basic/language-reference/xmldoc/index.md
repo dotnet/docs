@@ -1,5 +1,5 @@
 ---
-title: "Recommended XML Tags for Documentation Comments (Visual Basic)"
+title: "Recommended XML Tags for Documentation Comments"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlDocComment"
@@ -15,25 +15,26 @@ The Visual Basic compiler can process documentation comments in your code to an 
  XML comments are allowed on code constructs such as types and type members. For partial types, only one part of the type can have XML comments, although there is no restriction on commenting its members.  
   
 > [!NOTE]
->  Documentation comments cannot be applied to namespaces. The reason is that one namespace can span several assemblies, and not all assemblies have to be loaded at the same time.  
+> Documentation comments cannot be applied to namespaces. The reason is that one namespace can span several assemblies, and not all assemblies have to be loaded at the same time.  
   
  The compiler processes any tag that is valid XML. The following tags provide commonly used functionality in user documentation.  
   
 ||||  
 |---|---|---|  
-|[\<c>](../../../visual-basic/language-reference/xmldoc/c.md)|[\<code>](../../../visual-basic/language-reference/xmldoc/code.md)|[\<example>](../../../visual-basic/language-reference/xmldoc/example.md)|  
-|[\<exception>](../../../visual-basic/language-reference/xmldoc/exception.md) <sup>1</sup>|[\<include>](../../../visual-basic/language-reference/xmldoc/include.md) <sup>1</sup>|[\<list>](../../../visual-basic/language-reference/xmldoc/list.md)|  
-|[\<para>](../../../visual-basic/language-reference/xmldoc/para.md)|[\<param>](../../../visual-basic/language-reference/xmldoc/param.md) <sup>1</sup>|[\<paramref>](../../../visual-basic/language-reference/xmldoc/paramref.md)|  
-|[\<permission>](../../../visual-basic/language-reference/xmldoc/permission.md) <sup>1</sup>|[\<remarks>](../../../visual-basic/language-reference/xmldoc/remarks.md)|[\<returns>](../../../visual-basic/language-reference/xmldoc/returns.md)|  
-|[\<see>](../../../visual-basic/language-reference/xmldoc/see.md) <sup>1</sup>|[\<seealso>](../../../visual-basic/language-reference/xmldoc/seealso.md) <sup>1</sup>|[\<summary>](../../../visual-basic/language-reference/xmldoc/summary.md)|  
-|[\<typeparam>](../../../visual-basic/language-reference/xmldoc/typeparam.md) <sup>1</sup>|[\<value>](../../../visual-basic/language-reference/xmldoc/value.md)||  
+|[\<c>](c.md)|[\<code>](code.md)|[\<example>](example.md)|  
+|[\<exception>](exception.md) <sup>1</sup>|[\<include>](include.md) <sup>1</sup>|[\<list>](list.md)|  
+|[\<para>](para.md)|[\<param>](param.md) <sup>1</sup>|[\<paramref>](paramref.md)|  
+|[\<permission>](permission.md) <sup>1</sup>|[\<remarks>](remarks.md)|[\<returns>](returns.md)|  
+|[\<see>](see.md) <sup>1</sup>|[\<seealso>](seealso.md) <sup>1</sup>|[\<summary>](summary.md)|  
+|[\<typeparam>](typeparam.md) <sup>1</sup>|[\<value>](value.md)||  
   
  (<sup>1</sup> The compiler verifies syntax.)  
   
 > [!NOTE]
->  If you want angle brackets to appear in the text of a documentation comment, use `&lt;` and `&gt;`. For example, the string `"&lt;text in angle brackets&gt;"` will appear as `<text in angle brackets>`.  
+> If you want angle brackets to appear in the text of a documentation comment, use `&lt;` and `&gt;`. For example, the string `"&lt;text in angle brackets&gt;"` will appear as `<text in angle brackets>`.  
   
-## See Also  
- [Documenting Your Code with XML](../../../visual-basic/programming-guide/program-structure/documenting-your-code-with-xml.md)  
- [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)  
- [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
+## See also
+
+- [Documenting Your Code with XML](../../programming-guide/program-structure/documenting-your-code-with-xml.md)
+- [-doc](../../reference/command-line-compiler/doc.md)
+- [How to: Create XML Documentation](../../programming-guide/program-structure/how-to-create-xml-documentation.md)

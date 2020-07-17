@@ -1,5 +1,6 @@
 ---
 title: "Path Markup Syntax"
+description: Learn about the powerful and complex mini-language you can use to specify compact path geometries in Windows Presentation Foundation (WPF). 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "attribute usage in XAML [WPF]"
@@ -9,27 +10,27 @@ helpviewer_keywords:
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
 ---
 # Path Markup Syntax
-Paths are discussed in [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md) and the [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md), however, this topic describes in detail the powerful and complex mini-language you can use to specify path geometries more compactly using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
+Paths are discussed in [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md) and the [Geometry Overview](geometry-overview.md), however, this topic describes in detail the powerful and complex mini-language you can use to specify path geometries more compactly using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
- To understand this topic, you should be familiar with the basic features of <xref:System.Windows.Media.Geometry> objects. For more information, see the [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md).  
+ To understand this topic, you should be familiar with the basic features of <xref:System.Windows.Media.Geometry> objects. For more information, see the [Geometry Overview](geometry-overview.md).  
   
-<a name="abouthisdocument"></a>   
+<a name="abouthisdocument"></a>
 ## StreamGeometry and PathFigureCollection Mini-Languages  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides two classes that provide mini-languages for describing geometric paths: <xref:System.Windows.Media.StreamGeometry> and <xref:System.Windows.Media.PathFigureCollection>.  
   
--   You use the <xref:System.Windows.Media.StreamGeometry> mini-language when setting a property of type <xref:System.Windows.Media.Geometry>, such as the <xref:System.Windows.UIElement.Clip%2A> property of a <xref:System.Windows.UIElement> or the <xref:System.Windows.Shapes.Path.Data%2A> property of a <xref:System.Windows.Shapes.Path> element. The following example uses attribute syntax to create a <xref:System.Windows.Media.StreamGeometry>.  
+- You use the <xref:System.Windows.Media.StreamGeometry> mini-language when setting a property of type <xref:System.Windows.Media.Geometry>, such as the <xref:System.Windows.UIElement.Clip%2A> property of a <xref:System.Windows.UIElement> or the <xref:System.Windows.Shapes.Path.Data%2A> property of a <xref:System.Windows.Shapes.Path> element. The following example uses attribute syntax to create a <xref:System.Windows.Media.StreamGeometry>.  
   
-     [!code-xaml[GeometrySample_snip_XAML#GraphicsMMStreamGeometryAttributeSyntaxInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample_snip_XAML/CS/MiniLanguageExample.xaml#graphicsmmstreamgeometryattributesyntaxinline)]  
+     [!code-xaml[GeometrySample_snip_XAML#GraphicsMMStreamGeometryAttributeSyntaxInline](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample_snip_XAML/CS/MiniLanguageExample.xaml#graphicsmmstreamgeometryattributesyntaxinline)]  
   
--   You use the <xref:System.Windows.Media.PathFigureCollection> mini-language when setting the <xref:System.Windows.Media.PathGeometry.Figures%2A> property of a <xref:System.Windows.Media.PathGeometry>. The following example uses a attribute syntax to create a <xref:System.Windows.Media.PathFigureCollection> for a <xref:System.Windows.Media.PathGeometry>.  
+- You use the <xref:System.Windows.Media.PathFigureCollection> mini-language when setting the <xref:System.Windows.Media.PathGeometry.Figures%2A> property of a <xref:System.Windows.Media.PathGeometry>. The following example uses a attribute syntax to create a <xref:System.Windows.Media.PathFigureCollection> for a <xref:System.Windows.Media.PathGeometry>.  
   
-     [!code-xaml[GeometrySample_snip_XAML#GraphicsMMPathFigureCollectionAttributeSyntaxInline](../../../../samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample_snip_XAML/CS/MiniLanguageExample.xaml#graphicsmmpathfigurecollectionattributesyntaxinline)]  
+     [!code-xaml[GeometrySample_snip_XAML#GraphicsMMPathFigureCollectionAttributeSyntaxInline](~/samples/snippets/csharp/VS_Snippets_Wpf/GeometrySample_snip_XAML/CS/MiniLanguageExample.xaml#graphicsmmpathfigurecollectionattributesyntaxinline)]  
   
  As you can see from the preceding examples, the two mini-languages are very similar. It's always possible to use a <xref:System.Windows.Media.PathGeometry> in any situation where you could use a <xref:System.Windows.Media.StreamGeometry>; so which one should you use? Use a <xref:System.Windows.Media.StreamGeometry> when you don't need to modify the path after creating it; use a <xref:System.Windows.Media.PathGeometry> if you do need to modify the path.  
   
- For more information about the differences between <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> objects, see the [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md).  
+ For more information about the differences between <xref:System.Windows.Media.PathGeometry> and <xref:System.Windows.Media.StreamGeometry> objects, see the [Geometry Overview](geometry-overview.md).  
   
 ### A Note about White Space  
  For brevity, a single space is shown in the syntax sections that follow, but multiple spaces are also acceptable wherever a single space is shown.  
@@ -57,7 +58,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](../../../../do
 |*drawCommands*|One or more drawing commands that describe the figure's contents. See the [Draw Commands](#drawcommands) section.|  
 |*closeCommand*|An optional close command that closes figure. See the [Close Command](#closecommand) section.|  
   
-<a name="themovecommand"></a>   
+<a name="themovecommand"></a>
 ## Move Command  
  Specifies the start point of a new figure.  
   
@@ -71,7 +72,7 @@ Paths are discussed in [Shapes and Basic Drawing in WPF Overview](../../../../do
   
  An uppercase `M` indicates that `startPoint` is an absolute value; a lowercase `m` indicates that `startPoint` is an offset to the previous point, or (0,0) if none exists. If you list multiple points after the move command, a line is drawn to those points though you specified the line command.  
   
-<a name="drawcommands"></a>   
+<a name="drawcommands"></a>
 ## Draw Commands  
  A draw command can consist of several shape commands. The following shape commands are available: line, horizontal line, vertical line, cubic Bezier curve, quadratic Bezier curve, smooth cubic Bezier curve, smooth quadratic Bezier curve, and elliptical arc.  
   
@@ -93,7 +94,6 @@ An uppercase `L` indicates that `endPoint` is an absolute value; a lowercase `l`
 ### Horizontal Line Command  
  Creates a horizontal line between the current point and the specified x-coordinate. `H 90` is an example of a valid horizontal line command.
 
-  
 |Syntax|  
 |------------|  
 |`H`  *x*<br /><br /> - or -<br /><br /> `h`  *x*|  
@@ -107,7 +107,6 @@ An uppercase `H` indicates that `x` is an absolute value; a lowercase `h` indica
 ### Vertical Line Command  
  Creates a vertical line between the current point and the specified y-coordinate. `v 90` is an example of a valid vertical line command.
 
-  
 |Syntax|  
 |------------|  
 |`V`  *y*<br /><br /> - or -<br /><br /> `v`  *y*|  
@@ -117,7 +116,7 @@ An uppercase `H` indicates that `x` is an absolute value; a lowercase `h` indica
 |*y*|<xref:System.Double?displayProperty=nameWithType><br /><br /> The y-coordinate of the end point of the line.|  
 
 An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indicates that `y` is an offset to the previous point, or (0,0) if none exists.  
-    
+
 ### Cubic Bezier Curve Command  
  Creates a cubic Bezier curve between the current point and the specified end point by using the two specified control points (`controlPoint`1 and `controlPoint`2). `C 100,200 200,400 300,200` is an example of a valid curve command.  
   
@@ -182,7 +181,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 |`sweepDirectionFlag`|Set to 1 if the arc is drawn in a positive-angle direction; otherwise, set to 0.|  
 |`endPoint`|<xref:System.Windows.Point?displayProperty=nameWithType><br /><br /> The point to which the arc is drawn.|  
   
-<a name="closecommand"></a>   
+<a name="closecommand"></a>
 ## The Close Command  
  Ends the current figure and creates a line that connects the current point to the starting point of the figure. This command creates a line-join (corner) between the last segment and the first segment of the figure.  
   
@@ -190,7 +189,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 |------------|  
 |`Z`<br /><br /> - or -<br /><br /> `z`|  
 
-<a name="pointsyntax"></a>   
+<a name="pointsyntax"></a>
 ## Point Syntax  
  Describes the x- and y-coordinates of a point where (0,0) is the top left corner.
   
@@ -203,7 +202,7 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
 |`x`|<xref:System.Double?displayProperty=nameWithType><br /><br /> The x-coordinate of the point.|  
 |`y`|<xref:System.Double?displayProperty=nameWithType><br /><br /> The y-coordinate of the point.|  
   
-<a name="specialvalues"></a>   
+<a name="specialvalues"></a>
 ## Special Values  
  Instead of a standard numerical value, you can also use the following special values. These values are case-sensitive.  
   
@@ -218,11 +217,12 @@ An uppercase `V` indicates that `y` is an absolute value; a lowercase `v` indica
   
  You may also use scientific notation. For example, `+1.e17` is a valid value.  
   
-## See Also  
- <xref:System.Windows.Shapes.Path>  
- <xref:System.Windows.Media.StreamGeometry>  
- <xref:System.Windows.Media.PathGeometry>  
- <xref:System.Windows.Media.PathFigureCollection>  
- [Shapes and Basic Drawing in WPF Overview](../../../../docs/framework/wpf/graphics-multimedia/shapes-and-basic-drawing-in-wpf-overview.md)  
- [Geometry Overview](../../../../docs/framework/wpf/graphics-multimedia/geometry-overview.md)  
- [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/geometries-how-to-topics.md)
+## See also
+
+- <xref:System.Windows.Shapes.Path>
+- <xref:System.Windows.Media.StreamGeometry>
+- <xref:System.Windows.Media.PathGeometry>
+- <xref:System.Windows.Media.PathFigureCollection>
+- [Shapes and Basic Drawing in WPF Overview](shapes-and-basic-drawing-in-wpf-overview.md)
+- [Geometry Overview](geometry-overview.md)
+- [How-to Topics](geometries-how-to-topics.md)

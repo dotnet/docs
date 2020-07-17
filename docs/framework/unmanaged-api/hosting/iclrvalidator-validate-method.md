@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRValidator::Validate Method
 Validates the portable executable (PE) or Microsoft intermediate language (MSIL) in the specified file.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Validate (  
     [in] IVEHandler        *veh,  
     [in] unsigned long      ulAppDomainId,  
@@ -33,10 +31,10 @@ HRESULT Validate (
     [in] LPWSTR             fileName,  
     [in, size_is(ulSize)] BYTE *pe,  
     [in] unsigned long      ulSize  
-);      
+);
 ```  
   
-#### Parameters  
+## Parameters  
  `veh`  
  [in] A pointer to an `IVEHandler` instance that handles validation errors.  
   
@@ -44,7 +42,7 @@ HRESULT Validate (
  [in] The identifier for the current <xref:System.AppDomain>.  
   
  `ulFlags`  
- [in] A combination of [ValidatorFlags](../../../../docs/framework/unmanaged-api/hosting/validatorflags-enumeration.md) values, indicating the kind of validation that should be performed.  
+ [in] A combination of [ValidatorFlags](validatorflags-enumeration.md) values, indicating the kind of validation that should be performed.  
   
  `ulMaxError`  
  [in] The maximum number of errors to allow before exiting the validation.  
@@ -73,7 +71,7 @@ HRESULT Validate (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   
@@ -81,5 +79,6 @@ HRESULT Validate (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRValidator Interface](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)
+## See also
+
+- [ICLRValidator Interface](iclrvalidator-interface.md)

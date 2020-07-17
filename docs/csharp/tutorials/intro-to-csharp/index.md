@@ -1,19 +1,30 @@
 ---
 title: Introduction to C# - interactive tutorials
 description: Learn C# in your browser, and get started with your own development environment
-ms.date: 01/30/2018
+ms.date: 08/22/2019
 ms.custom: mvc
 ---
-# Introduction to C# #
+# Introduction to C\#
 
-Welcome to the introduction to C# tutorials. These start with interactive lessons
-that you can run in your browser.
+Welcome to the introduction to C# tutorials. These lessons start with interactive code
+that you can run in your browser. You can learn the basics of C# from the
+[C# 101 video series](https://aka.ms/dotnet3-csharp) before starting these interactive lessons.
+
+<!--markdownlint-disable MD034 -->
+> [!VIDEO https://channel9.msdn.com/Series/CSharp-101/What-is-C/player]
 
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
 numbers, and booleans. It's all interactive, and you'll be writing and running code
 within minutes. These first lessons assume no prior knowledge of
 programming or the C# language.
+
+You can try these tutorials in different environments. The concepts you'll learn are the same. The difference is which experience you prefer:
+
+- [In your browser, on the docs platform](hello-world.yml): This experience embeds a runnable C# code window in docs pages. You write and execute C# code in the browser.
+- [In the Microsoft Learn experience](https://docs.microsoft.com/learn/paths/csharp-first-steps/). This learning path contains several modules that teach the basics of C#.
+- [In Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb). You can experiment with C# code in a Jupyter notebook on binder.
+- [On your local machine](numbers-in-csharp-local.md). After you've explored online, you can [download](https://dotnet.microsoft.com/download) the .NET Core SDK and build programs on your machine.
 
 All the introductory tutorials following the Hello World lesson are available using
 the online browser experience or [in your own local development
@@ -25,7 +36,7 @@ on your machine.
 ## [Hello world](hello-world.yml)
 
 In the [Hello world](hello-world.yml) tutorial, you'll create the most basic
-C# program. You'll explore the `string` type and how to work with text.
+C# program. You'll explore the `string` type and how to work with text. You can also use the path on [Microsoft Learn](https://docs.microsoft.com/learn/paths/csharp-first-steps/) or [Jupyter on Binder](https://mybinder.org/v2/gh/dotnet/try-samples/master?filepath=hello-csharp%2Fhello-world.ipynb).
 
 ## [Numbers in C#](numbers-in-csharp.yml)
 
@@ -35,7 +46,7 @@ numeric types. You'll learn the basics of rounding, and how to perform
 mathematical calculations using C#. This tutorial is also available
 [to run locally on your machine](numbers-in-csharp-local.md).
 
-This tutorial assumes that you have finished the [Hello world](hello-world.yml) lesson.
+This tutorial assumes that you've finished the [Hello world](hello-world.yml) lesson.
 
 ## [Branches and loops](branches-and-loops.yml)
 
@@ -45,14 +56,8 @@ basics of control flow, which is the basis of how programs make decisions and ch
 different actions. This tutorial is also available
 [to run locally on your machine](branches-and-loops-local.md).
 
-This tutorial assumes that you have finished the [Hello world](hello-world.yml) and
+This tutorial assumes that you've finished the [Hello world](hello-world.yml) and
 [Numbers in C#](numbers-in-csharp.yml) lessons.
-
-## [String interpolation](interpolated-strings.yml)
-
-The [String interpolation](interpolated-strings.yml) tutorial shows you how to insert values into a string. You'll learn how to create an interpolated string with embedded C# expressions and how to control the formatting of the output string. This tutorial is also available [to run locally on your machine](interpolated-strings-local.md).
-
-This tutorial assumes that you have finished the [Hello world](hello-world.yml), [Numbers in C#](numbers-in-csharp.yml), and [Branches and loops](branches-and-loops.yml) lessons.
 
 ## [List collection](list-collection.yml)
 
@@ -60,11 +65,11 @@ The [List collection](list-collection.yml) lesson gives you
 a tour of the List collection type that stores sequences of data. You'll learn how to add and remove items, search for items, and sort the lists. You'll explore different kinds of lists. This tutorial is also
 available [to run locally on your machine](arrays-and-collections.md).
 
-This tutorial assumes that you have finished the lessons listed above.
+This tutorial assumes that you've finished the lessons listed above.
 
 ## [Introduction to classes](introduction-to-classes.md)
 
 This final tutorial is only available to run on your machine, using your own local development environment and .NET Core.
 You'll build a console application and see the basic object-oriented features that are part of the C# language.
 
-This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://www.microsoft.com/net/download) and [Visual Studio Code](https://code.visualstudio.com/).
+This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/).

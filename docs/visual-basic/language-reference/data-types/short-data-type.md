@@ -1,5 +1,5 @@
 ---
-title: "Short Data Type (Visual Basic)"
+title: "Short Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Short"
@@ -18,9 +18,11 @@ helpviewer_keywords:
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 ---
 # Short data type (Visual Basic)
+
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  
   
 ## Remarks  
+
  Use the `Short` data type to contain integer values that do not require the full data width of `Integer`. In some cases, the common language runtime can pack your `Short` variables closely together and save memory consumption.  
   
  The default value of `Short` is 0.  
@@ -56,18 +58,18 @@ Dim number = &H_3264S
 
 ## Programming tips
 
--   **Widening.** The `Short` data type widens to `Integer`, `Long`, `Decimal`, `Single`, or `Double`. This means you can convert `Short` to any one of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
+- **Widening.** The `Short` data type widens to `Integer`, `Long`, `Decimal`, `Single`, or `Double`. This means you can convert `Short` to any one of these types without encountering a <xref:System.OverflowException?displayProperty=nameWithType> error.  
   
--   **Type Characters.** Appending the literal type character `S` to a literal forces it to the `Short` data type. `Short` has no identifier type character.  
+- **Type Characters.** Appending the literal type character `S` to a literal forces it to the `Short` data type. `Short` has no identifier type character.  
   
--   **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Int16?displayProperty=nameWithType> structure.  
+- **Framework Type.** The corresponding type in the .NET Framework is the <xref:System.Int16?displayProperty=nameWithType> structure.  
   
 ## See also
 
- <xref:System.Int16?displayProperty=nameWithType>  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)  
- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)  
- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)  
- [Integer Data Type](../../../visual-basic/language-reference/data-types/integer-data-type.md)  
- [Long Data Type](../../../visual-basic/language-reference/data-types/long-data-type.md)  
- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- <xref:System.Int16?displayProperty=nameWithType>
+- [Data Types](index.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Summary](../keywords/conversion-summary.md)
+- [Integer Data Type](integer-data-type.md)
+- [Long Data Type](long-data-type.md)
+- [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 3c1cb268-57a0-4664-91c7-f6908ff29e32
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorArgType Enumeration
 Contains values that describe the native type of a runtime handle.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorArgType {  
   
     IMAGE_CEE_CS_END        = 0x0,  
@@ -41,11 +39,12 @@ typedef enum CorArgType {
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+
+- [Metadata Enumerations](metadata-enumerations.md)

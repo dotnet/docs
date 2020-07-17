@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 2eb56ea9-8b7e-452b-a209-3d2be719fca6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHostControl Interface
 Provides a method that allows the garbage collector to request the host to change the limits of virtual memory.  
@@ -24,10 +22,10 @@ Provides a method that allows the garbage collector to request the host to chang
   
 |Method|Description|  
 |------------|-----------------|  
-|[RequestVirtualMemLimit Method](../../../../docs/framework/unmanaged-api/hosting/igchostcontrol-requestvirtualmemlimit-method.md)|Requests the host to change the limits of virtual memory.|  
+|[RequestVirtualMemLimit Method](igchostcontrol-requestvirtualmemlimit-method.md)|Requests the host to change the limits of virtual memory.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -35,5 +33,6 @@ Provides a method that allows the garbage collector to request the host to chang
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [Hosting Interfaces](hosting-interfaces.md)

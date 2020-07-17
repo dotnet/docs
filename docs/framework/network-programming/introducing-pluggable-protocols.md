@@ -1,5 +1,6 @@
 ---
 title: "Introducing Pluggable Protocols"
+description: Learn about pluggable protocols, which support development of applications that use internet resources regardless of the protocol details that resources use.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data requests, pluggable protocols"
@@ -60,8 +61,8 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
   
  Developers familiar with the Windows Sockets interface or those who need the control provided by programming at the socket level will find that the **System.Net.Sockets** classes meet their needs. The **System.Net.Sockets** classes are a transition point from managed to native code within the **System.Net** classes. In most cases, **System.Net.Sockets** classes marshal data into their Windows 32-bit counterparts, as well as handling any necessary security checks.  
   
-## See Also  
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
- [Networking Samples for .NET on MSDN Code Gallery](https://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)
+## See also
+
+- [Programming Pluggable Protocols](programming-pluggable-protocols.md)
+- [Network Programming in the .NET Framework](index.md)
+- [Network Programming Samples](network-programming-samples.md)

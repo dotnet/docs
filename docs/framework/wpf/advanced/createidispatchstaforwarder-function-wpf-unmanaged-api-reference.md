@@ -1,5 +1,6 @@
 ---
-title: "CreateIDispatchSTAForwarder Function (WPF Unmanaged API Reference)"
+title: "CreateIDispatchSTAForwarder Function - WPF unmanaged API reference"
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -18,12 +19,12 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
   
 ```cpp  
 HRESULT CreateIDispatchSTAForwarder(  
-   __in IDispatch *pDispatchDelegate,   
+   __in IDispatch *pDispatchDelegate,
    __deref_out IDispatch **ppForwarder  
 )  
 ```  
   
-#### Parameters  
+## Parameters  
   
 ## Property Value/Return Value  
  pDispatchDelegate  
@@ -33,7 +34,7 @@ HRESULT CreateIDispatchSTAForwarder(
  A pointer to the address of an `IDispatch` interface.  
   
 ## Requirements  
- **Platforms:** See [.NET Framework System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [.NET Framework System Requirements](../../get-started/system-requirements.md).  
   
  **DLL:**  
   
@@ -43,5 +44,6 @@ HRESULT CreateIDispatchSTAForwarder(
   
  **.NET Framework Version:** [!INCLUDE[net_current_v30plus](../../../../includes/net-current-v30plus-md.md)]  
   
-## See Also  
- [WPF Unmanaged API Reference](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)
+## See also
+
+- [WPF Unmanaged API Reference](wpf-unmanaged-api-reference.md)

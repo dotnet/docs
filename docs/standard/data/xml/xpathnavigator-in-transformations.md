@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 118f97d1-7110-4d1b-b0bd-4143252c0bb0
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XPathNavigator in Transformations
 The <xref:System.Xml.XPath.XPathNavigator> class provides read-only random access to data and is designed for use as an input to Extensible Stylesheet Language for Transformations (XSLT). It is implemented on the <xref:System.Xml.XPath.XPathDocument>, <xref:System.Xml.XmlDataDocument>, and <xref:System.Xml.XmlDocument>. The <xref:System.Xml.XPath.XPathNavigator> is based upon the World Wide Web Consortium (W3C) Data Model as described in section 5 of the XML Path Language (XPath) recommendation.  
@@ -112,4 +110,4 @@ public class sample
   
 ## See also
 
-- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)

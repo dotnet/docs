@@ -14,16 +14,14 @@ helpviewer_keywords:
 ms.assetid: 6ef78d3c-1c69-4141-b687-dcb065b7a74d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_NATIVE_LINK Structure
 Contains information that is used to link native code.  
   
 ## Syntax  
   
-```  
-typedef struct   
+```cpp  
+typedef struct
 {  
     BYTE        m_linkType;  
     BYTE        m_flags;  
@@ -35,12 +33,12 @@ typedef struct
   
 |Member|Description|  
 |------------|-----------------|  
-|`m_linkType`|The type to be linked in native code. This value is one of the [CorNativeLinkType](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md) values.|  
-|`m_flags`|Flags used by the linker when linking native code. This value is one of the [CorNativeLinkFlags](../../../../docs/framework/unmanaged-api/metadata/cornativelinkflags-enumeration.md) values.|  
+|`m_linkType`|The type to be linked in native code. This value is one of the [CorNativeLinkType](cornativelinktype-enumeration.md) values.|  
+|`m_flags`|Flags used by the linker when linking native code. This value is one of the [CorNativeLinkFlags](cornativelinkflags-enumeration.md) values.|  
 |`m_entryPoint`|The MemberRef metadata token that represents the entry point. The format is `lib:entrypoint`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -48,7 +46,8 @@ typedef struct
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)  
- [CorNativeLinkType Enumeration](../../../../docs/framework/unmanaged-api/metadata/cornativelinktype-enumeration.md)  
- [CorNativeLinkFlags Enumeration](../../../../docs/framework/unmanaged-api/metadata/cornativelinkflags-enumeration.md)
+## See also
+
+- [Metadata Structures](metadata-structures.md)
+- [CorNativeLinkType Enumeration](cornativelinktype-enumeration.md)
+- [CorNativeLinkFlags Enumeration](cornativelinkflags-enumeration.md)

@@ -1,11 +1,11 @@
 ---
-title: Introduction to Events
+title: Introduction to events
 description: Learn about events in .NET Core and our language design goals for events in this overview.
 ms.date: 06/20/2016
 ms.assetid: 9b8d2a00-1584-4a5b-8994-5003d54d8e0c
 ---
 
-# Introduction to Events
+# Introduction to events
 
 [Previous](delegates-patterns.md)
 
@@ -32,25 +32,20 @@ Subscribing to an event also creates a coupling between two objects (the event
 source, and the event sink). You need to ensure that the event sink unsubscribes
 from the event source when no longer interested in events.
 
-## Design Goals for Event Support
+## Design goals for event support
 
-The language design for events targets these goals.
+The language design for events targets these goals:
 
-First, enable very minimal
-coupling between an event source and an event sink. These two components may
-not be written by the same organization, and may even be updated on totally
-different schedules.
+- Enable very minimal coupling between an event source and an event sink. These two components may not be written by the same organization, and may even be updated on totally different schedules.
 
-Secondly, it should be very simple to subscribe to an event, and to
-unsubscribe from that same event.
+- It should be very simple to subscribe to an event, and to unsubscribe from that same event.
 
-And finally, event sources should support multiple event subscribers. It should
-also support having no event subscribers attached.
+- Event sources should support multiple event subscribers. It should also support having no event subscribers attached.
 
 You can see that the goals for events are very similar to the goals for delegates.
 That's why the event language support is built on the delegate language support.
 
-## Language Support for Events
+## Language support for events
 
 The syntax for defining events, and subscribing or unsubscribing from events is
 an extension of the syntax for delegates.
@@ -65,7 +60,7 @@ The type of the event (`EventHandler<FileListArgs>` in this example) must be a
 delegate type. There are a number of conventions that you should follow
 when declaring an event. Typically, the event delegate type has a void return.
 Event declarations should be a verb, or a verb phrase.
-Use past tense (as in this example) when
+Use past tense when
 the event reports something that has happened. Use a present tense verb (for
 example, `Closing`) to report something that is about to happen. Often, using
 present tense indicates that your class supports some kind of customization
@@ -87,22 +82,23 @@ Progress?.Invoke(this, new FileListArgs(file));
 As discussed in the section on [delegates](delegates-patterns.md), the ?.
 operator makes it easy to ensure that you do not attempt to raise the event
 when there are no subscribers to that event.
- 
+
 You subscribe to an event by using the `+=` operator:
 
 ```csharp
-EventHandler<FileListArgs> onProgress = (sender, eventArgs) => 
+EventHandler<FileListArgs> onProgress = (sender, eventArgs) =>
     Console.WriteLine(eventArgs.FoundFile);
-lister.Progress += onProgress;
+
+fileLister.Progress += onProgress;
 ```
 
-The handler method typically is the prefix 'On' followed
+The handler method typically has the prefix 'On' followed
 by the event name, as shown above.
 
 You unsubscribe using the `-=` operator:
 
 ```csharp
-lister.Progress -= onProgress;
+fileLister.Progress -= onProgress;
 ```
 
 It's important to note that I declared a local variable for the expression that

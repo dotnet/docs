@@ -1,21 +1,22 @@
 ---
-title: "&lt;callbackDebug&gt;"
+title: "<callbackDebug>"
 ms.date: "03/30/2017"
 ms.assetid: 4073feda-1857-4be4-9947-227afb847ced
 ---
-# &lt;callbackDebug&gt;
+# \<callbackDebug>
 Specifies service debugging for a Windows Communication Foundation (WCF) callback object.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
-\<callbackDebug>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<callbackDebug>**  
   
 ## Syntax  
   
 ```xml  
-<callbackDebug  includeExceptionDetailInFaults="Boolean" />  
+<callbackDebug includeExceptionDetailInFaults="Boolean" />
 ```  
   
 ## Type  
@@ -37,8 +38,9 @@ Specifies service debugging for a Windows Communication Foundation (WCF) callbac
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.CallbackDebugElement>  
- <xref:System.ServiceModel.Description.CallbackDebugBehavior>
+## See also
+
+- <xref:System.ServiceModel.Configuration.CallbackDebugElement>
+- <xref:System.ServiceModel.Description.CallbackDebugBehavior>

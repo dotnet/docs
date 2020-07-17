@@ -43,19 +43,19 @@ When the F# compiler infers the types in your code, it automatically treats any 
 
 In the following code example, `makeList` is generic, even though neither it nor its parameters are explicitly declared as generic.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1700.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1700.fs)]
 
 The signature of the function is inferred to be `'a -> 'a -> 'a list`. Note that `a` and `b` in this example are inferred to have the same type. This is because they are included in a list together, and all elements of a list must be of the same type.
 
 You can also make a function generic by using the single quotation mark syntax in a type annotation to indicate that a parameter type is a generic type parameter. In the following code, `function1` is generic because its parameters are declared in this manner, as type parameters.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1701.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1701.fs)]
 
 ## Explicitly Generic Constructs
 
 You can also make a function generic by explicitly declaring its type parameters in angle brackets (`<type-parameter>`). The following code illustrates this.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1703.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1703.fs)]
 
 ## Using Generic Constructs
 
@@ -63,7 +63,7 @@ When you use generic functions or methods, you might not have to specify the typ
 
 The following code shows the use of the functions that are defined in the previous sections.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1702.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1702.fs)]
 
 > [!NOTE]
 > There are two ways to refer to a generic type by name. For example, `list<int>` and `int list` are two ways to refer to a generic type `list` that has a single type argument `int`. The latter form is conventionally used only with built-in F# types such as `list` and `option`. If there are multiple type arguments, you normally use the syntax `Dictionary<int, string>` but you can also use the syntax `(int, string) Dictionary`.
@@ -72,7 +72,7 @@ The following code shows the use of the functions that are defined in the previo
 
 To specify that a type argument should be inferred by the compiler, you can use the underscore, or wildcard symbol (`_`), instead of a named type argument. This is shown in the following code.
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1704.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1704.fs)]
 
 ## Constraints in Generic Types and Functions
 
@@ -84,13 +84,13 @@ There are two kinds of type parameters that can be used in F# programs. The firs
 
 ## Examples
 
-[!code-fsharp[Main](../../../../samples/snippets/fsharp/lang-ref-1/snippet1705.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1705.fs)]
 
 ## See also
 
 - [Language Reference](../index.md)
 - [Types](../fsharp-types.md)
 - [Statically Resolved Type Parameters](statically-resolved-type-parameters.md)
-- [Generics in the .NET Framework](~/docs/standard/generics/index.md)
+- [Generics](../../../standard/generics/index.md)
 - [Automatic Generalization](automatic-generalization.md)
 - [Constraints](constraints.md)

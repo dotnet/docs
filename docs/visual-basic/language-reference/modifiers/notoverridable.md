@@ -1,5 +1,5 @@
 ---
-title: "NotOverridable (Visual Basic)"
+title: "NotOverridable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.NotOverridable"
@@ -21,7 +21,7 @@ ms.assetid: 66ec6984-f5f5-4857-b362-6a3907aaf9e0
 Specifies that a property or procedure cannot be overridden in a derived class.  
   
 ## Remarks  
- The `NotOverridable` modifier prevents a property or method from being overridden in a derived class.  The [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md) modifier allows a property or method in a class to be overridden in a derived class. For more information, see [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).  
+ The `NotOverridable` modifier prevents a property or method from being overridden in a derived class.  The [Overridable](overridable.md) modifier allows a property or method in a class to be overridden in a derived class. For more information, see [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md).  
   
  If the `Overridable` or `NotOverridable` modifier is not specified, the default setting depends on whether the property or method overrides a base class property or method. If the property or method overrides a base class property or method, the default setting is `Overridable`; otherwise, it is `NotOverridable`.  
   
@@ -37,17 +37,18 @@ Specifies that a property or procedure cannot be overridden in a derived class.
 ## Usage  
  The `NotOverridable` modifier can be used in these contexts:  
   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Function Statement](../statements/function-statement.md)  
   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Property Statement](../statements/property-statement.md)  
   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Sub Statement](../statements/sub-statement.md)  
   
-## See Also  
- [Modifiers](../../../visual-basic/language-reference/modifiers/index.md)  
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
+## See also
+
+- [Modifiers](index.md)
+- [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [MustOverride](mustoverride.md)
+- [Overridable](overridable.md)
+- [Overrides](overrides.md)
+- [Keywords](../keywords/index.md)
+- [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md)

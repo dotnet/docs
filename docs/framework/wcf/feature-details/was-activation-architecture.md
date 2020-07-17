@@ -9,19 +9,19 @@ This topic itemizes and discusses the components of the Windows Process Activati
 ## Activation Components  
  WAS consists of several architectural components:  
   
--   Listener adapters. Windows services that receive messages on specific network protocols and communicate with WAS to route incoming messages to the correct worker process.  
+- Listener adapters. Windows services that receive messages on specific network protocols and communicate with WAS to route incoming messages to the correct worker process.  
   
--   WAS. The Windows service that manages the creation and lifetime of worker processes.  
+- WAS. The Windows service that manages the creation and lifetime of worker processes.  
   
--   The generic worker process executable (w3wp.exe).  
+- The generic worker process executable (w3wp.exe).  
   
--   Application manager. Manages the creation and lifetime of application domains that host applications within the worker process.  
+- Application manager. Manages the creation and lifetime of application domains that host applications within the worker process.  
   
--   Protocol handlers. Protocol-specific components that run in the worker process and manage communication between the worker process and the individual listener adapters. Two types of protocol handlers exist: process protocol handlers and AppDomain protocol handlers.  
+- Protocol handlers. Protocol-specific components that run in the worker process and manage communication between the worker process and the individual listener adapters. Two types of protocol handlers exist: process protocol handlers and AppDomain protocol handlers.  
   
  When WAS activates a worker process instance, it loads the process protocol handlers required into the worker process and uses the application manager to create an application domain to host the application. The application domain loads the application’s code as well as the AppDomain protocol handlers that the network protocols used by the application require.  
   
- ![WAS Architecture](../../../../docs/framework/wcf/feature-details/media/wasarchitecture.gif "WASArchitecture")  
+ ![Screenshot that shows the WAS architecture.](./media/was-activation-architecture/windows-process-application-service-architecture.gif)  
   
 ### Listener Adapters  
  Listener adapters are individual Windows services that implement the network communication logic used to receive messages using the network protocol on which they listen. The following table lists the listener adapters for Windows Communication Foundation (WCF) protocols.  
@@ -40,13 +40,13 @@ This topic itemizes and discusses the components of the Windows Process Activati
 <system.applicationHost>  
     <listenerAdapters>  
         <add name="http" />  
-        <add name="net.tcp"   
+        <add name="net.tcp"
           identity="S-1-5-80-3579033775-2824656752-1522793541-1960352512-462907086" />  
-         <add name="net.pipe"   
+         <add name="net.pipe"
            identity="S-1-5-80-2943419899-937267781-4189664001-1229628381-3982115073" />  
-          <add name="net.msmq"   
+          <add name="net.msmq"
             identity="S-1-5-80-89244771-1762554971-1007993102-348796144-2203111529" />  
-           <add name="msmq.formatname"   
+           <add name="msmq.formatname"
              identity="S-1-5-80-89244771-1762554971-1007993102-348796144-2203111529" />  
     </listenerAdapters>  
 </system.applicationHost>  
@@ -58,13 +58,13 @@ This topic itemizes and discusses the components of the Windows Process Activati
 ```xml  
 <system.web>  
    <protocols>  
-      <add name="net.tcp"   
+      <add name="net.tcp"
         processHandlerType=  
          "System.ServiceModel.WasHosting.TcpProcessProtocolHandler"  
         appDomainHandlerType=  
          "System.ServiceModel.WasHosting.TcpAppDomainProtocolHandler"  
         validate="false" />  
-      <add name="net.pipe"   
+      <add name="net.pipe"
         processHandlerType=  
          "System.ServiceModel.WasHosting.NamedPipeProcessProtocolHandler"  
           appDomainHandlerType=  
@@ -79,6 +79,7 @@ This topic itemizes and discusses the components of the Windows Process Activati
 </system.web>  
 ```  
   
-## See Also  
- [Configuring WAS for Use with WCF](../../../../docs/framework/wcf/feature-details/configuring-the-wpa--service-for-use-with-wcf.md)  
- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+## See also
+
+- [Configuring WAS for Use with WCF](configuring-the-wpa--service-for-use-with-wcf.md)
+- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

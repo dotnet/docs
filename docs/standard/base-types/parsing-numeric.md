@@ -1,5 +1,6 @@
 ---
 title: "Parsing Numeric Strings in .NET"
+description: Learn about parsing numeric strings in .NET. Learn how to parse with format providers, NumberStyles enumeration values, and Unicode digits.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -11,20 +12,18 @@ helpviewer_keywords:
   - "enumerations [.NET Framework], parsing strings"
   - "base types, parsing strings"
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Parsing Numeric Strings in NET
-All numeric types have two static parsing methods, `Parse` and `TryParse`, that you can use to convert the string representation of a number into a numeric type. These methods enable you to parse strings that were produced by using the format strings documented in [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md) and [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md). By default, the `Parse` and `TryParse` methods can successfully convert strings that contain integral decimal digits only to integer values. They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values. The `Parse` method throws an exception if the operation fails, whereas the `TryParse` method returns `false`.  
+All numeric types have two static parsing methods, `Parse` and `TryParse`, that you can use to convert the string representation of a number into a numeric type. These methods enable you to parse strings that were produced by using the format strings documented in [Standard Numeric Format Strings](standard-numeric-format-strings.md) and [Custom Numeric Format Strings](custom-numeric-format-strings.md). By default, the `Parse` and `TryParse` methods can successfully convert strings that contain integral decimal digits only to integer values. They can successfully convert strings that contain integral and fractional decimal digits, group separators, and a decimal separator to floating-point values. The `Parse` method throws an exception if the operation fails, whereas the `TryParse` method returns `false`.  
   
 ## Parsing and Format Providers  
  Typically, the string representations of numeric values differ by culture. Elements of numeric strings such as currency symbols, group (or thousands) separators, and decimal separators all vary by culture. Parsing methods either implicitly or explicitly use a format provider that recognizes these culture-specific variations. If no format provider is specified in a call to the `Parse` or `TryParse` method, the format provider associated with the current thread culture (the <xref:System.Globalization.NumberFormatInfo> object returned by the <xref:System.Globalization.NumberFormatInfo.CurrentInfo%2A?displayProperty=nameWithType> property) is used.  
   
  A format provider is represented by an <xref:System.IFormatProvider> implementation. This interface has a single member, the <xref:System.IFormatProvider.GetFormat%2A> method, whose single parameter is a <xref:System.Type> object that represents the type to be formatted. This method returns the object that provides formatting information. .NET supports the following two <xref:System.IFormatProvider> implementations for parsing numeric strings:  
   
--   A <xref:System.Globalization.CultureInfo> object whose <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=nameWithType> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information.  
+- A <xref:System.Globalization.CultureInfo> object whose <xref:System.Globalization.CultureInfo.GetFormat%2A?displayProperty=nameWithType> method returns a <xref:System.Globalization.NumberFormatInfo> object that provides culture-specific formatting information.  
   
--   A <xref:System.Globalization.NumberFormatInfo> object whose <xref:System.Globalization.NumberFormatInfo.GetFormat%2A?displayProperty=nameWithType> method returns itself.  
+- A <xref:System.Globalization.NumberFormatInfo> object whose <xref:System.Globalization.NumberFormatInfo.GetFormat%2A?displayProperty=nameWithType> method returns itself.  
   
  The following example tries to convert each string in an array to a <xref:System.Double> value. It first tries to parse the string by using a format provider that reflects the conventions of the English (United States) culture. If this operation throws a <xref:System.FormatException>, it tries to parse the string by using a format provider that reflects the conventions of the French (France) culture.  
   
@@ -40,7 +39,7 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
  [!code-vb[Parsing.Numbers#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/parsing.numbers/vb/styles1.vb#2)]  
   
 > [!WARNING]
->  The parse operation always uses the formatting conventions of a particular culture. If you do not specify a culture by passing a <xref:System.Globalization.CultureInfo> or <xref:System.Globalization.NumberFormatInfo> object, the culture associated with the current thread is used.  
+> The parse operation always uses the formatting conventions of a particular culture. If you do not specify a culture by passing a <xref:System.Globalization.CultureInfo> or <xref:System.Globalization.NumberFormatInfo> object, the culture associated with the current thread is used.  
   
  The following table lists the members of the <xref:System.Globalization.NumberStyles> enumeration and describes the effect that they have on the parsing operation.  
   
@@ -79,6 +78,6 @@ All numeric types have two static parsing methods, `Parse` and `TryParse`, that 
   
 ## See also
 
-- <xref:System.Globalization.NumberStyles>  
-- [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)  
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- <xref:System.Globalization.NumberStyles>
+- [Parsing Strings](parsing-strings.md)
+- [Formatting Types](formatting-types.md)

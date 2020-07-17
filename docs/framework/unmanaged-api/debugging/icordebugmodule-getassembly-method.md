@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 989762c4-3d15-4485-b8ee-69e0fa8ec895
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetAssembly Method
 Gets the containing assembly for this module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssembly(  
     [out] ICorDebugAssembly **ppAssembly  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppAssembly`  
  [out] A pointer to an ICorDebugAssembly object that represents the assembly containing this module.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

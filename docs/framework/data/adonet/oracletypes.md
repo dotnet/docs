@@ -7,13 +7,13 @@ ms.assetid: 18143304-d5c7-4c95-9995-678088d0c142
 The .NET Framework Data Provider for Oracle includes several structures you can use to work with Oracle data types. These include <xref:System.Data.OracleClient.OracleNumber> and <xref:System.Data.OracleClient.OracleString>.  
   
 > [!NOTE]
->  For a complete list of these structures, see <xref:System.Data.OracleClient>.  
+> For a complete list of these structures, see <xref:System.Data.OracleClient>.  
   
  The following C# examples:  
   
--   Create an Oracle table and load it with data.  
+- Create an Oracle table and load it with data.  
   
--   Use an <xref:System.Data.OracleClient.OracleDataReader> to access the data, and use several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
+- Use an <xref:System.Data.OracleClient.OracleDataReader> to access the data, and use several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
   
 ## Creating an Oracle Table  
  This example creates an Oracle table and loads it with data. You must run this example before running the next example.  
@@ -51,7 +51,7 @@ public void Setup(string connectionString)
 ```csharp  
 public void ReadOracleTypesExample(string connectionString)  
    {  
-   OracleConnection myConnection =   
+   OracleConnection myConnection =
       new OracleConnection(connectionString);  
    myConnection.Open();  
    OracleCommand myCommand = myConnection.CreateCommand();  
@@ -67,25 +67,25 @@ public void ReadOracleTypesExample(string connectionString)
   
       //First column, MyVarchar2, is a VARCHAR2 data type in Oracle  
       //Server and maps to OracleString.  
-      OracleString oraclestring1 =   
+      OracleString oraclestring1 =
         oracledatareader1.GetOracleString(0);  
       Console.WriteLine("OracleString " + oraclestring1.ToString());  
   
       //Second column, MyNumber, is a NUMBER data type in Oracle Server  
       //and maps to OracleNumber.  
-      OracleNumber oraclenumber1 =   
+      OracleNumber oraclenumber1 =
         oracledatareader1.GetOracleNumber(1);  
       Console.WriteLine("OracleNumber " + oraclenumber1.ToString());  
   
       //Third column, MyDate, is a DATA data type in Oracle Server  
       //and maps to OracleDateTime.  
-      OracleDateTime oracledatetime1 =   
+      OracleDateTime oracledatetime1 =
         oracledatareader1.GetOracleDateTime(2);  
       Console.WriteLine("OracleDateTime " + oracledatetime1.ToString());  
   
       //Fourth column, MyRaw, is a RAW data type in Oracle Server and  
       //maps to OracleBinary.  
-      OracleBinary oraclebinary1 =   
+      OracleBinary oraclebinary1 =
         oracledatareader1.GetOracleBinary(3);  
       //Calling value on a null OracleBinary throws  
       //OracleNullValueException; therefore, check for a null value.  
@@ -109,6 +109,7 @@ public void ReadOracleTypesExample(string connectionString)
 }  
 ```  
   
-## See Also  
- [Oracle and ADO.NET](../../../../docs/framework/data/adonet/oracle-and-adonet.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Oracle and ADO.NET](oracle-and-adonet.md)
+- [ADO.NET Overview](ado-net-overview.md)

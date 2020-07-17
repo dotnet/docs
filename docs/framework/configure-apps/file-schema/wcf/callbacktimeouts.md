@@ -1,21 +1,22 @@
 ---
-title: "&lt;callbackTimeouts&gt;"
+title: "<callbackTimeouts>"
 ms.date: "03/30/2017"
 ms.assetid: d7fcfc5f-6d35-491e-8fa6-2f964c1e792f
 ---
-# &lt;callbackTimeouts&gt;
+# \<callbackTimeouts>
 Specifies the timeout value when flowing transactions from server to client.in a duplex callback contract scenario.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
-\<callbackTimeOuts>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<callbackTimeOuts>**  
   
 ## Syntax  
   
 ```xml  
-<callbackTimeOuts transactionTimeout="TimeSpan" />  
+<callbackTimeOuts transactionTimeout="TimeSpan" />
 ```  
   
 ## Type  
@@ -37,7 +38,8 @@ Specifies the timeout value when flowing transactions from server to client.in a
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.CallbackTimeoutsElement>
+## See also
+
+- <xref:System.ServiceModel.Configuration.CallbackTimeoutsElement>

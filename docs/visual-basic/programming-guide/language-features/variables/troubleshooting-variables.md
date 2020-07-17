@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Variables in Visual Basic"
+title: "Troubleshooting Variables"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "troubleshooting [Visual Basic], variables"
@@ -12,18 +12,18 @@ This page lists some common problems that can occur when working with variables 
 ## Unable to Access Members of an Object  
  If your code attempts to access a property or method on an object, there are two possible error outcomes:  
   
--   The compiler can generate an error message if you declare the object variable to be of a specific type and then refer to a member not defined by that type.  
+- The compiler can generate an error message if you declare the object variable to be of a specific type and then refer to a member not defined by that type.  
   
--   A run-time <xref:System.MemberAccessException> occurs when the object assigned to an object variable does not expose the member your code is trying to access. In the case of a variable of [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md), you can also get this exception if the member is not `Public`. This is because late binding allows access only to `Public` members.  
+- A run-time <xref:System.MemberAccessException> occurs when the object assigned to an object variable does not expose the member your code is trying to access. In the case of a variable of [Object Data Type](../../../language-reference/data-types/object-data-type.md), you can also get this exception if the member is not `Public`. This is because late binding allows access only to `Public` members.  
   
- When the [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md) sets type checking `On`, an object variable can access only the methods and properties of the class with which you declare it. The following example illustrates this.  
+ When the [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md) sets type checking `On`, an object variable can access only the methods and properties of the class with which you declare it. The following example illustrates this.  
 
- [!code-vb[VbVbalrVariables#2](../../../../visual-basic/programming-guide/language-features/variables/codesnippet/VisualBasic/troubleshooting-variables_1.vb)]  
+ [!code-vb[VbVbalrVariables#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrVariables/VB/Class1.vb#2)]  
   
  In this example, `p` can use only the members of the <xref:System.Object> class itself, which do not include the `Left` property. On the other hand, `q` was declared to be of type <xref:System.Windows.Forms.Label>, so it can use all the methods and properties of the <xref:System.Windows.Forms.Label> class in the <xref:System.Windows.Forms> namespace.  
   
 ### Correct Approach  
- To be able to access all the members of an object of a particular class, declare the object variable to be of the type of that class when possible. If you cannot do this, for example if you do not know the object type at compile time, you must set `Option Strict` to `Off` and declare the variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). This allows objects of any type to be assigned to the variable, and you should take steps to ensure that the currently assigned object is of an acceptable type. You can use the [TypeOf Operator](../../../../visual-basic/language-reference/operators/typeof-operator.md) to make this determination.  
+ To be able to access all the members of an object of a particular class, declare the object variable to be of the type of that class when possible. If you cannot do this, for example if you do not know the object type at compile time, you must set `Option Strict` to `Off` and declare the variable to be of the [Object Data Type](../../../language-reference/data-types/object-data-type.md). This allows objects of any type to be assigned to the variable, and you should take steps to ensure that the currently assigned object is of an acceptable type. You can use the [TypeOf Operator](../../../language-reference/operators/typeof-operator.md) to make this determination.  
   
 ## Other Components Cannot Access Your Variable  
  Visual Basic names are *case-insensitive*. If two names differ in alphabetic case only, the compiler interprets them as the same name. For example, it considers `ABC` and `abc` to refer to the same declared element.  
@@ -36,18 +36,19 @@ This page lists some common problems that can occur when working with variables 
  To allow other components to access your variables, treat their names as if they were case-sensitive. When you are testing your class or module, make sure other assemblies are binding to the variables you expect them to. Once you have published a component, do not make any modifications to existing variable names, including changing their cases.  
   
 ## Wrong Variable Being Used  
- When you have more than one variable with the same name, the Visual Basic compiler attempts to resolve each reference to that name. If the variables have different scope, the compiler resolves a reference to the declaration with the narrowest scope. If they have the same scope, the resolution fails and the compiler signals an error. For more information, see [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
+ When you have more than one variable with the same name, the Visual Basic compiler attempts to resolve each reference to that name. If the variables have different scope, the compiler resolves a reference to the declaration with the narrowest scope. If they have the same scope, the resolution fails and the compiler signals an error. For more information, see [References to Declared Elements](../declared-elements/references-to-declared-elements.md).  
   
 ### Correct Approach  
- Avoid using variables with the same name but different scope. If you are using other assemblies or projects, avoid using any names defined in those external components as much as possible. If you have more than one variable with the same name, be sure you qualify every reference to it. For more information, see [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md).  
+ Avoid using variables with the same name but different scope. If you are using other assemblies or projects, avoid using any names defined in those external components as much as possible. If you have more than one variable with the same name, be sure you qualify every reference to it. For more information, see [References to Declared Elements](../declared-elements/references-to-declared-elements.md).  
   
-## See Also  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md)  
- [How to: Access Members of an Object](../../../../visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [How to: Determine What Type an Object Variable Refers To](../../../../visual-basic/programming-guide/language-features/variables/how-to-determine-what-type-an-object-variable-refers-to.md)  
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
+## See also
+
+- [Variables](index.md)
+- [Variable Declaration](variable-declaration.md)
+- [Object Variables](object-variables.md)
+- [Object Variable Declaration](object-variable-declaration.md)
+- [How to: Access Members of an Object](how-to-access-members-of-an-object.md)
+- [Object Variable Values](object-variable-values.md)
+- [How to: Determine What Type an Object Variable Refers To](how-to-determine-what-type-an-object-variable-refers-to.md)
+- [References to Declared Elements](../declared-elements/references-to-declared-elements.md)
+- [Declared Element Names](../declared-elements/declared-element-names.md)

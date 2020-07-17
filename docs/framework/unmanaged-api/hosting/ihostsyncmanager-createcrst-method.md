@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: ac278cc8-2540-4a6c-b5c6-b90c3970b4f4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateCrst Method
 Creates a critical section object for synchronization.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCrst (  
     [out] IHostCrst** ppCrst  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppCrst`  
- [out] A pointer to the address of an [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance implemented by the host, or null if the critical section could not be created.  
+ [out] A pointer to the address of an [IHostCrst](ihostcrst-interface.md) instance implemented by the host, or null if the critical section could not be created.  
   
 ## Return Value  
   
@@ -49,7 +47,7 @@ HRESULT CreateCrst (
  Critical section objects provide synchronization similar to that provided by a mutex object, except that critical sections can be used only by the threads of a single process. `CreateCrst` mirrors the Win32 `InitializeCriticalSection` function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,10 +55,11 @@ HRESULT CreateCrst (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)  
- [IHostSemaphore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)  
- [Mutexes](../../../../docs/standard/threading/mutexes.md)  
- [Semaphore and SemaphoreSlim](../../../../docs/standard/threading/semaphore-and-semaphoreslim.md)
+## See also
+
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostCrst Interface](ihostcrst-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)
+- [IHostSemaphore Interface](ihostsemaphore-interface.md)
+- [Mutexes](../../../standard/threading/mutexes.md)
+- [Semaphore and SemaphoreSlim](../../../standard/threading/semaphore-and-semaphoreslim.md)

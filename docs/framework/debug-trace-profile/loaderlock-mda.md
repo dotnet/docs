@@ -1,5 +1,6 @@
 ---
 title: "loaderLock MDA"
+description: Review the loaderLock managed debugging assistant (MDA) in .NET, which detects attempts to run managed code on a thread holding the Windows OS loader lock.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "deadlocks [.NET Framework]"
@@ -10,8 +11,6 @@ helpviewer_keywords:
   - "loader locks"
   - "locks, threads"
 ms.assetid: 8c10fa02-1b9c-4be5-ab03-451d943ac1ee
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # loaderLock MDA
 The `loaderLock` managed debugging assistant (MDA) detects attempts to execute managed code on a thread that holds the Microsoft Windows operating system loader lock.  Any such execution is illegal because it can lead to deadlocks and to use of DLLs before they have been initialized by the operating system's loader.  
@@ -49,5 +48,6 @@ The `loaderLock` managed debugging assistant (MDA) detects attempts to execute m
 </mdaConfig>  
 ```  
   
-## See Also  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

@@ -1,3 +1,0 @@
-        interface IDictionary<K, V>
-        {
-        }

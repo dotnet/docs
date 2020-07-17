@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugInternalFrame Interface1"
+title: "ICorDebugInternalFrame Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugInternalFrame"
@@ -14,25 +14,24 @@ helpviewer_keywords:
 ms.assetid: bb4772ca-0d54-4185-b738-7a6ffe9ea85a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugInternalFrame Interface1
+# ICorDebugInternalFrame Interface
+
 Represents a runtime-internal frame on the stack. This interface is a subclass of the ICorDebugFrame interface.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetFrameType Method](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe-getframetype-method.md)|Gets the type of this internal frame.|  
+|[GetFrameType Method](icordebuginternalframe-getframetype-method.md)|Gets the type of this internal frame.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -40,5 +39,6 @@ Represents a runtime-internal frame on the stack. This interface is a subclass o
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -15,24 +15,22 @@ helpviewer_keywords:
 ms.assetid: 2b94bda7-09ee-435d-91b9-c4e31af1896c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStringValue::GetString Method
 Gets the string referenced by this ICorDebugStringValue.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetString (  
     [in] ULONG32    cchString,  
     [out] ULONG32   *pcchString,  
-    [out, size_is(cchString), length_is(*pcchString)]   
+    [out, size_is(cchString), length_is(*pcchString)]
         WCHAR       szString[]  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchString`  
  [in] The size of the `szString` array.  
   
@@ -43,7 +41,7 @@ HRESULT GetString (
  [out] An array that stores the retrieved string.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -6,11 +6,11 @@ ms.assetid: fa772232-da1f-4c66-8c94-e36c0584b549
 
 # How to: Create a Custom Reliable Session Binding with HTTPS
 
-This topic demonstrates the use of Secure Sockets Layer (SSL) transport security with reliable sessions. To use a reliable session over HTTPS, you must create a custom binding that uses a reliable session and the HTTPS transport. You enable the reliable session either imperatively by using code or declaratively in the configuration file. This procedure uses the client and service configuration files to enable the reliable session and the [**\<httpsTransport>**](../../../../docs/framework/configure-apps/file-schema/wcf/httpstransport.md) element.
+This topic demonstrates the use of Secure Sockets Layer (SSL) transport security with reliable sessions. To use a reliable session over HTTPS, you must create a custom binding that uses a reliable session and the HTTPS transport. You enable the reliable session either imperatively by using code or declaratively in the configuration file. This procedure uses the client and service configuration files to enable the reliable session and the [**\<httpsTransport>**](../../configure-apps/file-schema/wcf/httpstransport.md) element.
 
-The key part of this procedure is that the **\<endpoint>** configuration element contain a `bindingConfiguration` attribute that references a custom binding configuration named `reliableSessionOverHttps`. The [**\<binding>**](../../../../docs/framework/misc/binding.md) configuration element references this name to specify that a reliable session and the HTTPS transport are used by including **\<reliableSession>** and **\<httpsTransport>** elements.
+The key part of this procedure is that the **\<endpoint>** configuration element contain a `bindingConfiguration` attribute that references a custom binding configuration named `reliableSessionOverHttps`. The [**\<binding>**](../../configure-apps/file-schema/wcf/bindings.md) configuration element references this name to specify that a reliable session and the HTTPS transport are used by including **\<reliableSession>** and **\<httpsTransport>** elements.
 
-For the source copy of this example, see [Custom Binding Reliable Session over HTTPS](../../../../docs/framework/wcf/samples/custom-binding-reliable-session-over-https.md).
+For the source copy of this example, see [Custom Binding Reliable Session over HTTPS](../samples/custom-binding-reliable-session-over-https.md).
 
 ### Configure the service with a CustomBinding to use a reliable session with HTTPS
 
@@ -28,15 +28,13 @@ For the source copy of this example, see [Custom Binding Reliable Session over H
 
 1. Create a *Service.svc* file that contains the line:
 
-   ```
-   <%@ServiceHost language=c# Service="CalculatorService" %>
-   ```
+   `<%@ServiceHost language=c# Service="CalculatorService" %>`
 
 1. Place the *Service.svc* file in your Internet Information Services (IIS) virtual directory.
 
 ### Configure the client with a CustomBinding to use a reliable session with HTTPS
 
-1. Use the [ServiceModel Metadata Utility Tool (*Svcutil.exe*)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata.
+1. Use the [ServiceModel Metadata Utility Tool (*Svcutil.exe*)](../servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata.
 
    ```console
    Svcutil.exe <Metadata Exchange (MEX) address or HTTP GET address>
@@ -66,4 +64,4 @@ Because the certificate used in this sample is a test certificate created with *
 
 ## See also
 
-[Reliable Sessions](../../../../docs/framework/wcf/feature-details/reliable-sessions.md)
+- [Reliable Sessions](reliable-sessions.md)

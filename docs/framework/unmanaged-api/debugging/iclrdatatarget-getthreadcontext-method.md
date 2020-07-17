@@ -15,25 +15,23 @@ helpviewer_keywords:
 ms.assetid: b9d8c3b5-3a2e-4225-95d4-dd052c4532c3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetThreadContext Method
 Gets the current execution context for the given thread in the target process. This method is called by the common language runtime data access services.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext (  
     [in] ULONG32            threadID,  
     [in] ULONG32            contextFlags,  
     [in] ULONG32            contextSize,  
-    [out, size_is(contextSize)]   
+    [out, size_is(contextSize)]
         BYTE                *context  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The operating system identifier of a thread in the target process.  
   
@@ -52,7 +50,7 @@ HRESULT GetThreadContext (
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -60,5 +58,6 @@ HRESULT GetThreadContext (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+## See also
+
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

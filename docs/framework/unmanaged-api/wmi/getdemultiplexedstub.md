@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetDemultiplexedStub function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetDemultiplexedStub function
 Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.
@@ -24,12 +22,12 @@ Creates an object forwarder sink to assist a client in receiving asynchronous ca
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDemultiplexedStub (
-   [in] IUnknown*    pObject, 
-   [in] boolean      isLocal, 
+   [in] IUnknown*    pObject,
+   [in] boolean      isLocal,
    [out] IUnknown**  ppObject
-); 
+);
 ```  
 
 ## Parameters
@@ -48,13 +46,14 @@ HRESULT GetDemultiplexedStub (
 If the function succeeds, the return value is `S_OK` (0).
 
 If the function fails, the return value is a non-zero error code. To get extended error information, call the [GetErrorInfo](geterrorinfo.md) function.
-    
+
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

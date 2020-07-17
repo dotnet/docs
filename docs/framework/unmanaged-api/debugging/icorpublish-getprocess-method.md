@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: c5143805-2eb7-45b8-85ed-c8fb34df1084
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublish::GetProcess Method
-Gets an [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) instance that represents the process with the specified identifier.  
+Gets an [ICorPublishProcess](icorpublishprocess-interface.md) instance that represents the process with the specified identifier.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcess(  
-    [in] unsigned              pid,   
+    [in] unsigned              pid,
     [out] ICorPublishProcess   **ppProcess  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pid`  
  [in] The identifier of the process.  
   
@@ -41,7 +39,7 @@ HRESULT GetProcess(
  `GetProcess` fails if the process doesn't exist, or isn't a managed process that can be debugged by the current user.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -49,5 +47,6 @@ HRESULT GetProcess(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublish Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublish-interface.md)
+## See also
+
+- [ICorPublish Interface](icorpublish-interface.md)

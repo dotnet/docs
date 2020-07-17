@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 704c69ba-77bc-40d7-8c0c-400061686321
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedVariable Interface
 Represents a variable, such as a parameter, a local variable, or a field.  
@@ -24,18 +22,19 @@ Represents a variable, such as a parameter, a local variable, or a field.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetAddressField1 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddressfield1-method.md)|Gets the first address field for this variable. Its meaning depends on the kind of address.|  
-|[GetAddressField2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddressfield2-method.md)|Gets the second address field for this variable. Its meaning depends on the kind of address.|  
-|[GetAddressField3 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddressfield3-method.md)|Gets the third address field for this variable. Its meaning depends on the kind of address.|  
-|[GetAddressKind Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddresskind-method.md)|Gets the kind of address of this variable.|  
-|[GetAttributes Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getattributes-method.md)|Gets the attribute flags for this variable.|  
-|[GetEndOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getendoffset-method.md)|Gets the end offset of this variable within its parent.|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getname-method.md)|Gets the name of this variable.|  
-|[GetSignature Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getsignature-method.md)|Gets the signature of this variable.|  
-|[GetStartOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getstartoffset-method.md)|Gets the start offset of this variable within its parent.|  
+|[GetAddressField1 Method](isymunmanagedvariable-getaddressfield1-method.md)|Gets the first address field for this variable. Its meaning depends on the kind of address.|  
+|[GetAddressField2 Method](isymunmanagedvariable-getaddressfield2-method.md)|Gets the second address field for this variable. Its meaning depends on the kind of address.|  
+|[GetAddressField3 Method](isymunmanagedvariable-getaddressfield3-method.md)|Gets the third address field for this variable. Its meaning depends on the kind of address.|  
+|[GetAddressKind Method](isymunmanagedvariable-getaddresskind-method.md)|Gets the kind of address of this variable.|  
+|[GetAttributes Method](isymunmanagedvariable-getattributes-method.md)|Gets the attribute flags for this variable.|  
+|[GetEndOffset Method](isymunmanagedvariable-getendoffset-method.md)|Gets the end offset of this variable within its parent.|  
+|[GetName Method](isymunmanagedvariable-getname-method.md)|Gets the name of this variable.|  
+|[GetSignature Method](isymunmanagedvariable-getsignature-method.md)|Gets the signature of this variable.|  
+|[GetStartOffset Method](isymunmanagedvariable-getstartoffset-method.md)|Gets the start offset of this variable within its parent.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+## See also
+
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)

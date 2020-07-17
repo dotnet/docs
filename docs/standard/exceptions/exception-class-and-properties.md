@@ -6,19 +6,15 @@ helpviewer_keywords:
   - "exceptions, Exception class"
   - "Exception class"
 ms.assetid: e2e1f8c4-e7b4-467d-9a66-13c90861221d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Exception class and properties
 
 The <xref:System.Exception> class is the base class from which exceptions inherit. For example, the <xref:System.InvalidCastException> class hierarchy is as follows:
 
-```
-Object
-  Exception
-    SystemException
-       InvalidCastException
-```
+<xref:System.Object>\
+&nbsp;&nbsp;<xref:System.Exception>\
+&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.SystemException>\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<xref:System.InvalidCastException>
 
 The <xref:System.Exception> class has the following properties that help make understanding an exception easier.
 

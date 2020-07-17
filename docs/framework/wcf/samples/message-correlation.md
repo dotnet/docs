@@ -4,13 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 3f62babd-c991-421f-bcd8-391655c82a1f
 ---
 # Message Correlation
-This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service and how messages can be correlated between sender and receiver applications in a request/response scenario. This sample uses the msmqIntegrationBinding binding. The service in this case is a self-hosted console application to allow you to observe the service that receives queued messages. k  
-  
- The service processes the message received from the sender and sends a response message back to the sender. The sender correlates the response it received to the request it sent originally. The `MessageID` and `CorrelationID` properties of the message are used to correlate the request and response messages.  
-  
- The `IOrderProcessor` service contract defines a one-way service operation that is suitable for use with queuing. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract in this case. If you want to define more operation contracts in the service, the application must provide information as to which header in the MSMQ message (for example, the label, or correlationID) can be used to decide which operation contract to dispatch. 
-  
- The MSMQ message also does not contain information as to which headers are mapped to the different parameters of the operation contract. Therefore, there can be only one parameter in the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, which contains the underlying MSMQ message. The type "T" in the `MsmqMessage<T>` class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.  
+
+This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service and how messages can be correlated between sender and receiver applications in a request/response scenario. This sample uses the msmqIntegrationBinding binding. The service in this case is a self-hosted console application to allow you to observe the service that receives queued messages. k
+
+ The service processes the message received from the sender and sends a response message back to the sender. The sender correlates the response it received to the request it sent originally. The `MessageID` and `CorrelationID` properties of the message are used to correlate the request and response messages.
+
+ The `IOrderProcessor` service contract defines a one-way service operation that is suitable for use with queuing. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract in this case. If you want to define more operation contracts in the service, the application must provide information as to which header in the MSMQ message (for example, the label, or correlationID) can be used to decide which operation contract to dispatch.
+
+ The MSMQ message also does not contain information as to which headers are mapped to the different parameters of the operation contract. Therefore, there can be only one parameter in the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, which contains the underlying MSMQ message. The type "T" in the `MsmqMessage<T>` class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.
 
 ```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
@@ -207,7 +208,7 @@ static void PlaceOrder()
  The MSMQ queue from which the order responses are received is specified in an appSettings section of the configuration file, as shown in the following sample configuration.
 
 > [!NOTE]
->  The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.
+> The queue name uses a dot (.) for the local computer and backslash separators in its path. The WCF endpoint address specifies a msmq.formatname scheme, and uses "localhost" for the local computer. A properly formed format name follows msmq.formatname in the URI according to MSMQ guidelines.
 
 ```xml
 <appSettings>
@@ -261,51 +262,52 @@ static void DisplayOrderStatus()
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client and sends a response back to the client. The client displays the response received from the service. Press ENTER in each console window to shut down the service and client.
 
 > [!NOTE]
->  This sample requires the installation of Message Queuing (MSMQ). See the MSMQ installation instructions in the See Also section.
+> This sample requires the installation of Message Queuing (MSMQ). See the MSMQ installation instructions in the See Also section.
 
-### To setup, build, and run the sample
+## Set up, build, and run the sample
 
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
 
-2.  If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
+2. If the service is run first, it will check to ensure that the queue is present. If the queue is not present, the service will create one. You can run the service first to create the queue, or you can create one via the MSMQ Queue Manager. Follow these steps to create a queue in Windows 2008.
 
-    1.  Open Server Manager in Visual Studio 2012.
+    1. Open Server Manager in Visual Studio 2012.
 
-    2.  Expand the **Features** tab.
+    2. Expand the **Features** tab.
 
-    3.  Right-click **Private Message Queues**, and select **New**, **Private Queue**.
+    3. Right-click **Private Message Queues**, and select **New**, **Private Queue**.
 
-    4.  Check the **Transactional** box.
+    4. Check the **Transactional** box.
 
-    5.  Enter `ServiceModelSamplesTransacted` as the name of the new queue.
+    5. Enter `ServiceModelSamplesTransacted` as the name of the new queue.
 
-3.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).
+3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
 
-4.  To run the sample in a single-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
+4. To run the sample in a single-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
 
-### To run the sample across computers
+## Run the sample across computers
 
-1.  Copy the service program files from the \service\bin\ folder, under the language-specific folder, to the service computer.
+1. Copy the service program files from the \service\bin\ folder, under the language-specific folder, to the service computer.
 
-2.  Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.
+2. Copy the client program files from the \client\bin\ folder, under the language-specific folder, to the client computer.
 
-3.  In the Client.exe.config file, change the orderQueueName to specify the service computer name instead of ".".
+3. In the Client.exe.config file, change the orderQueueName to specify the service computer name instead of ".".
 
-4.  In the Service.exe.config file, change the client endpoint address to specify the client computer name instead of ".".
+4. In the Service.exe.config file, change the client endpoint address to specify the client computer name instead of ".".
 
-5.  On the service computer, launch Service.exe from a command prompt.
+5. On the service computer, launch Service.exe from a command prompt.
 
-6.  On the client computer, launch Client.exe from a command prompt.
+6. On the client computer, launch Client.exe from a command prompt.
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MessageCorrelation`  
-  
-## See Also  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968)
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
+>
+> `<InstallDrive>:\WF_WCF_Samples`
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MessageCorrelation`
+
+## See also
+
+- [Queuing in WCF](../feature-details/queuing-in-wcf.md)
+- [Message Queuing](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

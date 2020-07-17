@@ -6,22 +6,22 @@ ms.assetid: 1c27e9fe-11f8-4377-8140-828207b98a0e
 # Operation Formatter and Operation Selector
 This sample demonstrates how Windows Communication Foundation (WCF) extensibility points can be used to allow message data in a different format from what WCF expects. By default, WCF formatters expect method parameters to be included under the `soap:body` element. The sample shows how to implement a custom operation formatter that parses parameter data from an HTTP GET query string instead and invokes methods using that data.  
   
- The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md), which implements the `ICalculator` service contract. It shows how Add, Subtract, Multiply, and Divide messages can be changed to use HTTP GET for client-to-server requests and HTTP POST with POX messages for server-to-client responses.  
+ The sample is based on the [Getting Started](getting-started-sample.md), which implements the `ICalculator` service contract. It shows how Add, Subtract, Multiply, and Divide messages can be changed to use HTTP GET for client-to-server requests and HTTP POST with POX messages for server-to-client responses.  
   
  To do so, the sample provides the following:  
   
--   `QueryStringFormatter`, which implements <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> and <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> for the client and server, respectively, and processes the data in the query string.  
+- `QueryStringFormatter`, which implements <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> and <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> for the client and server, respectively, and processes the data in the query string.  
   
--   `UriOperationSelector`, which implements <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> on the server to perform operation dispatch based on the operation name in the GET request.  
+- `UriOperationSelector`, which implements <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> on the server to perform operation dispatch based on the operation name in the GET request.  
   
--   `EnableHttpGetRequestsBehavior` endpoint behavior (and corresponding configuration), which adds the necessary operation selector to the runtime.  
+- `EnableHttpGetRequestsBehavior` endpoint behavior (and corresponding configuration), which adds the necessary operation selector to the runtime.  
   
--   Shows how to insert a new operation formatter into the runtime.  
+- Shows how to insert a new operation formatter into the runtime.  
   
--   In this sample, both the client and the service are console applications (.exe).  
+- In this sample, both the client and the service are console applications (.exe).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
 ## Key Concepts  
  `QueryStringFormatter` - The operation formatter is the component in WCF that is responsible for converting a message into an array of parameter objects and an array of parameter objects into a message. This is done on the client using the <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface and on the server with the <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface. These interfaces enable users to get the request and response messages from the `Serialize` and `Deserialize` methods.  
@@ -30,15 +30,15 @@ This sample demonstrates how Windows Communication Foundation (WCF) extensibilit
   
  Request:  
   
--   The sample uses the <xref:System.ComponentModel.TypeConverter> class to convert parameter data in the request message to and from strings. If a <xref:System.ComponentModel.TypeConverter> is not available for a specific type, the sample formatter throws an exception.  
+- The sample uses the <xref:System.ComponentModel.TypeConverter> class to convert parameter data in the request message to and from strings. If a <xref:System.ComponentModel.TypeConverter> is not available for a specific type, the sample formatter throws an exception.  
   
--   In the `IClientMessageFormatter.SerializeRequest` method on the client, the formatter creates a URI with the appropriate To address and appends the operation name as a suffix. This name is used to dispatch to the appropriate operation on the server. It then takes the array of parameter objects and serializes the parameter data to the URI query string using parameter names and the values converted by the <xref:System.ComponentModel.TypeConverter> class. The <xref:System.ServiceModel.Channels.MessageHeaders.To%2A> and <xref:System.ServiceModel.Channels.MessageProperties.Via%2A> properties are then set to this URI. <xref:System.ServiceModel.Channels.MessageProperties> is accessed through the <xref:System.ServiceModel.Channels.Message.Properties%2A> property.  
+- In the `IClientMessageFormatter.SerializeRequest` method on the client, the formatter creates a URI with the appropriate To address and appends the operation name as a suffix. This name is used to dispatch to the appropriate operation on the server. It then takes the array of parameter objects and serializes the parameter data to the URI query string using parameter names and the values converted by the <xref:System.ComponentModel.TypeConverter> class. The <xref:System.ServiceModel.Channels.MessageHeaders.To%2A> and <xref:System.ServiceModel.Channels.MessageProperties.Via%2A> properties are then set to this URI. <xref:System.ServiceModel.Channels.MessageProperties> is accessed through the <xref:System.ServiceModel.Channels.Message.Properties%2A> property.  
   
--   In the `IDispatchMessageFormatter.DeserializeRequest` method on the server, the formatter retrieves the `Via` URI in the incoming request message properties. It parses the name-value pairs in the URI query string into parameter names and values and uses the parameter names and values to populate the array of parameters passed into the method. Note that operation dispatch has already occurred, so the operation name suffix is ignored in this method.  
+- In the `IDispatchMessageFormatter.DeserializeRequest` method on the server, the formatter retrieves the `Via` URI in the incoming request message properties. It parses the name-value pairs in the URI query string into parameter names and values and uses the parameter names and values to populate the array of parameters passed into the method. Note that operation dispatch has already occurred, so the operation name suffix is ignored in this method.  
   
  Response:  
   
--   In this sample, HTTP GET is used only for the request. The formatter delegates the sending of the response to the original formatter that would have been used to generate an XML message. One of the goals of this sample is to show how such a delegating formatter can be implemented.  
+- In this sample, HTTP GET is used only for the request. The formatter delegates the sending of the response to the original formatter that would have been used to generate an XML message. One of the goals of this sample is to show how such a delegating formatter can be implemented.  
   
 ### UriPathSuffixOperationSelector Class  
  The <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> interface enables users to implement their own logic for which operation a particular message should be dispatched.  
@@ -67,7 +67,7 @@ This sample demonstrates how Windows Communication Foundation (WCF) extensibilit
   
  This must be done before calling `CreateChannel`.  
   
-```  
+```csharp  
 void ReplaceFormatterBehavior(OperationDescription operationDescription, EndpointAddress address)  
 {  
     // Remove the DataContract behavior if it is present.  
@@ -88,16 +88,16 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
   
  On the server:  
   
--   The <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface must be implemented so that it can read HTTP GET requests and delegate to the original formatter for writing responses. This is done by calling the same `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` helper method as the client (see the previous code sample).  
+- The <xref:System.ServiceModel.Dispatcher.IDispatchMessageFormatter> interface must be implemented so that it can read HTTP GET requests and delegate to the original formatter for writing responses. This is done by calling the same `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` helper method as the client (see the previous code sample).  
   
--   This must be done before <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> is called. In this sample, we show how the formatter is manually modified before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. Another way to achieve the same thing is to derive a class from <xref:System.ServiceModel.ServiceHost> that makes the calls to `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` before opening (please see hosting documentation and samples for examples).  
+- This must be done before <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A> is called. In this sample, we show how the formatter is manually modified before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>. Another way to achieve the same thing is to derive a class from <xref:System.ServiceModel.ServiceHost> that makes the calls to `EnableHttpGetRequestsBehavior.ReplaceFormatterBehavior` before opening (please see hosting documentation and samples for examples).  
   
 ### User experience  
  On the server:  
   
--   The server `ICalculator` implementation does not need to change.  
+- The server `ICalculator` implementation does not need to change.  
   
--   The App.config for the service must use a custom POX binding that sets the `messageVersion` attribute of the `textMessageEncoding` element to `None`.  
+- The App.config for the service must use a custom POX binding that sets the `messageVersion` attribute of the `textMessageEncoding` element to `None`.  
   
     ```xml  
     <bindings>  
@@ -110,7 +110,7 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
     </bindings>  
     ```  
   
--   The App.config for the service also must specify the custom `EnableHttpGetRequestsBehavior` by adding it to the behavior extensions section and using it.  
+- The App.config for the service also must specify the custom `EnableHttpGetRequestsBehavior` by adding it to the behavior extensions section and using it.  
   
     ```xml  
     <behaviors>  
@@ -124,19 +124,19 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
     <extensions>  
       <behaviorExtensions>  
         <!-- Enabling HTTP GET requests: Behavior Extension -->  
-        <add   
+        <add
           name="enableHttpGetRequests"           type="Microsoft.ServiceModel.Samples.EnableHttpGetRequestsBehaviorElement, QueryStringFormatter, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />  
       </behaviorExtensions>  
     </extensions>  
     ```  
   
--   Add operation formatters before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>.  
+- Add operation formatters before calling <xref:System.ServiceModel.Channels.CommunicationObject.Open%2A>.  
   
  On the client:  
   
--   The client implementation does not need to change.  
+- The client implementation does not need to change.  
   
--   The App.config for the client must use a custom POX binding that sets the `messageVersion` attribute of the `textMessageEncoding` element to `None`. One difference from the service is that the client must enable manual addressing so that the outgoing To address can be modified.  
+- The App.config for the client must use a custom POX binding that sets the `messageVersion` attribute of the `textMessageEncoding` element to `None`. One difference from the service is that the client must enable manual addressing so that the outgoing To address can be modified.  
   
     ```xml  
     <bindings>  
@@ -149,27 +149,25 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
     </bindings>  
     ```  
   
--   The App.config for the client must specify the same custom `EnableHttpGetRequestsBehavior` as the server.  
+- The App.config for the client must specify the same custom `EnableHttpGetRequestsBehavior` as the server.  
   
--   Add operation formatters before calling <xref:System.ServiceModel.ChannelFactory%601.CreateChannel>.  
+- Add operation formatters before calling <xref:System.ServiceModel.ChannelFactory%601.CreateChannel>.  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. All four operations (Add, Subtract, Multiply, and Divide) must succeed.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Formatters\QuieryStringFormatter`  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Formatters\QueryStringFormatter`  
   
 ##### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
-  
-## See Also
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: a3f5c266-3fcc-4ad1-aaf5-4cdbe26304ad
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ValidatorFlags Enumeration
-Contains values that indicate the type of validation that should be performed in a call to the [ICLRValidator::Validate](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-validate-method.md) method.  
+Contains values that indicate the type of validation that should be performed in a call to the [ICLRValidator::Validate](iclrvalidator-validate-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 enum ValidatorFlags {  
     VALIDATOR_EXTRA_VERBOSE =       0x00000001,  
     VALIDATOR_SHOW_SOURCE_LINES =   0x00000002,  
@@ -43,7 +41,7 @@ enum ValidatorFlags {
 |`VALIDATOR_SHOW_SOURCE_LINES`|Specifies that validation error messages should include the lines of source code that raise validation errors. This field value is not valid in the .NET Framework version 2.0.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   
@@ -51,6 +49,7 @@ enum ValidatorFlags {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## See also
+
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)
+- [Hosting Enumerations](hosting-enumerations.md)

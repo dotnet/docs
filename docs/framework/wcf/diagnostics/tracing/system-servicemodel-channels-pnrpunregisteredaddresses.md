@@ -7,9 +7,10 @@ ms.assetid: e726ab32-6923-4fdb-b0ce-bdf2a299ed6a
 The Pnrp Resolver has unregistered the local node's addresses.  
   
 ## Description  
- This trace occurs after the PNRP service successfully unregisters the local node's addressses.  
+ This trace occurs after the PNRP service successfully unregisters the local node's addresses.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+
+- [Tracing](index.md)
+- [Using Tracing to Troubleshoot Your Application](using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../index.md)

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 9fcefa98-750d-4168-8915-8173a43accf2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChain::EnumerateFrames Method
 Gets an enumerator that contains all the managed stack frames in the chain, starting with the most recent frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateFrames (  
     [out] ICorDebugFrameEnum **ppFrames  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrames`  
  [out] A pointer to the address of an ICorDebugFrameEnum object that is the enumerator for the stack frames.  
   
@@ -39,7 +37,7 @@ HRESULT EnumerateFrames (
  The `EnumerateFrames` method should be called only for managed chains. The debugging API does not provide methods for obtaining frames contained in unmanaged chains. The debugger must use other means to obtain this information.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

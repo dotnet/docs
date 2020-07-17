@@ -1,7 +1,7 @@
 ---
 title: Handle null values in query expressions (LINQ in C#)
 description: Learn how to handle null values in LINQ query expressions in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: ac63ae8b-724d-4251-9334-528f4e884ae7
 ---
 # Handle null values in query expressions
@@ -18,12 +18,12 @@ In the previous example, the `where` clause filters out all null elements in the
 
 ## Example
 
-In a join clause, if only one of the comparison keys is a nullable value type, you can cast the other to a nullable type in the query expression. In the following example, assume that `EmployeeID` is a column that contains values of type `int?`:
+In a join clause, if only one of the comparison keys is a nullable value type, you can cast the other to a nullable value type in the query expression. In the following example, assume that `EmployeeID` is a column that contains values of type `int?`:
 
 [!code-csharp[csProgGuideLINQ#83](~/samples/snippets/csharp/concepts/linq/how-to-handle-null-values-in-query-expressions_2.cs)]
 
 ## See also
 
-- <xref:System.Nullable%601>  
-- [Language Integrated Query (LINQ)](index.md)  
-- [Nullable types](../programming-guide/nullable-types/index.md)  
+- <xref:System.Nullable%601>
+- [Language Integrated Query (LINQ)](index.md)
+- [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)

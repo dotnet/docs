@@ -1,23 +1,29 @@
 ---
-title: "&lt;add&gt; of &lt;defaultPorts&gt;"
+title: "<add> of <defaultPorts>"
 ms.date: "03/30/2017"
 ms.assetid: f162ce42-963b-4779-96a7-d6d8b4ea0d2f
 ---
-# &lt;add&gt; of &lt;defaultPorts&gt;
+# \<add> of \<defaultPorts>
 A default communications endpoint that the client application listens to.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<useRequestHeadersForMetadataAddress>  
-\<defaultPorts>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<useRequestHeadersForMetadataAddress>**](userequestheadersformetadataaddress.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultPorts>**](defaultports.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
 ```xml  
-<useRequestHeadersForMetadataAddress>   <defaultPorts>      <add port="Integer" scheme="String" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
+<useRequestHeadersForMetadataAddress>
+  <defaultPorts>
+    <add port="Integer"
+         scheme="String" />
+  </defaultPorts>
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## Attributes and Elements  
@@ -37,7 +43,8 @@ A default communications endpoint that the client application listens to.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<defaultPorts>](../../../../../docs/framework/configure-apps/file-schema/wcf/defaultports.md)|A collection of default ports listing the default communications endpoints that the client application listens to.|  
+|[\<defaultPorts>](defaultports.md)|A collection of default ports listing the default communications endpoints that the client application listens to.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DefaultPortElement>
+## See also
+
+- <xref:System.ServiceModel.Configuration.DefaultPortElement>

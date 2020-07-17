@@ -1,5 +1,5 @@
 ---
-title: "&lt;list&gt; (Visual Basic)"
+title: "<list>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "listheader XML tag"
@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "<term> XML tag"
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
 ---
-# &lt;list&gt; (Visual Basic)
+# \<list> (Visual Basic)
 Defines a list or table.  
   
 ## Syntax  
@@ -32,7 +32,7 @@ Defines a list or table.
 </list>  
 ```  
   
-#### Parameters  
+## Parameters  
  `type`  
  The type of the list. Must be a "bullet" for a bulleted list, "number" for a numbered list, or "table" for a two-column table.  
   
@@ -49,12 +49,13 @@ Defines a list or table.
   
  A list or table can have as many `<item>` blocks as needed.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<list>` tag to define a bulleted list in the remarks section.  
   
- [!code-vb[VbVbcnXmlDocComments#5](../../../visual-basic/language-reference/xmldoc/codesnippet/VisualBasic/list_1.vb)]  
+ [!code-vb[VbVbcnXmlDocComments#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#5)]  
   
-## See Also  
- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+## See also
+
+- [XML Comment Tags](index.md)

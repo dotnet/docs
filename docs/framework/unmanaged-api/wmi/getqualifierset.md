@@ -14,22 +14,20 @@ helpviewer_keywords:
   - "GetQualifierSet function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetQualifierSet function
 Retrieves the qualifier set for a class instance or a class definition.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetQualifierSet (
-   [in] int                 vFunc, 
-   [in] IWbemClassObject*   ptr, 
+   [in] int                 vFunc,
+   [in] IWbemClassObject*   ptr,
    [out] IWbemQualifierSet  **ppQualSet
-); 
+);
 ```  
 
 ## Parameters
@@ -41,7 +39,7 @@ HRESULT GetQualifierSet (
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `ppQualSet`  
-[out] Receives the interface pointer that allows access to the qualifiers of the class object. `ppQualSet` cannot be `null`. If an error occurs, a new object is not returned, and the pointer is left unmodified. 
+[out] Receives the interface pointer that allows access to the qualifiers of the class object. `ppQualSet` cannot be `null`. If an error occurs, a new object is not returned, and the pointer is left unmodified.
 
 ## Return value
 
@@ -57,16 +55,17 @@ The following values returned by this function are defined in the *WbemCli.h* he
   
 ## Remarks
 
-This function wraps a call to the [IWbemClassObject::GetQualifierSet](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getqualifierset) method. 
+This function wraps a call to the [IWbemClassObject::GetQualifierSet](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-getqualifierset) method.
 
 The [IWbemQualifierSet pointer](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) lets the caller add, edit, or delete these qualifiers. Such added, edited, or deleted qualifiers apply to the entire instance or class definition.
 
 ## Requirements  
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

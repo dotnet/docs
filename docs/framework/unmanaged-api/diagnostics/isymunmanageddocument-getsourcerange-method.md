@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 20fefee7-1040-41ba-93dc-bd42f68b90c2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetSourceRange Method
 Returns the specified range of the embedded source into the given buffer. The buffer must be large enough to hold the source.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceRange(  
     [in]  ULONG32  startLine,  
     [in]  ULONG32  startColumn,  
@@ -35,7 +33,7 @@ HRESULT GetSourceRange(
         length_is(*pcSourceBytes)] BYTE source[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `startLine`  
  [in] The starting line in the current document.  
   
@@ -60,5 +58,6 @@ HRESULT GetSourceRange(
 ## Return Value  
  S_OK if the method succeeds.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

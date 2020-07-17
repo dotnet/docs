@@ -15,25 +15,23 @@ helpviewer_keywords:
 ms.assetid: 1d23247e-c58c-45db-afd8-83aa89cde18e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumFields Method
 Enumerates FieldDef tokens for the type referenced by the specified TypeDef token.  
   
 ## Syntax  
   
-```  
-HRESULT EnumFields (   
-   [in, out] HCORENUM    *phEnum,   
-   [in]      mdTypeDef   cl,   
-   [out]     mdFieldDef  rFields[],   
-   [in]      ULONG       cMax,   
+```cpp  
+HRESULT EnumFields (
+   [in, out] HCORENUM    *phEnum,
+   [in]      mdTypeDef   cl,
+   [out]     mdFieldDef  rFields[],
+   [in]      ULONG       cMax,
    [out]     ULONG       *pcTokens  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `phEnum`  
  [in, out] A pointer to the enumerator.  
   
@@ -57,7 +55,7 @@ HRESULT EnumFields (
 |`S_FALSE`|There are no fields to enumerate. In that case, `pcTokens` is zero.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -65,6 +63,7 @@ HRESULT EnumFields (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

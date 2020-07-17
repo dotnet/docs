@@ -14,28 +14,26 @@ helpviewer_keywords:
 ms.assetid: ded1e492-a782-4185-9c66-709e421c1782
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorBindToRuntimeByCfg Function
 Loads the common language runtime (CLR) into a process by using version information that is read from an XML file.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntimeByCfg (  
     [in]  IStream     *pCfgStream,  
     [in]  DWORD        reserved,  
     [in]  DWORD        startupFlags,  
     [in]  REFCLSID     rclsid,  
-    [in]  REFIID       riid,   
+    [in]  REFIID       riid,
     [out] LPVOID FAR*  ppv  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCfgStream`  
  [in] A pointer to an `IStream` object that reads the XML file.  
   
@@ -43,10 +41,10 @@ HRESULT CorBindToRuntimeByCfg (
  [in] Reserved for future use. Use 0 (zero) as value.  
   
  `startupFlags`  
- [in] A value of the [STARTUP_FLAGS](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md) enumeration that specifies the startup behavior of the CLR.  
+ [in] A value of the [STARTUP_FLAGS](startup-flags-enumeration.md) enumeration that specifies the startup behavior of the CLR.  
   
  `rclsid`  
- [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) or the [ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
+ [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](icorruntimehost-interface.md) or the [ICLRRuntimeHost](iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
   
  `riid`  
  [in] The `IID` of either the `ICorRuntimeHost` or the `ICLRRuntimeHost` interface. Supported values are IID_ICorRuntimeHost or IID_ICLRRuntimeHost.  
@@ -55,10 +53,10 @@ HRESULT CorBindToRuntimeByCfg (
  [out] A pointer to the address of the returned interface.  
   
 ## Remarks  
- The format of the XML file is modeled after the standard application configuration file. For more information about XML files, see [Configuration File Schema](../../../../docs/framework/configure-apps/file-schema/index.md).  
+ The format of the XML file is modeled after the standard application configuration file. For more information about XML files, see [Configuration File Schema](../../configure-apps/file-schema/index.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -66,10 +64,11 @@ HRESULT CorBindToRuntimeByCfg (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [CorBindToCurrentRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)  
- [CorBindToRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)  
- [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)  
- [CorBindToRuntimeHost Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimehost-function.md)  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [CorBindToCurrentRuntime Function](corbindtocurrentruntime-function.md)
+- [CorBindToRuntime Function](corbindtoruntime-function.md)
+- [CorBindToRuntimeEx Function](corbindtoruntimeex-function.md)
+- [CorBindToRuntimeHost Function](corbindtoruntimehost-function.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

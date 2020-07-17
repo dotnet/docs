@@ -15,28 +15,26 @@ helpviewer_keywords:
 ms.assetid: 70a32bf3-9051-4f96-ae87-11356d06a073
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::SetAssemblyRefProps Method
 Modifies the specified `AssemblyRef` metadata structure.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyRefProps (  
     [in] mdAssemblyRef              ar,  
     [in] const void                 *pbPublicKeyOrToken,  
     [in] ULONG                      cbPublicKeyOrToken,  
-    [in] LPCWSTR                    szName,   
-    [in] const ASSEMBLYMETADATA     *pMetaData,   
+    [in] LPCWSTR                    szName,
+    [in] const ASSEMBLYMETADATA     *pMetaData,
     [in] const void                 *pbHashValue,  
     [in] ULONG                      cbHashValue,  
     [in] DWORD                      dwAssemblyRefFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ar`  
  [in] The metadata token that specifies the `AssemblyRef` metadata structure to be modified.  
   
@@ -59,13 +57,13 @@ HRESULT SetAssemblyRefProps (
  [in] The size in bytes of `pbHashValue`.  
   
  `dwAssemblyRefFlags`  
- [in] A bitwise combination of [AssemblyRefFlags](../../../../docs/framework/unmanaged-api/metadata/assemblyrefflags-enumeration.md) values that specify attributes of the referenced assembly.  
+ [in] A bitwise combination of [AssemblyRefFlags](assemblyrefflags-enumeration.md) values that specify attributes of the referenced assembly.  
   
 ## Remarks  
- To create an `AssemblyRef` metadata structure, use the [IMetaDataAssemblyEmit::DefineAssemblyRef](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-defineassemblyref-method.md) method.  
+ To create an `AssemblyRef` metadata structure, use the [IMetaDataAssemblyEmit::DefineAssemblyRef](imetadataassemblyemit-defineassemblyref-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -73,5 +71,6 @@ HRESULT SetAssemblyRefProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

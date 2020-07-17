@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for &lt;listeners&gt; for &lt;source&gt;"
+title: "<remove> Element for <listeners> for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners/remove"
@@ -7,19 +7,17 @@ helpviewer_keywords:
   - "remove element for <listeners> for <source>"
   - "<remove> element for <listeners> for <source>"
 ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;remove&gt; Element for &lt;listeners&gt; for &lt;source&gt;
+# \<remove> Element for \<listeners> for \<source>
 Removes a listener from the `Listeners` collection for a trace source.  
-  
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-\<source>  
-\<listeners>  
-\<remove>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-source.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
+
 ## Syntax  
   
 ```xml  
@@ -62,22 +60,23 @@ Removes a listener from the `Listeners` collection for a trace source.
 <configuration>  
   <system.diagnostics>  
     <sources>  
-      <source name="TraceSourceApp" switchName="sourceSwitch"   
+      <source name="TraceSourceApp" switchName="sourceSwitch"
          switchType="System.Diagnostics.SourceSwitch" >  
          <listeners>  
            <remove name="Default"/>  
-           <add name="console"   
+           <add name="console"
              type="System.Diagnostics.ConsoleTraceListener" />  
          </listeners>  
       </source>  
     </sources>  
   </system.diagnostics>  
-</configuration>   
+</configuration>
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceSource.Listeners%2A>  
- <xref:System.Diagnostics.TraceSource>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+
+- <xref:System.Diagnostics.TraceSource.Listeners%2A>
+- <xref:System.Diagnostics.TraceSource>
+- [Trace and Debug Settings Schema](index.md)
+- [\<clear>](clear-element-for-listeners-for-source.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

@@ -1,5 +1,6 @@
 ---
 title: "exceptionSwallowedOnCallFromCom MDA"
+description: Review the exceptionSwallowedOnCallFromCOM managed debugging assistant in .NET. This MDA occurs if an exception was thrown but there's no good way to report it.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "messages, informational"
@@ -9,8 +10,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), exceptions"
   - "ExceptionSwallowedOnCallFromCOM MDA"
 ms.assetid: 55d6ab12-f251-4aab-aa64-aacbe9d9f974
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # exceptionSwallowedOnCallFromCom MDA
 The `exceptionSwallowedOnCallFromCOM` managed debugging assistant (MDA) is activated when an exception is thrown from common language runtime (CLR) code called from COM via a method that does not have an unmanaged HRESULT return type.  
@@ -40,7 +39,8 @@ The `exceptionSwallowedOnCallFromCOM` managed debugging assistant (MDA) is activ
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

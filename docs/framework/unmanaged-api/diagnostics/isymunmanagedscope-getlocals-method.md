@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 17c45f15-8c44-44da-b070-f902077b36e4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope::GetLocals Method
 Gets the local variables defined within this scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocals(  
     [in]  ULONG32  cLocals,  
     [out] ULONG32  *pcLocals,  
@@ -31,7 +29,7 @@ HRESULT GetLocals(
         length_is(*pcLocals)] ISymUnmanagedVariable* locals[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cLocals`  
  [in] A `ULONG32` that indicates the size of the `locals` array.  
   
@@ -47,5 +45,6 @@ HRESULT GetLocals(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+## See also
+
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)

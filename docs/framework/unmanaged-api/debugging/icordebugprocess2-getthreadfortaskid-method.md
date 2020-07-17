@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 32d54a5b-8ad3-405b-a1b9-0936a3b49d1e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::GetThreadForTaskID Method
 Gets the thread on which the task with the specified identifier is executing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadForTaskID (  
     [in]  TASKID            taskid,  
     [out] ICorDebugThread2  **ppThread  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `taskid`  
  [in] The identifier of the task.  
   
@@ -38,10 +36,10 @@ HRESULT GetThreadForTaskID (
  [out] A pointer to the address of an ICorDebugThread2 object that represents the thread to be retrieved.  
   
 ## Remarks  
- The host can set the task identifier by using the [ICLRTask::SetTaskIdentifier](../../../../docs/framework/unmanaged-api/hosting/iclrtask-settaskidentifier-method.md) method.  
+ The host can set the task identifier by using the [ICLRTask::SetTaskIdentifier](../hosting/iclrtask-settaskidentifier-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

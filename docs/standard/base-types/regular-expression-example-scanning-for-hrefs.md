@@ -1,6 +1,7 @@
 ---
 title: "Regular Expression Example: Scanning for HREFs"
-ms.date: "03/30/2017"
+description: See an example of regular expressions in .NET. The example searches an input string and displays all href attribute values and their locations.
+ms.date: "06/30/2020"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -13,13 +14,13 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Regular Expression Example: Scanning for HREFs
 The following example searches an input string and displays all the href="…" values and their locations in the string.  
-  
-## The Regex Object  
+
+[!INCLUDE [regex](../../../includes/regex.md)]
+
+## The Regex Object
  Because the `DumpHRefs` method can be called multiple times from user code, it uses the `static` (`Shared` in Visual Basic) <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method. This enables the regular expression engine to cache the regular expression and avoids the overhead of instantiating a new <xref:System.Text.RegularExpressions.Regex> object each time the method is called. A <xref:System.Text.RegularExpressions.Match> object is then used to iterate through all matches in the string.  
   
  [!code-csharp[RegularExpressions.Examples.HREF#1](../../../samples/snippets/csharp/VS_Snippets_CLR/RegularExpressions.Examples.HREF/cs/example.cs#1)]
@@ -38,7 +39,7 @@ The following example searches an input string and displays all the href="…" v
 |`\s*`|Match zero or more white-space characters.|  
 |`=`|Match the equals sign.|  
 |`\s*`|Match zero or more white-space characters.|  
-|<code>(?:\["'\](?<1>\[^"'\]*)["']&#124;(?<1>\S+))</code>|Match one of the following without assigning the result to a captured group:<br /> <ul><li><p>A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern.</p></li><li><p>One or more non-white-space characters. The group named `1` is included in this pattern.</p></li></ul>|  
+|`(?:\["'\](?<1>\[^"'\]*)["']|(?<1>\S+))`|Match one of the following without assigning the result to a captured group:<br /> <ul><li><p>A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern.</p></li><li><p>One or more non-white-space characters. The group named `1` is included in this pattern.</p></li></ul>|  
 |`(?<1>[^"']*)`|Assign zero or more occurrences of any character other than a quotation mark or apostrophe to the capturing group named `1`.|  
 |`(?<1>\S+)`|Assign one or more non-white-space characters to the capturing group named `1`.|  
   
@@ -52,4 +53,4 @@ The following example searches an input string and displays all the href="…" v
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

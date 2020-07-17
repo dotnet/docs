@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 8d6d3a1a-fef6-4f2f-a22c-3bdd30d70e07
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetActiveFrame Method
 Gets an interface pointer to the active (most recent) frame on this ICorDebugThread object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetActiveFrame (  
     [out] ICorDebugFrame   **ppFrame  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppFrame`  
  [out] A pointer to the address of an ICorDebugFrame interface object that represents a frame.  
   
@@ -37,7 +35,7 @@ HRESULT GetActiveFrame (
  The `ppFrame` parameter is null if no frame is currently active.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

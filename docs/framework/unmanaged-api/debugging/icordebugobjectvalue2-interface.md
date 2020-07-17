@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugObjectValue2 Interface1"
+title: "ICorDebugObjectValue2 Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugObjectValue2"
@@ -14,25 +14,24 @@ helpviewer_keywords:
 ms.assetid: f93cc2ec-0a12-4499-9bf6-405dc58c9a81
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugObjectValue2 Interface1
+# ICorDebugObjectValue2 Interface
+
 Extends the "ICorDebugObjectValue" interface to support inheritance and overrides.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetVirtualMethodAndType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue2-getvirtualmethodandtype-method.md)|`GetVirtualMethodAndType` is not yet implemented.|  
+|[GetVirtualMethodAndType Method](icordebugobjectvalue2-getvirtualmethodandtype-method.md)|`GetVirtualMethodAndType` is not yet implemented.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -40,6 +39,6 @@ Extends the "ICorDebugObjectValue" interface to support inheritance and override
   
  **NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- 
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -10,13 +10,13 @@ When writing a WCF client application you need to know the endpoint address of t
  To use the Discovery Client Channel, add an instance of the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> to your client channel stack. Alternatively you can use the <xref:System.ServiceModel.Discovery.DynamicEndpoint> and a <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is automatically added to your binding if not already present.  
   
 > [!CAUTION]
->  It is recommended that the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is the top-most element on your client channel stack. Any binding element that is added on top of the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> must make sure that the <xref:System.ServiceModel.ChannelFactory> or channel it creates does not use the endpoint address or `Via` address (passed to the `CreateChannel` method) because they may not contain the correct address.  
+> It is recommended that the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> is the top-most element on your client channel stack. Any binding element that is added on top of the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> must make sure that the <xref:System.ServiceModel.ChannelFactory> or channel it creates does not use the endpoint address or `Via` address (passed to the `CreateChannel` method) because they may not contain the correct address.  
   
  The <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> class contains two public properties:  
   
-1.  <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A>, which is used to describe the service you want to call.  
+1. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.FindCriteria%2A>, which is used to describe the service you want to call.  
   
-2.  <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointProvider%2A> which specifies the discovery endpoint to send discovery messages to.  
+2. <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointProvider%2A> which specifies the discovery endpoint to send discovery messages to.  
   
  The <xref:System.ServiceModel.Discovery.FindCriteria.%23ctor%2A> property allows you to specify the service contract you are searching for, any required scope URIs, and the maximum number of time to attempt to open the channel. The contract type is specified by calling the constructor  <xref:System.ServiceModel.Discovery.FindCriteria>. Scope URIs can be added to the <xref:System.ServiceModel.Discovery.FindCriteria.Scopes%2A> property. The <xref:System.ServiceModel.Discovery.FindCriteria.MaxResults%2A> property allows you to specify the maximum number of results to which the client tries to connect to. When a probe response is received the client attempts to open the channel using the endpoint address from the probe response. If an exception occurs the client moves on to the next probe response, waiting for more responses to be received if necessary. It continues to do this until the channel is successfully opened or the maximum number of results is reached. For more information about these settings, see <xref:System.ServiceModel.Discovery.FindCriteria>.  
   
@@ -26,7 +26,7 @@ When writing a WCF client application you need to know the endpoint address of t
   
  Once you have added the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> to your binding and configured it, you can create an instance of the WCF client class, open it, and call its methods. The following example uses the Discovery Client Channel to discover a WCF service that implements the `ICalculator` class (used in the Getting Started WCF tutorial) and calls its `Add` method.  
   
-```  
+```csharp
 // Create the DiscoveryClientBindingElement  
 DiscoveryClientBindingElement bindingElement = new DiscoveryClientBindingElement();  
 // Search for a service that implements the ICalculator interface, attempting to open  
@@ -35,7 +35,7 @@ bindingElement.FindCriteria = new FindCriteria(typeof(ICalculator)) { MaxResults
 // Use the UdpDiscoveryEndpoint  
 bindingElement.DiscoveryEndpoint = new UdpDiscoveryEndpoint();  
   
-// The service uses the BasicHttpBinding, so use that and insert the DiscoveryClientBindingElement at the   
+// The service uses the BasicHttpBinding, so use that and insert the DiscoveryClientBindingElement at the
 // top of the stack  
 CustomBinding binding = new CustomBinding(new BasicHttpBinding());  
 binding.Elements.Insert(0,bindingElement);  
@@ -54,4 +54,4 @@ catch (EndpointNotFoundException ex)
 ```  
   
 ## Security and the Discovery Client Channel  
- When using the discovery client channel, two endpoints are being specified. One is used for discovery messages, usually <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, and the other is the application endpoint. When implementing a secure service, care must be taken to secure both endpoints. For more information about security, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md).
+ When using the discovery client channel, two endpoints are being specified. One is used for discovery messages, usually <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, and the other is the application endpoint. When implementing a secure service, care must be taken to secure both endpoints. For more information about security, see [Securing Services and Clients](securing-services-and-clients.md).

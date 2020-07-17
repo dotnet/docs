@@ -12,11 +12,11 @@ ms.assetid: b9e9790e-7bfd-45d1-8b7a-1e0d125182a8
 The topics in this section describe how to use the <xref:System.Windows.Controls.TreeView> control to display information in a hierarchical structure.  
   
 ## In This Section  
- [Create Simple or Complex TreeViews](../../../../docs/framework/wpf/controls/how-to-create-simple-or-complex-treeviews.md)  
-  [Use SelectedValue, SelectedValuePath, and SelectedItem](../../../../docs/framework/wpf/controls/how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md)  
-  [Bind a TreeView to Data That Has an Indeterminable Depth](../../../../docs/framework/wpf/controls/how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md)  
-  [Improve the Performance of a TreeView](../../../../docs/framework/wpf/controls/how-to-improve-the-performance-of-a-treeview.md)  
-  [Find a TreeViewItem in a TreeView](../../../../docs/framework/wpf/controls/how-to-find-a-treeviewitem-in-a-treeview.md)  
+ [Create Simple or Complex TreeViews](how-to-create-simple-or-complex-treeviews.md)  
+  [Use SelectedValue, SelectedValuePath, and SelectedItem](how-to-use-selectedvalue-selectedvaluepath-and-selecteditem.md)  
+  [Bind a TreeView to Data That Has an Indeterminable Depth](how-to-bind-a-treeview-to-data-that-has-an-indeterminable-depth.md)  
+  [Improve the Performance of a TreeView](how-to-improve-the-performance-of-a-treeview.md)  
+  [Find a TreeViewItem in a TreeView](how-to-find-a-treeviewitem-in-a-treeview.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.TreeView>  

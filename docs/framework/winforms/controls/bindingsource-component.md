@@ -15,40 +15,40 @@ Encapsulates a data source for binding to controls.
  Second, the <xref:System.Windows.Forms.BindingSource> component can act as a strongly typed data source. Adding a type to the <xref:System.Windows.Forms.BindingSource> component with the <xref:System.Windows.Forms.BindingSource.Add%2A> method creates a list of that type.  
   
 ## In This Section  
- [BindingSource Component Overview](../../../../docs/framework/winforms/controls/bindingsource-component-overview.md)  
+ [BindingSource Component Overview](bindingsource-component-overview.md)  
  Introduces the general concepts of the <xref:System.Windows.Forms.BindingSource> component, which allows you to bind a data source to a control.  
   
- [How to: Bind Windows Forms Controls to DBNull Database Values](../../../../docs/framework/winforms/controls/how-to-bind-windows-forms-controls-to-dbnull-database-values.md)  
+ [How to: Bind Windows Forms Controls to DBNull Database Values](how-to-bind-windows-forms-controls-to-dbnull-database-values.md)  
  Shows how to handle a <xref:System.DBNull> value from the data source using the <xref:System.Windows.Forms.BindingSource> component.  
   
- [How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](../../../../docs/framework/winforms/controls/sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)  
+ [How to: Sort and Filter ADO.NET Data with the Windows Forms BindingSource Component](sort-and-filter-ado-net-data-with-wf-bindingsource-component.md)  
  Demonstrates using the <xref:System.Windows.Forms.BindingSource> component to apply sorts and filters to displayed data.  
   
- [How to: Bind to a Web Service Using the Windows Forms BindingSource](../../../../docs/framework/winforms/controls/how-to-bind-to-a-web-service-using-the-windows-forms-bindingsource.md)  
+ [How to: Bind to a Web Service Using the Windows Forms BindingSource](how-to-bind-to-a-web-service-using-the-windows-forms-bindingsource.md)  
  Shows how to use the <xref:System.Windows.Forms.BindingSource> component to bind to a Web service.  
   
- [How to: Handle Errors and Exceptions that Occur with Databinding](../../../../docs/framework/winforms/controls/how-to-handle-errors-and-exceptions-that-occur-with-databinding.md)  
+ [How to: Handle Errors and Exceptions that Occur with Databinding](how-to-handle-errors-and-exceptions-that-occur-with-databinding.md)  
  Demonstrates using the <xref:System.Windows.Forms.BindingSource> component to gracefully handle errors that occur in a data binding operation.  
   
- [How to: Bind a Windows Forms Control to a Type](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-type.md)  
+ [How to: Bind a Windows Forms Control to a Type](how-to-bind-a-windows-forms-control-to-a-type.md)  
  Demonstrates using a <xref:System.Windows.Forms.BindingSource> component to bind to a type.  
   
- [How to: Bind a Windows Forms Control to a Factory Object](../../../../docs/framework/winforms/controls/how-to-bind-a-windows-forms-control-to-a-factory-object.md)  
+ [How to: Bind a Windows Forms Control to a Factory Object](how-to-bind-a-windows-forms-control-to-a-factory-object.md)  
  Demonstrates using a <xref:System.Windows.Forms.BindingSource> component to bind to a factory object or method.  
   
- [How to: Customize Item Addition with the Windows Forms BindingSource](../../../../docs/framework/winforms/controls/how-to-customize-item-addition-with-the-windows-forms-bindingsource.md)  
+ [How to: Customize Item Addition with the Windows Forms BindingSource](how-to-customize-item-addition-with-the-windows-forms-bindingsource.md)  
  Demonstrates using a <xref:System.Windows.Forms.BindingSource> component to create new items and add them to a data source.  
   
- [How to: Raise Change Notifications Using the BindingSource ResetItem Method](../../../../docs/framework/winforms/controls/how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)  
+ [How to: Raise Change Notifications Using the BindingSource ResetItem Method](how-to-raise-change-notifications-using-the-bindingsource-resetitem-method.md)  
  Demonstrates using a <xref:System.Windows.Forms.BindingSource> component to raise change-notification events for data sources that do not support change notification.  
   
- [How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface](../../../../docs/framework/winforms/controls/raise-change-notifications--bindingsource.md)  
+ [How to: Raise Change Notifications Using a BindingSource and the INotifyPropertyChanged Interface](raise-change-notifications--bindingsource.md)  
  Demonstrates how to use a type that inherits from the <xref:System.ComponentModel.INotifyPropertyChanged> with a <xref:System.Windows.Forms.BindingSource> control.  
   
- [How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource](../../../../docs/framework/winforms/controls/reflect-data-source-updates-in-a-wf-control-with-the-bindingsource.md)  
+ [How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource](reflect-data-source-updates-in-a-wf-control-with-the-bindingsource.md)  
  Demonstrates how to respond to changes in the data source using the <xref:System.Windows.Forms.BindingSource> component.  
   
- [How to: Share Bound Data Across Forms Using the BindingSource Component](../../../../docs/framework/winforms/controls/how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)  
+ [How to: Share Bound Data Across Forms Using the BindingSource Component](how-to-share-bound-data-across-forms-using-the-bindingsource-component.md)  
  Shows how to use the <xref:System.Windows.Forms.BindingSource> to bind multiple forms to the same data source.  
   
 ## Reference  
@@ -59,7 +59,7 @@ Encapsulates a data source for binding to controls.
  Provides reference documentation for the <xref:System.Windows.Forms.BindingNavigator> control.  
   
 ## Related Sections  
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
+ [Windows Forms Data Binding](../windows-forms-data-binding.md)  
  Contains links to topics describing the Windows Forms data binding architecture.  
   
  Also see [Bind controls to data in Visual Studio](/visualstudio/data-tools/bind-controls-to-data-in-visual-studio).

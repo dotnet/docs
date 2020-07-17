@@ -15,25 +15,24 @@ helpviewer_keywords:
 ms.assetid: 385fc4d3-365c-4645-b7b0-6c4c5344b79f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::HasEmbeddedSource Method
 Returns `true` if the document has source embedded in the debugging symbols; otherwise, returns `false`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasEmbeddedSource(  
    [out, retval]  BOOL  *pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that indicates whether the document has source embedded in the debugging symbols.  
   
 ## Return Value  
  S_OK if the method succeeds.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

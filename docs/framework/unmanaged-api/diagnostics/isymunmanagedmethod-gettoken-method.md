@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: 4effbe95-c36e-4a45-8b2a-ee21339415fb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetToken Method
 Returns the metadata token for this method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken(  
    [out, retval]  mdMethodDef  *pToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pToken`  
  [out] A pointer to a `mdMethodDef` that receives the size, in characters, of the buffer required to contain the metadata.  
   
@@ -38,5 +36,6 @@ HRESULT GetToken(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+## See also
+
+- [ISymUnmanagedMethod Interface](isymunmanagedmethod-interface.md)

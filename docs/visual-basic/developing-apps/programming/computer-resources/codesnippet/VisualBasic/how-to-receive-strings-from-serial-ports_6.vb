@@ -1,2 +1,0 @@
-                Else
-                    returnStr &= Incoming & vbCrLf

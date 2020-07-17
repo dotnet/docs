@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 87c4fcb2-7703-4a2e-afb6-42973381b960
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublish Interface
 Serves as the general interface for publishing information about processes and information about the application domains in those processes.  
@@ -24,11 +22,11 @@ Serves as the general interface for publishing information about processes and i
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumProcesses Method](../../../../docs/framework/unmanaged-api/debugging/icorpublish-enumprocesses-method.md)|Gets an [ICorPublishProcessEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md) instance that contains the managed processes running on this computer.|  
-|[GetProcess Method](../../../../docs/framework/unmanaged-api/debugging/icorpublish-getprocess-method.md)|Gets an [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) instance that represents the process with the specified identifier.|  
+|[EnumProcesses Method](icorpublish-enumprocesses-method.md)|Gets an [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) instance that contains the managed processes running on this computer.|  
+|[GetProcess Method](icorpublish-getprocess-method.md)|Gets an [ICorPublishProcess](icorpublishprocess-interface.md) instance that represents the process with the specified identifier.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -36,6 +34,7 @@ Serves as the general interface for publishing information about processes and i
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [CorpubPublish Coclass](corpubpublish-coclass.md)

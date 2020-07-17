@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 704a8893-ac56-43b4-90ea-715f38ccb40e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetadataLocator::GetMetadata Method
 Called by the common language runtime (CLR) data access services to retrieve the metadata of an image.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetadata(  
     [in]  LPCWSTR         imagePath,  
     [in]  ULONG32         imageTimestamp,  
@@ -38,7 +36,7 @@ HRESULT GetMetadata(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `imagePath`  
  [in] A string that specifies the path of the image file.  
   
@@ -70,7 +68,7 @@ HRESULT GetMetadata(
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -78,5 +76,6 @@ HRESULT GetMetadata(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRMetadataLocator Interface](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)
+## See also
+
+- [ICLRMetadataLocator Interface](iclrmetadatalocator-interface.md)

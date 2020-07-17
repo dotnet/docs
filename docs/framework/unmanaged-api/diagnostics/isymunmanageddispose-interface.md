@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b1d74e83-a200-4d00-8fbd-27918808616d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDispose Interface
 Disposes of unmanaged resources.  
@@ -24,10 +22,11 @@ Disposes of unmanaged resources.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Destroy Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddispose-destroy-method.md)|Causes the underlying object to release all internal references and return failure on any subsequent method calls.|  
+|[Destroy Method](isymunmanageddispose-destroy-method.md)|Causes the underlying object to release all internal references and return failure on any subsequent method calls.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+## See also
+
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)

@@ -4,46 +4,51 @@ description: Follow tutorials for learning .NET Core to build apps and libraries
 author: richlander
 ms.date: 03/16/2017
 titleSuffix: ""
-ms.custom: seodec18
 ---
-# Learn .NET Core and the .NET Core SDK tools by exploring these Tutorials
+# Learn .NET Core and the .NET Core SDK tools by exploring these tutorials
 
 The following tutorials are available for learning about .NET Core.
 
-## Building applications with Visual Studio 2017
+## Use Visual Studio
 
-- [Building a C# Hello World application](with-visual-studio.md)
-- [Debugging your C# Hello World application](debugging-with-visual-studio.md)
-- [Publishing your C# Hello World application](publishing-with-visual-studio.md)
-- [Building a C# class library](library-with-visual-studio.md)
-- [Building a class library with Visual Basic](vb-library-with-visual-studio.md)
-- [Testing a class library](testing-library-with-visual-studio.md)
-- [Consuming a class library](consuming-library-with-visual-studio.md)
-- [Building a complete C# .NET Core solution on Windows](using-on-windows-full-solution.md)
-- [Azure Cosmos DB: Getting started with the SQL API and .NET Core](/azure/cosmos-db/sql-api-dotnetcore-get-started)
+- [Create a console app](with-visual-studio.md)
+- [Debug an app](debugging-with-visual-studio.md)
+- [Publish an app](publishing-with-visual-studio.md)
+- [Create a class library](library-with-visual-studio.md)
+- [Unit test a class library](testing-library-with-visual-studio.md)
+- [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+- [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Create an F# console app](../../fsharp/get-started/get-started-visual-studio.md)
 
-## Building applications with Visual Studio Code
+## Use Visual Studio Code
 
-- [Getting Started with C# and Visual Studio Code](with-visual-studio-code.md)
-- [Getting started with .NET Core on macOS](using-on-macos.md)
+Choose these tutorials if you want to use Visual Studio Code or some other code editor. All use the CLI for .NET Core development tasks, so all except the debugging tutorial can be used with any code editor.
 
-## Building applications with Visual Studio for Mac
+- [Create a console app](with-visual-studio-code.md)
+- [Debug an app](debugging-with-visual-studio-code.md)
+- [Publish an app](publishing-with-visual-studio-code.md)
+- [Create a class library](library-with-visual-studio-code.md)
+- [Unit test a class library](testing-library-with-visual-studio-code.md)
+- [Install and use a package](/nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli)
+- [Create and publish a package](/nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli)
+- [Create an F# console app](../../fsharp/get-started/get-started-vscode.md)
 
-- [Getting started with .NET Core on macOS using Visual Studio for Mac](using-on-mac-vs.md)
-- [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md)
+## Use Visual Studio for Mac
 
-## Building applications with the .NET Core CLI tools
+- [Create a console app](using-on-mac-vs.md)
+- [Create a library and unit test it](library-with-visual-studio-mac.md)
+- [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
 
-- [Getting started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
-- [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
-- [Get started with F#](../../fsharp/get-started/get-started-command-line.md)
+## Advanced topics
 
-## Other
-- [Unit Testing in .NET Core using dotnet test](../testing/unit-testing-with-dotnet-test.md)
-- [Unit testing with MSTest and .NET Core](../testing/unit-testing-with-mstest.md)
-- [Developing Libraries with Cross Platform Tools](libraries.md)
-- [How to Manage Package Dependency Versions for .NET Core 1.0](managing-package-dependency-versions.md)
-- [Hosting .NET Core from native code](netcore-hosting.md)
-- [Create a custom template for dotnet new](create-custom-template.md)
+- [How to create libraries](libraries.md)
+- [Unit test an app with xUnit](testing-with-cli.md)
+- [Unit test using C#/VB/F# with NUnit/xUnit/MSTest](../testing/index.md)
+- [Live unit test with Visual Studio](/visualstudio/test/live-unit-testing-start)
+- [Create templates for the CLI](cli-templates-create-item-template.md)
+- [Create and use tools for the CLI](../tools/global-tools-how-to-create.md)
+- [Create an app with plugins](creating-app-with-plugin-support.md)
+
+## Create web apps
 
 For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

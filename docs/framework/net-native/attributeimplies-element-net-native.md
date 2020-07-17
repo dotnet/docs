@@ -1,11 +1,9 @@
 ---
-title: "&lt;AttributeImplies&gt; Element (.NET Native)"
+title: "<AttributeImplies> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# &lt;AttributeImplies&gt; Element (.NET Native)
+# \<AttributeImplies> Element (.NET Native)
 Defines policy for code elements the containing attribute is applied to.  
   
 ## Syntax  
@@ -14,7 +12,7 @@ Defines policy for code elements the containing attribute is applied to.
 <AttributeImplies Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
-                  Serialize="policy_type"   
+                  Serialize="policy_type"
                   DataContractSerializer="policy_setting"  
                   DataContractJsonSerializer="policy_setting"  
                   XmlSerializer="policy_setting"  
@@ -45,7 +43,7 @@ Defines policy for code elements the containing attribute is applied to.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
  None.  
@@ -54,15 +52,16 @@ Defines policy for code elements the containing attribute is applied to.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
+|[\<Type>](type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
   
 ## Remarks  
  The `<AttributeImplies>` element is used if its containing type is an attribute (that is, a class derived from <xref:System.Attribute?displayProperty=nameWithType>). If the attribute is applied to a particular program element, the policy defined by the `<AttributeImplies>` element applies to that program element.  
   
  The reflection, serialization, and interop attributes are all optional, although at least one should be present.  
   
-## See Also  
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+## See also
+
+- [\<Type> Element](type-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)

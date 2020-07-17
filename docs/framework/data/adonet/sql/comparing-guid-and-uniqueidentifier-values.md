@@ -1,5 +1,6 @@
 ---
 title: "Comparing GUID and uniqueidentifier Values"
+description: Learn how to create and compare GUID values in the .NET Framework Data Provider for SQL Server, which are represented by the uniqueidentifier data type.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -22,7 +23,7 @@ The globally unique identifier (GUID) data type in SQL Server is represented by 
   
  This example produces the following results.  
   
-```  
+```output  
 Unsorted Guids:  
 3aaaaaaa-bbbb-cccc-dddd-2eeeeeeeeeee  
 2aaaaaaa-bbbb-cccc-dddd-1eeeeeeeeeee  
@@ -39,7 +40,7 @@ Sorted SqlGuids:
 1aaaaaaa-bbbb-cccc-dddd-3eeeeeeeeeee  
 ```  
   
-## See Also  
+## See also
 
-[SQL Server Data Types and ADO.NET](sql-server-data-types.md)  
-[ADO.NET Overview](../ado-net-overview.md)  
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
+- [ADO.NET Overview](../ado-net-overview.md)

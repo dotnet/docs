@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateInstallReferenceEnum Function
-Gets a pointer to an [IInstallReferenceEnum](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md) instance that represents a list of an application's references to the specified assembly.  
+Gets a pointer to an [IInstallReferenceEnum](iinstallreferenceenum-interface.md) instance that represents a list of an application's references to the specified assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateInstallReferenceEnum (  
     [out] IInstallReferenceEnum **ppRefEnum,  
     [in]  IAssemblyName         *pName,  
@@ -33,12 +31,12 @@ HRESULT CreateInstallReferenceEnum (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRefEnum`  
  [out] The returned `IInstallReferenceEnum` pointer.  
   
  `pName`  
- [in] The [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) that identifies the assembly for which to enumerate references.  
+ [in] The [IAssemblyName](iassemblyname-interface.md) that identifies the assembly for which to enumerate references.  
   
  `dwFlags`  
  [in] Flags that influence the enumerator's behavior.  
@@ -47,7 +45,7 @@ HRESULT CreateInstallReferenceEnum (
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -55,7 +53,8 @@ HRESULT CreateInstallReferenceEnum (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IInstallReferenceEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md)  
- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)  
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## See also
+
+- [IInstallReferenceEnum Interface](iinstallreferenceenum-interface.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

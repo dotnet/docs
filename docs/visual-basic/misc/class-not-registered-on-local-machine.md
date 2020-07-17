@@ -10,8 +10,8 @@ This error is usually encountered as a result of a corrupted file. You may need 
   
 ## To correct this error  
   
--   Reinstall Visual Studio.  
+- Reinstall Visual Studio.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+## See also
 
+- [Error Types](../programming-guide/language-features/error-types.md)

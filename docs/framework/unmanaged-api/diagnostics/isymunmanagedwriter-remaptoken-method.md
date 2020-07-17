@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: bca92682-ee1e-467f-8fb0-d8d4617f82fe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::RemapToken Method
 Notifies the symbol writer that a metadata token has been remapped as the metadata was emitted. If the symbol writer has stored the old token within the symbol store, it must either update the stored token with the new value, or it must save the map for the corresponding symbol reader to remap during the read phase.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RemapToken(  
     [in] mdToken  oldToken,  
     [in] mdToken  newToken);  
 ```  
   
-#### Parameters  
+## Parameters  
  `oldToken`  
  [in] The metadata token that was remapped.  
   
@@ -42,5 +40,6 @@ HRESULT RemapToken(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)

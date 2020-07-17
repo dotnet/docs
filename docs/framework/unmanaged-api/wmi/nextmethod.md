@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "NextMethod function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # NextMethod function
 Retrieves the next method in an enumeration that begins with a call to [BeginMethodEnumeration](beginmethodenumeration.md).  
@@ -24,15 +22,15 @@ Retrieves the next method in an enumeration that begins with a call to [BeginMet
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NextMethod (
-   [in] int                 vFunc, 
-   [in] IWbemClassObject*   ptr, 
+   [in] int                 vFunc,
+   [in] IWbemClassObject*   ptr,
    [in] LONG                lFlags,
    [out] BSTR*              pName,
    [out] IWbemClassObject** ppInSignature,
-   [out] IWbemClassObject** ppOutSignature   
-); 
+   [out] IWbemClassObject** ppOutSignature
+);
 ```  
 
 ## Parameters
@@ -47,13 +45,13 @@ HRESULT NextMethod (
 [in] Reserved. This parameter must be 0.
 
 `pName`  
-[out] A pointer that points to `null` prior to the call. When the function returns, the address of a new `BSTR` that contains the method name. 
+[out] A pointer that points to `null` prior to the call. When the function returns, the address of a new `BSTR` that contains the method name.
 
 `ppSignatureIn`  
-[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `in` parameters for the method. 
+[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `in` parameters for the method.
 
 `ppSignatureOut`  
-[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `out` parameters for the method. 
+[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `out` parameters for the method.
 
 ## Return value
 
@@ -76,11 +74,12 @@ The caller begins the enumeration sequence by calling the [BeginMethodEnumeratio
 For a C++ example, see the [IWbemClassObject::NextMethod](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemclassobject-nextmethod) method.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

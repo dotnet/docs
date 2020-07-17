@@ -1,64 +1,73 @@
 ---
-title: Managing dependencies in .NET Core tooling
-description: Explains how to manage your dependencies with the .NET Core tools.
-author: blackdwarf
-ms.date: 03/06/2017
-ms.custom: "seodec18"
+title: Manage dependencies in .NET Core
+description: Explains how to manage project dependencies for a .NET Core application.
+no-loc: [dotnet add package, dotnet remove package, dotnet list package]
+ms.date: 02/25/2020
 ---
-# Managing dependencies with .NET Core SDK 1.0
+# Manage dependencies in .NET Core applications
 
-With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of dependencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
+This article explains how to add and remove dependencies by editing the project file or by using the CLI.
 
-This document describes the new reference type. It also shows how to add a package dependency using this new reference type to your project. 
+## The \<PackageReference> element
 
-## The new \<PackageReference> element
-The `<PackageReference>` has the following basic structure:
+The `<PackageReference>` project file element has the following structure:
 
 ```xml
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" />
 ```
 
-If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
+The `Include` attribute specifies the ID of the package to add to the project. The `Version` attribute specifies the version to get. Versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
 
 > [!NOTE]
-> If you are not familiar with the overall `csproj` syntax, see the [MSBuild project reference](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.  
+> If you're not familiar with project-file syntax, see the [MSBuild project reference](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.
 
-Adding a dependency that is available only in a specific target is done using conditions like in the following example:
+Use conditions to add a dependency that's available only in a specific target, as shown in the following example:
 
 ```xml
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
-The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is a MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this. 
+The dependency in the preceding example will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that's being set in the project. For most common .NET Core applications, you don't need to do this.
 
-## Adding a dependency to your project
-Adding a dependency to your project is straightforward. Here is an example of how to add Json.NET version `9.0.1` to your project. Of course, it is applicable to any other NuGet dependency. 
+## Add a dependency by editing the project file
 
-When you open your project file, you will see two or more `<ItemGroup>` nodes. You will notice that one of the nodes already has `<PackageReference>` elements in it. You can add your new dependency to this node, or create a new one; it is completely up to you as the result will be the same. 
-
-In this example we will use the default template that is dropped by `dotnet new console`. This is a simple console application. When we open up the project, we first find the `<ItemGroup>` with already existing `<PackageReference>` in it. We then add the following to it:
+To add a dependency, add a `<PackageReference>` element inside an `<ItemGroup>` element. You can add to an existing `<ItemGroup>` or create a new one. The following example uses the default console application project that's created by `dotnet new console`:
 
 ```xml
-<PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
-```
-After this, we save the project and run the `dotnet restore` command to install the dependency. 
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
-
-The full project looks like this:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
   </ItemGroup>
+
 </Project>
 ```
 
-## Removing a dependency from the project
-Removing a dependency from the project file involves simply removing the `<PackageReference>` from the project file.
+## Add a dependency by using the CLI
+
+To add a dependency, run the [dotnet add package](dotnet-add-package.md) command, as shown in the following example:
+
+```dotnetcli
+dotnet add package Microsoft.EntityFrameworkCore
+```
+
+## Remove a dependency by editing the project file
+
+To remove a dependency, remove its `<PackageReference>` element from the project file.
+
+## Remove a dependency by using the CLI
+
+To remove a dependency, run the [dotnet remove package](dotnet-remove-package.md) command, as shown in the following example:
+
+```dotnetcli
+dotnet remove package Microsoft.EntityFrameworkCore
+```
+
+## See also
+
+* [Package references in project files](../project-sdk/msbuild-props.md#reference-properties-and-items)
+* [dotnet list package command](dotnet-list-package.md)

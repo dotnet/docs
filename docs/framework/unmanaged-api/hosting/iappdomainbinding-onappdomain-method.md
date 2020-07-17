@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: b419dcc9-e8aa-484b-af0d-0f40358edb99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAppDomainBinding::OnAppDomain Method
 Called by the common language runtime (CLR) to notify the host that an application domain has been created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnAppDomain (  
     [in] IUnknown* pAppdomain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppdomain`  
- [in] A pointer to an [IUnknown](https://msdn.microsoft.com/library/94as6ehy(v=vs.110).aspx) interface object that represents the new application domain.  
+ [in] A pointer to an [IUnknown](/cpp/atl/iunknown) interface object that represents the new application domain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -42,5 +40,6 @@ HRESULT OnAppDomain (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IAppDomainBinding Interface](../../../../docs/framework/unmanaged-api/hosting/iappdomainbinding-interface.md)
+## See also
+
+- [IAppDomainBinding Interface](iappdomainbinding-interface.md)

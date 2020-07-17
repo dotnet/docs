@@ -15,7 +15,7 @@ Specifies that the compiler should compile without a reference to the Visual Bas
   
 ## Syntax  
   
-```  
+```console  
 -vbruntime:{ - | + | * | path }  
 ```  
   
@@ -44,42 +44,42 @@ Specifies that the compiler should compile without a reference to the Visual Bas
   
  The following runtime members are embedded:  
   
--   <xref:Microsoft.VisualBasic.CompilerServices.Conversions> class  
+- <xref:Microsoft.VisualBasic.CompilerServices.Conversions> class  
   
--   <xref:Microsoft.VisualBasic.Strings.AscW%28System.Char%29> method  
+- <xref:Microsoft.VisualBasic.Strings.AscW%28System.Char%29> method  
   
--   <xref:Microsoft.VisualBasic.Strings.AscW%28System.String%29> method  
+- <xref:Microsoft.VisualBasic.Strings.AscW%28System.String%29> method  
   
--   <xref:Microsoft.VisualBasic.Strings.ChrW%28System.Int32%29> method  
+- <xref:Microsoft.VisualBasic.Strings.ChrW%28System.Int32%29> method  
   
--   <xref:Microsoft.VisualBasic.Constants.vbBack> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbBack> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbCr> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbCr> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbCrLf> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbCrLf> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbFormFeed> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbFormFeed> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbLf> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbLf> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbNewLine> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbNewLine> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbNullChar> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbNullChar> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbNullString> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbNullString> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbTab> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbTab> constant  
   
--   <xref:Microsoft.VisualBasic.Constants.vbVerticalTab> constant  
+- <xref:Microsoft.VisualBasic.Constants.vbVerticalTab> constant  
   
--   Some objects of the `My` type  
+- Some objects of the `My` type  
   
  If you compile using the `-vbruntime*` option and your code references a member from the Visual Basic Runtime Library that is not embedded with the core functionality, the compiler returns an error that indicates that the member is not available.  
   
 ## Referencing a specified library  
  You can use the `path` argument to compile with a reference to a custom runtime library instead of the default Visual Basic Runtime Library.  
   
- If the value for the `path` argument is a fully qualified path to a DLL, the compiler will use that file as the runtime library. If the value for the `path` argument is not a fully qualified path to a DLL, the Visual Basic compiler will search for the identified DLL in the current folder first. It will then search in the path that you have specified by using the [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md) compiler option. If the `-sdkpath` compiler option is not used, the compiler will search for the identified DLL in the .NET Framework folder (`%systemroot%\Microsoft.NET\Framework\versionNumber`).  
+ If the value for the `path` argument is a fully qualified path to a DLL, the compiler will use that file as the runtime library. If the value for the `path` argument is not a fully qualified path to a DLL, the Visual Basic compiler will search for the identified DLL in the current folder first. It will then search in the path that you have specified by using the [-sdkpath](sdkpath.md) compiler option. If the `-sdkpath` compiler option is not used, the compiler will search for the identified DLL in the .NET Framework folder (`%systemroot%\Microsoft.NET\Framework\versionNumber`).  
   
 ## Example  
  The following example shows how to use the `-vbruntime` option to compile with a reference to a custom library.  
@@ -88,8 +88,9 @@ Specifies that the compiler should compile without a reference to the Visual Bas
 vbc -vbruntime:C:\VBLibraries\CustomVBLibrary.dll  
 ```  
   
-## See Also  
- [Visual Basic Core – New compilation mode in Visual Studio 2010 SP1](https://blogs.msdn.com/b/vbteam/archive/2011/01/10/vb-core-new-compilation-mode-in-visual-studio-2010-sp1.aspx)  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)  
- [-sdkpath](../../../visual-basic/reference/command-line-compiler/sdkpath.md)
+## See also
+
+- [Visual Basic Core – New compilation mode in Visual Studio 2010 SP1](https://devblogs.microsoft.com/vbteam/vb-core-new-compilation-mode-in-visual-studio-2010-sp1/)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)
+- [-sdkpath](sdkpath.md)

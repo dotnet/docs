@@ -15,28 +15,26 @@ helpviewer_keywords:
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMAlloc::Alloc Method
 Requests that the host allocate the specified amount of memory from the heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Alloc (  
-    [in] SIZE_T  cbSize,   
-    [in] EMemoryCriticalLevel dwCriticalLevel,   
+    [in] SIZE_T  cbSize,
+    [in] EMemoryCriticalLevel dwCriticalLevel,
     [out] void** ppMem  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbSize`  
  [in] The size, in bytes, of the current memory allocation request.  
   
  `dwCriticalLevel`  
- [in] One of the [EMemoryCriticalLevel](../../../../docs/framework/unmanaged-api/hosting/ememorycriticallevel-enumeration.md) values, indicating the impact of an allocation failure.  
+ [in] One of the [EMemoryCriticalLevel](ememorycriticallevel-enumeration.md) values, indicating the impact of an allocation failure.  
   
  `ppMem`  
  [out] A pointer to the allocated memory, or null if the request could not be completed.  
@@ -54,10 +52,10 @@ HRESULT Alloc (
 |E_OUTOFMEMORY|Not enough memory was available to complete the allocation request.|  
   
 ## Remarks  
- The CLR gets an interface pointer to an `IHostMalloc` instance by calling the [IHostMemoryManager::CreateMalloc](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-createmalloc-method.md) method.  
+ The CLR gets an interface pointer to an `IHostMalloc` instance by calling the [IHostMemoryManager::CreateMalloc](ihostmemorymanager-createmalloc-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -65,6 +63,7 @@ HRESULT Alloc (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)  
- [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)
+## See also
+
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)
+- [IHostMalloc Interface](ihostmalloc-interface.md)

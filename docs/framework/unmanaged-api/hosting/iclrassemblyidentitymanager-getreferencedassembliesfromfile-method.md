@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: eed63d31-d977-4c7d-9443-f9d37a2a7d81
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyIdentityManager::GetReferencedAssembliesFromFile Method
-Gets an [ICLRReferenceAssemblyEnum](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-interface.md) instance that contains a list of assemblies referenced by the assembly at the specified file path.  
+Gets an [ICLRReferenceAssemblyEnum](iclrreferenceassemblyenum-interface.md) instance that contains a list of assemblies referenced by the assembly at the specified file path.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReferencedAssembliesFromFile (  
     [in]  LPCWSTR pwzFilePath,  
     [in]  DWORD   dwFlags,  
@@ -32,7 +30,7 @@ HRESULT GetReferencedAssembliesFromFile (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzFilePath`  
  [in] The path to the assembly to be evaluated.  
   
@@ -40,7 +38,7 @@ HRESULT GetReferencedAssembliesFromFile (
  [in] Provided for future extensibility. CLR_ASSEMBLY_IDENTITY_FLAGS_DEFAULT is the only value that the current version of the common language runtime (CLR) supports.  
   
  `pExcludeAssembliesList`  
- [in] A pointer to an [ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md) object that represents assemblies that should be excluded from `ppReferenceEnum`.  
+ [in] A pointer to an [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) object that represents assemblies that should be excluded from `ppReferenceEnum`.  
   
  `ppReferenceEnum`  
  [out] A pointer to the address of an `ICLRReferenceAssemblyEnum` object that contains assembly identity data for the assemblies referenced by the assembly at `pwzFilePath`, excluding the assemblies represented by `pExcludeAssembliesList`.  
@@ -60,7 +58,7 @@ HRESULT GetReferencedAssembliesFromFile (
  The caller can choose to exclude a set of known assembly references from the returned list. This set is defined by the `pExcludeAssembliesList` parameter.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -68,7 +66,8 @@ HRESULT GetReferencedAssembliesFromFile (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)  
- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)  
- [ICLRReferenceAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-interface.md)
+## See also
+
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)
+- [ICLRReferenceAssemblyEnum Interface](iclrreferenceassemblyenum-interface.md)

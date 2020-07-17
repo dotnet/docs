@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Customers and Orders in a Namespace1"
+title: "Sample XML File: Customers and Orders in a Namespace"
 ms.date: 07/20/2015
 ms.assetid: 9fe81dbb-e51f-4e80-a49b-e34ac0b1f980
 ---
@@ -424,5 +424,6 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
 </Root>  
 ```  
   
-## See Also  
- [Sample XML Documents (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)
+## See also
+
+- [Sample XML Documents (LINQ to XML)](sample-xml-documents-linq-to-xml.md)

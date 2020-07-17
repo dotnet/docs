@@ -1,5 +1,5 @@
 ---
-title: "&#39;&lt;membername&gt;&#39; is ambiguous across the inherited interfaces &#39;&lt;interfacename1&gt;&#39; and &#39;&lt;interfacename2&gt;&#39;"
+title: "'<membername>' is ambiguous across the inherited interfaces '<interfacename1>' and '<interfacename2>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc30685"
@@ -8,16 +8,16 @@ helpviewer_keywords:
   - "BC30685"
 ms.assetid: 756add7a-23d5-4b4f-a48d-8297d6459c73
 ---
-# &#39;&lt;membername&gt;&#39; is ambiguous across the inherited interfaces &#39;&lt;interfacename1&gt;&#39; and &#39;&lt;interfacename2&gt;&#39;
+# '\<membername>' is ambiguous across the inherited interfaces '\<interfacename1>' and '\<interfacename2>'
 The interface inherits two or more members with the same name from multiple interfaces.  
   
  **Error ID:** BC30685  
   
 ## To correct this error  
   
--   Cast the value to the base interface that you want to use; for example:  
+- Cast the value to the base interface that you want to use; for example:  
   
-    ```  
+    ```vb  
     Interface Left  
         Sub MySub()  
     End Interface  
@@ -40,5 +40,6 @@ The interface inherits two or more members with the same name from multiple inte
     End Module  
     ```  
   
-## See Also  
- [Interfaces](../../../visual-basic/programming-guide/language-features/interfaces/index.md)
+## See also
+
+- [Interfaces](../../programming-guide/language-features/interfaces/index.md)

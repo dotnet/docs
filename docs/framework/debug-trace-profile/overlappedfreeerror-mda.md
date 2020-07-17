@@ -1,5 +1,6 @@
 ---
 title: "overlappedFreeError MDA"
+description: Review the overlappedFreeError managed debugging assistant (MDA) in .NET, which may activate on access violations or corruption of the garbage-collected heap.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "OverlappedFreeError MDA"
@@ -9,8 +10,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), overlapped structures"
   - "freeing overlapped structures"
 ms.assetid: b6ab2d48-6eee-4bab-97a3-046b3b0a5470
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # overlappedFreeError MDA
 The `overlappedFreeError` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Overlapped.Free%28System.Threading.NativeOverlapped%2A%29?displayProperty=nameWithType> method is called before the overlapped operation has completed.  
@@ -44,7 +43,8 @@ The `overlappedFreeError` managed debugging assistant (MDA) is activated when th
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

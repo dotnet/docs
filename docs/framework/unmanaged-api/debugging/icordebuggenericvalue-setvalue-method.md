@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: ed4c6458-0435-44fc-8e78-8ba00be362f2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugGenericValue::SetValue Method
 Copies a new value from the specified buffer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetValue (  
     [in] void      *pFrom  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrom`  
  [in] A pointer to the buffer from which to copy the value.  
   
@@ -37,7 +35,7 @@ HRESULT SetValue (
  For reference types, the value is the reference, not the content.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

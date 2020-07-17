@@ -1,16 +1,17 @@
 ---
-title: "&lt;claimType&gt;"
+title: "<claimType>"
 ms.date: "03/30/2017"
 ms.assetid: d17b5831-9a2c-45c4-b0d1-68f48e72e861
 author: "BrucePerlerMS"
 ---
-# &lt;claimType&gt;
+# \<claimType>
 Specifies a single optional or required claim for incoming security tokens.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<claimTypeRequired>  
-\<claimType>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<claimTypeRequired>**](claimtyperequired.md)\  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<claimType>**  
   
 ## Syntax  
   
@@ -42,4 +43,4 @@ Specifies a single optional or required claim for incoming security tokens.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<claimTypeRequired>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/claimtyperequired.md)|Specifies the set of required claims for incoming security tokens.|
+|[\<claimTypeRequired>](claimtyperequired.md)|Specifies the set of required claims for incoming security tokens.|

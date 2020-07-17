@@ -10,14 +10,14 @@ Creates another raw input device enumerator with the same state as the current e
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone( [out] IEnumRAWINPUTDEVICE **ppenum);  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppenum`  
   
- [out] Address of output variable that receives the [IEnumRAWINPUTDEVICE](../../../../docs/framework/wpf/app-development/ienumrawinputdevice.md) interface pointer. If the method is unsuccessful, the value of this output variable is undefined.  
+ [out] Address of output variable that receives the [IEnumRAWINPUTDEVICE](ienumrawinputdevice.md) interface pointer. If the method is unsuccessful, the value of this output variable is undefined.  
   
 ## Property Value/Return Value  
  HRESULT: This method supports the standard return values E_INVALIDARG, E_OUTOFMEMORY, and E_UNEXPECTED.  

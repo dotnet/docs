@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: 90f5e791-038b-4b05-9bc5-8d4367d0173e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::CreateLogicalThreadState Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateLogicalThreadState ( );  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,5 +34,6 @@ HRESULT CreateLogicalThreadState ( );
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)

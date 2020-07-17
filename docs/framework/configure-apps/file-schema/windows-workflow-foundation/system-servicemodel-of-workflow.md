@@ -1,11 +1,14 @@
 ---
-title: "&lt;system.serviceModel&gt; of workflow"
+title: "<system.serviceModel> of workflow"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: 6a8eb2bf-f925-40e1-ba5c-a49b1d3a3ac6
 ---
-# &lt;system.serviceModel&gt; of workflow
+# \<system.serviceModel> of workflow
 This configuration section contains all the workflow configuration elements.  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;**\<system.ServiceModel>**  
   
 ## Syntax  
   
@@ -16,29 +19,29 @@ This configuration section contains all the workflow configuration elements.
     <behavior name="String">  
       <bufferReceive maxPendingMessagesPerChannel="Integer" />  
       <etwTracking profileName="String" />  
-     <sendMessageChannelCache allowUnsafeCaching="Boolean" >          
+     <sendMessageChannelCache allowUnsafeCaching="Boolean" >
         <channelSettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />  
         <factorySettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />  
      </sendMessageChannelCache>  
-      <sqlWorkflowInstanceStore   
-          connectionStringName="String"   
-          honstLockRenewalPeriod="TimeSpan"  
+      <sqlWorkflowInstanceStore
+          connectionStringName="String"
+          hostLockRenewalPeriod="TimeSpan"  
           instanceCompletionAction="DeleteNothing/DeleteAll"  
           instanceEncodingAction="None/GZip"  
           instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry"  
           runnableInstancesDetectionPeriod="TimeSpan" />  
       <workflowIdle timeToPersist="TimeSpan"  
           timeToUnload="TimeSpan" />  
-      <workflowUnhandledExceptionaction="Abandon/AbandonAndSuspend/Cancel/Terminate" />  
+      <workflowUnhandledExceptionAction="Abandon/AbandonAndSuspend/Cancel/Terminate" />  
     </behavior>  
     </serviceBehaviors>  
   </behaviors>  
-  <tracking>    
-     <participants>   
-      <add name="String"   
+  <tracking>
+     <participants>
+      <add name="String"
            profileName="String"  
-           type="String" />   
-     </participants>   
+           type="String" />
+     </participants>
     <trackingProfile name="String">  
       <workflow activityDefinitionId="String">  
           <activityScheduledQueries>  
@@ -79,7 +82,7 @@ This configuration section contains all the workflow configuration elements.
           </workflowInstanceQuery>  
         </workflowInstanceQueries>  
       </workflow>  
-    </trackingProfile>          
+    </trackingProfile>
    </profiles>  
   </tracking>  
 </system.ServiceModel>  
@@ -95,11 +98,11 @@ This configuration section contains all the workflow configuration elements.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behaviors-of-workflow.md)|This section defines the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by services. Each behavior element is identified by its unique **name** attribute.|  
-|[\<tracking>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/tracking.md)|Represents a configuration section for defining tracking settings for a workflow service.<br /><br /> For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../../../docs/framework/windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../../../docs/framework/windows-workflow-foundation/configuring-tracking-for-a-workflow.md).|  
+|[\<behaviors>](behaviors-of-workflow.md)|This section defines the **serviceBehaviors** collection.  Each element in the collection defines behavior elements consumed by services. Each behavior element is identified by its unique **name** attribute.|  
+|[\<tracking>](tracking.md)|Represents a configuration section for defining tracking settings for a workflow service.<br /><br /> For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md).|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|\<configuration>|The root element for all configuration elements in a .NET configuration file.|
+|[\<configuration>](../configuration-element.md)|The root element for all configuration elements in a .NET configuration file.|

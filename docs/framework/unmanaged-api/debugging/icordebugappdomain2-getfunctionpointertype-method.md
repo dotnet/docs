@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0aba6096-5b38-435c-a72a-86d35db4daef
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain2::GetFunctionPointerType Method
 Gets a pointer to a function that has a given signature.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionPointerType (  
     [in] ULONG32                             nTypeArgs,  
     [in, size_is(nTypeArgs)] ICorDebugType   *ppTypeArgs[],  
@@ -31,7 +29,7 @@ HRESULT GetFunctionPointerType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `nTypeArgs`  
  [in] The number of type arguments for the function.  
   
@@ -42,7 +40,7 @@ HRESULT GetFunctionPointerType (
  [out] A pointer to the address of an `ICorDebugType` object that represents the pointer to the function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

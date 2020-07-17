@@ -15,27 +15,25 @@ helpviewer_keywords:
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateCrstWithSpinCount Method
 Creates a critical section object with spin count for synchronization.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCrstWithSpinCount (  
     [in]  DWORD dwSpinCount,  
     [out] IHostCrst** ppCrst  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwSpinCount`  
  [in] Specifies the spin count for the critical section object.  
   
  `ppCrst`  
- [out] A pointer to the address of an [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance, or null if the critical section could not be created.  
+ [out] A pointer to the address of an [IHostCrst](ihostcrst-interface.md) instance, or null if the critical section could not be created.  
   
 ## Return Value  
   
@@ -53,7 +51,7 @@ HRESULT CreateCrstWithSpinCount (
  A spin count is used only on a multi-processor system. The spin count specifies the number of times a calling thread must spin before it performs a wait operation on a semaphore that is associated with an unavailable critical section. If the critical section becomes free during the spin operation, the calling thread avoids the wait operation. `CreateCrstWithSpinCount` mirrors the Win32 `InitializeCriticalSectionAndSpinCount` function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -61,7 +59,8 @@ HRESULT CreateCrstWithSpinCount (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostSemaphore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+## See also
+
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostSemaphore Interface](ihostsemaphore-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

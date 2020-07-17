@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a LINQ to XML Axis Method (Visual Basic)"
+title: "How to: Write a LINQ to XML Axis Method"
 ms.date: 07/20/2015
 ms.assetid: b676f025-a24c-4076-8713-aa809b2b8ce0
 ---
@@ -9,7 +9,7 @@ You can write your own axis methods to retrieve collections from an XML tree. On
 ## Example  
  The following example uses two extension methods. The first extension method, `GetXPath`, operates on <xref:System.Xml.Linq.XObject>, and returns an XPath expression that when evaluated will return the node or attribute. The second extension method, `Find`, operates on <xref:System.Xml.Linq.XElement>. It returns a collection of <xref:System.Xml.Linq.XAttribute> objects and <xref:System.Xml.Linq.XElement> objects that contain some specified text.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
 Imports System.Runtime.CompilerServices  
@@ -198,7 +198,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 /PurchaseOrders/PurchaseOrder[1]/@OrderDate  
 1999-10-20  
 /PurchaseOrders/PurchaseOrder[1]/Items/Item[2]/ShipDate  
@@ -209,5 +209,6 @@ End Module
 1999-10-22  
 ```  
   
-## See Also  
- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## See also
+
+- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)

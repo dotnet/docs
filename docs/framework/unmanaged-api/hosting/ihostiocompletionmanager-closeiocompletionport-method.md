@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: e86ad7be-3758-498a-a972-5522d69dfbb3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::CloseIoCompletionPort Method
-Requests that the host close a port that was opened through an earlier call to [CreateIoCompletionPort](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-createiocompletionport-method.md).  
+Requests that the host close a port that was opened through an earlier call to [CreateIoCompletionPort](ihostiocompletionmanager-createiocompletionport-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseIoCompletionPort (  
     [in] HANDLE hPort  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hPort`  
  [in] The handle of the port to close.  
   
@@ -49,7 +47,7 @@ HRESULT CloseIoCompletionPort (
  `hPort` must be a handle to a port that was created by an earlier call to `CreateIoCompletionPort`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,6 +55,7 @@ HRESULT CloseIoCompletionPort (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)  
- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+## See also
+
+- [ICLRIoCompletionManager Interface](iclriocompletionmanager-interface.md)
+- [IHostIoCompletionManager Interface](ihostiocompletionmanager-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "Serializing with an XML Declaration (Visual Basic)"
+title: "Serializing with an XML Declaration"
 ms.date: 07/20/2015
 ms.assetid: 8726f79e-2bb0-4ba0-969d-197cca591647
 ---
@@ -55,5 +55,6 @@ Console.WriteLine(sb.ToString())
 <Root><Child>child content</Child></Root>  
 ```  
   
-## See Also  
- [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md)
+## See also
+
+- [Serializing XML Trees (Visual Basic)](serializing-xml-trees.md)

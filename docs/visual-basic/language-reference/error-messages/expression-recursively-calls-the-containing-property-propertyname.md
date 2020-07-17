@@ -1,5 +1,5 @@
 ---
-title: "Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;"
+title: "Expression recursively calls the containing property '<propertyname>'"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc42026"
@@ -8,18 +8,18 @@ helpviewer_keywords:
   - "BC42026"
 ms.assetid: 4fde9db6-3bf3-48dc-8e05-981bf08969da
 ---
-# Expression recursively calls the containing property &#39;&lt;propertyname&gt;&#39;
+# Expression recursively calls the containing property '\<propertyname>'
 A statement in the `Set` procedure of a property definition stores a value into the name of the property.  
   
  The recommended approach to holding the value of a property is to define a `Private` variable in the property's container and use it in both the `Get` and `Set` procedures. The `Set` procedure should then store the incoming value in this `Private` variable.  
   
- The `Get` procedure behaves like a `Function` procedure, so it can assign a value to the property name and return control by encountering the `End Get` statement. The recommended approach, however, is to include the `Private` variable as the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
+ The `Get` procedure behaves like a `Function` procedure, so it can assign a value to the property name and return control by encountering the `End Get` statement. The recommended approach, however, is to include the `Private` variable as the value in a [Return Statement](../statements/return-statement.md).  
   
  The `Set` procedure behaves like a `Sub` procedure, which does not return a value. Therefore, the procedure or property name has no special meaning within a `Set` procedure, and you cannot store a value into it.  
   
  The following example illustrates the approach that can cause this error, followed by the recommended approach.  
   
-```  
+```vb  
 Public Class illustrateProperties  
 ' The code in the following property causes this error.  
     Public Property badProp() As Char  
@@ -55,9 +55,10 @@ End Class
   
 ## To correct this error  
   
--   Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
+- Rewrite the property definition to use the recommended approach as illustrated in the preceding example.  
   
-## See Also  
- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
+## See also
+
+- [Property Procedures](../../programming-guide/language-features/procedures/property-procedures.md)
+- [Property Statement](../statements/property-statement.md)
+- [Set Statement](../statements/set-statement.md)

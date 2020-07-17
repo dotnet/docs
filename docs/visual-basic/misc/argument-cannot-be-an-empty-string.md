@@ -8,7 +8,8 @@ An argument has been defined as an empty string ("").
   
 ## To correct this error  
   
--   Supply a valid value for the argument.  
+- Supply a valid value for the argument.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../programming-guide/language-features/error-types.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_Get function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_Get function
 Gets the specified named qualifier.  
@@ -24,36 +22,36 @@ Gets the specified named qualifier.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Get (
-   [in] int                  vFunc, 
-   [in] IWbemQualifierSet*   ptr, 
+   [in] int                  vFunc,
+   [in] IWbemQualifierSet*   ptr,
    [in] LPCWSTR              wszName,
    [in] LONG                 lFlags,
    [out] VARIANT*            pVal,
-   [out] LONG*               plFlavor                 
-); 
+   [out] LONG*               plFlavor
+);
 ```  
 
 ## Parameters
 
-`vFunc`   
+`vFunc`
 [in] This parameter is unused.
 
-`ptr`   
+`ptr`
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`wszName`   
+`wszName`
 [in] The name of the qualifier whose value is requested.
 
-`lFlags`   
+`lFlags`
 [in] Reserved. This parameter must be 0.
 
-`pVal`   
+`pVal`
 [out] When successful, the correct type and value for the qualifier. If the function fails, the `VARIANT` pointed to by `pVal` is not modified. If this parameter is `null`, the parameter is ignored.
 
-`plFlavor`   
-[out] A pointer to a LONG that receives the qualifier flavor bits for the requested qualifier. If flavor information is not desired, this parameter can be `null`. 
+`plFlavor`
+[out] A pointer to a LONG that receives the qualifier flavor bits for the requested qualifier. If flavor information is not desired, this parameter can be `null`.
 
 ## Return value
 
@@ -70,11 +68,12 @@ The following values returned by this function are defined in the *WbemCli.h* he
 This function wraps a call to the [IWbemQualifierSet::Get](/windows/desktop/api/wbemcli/nf-wbemcli-iwbemqualifierset-get) method.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

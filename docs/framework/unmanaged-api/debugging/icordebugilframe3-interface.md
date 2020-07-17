@@ -10,8 +10,6 @@ api_type:
 ms.assetid: 15212cb5-93d4-4025-bec9-d4b9919eb1fe
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame3 Interface
 Provides a method that encapsulates the return value of a function. `ICorDebugILFrame3` is a logical extension of the ICorDebugILFrame and ICorDebugILFrame2 interfaces.  
@@ -20,15 +18,15 @@ Provides a method that encapsulates the return value of a function. `ICorDebugIL
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetReturnValueForILOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md)|Gets an ICorDebugValue object that encapsulates the return value of a function.|  
+|[GetReturnValueForILOffset Method](icordebugilframe3-getreturnvalueforiloffset-method.md)|Gets an ICorDebugValue object that encapsulates the return value of a function.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -36,6 +34,7 @@ Provides a method that encapsulates the return value of a function. `ICorDebugIL
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v451plus](../../../../includes/net-current-v451plus-md.md)]  
   
-## See Also  
- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [ICorDebugCode3 Interface](icordebugcode3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

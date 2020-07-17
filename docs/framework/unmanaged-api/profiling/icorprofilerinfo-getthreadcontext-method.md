@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 79446216-4b8b-484c-8fe3-e87dbf9df2fd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetThreadContext Method
 Gets the context identity currently associated with the specified thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in]  ThreadID  threadId,  
     [out] ContextID *pContextId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread.  
   
@@ -37,7 +35,7 @@ HRESULT GetThreadContext(
  [out] A pointer to the context ID currently associated with the specified thread. If the thread has no context currently associated with it, this function will return CORPROF_E_DATAINCOMPLETE.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -45,5 +43,6 @@ HRESULT GetThreadContext(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+## See also
+
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

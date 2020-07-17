@@ -1,13 +1,11 @@
 ---
-title: "WPF community feedback"
+title: Community resources
 ms.date: "03/01/2018"
 helpviewer_keywords: 
   - "community resources [WPF]"
   - "forums [WPF]"
   - "bug descriptions [WPF]"
 ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
-author: mairaw
-ms.author: mairaw
 ---
 # WPF community feedback
 
@@ -18,7 +16,7 @@ Microsoft exposes a variety of community resources for you to learn about, discu
 
 ## Forums
 
-The [WPF forum](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=wpf) is the primary community resource for discussing and resolving issues. Forums facilitate discussion and problem resolution by offering a comprehensive set of supporting features that include:
+The [WPF forum](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=wpf) is the primary community resource for discussing and resolving issues. Forums facilitate discussion and problem resolution by offering a comprehensive set of supporting features that include:
 
 - Searching.
 - Discussion tracking.
@@ -114,4 +112,4 @@ Ordinarily, crash and data loss scenarios are high impact and, therefore, the ea
 
 ## See also
 
-[How to report a problem with Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)

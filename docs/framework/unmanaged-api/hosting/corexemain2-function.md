@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 72ea68b4-689f-4733-9416-9664b75e8892
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # _CorExeMain2 Function
 Executes the entry point in the specified memory-mapped code. This function is called by the operating system loader.  
   
 ## Syntax  
   
-```  
+```cpp  
 __int32 STDMETHODCALLTYPE _CorExeMain2 (  
    [in] PBYTE           pUnmappedPE,  
    [in] DWORD           cUnmappedPE,  
@@ -32,7 +30,7 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pUnmappedPE`  
  [in] A pointer to the memory-mapped code.  
   
@@ -49,7 +47,7 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
  [in] Command-line parameters, if any.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -57,5 +55,6 @@ __int32 STDMETHODCALLTYPE _CorExeMain2 (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+## See also
+
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 7115e920-aaff-440a-824e-39497139c6f6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager::GetDacl Method
 This method is not implemented.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDacl (  
     [out] PACL* ppacl  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppacl`  
  [out] An interface pointer to the Access Control List (ACL).  
   
@@ -40,7 +38,7 @@ HRESULT GetDacl (
 |E_NOTIMPL|The method is not implemented.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -48,8 +46,9 @@ HRESULT GetDacl (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)  
- [SetDacl Method](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-setdacl-method.md)  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## See also
+
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRDebugManager Interface](iclrdebugmanager-interface.md)
+- [SetDacl Method](iclrdebugmanager-setdacl-method.md)
+- [IHostControl Interface](ihostcontrol-interface.md)

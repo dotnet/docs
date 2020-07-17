@@ -15,27 +15,27 @@ This document covers best practices for workflow design and configuration relate
   
  If your workflow is busy for a long time, we recommend that you persist the workflow instance regularly throughout its busy period. You can do this by adding <xref:System.Activities.Statements.Persist> activities throughout the sequence of activities that keep the workflow instance busy. In this manner, application domain recycling, host failures, or computer failures do not cause the system to be rolled back to the start of the busy period. Be aware that adding <xref:System.Activities.Statements.Persist> activities to your workflow could lead to a degradation of performance.  
   
- Windows Server App Fabric greatly simplifies the configuration and use of persistence. For more information, see [Windows Server App Fabric Persistence](https://go.microsoft.com/fwlink/?LinkID=201200&clcid=0x409)  
+ Windows Server App Fabric greatly simplifies the configuration and use of persistence. For more information, see [Windows Server App Fabric Persistence](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10))  
   
 ## Configuration of Scalability Parameters  
  Scalability and performance requirements determine the settings of the following parameters:  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A>  
+- <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A>  
   
--   <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A>  
+- <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A>  
   
--   <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction%2A>  
+- <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.InstanceLockedExceptionAction%2A>  
   
  These parameters should be set as follows, according to the current scenario.  
   
 ### Scenario: A Small Number of Workflow Instances That Require Optimal Response Time  
  In this scenario, all workflow instances should remain loaded when they become idle. Set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToUnload%2A> to a large value. The use of this setting prevents a workflow instance from moving between computers. Use this setting only if one or more of the following are true:  
   
--   A workflow instance receives a single message throughout its lifetime.  
+- A workflow instance receives a single message throughout its lifetime.  
   
--   All workflow instances run on a single computer  
+- All workflow instances run on a single computer  
   
--   All messages that are received by a workflow instance are received by the same computer.  
+- All messages that are received by a workflow instance are received by the same computer.  
   
  Use <xref:System.Activities.Statements.Persist> activities or set <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior.TimeToPersist%2A> to 0 to enable recovery of your workflow instance after service host or computer failures.  
   

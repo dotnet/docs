@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: aeb0fc63-9eff-4384-9284-cb9900572d74
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::IsValidToken Method
 Gets a value indicating whether the specified token holds a valid reference to a code object.  
   
 ## Syntax  
   
-```  
+```cpp  
 BOOL IsValidToken (  
    [in] mdToken     tk  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to check the reference validity for.  
   
@@ -37,7 +35,7 @@ BOOL IsValidToken (
  `true` if `tk` is a valid metadata token within the current scope. Otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -45,6 +43,7 @@ BOOL IsValidToken (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

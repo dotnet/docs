@@ -13,11 +13,8 @@ The <xref:System.Windows.Controls.ComboBox> control presents users with a list o
   
  The following illustration shows a <xref:System.Windows.Controls.ComboBox> in different states.  
   
- ![Combo boxes in default and pressed states](../../../../docs/framework/wpf/controls/media/ss-ctl-combobox.gif "SS_CTL_combobox")  
+ ![Combo boxes in default and pressed states](./media/ss-ctl-combobox.gif "SS_CTL_combobox")  
 Collapsed and expanded  
-  
-## In This Section  
- [How to: Get a ComboBoxItem](https://msdn.microsoft.com/library/8a0d2622-64b6-41fc-bf80-9669a1eacb53)  
   
 ## Reference  
  <xref:System.Windows.Controls.ComboBox>

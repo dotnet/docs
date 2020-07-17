@@ -2,11 +2,9 @@
 title: "ISymUnmanagedAsyncMethod::GetAsyncStepInfoCount Method"
 ms.date: "03/30/2017"
 ms.assetid: 32a4e084-09b2-4946-a4a7-19a1fed9f7cc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedAsyncMethod::GetAsyncStepInfoCount Method
-See [DefineAsyncStepInfo Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).  
+See [DefineAsyncStepInfo Method](isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).  
   
 ## Syntax  
   
@@ -14,7 +12,7 @@ See [DefineAsyncStepInfo Method](../../../../docs/framework/unmanaged-api/diagno
 HRESULT GetAsyncStepInfoCount(    [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -26,5 +24,6 @@ HRESULT GetAsyncStepInfoCount(    [out, retval] ULONG32* pRetVal);
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+## See also
+
+- [ISymUnmanagedAsyncMethod Interface](isymunmanagedasyncmethod-interface.md)

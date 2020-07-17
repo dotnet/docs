@@ -1,1 +1,0 @@
-        Dim LBox As System.Windows.Forms.ListBox

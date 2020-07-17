@@ -1,5 +1,5 @@
 ---
-title: "Directories and Files Summary (Visual Basic)"
+title: "Directories and Files Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic]"
@@ -27,10 +27,11 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Return a file's name or volume label.|<xref:Microsoft.VisualBasic.FileSystem.Dir%2A>|  
 |Set attribute information for a file.|<xref:Microsoft.VisualBasic.FileSystem.SetAttr%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)  
- [Reading from Files](../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
- [Writing to Files](../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)  
- [Creating, Deleting, and Moving Files and Directories](../../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)  
- [Parsing Text Files with the TextFieldParser Object](../../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+## See also
+
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)
+- [Reading from Files](../../developing-apps/programming/drives-directories-files/reading-from-files.md)
+- [Writing to Files](../../developing-apps/programming/drives-directories-files/writing-to-files.md)
+- [Creating, Deleting, and Moving Files and Directories](../../developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+- [Parsing Text Files with the TextFieldParser Object](../../developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)

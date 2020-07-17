@@ -1,5 +1,6 @@
 ---
 title: "invalidVariant MDA"
+description: Review the invalidVariant managed debugging assistant, which is invoked if an invalid VARIANT is encountered in a call from native/unmanaged to managed code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), invalid variant"
@@ -8,8 +9,6 @@ helpviewer_keywords:
   - "invalid VARIANT types"
   - "managed debugging assistants (MDAs), invalid variant"
 ms.assetid: d273e070-d1b1-4a53-a9c7-7af837b04a3d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # invalidVariant MDA
 The `invalidVariant` managed debugging assistant (MDA) is activated when an invalid `VARIANT` structure is encountered during a call from native or unmanaged code to managed code.  
@@ -39,7 +38,8 @@ The `invalidVariant` managed debugging assistant (MDA) is activated when an inva
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

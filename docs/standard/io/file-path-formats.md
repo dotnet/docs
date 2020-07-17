@@ -1,23 +1,19 @@
 ---
 title: "File path formats on Windows systems"
-ms.date: "06/28/2018"
+description: In this article, learn about file path formats on Windows systems, such as traditional DOS paths, DOS device paths, and universal naming convention (UNC) paths.
+ms.date: "06/06/2019"
 ms.technology: dotnet-standard
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "I/O, long paths"
   - "long paths"
   - "path formats, Windows"
-dev_langs: 
-  - "csharp"
-  - "vb"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # File path formats on Windows systems
 
-Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file system APIs](https://msdn.microsoft.com/library/windows/desktop/aa364407(v=vs.85).aspx). This topic discusses the formats for file paths that you can use on Windows systems.
+Members of many of the types in the <xref:System.IO> namespace include a `path` parameter that lets you specify an absolute or relative path to a file system resource. This path is then passed to [Windows file system APIs](/windows/desktop/fileio/file-systems). This topic discusses the formats for file paths that you can use on Windows systems.
 
 ## Traditional DOS paths
 
@@ -27,7 +23,7 @@ A standard DOS path can consist of three components:
 - A directory name. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates subdirectories within the nested directory hierarchy.
 - An optional filename. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates the file path and the filename.
 
-If all three components are present, the path is absolute. If no volume or drive letter is specified and the directory names begins with the [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>), the path is relative from the root of the current drive. Otherwise, the path is relative to the current directory. The following table shows some possible directory and file paths.
+If all three components are present, the path is absolute. If no volume or drive letter is specified and the directory name begins with the [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>), the path is relative from the root of the current drive. Otherwise, the path is relative to the current directory. The following table shows some possible directory and file paths.
 
 |Path  |Description  |
 | -- | -- |
@@ -43,10 +39,12 @@ If all three components are present, the path is absolute. If no volume or drive
 
 You can determine whether a file path is fully qualified (that is, it the path is independent of the current directory and does not change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWthType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
 
-The following example illustrates the difference between absolute and relative paths. It assumes that the directory D:\FY2018\ exists, and that you haven't set any curent directory for D:\ from the command prompt before running the example.
+The following example illustrates the difference between absolute and relative paths. It assumes that the directory D:\FY2018\ exists, and that you haven't set any current directory for D:\ from the command prompt before running the example.
 
 [!code-csharp[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/cs/paths.cs)]
 [!code-vb[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/vb/paths.vb)]
+
+[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 
 ## UNC paths
 
@@ -70,8 +68,13 @@ UNC paths must always be fully qualified. They can include relative directory se
 
 The Windows operating system has a unified object model that points to all resources, including files. These object paths are accessible from the console window and are exposed to the Win32 layer through a special folder of symbolic links that legacy DOS and UNC paths are mapped to. This special folder is accessed via the DOS device path syntax, which is one of:
 
-`\\.\C:\Test\Foo.txt`  
+`\\.\C:\Test\Foo.txt`
 `\\?\C:\Test\Foo.txt`
+
+In addition to identifying a drive by its drive letter, you can identify a volume by using its volume GUID. This takes the form:
+
+`\\.\Volume{b75e2c83-0000-0000-0000-602f00000000}\Test\Foo.txt`
+`\\?\Volume{b75e2c83-0000-0000-0000-602f00000000}\Test\Foo.txt`
 
 > [!NOTE]
 > DOS device path syntax is supported on .NET implementations running on Windows starting with .NET Core 1.1 and .NET Framework 4.6.2.
@@ -82,17 +85,17 @@ The DOS device path consists of the following components:
 
    > [!NOTE]
    > The `\\?\` is supported in all versions of .NET Core and in the .NET Framework starting with version 4.6.2.
-   
-- A symbolic link to the "real" device object (C: in this case).
+
+- A symbolic link to the "real" device object (C: in the case of a drive name, or Volume{b75e2c83-0000-0000-0000-602f00000000} in the case of a volume GUID).
 
    The first segment of the DOS device path after the device path specifier identifies the volume or drive. (For example, `\\?\C:\` and `\\.\BootPartition\`.)
 
    There is a specific link for UNCs that is called, not surprisingly, `UNC`. For example:
 
-  `\\.\UNC\Server\Share\Test\Foo.txt`  
+  `\\.\UNC\Server\Share\Test\Foo.txt`
   `\\?\UNC\Server\Share\Test\Foo.txt`
 
-    For device UNCs, the server/share portion is forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume. 
+    For device UNCs, the server/share portion forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume.
 
 DOS device paths are fully qualified by definition. Relative directory segments (`.` and `..`) are not allowed. Current directories never enter into their usage.
 
@@ -120,7 +123,7 @@ This normalization happens implicitly, but you can do it explicitly by calling t
 The first step in path normalization is identifying the type of path. Paths fall into one of a few categories:
 
 - They are device paths; that is, they begin with two separators and a question mark or period (`\\?` or `\\.`).
-- They are UNC paths; that is, they begin with two separators without a question mark or period. 
+- They are UNC paths; that is, they begin with two separators without a question mark or period.
 - They are fully qualified DOS paths; that is, they begin with a drive letter, a volume separator, and a component separator (`C:\`).
 - They designate a legacy device (`CON`, `LPT1`).
 - They are relative to the root of the current drive; that is, they begin with a single component separator (`\`).
@@ -131,7 +134,7 @@ The type of the path determines whether or not a current directory is applied in
 
 ### Handling legacy devices
 
-If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is converted into a device path by prepending `\\.\` and returned. 
+If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is converted into a device path by prepending `\\.\` and returned.
 
 A path that begins with a legacy device name is always interpreted as a legacy device by the <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=nameWithType> method. For example, the DOS device path for `CON.TXT` is `\\.\CON`, and the DOS device path for `COM1.TXT\file1.txt` is `\\.\COM1`.
 
@@ -146,7 +149,7 @@ If the path starts with a drive letter, volume separator, and no component separ
 If the path starts with something other than a separator, the current drive and current directory are applied. For example, if the path is `filecompare` and the current directory is `C:\utilities\`, the result is `C:\utilities\filecompare\`.
 
 > [!IMPORTANT]
-> Relative paths are dangerous in multithreaded applications (that is, most applications) because the current directory is a per-process setting. Any thread can change the current directory at any time. Starting with .NET Core 2.1, you can call the <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> method to get an absolute path from a relative path and the base path (the current directory) that you want to resolve it against. 
+> Relative paths are dangerous in multithreaded applications (that is, most applications) because the current directory is a per-process setting. Any thread can change the current directory at any time. Starting with .NET Core 2.1, you can call the <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> method to get an absolute path from a relative path and the base path (the current directory) that you want to resolve it against.
 
 ### Canonicalizing separators
 
@@ -154,7 +157,7 @@ All forward slashes (`/`) are converted into the standard Windows separator, the
 
 ### Evaluating relative components
 
-As the path is processed, any components or segments that are composed of a single or a double period (`.` or `..`) are evaluated: 
+As the path is processed, any components or segments that are composed of a single or a double period (`.` or `..`) are evaluated:
 
 - For a single period, the current segment is removed, since it refers to the current directory.
 
@@ -168,9 +171,9 @@ Along with the runs of separators and relative segments removed earlier, some ad
 
 - If a segment ends in a single period, that period is removed. (A segment of a single or double period is normalized in the previous step. A segment of three or more periods is not normalized and is actually a valid file/directory name.)
 
-- If the path doesn't end in a separator, all trailing periods and spaces (U+0020) are removed. If the last segment is simply a single or double period, it falls under the relative components rule above. 
+- If the path doesn't end in a separator, all trailing periods and spaces (U+0020) are removed. If the last segment is simply a single or double period, it falls under the relative components rule above.
 
-   This rule means that you can create a directory name with a trailing space by adding a trailing separator after the space.  
+   This rule means that you can create a directory name with a trailing space by adding a trailing separator after the space.
 
    > [!IMPORTANT]
    > You should **never** create a directory or filename with a trailing space. Trailing spaces can make it difficult or impossible to access a directory, and applications commonly fail when attempting to handle directories or files whose names include trailing spaces.
@@ -181,7 +184,7 @@ Normally, any path passed to a Windows API is (effectively) passed to the [GetFu
 
 Why would you want to skip normalization? There are three major reasons:
 
-1. To get access to paths that are normally unavailable but are legal. A file or directory called `hidden.`, for example, is impossible to access in any other way. 
+1. To get access to paths that are normally unavailable but are legal. A file or directory called `hidden.`, for example, is impossible to access in any other way.
 
 1. To improve performance by skipping normalization if you've already normalized.
 
@@ -194,7 +197,7 @@ Skipping normalization and max path checks is the only difference between the tw
 
 Paths that start with `\\?\` are still normalized if you explicitly pass them to the [GetFullPathName function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea).
 
-Note that you can paths of more than `MAX_PATH` characters to [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) without `\\?\`. It supports arbitrary length paths up to the maximum string size that Windows can handle.
+You can pass paths of more than `MAX_PATH` characters to [GetFullPathName](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) without `\\?\`. It supports arbitrary length paths up to the maximum string size that Windows can handle.
 
 ## Case and the Windows file system
 

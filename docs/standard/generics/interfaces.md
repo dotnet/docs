@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "generics [.NET Framework], interfaces"
   - "ordering comparisons [.NET Framework]"
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Generic Interfaces
 This topic provides an overview of generic interfaces that provide common functionality across families of generic types.  
@@ -18,7 +16,7 @@ This topic provides an overview of generic interfaces that provide common functi
  Generic interfaces provide type-safe counterparts to nongeneric interfaces for ordering and equality comparisons and for functionality that is shared by generic collection types.  
   
 > [!NOTE]
->  Starting with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], the type parameters of several generic interfaces are marked covariant or contravariant, providing greater flexibility in assigning and using types that implement these interfaces. See [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
+> Starting with the .NET Framework 4, the type parameters of several generic interfaces are marked covariant or contravariant, providing greater flexibility in assigning and using types that implement these interfaces. See [Covariance and Contravariance](covariance-and-contravariance.md).  
   
 ### Equality and Ordering Comparisons  
  In the <xref:System> namespace, the <xref:System.IComparable%601?displayProperty=nameWithType> and <xref:System.IEquatable%601?displayProperty=nameWithType> generic interfaces, like their nongeneric counterparts, define methods for ordering comparisons and equality comparisons, respectively. Types implement these interfaces to provide the ability to perform such comparisons.  
@@ -38,9 +36,9 @@ This topic provides an overview of generic interfaces that provide common functi
   
 ## See also
 
-- <xref:System.Collections.Generic?displayProperty=nameWithType>  
-- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>  
-- [Generics](../../../docs/standard/generics/index.md)  
-- [Generic Collections in the .NET Framework](../../../docs/standard/generics/collections.md)  
-- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)  
-- [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md)
+- <xref:System.Collections.Generic?displayProperty=nameWithType>
+- <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
+- [Generics](index.md)
+- [Generic Collections in the .NET Framework](collections.md)
+- [Generic Delegates for Manipulating Arrays and Lists](delegates-for-manipulating-arrays-and-lists.md)
+- [Covariance and Contravariance](covariance-and-contravariance.md)

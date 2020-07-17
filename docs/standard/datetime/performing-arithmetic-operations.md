@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DateTime structure, arithmetic operations"
   - "DateTimeOffset structure, arithmetic operations"
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Performing arithmetic operations with dates and times
 
@@ -28,23 +26,23 @@ The <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property allows 
 [!code-csharp[System.DateTimeOffset.Conceptual#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual2.cs#2)]
 [!code-vb[System.DateTimeOffset.Conceptual#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual2.vb#2)]
 
-The <xref:System.DateTime.CompareTo%28System.DateTime%29> method reports that the local time is earlier than (or less than) the UTC time, and the subtraction operation indicates that the difference between UTC and the local time for a system in the U.S. Pacific Standard Time zone is seven hours. But because these two values provide different representations of a single point in time, it is clear in this case that this time interval is completely attributable to the local time zone's offset from UTC.
+The <xref:System.DateTime.CompareTo%28System.DateTime%29> method reports that the local time is earlier than (or less than) the UTC time, and the subtraction operation indicates that the difference between UTC and the local time for a system in the U.S. Pacific Standard Time zone is seven hours. But because these two values provide different representations of a single point in time, it is clear in this case that the time interval is completely attributable to the local time zone's offset from UTC.
 
 More generally, the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property does not affect the results returned by <xref:System.DateTime.Kind> comparison and arithmetic methods (as the comparison of two identical points in time indicates), although it can affect the interpretation of those results. For example:
 
-* The result of any arithmetic operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> reflects the actual time interval between the two values. Similarly, the comparison of two such date and time values accurately reflects the relationship between times.
+- The result of any arithmetic operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> reflects the actual time interval between the two values. Similarly, the comparison of two such date and time values accurately reflects the relationship between times.
 
-* The result of any arithmetic or comparison operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> or on two date and time values with different <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property values reflects the difference in clock time between the two values.
+- The result of any arithmetic or comparison operation performed on two date and time values whose <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> properties both equal <xref:System.DateTimeKind> or on two date and time values with different <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property values reflects the difference in clock time between the two values.
 
-* Arithmetic or comparison operations on local date and time values do not consider whether a particular value is ambiguous or invalid, nor do they take account of the effect of any adjustment rules that result from the local time zone's transition to or from daylight saving time.
+- Arithmetic or comparison operations on local date and time values do not consider whether a particular value is ambiguous or invalid, nor do they take account of the effect of any adjustment rules that result from the local time zone's transition to or from daylight saving time.
 
-* Any operation that compares or calculates the difference between UTC and a local time includes a time interval equal to the local time zone's offset from UTC in the result.
+- Any operation that compares or calculates the difference between UTC and a local time includes a time interval equal to the local time zone's offset from UTC in the result.
 
-* Any operation that compares or calculates the difference between an unspecified time and either UTC or the local time reflects simple clock time. Time zone differences are not considered, and the result does not reflect the application of time zone adjustment rules.
+- Any operation that compares or calculates the difference between an unspecified time and either UTC or the local time reflects simple clock time. Time zone differences are not considered, and the result does not reflect the application of time zone adjustment rules.
 
-* Any operation that compares or calculates the difference between two unspecified times may include an unknown interval that reflects the difference between the time in two different time zones.
+- Any operation that compares or calculates the difference between two unspecified times may include an unknown interval that reflects the difference between the time in two different time zones.
 
-There are many scenarios in which time zone differences do not affect date and time calculations (for a discussion of some of these, see [Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](../../../docs/standard/datetime/choosing-between-datetime.md)) or in which the context of the date and time data defines the meaning of comparison or arithmetic operations.
+There are many scenarios in which time zone differences do not affect date and time calculations (for a discussion of some of these, see [Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](choosing-between-datetime.md)) or in which the context of the date and time data defines the meaning of comparison or arithmetic operations.
 
 ## Comparisons and arithmetic operations with DateTimeOffset values
 
@@ -57,7 +55,7 @@ In this example, the <xref:System.DateTimeOffset.CompareTo%2A> method indicates 
 
 The chief limitation of using <xref:System.DateTimeOffset> values in date and time arithmetic is that although <xref:System.DateTimeOffset> values have some time zone awareness, they are not fully time zone aware. Although the <xref:System.DateTimeOffset> value's offset reflects a time zone's offset from UTC when a <xref:System.DateTimeOffset> variable is first assigned a value, it becomes disassociated from the time zone thereafter. Because it is no longer directly associated with an identifiable time, the addition and subtraction of date and time intervals does not consider a time zone's adjustment rules.
 
-To illustrate, the transition to daylight saving time in the U.S. Central Standard Time zone occurs at 2:00 A.M. on March 9, 2008. This means that adding a two and a half hour interval to a Central Standard time of 1:30 A.M. on March 9, 2008, should produce a date and time of 5:00 A.M. on March 9, 2008. However, as the following example shows, the result of the addition is 4:00 A.M. on March 9, 2008. Note that this result of this operation does represent the correct point in time, although it is not the time in the time zone in which we are interested (that is, it does not have the expected time zone offset).
+To illustrate, the transition to daylight saving time in the U.S. Central Standard Time zone occurs at 2:00 A.M. on March 9, 2008. This means that adding a two and a half hour interval to a Central Standard time of 1:30 A.M. on March 9, 2008, should produce a date and time of 5:00 A.M. on March 9, 2008. However, as the following example shows, the result of the addition is 4:00 A.M. on March 9, 2008. Note that the result of this operation does represent the correct point in time, although it is not the time in the time zone in which we are interested (that is, it does not have the expected time zone offset).
 
 [!code-csharp[System.DateTimeOffset.Conceptual#4](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual4.cs#4)]
 [!code-vb[System.DateTimeOffset.Conceptual#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual4.vb#4)]
@@ -66,13 +64,13 @@ To illustrate, the transition to daylight saving time in the U.S. Central Standa
 
 The <xref:System.TimeZoneInfo> class includes a number of conversion methods that automatically apply adjustments when they convert times from one time zone to another. These include the following:
 
-* The <xref:System.TimeZoneInfo.ConvertTime%2A> and <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> methods, which convert times between any two time zones.
+- The <xref:System.TimeZoneInfo.ConvertTime%2A> and <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A> methods, which convert times between any two time zones.
 
-* The <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods, which convert the time in a particular time zone to UTC, or convert UTC to the time in a particular time zone.
+- The <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> and <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A> methods, which convert the time in a particular time zone to UTC, or convert UTC to the time in a particular time zone.
 
-For details, see [Converting times between time zones](../../../docs/standard/datetime/converting-between-time-zones.md).
+For details, see [Converting times between time zones](converting-between-time-zones.md).
 
-The <xref:System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)> class does not provide any methods that automatically apply adjustment rules when you perform date and time arithmetic. However, you can do this by converting the time in a time zone to UTC, performing the arithmetic operation, and then converting from UTC back to the time in the time zone. For details, see [How to: Use time zones in date and time arithmetic](../../../docs/standard/datetime/use-time-zones-in-arithmetic.md).
+The <xref:System.TimeZoneInfo> class does not provide any methods that automatically apply adjustment rules when you perform date and time arithmetic. However, you can do this by converting the time in a time zone to UTC, performing the arithmetic operation, and then converting from UTC back to the time in the time zone. For details, see [How to: Use time zones in date and time arithmetic](use-time-zones-in-arithmetic.md).
 
 For example, the following code is similar to the previous code that added two-and-a-half hours to 2:00 A.M. on March 9, 2008. However, because it converts a Central Standard time to UTC before it performs date and time arithmetic, and then converts the result from UTC back to Central Standard time, the resulting time reflects the Central Standard Time Zone's transition to daylight saving time.
 
@@ -81,5 +79,5 @@ For example, the following code is similar to the previous code that added two-a
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [How to: Use time zones in date and time arithmetic](../../../docs/standard/datetime/use-time-zones-in-arithmetic.md)
+- [Dates, times, and time zones](index.md)
+- [How to: Use time zones in date and time arithmetic](use-time-zones-in-arithmetic.md)

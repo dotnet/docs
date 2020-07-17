@@ -17,7 +17,7 @@ increase our productivity. We rely on code analysis tools to improve our
 code quality, and code generators to aid in application construction. As
 these tools get smarter, they need access to more and more of the model
 that only compilers create as they process application code. This is the core mission of
-the Roslyn APIs: opening up the black boxes and allowing tools and end
+the Roslyn APIs: opening up the opaque boxes and allowing tools and end
 users to share in the wealth of information compilers have about our code.
 Instead of being opaque source-code-in and object-code-out translators,
 through Roslyn, compilers become platforms: APIs that you can use for
@@ -28,20 +28,20 @@ code-related tasks in your tools and applications.
 The .NET Compiler Platform SDK dramatically lowers the barrier
 to entry for creating code focused tools and applications. It creates many
 opportunities for innovation in areas such as meta-programming, code
-generation and transformation, interactive use of the C# and VB languages,
-and embedding of C# and VB in domain specific languages.
+generation and transformation, interactive use of the C# and Visual Basic languages,
+and embedding of C# and Visual Basic in domain-specific languages.
 
-The .NET Compiler Platform SDK enables you to build ***analyzers*** and 
+The .NET Compiler Platform SDK enables you to build ***analyzers*** and
 ***code fixes*** that find and correct coding mistakes. ***Analyzers***
 understand the syntax and structure of code and detect practices that
 should be corrected. ***Code fixes*** provide one or more suggested fixes
 for addressing coding mistakes found by analyzers. Typically, an analyzer
-and the associated code fixes are packaged together in a single project. 
+and the associated code fixes are packaged together in a single project.
 
 Analyzers and code fixes use static analysis to understand code. They
 do not run the code or provide other testing benefits. They can, however,
 point out practices that often lead to bugs, unmaintainable code, or
-standard guideline validation.
+standard guideline violation.
 
 The .NET Compiler Platform SDK provides a single set of APIs that enable
 you to examine and understand a C# or Visual Basic codebase. Because you
@@ -63,7 +63,7 @@ There are three main scenarios for writing analyzers and code fixes:
 
 1. [*Enforce team coding standards*](#enforce-team-coding-standards)
 1. [*Provide guidance with library packages*](#provide-guidance-with-library-packages)
-1. [*Provide general coding guidance*](#provide-general-coding-guidance)
+1. [*Provide general guidance*](#provide-general-guidance)
 
 ## Enforce team coding standards
 
@@ -85,7 +85,7 @@ each developer's machine to enforce the standards.
 
 ## Provide guidance with library packages
 
-There are a wealth of libraries available for .NET developers on NuGet.
+There is a wealth of libraries available for .NET developers on NuGet.
 Some of these come from Microsoft, some from third-party companies, and
 others from community members and volunteers. These libraries get more
 adoption and higher reviews when developers can succeed with those
@@ -93,7 +93,7 @@ libraries.
 
 In addition to providing documentation, you can provide analyzers and
 code fixes that find and correct common mis-uses of your library. These
-immediate corrections will help developers succeed more quickly. 
+immediate corrections will help developers succeed more quickly.
 
 You can package analyzers and code fixes with your library on NuGet. In that
 scenario, every developer who installs your NuGet package will also install
@@ -108,7 +108,7 @@ work well and patterns that are best avoided. Several community members
 have created analyzers that enforce those recommended patterns. As we learn
 more, there is always room for new ideas.
 
-These analyzers can be uploaded to the 
+These analyzers can be uploaded to the
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) and downloaded
 by developers using Visual Studio. Newcomers to the language and the platform
 learn accepted practices quickly and become productive earlier in their .NET
@@ -120,16 +120,16 @@ practices.
 The .NET Compiler Platform SDK includes the latest language object models
 for code generation, analysis, and refactoring. This section provides a
 conceptual overview of the .NET Compiler Platform SDK. Further details can be
-found in the quickstarts, samples and tutorials sections.
+found in the quickstarts, samples, and tutorials sections.
 
-You can learn more about the concepts in the .NET Compiler Platform SDK in these four topics:
+You can learn more about the concepts in the .NET Compiler Platform SDK in these five topics:
 
- - [Explore code with the syntax visualizer](syntax-visualizer.md)
- - [Understand the compiler API model](compiler-api-model.md)
- - [Work with syntax](work-with-syntax.md)
- - [Work with semantics](work-with-semantics.md)
- - [Work with a workspace](work-with-workspace.md)
- 
+- [Explore code with the syntax visualizer](syntax-visualizer.md)
+- [Understand the compiler API model](compiler-api-model.md)
+- [Work with syntax](work-with-syntax.md)
+- [Work with semantics](work-with-semantics.md)
+- [Work with a workspace](work-with-workspace.md)
+
 To get started, you'll need to install the **.NET Compiler Platform SDK**:
 
 [!INCLUDE[interactive-note](~/includes/roslyn-installation.md)]

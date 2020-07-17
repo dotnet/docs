@@ -1,5 +1,5 @@
 ---
-title: "&lt;section&gt; element"
+title: "<section> element"
 ms.date: "05/01/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/configSections/section"
@@ -8,21 +8,18 @@ helpviewer_keywords:
   - "section Element"
   - "<section> Element"
 ms.assetid: ec7d4110-2403-47ac-8218-499bfe9d5ddb
-author: "guardrex"
-ms.author: "mairaw"
 ---
-
 # \<section> element
 
 Contains a configuration section declaration.
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
 
-[**\<configuration>**](~/docs/framework/configure-apps/file-schema/configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md)   
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sectionGroup>**](~/docs/framework/configure-apps/file-schema/sectiongroup-element-for-configsections.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sectionGroup>**](sectiongroup-element-for-configsections.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<section>**
 
 ## Syntax
@@ -30,7 +27,7 @@ Contains a configuration section declaration.
 ```xml
 <section name="section name"
          type="configuration section handler class, assembly"
-         allowDefinition="Everywhere|MachineOnly|MachineToApplication" 
+         allowDefinition="Everywhere|MachineOnly|MachineToApplication"
          allowLocation="true|false" />
 ```
 
@@ -54,8 +51,8 @@ The following attributes are applicable only for ASP.NET applications. The confi
 
 |     | Description |
 | --- | ----------- |
-| [**\<configSections>** Element](~/docs/framework/configure-apps/file-schema/configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
-| [**\<sectionGroup>** Element](~/docs/framework/configure-apps/file-schema/sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
+| [**\<configSections>** Element](configsections-element-for-configuration.md) | Contains configuration section and namespace declarations. |
+| [**\<sectionGroup>** Element](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
 
 > [!NOTE]
 > A **\<section>** element is a child element of either **\<configSections>** or **\<sectionGroup>** but not both.
@@ -78,11 +75,11 @@ The following example shows how to define a configuration section and define set
 <configuration>
   <configSections>
     <section name="sampleSection"
-             type="System.Configuration.SingleTagSectionHandler" 
+             type="System.Configuration.SingleTagSectionHandler"
              allowLocation="false" />
   </configSections>
-  <sampleSection setting1="Value1" 
-                 setting2="value two" 
+  <sampleSection setting1="Value1"
+                 setting2="value two"
                  setting3="third value" />
 </configuration>
 ```
@@ -93,4 +90,4 @@ This element can be used in the application configuration file, machine configur
 
 ## See also
 
-[Configuration file schema for the .NET Framework](~/docs/framework/configure-apps/file-schema/index.md)
+- [Configuration file schema for the .NET Framework](index.md)

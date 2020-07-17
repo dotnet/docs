@@ -1,5 +1,5 @@
 ---
-title: "How to: Filter on an Optional Element (Visual Basic)"
+title: "How to: Filter on an Optional Element"
 ms.date: 07/20/2015
 ms.assetid: a74b76ad-6889-4185-a189-d6ef2c63841e
 ---
@@ -10,7 +10,7 @@ Sometimes you want to filter for an element even though you are not sure it exis
  This example uses the <xref:System.Xml.Linq.Extensions.Elements%2A> extension method.  
   
 ```vb  
-Dim root As XElement = _   
+Dim root As XElement = _
     <Root>  
         <Child1>  
             <Text>Child One Text</Text>  
@@ -44,14 +44,14 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
 ```vb  
 Imports <xmlns='http://www.adatum.com'>  
@@ -94,19 +94,20 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>  
- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>  
- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)  
- [XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)  
- [XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)  
- [XML Value Property](../../../../visual-basic/language-reference/xml-axis/xml-value-property.md)  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Projection Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projection-operations.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement.Attribute%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType>
+- <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>
+- [Basic Queries (LINQ to XML) (Visual Basic)](basic-queries-linq-to-xml.md)
+- [XML Child Axis Property](../../../language-reference/xml-axis/xml-child-axis-property.md)
+- [XML Attribute Axis Property](../../../language-reference/xml-axis/xml-attribute-axis-property.md)
+- [XML Value Property](../../../language-reference/xml-axis/xml-value-property.md)
+- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)
+- [Projection Operations (Visual Basic)](projection-operations.md)

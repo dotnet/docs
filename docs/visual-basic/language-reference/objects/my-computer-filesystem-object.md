@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.FileSystem Object (Visual Basic)"
+title: "My.Computer.FileSystem Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "FileSystem module"
@@ -19,10 +19,10 @@ Provides properties and methods for working with drives, files, and directories.
 ## Remarks  
  For information about the methods and properties of the `My.Computer.FileSystem` object, see <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
   
- For more information, see [File Access with Visual Basic](../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md).  
+ For more information, see [File Access with Visual Basic](../../developing-apps/programming/drives-directories-files/file-access.md).  
   
 > [!NOTE]
->  You can also use classes in the <xref:System.IO?displayProperty=nameWithType> namespace to work with drives, files, and directories.  
+> You can also use classes in the <xref:System.IO?displayProperty=nameWithType> namespace to work with drives, files, and directories.  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.MyServices>  
@@ -31,6 +31,7 @@ Provides properties and methods for working with drives, files, and directories.
   
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Computer.FileSystem.SpecialDirectories Object](../../../visual-basic/language-reference/objects/my-computer-filesystem-specialdirectories-object.md)  
- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+## See also
+
+- [My.Computer.FileSystem.SpecialDirectories Object](my-computer-filesystem-specialdirectories-object.md)
+- [My.Computer Object](my-computer-object.md)

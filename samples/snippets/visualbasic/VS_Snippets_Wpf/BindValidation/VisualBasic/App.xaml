@@ -1,0 +1,10 @@
+﻿<Application
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="App"
+  Startup="AppStartingUp"
+  >
+  <!-- Resources & Styles defined in this section will impact the entire application.  -->
+  <Application.Resources>
+  </Application.Resources>
+</Application>

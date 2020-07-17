@@ -1,5 +1,6 @@
 ---
 title: "How to: Publish Metadata for a Service Using a Configuration File"
+description: Learn how to publish metadata for a WCF service using a configuration file. Publishing allows clients to get that metadata using a GET or HTTP/GET request.
 ms.date: "03/30/2017"
 ms.assetid: f061443f-92df-4824-b36a-609c4cd14a17
 ---
@@ -7,9 +8,9 @@ ms.assetid: f061443f-92df-4824-b36a-609c4cd14a17
 This is one of two how-to topics that demonstrate publishing metadata for a Windows Communication Foundation (WCF) service. There are two ways to specify how a service should publish metadata, using a configuration file and using code. This topic shows how to publish metadata for a service using a configuration file.  
   
 > [!CAUTION]
->  This topic shows how to publish metadata in an unsecure manner. Any client can retrieve the metadata from the service. If you require your service to publish metadata in a secure manner, see [Custom Secure Metadata Endpoint](../../../../docs/framework/wcf/samples/custom-secure-metadata-endpoint.md).  
+> This topic shows how to publish metadata in an unsecure manner. Any client can retrieve the metadata from the service. If you require your service to publish metadata in a secure manner, see [Custom Secure Metadata Endpoint](../samples/custom-secure-metadata-endpoint.md).  
   
- For more information about publishing metadata in code, see [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md). Publishing metadata allows clients to retrieve the metadata using a WS-Transfer GET request or an HTTP/GET request using the `?wsdl` query string. To be sure that the code is working, create a basic WCF service. For simplicity, a basic self-hosted service is provided in the following code.  
+ For more information about publishing metadata in code, see [How to: Publish Metadata for a Service Using Code](how-to-publish-metadata-for-a-service-using-code.md). Publishing metadata allows clients to retrieve the metadata using a WS-Transfer GET request or an HTTP/GET request using the `?wsdl` query string. To be sure that the code is working, create a basic WCF service. For simplicity, a basic self-hosted service is provided in the following code.  
   
 ```csharp  
 using System;  
@@ -40,7 +41,7 @@ namespace Metadata.Samples
         static void Main(string[] args)  
         {  
             ServiceHost host = new ServiceHost(typeof(SimpleService),  
-                new Uri("http://localhost:8001/MetadataSample"));   
+                new Uri("http://localhost:8001/MetadataSample"));
             try  
             {  
                 // Open the service host to accept incoming calls  
@@ -86,23 +87,15 @@ namespace Metadata.Samples
   
 ### To publish metadata for a WCF service using an application configuration file  
   
-1.  Within the App.config file, after the closing `</services>` element, create a `<behaviors>` element.  
-  
-  
-  
-2.  Within the `<behaviors>` element, add a `<serviceBehaviors>` element.  
-  
-  
-  
-3.  Add a `<behavior>` element to the `<serviceBehaviors>` element and specify a value for the `name` attribute of the `<behavior>` element.  
-  
-  
-  
-4.  Add a `<serviceMetadata>` element to the `<behavior>` element. Set the `httpGetEnabled` attribute to `true` and the `policyVersion` attribute to Policy15. `httpGetEnabled` allows the service to respond to metadata requests made by an HTTP GET request. `policyVersion` tells the service to conform to WS-Policy 1.5 when generating metadata.  
-  
-  
-  
-5.  Add a `behaviorConfiguration` attribute to the `<service>` element and specify the `name` attribute of the `<behavior>` element added in step 1, as shown in the following code example.  
+1. Within the App.config file, after the closing `</services>` element, create a `<behaviors>` element.  
+
+2. Within the `<behaviors>` element, add a `<serviceBehaviors>` element.  
+
+3. Add a `<behavior>` element to the `<serviceBehaviors>` element and specify a value for the `name` attribute of the `<behavior>` element.  
+
+4. Add a `<serviceMetadata>` element to the `<behavior>` element. Set the `httpGetEnabled` attribute to `true` and the `policyVersion` attribute to Policy15. `httpGetEnabled` allows the service to respond to metadata requests made by an HTTP GET request. `policyVersion` tells the service to conform to WS-Policy 1.5 when generating metadata.  
+
+5. Add a `behaviorConfiguration` attribute to the `<service>` element and specify the `name` attribute of the `<behavior>` element added in step 1, as shown in the following code example.  
   
     ```xml  
     <services>  
@@ -121,7 +114,7 @@ namespace Metadata.Samples
     </behaviors>  
     ```  
   
-6.  Add one or more `<endpoint>` elements with the contract set to `IMetadataExchange`, as shown in the following code example.  
+6. Add one or more `<endpoint>` elements with the contract set to `IMetadataExchange`, as shown in the following code example.  
   
     ```xml  
     <services>  
@@ -140,31 +133,31 @@ namespace Metadata.Samples
     </services>  
     ```  
   
-7.  For the metadata endpoints added in the previous step, set the `binding` attribute to one of the following:  
+7. For the metadata endpoints added in the previous step, set the `binding` attribute to one of the following:  
   
-    -   `mexHttpBinding` for HTTP publication.  
+    - `mexHttpBinding` for HTTP publication.  
   
-    -   `mexHttpsBinding` for HTTPS publication.  
+    - `mexHttpsBinding` for HTTPS publication.  
   
-    -   `mexNamedPipeBinding` for named pipe publication.  
+    - `mexNamedPipeBinding` for named pipe publication.  
   
-    -   `mexTcpBinding` for TCP publication.  
+    - `mexTcpBinding` for TCP publication.  
   
-8.  For the metadata endpoints added in a previous step, set the address equal to:  
+8. For the metadata endpoints added in a previous step, set the address equal to:  
   
-    -   An empty string to use the host application's base address as the publication point if the base address is the same as the metadata binding.  
+    - An empty string to use the host application's base address as the publication point if the base address is the same as the metadata binding.  
   
-    -   A relative address if the host application has a base address.  
+    - A relative address if the host application has a base address.  
   
-    -   An absolute address.  
+    - An absolute address.  
   
 9. Build and run the console application.  
   
-10. Use Internet Explorer to browse to the base address of the service (http://localhost:8001/MetadataSample in this sample) and verify that the metadata publishing is turned on. If not, a message at the top of the resulting page displays: "Metadata publishing for this service is currently disabled."  
+10. Use Internet Explorer to browse to the base address of the service (`http://localhost:8001/MetadataSample` in this sample) and verify that the metadata publishing is turned on. If not, a message at the top of the resulting page displays: "Metadata publishing for this service is currently disabled."  
   
 ### To use default endpoints  
   
-1.  To configure metadata on a service that uses default endpoints, specify the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file as in the previous example, but do not specify any endpoints. The configuration file would then look like this.  
+1. To configure metadata on a service that uses default endpoints, specify the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file as in the previous example, but do not specify any endpoints. The configuration file would then look like this.  
   
     ```xml  
     <configuration>  
@@ -181,7 +174,7 @@ namespace Metadata.Samples
     </configuration>  
     ```  
   
-     Because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> with the `httpGetEnabled` set to `true`, the service has publishing metadata enabled, and because no endpoints were explicitly added, the runtime adds the default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
+     Because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> with the `httpGetEnabled` set to `true`, the service has publishing metadata enabled, and because no endpoints were explicitly added, the runtime adds the default endpoints. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).  
   
 ## Example  
  The following code example shows the implementation of a basic WCF service and the configuration file that publishes metadata for the service.  
@@ -215,7 +208,7 @@ namespace Metadata.Samples
         static void Main(string[] args)  
         {  
             ServiceHost host = new ServiceHost(typeof(SimpleService),  
-                new Uri("http://localhost:8001/MetadataSample"));   
+                new Uri("http://localhost:8001/MetadataSample"));
             try  
             {  
                 // Open the service host to accept incoming calls  
@@ -255,10 +248,11 @@ namespace Metadata.Samples
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>  
- [How to: Host a WCF Service in a Managed Application](../../../../docs/framework/wcf/how-to-host-a-wcf-service-in-a-managed-application.md)  
- [Self-Host](../../../../docs/framework/wcf/samples/self-host.md)  
- [Metadata Architecture Overview](../../../../docs/framework/wcf/feature-details/metadata-architecture-overview.md)  
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
- [How to: Publish Metadata for a Service Using Code](../../../../docs/framework/wcf/feature-details/how-to-publish-metadata-for-a-service-using-code.md)
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceMetadataBehavior>
+- [How to: Host a WCF Service in a Managed Application](../how-to-host-a-wcf-service-in-a-managed-application.md)
+- [Self-Host](../samples/self-host.md)
+- [Metadata Architecture Overview](metadata-architecture-overview.md)
+- [Using Metadata](using-metadata.md)
+- [How to: Publish Metadata for a Service Using Code](how-to-publish-metadata-for-a-service-using-code.md)

@@ -1,13 +1,13 @@
 ---
 title: C# Delegates - A tour of the C# language
 description: Learn late binding with C# delegates
-ms.date: 08/10/2016
+ms.date: 02/27/2020
 ms.assetid: 3cc27357-3ac2-43a1-aad0-86a77b88f884
 ---
 
 # Delegates
 
-A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages, but unlike function pointers, delegates are object-oriented and type-safe.
+A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages. Unlike function pointers, delegates are object-oriented and type-safe.
 
 The following example declares and uses a delegate type named `Function`.
 
@@ -17,12 +17,12 @@ An instance of the `Function` delegate type can reference any method that takes 
 
 A delegate can reference either a static method (such as `Square` or `Math.Sin` in the previous example) or an instance method (such as `m.Multiply` in the previous example). A delegate that references an instance method also references a particular object, and when the instance method is invoked through the delegate, that object becomes `this` in the invocation.
 
-Delegates can also be created using anonymous functions, which are "inline methods" that are created on the fly. Anonymous functions can see the local variables of the surrounding methods. Thus, the multiplier example above can be written more easily without using a Multiplier class:
+Delegates can also be created using anonymous functions, which are "inline methods" that are created when declared. Anonymous functions can see the local variables of the surrounding methods. The following example doesn't create a class:
 
 [!code-csharp[LambdaExample](../../../samples/snippets/csharp/tour/delegates/Program.cs#L44-L44)]
 
-An interesting and useful property of a delegate is that it does not know or care about the class of the method it references; all that matters is that the referenced method has the same parameters and return type as the delegate.
+A delegate doesn't know or care about the class of the method it references; all that matters is that the referenced method has the same parameters and return type as the delegate.
 
 >[!div class="step-by-step"]
->[Previous](enums.md)
+>[Previous](interfaces.md)
 >[Next](attributes.md)

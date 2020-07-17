@@ -1,1 +1,0 @@
-        Console.WriteLine("Contact name is: " & contact1.<ns:name>.Value)

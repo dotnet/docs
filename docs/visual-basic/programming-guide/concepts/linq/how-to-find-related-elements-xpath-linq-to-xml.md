@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Related Elements (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Related Elements (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 6b0ef058-d704-48a5-98cd-33f00d088af9
 ---
@@ -13,9 +13,9 @@ This topic shows how to get an element selecting on an attribute that is referre
 ## Example  
  This example finds the 12th `Order` element, and then finds the customer for that order.  
   
- Note that indexing into a list in .Net is 'zero' based. Indexing into a collection of nodes in an XPath predicate is 'one' based. This example reflects this difference.  
+ Note that indexing into a list in .NET is 'zero' based. Indexing into a collection of nodes in an XPath predicate is 'one' based. This example reflects this difference.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](sample-xml-file-customers-and-orders-linq-to-xml.md).  
   
 ```vb  
 Dim co As XDocument = XDocument.Load("CustomersOrders.xml")  
@@ -49,7 +49,7 @@ Console.WriteLine(customer1)
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Customer CustomerID="HUNGC">  
   <CompanyName>Hungry Coyote Import Store</CompanyName>  
@@ -67,5 +67,6 @@ Results are identical
 </Customer>  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

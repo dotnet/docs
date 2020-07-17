@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EnumCustomAttributes Method
 Retrieves assembly-level custom attributes.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumCustomAttributes(  
     HALINKENUM hEnum,  
     mdToken tkType,  
@@ -33,7 +31,7 @@ HRESULT EnumCustomAttributes(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  Handle of enumerator.  
   
@@ -55,7 +53,8 @@ HRESULT EnumCustomAttributes(
 ## Requirements  
  Requires alink.h  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

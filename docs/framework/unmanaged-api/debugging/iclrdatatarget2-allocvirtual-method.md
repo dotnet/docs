@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e3226230-964b-47fb-9f53-d6fdbeda1e9e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget2::AllocVirtual Method
 Called by the common language runtime (CLR) data access services to allocate memory in the address space of this target process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AllocVirtual(  
     [in] CLRDATA_ADDRESS addr,  
     [in] ULONG32 size,  
@@ -33,7 +31,7 @@ HRESULT AllocVirtual(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `addr`  
  [in] A `CLRDATA_ADDRESS` value that specifies the requested starting address of the memory to be allocated.  
   
@@ -55,7 +53,7 @@ HRESULT AllocVirtual(
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -63,6 +61,7 @@ HRESULT AllocVirtual(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md)  
- [FreeVirtual Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-freevirtual-method.md)
+## See also
+
+- [ICLRDataTarget2 Interface](iclrdatatarget2-interface.md)
+- [FreeVirtual Method](iclrdatatarget2-freevirtual-method.md)

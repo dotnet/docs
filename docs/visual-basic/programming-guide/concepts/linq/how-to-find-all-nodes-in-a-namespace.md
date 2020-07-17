@@ -1,5 +1,5 @@
 ---
-title: "How to: Find All Nodes in a Namespace (Visual Basic)"
+title: "How to: Find All Nodes in a Namespace"
 ms.date: 07/20/2015
 ms.assetid: b735d7da-5727-48a3-ab57-a16378adc32e
 ---
@@ -39,7 +39,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Nodes in the http://www.adventure-works.com namespace  
 {http://www.adventure-works.com}Child3  
 {http://www.adventure-works.com}GrandChild2  
@@ -48,7 +48,7 @@ Nodes in the http://www.adventure-works.com namespace
 ## Example  
  The XML file accessed by the following query contains purchase orders in two different namespaces. The query creates a new tree with just the elements in one of the namespaces.  
   
- This example uses the following XML document: [Sample XML File: Consolidated Purchase Orders](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md).  
+ This example uses the following XML document: [Sample XML File: Consolidated Purchase Orders](sample-xml-file-consolidated-purchase-orders.md).  
   
 ```vb  
 Imports <xmlns:aw="http://www.adventure-works.com">  
@@ -103,5 +103,6 @@ End Module
 </Root>  
 ```  
   
-## See Also  
- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+## See also
+
+- [Basic Queries (LINQ to XML) (Visual Basic)](basic-queries-linq-to-xml.md)

@@ -1,5 +1,6 @@
 ---
 title: "Accessing the Internet Through a Proxy"
+description: Learn how to configure a proxy instance to enable your .NET Framework application to communicate with the web proxy.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Networking"
@@ -18,14 +19,15 @@ If your site uses a proxy to provide access to the Internet, you must configure 
   
  This section includes the following topics:  
   
--   [Proxy Configuration](../../../docs/framework/network-programming/proxy-configuration.md)  
+- [Proxy Configuration](proxy-configuration.md)  
   
--   [Automatic Proxy Detection](../../../docs/framework/network-programming/automatic-proxy-detection.md)  
+- [Automatic Proxy Detection](automatic-proxy-detection.md)  
   
--   [How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet](../../../docs/framework/network-programming/how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md)  
+- [How to: Enable a WebRequest to Use a Proxy to Communicate With the Internet](how-to-enable-a-webrequest-to-use-a-proxy-to-communicate-with-the-internet.md)  
   
--   [How to: Override a Global Proxy Selection](../../../docs/framework/network-programming/how-to-override-a-global-proxy-selection.md)  
+- [How to: Override a Global Proxy Selection](how-to-override-a-global-proxy-selection.md)  
   
-## See Also  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
- [Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)
+## See also
+
+- [Using Application Protocols](using-application-protocols.md)
+- [Network Programming in the .NET Framework](index.md)

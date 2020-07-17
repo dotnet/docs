@@ -12,15 +12,13 @@ f1_keywords:
 helpviewer_keywords: 
   - "EInitializeNewDomainFlags enumeration [.NET Framework hosting]"
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EInitializeNewDomainFlags Enumeration
 Enables the host to provide the runtime with information about the initialization of an application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eInitializeNewDomainFlags_None              = 0x0000,  
     eInitializeNewDomainFlags_NoSecurityChanges = 0x0002  
@@ -35,10 +33,10 @@ typedef enum {
 |`eInitializeNewDomainFlags_NoSecurityChanges`|Informs the common language runtime (CLR) that the host will not make changes to the security state of the application domain in the <xref:System.AppDomainManager.InitializeNewDomain%2A> method.|  
   
 ## Remarks  
- The [ICLRDomainManager::SetAppDomainManagerType](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setappdomainmanagertype-method.md) method takes a parameter of type `EInitializeNewDomainFlags`.  
+ The [ICLRDomainManager::SetAppDomainManagerType](iclrdomainmanager-setappdomainmanagertype-method.md) method takes a parameter of type `EInitializeNewDomainFlags`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -46,6 +44,7 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)  
- [SetAppDomainManagerType Method](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-setappdomainmanagertype-method.md)
+## See also
+
+- [Hosting Enumerations](hosting-enumerations.md)
+- [SetAppDomainManagerType Method](iclrdomainmanager-setappdomainmanagertype-method.md)

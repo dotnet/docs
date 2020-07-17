@@ -1,5 +1,5 @@
 ---
-title: "How to: Control the Scope of a Variable (Visual Basic)"
+title: "How to: Control the Scope of a Variable"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic], scope"
@@ -16,19 +16,19 @@ ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
 # How to: Control the Scope of a Variable (Visual Basic)
 Normally, a variable is in *scope*, or visible for reference, throughout the region in which you declare it. In some cases, the variable's *access level* can influence its scope.  
   
- For more information, see [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md).  
+ For more information, see [Scope in Visual Basic](scope.md).  
   
 ## Scope at Block or Procedure Level  
   
 #### To make a variable visible only within a block  
   
--   Place the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) for the variable between the initiating and terminating declaration statements of that block, for example between the `For` and `Next` statements of a `For` loop.  
+- Place the [Dim Statement](../../../language-reference/statements/dim-statement.md) for the variable between the initiating and terminating declaration statements of that block, for example between the `For` and `Next` statements of a `For` loop.  
   
      You can refer to the variable only from within the block.  
   
 #### To make a variable visible only within a procedure  
   
--   Place the `Dim` statement for the variable inside the procedure but outside any block (such as a `With`...`End With` block).  
+- Place the `Dim` statement for the variable inside the procedure but outside any block (such as a `With`...`End With` block).  
   
      You can refer to the variable only from within the procedure, including inside any block contained in the procedure.  
   
@@ -37,24 +37,24 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
   
 #### To make a variable visible throughout a module, class, or structure  
   
-1.  Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
+1. Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
   
-2.  Include the [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword in the `Dim` statement.  
+2. Include the [Private](../../../language-reference/modifiers/private.md) keyword in the `Dim` statement.  
   
-3.  You can refer to the variable from anywhere within the module, class, or structure, but not from outside it.  
+3. You can refer to the variable from anywhere within the module, class, or structure, but not from outside it.  
   
 #### To make a variable visible throughout a namespace  
   
-1.  Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
+1. Place the `Dim` statement for the variable inside the module, class, or structure, but outside any procedure.  
   
-2.  Include the [Friend](../../../../visual-basic/language-reference/modifiers/friend.md) or [Public](../../../../visual-basic/language-reference/modifiers/public.md) keyword in the `Dim` statement.  
+2. Include the [Friend](../../../language-reference/modifiers/friend.md) or [Public](../../../language-reference/modifiers/public.md) keyword in the `Dim` statement.  
   
-3.  You can refer to the variable from anywhere within the namespace containing the module, class, or structure.  
+3. You can refer to the variable from anywhere within the namespace containing the module, class, or structure.  
   
 ## Example  
  The following example declares a variable at module level and limits its visibility to code within the module.  
   
-```  
+```vb  
 Module demonstrateScope  
     Private strMsg As String  
     Sub initializePrivateVariable()  
@@ -70,7 +70,7 @@ End Module
   
  With the following alteration to the preceding example, the string variable `strMsg` can be referred to by code anywhere in the namespace of its declaration.  
   
-```  
+```vb  
 Public strMsg As String  
 ```  
   
@@ -80,10 +80,11 @@ Public strMsg As String
 ## .NET Framework Security  
  The narrower the scope of a variable, the smaller the chances that malicious code can make improper use of it.  
   
-## See Also  
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
- [Lifetime in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)
+## See also
+
+- [Scope in Visual Basic](scope.md)
+- [Lifetime in Visual Basic](lifetime.md)
+- [Access levels in Visual Basic](access-levels.md)
+- [Variables](../variables/index.md)
+- [Variable Declaration](../variables/variable-declaration.md)
+- [Dim Statement](../../../language-reference/statements/dim-statement.md)

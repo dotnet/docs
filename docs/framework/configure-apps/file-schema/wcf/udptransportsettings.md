@@ -1,35 +1,37 @@
 ---
-title: "&lt;udpTransportSettings&gt;"
+title: "<udpTransportSettings>"
 ms.date: "03/30/2017"
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
 ---
-# &lt;udpTransportSettings&gt;
-This configuration element exposes UDP transport settings for [\<udpDiscoveryEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md).  
+# \<udpTransportSettings>
+This configuration element exposes UDP transport settings for [\<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md).  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
-\<udpDiscoveryEndpoint>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<udpDiscoveryEndpoint>**](udpdiscoveryendpoint.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<updTransportSettings>**  
   
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <udpDiscoveryEndpoint>
       <standardEndpoint>
-        <updTransportSettings duplicateMessageHistoryLength="Integer" 
-                              maxBufferPoolSize="Integer" 
-                              maxMulticastRetransmitCount="Integer" 
-                              maxPendingMessageCount="Integer" 
-                              maxReceivedMessageSize="Integer" 
-                              maxUnicastRetransmitCount="Integer" 
-                              multicastInterfaceId="String" 
-                              socketReceiveBufferSize="Integer" 
+        <updTransportSettings duplicateMessageHistoryLength="Integer"
+                              maxBufferPoolSize="Integer"
+                              maxMulticastRetransmitCount="Integer"
+                              maxPendingMessageCount="Integer"
+                              maxReceivedMessageSize="Integer"
+                              maxUnicastRetransmitCount="Integer"
+                              multicastInterfaceId="String"
+                              socketReceiveBufferSize="Integer"
                               timeToLive="Integer" />
       </standardEndpoint>
     </udpDiscoveryEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -56,7 +58,8 @@ This configuration element exposes UDP transport settings for [\<udpDiscoveryEnd
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<udpDiscoveryEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpdiscoveryendpoint.md)|A standard endpoint that has fixed discovery contract and UDP transport binding.|  
+|[\<udpDiscoveryEndpoint>](udpdiscoveryendpoint.md)|A standard endpoint that has fixed discovery contract and UDP transport binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.UdpTransportSettings>
+## See also
+
+- <xref:System.ServiceModel.Discovery.UdpTransportSettings>

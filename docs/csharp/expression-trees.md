@@ -2,6 +2,7 @@
 title: Expression Trees
 description: Learn about expression trees in .NET Core and how to use them to represent code as structures that you can examine, modify, and execute.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
 ---
 
@@ -10,13 +11,13 @@ ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
 If you have used LINQ, you have experience with a rich library
 where the `Func` types are part of the API set. (If you are not familiar
 with LINQ, you probably want to read [the LINQ tutorial](linq/index.md) and
-the tutorial on [lambda expressions](lambda-expressions.md) before this one.)
+the article about [lambda expressions](./programming-guide/statements-expressions-operators/lambda-expressions.md) before this one.)
 *Expression Trees* provide richer interaction with the arguments that
 are functions.
 
 You write function arguments, typically using Lambda Expressions, when
 you create LINQ queries. In a typical LINQ query, those function arguments are
-transformed into a delegate the compiler creates. 
+transformed into a delegate the compiler creates.
 
 When you want to have a richer interaction, you need to use *Expression Trees*.
 Expression Trees represent code as a structure that you can examine,
@@ -42,11 +43,11 @@ structures to create rich adaptive algorithms.
 1. [Expression Trees Explained](expression-trees-explained.md)
 
     Understand the structure and concepts behind *Expression Trees*.
-    
+
 2. [Framework Types Supporting Expression Trees](expression-classes.md)
-    
+
     Learn about the structures and classes that define and manipulate expression trees.
-    
+
 3. [Executing Expressions](expression-trees-execution.md)
 
     Learn how to convert an expression tree represented as a Lambda Expression into a delegate and execute the resulting delegate.
@@ -66,4 +67,3 @@ structures to create rich adaptive algorithms.
 7. [Summing up](expression-trees-summary.md)
 
     Review the information on expression trees.
-    

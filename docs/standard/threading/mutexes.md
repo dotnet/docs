@@ -8,11 +8,9 @@ helpviewer_keywords:
   - "Mutex class, about Mutex class"
   - "threading [.NET Framework], cross-process synchronization"
 ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mutexes
-You can use a <xref:System.Threading.Mutex> object to provide exclusive access to a resource. The <xref:System.Threading.Mutex> class uses more system resources than the <xref:System.Threading.Monitor> class, but it can be marshaled across application domain boundaries, it can be used with multiple waits, and it can be used to synchronize threads in different processes. For a comparison of managed synchronization mechanisms, see [Overview of Synchronization Primitives](../../../docs/standard/threading/overview-of-synchronization-primitives.md).  
+You can use a <xref:System.Threading.Mutex> object to provide exclusive access to a resource. The <xref:System.Threading.Mutex> class uses more system resources than the <xref:System.Threading.Monitor> class, but it can be marshaled across application domain boundaries, it can be used with multiple waits, and it can be used to synchronize threads in different processes. For a comparison of managed synchronization mechanisms, see [Overview of Synchronization Primitives](overview-of-synchronization-primitives.md).  
   
  For code examples, see the reference documentation for the <xref:System.Threading.Mutex.%23ctor%2A> constructors.  
   
@@ -29,7 +27,7 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
  If a thread terminates without releasing a <xref:System.Threading.Mutex>, the mutex is said to be abandoned. This often indicates a serious programming error because the resource the mutex is protecting might be left in an inconsistent state. In the .NET Framework version 2.0, an <xref:System.Threading.AbandonedMutexException> is thrown in the next thread that acquires the mutex.  
   
 > [!NOTE]
->  In the .NET Framework versions 1.0 and 1.1, an abandoned <xref:System.Threading.Mutex> is set to the signaled state and the next waiting thread gets ownership. If no thread is waiting, the <xref:System.Threading.Mutex> remains in a signaled state. No exception is thrown.  
+> In the .NET Framework versions 1.0 and 1.1, an abandoned <xref:System.Threading.Mutex> is set to the signaled state and the next waiting thread gets ownership. If no thread is waiting, the <xref:System.Threading.Mutex> remains in a signaled state. No exception is thrown.  
   
  In the case of a system-wide mutex, an abandoned mutex might indicate that an application has been terminated abruptly (for example, by using Windows Task Manager).  
   
@@ -45,11 +43,11 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
   
 ## See also
 
-- <xref:System.Threading.Mutex?displayProperty=nameWithType>  
-- <xref:System.Threading.Mutex.%23ctor%2A?displayProperty=nameWithType>  
-- <xref:System.Security.AccessControl.MutexSecurity?displayProperty=nameWithType>  
+- <xref:System.Threading.Mutex?displayProperty=nameWithType>
+- <xref:System.Threading.Mutex.%23ctor%2A>
+- <xref:System.Security.AccessControl.MutexSecurity?displayProperty=nameWithType>
 - <xref:System.Security.AccessControl.MutexAccessRule?displayProperty=nameWithType>
-- <xref:System.Threading.Monitor?displayProperty=nameWithType>  
-- [Threading objects and features](threading-objects-and-features.md)  
+- <xref:System.Threading.Monitor?displayProperty=nameWithType>
+- [Threading objects and features](threading-objects-and-features.md)
 - [Threads and threading](threads-and-threading.md)
-- [Threading](index.md)  
+- [Threading](index.md)

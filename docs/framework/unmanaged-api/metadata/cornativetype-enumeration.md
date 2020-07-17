@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: e47a72f1-9609-48ed-bb34-97170d7f6890
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorNativeType Enumeration
 Contains values that describe native unmanaged types.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorNativeType {  
   
     NATIVE_TYPE_END                  = 0x0,  
@@ -74,7 +72,7 @@ typedef enum CorNativeType {
     NATIVE_TYPE_IINSPECTABLE         = 0x2e,  
     NATIVE_TYPE_HSTRING              = 0x2f,  
   
-    NATIVE_TYPE_ERROR                = 0x2d,   
+    NATIVE_TYPE_ERROR                = 0x2d,
   
     NATIVE_TYPE_MAX                  = 0x50  
   
@@ -134,12 +132,13 @@ typedef enum CorNativeType {
 |`NATIVE_TYPE_MAX`|An invalid value.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- <xref:System.Runtime.InteropServices.UnmanagedType>  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.UnmanagedType>
+- [Metadata Enumerations](metadata-enumerations.md)

@@ -10,8 +10,8 @@ Visual Basic cannot determine the default member for the specified object.
   
 ### To correct the error  
   
--   Check the object's documentation and give an explicit specification for the property or method.  
+- Check the object's documentation and give an explicit specification for the property or method.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+## See also
 
+- [Error Types](../programming-guide/language-features/error-types.md)

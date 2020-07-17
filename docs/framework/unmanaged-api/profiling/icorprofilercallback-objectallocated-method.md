@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: eb412622-77cc-4abd-a2cd-c910fe8edd54
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ObjectAllocated Method
 Notifies the profiler that memory within the heap has been allocated for an object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ObjectAllocated(  
     [in] ObjectID objectId,  
     [in] ClassID classId);  
 ```  
   
-#### Parameters  
+## Parameters  
  `objectId`  
  [in] The ID of the object for which memory was allocated.  
   
@@ -40,7 +38,7 @@ HRESULT ObjectAllocated(
  The `ObjectedAllocated` method is not called for allocations from either the stack or unmanaged memory. The `classId` parameter can refer to a class in managed code that has not been loaded yet. The profiler will receive a class load callback for that class immediately after the `ObjectAllocated` callback.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -48,7 +46,8 @@ HRESULT ObjectAllocated(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)  
- [ClassLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassLoadStarted Method](icorprofilercallback-classloadstarted-method.md)
+- [ClassLoadFinished Method](icorprofilercallback-classloadfinished-method.md)

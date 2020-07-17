@@ -1,5 +1,6 @@
 ---
 title: "Synchronous Client Socket Example"
+description: This example .NET Framework program creates a client that connects to a server using a synchronous socket. It sends a string and displays a reply.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -84,7 +85,7 @@ public class SynchronousSocketClient {
             IPEndPoint remoteEP = new IPEndPoint(ipAddress,11000);  
   
             // Create a TCP/IP  socket.  
-            Socket sender = new Socket(ipAddress.AddressFamily,   
+            Socket sender = new Socket(ipAddress.AddressFamily,
                 SocketType.Stream, ProtocolType.Tcp );  
   
             // Connect the socket to the remote endpoint. Catch any errors.  
@@ -129,7 +130,8 @@ public class SynchronousSocketClient {
 }  
 ```  
   
-## See Also  
- [Synchronous Server Socket Example](../../../docs/framework/network-programming/synchronous-server-socket-example.md)  
- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)  
- [Socket Code Examples](../../../docs/framework/network-programming/socket-code-examples.md)
+## See also
+
+- [Synchronous Server Socket Example](synchronous-server-socket-example.md)
+- [Using a Synchronous Client Socket](using-a-synchronous-client-socket.md)
+- [Socket Code Examples](socket-code-examples.md)

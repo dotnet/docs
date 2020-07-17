@@ -9,7 +9,8 @@ System.ServiceModel.MetadataExchangeClientReceiveReply
 ## Description  
  The MetadataExchangeClient received a reply.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+
+- [Tracing](index.md)
+- [Using Tracing to Troubleshoot Your Application](using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../index.md)

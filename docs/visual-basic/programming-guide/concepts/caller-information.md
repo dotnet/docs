@@ -1,5 +1,5 @@
 ---
-title: "Caller Information (Visual Basic)"
+title: "Caller Information"
 ms.date: 07/20/2015
 ms.assetid: 15d556eb-4d0c-4497-98a3-7f60abb7d6a1
 ---
@@ -49,12 +49,12 @@ End Sub
   
  You can explicitly supply the optional arguments to control the caller information or to hide caller information.  
   
-###  <a name="MEMBERNAMES"></a> Member Names  
+### <a name="MEMBERNAMES"></a> Member Names  
  You can use the `CallerMemberName` attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that **Rename Refactoring** doesn't change the `String` values. This benefit is especially useful for the following tasks:  
   
--   Using tracing and diagnostic routines.  
+- Using tracing and diagnostic routines.  
   
--   Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed, so that the control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.  
+- Implementing the <xref:System.ComponentModel.INotifyPropertyChanged> interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed, so that the control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.  
   
  The following chart shows the member names that are returned when you use the `CallerMemberName` attribute.  
   
@@ -68,8 +68,9 @@ End Sub
 |Attribute constructor|The name of the member to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element.|  
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|  
   
-## See Also  
- [Attributes (Visual Basic)](../../../visual-basic/language-reference/attributes.md)  
- [Common Attributes (Visual Basic)](../../../visual-basic/programming-guide/concepts/attributes/common-attributes.md)  
- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
- [Programming Concepts (Visual Basic)](../../../visual-basic/programming-guide/concepts/index.md)
+## See also
+
+- [Attributes (Visual Basic)](../../language-reference/attributes.md)
+- [Common Attributes (Visual Basic)](attributes/common-attributes.md)
+- [Optional Parameters](../language-features/procedures/optional-parameters.md)
+- [Programming Concepts (Visual Basic)](index.md)

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c268c49e-32b9-4171-b782-dcb7b065fa73
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Select XML Data Using XPathNavigator
 The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used to select a set of nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object using an XPath expression. Once selected, you can iterate over the selected set of nodes.  
@@ -18,9 +16,9 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
 ### Selecting Nodes Using XPath Expressions  
  To select a set of nodes using an XPath expression, use one of the following selection methods.  
   
--   <xref:System.Xml.XPath.XPathNavigator.Select%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.Select%2A>  
   
--   <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
+- <xref:System.Xml.XPath.XPathNavigator.SelectSingleNode%2A>  
   
  When called, these methods return a set of nodes that you can navigate freely using an <xref:System.Xml.XPath.XPathNodeIterator> object or an <xref:System.Xml.XPath.XPathNavigator> object in the case of a single selected node.  
   
@@ -58,12 +56,12 @@ while(nodes.MoveNext())
   
 ## See also
 
-- <xref:System.Xml.XmlDocument>  
-- <xref:System.Xml.XPath.XPathDocument>  
-- <xref:System.Xml.XPath.XPathNavigator>  
-- [Process XML Data Using the XPath Data Model](../../../../docs/standard/data/xml/process-xml-data-using-the-xpath-data-model.md)  
-- [Evaluate XPath Expressions using XPathNavigator](../../../../docs/standard/data/xml/evaluate-xpath-expressions-using-xpathnavigator.md)  
-- [Matching Nodes using XPathNavigator](../../../../docs/standard/data/xml/matching-nodes-using-xpathnavigator.md)  
-- [Node Types Recognized with XPath Queries](../../../../docs/standard/data/xml/node-types-recognized-with-xpath-queries.md)  
-- [XPath Queries and Namespaces](../../../../docs/standard/data/xml/xpath-queries-and-namespaces.md)  
-- [Compiled XPath Expressions](../../../../docs/standard/data/xml/compiled-xpath-expressions.md)
+- <xref:System.Xml.XmlDocument>
+- <xref:System.Xml.XPath.XPathDocument>
+- <xref:System.Xml.XPath.XPathNavigator>
+- [Process XML Data Using the XPath Data Model](process-xml-data-using-the-xpath-data-model.md)
+- [Evaluate XPath Expressions using XPathNavigator](evaluate-xpath-expressions-using-xpathnavigator.md)
+- [Matching Nodes using XPathNavigator](matching-nodes-using-xpathnavigator.md)
+- [Node Types Recognized with XPath Queries](node-types-recognized-with-xpath-queries.md)
+- [XPath Queries and Namespaces](xpath-queries-and-namespaces.md)
+- [Compiled XPath Expressions](compiled-xpath-expressions.md)

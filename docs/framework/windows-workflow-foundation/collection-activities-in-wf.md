@@ -7,7 +7,7 @@ ms.assetid: 2680c3e2-9902-4968-b98d-cab776103dbe
 Collection activities are used to work with collection objects in a workflow. [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] has system-provided activities for adding and removing items from a collection, testing for the existence of an item in a collection, and clearing a collection. `ExistsInCollection` and `RemoveFromCollection` have an <xref:System.Activities.OutArgument%601> of type <xref:System.Boolean>, which indicates the result.  
   
 > [!IMPORTANT]
->  If a collection activity is executed before setting the underlying collection object, an <xref:System.InvalidOperationException> is thrown and the activity faults.  
+> If a collection activity is executed before setting the underlying collection object, an <xref:System.InvalidOperationException> is thrown and the activity faults.  
   
 ## Collection activities  
   
@@ -37,7 +37,7 @@ Activity wf = new Sequence
 {  
     Variables = { fruitList, result },  
   
-    Activities =   
+    Activities =
     {  
         new If  
         {  
@@ -237,7 +237,7 @@ Activity wf = new Sequence
 {  
     Variables = { fruitList, result },  
   
-    Activities =   
+    Activities =
     {  
         new If  
         {  
@@ -419,5 +419,6 @@ Activity wf = new Sequence
 </Sequence>  
 ```  
   
-## See Also  
- [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md)
+## See also
+
+- [Authoring Workflows, Activities, and Expressions Using Imperative Code](authoring-workflows-activities-and-expressions-using-imperative-code.md)

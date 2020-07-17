@@ -15,25 +15,23 @@ helpviewer_keywords:
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::ReadVirtual Method
 Reads data from the specified virtual memory address into the specified buffer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReadVirtual (  
     [in] CLRDATA_ADDRESS    address,  
-    [out, size_is(bytesRequested), length_is(*bytesRead)]   
+    [out, size_is(bytesRequested), length_is(*bytesRead)]
         BYTE                *buffer,  
     [in] ULONG32            bytesRequested,  
     [out] ULONG32           *bytesRead  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A CLRDATA_ADDRESS that stores the virtual memory address.  
   
@@ -47,7 +45,7 @@ HRESULT ReadVirtual (
  [out] A pointer to the number of bytes returned.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -55,5 +53,6 @@ HRESULT ReadVirtual (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+## See also
+
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

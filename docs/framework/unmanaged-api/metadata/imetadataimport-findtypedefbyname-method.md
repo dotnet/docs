@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f4c2cd88-ac28-4bad-9ab1-2cf9d2de41e6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::FindTypeDefByName Method
 Gets a pointer to the TypeDef metadata token for the <xref:System.Type> with the specified name.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindTypeDefByName  
    [in]  LPCWSTR       szTypeDef,  
    [in]  mdToken       tkEnclosingClass,  
@@ -31,7 +29,7 @@ HRESULT FindTypeDefByName
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szTypeDef`  
  [in] The name of the type for which to get the TypeDef token.  
   
@@ -42,7 +40,7 @@ HRESULT FindTypeDefByName
  [out] A pointer to the matching TypeDef token.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,6 +48,7 @@ HRESULT FindTypeDefByName
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

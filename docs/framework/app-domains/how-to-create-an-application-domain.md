@@ -1,5 +1,6 @@
 ---
 title: "How to: Create an Application Domain"
+description: Review how to create an application domain in .NET. You can create an application domain to load assemblies to manage personally, or create one to execute code.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -8,8 +9,6 @@ dev_langs:
 helpviewer_keywords: 
   - "application domains, creating"
 ms.assetid: ba1fa43e-49f5-47d9-bd7f-3024af16f4ba
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create an Application Domain
 A common language runtime host creates application domains automatically when they are needed. However, you can create your own application domains and load into them those assemblies that you want to manage personally. You can also create application domains from which you execute code.  
@@ -23,6 +22,7 @@ A common language runtime host creates application domains automatically when th
  [!code-csharp[ADCreateDomain#2](../../../samples/snippets/csharp/VS_Snippets_CLR/ADCreateDomain/CS/source2.cs#2)]
  [!code-vb[ADCreateDomain#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/ADCreateDomain/VB/source2.vb#2)]  
   
-## See Also  
-- [Programming with Application Domains](application-domains.md#programming-with-application-domains)  
-- [Using Application Domains](../../../docs/framework/app-domains/use.md)
+## See also
+
+- [Programming with Application Domains](application-domains.md#programming-with-application-domains)
+- [Using Application Domains](use.md)

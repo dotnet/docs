@@ -26,7 +26,7 @@ HttpWResp.Close()
 ```  
   
 ```csharp  
-HttpWebRequest HttpWReq =   
+HttpWebRequest HttpWReq =
     (HttpWebRequest)WebRequest.Create("http://www.contoso.com");  
 // Turn off connection keep-alives.  
 HttpWReq.KeepAlive = false;  
@@ -41,9 +41,10 @@ HttpWResp.Close();
 ## Compiling the Code  
  This example requires:  
   
--   References to the **System.Net** namespace.  
+- References to the **System.Net** namespace.  
   
-## See Also  
- [Accessing the Internet Through a Proxy](../../../docs/framework/network-programming/accessing-the-internet-through-a-proxy.md)  
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)  
- [HTTP](../../../docs/framework/network-programming/http.md)
+## See also
+
+- [Accessing the Internet Through a Proxy](accessing-the-internet-through-a-proxy.md)
+- [Using Application Protocols](using-application-protocols.md)
+- [HTTP](http.md)

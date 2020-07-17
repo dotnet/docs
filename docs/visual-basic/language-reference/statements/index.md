@@ -1,5 +1,5 @@
 ---
-title: "Statements (Visual Basic)"
+title: "Statements"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "statements [Visual Basic]"
@@ -9,23 +9,22 @@ ms.assetid: 1cbd7703-8d3b-48fd-831e-14c9cc85675a
 The topics in this section contain tables of the Visual Basic declaration and executable statements, and of important lists that apply to many statements.  
   
 ## In This Section  
- [A-E Statements](../../../visual-basic/language-reference/statements/a-e-statements.md)  
+ [A-E Statements](a-e-statements.md)  
   
- [F-P Statements](../../../visual-basic/language-reference/statements/f-p-statements.md)  
+ [F-P Statements](f-p-statements.md)  
   
- [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)  
+ [Q-Z Statements](q-z-statements.md)  
   
- [Clauses](../../../visual-basic/language-reference/statements/clauses.md)  
+ [Clauses](clauses.md)  
   
- [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)  
+ [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md)  
   
- [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md)  
+ [Attribute List](attribute-list.md)  
   
- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)  
+ [Parameter List](parameter-list.md)  
   
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
+ [Type List](type-list.md)  
   
 ## Related Sections  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
+ [Visual Basic Language Reference](../index.md)  
   
- [Visual Basic](../../../visual-basic/index.md)

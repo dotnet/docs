@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:mstns="urn:msdn-com:public-content-syndication/2006/09/common" xmlns="urn:msdn-com:public-content-syndication/2006/09/common" elementFormDefault="qualified" targetNamespace="urn:msdn-com:public-content-syndication/2006/09/common" id="urn_msdn_com_public_content_syndication_2006_09_common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="appId">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="value" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="mtpsFaultDetailType">
+    <xs:sequence>
+      <xs:element name="eventId" type="xs:string" />
+      <xs:element name="source" type="xs:string" />
+      <xs:element name="helpLink" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="appId" type="mstns:appId" />
+</xs:schema>

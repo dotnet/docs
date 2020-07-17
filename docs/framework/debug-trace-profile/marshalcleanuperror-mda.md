@@ -1,5 +1,6 @@
 ---
 title: "marshalCleanupError MDA"
+description: Review the marshalCleanupError managed debugging assistant (MDA), which is invoked because an unexpected error occurred while cleaning up temporary structures.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "cleanup operations"
@@ -10,8 +11,6 @@ helpviewer_keywords:
   - "MarshalCleanupError MDA"
   - "memory, cleanup errors"
 ms.assetid: 2f5d9e7c-ae51-4155-a435-54347aa1f091
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # marshalCleanupError MDA
 The `marshalCleanupError` managed debugging assistant (MDA) is activated when the common language runtime (CLR) encounters an error while attempting to clean up temporary structures and memory used for marshaling data types between native and managed code boundaries.  
@@ -41,7 +40,8 @@ The `marshalCleanupError` managed debugging assistant (MDA) is activated when th
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

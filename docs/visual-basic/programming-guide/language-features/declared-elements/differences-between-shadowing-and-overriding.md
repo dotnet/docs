@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Shadowing and Overriding (Visual Basic)"
+title: "Differences Between Shadowing and Overriding"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "shadowing, vs. overriding"
@@ -35,21 +35,22 @@ When you define a class that inherits from a base class, you sometimes want to r
 ## Guidelines  
  You normally use overriding in the following cases:  
   
--   You are defining polymorphic derived classes.  
+- You are defining polymorphic derived classes.  
   
--   You want the safety of having the compiler enforce the identical element type and calling sequence.  
+- You want the safety of having the compiler enforce the identical element type and calling sequence.  
   
  You normally use shadowing in the following cases:  
   
--   You anticipate that your base class might be modified and define an element using the same name as yours.  
+- You anticipate that your base class might be modified and define an element using the same name as yours.  
   
--   You want the freedom of changing the element type or calling sequence.  
+- You want the freedom of changing the element type or calling sequence.  
   
-## See Also  
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)  
- [How to: Hide a Variable with the Same Name as Your Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-a-variable-with-the-same-name-as-your-variable.md)  
- [How to: Hide an Inherited Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-an-inherited-variable.md)  
- [How to: Access a Variable Hidden by a Derived Class](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-access-a-variable-hidden-by-a-derived-class.md)  
- [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md)  
- [Overrides](../../../../visual-basic/language-reference/modifiers/overrides.md)
+## See also
+
+- [References to Declared Elements](references-to-declared-elements.md)
+- [Shadowing in Visual Basic](shadowing.md)
+- [How to: Hide a Variable with the Same Name as Your Variable](how-to-hide-a-variable-with-the-same-name-as-your-variable.md)
+- [How to: Hide an Inherited Variable](how-to-hide-an-inherited-variable.md)
+- [How to: Access a Variable Hidden by a Derived Class](how-to-access-a-variable-hidden-by-a-derived-class.md)
+- [Shadows](../../../language-reference/modifiers/shadows.md)
+- [Overrides](../../../language-reference/modifiers/overrides.md)

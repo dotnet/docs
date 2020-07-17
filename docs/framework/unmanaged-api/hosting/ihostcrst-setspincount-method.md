@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 863fc8ce-9b8a-477e-8dd8-75c8544bb43a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostCrst::SetSpinCount Method
-Sets the spin count for the current [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance.  
+Sets the spin count for the current [IHostCrst](ihostcrst-interface.md) instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSpinCount (  
     [in] DWORD dwSpinCount  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwSpinCount`  
  [in] The new spin count for the current `IHostCrst` instance.  
   
@@ -45,12 +43,12 @@ HRESULT SetSpinCount (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
- On multi-processor systems, if the critical section represented by the current `IHostCrst` instance is unavailable, a calling thread spins `dwSpinCount` times before calling [IHostSemaphore::Wait](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-wait-method.md) on a semaphore associated with the critical section. If the critical section becomes free during the spin operation, the calling thread avoids the wait operation.  
+ On multi-processor systems, if the critical section represented by the current `IHostCrst` instance is unavailable, a calling thread spins `dwSpinCount` times before calling [IHostSemaphore::Wait](ihostsemaphore-wait-method.md) on a semaphore associated with the critical section. If the critical section becomes free during the spin operation, the calling thread avoids the wait operation.  
   
  The usage of `dwSpinCount` is identical to the usage of the parameter of the same name in the Win32 `InitializeCriticalSectionAndSpinCount` function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -58,7 +56,8 @@ HRESULT SetSpinCount (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostCrst Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+## See also
+
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostCrst Interface](ihostcrst-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

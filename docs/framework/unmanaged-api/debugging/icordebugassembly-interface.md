@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAssembly Interface1"
+title: "ICorDebugAssembly Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAssembly"
@@ -14,29 +14,28 @@ helpviewer_keywords:
 ms.assetid: 9d657a28-6984-4c5e-8a54-89d20080baff
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugAssembly Interface1
+# ICorDebugAssembly Interface
+
 Represents an assembly.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumerateModules Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-enumeratemodules-method.md)|Gets an enumerator for the modules contained in the assembly.|  
-|[GetAppDomain Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-getappdomain-method.md)|Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.|  
-|[GetCodeBase Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-getcodebase-method.md)|Not implemented in the current version of the .NET Framework.|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-getname-method.md)|Gets the name of the assembly.|  
-|[GetProcess Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly-getprocess-method.md)|Gets the ICorDebugProcess instance in which the assembly is running.|  
+|[EnumerateModules Method](icordebugassembly-enumeratemodules-method.md)|Gets an enumerator for the modules contained in the assembly.|  
+|[GetAppDomain Method](icordebugassembly-getappdomain-method.md)|Gets an interface pointer to the application domain that contains this `ICorDebugAssembly` instance.|  
+|[GetCodeBase Method](icordebugassembly-getcodebase-method.md)|Not implemented in the current version of the .NET Framework.|  
+|[GetName Method](icordebugassembly-getname-method.md)|Gets the name of the assembly.|  
+|[GetProcess Method](icordebugassembly-getprocess-method.md)|Gets the ICorDebugProcess instance in which the assembly is running.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -44,5 +43,6 @@ Represents an assembly.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

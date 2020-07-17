@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: ee518bda-3296-482e-a7b7-e9d51dd1a181
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetTypeSpecFromToken Method
 Gets the binary metadata signature of the type specification represented by the specified token.  
   
 ## Syntax  
   
-```  
-HRESULT GetTypeSpecFromToken (   
-   [in]  mdTypeSpec            typespec,   
-   [out] PCCOR_SIGNATURE       *ppvSig,   
+```cpp  
+HRESULT GetTypeSpecFromToken (
+   [in]  mdTypeSpec            typespec,
+   [out] PCCOR_SIGNATURE       *ppvSig,
    [out] ULONG                 *pcbSig  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `typespec`  
  [in] The TypeSpec token associated with the requested metadata signature.  
   
@@ -45,7 +43,7 @@ HRESULT GetTypeSpecFromToken (
  An HRESULT that indicates success or failure. Failures can be tested with the FAILED macro.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -53,6 +51,7 @@ HRESULT GetTypeSpecFromToken (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

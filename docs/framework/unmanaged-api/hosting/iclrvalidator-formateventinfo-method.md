@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 808e1f1d-52f4-47c4-83cc-dcf47d075219
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRValidator::FormatEventInfo Method
 Gets a detailed message about the specified validation error.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FormatEventInfo (  
     [in] HRESULT            hVECode,  
     [in] VEContext          Context,  
@@ -33,7 +31,7 @@ HRESULT FormatEventInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hVECode`  
  [in] The HRESULT value that was passed to the validation error handler.  
   
@@ -61,7 +59,7 @@ HRESULT FormatEventInfo (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** IValidator.idl, IValidator.h  
   
@@ -69,6 +67,7 @@ HRESULT FormatEventInfo (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)  
- [ICLRValidator Interface](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)
+## See also
+
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)
+- [ICLRValidator Interface](iclrvalidator-interface.md)

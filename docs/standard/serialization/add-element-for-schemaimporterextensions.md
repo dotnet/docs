@@ -1,13 +1,14 @@
 ---
-title: "&lt;add&gt; Element for &lt;schemaImporterExtensions&gt;"
+title: "<add> Element for <schemaImporterExtensions>"
+description: The <add> element adds types used by the XmlSchemaImporter class for mapping XSD types to .NET Framework types. 
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML serialization, configuration"
   - "<add> element for <schemaImporterExtensions> element"
 ms.assetid: c828a558-094b-441e-9065-790b87315fa0
 ---
-# &lt;add&gt; Element for &lt;schemaImporterExtensions&gt;
-Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md).  
+# \<add> Element for \<schemaImporterExtensions>
+Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for mapping XSD types to .NET Framework types. For more information about configuration files, see [Configuration File Schema](../../framework/configure-apps/file-schema/index.md).  
   
  \<configuration>  
 \<system.xml.serialization>  
@@ -46,9 +47,9 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 <configuration>  
   <system.xml.serialization>  
     <schemaImporterExtensions>  
-       <add name="contoso" type="System.Web.Mobile.MobileCapabilities,   
-       System.Web.Mobile, Version=2.0.0.0, Culture=neutral,   
-       PublicKeyToken=b03f5f7f11d50a3a" />   
+       <add name="contoso" type="System.Web.Mobile.MobileCapabilities,
+       System.Web.Mobile, Version=2.0.0.0, Culture=neutral,
+       PublicKeyToken=b03f5f7f11d50a3a" />
     </schemaImporterExtensions>  
   </system.xml.serialization>  
 </configuration>  
@@ -56,6 +57,6 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
   
 ## See also
 
-- <xref:System.Xml.Serialization.XmlSchemaImporter>  
-- [\<system.xml.serialization> Element](../../../docs/standard/serialization/system-xml-serialization-element.md)  
-- [\<schemaImporterExtensions> Element](../../../docs/standard/serialization/schemaimporterextensions-element.md)
+- <xref:System.Xml.Serialization.XmlSchemaImporter>
+- [\<system.xml.serialization> Element](system-xml-serialization-element.md)
+- [\<schemaImporterExtensions> Element](schemaimporterextensions-element.md)

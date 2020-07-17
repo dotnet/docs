@@ -1,7 +1,5 @@
 ---
 title: "try-catch-finally - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "catch-finally_CSharpKeyword"
@@ -23,7 +21,7 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The try statement](~/_csharplang/spec/statements.md#the-try-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
@@ -31,7 +29,6 @@ A common usage of `catch` and `finally` together is to obtain and use resources 
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [try, throw, and catch Statements (C++)](/cpp/cpp/try-throw-and-catch-statements-cpp)
-- [Exception Handling Statements](exception-handling-statements.md)
 - [throw](throw.md)
 - [How to: Explicitly Throw Exceptions](../../../standard/exceptions/how-to-explicitly-throw-exceptions.md)
 - [using Statement](using-statement.md)

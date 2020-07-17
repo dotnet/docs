@@ -1,7 +1,7 @@
 ---
 title: Perform inner joins (LINQ in C#)
 description: Learn how to perform inner joins using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 45bceed6-f549-4114-a9b1-b44feb497742
 ---
 # Perform inner joins
@@ -60,8 +60,8 @@ The result of `query1` is equivalent to the result set that would have been obta
 
 ## See also
 
-- <xref:System.Linq.Enumerable.Join%2A>  
-- <xref:System.Linq.Enumerable.GroupJoin%2A>  
-- [Perform grouped joins](perform-grouped-joins.md)  
-- [Perform left outer joins](perform-left-outer-joins.md)  
-- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
+- <xref:System.Linq.Enumerable.Join%2A>
+- <xref:System.Linq.Enumerable.GroupJoin%2A>
+- [Perform grouped joins](perform-grouped-joins.md)
+- [Perform left outer joins](perform-left-outer-joins.md)
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)

@@ -8,22 +8,20 @@ api_location:
 api_type: 
   - "DLLExport"
 ms.assetid: 2d92a746-d68c-4f53-a16e-727f071a2d80
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# _AxlPublicKeyBlobToPublicKeyToken Function
+# \_AxlPublicKeyBlobToPublicKeyToken Function
 Computes the strong name public key token from a CSP PUBLICKEYBLOB format.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _AxlPublicKeyBlobToPublicKeyToken (  
     [in]  PCCERT_CHAIN_CONTEXT   pCspPublicKeyBlob,  
     [out] LPWSTR                 *ppwszPublicKeyToken  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCspPublicKeyBlob`  
  [in] The CSP public key blob.  
   
@@ -33,5 +31,6 @@ HRESULT _AxlPublicKeyBlobToPublicKeyToken (
 ## Return Value  
  `S_OK` if the function succeeds; otherwise `S_FALSE`.  
   
-## See Also  
- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+## See also
+
+- [Authenticode](index.md)

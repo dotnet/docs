@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3afe7252-5f28-48d9-a74d-1927566c404c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataDispenserEx::FindAssembly Method
 This method is not implemented. If called, it returns E_NOTIMPL.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindAssembly(  
     [in]  LPCWSTR  szAppBase,  
     [in]  LPCWSTR  szPrivateBin,  
@@ -35,7 +33,7 @@ HRESULT FindAssembly(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szAppBase`  
  [in] Not used.  
   
@@ -58,7 +56,7 @@ HRESULT FindAssembly(
  [out] The number of characters actually returned in `szName`.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -66,6 +64,7 @@ HRESULT FindAssembly(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+## See also
+
+- [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
+- [IMetaDataDispenser Interface](imetadatadispenser-interface.md)

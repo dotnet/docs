@@ -1,0 +1,24 @@
+import "inspectable.idl";
+import "Windows.Foundation.idl";
+
+#define COMPONENT_VERSION 1.0
+
+namespace Contoso
+{
+    interface ICalculator;
+    runtimeclass Calculator;
+
+    [uuid(5688bac4-cf99-4aae-9f57-7738985ebb96), version(COMPONENT_VERSION), exclusiveto(Calculator)] 
+    interface ICalculator : IInspectable
+    {
+        // <snippet1>
+        HRESULT Add([in] int a, [in] int b, [out, retval] int* value);
+        // </snippet1>
+    }
+
+    [version(COMPONENT_VERSION), activatable(COMPONENT_VERSION)]
+    runtimeclass Calculator
+    {
+        [default] interface ICalculator;
+    }
+}

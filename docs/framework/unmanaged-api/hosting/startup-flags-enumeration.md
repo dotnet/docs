@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4f043594-0c45-4bc6-988e-a6793f0d8d06
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # STARTUP_FLAGS Enumeration
 Contains values that indicate the startup behavior of the common language runtime (CLR). By default, garbage collection is non-concurrent, and only the base class library is loaded into the domain-neutral area.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     STARTUP_CONCURRENT_GC                         = 0x1,  
     STARTUP_LOADER_OPTIMIZATION_MASK              = 0x3<<1,  
@@ -64,12 +62,12 @@ typedef enum {
 |`STARTUP_LEGACY_IMPERSONATION`|Specifies that impersonation should not flow across asynchronous points by default.|  
 |`STARTUP_DISABLE_COMMITTHREADSTACK`|Specifies that the full thread stack should not be committed when the thread starts running.|  
 |`STARTUP_ALWAYSFLOW_IMPERSONATION`|Specifies that managed impersonations and impersonations achieved through platform invoke will flow across asynchronous points. By default, only managed impersonations will flow across asynchronous points.|  
-|`STARTUP_TRIM_GC_COMMIT`|Specifies that garbage collection will use less committed space when system memory is low. See `gcTrimCommitOnLowMemory` in [Optimization for Shared Web Hosting](../../../../docs/standard/garbage-collection/optimization-for-shared-web-hosting.md).|  
-|`STARTUP_ETW`|Specifies that event tracing for Windows (ETW) is enabled for common language runtime events. Beginning with Windows Vista, event tracing is always enabled, so this flag has no effect. See [Controlling .NET Framework Logging](../../../../docs/framework/performance/controlling-logging.md).|  
-|`STARTUP_ARM`|Specifies that application domain resource monitoring is enabled. See the <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> property and [\<appDomainResourceMonitoring> Element](../../../../docs/framework/configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
+|`STARTUP_TRIM_GC_COMMIT`|Specifies that garbage collection will use less committed space when system memory is low. See `gcTrimCommitOnLowMemory` in [Optimization for Shared Web Hosting](../../../standard/garbage-collection/optimization-for-shared-web-hosting.md).|  
+|`STARTUP_ETW`|Specifies that event tracing for Windows (ETW) is enabled for common language runtime events. Beginning with Windows Vista, event tracing is always enabled, so this flag has no effect. See [Controlling .NET Framework Logging](../../performance/controlling-logging.md).|  
+|`STARTUP_ARM`|Specifies that application domain resource monitoring is enabled. See the <xref:System.AppDomain.MonitoringIsEnabled%2A?displayProperty=nameWithType> property and [\<appDomainResourceMonitoring> Element](../../configure-apps/file-schema/runtime/appdomainresourcemonitoring-element.md).|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -77,5 +75,6 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## See also
+
+- [Hosting Enumerations](hosting-enumerations.md)

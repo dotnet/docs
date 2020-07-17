@@ -1,5 +1,6 @@
 ---
 title: "Sockets"
+description: Learn about the .NET Framework Socket class, which is a managed-code version of the socket services provided by the Winsock32 API.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application protocols, sockets"
@@ -23,7 +24,8 @@ The <xref:System.Net.Sockets> namespace contains a managed implementation of the
   
  The **Socket** class supports two basic modes, synchronous and asynchronous. In synchronous mode, calls to functions that perform network operations (such as <xref:System.Net.Sockets.Socket.Send%2A> and <xref:System.Net.Sockets.Socket.Receive%2A>) wait until the operation completes before returning control to the calling program. In asynchronous mode, these calls return immediately.  
   
-## See Also  
- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)  
-    
- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+## See also
+
+- [How to: Create a Socket](how-to-create-a-socket.md)
+
+- [Using Application Protocols](using-application-protocols.md)

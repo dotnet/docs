@@ -2,6 +2,7 @@
 title: Indexers
 description: Learn about C# indexers and how they implement indexed properties, which are properties referenced using one or more arguments.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
 ---
 
@@ -52,7 +53,7 @@ generate the correct storage for an indexer.
 The presence of arguments to reference an item in a set of items distinguishes
 indexers from properties. You may define multiple indexers on a type, as long
 as the argument lists for each indexer is unique. Let's explore different
-scenarios where you might use one or more indexers in a class definition. 
+scenarios where you might use one or more indexers in a class definition.
 
 ## Scenarios
 
@@ -71,7 +72,7 @@ Let's walk through some of the common scenarios for using *indexers*. You can ac
 
 One of the most common scenarios for creating indexers is when your
 type models an array, or a vector. You can create an indexer to model
-an ordered list of data. 
+an ordered list of data.
 
 The advantage of creating your own indexer is that you can define
 the storage for that collection to suit your needs. Imagine a
@@ -260,7 +261,7 @@ public class ArgsActions
 
 In this example, the `ArgsAction` collection maps closely to the underlying collection.
 The `get` determines if a given option has been configured. If so, it returns
-the `Action` associated with that option. If not, it returns an `Action` that 
+the `Action` associated with that option. If not, it returns an `Action` that
 does nothing. The public accessor does not include a `set` accessor. Rather,
 the design using a public method for setting options.
 
@@ -268,11 +269,11 @@ the design using a public method for setting options.
 
 You can create indexers that use multiple arguments. In addition,
 those arguments are not constrained to be the same type. Let's look at
-two examples.   
+two examples.
 
 The first example shows a class that generates values for a Mandelbrot
 set. For more information on the mathematics behind the set, read
-[this article](https://en.wikipedia.org/wiki/Mandelbrot_set). 
+[this article](https://en.wikipedia.org/wiki/Mandelbrot_set).
 The indexer uses two doubles to define a point in the X, Y plane.
 The get accessor computes the number of iterations until a point is
 determined to be not in the set. If the maximum iterations is reached, the point
@@ -319,13 +320,13 @@ point when code calls the `get` accessor. There's no underlying storage used.
 
 Let's examine one last use of indexers, where the indexer takes multiple arguments
 of different types. Consider a program that manages historical temperature
-data. This indexer uses a city and a date to set or get the high and low 
+data. This indexer uses a city and a date to set or get the high and low
 temperatures for that location:
 
 ```csharp
-using DateMeasurements = 
+using DateMeasurements =
     System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
-using CityDataMeasurements = 
+using CityDataMeasurements =
     System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>>;
 
 public class HistoricalWeatherData
@@ -375,7 +376,7 @@ to create a public interface that represents your abstraction, even though
 the underlying storage must use different core collection types.
 
 There are two parts of this code that may be unfamiliar
-to some developers. These two `using` statements:
+to some developers. These two `using` directives:
 
 ```csharp
 using DateMeasurements = System.Collections.Generic.Dictionary<System.DateTime, IndexersSamples.Common.Measurements>;
@@ -385,12 +386,12 @@ using CityDataMeasurements = System.Collections.Generic.Dictionary<string, Syste
 create an *alias* for a constructed generic type. Those statements enable the
 code later to use the more descriptive `DateMeasurements` and `CityDateMeasurements`
 names instead of the generic construction of `Dictionary<DateTime, Measurements>`
-and `Dictionary<string, Dictionary<DateTime, Measurements> >`. 
+and `Dictionary<string, Dictionary<DateTime, Measurements> >`.
 This construct does require using the fully qualified type names on the right
 side of the `=` sign.
 
 The second technique is to strip off the time portions of any `DateTime` object
-used to index into the collections. The .NET framework does not include a Date only type.
+used to index into the collections. .NET doesn't include a date-only type.
 Developers use the `DateTime` type, but use the `Date` property to ensure that any
 `DateTime` object from that day are equal.
 
@@ -401,5 +402,5 @@ class where that property represents not a single value, but rather a collection
 of values where each individual item is identified by a set of arguments. Those
 arguments can uniquely identify which item in the collection should be referenced.
 Indexers extend the concept of [properties](properties.md), where a member is treated
-like a data item from outside the class, but like a method on the side. Indexers allow
+like a data item from outside the class, but like a method on the inside. Indexers allow
 arguments to find a single item in a property that represents a set of items.

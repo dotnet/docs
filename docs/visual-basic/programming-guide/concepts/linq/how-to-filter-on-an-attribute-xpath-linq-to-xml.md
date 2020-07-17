@@ -1,5 +1,5 @@
 ---
-title: "How to: Filter on an Attribute (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Filter on an Attribute (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: ffefb9d6-45ec-4677-a396-dd9c2b36298f
 ---
@@ -13,7 +13,7 @@ This topic shows how to get the descendant elements with a specified name, and w
 ## Example  
  This example finds all descendants elements with the name of `Address`, and with a `Type` attribute with a value of "Shipping".  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
 Dim po As XDocument = XDocument.Load("PurchaseOrders.xml")  
@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Address Type="Shipping">  
   <Name>Ellen Adams</Name>  
@@ -69,5 +69,6 @@ Results are identical
 </Address>  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

@@ -1,5 +1,5 @@
 ---
-title: "Arrays Summary (Visual Basic)"
+title: "Arrays Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arrays [Visual Basic]"
@@ -11,10 +11,11 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Action|Language element|  
 |------------|----------------------|  
 |Verify an array.|<xref:Microsoft.VisualBasic.Information.IsArray%2A>|  
-|Declare and initialize an array.|[Dim](../../../visual-basic/language-reference/statements/dim-statement.md), [Private](../../../visual-basic/language-reference/modifiers/private.md), [Public](../../../visual-basic/language-reference/modifiers/public.md), [ReDim](../../../visual-basic/language-reference/statements/redim-statement.md)|  
+|Declare and initialize an array.|[Dim](../statements/dim-statement.md), [Private](../modifiers/private.md), [Public](../modifiers/public.md), [ReDim](../statements/redim-statement.md)|  
 |Find the limits of an array.|<xref:Microsoft.VisualBasic.Information.LBound%2A>, <xref:Microsoft.VisualBasic.Information.UBound%2A>|  
-|Reinitialize an array|[Erase](../../../visual-basic/language-reference/statements/erase-statement.md), [ReDim](../../../visual-basic/language-reference/statements/redim-statement.md)|  
+|Reinitialize an array|[Erase](../statements/erase-statement.md), [ReDim](../statements/redim-statement.md)|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)

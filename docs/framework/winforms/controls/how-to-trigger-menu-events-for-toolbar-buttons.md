@@ -14,7 +14,7 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
 ---
 # How to: Trigger Menu Events for Toolbar Buttons
 > [!NOTE]
->  The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
  If your Windows Form features a <xref:System.Windows.Forms.ToolBar> control with toolbar buttons, you will want to know which button the user clicks.  
   
@@ -24,7 +24,7 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
   
 ### To handle the Click event on a toolbar  
   
-1.  In a procedure, add toolbar buttons to the <xref:System.Windows.Forms.ToolBar> control.  
+1. In a procedure, add toolbar buttons to the <xref:System.Windows.Forms.ToolBar> control.  
   
     ```vb  
     Public Sub ToolBarConfig()  
@@ -39,13 +39,13 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
     ```  
   
     ```csharp  
-    public void ToolBarConfig()   
+    public void ToolBarConfig()
     {  
        toolBar1.Buttons.Add(new ToolBarButton("One"));  
        toolBar1.Buttons.Add(new ToolBarButton("Two"));  
        toolBar1.Buttons.Add(new ToolBarButton("Three"));  
   
-       toolBar1.ButtonClick +=   
+       toolBar1.ButtonClick +=
           new ToolBarButtonClickEventHandler(this.toolBar1_ButtonClick);  
     }  
     ```  
@@ -58,16 +58,16 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
           toolBar1->Buttons->Add(gcnew ToolBarButton("Two"));  
           toolBar1->Buttons->Add(gcnew ToolBarButton("Three"));  
   
-          toolBar1->ButtonClick +=   
+          toolBar1->ButtonClick +=
              gcnew ToolBarButtonClickEventHandler(this,  
              &Form1::toolBar1_ButtonClick);  
        }  
     ```  
   
-2.  Add an event handler for the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.ButtonClick> event. Use a case switching statement and the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> class to determine the toolbar button that was clicked. Based on this, show an appropriate message box.  
+2. Add an event handler for the <xref:System.Windows.Forms.ToolBar> control's <xref:System.Windows.Forms.ToolBar.ButtonClick> event. Use a case switching statement and the <xref:System.Windows.Forms.ToolBarButtonClickEventArgs> class to determine the toolbar button that was clicked. Based on this, show an appropriate message box.  
   
     > [!NOTE]
-    >  A message box is being used solely as a placeholder in this example. Feel free to add other code to execute when the toolbar buttons are clicked.  
+    > A message box is being used solely as a placeholder in this example. Feel free to add other code to execute when the toolbar buttons are clicked.  
   
     ```vb  
     Protected Sub ToolBar1_ButtonClick(ByVal sender As Object, _  
@@ -128,8 +128,9 @@ ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
        }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolBar>  
- [How to: Add Buttons to a ToolBar Control](../../../../docs/framework/winforms/controls/how-to-add-buttons-to-a-toolbar-control.md)  
- [How to: Define an Icon for a ToolBar Button](../../../../docs/framework/winforms/controls/how-to-define-an-icon-for-a-toolbar-button.md)  
- [ToolBar Control](../../../../docs/framework/winforms/controls/toolbar-control-windows-forms.md)
+## See also
+
+- <xref:System.Windows.Forms.ToolBar>
+- [How to: Add Buttons to a ToolBar Control](how-to-add-buttons-to-a-toolbar-control.md)
+- [How to: Define an Icon for a ToolBar Button](how-to-define-an-icon-for-a-toolbar-button.md)
+- [ToolBar Control](toolbar-control-windows-forms.md)

@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: ce259d1d-cd81-4490-a7a1-0d0ea0804872
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRGCManager::GetStats Method
 Gets a set of current statistics about the common language runtime's garbage collection system.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStats (  
     [in, out] COR_GC_STATS *pStats  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStats`  
- [in, out] A [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) instance that contains the requested statistics.  
+ [in, out] A [COR_GC_STATS](cor-gc-stats-structure.md) instance that contains the requested statistics.  
   
 ## Return Value  
   
@@ -47,18 +45,18 @@ HRESULT GetStats (
 ## Remarks  
  The CLR calculates and returns only those statistics that are specified by the `Flags` field of `pStats`.  
   
- Set the `Flags` field to one or more values of the [COR_GC_STAT_TYPES](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stat-types-enumeration.md) enumeration to specify which statistics in the [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) structure are to be set.  
+ Set the `Flags` field to one or more values of the [COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md) enumeration to specify which statistics in the [COR_GC_STATS](cor-gc-stats-structure.md) structure are to be set.  
   
  An example of the usage is as follows:  
   
-```  
+```cpp  
 COR_GC_STATS GCStats;  
 GCStats.Flags = COR_GC_COUNTS | COR_GC_MEMORYUSAGE;  
 pCLRGCManager->GetStats(&GCStats);  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -66,13 +64,14 @@ pCLRGCManager->GetStats(&GCStats);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
- [COR_GC_STATS Structure](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md)  
- [COR_GC_STAT_TYPES Enumeration](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stat-types-enumeration.md)  
- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)  
- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+
+- [Automatic Memory Management](../../../standard/automatic-memory-management.md)
+- [COR_GC_STATS Structure](cor-gc-stats-structure.md)
+- [COR_GC_STAT_TYPES Enumeration](cor-gc-stat-types-enumeration.md)
+- [Garbage Collection](../../../standard/garbage-collection/index.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRGCManager Interface](iclrgcmanager-interface.md)
+- [CLR Hosting Interfaces](clr-hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

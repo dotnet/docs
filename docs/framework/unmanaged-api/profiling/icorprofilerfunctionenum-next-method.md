@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 5ed4aa83-ce56-4b9f-9237-5da7587787fe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionEnum::Next Method
 Gets the specified number of contiguous functions from a sequential collection of functions, starting at the enumerator's current position in the sequence.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Next([in]  ULONG      celt,  
              [out, size_is(celt), length_is(*pceltFetched)]  
                     COR_PRF_FUNCTION ids[],  
              [out] ULONG *   pceltFetched);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of functions to retrieve.  
   
@@ -49,7 +47,7 @@ HRESULT Next([in]  ULONG      celt,
 |S_FALSE|Fewer than `celt` elements were returned, which indicates that the enumeration is complete.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -57,6 +55,7 @@ HRESULT Next([in]  ULONG      celt,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+## See also
+
+- [ICorProfilerFunctionEnum Interface](icorprofilerfunctionenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

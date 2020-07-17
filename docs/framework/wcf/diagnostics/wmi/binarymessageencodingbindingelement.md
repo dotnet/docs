@@ -58,5 +58,6 @@ class BinaryMessageEncodingBindingElement : MessageEncodingBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement>

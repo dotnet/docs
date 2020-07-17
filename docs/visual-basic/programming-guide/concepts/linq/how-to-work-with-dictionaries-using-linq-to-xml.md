@@ -1,5 +1,5 @@
 ---
-title: "How to: Work with Dictionaries Using LINQ to XML (Visual Basic)"
+title: "How to: Work with Dictionaries Using LINQ to XML"
 ms.date: 07/20/2015
 ms.assetid: 6cb3f969-1986-414a-b850-87418712edea
 ---
@@ -57,12 +57,13 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 Child1:Value1  
 Child2:Value2  
 Child3:Value3  
 Child4:Value4  
 ```  
   
-## See Also  
- [Projections and Transformations (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+## See also
+
+- [Projections and Transformations (LINQ to XML) (Visual Basic)](projections-and-transformations-linq-to-xml.md)

@@ -15,11 +15,10 @@ helpviewer_keywords:
 ms.assetid: 85e2108b-ff03-4a15-ac5c-1eb5d84f38ca
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetString Method
 `GetString` is obsolete. Do not call this method.  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

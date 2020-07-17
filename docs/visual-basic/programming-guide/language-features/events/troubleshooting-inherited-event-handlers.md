@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Inherited Event Handlers in Visual Basic"
+title: "Troubleshooting Inherited Event Handlers"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "troubleshooting events [Visual Basic]"
@@ -16,11 +16,12 @@ This topic lists common issues that arise with event handlers in inherited compo
   
 #### Code in Event Handler Executes Twice for Every Call  
   
--   An inherited event handler must not include a [Handles](../../../../visual-basic/language-reference/statements/handles-clause.md) clause. The method in the base class is already associated with the event and will fire accordingly. Remove the `Handles` clause from the inherited method.  
+- An inherited event handler must not include a [Handles](../../../language-reference/statements/handles-clause.md) clause. The method in the base class is already associated with the event and will fire accordingly. Remove the `Handles` clause from the inherited method.  
   
-     [!code-vb[VbVbalrEvents#32](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/troubleshooting-inherited-event-handlers_1.vb)]  
+     [!code-vb[VbVbalrEvents#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#32)]  
   
--   If the inherited method does not have a `Handles` keyword, verify that your code does not contain an extra [AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md) or any additional methods that handle the same event.  
+- If the inherited method does not have a `Handles` keyword, verify that your code does not contain an extra [AddHandler Statement](../../../language-reference/statements/addhandler-statement.md) or any additional methods that handle the same event.  
   
-## See Also  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+## See also
+
+- [Events](index.md)

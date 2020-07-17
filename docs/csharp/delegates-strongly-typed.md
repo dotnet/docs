@@ -2,6 +2,7 @@
 title: Strongly Typed Delegates
 description: Learn how to use generic delegate types to declare custom types when creating a feature requiring delegates.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
 ---
 
@@ -10,7 +11,7 @@ ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
 [Previous](delegate-class.md)
 
 In the previous article, you saw that you create specific delegate
-types using the `delegate` keyword. 
+types using the `delegate` keyword.
 
 The abstract Delegate class provide the infrastructure for loose coupling
 and invocation. Concrete Delegate types become much more useful by embracing
@@ -25,7 +26,7 @@ after a time. Every new feature requires new delegate types.
 Thankfully, this isn't necessary. The .NET Core framework contains several
 types that you can reuse whenever you need delegate types. These are
 [generic](programming-guide/generics/index.md) definitions so you can declare customizations
-when you need new method declarations. 
+when you need new method declarations.
 
 The first of these types is the <xref:System.Action> type, and several variations:
 
@@ -67,7 +68,7 @@ declarations, by convention.
 Use one of the `Func` types for any delegate type that returns a value.
 
 There's also a specialized
-<xref:System.Predicate%601> 
+<xref:System.Predicate%601>
 type for a delegate that returns a test on a single value:
 
 ```csharp
@@ -92,7 +93,7 @@ you do not need to define a new delegate type for any new feature you create
 that requires delegates. These generic definitions should provide all the
 delegate types you need under most situations. You can simply instantiate
 one of these types with the required type parameters. In the case of algorithms
-that can be made generic, these delegates can be used as generic types. 
+that can be made generic, these delegates can be used as generic types.
 
 This should save time, and minimize the number of new types that you need
 to create in order to work with delegates.

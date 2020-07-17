@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Which TreeView Node Was Clicked (Windows Forms)"
+title: "How to: Determine Which TreeView Node Was Clicked"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -18,9 +18,9 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
   
 ### To determine which TreeView node was clicked  
   
-1.  Use the <xref:System.EventArgs> object to return a reference to the clicked node object.  
+1. Use the <xref:System.EventArgs> object to return a reference to the clicked node object.  
   
-2.  Determine which node was clicked by checking the <xref:System.Windows.Forms.TreeViewEventArgs> class, which contains data related to the event.  
+2. Determine which node was clicked by checking the <xref:System.Windows.Forms.TreeViewEventArgs> class, which contains data related to the event.  
   
     ```vb  
     Private Sub TreeView1_AfterSelect(ByVal sender As System.Object, _  
@@ -31,7 +31,7 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
     ```  
   
     ```csharp  
-    protected void treeView1_AfterSelect (object sender,   
+    protected void treeView1_AfterSelect (object sender,
     System.Windows.Forms.TreeViewEventArgs e)  
     {  
        // Determine by checking the Text property.  
@@ -50,7 +50,8 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
     ```  
   
     > [!NOTE]
-    >  As an alternative, you can use the <xref:System.Windows.Forms.MouseEventArgs> of the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.MouseUp> event to get the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> coordinate values of the <xref:System.Drawing.Point> where the click occurred. Then, use the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.TreeView.GetNodeAt%2A> method to determine which node was clicked.  
+    > As an alternative, you can use the <xref:System.Windows.Forms.MouseEventArgs> of the <xref:System.Windows.Forms.Control.MouseDown> or <xref:System.Windows.Forms.Control.MouseUp> event to get the <xref:System.Drawing.Point.X%2A> and <xref:System.Drawing.Point.Y%2A> coordinate values of the <xref:System.Drawing.Point> where the click occurred. Then, use the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.TreeView.GetNodeAt%2A> method to determine which node was clicked.  
   
-## See Also  
- [TreeView Control](../../../../docs/framework/winforms/controls/treeview-control-windows-forms.md)
+## See also
+
+- [TreeView Control](treeview-control-windows-forms.md)

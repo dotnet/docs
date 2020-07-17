@@ -1,5 +1,6 @@
 ---
 title: "Using an Asynchronous Server Socket"
+description: This example shows an Asynchronous server socket. The Socket class uses .NET Framework asynchronous programming to process network service requests. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -95,7 +96,7 @@ public void StartListening()
   
     Socket listener = new Socket(localEP.Address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);  
   
-    try 
+    try
     {  
         listener.Bind(localEP);  
         listener.Listen(10);  
@@ -133,14 +134,14 @@ End Sub 'AcceptCallback
 ```  
   
 ```csharp  
-public void AcceptCallback(IAsyncResult ar) 
+public void AcceptCallback(IAsyncResult ar)
 {  
     allDone.Set();  
   
     Socket listener = (Socket) ar.AsyncState;  
     Socket handler = listener.EndAccept(ar);  
   
-    // Additional code to read data goes here.    
+    // Additional code to read data goes here.
 }  
 ```  
   
@@ -156,7 +157,7 @@ End Class 'StateObject
 ```  
   
 ```csharp  
-public class StateObject 
+public class StateObject
 {  
     public Socket workSocket = null;  
     public const int BufferSize = 1024;  
@@ -213,7 +214,7 @@ Public Shared Sub ReadCallback(ar As IAsyncResult)
     Dim state As StateObject = CType(ar.AsyncState, StateObject)  
     Dim handler As Socket = state.workSocket  
   
-    ' Read data from the client socket.   
+    ' Read data from the client socket.
     Dim read As Integer = handler.EndReceive(ar)  
   
     ' Data was read from the client socket.  
@@ -247,10 +248,10 @@ public static void ReadCallback(IAsyncResult ar)
         state.sb.Append(Encoding.ASCII.GetString(state.buffer,0,read));  
         handler.BeginReceive(state.buffer, 0, StateObject.BufferSize, 0,  
             new AsyncCallback(ReadCallback), state);  
-    } 
-    else 
+    }
+    else
     {  
-        if (state.sb.Length > 1) 
+        if (state.sb.Length > 1)
         {  
             // All the data has been read from the client;  
             // display it on the console.  
@@ -262,8 +263,9 @@ public static void ReadCallback(IAsyncResult ar)
 }  
 ```  
   
-## See Also  
- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)  
- [Asynchronous Server Socket Example](../../../docs/framework/network-programming/asynchronous-server-socket-example.md)  
- [Threading](../../../docs/standard/threading/index.md)  
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)
+## See also
+
+- [Using a Synchronous Server Socket](using-a-synchronous-server-socket.md)
+- [Asynchronous Server Socket Example](asynchronous-server-socket-example.md)
+- [Threading](../../standard/threading/index.md)
+- [Listening with Sockets](listening-with-sockets.md)

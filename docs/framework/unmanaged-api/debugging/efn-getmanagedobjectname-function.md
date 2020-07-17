@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 6e7c6bee-7ced-495f-bf6c-2a5f0c716f7e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# _EFN_GetManagedObjectName Function
+# \_EFN\_GetManagedObjectName Function
 Gets the name of a type using the provided managed object pointer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _EFN_GetManagedObjectName(  
     [in]  PDEBUG_CLIENT  Client,  
     [in]  ULONG64        objAddr,  
@@ -31,7 +29,7 @@ HRESULT _EFN_GetManagedObjectName(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] A pointer to the debug client.  
   
@@ -48,11 +46,12 @@ HRESULT _EFN_GetManagedObjectName(
  If there is no managed code on the thread currently in context, the function returns HRESULT SOS_E_NOMANAGEDCODE with a facility value of 0xa0 and an error code of 0x1000.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** SOS_Stacktrace.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+## See also
+
+- [Debugging Global Static Functions](debugging-global-static-functions.md)

@@ -1,0 +1,591 @@
+- name: Metadata
+  href: index.md
+  items:
+  - name: Metadata Interfaces
+    href: metadata-interfaces.md
+    items:
+    - name: ICeeGen Interface
+      href: iceegen-interface.md
+      items:
+      - name: AddSectionReloc Method
+        href: iceegen-addsectionreloc-method.md
+      - name: AllocateMethodBuffer Method
+        href: iceegen-allocatemethodbuffer-method.md
+      - name: ComputePointer Method
+        href: iceegen-computepointer-method.md
+      - name: EmitString Method
+        href: iceegen-emitstring-method.md
+      - name: GenerateCeeFile Method
+        href: iceegen-generateceefile-method.md
+      - name: GenerateCeeMemoryImage Method
+        href: iceegen-generateceememoryimage-method.md
+      - name: GetIlSection Method
+        href: iceegen-getilsection-method.md
+      - name: GetIMapTokenIface Method
+        href: iceegen-getimaptokeniface-method.md
+      - name: GetMethodBuffer Method
+        href: iceegen-getmethodbuffer-method.md
+      - name: GetSectionBlock Method
+        href: iceegen-getsectionblock-method.md
+      - name: GetSectionCreate Method
+        href: iceegen-getsectioncreate-method.md
+      - name: GetSectionDataLen Method
+        href: iceegen-getsectiondatalen-method.md
+      - name: GetString Method
+        href: iceegen-getstring-method.md
+      - name: GetStringSection Method
+        href: iceegen-getstringsection-method.md
+      - name: TruncateSection Method
+        href: iceegen-truncatesection-method.md
+    - name: IHostFilter Interface
+      href: ihostfilter-interface.md
+      items:
+      - name: MarkToken Method
+        href: ihostfilter-marktoken-method.md
+    - name: IMapToken Interface
+      href: imaptoken-interface.md
+      items:
+      - name: Map Method
+        href: imaptoken-map-method.md
+    - name: IMetaDataAssemblyEmit Interface
+      href: imetadataassemblyemit-interface.md
+      items:
+      - name: DefineAssembly Method
+        href: imetadataassemblyemit-defineassembly-method.md
+      - name: DefineAssemblyRef Method
+        href: imetadataassemblyemit-defineassemblyref-method.md
+      - name: DefineExportedType Method
+        href: imetadataassemblyemit-defineexportedtype-method.md
+      - name: DefineFile Method
+        href: imetadataassemblyemit-definefile-method.md
+      - name: DefineManifestResource Method
+        href: imetadataassemblyemit-definemanifestresource-method.md
+      - name: SetAssemblyProps Method
+        href: imetadataassemblyemit-setassemblyprops-method.md
+      - name: SetAssemblyRefProps Method
+        href: imetadataassemblyemit-setassemblyrefprops-method.md
+      - name: SetExportedTypeProps Method
+        href: imetadataassemblyemit-setexportedtypeprops-method.md
+      - name: SetFileProps Method
+        href: imetadataassemblyemit-setfileprops-method.md
+      - name: SetManifestResourceProps Method
+        href: imetadataassemblyemit-setmanifestresourceprops-method.md
+    - name: IMetaDataAssemblyImport Interface
+      href: imetadataassemblyimport-interface.md
+      items:
+      - name: CloseEnum Method
+        href: imetadataassemblyimport-closeenum-method.md
+      - name: EnumAssemblyRefs Method
+        href: imetadataassemblyimport-enumassemblyrefs-method.md
+      - name: EnumExportedTypes Method
+        href: imetadataassemblyimport-enumexportedtypes-method.md
+      - name: EnumFiles Method
+        href: imetadataassemblyimport-enumfiles-method.md
+      - name: EnumManifestResources Method
+        href: imetadataassemblyimport-enummanifestresources-method.md
+      - name: FindAssembliesByName Method
+        href: imetadataassemblyimport-findassembliesbyname-method.md
+      - name: FindExportedTypeByName Method
+        href: imetadataassemblyimport-findexportedtypebyname-method.md
+      - name: FindManifestResourceByName Method
+        href: imetadataassemblyimport-findmanifestresourcebyname-method.md
+      - name: GetAssemblyFromScope Method
+        href: imetadataassemblyimport-getassemblyfromscope-method.md
+      - name: GetAssemblyProps Method
+        href: imetadataassemblyimport-getassemblyprops-method.md
+      - name: GetAssemblyRefProps Method
+        href: imetadataassemblyimport-getassemblyrefprops-method.md
+      - name: GetExportedTypeProps Method
+        href: imetadataassemblyimport-getexportedtypeprops-method.md
+      - name: GetFileProps Method
+        href: imetadataassemblyimport-getfileprops-method.md
+      - name: GetManifestResourceProps Method
+        href: imetadataassemblyimport-getmanifestresourceprops-method.md
+    - name: IMetaDataConverter Interface
+      href: imetadataconverter-interface.md
+      items:
+      - name: GetMetaDataFromTypeInfo Method
+        href: imetadataconverter-getmetadatafromtypeinfo-method.md
+      - name: GetMetaDataFromTypeLib Method
+        href: imetadataconverter-getmetadatafromtypelib-method.md
+      - name: GetTypeLibFromMetaData Method
+        href: imetadataconverter-gettypelibfrommetadata-method.md
+    - name: IMetaDataDispenser Interface
+      href: imetadatadispenser-interface.md
+      items:
+      - name: DefineScope Method
+        href: imetadatadispenser-definescope-method.md
+      - name: OpenScope Method
+        href: imetadatadispenser-openscope-method.md
+      - name: OpenScopeOnMemory Method
+        href: imetadatadispenser-openscopeonmemory-method.md
+    - name: IMetaDataDispenserEx Interface
+      href: imetadatadispenserex-interface.md
+      items:
+      - name: FindAssembly Method
+        href: imetadatadispenserex-findassembly-method.md
+      - name: FindAssemblyModule Method
+        href: imetadatadispenserex-findassemblymodule-method.md
+      - name: GetCORSystemDirectory Method
+        href: imetadatadispenserex-getcorsystemdirectory-method.md
+      - name: GetOption Method
+        href: imetadatadispenserex-getoption-method.md
+      - name: OpenScopeOnITypeInfo Method
+        href: imetadatadispenserex-openscopeonitypeinfo-method.md
+      - name: SetOption Method
+        href: imetadatadispenserex-setoption-method.md
+    - name: IMetaDataEmit Interface
+      href: imetadataemit-interface.md
+      items:
+      - name: ApplyEditAndContinue Method
+        href: imetadataemit-applyeditandcontinue-method.md
+      - name: DefineCustomAttribute Method
+        href: imetadataemit-definecustomattribute-method.md
+      - name: DefineEvent Method
+        href: imetadataemit-defineevent-method.md
+      - name: DefineField Method
+        href: imetadataemit-definefield-method.md
+      - name: DefineImportMember Method
+        href: imetadataemit-defineimportmember-method.md
+      - name: DefineImportType Method
+        href: imetadataemit-defineimporttype-method.md
+      - name: DefineMemberRef Method
+        href: imetadataemit-definememberref-method.md
+      - name: DefineMethod Method
+        href: imetadataemit-definemethod-method.md
+      - name: DefineMethodImpl Method
+        href: imetadataemit-definemethodimpl-method.md
+      - name: DefineModuleRef Method
+        href: imetadataemit-definemoduleref-method.md
+      - name: DefineNestedType Method
+        href: imetadataemit-definenestedtype-method.md
+      - name: DefineParam Method
+        href: imetadataemit-defineparam-method.md
+      - name: DefinePermissionSet Method
+        href: imetadataemit-definepermissionset-method.md
+      - name: DefinePinvokeMap Method
+        href: imetadataemit-definepinvokemap-method.md
+      - name: DefineProperty Method
+        href: imetadataemit-defineproperty-method.md
+      - name: DefineSecurityAttributeSet Method
+        href: imetadataemit-definesecurityattributeset-method.md
+      - name: DefineTypeDef Method
+        href: imetadataemit-definetypedef-method.md
+      - name: DefineTypeRefByName Method
+        href: imetadataemit-definetyperefbyname-method.md
+      - name: DefineUserString Method
+        href: imetadataemit-defineuserstring-method.md
+      - name: DeleteClassLayout Method
+        href: imetadataemit-deleteclasslayout-method.md
+      - name: DeleteFieldMarshal Method
+        href: imetadataemit-deletefieldmarshal-method.md
+      - name: DeletePinvokeMap Method
+        href: imetadataemit-deletepinvokemap-method.md
+      - name: DeleteToken Method
+        href: imetadataemit-deletetoken-method.md
+      - name: GetSaveSize Method
+        href: imetadataemit-getsavesize-method.md
+      - name: GetTokenFromSig Method
+        href: imetadataemit-gettokenfromsig-method.md
+      - name: GetTokenFromTypeSpec Method
+        href: imetadataemit-gettokenfromtypespec-method.md
+      - name: Merge Method
+        href: imetadataemit-merge-method.md
+      - name: MergeEnd Method
+        href: imetadataemit-mergeend-method.md
+      - name: Save Method
+        href: imetadataemit-save-method.md
+      - name: SaveToMemory Method
+        href: imetadataemit-savetomemory-method.md
+      - name: SaveToStream Method
+        href: imetadataemit-savetostream-method.md
+      - name: SetClassLayout Method
+        href: imetadataemit-setclasslayout-method.md
+      - name: SetCustomAttributeValue Method
+        href: imetadataemit-setcustomattributevalue-method.md
+      - name: SetEventProps Method
+        href: imetadataemit-seteventprops-method.md
+      - name: SetFieldMarshal Method
+        href: imetadataemit-setfieldmarshal-method.md
+      - name: SetFieldProps Method
+        href: imetadataemit-setfieldprops-method.md
+      - name: SetFieldRVA Method
+        href: imetadataemit-setfieldrva-method.md
+      - name: SetHandler Method
+        href: imetadataemit-sethandler-method.md
+      - name: SetMethodImplFlags Method
+        href: imetadataemit-setmethodimplflags-method.md
+      - name: SetMethodProps Method
+        href: imetadataemit-setmethodprops-method.md
+      - name: SetModuleProps Method
+        href: imetadataemit-setmoduleprops-method.md
+      - name: SetParamProps Method
+        href: imetadataemit-setparamprops-method.md
+      - name: SetParent Method
+        href: imetadataemit-setparent-method.md
+      - name: SetPermissionSetProps Method
+        href: imetadataemit-setpermissionsetprops-method.md
+      - name: SetPinvokeMap Method
+        href: imetadataemit-setpinvokemap-method.md
+      - name: SetPropertyProps Method
+        href: imetadataemit-setpropertyprops-method.md
+      - name: SetRVA Method
+        href: imetadataemit-setrva-method.md
+      - name: SetTypeDefProps Method
+        href: imetadataemit-settypedefprops-method.md
+      - name: TranslateSigWithScope Method
+        href: imetadataemit-translatesigwithscope-method.md
+    - name: IMetaDataEmit2 Interface
+      href: imetadataemit2-interface.md
+      items:
+      - name: DefineGenericParam Method
+        href: imetadataemit2-definegenericparam-method.md
+      - name: DefineMethodSpec Method
+        href: imetadataemit2-definemethodspec-method.md
+      - name: GetDeltaSaveSize Method
+        href: imetadataemit2-getdeltasavesize-method.md
+      - name: ResetENCLog Method
+        href: imetadataemit2-resetenclog-method.md
+      - name: SaveDelta Method
+        href: imetadataemit2-savedelta-method.md
+      - name: SaveDeltaToMemory Method
+        href: imetadataemit2-savedeltatomemory-method.md
+      - name: SaveDeltaToStream Method
+        href: imetadataemit2-savedeltatostream-method.md
+      - name: SetGenericParamProps Method
+        href: imetadataemit2-setgenericparamprops-method.md
+    - name: IMetaDataError Interface
+      href: imetadataerror-interface.md
+      items:
+      - name: OnError Method
+        href: imetadataerror-onerror-method.md
+    - name: IMetaDataFilter Interface
+      href: imetadatafilter-interface.md
+      items:
+      - name: IsTokenMarked Method
+        href: imetadatafilter-istokenmarked-method.md
+      - name: MarkToken Method
+        href: imetadatafilter-marktoken-method.md
+      - name: UnmarkAll Method
+        href: imetadatafilter-unmarkall-method.md
+    - name: IMetaDataImport Interface
+      href: imetadataimport-interface.md
+      items:
+      - name: CloseEnum Method
+        href: imetadataimport-closeenum-method.md
+      - name: CountEnum Method
+        href: imetadataimport-countenum-method.md
+      - name: EnumCustomAttributes Method
+        href: imetadataimport-enumcustomattributes-method.md
+      - name: EnumEvents Method
+        href: imetadataimport-enumevents-method.md
+      - name: EnumFields Method
+        href: imetadataimport-enumfields-method.md
+      - name: EnumFieldsWithName Method
+        href: imetadataimport-enumfieldswithname-method.md
+      - name: EnumInterfaceImpls Method
+        href: imetadataimport-enuminterfaceimpls-method.md
+      - name: EnumMemberRefs Method
+        href: imetadataimport-enummemberrefs-method.md
+      - name: EnumMembers Method
+        href: imetadataimport-enummembers-method.md
+      - name: EnumMembersWithName Method
+        href: imetadataimport-enummemberswithname-method.md
+      - name: EnumMethodImpls Method
+        href: imetadataimport-enummethodimpls-method.md
+      - name: EnumMethods Method
+        href: imetadataimport-enummethods-method.md
+      - name: EnumMethodSemantics Method
+        href: imetadataimport-enummethodsemantics-method.md
+      - name: EnumMethodsWithName Method
+        href: imetadataimport-enummethodswithname-method.md
+      - name: EnumModuleRefs Method
+        href: imetadataimport-enummodulerefs-method.md
+      - name: EnumParams Method
+        href: imetadataimport-enumparams-method.md
+      - name: EnumPermissionSets Method
+        href: imetadataimport-enumpermissionsets-method.md
+      - name: EnumProperties Method
+        href: imetadataimport-enumproperties-method.md
+      - name: EnumSignatures Method
+        href: imetadataimport-enumsignatures-method.md
+      - name: EnumTypeDefs Method
+        href: imetadataimport-enumtypedefs-method.md
+      - name: EnumTypeRefs Method
+        href: imetadataimport-enumtyperefs-method.md
+      - name: EnumTypeSpecs Method
+        href: imetadataimport-enumtypespecs-method.md
+      - name: EnumUnresolvedMethods Method
+        href: imetadataimport-enumunresolvedmethods-method.md
+      - name: EnumUserStrings Method
+        href: imetadataimport-enumuserstrings-method.md
+      - name: FindField Method
+        href: imetadataimport-findfield-method.md
+      - name: FindMember Method
+        href: imetadataimport-findmember-method.md
+      - name: FindMemberRef Method
+        href: imetadataimport-findmemberref-method.md
+      - name: FindMethod Method
+        href: imetadataimport-findmethod-method.md
+      - name: FindTypeDefByName Method
+        href: imetadataimport-findtypedefbyname-method.md
+      - name: FindTypeRef Method
+        href: imetadataimport-findtyperef-method.md
+      - name: GetClassLayout Method
+        href: imetadataimport-getclasslayout-method.md
+      - name: GetCustomAttributeByName Method
+        href: imetadataimport-getcustomattributebyname-method.md
+      - name: GetCustomAttributeProps Method
+        href: imetadataimport-getcustomattributeprops-method.md
+      - name: GetEventProps Method
+        href: imetadataimport-geteventprops-method.md
+      - name: GetFieldMarshal Method
+        href: imetadataimport-getfieldmarshal-method.md
+      - name: GetFieldProps Method
+        href: imetadataimport-getfieldprops-method.md
+      - name: GetInterfaceImplProps Method
+        href: imetadataimport-getinterfaceimplprops-method.md
+      - name: GetMemberProps Method
+        href: imetadataimport-getmemberprops-method.md
+      - name: GetMemberRefProps Method
+        href: imetadataimport-getmemberrefprops-method.md
+      - name: GetMethodProps Method
+        href: imetadataimport-getmethodprops-method.md
+      - name: GetMethodSemantics Method
+        href: imetadataimport-getmethodsemantics-method.md
+      - name: GetModuleFromScope Method
+        href: imetadataimport-getmodulefromscope-method.md
+      - name: GetModuleRefProps Method
+        href: imetadataimport-getmodulerefprops-method.md
+      - name: GetNameFromToken Method
+        href: imetadataimport-getnamefromtoken-method.md
+      - name: GetNativeCallConvFromSig Method
+        href: imetadataimport-getnativecallconvfromsig-method.md
+      - name: GetNestedClassProps Method
+        href: imetadataimport-getnestedclassprops-method.md
+      - name: GetParamForMethodIndex Method
+        href: imetadataimport-getparamformethodindex-method.md
+      - name: GetParamProps Method
+        href: imetadataimport-getparamprops-method.md
+      - name: GetPermissionSetProps Method
+        href: imetadataimport-getpermissionsetprops-method.md
+      - name: GetPinvokeMap
+        href: imetadataimport-getpinvokemap-method.md
+      - name: GetPropertyProps Method
+        href: imetadataimport-getpropertyprops-method.md
+      - name: GetRVA Method
+        href: imetadataimport-getrva-method.md
+      - name: GetScopeProps Method
+        href: imetadataimport-getscopeprops-method.md
+      - name: GetSigFromToken Method
+        href: imetadataimport-getsigfromtoken-method.md
+      - name: GetTypeDefProps Method
+        href: imetadataimport-gettypedefprops-method.md
+      - name: GetTypeRefProps Method
+        href: imetadataimport-gettyperefprops-method.md
+      - name: GetTypeSpecFromToken Method
+        href: imetadataimport-gettypespecfromtoken-method.md
+      - name: GetUserString Method
+        href: imetadataimport-getuserstring-method.md
+      - name: IsGlobal Method
+        href: imetadataimport-isglobal-method.md
+      - name: IsValidToken Method
+        href: imetadataimport-isvalidtoken-method.md
+      - name: ResetEnum Method
+        href: imetadataimport-resetenum-method.md
+      - name: ResolveTypeRef Method
+        href: imetadataimport-resolvetyperef-method.md
+    - name: IMetaDataImport2 Interface
+      href: imetadataimport2-interface.md
+      items:
+      - name: EnumGenericParamConstraints Method
+        href: imetadataimport2-enumgenericparamconstraints-method.md
+      - name: EnumGenericParams Method
+        href: imetadataimport2-enumgenericparams-method.md
+      - name: EnumMethodSpecs Method
+        href: imetadataimport2-enummethodspecs-method.md
+      - name: GetGenericParamConstraintProps Method
+        href: imetadataimport2-getgenericparamconstraintprops-method.md
+      - name: GetGenericParamProps Method
+        href: imetadataimport2-getgenericparamprops-method.md
+      - name: GetMethodSpecProps Method
+        href: imetadataimport2-getmethodspecprops-method.md
+      - name: GetPEKind Method
+        href: imetadataimport2-getpekind-method.md
+      - name: GetVersionString Method
+        href: imetadataimport2-getversionstring-method.md
+    - name: IMetaDataInfo Interface
+      href: imetadatainfo-interface.md
+      items:
+      - name: GetFileMapping Method
+        href: imetadatainfo-getfilemapping-method.md
+    - name: IMetaDataTables Interface
+      href: imetadatatables-interface.md
+      items:
+      - name: GetBlob Method
+        href: imetadatatables-getblob-method.md
+      - name: GetBlobHeapSize Method
+        href: imetadatatables-getblobheapsize-method.md
+      - name: GetCodedTokenInfo Method
+        href: imetadatatables-getcodedtokeninfo-method.md
+      - name: GetColumn Method
+        href: imetadatatables-getcolumn-method.md
+      - name: GetColumnInfo Method
+        href: imetadatatables-getcolumninfo-method.md
+      - name: GetGuid Method
+        href: imetadatatables-getguid-method.md
+      - name: GetGuidHeapSize Method
+        href: imetadatatables-getguidheapsize-method.md
+      - name: GetNextBlob Method
+        href: imetadatatables-getnextblob-method.md
+      - name: GetNextGuid Method
+        href: imetadatatables-getnextguid-method.md
+      - name: GetNextString Method
+        href: imetadatatables-getnextstring-method.md
+      - name: GetNextUserString Method
+        href: imetadatatables-getnextuserstring-method.md
+      - name: GetNumTables Method
+        href: imetadatatables-getnumtables-method.md
+      - name: GetRow Method
+        href: imetadatatables-getrow-method.md
+      - name: GetString Method
+        href: imetadatatables-getstring-method.md
+      - name: GetStringHeapSize Method
+        href: imetadatatables-getstringheapsize-method.md
+      - name: GetTableIndex Method
+        href: imetadatatables-gettableindex-method.md
+      - name: GetTableInfo Method
+        href: imetadatatables-gettableinfo-method.md
+      - name: GetUserString Method
+        href: imetadatatables-getuserstring-method.md
+      - name: GetUserStringHeapSize Method
+        href: imetadatatables-getuserstringheapsize-method.md
+    - name: IMetaDataTables2 Interface
+      href: imetadatatables2-interface.md
+      items:
+      - name: GetMetaDataStorage Method
+        href: imetadatatables2-getmetadatastorage-method.md
+      - name: GetMetaDataStreamInfo Method
+        href: imetadatatables2-getmetadatastreaminfo-method.md
+    - name: IMetaDataValidate Interface
+      href: imetadatavalidate-interface.md
+      items:
+      - name: ValidateMetaData Method
+        href: imetadatavalidate-validatemetadata-method.md
+      - name: ValidatorInit Method
+        href: imetadatavalidate-validatorinit-method.md
+  - name: Metadata Global Static Functions
+    href: metadata-global-static-functions.md
+  - name: Metadata Enumerations
+    href: metadata-enumerations.md
+    items:
+    - name: AssemblyFlags Enumeration
+      href: assemblyflags-enumeration.md
+    - name: AssemblyRefFlags Enumeration
+      href: assemblyrefflags-enumeration.md
+    - name: CeeSectionAttr Enumeration
+      href: ceesectionattr-enumeration.md
+    - name: CeeSectionRelocType Enumeration
+      href: ceesectionreloctype-enumeration.md
+    - name: COINITICOR Enumeration
+      href: coiniticor-enumeration.md
+    - name: COINITIEE Enumeration
+      href: coinitiee-enumeration.md
+    - name: CorArgType Enumeration
+      href: corargtype-enumeration.md
+    - name: CorAssemblyFlags Enumeration
+      href: corassemblyflags-enumeration.md
+    - name: CorAttributeTargets Enumeration
+      href: corattributetargets-enumeration.md
+    - name: CorCallingConvention Enumeration
+      href: corcallingconvention-enumeration.md
+    - name: CorCheckDuplicatesFor Enumeration
+      href: corcheckduplicatesfor-enumeration.md
+    - name: CorDeclSecurity Enumeration
+      href: cordeclsecurity-enumeration.md
+    - name: CorElementType Enumeration1
+      href: corelementtype-enumeration.md
+    - name: CorErrorIfEmitOutOfOrder Enumeration
+      href: corerrorifemitoutoforder-enumeration.md
+    - name: CorEventAttr Enumeration
+      href: coreventattr-enumeration.md
+    - name: CorFieldAttr Enumeration
+      href: corfieldattr-enumeration.md
+    - name: CorFileFlags Enumeration
+      href: corfileflags-enumeration.md
+    - name: CorFileMapping Enumeration
+      href: corfilemapping-enumeration.md
+    - name: CorGenericParamAttr Enumeration
+      href: corgenericparamattr-enumeration.md
+    - name: CorImportOptions Enumeration
+      href: corimportoptions-enumeration.md
+    - name: CorLinkerOptions Enumeration
+      href: corlinkeroptions-enumeration.md
+    - name: CorLocalRefPreservation Enumeration
+      href: corlocalrefpreservation-enumeration.md
+    - name: CorManifestResourceFlags Enumeration
+      href: cormanifestresourceflags-enumeration.md
+    - name: CorMethodAttr Enumeration
+      href: cormethodattr-enumeration.md
+    - name: CorMethodImpl Enumeration
+      href: cormethodimpl-enumeration.md
+    - name: CorMethodSemanticsAttr Enumeration
+      href: cormethodsemanticsattr-enumeration.md
+    - name: CorNativeLinkFlags Enumeration
+      href: cornativelinkflags-enumeration.md
+    - name: CorNativeLinkType Enumeration
+      href: cornativelinktype-enumeration.md
+    - name: CorNativeType Enumeration
+      href: cornativetype-enumeration.md
+    - name: CorNotificationForTokenMovement Enumeration
+      href: cornotificationfortokenmovement-enumeration.md
+    - name: CorOpenFlags Enumeration
+      href: coropenflags-enumeration.md
+    - name: CorParamAttr Enumeration
+      href: corparamattr-enumeration.md
+    - name: CorPEKind Enumeration
+      href: corpekind-enumeration.md
+    - name: CorPinvokeMap Enumeration
+      href: corpinvokemap-enumeration.md
+    - name: CorPropertyAttr Enumeration
+      href: corpropertyattr-enumeration.md
+    - name: CorRefToDefCheck Enumeration
+      href: correftodefcheck-enumeration.md
+    - name: CorRegFlags Enumeration
+      href: corregflags-enumeration.md
+    - name: CorSaveSize Enumeration
+      href: corsavesize-enumeration.md
+    - name: CorSerializationType Enumeration
+      href: corserializationtype-enumeration.md
+    - name: CorSetENC Enumeration
+      href: corsetenc-enumeration.md
+    - name: CorThreadSafetyOptions Enumeration
+      href: corthreadsafetyoptions-enumeration.md
+    - name: CorTokenType Enumeration
+      href: cortokentype-enumeration.md
+    - name: CorTypeAttr Enumeration
+      href: cortypeattr-enumeration.md
+    - name: CorUnmanagedCallingConvention Enumeration
+      href: corunmanagedcallingconvention-enumeration.md
+    - name: CorValidatorModuleType Enumeration
+      href: corvalidatormoduletype-enumeration.md
+    - name: COUNINITIEE Enumeration
+      href: couninitiee-enumeration.md
+  - name: Metadata Structures
+    href: metadata-structures.md
+    items:
+    - name: ASSEMBLYMETADATA Structure
+      href: assemblymetadata-structure.md
+    - name: COR_FIELD_OFFSET Structure
+      href: cor-field-offset-structure.md
+    - name: COR_NATIVE_LINK Structure
+      href: cor-native-link-structure.md
+    - name: CVStruct Structure
+      href: cvstruct-structure.md
+    - name: OSINFO Structure
+      href: osinfo-structure.md
+  - name: Metadata Unions
+    href: metadata-unions.md
+    items:
+    - name: CeeSectionRelocExtra Union
+      href: ceesectionrelocextra-union.md

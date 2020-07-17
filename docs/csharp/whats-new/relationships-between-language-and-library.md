@@ -28,7 +28,7 @@ Subsequent versions of C# have occasionally added new types or members to
 the dependencies. Examples include: <xref:System.Runtime.CompilerServices.INotifyCompletion>,
 <xref:System.Runtime.CompilerServices.CallerFilePathAttribute> and
 <xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>. C# 7.0 continues this by adding a dependency on <xref:System.ValueTuple> to
-implement the [tuples](../tuples.md) language feature.
+implement the [tuples](../language-reference/builtin-types/value-tuples.md) language feature.
 
 The language design team works to minimize the surface area of the types
 and members required in a compliant standard library. That goal is balanced

@@ -14,30 +14,28 @@ helpviewer_keywords:
 ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorBindToRuntimeHost Function
 Enables hosts to load a specified version of the common language runtime (CLR) into a process.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindToRuntimeHost (  
-    [in] LPCWSTR       pwszVersion,   
-    [in] LPCWSTR       pwszBuildFlavor,   
-    [in] LPCWSTR       pwszHostConfigFile,   
-    [in] VOID*         pReserved,   
-    [in] DWORD         startupFlags,   
-    [in] REFCLSID      rclsid,   
-    [in] REFIID        riid,   
+    [in] LPCWSTR       pwszVersion,
+    [in] LPCWSTR       pwszBuildFlavor,
+    [in] LPCWSTR       pwszHostConfigFile,
+    [in] VOID*         pReserved,
+    [in] DWORD         startupFlags,
+    [in] REFCLSID      rclsid,
+    [in] REFIID        riid,
     [out] LPVOID FAR  *ppv  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwszVersion`  
  [in] A string that describes the version of the CLR you want to load.  
   
@@ -53,7 +51,7 @@ HRESULT CorBindToRuntimeHost (
  If `pwszBuildFlavor` is set to null, the workstation build is loaded. When running on a single-processor machine, the workstation build is always loaded, even if `pwszBuildFlavor` is set to `svr`. However, if `pwszBuildFlavor` is set to `svr` and concurrent garbage collection is specified (see the description of the `startupFlags` parameter), the server build is loaded.  
   
 > [!NOTE]
->  Concurrent garbage collection is not supported in applications running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications).  
+> Concurrent garbage collection is not supported in applications running the WOW64 x86 emulator on 64-bit systems that implement the Intel Itanium architecture (formerly called IA-64). For more information about using WOW64 on 64-bit Windows systems, see [Running 32-bit Applications](/windows/desktop/WinProg64/running-32-bit-applications).  
   
  `pwszHostConfigFile`  
  [in] The name of a host configuration file that specifies the version of the CLR to load. If the file name does not include a fully qualified path, the file is assumed to be in the same directory as the executable that is making the call.  
@@ -62,10 +60,10 @@ HRESULT CorBindToRuntimeHost (
  [in] Reserved for future extensibility.  
   
  `startupFlags`  
- [in] A set of flags that controls concurrent garbage collection, domain-neutral code, and the behavior of the `pwszVersion` parameter. The default is single domain if no flag is set. For a list of supported values, see the [STARTUP_FLAGS enumeration](../../../../docs/framework/unmanaged-api/hosting/startup-flags-enumeration.md).  
+ [in] A set of flags that controls concurrent garbage collection, domain-neutral code, and the behavior of the `pwszVersion` parameter. The default is single domain if no flag is set. For a list of supported values, see the [STARTUP_FLAGS enumeration](startup-flags-enumeration.md).  
   
  `rclsid`  
- [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) or the [ICLRRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
+ [in] The `CLSID` of the coclass that implements either the [ICorRuntimeHost](icorruntimehost-interface.md) or the [ICLRRuntimeHost](iclrruntimehost-interface.md) interface. Supported values are CLSID_CorRuntimeHost or CLSID_CLRRuntimeHost.  
   
  `riid`  
  [in] The `IID` of the interface you are requesting. Supported values are IID_ICorRuntimeHost or IID_ICLRRuntimeHost.  
@@ -74,7 +72,7 @@ HRESULT CorBindToRuntimeHost (
  [out] An interface pointer to the version of the runtime that was loaded.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
@@ -82,10 +80,11 @@ HRESULT CorBindToRuntimeHost (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [CorBindToCurrentRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)  
- [CorBindToRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntime-function.md)  
- [CorBindToRuntimeByCfg Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimebycfg-function.md)  
- [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [CorBindToCurrentRuntime Function](corbindtocurrentruntime-function.md)
+- [CorBindToRuntime Function](corbindtoruntime-function.md)
+- [CorBindToRuntimeByCfg Function](corbindtoruntimebycfg-function.md)
+- [CorBindToRuntimeEx Function](corbindtoruntimeex-function.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

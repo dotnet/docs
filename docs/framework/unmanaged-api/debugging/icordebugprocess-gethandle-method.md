@@ -15,19 +15,17 @@ helpviewer_keywords:
 ms.assetid: e7d3ecf5-09d2-4d94-abb6-ff3483deebb6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::GetHandle Method
 Gets a handle to the process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandle([out] HPROCESS *phProcessHandle);  
 ```  
   
-#### Parameters  
+## Parameters  
  `phProcessHandle`  
  [out] A pointer to an `HPROCESS` that is the handle to the process.  
   
@@ -35,7 +33,7 @@ HRESULT GetHandle([out] HPROCESS *phProcessHandle);
  The retrieved handle is owned by the debugging interface. The debugger should duplicate the handle before using it.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

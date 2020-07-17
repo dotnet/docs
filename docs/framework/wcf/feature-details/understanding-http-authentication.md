@@ -1,5 +1,6 @@
 ---
 title: "Understanding HTTP Authentication"
+description: Review this introduction to HTTP authentication in WCF, including HTTP authentication schemes and choosing an authentication scheme.
 ms.date: "03/30/2017"
 ms.assetid: 9376309a-39e3-4819-b47b-a73982b57620
 ---
@@ -18,18 +19,19 @@ Authentication is the process of identifying whether a client is eligible to acc
 |Digest|Digest authentication is a challenge-response scheme that is intended to replace Basic authentication. The server sends a string of random data called a *nonce* to the client as a challenge. The client responds with a hash that includes the user name, password, and nonce, among additional information. The complexity this exchange introduces and the data hashing make it more difficult to steal and reuse the user's credentials with this authentication scheme.<br /><br /> Digest authentication requires the use of Windows domain accounts. The digest *realm* is the Windows domain name. Therefore, you cannot use a server running on an operating system that does not support Windows domains, such as Windows XP Home Edition, with Digest authentication. Conversely, when the client runs on an operating system that does not support Windows domains, a domain account must be explicitly specified during the authentication.|  
 |NTLM|NT LAN Manager (NTLM) authentication is a challenge-response scheme that is a securer variation of Digest authentication. NTLM uses Windows credentials to transform the challenge data instead of the unencoded user name and password. NTLM authentication requires multiple exchanges between the client and server. The server and any intervening proxies must support persistent connections to successfully complete the authentication.|  
 |Negotiate|Negotiate authentication automatically selects between the Kerberos protocol and NTLM authentication, depending on availability. The Kerberos protocol is used if it is available; otherwise, NTLM is tried. Kerberos authentication significantly improves upon NTLM. Kerberos authentication is both faster than NTLM and allows the use of mutual authentication and delegation of credentials to remote machines.|  
-|Windows Live ID|The underlying Windows HTTP service includes authentication using federated protocols. However, the standard HTTP transports in WCF do not support the use of federated authentication schemes, such as Microsoft Windows Live ID. Support for this feature is currently available through the use of message security. For more information, see [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md).|  
+|Windows Live ID|The underlying Windows HTTP service includes authentication using federated protocols. However, the standard HTTP transports in WCF do not support the use of federated authentication schemes, such as Microsoft Windows Live ID. Support for this feature is currently available through the use of message security. For more information, see [Federation and Issued Tokens](federation-and-issued-tokens.md).|  
   
 ## Choosing an Authentication Scheme  
  When selecting the potential authentication schemes for an HTTP server, a few items to consider include the following:  
   
--   Consider whether the resource needs to be protected. Using HTTP authentication requires transmitting more data and can limit interoperability with clients. Allow anonymous access to resources that do not need to be protected.  
+- Consider whether the resource needs to be protected. Using HTTP authentication requires transmitting more data and can limit interoperability with clients. Allow anonymous access to resources that do not need to be protected.  
   
--   If the resource needs to be protected, consider which authentication schemes provide the required level of security. The weakest standard authentication scheme discussed here is Basic authentication. Basic authentication does not protect the user's credentials. The strongest standard authentication scheme is Negotiate authentication, resulting in the Kerberos protocol.  
+- If the resource needs to be protected, consider which authentication schemes provide the required level of security. The weakest standard authentication scheme discussed here is Basic authentication. Basic authentication does not protect the user's credentials. The strongest standard authentication scheme is Negotiate authentication, resulting in the Kerberos protocol.  
   
--   A server should not present (in the WWW-Authentication headers) any scheme that it is not prepared to accept or that does not adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
+- A server should not present (in the WWW-Authentication headers) any scheme that it is not prepared to accept or that does not adequately secure the protected resource. Clients are free to choose between any of the authentication schemes the server presents. Some clients default to a weak authentication scheme or the first authentication scheme in the server's list.  
   
-## See Also  
- [Transport Security Overview](../../../../docs/framework/wcf/feature-details/transport-security-overview.md)  
- [Using Impersonation with Transport Security](../../../../docs/framework/wcf/feature-details/using-impersonation-with-transport-security.md)  
- [Delegation and Impersonation](../../../../docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md)
+## See also
+
+- [Transport Security Overview](transport-security-overview.md)
+- [Using Impersonation with Transport Security](using-impersonation-with-transport-security.md)
+- [Delegation and Impersonation](delegation-and-impersonation-with-wcf.md)

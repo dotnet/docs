@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 3f3c4503-570e-44c1-ae6a-a3c6b840c732
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::EnumerateSteppers Method
 Gets an enumerator for all active steppers in the application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateSteppers (  
     [out] ICorDebugStepperEnum   **ppSteppers  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppSteppers`  
  [out] A pointer to the address of an ICorDebugStepperEnum object that is the enumerator for all active steppers in the application domain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

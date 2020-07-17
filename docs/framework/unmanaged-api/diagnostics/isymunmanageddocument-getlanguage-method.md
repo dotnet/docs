@@ -15,25 +15,24 @@ helpviewer_keywords:
 ms.assetid: c6639418-e9f2-4a99-8ce2-ec9876e0bc79
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetLanguage Method
 Gets the language identifier of this document  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLanguage(  
     [out, retval]  GUID*  pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a variable that receives the language identifier.  
   
 ## Return Value  
  S_OK if the method succeeds.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

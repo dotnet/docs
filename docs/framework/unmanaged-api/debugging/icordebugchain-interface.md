@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugChain Interface1"
+title: "ICorDebugChain Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugChain"
@@ -14,37 +14,36 @@ helpviewer_keywords:
 ms.assetid: f671f519-1cb3-4ae5-b9f1-abc5e783459f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugChain Interface1
+# ICorDebugChain Interface
+
 Represents a segment of a physical or logical call stack.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumerateFrames Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-enumerateframes-method.md)|Gets an enumerator that contains all the managed stack frames in the chain, starting with the most recent frame.|  
-|[GetActiveFrame Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getactiveframe-method.md)|Gets the active (that is, most recent) frame on the chain.|  
-|[GetCallee Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getcallee-method.md)|Gets the chain that was called by this chain.|  
-|[GetCaller Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getcaller-method.md)|Gets the chain that called this chain.|  
-|[GetContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getcontext-method.md)|Not implemented.|  
-|[GetNext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getnext-method.md)|Gets the next chain of frames for the thread.|  
-|[GetPrevious Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getprevious-method.md)|Gets the previous chain of frames for the thread.|  
-|[GetReason Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getreason-method.md)|Gets the reason for the genesis of this calling chain.|  
-|[GetRegisterSet Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getregisterset-method.md)|Gets the register set for the active part of this chain.|  
-|[GetStackRange Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getstackrange-method.md)|Gets the address range of the stack segment for this chain.|  
-|[GetThread Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-getthread-method.md)|Gets the physical thread this call chain is part of.|  
-|[IsManaged Method](../../../../docs/framework/unmanaged-api/debugging/icordebugchain-ismanaged-method.md)|Gets a value that indicates whether this chain is running managed code.|  
+|[EnumerateFrames Method](icordebugchain-enumerateframes-method.md)|Gets an enumerator that contains all the managed stack frames in the chain, starting with the most recent frame.|  
+|[GetActiveFrame Method](icordebugchain-getactiveframe-method.md)|Gets the active (that is, most recent) frame on the chain.|  
+|[GetCallee Method](icordebugchain-getcallee-method.md)|Gets the chain that was called by this chain.|  
+|[GetCaller Method](icordebugchain-getcaller-method.md)|Gets the chain that called this chain.|  
+|[GetContext Method](icordebugchain-getcontext-method.md)|Not implemented.|  
+|[GetNext Method](icordebugchain-getnext-method.md)|Gets the next chain of frames for the thread.|  
+|[GetPrevious Method](icordebugchain-getprevious-method.md)|Gets the previous chain of frames for the thread.|  
+|[GetReason Method](icordebugchain-getreason-method.md)|Gets the reason for the genesis of this calling chain.|  
+|[GetRegisterSet Method](icordebugchain-getregisterset-method.md)|Gets the register set for the active part of this chain.|  
+|[GetStackRange Method](icordebugchain-getstackrange-method.md)|Gets the address range of the stack segment for this chain.|  
+|[GetThread Method](icordebugchain-getthread-method.md)|Gets the physical thread this call chain is part of.|  
+|[IsManaged Method](icordebugchain-ismanaged-method.md)|Gets a value that indicates whether this chain is running managed code.|  
   
 ## Remarks  
  The stack frames in a chain occupy contiguous stack space and share the same thread and context. A chain may represent either managed or unmanaged code chains. An empty `ICorDebugChain` instance represents an unmanaged code chain.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -52,5 +51,6 @@ Represents a segment of a physical or logical call stack.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

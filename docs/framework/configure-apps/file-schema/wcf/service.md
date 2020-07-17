@@ -1,21 +1,22 @@
 ---
-title: "&lt;service&gt;"
+title: "<service>"
 ms.date: "03/30/2017"
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
 ---
-# &lt;service&gt;
+# \<service>
 The `service` element contains the settings for a Windows Communication Foundation (WCF) service. It also contains endpoints that expose the service.  
   
- \<system.ServiceModel>  
-\<services>  
-\<service>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<services>**](services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<service>**  
   
 ## Syntax  
   
 ```xml  
-<service behaviorConfiguration=String"  
-        name="String">  
-</service>  
+<service behaviorConfiguration="String"
+         name="String">
+</service>
 ```  
   
 ## Attributes and Elements  
@@ -32,14 +33,14 @@ The `service` element contains the settings for a Windows Communication Foundati
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<endpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md)|A collection of `endpoint` elements that expose this service.|  
-|[\<host>](../../../../../docs/framework/configure-apps/file-schema/wcf/host.md)|Specifies the host of this service instance. This element is of type <xref:System.ServiceModel.Configuration.HostElement>.|  
+|[\<endpoint>](endpoint-element.md)|A collection of `endpoint` elements that expose this service.|  
+|[\<host>](host.md)|Specifies the host of this service instance. This element is of type <xref:System.ServiceModel.Configuration.HostElement>.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<services>](../../../../../docs/framework/configure-apps/file-schema/wcf/services.md)|The root element of all WCF configuration elements.|  
+|[\<services>](services.md)|The root element of all WCF configuration elements.|  
   
 ## Remarks  
  Services are defined in the `services` section of the configuration file. An assembly can contain any number of services. Each service has its own `service` configuration section. This section and its content define the service contract, behavior, and endpoints of the particular service.  
@@ -52,17 +53,17 @@ The `service` element contains the settings for a Windows Communication Foundati
  This is an example of a service configuration.  
   
 ```xml  
-<service behaviorConfiguration="testChannelBehavior"   
-     name="HelloWorld">  
-     <endpoint   
-        address="/HelloWorld2/"  
-        name="test"  
-        bindingNamespace="http://www.cohowinery.com/"  
-        binding="basicHttpBinding"  
-        contract="IHelloWorld" />  
-</service>  
+<service behaviorConfiguration="testChannelBehavior"
+         name="HelloWorld">
+  <endpoint address="/HelloWorld2/"
+            name="test"
+            bindingNamespace="http://www.cohowinery.com/"
+            binding="basicHttpBinding"
+            contract="IHelloWorld" />
+</service>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceElement>  
- [Configuring Services](../../../../../docs/framework/wcf/configuring-services.md)
+## See also
+
+- <xref:System.ServiceModel.Configuration.ServiceElement>
+- [Configuring Services](../../../wcf/configuring-services.md)

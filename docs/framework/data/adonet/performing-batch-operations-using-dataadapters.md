@@ -76,7 +76,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
     string connectionString = GetConnectionString();  
   
     // Connect to the AdventureWorks database.  
-    using (SqlConnection connection = new   
+    using (SqlConnection connection = new
       SqlConnection(connectionString))  
     {  
   
@@ -86,19 +86,19 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
         // Set the UPDATE command and parameters.  
         adapter.UpdateCommand = new SqlCommand(  
             "UPDATE Production.ProductCategory SET "  
-            + "Name=@Name WHERE ProductCategoryID=@ProdCatID;",   
+            + "Name=@Name WHERE ProductCategoryID=@ProdCatID;",
             connection);  
-        adapter.UpdateCommand.Parameters.Add("@Name",   
+        adapter.UpdateCommand.Parameters.Add("@Name",
            SqlDbType.NVarChar, 50, "Name");  
-        adapter.UpdateCommand.Parameters.Add("@ProdCatID",   
+        adapter.UpdateCommand.Parameters.Add("@ProdCatID",
            SqlDbType.Int, 4, "ProductCategoryID");  
          adapter.UpdateCommand.UpdatedRowSource = UpdateRowSource.None;  
   
         // Set the INSERT command and parameter.  
         adapter.InsertCommand = new SqlCommand(  
-            "INSERT INTO Production.ProductCategory (Name) VALUES (@Name);",   
+            "INSERT INTO Production.ProductCategory (Name) VALUES (@Name);",
             connection);  
-        adapter.InsertCommand.Parameters.Add("@Name",   
+        adapter.InsertCommand.Parameters.Add("@Name",
           SqlDbType.NVarChar, 50, "Name");  
         adapter.InsertCommand.UpdatedRowSource = UpdateRowSource.None;  
   
@@ -106,7 +106,7 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
         adapter.DeleteCommand = new SqlCommand(  
             "DELETE FROM Production.ProductCategory "  
             + "WHERE ProductCategoryID=@ProdCatID;", connection);  
-        adapter.DeleteCommand.Parameters.Add("@ProdCatID",   
+        adapter.DeleteCommand.Parameters.Add("@ProdCatID",
           SqlDbType.Int, 4, "ProductCategoryID");  
         adapter.DeleteCommand.UpdatedRowSource = UpdateRowSource.None;  
   
@@ -135,8 +135,9 @@ public static void BatchUpdate(DataTable dataTable,Int32 batchSize)
   
  The data provider and the back-end database server determine which SQL constructs are supported for batch execution. An exception may be thrown if a non-supported statement is submitted for execution.  
   
-## See Also  
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)  
- [Handling DataAdapter Events](../../../../docs/framework/data/adonet/handling-dataadapter-events.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
+- [Handling DataAdapter Events](handling-dataadapter-events.md)
+- [ADO.NET Overview](ado-net-overview.md)

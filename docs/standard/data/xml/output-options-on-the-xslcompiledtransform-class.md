@@ -3,8 +3,6 @@ title: "Output Options on the XslCompiledTransform Class"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 91ce8cba-386c-411e-bb38-0891a0393c0a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Output Options on the XslCompiledTransform Class
 This topic discusses the available XSLT output options. You can specify output options in the style sheet, or on the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
@@ -49,8 +47,8 @@ This topic discusses the available XSLT output options. You can specify output o
   
 ## Notes  
   
--   When writing out empty tags, a space is written between the last character of the element name and the backslash, `<myElement />` for example. This lets older browsers display the generated HTML pages correctly.  
+- When writing out empty tags, a space is written between the last character of the element name and the backslash, `<myElement />` for example. This lets older browsers display the generated HTML pages correctly.  
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [XSLT Transformations](xslt-transformations.md)

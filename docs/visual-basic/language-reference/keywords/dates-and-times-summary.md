@@ -1,5 +1,5 @@
 ---
-title: "Dates and Times Summary (Visual Basic)"
+title: "Dates and Times Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "dates [Visual Basic], Visual Basic data types"
@@ -23,6 +23,7 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Set the date or time.|<xref:Microsoft.VisualBasic.DateAndTime.DateString%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeOfDay%2A>, <xref:Microsoft.VisualBasic.DateAndTime.TimeString%2A>, <xref:Microsoft.VisualBasic.DateAndTime.Today%2A>|  
 |Time a process.|<xref:Microsoft.VisualBasic.DateAndTime.Timer%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)

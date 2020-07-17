@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: a343d197-979a-4ac6-ab8c-cb8a05f3120e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSemaphore::ReleaseSemaphore Method
-Increases the count of the current [IHostSemaphore](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md) instance by the specified amount.  
+Increases the count of the current [IHostSemaphore](ihostsemaphore-interface.md) instance by the specified amount.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleaseSemaphore (  
     [in]  LONG  lReleaseCount,  
     [out] LONG  *lpPreviousCount  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `lReleaseCount`  
  [in] The amount by which to increase the count of the current `IHostSemaphore` instance. This amount must be greater than zero.  
   
@@ -52,7 +50,7 @@ HRESULT ReleaseSemaphore (
  The CLR typically calls `ReleaseSemaphore` to notify the host that it has finished using a resource, passing a value of 1 for the `lReleaseCount` parameter.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -60,9 +58,10 @@ HRESULT ReleaseSemaphore (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)  
- [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)  
- [IHostSemaphore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+## See also
+
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostAutoEvent Interface](ihostautoevent-interface.md)
+- [IHostManualEvent Interface](ihostmanualevent-interface.md)
+- [IHostSemaphore Interface](ihostsemaphore-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

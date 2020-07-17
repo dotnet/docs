@@ -1,5 +1,5 @@
 ---
-title: "Networking in Windows Forms Applications"
+title: Networking
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "networking [Windows Forms], Windows Forms"
@@ -23,8 +23,8 @@ The .NET Framework provides classes for displaying Web pages, downloading Web co
  A managed wrapper class for the `WebBrowser` control that is included with Windows.  
   
 ## Related Sections  
- [Network Programming in the .NET Framework](../../../../docs/framework/network-programming/index.md)  
+ [Network Programming in the .NET Framework](../../network-programming/index.md)  
  An introduction to networking in the .NET Framework.  
   
- [Windows Forms Data Binding](../../../../docs/framework/winforms/windows-forms-data-binding.md)  
+ [Windows Forms Data Binding](../windows-forms-data-binding.md)  
  Describes how to display database content in your application, either from a local data store or a database located on a network.

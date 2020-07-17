@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.Build.Traversal">
+
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+
+    <RunCommand>$(BinRoot)\$(Configuration)\nativehost</RunCommand>
+    <RunCommand Condition="$([MSBuild]::IsOsPlatform('Windows'))">$(BinRoot)\$(Configuration)\nativehost.exe</RunCommand>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="src/NativeHost/*.csproj" />
+    <ProjectReference Include="src/DotNetLib/*.csproj" />
+  </ItemGroup>
+
+</Project>

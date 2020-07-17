@@ -5,7 +5,7 @@ ms.date: 05/14/2018
 ---
 # F# component design guidelines
 
-This document is a set of component design guidelines for F# programming, based on the F# Component Design Guidelines, v14, Microsoft Research, and [another version](https://fsharp.org/specs/component-design-guidelines/) originally curated and maintained by the F# Software Foundation.
+This document is a set of component design guidelines for F# programming, based on the F# Component Design Guidelines, v14, Microsoft Research, and a version that was originally curated and maintained by the F# Software Foundation.
 
 This document assumes you are familiar with F# programming. Many thanks to the F# community for their contributions and helpful feedback on various versions of this guide.
 
@@ -34,21 +34,21 @@ The .NET Library Design Guidelines provide general guidance regarding naming, de
 
 ### Add XML documentation comments to your code
 
-XML documentation on public APIs ensure that users can get great Intellisense and Quickinfo when using these types and members, and enable building documentation files for the library. See the [XML Documentation](../language-reference/xml-documentation.md) about various xml tags that can be used for additional markup within xmldoc comments.
+XML documentation on public APIs ensures that users can get great Intellisense and Quickinfo when using these types and members, and enable building documentation files for the library. See the [XML Documentation](../language-reference/xml-documentation.md) about various xml tags that can be used for additional markup within xmldoc comments.
 
 ```fsharp
 /// A class for representing (x,y) coordinates
 type Point =
 
     /// Computes the distance between this point and another
-    member DistanceTo : otherPoint:Point -> float
+    member DistanceTo: otherPoint:Point -> float
 ```
 
 You can use either the short form XML comments (`/// comment`), or standard XML comments (`///<summary>comment</summary>`).
 
 ### Consider using explicit signature files (.fsi) for stable library and component APIs
 
-Using explicit signatures files in an F# library provides a succinct summary of public API, which both helps to ensure that you know the full public surface of your library, as well as provides a clean separation between public documentation and internal implementation details. Note that signature files add friction to changing the public API, by requiring changes to be made in both the implementation and signature files. As a result, signature files should typically only be introduced when an API has become solidified and is no longer expected to change significantly.
+Using explicit signatures files in an F# library provides a succinct summary of public API, which helps to ensure that you know the full public surface of your library, and provides a clean separation between public documentation and internal implementation details. Signature files add friction to changing the public API, by requiring changes to be made in both the implementation and signature files. As a result, signature files should typically only be introduced when an API has become solidified and is no longer expected to change significantly.
 
 ### Always follow best practices for using strings in .NET
 
@@ -70,9 +70,9 @@ The following table follows .NET naming and capitalization conventions. There ar
 | DLLs           | PascalCase |                 | Fabrikam.Core.dll |  |
 | Union tags     | PascalCase | Noun | Some, Add, Success | Do not use a prefix in public APIs. Optionally use a prefix when internal, such as `type Teams = TAlpha | TBeta | TDelta.` |
 | Event          | PascalCase | Verb | ValueChanged / ValueChanging |  |
-| Exceptions     | PascalCase |      | WebException | Name should end with “Exception”. |
+| Exceptions     | PascalCase |      | WebException | Name should end with "Exception". |
 | Field          | PascalCase | Noun | CurrentName  | |
-| Interface types |  PascalCase | Noun/ adjective | IDisposable | Name should start with “I”. |
+| Interface types |  PascalCase | Noun/ adjective | IDisposable | Name should start with "I". |
 | Method |  PascalCase |  Verb | ToString | |
 | Namespace | PascalCase | | Microsoft.FSharp.Core | Generally use `<Organization>.<Technology>[.<Subnamespace>]`, though drop the organization if the technology is independent of organization. |
 | Parameters | camelCase | Noun |  typeName, transform, range | |
@@ -82,7 +82,7 @@ The following table follows .NET naming and capitalization conventions. There ar
 
 #### Avoid abbreviations
 
-The .NET guidelines discourage the use of abbreviations (for example, “use `OnButtonClick` rather than `OnBtnClick`”). Common abbreviations, such as `Async` for “Asynchronous”, are tolerated. This guideline is sometimes ignored for functional programming; for example, `List.iter` uses an abbreviation for “iterate”. For this reason, using abbreviations tends to be tolerated to a greater degree in F#-to-F# programming, but should still generally be avoided in public component design.
+The .NET guidelines discourage the use of abbreviations (for example, "use `OnButtonClick` rather than `OnBtnClick`"). Common abbreviations, such as `Async` for "Asynchronous", are tolerated. This guideline is sometimes ignored for functional programming; for example, `List.iter` uses an abbreviation for "iterate". For this reason, using abbreviations tends to be tolerated to a greater degree in F#-to-F# programming, but should still generally be avoided in public component design.
 
 #### Avoid casing name collisions
 
@@ -98,7 +98,7 @@ Do use PascalCase for generic parameter names in public APIs, including for F#-f
 
 #### Use either PascalCase or camelCase for public functions and values in F# modules
 
-camelCase is used for public functions that are designed to be used unqualified (for example, `invalidArg`), and for the “standard collection functions” (for example, List.map). In both these cases, the function names act much like keywords in the language.
+camelCase is used for public functions that are designed to be used unqualified (for example, `invalidArg`), and for the "standard collection functions" (for example, List.map). In both these cases, the function names act much like keywords in the language.
 
 ### Object, Type, and Module design
 
@@ -185,22 +185,22 @@ Use interface types to represent a set of operations. This is preferred to other
 
 ```fsharp
 type Serializer =
-    abstract Serialize<'T> : preserveRefEq: bool -> value: 'T -> string
-    abstract Deserialize<'T> : preserveRefEq: bool -> pickle: string -> 'T
+    abstract Serialize<'T>: preserveRefEq: bool -> value: 'T -> string
+    abstract Deserialize<'T>: preserveRefEq: bool -> pickle: string -> 'T
 ```
 
 In preference to:
 
 ```fsharp
 type Serializer<'T> = {
-    Serialize : bool -> 'T -> string
-    Deserialize : bool -> string -> 'T
+    Serialize: bool -> 'T -> string
+    Deserialize: bool -> string -> 'T
 }
 ```
 
 Interfaces are first-class concepts in .NET, which you can use to achieve what Functors would normally give you. Additionally, they can be used to encode existential types into your program, which records of functions cannot.
 
-#### Use a module to group functions which act on collections
+#### Use a module to group functions that act on collections
 
 When you define a collection type, consider providing a standard set of operations like `CollectionType.map` and `CollectionType.iter`) for new collection types.
 
@@ -237,13 +237,13 @@ Overuse of `[<AutoOpen>]` leads to polluted namespaces, and the attribute should
 Sometimes classes are used to model mathematical constructs such as Vectors. When the domain being modeled has well-known operators, defining them as members intrinsic to the class is helpful.
 
 ```fsharp
-type Vector(x:float) =
+type Vector(x: float) =
 
     member v.X = x
 
-    static member (*) (vector:Vector, scalar:float) = Vector(vector.X * scalar)
+    static member (*) (vector: Vector, scalar: float) = Vector(vector.X * scalar)
 
-    static member (+) (vector1:Vector, vector2:Vector) = Vector(vector1.X + vector2.X)
+    static member (+) (vector1: Vector, vector2: Vector) = Vector(vector1.X + vector2.X)
 
 let v = Vector(5.0)
 
@@ -300,7 +300,7 @@ In F#, implementation inheritance is rarely used. Furthermore, inheritance hiera
 Here is a good example of using a tuple in a return type:
 
 ```fsharp
-val divrem : BigInteger -> BigInteger -> BigInteger * BigInteger
+val divrem: BigInteger -> BigInteger -> BigInteger * BigInteger
 ```
 
 For return types containing many components, or where the components are related to a single identifiable entity, consider using a named type instead of a tuple.
@@ -311,9 +311,9 @@ If there is a corresponding synchronous operation named `Operation` that returns
 
 ```fsharp
 type SomeType =
-    member this.Compute(x:int) : int =
+    member this.Compute(x:int): int =
         ...
-    member this.AsyncCompute(x:int) : Async<int> =
+    member this.AsyncCompute(x:int): Async<int> =
         ...
 
 type System.ServiceModel.Channels.IInputChannel with
@@ -406,7 +406,7 @@ This is a suitable function for a public API in a mathematical library.
 
 #### Avoid using member constraints to simulate type classes and duck typing
 
-It is possible to simulate “duck typing” using F# member constraints. However, members that make use of this should not in general be used in F#-to-F# library designs. This is because library designs based on unfamiliar or non-standard implicit constraints tend to cause user code to become inflexible and tied to one particular framework pattern.
+It is possible to simulate "duck typing" using F# member constraints. However, members that make use of this should not in general be used in F#-to-F# library designs. This is because library designs based on unfamiliar or non-standard implicit constraints tend to cause user code to become inflexible and tied to one particular framework pattern.
 
 Additionally, there is a good chance that heavy use of member constraints in this manner can result in very long compile times.
 
@@ -493,7 +493,7 @@ type Utilities =
 
 #### Use F# record types in vanilla .NET APIs if the design of the types won't evolve
 
-F# record types compile to a simple .NET class. These are suitable for some simple, stable types in APIs. You should consider using the `[<NoEquality>]` and `[<NoComparison>]` attributes to suppress the automatic generation of interfaces. Also avoid using mutable record fields in vanilla .NET APIs as these exposes a public field. Always consider whether a class would provide a more flexible option for future evolution of the API.
+F# record types compile to a simple .NET class. These are suitable for some simple, stable types in APIs. Consider using the `[<NoEquality>]` and `[<NoComparison>]` attributes to suppress the automatic generation of interfaces. Also avoid using mutable record fields in vanilla .NET APIs as these expose a public field. Always consider whether a class would provide a more flexible option for future evolution of the API.
 
 For example, the following F# code exposes the public API to a C# consumer:
 
@@ -502,8 +502,8 @@ F#:
 ```fsharp
 [<NoEquality; NoComparison>]
 type MyRecord =
-    { FirstThing : int
-        SecondThing : string }
+    { FirstThing: int
+        SecondThing: string }
 ```
 
 C#:
@@ -568,7 +568,7 @@ type MyBadType() =
     [<CLIEvent>]
     member this.MyEvent = myEv.Publish
 
-type MyEventArgs(x:int) =
+type MyEventArgs(x: int) =
     inherit System.EventArgs()
     member this.X = x
 
@@ -580,17 +580,17 @@ type MyGoodType() =
     member this.MyEvent = myEv.Publish
 ```
 
-#### Expose asynchronous operations as methods which return .NET tasks
+#### Expose asynchronous operations as methods that return .NET tasks
 
-Tasks are used in .NET to represent active asynchronous computations. Tasks are in general less compositional than F# `Async<T>` objects, since they represent “already executing” tasks and can’t be composed together in ways that perform parallel composition, or which hide the propagation of cancellation signals and other contextual parameters.
+Tasks are used in .NET to represent active asynchronous computations. Tasks are in general less compositional than F# `Async<T>` objects, since they represent "already executing" tasks and can't be composed together in ways that perform parallel composition, or which hide the propagation of cancellation signals and other contextual parameters.
 
-However, despite this, methods which return Tasks are the standard representation of asynchronous programming on .NET.
+However, despite this, methods that return Tasks are the standard representation of asynchronous programming on .NET.
 
 ```fsharp
 /// A type in a component designed for use from other .NET languages
 type MyType() =
 
-    let compute (x: int) : Async<int> = async { ... }
+    let compute (x: int): Async<int> = async { ... }
 
     member this.ComputeAsync(x) = compute x |> Async.StartAsTask
 ```
@@ -600,29 +600,29 @@ You will frequently also want to accept an explicit cancellation token:
 ```fsharp
 /// A type in a component designed for use from other .NET languages
 type MyType() =
-    let compute(x:int) : Async<int> = async { ... }
+    let compute(x: int): Async<int> = async { ... }
     member this.ComputeAsTask(x, cancellationToken) = Async.StartAsTask(compute x, cancellationToken)
 ```
 
 #### Use .NET delegate types instead of F# function types
 
-Here “F# function types” mean “arrow” types like `int -> int`.
+Here "F# function types" mean "arrow" types like `int -> int`.
 
 Instead of this:
 
 ```fsharp
-member this.Transform(f:int->int) =
+member this.Transform(f: int->int) =
     ...
 ```
 
 Do this:
 
 ```fsharp
-member this.Transform(f:Func<int,int>) =
+member this.Transform(f: Func<int,int>) =
     ...
 ```
 
-The F# function type appears as `class FSharpFunc<T,U>` to other .NET languages, and is less suitable for language features and tooling that understand delegate types. When authoring a higher-order method targeting .NET Framework 3.5 or higher, the `System.Func` and `System.Action` delegates are the right APIs to publish to enable .NET developers to consume these APIs in a low-friction manner. (When targeting .NET Framework 2.0, the system-defined delegate types are more limited; consider using predefined delegate types such as `System.Converter<T,U>` or defining a specific delegate type.)
+The F# function type appears as `class FSharpFunc<T,U>` to other .NET languages, and is less suitable for language features and tooling that understands delegate types. When authoring a higher-order method targeting .NET Framework 3.5 or higher, the `System.Func` and `System.Action` delegates are the right APIs to publish to enable .NET developers to consume these APIs in a low-friction manner. (When targeting .NET Framework 2.0, the system-defined delegate types are more limited; consider using predefined delegate types such as `System.Converter<T,U>` or defining a specific delegate type.)
 
 On the flip side, .NET delegates are not natural for F#-facing libraries (see the next Section on F#-facing libraries). As a result, a common implementation strategy when developing higher-order methods for vanilla .NET libraries is to author all the implementation using F# function types, and then create the public API using delegates as a thin façade atop the actual F# implementation.
 
@@ -633,18 +633,18 @@ Common patterns of use for the F# option type in APIs are better implemented in 
 ```fsharp
 member this.ReturnOption() = Some 3
 
-member this.ReturnBoolAndOut(outVal : byref<int>) =
+member this.ReturnBoolAndOut(outVal: byref<int>) =
     outVal <- 3
     true
 
-member this.ParamOption(x : int, y : int option) =
+member this.ParamOption(x: int, y: int option) =
     match y with
     | Some y2 -> x + y2
     | None -> x
 
-member this.ParamOverload(x : int) = x
+member this.ParamOverload(x: int) = x
 
-member this.ParamOverload(x : int, y : int) = x + y
+member this.ParamOverload(x: int, y: int) = x + y
 ```
 
 #### Use the .NET collection interface types IEnumerable\<T\> and IDictionary\<Key,Value\> for parameters and return values
@@ -654,14 +654,14 @@ Avoid the use of concrete collection types such as .NET arrays `T[]`, F# types `
 Instead of F# lists:
 
 ```fsharp
-member this.PrintNames(names : string list) =
+member this.PrintNames(names: string list) =
     ...
 ```
 
 Use F# sequences:
 
 ```fsharp
-member this.PrintNames(names : seq<string>) =
+member this.PrintNames(names: seq<string>) =
     ...
 ```
 
@@ -672,13 +672,13 @@ Avoid other uses of the unit type. These are good:
 ```fsharp
 ✔ member this.NoArguments() = 3
 
-✔ member this.ReturnVoid(x : int) = ()
+✔ member this.ReturnVoid(x: int) = ()
 ```
 
 This is bad:
 
 ```fsharp
-member this.WrongUnit( x:unit, z:int) = ((), ())
+member this.WrongUnit( x: unit, z: int) = ((), ())
 ```
 
 #### Check for null values on vanilla .NET API boundaries
@@ -702,13 +702,13 @@ Instead, prefer returning a named type holding the aggregate data, or using out 
 
 #### Avoid the use of currying of parameters
 
-Instead, use .NET calling conventions ``Method(arg1,arg2,…,argN)``.
+Instead, use .NET calling conventions `Method(arg1,arg2,…,argN)`.
 
 ```fsharp
 member this.TupledArguments(str, num) = String.replicate num str
 ```
 
-Tip: If you’re designing libraries for use from any .NET language, then there’s no substitute for actually doing some experimental C# and Visual Basic programming to ensure that your libraries "feel right" from these languages. You can also use tools such as .NET Reflector and the Visual Studio Object Browser to ensure that libraries and their documentation appear as expected to developers.
+Tip: If you're designing libraries for use from any .NET language, then there's no substitute for actually doing some experimental C# and Visual Basic programming to ensure that your libraries "feel right" from these languages. You can also use tools such as .NET Reflector and the Visual Studio Object Browser to ensure that libraries and their documentation appear as expected to developers.
 
 ## Appendix
 
@@ -742,7 +742,7 @@ type Point1 =
     member Radius : double
 ```
 
-Let’s take a look at how this F# type appears to a programmer using another .NET language. For example, the approximate C# “signature” is as follows:
+Let's take a look at how this F# type appears to a programmer using another .NET language. For example, the approximate C# "signature" is as follows:
 
 ```csharp
 // C# signature for the unadjusted Point1 class

@@ -1,5 +1,5 @@
 ---
-title: "Yield Statement (Visual Basic)"
+title: "Yield Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Yield"
@@ -14,11 +14,11 @@ Sends the next element of a collection to a `For Each...Next` statement.
   
 ## Syntax  
   
-```  
+```vb  
 Yield expression  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Term|Definition|  
 |---|---|  
@@ -27,7 +27,7 @@ Yield expression
 ## Remarks  
  The `Yield` statement returns one element of a collection at a time. The `Yield` statement is included in an iterator function or `Get` accessor, which perform custom iterations over a collection.  
   
- You consume an iterator function by using a [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md) or a LINQ query. Each iteration of the `For Each` loop calls the iterator function. When a `Yield` statement is reached in the iterator function, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.  
+ You consume an iterator function by using a [For Each...Next Statement](for-each-next-statement.md) or a LINQ query. Each iteration of the `For Each` loop calls the iterator function. When a `Yield` statement is reached in the iterator function, `expression` is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator function is called.  
   
  An implicit conversion must exist from the type of `expression` in the `Yield` statement to the return type of the iterator.  
   
@@ -40,18 +40,18 @@ Yield expression
 ## Iterator Functions and Get Accessors  
  The declaration of an iterator function or `Get` accessor must meet the following requirements:  
   
--   It must include an [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md) modifier.  
+- It must include an [Iterator](../modifiers/iterator.md) modifier.  
   
--   The return type must be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
+- The return type must be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
--   It cannot have any `ByRef` parameters.  
+- It cannot have any `ByRef` parameters.  
   
  An iterator function cannot occur in an event, instance constructor, static constructor, or static destructor.  
   
  An iterator function can be an anonymous function. For more information, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## Exception Handling  
- A `Yield` statement can be inside a `Try` block of a [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.  
+ A `Yield` statement can be inside a `Try` block of a [Try...Catch...Finally Statement](try-catch-finally-statement.md). A `Try` block that has a `Yield` statement can have `Catch` blocks, and can have a `Finally` block.  
   
  A `Yield` statement cannot be inside a `Catch` block or a `Finally` block.  
   
@@ -74,18 +74,19 @@ Next
  On each subsequent iteration of the `For Each` loop, the execution of the iterator body continues from where it left off, again stopping when it reaches a `Yield` statement. The `For Each` loop completes when the end of the iterator function or a `Return` or `Exit Function` statement is reached.  
   
 ## Example  
- The following example has a `Yield` statement that is inside a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) loop. Each iteration of the [For Each](../../../visual-basic/language-reference/statements/for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
+ The following example has a `Yield` statement that is inside a [For…Next](for-next-statement.md) loop. Each iteration of the [For Each](for-each-next-statement.md) statement body in `Main` creates a call to the `Power` iterator function. Each call to the iterator function proceeds to the next execution of the `Yield` statement, which occurs during the next iteration of the `For…Next` loop.  
   
  The return type of the iterator method is <xref:System.Collections.Generic.IEnumerable%601>, an iterator interface type. When the iterator method is called, it returns an enumerable object that contains the powers of a number.  
   
- [!code-vb[VbVbalrStatements#98](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#98](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#98)]  
   
 ## Example  
  The following example demonstrates a `Get` accessor that is an iterator. The property declaration includes an `Iterator` modifier.  
   
- [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/yield-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#99](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class2.vb#99)]  
   
  For additional examples, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
-## See Also  
- [Statements](../../../visual-basic/language-reference/statements/index.md)
+## See also
+
+- [Statements](index.md)

@@ -6,20 +6,20 @@ ms.assetid: c44fb338-9527-4dd0-8607-b8787d15acb4
 # PII Security Lockdown
 This sample demonstrates how to control several security-related features of a Windows Communication Foundation (WCF) service by:  
   
--   Encrypting sensitive information in a service's configuration file.  
+- Encrypting sensitive information in a service's configuration file.  
   
--   Locking elements in the configuration file so that nested service subdirectories cannot override settings.  
+- Locking elements in the configuration file so that nested service subdirectories cannot override settings.  
   
--   Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
+- Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
 ## Discussion  
  Each of these features can be used separately or together to control aspects of a service's security. This is not a definitive guide to securing a WCF service.  
@@ -28,20 +28,20 @@ This sample demonstrates how to control several security-related features of a W
   
  In Web-hosted scenarios it is possible to have services in subdirectories of other services. The default semantic for determining configuration values allows configuration files in the nested directories to override the configuration values in the parent directory. In certain situations this may be undesirable for a variety of reasons. WCF service configuration supports the locking of configuration values so that nested configuration generates exceptions when a nested service is run using overridden configuration values.  
   
- This sample demonstrates how to control the logging of known Personally Identifiable Information (PII) in trace and message logs, such as username and password. By default, logging of known PII is disabled however in certain situations logging of PII can be important in debugging an application. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In addition, this sample uses tracing and message logging. For more information, see the [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) sample.  
+ This sample demonstrates how to control the logging of known Personally Identifiable Information (PII) in trace and message logs, such as username and password. By default, logging of known PII is disabled however in certain situations logging of PII can be important in debugging an application. This sample is based on the [Getting Started](getting-started-sample.md). In addition, this sample uses tracing and message logging. For more information, see the [Tracing and Message Logging](tracing-and-message-logging.md) sample.  
   
 ## Encrypting Configuration File Elements  
- For security purposes in a shared Web-hosting environment, it may be desirable to encrypt certain configuration elements, such as database connection strings that may contain sensitive information. A configuration element may be encrypted using the aspnet_regiis.exe tool found in the .NET Framework folder For example, %WINDIR%\Micrsoft.NET\Framework\v4.0.20728.  
+ For security purposes in a shared Web-hosting environment, it may be desirable to encrypt certain configuration elements, such as database connection strings that may contain sensitive information. A configuration element may be encrypted using the aspnet_regiis.exe tool found in the .NET Framework folder For example, %WINDIR%\Microsoft.NET\Framework\v4.0.20728.  
   
 #### To encrypt the values in the appSettings section in Web.config for the sample  
   
-1.  Open a command prompt by using Start->Run…. Type in `cmd` and click **OK**.  
+1. Open a command prompt by using Start->Run…. Type in `cmd` and click **OK**.  
   
-2.  Navigate to the current .NET Framework directory by issuing the following command: `cd %WINDIR%\Microsoft.NET\Framework\v4.0.20728`.  
+2. Navigate to the current .NET Framework directory by issuing the following command: `cd %WINDIR%\Microsoft.NET\Framework\v4.0.20728`.  
   
-3.  Encrypt the appSettings configuration settings in the Web.config folder by issuing the following command: `aspnet_regiis -pe "appSettings" -app "/servicemodelsamples" -prov "DataProtectionConfigurationProvider"`.  
+3. Encrypt the appSettings configuration settings in the Web.config folder by issuing the following command: `aspnet_regiis -pe "appSettings" -app "/servicemodelsamples" -prov "DataProtectionConfigurationProvider"`.  
   
- More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)).  
+ More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://docs.microsoft.com/previous-versions/msp-n-p/ff649248(v=pandp.10))) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://docs.microsoft.com/previous-versions/msp-n-p/ff650304(v=pandp.10))).  
   
 ## Locking configuration file elements  
  In Web-hosted scenarios, it is possible to have services in subdirectories of services. In these situations, configuration values for the service in the subdirectory are calculated by examining values in Machine.config and successively merging with any Web.config files in parent directories moving down the directory tree and finally merging the Web.config file in the directory that contains the service. The default behavior for most configuration elements is to allow configuration files in subdirectories to override the values set in parent directories. In certain situations it may be desirable to prevent configuration files in subdirectories from overriding values set in parent directory configuration.  
@@ -53,14 +53,14 @@ This sample demonstrates how to control several security-related features of a W
 ```xml  
 <configuration>  
    <system.serviceModel>  
-      <behaviors>   
-          <serviceBehaviors>   
-             <behavior name="CalculatorServiceBehavior" lockItem="true">   
-               <serviceMetadata httpGetEnabled="True"/>   
-               <serviceDebug includeExceptionDetailInFaults="False" />   
-             </behavior>   
-          </serviceBehaviors>   
-       </behaviors>   
+      <behaviors>
+          <serviceBehaviors>
+             <behavior name="CalculatorServiceBehavior" lockItem="true">
+               <serviceMetadata httpGetEnabled="True"/>
+               <serviceDebug includeExceptionDetailInFaults="False" />
+             </behavior>
+          </serviceBehaviors>
+       </behaviors>
     </system.serviceModel>  
 </configuration>  
 ```  
@@ -81,7 +81,7 @@ This sample demonstrates how to control several security-related features of a W
 ```  
   
 > [!NOTE]
->  The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
+> The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
   
  If the `enableLoggingKnownPii` attribute is not present in Machine.config, logging of PII is not allowed.  
   
@@ -92,13 +92,13 @@ This sample demonstrates how to control several security-related features of a W
     <system.diagnostics>  
         <sources>  
             <source name="System.ServiceModel.MessageLogging" logKnownPii="true">  
-                <listeners>   
-                ...   
+                <listeners>
+                ...
                 </listeners>  
             </source>  
             <source name="System.ServiceModel" switchValue="Verbose, ActivityTracing">  
             <listeners>  
-        ...   
+        ...
             </listeners>  
             </source>  
         </sources>  
@@ -111,30 +111,31 @@ This sample demonstrates how to control several security-related features of a W
  PII is only logged if both `enableLoggingKnownPii` is set to `true`, and `logKnownPii` is set to `true`.  
   
 > [!NOTE]
->  System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
+> System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
   
 > [!IMPORTANT]
->  To run this sample involves manual modification of Machine.config. Care should be taken when modifying Machine.config as incorrect values or syntax may prevent all .NET Framework applications from running.  
+> To run this sample involves manual modification of Machine.config. Care should be taken when modifying Machine.config as incorrect values or syntax may prevent all .NET Framework applications from running.  
   
  It is also possible to encrypt configuration file elements using DPAPI and RSA. For more information, see the following links:  
   
--   [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)  
+- [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://docs.microsoft.com/previous-versions/msp-n-p/ff649248(v=pandp.10))  
   
--   [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)  
+- [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://docs.microsoft.com/previous-versions/msp-n-p/ff650304(v=pandp.10))  
   
 #### To set up, build and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  Edit Machine.config to set the `enableLoggingKnownPii` attribute to `true`, adding the parent nodes if necessary.  
+2. Edit Machine.config to set the `enableLoggingKnownPii` attribute to `true`, adding the parent nodes if necessary.  
   
-3.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+3. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-4.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 #### To clean up the sample  
   
-1.  Edit Machine.config to set the `enableLoggingKnownPii` attribute to `false`.  
+1. Edit Machine.config to set the `enableLoggingKnownPii` attribute to `false`.  
   
-## See Also  
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+
+- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

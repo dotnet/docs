@@ -1,5 +1,6 @@
 ---
 title: "How to: Write a Parallel.For Loop with Thread-Local Variables"
+description: See an example of how to write a Parallel.For loop in .NET that uses thread-local variables, which store and retrieve state in each separate task in the loop.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -8,8 +9,6 @@ dev_langs:
 helpviewer_keywords: 
   - "parallel for loops, how to use local state"
 ms.assetid: 68384064-7ee7-41e2-90e3-71f00bde01bb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Write a Parallel.For Loop with Thread-Local Variables
 This example shows how to use thread-local variables to store and retrieve state in each separate task that is created by a <xref:System.Threading.Tasks.Parallel.For%2A> loop. By using thread-local data, you can avoid the overhead of synchronizing a large number of accesses to shared state. Instead of writing to a shared resource on each iteration, you compute and store the value until all iterations for the task are complete. You can then write the final result once to the shared resource, or pass it to another method.  
@@ -36,11 +35,11 @@ Function() new MyClass()
   
  The fifth parameter defines the method that is called once, after all the iterations on a particular thread have completed. The type of the input argument again corresponds to the type argument of the <xref:System.Threading.Tasks.Parallel.For%60%601%28System.Int32%2CSystem.Int32%2CSystem.Func%7B%60%600%7D%2CSystem.Func%7BSystem.Int32%2CSystem.Threading.Tasks.ParallelLoopState%2C%60%600%2C%60%600%7D%2CSystem.Action%7B%60%600%7D%29> method and the type returned by the body lambda expression. In this example, the value is added to a variable at class scope in a thread safe way by calling the <xref:System.Threading.Interlocked.Add%2A?displayProperty=nameWithType> method. By using a thread-local variable, we have avoided writing to this class variable on every iteration of the loop.  
   
- For more information about how to use lambda expressions, see [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).  
+ For more information about how to use lambda expressions, see [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md).  
   
 ## See also
 
-- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)  
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)  
-- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)  
-- [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md)
+- [Data Parallelism](data-parallelism-task-parallel-library.md)
+- [Parallel Programming](index.md)
+- [Task Parallel Library (TPL)](task-parallel-library-tpl.md)
+- [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md)

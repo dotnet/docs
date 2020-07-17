@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: cc1a823a-3ff3-4a33-b641-96edc93d2b17
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod::GetDocumentsForMethodCount Method
 Gets the number of documents that this method has lines in.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocumentsForMethodCount(  
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the size of the buffer required to contain the documents.  
   
@@ -38,5 +36,6 @@ HRESULT GetDocumentsForMethodCount(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## See also
+
+- [ISymENCUnmanagedMethod Interface](isymencunmanagedmethod-interface.md)

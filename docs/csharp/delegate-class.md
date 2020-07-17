@@ -1,7 +1,8 @@
 ---
 title: System.Delegate and the `delegate` keyword
-description: Learn about the classes in the .NET Framework that support delegates and how those map to the 'delegate' keyword.
+description: Learn about the classes in .NET that support delegates and how those map to the 'delegate' keyword.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 ---
 
@@ -9,17 +10,15 @@ ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 
 [Previous](delegates-overview.md)
 
-This article will cover the classes in the .NET framework
-that support delegates, and how those map to the `delegate`
-keyword.
+This article covers the classes in .NET that support delegates, and how those map to the `delegate` keyword.
 
-## Defining Delegate Types
+## Define delegate types
 
 Let's start with the 'delegate' keyword, because that's primarily what
 you will use as you work with delegates. The code that the
 compiler generates when you use the `delegate` keyword will
-map to method calls that invoke members of the <xref:System.Delegate> 
-and <xref:System.MulticastDelegate> classes. 
+map to method calls that invoke members of the <xref:System.Delegate>
+and <xref:System.MulticastDelegate> classes.
 
 You define a delegate type using syntax that is similar to defining
 a method signature. You just add the `delegate` keyword to the
@@ -39,7 +38,7 @@ The compiler generates a class, derived from `System.Delegate`
 that matches the signature used (in this case, a method that
 returns an integer, and has two arguments). The type
 of that delegate is `Comparison`. The `Comparison` delegate
-type is a generic type. For details on generics see [here](generics.md).
+type is a generic type. For details on generics see [here](programming-guide/generics/index.md).
 
 Notice that the syntax may appear as though it is declaring
 a variable, but it is actually declaring a *type*. You can
@@ -48,15 +47,15 @@ or even in the global namespace.
 
 > [!NOTE]
 > Declaring delegate types (or other types) directly in
-> the global namespace is not recommended. 
+> the global namespace is not recommended.
 
 The compiler also generates add and remove handlers for this new
 type so that clients of this class can add and remove methods from an instance's
 invocation list. The compiler will enforce that the signature
 of the method being added or removed matches the signature
-used when declaring the method. 
+used when declaring the method.
 
-## Declaring instances of delegates
+## Declare instances of delegates
 
 After defining the delegate, you can create an instance of that type.
 Like all variables in C#, you cannot declare delegate instances directly
@@ -71,11 +70,11 @@ public Comparison<T> comparator;
 
 The type of the variable is `Comparison<T>`, the delegate type
  defined earlier. The name of the variable is `comparator`.
- 
+
  That code snippet above declared a member variable inside a class. You can also
  declare delegate variables that are local variables, or arguments to methods.
 
-## Invoking Delegates
+## Invoke delegates
 
 You invoke the methods that are in the invocation list of a delegate by calling
 that delegate. Inside the `Sort()` method, the code will call the
@@ -95,7 +94,7 @@ the line above would cause a `NullReferenceException` to be thrown. The
 idioms used to address this problem are more complicated than a simple
 null-check, and are covered later in this [series](delegates-patterns.md).
 
-## Assigning, Adding and removing Invocation Targets
+## Assign, add, and remove invocation targets
 
 That's how a delegate type is defined, and how delegate instances
 are declared and invoked.
@@ -132,7 +131,7 @@ that can be used as a delegate invocation target, and attach that method as
 an invocation target.
 
 You could also have been explicit by declaring a variable of type
-'Comparison<string>` and doing an assignment:
+`Comparison<string>` and doing an assignment:
 
 ```csharp
 Comparison<string> comparer = CompareLength;
@@ -140,7 +139,7 @@ phrases.Sort(comparer);
 ```
 
 In uses where the method being used as a delegate target is a small method,
-it's common to use [Lambda Expression](lambda-expressions.md) syntax
+it's common to use [lambda expression](./programming-guide/statements-expressions-operators/lambda-expressions.md) syntax
 to perform the assignment:
 
 ```csharp
@@ -148,7 +147,7 @@ Comparison<string> comparer = (left, right) => left.Length.CompareTo(right.Lengt
 phrases.Sort(comparer);
 ```
 
-Using Lambda Expressions for delegate targets
+Using lambda expressions for delegate targets
 is covered more in a [later section](delegates-patterns.md).
 
 The Sort() example typically attaches a single target method to the
@@ -162,18 +161,18 @@ and support you'll typically need to work with delegates. These
 features are built on two classes in the .NET Core
 framework: <xref:System.Delegate> and <xref:System.MulticastDelegate>.
 
-The `System.Delegate` class, and its single direct sub-class,
+The `System.Delegate` class and its single direct subclass,
 `System.MulticastDelegate`, provide the framework support for
 creating delegates, registering methods as delegate targets,
 and invoking all methods that are registered as a delegate
-target. 
+target.
 
 Interestingly, the `System.Delegate` and `System.MulticastDelegate`
 classes are not themselves delegate types. They do provide the
 basis for all specific delegate types. That same language
 design process mandated that you cannot declare a class that derives
 from `Delegate` or `MulticastDelegate`. The C# language rules prohibit it.
- 
+
 Instead, the C# compiler creates instances of a class derived from `MulticastDelegate`
 when you use the C# language keyword to declare delegate types.
 
@@ -210,7 +209,6 @@ variable. As you'll see [later in this series](delegates-patterns.md),
 there are patterns that work directly with these methods.
 
 Now that you've seen the language syntax and the classes that support
-delegates, let's examine how strongly typed delegates are used, created
-and invoked.
+delegates, let's examine how strongly typed delegates are used, created, and invoked.
 
 [Next](delegates-strongly-typed.md)

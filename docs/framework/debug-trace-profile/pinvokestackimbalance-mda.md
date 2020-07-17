@@ -1,5 +1,6 @@
 ---
 title: "pInvokeStackImbalance MDA"
+description: Review the PInvokeStackImbalance MDA, which may be activated during an access violation or memory corruption when making or following a platform invoke call.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "signatures, platform invoke"
@@ -10,8 +11,6 @@ helpviewer_keywords:
   - "PInvokeStackImbalance MDA"
   - "managed debugging assistants (MDAs), platform invoke"
 ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # PInvokeStackImbalance MDA
 
@@ -20,7 +19,7 @@ The `PInvokeStackImbalance` managed debugging assistant (MDA) is activated when 
 The `PInvokeStackImbalance` MDA is implemented only for 32-bit x86 platforms.
 
 > [!NOTE]
-> The `PInvokeStackImbalance` MDA is disabled by default. In Visual Studio 2017, The `PInvokeStackImbalance` MDA appears in the **Managed Debugging Assistants** list in the **Exception Settings** dialog box (which is displayed when you select **Debug** > **Windows** > **Exception Settings**). However, selecting or clearing the **Break When Thrown** check box does not enable or disable the MDA; it only controls whether Visual Studio throws an exception when the MDA is activated.
+> The `PInvokeStackImbalance` MDA is disabled by default. In Visual Studio 2017 and later versions, the `PInvokeStackImbalance` MDA appears in the **Managed Debugging Assistants** list in the **Exception Settings** dialog box (which is displayed when you select **Debug** > **Windows** > **Exception Settings**). However, selecting or clearing the **Break When Thrown** check box does not enable or disable the MDA; it only controls whether Visual Studio throws an exception when the MDA is activated.
 
 ## Symptoms
 
@@ -54,8 +53,8 @@ The MDA message gives the name of the platform invoke method call that is causin
 </mdaConfig>
 ```
 
-## See Also
+## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: d5237628-2675-45ed-a39e-65c0731b6a56
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SaveToMemory Method
 Saves all metadata in the current scope to the specified area of memory.  
   
 ## Syntax  
   
-```  
-HRESULT SaveToMemory (   
-    [out]  void        *pbData,   
-    [in]   ULONG       cbData   
+```cpp  
+HRESULT SaveToMemory (
+    [out]  void        *pbData,
+    [in]   ULONG       cbData
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbData`  
  [out] The address at which to begin writing metadata.  
   
@@ -38,7 +36,7 @@ HRESULT SaveToMemory (
  [in] The size, in bytes, of the allocated memory.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,6 +44,7 @@ HRESULT SaveToMemory (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

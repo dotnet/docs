@@ -12,11 +12,11 @@ ms.assetid: 5c8f5bca-7ba9-4526-a9bf-0852351dbe8a
 The topics in this section describe how to use the <xref:System.Windows.Controls.Canvas> element to absolutely position child elements.  
   
 ## In This Section  
- [Wrap a Border Around the Content of a Canvas](../../../../docs/framework/wpf/controls/how-to-wrap-a-border-around-the-content-of-a-canvas.md)  
- [Get or Set Canvas Positioning Properties](../../../../docs/framework/wpf/controls/how-to-get-or-set-canvas-positioning-properties.md)  
- [Create and Use a Canvas](../../../../docs/framework/wpf/controls/how-to-create-and-use-a-canvas.md)  
- [Use the Attached Properties of Canvas to Position Child Elements](../../../../docs/framework/wpf/controls/how-to-use-the-attached-properties-of-canvas-to-position-child-elements.md)  
- [Resize a Canvas by Using a Thumb](../../../../docs/framework/wpf/controls/how-to-resize-a-canvas-by-using-a-thumb.md)  
+ [Wrap a Border Around the Content of a Canvas](how-to-wrap-a-border-around-the-content-of-a-canvas.md)  
+ [Get or Set Canvas Positioning Properties](how-to-get-or-set-canvas-positioning-properties.md)  
+ [Create and Use a Canvas](how-to-create-and-use-a-canvas.md)  
+ [Use the Attached Properties of Canvas to Position Child Elements](how-to-use-the-attached-properties-of-canvas-to-position-child-elements.md)  
+ [Resize a Canvas by Using a Thumb](how-to-resize-a-canvas-by-using-a-thumb.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Panel>  
@@ -34,8 +34,8 @@ The topics in this section describe how to use the <xref:System.Windows.Controls
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
+ [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
+ [ScrollViewer Overview](scrollviewer-overview.md)

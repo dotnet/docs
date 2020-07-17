@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7070b6d0-f2e0-44ff-b124-0944cd807e69
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::Abort Method
 Aborts the computation this ICorDebugEval object is currently performing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Abort ();  
 ```  
   
@@ -31,7 +29,7 @@ HRESULT Abort ();
  If the evaluation is nested and it is not the most recent one, the `Abort` method may fail.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

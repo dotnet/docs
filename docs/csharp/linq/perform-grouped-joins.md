@@ -1,7 +1,7 @@
 ---
 title: Perform grouped joins (LINQ in C#)
 description: Learn how to perform grouped joins using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 04/22/2020
 ms.assetid: 9667daf9-a5fd-4b43-a5c4-a9c2b744000e
 ---
 # Perform grouped joins
@@ -12,6 +12,9 @@ For example, a class or a relational database table named `Student` might contai
 
 > [!NOTE]
 > Each element of the first collection appears in the result set of a group join regardless of whether correlated elements are found in the second collection. In the case where no correlated elements are found, the sequence of correlated elements for that element is empty. The result selector therefore has access to every element of the first collection. This differs from the result selector in a non-group join, which cannot access elements from the first collection that have no match in the second collection.
+
+> [!WARNING]
+> <xref:System.Linq.Enumerable.GroupJoin%2A?displayProperty=nameWithType> has no direct equivalent in traditional relational database terms. However, this method does implement a superset of inner joins and left outer joins. Both of these operations can be written in terms of a grouped join. For more information, see [Join Operations](../programming-guide/concepts/linq/join-operations.md) and [Entity Framework Core, GroupJoin](https://docs.microsoft.com/ef/core/querying/complex-query-operators#groupjoin).
 
 The first example in this article shows you how to perform a group join. The second example shows you how to use a group join to create XML elements.
 
@@ -29,8 +32,8 @@ Group joins are ideal for creating XML by using LINQ to XML. The following examp
 
 ## See also
 
-- <xref:System.Linq.Enumerable.Join%2A>  
-- <xref:System.Linq.Enumerable.GroupJoin%2A>  
-- [Perform inner joins](perform-inner-joins.md)  
-- [Perform left outer joins](perform-left-outer-joins.md)  
-- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)  
+- <xref:System.Linq.Enumerable.Join%2A>
+- <xref:System.Linq.Enumerable.GroupJoin%2A>
+- [Perform inner joins](perform-inner-joins.md)
+- [Perform left outer joins](perform-left-outer-joins.md)
+- [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)

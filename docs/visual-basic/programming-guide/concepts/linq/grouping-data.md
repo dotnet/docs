@@ -1,5 +1,5 @@
 ---
-title: "Grouping Data (Visual Basic)"
+title: "Grouping Data"
 ms.date: 07/20/2015
 ms.assetid: 8f3a0871-6958-4aef-8f6f-493e189fd57d
 ---
@@ -8,7 +8,7 @@ Grouping refers to the operation of putting data into groups so that the element
   
  The following illustration shows the results of grouping a sequence of characters. The key for each group is the character.  
   
- ![LINQ Grouping Operations](../../../../csharp/programming-guide/concepts/linq/media/linq_group.png "LINQ_Group")  
+ ![Diagram that shows a LINQ Grouping operation.](./media/grouping-data/linq-group-operation.png)  
   
  The standard query operator methods that group data elements are listed in the following section.  
   
@@ -26,7 +26,7 @@ Grouping refers to the operation of putting data into groups so that the element
 Dim numbers As New System.Collections.Generic.List(Of Integer)(  
      New Integer() {35, 44, 200, 84, 3987, 4, 199, 329, 446, 208})  
   
-Dim query = From number In numbers   
+Dim query = From number In numbers
             Group By Remainder = (number Mod 2) Into Group  
   
 Dim sb As New System.Text.StringBuilder()  
@@ -57,9 +57,10 @@ MsgBox(sb.ToString())
 ' 208  
 ```  
   
-## See Also  
- <xref:System.Linq>  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [Group By Clause](../../../../visual-basic/language-reference/queries/group-by-clause.md)  
- [How to: Group Files by Extension (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md)  
- [How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+## See also
+
+- <xref:System.Linq>
+- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)
+- [Group By Clause](../../../language-reference/queries/group-by-clause.md)
+- [How to: Group Files by Extension (LINQ) (Visual Basic)](how-to-group-files-by-extension-linq.md)
+- [How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)](how-to-split-a-file-into-many-files-by-using-groups-linq.md)

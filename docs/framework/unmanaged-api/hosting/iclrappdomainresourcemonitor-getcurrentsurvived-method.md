@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 392e9009-40ef-40e3-ad4d-7ce93a989e78
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentSurvived Method
 Gets the number of bytes that survived the last full, blocking garbage collection and that are referenced by the current application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT STDMETHODCALLTYPE GetCurrentSurvived(  
              [in]  DWORD dwAppDomainId,  
              [out] ULONGLONG *pAppDomainBytesSurvived,  
              [out] ULONGLONG *pTotalBytesSurvived);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainId`  
  [in] The ID of the requested application domain.  
   
@@ -54,7 +52,7 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
  The `GetCurrentSurvived` method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringSurvivedMemorySize%2A?displayProperty=nameWithType> property.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -62,8 +60,9 @@ HRESULT STDMETHODCALLTYPE GetCurrentSurvived(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
- [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+
+- [ICLRAppDomainResourceMonitor Interface](iclrappdomainresourcemonitor-interface.md)
+- [Application Domain Resource Monitoring](../../../standard/garbage-collection/app-domain-resource-monitoring.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

@@ -1,5 +1,5 @@
 ---
-title: "Type Characters (Visual Basic)"
+title: "Type Characters"
 ms.date: 01/31/2018
 helpviewer_keywords: 
   - "&H prefix for hexadecimal values"
@@ -134,12 +134,12 @@ Dim number As Integer = &H_C305_F860
 
 [!INCLUDE [supporting-underscores](../../../../../includes/vb-separator-langversion.md)]
 
-## See Also
+## See also
 
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Data Types](index.md)
+- [Elementary Data Types](elementary-data-types.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Type Conversions in Visual Basic](type-conversions.md)
+- [Troubleshooting Data Types](troubleshooting-data-types.md)
+- [Variable Declaration](../variables/variable-declaration.md)
+- [Data Types](../../../language-reference/data-types/index.md)

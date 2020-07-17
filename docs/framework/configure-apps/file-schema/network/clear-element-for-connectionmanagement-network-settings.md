@@ -1,5 +1,5 @@
 ---
-title: "&lt;clear&gt; Element for connectionManagement (Network Settings)"
+title: "<clear> Element for connectionManagement (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/connectionManagement/clear"
@@ -11,14 +11,14 @@ helpviewer_keywords:
   - "<connectionManagement>, clear element"
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
 ---
-# &lt;clear&gt; Element for connectionManagement (Network Settings)
+# \<clear> Element for connectionManagement (Network Settings)
 Clears the connection management list.  
-  
- \<configuration>  
-\<system.net>  
-\<connectionManagement>  
-\<clear>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
+
 ## Syntax  
   
 ```xml  
@@ -38,7 +38,7 @@ Clears the connection management list.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[connectionManagement](../../../../../docs/framework/configure-apps/file-schema/network/connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
+|[connectionManagement](connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
   
 ## Remarks  
  The `clear` element clears all entries from the connection management list.  
@@ -61,7 +61,8 @@ Clears the connection management list.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.ServicePoint>  
-- <xref:System.Net.ServicePointManager>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.ServicePoint>
+- <xref:System.Net.ServicePointManager>
+- [Network Settings Schema](index.md)

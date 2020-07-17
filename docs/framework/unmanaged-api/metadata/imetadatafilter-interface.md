@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ec0856ef-8c56-40ba-bf60-86e0ce8b337f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataFilter Interface
 Provides methods for marking and filtering metadata tokens to avoid repeating actions that have already been taken.  
@@ -24,12 +22,12 @@ Provides methods for marking and filtering metadata tokens to avoid repeating ac
   
 |Method|Description|  
 |------------|-----------------|  
-|[IsTokenMarked Method](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-istokenmarked-method.md)|Gets a value indicating whether the specified metadata token has been processed.|  
-|[MarkToken Method](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-marktoken-method.md)|Sets a value indicating that the specified metadata token has been processed.|  
-|[UnmarkAll Method](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-unmarkall-method.md)|Removes the processing marks from all the tokens in the current metadata scope.|  
+|[IsTokenMarked Method](imetadatafilter-istokenmarked-method.md)|Gets a value indicating whether the specified metadata token has been processed.|  
+|[MarkToken Method](imetadatafilter-marktoken-method.md)|Sets a value indicating that the specified metadata token has been processed.|  
+|[UnmarkAll Method](imetadatafilter-unmarkall-method.md)|Removes the processing marks from all the tokens in the current metadata scope.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -37,5 +35,6 @@ Provides methods for marking and filtering metadata tokens to avoid repeating ac
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+## See also
+
+- [Metadata Interfaces](metadata-interfaces.md)

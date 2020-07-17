@@ -1,9 +1,7 @@
 ---
 title: How the .NET Core Runtime and SDK are versioned
 description: This article teaches you how the .NET Core SDK and Runtime are versioned (similar to semantic versioning).
-author: bleroy
-ms.date: 07/26/2018
-ms.custom: "seodec18"
+ms.date: 06/24/2020
 ---
 
 # Overview of how .NET Core is versioned
@@ -20,19 +18,19 @@ The .NET Core SDK doesn't follow semantic versioning. The .NET Core SDK releases
 
 The third position of the SDK version number communicates both the minor and patch number. The minor version is multiplied by 100. Minor version 1, patch version 2 would be represented as 102. The final two digits represent the patch number. For example, the release of .NET Core 2.2 may create releases like the following table:
 
-| Change                | .NET Core Runtime | .NET Core SDK (*) |
+| Change                | .NET Core Runtime | .NET Core SDK (\*) |
 |-----------------------|-------------------|-------------------|
 | Initial release       | 2.2.0             | 2.2.100           |
 | SDK Patch             | 2.2.0             | 2.2.101           |
 | Runtime and SDK Patch | 2.2.1             | 2.2.102           |
 | SDK Feature change    | 2.2.1             | 2.2.200           |
 
-(\*) This chart uses a future 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [.NET Core version selection](selection.md).
+(\*) This chart uses the 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [.NET Core version selection](selection.md).
 
 NOTES:
 
-* If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series with numbers like 2.2.1000 as the feature release following 2.2.900. This situation isn't expected to occur.
-* 99 patch releases without a feature release won't occur. If a release approaches this number, it forces a feature release.
+- If the SDK has 10 feature updates before a runtime feature update, version numbers roll into the 1000 series with numbers like 2.2.1000 as the feature release following 2.2.900. This situation isn't expected to occur.
+- 99 patch releases without a feature release won't occur. If a release approaches this number, it forces a feature release.
 
 You can see more details in the initial proposal at the [dotnet/designs](https://github.com/dotnet/designs/pull/29) repository.
 
@@ -50,24 +48,24 @@ The optional `PRERELEASE` and `BUILDNUMBER` parts are never part of supported re
 
 `MAJOR` is incremented when:
 
-* Significant changes occur to the product, or a new product direction.
-* Breaking changes were taken. There's a high bar to accepting breaking changes.
-* An old version is no longer supported.
-* A newer `MAJOR` version of an existing dependency is adopted.
+- Significant changes occur to the product, or a new product direction.
+- Breaking changes were taken. There's a high bar to accepting breaking changes.
+- An old version is no longer supported.
+- A newer `MAJOR` version of an existing dependency is adopted.
 
 `MINOR` is incremented when:
 
-* Public API surface area is added.
-* A new behavior is added.
-* A newer `MINOR` version of an existing dependency is adopted.
-* A new dependency is introduced.
+- Public API surface area is added.
+- A new behavior is added.
+- A newer `MINOR` version of an existing dependency is adopted.
+- A new dependency is introduced.
 
 `PATCH` is incremented when:
 
-* Bug fixes are made.
-* Support for a newer platform is added.
-* A newer `PATCH` version of an existing dependency is adopted.
-* Any other change doesn't fit one of the previous cases.
+- Bug fixes are made.
+- Support for a newer platform is added.
+- A newer `PATCH` version of an existing dependency is adopted.
+- Any other change doesn't fit one of the previous cases.
 
 When there are multiple changes, the highest element affected by individual changes is incremented, and the following ones are reset to zero. For example, when `MAJOR` is incremented, `MINOR` and `PATCH` are reset to zero. When `MINOR` is incremented, `PATCH` is reset to zero while `MAJOR` is left untouched.
 
@@ -98,11 +96,16 @@ Each version of .NET Core implements a version of .NET Standard. Implementing a 
 | 1.0       | up to 1.6     |
 | 2.0       | up to 2.0     |
 | 2.1       | up to 2.0     |
+| 2.2       | up to 2.0     |
+| 3.0       | up to 2.1     |
+| 3.1       | up to 2.1     |
+
+For an interactive table of the .NET Standard versions, and how they correspond to .NET implementations, see [.NET Standard versions](https://dotnet.microsoft.com/platform/dotnet-standard#versions).
 
 ## See also
 
-* [Target frameworks](../../standard/frameworks.md)  
-* [.NET Core distribution packaging](../build/distribution-packaging.md)  
-* [.NET Core Support Lifecycle Fact Sheet](https://www.microsoft.com/net/core/support)  
-* [.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)  
-* [Docker images for .NET Core](https://hub.docker.com/r/microsoft/dotnet/)
+- [Target frameworks](../../standard/frameworks.md)
+- [.NET Core distribution packaging](../distribution-packaging.md)
+- [.NET Core Support Lifecycle Fact Sheet](https://dotnet.microsoft.com/platform/support/policy)
+- [.NET Core 2+ Version Binding](https://github.com/dotnet/designs/issues/3)
+- [Docker images for .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/)

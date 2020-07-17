@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1de658e6-da32-4d01-9097-6f43c92222e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameGetBlobFromImage Function
 Gets a binary representation of the assembly image at the specified memory address.  
   
- This function has been deprecated. Use the [ICLRStrongName::StrongNameGetBlobFromImage](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetblobfromimage-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameGetBlobFromImage](../hosting/iclrstrongname-strongnamegetblobfromimage-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEAN StrongNameGetBlobFromImage (  
     [in]  BYTE        *pbBase,  
     [in]  DWORD       dwLength,  
@@ -33,7 +31,7 @@ BOOLEAN StrongNameGetBlobFromImage (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbBase`  
  [in] The memory address of the mapped assembly manifest.  
   
@@ -50,10 +48,10 @@ BOOLEAN StrongNameGetBlobFromImage (
  `true` on successful completion; otherwise, `false`.  
   
 ## Remarks  
- If the `StrongNameGetBlobFromImage` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
+ If the `StrongNameGetBlobFromImage` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -61,7 +59,8 @@ BOOLEAN StrongNameGetBlobFromImage (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [StrongNameGetBlobFromImage Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetblobfromimage-method.md)  
- [StrongNameGetBlob Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetblob-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+
+- [StrongNameGetBlobFromImage Method](../hosting/iclrstrongname-strongnamegetblobfromimage-method.md)
+- [StrongNameGetBlob Method](../hosting/iclrstrongname-strongnamegetblob-method.md)
+- [ICLRStrongName Interface](../hosting/iclrstrongname-interface.md)

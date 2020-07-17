@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a8e3dd32-6a44-4371-9a74-f417b11998c8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::DefineParameter Method
 Defines a single parameter in the current method. The parameter type is taken from the parameter's position (sequence) within the method's signature.  
@@ -25,7 +23,7 @@ Defines a single parameter in the current method. The parameter type is taken fr
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineParameter(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  
@@ -36,7 +34,7 @@ HRESULT DefineParameter(
     [in] ULONG32      addr3);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] The parameter name.  
   
@@ -64,5 +62,6 @@ HRESULT DefineParameter(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+## See also
+
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)

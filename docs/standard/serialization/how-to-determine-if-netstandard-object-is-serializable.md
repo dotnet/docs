@@ -8,16 +8,14 @@ dev_langs:
 helpviewer_keywords: 
   - "serializing objects"
   - "objects, serializing steps"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to determine if a .NET Standard object is serializable
 
-The .NET Standard is a specification that defines the types and members that must be present on specific .NET implementations that conform to that version of the standard. However, the .NET Standard does not define whether a type is serializable. The types defined in the .NET Standard Library are not marked with the <xref:System.SerializableAttribute> attribute. Instead, specific .NET implementations, such as the .NET Framework and .NET Core, are free to determine whether a particular type is serializable. 
+The .NET Standard is a specification that defines the types and members that must be present on specific .NET implementations that conform to that version of the standard. However, the .NET Standard does not define whether a type is serializable. The types defined in the .NET Standard Library are not marked with the <xref:System.SerializableAttribute> attribute. Instead, specific .NET implementations, such as the .NET Framework and .NET Core, are free to determine whether a particular type is serializable.
 
 If you've developed a library that targets the .NET Standard, your library can be consumed by any .NET implementation that supports the .NET Standard. This means that you cannot know in advance whether a particular type is serializable; you can only determine whether it is serializable at run time.
 
-You can determine whether an object is serializable at runtime by retrieving the value of the <xref:System.Type.IsSerializable> property of a <xref:System.Type> object that represents that object's type. The following example provides one implementation. It defines an `IsSerializable(Object)` extension method that indicates whether any <xref:System.Object> instance can be serialized.
+You can determine whether an object is serializable at run time by retrieving the value of the <xref:System.Type.IsSerializable> property of a <xref:System.Type> object that represents that object's type. The following example provides one implementation. It defines an `IsSerializable(Object)` extension method that indicates whether any <xref:System.Object> instance can be serialized.
 
 [!code-csharp[is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/csharp/program.cs#2)]
 [!code-vb[is-a-type-serializable](~/samples/snippets/standard/serialization/is-serializable/vb/library.vb#2)]

@@ -1,0 +1,21 @@
+CMFCRibbonPanel* pPanel2 = pCategory->AddPanel(_T("With Icons and Labels"));
+
+CMFCRibbonEdit* pBtn4 = new CMFCRibbonEdit(ID_RIBBON_EBTN_4, 90, _T("Label:"), 0);
+pBtn4->SetEditText(_T("Edit"));
+pPanel2->Add(pBtn4);
+
+CMFCRibbonEdit* pBtn5 = new CMFCRibbonEdit(ID_RIBBON_EBTN_5, 90, _T("Label:"), 1);
+pBtn5->EnableSpinButtons(0, 99);
+pBtn5->SetEditText(_T("0"));
+pPanel2->Add(pBtn5);
+
+CMFCRibbonComboBox* pBtn6 = new CMFCRibbonComboBox(ID_RIBBON_EBTN_6, TRUE, 74, _T("Label:"), 2);
+pBtn6->AddItem(_T("Combo Box"));
+for (i = 0; i < 20; i++)
+{
+	CString str;
+	str.Format(_T("Item %d"), i + 1);
+	pBtn6->AddItem(str);
+}
+pBtn6->SelectItem(0);
+pPanel2->Add(pBtn6);

@@ -1,19 +1,18 @@
 ---
-title: "Timing vulnerabilities with CBC-mode symmetric decryption using padding"
-description: "Learn how to detect and mitigate timing vulnerabilities with Cipher-Block-Chaining (CBC) mode symmetric decryption using padding."
-ms.date: "06/12/2018"
-author: "blowdart"
-ms.author: "mairaw"
+title: CBC decryption vulnerability
+description: Learn how to detect and mitigate timing vulnerabilities with Cipher-Block-Chaining (CBC) mode symmetric decryption using padding.
+ms.date: 06/12/2018
+author: blowdart
 ---
 # Timing vulnerabilities with CBC-mode symmetric decryption using padding
 
-Microsoft believes that it's no longer safe to decrypt data encrypted with the Cipher-Block-Chaining (CBC) mode of symmetric encryption when verifiable padding has been applied without first ensuring the integrity of the ciphertext, except for very specific circumstances. This judgement is based on currently known cryptographic research. 
+Microsoft believes that it's no longer safe to decrypt data encrypted with the Cipher-Block-Chaining (CBC) mode of symmetric encryption when verifiable padding has been applied without first ensuring the integrity of the ciphertext, except for very specific circumstances. This judgement is based on currently known cryptographic research.
 
 ## Introduction
 
 A padding oracle attack is a type of attack against encrypted data that allows the attacker to decrypt the contents of the data, without knowing the key.
 
-An oracle refers to a "tell" which gives an attacker information about whether the action they're executing is correct or not. Imagine playing a board or card game with a child. When her face lights up with a big smile because she thinks she's about to make a good move, that's an oracle. You, as the opponent, can use this oracle to plan your next move appropriately.
+An oracle refers to a "tell" which gives an attacker information about whether the action they're executing is correct or not. Imagine playing a board or card game with a child. When their face lights up with a big smile because they think they're about to make a good move, that's an oracle. You, as the opponent, can use this oracle to plan your next move appropriately.
 
 Padding is a specific cryptographic term. Some ciphers, which are the algorithms used to encrypt your data, work on blocks of data where each block is a fixed size. If the data you want to encrypt isn't the right size to fill the blocks, your data is padded until it does. Many forms of padding require that padding to always be present, even if the original input was of the right size. This allows the padding to always be safely removed upon decryption.
 
@@ -87,7 +86,7 @@ Applications that are unable to change their messaging format but perform unauth
   - This also doesn't prevent plaintext recovery in situations where the attacker can coerce the same plaintext to be encrypted multiple times with a different message offset.
 - Gate the evaluation of a decryption call to dampen the timing signal:
   - The computation of hold time must have a minimum in excess of the maximum amount of time the decryption operation would take for any data segment that contains padding.
-  - Time computations should be done according to the guidance in [Acquiring high-resolution time stamps](https://msdn.microsoft.com/library/windows/desktop/dn55340.aspx), not by using <xref:System.Environment.TickCount?displayProperty=nameWithType> (subject to roll-over/overflow) or subtracting two system timestamps (subject to NTP adjustment errors).
+  - Time computations should be done according to the guidance in [Acquiring high-resolution time stamps](/windows/desktop/sysinfo/acquiring-high-resolution-time-stamps), not by using <xref:System.Environment.TickCount?displayProperty=nameWithType> (subject to roll-over/overflow) or subtracting two system timestamps (subject to NTP adjustment errors).
   - Time computations must be inclusive of the decryption operation including all potential exceptions in managed or C++ applications, not just padded onto the end.
   - If success or failure has been determined yet, the timing gate needs to return failure when it expires.
 - Services that are performing unauthenticated decryption should have monitoring in place to detect that a flood of "invalid" messages has come through.
@@ -98,13 +97,13 @@ Applications that are unable to change their messaging format but perform unauth
 For programs built against the Windows Cryptography: Next Generation (CNG) library:
 
 - The decryption call is to [BCryptDecrypt](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptdecrypt), specifying the `BCRYPT_BLOCK_PADDING` flag.
-- The key handle has been initialized by calling [BCryptSetProperty](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptsetproperty) with [BCRYPT_CHAINING_MODE](https://msdn.microsoft.com/library/windows/desktop/aa376211.aspx#BCRYPT_CHAINING_MODE) set to `BCRYPT_CHAIN_MODE_CBC`.
+- The key handle has been initialized by calling [BCryptSetProperty](/windows/desktop/api/bcrypt/nf-bcrypt-bcryptsetproperty) with [BCRYPT_CHAINING_MODE](/windows/desktop/SecCNG/cng-property-identifiers#BCRYPT_CHAINING_MODE) set to `BCRYPT_CHAIN_MODE_CBC`.
   - Since `BCRYPT_CHAIN_MODE_CBC` is the default, affected code may not have assigned any value for `BCRYPT_CHAINING_MODE`.
 
 For programs built against the older Windows Cryptographic API:
 
 - The decryption call is to [CryptDecrypt](/windows/desktop/api/wincrypt/nf-wincrypt-cryptdecrypt) with `Final=TRUE`.
-- The key handle has been initialized by calling [CryptSetKeyParam](/windows/desktop/api/wincrypt/nf-wincrypt-cryptsetkeyparam) with [KP_MODE](https://msdn.microsoft.com/library/windows/desktop/aa379949.aspx#KP_MODE) set to `CRYPT_MODE_CBC`.
+- The key handle has been initialized by calling [CryptSetKeyParam](/windows/desktop/api/wincrypt/nf-wincrypt-cryptsetkeyparam) with [KP_MODE](/windows/desktop/api/wincrypt/nf-wincrypt-cryptgetkeyparam) set to `CRYPT_MODE_CBC`.
   - Since `CRYPT_MODE_CBC` is the default, affected code may not have assigned any value for `KP_MODE`.
 
 ## Finding vulnerable code - managed applications

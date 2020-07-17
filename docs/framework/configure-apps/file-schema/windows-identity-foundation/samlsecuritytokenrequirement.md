@@ -1,17 +1,18 @@
 ---
-title: "&lt;samlSecurityTokenRequirement&gt;"
+title: "<samlSecurityTokenRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: 09202d12-88d3-49cc-953b-703bcc1690eb
 author: "BrucePerlerMS"
 ---
-# &lt;samlSecurityTokenRequirement&gt;
+# \<samlSecurityTokenRequirement>
 Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> class, the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class, or a derived class of either of these classes. Represented by the <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> class.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<securityTokenHandlers>  
-\<add>  
-\<samlSecurityTokenRequirement>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<samlSecurityTokenRequirement>**  
   
 ## Syntax  
   
@@ -20,7 +21,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
   <identityConfiguration>  
     <securityTokenHandlers>  
       <add>  
-        <samlSecurityTokenRequirement   
+        <samlSecurityTokenRequirement
             issuerCertificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
             issuerCertificateRevocationMode="NoCheck||Offline||Online"  
             issuerCertificateTrustedStoreLocation="CurrentLocation||LocalMachine"  
@@ -52,14 +53,14 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<nameClaimType>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/nameclaimtype.md)|Sets the claim type that specifies the <xref:System.Security.Principal.IIdentity.Name%2A> property.|  
-|[\<roleClaimType>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/roleclaimtype.md)|Specifies the claim type that defines the role type claims in the collection of <xref:System.Security.Claims.ClaimsIdentity> objects returned by the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method of the token handler.|  
+|[\<nameClaimType>](nameclaimtype.md)|Sets the claim type that specifies the <xref:System.Security.Principal.IIdentity.Name%2A> property.|  
+|[\<roleClaimType>](roleclaimtype.md)|Specifies the claim type that defines the role type claims in the collection of <xref:System.Security.Claims.ClaimsIdentity> objects returned by the <xref:System.IdentityModel.Tokens.SecurityTokenHandler.ValidateToken%2A> method of the token handler.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md)|Adds the specified security token handler to the token handler collection.|  
+|[\<add>](add.md)|Adds the specified security token handler to the token handler collection.|  
   
 ## Remarks  
  The `<samlSecurityTokenRequirement>` element is represented by the <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> class in the object model and is used to configure the `SamlSecurityTokenRequirement` property on a <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> or a <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>.  

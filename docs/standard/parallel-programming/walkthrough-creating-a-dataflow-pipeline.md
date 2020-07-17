@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Creating a Dataflow Pipeline"
+description: Create a dataflow pipeline, which is a series of components, or dataflow blocks. A dataflow block does a certain task to contribute to a larger goal.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -10,28 +11,26 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library, creating dataflow pipeline"
 ms.assetid: 69308f82-aa22-4ac5-833d-e748533b58e8
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Walkthrough: Creating a Dataflow Pipeline
 Although you can use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Receive%2A?displayProperty=nameWithType>, <xref:System.Threading.Tasks.Dataflow.DataflowBlock.ReceiveAsync%2A?displayProperty=nameWithType>, and <xref:System.Threading.Tasks.Dataflow.DataflowBlock.TryReceive%2A?displayProperty=nameWithType> methods to receive messages from source blocks, you can also connect message blocks to form a *dataflow pipeline*. A dataflow pipeline is a series of components, or *dataflow blocks*, each of which performs a specific task that contributes to a larger goal. Every dataflow block in a dataflow pipeline performs work when it receives a message from another dataflow block. An analogy to this is an assembly line for automobile manufacturing. As each vehicle passes through the assembly line, one station assembles the frame, the next one installs the engine, and so on. Because an assembly line enables multiple vehicles to be assembled at the same time, it provides better throughput than assembling complete vehicles one at a time.
 
  This document demonstrates a dataflow pipeline that downloads the book *The Iliad of Homer* from a website and searches the text to match individual words with words that reverse the first word's characters. The formation of the dataflow pipeline in this document consists of the following steps:  
   
-1.  Create the dataflow blocks that participate in the pipeline.  
+1. Create the dataflow blocks that participate in the pipeline.  
   
-2.  Connect each dataflow block to the next block in the pipeline. Each block receives as input the output of the previous block in the pipeline.  
+2. Connect each dataflow block to the next block in the pipeline. Each block receives as input the output of the previous block in the pipeline.  
   
-3.  For each dataflow block, create a continuation task that sets the next block to the completed state after the previous block finishes.  
+3. For each dataflow block, create a continuation task that sets the next block to the completed state after the previous block finishes.  
   
-4.  Post data to the head of the pipeline.  
+4. Post data to the head of the pipeline.  
   
-5.  Mark the head of the pipeline as completed.  
+5. Mark the head of the pipeline as completed.  
   
-6.  Wait for the pipeline to complete all work.  
+6. Wait for the pipeline to complete all work.  
   
 ## Prerequisites  
- Read [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md) before you start this walkthrough.  
+ Read [Dataflow](dataflow-task-parallel-library.md) before you start this walkthrough.  
   
 ## Creating a Console Application  
  In Visual Studio, create a Visual C# or Visual Basic Console Application project. Install the System.Threading.Tasks.Dataflow NuGet package.
@@ -100,10 +99,10 @@ Although you can use the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.Rec
 ## Next Steps  
  This example sends one URL to process through the dataflow pipeline. If you send more than one input value through a pipeline, you can introduce a form of parallelism into your application that resembles how parts might move through an automobile factory. When the first member of the pipeline sends its result to the second member, it can process another item in parallel as the second member processes the first result.  
   
- The parallelism that is achieved by using dataflow pipelines is known as *coarse-grained parallelism* because it typically consists of fewer, larger tasks. You can also use a more *fine-grained parallelism* of smaller, short-running tasks in a dataflow pipeline. In this example, the `findReversedWords` member of the pipeline uses [PLINQ](parallel-linq-plinq.md) to process multiple items in the work list in parallel. The use of fine-grained parallelism in a coarse-grained pipeline can improve overall throughput.  
+ The parallelism that is achieved by using dataflow pipelines is known as *coarse-grained parallelism* because it typically consists of fewer, larger tasks. You can also use a more *fine-grained parallelism* of smaller, short-running tasks in a dataflow pipeline. In this example, the `findReversedWords` member of the pipeline uses [PLINQ](introduction-to-plinq.md) to process multiple items in the work list in parallel. The use of fine-grained parallelism in a coarse-grained pipeline can improve overall throughput.  
   
- You can also connect a source dataflow block to multiple target blocks to create a *dataflow network*. The overloaded version of the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo%2A> method takes a <xref:System.Predicate%601> object that defines whether the target block accepts each message based on its value. Most dataflow block types that act as sources offer messages to all connected target blocks, in the order in which they were connected, until one of the blocks accepts that message. By using this filtering mechanism, you can create systems of connected dataflow blocks that direct certain data through one path and other data through another path. For an example that uses filtering to create a dataflow network, see [Walkthrough: Using Dataflow in a Windows Forms Application](../../../docs/standard/parallel-programming/walkthrough-using-dataflow-in-a-windows-forms-application.md).  
+ You can also connect a source dataflow block to multiple target blocks to create a *dataflow network*. The overloaded version of the <xref:System.Threading.Tasks.Dataflow.DataflowBlock.LinkTo%2A> method takes a <xref:System.Predicate%601> object that defines whether the target block accepts each message based on its value. Most dataflow block types that act as sources offer messages to all connected target blocks, in the order in which they were connected, until one of the blocks accepts that message. By using this filtering mechanism, you can create systems of connected dataflow blocks that direct certain data through one path and other data through another path. For an example that uses filtering to create a dataflow network, see [Walkthrough: Using Dataflow in a Windows Forms Application](walkthrough-using-dataflow-in-a-windows-forms-application.md).  
   
 ## See also
 
-- [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)
+- [Dataflow](dataflow-task-parallel-library.md)

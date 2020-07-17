@@ -4,7 +4,7 @@ description: Learn the fundamentals of functional programming in F#.
 ms.date: 10/29/2018
 ---
 
-# Introduction to Functional Programming in F# #
+# Introduction to Functional Programming in F\#
 
 Functional programming is a style of programming that emphasizes the use of functions and immutable data. Typed functional programming is when functional programming is combined with static types, such as with F#. In general, the following concepts are emphasized in functional programming:
 
@@ -19,7 +19,7 @@ Throughout this series, you'll explore concepts and patterns in functional progr
 
 Functional programming, like other programming paradigms, comes with a vocabulary that you will eventually need to learn. Here are some common terms you'll see all of the time:
 
-* **Function** - A function is a construct that will produce an output when given an input. More formally, it _maps_ an item from one set to another set. This formalism is lifted into the concrete in many ways, especially when using functions that operate on collections of data. It is the most basic (and important) concept in functional programming. 
+* **Function** - A function is a construct that will produce an output when given an input. More formally, it _maps_ an item from one set to another set. This formalism is lifted into the concrete in many ways, especially when using functions that operate on collections of data. It is the most basic (and important) concept in functional programming.
 * **Expression** - An expression is a construct in code that produces a value. In F#, this value must be bound or explicitly ignored. An expression can be trivially replaced by a function call.
 * **Purity** - Purity is a property of a function such that its return value is always the same for the same arguments, and that its evaluation has no side effects. A pure function depends entirely on its arguments.
 * **Referential Transparency** - Referential Transparency is a property of expressions such that they can be replaced with their output without affecting a program's behavior.
@@ -94,7 +94,7 @@ There is a special type, `unit`, that is used when there is nothing to return. F
 
 ```fsharp
 let printString (str: string) =
-    printfn "String is: %s" s
+    printfn "String is: %s" str
 ```
 
 The signature looks like this:
@@ -151,95 +151,20 @@ The `addOneToValue` function is clearly impure, because `value` could be changed
 Here is another example of a non-pure function, because it performs a side effect:
 
 ```fsharp
-let addOneToValue x = 
+let addOneToValue x =
     printfn "x is %d" x
     x + 1
 ```
 
-Although this function does not depend on a global value, it writes the value of `x` to the output of the program. Although there is nothing inherently wrong with doing this, it does mean that the function is not pure.
+Although this function does not depend on a global value, it writes the value of `x` to the output of the program. Although there is nothing inherently wrong with doing this, it does mean that the function is not pure. If another part of your program depends on something external to the program, such as the output buffer, then calling this function can affect that other part of your program.
 
-Removing the `printfn` statement finally makes the function pure:
+Removing the `printfn` statement makes the function pure:
 
 ```fsharp
 let addOneToValue x = x + 1
 ```
 
-Although this function is not inherently _better_ than the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function once or 1 billion times will still result in the same thing: just producing a value. This predictability is valuable in functional programming, as it means that any pure function is referentially transparent.
-
-### Referential Transparency
-
-Referential transparency is a property of expressions and functions. For an expression to be referentially transparent, it must be able to be replaced with its resulting value without changing the program's behavior. All pure functions are referentially transparent.
-
-As with pure functions, it can be helpful to think of referential transparency from a mathematical perspective. In the mathematical expression `y = f(x)`, `f(x)` can be replaced by the result of the function and it will still be equal to `y`. This is equally true for referential transparency in functional programming.
-
-Consider calling the previously defined `addOneIfOdd` function twice:
-
-```fsharp
-// Checks if 'x' is odd by using the mod operator
-let isOdd x = x % 2 <> 0
-
-let addOneIfOdd input =
-    let result =
-        if isOdd input then
-            input + 1
-        else
-            input
-
-    result
-
-let res1 = addOneIffOdd 1 // Produces 2
-let res2 = addOneIffOdd 2 // Produces 2
-```
-
-We can replace each function call with the function body, substituting the argument `input` with each value:
-
-```fsharp
-// Checks if 'x' is odd by using the mod operator
-let isOdd x = x % 2 <> 0
-
-let addOneIfOdd input =
-    let result =
-        if isOdd input then
-            input + 1
-        else
-            input
-
-    result
-
-let res1 =
-    let result =
-        if isOdd 1 then
-            1 + 1
-        else
-            1
-
-    result
-let res2 =
-    let result =
-        if isOdd 2 then
-            2 + 1
-        else
-            2
-
-    result
-```
-
-Both `res1` and `res2` have the same value as if the function was called, indicating that `addOneIfOdd` is referentially transparent!
-
-Additionally, a function doesn't have to be pure to also be referentially transparent. Consider a previous definition of  `addOneTovalue`:
-
-```fsharp
-let addOneToValue x = 
-    printfn "x is %d" x
-    x + 1
-```
-
-Any call to this function can also be replaced by its body and the same things will happen each time:
-
-* The value, prior to being added to, is printed to the output
-* The value has 1 added to it
-
-When programming in F#, it is often referential transparency that is the goal, rather than purity. However, it is still good practice to write pure functions when you can.
+Although this function is not inherently _better_ than the previous version with the `printfn` statement, it does guarantee that all this function does is return a value. Calling this function any number of times produces the same result: it just produces a value. The predictability given by purity is something many functional programmers strive for.
 
 ### Immutability
 

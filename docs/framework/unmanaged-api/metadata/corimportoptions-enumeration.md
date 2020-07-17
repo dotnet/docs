@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4e5d03cb-97c9-4ff4-8dbd-17d94ee374d3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorImportOptions Enumeration
 Contains flag values that control the behavior during importation of an assembly outside the current scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorImportOptions {  
   
     MDImportOptionDefault                = 0x00000000,  
@@ -53,11 +51,12 @@ typedef enum CorImportOptions {
 |`MDImportOptionAllExportedTypes`|Indicates that all exported types, including deleted ones, should be enumerated.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+
+- [Metadata Enumerations](metadata-enumerations.md)

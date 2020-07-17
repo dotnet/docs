@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 31e53494-bcc9-4981-91a4-f7e0f02cad48
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction::GetLocalVarSigToken Method
 Gets the metadata token for the local variable signature of the function that is represented by this ICorDebugFunction instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVarSigToken (  
     [out] mdSignature *pmdSig  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pmdSig`  
  [out] A pointer to the `mdSignature` token for the local variable signature of this function, or `mdSignatureNil`, if this function has no local variables.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

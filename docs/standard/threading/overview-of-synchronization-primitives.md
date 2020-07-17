@@ -8,15 +8,13 @@ helpviewer_keywords:
   - "threading [.NET],synchronizing threads"
   - "managed threading"
 ms.assetid: b782bcb8-da6a-4c6a-805f-2eb46d504309
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Overview of synchronization primitives
 
 .NET provides a range of types that you can use to synchronize access to a shared resource or coordinate thread interaction.
 
 > [!IMPORTANT]
-> Use the same synchronization primitive instance to protect every access to a shared resource. Multiple threads can access a resource concurrently if you use different synchronization primitive instances to protect access to a resource or some parts of code access a resource directly.
+> Use the same synchronization primitive instance to protect access of a shared resource. If you use different synchronization primitive instances to protect the same resource, you'll circumvent the protection provided by a synchronization primitive.
 
 ## WaitHandle class and lightweight synchronization types
 
@@ -61,7 +59,7 @@ For more information, see the <xref:System.Threading.Monitor> API reference.
 
 The <xref:System.Threading.Mutex?displayProperty=nameWithType> class, like <xref:System.Threading.Monitor>, grants exclusive access to a shared resource. Use one of the [Mutex.WaitOne](<xref:System.Threading.WaitHandle.WaitOne%2A?displayProperty=nameWithType>) method overloads to request the ownership of a mutex. Like <xref:System.Threading.Monitor>, <xref:System.Threading.Mutex> has thread affinity and the thread that acquired a mutex must release it by calling the <xref:System.Threading.Mutex.ReleaseMutex%2A?displayProperty=nameWithType> method.
 
-Unlike <xref:System.Threading.Monitor>, the <xref:System.Threading.Mutex> class can be used for inter-process synchronization. To do that, use a named mutex, which is visible throughout the operating system. To create a named mutex instance, use a [Mutex constructor](<xref:System.Threading.Mutex.%23ctor%2A>) that specifies a name. You also can call the <xref:System.Threading.Mutex.OpenExisting%2A?displayProperty=nameWithType> method to open an existing named system mutex.
+Unlike <xref:System.Threading.Monitor>, the <xref:System.Threading.Mutex> class can be used for inter-process synchronization. To do that, use a named mutex, which is visible throughout the operating system. To create a named mutex instance, use a [Mutex constructor](<xref:System.Threading.Mutex.%23ctor%2A>) that specifies a name. You can also call the <xref:System.Threading.Mutex.OpenExisting%2A?displayProperty=nameWithType> method to open an existing named system mutex.
   
 For more information, see the [Mutexes](mutexes.md) article and the <xref:System.Threading.Mutex> API reference.
 
@@ -106,7 +104,7 @@ The behavior of an <xref:System.Threading.EventWaitHandle> that has been signale
 
 On Windows, you can use <xref:System.Threading.EventWaitHandle> for the inter-process synchronization. To do that, create a <xref:System.Threading.EventWaitHandle> instance that represents a named system synchronization event by using one of the [EventWaitHandle constructors](<xref:System.Threading.EventWaitHandle.%23ctor%2A>) that specifies a name or the <xref:System.Threading.EventWaitHandle.OpenExisting%2A?displayProperty=nameWithType> method.
 
-For more information, see the [EventWaitHandle](eventwaithandle.md), [AutoResetEvent](autoresetevent.md), and [ManualResetEvent and ManualResetEventSlim](manualresetevent-and-manualreseteventslim.md) articles. For the API reference, see <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent>, and <xref:System.Threading.ManualResetEventSlim>.
+For more information, see the [EventWaitHandle](eventwaithandle.md) article. For the API reference, see <xref:System.Threading.EventWaitHandle>, <xref:System.Threading.AutoResetEvent>, <xref:System.Threading.ManualResetEvent>, and <xref:System.Threading.ManualResetEventSlim>.
 
 ### CountdownEvent class
 

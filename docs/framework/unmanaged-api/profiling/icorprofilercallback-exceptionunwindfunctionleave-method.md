@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ebaad1d5-ee0a-4cb0-96bc-8ba5d371b747
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionUnwindFunctionLeave Method
 Notifies the profiler that the unwind phase of exception handling has finished unwinding a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFunctionLeave();  
 ```  
   
@@ -35,7 +33,7 @@ HRESULT ExceptionUnwindFunctionLeave();
  Also, during this call, the profiler must not call into managed code or in any way cause a managed-memory allocation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -43,6 +41,7 @@ HRESULT ExceptionUnwindFunctionLeave();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ExceptionUnwindFunctionEnter Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfunctionenter-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionUnwindFunctionEnter Method](icorprofilercallback-exceptionunwindfunctionenter-method.md)

@@ -1,13 +1,13 @@
 ---
 title: C# Interfaces - A tour of the C# language
 description: Interfaces define contracts implemented by types in C#
-ms.date: 08/10/2016
+ms.date: 02/27/2020
 ms.assetid: a9bf82f4-efd1-4216-bd34-4ef0fa48c968
 ---
 
 # Interfaces
 
-An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface does not provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
 
 Interfaces may employ ***multiple inheritance***. In the following example, the interface `IComboBox` inherits from both `ITextBox` and `IListBox`.
 
@@ -21,7 +21,7 @@ When a class or struct implements a particular interface, instances of that clas
 
 [!code-csharp[InterfacesThree](../../../samples/snippets/csharp/tour/interfaces/Program.cs#L33-L35)]
 
-In cases where an instance is not statically known to implement a particular interface, dynamic type casts can be used. For example, the following statements use dynamic type casts to obtain an object’s `IControl` and `IDataBound` interface implementations. Because the run-time actual type of the object is `EditBox`, the casts succeed.
+In cases where an instance isn't statically known to implement a particular interface, dynamic type casts can be used. For example, the following statements use dynamic type casts to obtain an object’s `IControl` and `IDataBound` interface implementations. Because the run-time actual type of the object is `EditBox`, the casts succeed.
 
 [!code-csharp[InterfacesFour](../../../samples/snippets/csharp/tour/interfaces/Program.cs#L40-L42)]
 
@@ -35,4 +35,4 @@ Explicit interface members can only be accessed via the interface type. For exam
 
 >[!div class="step-by-step"]
 >[Previous](arrays.md)
->[Next](enums.md)
+>[Next](delegates.md)

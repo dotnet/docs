@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5aef6808-5aac-4b2f-a2c7-fee1575c55ed
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EClrOperation Enumeration
 Describes the set of operations for which a host can apply policy actions.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     OPR_ThreadAbort,  
     OPR_ThreadRudeAbortInNonCriticalRegion,  
@@ -49,14 +47,14 @@ typedef enum {
 ## Remarks  
  The common language runtime (CLR) reliability infrastructure distinguishes between aborts and resource allocation failures that occur in critical regions of code and those that occur in non-critical regions of code. This distinction is designed to allow hosts to set different policies depending on where a failure occurs in the code.  
   
- A *critical region of code* is any space where the CLR cannot guarantee that aborting a task or failing to complete a request for resources will affect only the current task. For example, if a task is holding a lock and receives an HRESULT that indicates failure upon making a memory allocation request, it is insufficient simply to abort that task to ensure the stability of the <xref:System.AppDomain>, because the <xref:System.AppDomain> might contain other tasks waiting for the same lock. To abandon the current task might cause those other tasks to stop responding (or hang) indefinitely. In such a case, the host needs the ability to unload the entire <xref:System.AppDomain> rather than risk potential instability.  
+ A *critical region of code* is any space where the CLR cannot guarantee that aborting a task or failing to complete a request for resources will affect only the current task. For example, if a task is holding a lock and receives an HRESULT that indicates failure upon making a memory allocation request, it is insufficient simply to abort that task to ensure the stability of the <xref:System.AppDomain>, because the <xref:System.AppDomain> might contain other tasks waiting for the same lock. To abandon the current task might cause those other tasks to stop responding. In such a case, the host needs the ability to unload the entire <xref:System.AppDomain> rather than risk potential instability.  
   
  A *non-critical region of code*, on the other hand, is a region where the CLR can guarantee that an abort or a failure will affect only the task upon which the error occurs.  
   
  The CLR also distinguishes between graceful and non-graceful (rude) aborts. In general, a normal or graceful abort makes every effort to run exception-handling routines and finalizers before aborting a task, while a rude abort makes no such guarantees.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -64,9 +62,10 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [EClrFailure Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrfailure-enumeration.md)  
- [EPolicyAction Enumeration](../../../../docs/framework/unmanaged-api/hosting/epolicyaction-enumeration.md)  
- [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)  
- [IHostPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## See also
+
+- [EClrFailure Enumeration](eclrfailure-enumeration.md)
+- [EPolicyAction Enumeration](epolicyaction-enumeration.md)
+- [ICLRPolicyManager Interface](iclrpolicymanager-interface.md)
+- [IHostPolicyManager Interface](ihostpolicymanager-interface.md)
+- [Hosting Enumerations](hosting-enumerations.md)

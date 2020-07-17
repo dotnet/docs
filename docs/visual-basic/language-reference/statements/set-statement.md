@@ -1,5 +1,5 @@
 ---
-title: "Set Statement (Visual Basic)"
+title: "Set Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Set"
@@ -16,7 +16,7 @@ Declares a `Set` property procedure used to assign a value to a property.
   
 ## Syntax  
   
-```  
+```vb  
 [ <attributelist> ] [ accessmodifier ] Set (ByVal value [ As datatype ])  
     [ statements ]  
 End Set  
@@ -24,20 +24,20 @@ End Set
   
 ## Parts  
  `attributelist`  
- Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).  
+ Optional. See [Attribute List](attribute-list.md).  
   
  `accessmodifier`  
  Optional on at most one of the `Get` and `Set` statements in this property. Can be one of the following:  
   
--   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
+- [Protected](../modifiers/protected.md)  
   
--   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
+- [Friend](../modifiers/friend.md)  
   
--   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+- [Private](../modifiers/private.md)  
   
--   `Protected Friend`  
+- `Protected Friend`  
   
- See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).  
   
  `value`  
  Required. Parameter containing the new value for the property.  
@@ -58,31 +58,32 @@ End Set
   
  Visual Basic passes a parameter to the `Set` procedure during property assignments. If you do not supply a parameter for `Set`, the integrated development environment (IDE) uses an implicit parameter named `value`. The parameter holds the value to be assigned to the property. You typically store this value in a private local variable and return it whenever the `Get` procedure is called.  
   
- The body of the property declaration can contain only the property's `Get` and `Set` procedures between the [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md) and the `End Property` statement. It cannot store anything other than those procedures. In particular, it cannot store the property's current value. You must store this value outside the property, because if you store it inside either of the property procedures, the other property procedure cannot access it. The usual approach is to store the value in a [Private](../../../visual-basic/language-reference/modifiers/private.md) variable declared at the same level as the property. You must define a `Set` procedure inside the property to which it applies.  
+ The body of the property declaration can contain only the property's `Get` and `Set` procedures between the [Property Statement](property-statement.md) and the `End Property` statement. It cannot store anything other than those procedures. In particular, it cannot store the property's current value. You must store this value outside the property, because if you store it inside either of the property procedures, the other property procedure cannot access it. The usual approach is to store the value in a [Private](../modifiers/private.md) variable declared at the same level as the property. You must define a `Set` procedure inside the property to which it applies.  
   
  The `Set` procedure defaults to the access level of its containing property unless you use `accessmodifier` in the `Set` statement.  
   
 ## Rules  
   
--   **Mixed Access Levels.** If you are defining a read-write property, you can optionally specify a different access level for either the `Get` or the `Set` procedure, but not both. If you do this, the procedure access level must be more restrictive than the property's access level. For example, if the property is declared `Friend`, you can declare the `Set` procedure `Private`, but not `Public`.  
+- **Mixed Access Levels.** If you are defining a read-write property, you can optionally specify a different access level for either the `Get` or the `Set` procedure, but not both. If you do this, the procedure access level must be more restrictive than the property's access level. For example, if the property is declared `Friend`, you can declare the `Set` procedure `Private`, but not `Public`.  
   
      If you are defining a `WriteOnly` property, the `Set` procedure represents the entire property. You cannot declare a different access level for `Set`, because that would set two access levels for the property.  
   
 ## Behavior  
   
--   **Returning from a Property Procedure.** When the `Set` procedure returns to the calling code, execution continues following the statement that provided the value to be stored.  
+- **Returning from a Property Procedure.** When the `Set` procedure returns to the calling code, execution continues following the statement that provided the value to be stored.  
   
-     `Set` property procedures can return using either the [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md) or the [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md).  
+     `Set` property procedures can return using either the [Return Statement](return-statement.md) or the [Exit Statement](exit-statement.md).  
   
      The `Exit Property` and `Return` statements cause an immediate exit from a property procedure. Any number of `Exit Property` and `Return` statements can appear anywhere in the procedure, and you can mix `Exit Property` and `Return` statements.  
   
 ## Example  
  The following example uses the `Set` statement to set the value of a property.  
   
- [!code-vb[VbVbalrStatements#55](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/set-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#55)]  
   
-## See Also  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
+## See also
+
+- [Get Statement](get-statement.md)
+- [Property Statement](property-statement.md)
+- [Sub Statement](sub-statement.md)
+- [Property Procedures](../../programming-guide/language-features/procedures/property-procedures.md)

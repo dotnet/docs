@@ -1,15 +1,16 @@
 ---
-title: "&lt;claimsAuthenticationManager&gt;"
+title: "<claimsAuthenticationManager>"
 ms.date: "03/30/2017"
 ms.assetid: 6d30a450-6d13-4671-81a8-77e0204500c5
 author: "BrucePerlerMS"
 ---
-# &lt;claimsAuthenticationManager&gt;
+# \<claimsAuthenticationManager>
 Registers a claims authentication manager for the incoming claims.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<claimsAuthenticationManager>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<claimsAuthenticationManager>**  
   
 ## Syntax  
   
@@ -39,7 +40,7 @@ Registers a claims authentication manager for the incoming claims.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<identityConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/identityconfiguration.md)|Specifies service-level identity settings.|  
+|[\<identityConfiguration>](identityconfiguration.md)|Specifies service-level identity settings.|  
   
 ## Remarks  
  The default behavior provided through the <xref:System.Security.Claims.ClaimsAuthenticationManager> class echoes the incoming claims. If no `type` attribute is specified or if the `type` attribute specifies the <xref:System.Security.Claims.ClaimsAuthenticationManager> class, the `<claimsAuthenticationManager>` element does not take child elements. You can specify the `type` attribute to register a type derived from the <xref:System.Security.Claims.ClaimsAuthenticationManager> class to implement custom behavior. Derived classes can support configuration through child elements of the `<claimsAuthenticationManager>` element by overriding the <xref:System.Security.Claims.ClaimsAuthenticationManager.LoadCustomConfiguration%2A> method to handle these elements. The schema defined for the child elements is up to the designer of the class.  
@@ -51,7 +52,7 @@ Registers a claims authentication manager for the incoming claims.
 ```xml  
 <system.identityModel>  
     <identityConfiguration name="MyIdentity">  
-      <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>          
+      <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>
     </identityConfiguration>  
 </system.identityModel>  
 ```

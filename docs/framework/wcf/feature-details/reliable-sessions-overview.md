@@ -100,9 +100,9 @@ The system-provided bindings that support a reliable session as an option but do
 
 - <xref:System.ServiceModel.NetTcpBinding>
 
-For an example of how to create a custom binding, see [How to: Create a Custom Reliable Session Binding with HTTPS](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-reliable-session-binding-with-https.md).
+For an example of how to create a custom binding, see [How to: Create a Custom Reliable Session Binding with HTTPS](how-to-create-a-custom-reliable-session-binding-with-https.md).
 
-For a discussion of WCF bindings that support reliable sessions, see [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md).
+For a discussion of WCF bindings that support reliable sessions, see [System-Provided Bindings](../system-provided-bindings.md).
 
 ## When to use reliable sessions
 
@@ -122,5 +122,5 @@ If your scenario has any of the following characteristics, then you must serious
 
 ## See also
 
-[Using Bindings to Configure Services and Clients](../../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md)   
-[WS Reliable Session](../../../../docs/framework/wcf/samples/ws-reliable-session.md)
+- [Using Bindings to Configure Services and Clients](../using-bindings-to-configure-services-and-clients.md)
+- [WS Reliable Session](../samples/ws-reliable-session.md)

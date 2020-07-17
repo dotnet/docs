@@ -1,5 +1,5 @@
 ---
-title: "Distinct Clause (Visual Basic)"
+title: "Distinct Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryDistinct"
@@ -14,7 +14,7 @@ Restricts the values of the current range variable to eliminate duplicate values
   
 ## Syntax  
   
-```  
+```vb  
 Distinct  
 ```  
   
@@ -24,11 +24,12 @@ Distinct
 ## Example  
  The following query expression joins a list of customers and a list of customer orders. The `Distinct` clause is included to return a list of unique customer names and order dates.  
   
- [!code-vb[VbSimpleQuerySamples#20](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/distinct-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#20)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+## See also
+
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](index.md)
+- [From Clause](from-clause.md)
+- [Select Clause](select-clause.md)
+- [Where Clause](where-clause.md)

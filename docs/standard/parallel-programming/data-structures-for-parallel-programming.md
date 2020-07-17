@@ -5,8 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "data structures, multi-threading"
 ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Data Structures for Parallel Programming
 The .NET Framework version 4 introduces several new types that are useful in parallel programming, including a set of concurrent collection classes, lightweight synchronization primitives, and types for lazy initialization. You can use these types with any multithreaded application code, including the Task Parallel Library and PLINQ.  
@@ -24,7 +22,7 @@ The .NET Framework version 4 introduces several new types that are useful in par
 |<xref:System.Collections.Concurrent.ConcurrentQueue%601?displayProperty=nameWithType>|A concurrent and scalable FIFO queue.|  
 |<xref:System.Collections.Concurrent.ConcurrentStack%601?displayProperty=nameWithType>|A concurrent and scalable LIFO stack.|  
   
- For more information, see [Thread-Safe Collections](../../../docs/standard/collections/thread-safe/index.md).  
+ For more information, see [Thread-Safe Collections](../collections/thread-safe/index.md).  
   
 ## Synchronization Primitives  
  The new synchronization primitives in the <xref:System.Threading?displayProperty=nameWithType> namespace enable fine-grained concurrency and faster performance by avoiding expensive locking mechanisms found in legacy multithreading code. Some of the new types, such as <xref:System.Threading.Barrier?displayProperty=nameWithType> and <xref:System.Threading.CountdownEvent?displayProperty=nameWithType> have no counterparts in earlier releases of the .NET Framework.  
@@ -33,18 +31,18 @@ The .NET Framework version 4 introduces several new types that are useful in par
   
 |Type|Description|  
 |----------|-----------------|  
-|<xref:System.Threading.Barrier?displayProperty=nameWithType>|Enables multiple threads to work on an algorithm in parallel by providing a point at which each task can signal its arrival and then block until some or all tasks have arrived. For more information, see [Barrier](../../../docs/standard/threading/barrier.md).|  
-|<xref:System.Threading.CountdownEvent?displayProperty=nameWithType>|Simplifies fork and join scenarios by providing an easy rendezvous mechanism. For more information, see [CountdownEvent](../../../docs/standard/threading/countdownevent.md).|  
-|<xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType>|A synchronization primitive similar to <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>. <xref:System.Threading.ManualResetEventSlim> is lighter-weight but can only be used for intra-process communication. For more information, see [ManualResetEvent and ManualResetEventSlim](../../../docs/standard/threading/manualresetevent-and-manualreseteventslim.md).|  
-|<xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType>|A synchronization primitive that limits the number of threads that can concurrently access a resource or a pool of resources. For more information, see [Semaphore and SemaphoreSlim](../../../docs/standard/threading/semaphore-and-semaphoreslim.md).|  
-|<xref:System.Threading.SpinLock?displayProperty=nameWithType>|A mutual exclusion lock primitive that causes the thread that is trying to acquire the lock to wait in a loop, or *spin*, for a period of time before yielding its quantum. In scenarios where the wait for the lock is expected to be short, <xref:System.Threading.SpinLock> offers better performance than other forms of locking. For more information, see [SpinLock](../../../docs/standard/threading/spinlock.md).|  
-|<xref:System.Threading.SpinWait?displayProperty=nameWithType>|A small, lightweight type that will spin for a specified time and eventually put the thread into a wait state if the spin count is exceeded.  For more information, see [SpinWait](../../../docs/standard/threading/spinwait.md).|  
+|<xref:System.Threading.Barrier?displayProperty=nameWithType>|Enables multiple threads to work on an algorithm in parallel by providing a point at which each task can signal its arrival and then block until some or all tasks have arrived. For more information, see [Barrier](../threading/barrier.md).|  
+|<xref:System.Threading.CountdownEvent?displayProperty=nameWithType>|Simplifies fork and join scenarios by providing an easy rendezvous mechanism. For more information, see [CountdownEvent](../threading/countdownevent.md).|  
+|<xref:System.Threading.ManualResetEventSlim?displayProperty=nameWithType>|A synchronization primitive similar to <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType>. <xref:System.Threading.ManualResetEventSlim> is lighter-weight but can only be used for intra-process communication.|  
+|<xref:System.Threading.SemaphoreSlim?displayProperty=nameWithType>|A synchronization primitive that limits the number of threads that can concurrently access a resource or a pool of resources. For more information, see [Semaphore and SemaphoreSlim](../threading/semaphore-and-semaphoreslim.md).|  
+|<xref:System.Threading.SpinLock?displayProperty=nameWithType>|A mutual exclusion lock primitive that causes the thread that is trying to acquire the lock to wait in a loop, or *spin*, for a period of time before yielding its quantum. In scenarios where the wait for the lock is expected to be short, <xref:System.Threading.SpinLock> offers better performance than other forms of locking. For more information, see [SpinLock](../threading/spinlock.md).|  
+|<xref:System.Threading.SpinWait?displayProperty=nameWithType>|A small, lightweight type that will spin for a specified time and eventually put the thread into a wait state if the spin count is exceeded.  For more information, see [SpinWait](../threading/spinwait.md).|  
   
  For more information, see:  
   
--   [How to: Use SpinLock for Low-Level Synchronization](../../../docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md)  
+- [How to: Use SpinLock for Low-Level Synchronization](../threading/how-to-use-spinlock-for-low-level-synchronization.md)  
   
--   [How to: Synchronize Concurrent Operations with a Barrier](../../../docs/standard/threading/how-to-synchronize-concurrent-operations-with-a-barrier.md).  
+- [How to: Synchronize Concurrent Operations with a Barrier](../threading/how-to-synchronize-concurrent-operations-with-a-barrier.md).  
   
 ## Lazy Initialization Classes  
  With lazy initialization, the memory for an object is not allocated until it is needed. Lazy initialization can improve performance by spreading object allocations evenly across the lifetime of a program. You can enable lazy initialization for any custom type by wrapping the type <xref:System.Lazy%601>.  
@@ -57,13 +55,13 @@ The .NET Framework version 4 introduces several new types that are useful in par
 |<xref:System.Threading.ThreadLocal%601?displayProperty=nameWithType>|Provides a lazily-initialized value on a per-thread basis, with each thread lazily-invoking the initialization function.|  
 |<xref:System.Threading.LazyInitializer?displayProperty=nameWithType>|Provides static methods that avoid the need to allocate a dedicated, lazy-initialization instance. Instead, they use references to ensure targets have been initialized as they are accessed.|  
   
- For more information, see [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md).  
+ For more information, see [Lazy Initialization](../../framework/performance/lazy-initialization.md).  
   
 ## Aggregate Exceptions  
- The <xref:System.AggregateException?displayProperty=nameWithType> type can be used to capture multiple exceptions that are thrown concurrently on separate threads, and return them to the joining thread as a single exception. The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> types and PLINQ use <xref:System.AggregateException> extensively for this purpose. For more information, see [Exception Handling](../../../docs/standard/parallel-programming/exception-handling-task-parallel-library.md) and [How to: Handle Exceptions in a PLINQ Query](../../../docs/standard/parallel-programming/how-to-handle-exceptions-in-a-plinq-query.md).  
+ The <xref:System.AggregateException?displayProperty=nameWithType> type can be used to capture multiple exceptions that are thrown concurrently on separate threads, and return them to the joining thread as a single exception. The <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> types and PLINQ use <xref:System.AggregateException> extensively for this purpose. For more information, see [Exception Handling](exception-handling-task-parallel-library.md) and [How to: Handle Exceptions in a PLINQ Query](how-to-handle-exceptions-in-a-plinq-query.md).  
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
-- <xref:System.Threading?displayProperty=nameWithType>  
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- <xref:System.Threading?displayProperty=nameWithType>
+- [Parallel Programming](index.md)

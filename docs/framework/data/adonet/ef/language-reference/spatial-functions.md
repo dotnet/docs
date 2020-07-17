@@ -6,8 +6,8 @@ ms.assetid: 90cb177d-88a0-45be-97e8-3b306283c6e0
 # Spatial Functions
 There is no literal format for spatial types. However, you can use canonical Entity Framework functions that you call using strings in Well-Known Text format. For example, the following function call creates a geometry point:  
   
-```  
+```sql  
 GeometryFromText('POINT (43 -73)')  
 ```  
   
- The [SpatialEdmFunctions Methods](https://msdn.microsoft.com/library/hh749531.aspx) page lists all spatial canonical Entity Framework methods. Click on a method of interest to see what parameters should be passed to a function.
+ The <xref:System.Data.Common.CommandTrees.ExpressionBuilder.Spatial.SpatialEdmFunctions> methods have all spatial canonical Entity Framework methods. Click on a method of interest to see what parameters should be passed to a function.

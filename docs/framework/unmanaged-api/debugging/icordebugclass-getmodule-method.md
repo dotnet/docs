@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 87029cc4-e5e1-42d5-8b98-655bb7ece520
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugClass::GetModule Method
 Gets the module that defines this class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule (  
     [out] ICorDebugModule    **pModule  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pModule`  
  [out] A pointer to the address of an ICorDebugModule object that represents the module in which this class is defined.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

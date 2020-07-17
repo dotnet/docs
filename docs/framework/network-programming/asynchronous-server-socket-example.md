@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous Server Socket Example"
+description: This example .NET Framework program creates a server that receives connections from clients using an asynchronous socket. It receives and echoes a string.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -39,9 +40,9 @@ Public Class AsynchronousSocketListener
     Public Shared allDone As New ManualResetEvent(False)  
   
     ' This server waits for a connection and then uses  asychronous operations to  
-    ' accept the connection, get data from the connected client,   
+    ' accept the connection, get data from the connected client,
     ' echo that data back to the connected client.  
-    ' It then disconnects from the client and waits for another client.   
+    ' It then disconnects from the client and waits for another client.
     Public Shared Sub Main()  
         ' Establish the local endpoint for the socket.  
         Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
@@ -88,18 +89,18 @@ Public Class AsynchronousSocketListener
         Dim state As StateObject = CType(ar.AsyncState, StateObject)  
         Dim handler As Socket = state.workSocket  
   
-        ' Read data from the client socket.   
+        ' Read data from the client socket.
         Dim bytesRead As Integer = handler.EndReceive(ar)  
   
         If bytesRead > 0 Then  
             ' There  might be more data, so store the data received so far.  
             state.sb.Append(Encoding.ASCII.GetString(state.buffer, 0, bytesRead))  
   
-            ' Check for end-of-file tag. If it is not there, read   
+            ' Check for end-of-file tag. If it is not there, read
             ' more data.  
             content = state.sb.ToString()  
             If content.IndexOf("<EOF>") > -1 Then  
-                ' All the data has been read from the   
+                ' All the data has been read from the
                 ' client. Display it on the console.  
                 Console.WriteLine("Read {0} bytes from socket. " + vbLf + " Data : {1}", content.Length, content)  
                 ' Echo the data back to the client.  
@@ -151,7 +152,7 @@ public class StateObject {
     // Receive buffer.  
     public byte[] buffer = new byte[BufferSize];  
 // Received data string.  
-    public StringBuilder sb = new StringBuilder();    
+    public StringBuilder sb = new StringBuilder();
 }  
   
 public class AsynchronousSocketListener {  
@@ -184,7 +185,7 @@ public class AsynchronousSocketListener {
   
                 // Start an asynchronous socket to listen for connections.  
                 Console.WriteLine("Waiting for a connection...");  
-                listener.BeginAccept(   
+                listener.BeginAccept(
                     new AsyncCallback(AcceptCallback),  
                     listener );  
   
@@ -224,7 +225,7 @@ public class AsynchronousSocketListener {
         StateObject state = (StateObject) ar.AsyncState;  
         Socket handler = state.workSocket;  
   
-        // Read data from the client socket.   
+        // Read data from the client socket.
         int bytesRead = handler.EndReceive(ar);  
   
         if (bytesRead > 0) {  
@@ -232,11 +233,11 @@ public class AsynchronousSocketListener {
             state.sb.Append(Encoding.ASCII.GetString(  
                 state.buffer, 0, bytesRead));  
   
-            // Check for end-of-file tag. If it is not there, read   
+            // Check for end-of-file tag. If it is not there, read
             // more data.  
             content = state.sb.ToString();  
             if (content.IndexOf("<EOF>") > -1) {  
-                // All the data has been read from the   
+                // All the data has been read from the
                 // client. Display it on the console.  
                 Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",  
                     content.Length, content );  
@@ -283,7 +284,8 @@ public class AsynchronousSocketListener {
 }  
 ```  
   
-## See Also  
- [Asynchronous Client Socket Example](../../../docs/framework/network-programming/asynchronous-client-socket-example.md)  
- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)  
- [Socket Code Examples](../../../docs/framework/network-programming/socket-code-examples.md)
+## See also
+
+- [Asynchronous Client Socket Example](asynchronous-client-socket-example.md)
+- [Using an Asynchronous Server Socket](using-an-asynchronous-server-socket.md)
+- [Socket Code Examples](socket-code-examples.md)

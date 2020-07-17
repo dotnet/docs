@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: ec57828b-2aad-496d-a35a-e45d4bd7fe77
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRControl::SetAppDomainManagerType Method
 Sets a type derived from <xref:System.AppDomainManager> as the type for application domain managers.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManagerType (  
     [in] LPCWSTR pwzAppDomainManagerAssembly,  
     [in] LPCWSTR pwzAppDomainManagerType  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAppDomainManagerAssembly`  
  [in] The name of the assembly in which the requested type derived from <xref:System.AppDomainManager> is implemented.  
   
@@ -49,7 +47,7 @@ HRESULT SetAppDomainManagerType (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,6 +55,7 @@ HRESULT SetAppDomainManagerType (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## See also
+
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [IHostControl Interface](ihostcontrol-interface.md)

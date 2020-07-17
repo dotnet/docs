@@ -14,17 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1588fe7b-c378-4f4b-9c4b-48647f1119cc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetCORRequiredVersion Function
 Gets the required common language runtime (CLR) version number.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCORRequiredVersion (  
     [out] LPWSTR   pbuffer,  
     [in]  DWORD    cchBuffer,  
@@ -32,7 +30,7 @@ HRESULT GetCORRequiredVersion (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbuffer`  
  [out] A buffer containing a string that specifies the version number.  
   
@@ -43,7 +41,7 @@ HRESULT GetCORRequiredVersion (
  [out] The number of bytes returned in the buffer.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -51,5 +49,6 @@ HRESULT GetCORRequiredVersion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

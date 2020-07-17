@@ -1,26 +1,28 @@
 ---
-title: "&lt;defaultPorts&gt;"
+title: "<defaultPorts>"
 ms.date: "03/30/2017"
 ms.assetid: 725d4ee5-bd46-4f0e-9c20-30ba75d6eb2c
 ---
-# &lt;defaultPorts&gt;
+# \<defaultPorts>
 A collection of default ports listing the default communications endpoints that the client application listens to.  
   
-\<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<useRequestHeadersForMetadataAddress>  
-\<defaultPorts>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<useRequestHeadersForMetadataAddress>**](userequestheadersformetadataaddress.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultPorts>**  
   
 ## Syntax  
   
 ```xml  
 <useRequestHeadersForMetadataAddress>
   <defaultPorts>
-    <add scheme="http" port="integer" />
+    <add scheme="http"
+         port="integer" />
   </defaultPorts>
-</useRequestHeadersForMetadataAddress>  
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## Attributes and Elements  
@@ -33,13 +35,14 @@ A collection of default ports listing the default communications endpoints that 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add> of \<defaultPorts>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-defaultports.md)|A default communications endpoint that the client application listens to.|  
+|[\<add> of \<defaultPorts>](add-of-defaultports.md)|A default communications endpoint that the client application listens to.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<useRequestHeadersForMetadataAddress>](../../../../../docs/framework/configure-apps/file-schema/wcf/userequestheadersformetadataaddress.md)|A list of default ports.|  
+|[\<useRequestHeadersForMetadataAddress>](userequestheadersformetadataaddress.md)|A list of default ports.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DefaultPortElementCollection>
+## See also
+
+- <xref:System.ServiceModel.Configuration.DefaultPortElementCollection>

@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: e925d88a-67a5-4f76-88b8-09cedeed0232
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum::Skip Method
 Moves the cursor forward in the enumeration by the specified number of items.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip (  
     [in] ULONG celt  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of items by which to move the cursor forward.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -42,5 +40,6 @@ HRESULT Skip (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugEnum Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-interface1.md)
+## See also
+
+- [ICorDebugEnum Interface](icordebugenum-interface1.md)

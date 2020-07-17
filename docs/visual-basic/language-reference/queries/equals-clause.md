@@ -1,5 +1,5 @@
 ---
-title: "Equals Clause (Visual Basic)"
+title: "Equals Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Equals"
@@ -13,9 +13,10 @@ Compares keys from collections being joined.
 ## Remarks  
  The `Equals` keyword is used in the following contexts:  
   
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Group Join Clause](group-join-clause.md)  
   
- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
+ [Join Clause](join-clause.md)  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Keywords](../keywords/index.md)

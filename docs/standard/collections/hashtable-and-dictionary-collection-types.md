@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "hash function"
   - "collections [.NET Framework], Hashtable collection type"
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Hashtable and Dictionary Collection Types
 The <xref:System.Collections.Hashtable?displayProperty=nameWithType> class, and the <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType> and <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType> generic classes, implement the <xref:System.Collections.IDictionary?displayProperty=nameWithType> interface. The <xref:System.Collections.Generic.Dictionary%602> generic class also implements the <xref:System.Collections.Generic.IDictionary%602> generic interface. Therefore, each element in these collections is a key-and-value pair.  
@@ -32,10 +30,10 @@ The <xref:System.Collections.Hashtable?displayProperty=nameWithType> class, and 
   
 ## See also
 
-- <xref:System.Collections.Hashtable>  
-- <xref:System.Collections.IDictionary>  
-- <xref:System.Collections.IHashCodeProvider>  
-- <xref:System.Collections.Generic.Dictionary%602>  
-- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>  
-- <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>  
-- [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md)
+- <xref:System.Collections.Hashtable>
+- <xref:System.Collections.IDictionary>
+- <xref:System.Collections.IHashCodeProvider>
+- <xref:System.Collections.Generic.Dictionary%602>
+- <xref:System.Collections.Generic.IDictionary%602?displayProperty=nameWithType>
+- <xref:System.Collections.Concurrent.ConcurrentDictionary%602?displayProperty=nameWithType>
+- [Commonly Used Collection Types](commonly-used-collection-types.md)

@@ -1,5 +1,5 @@
 ---
-title: "Return Statement (Visual Basic)"
+title: "Return Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Return"
@@ -15,9 +15,9 @@ Returns control to the code that called a `Function`, `Sub`, `Get`, `Set`, or `O
   
 ## Syntax  
   
-```  
+```vb  
 Return  
--or-  
+' -or-  
 Return expression  
 ```  
   
@@ -33,19 +33,20 @@ Return expression
  You can include as many `Return` statements as appropriate in the same procedure.  
   
 > [!NOTE]
->  The code in a `Finally` block runs after a `Return` statement in a `Try` or `Catch` block is encountered, but before that `Return` statement executes. A `Return` statement cannot be included in a `Finally` block.  
+> The code in a `Finally` block runs after a `Return` statement in a `Try` or `Catch` block is encountered, but before that `Return` statement executes. A `Return` statement cannot be included in a `Finally` block.  
   
 ## Example  
  The following example uses the `Return` statement several times to return to the calling code when the procedure does not have to do anything else.  
   
- [!code-vb[VbVbalrStatements#53](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/return-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#53](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#53)]  
   
-## See Also  
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)  
- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)  
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
- [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
+## See also
+
+- [Function Statement](function-statement.md)
+- [Sub Statement](sub-statement.md)
+- [Get Statement](get-statement.md)
+- [Set Statement](set-statement.md)
+- [Operator Statement](operator-statement.md)
+- [Property Statement](property-statement.md)
+- [Exit Statement](exit-statement.md)
+- [Try...Catch...Finally Statement](try-catch-finally-statement.md)

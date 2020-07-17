@@ -1,0 +1,50 @@
+- name: What are breaking changes?
+  href: index.md
+- name: Compatibility
+  href: categories.md
+- name: Page selectors
+  href: breaking-changes.md
+- name: By version
+  expanded: true
+  items:
+  - name: 3.1 to 5.0
+    href: 3.1-5.0.md
+  - name: 3.0 to 3.1
+    href: 3.0-3.1.md
+  - name: 2.2 to 3.1
+    href: 2.2-3.1.md
+  - name: 2.2 to 3.0
+    href: 2.2-3.0.md
+  - name: 2.0 to 2.1
+    href: 2.0-2.1.md
+  - name: .NET Framework to .NET Core
+    items:
+    - name: Breaking changes
+      href: fx-core.md
+    - name: Unavailable technologies
+      href: ../porting/net-framework-tech-unavailable.md?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: APIs that always throw
+      href: unsupported-apis.md
+- name: By technology area
+  expanded: true
+  items:
+  - name: ASP.NET Core
+    href: aspnetcore.md
+  - name: Core .NET libraries
+    href: corefx.md
+  - name: Cryptography
+    href: cryptography.md
+  - name: Entity Framework Core
+    href: /ef/core/what-is-new/ef-core-3.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: Globalization
+    href: globalization.md
+  - name: Interop
+    href: interop.md
+  - name: MSBuild
+    href: msbuild.md
+  - name: Networking
+    href: networking.md
+  - name: Visual Basic
+    href: visualbasic.md
+  - name: Windows Forms
+    href: winforms.md

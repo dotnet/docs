@@ -1,5 +1,5 @@
 ---
-title: "How to: Serialize Using DataContractSerializer (Visual Basic)"
+title: "How to: Serialize Using DataContractSerializer"
 ms.date: 07/20/2015
 ms.assetid: ecaea518-8a0f-4249-b4e5-9b3fb0cdd8ad
 ---
@@ -68,7 +68,7 @@ End Class
   
  This example produces the following output:  
   
-```  
+```console  
 Testing for type: System.Xml.Linq.XElement  
   Deserialized type: System.Xml.Linq.XElement  
 Testing for type: XElementContainer  
@@ -77,5 +77,6 @@ Testing for type: XElementNullContainer
   Deserialized type: XElementNullContainer  
 ```  
   
-## See Also  
- [Serializing Object Graphs that Contain XElement Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-object-graphs-that-contain-xelement-objects.md)
+## See also
+
+- [Serializing Object Graphs that Contain XElement Objects (Visual Basic)](serializing-object-graphs-that-contain-xelement-objects.md)

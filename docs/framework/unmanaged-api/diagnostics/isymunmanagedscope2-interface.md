@@ -14,22 +14,21 @@ helpviewer_keywords:
 ms.assetid: 2ed6a387-ba45-483e-9a1e-b0c69f67998b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope2 Interface
-Represents a lexical scope within a method. This interface extends the [ISymUnmanagedScope](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md) interface with methods that get information about constants defined within the scope.  
+Represents a lexical scope within a method. This interface extends the [ISymUnmanagedScope](isymunmanagedscope-interface.md) interface with methods that get information about constants defined within the scope.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetConstantCount Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-getconstantcount-method.md)|Gets a count of the constants defined within this scope.|  
-|[GetConstants Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope2-getconstants-method.md)|Gets the local constants defined within this scope.|  
+|[GetConstantCount Method](isymunmanagedscope2-getconstantcount-method.md)|Gets a count of the constants defined within this scope.|  
+|[GetConstants Method](isymunmanagedscope2-getconstants-method.md)|Gets the local constants defined within this scope.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)  
- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)
+## See also
+
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)

@@ -14,20 +14,18 @@ helpviewer_keywords:
 ms.assetid: 8d4ff73e-739b-40f6-9349-359fbc99c2f9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_STATS Structure
 Provides statistics about the garbage collection mechanism of the common language runtime (CLR).  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_GC_STATS {  
-    ULONG   Flags;   
+    ULONG   Flags;
     SIZE_T  ExplicitGCCount;  
     SIZE_T  GenCollectionsTaken[3];  
-    SIZE_T  CommittedKBytes;   
+    SIZE_T  CommittedKBytes;
     SIZE_T  ReservedKBytes;  
     SIZE_T  Gen0HeapSizeKBytes;  
     SIZE_T  Gen1HeapSizeKBytes;  
@@ -55,9 +53,9 @@ typedef struct _COR_GC_STATS {
 |`KBytesPromotedFromGen1`|The size, in kilobytes, of the objects promoted from generation one to generation two.|  
   
 ## Remarks  
- The [ICLRGCManager::GetStats](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-getstats-method.md) method requires the `Flags` field of the `COR_GC_STATS` structure to be set to one or more values of the [COR_GC_STAT_TYPES](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stat-types-enumeration.md) enumeration to specify which statistics are to be set.  
+ The [ICLRGCManager::GetStats](iclrgcmanager-getstats-method.md) method requires the `Flags` field of the `COR_GC_STATS` structure to be set to one or more values of the [COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md) enumeration to specify which statistics are to be set.  
   
- The following table maps the statistics provided by this structure to the two [COR_GC_STAT_TYPES](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stat-types-enumeration.md) enumeration values, `COR_GC_COUNTS` and `COR_GC_MEMORYUSAGE`.  
+ The following table maps the statistics provided by this structure to the two [COR_GC_STAT_TYPES](cor-gc-stat-types-enumeration.md) enumeration values, `COR_GC_COUNTS` and `COR_GC_MEMORYUSAGE`.  
   
 |Specified by COR_GC_COUNTS|Specified by COR_GC_MEMORYUSAGE|  
 |----------------------------------|---------------------------------------|  
@@ -65,14 +63,14 @@ typedef struct _COR_GC_STATS {
   
  An example of the usage is as follows:  
   
-```  
+```cpp  
 COR_GC_STATS GCStats;  
 GCStats.Flags = COR_GC_COUNTS | COR_GC_MEMORYUSAGE;  
 pCLRGCManager->GetStats(&GCStats);  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl  
   
@@ -80,7 +78,8 @@ pCLRGCManager->GetStats(&GCStats);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
- [Automatic Memory Management](../../../../docs/standard/automatic-memory-management.md)  
- [Garbage Collection](../../../../docs/standard/garbage-collection/index.md)
+## See also
+
+- [Hosting Structures](hosting-structures.md)
+- [Automatic Memory Management](../../../standard/automatic-memory-management.md)
+- [Garbage Collection](../../../standard/garbage-collection/index.md)

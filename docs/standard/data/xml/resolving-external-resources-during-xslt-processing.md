@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 3a59d31c-0ec5-4de6-a2a9-558531c8116e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Resolving External Resources During XSLT Processing
 There are several times during an XSLT transformation when you may need to resolve external resources.  
@@ -24,13 +22,13 @@ There are several times during an XSLT transformation when you may need to resol
   
  The following list describes when you may want to specify an <xref:System.Xml.XmlResolver> object:  
   
--   If the XSLT process needs to access a network resource that requires authentication, you can use an <xref:System.Xml.XmlResolver> with the necessary credentials.  
+- If the XSLT process needs to access a network resource that requires authentication, you can use an <xref:System.Xml.XmlResolver> with the necessary credentials.  
   
--   If you want to restrict the resources that the XSLT process can access, you can use an <xref:System.Xml.XmlSecureResolver> with the correct permission set. Use the <xref:System.Xml.XmlSecureResolver> class if you need to open a resource that you do not control, or that is untrusted.  
+- If you want to restrict the resources that the XSLT process can access, you can use an <xref:System.Xml.XmlSecureResolver> with the correct permission set. Use the <xref:System.Xml.XmlSecureResolver> class if you need to open a resource that you do not control, or that is untrusted.  
   
--   If you want to customize behavior, you can implement your own <xref:System.Xml.XmlResolver> class and use it to resolve resources.  
+- If you want to customize behavior, you can implement your own <xref:System.Xml.XmlResolver> class and use it to resolve resources.  
   
--   If you want to ensure that no external resources are accessed, you can specify `null` for the <xref:System.Xml.XmlResolver> argument.  
+- If you want to ensure that no external resources are accessed, you can specify `null` for the <xref:System.Xml.XmlResolver> argument.  
   
 ## Example  
  The following example compiles a style sheet that is stored on a network resource. An <xref:System.Xml.XmlUrlResolver> object specifies the credentials necessary to access the style sheet.  
@@ -40,6 +38,6 @@ There are several times during an XSLT transformation when you may need to resol
   
 ## See also
 
-- <xref:System.Xml.Xsl.XslCompiledTransform>  
-- <xref:System.Xml.Xsl.XsltSettings>  
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- <xref:System.Xml.Xsl.XslCompiledTransform>
+- <xref:System.Xml.Xsl.XsltSettings>
+- [XSLT Transformations](xslt-transformations.md)

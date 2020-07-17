@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a2dd5098-3e58-4be5-b7a2-e4160b3b505a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetGlobalVariables Method
 Returns all global variables.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGlobalVariables(  
     [in]  ULONG32  cVars,  
     [out] ULONG32  *pcVars,  
@@ -31,7 +29,7 @@ HRESULT GetGlobalVariables(
         length_is(*pcVars)] ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cVars`  
  [in] The length of the buffer pointed to by `pcVars`.  
   
@@ -47,5 +45,6 @@ HRESULT GetGlobalVariables(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

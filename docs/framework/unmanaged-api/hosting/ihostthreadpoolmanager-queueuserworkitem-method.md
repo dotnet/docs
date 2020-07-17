@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 41602053-8670-4827-9d61-cbfcba509b9c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::QueueUserWorkItem Method
 Queues a function for execution, and specifies an object containing data to be used by that function. The function executes when a thread becomes available.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QueueUserWorkItem (  
     [in] LPTHREAD_START_ROUTINE Function,  
     [in] PVOID Context,  
@@ -31,7 +29,7 @@ HRESULT QueueUserWorkItem (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Function`  
  [in] A function pointer that represents the function to execute.  
   
@@ -56,7 +54,7 @@ HRESULT QueueUserWorkItem (
  `QueueUserWorkItem` queues a work item to a worker thread in the thread pool. Its signature and parameter types are identical to those of the corresponding Win32 function, which has the same name. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -64,7 +62,8 @@ HRESULT QueueUserWorkItem (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>  
- <xref:System.Threading.ThreadPool>  
- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+## See also
+
+- <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A>
+- <xref:System.Threading.ThreadPool>
+- [IHostThreadPoolManager Interface](ihostthreadpoolmanager-interface.md)

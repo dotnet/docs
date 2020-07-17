@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5b132ef1-8d4b-4525-89b3-54123596c194
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::GetThreadContext Method
 Gets the context for the given thread in this process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadContext(  
     [in] DWORD threadID,  
     [in] ULONG32 contextSize,  
@@ -31,7 +29,7 @@ HRESULT GetThreadContext(
     BYTE context[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [in] The ID of the thread for which to retrieve the context.  
   
@@ -44,12 +42,12 @@ HRESULT GetThreadContext(
  The context specifies the architecture of the processor on which the thread is executing.  
   
 ## Remarks  
- The debugger should call this method rather than the Win32 `GetThreadContext` method, because the thread may actually be in a "hijacked" state, in which its context has been temporarily changed. This method should be used only when a thread is in native code. Use [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) for threads in managed code.  
+ The debugger should call this method rather than the Win32 `GetThreadContext` method, because the thread may actually be in a "hijacked" state, in which its context has been temporarily changed. This method should be used only when a thread is in native code. Use [ICorDebugRegisterSet](icordebugregisterset-interface.md) for threads in managed code.  
   
  The data returned is a context structure for the current platform. Just as with the Win32 `GetThreadContext` method, the caller should initialize the `context` parameter before calling this method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

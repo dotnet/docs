@@ -7,15 +7,13 @@ helpviewer_keywords:
   - "Windows Forms, application settings schema"
   - "configuration schema [.NET Framework], application settings"
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
-author: "mcleblanc"
-ms.author: "markl"
 ---
 
 # Application Settings schema
 
 Application settings allow a Windows Forms or ASP.NET application to store and retrieve application-scoped and user-scoped settings. In this context, a *setting* is any piece of information that may be specific to the application or specific to the current user — anything from a database connection string to the user's preferred default window size.
 
-By default, application settings in a Windows Forms application uses the <xref:System.Configuration.LocalFileSettingsProvider> class, which uses the .NET configuration system to store settings in an XML configuration file. For more information about the files used by application settings, see [Application Settings Architecture](~/docs/framework/winforms/advanced/application-settings-architecture.md).
+By default, application settings in a Windows Forms application uses the <xref:System.Configuration.LocalFileSettingsProvider> class, which uses the .NET configuration system to store settings in an XML configuration file. For more information about the files used by application settings, see [Application Settings Architecture](../../winforms/advanced/application-settings-architecture.md).
 
 Application settings defines the following elements as part of the configuration files it uses.
 
@@ -41,7 +39,7 @@ This element defines a setting. It has the following attributes.
 | Attribute        | Description |
 | ---------------- | ----------- |
 | **name**         | Required. The unique ID of the setting. Settings created through Visual Studio are saved with the name `ProjectName.Properties.Settings`. |
-| **serializedAs** | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
+| **serializeAs** | Required. The format to use for serializing the value to text. Valid values are:<br><br>- `string`. The value is serialized as a string using a <xref:System.ComponentModel.TypeConverter>.<br>- `xml`. The value is serialized using XML serialization.<br>- `binary`. The value is serialized as text-encoded binary using binary serialization.<br />- `custom`. The settings provider has inherent knowledge of this setting and serializes and de-serializes it. |
 
 ## \<value> element
 
@@ -87,5 +85,5 @@ The following example shows an application settings file that defines two applic
 
 ## See also
 
-[Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md)   
-[Application Settings Architecture](~/docs/framework/winforms/advanced/application-settings-architecture.md)
+- [Application Settings Overview](../../winforms/advanced/application-settings-overview.md)
+- [Application Settings Architecture](../../winforms/advanced/application-settings-architecture.md)

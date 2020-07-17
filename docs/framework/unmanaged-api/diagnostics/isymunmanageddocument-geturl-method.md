@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 60600178-c2b5-4cab-b3a5-f0f61acebaf1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetURL Method
 Returns the uniform resource locator (URL) for this document.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetURL(  
     [in]  ULONG32  cchUrl,  
     [out] ULONG32  *pcchUrl,  
     [out, size_is(cchUrl), length_is(*pcchUrl)] WCHAR szUrl[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchUrl`  
  [in] The size, in characters, of the `szURL` buffer.  
   
@@ -43,5 +41,6 @@ HRESULT GetURL(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

@@ -11,18 +11,19 @@ This section describes the steps required to implement a discovery proxy. A disc
  The discovery proxy implemented here is like any other WCF services, in that you can also make the discovery proxy discoverable and have the clients locate its endpoints.  
   
 ## In This Section  
- [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)  
+ [How to: Implement a Discovery Proxy](how-to-implement-a-discovery-proxy.md)  
  Describes how to implement a discovery proxy.  
   
- [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)  
+ [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](discoverable-service-that-registers-with-the-discovery-proxy.md)  
  Describes how to implement a discoverable WCF service that registers with the discovery proxy.  
   
- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)  
+ [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](client-app-discovery-proxy-to-find-a-service.md)  
  Describes how to implement a WCF client application that uses the discovery proxy to search for a service.  
   
- [How to: Test the Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-test-the-discovery-proxy.md)  
+ [How to: Test the Discovery Proxy](how-to-test-the-discovery-proxy.md)  
  Describes how to test the code written in the previous three topics.  
   
-## See Also  
- [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)  
- [How to: Programmatically Add Discoverability to a WCF Service and Client](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)
+## See also
+
+- [WCF Discovery](wcf-discovery.md)
+- [How to: Programmatically Add Discoverability to a WCF Service and Client](how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)

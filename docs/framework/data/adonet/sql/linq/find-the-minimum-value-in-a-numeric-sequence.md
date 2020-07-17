@@ -65,6 +65,7 @@ Use the <xref:System.Linq.Enumerable.Min%2A> operator to return the minimum valu
   
  `Konbu`  
   
-## See Also  
- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+## See also
+
+- [Aggregate Queries](aggregate-queries.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)

@@ -7,7 +7,7 @@ ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 
 You can cancel an asynchronous operation after a period of time by using the  <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType> method if you don't want to wait for the operation to finish. This method schedules the cancellation of any associated tasks that aren’t complete within the period of time that’s designated by the `CancelAfter` expression.
 
-This example adds to the code that’s developed in [Cancel an Async Task or a List of Tasks (C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.
+This example adds to the code that’s developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.
 
 > [!NOTE]
 > To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
@@ -16,23 +16,23 @@ This example adds to the code that’s developed in [Cancel an Async Task or a L
 
 You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
 
-1.  Decompress the file that you downloaded, and then start Visual Studio.
+1. Decompress the file that you downloaded, and then start Visual Studio.
 
-2.  On the menu bar, choose **File** > **Open** > **Project/Solution**.
+2. On the menu bar, choose **File** > **Open** > **Project/Solution**.
 
-3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
+3. In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
 
-4.  In **Solution Explorer**, open the shortcut menu for the **CancelAfterTime** project, and then choose **Set as StartUp Project**.
+4. In **Solution Explorer**, open the shortcut menu for the **CancelAfterTime** project, and then choose **Set as StartUp Project**.
 
-5.  Choose the **F5** key to run the project. (Or, press **Ctrl**+**F5** to run the project without debugging it).
+5. Choose the **F5** key to run the project. (Or, press **Ctrl**+**F5** to run the project without debugging it).
 
-6.  Run the program several times to verify that the output might show output for all websites, no websites, or some web sites.
+6. Run the program several times to verify that the output might show output for all websites, no websites, or some web sites.
 
 If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic.
 
 ## Build the example
 
-The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.
+The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.
 
 To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**. Add the changes in this topic to that project.
 
@@ -70,7 +70,7 @@ private async void startButton_Click(object sender, RoutedEventArgs e)
 
  Run the program several times to verify that the output might show output for all websites, no websites, or some web sites. The following output is a sample.
 
-```
+```output
 Length of the downloaded string: 35990.
 
 Length of the downloaded string: 407399.
@@ -211,8 +211,8 @@ namespace CancelAfterTime
 
 ## See also
 
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)
-- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
-- [Cancel an Async Task or a List of Tasks (C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md)
-- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
+- [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md)
+- [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

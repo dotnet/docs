@@ -1,5 +1,6 @@
 ---
 title: "Windows Communication Foundation Architecture"
+description: Learn about the major layers of the Windows Communication Foundation architecture, including contracts, service runtime, messaging, and activation & hosting.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF], architecture"
@@ -11,7 +12,7 @@ ms.assetid: a3bcb0a1-56ea-4ba6-9736-d260d90dade5
 The following graphic illustrates the major layers of the Windows Communication Foundation (WCF) architecture.  
   
 ## WCF Architecture  
- ![The WCF Architecture](../../../docs/framework/wcf/media/wcf-architecture.gif "WCF_Architecture")  
+ ![The WCF Architecture](./media/wcf-architecture.gif "WCF_Architecture")  
   
 ### Contracts and Descriptions  
  Contracts define various aspects of the message system. The data contract describes every parameter that makes up every message that a service can create or consume. The message parameters are defined by XML Schema definition language (XSD) documents, enabling any system that understands XML to process the documents. The message contract defines specific message parts using SOAP protocols, and allows finer-grained control over parts of the message, when interoperability demands such precision. The service contract specifies the actual method signatures of the service, and is distributed as an interface in one of the supported programming languages, such as Visual Basic or Visual C#.  
@@ -39,6 +40,7 @@ The following graphic illustrates the major layers of the Windows Communication 
   
  Services can also be *hosted*, or run in an executable managed by an external agent, such as IIS or Windows Activation Service (WAS). WAS enables WCF applications to be activated automatically when deployed on a computer running WAS. Services can also be manually run as executables (.exe files). A service can also be run automatically as a Windows service. COM+ components can also be hosted as WCF services.  
   
-## See Also  
- [What Is Windows Communication Foundation](../../../docs/framework/wcf/whats-wcf.md)  
- [Fundamental Windows Communication Foundation Concepts](../../../docs/framework/wcf/fundamental-concepts.md)
+## See also
+
+- [What Is Windows Communication Foundation](whats-wcf.md)
+- [Fundamental Windows Communication Foundation Concepts](fundamental-concepts.md)

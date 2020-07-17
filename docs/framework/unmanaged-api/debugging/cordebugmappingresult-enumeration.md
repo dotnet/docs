@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 701281dd-2936-45c8-a1f0-3bf7332b093b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugMappingResult Enumeration
 Provides the details of how the value of the instruction pointer (IP) was obtained.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugMappingResult {  
     MAPPING_PROLOG              = 0x1,  
     MAPPING_EPILOG              = 0x2,  
@@ -45,10 +43,10 @@ typedef enum CorDebugMappingResult {
 |`MAPPING_APPROXIMATE`|The method was successfully mapped, but the value of the IP may be approximate.|  
   
 ## Remarks  
- You can use the [ICorDebugILFrame::GetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getip-method.md) method to obtain the value of the instruction pointer.  
+ You can use the [ICorDebugILFrame::GetIP](icordebugilframe-getip-method.md) method to obtain the value of the instruction pointer.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -56,5 +54,6 @@ typedef enum CorDebugMappingResult {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+## See also
+
+- [Debugging Enumerations](debugging-enumerations.md)

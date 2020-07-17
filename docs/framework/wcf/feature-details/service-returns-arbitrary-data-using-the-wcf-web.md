@@ -8,9 +8,9 @@ Sometimes developers must have full control of how data is returned from a servi
   
 ### To implement the service contract  
   
-1.  Define the service contract. The contract is called `IImageServer` and has one method called `GetImage` that returns a <xref:System.IO.Stream>.  
+1. Define the service contract. The contract is called `IImageServer` and has one method called `GetImage` that returns a <xref:System.IO.Stream>.  
   
-    ```  
+    ```csharp  
     [ServiceContract]  
         public interface IImageServer  
         {  
@@ -21,28 +21,28 @@ Sometimes developers must have full control of how data is returned from a servi
   
      Because the method returns a <xref:System.IO.Stream>, WCF assumes that the operation has complete control over the bytes that are returned from the service operation and it applies no formatting to the data that is returned.  
   
-2.  Implement the service contract. The contract has only one operation (`GetImage`). This method generates a bitmap and then save it to a <xref:System.IO.MemoryStream> in .jpg format. The operation then returns that stream to the caller.  
+2. Implement the service contract. The contract has only one operation (`GetImage`). This method generates a bitmap and then save it to a <xref:System.IO.MemoryStream> in .jpg format. The operation then returns that stream to the caller.  
   
-    ```  
-    public class Service : IImageServer  
-       {  
-           public Stream GetImage(int width, int height)  
-           {  
-               Bitmap bitmap = new Bitmap(width, height);  
-               for (int i = 0; i < bitmap.Width; i++)  
-               {  
-                   for (int j = 0; j < bitmap.Height; j++)  
-                   {  
-                       bitmap.SetPixel(i, j, (Math.Abs(i - j) < 2) ? Color.Blue : Color.Yellow);  
-                   }  
-               }  
-               MemoryStream ms = new MemoryStream();  
-               bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);  
-               ms.Position = 0;  
-               WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";  
-               return ms;  
-           }  
-       }  
+    ```csharp
+    public class Service : IImageServer
+    {
+        public Stream GetImage(int width, int height)
+        {
+            Bitmap bitmap = new Bitmap(width, height);
+            for (int i = 0; i < bitmap.Width; i++)
+            {
+                for (int j = 0; j < bitmap.Height; j++)
+                {
+                    bitmap.SetPixel(i, j, (Math.Abs(i - j) < 2) ? Color.Blue : Color.Yellow);
+                }
+            }
+            MemoryStream ms = new MemoryStream();
+            bitmap.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            ms.Position = 0;
+            WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";
+            return ms;
+        }
+    }
     ```  
   
      Notice the second to last line of code: `WebOperationContext.Current.OutgoingResponse.ContentType = "image/jpeg";`  
@@ -51,44 +51,44 @@ Sometimes developers must have full control of how data is returned from a servi
   
 ### To host the service  
   
-1.  Create a console application to host the service.  
+1. Create a console application to host the service.  
   
-    ```  
+    ```csharp
     class Program  
     {  
         static void Main(string[] args)  
         {  
-        }   
+        }
     }  
     ```  
   
-2.  Create a variable to hold the base address for the service within the `Main` method.  
+2. Create a variable to hold the base address for the service within the `Main` method.  
   
-    ```  
+    ```csharp
     string baseAddress = "http://" + Environment.MachineName + ":8000/Service";  
     ```  
   
-3.  Create a <xref:System.ServiceModel.ServiceHost> instance for the service specifying the service class and the base address.  
+3. Create a <xref:System.ServiceModel.ServiceHost> instance for the service specifying the service class and the base address.  
   
-    ```  
+    ```csharp
     ServiceHost host = new ServiceHost(typeof(Service), new Uri(baseAddress));  
     ```  
   
-4.  Add an endpoint using the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.Description.WebHttpBehavior>.  
+4. Add an endpoint using the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.Description.WebHttpBehavior>.  
   
-    ```  
+    ```csharp  
     host.AddServiceEndpoint(typeof(IImageServer), new WebHttpBinding(), "").Behaviors.Add(new WebHttpBehavior());  
     ```  
   
-5.  Open the service host.  
+5. Open the service host.  
   
-    ```  
-    host.Open()  
+    ```csharp  
+    host.Open();  
     ```  
   
-6.  Wait until the user presses ENTER to terminate the service.  
+6. Wait until the user presses ENTER to terminate the service.  
   
-    ```  
+    ```csharp
     Console.WriteLine("Service is running");  
     Console.Write("Press ENTER to close the host");  
     Console.ReadLine();  
@@ -97,14 +97,14 @@ Sometimes developers must have full control of how data is returned from a servi
   
 ### To call the raw service using Internet Explorer  
   
-1.  Run the service, you should see the following output from the service. `Service is running Press ENTER to close the host`  
+1. Run the service, you should see the following output from the service. `Service is running Press ENTER to close the host`  
   
-2.  Open Internet Explorer and type in `http://localhost:8000/Service/GetImage?width=50&height=40` you should see a yellow rectangle with a blue diagonal line through the center.  
+2. Open Internet Explorer and type in `http://localhost:8000/Service/GetImage?width=50&height=40` you should see a yellow rectangle with a blue diagonal line through the center.  
   
 ## Example  
  The following is a complete listing of the code for this topic.  
   
-```  
+```csharp  
 using System;  
 using System.Collections.Generic;  
 using System.Text;  
@@ -167,7 +167,8 @@ namespace RawImageService
   
 ## Compiling the Code  
   
--   When compiling the sample code reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
+- When compiling the sample code reference System.ServiceModel.dll and System.ServiceModel.Web.dll.  
   
-## See Also  
- [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)
+## See also
+
+- [WCF Web HTTP Programming Model](wcf-web-http-programming-model.md)

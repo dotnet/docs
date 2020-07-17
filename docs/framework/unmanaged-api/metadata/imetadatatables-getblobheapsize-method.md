@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 6330a9ee-8cd5-4299-86f1-b4de2c701a0d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetBlobHeapSize Method
 Gets the size, in bytes, of the binary large object (BLOB) heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlobHeapSize (  
     [out] ULONG     *pcbBlobs  
-);   
+);
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbBlobs`  
  [out] A pointer to the size, in bytes, of the BLOB heap.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -42,6 +40,7 @@ HRESULT GetBlobHeapSize (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+## See also
+
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

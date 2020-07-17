@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0451d752-1e5c-4c9a-8bad-6cd35b7ba3df
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::TruncateSection Method
 Truncates the specified code section by the specified length.  
@@ -25,14 +23,14 @@ Truncates the specified code section by the specified length.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TruncateSection (  
     [in]  HCEESECTION     section,  
     [in]  ULONG           len  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The section to truncate.  
   
@@ -43,7 +41,7 @@ HRESULT TruncateSection (
  Call `TruncateSection` only if you have special section requirements that are not handled by other methods.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -51,5 +49,6 @@ HRESULT TruncateSection (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+
+- [ICeeGen Interface](iceegen-interface.md)

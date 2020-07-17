@@ -15,30 +15,30 @@ helpviewer_keywords:
 ms.assetid: ea3dc625-5650-4bf4-8e67-01e42be065b1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionUnwindFunctionEnter Method
 Notifies the profiler that the unwind phase of exception handling has begun to unwind a function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFunctionEnter(  
     [in] FunctionID functionId);  
 ```  
   
-#### Parameters  
- `functionId`  
- [in] The ID of the function that is being unwound.  
-  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that is being unwound.
+
 ## Remarks  
  The profiler should not block in its implementation of this method because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and garbage collection is attempted, the runtime will block until this callback returns.  
   
  The profiler's implementation of this method should not call into managed code or in any way cause a managed-memory allocation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -46,6 +46,7 @@ HRESULT ExceptionUnwindFunctionEnter(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ExceptionUnwindFunctionLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfunctionleave-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionUnwindFunctionLeave Method](icorprofilercallback-exceptionunwindfunctionleave-method.md)

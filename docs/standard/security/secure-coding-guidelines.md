@@ -1,5 +1,6 @@
 ---
 title: "Secure coding guidelines for .NET"
+description: Design code to work with .NET-enforced permissions and other enforcement to help prevent malicious code from accessing data or performing other actions.
 ms.date: "06/28/2018"
 helpviewer_keywords: 
   - "managed wrapper to native code implementation"
@@ -14,8 +15,6 @@ helpviewer_keywords:
   - "security-neutral code"
   - "security [.NET], coding guidelines"
 ms.assetid: 4f882d94-262b-4494-b0a6-ba9ba1f5f177
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Secure coding guidelines
 

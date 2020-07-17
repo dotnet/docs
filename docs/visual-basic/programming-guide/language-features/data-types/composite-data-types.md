@@ -1,5 +1,5 @@
 ---
-title: "Composite Data Types (Visual Basic)"
+title: "Composite Data Types"
 ms.date: 04/25/2017
 helpviewer_keywords: 
   - "classes [Visual Basic], composite data types"
@@ -30,15 +30,15 @@ A tuple is a lightweight structure that contains two or more fields whose types 
 ## Array Types  
  There is no single data type comprising all arrays. The data type of a particular instance of an array is determined by the following:  
   
--   The fact of being an array  
+- The fact of being an array  
   
--   The rank (number of dimensions) of the array  
+- The rank (number of dimensions) of the array  
   
--   The element type of the array  
+- The element type of the array  
   
  In particular, the length of a given dimension is not part of the instance's data type. The following example illustrates this.  
   
-```  
+```vb  
 Dim arrayA( ) As Byte = New Byte(12) {}  
 Dim arrayB( ) As Byte = New Byte(100) {}  
 Dim arrayC( ) As Short = New Short(100) {}  
@@ -48,19 +48,20 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
   
  In the preceding example, array variables `arrayA` and `arrayB` are considered to be of the same data type — `Byte()` — even though they are initialized to different lengths. Variables `arrayB` and `arrayC` are not of the same type because their element types are different. Variables `arrayC` and `arrayD` are not of the same type because their ranks are different. Variables `arrayD` and `arrayE` have the same type — `Short(,)` — because their ranks and element types are the same, even though `arrayD` is not yet initialized.  
   
- For more information on arrays, see [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more information on arrays, see [Arrays](../arrays/index.md).  
   
 ## Class Types  
  There is no single data type comprising all classes. Although one class can inherit from another class, each is a separate data type. Multiple instances of the same class are of the same data type. If you assign one class instance variable to another, not only do they have the same data type, they point to the same class instance in memory.  
   
- For more information on classes, see [Objects and Classes](../../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md).  
+ For more information on classes, see [Objects and Classes](../objects-and-classes/index.md).  
   
-## See Also  
- [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- [Elementary Data Types](../../../../visual-basic/programming-guide/language-features/data-types/elementary-data-types.md)  
- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Value Types and Reference Types](../../../../visual-basic/programming-guide/language-features/data-types/value-types-and-reference-types.md)  
- [Type Conversions in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)  
- [Structures](../../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [How to: Hold More Than One Value in a Variable](../../../../visual-basic/programming-guide/language-features/data-types/how-to-hold-more-than-one-value-in-a-variable.md)
+## See also
+
+- [Data Types](index.md)
+- [Elementary Data Types](elementary-data-types.md)
+- [Generic Types in Visual Basic](generic-types.md)
+- [Value Types and Reference Types](value-types-and-reference-types.md)
+- [Type Conversions in Visual Basic](type-conversions.md)
+- [Structures](structures.md)
+- [Troubleshooting Data Types](troubleshooting-data-types.md)
+- [How to: Hold More Than One Value in a Variable](how-to-hold-more-than-one-value-in-a-variable.md)

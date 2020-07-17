@@ -1,5 +1,5 @@
 ---
-title: "Take While Clause (Visual Basic)"
+title: "Take While Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryTakeWhile"
@@ -14,7 +14,7 @@ Includes elements in a collection as long as a specified condition is `true` and
   
 ## Syntax  
   
-```  
+```vb  
 Take While expression  
 ```  
   
@@ -32,13 +32,14 @@ Take While expression
 ## Example  
  The following code example uses the `Take While` clause to retrieve results until the first customer without any orders is found.  
   
- [!code-vb[VbSimpleQuerySamples#2](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/take-while-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#2)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)  
- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+## See also
+
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](index.md)
+- [Select Clause](select-clause.md)
+- [From Clause](from-clause.md)
+- [Take Clause](take-clause.md)
+- [Skip While Clause](skip-while-clause.md)
+- [Where Clause](where-clause.md)

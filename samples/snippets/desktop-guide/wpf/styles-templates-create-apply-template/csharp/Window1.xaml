@@ -1,0 +1,19 @@
+﻿<!--<SnippetInitialWhole>-->
+<Window x:Class="IntroToStylingAndTemplating.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntroToStylingAndTemplating"
+        mc:Ignorable="d"
+        Title="Template Intro Sample" SizeToContent="WidthAndHeight" MinWidth="250">
+    <!--<SnippetInitial>-->
+    <StackPanel Margin="10">
+        <Label>Unstyled Button</Label>
+        <Button>Button 1</Button>
+        <Label>Rounded Button</Label>
+        <Button>Button 2</Button>
+    </StackPanel>
+    <!--</SnippetInitial>-->
+</Window>
+<!--</SnippetInitialWhole>-->

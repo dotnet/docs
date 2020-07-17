@@ -15,24 +15,22 @@ helpviewer_keywords:
 ms.assetid: a6f8ad36-61e1-42b0-9db2-add575646d18
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::CreateTask Method
 Requests that the host create a new task.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateTask (  
-    [in]  DWORD stacksize,   
+    [in]  DWORD stacksize,
     [in]  LPTHREAD_START_ROUTINE pStartAddress,  
     [in]  PVOID pParameter,  
     [out] IHostTask **ppTask  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `stacksize`  
  [in] The requested size, in bytes, of the requested stack, or 0 (zero) for the default size.  
   
@@ -43,7 +41,7 @@ HRESULT CreateTask (
  [in] A pointer to the user data to be passed to the function, or null if the function takes no parameters.  
   
  `ppTask`  
- [out] A pointer to the address of an [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance created by the host, or null if the task cannot be created. The task remains in a suspended state until it is explicitly started by a call to [IHostTask::Start](../../../../docs/framework/unmanaged-api/hosting/ihosttask-start-method.md).  
+ [out] A pointer to the address of an [IHostTask](ihosttask-interface.md) instance created by the host, or null if the task cannot be created. The task remains in a suspended state until it is explicitly started by a call to [IHostTask::Start](ihosttask-start-method.md).  
   
 ## Return Value  
   
@@ -61,7 +59,7 @@ HRESULT CreateTask (
  The CLR calls `CreateTask` to request that the host create a new task. The host returns an interface pointer to an `IHostTask` instance. The returned task must remain suspended until it is explicitly started by a call to `IHostTask::Start`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -69,8 +67,9 @@ HRESULT CreateTask (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)  
- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+## See also
+
+- [ICLRTask Interface](iclrtask-interface.md)
+- [ICLRTaskManager Interface](iclrtaskmanager-interface.md)
+- [IHostTask Interface](ihosttask-interface.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a24fd905-1fa6-45a0-ad65-e9e2ee58861e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRControl Interface
 Provides methods that allow a host to get references to, and configure aspects of, the common language runtime (CLR).  
@@ -24,11 +22,11 @@ Provides methods that allow a host to get references to, and configure aspects o
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetCLRManager Method](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-getclrmanager-method.md)|Gets an interface pointer to an instance of any of the manager types the host can use to configure the CLR.|  
-|[SetAppDomainManagerType Method](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)|Sets a type derived from <xref:System.AppDomainManager> as the type for application domain managers.|  
+|[GetCLRManager Method](iclrcontrol-getclrmanager-method.md)|Gets an interface pointer to an instance of any of the manager types the host can use to configure the CLR.|  
+|[SetAppDomainManagerType Method](iclrcontrol-setappdomainmanagertype-method.md)|Sets a type derived from <xref:System.AppDomainManager> as the type for application domain managers.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,13 +34,14 @@ Provides methods that allow a host to get references to, and configure aspects o
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)  
- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)  
- [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)  
- [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)  
- [ICLRHostProtectionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostprotectionmanager-interface.md)  
- [ICLROnEventManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclroneventmanager-interface.md)  
- [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [ICLRDebugManager Interface](iclrdebugmanager-interface.md)
+- [ICLRGCManager Interface](iclrgcmanager-interface.md)
+- [ICLRHostBindingPolicyManager Interface](iclrhostbindingpolicymanager-interface.md)
+- [ICLRHostProtectionManager Interface](iclrhostprotectionmanager-interface.md)
+- [ICLROnEventManager Interface](iclroneventmanager-interface.md)
+- [ICLRPolicyManager Interface](iclrpolicymanager-interface.md)
+- [IHostControl Interface](ihostcontrol-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

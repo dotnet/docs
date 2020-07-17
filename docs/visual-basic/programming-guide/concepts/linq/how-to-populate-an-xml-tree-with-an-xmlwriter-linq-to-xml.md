@@ -1,5 +1,5 @@
 ---
-title: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML) (Visual Basic)"
+title: "How to: Populate an XML Tree with an XmlWriter (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 5792a0eb-94ee-440d-b601-58cca8c0ee0b
 ---
@@ -13,7 +13,7 @@ One way to populate an XML tree is to use <xref:System.Xml.Linq.XContainer.Creat
   
 ```vb  
 Dim xslMarkup As XDocument = _  
-    <?xml version='1.0'?>   
+    <?xml version='1.0'?>
     <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>  
         <xsl:template match='/Parent'>  
             <Root>  
@@ -56,8 +56,9 @@ Console.WriteLine(newTree)
 </Root>  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XContainer.CreateWriter%2A>  
- <xref:System.Xml.XmlWriter>  
- <xref:System.Xml.Xsl.XslCompiledTransform>  
- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+## See also
+
+- <xref:System.Xml.Linq.XContainer.CreateWriter%2A>
+- <xref:System.Xml.XmlWriter>
+- <xref:System.Xml.Xsl.XslCompiledTransform>
+- [Creating XML Trees (Visual Basic)](creating-xml-trees.md)

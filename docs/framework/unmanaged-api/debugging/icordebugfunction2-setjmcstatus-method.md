@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 22c27b01-2869-4214-b840-5921f7c874fc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction2::SetJMCStatus Method
 Marks the function represented by this ICorDebugFunction2 for Just My Code stepping.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetJMCStatus (  
     [in] BOOL   bIsJustMyCode  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bIsJustMyCode`  
  [in] Set to `true` to mark the function as user code; otherwise, set to `false`.  
   
@@ -44,7 +42,7 @@ HRESULT SetJMCStatus (
  A Just My Code stepper will skip non-user code. User code must be a subset of debuggable code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

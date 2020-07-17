@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 56e718b4-fabd-418b-a5b3-3cc33c745683
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugClass::GetStaticFieldValue Method
 Gets the value of the specified static field.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldValue (  
     [in]  mdFieldDef         fieldDef,  
     [in]  ICorDebugFrame     *pFrame,  
@@ -31,7 +29,7 @@ HRESULT GetStaticFieldValue (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fieldDef`  
  [in] A field `Def` token that references the field to be retrieved.  
   
@@ -44,10 +42,10 @@ HRESULT GetStaticFieldValue (
  [out] A pointer to the address of an ICorDebugValue object that represents the value of the static field.  
   
 ## Remarks  
- For parameterized types, the value of a static field is relative to the particular instantiation. Therefore, if the class constructor takes parameters of type <xref:System.Type>, call [ICorDebugType::GetStaticFieldValue](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-getstaticfieldvalue-method.md) instead of `ICorDebugClass::GetStaticFieldValue`.  
+ For parameterized types, the value of a static field is relative to the particular instantiation. Therefore, if the class constructor takes parameters of type <xref:System.Type>, call [ICorDebugType::GetStaticFieldValue](icordebugtype-getstaticfieldvalue-method.md) instead of `ICorDebugClass::GetStaticFieldValue`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

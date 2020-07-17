@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare Custom Events To Conserve Memory (Visual Basic)"
+title: "How to: Declare Custom Events To Conserve Memory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring events [Visual Basic], custom"
@@ -19,9 +19,10 @@ There are several circumstances when it is important that an application keep it
   
  All events in the class use the `Events` field to keep track of what methods are handling each event.  
   
- [!code-vb[VbVbalrEvents#22](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-conserve-memory_1.vb)]  
+ [!code-vb[VbVbalrEvents#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#22)]  
   
-## See Also  
- <xref:System.ComponentModel.EventHandlerList>  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
- [How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)
+## See also
+
+- <xref:System.ComponentModel.EventHandlerList>
+- [Events](index.md)
+- [How to: Declare Custom Events To Avoid Blocking](how-to-declare-custom-events-to-avoid-blocking.md)

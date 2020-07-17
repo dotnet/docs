@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 275ef87b-0b53-49f9-af6b-58506335dc06
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedENCUpdate::UpdateMethodLines Method
 Allows updating the line information for a method that has not been recompiled, but whose lines have moved independently. A delta for each statement is allowed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateMethodLines(  
     [in]  mdMethodDef  mdMethodToken,  
     [in, size_is(cDeltas)] INT32*  pDeltas,  
     [in]  ULONG        cDeltas);  
 ```  
   
-#### Parameters  
+## Parameters  
  `mdMethodToken`  
  [in] The metadata of the method token.  
   
@@ -46,5 +44,6 @@ HRESULT UpdateMethodLines(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedENCUpdate Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedencupdate-interface.md)
+## See also
+
+- [ISymUnmanagedENCUpdate Interface](isymunmanagedencupdate-interface.md)

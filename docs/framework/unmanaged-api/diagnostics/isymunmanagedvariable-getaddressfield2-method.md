@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: 1f25b294-72b6-4882-a49b-6c9d364b6008
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedVariable::GetAddressField2 Method
 Gets the second address field for this variable. Its meaning depends on the kind of address.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddressField2(  
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that receives the second address field.  
   
@@ -38,8 +36,9 @@ HRESULT GetAddressField2(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)  
- [GetAddressField1 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddressfield1-method.md)  
- [GetAddressField3 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddressfield3-method.md)  
- [GetAddressKind Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-getaddresskind-method.md)
+## See also
+
+- [ISymUnmanagedVariable Interface](isymunmanagedvariable-interface.md)
+- [GetAddressField1 Method](isymunmanagedvariable-getaddressfield1-method.md)
+- [GetAddressField3 Method](isymunmanagedvariable-getaddressfield3-method.md)
+- [GetAddressKind Method](isymunmanagedvariable-getaddresskind-method.md)

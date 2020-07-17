@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 287f5ecd-863f-4090-a615-077859f0257b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMetaDataLocator Interface
 Provides metadata information to the debugger.  
@@ -24,15 +22,15 @@ Provides metadata information to the debugger.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetMetaData Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmetadatalocator-getmetadata-method.md)|Asks the debugger to return the full path to a module whose metadata is needed to complete an operation the debugger requested.|  
+|[GetMetaData Method](icordebugmetadatalocator-getmetadata-method.md)|Asks the debugger to return the full path to a module whose metadata is needed to complete an operation the debugger requested.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -40,6 +38,7 @@ Provides metadata information to the debugger.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

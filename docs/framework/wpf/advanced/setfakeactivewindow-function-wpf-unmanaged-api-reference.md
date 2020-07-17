@@ -1,5 +1,6 @@
 ---
-title: "SetFakeActiveWindow Function (WPF Unmanaged API Reference)"
+title: "SetFakeActiveWindow Function - WPF unmanaged API reference"
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -22,16 +23,17 @@ void __stdcall SetFakeActiveWindow(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  hwnd  
  A window handle.  
   
 ## Requirements  
- **Platforms:** See [.NET Framework System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [.NET Framework System Requirements](../../get-started/system-requirements.md).  
   
  **DLL:** PresentationHost_v0400.dll  
   
  **.NET Framework Version:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [WPF Unmanaged API Reference](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)
+## See also
+
+- [WPF Unmanaged API Reference](wpf-unmanaged-api-reference.md)

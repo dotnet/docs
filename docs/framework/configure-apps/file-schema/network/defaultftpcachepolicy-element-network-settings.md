@@ -1,5 +1,5 @@
 ---
-title: "&lt;defaultFtpCachePolicy&gt; Element (Network Settings)"
+title: "<defaultFtpCachePolicy> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#defaultFtpCachePolicy"
@@ -9,14 +9,14 @@ helpviewer_keywords:
   - "defaultFtpCachePolicy element"
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
 ---
-# &lt;defaultFtpCachePolicy&gt; Element (Network Settings)
+# \<defaultFtpCachePolicy> Element (Network Settings)
 Describes whether FTP caching is active and describes the default caching policy.  
-  
- \<configuration>  
-\<system.net>  
-\<requestCaching>  
-\<defaultFtpCachePolicy>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<requestCaching>**](requestcaching-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<defaultFtpCachePolicy>**
+
 ## Syntax  
   
 ```xml  
@@ -54,7 +54,7 @@ Describes whether FTP caching is active and describes the default caching policy
   
 |Element|Description|  
 |-------------|-----------------|  
-|[requestCaching](../../../../../docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
+|[requestCaching](requestcaching-element-network-settings.md)|Controls the caching mechanism for network requests.|  
   
 ## Remarks  
   
@@ -73,8 +73,9 @@ Describes whether FTP caching is active and describes the default caching policy
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.Cache>  
-- <xref:System.Net.WebRequest>  
-- <xref:System.Net.Cache.RequestCacheLevel>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.Cache>
+- <xref:System.Net.WebRequest>
+- <xref:System.Net.Cache.RequestCacheLevel>
+- [Network Settings Schema](index.md)

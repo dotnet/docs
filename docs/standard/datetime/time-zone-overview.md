@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "adjustment rule [.NET Framework]"
   - "time zones [.NET Framework], terminology"
 ms.assetid: c4b7ed01-5e38-4959-a3b6-ef9765d6ccf1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Time zone overview
 
@@ -53,20 +51,20 @@ In .NET, a <xref:System.TimeZoneInfo> object represents a time zone. The <xref:S
 
 The dependence of the <xref:System.TimeZoneInfo> class on the registry means that a time zone-aware application cannot be certain that a particular time zone is defined in the registry. As a result, the attempt to instantiate a specific time zone (other than the local time zone or the time zone that represents UTC) should use exception handling. It should also provide some method of letting the application to continue if a required <xref:System.TimeZoneInfo> object cannot be instantiated from the registry.
 
-To handle the absence of a required time zone, the <xref:System.TimeZoneInfo> class includes a <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method, which you can use to create custom time zones that are not found in the registry. For details on creating a custom time zone, see [How to: Create time zones without adjustment rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) and [How to: Create time zones with adjustment rules](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md). In addition, you can use the <xref:System.TimeZoneInfo.ToSerializedString%2A> method to convert a newly created time zone to a string and save it in a data store (such as a database, a text file, the registry, or an application resource). You can then use the <xref:System.TimeZoneInfo.FromSerializedString%2A> method to convert this string back to a <xref:System.TimeZoneInfo> object. For details, see [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md) and [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md).
+To handle the absence of a required time zone, the <xref:System.TimeZoneInfo> class includes a <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method, which you can use to create custom time zones that are not found in the registry. For details on creating a custom time zone, see [How to: Create time zones without adjustment rules](create-time-zones-without-adjustment-rules.md) and [How to: Create time zones with adjustment rules](create-time-zones-with-adjustment-rules.md). In addition, you can use the <xref:System.TimeZoneInfo.ToSerializedString%2A> method to convert a newly created time zone to a string and save it in a data store (such as a database, a text file, the registry, or an application resource). You can then use the <xref:System.TimeZoneInfo.FromSerializedString%2A> method to convert this string back to a <xref:System.TimeZoneInfo> object. For details, see [How to: Save time zones to an embedded resource](save-time-zones-to-an-embedded-resource.md) and [How to: Restore time zones from an embedded resource](restore-time-zones-from-an-embedded-resource.md).
 
 Because each time zone is characterized by a base offset from UTC, as well as by an offset from UTC that reflects any existing adjustment rules, a time in one time zone can be easily converted to the time in another time zone. For this purpose, the <xref:System.TimeZoneInfo> object includes several conversion methods, including:
 
-* <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A>, which converts UTC to the time in a designated time zone.
+- <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A>, which converts UTC to the time in a designated time zone.
 
-* <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A>, which converts the time in a designated time zone to UTC.
+- <xref:System.TimeZoneInfo.ConvertTimeToUtc%2A>, which converts the time in a designated time zone to UTC.
 
-* <xref:System.TimeZoneInfo.ConvertTime%2A>, which converts the time in one designated time zone to the time in another designated time zone.
+- <xref:System.TimeZoneInfo.ConvertTime%2A>, which converts the time in one designated time zone to the time in another designated time zone.
 
-* <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>, which uses time zone identifiers (instead of <xref:System.TimeZoneInfo> objects) as parameters to convert the time in one designated time zone to the time in another designated time zone.
+- <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>, which uses time zone identifiers (instead of <xref:System.TimeZoneInfo> objects) as parameters to convert the time in one designated time zone to the time in another designated time zone.
 
-For details on converting times between time zones, see [Converting times between time zones](../../../docs/standard/datetime/converting-between-time-zones.md).
+For details on converting times between time zones, see [Converting times between time zones](converting-between-time-zones.md).
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Dates, times, and time zones](index.md)

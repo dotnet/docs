@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: 5268480e-280a-4931-b7a3-dc3ffdf7f78f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager::SetUnhandledExceptionPolicy Method
 Specifies the behavior of the common language runtime (CLR) when an unhandled exception occurs.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnhandledExceptionPolicy (  
     [in] EClrUnhandledExceptionPolicy policy  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `policy`  
- [in] One of the [EClrUnhandledException](../../../../docs/framework/unmanaged-api/hosting/eclrunhandledexception-enumeration.md) values, indicating whether the behavior is set by the CLR or the host.  
+ [in] One of the [EClrUnhandledException](eclrunhandledexception-enumeration.md) values, indicating whether the behavior is set by the CLR or the host.  
   
 ## Return Value  
   
@@ -48,7 +46,7 @@ HRESULT SetUnhandledExceptionPolicy (
  By default, the CLR is the final handler for all unhandled exceptions, and its default behavior is to tear down the process. The host can change this behavior by setting the `policy` value to eHostDeterminedPolicy. This value allows the host to implement its own default behavior, as with earlier versions of the CLR.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -56,8 +54,9 @@ HRESULT SetUnhandledExceptionPolicy (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [EClrUnhandledException Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrunhandledexception-enumeration.md)  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLRPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-interface.md)  
- [IHostPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)
+## See also
+
+- [EClrUnhandledException Enumeration](eclrunhandledexception-enumeration.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRPolicyManager Interface](iclrpolicymanager-interface.md)
+- [IHostPolicyManager Interface](ihostpolicymanager-interface.md)

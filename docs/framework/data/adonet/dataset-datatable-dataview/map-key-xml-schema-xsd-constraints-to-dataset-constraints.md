@@ -21,7 +21,7 @@ In a schema, you can specify a key constraint on an element or attribute using t
   
 ```xml  
 <xs:schema id="cod"  
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   <xs:element name="Customers">  
     <xs:complexType>  
@@ -45,18 +45,18 @@ In a schema, you can specify a key constraint on an element or attribute using t
      <xs:field xpath="CustomerID" />  
     </xs:key>  
  </xs:element>  
-</xs:schema>   
+</xs:schema>
 ```  
   
  The **key** element specifies that the values of the **CustomerID** child element of the **Customers** element must have unique values and cannot have null values. In translating the XML Schema definition language (XSD) schema, the mapping process creates the following table:  
   
-```  
+```text  
 Customers(CustomerID, CompanyName, Phone)  
 ```  
   
  The XML Schema mapping also creates a **UniqueConstraint** on the **CustomerID** column, as shown in the following <xref:System.Data.DataSet>. (For simplicity, only relevant properties are shown.)  
   
-```  
+```text  
       DataSetName: MyDataSet  
 TableName: customers  
   ColumnName: CustomerID  
@@ -64,7 +64,7 @@ TableName: customers
       Unique: True  
   ConstraintName: KeyCustID  
       Table: customers  
-      Columns: CustomerID   
+      Columns: CustomerID
       IsPrimaryKey: True  
 ```  
   
@@ -72,7 +72,8 @@ TableName: customers
   
  The value of the **ConstraintName** property of the **UniqueConstraint** in the **DataSet** is the value of the **msdata:ConstraintName** attribute specified in the **key** element in the schema.  
   
-## See Also  
- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
+- [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
+- [ADO.NET Overview](../ado-net-overview.md)

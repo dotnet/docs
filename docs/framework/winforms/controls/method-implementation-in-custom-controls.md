@@ -42,7 +42,7 @@ public int ConvertMatterToEnergy(int matter)
  If you want to allow users of your control to supply different combinations of parameters to a method, provide multiple overloads of the method, using explicit data types. Avoid creating parameters declared `As Object` that can contain any data type, as this can lead to errors that might not be caught in testing.  
   
 > [!NOTE]
->  The universal data type in the common language runtime is `Object` rather than `Variant`. `Variant` has been removed from the language.  
+> The universal data type in the common language runtime is `Object` rather than `Variant`. `Variant` has been removed from the language.  
   
  For example, the `Spin` method of a hypothetical `Widget` control might allow either direct specification of spin direction and speed, or specification of another `Widget` object from which angular momentum is to be absorbed:  
   
@@ -69,6 +69,7 @@ public void Spin(Widget driver)
 }  
 ```  
   
-## See Also  
- [Events](../../../../docs/standard/events/index.md)  
- [Properties in Windows Forms Controls](../../../../docs/framework/winforms/controls/properties-in-windows-forms-controls.md)
+## See also
+
+- [Events](../../../standard/events/index.md)
+- [Properties in Windows Forms Controls](properties-in-windows-forms-controls.md)

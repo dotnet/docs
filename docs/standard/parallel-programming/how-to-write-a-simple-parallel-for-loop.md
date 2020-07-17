@@ -1,5 +1,6 @@
 ---
 title: "How to: Write a Simple Parallel.For Loop"
+description: Learn to write Parallel.For loops in .NET in which you don't need to cancel the loop, break out of loop iterations, or maintain any thread-local state.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -10,15 +11,13 @@ helpviewer_keywords:
   - "for loop, parallel construction in .NET"
   - "parallel for loops, how to use"
 ms.assetid: 9029ba7f-a9d1-4526-8c84-c88716dba5d4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Write a Simple Parallel.For Loop
 
 This topic contains two examples that illustrate the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method. The first uses the <xref:System.Threading.Tasks.Parallel.For%28System.Int64%2CSystem.Int64%2CSystem.Action%7BSystem.Int64%7D%29?displayProperty=nameWithType> method overload, and the second uses the <xref:System.Threading.Tasks.Parallel.For%28System.Int32%2CSystem.Int32%2CSystem.Action%7BSystem.Int32%7D%29?displayProperty=nameWithType> overload, the two simplest overloads of the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method. You can use these two overloads of the <xref:System.Threading.Tasks.Parallel.For%2A?displayProperty=nameWithType> method when you do not need to cancel the loop, break out of the loop iterations, or maintain any thread-local state.
 
 > [!NOTE]
-> This documentation uses lambda expressions to define delegates in TPL. If you are not familiar with lambda expressions in C# or Visual Basic, see [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).
+> This documentation uses lambda expressions to define delegates in TPL. If you are not familiar with lambda expressions in C# or Visual Basic, see [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 The first example calculates the size of files in a single directory. The second computes the product of two matrices.
 
@@ -40,7 +39,7 @@ When parallelizing any code, including loops, one important goal is to utilize t
 
 ## The Delegate
 
-The third parameter of this overload of <xref:System.Threading.Tasks.Parallel.For%2A> is a delegate of type `Action<int>` in C# or `Action(Of Integer)` in Visual Basic. An `Action` delegate, whether it has zero, one or sixteen type parameters, always returns void. In Visual Basic, the behavior of an `Action` is defined with a `Sub`. The example uses a lambda expression to create the delegate, but you can create the delegate in other ways as well. For more information, see [Lambda Expressions in PLINQ and TPL](../../../docs/standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md).
+The third parameter of this overload of <xref:System.Threading.Tasks.Parallel.For%2A> is a delegate of type `Action<int>` in C# or `Action(Of Integer)` in Visual Basic. An `Action` delegate, whether it has zero, one or sixteen type parameters, always returns void. In Visual Basic, the behavior of an `Action` is defined with a `Sub`. The example uses a lambda expression to create the delegate, but you can create the delegate in other ways as well. For more information, see [Lambda Expressions in PLINQ and TPL](lambda-expressions-in-plinq-and-tpl.md).
 
 ## The Iteration Value
 
@@ -64,9 +63,9 @@ Synchronous calls to shared resources, like the Console or the File System, will
 
 Copy and paste this code into a Visual Studio project.
 
-## See Also
+## See also
 
 - <xref:System.Threading.Tasks.Parallel.For%2A>
 - <xref:System.Threading.Tasks.Parallel.ForEach%2A>
-- [Data Parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
-- [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
+- [Data Parallelism](data-parallelism-task-parallel-library.md)
+- [Parallel Programming](index.md)

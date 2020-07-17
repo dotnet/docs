@@ -8,45 +8,45 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 ### To install IIS version 7.5 on Windows Server 2008 R2  
   
-1.  From **Server Manager**, select **Roles.** Under **Roles Summary**, click **Add Roles**.  
+1. From **Server Manager**, select **Roles.** Under **Roles Summary**, click **Add Roles**.  
   
-2.  Click **Next** to display the **Select Server Roles** dialog.  
+2. Click **Next** to display the **Select Server Roles** dialog.  
   
-3.  Select **Application Server** from the **Roles** list, and then click **Next** twice to display the **Select Role Services** dialog for the Application Server role.  
+3. Select **Application Server** from the **Roles** list, and then click **Next** twice to display the **Select Role Services** dialog for the Application Server role.  
   
-4.  Select the **Web Server (IIS)** check box. If you are prompted to install additional role services and features, click **Add Required Features**. Click **Next** twice to display the **Select Role Services** dialog for the Web Server (IIS) role.  
+4. Select the **Web Server (IIS)** check box. If you are prompted to install additional role services and features, click **Add Required Features**. Click **Next** twice to display the **Select Role Services** dialog for the Web Server (IIS) role.  
   
-5.  Expand **Management Tools**, and then expand **IIS 6 Management Compatibility**. Select **IIS 6 Scripting Tools**. If you are prompted to install additional role services and features, click **Add Required Role Services**. Click **Next**.  
+5. Expand **Management Tools**, and then expand **IIS 6 Management Compatibility**. Select **IIS 6 Scripting Tools**. If you are prompted to install additional role services and features, click **Add Required Role Services**. Click **Next**.  
   
-6.  If the summary of selections is correct, click **Install**.  
+6. If the summary of selections is correct, click **Install**.  
   
-7.  When installation completes, click **Close**.  
+7. When installation completes, click **Close**.  
   
 ### To install IIS version 7.5 on Windows 7  
   
-1.  Click **Start**, and then click **Control Panel**.  
+1. Click **Start**, and then click **Control Panel**.  
   
-2.  Open the **Programs** group.  
+2. Open the **Programs** group.  
   
-3.  Under **Programs and Features**, click **Turn Windows Features on or off**.  
+3. Under **Programs and Features**, click **Turn Windows Features on or off**.  
   
-4.  The **User Account Control** dialog is displayed. Click **Continue**.  
+4. The **User Account Control** dialog is displayed. Click **Continue**.  
   
-5.  The **Windows Features** dialog is displayed. Expand the item labeled **Internet Information Services**.  
+5. The **Windows Features** dialog is displayed. Expand the item labeled **Internet Information Services**.  
   
-6.  Expand the item labeled **World Wide Web Services**.  
+6. Expand the item labeled **World Wide Web Services**.  
   
-7.  Expand the item labeled **Application Development Features**.  
+7. Expand the item labeled **Application Development Features**.  
   
-8.  Make sure the following items are selected:  
+8. Make sure the following items are selected:  
   
-    1.  **.NET Extensibility**  
+    1. **.NET Extensibility**  
   
-    2.  **ASP.NET**  
+    2. **ASP.NET**  
   
-    3.  **ISAPI Extensions**  
+    3. **ISAPI Extensions**  
   
-    4.  **ISAPI Filters**  
+    4. **ISAPI Filters**  
   
 9. Under the item labeled **World Wide Web Services**, expand **Common Http Features**.  
   
@@ -66,45 +66,45 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 ### To install IIS version 7.0 on Windows Server 2008  
   
-1.  From **Server Manager**, select **Roles**. Under **Roles Summary**, click **Add Roles**.  
+1. From **Server Manager**, select **Roles**. Under **Roles Summary**, click **Add Roles**.  
   
-2.  Click **Next** to display the **Select Server Roles** dialog.  
+2. Click **Next** to display the **Select Server Roles** dialog.  
   
-3.  Select **Application Server** from the **Roles** list, and then click **Next** twice to display the **Select Role Services** dialog for the Application Server role.  
+3. Select **Application Server** from the **Roles** list, and then click **Next** twice to display the **Select Role Services** dialog for the Application Server role.  
   
-4.  Select **Web Server (IIS)** check box. If you are prompted to install additional role services and features, click **Add Required Features**. Click **Next** twice to display the **Select Role Services** dialog for the Web Server (IIS) role.  
+4. Select **Web Server (IIS)** check box. If you are prompted to install additional role services and features, click **Add Required Features**. Click **Next** twice to display the **Select Role Services** dialog for the Web Server (IIS) role.  
   
-5.  Expand **Management Tools**, and then expand **IIS 6 Management Compatibility**. Select **IIS 6 Scripting Tools**. If you are prompted to install additional role services and features, click **Add Required Role Services**. Click **Next**.  
+5. Expand **Management Tools**, and then expand **IIS 6 Management Compatibility**. Select **IIS 6 Scripting Tools**. If you are prompted to install additional role services and features, click **Add Required Role Services**. Click **Next**.  
   
-6.  If the summary of selections is correct, click **Install**.  
+6. If the summary of selections is correct, click **Install**.  
   
-7.  When installation completes, click **Close**.  
+7. When installation completes, click **Close**.  
   
 ### To install IIS version 7.0 on Windows Vista  
   
-1.  Click Start, and then click Control Panel.  
+1. Click Start, and then click Control Panel.  
   
-2.  Select the **Programs** group.  
+2. Select the **Programs** group.  
   
-3.  Under **Programs and Features**, click **Turn Windows Features on or off**.  
+3. Under **Programs and Features**, click **Turn Windows Features on or off**.  
   
-4.  The **User Account Control** dialog is displayed. Click **Continue**.  
+4. The **User Account Control** dialog is displayed. Click **Continue**.  
   
-5.  The **Windows Features** dialog is displayed. Expand the item labeled **Internet Information Services**.  
+5. The **Windows Features** dialog is displayed. Expand the item labeled **Internet Information Services**.  
   
-6.  Expand the item labeled **World Wide Web Services**.  
+6. Expand the item labeled **World Wide Web Services**.  
   
-7.  Expand the item labeled **Application Development Features**.  
+7. Expand the item labeled **Application Development Features**.  
   
-8.  Make sure the following items are selected:  
+8. Make sure the following items are selected:  
   
-    1.  **.NET Extensibility**  
+    1. **.NET Extensibility**  
   
-    2.  **ASP.NET**  
+    2. **ASP.NET**  
   
-    3.  **ISAPI Extensions**  
+    3. **ISAPI Extensions**  
   
-    4.  **ISAPI Filters**  
+    4. **ISAPI Filters**  
   
 9. Expand the item labeled **Web Management Tools**, and then select **IIS Management Console**.  
   
@@ -124,40 +124,40 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 ### To install IIS version 6.0 on Windows Server 2003  
   
-1.  From **Manage Your Server**, click **Add or remove a role**, and then click **Next**.  
+1. From **Manage Your Server**, click **Add or remove a role**, and then click **Next**.  
   
-2.  Select **Application server (IIS, ASP.NET)** from the **Server Role** list, and then click **Next**.  
+2. Select **Application server (IIS, ASP.NET)** from the **Server Role** list, and then click **Next**.  
   
-3.  Select **Enable ASP.NET** check box, and then click **Next**.  
+3. Select **Enable ASP.NET** check box, and then click **Next**.  
   
-4.  If the summary of selections is correct, click Next.  
+4. If the summary of selections is correct, click Next.  
   
 ### To install IIS version 5.1 on Windows XP with Service Pack 2 and Service Pack 3 installed  
   
-1.  In Control Panel, click **Add or Remove Programs**.  
+1. In Control Panel, click **Add or Remove Programs**.  
   
-2.  In the **Add or Remove Programs** dialog box, click **Add/Remove Windows Components**.  
+2. In the **Add or Remove Programs** dialog box, click **Add/Remove Windows Components**.  
   
-3.  In the **Windows Components Wizard**, select the **Internet Information Services (IIS)** check box, and then click **Next**.  
+3. In the **Windows Components Wizard**, select the **Internet Information Services (IIS)** check box, and then click **Next**.  
   
-4.  If the **Files Needed** dialog box is displayed, insert your operating system installation disc, browse to the i386 folder, and then click **OK**.  
+4. If the **Files Needed** dialog box is displayed, insert your operating system installation disc, browse to the i386 folder, and then click **OK**.  
   
-5.  When installation completes, click **Finish**.  
+5. When installation completes, click **Finish**.  
   
-6.  Close the **Add or Remove Programs** dialog box, and then close **Control Panel**.  
+6. Close the **Add or Remove Programs** dialog box, and then close **Control Panel**.  
   
 ### To verify the installation of IIS and ASP.NET  
   
-1.  Save the HTML file found at the end of this topic in the root \InetPub\wwwroot directory and name it Default.aspx.  
+1. Save the HTML file found at the end of this topic in the root \InetPub\wwwroot directory and name it Default.aspx.  
   
-2.  Open a browser window.  
+2. Open a browser window.  
   
-3.  Type `http://localhost/Default.aspx` in the address box, and then press ENTER.  
+3. Type `http://localhost/Default.aspx` in the address box, and then press ENTER.  
   
-4.  A Web page with the text "Hello World" should appear.  
+4. A Web page with the text "Hello World" should appear.  
   
 > [!NOTE]
->  Each time you install a new version of the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], you must re-register aspnet_isapi as a Web service extension for IIS. To do so, issue the `aspnet_regiis –I –enable` command.  
+> Each time you install a new version of the .NET Framework, you must re-register aspnet_isapi as a Web service extension for IIS. To do so, issue the `aspnet_regiis –I –enable` command.  
   
 ## Sample Code  
   

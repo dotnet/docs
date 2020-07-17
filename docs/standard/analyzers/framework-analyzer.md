@@ -1,8 +1,8 @@
 ---
-title: The .NET Security Analyzers - .NET
-description: Learn how to use the .NET Security Analyzers in the .NET Framework Analyzers package to find and address security risks
+title: .NET Framework Analyzers - .NET
+description: Learn how to use the .NET Framework Analyzers in the .NET Framework Analyzers package to find and address security risks
 author: billwagner
-ms.author: billwagner
+ms.author: wiwagn
 ms.date: 01/25/2018
 ms.technology: dotnet-standard
 ---
@@ -20,7 +20,7 @@ warns about new issues as you keep developing.
 
 ## Installing and configuring the .NET Framework Analyzer
 
-The .NET Security Analyzers must be installed as a NuGet package on every
+The .NET Framework Analyzers must be installed as a NuGet package on every
 project where you want them to run. Only one developer needs to add them
 to the project. The analyzer package is a project dependency and will run
 on every developer's machine once it has the updated solution.
@@ -28,9 +28,10 @@ on every developer's machine once it has the updated solution.
 The .NET Framework Analyzer is delivered in the [Microsoft.NetFramework.Analyzers](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/)
 NuGet package. This package provides only the analyzers specific to the .NET Framework, which
 includes security analyzers. In most cases, you'll want
-the [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package. 
+the [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package.
 The FxCopAnalyzers aggregate package contains all the framework analyzers included in the
 Framework.Analyzers package as well as the following analyzers:
+
 - [Microsoft.CodeQuality.Analyzers](https://www.nuget.org/packages/Microsoft.CodeQuality.Analyzers): Provides general guidance and guidance for .NET Standard APIs
 - [Microsoft.NetCore.Analyzers](https://www.nuget.org/packages/Microsoft.NetCore.Analyzers): Provides analyzers specific to .NET Core APIs.
 - [Text.Analyzers](https://www.nuget.org/packages/Text.Analyzers): Provides guidance for text included as code, including comments.
@@ -60,7 +61,7 @@ warnings for any of these issues:
 
 ### CA1058: Types should not extend certain base types
 
-There are a small number of types in the .NET Framework that you should not derived from directly. 
+There are a small number of types in the .NET Framework that you should not derived from directly.
 
 **Category:** Design
 
@@ -129,7 +130,6 @@ If you use insecure <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> instanc
 
 Additional information: [A3075: Insecure DTD processing in XML](/visualstudio/code-quality/ca2237-mark-iserializable-types-with-serializableattribute)
 
-
 ### CA5350: Do not use weak cryptographic algorithms
 
 Cryptographic algorithms degrade over time as attacks become more advanced. Depending on the type and application of this cryptographic algorithm, further degradation of its cryptographic strength may allow attackers to read enciphered messages, tamper with enciphered messages, forge digital signatures, tamper with hashed content, or otherwise compromise any cryptosystem based on this algorithm. For encryption, use an AES algorithm (AES-256, AES-192 and AES-128 are acceptable) with a key length greater than or equal to 128 bits. For hashing, use a hashing function in the SHA-2 family, such as SHA-2 512, SHA-2 384, or SHA-2 256.
@@ -148,6 +148,4 @@ An attack making it computationally feasible to break this algorithm exists. Thi
 
 **Severity:** Warning
 
-Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms)
-
-
+Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351)

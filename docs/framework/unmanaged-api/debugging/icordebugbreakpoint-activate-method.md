@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: e30c29f7-3f19-4081-b572-a731aa14cd44
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugBreakpoint::Activate Method
 Sets the active state of this `ICorDebugBreakpoint`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Activate (  
     [in] BOOL bActive  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `bActive`  
  [in] Set this value to `true` to specify the state as active; otherwise, set this value to `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

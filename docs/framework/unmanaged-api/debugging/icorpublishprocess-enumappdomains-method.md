@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: 7da621fc-e7d0-4c00-9439-5c93619d7414
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess::EnumAppDomains Method
-Gets an enumerator for the application domains in the process that is referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  
+Gets an enumerator for the application domains in the process that is referenced by this [ICorPublishProcess](icorpublishprocess-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumAppDomains (  
     [out] ICorPublishAppDomainEnum   **ppEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
- [out] A pointer to the address of an [ICorPublishAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md) instance that allows iteration through the collection of application domains in this process.  
+ [out] A pointer to the address of an [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md) instance that allows iteration through the collection of application domains in this process.  
   
 ## Remarks  
  The list of application domains is based on a snapshot of the application domains that exist when the `EnumAppDomains` method is called. This method may be called more than once to create a new up-to-date list. Existing lists will not be affected by subsequent calls of this method.  
@@ -39,7 +37,7 @@ HRESULT EnumAppDomains (
  If the process has been terminated, `EnumAppDomains` will fail with an HRESULT value of CORDBG_E_PROCESS_TERMINATED.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -47,5 +45,6 @@ HRESULT EnumAppDomains (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)
+## See also
+
+- [ICorPublishProcess Interface](icorpublishprocess-interface.md)

@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: f0922545-c2cf-40c8-9ef6-ca033563e682
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread2::GetVolatileOSThreadID Method
 Gets the operating system thread identifier for this ICorDebugThread2.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVolatileOSThreadID (  
     [out] DWORD    *pdwTid  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwTid`  
  [out] The operating system thread identifier for this thread.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

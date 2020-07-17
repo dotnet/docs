@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 02468edf-d32b-4cb3-aaa8-3dd2abfc8b25
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval2::RudeAbort Method
 Aborts the computation that this `ICorDebugEval2` is currently performing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RudeAbort ();  
 ```  
   
@@ -31,7 +29,7 @@ HRESULT RudeAbort ();
  `RudeAbort` does not release any locks that the evaluator holds, so it leaves the debugging session in an unsafe state. Call this method with extreme caution.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

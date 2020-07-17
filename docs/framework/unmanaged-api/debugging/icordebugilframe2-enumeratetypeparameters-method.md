@@ -15,33 +15,31 @@ helpviewer_keywords:
 ms.assetid: 722d0d74-e0df-491f-98c4-62d501dfaf6f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame2::EnumerateTypeParameters Method
 Gets an ICorDebugTypeEnum object that contains the <xref:System.Type> parameters in this frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateTypeParameters (  
     [out] ICorDebugTypeEnum    **ppTyParEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppTyParEnum`  
  A pointer to the address of a ICorDebugTypeEnum interface object that allows enumeration of type parameters.  
   
  The list of type parameters include the class type parameters (if any) followed by the method type parameters (if any).  
   
 ## Remarks  
- Use the [IMetaDataImport2::EnumGenericParams](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-enumgenericparams-method.md) method to determine how many class type parameters and method type parameters this list contains.  
+ Use the [IMetaDataImport2::EnumGenericParams](../metadata/imetadataimport2-enumgenericparams-method.md) method to determine how many class type parameters and method type parameters this list contains.  
   
  The type parameters are not always available.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

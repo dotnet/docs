@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Programming and Host Protection Attributes"
+description: Get started with SQL Server programming and host protection attributes. Review SQL Server permission sets and programming model restrictions.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "SQL Server [.NET Framework]"
@@ -12,8 +13,6 @@ helpviewer_keywords:
   - "host protection attributes"
   - "HostProtectionAttribute class, reliability"
 ms.assetid: 7dfa36b4-e773-4c75-a3ff-ff1af3ce4c4f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SQL Server Programming and Host Protection Attributes
 The ability to load and execute managed code in a SQL Server host requires meeting the host's requirements for both code access security and host resource protection.  The code access security requirements are specified by one of three SQL Server permission sets: SAFE, EXTERNAL-ACCESS, or UNSAFE. Code executing within the SAFE or EXTERNAL-ACCESS permission sets must avoid certain types or members that have the <xref:System.Security.Permissions.HostProtectionAttribute> attribute applied. The <xref:System.Security.Permissions.HostProtectionAttribute> is not a security permission as much as a reliability guarantee in that it identifies specific code constructs, either types or methods, that the host may disallow.  The use of the <xref:System.Security.Permissions.HostProtectionAttribute> enforces a programming model that helps protect the stability of the host.  
@@ -21,11 +20,11 @@ The ability to load and execute managed code in a SQL Server host requires meeti
 ## Host Protection Attributes  
  Host protection attributes identify types or members that do not fit the host programming model and represent the following increasing levels of reliability threat:  
   
--   Are otherwise benign.  
+- Are otherwise benign.  
   
--   Could lead to destabilization of server-managed user code.  
+- Could lead to destabilization of server-managed user code.  
   
--   Could lead to destabilization of the server process itself.  
+- Could lead to destabilization of the server process itself.  
   
  SQL Server disallows the use of a type or member that has a <xref:System.Security.Permissions.HostProtectionAttribute> that specifies a <xref:System.Security.Permissions.HostProtectionResource> value of <xref:System.Security.Permissions.HostProtectionResource.SharedState>, <xref:System.Security.Permissions.HostProtectionResource.Synchronization>, <xref:System.Security.Permissions.HostProtectionResource.MayLeakOnAbort>, or <xref:System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt>. This prevents the assemblies from calling members that enable sharing state, perform synchronization, might cause a resource leak on termination, or affect the integrity of the SQL Server process.  
   
@@ -69,6 +68,7 @@ The ability to load and execute managed code in a SQL Server host requires meeti
   
  Given these considerations, SQL Server disallows the use of static variables and static data members. For SAFE and EXTERNAL-ACCESS assemblies, SQL Server examines the metadata of the assembly at CREATE ASSEMBLY time, and fails the creation of such assemblies if it finds the use of static data members and variables.  
   
-## See Also  
- <xref:System.Security.Permissions.HostProtectionAttribute>  
- <xref:System.Security.Permissions.HostProtectionResource>
+## See also
+
+- <xref:System.Security.Permissions.HostProtectionAttribute>
+- <xref:System.Security.Permissions.HostProtectionResource>

@@ -1,5 +1,6 @@
 ---
 title: "Using the StringBuilder Class in .NET"
+description: Learn how to use the StringBuilder class in .NET. Use this class to modify a string without creating a new object.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -16,8 +17,6 @@ helpviewer_keywords:
   - "Insert method"
   - "strings [.NET Framework], StringBuilder object"
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Using the StringBuilder Class in .NET
 The <xref:System.String> object is immutable. Every time you use one of the methods in the <xref:System.String?displayProperty=nameWithType> class, you create a new string object in memory, which requires a new allocation of space for that new object. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a new <xref:System.String> object can be costly. The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class can be used when you want to modify a string without creating a new object. For example, using the <xref:System.Text.StringBuilder> class can boost performance when concatenating many strings together in a loop.  
@@ -62,7 +61,7 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
 |<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|Replaces a format specifier passed in a string with formatted text.|  
 |<xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType>|Inserts a string or object into the specified index of the current **StringBuilder**.|  
 |<xref:System.Text.StringBuilder.Remove%2A?displayProperty=nameWithType>|Removes a specified number of characters from the current **StringBuilder**.|  
-|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Replaces a specified character at a specified index.|  
+|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Replaces all occurrences of a specified character or string in the current **StringBuilder** with another specified character or string.|  
   
 ### Append  
  The **Append** method can be used to add text or a string representation of an object to the end of a string represented by the current **StringBuilder**. The following example initializes a **StringBuilder** to "Hello World" and then appends some text to the end of the object. Space is allocated automatically as needed.  
@@ -72,7 +71,7 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
  [!code-vb[Conceptual.StringBuilder#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Conceptual.StringBuilder/vb/Example.vb#4)]  
   
 ### AppendFormat  
- The <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method adds text to the end of the <xref:System.Text.StringBuilder> object. It supports the composite formatting feature (for more information, see [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)) by calling the <xref:System.IFormattable> implementation of the object or objects to be formatted. Therefore, it accepts the standard format strings for numeric, date and time, and enumeration values, the custom format strings for numeric and date and time values, and the format strings defined for custom types. (For information about formatting, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md).) You can use this method to customize the format of variables and append those values to a <xref:System.Text.StringBuilder>. The following example uses the <xref:System.Text.StringBuilder.AppendFormat%2A> method to place an integer value formatted as a currency value at the end of a <xref:System.Text.StringBuilder> object.  
+ The <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method adds text to the end of the <xref:System.Text.StringBuilder> object. It supports the composite formatting feature (for more information, see [Composite Formatting](composite-formatting.md)) by calling the <xref:System.IFormattable> implementation of the object or objects to be formatted. Therefore, it accepts the standard format strings for numeric, date and time, and enumeration values, the custom format strings for numeric and date and time values, and the format strings defined for custom types. (For information about formatting, see [Formatting Types](formatting-types.md).) You can use this method to customize the format of variables and append those values to a <xref:System.Text.StringBuilder>. The following example uses the <xref:System.Text.StringBuilder.AppendFormat%2A> method to place an integer value formatted as a currency value at the end of a <xref:System.Text.StringBuilder> object.  
   
  [!code-cpp[Conceptual.StringBuilder#5](../../../samples/snippets/cpp/VS_Snippets_CLR/Conceptual.StringBuilder/cpp/example.cpp#5)]
  [!code-csharp[Conceptual.StringBuilder#5](../../../samples/snippets/csharp/VS_Snippets_CLR/Conceptual.StringBuilder/cs/Example.cs#5)]
@@ -107,6 +106,6 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
   
 ## See also
 
-- <xref:System.Text.StringBuilder?displayProperty=nameWithType>  
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
-- [Formatting Types](../../../docs/standard/base-types/formatting-types.md)
+- <xref:System.Text.StringBuilder?displayProperty=nameWithType>
+- [Basic String Operations](basic-string-operations.md)
+- [Formatting Types](formatting-types.md)

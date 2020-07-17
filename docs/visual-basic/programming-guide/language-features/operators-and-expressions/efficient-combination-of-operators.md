@@ -1,5 +1,5 @@
 ---
-title: "Efficient Combination of Operators (Visual Basic)"
+title: "Efficient Combination of Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "expressions [Visual Basic], parentheses"
@@ -19,7 +19,7 @@ Complex expressions can contain many different operators. The following example 
   
  `x = (45 * (y + z)) ^ (2 / 85) * 5 + z`  
   
- Creating complex expressions such as the one in the preceding example requires a thorough understanding of the rules of operator precedence. For more information, see [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md).  
+ Creating complex expressions such as the one in the preceding example requires a thorough understanding of the rules of operator precedence. For more information, see [Operator Precedence in Visual Basic](../../../language-reference/operators/operator-precedence.md).  
   
 ## Parenthetical Expressions  
  Often you want operations to proceed in a different order from that determined by operator precedence. Consider the following example.  
@@ -39,12 +39,13 @@ Complex expressions can contain many different operators. The following example 
   
  In the preceding example, `z + 2` is evaluated first, then the other parenthetical expressions. Exponentiation, which normally has higher precedence than addition or multiplication, is evaluated last in this example because the other expressions are enclosed in parentheses.  
   
-## See Also  
- [Arithmetic Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/arithmetic-operators.md)  
- [Comparison Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
- [Logical and Bitwise Operators in Visual Basic](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/logical-and-bitwise-operators.md)  
- [Logical/Bitwise Operators (Visual Basic)](../../../../visual-basic/language-reference/operators/logical-bitwise-operators.md)  
- [Boolean Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/boolean-expressions.md)  
- [Value Comparisons](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/value-comparisons.md)  
- [How to: Calculate Numeric Values](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/how-to-calculate-numeric-values.md)  
- [Operator Precedence in Visual Basic](../../../../visual-basic/language-reference/operators/operator-precedence.md)
+## See also
+
+- [Arithmetic Operators in Visual Basic](arithmetic-operators.md)
+- [Comparison Operators in Visual Basic](comparison-operators.md)
+- [Logical and Bitwise Operators in Visual Basic](logical-and-bitwise-operators.md)
+- [Logical/Bitwise Operators (Visual Basic)](../../../language-reference/operators/logical-bitwise-operators.md)
+- [Boolean Expressions](boolean-expressions.md)
+- [Value Comparisons](value-comparisons.md)
+- [How to: Calculate Numeric Values](how-to-calculate-numeric-values.md)
+- [Operator Precedence in Visual Basic](../../../language-reference/operators/operator-precedence.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;listeners&gt; Element for &lt;source&gt;"
+title: "<listeners> Element for <source>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source/listeners"
@@ -7,22 +7,20 @@ helpviewer_keywords:
   - "listeners element for <source>"
   - "<listeners> element for <source>"
 ms.assetid: a2991f43-b4d3-4614-a8e7-da392de9697f
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;listeners&gt; Element for &lt;source&gt;
+# \<listeners> Element for \<source>
 Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%2A> collection for a <xref:System.Diagnostics.TraceSource>. A listener directs the tracing output to an appropriate target, such as a log, window, or text file.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-\<source>  
-\<listeners> Element  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<source>**](source-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<listeners>**  
   
 ## Syntax  
   
 ```xml  
-<listeners>   
+<listeners>
   <add>...</add>  
   <remove ... />  
   <clear/>  
@@ -39,9 +37,9 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/add-element-for-listeners-for-source.md)|Adds a listener to the `Listeners` collection.|  
-|[\<remove>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/remove-element-for-listeners-for-source.md)|Removes a listener from the `Listeners` collection.|  
-|[\<clear>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/clear-element-for-listeners-for-source.md)|Clears the `Listeners` collection for a trace source.|  
+|[\<add>](add-element-for-listeners-for-source.md)|Adds a listener to the `Listeners` collection.|  
+|[\<remove>](remove-element-for-listeners-for-source.md)|Removes a listener from the `Listeners` collection.|  
+|[\<clear>](clear-element-for-listeners-for-source.md)|Clears the `Listeners` collection for a trace source.|  
   
 ### Parent Elements  
   
@@ -64,12 +62,12 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
 <configuration>  
   <system.diagnostics>  
     <sources>  
-      <source name="mySource" switchName="sourceSwitch"   
+      <source name="mySource" switchName="sourceSwitch"
         switchType="System.Diagnostics.SourceSwitch">  
         <listeners>  
-          <add name="console"   
+          <add name="console"
             type="System.Diagnostics.ConsoleTraceListener">  
-            <filter type="System.Diagnostics.EventTypeFilter"   
+            <filter type="System.Diagnostics.EventTypeFilter"
               initializeData="Error"/>  
           </add>  
           <remove name="Default"/>  
@@ -83,7 +81,8 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.TraceListener>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Listeners](../../../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+
+- <xref:System.Diagnostics.TraceListener>
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Listeners](../../../debug-trace-profile/trace-listeners.md)

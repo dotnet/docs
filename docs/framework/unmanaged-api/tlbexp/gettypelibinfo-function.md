@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: a1c4d165-9bdc-4ca8-940e-292d4ffcc338
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetTypeLibInfo Function
-Returns information about the specified type library by examining its [TLIBATTR](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/ns-oaidl-tagtlibattr) structure.  
+Returns information about the specified type library by examining its [TLIBATTR](/windows/win32/api/oaidl/ns-oaidl-tlibattr) structure.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeLibInfo(  
     [in]   LPWSTR     szFile,  
     [out]  GUID      *pTypeLibID,  
@@ -33,7 +31,7 @@ HRESULT GetTypeLibInfo(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szFile`  
  [in] The file name of the type library.  
   
@@ -44,7 +42,7 @@ HRESULT GetTypeLibInfo(
  [out] The localization ID of the type library.  
   
  `pTypeLibPlatform`  
- [out] A [SYSKIND](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/ne-oaidl-tagsyskind) flag that identifies the target operating system for the type library. Common values are SYS_WIN32 and SYS_WIN64.  
+ [out] A [SYSKIND](/windows/win32/api/oaidl/ne-oaidl-syskind) flag that identifies the target operating system for the type library. Common values are SYS_WIN32 and SYS_WIN64.  
   
  `pTypeLibMajorVer`  
  [out] The major version number of the type library. For example, for version *x.y*, the major version number is *x*.  
@@ -53,12 +51,12 @@ HRESULT GetTypeLibInfo(
  [out] The minor version number of the type library. For example, for version *x.y*, the minor version number is *y*.  
   
 ## Remarks  
- The `GetTypeLibInfo` function is called by the [Tlbexp.exe (Type Library Exporter)](../../../../docs/framework/tools/tlbexp-exe-type-library-exporter.md). This tool generates a type library that describes the types in a common language runtime (CLR) assembly.  
+ The `GetTypeLibInfo` function is called by the [Tlbexp.exe (Type Library Exporter)](../../tools/tlbexp-exe-type-library-exporter.md). This tool generates a type library that describes the types in a common language runtime (CLR) assembly.  
   
  If any parameter is null, the function returns an `HRESULT` of `E_POINTER`. Otherwise, it returns `S_OK`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** TlbRef.h  
   
@@ -66,6 +64,7 @@ HRESULT GetTypeLibInfo(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)  
- [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+## See also
+
+- [Tlbexp Helper Functions](index.md)
+- [LoadTypeLibEx Function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

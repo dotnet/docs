@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: bfd46324-afec-4782-9c18-586d81fb4740
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CALL_ID Structure
-Provides information to a debugger about a function that is being called. See the [INotifySink2](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md) interface for more information.  
+Provides information to a debugger about a function that is being called. See the [INotifySink2](inotifysink2-interface.md) interface for more information.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct tagCALL_ID  
 {  
     LPCOLESTR       szMachine;  
@@ -48,6 +46,7 @@ typedef struct tagCALL_ID
 ## Requirements  
  **Header:** ProtocolNotify2.idl  
   
-## See Also  
- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)  
- [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)
+## See also
+
+- [INotifySink2 Interface](inotifysink2-interface.md)
+- [Diagnostics Symbol Store Structures](diagnostics-symbol-store-structures.md)

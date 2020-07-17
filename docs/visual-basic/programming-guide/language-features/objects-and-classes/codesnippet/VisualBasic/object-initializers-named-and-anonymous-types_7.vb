@@ -1,1 +1,0 @@
-        Dim cust5 As Customer = New Customer With {.Name = "Toni Poe"}

@@ -1,11 +1,9 @@
 ---
-title: "&lt;GenericParameter&gt; Element (.NET Native)"
+title: "<GenericParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# &lt;GenericParameter&gt; Element (.NET Native)
+# \<GenericParameter> Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  
   
 ## Syntax  
@@ -15,13 +13,13 @@ Applies policy to the parameter type of a generic type or method.
                   Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
-                  Serialize="policy_type" />  
+                  Serialize="policy_type"  
                   DataContractSerializer="policy_type"  
                   DataContractJsonSerializer="policy_type"  
                   XmlSerializer="policy_type"  
                   MarshalObject="policy_type"  
                   MarshalDelegate="policy_type"  
-                  MarshalStructure="policy_type"  
+                  MarshalStructure="policy_type" />
 ```  
   
 ## Attributes and Elements  
@@ -53,7 +51,7 @@ Applies policy to the parameter type of a generic type or method.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
  None.  
@@ -62,11 +60,11 @@ Applies policy to the parameter type of a generic type or method.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)|Applies runtime reflection policy to a constructor or method.|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies runtime reflection policy to a particular type, such as a class or structure.|  
+|[\<Method>](method-element-net-native.md)|Applies runtime reflection policy to a constructor or method.|  
+|[\<Type>](type-element-net-native.md)|Applies runtime reflection policy to a particular type, such as a class or structure.|  
   
 ## Remarks  
- The `<GenericParameter>` element is a child of either the [\<Method>](../../../docs/framework/net-native/method-element-net-native.md) or [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element and is used to apply policy to a particular generic type parameter, which is specified by its name in the generic type or method signature.  
+ The `<GenericParameter>` element is a child of either the [\<Method>](method-element-net-native.md) or [\<Type>](type-element-net-native.md) element and is used to apply policy to a particular generic type parameter, which is specified by its name in the generic type or method signature.  
   
  The `<GenericParameter>` element is most useful when used with serializers. The following example uses the `<GenericParameter>` element to apply policy to the type `T` in calls to the NewtonSoft JSON serializer's [JsonConvert.DeserializeObject\<T>(String)](https://www.newtonsoft.com/json/help/html/M_Newtonsoft_Json_JsonConvert_DeserializeObject__1.htm) method overloads.  
   
@@ -80,9 +78,10 @@ Applies policy to the parameter type of a generic type or method.
 </Directives>  
 ```  
   
-## See Also  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
- [\<Type> Element](../../../docs/framework/net-native/type-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+
+- [\<Method> Element](method-element-net-native.md)
+- [\<Type> Element](type-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)

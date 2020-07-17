@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 82f596a4-483d-4509-b0c5-a84c53c3da1b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetRequestedRuntimeVersion Function
 Gets the version number of the common language runtime (CLR) requested by the specified application. If that version is not installed, gets the most recent version that is installed before the requested version.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRequestedRuntimeVersion (  
-    [in]  LPWSTR  pExe,   
-    [out] LPWSTR  pVersion,   
-    [in]  DWORD   cchBuffer,   
+    [in]  LPWSTR  pExe,
+    [out] LPWSTR  pVersion,
+    [in]  DWORD   cchBuffer,
     [out] DWORD  *pdwLength  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pExe`  
  [in] The name of the application.  
   
@@ -57,7 +55,7 @@ HRESULT GetRequestedRuntimeVersion (
 |E_POINTER|`pdwLength` is null.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -65,7 +63,8 @@ HRESULT GetRequestedRuntimeVersion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## See Also  
- [GetRequestedRuntimeInfo Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeinfo-function.md)  
- [GetVersionFromProcess Function](../../../../docs/framework/unmanaged-api/hosting/getversionfromprocess-function.md)  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [GetRequestedRuntimeInfo Function](getrequestedruntimeinfo-function.md)
+- [GetVersionFromProcess Function](getversionfromprocess-function.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

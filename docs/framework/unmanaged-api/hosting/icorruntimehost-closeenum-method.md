@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: f7ce7e8c-0a3e-4587-a180-063e2b85940e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::CloseEnum Method
 Resets a domain enumerator back to the beginning of the domain list.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseEnum (  
     [in] HCORENUM hEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The enumerator to reset.  
   
@@ -43,7 +41,7 @@ HRESULT CloseEnum (
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -51,6 +49,7 @@ HRESULT CloseEnum (
   
  **.NET Framework Versions:** 1.0, 1.1  
   
-## See Also  
- [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+
+- [CorBindToRuntimeEx Function](corbindtoruntimeex-function.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)

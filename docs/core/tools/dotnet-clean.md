@@ -1,11 +1,11 @@
 ---
 title: dotnet clean command
 description: The dotnet clean command cleans the current directory.
-ms.date: 12/04/2018
+ms.date: 02/14/2020
 ---
 # dotnet clean
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -13,9 +13,13 @@ ms.date: 12/04/2018
 
 ## Synopsis
 
-```
-dotnet clean [<PROJECT>] [-c|--configuration] [-f|--framework] [-o|--output] [-r|--runtime] [-v|--verbosity]
-dotnet clean [-h|--help]
+```dotnetcli
+dotnet clean [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>] [--interactive]
+    [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [-v|--verbosity <LEVEL>]
+
+dotnet clean -h|--help
 ```
 
 ## Description
@@ -24,15 +28,15 @@ The `dotnet clean` command cleans the output of the previous build. It's impleme
 
 ## Arguments
 
-`PROJECT`
+`PROJECT | SOLUTION`
 
-The MSBuild project to clean. If a project file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* and uses that file.
+The MSBuild project or solution to clean. If a project or solution file is not specified, MSBuild searches the current working directory for a file that has a file extension that ends in *proj* or *sln*, and uses that file.
 
 ## Options
 
-* **`-c|--configuration {Debug|Release}`**
+* **`-c|--configuration <CONFIGURATION>`**
 
-  Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
+  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project. This option is only required when cleaning if you specified it during build time.
 
 * **`-f|--framework <FRAMEWORK>`**
 
@@ -42,28 +46,36 @@ The MSBuild project to clean. If a project file is not specified, MSBuild search
 
   Prints out a short help for the command.
 
+* **`--interactive`**
+
+  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+
+* **`--nologo`**
+
+  Doesn't display the startup banner or the copyright message. Available since .NET Core 3.0 SDK.
+
 * **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Directory in which the build outputs are placed. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
+  The directory that contains the build artifacts to clean. Specify the `-f|--framework <FRAMEWORK>` switch with the output directory switch if you specified the framework when the project was built.
 
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd) was created. Option available since .NET Core 2.0 SDK.
+  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created.
 
 * **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed levels are q[uiet], m[inimal], n[ormal], d[etailed], and diag[nostic].
+  Sets the MSBuild verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `normal`.
 
 ## Examples
 
 * Clean a default build of the project:
 
-  ```console
+  ```dotnetcli
   dotnet clean
   ```
 
 * Clean a project built using the Release configuration:
 
-  ```console
+  ```dotnetcli
   dotnet clean --configuration Release
   ```

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: df51f2bb-6d15-44a9-a48c-22db700a5766
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::GetObject Method
 This method has not been implemented.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObject(  
     [out] ICorDebugValue **ppObject  
 );  

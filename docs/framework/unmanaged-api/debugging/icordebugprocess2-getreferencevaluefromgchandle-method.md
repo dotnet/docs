@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 8bdd7f4c-19f2-4ede-875e-603773e8c128
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::GetReferenceValueFromGCHandle Method
 Gets a reference pointer to the specified managed object that has a garbage collection handle.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReferenceValueFromGCHandle (  
     [in]  UINT_PTR                 handle,  
     [out] ICorDebugReferenceValue  **pOutValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `handle`  
  [in] A pointer to a managed object that has a garbage collection handle. This value is a <xref:System.IntPtr> object and can be retrieved from the <xref:System.Runtime.InteropServices.GCHandle> for the managed object.  
   
@@ -43,10 +41,10 @@ HRESULT GetReferenceValueFromGCHandle (
  The returned reference behaves like a normal reference. It is disabled when code execution continues after a breakpoint. The lifetime of the target object is not affected by the lifetime of the reference value.  
   
 > [!NOTE]
->  The `GetReferenceValueFromGCHandle` method does not validate the handle. Therefore, the `GetReferenceValueFromGCHandle` method can potentially corrupt both the debugger and the code being debugged if an invalid handle is passed.  
+> The `GetReferenceValueFromGCHandle` method does not validate the handle. Therefore, the `GetReferenceValueFromGCHandle` method can potentially corrupt both the debugger and the code being debugged if an invalid handle is passed.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

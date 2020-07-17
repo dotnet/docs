@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2cee9108-a58d-48a8-b7d4-6beb6da3f4bb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugObjectValue::SetFromManagedCopy Method
 `SetFromManagedCopy` is obsolete. Do not call this method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFromManagedCopy (  
     [in] IUnknown            *pObject  
 );  
@@ -32,6 +30,4 @@ HRESULT SetFromManagedCopy (
 ## Requirements  
  **Header:** CorDebug.idl, CorDebug.h  
   
-## See Also  
-    
- 
+## See also

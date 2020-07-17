@@ -1,0 +1,21 @@
+- name: Authenticode
+  href: index.md
+  items:
+  - name: _AxlGetIssuerPublicKeyHash Function
+    href: axlgetissuerpublickeyhash-function.md
+  - name: _AxlPublicKeyBlobToPublicKeyToken Function
+    href: axlpublickeyblobtopublickeytoken-function.md
+  - name: _AxlRSAKeyValueToPublicKeyToken Function
+    href: axlrsakeyvaluetopublickeytoken-function.md
+  - name: CertFreeAuthenticodeSignerInfo Function
+    href: certfreeauthenticodesignerinfo-function.md
+  - name: CertFreeAuthenticodeTimestamperInfo Function
+    href: certfreeauthenticodetimestamperinfo-function.md
+  - name: CertTimestampAuthenticodeLicense Function
+    href: certtimestampauthenticodelicense-function.md
+  - name: CertVerifyAuthenticodeLicense Function
+    href: certverifyauthenticodelicense-function.md
+  - name: AXL_AUTHENTICODE_SIGNER_INFO Structure
+    href: axl-authenticode-signer-info-structure.md
+  - name: AXL_AUTHENTICODE_TIMESTAMPER_INFO Structure
+    href: axl-authenticode-timestamper-info-structure.md

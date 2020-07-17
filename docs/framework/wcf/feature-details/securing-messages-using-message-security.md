@@ -7,13 +7,13 @@ ms.assetid: a17ebe67-836b-4c52-9a81-2c3d58e225ee
 This section discusses WCF message security when using <xref:System.ServiceModel.NetMsmqBinding>.  
   
 > [!NOTE]
->  Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
+> Before reading through this topic, it is recommended that you read [Security Concepts](security-concepts.md).  
   
  The following illustration provides a conceptual model of queued communication using WCF. This illustration and terminology are used to explain  
   
  transport security concepts.  
   
- ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
+ ![Queued Application Diagram](media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
  When sending queued messages using WCF, the WCF message is attached as a body of the Message Queuing (MSMQ) message. While transport security secures the entire MSMQ message, message (or SOAP) security only secures the body of the MSMQ message.  
   
@@ -35,7 +35,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
   
  Given the disconnected nature of queues, the client and the service may not be online at the same time. As such, the client and service have to exchange certificates out-of-band. In particular, the client, by virtue of holding the service's certificate (which can be chained to a certification authority) in its trusted store, must trust that it is communicating with the correct service. For authenticating the client, the service uses the X.509 certificate attached with the message to matches it with the certificate in its store to verify the authenticity of the client. Again, the certificate must be chained to a certification authority.  
   
- On a computer running Windows, certificates are held in several kinds of stores. For more information about the different stores, see [Certificate stores](https://go.microsoft.com/fwlink/?LinkId=87787).  
+ On a computer running Windows, certificates are held in several kinds of stores. For more information about the different stores, see [Certificate stores](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757138(v=ws.10)).  
   
 ### Windows  
  Windows message credential type uses the Kerberos protocol.  
@@ -46,7 +46,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
   
  Note that when using this credential type, the service must be running under the SERVICE account.  
   
- The Kerberos protocol is used by default when choosing message credential. For more information, see [Exploring Kerberos, the Protocol for Distributed Security in Windows 2000](https://go.microsoft.com/fwlink/?LinkId=87790).  
+ The Kerberos protocol is used by default when choosing message credential.
   
 ### Username Password  
  Using this property, the client can authenticate to the server using a username password in the security header of the message.  
@@ -57,8 +57,9 @@ This section discusses WCF message security when using <xref:System.ServiceModel
 ## Using Transport and Message Security  
  When using both transport security and message security, the certificate used to secure the message both at the transport and the SOAP message level must be the same.  
   
-## See Also  
- [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
- [Message Security over Message Queuing](../../../../docs/framework/wcf/samples/message-security-over-message-queuing.md)  
- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)  
- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+
+- [Securing Messages Using Transport Security](securing-messages-using-transport-security.md)
+- [Message Security over Message Queuing](../samples/message-security-over-message-queuing.md)
+- [Security Concepts](security-concepts.md)
+- [Securing Services and Clients](securing-services-and-clients.md)

@@ -6,16 +6,15 @@ helpviewer_keywords:
   - "global static functions [.NET Framework hosting], version 4"
   - ".NET Framework 4, hosting global static functions"
 ms.assetid: 07a1a6e1-db73-4555-81df-bc4054c51492
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework 4 Hosting Global Static Functions
-The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md).  
+The .NET Framework 4 introduces one new exported method in MSCorEE.dll: [CLRCreateIntstance](clrcreateinstance-function.md).  
   
 ## In This Section  
- [CLRCreateInstance Function](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md)  
- Provides one of three interfaces: [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md), [ICLRMetaHostPolicy](../../../../docs/framework/unmanaged-api/hosting/iclrmetahostpolicy-interface.md), or [ICLRDebugging](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-interface.md).  
+ [CLRCreateInstance Function](clrcreateinstance-function.md)  
+ Provides one of three interfaces: [ICLRMetaHost](iclrmetahost-interface.md), [ICLRMetaHostPolicy](iclrmetahostpolicy-interface.md), or [ICLRDebugging](../debugging/iclrdebugging-interface.md).  
   
-## See Also  
- [Hosting Global Static Functions](../../../../docs/framework/unmanaged-api/hosting/hosting-global-static-functions.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+
+- [Hosting Global Static Functions](hosting-global-static-functions.md)
+- [Hosting](index.md)

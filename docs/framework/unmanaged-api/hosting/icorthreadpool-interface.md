@@ -14,33 +14,31 @@ helpviewer_keywords:
 ms.assetid: 18485a27-cae3-4c6a-baa8-f7df601122d5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool Interface
 Provides methods for accessing the thread pool.  
   
 > [!NOTE]
->  This interface is reserved for internal use only.  
+> This interface is reserved for internal use only.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[CorRegisterWaitForSingleObject Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corregisterwaitforsingleobject-method.md)|Reserved for internal use only.|  
-|[CorUnregisterWait Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corunregisterwait-method.md)|Reserved for internal use only.|  
-|[CorQueueUserWorkItem Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corqueueuserworkitem-method.md)|Reserved for internal use only.|  
-|[CorCreateTimer Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corcreatetimer-method.md)|Reserved for internal use only.|  
-|[CorChangeTimer Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corchangetimer-method.md)|Reserved for internal use only.|  
-|[CorDeleteTimer Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-cordeletetimer-method.md)|Reserved for internal use only.|  
-|[CorBindIoCompletionCallback Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corbindiocompletioncallback-method.md)|Reserved for internal use only.|  
-|[CorCallOrQueueUserWorkItem Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corcallorqueueuserworkitem-method.md)|Reserved for internal use only.|  
-|[CorSetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corsetmaxthreads-method.md)|Reserved for internal use only.|  
-|[CorGetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corgetmaxthreads-method.md)|Reserved for internal use only.|  
-|[CorGetAvailableThreads Method](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-corgetavailablethreads-method.md)|Reserved for internal use only.|  
+|[CorRegisterWaitForSingleObject Method](icorthreadpool-corregisterwaitforsingleobject-method.md)|Reserved for internal use only.|  
+|[CorUnregisterWait Method](icorthreadpool-corunregisterwait-method.md)|Reserved for internal use only.|  
+|[CorQueueUserWorkItem Method](icorthreadpool-corqueueuserworkitem-method.md)|Reserved for internal use only.|  
+|[CorCreateTimer Method](icorthreadpool-corcreatetimer-method.md)|Reserved for internal use only.|  
+|[CorChangeTimer Method](icorthreadpool-corchangetimer-method.md)|Reserved for internal use only.|  
+|[CorDeleteTimer Method](icorthreadpool-cordeletetimer-method.md)|Reserved for internal use only.|  
+|[CorBindIoCompletionCallback Method](icorthreadpool-corbindiocompletioncallback-method.md)|Reserved for internal use only.|  
+|[CorCallOrQueueUserWorkItem Method](icorthreadpool-corcallorqueueuserworkitem-method.md)|Reserved for internal use only.|  
+|[CorSetMaxThreads Method](icorthreadpool-corsetmaxthreads-method.md)|Reserved for internal use only.|  
+|[CorGetMaxThreads Method](icorthreadpool-corgetmaxthreads-method.md)|Reserved for internal use only.|  
+|[CorGetAvailableThreads Method](icorthreadpool-corgetavailablethreads-method.md)|Reserved for internal use only.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -48,5 +46,6 @@ Provides methods for accessing the thread pool.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [Hosting Interfaces](hosting-interfaces.md)

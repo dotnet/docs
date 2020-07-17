@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3a8074f1-facc-4a3f-bb9b-d6574fc2fc74
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetParameters Method
 Gets the parameters for this method. The parameters are returned in the order in which they are defined within the method's signature.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParameters(  
     [in]  ULONG32  cParams,  
     [out] ULONG32  *pcParams,  
@@ -31,7 +29,7 @@ HRESULT GetParameters(
         length_is(*pcParams)] ISymUnmanagedVariable*  params[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cParams`  
  [in] The size of the `params` array.  
   
@@ -47,5 +45,6 @@ HRESULT GetParameters(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md)
+## See also
+
+- [ISymUnmanagedMethod Interface](isymunmanagedmethod-interface.md)

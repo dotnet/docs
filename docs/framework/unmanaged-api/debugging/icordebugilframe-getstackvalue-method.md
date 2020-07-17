@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 397a4d72-6a87-4f0b-8813-af31af91d68f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::GetStackValue Method
 This method has not been implemented.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackValue (  
     [in] DWORD                  dwIndex,  
     [out] ICorDebugValue        **ppValue  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d4cef11f-a8ca-49bc-a1b8-6631f9e28f3e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StackTrace_SimpleContext Structure
 Provides a simple context that can be used in place of a full `CONTEXT` structure.  
   
 ## Syntax  
   
-```  
+```cpp  
 struct StackTrace_SimpleContext  
 {  
     ULONG64 StackOffset;       // ESP on x86  
@@ -44,12 +42,13 @@ struct StackTrace_SimpleContext
  Because stack trace functions typically need to return only the address, frame offset, and stack address, you can optionally use the `SimpleContext` structure instead of a large `CONTEXT` structure.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** SOS_Stacktrace.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

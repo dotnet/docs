@@ -1,0 +1,38 @@
+﻿<Window x:Class="IntroToStylingAndTemplating.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntroToStylingAndTemplating"
+        mc:Ignorable="d"
+        Title="Window3" SizeToContent="WidthAndHeight" MinWidth="250">
+    <Window.Resources>
+        <!--<SnippetControlTemplate>-->
+        <ControlTemplate x:Key="roundbutton" TargetType="Button">
+            <Grid>
+                <Ellipse Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+        </ControlTemplate>
+        <!--</SnippetControlTemplate>-->
+    </Window.Resources>
+    <Grid>
+        <!--<SnippetStyledButton>-->
+        <StackPanel Margin="10">
+            <Label>Unstyled Button</Label>
+            <Button>Button 1</Button>
+            <Label>Rounded Button</Label>
+            <Button Template="{StaticResource roundbutton}">Button 2</Button>
+        </StackPanel>
+        <!--</SnippetStyledButton>-->
+
+        <!--<SnippetStyledButtonSize>-->
+        <StackPanel Margin="10">
+            <Label>Unstyled Button</Label>
+            <Button>Button 1</Button>
+            <Label>Rounded Button</Label>
+            <Button Template="{StaticResource roundbutton}" Width="65" Height="65">Button 2</Button>
+        </StackPanel>
+        <!--</SnippetStyledButtonSize>-->
+    </Grid>
+</Window>

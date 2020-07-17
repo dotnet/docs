@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 7d90dcee-0206-4540-807b-06982fe65f1a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataFilter::IsTokenMarked Method
 Gets a value indicating whether the specified metadata token has been marked as processed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsTokenMarked (  
-    [in]  mdToken  tk,   
+    [in]  mdToken  tk,
     [out] BOOL     *pIsMarked  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token to examine for a processing mark.  
   
@@ -38,7 +36,7 @@ HRESULT IsTokenMarked (
  [out] A value that is `true` if `tk` has been processed; otherwise `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,5 +44,6 @@ HRESULT IsTokenMarked (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataFilter Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-interface.md)
+## See also
+
+- [IMetaDataFilter Interface](imetadatafilter-interface.md)

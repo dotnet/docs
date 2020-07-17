@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 5c8f11b4-35d3-4c39-9bbd-58b896ba5ba6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDebuggerThreadControl::StartBlockingForDebugger Method
 Notifies the host that the debugging services are about to start blocking all threads.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT StartBlockingForDebugger (  
     [in] DWORD dwUnused  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwUnused`  
  [in] Reserved for future use.  
   
@@ -37,7 +35,7 @@ HRESULT StartBlockingForDebugger (
  The `StartBlockingForDebugger` method could be called on a runtime thread.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -45,5 +43,6 @@ HRESULT StartBlockingForDebugger (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IDebuggerThreadControl Interface](../../../../docs/framework/unmanaged-api/hosting/idebuggerthreadcontrol-interface.md)
+## See also
+
+- [IDebuggerThreadControl Interface](idebuggerthreadcontrol-interface.md)

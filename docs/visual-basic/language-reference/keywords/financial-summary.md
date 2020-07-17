@@ -1,5 +1,5 @@
 ---
-title: "Financial Summary (Visual Basic)"
+title: "Financial Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "financial functions"
@@ -19,6 +19,7 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Calculate payments.|<xref:Microsoft.VisualBasic.Financial.IPmt%2A>, <xref:Microsoft.VisualBasic.Financial.Pmt%2A>, <xref:Microsoft.VisualBasic.Financial.PPmt%2A>|  
 |Calculate present value.|<xref:Microsoft.VisualBasic.Financial.NPV%2A>, <xref:Microsoft.VisualBasic.Financial.PV%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)

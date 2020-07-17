@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
 ---
 # Batching Messages in a Transaction
-Queued applications use transactions to ensure correctness and reliable delivery of messages. Transactions, however, are expensive operations and can dramatically reduce message throughput. One way to improve message throughput is to have an application read and process multiple messages within a single transaction. The trade-off is between performance and recovery: as the number of messages in a batch increases, so does the amount of recovery work that required if transactions are rolled back. It is important to note the difference between batching messages in a transaction and sessions. A *session* is a grouping of related messages that are processed by a single application and committed as a single unit. Sessions are generally used when a group of related messages must be processed together. An example of this is an online shopping Web site. *Batches* are used to process multiple, unrelated messages in a way that increases message throughput. For more information about sessions, see [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md). Messages in a batch are also processed by a single application and committed as a single unit, but there may be no relationship between the messages in the batch. Batching messages in a transaction is an optimization that does not change how the application runs.  
+Queued applications use transactions to ensure correctness and reliable delivery of messages. Transactions, however, are expensive operations and can dramatically reduce message throughput. One way to improve message throughput is to have an application read and process multiple messages within a single transaction. The trade-off is between performance and recovery: as the number of messages in a batch increases, so does the amount of recovery work that required if transactions are rolled back. It is important to note the difference between batching messages in a transaction and sessions. A *session* is a grouping of related messages that are processed by a single application and committed as a single unit. Sessions are generally used when a group of related messages must be processed together. An example of this is an online shopping Web site. *Batches* are used to process multiple, unrelated messages in a way that increases message throughput. For more information about sessions, see [Grouping Queued Messages in a Session](grouping-queued-messages-in-a-session.md). Messages in a batch are also processed by a single application and committed as a single unit, but there may be no relationship between the messages in the batch. Batching messages in a transaction is an optimization that does not change how the application runs.  
   
 ## Entering Batching Mode  
  The <xref:System.ServiceModel.Description.TransactedBatchingBehavior> endpoint behavior controls batching. Adding this endpoint behavior to a service endpoint tells Windows Communication Foundation (WCF) to batch messages in a transaction. Not all messages require a transaction, so only messages that require a transaction are placed in a batch, and only messages sent from operations marked with `TransactionScopeRequired` = `true` and `TransactionAutoComplete` = `true` are considered for a batch. If all operations on the service contract are marked with `TransactionScopeRequired` = `false` and `TransactionAutoComplete` = `false`, then batching mode is never entered.  
@@ -14,22 +14,22 @@ Queued applications use transactions to ensure correctness and reliable delivery
 ## Committing a Transaction  
  A batched transaction is committed based on the following:  
   
--   `MaxBatchSize`. A property of the <xref:System.ServiceModel.Description.TransactedBatchingBehavior> behavior. This property determines the maximum number of messages that are placed into a batch. When this number is reached, the batch is committed. This is value is not a strict limit, it is possible to commit a batch before receiving this number of messages.  
+- `MaxBatchSize`. A property of the <xref:System.ServiceModel.Description.TransactedBatchingBehavior> behavior. This property determines the maximum number of messages that are placed into a batch. When this number is reached, the batch is committed. This is value is not a strict limit, it is possible to commit a batch before receiving this number of messages.  
   
--   `Transaction Timeout`. After 80 percent of the transaction's time-out has elapsed, the batch is committed and a new batch is created. This means that if 20 percent or less of the time given for a transaction to complete remains, the batch is committed.  
+- `Transaction Timeout`. After 80 percent of the transaction's time-out has elapsed, the batch is committed and a new batch is created. This means that if 20 percent or less of the time given for a transaction to complete remains, the batch is committed.  
   
--   `TransactionScopeRequired`. When processing a batch of messages, if WCF finds one that has `TransactionScopeRequired` = `false`, it commits the batch and reopens a new batch on receipt of the first message with `TransactionScopeRequired` = `true` and `TransactionAutoComplete` = `true`.  
+- `TransactionScopeRequired`. When processing a batch of messages, if WCF finds one that has `TransactionScopeRequired` = `false`, it commits the batch and reopens a new batch on receipt of the first message with `TransactionScopeRequired` = `true` and `TransactionAutoComplete` = `true`.  
   
--   If no more messages exist in the queue, then the current batch is committed, even if the `MaxBatchSize` has not been reached or 80 percent of the transaction's time-out has not elapsed.  
+- If no more messages exist in the queue, then the current batch is committed, even if the `MaxBatchSize` has not been reached or 80 percent of the transaction's time-out has not elapsed.  
   
 ## Leaving Batching Mode  
  If a message in a batch causes the transaction to abort, the following steps occur:  
   
-1.  The entire batch of messages is rolled back.  
+1. The entire batch of messages is rolled back.  
   
-2.  Messages are read one at a time until the number of messages read exceeds twice the maximum batch size.  
+2. Messages are read one at a time until the number of messages read exceeds twice the maximum batch size.  
   
-3.  Batch mode is re-entered.  
+3. Batch mode is re-entered.  
   
 ## Choosing the Batch Size  
  The size of a batch is application-dependent. The empirical method is the best way to arrive at an optimal batch size for the application. It is important to remember when choosing a batch size to choose the size according to your application's actual deployment model. For example, when deploying the application, if you need an SQL server on a remote machine and a transaction that spans the queue and the SQL server, then the batch size is best determined by running this exact configuration.  
@@ -61,7 +61,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 {
      ServiceEndpoint sep = ServiceHost.AddServiceEndpoint(typeof(IOrderProcessor), new NetMsmqBinding(), "net.msmq://localhost/private/ServiceModelSamplesTransacted");
      sep.Behaviors.Add(new TransactedBatchingBehavior(100));
-     
+
      // Open the ServiceHost to create listeners and start listening for messages.
     serviceHost.Open();
   
@@ -76,6 +76,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 }  
 ```  
   
-## See Also  
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
+## See also
+
+- [Queues Overview](queues-overview.md)
+- [Queuing in WCF](queuing-in-wcf.md)

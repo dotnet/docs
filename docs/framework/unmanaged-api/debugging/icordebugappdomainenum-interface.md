@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugAppDomainEnum Interface1"
+title: "ICorDebugAppDomainEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugAppDomainEnum"
@@ -14,25 +14,24 @@ helpviewer_keywords:
 ms.assetid: e9226e6e-ca2c-428e-bb38-0c099210f507
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugAppDomainEnum Interface1
+# ICorDebugAppDomainEnum Interface
+
 Provides the `Next` method, which returns a specified number of `ICorDebugAppDomainEnum` values starting at the next location in the enumeration. This interface is a subclass of "ICorDebugEnum".  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomainenum-next-method.md)|Gets the specified number of application domains from the collection, starting at the current cursor position.|  
+|[Next Method](icordebugappdomainenum-next-method.md)|Gets the specified number of application domains from the collection, starting at the current cursor position.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -40,6 +39,7 @@ Provides the `Next` method, which returns a specified number of `ICorDebugAppDom
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [ICorDebug Interface](icordebug-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

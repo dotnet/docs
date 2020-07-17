@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::VirtualAlloc Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualAlloc` reserves or commits a region of pages in the virtual address space of the calling process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT VirtualAlloc (  
     [in]  void*   pAddress,  
     [in]  SIZE_T  dwSize,  
@@ -34,7 +32,7 @@ HRESULT VirtualAlloc (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [in] A pointer to the starting address of the region to allocate.  
   
@@ -48,7 +46,7 @@ HRESULT VirtualAlloc (
  [in] Memory protection for the region of pages to be allocated.  
   
  `dwCriticalLevel`  
- [in] An [EMemoryCriticalLevel](../../../../docs/framework/unmanaged-api/hosting/ememorycriticallevel-enumeration.md) value that indicates the impact of an allocation failure.  
+ [in] An [EMemoryCriticalLevel](ememorycriticallevel-enumeration.md) value that indicates the impact of an allocation failure.  
   
  `ppMem`  
  [out] Pointer to the starting address of the allocated memory, or null if the request could not be satisfied.  
@@ -71,7 +69,7 @@ HRESULT VirtualAlloc (
  The Win32 `VirtualAlloc` function does not have a `ppMem` parameter, and returns the pointer to the allocated memory instead. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -79,5 +77,6 @@ HRESULT VirtualAlloc (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+## See also
+
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 99f693f3-d3b9-4fd8-9d09-b8efd03f7b67
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetIP Method
 Gets the native code offset location to which the instruction pointer is currently set.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIP (  
     [out] ULONG32           *pnOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] A pointer to the offset location in the native code.  
   
@@ -37,7 +35,7 @@ HRESULT GetIP (
  If the stack frame that is represented by this "ICorDebugNativeFrame" is active, the offset is the address of the next instruction to be executed. If this stack frame is not active, the offset is the address of the next instruction to be executed when the stack frame is reactivated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -45,5 +43,4 @@ HRESULT GetIP (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also

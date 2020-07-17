@@ -1,5 +1,6 @@
 ---
 title: "illegalPrepareConstrainedRegion MDA"
+description: Review the illegalPrepareConstrainedRegion managed debugging assistant, which is invoked if a PrepareConstrainedRegions call isn't followed by a try statement.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "PrepareConstrainedRegions method"
@@ -8,8 +9,6 @@ helpviewer_keywords:
   - "IllegalPrepareConstrainedRegions MDA"
   - "MDAs (managed debugging assistants), illegal PrepareConstrainedRegions"
 ms.assetid: 2f9b5031-f910-4e01-a196-f89eab313eaf
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # illegalPrepareConstrainedRegion MDA
 The `illegalPrepareConstrainedRegion` managed debugging assistant (MDA) is activated when a <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A?displayProperty=nameWithType> method call does not immediately precede the `try` statement of the exception handler. This restriction is at the MSIL level, so it is permissible to have non-code-generating source between the call and the `try`, such as comments.  
@@ -58,8 +57,9 @@ void MethodWithInvalidPCR()
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

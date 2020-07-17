@@ -21,11 +21,8 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides date and ti
 |`SYSUTCDATE()`|Produces the datetime value in UTC (Coordinated Universal Time or Greenwich Mean Time) format.<br /><br /> **Return Value**<br /><br /> The `DateTime` value with precision = 7 in UTC format.<br /><br /> **Example**<br /><br /> `SqlServer.SYSUTCDATE()`|  
 |`SYSDATETIMEOFFSET()`|Returns a `DateTimeOffset` with a precision of 7.<br /><br /> **Return Value**<br /><br /> A `DateTimeOffset` value with precision of 7 in UTC format.<br /><br /> **Example**<br /><br /> `SqlServer.SYSDATETIMEOFFSET()`|  
   
- For more information about the date and time functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:  
+ For more information about the date and time functions that SqlClient supports, see [Date and Time Data Types and Functions (Transact-SQL)](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql).
   
-|SQL Server 2000|SQL Server 2005|SQL Server 2008|  
-|---------------------|---------------------|---------------------|  
-|[Date and Time Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115908)|[Date and Time Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115909)|[Date and Time Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=98360)|  
-  
-## See Also  
- [SqlClient for Entity Framework Functions](../../../../../docs/framework/data/adonet/ef/sqlclient-for-ef-functions.md)
+## See also
+
+- [SqlClient for Entity Framework Functions](sqlclient-for-ef-functions.md)

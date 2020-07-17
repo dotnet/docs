@@ -1,6 +1,7 @@
 ---
 title: "How to: Strip Invalid Characters from a String"
-ms.date: "03/30/2017"
+description: Read an example that shows how to strip potentially harmful characters from a string by using the static Regex.Replace method.
+ms.date: "06/30/2020"
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -16,12 +17,12 @@ helpviewer_keywords:
   - "Replace method"
   - "validating user input"
 ms.assetid: b4319c8a-9032-4129-a9d5-6f6fc28e7f32
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Strip Invalid Characters from a String
 The following example uses the static <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method to strip invalid characters from a string.  
-  
+
+[!INCLUDE [regex](../../../includes/regex.md)]
+
 ## Example  
  You can use the `CleanInput` method defined in this example to strip potentially harmful characters that have been entered into a text field that accepts user input. In this case, `CleanInput` strips out all nonalphanumeric characters except periods (.), at symbols (@), and hyphens (-), and returns the remaining string. However, you can modify the regular expression pattern so that it strips out any characters that should not be included in an input string.  
   
@@ -32,4 +33,4 @@ The following example uses the static <xref:System.Text.RegularExpressions.Regex
   
 ## See also
 
-- [.NET Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)
+- [.NET Regular Expressions](regular-expressions.md)

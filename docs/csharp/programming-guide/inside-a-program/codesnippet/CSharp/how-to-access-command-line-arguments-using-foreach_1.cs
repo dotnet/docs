@@ -1,1 +1,0 @@
-// arguments: John Paul Mary

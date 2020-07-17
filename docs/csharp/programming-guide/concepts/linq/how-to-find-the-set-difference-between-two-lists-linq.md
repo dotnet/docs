@@ -1,20 +1,20 @@
 ---
-title: "How to: Find the Set Difference Between Two Lists (LINQ) (C#)"
+title: "How to find the set difference between two lists (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 8e8945f0-4aba-439d-8d5d-c8d1eeef4e71
 ---
-# How to: Find the Set Difference Between Two Lists (LINQ) (C#)
+# How to find the set difference between two lists (LINQ) (C#)
 This example shows how to use LINQ to compare two lists of strings and output those lines that are in names1.txt but not in names2.txt.  
   
 ### To create the data files  
   
-1.  Copy names1.txt and names2.txt to your solution folder as shown in [How to: Combine and Compare String Collections (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md).  
+1. Copy names1.txt and names2.txt to your solution folder as shown in [How to combine and compare string collections (LINQ) (C#)](./how-to-combine-and-compare-string-collections-linq.md).  
   
 ## Example  
   
 ```csharp  
 class CompareLists  
-{          
+{
     static void Main()  
     {  
         // Create the IEnumerable data sources.  
@@ -49,8 +49,8 @@ class CompareLists
  Some types of query operations in C#, such as <xref:System.Linq.Enumerable.Except%2A>, <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Union%2A>, and <xref:System.Linq.Enumerable.Concat%2A>, can only be expressed in method-based syntax.  
   
 ## Compiling the Code  
- Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
+ Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
-## See Also
+## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)

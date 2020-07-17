@@ -1,5 +1,5 @@
 ---
-title: "Assignment Operators (Visual Basic)"
+title: "Assignment Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "assignment operators [Visual Basic], Visual Basic"
@@ -11,27 +11,28 @@ ms.assetid: 43b7e40c-b7af-45f6-b100-198a90f2561e
 # Assignment Operators (Visual Basic)
 The following are the assignment operators defined in Visual Basic.  
   
- [= Operator](../../../visual-basic/language-reference/operators/assignment-operator.md)  
+ [= Operator](assignment-operator.md)  
   
- [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)  
+ [^= Operator](exponentiation-assignment-operator.md)  
   
- [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)  
+ [*= Operator](multiplication-assignment-operator.md)  
   
- [/= Operator](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
+ [/= Operator](floating-point-division-assignment-operator.md)  
   
- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
+ [\\= Operator](integer-division-assignment-operator.md)  
   
- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
+ [+= Operator](addition-assignment-operator.md)  
   
- [-= Operator](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
+ [-= Operator](subtraction-assignment-operator.md)  
   
- [<\<= Operator](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)  
+ [<\<= Operator](left-shift-assignment-operator.md)  
   
- [>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)  
+ [>>= Operator](right-shift-assignment-operator.md)  
   
- [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
+ [&= Operator](and-assignment-operator.md)  
   
-## See Also  
- [Operator Precedence in Visual Basic](../../../visual-basic/language-reference/operators/operator-precedence.md)  
- [Operators Listed by Functionality](../../../visual-basic/language-reference/operators/operators-listed-by-functionality.md)  
- [Statements](../../../visual-basic/language-reference/statements/index.md)
+## See also
+
+- [Operator Precedence in Visual Basic](operator-precedence.md)
+- [Operators Listed by Functionality](operators-listed-by-functionality.md)
+- [Statements](../statements/index.md)

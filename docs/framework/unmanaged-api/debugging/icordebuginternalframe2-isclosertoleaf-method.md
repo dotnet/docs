@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: c1d3d1eb-8370-4f25-8297-3bd262b4740a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame2::IsCloserToLeaf Method
 Checks whether the `this` internal frame is closer to the leaf than the specified ICorDebugFrame object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,  
                        [out] BOOL * pIsCloser);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pFrameToCompare`  
  [in] A pointer to the comparison `ICorDebugFrame` object.  
   
@@ -48,7 +46,7 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
  `IsCloserToLeaf` can be used to implement a policy for interleaving internal frames with other frames on the stack.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -56,7 +54,8 @@ HRESULT IsCloserToLeaf([in] ICorDebugFrame * pFrameToCompare,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugInternalFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [ICorDebugInternalFrame2 Interface](icordebuginternalframe2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

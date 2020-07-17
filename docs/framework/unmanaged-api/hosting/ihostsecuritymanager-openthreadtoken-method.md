@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: d5999052-8bf0-4a9e-8621-da6284406b18
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::OpenThreadToken Method
 Opens the discretionary access token associated with the currently executing thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenThreadToken (  
-    [in]  DWORD    dwDesiredAccess,   
-    [in]  BOOL     bOpenAsSelf,   
+    [in]  DWORD    dwDesiredAccess,
+    [in]  BOOL     bOpenAsSelf,
     [out] HANDLE   *phThreadToken  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwDesiredAccess`  
  [in] A mask of access values that specify the requested types of access to the thread token. These values are defined in the Win32 `OpenThreadToken` function. The requested access types are reconciled against the token's discretionary access control list (DACL) to determine which types of access to grant or deny.  
   
@@ -58,7 +56,7 @@ HRESULT OpenThreadToken (
  The `HANDLE` type is not COM-compliant, that is, its size is specific to the operating system, and it requires custom marshaling. Thus, this token is for use only within the process, between the CLR and the host.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -66,6 +64,7 @@ HRESULT OpenThreadToken (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)  
- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
+## See also
+
+- [IHostSecurityContext Interface](ihostsecuritycontext-interface.md)
+- [IHostSecurityManager Interface](ihostsecuritymanager-interface.md)

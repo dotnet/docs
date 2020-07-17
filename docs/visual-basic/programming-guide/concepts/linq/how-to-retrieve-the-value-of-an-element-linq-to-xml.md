@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve the Value of an Element (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve the Value of an Element (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 76b9b2a5-b3ba-49da-ba74-82100e1bd21c
 ---
@@ -61,7 +61,7 @@ Value of e:abcde
 ```  
   
 ## Example  
- Sometimes you try to retrieve the value of an element even though you are not sure it exists. In this case, when you assign the casted element to a nullable type (either `string` or one of the nullable types in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]), if the element does not exist the assigned variable is just set to `Nothing`. The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.  
+ Sometimes you try to retrieve the value of an element even though you are not sure it exists. In this case, when you assign the casted element to a nullable type (either `string` or one of the nullable value types in the .NET Framework), if the element does not exist the assigned variable is just set to `Nothing`. The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.  
   
 ```vb  
 Dim root As XElement = <Root>  
@@ -129,7 +129,7 @@ Console.WriteLine("v4:{0}", IIf(Not (v4.HasValue), "element does not exist", v4)
   
  This code produces the following output:  
   
-```  
+```console  
 c1:child 1 content  
 c2:2  
 c3:element does not exist  
@@ -143,5 +143,6 @@ v4:element does not exist
   
  In general, you can write simpler code when using casting to retrieve the contents of elements and attributes.  
   
-## See Also  
- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## See also
+
+- [LINQ to XML Axes (Visual Basic)](linq-to-xml-axes.md)

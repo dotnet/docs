@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: a7732bfc-689a-4926-88fd-4f81e6f9ed78
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeInfo::GetProcAddress Method
 Gets the address of a specified function that was exported from the common language runtime (CLR) associated with this interface.  
   
- This method supersedes the [GetRealProcAddress](../../../../docs/framework/unmanaged-api/hosting/getrealprocaddress-function.md) function.  
+ This method supersedes the [GetRealProcAddress](getrealprocaddress-function.md) function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetProcAddress(  
      [in]  LPCSTR pszProcName,  
      [out, retval] LPVOID *ppProc);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszProcName`  
  [in] The name of the exported function.  
   
@@ -51,7 +49,7 @@ HRESULT GetProcAddress(
  This method causes the CLR to be loaded but not initialized.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -59,7 +57,8 @@ HRESULT GetProcAddress(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+
+- [ICLRRuntimeInfo Interface](iclrruntimeinfo-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

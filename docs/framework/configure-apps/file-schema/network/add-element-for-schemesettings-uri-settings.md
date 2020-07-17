@@ -1,16 +1,16 @@
 ---
-title: "&lt;add&gt; Element for schemeSettings (Uri Settings)"
+title: "<add> Element for schemeSettings (Uri Settings)"
 ms.date: "03/30/2017"
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 ---
-# &lt;add&gt; Element for schemeSettings (Uri Settings)
+# \<add> Element for schemeSettings (Uri Settings)
 Adds a scheme setting for a scheme name.  
-  
- \<configuration>  
-\<uri>  
-\<schemeSettings>  
-\<add>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<schemeSettings>**](schemesettings-element-uri-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+
 ## Syntax  
   
 ```xml  
@@ -42,7 +42,7 @@ Adds a scheme setting for a scheme name.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<schemeSettings> Element (Uri Settings)](../../../../../docs/framework/configure-apps/file-schema/network/schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
+|[\<schemeSettings> Element (Uri Settings)](schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
 ## Remarks  
  By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
@@ -75,11 +75,12 @@ Adds a scheme setting for a scheme name.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>  
-- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection?displayProperty=nameWithType>  
-- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>  
-- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>  
-- <xref:System.Uri?displayProperty=nameWithType>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Configuration.SchemeSettingElement?displayProperty=nameWithType>
+- <xref:System.Configuration.SchemeSettingElementCollection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection?displayProperty=nameWithType>
+- <xref:System.Configuration.UriSection.SchemeSettings%2A?displayProperty=nameWithType>
+- <xref:System.GenericUriParserOptions?displayProperty=nameWithType>
+- <xref:System.Uri?displayProperty=nameWithType>
+- [Network Settings Schema](index.md)

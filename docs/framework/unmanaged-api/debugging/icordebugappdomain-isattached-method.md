@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: af0c67c7-f53e-47c9-b84b-be50bd04903e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::IsAttached Method
 Gets a value that indicates whether the debugger is attached to the application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsAttached (  
     [out] BOOL  *pbAttached  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbAttached`  
  [out] `true` if the debugger is attached to the application domain; otherwise, `false`.  
   
@@ -37,7 +35,7 @@ HRESULT IsAttached (
  The ICorDebugController methods cannot be used until the debugger attaches to the application domain.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 331ed465-a195-4359-8584-b82c6098b29b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetCurrentException Method
 Gets an interface pointer to an ICorDebugValue object that represents an exception that is currently being thrown by managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentException (  
     [out] ICorDebugValue **ppExceptionObject  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppExceptionObject`  
  [out] A pointer to the address of an `ICorDebugValue` object that represents the exception that is currently being thrown by managed code.  
   
@@ -41,7 +39,7 @@ HRESULT GetCurrentException (
  The exception object and type may change throughout the life of the exception. For example, after an exception of type x is thrown, the common language runtime (CLR) may run out of memory and promote it to an out-of-memory exception.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

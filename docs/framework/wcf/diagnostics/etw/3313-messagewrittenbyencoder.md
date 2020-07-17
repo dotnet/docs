@@ -14,7 +14,7 @@ ms.assetid: abdb7db5-373e-4862-b53d-befbb0949e32
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
- This event is emitted when the message was written by encorder.  
+ This event is emitted when the message was written by the encoder.  
   
 ## Message  
  A message with size '%1' bytes was written by the encoder.  

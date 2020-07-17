@@ -16,23 +16,21 @@ helpviewer_keywords:
 ms.assetid: dc1e2235-e721-4cb2-a0b8-6b0c030d7bab
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # DestroyICeeFileGen Function
-Destroys an [ICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/iceefilegen-class.md) object.  
+Destroys an [ICeeFileGen](iceefilegen-class.md) object.  
   
- This function has been deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)].  
+ This function has been deprecated in the .NET Framework 4.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DestroyICeeFileGen (  
     [in] ICeeFileGen  **ceeFileGen  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ceeFileGen`  
  [in] The `ICeeFileGen` object to destroy.  
   
@@ -40,10 +38,10 @@ HRESULT DestroyICeeFileGen (
  This method returns standard COM error codes.  
   
 ## Remarks  
- `DestroyICeeFileGen` destroys the `ICeeFileGen` object created by the [CreateICeeFileGen](../../../../docs/framework/unmanaged-api/hosting/createiceefilegen-function.md) function.  
+ `DestroyICeeFileGen` destroys the `ICeeFileGen` object created by the [CreateICeeFileGen](createiceefilegen-function.md) function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ICeeFileGen.h  
   
@@ -51,5 +49,6 @@ HRESULT DestroyICeeFileGen (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+## See also
+
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

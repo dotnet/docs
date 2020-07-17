@@ -1,16 +1,17 @@
 ---
-title: "&lt;certificateReference&gt;"
+title: "<certificateReference>"
 ms.date: "03/30/2017"
 ms.assetid: 2ac8bc14-e9f1-48fb-b662-f5991558fbe4
 author: "BrucePerlerMS"
 ---
-# &lt;certificateReference&gt;
+# \<certificateReference>
 Specifies settings that are used to find and validate an X.509 certificate in a certificate store.  
   
- \<system.identityModel.services>  
-\<federationConfiguration>  
-\<serviceCertificate>  
-\<certificateReference>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCertificate>**](servicecertificate.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<certificateReference>**  
   
 ## Syntax  
   
@@ -18,7 +19,7 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
 <system.identityModel.services>  
   <federationConfiguration>  
     <serviceCertificate>  
-      <certificateReference   
+      <certificateReference
         storeName="AddressBook||AuthRoot||CertificateAuthority||Disallowed||My||Root||TrustedPeople||TrustedPublisher"  
         storeLocation="CurrentUser||LocalMachine"  
         x509FindType="FindByThumbprint||FindBySubjectName||FindBySubjectDistinguishedName||FindByIssuerName||FindByIssuerDistinguishedName||FindBySerialNumber||FindByTimeValid||FindByTimeNotYetValid||FindByTimeExpired||FindByTemplateName||FindByApplicationPolicy||FindByCertificatePolicy||FindByExtension||FindByKeyUsage||FindBySubjectKeyIdentifier"  
@@ -50,7 +51,7 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceCertificate>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/servicecertificate.md)|Configures the certificate that is used to encrypt and decrypt tokens.|  
+|[\<serviceCertificate>](servicecertificate.md)|Configures the certificate that is used to encrypt and decrypt tokens.|  
   
 ## Remarks  
- The `<certificateReference>` element specifies settings that are used to find and validate an X.509 certificate in a certificate store. When it is specified as the child element of the `<serviceCertficate>` element, it specifies the location and verification settings of the X.509 certificate that is used to encrypt and decrypt tokens. The `<certificateReference>` element is represented by the <xref:System.ServiceModel.Configuration.CertificateReferenceElement> class.
+ The `<certificateReference>` element specifies settings that are used to find and validate an X.509 certificate in a certificate store. When it is specified as the child element of the `<serviceCertificate>` element, it specifies the location and verification settings of the X.509 certificate that is used to encrypt and decrypt tokens. The `<certificateReference>` element is represented by the <xref:System.ServiceModel.Configuration.CertificateReferenceElement> class.

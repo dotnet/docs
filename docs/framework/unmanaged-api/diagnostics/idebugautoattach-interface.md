@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d4cc51ac-c1d6-41b9-ab8e-ef0073f13241
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IDebugAutoAttach Interface
 Defines the interface for server-invoked debugger auto attach.  
@@ -24,10 +22,11 @@ Defines the interface for server-invoked debugger auto attach.
   
 |Method|Description|  
 |------------|-----------------|  
-|[AutoAttach Method](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-autoattach-method.md)|Performs server-invoked debugger auto attach.|  
+|[AutoAttach Method](idebugautoattach-autoattach-method.md)|Performs server-invoked debugger auto attach.|  
   
 ## Requirements  
  **Header:** DbgAutoAttach.idl  
   
-## See Also  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+## See also
+
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)

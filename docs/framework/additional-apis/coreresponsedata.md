@@ -1,5 +1,6 @@
 ---
 title: "CoreResponseData Class"
+description: Understand the CoreResponseData class, which represents the parsing of the HTTP headers and the response body. It is in the System.Net namespace in .NET.
 ms.date: "01/29/2018"
 topic_type: 
   - "apiref"
@@ -23,8 +24,8 @@ internal class CoreResponseData
 ```
 
 > [!WARNING]
-> This API is internal, and it is not meant to be used directly in your code. Instead, you should use a <xref:System.Diagnostics.DiagnosticSource> to hook networking code. See [DiagnosticSource User's Guide](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
-> 
+> This API is internal, and it is not meant to be used directly in your code. Instead, you should use a <xref:System.Diagnostics.DiagnosticSource> to hook networking code. See [DiagnosticSource User's Guide](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
+>
 > Microsoft does not support the use of this class in a production application under any circumstance.
 
 ## Requirements

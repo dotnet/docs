@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 413c9044-26f8-4ecb-968c-18495ea52cd9
 ---
 # Forward-Compatible Data Contracts
-A feature of the Windows Communication Foundation (WCF) data contract system is that contracts can evolve over time in nonbreaking ways. That is, a client with an older version of a data contract can communicate with a service with a newer version of the same data contract, or a client with a newer version of a data contract can communicate with an older version of the same data contract. For more information, see [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md).  
+A feature of the Windows Communication Foundation (WCF) data contract system is that contracts can evolve over time in nonbreaking ways. That is, a client with an older version of a data contract can communicate with a service with a newer version of the same data contract, or a client with a newer version of a data contract can communicate with an older version of the same data contract. For more information, see [Best Practices: Data Contract Versioning](../best-practices-data-contract-versioning.md).  
   
  You can apply most of the versioning features on an as-needed basis when new versions of an existing data contract are created. However, one versioning feature, *round-tripping*, must be built into the type from the first version in order to work properly.  
   
@@ -35,8 +35,9 @@ A feature of the Windows Communication Foundation (WCF) data contract system is 
   
  The round-tripping feature may be turned off, either by setting `ignoreExtensionDataObject` to `true` in the <xref:System.Runtime.Serialization.DataContractSerializer> constructor or by setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.IgnoreExtensionDataObject%2A> property to `true` on the <xref:System.ServiceModel.ServiceBehaviorAttribute>. When this feature is off, the deserializer will not populate the <xref:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData%2A> property, and the serializer will not emit the contents of the property.  
   
-## See Also  
- <xref:System.Runtime.Serialization.IExtensibleDataObject>  
- <xref:System.Runtime.Serialization.ExtensionDataObject>  
- [Data Contract Versioning](../../../../docs/framework/wcf/feature-details/data-contract-versioning.md)  
- [Best Practices: Data Contract Versioning](../../../../docs/framework/wcf/best-practices-data-contract-versioning.md)
+## See also
+
+- <xref:System.Runtime.Serialization.IExtensibleDataObject>
+- <xref:System.Runtime.Serialization.ExtensionDataObject>
+- [Data Contract Versioning](data-contract-versioning.md)
+- [Best Practices: Data Contract Versioning](../best-practices-data-contract-versioning.md)

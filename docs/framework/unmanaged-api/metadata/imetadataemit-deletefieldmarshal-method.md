@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 7c75aef9-c742-4b33-a14b-56ff94b0f725
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeleteFieldMarshal Method
 Destroys the PInvoke marshaling metadata signature for the object referenced by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteFieldMarshal (  
     [in]  mdToken     tk  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] An `mdFieldDef` or `mdParamDef` token that represents the field or parameter for which to delete the marshaling metadata signature.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -42,6 +40,7 @@ HRESULT DeleteFieldMarshal (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

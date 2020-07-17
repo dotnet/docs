@@ -14,22 +14,20 @@ helpviewer_keywords:
 ms.assetid: 93232222-926e-42ac-b85d-8a6d33977672
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetHistoryFileDirectory Function
 Retrieves the path of the application history directory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHistoryFileDirectory (  
     [in]      LPWSTR      wzDir,  
     [in,out]  LPCWSTR  *pdwsize,  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wzDir`  
  [out] A buffer to hold the path to the application history directory.  
   
@@ -48,7 +46,7 @@ HRESULT GetHistoryFileDirectory (
  On successful completion, the `pdwSize` argument is set to the length of the path string.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -56,7 +54,8 @@ HRESULT GetHistoryFileDirectory (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v11plus](../../../../includes/net-current-v11plus-md.md)]  
   
-## See Also  
- [CreateHistoryReader Function](../../../../docs/framework/unmanaged-api/fusion/createhistoryreader-function.md)  
- [NukeDownloadedCache Function](../../../../docs/framework/unmanaged-api/fusion/nukedownloadedcache-function.md)  
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## See also
+
+- [CreateHistoryReader Function](createhistoryreader-function.md)
+- [NukeDownloadedCache Function](nukedownloadedcache-function.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

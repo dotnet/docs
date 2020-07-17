@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6f2db2ca-203f-4ac3-9530-208642ca385e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetIlSection Method
 Gets the section of the intermediate language code base referenced by the specified handle.  
@@ -25,18 +23,18 @@ Gets the section of the intermediate language code base referenced by the specif
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIlSection (  
     [in] HCEESECTION  *section  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `section`  
  [in] The handle to the section to get.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -44,5 +42,6 @@ HRESULT GetIlSection (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICeeGen Interface](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md)
+## See also
+
+- [ICeeGen Interface](iceegen-interface.md)

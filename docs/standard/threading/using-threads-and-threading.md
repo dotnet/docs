@@ -1,13 +1,12 @@
 ---
 title: "Using threads and threading"
+description: Learn about using threads and threading in .NET, so you can write applications to perform many operations at the same time (multithreading).
 ms.date: "08/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "threading [.NET Framework], about threading"
   - "managed threading"
 ms.assetid: 9b5ec2cd-121b-4d49-b075-222cf26f2344
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Using threads and threading
 
@@ -16,7 +15,7 @@ With .NET, you can write applications that perform multiple operations at the sa
 Applications that use multithreading are more responsive to user input because the user interface stays active as processor-intensive tasks execute on separate threads. Multithreading is also useful when you create scalable applications, because you can add threads as the workload increases.
 
 > [!NOTE]
-> If you need more control over the behavior of the application's threads, you can manage the threads yourself. However, starting with the .NET Framework 4, multithreaded programming is greatly simplified with the <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> classes, [Parallel LINQ (PLINQ)](../parallel-programming/parallel-linq-plinq.md), new concurrent collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, and a new programming model that is based on the concept of tasks rather than threads. For more information, see [Parallel Programming](../parallel-programming/index.md) and [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md).
+> If you need more control over the behavior of the application's threads, you can manage the threads yourself. However, starting with the .NET Framework 4, multithreaded programming is greatly simplified with the <xref:System.Threading.Tasks.Parallel?displayProperty=nameWithType> and <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> classes, [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md), new concurrent collection classes in the <xref:System.Collections.Concurrent?displayProperty=nameWithType> namespace, and a new programming model that is based on the concept of tasks rather than threads. For more information, see [Parallel Programming](../parallel-programming/index.md) and [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md).
 
 ## How to: Create and start a new thread
 
@@ -24,11 +23,13 @@ You create a new thread by creating a new instance of the <xref:System.Threading
 
 ## How to: Stop a thread
 
-To terminate the execution of a thread, use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md).
+To terminate the execution of a thread, use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType>. It provides a unified way to stop threads cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
 
-Beginning with the .NET Framework 4, you can use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType> to cancel a thread cooperatively. For more information, see [Canceling threads cooperatively](canceling-threads-cooperatively.md).
+Sometimes it is not possible to stop a thread cooperatively, because it runs third-party code not designed for cooperative cancellation. In this case, you might want to terminate its execution forcibly. To terminate the execution of a thread forcibly, in .NET Framework you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md). The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method is not supported in .NET Core. If you need to terminate the execution of third-party code forcibly in .NET Core, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
 
-Use the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method to make the calling thread wait for the termination of the thread on which the method is invoked.
+The <xref:System.Threading.CancellationToken?displayProperty=nameWithType> is not available before .NET Framework 4. To stop a thread in older .NET Framework versions, you should implement the cooperative cancellation manually using the thread synchronization techniques. For example, you can create the volatile boolean field `shouldStop` and use it to request the code executed by the thread to stop. For more information, see [volatile](../../csharp/language-reference/keywords/volatile.md) in C# Reference and <xref:System.Threading.Volatile?displayProperty=nameWithType>.
+
+Use the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method to make the calling thread wait for the termination of the thread being stopped.
 
 ## How to: Pause or interrupt a thread
 
@@ -48,6 +49,6 @@ The following table presents some of the <xref:System.Threading.Thread> properti
 
 ## See also
 
-- <xref:System.Threading.Thread?displayProperty=nameWithType>  
-- [Threads and Threading](threads-and-threading.md)  
-- [Parallel Programming](../parallel-programming/index.md)  
+- <xref:System.Threading.Thread?displayProperty=nameWithType>
+- [Threads and Threading](threads-and-threading.md)
+- [Parallel Programming](../parallel-programming/index.md)

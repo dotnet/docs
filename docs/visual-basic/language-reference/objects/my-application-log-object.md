@@ -1,5 +1,5 @@
 ---
-title: "My.Application.Log Object (Visual Basic)"
+title: "My.Application.Log Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Application.Log object"
@@ -11,17 +11,18 @@ Provides a property and methods to write event and exception information to the 
 ## Remarks  
  For information about the methods and properties of the `My.Application.Log` object, see <xref:Microsoft.VisualBasic.Logging.Log>.  
   
- For more information, see [Logging Information from the Application](../../../visual-basic/developing-apps/programming/log-info/index.md).  
+ For more information, see [Logging Information from the Application](../../developing-apps/programming/log-info/index.md).  
   
 > [!NOTE]
->  You can also use classes in the .NET Framework to log information from your application. For more information, see [Tracing and Instrumenting Applications](../../../framework/debug-trace-profile/tracing-and-instrumenting-applications.md).  
+> You can also use classes in the .NET Framework to log information from your application. For more information, see [Tracing and Instrumenting Applications](../../../framework/debug-trace-profile/tracing-and-instrumenting-applications.md).  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Logging>  
   
  **Class:** <xref:Microsoft.VisualBasic.Logging.Log>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
+ **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- [My.Application Object](../../../visual-basic/language-reference/objects/my-application-object.md)
+## See also
+
+- [My.Application Object](my-application-object.md)

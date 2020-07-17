@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: e58dac7b-85c3-41ca-b9aa-3a7fc9ae6680
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::LoadClass Method
 Notifies the debugger that a class has been loaded.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadClass (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugClass     *c  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain into which the class has been loaded.  
   
@@ -43,7 +41,7 @@ HRESULT LoadClass (
  The `LoadClass` callback provides an appropriate time to bind breakpoints to newly generated classes in dynamic modules.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -51,6 +49,7 @@ HRESULT LoadClass (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [UnloadClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-unloadclass-method.md)  
- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## See also
+
+- [UnloadClass Method](icordebugmanagedcallback-unloadclass-method.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

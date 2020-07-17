@@ -9,16 +9,16 @@ ms.assetid: 53928a10-e474-46d0-ab90-5f98f8d7b668
 # Distributed Application Security
 Windows Communication Foundation (WCF) security is broken into three major functional areas: transfer security, access control, and auditing. Transfer security provides integrity, confidentiality, and authentication. Transfer security is provided by one of the following: transport security, message security, or `TransportWithMessageCredential`.  
   
- For an overview of WCF message security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md). For more information about the other two pieces of WCF security, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md) and [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+ For an overview of WCF message security, see [Security Overview](security-overview.md). For more information about the other two pieces of WCF security, see [Authorization](authorization-in-wcf.md) and [Auditing](auditing-security-events.md).  
   
 ## Transfer Security Scenarios  
  Common scenarios that employ WCF transfer security include the following:  
   
--   Secure transfer using Windows. A WCF client and service are deployed in a Windows domain (or a Windows forest). The messages contain personal data, so requirements include mutual authentication of the client and service, message integrity, and message confidentiality. In addition, proof is required that a particular transaction occurred, for example, the receiver of the message should record the signature information.  
+- Secure transfer using Windows. A WCF client and service are deployed in a Windows domain (or a Windows forest). The messages contain personal data, so requirements include mutual authentication of the client and service, message integrity, and message confidentiality. In addition, proof is required that a particular transaction occurred, for example, the receiver of the message should record the signature information.  
   
--   Secure transfer using `UserName` and HTTPS. A WCF client and service need to be developed to work across the Internet. The client credentials authenticate against a database of user name/password pairs. The service is deployed at an HTTPS address using a trusted Secure Sockets Layer (SSL) certificate. Because the messages travel over the Internet, the client and service need to be mutually authenticated, and the messages' confidentiality and integrity must be preserved during transfer.  
+- Secure transfer using `UserName` and HTTPS. A WCF client and service need to be developed to work across the Internet. The client credentials authenticate against a database of user name/password pairs. The service is deployed at an HTTPS address using a trusted Secure Sockets Layer (SSL) certificate. Because the messages travel over the Internet, the client and service need to be mutually authenticated, and the messages' confidentiality and integrity must be preserved during transfer.  
   
--   Secure transfer using certificates. A WCF client and service need to be developed to work over the public internet. The client and service both have certificates that can be used to secure the messages. The client and service use the Internet to communicate with each other and to perform high-value transactions that require message integrity, confidentiality, and mutual authentication.  
+- Secure transfer using certificates. A WCF client and service need to be developed to work over the public internet. The client and service both have certificates that can be used to secure the messages. The client and service use the Internet to communicate with each other and to perform high-value transactions that require message integrity, confidentiality, and mutual authentication.  
   
 ## Integrity, Confidentiality, and Authentication  
  Three functions—integrity, confidentiality and authentication—are together called transfer security. Transfer security provides the functions that help to mitigate the threats to a distributed application. The following table briefly describes the three functions that make up transfer security.  
@@ -34,11 +34,11 @@ Windows Communication Foundation (WCF) security is broken into three major funct
   
 |Mode|Description|  
 |----------|-----------------|  
-|None|No security is provided at the transport layer or at the message layer. None of the predefined bindings use this mode by default except the [\<basicHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) element or, when using code, the <xref:System.ServiceModel.BasicHttpBinding> class.|  
+|None|No security is provided at the transport layer or at the message layer. None of the predefined bindings use this mode by default except the [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md) element or, when using code, the <xref:System.ServiceModel.BasicHttpBinding> class.|  
 |Transport|Uses a secure transport such as HTTPS for integrity, confidentiality, and mutual authentication.|  
 |Message|Uses SOAP-message security for integrity, confidentiality, and mutual authentication. SOAP messages are secured according to the WS-Security standards.|  
 |Mixed Mode|Uses transport security for integrity, confidentiality, and server authentication. Uses message security (WS-Security and other standards) for client authentication.<br /><br /> (This enumeration for this mode is `TransportWithMessageCredential`.)|  
-|Both|Performs protection and authentication at both levels. This mode is available only in the [\<netMsmqBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/netmsmqbinding.md) element.|  
+|Both|Performs protection and authentication at both levels. This mode is available only in the [\<netMsmqBinding>](../../configure-apps/file-schema/wcf/netmsmqbinding.md) element.|  
   
 ## Credentials and Transfer Security  
  A *credential* is data that is presented to establish either a claimed identity or capabilities. Presenting a credential involves presenting both the data and proof of possession of the data. WCF supports a variety of credential types at both the transport and message security levels. You can specify a type of credential for a WCF binding.  
@@ -51,7 +51,7 @@ Windows Communication Foundation (WCF) security is broken into three major funct
   
  In the certificate credential, the subject name, subject alternative name, or specific fields within the certificate can be used to represent the claimed identity and/or capabilities. Proof of possession of the data in the credential is established by using the associated private key to generate a signature.  
   
- For more information about programming transfer security and specifying credentials, see [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md) and [Security Behaviors](../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md).  
+ For more information about programming transfer security and specifying credentials, see [Bindings and Security](bindings-and-security.md) and [Security Behaviors](security-behaviors-in-wcf.md).  
   
 ### Transport Client Credential Types  
  The following table shows the possible values used when creating an application that uses transfer security. You can use these values in either code or binding settings.  
@@ -59,8 +59,8 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 |Setting|Description|  
 |-------------|-----------------|  
 |None|Specifies that the client does not need to present any credential. This translates to an anonymous client.|  
-|Basic|Specifies basic authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkId=88313)."|  
-|Digest|Specifies digest authentication.  For additional information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](https://go.microsoft.com/fwlink/?LinkId=88313)."|  
+|Basic|Specifies basic authentication. For more information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf)."|  
+|Digest|Specifies digest authentication. For more information, see RFC2617, "[HTTP Authentication: Basic and Digest Authentication](http://schemas.xmlsoap.org/ws/2004/10/discovery/ws-discovery.pdf)."|  
 |Ntlm|Specifies Windows authentication using SSPI negotiation on a Windows domain.<br /><br /> SSPI negotiation results in using either the Kerberos protocol or NT LanMan (NTLM).|  
 |Windows|Specifies Windows authentication using SSPI on a Windows domain. SSPI picks from either the Kerberos protocol or NTLM as authentication service.<br /><br /> SSPI tries Kerberos protocol first; if that fails, it then uses NTLM.|  
 |Certificate|Performs client authentication using a certificate, typically X.509.|  
@@ -74,7 +74,7 @@ Windows Communication Foundation (WCF) security is broken into three major funct
 |Windows|Allows SOAP message exchanges to occur under the authenticated context of a Windows credential. Uses SSPI negotiation mechanism to pick from either the Kerberos protocol or NTLM as an authentication service.|  
 |Username|Allows the service to require that the client be authenticated with a user name credential. Note that WCF does not allow any cryptographic operations with the user name, such as generating a signature or encrypting data. As such, WCF enforces that the transport is secured when using user name credentials.|  
 |Certificate|Allows the service to require that the client be authenticated using a certificate.|  
-|[!INCLUDE[infocard](../../../../includes/infocard-md.md)]|Allows the service to require that the client be authenticated using an [!INCLUDE[infocard](../../../../includes/infocard-md.md)].|  
+|CardSpace|Allows the service to require that the client be authenticated using an CardSpace.|  
   
 ### Programming Credentials  
  For each of the client credential types, the WCF programming model allows you to specify the credential values and credential validators by using service behaviors and channel behaviors.  
@@ -88,8 +88,9 @@ Windows Communication Foundation (WCF) security is broken into three major funct
   
  The message security mode also allows you to perform transfer security so that the service credential is exchanged with the client as part of an initial negotiation. To enable negotiation, set the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property to `true`.  
   
-## See Also  
- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)  
- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+
+- [Endpoint Creation Overview](../endpoint-creation-overview.md)
+- [System-Provided Bindings](../system-provided-bindings.md)
+- [Security Overview](security-overview.md)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

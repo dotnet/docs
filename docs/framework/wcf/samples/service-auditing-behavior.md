@@ -4,10 +4,10 @@ ms.date: "03/30/2017"
 ms.assetid: 59bf0cda-e496-4418-a3a1-2f0f6e85f8ce
 ---
 # Service Auditing Behavior
-This sample demonstrates how to use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to enable auditing of security events during service operations. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). The service and client have been configured using the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The `mode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) has been set to `Message` and `clientCredentialType` has been set to `Windows`. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
+This sample demonstrates how to use the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior> to enable auditing of security events during service operations. This sample is based on the [Getting Started](getting-started-sample.md). The service and client have been configured using the [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md). The `mode` attribute of the [\<security>](../../configure-apps/file-schema/wcf/security-of-custombinding.md) has been set to `Message` and `clientCredentialType` has been set to `Windows`. In this sample, the client is a console application (.exe) and the service is hosted by Internet Information Services (IIS).  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The service configuration file uses the `serviceSecurityAudit` element to configure auditing.  
   
@@ -28,7 +28,7 @@ This sample demonstrates how to use the <xref:System.ServiceModel.Description.Se
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the console window to shut down the client.  
   
- The resulting audit logs can be seen by running the Event Viewer. By default, on Windows XP the audit events can be seen in the Application Log while on Windows Server 2003 and Windows Vista, the audit events can be seen in the Security Log. On Windows Server 2008 and Windows 7, the audit events can be seen in the Applications and Services logs. The location of audit events can be specified by setting the `auditLogLocation` attribute to "Application" or "Security". For more information, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md). If the events are written in the Security Log the LocalSecurityPolicy-> Enable Object Access should be set for "Success" and "Failure".  
+ The resulting audit logs can be seen by running the Event Viewer. By default, on Windows XP the audit events can be seen in the Application Log while on Windows Server 2003 and Windows Vista, the audit events can be seen in the Security Log. On Windows Server 2008 and Windows 7, the audit events can be seen in the Applications and Services logs. The location of audit events can be specified by setting the `auditLogLocation` attribute to "Application" or "Security". For more information, see [How to: Audit Security Events](../feature-details/how-to-audit-wcf-security-events.md). If the events are written in the Security Log the LocalSecurityPolicy-> Enable Object Access should be set for "Success" and "Failure".  
   
  When looking at the event log, the source of the audit events is "ServiceModel Audit 3.0.0.0". Message authentication audit records have a category of "MessageAuthentication" while service authorization audit records have a category of "ServiceAuthorization".  
   
@@ -38,12 +38,13 @@ This sample demonstrates how to use the <xref:System.ServiceModel.Description.Se
   
 ### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
-## See Also  
- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
+## See also
+
+- [Auditing](../feature-details/auditing-security-events.md)
+- [How to: Audit Security Events](../feature-details/how-to-audit-wcf-security-events.md)

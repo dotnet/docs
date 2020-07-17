@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1b2bbf3f-943e-412e-b66c-e802431b055c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::FindTypeRef Method
 Gets a pointer to the TypeRef token for the <xref:System.Type> reference that is in the specified scope and that has the specified name.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindTypeRef (  
    [in] mdToken        tkResolutionScope,  
    [in]  LPCWSTR       szName,  
@@ -31,7 +29,7 @@ HRESULT FindTypeRef (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tkResolutionScope`  
  [in] A ModuleRef, AssemblyRef, or TypeRef token that specifies the module, assembly, or type, respectively, in which the type reference is defined.  
   
@@ -42,7 +40,7 @@ HRESULT FindTypeRef (
  [out] A pointer to the matching TypeRef token.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,6 +48,7 @@ HRESULT FindTypeRef (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

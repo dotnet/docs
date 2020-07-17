@@ -1,5 +1,5 @@
 ---
-title: "Overridable (Visual Basic)"
+title: "Overridable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "Overridable"
@@ -21,11 +21,11 @@ ms.assetid: 612581e7-8a4c-4a5d-beff-3402fffa6f35
 Specifies that a property or procedure can be overridden by an identically named property or procedure in a derived class.  
   
 ## Remarks  
- The `Overridable` modifier allows a property or method in a class to be overridden in a derived class. The [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md) modifier prevents a property or method from being overridden in a derived class.  For more information, see [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).  
+ The `Overridable` modifier allows a property or method in a class to be overridden in a derived class. The [NotOverridable](notoverridable.md) modifier prevents a property or method from being overridden in a derived class.  For more information, see [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md).  
   
  If the `Overridable` or `NotOverridable` modifier is not specified, the default setting depends on whether the property or method overrides a base class property or method. If the property or method overrides a base class property or method, the default setting is `Overridable`; otherwise, it is `NotOverridable`.  
   
- You can shadow or override to redefine an inherited element, but there are significant differences between the two approaches. For more information, see [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).  
+ You can shadow or override to redefine an inherited element, but there are significant differences between the two approaches. For more information, see [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md).  
   
  An element that can be overridden is sometimes referred to as a *virtual* element. If it can be overridden, but does not have to be, it is sometimes also called a *concrete* element.  
   
@@ -41,17 +41,18 @@ Specifies that a property or procedure can be overridden by an identically named
 ## Usage  
  The `Overridable` modifier can be used in these contexts:  
   
- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)  
+ [Function Statement](../statements/function-statement.md)  
   
- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)  
+ [Property Statement](../statements/property-statement.md)  
   
- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)  
+ [Sub Statement](../statements/sub-statement.md)  
   
-## See Also  
- [Modifiers](../../../visual-basic/language-reference/modifiers/index.md)  
- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
+## See also
+
+- [Modifiers](index.md)
+- [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [MustOverride](mustoverride.md)
+- [NotOverridable](notoverridable.md)
+- [Overrides](overrides.md)
+- [Keywords](../keywords/index.md)
+- [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md)

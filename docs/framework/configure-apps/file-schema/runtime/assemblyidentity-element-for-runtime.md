@@ -1,5 +1,5 @@
 ---
-title: "&lt;assemblyIdentity&gt; Element for &lt;runtime&gt;"
+title: "<assemblyIdentity> Element for <runtime>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding/dependentAssembly/assemblyIdentity"
@@ -9,22 +9,20 @@ helpviewer_keywords:
   - "container tags, <assemblyIdentity> element"
   - "assemblyIdentity element"
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;assemblyIdentity&gt; Element for &lt;runtime&gt;
+# \<assemblyIdentity> Element for \<runtime>
 Contains identifying information about the assembly.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<dependentAssembly>  
-\<assemblyIdentity>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<dependentAssembly>**](dependentassembly-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyIdentity>**  
   
 ## Syntax  
   
 ```xml  
-   <assemblyIdentity    
+   <assemblyIdentity
 name="assembly name"  
 publicKeyToken="public key token"  
 culture="assembly culture"/>  
@@ -79,15 +77,15 @@ culture="assembly culture"/>
                   publicKeyToken="14a739be0244c389"  
                   culture="neutral"  
                   processorArchitecture="x86" />  
-            <bindingRedirect oldVersion= "1.0.0.0"   
+            <bindingRedirect oldVersion= "1.0.0.0"
                   newVersion="1.1.0.0" />  
          </dependentAssembly>  
          <dependentAssembly>  
             <assemblyIdentity name="MyAssembly"  
                   publicKeyToken="14a739be0244c389"  
-                  culture="neutral"   
+                  culture="neutral"
                   processorArchitecture="ia64" />  
-            <bindingRedirect oldVersion="1.0.0.0"   
+            <bindingRedirect oldVersion="1.0.0.0"
                   newVersion="2.0.0.0" />  
          </dependentAssembly>  
       </assemblyBinding>  
@@ -115,7 +113,8 @@ culture="assembly culture"/>
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+## See also
+
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

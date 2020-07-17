@@ -1,24 +1,26 @@
 ---
-title: "&lt;webScriptEndpoint&gt;"
+title: "<webScriptEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: 85cb5ecf-351b-45f3-aa29-aa2e4b64bcdd
 ---
-# &lt;webScriptEndpoint&gt;
-This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) binding that automatically adds the [\<enableWebScript>](../../../../../docs/framework/configure-apps/file-schema/wcf/enablewebscript.md) behavior. Use this endpoint when you are writing a service that is called from an ASP.NET AJAX application.  
+# \<webScriptEndpoint>
+This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](webhttpbinding.md) binding that automatically adds the [\<enableWebScript>](enablewebscript.md) behavior. Use this endpoint when you are writing a service that is called from an ASP.NET AJAX application.  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<webScriptEndpoint>**  
   
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <webScriptEndpoint>
-      <standardEndpoint webEndpointType="String"/>
+      <standardEndpoint webEndpointType="String" />
     </webScriptEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -37,8 +39,9 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<standardEndpoints>](../../../../../docs/framework/configure-apps/file-schema/wcf/standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
+|[\<standardEndpoints>](standardendpoints.md)|A collection of standard endpoints that are pre-defined endpoints with one or more of their properties (address, binding, contract) fixed.|  
   
-## See Also  
- <xref:System.ServiceModel.Description.WebScriptEndpoint>  
- <xref:System.ServiceModel.Configuration.WebScriptEndpointElement>
+## See also
+
+- <xref:System.ServiceModel.Description.WebScriptEndpoint>
+- <xref:System.ServiceModel.Configuration.WebScriptEndpointElement>

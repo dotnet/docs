@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Inferring Schemas from XML Documents
 This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> class to infer an XML Schema definition language (XSD) schema from the structure of an XML document.  
@@ -25,7 +23,7 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
     <child>One</child>  
     <child>Two</child>  
 </parent>  
-<parent attribute1="A">  
+<parent attribute1="A" />
 ```  
   
  In the example above, when the `attribute1` attribute is encountered with a value of `6` by the <xref:System.Xml.Schema.XmlSchemaInference> process, it is assumed to be of type `xs:unsignedByte`. When the second `parent` element is encountered by the <xref:System.Xml.Schema.XmlSchemaInference> process, the constraint is loosened by modifying the type to `xs:string` because the value of the `attribute1` attribute is now `A`. Similarly, the `minOccurs` attribute for all the `child` elements inferred in the schema are loosened to `minOccurs="0"` because the second parent element has no child elements.  
@@ -78,8 +76,8 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
   
 ## See also
 
-- <xref:System.Xml.Schema.XmlSchemaInference>  
-- [XML Schema Object Model (SOM)](../../../../docs/standard/data/xml/xml-schema-object-model-som.md)  
-- [Inferring an XML Schema](../../../../docs/standard/data/xml/inferring-an-xml-schema.md)  
-- [Rules for Inferring Schema Node Types and Structure](../../../../docs/standard/data/xml/rules-for-inferring-schema-node-types-and-structure.md)  
-- [Rules for Inferring Simple Types](../../../../docs/standard/data/xml/rules-for-inferring-simple-types.md)
+- <xref:System.Xml.Schema.XmlSchemaInference>
+- [XML Schema Object Model (SOM)](xml-schema-object-model-som.md)
+- [Inferring an XML Schema](inferring-an-xml-schema.md)
+- [Rules for Inferring Schema Node Types and Structure](rules-for-inferring-schema-node-types-and-structure.md)
+- [Rules for Inferring Simple Types](rules-for-inferring-simple-types.md)

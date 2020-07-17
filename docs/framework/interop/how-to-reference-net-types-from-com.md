@@ -1,5 +1,6 @@
 ---
 title: "How to: Reference .NET Types from COM"
+description: Reference .NET types from COM. VB clients can view a .NET object in the object browser, but C++ clients must reference a TLB file with the \#import directive.
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -12,8 +13,6 @@ helpviewer_keywords:
   - "type libraries"
   - "COM interop, importing type library"
 ms.assetid: 54917f6f-cb18-4103-b622-856b55da93f3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Reference .NET Types from COM
 From the point of view of client and server code, the differences between COM and the .NET Framework are largely invisible. Microsoft Visual Basic clients can view a .NET object in the object browser, which exposes the object methods and syntax, properties, and fields exactly as if it were any other COM object.  
@@ -22,7 +21,7 @@ From the point of view of client and server code, the differences between COM an
   
 ### To import a library  
   
--   Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
+- Specify the **raw_interfaces_only** option in the **#import** directive. For example:  
   
     ```cpp  
     #import "..\LoanLib\LoanLib.tlb" raw_interfaces_only  
@@ -30,15 +29,16 @@ From the point of view of client and server code, the differences between COM an
   
      -or-  
   
--   Include an #import directive for Mscorlib.tlb. For example:  
+- Include an #import directive for Mscorlib.tlb. For example:  
   
     ```cpp  
     #import "mscorlib.tlb"  
     #import "..\LoanLib\LoanLib.tlb"  
     ```  
   
-## See Also  
- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)  
- [Registering Assemblies with COM](registering-assemblies-with-com.md)  
- [Calling a .NET Object](https://msdn.microsoft.com/library/40c9626c-aea6-4bad-b8f0-c1de462efd33(v=vs.100))  
- [Deploying an Application for COM Access](https://msdn.microsoft.com/library/fb63564c-c1b9-4655-a094-a235625882ce(v=vs.100))
+## See also
+
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)
+- [Registering Assemblies with COM](registering-assemblies-with-com.md)
+- [Calling a .NET Object](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/8hw8h46b(v=vs.100))
+- [Deploying an Application for COM Access](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c2850st8(v=vs.100))

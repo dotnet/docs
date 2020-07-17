@@ -12,8 +12,6 @@ api_type:
 ms.assetid: 307d6ac7-4a86-45f3-999d-6b47004a68f2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget3::GetExceptionThreadID Method
 Called by the common language runtime (CLR) data access services to get the ID of the thread that threw the exception.  
@@ -26,7 +24,7 @@ HRESULT GetExceptionThreadID(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `threadID`  
  [out] The ID of the thread that threw the exception.  
   
@@ -42,15 +40,16 @@ HRESULT GetExceptionThreadID(
  This method is implemented by the writer of the debugging application.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[v451_update](../../../../includes/v451-update-md.md)]  
+ **.NET Framework Versions:** [!INCLUDE[v451_update](../../../../includes/net-current-v451-nov-plus.md)]  
   
-## See Also  
- [ICLRDataTarget3 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-interface.md)  
- [GetExceptionContextRecord Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-getexceptioncontextrecord-method.md)  
- [GetExceptionRecord Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-getexceptionrecord-method.md)
+## See also
+
+- [ICLRDataTarget3 Interface](iclrdatatarget3-interface.md)
+- [GetExceptionContextRecord Method](iclrdatatarget3-getexceptioncontextrecord-method.md)
+- [GetExceptionRecord Method](iclrdatatarget3-getexceptionrecord-method.md)

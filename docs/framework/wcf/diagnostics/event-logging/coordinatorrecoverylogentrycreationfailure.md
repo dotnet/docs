@@ -13,6 +13,7 @@ Id: 140
 ## Description  
  A recovery log entry could not be generated for the coordinator enlistment. The transaction will be aborted. The event lists the Transaction ID, reason, exception, process name and process ID.  
   
-## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+## See also
+
+- [Event Logging](index.md)
+- [Events General Reference](events-general-reference.md)

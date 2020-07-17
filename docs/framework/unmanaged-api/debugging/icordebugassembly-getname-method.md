@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: cdeda721-b214-4503-a291-c70b68b5f36b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly::GetName Method
 Gets the name of the assembly that this `ICorDebugAssembly` instance represents.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetName (  
     [in] ULONG32  cchName,  
     [out] ULONG32 *pcchName,  
@@ -31,7 +29,7 @@ HRESULT GetName (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` array.  
   
@@ -45,7 +43,7 @@ HRESULT GetName (
  The `GetName` method returns the full path and file name of the assembly.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

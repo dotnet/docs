@@ -1,5 +1,5 @@
 ---
-title: "&lt;requestCaching&gt; Element (Network Settings)"
+title: "<requestCaching> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requestCaching"
@@ -9,24 +9,24 @@ helpviewer_keywords:
   - "<requestCaching> element"
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
 ---
-# &lt;requestCaching&gt; Element (Network Settings)
+# \<requestCaching> Element (Network Settings)
 Controls the caching mechanism for network requests.  
   
- \<configuration>  
-\<system.net>  
-\<requestCaching>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<requestCaching>**  
   
 ## Syntax  
   
 ```xml  
-      <requestCaching>  
-        isPrivateCache ="true|false"  
-        disableAllCaching="true|false"  
-        defaultPolicyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
-        unspecifiedMaximumAge= "d.hh.mm.ss">  
-          <defaultHttpCachePolicy> … </defaultHttpCachePolicy>  
-          <defaultFtpCachePolicy> … </defaultFtpCachePolicy>  
-      </requestCaching>
+<requestCaching  
+  isPrivateCache ="true|false"  
+  disableAllCaching="true|false"  
+  defaultPolicyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
+  unspecifiedMaximumAge= "d.hh:mm:ss">  
+    <defaultHttpCachePolicy>...</defaultHttpCachePolicy>  
+    <defaultFtpCachePolicy>...</defaultFtpCachePolicy>  
+</requestCaching>
 ```  
   
 ## Attributes and Elements  
@@ -58,14 +58,14 @@ Controls the caching mechanism for network requests.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[defaultHttpCachePolicy](../../../../../docs/framework/configure-apps/file-schema/network/defaulthttpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether HTTP caching is active and describes the default caching policy.|  
-|[\<defaultFtpCachePolicy> Element (Network Settings)](../../../../../docs/framework/configure-apps/file-schema/network/defaultftpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether FTP caching is active and describes the default caching policy.|  
+|[defaultHttpCachePolicy](defaulthttpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether HTTP caching is active and describes the default caching policy.|  
+|[\<defaultFtpCachePolicy> Element (Network Settings)](defaultftpcachepolicy-element-network-settings.md)|Optional element.<br /><br /> Describes whether FTP caching is active and describes the default caching policy.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[system.net](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
+|[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Example  
  The following example shows how to disable all caching.  
@@ -80,6 +80,7 @@ Controls the caching mechanism for network requests.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.Cache?displayProperty=nameWithType>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.Cache?displayProperty=nameWithType>
+- [Network Settings Schema](index.md)

@@ -7,17 +7,18 @@ ms.assetid: a69a1b8f-8e15-45c5-87b8-bdb71e1c7ab8
 The following sections provide guidance on developing Peer Channel applications.  
   
 ## In This Section  
- [Converting a NetTcpBinding Application to a Peer Channel Application](../../../../docs/framework/wcf/feature-details/converting-a-nettcpbinding-application-to-a-peer-channel-application.md)  
+ [Converting a NetTcpBinding Application to a Peer Channel Application](converting-a-nettcpbinding-application-to-a-peer-channel-application.md)  
  Describes hot to convert a NetTcpBinding Application to a Peer Channel Application.  
   
- [Limiting Message Distribution](../../../../docs/framework/wcf/feature-details/limiting-message-distribution.md)  
+ [Limiting Message Distribution](limiting-message-distribution.md)  
  Discusses using Hop Count, a Message Propagation Filter, a local filter, or a direct connection to control how messages are forwarded throughout the mesh, and provides general guidelines for choosing an approach.  
   
- [Adding Online and Offline Status](../../../../docs/framework/wcf/feature-details/adding-online-and-offline-status.md)  
+ [Adding Online and Offline Status](adding-online-and-offline-status.md)  
  Describes how to use the <xref:System.ServiceModel.IOnlineStatus> interface to monitor specific details about the online and offline status of a Peer Channel connection.  
   
- [Securing Peer Channel Applications](../../../../docs/framework/wcf/feature-details/securing-peer-channel-applications.md)  
+ [Securing Peer Channel Applications](securing-peer-channel-applications.md)  
  Discusses transport-based and message-based security, and best practices for securing Peer Channel applications.  
   
-## See Also  
- [Peer Channel Concepts](../../../../docs/framework/wcf/feature-details/peer-channel-concepts.md)
+## See also
+
+- [Peer Channel Concepts](peer-channel-concepts.md)

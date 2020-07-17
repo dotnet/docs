@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 06e583d6-d88a-4ff5-bb95-5c48618a461c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugBreakpoint::IsActive Method
 Gets a value that indicates whether this `ICorDebugBreakpoint` is active.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsActive (  
     [out] BOOL *pbActive  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbActive`  
  [out] `true` if this breakpoint is active; otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

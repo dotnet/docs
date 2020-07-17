@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: fcfd340a-b7d6-44e4-8167-2c05b789d483
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRSyncManager::DeleteRWLockOwnerIterator Method
-Requests that the common language runtime (CLR) destroy an iterator that was created by a call to [ICLRSyncManager::CreateRWLockOwnerIterator](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-createrwlockowneriterator-method.md).  
+Requests that the common language runtime (CLR) destroy an iterator that was created by a call to [ICLRSyncManager::CreateRWLockOwnerIterator](iclrsyncmanager-createrwlockowneriterator-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteRWLockOwnerIterator (  
     [in] SIZE_T  Iterator  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Iterator`  
  [in] The iterator that was created by using a call to `CreateRWLockOwnerIterator`.  
   
@@ -48,7 +46,7 @@ HRESULT DeleteRWLockOwnerIterator (
  The host can call this method and `CreateRWLockOwnerIterator` to ensure that its threading implementation remains synchronized.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -56,6 +54,7 @@ HRESULT DeleteRWLockOwnerIterator (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+## See also
+
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

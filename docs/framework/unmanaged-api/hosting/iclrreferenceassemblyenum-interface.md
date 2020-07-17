@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8adbf092-c3ba-4bee-b25b-0de6e43a4ce5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRReferenceAssemblyEnum Interface
 Provides methods that allow the host to manipulate the set of assemblies referenced by a file or stream using assembly identity data that is internal to the common language runtime (CLR), without needing to create or understand those identities.  
@@ -24,10 +22,10 @@ Provides methods that allow the host to manipulate the set of assemblies referen
   
 |Method|Description|  
 |------------|-----------------|  
-|[Get Method](../../../../docs/framework/unmanaged-api/hosting/iclrreferenceassemblyenum-get-method.md)|Gets the assembly identity at the supplied index.|  
+|[Get Method](iclrreferenceassemblyenum-get-method.md)|Gets the assembly identity at the supplied index.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -35,7 +33,8 @@ Provides methods that allow the host to manipulate the set of assemblies referen
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)  
- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

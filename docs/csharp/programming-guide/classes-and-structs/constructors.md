@@ -1,6 +1,5 @@
 ---
 title: "Constructors - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 05/05/2017
 helpviewer_keywords: 
   - "constructors [C#]"
@@ -9,11 +8,12 @@ helpviewer_keywords:
 ms.assetid: df2e2e9d-7998-418b-8e7d-890c17ff6c95
 ---
 # Constructors (C# Programming Guide)
-Whenever a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md) and [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
 
-## Default constructors
+Whenever a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Using Constructors](./using-constructors.md) and [Instance Constructors](./instance-constructors.md).  
+
+## Parameterless constructors
   
-If you don't provide a constructor for your class, C# creates one by default that instantiates the object and sets member variables to the default values as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). If you don't provide a constructor for your struct, C# relies on an *implicit default constructor* to automatically initialize each field of a value type to its default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). For more information and examples, see [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
+If you don't provide a constructor for your class, C# creates one by default that instantiates the object and sets member variables to the default values as listed in the [Default values of C# types](../../language-reference/builtin-types/default-values.md) article. If you don't provide a constructor for your struct, C# relies on an *implicit parameterless constructor* to automatically initialize each field to its default value. For more information and examples, see [Instance constructors](instance-constructors.md).  
 
 ## Constructor syntax
 
@@ -27,33 +27,33 @@ If a constructor can be implemented as a single statement, you can use an [expre
 
 ## Static constructors
 
-The previous examples have all shown instance constructors, which create a new object. A class or struct can also have a static constructor, which initializes static members of the type.  Static constructors are parameterless. If you don't provide a static constructor to initialize static fields, the C# compiler will supply a default static constructor that initializes static fields to their default value as listed in the [Default Values Table](../../../csharp/language-reference/keywords/default-values-table.md). 
+The previous examples have all shown instance constructors, which create a new object. A class or struct can also have a static constructor, which initializes static members of the type.  Static constructors are parameterless. If you don't provide a static constructor to initialize static fields, the C# compiler initializes static fields to their default value as listed in the [Default values of C# types](../../language-reference/builtin-types/default-values.md) article.
 
 The following example uses a static constructor to initialize a static field.
 
 [!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#2)]  
 
-You can also define a static constructor with an expression body definition, as the following example shows. 
+You can also define a static constructor with an expression body definition, as the following example shows.
 
 [!code-csharp[constructors](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/constructors1.cs#3)]  
 
-For more information and examples, see [Static Constructors](../../../csharp/programming-guide/classes-and-structs/static-constructors.md).  
+For more information and examples, see [Static Constructors](./static-constructors.md).  
   
 ## In This Section  
- [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md)  
+ [Using Constructors](./using-constructors.md)  
   
- [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md)  
+ [Instance Constructors](./instance-constructors.md)  
   
- [Private Constructors](../../../csharp/programming-guide/classes-and-structs/private-constructors.md)  
+ [Private Constructors](./private-constructors.md)  
   
- [Static Constructors](../../../csharp/programming-guide/classes-and-structs/static-constructors.md)  
+ [Static Constructors](./static-constructors.md)  
   
- [How to: Write a Copy Constructor](../../../csharp/programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md)  
+ [How to write a copy constructor](./how-to-write-a-copy-constructor.md)  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
-- [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-- [static](../../../csharp/language-reference/keywords/static.md)  
-- [Why Do Initializers Run In The Opposite Order As Constructors? Part One](https://blogs.msdn.microsoft.com/ericlippert/2008/02/15/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)
+- [C# Programming Guide](../index.md)
+- [Classes and Structs](./index.md)
+- [Finalizers](./destructors.md)
+- [static](../../language-reference/keywords/static.md)
+- [Why Do Initializers Run In The Opposite Order As Constructors? Part One](https://docs.microsoft.com/archive/blogs/ericlippert/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)

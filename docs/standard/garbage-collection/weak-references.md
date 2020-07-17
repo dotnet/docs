@@ -1,5 +1,6 @@
 ---
 title: "Weak References"
+description: Learn about weak references, which allow the .NET garbage collector to collect an object while still allowing the application to access the object.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -8,8 +9,6 @@ helpviewer_keywords:
   - "weak references, long"
   - "garbage collection, weak references"
 ms.assetid: 6a600fe5-3af3-4c64-82da-10a0a8e2d79b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Weak References
 The garbage collector cannot collect an object in use by an application while the application's code can reach that object. The application is said to have a strong reference to the object.  
@@ -27,11 +26,11 @@ The garbage collector cannot collect an object in use by an application while th
 ## Short and Long Weak References  
  You can create a short weak reference or a long weak reference:  
   
--   Short  
+- Short  
   
-     The target of a short weak reference becomes `null` when the object is reclaimed by garbage collection. The weak reference is itself a managed object, and is subject to garbage collection just like any other managed object.  A short weak reference is the default constructor for <xref:System.WeakReference>.  
+     The target of a short weak reference becomes `null` when the object is reclaimed by garbage collection. The weak reference is itself a managed object, and is subject to garbage collection just like any other managed object.  A short weak reference is the parameterless constructor for <xref:System.WeakReference>.  
   
--   Long  
+- Long  
   
      A long weak reference is retained after the object's <xref:System.Object.Finalize%2A> method has been called. This allows the object to be recreated, but the state of the object remains unpredictable. To use a long reference, specify `true` in the <xref:System.WeakReference> constructor.  
   
@@ -48,4 +47,4 @@ The garbage collector cannot collect an object in use by an application while th
   
 ## See also
 
-- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+- [Garbage Collection](index.md)

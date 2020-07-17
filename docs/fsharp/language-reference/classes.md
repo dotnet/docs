@@ -29,13 +29,13 @@ and [access-modifier] type-name2 ...
 
 Classes represent the fundamental description of .NET object types; the class is the primary type concept that supports object-oriented programming in F#.
 
-In the preceding syntax, the `type-name` is any valid identifier. The `type-params` describes optional generic type parameters. It consists of type parameter names and constraints enclosed in angle brackets (`<` and `>`). For more information, see [Generics](generics/index.md) and [Constraints](generics/constraints.md). The `parameter-list` describes constructor parameters. The first access modifier pertains to the type; the second pertains to the primary constructor. In both cases, the default is `public`.
+In the preceding syntax, the `type-name` is any valid identifier. The `type-params` describes optional generic type parameters. It consists of type parameter names and constraints enclosed in angle brackets (`<` and `>`). For more information, see [Generics](./generics/index.md) and [Constraints](./generics/constraints.md). The `parameter-list` describes constructor parameters. The first access modifier pertains to the type; the second pertains to the primary constructor. In both cases, the default is `public`.
 
 You specify the base class for a class by using the `inherit` keyword. You must supply arguments, in parentheses, for the base class constructor.
 
 You declare fields or function values that are local to the class by using `let` bindings, and you must follow the general rules for `let` bindings. The `do-bindings` section includes code to be executed upon object construction.
 
-The `member-list` consists of additional constructors, instance and static method declarations, interface declarations, abstract bindings, and property and event declarations. These are described in [Members](members/index.md).
+The `member-list` consists of additional constructors, instance and static method declarations, interface declarations, abstract bindings, and property and event declarations. These are described in [Members](./members/index.md).
 
 The `identifier` that is used with the optional `as` keyword gives a name to the instance variable, or self identifier, which can be used in the type definition to refer to the instance of the type. For more information, see the section Self Identifiers later in this topic.
 
@@ -55,7 +55,7 @@ The body of the new constructor must invoke the primary constructor that is spec
 
 The following example illustrates this concept. In the following code, `MyClass` has two constructors, a primary constructor that takes two arguments and another constructor that takes no arguments.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2401.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2401.fs)]
 
 ## let and do Bindings
 
@@ -90,11 +90,11 @@ The self identifier that is declared with the `as` keyword is not initialized un
 
 Generic type parameters are specified in angle brackets (`<` and `>`), in the form of a single quotation mark followed by an identifier. Multiple generic type parameters are separated by commas. The generic type parameter is in scope throughout the declaration. The following code example shows how to specify generic type parameters.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2403.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2403.fs)]
 
 Type arguments are inferred when the type is used. In the following code, the inferred type is a sequence of tuples.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet24031.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet24031.fs)]
 
 ## Specifying Inheritance
 
@@ -106,13 +106,13 @@ For more information, see [Inheritance](inheritance.md).
 
 ## Members Section
 
-You can define static or instance methods, properties, interface implementations, abstract members, event declarations, and additional constructors in this section. Let and do bindings cannot appear in this section. Because members can be added to a variety of F# types in addition to classes, they are discussed in a separate topic, [Members](members/index.md).
+You can define static or instance methods, properties, interface implementations, abstract members, event declarations, and additional constructors in this section. Let and do bindings cannot appear in this section. Because members can be added to a variety of F# types in addition to classes, they are discussed in a separate topic, [Members](./members/index.md).
 
 ## Mutually Recursive Types
 
 When you define types that reference each other in a circular way, you string together the type definitions by using the `and` keyword. The `and` keyword replaces the `type` keyword on all except the first definition, as follows.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2404.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet2404.fs)]
 
 The output is a list of all the files in the current directory.
 
@@ -129,6 +129,6 @@ Structures are also useful for small aggregates of data, but they differ from cl
 ## See also
 
 - [F# Language Reference](index.md)
-- [Members](members/index.md)
+- [Members](./members/index.md)
 - [Inheritance](inheritance.md)
 - [Interfaces](interfaces.md)

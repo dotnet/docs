@@ -15,11 +15,10 @@ helpviewer_keywords:
 ms.assetid: 41c09512-e8fe-4a82-90c5-6b39c18682da
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugErrorInfoEnum::Next Method
 `ICorDebugErrorInfoEnum::Next` is obsolete. Do not call this method.  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

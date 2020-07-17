@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 61d26dfd-7f24-4e7d-a63e-b30a463f08e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::GetAvailableThreads Method
 Gets the number of threads in the thread pool that are not currently processing work items.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAvailableThreads (  
     [out] DWORD *pdwAvailableWorkerThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwAvailableWorkerThreads`  
  [out] Pointer to the number of threads in the thread pool that are not currently processing work items.  
   
@@ -49,7 +47,7 @@ HRESULT GetAvailableThreads (
  If the host does not provide an implementation of `GetAvailableThreads`, it should return an HRESULT value of E_NOTIMPL.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,7 +55,8 @@ HRESULT GetAvailableThreads (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.ThreadPool.GetAvailableThreads%2A>  
- <xref:System.Threading.ThreadPool>  
- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+## See also
+
+- <xref:System.Threading.ThreadPool.GetAvailableThreads%2A>
+- <xref:System.Threading.ThreadPool>
+- [IHostThreadPoolManager Interface](ihostthreadpoolmanager-interface.md)

@@ -1,1 +1,0 @@
-dots per inch (dpi)

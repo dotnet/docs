@@ -1,5 +1,5 @@
 ---
-title: "LINQ and Strings (Visual Basic)"
+title: "LINQ and Strings"
 ms.date: 07/20/2015
 ms.assetid: 75ddb201-d97a-4f98-8cdf-4ad51714529a
 ---
@@ -23,7 +23,7 @@ LINQ can be used to query and transform strings and collections of strings. It c
  [How to: Query for Characters in a String (LINQ) (Visual Basic)](how-to-query-for-characters-in-a-string-linq.md)  
  Demonstrates that a string is a queryable type.  
   
- [How to: Combine LINQ Queries with Regular Expressions (Visual Basic)](how-to-combine-linq-queries-with-regular-expressions.md)  
+ [How to combine LINQ queries with regular expressions (Visual Basic)](how-to-combine-linq-queries-with-regular-expressions.md)  
  Shows how to use regular expressions in LINQ queries for complex pattern matching on filtered query results.  
   
 ## Querying Semi-Structured Data in Text Format  
@@ -53,6 +53,7 @@ LINQ can be used to query and transform strings and collections of strings. It c
  [How to: Compute Column Values in a CSV Text File (LINQ) (Visual Basic)](how-to-compute-column-values-in-a-csv-text-file-linq.md)  
  Shows how to perform mathematical computations on text data in .csv files.  
   
-## See Also  
- [Language-Integrated Query (LINQ) (Visual Basic)](index.md)  
- [How to: Generate XML from CSV Files](how-to-generate-xml-from-csv-files.md)
+## See also
+
+- [Language-Integrated Query (LINQ) (Visual Basic)](index.md)
+- [How to: Generate XML from CSV Files](how-to-generate-xml-from-csv-files.md)

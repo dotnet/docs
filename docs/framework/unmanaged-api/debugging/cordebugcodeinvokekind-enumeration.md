@@ -10,20 +10,18 @@ api_type:
 ms.assetid: e795e6a2-1008-4a81-af88-d777888e942e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugCodeInvokeKind Enumeration
 Describes how an exported function invokes managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugCodeInvokeKind  
 {  
-    CODE_INVOKE_KIND_NONE,       
-    CODE_INVOKE_KIND_RETURN,     
-    CODE_INVOKE_KIND_TAILCALL,   
+    CODE_INVOKE_KIND_NONE,
+    CODE_INVOKE_KIND_RETURN,
+    CODE_INVOKE_KIND_TAILCALL,
 } CorDebugCodeInvokeKind;  
 ```  
   
@@ -36,13 +34,13 @@ typedef enum CorDebugCodeInvokeKind
 |`CODE_INVOKE_KIND_TAILCALL`|This method will invoke managed code via a tail-call. Single-stepping and stepping over any call instructions should arrive at managed code.|  
   
 ## Remarks  
- This enumeration is used by the [ICorDebugProcess6::GetExportStepInfo](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-getexportstepinfo-method.md) method to provide information about stepping through managed code.  
+ This enumeration is used by the [ICorDebugProcess6::GetExportStepInfo](icordebugprocess6-getexportstepinfo-method.md) method to provide information about stepping through managed code.  
   
 > [!NOTE]
->  This enumeration is intended for use in .NET Native debugging scenarios only.  
+> This enumeration is intended for use in .NET Native debugging scenarios only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -50,6 +48,7 @@ typedef enum CorDebugCodeInvokeKind
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Enumerations](debugging-enumerations.md)
+- [Debugging](index.md)

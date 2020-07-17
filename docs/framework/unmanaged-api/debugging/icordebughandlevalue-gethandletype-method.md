@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: d5e7b12d-835a-4e86-ae2f-d658d4f1c67c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHandleValue::GetHandleType Method
 Gets a value that indicates the kind of handle referenced by this ICorDebugHandleValue object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandleType (  
     [out] CorDebugHandleType  *pType  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pType`  
  [out] A pointer to a value of the CorDebugHandleType enumeration that indicates the type of this handle.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -1,5 +1,5 @@
 ---
-title: "&lt;qualifyAssembly&gt; Element"
+title: "<qualifyAssembly> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#qualifyAssembly"
@@ -9,16 +9,14 @@ helpviewer_keywords:
   - "<qualifyAssembly> element"
   - "qualifyAssembly element"
 ms.assetid: ad6442f6-1a9d-43b6-b733-04ac1b7f9b82
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# &lt;qualifyAssembly&gt; Element
+# \<qualifyAssembly> Element
 Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
-\<qualifyAssembly>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-runtime.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<qualifyAssembly>**  
   
 ## Syntax  
   
@@ -61,7 +59,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
-         <qualifyAssembly partialName="math"   
+         <qualifyAssembly partialName="math"
                          fullName=  
 "math,version=1.0.0.0,publicKeyToken=a1690a5ea44bab32,culture=neutral"/>  
       </assemblyBinding>  
@@ -69,7 +67,8 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 </configuration>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
-- [NIB: Partial Assembly References](https://msdn.microsoft.com/library/ec90f07a-398c-4306-9401-0fc5ff9cb59f)
+## See also
+
+- [Runtime Settings Schema](index.md)
+- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
+- [Partial Assembly References](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0a7zy9z5(v=vs.100))

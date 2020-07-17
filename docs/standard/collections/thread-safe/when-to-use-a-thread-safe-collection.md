@@ -1,30 +1,30 @@
 ---
 title: "When to Use a Thread-Safe Collection"
+description: Know when to use a thread-safe collection in .NET. There are 5 collection types that are specially designed to support multithreaded add & remove operations.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "thread-safe collections, when to upgrade"
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
-author: "mairaw"
-ms.author: "mairaw"
 ---
-# When to Use a Thread-Safe Collection
-The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces five new collection types that are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these new types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.  
+# When to use a thread-safe collection
+
+.NET Framework 4 introduced five collection types that are specially designed to support multi-threaded add and remove operations. To achieve thread-safety, these types use various kinds of efficient locking and lock-free synchronization mechanisms. Synchronization adds overhead to an operation. The amount of overhead depends on the kind of synchronization that is used, the kind of operations that are performed, and other factors such as the number of threads that are trying to concurrently access the collection.  
   
  In some scenarios, synchronization overhead is negligible and enables the multi-threaded type to perform significantly faster and scale far better than its non-thread-safe equivalent when protected by an external lock. In other scenarios, the overhead can cause the thread-safe type to perform and scale about the same or even more slowly than the externally-locked, non-thread-safe version of the type.  
   
  The following sections provide general guidance about when to use a thread-safe collection versus its non-thread-safe equivalent that has a user-provided lock around its read and write operations. Because performance may vary depending on many factors, the guidance is not specific and is not necessarily valid in all circumstances. If performance is very important, then the best way to determine which collection type to use is to measure performance based on representative computer configurations and loads. This document uses the following terms:  
   
- *Pure producer-consumer scenario*  
+ *Pure producer-consumer scenario*\
  Any given thread is either adding or removing elements, but not both.  
   
- *Mixed producer-consumer scenario*  
+ *Mixed producer-consumer scenario*\
  Any given thread is both adding and removing elements.  
   
- *Speedup*  
+ *Speedup*\
  Faster algorithmic performance relative to another type in the same scenario.  
   
- *Scalability*  
+ *Scalability*\
  The increase in performance that is proportional to the number of cores on the computer. An algorithm that scales performs faster on eight cores than it does on two cores.  
   
 ## ConcurrentQueue(T) vs. Queue(T)  
@@ -58,6 +58,6 @@ The [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)] introduces
   
 ## See also
 
-- <xref:System.Collections.Concurrent?displayProperty=nameWithType>  
-- [Thread-Safe Collections](../../../../docs/standard/collections/thread-safe/index.md)  
-- [Parallel Programming](../../../../docs/standard/parallel-programming/index.md)
+- <xref:System.Collections.Concurrent?displayProperty=nameWithType>
+- [Thread-Safe Collections](index.md)
+- [Parallel Programming](../../parallel-programming/index.md)

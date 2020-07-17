@@ -14,23 +14,21 @@ helpviewer_keywords:
   - "GetMethodOrigin function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetMethodOrigin function
 Determines the class in which a method is declared.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodOrigin (
-   [in] int                 vFunc, 
-   [in] IWbemClassObject*   ptr, 
+   [in] int                 vFunc,
+   [in] IWbemClassObject*   ptr,
    [in] LPCWSTR             wszMethodName,
    [out] BSTR*              pstrClassName
-); 
+);
 ```  
 
 ## Parameters
@@ -42,7 +40,7 @@ HRESULT GetMethodOrigin (
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `wszMethodName`  
-[in] The name of the method for the object whose owning class is being requested. 
+[in] The name of the method for the object whose owning class is being requested.
 
 `pstrClassName`  
 [out] Receives the name of the class that owns the method.
@@ -66,11 +64,12 @@ Because a class can inherit methods from one or more base classes, developers of
 The `pstrClassName` parameter must not point to a valid `BSTR` before the function is called because this is an `out` parameter; this pointer is not deallocated after the function returns.
 
 ## Requirements  
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

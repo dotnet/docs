@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 0fa34bca-ed18-4626-9e78-d33684d18edb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostControl::GetHostManager Method
 Gets an interface pointer to the host's implementation of the interface with the specified `IID`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostManager (  
     [in] REFIID riid,  
     [out, iid_is(riid)] void** ppObject  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `riid`  
  [in] The `IID` of the interface that the common language runtime (CLR) is querying for.  
   
@@ -53,30 +51,30 @@ HRESULT GetHostManager (
 ## Remarks  
  The CLR queries the host to determine whether it supports one or more of the following interfaces:  
   
--   [IHostMemoryManager](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)  
+- [IHostMemoryManager](ihostmemorymanager-interface.md)  
   
--   [IHostTaskManager](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)  
+- [IHostTaskManager](ihosttaskmanager-interface.md)  
   
--   [IHostThreadPoolManager](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)  
+- [IHostThreadPoolManager](ihostthreadpoolmanager-interface.md)  
   
--   [IHostIoCompletionManager](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)  
+- [IHostIoCompletionManager](ihostiocompletionmanager-interface.md)  
   
--   [IHostSyncManager](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)  
+- [IHostSyncManager](ihostsyncmanager-interface.md)  
   
--   [IHostAssemblyManager](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)  
+- [IHostAssemblyManager](ihostassemblymanager-interface.md)  
   
--   [IHostGCManager](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-interface.md)  
+- [IHostGCManager](ihostgcmanager-interface.md)  
   
--   [IHostPolicyManager](../../../../docs/framework/unmanaged-api/hosting/ihostpolicymanager-interface.md)  
+- [IHostPolicyManager](ihostpolicymanager-interface.md)  
   
--   [IHostSecurityManager](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)  
+- [IHostSecurityManager](ihostsecuritymanager-interface.md)  
   
  If the host supports the specified interface, it sets `ppObject` to its implementation of that interface. Otherwise, it sets `ppObject` to null.  
   
  The CLR does not call `Release` on host managers, even when you shut it down.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -84,5 +82,6 @@ HRESULT GetHostManager (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## See also
+
+- [IHostControl Interface](ihostcontrol-interface.md)

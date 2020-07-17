@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a Query that Finds Elements Based on Context (Visual Basic)"
+title: "How to: Write a Query that Finds Elements Based on Context"
 ms.date: 07/20/2015
 ms.assetid: 0b085290-ddc1-4126-aaa0-e4c95a3d9a09
 ---
@@ -45,14 +45,14 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 id = 1  
 id = 3  
 id = 6  
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
 ```vb  
 Imports <xmlns='http://www.adatum.com'>  
@@ -94,15 +94,16 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 id = 1  
 id = 3  
 id = 6  
 ```  
   
-## See Also  
- <xref:System.Xml.Linq.XElement.Parse%2A>  
- <xref:System.Xml.Linq.XContainer.Descendants%2A>  
- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>  
- <xref:System.Linq.Enumerable.FirstOrDefault%2A>  
- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement.Parse%2A>
+- <xref:System.Xml.Linq.XContainer.Descendants%2A>
+- <xref:System.Xml.Linq.XNode.ElementsAfterSelf%2A>
+- <xref:System.Linq.Enumerable.FirstOrDefault%2A>
+- [Basic Queries (LINQ to XML) (Visual Basic)](basic-queries-linq-to-xml.md)

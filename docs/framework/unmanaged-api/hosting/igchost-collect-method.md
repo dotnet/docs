@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: fc7d9448-3186-494d-9f0d-ea39717e9a82
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost::Collect Method
 Forces a collection to occur for the given generation, regardless of the state of the current garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Collect (  
     [in] LONG Generation  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Generation`  
  [in] The generation on which to perform the garbage collection. A value of -1 indicates that all generations will undergo a garbage collection.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   
@@ -42,5 +40,6 @@ HRESULT Collect (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+## See also
+
+- [IGCHost Interface](igchost-interface.md)

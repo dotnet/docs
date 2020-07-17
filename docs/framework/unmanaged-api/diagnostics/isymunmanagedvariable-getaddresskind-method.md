@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: a71563c0-62f2-4eb4-970c-825d61827613
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedVariable::GetAddressKind Method
 Gets the kind of address of this variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddressKind(  
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
- [out] A pointer to a `ULONG32` that receives the value. The possible values are defined in the [CorSymAddrKind](../../../../docs/framework/unmanaged-api/diagnostics/corsymaddrkind-enumeration.md) enumeration.  
+ [out] A pointer to a `ULONG32` that receives the value. The possible values are defined in the [CorSymAddrKind](corsymaddrkind-enumeration.md) enumeration.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
@@ -38,5 +36,6 @@ HRESULT GetAddressKind(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedVariable Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedvariable-interface.md)
+## See also
+
+- [ISymUnmanagedVariable Interface](isymunmanagedvariable-interface.md)

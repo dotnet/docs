@@ -1,5 +1,0 @@
-# [Accessing Application Settings](index.md)
-## [How to: Create Property Grids for User Settings](how-to-create-property-grids-for-user-settings.md)
-## [How to: Persist User Settings](how-to-persist-user-settings.md)
-## [How to: Change User Settings](how-to-change-user-settings.md)
-## [How to: Read Application Settings](how-to-read-application-settings.md)

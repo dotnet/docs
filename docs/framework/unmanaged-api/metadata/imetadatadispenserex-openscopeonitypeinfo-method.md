@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3480bbdb-c442-44a0-b7c6-333354503c52
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataDispenserEx::OpenScopeOnITypeInfo Method
 This method is not implemented. If called, it returns E_NOTIMPL.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScopeOnITypeInfo (  
     [in]  ITypeInfo   *pITI,  
     [in]  DWORD       dwOpenFlags,  
@@ -32,7 +30,7 @@ HRESULT OpenScopeOnITypeInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pITI`  
  [in] Pointer to an [ITypeInfo](https://docs.microsoft.com/previous-versions/windows/desktop/api/oaidl/nn-oaidl-itypeinfo) interface that provides the type information on which to open the scope.  
   
@@ -46,7 +44,7 @@ HRESULT OpenScopeOnITypeInfo (
  [out] Pointer to a pointer to the returned interface.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -54,6 +52,7 @@ HRESULT OpenScopeOnITypeInfo (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+## See also
+
+- [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
+- [IMetaDataDispenser Interface](imetadatadispenser-interface.md)

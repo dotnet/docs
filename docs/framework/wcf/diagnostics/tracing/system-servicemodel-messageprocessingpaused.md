@@ -11,13 +11,14 @@ System.ServiceModel.MessageProcessingPaused
   
  Message processing can be paused by the following reasons:  
   
--   ConcurrencyMode is single or reentrant, and the service is processing another message.  
+- ConcurrencyMode is single or reentrant, and the service is processing another message.  
   
--   Transaction is enabled and the service is processing another transaction.  
+- Transaction is enabled and the service is processing another transaction.  
   
--   Synchronization context is not current.  
+- Synchronization context is not current.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)  
- [Using Tracing to Troubleshoot Your Application](../../../../../docs/framework/wcf/diagnostics/tracing/using-tracing-to-troubleshoot-your-application.md)  
- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+## See also
+
+- [Tracing](index.md)
+- [Using Tracing to Troubleshoot Your Application](using-tracing-to-troubleshoot-your-application.md)
+- [Administration and Diagnostics](../index.md)

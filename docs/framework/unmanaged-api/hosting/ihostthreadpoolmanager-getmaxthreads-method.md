@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: db268876-6178-4a81-aca3-318ee7f96001
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::GetMaxThreads Method
 Gets the maximum number of threads that the host maintains concurrently in the thread pool.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMaxThreads (  
     [out] DWORD *pdwMaxWorkerThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMaxWorkerThreads`  
  [out] A pointer to the maximum number of threads that the host maintains in the thread pool.  
   
@@ -46,12 +44,12 @@ HRESULT GetMaxThreads (
 |E_NOTIMPL|The host does not provide an implementation of `GetMaxThreads`.|  
   
 ## Remarks  
- The CLR calls `GetMaxThreads` to determine the total number of threads in the thread pool. The [GetAvailableThreads](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getavailablethreads-method.md) method gets the number of threads that are not currently processing work items. All requests above the returned value of the `pdwMaxWorkerThreads` parameter remain queued until threads become available.  
+ The CLR calls `GetMaxThreads` to determine the total number of threads in the thread pool. The [GetAvailableThreads](ihostthreadpoolmanager-getavailablethreads-method.md) method gets the number of threads that are not currently processing work items. All requests above the returned value of the `pdwMaxWorkerThreads` parameter remain queued until threads become available.  
   
  If the host does not provide an implementation of `GetMaxThreads`, it should return an HRESULT value of E_NOTIMPL.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -59,9 +57,10 @@ HRESULT GetMaxThreads (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.ThreadPool.GetMaxThreads%2A>  
- <xref:System.Threading.ThreadPool>  
- [GetMinThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-getminthreads-method.md)  
- [SetMaxThreads Method](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-setmaxthreads-method.md)  
- [IHostThreadPoolManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostthreadpoolmanager-interface.md)
+## See also
+
+- <xref:System.Threading.ThreadPool.GetMaxThreads%2A>
+- <xref:System.Threading.ThreadPool>
+- [GetMinThreads Method](ihostthreadpoolmanager-getminthreads-method.md)
+- [SetMaxThreads Method](ihostthreadpoolmanager-setmaxthreads-method.md)
+- [IHostThreadPoolManager Interface](ihostthreadpoolmanager-interface.md)

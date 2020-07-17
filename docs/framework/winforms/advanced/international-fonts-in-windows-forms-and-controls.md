@@ -1,5 +1,5 @@
 ---
-title: "International fonts in Windows Forms and controls"
+title: International fonts in forms and controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "fonts [Windows Forms], international"
@@ -80,5 +80,4 @@ textBox1.Font = new System.Drawing.Font(this.Font, textBox1.Font.Style);
   
 ## See also
 
-[Globalizing Windows Forms applications](globalizing-windows-forms.md)  
-[Using Fonts and Text](using-fonts-and-text.md)
+- [Using Fonts and Text](using-fonts-and-text.md)

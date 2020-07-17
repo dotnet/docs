@@ -1,5 +1,6 @@
 ---
 title: "Return Properties from a UI Automation Provider"
+description: See how a UI Automation provider can return properties of an element to client applications in .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -9,12 +10,10 @@ helpviewer_keywords:
   - "properties, returned by UI Automation providers"
   - "UI Automation, providers returning properties"
 ms.assetid: 5eba950e-b9e1-48eb-ab8e-b69db76bf589
-author: "Xansky"
-ms.author: "mhopkins"
 ---
 # Return Properties from a UI Automation Provider
 > [!NOTE]
->  This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  This topic contains sample code that shows how a UI Automation provider can return properties of an element to client applications.  
   
@@ -24,6 +23,7 @@ ms.author: "mhopkins"
  [!code-csharp[UIAFragmentProvider_snip#117](../../../samples/snippets/csharp/VS_Snippets_Wpf/UIAFragmentProvider_snip/CSharp/ListFragment.cs#117)]
  [!code-vb[UIAFragmentProvider_snip#117](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/UIAFragmentProvider_snip/VisualBasic/ListFragment.vb#117)]  
   
-## See Also  
- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)  
- [Server-Side UI Automation Provider Implementation](../../../docs/framework/ui-automation/server-side-ui-automation-provider-implementation.md)
+## See also
+
+- [UI Automation Providers Overview](ui-automation-providers-overview.md)
+- [Server-Side UI Automation Provider Implementation](server-side-ui-automation-provider-implementation.md)

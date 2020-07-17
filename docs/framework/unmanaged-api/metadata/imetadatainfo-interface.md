@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 137cb264-64de-46ac-bc6e-2a7db97e8abe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataInfo Interface
 Provides a method that gets information about the mapping of metadata from an on-disk file into memory.  
@@ -24,10 +22,10 @@ Provides a method that gets information about the mapping of metadata from an on
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetFileMapping Method](../../../../docs/framework/unmanaged-api/metadata/imetadatainfo-getfilemapping-method.md)|Gets the memory region of the mapped file, and the kind of mapping.|  
+|[GetFileMapping Method](imetadatainfo-getfilemapping-method.md)|Gets the memory region of the mapped file, and the kind of mapping.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -35,6 +33,7 @@ Provides a method that gets information about the mapping of metadata from an on
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)  
- [CorFileMapping Enumeration](../../../../docs/framework/unmanaged-api/metadata/corfilemapping-enumeration.md)
+## See also
+
+- [Metadata Interfaces](metadata-interfaces.md)
+- [CorFileMapping Enumeration](corfilemapping-enumeration.md)

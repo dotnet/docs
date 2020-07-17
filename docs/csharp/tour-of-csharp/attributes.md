@@ -1,7 +1,7 @@
 ---
 title: C# Attributes - A tour of the C# language
 description: Learn about declarative programming using attributes in C#
-ms.date: 08/10/2016
+ms.date: 02/27/2020
 ms.assetid: 753bcfe2-7ddd-4487-9513-ba70937fc8e9
 ---
 

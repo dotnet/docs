@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine When Formatting Attributes Change in the Windows Forms RichTextBox Control"
+title: Determine When Formatting Attributes Change in RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -17,9 +17,9 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
   
 ### To respond to changes in formatting attributes  
   
-1.  Write code in the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event handler to perform an appropriate action depending on the value of the attribute. The following example changes the appearance of a toolbar button depending on the value of the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property. The toolbar button will only be updated when the insertion point is moved in the control.  
+1. Write code in the <xref:System.Windows.Forms.RichTextBox.SelectionChanged> event handler to perform an appropriate action depending on the value of the attribute. The following example changes the appearance of a toolbar button depending on the value of the <xref:System.Windows.Forms.RichTextBox.SelectionBullet%2A> property. The toolbar button will only be updated when the insertion point is moved in the control.  
   
-     The example below assumes a form with a <xref:System.Windows.Forms.RichTextBox> control and a <xref:System.Windows.Forms.ToolBar> control that contains a toolbar button. For more information about toolbars and toolbar buttons, see [How to: Add Buttons to a ToolBar Control](../../../../docs/framework/winforms/controls/how-to-add-buttons-to-a-toolbar-control.md).  
+     The example below assumes a form with a <xref:System.Windows.Forms.RichTextBox> control and a <xref:System.Windows.Forms.ToolBar> control that contains a toolbar button. For more information about toolbars and toolbar buttons, see [How to: Add Buttons to a ToolBar Control](how-to-add-buttons-to-a-toolbar-control.md).  
   
     ```vb  
     ' The following code assumes the existence of a toolbar control  
@@ -41,12 +41,12 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
     private void richTextBox1_SelectionChanged(object sender,  
     System.EventArgs e)  
     {  
-       if (richTextBox1.SelectionBullet == true)   
+       if (richTextBox1.SelectionBullet == true)
        {  
           // Bullet button on toolbar should appear pressed  
           toolBarButton1.Pushed = true;  
        }  
-       else   
+       else
        {  
           // Bullet button on toolbar should appear unpressed  
           toolBarButton1.Pushed = false;  
@@ -74,8 +74,9 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
        }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.RichTextBox.SelectionChanged>  
- <xref:System.Windows.Forms.RichTextBox>  
- [RichTextBox Control](../../../../docs/framework/winforms/controls/richtextbox-control-windows-forms.md)  
- [Controls to Use on Windows Forms](../../../../docs/framework/winforms/controls/controls-to-use-on-windows-forms.md)
+## See also
+
+- <xref:System.Windows.Forms.RichTextBox.SelectionChanged>
+- <xref:System.Windows.Forms.RichTextBox>
+- [RichTextBox Control](richtextbox-control-windows-forms.md)
+- [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)

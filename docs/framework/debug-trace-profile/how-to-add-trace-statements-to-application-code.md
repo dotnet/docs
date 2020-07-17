@@ -1,5 +1,6 @@
 ---
 title: "How to: Add Trace Statements to Application Code"
+description: Learn how to add trace statements to application code in .NET. The methods used most often for tracing are the methods for writing output to listeners.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,8 +14,6 @@ helpviewer_keywords:
   - "trace switches, conditional writes based on switches"
   - "WriteIf method"
 ms.assetid: f3a93fa7-1717-467d-aaff-393e5c9828b4
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Add Trace Statements to Application Code
 The methods used most often for tracing are the methods for writing output to listeners: **Write**, **WriteIf**, **WriteLine**, **WriteLineIf**, **Assert**, and **Fail**. These methods can be divided into two categories: **Write**, **WriteLine**, and **Fail** all emit output unconditionally, whereas **WriteIf**, **WriteLineIf**, and **Assert** test a Boolean condition, and write or do not write based on the value of the condition. **WriteIf** and **WriteLineIf** emit output if the condition is `true`, and **Assert** emits output if the condition is `false`.  
@@ -23,7 +22,7 @@ The methods used most often for tracing are the methods for writing output to li
   
 ### To write a complete line  
   
-1.  Call the <xref:System.Diagnostics.Trace.WriteLine%2A> or <xref:System.Diagnostics.Trace.WriteLineIf%2A> method.  
+1. Call the <xref:System.Diagnostics.Trace.WriteLine%2A> or <xref:System.Diagnostics.Trace.WriteLineIf%2A> method.  
   
      A carriage return is appended to the end of the message this method returns, so that the next message returned by **Write**, **WriteIf**, **WriteLine**, or **WriteLineIf** will begin on the following line:  
   
@@ -36,13 +35,13 @@ The methods used most often for tracing are the methods for writing output to li
     ```csharp  
     bool errorFlag = false;  
     System.Diagnostics.Trace.WriteLine ("Error in AppendData procedure.");  
-    System.Diagnostics.Trace.WriteLineIf(errorFlag,   
+    System.Diagnostics.Trace.WriteLineIf(errorFlag,
        "Error in AppendData procedure.");  
     ```  
   
 ### To write a partial line  
   
-1.  Call the <xref:System.Diagnostics.Trace.Write%2A> or <xref:System.Diagnostics.Trace.WriteIf%2A> method.  
+1. Call the <xref:System.Diagnostics.Trace.Write%2A> or <xref:System.Diagnostics.Trace.WriteIf%2A> method.  
   
      The next message put out by a **Write**, **WriteIf**, **WriteLine**, or **WriteLineIf** will begin on the same line as the message put out by the **Write** or **WriteIf** statement:  
   
@@ -55,7 +54,7 @@ The methods used most often for tracing are the methods for writing output to li
   
     ```csharp  
     bool errorFlag = false;  
-    System.Diagnostics.Trace.WriteIf(errorFlag,   
+    System.Diagnostics.Trace.WriteIf(errorFlag,
        "Error in AppendData procedure.");  
     System.Diagnostics.Debug.WriteIf(errorFlag, "Transaction abandoned.");  
     Trace.Write("Invalid value for data request");  
@@ -63,7 +62,7 @@ The methods used most often for tracing are the methods for writing output to li
   
 ### To verify that certain conditions exist either before or after you execute a method  
   
-1.  Call the <xref:System.Diagnostics.Trace.Assert%2A> method.  
+1. Call the <xref:System.Diagnostics.Trace.Assert%2A> method.  
   
     ```vb  
     Dim i As Integer = 4  
@@ -76,14 +75,15 @@ The methods used most often for tracing are the methods for writing output to li
     ```  
   
     > [!NOTE]
-    >  You can use **Assert** with both tracing and debugging. This example outputs the call stack to any listener in the **Listeners** collection. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code) and <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>.  
+    > You can use **Assert** with both tracing and debugging. This example outputs the call stack to any listener in the **Listeners** collection. For more information, see [Assertions in Managed Code](/visualstudio/debugger/assertions-in-managed-code) and <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>.  
   
-## See Also  
- <xref:System.Diagnostics.Debug.WriteIf%2A?displayProperty=nameWithType>  
- <xref:System.Diagnostics.Debug.WriteLineIf%2A?displayProperty=nameWithType>  
- <xref:System.Diagnostics.Trace.WriteIf%2A?displayProperty=nameWithType>  
- <xref:System.Diagnostics.Trace.WriteLineIf%2A?displayProperty=nameWithType>  
- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)  
- [How to: Create, Initialize and Configure Trace Switches](../../../docs/framework/debug-trace-profile/how-to-create-initialize-and-configure-trace-switches.md)  
- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)  
- [Trace Listeners](../../../docs/framework/debug-trace-profile/trace-listeners.md)
+## See also
+
+- <xref:System.Diagnostics.Debug.WriteIf%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Debug.WriteLineIf%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Trace.WriteIf%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.Trace.WriteLineIf%2A?displayProperty=nameWithType>
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
+- [How to: Create, Initialize and Configure Trace Switches](how-to-create-initialize-and-configure-trace-switches.md)
+- [Trace Switches](trace-switches.md)
+- [Trace Listeners](trace-listeners.md)

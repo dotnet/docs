@@ -1,5 +1,5 @@
 ---
-title: "When to Use an Enumeration (Visual Basic)"
+title: "When to Use an Enumeration"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"
@@ -13,27 +13,28 @@ Enumerations offer an easy way to work with sets of related constants. An enumer
   
  The benefits of using enumerations include:  
   
--   Reduces errors caused by transposing or mistyping numbers.  
+- Reduces errors caused by transposing or mistyping numbers.  
   
--   Makes it easy to change values in the future.  
+- Makes it easy to change values in the future.  
   
--   Makes code easier to read, which means it is less likely that errors will creep into it.  
+- Makes code easier to read, which means it is less likely that errors will creep into it.  
   
--   Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.  
+- Ensures forward compatibility. With enumerations, your code is less likely to fail if in the future someone changes the values corresponding to the member names.  
   
 ## Naming Enumerations  
  Use a naming convention for enumeration members. When Visual Basic encounters an enumeration member name, an exception may be thrown if other referenced type libraries contain the same name. Use a unique prefix that identifies the values from your application or component.  
   
- When referring to a member of an enumeration, you must qualify the member name with the enumeration name or else use the `Imports` statement. For more information, see [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md).  
+ When referring to a member of an enumeration, you must qualify the member name with the enumeration name or else use the `Imports` statement. For more information, see [Enumerations and Name Qualification](enumerations-and-name-qualification.md).  
   
 ## Predefined Enumerations  
- Visual Basic provides a number of predefined enumerations, such as `FirstDayOfWeek` and `MsgBoxResult`, to facilitate your code. For a list of these see [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md).  
+ Visual Basic provides a number of predefined enumerations, such as `FirstDayOfWeek` and `MsgBoxResult`, to facilitate your code. For a list of these see [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md).  
   
-## See Also  
- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)  
- [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)  
- [Enumerations and Name Qualification](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-and-name-qualification.md)  
- [How to: Iterate Through An Enumeration in Visual Basic](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-iterate-through-an-enumeration.md)  
- [How to: Determine the String Associated with an Enumeration Value](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-determine-the-string-associated-with-an-enumeration-value.md)  
- [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  
- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
+## See also
+
+- [How to: Declare an Enumeration](how-to-declare-enumerations.md)
+- [How to: Refer to an Enumeration Member](how-to-refer-to-an-enumeration-member.md)
+- [Enumerations and Name Qualification](enumerations-and-name-qualification.md)
+- [How to: Iterate Through An Enumeration in Visual Basic](how-to-iterate-through-an-enumeration.md)
+- [How to: Determine the String Associated with an Enumeration Value](how-to-determine-the-string-associated-with-an-enumeration-value.md)
+- [Enum Statement](../../../language-reference/statements/enum-statement.md)
+- [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md)

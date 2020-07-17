@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: a247c792-45e1-4538-9e1f-b46acca4a463
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue::GetAddress Method
 Gets the address of this "ICorDebugValue" object, which is in the process of being debugged.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddress (  
     [out] CORDB_ADDRESS   *pAddress  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] Pointer to a `CORDB_ADDRESS` object that specifies the address of this value object.  
   
@@ -37,7 +35,7 @@ HRESULT GetAddress (
  If the value is unavailable, 0 (zero) is returned. This could happen if the value is at least partly in registers or stored in a garbage collector handle (`GCHandle`).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -45,5 +43,4 @@ HRESULT GetAddress (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also

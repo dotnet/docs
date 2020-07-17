@@ -15,36 +15,34 @@ helpviewer_keywords:
 ms.assetid: dc0ff3e6-7e7d-4f6c-948d-52b28f5cb78c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetPropertyProps Method
 Gets the metadata for the property represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPropertyProps (  
    [in]  mdProperty        prop,  
-   [out] mdTypeDef         *pClass,   
-   [out] LPCWSTR           szProperty,   
-   [in]  ULONG             cchProperty,   
-   [out] ULONG             *pchProperty,   
-   [out] DWORD             *pdwPropFlags,   
-   [out] PCCOR_SIGNATURE   *ppvSig,   
-   [out] ULONG             *pbSig,   
-   [out] DWORD             *pdwCPlusTypeFlag,   
+   [out] mdTypeDef         *pClass,
+   [out] LPCWSTR           szProperty,
+   [in]  ULONG             cchProperty,
+   [out] ULONG             *pchProperty,
+   [out] DWORD             *pdwPropFlags,
+   [out] PCCOR_SIGNATURE   *ppvSig,
+   [out] ULONG             *pbSig,
+   [out] DWORD             *pdwCPlusTypeFlag,
    [out] UVCP_CONSTANT     *ppDefaultValue,  
    [out] ULONG             *pcchDefaultValue,  
-   [out] mdMethodDef       *pmdSetter,   
-   [out] mdMethodDef       *pmdGetter,   
+   [out] mdMethodDef       *pmdSetter,
+   [out] mdMethodDef       *pmdGetter,
    [out] mdMethodDef       rmdOtherMethod[],  
-   [in]  ULONG             cMax,   
-   [out] ULONG             *pcOtherMethod   
+   [in]  ULONG             cMax,
+   [out] ULONG             *pcOtherMethod
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `prop`  
  [in] A token that represents the property to return metadata for.  
   
@@ -61,7 +59,7 @@ HRESULT GetPropertyProps (
  [out] The number of wide characters returned in `szProperty`.  
   
  `pdwPropFlags`  
- [out] A pointer to any attribute flags applied to the property. This value is a bitmask from the [CorPropertyAttr](../../../../docs/framework/unmanaged-api/metadata/corpropertyattr-enumeration.md) enumeration.  
+ [out] A pointer to any attribute flags applied to the property. This value is a bitmask from the [CorPropertyAttr](corpropertyattr-enumeration.md) enumeration.  
   
  `ppvSig`  
  [out] A pointer to the metadata signature of the property.  
@@ -94,7 +92,7 @@ HRESULT GetPropertyProps (
  [out] The number of MethodDef tokens returned in `rmdOtherMethod`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -102,6 +100,7 @@ HRESULT GetPropertyProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

@@ -20,17 +20,15 @@ helpviewer_keywords:
   - "code generators"
   - "CodeDOM, graphs"
 ms.assetid: 0444ddf3-c3f6-44ed-a999-f710d9c3e0cf
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Using the CodeDOM
 The CodeDOM provides types that represent many common types of source code elements. You can design a program that builds a source code model using CodeDOM elements to assemble an object graph. This object graph can be rendered as source code using a CodeDOM code generator for a supported programming language. The CodeDOM can also be used to compile source code into a binary assembly.  
   
  Some common uses for the CodeDOM include:  
   
--   Templated code generation: generating code for ASP.NET, XML Web services client proxies, code wizards, designers, or other code-emitting mechanisms.  
+- Templated code generation: generating code for ASP.NET, XML Web services client proxies, code wizards, designers, or other code-emitting mechanisms.  
   
--   Dynamic compilation: supporting code compilation in single or multiple languages.  
+- Dynamic compilation: supporting code compilation in single or multiple languages.  
   
 ## Building a CodeDOM Graph  
  The <xref:System.CodeDom> namespace provides classes for representing the logical structure of source code, independent of language syntax.  
@@ -114,11 +112,11 @@ The CodeDOM provides types that represent many common types of source code eleme
  [!code-csharp[CodeDomExample#19](../../../samples/snippets/csharp/VS_Snippets_CLR/CodeDomExample/CS/source2.cs#19)]
  [!code-vb[CodeDomExample#19](../../../samples/snippets/visualbasic/VS_Snippets_CLR/CodeDomExample/VB/source2.vb#19)]  
   
- Now the <xref:System.CodeDom.CodeCompileUnit> named `compileUnit` contains the CodeDOM graph for a simple Hello World program. For information on generating and compiling code from a CodeDOM graph, see [Generating Source Code and Compiling a Program from a CodeDOM Graph](../../../docs/framework/reflection-and-codedom/generating-and-compiling-source-code-from-a-codedom-graph.md).  
+ Now the <xref:System.CodeDom.CodeCompileUnit> named `compileUnit` contains the CodeDOM graph for a simple Hello World program. For information on generating and compiling code from a CodeDOM graph, see [Generating Source Code and Compiling a Program from a CodeDOM Graph](generating-and-compiling-source-code-from-a-codedom-graph.md).  
   
 ### More information on building a CodeDOM graph  
  The CodeDOM supports the many common types of code elements found in programming languages that support the common language runtime. The CodeDOM was not designed to provide elements to represent all possible programming language features. Code that cannot be represented easily with CodeDOM elements can be encapsulated in a <xref:System.CodeDom.CodeSnippetExpression>, a <xref:System.CodeDom.CodeSnippetStatement>, a <xref:System.CodeDom.CodeSnippetTypeMember>, or a <xref:System.CodeDom.CodeSnippetCompileUnit>. However, snippets cannot be translated to other languages automatically by the CodeDOM.  
   
  For documentation for the each of the CodeDOM types, see the reference documentation for the <xref:System.CodeDom> namespace.  
   
- For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](https://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524).
+ For a quick chart to locate the CodeDOM element that represents a specific type of code element, see the [CodeDOM Quick Reference](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/f1dfsbhc(v=vs.100)).

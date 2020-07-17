@@ -9,39 +9,39 @@ By using the <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWi
  This example demonstrates how to use a cancellation token in conjunction with `WhenAny` to hold onto the first task to finish from the collection of tasks and to cancel the remaining tasks. Each task downloads the contents of a website. The example displays the length of the contents of the first download to complete and cancels the other downloads.  
   
 > [!NOTE]
->  To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
+> To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
   
 ## Downloading the Example  
  You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.  
   
-1.  Decompress the file that you downloaded, and then start Visual Studio.  
+1. Decompress the file that you downloaded, and then start Visual Studio.  
   
-2.  On the menu bar, choose **File**, **Open**, **Project/Solution**.  
+2. On the menu bar, choose **File**, **Open**, **Project/Solution**.  
   
-3.  In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.  
+3. In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.  
   
-4.  In **Solution Explorer**, open the shortcut menu for the **CancelAfterOneTask** project, and then choose **Set as StartUp Project**.  
+4. In **Solution Explorer**, open the shortcut menu for the **CancelAfterOneTask** project, and then choose **Set as StartUp Project**.  
   
-5.  Choose the F5 key to run the project.  
+5. Choose the F5 key to run the project.  
   
      Choose the Ctrl+F5 keys to run the project without debugging it.  
   
-6.  Run the program several times to verify that different downloads finish first.  
+6. Run the program several times to verify that different downloads finish first.  
   
  If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic.  
   
 ## Building the Example  
- The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](../../../../csharp/programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
+ The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.  
   
  To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**. Add the changes in this topic to that project.  
   
  In the MainWindow.xaml.cs file of the **CancelAListOfTasks** project, start the transition by moving the processing steps for each website from the loop in `AccessTheWebAsync` to the following async method.  
   
 ```csharp  
-/ ***Bundle the processing steps for a website into one async method.  
+// ***Bundle the processing steps for a website into one async method.  
 async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken ct)  
 {  
-    // GetAsync returns a Task<HttpResponseMessage>.   
+    // GetAsync returns a Task<HttpResponseMessage>.
     HttpResponseMessage response = await client.GetAsync(url, ct);  
   
     // Retrieve the website contents from the HttpResponseMessage.  
@@ -55,9 +55,9 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
   
  Make the following changes in `AccessTheWebAsync`. Asterisks mark the changes in the code file.  
   
-1.  Comment out or delete the loop.  
+1. Comment out or delete the loop.  
   
-2.  Create a query that, when executed, produces a collection of generic tasks. Each call to `ProcessURLAsync` returns a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer.  
+2. Create a query that, when executed, produces a collection of generic tasks. Each call to `ProcessURLAsync` returns a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer.  
   
     ```csharp  
     // ***Create a query that, when executed, returns a collection of tasks.  
@@ -65,29 +65,29 @@ async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken
         from url in urlList select ProcessURLAsync(url, client, ct);  
     ```  
   
-3.  Call `ToArray` to execute the query and start the tasks. The application of the `WhenAny` method in the next step would execute the query and start the tasks without using `ToArray`, but other methods might not. The safest practice is to force execution of the query explicitly.  
+3. Call `ToArray` to execute the query and start the tasks. The application of the `WhenAny` method in the next step would execute the query and start the tasks without using `ToArray`, but other methods might not. The safest practice is to force execution of the query explicitly.  
   
     ```csharp  
-    // ***Use ToArray to execute the query and start the download tasks.   
+    // ***Use ToArray to execute the query and start the download tasks.
     Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
     ```  
   
-4.  Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `firstFinishedTask`. The type of `firstFinishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.  
+4. Call `WhenAny` on the collection of tasks. `WhenAny` returns a `Task(Of Task(Of Integer))` or `Task<Task<int>>`.  That is, `WhenAny` returns a task that evaluates to a single `Task(Of Integer)` or `Task<int>` when it’s awaited. That single task is the first task in the collection to finish. The task that finished first is assigned to `firstFinishedTask`. The type of `firstFinishedTask` is <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer because that's the return type of `ProcessURLAsync`.  
   
     ```csharp  
-    // ***Call WhenAny and then await the result. The task that finishes   
+    // ***Call WhenAny and then await the result. The task that finishes
     // first is assigned to firstFinishedTask.  
     Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
     ```  
   
-5.  In this example, you’re interested only in the task that finishes first. Therefore, use <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> to cancel the remaining tasks.  
+5. In this example, you’re interested only in the task that finishes first. Therefore, use <xref:System.Threading.CancellationTokenSource.Cancel%2A?displayProperty=nameWithType> to cancel the remaining tasks.  
   
     ```csharp  
     // ***Cancel the rest of the downloads. You just want the first one.  
     cts.Cancel();  
     ```  
   
-6.  Finally, await `firstFinishedTask` to retrieve the length of the downloaded content.  
+6. Finally, await `firstFinishedTask` to retrieve the length of the downloaded content.  
   
     ```csharp  
     var length = await firstFinishedTask;  
@@ -182,8 +182,8 @@ namespace CancelAfterOneTask
             // ***Comment out or delete the loop.  
             //foreach (var url in urlList)  
             //{  
-            //    // GetAsync returns a Task<HttpResponseMessage>.   
-            //    // Argument ct carries the message if the Cancel button is chosen.   
+            //    // GetAsync returns a Task<HttpResponseMessage>.
+            //    // Argument ct carries the message if the Cancel button is chosen.
             //    // ***Note that the Cancel button can cancel all remaining downloads.  
             //    HttpResponseMessage response = await client.GetAsync(url, ct);  
   
@@ -198,17 +198,17 @@ namespace CancelAfterOneTask
             IEnumerable<Task<int>> downloadTasksQuery =  
                 from url in urlList select ProcessURLAsync(url, client, ct);  
   
-            // ***Use ToArray to execute the query and start the download tasks.   
+            // ***Use ToArray to execute the query and start the download tasks.
             Task<int>[] downloadTasks = downloadTasksQuery.ToArray();  
   
-            // ***Call WhenAny and then await the result. The task that finishes   
+            // ***Call WhenAny and then await the result. The task that finishes
             // first is assigned to firstFinishedTask.  
             Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);  
   
             // ***Cancel the rest of the downloads. You just want the first one.  
             cts.Cancel();  
   
-            // ***Await the first completed task and display the results.   
+            // ***Await the first completed task and display the results.
             // Run the program several times to demonstrate that different  
             // websites can finish first.  
             var length = await firstFinishedTask;  
@@ -218,7 +218,7 @@ namespace CancelAfterOneTask
         // ***Bundle the processing steps for a website into one async method.  
         async Task<int> ProcessURLAsync(string url, HttpClient client, CancellationToken ct)  
         {  
-            // GetAsync returns a Task<HttpResponseMessage>.   
+            // GetAsync returns a Task<HttpResponseMessage>.
             HttpResponseMessage response = await client.GetAsync(url, ct);  
   
             // Retrieve the website contents from the HttpResponseMessage.  
@@ -230,8 +230,8 @@ namespace CancelAfterOneTask
         // Add a method that creates a list of web addresses.  
         private List<string> SetUpURLList()  
         {  
-            List<string> urls = new List<string>   
-            {   
+            List<string> urls = new List<string>
+            {
                 "https://msdn.microsoft.com",  
                 "https://msdn.microsoft.com/library/hh290138.aspx",  
                 "https://msdn.microsoft.com/library/hh290140.aspx",  
@@ -251,9 +251,9 @@ namespace CancelAfterOneTask
 }  
 ```  
   
-## See Also
+## See also
 
-- <xref:System.Threading.Tasks.Task.WhenAny%2A>  
-- [Fine-Tuning Your Async Application (C#)](../../../../csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md)  
-- [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md)  
+- <xref:System.Threading.Tasks.Task.WhenAny%2A>
+- [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)
+- [Asynchronous Programming with async and await (C#)](./index.md)
 - [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)

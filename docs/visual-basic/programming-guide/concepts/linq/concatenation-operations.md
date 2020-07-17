@@ -1,5 +1,5 @@
 ---
-title: "Concatenation Operations (Visual Basic)"
+title: "Concatenation Operations"
 ms.date: 07/20/2015
 ms.assetid: 4021e019-a8f7-477b-879e-07dd7f44feb9
 ---
@@ -8,7 +8,7 @@ Concatenation refers to the operation of appending one sequence to another.
   
  The following illustration depicts a concatenation operation on two sequences of characters.  
   
- ![Graphic showing concatenation of two sequences.](../../../../csharp/programming-guide/concepts/linq/media/concat.png "Concat")  
+ ![Graphic showing concatenation of two sequences.](./media/concatenation-operations/concatenation-two-sequences.png)  
   
  The standard query operator methods that perform concatenation are listed in the following section.  
   
@@ -18,7 +18,8 @@ Concatenation refers to the operation of appending one sequence to another.
 |-----------------|-----------------|------------------------------------------|----------------------|  
 |Concat|Concatenates two sequences to form one sequence.|Not applicable.|<xref:System.Linq.Enumerable.Concat%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Concat%2A?displayProperty=nameWithType>|  
   
-## See Also  
- <xref:System.Linq>  
- [Standard Query Operators Overview (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)  
- [How to: Combine and Compare String Collections (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md)
+## See also
+
+- <xref:System.Linq>
+- [Standard Query Operators Overview (Visual Basic)](standard-query-operators-overview.md)
+- [How to: Combine and Compare String Collections (LINQ) (Visual Basic)](how-to-combine-and-compare-string-collections-linq.md)

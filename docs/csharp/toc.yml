@@ -1,0 +1,1856 @@
+- name: C# documentation
+  href: index.yml
+- name: Get started
+  items:
+  - name: Overview
+    displayName: get started
+    href: getting-started/index.md
+  - name: Introduction to the C# language and the .NET framework
+    href: getting-started/introduction-to-the-csharp-language-and-the-net-framework.md
+- name: Tutorials
+  items:
+  - name: Overview
+    displayName: tutorials
+    href: tutorials/index.md
+  - name: Introduction to programming with C#
+    items:
+    - name: Choose your first lesson
+      href: tutorials/intro-to-csharp/index.md
+    - name: Hello world
+      href: tutorials/intro-to-csharp/hello-world.yml
+    - name: Numbers in C#
+      href: tutorials/intro-to-csharp/numbers-in-csharp.yml
+    - name: Branches and loops
+      href: tutorials/intro-to-csharp/branches-and-loops.yml
+    - name: List collections
+      href: tutorials/intro-to-csharp/list-collection.yml
+    - name: Work in your local environment
+      items:
+      - name: Set up your environment
+        href: tutorials/intro-to-csharp/local-environment.md
+      - name: Numbers in C#
+        href: tutorials/intro-to-csharp/numbers-in-csharp-local.md
+      - name: Branches and loops
+        href: tutorials/intro-to-csharp/branches-and-loops-local.md
+      - name: List collections
+        href: tutorials/intro-to-csharp/arrays-and-collections.md
+      - name: Introduction to classes
+        href: tutorials/intro-to-csharp/introduction-to-classes.md
+  - name: Explore C# 6
+    href: tutorials/exploration/csharp-6.yml
+  - name: Explore string interpolation - interactive
+    href: tutorials/exploration/interpolated-strings.yml
+  - name: Explore string interpolation - in your environment
+    href: tutorials/exploration/interpolated-strings-local.md
+  - name: Advanced scenarios for string Interpolation
+    href: tutorials/string-interpolation.md
+  - name: Safely update interfaces with default interface methods
+    href: tutorials/default-interface-methods-versions.md
+  - name: Create mixin functionality with default interface methods
+    href: tutorials/mixins-with-default-interface-methods.md
+  - name: Explore indexes and ranges
+    href: tutorials/ranges-indexes.md
+  - name: Work with nullable reference types
+    href: tutorials/nullable-reference-types.md
+  - name: Upgrade an app to nullable reference types
+    href: tutorials/upgrade-to-nullable-references.md
+  - name: Generate and consume asynchronous streams
+    href: tutorials/generate-consume-asynchronous-stream.md
+  - name: Extend data capabilities using pattern matching
+    href: tutorials/pattern-matching.md
+  - name: Console Application
+    href: tutorials/console-teleprompter.md
+  - name: REST Client
+    href: tutorials/console-webapiclient.md
+  - name: Inheritance in C# and .NET
+    href: tutorials/inheritance.md
+  - name: Work with LINQ
+    href: tutorials/working-with-linq.md
+  - name: Use Attributes
+    href: tutorials/attributes.md
+- name: Tour of C#
+  items:
+  - name: Introduction
+    href: tour-of-csharp/index.md
+  - name: Program Structure
+    href: tour-of-csharp/program-structure.md
+  - name: Types and Variables
+    href: tour-of-csharp/types-and-variables.md
+  - name: Expressions
+    href: tour-of-csharp/expressions.md
+  - name: Statements
+    href: tour-of-csharp/statements.md
+  - name: Classes and objects
+    href: tour-of-csharp/classes-and-objects.md
+  - name: Arrays
+    href: tour-of-csharp/arrays.md
+  - name: Interfaces
+    href: tour-of-csharp/interfaces.md
+  - name: Delegates
+    href: tour-of-csharp/delegates.md
+  - name: Attributes
+    href: tour-of-csharp/attributes.md
+- name: What's new in C#
+  items:
+  - name: C# 8.0
+    displayName: what's new
+    href: whats-new/csharp-8.md
+  - name: C# 7.3
+    href: whats-new/csharp-7-3.md
+  - name: C# 7.2
+    href: whats-new/csharp-7-2.md
+  - name: C# 7.1
+    href: whats-new/csharp-7-1.md
+  - name: C# 7.0
+    href: whats-new/csharp-7.md
+  - name: C# 6
+    href: whats-new/csharp-6.md
+  - name: Breaking changes in the compiler
+    href: whats-new/breaking-changes.md
+  - name: C# Version History
+    href: whats-new/csharp-version-history.md
+  - name: Relationships between language and framework
+    href: whats-new/relationships-between-language-and-library.md
+  - name: Version and update considerations
+    href: whats-new/version-update-considerations.md
+- name: C# concepts
+  items:
+  - name: C# type system
+    href: programming-guide/types/index.md
+  - name: Nullable reference types
+    href: nullable-references.md
+  - name: Choose a strategy for enabling nullable reference types
+    href: nullable-migration-strategies.md
+  - name: Namespaces
+    href: programming-guide/namespaces/index.md
+  - name: Basic Types
+    href: basic-types.md
+  - name: Classes
+    href: programming-guide/classes-and-structs/classes.md
+  - name: Deconstructing tuples and other types
+    href: deconstruct.md
+  - name: Interfaces
+    href: programming-guide/interfaces/index.md
+  - name: Methods
+    href: methods.md
+  - name: Lambda Expressions
+    href: programming-guide/statements-expressions-operators/lambda-expressions.md
+  - name: Properties
+    href: properties.md
+  - name: Indexers
+    href: indexers.md
+  - name: Discards
+    href: discards.md
+  - name: Generics
+    href: programming-guide/generics/index.md
+  - name: Iterators
+    href: iterators.md
+  - name: Delegates & events
+    items:
+    - name: Introduction to Delegates
+      href: delegates-overview.md
+    - name: System.Delegate and the delegate keyword
+      href: delegate-class.md
+    - name: Strongly Typed Delegates
+      href: delegates-strongly-typed.md
+    - name: Common Patterns for Delegates
+      href: delegates-patterns.md
+    - name: Introduction to events
+      href: events-overview.md
+    - name: Standard .NET event patterns
+      href: event-pattern.md
+    - name: The Updated .NET Event Pattern
+      href: modern-events.md
+    - name: Distinguishing Delegates and Events
+      href: distinguish-delegates-events.md
+  - name: Language-Integrated Query (LINQ)
+    items:
+    - name: Overview of LINQ
+      href: linq/index.md
+    - name: Query expression basics
+      href: linq/query-expression-basics.md
+    - name: LINQ in C#
+      href: linq/linq-in-csharp.md
+    - name: Write LINQ queries in C#
+      href: linq/write-linq-queries.md
+    - name: Query a collection of objects
+      href: linq/query-a-collection-of-objects.md
+    - name: Return a query from a method
+      href: linq/return-a-query-from-a-method.md
+    - name: Store the results of a query in memory
+      href: linq/store-the-results-of-a-query-in-memory.md
+    - name: Group query results
+      href: linq/group-query-results.md
+    - name: Create a nested group
+      href: linq/create-a-nested-group.md
+    - name: Perform a subquery on a grouping operation
+      href: linq/perform-a-subquery-on-a-grouping-operation.md
+    - name: Group results by contiguous keys
+      href: linq/group-results-by-contiguous-keys.md
+    - name: Dynamically specify predicate filters at runtime
+      href: linq/dynamically-specify-predicate-filters-at-runtime.md
+    - name: Perform inner joins
+      href: linq/perform-inner-joins.md
+    - name: Perform grouped joins
+      href: linq/perform-grouped-joins.md
+    - name: Perform left outer joins
+      href: linq/perform-left-outer-joins.md
+    - name: Order the results of a join clause
+      href: linq/order-the-results-of-a-join-clause.md
+    - name: Join by using composite keys
+      href: linq/join-by-using-composite-keys.md
+    - name: Perform custom join operations
+      href: linq/perform-custom-join-operations.md
+    - name: Handle null values in query expressions
+      href: linq/handle-null-values-in-query-expressions.md
+    - name: Handle exceptions in query expressions
+      href: linq/handle-exceptions-in-query-expressions.md
+  - name: Asynchronous programming
+    href: async.md
+  - name: Pattern Matching
+    href: pattern-matching.md
+  - name: Write safe, efficient code
+    href: write-safe-efficient-code.md
+  - name: Expression trees
+    items:
+    - name: Introduction to expression trees
+      href: expression-trees.md
+    - name: Expression Trees Explained
+      href: expression-trees-explained.md
+    - name: Framework Types Supporting Expression Trees
+      href: expression-classes.md
+    - name: Executing Expressions
+      href: expression-trees-execution.md
+    - name: Interpreting Expressions
+      href: expression-trees-interpreting.md
+    - name: Building Expressions
+      href: expression-trees-building.md
+    - name: Translating Expressions
+      href: expression-trees-translating.md
+    - name: Summary
+      href: expression-trees-summary.md
+  - name: Native interoperability
+    href: programming-guide/interop/index.md
+  - name: Documenting your code
+    href: codedoc.md
+  - name: Versioning
+    href: versioning.md
+- name: How-to C# articles
+  items:
+  - name: Article index
+    displayName: how to's
+    href: how-to/index.md
+  - name: Parse strings using `String.Split`
+    href: how-to/parse-strings-using-split.md
+  - name: Concatenate strings
+    href: how-to/concatenate-multiple-strings.md
+  - name: Convert a string to a DateTime
+    href: ../standard/base-types/parsing-datetime.md
+  - name: Search strings
+    href: how-to/search-strings.md
+  - name: Modify string contents
+    href: how-to/modify-string-contents.md
+  - name: Compare strings
+    href: how-to/compare-strings.md
+  - name: Safely cast using pattern matching, is and as operators
+    href: how-to/safely-cast-using-pattern-matching-is-and-as-operators.md
+- name: The .NET Compiler Platform SDK (Roslyn APIs)
+  items:
+  - name: The .NET Compiler Platform SDK (Roslyn APIs) overview
+    href: roslyn-sdk/index.md
+  - name: Understand the compiler API model
+    href: roslyn-sdk/compiler-api-model.md
+  - name: Work with syntax
+    href: roslyn-sdk/work-with-syntax.md
+  - name: Work with semantics
+    href: roslyn-sdk/work-with-semantics.md
+  - name: Work with a workspace
+    href: roslyn-sdk/work-with-workspace.md
+  - name: Explore code with the syntax visualizer
+    href: roslyn-sdk/syntax-visualizer.md
+  - name: Quick starts
+    items:
+    - name: Syntax analysis
+      href: roslyn-sdk/get-started/syntax-analysis.md
+    - name: Semantic analysis
+      href: roslyn-sdk/get-started/semantic-analysis.md
+    - name: Syntax Transformation
+      href: roslyn-sdk/get-started/syntax-transformation.md
+  - name: Tutorials
+    items:
+    - name: Build your first analyzer and code fix
+      href: roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#    - name: Get started writing custom analyzers and code fixes
+#  - name: Tutorials
+#    items:
+#    - name: Build your first analyzer
+#    - name: Build your first code fix
+#    - name: Deploy your analyzer as a VSIX
+#    - name: Deploy your analyzer as a NuGet package
+#- name: Samples
+# Taken from https://github.com/dotnet/roslyn/wiki/Samples-and-Walkthroughs
+#  items:
+#    - name: Async packages
+#    - name: Console classifier
+#    - name: Convert to auto property
+#    - name: Format solution
+#    - name: Implement notify property changed
+#    - name: Make const
+#    - name: How to guides
+# Look at the samples, and determine which are "How To" vs. Samples.
+- name: C# programming guide
+  items:
+  - name: Overview
+    displayName: programming guide
+    href: programming-guide/index.md
+  - name: Inside a C# program
+    items:
+    - name: What's inside a C# program
+      href: programming-guide/inside-a-program/index.md
+    - name: Hello World -- Your First Program
+      href: programming-guide/inside-a-program/hello-world-your-first-program.md
+    - name: General Structure of a C# Program
+      href: programming-guide/inside-a-program/general-structure-of-a-csharp-program.md
+    - name: Identifier names
+      href: programming-guide/inside-a-program/identifier-names.md
+    - name: C# Coding Conventions
+      href: programming-guide/inside-a-program/coding-conventions.md
+  - name: Main() and command-line arguments
+    items:
+    - name: Overview
+      displayName: main method
+      href: programming-guide/main-and-command-args/index.md
+    - name: Command-Line Arguments
+      href: programming-guide/main-and-command-args/command-line-arguments.md
+    - name: "How to display command-line arguments"
+      href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
+    - name: Main() Return Values
+      href: programming-guide/main-and-command-args/main-return-values.md
+  - name: Programming concepts
+    items:
+    - name: Overview
+      displayName: programming concepts
+      href: programming-guide/concepts/index.md
+    - name: Asynchronous programming with async and await
+      items:
+      - name: Overview
+        displayName: asynchronous programming
+        href: programming-guide/concepts/async/index.md
+      - name: Task asynchronous programming model
+        href: programming-guide/concepts/async/task-asynchronous-programming-model.md
+      - name: "Walkthrough: Accessing the Web by Using async and await"
+        href: programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md
+      - name: "How to extend the async walkthrough by using Task.WhenAll"
+        href: programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md
+      - name: "How to make multiple web requests in parallel by using async and await"
+        href: programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md
+      - name: Async Return Types
+        href: programming-guide/concepts/async/async-return-types.md
+      - name: Control Flow in Async Programs
+        href: programming-guide/concepts/async/control-flow-in-async-programs.md
+      - name: Cancel tasks and processing completed tasks
+        items:
+        - name: Overview
+          href: programming-guide/concepts/async/fine-tuning-your-async-application.md
+        - name: Cancel an Async Task or a List of Tasks
+          href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
+        - name: Cancel Async Tasks after a Period of Time
+          href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
+        - name: Cancel Remaining Async Tasks after One Is Complete
+          href: programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md
+        - name: Start Multiple Async Tasks and Process Them As They Complete
+          href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
+      - name: Handling Reentrancy in Async Apps
+        href: programming-guide/concepts/async/handling-reentrancy-in-async-apps.md
+      - name: Using Async for File Access
+        href: programming-guide/concepts/async/using-async-for-file-access.md
+    - name: Attributes
+      items:
+      - name: Overview
+        displayName: attributes
+        href: programming-guide/concepts/attributes/index.md
+      - name: Creating Custom Attributes
+        href: programming-guide/concepts/attributes/creating-custom-attributes.md
+      - name: Accessing Attributes by Using Reflection
+        href: programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md
+      - name: "How to create a C/C++ union by using attributes"
+        href: programming-guide/concepts/attributes/how-to-create-a-c-cpp-union-by-using-attributes.md
+    - name: Collections
+      href: programming-guide/concepts/collections.md
+    - name: Covariance and contravariance
+      items:
+      - name: Overview
+        displayName: covariance and contravariance
+        href: programming-guide/concepts/covariance-contravariance/index.md
+      - name: Variance in Generic Interfaces
+        href: programming-guide/concepts/covariance-contravariance/variance-in-generic-interfaces.md
+        items:
+        - name: Create Variant Generic Interfaces
+          href: programming-guide/concepts/covariance-contravariance/creating-variant-generic-interfaces.md
+        - name: Use Variance in Interfaces for Generic Collections
+          href: programming-guide/concepts/covariance-contravariance/using-variance-in-interfaces-for-generic-collections.md
+      - name: Variance in Delegates
+        href: programming-guide/concepts/covariance-contravariance/variance-in-delegates.md
+        items:
+        - name: Use Variance in Delegates
+          href: programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md
+        - name: Use Variance for Func and Action Generic Delegates
+          href: programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md
+    - name: Expression trees
+      items:
+      - name: Overview
+        displayName: expression trees
+        href: programming-guide/concepts/expression-trees/index.md
+      - name: "How to execute expression trees"
+        href: programming-guide/concepts/expression-trees/how-to-execute-expression-trees.md
+      - name: "How to modify expression trees"
+        href: programming-guide/concepts/expression-trees/how-to-modify-expression-trees.md
+      - name: "How to use expression trees to build dynamic queries"
+        href: programming-guide/concepts/expression-trees/how-to-use-expression-trees-to-build-dynamic-queries.md
+      - name: Debugging Expression Trees in Visual Studio
+        href: programming-guide/concepts/expression-trees/debugging-expression-trees-in-visual-studio.md
+      - name: DebugView Syntax
+        href: programming-guide/concepts/expression-trees/debugview-syntax.md
+    - name: Iterators
+      href: programming-guide/concepts/iterators.md
+    - name: Language-Integrated Query (LINQ)
+      items:
+      - name: Overview
+        displayName: LINQ overview
+        href: programming-guide/concepts/linq/index.md
+      - name: Getting Started with LINQ in C#
+        items:
+        - name: Introduction to LINQ Queries
+          href: programming-guide/concepts/linq/introduction-to-linq-queries.md
+        - name: LINQ and Generic Types
+          href: programming-guide/concepts/linq/linq-and-generic-types.md
+        - name: Basic LINQ Query Operations
+          href: programming-guide/concepts/linq/basic-linq-query-operations.md
+        - name: Data Transformations with LINQ
+          href: programming-guide/concepts/linq/data-transformations-with-linq.md
+        - name: Type Relationships in LINQ Query Operations
+          href: programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md
+        - name: Query Syntax and Method Syntax in LINQ
+          href: programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md
+        - name: C# Features That Support LINQ
+          href: programming-guide/concepts/linq/features-that-support-linq.md
+        - name: "Walkthrough: Writing Queries in C# (LINQ)"
+          href: programming-guide/concepts/linq/walkthrough-writing-queries-linq.md
+      - name: Standard Query Operators Overview
+        items:
+        - name: Overview
+          href: programming-guide/concepts/linq/standard-query-operators-overview.md
+        - name: Query Expression Syntax for Standard Query Operators
+          href: programming-guide/concepts/linq/query-expression-syntax-for-standard-query-operators.md
+        - name: Classification of Standard Query Operators by Manner of Execution
+          href: programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md
+        - name: Sorting Data
+          href: programming-guide/concepts/linq/sorting-data.md
+        - name: Set Operations
+          href: programming-guide/concepts/linq/set-operations.md
+        - name: Filtering Data
+          href: programming-guide/concepts/linq/filtering-data.md
+        - name: Quantifier Operations
+          href: programming-guide/concepts/linq/quantifier-operations.md
+        - name: Projection Operations
+          href: programming-guide/concepts/linq/projection-operations.md
+        - name: Partitioning Data
+          href: programming-guide/concepts/linq/partitioning-data.md
+        - name: Join Operations
+          href: programming-guide/concepts/linq/join-operations.md
+        - name: Grouping Data
+          href: programming-guide/concepts/linq/grouping-data.md
+        - name: Generation Operations
+          href: programming-guide/concepts/linq/generation-operations.md
+        - name: Equality Operations
+          href: programming-guide/concepts/linq/equality-operations.md
+        - name: Element Operations
+          href: programming-guide/concepts/linq/element-operations.md
+        - name: Converting Data Types
+          href: programming-guide/concepts/linq/converting-data-types.md
+        - name: Concatenation Operations
+          href: programming-guide/concepts/linq/concatenation-operations.md
+        - name: Aggregation Operations
+          href: programming-guide/concepts/linq/aggregation-operations.md
+      - name: LINQ to Objects
+        items:
+        - name: Overview
+          href: programming-guide/concepts/linq/linq-to-objects.md
+        - name: LINQ and Strings
+          href: programming-guide/concepts/linq/linq-and-strings.md
+        - name: How to articles
+          items:
+          - name: "How to count occurrences of a word in a string (LINQ)"
+            href: programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md
+          - name: "How to query for sentences that contain a specified set of words (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md
+          - name: "How to query for characters in a string (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-characters-in-a-string-linq.md
+          - name: "How to combine LINQ queries with regular expressions"
+            href: programming-guide/concepts/linq/how-to-combine-linq-queries-with-regular-expressions.md
+          - name: "How to find the set difference between two lists (LINQ)"
+            href: programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md
+          - name: "How to sort or filter text data by any word or field (LINQ)"
+            href: programming-guide/concepts/linq/how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md
+          - name: "How to reorder the fields of a delimited file (LINQ)"
+            href: programming-guide/concepts/linq/how-to-reorder-the-fields-of-a-delimited-file-linq.md
+          - name: "How to combine and compare string collections (LINQ)"
+            href: programming-guide/concepts/linq/how-to-combine-and-compare-string-collections-linq.md
+          - name: "How to populate object collections from multiple sources (LINQ)"
+            href: programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md
+          - name: "How to split a file into many files by using groups (LINQ)"
+            href: programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md
+          - name: "How to join content from dissimilar files (LINQ)"
+            href: programming-guide/concepts/linq/how-to-join-content-from-dissimilar-files-linq.md
+          - name: "How to compute column values in a CSV text file (LINQ)"
+            href: programming-guide/concepts/linq/how-to-compute-column-values-in-a-csv-text-file-linq.md
+        - name: LINQ and Reflection
+          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+        - name: "How to query an assembly's metadata with Reflection (LINQ)"
+          href: programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md
+        - name: LINQ and File Directories
+          items:
+          - name: Overview
+            href: programming-guide/concepts/linq/linq-and-file-directories.md
+          - name: "How to query for files with a specified attribute or name"
+            href: programming-guide/concepts/linq/how-to-query-for-files-with-a-specified-attribute-or-name.md
+          - name: "How to group files by extension (LINQ)"
+            href: programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md
+          - name: "How to query for the total number of bytes in a set of folders (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md
+          - name: "How to compare the contents of two folders (LINQ)"
+            href: programming-guide/concepts/linq/how-to-compare-the-contents-of-two-folders-linq.md
+          - name: "How to query for the largest file or files in a directory tree (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
+          - name: "How to query for duplicate files in a directory tree (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
+          - name: "How to query the contents of files in a folder (LINQ)"
+            href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
+        - name: "How to query an ArrayList with LINQ"
+          href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
+        - name: "How to add custom methods for LINQ queries"
+          href: programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md
+      - name: LINQ to XML
+        items:
+        - name: Getting Started (LINQ to XML)
+          items:
+          - name: LINQ to XML Overview
+            href: programming-guide/concepts/linq/linq-to-xml-overview.md
+          - name: LINQ to XML vs. DOM
+            href: programming-guide/concepts/linq/linq-to-xml-vs-dom.md
+          - name: LINQ to XML vs. Other XML Technologies
+            href: programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md
+        - name: Programming Guide (LINQ to XML)
+          items:
+          - name: LINQ to XML Programming Overview
+            items:
+            - name: Functional vs. Procedural Programming (LINQ to XML)
+              href: programming-guide/concepts/linq/functional-vs-procedural-programming-linq-to-xml.md
+            - name: LINQ to XML Classes Overview
+              href: programming-guide/concepts/linq/linq-to-xml-classes-overview.md
+            - name: XElement Class Overview
+              href: programming-guide/concepts/linq/xelement-class-overview.md
+            - name: XAttribute Class Overview
+              href: programming-guide/concepts/linq/xattribute-class-overview.md
+            - name: XDocument Class Overview
+              href: programming-guide/concepts/linq/xdocument-class-overview.md
+            - name: "How to build LINQ to XML examples"
+              href: programming-guide/concepts/linq/how-to-build-linq-to-xml-examples.md
+          - name: XML Trees
+            items:
+            - name: Functional Construction (LINQ to XML)
+              href: programming-guide/concepts/linq/functional-construction-linq-to-xml.md
+            - name: Creating XML Trees in C# (LINQ to XML)
+              href: programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2.md
+            - name: Parsing XML
+              items:
+              - name: "How to parse a string"
+                href: programming-guide/concepts/linq/how-to-parse-a-string.md
+              - name: "How to load XML from a file"
+                href: programming-guide/concepts/linq/how-to-load-xml-from-a-file.md
+              - name: Preserving White Space while Loading or Parsing XML
+                href: programming-guide/concepts/linq/preserving-white-space-while-loading-or-parsing-xml1.md
+              - name: "How to catch parsing errors"
+                href: programming-guide/concepts/linq/how-to-catch-parsing-errors.md
+              - name: "How to create a tree from an XmlReader"
+                href: programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md
+              - name: "How to stream XML fragments from an XmlReader"
+                href: programming-guide/concepts/linq/how-to-stream-xml-fragments-from-an-xmlreader.md
+            - name: "How to populate an XML tree with an XmlWriter (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml.md
+            - name: "How to validate using XSD (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md
+            - name: Valid Content of XElement and XDocument Objects
+              href: programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects3.md
+          - name: Working with XML Namespaces
+            items:
+            - name: Namespaces Overview (LINQ to XML)
+              href: programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md
+            - name: "How to create a document with namespaces (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-create-a-document-with-namespaces-linq-to-xml.md
+            - name: "How to control namespace prefixes (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-control-namespace-prefixes-linq-to-xml.md
+            - name: Scope of Default Namespaces in C#
+              href: programming-guide/concepts/linq/scope-of-default-namespaces.md
+            - name: "How to write queries on XML in namespaces"
+              href: programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md
+          - name: Serializing XML Trees
+            items:
+            - name: Preserving White Space While Serializing
+              href: programming-guide/concepts/linq/preserving-white-space-while-serializing.md
+            - name: Serializing with an XML Declaration
+              href: programming-guide/concepts/linq/serializing-with-an-xml-declaration.md
+            - name: Serializing to Files, TextWriters, and XmlWriters
+              href: programming-guide/concepts/linq/serializing-to-files-textwriters-and-xmlwriters.md
+            - name: Serializing to an XmlReader (Invoking XSLT)
+              href: programming-guide/concepts/linq/serializing-to-an-xmlreader-invoking-xslt.md
+          - name: LINQ to XML Axes
+            items:
+            - name: LINQ to XML Axes Overview
+              href: programming-guide/concepts/linq/linq-to-xml-axes-overview.md
+            - name: "How to retrieve a collection of elements (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-collection-of-elements-linq-to-xml.md
+            - name: "How to retrieve the value of an element (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-element-linq-to-xml.md
+            - name: "How to filter on element names (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-filter-on-element-names-linq-to-xml.md
+            - name: "How to chain axis method calls (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-chain-axis-method-calls-linq-to-xml.md
+            - name: "How to retrieve a single child element (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-single-child-element-linq-to-xml.md
+            - name: "How to retrieve a collection of attributes (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-collection-of-attributes-linq-to-xml.md
+            - name: "How to retrieve a single attribute (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-a-single-attribute-linq-to-xml.md
+            - name: "How to retrieve the value of an attribute (LINQ to XML)"
+              href: programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-attribute-linq-to-xml.md
+            - name: "How to retrieve the shallow value of an element"
+              href: programming-guide/concepts/linq/how-to-retrieve-the-shallow-value-of-an-element.md
+          - name: Querying XML Trees
+            items:
+            - name: Basic Queries (LINQ to XML)
+              items:
+              - name: "How to find an element with a specific attribute"
+                href: programming-guide/concepts/linq/how-to-find-an-element-with-a-specific-attribute.md
+              - name: "How to find an element with a specific child element"
+                href: programming-guide/concepts/linq/how-to-find-an-element-with-a-specific-child-element.md
+              - name: Querying an XDocument vs. Querying an XElement
+                href: programming-guide/concepts/linq/querying-an-xdocument-vs-querying-an-xelement.md
+              - name: "How to find descendants with a specific element same"
+                href: programming-guide/concepts/linq/how-to-find-descendants-with-a-specific-element-name.md
+              - name: "How to find a single descendant using the descendants method"
+                href: programming-guide/concepts/linq/how-to-find-a-single-descendant-using-the-descendants-method.md
+              - name: "How to write queries with complex filtering"
+                href: programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md
+              - name: "How to filter on an optional element"
+                href: programming-guide/concepts/linq/how-to-filter-on-an-optional-element.md
+              - name: "How to find all nodes in a namespace"
+                href: programming-guide/concepts/linq/how-to-find-all-nodes-in-a-namespace.md
+              - name: "How to sort elements"
+                href: programming-guide/concepts/linq/how-to-sort-elements.md
+              - name: "How to sort elements on multiple keys"
+                href: programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md
+              - name: "How to calculate intermediate values"
+                href: programming-guide/concepts/linq/how-to-calculate-intermediate-values.md
+              - name: "How to write a query that finds elements based on context"
+                href: programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md
+              - name: "How to debug empty query results sets"
+                href: programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md
+            - name: Projections and Transformations (LINQ to XML)
+              items:
+              - name: "How to work with dictionaries using LINQ to XML"
+                href: programming-guide/concepts/linq/how-to-work-with-dictionaries-using-linq-to-xml.md
+              - name: "How to transform the shape of an XML tree"
+                href: programming-guide/concepts/linq/how-to-transform-the-shape-of-an-xml-tree.md
+              - name: "How to control the type of a projection"
+                href: programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md
+              - name: "How to project a new type (LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-project-a-new-type-linq-to-xml.md
+              - name: "How to project an object graph"
+                href: programming-guide/concepts/linq/how-to-project-an-object-graph.md
+              - name: "How to project an anonymous type"
+                href: programming-guide/concepts/linq/how-to-project-an-anonymous-type.md
+              - name: "How to generate text files from XML"
+                href: programming-guide/concepts/linq/how-to-generate-text-files-from-xml.md
+              - name: "How to generate XML from CSV files"
+                href: programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md
+            - name: Advanced Query Techniques (LINQ to XML)
+              items:
+              - name: "How to join two collections (LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-join-two-collections-linq-to-xml.md
+              - name: "How to create hierarchy using grouping"
+                href: programming-guide/concepts/linq/how-to-create-hierarchy-using-grouping.md
+              - name: "How to query LINQ to XML using XPath"
+                href: programming-guide/concepts/linq/how-to-query-linq-to-xml-using-xpath.md
+              - name: "How to write a LINQ to XML axis method"
+                href: programming-guide/concepts/linq/how-to-write-a-linq-to-xml-axis-method.md
+              - name: "How to perform streaming transformations of text to XML"
+                href: programming-guide/concepts/linq/how-to-perform-streaming-transformations-of-text-to-xml.md
+              - name: "How to list all nodes in a tree"
+                href: programming-guide/concepts/linq/how-to-list-all-nodes-in-a-tree.md
+              - name: "How to retrieve paragraphs from an Office Open XML document"
+                href: programming-guide/concepts/linq/how-to-retrieve-paragraphs-from-an-office-open-xml-document.md
+              - name: "How to modify an Office Open XML document"
+                href: programming-guide/concepts/linq/how-to-modify-an-office-open-xml-document.md
+              - name: "How to populate an XML tree from the file system"
+                href: programming-guide/concepts/linq/how-to-populate-an-xml-tree-from-the-file-system.md
+            - name: LINQ to XML for XPath Users
+              items:
+              - name: Comparison of XPath and LINQ to XML
+                href: programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md
+              - name: "How to find a child element (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-a-child-element-xpath-linq-to-xml.md
+              - name: "How to find a list of child elements (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-a-list-of-child-elements-xpath-linq-to-xml.md
+              - name: "How to find the root element (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-the-root-element-xpath-linq-to-xml.md
+              - name: "How to find descendant elements (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-descendant-elements-xpath-linq-to-xml.md
+              - name: "How to filter on an attribute (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-filter-on-an-attribute-xpath-linq-to-xml.md
+              - name: "How to find related elements (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-related-elements-xpath-linq-to-xml.md
+              - name: "How to find elements in a namespace (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-elements-in-a-namespace-xpath-linq-to-xml.md
+              - name: "How to find preceding siblings (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-preceding-siblings-xpath-linq-to-xml.md
+              - name: "How to find descendants of a child element (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-descendants-of-a-child-element-xpath-linq-to-xml.md
+              - name: "How to find a union of two location paths (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-a-union-of-two-location-paths-xpath-linq-to-xml.md
+              - name: "How to find sibling nodes (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-sibling-nodes-xpath-linq-to-xml.md
+              - name: "How to find an attribute of the parent (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-an-attribute-of-the-parent-xpath-linq-to-xml.md
+              - name: "How to find attributes of siblings with a specific name (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-attributes-of-siblings-with-a-specific-name-xpath-linq-to-xml.md
+              - name: "How to find elements with a specific attribute (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-elements-with-a-specific-attribute-xpath-linq-to-xml.md
+              - name: "How to find child elements based on position (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-child-elements-based-on-position-xpath-linq-to-xml.md
+              - name: "How to find the immediate preceding sibling (XPath-LINQ to XML)"
+                href: programming-guide/concepts/linq/how-to-find-the-immediate-preceding-sibling-xpath-linq-to-xml.md
+            - name: Pure Functional Transformations of XML
+              items:
+              - name: Introduction to Pure Functional Transformations
+                href: programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md
+              - name: Concepts and Terminology (Functional Transformation)
+                href: programming-guide/concepts/linq/concepts-and-terminology-functional-transformation.md
+              - name: Functional Programming vs. Imperative Programming
+                href: programming-guide/concepts/linq/functional-programming-vs-imperative-programming.md
+              - name: Refactoring Into Pure Functions
+                href: programming-guide/concepts/linq/refactoring-into-pure-functions.md
+              - name: Applicability of Functional Transformation
+                href: programming-guide/concepts/linq/applicability-of-functional-transformation.md
+              - name: Functional Transformation of XML
+                href: programming-guide/concepts/linq/functional-transformation-of-xml.md
+              - name: "Tutorial: Chaining Queries Together"
+                items:
+                - name: Deferred Execution and Lazy Evaluation in LINQ to XML
+                  href: programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md
+                - name: Deferred Execution Example
+                  href: programming-guide/concepts/linq/deferred-execution-example.md
+                - name: Chaining Queries Example
+                  href: programming-guide/concepts/linq/chaining-queries-example.md
+                - name: Intermediate Materialization
+                  href: programming-guide/concepts/linq/intermediate-materialization.md
+                - name: Chaining Standard Query Operators Together
+                  href: programming-guide/concepts/linq/chaining-standard-query-operators-together.md
+              - name: "Tutorial: Manipulating Content in a WordprocessingML Document"
+                items:
+                - name: Shape of WordprocessingML Documents
+                  href: programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md
+                - name: Creating the Source Office Open XML Document
+                  href: programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md
+                - name: Finding the Default Paragraph Style
+                  href: programming-guide/concepts/linq/finding-the-default-paragraph-style.md
+                - name: Retrieving the Paragraphs and Their Styles
+                  href: programming-guide/concepts/linq/retrieving-the-paragraphs-and-their-styles.md
+                - name: Retrieving the Text of the Paragraphs
+                  href: programming-guide/concepts/linq/retrieving-the-text-of-the-paragraphs.md
+                - name: Refactoring Using an Extension Method
+                  href: programming-guide/concepts/linq/refactoring-using-an-extension-method.md
+                - name: Refactoring Using a Pure Function
+                  href: programming-guide/concepts/linq/refactoring-using-a-pure-function.md
+                - name: Projecting XML in a Different Shape
+                  href: programming-guide/concepts/linq/projecting-xml-in-a-different-shape.md
+                - name: Finding Text in Word Documents
+                  href: programming-guide/concepts/linq/finding-text-in-word-documents.md
+                - name: Details of Office Open XML WordprocessingML Documents
+                  items:
+                  - name: WordprocessingML Document with Styles
+                    href: programming-guide/concepts/linq/wordprocessingml-document-with-styles.md
+                  - name: Style Part of a WordprocessingML Document
+                    href: programming-guide/concepts/linq/style-part-of-a-wordprocessingml-document.md
+                  - name: Example that Outputs Office Open XML Document Parts
+                    href: programming-guide/concepts/linq/example-that-outputs-office-open-xml-document-parts.md
+          - name: Modifying XML Trees (LINQ to XML)
+            items:
+            - name: In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)
+              href: programming-guide/concepts/linq/in-memory-xml-tree-modification-vs-functional-construction-linq-to-xml.md
+            - name: Adding Elements, Attributes, and Nodes to an XML Tree
+              href: programming-guide/concepts/linq/adding-elements-attributes-and-nodes-to-an-xml-tree.md
+            - name: Modifying Elements, Attributes, and Nodes in an XML Tree
+              href: programming-guide/concepts/linq/modifying-elements-attributes-and-nodes-in-an-xml-tree.md
+            - name: Removing Elements, Attributes, and Nodes from an XML Tree
+              href: programming-guide/concepts/linq/removing-elements-attributes-and-nodes-from-an-xml-tree.md
+            - name: Maintaining Name-Value Pairs
+              href: programming-guide/concepts/linq/maintaining-name-value-pairs.md
+            - name: "How to change the namespace for an entire XML tree"
+              href: programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md
+          - name: Performance (LINQ to XML)
+            items:
+            - name: Performance of Chained Queries (LINQ to XML)
+              href: programming-guide/concepts/linq/performance-of-chained-queries-linq-to-xml.md
+            - name: Atomized XName and XNamespace Objects (LINQ to XML)
+              href: programming-guide/concepts/linq/atomized-xname-and-xnamespace-objects-linq-to-xml.md
+            - name: Pre-Atomization of XName Objects (LINQ to XML)
+              href: programming-guide/concepts/linq/pre-atomization-of-xname-objects-linq-to-xml.md
+            - name: Statically Compiled Queries (LINQ to XML)
+              href: programming-guide/concepts/linq/statically-compiled-queries-linq-to-xml.md
+          - name: Advanced LINQ to XML Programming
+            items:
+            - name: LINQ to XML Annotations
+              href: programming-guide/concepts/linq/linq-to-xml-annotations.md
+            - name: LINQ to XML Events
+              href: programming-guide/concepts/linq/linq-to-xml-events.md
+            - name: Programming with Nodes
+              href: programming-guide/concepts/linq/programming-with-nodes.md
+            - name: Mixed Declarative Code-Imperative Code Bugs (LINQ to XML)
+              href: programming-guide/concepts/linq/mixed-declarative-code-imperative-code-bugs-linq-to-xml.md
+            - name: "How to stream XML fragments with access to header information"
+              href: programming-guide/concepts/linq/how-to-stream-xml-fragments-with-access-to-header-information.md
+            - name: "How to perform streaming transform of large XML documents"
+              href: programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md
+            - name: "How to read and write an encoded document"
+              href: programming-guide/concepts/linq/how-to-read-and-write-an-encoded-document.md
+            - name: Using XSLT to Transform an XML Tree
+              href: programming-guide/concepts/linq/using-xslt-to-transform-an-xml-tree.md
+            - name: "How to use annotations to transform LINQ to XML trees in an XSLT style"
+              href: programming-guide/concepts/linq/how-to-use-annotations-to-transform-linq-to-xml-trees-in-an-xslt-style.md
+            - name: Serializing Object Graphs that Contain XElement Objects
+              items:
+              - name: "How to serialize using XmlSerializer"
+                href: programming-guide/concepts/linq/how-to-serialize-using-xmlserializer.md
+              - name: "How to serialize using DataContractSerializer"
+                href: programming-guide/concepts/linq/how-to-serialize-using-datacontractserializer.md
+          - name: LINQ to XML Security
+            href: programming-guide/concepts/linq/linq-to-xml-security.md
+          - name: Sample XML Documents (LINQ to XML)
+            items:
+            - name: "Sample XML File: Typical Purchase Order (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md
+            - name: "Sample XML File: Typical Purchase Order in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md
+            - name: "Sample XML File: Multiple Purchase Orders (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md
+            - name: "Sample XML File: Multiple Purchase Orders in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md
+            - name: "Sample XML File: Test Configuration (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md
+            - name: "Sample XML File: Test Configuration in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace1.md
+            - name: "Sample XML File: Customers and Orders (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md
+            - name: "Sample XSD File: Customers and Orders"
+              href: programming-guide/concepts/linq/sample-xsd-file-customers-and-orders1.md
+            - name: "Sample XML File: Customers and Orders in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md
+            - name: "Sample XML File: Numerical Data (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md
+            - name: "Sample XML File: Numerical Data in a Namespace"
+              href: programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md
+            - name: "Sample XML File: Books (LINQ to XML)"
+              href: programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md
+            - name: "Sample XML File: Consolidated Purchase Orders"
+              href: programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md
+        - name: Reference (LINQ to XML)
+          href: programming-guide/concepts/linq/reference-linq-to-xml.md
+      - name: LINQ to ADO.NET (Portal Page)
+        href: programming-guide/concepts/linq/linq-to-adonet-portal-page.md
+      - name: Enabling a Data Source for LINQ Querying
+        href: programming-guide/concepts/linq/enabling-a-data-source-for-linq-querying1.md
+      - name: Visual Studio IDE and Tools Support for LINQ
+        href: programming-guide/concepts/linq/visual-studio-ide-and-tools-support-for-linq.md
+    - name: Object-Oriented Programming
+      href: programming-guide/concepts/object-oriented-programming.md
+    - name: Reflection
+      href: programming-guide/concepts/reflection.md
+    - name: Serialization (C#)
+      items:
+      - name: Overview
+        displayName: serialization
+        href: programming-guide/concepts/serialization/index.md
+      - name: "How to write object data to an XML file"
+        href: programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md
+      - name: "How to read object data from an XML file"
+        href: programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md
+      - name: "Walkthrough: Persisting an Object in Visual Studio"
+        href: programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md
+  - name: Statements, expressions, and operators
+    items:
+    - name: Overview
+      displayName: statements, expressions, operators
+      href: programming-guide/statements-expressions-operators/index.md
+    - name: Statements
+      href: programming-guide/statements-expressions-operators/statements.md
+    - name: Expressions
+      href: programming-guide/statements-expressions-operators/expressions.md
+    - name: Expression-bodied members
+      href: programming-guide/statements-expressions-operators/expression-bodied-members.md
+    - name: Anonymous functions
+      items:
+      - name: Overview
+        href: programming-guide/statements-expressions-operators/anonymous-functions.md
+      - name: Lambda expressions
+        href: programming-guide/statements-expressions-operators/lambda-expressions.md
+      - name: "How to use lambda expressions in a query"
+        href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
+    - name: Equality and equality comparisons
+      items:
+      - name: Equality comparisons
+        href: programming-guide/statements-expressions-operators/equality-comparisons.md
+      - name: "How to define value equality for a type"
+        href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
+      - name: "How to test for reference equality (identity)"
+        href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
+  - name: Types
+    items:
+    - name: Use and define types
+      href: programming-guide/types/index.md
+    - name: Casting and Type Conversions
+      href: programming-guide/types/casting-and-type-conversions.md
+    - name: Boxing and Unboxing
+      href: programming-guide/types/boxing-and-unboxing.md
+    - name: "How to convert a byte array to an int"
+      href: programming-guide/types/how-to-convert-a-byte-array-to-an-int.md
+    - name: "How to convert a string to a number"
+      href: programming-guide/types/how-to-convert-a-string-to-a-number.md
+    - name: "How to convert between hexadecimal strings and numeric types"
+      href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
+    - name: Using Type dynamic
+      href: programming-guide/types/using-type-dynamic.md
+    - name: "Walkthrough: Creating and Using Dynamic Objects (C# and Visual Basic)"
+      href: programming-guide/types/walkthrough-creating-and-using-dynamic-objects.md
+  - name: Classes and Structs
+    items:
+    - name: Overview
+      displayName: classes
+      href: programming-guide/classes-and-structs/index.md
+    - name: Classes
+      href: programming-guide/classes-and-structs/classes.md
+    - name: Objects
+      href: programming-guide/classes-and-structs/objects.md
+    - name: Inheritance
+      href: programming-guide/classes-and-structs/inheritance.md
+    - name: Polymorphism
+      items:
+      - name: Overview
+        displayName: polymorphism
+        href: programming-guide/classes-and-structs/polymorphism.md
+      - name: Versioning with the Override and New Keywords
+        href: programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md
+      - name: Knowing When to Use Override and New Keywords
+        href: programming-guide/classes-and-structs/knowing-when-to-use-override-and-new-keywords.md
+      - name: "How to override the ToString method"
+        href: programming-guide/classes-and-structs/how-to-override-the-tostring-method.md
+    - name: Members
+      items:
+      - name: Members overview
+        href: programming-guide/classes-and-structs/members.md
+      - name: Abstract and Sealed Classes and Class Members
+        href: programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md
+      - name: Static Classes and Static Class Members
+        href: programming-guide/classes-and-structs/static-classes-and-static-class-members.md
+      - name: Access Modifiers
+        href: programming-guide/classes-and-structs/access-modifiers.md
+      - name: Fields
+        href: programming-guide/classes-and-structs/fields.md
+      - name: Constants
+        href: programming-guide/classes-and-structs/constants.md
+      - name: "How to define abstract properties"
+        href: programming-guide/classes-and-structs/how-to-define-abstract-properties.md
+      - name: "How to define constants in C#"
+        href: programming-guide/classes-and-structs/how-to-define-constants.md
+    - name: Properties
+      items:
+      - name: Properties overview
+        href: programming-guide/classes-and-structs/properties.md
+      - name: Using Properties
+        href: programming-guide/classes-and-structs/using-properties.md
+      - name: Interface Properties
+        href: programming-guide/classes-and-structs/interface-properties.md
+      - name: Restricting Accessor Accessibility
+        href: programming-guide/classes-and-structs/restricting-accessor-accessibility.md
+      - name: "How to declare and use read write properties"
+        href: programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties.md
+      - name: Auto-Implemented Properties
+        href: programming-guide/classes-and-structs/auto-implemented-properties.md
+      - name: "How to implement a lightweight class with auto-implemented properties"
+        href: programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties.md
+    - name: Methods
+      items:
+      - name: Methods overview
+        href: programming-guide/classes-and-structs/methods.md
+      - name: Local functions
+        href: programming-guide/classes-and-structs/local-functions.md
+      - name: Ref returns and ref locals
+        href: programming-guide/classes-and-structs/ref-returns.md
+      - name: Parameters
+        items:
+        - name: Passing parameters
+          href: programming-guide/classes-and-structs/passing-parameters.md
+        - name: Passing Value-Type Parameters
+          href: programming-guide/classes-and-structs/passing-value-type-parameters.md
+        - name: Passing Reference-Type Parameters
+          href: programming-guide/classes-and-structs/passing-reference-type-parameters.md
+        - name: "How to know the difference between passing a struct and passing a class reference to a method"
+          href: programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md
+      - name: Implicitly Typed Local Variables
+        href: programming-guide/classes-and-structs/implicitly-typed-local-variables.md
+      - name: "How to use implicitly typed local variables and arrays in a query expression"
+        href: programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md
+      - name: Extension Methods
+        href: programming-guide/classes-and-structs/extension-methods.md
+      - name: "How to implement and call a custom extension method"
+        href: programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md
+      - name: "How to create a new method for an enumeration"
+        href: programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md
+      - name: Named and Optional Arguments
+        href: programming-guide/classes-and-structs/named-and-optional-arguments.md
+      - name: "How to use named and optional arguments in Office programming"
+        href: programming-guide/classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md
+    - name: Constructors
+      items:
+      - name: Constructors overview
+        href: programming-guide/classes-and-structs/constructors.md
+      - name: Using Constructors
+        href: programming-guide/classes-and-structs/using-constructors.md
+      - name: Instance Constructors
+        href: programming-guide/classes-and-structs/instance-constructors.md
+      - name: Private Constructors
+        href: programming-guide/classes-and-structs/private-constructors.md
+      - name: Static Constructors
+        href: programming-guide/classes-and-structs/static-constructors.md
+      - name: "How to write a copy constructor"
+        href: programming-guide/classes-and-structs/how-to-write-a-copy-constructor.md
+    - name: Finalizers
+      href: programming-guide/classes-and-structs/destructors.md
+    - name: Object and Collection Initializers
+      href: programming-guide/classes-and-structs/object-and-collection-initializers.md
+    - name: "How to initialize objects by using an object initializer"
+      href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
+    - name: "How to initialize a dictionary with a collection initializer"
+      href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
+    - name: Nested Types
+      href: programming-guide/classes-and-structs/nested-types.md
+    - name: Partial Classes and Methods
+      href: programming-guide/classes-and-structs/partial-classes-and-methods.md
+    - name: Anonymous Types
+      href: programming-guide/classes-and-structs/anonymous-types.md
+    - name: "How to return subsets of element properties in a query"
+      href: programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md
+  - name: Interfaces
+    items:
+    - name: Overview
+      displayName: interfaces
+      href: programming-guide/interfaces/index.md
+    - name: Explicit Interface Implementation
+      href: programming-guide/interfaces/explicit-interface-implementation.md
+    - name: "How to explicitly implement interface members"
+      href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
+    - name: "How to explicitly implement members of two interfaces"
+      href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
+  - name: Delegates
+    items:
+    - name: Overview
+      displayName: delegates
+      href: programming-guide/delegates/index.md
+    - name: Using Delegates
+      href: programming-guide/delegates/using-delegates.md
+    - name: Delegates with Named vs. Anonymous Methods
+      href: programming-guide/delegates/delegates-with-named-vs-anonymous-methods.md
+    - name: "How to combine delegates (Multicast Delegates) (C# Programming Guide)"
+      href: programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md
+    - name: "How to declare, instantiate, and use a delegate"
+      href: programming-guide/delegates/how-to-declare-instantiate-and-use-a-delegate.md
+  - name: Arrays
+    items:
+    - name: Overview
+      displayName: arrays
+      href: programming-guide/arrays/index.md
+    - name: Arrays as Objects
+      href: programming-guide/arrays/arrays-as-objects.md
+    - name: Single-Dimensional Arrays
+      href: programming-guide/arrays/single-dimensional-arrays.md
+    - name: Multidimensional Arrays
+      href: programming-guide/arrays/multidimensional-arrays.md
+    - name: Jagged Arrays
+      href: programming-guide/arrays/jagged-arrays.md
+    - name: Using foreach with Arrays
+      href: programming-guide/arrays/using-foreach-with-arrays.md
+    - name: Passing Arrays as Arguments
+      href: programming-guide/arrays/passing-arrays-as-arguments.md
+    - name: Implicitly Typed Arrays
+      href: programming-guide/arrays/implicitly-typed-arrays.md
+  - name: Strings
+    items:
+    - name: Programming with strings
+      href: programming-guide/strings/index.md
+    - name: "How to determine whether a string represents a numeric value"
+      href: programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md
+  - name: Indexers
+    items:
+    - name: Overview
+      displayName: indexers
+      href: programming-guide/indexers/index.md
+    - name: Using Indexers
+      href: programming-guide/indexers/using-indexers.md
+    - name: Indexers in Interfaces
+      href: programming-guide/indexers/indexers-in-interfaces.md
+    - name: Comparison Between Properties and Indexers
+      href: programming-guide/indexers/comparison-between-properties-and-indexers.md
+  - name: Events
+    items:
+    - name: Overview
+      displayName: events
+      href: programming-guide/events/index.md
+    - name: "How to subscribe to and unsubscribe from events"
+      href: programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md
+    - name: "How to publish events that conform to .NET Framework Guidelines"
+      href: programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md
+    - name: "How to raise base class events in derived classes"
+      href: programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md
+    - name: "How to implement interface events"
+      href: programming-guide/events/how-to-implement-interface-events.md
+    - name: "How to implement custom event accessors"
+      href: programming-guide/events/how-to-implement-custom-event-accessors.md
+  - name: Generics
+    items:
+    - name: Overview
+      displayName: generics
+      href: programming-guide/generics/index.md
+    - name: Generic Type Parameters
+      href: programming-guide/generics/generic-type-parameters.md
+    - name: Constraints on Type Parameters
+      href: programming-guide/generics/constraints-on-type-parameters.md
+    - name: Generic Classes
+      href: programming-guide/generics/generic-classes.md
+    - name: Generic Interfaces
+      href: programming-guide/generics/generic-interfaces.md
+    - name: Generic Methods
+      href: programming-guide/generics/generic-methods.md
+    - name: Generics and Arrays
+      href: programming-guide/generics/generics-and-arrays.md
+    - name: Generic Delegates
+      href: programming-guide/generics/generic-delegates.md
+    - name: Differences Between C++ Templates and C# Generics
+      href: programming-guide/generics/differences-between-cpp-templates-and-csharp-generics.md
+    - name: Generics in the Run Time
+      href: programming-guide/generics/generics-in-the-run-time.md
+    - name: Generics and Reflection
+      href: programming-guide/generics/generics-and-reflection.md
+    - name: Generics and Attributes
+      href: programming-guide/generics/generics-and-attributes.md
+  - name: Namespaces
+    items:
+    - name: Overview
+      displayName: namespaces
+      href: programming-guide/namespaces/index.md
+    - name: Using namespaces
+      href: programming-guide/namespaces/using-namespaces.md
+    - name: "How to use the My namespace"
+      href: programming-guide/namespaces/how-to-use-the-my-namespace.md
+  - name: Unsafe Code and Pointers
+    items:
+    - name: Overview and restrictions
+      displayName: unsafe code pointers
+      href: programming-guide/unsafe-code-pointers/index.md
+    - name: Fixed size buffers
+      href: programming-guide/unsafe-code-pointers/fixed-size-buffers.md
+    - name: Pointer types
+      items:
+      - name: Overview
+        displayName: pointer types
+        href: programming-guide/unsafe-code-pointers/pointer-types.md
+      - name: Pointer conversions
+        href: programming-guide/unsafe-code-pointers/pointer-conversions.md
+      - name: "How to use pointers to copy an array of bytes"
+        href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
+  - name: XML documentation comments
+    items:
+    - name: Overview
+      displayName: xml documentation comments
+      href: programming-guide/xmldoc/index.md
+    - name: Recommended tags for documentation comments
+      href: programming-guide/xmldoc/recommended-tags-for-documentation-comments.md
+    - name: Processing the XML file
+      href: programming-guide/xmldoc/processing-the-xml-file.md
+    - name: Delimiters for documentation tags
+      href: programming-guide/xmldoc/delimiters-for-documentation-tags.md
+    - name: How to use the XML documentation features
+      href: programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md
+    - name: Documentation tag reference
+      items:
+      - name: <c>
+        href: programming-guide/xmldoc/code-inline.md
+      - name: <code>
+        href: programming-guide/xmldoc/code.md
+      - name: cref attribute
+        href: programming-guide/xmldoc/cref-attribute.md
+      - name: <example>
+        href: programming-guide/xmldoc/example.md
+      - name: <exception>
+        href: programming-guide/xmldoc/exception.md
+      - name: <include>
+        href: programming-guide/xmldoc/include.md
+      - name: <inheritdoc>
+        href: programming-guide/xmldoc/inheritdoc.md  
+      - name: <list>
+        href: programming-guide/xmldoc/list.md
+      - name: <para>
+        href: programming-guide/xmldoc/para.md
+      - name: <param>
+        href: programming-guide/xmldoc/param.md
+      - name: <paramref>
+        href: programming-guide/xmldoc/paramref.md
+      - name: <permission>
+        href: programming-guide/xmldoc/permission.md
+      - name: <remarks>
+        href: programming-guide/xmldoc/remarks.md
+      - name: <returns>
+        href: programming-guide/xmldoc/returns.md
+      - name: <see>
+        href: programming-guide/xmldoc/see.md
+      - name: <seealso>
+        href: programming-guide/xmldoc/seealso.md
+      - name: <summary>
+        href: programming-guide/xmldoc/summary.md
+      - name: <typeparam>
+        href: programming-guide/xmldoc/typeparam.md
+      - name: <typeparamref>
+        href: programming-guide/xmldoc/typeparamref.md
+      - name: <value>
+        href: programming-guide/xmldoc/value.md
+  - name: Exceptions and Exception Handling
+    items:
+    - name: Overview
+      displayName: exceptions
+      href: programming-guide/exceptions/index.md
+    - name: Using Exceptions
+      href: programming-guide/exceptions/using-exceptions.md
+    - name: Exception Handling
+      href: programming-guide/exceptions/exception-handling.md
+    - name: Creating and Throwing Exceptions
+      href: programming-guide/exceptions/creating-and-throwing-exceptions.md
+    - name: Compiler-Generated Exceptions
+      href: programming-guide/exceptions/compiler-generated-exceptions.md
+    - name: "How to handle an exception using try-catch"
+      href: programming-guide/exceptions/how-to-handle-an-exception-using-try-catch.md
+    - name: "How to execute cleanup code using finally"
+      href: programming-guide/exceptions/how-to-execute-cleanup-code-using-finally.md
+    - name: "How to catch a non-CLS exception"
+      href: programming-guide/exceptions/how-to-catch-a-non-cls-exception.md
+  - name: File System and the Registry
+    items:
+    - name: Overview
+      displayName: file system registry
+      href: programming-guide/file-system/index.md
+    - name: "How to iterate through a directory tree"
+      href: programming-guide/file-system/how-to-iterate-through-a-directory-tree.md
+    - name: "How to get information about files, folders, and drives"
+      href: programming-guide/file-system/how-to-get-information-about-files-folders-and-drives.md
+    - name: "How to create a file or folder"
+      href: programming-guide/file-system/how-to-create-a-file-or-folder.md
+    - name: "How to copy, delete, and move files and folders"
+      href: programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md
+    - name: "How to provide a progress dialog box for file operations"
+      href: programming-guide/file-system/how-to-provide-a-progress-dialog-box-for-file-operations.md
+    - name: "How to write to a text file"
+      href: programming-guide/file-system/how-to-write-to-a-text-file.md
+    - name: "How to read From a text file"
+      href: programming-guide/file-system/how-to-read-from-a-text-file.md
+    - name: "How to read a text file one line at a time"
+      href: programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md
+    - name: "How to create a key in the registry"
+      href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
+  - name: Interoperability
+    items:
+    - name: .NET Interoperability
+      href: programming-guide/interop/index.md
+    - name: Interoperability Overview
+      href: programming-guide/interop/interoperability-overview.md
+    - name: "How to access Office interop objects by using C# features"
+      href: programming-guide/interop/how-to-access-office-onterop-objects.md
+    - name: "How to use indexed properties in COM interop programming"
+      href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
+    - name: "How to use platform invoke to play a WAV file"
+      href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
+    - name: "Walkthrough: Office Programming (C# and Visual Basic)"
+      href: programming-guide/interop/walkthrough-office-programming.md
+    - name: Example COM Class
+      href: programming-guide/interop/example-com-class.md
+- name: Language Reference
+  items:
+  - name: Overview
+    displayName: language reference
+    href: language-reference/index.md
+  - name: Configure language version
+    href: language-reference/configure-language-version.md
+  - name: C# keywords
+    items:
+    - name: Overview
+      displayName: keywords
+      href: language-reference/keywords/index.md
+    - name: Types
+      items:
+      - name: Value types
+        items:
+        - name: Overview
+          href: language-reference/builtin-types/value-types.md
+          displayName: "value types, simple types"
+        - name: Integral numeric types
+          href: language-reference/builtin-types/integral-numeric-types.md
+          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer, literal
+        - name: Floating-point numeric types
+          href: language-reference/builtin-types/floating-point-numeric-types.md
+          displayName: float, decimal, double, rational, real, literal
+        - name: Built-in numeric conversions
+          href: language-reference/builtin-types/numeric-conversions.md
+        - name: bool
+          href: language-reference/builtin-types/bool.md
+          displayName: "Boolean, true, false"
+        - name: char
+          href: language-reference/builtin-types/char.md
+          displayName: "Unicode, character, UTF-16"
+        - name: Enumeration types
+          href: language-reference/builtin-types/enum.md
+          displayName: "enum, bit flags, bit field"
+        - name: Structure types
+          href: language-reference/builtin-types/struct.md
+          displayName: "struct type, readonly struct, ref struct, readonly ref struct"
+        - name: Tuple types
+          href: language-reference/builtin-types/value-tuples.md
+          displayName: "value tuples, ValueTuple"
+        - name: Nullable value types
+          href: language-reference/builtin-types/nullable-value-types.md
+          displayName: "? token, ? symbol"
+      - name: Reference types
+        items:
+        - name: Features of reference types
+          href: language-reference/keywords/reference-types.md
+        - name: Built-in reference types
+          displayName: object, delegate, dynamic, string
+          href: language-reference/builtin-types/reference-types.md
+        - name: class
+          href: language-reference/keywords/class.md
+        - name: interface
+          href: language-reference/keywords/interface.md
+        - name: Nullable reference types
+          href: language-reference/builtin-types/nullable-reference-types.md
+          displayName: "? token, ? symbol"
+      - name: void
+        href: language-reference/builtin-types/void.md
+      - name: var
+        href: language-reference/keywords/var.md
+      - name: Built-in types
+        href: language-reference/builtin-types/built-in-types.md
+      - name: Unmanaged types
+        href: language-reference/builtin-types/unmanaged-types.md
+      - name: Default values
+        href: language-reference/builtin-types/default-values.md
+    - name: Modifiers
+      items:
+      - name: Access Modifiers
+        items:
+        - name: Quick reference
+          href: language-reference/keywords/access-modifiers.md
+        - name: Accessibility Levels
+          href: language-reference/keywords/accessibility-levels.md
+        - name: Accessibility Domain
+          href: language-reference/keywords/accessibility-domain.md
+        - name: Restrictions on Using Accessibility Levels
+          href: language-reference/keywords/restrictions-on-using-accessibility-levels.md
+        - name: internal
+          href: language-reference/keywords/internal.md
+        - name: private
+          href: language-reference/keywords/private.md
+        - name: protected
+          href: language-reference/keywords/protected.md
+        - name: public
+          href: language-reference/keywords/public.md
+        - name: protected internal
+          href: language-reference/keywords/protected-internal.md
+        - name: private protected
+          href: language-reference/keywords/private-protected.md
+      - name: abstract
+        href: language-reference/keywords/abstract.md
+      - name: async
+        href: language-reference/keywords/async.md
+        displayName: await
+      - name: const
+        href: language-reference/keywords/const.md
+      - name: event
+        href: language-reference/keywords/event.md
+      - name: extern
+        href: language-reference/keywords/extern.md
+      - name: in (generic modifier)
+        href: language-reference/keywords/in-generic-modifier.md
+      - name: new (member modifier)
+        href: language-reference/keywords/new-modifier.md
+      - name: out (generic modifier)
+        href: language-reference/keywords/out-generic-modifier.md
+      - name: override
+        href: language-reference/keywords/override.md
+      - name: readonly
+        href: language-reference/keywords/readonly.md
+      - name: sealed
+        href: language-reference/keywords/sealed.md
+      - name: static
+        href: language-reference/keywords/static.md
+      - name: unsafe
+        href: language-reference/keywords/unsafe.md
+      - name: virtual
+        href: language-reference/keywords/virtual.md
+      - name: volatile
+        href: language-reference/keywords/volatile.md
+    - name: Statement Keywords
+      items:
+      - name: Statement categories
+        href: language-reference/keywords/statement-keywords.md
+      - name: Selection Statements
+        items:
+        - name: if-else
+          href: language-reference/keywords/if-else.md
+        - name: switch
+          href: language-reference/keywords/switch.md
+      - name: Iteration Statements
+        items:
+        - name: do
+          href: language-reference/keywords/do.md
+        - name: for
+          href: language-reference/keywords/for.md
+        - name: foreach, in
+          href: language-reference/keywords/foreach-in.md
+        - name: while
+          href: language-reference/keywords/while.md
+      - name: Jump Statements
+        items:
+        - name: break
+          href: language-reference/keywords/break.md
+        - name: continue
+          href: language-reference/keywords/continue.md
+        - name: goto
+          href: language-reference/keywords/goto.md
+        - name: return
+          href: language-reference/keywords/return.md
+      - name: Exception Handling Statements
+        items:
+        - name: throw
+          href: language-reference/keywords/throw.md
+        - name: try-catch
+          href: language-reference/keywords/try-catch.md
+        - name: try-finally
+          href: language-reference/keywords/try-finally.md
+        - name: try-catch-finally
+          href: language-reference/keywords/try-catch-finally.md
+      - name: Checked and Unchecked
+        items:
+        - name: Overview
+          displayName: checked unchecked
+          href: language-reference/keywords/checked-and-unchecked.md
+        - name: checked
+          href: language-reference/keywords/checked.md
+        - name: unchecked
+          href: language-reference/keywords/unchecked.md
+      - name: fixed Statement
+        href: language-reference/keywords/fixed-statement.md
+      - name: lock Statement
+        href: language-reference/keywords/lock-statement.md
+    - name: Method Parameters
+      items:
+      - name: Passing parameters
+        href: language-reference/keywords/method-parameters.md
+      - name: params
+        href: language-reference/keywords/params.md
+      - name: in (Parameter Modifier)
+        href: language-reference/keywords/in-parameter-modifier.md
+      - name: ref
+        href: language-reference/keywords/ref.md
+      - name: out (Parameter Modifier)
+        href: language-reference/keywords/out-parameter-modifier.md
+    - name: Namespace Keywords
+      items:
+      - name: namespace
+        href: language-reference/keywords/namespace.md
+      - name: using
+        items:
+        - name: Contexts for using
+          href: language-reference/keywords/using.md
+        - name: using Directive
+          href: language-reference/keywords/using-directive.md
+        - name: using static Directive
+          href: language-reference/keywords/using-static.md
+        - name: using Statement
+          href: language-reference/keywords/using-statement.md
+      - name: extern alias
+        href: language-reference/keywords/extern-alias.md
+    - name: Type-testing Keywords
+      items:
+        - name: is
+          href: language-reference/keywords/is.md
+    - name: Generic Type Constraint Keywords
+      items:
+        - name: new constraint
+          href: language-reference/keywords/new-constraint.md
+        - name: where
+          href: language-reference/keywords/where-generic-type-constraint.md
+    - name: Access Keywords
+      items:
+      - name: base
+        href: language-reference/keywords/base.md
+      - name: this
+        href: language-reference/keywords/this.md
+    - name: Literal Keywords
+      items:
+      - name: "null"
+        href: language-reference/keywords/null.md
+      - name: "true and false"
+        href: language-reference/builtin-types/bool.md
+      - name: default
+        href: language-reference/keywords/default.md
+    - name: Contextual Keywords
+      items:
+      - name: Quick reference
+        displayName: contextual keywords
+        href: language-reference/keywords/contextual-keywords.md
+      - name: add
+        href: language-reference/keywords/add.md
+      - name: get
+        href: language-reference/keywords/get.md
+      - name: partial (Type)
+        href: language-reference/keywords/partial-type.md
+      - name: partial (Method)
+        href: language-reference/keywords/partial-method.md
+      - name: remove
+        href: language-reference/keywords/remove.md
+      - name: set
+        href: language-reference/keywords/set.md
+      - name: when (filter condition)
+        href: language-reference/keywords/when.md
+      - name: value
+        href: language-reference/keywords/value.md
+      - name: yield
+        href: language-reference/keywords/yield.md
+    - name: Query Keywords
+      items:
+      - name: Quick reference
+        displayName: query keywords
+        href: language-reference/keywords/query-keywords.md
+      - name: from clause
+        href: language-reference/keywords/from-clause.md
+      - name: where clause
+        href: language-reference/keywords/where-clause.md
+      - name: select clause
+        href: language-reference/keywords/select-clause.md
+      - name: group clause
+        href: language-reference/keywords/group-clause.md
+      - name: into
+        href: language-reference/keywords/into.md
+      - name: orderby clause
+        href: language-reference/keywords/orderby-clause.md
+      - name: join clause
+        href: language-reference/keywords/join-clause.md
+      - name: let clause
+        href: language-reference/keywords/let-clause.md
+      - name: ascending
+        href: language-reference/keywords/ascending.md
+      - name: descending
+        href: language-reference/keywords/descending.md
+      - name: "on"
+        href: language-reference/keywords/on.md
+      - name: equals
+        href: language-reference/keywords/equals.md
+      - name: by
+        href: language-reference/keywords/by.md
+      - name: in
+        href: language-reference/keywords/in.md
+  - name: C# operators and expressions
+    items:
+    - name: Overview
+      href: language-reference/operators/index.md
+      displayName: operator precedence, operator associativity
+    - name: Arithmetic operators
+      href: language-reference/operators/arithmetic-operators.md
+      displayName: ++, --, +, -, *, /, %, +=, -=, *=, /=, %=, checked, unchecked
+    - name: Boolean logical operators
+      href: language-reference/operators/boolean-logical-operators.md
+      displayName: "!, &&, ||, &, |, ^, &=, |=, ^=, AND, XOR, OR"
+    - name: Bitwise and shift operators
+      href: language-reference/operators/bitwise-and-shift-operators.md
+      displayName: "~, &, |, ^, <<, >>, &=, |=, ^=, <<=, >>=, AND, XOR, OR"
+    - name: Equality operators
+      href: language-reference/operators/equality-operators.md
+      displayName: ==, !=
+    - name: Comparison operators
+      href: language-reference/operators/comparison-operators.md
+      displayName: ">, <, >=, <=, greater, less"
+    - name: Member access operators and expressions
+      href: language-reference/operators/member-access-operators.md
+      displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
+    - name: Type-testing operators and cast expression
+      href: language-reference/operators/type-testing-and-cast.md
+      displayName: "is operator, is keyword, as operator, as keyword, typeof, (), explicit, conversion"
+    - name: User-defined conversion operators
+      href: language-reference/operators/user-defined-conversion-operators.md
+      displayName: implicit, explicit
+    - name: Pointer-related operators
+      href: language-reference/operators/pointer-related-operators.md
+      displayName: "&, *, ->, [], +, -, ++, --, ==, !=, <, >, <=, >=, dereference, address-of, indirection"
+    - name: Assignment operators
+      href: language-reference/operators/assignment-operator.md
+      displayName: "=, ref, compound"
+    - name: + and += operators
+      href: language-reference/operators/addition-operator.md
+      displayName: string concatenation, delegate combination, event subscription
+    - name: "- and -= operators"
+      href: language-reference/operators/subtraction-operator.md
+      displayName: delegate removal, event unsubscription
+    - name: "?: operator"
+      href: language-reference/operators/conditional-operator.md
+      displayName: conditional, ternary, ref
+    - name: "! (null-forgiving) operator"
+      href: language-reference/operators/null-forgiving.md
+      displayName: nullable reference, null-forgiveness
+    - name: "?? and ??= operators"
+      href: language-reference/operators/null-coalescing-operator.md
+      displayName: null-coalescing, assignment
+    - name: => operator
+      href: language-reference/operators/lambda-operator.md
+      displayName: lambda, expression body definition
+    - name: ":: operator"
+      href: language-reference/operators/namespace-alias-qualifier.md
+      displayName: "namespace alias qualifier, global namespace"
+    - name: await operator
+      href: language-reference/operators/await.md
+      displayName: async
+    - name: default value expressions
+      href: language-reference/operators/default.md
+      displayName: default value, default operator, default literal, type default
+    - name: delegate operator
+      href: language-reference/operators/delegate-operator.md
+      displayName: anonymous
+    - name: nameof expression
+      href: language-reference/operators/nameof.md
+      displayName: nameof operator
+    - name: new operator
+      href: language-reference/operators/new-operator.md
+      displayName: constructor
+    - name: sizeof operator
+      href: language-reference/operators/sizeof.md
+    - name: stackalloc expression
+      href: language-reference/operators/stackalloc.md
+      displayName: stack allocation, span, stackalloc operator
+    - name: switch expression
+      href: language-reference/operators/switch-expression.md
+      displayName: "switch, pattern matching, patterns"
+    - name: true and false operators
+      href: language-reference/operators/true-false-operators.md
+    - name: Operator overloading
+      href: language-reference/operators/operator-overloading.md
+  - name: C# special characters
+    items:
+    - name: Overview
+      displayName: special characters
+      href: language-reference/tokens/index.md
+    - name: $ -- string interpolation
+      href: language-reference/tokens/interpolated.md
+    - name: "@ -- verbatim identifier"
+      href: language-reference/tokens/verbatim.md
+  - name: Attributes read by the compiler
+    items:
+    - name: Global attributes
+      displayName: AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias
+      href: language-reference/attributes/global.md
+    - name: General
+      displayName: Conditional, Obsolete, AttributeUsage
+      href: language-reference/attributes/general.md
+    - name: Caller information
+      displayName: CallerFilePath, CallerLineNumber, CallerMemberName
+      href: language-reference/attributes/caller-information.md
+    - name: Nullable static analysis
+      displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
+      href: language-reference/attributes/nullable-analysis.md
+  - name: C# preprocessor directives
+    items:
+    - name: Overview
+      displayName: preprocessor directives
+      href: language-reference/preprocessor-directives/index.md
+    - name: "#if"
+      href: language-reference/preprocessor-directives/preprocessor-if.md
+    - name: "#else"
+      href: language-reference/preprocessor-directives/preprocessor-else.md
+    - name: "#elif"
+      href: language-reference/preprocessor-directives/preprocessor-elif.md
+    - name: "#endif"
+      href: language-reference/preprocessor-directives/preprocessor-endif.md
+    - name: "#define"
+      href: language-reference/preprocessor-directives/preprocessor-define.md
+    - name: "#undef"
+      href: language-reference/preprocessor-directives/preprocessor-undef.md
+    - name: "#warning"
+      href: language-reference/preprocessor-directives/preprocessor-warning.md
+    - name: "#error"
+      href: language-reference/preprocessor-directives/preprocessor-error.md
+    - name: "#line"
+      href: language-reference/preprocessor-directives/preprocessor-line.md
+    - name: "#region"
+      href: language-reference/preprocessor-directives/preprocessor-region.md
+    - name: "#endregion"
+      href: language-reference/preprocessor-directives/preprocessor-endregion.md
+    - name: "#pragma"
+      href: language-reference/preprocessor-directives/preprocessor-pragma.md
+    - name: "#pragma warning"
+      href: language-reference/preprocessor-directives/preprocessor-pragma-warning.md
+    - name: "#pragma checksum"
+      href: language-reference/preprocessor-directives/preprocessor-pragma-checksum.md
+  - name: C# compiler options
+    items:
+    - name: Overview
+      displayName: compiler options
+      href: language-reference/compiler-options/index.md
+    - name: Command-line Building With csc.exe
+      href: language-reference/compiler-options/command-line-building-with-csc-exe.md
+    - name: "How to set environment variables for the Visual Studio Command Line"
+      href: language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md
+    - name: C# Compiler Options Listed by Category
+      href: language-reference/compiler-options/listed-by-category.md
+    - name: C# Compiler Options Listed Alphabetically
+      href: language-reference/compiler-options/listed-alphabetically.md
+      items:
+      - name: "@"
+        href: language-reference/compiler-options/response-file-compiler-option.md
+      - name: -addmodule
+        href: language-reference/compiler-options/addmodule-compiler-option.md
+      - name: -appconfig
+        href: language-reference/compiler-options/appconfig-compiler-option.md
+      - name: -baseaddress
+        href: language-reference/compiler-options/baseaddress-compiler-option.md
+      - name: -bugreport
+        href: language-reference/compiler-options/bugreport-compiler-option.md
+      - name: -checked
+        href: language-reference/compiler-options/checked-compiler-option.md
+      - name: -codepage
+        href: language-reference/compiler-options/codepage-compiler-option.md
+      - name: -debug
+        href: language-reference/compiler-options/debug-compiler-option.md
+      - name: -define
+        href: language-reference/compiler-options/define-compiler-option.md
+      - name: -delaysign
+        href: language-reference/compiler-options/delaysign-compiler-option.md
+      - name: -deterministic
+        href: language-reference/compiler-options/deterministic-compiler-option.md
+      - name: -doc
+        href: language-reference/compiler-options/doc-compiler-option.md
+      - name: -errorreport
+        href: language-reference/compiler-options/errorreport-compiler-option.md
+      - name: -filealign
+        href: language-reference/compiler-options/filealign-compiler-option.md
+      - name: -fullpaths
+        href: language-reference/compiler-options/fullpaths-compiler-option.md
+      - name: -help, -?
+        href: language-reference/compiler-options/help-compiler-option.md
+      - name: -highentropyva
+        href: language-reference/compiler-options/highentropyva-compiler-option.md
+      - name: -keycontainer
+        href: language-reference/compiler-options/keycontainer-compiler-option.md
+      - name: -keyfile
+        href: language-reference/compiler-options/keyfile-compiler-option.md
+      - name: -langversion
+        href: language-reference/compiler-options/langversion-compiler-option.md
+      - name: -lib
+        href: language-reference/compiler-options/lib-compiler-option.md
+      - name: -link
+        href: language-reference/compiler-options/link-compiler-option.md
+      - name: -linkresource
+        href: language-reference/compiler-options/linkresource-compiler-option.md
+      - name: -main
+        href: language-reference/compiler-options/main-compiler-option.md
+      - name: -moduleassemblyname
+        href: language-reference/compiler-options/moduleassemblyname-compiler-option.md
+      - name: -noconfig
+        href: language-reference/compiler-options/noconfig-compiler-option.md
+      - name: -nologo
+        href: language-reference/compiler-options/nologo-compiler-option.md
+      - name: -nostdlib
+        href: language-reference/compiler-options/nostdlib-compiler-option.md
+      - name: -nowarn
+        href: language-reference/compiler-options/nowarn-compiler-option.md
+      - name: -nowin32manifest
+        href: language-reference/compiler-options/nowin32manifest-compiler-option.md
+      - name: -nullable
+        href: language-reference/compiler-options/nullable-compiler-option.md
+      - name: -optimize
+        href: language-reference/compiler-options/optimize-compiler-option.md
+      - name: -out
+        href: language-reference/compiler-options/out-compiler-option.md
+      - name: -pathmap
+        href: language-reference/compiler-options/pathmap-compiler-option.md
+      - name: -pdb
+        href: language-reference/compiler-options/pdb-compiler-option.md
+      - name: -platform
+        href: language-reference/compiler-options/platform-compiler-option.md
+      - name: -preferreduilang
+        href: language-reference/compiler-options/preferreduilang-compiler-option.md
+      - name: -publicsign
+        href: language-reference/compiler-options/publicsign-compiler-option.md
+      - name: -recurse
+        href: language-reference/compiler-options/recurse-compiler-option.md
+      - name: -reference
+        href: language-reference/compiler-options/reference-compiler-option.md
+      - name: -refout
+        href: language-reference/compiler-options/refout-compiler-option.md
+      - name: -refonly
+        href: language-reference/compiler-options/refonly-compiler-option.md
+      - name: -resource
+        href: language-reference/compiler-options/resource-compiler-option.md
+      - name: -subsystemversion
+        href: language-reference/compiler-options/subsystemversion-compiler-option.md
+      - name: -target
+        href: language-reference/compiler-options/target-compiler-option.md
+        items:
+        - name: "-target:appcontainerexe"
+          href: language-reference/compiler-options/target-appcontainerexe-compiler-option.md
+        - name: "-target:exe"
+          href: language-reference/compiler-options/target-exe-compiler-option.md
+        - name: "-target:library"
+          href: language-reference/compiler-options/target-library-compiler-option.md
+        - name: "-target:module"
+          href: language-reference/compiler-options/target-module-compiler-option.md
+        - name: "-target:winexe"
+          href: language-reference/compiler-options/target-winexe-compiler-option.md
+        - name: "-target:winmdobj"
+          href: language-reference/compiler-options/target-winmdobj-compiler-option.md
+      - name: -unsafe
+        href: language-reference/compiler-options/unsafe-compiler-option.md
+      - name: -utf8output
+        href: language-reference/compiler-options/utf8output-compiler-option.md
+      - name: -warn
+        href: language-reference/compiler-options/warn-compiler-option.md
+      - name: -warnaserror
+        href: language-reference/compiler-options/warnaserror-compiler-option.md
+      - name: -win32icon
+        href: language-reference/compiler-options/win32icon-compiler-option.md
+      - name: -win32manifest
+        href: language-reference/compiler-options/win32manifest-compiler-option.md
+      - name: -win32res
+        href: language-reference/compiler-options/win32res-compiler-option.md
+  - name: C# compiler errors
+    href: language-reference/compiler-messages/index.md
+  - name: C# 6.0 draft specification
+    href: language-reference/specification/
+  - name: C# 7.0 - 8.0 proposals
+    href: language-reference/proposals/
+- name: Walkthroughs
+  href: walkthroughs.md

@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, sample data"
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PLINQ Data Sample
 This sample contains example data in .csv format, together with methods that transform it into in-memory collections of Customers, Products, Orders, and Order Details. To further experiment with PLINQ, you can paste code examples from certain other topics into the code in this topic and invoke it from the `Main` method. You can also use this data with your own PLINQ queries.  
@@ -17,19 +15,19 @@ This sample contains example data in .csv format, together with methods that tra
  The data represents a subset of the Northwind database. Fifty (50) customer records are included, but not all fields. A subset of the rows from the Orders and corresponding Order_Detail data for every Customer is included. All Products are included.  
   
 > [!NOTE]
->  The data set is not large enough to demonstrate that PLINQ is faster than LINQ to Objects for queries that contain just basic `where` and `select` clauses. To observe speed increases for small data sets such as this, use queries that contain computationally expensive operations on every element in the data set.  
+> The data set is not large enough to demonstrate that PLINQ is faster than LINQ to Objects for queries that contain just basic `where` and `select` clauses. To observe speed increases for small data sets such as this, use queries that contain computationally expensive operations on every element in the data set.  
   
 ### To set up this sample  
   
-1.  Create a Visual Basic or Visual C# console application project.  
+1. Create a Visual Basic or Visual C# console application project.  
   
-2.  Replace the contents of Module1.vb or Program.cs by using the code that follows these steps.  
+2. Replace the contents of Module1.vb or Program.cs by using the code that follows these steps.  
   
-3.  On the **Project** menu, click **Add New Item**. Select **Text File** and then click **OK**. Copy the data in this topic and then paste it in the new text file. On the **File** menu, click **Save**, name the file Plinqdata.csv, and then save it in the folder that contains your source code files.  
+3. On the **Project** menu, click **Add New Item**. Select **Text File** and then click **OK**. Copy the data in this topic and then paste it in the new text file. On the **File** menu, click **Save**, name the file Plinqdata.csv, and then save it in the folder that contains your source code files.  
   
-4.  Press F5 to verify that the project builds and runs correctly. The following output should be displayed in the console window.  
+4. Press F5 to verify that the project builds and runs correctly. The following output should be displayed in the console window.  
   
-    ```  
+    ```console  
     Customer count: 50  
     Product count: 77  
     Order count: 190  
@@ -42,7 +40,7 @@ This sample contains example data in .csv format, together with methods that tra
   
 ## Data  
   
-```  
+```console  
 CUSTOMERS  
 ALFKI,Alfreds Futterkiste,Obere Str. 57,Berlin,12209  
 ANATR,Ana Trujillo Emparedados y helados,Avda. de la Constitución 2222,México D.F.,05021  
@@ -858,4 +856,4 @@ END PRODUCTS
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](introduction-to-plinq.md)

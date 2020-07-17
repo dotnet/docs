@@ -1,7 +1,5 @@
 ---
 title: "namespace keyword - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "namespace_CSharpKeyword"
@@ -27,11 +25,11 @@ Within a namespace, you can declare zero or more of the following types:
 
 - [interface](interface.md)
 
-- [struct](struct.md)
+- [struct](../builtin-types/struct.md)
 
-- [enum](enum.md)
+- [enum](../builtin-types/enum.md)
 
-- [delegate](delegate.md)
+- [delegate](../builtin-types/reference-types.md#the-delegate-type)
 
 Whether or not you explicitly declare a namespace in a C# source file, the compiler adds a default namespace. This unnamed namespace, sometimes referred to as the global namespace, is present in every file. Any identifier in the global namespace is available for use in a named namespace.
 
@@ -47,24 +45,15 @@ The following example shows how to call a static method in a nested namespace.
 
 [!code-csharp[csrefKeywordsNamespace#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsNamespace/CS/csrefKeywordsNamespace.cs#3)]
 
-## Related resources
-
-For more information about using namespaces, see the following topics:
-
-- [Namespaces](../../programming-guide/namespaces/index.md)
-
-- [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
-
-- [How to: Use the Global Namespace Alias](../../programming-guide/namespaces/how-to-use-the-global-namespace-alias.md)
-
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see the [Namespaces](~/_csharplang/spec/namespaces.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Namespace Keywords](namespace-keywords.md)
-- [using](using.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
+- [using](using-directive.md)
+- [using static](using-static.md)
+- [Namespace alias qualifier `::`](../operators/namespace-alias-qualifier.md)
+- [Namespaces](../../programming-guide/namespaces/index.md)

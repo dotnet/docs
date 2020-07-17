@@ -4,24 +4,24 @@ ms.date: "03/30/2017"
 ms.assetid: 62b41a75-cf40-4c52-a842-a5f1c70e247f
 ---
 # How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service
-This topic is the third of three topics that discusses how to implement a discovery proxy. In the previous topic, [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md), you implemented a WCF service that registers itself with the discovery proxy. In this topic you create a WCF client that uses the discovery proxy to find the WCF service.  
+This topic is the third of three topics that discusses how to implement a discovery proxy. In the previous topic, [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](discoverable-service-that-registers-with-the-discovery-proxy.md), you implemented a WCF service that registers itself with the discovery proxy. In this topic you create a WCF client that uses the discovery proxy to find the WCF service.  
   
 ### Implement the client  
   
-1.  Add a new console application project to the `DiscoveryProxyExample` solution called `Client`.  
+1. Add a new console application project to the `DiscoveryProxyExample` solution called `Client`.  
   
-2.  Add references to the following assemblies:  
+2. Add references to the following assemblies:  
   
-    1.  System.ServiceModel  
+    1. System.ServiceModel  
   
-    2.  System.ServiceModel.Discovery  
+    2. System.ServiceModel.Discovery  
   
-3.  Add the GeneratedClient.cs found at the bottom of this topic to the project.  
+3. Add the GeneratedClient.cs found at the bottom of this topic to the project.  
   
     > [!NOTE]
-    >  This file is usually generated using a tool such as Svcutil.exe. It is provided in this topic to simplify the task.  
+    > This file is usually generated using a tool such as Svcutil.exe. It is provided in this topic to simplify the task.  
   
-4.  Open the Program.cs file and add the following method. This method takes an endpoint address and uses it to initialize the service client (proxy).  
+4. Open the Program.cs file and add the following method. This method takes an endpoint address and uses it to initialize the service client (proxy).  
   
     ```csharp  
     static void InvokeCalculatorService(EndpointAddress endpointAddress)  
@@ -56,7 +56,7 @@ This topic is the third of three topics that discusses how to implement a discov
     }  
     ```  
   
-5.  Add the following code to the `Main` method.  
+5. Add the following code to the `Main` method.  
   
     ```csharp  
     public static void Main()  
@@ -73,7 +73,7 @@ This topic is the third of three topics that discusses how to implement a discov
 
         try  
         {  
-            // Search for services that implement ICalculatorService              
+            // Search for services that implement ICalculatorService
             FindResponse findResponse = discoveryClient.Find(new FindCriteria(typeof(ICalculatorService)));  
 
             Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endpoints.Count);  
@@ -95,7 +95,7 @@ This topic is the third of three topics that discusses how to implement a discov
     }  
     ```  
   
- You have completed implementing the client application. Continue on to [How to: Test the Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-test-the-discovery-proxy.md).  
+ You have completed implementing the client application. Continue on to [How to: Test the Discovery Proxy](how-to-test-the-discovery-proxy.md).  
   
 ## Example  
  This is the full code listing for this topic.  
@@ -220,7 +220,7 @@ namespace Microsoft.Samples.Discovery
   
             try  
             {  
-                // Find ICalculatorService endpoints              
+                // Find ICalculatorService endpoints
                 FindResponse findResponse = discoveryClient.Find(new FindCriteria(typeof(ICalculatorService)));  
   
                 Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endpoints.Count);  
@@ -275,7 +275,8 @@ namespace Microsoft.Samples.Discovery
 }  
 ```  
   
-## See Also  
- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)  
- [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)  
- [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)
+## See also
+
+- [WCF Discovery Overview](wcf-discovery-overview.md)
+- [How to: Implement a Discovery Proxy](how-to-implement-a-discovery-proxy.md)
+- [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](discoverable-service-that-registers-with-the-discovery-proxy.md)

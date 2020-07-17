@@ -6,19 +6,17 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2bc6ddc6-674a-4f75-b264-abc35e4e5857
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XPathNodeIterator in Transformations
 The <xref:System.Xml.XPath.XPathNodeIterator> provides methods to iterate over a set of nodes created as the result of an XML Path Language (XPath) query or a result tree fragment converted to a node set by use of the node-set method. The <xref:System.Xml.XPath.XPathNodeIterator> enables you to iterate over the nodes within that node set. Once a node set is retrieved, the <xref:System.Xml.XPath.XPathNodeIterator> class provides a read-only, forward-only cursor to the selected set of nodes. The node set is created in document order, so calling this method moves to the next node in document order. <xref:System.Xml.XPath.XPathNodeIterator> does not build a node tree of all the nodes in the set. Instead, it provides a single node window into the data, exposing the underlying node it points to as you move around in the tree. The methods and properties available from the <xref:System.Xml.XPath.XPathNodeIterator> class enable you to get information from the current node. For a list of the available methods and properties, see <xref:System.Windows.Forms.ToolBar>.  
   
  Since an <xref:System.Xml.XPath.XPathNodeIterator> moves over a set of nodes created from an XPath query and moves forward only, the way to move is by using the <xref:System.Xml.XPath.XPathNodeIterator.MoveNext%2A> method. The return type of this method is `Boolean`, returning `true` if it moves to the next selected node, and `false` if there are no more selected nodes. If it returns `true`, the following list shows the properties available:  
   
--   <xref:System.Xml.XPath.XPathNodeIterator.Current%2A>  
+- <xref:System.Xml.XPath.XPathNodeIterator.Current%2A>  
   
--   <xref:System.Xml.XPath.XPathNodeIterator.CurrentPosition%2A>  
+- <xref:System.Xml.XPath.XPathNodeIterator.CurrentPosition%2A>  
   
--   <xref:System.Xml.XPath.XPathNodeIterator.Count%2A>  
+- <xref:System.Xml.XPath.XPathNodeIterator.Count%2A>  
   
  When you are looking at a node set for the first time, a call to <xref:System.Xml.XPath.XPathNodeIterator.MoveNext%2A> must be made to position the <xref:System.Xml.XPath.XPathNodeIterator> on the first node of the selected set. This allows a while loop to be written.  
   
@@ -154,4 +152,4 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   
 ## See also
 
-- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)

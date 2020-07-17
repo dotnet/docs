@@ -13,7 +13,7 @@ This example shows how to set the title of the window in which a <xref:System.Wi
 ## Example  
  A page can change the title of the window that is hosting it by setting the <xref:System.Windows.Controls.Page.WindowTitle%2A> property, like so:  
   
- [!code-xaml[HOWTONavigationSnippets#SetPageWindowTitleXAML](../../../../samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowTitlePage.xaml#setpagewindowtitlexaml)]  
+ [!code-xaml[HOWTONavigationSnippets#SetPageWindowTitleXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/HOWTONavigationSnippets/CSharp/SetWindowTitlePage.xaml#setpagewindowtitlexaml)]  
   
 > [!NOTE]
->  Setting the <xref:System.Windows.Controls.Page.Title%2A> property of a page does not change the value of the window title. Instead, <xref:System.Windows.Controls.Page.Title%2A> specifies the name of a page entry in navigation history.
+> Setting the <xref:System.Windows.Controls.Page.Title%2A> property of a page does not change the value of the window title. Instead, <xref:System.Windows.Controls.Page.Title%2A> specifies the name of a page entry in navigation history.

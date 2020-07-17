@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 4ba08ffa-55a2-4662-9d6d-4738f1db60c9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet::GetRegistersAvailable Method
-Gets a bit mask indicating which registers in this [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) are currently available.  
+Gets a bit mask indicating which registers in this [ICorDebugRegisterSet](icordebugregisterset-interface.md) are currently available.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRegistersAvailable (  
     [out] ULONG64   *pAvailable  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAvailable`  
  [out] A bit mask that indicates which registers are currently available.  
   
@@ -39,7 +37,7 @@ HRESULT GetRegistersAvailable (
  The returned mask contains a bit for each register (1 << the register index). The bit value is 1 if the register is available, or 0 if it is not available.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -47,6 +45,7 @@ HRESULT GetRegistersAvailable (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)  
- [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
+## See also
+
+- [ICorDebugRegisterSet Interface](icordebugregisterset-interface.md)
+- [ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)

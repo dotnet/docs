@@ -1,5 +1,5 @@
 ---
-title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;trace&gt;"
+title: "<filter> Element for <add> for <listeners> for <trace>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add/filter"
@@ -8,24 +8,22 @@ helpviewer_keywords:
   - "filter element for <add> for <listeners> for <trace>"
   - "<filter> element for <add> for <listeners> for <trace>"
 ms.assetid: eb9c18f5-dfa8-47c5-b91b-e4b93e76e1cc
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;trace&gt;
+# \<filter> Element for \<add> for \<listeners> for \<trace>
 Adds a filter to a listener in the `Listeners` collection for a trace.  
-  
- \<configuration>  
-\<system.diagnostics>  
-\<trace>  
-\<listeners>  
-\<add>  
-\<filter>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<trace>**](trace-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<listeners>**](listeners-element-for-trace.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add-element-for-listeners-for-trace.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<filter>**
+
 ## Syntax  
   
 ```xml  
-<filter   
-  type="traceFilterClassName"   
+<filter
+  type="traceFilterClassName"
   initializeData="data" />  
 ```  
   
@@ -36,7 +34,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|`type`|Required attribute.<br /><br /> Specifies the type of the filter, which should inherit from the <xref:System.Diagnostics.TraceFilter> class. You can use the namespace-qualified name of the type, which corresponds to the type's <xref:System.Type.FullName%2A> property, or you can use the fully qualified type name including the assembly information, which corresponds to the <xref:System.Type.AssemblyQualifiedName%2A> property. For information about fully qualified type names, see [Specifying Fully Qualified Type Names](../../../../../docs/framework/reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
+|`type`|Required attribute.<br /><br /> Specifies the type of the filter, which should inherit from the <xref:System.Diagnostics.TraceFilter> class. You can use the namespace-qualified name of the type, which corresponds to the type's <xref:System.Type.FullName%2A> property, or you can use the fully qualified type name including the assembly information, which corresponds to the <xref:System.Type.AssemblyQualifiedName%2A> property. For information about fully qualified type names, see [Specifying Fully Qualified Type Names](../../../reflection-and-codedom/specifying-fully-qualified-type-names.md).|  
 |`initializeData`|Optional attribute.<br /><br /> The string passed to the constructor for the specified filter class.|  
   
 ### Child Elements  
@@ -53,7 +51,7 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
 |`add`|Adds a listener to the `Listeners` collection.|  
   
 ## Remarks  
- The `<filter>` element must be contained in an `<add>` element for a trace listener that specifies the type of the listener, not just the name of a listener defined in a [\<sharedListeners>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md). If the listener is defined in a [\<sharedListeners>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/sharedlisteners-element.md), the filter for that listener must be defined in that element.  
+ The `<filter>` element must be contained in an `<add>` element for a trace listener that specifies the type of the listener, not just the name of a listener defined in a [\<sharedListeners>](sharedlisteners-element.md). If the listener is defined in a [\<sharedListeners>](sharedlisteners-element.md), the filter for that listener must be defined in that element.  
   
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
   
@@ -65,9 +63,9 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  
       <listeners>  
-        <add name="console"   
+        <add name="console"
           type="System.Diagnostics.ConsoleTraceListener" >  
-          <filter type="System.Diagnostics.EventTypeFilter"   
+          <filter type="System.Diagnostics.EventTypeFilter"
             initializeData="Error" />  
         </add>  
         <remove name="Default" />  
@@ -77,9 +75,10 @@ Adds a filter to a listener in the `Listeners` collection for a trace.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.Trace>  
- <xref:System.Diagnostics.TraceListener>  
- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>  
- <xref:System.Diagnostics.TraceFilter>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+
+- <xref:System.Diagnostics.Trace>
+- <xref:System.Diagnostics.TraceListener>
+- <xref:System.Diagnostics.TraceListener.Filter%2A?displayProperty=nameWithType>
+- <xref:System.Diagnostics.TraceFilter>
+- [Trace and Debug Settings Schema](index.md)

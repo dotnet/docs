@@ -2,15 +2,13 @@
 title: "ICorDebugDataTarget2::GetImageLocation Method"
 ms.date: "03/30/2017"
 ms.assetid: 696afe71-5852-478d-a33f-b2d2dbc4b91f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::GetImageLocation Method
 Returns the path of a module from the module's base address.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,  
     [in] ULONG32 cchName,  
     [out] ULONG32 *pcchName,  
@@ -18,9 +16,9 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `baseAddress`  
- [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
+ [in] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
   
  `cchName`  
  [in] The number of characters in the buffer that is to receive the module path.  
@@ -34,10 +32,10 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -45,6 +43,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

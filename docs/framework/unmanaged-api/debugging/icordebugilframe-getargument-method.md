@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 4e2fd423-f643-4c27-ba5f-41b5ebc3b416
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::GetArgument Method
 Gets the value of the specified argument in this Microsoft intermediate language (MSIL) stack frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetArgument (  
     [in] DWORD                  dwIndex,  
     [out] ICorDebugValue        **ppValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwIndex`  
  [in] The index of the argument in this MSIL stack frame.  
   
@@ -41,7 +39,7 @@ HRESULT GetArgument (
  The `GetArgument` method can be used either in an MSIL stack frame or in a just-in-time (JIT) compiled frame.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

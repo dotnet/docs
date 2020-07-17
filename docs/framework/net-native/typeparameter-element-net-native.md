@@ -1,11 +1,9 @@
 ---
-title: "&lt;TypeParameter&gt; Element (.NET Native)"
+title: "<TypeParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: d37bb1b7-1ddc-4c6d-8ecf-583f804a2479
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# &lt;TypeParameter&gt; Element (.NET Native)
+# \<TypeParameter> Element (.NET Native)
 Applies policy to the type represented by a Type argument passed to a method.  
   
 ## Syntax  
@@ -53,7 +51,7 @@ Applies policy to the type represented by a Type argument passed to a method.
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
  None.  
@@ -62,10 +60,10 @@ Applies policy to the type represented by a Type argument passed to a method.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)|Applies runtime reflection policy to a constructor or method.|  
+|[\<Method>](method-element-net-native.md)|Applies runtime reflection policy to a constructor or method.|  
   
 ## Remarks  
- The `<TypeParameter>` element is similar to the [\<Parameter>](../../../docs/framework/net-native/parameter-element-net-native.md) element, except that it can be applied only to parameters of type <xref:System.Type>. It applies policy to whatever type is represented at run time by the type argument specified by the `Name` attribute.  
+ The `<TypeParameter>` element is similar to the [\<Parameter>](parameter-element-net-native.md) element, except that it can be applied only to parameters of type <xref:System.Type>. It applies policy to whatever type is represented at run time by the type argument specified by the `Name` attribute.  
   
  For example, the NewtonSoft JSON serializer includes a static `JsonConvert.DeserializeObject(String value, Type type)` method. The following reflection directives:  
   
@@ -88,8 +86,9 @@ Object obj = JsonConvert.DeserializeObject(data, t);
   
  the reflection directives make metadata for the `StockQuote` type available for the NewtonSoft JSON serializer at run time.  
   
-## See Also  
- [\<Method> Element](../../../docs/framework/net-native/method-element-net-native.md)  
- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)  
- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)  
- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
+## See also
+
+- [\<Method> Element](method-element-net-native.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)

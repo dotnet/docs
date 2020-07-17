@@ -14,18 +14,16 @@ helpviewer_keywords:
 ms.assetid: 01f9a59b-7679-4d42-9ced-4a8981625c3d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_THREAD_STATS Structure
 Contains per-thread statistics pertaining to garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_GC_THREAD_STATS {  
-    ULONGLONG  PerThreadAllocation;   
-    ULONG      Flags;   
+    ULONGLONG  PerThreadAllocation;
+    ULONG      Flags;
 } COR_GC_THREAD_STATS;  
 ```  
   
@@ -37,10 +35,10 @@ typedef struct _COR_GC_THREAD_STATS {
 |`Flags`|The number of bytes promoted to a higher generation at the most recent garbage collection.|  
   
 ## Remarks  
- [ICLRTask::GetMemStats](../../../../docs/framework/unmanaged-api/hosting/iclrtask-getmemstats-method.md) takes an output parameter of type `COR_GC_THREAD_STATS`.  
+ [ICLRTask::GetMemStats](iclrtask-getmemstats-method.md) takes an output parameter of type `COR_GC_THREAD_STATS`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl  
   
@@ -48,6 +46,7 @@ typedef struct _COR_GC_THREAD_STATS {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
+## See also
+
+- [Hosting Structures](hosting-structures.md)
+- [IHostTask Interface](ihosttask-interface.md)

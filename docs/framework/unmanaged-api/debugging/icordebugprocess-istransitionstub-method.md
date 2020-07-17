@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: f7653317-7e48-4163-be03-f50f1a4b0f70
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::IsTransitionStub Method
 Gets a value that indicates whether an address is inside a stub that will cause a transition to managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsTransitionStub(  
     [in]  CORDB_ADDRESS address,  
     [out] BOOL *pbTransitionStub);  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] A `CORDB_ADDRESS` value that specifies the address in question.  
   
@@ -42,7 +40,7 @@ HRESULT IsTransitionStub(
  You can also identity transition stubs by looking at information in the portable executable (PE) file.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 625c3dd5-a3f0-442c-adde-310dadbb5054
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostAssemblyStore::ProvideAssembly Method
-Gets a reference to an assembly that is not referenced by the [ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md) that is returned from [IHostAssemblyManager::GetNonHostStoreAssemblies](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-getnonhoststoreassemblies-method.md). The common language runtime (CLR) calls `ProvideAssembly` for each assembly that does not appear in the list.  
+Gets a reference to an assembly that is not referenced by the [ICLRAssemblyReferenceList](iclrassemblyreferencelist-interface.md) that is returned from [IHostAssemblyManager::GetNonHostStoreAssemblies](ihostassemblymanager-getnonhoststoreassemblies-method.md). The common language runtime (CLR) calls `ProvideAssembly` for each assembly that does not appear in the list.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ProvideAssembly (  
     [in]  AssemblyBindInfo *pBindInfo,  
     [out] UINT64           *pAssemblyId,  
@@ -33,9 +31,9 @@ HRESULT ProvideAssembly (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pBindInfo`  
- [in] A pointer to an [AssemblyBindInfo](../../../../docs/framework/unmanaged-api/hosting/assemblybindinfo-structure.md) instance that the host uses to determine certain bind characteristics, including the presence or absence of any versioning policy, and which assembly to bind to.  
+ [in] A pointer to an [AssemblyBindInfo](assemblybindinfo-structure.md) instance that the host uses to determine certain bind characteristics, including the presence or absence of any versioning policy, and which assembly to bind to.  
   
  `pAssemblyId`  
  [out] A pointer to a unique identifier for the requested assembly for this `IStream`.  
@@ -66,7 +64,7 @@ HRESULT ProvideAssembly (
  The identity value returned for `pAssemblyId` is specified by the host. Identifiers must be unique within the lifetime of a process. The CLR uses this value as a unique identifier for the stream. It checks each value against the values for `pAssemblyId` returned by other calls to `ProvideAssembly`. If the host returns the same `pAssemblyId` value for another `IStream`, the CLR checks whether the contents of that stream have already been mapped. If so, the runtime loads the existing copy of the image instead of mapping a new one.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -74,7 +72,8 @@ HRESULT ProvideAssembly (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyReferenceList Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md)  
- [IHostAssemblyManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblymanager-interface.md)  
- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)
+## See also
+
+- [ICLRAssemblyReferenceList Interface](iclrassemblyreferencelist-interface.md)
+- [IHostAssemblyManager Interface](ihostassemblymanager-interface.md)
+- [IHostAssemblyStore Interface](ihostassemblystore-interface.md)

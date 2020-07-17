@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a8ecd8c8-9627-4356-9c6f-bd05e24637c0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugCode::GetILToNativeMapping Method
 Gets an array of "COR_DEBUG_IL_TO_NATIVE_MAP" instances that represent mappings from Microsoft intermediate language (MSIL) offsets to native offsets.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILToNativeMapping (  
     [in]  ULONG32    cMap,  
     [out] ULONG32    *pcMap,  
@@ -32,7 +30,7 @@ HRESULT GetILToNativeMapping (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cMap`  
  [in] The size of the `map` array.  
   
@@ -40,7 +38,7 @@ HRESULT GetILToNativeMapping (
  [out] A pointer to the actual number of elements returned in the `map` array.  
   
  `map`  
- [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` stuctures, each of which represents a mapping from an MSIL offset to a native offset.  
+ [out] An array of `COR_DEBUG_IL_TO_NATIVE_MAP` structures, each of which represents a mapping from an MSIL offset to a native offset.  
   
  There is no ordering to the array of elements returned.  
   
@@ -48,7 +46,7 @@ HRESULT GetILToNativeMapping (
  The `GetILToNativeMapping` method returns meaningful results only if this "ICorDebugCode" instance represents native code that was just-in-time (JIT) compiled from MSIL code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -56,5 +54,6 @@ HRESULT GetILToNativeMapping (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugCode Interface1](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)
+## See also
+
+- [ICorDebugCode Interface](icordebugcode-interface1.md)

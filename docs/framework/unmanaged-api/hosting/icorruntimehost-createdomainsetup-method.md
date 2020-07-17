@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: c21dab60-fb65-47d9-8a94-7fd47ca53b48
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::CreateDomainSetup Method
 Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. `IAppDomainSetup` provides methods to configure aspects of an application domain before it is created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDomainSetup (  
     [out] IUnknown** pAppDomainSetup  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomainSetup`  
  [out] An interface pointer to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. This parameter is typed as `IUnknown`, so callers should generally call `QueryInterface` on this pointer to obtain an interface pointer of type `IAppDomainSetup`.  
   
@@ -43,10 +41,10 @@ HRESULT CreateDomainSetup (
 |HOST_E_CLRNOTAVAILABLE|The CLR has not been loaded into a process, or the CLR is in a state in which it cannot run managed code or process the call successfully.|  
   
 ## Remarks  
- The pointer returned from this method is typically passed as a parameter to the [CreateDomainEx](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-createdomainex-method.md) method.  
+ The pointer returned from this method is typically passed as a parameter to the [CreateDomainEx](icorruntimehost-createdomainex-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -54,9 +52,10 @@ HRESULT CreateDomainSetup (
   
  **.NET Framework Version:** 1.0, 1.1  
   
-## See Also  
- <xref:System._AppDomain>  
- <xref:System.AppDomain>  
- <xref:System.AppDomainSetup>  
- <xref:System.IAppDomainSetup?displayProperty=nameWithType>  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)
+## See also
+
+- <xref:System._AppDomain>
+- <xref:System.AppDomain>
+- <xref:System.AppDomainSetup>
+- <xref:System.IAppDomainSetup?displayProperty=nameWithType>
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)

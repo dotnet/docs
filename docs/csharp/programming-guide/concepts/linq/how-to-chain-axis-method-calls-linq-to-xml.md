@@ -1,9 +1,9 @@
 ---
-title: "How to: Chain Axis Method Calls (LINQ to XML) (C#)"
+title: "How to chain axis method calls (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
 ---
-# How to: Chain Axis Method Calls (LINQ to XML) (C#)
+# How to chain axis method calls (LINQ to XML) (C#)
 A common pattern that you will use in your code is to call an axis method, then call one of the extension method axes.  
   
  There are two axes with the name of `Elements` that return a collection of elements: the <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType> method and the <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType> method. You can combine these two axes to find all elements of a specified name at a given depth in the tree.  
@@ -11,7 +11,7 @@ A common pattern that you will use in your code is to call an axis method, then 
 ## Example  
  This example uses <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType> and <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType> to find all `Name` elements in all `Address` elements in all `PurchaseOrder` elements.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](./sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```csharp  
 XElement purchaseOrders = XElement.Load("PurchaseOrders.xml");  
@@ -67,7 +67,7 @@ foreach (XElement e in names)
   
 ```csharp  
 XElement root = XElement.Load("Irregular.xml");  
-IEnumerable<XElement> configParameters =   
+IEnumerable<XElement> configParameters =
     root.Elements("Customer").Elements("Config").  
     Elements("ConfigParameter");  
 foreach (XElement cp in configParameters)  
@@ -82,9 +82,9 @@ foreach (XElement cp in configParameters)
 ```  
   
 ## Example  
- The following example shows the same technique for XML that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same technique for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders in a Namespace](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders in a Namespace](./sample-xml-file-multiple-purchase-orders-in-a-namespace.md).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -110,6 +110,6 @@ foreach (XElement e in names)
 <aw:Name xmlns:aw="http://www.adventure-works.com">Jessica Arnold</aw:Name>  
 ```  
   
-## See Also
+## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](linq-to-xml-axes-overview.md)

@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, how to traverse a tree"
 ms.assetid: 4265d169-6c69-4f36-b10d-b7ae7f72f4df
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Traverse a Binary Tree with Parallel Tasks
 The following example shows two ways in which parallel tasks can be used to traverse a tree data structure. The creation of the tree itself is left as an exercise.  
@@ -22,4 +20,4 @@ The following example shows two ways in which parallel tasks can be used to trav
   
 ## See also
 
-- [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md)
+- [Task Parallel Library (TPL)](task-parallel-library-tpl.md)

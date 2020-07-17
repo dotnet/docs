@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: d079131b-685b-4869-95be-826b88d28bd2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::SetManagedHandler Method
 Specifies the event handler object for managed events.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetManagedHandler (  
     [in] ICorDebugManagedCallback     *pCallback  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pCallback`  
- [in] A pointer to an [ICorDebugManagedCallback](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md) object, which is the event handler object.  
+ [in] A pointer to an [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) object, which is the event handler object.  
   
 ## Remarks  
  `SetManagedHandler` must be called at creation time.  
@@ -39,7 +37,7 @@ HRESULT SetManagedHandler (
  If the `ICorDebugManagedCallback` implementation does not contain sufficient interfaces to handle debugging events for the application that is being debugged, `SetManagedHandler` returns an HRESULT of E_NOINTERFACE.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -47,5 +45,6 @@ HRESULT SetManagedHandler (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+## See also
+
+- [ICorDebug Interface](icordebug-interface.md)

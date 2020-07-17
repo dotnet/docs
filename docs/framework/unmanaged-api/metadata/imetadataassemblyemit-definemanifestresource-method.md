@@ -15,25 +15,23 @@ helpviewer_keywords:
 ms.assetid: 27f6d295-0fe9-4cda-b77e-6e7d5c53df09
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::DefineManifestResource Method
 Creates a `ManifestResource` structure containing metadata for the specified manifest resource, and returns the associated metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineManifestResource (  
-    [in] LPCWSTR                szName,   
-    [in] mdToken                tkImplementation,   
-    [in] DWORD                  dwOffset,   
+    [in] LPCWSTR                szName,
+    [in] mdToken                tkImplementation,
+    [in] DWORD                  dwOffset,
     [in] DWORD                  dwResourceFlags,  
     [out] mdManifestResource    *pmdmr  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szName`  
  [in] The name of the resource.  
   
@@ -53,7 +51,7 @@ HRESULT DefineManifestResource (
  One `ManifestResource` metadata structure must be defined for each resource that is implemented in each of the assembly's files.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -61,5 +59,6 @@ HRESULT DefineManifestResource (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

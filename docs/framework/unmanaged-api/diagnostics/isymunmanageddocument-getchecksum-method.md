@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 9bc881b3-e2ce-48a7-ad69-17eaaa304120
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetCheckSum Method
 Gets the checksum.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCheckSum(  
     [in]  ULONG32  cData,  
     [out] ULONG32  *pcData,  
     [out, size_is(cData), length_is(*pcData)] BYTE data[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `cData`  
  [in] The length of the buffer provided by the `data` parameter  
   
@@ -43,5 +41,6 @@ HRESULT GetCheckSum(
 ## Return Value  
  S_OK if the method succeeds; otherwise, an error code.  
   
-## See Also  
- [ISymUnmanagedDocument Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocument-interface.md)
+## See also
+
+- [ISymUnmanagedDocument Interface](isymunmanageddocument-interface.md)

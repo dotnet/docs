@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: f721c863-9642-4e64-917a-65f9e55c25b9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetCustomAttributeValue Method
-Sets or updates the value of a custom attribute defined by a prior call to [IMetaDataEmit::DefineCustomAttribute](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definecustomattribute-method.md).  
+Sets or updates the value of a custom attribute defined by a prior call to [IMetaDataEmit::DefineCustomAttribute](imetadataemit-definecustomattribute-method.md).  
   
 ## Syntax  
   
-```  
-HRESULT SetCustomAttributeValue (   
-    [in]  mdCustomAttribute       pcv,   
-    [in]  void const              *pCustomAttribute,    
-    [in]  ULONG                   cbCustomAttribute   
+```cpp  
+HRESULT SetCustomAttributeValue (
+    [in]  mdCustomAttribute       pcv,
+    [in]  void const              *pCustomAttribute,
+    [in]  ULONG                   cbCustomAttribute
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcv`  
  [in] The token of the target custom attribute.  
   
@@ -42,7 +40,7 @@ HRESULT SetCustomAttributeValue (
  [in] The size, in bytes, of the custom attribute.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,6 +48,7 @@ HRESULT SetCustomAttributeValue (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

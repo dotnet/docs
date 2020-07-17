@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 94b591c4-9302-4af2-a510-089496afb036
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugClass2::GetParameterizedType Method
 Gets the type declaration for this class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetParameterizedType (  
     [in] CorElementType                      elementType,  
     [in] ULONG32                             nTypeArgs,  
@@ -32,7 +30,7 @@ HRESULT GetParameterizedType (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `elementType`  
  [in] A value of the CorElementType enumeration that specifies the element type for this class: Set this value to ELEMENT_TYPE_VALUETYPE if this ICorDebugClass2 represents a value type. Set this value to ELEMENT_TYPE_CLASS if this `ICorDebugClass2` represents a complex type.  
   
@@ -58,7 +56,7 @@ HRESULT GetParameterizedType (
  The introduction of the `ICorDebugType` object to represent the run-time notion of a type has a ripple effect throughout the API. Functions that previously took an `ICorDebugClass` or `ICorDebugClass2` object or even a `CorElementType` value are generalized to take an `ICorDebugType` object.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -1,0 +1,31 @@
+- name: Unmanaged API Reference
+  href: index.md
+  items:
+  - name: Common Data Types
+    href: common-data-types-unmanaged-api-reference.md
+  - name: ALink API
+    href: alink/
+  - name: Authenticode
+    href: authenticode/
+  - name: Constants
+    href: constants-unmanaged-api-reference.md
+  - name: Debugging
+    href: debugging/
+  - name: Diagnostics Symbol Store
+    href: diagnostics/
+  - name: Fusion
+    href: fusion/
+  - name: Hosting
+    href: hosting/
+  - name: Metadata
+    href: metadata/
+  - name: Profiling
+    href: profiling/
+  - name: Strong Naming
+    href: strong-naming/
+  - name: WMI and Performance Counters
+    href: wmi/
+  - name: Tlbexp Helper Functions
+    href: tlbexp/
+  - name: GUID_ManagedName Attribute
+    href: guid-managedname-attribute.md

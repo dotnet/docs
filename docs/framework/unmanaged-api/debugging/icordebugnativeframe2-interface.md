@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 52a80838-af36-4399-bc97-d8a4c6d76df2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame2 Interface
 Provides methods that test for child and parent frame relationships.  
@@ -24,18 +22,18 @@ Provides methods that test for child and parent frame relationships.
   
 |Method|Description|  
 |------------|-----------------|  
-|[IsChild Method](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-ischild-method.md)|Determines whether the current frame is a child frame.|  
-|[IsMatchingParentFrame Method](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-ismatchingparentframe-method.md)|Determines whether the specified frame is the parent of the current frame.|  
-|[GetStackParameterSize Method](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-getstackparametersize-method.md)|Returns the cumulative size of the parameters on the stack on x86 operating systems.|  
+|[IsChild Method](icordebugnativeframe2-ischild-method.md)|Determines whether the current frame is a child frame.|  
+|[IsMatchingParentFrame Method](icordebugnativeframe2-ismatchingparentframe-method.md)|Determines whether the specified frame is the parent of the current frame.|  
+|[GetStackParameterSize Method](icordebugnativeframe2-getstackparametersize-method.md)|Returns the cumulative size of the parameters on the stack on x86 operating systems.|  
   
 ## Remarks  
  This interface logically extends the "ICorDebugNativeFrame" interface.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -43,7 +41,7 @@ Provides methods that test for child and parent frame relationships.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
-    
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

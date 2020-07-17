@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: d6f9ac84-302a-4f5e-b990-e76f4269fceb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetMethodVersion Method
 Gets the method version. The method version starts at 1 and is incremented each time the method is recompiled. Recompilation can happen without changes to the method.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodVersion (  
     [in]  ISymUnmanagedMethod* pMethod,  
     [out] int* version);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMethod`  
  [in] The method for which to get the version.  
   
@@ -42,5 +40,6 @@ HRESULT GetMethodVersion (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

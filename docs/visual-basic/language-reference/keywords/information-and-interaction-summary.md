@@ -1,5 +1,5 @@
 ---
-title: "Information and Interaction Summary (Visual Basic)"
+title: "Information and Interaction Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "information functions [Visual Basic]"
@@ -19,6 +19,7 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Retrieve color information.|<xref:Microsoft.VisualBasic.Information.QBColor%2A>, <xref:Microsoft.VisualBasic.Information.RGB%2A>|  
 |Control dialog boxes|<xref:Microsoft.VisualBasic.Interaction.InputBox%2A>, <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c0a6dce5-0a8d-42e8-808b-6ca14df9d289
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::Start Method
 Initializes the common language runtime (CLR) into a process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start();  
 ```  
   
@@ -42,7 +40,7 @@ HRESULT Start();
  In many scenarios it is not necessary to call `Start`, because the runtime will initialize itself automatically upon the first request to run managed code. You can, however, use `Start` to specify exactly when the runtime should be initialized.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -50,6 +48,7 @@ HRESULT Start();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.AppDomain>  
- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
+## See also
+
+- <xref:System.AppDomain>
+- [ICLRRuntimeHost Interface](iclrruntimehost-interface.md)

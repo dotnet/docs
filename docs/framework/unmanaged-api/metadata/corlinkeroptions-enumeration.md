@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: a656aad6-cc7e-4994-8251-004a6a45e18f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorLinkerOptions Enumeration
 Specifies flags to select options for the metadata linker.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorLinkerOptions {  
     MDAssembly          = 0x00000000,  
     MDNetModule         = 0x00000001,  
@@ -37,11 +35,12 @@ typedef enum CorLinkerOptions {
 |`MDNetModule`|The private types and global functions are preserved.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+
+- [Metadata Enumerations](metadata-enumerations.md)

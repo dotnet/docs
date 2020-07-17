@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, how to unwrap nested tasks"
 ms.assetid: a0769dd2-0f6d-48ca-8418-a9d39de7f450
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Unwrap a Nested Task
 You can return a task from a method, and then wait on or continue from that task, as shown in the following example:  
@@ -39,5 +37,5 @@ You can return a task from a method, and then wait on or continue from that task
   
 ## See also
 
-- <xref:System.Threading.Tasks.TaskExtensions?displayProperty=nameWithType>  
-- [Task-based Asynchronous Programming](../../../docs/standard/parallel-programming/task-based-asynchronous-programming.md)
+- <xref:System.Threading.Tasks.TaskExtensions?displayProperty=nameWithType>
+- [Task-based Asynchronous Programming](task-based-asynchronous-programming.md)

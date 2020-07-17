@@ -32,5 +32,6 @@ class Behavior
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>
+## See also
+
+- <xref:System.ServiceModel.Description.ServiceDescription.Behaviors%2A>

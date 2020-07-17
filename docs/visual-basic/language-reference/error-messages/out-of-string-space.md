@@ -1,5 +1,5 @@
 ---
-title: "Out of string space (Visual Basic)"
+title: "Out of string space"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID14"
@@ -10,10 +10,11 @@ With Visual Basic, you can use very large strings. However, the requirements of 
   
 ## To correct this error  
   
-1.  Make sure that an expression requiring temporary string creation during evaluation is not causing the error.  
+1. Make sure that an expression requiring temporary string creation during evaluation is not causing the error.  
   
-2.  Remove any unnecessary applications from memory to create more space.  
+2. Remove any unnecessary applications from memory to create more space.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)  
- [String Manipulation Summary](../../../visual-basic/language-reference/keywords/string-manipulation-summary.md)
+## See also
+
+- [Error Types](../../programming-guide/language-features/error-types.md)
+- [String Manipulation Summary](../keywords/string-manipulation-summary.md)

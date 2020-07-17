@@ -3,7 +3,6 @@ title: project.json and csproj comparison
 description: See a mapping between project.json and csproj elements.
 author: natemcmaster
 ms.date: 03/13/2017
-ms.custom: "seodec18"
 ---
 # A mapping between project.json and csproj properties
 
@@ -33,7 +32,7 @@ The new format, \*.csproj, is an XML-based format. The following example shows t
 }
 ```
 
-No longer supported. In csproj, this is determined by the project filename, which is defined by the directory name. For example, `MyProjectName.csproj`.
+No longer supported. In csproj, this is determined by the project filename, which usually matches the directory name. For example, `MyProjectName.csproj`.
 
 By default, the project filename also specifies the value of the `<AssemblyName>` and `<PackageId>` properties.
 
@@ -174,7 +173,7 @@ Use the `TargetFrameworks` property to define your list of target frameworks. Us
 </PropertyGroup>
 ```
 
-Note that the `<RuntimeFrameworkVersion>` value in the migrated project is determined by the version of the SDK you have installed.
+The `<RuntimeFrameworkVersion>` value in the migrated project is determined by the version of SDK that's installed.
 
 ### Top-level dependencies
 
@@ -334,7 +333,7 @@ standalone.
 
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
 
-For more information, see [Self-contained deployments (SCD)](../deploying/index.md#self-contained-deployments-scd).
+For more information, see [Self-contained deployments (SCD)](../deploying/index.md#publish-self-contained).
 
 ## tools
 
@@ -483,8 +482,7 @@ See also [Files](#files).
 </PropertyGroup>
 ```
 
-There is no equivalent for the `owners` element in MSBuild.
-For `summary`, you can use the MSBuild `<Description>` property, even though the value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#other-common-root-level-options) element.
+There is no equivalent for the `owners` element in MSBuild. For `summary`, you can use the MSBuild `<Description>` property. The value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#other-common-root-level-options) element.
 
 ## scripts
 
@@ -497,7 +495,7 @@ For `summary`, you can use the MSBuild `<Description>` property, even though the
 }
 ```
 
-Their equivalent in MSBuild are [targets](/visualstudio/msbuild/msbuild-targets):
+Their equivalents in MSBuild are [targets](/visualstudio/msbuild/msbuild-targets):
 
 ```xml
 <Target Name="MyPreCompileTarget" BeforeTargets="Build">
@@ -526,7 +524,7 @@ Their equivalent in MSBuild are [targets](/visualstudio/msbuild/msbuild-targets)
 }
 ```
 
-All settings in this group, except for the "System.GC.Server" property, are placed into a file called
+All settings in this group, except for the `System.GC.Server` property, are placed into a file called
 *runtimeconfig.template.json* in the project folder, with options lifted to the root object during the migration process:
 
 ```json
@@ -540,7 +538,7 @@ All settings in this group, except for the "System.GC.Server" property, are plac
 }
 ```
 
-The "System.GC.Server" property is migrated into the csproj file:
+The `System.GC.Server` property is migrated into the csproj file:
 
 ```xml
 <PropertyGroup>
@@ -568,7 +566,7 @@ However, you can set all those values in the csproj as well as MSBuild propertie
 }
 ```
 
-Not supported in csproj. You must instead create include content files in your *.nuspec* file.
+Not supported in csproj. Instead, create include content files in your *.nuspec* file.
 For more information, see [Including content files](/nuget/schema/nuspec#including-content-files).
 
 ## files
@@ -620,8 +618,7 @@ In MSBuild, this is done using [items](/visualstudio/msbuild/common-msbuild-proj
 ```
 
 > [!NOTE]
-> Many of the default [globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are added automatically by the .NET Core SDK.
-> For more information, see [Default Compile Item Values](https://aka.ms/sdkimplicititems).
+> Many of the default [globbing patterns](https://en.wikipedia.org/wiki/Glob_(programming)) are added automatically by the .NET Core SDK. For more information, see [Default compilation includes](../project-sdk/overview.md#default-compilation-includes).
 
 All MSBuild `ItemGroup` elements support `Include`, `Exclude`, and `Remove`.
 
@@ -672,6 +669,6 @@ For more information, see [Including content in a package](/nuget/schema/msbuild
 </ItemGroup>
 ```
 
-## See Also
+## See also
 
-* [High-level overview of changes in CLI](../tools/cli-msbuild-architecture.md)
+- [High-level overview of changes in CLI](cli-msbuild-architecture.md)

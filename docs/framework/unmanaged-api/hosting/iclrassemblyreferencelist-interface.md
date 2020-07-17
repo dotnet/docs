@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5f890fdf-d22a-429e-a35f-135273d1a636
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyReferenceList Interface
 Manages a list of assemblies that are loaded by the common language runtime (CLR) and not by the host.  
@@ -24,14 +22,14 @@ Manages a list of assemblies that are loaded by the common language runtime (CLR
   
 |Method|Description|  
 |------------|-----------------|  
-|[IsAssemblyReferenceInList Method](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-isassemblyreferenceinlist-method.md)|Gets a value that indicates whether the supplied pointer references an assembly in the list.|  
-|[IsStringAssemblyReferenceInList Method](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-isstringassemblyreferenceinlist-method.md)|Gets a value that indicates whether the supplied name matches the name of an assembly in the list.|  
+|[IsAssemblyReferenceInList Method](iclrassemblyreferencelist-isassemblyreferenceinlist-method.md)|Gets a value that indicates whether the supplied pointer references an assembly in the list.|  
+|[IsStringAssemblyReferenceInList Method](iclrassemblyreferencelist-isstringassemblyreferenceinlist-method.md)|Gets a value that indicates whether the supplied name matches the name of an assembly in the list.|  
   
 ## Remarks  
- Call the [ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-getclrassemblyreferencelist-method.md) method to get a pointer to an instance of `ICLRAssemblyReferenceList`.  
+ Call the [ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList](iclrassemblyidentitymanager-getclrassemblyreferencelist-method.md) method to get a pointer to an instance of `ICLRAssemblyReferenceList`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -39,7 +37,8 @@ Manages a list of assemblies that are loaded by the common language runtime (CLR
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)  
- [IHostAssemblyStore Interface](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)
+- [IHostAssemblyStore Interface](ihostassemblystore-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

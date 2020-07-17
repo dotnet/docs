@@ -1,5 +1,5 @@
 ---
-title: "Option Compare Statement (Visual Basic)"
+title: "Option Compare Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Compare"
@@ -24,7 +24,7 @@ Declares the default comparison method to use when comparing string data.
   
 ## Syntax  
   
-```  
+```vb  
 Option Compare { Binary | Text }  
 ```  
   
@@ -53,44 +53,45 @@ Option Compare { Binary | Text }
  `(A=a) < (À = à) < (B=b) < (E=e) < (Ê = ê) < (Z=z) < (Ø = ø)`  
   
 ## When an Option Compare Statement Is Not Present  
- If the source code does not contain an `Option Compare` statement, the **Option Compare** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If you use the command-line compiler, the setting specified by the [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) compiler option is used.  
+ If the source code does not contain an `Option Compare` statement, the **Option Compare** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If you use the command-line compiler, the setting specified by the [-optioncompare](../../reference/command-line-compiler/optioncompare.md) compiler option is used.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 #### To set Option Compare in the IDE  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
+1. In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
-2.  Click the **Compile** tab.  
+2. Click the **Compile** tab.  
   
-3.  Set the value in the **Option Compare** box.  
+3. Set the value in the **Option Compare** box.  
   
  When you create a project, the **Option Compare** setting on the **Compile** tab is set to the **Option Compare** setting in the **Options** dialog box. To change this setting, on the **Tools** menu, click **Options**. In the **Options** dialog box, expand **Projects and Solutions**, and then click **VB Defaults**. The initial default setting in **VB Defaults** is **Binary**.  
   
 #### To set Option Compare on the command line  
   
--   Include the [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md) compiler option in the **vbc** command.  
+- Include the [-optioncompare](../../reference/command-line-compiler/optioncompare.md) compiler option in the **vbc** command.  
   
 ## Example  
  The following example uses the `Option Compare` statement to set the binary comparison as the default string comparison method. To use this code, uncomment the `Option Compare Binary` statement, and put it at the top of the source file.  
   
- [!code-vb[VbVbalrStatements#45](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#45](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#45)]  
   
 ## Example  
  The following example uses the `Option Compare` statement to set the case-insensitive text sort order as the default string comparison method. To use this code, uncomment the `Option Compare Text` statement, and put it at the top of the source file.  
   
- [!code-vb[VbVbalrStatements#46](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/option-compare-statement_2.vb)]  
+ [!code-vb[VbVbalrStatements#46](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#46)]  
   
-## See Also  
- <xref:Microsoft.VisualBasic.Strings.InStr%2A>  
- <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>  
- <xref:Microsoft.VisualBasic.Strings.Replace%2A>  
- <xref:Microsoft.VisualBasic.Strings.Split%2A>  
- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>  
- [/optioncompare](../../../visual-basic/reference/command-line-compiler/optioncompare.md)  
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [Comparison Operators in Visual Basic](../../../visual-basic/programming-guide/language-features/operators-and-expressions/comparison-operators.md)  
- [Like Operator](../../../visual-basic/language-reference/operators/like-operator.md)  
- [String Functions](../../../visual-basic/language-reference/functions/string-functions.md)  
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.Strings.InStr%2A>
+- <xref:Microsoft.VisualBasic.Strings.InStrRev%2A>
+- <xref:Microsoft.VisualBasic.Strings.Replace%2A>
+- <xref:Microsoft.VisualBasic.Strings.Split%2A>
+- <xref:Microsoft.VisualBasic.Strings.StrComp%2A>
+- [-optioncompare](../../reference/command-line-compiler/optioncompare.md)
+- [Comparison Operators](../operators/comparison-operators.md)
+- [Comparison Operators in Visual Basic](../../programming-guide/language-features/operators-and-expressions/comparison-operators.md)
+- [Like Operator](../operators/like-operator.md)
+- [String Functions](../functions/string-functions.md)
+- [Option Explicit Statement](option-explicit-statement.md)
+- [Option Strict Statement](option-strict-statement.md)

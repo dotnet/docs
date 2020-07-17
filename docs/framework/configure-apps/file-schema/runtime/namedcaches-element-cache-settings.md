@@ -1,27 +1,25 @@
 ---
-title: "&lt;namedCaches&gt; Element (Cache Settings)"
+title: "<namedCaches> Element (Cache Settings)"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "namedCaches element"
   - "caching [.NET Framework], configuration"
   - "<namedCaches> element"
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;namedCaches&gt; Element (Cache Settings)
+# \<namedCaches> Element (Cache Settings)
 Specifies a collection of configuration settings for the named <xref:System.Runtime.Caching.MemoryCache> instances. The <xref:System.Runtime.Caching.Configuration.MemoryCacheSection.NamedCaches%2A> property references the collection of configuration settings from one or more `namedCaches` elements of the configuration file.  
   
- \<configuration>  
-\< system.runtime.caching>  
-\<memoryCache>  
-\<namedCaches>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.runtime.caching>**](system-runtime-caching-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<memoryCache>**](memorycache-element-cache-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<namedCaches>**  
   
 ## Syntax  
   
 ```xml  
 <namedCaches>  
-  <add name="default"/>   
+  <add name="default"/>
 </namedCaches>  
 ```  
   
@@ -44,15 +42,17 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/runtime/add-element-for-namedcaches.md)|Adds a named cache to the `namedCaches` collection for a memory cache.|  
-|[\<clear>](../../../../../docs/framework/configure-apps/file-schema/runtime/clear-element-for-namedcaches.md)|Clears the `namedCaches` collection for a memory cache.|  
-|[\<remove>](../../../../../docs/framework/configure-apps/file-schema/runtime/remove-element-for-namedcaches.md)|Removes a named cache entry from the `namedCaches` collection for a memory cache.|  
+|[\<add>](add-element-for-namedcaches.md)|Adds a named cache to the `namedCaches` collection for a memory cache.|  
+|[\<clear>](clear-element-for-namedcaches.md)|Clears the `namedCaches` collection for a memory cache.|  
+|[\<remove>](remove-element-for-namedcaches.md)|Removes a named cache entry from the `namedCaches` collection for a memory cache.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<memoryCache>](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|  
+|[\<configuration>](../configuration-element.md)|Specifies the root element in every configuration file that is used by the common language runtime and .NET Framework applications.|  
+|[\<memoryCache>](memorycache-element-cache-settings.md)|Defines an element that is used to configure a cache that is based on the <xref:System.Runtime.Caching.MemoryCache> class.|  
+|[\<system.runtime.caching>](system-runtime-caching-element-cache-settings.md)|Contains types that let you implement output caching in applications that are built into the .NET Framework.|  
   
 ## Remarks  
  The memory cache configuration section of the Web.config file can contain `add`, `remove`, and `clear` attributes for the `namedCaches` collection. Each `namedCaches` entry is uniquely identified by the `name` attribute.  
@@ -72,8 +72,8 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   <system.runtime.caching>  
     <memoryCache>  
       <namedCaches>  
-          <add name="default"   
-               cacheMemoryLimitMegabytes="0"   
+          <add name="default"
+               cacheMemoryLimitMegabytes="0"
                physicalMemoryLimitPercentage="0"  
                pollingInterval="00:02:00" />  
       </namedCaches>  
@@ -83,5 +83,6 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
 </configuration>  
 ```  
   
-## See Also  
-- [\<memoryCache> Element (Cache Settings)](../../../../../docs/framework/configure-apps/file-schema/runtime/memorycache-element-cache-settings.md)
+## See also
+
+- [\<memoryCache> Element (Cache Settings)](memorycache-element-cache-settings.md)

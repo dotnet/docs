@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorAssemblyFlags Enumeration
 Contains values that describe the metadata applied to an assembly compilation.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorAssemblyFlags {  
   
     afPublicKey             =   0x0001,  
@@ -70,14 +68,15 @@ typedef enum CorAssemblyFlags {
 |`afRetargetable`|Indicates that the assembly can be retargeted at run time to an assembly from a different publisher.|  
 |`afContentType_Mask`|A mask that describes the content type.|  
 |`afContentType_Default`|Indicates the default content type.|  
-|`afContentType_WindowsRuntime`|Indicates the [!INCLUDE[wrt](../../../../includes/wrt-md.md)] content type.|  
+|`afContentType_WindowsRuntime`|Indicates the Windows Runtime content type.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+
+- [Metadata Enumerations](metadata-enumerations.md)

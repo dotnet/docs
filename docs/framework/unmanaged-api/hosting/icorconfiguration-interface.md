@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: aaf96116-372b-4538-afb1-9e0fcdac1f98
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorConfiguration Interface
 Provides methods for configuring the common language runtime (CLR).  
@@ -24,13 +22,13 @@ Provides methods for configuring the common language runtime (CLR).
   
 |Method|Description|  
 |------------|-----------------|  
-|[AddDebuggerSpecialThread Method](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-adddebuggerspecialthread-method.md)|Indicates to the debugging services that a particular thread should be allowed to continue executing while the debugger has an application stopped during managed or unmanaged debugging scenarios.|  
-|[SetDebuggerThreadControl Method](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-setdebuggerthreadcontrol-method.md)|Sets the callback interface that the debugging services will call as CLR threads are blocked and unblocked for debugging.|  
-|[SetGCHostControl Method](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-setgchostcontrol-method.md)|Sets the callback interface to be used by the garbage collector to request the host to change the limits of virtual memory.|  
-|[SetGCThreadControl Method](../../../../docs/framework/unmanaged-api/hosting/icorconfiguration-setgcthreadcontrol-method.md)|Sets the callback interface for scheduling threads for non-runtime tasks that would otherwise be blocked for a garbage collection.|  
+|[AddDebuggerSpecialThread Method](icorconfiguration-adddebuggerspecialthread-method.md)|Indicates to the debugging services that a particular thread should be allowed to continue executing while the debugger has an application stopped during managed or unmanaged debugging scenarios.|  
+|[SetDebuggerThreadControl Method](icorconfiguration-setdebuggerthreadcontrol-method.md)|Sets the callback interface that the debugging services will call as CLR threads are blocked and unblocked for debugging.|  
+|[SetGCHostControl Method](icorconfiguration-setgchostcontrol-method.md)|Sets the callback interface to be used by the garbage collector to request the host to change the limits of virtual memory.|  
+|[SetGCThreadControl Method](icorconfiguration-setgcthreadcontrol-method.md)|Sets the callback interface for scheduling threads for non-runtime tasks that would otherwise be blocked for a garbage collection.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -38,6 +36,7 @@ Provides methods for configuring the common language runtime (CLR).
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [CorRuntimeHost Coclass](../../../../docs/framework/unmanaged-api/hosting/corruntimehost-coclass.md)
+## See also
+
+- [Hosting Interfaces](hosting-interfaces.md)
+- [CorRuntimeHost Coclass](corruntimehost-coclass.md)

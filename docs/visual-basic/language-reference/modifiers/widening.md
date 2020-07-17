@@ -1,5 +1,5 @@
 ---
-title: "Widening (Visual Basic)"
+title: "Widening"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.widening"
@@ -23,15 +23,16 @@ Indicates that a conversion operator (`CType`) converts a class or structure to 
   
  The `Widening` keyword can be used in this context:  
   
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [Operator Statement](../statements/operator-statement.md)  
   
- For example definitions of widening and narrowing conversion operators, see [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md).  
+ For example definitions of widening and narrowing conversion operators, see [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md).  
   
-## See Also  
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)  
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+## See also
+
+- [Operator Statement](../statements/operator-statement.md)
+- [Narrowing](narrowing.md)
+- [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [How to: Define an Operator](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [CType Function](../functions/ctype-function.md)
+- [Option Strict Statement](../statements/option-strict-statement.md)
+- [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

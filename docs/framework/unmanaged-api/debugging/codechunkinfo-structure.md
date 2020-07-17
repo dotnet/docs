@@ -1,5 +1,5 @@
 ---
-title: "CodeChunkInfo Structure1"
+title: "CodeChunkInfo Structure"
 ms.date: "03/30/2017"
 api_name: 
   - "CodeChunkInfo"
@@ -14,15 +14,14 @@ helpviewer_keywords:
 ms.assetid: 0f482454-8517-48de-ba7a-d7aedab13bb5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# CodeChunkInfo Structure1
+# CodeChunkInfo Structure
+
 Represents a single chunk of code in memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _CodeChunkInfo {  
     CORDB_ADDRESS startAddr;  
     ULONG32       length;  
@@ -40,7 +39,7 @@ typedef struct _CodeChunkInfo {
  The single chunk of code is a region of native code that is part of a code object such as a function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl  
   
@@ -48,7 +47,8 @@ typedef struct _CodeChunkInfo {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [GetCodeChunks Method](icordebugcode2-getcodechunks-method.md)
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

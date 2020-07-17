@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 820330a4-244c-4f67-ab5e-f24b0b3c2080
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostGCManager Interface
 Provides methods that notify the host of events in the garbage collection mechanism implemented by the common language runtime (CLR).  
@@ -24,12 +22,12 @@ Provides methods that notify the host of events in the garbage collection mechan
   
 |Member|Description|  
 |------------|-----------------|  
-|[SuspensionEnding Method](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionending-method.md)|Notifies the host that the CLR is resuming execution of tasks on threads that had been suspended for a garbage collection.|  
-|[SuspensionStarting Method](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionstarting-method.md)|Notifies the host that the CLR is suspending execution of tasks, to perform a garbage collection.|  
-|[ThreadIsBlockingForSuspension Method](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-threadisblockingforsuspension-method.md)|Notifies the host that the thread from which the method call was made is about to block for a garbage collection.|  
+|[SuspensionEnding Method](ihostgcmanager-suspensionending-method.md)|Notifies the host that the CLR is resuming execution of tasks on threads that had been suspended for a garbage collection.|  
+|[SuspensionStarting Method](ihostgcmanager-suspensionstarting-method.md)|Notifies the host that the CLR is suspending execution of tasks, to perform a garbage collection.|  
+|[ThreadIsBlockingForSuspension Method](ihostgcmanager-threadisblockingforsuspension-method.md)|Notifies the host that the thread from which the method call was made is about to block for a garbage collection.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -37,9 +35,10 @@ Provides methods that notify the host of events in the garbage collection mechan
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)  
- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [ICLRTask Interface](iclrtask-interface.md)
+- [ICLRTaskManager Interface](iclrtaskmanager-interface.md)
+- [IHostTask Interface](ihosttask-interface.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

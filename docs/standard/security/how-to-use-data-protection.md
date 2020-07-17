@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Data Protection"
+description: Learn how to use data protection by accessing the data protection API (DPAPI) in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -16,8 +17,6 @@ helpviewer_keywords:
   - "decryption"
   - "data [.NET Framework], encryption"
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Use Data Protection
 The .NET Framework provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  
@@ -28,25 +27,25 @@ The .NET Framework provides access to the data protection API (DPAPI), which all
   
 ### To encrypt in-memory data using data protection  
   
-1.  Call the static <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> method while passing an array of bytes to encrypt, the entropy, and the memory protection scope.  
+1. Call the static <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> method while passing an array of bytes to encrypt, the entropy, and the memory protection scope.  
   
 ### To decrypt in-memory data using data protection  
   
-1.  Call the static <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A> method while passing an array of bytes to decrypt and the memory protection scope.  
+1. Call the static <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A> method while passing an array of bytes to decrypt and the memory protection scope.  
   
 ### To encrypt data to a file or stream using data protection  
   
-1.  Create random entropy.  
+1. Create random entropy.  
   
-2.  Call the static <xref:System.Security.Cryptography.ProtectedData.Protect%2A> method while passing an array of bytes to encrypt, the entropy, and the data protection scope.  
+2. Call the static <xref:System.Security.Cryptography.ProtectedData.Protect%2A> method while passing an array of bytes to encrypt, the entropy, and the data protection scope.  
   
-3.  Write the encrypted data to a file or stream.  
+3. Write the encrypted data to a file or stream.  
   
 ### To decrypt data from a file or stream using data protection  
   
-1.  Read the encrypted data from a file or stream.  
+1. Read the encrypted data from a file or stream.  
   
-2.  Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> method while passing an array of bytes to decrypt and the data protection scope.  
+2. Call the static <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A> method while passing an array of bytes to decrypt and the data protection scope.  
   
 ## Example  
  The following code example demonstrates two forms of encryption and decryption.  First, the code example encrypts and then decrypts an in-memory array of bytes.  Next, the code example encrypts a copy of a byte array, saves it to a file, loads the data back from the file, and then decrypts the data.  The example displays the original data, the encrypted data, and the decrypted data.  
@@ -56,11 +55,11 @@ The .NET Framework provides access to the data protection API (DPAPI), which all
   
 ## Compiling the Code  
   
--   Include a reference to `System.Security.dll`.  
+- Include a reference to `System.Security.dll`.  
   
--   Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.  
+- Include the <xref:System>, <xref:System.IO>, <xref:System.Security.Cryptography>, and <xref:System.Text> namespace.  
   
 ## See also
 
-- <xref:System.Security.Cryptography.ProtectedMemory>  
+- <xref:System.Security.Cryptography.ProtectedMemory>
 - <xref:System.Security.Cryptography.ProtectedData>

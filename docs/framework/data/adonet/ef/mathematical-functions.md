@@ -86,7 +86,7 @@ A `Double`.
 **Example**
 
 `SqlServer.ATN2(9, 8)`
- 
+
 ## CEILING(expression)
 
 Converts the specified expression to the smallest integer that is greater than or equal to it.
@@ -99,131 +99,129 @@ Converts the specified expression to the smallest integer that is greater than o
 
 An `Int32`, `Int64`, `Double`, or `Decimal`.
 
-**Example** 
+**Example**
 
-[!code-csharp[DP EntityServices Concepts#SQLSERVER_CEILING](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_ceiling)]
 [!code-sql[DP EntityServices Concepts#SQLSERVER_CEILING](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_ceiling)]
 
 ## COS(expression)
 
-Calculates the trigonometric cosine of the specified angle in radians. 
+Calculates the trigonometric cosine of the specified angle in radians.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
-**Example** 
+**Example**
 
 `SqlServer.COS(45)`
 
 ## COT(expression)
 
-Calculates the trigonometric cotangent of the specified angle in radians. 
+Calculates the trigonometric cotangent of the specified angle in radians.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
-**Example** 
+**Example**
 
 `SqlServer.COT(60)`
   
 ## DEGREES(radians)
 
-Returns the corresponding angle in degrees. 
+Returns the corresponding angle in degrees.
 
-**Arguments** 
+**Arguments**
 
-`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`. 
+`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.
 
-**Return Value** 
+**Return Value**
 
-An `Int32`, `Int64`, `Double`, or `Decimal`. 
+An `Int32`, `Int64`, `Double`, or `Decimal`.
 
-**Example** 
+**Example**
 
 `SqlServer.DEGREES(3.1)`
 
 ## EXP(expression)
 
-Calculates the exponential value of a specified numeric expression. 
+Calculates the exponential value of a specified numeric expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
 **Example** `SqlServer.EXP(1)`
 
 ## FLOOR(expression)
 
-Converts the specified expression to the largest integer less than or equal to it. 
+Converts the specified expression to the largest integer less than or equal to it.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
-**Example** 
+**Example**
 
-[!code-csharp[DP EntityServices Concepts#SQLSERVER_FLOOR](~/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/entitysql.cs#sqlserver_floor)] 
 [!code-sql[DP EntityServices Concepts#SQLSERVER_FLOOR](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_floor)]
 
 ## LOG(expression)
 
-Calculates the natural logarithm of the specified `float` expression. 
+Calculates the natural logarithm of the specified `float` expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
-**Example** 
+**Example**
 
 `SqlServer.LOG(100)`
 
 ## LOG10(expression)
 
-Returns the base-10 logarithm of the specified `Double` expression. 
+Returns the base-10 logarithm of the specified `Double` expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
-**Example** 
+**Example**
 
 `SqlServer.LOG10(100)`
 
 ## PI()
 
-Returns the constant value of pi as a `Double`. 
+Returns the constant value of pi as a `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
-**Example** 
+**Example**
 
 `SqlServer.PI()`
 
@@ -231,130 +229,130 @@ A `Double`.
 
 Calculates the value of a specified expression to a specified power.
 
-**Arguments** 
+**Arguments**
 
 |  |  |
 |--|--|
 |`numeric_expression`| An `Int32`, `Int64`, `Double`, or `Decimal`.|
-|`power_expression`| A `Double` that represents the power to which to raise the `numeric_expression`.| 
+|`power_expression`| A `Double` that represents the power to which to raise the `numeric_expression`.|
 
-**Return Value** 
+**Return Value**
 
-The value of the specified `numeric_expression` to the specified `power_expression`. 
+The value of the specified `numeric_expression` to the specified `power_expression`.
 
-**Example** 
+**Example**
 
 `SqlServer.POWER(2,7)`
 
 ## RADIANS(expression)
 
-Converts degrees to radians. 
+Converts degrees to radians.
 
-**Arguments** 
+**Arguments**
 
-`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`. 
+`expression`: An `Int32`, `Int64`, `Double`, or `Decimal`.
 
-**Return Value** 
+**Return Value**
 
-An `Int32`, `Int64`, `Double`, or `Decimal`. 
+An `Int32`, `Int64`, `Double`, or `Decimal`.
 
-**Example** 
+**Example**
 
 `SqlServer.RADIANS(360.0)`
 
 ## RAND([seed])
 
-Returns a random value from 0 through 1. 
+Returns a random value from 0 through 1.
 
-**Arguments** 
+**Arguments**
 
 The seed value as an `Int32`. If the seed is not specified, the SQL Server Database Engine assigns a seed value at random. For a specified seed value, the result returned is always the same.
 
-**Return Value** 
+**Return Value**
 
-A random `Double` value from 0 through 1. 
+A random `Double` value from 0 through 1.
 
-**Example** 
+**Example**
 
 `SqlServer.RAND()`
   
 ## ROUND(numeric_expression, length[,function])
 
-Returns a numeric expression, rounded to the specified length or precision. 
+Returns a numeric expression, rounded to the specified length or precision.
 
-**Arguments** 
+**Arguments**
 
 |  |  |
 |--|--|
-|`numeric_expression`| An `Int32`, `Int64`, `Double`, or `Decimal`. 
+|`numeric_expression`| An `Int32`, `Int64`, `Double`, or `Decimal`.
 |`length`| An `Int32` that represents the precision to which `numeric_expression` is to be rounded. When `length` is a positive number, `numeric_expression` is rounded to the number of decimal positions specified by `length`. When `length` is a negative number, `numeric_expression` is rounded on the left side of the decimal point, as specified by `length`.|
 |`function` | Optional. An `Int32` that represents the type of operation to perform. When function is omitted or has a value of 0 (default), `numeric_expression` is rounded. When a value other than 0 is specified, `numeric_expression` is truncated. |
 
-**Return Value** 
+**Return Value**
 
 The value of the specified `numeric_expression` to the specified `power_expression`.
 
-**Example** 
+**Example**
 
 `SqlServer.ROUND(748.58, -3)`
 
-## SIGN(expression) 
+## SIGN(expression)
 
-Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression. 
+Returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: `Int32`, `Int64`, `Double`, or `Decimal` 
+`expression`: `Int32`, `Int64`, `Double`, or `Decimal`
 
-**Return Value** 
+**Return Value**
 
-An `Int32`, `Int64`, `Double`, or `Decimal`. 
+An `Int32`, `Int64`, `Double`, or `Decimal`.
 
-**Example** 
+**Example**
 
 `SqlServer.SIGN(-10)`
 
 ## SIN(expression)
 
-Calculates the trigonometric sine of the specified angle in radians, and returns a `Double` expression. 
+Calculates the trigonometric sine of the specified angle in radians, and returns a `Double` expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
 **Example** `SqlServer.SIN(20)`
 
 ## SQRT(expression)
 
-Returns the square root of the specified expression. 
+Returns the square root of the specified expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
 **Example** `SqlServer.SQRT(3600)`
 
 ## SQUARE(expression)
 
-Returns the square of the specified expression. 
+Returns the square of the specified expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: A `Double`. 
+`expression`: A `Double`.
 
-**Return Value** 
+**Return Value**
 
-A `Double`. 
+A `Double`.
 
-**Example** 
+**Example**
 
 `SqlServer.SQUARE(25)`
 
@@ -362,24 +360,19 @@ A `Double`.
 
 Calculates the tangent of a specified expression.
 
-**Arguments** 
+**Arguments**
 
-`expression`: `Double` 
+`expression`: `Double`
 
-**Return Value** 
+**Return Value**
 
-`Double` 
+`Double`
 
-**Example** 
+**Example**
 
 `SqlServer.TAN(45.0)`
   
 ## See also
 
-For more information about the mathematical functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:  
-  
-**SQL Server 2005:** [Mathematical Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms177516(v=sql.90))  
-**SQL Server 2008:** [Mathematical Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms177516(v=sql.100))  
-**SQL Server 2012 and later:** [Mathematical Functions (Transact-SQL)](/sql/t-sql/functions/mathematical-functions-transact-sql?view=sql-server-2017)   
-
- [SqlClient for Entity Framework Functions](sqlclient-for-ef-functions.md)
+- [Mathematical Functions (Transact-SQL)](/sql/t-sql/functions/mathematical-functions-transact-sql)
+- [SqlClient for Entity Framework Functions](sqlclient-for-ef-functions.md)

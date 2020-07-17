@@ -1,0 +1,20 @@
+﻿// <Snippet5>
+using System;
+using System.Text.RegularExpressions;
+
+public class Example
+{
+   public static void Main()
+   {
+      string pattern = @"\b(\d{2}-)?(?(1)\d{7}|\d{3}-\d{2}-\d{4})\b";
+      string input = "01-9999999 020-333333 777-88-9999";
+      Console.WriteLine("Matches for {0}:", pattern);
+      foreach (Match match in Regex.Matches(input, pattern))
+         Console.WriteLine("   {0} at position {1}", match.Value, match.Index);
+   }
+}
+// The example display the following output:
+//       Matches for \b(\d{2}-)?(?(1)\d{7}|\d{3}-\d{2}-\d{4})\b:
+//          01-9999999 at position 0
+//          777-88-9999 at position 22
+// </Snippet5>

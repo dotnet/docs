@@ -2,23 +2,21 @@
 title: "Example: Handling Exceptions When Binding Data"
 ms.date: "03/30/2017"
 ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Example: Handling Exceptions When Binding Data
 > [!NOTE]
->  This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
+> This topic refers to the .NET Native Developer Preview, which is pre-release software. You can download the preview from the [Microsoft Connect website](https://go.microsoft.com/fwlink/?LinkId=394611) (requires registration).  
   
- The following example shows how to resolve a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception that is thrown when an app compiled with the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain tries to bind data. Here’s the exception information:  
+ The following example shows how to resolve a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception that is thrown when an app compiled with the .NET Native tool chain tries to bind data. Here’s the exception information:  
   
-```  
-This operation cannot be carried out as metadata for the following type was removed for performance reasons:   
+```output
+This operation cannot be carried out as metadata for the following type was removed for performance reasons:
 App.ViewModels.MainPageVM  
 ```  
   
  Here's the associated call stack:  
   
-```  
+```output
 Reflection::Execution::ReflectionDomainSetupImplementation.CreateNonInvokabilityException+0x238  
 Reflection::Core::ReflectionDomain.CreateNonInvokabilityException+0x2e  
 Reflection::Core::Execution::ExecutionEnvironment.+0x316  
@@ -27,8 +25,8 @@ System::Reflection::PropertyInfo.GetValue+0x22
 System::Runtime::InteropServices::WindowsRuntime::CustomPropertyImpl.GetValue+0x42  
 App!$66_Interop::McgNative.Func_IInspectable_IInspectable+0x158  
 App!$66_Interop::McgNative::__vtable_Windows_UI_Xaml_Data__ICustomProperty.GetValue__STUB+0x46  
-Windows_UI_Xaml!DirectUI::PropertyProviderPropertyAccess::GetValue+0x3f   
-Windows_UI_Xaml!DirectUI::PropertyAccessPathStep::GetValue+0x31   
+Windows_UI_Xaml!DirectUI::PropertyProviderPropertyAccess::GetValue+0x3f
+Windows_UI_Xaml!DirectUI::PropertyAccessPathStep::GetValue+0x31
 Windows_UI_Xaml!DirectUI::PropertyPathListener::ConnectPathStep+0x113  
 ```  
   
@@ -53,6 +51,7 @@ Windows_UI_Xaml!DirectUI::PropertyPathListener::ConnectPathStep+0x113
   
  However, there are ways to specify the `ViewModel` to the XAML page so that the tool chain can associate property bindings with the correct type at compile time and keep the metadata without using a runtime directive.  For example, you could apply the <xref:Windows.UI.Xaml.Data.BindableAttribute?displayProperty=nameWithType> attribute on properties. This causes the XAML compiler to generate the required lookup information and avoids requiring a runtime directive in the Default.rd.xml file.  
   
-## See Also  
- [Getting Started](../../../docs/framework/net-native/getting-started-with-net-native.md)  
- [Example: Troubleshooting Dynamic Programming](../../../docs/framework/net-native/example-troubleshooting-dynamic-programming.md)
+## See also
+
+- [Getting Started](getting-started-with-net-native.md)
+- [Example: Troubleshooting Dynamic Programming](example-troubleshooting-dynamic-programming.md)

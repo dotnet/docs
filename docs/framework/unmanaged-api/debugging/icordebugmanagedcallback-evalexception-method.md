@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d6036345-18a3-45c1-a302-b1c6f2dced9b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::EvalException Method
 Notifies the debugger that an evaluation has terminated with an unhandled exception.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvalException (  
     [in] ICorDebugAppDomain *pAppDomain,  
     [in] ICorDebugThread    *pThread,  
@@ -31,7 +29,7 @@ HRESULT EvalException (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppDomain`  
  [in] A pointer to an ICorDebugAppDomain object that represents the application domain in which the evaluation terminated.  
   
@@ -42,7 +40,7 @@ HRESULT EvalException (
  [in] A pointer to an ICorDebugEval object that represents the code that performed the evaluation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -50,5 +48,6 @@ HRESULT EvalException (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+## See also
+
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

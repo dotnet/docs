@@ -23,5 +23,6 @@ class UseManagedPresentationBindingElement : BindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.UseManagedPresentationBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.UseManagedPresentationBindingElement>

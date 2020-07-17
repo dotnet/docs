@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: fad94e1e-78be-440f-aa43-e0c66e0b102e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetEditAndContinueSnapshot Method
 Deprecated.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetEditAndContinueSnapshot(  
     [out] ICorDebugEditAndContinueSnapshot **ppEditAndContinueSnapshot  
 );  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

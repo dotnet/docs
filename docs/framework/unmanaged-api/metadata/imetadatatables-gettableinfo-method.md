@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 50cbe557-2322-41aa-8e0d-f967602eaa0f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetTableInfo Method
 Gets the name, row size, number of rows, number of columns, and key column index of the specified table.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTableInfo (  
     [in]  ULONG       ixTbl,  
     [out] ULONG       *pcbRow,  
@@ -34,7 +32,7 @@ HRESULT GetTableInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixTbl`  
  [in] The identifier of the table whose properties to return.  
   
@@ -54,7 +52,7 @@ HRESULT GetTableInfo (
  [out] A pointer to a pointer to the table name.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -62,6 +60,7 @@ HRESULT GetTableInfo (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+## See also
+
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

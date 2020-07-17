@@ -15,27 +15,25 @@ helpviewer_keywords:
 ms.assetid: 14a4e5a3-3eaf-4f53-9dd1-762726963a23
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::EnableLogMessages Method
 Enables and disables the transmission of log messages to the debugger.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableLogMessages([in]BOOL fOnOff);  
 ```  
   
-#### Parameters  
+## Parameters  
  `fOnOff`  
  [in] `true` enables the transmission of log messages; `false` disables the transmission.  
   
 ## Remarks  
- This method is valid only after the [ICorDebugManagedCallback::CreateProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-createprocess-method.md) callback occurs.  
+ This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback occurs.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

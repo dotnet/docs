@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMetaDataLocator::GetMetaData Method
 Asks the debugger to return the full path to a module whose metadata is needed to complete an operation the debugger requested.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaData(  
       [in] LPCWSTR wszImagePath,  
       [in] DWORD   dwImageTimeStamp,  
@@ -35,7 +33,7 @@ HRESULT GetMetaData(
       );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszImagePath`  
  [in] A null-terminated string that represents the full path to the file. If the full path is not available, the name and extension of the file (*filename*.*extension*).  
   
@@ -56,7 +54,7 @@ HRESULT GetMetaData(
  `wszPathBuffer`  
  [out] Pointer to a buffer into which the debugger will copy the full path of the file that contains the requested metadata.  
   
- The `ofReadOnly` flag from the [CorOpenFlags](../../../../docs/framework/unmanaged-api/metadata/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.  
+ The `ofReadOnly` flag from the [CorOpenFlags](../metadata/coropenflags-enumeration.md) enumeration is used to request read-only access to the metadata in this file.  
   
 ## Return Value  
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure. All other failure HRESULTs indicate that the file is not retrievable.  
@@ -70,7 +68,7 @@ HRESULT GetMetaData(
  If `wszImagePath` contains a full path for a module from a dump, it specifies the path from the computer where the dump was collected. The file may not exist at this location, or an incorrect file with the same name may be stored on the path.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -78,7 +76,8 @@ HRESULT GetMetaData(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorDebugThread4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugthread4-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [ICorDebugThread4 Interface](icordebugthread4-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

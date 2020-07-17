@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: b0c6f19b-d4fd-4971-88f0-12ffb5793da3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IsFrameworkAssembly Function
 Gets a value that indicates whether the specified assembly is managed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsFrameworkAssembly (  
     [in]  LPCWSTR pwzAssemblyReference,  
     [out] LPBOOL  pbIsFrameworkAssembly,  
@@ -31,7 +29,7 @@ HRESULT IsFrameworkAssembly (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyReference`  
  [in] The name of the assembly to check.  
   
@@ -52,7 +50,8 @@ HRESULT IsFrameworkAssembly (
  If the named assembly is not part of the .NET Framework, or if the `pwzAssemblyReference` parameter does not name an assembly, `pbIsFrameworkAssembly` will contain a Boolean value of `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
-## See Also  
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## See also
+
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

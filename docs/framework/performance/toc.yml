@@ -1,0 +1,64 @@
+- name: Performance
+  href: index.md
+  items:
+  - name: Writing Large, Responsive .NET Framework Apps
+    href: writing-large-responsive-apps.md
+  - name: Caching in .NET Framework Applications
+    href: caching-in-net-framework-applications.md
+  - name: Lazy Initialization
+    href: lazy-initialization.md
+    items:
+    - name: "How to: Perform Lazy Initialization of Objects"
+      href: how-to-perform-lazy-initialization-of-objects.md
+  - name: ETW Events in the .NET Framework
+    href: etw-events.md
+    items:
+    - name: ETW Events in Task Parallel Library and PLINQ
+      href: etw-events-in-task-parallel-library-and-plinq.md
+    - name: ETW Events in the Common Language Runtime
+      href: etw-events-in-the-common-language-runtime.md
+      items:
+      - name: Controlling .NET Framework Logging
+        href: controlling-logging.md
+      - name: CLR ETW Providers
+        href: clr-etw-providers.md
+      - name: CLR ETW Keywords and Levels
+        href: clr-etw-keywords-and-levels.md
+      - name: CLR ETW Events
+        href: clr-etw-events.md
+        items:
+        - name: Runtime Information Events
+          href: runtime-information-etw-events.md
+        - name: Exception Thrown_V1 Event
+          href: exception-thrown-v1-etw-event.md
+        - name: Contention Events
+          href: contention-etw-events.md
+        - name: Thread Pool Events
+          href: thread-pool-etw-events.md
+        - name: Loader Events
+          href: loader-etw-events.md
+        - name: Method Events
+          href: method-etw-events.md
+        - name: Garbage Collection Events
+          href: garbage-collection-etw-events.md
+        - name: JIT Tracing Events
+          href: jit-tracing-etw-events.md
+        - name: Interop Events
+          href: interop-etw-events.md
+        - name: ARM Events
+          href: application-domain-resource-monitoring-arm-etw-events.md
+        - name: Security Events
+          href: security-etw-events.md
+        - name: Stack Event
+          href: stack-etw-event.md
+  - name: Reliability
+    href: reliability.md
+    items:
+    - name: SQL Server Programming and Host Protection Attributes
+      href: sql-server-programming-and-host-protection-attributes.md
+    - name: Reliability Best Practices
+      href: reliability-best-practices.md
+    - name: Constrained Execution Regions
+      href: constrained-execution-regions.md
+  - name: Performance Tips
+    href: performance-tips.md

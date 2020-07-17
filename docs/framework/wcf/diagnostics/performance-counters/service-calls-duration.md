@@ -9,5 +9,6 @@ Counter Name: Calls Duration
 ## Description  
  The average duration of calls to this service. The average duration is calculated based on this equation: (N1-N0)/(D1-D0).  
   
-## See Also  
- [PERF_AVERAGE_TIMER](https://go.microsoft.com/fwlink/?LinkID=95015)
+## See also
+
+- [PERF_AVERAGE_TIMER](https://docs.microsoft.com/previous-versions/windows/embedded/ms938538(v%3dmsdn.10))

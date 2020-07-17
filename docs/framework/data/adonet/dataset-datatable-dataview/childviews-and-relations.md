@@ -44,12 +44,12 @@ DataTable catTable = catDS.Tables["Categories"];
 DataTable prodTable = catDS.Tables["Products"];  
   
 // Create a relation between the Categories and Products tables.  
-DataRelation relation = catDS.Relations.Add("CatProdRel",   
+DataRelation relation = catDS.Relations.Add("CatProdRel",
   catTable.Columns["CategoryID"],  
                                                             prodTable.Columns["CategoryID"]);  
   
 // Create DataViews for the Categories and Products tables.  
-DataView catView = new DataView(catTable, "", "CategoryName",   
+DataView catView = new DataView(catTable, "", "CategoryName",
   DataViewRowState.CurrentRows);  
 DataView prodView;  
   
@@ -67,9 +67,10 @@ foreach (DataRowView catDRV in catView)
 }  
 ```  
   
-## See Also  
- <xref:System.Data.DataSet>  
- <xref:System.Data.DataView>  
- <xref:System.Data.DataRowView>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- <xref:System.Data.DataSet>
+- <xref:System.Data.DataView>
+- <xref:System.Data.DataRowView>
+- [DataViews](dataviews.md)
+- [ADO.NET Overview](../ado-net-overview.md)

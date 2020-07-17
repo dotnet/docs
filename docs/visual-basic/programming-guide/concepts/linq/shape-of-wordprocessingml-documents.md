@@ -1,5 +1,5 @@
 ---
-title: "Shape of WordprocessingML Documents (Visual Basic)"
+title: "Shape of WordprocessingML Documents"
 ms.date: 07/20/2015
 ms.assetid: 2dfb446b-5a07-4c00-9ab3-a74ba734ff3a
 ---
@@ -81,12 +81,11 @@ Module Module1
 End Module  
 ```  
   
-## External Resources  
- [Introducing the Office (2007) Open XML File Formats](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12))  
-  
- [Overview of WordprocessingML](https://msdn.microsoft.com/en-us/library/aa212812(office.11).aspx)  
-  
- [Office 2003: XML Reference Schemas Download page](https://go.microsoft.com/fwlink/?LinkId=98095)  
-  
-## See Also  
- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+## External resources
+
+- [Introducing the Office (2007) Open XML File Formats](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Overview of WordprocessingML](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812(v=office.11))
+
+## See also
+
+- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](tutorial-manipulating-content-in-a-wordprocessingml-document.md)

@@ -1,190 +1,200 @@
 ---
-title: How to create a .NET Core Global Tool
-description: Describes how to create a Global Tool. The Global Tool is a console application that is installed through the .NET Core CLI.
-author: Thraka
-ms.author: adegeo
-ms.date: 08/22/2018
+title: "Tutorial: Create a .NET Core tool"
+description: Learn how to create a .NET Core tool. A tool is a console application that is installed by using the .NET Core CLI.
+ms.date: 02/12/2020
 ---
 
-# Create a .NET Core Global Tool using the .NET Core CLI
+# Tutorial: Create a .NET Core tool using the .NET Core CLI
 
-This article teaches you how to create and package a .NET Core Global Tool. The .NET Core CLI allows you to create a console application as a Global Tool, which others can easily install and run. .NET Core Global Tools are NuGet packages that are installed from the .NET Core CLI. For more information about Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-[!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
+This tutorial teaches you how to create and package a .NET Core tool. The .NET Core CLI lets you create a console application as a tool, which others can install and run. .NET Core tools are NuGet packages that are installed from the .NET Core CLI. For more information about tools, see [.NET Core tools overview](global-tools.md).
+
+The tool that you'll create is a console application that takes a message as input and displays the message along with lines of text that create the image of a robot.
+
+This is the first in a series of three tutorials. In this tutorial, you create and package a tool. In the next two tutorials you [use the tool as a global tool](global-tools-how-to-use.md) and [use the tool as a local tool](local-tools-how-to-use.md).
+
+## Prerequisites
+
+- [.NET Core SDK 3.1](https://dotnet.microsoft.com/download) or a later version.
+
+  This tutorial and the following [tutorial for global tools](global-tools-how-to-use.md) apply to .NET Core SDK 2.1 and later versions because global tools are available starting in that version. But this tutorial assumes you have installed 3.1 or later so that you have the option of continuing on to the [local tools tutorial](local-tools-how-to-use.md). Local tools are available starting in .NET Core SDK 3.0. The procedures for creating a tool are the same whether you use it as a global tool or as a local tool.
+  
+- A text editor or code editor of your choice.
 
 ## Create a project
 
-This article uses the .NET Core CLI to create and manage a project.
+1. Open a command prompt and create a folder named *repository*.
 
-Our example tool will be a console application that generates an ASCII bot and prints a message. First, create a new .NET Core Console Application.
+1. Navigate to the *repository* folder and enter the following command:
 
-```console
-dotnet new console -o botsay
-```
+   ```dotnetcli
+   dotnet new console -n microsoft.botsay
+   ```
 
-Navigate to the `botsay` directory created by the previous command.
+   The command creates a new folder named *microsoft.botsay* under the *repository* folder.
+
+1. Navigate to the *microsoft.botsay* folder.
+
+   ```console
+   cd microsoft.botsay
+   ```
 
 ## Add the code
 
-Open the `Program.cs` file with your favorite text editor, such as `vim` or [Visual Studio Code](https://code.visualstudio.com/).
+1. Open the `Program.cs` file with your code editor.
 
-Add the following `using` directive to the top of the file, this helps shorten the code to display the version information of the application.
+1. Add the following `using` directive to the top of the file:
 
-```csharp
-using System.Reflection;
-```
+   ```csharp
+   using System.Reflection;
+   ```
 
-Next, move down to the `Main` method. Replace the method with the following code to process the command-line arguments for your application. If no arguments were passed, a short help message is displayed. Otherwise, all of those arguments are transformed into a string and printed with the bot.
+1. Replace the `Main` method with the following code to process the command-line arguments for the application.
 
-```csharp
-static void Main(string[] args)
-{
-    if (args.Length == 0)
-    {
-        var versionString = Assembly.GetEntryAssembly()
-                                .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
-                                .InformationalVersion
-                                .ToString();
-                                
-        Console.WriteLine($"botsay v{versionString}");
-        Console.WriteLine("-------------");
-        Console.WriteLine("\nUsage:");
-        Console.WriteLine("  botsay <message>");
-        return;
-    }
+   ```csharp
+   static void Main(string[] args)
+   {
+       if (args.Length == 0)
+       {
+           var versionString = Assembly.GetEntryAssembly()
+                                   .GetCustomAttribute<AssemblyInformationalVersionAttribute>()
+                                   .InformationalVersion
+                                   .ToString();
 
-    ShowBot(string.Join(' ', args));
-}
-```
+           Console.WriteLine($"botsay v{versionString}");
+           Console.WriteLine("-------------");
+           Console.WriteLine("\nUsage:");
+           Console.WriteLine("  botsay <message>");
+           return;
+       }
 
-### Create the bot
+       ShowBot(string.Join(' ', args));
+   }
+   ```
 
-Next, add a new method named `ShowBot` that takes a string parameter. This method prints out the message and the ASCII bot. The ASCII bot code was taken from the [dotnetbot](https://github.com/dotnet/core/blob/master/samples/dotnetsay/Program.cs) sample.
+   If no arguments are passed, a short help message is displayed. Otherwise, all of the arguments are concatenated into a single string and printed by calling the `ShowBot` method that you create in the next step.
 
-```csharp
-static void ShowBot(string message)
-{
-    string bot = $"\n        {message}";
-    bot += @"
-    __________________
-                      \
-                       \
-                          ....
-                          ....'
-                           ....
-                        ..........
-                    .............'..'..
-                 ................'..'.....
-               .......'..........'..'..'....
-              ........'..........'..'..'.....
-             .'....'..'..........'..'.......'.
-             .'..................'...   ......
-             .  ......'.........         .....
-             .    _            __        ......
-            ..    #            ##        ......
-           ....       .                 .......
-           ......  .......          ............
-            ................  ......................
-            ........................'................
-           ......................'..'......    .......
-        .........................'..'.....       .......
-     ........    ..'.............'..'....      ..........
-   ..'..'...      ...............'.......      ..........
-  ...'......     ...... ..........  ......         .......
- ...........   .......              ........        ......
-.......        '...'.'.              '.'.'.'         ....
-.......       .....'..               ..'.....
-   ..       ..........               ..'........
-          ............               ..............
-         .............               '..............
-        ...........'..              .'.'............
-       ...............              .'.'.............
-      .............'..               ..'..'...........
-      ...............                 .'..............
-       .........                        ..............
-        .....
-";
-    Console.WriteLine(bot);
-}
-```
+1. Add a new method named `ShowBot` that takes a string parameter. The method prints out the message and an image of a robot using lines of text.
 
-### Test the tool
+   ```csharp
+   static void ShowBot(string message)
+   {
+       string bot = $"\n        {message}";
+       bot += @"
+       __________________
+                         \
+                          \
+                             ....
+                             ....'
+                              ....
+                           ..........
+                       .............'..'..
+                    ................'..'.....
+                  .......'..........'..'..'....
+                 ........'..........'..'..'.....
+                .'....'..'..........'..'.......'.
+                .'..................'...   ......
+                .  ......'.........         .....
+                .    _            __        ......
+               ..    #            ##        ......
+              ....       .                 .......
+              ......  .......          ............
+               ................  ......................
+               ........................'................
+              ......................'..'......    .......
+           .........................'..'.....       .......
+        ........    ..'.............'..'....      ..........
+      ..'..'...      ...............'.......      ..........
+     ...'......     ...... ..........  ......         .......
+    ...........   .......              ........        ......
+   .......        '...'.'.              '.'.'.'         ....
+   .......       .....'..               ..'.....
+      ..       ..........               ..'........
+             ............               ..............
+            .............               '..............
+           ...........'..              .'.'............
+          ...............              .'.'.............
+         .............'..               ..'..'...........
+         ...............                 .'..............
+          .........                        ..............
+           .....
+   ";
+       Console.WriteLine(bot);
+   }
+   ```
 
-Run the project and see the output. Try these variations of the command-line to see different results:
+1. Save your changes.
 
-```csharp
+## Test the application
+
+Run the project and see the output. Try these variations at the command line to see different results:
+
+```dotnetcli
 dotnet run
 dotnet run -- "Hello from the bot"
-dotnet run -- hello from the bot
+dotnet run -- Hello from the bot
 ```
 
 All arguments after the `--` delimiter are passed to your application.
 
-## Setup the global tool
+## Package the tool
 
-Before you can pack and distribute the application as a Global Tool, you need to modify the project file. Open the `botsay.csproj` file and add three new XML nodes to the `<Project><PropertyGroup>` node:
+Before you can pack and distribute the application as a tool, you need to modify the project file.
 
-- `<PackAsTool>`  
-[REQUIRED] Indicates that the application will be packaged for install as a Global Tool.
+1. Open the *microsoft.botsay.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 
-- `<ToolCommandName>`  
-[OPTIONAL] An alternative name for the tool, otherwise the command name for the tool will be named after the project file. You can have multiple tools in a package, choosing a unique and friendly name helps differentiate from other tools in the same package.
+   ```xml
+   <PackAsTool>true</PackAsTool>
+   <ToolCommandName>botsay</ToolCommandName>
+   <PackageOutputPath>./nupkg</PackageOutputPath>
+   ```
 
-- `<PackageOutputPath>`  
-[OPTIONAL] Where the NuGet package will be produced. The NuGet package is what the .NET Core CLI Global Tools uses to install your tool.
+   `<ToolCommandName>` is an optional element that specifies the command that will invoke the tool after it's installed. If this element isn't provided, the command name for the tool is the project file name without the *.csproj* extension.
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+   `<PackageOutputPath>` is an optional element that determines where the NuGet package will be produced. The NuGet package is what the .NET Core CLI uses to install your tool.
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+   The project file now looks like the following example:
 
-    <PackAsTool>true</PackAsTool>
-    <ToolCommandName>botsay</ToolCommandName>
-    <PackageOutputPath>./nupkg</PackageOutputPath>
+   ```xml
+   <Project Sdk="Microsoft.NET.Sdk">
+  
+     <PropertyGroup>
 
-  </PropertyGroup>
+       <OutputType>Exe</OutputType>
+       <TargetFramework>netcoreapp3.1</TargetFramework>
+  
+       <PackAsTool>true</PackAsTool>
+       <ToolCommandName>botsay</ToolCommandName>
+       <PackageOutputPath>./nupkg</PackageOutputPath>
+  
+     </PropertyGroup>
 
-</Project>
-```
+   </Project>
+   ```
 
-Even though `<PackageOutputPath>` is optional, use it in this example. Make sure you set it: `<PackageOutputPath>./nupkg</PackageOutputPath>`.
+1. Create a NuGet package by running the [dotnet pack](dotnet-pack.md) command:
 
-Next, create a NuGet package for your application.
+   ```dotnetcli
+   dotnet pack
+   ```
 
-```console
-dotnet pack
-```
+   The *microsoft.botsay.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *microsoft.botsay.csproj* file, which in this example is the *./nupkg* folder.
+  
+   When you want to release a tool publicly, you can upload it to `https://www.nuget.org`. Once the tool is available on NuGet, developers can install the tool by using the [dotnet tool install](dotnet-tool-install.md) command. For this tutorial you install the package directly from the local *nupkg* folder, so there's no need to upload the package to NuGet.
 
-The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<PackageOutputPath>` XML value from the `botsay.csproj` file, which in this example is the `./nupkg` folder. This makes it easy to install and test. When you want to release a tool publicly, upload it to [https://www.nuget.org](https://www.nuget.org). Once the tool is available on NuGet, developers can perform a user-wide installation of the tool using the `--global` option of the [dotnet tool install](dotnet-tool-install.md) command.
+## Troubleshoot
 
-Now that you have a package, install the tool from that package: 
+If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
 
-```console
-dotnet tool install --global --add-source ./nupkg botsay
-```
+## Next steps
 
-The `--add-source` parameter tells the .NET Core CLI to temporarily use the `./nupkg` folder (our `<PackageOutputPath>` folder) as an additional source feed for NuGet packages. For more information about installing Global Tools, see [.NET Core Global Tools overview][global-tool-info].
+In this tutorial, you created a console application and packaged it as a tool. To learn how to use the tool as a global tool, advance to the next tutorial.
 
-If installation is successful, a message is displayed showing the command used to call the tool and the version installed, similar to the following example:
+> [!div class="nextstepaction"]
+> [Install and use a global tool](global-tools-how-to-use.md)
 
-```
-You can invoke the tool using the following command: botsay
-Tool 'botsay' (version '1.0.0') was successfully installed.
-```
+If you prefer, you can skip the global tools tutorial and go directly to the local tools tutorial.
 
-You should now be able to type `botsay` and get a response from the tool.
-
-> [!NOTE]
-> If the install was successful, but you cannot use the `botsay` command, you may need to open a new terminal to refresh the PATH.
-
-## Remove the tool
-
-Once you're done experimenting with the tool, you can remove it with the following commnand:
-
-```console
-dotnet tool uninstall -g botsay
-```
-
-[global-tool-info]: global-tools.md
+> [!div class="nextstepaction"]
+> [Install and use a local tool](local-tools-how-to-use.md)

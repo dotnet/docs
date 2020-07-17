@@ -1,5 +1,6 @@
 ---
 title: "Controlling XML Serialization Using Attributes"
+description: Attributes can be used to control the XML serialization of an object or to create an alternate XML stream from the same set of classes.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -60,7 +61,7 @@ public class TaxRates {
 }
 ```
 
-For more information about attributes, see [Attributes](../../../docs/standard/attributes/index.md). For a list of attributes that control XML serialization, see [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md).
+For more information about attributes, see [Attributes](../attributes/index.md). For a list of attributes that control XML serialization, see [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md).
 
 ## Controlling Array Serialization
 
@@ -196,7 +197,7 @@ A serialized instance might resemble the following.
     <Employee xsi:type = "Manager">
         <Name>Ann</Name>
         <Level>3</Level>
-    <Employee>
+    </Employee>
 </Employees>
 </Group>
 ```
@@ -244,7 +245,7 @@ Another way to differentiate the two XML streams is to use the XML Schema Defini
 When the <xref:System.Xml.Serialization.XmlElementAttribute> is applied to the field, the resulting schema describes the element as follows.
 
 ```xml
-<xs:element minOccurs="0" maxOccurs="unbounded" name="Employees" type="Employee" /> 
+<xs:element minOccurs="0" maxOccurs="unbounded" name="Employees" type="Employee" />
 ```
 
 ## Serializing an ArrayList
@@ -261,7 +262,7 @@ End Class
 
 ```csharp
 public class Group {
-    [XmlElement(Type = typeof(Employee)), 
+    [XmlElement(Type = typeof(Employee)),
     XmlElement(Type = typeof(Manager))]
     public ArrayList Info;
 }
@@ -294,7 +295,7 @@ public class Group {
 If this class is compiled, and the XML Schema Definition tool is used to generate its schema, you would find the following XML describing `Group`.
 
 ```xml
-<xs:element name="NewGroupName" type="NewTypeName">
+<xs:element name="NewGroupName" type="NewTypeName" />
 ```
 
 In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document.
@@ -311,10 +312,10 @@ There might be situations when a public property or field does not need to be se
 
 ## See also
 
-- [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)  
-- [Attributes That Control Encoded SOAP Serialization](attributes-that-control-encoded-soap-serialization.md)  
-- [Introducing XML Serialization](introducing-xml-serialization.md)  
-- [Examples of XML Serialization](examples-of-xml-serialization.md)  
-- [How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)  
-- [How to: Serialize an Object](how-to-serialize-an-object.md)  
-- [How to: Deserialize an Object](how-to-deserialize-an-object.md)  
+- [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
+- [Attributes That Control Encoded SOAP Serialization](attributes-that-control-encoded-soap-serialization.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [Examples of XML Serialization](examples-of-xml-serialization.md)
+- [How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

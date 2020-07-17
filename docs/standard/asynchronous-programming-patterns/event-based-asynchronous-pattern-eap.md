@@ -1,5 +1,6 @@
 ---
 title: "Event-based Asynchronous Pattern (EAP)"
+description: See links to articles about the Event-based Asynchronous Pattern (EAP) in .NET, such as implementation, best practices, implementing an EAP client, and more.
 ms.date: "07/23/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -7,8 +8,6 @@ helpviewer_keywords:
   - "asynchronous programming, design patterns"
   - "asynchronous programming"
 ms.assetid: c6baed9f-2a25-4728-9a9a-53b7b14840cf
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Event-based Asynchronous Pattern (EAP)
 
@@ -56,11 +55,11 @@ There are a number of ways to expose asynchronous features to client code. The E
  [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md)  
  Describes a programming model for asynchronous and parallel operations.  
   
- [Threading](../../../docs/standard/threading/index.md)  
+ [Threading](../threading/index.md)  
  Describes multithreading features in .NET.  
   
 ## See also
 
-- [Managed Threading Best Practices](../threading/managed-threading-best-practices.md)  
-- [Events](../events/index.md)  
+- [Managed Threading Best Practices](../threading/managed-threading-best-practices.md)
+- [Events](../events/index.md)
 - [Asynchronous Programming Design Patterns](index.md)

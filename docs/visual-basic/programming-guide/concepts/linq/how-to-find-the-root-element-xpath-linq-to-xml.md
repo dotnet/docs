@@ -1,5 +1,5 @@
 ---
-title: "How to: Find the Root Element (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find the Root Element (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 72c3aed5-9522-4454-a876-2070aad13f2e
 ---
@@ -13,7 +13,7 @@ This topic shows how to get the root element with XPath and [!INCLUDE[sqltecxlin
 ## Example  
  This example finds the root element.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
 Dim po As XDocument = XDocument.Load("PurchaseOrders.xml")  
@@ -34,10 +34,11 @@ Console.WriteLine(el1.Name)
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 PurchaseOrders  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

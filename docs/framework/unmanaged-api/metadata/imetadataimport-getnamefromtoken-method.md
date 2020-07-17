@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 32114ecf-8916-4ab2-a201-179c017344f1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetNameFromToken Method
 Gets the UTF-8 name of the object referenced by the specified metadata token. This method is obsolete.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNameFromToken (  
    [in] mdToken      tk,  
    [out] MDUTF8CSTR  *pszUtf8NamePtr  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tk`  
  [in] The token representing the object to return the name for.  
   
@@ -41,7 +39,7 @@ HRESULT GetNameFromToken (
  `GetNameFromToken` is obsolete. As an alternative, call a method to get the properties of the particular type of token required, such as `GetFieldProps` for a field or `GetMethodProps` for a method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -49,6 +47,7 @@ HRESULT GetNameFromToken (
   
  **.NET Framework Versions:** 1.0  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

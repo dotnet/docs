@@ -12,13 +12,13 @@ ms.assetid: 90e07c2d-237f-47b4-a632-771570b77fd0
 The topics in this section describe how to position elements using the <xref:System.Windows.Controls.Grid> element.  
   
 ## In This Section  
- [Build a Standard UI Dialog Box by Using Grid](../../../../docs/framework/wpf/controls/how-to-build-a-standard-ui-dialog-box-by-using-grid.md)  
- [Create a Complex Grid](../../../../docs/framework/wpf/controls/how-to-create-a-complex-grid.md)  
- [Create a Grid Element](../../../../docs/framework/wpf/controls/how-to-create-a-grid-element.md)  
- [Create and Use a GridLengthConverter Object](../../../../docs/framework/wpf/controls/how-to-create-and-use-a-gridlengthconverter-object.md)  
- [Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](../../../../docs/framework/wpf/controls/manipulate-columns-and-rows-by-using-columndefinitionscollections.md)  
- [Position the Child Elements of a Grid](../../../../docs/framework/wpf/controls/how-to-position-the-child-elements-of-a-grid.md)  
- [Share Sizing Properties Between Grids](../../../../docs/framework/wpf/controls/how-to-share-sizing-properties-between-grids.md)  
+ [Build a Standard UI Dialog Box by Using Grid](how-to-build-a-standard-ui-dialog-box-by-using-grid.md)  
+ [Create a Complex Grid](how-to-create-a-complex-grid.md)  
+ [Create a Grid Element](how-to-create-a-grid-element.md)  
+ [Create and Use a GridLengthConverter Object](how-to-create-and-use-a-gridlengthconverter-object.md)  
+ [Manipulate Columns and Rows by Using ColumnDefinitionsCollections and RowDefinitionsCollections](manipulate-columns-and-rows-by-using-columndefinitionscollections.md)  
+ [Position the Child Elements of a Grid](how-to-position-the-child-elements-of-a-grid.md)  
+ [Share Sizing Properties Between Grids](how-to-share-sizing-properties-between-grids.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.Panel>  
@@ -36,8 +36,8 @@ The topics in this section describe how to position elements using the <xref:Sys
  <xref:System.Windows.Controls.WrapPanel>  
   
 ## Related Sections  
- [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
+ [Layout](../advanced/layout.md)  
   
- [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
- [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)
+ [ScrollViewer Overview](scrollviewer-overview.md)

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: e7a6cadc-2433-4472-a701-58891abcde45
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::GetMaxThreads Method
 Gets the maximum number of threads that the host can allot to service I/O requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMaxThreads (  
     [out] DWORD *pdwMaxIoCompletionThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwMaxIoCompletionThreads`  
  [out] A pointer to the maximum number of threads in the thread pool that the host can allot to service I/O requests.  
   
@@ -49,7 +47,7 @@ HRESULT GetMaxThreads (
  A host might want exclusive control over the number of threads that can be allotted to process I/O requests, for reasons such as implementation, performance, or scalability. For this reason, the host is not required to implement `GetMaxThreads`. In this case, the host should return E_NOTIMPL from this method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,6 +55,7 @@ HRESULT GetMaxThreads (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)  
- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+## See also
+
+- [ICLRIoCompletionManager Interface](iclriocompletionmanager-interface.md)
+- [IHostIoCompletionManager Interface](ihostiocompletionmanager-interface.md)

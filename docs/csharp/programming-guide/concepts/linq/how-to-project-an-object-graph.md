@@ -1,13 +1,13 @@
 ---
-title: "How to: Project an Object Graph (C#)"
+title: "How to project an object graph (C#)"
 ms.date: 07/20/2015
 ms.assetid: 293d15d5-3eaf-48de-9a02-3e13cb117b5b
 ---
-# How to: Project an Object Graph (C#)
+# How to project an object graph (C#)
 This topic illustrates how to project, or populate, an object graph from XML.  
   
 ## Example  
- The following code populates an object graph with the `Address`, `PurchaseOrder`, and `PurchaseOrderItem` classes from the [Sample XML File: Typical Purchase Order (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md) XML document.  
+ The following code populates an object graph with the `Address`, `PurchaseOrder`, and `PurchaseOrderItem` classes from the [Sample XML File: Typical Purchase Order (LINQ to XML)](./sample-xml-file-typical-purchase-order-linq-to-xml-1.md) XML document.  
   
 ```csharp  
 class Address  
@@ -179,7 +179,7 @@ class Program {
                             from a in po.Elements("Address")  
                             select new Address {  
                                 AddressType = ((string)a.Attribute("Type") == "Shipping") ?  
-                                    Address.AddressUse.Shipping :   
+                                    Address.AddressUse.Shipping :
                                     Address.AddressUse.Billing,  
                                 Name = (string)a.Element("Name"),  
                                 Street = (string)a.Element("Street"),  
@@ -208,11 +208,11 @@ class Program {
 }  
 ```  
   
- In this example, the result of the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query is returned as an <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The code uses the <xref:System.Linq.Enumerable.ToList%2A> extension method to create a <xref:System.Collections.Generic.List%601> collection from the results of the query.  
+ In this example, the result of the LINQ query is returned as an <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The code uses the <xref:System.Linq.Enumerable.ToList%2A> extension method to create a <xref:System.Collections.Generic.List%601> collection from the results of the query.  
   
  The example produces the following output:  
   
-```  
+```output  
 PurchaseOrderNumber: 99503  
 OrderDate: 10/20/1999  
   
@@ -249,8 +249,7 @@ USPrice: 39.98
 ShipDate: 5/21/1999  
 ```  
   
-## See Also
+## See also
 
-- <xref:System.Linq.Enumerable.Select%2A>  
-- <xref:System.Linq.Enumerable.ToList%2A>  
-- [Projections and Transformations (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md)
+- <xref:System.Linq.Enumerable.Select%2A>
+- <xref:System.Linq.Enumerable.ToList%2A>

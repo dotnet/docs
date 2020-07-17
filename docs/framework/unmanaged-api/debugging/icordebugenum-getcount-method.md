@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: d8a74304-1cb2-4977-a21d-e1af48c563ff
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum::GetCount Method
 Gets the number of items in the enumeration.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCount (  
     [out] ULONG *pcelt  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcelt`  
  [out] A pointer to the number of items in the enumeration.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

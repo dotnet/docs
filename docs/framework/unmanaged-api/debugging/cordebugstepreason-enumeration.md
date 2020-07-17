@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: fe248069-b33c-48e1-a777-06ac9b239c54
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugStepReason Enumeration
 Indicates the outcome of an individual step.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugStepReason {  
     STEP_NORMAL,  
     STEP_RETURN,  
@@ -47,7 +45,7 @@ typedef enum CorDebugStepReason {
 |`STEP_EXIT`|The thread exited before the step was completed.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -55,6 +53,7 @@ typedef enum CorDebugStepReason {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [StepComplete Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-stepcomplete-method.md)  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+## See also
+
+- [StepComplete Method](icordebugmanagedcallback-stepcomplete-method.md)
+- [Debugging Enumerations](debugging-enumerations.md)

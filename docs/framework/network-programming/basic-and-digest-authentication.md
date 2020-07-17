@@ -1,5 +1,6 @@
 ---
 title: "Basic and Digest Authentication"
+description: Learn to use basic and digest authentication, where an application provides a user name and password in the WebRequest object that it uses to request data.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -38,8 +39,9 @@ WReq.Credentials = new NetworkCredential(UserName, SecurelyStoredPassword);
 ```  
   
 > [!CAUTION]
->  Data sent with Basic and Digest Authentication is not encrypted, so the data can be seen by an adversary. Additionally, Basic Authentication credentials (user name and password) are sent in the clear and can be intercepted.  
+> Data sent with Basic and Digest Authentication is not encrypted, so the data can be seen by an adversary. Additionally, Basic Authentication credentials (user name and password) are sent in the clear and can be intercepted.  
   
-## See Also  
- [NTLM and Kerberos Authentication](../../../docs/framework/network-programming/ntlm-and-kerberos-authentication.md)  
- [Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)
+## See also
+
+- [NTLM and Kerberos Authentication](ntlm-and-kerberos-authentication.md)
+- [Internet Authentication](internet-authentication.md)

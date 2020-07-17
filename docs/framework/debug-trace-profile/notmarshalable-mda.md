@@ -1,5 +1,6 @@
 ---
 title: "notMarshalable MDA"
+description: Review the notMarshalable managed debugging assistant, which may activate if calls aren't serviced or occur in the wrong context for COM interface pointers.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "managed debugging assistants (MDAs), interface pointer not marshalable"
@@ -11,8 +12,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), marshaling"
   - "notMarshalable MDA"
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # notMarshalable MDA
 The `notMarshalable` managed debugging assistant (MDA) is activated when the common language runtime (CLR) encounters a COM interface pointer without a valid registered proxy/stub or an incorrect `IMarshal` interface implementation while attempting to marshal the interface across contexts.  
@@ -42,7 +41,8 @@ The `notMarshalable` managed debugging assistant (MDA) is activated when the com
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

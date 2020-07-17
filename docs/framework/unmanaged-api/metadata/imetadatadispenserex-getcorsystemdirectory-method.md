@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: d9e0f3b6-e106-4820-bada-5bfba34ce360
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataDispenserEx::GetCORSystemDirectory Method
 Gets the directory that holds the current common language runtime (CLR). This method is supported only for use by out-of-process debuggers. If called from another component, it will return E_NOTIMPL.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCORSystemDirectory (  
-    [out] LPWSTR      szBuffer,   
-    [in]  DWORD       cchBuffer,   
+    [out] LPWSTR      szBuffer,
+    [in]  DWORD       cchBuffer,
     [out] DWORD*      pchBuffer  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `szBuffer`  
  [out] The buffer to receive the directory name.  
   
@@ -42,7 +40,7 @@ HRESULT GetCORSystemDirectory (
  [out] The number of bytes actually returned in `szBuffer`.  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -50,6 +48,7 @@ HRESULT GetCORSystemDirectory (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)  
- [IMetaDataDispenser Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-interface.md)
+## See also
+
+- [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
+- [IMetaDataDispenser Interface](imetadatadispenser-interface.md)

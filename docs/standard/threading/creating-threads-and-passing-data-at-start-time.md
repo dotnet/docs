@@ -1,5 +1,6 @@
 ---
 title: "Creating threads and passing data at start time"
+description: Understand how to create threads and pass data at the start time of an operating system process in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -11,8 +12,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], passing data to threads"
   - "threading [.NET Framework], retrieving data from threads"
 ms.assetid: 52b32222-e185-4f42-91a7-eaca65c0ab6d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Creating threads and passing data at start time
 
@@ -55,9 +54,9 @@ Neither <xref:System.Threading.ThreadStart> nor <xref:System.Threading.Parameter
   
 ## See also
 
-- <xref:System.Threading.Thread>  
-- <xref:System.Threading.ThreadStart>  
-- <xref:System.Threading.ParameterizedThreadStart>  
-- <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>  
-- [Threading](index.md)  
+- <xref:System.Threading.Thread>
+- <xref:System.Threading.ThreadStart>
+- <xref:System.Threading.ParameterizedThreadStart>
+- <xref:System.Threading.Thread.Start%2A?displayProperty=nameWithType>
+- [Threading](index.md)
 - [Using Threads and Threading](using-threads-and-threading.md)

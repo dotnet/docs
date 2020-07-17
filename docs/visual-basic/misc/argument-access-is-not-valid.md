@@ -10,4 +10,4 @@ An access value is not valid in Output mode.
   
 ## To correct this error  
   
-1.  Change the value to either `OpenAccess.Write` or `OpenAccess.Default`.
+1. Change the value to either `OpenAccess.Write` or `OpenAccess.Default`.

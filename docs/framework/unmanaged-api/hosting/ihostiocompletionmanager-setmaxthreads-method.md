@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: ebad4f40-d9f1-4dc6-9b27-a89c9eb3926f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::SetMaxThreads Method
 Sets the maximum number of threads that the host allots to service I/O requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMaxThreads (  
     [in] DWORD dwMaxIoCompletionThreads  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwMaxIoCompletionThreads`  
  [in] The maximum number of threads to allot for I/O requests.  
   
@@ -49,7 +47,7 @@ HRESULT SetMaxThreads (
  `SetMaxThreads` provides the CLR with an opportunity to set the maximum number of threads that are available to service requests on I/O ports. A host might need exclusive control over the size of the thread pool, for reasons such as implementation, performance, or scalability. For this reason, the host is not required to implement `SetMaxThreads`. In this case, a host should return E_NOTIMPL from this method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,6 +55,7 @@ HRESULT SetMaxThreads (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)  
- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+## See also
+
+- [ICLRIoCompletionManager Interface](iclriocompletionmanager-interface.md)
+- [IHostIoCompletionManager Interface](ihostiocompletionmanager-interface.md)

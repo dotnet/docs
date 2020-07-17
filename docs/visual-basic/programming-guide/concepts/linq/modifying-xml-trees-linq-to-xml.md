@@ -1,5 +1,5 @@
 ---
-title: "Modifying XML Trees (LINQ to XML) (Visual Basic)"
+title: "Modifying XML Trees (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 4ae511a5-4fc9-4178-9c8e-761357deae3f
 ---
@@ -14,12 +14,13 @@ ms.assetid: 4ae511a5-4fc9-4178-9c8e-761357deae3f
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/in-memory-xml-tree-modification-vs-functional-construction.md)|Compares modifying an XML tree in memory to functional construction.|  
-|[Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/adding-elements-attributes-and-nodes-to-an-xml-tree.md)|Provides information about adding elements, attributes, or nodes to an XML tree.|  
-|[Modifying Elements, Attributes, and Nodes in an XML Tree](../../../../visual-basic/programming-guide/concepts/linq/modifying-elements-attributes-and-nodes-in-an-xml-tree.md)|Provides information about modifying existing elements, attributes, or nodes.|  
-|[Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/removing-elements-attributes-and-nodes-from-an-xml-tree.md)|Provides information about removing elements, attributes, or nodes from the XML tree.|  
-|[Maintaining Name/Value Pairs (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/maintaining-name-value-pairs.md)|Describes how to maintain application information that is best kept as name/value pairs, such as configuration information or global settings.|  
-|[How to: Change the Namespace for an Entire XML Tree (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-change-the-namespace-for-an-entire-xml-tree.md)|Shows how to move an XML tree from one namespace into another.|  
+|[In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (Visual Basic)](in-memory-xml-tree-modification-vs-functional-construction.md)|Compares modifying an XML tree in memory to functional construction.|  
+|[Adding Elements, Attributes, and Nodes to an XML Tree (Visual Basic)](adding-elements-attributes-and-nodes-to-an-xml-tree.md)|Provides information about adding elements, attributes, or nodes to an XML tree.|  
+|[Modifying Elements, Attributes, and Nodes in an XML Tree](modifying-elements-attributes-and-nodes-in-an-xml-tree.md)|Provides information about modifying existing elements, attributes, or nodes.|  
+|[Removing Elements, Attributes, and Nodes from an XML Tree (Visual Basic)](removing-elements-attributes-and-nodes-from-an-xml-tree.md)|Provides information about removing elements, attributes, or nodes from the XML tree.|  
+|[Maintaining Name/Value Pairs (Visual Basic)](maintaining-name-value-pairs.md)|Describes how to maintain application information that is best kept as name/value pairs, such as configuration information or global settings.|  
+|[How to: Change the Namespace for an Entire XML Tree (Visual Basic)](how-to-change-the-namespace-for-an-entire-xml-tree.md)|Shows how to move an XML tree from one namespace into another.|  
   
-## See Also  
- [Programming Guide (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/programming-guide-linq-to-xml.md)
+## See also
+
+- [Programming Guide (LINQ to XML) (Visual Basic)](programming-guide-linq-to-xml.md)

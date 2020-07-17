@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 26a82815-1982-4eb7-92d1-5c3d318d5be4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetBaseAddress Method
 Gets the base address of the module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBaseAddress(  
     [out] CORDB_ADDRESS *pAddress  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAddress`  
  [out] A `CORDB_ADDRESS` that specifies the base address of the module.  
   
@@ -37,7 +35,7 @@ HRESULT GetBaseAddress(
  If the module is a native image (that is, if the module was produced by the native image generator, NGen.exe), its base address will be zero.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -45,6 +43,4 @@ HRESULT GetBaseAddress(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- 
+## See also

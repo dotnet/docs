@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 9c5566ab-4ec7-4b61-9753-839bb90ae78c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod::GetSourceExtentInDocument Method
 Gets the smallest start line and largest end line for the method in a specific document.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceExtentInDocument(  
     [in]  ISymUnmanagedDocument *document,  
     [out] ULONG32* pstartLine,  
     [out] ULONG32* pendLine);  
 ```  
   
-#### Parameters  
+## Parameters  
  `document`  
  [in] A pointer to the document.  
   
@@ -46,5 +44,6 @@ HRESULT GetSourceExtentInDocument(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## See also
+
+- [ISymENCUnmanagedMethod Interface](isymencunmanagedmethod-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "Lifetime in Visual Basic"
+title: "Lifetime"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "static variables [Visual Basic], lifetime"
@@ -49,30 +49,31 @@ The *lifetime* of a declared element is the period of time during which it is av
 ## Example  
   
 ### Description  
- The following example declares a variable with the [Static](../../../../visual-basic/language-reference/modifiers/static.md) keyword. (Note that you do not need the `Dim` keyword when the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) uses a modifier such as `Static`.)  
+ The following example declares a variable with the [Static](../../../language-reference/modifiers/static.md) keyword. (Note that you do not need the `Dim` keyword when the [Dim Statement](../../../language-reference/statements/dim-statement.md) uses a modifier such as `Static`.)  
   
 ### Code  
- [!code-vb[VbVbalrKeywords#13](../../../../visual-basic/language-reference/codesnippet/VisualBasic/lifetime_1.vb)]  
+ [!code-vb[VbVbalrKeywords#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#13)]  
   
 ### Comments  
  In the preceding example, the variable `applesSold` continues to exist after the procedure `runningTotal` returns to the calling code. The next time `runningTotal` is called, `applesSold` retains its previously calculated value.  
   
  If `applesSold` had been declared without using `Static`, the previous accumulated values would not be preserved across calls to `runningTotal`. The next time `runningTotal` was called, `applesSold` would have been recreated and initialized to 0, and `runningTotal` would have simply returned the same value with which it was called.  
   
-### Compiling the Code  
+### Compile the code  
  You can initialize the value of a static local variable as part of its declaration. If you declare an array to be `Static`, you can initialize its rank (number of dimensions), the length of each dimension, and the values of the individual elements.  
   
 ### Security  
  In the preceding example, you can produce the same lifetime by declaring `applesSold` at module level. If you changed the scope of a variable this way, however, the procedure would no longer have exclusive access to it. Because other procedures could access `applesSold` and change its value, the running total could be unreliable and the code could be more difficult to maintain.  
   
-## See Also  
- [Shared](../../../../visual-basic/language-reference/modifiers/shared.md)  
- [Nothing](../../../../visual-basic/language-reference/nothing.md)  
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
- [Scope in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/scope.md)  
- [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)  
- [Variables](../../../../visual-basic/programming-guide/language-features/variables/index.md)  
- [Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)  
- [Troubleshooting Data Types](../../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)  
- [Static](../../../../visual-basic/language-reference/modifiers/static.md)
+## See also
+
+- [Shared](../../../language-reference/modifiers/shared.md)
+- [Nothing](../../../language-reference/nothing.md)
+- [Declared Element Names](declared-element-names.md)
+- [References to Declared Elements](references-to-declared-elements.md)
+- [Scope in Visual Basic](scope.md)
+- [Access levels in Visual Basic](access-levels.md)
+- [Variables](../variables/index.md)
+- [Variable Declaration](../variables/variable-declaration.md)
+- [Troubleshooting Data Types](../data-types/troubleshooting-data-types.md)
+- [Static](../../../language-reference/modifiers/static.md)

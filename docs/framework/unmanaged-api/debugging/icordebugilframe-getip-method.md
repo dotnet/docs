@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 18217ba1-1776-4297-a3b9-f77e64b0fead
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::GetIP Method
 Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIP (  
-    [out] ULONG32               *pnOffset,   
+    [out] ULONG32               *pnOffset,
     [out] CorDebugMappingResult *pMappingResult  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pnOffset`  
  [out] The value of the instruction pointer.  
   
@@ -43,7 +41,7 @@ HRESULT GetIP (
  If this frame is a just-in-time (JIT) compiled frame, the value of the instruction pointer will be determined by mapping backwards from the actual native instruction pointer, so the value may be only approximate.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

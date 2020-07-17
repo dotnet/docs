@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: ebc9cc33-fcd6-4cae-9ecb-ea21c51874e6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAppDomainResourceMonitor::GetCurrentCpuTime Method
 Gets the total processor time that has been used by all threads while executing in the current application domain, since the application domain was created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,  
                           [out] ULONGLONG* pMilliseconds);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainId`  
  [in] The ID of the requested application domain.  
   
@@ -47,7 +45,7 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
  This method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringTotalProcessorTime%2A?displayProperty=nameWithType> property.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -55,8 +53,9 @@ HRESULT GetCurrentCpuTime([in]  DWORD dwAppDomainId,
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Application Domain Resource Monitoring](../../../../docs/standard/garbage-collection/app-domain-resource-monitoring.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+
+- [ICLRAppDomainResourceMonitor Interface](iclrappdomainresourcemonitor-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Application Domain Resource Monitoring](../../../standard/garbage-collection/app-domain-resource-monitoring.md)
+- [Hosting](index.md)

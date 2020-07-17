@@ -1,5 +1,5 @@
 ---
-title: "Procedure call or argument is not valid (Visual Basic)"
+title: "Procedure call or argument is not valid"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID5"
@@ -10,7 +10,8 @@ Some part of the call cannot be completed.
   
 ## To correct this error  
   
--   Check the permitted ranges for arguments to make sure no arrangement exceeds the permitted values.  
+- Check the permitted ranges for arguments to make sure no arrangement exceeds the permitted values.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../../programming-guide/language-features/error-types.md)

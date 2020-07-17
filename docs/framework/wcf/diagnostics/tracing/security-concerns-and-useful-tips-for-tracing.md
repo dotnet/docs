@@ -16,11 +16,11 @@ This topic describes how you can protect sensitive information from being expose
   
  The following tips can help you to prevent the content of a trace file from being exposed unintentionally:  
   
--   Ensure that the log files are protected by Access Control Lists (ACL) both in WebHost and self-host scenarios.  
+- Ensure that the log files are protected by Access Control Lists (ACL) both in WebHost and self-host scenarios.  
   
--   Choose a file extension that cannot be easily served using a Web request. For example, the .xml file extension is not a safe choice. You can check the IIS administration guide to see a list of extensions that can be served.  
+- Choose a file extension that cannot be easily served using a Web request. For example, the .xml file extension is not a safe choice. You can check the IIS administration guide to see a list of extensions that can be served.  
   
--   Specify an absolute path for the log file location, which should be outside of the WebHost vroot public directory to prevent it from being accessed by an external party using a Web browser.  
+- Specify an absolute path for the log file location, which should be outside of the WebHost vroot public directory to prevent it from being accessed by an external party using a Web browser.  
   
  By default, keys and personally identifiable information (PII) such as username and password are not logged in traces and logged messages. A machine administrator, however, can use the `enableLoggingKnownPII` attribute in the `machineSettings` element of the Machine.config file to permit applications running on the machine to log known personally identifiable information (PII) as follows:  
   
@@ -29,7 +29,7 @@ This topic describes how you can protect sensitive information from being expose
    <system.ServiceModel>  
       <machineSettings enableLoggingKnownPii="Boolean"/>  
    </system.ServiceModel>  
-</configuration>   
+</configuration>
 ```  
   
  An application deployer can then use the `logKnownPii` attribute in either the App.config or Web.config file to enable PII logging as follows:  
@@ -64,7 +64,7 @@ This topic describes how you can protect sensitive information from being expose
                 initializeData="c:\logs\messages.svclog" />  
           </listeners>  
       </source>  
-      <source name="System.ServiceModel"   
+      <source name="System.ServiceModel"
          logKnownPii="true">  
          <listeners>  
             <add name="xml" />  
@@ -78,11 +78,12 @@ This topic describes how you can protect sensitive information from being expose
   
  The changes are effective only when the application starts or restarts. An event is logged at startup when both attributes are set to `true`. An event is also logged if `logKnownPii` is set to `true` but `enableLoggingKnownPii` is `false`.  
   
- For more information on PII logging, see [PII Security Lockdown](../../../../../docs/framework/wcf/samples/pii-security-lockdown.md) sample.  
+ For more information on PII logging, see [PII Security Lockdown](../../samples/pii-security-lockdown.md) sample.  
   
- The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion on privacy and protecting PII from being exposed, see [User Privacy](https://go.microsoft.com/fwlink/?LinkID=94647).  
+ The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion on privacy and protecting PII from being exposed, see [User Privacy](https://docs.microsoft.com/previous-versions/dotnet/articles/aa480490(v=msdn.10)).  
   
  In addition, the IP address of the message sender is logged once per connection for connection-oriented transports, and once per message sent otherwise. This is done without the consent of the sender. However, this logging only occurs at the Information or Verbose tracing levels, which are not the default or recommended tracing levels in production, except for live debugging.  
   
-## See Also  
- [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
+## See also
+
+- [Tracing](index.md)

@@ -1,81 +1,112 @@
 ---
-title: Build a C# Hello World application .NET Core in Visual Studio 2017
-description: Learn how to build a simple .NET Core console application with C# using Visual Studio 2017.
-author: BillWagner
-ms.author: wiwagn
-ms.date: 09/13/2017
-ms.custom: "vs-dotnet, seodec18"
+title: Create a .NET Core console application using Visual Studio
+description: Learn how to create a .NET Core console application with C# or Visual Basic using Visual Studio.
+ms.date: 06/08/2020
+dev_langs:
+  - "csharp"
+  - "vb"
+ms.custom: "vs-dotnet"
 ---
-# Build a C# Hello World application with the .NET Core SDK in Visual Studio 2017
+# Tutorial: Create a .NET Core console application using Visual Studio
 
-This topic provides a step-by-step introduction to building, debugging, and publishing a simple .NET Core console application using C# in Visual Studio 2017. Visual Studio 2017 provides a full-featured development environment for building .NET Core applications. As long as the application doesn't have platform-specific dependencies, the application can run on any platform that .NET Core targets and on any system that has .NET Core installed.
+This tutorial shows how to create and run a .NET Core console application in Visual Studio 2019.
 
 ## Prerequisites
 
-[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with either .NET Core 1.1 or .NET Core 2.0.
+- [Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. The .NET Core 3.1 SDK is automatically installed when you select this workload.
 
-For more information, see the [Prerequisites for .NET Core on Windows](../../core/windows-prerequisites.md) topic.
+  For more information, see [Install the .NET Core SDK with Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio).
 
-## A simple Hello World application
+## Create the app
 
-Begin by creating a simple "Hello World" console application. Follow these steps:
+Create a .NET Core console app project named "HelloWorld".
 
-1. Launch Visual Studio 2017. Select **File** > **New** > **Project** from the menu bar. In the *New Project** dialog, select the **Visual C#** node followed by the **.NET Core** node. Then select the **Console App (.NET Core)** project template. In the **Name** text box, type "HelloWorld". Select the **OK** button.
+1. Start Visual Studio 2019.
 
-   ![New Project dialog with Console App selected](./media/with-visual-studio/visual-studio-new-project.png)
-   
-1. Visual Studio uses the template to create your project. The C# Console Application template for .NET Core automatically defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
+1. On the start page, choose **Create a new project**.
 
-   ![Visual Studio and the new HelloWorld project](./media/with-visual-studio/visual-studio-main-window.png)
+   ![Create a new project button selected on the Visual Studio start page](./media/with-visual-studio/start-window.png)
 
-   The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display the literal string "Hello World!" in the console window. By selecting the **HelloWorld** button with the green arrow on the toolbar, you can run the program in Debug mode. If you do, the console window is visible for only a brief time interval before it closes. This occurs because the `Main` method terminates and the application ends as soon as the single statement in the `Main` method executes.
+1. On the **Create a new project** page, enter **console** in the search box. Next, choose **C#** or **Visual Basic** from the language list, and then choose **All platforms** from the platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
-1. To cause the application to pause before it closes the console window, add the following code immediately after the call to the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method:
+   ![Create a new project window with filters selected](./media/with-visual-studio/create-new-project.png)
 
-   ```csharp
-   Console.Write("Press any key to continue...");
-   Console.ReadKey(true);
-   ```
-   This code prompts the user to press any key and then pauses the program until a key is pressed.
+   > [!TIP]
+   > If you don't see the .NET Core templates, you're probably missing the required workload. Under the **Not finding what you're looking for?** message, choose the **Install more tools and features** link. The Visual Studio Installer opens. Make sure you have the **.NET Core cross-platform development** workload installed.
 
-1. On the menu bar, select **Build** > **Build Solution**. This compiles your program into an intermediate language (IL) that's converted into binary code by a just-in-time (JIT) compiler.
+1. In the **Configure your new project** dialog,  enter **HelloWorld** in the **Project name** box. Then choose **Create**.
 
-1. Run the program by selecting the **HelloWorld** button with the green arrow on the toolbar.
+   ![Configure your new project window with Project name, location, and solution name fields](./media/with-visual-studio/configure-new-project.png)
+
+The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window.
+
+The template code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument:
+
+```csharp
+using System;
+
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+
+```vb
+Imports System
+
+Module Program
+    Sub Main(args As String())
+        Console.WriteLine("Hello World!")
+    End Sub
+End Module
+```
+
+`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
+
+If the language you want to use is not shown, change the language selector at the top of the page.
+
+## Run the app
+
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to run the program without debugging.
+
+   A console window opens with the text "Hello World!" printed on the screen and some Visual Studio debug information.
 
    ![Console window showing Hello World Press any key to continue](./media/with-visual-studio/hello-world-console.png)
 
 1. Press any key to close the console window.
 
-## Enhancing the Hello World application
+## Enhance the app
 
-Enhance your application to prompt the user for their name and display it along with the date and time. To modify and test the program, do the following:
+Enhance the application to prompt the user for their name and display it along with the date and time.
 
-1. Enter the following C# code in the code window immediately after the opening bracket that follows the `static void Main(string[] args)` line and before the first closing bracket:
+1. In *Program.cs* or *Program.vb*, replace the contents of the `Main` method, which is the line that calls `Console.WriteLine`, with the following code:
 
-   [!code-csharp[GettingStarted#1](../../../samples/snippets/csharp/getting_started/with_visual_studio/helloworld.cs#1)]
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
+   :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="MainMethod":::
 
-   This code replaces the existing <xref:System.Console.WriteLine%2A?displayProperty=nameWithType>, <xref:System.Console.Write%2A?displayProperty=nameWithType>, and <xref:System.Console.ReadKey%2A?displayProperty=nameWithType> statements.
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date` (`currentDate` in Visual Basic). Finally, it displays these values in the console window.
 
-   ![Visual Studio Program c-sharp file with updated Main method](./media/with-visual-studio/visual-csharp-code-window.png)
+   The `\n` (`vbCrLf` in Visual Basic) represents a newline character.
 
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.
+   The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 
-1. Compile the program by choosing **Build** > **Build Solution**.
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
-1. Run the program in Debug mode in Visual Studio by selecting the green arrow on the toolbar, pressing F5, or choosing the **Debug** > **Start Debugging** menu item. Respond to the prompt by entering a name and pressing the Enter key.
+1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
    ![Console window with modified program output](./media/with-visual-studio/hello-world-update.png)
 
 1. Press any key to close the console window.
 
-You've created and run your application. To develop a professional application, take some additional steps to make your application ready for release:
+## Next steps
 
-- For information on debugging your application, see [Debugging your C# Hello World application with Visual Studio 2017](debugging-with-visual-studio.md).
+In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
 
-- For information on developing and publishing a distributable version of your application, see [Publishing your C# Hello World application with Visual Studio 2017](publishing-with-visual-studio.md).
-
-## Related topics
-
-Instead of a console application, you can also build a class library with .NET Core and Visual Studio 2017. For a step-by-step introduction, see [Building a class library with C# and .NET Core in Visual Studio 2017](library-with-visual-studio.md).
-
-You can also develop a .NET Core console app on Mac, Linux, and Windows by using [Visual Studio Code](https://code.visualstudio.com/), a downloadable code editor. For a step-by-step tutorial, see [Getting Started with Visual Studio Code](with-visual-studio-code.md).
+> [!div class="nextstepaction"]
+> [Debug a .NET Core console application in Visual Studio](debugging-with-visual-studio.md)

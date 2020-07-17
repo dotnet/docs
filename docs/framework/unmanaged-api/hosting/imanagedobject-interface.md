@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1fbbf572-6d28-41a5-82fb-579ac90bfcf5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IManagedObject Interface
 Provides methods for controlling a managed object.  
@@ -24,11 +22,11 @@ Provides methods for controlling a managed object.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetObjectIdentity Method](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-getobjectidentity-method.md)|Gets the identity of this managed object.|  
-|[GetSerializedBuffer Method](../../../../docs/framework/unmanaged-api/hosting/imanagedobject-getserializedbuffer-method.md)|Gets the string representation of this managed object.|  
+|[GetObjectIdentity Method](imanagedobject-getobjectidentity-method.md)|Gets the identity of this managed object.|  
+|[GetSerializedBuffer Method](imanagedobject-getserializedbuffer-method.md)|Gets the string representation of this managed object.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,5 +34,6 @@ Provides methods for controlling a managed object.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [Hosting Interfaces](hosting-interfaces.md)

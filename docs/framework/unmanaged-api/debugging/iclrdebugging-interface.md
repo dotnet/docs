@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 429d8fce-b1b1-49d7-895c-28c1c1aa2dbd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugging Interface
 Provides methods that handle loading and unloading modules for debugging.  
@@ -24,14 +22,14 @@ Provides methods that handle loading and unloading modules for debugging.
   
 |Method|Description|  
 |------------|-----------------|  
-|[OpenVirtualProcess Method](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-openvirtualprocess-method.md)|Gets the "ICorDebugProcess" interface that corresponds to a common language runtime (CLR) module loaded in the process.|  
-|[CanUnloadNow Method](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-canunloadnow-method.md)|Determines whether a library that was provided by an [ICLRDebuggingLibraryProvider](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md) interface is still in use or can be unloaded.|  
+|[OpenVirtualProcess Method](iclrdebugging-openvirtualprocess-method.md)|Gets the "ICorDebugProcess" interface that corresponds to a common language runtime (CLR) module loaded in the process.|  
+|[CanUnloadNow Method](iclrdebugging-canunloadnow-method.md)|Determines whether a library that was provided by an [ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md) interface is still in use or can be unloaded.|  
   
 ## Remarks  
- You can obtain an instance of the `ICLRDebugging` interface by using the [CLRCreateInstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md) function.  
+ You can obtain an instance of the `ICLRDebugging` interface by using the [CLRCreateInstance](../hosting/clrcreateinstance-function.md) function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -39,6 +37,7 @@ Provides methods that handle loading and unloading modules for debugging.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

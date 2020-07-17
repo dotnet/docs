@@ -12,7 +12,7 @@ This example shows how to typecast a WebRequest so that you can access protocol 
 ## Example  
   
 ```csharp  
-HttpWebRequest httpreq =   
+HttpWebRequest httpreq =
    (HttpWebRequest) WebRequest.Create("http://www.contoso.com/");  
 ```  
   
@@ -21,5 +21,6 @@ Dim httpreq As HttpWebRequest = _
    CType(WebRequest.Create("http://www.contoso.com/"), HttpWebRequest)  
 ```  
   
-## See Also  
- [Programming Pluggable Protocols](../../../docs/framework/network-programming/programming-pluggable-protocols.md)
+## See also
+
+- [Programming Pluggable Protocols](programming-pluggable-protocols.md)

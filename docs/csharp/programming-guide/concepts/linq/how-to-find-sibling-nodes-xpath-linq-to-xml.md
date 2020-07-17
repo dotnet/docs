@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Sibling Nodes (XPath-LINQ to XML) (C#)"
+title: "How to find sibling nodes (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: e2c73d10-a8ca-4e11-b5aa-d055de285874
 ---
-# How to: Find Sibling Nodes (XPath-LINQ to XML) (C#)
+# How to find sibling nodes (XPath-LINQ to XML) (C#)
 You might want to find all siblings of a node that have a specific name. The resulting collection might include the context node if the context node also has the specific name.  
   
  The XPath expression is:  
@@ -13,12 +13,12 @@ You might want to find all siblings of a node that have a specific name. The res
 ## Example  
  This example first finds a `Book` element, and then finds all sibling elements named `Book`. The resulting collection includes the context node.  
   
- This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).  
   
 ```csharp  
 XDocument books = XDocument.Load("Books.xml");  
   
-XElement book =   
+XElement book =
     books  
     .Root  
     .Elements("Book")  
@@ -45,7 +45,7 @@ foreach (XElement el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 <Book id="bk101">  
   <Author>Garghentini, Davide</Author>  
@@ -53,7 +53,7 @@ Results are identical
   <Genre>Computer</Genre>  
   <Price>44.95</Price>  
   <PublishDate>2000-10-01</PublishDate>  
-  <Description>An in-depth look at creating applications   
+  <Description>An in-depth look at creating applications
       with XML.</Description>  
 </Book>  
 <Book id="bk102">  
@@ -62,12 +62,8 @@ Results are identical
   <Genre>Fantasy</Genre>  
   <Price>5.95</Price>  
   <PublishDate>2000-12-16</PublishDate>  
-  <Description>A former architect battles corporate zombies,   
-      an evil sorceress, and her own childhood to become queen   
+  <Description>A former architect battles corporate zombies,
+      an evil sorceress, and her own childhood to become queen
       of the world.</Description>  
 </Book>  
 ```  
-  
-## See Also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

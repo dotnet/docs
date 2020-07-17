@@ -1,5 +1,5 @@
 ---
-title: "Object Variable Declaration (Visual Basic)"
+title: "Object Variable Declaration"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "early binding [Visual Basic]"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
 ---
 # Object Variable Declaration (Visual Basic)
-You use a normal declaration statement to declare an object variable. For the data type, you specify either `Object` (that is, the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md)) or a more specific class from which the object is to be created.  
+You use a normal declaration statement to declare an object variable. For the data type, you specify either `Object` (that is, the [Object Data Type](../../../language-reference/data-types/object-data-type.md)) or a more specific class from which the object is to be created.  
   
  Declaring a variable as `Object` is the same as declaring it as <xref:System.Object?displayProperty=nameWithType>.  
   
@@ -27,7 +27,7 @@ You use a normal declaration statement to declare an object variable. For the da
 Dim variablename As [New] { objectclass | Object }  
 ```  
   
- You can also specify [Public](../../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../../visual-basic/language-reference/modifiers/friend.md), `Protected Friend`, [Private](../../../../visual-basic/language-reference/modifiers/private.md), [Shared](../../../../visual-basic/language-reference/modifiers/shared.md), or [Static](../../../../visual-basic/language-reference/modifiers/static.md) in the declaration. The following example declarations are valid:  
+ You can also specify [Public](../../../language-reference/modifiers/public.md), [Protected](../../../language-reference/modifiers/protected.md), [Friend](../../../language-reference/modifiers/friend.md), `Protected Friend`, [Private](../../../language-reference/modifiers/private.md), [Shared](../../../language-reference/modifiers/shared.md), or [Static](../../../language-reference/modifiers/static.md) in the declaration. The following example declarations are valid:  
   
 ```vb  
 Private objA As Object  
@@ -43,19 +43,19 @@ Dim objC As System.OperatingSystem
 ### Advantages of Early Binding  
  Declaring an object variable as a specific class gives you several advantages:  
   
--   Automatic type checking  
+- Automatic type checking  
   
--   Guaranteed access to all members of the specific class  
+- Guaranteed access to all members of the specific class  
   
--   Microsoft IntelliSense support in the Code Editor  
+- Microsoft IntelliSense support in the Code Editor  
   
--   Improved readability of your code  
+- Improved readability of your code  
   
--   Fewer errors in your code  
+- Fewer errors in your code  
   
--   Errors caught at compile time rather than run time  
+- Errors caught at compile time rather than run time  
   
--   Faster code execution  
+- Faster code execution  
   
 ## Access to Object Variable Members  
  When `Option Strict` is turned `On`, an object variable can access only the methods and properties of the class with which you declare it. The following example illustrates this.  
@@ -119,12 +119,13 @@ Dim anyForm As System.Windows.Forms.Form
   
  All the members of a base class are available to derived classes, but the additional members of a derived class are unavailable to the base class.  
   
-## See Also  
- [Object Variables](../../../../visual-basic/programming-guide/language-features/variables/object-variables.md)  
- [Object Variable Assignment](../../../../visual-basic/programming-guide/language-features/variables/object-variable-assignment.md)  
- [Object Variable Values](../../../../visual-basic/programming-guide/language-features/variables/object-variable-values.md)  
- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](../../../../visual-basic/programming-guide/language-features/variables/how-to-declare-an-object-variable-and-assign-an-object-to-it.md)  
- [How to: Access Members of an Object](../../../../visual-basic/programming-guide/language-features/variables/how-to-access-members-of-an-object.md)  
- [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md)  
- [Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)  
- [Local Type Inference](../../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## See also
+
+- [Object Variables](object-variables.md)
+- [Object Variable Assignment](object-variable-assignment.md)
+- [Object Variable Values](object-variable-values.md)
+- [How to: Declare an Object Variable and Assign an Object to It in Visual Basic](how-to-declare-an-object-variable-and-assign-an-object-to-it.md)
+- [How to: Access Members of an Object](how-to-access-members-of-an-object.md)
+- [New Operator](../../../language-reference/operators/new-operator.md)
+- [Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)
+- [Local Type Inference](local-type-inference.md)

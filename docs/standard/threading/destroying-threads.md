@@ -1,5 +1,6 @@
 ---
 title: "Destroying threads"
+description: Know your options when you need to destroy a thread in .NET, such as cooperative cancellation or the Thread.Abort method. Learn to handle ThreadAbortException.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -9,14 +10,13 @@ helpviewer_keywords:
   - "destroying threads"
   - "threading [.NET Framework], destroying threads"
 ms.assetid: df54e648-c5d1-47c9-bd29-8e4438c1db6d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Destroying threads
-The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method is used to stop a managed thread permanently. When you call <xref:System.Threading.Thread.Abort%2A>, the common language runtime throws a <xref:System.Threading.ThreadAbortException> in the target thread, which the target thread can catch. For more information, see <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>.  
-  
+
+To terminate the execution of the thread, you usually use the [cooperative cancellation model](cancellation-in-managed-threads.md). Sometimes it is not possible to stop a thread cooperatively, because it runs third-party code not designed for cooperative cancellation. The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method in .NET Framework can be used to terminate a managed thread forcibly. When you call <xref:System.Threading.Thread.Abort%2A>, the Common Language Runtime throws a <xref:System.Threading.ThreadAbortException> in the target thread, which the target thread can catch. For more information, see <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType>. The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method is not supported in .NET Core. If you need to terminate the execution of third-party code forcibly in .NET Core, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
+
 > [!NOTE]
->  If a thread is executing unmanaged code when its <xref:System.Threading.Thread.Abort%2A> method is called, the runtime marks it <xref:System.Threading.ThreadState.AbortRequested?displayProperty=nameWithType>. The exception is thrown when the thread returns to managed code.  
+> If a thread is executing unmanaged code when its <xref:System.Threading.Thread.Abort%2A> method is called, the runtime marks it <xref:System.Threading.ThreadState.AbortRequested?displayProperty=nameWithType>. The exception is thrown when the thread returns to managed code.  
   
  Once a thread is aborted, it cannot be restarted.  
   
@@ -33,26 +33,26 @@ Try
 Catch ex As ThreadAbortException  
     ' Clean-up code can go here.  
     ' If there is no Finally clause, ThreadAbortException is  
-    ' re-thrown by the system at the end of the Catch clause.   
+    ' re-thrown by the system at the end of the Catch clause.
 Finally  
     ' Clean-up code can go here.  
 End Try  
-' Do not put clean-up code here, because the exception   
+' Do not put clean-up code here, because the exception
 ' is rethrown at the end of the Finally clause.  
 ```  
   
 ```csharp  
-try   
+try
 {  
     // Code that is executing when the thread is aborted.  
-}   
-catch (ThreadAbortException ex)   
+}
+catch (ThreadAbortException ex)
 {  
     // Clean-up code can go here.  
     // If there is no Finally clause, ThreadAbortException is  
-    // re-thrown by the system at the end of the Catch clause.   
+    // re-thrown by the system at the end of the Catch clause.
 }  
-// Do not put clean-up code here, because the exception   
+// Do not put clean-up code here, because the exception
 // is rethrown at the end of the Finally clause.  
 ```  
   
@@ -62,6 +62,6 @@ catch (ThreadAbortException ex)
   
 ## See also
 
-- <xref:System.Threading.ThreadAbortException>  
-- <xref:System.Threading.Thread>  
-- [Using Threads and Threading](../../../docs/standard/threading/using-threads-and-threading.md)
+- <xref:System.Threading.ThreadAbortException>
+- <xref:System.Threading.Thread>
+- [Using Threads and Threading](using-threads-and-threading.md)

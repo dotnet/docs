@@ -1,5 +1,6 @@
 ---
 title: "Listening with Sockets"
+description: Learn how to create a remote service, where a server socket opens a port on the network and waits for a client to connect to that port.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -24,13 +25,13 @@ Listener or server sockets open a port on the network and then wait for a client
  The following example creates an <xref:System.Net.IPEndPoint> for a server by combining the first IP address returned by **Dns** for the host computer with a port number chosen from the registered port numbers range.  
   
 ```vb  
-Dim ipHostInfo As IPHostEntry = Dns.Resolve(Dns.GetHostName())  
+Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
 Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
 Dim localEndPoint As New IPEndPoint(ipAddress, 11000)  
 ```  
   
 ```csharp  
-IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());  
+IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
 IPAddress ipAddress = ipHostInfo.AddressList[0];  
 IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);  
 ```  
@@ -39,7 +40,7 @@ IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
   
 ```vb  
 Dim listener As New Socket(ipAddress.AddressFamily, _  
-    SocketType.Stream, ProtocolType.Tcp) 
+    SocketType.Stream, ProtocolType.Tcp)
 listener.Bind(localEndPoint)  
 listener.Listen(100)  
 ```  
@@ -53,9 +54,10 @@ listener.Listen(100);
   
  The **Listen** method takes a single parameter that specifies how many pending connections to the **Socket** are allowed before a server busy error is returned to the connecting client. In this case, up to 100 clients are placed in the connection queue before a server busy response is returned to client number 101.  
   
-## See Also  
- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)  
- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)  
- [Using Client Sockets](../../../docs/framework/network-programming/using-client-sockets.md)  
- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)  
- [Sockets](../../../docs/framework/network-programming/sockets.md)
+## See also
+
+- [Using a Synchronous Server Socket](using-a-synchronous-server-socket.md)
+- [Using an Asynchronous Server Socket](using-an-asynchronous-server-socket.md)
+- [Using Client Sockets](using-client-sockets.md)
+- [How to: Create a Socket](how-to-create-a-socket.md)
+- [Sockets](sockets.md)

@@ -1,7 +1,7 @@
 ---
 title: Perform custom join operations (LINQ in C#)
 description: Learn how to perform custom LINQ join operations in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 56a2a4a5-7299-497d-b3c3-23c848678911
 ---
 # Perform custom join operations
@@ -37,6 +37,6 @@ In the following example, the query must join two sequences based on matching ke
 
 ## See also
 
-- [Language Integrated Query (LINQ)](index.md)  
-- [join clause](../language-reference/keywords/join-clause.md)  
-- [Order the results of a join clause](order-the-results-of-a-join-clause.md)  
+- [Language Integrated Query (LINQ)](index.md)
+- [join clause](../language-reference/keywords/join-clause.md)
+- [Order the results of a join clause](order-the-results-of-a-join-clause.md)

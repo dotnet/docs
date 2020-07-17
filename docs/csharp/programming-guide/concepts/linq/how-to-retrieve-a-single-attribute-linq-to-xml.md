@@ -1,9 +1,9 @@
 ---
-title: "How to: Retrieve a Single Attribute (LINQ to XML) (C#)"
+title: "How to retrieve a single attribute (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 1b6b07b9-933f-47e9-874e-e790cab49dc5
 ---
-# How to: Retrieve a Single Attribute (LINQ to XML) (C#)
+# How to retrieve a single attribute (LINQ to XML) (C#)
 This topic explains how to retrieve a single attribute of an element, given the attribute name. This is useful for writing query expressions where you want to find an element that has a particular attribute.  
   
  The <xref:System.Xml.Linq.XElement.Attribute%2A> method of the <xref:System.Xml.Linq.XElement> class returns the <xref:System.Xml.Linq.XAttribute> with the specified name.  
@@ -31,7 +31,7 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
@@ -48,7 +48,7 @@ XElement cust = new XElement("PhoneNumbers",
         new XAttribute("type", "work"),  
         "555-555-6666")  
 );  
-IEnumerable<XElement> elList =   
+IEnumerable<XElement> elList =
     from el in cust.Descendants("Phone")  
     select el;  
 foreach (XElement el in elList)  
@@ -57,7 +57,7 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
@@ -65,7 +65,7 @@ work
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides explicit cast operators for the <xref:System.Xml.Linq.XAttribute> class to `string`, `bool`, `bool?`, `int`, `int?`, `uint`, `uint?`, `long`, `long?`, `ulong`, `ulong?`, `float`, `float?`, `double`, `double?`, `decimal`, `decimal?`, `DateTime`, `DateTime?`, `TimeSpan`, `TimeSpan?`, `GUID`, and `GUID?`.  
   
 ## Example  
- The following example shows the same code for an attribute that is in a namespace. For more information, see [Working with XML Namespaces (C#)](../../../../csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same code for an attribute that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (C#)](namespaces-overview-linq-to-xml.md).  
   
 ```csharp  
 XNamespace aw = "http://www.adventure-works.com";  
@@ -86,11 +86,11 @@ foreach (XElement el in elList)
   
  This code produces the following output:  
   
-```  
+```output  
 home  
 work  
 ```  
   
-## See Also
+## See also
 
-- [LINQ to XML Axes (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md)

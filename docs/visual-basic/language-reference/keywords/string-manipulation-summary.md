@@ -1,5 +1,5 @@
 ---
-title: "String Manipulation Summary (Visual Basic)"
+title: "String Manipulation Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "string functions"
@@ -20,12 +20,13 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Find the length of a string.|<xref:Microsoft.VisualBasic.Strings.Len%2A>|  
 |Format a string.|<xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Strings.FormatCurrency%2A>, <xref:Microsoft.VisualBasic.Strings.FormatDateTime%2A>, <xref:Microsoft.VisualBasic.Strings.FormatNumber%2A>, <xref:Microsoft.VisualBasic.Strings.FormatPercent%2A>|  
 |Manipulate strings.|<xref:Microsoft.VisualBasic.Strings.InStr%2A>, <xref:Microsoft.VisualBasic.Strings.Left%2A>, <xref:Microsoft.VisualBasic.Strings.LTrim%2A>, <xref:Microsoft.VisualBasic.Strings.Mid%2A>, <xref:Microsoft.VisualBasic.Strings.Right%2A>, <xref:Microsoft.VisualBasic.Strings.RTrim%2A>, <xref:Microsoft.VisualBasic.Strings.Trim%2A>|  
-|Set string comparison rules.|[Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md)|  
+|Set string comparison rules.|[Option Compare](../statements/option-compare-statement.md)|  
 |Work with ASCII and ANSI values.|<xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>|  
 |Replace a specified substring.|<xref:Microsoft.VisualBasic.Strings.Replace%2A>|  
 |Return a filter-based string array.|<xref:Microsoft.VisualBasic.Strings.Filter%2A>|  
 |Return a specified number of substrings.|<xref:Microsoft.VisualBasic.Strings.Split%2A>, <xref:Microsoft.VisualBasic.Strings.Join%2A>|  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)  
- [Visual Basic Runtime Library Members](../../../visual-basic/language-reference/runtime-library-members.md)
+## See also
+
+- [Keywords](index.md)
+- [Visual Basic Runtime Library Members](../runtime-library-members.md)

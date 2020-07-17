@@ -1,5 +1,6 @@
 ---
 title: "Principal and Identity Objects"
+description: Read about identity objects, which represent users in .NET. Also read about principal objects, which encapsulate both an identity object & a role.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -12,8 +13,6 @@ helpviewer_keywords:
   - "security [.NET Framework], principals"
   - "WindowsPrincipal objects"
 ms.assetid: aa5930ad-f3d7-40aa-b6f6-c6edcd5c64f7
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Principal and Identity Objects
 Managed code can discover the identity or the role of a principal through a <xref:System.Security.Principal.IPrincipal> object, which contains a reference to an <xref:System.Security.Principal.IIdentity> object. It might be helpful to compare identity and principal objects to familiar concepts like user and group accounts. In most network environments, user accounts represent people or programs, while group accounts represent certain categories of users and the rights they possess. Similarly, .NET Framework identity objects represent users, while roles represent memberships and security contexts. In the .NET Framework, the principal object encapsulates both an identity object and a role. .NET Framework applications grant rights to the principal based on its identity or, more commonly, its role membership.  
@@ -38,9 +37,9 @@ Managed code can discover the identity or the role of a principal through a <xre
   
 ## See also
 
-- [How to: Create a WindowsPrincipal Object](../../../docs/standard/security/how-to-create-a-windowsprincipal-object.md)  
-- [How to: Create GenericPrincipal and GenericIdentity Objects](../../../docs/standard/security/how-to-create-genericprincipal-and-genericidentity-objects.md)  
-- [Replacing a Principal Object](../../../docs/standard/security/replacing-a-principal-object.md)  
-- [Impersonating and Reverting](../../../docs/standard/security/impersonating-and-reverting.md)  
-- [Role-Based Security](../../../docs/standard/security/role-based-security.md)  
-- [Key Security Concepts](../../../docs/standard/security/key-security-concepts.md)
+- [How to: Create a WindowsPrincipal Object](how-to-create-a-windowsprincipal-object.md)
+- [How to: Create GenericPrincipal and GenericIdentity Objects](how-to-create-genericprincipal-and-genericidentity-objects.md)
+- [Replacing a Principal Object](replacing-a-principal-object.md)
+- [Impersonating and Reverting](impersonating-and-reverting.md)
+- [Role-Based Security](role-based-security.md)
+- [Key Security Concepts](key-security-concepts.md)

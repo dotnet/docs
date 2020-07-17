@@ -15,24 +15,22 @@ helpviewer_keywords:
 ms.assetid: 7ac3cba5-c282-402e-b7ef-b46634f5176b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugArrayValue::GetElement Method
 Gets the value of the given array element.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetElement (  
     [in]  ULONG32          cdim,  
-    [in, size_is(cdim), length_is(cdim)]   
+    [in, size_is(cdim), length_is(cdim)]
          ULONG32           indices[],  
     [out] ICorDebugValue   **ppValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cdim`  
  [in] The number of dimensions of this `ICorDebugArrayValue` object.  
   
@@ -47,7 +45,7 @@ HRESULT GetElement (
  [out] A pointer to the address of an ICorDebugValue object that represents the value of the specified element.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -10,7 +10,7 @@ This sample shows how to detect changes in the network address of an interface.
   
 ## Example  
   
-```  
+```csharp
 using System;  
 using System.Net;  
 using System.Net.NetworkInformation;  
@@ -21,7 +21,7 @@ namespace Examples.Net.AddressChanges
     {  
         public static void Main()  
         {  
-            NetworkChange.NetworkAddressChanged += new   
+            NetworkChange.NetworkAddressChanged += new
              NetworkAddressChangedEventHandler(AddressChangedCallback);  
             Console.WriteLine("Listening for address changes. Press any key to exit.");  
             Console.ReadLine();  
@@ -42,4 +42,4 @@ namespace Examples.Net.AddressChanges
 ## Compiling the Code  
  This example requires:  
   
--   References to the **System.Net** namespace.
+- References to the **System.Net** namespace.

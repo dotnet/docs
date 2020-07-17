@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort Elements (Visual Basic)"
+title: "How to: Sort Elements"
 ms.date: 07/20/2015
 ms.assetid: c2c09279-6c8a-482e-8e71-b1453a815052
 ---
@@ -7,7 +7,7 @@ ms.assetid: c2c09279-6c8a-482e-8e71-b1453a815052
 This example shows how to write a query that sorts its results.  
   
 ## Example  
- This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Numerical Data (LINQ to XML)](sample-xml-file-numerical-data-linq-to-xml.md).  
   
 ```vb  
 Dim root As XElement = XElement.Load("Data.xml")  
@@ -23,7 +23,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 0.99  
 4.95  
 6.99  
@@ -34,9 +34,9 @@ Next
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
- This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md).  
+ This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](sample-xml-file-numerical-data-in-a-namespace.md).  
   
 ```vb  
 Imports <xmlns='http://www.adatum.com'>  
@@ -58,7 +58,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 0.99  
 4.95  
 6.99  
@@ -68,6 +68,7 @@ End Module
 89.99  
 ```  
   
-## See Also  
- [Sorting Data](../../../../visual-basic/programming-guide/concepts/linq/sorting-data.md)  
- [Basic Queries (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+## See also
+
+- [Sorting Data](sorting-data.md)
+- [Basic Queries (LINQ to XML) (Visual Basic)](basic-queries-linq-to-xml.md)

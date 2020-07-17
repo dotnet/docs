@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 6e21872f-602f-411a-a423-bff5cdf27000
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDebuggerInfo::IsDebuggerAttached Method
 Gets a value that indicates whether a managed debugger is attached to this process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsDebuggerAttached (  
     [out] BOOL *pbAttached  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbAttached`  
  [out] A pointer to a value that is `true` if a managed debugger is attached to the process; otherwise, `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -42,5 +40,6 @@ HRESULT IsDebuggerAttached (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IDebuggerInfo Interface](../../../../docs/framework/unmanaged-api/hosting/idebuggerinfo-interface.md)
+## See also
+
+- [IDebuggerInfo Interface](idebuggerinfo-interface.md)

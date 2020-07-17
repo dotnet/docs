@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: c6bbf479-062e-48e9-9c70-0f92e293e36a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction::GetToken Method
 Gets the metadata token for this function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken (  
     [out] mdMethodDef *pMethodDef  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pMethodDef`  
  [out] A pointer to an `mdMethodDef` token that references the metadata for this function.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

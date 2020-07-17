@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: d5f54a34-6335-4708-b407-a756ec70fab4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval2::NewStringWithLength Method
 Creates a string of the specified length, with the specified contents.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewStringWithLength (  
     [in] LPCWSTR               string,  
     [in] UINT                  uiLength  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  [in] A pointer to the string value.  
   
@@ -43,7 +41,7 @@ HRESULT NewStringWithLength (
  The string is always created in the application domain in which the thread is currently executing.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

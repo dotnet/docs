@@ -1,12 +1,11 @@
 ---
 title: "MDbg.exe (.NET Framework Command-Line Debugger)"
+description: Understand MDbg.exe, the command-line debugger for .NET, which helps tools vendors and application developers find and fix bugs in programs targeting the CLR.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "command-line debugger [.NET Framework]"
   - "MDbg.exe"
 ms.assetid: 28a3f509-07e2-4dbe-81df-874c5e969cc4
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # MDbg.exe (.NET Framework Command-Line Debugger)
 The NET Framework Command-Line Debugger helps tools vendors and application developers find and fix bugs in programs that target the .NET Framework common language runtime. This tool uses the runtime debugging API to provide debugging services. You can use MDbg.exe to debug only managed code; there is no support for debugging unmanaged code.  
@@ -17,7 +16,7 @@ At the Package Manager prompt, type the following:
   
 ## Syntax  
   
-```  
+```console  
 MDbg [ProgramName[arguments]] [options]  
 ```  
   
@@ -71,7 +70,7 @@ MDbg [ProgramName[arguments]] [options]
 |**sh**[**ow**] [*lines*]|Specifies the number of lines to show.|  
 |**s**[**tep**]|Moves execution into the next function on the current line, or moves to the next line if there is no function to step into.|  
 |**su**[**spend**] [\* &#124; [~]*threadNumber*]|Suspends the current thread or the thread specified by the *threadNumber* parameter.  If *threadNumber* is specified as `*`, the command applies to all threads. If the thread number starts with `~`, the command applies to all threads except the one specified by *threadNumber*. Suspended threads are excluded from running when the process is run by either the **go** or **step** command. If there are no non-suspended threads in the process and you issue the **go** command, the process will not continue. In that case, press CTRL-C to break into the process.|  
-|**sy**[**mbol**] *commandName* [*commandValue*]|Specifies one of the following commands:<br /><br /> -   `symbol path` [`"``value``"`] - Displays or sets the current symbol path.<br />-   `symbol addpath` `"` `value` `"` - Adds to your current symbol path.<br />-   `symbol reload` [`"``module``"`]- Reloads either all symbols or the symbols for the specified module.<br />-   `symbol list` [`module`] - Shows the currently loaded symbols for either all modules or the specified module.|  
+|**sy**[**mbol**] *commandName* [*commandValue*]|Specifies one of the following commands:<br /><br /> -   `symbol path` [`"value"`] - Displays or sets the current symbol path.<br />-   `symbol addpath` `"value"` - Adds to your current symbol path.<br />-   `symbol reload` [`"module"`] - Reloads either all symbols or the symbols for the specified module.<br />-   `symbol list` [`module`] - Shows the currently loaded symbols for either all modules or the specified module.|  
 |**t**[**hread**] [*newThread*] [-*nick nickname*`]`|The thread command with no parameters displays all managed threads in the current process. Threads are usually identified by their thread numbers; however, if the thread has an assigned nickname, the nickname is displayed instead. You can use the `-nick` parameter to assign a nickname to a thread.<br /><br /> -   **thread** `-nick` *threadName* assigns a nickname to the currently running thread.<br /><br /> Nicknames cannot be numbers. If the current thread already has an assigned nickname, the old nickname is replaced with the new one. If the new nickname is an empty string (""), the nickname for the current thread is deleted and no new nickname is assigned to the thread.|  
 |**u**[**p**]|Moves the active stack frame up.|  
 |**uwgc**[**handle**] [*var*] &#124; [*address*]|Prints the variable tracked by a handle. The handle can be specified by name or address.|  
@@ -84,7 +83,7 @@ MDbg [ProgramName[arguments]] [options]
   
  After you compile your application, type **mdbg** at the command prompt to start a debugging session, as shown in the following example.  
   
-```  
+```console  
 C:\Program Files\Microsoft Visual Studio 8\VC>mdbg  
 MDbg (Managed debugger) v2.0.50727.42 (RTM.050727-4200) started.  
 Copyright (C) Microsoft Corporation. All rights reserved.  
@@ -98,8 +97,7 @@ mdbg>
   
  Once you are in the debugger, use the commands and arguments described in the previous section.  
   
-## Examples  
-  
-## See Also  
- [Tools](../../../docs/framework/tools/index.md)  
- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+## See also
+
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

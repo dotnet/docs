@@ -1,5 +1,6 @@
 ---
 title: "Creating New Strings in .NET"
+description: Learn to create strings using assignment, class constructors, or System.String methods that combine several strings, arrays of strings, or objects in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -13,11 +14,9 @@ helpviewer_keywords:
   - "strings [.NET Framework], creating"
   - "Insert method"
 ms.assetid: 06fdf123-2fac-4459-8904-eb48ab908a30
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Creating New Strings in .NET
-The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
+The .NET Framework allows strings to be created using simple assignment, and also overloads a class constructor to support string creation using a number of different parameters. The .NET Framework also provides several methods in the <xref:System.String?displayProperty=nameWithType> class that create new string objects by combining several strings, arrays of strings, or objects.  
   
 ## Creating Strings Using Assignment  
  The easiest way to create a new <xref:System.String> object is simply to assign a string literal to a <xref:System.String> object.  
@@ -37,7 +36,7 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
 |<xref:System.String.CopyTo%2A?displayProperty=nameWithType>|Copies specified characters in a string into a specified position in an array of characters.|  
   
 ### Format  
- You can use the **String.Format** method to create formatted strings and concatenate strings representing multiple objects. This method automatically converts any passed object into a string. For example, if your application must display an **Int32** value and a **DateTime** value to the user, you can easily construct a string to represent these values using the **Format** method. For information about formatting conventions used with this method, see the section on [composite formatting](../../../docs/standard/base-types/composite-formatting.md).  
+ You can use the **String.Format** method to create formatted strings and concatenate strings representing multiple objects. This method automatically converts any passed object into a string. For example, if your application must display an **Int32** value and a **DateTime** value to the user, you can easily construct a string to represent these values using the **Format** method. For information about formatting conventions used with this method, see the section on [composite formatting](composite-formatting.md).  
   
  The following example uses the **Format** method to create a string that uses an integer variable.  
   
@@ -76,5 +75,5 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] allows strings 
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)  
-- [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)
+- [Basic String Operations](basic-string-operations.md)
+- [Composite Formatting](composite-formatting.md)

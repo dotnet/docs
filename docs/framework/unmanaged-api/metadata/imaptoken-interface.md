@@ -14,23 +14,21 @@ helpviewer_keywords:
 ms.assetid: 4c5c4df0-43f3-4830-a01b-8d029806f2c4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMapToken Interface
 Provides mapping capabilities between assemblies.  
   
 > [!NOTE]
->  The `IMapToken` interface must be implemented by the client.  
+> The `IMapToken` interface must be implemented by the client.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[Map Method](../../../../docs/framework/unmanaged-api/metadata/imaptoken-map-method.md)|Maps a relationship between two assemblies using metadata signatures.|  
+|[Map Method](imaptoken-map-method.md)|Maps a relationship between two assemblies using metadata signatures.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -38,5 +36,6 @@ Provides mapping capabilities between assemblies.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+## See also
+
+- [Metadata Interfaces](metadata-interfaces.md)

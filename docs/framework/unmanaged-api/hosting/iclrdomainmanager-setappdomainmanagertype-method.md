@@ -13,15 +13,13 @@ helpviewer_keywords:
   - "SetAppDomainManagerType method, ICLRDomainManager interface [.NET Framework hosting]"
   - "ICLRDomainManager::SetAppDomainManagerType method [.NET Framework hosting]"
 ms.assetid: ee91abb0-cb74-41dd-927b-e117fb8ffdf4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDomainManager::SetAppDomainManagerType Method
 Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=nameWithType> class, of the application domain manager that will be used to initialize the default application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManagerType(  
     [in] LPCWSTR wszAppDomainManagerAssembly,  
     [in] LPCWSTR wszAppDomainManagerType,  
@@ -29,7 +27,7 @@ HRESULT SetAppDomainManagerType(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszAppDomainManagerAssembly`  
  [in] The display name of the assembly that contains the application domain manager type; for example: "AdMgrExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6856bccf150f00b3".  
   
@@ -37,7 +35,7 @@ HRESULT SetAppDomainManagerType(
  [in] The type name of the application domain manager, including the namespace.  
   
  `dwInitializeDomainFlags`  
- [in] A combination of [EInitializeNewDomainFlags](../../../../docs/framework/unmanaged-api/hosting/einitializenewdomainflags-enumeration.md) enumeration values that provide information about the application domain manager.  
+ [in] A combination of [EInitializeNewDomainFlags](einitializenewdomainflags-enumeration.md) enumeration values that provide information about the application domain manager.  
   
 ## Return Value  
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
@@ -51,12 +49,12 @@ HRESULT SetAppDomainManagerType(
  Currently, the only defined value for `dwInitializeDomainFlags` is `eInitializeNewDomainFlags_NoSecurityChanges`, which tells the common language runtime (CLR) that the application domain manager will not modify security settings during the execution of the <xref:System.AppDomainManager.InitializeNewDomain%2A?displayProperty=nameWithType> method. This allows the CLR to optimize the loading of assemblies that have the conditional <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute. This can result in a significant improvement in startup time if the transitive closure of this set of assemblies is large.  
   
 > [!IMPORTANT]
->  If the host specifies `eInitializeNewDomainFlags_NoSecurityChanges` for the application domain manager, an <xref:System.InvalidOperationException> is thrown if any attempt is made to modify the security of the application domain.  
+> If the host specifies `eInitializeNewDomainFlags_NoSecurityChanges` for the application domain manager, an <xref:System.InvalidOperationException> is thrown if any attempt is made to modify the security of the application domain.  
   
- Calling the [ICLRControl::SetAppDomainManagerType](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-setappdomainmanagertype-method.md)method is equivalent to calling `ICLRDomainManager::SetAppDomainManagerType` with `eInitializeNewDomainFlags_None`.  
+ Calling the [ICLRControl::SetAppDomainManagerType](iclrcontrol-setappdomainmanagertype-method.md)method is equivalent to calling `ICLRDomainManager::SetAppDomainManagerType` with `eInitializeNewDomainFlags_None`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -64,7 +62,8 @@ HRESULT SetAppDomainManagerType(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
- [ICLRDomainManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdomainmanager-interface.md)  
- [EInitializeNewDomainFlags Enumeration](../../../../docs/framework/unmanaged-api/hosting/einitializenewdomainflags-enumeration.md)
+## See also
+
+- [Hosting](index.md)
+- [ICLRDomainManager Interface](iclrdomainmanager-interface.md)
+- [EInitializeNewDomainFlags Enumeration](einitializenewdomainflags-enumeration.md)

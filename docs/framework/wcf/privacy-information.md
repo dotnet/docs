@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
 ---
 # Windows Communication Foundation Privacy Information
-Microsoft is committed to protecting end-users' privacy. When you build an application using Windows Communication Foundation (WCF), version 3.0, your application may impact your end-users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. WCF does not send any information to Microsoft from your application unless you or the end-user choose to send it to us.  
+Microsoft is committed to protecting end user privacy. When you build an application using Windows Communication Foundation (WCF), version 3.0, your application may impact your end users' privacy. For example, your application may explicitly collect user contact information, or it may request or send information over the Internet to your Web site. If you embed Microsoft technology in your application, that technology may have its own behavior that might affect privacy. WCF does not send any information to Microsoft from your application unless you or the end user choose to send it to us.  
   
 ## WCF in Brief  
  WCF is a distributed messaging framework using the Microsoft .NET Framework that allows developers to build distributed applications. Messages communicated between two applications contain header and body information.  
@@ -20,10 +20,10 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  The address component of an endpoint address is a Uniform Resource Identifier (URI) that identifies the endpoint. The address can be a network address or a logical address. The address may include machine name (hostname, fully qualified domain name) and an IP address. The endpoint address may also contain a globally unique identifier (GUID), or a collection of GUIDs for temporary addressing used to discern each address. Each message contains a message ID that is a GUID. This feature follows the WS-Addressing reference standard.  
   
- The WCF messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
+ The WCF messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
   
 ## Hosting  
- The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. An WCF application can be hosted in Internet Information Services (IIS), similar to [!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)].  
+ The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. A WCF application can be hosted in Internet Information Services (IIS), similar to ASP.NET.  
   
  Hosting does not expose any specific information on the network and it does not keep data on the machine.  
   
@@ -32,23 +32,23 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  Authentication is performed by passing credentials between the clients and services. Authentication can be either through transport-level security or through SOAP message-level security, as follows:  
   
--   In SOAP message security, authentication is performed through credentials like username/passwords, X.509 certificates, Kerberos tickets, and SAML tokens, all of which might contain personal information, depending on the issuer.  
+- In SOAP message security, authentication is performed through credentials like username/passwords, X.509 certificates, Kerberos tickets, and SAML tokens, all of which might contain personal information, depending on the issuer.  
   
--   Using transport security, authentication is done through traditional transport authentication mechanisms like HTTP authentication schemes (Basic, Digest, Negotiate, Integrated Windows Authorization, NTLM, None, and Anonymous), and form authentication.  
+- Using transport security, authentication is done through traditional transport authentication mechanisms like HTTP authentication schemes (Basic, Digest, Negotiate, Integrated Windows Authorization, NTLM, None, and Anonymous), and form authentication.  
   
  Authentication can result in a secure session established between the communicating endpoints. The session is identified by a GUID that lasts the lifetime of the security session. The following table shows what is kept and where.  
   
 |Data|Storage|  
 |----------|-------------|  
 |Presentation credentials, such as username, X.509 certificates, Kerberos tokens, and references to credentials.|Standard Windows credential management mechanisms such as the Windows certificate store.|  
-|User membership information, such as usernames and passwords.|[!INCLUDE[vstecasp](../../../includes/vstecasp-md.md)] membership providers.|  
+|User membership information, such as usernames and passwords.|ASP.NET membership providers.|  
 |Identity information about the service used to authenticate the service to clients.|Endpoint address of the service.|  
 |Caller information.|Auditing logs.|  
   
 ## Auditing  
  Auditing records the success and failure of authentication and authorization events. Auditing records contain the following data: service URI, action URI, and the caller's identification.  
   
- Auditing also records when the administrator modifies the configuration of message logging (turning it on or off), because message logging may log application-specific data in headers and bodies. For [!INCLUDE[wxp](../../../includes/wxp-md.md)], a record is logged in the application event log. For [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], a record is logged in the security event log.  
+ Auditing also records when the administrator modifies the configuration of message logging (turning it on or off), because message logging may log application-specific data in headers and bodies. For Windows XP, a record is logged in the application event log. For Windows Vista and Windows Server 2003, a record is logged in the security event log.  
   
 ## Transactions  
  The transactions feature provides transactional services to a WCF application.  
@@ -64,17 +64,17 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  Reliable sessions are implemented using the WS-ReliableMessaging (WS-RM) protocol. They add WS-RM headers that contain session information, which is used to identify all messages associated with a particular reliable session. Each WS-RM session has an identifier, which is a GUID.  
   
- No personal information is retained on the end-user's machine.  
+ No personal information is retained on the end user's machine.  
   
 ## Queued Channels  
  Queues store messages from a sending application on behalf of a receiving application and later forward these messages to the receiving application. They help ensure the transfer of messages from sending applications to receiving applications when, for example, the receiving application is transient. WCF provides support for queuing by using Microsoft Message Queuing (MSMQ) as a transport.  
   
  The queued channels feature does not add headers to a message. Instead it creates a Message Queuing message with appropriate Message Queuing message properties set, and invokes Message Queuing methods to put the message in the Message Queuing queue. Message Queuing is an optional component that ships with Windows.  
   
- No information is retained on the end-user's machine by the queued channels feature, because it uses Message Queuing as the queuing infrastructure.  
+ No information is retained on the end user's machine by the queued channels feature, because it uses Message Queuing as the queuing infrastructure.  
   
 ## COM+ Integration  
- This feature wraps existing COM and COM+ functionality to create services that are compatible with WCF services. This feature does not use specific headers and it does not retain data on the end-user's machine.  
+ This feature wraps existing COM and COM+ functionality to create services that are compatible with WCF services. This feature does not use specific headers and it does not retain data on the end user's machine.  
   
 ## COM Service Moniker  
  This provides an unmanaged wrapper to a standard WCF client. This feature does not have specific headers on the wire nor does it persist data on the machine.  
@@ -82,7 +82,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
 ## Peer Channel  
  A peer channel enables development of multiparty applications using WCF. Multiparty messaging occurs in the context of a mesh. Meshes are identified by a name that nodes can join. Each node in the peer channel creates a TCP listener at a user-specified port and establishes connections with other nodes in the mesh to ensure resiliency. To connect to other nodes in the mesh, nodes also exchange some data, including the listener address and the machine's IP addresses, with other nodes in the mesh. Messages sent around in the mesh can contain security information that pertains to the sender to prevent message spoofing and tampering.  
   
- No personal information is stored on the end-user's machine.  
+ No personal information is stored on the end user's machine.  
   
 ## IT Professional Experience  
   
@@ -353,17 +353,17 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
 #### No Information Is Removed from Application-specific Headers and Body Data  
  WCF does not track personal information in application-specific headers (for example, query strings) or body data (for example, credit card number).  
   
- When message logging is on, personal information in application-specific headers and body information may be visible in the logs. Again, the application deployer is responsible for setting the ACLs on the configuration and log files. He also can turn off logging if he does not want this information to be visible, or he may filter out this information from the log files after it is logged.  
+ When message logging is on, personal information in application-specific headers and body information may be visible in the logs. Again, the application deployer is responsible for setting the ACLs on the configuration and log files. They also can turn off logging if they don't want this information to be visible, or filter out this information from the log files after it is logged.  
   
 ### Service Model Tracing  
  The Service Model trace source (<xref:System.ServiceModel>) enables tracing of activities and events related to message processing. This feature uses the .NET Framework diagnostic functionality from <xref:System.Diagnostics>. As with the <xref:System.ServiceModel.Configuration.DiagnosticSection.MessageLogging%2A> property, the location and its ACL are user-configurable using .NET Framework application configuration files. As with message logging, the file location is always configured when the administrator enables tracing; thus, the administrator controls the ACL.  
   
- Traces contain message headers when a message is in scope. The same rules for hiding potentially personal information in message headers in the previous section apply: the personal information previously identified is removed by default from the headers in traces. Both the machine administrator and the application deployer must modify the configuration in order to log potentially personal information. However, personal information contained in application-specific headers is logged in traces. The application deployer is responsible for setting the ACLs on the configuration and trace files. He also can turn off tracing if he does not want this information to be visible, or he can filter out this information from the trace files after it is logged.  
+ Traces contain message headers when a message is in scope. The same rules for hiding potentially personal information in message headers in the previous section apply: the personal information previously identified is removed by default from the headers in traces. Both the machine administrator and the application deployer must modify the configuration in order to log potentially personal information. However, personal information contained in application-specific headers is logged in traces. The application deployer is responsible for setting the ACLs on the configuration and trace files. They can also turn off tracing to hide this information or filter out this information from the trace files after it's logged.  
   
  As part of ServiceModel Tracing, Unique IDs (called Activity IDs, and typically a GUID) link different activities together as a message flows through different parts of the infrastructure.  
   
 #### Custom Trace Listeners  
- For both message logging and tracing, a custom trace listener can be configured, which can send traces and messages on the wire (for example, to a remote database). The application deployer is responsible for configuring custom listeners or enabling users to do so. He is also responsible for any personal information exposed at the remote location, and for properly applying ACLs to this location.  
+ For both message logging and tracing, a custom trace listener can be configured, which can send traces and messages on the wire (for example, to a remote database). The application deployer is responsible for configuring custom listeners or enabling users to do so. They are also responsible for any personal information exposed at the remote location and for properly applying ACLs to this location.  
   
 ### Other features for IT Professionals  
  WCF has a WMI provider that exposes the WCF infrastructure configuration information through WMI (shipped with Windows). By default, the WMI interface is available to administrators.  
@@ -395,6 +395,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  The Web Services Description Language (WSDL) contains a definition of the port. Each port has an endpoint address and a binding that represents the services used by the application. Exposing WSDL can be turned off using configuration. No information is retained on the machine.  
   
-## See Also  
- [Windows Communication Foundation](https://msdn.microsoft.com/library/fd327ade-0260-4c40-adbe-b74645ba3277)  
- [Security](../../../docs/framework/wcf/feature-details/security.md)
+## See also
+
+- [Windows Communication Foundation](index.md)
+- [Security](./feature-details/security.md)

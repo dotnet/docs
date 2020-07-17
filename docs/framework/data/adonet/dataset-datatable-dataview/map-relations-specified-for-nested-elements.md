@@ -9,8 +9,8 @@ A schema can include an **msdata:Relationship** annotation to explicitly specify
  The following example shows an XML Schema in which the **OrderDetail** element is a child element of **Order**. The **msdata:Relationship** identifies this parent-child relationship and specifies that the **OrderNumber** column of the resulting **Order** table is related to the **OrderNo** column of the resulting **OrderDetail** table.  
   
 ```xml  
-<xs:schema id="MyDataSet" xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+<xs:schema id="MyDataSet" xmlns=""
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
 <xs:element name="MyDataSet" msdata:IsDataSet="true">  
  <xs:complexType>  
@@ -23,10 +23,10 @@ A schema can include an **msdata:Relationship** annotation to explicitly specify
        <xs:element name="OrderDetail">  
           <xs:annotation>  
            <xs:appinfo>  
-            <msdata:Relationship name="OrdODRelation"   
-                                msdata:parent="Order"   
-                                msdata:child="OrderDetail"   
-                                msdata:parentkey="OrderNumber"   
+            <msdata:Relationship name="OrdODRelation"
+                                msdata:parent="Order"
+                                msdata:child="OrderDetail"
+                                msdata:parentkey="OrderNumber"
                                 msdata:childkey="OrderNo"/>  
            </xs:appinfo>  
           </xs:annotation>  
@@ -48,27 +48,28 @@ A schema can include an **msdata:Relationship** annotation to explicitly specify
   
  The XML Schema mapping process creates the following in the <xref:System.Data.DataSet>:  
   
--   An **Order** and an **OrderDetail** table.  
+- An **Order** and an **OrderDetail** table.  
   
-    ```  
+    ```text  
     Order(OrderNumber, EmpNumber)  
     OrderDetail(OrderNo, ItemNo)  
     ```  
   
--   A relationship between the **Order** and **OrderDetail** tables. The **Nested** property for this relationship is set to **True** because the **Order** and **OrderDetail** elements are nested in the schema.  
+- A relationship between the **Order** and **OrderDetail** tables. The **Nested** property for this relationship is set to **True** because the **Order** and **OrderDetail** elements are nested in the schema.  
   
-    ```  
+    ```text  
     ParentTable: Order  
-    ParentColumns: OrderNumber   
+    ParentColumns: OrderNumber
     ChildTable: OrderDetail  
-    ChildColumns: OrderNo   
+    ChildColumns: OrderNo
     RelationName: OrdODRelation  
     Nested: True  
     ```  
   
  The mapping process does not create any constraints.  
   
-## See Also  
- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
+- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
+- [ADO.NET Overview](../ado-net-overview.md)

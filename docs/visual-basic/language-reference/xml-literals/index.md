@@ -1,5 +1,5 @@
 ---
-title: "XML Literals (Visual Basic)"
+title: "XML Literals"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring XML literals [Visual Basic]"
@@ -17,11 +17,12 @@ The topics in this section document the syntax of XML literals in Visual Basic. 
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[XML Element Literal](../../../visual-basic/language-reference/xml-literals/xml-element-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XElement> objects.|  
-|[XML Document Literal](../../../visual-basic/language-reference/xml-literals/xml-document-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XDocument> objects.|  
-|[XML CDATA Literal](../../../visual-basic/language-reference/xml-literals/xml-cdata-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XCData> objects.|  
-|[XML Comment Literal](../../../visual-basic/language-reference/xml-literals/xml-comment-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XComment> objects.|  
-|[XML Processing Instruction Literal](../../../visual-basic/language-reference/xml-literals/xml-processing-instruction-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XProcessingInstruction> objects.|  
+|[XML Element Literal](xml-element-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XElement> objects.|  
+|[XML Document Literal](xml-document-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XDocument> objects.|  
+|[XML CDATA Literal](xml-cdata-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XCData> objects.|  
+|[XML Comment Literal](xml-comment-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XComment> objects.|  
+|[XML Processing Instruction Literal](xml-processing-instruction-literal.md)|Describes the syntax for literals that represent <xref:System.Xml.Linq.XProcessingInstruction> objects.|  
   
-## See Also  
- [XML](../../../visual-basic/programming-guide/language-features/xml/index.md)
+## See also
+
+- [XML](../../programming-guide/language-features/xml/index.md)

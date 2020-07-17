@@ -1,39 +1,39 @@
 ---
-title: "&lt;issuedTokenAuthentication&gt; of &lt;serviceCredentials&gt;"
+title: "<issuedTokenAuthentication> of <serviceCredentials>"
 ms.date: "03/30/2017"
 ms.assetid: 5c2e288f-f603-4d13-839a-0fd6d1981bec
 ---
-# &lt;issuedTokenAuthentication&gt; of &lt;serviceCredentials&gt;
+# \<issuedTokenAuthentication> of \<serviceCredentials>
 Specifies a custom token issued as a service credential.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<serviceCredentials>  
-\<issuedTokenAuthentication>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceCredentials>**](servicecredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<issuedTokenAuthentication>**  
   
 ## Syntax  
   
 ```xml  
-<issuedTokenAuthentication   
-   allowUntrustedRsaIssuers="Boolean"  
-   audienceUriMode="Always/BearerKeyOnly/Never"  
-      customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
-certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
-   revocationMode="NoCheck/Online/Offline"  
-   samlSerializer="String"  
-    trustedStoreLocation="CurrentUser/LocalMachine">  
-      <allowedAudienceUris>  
-      <add allowedAudienceUri="String"/>  
-      </allowedAudienceUris>  
-      <knownCertificates>   
-         <add findValue="String"  
-                 storeLocation="CurrentUser/LocalMachine"  
-                storeName=" CurrentUser/LocalMachine"  
-                x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier"/>  
-      </knownCertificates>  
-</issuedTokenAuthentication>  
+<issuedTokenAuthentication allowUntrustedRsaIssuers="Boolean"
+                           audienceUriMode="Always/BearerKeyOnly/Never"
+                           customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"
+                           certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
+                           revocationMode="NoCheck/Online/Offline"
+                           samlSerializer="String"
+                           trustedStoreLocation="CurrentUser/LocalMachine">
+  <allowedAudienceUris>
+    <add allowedAudienceUri="String" />
+  </allowedAudienceUris>
+  <knownCertificates>
+    <add findValue="String"
+         storeLocation="CurrentUser/LocalMachine"
+         storeName=" CurrentUser/LocalMachine"
+         x509FindType="FindByThumbprint/FindBySubjectName/FindBySubjectDistinguishedName/FindByIssuerName/FindByIssuerDistinguishedName/FindBySerialNumber/FindByTimeValid/FindByTimeNotYetValid/FindBySerialNumber/FindByTimeExpired/FindByTemplateName/FindByApplicationPolicy/FindByCertificatePolicy/FindByExtension/FindByKeyUsage/FindBySubjectKeyIdentifier" />
+  </knownCertificates>
+</issuedTokenAuthentication>
 ```  
   
 ## Attributes and Elements  
@@ -62,34 +62,36 @@ certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<serviceCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.|  
+|[\<serviceCredentials>](servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.|  
   
 ## Remarks  
  The issued token scenario has three stages. In the first stage, a client trying to access a service is referred to a *secure token service*. The secure token service then authenticates the client and subsequently issues the client a token, typically a Security Assertions Markup Language (SAML) token. The client then returns to the service with the token. The service examines the token for data that allows the service to authenticate the token and therefore the client. To authenticate the token, the certificate the secure token service uses must be known to the service.  
   
- This element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.  
+ This element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](knowncertificates.md). Insert an [\<add>](add-of-knowncertificates.md) for each certificate, as shown in the following example.  
   
 ```xml  
-<issuedTokenAuthorization>  
-   <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
-           X509FindType="FindBySubjectName" />  
-    </knownCertificates>  
-</issuedTokenAuthentication>  
+<issuedTokenAuthentication>
+  <knownCertificates>
+    <add findValue="www.contoso.com"
+         storeLocation="LocalMachine"
+         storeName="My"
+         X509FindType="FindBySubjectName" />
+  </knownCertificates>
+</issuedTokenAuthentication>
 ```  
   
  By default, the certificates must be obtained from a secure token service. These "known" certificates ensure that only legitimate clients can access a service.  
   
- For more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
+ For more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
-## See Also  
- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>  
- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>  
- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>  
- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.IssuedTokenAuthentication%2A>  
- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement>  
- <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication%2A>  
- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential>  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)  
- [How to: Configure Credentials on a Federation Service](../../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
+## See also
+
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AllowedAudienceUris%2A>
+- <xref:System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator.AudienceUriMode%2A>
+- <xref:System.ServiceModel.Configuration.ServiceCredentialsElement.IssuedTokenAuthentication%2A>
+- <xref:System.ServiceModel.Configuration.IssuedTokenServiceElement>
+- <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication%2A>
+- <xref:System.ServiceModel.Security.IssuedTokenServiceCredential>
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)
+- [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ce969c9d-6538-4c34-8784-148ffd99fe7a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IInstallReferenceEnum::GetNextInstallReferenceItem Method
-Gets a pointer to the next [IInstallReferenceItem](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md) object contained in this [IInstallReferenceEnum](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md) object.  
+Gets a pointer to the next [IInstallReferenceItem](iinstallreferenceitem-interface.md) object contained in this [IInstallReferenceEnum](iinstallreferenceenum-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextInstallReferenceItem (  
     [out] IInstallReferenceItem **ppRefItem,  
     [in]  DWORD dwFlags,  
@@ -31,7 +29,7 @@ HRESULT GetNextInstallReferenceItem (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppRefItem`  
  [out] The returned `IInstallReferenceItem` pointer.  
   
@@ -42,12 +40,13 @@ HRESULT GetNextInstallReferenceItem (
  [in] Reserved for future extensibility. `pvReserved` must be a null reference.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)  
- [IInstallReferenceEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-interface.md)
+## See also
+
+- [IInstallReferenceItem Interface](iinstallreferenceitem-interface.md)
+- [IInstallReferenceEnum Interface](iinstallreferenceenum-interface.md)

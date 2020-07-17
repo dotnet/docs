@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: 5612a44d-56cc-4f34-af31-8c9809ba9431
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMemoryNotificationCallback::OnMemoryNotification Method
 Notifies the common language runtime (CLR) of the memory load on the computer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnMemoryNotification (  
     [in] EMemoryAvailable eMemoryAvailable  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `eMemoryAvailable`  
- [in] One of the [EMemoryAvailable](../../../../docs/framework/unmanaged-api/hosting/ememoryavailable-enumeration.md) values, indicating the memory pressure the computer is currently experiencing.  
+ [in] One of the [EMemoryAvailable](ememoryavailable-enumeration.md) values, indicating the memory pressure the computer is currently experiencing.  
   
 ## Return Value  
   
@@ -45,13 +43,13 @@ HRESULT OnMemoryNotification (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
- The CLR registers a callback to `OnMemoryNotification` by using a call to the [IHostMemoryManager::RegisterMemoryNotificationCallback](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-registermemorynotificationcallback-method.md) method. The runtime uses the information returned in the callback to free additional memory when the host reports that memory resources are running low.  
+ The CLR registers a callback to `OnMemoryNotification` by using a call to the [IHostMemoryManager::RegisterMemoryNotificationCallback](ihostmemorymanager-registermemorynotificationcallback-method.md) method. The runtime uses the information returned in the callback to free additional memory when the host reports that memory resources are running low.  
   
 > [!NOTE]
->  Calls to `OnMemoryNotification` never block. They always return immediately.  
+> Calls to `OnMemoryNotification` never block. They always return immediately.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -59,7 +57,8 @@ HRESULT OnMemoryNotification (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)  
- [RegisterMemoryNotificationCallback Method](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-registermemorynotificationcallback-method.md)  
- [ICLRMemoryNotificationCallback Interface](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-interface.md)
+## See also
+
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)
+- [RegisterMemoryNotificationCallback Method](ihostmemorymanager-registermemorynotificationcallback-method.md)
+- [ICLRMemoryNotificationCallback Interface](iclrmemorynotificationcallback-interface.md)

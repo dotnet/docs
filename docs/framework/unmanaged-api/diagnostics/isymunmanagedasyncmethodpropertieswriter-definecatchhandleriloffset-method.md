@@ -2,8 +2,6 @@
 title: "ISymUnmanagedAsyncMethodPropertiesWriter::DefineCatchHandlerILOffset Method"
 ms.date: "03/30/2017"
 ms.assetid: 92af7896-2201-408d-8b1b-23e28001eeac
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedAsyncMethodPropertiesWriter::DefineCatchHandlerILOffset Method
 Sets the IL offset for the compiler-generated catch handler that wraps an async method.  
@@ -16,7 +14,7 @@ Sets the IL offset for the compiler-generated catch handler that wraps an async 
 HRESULT DefineCatchHandlerILOffset(    [in] ULONG32 catchHandlerOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
   
 |Parameter|Description|  
 |---------------|-----------------|  
@@ -28,5 +26,6 @@ HRESULT DefineCatchHandlerILOffset(    [in] ULONG32 catchHandlerOffset);
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedAsyncMethodPropertiesWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-interface.md)
+## See also
+
+- [ISymUnmanagedAsyncMethodPropertiesWriter Interface](isymunmanagedasyncmethodpropertieswriter-interface.md)

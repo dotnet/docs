@@ -1,5 +1,5 @@
 ---
-title: "Properties on Windows Forms Controls That Support Accessibility Guidelines"
+title: Accessibility properties on controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, accessibility properties of controls"
@@ -24,5 +24,6 @@ Controls on the standard toolbox for Windows Forms support many of the accessibi
 |Backcolor|If this property is set to the default, then the user's color preferences will be used on the form.|  
 |BackgroundImage|Leave this property blank to make text more readable.|  
   
-## See Also  
- [Walkthrough: Creating an Accessible Windows-based Application](../../../../docs/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application.md)
+## See also
+
+- [Walkthrough: Creating an Accessible Windows-based Application](walkthrough-creating-an-accessible-windows-based-application.md)

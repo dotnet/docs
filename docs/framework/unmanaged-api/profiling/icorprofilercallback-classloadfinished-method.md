@@ -15,34 +15,35 @@ helpviewer_keywords:
 ms.assetid: 3dd80fbe-d62d-4d4d-acf8-5b7d0efe607e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ClassLoadFinished Method
 Notifies the profiler that a class has finished loading.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClassLoadFinished(  
     [in] ClassID classId,  
     [in] HRESULT hrStatus);  
 ```  
   
-#### Parameters  
- `classId`  
- [in] Identifies the class that was loaded.  
-  
- `hrStatus`  
- [in] An HRESULT that indicates whether the class loaded successfully.  
-  
+## Parameters
+
+- `classId`
+
+  \[in] Identifies the class that was loaded.
+
+- `hrStatus`
+
+  \[in] An HRESULT that indicates whether the class loaded successfully.
+
 ## Remarks  
  The value of `classId` is not valid for an information request until the `ClassLoadFinished` method is called.  
   
  Some parts of loading the class might continue after the `ClassLoadFinished` callback. A failure HRESULT in `hrStatus` indicates a failure. However, a success HRESULT in `hrStatus` indicates only that the first part of loading the class has succeeded.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -50,6 +51,7 @@ HRESULT ClassLoadFinished(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassLoadStarted Method](icorprofilercallback-classloadstarted-method.md)

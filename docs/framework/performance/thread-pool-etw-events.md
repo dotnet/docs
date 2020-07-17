@@ -1,28 +1,26 @@
 ---
 title: "Thread Pool ETW Events"
+description: Review thread pool ETW events, which collect information about threads in .NET. Thread pool events are worker thread pool events or I/O thread pool events.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "thread pool events [.NET Framework]"
   - "ETW, thread pool events (CLR)"
 ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Thread Pool ETW Events
-<a name="top"></a> These events collect information about worker and I/O threads.  
+These events collect information about worker and I/O threads.  
   
  There are two groups of thread pool events:  
   
--   [Worker thread pool events](#worker), which provide information about how an application uses the thread pool, and the effect of workloads on concurrency control.  
+- [Worker thread pool events](#worker-thread-pool-events), which provide information about how an application uses the thread pool, and the effect of workloads on concurrency control.  
   
--   [I/O thread pool events](#io), which provide information about I/O threads that are created, retired, unretired, or terminated in the thread pool.  
-  
-<a name="worker"></a>   
-## Worker Thread Pool Events  
+- [I/O thread pool events](#io-thread-events), which provide information about I/O threads that are created, retired, unretired, or terminated in the thread pool.  
+
+## Worker Thread Pool Events
  These events relate to the runtime's worker thread pool and provide notifications for thread events (for example, when a thread is created or stopped). The worker thread pool uses an adaptive algorithm for concurrency control, where the number of threads is calculated based on the measured throughput. Worker thread pool events can be used to understand how an application is using the thread pool, and the effect that certain workloads may have on concurrency control.  
   
 ### ThreadPoolWorkerThreadStart and ThreadPoolWorkerThreadStop  
- The following table shows the keyword and level for these events. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the keyword and level for these events. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -118,10 +116,7 @@ ms.author: "mairaw"
 |NewcontrolSetting|win:Double|The number of active worker threads that will serve as the baseline for future variations in active thread count.|  
 |NewThreadWaveMagnitude|Win:UInt16|The magnitude of future variations in active thread count.|  
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
-  
-<a name="io"></a>   
+
 ## I/O Thread Events  
  These thread pool events occur for threads in the I/O thread pool (completion ports), which is asynchronous.  
   
@@ -199,7 +194,7 @@ ms.author: "mairaw"
   
 |Event|Event ID|Raised when|  
 |-----------|--------------|-----------------|  
-|`IOThreadTerminate`|45|An I/O thread is created in the thread pool.|  
+|`IOThreadTerminate`|45|An I/O thread is terminated in the thread pool.|  
   
  The following table shows the event data.  
   
@@ -209,5 +204,6 @@ ms.author: "mairaw"
 |NumRetired|win:UInt64|Number of retired I/O threads.|  
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
-## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+## See also
+
+- [CLR ETW Events](clr-etw-events.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 00e2e194-12f5-436e-a997-2b9d3e844d4f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod::GetFileNameFromOffset Method
 Gets the file name for the line associated with an offset.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFileNameFromOffset(  
     [in]  ULONG32  dwOffset,  
     [in]  ULONG32  cchName,  
@@ -32,7 +30,7 @@ HRESULT GetFileNameFromOffset(
        length_is(*pcchName)] WCHAR szName[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwOffset`  
  [in] A `ULONG32` that contains the offset.  
   
@@ -51,5 +49,6 @@ HRESULT GetFileNameFromOffset(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## See also
+
+- [ISymENCUnmanagedMethod Interface](isymencunmanagedmethod-interface.md)

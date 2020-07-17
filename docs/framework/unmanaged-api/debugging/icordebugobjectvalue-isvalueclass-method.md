@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 13d89a4a-5d9d-4a79-9600-5e2a98c3d166
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugObjectValue::IsValueClass Method
 Gets a value that indicates whether this object value is a value type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsValueClass (  
     [out] BOOL               *pbIsValueClass  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbIsValueClass`  
  [out] A pointer to a Boolean value that is `true` if the object value, represented by this "ICorDebugObjectValue", is a value type rather than a reference type; otherwise, `pbIsValueClass` is `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -42,6 +40,4 @@ HRESULT IsValueClass (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
-    
- 
+## See also

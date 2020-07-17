@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4a16374c-94b0-47b0-9fed-88c2b0cdccd4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetPublicKeyToken Method
 Retrieves the public key token for a given keyfile or key container.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPublicKeyToken(  
     LPCWSTR pszKeyFile,  
     LPCWSTR pszKeyContainer,  
@@ -31,7 +29,7 @@ HRESULT GetPublicKeyToken(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszKeyFile`  
  Filename of the key.  
   
@@ -50,7 +48,8 @@ HRESULT GetPublicKeyToken(
 ## Requirements  
  Requires alink.h.  
   
-## See Also  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

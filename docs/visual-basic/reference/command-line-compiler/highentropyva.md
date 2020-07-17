@@ -1,5 +1,5 @@
 ---
-title: "-highentropyva (Visual Basic)"
+title: "-highentropyva"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "highentropyva compiler option (Visual Basic)"
@@ -7,11 +7,11 @@ helpviewer_keywords:
 ms.assetid: ff25f20a-6ca2-467b-9e52-5cf439f5028e
 ---
 # -highentropyva (Visual Basic)
-Indicates whether a 64-bit executable or an executable that's marked by the [/platform:anycpu](../../../visual-basic/reference/command-line-compiler/platform.md) compiler option supports high entropy Address Space Layout Randomization (ASLR).  
+Indicates whether a 64-bit executable or an executable that's marked by the [-platform:anycpu](platform.md) compiler option supports high entropy Address Space Layout Randomization (ASLR).  
   
 ## Syntax  
   
-```  
+```console  
 -highentropyva[+ | -]  
 ```  
   
@@ -24,6 +24,7 @@ Indicates whether a 64-bit executable or an executable that's marked by the [/pl
   
  When the option is on, the target executable and any modules on which it depends must be able to handle pointer values that are larger than 4 gigabytes (GB) when those modules are running as 64-bit processes.  
   
-## See Also  
- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)  
- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+## See also
+
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

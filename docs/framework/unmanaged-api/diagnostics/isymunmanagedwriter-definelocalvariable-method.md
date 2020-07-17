@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6fab8a58-3883-490f-8b27-64042c90f104
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::DefineLocalVariable Method
 Defines a single variable in the current lexical scope. This method can be called multiple times for a variable of the same name that has multiple homes throughout a scope. In this case, however, the values of the `startOffset` and `endOffset` parameters must not overlap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineLocalVariable(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  
@@ -37,7 +35,7 @@ HRESULT DefineLocalVariable(
     [in] ULONG32      endOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `name`  
  [in] A pointer to a `WCHAR` that defines the local variable name.  
   
@@ -74,7 +72,8 @@ HRESULT DefineLocalVariable(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)  
- [DefineGlobalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-defineglobalvariable-method.md)  
- [DefineLocalVariable2 Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-definelocalvariable2-method.md)
+## See also
+
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)
+- [DefineGlobalVariable Method](isymunmanagedwriter-defineglobalvariable-method.md)
+- [DefineLocalVariable2 Method](isymunmanagedwriter2-definelocalvariable2-method.md)

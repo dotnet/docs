@@ -1,0 +1,30 @@
+﻿<Window x:Class="IntroToStylingAndTemplating.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntroToStylingAndTemplating"
+        mc:Ignorable="d"
+        Title="Window5" Height="450" Width="800">
+    <!--<SnippetPropertyTrigger>-->
+    <Window.Resources>
+        <!-- .... other resources .... -->
+
+        <Style TargetType="ListBoxItem">
+            <Setter Property="Opacity" Value="0.5" />
+            <Setter Property="MaxHeight" Value="75" />
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Trigger.Setters>
+                        <Setter Property="Opacity" Value="1.0" />
+                    </Trigger.Setters>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <!--</SnippetPropertyTrigger>-->
+    <StackPanel>
+        <TextBlock>My Pictures</TextBlock>
+        <TextBlock>Check out my new pictures!</TextBlock>
+    </StackPanel>
+</Window>

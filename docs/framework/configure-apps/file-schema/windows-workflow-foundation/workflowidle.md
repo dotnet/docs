@@ -1,17 +1,18 @@
 ---
-title: "&lt;workflowIdle&gt;"
+title: "<workflowIdle>"
 ms.date: "03/30/2017"
 ms.topic: "reference"
 ms.assetid: b2ef703c-3e01-4213-9d2e-c14c7dba94d2
 ---
-# &lt;workflowIdle&gt;
+# \<workflowIdle>
 A service behavior that controls when idle workflow instances are unloaded and persisted.  
   
-\<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<workflowIdle>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.ServiceModel>**](system-servicemodel-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors-of-workflow.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<workflowIdle>**  
   
 ## Syntax  
   
@@ -19,7 +20,7 @@ A service behavior that controls when idle workflow instances are unloaded and p
 <behaviors>
   <serviceBehaviors>
     <behavior name="String">
-      <workflowIdle timeToPersist="TimeSpan" 
+      <workflowIdle timeToPersist="TimeSpan"
                     timeToUnload="TimeSpan" />
     </behavior>
   </serviceBehaviors>
@@ -43,8 +44,9 @@ A service behavior that controls when idle workflow instances are unloaded and p
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior> of \<serviceBehaviors>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
+|[\<behavior> of \<serviceBehaviors>](behavior-of-servicebehaviors-of-workflow.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior>  
- <xref:System.ServiceModel.Activities.Configuration.WorkflowIdleElement>
+## See also
+
+- <xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior>
+- <xref:System.ServiceModel.Activities.Configuration.WorkflowIdleElement>

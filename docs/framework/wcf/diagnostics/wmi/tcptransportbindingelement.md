@@ -58,5 +58,6 @@ class TcpTransportBindingElement : ConnectionOrientedTransportBindingElement
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
+## See also
+
+- <xref:System.ServiceModel.Channels.TcpTransportBindingElement>

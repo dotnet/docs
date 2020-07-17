@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c0765321-656c-441e-bab5-58176292be1e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSemaphore Interface
 Represents the host's implementation of a semaphore for threading.  
@@ -24,11 +22,11 @@ Represents the host's implementation of a semaphore for threading.
   
 |Method|Description|  
 |------------|-----------------|  
-|[ReleaseSemaphore Method](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-releasesemaphore-method.md)|Increases the count of the current `IHostSemaphore` instance by the specified amount.|  
-|[Wait Method](../../../../docs/framework/unmanaged-api/hosting/ihostsemaphore-wait-method.md)|Causes the current `IHostSemaphore` instance to wait until it is owned or the specified amount of time elapses.|  
+|[ReleaseSemaphore Method](ihostsemaphore-releasesemaphore-method.md)|Increases the count of the current `IHostSemaphore` instance by the specified amount.|  
+|[Wait Method](ihostsemaphore-wait-method.md)|Causes the current `IHostSemaphore` instance to wait until it is owned or the specified amount of time elapses.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,9 +34,10 @@ Represents the host's implementation of a semaphore for threading.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostAutoEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-interface.md)  
- [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostAutoEvent Interface](ihostautoevent-interface.md)
+- [IHostManualEvent Interface](ihostmanualevent-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

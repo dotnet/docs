@@ -27,16 +27,16 @@ Propagation happens when ServiceModel activity tracing is enabled (ServiceModel 
   
  If `propagateActivity`=`true` and `ActivityTracing`=`off` for a ServiceModel trace listener (regardless of whether tracing is enabled on ServiceModel), the following happen on either the client or server:  
   
--   On operation request or sending response, the activity ID in TLS is propagated out of user code until a message is formed. An activity ID header is also inserted into the message before it is sent.  
+- On operation request or sending response, the activity ID in TLS is propagated out of user code until a message is formed. An activity ID header is also inserted into the message before it is sent.  
   
--   On receiving request or receiving response, the activity ID is retrieved from the message header as soon as the received message object is created. The activity ID in TLS is propagated as soon as the message disappears from scope until user code is reached.  
+- On receiving request or receiving response, the activity ID is retrieved from the message header as soon as the received message object is created. The activity ID in TLS is propagated as soon as the message disappears from scope until user code is reached.  
   
  These actions guarantee that user traces will appear in the same activity if propagation is on. However, it makes no guarantee on ServiceModel traces. ServiceModel traces occur in a user code activity only if the processing of those traces is executed on the same thread where the user code activity was set.  
   
  In general, ServiceModel traces can be observed in the following places:  
   
--   If ServiceModel tracing is disabled, all emitted traces appear in user activities. If propagation is enabled at both the server and client, these traces will be in the same activity.  
+- If ServiceModel tracing is disabled, all emitted traces appear in user activities. If propagation is enabled at both the server and client, these traces will be in the same activity.  
   
--   If ServiceModel tracing is enabled, but ActivityTracing is disabled, user traces appear in the same activity if propagation is enabled on both ends. ServiceModel traces appear in the default 0000 activity, unless they occur in the same thread as the user code processing where the activity is initially set.  
+- If ServiceModel tracing is enabled, but ActivityTracing is disabled, user traces appear in the same activity if propagation is enabled on both ends. ServiceModel traces appear in the default 0000 activity, unless they occur in the same thread as the user code processing where the activity is initially set.  
   
--   If both ServiceModel tracing and ActivityTracing are enabled, user traces appear in user-defined activities, and ServiceModel traces appear in ServiceModel-defined activities. Propagation happens at ServiceModel level.
+- If both ServiceModel tracing and ActivityTracing are enabled, user traces appear in user-defined activities, and ServiceModel traces appear in ServiceModel-defined activities. Propagation happens at ServiceModel level.

@@ -14,23 +14,21 @@ helpviewer_keywords:
 ms.assetid: e5323fa4-18ac-424d-859d-a65a550d08d9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost2 Interface
 Provides methods for obtaining information about the garbage collection system and for controlling some aspects of garbage collection.  
   
 > [!NOTE]
->  For new development, we recommend that you use the [ICLRGCManager2](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager2-interface.md) interface instead.  
+> For new development, we recommend that you use the [ICLRGCManager2](iclrgcmanager2-interface.md) interface instead.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetGCStartupLimitsEx Method](../../../../docs/framework/unmanaged-api/hosting/igchost2-setgcstartuplimitsex-method.md)|Sets the segment size and the maximum size for generation 0. Enables generation 0 and segment sizes larger than `DWORD`.|  
+|[SetGCStartupLimitsEx Method](igchost2-setgcstartuplimitsex-method.md)|Sets the segment size and the maximum size for generation 0. Enables generation 0 and segment sizes larger than `DWORD`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   
@@ -38,7 +36,8 @@ Provides methods for obtaining information about the garbage collection system a
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)  
- [CorRuntimeHost Coclass](../../../../docs/framework/unmanaged-api/hosting/corruntimehost-coclass.md)
+## See also
+
+- [Hosting Interfaces](hosting-interfaces.md)
+- [CLR Hosting Interfaces](clr-hosting-interfaces.md)
+- [CorRuntimeHost Coclass](corruntimehost-coclass.md)

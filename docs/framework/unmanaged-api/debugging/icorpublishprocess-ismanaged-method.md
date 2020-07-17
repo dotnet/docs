@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 06b1f7cc-acdf-47a6-9d53-d9dec2424152
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess::IsManaged Method
-Gets a value that indicates whether the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) is known to have managed code.  
+Gets a value that indicates whether the process referenced by this [ICorPublishProcess](icorpublishprocess-interface.md) is known to have managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsManaged (  
     [out] BOOL   *pbManaged  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbManaged`  
  [out] A pointer to a Boolean value that indicates whether the process has managed code. The value is `true` if the process has managed code; otherwise, `false`.  
   
@@ -37,7 +35,7 @@ HRESULT IsManaged (
  Since the current version of `ICorPublishProcess` allows access only to processes that have managed code, `IsManaged` always returns `true`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -45,5 +43,6 @@ HRESULT IsManaged (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)
+## See also
+
+- [ICorPublishProcess Interface](icorpublishprocess-interface.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6d1dc41b-8aa2-4889-bb00-1cbccc00c123
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess Interface
 Provides methods that access information to be displayed about a process.  
@@ -24,13 +22,13 @@ Provides methods that access information to be displayed about a process.
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumAppDomains Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-enumappdomains-method.md)|Gets an [ICorPublishAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md) instance that contains the application domains in the process referenced by this `ICorPublishProcess`.|  
-|[GetDisplayName Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-getdisplayname-method.md)|Gets the full path of the executable for the process referenced by this `ICorPublishProcess`.|  
-|[GetProcessID Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-getprocessid-method.md)|Gets the operating system identifier for the process referenced by this `ICorPublishProcess`.|  
-|[IsManaged Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-ismanaged-method.md)|Gets a value that indicates whether the process referenced by this `ICorPublishProcess` is known to be running managed code.|  
+|[EnumAppDomains Method](icorpublishprocess-enumappdomains-method.md)|Gets an [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md) instance that contains the application domains in the process referenced by this `ICorPublishProcess`.|  
+|[GetDisplayName Method](icorpublishprocess-getdisplayname-method.md)|Gets the full path of the executable for the process referenced by this `ICorPublishProcess`.|  
+|[GetProcessID Method](icorpublishprocess-getprocessid-method.md)|Gets the operating system identifier for the process referenced by this `ICorPublishProcess`.|  
+|[IsManaged Method](icorpublishprocess-ismanaged-method.md)|Gets a value that indicates whether the process referenced by this `ICorPublishProcess` is known to be running managed code.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -38,6 +36,7 @@ Provides methods that access information to be displayed about a process.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [CorpubPublish Coclass](corpubpublish-coclass.md)

@@ -35,19 +35,19 @@ application.Load(id);
   
 ```csharp  
 static string bkName = "bkName";  
-static void Main(string[] args)   
+static void Main(string[] args)
 {  
     StartAndUnloadInstance();  
 }  
   
-static void StartAndUnloadInstance()   
+static void StartAndUnloadInstance()
 {  
     AutoResetEvent waitHandler = new AutoResetEvent(false);  
     WorkflowApplication wfApp = new WorkflowApplication(GetDelayedWF());  
     SqlWorkflowInstanceStore instanceStore = SetupSqlpersistenceStore();  
     wfApp.InstanceStore = instanceStore;  
     wfApp.Extensions.Add(SetupMyFileTrackingParticipant);  
-    wfApp.PersistableIdle = (e) => {          ///persists application state and remove it from memory   
+    wfApp.PersistableIdle = (e) => {          ///persists application state and remove it from memory
     return PersistableIdleAction.Unload;  
     };  
     wfApp.Unloaded = (e) => {  
@@ -59,12 +59,12 @@ static void StartAndUnloadInstance()
     LoadAndCompleteInstance(id);  
 }  
   
-static void LoadAndCompleteInstance(Guid id)   
-{            
+static void LoadAndCompleteInstance(Guid id)
+{
     Console.WriteLine("Press <enter> to load the persisted workflow");  
     Console.ReadLine();  
     AutoResetEvent waitHandler = new AutoResetEvent(false);  
-    WorkflowApplication wfApp = new WorkflowApplication(new Workflow1());  
+    WorkflowApplication wfApp = new WorkflowApplication(GetDelayedWF());  
     wfApp.InstanceStore =  
         new SqlWorkflowInstanceStore(ConfigurationManager.AppSettings["SqlWF4PersistenceConnectionString"].ToString());  
     wfApp.Completed = (workflowApplicationCompletedEventArgs) => {  
@@ -80,7 +80,7 @@ static void LoadAndCompleteInstance(Guid id)
     waitHandler.WaitOne();  
 }  
   
-public static Activity GetDelayedWF()   
+public static Activity GetDelayedWF()
 {  
     return new Sequence {  
         Activities ={  
@@ -91,8 +91,8 @@ public static Activity GetDelayedWF()
     };  
 }  
   
-private static SqlWorkflowInstanceStore SetupSqlpersistenceStore()   
-{   
+private static SqlWorkflowInstanceStore SetupSqlpersistenceStore()
+{
      string connectionString = ConfigurationManager.AppSettings["SqlWF4PersistenceConnectionString"].ToString();  
     SqlWorkflowInstanceStore sqlWFInstanceStore = new SqlWorkflowInstanceStore(connectionString);  
     sqlWFInstanceStore.InstanceCompletionAction = InstanceCompletionAction.DeleteAll;  

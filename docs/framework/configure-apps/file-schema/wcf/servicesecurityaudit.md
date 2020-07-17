@@ -1,25 +1,25 @@
 ---
-title: "&lt;serviceSecurityAudit&gt;"
+title: "<serviceSecurityAudit>"
 ms.date: "03/30/2017"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
 ---
-# &lt;serviceSecurityAudit&gt;
+# \<serviceSecurityAudit>
 Specifies settings that enable auditing of security events during service operations.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<serviceSecurityAudit>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<serviceSecurityAudit>**  
   
 ## Syntax  
   
 ```xml  
-<serviceSecurityAudit   
-   auditLogLocation="Default/Application/Security"  
-   messageAuthenticationAuditLevel= None/Success/Failure/SuccessOrFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"  
-   suppressAuditFailure="Boolean"  
-/>  
+<serviceSecurityAudit auditLogLocation="Default/Application/Security"
+                      messageAuthenticationAuditLevel="None/Success/Failure/SuccessOrFailure"
+                      serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"
+                      suppressAuditFailure="Boolean" />
 ```  
   
 ## Attributes and Elements  
@@ -41,14 +41,14 @@ Specifies settings that enable auditing of security events during service operat
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
  This configuration element is used to audit Windows Communication Foundation (WCF) authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
   
- For a detailed example of using this configuration element, see [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md).  
+ For a detailed example of using this configuration element, see [Service Auditing Behavior](../../../wcf/samples/service-auditing-behavior.md).  
   
- By default, on Windows XP the audit events can be seen in the Application Log; while on Windows Server 2003 and Windows Vista, the audit events can be seen in the Security Log. The location of audit events can be specified by setting the `auditLogLocation` attribute to 'Application' or 'Security'. For more information, see [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md). If the events are written in the Security Log, the LocalSecurityPolicy-> Enable Object Access should be set for "Success" and "Failure".  
+ By default, on Windows XP the audit events can be seen in the Application Log; while on Windows Server 2003 and Windows Vista, the audit events can be seen in the Security Log. The location of audit events can be specified by setting the `auditLogLocation` attribute to 'Application' or 'Security'. For more information, see [How to: Audit Security Events](../../../wcf/feature-details/how-to-audit-wcf-security-events.md). If the events are written in the Security Log, the LocalSecurityPolicy-> Enable Object Access should be set for "Success" and "Failure".  
   
  When looking at the event log, the source of the audit events is "ServiceModel Audit 3.0.0.0". Message authentication audit records have a category of "MessageAuthentication" while service authorization audit records have a category of 'ServiceAuthorization'.  
   
@@ -59,22 +59,25 @@ Specifies settings that enable auditing of security events during service operat
 ## Example  
   
 ```xml  
-<system.serviceModel>  
-   <serviceBehaviors>  
-      <behavior name="NewBehavior">  
-         <serviceSecurityAudit auditLogLocation="Application"   
-             suppressAuditFailure="true"  
-             serviceAuthorizationAuditLevel="Success"   
-             messageAuthenticationAuditLevel="Success" />  
-      </behavior>  
-   </serviceBehaviors>  
-</behaviors>  
+<system.serviceModel>
+  <behaviors>
+    <serviceBehaviors>
+      <behavior name="NewBehavior">
+        <serviceSecurityAudit auditLogLocation="Application"
+                              suppressAuditFailure="true"
+                              serviceAuthorizationAuditLevel="Success"
+                              messageAuthenticationAuditLevel="Success" />
+      </behavior>
+    </serviceBehaviors>
+  </behaviors>
+</system.serviceModel>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>  
- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>  
- [Security Behaviors](../../../../../docs/framework/wcf/feature-details/security-behaviors-in-wcf.md)  
- [Auditing](../../../../../docs/framework/wcf/feature-details/auditing-security-events.md)  
- [How to: Audit Security Events](../../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)  
- [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md)
+## See also
+
+- <xref:System.ServiceModel.Configuration.ServiceSecurityAuditElement>
+- <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
+- [Security Behaviors](../../../wcf/feature-details/security-behaviors-in-wcf.md)
+- [Auditing](../../../wcf/feature-details/auditing-security-events.md)
+- [How to: Audit Security Events](../../../wcf/feature-details/how-to-audit-wcf-security-events.md)
+- [Service Auditing Behavior](../../../wcf/samples/service-auditing-behavior.md)

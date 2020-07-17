@@ -1,0 +1,8 @@
+﻿<NavigationWindow x:Uid="NavigationWindow_1" x:Class="MicrosoftSaudiArabiaHomepage.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  SizeToContent="WidthAndHeight"    
+  Source="Homepage.xaml"
+  FlowDirection="LeftToRight"
+  Localization.Comments="FlowDirection (This FlowDirection controls the FlowDirection of the navigation bar and window title bar)">
+</NavigationWindow>

@@ -1,1 +1,0 @@
-Windows Internet Explorer 7

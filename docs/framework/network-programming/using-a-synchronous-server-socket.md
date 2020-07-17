@@ -1,5 +1,6 @@
 ---
 title: "Using a Synchronous Server Socket"
+description: This example shows a synchronous server socket in .NET Framework, which suspends an application until a connection request is received on the socket.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -69,7 +70,8 @@ handler.Shutdown(SocketShutdown.Both);
 handler.Close();  
 ```  
   
-## See Also  
- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)  
- [Synchronous Server Socket Example](../../../docs/framework/network-programming/synchronous-server-socket-example.md)  
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)
+## See also
+
+- [Using an Asynchronous Server Socket](using-an-asynchronous-server-socket.md)
+- [Synchronous Server Socket Example](synchronous-server-socket-example.md)
+- [Listening with Sockets](listening-with-sockets.md)

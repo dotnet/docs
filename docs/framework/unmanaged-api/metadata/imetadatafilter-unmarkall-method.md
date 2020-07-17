@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: a04d91dc-690f-4de8-8c97-55c69a8503b4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataFilter::UnmarkAll Method
 Removes the processing marks from all the tokens in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnmarkAll ();  
 ```  
   
-#### Parameters  
+## Parameters  
  `UnmarkAll` takes no parameters.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -39,5 +37,6 @@ HRESULT UnmarkAll ();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataFilter Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatafilter-interface.md)
+## See also
+
+- [IMetaDataFilter Interface](imetadatafilter-interface.md)

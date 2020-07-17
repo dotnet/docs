@@ -1,5 +1,5 @@
 ---
-title: "F-P Statements (Visual Basic)"
+title: "F-P Statements"
 ms.date: 07/20/2015
 ms.assetid: cdce7ab0-c52e-4d33-a29b-bf32cdacc79f
 ---
@@ -8,14 +8,15 @@ The following table contains a listing of Visual Basic language statements.
   
 |||||  
 |---|---|---|---|  
-|[For Each...Next](../../../visual-basic/language-reference/statements/for-each-next-statement.md)|[For...Next](../../../visual-basic/language-reference/statements/for-next-statement.md)|[Function](../../../visual-basic/language-reference/statements/function-statement.md)|[Get](../../../visual-basic/language-reference/statements/get-statement.md)|  
-|[GoTo](../../../visual-basic/language-reference/statements/goto-statement.md)|[If...Then...Else](../../../visual-basic/language-reference/statements/if-then-else-statement.md)|[Implements](../../../visual-basic/language-reference/statements/implements-statement.md)|[Imports (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)|  
-|[Imports (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md)|[Inherits](../../../visual-basic/language-reference/statements/inherits-statement.md)|[Interface](../../../visual-basic/language-reference/statements/interface-statement.md)|[Mid](../../../visual-basic/language-reference/statements/mid-statement.md)|  
-|[Module](../../../visual-basic/language-reference/statements/module-statement.md)|[Namespace](../../../visual-basic/language-reference/statements/namespace-statement.md)|[On Error](../../../visual-basic/language-reference/statements/on-error-statement.md)|[Operator](../../../visual-basic/language-reference/statements/operator-statement.md)|  
-|[Option \<keyword>](../../../visual-basic/language-reference/statements/option-keyword-statement.md)|[Option Compare](../../../visual-basic/language-reference/statements/option-compare-statement.md)|[Option Explicit](../../../visual-basic/language-reference/statements/option-explicit-statement.md)|[Option Infer](../../../visual-basic/language-reference/statements/option-infer-statement.md)|  
-|[Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md)|[Property](../../../visual-basic/language-reference/statements/property-statement.md)|||  
+|[For Each...Next](for-each-next-statement.md)|[For...Next](for-next-statement.md)|[Function](function-statement.md)|[Get](get-statement.md)|  
+|[GoTo](goto-statement.md)|[If...Then...Else](if-then-else-statement.md)|[Implements](implements-statement.md)|[Imports (.NET Namespace and Type)](imports-statement-net-namespace-and-type.md)|  
+|[Imports (XML Namespace)](imports-statement-xml-namespace.md)|[Inherits](inherits-statement.md)|[Interface](interface-statement.md)|[Mid](mid-statement.md)|  
+|[Module](module-statement.md)|[Namespace](namespace-statement.md)|[On Error](on-error-statement.md)|[Operator](operator-statement.md)|  
+|[Option \<keyword>](option-keyword-statement.md)|[Option Compare](option-compare-statement.md)|[Option Explicit](option-explicit-statement.md)|[Option Infer](option-infer-statement.md)|  
+|[Option Strict](option-strict-statement.md)|[Property](property-statement.md)|||  
   
-## See Also  
- [A-E Statements](../../../visual-basic/language-reference/statements/a-e-statements.md)  
- [Q-Z Statements](../../../visual-basic/language-reference/statements/q-z-statements.md)  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
+## See also
+
+- [A-E Statements](a-e-statements.md)
+- [Q-Z Statements](q-z-statements.md)
+- [Visual Basic Language Reference](../index.md)

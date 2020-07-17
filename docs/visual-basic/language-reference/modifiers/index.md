@@ -1,5 +1,5 @@
 ---
-title: "Modifiers (Visual Basic)"
+title: "Modifiers"
 ms.date: 07/20/2015
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
 ---
@@ -7,81 +7,79 @@ ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
 The topics in this section document Visual Basic run-time modifiers.  
   
 ## In This Section  
- [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md)  
+ [Ansi](ansi.md)  
   
- [Assembly](../../../visual-basic/language-reference/modifiers/assembly.md)  
+ [Assembly](assembly.md)  
   
- [Async](../../../visual-basic/language-reference/modifiers/async.md)  
+ [Async](async.md)  
   
- [Auto](../../../visual-basic/language-reference/modifiers/auto.md)  
+ [Auto](auto.md)  
   
- [ByRef](../../../visual-basic/language-reference/modifiers/byref.md)  
+ [ByRef](byref.md)  
   
- [ByVal](../../../visual-basic/language-reference/modifiers/byval.md)  
+ [ByVal](byval.md)  
   
- [Default](../../../visual-basic/language-reference/modifiers/default.md)  
+ [Default](default.md)  
   
- [Friend](../../../visual-basic/language-reference/modifiers/friend.md)  
+ [Friend](friend.md)  
   
- [In](../../../visual-basic/language-reference/modifiers/in-generic-modifier.md)  
+ [In](in-generic-modifier.md)  
   
- [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md)  
+ [Iterator](iterator.md)  
   
- [Key](../../../visual-basic/language-reference/modifiers/key.md)  
+ [Key](key.md)  
   
- [Module \<keyword>](../../../visual-basic/language-reference/modifiers/module-keyword.md)  
+ [Module \<keyword>](module-keyword.md)  
   
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
+ [MustInherit](mustinherit.md)  
   
- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)  
+ [MustOverride](mustoverride.md)  
   
- [Narrowing](../../../visual-basic/language-reference/modifiers/narrowing.md)  
+ [Narrowing](narrowing.md)  
   
- [NotInheritable](../../../visual-basic/language-reference/modifiers/notinheritable.md)  
+ [NotInheritable](notinheritable.md)  
   
- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)  
+ [NotOverridable](notoverridable.md)  
   
- [Optional](../../../visual-basic/language-reference/modifiers/optional.md)  
+ [Optional](optional.md)  
   
- [Out](../../../visual-basic/language-reference/modifiers/out-generic-modifier.md)  
+ [Out](out-generic-modifier.md)  
   
- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)  
+ [Overloads](overloads.md)  
   
- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)  
+ [Overridable](overridable.md)  
   
- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)  
+ [Overrides](overrides.md)  
   
- [ParamArray](../../../visual-basic/language-reference/modifiers/paramarray.md)  
+ [ParamArray](paramarray.md)  
   
- [Partial](../../../visual-basic/language-reference/modifiers/partial.md)  
+ [Partial](partial.md)  
   
- [Private](../../../visual-basic/language-reference/modifiers/private.md)  
+ [Private](private.md)  
   
- [Private Protected](../../../visual-basic/language-reference/modifiers/private-protected.md)  
+ [Private Protected](private-protected.md)  
   
- [Protected](../../../visual-basic/language-reference/modifiers/protected.md)  
+ [Protected](protected.md)  
 
- [Protected Friend](../../../visual-basic/language-reference/modifiers/protected-friend.md)  
+ [Protected Friend](protected-friend.md)  
   
- [Public](../../../visual-basic/language-reference/modifiers/public.md)  
+ [Public](public.md)  
   
- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)  
+ [ReadOnly](readonly.md)  
   
- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)  
+ [Shadows](shadows.md)  
   
- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)  
+ [Shared](shared.md)  
   
- [Static](../../../visual-basic/language-reference/modifiers/static.md)  
+ [Static](static.md)  
   
- [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)  
+ [Unicode](unicode.md)  
   
- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)  
+ [Widening](widening.md)  
   
- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)  
+ [WithEvents](withevents.md)  
   
- [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md)  
+ [WriteOnly](writeonly.md)  
   
 ## Related Sections  
- [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
-  
- [Visual Basic](../../../visual-basic/index.md)
+ [Visual Basic Language Reference](../index.md)  

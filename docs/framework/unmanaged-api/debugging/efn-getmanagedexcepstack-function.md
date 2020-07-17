@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 21ceed9e-62b2-4024-b027-6d095109955a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# _EFN_GetManagedExcepStack Function
+# \_EFN\_GetManagedExcepStack Function
 Given a managed exception object address, returns a string version of the stack trace contained inside.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT _EFN_GetManagedExcepStack(  
     [in]  PDEBUG_CLIENT Client,  
     [in]  ULONG64       StackObjAddr,  
@@ -31,7 +29,7 @@ HRESULT _EFN_GetManagedExcepStack(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `Client`  
  [in] The client being debugged.  
   
@@ -48,11 +46,12 @@ HRESULT _EFN_GetManagedExcepStack(
  If there is no managed code on the thread currently in context, the function returns HRESULT SOS_E_NOMANAGEDCODE with a facility value of 0xa0 and an error code of 0x1000.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** SOS_Stacktrace.h  
   
  **.NET Framework Version:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+## See also
+
+- [Debugging Global Static Functions](debugging-global-static-functions.md)

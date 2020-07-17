@@ -1,23 +1,26 @@
 ---
-title: "How My Depends on Project Type (Visual Basic)"
+title: "How My Depends on Project Type"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "_MYTYPE"
 ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 ---
 # How My Depends on Project Type (Visual Basic)
+
 `My` exposes only those objects required by a particular project type. For example, the `My.Forms` object is available in a Windows Forms application but not available in a console application. This topic describes which `My` objects are available in different project types.  
   
 ## My in Windows Applications and Web Sites  
+
  `My` exposes only objects that are useful in the current project type; it suppresses objects that are not applicable. For example, the following image shows the `My` object model in a Windows Forms project.  
   
- ![Shape of My in a Windows Forms application](../../../visual-basic/developing-apps/development-with-my/media/myinwinform.png "MyInWinForm")  
+ ![Diagram that shows the My object model in a Windows Forms application.](./media/how-my-depends-on-project-type/my-object-model-windows-forms.png)  
   
  In a Web site project, `My` exposes objects that are relevant to a Web developer (such as the `My.Request` and `My.Response` objects) while suppressing objects that are not relevant (such as the `My.Forms` object). The following image shows the `My` object model in a Web site project:  
   
- ![Shape of My in a Web application](../../../visual-basic/developing-apps/development-with-my/media/myinweb.png "MyInWeb")  
+ ![Diagram that shows the My object model in a Web application.](./media/how-my-depends-on-project-type/my-object-model-web.png)  
   
 ## Project Details  
+
  The following table shows which `My` objects are enabled by default for eight project types: Windows application, class Library, console application, Windows control library, Web control library, Windows service, empty, and Web site.  
   
  There are three versions of the `My.Application` object, two versions of the `My.Computer` object, and two versions of `My.User` object; details about these versions are given in the footnotes after the table.  
@@ -49,15 +52,16 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
   
  <sup>7</sup> Web version of `My.User`. This object is associated with the user identity of the application's current HTTP request.  
   
-## See Also  
- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>  
- <xref:Microsoft.VisualBasic.Devices.Computer>  
- <xref:Microsoft.VisualBasic.Logging.Log>  
- <xref:Microsoft.VisualBasic.ApplicationServices.User>  
- [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)  
- [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)  
- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)  
- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)  
- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)  
- [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)  
- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+## See also
+
+- <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
+- <xref:Microsoft.VisualBasic.Devices.Computer>
+- <xref:Microsoft.VisualBasic.Logging.Log>
+- <xref:Microsoft.VisualBasic.ApplicationServices.User>
+- [Customizing Which Objects are Available in My](../customizing-extending-my/customizing-which-objects-are-available-in-my.md)
+- [Conditional Compilation](../../programming-guide/program-structure/conditional-compilation.md)
+- [-define (Visual Basic)](../../reference/command-line-compiler/define.md)
+- [My.Forms Object](../../language-reference/objects/my-forms-object.md)
+- [My.Request Object](../../language-reference/objects/my-request-object.md)
+- [My.Response Object](../../language-reference/objects/my-response-object.md)
+- [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)

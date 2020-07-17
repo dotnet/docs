@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6c1d15c1-a80a-4ee9-b1e4-6e859db6575a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostAutoEvent Interface
 Provides a representation of the host's implementation of an auto-reset event.  
@@ -24,11 +22,11 @@ Provides a representation of the host's implementation of an auto-reset event.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Set Method](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-set-method.md)|Sets the current `IHostAutoEvent` instance to a signaled state.|  
-|[Wait Method](../../../../docs/framework/unmanaged-api/hosting/ihostautoevent-wait-method.md)|Causes the current `IHostAutoEvent` instance to wait until the event is owned or a specified amount of time elapses.|  
+|[Set Method](ihostautoevent-set-method.md)|Sets the current `IHostAutoEvent` instance to a signaled state.|  
+|[Wait Method](ihostautoevent-wait-method.md)|Causes the current `IHostAutoEvent` instance to wait until the event is owned or a specified amount of time elapses.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -36,8 +34,9 @@ Provides a representation of the host's implementation of an auto-reset event.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)  
- [IHostManualEvent Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md)  
- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostManualEvent Interface](ihostmanualevent-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

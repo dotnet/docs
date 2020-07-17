@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 85b85fde-1f87-490b-ba8d-d604670959c3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLR_DEBUGGING_PROCESS_FLAGS Enumeration
-Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-openvirtualprocess-method.md) method.  
+Provides values that are used by the [ICLRDebugging::OpenVirtualProcess](iclrdebugging-openvirtualprocess-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CLR_DEBUGGING_PROCESS_FLAGS  
 {  
    CLR_DEBUGGING_MANAGED_EVENT_PENDING = 1,  
@@ -43,7 +41,7 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
  The `CLR_DEBUGGING_MANAGED_EVENT_DEBUGGER_LAUNCH` flag enables the runtime to differentiate between a terminating exception and a request to attach a managed debugger that can be canceled.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Metahost.idl, Metahost.h  
   
@@ -51,6 +49,7 @@ typedef enum CLR_DEBUGGING_PROCESS_FLAGS
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Enumerations](debugging-enumerations.md)
+- [Debugging](index.md)

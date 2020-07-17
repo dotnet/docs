@@ -19,12 +19,13 @@ A procedure is declared with an optional parameter that uses a type parameter th
   
 ## To correct this error  
   
--   Constrain the type parameter to accept only a reference type, or do not use it for the optional parameter.  
+- Constrain the type parameter to accept only a reference type, or do not use it for the optional parameter.  
   
-## See Also  
- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)  
- [Type List](../../../visual-basic/language-reference/statements/type-list.md)  
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)  
- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)  
- [Nothing](../../../visual-basic/language-reference/nothing.md)
+## See also
+
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [Type List](../statements/type-list.md)
+- [Class Statement](../statements/class-statement.md)
+- [Optional Parameters](../../programming-guide/language-features/procedures/optional-parameters.md)
+- [Structures](../../programming-guide/language-features/data-types/structures.md)
+- [Nothing](../nothing.md)

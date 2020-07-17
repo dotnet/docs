@@ -9,19 +9,19 @@ ms.assetid: 1f5ce46b-e259-4bc9-a0b9-89d06fc9341c
 # Trusted Subsystem
 A client accesses one or more Web services that are distributed across a network. The Web services are designed so that access to additional resources (such as databases or other Web services) is encapsulated in the business logic of the Web service. These resources must be protected against unauthorized access. The following illustration depicts a trusted subsystem process.  
   
- ![Trusted subsystem](../../../../docs/framework/wcf/feature-details/media/wcfc-trustedsubsystemc.gif "wcfc_TrustedSubsystemc")  
+ ![Trusted subsystem](media/wcfc-trustedsubsystemc.gif "wcfc_TrustedSubsystemc")  
   
  The following steps describe the trusted subsystem process as illustrated:  
   
-1.  The client submits a request to the trusted subsystem, along with credentials.  
+1. The client submits a request to the trusted subsystem, along with credentials.  
   
-2.  The trusted subsystem authenticates and authorizes the user.  
+2. The trusted subsystem authenticates and authorizes the user.  
   
-3.  The trusted subsystem sends a request message to the remote resource. This request is accompanied by the credentials for the trusted subsystem (or the service account under which the trusted subsystem process is being executed).  
+3. The trusted subsystem sends a request message to the remote resource. This request is accompanied by the credentials for the trusted subsystem (or the service account under which the trusted subsystem process is being executed).  
   
-4.  The back-end resource authenticates and authorizes the trusted subsystem. It then processes the request and issues a response to the trusted subsystem.  
+4. The back-end resource authenticates and authorizes the trusted subsystem. It then processes the request and issues a response to the trusted subsystem.  
   
-5.  The trusted subsystem processes the response and issues its own response to the client.  
+5. The trusted subsystem processes the response and issues its own response to the client.  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -32,7 +32,7 @@ A client accesses one or more Web services that are distributed across a network
 |Integrity|Yes|  
 |Confidentiality|Yes|  
 |Transport|HTTP between client and the trusted subsystem service.<br /><br /> NET.TCP between trusted subsystem service and the resource (back-end service).|  
-|Binding|<xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
+|Binding|<xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.NetTcpBinding>[\<wsFederationHttpBinding>](../../configure-apps/file-schema/wcf/wsfederationhttpbinding.md)|  
   
 ## Resource (Back-End Service)  
   
@@ -116,7 +116,7 @@ A client accesses one or more Web services that are distributed across a network
       </service>  
     </services>  
     <client>  
-      <endpoint name=""   
+      <endpoint name=""
                 address="net.tcp://contoso.com:8001/BackendService"  
                 binding="customBinding"  
                 bindingConfiguration="ClientBinding"  
@@ -173,7 +173,7 @@ A client accesses one or more Web services that are distributed across a network
 <configuration>  
   <system.serviceModel>  
     <client>  
-        <endpoint name=""   
+        <endpoint name=""
                   address="http://www.cohowinery.com:8000/FacadeService"  
                   binding="wsHttpBinding"  
                   bindingConfiguration="Binding1"  
@@ -204,6 +204,7 @@ A client accesses one or more Web services that are distributed across a network
 </configuration>  
 ```  
   
-## See Also  
- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)  
- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+## See also
+
+- [Security Overview](security-overview.md)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

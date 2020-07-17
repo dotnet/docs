@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: aa26df07-e0a6-4608-bdef-d4afafec89aa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugArrayValue::HasBaseIndicies Method
 Gets a value that indicates whether any dimensions of this array have a base index of non-zero.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HasBaseIndicies (  
     [out] BOOL    *pbHasBaseIndicies  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbHasBaseIndicies`  
  [out] A pointer to a Boolean value that is `true` if one or more dimensions of this `ICorDebugArrayValue` object have a base index of non-zero; otherwise, the Boolean value is `false`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

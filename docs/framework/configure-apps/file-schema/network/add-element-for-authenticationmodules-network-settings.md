@@ -1,5 +1,6 @@
 ---
-title: "&lt;add&gt; Element for authenticationModules (Network Settings)"
+title: "<add> Element for authenticationModules (Network Settings)"
+description: The <add> network settings element for connectionManagement adds an IP address or DNS name to the connection management list in the .NET Framework.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#add"
@@ -11,19 +12,19 @@ helpviewer_keywords:
   - "<add> element, authenticationModules"
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
 ---
-# &lt;add&gt; Element for authenticationModules (Network Settings)
+# \<add> Element for authenticationModules (Network Settings)
 Adds an authentication module to the application.  
-  
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<add>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+
 ## Syntax  
   
 ```xml  
 <add
-  type="type_fullname, assembly_fullname"   
+  type="type_fullname, assembly_fullname"
 />  
 ```  
   
@@ -43,7 +44,7 @@ Adds an authentication module to the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
  The `add` element adds an authentication module to the end of the list of registered authentication modules. Authentication modules are called in the order in which they were added to the list.  
@@ -75,7 +76,8 @@ Adds an authentication module to the application.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.IAuthenticationModule>  
-- <xref:System.Net.AuthenticationManager>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
+- [Network Settings Schema](index.md)

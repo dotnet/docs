@@ -22,7 +22,7 @@ Console.WriteLine(doc.Root.Parent == null);
   
  This example produces the following output:  
   
-```  
+```output  
 True  
 True  
 ```  
@@ -48,7 +48,7 @@ Console.WriteLine(xmlTree.Nodes().OfType<XText>().Count());
   
  This example produces the following output:  
   
-```  
+```output  
 1  
 1  
 2  
@@ -65,12 +65,12 @@ XText textNode = xmlTree.Nodes().OfType<XText>().First();
 textNode.Value = "";  
   
 XText textNode2 = xmlTree.Nodes().OfType<XText>().First();  
-Console.WriteLine(">>{0}<<", textNode2);   
+Console.WriteLine(">>{0}<<", textNode2);
 ```  
   
  This example produces the following output:  
   
-```  
+```output  
 >><<  
 ```  
   
@@ -83,7 +83,7 @@ XElement child1 = new XElement("Child1",
 );  
 XElement child2 = new XElement("Child2");  
 Console.WriteLine(child1);  
-Console.WriteLine(child2);   
+Console.WriteLine(child2);
 ```  
   
  This example produces the following output:  
@@ -110,7 +110,7 @@ foreach (XAttribute att in root.Attributes())
   
  This example produces the following output:  
   
-```  
+```output  
 xmlns="http://www.adventure-works.com"  IsNamespaceDeclaration:True  
 xmlns:fc="www.fourthcoffee.com"  IsNamespaceDeclaration:True  
 AnAttribute="abc"  IsNamespaceDeclaration:False  
@@ -133,12 +133,12 @@ XDocument root = XDocument.Parse(
 Console.WriteLine(root.Nodes().OfType<XText>().Count());  
   
 // count the white-space child nodes using XPathEvaluate  
-Console.WriteLine(((IEnumerable)root.XPathEvaluate("text()")).OfType<XText>().Count());   
+Console.WriteLine(((IEnumerable)root.XPathEvaluate("text()")).OfType<XText>().Count());
 ```  
   
  This example produces the following output:  
   
-```  
+```output  
 3  
 0  
 ```  
@@ -160,12 +160,9 @@ Console.WriteLine(doc.Nodes().Count());
   
  This example produces the following output:  
   
-```  
+```output  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <Root />  
 1  
 ```  
   
-## See Also
-
-- [Advanced LINQ to XML Programming (C#)](../../../../csharp/programming-guide/concepts/linq/advanced-linq-to-xml-programming.md)

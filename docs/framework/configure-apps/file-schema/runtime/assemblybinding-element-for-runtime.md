@@ -1,5 +1,5 @@
 ---
-title: "&lt;assemblyBinding&gt; Element for &lt;runtime&gt;"
+title: "<assemblyBinding> Element for <runtime>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/assemblyBinding"
@@ -8,20 +8,18 @@ helpviewer_keywords:
   - "assemblyBinding element"
   - "container tags, <assemblyBinding> element"
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# &lt;assemblyBinding&gt; Element for &lt;runtime&gt;
+# \<assemblyBinding> Element for \<runtime>
 Contains information about assembly version redirection and the locations of assemblies.  
   
- \<configuration>  
-\<runtime>  
-\<assemblyBinding>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<assemblyBinding>**  
   
 ## Syntax  
   
 ```xml  
-      <assemblyBinding    
+      <assemblyBinding
    xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
 </assemblyBinding>  
 ```  
@@ -40,10 +38,10 @@ Contains information about assembly version redirection and the locations of ass
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<dependentAssembly>](../../../../../docs/framework/configure-apps/file-schema/runtime/dependentassembly-element.md)|Encapsulates binding policy and assembly location for an assembly. Use one **\<dependentAssembly>** tag for each assembly.|  
-|[\<probing>](../../../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md)|Specifies subdirectories the common language runtime searches when loading assemblies.|  
-|[\<publisherPolicy>](../../../../../docs/framework/configure-apps/file-schema/runtime/publisherpolicy-element.md)|Specifies whether the runtime applies publisher policy.|  
-|[\<qualifyAssembly>](../../../../../docs/framework/configure-apps/file-schema/runtime/qualifyassembly-element.md)|Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.|  
+|[\<dependentAssembly>](dependentassembly-element.md)|Encapsulates binding policy and assembly location for an assembly. Use one **\<dependentAssembly>** tag for each assembly.|  
+|[\<probing>](probing-element.md)|Specifies subdirectories the common language runtime searches when loading assemblies.|  
+|[\<publisherPolicy>](publisherpolicy-element.md)|Specifies whether the runtime applies publisher policy.|  
+|[\<qualifyAssembly>](qualifyassembly-element.md)|Specifies the full name of the assembly that should be dynamically loaded when a partial name is used.|  
   
 ### Parent Elements  
   
@@ -78,7 +76,7 @@ Contains information about assembly version redirection and the locations of ass
 ```xml  
 <runtime>  
    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
-      <dependentAssembly>   
+      <dependentAssembly>
          <assemblyIdentity name="mscorcfg" publicKeyToken="b03f5f7f11d50a3a" culture=""/>  
          <bindingRedirect oldVersion="0.0.0.0-65535.65535.65535.65535" newVersion="1.0.3300.0"/>  
       </dependentAssembly>  
@@ -86,7 +84,8 @@ Contains information about assembly version redirection and the locations of ass
 </runtime>  
 ```  
   
-## See Also  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Redirecting Assembly Versions](../../../../../docs/framework/configure-apps/redirect-assembly-versions.md)
+## See also
+
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [Redirecting Assembly Versions](../../redirect-assembly-versions.md)

@@ -1,5 +1,5 @@
 ---
-title: "Modifying Large-Value (max) Data in ADO.NET"
+title: "Modifying Large-Value (max) Data"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,18 +13,18 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
  The following table provides links to the documentation in SQL Server Books Online.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1.  [Using Large-Value Data Types](https://go.microsoft.com/fwlink/?LinkId=120498)  
+1. [Using Large-Value Data Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
   
 ## Large-Value Type Restrictions  
  The following restrictions apply to the `max` data types, which do not exist for smaller data types:  
   
--   A `sql_variant` cannot contain a large `varchar` data type.  
+- A `sql_variant` cannot contain a large `varchar` data type.  
   
--   Large `varchar` columns cannot be specified as a key column in an index. They are allowed in an included column in a non-clustered index.  
+- Large `varchar` columns cannot be specified as a key column in an index. They are allowed in an included column in a non-clustered index.  
   
--   Large `varchar` columns cannot be used as partitioning key columns.  
+- Large `varchar` columns cannot be used as partitioning key columns.  
   
 ## Working with Large-Value Types in Transact-SQL  
  The Transact-SQL `OPENROWSET` function is a one-time method of connecting and accessing remote data. It includes all of the connection information necessary to access remote data from an OLE DB data source. `OPENROWSET` can be referenced in the FROM clause of a query as though it were a table name. It can also be referenced as the target table of an INSERT, UPDATE, or DELETE statement, subject to the capabilities of the OLE DB provider.  
@@ -35,14 +35,14 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
  The following example inserts a photo into the ProductPhoto table in the AdventureWorks sample database. When using the `BULK OPENROWSET` provider, you must supply the named list of columns even if you aren't inserting values into every column. The primary key in this case is defined as an identity column, and may be omitted from the column list. Note that you must also supply a correlation name at the end of the `OPENROWSET` statement, which in this case is ThumbnailPhoto. This correlates with the column in the `ProductPhoto` table into which the file is being loaded.  
   
-```  
+```sql  
 INSERT Production.ProductPhoto (  
-    ThumbnailPhoto,   
-    ThumbnailPhotoFilePath,   
-    LargePhoto,   
+    ThumbnailPhoto,
+    ThumbnailPhotoFilePath,
+    LargePhoto,
     LargePhotoFilePath)  
 SELECT ThumbnailPhoto.*, null, null, N'tricycle_pink.gif'  
-FROM OPENROWSET   
+FROM OPENROWSET
     (BULK 'c:\images\tricycle.jpg', SINGLE_BLOB) ThumbnailPhoto  
 ```  
   
@@ -67,12 +67,12 @@ FROM OPENROWSET
 |`@Length` is NULL|The update operation removes all data from `@Offset` to the end of the `column_name` value.|  
   
 > [!NOTE]
->  Neither `@Offset` nor `@Length` can be a negative number.  
+> Neither `@Offset` nor `@Length` can be a negative number.  
   
 ## Example  
  This Transact-SQL example updates a partial value in DocumentSummary, an `nvarchar(max)` column in the Document table in the AdventureWorks database. The word 'components' is replaced by the word 'features' by specifying the replacement word, the beginning location (offset) of the word to be replaced in the existing data, and the number of characters to be replaced (length). The example includes SELECT statements before and after the UPDATE statement to compare results.  
   
-```  
+```sql
 USE AdventureWorks;  
 GO  
 --View the existing value.  
@@ -87,7 +87,7 @@ GO
 UPDATE Production.Document  
 SET DocumentSummary .WRITE (N'features',28,10)  
 WHERE DocumentID = 3 ;  
-GO   
+GO
 --View the modified value.  
 SELECT DocumentSummary  
 FROM Production.Document  
@@ -224,8 +224,8 @@ while (reader.Read())
 ## Using Large Value Type Parameters  
  Large value types can be used in <xref:System.Data.SqlClient.SqlParameter> objects the same way you use smaller value types in <xref:System.Data.SqlClient.SqlParameter> objects. You can retrieve large value types as <xref:System.Data.SqlClient.SqlParameter> values, as shown in the following example. The code assumes that the following GetDocumentSummary stored procedure exists in the AdventureWorks sample database. The stored procedure takes an input parameter named @DocumentID and returns the contents of the DocumentSummary column in the @DocumentSummary output parameter.  
   
-```  
-CREATE PROCEDURE GetDocumentSummary   
+```sql
+CREATE PROCEDURE GetDocumentSummary
 (  
     @DocumentID int,  
     @DocumentSummary nvarchar(MAX) OUTPUT  
@@ -243,8 +243,9 @@ WHERE   DocumentID=@DocumentID
  [!code-csharp[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/CS/source.cs#1)]
  [!code-vb[DataWorks LargeValueType.Param#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks LargeValueType.Param/VB/source.vb#1)]  
   
-## See Also  
- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [SQL Server Data Type Mappings](../../../../../docs/framework/data/adonet/sql-server-data-type-mappings.md)  
- [SQL Server Data Operations in ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-operations.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
+- [SQL Server Data Type Mappings](../sql-server-data-type-mappings.md)
+- [SQL Server Data Operations in ADO.NET](sql-server-data-operations.md)
+- [ADO.NET Overview](../ado-net-overview.md)

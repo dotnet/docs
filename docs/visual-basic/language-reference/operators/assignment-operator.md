@@ -1,5 +1,5 @@
 ---
-title: "= Operator (Visual Basic)"
+title: "= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Assign"
@@ -14,7 +14,7 @@ Assigns a value to a variable or property.
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty = value  
 ```  
   
@@ -26,28 +26,29 @@ variableorproperty = value
  Any literal, constant, or expression.  
   
 ## Remarks  
- The element on the left side of the equal sign (`=`) can be a simple scalar variable, a property, or an element of an array. The variable or property cannot be [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md). The `=` operator assigns the value on its right to the variable or property on its left.  
+ The element on the left side of the equal sign (`=`) can be a simple scalar variable, a property, or an element of an array. The variable or property cannot be [ReadOnly](../modifiers/readonly.md). The `=` operator assigns the value on its right to the variable or property on its left.  
   
 > [!NOTE]
->  The `=` operator is also used as a comparison operator. For details, see [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md).  
+> The `=` operator is also used as a comparison operator. For details, see [Comparison Operators](comparison-operators.md).  
   
 ## Overloading  
- The `=` operator can be overloaded only as a relational comparison operator, not as an assignment operator. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+ The `=` operator can be overloaded only as a relational comparison operator, not as an assignment operator. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  The following example demonstrates the assignment operator. The value on the right is assigned to the variable on the left.  
   
- [!code-vb[VbVbalrOperators#9](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/assignment-operator_1.vb)]  
+ [!code-vb[VbVbalrOperators#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#9)]  
   
-## See Also  
- [&= Operator](../../../visual-basic/language-reference/operators/and-assignment-operator.md)  
- [*= Operator](../../../visual-basic/language-reference/operators/multiplication-assignment-operator.md)  
- [+= Operator](../../../visual-basic/language-reference/operators/addition-assignment-operator.md)  
- [-= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/subtraction-assignment-operator.md)  
- [/= Operator (Visual Basic)](../../../visual-basic/language-reference/operators/floating-point-division-assignment-operator.md)  
- [\\= Operator](../../../visual-basic/language-reference/operators/integer-division-assignment-operator.md)  
- [^= Operator](../../../visual-basic/language-reference/operators/exponentiation-assignment-operator.md)  
- [Statements](../../../visual-basic/programming-guide/language-features/statements.md)  
- [Comparison Operators](../../../visual-basic/language-reference/operators/comparison-operators.md)  
- [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md)  
- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+## See also
+
+- [&= Operator](and-assignment-operator.md)
+- [*= Operator](multiplication-assignment-operator.md)
+- [+= Operator](addition-assignment-operator.md)
+- [-= Operator (Visual Basic)](subtraction-assignment-operator.md)
+- [/= Operator (Visual Basic)](floating-point-division-assignment-operator.md)
+- [\\= Operator](integer-division-assignment-operator.md)
+- [^= Operator](exponentiation-assignment-operator.md)
+- [Statements](../../programming-guide/language-features/statements.md)
+- [Comparison Operators](comparison-operators.md)
+- [ReadOnly](../modifiers/readonly.md)
+- [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md)

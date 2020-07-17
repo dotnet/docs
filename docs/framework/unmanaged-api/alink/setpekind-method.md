@@ -14,24 +14,22 @@ helpviewer_keywords:
 ms.assetid: 050e77ee-3014-45c0-9e29-2ebe29347b0d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetPEKind Method
 Determines the portable executable type, either machine-specific or machine-agnostic.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPEKind(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  
     DWORD dwPEKind,  
     DWORD dwMachine  
-) PURE;   
+) PURE;
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   
@@ -39,7 +37,7 @@ HRESULT SetPEKind(
  Token of file for which the PE type is to be set. Can be NULL if `AssemblyID` does not indicate an unbound netmodule.  
   
  `dwPEKind`  
- The type of PE, as indicated by the [CorPEKind Enumeration](../../../../docs/framework/unmanaged-api/metadata/corpekind-enumeration.md).  
+ The type of PE, as indicated by the [CorPEKind Enumeration](../metadata/corpekind-enumeration.md).  
   
  `dwMachine`  
  The target machine architecture, as indicated in the NT header.  
@@ -50,8 +48,9 @@ HRESULT SetPEKind(
 ## Requirements  
  Requires alink.h.  
   
-## See Also  
- [GetPEKind Method](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-getpekind-method.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+
+- [GetPEKind Method](../metadata/imetadataimport2-getpekind-method.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [IALink Interface](ialink-interface.md)
+- [ALink API](index.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;authenticationModules&gt; Element (Network Settings)"
+title: "<authenticationModules> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#authenticationModules"
@@ -9,17 +9,17 @@ helpviewer_keywords:
   - "<authenticationModules> element"
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
 ---
-# &lt;authenticationModules&gt; Element (Network Settings)
+# \<authenticationModules> Element (Network Settings)
 Specifies modules used to authenticate network requests.  
-  
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<authenticationModules>**
+
 ## Syntax  
   
 ```xml  
-<authenticationModules>   
+<authenticationModules>
 </authenticationModules>  
 ```  
   
@@ -33,15 +33,15 @@ Specifies modules used to authenticate network requests.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[add](../../../../../docs/framework/configure-apps/file-schema/network/add-element-for-authenticationmodules-network-settings.md)|Adds an authentication module to the application.|  
-|[clear](../../../../../docs/framework/configure-apps/file-schema/network/clear-element-for-authenticationmodules-network-settings.md)|Clears all authentication modules from the application.|  
-|[remove](../../../../../docs/framework/configure-apps/file-schema/network/remove-element-for-authenticationmodules-network-settings.md)|Removes an authentication module from the application.|  
+|[add](add-element-for-authenticationmodules-network-settings.md)|Adds an authentication module to the application.|  
+|[clear](clear-element-for-authenticationmodules-network-settings.md)|Clears all authentication modules from the application.|  
+|[remove](remove-element-for-authenticationmodules-network-settings.md)|Removes an authentication module from the application.|  
   
 ### Parent Elements  
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[system.net](../../../../../docs/framework/configure-apps/file-schema/network/system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
+|[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Remarks  
  The `authenticationModule` element specifies the authentication modules that conduct the authentication process with a server. An authentication module must implement the <xref:System.Net.IAuthenticationModule> interface.  
@@ -63,7 +63,8 @@ Specifies modules used to authenticate network requests.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.IAuthenticationModule>  
-- <xref:System.Net.AuthenticationManager>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
+- [Network Settings Schema](index.md)

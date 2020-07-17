@@ -1,5 +1,5 @@
 ---
-title: "In Clause (Visual Basic)"
+title: "In Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.In"
@@ -13,13 +13,14 @@ Specifies the group that the loop variable is to traverse in a `For Each` loop, 
 ## Remarks  
  The `In` keyword can be used in the following contexts:  
   
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
+ [For Each...Next Statement](for-each-next-statement.md)  
   
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
+ [From Clause](../queries/from-clause.md)  
   
- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
+ [Join Clause](../queries/join-clause.md)  
   
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Group Join Clause](../queries/group-join-clause.md)  
   
-## See Also  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Keywords](../keywords/index.md)

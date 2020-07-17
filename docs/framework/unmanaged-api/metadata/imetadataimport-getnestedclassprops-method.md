@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 704d19f1-bdef-4745-af8c-6476eb246fb3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetNestedClassProps Method
 Gets the TypeDef token for the parent <xref:System.Type> of the specified nested type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNestedClassProps (  
    [in]   mdTypeDef      tdNestedClass,  
    [out]  mdTypeDef      *ptdEnclosingClass  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `tdNestedClass`  
  [in] A TypeDef token representing the <xref:System.Type> to return the parent class token for.  
   
@@ -38,7 +36,7 @@ HRESULT GetNestedClassProps (
  [out] A pointer to the TypeDef token for the <xref:System.Type> that `tdNestedClass` is nested in.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,6 +44,7 @@ HRESULT GetNestedClassProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

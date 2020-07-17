@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4ef83bd2-3d8e-499e-8a12-d9d6fd6ced30
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedBinder3::GetReaderFromCallback Method
 Allows the user to implement or supply via callback either an `IID_IDiaReadExeAtRVACallback` or `IID_IDiaReadExeAtOffsetCallback` to obtain the debug directory information from memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReaderFromCallback(  
     [in]  IUnknown     *importer,  
     [in]  const WCHAR  *fileName,  
@@ -33,7 +31,7 @@ HRESULT GetReaderFromCallback(
     [out,retval] ISymUnmanagedReader  **pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `importer`  
  [in] A pointer to the metadata import interface.  
   
@@ -44,13 +42,13 @@ HRESULT GetReaderFromCallback(
  [in] A pointer to the search path.  
   
  `searchPolicy`  
- [in] A value of the [CorSymSearchPolicyAttributes](../../../../docs/framework/unmanaged-api/diagnostics/corsymsearchpolicyattributes-enumeration.md) enumeration that specifies the policy to be used when doing a search for a symbol reader.  
+ [in] A value of the [CorSymSearchPolicyAttributes](corsymsearchpolicyattributes-enumeration.md) enumeration that specifies the policy to be used when doing a search for a symbol reader.  
   
  `callback`  
  [in] A pointer to the callback function.  
   
  `pRetVal`  
- [out] A pointer that is set to the returned [ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md) interface.  
+ [out] A pointer that is set to the returned [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
@@ -58,5 +56,6 @@ HRESULT GetReaderFromCallback(
 ## Requirements  
  **Header:** CorSym.idl  
   
-## See Also  
- [ISymUnmanagedBinder3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedbinder3-interface.md)
+## See also
+
+- [ISymUnmanagedBinder3 Interface](isymunmanagedbinder3-interface.md)

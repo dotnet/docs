@@ -1,5 +1,5 @@
 ---
-title: "My.User Object (Visual Basic)"
+title: "My.User Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.User property"
@@ -12,13 +12,14 @@ Provides access to information about the current user.
 ## Remarks  
  For information about the methods and properties of the `My.User` object, see <xref:Microsoft.VisualBasic.ApplicationServices.User?displayProperty=nameWithType>.  
   
- For more information, see [Accessing User Data](../../../visual-basic/developing-apps/programming/accessing-user-data.md).  
+ For more information, see [Accessing User Data](../../developing-apps/programming/accessing-user-data.md).  
   
 ## Requirements  
  **Assembly:** Visual Basic Runtime Library (in Microsoft.VisualBasic.dll)  
   
-## See Also  
- <xref:System.Security.Principal.IPrincipal>  
- <xref:System.Threading.Thread.CurrentPrincipal%2A>  
- <xref:System.Web.HttpContext.User%2A>  
- <xref:System.Web.HttpContext.Current%2A>
+## See also
+
+- <xref:System.Security.Principal.IPrincipal>
+- <xref:System.Threading.Thread.CurrentPrincipal%2A>
+- <xref:System.Web.HttpContext.User%2A>
+- <xref:System.Web.HttpContext.Current%2A>

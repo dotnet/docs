@@ -2,6 +2,8 @@
 title: Interpreting Expressions
 description: Learn how to write code to examine the structure of an expression tree.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
+
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 
@@ -9,7 +11,7 @@ ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 
 [Previous -- Executing Expressions](expression-trees-execution.md)
 
-Now, let's write some code to examine the structure of an 
+Now, let's write some code to examine the structure of an
 *expression tree*. Every node in an expression tree will be
 an object of a class that is derived from `Expression`.
 
@@ -22,7 +24,7 @@ child node, repeat the process used at the root node: determine the
 type, and if the type has children, visit each of the children.
 
 ## Examining an Expression with No Children
-Let's start by visiting each node in a very simple expression tree.
+Let's start by visiting each node in a simple expression tree.
 Here's the code that creates a constant expression and then
 examines its properties:
 
@@ -36,7 +38,7 @@ Console.WriteLine($"The value of the constant value is {constant.Value}");
 
 This will print the following:
 
-```
+```output
 This is an Constant expression type
 The type of the constant value is System.Int32
 The value of the constant value is 24
@@ -55,11 +57,10 @@ Expression<Func<int>> sum = () => 1 + 2;
 ```
 
 > I'm not using `var` to declare this expression tree, as it is not possible
-> because the right-hand side of the assignment is implicitly typed. To understand
-> this more deeply, read [here](implicitly-typed-lambda-expressions.md).
+> because the right-hand side of the assignment is implicitly typed.
 
 The root node is a `LambdaExpression`. In order to get the interesting
-code on the right hand side of the `=>` operator, you need to find one
+code on the right-hand side of the `=>` operator, you need to find one
 of the children of the `LambdaExpression`. We'll do that with all the
 expressions in this section. The parent node does help us find the return
 type of the `LambdaExpression`.
@@ -91,7 +92,7 @@ Console.WriteLine($"\tParameter Type: {right.Type.ToString()}, Name: {right.Name
 
 This sample prints the following output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -230,7 +231,7 @@ public class ConstantVisitor : Visitor
 ```
 
 This algorithm is the basis of an algorithm that can visit
-any arbitrary `LambdaExpression`. There are a lot of holes,
+any arbitrary `LambdaExpression`. There are many holes,
 namely that the code I created only looks for a very small
 sample of the possible sets of expression tree nodes that
 it may encounter. However, you can still learn quite a bit
@@ -241,7 +242,7 @@ is encountered. That way, you know to add a new expression type.)
 When you run this visitor on the addition expression shown above, you get the
 following output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -276,7 +277,7 @@ Before you run this on the visitor algorithm, try a thought
 exercise to work out what the output might be. Remember that
 the `+` operator is a *binary operator*: it must have two
 children, representing the left and right operands. There
-are several possible ways to construct a tree that 
+are several possible ways to construct a tree that
 could be correct:
 
 ```csharp
@@ -292,11 +293,10 @@ You can see the separation into two possible answers to highlight the
 most promising. The first represents *right associative*
 expressions. The second represent *left associative* expressions.
 The advantage of both of those two formats is that the format scales
-to any arbitrary number of addition expressions. 
+to any arbitrary number of addition expressions.
 
-If you do run this expression through the visitor, you will see this
-this output, verifying that the simple addition expression is
-*left associative*. 
+If you do run this expression through the visitor, you will see this output, verifying that the simple addition expression is
+*left associative*.
 
 In order to run this sample, and see the full expression tree, I had to
 make one change to the source expression tree. When the expression tree
@@ -311,7 +311,7 @@ Expression<Func<int, int>> sum = (a) => 1 + a + 3 + 4;
 
 Create a visitor for this sum and run the visitor you'll see this output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -352,7 +352,7 @@ Expression<Func<int, int, int>> sum3 = (a, b) => (1 + a) + (3 + b);
 
 Here's the output from the visitor:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -397,23 +397,23 @@ complicated expression. Let's make it work for this:
 
 ```csharp
 Expression<Func<int, int>> factorial = (n) =>
-    n == 0 ? 
-    1 : 
+    n == 0 ?
+    1 :
     Enumerable.Range(1, n).Aggregate((product, factor) => product * factor);
 ```
 
 This code represents one possible implementation for the
 mathematical *factorial* function. The way I've written this code highlights
-two limitiations of building expression trees by assigning lambda expressions
+two limitations of building expression trees by assigning lambda expressions
 to Expressions. First, statement lambdas are not allowed. That means I can't use
 loops, blocks, if / else statements, and other control structures common in C#. I'm
 limited to using expressions. Second, I can't recursively call the same expression.
-I could if it were already a delegate, but I can't call it in its expression tree 
-form. In the section on [building expression trees](expression-trees-building.md)
+I could if it were already a delegate, but I can't call it in its expression tree
+form. In the section on [building expression trees](expression-trees-building.md),
 you'll learn techniques to overcome these limitations.
 
-
 In this expression, you'll encounter nodes of all these types:
+
 1. Equal (binary expression)
 2. Multiply (binary expression)
 3. Conditional (the ? : expression)
@@ -511,7 +511,7 @@ public class MethodCallVisitor : Visitor
 
 And the output for the expression tree would be:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -570,7 +570,7 @@ The expression body is:
 The samples in this section show the core techniques to visit and
 examine nodes in an expression tree. I glossed over many actions
 you might need in order to concentrate on the core tasks of
-visiting and accessing nodes in an expression tree. 
+visiting and accessing nodes in an expression tree.
 
 First, the visitors only handle constants
 that are integers. Constant values could be any other numeric type,
@@ -580,13 +580,13 @@ capabilities.
 
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
-A full implementation is included in the .NET Standard 
+A full implementation is included in the .NET Standard
 under the name <xref:System.Linq.Expressions.ExpressionVisitor>
 and can handle all the possible node types.
 
 Finally, the library I used in this article was built for demonstration
 and learning. It's not optimized. I wrote it to make the structures
-used very clear, and to highlight the techniques used to visit
+used clear, and to highlight the techniques used to visit
 the nodes and analyze what's there. A production implementation would
 pay more attention to performance than I have.
 

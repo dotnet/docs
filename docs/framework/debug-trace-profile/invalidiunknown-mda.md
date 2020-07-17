@@ -1,5 +1,6 @@
 ---
 title: "invalidIUnknown MDA"
+description: Review the invalidIUnknown managed debugging assistant (MDA), which is activated when an invalid IUnknown pointer is passed to managed code from native code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), invalid IUnknown pointer"
@@ -8,8 +9,6 @@ helpviewer_keywords:
   - "IUnknown pointers"
   - "managed debugging assistants (MDAs), invalid IUnknown pointer"
 ms.assetid: c7924771-a16b-40fe-b337-ce51dcdf6a12
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # invalidIUnknown MDA
 The `invalidIUnknown` managed debugging assistant (MDA) is activated when an invalid `IUnknown` pointer is passed to managed code from native code. The `IUnknown` fails to return success when queried for the `IUnknown` interface.  
@@ -39,7 +38,8 @@ The `invalidIUnknown` managed debugging assistant (MDA) is activated when an inv
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

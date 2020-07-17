@@ -14,11 +14,11 @@ The <xref:System.Windows.Controls.ContextMenu> allows a control to display a <xr
   
  The following figure illustrates a <xref:System.Windows.Controls.ContextMenu> in two different states: the default state and the open state. In the default state, the control is collapsed. When the right mouse button is pressed over the parent of the menu, the control expands and displays the menu items.  
   
- ![ContextMenu states](../../../../docs/framework/wpf/controls/media/ss-ctl-contextmenu.png "SS_CTL_contextmenu")  
+ ![ContextMenu states](./media/ss-ctl-contextmenu.png "SS_CTL_contextmenu")  
 ContextMenu in different states  
   
 ## In This Section  
- [ContextMenu Overview](../../../../docs/framework/wpf/controls/contextmenu-overview.md)  
+ [ContextMenu Overview](contextmenu-overview.md)  
   
 ## Reference  
  <xref:System.Windows.Controls.ContextMenu>  

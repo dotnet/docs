@@ -7,29 +7,29 @@ ms.assetid: 75515b4a-8d70-44c8-99e0-7423df41380e
 This sample demonstrates the use of a configuration file to make a service discoverable.  
   
 > [!NOTE]
->  This sample implements discovery in configuration. For a sample that implements discovery in code, see [Basic](../../../../docs/framework/wcf/samples/basic-sample.md).  
+> This sample implements discovery in configuration. For a sample that implements discovery in code, see [Basic](basic-sample.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Discovery\Configuration`  
   
 ## Service Configuration  
  The configuration file in this sample demonstrates two features:  
   
--   Making the service discoverable over a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  
+- Making the service discoverable over a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>.  
   
--   Adjusting discovery-related information for the service’s application endpoint and adjusting some of the discovery-related settings on the standard endpoint.  
+- Adjusting discovery-related information for the service’s application endpoint and adjusting some of the discovery-related settings on the standard endpoint.  
   
  To enable discovery, a few changes must be made in the application configuration file for the service:  
   
--   A discovery endpoint must be added to the `<service>` element. This is a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint. This is a system endpoint that the runtime associates with the discovery service. The discovery service listens for messages on this endpoint.  
+- A discovery endpoint must be added to the `<service>` element. This is a standard <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint> endpoint. This is a system endpoint that the runtime associates with the discovery service. The discovery service listens for messages on this endpoint.  
   
--   A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at runtime and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.  
+- A `<serviceDiscovery>` behavior is added to the `<serviceBehaviors>` section. This enables the service to be discovered at runtime and uses the discovery endpoint mentioned previously to listen for discovery `Probe` and `Resolve` messages. With these two additions, the service is discoverable at the discovery endpoint specified.  
   
  The following config snippet shows a service with an application endpoint and a discovery endpoint defined:  
   
@@ -41,8 +41,8 @@ This sample demonstrates the use of a configuration file to make a service disco
                     binding="wsHttpBinding"  
                     contract="Microsoft.Samples.Discovery.ICalculatorService"  
                     behaviorConfiguration="endpointBehaviorConfiguration" />  
-          <endpoint name="udpDiscovery"   
-                    kind="udpDiscoveryEndpoint"   
+          <endpoint name="udpDiscovery"
+                    kind="udpDiscoveryEndpoint"
                 endpointConfiguration="adhocDiscoveryEndpointConfiguration"/>        </service>  
       </services>  
 ```  
@@ -61,9 +61,7 @@ This sample demonstrates the use of a configuration file to make a service disco
   
  This configuration file goes beyond just those simple steps by modifying additional behaviors. It is possible to control discovery-related information by using specific endpoints. That is, a user can control whether an endpoint can be discovered and the user can also mark that endpoint with <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior.Scopes%2A> and custom XML metadata. To do this, the user must add a `behaviorConfiguration` property to the application endpoint. In this case, the following property is added to the application endpoint.  
   
-```  
-behaviorConfiguration="endpointBehaviorConfiguration"  
-```  
+`behaviorConfiguration="endpointBehaviorConfiguration"`  
   
  Now, through the behavior configuration element, you can control discovery-related attributes. In this case, two scopes are added to the application endpoint.  
   
@@ -77,18 +75,18 @@ behaviorConfiguration="endpointBehaviorConfiguration"
               </scopes>  
             </endpointDiscovery>  
   
-          </behavior>            
+          </behavior>
         </endpointBehaviors>  
 ```  
   
- For more information about scopes, see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
+ For more information about scopes, see [Discovery Find and FindCriteria](../feature-details/discovery-find-and-findcriteria.md).  
   
  You can also control specific details of the discovery endpoint. This is done through the <xref:System.ServiceModel.Configuration.StandardEndpointsSection>. In this sample, the version of the protocol used is modified as well as adding a `maxResponseDelay` attribute as shown in the following code example.  
   
 ```xml  
 <standardEndpoints>  
    <udpDiscoveryEndpoint>  
-      <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11" maxResponseDelay="00:00:00.600" />    
+      <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11" maxResponseDelay="00:00:00.600" />
    </udpDiscoveryEndpoint>  
 </standardEndpoints>  
 ```  
@@ -106,7 +104,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
                     binding="wsHttpBinding"  
                     contract="Microsoft.Samples.Discovery.ICalculatorService"  
                     behaviorConfiguration="endpointBehaviorConfiguration" />  
-         <!-- Define the discovery endpoint -->            
+         <!-- Define the discovery endpoint -->
 <endpoint name="udpDiscovery" kind="udpDiscoveryEndpoint" endpointConfiguration="adhocDiscoveryEndpointConfiguration"/>        </service>  
       </services>  
   
@@ -134,7 +132,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
               </scopes>  
             </endpointDiscovery>  
   
-          </behavior>            
+          </behavior>
         </endpointBehaviors>  
   
       </behaviors>  
@@ -142,7 +140,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
       <standardEndpoints>  
         <udpDiscoveryEndpoint>  
          <!-- Configure the UDP discovery endpoint -->  
-          <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11" maxResponseDelay="00:00:00.600" />    
+          <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11" maxResponseDelay="00:00:00.600" />
         </udpDiscoveryEndpoint>  
       </standardEndpoints>  
   
@@ -189,14 +187,14 @@ behaviorConfiguration="endpointBehaviorConfiguration"
  This sample extends this feature and modifies the <xref:System.ServiceModel.Discovery.FindCriteria> used by the client, as well as some properties of the standard `updDiscoveryEndpoint` used for discovery. The <xref:System.ServiceModel.Discovery.FindCriteria> are modified to use a scope and a specific `scopeMatchBy` algorithm, as well as custom termination criteria. Furthermore, the sample also shows how a client can send XML elements using `Probe` messages. Lastly, some changes are made to the <xref:System.ServiceModel.Discovery.UdpDiscoveryEndpoint>, such as the version of the protocol used and UDP-specific settings as shown in the following configuration file.  
   
 ```xml  
-<udpDiscoveryEndpoint>    
-        <!-- Specify the discovery protocol version and UDP transport settings. -->   
+<udpDiscoveryEndpoint>
+        <!-- Specify the discovery protocol version and UDP transport settings. -->
         <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11">  
           <transportSettings duplicateMessageHistoryLength="2048"  
                              maxPendingMessageCount="5"  
                              maxReceivedMessageSize="8192"  
                              maxBufferPoolSize="262144"/>  
-        </standardEndpoint>        
+        </standardEndpoint>
       </udpDiscoveryEndpoint>  
 ```  
   
@@ -218,7 +216,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
     <standardEndpoints>  
   
-      <dynamicEndpoint>        
+      <dynamicEndpoint>
         <standardEndpoint name="dynamicEndpointConfiguration">  
           <discoveryClientSettings>  
             <!-- Controls where the discovery happens. In this case, Probe message is sent over UdpDiscoveryEndpoint. -->  
@@ -235,32 +233,31 @@ behaviorConfiguration="endpointBehaviorConfiguration"
               </extensions>  
             </findCriteria>  
           </discoveryClientSettings>  
-        </standardEndpoint>     
+        </standardEndpoint>
       </dynamicEndpoint>  
   
-      <udpDiscoveryEndpoint>    
-        <!-- Specify the discovery protocol version and UDP transport settings. -->   
+      <udpDiscoveryEndpoint>
+        <!-- Specify the discovery protocol version and UDP transport settings. -->
         <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11">  
           <transportSettings duplicateMessageHistoryLength="2048"  
                              maxPendingMessageCount="5"  
                              maxReceivedMessageSize="8192"  
                              maxBufferPoolSize="262144"/>  
-        </standardEndpoint>        
+        </standardEndpoint>
       </udpDiscoveryEndpoint>  
   
     </standardEndpoints>  
   
-  </system.serviceModel>  
+  </system.serviceModel>
+</configuration>
 ```  
   
 #### To use this sample  
   
-1.  This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added see [Configuring HTTP and HTTPS](https://go.microsoft.com/fwlink/?LinkId=70353) for details. Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
+1. This sample uses HTTP endpoints and to run this sample, proper URL ACLs must be added. For more information, see [Configuring HTTP and HTTPS](../feature-details/configuring-http-and-https.md). Executing the following command at an elevated privilege should add the appropriate ACLs. You may want to substitute your Domain and Username for the following arguments if the command does not work as is. `netsh http add urlacl url=http://+:8000/ user=%DOMAIN%\%UserName%`  
   
-2.  Build the solution.  
+2. Build the solution.  
   
-3.  Run the service executable from the build directory.  
+3. Run the service executable from the build directory.  
   
-4.  Run the client executable. Note that the client is able to locate the service.  
-  
-## See Also
+4. Run the client executable. Note that the client is able to locate the service.  

@@ -1,27 +1,25 @@
 ---
-title: "&lt;loadFromRemoteSources&gt; Element"
+title: "<loadFromRemoteSources> Element"
 ms.date: "05/24/2018"
 helpviewer_keywords: 
   - "loadFromRemoteSources element"
   - "<loadFromRemoteSources> element"
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# &lt;loadFromRemoteSources&gt; element
+# \<loadFromRemoteSources> element
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
   
 > [!NOTE]
->  If you were directed to this topic because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](https://msdn.microsoft.com/library/d8635b63-89a0-41aa-90f4-f351b2111070).  
+> If you were directed to this article because of an error message in the Visual Studio project error list or a build error, see [How to: Use an Assembly from the Web in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ee890038(v=vs.100)).  
   
- \<configuration>  
-\<runtime>  
-\<loadFromRemoteSources>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<loadFromRemoteSources>**  
   
 ## Syntax  
   
 ```xml  
-<loadFromRemoteSources    
+<loadFromRemoteSources
    enabled="true|false"/>  
 ```  
   
@@ -58,17 +56,17 @@ In the .NET Framework 3.5 and earlier versions, if you load an assembly from a r
 Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. By default, if you attempt to load a remote assembly, a <xref:System.IO.FileLoadException> with an exception message like the following is thrown:
 
 ```text
-System.IO.FileNotFoundException: Could not load file or assembly 'file:assem.dll' or one of its dependencies. Operation is not supported. 
+System.IO.FileNotFoundException: Could not load file or assembly 'file:assem.dll' or one of its dependencies. Operation is not supported.
 (Exception from HRESULT: 0x80131515)
-File name: 'file:assem.dll' ---> 
-System.NotSupportedException: An attempt was made to load an assembly from a network location which would have caused the assembly 
-to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, 
-so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch. 
+File name: 'file:assem.dll' --->
+System.NotSupportedException: An attempt was made to load an assembly from a network location which would have caused the assembly
+to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default,
+so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch.
 ```
 
 To load the assembly and execute its code, you must either:
 
-- Explicitly create a sandbox for the assembly (see [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
+- Explicitly create a sandbox for the assembly (see [How to: Run Partially Trusted Code in a Sandbox](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)).
 
 - Run the assembly's code in full trust. You do this by configuring the `<loadFromRemoteSources>` element. It lets you specify that the assemblies that run in partial trust in earlier versions of the .NET Framework now run in full trust in the .NET Framework 4 and later versions.
 
@@ -91,11 +89,11 @@ Setting the `<loadFromRemoteSources>` element to `true` prevents this exception 
 
 - If an application has been copied from the web, it is flagged by Windows as being a web application, even if it resides on the local computer. You can change that designation by changing its file properties, or you can use the `<loadFromRemoteSources>` element to grant the assembly full trust. As an alternative, you can use the <xref:System.Reflection.Assembly.UnsafeLoadFrom%2A> method to load a local assembly that the operating system has flagged as having been loaded from the web.
 
-- You may get a <xref:System.IO.FileLoadException> in an application that is running in a Windows Virtual PC application. This can happen when you try to load a file from linked folders on the hosting computer. It can also occur when you try to load a file from a folder linked over [Remote Desktop Services](https://go.microsoft.com/fwlink/?LinkId=182775) (Terminal Services). To avoid the exception, set `enabled` to `true`.
+- You may get a <xref:System.IO.FileLoadException> in an application that is running in a Windows Virtual PC application. This can happen when you try to load a file from linked folders on the hosting computer. It can also occur when you try to load a file from a folder linked over [Remote Desktop Services](/windows/win32/termserv/terminal-services-portal) (Terminal Services). To avoid the exception, set `enabled` to `true`.
 
 ## Configuration file
 
-This element is typically used in the application configuration file, but can be used in other configuration files depending upon the context. For more information, see the article [More Implicit Uses of CAS Policy: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839) in the .NET Security blog.  
+This element is typically used in the application configuration file, but can be used in other configuration files depending upon the context. For more information, see the article [More Implicit Uses of CAS Policy: loadFromRemoteSources](https://docs.microsoft.com/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources) in the .NET Security blog.  
 
 ## Example
 
@@ -111,8 +109,8 @@ The following example shows how to grant full trust to assemblies loaded from re
 
 ## See also
 
-- [More Implicit Uses of CAS Policy: loadFromRemoteSources](https://go.microsoft.com/fwlink/p/?LinkId=266839)  
-- [How to: Run Partially Trusted Code in a Sandbox](../../../../../docs/framework/misc/how-to-run-partially-trusted-code-in-a-sandbox.md)  
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>  
+- [More Implicit Uses of CAS Policy: loadFromRemoteSources](https://docs.microsoft.com/archive/blogs/shawnfa/more-implicit-uses-of-cas-policy-loadfromremotesources)
+- [How to: Run Partially Trusted Code in a Sandbox](../../../misc/how-to-run-partially-trusted-code-in-a-sandbox.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType>

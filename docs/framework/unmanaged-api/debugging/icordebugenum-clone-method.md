@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 57eefaf3-75cf-4496-bc94-88c0706861b7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum::Clone Method
 Creates a copy of this ICorDebugEnum object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] ICorDebugEnum **ppEnum  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppEnum`  
  [out] A pointer to the address of an `ICorDebugEnum` object that is a copy of this `ICorDebugEnum` object.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

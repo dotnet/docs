@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="$(SourceRoot)/DotNetLib/DotNetLib.csproj" />
+  </ItemGroup>
+
+  <!-- This is to hide all the source files in VS to make the project cleaner,
+       but also to include them in the build so that when the source is modified the build will rerun the C++ compiler. -->
+  <ItemGroup>
+    <Content Include="*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="inc/*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+
+  <!-- Target to build the native project -->
+  <Target Name="BuildNativeProject"
+          AfterTargets="Build">
+    <PropertyGroup>
+      <NativeBinDir>$(BinRoot)/$(Configuration)</NativeBinDir>
+      <NetHostDir>$(NetCoreTargetingPackRoot)/Microsoft.NETCore.App.Host.$(NETCoreSdkRuntimeIdentifier)/$(BundledNETCoreAppPackageVersion)/runtimes/$(NETCoreSdkRuntimeIdentifier)/native</NetHostDir>
+
+      <NetHostName Condition="$([MSBuild]::IsOsPlatform('Windows'))">nethost.dll</NetHostName>
+      <NetHostName Condition="$([MSBuild]::IsOsPlatform('Linux'))">libnethost.so</NetHostName>
+      <NetHostName Condition="$([MSBuild]::IsOsPlatform('OSX'))">libnethost.dylib</NetHostName>
+    </PropertyGroup>
+
+    <Exec Command="g++ nativehost.cpp -I&quot;$(NetHostDir)&quot; -Iinc -D LINUX -std=c++11 -o &quot;$(NativeBinDir)/nativehost&quot; -ldl -lnethost -L&quot;$(NetHostDir)&quot; -g -Wl,-rpath,'$ORIGIN',--disable-new-dtags"
+          ConsoleToMsBuild="true"
+          Condition="$([MSBuild]::IsOsPlatform('Linux'))" />
+
+    <Exec Command="g++ nativehost.cpp -I&quot;$(NetHostDir)&quot; -Iinc -D OSX -std=c++11 -o &quot;$(NativeBinDir)/nativehost&quot; -ldl -lnethost -L&quot;$(NetHostDir)&quot; -g -Wl,-rpath,'@loader_path'"
+          ConsoleToMsBuild="true"
+          Condition="$([MSBuild]::IsOsPlatform('OSX'))" />
+
+    <Exec Command="cl.exe nativehost.cpp /I &quot;$(NetHostDir)&quot; /I inc /D WINDOWS /EHsc /Od /GS /sdl /Zi /Fo&quot;$(NativeBinDir)\\&quot; /Fd&quot;$(NativeBinDir)\nativehost.pdb&quot; /link &quot;$(NetHostDir)\nethost.lib&quot; /out:&quot;$(NativeBinDir)\nativehost.exe&quot;"
+          ConsoleToMsBuild="true"
+          Condition="$([MSBuild]::IsOsPlatform('Windows'))" />
+
+    <!-- Copy the nethost library to the demo directory -->
+    <Copy SourceFiles="$(NetHostDir)/$(NetHostName)"
+          DestinationFolder="$(NativeBinDir)"
+          SkipUnchangedFiles="True" />
+  </Target>
+</Project>

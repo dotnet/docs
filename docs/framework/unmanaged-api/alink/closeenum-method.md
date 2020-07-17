@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: aa4a091e-13fe-4264-91de-e12f1c767c87
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CloseEnum Method
 Closes the indicated enumeration and frees associated resources.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseEnum(  
     HALINKENUM hEnum  
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  Handle of enumeration to be closed.  
   
@@ -39,7 +37,8 @@ HRESULT CloseEnum(
 ## Requirements  
  Requires alink.h  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

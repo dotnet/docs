@@ -1,6 +1,5 @@
 ---
 title: "using directive - C# Reference"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "using directive [C#]"
@@ -63,14 +62,12 @@ Create a `using` alias directive to make it easier to qualify an identifier to a
 
 ```csharp
 using s = System.Text;
-using s.RegularExpressions;
+using s.RegularExpressions; // Generates a compiler error.
 ```
 
 Create a `using` directive to use the types in a namespace without having to specify the namespace. A `using` directive does not give you access to any namespaces that are nested in the namespace you specify.
 
-Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](https://docs.microsoft.com/dotnet/api/).
-
-For examples on referencing methods in other assemblies, see [Create and Use Assemblies Using the Command Line](../../programming-guide/concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md).
+Namespaces come in two categories: user-defined and system-defined. User-defined namespaces are namespaces defined in your code. For a list of the system-defined namespaces, see [.NET API Browser](../../../../api/index.md).
 
 ## Example 1
 
@@ -88,7 +85,7 @@ The following example shows how to define a `using` directive and a `using` alia
 
 ## C# language specification
 
-For more information, see [Using directives](~/_csharplang/spec/namespaces.md#using-directives) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Using directives](~/_csharplang/spec/namespaces.md#using-directives) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 
@@ -96,6 +93,5 @@ For more information, see [Using directives](~/_csharplang/spec/namespaces.md#us
 - [C# Programming Guide](../../programming-guide/index.md)
 - [Using Namespaces](../../programming-guide/namespaces/using-namespaces.md)
 - [C# Keywords](index.md)
-- [Namespace Keywords](namespace-keywords.md)
 - [Namespaces](../../programming-guide/namespaces/index.md)
 - [using Statement](using-statement.md)

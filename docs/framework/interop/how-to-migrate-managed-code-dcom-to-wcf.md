@@ -1,22 +1,21 @@
 ---
 title: "How to: Migrate Managed-Code DCOM to WCF"
+description: Migrate Distributed Component Object Model (DCOM) managed code calls between servers and clients to Windows Communication Foundation (WCF).
 ms.date: "03/30/2017"
 ms.assetid: 52961ffc-d1c7-4f83-832c-786444b951ba
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Migrate Managed-Code DCOM to WCF
 Windows Communication Foundation (WCF) is the recommended and secure choice over Distributed Component Object Model (DCOM) for managed code calls between servers and clients in a distributed environment. This article shows how you to migrate code from DCOM to WCF for the following scenarios.  
   
--   The remote service returns an object by-value to the client  
+- The remote service returns an object by-value to the client  
   
--   The client sends an object by-value to the remote service  
+- The client sends an object by-value to the remote service  
   
--   The remote service returns an object by-reference to the client  
+- The remote service returns an object by-reference to the client  
   
- For security reasons, sending an object by-reference from the client to the service is not allowed in WCF. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service.  For more information about duplex services, see [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md).  
+ For security reasons, sending an object by-reference from the client to the service is not allowed in WCF. A scenario that requires a conversation back and forth between client and server can be achieved in WCF using a duplex service.  For more information about duplex services, see [Duplex Services](../wcf/feature-details/duplex-services.md).  
   
- For more details about creating WCF services and clients for those services, see [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md), [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md), and [Building Clients](../../../docs/framework/wcf/building-clients.md).  
+ For more details about creating WCF services and clients for those services, see [Basic WCF Programming](../wcf/basic-wcf-programming.md), [Designing and Implementing Services](../wcf/designing-and-implementing-services.md), and [Building Clients](../wcf/building-clients.md).  
   
 ## DCOM example code  
  For these scenarios, the DCOM interfaces that are illustrated using WCF have the following structure:  
@@ -60,7 +59,7 @@ public interface IRemoteService
 ```csharp  
 using System.Runtime.Serialization;  
 using System.ServiceModel;  
-using System.ServiceModel.Web;   
+using System.ServiceModel.Web;
 . . .  
 [ServiceContract]  
 public interface ICustomerManager  
@@ -68,7 +67,7 @@ public interface ICustomerManager
     [OperationContract]  
     void StoreCustomer(Customer customer);  
   
-    [OperationContract]     Customer GetCustomer(string firstName, string lastName);   
+    [OperationContract]     Customer GetCustomer(string firstName, string lastName);
   
 }  
 ```  
@@ -76,7 +75,7 @@ public interface ICustomerManager
 ### Step 2: Define the data contract  
  Next you should create a data contract for the service, which will describe how the data will be exchanged between the service and its clients.  Classes described in the data contract should be marked with the [<xref:System.Runtime.Serialization.DataContractAttribute>] attribute. The individual properties or fields you want visible to both client and server should be marked with the [<xref:System.Runtime.Serialization.DataMemberAttribute>] attribute. If you want types derived from a class in the data contract to be allowed, you must identify them with the [<xref:System.Runtime.Serialization.KnownTypeAttribute>] attribute. WCF will only serialize or deserialize types in the service interface and types identified as known types. If you attempt to use a type that is not a known type, an exception will occur.  
   
- For more information about data contracts, see [Data Contracts](../../../docs/framework/wcf/samples/data-contracts.md).  
+ For more information about data contracts, see [Data Contracts](../wcf/samples/data-contracts.md).  
   
 ```csharp  
 [DataContract]  
@@ -119,7 +118,7 @@ public class Address
  Next, you should implement the WCF service class that implements the interface you defined in the previous step.  
   
 ```csharp  
-public class CustomerService: ICustomerManager    
+public class CustomerService: ICustomerManager
 {  
     public void StoreCustomer(Customer customer)  
     {  
@@ -140,7 +139,7 @@ public class CustomerService: ICustomerManager
   <system.serviceModel>  
     <services>  
       <service name="Server.CustomerService">  
-        <endpoint address="http://localhost:8083/CustomerManager"   
+        <endpoint address="http://localhost:8083/CustomerManager"
                   binding="basicHttpBinding"  
                   contract="Shared.ICustomerManager" />  
       </service>  
@@ -155,16 +154,17 @@ public class CustomerService: ICustomerManager
 <configuration>  
   <system.serviceModel>  
     <client>  
-      <endpoint name="customermanager"   
-                address="http://localhost:8083/CustomerManager"   
-                binding="basicHttpBinding"   
+      <endpoint name="customermanager"
+                address="http://localhost:8083/CustomerManager"
+                binding="basicHttpBinding"
                 contract="Shared.ICustomerManager"/>  
+    </client>  
   </system.serviceModel>  
 </configuration>  
 ```  
   
 ### Step 5: Run the service  
- Finally, you can self-host it in a console application by adding the following lines to the service app, and starting the app. For more information about other ways to host a WCF service application, [Hosting Services](../../../docs/framework/wcf/hosting-services.md).  
+ Finally, you can self-host it in a console application by adding the following lines to the service app, and starting the app. For more information about other ways to host a WCF service application, [Hosting Services](../wcf/hosting-services.md).  
   
 ```csharp  
 ServiceHost customerServiceHost = new ServiceHost(typeof(CustomerService));  
@@ -175,7 +175,7 @@ customerServiceHost.Open();
  To call the service from the client, you need to create a channel factory for the service, and request a channel, which will enable you to directly call the `GetCustomer` method directly from the client. The channel implements the service’s interface and handles the underlying request/reply logic for you.  The return value from that method call is the deserialized copy of the service response.  
   
 ```csharp  
-ChannelFactory<ICustomerManager> factory =   
+ChannelFactory<ICustomerManager> factory =
      new ChannelFactory<ICustomerManager>("customermanager");  
 ICustomerManager service = factory.CreateChannel();  
 Customer customer = service.GetCustomer("Mary", "Smith");  
@@ -296,12 +296,12 @@ public interface ISessionBoundObject
     }  
 ```  
   
- Following is the implementation of this service. This implementation maintains a singleton channel factory to create sessionful objects.  When `GetInstanceAddress` is called, it creates a channel and creates an <xref:System.ServiceModel.EndpointAddress10> object that points to the remote address associated with this channel.   <xref:System.ServiceModel.EndpointAddress10> is a data type that can be returned to the client by-value.  
+ The following is the implementation of this service. This implementation maintains a singleton channel factory to create sessionful objects.  When `GetInstanceAddress` is called, it creates a channel and creates an <xref:System.ServiceModel.EndpointAddress10> object that points to the remote address associated with this channel.   <xref:System.ServiceModel.EndpointAddress10> is a data type that can be returned to the client by-value.
   
 ```csharp  
 public class SessionBoundFactory : ISessionBoundFactory  
     {  
-        public static ChannelFactory<ISessionBoundObject> _factory =   
+        public static ChannelFactory<ISessionBoundObject> _factory =
             new ChannelFactory<ISessionBoundObject>("sessionbound");  
   
         public SessionBoundFactory()  
@@ -319,11 +319,11 @@ public class SessionBoundFactory : ISessionBoundFactory
 ### Step 3: Configure and start the WCF services  
  To host these services, you will need to make the following additions to the server’s configuration file (web.config).  
   
-1.  Add a `<client>` section that describes the endpoint for the sessionful object.  In this scenario, the server also acts as a client and must be configured to enable this.  
+1. Add a `<client>` section that describes the endpoint for the sessionful object.  In this scenario, the server also acts as a client and must be configured to enable this.  
   
-2.  In the `<services>` section, declare service endpoints for the factory and sessionful object.  This enables the client to communicate with the service endpoints, acquire the <xref:System.ServiceModel.EndpointAddress10> and create the sessionful channel.  
+2. In the `<services>` section, declare service endpoints for the factory and sessionful object.  This enables the client to communicate with the service endpoints, acquire the <xref:System.ServiceModel.EndpointAddress10> and create the sessionful channel.  
   
- Following is an example configuration file with these settings:  
+ The following is an example configuration file with these settings:  
   
 ```xml  
 <configuration>  
@@ -338,12 +338,12 @@ public class SessionBoundFactory : ISessionBoundFactory
     <services>  
       <service name="Server.MySessionBoundObject">  
         <endpoint address="net.tcp://localhost:8081/SessionBoundObject"  
-                  binding="netTcpBinding"   
+                  binding="netTcpBinding"
                   contract="Shared.ISessionBoundObject" />  
       </service>  
       <service name="Server.SessionBoundFactory">  
         <endpoint address="net.tcp://localhost:8081/SessionBoundFactory"  
-                  binding="netTcpBinding"   
+                  binding="netTcpBinding"
                   contract="Shared.ISessionBoundFactory" />  
       </service>  
     </services>  
@@ -369,28 +369,28 @@ sessionBoundServiceHost.Open();
 <configuration>  
   <system.serviceModel>  
     <client>  
-      <endpoint name="sessionbound"   
-                address="net.tcp://localhost:8081/SessionBoundObject"   
-                binding="netTcpBinding"   
+      <endpoint name="sessionbound"
+                address="net.tcp://localhost:8081/SessionBoundObject"
+                binding="netTcpBinding"
                 contract="Shared.ISessionBoundObject"/>  
-      <endpoint name="factory"   
-                address="net.tcp://localhost:8081/SessionBoundFactory"   
-                binding="netTcpBinding"   
+      <endpoint name="factory"
+                address="net.tcp://localhost:8081/SessionBoundFactory"
+                binding="netTcpBinding"
                 contract="Shared.ISessionBoundFactory"/>  
-    </client>    
+    </client>
   </system.serviceModel>  
 </configuration>  
 ```  
   
  To call the service, add the code to the client to do the following:  
   
-1.  Create a channel to the `ISessionBoundFactory` service.  
+1. Create a channel to the `ISessionBoundFactory` service.  
   
-2.  Use the channel to invoke the `ISessionBoundFactory` service an obtain an <xref:System.ServiceModel.EndpointAddress10> object.  
+2. Use the channel to invoke the `ISessionBoundFactory` service an obtain an <xref:System.ServiceModel.EndpointAddress10> object.  
   
-3.  Use the <xref:System.ServiceModel.EndpointAddress10> to create a channel to obtain a sessionful object.  
+3. Use the <xref:System.ServiceModel.EndpointAddress10> to create a channel to obtain a sessionful object.  
   
-4.  Call the `SetCurrentValue` and `GetCurrentValue` methods to demonstrate it remains the same object instance is used across multiple calls.  
+4. Call the `SetCurrentValue` and `GetCurrentValue` methods to demonstrate it remains the same object instance is used across multiple calls.  
   
 ```csharp  
 ChannelFactory<ISessionBoundFactory> factory =  
@@ -415,8 +415,9 @@ if (sessionBoundObject.GetCurrentValue() == "Hello")
 }  
 ```  
   
-## See Also  
- [Basic WCF Programming](../../../docs/framework/wcf/basic-wcf-programming.md)  
- [Designing and Implementing Services](../../../docs/framework/wcf/designing-and-implementing-services.md)  
- [Building Clients](../../../docs/framework/wcf/building-clients.md)  
- [Duplex Services](../../../docs/framework/wcf/feature-details/duplex-services.md)
+## See also
+
+- [Basic WCF Programming](../wcf/basic-wcf-programming.md)
+- [Designing and Implementing Services](../wcf/designing-and-implementing-services.md)
+- [Building Clients](../wcf/building-clients.md)
+- [Duplex Services](../wcf/feature-details/duplex-services.md)

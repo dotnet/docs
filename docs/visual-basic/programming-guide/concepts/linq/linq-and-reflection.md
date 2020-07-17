@@ -1,5 +1,5 @@
 ---
-title: "LINQ and Reflection (Visual Basic)"
+title: "LINQ and Reflection"
 ms.date: 07/20/2015
 ms.assetid: 2548a731-0cd8-48de-8d48-664d1b7d7526
 ---
@@ -8,8 +8,9 @@ The .NET Framework class library reflection APIs can be used to examine the meta
   
  This section contains the following topics:  
   
- [How to: Query An Assembly's Metadata with Reflection (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq.md)  
+ [How to: Query An Assembly's Metadata with Reflection (LINQ) (Visual Basic)](how-to-query-an-assembly-s-metadata-with-reflection-linq.md)  
  Shows how to use LINQ with reflection.  
   
-## See Also  
- [LINQ to Objects (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-objects.md)
+## See also
+
+- [LINQ to Objects (Visual Basic)](linq-to-objects.md)

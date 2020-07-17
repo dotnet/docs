@@ -7,31 +7,31 @@ ms.assetid: 16aaa80d-3ffe-47c4-8b16-ec65c4d25f8d
 This sample demonstrates the use of SSL transport security with Reliable Sessions. Reliable Sessions implements the WS-Reliable Messaging protocol. You can have a secure reliable session by composing WS-Security over Reliable Sessions. But sometimes, you may choose to instead use HTTP transport security with SSL.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Custom\ReliableSessionOverHttps`  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Custom\ReliableSessionOverHttps`  
   
 ## Sample Details  
  SSL ensures that the packets themselves are secured. It is important to note that this is different from securing the reliable session using WS-Secure Conversation.  
   
- To use reliable session over HTTPS, you must create a custom binding. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. A custom binding is created using the reliable session binding element and the [\<httpsTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httpstransport.md). The following configuration is of the custom binding.  
+ To use reliable session over HTTPS, you must create a custom binding. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service. A custom binding is created using the reliable session binding element and the [\<httpsTransport>](../../configure-apps/file-schema/wcf/httpstransport.md). The following configuration is of the custom binding.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  
     <services>  
-      <service   
+      <service
           name="Microsoft.ServiceModel.Samples.CalculatorService"  
           behaviorConfiguration="CalculatorServiceBehavior">  
         <!-- use base address provided by host -->  
         <endpoint address=""  
                   binding="customBinding"  
-                  bindingConfiguration="reliableSessionOverHttps"   
+                  bindingConfiguration="reliableSessionOverHttps"
                   contract="Microsoft.ServiceModel.Samples.ICalculator" />  
         <!-- the mex endpoint is exposed as http://localhost/servicemodelsamples/service.svc/mex-->  
         <endpoint address="mex"  
@@ -64,7 +64,7 @@ This sample demonstrates the use of SSL transport security with Reliable Session
 </configuration>  
 ```  
   
- The program code in the sample is identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. You must create a certificate and assign it by using the Web Server Certificate Wizard before building and running the sample. The endpoint definition and binding definition in the configuration file settings enable the use of custom binding as shown in the following sample configuration for the client.  
+ The program code in the sample is identical to that of the [Getting Started](getting-started-sample.md) service. You must create a certificate and assign it by using the Web Server Certificate Wizard before building and running the sample. The endpoint definition and binding definition in the configuration file settings enable the use of custom binding as shown in the following sample configuration for the client.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -74,9 +74,9 @@ This sample demonstrates the use of SSL transport security with Reliable Session
     <client>  
       <!-- this endpoint has an https: address -->  
       <endpoint name=""  
-                address="https://localhost/servicemodelsamples/service.svc"   
-                binding="customBinding"   
-                bindingConfiguration="reliableSessionOverHttps"   
+                address="https://localhost/servicemodelsamples/service.svc"
+                binding="customBinding"
+                bindingConfiguration="reliableSessionOverHttps"
                 contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </client>  
   
@@ -86,7 +86,7 @@ This sample demonstrates the use of SSL transport security with Reliable Session
             <reliableSession />  
             <httpsTransport />  
           </binding>  
-        </customBinding>        
+        </customBinding>
     </bindings>  
   
   </system.serviceModel>  
@@ -94,9 +94,9 @@ This sample demonstrates the use of SSL transport security with Reliable Session
 </configuration>  
 ```  
   
- The address specified uses the https:// scheme.  
+ The address specified uses the `https://` scheme.  
   
- Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as https://localhost/servicemodelsamples/service.svc, from your browser. To allow the Windows Communication Foundation (WCF) client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
+ Because the certificate used in this sample is a test certificate created with Makecert.exe, a security alert appears when you try to access an https: address, such as `https://localhost/servicemodelsamples/service.svc`, from your browser. To allow the Windows Communication Foundation (WCF) client to work with a test certificate in place, some additional code has been added to the client to suppress the security alert. This code, and the accompanying class, is not required when using production certificates.  
 
 ```csharp
 // This code is required only for test certificates like those created by Makecert.exe.  
@@ -105,7 +105,7 @@ PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");
 
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -116,18 +116,16 @@ Press <ENTER> to terminate client.
   
 #### To set up, build, and run the sample  
   
-1.  Install  [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] 4.0 using the following command.  
+1. Install  ASP.NET 4.0 using the following command.  
   
-    ```  
+    ```console  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   
-2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+2. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-3.  Ensure that you have performed the [Internet Information Services (IIS) Server Certificate Installation Instructions](../../../../docs/framework/wcf/samples/iis-server-certificate-installation-instructions.md).  
+3. Ensure that you have performed the [Internet Information Services (IIS) Server Certificate Installation Instructions](iis-server-certificate-installation-instructions.md).  
   
-4.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+4. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-5.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
-  
-## See Also
+5. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  

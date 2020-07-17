@@ -1,5 +1,5 @@
 ---
-title: "NotInheritable (Visual Basic)"
+title: "NotInheritable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "NotInheritable"
@@ -24,9 +24,10 @@ Specifies that a class cannot be used as a base class.
   
  The `NotInheritable` modifier can be used in this context:  
   
- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)  
+ [Class Statement](../statements/class-statement.md)  
   
-## See Also  
- [Inherits Statement](../../../visual-basic/language-reference/statements/inherits-statement.md)  
- [MustInherit](../../../visual-basic/language-reference/modifiers/mustinherit.md)  
- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Inherits Statement](../statements/inherits-statement.md)
+- [MustInherit](mustinherit.md)
+- [Keywords](../keywords/index.md)

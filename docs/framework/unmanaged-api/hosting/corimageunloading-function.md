@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b4367214-6dac-4280-aa11-fd487ff30bc4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # _CorImageUnloading Function
 Notifies the loader when the managed module images are unloaded.  
@@ -24,18 +22,18 @@ Notifies the loader when the managed module images are unloaded.
   
 ## Syntax  
   
-```  
-STDAPI (VOID) _CorImageUnloading(   
+```cpp  
+STDAPI (VOID) _CorImageUnloading(
    [in] PVOID* ImageBase  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ImageBase`  
  [in] A pointer to the starting location of the image to unload.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -43,5 +41,6 @@ STDAPI (VOID) _CorImageUnloading(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+## See also
+
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

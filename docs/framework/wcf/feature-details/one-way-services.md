@@ -12,15 +12,15 @@ The default behavior of a service operation is the request-reply pattern. In a r
   
  Use the one-way design pattern:  
   
--   When the client must call operations and is not affected by the result of the operation at the operation level.  
+- When the client must call operations and is not affected by the result of the operation at the operation level.  
   
--   When using the <xref:System.ServiceModel.NetMsmqBinding> or the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class. (For more information about this scenario, see [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md).)  
+- When using the <xref:System.ServiceModel.NetMsmqBinding> or the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> class. (For more information about this scenario, see [Queues in WCF](queues-in-wcf.md).)  
   
  When an operation is one-way, there is no response message to carry error information back to the client. You can detect error conditions by using features of the underlying binding, such as reliable sessions, or by designing a duplex service contract that uses two one-way operations—a one-way contract from the client to the service to call service operation and another one-way contract between the service and the client so that the service can send back faults to the client using a callback that the client implements.  
   
  To create a one-way service contract, define your service contract, apply the <xref:System.ServiceModel.OperationContractAttribute> class to each operation, and set the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `true`, as shown in the following sample code.  
   
-```  
+```csharp
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]  
 public interface IOneWayCalculator  
 {  
@@ -35,7 +35,7 @@ public interface IOneWayCalculator
 }  
 ```  
   
- For a complete example, see the [One-Way](../../../../docs/framework/wcf/samples/one-way.md) sample.  
+ For a complete example, see the [One-Way](../samples/one-way.md) sample.  
   
 ## Clients Blocking with One-Way Operations  
  It is important to realize that while some one-way applications return as soon as the outbound data is written to the network connection, in several scenarios the implementation of a binding or of a service can cause a WCF client to block using one-way operations. In WCF client applications, the WCF client object does not return until the outbound data has been written to the network connection. This is true for all message exchange patterns, including one-way operations; this means that any problem writing the data to the transport prevents the client from returning. Depending upon the problem, the result could be an exception or a delay in sending messages to the service.  
@@ -48,5 +48,6 @@ public interface IOneWayCalculator
   
  It is recommended, instead, that you examine the various controls on the service as well as on the client, and then test your application scenarios to determine the best configuration on either side. For example, if the use of sessions is blocking the processing of messages on your service, you can set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.InstanceContextMode.PerCall> so that each message can be processed by a different service instance, and set the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> to <xref:System.ServiceModel.ConcurrencyMode.Multiple> in order to allow more than one thread to dispatch messages at a time. Another approach is to increase the read quotas of the service and client bindings.  
   
-## See Also  
- [One-Way](../../../../docs/framework/wcf/samples/one-way.md)
+## See also
+
+- [One-Way](../samples/one-way.md)

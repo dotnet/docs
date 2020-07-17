@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 9c9db3f3-26bf-4317-88de-5eb926a22a1d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTask::NeedsPriorityScheduling Method
 Gets a value that indicates whether the current task, which is being switched out, needs to be marked as a high priority for rescheduling.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NeedsPriorityScheduling (  
     [out] BOOL *pbNeedsPriorityScheduling  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pbNeedsPriorityRescheduling`  
  [out] `true`, if the host should attempt to reschedule the current task instance as soon as possible; otherwise, `false`.  
   
@@ -48,7 +46,7 @@ HRESULT NeedsPriorityScheduling (
  In situations where the task is close to being collected by the garbage collector, the CLR sets the value of `pbNeedsPriorityScheduling` to `true`, indicating high-priority rescheduling. This allows the host to reschedule the task quickly, thereby minimizing the potential for delays in garbage collection, and enabling the host and the runtime to cooperate in conserving memory resources.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -56,8 +54,9 @@ HRESULT NeedsPriorityScheduling (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)  
- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)  
- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)  
- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+## See also
+
+- [ICLRTask Interface](iclrtask-interface.md)
+- [ICLRTaskManager Interface](iclrtaskmanager-interface.md)
+- [IHostTask Interface](ihosttask-interface.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

@@ -14,38 +14,36 @@ helpviewer_keywords:
 ms.assetid: cb0c5f65-3791-47bc-b833-2f84f4101ba5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost Interface
-Provides functionality similar to that of the [ICorRuntimeHost](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md) interface provided in the .NET Framework version 1, with the following changes:  
+Provides functionality similar to that of the [ICorRuntimeHost](icorruntimehost-interface.md) interface provided in the .NET Framework version 1, with the following changes:  
   
--   The addition of the [SetHostControl](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md) method to set the host control interface.  
+- The addition of the [SetHostControl](iclrruntimehost-sethostcontrol-method.md) method to set the host control interface.  
   
--   The omission of some methods provided by `ICorRuntimeHost`.  
+- The omission of some methods provided by `ICorRuntimeHost`.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[ExecuteApplication Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-executeapplication-method.md)|Used in manifest-based ClickOnce deployment scenarios to specify the application to be activated in a new domain.|  
-|[ExecuteInAppDomain Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-executeinappdomain-method.md)|Specifies the <xref:System.AppDomain> in which to execute the specified managed code.|  
-|[ExecuteInDefaultAppDomain Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-executeindefaultappdomain-method.md)|Invokes the specified method of the specified type in the specified assembly.|  
-|[GetCLRControl Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-getclrcontrol-method.md)|Gets an interface pointer of type [ICLRControl](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md) that hosts can use to customize aspects of the common language runtime (CLR).|  
-|[GetCurrentAppDomainId Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-getcurrentappdomainid-method.md)|Gets the numeric identifier of the <xref:System.AppDomain> that is currently executing.|  
-|[SetHostControl Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-sethostcontrol-method.md)|Sets the host control interface. You must call `SetHostControl` before calling `Start`.|  
-|[Start Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md)|Initializes the CLR into a process.|  
-|[Stop Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-stop-method.md)|Stops the execution of code by the runtime.|  
-|[UnloadAppDomain Method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-unloadappdomain-method.md)|Unloads the <xref:System.AppDomain> that corresponds to the specified numeric identifier.|  
+|[ExecuteApplication Method](iclrruntimehost-executeapplication-method.md)|Used in manifest-based ClickOnce deployment scenarios to specify the application to be activated in a new domain.|  
+|[ExecuteInAppDomain Method](iclrruntimehost-executeinappdomain-method.md)|Specifies the <xref:System.AppDomain> in which to execute the specified managed code.|  
+|[ExecuteInDefaultAppDomain Method](iclrruntimehost-executeindefaultappdomain-method.md)|Invokes the specified method of the specified type in the specified assembly.|  
+|[GetCLRControl Method](iclrruntimehost-getclrcontrol-method.md)|Gets an interface pointer of type [ICLRControl](iclrcontrol-interface.md) that hosts can use to customize aspects of the common language runtime (CLR).|  
+|[GetCurrentAppDomainId Method](iclrruntimehost-getcurrentappdomainid-method.md)|Gets the numeric identifier of the <xref:System.AppDomain> that is currently executing.|  
+|[SetHostControl Method](iclrruntimehost-sethostcontrol-method.md)|Sets the host control interface. You must call `SetHostControl` before calling `Start`.|  
+|[Start Method](iclrruntimehost-start-method.md)|Initializes the CLR into a process.|  
+|[Stop Method](iclrruntimehost-stop-method.md)|Stops the execution of code by the runtime.|  
+|[UnloadAppDomain Method](iclrruntimehost-unloadappdomain-method.md)|Unloads the <xref:System.AppDomain> that corresponds to the specified numeric identifier.|  
   
 ## Remarks  
- Starting with the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)], use the [ICLRMetaHost](../../../../docs/framework/unmanaged-api/hosting/iclrmetahost-interface.md) interface to get a pointer to the [ICLRRuntimeInfo](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md) interface, and then call the [ICLRRuntimeInfo::GetInterface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-getinterface-method.md) method to get a pointer to `ICLRRuntimeHost`. In earlier versions of the .NET Framework, the host gets a pointer to an `ICLRRuntimeHost` instance by calling [CorBindToRuntimeEx](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md) or [CorBindToCurrentRuntime](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md). To provide implementations of any of the technologies provided in the .NET Framework version 2.0, you must use `ICLRRuntimeHost` instead of `ICorRuntimeHost`.  
+ Starting with the .NET Framework 4, use the [ICLRMetaHost](iclrmetahost-interface.md) interface to get a pointer to the [ICLRRuntimeInfo](iclrruntimeinfo-interface.md) interface, and then call the [ICLRRuntimeInfo::GetInterface](iclrruntimeinfo-getinterface-method.md) method to get a pointer to `ICLRRuntimeHost`. In earlier versions of the .NET Framework, the host gets a pointer to an `ICLRRuntimeHost` instance by calling [CorBindToRuntimeEx](corbindtoruntimeex-function.md) or [CorBindToCurrentRuntime](corbindtocurrentruntime-function.md). To provide implementations of any of the technologies provided in the .NET Framework version 2.0, you must use `ICLRRuntimeHost` instead of `ICorRuntimeHost`.  
   
 > [!IMPORTANT]
->  Do not call the [Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method before calling the [ExecuteApplication](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-executeapplication-method.md) method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
+> Do not call the [Start](iclrruntimehost-start-method.md) method before calling the [ExecuteApplication](iclrruntimehost-executeapplication-method.md) method to activate a manifest-based application. If the `Start` method is called first, the `ExecuteApplication` method call will fail.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -53,10 +51,11 @@ Provides functionality similar to that of the [ICorRuntimeHost](../../../../docs
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [CorBindToCurrentRuntime Function](../../../../docs/framework/unmanaged-api/hosting/corbindtocurrentruntime-function.md)  
- [CorBindToRuntimeEx Function](../../../../docs/framework/unmanaged-api/hosting/corbindtoruntimeex-function.md)  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICorRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/icorruntimehost-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [CLRRuntimeHost Coclass](../../../../docs/framework/unmanaged-api/hosting/clrruntimehost-coclass.md)
+## See also
+
+- [CorBindToCurrentRuntime Function](corbindtocurrentruntime-function.md)
+- [CorBindToRuntimeEx Function](corbindtoruntimeex-function.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICorRuntimeHost Interface](icorruntimehost-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [CLRRuntimeHost Coclass](clrruntimehost-coclass.md)

@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 954bd386-2076-4d00-9d46-38c728aa9cab
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyIdentityManager::IsStronglyNamed Method
 Gets a value that indicates whether the specified assembly is strongly named.  
   
 ## Syntax  
   
-```  
+```cpp  
 RESULT IsStronglyNamed (  
     [in]  LPCWSTR  pwzAssemblyIdentity,  
     [out] BOOL    *pbIsStronglyNamed  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzAssemblyIdentity`  
  [in] The opaque canonical assembly identity data of the assembly to be evaluated.  
   
@@ -49,7 +47,7 @@ RESULT IsStronglyNamed (
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -57,5 +55,6 @@ RESULT IsStronglyNamed (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRAssemblyIdentityManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyidentitymanager-interface.md)
+## See also
+
+- [ICLRAssemblyIdentityManager Interface](iclrassemblyidentitymanager-interface.md)

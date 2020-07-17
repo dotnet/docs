@@ -1,5 +1,6 @@
 ---
 title: "Adding Data to a DataTable"
+description: Refer to this example code to add new rows of data to a table in ADO.NET, after you create a DataTable and define its structure using columns and constraints.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -70,7 +71,7 @@ Next
 ```csharp  
 DataRow workRow;  
   
-for (int i = 0; i <= 9; i++)   
+for (int i = 0; i <= 9; i++)
 {  
   workRow = workTable.NewRow();  
   workRow[0] = i;  
@@ -79,10 +80,11 @@ for (int i = 0; i <= 9; i++)
 }  
 ```  
   
-## See Also  
- <xref:System.Data.DataColumnCollection>  
- <xref:System.Data.DataRow>  
- <xref:System.Data.DataRowCollection>  
- <xref:System.Data.DataTable>  
- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- <xref:System.Data.DataColumnCollection>
+- <xref:System.Data.DataRow>
+- <xref:System.Data.DataRowCollection>
+- <xref:System.Data.DataTable>
+- [Manipulating Data in a DataTable](manipulating-data-in-a-datatable.md)
+- [ADO.NET Overview](../ado-net-overview.md)

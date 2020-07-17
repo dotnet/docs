@@ -1,25 +1,26 @@
 ---
-title: "&lt;add&gt; of &lt;transportConfigurationType&gt;"
+title: "<add> of <transportConfigurationType>"
 ms.date: "03/30/2017"
 ms.assetid: 03d79db9-571d-4534-acef-d05e5467b257
 ---
-# &lt;add&gt; of &lt;transportConfigurationType&gt;
+# \<add> of \<transportConfigurationType>
 This element is a key/value pair, which identifies the type of a particular transport.  
   
- \<system.ServiceModel>  
-\<ServiceHostingEnvironment>  
-\<transportConfigurationTypes>  
-\<add>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceHostingEnvironment>**](servicehostingenvironment.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<transportConfigurationTypes>**](transportconfigurationtypes.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**  
   
 ## Syntax  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <transportConfigurationTypes>  
-      <add name="String"  
-               transportConfigurationType="String"/>   
-   </transportConfigurationTypes>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+  <transportConfigurationTypes>
+    <add name="String"
+         transportConfigurationType="String" />
+  </transportConfigurationTypes>
+</serviceHostingEnvironment>
 ```  
   
 ## Attributes and Elements  
@@ -39,21 +40,22 @@ This element is a key/value pair, which identifies the type of a particular tran
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<transportConfigurationTypes>](../../../../../docs/framework/configure-apps/file-schema/wcf/transportconfigurationtypes.md)|A collection of types that implement the specific transport.|  
+|[\<transportConfigurationTypes>](transportconfigurationtypes.md)|A collection of types that implement the specific transport.|  
   
 ## Example  
   
 ```xml  
-<serviceHostingEnvironment>   
-   <transportConfigurationTypes>  
-      <add name="net.udp"  
-      transportConfigurationType="Microsoft.ServiceModel.Samples.Hosting.HostedUdpTransportConfiguration, UdpActivation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6fa904d2da1848d6" />   
-   </transportConfigurationTypes>  
-</serviceHostingEnvironment>  
+<serviceHostingEnvironment>
+  <transportConfigurationTypes>
+    <add name="net.udp"
+         transportConfigurationType="Microsoft.ServiceModel.Samples.Hosting.HostedUdpTransportConfiguration, UdpActivation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6fa904d2da1848d6" />
+  </transportConfigurationTypes>
+</serviceHostingEnvironment>
 ```  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>  
- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>  
- <xref:System.ServiceModel.ServiceHostingEnvironment>  
- [Hosting](../../../../../docs/framework/wcf/feature-details/hosting.md)
+## See also
+
+- <xref:System.ServiceModel.Configuration.TransportConfigurationTypeElement>
+- <xref:System.ServiceModel.Configuration.ServiceHostingEnvironmentSection>
+- <xref:System.ServiceModel.ServiceHostingEnvironment>
+- [Hosting](../../../wcf/feature-details/hosting.md)

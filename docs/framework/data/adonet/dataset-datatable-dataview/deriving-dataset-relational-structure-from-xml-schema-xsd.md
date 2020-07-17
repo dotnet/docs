@@ -11,19 +11,19 @@ This section provides an overview of how the relational schema of a `DataSet` is
  The following example demonstrates an XML Schema where `customers` is the child element of the `MyDataSet` element, which is a **DataSet** element.  
   
 ```xml  
-<xs:schema id="SomeID"   
-            xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+<xs:schema id="SomeID"
+            xmlns=""
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
    <xs:element name="MyDataSet" msdata:IsDataSet="true">  
      <xs:complexType>  
        <xs:choice maxOccurs="unbounded">  
-         <xs:element name="customers" >   
+         <xs:element name="customers" >
            <xs:complexType >  
              <xs:sequence>  
-               <xs:element name="CustomerID" type="xs:integer"   
+               <xs:element name="CustomerID" type="xs:integer"
                             minOccurs="0" />  
-               <xs:element name="CompanyName" type="xs:string"   
+               <xs:element name="CompanyName" type="xs:string"
                             minOccurs="0" />  
                <xs:element name="Phone" type="xs:string" />  
              </xs:sequence>  
@@ -37,21 +37,21 @@ This section provides an overview of how the relational schema of a `DataSet` is
   
  In the preceding example, the element `customers` is a complex type element. Therefore, the complex type definition is parsed, and the mapping process creates the following table.  
   
-```  
-Customers (CustomerID , CompanyName, Phone)  
+```text  
+Customers (CustomerID, CompanyName, Phone)  
 ```  
   
  The data type of each column in the table is derived from the XML Schema type of the corresponding element or attribute specified.  
   
 > [!NOTE]
->  If the element `customers` is of a simple XML Schema data type such as **integer**, no table is generated. Tables are only created for the top-level elements that are complex types.  
+> If the element `customers` is of a simple XML Schema data type such as **integer**, no table is generated. Tables are only created for the top-level elements that are complex types.  
   
  In the following XML Schema, the **Schema** element has two element children, `InStateCustomers` and `OutOfStateCustomers`.  
   
 ```xml  
-<xs:schema id="SomeID"   
-            xmlns=""   
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+<xs:schema id="SomeID"
+            xmlns=""
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
    <xs:element name="InStateCustomers" type="customerType" />  
    <xs:element name="OutOfStateCustomers" type="customerType" />  
@@ -71,24 +71,25 @@ Customers (CustomerID , CompanyName, Phone)
   
  Both the `InStateCustomers` and the `OutOfStateCustomers` child elements are complex type elements (`customerType`). Therefore, the mapping process generates the following two identical tables in the `DataSet`.  
   
-```  
-InStateCustomers (CustomerID , CompanyName, Phone)  
-OutOfStateCustomers (CustomerID , CompanyName, Phone)  
+```text  
+InStateCustomers (CustomerID, CompanyName, Phone)  
+OutOfStateCustomers (CustomerID, CompanyName, Phone)  
 ```  
   
 ## In This Section  
- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
+ [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Describes the XML Schema elements used to create unique and foreign key constraints in a `DataSet`.  
   
- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)  
+ [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)  
  Describes the XML Schema elements used to create relations between table columns in a `DataSet`.  
   
- [XML Schema Constraints and Relationships](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/xml-schema-constraints-and-relationships.md)  
+ [XML Schema Constraints and Relationships](xml-schema-constraints-and-relationships.md)  
  Describes how relations are created implicitly when using XML Schema elements to create constraints in a `DataSet`.  
   
 ## Related Sections  
- [Using XML in a DataSet](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/using-xml-in-a-dataset.md)  
+ [Using XML in a DataSet](using-xml-in-a-dataset.md)  
  Describes how to load and persist the relational structure and data in a `DataSet` as XML data.  
   
-## See Also  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [ADO.NET Overview](../ado-net-overview.md)

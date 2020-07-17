@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 16dc49cb-2c60-4ac8-9c35-020e9afba3f8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetVariables Method
 Returns a non-local variable, given its parent and name.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVariables (  
     [in]  mdToken  parent,  
     [in]  ULONG32  cVars,  
@@ -32,7 +30,7 @@ HRESULT GetVariables (
         length_is (*pcVars)] ISymUnmanagedVariable *pVars[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `parent`  
  [in] The parent of the variable.  
   
@@ -51,5 +49,6 @@ HRESULT GetVariables (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

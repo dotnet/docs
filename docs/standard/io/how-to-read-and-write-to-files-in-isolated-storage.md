@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data stores, reading and writing to files"
   - "stores, reading and writing to files"
 ms.assetid: f977ebdc-1b55-475a-bc3d-3376470b08ae
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Read and Write to Files in Isolated Storage
 To read from, or write to, a file in an isolated store, use an <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> object with a stream reader (<xref:System.IO.StreamReader> object) or stream writer (<xref:System.IO.StreamWriter> object).  
@@ -30,11 +28,11 @@ To read from, or write to, a file in an isolated store, use an <xref:System.IO.I
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>  
-- <xref:System.IO.FileMode?displayProperty=nameWithType>  
-- <xref:System.IO.FileAccess?displayProperty=nameWithType>  
-- <xref:System.IO.StreamReader?displayProperty=nameWithType>  
-- <xref:System.IO.StreamWriter?displayProperty=nameWithType>  
-- [File and Stream I/O](../../../docs/standard/io/index.md)  
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream>
+- <xref:System.IO.FileMode?displayProperty=nameWithType>
+- <xref:System.IO.FileAccess?displayProperty=nameWithType>
+- <xref:System.IO.StreamReader?displayProperty=nameWithType>
+- <xref:System.IO.StreamWriter?displayProperty=nameWithType>
+- [File and Stream I/O](index.md)
+- [Isolated Storage](isolated-storage.md)

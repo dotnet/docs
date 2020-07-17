@@ -1,5 +1,5 @@
 ---
-title: "&lt;add&gt; Element for &lt;switches&gt;"
+title: "<add> Element for <switches>"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/switches/add"
@@ -7,17 +7,15 @@ helpviewer_keywords:
   - "<add> element for <switches>"
   - "add element for <switches>"
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;add&gt; Element for &lt;switches&gt;
+# \<add> Element for \<switches>
 Specifies the level where a trace switch is set.  
-  
- \<configuration>  
-\<system.diagnostics>  
-\<switches>  
-\<add>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<switches>**](switches-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<add>**
+
 ## Syntax  
   
 ```xml  
@@ -63,8 +61,9 @@ Specifies the level where a trace switch is set.
 </configuration>  
 ```  
   
-## See Also  
- <xref:System.Diagnostics.Switch>  
- <xref:System.Diagnostics.TraceSwitch>  
- <xref:System.Diagnostics.BooleanSwitch>  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+## See also
+
+- <xref:System.Diagnostics.Switch>
+- <xref:System.Diagnostics.TraceSwitch>
+- <xref:System.Diagnostics.BooleanSwitch>
+- [Trace and Debug Settings Schema](index.md)

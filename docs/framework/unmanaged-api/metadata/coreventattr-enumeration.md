@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: dc2b3281-3820-487e-930d-350b66dc6417
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorEventAttr Enumeration
 Contains values that describe the metadata of an event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorEventAttr {  
   
     evSpecialName           =   0x0200,  
@@ -42,11 +40,12 @@ typedef enum CorEventAttr {
 |`evRTSpecialName`|Specifies that the common language runtime should check the encoding of the event name.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+
+- [Metadata Enumerations](metadata-enumerations.md)

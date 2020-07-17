@@ -1,5 +1,5 @@
 ---
-title: "Named argument not found (Visual Basic)"
+title: "Named argument not found"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID448"
@@ -10,7 +10,8 @@ A named argument can not be used in a procedure invocation unless it appears in 
   
 ## To correct this error  
   
--   Check the spelling of the argument name.  
+- Check the spelling of the argument name.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../programming-guide/language-features/error-types.md)

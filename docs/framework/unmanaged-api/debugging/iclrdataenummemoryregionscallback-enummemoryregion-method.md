@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 9bb93fab-57e8-4f9a-9ef3-1794504fa896
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion Method
-Called by [ICLRDataEnumMemoryRegions::EnumMemoryRegions](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md) to report to the debugger the result of an attempt to enumerate a specified region of memory.  
+Called by [ICLRDataEnumMemoryRegions::EnumMemoryRegions](iclrdataenummemoryregions-enummemoryregions-method.md) to report to the debugger the result of an attempt to enumerate a specified region of memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMemoryRegion (  
     [in] CLRDATA_ADDRESS  address,  
     [in] ULONG32          size  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `address`  
  [in] The starting address of the memory region that was to be enumerated.  
   
@@ -43,7 +41,7 @@ HRESULT EnumMemoryRegion (
  Regions reported by this callback may be duplicates or overlapping regions.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   
@@ -51,5 +49,6 @@ HRESULT EnumMemoryRegion (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDataEnumMemoryRegionsCallback Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregionscallback-interface.md)
+## See also
+
+- [ICLRDataEnumMemoryRegionsCallback Interface](iclrdataenummemoryregionscallback-interface.md)

@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "time zone objects [.NET Framework], serializing"
   - "time zone objects [.NET Framework], saving"
 ms.assetid: 3c96d83a-a057-4496-abb0-8f4b12712558
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Save time zones to an embedded resource
 
@@ -21,19 +19,19 @@ Typically, serializing a <xref:System.TimeZoneInfo> object occurs apart from the
 
 In addition to a resource file that is compiled with the application, several other data stores can be used for time zone information. These include the following:
 
-* The registry. Note that an application should use the subkeys of its own application key to store custom time zone data rather than using the subkeys of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
+- The registry. Note that an application should use the subkeys of its own application key to store custom time zone data rather than using the subkeys of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Time Zones.
 
-* Configuration files.
+- Configuration files.
 
-* Other system files.
+- Other system files.
 
 ### To save a time zone by serializing it to a .resx file
 
 1. Retrieve an existing time zone or create a new time zone.
 
-   To retrieve an existing time zone, see [How to: Access the predefined UTC and local time zone objects](../../../docs/standard/datetime/access-utc-and-local.md) and [How to: Instantiate a TimeZoneInfo object](../../../docs/standard/datetime/instantiate-time-zone-info.md).
+   To retrieve an existing time zone, see [How to: Access the predefined UTC and local time zone objects](access-utc-and-local.md) and [How to: Instantiate a TimeZoneInfo object](instantiate-time-zone-info.md).
 
-   To create a new time zone, call one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. For more information, see [How to: Create time zones without adjustment rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md) and [How to: Create time zones with adjustment rules](../../../docs/standard/datetime/create-time-zones-with-adjustment-rules.md).
+   To create a new time zone, call one of the overloads of the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method. For more information, see [How to: Create time zones without adjustment rules](create-time-zones-without-adjustment-rules.md) and [How to: Create time zones with adjustment rules](create-time-zones-with-adjustment-rules.md).
 
 2. Call the <xref:System.TimeZoneInfo.ToSerializedString%2A> method to create a string that contains the time zone's data.
 
@@ -70,15 +68,15 @@ The key (or **Name**) fields of resources should not contain embedded spaces. Th
 
 This example requires:
 
-* That a reference to System.Windows.Forms.dll and System.Core.dll be added to the project.
+- That a reference to System.Windows.Forms.dll and System.Core.dll be added to the project.
 
-* That the following namespaces be imported:
+- That the following namespaces be imported:
 
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-* [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md)
-* [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md)
+- [Dates, times, and time zones](index.md)
+- [Time zone overview](time-zone-overview.md)
+- [How to: Restore time zones from an embedded resource](restore-time-zones-from-an-embedded-resource.md)

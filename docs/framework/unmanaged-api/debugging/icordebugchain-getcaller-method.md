@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: d0b8ab4b-d7d2-4fa0-945f-3d2b87e7e991
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChain::GetCaller Method
 Gets the chain that called this chain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCaller (  
     [out] ICorDebugChain      **ppChain  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppChain`  
  [out] A pointer to the address of an ICorDebugChain object that represents the calling chain.  
   
@@ -39,7 +37,7 @@ HRESULT GetCaller (
  The calling chain may be on a different thread, if the call was marshaled across threads.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

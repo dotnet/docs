@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 29e7a14b-d50e-4852-bfda-011b76c0c9ee
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::NewString Method
 Allocates a new string instance with the specified contents.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NewString (  
     [in] LPCWSTR   string  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `string`  
  [in] Pointer to the contents for the string.  
   
@@ -37,7 +35,7 @@ HRESULT NewString (
  The string is always created in the application domain in which the thread is currently executing.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

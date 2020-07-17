@@ -14,20 +14,18 @@ helpviewer_keywords:
 ms.assetid: b5f9b41e-7301-429c-911f-21d5422292b3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IActionOnCLREvent Interface
-Provides the [IActionOnCLREvent::OnEvent](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-onevent-method.md) method, which performs callbacks on events that have been registered by using a call to the [ICLROnEventManager::RegisterActionOnEvent](../../../../docs/framework/unmanaged-api/hosting/iclroneventmanager-registeractiononevent-method.md) method.  
+Provides the [IActionOnCLREvent::OnEvent](iactiononclrevent-onevent-method.md) method, which performs callbacks on events that have been registered by using a call to the [ICLROnEventManager::RegisterActionOnEvent](iclroneventmanager-registeractiononevent-method.md) method.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[OnEvent Method](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-onevent-method.md)|Performs a callback for a registered event.|  
+|[OnEvent Method](iactiononclrevent-onevent-method.md)|Performs a callback for a registered event.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -35,8 +33,9 @@ Provides the [IActionOnCLREvent::OnEvent](../../../../docs/framework/unmanaged-a
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [EClrEvent Enumeration](../../../../docs/framework/unmanaged-api/hosting/eclrevent-enumeration.md)  
- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)  
- [ICLROnEventManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclroneventmanager-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+## See also
+
+- [EClrEvent Enumeration](eclrevent-enumeration.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLROnEventManager Interface](iclroneventmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

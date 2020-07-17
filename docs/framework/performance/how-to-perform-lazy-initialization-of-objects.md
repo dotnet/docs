@@ -1,5 +1,6 @@
 ---
 title: "How to: Perform Lazy Initialization of Objects"
+description: See how to perform lazy initialization of objects using the System.Lazy<T> class. Lazy initialization means objects aren't created if they're never needed.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -7,11 +8,9 @@ dev_langs:
 helpviewer_keywords: 
   - "lazy initialization in .NET, how to perform"
 ms.assetid: 8cd68620-dcc3-4f20-8835-c728a6820e71
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Perform Lazy Initialization of Objects
-The <xref:System.Lazy%601?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects. By initializing objects in a lazy manner, you can avoid having to create them at all if they are never needed, or you can postpone their initialization until they are first accessed. For more information, see [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md).  
+The <xref:System.Lazy%601?displayProperty=nameWithType> class simplifies the work of performing lazy initialization and instantiation of objects. By initializing objects in a lazy manner, you can avoid having to create them at all if they are never needed, or you can postpone their initialization until they are first accessed. For more information, see [Lazy Initialization](lazy-initialization.md).  
   
 ## Example  
  The following example shows how to initialize a value with <xref:System.Lazy%601>. Assume that the lazy variable might not be needed, depending on some other code that sets the `someCondition` variable to true or false.  
@@ -44,7 +43,7 @@ End Sub
 ```  
   
 ```csharp  
-  static bool someCondition = false;    
+  static bool someCondition = false;
   //Initializing a value with a big computation, computed in parallel  
   Lazy<int> _data = new Lazy<int>(delegate  
   {  
@@ -56,12 +55,12 @@ End Sub
   //  ...  
   // Initialize the data only if necessary  
   if (someCondition)  
-{  
+  {  
     if (_data.Value > 100)  
       {  
           Console.WriteLine("Good data");  
       }  
-}  
+  }  
 ```  
   
 ## Example  
@@ -70,6 +69,7 @@ End Sub
  [!code-csharp[CDS#13](../../../samples/snippets/csharp/VS_Snippets_Misc/cds/cs/cds2.cs#13)]
  [!code-vb[CDS#13](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cds/vb/lazyhowto.vb#13)]  
   
-## See Also  
- <xref:System.Threading.LazyInitializer?displayProperty=nameWithType>  
- [Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md)
+## See also
+
+- <xref:System.Threading.LazyInitializer?displayProperty=nameWithType>
+- [Lazy Initialization](lazy-initialization.md)

@@ -1,5 +1,6 @@
 ---
 title: "Implementing an Explicit Transaction using CommittableTransaction"
+description: Implement an explicit transaction using the CommittableTransaction class in .NET. This class provided an explicit way for applications to use a transaction.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -16,9 +17,9 @@ The <xref:System.Transactions.CommittableTransaction> class provides an explicit
   
  You should note the followings when working with the <xref:System.Transactions.CommittableTransaction> class,  
   
--   Creating a <xref:System.Transactions.CommittableTransaction> transaction does not set the ambient transaction. You need to specifically set and reset the ambient transaction, to ensure that resource managers operate under the right transaction context when appropriate. The way to set the current ambient transaction is by setting the static <xref:System.Transactions.Transaction.Current%2A> property on the global <xref:System.Transactions.Transaction> object.  
+- Creating a <xref:System.Transactions.CommittableTransaction> transaction does not set the ambient transaction. You need to specifically set and reset the ambient transaction, to ensure that resource managers operate under the right transaction context when appropriate. The way to set the current ambient transaction is by setting the static <xref:System.Transactions.Transaction.Current%2A> property on the global <xref:System.Transactions.Transaction> object.  
   
--   A <xref:System.Transactions.CommittableTransaction> object cannot be reused. Once a <xref:System.Transactions.CommittableTransaction> object has been committed or rolled back, it cannot be used again in a transaction. That is, it cannot be set as the current ambient transaction context.  
+- A <xref:System.Transactions.CommittableTransaction> object cannot be reused. Once a <xref:System.Transactions.CommittableTransaction> object has been committed or rolled back, it cannot be used again in a transaction. That is, it cannot be set as the current ambient transaction context.  
   
 ## Creating a CommittableTransaction  
  The following sample creates a new <xref:System.Transactions.CommittableTransaction> and commits it.  
@@ -56,14 +57,14 @@ public void DoTransactionalWork()
      }  
      finally  
      {  
-          //Restore the ambient transaction   
+          //Restore the ambient transaction
           Transaction.Current = oldAmbient;  
      }  
 }  
 void OnCommitted(IAsyncResult asyncResult)  
 {  
      CommittableTransaction committableTransaction;  
-     committableTransaction = asyncResult as CommittableTransaction;     
+     committableTransaction = asyncResult as CommittableTransaction;
      Debug.Assert(committableTransaction != null);  
      try  
      {  
@@ -79,6 +80,7 @@ void OnCommitted(IAsyncResult asyncResult)
 }  
 ```  
   
-## See Also  
- [Implementing an Implicit Transaction using Transaction Scope](../../../../docs/framework/data/transactions/implementing-an-implicit-transaction-using-transaction-scope.md)  
- [Transaction Processing](../../../../docs/framework/data/transactions/index.md)
+## See also
+
+- [Implementing an Implicit Transaction using Transaction Scope](implementing-an-implicit-transaction-using-transaction-scope.md)
+- [Transaction Processing](index.md)

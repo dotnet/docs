@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ccc9387a-9f44-4f4f-bf8f-0ea6d2afa21b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCacheItem Interface
 Represents a single assembly in the global assembly cache.  
@@ -24,18 +22,19 @@ Represents a single assembly in the global assembly cache.
   
 |Method|Description|  
 |------------|-----------------|  
-|[AbortItem Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-abortitem-method.md)|Allows the assembly in the global assembly cache to perform cleanup operations before it is released.|  
-|[Commit Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-commit-method.md)|Commits the cached assembly reference to memory.|  
-|[CreateStream Method](../../../../docs/framework/unmanaged-api/fusion/iassemblycacheitem-createstream-method.md)|Creates a stream with the specified name and format.|  
+|[AbortItem Method](iassemblycacheitem-abortitem-method.md)|Allows the assembly in the global assembly cache to perform cleanup operations before it is released.|  
+|[Commit Method](iassemblycacheitem-commit-method.md)|Commits the cached assembly reference to memory.|  
+|[CreateStream Method](iassemblycacheitem-createstream-method.md)|Creates a stream with the specified name and format.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)  
- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)  
- [IAssemblyCache Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblycache-interface.md)
+## See also
+
+- [Fusion Interfaces](fusion-interfaces.md)
+- [Global Assembly Cache](../../app-domains/gac.md)
+- [IAssemblyCache Interface](iassemblycache-interface.md)

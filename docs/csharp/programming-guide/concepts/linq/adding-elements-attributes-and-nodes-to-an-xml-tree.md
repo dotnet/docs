@@ -29,7 +29,7 @@ You can add content (elements, attributes, comments, processing instructions, te
 ### Code  
   
 ```csharp  
-XElement srcTree = new XElement("Root",   
+XElement srcTree = new XElement("Root",
     new XElement("Element1", 1),  
     new XElement("Element2", 2),  
     new XElement("Element3", 3),  
@@ -71,6 +71,3 @@ Console.WriteLine(xmlTree);
 </Root>  
 ```  
   
-## See Also
-
-- [Modifying XML Trees (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md)

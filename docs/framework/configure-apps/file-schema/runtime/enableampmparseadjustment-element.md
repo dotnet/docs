@@ -1,16 +1,14 @@
 ---
-title: "&lt;EnableAmPmParseAdjustment&gt; Element"
+title: "<EnableAmPmParseAdjustment> Element"
 ms.date: "03/30/2017"
 ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# &lt;EnableAmPmParseAdjustment&gt; Element
+# \<EnableAmPmParseAdjustment> Element
 Determines whether date and time parsing methods use an adjusted set of rules to parse date strings that contain a day, month, hour, and AM/PM designator.  
   
- \<configuration>  
- \<runtime>  
-\<EnableAmPmParseAdjustment>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<EnableAmPmParseAdjustment>**  
   
 ## Syntax  
   
@@ -47,22 +45,22 @@ Determines whether date and time parsing methods use an adjusted set of rules to
 ## Remarks  
  The `<EnableAmPmParseAdjustment>` element controls how the following methods parse a date string that contains a numeric day and month followed by an hour and an AM/PM designator (such as "4/10 6 AM"):  
   
--   <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>  
+- <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>  
   
--   <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType>  
+- <xref:System.DateTimeOffset.Parse%2A?displayProperty=nameWithType>  
   
--   <xref:System.DateTime.TryParse%2A?displayProperty=nameWithType>  
+- <xref:System.DateTime.TryParse%2A?displayProperty=nameWithType>  
   
--   <xref:System.DateTimeOffset.TryParse%2A?displayProperty=nameWithType>  
+- <xref:System.DateTimeOffset.TryParse%2A?displayProperty=nameWithType>  
   
--   <xref:System.Convert.ToDateTime%2A?displayProperty=nameWithType>  
+- <xref:System.Convert.ToDateTime%2A?displayProperty=nameWithType>  
   
  No other patterns are affected.  
   
  The `<EnableAmPmParseAdjustment>` element has no effect on the  <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType>,  <xref:System.DateTime.TryParseExact%2A?displayProperty=nameWithType>, <xref:System.DateTimeOffset.ParseExact%2A?displayProperty=nameWithType>, and <xref:System.DateTimeOffset.TryParseExact%2A?displayProperty=nameWithType> methods.  
   
 > [!IMPORTANT]
->  In .NET Core and .NET Native, the adjusted AM/PM parsing rules are enabled by default.  
+> In .NET Core and .NET Native, the adjusted AM/PM parsing rules are enabled by default.  
   
  If the parsing adjustment rule is not enabled, the first digit of the string is interpreted as the hour of the 12-hour clock, and the remainder of the string except for the AM/PM designator is ignored. The date and time returned by the parsing method consists of the current date and the hour of the day extracted from the date string.  
   
@@ -75,6 +73,7 @@ Determines whether date and time parsing methods use an adjusted set of rules to
 |en-US|1/5/2017 4:00:00 AM|4/10/2017 6:00:00 AM|  
 |en-GB|5/1/2017 6:00:00|10/4/2017 6:00:00|  
   
-## See Also  
-- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)  
-- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)
+## See also
+
+- [\<runtime> Element](runtime-element.md)
+- [\<configuration> Element](../configuration-element.md)

@@ -1,7 +1,5 @@
 ---
 title: "Reference types - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.referencetypes"
@@ -21,20 +19,19 @@ There are two kinds of types in C#: reference types and value types. Variables o
 
 - [interface](interface.md)
 
-- [delegate](delegate.md)
+- [delegate](../builtin-types/reference-types.md)
 
  C# also provides the following built-in reference types:
 
-- [dynamic](dynamic.md)
+- [dynamic](../builtin-types/reference-types.md)
 
-- [object](object.md)
+- [object](../builtin-types/reference-types.md)
 
-- [string](string.md)
+- [string](../builtin-types/reference-types.md)
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Reference](../index.md)
 - [C# Keywords](index.md)
-- [Types](types.md)
-- [Value Types](value-types.md)
+- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Value types](../builtin-types/value-types.md)

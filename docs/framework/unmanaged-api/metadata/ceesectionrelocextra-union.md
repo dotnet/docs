@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: d9568cf6-7f98-4cd6-ab36-0a2bd509afcc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CeeSectionRelocExtra Union
-Represents an address offset that is used by the [ICeeGen](../../../../docs/framework/unmanaged-api/metadata/iceegen-interface.md) interface to relocate a section.  
+Represents an address offset that is used by the [ICeeGen](iceegen-interface.md) interface to relocate a section.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef union  {  
     USHORT highAdj;  
 } CeeSectionRelocExtra;  
@@ -35,7 +33,7 @@ typedef union  {
 |`highAdj`|The upper address adjustment for the section.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -43,5 +41,6 @@ typedef union  {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Unions](../../../../docs/framework/unmanaged-api/metadata/metadata-unions.md)
+## See also
+
+- [Metadata Unions](metadata-unions.md)

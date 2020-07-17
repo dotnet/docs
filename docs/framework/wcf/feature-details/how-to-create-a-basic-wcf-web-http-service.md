@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Basic WCF Web HTTP Service"
+description: Learn how to create a service that exposes a web endpoint in WCF. Web endpoints send data by using XML or JSON. There is no SOAP envelope.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -61,7 +62,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
 
      This sample demonstrates how to host a Web-Style service with a console application. You can also host such a service within IIS. To do this, specify the <xref:System.ServiceModel.Activation.WebServiceHostFactory> class in a .svc file as the following code demonstrates.
 
-    ```
+    ```text
     <%ServiceHost
         language=c#
         Debug="true"

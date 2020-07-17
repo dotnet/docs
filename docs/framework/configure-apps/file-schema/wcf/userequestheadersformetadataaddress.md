@@ -1,25 +1,27 @@
 ---
-title: "&lt;useRequestHeadersForMetadataAddress&gt;"
+title: "<useRequestHeadersForMetadataAddress>"
 ms.date: "03/30/2017"
 ms.assetid: 679f0eae-f353-44d1-b42d-a9e247509774
 ---
-# &lt;useRequestHeadersForMetadataAddress&gt;
+# \<useRequestHeadersForMetadataAddress>
 Enables the retrieval of metadata address information from the request message headers.  
   
-\<system.ServiceModel>  
-\<behaviors>  
-\<serviceBehaviors>  
-\<behavior>  
-\<useRequestHeadersForMetadataAddress>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<serviceBehaviors>**](servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-servicebehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<useRequestHeadersForMetadataAddress>**  
   
 ## Syntax  
   
 ```xml  
 <useRequestHeadersForMetadataAddress>
   <defaultPorts>
-    <add scheme="http" port="integer" />
+    <add scheme="http"
+         port="integer" />
   </defaultPorts>
-</useRequestHeadersForMetadataAddress>  
+</useRequestHeadersForMetadataAddress>
 ```  
   
 ## Attributes and Elements  
@@ -32,13 +34,14 @@ Enables the retrieval of metadata address information from the request message h
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<defaultPorts>](../../../../../docs/framework/configure-apps/file-schema/wcf/defaultports.md)|A collection of default ports listing the default communications endpoints that the client application listens to.|  
+|[\<defaultPorts>](defaultports.md)|A collection of default ports listing the default communications endpoints that the client application listens to.|  
   
 ### Parent Elements  
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
+|[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.UseRequestHeadersForMetadataAddressElement>
+## See also
+
+- <xref:System.ServiceModel.Configuration.UseRequestHeadersForMetadataAddressElement>

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4400fb8c-0407-4791-8557-f011fd2aee51
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::GetRuntimeInformation Method
 Provides version information about the common language runtime (CLR) that is being profiled.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRuntimeInformation(  
        [out] USHORT *pClrInstanceId,  
        [out] COR_PRF_RUNTIME_TYPE *pRuntimeType,  
@@ -37,7 +35,7 @@ HRESULT GetRuntimeInformation(
                    WCHAR  szVersionString[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pClrInstanceId`  
  [out] The representative ID of a running CLR instance in a process. This is the same as the `ClrInstanceID` that the event tracing for Windows (ETW) startup event reports.  
   
@@ -69,7 +67,7 @@ HRESULT GetRuntimeInformation(
  You may pass null for any parameter. However, `pcchVersionString` cannot be null unless `szVersionString` is also null.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -77,7 +75,8 @@ HRESULT GetRuntimeInformation(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)  
- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+## See also
+
+- [ICorProfilerInfo3 Interface](icorprofilerinfo3-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)
+- [Profiling](index.md)

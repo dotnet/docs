@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 06fae364-f2c6-4a50-aa7e-3da9f2684dc3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::Detach Method
 Detaches the debugger from the process or application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Detach ();  
 ```  
   
@@ -33,7 +31,7 @@ HRESULT Detach ();
  In the .NET Framework version 2.0, if unmanaged debugging is enabled, this method will fail due to operating system limitations.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -41,5 +39,4 @@ HRESULT Detach ();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- 
+## See also

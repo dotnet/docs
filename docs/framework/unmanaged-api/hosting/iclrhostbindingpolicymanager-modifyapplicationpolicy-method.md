@@ -15,27 +15,25 @@ helpviewer_keywords:
 ms.assetid: d82d633e-cce6-427c-8b02-8227e34e12ba
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostBindingPolicyManager::ModifyApplicationPolicy Method
 Modifies the binding policy for the specified assembly, and creates a new version of the policy.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT  ModifyApplicationPolicy (  
-    [in] LPCWSTR     pwzSourceAssemblyIdentity,   
+    [in] LPCWSTR     pwzSourceAssemblyIdentity,
     [in] LPCWSTR     pwzTargetAssemblyIdentity,  
     [in] BYTE       *pbApplicationPolicy,  
     [in] DWORD       cbAppPolicySize,  
     [in] DWORD       dwPolicyModifyFlags,  
-    [out, size_is(*pcbNewAppPolicySize)] BYTE *pbNewApplicationPolicy,   
+    [out, size_is(*pcbNewAppPolicySize)] BYTE *pbNewApplicationPolicy,
     [in, out] DWORD *pcbNewAppPolicySize  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pwzSourceAssemblyIdentity`  
  [in] The identity of the assembly to modify.  
   
@@ -49,7 +47,7 @@ HRESULT  ModifyApplicationPolicy (
  [in] The size of the binding policy to be replaced.  
   
  `dwPolicyModifyFlags`  
- [in] A logical OR combination of [EHostBindingPolicyModifyFlags](../../../../docs/framework/unmanaged-api/hosting/ehostbindingpolicymodifyflags-enumeration.md) values, indicating control of redirection.  
+ [in] A logical OR combination of [EHostBindingPolicyModifyFlags](ehostbindingpolicymodifyflags-enumeration.md) values, indicating control of redirection.  
   
  `pbNewApplicationPolicy`  
  [out] A pointer to a buffer that contains the new binding policy data.  
@@ -74,7 +72,7 @@ HRESULT  ModifyApplicationPolicy (
  The `ModifyApplicationPolicy` method can be called twice. The first call should supply a null value for the `pbNewApplicationPolicy` parameter. This call will return with the necessary value for `pcbNewAppPolicySize`. The second call should supply this value for `pcbNewAppPolicySize`, and point to a buffer of that size for `pbNewApplicationPolicy`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -82,5 +80,6 @@ HRESULT  ModifyApplicationPolicy (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRHostBindingPolicyManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrhostbindingpolicymanager-interface.md)
+## See also
+
+- [ICLRHostBindingPolicyManager Interface](iclrhostbindingpolicymanager-interface.md)

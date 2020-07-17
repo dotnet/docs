@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "timers, about timers"
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
 author: "pkulikov"
-ms.author: "ronpet"
 ---
 # Timers
 
@@ -30,7 +29,7 @@ ms.author: "ronpet"
 
 ## The System.Threading.Timer class
 
-The <xref:System.Threading.Timer?displayProperty=nameWithType> class enables you to continuously call a delegate at specified time intervals. You also can use this class to schedule a single call to a delegate in a specified time interval. The delegate is executed on a <xref:System.Threading.ThreadPool> thread.
+The <xref:System.Threading.Timer?displayProperty=nameWithType> class enables you to continuously call a delegate at specified time intervals. You can also use this class to schedule a single call to a delegate in a specified time interval. The delegate is executed on a <xref:System.Threading.ThreadPool> thread.
 
 When you create a <xref:System.Threading.Timer?displayProperty=nameWithType> object, you specify a <xref:System.Threading.TimerCallback> delegate that defines the callback method, an optional state object that is passed to the callback, the amount of time to delay before the first invocation of the callback, and the time interval between callback invocations. To cancel a pending timer, call the <xref:System.Threading.Timer.Dispose%2A?displayProperty=nameWithType> method.
 
@@ -52,6 +51,6 @@ For more information and examples, see <xref:System.Timers.Timer?displayProperty
   
 ## See also
 
-- <xref:System.Threading.Timer?displayProperty=nameWithType>  
-- <xref:System.Timers.Timer?displayProperty=nameWithType>  
+- <xref:System.Threading.Timer?displayProperty=nameWithType>
+- <xref:System.Timers.Timer?displayProperty=nameWithType>
 - [Threading Objects and Features](threading-objects-and-features.md)

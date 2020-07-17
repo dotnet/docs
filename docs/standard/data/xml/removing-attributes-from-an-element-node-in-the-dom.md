@@ -3,29 +3,27 @@ title: "Removing Attributes from an Element Node in the DOM"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 7ede6f9e-a3ac-49a4-8488-ab8360a44aa4
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Removing Attributes from an Element Node in the DOM
 There are many ways to remove attributes. One technique is to remove them from the attribute collection. To do this, the following steps are performed:  
   
-1.  Get the attribute collection from the element using `XmlAttributeCollection attrs = elem.Attributes;`.  
+1. Get the attribute collection from the element using `XmlAttributeCollection attrs = elem.Attributes;`.  
   
-2.  Remove the attribute from the attribute collection using one of three methods:  
+2. Remove the attribute from the attribute collection using one of three methods:  
   
-    -   Use <xref:System.Xml.XmlAttributeCollection.Remove%2A> to remove a specific attribute.  
+    - Use <xref:System.Xml.XmlAttributeCollection.Remove%2A> to remove a specific attribute.  
   
-    -   Use <xref:System.Xml.XmlAttributeCollection.RemoveAll%2A> to remove all attributes from the collection and leave the element with no attributes.  
+    - Use <xref:System.Xml.XmlAttributeCollection.RemoveAll%2A> to remove all attributes from the collection and leave the element with no attributes.  
   
-    -   Use <xref:System.Xml.XmlAttributeCollection.RemoveAt%2A> to remove an attribute from the attribute collection by using its index number.  
+    - Use <xref:System.Xml.XmlAttributeCollection.RemoveAt%2A> to remove an attribute from the attribute collection by using its index number.  
   
  The following methods remove attributes from the element node.  
   
--   Use <xref:System.Xml.XmlElement.RemoveAllAttributes%2A> to remove the attribute collection.  
+- Use <xref:System.Xml.XmlElement.RemoveAllAttributes%2A> to remove the attribute collection.  
   
--   Use <xref:System.Xml.XmlElement.RemoveAttribute%2A> to remove a single attribute by name from the collection.  
+- Use <xref:System.Xml.XmlElement.RemoveAttribute%2A> to remove a single attribute by name from the collection.  
   
--   Use <xref:System.Xml.XmlElement.RemoveAttributeAt%2A> to remove a single attribute by index number from the collection.  
+- Use <xref:System.Xml.XmlElement.RemoveAttributeAt%2A> to remove a single attribute by index number from the collection.  
   
  One more alternative is to get the element, get the attribute from the attribute collection, and remove the attribute node directly. To get the attribute from the attribute collection, you can use a name, `XmlAttribute attr = attrs["attr_name"];`, an index `XmlAttribute attr = attrs[0];`, or by fully qualifying the name with the namespace `XmlAttribute attr = attrs["attr_localName", "attr_namespace"]`.  
   
@@ -35,4 +33,4 @@ There are many ways to remove attributes. One technique is to remove them from t
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

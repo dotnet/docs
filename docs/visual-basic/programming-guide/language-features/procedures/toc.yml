@@ -1,0 +1,114 @@
+- name: Procedures in Visual Basic
+  href: index.md
+  items:
+  - name: "How to: Create a Procedure"
+    href: how-to-create-a-procedure.md
+  - name: Sub Procedures
+    href: sub-procedures.md
+    items:
+    - name: "How to: Call a Procedure that Does Not Return a Value"
+      href: how-to-call-a-procedure-that-does-not-return-a-value.md
+    - name: "How to: Call an Event Handler"
+      href: how-to-call-an-event-handler.md
+  - name: Function Procedures
+    href: function-procedures.md
+    items:
+    - name: "How to: Create a Procedure that Returns a Value"
+      href: how-to-create-a-procedure-that-returns-a-value.md
+    - name: "How to: Return a Value from a Procedure"
+      href: how-to-return-a-value-from-a-procedure.md
+    - name: "How to: Call a Procedure That Returns a Value"
+      href: how-to-call-a-procedure-that-returns-a-value.md
+  - name: Property Procedures
+    href: property-procedures.md
+    items:
+    - name: Auto-Implemented Properties
+      href: auto-implemented-properties.md
+    - name: Differences Between Properties and Variables
+      href: differences-between-properties-and-variables.md
+    - name: "How to: Create a Property"
+      href: how-to-create-a-property.md
+    - name: "How to: Declare a Property with Mixed Access Levels"
+      href: how-to-declare-a-property-with-mixed-access-levels.md
+    - name: "How to: Call a Property Procedure"
+      href: how-to-call-a-property-procedure.md
+    - name: "How to: Declare and Call a Default Property"
+      href: how-to-declare-and-call-a-default-property.md
+    - name: "How to: Put a Value in a Property"
+      href: how-to-put-a-value-in-a-property.md
+    - name: "How to: Get a Value from a Property"
+      href: how-to-get-a-value-from-a-property.md
+  - name: Operator Procedures
+    href: operator-procedures.md
+    items:
+    - name: "How to: Define an Operator"
+      href: how-to-define-an-operator.md
+    - name: "How to: Define a Conversion Operator"
+      href: how-to-define-a-conversion-operator.md
+    - name: "How to: Call an Operator Procedure"
+      href: how-to-call-an-operator-procedure.md
+    - name: "How to: Use a Class that Defines Operators"
+      href: how-to-use-a-class-that-defines-operators.md
+  - name: Procedure Parameters and Arguments
+    href: procedure-parameters-and-arguments.md
+    items:
+    - name: Differences Between Parameters and Arguments
+      href: differences-between-parameters-and-arguments.md
+    - name: "How to: Define a Parameter for a Procedure"
+      href: how-to-define-a-parameter-for-a-procedure.md
+    - name: "How to: Pass Arguments to a Procedure"
+      href: how-to-pass-arguments-to-a-procedure.md
+    - name: Passing Arguments by Value and by Reference
+      href: passing-arguments-by-value-and-by-reference.md
+      items:
+      - name: Differences Between Modifiable and Nonmodifiable Arguments
+        href: differences-between-modifiable-and-nonmodifiable-arguments.md
+      - name: Differences Between Passing an Argument By Value and By Reference
+        href: differences-between-passing-an-argument-by-value-and-by-reference.md
+      - name: "How to: Change the Value of a Procedure Argument"
+        href: how-to-change-the-value-of-a-procedure-argument.md
+      - name: "How to: Protect a Procedure Argument Against Value Changes"
+        href: how-to-protect-a-procedure-argument-against-value-changes.md
+      - name: "How to: Force an Argument to Be Passed by Value"
+        href: how-to-force-an-argument-to-be-passed-by-value.md
+    - name: Passing Arguments by Position and by Name
+      href: passing-arguments-by-position-and-by-name.md
+    - name: Optional Parameters
+      href: optional-parameters.md
+    - name: Parameter Arrays
+      href: parameter-arrays.md
+  - name: Reference return values
+    href: ref-return-values.md
+  - name: Recursive Procedures
+    href: recursive-procedures.md
+  - name: Procedure Overloading
+    href: procedure-overloading.md
+    items:
+    - name: "How to: Define Multiple Versions of a Procedure"
+      href: how-to-define-multiple-versions-of-a-procedure.md
+    - name: "How to: Call an Overloaded Procedure"
+      href: how-to-call-an-overloaded-procedure.md
+    - name: "How to: Overload a Procedure that Takes Optional Parameters"
+      href: how-to-overload-a-procedure-that-takes-optional-parameters.md
+    - name: "How to: Overload a Procedure that Takes an Indefinite Number of Parameters"
+      href: how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md
+    - name: Considerations in Overloading Procedures
+      href: considerations-in-overloading-procedures.md
+    - name: Overload Resolution
+      href: overload-resolution.md
+  - name: Troubleshooting Procedures
+    href: troubleshooting-procedures.md
+  - name: Extension Methods
+    href: extension-methods.md
+    items:
+    - name: "How to: Write an Extension Method"
+      href: how-to-write-an-extension-method.md
+    - name: "How to: Call an Extension Method"
+      href: how-to-call-an-extension-method.md
+  - name: Lambda Expressions
+    href: lambda-expressions.md
+    items:
+    - name: "How to: Create a Lambda Expression"
+      href: how-to-create-a-lambda-expression.md
+  - name: Partial Methods
+    href: partial-methods.md

@@ -15,16 +15,14 @@ helpviewer_keywords:
 ms.assetid: 31214d3a-715e-49af-92b3-0fd11e4f218a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetCodedTokenInfo Method
 Gets a pointer to an array of tokens associated with the specified row index.  
   
 ## Syntax  
   
-```  
-HRESULT GetCodedTokenInfo (   
+```cpp  
+HRESULT GetCodedTokenInfo (
     [in]  ULONG       ixCdTkn,  
     [out] ULONG       *pcTokens,  
     [out] ULONG       **ppTokens,  
@@ -32,7 +30,7 @@ HRESULT GetCodedTokenInfo (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixCdTkn`  
  [in] The kind of coded token to return.  
   
@@ -46,7 +44,7 @@ HRESULT GetCodedTokenInfo (
  [out] A pointer to a pointer to the name of the token at `ixCdTkn`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -54,6 +52,7 @@ HRESULT GetCodedTokenInfo (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+## See also
+
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

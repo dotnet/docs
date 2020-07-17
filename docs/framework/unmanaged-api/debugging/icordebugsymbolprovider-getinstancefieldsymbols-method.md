@@ -2,15 +2,13 @@
 title: "ICorDebugSymbolProvider::GetInstanceFieldSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: a29b9233-ee67-4b53-b8bc-c00b281e7edb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetInstanceFieldSymbols Method
 Gets the instance field symbols that correspond to a typespec signature.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetInstanceFieldSymbols(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
@@ -20,7 +18,7 @@ HRESULT GetInstanceFieldSymbols(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cbSignature`  
  [in] The number of bytes in the `typeSig` array.  
   
@@ -34,15 +32,15 @@ HRESULT GetInstanceFieldSymbols(
  [out] A pointer to the number of symbols retrieved by the method.  
   
  `pSymbols`  
- [out] A pointer to an [ICorDebugStaticFieldSymbol](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-interface.md) array that contains the requested instance field symbols.  
+ [out] A pointer to an [ICorDebugStaticFieldSymbol](icordebugstaticfieldsymbol-interface.md) array that contains the requested instance field symbols.  
   
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -50,7 +48,8 @@ HRESULT GetInstanceFieldSymbols(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [GetStaticFieldSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getstaticfieldsymbols-method.md)  
- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [GetStaticFieldSymbols Method](icordebugsymbolprovider-getstaticfieldsymbols-method.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

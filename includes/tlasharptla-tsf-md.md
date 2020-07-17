@@ -1,1 +1,0 @@
-Text Services Framework (TSF)

@@ -10,17 +10,15 @@ helpviewer_keywords:
   - "security [.NET Framework], replacing principal objects"
   - "security [.NET Framework], principals"
 ms.assetid: c323687e-b196-487b-beba-f38f9b3f961b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Replacing a Principal Object
 Applications that provide authentication services must be able to replace the **Principal** object (<xref:System.Security.Principal.IPrincipal>) for a given thread. Furthermore, the security system must help protect the ability to replace **Principal** objects because a maliciously attached, incorrect **Principal** compromises the security of your application by claiming an untrue identity or role. Therefore, applications that require the ability to replace **Principal** objects must be granted the <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType> object for principal control. (Note that this permission is not required for performing role-based security checks or for creating **Principal** objects.)  
   
  The current **Principal** object can be replaced by performing the following tasks:  
   
-1.  Create the replacement **Principal** object and associated **Identity** object.  
+1. Create the replacement **Principal** object and associated **Identity** object.  
   
-2.  Attach the new **Principal** object to the call context.  
+2. Attach the new **Principal** object to the call context.  
   
 ## Example  
  The following example shows how to create a generic principal object and use it to set the principal of a thread.  
@@ -30,5 +28,5 @@ Applications that provide authentication services must be able to replace the **
   
 ## See also
 
-- <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>  
-- [Principal and Identity Objects](../../../docs/standard/security/principal-and-identity-objects.md)
+- <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType>
+- [Principal and Identity Objects](principal-and-identity-objects.md)

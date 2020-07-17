@@ -1,5 +1,5 @@
 ---
-title: "Cloning vs. Attaching (Visual Basic)"
+title: "Cloning vs. Attaching"
 ms.date: 07/20/2015
 ms.assetid: 3c3bd105-c9d3-49bd-875b-27ab4e8bc7a3
 ---
@@ -39,10 +39,11 @@ Console.WriteLine("Child2 was {0}", _
   
  This example produces the following output:  
   
-```  
+```console  
 Child1 was cloned  
 Child2 was attached  
 ```  
   
-## See Also  
- [Creating XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-xml-trees.md)
+## See also
+
+- [Creating XML Trees (Visual Basic)](creating-xml-trees.md)

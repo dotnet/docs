@@ -5,6 +5,7 @@ api_name:
   - "CoInitializeEE"
 api_location: 
   - "mscoree.dll"
+  - "mscorsvr.dll"
 api_type: 
   - "DLLExport"
 f1_keywords: 
@@ -14,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: 7e42a928-5068-4ba6-b8c3-806551a01fa8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoInitializeEE Function
-Ensures that the common language runtime execution engine is loaded into a process. This function is deprecated in the [!INCLUDE[net_v40_long](../../../../includes/net-v40-long-md.md)]. Use the [ICLRRuntimeHost::Start](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-start-method.md) method instead.  
+Ensures that the common language runtime execution engine is loaded into a process. This function is deprecated in the .NET Framework 4. Use the [ICLRRuntimeHost::Start](iclrruntimehost-start-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CoInitializeEE (  
    [in] DWORD fFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fFlags`  
- [in] One of the [COINITIEE](../../../../docs/framework/unmanaged-api/metadata/coinitiee-enumeration.md) enumeration constants.  
+ [in] One of the [COINITIEE](../metadata/coinitiee-enumeration.md) enumeration constants.  
   
 ## Return Value  
  This method returns standard COM error codes as defined in Winerror.h, and the values in the following table.  
@@ -45,7 +44,7 @@ HRESULT CoInitializeEE (
  This method loads the execution engine if it has not been previously loaded.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -53,5 +52,6 @@ HRESULT CoInitializeEE (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+## See also
+
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bb203853-6a6d-4027-b9e9-603a7f28b9d3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetDocument Method
 Finds a document. The document language, vendor, and type are optional.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocument (  
     [in]  WCHAR  *url,  
     [in]  GUID   language,  
@@ -32,7 +30,7 @@ HRESULT GetDocument (
     [out, retval] ISymUnmanagedDocument** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `url`  
  [in] The URL that identifies the document.  
   
@@ -54,5 +52,6 @@ HRESULT GetDocument (
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)
+## See also
+
+- [ISymUnmanagedReader Interface](isymunmanagedreader-interface.md)

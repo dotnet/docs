@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: ae0836d0-1170-4494-bac5-d0e809df51a2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityContext::Capture Method
-Gets a clone of the [IHostSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md) instance returned from a call to [IHostSecurityManager::GetSecurityContext](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-getsecuritycontext-method.md).  
+Gets a clone of the [IHostSecurityContext](ihostsecuritycontext-interface.md) instance returned from a call to [IHostSecurityManager::GetSecurityContext](ihostsecuritymanager-getsecuritycontext-method.md).  
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT Capture (  
     [out] IHostSecurityContext** ppClonedContext  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppClonedContext`  
  [out] A pointer to the address of a clone of the `IHostSecurityContext` object to be captured.  
   
@@ -48,7 +46,7 @@ HRESULT Capture (
  The interface pointer returned from `Capture` is a clone of the captured context. When this information is moved across an asynchronous code point, its lifetime is separated from that of the pointer against which the call was made. The original pointer can therefore be released.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -56,6 +54,7 @@ HRESULT Capture (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostSecurityContext Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritycontext-interface.md)  
- [IHostSecurityManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsecuritymanager-interface.md)
+## See also
+
+- [IHostSecurityContext Interface](ihostsecuritycontext-interface.md)
+- [IHostSecurityManager Interface](ihostsecuritymanager-interface.md)

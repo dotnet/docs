@@ -29,7 +29,7 @@ Private Sub LoadBirthdays(ByVal connectionString As String)
       " FROM dbo.Employees " & _  
       "ORDER BY BirthDate, LastName, FirstName"  
   
-    ' Open and fill a DataSet.   
+    ' Open and fill a DataSet.
     Dim adapter As SqlDataAdapter = New SqlDataAdapter( _  
         queryString, connectionString)  
     Dim employees As New DataSet  
@@ -62,6 +62,7 @@ Private Sub LoadBirthdays(ByVal connectionString As String)
 End Sub  
 ```  
   
-## See Also  
- [Manipulating Data in a DataTable](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/manipulating-data-in-a-datatable.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Manipulating Data in a DataTable](manipulating-data-in-a-datatable.md)
+- [ADO.NET Overview](../ado-net-overview.md)

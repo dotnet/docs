@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: b39b3320-fac7-41f1-9a03-ab6fb0cd89c7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ECustomDumpFlavor Enumeration
 Contains values that indicate which items to include in a custom subset of a heap dump when reporting errors.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     DUMP_FLAVOR_Mini            = 1,  
     DUMP_FLAVOR_NonHeapCLRState = 2  
@@ -33,14 +31,14 @@ typedef enum {
   
 |Member|Description|  
 |------------|-----------------|  
-|`DUMP_FLAVOR_Mini`|Specifies that the custom heap dump should start as a minidump and include extra data specified by any [CustomDumpItem](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md) instances passed to the same method.|  
+|`DUMP_FLAVOR_Mini`|Specifies that the custom heap dump should start as a minidump and include extra data specified by any [CustomDumpItem](customdumpitem-structure.md) instances passed to the same method.|  
 |`DUMP_FLAVOR_NonHeapCLRState`|Specifies that the custom heap dump should gather all run-time state data that was not dynamically allocated.|  
   
 ## Remarks  
- A parameter of type `ECustomDumpFlavor` is passed to the [ICLRErrorReportingManager::BeginCustomDump](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-begincustomdump-method.md) method.  
+ A parameter of type `ECustomDumpFlavor` is passed to the [ICLRErrorReportingManager::BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -48,7 +46,8 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ECustomDumpItemKind Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpitemkind-enumeration.md)  
- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## See also
+
+- [ECustomDumpItemKind Enumeration](ecustomdumpitemkind-enumeration.md)
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)
+- [Hosting Enumerations](hosting-enumerations.md)

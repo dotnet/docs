@@ -14,45 +14,43 @@ helpviewer_keywords:
   - "BlessIWbemServicesObject function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BlessIWbemServicesObject function
-Indicates whether the user credentials permit access to a specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object.   
-  
+Indicates whether the user credentials permit access to a specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object.
+
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-  
-## Syntax  
-  
-```  
+
+## Syntax
+
+```cpp
 HRESULT BlessIWbemServicesObject (
    [in] IUnknown* pIUnknown,
-   [in] BSTR strUser, 
-   [in] BSTR strPassword, 
-   [in] BSTR strAuthority, 
-   [in] DWORD impLevel, 
+   [in] BSTR strUser,
+   [in] BSTR strPassword,
+   [in] BSTR strAuthority,
+   [in] DWORD impLevel,
    [in] DWORD authnLevel
 );
-```  
+```
 
 ## Parameters
 
-`pIWbemServices`  
+`pIWbemServices`\
 [in] A pointer to a WMI service object.
 
-`strUser`  
+`strUser`\
 [in] The user name.
 
-`strPassword`  
+`strPassword`\
 [in] The password associated with `strUser`.
 
-`strAuthority`
+`strAuthority`\
 [in] The domain name of the user. See the [ConnectServerWmi](connectserverwmi.md) function for more information.
 
-`impLevel`
+`impLevel`\
 [in] The impersonation level.
 
-`authnLevel`
+`authnLevel`\
 [in] The authorization level.
 
 ## Return value
@@ -62,17 +60,19 @@ The following values returned by this function are defined in the *WinError.h* h
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 | `E_INVALIDARG` | 0x80070057 | One or more arguments are invalid. |
-| `E_POINTER` | 0x80004003 | `pIWbemServices` is `null`. | 
+| `E_POINTER` | 0x80004003 | `pIWbemServices` is `null`. |
 | `E_FAIL` | 0x80000008 | An unspecified error has occurred. |
-| `E_OUTOFMEMORY` | 0x80000002 | Insufficient memory is available to perform the operation. | 
-| `S_OK` | 0 | The function call was successful. | 
+| `E_OUTOFMEMORY` | 0x80000002 | Insufficient memory is available to perform the operation. |
+| `S_OK` | 0 | The function call was successful. |
 
-## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
-  
- **Header:** WMINet_Utils.idl  
-  
- **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
-  
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## Requirements
+
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
+
+ **Header:** WMINet_Utils.idl
+
+ **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]
+
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

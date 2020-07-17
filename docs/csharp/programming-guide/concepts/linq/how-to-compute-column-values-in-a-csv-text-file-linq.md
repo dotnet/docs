@@ -1,16 +1,16 @@
 ---
-title: "How to: Compute Column Values in a CSV Text File (LINQ) (C#)"
+title: "How to compute column values in a CSV text file (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 4747f37a-a198-4df2-8efe-5b0731e0ea27
 ---
-# How to: Compute Column Values in a CSV Text File (LINQ) (C#)
+# How to compute column values in a CSV text file (LINQ) (C#)
 This example shows how to perform aggregate computations such as Sum, Average, Min, and Max on the columns of a .csv file. The example principles that are shown here can be applied to other types of structured text.  
   
-### To create the source file  
+## To create the source file  
   
-1.  Copy the following lines into a file that is named scores.csv and save it in your project folder. Assume that the first column represents a student ID, and subsequent columns represent scores from four exams.  
+1. Copy the following lines into a file that is named scores.csv and save it in your project folder. Assume that the first column represents a student ID, and subsequent columns represent scores from four exams.  
   
-    ```  
+    ```csv
     111, 97, 92, 81, 60  
     112, 75, 84, 91, 39  
     113, 88, 94, 65, 91  
@@ -55,14 +55,14 @@ class SumColumns
     {  
         Console.WriteLine("Single Column Query:");  
   
-        // Parameter examNum specifies the column to   
+        // Parameter examNum specifies the column to
         // run the calculations on. This value could be  
-        // passed in dynamically at runtime.               
+        // passed in dynamically at runtime.
   
         // Variable columnQuery is an IEnumerable<int>.  
         // The following query performs two steps:  
-        // 1) use Split to break each row (a string) into an array   
-        //    of strings,   
+        // 1) use Split to break each row (a string) into an array
+        //    of strings,
         // 2) convert the element at position examNum to an int  
         //    and select it.  
         var columnQuery =  
@@ -89,17 +89,17 @@ class SumColumns
         Console.WriteLine("Multi Column Query:");  
   
         // Create a query, multiColQuery. Explicit typing is used  
-        // to make clear that, when executed, multiColQuery produces   
+        // to make clear that, when executed, multiColQuery produces
         // nested sequences. However, you get the same results by  
         // using 'var'.  
   
         // The multiColQuery query performs the following steps:  
-        // 1) use Split to break each row (a string) into an array   
-        //    of strings,   
-        // 2) use Skip to skip the "Student ID" column, and store the   
+        // 1) use Split to break each row (a string) into an array
+        //    of strings,
+        // 2) use Skip to skip the "Student ID" column, and store the
         //    rest of the row in scores.  
         // 3) convert each score in the current row from a string to  
-        //    an int, and select that entire sequence as one row   
+        //    an int, and select that entire sequence as one row
         //    in the results.  
         IEnumerable<IEnumerable<int>> multiColQuery =  
             from line in strs  
@@ -109,7 +109,7 @@ class SumColumns
                     select Convert.ToInt32(str));  
   
         // Execute the query and cache the results to improve  
-        // performance.   
+        // performance.
         // ToArray could be used instead of ToList.  
         var results = multiColQuery.ToList();  
   
@@ -117,11 +117,11 @@ class SumColumns
         int columnCount = results[0].Count();  
   
         // Perform aggregate calculations Average, Max, and  
-        // Min on each column.              
-        // Perform one iteration of the loop for each column   
+        // Min on each column.
+        // Perform one iteration of the loop for each column
         // of scores.  
-        // You can use a for loop instead of a foreach loop   
-        // because you already executed the multiColQuery   
+        // You can use a for loop instead of a foreach loop
+        // because you already executed the multiColQuery
         // query by calling ToList.  
         for (int column = 0; column < columnCount; column++)  
         {  
@@ -153,9 +153,9 @@ class SumColumns
  The query works by using the <xref:System.String.Split%2A> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation. If your file is a tab-separated file, just update the argument in the `Split` method to `\t`.  
   
 ## Compiling the Code  
- Create a project that targets the .NET Framework  version 3.5 or higher, with a reference to System.Core.dll and `using` directives for the System.Linq and System.IO namespaces.  
+ Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
-## See Also
+## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)  
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

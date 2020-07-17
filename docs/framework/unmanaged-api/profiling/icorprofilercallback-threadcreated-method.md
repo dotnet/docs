@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: cca0f799-09b8-4689-a33c-6d6537943a9b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ThreadCreated Method
 Notifies the profiler that a thread has been created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadCreated(  
-    [in] ThreadID threadId);   
+    [in] ThreadID threadId);
 ```  
   
-#### Parameters  
+## Parameters  
  `threadId`  
  [in] The ID of the thread that has been created.  
   
@@ -36,7 +34,7 @@ HRESULT ThreadCreated(
  The `threadId` value is immediately valid.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -44,6 +42,7 @@ HRESULT ThreadCreated(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ThreadDestroyed Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-threaddestroyed-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ThreadDestroyed Method](icorprofilercallback-threaddestroyed-method.md)

@@ -1,7 +1,7 @@
 ---
 title: Group query results (LINQ in C#)
 description: Learn how to group results using LINQ in C#.
-ms.date: 12/1/2016
+ms.date: 12/01/2016
 ms.assetid: 2e4ec27f-06fb-4de7-8973-0189906d4520
 ---
 # Group query results
@@ -70,11 +70,11 @@ Paste the following method into the `StudentClass` class. Change the calling sta
 
 ## See also
 
-- <xref:System.Linq.Enumerable.GroupBy%2A>  
-- <xref:System.Linq.IGrouping%602>  
-- [Language Integrated Query (LINQ)](index.md)  
-- [group clause](../language-reference/keywords/group-clause.md)  
-- [Anonymous Types](../programming-guide/classes-and-structs/anonymous-types.md)  
-- [Perform a Subquery on a Grouping Operation](perform-a-subquery-on-a-grouping-operation.md)  
-- [Create a Nested Group](create-a-nested-group.md)  
-- [Grouping Data](../programming-guide/concepts/linq/grouping-data.md)  
+- <xref:System.Linq.Enumerable.GroupBy%2A>
+- <xref:System.Linq.IGrouping%602>
+- [Language Integrated Query (LINQ)](index.md)
+- [group clause](../language-reference/keywords/group-clause.md)
+- [Anonymous Types](../programming-guide/classes-and-structs/anonymous-types.md)
+- [Perform a Subquery on a Grouping Operation](perform-a-subquery-on-a-grouping-operation.md)
+- [Create a Nested Group](create-a-nested-group.md)
+- [Grouping Data](../programming-guide/concepts/linq/grouping-data.md)

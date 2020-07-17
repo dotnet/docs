@@ -1,5 +1,6 @@
 ---
 title: "Interoperating with unmanaged code"
+description: Review interoperation with unmanaged code. The CLR conceals from clients and servers how the object models of .NET components and unmanaged code differ.
 ms.date: "01/17/2018"
 helpviewer_keywords: 
   - "unmanaged code, interoperation"
@@ -10,14 +11,12 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, about interoperation"
   - "components [.NET Framework], interoperation with unmanaged code"
 ms.assetid: ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Interoperating with unmanaged code
 
 The .NET Framework promotes interaction with COM components, COM+ services, external type libraries, and many operating system services. Data types, method signatures, and error-handling mechanisms vary between managed and unmanaged object models. To simplify interoperation between .NET Framework components and unmanaged code and to ease the migration path, the common language runtime conceals from both clients and servers the differences in these object models.
 
-Code that executes under the control of the runtime is called managed code. Conversely, code that runs outside the runtime is called unmanaged code. COM components, ActiveX interfaces, and Win32 API functions are examples of unmanaged code.
+Code that executes under the control of the runtime is called managed code. Conversely, code that runs outside the runtime is called unmanaged code. COM components, ActiveX interfaces, and Windows API functions are examples of unmanaged code.
 
 ## In this section
 
@@ -36,9 +35,6 @@ Describes marshaling for COM interop and platform invoke.
 [How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)  
 Describes the mapping between exceptions and HRESULTs.
 
-[COM Wrappers](com-wrappers.md)  
-Describes the wrappers provided by COM interop.
-
 [Type Equivalence and Embedded Interop Types](type-equivalence-and-embedded-interop-types.md)  
 Describes how type information for COM types is embedded in assemblies, and how the common language runtime determines the equivalence of embedded COM types.
 
@@ -53,3 +49,8 @@ Describes how COM interop can activate components without using the Windows regi
 
 [How to: Configure .NET Framework-Based COM Components for Registration-Free Activation](configure-net-framework-based-com-components-for-reg.md)  
 Describes how to create an application manifest and how to create and embed a component manifest.
+
+## Related sections
+
+[COM Wrappers](../../standard/native-interop/com-wrappers.md)  
+Describes the wrappers provided by COM interop.

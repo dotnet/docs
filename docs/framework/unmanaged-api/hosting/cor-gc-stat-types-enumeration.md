@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: fc51d6db-f7f8-408b-b93d-c166fc712c99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_STAT_TYPES Enumeration
 Specifies the statistics to be recorded for a garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_GC_COUNTS                 = 0x00000001  
     COR_GC_MEMORYUSAGE            = 0x00000002  
@@ -30,7 +28,7 @@ typedef enum {
 ```  
   
 ## Remarks  
- This enumeration specifies which statistics in the [COR_GC_STATS](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md) structure are to be set by [ICLRGCManager::GetStats](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-getstats-method.md) method.  
+ This enumeration specifies which statistics in the [COR_GC_STATS](cor-gc-stats-structure.md) structure are to be set by [ICLRGCManager::GetStats](iclrgcmanager-getstats-method.md) method.  
   
 ## Members  
   
@@ -40,12 +38,13 @@ typedef enum {
 |`COR_GC_MEMORYUSAGE`|Records memory usage and garbage collection size statistics.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [COR_GC_STATS Structure](../../../../docs/framework/unmanaged-api/hosting/cor-gc-stats-structure.md)  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## See also
+
+- [COR_GC_STATS Structure](cor-gc-stats-structure.md)
+- [Hosting Enumerations](hosting-enumerations.md)

@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 895c35cf-b95d-4e3b-93b5-cfc1cf9044fc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetString Method
 Gets the string at the specified index from the table column in the current reference scope.  
   
 ## Syntax  
   
-```  
-HRESULT GetString (   
+```cpp  
+HRESULT GetString (
     [in]  ULONG       ixString,  
     [out] const char  **ppString  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ixString`  
  [in] The index at which to start to search for the next value.  
   
@@ -38,7 +36,7 @@ HRESULT GetString (
  [out] A pointer to a pointer to the returned string value.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,6 +44,7 @@ HRESULT GetString (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataTables Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables-interface.md)  
- [IMetaDataTables2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatatables2-interface.md)
+## See also
+
+- [IMetaDataTables Interface](imetadatatables-interface.md)
+- [IMetaDataTables2 Interface](imetadatatables2-interface.md)

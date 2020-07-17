@@ -1,5 +1,6 @@
 ---
 title: "failedQI MDA"
+description: Review the failedQI managed debugging assistant (MDA) in .NET, which may be activated when a cast on or a COM call from a runtime callable wrapper (RCW) fails.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "failed QueryInterface"
@@ -8,8 +9,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), failed QueryInterface"
   - "managed debugging assistants (MDAs), failed QueryInterface"
 ms.assetid: 902dc863-34b3-477c-b433-b8a6bb6133c6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # failedQI MDA
 The `failedQI` managed debugging assistant (MDA) is activated when the runtime calls `QueryInterface` on a COM interface pointer on behalf of a runtime callable wrapper (RCW), and the `QueryInterface` call fails.  
@@ -19,11 +18,11 @@ The `failedQI` managed debugging assistant (MDA) is activated when the runtime c
   
 ## Cause  
   
--   The call is made from the wrong context.  
+- The call is made from the wrong context.  
   
--   The registered proxy is failing the `QueryInterface` call because the call was attempted in the wrong context.  
+- The registered proxy is failing the `QueryInterface` call because the call was attempted in the wrong context.  
   
--   An OLE-owned proxy returned a failure HRESULT.  
+- An OLE-owned proxy returned a failure HRESULT.  
   
 ## Resolution  
  See the MSDN documentation on COM rules.  
@@ -44,7 +43,8 @@ The `failedQI` managed debugging assistant (MDA) is activated when the runtime c
 </mdaConfig>  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

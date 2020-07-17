@@ -14,23 +14,21 @@ helpviewer_keywords:
 ms.assetid: e79456b1-045b-4a84-9714-2ea560ff75ea
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IHostFilter Interface
 Provides a method to indicate that a specified token will be processed.  
   
 > [!NOTE]
->  The `IHostFilter` interface must be implemented by the client.  
+> The `IHostFilter` interface must be implemented by the client.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[MarkToken Method](../../../../docs/framework/unmanaged-api/metadata/ihostfilter-marktoken-method.md)|Indicates that the specified metadata token will be processed.|  
+|[MarkToken Method](ihostfilter-marktoken-method.md)|Indicates that the specified metadata token will be processed.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -38,5 +36,6 @@ Provides a method to indicate that a specified token will be processed.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+## See also
+
+- [Metadata Interfaces](metadata-interfaces.md)

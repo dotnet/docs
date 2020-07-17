@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 3a912787-f139-43ca-a841-8bbda3107ecf
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetAssemblyFile Method
 Assigns the name of the assembly to be built. Not for use when producing unbound modules.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAssemblyFile(  
     LPCWSTR pszFilename,  
     IMetaDataEmit* pEmitter,  
@@ -31,15 +29,15 @@ HRESULT SetAssemblyFile(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `pszFilename`  
  Fully qualified name of the manifest file.  
   
  `pEmitter`  
- Pointer to [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md) interface.  
+ Pointer to [IMetaDataEmit Interface](../metadata/imetadataemit-interface.md) interface.  
   
  `afFlags`  
- Flags as defined in [AssemblyFlags Enumeration](../../../../docs/framework/unmanaged-api/metadata/assemblyflags-enumeration.md).  
+ Flags as defined in [AssemblyFlags Enumeration](../metadata/assemblyflags-enumeration.md).  
   
  `pAssemblyID`  
  Pointer to ID of resulting assembly.  
@@ -50,7 +48,8 @@ HRESULT SetAssemblyFile(
 ## Requirements  
  Requires alink.h.  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

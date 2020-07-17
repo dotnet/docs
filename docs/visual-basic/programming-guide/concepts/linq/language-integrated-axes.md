@@ -10,10 +10,11 @@ This section describes features built directly into the Visual Basic language to
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[XML Child Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)|Provides access to the children of one of the following: an <xref:System.Xml.Linq.XElement> object, an <xref:System.Xml.Linq.XDocument> object, a collection of <xref:System.Xml.Linq.XElement> objects, or a collection of <xref:System.Xml.Linq.XDocument> objects. This axis is equivalent to the <xref:System.Xml.Linq.XContainer.Elements%2A> axis.|  
-|[XML Descendant Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-descendant-axis-property.md)|Provides access to the descendants of the following: an <xref:System.Xml.Linq.XElement> object, an <xref:System.Xml.Linq.XDocument> object, or a collection of <xref:System.Xml.Linq.XElement> objects. This axis is equivalent to the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis.|  
-|[XML Attribute Axis Property](../../../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)|Provides access to an attribute of an <xref:System.Xml.Linq.XElement> object. This axis is roughly equivalent to the <xref:System.Xml.Linq.XElement.Attribute%2A> axis. This axis differs from the <xref:System.Xml.Linq.XElement.Attribute%2A> axis in that it returns the value of the attribute, not an <xref:System.Xml.Linq.XAttribute> object.|  
-|[Extension Indexer Property](../../../../visual-basic/language-reference/xml-axis/extension-indexer-property.md)|Provides access to individual elements in a collection.|  
+|[XML Child Axis Property](../../../language-reference/xml-axis/xml-child-axis-property.md)|Provides access to the children of one of the following: an <xref:System.Xml.Linq.XElement> object, an <xref:System.Xml.Linq.XDocument> object, a collection of <xref:System.Xml.Linq.XElement> objects, or a collection of <xref:System.Xml.Linq.XDocument> objects. This axis is equivalent to the <xref:System.Xml.Linq.XContainer.Elements%2A> axis.|  
+|[XML Descendant Axis Property](../../../language-reference/xml-axis/xml-descendant-axis-property.md)|Provides access to the descendants of the following: an <xref:System.Xml.Linq.XElement> object, an <xref:System.Xml.Linq.XDocument> object, or a collection of <xref:System.Xml.Linq.XElement> objects. This axis is equivalent to the <xref:System.Xml.Linq.XContainer.Descendants%2A> axis.|  
+|[XML Attribute Axis Property](../../../language-reference/xml-axis/xml-attribute-axis-property.md)|Provides access to an attribute of an <xref:System.Xml.Linq.XElement> object. This axis is roughly equivalent to the <xref:System.Xml.Linq.XElement.Attribute%2A> axis. This axis differs from the <xref:System.Xml.Linq.XElement.Attribute%2A> axis in that it returns the value of the attribute, not an <xref:System.Xml.Linq.XAttribute> object.|  
+|[Extension Indexer Property](../../../language-reference/xml-axis/extension-indexer-property.md)|Provides access to individual elements in a collection.|  
   
-## See Also  
- [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md)
+## See also
+
+- [LINQ to XML Axes (Visual Basic)](linq-to-xml-axes.md)

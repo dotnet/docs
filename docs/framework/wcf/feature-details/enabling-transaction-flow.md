@@ -11,11 +11,11 @@ Windows Communication Foundation (WCF) provides highly flexible options for cont
 ## Transaction Flow Settings  
  Transaction flow settings are generated for a service endpoint as a result of the intersection of the following three values:  
   
--   The <xref:System.ServiceModel.TransactionFlowAttribute> attribute specified for each method in the service contract.  
+- The <xref:System.ServiceModel.TransactionFlowAttribute> attribute specified for each method in the service contract.  
   
--   The `TransactionFlow` binding property in the specific binding.  
+- The `TransactionFlow` binding property in the specific binding.  
   
--   The `TransactionFlowProtocol` binding property in the specific binding. The `TransactionFlowProtocol` binding property enables you to choose among two different transaction protocols that you can use to flow a transaction. The following sections briefly describe each of them.  
+- The `TransactionFlowProtocol` binding property in the specific binding. The `TransactionFlowProtocol` binding property enables you to choose among two different transaction protocols that you can use to flow a transaction. The following sections briefly describe each of them.  
   
 ### WS-AtomicTransaction Protocol  
  The WS-AtomicTransaction (WS-AT) protocol is useful for scenarios when interoperability with third-party protocol stacks is required.  
@@ -59,7 +59,7 @@ Windows Communication Foundation (WCF) provides highly flexible options for cont
   
  If the binding has disabled transaction flow, but one of the operations on a service contract requires an incoming transaction, then a validation exception is thrown at service startup.  
   
- Most of the standing bindings WCF provides contain the `transactionFlow` and `transactionProtocol` attributes to enable you to configure the specific binding to accept incoming transactions. For more information about setting the configuration elements, see [\<binding>](../../../../docs/framework/misc/binding.md).  
+ Most of the standing bindings WCF provides contain the `transactionFlow` and `transactionProtocol` attributes to enable you to configure the specific binding to accept incoming transactions. For more information about setting the configuration elements, see [\<binding>](../../configure-apps/file-schema/wcf/bindings.md).  
   
  An administrator or deployer can use endpoint-level transaction flow to configure transaction flow requirements or constraints at deployment time using the configuration file.  
   
@@ -68,7 +68,7 @@ Windows Communication Foundation (WCF) provides highly flexible options for cont
   
  When generating WCF clients to unknown or untrusted Web services through the use of metadata exchange, calls to operations on these Web services should suppress the current transaction if possible. The following example demonstrates how to do this.  
   
-```  
+```csharp
 //client code which has an ambient transaction  
 using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Suppress))  
 {  
@@ -86,4 +86,4 @@ using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Supp
   
  Transaction flow policy assertions affect transaction flow by specifying the SOAP headers that a client should send to a service to represent a transaction. All transaction headers must be marked with `MustUnderstand` equal to `true`. Any message with a header marked otherwise is rejected with a SOAP fault.  
   
- Only one transaction-related policy assertion can be present on a single operation. Policy documents with more than one transaction assertion on an operation are considered invalid and are rejected by WCF. In addition, only a single transaction protocol can be present inside each port type. Policy documents with operations referencing more than one transaction protocol inside a single port type are considered invalid, and are rejected by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). Policy documents with transaction assertions present on output messages or one-way input messages are also considered invalid.
+ Only one transaction-related policy assertion can be present on a single operation. Policy documents with more than one transaction assertion on an operation are considered invalid and are rejected by WCF. In addition, only a single transaction protocol can be present inside each port type. Policy documents with operations referencing more than one transaction protocol inside a single port type are considered invalid, and are rejected by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md). Policy documents with transaction assertions present on output messages or one-way input messages are also considered invalid.

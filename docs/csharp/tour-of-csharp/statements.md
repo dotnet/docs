@@ -1,7 +1,7 @@
 ---
 title: C# Statements - A tour of the C# language
 description: You create the actions of a C# program using statements
-ms.date: 11/06/2016
+ms.date: 02/27/2020
 ms.assetid: 5409c379-5622-4fae-88b5-1654276ea8d4
 ---
 
@@ -15,11 +15,11 @@ A *block* permits multiple statements to be written in contexts where a single s
 
 *Expression statements* are used to evaluate expressions. Expressions that can be used as statements include method invocations, object allocations using the `new` operator, assignments using `=` and the compound assignment operators, increment and decrement operations using the `++` and `--` operators and `await` expressions.
 
-*Selection statements* are used to select one of a number of possible statements for execution based on the value of some expression. In this group are the `if` and `switch` statements.
+*Selection statements* are used to select one of a number of possible statements for execution based on the value of some expression. This group contains the `if` and `switch` statements.
 
-*Iteration statements* are used to execute repeatedly an embedded statement. In this group are the `while`, `do`, `for`, and `foreach` statements.
+*Iteration statements* are used to execute repeatedly an embedded statement. This group contains the `while`, `do`, `for`, and `foreach` statements.
 
-*Jump statements* are used to transfer control. In this group are the `break`, `continue`, `goto`, `throw`, `return`, and `yield` statements.
+*Jump statements* are used to transfer control. This group contains the `break`, `continue`, `goto`, `throw`, `return`, and `yield` statements.
 
 The `try`...`catch` statement is used to catch exceptions that occur during execution of a block, and the `try`...`finally` statement is used to specify finalization code that is always executed, whether an exception occurred or not.
 

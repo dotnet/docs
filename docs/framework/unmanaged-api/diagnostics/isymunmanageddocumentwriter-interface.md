@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: edc8a02b-a0ac-46e3-80c1-fb8b5cef6341
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocumentWriter Interface
 Provides methods for writing to a document referenced by a symbol store.  
@@ -24,11 +22,12 @@ Provides methods for writing to a document referenced by a symbol store.
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetCheckSum Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-setchecksum-method.md)|Sets checksum information.|  
-|[SetSource Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-setsource-method.md)|Sets embedded source for a document that is being written.|  
+|[SetCheckSum Method](isymunmanageddocumentwriter-setchecksum-method.md)|Sets checksum information.|  
+|[SetSource Method](isymunmanageddocumentwriter-setsource-method.md)|Sets embedded source for a document that is being written.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
+## See also
+
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 2902578b-d5e2-4f8d-a103-0c7b6dceda9e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::GetHostOverlappedSize Method
 Gets the size of any custom data the host intends to append to I/O requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostOverlappedSize (  
     [out] DWORD *pcbSize  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcbSize`  
  [out] A pointer to the number of bytes that the common language runtime (CLR) should allocate in addition to the size of the Win32 `OVERLAPPED` object.  
   
@@ -45,20 +43,20 @@ HRESULT GetHostOverlappedSize (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
- All asynchronous I/O calls to Windows Platform APIs take a Win32 `OVERLAPPED` object, which provides information such as the file pointer position. To maintain state, applications that make asynchronous I/O calls typically add custom data to the structure. `GetHostOverlappedSize` and [IHostIoCompletionManager::InitializeHostOverlapped](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-initializehostoverlapped-method.md) provide an opportunity for the host to include such custom data.  
+ All asynchronous I/O calls to Windows Platform APIs take a Win32 `OVERLAPPED` object, which provides information such as the file pointer position. To maintain state, applications that make asynchronous I/O calls typically add custom data to the structure. `GetHostOverlappedSize` and [IHostIoCompletionManager::InitializeHostOverlapped](ihostiocompletionmanager-initializehostoverlapped-method.md) provide an opportunity for the host to include such custom data.  
   
  The CLR calls the `GetHostOverlappedSize` method to determine the size of the custom data that the host intends to append to the `OVERLAPPED` object.  
   
 > [!NOTE]
->  `GetHostOverlappedSize` is called only once. The host's custom data must be the same size for every I/O request.  
+> `GetHostOverlappedSize` is called only once. The host's custom data must be the same size for every I/O request.  
   
 > [!IMPORTANT]
->  The size of the `OVERLAPPED` object itself is not included in the value of `pcbSize`.  
+> The size of the `OVERLAPPED` object itself is not included in the value of `pcbSize`.  
   
  For more information about the `OVERLAPPED` structure, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -66,7 +64,8 @@ HRESULT GetHostOverlappedSize (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.Threading.NativeOverlapped>  
- [ICLRIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclriocompletionmanager-interface.md)  
- [IHostIoCompletionManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostiocompletionmanager-interface.md)
+## See also
+
+- <xref:System.Threading.NativeOverlapped>
+- [ICLRIoCompletionManager Interface](iclriocompletionmanager-interface.md)
+- [IHostIoCompletionManager Interface](ihostiocompletionmanager-interface.md)

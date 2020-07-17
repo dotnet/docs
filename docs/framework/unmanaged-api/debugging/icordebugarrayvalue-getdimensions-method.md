@@ -15,23 +15,21 @@ helpviewer_keywords:
 ms.assetid: 6c116592-134b-4ef2-a319-680e92d013aa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugArrayValue::GetDimensions Method
 Gets the number of elements in each dimension of this array.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDimensions (  
     [in] ULONG32         cdim,  
-    [out, size_is(cdim), length_is(cdim)]   
+    [out, size_is(cdim), length_is(cdim)]
         ULONG32          dims[]  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cdim`  
  [in] The number of dimensions of this ICorDebugArrayValue object.  
   
@@ -41,7 +39,7 @@ HRESULT GetDimensions (
  [out] An array of integers, each of which specifies the number of elements in a dimension in this `ICorDebugArrayValue` object.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -1,6 +1,5 @@
 ---
 title: "Generics and Reflection - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], reflection"
@@ -8,9 +7,9 @@ helpviewer_keywords:
 ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
 ---
 # Generics and Reflection (C# Programming Guide)
-Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](../../../csharp/programming-guide/generics/generics-in-the-run-time.md).  
+Because the Common Language Runtime (CLR) has access to generic type information at run time, you can use reflection to obtain information about generic types in the same way as for non-generic types. For more information, see [Generics in the Run Time](./generics-in-the-run-time.md).  
   
- In the [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] several new members are added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
+ In .NET Framework 2.0, several new members were added to the <xref:System.Type> class to enable run-time information for generic types. See the documentation on these classes for more information on how to use these methods and properties. The <xref:System.Reflection.Emit> namespace also contains new members that support generics. See [How to: Define a Generic Type with Reflection Emit](../../../framework/reflection-and-codedom/how-to-define-a-generic-type-with-reflection-emit.md).  
   
  For a list of the invariant conditions for terms used in generic reflection, see the <xref:System.Type.IsGenericType%2A> property remarks.  
   
@@ -39,9 +38,9 @@ Because the Common Language Runtime (CLR) has access to generic type information
 |<xref:System.Reflection.MethodBase.IsGenericMethodDefinition%2A>|Returns true if the current <xref:System.Reflection.MethodInfo> represents the definition of a generic method.|  
 |<xref:System.Reflection.MethodInfo.MakeGenericMethod%2A>|Substitutes the elements of an array of types for the type parameters of the current generic method definition, and returns a <xref:System.Reflection.MethodInfo> object representing the resulting constructed method.|  
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Generics](../../../csharp/programming-guide/generics/index.md)  
-- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)  
-- [Generics](~/docs/standard/generics/index.md)
+- [C# Programming Guide](../index.md)
+- [Generics](./index.md)
+- [Reflection and Generic Types](../../../framework/reflection-and-codedom/reflection-and-generic-types.md)
+- [Generics](../../../standard/generics/index.md)

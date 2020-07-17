@@ -15,29 +15,27 @@ helpviewer_keywords:
 ms.assetid: 2644f48b-db3c-429f-ae62-76f1c98a1af5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType::GetClass Method
 Gets an interface pointer to an ICorDebugClass that represents the uninstantiated generic type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetClass (  
     [out] ICorDebugClass   **ppClass  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppClass`  
  [out] A pointer to the address of an `ICorDebugClass` interface that represents the uninstantiated generic type.  
   
 ## Remarks  
- `GetClass` can be called only under certain conditions. Call [ICorDebugType::GetType](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-gettype-method.md) before calling `GetClass`. If `ICorDebugType::GetType` returns a CorElementType value that is ELEMENT_TYPE_CLASS or ELEMENT_TYPE_VALUETYPE, `GetClass` can be called to get the uninstantiated type for a generic type.  
+ `GetClass` can be called only under certain conditions. Call [ICorDebugType::GetType](icordebugtype-gettype-method.md) before calling `GetClass`. If `ICorDebugType::GetType` returns a CorElementType value that is ELEMENT_TYPE_CLASS or ELEMENT_TYPE_VALUETYPE, `GetClass` can be called to get the uninstantiated type for a generic type.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "locating directories in isolated storage file"
   - "storing data using isolated storage, finding files and directories"
 ms.assetid: eb28458a-6161-4e7a-9ada-30ef93761b5c
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Find Existing Files and Directories in Isolated Storage
 
@@ -37,5 +35,5 @@ To search for a directory in isolated storage, use the <xref:System.IO.IsolatedS
   
 ## See also
 
-- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>  
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
+- <xref:System.IO.IsolatedStorage.IsolatedStorageFile>
+- [Isolated Storage](isolated-storage.md)

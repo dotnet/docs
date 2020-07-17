@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c3f34584-c6e2-41fd-bb44-e44da8546309
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRStrongName::StrongNameSignatureGenerationEx Method
 Generates a strong name signature for the specified assembly, according to the specified flags.  
   
 ## Syntax  
   
-```  
+```cpp
 HRESULT StrongNameSignatureGenerationEx (  
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  
@@ -35,7 +33,7 @@ HRESULT StrongNameSignatureGenerationEx (
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `wszFilePath`  
  [in] The path to the file that contains the manifest of the assembly for which the strong name signature will be generated.  
   
@@ -55,7 +53,7 @@ HRESULT StrongNameSignatureGenerationEx (
  `ppbSignatureBlob`  
  [out] A pointer to the location to which the common language runtime returns the signature. If `ppbSignatureBlob` is null, the runtime stores the signature in the file specified by `wszFilePath`.  
   
- If `ppbSignatureBlob` is not null, the common language runtime allocates space in which to return the signature. The caller must free this space using the [ICLRStrongName::StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamefreebuffer-method.md) method.  
+ If `ppbSignatureBlob` is not null, the common language runtime allocates space in which to return the signature. The caller must free this space using the [ICLRStrongName::StrongNameFreeBuffer](iclrstrongname-strongnamefreebuffer-method.md) method.  
   
  `pcbSignatureBlob`  
  [out] The size, in bytes, of the returned signature.  
@@ -63,12 +61,12 @@ HRESULT StrongNameSignatureGenerationEx (
  `dwFlags`  
  [in] One or more of the following values:  
   
--   `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
+- `SN_SIGN_ALL_FILES` (0x00000001) - Recompute all hashes for linked modules.  
   
--   `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
+- `SN_TEST_SIGN` (0x00000002) - Test-sign the assembly.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Remarks  
  Specify null for `wszFilePath` to calculate the size of the signature without creating the signature.  
@@ -80,7 +78,7 @@ HRESULT StrongNameSignatureGenerationEx (
  If `SN_TEST_SIGN` is specified, the common language runtime header is not modified to indicate that the assembly is signed with a strong name.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -88,6 +86,7 @@ HRESULT StrongNameSignatureGenerationEx (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [StrongNameSignatureGeneration Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamesignaturegeneration-method.md)  
- [ICLRStrongName Interface](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-interface.md)
+## See also
+
+- [StrongNameSignatureGeneration Method](iclrstrongname-strongnamesignaturegeneration-method.md)
+- [ICLRStrongName Interface](iclrstrongname-interface.md)

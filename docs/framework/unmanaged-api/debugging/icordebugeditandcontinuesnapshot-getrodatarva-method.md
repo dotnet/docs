@@ -15,11 +15,10 @@ helpviewer_keywords:
 ms.assetid: efc32294-292b-419a-9d6e-24251322a85a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueSnapshot::GetRoDataRVA Method
 `GetRoDataRVA` is obsolete. Do not call this method.  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

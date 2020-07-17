@@ -1,5 +1,5 @@
 ---
-title: "Disk full (Visual Basic)"
+title: "Disk full"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID61"
@@ -10,7 +10,8 @@ There is not enough room on the disk to either complete a `Print`, `Write`, or `
   
 ## To correct this error  
   
--   Create more room on the disk by either moving some files to another disk or deleting some files.  
+- Create more room on the disk by either moving some files to another disk or deleting some files.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../programming-guide/language-features/error-types.md)

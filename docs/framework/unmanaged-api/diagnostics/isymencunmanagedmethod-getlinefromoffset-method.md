@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: cc09bad2-fb34-4d13-a521-6ec7b1a1d915
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod::GetLineFromOffset Method
 Gets the line information associated with an offset. If the offset parameter (`dwOffset`) is not a sequence point, this method gets the line information associated with the previous offset.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLineFromOffset(  
      [in]  ULONG32   dwOffset,  
      [out] ULONG32*  pline,  
@@ -33,7 +31,7 @@ HRESULT GetLineFromOffset(
      [out] ULONG32*  pdwStartOffset);  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwOffset`  
  [in] A `ULONG32` that contains the offset.  
   
@@ -58,5 +56,6 @@ HRESULT GetLineFromOffset(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymENCUnmanagedMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymencunmanagedmethod-interface.md)
+## See also
+
+- [ISymENCUnmanagedMethod Interface](isymencunmanagedmethod-interface.md)

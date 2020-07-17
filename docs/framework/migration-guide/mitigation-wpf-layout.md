@@ -2,8 +2,6 @@
 title: "Mitigation: WPF Layout"
 ms.date: "03/30/2017"
 ms.assetid: 805ffd7f-8d1e-427e-a648-601ca8ec37a5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: WPF Layout
 The layout of WPF controls can change slightly.  
@@ -11,11 +9,11 @@ The layout of WPF controls can change slightly.
 ## Impact  
  As a result of this change:  
   
--   The width or height of elements may grow or shrink by at most one pixel.  
+- The width or height of elements may grow or shrink by at most one pixel.  
   
--   The placement of an object can move by at most one pixel.  
+- The placement of an object can move by at most one pixel.  
   
--   Centered elements can be vertically or horizontally off center by at most one pixel.  
+- Centered elements can be vertically or horizontally off center by at most one pixel.  
   
  By default, this new layout is enabled only for apps that target the .NET Framework 4.6.  
   
@@ -32,5 +30,6 @@ The layout of WPF controls can change slightly.
 <AppContextSwitchOverrides value="Switch.MS.Internal.DoNotApplyLayoutRoundingToMarginsAndBorderThickness=true" />  
 ```  
   
-## See Also  
- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6.md)
+## See also
+
+- [Application compatibility](application-compatibility.md)

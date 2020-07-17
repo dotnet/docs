@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 619bb5de-e309-48b6-a3af-32d935a0ff46
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_MISC Enumeration
 Contains constant values that specify special identifiers.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     PROFILER_PARENT_UNKNOWN = 0xFFFFFFFD,  
     PROFILER_GLOBAL_CLASS   = 0xFFFFFFFE,  
@@ -34,12 +32,12 @@ typedef enum {
   
 |Member|Description|  
 |------------|-----------------|  
-|`PROFILER_PARENT_UNKNOWN`|The default identifier used by [ICorProfilerInfo::GetModuleInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getmoduleinfo-method.md) for a module that has not yet been attached to an assembly.|  
+|`PROFILER_PARENT_UNKNOWN`|The default identifier used by [ICorProfilerInfo::GetModuleInfo](icorprofilerinfo-getmoduleinfo-method.md) for a module that has not yet been attached to an assembly.|  
 |`PROFILER_GLOBAL_CLASS`|The default class identifier for global constants that do not belong to a class.|  
 |`PROFILER_GLOBAL_MODULE`|The default module identifier for global objects that do not belong to a module.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -47,5 +45,6 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
+## See also
+
+- [Profiling Enumerations](profiling-enumerations.md)

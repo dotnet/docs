@@ -15,19 +15,17 @@ helpviewer_keywords:
 ms.assetid: 051465b9-e479-494a-804b-c880323b4cbe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionEnum::Skip Method
 Advances the enumerator's cursor from its current position so that the specified number of elements are skipped.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip([in] ULONG celt);  
 ```  
   
-#### Parameters  
+## Parameters  
  `celt`  
  [in] The number of elements to be skipped.  
   
@@ -43,7 +41,7 @@ HRESULT Skip([in] ULONG celt);
  The new position of this enumerator's cursor is (current position) + `celt`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -51,6 +49,7 @@ HRESULT Skip([in] ULONG celt);
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)  
- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+## See also
+
+- [ICorProfilerFunctionEnum Interface](icorprofilerfunctionenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

@@ -1,5 +1,6 @@
 ---
-title: "How to: Set the Value Displayed by the Windows Forms ProgressBar Control"
+title: Set the Value Displayed by ProgressBar Control
+description: Learn how to set the value displayed by the Windows Forms ProgressBar control. There are multiple approaches you can choose to use.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,9 +12,9 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
 ---
 # How to: Set the Value Displayed by the Windows Forms ProgressBar Control
 > [!IMPORTANT]
->  The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.ToolStripProgressBar> control replaces and adds functionality to the <xref:System.Windows.Forms.ProgressBar> control; however, the <xref:System.Windows.Forms.ProgressBar> control is retained for both backward compatibility and future use, if you choose.  
   
- The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] gives you several different ways to display a given value within the <xref:System.Windows.Forms.ProgressBar> control. Which approach you choose will depend on the task at hand or the problem you are solving. The following table shows the approaches you can choose.  
+ The .NET Framework gives you several different ways to display a given value within the <xref:System.Windows.Forms.ProgressBar> control. Which approach you choose will depend on the task at hand or the problem you are solving. The following table shows the approaches you can choose.  
   
 |Approach|Description|  
 |--------------|-----------------|  
@@ -25,12 +26,12 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
   
 ### To set the ProgressBar value directly  
   
-1.  Set the <xref:System.Windows.Forms.ProgressBar> control's <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> values.  
+1. Set the <xref:System.Windows.Forms.ProgressBar> control's <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> values.  
   
-2.  In code, set the control's <xref:System.Windows.Forms.ProgressBar.Value%2A> property to an integer value between the minimum and maximum values you have established.  
+2. In code, set the control's <xref:System.Windows.Forms.ProgressBar.Value%2A> property to an integer value between the minimum and maximum values you have established.  
   
     > [!NOTE]
-    >  If you set the <xref:System.Windows.Forms.ProgressBar.Value%2A> property outside the boundaries established by the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties, the control throws an <xref:System.ArgumentException> exception.  
+    > If you set the <xref:System.Windows.Forms.ProgressBar.Value%2A> property outside the boundaries established by the <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> properties, the control throws an <xref:System.ArgumentException> exception.  
   
      The following code example illustrates how to set the <xref:System.Windows.Forms.ProgressBar> value directly. The code reads records from a data source and updates the progress bar and label every time a data record is read. This example requires that your form has a <xref:System.Windows.Forms.Label> control, a <xref:System.Windows.Forms.ProgressBar> control, and a data table with a row called `CustomerRow` with `FirstName` and `LastName` fields.  
   
@@ -81,11 +82,11 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
   
 ### To increase the progress bar by a fixed value  
   
-1.  Set the <xref:System.Windows.Forms.ProgressBar> control's <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> values.  
+1. Set the <xref:System.Windows.Forms.ProgressBar> control's <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> values.  
   
-2.  Set the control's <xref:System.Windows.Forms.ProgressBar.Step%2A> property to an integer representing the amount to increase the progress bar's displayed value.  
+2. Set the control's <xref:System.Windows.Forms.ProgressBar.Step%2A> property to an integer representing the amount to increase the progress bar's displayed value.  
   
-3.  Call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to change the value displayed by the amount set in the <xref:System.Windows.Forms.ProgressBar.Step%2A> property.  
+3. Call the <xref:System.Windows.Forms.ProgressBar.PerformStep%2A> method to change the value displayed by the amount set in the <xref:System.Windows.Forms.ProgressBar.Step%2A> property.  
   
      The following code example illustrates how a progress bar can maintain a count of the files in a copy operation.  
   
@@ -147,9 +148,9 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
   
 ### To increase the progress bar by a dynamic value  
   
-1.  Set the <xref:System.Windows.Forms.ProgressBar> control's <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> values.  
+1. Set the <xref:System.Windows.Forms.ProgressBar> control's <xref:System.Windows.Forms.ProgressBar.Minimum%2A> and <xref:System.Windows.Forms.ProgressBar.Maximum%2A> values.  
   
-2.  Call the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method to change the value displayed by an integer you specify.  
+2. Call the <xref:System.Windows.Forms.ProgressBar.Increment%2A> method to change the value displayed by an integer you specify.  
   
      The following code example illustrates how a progress bar can calculate how much disk space has been used during a copy operation.  
   
@@ -157,16 +158,16 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
   
     ```vb  
     Public Sub ReadFiles()  
-       ' Sets the progress bar's minimum value to a number   
+       ' Sets the progress bar's minimum value to a number
        ' representing the hard disk space before the files are read in.  
        ' You will most likely have to set this using a system call.  
        ' NOTE: The code below is meant to be an example and  
        ' will not compile.  
        ProgressBar1.Minimum = AvailableDiskSpace()  
-       ' Sets the progress bar's maximum value to a number   
+       ' Sets the progress bar's maximum value to a number
        ' representing the total hard disk space.  
        ' You will most likely have to set this using a system call.  
-       ' NOTE: The code below is meant to be an example   
+       ' NOTE: The code below is meant to be an example
        ' and will not compile.  
        ProgressBar1.Maximum = TotalDiskSpace()  
   
@@ -177,11 +178,11 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
        ' so it will execute the loop 5 times.  
        For i = 1 To 5  
           ' Insert code to read a file into memory and update file size.  
-          ' Increases the progress bar's value based on the size of   
+          ' Increases the progress bar's value based on the size of
           ' the file currently being written.  
           ProgressBar1.Increment(FileSize)  
           ' Updates the label to show available drive space.  
-          Label1.Text = "Current Disk Space Used = " &_   
+          Label1.Text = "Current Disk Space Used = " &_
           ProgressBar1.Value.ToString()  
        Next i  
     End Sub  
@@ -190,16 +191,16 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
     ```csharp  
     public void readFiles()  
     {  
-       // Sets the progress bar's minimum value to a number   
+       // Sets the progress bar's minimum value to a number
        // representing the hard disk space before the files are read in.  
        // You will most likely have to set this using a system call.  
-       // NOTE: The code below is meant to be an example and   
+       // NOTE: The code below is meant to be an example and
        // will not compile.  
        progressBar1.Minimum = AvailableDiskSpace();  
-       // Sets the progress bar's maximum value to a number   
+       // Sets the progress bar's maximum value to a number
        // representing the total hard disk space.  
        // You will most likely have to set this using a system call.  
-       // NOTE: The code below is meant to be an example   
+       // NOTE: The code below is meant to be an example
        // and will not compile.  
        progressBar1.Maximum = TotalDiskSpace();  
   
@@ -209,7 +210,7 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
        for (int i = 1; i<= 5; i++)  
        {  
           // Insert code to read a file into memory and update file size.  
-          // Increases the progress bar's value based on the size of   
+          // Increases the progress bar's value based on the size of
           // the file currently being written.  
           progressBar1.Increment(FileSize);  
           // Updates the label to show available drive space.  
@@ -218,8 +219,9 @@ ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
     }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ProgressBar>  
- <xref:System.Windows.Forms.ToolStripProgressBar>  
- [ProgressBar Control Overview](../../../../docs/framework/winforms/controls/progressbar-control-overview-windows-forms.md)  
- [ProgressBar Control](../../../../docs/framework/winforms/controls/progressbar-control-windows-forms.md)
+## See also
+
+- <xref:System.Windows.Forms.ProgressBar>
+- <xref:System.Windows.Forms.ToolStripProgressBar>
+- [ProgressBar Control Overview](progressbar-control-overview-windows-forms.md)
+- [ProgressBar Control](progressbar-control-windows-forms.md)

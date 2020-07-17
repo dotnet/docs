@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: bbc0881c-6a59-41a0-b5ee-2f3d1b71684c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetGlobalVariableValue Method
 Gets the value of the specified global variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGlobalVariableValue(  
     [in]  mdFieldDef      fieldDef,  
     [out] ICorDebugValue  **ppValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fieldDef`  
  [in] An `mdFieldDef` token that references the metadata describing the global variable.  
   
@@ -38,7 +36,7 @@ HRESULT GetGlobalVariableValue(
  [out] A pointer to the address of an ICorDebugValue object that represents the value of the specified global variable.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

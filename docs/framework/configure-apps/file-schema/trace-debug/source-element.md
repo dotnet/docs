@@ -1,5 +1,5 @@
 ---
-title: "&lt;source&gt; Element"
+title: "<source> Element"
 ms.date: "09/29/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source"
@@ -7,21 +7,19 @@ f1_keywords:
 helpviewer_keywords: 
   - "<source> element"
   - "source element"
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;source&gt; Element
+# \<source> Element
 Specifies a trace source that initiates tracing messages.  
-  
- \<configuration>  
-\<system.diagnostics>  
-\<sources>  
-\<source>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<source>**
+
 ## Syntax  
   
 ```xml  
-<source>   
+<source>
   <listeners>...</listeners>  
 </source>  
 ```  
@@ -42,7 +40,7 @@ Specifies a trace source that initiates tracing messages.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<listeners>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-source.md)|Contains listeners that collect, store, and route messages.|  
+|[\<listeners>](listeners-element-for-source.md)|Contains listeners that collect, store, and route messages.|  
   
 ### Parent Elements  
   
@@ -73,11 +71,12 @@ Specifies a trace source that initiates tracing messages.
     </sources>  
         <switches>  
            <add name="sourceSwitch" value="Warning" />  
-        </switches>    
-  </system.diagnostics>   
+        </switches>
+  </system.diagnostics>
 </configuration>  
 ```  
   
-## See Also  
- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)  
- [Trace Switches](../../../../../docs/framework/debug-trace-profile/trace-switches.md)
+## See also
+
+- [Trace and Debug Settings Schema](index.md)
+- [Trace Switches](../../../debug-trace-profile/trace-switches.md)

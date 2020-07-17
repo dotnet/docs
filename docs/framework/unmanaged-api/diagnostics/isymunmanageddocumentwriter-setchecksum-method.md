@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: c7e99879-421f-43ce-b193-34733cf30085
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocumentWriter::SetCheckSum Method
 Sets checksum information.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCheckSum(  
     [in]  GUID     algorithmId,  
     [in]  ULONG32  checkSumSize,  
     [in, size_is(checkSumSize)]  BYTE checkSum[]);  
 ```  
   
-#### Parameters  
+## Parameters  
  `algorithmId`  
  [in] The GUID that represents the algorithm identifier.  
   
@@ -46,5 +44,6 @@ HRESULT SetCheckSum(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedDocumentWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddocumentwriter-interface.md)
+## See also
+
+- [ISymUnmanagedDocumentWriter Interface](isymunmanageddocumentwriter-interface.md)

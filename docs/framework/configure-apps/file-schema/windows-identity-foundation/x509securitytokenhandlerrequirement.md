@@ -1,17 +1,18 @@
 ---
-title: "&lt;x509SecurityTokenHandlerRequirement&gt;"
+title: "<x509SecurityTokenHandlerRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: aca22c2c-5ae7-42af-9bbd-15c2524692ce
 author: "BrucePerlerMS"
 ---
-# &lt;x509SecurityTokenHandlerRequirement&gt;
+# \<x509SecurityTokenHandlerRequirement>
 Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler> class or derived classes.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<securityTokenHandlers>  
-\<add>  
-\<x509SecurityTokenHandlerRequirement>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<x509SecurityTokenHandlerRequirement>**  
   
 ## Syntax  
   
@@ -53,15 +54,15 @@ Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509Se
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md)|Adds the specified security token handler to the token handler collection.|  
+|[\<add>](add.md)|Adds the specified security token handler to the token handler collection.|  
   
 ## Example  
   
 ```xml  
 <add type="System.IdentityModel.Tokens.X509SecurityTokenHandler, System.IdentityModel">  
-    <x509SecurityTokenHandlerRequirement mapToWindows="true"   
-                                         certificateValidationMode="PeerOrChainTrust"   
-                                         revocationMode="Online"   
+    <x509SecurityTokenHandlerRequirement mapToWindows="true"
+                                         certificateValidationMode="PeerOrChainTrust"
+                                         revocationMode="Online"
                                          trustedStoreLocation="LocalMachine" />  
 </add>  
 ```

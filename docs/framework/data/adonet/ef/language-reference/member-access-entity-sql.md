@@ -8,7 +8,7 @@ The dot operator (.) is the [!INCLUDE[esql](../../../../../../includes/esql-md.m
   
 ## Syntax  
   
-```  
+```sql  
 expression.identifier  
 ```  
   
@@ -24,5 +24,6 @@ expression.identifier
   
  `select p.Name.FirstName from LOB.Person as p`  
   
-## See Also  
- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+## See also
+
+- [Entity SQL Reference](entity-sql-reference.md)

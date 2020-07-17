@@ -1,5 +1,6 @@
 ---
 title: "HttpWebRequest._CoreResponse Field"
+description: Read about the HttpWebRequest._CoreResponse field in .NET. This field is a CoreResponseData or Exception object containing the result of HTTP response parsing.
 ms.date: "01/29/2018"
 topic_type: 
   - "apiref"
@@ -23,8 +24,8 @@ private object _CoreResponse
 ```
 
 > [!WARNING]
-> This API is not meant to be used directly in your code. Instead, you should use a <xref:System.Diagnostics.DiagnosticSource> to hook networking code. See [DiagnosticSource User's Guide](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
-> 
+> This API is not meant to be used directly in your code. Instead, you should use a <xref:System.Diagnostics.DiagnosticSource> to hook networking code. See [DiagnosticSource User's Guide](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md).
+>
 > Microsoft does not support the use of this class in a production application under any circumstance.
 
 ## Requirements

@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: fc663e76-e23f-49a8-bdd5-52cdf1a3b2b3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetStaticFieldInfo Method
 Gets a value that indicates the kind of static that applies to the specified field.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStaticFieldInfo (  
     [in] ClassID               classId,  
     [in] mdFieldDef            fieldToken,  
     [out] COR_PRF_STATIC_TYPE  *pFieldInfo);  
 ```  
   
-#### Parameters  
+## Parameters  
  `classId`  
  [in] The ID of the class in which the static field is defined.  
   
@@ -38,7 +36,7 @@ HRESULT GetStaticFieldInfo (
  [in] The metadata token for the static field.  
   
  `pFieldInfo`  
- [out] A pointer to a value of the [COR_PRF_STATIC_TYPE](../../../../docs/framework/unmanaged-api/profiling/cor-prf-static-type-enumeration.md) enumeration that indicates whether the specified field is static, and if so, the kind of static that applies to the field.  
+ [out] A pointer to a value of the [COR_PRF_STATIC_TYPE](cor-prf-static-type-enumeration.md) enumeration that indicates whether the specified field is static, and if so, the kind of static that applies to the field.  
   
 ## Remarks  
  This information can be used to determine which function to call to get the address of the static field.  
@@ -46,7 +44,7 @@ HRESULT GetStaticFieldInfo (
  The profiler code should still check the metadata for a static field to ensure that it actually has an address. Static literals (that is, constants) exist only in the metadata and do not have an address.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -54,6 +52,7 @@ HRESULT GetStaticFieldInfo (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)  
- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+## See also
+
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](icorprofilerinfo2-interface.md)

@@ -3,22 +3,20 @@ title: "Resolving External XSLT Style Sheets and Documents"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Resolving External XSLT Style Sheets and Documents
 There are several times during a transformation when you may need to resolve external resources.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
  There are several times during a transformation when you may need to resolve external resources:  
   
--   During the <xref:System.Xml.Xsl.XslTransform.Load%2A> to locate an external style sheet.  
+- During the <xref:System.Xml.Xsl.XslTransform.Load%2A> to locate an external style sheet.  
   
--   During <xref:System.Xml.Xsl.XslTransform.Load%2A> to resolve any `<xsl:include>` or `<xsl:import>` elements found in the style sheet.  
+- During <xref:System.Xml.Xsl.XslTransform.Load%2A> to resolve any `<xsl:include>` or `<xsl:import>` elements found in the style sheet.  
   
--   During <xref:System.Xml.Xsl.XslTransform.Transform%2A> to resolve any `document()` functions.  
+- During <xref:System.Xml.Xsl.XslTransform.Transform%2A> to resolve any `document()` functions.  
   
 ## Using the XmlResolver Class  
  If authentication is required to access a network resource, use the <xref:System.Xml.Xsl.XslTransform.Load%2A> methods that have an <xref:System.Xml.XmlResolver> parameter to pass the <xref:System.Xml.XmlResolver> object, which has the necessary credential properties set.  
@@ -39,15 +37,15 @@ There are several times during a transformation when you may need to resolve ext
   
 ## See also
 
-- [XSLT Transformations with the XslTransform Class](../../../../docs/standard/data/xml/xslt-transformations-with-the-xsltransform-class.md)  
-- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)  
-- [Outputs from an XslTransform](../../../../docs/standard/data/xml/outputs-from-an-xsltransform.md)  
-- [XSLT Transformations Over Different Stores](../../../../docs/standard/data/xml/xslt-transformations-over-different-stores.md)  
-- [XsltArgumentList for Style Sheet Parameters and Extension Objects](../../../../docs/standard/data/xml/xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md)  
-- [XSLT Stylesheet Scripting Using \<msxsl:script>](../../../../docs/standard/data/xml/xslt-stylesheet-scripting-using-msxsl-script.md)  
-- [Support for the msxsl:node-set() Function](../../../../docs/standard/data/xml/support-for-the-msxsl-node-set-function.md)  
-- [XPathNavigator in Transformations](../../../../docs/standard/data/xml/xpathnavigator-in-transformations.md)  
-- [XPathNodeIterator in Transformations](../../../../docs/standard/data/xml/xpathnodeiterator-in-transformations.md)  
-- [XPathDocument Input to XslTransform](../../../../docs/standard/data/xml/xpathdocument-input-to-xsltransform.md)  
-- [XmlDataDocument Input to XslTransform](../../../../docs/standard/data/xml/xmldatadocument-input-to-xsltransform.md)  
-- [XmlDocument Input to XslTransform](../../../../docs/standard/data/xml/xmldocument-input-to-xsltransform.md)
+- [XSLT Transformations with the XslTransform Class](xslt-transformations-with-the-xsltransform-class.md)
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)
+- [Outputs from an XslTransform](outputs-from-an-xsltransform.md)
+- [XSLT Transformations Over Different Stores](xslt-transformations-over-different-stores.md)
+- [XsltArgumentList for Style Sheet Parameters and Extension Objects](xsltargumentlist-for-style-sheet-parameters-and-extension-objects.md)
+- [XSLT Stylesheet Scripting Using \<msxsl:script>](xslt-stylesheet-scripting-using-msxsl-script.md)
+- [Support for the msxsl:node-set() Function](support-for-the-msxsl-node-set-function.md)
+- [XPathNavigator in Transformations](xpathnavigator-in-transformations.md)
+- [XPathNodeIterator in Transformations](xpathnodeiterator-in-transformations.md)
+- [XPathDocument Input to XslTransform](xpathdocument-input-to-xsltransform.md)
+- [XmlDataDocument Input to XslTransform](xmldatadocument-input-to-xsltransform.md)
+- [XmlDocument Input to XslTransform](xmldocument-input-to-xsltransform.md)

@@ -1,5 +1,6 @@
 ---
-title: "SaveToHistory Function (WPF Unmanaged API Reference)"
+title: "SaveToHistory Function - WPF unmanaged API reference"
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -22,14 +23,14 @@ HRESULT SaveToHistory(
 )  
 ```  
   
-#### Parameters  
+## Parameters  
  pHistoryStream  
  A pointer to the history stream.  
   
 ## Requirements  
   
 ## Requirements  
- **Platforms:** See [.NET Framework System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [.NET Framework System Requirements](../../get-started/system-requirements.md).  
   
  **DLL:**  
   
@@ -39,5 +40,6 @@ HRESULT SaveToHistory(
   
  **.NET Framework Version:** [!INCLUDE[net_current_v30plus](../../../../includes/net-current-v30plus-md.md)]  
   
-## See Also  
- [WPF Unmanaged API Reference](../../../../docs/framework/wpf/advanced/wpf-unmanaged-api-reference.md)
+## See also
+
+- [WPF Unmanaged API Reference](wpf-unmanaged-api-reference.md)

@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugBreakpoint Interface1"
+title: "ICorDebugBreakpoint Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugBreakpoint"
@@ -14,18 +14,17 @@ helpviewer_keywords:
 ms.assetid: aa5ad3d7-e1bb-42af-99bc-471224e3bcaa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugBreakpoint Interface1
+# ICorDebugBreakpoint Interface
+
 Represents a breakpoint in a function, or a watch point on a value.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[Activate Method](../../../../docs/framework/unmanaged-api/debugging/icordebugbreakpoint-activate-method.md)|Sets the active state of this `ICorDebugBreakpoint`.|  
-|[IsActive Method](../../../../docs/framework/unmanaged-api/debugging/icordebugbreakpoint-isactive-method.md)|Gets a value that indicates whether this `ICorDebugBreakpoint` is active.|  
+|[Activate Method](icordebugbreakpoint-activate-method.md)|Sets the active state of this `ICorDebugBreakpoint`.|  
+|[IsActive Method](icordebugbreakpoint-isactive-method.md)|Gets a value that indicates whether this `ICorDebugBreakpoint` is active.|  
   
 ## Remarks  
  Breakpoints do not directly support conditional expressions. If such functionality is desired, a debugger must implement it on top of `ICorDebugBreakpoint`.  
@@ -33,10 +32,10 @@ Represents a breakpoint in a function, or a watch point on a value.
  The ICorDebugFunctionBreakpoint interface extends `ICorDebugBreakpoint` to support breakpoints within functions.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -44,5 +43,6 @@ Represents a breakpoint in a function, or a watch point on a value.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,12 +1,11 @@
 ---
 title: ".NET Framework Performance"
+description: Design and plan for performance in your .NET apps. Use the tools provided by Microsoft to measure your app's performance and make improvements.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "performance [.NET Framework]"
   - "reliability [.NET Framework]"
 ms.assetid: c1676cca-3f1a-41ec-b469-9029566074fc
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # .NET Framework Performance
 If you want to create apps with great performance, you should design and plan for performance just as you would design any other feature of your app. You can use the tools provided by Microsoft to measure your app's performance, and, if needed, make improvements to memory use, code throughput, and responsiveness. This topic lists the performance analysis tools that Microsoft provides, and provides links to other topics that cover performance for specific areas of app development.  
@@ -27,31 +26,28 @@ If you want to create apps with great performance, you should design and plan fo
 |Tool|Description|  
 |----------|-----------------|  
 |Visual Studio Performance Analysis|Use to analyze the CPU usage of your .NET Framework apps that will be deployed to computers that are running the Windows operating system.<br /><br /> This tool is available from the **Debug** menu in Visual Studio after you open a project. For more information, see [Performance Explorer](/visualstudio/profiling/performance-explorer). **Note:**  Use Windows Phone Application Analysis (see next row) when targeting Windows Phone.|  
-|Windows Phone Application Analysis|Use to analyze the CPU and memory, network data transfer rate, app responsiveness, and battery consumption in your Windows Phone apps.<br /><br /> This tool is available from the **Debug** menu for a Windows Phone project in Visual Studio after you install the [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=265773). For more information, see [App profiling for Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj215908\(v=vs.105\).aspx).|  
-|[PerfView](https://www.microsoft.com/download/details.aspx?id=28567)|Use to identify CPU and memory-related performance issues. This tool uses event tracing for Windows (ETW)  and CLR profiling APIs to provide advanced memory and CPU investigations as well as information about garbage collection and JIT compilation. For more information about how to use PerfView, see the tutorial and help files that are included with the app, [Channel 9 video tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial), and [blog posts](https://blogs.msdn.com/b/vancem/archive/tags/perfview/).<br /><br /> For memory-specific issues, see [Using PerfView for Memory Investigations](https://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-9-NET-Memory-Investigation-Basics-of-GC-Heap-Snapshots).|  
-|[Windows Performance Analyzer](https://www.microsoft.com/download/details.aspx?id=30652)|Use to determine overall system performance such as your app's memory and storage use when multiple apps are running on the same computer. This tool is available from the download center as part of the Windows Assessment and Deployment Kit (ADK) for [!INCLUDE[win8](../../../includes/win8-md.md)]. For more information, see [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer).|  
+|Windows Phone Application Analysis|Use to analyze the CPU and memory, network data transfer rate, app responsiveness, and battery consumption in your Windows Phone apps.<br /><br /> This tool is available from the **Debug** menu for a Windows Phone project in Visual Studio after you install the [Windows Phone SDK](https://go.microsoft.com/fwlink/?LinkId=265773). For more information, see [App profiling for Windows Phone 8](https://docs.microsoft.com/previous-versions/windows/apps/jj215908(v=vs.105)).|  
+|[PerfView](https://www.microsoft.com/download/details.aspx?id=28567)|Use to identify CPU and memory-related performance issues. This tool uses event tracing for Windows (ETW)  and CLR profiling APIs to provide advanced memory and CPU investigations as well as information about garbage collection and JIT compilation. For more information about how to use PerfView, see the tutorial and help files that are included with the app, [Channel 9 video tutorials](https://channel9.msdn.com/Series/PerfView-Tutorial), and [blog posts](https://docs.microsoft.com/archive/blogs/vancem/).<br /><br /> For memory-specific issues, see [Using PerfView for Memory Investigations](https://channel9.msdn.com/Series/PerfView-Tutorial/PerfView-Tutorial-9-NET-Memory-Investigation-Basics-of-GC-Heap-Snapshots).|  
+|[Windows Performance Analyzer](https://www.microsoft.com/download/details.aspx?id=30652)|Use to determine overall system performance such as your app's memory and storage use when multiple apps are running on the same computer. This tool is available from the download center as part of the Windows Assessment and Deployment Kit (ADK) for Windows 8. For more information, see [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer).|
   
 ### Event tracing for Windows (ETW)  
- ETW is a technique that lets you obtain diagnostic information about running code and is essential for many of the performance tools mentioned previously. ETW creates logs when particular events are raised by .NET Framework apps and Windows. With ETW, you can enable and disable logging dynamically, so that you can perform detailed tracing in a production environment without restarting your app. The .NET Framework offers support for ETW events, and ETW is used by many profiling and performance tools to generate performance data. These tools often enable and disable ETW events, so familiarity with them is helpful. You can use specific ETW events to collect performance information about particular components of your app. For more information about ETW support in the .NET Framework, see [ETW Events in the Common Language Runtime](../../../docs/framework/performance/etw-events-in-the-common-language-runtime.md) and [ETW Events in Task Parallel Library and PLINQ](../../../docs/framework/performance/etw-events-in-task-parallel-library-and-plinq.md).  
+ ETW is a technique that lets you obtain diagnostic information about running code and is essential for many of the performance tools mentioned previously. ETW creates logs when particular events are raised by .NET Framework apps and Windows. With ETW, you can enable and disable logging dynamically, so that you can perform detailed tracing in a production environment without restarting your app. The .NET Framework offers support for ETW events, and ETW is used by many profiling and performance tools to generate performance data. These tools often enable and disable ETW events, so familiarity with them is helpful. You can use specific ETW events to collect performance information about particular components of your app. For more information about ETW support in the .NET Framework, see [ETW Events in the Common Language Runtime](etw-events-in-the-common-language-runtime.md) and [ETW Events in Task Parallel Library and PLINQ](etw-events-in-task-parallel-library-and-plinq.md).  
   
 ## Performance by app type  
  Each type of .NET Framework app has its own best practices, considerations, and tools for evaluating performance. The following table links to performance topics for specific .NET Framework app types.  
   
 |App type|See|  
 |--------------|---------|  
-|.NET Framework apps for all platforms|[Garbage Collection and Performance](../../../docs/standard/garbage-collection/performance.md)<br /><br /> [Performance Tips](../../../docs/framework/performance/performance-tips.md)|  
-|[!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps written in C++, C#, and Visual Basic|[Performance best practices for Windows Store apps using C++, C#, and Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh750313%28v=win.10%29)|  
-|Windows Phone|[App performance considerations for Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/ff967560\(v=vs.105\).aspx)<br /><br /> [Windows Phone Application Analysis](https://msdn.microsoft.com/library/windowsphone/develop/hh202934\(v=vs.105\).aspx)<br /><br /> [Get Your Windows Phone Applications in the Marketplace Faster](https://msdn.microsoft.com/magazine/hh781024.aspx)|  
-|Windows Presentation Foundation (WPF)|[WPF Performance Suite](https://msdn.microsoft.com/library/67cafaad-57ad-4ecb-9c08-57fac144393e)|  
-|Silverlight|[Performance tips](https://msdn.microsoft.com/library/cc189071\(v=vs.95\).aspx)|  
-|ASP.NET|[ASP.NET Performance Overview](https://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b)|  
-|Windows Forms|[Practical Tips for Boosting the Performance of Windows Forms Apps](https://msdn.microsoft.com/magazine/cc163630.aspx)|  
+|.NET Framework apps for all platforms|[Garbage Collection and Performance](../../standard/garbage-collection/performance.md)<br /><br /> [Performance Tips](performance-tips.md)|  
+|Windows 8.x Store apps written in C++, C#, and Visual Basic|[Performance best practices for Windows Store apps using C++, C#, and Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh750313%28v=win.10%29)|  
+|Windows Presentation Foundation (WPF)|[WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100))|  
+|ASP.NET|[ASP.NET Performance Overview](https://docs.microsoft.com/previous-versions/aspnet/cc668225(v=vs.100))|  
   
 ## Related Topics  
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Caching in .NET Framework Applications](../../../docs/framework/performance/caching-in-net-framework-applications.md)|Describes techniques for caching data to improve performance in your app.|  
-|[Lazy Initialization](../../../docs/framework/performance/lazy-initialization.md)|Describes how to initialize objects as-needed to improve performance, particularly at app startup.|  
-|[Reliability](../../../docs/framework/performance/reliability.md)|Provides information about preventing asynchronous exceptions in a server environment.|  
-|[Writing Large, Responsive .NET Framework Apps](../../../docs/framework/performance/writing-large-responsive-apps.md)|Provides performance tips gathered from rewriting the C# and Visual Basic compilers in managed code, and includes several real examples from the C# compiler.|
+|[Caching in .NET Framework Applications](caching-in-net-framework-applications.md)|Describes techniques for caching data to improve performance in your app.|  
+|[Lazy Initialization](lazy-initialization.md)|Describes how to initialize objects as-needed to improve performance, particularly at app startup.|  
+|[Reliability](reliability.md)|Provides information about preventing asynchronous exceptions in a server environment.|  
+|[Writing Large, Responsive .NET Framework Apps](writing-large-responsive-apps.md)|Provides performance tips gathered from rewriting the C# and Visual Basic compilers in managed code, and includes several real examples from the C# compiler.|

@@ -2,10 +2,11 @@
 title: Translating Expression Trees
 description: Learn how to visit each node in an expression tree while building a modified copy of that expression tree.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 
-# Translating Expression Trees
+# Translate expression trees
 
 [Previous -- Building Expressions](expression-trees-building.md)
 
@@ -83,7 +84,7 @@ tree. That's safe, because the nodes in the existing tree cannot be
 modified. This can result in significant memory efficiencies.
 The same nodes can be used throughout a tree, or in multiple
 expression trees. Since nodes can't be modified, the
-same node can be reused whenever its needed.
+same node can be reused whenever it's needed.
 
 ## Traversing and Executing an Addition
 
@@ -105,7 +106,7 @@ var addition = Expression.Add(one, two);
 var add2 = Expression.Add(three, four);
 var sum = Expression.Add(addition, add2);
 
-// Declare the delegate, so we can call it 
+// Declare the delegate, so we can call it
 // from itself recursively:
 Func<Expression, int> aggregate = null;
 // Aggregate, return constants, or the sum of the left and right operand.
@@ -123,13 +124,13 @@ There's quite a bit of code here, but the concepts are very approachable.
 This code visits children in a depth first search. When it encounters a
 constant node, the visitor returns the value of the constant. After the
 visitor has visited both children, those children will have computed the sum
-computed for that sub-tree. The addition node can now compute its sum.
+computed for that subtree. The addition node can now compute its sum.
 Once all the nodes in the expression tree have been visited, the sum
 will have been computed. You can trace the execution by running the sample
 in the debugger and tracing the execution.
 
 Let's make it easier to trace how the nodes are analyzed and how the sum
-is computed by travsersing the tree. Here's an updated version of the
+is computed by traversing the tree. Here's an updated version of the
 Aggregate method that includes quite a bit of tracing information:
 
 ```csharp
@@ -161,7 +162,7 @@ private static int Aggregate(Expression exp)
 
 Running it on the same expression yields the following output:
 
-```
+```output
 10
 Found Addition Expression
 Computing Left node
@@ -200,7 +201,7 @@ Expression<Func<int> sum1 = () => 1 + (2 + (3 + 4));
 
 Here's the output from examining this expression:
 
-```
+```output
 Found Addition Expression
 Computing Left node
 Found Constant: 1
@@ -236,7 +237,7 @@ This sample shows a small subset of the code you would build to traverse
 and interpret the algorithms represented by an expression tree. For a complete
 discussion of all the work necessary to build a general purpose library that
 translates expression trees into another language, please read
-[this series](https://blogs.msdn.com/b/mattwar/archive/2008/11/18/linq-links.aspx)
+[this series](https://docs.microsoft.com/archive/blogs/mattwar/linq-building-an-iqueryable-provider-series)
 by Matt Warren. It goes into great detail on how to translate any of the code
 you might find in an expression tree.
 

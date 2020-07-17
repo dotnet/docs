@@ -15,28 +15,26 @@ helpviewer_keywords:
 ms.assetid: 5c68375d-145d-46ef-a7c8-2dc4257472de
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetSize Method
 Gets the size, in bytes, of the module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSize(  
     [out] ULONG32 *pcBytes  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pcBytes`  
  [out] The size of the module in bytes.  
   
  If the module was produced from the native image generator (NGen.exe), the size of the module will be zero.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

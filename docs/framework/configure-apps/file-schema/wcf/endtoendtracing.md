@@ -1,25 +1,26 @@
 ---
-title: "&lt;endToEndTracing&gt;"
+title: "<endToEndTracing>"
 ms.date: "03/30/2017"
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
 ---
-# &lt;endToEndTracing&gt;
+# \<endToEndTracing>
 A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.  
   
- \<system.ServiceModel>  
-\<diagnostic>  
-\<endToEndTracing>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<diagnostics>**](diagnostics.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<endToEndTracing>**  
   
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
-   <diagnostics>  
-       <endToEndTracing activityTracing="Boolean"  
-          messageFlowTracing="Boolean"  
-          propagateActivity="Boolean" />  
-   </diagnostics>  
-</system.serviceModel>  
+<system.serviceModel>
+  <diagnostics>
+    <endToEndTracing activityTracing="Boolean"
+                     messageFlowTracing="Boolean"
+                     propagateActivity="Boolean" />
+  </diagnostics>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -40,11 +41,12 @@ A configuration element that allows you to enable and disable different aspects 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
+|[\<diagnostics>](diagnostics.md)|Defines WCF settings for runtime inspection and control for the administrator.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.DiagnosticSection>  
- <xref:System.ServiceModel.Diagnostics>  
- <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>  
- <xref:System.ServiceModel.Configuration.EndToEndTracingElement>  
- [End-to-End Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/end-to-end-tracing.md)
+## See also
+
+- <xref:System.ServiceModel.Configuration.DiagnosticSection>
+- <xref:System.ServiceModel.Diagnostics>
+- <xref:System.ServiceModel.Configuration.DiagnosticSection.EndToEndTracing%2A>
+- <xref:System.ServiceModel.Configuration.EndToEndTracingElement>
+- [End-to-End Tracing](../../../wcf/diagnostics/tracing/end-to-end-tracing.md)

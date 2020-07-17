@@ -15,7 +15,8 @@ A literal represents a value outside the limits of the data type to which it is 
   
 ## To correct this error  
   
--   Consult the value range for the target data type and rewrite the literal to conform to that range.  
+- Consult the value range for the target data type and rewrite the literal to conform to that range.  
   
-## See Also  
- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
+## See also
+
+- [Data Types](../data-types/index.md)

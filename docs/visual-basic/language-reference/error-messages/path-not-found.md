@@ -10,7 +10,8 @@ During a file-access or disk-access operation, the operating system was unable t
   
 ## To correct this error  
   
--   Verify and respecify the path.  
+- Verify and respecify the path.  
   
-## See Also  
- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+## See also
+
+- [Error Types](../../programming-guide/language-features/error-types.md)

@@ -15,11 +15,11 @@ ms.assetid: a1f74f29-048c-4723-85fa-b9d375ab8f4b
 The following code example makes the splitter that divides the <xref:System.Windows.Forms.SplitContainer> control horizontal.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself.  
+> The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself.  
   
 ### To split a window horizontally  
   
-1.  Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
+1. Within a procedure, set the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control to <xref:System.Windows.Forms.Orientation.Horizontal>.  
   
     ```vb  
     Sub ShowSplitContainer()  
@@ -49,6 +49,7 @@ The following code example makes the splitter that divides the <xref:System.Wind
     }  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.SplitContainer>  
- [SplitContainer Control](../../../../docs/framework/winforms/controls/splitcontainer-control-windows-forms.md)
+## See also
+
+- <xref:System.Windows.Forms.SplitContainer>
+- [SplitContainer Control](splitcontainer-control-windows-forms.md)

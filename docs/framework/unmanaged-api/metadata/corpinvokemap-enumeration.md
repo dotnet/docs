@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: f14f986e-f6ce-42bc-aa23-18150c46d28c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorPinvokeMap Enumeration
 Specifies options for a PInvoke call.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum  CorPinvokeMap {  
   
     pmNoMangle          = 0x0001,  
@@ -43,7 +41,7 @@ typedef enum  CorPinvokeMap {
     pmThrowOnUnmappableCharDisabled   = 0x2000,  
     pmThrowOnUnmappableCharMask       = 0x3000,  
   
-    pmSupportsLastError = 0x0040,   
+    pmSupportsLastError = 0x0040,
   
     pmCallConvMask      = 0x0700,  
     pmCallConvWinapi    = 0x0100,  
@@ -85,11 +83,12 @@ typedef enum  CorPinvokeMap {
 |`pmMaxValue`|Reserved.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+## See also
+
+- [Metadata Enumerations](metadata-enumerations.md)

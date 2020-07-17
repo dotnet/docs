@@ -1,8 +1,6 @@
 ---
 title: Repair the .NET Framework
 description: Learn how to repair the .NET Framework
-author: rlander
-ms.author: mairaw
 ms.date: 08/03/2017
 ---
 

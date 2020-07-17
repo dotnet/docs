@@ -15,24 +15,22 @@ helpviewer_keywords:
 ms.assetid: 7c0af9e9-a73f-41aa-a685-b21c439e059d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishProcess::GetDisplayName Method
-Gets the full path of the executable for the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  
+Gets the full path of the executable for the process referenced by this [ICorPublishProcess](icorpublishprocess-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDisplayName (  
-    [in]  ULONG32                    cchName,   
+    [in]  ULONG32                    cchName,
     [out] ULONG32                    *pcchName,  
-    [out, size_is(cchName), length_is(*pcchName)]   
+    [out, size_is(cchName), length_is(*pcchName)]
         WCHAR                        *szName  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `cchName`  
  [in] The size of the `szName` array.  
   
@@ -43,7 +41,7 @@ HRESULT GetDisplayName (
  [out] An array to store the name, including the full path, of the executable. The name is null-terminated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorPub.idl, CorPub.h  
   
@@ -51,5 +49,6 @@ HRESULT GetDisplayName (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)
+## See also
+
+- [ICorPublishProcess Interface](icorpublishprocess-interface.md)

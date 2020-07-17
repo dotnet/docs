@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: ce13c965-dfe4-4433-94f5-63b476e3a608
 ---
 # -baseaddress (C# Compiler Options)
-The **-baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](https://blogs.msdn.microsoft.com/larryosterman/2004/07/06/why-should-i-even-bother-to-use-dlls-in-my-system/).  
+The **-baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](https://docs.microsoft.com/archive/blogs/larryosterman/why-should-i-even-bother-to-use-dlls-in-my-system).  
   
 ## Syntax  
   
@@ -31,18 +31,18 @@ The **-baseaddress** option lets you specify the preferred base address at which
   
 ### To set this compiler option in the Visual Studio development environment  
   
-1.  Open the project's **Properties** page.  
+1. Open the project's **Properties** page.  
   
-2.  Click the **Build** property page.  
+2. Click the **Build** property page.  
   
-3.  Click the **Advanced** button.  
+3. Click the **Advanced** button.  
   
-4.  Modify the **DLL Base Address** property.  
+4. Modify the **DLL Base Address** property.  
   
      To set this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.BaseAddress%2A>.  
   
-## See Also  
+## See also
 
-- <xref:System.Diagnostics.ProcessModule.BaseAddress%2A?displayProperty=nameWithType>  
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)  
+- <xref:System.Diagnostics.ProcessModule.BaseAddress%2A?displayProperty=nameWithType>
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

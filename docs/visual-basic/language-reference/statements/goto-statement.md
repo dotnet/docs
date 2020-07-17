@@ -1,5 +1,5 @@
 ---
-title: "GoTo Statement (Visual Basic)"
+title: "GoTo Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.GoTo"
@@ -19,7 +19,7 @@ Branches unconditionally to a specified line in a procedure.
   
 ## Syntax  
   
-```  
+```vb  
 GoTo line  
 ```  
   
@@ -28,10 +28,10 @@ GoTo line
  Required. Any line label.  
   
 ## Remarks  
- The `GoTo` statement can branch only to lines in the procedure in which it appears. The line must have a line label that `GoTo` can refer to. For more information, see [How to: Label Statements](../../../visual-basic/programming-guide/program-structure/how-to-label-statements.md).  
+ The `GoTo` statement can branch only to lines in the procedure in which it appears. The line must have a line label that `GoTo` can refer to. For more information, see [How to: Label Statements](../../programming-guide/program-structure/how-to-label-statements.md).  
   
 > [!NOTE]
->  `GoTo` statements can make code difficult to read and maintain. Whenever possible, use a control structure instead. For more information, see [Control Flow](../../../visual-basic/programming-guide/language-features/control-flow/index.md).  
+> `GoTo` statements can make code difficult to read and maintain. Whenever possible, use a control structure instead. For more information, see [Control Flow](../../programming-guide/language-features/control-flow/index.md).  
   
  You cannot use a `GoTo` statement to branch from outside a `For`...`Next`, `For Each`...`Next`, `SyncLock`...`End SyncLock`, `Try`...`Catch`...`Finally`, `With`...`End With`, or `Using`...`End Using` construction to a label inside.  
   
@@ -48,20 +48,20 @@ GoTo line
   
  The following illustration shows one `Try` construction nested within another. Various branches among the blocks of the two constructions are indicated as valid or invalid.  
   
- ![Graphic diagram of branching in Try constructions](../../../visual-basic/language-reference/statements/media/trybranching.gif "TryBranching")  
-Valid and invalid branches in Try constructions  
+ ![Graphic diagram of branching in Try constructions](./media/goto-statement/try-construction-branching.gif)  
   
 ## Example  
  The following example uses the `GoTo` statement to branch to line labels in a procedure.  
   
- [!code-vb[VbVbalrStatements#31](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/goto-statement_1.vb)]  
+ [!code-vb[VbVbalrStatements#31](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#31)]  
   
-## See Also  
- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)  
- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
- [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md)  
- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)  
- [Select...Case Statement](../../../visual-basic/language-reference/statements/select-case-statement.md)  
- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)  
- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  
- [With...End With Statement](../../../visual-basic/language-reference/statements/with-end-with-statement.md)
+## See also
+
+- [Do...Loop Statement](do-loop-statement.md)
+- [For...Next Statement](for-next-statement.md)
+- [For Each...Next Statement](for-each-next-statement.md)
+- [If...Then...Else Statement](if-then-else-statement.md)
+- [Select...Case Statement](select-case-statement.md)
+- [Try...Catch...Finally Statement](try-catch-finally-statement.md)
+- [While...End While Statement](while-end-while-statement.md)
+- [With...End With Statement](with-end-with-statement.md)

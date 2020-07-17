@@ -1,5 +1,6 @@
 ---
 title: "Security in network programming - .NET Framework"
+description: Learn about popular application authentication mechanisms and code access permissions that the .NET Framework System.Net namespace classes support.
 ms.date: "03/14/2018"
 helpviewer_keywords: 
   - "sending data, Internet security"
@@ -20,18 +21,18 @@ The .NET Framework <xref:System.Net> namespace classes provide built-in support 
 ## In this section
 
 [Transport Layer Security (TLS) best practices with .NET Framework](tls.md)  
-Describes TLS best practices with the .NET Framwork.
- 
-[Using Secure Sockets Layer](../../../docs/framework/network-programming/using-secure-sockets-layer.md)  
+Describes TLS best practices with the .NET Framework.
+
+[Using Secure Sockets Layer](using-secure-sockets-layer.md)  
 Describes how to use Secure Sockets Layer (SSL) connections.  
   
-[Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)  
+[Internet Authentication](internet-authentication.md)  
 Describes how to use HTTP authentication methods to establish authenticated connections to HTTP servers.  
   
-[Web and Socket Permissions](../../../docs/framework/network-programming/web-and-socket-permissions.md)  
+[Web and Socket Permissions](web-and-socket-permissions.md)  
 Describes how to set code access security for applications that use Internet connections.  
   
 ## Related sections
 
-[Network Programming in the .NET Framework](../../../docs/framework/network-programming/index.md)  
+[Network Programming in the .NET Framework](index.md)  
 Introduces the classes in the <xref:System.Net> and <xref:System.Net.Sockets> namespaces.

@@ -6,14 +6,12 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ad0b5717-3d32-41ad-a4d7-072c3e492b82
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Schema (XSD) Validation with XmlSchemaCollection
 You can use the <xref:System.Xml.Schema.XmlSchemaCollection> to validate an XML document against XML Schema definition language (XSD) schemas. The <xref:System.Xml.Schema.XmlSchemaCollection> improves performance by storing schemas in the collection so they are not loaded into memory each time validation occurs. If the schema exists in the schema collection, the `schemaLocation` attribute is used to look up the schema in the collection.  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchemaCollection> class is now obsolete and has been replaced with the <xref:System.Xml.Schema.XmlSchemaSet> class. For more information about the <xref:System.Xml.Schema.XmlSchemaSet> class see, [XmlSchemaSet for Schema Compilation](../../../../docs/standard/data/xml/xmlschemaset-for-schema-compilation.md).  
+> The <xref:System.Xml.Schema.XmlSchemaCollection> class is now obsolete and has been replaced with the <xref:System.Xml.Schema.XmlSchemaSet> class. For more information about the <xref:System.Xml.Schema.XmlSchemaSet> class see, [XmlSchemaSet for Schema Compilation](xmlschemaset-for-schema-compilation.md).  
   
  The following example shows the root element of a data file.  
   
@@ -31,7 +29,7 @@ You can use the <xref:System.Xml.Schema.XmlSchemaCollection> to validate an XML 
 ```vb  
 Dim xsc As New XmlSchemaCollection()  
 ' XML Schema.  
-xsc.Add("urn:bookstore-schema", schema)   
+xsc.Add("urn:bookstore-schema", schema)
 reader = New XmlTextReader(filename)  
 vreader = New XmlValidatingReader(reader)  
 vreader.Schemas.Add(xsc)  
@@ -180,9 +178,9 @@ while(vr.Read()) {
  The following outlines the contents of the XML Schema file, sample4.xsd, to be validated against.  
   
 ```xml  
-<xs:schema   
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"   
-    xmlns:tns="datatypesTest"   
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:tns="datatypesTest"
     targetNamespace="datatypesTest"  
     elementFormDefault="qualified">  
   
@@ -204,7 +202,7 @@ while(vr.Read()) {
   
 ## See also
 
-- <xref:System.Xml.XmlParserContext>  
-- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>  
-- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>  
-- [XmlSchemaCollection Schema Compilation](../../../../docs/standard/data/xml/xmlschemacollection-schema-compilation.md)
+- <xref:System.Xml.XmlParserContext>
+- <xref:System.Xml.XmlValidatingReader.ValidationEventHandler?displayProperty=nameWithType>
+- <xref:System.Xml.XmlValidatingReader.Schemas%2A?displayProperty=nameWithType>
+- [XmlSchemaCollection Schema Compilation](xmlschemacollection-schema-compilation.md)

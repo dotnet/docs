@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Preceding Siblings (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Preceding Siblings (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 59055718-d0a7-4db3-8901-18dd33587703
 ---
@@ -15,7 +15,7 @@ This topic compares the XPath `preceding-sibling` axis to the [!INCLUDE[sqltecxl
 ## Example  
  The following example finds the `FullAddress` element, and then retrieves the previous elements using the `preceding-sibling` axis.  
   
- This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Customers and Orders (LINQ to XML)](sample-xml-file-customers-and-orders-linq-to-xml.md).  
   
 ```vb  
 Dim co As XElement = XElement.Load("CustomersOrders.xml")  
@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <CompanyName>Great Lakes Food Market</CompanyName>  
 <ContactName>Howard Snyder</ContactName>  
@@ -49,5 +49,6 @@ Results are identical
 <Phone>(503) 555-7555</Phone>  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

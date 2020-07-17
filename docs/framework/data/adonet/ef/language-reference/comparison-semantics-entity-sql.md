@@ -9,53 +9,53 @@ Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-
 ## Explicit comparison  
  Equality operations:  
   
--   =  
+- =  
   
--   !=  
+- !=  
   
  Ordering operations:  
   
--   <  
+- <  
   
--   \<=  
+- \<=  
   
--   \>  
+- \>  
   
--   \>=  
+- \>=  
   
  Nullability operations:  
   
--   IS NULL  
+- IS NULL  
   
--   IS NOT NULL  
+- IS NOT NULL  
   
 ## Explicit distinction  
  Equality distinction:  
   
--   DISTINCT  
+- DISTINCT  
   
--   GROUP BY  
+- GROUP BY  
   
  Ordering distinction:  
   
--   ORDER BY  
+- ORDER BY  
   
 ## Implicit distinction  
  Set operations and predicates (equality):  
   
--   UNION  
+- UNION  
   
--   INTERSECT  
+- INTERSECT  
   
--   EXCEPT  
+- EXCEPT  
   
--   SET  
+- SET  
   
--   OVERLAPS  
+- OVERLAPS  
   
  Item predicates (equality):  
   
--   IN  
+- IN  
   
 ## Supported Combinations  
  The following table shows all the supported combinations of comparison operators for each kind of type:  
@@ -72,19 +72,19 @@ Performing any of the following [!INCLUDE[esql](../../../../../../includes/esql-
   
  <sup>1</sup>The references of the given entity type instances are implicitly compared, as shown in the following example:  
   
-```  
-SELECT p1, p2   
-FROM AdventureWorksEntities.Product AS p1   
-     JOIN AdventureWorksEntities.Product AS p2   
+```sql  
+SELECT p1, p2
+FROM AdventureWorksEntities.Product AS p1
+     JOIN AdventureWorksEntities.Product AS p2
 WHERE p1 != p2 OR p1 IS NULL  
 ```  
   
  An entity instance cannot be compared to an explicit reference. If this is attempted, an exception is thrown. For example, the following query will throw an exception:  
   
-```  
-SELECT p1, p2   
-FROM AdventureWorksEntities.Product AS p1   
-     JOIN AdventureWorksEntities.Product AS p2   
+```sql  
+SELECT p1, p2
+FROM AdventureWorksEntities.Product AS p1
+     JOIN AdventureWorksEntities.Product AS p2
 WHERE p1 != REF(p2)  
 ```  
   
@@ -96,5 +96,6 @@ WHERE p1 != REF(p2)
   
  <sup>5</sup>All individual elements of the references are compared (this includes the entity set name and all the key properties of the entity type).  
   
-## See Also  
- [Entity SQL Overview](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-overview.md)
+## See also
+
+- [Entity SQL Overview](entity-sql-overview.md)

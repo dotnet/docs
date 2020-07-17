@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: 689e7f28-20c1-4d5c-9baa-17441cd63a88
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrame::CreateStepper Method
 Gets a stepper that allows the debugger to perform stepping operations relative to this ICorDebugFrame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateStepper (  
     [out] ICorDebugStepper   **ppStepper  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `ppStepper`  
  [out] A pointer to the address of an ICorDebugStepper object that allows the debugger to perform stepping operations relative to the current frame.  
   
@@ -37,7 +35,7 @@ HRESULT CreateStepper (
  If the frame is not active, the stepper object will typically have to return to the frame before the step is completed.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

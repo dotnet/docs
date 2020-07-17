@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: e0290a49-3818-4a43-ad46-3014faa34f97
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SaveToStream Method
 Saves all metadata in the current scope to the specified `IStream`.  
   
 ## Syntax  
   
-```  
-HRESULT SaveToStream (   
+```cpp  
+HRESULT SaveToStream (
     [in]  IStream     *pIStream,  
     [in]  DWORD       dwSaveFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pIStream`  
  [in] The writable stream to save to.  
   
@@ -38,7 +36,7 @@ HRESULT SaveToStream (
  [in] Reserved. Must be zero.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -46,6 +44,7 @@ HRESULT SaveToStream (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

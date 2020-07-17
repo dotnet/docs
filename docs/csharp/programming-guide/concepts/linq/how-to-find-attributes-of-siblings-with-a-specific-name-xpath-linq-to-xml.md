@@ -1,9 +1,9 @@
 ---
-title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#)"
+title: "How to find attributes of siblings with a specific name (XPath-LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: c3133d64-523f-422d-8838-73d36b945ca0
 ---
-# How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (C#)
+# How to find attributes of siblings with a specific name (XPath-LINQ to XML) (C#)
 This topic shows how to find all attributes of the siblings of the context node. Only attributes with a specific name are returned in the collection.  
   
  The XPath expression is:  
@@ -13,12 +13,12 @@ This topic shows how to find all attributes of the siblings of the context node.
 ## Example  
  This example first finds a `Book` element, and then finds all sibling elements named `Book`, and then finds all attributes named `id`. The result is a collection of attributes.  
   
- This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Books (LINQ to XML)](./sample-xml-file-books-linq-to-xml.md).  
   
 ```csharp  
 XDocument books = XDocument.Load("Books.xml");  
   
-XElement book =   
+XElement book =
     books  
     .Root  
     .Element("Book");  
@@ -43,12 +43,9 @@ foreach (XAttribute el in list1)
   
  This example produces the following output:  
   
-```  
+```output  
 Results are identical  
 id="bk101"  
 id="bk102"  
 ```  
   
-## See Also
-
-- [LINQ to XML for XPath Users (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)

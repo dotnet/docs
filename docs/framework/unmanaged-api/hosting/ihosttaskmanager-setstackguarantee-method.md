@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 6dcc4a4b-3a78-4369-bcc7-c0be6dde57d4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::SetStackGuarantee Method
 Reserved for internal use only.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetStackGuarantee(  
     [in] ULONG guarantee  
 );  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -38,6 +36,7 @@ HRESULT SetStackGuarantee(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [GetStackGuarantee Method](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-getstackguarantee-method.md)  
- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+## See also
+
+- [GetStackGuarantee Method](ihosttaskmanager-getstackguarantee-method.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 8176d732-c25c-4520-811d-e3310f339947
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::GetStackGuarantee Method
 Gets the amount of stack space that is guaranteed to be available after a stack operation completes, but before the closing of a process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackGuarantee(  
     [out] ULONG *pGuarantee  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pGuarantee`  
  [out] A pointer to the number of bytes that are available.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -42,5 +40,6 @@ HRESULT GetStackGuarantee(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+## See also
+
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

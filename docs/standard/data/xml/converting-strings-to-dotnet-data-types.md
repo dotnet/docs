@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 65455ef3-9120-412c-819b-d0f59f88ac09
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Converting Strings to .NET Framework Data Types
 If you want to convert a string to a .NET Framework data type, use the **XmlConvert** method that fits the application requirements. For a list of all conversion methods available in the **XmlConvert** class, see <xref:System.Xml.XmlConvert>.  
@@ -27,7 +25,7 @@ If you want to convert a string to a .NET Framework data type, use the **XmlConv
 |Timespan|Format is PnYnMnTnHnMnS that is, `P2Y10M15DT10H30M20S` is a duration of 2 years, 10 months, 15 days, 10 hours, 30 minutes, and 20 seconds.|  
   
 > [!NOTE]
->  If converting any of the .NET Framework types listed in the table to a string using the **ToString** method, the returned string is not the base type, but the XML Schema (XSD) string type.  
+> If converting any of the .NET Framework types listed in the table to a string using the **ToString** method, the returned string is not the base type, but the XML Schema (XSD) string type.  
   
  The **DateTime** and **Timespan** value type differs in that a **DateTime** represents an instant in time, whereas a **TimeSpan** represents a time interval. The **DateTime** and **Timespan** formats are specified in the XML Schema (XSD) data types specification. For example:  
   
@@ -83,7 +81,7 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
   
 ```xml  
 <Boolean>true</Boolean>  
-<Boolean>1</Boolean>   
+<Boolean>1</Boolean>
 ```  
   
  Both can be understood by the following code, and **bvalue** is **System.Boolean.True**:  
@@ -129,5 +127,5 @@ writer.WriteElementString("Infinity", XmlConvert.ToString(value));
   
 ## See also
 
-- [Conversion of XML Data Types](../../../../docs/standard/data/xml/conversion-of-xml-data-types.md)  
-- [Converting .NET Framework Types to Strings](../../../../docs/standard/data/xml/converting-dotnet-types-to-strings.md)
+- [Conversion of XML Data Types](conversion-of-xml-data-types.md)
+- [Converting .NET Framework Types to Strings](converting-dotnet-types-to-strings.md)

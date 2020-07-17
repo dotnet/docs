@@ -9,11 +9,11 @@ The Discovery APIs provide a unified programming model for the dynamic publicati
 ## Ad-Hoc and Managed Modes  
  The Discovery API supports two different modes: Managed and Ad-Hoc. In Managed mode there is a centralized server called a discovery proxy that maintains information about available services. The discovery proxy can be populated with information about services in a variety of ways. For example, services can send announcement messages during start up to the discovery proxy or the proxy may read data from a database or a configuration file to determine what services are available. How the discovery proxy is populated is completely up to the developer. Clients use the discovery proxy to retrieve information about available services. When a client searches for a service it sends a `Probe` message to the discovery proxy and the proxy determines whether any of the services it knows about match the service the client is searching for. If there are matches the discovery proxy sends a `ProbeMatch` response back to the client. The client can then contact the service directly using the service information returned from the proxy. The key principle behind Managed mode is that the discovery requests are sent in a unicast manner to one authority, the discovery proxy. The .NET Framework contains key components that allow you to build your own proxy. Clients and services can locate the proxy by multiple methods:  
   
--   The proxy can respond to ad-hoc messages.  
+- The proxy can respond to ad-hoc messages.  
   
--   The proxy can send an announcement message during start up.  
+- The proxy can send an announcement message during start up.  
   
--   Clients and services can be written to look for a specific well-known endpoint.  
+- Clients and services can be written to look for a specific well-known endpoint.  
   
  In Ad-Hoc mode, there is no centralized server. All discovery messages such as service announcements and client requests are sent in a multicast fashion. By default the .NET Framework contains support for Ad-Hoc discovery over the UDP protocol. For example, if a service is configured to send out a Hello announcement on start up, it sends it out over a well-known, multicast address using the UDP protocol. Clients have to actively listen for these announcements and process them accordingly. When a client sends a `Probe` message for a service it is sent over the network using a multicast protocol. Each service that receives the request determines whether it matches the criteria in the `Probe` message and responds directly to the client with a `ProbeMatch` message if the service matches the criteria specified in the `Probe` message.  
   
@@ -24,8 +24,7 @@ The Discovery APIs provide a unified programming model for the dynamic publicati
  To make a service discoverable, a <xref:System.ServiceModel.Discovery.ServiceDiscoveryBehavior> must be added to the service host and a discovery endpoint must be added to specify where to listen for discovery messages. The following code example shows how a self-hosted service can be modified to make it discoverable.  
   
 ```csharp  
-Uri baseAddress = new Uri(string.Format("http://{0}:8000/discovery/scenarios/calculatorservice/{1}/",  
-        System.Net.Dns.GetHostName(), Guid.NewGuid().ToString()));
+Uri baseAddress = new Uri($"http://{System.Net.Dns.GetHostName()}:8000/discovery/scenarios/calculatorservice/{Guid.NewGuid().ToString()}/");
 
 // Create a ServiceHost for the CalculatorService type.
 using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress))
@@ -56,8 +55,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
  By default, service publication does not send out announcement messages. The service must be configured to send out announcement messages. This provides additional flexibility for service writers because they can announce the service separately from listening for discovery messages. Service announcement can also be used as a mechanism for registering services with a discovery proxy or other service registries. The following code shows how to configure a service to send announcement messages over a UDP binding.  
   
 ```csharp  
-Uri baseAddress = new Uri(string.Format("http://{0}:8000/discovery/scenarios/calculatorservice/{1}/",
-        System.Net.Dns.GetHostName(), Guid.NewGuid().ToString()));
+Uri baseAddress = new Uri($"http://{System.Net.Dns.GetHostName()}:8000/discovery/scenarios/calculatorservice/{Guid.NewGuid().ToString()}/");
 
 // Create a ServiceHost for the CalculatorService type.
 using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress))
@@ -68,7 +66,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), base
     // ** DISCOVERY ** //
     // Make the service discoverable by adding the discovery behavior
     ServiceDiscoveryBehavior discoveryBehavior = new ServiceDiscoveryBehavior();
-    serviceHost.Description.Behaviors.Add(new ServiceDiscoveryBehavior());
+    serviceHost.Description.Behaviors.Add(discoveryBehavior);
 
     // Send announcements on UDP multicast transport
     discoveryBehavior.AnnouncementEndpoints.Add(
@@ -97,7 +95,7 @@ class Client
   
     static void Main()
     {  
-        if (FindService()) 
+        if (FindService())
         {
             InvokeService();
         }
@@ -107,10 +105,10 @@ class Client
     static bool FindService()  
     {  
         Console.WriteLine("\nFinding Calculator Service ..");  
-        DiscoveryClient discoveryClient =   
+        DiscoveryClient discoveryClient =
             new DiscoveryClient(new UdpDiscoveryEndpoint());  
   
-        Collection<EndpointDiscoveryMetadata> calculatorServices =   
+        Collection<EndpointDiscoveryMetadata> calculatorServices =
             (Collection<EndpointDiscoveryMetadata>)discoveryClient.Find(new FindCriteria(typeof(ICalculator))).Endpoints;  
   
         discoveryClient.Close();  
@@ -140,18 +138,18 @@ class Client
 ```  
   
 ## Discovery and Message Level Security  
- When using message level security it is necessary to specify an <xref:System.ServiceModel.EndpointIdentity> on the service discovery endpoint and a matching <xref:System.ServiceModel.EndpointIdentity> on the client discovery endpoint. For more information about message level security, see [Message Security](../../../../docs/framework/wcf/feature-details/message-security-in-wcf.md).  
+ When using message level security it is necessary to specify an <xref:System.ServiceModel.EndpointIdentity> on the service discovery endpoint and a matching <xref:System.ServiceModel.EndpointIdentity> on the client discovery endpoint. For more information about message level security, see [Message Security](message-security-in-wcf.md).  
   
 ## Discovery and Web Hosted Services  
  In order for WCF services to be discoverable they must be running. WCF services hosted under IIS or WAS do not run until IIS/WAS receives a message bound for the service, so they cannot be discoverable by default.  There are two options for making Web-Hosted services discoverable:  
   
-1.  Use the Windows Server AppFabric Auto-Start feature  
+1. Use the Windows Server AppFabric Auto-Start feature  
   
-2.  Use a discovery proxy to communicate on behalf of the service  
+2. Use a discovery proxy to communicate on behalf of the service  
   
- Windows Server AppFabric has an Auto-Start feature that will allow a service to be started before receiving any messages. With this Auto-Start set, an IIS/WAS hosted service can be configured to be discoverable. For more information about the Auto-Start feature see, [Windows Server AppFabric Auto-Start Feature](https://go.microsoft.com/fwlink/?LinkId=205545). Along with turning on the Auto-Start feature, you must configure the service for discovery. For more information, see [How to: Programmatically Add Discoverability to a WCF Service and Client](../../../../docs/framework/wcf/feature-details/how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)[Configuring Discovery in a Configuration File](../../../../docs/framework/wcf/feature-details/configuring-discovery-in-a-configuration-file.md).  
+ Windows Server AppFabric has an Auto-Start feature that will allow a service to be started before receiving any messages. With this Auto-Start set, an IIS/WAS hosted service can be configured to be discoverable. For more information about the Auto-Start feature see, [Windows Server AppFabric Auto-Start Feature](https://docs.microsoft.com/previous-versions/appfabric/ee677260(v=azure.10)). Along with turning on the Auto-Start feature, you must configure the service for discovery. For more information, see [How to: Programmatically Add Discoverability to a WCF Service and Client](how-to-programmatically-add-discoverability-to-a-wcf-service-and-client.md)[Configuring Discovery in a Configuration File](configuring-discovery-in-a-configuration-file.md).  
   
- A discovery proxy can be used to communicate on behalf of the WCF service when the service is not running. The proxy can listen for probe or resolve messages and respond to the client. The client can then send messages directly to the service. When the client sends a message to the service it will be instantiated to respond to the message. For more information about implementing a discovery proxy see, [Implementing a Discovery Proxy](../../../../docs/framework/wcf/feature-details/implementing-a-discovery-proxy.md).  
+ A discovery proxy can be used to communicate on behalf of the WCF service when the service is not running. The proxy can listen for probe or resolve messages and respond to the client. The client can then send messages directly to the service. When the client sends a message to the service it will be instantiated to respond to the message. For more information about implementing a discovery proxy see, [Implementing a Discovery Proxy](implementing-a-discovery-proxy.md).  
   
 > [!NOTE]
->  For WCF Discovery to work correctly, all NICs (Network Interface Controller) should only have 1 IP address.
+> For WCF Discovery to work correctly, all NICs (Network Interface Controller) should only have 1 IP address.

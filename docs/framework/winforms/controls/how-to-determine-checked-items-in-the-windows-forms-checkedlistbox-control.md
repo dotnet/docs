@@ -1,5 +1,6 @@
 ---
-title: "How to: Determine Checked Items in the Windows Forms CheckedListBox Control"
+title: Determine Checked Items in CheckedListBox Control
+description: Learn how to determine checked items in the Windows Forms CheckedListBox control by iterating through the collection stored in the CheckedItems property.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -15,7 +16,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
 ### To determine checked items in a CheckedListBox control  
   
-1.  Iterate through the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> collection, starting at 0 since the collection is zero-based. Note that this method will give you the item number in the list of checked items, not the overall list. So if the first item in the list is not checked and the second item is checked, the code below will display text like "Checked Item 1 = MyListItem2".  
+1. Iterate through the <xref:System.Windows.Forms.CheckedListBox.CheckedItems%2A> collection, starting at 0 since the collection is zero-based. Note that this method will give you the item number in the list of checked items, not the overall list. So if the first item in the list is not checked and the second item is checked, the code below will display text like "Checked Item 1 = MyListItem2".  
   
     ```vb  
     ' Determine if there are any items checked.  
@@ -62,7 +63,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
      - or -  
   
-2.  Step through the <xref:System.Windows.Forms.CheckedListBox.Items%2A> collection, starting at 0 since the collection is zero-based, and call the <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> method for each item. Note that this method will give you the item number in the overall list, so if the first item in the list is not checked and the second item is checked, it will display something like "Item 2 = MyListItem2".  
+2. Step through the <xref:System.Windows.Forms.CheckedListBox.Items%2A> collection, starting at 0 since the collection is zero-based, and call the <xref:System.Windows.Forms.CheckedListBox.GetItemChecked%2A> method for each item. Note that this method will give you the item number in the overall list, so if the first item in the list is not checked and the second item is checked, it will display something like "Item 2 = MyListItem2".  
   
     ```vb  
     Dim i As Integer  
@@ -78,7 +79,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
     ```csharp  
     int i;  
-    string s;   
+    string s;
     s = "Checked items:\n" ;  
     for (i = 0; i <= (checkedListBox1.Items.Count-1); i++)  
     {  
@@ -92,7 +93,7 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
   
     ```cpp  
     int i;  
-    String ^ s;   
+    String ^ s;
     s = "Checked items:\n" ;  
     for (i = 0; i <= (checkedListBox1->Items->Count-1); i++)  
     {  
@@ -105,5 +106,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
     MessageBox::Show(s);  
     ```  
   
-## See Also  
- [Windows Forms Controls Used to List Options](../../../../docs/framework/winforms/controls/windows-forms-controls-used-to-list-options.md)
+## See also
+
+- [Windows Forms Controls Used to List Options](windows-forms-controls-used-to-list-options.md)

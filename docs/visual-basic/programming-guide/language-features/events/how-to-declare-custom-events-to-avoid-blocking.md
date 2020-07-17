@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare Custom Events To Avoid Blocking (Visual Basic)"
+title: "How to: Declare Custom Events To Avoid Blocking"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring events [Visual Basic], custom"
@@ -19,10 +19,11 @@ There are several circumstances when it is important that one event handler not 
   
  When code raises the `Click` event, the `RaiseEvent` accessor invokes all the event handler delegates asynchronously using the <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A> method. That method invokes each handler on a worker thread and returns immediately, so handlers cannot block one another.  
   
- [!code-vb[VbVbalrEvents#27](../../../../visual-basic/language-reference/statements/codesnippet/VisualBasic/how-to-declare-custom-events-to-avoid-blocking_1.vb)]  
+ [!code-vb[VbVbalrEvents#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#27)]  
   
-## See Also  
- <xref:System.Collections.ArrayList>  
- <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>  
- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)  
- [How to: Declare Custom Events To Conserve Memory](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-conserve-memory.md)
+## See also
+
+- <xref:System.Collections.ArrayList>
+- <xref:System.Web.Services.Protocols.LogicalMethodInfo.BeginInvoke%2A>
+- [Events](index.md)
+- [How to: Declare Custom Events To Conserve Memory](how-to-declare-custom-events-to-conserve-memory.md)

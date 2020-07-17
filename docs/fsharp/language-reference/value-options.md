@@ -1,7 +1,7 @@
 ---
 title: Value Options
 description: Learn about the F# Value Option type, which is a struct version of the Option type.
-ms.date: 06/16/2018
+ms.date: 12/04/2019
 ---
 
 # Value Options
@@ -11,7 +11,7 @@ The Value Option type in F# is used when the following two circumstances hold:
 1. A scenario is appropriate for an [F# Option](options.md).
 2. Using a struct provides a performance benefit in your scenario.
 
-Not all performance-sensitive scenarios are "solved" by using structs. You must consider the additional cost of copying when using them instead of reference types. However, large F# programs commonly instantiate many optional types that flow through hot paths, because structs can sometimes yield better overall performance over the lifetime of a program.
+Not all performance-sensitive scenarios are "solved" by using structs. You must consider the additional cost of copying when using them instead of reference types. However, large F# programs commonly instantiate many optional types that flow through hot paths, and in such cases, structs can often yield better overall performance over the lifetime of a program.
 
 ## Definition
 
@@ -58,15 +58,13 @@ There is one property for Value Options at this time: `Value`. An <xref:System.I
 
 ## Value Option functions
 
-There is currently one module-bound function for Value Options, `defaultValueArg`:
+The `ValueOption` module in FSharp.Core contains equivalent functionality to the `Option` module. There are a few differences in name, such as `defaultValueArg`:
 
 ```fsharp
-val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T 
+val defaultValueArg : arg:'T voption -> defaultValue:'T -> 'T
 ```
 
-As with the `defaultArg` function, `defaultValueArg` returns the underlying value of the given Value Option if it exists; otherwise, it returns the specified default value.
-
-At this time, there are no other module-bound functions for Value Options.
+This acts just like `defaultArg` in the `Option` module, but operates on a Value Option instead.
 
 ## See also
 

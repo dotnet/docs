@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Named Pipes for Network Interprocess Communication"
+description: See two examples of using named pipes for interprocess communication between a pipe server and one or more pipe clients in a network.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -13,10 +14,8 @@ helpviewer_keywords:
   - "multiple connections via named pipes"
   - "network communications [.NET Framework], named pipes"
   - "impersonation [.NET Framework], named pipes"
-  - "full duplex communcation [.NET Framework], named pipes"
+  - "full duplex communication [.NET Framework], named pipes"
 ms.assetid: 4e4d7e64-9f1b-4026-98f7-20488ac7b42b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Use Named Pipes for Network Interprocess Communication
 Named pipes provide interprocess communication between a pipe server and one or more pipe clients. They offer more functionality than anonymous pipes, which provide interprocess communication on a local computer. Named pipes support full duplex communication over a network and multiple server instances, message-based communication, and client impersonation, which enables connecting processes to use their own set of permissions on remote servers.  
@@ -41,7 +40,7 @@ Named pipes provide interprocess communication between a pipe server and one or 
   
 ## See also
 
-- <xref:System.Security.Principal.TokenImpersonationLevel>  
-- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A>  
-- [Pipes](../../../docs/standard/io/pipe-operations.md)  
-- [How to: Use Anonymous Pipes for Local Interprocess Communication](../../../docs/standard/io/how-to-use-anonymous-pipes-for-local-interprocess-communication.md)
+- <xref:System.Security.Principal.TokenImpersonationLevel>
+- <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A>
+- [Pipes](pipe-operations.md)
+- [How to: Use Anonymous Pipes for Local Interprocess Communication](how-to-use-anonymous-pipes-for-local-interprocess-communication.md)

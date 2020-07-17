@@ -101,7 +101,7 @@ protected static void OnRowUpdating(
   {  
     System.IO.TextWriter tw = System.IO.File.AppendText("Deletes.log");  
     tw.WriteLine(  
-      "{0}: Customer {1} Deleted.", DateTime.Now,   
+      "{0}: Customer {1} Deleted.", DateTime.Now,
        args.Row["CustomerID", DataRowVersion.Original]);  
     tw.Close();  
   }  
@@ -172,7 +172,7 @@ protected static void FillError(object sender, FillErrorEventArgs args)
     DataRow myRow = args.DataTable.Rows.Add(new object[]  
        {args.Values[0], args.Values[1], DBNull.Value});  
     //Set the RowError containing the value for the third column.  
-    myRow.RowError =   
+    myRow.RowError =
        "OverflowException Encountered. Value from data source: " +  
        args.Values[2];  
     args.Continue = true;  
@@ -180,9 +180,10 @@ protected static void FillError(object sender, FillErrorEventArgs args)
 }  
 ```  
   
-## See Also  
- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)  
- [Handling DataSet Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-dataset-events.md)  
- [Handling DataTable Events](../../../../docs/framework/data/adonet/dataset-datatable-dataview/handling-datatable-events.md)  
- [Events](../../../../docs/standard/events/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [Handling DataSet Events](./dataset-datatable-dataview/handling-dataset-events.md)
+- [Handling DataTable Events](./dataset-datatable-dataview/handling-datatable-events.md)
+- [Events](../../../standard/events/index.md)
+- [ADO.NET Overview](ado-net-overview.md)

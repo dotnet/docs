@@ -10,19 +10,19 @@ A *mesh* is a named collection (an interconnected graph) of peer nodes that can 
   
 #### Uniquely Identified  
   
--   A unique ID identifies each mesh. The name of the mesh (or mesh ID) is in the same format as a Domain Name System (DNS) host name. As such, this mesh ID must be unique for the intended client of the application within the scope of the resolver being used. A common name such as "MyFamilysPeers" or "KevinsPokerTable," may easily collide with other user names and may return unintended peer endpoint information, which could result in privacy issues or increase connection latency. One way to avoid these issues may be to add a unique ID as a postfix to the nickname for the mesh (for example, "KevinsPokerTable90210").  
+- A unique ID identifies each mesh. The name of the mesh (or mesh ID) is in the same format as a Domain Name System (DNS) host name. As such, this mesh ID must be unique for the intended client of the application within the scope of the resolver being used. A common name such as "MyFamilysPeers" or "KevinsPokerTable," may easily collide with other user names and may return unintended peer endpoint information, which could result in privacy issues or increase connection latency. One way to avoid these issues may be to add a unique ID as a postfix to the nickname for the mesh (for example, "KevinsPokerTable90210").  
   
 #### Message Flooding  
   
--   The mesh allows messages to be propagated from one or more senders to all other peer nodes in the same mesh. Messages flooded by peer nodes use headers specified in the namespace at `http://schemas.microsoft.com/net/2006/05/peer`.  
+- The mesh allows messages to be propagated from one or more senders to all other peer nodes in the same mesh. Messages flooded by peer nodes use headers specified in the namespace at `http://schemas.microsoft.com/net/2006/05/peer`.  
   
 #### Optimized Connections  
   
--   A Peer Channel mesh automatically adjusts when nodes join and leave, ensuring that all nodes have good connectivity with little chance of creating partitions (groups of nodes isolated from each other). Connections in the mesh are also dynamically optimized based on current traffic patterns so that message latency from sender to receiver is as small as possible.  
+- A Peer Channel mesh automatically adjusts when nodes join and leave, ensuring that all nodes have good connectivity with little chance of creating partitions (groups of nodes isolated from each other). Connections in the mesh are also dynamically optimized based on current traffic patterns so that message latency from sender to receiver is as small as possible.  
   
 #### Popular Network Features That Peer Channel Does Not Provide  
  It is important to be aware of popular network features that Peer Channel does not provide. These features, which may all be built on top of Peer Channel, include the following:  
   
--   **Message ordering:** Messages originating from a single source may not arrive at all other parties in the same order or in the order that the source sent. Applications that require messages be delivered in a certain order must build it into their applications (for example, by including a monotonically increasing ID with all messages).  
+- **Message ordering:** Messages originating from a single source may not arrive at all other parties in the same order or in the order that the source sent. Applications that require messages be delivered in a certain order must build it into their applications (for example, by including a monotonically increasing ID with all messages).  
   
--   **Reliable messaging:** Peer Channel does not include a mechanism to ensure message reception by all peers. To guarantee message delivery, you must write a reliability layer on top of Peer Channel.
+- **Reliable messaging:** Peer Channel does not include a mechanism to ensure message reception by all peers. To guarantee message delivery, you must write a reliability layer on top of Peer Channel.

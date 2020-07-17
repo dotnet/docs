@@ -15,26 +15,24 @@ helpviewer_keywords:
 ms.assetid: 5da07f99-6c70-46ec-b997-5ab6fb7106cd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugReferenceValue::GetValue Method
 Gets the current memory address of the referenced object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] CORDB_ADDRESS   *pValue  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pValue`  
  [out] A pointer to a `CORDB_ADDRESS` value that specifies the address of the object to which this ICorDebugReferenceValue object points.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

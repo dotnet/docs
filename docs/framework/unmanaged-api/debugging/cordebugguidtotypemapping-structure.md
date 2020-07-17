@@ -16,11 +16,9 @@ helpviewer_keywords:
 ms.assetid: 57dbccd9-b16d-4da3-ae25-7a2cf9adf679
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugGuidToTypeMapping Structure
-Maps a [!INCLUDE[wrt](../../../../includes/wrt-md.md)] GUID to its corresponding ICorDebugType object.  
+Maps a Windows Runtime GUID to its corresponding ICorDebugType object.  
   
 ## Syntax  
   
@@ -35,11 +33,11 @@ typedef struct CorDebugGuidToTypeMapping {
   
 |Member|Description|  
 |------------|-----------------|  
-|`iid`|The GUID of the cached [!INCLUDE[wrt](../../../../includes/wrt-md.md)] type.|  
+|`iid`|The GUID of the cached Windows Runtime type.|  
 |`pType`|A pointer to an ICorDebugType object that provides information about the cached type.|  
   
 ## Requirements  
- **Platforms:** [!INCLUDE[wrt](../../../../includes/wrt-md.md)].  
+ **Platforms:** Windows Runtime.  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -47,6 +45,7 @@ typedef struct CorDebugGuidToTypeMapping {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)  
- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+## See also
+
+- [Debugging Structures](debugging-structures.md)
+- [Debugging](index.md)

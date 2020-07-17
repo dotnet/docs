@@ -14,18 +14,16 @@ helpviewer_keywords:
 ms.assetid: e7b8f6b4-95bc-4ba5-b9eb-f5590a7326a4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_JIT_CACHE Enumeration
 Indicates the result of a cached function search.  
   
 > [!NOTE]
->  `COR_PRF_CACHED_FUNCTION_FOUND` has a value of zero, so `COR_PRF_JIT_CACHE` cannot be used as a Boolean surrogate.  
+> `COR_PRF_CACHED_FUNCTION_FOUND` has a value of zero, so `COR_PRF_JIT_CACHE` cannot be used as a Boolean surrogate.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_CACHED_FUNCTION_FOUND,  
     COR_PRF_CACHED_FUNCTION_NOT_FOUND  
@@ -40,7 +38,7 @@ typedef enum {
 |`COR_PRF_FUNCTION_NOT_FOUND`|The search did not find the function.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -48,5 +46,6 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
+## See also
+
+- [Profiling Enumerations](profiling-enumerations.md)

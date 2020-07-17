@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugBoxValue Interface1"
+title: "ICorDebugBoxValue Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugBoxValue"
@@ -14,25 +14,24 @@ helpviewer_keywords:
 ms.assetid: 3d3ae7e2-97d4-46de-a2c3-cb78f3490f9d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugBoxValue Interface1
+# ICorDebugBoxValue Interface
+
 A subclass of "ICorDebugHeapValue" that represents a boxed value class object.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugboxvalue-getobject-method.md)|Gets an interface pointer to the boxed "ICorDebugObjectValue" instance.|  
+|[GetObject Method](icordebugboxvalue-getobject-method.md)|Gets an interface pointer to the boxed "ICorDebugObjectValue" instance.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -40,5 +39,6 @@ A subclass of "ICorDebugHeapValue" that represents a boxed value class object.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

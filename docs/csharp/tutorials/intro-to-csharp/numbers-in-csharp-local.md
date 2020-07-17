@@ -1,20 +1,25 @@
 ---
 title: Numbers in C# - Introduction to C# tutorial
-description: Learn C# by exploring numeric types, their properties and methods.
+description: Learn C# by exploring numeric types, their uses, properties, and methods.
 ms.date: 10/31/2017
 ms.custom: mvc
 ---
-# Manipulate integral and floating point numbers in C# #
+
+# Manipulate integral and floating point numbers in C\#
 
 This tutorial teaches you about the numeric types in C# interactively. You'll write small amounts of code, then you'll compile and run that code. The tutorial contains a series of lessons that explore numbers and math operations in C#. These lessons teach you the fundamentals of the C# language.
 
-This tutorial expects you to have a machine you can use for development. The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting up your local development environment on Mac, PC or Linux. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
+This tutorial expects you to have a machine you can use for development. The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting up your local development environment on Windows, Linux, or macOS. A quick overview of the commands you'll use is in the [Become familiar with the development tools](local-environment.md) with links to more details.
 
 ## Explore integer math
 
-Create a directory named **numbers-quickstart**. Make that the current directory and run `dotnet new console -n NumbersInCSharp -o .`.
+Create a directory named *numbers-quickstart*. Make that the current directory and run the following command:
 
-Open **Program.cs** in your favorite editor, and replace the line `Console.Writeline("Hello World!");` with the following:
+```dotnetcli
+dotnet new console -n NumbersInCSharp -o .
+```
+
+Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following code:
 
 ```csharp
 int a = 18;
@@ -23,9 +28,9 @@ int c = a + b;
 Console.WriteLine(c);
 ```
 
-Run this code by typing `dotnet run` in your command window. 
+Run this code by typing `dotnet run` in your command window.
 
-You've just seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a positive or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
+You've seen one of the fundamental math operations with integers. The `int` type represents an **integer**, a zero, positive, or negative whole number. You use the `+` symbol for addition. Other common mathematical operations for integers include:
 
 - `-` for subtraction
 - `*` for multiplication
@@ -34,17 +39,23 @@ You've just seen one of the fundamental math operations with integers. The `int`
 Start by exploring those different operations. Add these lines after the line that writes the value of `c`:
 
 ```csharp
+
+// subtraction
 c = a - b;
 Console.WriteLine(c);
+
+// multiplication
 c = a * b;
 Console.WriteLine(c);
+
+// division
 c = a / b;
 Console.WriteLine(c);
 ```
 
-Run this code by typing `dotnet run` in your command window. 
-    
-You can also experiment by performing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
+Run this code by typing `dotnet run` in your command window.
+
+You can also experiment by writing multiple mathematics operations in the same line, if you'd like. Try `c = a + b - 12 * 17;` for example. Mixing variables and constant numbers is allowed.
 
 > [!TIP]
 > As you explore C# (or any programming language), you'll
@@ -52,9 +63,9 @@ You can also experiment by performing multiple mathematics operations in the sam
 > find those errors and report them to you. When the output
 > contains error messages, look closely at the example code
 > and the code in your window to see what to fix.
-> That exercise will help you learn the structure of C# code.     
+> That exercise will help you learn the structure of C# code.
 
-You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithIntegers` and write a new `Main` method that calls `WorkingWithIntegers`. When you have finished, your code should look like this:
+You've finished the first step. Before you start the next section, let's move the current code into a separate method. That makes it easier to start working with a new example. Rename your `Main` method to `WorkingWithIntegers` and write a new `Main` method that calls `WorkingWithIntegers`. When you finish, your code should look like this:
 
 ```csharp
 using System;
@@ -67,12 +78,20 @@ namespace NumbersInCSharp
         {
             int a = 18;
             int b = 6;
+
+            // addition
             int c = a + b;
             Console.WriteLine(c);
+
+            // subtraction
             c = a - b;
             Console.WriteLine(c);
+
+            // multiplication
             c = a * b;
             Console.WriteLine(c);
+
+            // division
             c = a / b;
             Console.WriteLine(c);
         }
@@ -93,13 +112,11 @@ Comment out the call to `WorkingWithIntegers()`. It will make the output less cl
 //WorkingWithIntegers();
 ```
 
-The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler does not generate any executable code from comments.
+The `//` starts a **comment** in C#. Comments are any text you want to keep in your source code but not execute as code. The compiler doesn't generate any executable code from comments.
 
-The C# language defines the precedence of different mathematics operations
-with rules consistent with the rules you learned in mathematics.
+The C# language defines the precedence of different mathematics operations with rules consistent with the rules you learned in mathematics.
 Multiplication and division take precedence over addition and subtraction.
-Explore that by adding the following code to your `Main` method, and executing
-`dotnet run`:
+Explore that by adding the following code to your `Main` method, and executing `dotnet run`:
 
 ```csharp
 int a = 5;
@@ -111,42 +128,36 @@ Console.WriteLine(d);
 
 The output demonstrates that the multiplication is performed before the addition.
 
-You can force a different order of operation by adding parentheses around
-the operation or operations you want performed first. Add the following
-lines and run again:
+You can force a different order of operation by adding parentheses around the operation or operations you want performed first. Add the following lines and run again:
 
 ```csharp
-d = (a  + b) * c;
+d = (a + b) * c;
 Console.WriteLine(d);
 ```
 
-Explore more by combining many different operations. Add something like
-the following lines at the bottom of your `Main` method. Try `dotnet run` again.
+Explore more by combining many different operations. Add something like the following lines at the bottom of your `Main` method. Try `dotnet run` again.
 
 ```csharp
 d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
 Console.WriteLine(d);
 ```
 
-You may have noticed an interesting behavior for integers. Integer
-division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
+You may have noticed an interesting behavior for integers. Integer division always produces an integer result, even when you'd expect the result to include a decimal or fractional portion.
 
-If you haven't seen this behavior, try the following code at the end
-of your `Main` method:
+If you haven't seen this behavior, try the following code at the end of your `Main` method:
 
 ```csharp
 int e = 7;
 int f = 4;
 int g = 3;
-int h = (e  + f) / g;
+int h = (e + f) / g;
 Console.WriteLine(h);
 ```
 
 Type `dotnet run` again to see the results.
 
-Before moving on, let's take all the code you've written in this
-section and put it in a new method. Call that new method `OrderPrecedence`.
-You should end up with something like this:
+Before moving on, let's take all the code you've written in this section and put it in a new method. Call that new method `OrderPrecedence`.
+You should write something like this:
 
 ```csharp
 using System;
@@ -159,25 +170,33 @@ namespace NumbersInCSharp
         {
             int a = 18;
             int b = 6;
+
+            // addition
             int c = a + b;
             Console.WriteLine(c);
+
+            // subtraction
             c = a - b;
             Console.WriteLine(c);
+
+            // multiplication
             c = a * b;
             Console.WriteLine(c);
+
+            // division
             c = a / b;
             Console.WriteLine(c);
         }
 
         static void OrderPrecedence()
-        {   
+        {
             int a = 5;
             int b = 4;
             int c = 2;
             int d = a + b * c;
             Console.WriteLine(d);
 
-            d = (a  + b) * c;
+            d = (a + b) * c;
             Console.WriteLine(d);
 
             d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
@@ -202,6 +221,7 @@ namespace NumbersInCSharp
 ```
 
 ## Explore integer precision and limits
+
 That last sample showed you that integer division truncates the result.
 You can get the **remainder** by using the **modulo** operator, the `%` character. Try the following code in your `Main` method:
 
@@ -209,7 +229,7 @@ You can get the **remainder** by using the **modulo** operator, the `%` characte
 int a = 7;
 int b = 4;
 int c = 3;
-int d = (a  + b) / c;
+int d = (a + b) / c;
 int e = (a + b) % c;
 Console.WriteLine($"quotient: {d}");
 Console.WriteLine($"remainder: {e}");
@@ -218,7 +238,7 @@ Console.WriteLine($"remainder: {e}");
 The C# integer type differs from mathematical integers in one other
 way: the `int` type has minimum and maximum limits. Add this code to
 your `Main` method to see those limits:
-    
+
 ```csharp
 int max = int.MaxValue;
 int min = int.MinValue;
@@ -234,33 +254,34 @@ method to see an example:
 int what = max + 3;
 Console.WriteLine($"An example of overflow: {what}");
 ```
-    
+
 Notice that the answer is very close to the minimum (negative) integer. It's
-the same as `min + 2`. 
+the same as `min + 2`.
 The addition operation **overflowed** the allowed values for integers.
 The answer is a very large negative number because an overflow "wraps around"
 from the largest possible integer value to the smallest.
 
 There are other numeric types with different limits and precision that you
-would use when the `int` type doesn't meet your needs. Let's explore those next.
+would use when the `int` type doesn't meet your needs. Let's explore those other types next.
 
-Once again, let's move the code you wrote in this section into a separate method. Name it `TestLimits`. 
+Once again, let's move the code you wrote in this section into a separate method. Name it `TestLimits`.
 
 ## Work with the double type
 
 The `double` numeric type represents a double-precision floating point
 number. Those terms may be new to you. A **floating point** number is
 useful to represent non-integral numbers that may be very large or small
-in magnitude. **Double-precision** means that these numbers are stored
-using greater precision than **single-precision**. On modern computers,
-it is more common to use double precision than single precision numbers.
+in magnitude. **Double-precision** is a relative term that describes the
+number of binary digits used to store the value. **Double precision**
+numbers have twice the number of binary digits as **single-precision**. On modern computers,
+it's more common to use double precision than single precision numbers. **Single precision** numbers are declared using the `float` keyword.
 Let's explore. Add the following code and see the result:
 
 ```csharp
 double a = 5;
 double b = 4;
 double c = 2;
-double d = (a  + b) / c;
+double d = (a + b) / c;
 Console.WriteLine(d);
 ```
 
@@ -271,7 +292,7 @@ more complicated expression with doubles:
 double e = 19;
 double f = 23;
 double g = 8;
-double h = (e  + f) / g;
+double h = (e + f) / g;
 Console.WriteLine(h);
 ```
 
@@ -286,7 +307,7 @@ Console.WriteLine($"The range of double is {min} to {max}");
 
 These values are printed out in scientific notation. The number to
 the left of the `E` is the significand. The number to the right is the exponent,
-as a power of 10. 
+as a power of 10.
 
 Just like decimal numbers in math, doubles in C# can have rounding errors. Try this code:
 
@@ -295,22 +316,21 @@ double third = 1.0 / 3.0;
 Console.WriteLine(third);
 ```
 
-You know that `0.3` repeating is not exactly the same as `1/3`.
+You know that `0.3` repeating isn't exactly the same as `1/3`.
 
 ***Challenge***
 
-Try other calculations with large numbers, small numbers, multiplication
-and division using the `double` type.  Try more complicated calculations.
+Try other calculations with large numbers, small numbers, multiplication,
+and division using the `double` type. Try more complicated calculations.
 
 After you've spent some time with the challenge, take the code you've written
 and place it in a new method. Name that new method `WorkWithDoubles`.
 
-## Work with fixed point types
+## Work with decimal types
 
-You've seen the basic numeric types in C#: integers and doubles.  There is one
+You've seen the basic numeric types in C#: integers and doubles.  There's one
 other type to learn: the `decimal` type. The `decimal` type has a smaller
-range but greater precision than `double`. The term **fixed point** means
-that the decimal point (or binary point) doesn't move. Let's take a look:
+range but greater precision than `double`. Let's take a look:
 
 ```csharp
 decimal min = decimal.MinValue;
@@ -332,31 +352,32 @@ Console.WriteLine(c / d);
 ```
 
 The `M` suffix on the numbers is how you indicate that a constant should use the
-`decimal` type.
+`decimal` type. Otherwise, the compiler assumes the `double` type.
+
+> [!NOTE]
+> The letter `M` was chosen as the most visually distinct letter between the `double` and `decimal` keywords.
 
 Notice that the math using the decimal type has more digits to the right
-of the decimal point. 
+of the decimal point.
 
 ***Challenge***
 
 Now that you've seen the different numeric types, write code that calculates
 the area of a circle whose radius is 2.50 centimeters. Remember that the area of a circle
 is the radius squared multiplied by PI. One hint: .NET contains a constant
-for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. 
+for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value. <xref:System.Math.PI?displayProperty=nameWithType>, like all constants declared in the `System.Math` namespace, is a `double` value. For that reason, you should use `double` instead of `decimal` values for this challenge.
 
 You should get an answer between 19 and 20.
-You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106)
+You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106).
 
-Try some other formulas if you'd like. 
+Try some other formulas if you'd like.
 
 You've completed the "Numbers in C#" quickstart. You can continue with
 the [Branches and loops](branches-and-loops-local.md) quickstart in
 your own development environment.
 
-You can learn more about numbers in C# in the following topics:
+You can learn more about numbers in C# in the following articles:
 
-[Integral Types Table](../../language-reference/keywords/integral-types-table.md)   
-[Floating-Point Types Table](../../language-reference/keywords/floating-point-types-table.md)   
-[Built-In Types Table](../../language-reference/keywords/built-in-types-table.md)   
-[Implicit Numeric Conversions Table](../../language-reference/keywords/implicit-numeric-conversions-table.md)   
-[Explicit Numeric Conversions Table](../../language-reference/keywords/explicit-numeric-conversions-table.md)
+- [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md)
+- [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md)
+- [Built-in numeric conversions](../../language-reference/builtin-types/numeric-conversions.md)

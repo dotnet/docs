@@ -1,17 +1,16 @@
 ---
 title: "Runtime Information ETW Events"
+description: See runtime information ETW events, which record the SKU, version number, how the runtime was activated (including command-line parameters), the GUID, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "runtime information events [.NET Framework]"
   - "ETW, runtime information events"
 ms.assetid: 68b4edbc-7f3b-45f6-ab75-4fd066d6af9a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Runtime Information ETW Events
 These ETW events log information about the runtime, including the SKU, version number, the manner in which the runtime was activated, the command-line parameters it was started with, the GUID (if applicable), and other relevant information. If multiple runtimes are executing within a process, the information provided by these events (the ClrInstanceID) helps disambiguate the runtimes.  
   
- The following table shows the two runtime information events. The events can be raised under any keyword or mask. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the two runtime information events. The events can be raised under any keyword or mask. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Event|Event ID|Provider|Description|  
 |-----------|--------------|--------------|-----------------|  
@@ -38,5 +37,6 @@ These ETW events log information about the runtime, including the SKU, version n
 |ComObjectGUID|win:GUID|Non-null only if StartupMode=0x08.|  
 |RuntimeDLLPath|win:UnicodeString|Path to the CLR .dll file that was loaded into the process.|  
   
-## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+## See also
+
+- [CLR ETW Events](clr-etw-events.md)

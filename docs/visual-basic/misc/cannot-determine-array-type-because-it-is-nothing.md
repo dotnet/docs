@@ -10,8 +10,9 @@ The type of your array cannot be determined because it has been set to the value
   
 ## To correct this error  
   
-1.  Provide a value other than `Nothing` for the array.  
+1. Provide a value other than `Nothing` for the array.  
   
-## See Also  
- [Arrays](../../visual-basic/programming-guide/language-features/arrays/index.md)  
- [Nothing](../../visual-basic/language-reference/nothing.md)
+## See also
+
+- [Arrays](../programming-guide/language-features/arrays/index.md)
+- [Nothing](../language-reference/nothing.md)

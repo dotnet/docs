@@ -1,17 +1,18 @@
 ---
-title: "&lt;userNameSecurityTokenHandlerRequirement&gt;"
+title: "<userNameSecurityTokenHandlerRequirement>"
 ms.date: "03/30/2017"
 ms.assetid: 6ec3bac1-b014-49ae-843c-c54518cb709a
 author: "BrucePerlerMS"
 ---
-# &lt;userNameSecurityTokenHandlerRequirement&gt;
+# \<userNameSecurityTokenHandlerRequirement>
 Provides configuration for the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> class or derived classes.  
   
- \<system.identityModel>  
-\<identityConfiguration>  
-\<securityTokenHandlers>  
-\<add>  
-\<userNameSecurityTokenHandlerRequirement>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel>**](system-identitymodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<identityConfiguration>**](identityconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<securityTokenHandlers>**](securitytokenhandlers.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<add>**](add.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<userNameSecurityTokenHandlerRequirement>**  
   
 ## Syntax  
   
@@ -44,7 +45,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<add>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/add.md)|Adds the specified security token handler to the token handler collection.|  
+|[\<add>](add.md)|Adds the specified security token handler to the token handler collection.|  
   
 ## Remarks  
  The `<userNameSecurityTokenHandlerRequirement>` element sets the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> property when a <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> object is initialized from configuration.  

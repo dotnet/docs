@@ -16,23 +16,21 @@ helpviewer_keywords:
 ms.assetid: bd921fa2-d377-4d79-acfc-64c38d4dcae9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager::SetSymbolReadingPolicy Method
 Sets the policy for reading program database (PDB) files. The policy determines whether information about line numbers and files is included in call stacks.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetSymbolReadingPolicy (  
     [in] ESymbolReadingPolicy policy  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `policy`  
- [in] A member of the [ESymbolReadingPolicy](../../../../docs/framework/unmanaged-api/hosting/esymbolreadingpolicy-enumeration.md) enumeration.  
+ [in] A member of the [ESymbolReadingPolicy](esymbolreadingpolicy-enumeration.md) enumeration.  
   
 ## Return Value  
   
@@ -43,7 +41,7 @@ HRESULT SetSymbolReadingPolicy (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -51,5 +49,6 @@ HRESULT SetSymbolReadingPolicy (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
+## See also
+
+- [ICLRDebugManager Interface](iclrdebugmanager-interface.md)

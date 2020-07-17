@@ -6,19 +6,17 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fe60aaa0-ae43-4b1c-9be1-426af66ba757
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XSLT Parameters
 XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace URI are associated with the parameter object at that time.  
   
 ### To use an XSLT parameter  
   
-1.  Create an <xref:System.Xml.Xsl.XsltArgumentList> object and add the parameter using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method.  
+1. Create an <xref:System.Xml.Xsl.XsltArgumentList> object and add the parameter using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method.  
   
-2.  Call the parameter from the style sheet.  
+2. Call the parameter from the style sheet.  
   
-3.  Pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
+3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method.  
   
 ## Parameter Types  
  The parameter object should correspond to a W3C type. The following table shows the corresponding W3C types, the equivalent Microsoft .NET classes (type), and whether the W3C type is an XPath type or XSLT type.  
@@ -64,4 +62,4 @@ XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using th
   
 ## See also
 
-- [XSLT Transformations](../../../../docs/standard/data/xml/xslt-transformations.md)
+- [XSLT Transformations](xslt-transformations.md)

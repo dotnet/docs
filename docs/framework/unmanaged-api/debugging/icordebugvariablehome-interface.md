@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableHome Interface
 Represents a local variable or argument of a function.  
@@ -26,16 +24,16 @@ Represents a local variable or argument of a function.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetArgumentIndex Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-getargumentindex-method.md)|Gets the index of a function argument.|  
-|[GetCode Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-getcode-method.md)|Gets the "ICorDebugCode" instance that contains this `ICorDebugVariableHome` object.|  
-|[GetLiveRange Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-getliverange-method.md)|Gets the native range over which this variable is live.|  
-|[GetLocationType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-getlocationtype-method.md)|Gets the type of the variable's native location.|  
-|[GetOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-getoffset-method.md)|Gets the offset from the base register for a variable.|  
-|[GetRegister Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-getregister-method.md)|Gets the register that contains a variable with a location type of `VLT_REGISTER`, and the base register for a variable with a location type of `VLT_REGISTER_RELATIVE`.|  
-|[GetSlotIndex Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-getslotindex-method.md)|Gets the managed slot-index of a local variable.|  
+|[GetArgumentIndex Method](icordebugvariablehome-getargumentindex-method.md)|Gets the index of a function argument.|  
+|[GetCode Method](icordebugvariablehome-getcode-method.md)|Gets the "ICorDebugCode" instance that contains this `ICorDebugVariableHome` object.|  
+|[GetLiveRange Method](icordebugvariablehome-getliverange-method.md)|Gets the native range over which this variable is live.|  
+|[GetLocationType Method](icordebugvariablehome-getlocationtype-method.md)|Gets the type of the variable's native location.|  
+|[GetOffset Method](icordebugvariablehome-getoffset-method.md)|Gets the offset from the base register for a variable.|  
+|[GetRegister Method](icordebugvariablehome-getregister-method.md)|Gets the register that contains a variable with a location type of `VLT_REGISTER`, and the base register for a variable with a location type of `VLT_REGISTER_RELATIVE`.|  
+|[GetSlotIndex Method](icordebugvariablehome-getslotindex-method.md)|Gets the managed slot-index of a local variable.|  
   
 ## Example  
- The following code fragment uses the [ICorDebugCode4](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md) object named `pCode4`.  
+ The following code fragment uses the [ICorDebugCode4](icordebugcode4-interface.md) object named `pCode4`.  
   
 ```cpp  
 ICorDebugCode4 *pCode4 = NULL;  
@@ -77,7 +75,7 @@ for (int i = 0; i < celtFetched; i++)
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -85,6 +83,7 @@ for (int i = 0; i < celtFetched; i++)
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [ICorDebugVariableHomeEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [ICorDebugVariableHomeEnum Interface](icordebugvariablehomeenum-interface.md)

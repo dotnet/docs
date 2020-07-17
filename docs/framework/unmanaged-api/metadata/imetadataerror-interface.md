@@ -14,23 +14,21 @@ helpviewer_keywords:
 ms.assetid: 0020b62c-ea88-40c7-a9ee-16b064f81624
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataError Interface
 Provides a callback mechanism for reporting errors during the metadata merge.  
   
 > [!NOTE]
->  The `IMetaDataError` interface must be implemented by the client.  
+> The `IMetaDataError` interface must be implemented by the client.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[OnError Method](../../../../docs/framework/unmanaged-api/metadata/imetadataerror-onerror-method.md)|Provides notification of errors that occur during the metadata merge.|  
+|[OnError Method](imetadataerror-onerror-method.md)|Provides notification of errors that occur during the metadata merge.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -38,5 +36,6 @@ Provides a callback mechanism for reporting errors during the metadata merge.
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+## See also
+
+- [Metadata Interfaces](metadata-interfaces.md)

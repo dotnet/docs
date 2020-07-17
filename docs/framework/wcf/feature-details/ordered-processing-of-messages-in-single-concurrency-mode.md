@@ -9,7 +9,7 @@ WCF makes no guarantees about the order in which messages are processed, unless 
 ## In-order Message Processing  
  A new attribute called <xref:System.ServiceModel.ServiceBehaviorAttribute.EnsureOrderedDispatch%2A> has been added to the <xref:System.ServiceModel.ServiceBehaviorAttribute>. When <xref:System.ServiceModel.ServiceBehaviorAttribute.EnsureOrderedDispatch%2A> is set to true and <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is set to <xref:System.ServiceModel.ConcurrencyMode.Single> messages sent to the service will be processed in order. The following code snippet illustrates how to set these attributes.  
   
-```  
+```csharp
 [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Single, EnsureOrderedDispatch = true )]  
     class Service : IService  
     {  
@@ -19,6 +19,7 @@ WCF makes no guarantees about the order in which messages are processed, unless 
   
  If <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is set to any other value, an <xref:System.InvalidOperationException> is thrown.  
   
-## See Also  
- [Sessions, Instancing, and Concurrency](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)  
- [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)
+## See also
+
+- [Sessions, Instancing, and Concurrency](sessions-instancing-and-concurrency.md)
+- [Concurrency](../samples/concurrency.md)

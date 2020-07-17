@@ -1,5 +1,6 @@
 ---
-title: "Getting Started (WPF)"
+title: "Getting Started"
+description: Create desktop client applications with the UI framework of Windows Presentation Foundation (WPF), a subset of the .NET Framework.
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "getting started [WPF]"
@@ -7,20 +8,22 @@ helpviewer_keywords:
   - "WPF [WPF], getting started"
 ms.assetid: 04f91da8-708c-46c7-8172-f1695ec847cd
 ---
-# Getting Started (WPF)
+# Get started (WPF)
+
 Windows Presentation Foundation (WPF) is a UI framework that creates desktop client applications. The WPF development platform supports a broad set of application development features, including an application model, resources, controls, graphics, layout, data binding, documents, and security. It is a subset of the .NET Framework, so if you have previously built applications with the .NET Framework using ASP.NET or Windows Forms, the programming experience should be familiar. WPF uses the Extensible Application Markup Language (XAML) to provide a declarative model for application programming. This section has topics that introduce and help you get started with WPF.  
   
-## Where Should I Start?  
+## Where should I start?  
   
 |||  
 |-|-|  
-|I want to jump right in…|[Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|  
+|I want to jump right in…|[Walkthrough: My first WPF desktop application](walkthrough-my-first-wpf-desktop-application.md)|  
 |How do I design the application UI?|[Designing XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)|  
-|New to .NET?|[Overview of the .NET Framework](https://msdn.microsoft.com/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [.NET Framework Application Essentials](../../../../docs/standard/application-essentials.md)<br /><br /> [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)|  
-|Tell me more about WPF…|[Introduction to WPF in Visual Studio](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)<br /><br /> [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)<br /><br /> [Controls](../../../../docs/framework/wpf/controls/index.md)<br /><br /> [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)|  
-|Are you a Windows Forms developer?|[Windows Forms Controls and Equivalent WPF Controls](../../../../docs/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls.md)<br /><br /> [WPF and Windows Forms Interoperation](../../../../docs/framework/wpf/advanced/wpf-and-windows-forms-interoperation.md)|  
+|New to .NET?|[Overview of the .NET Framework](../../get-started/overview.md)<br /><br /> [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/quickstart-visual-basic-console)|  
+|Tell me more about WPF…|[Introduction to WPF in Visual Studio](introduction-to-wpf-in-vs.md)<br /><br /> [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)<br /><br /> [Controls](../controls/index.md)<br /><br /> [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)|  
+|Are you a Windows Forms developer?|[Windows Forms Controls and Equivalent WPF Controls](../advanced/windows-forms-controls-and-equivalent-wpf-controls.md)<br /><br /> [WPF and Windows Forms Interoperation](../advanced/wpf-and-windows-forms-interoperation.md)|  
   
-## See Also  
- [Class Library](../../../../docs/framework/wpf/class-library-wpf.md)  
- [Application Development](../../../../docs/framework/wpf/app-development/index.md)  
- [.NET Framework Developer Center](https://www.microsoft.com/net)
+## See also
+
+- [Class Library](../class-library-wpf.md)
+- [Application Development](../app-development/index.md)
+- [.NET Framework Developer Center](https://dotnet.microsoft.com)

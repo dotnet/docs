@@ -1,5 +1,6 @@
 ---
 title: "Using Client Sockets"
+description: This example shows how to create a TCP/IP connection to a remote service by using a Socket in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -71,8 +72,9 @@ try {
 }  
 ```  
   
-## See Also  
- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)  
- [Using an Asynchronous Client Socket](../../../docs/framework/network-programming/using-an-asynchronous-client-socket.md)  
- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)  
- [Sockets](../../../docs/framework/network-programming/sockets.md)
+## See also
+
+- [Using a Synchronous Client Socket](using-a-synchronous-client-socket.md)
+- [Using an Asynchronous Client Socket](using-an-asynchronous-client-socket.md)
+- [How to: Create a Socket](how-to-create-a-socket.md)
+- [Sockets](sockets.md)

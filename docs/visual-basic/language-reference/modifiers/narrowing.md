@@ -1,5 +1,5 @@
 ---
-title: "Narrowing (Visual Basic)"
+title: "Narrowing"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.narrowing"
@@ -23,12 +23,13 @@ Indicates that a conversion operator (`CType`) converts a class or structure to 
   
  The `Narrowing` keyword can be used in this context:  
   
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
+ [Operator Statement](../statements/operator-statement.md)  
   
-## See Also  
- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)  
- [Widening](../../../visual-basic/language-reference/modifiers/widening.md)  
- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)  
- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)  
- [CType Function](../../../visual-basic/language-reference/functions/ctype-function.md)  
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+## See also
+
+- [Operator Statement](../statements/operator-statement.md)
+- [Widening](widening.md)
+- [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [How to: Define an Operator](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [CType Function](../functions/ctype-function.md)
+- [Option Strict Statement](../statements/option-strict-statement.md)

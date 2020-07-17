@@ -122,5 +122,6 @@ class Operation
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.Description.OperationDescription>
+## See also
+
+- <xref:System.ServiceModel.Description.OperationDescription>

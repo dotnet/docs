@@ -1,5 +1,6 @@
 ---
 title: "ServiceModel Registration Tool (ServiceModelReg.exe)"
+description: Use this command-line tool to manage the registration of WCF and WF components on a single machine if you experience problems with service activation.
 ms.date: "03/30/2017"
 ms.assetid: 396ec5ae-e34f-4c64-a164-fcf50e86b6ac
 ---
@@ -8,7 +9,7 @@ This command-line tool provides the ability to manage the registration of WCF an
   
 ## Syntax  
   
-```  
+```console  
 ServiceModelReg.exe[(-ia|-ua|-r)|((-i|-u) -c:<command>)] [-v|-q] [-nologo] [-?]  
 ```  
   
@@ -18,7 +19,7 @@ ServiceModelReg.exe[(-ia|-ua|-r)|((-i|-u) -c:<command>)] [-v|-q] [-nologo] [-?]
  %SystemRoot%\Microsoft.Net\Framework\v3.0\Windows Communication Foundation\  
   
 > [!NOTE]
->  When the ServiceModel Registration Tool is run on [!INCLUDE[wv](../../../includes/wv-md.md)], the **Windows Features** dialog may not reflect that the **Windows Communication Foundation HTTP Activation** option under **Microsoft .NET Framework 3.0** is turned on. The **Windows Features** dialog can be accessed by clicking **Start**, then click **Run** and then typing **OptionalFeatures**.  
+> When the ServiceModel Registration Tool is run on Windows Vista, the **Windows Features** dialog may not reflect that the **Windows Communication Foundation HTTP Activation** option under **Microsoft .NET Framework 3.0** is turned on. The **Windows Features** dialog can be accessed by clicking **Start**, then click **Run** and then typing **OptionalFeatures**.  
   
  The following tables describe the options that can be used with ServiceModelReg.exe.  
   
@@ -40,7 +41,7 @@ ServiceModelReg.exe[(-ia|-ua|-r)|((-i|-u) -c:<command>)] [-v|-q] [-nologo] [-?]
   
  The error message is similar to the following.  
   
-```  
+```console  
 Error: System.IO.FileLoadException: Could not load file or assembly 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)  
 File name: 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089'  
 ```  
@@ -49,14 +50,14 @@ File name: 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToke
   
  ServiceModelReg.exe cannot clean up prior version entries, nor can it register the new version's entries. The only workaround is to manually edit machine.config. You can locate this file at the following location.  
   
-```  
-%windir%\Microsoft.NET\Framework\v2.0.50727\config\machine.config   
+```console  
+%windir%\Microsoft.NET\Framework\v2.0.50727\config\machine.config
 ```  
   
  If you are running WCF on a 64-bit machine, you should also edit the same file at this location.  
   
-```  
-%windir%\Microsoft.NET\Framework64\v2.0.50727\config\machine.config   
+```console  
+%windir%\Microsoft.NET\Framework64\v2.0.50727\config\machine.config
 ```  
   
  Locate any XML nodes in this file that refer to "System.ServiceModel, Version=2.0.0.0", delete them and any child nodes. Save the file and re-run ServiceModelReg.exe resolves this problem.  
@@ -64,7 +65,7 @@ File name: 'System.ServiceModel, Version=2.0.0.0, Culture=neutral, PublicKeyToke
 ## Examples  
  The following examples show how to use the most common options of the ServiceModelReg.exe tool.  
   
-```  
+```console  
 ServiceModelReg.exe -ia  
   Installs all components  
 ServiceModelReg.exe -i -c:httpnamespace -c:etw  

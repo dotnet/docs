@@ -14,7 +14,7 @@ This topic provides recommended practices for queued communication in Windows Co
   
  In addition, you can choose not to incur the cost of disk writes by setting the <xref:System.ServiceModel.MsmqBindingBase.Durable%2A> property to `false`.  
   
- Security has implications on performance. For more information, see [Performance Considerations](../../../../docs/framework/wcf/feature-details/performance-considerations.md).  
+ Security has implications on performance. For more information, see [Performance Considerations](performance-considerations.md).  
   
 ## Reliable End-to-End Queued Messaging  
  The following sections describe recommended practices for scenarios that require end-to-end reliable messaging.  
@@ -30,23 +30,23 @@ This topic provides recommended practices for queued communication in Windows Co
   
  Turning off dead-letter queues for end-to-end reliable communication is not recommended.  
   
- For more information, see [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md).  
+ For more information, see [Using Dead-Letter Queues to Handle Message Transfer Failures](using-dead-letter-queues-to-handle-message-transfer-failures.md).  
   
 ### Use of Poison-Message Handling  
  Poison-message handling provides the ability to recover from the failure to process messages.  
   
  When using the poison-message handling feature, ensure that the <xref:System.ServiceModel.MsmqBindingBase.ReceiveErrorHandling%2A> property is set to the appropriate value. Setting it to <xref:System.ServiceModel.ReceiveErrorHandling.Drop> means the data is lost. On the other hand, setting it to <xref:System.ServiceModel.ReceiveErrorHandling.Fault> faults the service host when it detects a poison message. Using MSMQ 3.0, <xref:System.ServiceModel.ReceiveErrorHandling.Fault> is the best option to avoid data loss and move the poison message out of the way. Using MSMQ 4.0, <xref:System.ServiceModel.ReceiveErrorHandling.Move> is the recommended approach. <xref:System.ServiceModel.ReceiveErrorHandling.Move> moves a poisoned message out of the queue so the service can continue to process new messages. The poison-message service can then process the poison message separately.  
   
- For more information, see [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md).  
+ For more information, see [Poison Message Handling](poison-message-handling.md).  
   
 ## Achieving High Throughput  
  To achieve high throughput on a single endpoint, use the following:  
   
--   Transacted batching. Transacted batching ensures that many messages can be read in a single transaction. This optimizes transaction commits, increasing overall performance. The cost of batching is that if a failure occurs in a single message within a batch, then the entire batch is rolled back and the messages must be processed one at a time until it is safe to batch again. In most cases, poison messages are rare, so batching is the preferred way to increase system performance, particularly when you have other resource managers that participate in the transaction. For more information, see [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md).  
+- Transacted batching. Transacted batching ensures that many messages can be read in a single transaction. This optimizes transaction commits, increasing overall performance. The cost of batching is that if a failure occurs in a single message within a batch, then the entire batch is rolled back and the messages must be processed one at a time until it is safe to batch again. In most cases, poison messages are rare, so batching is the preferred way to increase system performance, particularly when you have other resource managers that participate in the transaction. For more information, see [Batching Messages in a Transaction](batching-messages-in-a-transaction.md).  
   
--   Concurrency. Concurrency increases throughput, but concurrency also affects contention to shared resources. For more information, see [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md).  
+- Concurrency. Concurrency increases throughput, but concurrency also affects contention to shared resources. For more information, see [Concurrency](../samples/concurrency.md).  
   
--   Throttling. For optimal performance, throttle the number of messages in the dispatcher pipeline. For an example of how to do this, see [Throttling](../../../../docs/framework/wcf/samples/throttling.md).  
+- Throttling. For optimal performance, throttle the number of messages in the dispatcher pipeline. For an example of how to do this, see [Throttling](../samples/throttling.md).  
   
  When using batching, be aware that concurrency and throttling translate to concurrent batches.  
   
@@ -54,12 +54,12 @@ This topic provides recommended practices for queued communication in Windows Co
   
  When using farms, be aware that MSMQ 3.0 does not support remote transacted reads. MSMQ 4.0 does support remote transacted reads.  
   
- For more information, see [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md) and [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md).  
+ For more information, see [Batching Messages in a Transaction](batching-messages-in-a-transaction.md) and [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md).  
   
 ## Queuing with Unit of Work Semantics  
  In some scenarios a group of messages in a queue may be related and, therefore, the ordering of these messages is significant. In such scenarios, process a group of related messages together as a single unit: either all of the messages are processed successfully or none are. To implement such behavior, use sessions with queues.  
   
- For more information, see [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md).  
+ For more information, see [Grouping Queued Messages in a Session](grouping-queued-messages-in-a-session.md).  
   
 ## Correlating Request-Reply Messages  
  Though queues are typically one-way, in some scenarios you may want to correlate a reply received to a request sent earlier. If you require such correlation, it is recommended that you apply your own SOAP message header that contains correlation information with the message. Typically, the sender attaches this header with the message, and the receiver, upon processing the message and replying back with a new message on a reply queue, attaches the sender's message header that contains the correlation information so that the sender can identify the reply message with the request message.  
@@ -69,21 +69,22 @@ This topic provides recommended practices for queued communication in Windows Co
   
  When using `MsmqIntegrationBinding`, be aware of the following:  
   
--   A WCF message body is not the same as a MSMQ message body. When sending a WCF message using a queued binding, the WCF message body is placed inside of a MSMQ message. The MSMQ infrastructure is oblivious to this extra information; it sees only the MSMQ message.  
+- A WCF message body is not the same as a MSMQ message body. When sending a WCF message using a queued binding, the WCF message body is placed inside of a MSMQ message. The MSMQ infrastructure is oblivious to this extra information; it sees only the MSMQ message.  
   
--   `MsmqIntegrationBinding` supports popular serialization types. Based on the serialization type, the body type of the generic message, <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, takes different type parameters. For example, <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ByteArray> requires `MsmqMessage\<byte[]>` and <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Stream> requires `MsmqMessage<Stream>`.  
+- `MsmqIntegrationBinding` supports popular serialization types. Based on the serialization type, the body type of the generic message, <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>, takes different type parameters. For example, <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.ByteArray> requires `MsmqMessage\<byte[]>` and <xref:System.ServiceModel.MsmqIntegration.MsmqMessageSerializationFormat.Stream> requires `MsmqMessage<Stream>`.  
   
--   With XML serialization, you can specify the known type using the `KnownTypes` attribute on the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element that is then used to determine how to deserialize the XML message.  
+- With XML serialization, you can specify the known type using the `KnownTypes` attribute on the [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-servicebehaviors.md) element that is then used to determine how to deserialize the XML message.  
   
-## See Also  
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
- [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
- [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md)  
- [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
- [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)  
- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)  
- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)  
- [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
- [Securing Messages Using Message Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-message-security.md)  
- [Troubleshooting Queued Messaging](../../../../docs/framework/wcf/feature-details/troubleshooting-queued-messaging.md)
+## See also
+
+- [Queuing in WCF](queuing-in-wcf.md)
+- [How to: Exchange Queued Messages with WCF Endpoints](how-to-exchange-queued-messages-with-wcf-endpoints.md)
+- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)
+- [Grouping Queued Messages in a Session](grouping-queued-messages-in-a-session.md)
+- [Batching Messages in a Transaction](batching-messages-in-a-transaction.md)
+- [Using Dead-Letter Queues to Handle Message Transfer Failures](using-dead-letter-queues-to-handle-message-transfer-failures.md)
+- [Poison Message Handling](poison-message-handling.md)
+- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md)
+- [Securing Messages Using Transport Security](securing-messages-using-transport-security.md)
+- [Securing Messages Using Message Security](securing-messages-using-message-security.md)
+- [Troubleshooting Queued Messaging](troubleshooting-queued-messaging.md)

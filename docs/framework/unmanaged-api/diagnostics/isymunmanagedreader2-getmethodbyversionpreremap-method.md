@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 0d144ed4-bdb0-4cac-960c-cb90f4dca173
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader2::GetMethodByVersionPreRemap Method
 Gets a symbol reader method, given a method token and an edit-and-continue version number. Version numbers start at 1 and are incremented each time the method is changed as a result of an edit-and-continue operation.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodByVersionPreRemap(  
     [in]  mdMethodDef token,  
     [in]  int version,  
     [out, retval] ISymUnmanagedMethod** pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `token`  
  [in] The method metadata token.  
   
@@ -38,7 +36,7 @@ HRESULT GetMethodByVersionPreRemap(
  [in] The method version.  
   
  `pRetVal`  
- [out] A pointer to the returned [ISymUnmanagedMethod](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedmethod-interface.md) interface.  
+ [out] A pointer to the returned [ISymUnmanagedMethod](isymunmanagedmethod-interface.md) interface.  
   
 ## Return Value  
  S_OK if the method succeeds; otherwise, E_FAIL or some other error code.  
@@ -46,5 +44,6 @@ HRESULT GetMethodByVersionPreRemap(
 ## Requirements  
  **Header:** CorSym.idl. CorSym.h  
   
-## See Also  
- [ISymUnmanagedReader2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader2-interface.md)
+## See also
+
+- [ISymUnmanagedReader2 Interface](isymunmanagedreader2-interface.md)

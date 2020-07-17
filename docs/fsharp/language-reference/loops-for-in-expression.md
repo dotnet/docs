@@ -34,11 +34,11 @@ Values matched in the pattern can also be used in the body expression.
 
 The following code examples illustrate the use of the `for...in` expression.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5201.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5201.fs)]
 
 The output is as follows.
 
-```
+```console
 1
 5
 100
@@ -48,11 +48,11 @@ The output is as follows.
 
 The following example shows how to loop over a sequence, and how to use a tuple pattern instead of a simple variable.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5202.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5202.fs)]
 
 The output is as follows.
 
-```
+```console
 1 squared is 1
 2 squared is 4
 3 squared is 9
@@ -67,61 +67,61 @@ The output is as follows.
 
 The following example shows how to loop over a simple integer range.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5203.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5203.fs)]
 
 The output of function1 is as follows.
 
-```
+```console
 1 2 3 4 5 6 7 8 9 10
 ```
 
 The following example shows how to loop over a range with a skip of 2, which includes every other element of the range.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5204.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5204.fs)]
 
 The output of `function2` is as follows.
 
-```
+```console
 1 3 5 7 9
 ```
 
 The following example shows how to use a character range.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5205.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5205.fs)]
 
 The output of `function3` is as follows.
 
-```
+```console
 a b c d e f g h i j k l m n o p q r s t u v w x y z
 ```
 
 The following example shows how to use a negative skip value for a reverse iteration.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5208.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5208.fs)]
 
 The output of `function4` is as follows.
 
-```
+```console
 10 9 8 7 6 5 4 3 2 1 ... Lift off!
 ```
 
 The beginning and ending of the range can also be expressions, such as functions, as in the following code.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5206.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5206.fs)]
 
 The output of `function5` with this input is as follows.
 
-```
+```console
 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
 ```
 
 The next example shows the use of a wildcard character (\_) when the element is not needed in the loop.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet5207.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet5207.fs)]
 
 The output is as follows.
 
-```
+```console
 Number of elements in list1: 5
 ```
 

@@ -6,31 +6,29 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XsltArgumentList for Style Sheet Parameters and Extension Objects
 The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet Language for Transformations (XSLT) parameters and XSLT extension objects. When passed into the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method, these parameters and extension objects can be invoked from style sheets.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> and <xref:System.Xml.Xsl.XsltArgumentList> classes are obsolete in the [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]. You can perform XSLT transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md) for more information.  
+> The <xref:System.Xml.Xsl.XslTransform> and <xref:System.Xml.Xsl.XsltArgumentList> classes are obsolete in the .NET Framework 2.0. You can perform XSLT transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](migrating-from-the-xsltransform-class.md) for more information.  
   
  The <xref:System.Xml.Xsl.XsltArgumentList> class contains XSLT parameters and XSLT extension objects. When passed into the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method, these parameters and extension objects can be invoked from style sheets.  
   
  The following are advantages to passing an object rather than using an embedded script:  
   
--   Provides better encapsulation and reuse of classes.  
+- Provides better encapsulation and reuse of classes.  
   
--   Allows style sheets to be smaller and more maintainable.  
+- Allows style sheets to be smaller and more maintainable.  
   
--   Supports calling methods on classes belonging to namespaces other than those defined within the set of supported <xref:System> namespaces.  
+- Supports calling methods on classes belonging to namespaces other than those defined within the set of supported <xref:System> namespaces.  
   
--   Supports passing result tree fragments to the style sheet with the use of the <xref:System.Xml.XPath.XPathNodeIterator>.  
+- Supports passing result tree fragments to the style sheet with the use of the <xref:System.Xml.XPath.XPathNodeIterator>.  
   
 ## XSLT Style Sheet Parameters  
  XSLT parameters are added to the <xref:System.Xml.Xsl.XsltArgumentList> using the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method. A qualified name and namespace Uniform Resource Identifier (URI) are associated with the parameter object at that time.  
   
- The parameter object should correspond to a World Wide Web Consortium (W3C) type. The following table shows the corresponding W3C types, the equivalent [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] classes (type), and whether the W3C type is an XML Path Language (XPath) type or XSLT type.  
+ The parameter object should correspond to a World Wide Web Consortium (W3C) type. The following table shows the corresponding W3C types, the equivalent .NET Framework classes (type), and whether the W3C type is an XML Path Language (XPath) type or XSLT type.  
   
 |W3C Type|Equivalent .NET Framework class (type)|XPath type or XSLT type|  
 |--------------|----------------------------------------------|-----------------------------|  
@@ -44,11 +42,11 @@ The <xref:System.Xml.Xsl.XsltArgumentList> class contains Extensible Stylesheet 
   
 #### To use the XSLT parameter, the user needs to do the following:  
   
-1.  Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the objects using <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A>.  
+1. Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the objects using <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A>.  
   
-2.  Call the parameters from the style sheet.  
+2. Call the parameters from the style sheet.  
   
-3.  Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
+3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
 ### Example  
  The following example uses the <xref:System.Xml.Xsl.XsltArgumentList.AddParam%2A> method to create a parameter to hold a calculated discount date. The discount date is calculated to be 20 days from the order date.  
@@ -169,8 +167,8 @@ public class Sample
   
 ```xml  
 <order>  
-   <total>36.9</total>   
-   15% discount if paid by: 5/6/2001 5:01:15 PM   
+   <total>36.9</total>
+   15% discount if paid by: 5/6/2001 5:01:15 PM
 </order>  
 ```  
   
@@ -185,11 +183,11 @@ public class Sample
   
 #### To use the XSLT extension object, the user needs to do the following:  
   
-1.  Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>.  
+1. Create an <xref:System.Xml.Xsl.XsltArgumentList> and add the extension object using <xref:System.Xml.Xsl.XsltArgumentList.AddExtensionObject%2A>.  
   
-2.  Invoke the extension object from the style sheet.  
+2. Invoke the extension object from the style sheet.  
   
-3.  Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
+3. Pass the <xref:System.Xml.Xsl.XsltArgumentList> to the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method.  
   
 ### Example  
  The following example calculates the circumference of a circle given its radius.  
@@ -313,7 +311,7 @@ public class Sample
   <circle>  
     <radius>37.5</radius>  
   </circle>  
-</data>    
+</data>
 ```  
   
  circle.xsl  
@@ -328,7 +326,7 @@ public class Sample
     <circle>  
     <xsl:copy-of select="node()"/>  
        <circumference>  
-          <xsl:value-of select="myObj:Circumference(radius)"/>          
+          <xsl:value-of select="myObj:Circumference(radius)"/>
        </circumference>  
     </circle>  
   </xsl:for-each>  
@@ -360,4 +358,4 @@ public class Sample
   
 ## See also
 
-- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)

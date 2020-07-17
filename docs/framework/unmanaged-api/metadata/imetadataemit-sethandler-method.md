@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: c6c1aaaf-e2cd-407c-b73e-fbe6ffd83bb3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetHandler Method
 Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.  
   
 ## Syntax  
   
-```  
-HRESULT SetHandler (   
+```cpp  
+HRESULT SetHandler (
     [in]  IUnknown    *pUnk  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pUnk`  
  [in] The handler to register.  
   
@@ -39,7 +37,7 @@ HRESULT SetHandler (
  If the callback method is not provided through `SetHandler`, no optimization will be performed on save except where several import scopes have been merged using `IMapToken` on merge for each scope.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -47,6 +45,7 @@ HRESULT SetHandler (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)  
- [IMetaDataEmit2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit2-interface.md)
+## See also
+
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataEmit2 Interface](imetadataemit2-interface.md)

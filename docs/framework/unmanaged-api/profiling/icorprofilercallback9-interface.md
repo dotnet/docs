@@ -8,8 +8,6 @@ api_location:
   - "corprof.idl"
 api_type: 
   - "COM"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback9 Interface
 [Supported in the .NET Framework 4.7.2 and later versions]  
@@ -29,8 +27,9 @@ ms.author: "ronpet"
   
 **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
 
-## See Also  
-[Profiling Interfaces](profiling-interfaces.md)   
-[ICorProfilerCallback8 Interface](icorprofilercallback9-interface.md)   
-[ICorProfilerCallback8.DynamicMethodJITCompilationStarted method](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)   
-[ICorProfilerCallback8.DynamicMethodJITCompilationFinished method](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)   
+## See also
+
+- [Profiling Interfaces](profiling-interfaces.md)
+- [ICorProfilerCallback8 Interface](icorprofilercallback9-interface.md)
+- [ICorProfilerCallback8.DynamicMethodJITCompilationStarted method](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md)
+- [ICorProfilerCallback8.DynamicMethodJITCompilationFinished method](icorprofilercallback8-dynamicmethodjitcompilationfinished-method.md)

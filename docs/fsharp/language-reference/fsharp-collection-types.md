@@ -1,5 +1,5 @@
 ---
-title: F# Collection Types
+title: Collection Types
 description: Learn about F# collection types and how they differ from collection types in the .NET Framework.
 ms.date: 05/16/2016
 ---
@@ -27,7 +27,7 @@ This section compares the functions that are available on F# collection types. T
 
 |Function|Array|List|Sequence|Map|Set|Description|
 |--------|-----|----|--------|---|---|-----------|
-|append|O(M)|O(N)|O(N)|-|-|Returns a new collection that contains the elements of the first collection followed by elements of the second collection.|
+|append|O(N)|O(N)|O(N)|-|-|Returns a new collection that contains the elements of the first collection followed by elements of the second collection.|
 |add|-|-|-|O(log N)|O(log N)|Returns a new collection with the element added.|
 |average|O(N)|O(N)|O(N)|-|-|Returns the average of the elements in the collection.|
 |averageBy|O(N)|O(N)|O(N)|-|-|Returns the average of the results of the provided function applied to each element.|
@@ -77,6 +77,7 @@ This section compares the functions that are available on F# collection types. T
 |iteri|O(N)|O(N)|O(N)|-|-|Applies the given function to each element of the collection. The integer that's passed to the function indicates the index of the element.|
 |iteri2|O(N)|O(N)|-|-|-|Applies the given function to a pair of elements that are drawn from matching indices in two arrays. The integer that's passed to the function indicates the index of the elements. The two arrays must have the same length.|
 |iter2|O(N)|O(N)|O(N)|-|-|Applies the given function to a pair of elements that are drawn from matching indices in two arrays. The two arrays must have the same length.|
+|last|O(1)|O(N)|O(N)|-|-|Returns the last item in the applicable collection.|
 |length|O(1)|O(N)|O(N)|-|-|Returns the number of elements in the collection.|
 |map|O(N)|O(N)|O(1)|-|-|Builds a collection whose elements are the results of applying the given function to each element of the array.|
 |map2|O(N)|O(N)|O(1)|-|-|Builds a collection whose elements are the results of applying the given function to the corresponding elements of the two collections pairwise. The two input arrays must have the same length.|

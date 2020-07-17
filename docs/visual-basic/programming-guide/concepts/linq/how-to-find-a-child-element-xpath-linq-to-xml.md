@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a Child Element (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find a Child Element (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: adb46c98-a650-42e2-b62d-835920fe8421
 ---
@@ -11,7 +11,7 @@ This topic compares the XPath child element axis to the [!INCLUDE[sqltecxlinq](~
 ## Example  
  This example finds the child element `DeliveryNotes`.  
   
- This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
 Dim cpo As XDocument = XDocument.Load("PurchaseOrders.xml")  
@@ -35,10 +35,11 @@ Console.WriteLine(el1)
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

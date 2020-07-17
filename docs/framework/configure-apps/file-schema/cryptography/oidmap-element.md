@@ -1,5 +1,5 @@
 ---
-title: "&lt;oidMap&gt; Element"
+title: "<oidMap> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#oidMap"
@@ -8,21 +8,19 @@ helpviewer_keywords:
   - "<oidMap> element"
   - "oidMap element"
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;oidMap&gt; Element
+# \<oidMap> Element
 Contains ASN.1 object identifier (OID) mappings to classes.  
-  
- \<configuration>  
-\<mscorlib>  
-\<cryptographySettings>  
-\<oidMap>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<cryptographySettings>**](cryptographysettings-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<oidMap>**
+
 ## Syntax  
   
 ```xml  
-<oidMap>   
+<oidMap>
 </oidMap>  
 ```  
   
@@ -36,7 +34,7 @@ Contains ASN.1 object identifier (OID) mappings to classes.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<oidEntry>](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidentry-element.md)|Maps an ASN.1 OID to a friendly name.|  
+|[\<oidEntry>](oidentry-element.md)|Maps an ASN.1 OID to a friendly name.|  
   
 ### Parent Elements  
   
@@ -69,9 +67,10 @@ Contains ASN.1 object identifier (OID) mappings to classes.
 </configuration>  
 ```  
   
-## See Also  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)  
-- [Configuring Cryptography Classes](../../../../../docs/framework/configure-apps/configure-cryptography-classes.md)  
-- [Mapping Object Identifiers to Cryptography Algorithms](../../../../../docs/framework/configure-apps/map-object-identifiers-to-cryptography-algorithms.md)
+## See also
+
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)
+- [Configuring Cryptography Classes](../../configure-cryptography-classes.md)
+- [Mapping Object Identifiers to Cryptography Algorithms](../../map-object-identifiers-to-cryptography-algorithms.md)

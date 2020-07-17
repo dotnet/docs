@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugGenerationTypes Enumeration
 Specifies the generation of a region of memory on the managed heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugGenerationTypes {  
     CorDebug_Gen0 = 0,  
     CorDebug_Gen1 = 1,  
@@ -43,7 +41,7 @@ typedef enum CorDebugGenerationTypes {
 ## Remarks  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -51,5 +49,6 @@ typedef enum CorDebugGenerationTypes {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v45plus-md.md)]  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+## See also
+
+- [Debugging Enumerations](debugging-enumerations.md)

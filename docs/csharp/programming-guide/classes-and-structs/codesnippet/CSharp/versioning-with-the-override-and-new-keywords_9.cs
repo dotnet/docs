@@ -1,1 +1,0 @@
-        ((Base)d).DoWork(val);  // Calls DoWork(int) on Derived.

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 7105a6c8-6e4e-48de-ac3d-74ac75e5de2e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ECustomDumpItemKind Enumeration
-Reserved for future extension of the [CustomDumpItem](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md) structure.  
+Reserved for future extension of the [CustomDumpItem](customdumpitem-structure.md) structure.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     DUMP_ITEM_None = 0  
 } ECustomDumpItemKind;  
@@ -35,7 +33,7 @@ typedef enum {
 |`DUMP_ITEM_None`|Reserved for future use.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -43,6 +41,7 @@ typedef enum {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)  
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+## See also
+
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)
+- [Hosting Enumerations](hosting-enumerations.md)

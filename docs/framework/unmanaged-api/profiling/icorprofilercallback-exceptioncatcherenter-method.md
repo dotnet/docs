@@ -15,27 +15,28 @@ helpviewer_keywords:
 ms.assetid: 41462329-a648-46f0-ae6d-728b94c31aa9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionCatcherEnter Method
 Notifies the profiler that control is being passed to the appropriate `catch` block.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionCatcherEnter(  
     [in] FunctionID functionId,  
     [in] ObjectID   objectId);  
 ```  
   
-#### Parameters  
- `functionId`  
- [in] The identifier of the function containing the `catch` block.  
+## Parameters
+
+- `functionId`
+
+  \[in] The identifier of the function containing the `catch` block.
   
- `objectId`  
- [in] The identifier of the exception being handled.  
-  
+- `objectId`
+
+  \[in] The identifier of the exception being handled.
+
 ## Remarks  
  The `ExceptionCatcherEnter` method is called only if the catch point is in code compiled with the just-in-time (JIT) compiler. An exception that is caught in unmanaged code or in the internal code of the runtime will not call this notification. The `objectId` value is passed again since a garbage collection could have moved the object since the `ExceptionThrown` notification.  
   
@@ -44,7 +45,7 @@ HRESULT ExceptionCatcherEnter(
  The profiler's implementation of this method should not call into managed code or in any way cause a managed-memory allocation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -52,6 +53,7 @@ HRESULT ExceptionCatcherEnter(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ExceptionCatcherLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptioncatcherleave-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionCatcherLeave Method](icorprofilercallback-exceptioncatcherleave-method.md)

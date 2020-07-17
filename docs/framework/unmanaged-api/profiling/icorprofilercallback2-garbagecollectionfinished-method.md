@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1a5758ea-2354-43c0-92a3-32c9909d64e1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::GarbageCollectionFinished Method
 Notifies the profiler that garbage collection has completed and all garbage collection callbacks have been issued for it.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GarbageCollectionFinished();  
 ```  
   
@@ -31,7 +29,7 @@ HRESULT GarbageCollectionFinished();
  It is safe for the profiler to inspect objects in their final locations when the `GarbageCollectionFinished` method is called.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -39,6 +37,7 @@ HRESULT GarbageCollectionFinished();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ICorProfilerCallback2 Interface](icorprofilercallback2-interface.md)

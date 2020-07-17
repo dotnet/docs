@@ -10,8 +10,8 @@ A call was made to a procedure in a code resource. The code resource was found, 
   
 ## To correct this error  
   
--   Check the resource to determine why the error occurred.  
+- Check the resource to determine why the error occurred.  
   
-## See Also  
- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
+## See also
 
+- [Error Types](../programming-guide/language-features/error-types.md)

@@ -1,5 +1,6 @@
 ---
 title: "NTLM and Kerberos Authentication"
+description: Learn how default NTLM authentication and Kerberos authentication work for a .NET Framework application and learn about non-default NTLM authentication.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -33,7 +34,7 @@ WReq.Credentials = _
 ```csharp  
 String MyURI = "http://www.contoso.com/";  
 WebRequest WReq = WebRequest.Create (MyURI);  
-WReq.Credentials =   
+WReq.Credentials =
     new NetworkCredential(UserName, SecurelyStoredPassword, Domain);  
 ```  
   
@@ -54,8 +55,9 @@ WReq.Credentials = CredentialCache.DefaultCredentials;
  The negotiate authentication module determines whether the remote server is using NTLM or Kerberos authentication, and sends the appropriate response.  
   
 > [!NOTE]
->  NTLM authentication does not work through a proxy server.  
+> NTLM authentication does not work through a proxy server.  
   
-## See Also  
- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)  
- [Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)
+## See also
+
+- [Basic and Digest Authentication](basic-and-digest-authentication.md)
+- [Internet Authentication](internet-authentication.md)

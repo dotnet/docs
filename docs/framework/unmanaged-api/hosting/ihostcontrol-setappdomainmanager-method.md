@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 6562bbe7-0d67-4c50-a958-3a18cf680375
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostControl::SetAppDomainManager Method
 Notifies the host that an application domain has been created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetAppDomainManager (  
     [in] DWORD     dwAppDomainID,  
     [in] IUnknown* pUnkAppDomainManager  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `dwAppDomainID`  
  [in] The numeric identifier of the selected <xref:System.AppDomain>.  
   
@@ -54,7 +52,7 @@ HRESULT SetAppDomainManager (
  In its implementation of the `SetAppDomainManager` method, the host can set the assembly name and type for the application domain manager.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -62,7 +60,8 @@ HRESULT SetAppDomainManager (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- <xref:System.AppDomain>  
- <xref:System.AppDomainManager>  
- [IHostControl Interface](../../../../docs/framework/unmanaged-api/hosting/ihostcontrol-interface.md)
+## See also
+
+- <xref:System.AppDomain>
+- <xref:System.AppDomainManager>
+- [IHostControl Interface](ihostcontrol-interface.md)

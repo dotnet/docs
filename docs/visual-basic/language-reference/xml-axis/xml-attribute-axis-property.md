@@ -1,5 +1,5 @@
 ---
-title: "XML Attribute Axis Property (Visual Basic)"
+title: "XML Attribute Axis Property"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlPropertyAttributeAxis"
@@ -16,9 +16,9 @@ Provides access to the value of an attribute for an <xref:System.Xml.Linq.XEleme
   
 ## Syntax  
   
-```  
-      object.@attribute  
--or-  
+```vb  
+object.@attribute  
+' -or-  
 object.@<attribute>  
 ```  
   
@@ -38,7 +38,7 @@ object.@<attribute>
 |Part|Description|  
 |----------|-----------------|  
 |`prefix`|Optional. XML namespace prefix for the attribute. Must be a global XML namespace defined with an `Imports` statement.|  
-|`name`|Required. Local attribute name. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
+|`name`|Required. Local attribute name. See [Names of Declared XML Elements and Attributes](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
   
  \>  
  Optional. Denotes the end of the name of the attribute when `attribute` is not a valid identifier in Visual Basic.  
@@ -54,12 +54,12 @@ object.@<attribute>
  The naming rules for XML attributes differ from the naming rules for Visual Basic identifiers. To access an XML attribute that has a name that is not a valid Visual Basic identifier, enclose the name in angle brackets (\< and >).  
   
 ## XML Namespaces  
- The name in an attribute axis property can use only XML namespace prefixes declared globally by using the `Imports` statement. It cannot use XML namespace prefixes declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md).  
+ The name in an attribute axis property can use only XML namespace prefixes declared globally by using the `Imports` statement. It cannot use XML namespace prefixes declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../statements/imports-statement-xml-namespace.md).  
   
 ## Example  
  The following example shows how to get the values of the XML attributes named `type` from a collection of XML elements that are named `phone`.  
   
- [!code-vb[VbXMLSamples#12](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_1.vb)]  
+ [!code-vb[VbXMLSamples#12](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples5.vb#12)]  
   
  This code displays the following text:  
   
@@ -74,7 +74,7 @@ object.@<attribute>
 ## Example  
  The following example shows how to create attributes for an XML element both declaratively, as part of the XML, and dynamically by adding an attribute to an instance of an <xref:System.Xml.Linq.XElement> object. The `type` attribute is created declaratively and the `owner` attribute is created dynamically.  
   
- [!code-vb[VbXMLSamples#44](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_2.vb)]  
+ [!code-vb[VbXMLSamples#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples5.vb#44)]  
   
  This code displays the following text:  
   
@@ -85,7 +85,7 @@ object.@<attribute>
 ## Example  
  The following example uses the angle bracket syntax to get the value of the XML attribute named `number-type`, which is not a valid identifier in Visual Basic.  
   
- [!code-vb[VbXMLSamples#13](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_3.vb)]  
+ [!code-vb[VbXMLSamples#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples5.vb#13)]  
   
  This code displays the following text:  
   
@@ -94,15 +94,16 @@ object.@<attribute>
 ## Example  
  The following example declares `ns` as an XML namespace prefix. It then uses the prefix of the namespace to create an XML literal and access the first child node with the qualified name "`ns:name`".  
   
- [!code-vb[VbXMLSamples#14](../../../visual-basic/language-reference/operators/codesnippet/VisualBasic/xml-attribute-axis-property_4.vb)]  
+ [!code-vb[VbXMLSamples#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples6.vb#14)]  
   
  This code displays the following text:  
   
  `Phone type: home`  
   
-## See Also  
- <xref:System.Xml.Linq.XElement>  
- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)  
- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)  
- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)  
- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+## See also
+
+- <xref:System.Xml.Linq.XElement>
+- [XML Axis Properties](index.md)
+- [XML Literals](../xml-literals/index.md)
+- [Creating XML in Visual Basic](../../programming-guide/language-features/xml/creating-xml.md)
+- [Names of Declared XML Elements and Attributes](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

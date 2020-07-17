@@ -1,5 +1,5 @@
 ---
-title: "My.Response Object (Visual Basic)"
+title: "My.Response Object"
 ms.date: 07/20/2015
 f1_keywords: 
   - "My.MyWebExtension.Response"
@@ -14,13 +14,14 @@ Gets the <xref:System.Web.HttpResponse> object associated with the <xref:System.
 ## Remarks  
  The `My.Response` object contains the current <xref:System.Web.HttpResponse> object associated with the page.  
   
- The `My.Response` object is only available for [!INCLUDE[vstecasp](~/includes/vstecasp-md.md)] applications.  
+ The `My.Response` object is only available for ASP.NET applications.  
   
 ## Example  
  The following example gets the header collection from the `My.Request` object and uses the `My.Response` object to write it to the ASP.NET page.  
   
- [!code-vb[VbVbalrMyWeb#1](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-response-object_1.aspx)]  
+ [!code-aspx-vb[VbVbalrMyWeb#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyWeb/VB/Default.aspx#1)]  
   
-## See Also  
- <xref:System.Web.HttpResponse>  
- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
+## See also
+
+- <xref:System.Web.HttpResponse>
+- [My.Request Object](my-request-object.md)

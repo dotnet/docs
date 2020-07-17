@@ -1,5 +1,6 @@
 ---
-title: "jitCompilationStart MDA"
+title: jitCompilationStart managed debugging assistant (MDA)
+description: The jitCompilationStart managed debugging assistant (MDA) reports when the just-in-time (JIT) compiler begins compiling a .NET function.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "JIT compilation"
@@ -7,28 +8,27 @@ helpviewer_keywords:
   - "JitCompilationStart MDA"
   - "managed debugging assistants (MDAs), JIT compilation"
 ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # jitCompilationStart MDA
+
 The `jitCompilationStart` managed debugging assistant (MDA) is activated to report when the just-in-time (JIT) compiler starts to compile a function.  
   
 ## Symptoms  
- The working set size increases for a program that is already in native image format because mscorjit.dll is loaded into the process.  
+ The working set size increases for a program that's already in native image format, because mscorjit.dll is loaded into the process.  
   
 ## Cause  
- Not all the assemblies the program depends on have been generated into native format, or those that have are not registered correctly.  
-  
+Not all the assemblies the program depends on have been generated into native format, or an assembly is not registered correctly.  
+
 ## Resolution  
- Enabling this MDA allows you to determine which function is being JIT-compiled. Determine whether the assembly that contains the function is generated to native format and properly registered.  
+ Enabling this MDA allows you to identify which function is being JIT-compiled. Make sure that the assembly that contains the function is generated to native format and properly registered.
   
-## Effect on the Runtime  
- This MDA logs a message just before a method is JIT-compiled, so enabling this MDA has significant impact on performance. Note that if a method is inline, this MDA will not generate a separate message.  
+## Effect on the runtime  
+ This MDA logs a message just before a method is JIT-compiled, so enabling this MDA has significant impact on performance. If a method is inline, this MDA will not generate a separate message.  
   
 ## Output  
- The following code sample shows sample output. In this case the output shows that in assembly Test the method "m" on class "ns2.CO" was JIT-compiled.  
+ The following code sample shows sample output. In this case, the output shows that, in assembly Test, the method "m" on class "ns2.CO" was JIT-compiled.  
   
-```  
+```output
 method name="Test!ns2.C0::m"  
 ```  
   
@@ -151,7 +151,8 @@ namespace ns2
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

@@ -1,5 +1,6 @@
 ---
 title: "loadFromContext MDA"
+description: Understand the loadFromContext managed debugging assistant (MDA) in .NET, which is activated if an assembly is loaded into the LoadFrom context.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), LoadFrom context"
@@ -7,8 +8,6 @@ helpviewer_keywords:
   - "LoadFrom context"
   - "LoadFromContext MDA"
 ms.assetid: a9b14db1-d3a9-4150-a767-dcf3aea0071a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # loadFromContext MDA
 The `loadFromContext` managed debugging assistant (MDA) is activated if an assembly is loaded into the `LoadFrom` context. This situation can occur as a result of calling <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> or other similar methods.  
@@ -22,11 +21,11 @@ The `loadFromContext` managed debugging assistant (MDA) is activated if an assem
 ## Resolution  
  Configure applications such that <xref:System.Reflection.Assembly.LoadFrom%2A> calls are no longer needed. You can use the following techniques for doing so:  
   
--   Install assemblies in the global assembly cache.  
+- Install assemblies in the global assembly cache.  
   
--   Place assemblies in the <xref:System.AppDomainSetup.ApplicationBase%2A> directory for the <xref:System.AppDomain>. In the case of the default domain, the <xref:System.AppDomainSetup.ApplicationBase%2A> directory is the one that contains the executable file that started the process. This might also require creating a new <xref:System.AppDomain> if it is not convenient to move the assembly.  
+- Place assemblies in the <xref:System.AppDomainSetup.ApplicationBase%2A> directory for the <xref:System.AppDomain>. In the case of the default domain, the <xref:System.AppDomainSetup.ApplicationBase%2A> directory is the one that contains the executable file that started the process. This might also require creating a new <xref:System.AppDomain> if it is not convenient to move the assembly.  
   
--   Add a probing path to your application configuration (.config) file or to secondary  application domains if dependent assemblies are in child directories relative to the executable.  
+- Add a probing path to your application configuration (.config) file or to secondary  application domains if dependent assemblies are in child directories relative to the executable.  
   
  In each case, the code can be changed to use the <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> method.  
   
@@ -58,13 +57,14 @@ namespace ConsoleApplication1
         static void Main(string[] args)  
         {  
             // The following call caused the LoadFrom context to be used  
-            // because the assembly is loaded using LoadFrom and the path is   
-            // located outside of the Load context probing path.   
+            // because the assembly is loaded using LoadFrom and the path is
+            // located outside of the Load context probing path.
             Assembly.LoadFrom(@"C:\Text\Test.dll");  
         }  
     }  
 }  
 ```  
   
-## See Also  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+## See also
+
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

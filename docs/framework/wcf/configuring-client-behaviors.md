@@ -1,5 +1,6 @@
 ---
 title: "Configuring Client Behaviors"
+description: "Learn about the two ways that WCF configures behaviors: in the application configuration file or programmatically from the calling application."
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -45,5 +46,6 @@ Windows Communication Foundation (WCF) configures behaviors in two ways: either 
  [!code-csharp[ChannelFactoryBehaviors#10](../../../samples/snippets/csharp/VS_Snippets_CFX/channelfactorybehaviors/cs/client.cs#10)]
  [!code-vb[ChannelFactoryBehaviors#10](../../../samples/snippets/visualbasic/VS_Snippets_CFX/channelfactorybehaviors/vb/client.vb#10)]  
   
-## See Also  
- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+## See also
+
+- [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md)

@@ -2,15 +2,13 @@
 title: "ICorDebugVariableSymbol::GetValue Method"
 ms.date: "03/30/2017"
 ms.assetid: 90abece1-392e-4ade-94a1-30c75b0f7074
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol::GetValue Method
 Gets the value of a variable as a byte array.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue(  
    [in] ULONG32 offset,  
    [in] ULONG32 cbContext,  
@@ -21,7 +19,7 @@ HRESULT GetValue(
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `offset`  
  [in] The starting offset in the variable from which to read the value. This parameter is used when reading member fields in an object.  
   
@@ -43,10 +41,10 @@ HRESULT GetValue(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -54,6 +52,7 @@ HRESULT GetValue(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugVariableSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [ICorDebugVariableSymbol Interface](icordebugvariablesymbol-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

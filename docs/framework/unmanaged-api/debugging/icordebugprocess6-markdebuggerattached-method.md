@@ -2,21 +2,19 @@
 title: "ICorDebugProcess6::MarkDebuggerAttached Method"
 ms.date: "03/30/2017"
 ms.assetid: bf94f090-5265-4112-8e57-5b4e20e070d0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::MarkDebuggerAttached Method
 Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method in the .NET Framework Class Library returns `true`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MarkDebuggerAttached(  
     BOOL fIsAttached  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `fIsAttached`  
  `true` if the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method should indicate that a debugger is attached; `false` otherwise.  
   
@@ -32,10 +30,10 @@ HRESULT MarkDebuggerAttached(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -43,6 +41,7 @@ HRESULT MarkDebuggerAttached(
   
  **.NET Framework Versions:** [!INCLUDE[net_46_native](../../../../includes/net-46-native-md.md)]  
   
-## See Also  
- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [ICorDebugProcess6 Interface](icordebugprocess6-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -13,6 +13,7 @@ Id: 104
 ## Description  
  An event or events were not traced. The event lists the original event string, process name and process ID.  
   
-## See Also  
- [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md)  
- [Events General Reference](../../../../../docs/framework/wcf/diagnostics/event-logging/events-general-reference.md)
+## See also
+
+- [Event Logging](index.md)
+- [Events General Reference](events-general-reference.md)

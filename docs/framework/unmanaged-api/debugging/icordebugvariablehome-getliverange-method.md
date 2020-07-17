@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 87277e1a-1595-4729-9e25-d1c3ac18ce5f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IcorDebugVariableHome::GetLiveRange Method
 Gets the native range over which this variable is live.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLiveRange(  
     [out] ULONG32* pStartOffset,  
     [out] ULONG32 *pEndOffset  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pStartOffset`  
  [out] The logical offset at which the variable is first live.  
   
@@ -38,7 +36,7 @@ HRESULT GetLiveRange(
  [out] The logical offset immediately after the point at which the variable is last live.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -46,5 +44,6 @@ HRESULT GetLiveRange(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v462plus](../../../../includes/net-current-v462plus-md.md)]  
   
-## See Also  
- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+## See also
+
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)

@@ -10,7 +10,7 @@ ms.assetid: 1d50c8b4-f550-4775-bbb6-eab6e874cb43
 The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a sequence. The following examples use the Northwind database.  
   
 > [!NOTE]
->  Null column values in <xref:System.Linq.Enumerable.GroupBy%2A> queries can sometimes throw an <xref:System.InvalidOperationException>. For more information, see the "GroupBy InvalidOperationException" section of [Troubleshooting](../../../../../../docs/framework/data/adonet/sql/linq/troubleshooting.md).  
+> Null column values in <xref:System.Linq.Enumerable.GroupBy%2A> queries can sometimes throw an <xref:System.InvalidOperationException>. For more information, see the "GroupBy InvalidOperationException" section of [Troubleshooting](troubleshooting.md).  
   
 ## Example  
  The following example partitions `Products` by `CategoryID`.  
@@ -66,6 +66,7 @@ The <xref:System.Linq.Enumerable.GroupBy%2A> operator groups the elements of a s
  [!code-csharp[DLinqQueryExamples#35](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#35)]
  [!code-vb[DLinqQueryExamples#35](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#35)]  
   
-## See Also  
- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)  
- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+## See also
+
+- [Query Examples](query-examples.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)

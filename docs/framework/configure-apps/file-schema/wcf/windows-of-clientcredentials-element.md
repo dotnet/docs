@@ -1,25 +1,24 @@
 ---
-title: "&lt;windows&gt; of &lt;clientCredentials&gt; Element"
+title: "<windows> of <clientCredentials> Element"
 ms.date: "03/30/2017"
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
 ---
-# &lt;windows&gt; of &lt;clientCredentials&gt; Element
+# \<windows> of \<clientCredentials> Element
 Specifies the settings for a Windows credential to be used to represent the client.  
   
- \<system.ServiceModel>  
-\<behaviors>  
-\<endpointBehaviors>  
-\<behavior>  
-\<clientCredentials>  
-\<windows>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<behaviors>**](behaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpointBehaviors>**](endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<behavior>**](behavior-of-endpointbehaviors.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<clientCredentials>**](clientcredentials.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<windows>**  
   
 ## Syntax  
   
 ```xml  
-<windows   
-    allowedImpersonationLevel="Identification/Impersonation/Delegation/Anonymous/None"  
-        allowNtlm="Boolean"  
-/>  
+<windows allowedImpersonationLevel="Identification/Impersonation/Delegation/Anonymous/None"
+         allowNtlm="Boolean" />
 ```  
   
 ## Attributes and Elements  
@@ -39,16 +38,17 @@ Specifies the settings for a Windows credential to be used to represent the clie
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<clientCredentials>](../../../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)|Specifies the credentials used to authenticate the client to the service.|  
+|[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate the client to the service.|  
   
-## See Also  
- <xref:System.ServiceModel.Configuration.WindowsClientElement>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Windows%2A>  
- <xref:System.ServiceModel.Description.ClientCredentials>  
- <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>  
- <xref:System.ServiceModel.Security.WindowsClientCredential>  
- [Securing Clients](../../../../../docs/framework/wcf/securing-clients.md)  
- [Working with Certificates](../../../../../docs/framework/wcf/feature-details/working-with-certificates.md)  
- [Securing Services and Clients](../../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+## See also
+
+- <xref:System.ServiceModel.Configuration.WindowsClientElement>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Configuration.ClientCredentialsElement.Windows%2A>
+- <xref:System.ServiceModel.Description.ClientCredentials>
+- <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>
+- <xref:System.ServiceModel.Security.WindowsClientCredential>
+- [Securing Clients](../../../wcf/securing-clients.md)
+- [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
+- [Securing Services and Clients](../../../wcf/feature-details/securing-services-and-clients.md)

@@ -15,21 +15,19 @@ helpviewer_keywords:
 ms.assetid: b1211981-e90c-4e05-8def-fa18d85ad9ab
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepper::SetUnmappedStopMask Method
 Sets a value that specifies the type of unmapped code in which execution will halt.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetUnmappedStopMask (  
     [in] CorDebugUnmappedStop   mask  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mask`  
  [in] A value of the CorDebugUnmappedStop enumeration that specifies the type of unmapped code in which the debugger will halt execution.  
   
@@ -41,7 +39,7 @@ HRESULT SetUnmappedStopMask (
  If the debugger doesn't use a stepper to enter a method, then it won't necessarily step over unmapped code.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

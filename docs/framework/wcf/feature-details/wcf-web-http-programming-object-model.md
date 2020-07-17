@@ -8,29 +8,29 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
   
  **Programming Model:**  
   
--   <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>  
+- <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>  
   
--   <xref:System.ServiceModel.Web.WebGetAttribute>  
+- <xref:System.ServiceModel.Web.WebGetAttribute>  
   
--   <xref:System.ServiceModel.Web.WebInvokeAttribute>  
+- <xref:System.ServiceModel.Web.WebInvokeAttribute>  
   
--   <xref:System.ServiceModel.Web.WebServiceHost>  
+- <xref:System.ServiceModel.Web.WebServiceHost>  
   
  **Channels and Dispatcher Infrastructure:**  
   
--   <xref:System.ServiceModel.WebHttpBinding>  
+- <xref:System.ServiceModel.WebHttpBinding>  
   
--   <xref:System.ServiceModel.Description.WebHttpBehavior>  
+- <xref:System.ServiceModel.Description.WebHttpBehavior>  
   
  **Utility Classes and Extensibility Points:**  
   
--   <xref:System.UriTemplate>  
+- <xref:System.UriTemplate>  
   
--   <xref:System.UriTemplateTable>  
+- <xref:System.UriTemplateTable>  
   
--   <xref:System.ServiceModel.Dispatcher.QueryStringConverter>  
+- <xref:System.ServiceModel.Dispatcher.QueryStringConverter>  
   
--   <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>  
+- <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>  
   
 ## AspNetCacheProfileAttribute  
  The <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute>, when applied to a service operation, indicates the ASP.NET output cache profile in the configuration file that should be used by to cache responses from the operation in the ASP .NET Output Cache. This property takes only one parameter, the cache profile name that specifies the cache settings in the configuration file.  
@@ -79,24 +79,26 @@ The WCF WEB HTTP  Programming Model allows developers to expose Windows Communic
 ### Extending WebHttpBehavior  
  <xref:System.ServiceModel.Description.WebHttpBehavior> is extensible by using a number of virtual methods: <xref:System.ServiceModel.Description.WebHttpBehavior.GetOperationSelector%28System.ServiceModel.Description.ServiceEndpoint%29>, <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>, <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestClientFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>, <xref:System.ServiceModel.Description.WebHttpBehavior.GetReplyDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>, and <xref:System.ServiceModel.Description.WebHttpBehavior.GetRequestDispatchFormatter%28System.ServiceModel.Description.OperationDescription%2CSystem.ServiceModel.Description.ServiceEndpoint%29>. Developers can derive a class from <xref:System.ServiceModel.Description.WebHttpBehavior> and override these methods to customize the default behavior.  
   
- The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> is an example of extending <xref:System.ServiceModel.Description.WebHttpBehavior>. <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> enables Windows Communication Foundation (WCF) endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. The [AJAX Service Using HTTP POST](../../../../docs/framework/wcf/samples/ajax-service-using-http-post.md) is an example of using this extensibility point.  
+ The <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> is an example of extending <xref:System.ServiceModel.Description.WebHttpBehavior>. <xref:System.ServiceModel.Description.WebScriptEnablingBehavior> enables Windows Communication Foundation (WCF) endpoints to receive HTTP requests from a browser-based ASP.NET AJAX client. The [AJAX Service Using HTTP POST](../samples/ajax-service-using-http-post.md) is an example of using this extensibility point.  
   
 > [!WARNING]
->  When using the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, <xref:System.UriTemplate> are not supported within <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes.  
+> When using the <xref:System.ServiceModel.Description.WebScriptEnablingBehavior>, <xref:System.UriTemplate> are not supported within <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes.  
   
 ## WebHttpDispatchOperationSelector  
  The <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector> class uses <xref:System.UriTemplate> and <xref:System.UriTemplateTable> classes to dispatch calls to service operations.  
   
 ## Compatibility  
- The WCF WEB HTTP Programming Model does not use SOAP-based messages and therefore does not support the WS-* protocols. You can however, expose the same contract by two different endpoint: one using SOAP and the other not using SOAP. See [How to: Expose a Contract to SOAP and Web Clients](../../../../docs/framework/wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) for an example.  
+ The WCF WEB HTTP Programming Model does not use SOAP-based messages and therefore does not support the WS-* protocols. You can however, expose the same contract by two different endpoint: one using SOAP and the other not using SOAP. See [How to: Expose a Contract to SOAP and Web Clients](how-to-expose-a-contract-to-soap-and-web-clients.md) for an example.  
   
 ## Security  
- Because the WCF WEB HTTP  Programming Model does not support the WS-* protocols the only way to secure a Web service built on the WCF WEB HTTP  Programming Model is to expose your service using SSL. For more information about setting up SSL with [!INCLUDE[iisver](../../../../includes/iisver-md.md)] see [How to implement SSL in IIS](https://go.microsoft.com/fwlink/?LinkId=131613)  
+
+Because the WCF WEB HTTP  Programming Model does not support the WS-* protocols the only way to secure a Web service built on the WCF WEB HTTP  Programming Model is to expose your service using SSL. For more information about setting up SSL with IIS 7.0 see [How to implement SSL in IIS](https://support.microsoft.com/help/299875/how-to-implement-ssl-in-iis).
   
-## See Also  
- <xref:System.ServiceModel.WebHttpBinding>  
- <xref:System.ServiceModel.Web.WebGetAttribute>  
- <xref:System.ServiceModel.Web.WebInvokeAttribute>  
- <xref:System.ServiceModel.Description.WebHttpBehavior>  
- <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>  
- [WCF Web HTTP Programming Model Overview](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model-overview.md)
+## See also
+
+- <xref:System.ServiceModel.WebHttpBinding>
+- <xref:System.ServiceModel.Web.WebGetAttribute>
+- <xref:System.ServiceModel.Web.WebInvokeAttribute>
+- <xref:System.ServiceModel.Description.WebHttpBehavior>
+- <xref:System.ServiceModel.Dispatcher.WebHttpDispatchOperationSelector>
+- [WCF Web HTTP Programming Model Overview](wcf-web-http-programming-model-overview.md)

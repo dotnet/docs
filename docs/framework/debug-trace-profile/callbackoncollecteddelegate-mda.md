@@ -1,5 +1,6 @@
 ---
 title: "callbackOnCollectedDelegate MDA"
+description: Review the callbackOnCollectedDelegate managed debugging assistant (MDA) in .NET, which is invoked if a callback occurs after the delegate is garbage collected.
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -14,8 +15,6 @@ helpviewer_keywords:
   - "garbage collection, run-time errors"
   - "delegates [.NET Framework], garbage collection"
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # callbackOnCollectedDelegate MDA
 The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated if a delegate is marshaled from managed to unmanaged code as a function pointer and a callback is placed on that function pointer after the delegate has been garbage collected.  
@@ -92,7 +91,7 @@ public class Entry
     }  
   
     public static void Target()  
-    {          
+    {
     }  
   
     [DllImport("Library", CallingConvention = CallingConvention.StdCall)]  
@@ -105,8 +104,9 @@ public class Entry
 }  
 ```  
   
-## See Also  
- <xref:System.Runtime.InteropServices.MarshalAsAttribute>  
- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)  
- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)  
- [gcUnmanagedToManaged](../../../docs/framework/debug-trace-profile/gcunmanagedtomanaged-mda.md)
+## See also
+
+- <xref:System.Runtime.InteropServices.MarshalAsAttribute>
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)
+- [gcUnmanagedToManaged](gcunmanagedtomanaged-mda.md)

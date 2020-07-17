@@ -12,7 +12,7 @@ This sample demonstrates how to create a custom tracking participant and write t
 |Component|Description|
 |---------------|-----------------|
 |Tracking runtime|Provides the infrastructure to emit tracking records.|
-|Tracking participants|Consumes the tracking records. [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)] ships with a tracking participant that writes tracking records as Event Tracing for Windows (ETW) events.|
+|Tracking participants|Consumes the tracking records. .NET Framework 4 ships with a tracking participant that writes tracking records as Event Tracing for Windows (ETW) events.|
 |Tracking profile|A filtering mechanism that allows a tracking participant to subscribe for a subset of the tracking records emitted from a workflow instance.|
 
  The following table details the tracking records that the workflow runtime emits.
@@ -41,7 +41,7 @@ public abstract class TrackingParticipant
 }
 ```
 
- The complete tracking participant is implemented in the ConsoleTrackingParticipant.cs file.The following code example is the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method for the custom tracking participant.
+ The complete tracking participant is implemented in the ConsoleTrackingParticipant.cs file. The following code example is the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method for the custom tracking participant.
 
 ```csharp
 protected override void Track(TrackingRecord record, TimeSpan timeout)
@@ -104,9 +104,9 @@ invoker.Extensions.Add(customTrackingParticipant);
 ### Emitting Custom Tracking Records
  This sample also demonstrates the ability to emit <xref:System.Activities.Tracking.CustomTrackingRecord> objects from a custom workflow activity:
 
--   The <xref:System.Activities.Tracking.CustomTrackingRecord> objects are created and populated with user-defined data that is desired to be emitted with the record.
+- The <xref:System.Activities.Tracking.CustomTrackingRecord> objects are created and populated with user-defined data that is desired to be emitted with the record.
 
--   The <xref:System.Activities.Tracking.CustomTrackingRecord> is emitted by calling the track method of the <xref:System.Activities.ActivityContext>.
+- The <xref:System.Activities.Tracking.CustomTrackingRecord> is emitted by calling the track method of the <xref:System.Activities.ActivityContext>.
 
  The following example demonstrates how to emit <xref:System.Activities.Tracking.CustomTrackingRecord> objects within a custom activity.
 
@@ -127,20 +127,21 @@ context.Track(customRecord);
 
 #### To use this sample
 
-1.  Using Visual Studio 2010, open the CustomTrackingSample.sln solution file.
+1. Using Visual Studio 2010, open the CustomTrackingSample.sln solution file.
 
-2.  To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press CTRL+SHIFT+B.
 
-3.  To run the solution, press CTRL+F5.
+3. To run the solution, press CTRL+F5.
 
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Tracking\CustomTracking`  
   
-## See Also  
- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+## See also
+
+- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

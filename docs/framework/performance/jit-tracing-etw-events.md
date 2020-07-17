@@ -1,27 +1,19 @@
 ---
 title: "JIT Tracing ETW Events"
+description: Understand just-in-time (JIT) tracing ETW events. These events collect information relating to the success or failure of JIT inlining and JIT tail calls.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "JIT tracing events [.NET Framework]"
   - "ETW, JIT tracing events (CLR)"
 ms.assetid: 926adde2-c123-452e-bf4f-4b977bf06ffb
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # JIT Tracing ETW Events
-<a name="top"></a> These events collect information relating to the success or failure of just-in-time (JIT) inlining and JIT tail calls.  
-  
- JIT tracing events consist of the following two categories:  
-  
--   [JIT Inlining Events](#jit_inlining_events)  
-  
--   [JIT Tail Call Events](#jit_tail_call_events)  
-  
-<a name="jit_inlining_events"></a>   
-## JIT Inlining Events  
-  
-### MethodJitInliningFailed Event  
- The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+These events collect information relating to the success or failure of just-in-time (JIT) inlining and JIT tail calls.
+
+## JIT Inlining Events
+
+### MethodJitInliningFailed Event
+ The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -77,10 +69,7 @@ ms.author: "mairaw"
 |InlineeName|win:UnicodeString|The method the compiler is trying to inline (not generate a call to).|  
 |InlineeNameSignature|win:UnicodeString|The signature for the inlinee.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
-  
-<a name="jit_tail_call_events"></a>   
+
 ## JIT Tail Call Events  
   
 ### MethodJITTailCallFailed Event  
@@ -143,5 +132,6 @@ ms.author: "mairaw"
 |TailCallType|win:UnicodeString|The type of the tail call.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
-## See Also  
- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+## See also
+
+- [CLR ETW Events](clr-etw-events.md)

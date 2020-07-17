@@ -15,7 +15,7 @@ may represent:
 - a method
 - a local variable
 
-Although each of these is uniquely different, determining which one an identifier actually refers to often requires a deep understanding of the language rules. 
+Although each of these is uniquely different, determining which one an identifier actually refers to often requires a deep understanding of the language rules.
 
 There are program elements represented in source code, and programs can also refer to previously compiled libraries, packaged in assembly files. Although no source code, and therefore no syntax nodes or trees, are available for assemblies, programs can still refer to elements inside them.
 
@@ -25,7 +25,7 @@ In addition to a syntactic model of the source code, a semantic model encapsulat
 
 ## Compilation
 
-A compilation is a representation of everything needed to compile a C# or Visual Basic program, which includes all the assembly references, compiler options, and source files. 
+A compilation is a representation of everything needed to compile a C# or Visual Basic program, which includes all the assembly references, compiler options, and source files.
 
 Because all this information is in one place, the elements contained in the source code can be described in more detail. The compilation represents each declared type, member, or variable as a symbol. The compilation contains a variety of methods that help you find and relate the symbols that have either been declared in the source code or imported as metadata from an assembly.
 
@@ -33,7 +33,7 @@ Similar to syntax trees, compilations are immutable. After you create a compilat
 
 ## Symbols
 
-A symbol represents a distinct element declared by the source code or imported from an assembly as metadata. Every namespace, type, method, property, field, event, parameter, or local variable is represented by a symbol. 
+A symbol represents a distinct element declared by the source code or imported from an assembly as metadata. Every namespace, type, method, property, field, event, parameter, or local variable is represented by a symbol.
 
 A variety of methods and properties on the <xref:Microsoft.CodeAnalysis.Compilation> type help you find symbols. For example, you can find a symbol for a declared type by its common metadata name. You can also access the entire symbol table as a tree of symbols rooted by the global namespace.
 
@@ -46,10 +46,10 @@ Symbols are similar in concept to the CLR type system as represented by the <xre
 
 ## Semantic model
 
-A semantic model represents all the semantic information for a single source file. You can use it to discover the following: 
+A semantic model represents all the semantic information for a single source file. You can use it to discover the following:
 
-* The symbols referenced at a specific location in source.
-* The resultant type of any expression.
-* All diagnostics, which are errors and warnings.
-* How variables flow in and out of regions of source.
-* The answers to more speculative questions.
+- The symbols referenced at a specific location in source.
+- The resultant type of any expression.
+- All diagnostics, which are errors and warnings.
+- How variables flow in and out of regions of source.
+- The answers to more speculative questions.

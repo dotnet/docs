@@ -19,19 +19,19 @@ This sample demonstrates how to write a <xref:System.Activities.NativeActivity> 
 
  When the child activity completes, the <xref:System.Activities.CompletionCallback> is executed. The loop continues from the top. Like `Execute`, a <xref:System.Activities.CompletionCallback> takes an <xref:System.Activities.NativeActivityContext>, giving the implementer access to the runtime.
 
- `MyWhile` differs from `MySequence` in that it schedules a single <xref:System.Activities.Activity> object repeatedly, and in that it uses a <xref:System.Activities.Activity%601><bool\> named `Condition` to determine whether this scheduling should occur. Like `MySequence`, `MyWhile` uses an `InternalExecute` method to centralize its scheduling logic. It schedules the `Condition`<xref:System.Activities.Activity><bool\> with a <xref:System.Activities.CompletionCallback%601>\<bool> named `OnEvaluationCompleted`. When the execution of `Condition` is completed, its result becomes available through this <xref:System.Activities.CompletionCallback> in a strongly-typed parameter named `result`. If `true`, `MyWhile` calls  <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, passing in the `Body`<xref:System.Activities.Activity> object and `InternalExecute` as the <xref:System.Activities.CompletionCallback>. When the execution of `Body` completes, `Condition` gets scheduled again in `InternalExecute`, starting the loop over again. When the `Condition` returns `false`, an instance of `MyWhile` gives control back to the runtime without scheduling the `Body` and the runtime moves it to the <xref:System.Activities.ActivityInstanceState.Closed> state.
+ `MyWhile` differs from `MySequence` in that it schedules a single <xref:System.Activities.Activity> object repeatedly, and in that it uses a <xref:System.Activities.Activity%601><bool\> named `Condition` to determine whether this scheduling should occur. Like `MySequence`, `MyWhile` uses an `InternalExecute` method to centralize its scheduling logic. It schedules the `Condition`<xref:System.Activities.Activity><bool\> with a <xref:System.Activities.CompletionCallback%601>\<bool> named `OnEvaluationCompleted`. When the execution of `Condition` is completed, its result becomes available through this <xref:System.Activities.CompletionCallback> in a strongly typed parameter named `result`. If `true`, `MyWhile` calls  <xref:System.Activities.NativeActivityContext.ScheduleActivity%2A>, passing in the `Body`<xref:System.Activities.Activity> object and `InternalExecute` as the <xref:System.Activities.CompletionCallback>. When the execution of `Body` completes, `Condition` gets scheduled again in `InternalExecute`, starting the loop over again. When the `Condition` returns `false`, an instance of `MyWhile` gives control back to the runtime without scheduling the `Body` and the runtime moves it to the <xref:System.Activities.ActivityInstanceState.Closed> state.
 
 #### To set up, build, and run the sample
 
-1.  Open the Composite.sln sample solution in Visual Studio 2010.
+1. Open the Composite.sln sample solution in Visual Studio 2010.
 
-2.  Build and run the solution.
+2. Build and run the solution.
 
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\Code-Bodied\CustomCompositeNativeActivity`
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\Code-Bodied\CustomCompositeNativeActivity`

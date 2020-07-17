@@ -1,14 +1,13 @@
 ---
-title: "How to: Implement Interface Events - C# Programming Guide"
-ms.custom: seodec18
+title: "How to implement interface events - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interfaces [C#], event implementation in classes"
   - "events [C#], in interfaces"
 ms.assetid: 63527447-9535-4880-8e95-35e2075827df
 ---
-# How to: Implement Interface Events (C# Programming Guide)
-An [interface](../../../csharp/language-reference/keywords/interface.md) can declare an [event](../../../csharp/language-reference/keywords/event.md). The following example shows how to implement interface events in a class. Basically the rules are the same as when you implement any interface method or property.  
+# How to implement interface events (C# Programming Guide)
+An [interface](../../language-reference/keywords/interface.md) can declare an [event](../../language-reference/keywords/event.md). The following example shows how to implement interface events in a class. Basically the rules are the same as when you implement any interface method or property.  
   
 ## To implement interface events in a class  
   
@@ -21,7 +20,7 @@ namespace ImplementInterfaceEvents
     {  
         event EventHandler ShapeChanged;  
     }  
-    public class MyEventArgs : EventArgs   
+    public class MyEventArgs : EventArgs
     {  
         // class members  
     }  
@@ -34,7 +33,7 @@ namespace ImplementInterfaceEvents
 
             OnShapeChanged(new MyEventArgs(/*arguments*/));  
 
-            // or do something here after the event.   
+            // or do something here after the event.
         }  
         protected virtual void OnShapeChanged(MyEventArgs e)  
         {  
@@ -50,12 +49,12 @@ The following example shows how to handle the less-common situation in which you
   
 By providing your own accessors, you can specify whether the two events are represented by the same event in your class, or by different events. For example, if the events should be raised at different times according to the interface specifications, you can associate each event with a separate implementation in your class. In the following example, subscribers determine which `OnDraw` event they will receive by casting the shape reference to either an `IShape` or an `IDrawingObject`.  
   
- [!code-csharp[WrapTwoInterfaceEvents](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-implement-interface-events_1.cs#everything)]
+ [!code-csharp[csProgGuideEvents#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideEvents/CS/Events.cs#10)]
   
-## See Also
+## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)  
-- [Events](../../../csharp/programming-guide/events/index.md)  
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)  
-- [Explicit Interface Implementation](../../../csharp/programming-guide/interfaces/explicit-interface-implementation.md)  
-- [How to: Raise Base Class Events in Derived Classes](../../../csharp/programming-guide/events/how-to-raise-base-class-events-in-derived-classes.md)
+- [C# Programming Guide](../index.md)
+- [Events](./index.md)
+- [Delegates](../delegates/index.md)
+- [Explicit Interface Implementation](../interfaces/explicit-interface-implementation.md)
+- [How to raise base class events in derived classes](./how-to-raise-base-class-events-in-derived-classes.md)

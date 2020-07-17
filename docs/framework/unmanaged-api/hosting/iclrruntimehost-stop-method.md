@@ -15,18 +15,16 @@ helpviewer_keywords:
 ms.assetid: b8fd7daf-8f8d-4ad7-92ae-019db244cec1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::Stop Method
 Stops the execution of code by the common language runtime (CLR).  
   
 > [!IMPORTANT]
->  This method does not release resources to the host, unload application domains, or destroy threads. You must terminate the process to release these resources.  
+> This method does not release resources to the host, unload application domains, or destroy threads. You must terminate the process to release these resources.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop();  
 ```  
   
@@ -42,7 +40,7 @@ HRESULT Stop();
 |E_FAIL|An unknown catastrophic failure occurred. If a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -50,5 +48,6 @@ HRESULT Stop();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)
+## See also
+
+- [ICLRRuntimeHost Interface](iclrruntimehost-interface.md)

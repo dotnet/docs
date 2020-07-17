@@ -17,16 +17,14 @@ helpviewer_keywords:
   - "time zone objects [.NET Framework], serializing"
   - "time zone objects [.NET Framework], saving"
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Saving and restoring time zones
 
 The <xref:System.TimeZoneInfo> class relies on the registry to retrieve predefined time zone data. However, the registry is a dynamic structure. Additionally, the time zone information that the registry contains is used by the operating system primarily to handle time adjustments and conversions for the current year. This has two major implications for applications that rely on accurate time zone data:
 
-* A time zone that is required by an application may not be defined in the registry, or it may have been renamed or removed from the registry.
+- A time zone that is required by an application may not be defined in the registry, or it may have been renamed or removed from the registry.
 
-* A time zone that is defined in the registry may lack information about the particular adjustment rules that are necessary for historical time zone conversions.
+- A time zone that is defined in the registry may lack information about the particular adjustment rules that are necessary for historical time zone conversions.
 
 The <xref:System.TimeZoneInfo> class addresses these limitations through its support for serialization (saving) and deserialization (restoring) of time zone data.
 
@@ -34,9 +32,9 @@ The <xref:System.TimeZoneInfo> class addresses these limitations through its sup
 
 Saving and restoring a time zone by serializing and deserializing time zone data involves just two method calls:
 
-* You can serialize a <xref:System.TimeZoneInfo> object by calling that object's <xref:System.TimeZoneInfo.ToSerializedString%2A> method. The method takes no parameters and returns a string that contains time zone information.
+- You can serialize a <xref:System.TimeZoneInfo> object by calling that object's <xref:System.TimeZoneInfo.ToSerializedString%2A> method. The method takes no parameters and returns a string that contains time zone information.
 
-* You can deserialize a <xref:System.TimeZoneInfo> object from a serialized string by passing that string to the `static` (`Shared` in Visual Basic) <xref:System.TimeZoneInfo.FromSerializedString%2A?displayProperty=nameWithType> method.
+- You can deserialize a <xref:System.TimeZoneInfo> object from a serialized string by passing that string to the `static` (`Shared` in Visual Basic) <xref:System.TimeZoneInfo.FromSerializedString%2A?displayProperty=nameWithType> method.
 
 ## Serialization and deserialization scenarios
 
@@ -66,8 +64,8 @@ The previous examples have stored time zone information to a string variable and
 
 Storing a serialized time zone string in this manner also separates the time zone creation routine from the application itself. For example, a time zone creation routine can execute and create a data file that contains historical time zone information that an application can use. The data file can be then be installed with the application, and it can be opened and one or more of its time zones can be deserialized when the application requires them.
 
-For an example that uses an embedded resource to store serialized time zone data, see [How to: Save time zones to an embedded resource](../../../docs/standard/datetime/save-time-zones-to-an-embedded-resource.md) and [How to: Restore time zones from an embedded resource](../../../docs/standard/datetime/restore-time-zones-from-an-embedded-resource.md).
+For an example that uses an embedded resource to store serialized time zone data, see [How to: Save time zones to an embedded resource](save-time-zones-to-an-embedded-resource.md) and [How to: Restore time zones from an embedded resource](restore-time-zones-from-an-embedded-resource.md).
 
 ## See also
 
-* [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
+- [Dates, times, and time zones](index.md)

@@ -1,5 +1,5 @@
 ---
-title: "&lt;module&gt; Element (Network Settings)"
+title: "<module> Element (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#module"
@@ -9,19 +9,19 @@ helpviewer_keywords:
   - "<module> element"
 ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
 ---
-# &lt;module&gt; Element (Network Settings)
+# \<module> Element (Network Settings)
 Adds a new proxy module to the application.  
-  
- \<configuration>  
-\<system.net>  
-\<defaultProxy>  
-\<module>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<defaultProxy>**](defaultproxy-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<module>**
+
 ## Syntax  
   
 ```xml  
-<module   
-  type="type_fullname, assembly_fullname"   
+<module
+  type="type_fullname, assembly_fullname"
 />  
 ```  
   
@@ -41,7 +41,7 @@ Adds a new proxy module to the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[defaultProxy](../../../../../docs/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
+|[defaultProxy](defaultproxy-element-network-settings.md)|Configures the Hypertext Transfer Protocol (HTTP) proxy server.|  
   
 ## Remarks  
  The `module` element registers proxy classes that implement the <xref:System.Net.IWebProxy> interface. After registering the proxy class, `module` can be used to request information through the supported proxy.  
@@ -66,6 +66,7 @@ Adds a new proxy module to the application.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.IWebProxy?displayProperty=nameWithType>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.IWebProxy?displayProperty=nameWithType>
+- [Network Settings Schema](index.md)

@@ -3,13 +3,11 @@ title: "Entity References are Expanded and Not Preserved"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: ffd97806-ab43-4538-8de2-5828bfbbde57
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Entity References are Expanded and Not Preserved
 When the entity reference is expanded and replaced by the text it represents, the **XmlEntityReference** node is not created. Instead, the entity declaration is parsed, and nodes created from the content in the declaration are copied in the place of the **XmlEntityReference**. Therefore, in the `&publisher;` example, the `&publisher;` is not saved, but instead, an **XmlText** node is created.  
   
- ![expanded tree structure](../../../../docs/standard/data/xml/media/xmlentityref-expanded-nodes.gif "xmlentityref_expanded_nodes")  
+ ![expanded tree structure](media/xmlentityref-expanded-nodes.gif "xmlentityref_expanded_nodes")  
 Tree structure for entity references that are expanded  
   
  Character entities such as `B` or `<` are not preserved. Instead, they are always expanded and represented as text nodes.  
@@ -36,4 +34,4 @@ Tree structure for entity references that are expanded
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

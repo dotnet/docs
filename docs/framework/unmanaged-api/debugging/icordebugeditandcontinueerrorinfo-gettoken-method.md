@@ -15,11 +15,10 @@ helpviewer_keywords:
 ms.assetid: 590647c5-499f-44c3-b56c-0e1945088d3a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetToken Method
 `GetToken` is obsolete. Do not call this method.  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

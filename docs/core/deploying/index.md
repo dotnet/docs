@@ -1,103 +1,151 @@
 ---
-title: .NET Core Application Deployment
-description: Learn about the ways to deploy a .NET Core application.
-author: rpetrusha
-ms.author: ronpet
-ms.date: 12/03/2018
-ms.custom: seodec18
+title: Application publishing
+description: Learn about the ways to publish a .NET Core application. .NET Core can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as runtime-dependent. Each mode affects how a user runs your app.
+ms.date: 04/01/2020
 ---
-# .NET Core application deployment
+# .NET Core application publishing overview
 
-You can create three types of deployments for .NET Core applications:
+Applications you create with .NET Core can be published in two different modes, and the mode affects how a user runs your app.
 
-- Framework-dependent deployment. As the name implies, framework-dependent deployment (FDD) relies on the presence of a shared system-wide version of .NET Core on the target system. Because .NET Core is already present, your app is also portable between installations of .NET Core. Your app contains only its own code and any third-party dependencies that are outside of the .NET Core libraries. FDDs contain *.dll* files that can be launched by using the [dotnet utility](../tools/dotnet.md) from the command line. For example, `dotnet app.dll` runs an application named `app`.
+Publishing your app as *self-contained* produces an application that includes the .NET Core runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET Core runtime installed.
 
-- Self-contained deployment. Unlike FDD, a self-contained deployment (SCD) doesn't rely on the presence of shared components on the target system. All components, including both the .NET Core libraries and the .NET Core runtime, are included with the application and are isolated from other .NET Core applications. SCDs include an executable (such as *app.exe* on Windows platforms for an application named `app`), which is a renamed version of the platform-specific .NET Core host, and a *.dll* file (such as *app.dll*), which is the actual application.
+Publishing your app as *runtime-dependent* (previously known as *framework-dependent*) produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET Core runtime.
 
-- Framework-dependent executables. Produces an executable that runs on a target platform. Similar to FDDs, framework-dependent executables (FDE) are platform-specific and aren't self-contained. These deployments still rely on the presence of a shared system-wide version of .NET Core to run. Unlike an SCD, your app only contains your code and any third-party dependencies that are outside of the .NET Core libraries. FDEs produce an executable that runs on the target platform.
+Both publishing modes produce a platform-specific executable by default. Runtime-dependent applications can be created without an executable, and these applications are cross-platform.
 
-## Framework-dependent deployments (FDD)
+When an executable is produced, you can specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET Core RID Catalog](../rid-catalog.md).
 
-For an FDD, you deploy only your app and third-party dependencies. Your app will use the version of .NET Core that's present on the target system. This is the default deployment model for .NET Core and ASP.NET Core apps that target .NET Core.
+The following table outlines the commands used to publish an app as runtime-dependent or self-contained, per SDK version:
 
-### Why create a framework-dependent deployment?
+| Type                                                                                 | SDK 2.1 | SDK 3.x | Command |
+| -----------------------------------------------------------------------------------  | ------- | ------- | ------- |
+| [runtime-dependent executable](#publish-runtime-dependent) for the current platform. |         | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent executable](#publish-runtime-dependent) for a specific platform.  |         | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
+| [runtime-dependent cross-platform binary](#publish-runtime-dependent).               | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained).                                | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
-Deploying an FDD has a number of advantages:
+For more information, see [.NET Core dotnet publish command](../tools/dotnet-publish.md).
 
-- You don't have to define the target operating systems that your .NET Core app will run on in advance. Because .NET Core uses a common PE file format for executables and libraries regardless of operating system, .NET Core can execute your app regardless of the underlying operating system. For more information on the PE file format, see [.NET Assembly File Format](../../standard/assembly-format.md).
+## Produce an executable
 
-- The size of your deployment package is small. You only deploy your app and its dependencies, not .NET Core itself.
+Executables aren't cross-platform. They're specific to an operating system and CPU architecture. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [runtime-dependent](#publish-runtime-dependent). Publishing an app as self-contained includes the .NET Core runtime with the app, and users of the app don't have to worry about installing .NET Core before running the app. Apps published as runtime-dependent don't include the .NET Core runtime and libraries; only the app and 3rd-party dependencies are included.
 
-- Unless overridden, FDDs will use the latest serviced runtime installed on the target system. This allows your application to use the latest patched version of the .NET Core runtime. 
+The following commands produce an executable:
 
-- Multiple apps use the same .NET Core installation, which reduces both disk space and memory usage on host systems.
+| Type                                                                                 | SDK 2.1 | SDK 3.x | Command |
+| ------------------------------------------------------------------------------------ | ------- | ------- | ------- |
+| [runtime-dependent executable](#publish-runtime-dependent) for the current platform. |         | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent executable](#publish-runtime-dependent) for a specific platform.  |         | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained).                                | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
-There are also a few disadvantages:
+## Produce a cross-platform binary
 
-- Your app can run only if the version of .NET Core your app targets, [or a later version](../versions/selection.md#framework-dependent-apps-roll-forward), is already installed on the host system.
+Cross-platform binaries are created when you publish your app as [runtime-dependent](#publish-runtime-dependent), in the form of a *dll* file. The *dll* file is named after your project. For example, if you have an app named **word_reader**, a file named *word_reader.dll* is created. Apps published in this way are run with the `dotnet <filename.dll>` command and can be run on any platform.
 
-- It's possible for the .NET Core runtime and libraries to change without your knowledge in future releases. In rare cases, this may change the behavior of your app.
+Cross-platform binaries can be run on any operating system as long as the targeted .NET Core runtime is already installed. If the targeted .NET Core runtime isn't installed, the app may run using a newer runtime if the app is configured to roll-forward. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-## Self-contained deployments (SCD)
+The following command produces a cross-platform binary:
 
-For a self-contained deployment, you deploy your app and any required third-party dependencies along with the version of .NET Core that you used to build the app. Creating an SCD doesn't include the [native dependencies of .NET Core](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) on various platforms, so these must be present before the app runs. For more information on version binding at runtime, see the article on [version binding in .NET Core](../versions/selection.md).
+| Type                                                                                 | SDK 2.1 | SDK 3.x | Command |
+| -----------------------------------------------------------------------------------  | ------- | ------- | ------- |
+| [runtime-dependent cross-platform binary](#publish-runtime-dependent).               | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
 
-Starting with NET Core 2.1 SDK (version 2.1.300), .NET Core supports *patch version roll forward*. When you create a self-contained deployment, .NET Core tools automatically include the latest serviced runtime of the .NET Core version that your application targets. (The latest serviced runtime includes security patches and other bug fixes.) The serviced runtime does not have to be present on your build system; it is downloaded automatically from NuGet.org. For more information, including instructions on how to opt out of patch version roll forward, see [Self-contained deployment runtime roll forward](runtime-patch-selection.md).
+## Publish runtime-dependent
 
-FDD and SCD deployments use separate host executables, so you can sign a host executable for an SCD with your publisher signature.
+Apps published as runtime-dependent are cross-platform and don't include the .NET Core runtime. The user of your app is required to install the .NET Core runtime.
 
-### Why deploy a self-contained deployment?
+Publishing an app as runtime-dependent produces a [cross-platform binary](#produce-a-cross-platform-binary) as a *dll* file, and a [platform-specific executable](#produce-an-executable) that targets your current platform. The *dll* is cross-platform while the executable isn't. For example, if you publish an app named **word_reader** and target Windows, a *word_reader.exe* executable is created along with *word_reader.dll*. When targeting Linux or macOS, a *word_reader* executable is created along with *word_reader.dll*. For more information about RIDs, see [.NET Core RID Catalog](../rid-catalog.md).
 
-Deploying a Self-contained deployment has two major advantages:
+> [!IMPORTANT]
+> .NET Core SDK 2.1 doesn't produce platform-specific executables when you publish an app runtime-dependent.
 
-- You have sole control of the version of .NET Core that is deployed with your app. .NET Core can be serviced only by you.
+The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms' dependencies are copied to the publish folder along with the app.
 
-- You can be assured that the target system can run your .NET Core app, since you're providing the version of .NET Core that it will run on.
+You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder.
 
-It also has a number of disadvantages:
+### Advantages
 
-- Because .NET Core is included in your deployment package, you must select the target platforms for which you build deployment packages in advance.
+- **Small deployment**\
+Only your app and its dependencies are distributed. The .NET Core runtime and libraries are installed by the user and all apps share the runtime.
 
-- The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.
+- **Cross-platform**\
+Your app and any .NET-based library runs on other operating systems. You don't need to define a target platform for your app. For information about the .NET file format, see [.NET Assembly File Format](../../standard/assembly/file-format.md).
 
-  Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](https://github.com/dotnet/docs/issues/http%22//icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+- **Uses the latest patched runtime**\
+The app uses the latest runtime (within the targeted major-minor family of .NET Core) installed on the target system. This means your app automatically uses the latest patched version of the .NET Core runtime. This default behavior can be overridden. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-- Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.
+### Disadvantages
 
-## Framework-dependent executables (FDE)
+- **Requires pre-installing the runtime**\
+Your app can run only if the version of .NET Core your app targets is already installed on the host system. You can configure roll-forward behavior for the app to either require a specific version of .NET Core or allow a newer version of .NET Core. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-Starting with .NET Core 2.2, you can deploy your app as an FDE, along with any required third-party dependencies. Your app will use the version of .NET Core that's installed on the target system.
+- **.NET Core may change**\
+It's possible for the .NET Core runtime and libraries to be updated on the machine where the app is run. In rare cases, this may change the behavior of your app if you use the .NET Core libraries, which most apps do. You can configure how your app uses newer versions of .NET Core. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-### Why deploy a framework-dependent executable?
+The following disadvantage only applies to .NET Core 2.1 SDK.
 
-Deploying an FDE has a number of advantages:
+- **Use the `dotnet` command to start the app**\
+Users must run the `dotnet <filename.dll>` command to start your app. .NET Core 2.1 SDK doesn't produce platform-specific executables for apps published runtime-dependent.
 
-- The size of your deployment package is small. You only deploy your app and its dependencies, not .NET Core itself.
+### Examples
 
-- Multiple apps use the same .NET Core installation, which reduces both disk space and memory usage on host systems.
+Publish an app cross-platform runtime-dependent. An executable that targets your current platform is created along with the *dll* file.
 
-- Your app can be run by calling the published executable without invoking the `dotnet` utility directly.
+```dotnet
+dotnet publish
+```
 
-There are also a few disadvantages:
+Publish an app cross-platform runtime-dependent. A Linux 64-bit executable is created along with the *dll* file. This command doesn't work with .NET Core SDK 2.1.
 
-- Your app can run only if the version of .NET Core your app targets, [or a later version](../versions/selection.md#framework-dependent-apps-roll-forward), is already installed on the host system.
+```dotnet
+dotnet publish -r linux-x64 --self-contained false
+```
 
-- It's possible for the .NET Core runtime and libraries to change without your knowledge in future releases. In rare cases, this may change the behavior of your app.
+## Publish self-contained
 
-- You must publish your app for each target platform.
+Publishing your app as self-contained produces a platform-specific executable. The output publishing folder contains all components of the app, including the .NET Core libraries and target runtime. The app is isolated from other .NET Core apps and doesn't use a locally installed shared runtime. The user of your app isn't required to download and install .NET Core.
 
-## Step-by-step examples
+The executable binary is produced for the specified target platform. For example, if you have an app named **word_reader**, and you publish a self-contained executable for Windows, a *word_reader.exe* file is created. Publishing for Linux or macOS, a *word_reader* file is created. The target platform and architecture is specified with the `-r <RID>` parameter for the [`dotnet publish`](../tools/dotnet-publish.md) command. For more information about RIDs, see [.NET Core RID Catalog](../rid-catalog.md).
 
-For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). Each article includes examples of the following deployments:
+If the app has platform-specific dependencies, such as a NuGet package containing platform-specific dependencies, these are copied to the publish folder along with the app.
 
-- Framework-dependent deployment
-- Framework-dependent deployment with third-party dependencies
-- Self-contained deployment
-- Self-contained deployment with third-party dependencies
+### Advantages
+
+- **Control .NET Core version**\
+You control which version of .NET Core is deployed with your app.
+
+- **Platform-specific targeting**\
+Because you have to publish your app for each platform, you know where your app will run. If .NET Core introduces a new platform, users can't run your app on that platform until you release a version targeting that platform. You can test your app for compatibility problems before your users run your app on the new platform.
+
+### Disadvantages
+
+- **Larger deployments**\
+Because your app includes the .NET Core runtime and all of your app dependencies, the download size and hard drive space required is greater than a [runtime-dependent](#publish-runtime-dependent) version.
+
+  > [!TIP]
+  > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+
+- **Harder to update the .NET Core version**\
+.NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. You're responsible for supplying an updated version of your application for security patches to the .NET Core Runtime.
+
+### Examples
+
+Publish an app self-contained. A macOS 64-bit executable is created.
+
+```dotnet
+dotnet publish -r osx-x64
+```
+
+Publish an app self-contained. A Windows 64-bit executable is created.
+
+```dotnet
+dotnet publish -r win-x64
+```
 
 ## See also
 
-* [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
-* [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
-* [Packages, Metapackages and Frameworks](../packages.md)
-* [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Deploying .NET Core Apps with .NET Core CLI.](deploy-with-cli.md)
+- [Deploying .NET Core Apps with Visual Studio.](deploy-with-vs.md)
+- [Packages, Metapackages, and Frameworks.](../packages.md)
+- [.NET Core Runtime IDentifier (RID) catalog.](../rid-catalog.md)
+- [Select the .NET Core version to use.](../versions/selection.md)

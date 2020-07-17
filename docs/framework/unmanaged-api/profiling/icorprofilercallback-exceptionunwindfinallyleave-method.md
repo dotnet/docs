@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2350351e-f253-4c0c-a191-f952bc5700e6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionUnwindFinallyLeave Method
 Notifies the profiler that the unwind phase of exception handling has left a `finally` clause.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExceptionUnwindFinallyLeave();  
 ```  
   
@@ -33,7 +31,7 @@ HRESULT ExceptionUnwindFinallyLeave();
  Also, during this call, the profiler must not call into managed code or in any way cause a managed-memory allocation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   
@@ -41,6 +39,7 @@ HRESULT ExceptionUnwindFinallyLeave();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)  
- [ExceptionUnwindFinallyEnter Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyenter-method.md)
+## See also
+
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionUnwindFinallyEnter Method](icorprofilercallback-exceptionunwindfinallyenter-method.md)

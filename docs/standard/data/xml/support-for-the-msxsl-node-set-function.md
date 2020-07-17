@@ -3,14 +3,12 @@ title: "Support for the msxsl:node-set() Function"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: d0cbf517-d9f6-4097-9851-4fa62903decd
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Support for the msxsl:node-set() Function
 The `msxsl:node-set` function enables you to convert a result tree fragment into a node set. The resulting node set always contains a single node and is the root node of the tree.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the [!INCLUDE[dnprdnext](../../../../includes/dnprdnext-md.md)]. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md) for more information.  
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](migrating-from-the-xsltransform-class.md) for more information.  
   
  The `msxsl:node-set` function enables you to convert a result tree fragment into a node set. The resulting node set always contains a single node and is the root node of the tree.  
   
@@ -31,8 +29,8 @@ The `msxsl:node-set` function enables you to convert a result tree fragment into
   
     <xsl:template match="/">  
         <authors>  
-            <xsl:for-each select="msxsl:node-set($books)/book">   
-                <author><xsl:value-of select="@author"/)</author>  
+            <xsl:for-each select="msxsl:node-set($books)/book">
+                <author><xsl:value-of select="@author"/></author>  
             </xsl:for-each>  
         </authors>  
     </xsl:template>  
@@ -49,4 +47,4 @@ The `msxsl:node-set` function enables you to convert a result tree fragment into
   
 ## See also
 
-- [XslTransform Class Implements the XSLT Processor](../../../../docs/standard/data/xml/xsltransform-class-implements-the-xslt-processor.md)
+- [XslTransform Class Implements the XSLT Processor](xsltransform-class-implements-the-xslt-processor.md)

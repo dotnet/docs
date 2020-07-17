@@ -22,20 +22,20 @@ Dim command As SqlCommand = New SqlCommand( _
   "SELECT pub_id, logo FROM pub_info", connection)  
   
 ' Writes the BLOB to a file (*.bmp).  
-Dim stream As FileStream                   
+Dim stream As FileStream
 ' Streams the binary data to the FileStream object.  
-Dim writer As BinaryWriter                 
+Dim writer As BinaryWriter
 ' The size of the BLOB buffer.  
-Dim bufferSize As Integer = 100        
+Dim bufferSize As Integer = 100
 ' The BLOB byte() buffer to be filled by GetBytes.  
-Dim outByte(bufferSize - 1) As Byte    
+Dim outByte(bufferSize - 1) As Byte
 ' The bytes returned from GetBytes.  
-Dim retval As Long                     
+Dim retval As Long
 ' The starting position in the BLOB output.  
-Dim startIndex As Long = 0             
+Dim startIndex As Long = 0
   
 ' The publisher id to use in the file name.  
-Dim pubID As String = ""              
+Dim pubID As String = ""
   
 ' Open the connection and read data into the DataReader.  
 connection.Open()  
@@ -86,21 +86,21 @@ SqlCommand command = new SqlCommand(
   "SELECT pub_id, logo FROM pub_info", connection);  
   
 // Writes the BLOB to a file (*.bmp).  
-FileStream stream;                            
+FileStream stream;
 // Streams the BLOB to the FileStream object.  
-BinaryWriter writer;                          
+BinaryWriter writer;
   
 // Size of the BLOB buffer.  
-int bufferSize = 100;                     
+int bufferSize = 100;
 // The BLOB byte[] buffer to be filled by GetBytes.  
-byte[] outByte = new byte[bufferSize];    
+byte[] outByte = new byte[bufferSize];
 // The bytes returned from GetBytes.  
-long retval;                              
+long retval;
 // The starting position in the BLOB output.  
-long startIndex = 0;                      
+long startIndex = 0;
   
 // The publisher id to use in the file name.  
-string pubID = "";                       
+string pubID = "";
   
 // Open the connection and read data into the DataReader.  
 connection.Open();  
@@ -109,7 +109,7 @@ SqlDataReader reader = command.ExecuteReader(CommandBehavior.SequentialAccess);
 while (reader.Read())  
 {  
   // Get the publisher id, which must occur before getting the logo.  
-  pubID = reader.GetString(0);    
+  pubID = reader.GetString(0);
   
   // Create a file to hold the output.  
   stream = new FileStream(  
@@ -147,7 +147,7 @@ reader.Close();
 connection.Close();  
 ```  
   
-## See Also  
- [Working with DataReaders](https://msdn.microsoft.com/library/126a966a-d08d-4d22-a19f-f432908b2b54)  
- [SQL Server Binary and Large-Value Data](../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [SQL Server Binary and Large-Value Data](./sql/sql-server-binary-and-large-value-data.md)
+- [ADO.NET Overview](ado-net-overview.md)

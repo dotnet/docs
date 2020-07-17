@@ -15,20 +15,18 @@ helpviewer_keywords:
 ms.assetid: da6bbc75-94d1-4354-9722-0d455b4428fb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope::GetStartOffset Method
 Gets the start offset for this scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartOffset(  
     [out, retval] ULONG32* pRetVal);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pRetVal`  
  [out] A pointer to a `ULONG32` that contains the starting offset.  
   
@@ -38,6 +36,7 @@ HRESULT GetStartOffset(
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedScope Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-interface.md)  
- [GetEndOffset Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedscope-getendoffset-method.md)
+## See also
+
+- [ISymUnmanagedScope Interface](isymunmanagedscope-interface.md)
+- [GetEndOffset Method](isymunmanagedscope-getendoffset-method.md)

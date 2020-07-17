@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 3ef841c2-cade-42ee-ba34-2ef91d6d0879
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorSymAddrKind Enumeration
 Indicates the type of memory address.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorSymAddrKind  
 {  
     ADDR_IL_OFFSET          = 1,  
@@ -56,5 +54,6 @@ typedef enum CorSymAddrKind
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [Diagnostics Symbol Store Enumerations](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-enumerations.md)
+## See also
+
+- [Diagnostics Symbol Store Enumerations](diagnostics-symbol-store-enumerations.md)

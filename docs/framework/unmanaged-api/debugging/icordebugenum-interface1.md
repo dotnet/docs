@@ -1,5 +1,5 @@
 ---
-title: "ICorDebugEnum Interface1"
+title: "ICorDebugEnum Interface"
 ms.date: "03/30/2017"
 api_name: 
   - "ICorDebugEnum"
@@ -14,71 +14,70 @@ helpviewer_keywords:
 ms.assetid: 80be7efe-2c32-4b9f-8c52-40c6f6268219
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# ICorDebugEnum Interface1
+# ICorDebugEnum Interface
+
 Serves as the abstract base interface for the enumerators that are used by a debugging application.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[Clone Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-clone-method.md)|Creates a copy of this `ICorDebugEnum` object.|  
-|[GetCount Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-getcount-method.md)|Gets the number of items in the enumeration.|  
-|[Reset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-reset-method.md)|Moves the cursor to the beginning of the enumeration.|  
-|[Skip Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
+|[Clone Method](icordebugenum-clone-method.md)|Creates a copy of this `ICorDebugEnum` object.|  
+|[GetCount Method](icordebugenum-getcount-method.md)|Gets the number of items in the enumeration.|  
+|[Reset Method](icordebugenum-reset-method.md)|Moves the cursor to the beginning of the enumeration.|  
+|[Skip Method](icordebugenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
   
 ## Remarks  
  The following enumerators derive from `ICorDebugEnum`:  
   
--   "ICorDebugAppDomainEnum"  
+- "ICorDebugAppDomainEnum"  
   
--   "ICorDebugAssemblyEnum"  
+- "ICorDebugAssemblyEnum"  
   
--   [ICorDebugBlockingObjectEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugblockingobjectenum-interface.md)  
+- [ICorDebugBlockingObjectEnum](icordebugblockingobjectenum-interface.md)  
   
--   "ICorDebugBreakpointEnum"  
+- "ICorDebugBreakpointEnum"  
   
--   "ICorDebugChainEnum"  
+- "ICorDebugChainEnum"  
   
--   "ICorDebugCodeEnum"  
+- "ICorDebugCodeEnum"  
   
--   "ICorDebugErrorInfoEnum"  
+- "ICorDebugErrorInfoEnum"  
   
--   [ICorDebugExceptionObjectCallStackEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectcallstackenum-interface.md)  
+- [ICorDebugExceptionObjectCallStackEnum](icordebugexceptionobjectcallstackenum-interface.md)  
   
--   "ICorDebugFrameEnum"  
+- "ICorDebugFrameEnum"  
   
--   [ICorDebugGCReferenceEnum](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)  
+- [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md)  
   
--   [ICorDebugGuidToTypeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md)  
+- [ICorDebugGuidToTypeEnum](icordebugguidtotypeenum-interface.md)  
   
--   [ICorDebugHeapEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)  
+- [ICorDebugHeapEnum](icordebugheapenum-interface.md)  
   
--   [ICorDebugHeapSegmentEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)  
+- [ICorDebugHeapSegmentEnum](icordebugheapsegmentenum-interface.md)  
   
--   "ICorDebugModuleEnum"  
+- "ICorDebugModuleEnum"  
   
--   "ICorDebugObjectEnum"  
+- "ICorDebugObjectEnum"  
   
--   "ICorDebugProcessEnum"  
+- "ICorDebugProcessEnum"  
   
--   "ICorDebugStepperEnum"  
+- "ICorDebugStepperEnum"  
   
--   "ICorDebugThreadEnum"  
+- "ICorDebugThreadEnum"  
   
--   "ICorDebugTypeEnum"  
+- "ICorDebugTypeEnum"  
   
--   "ICorDebugValueEnum"  
+- "ICorDebugValueEnum"  
   
--   [ICorDebugVariableHomeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)  
+- [ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -86,5 +85,6 @@ Serves as the abstract base interface for the enumerators that are used by a deb
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 6831e1db-5e97-444f-a7a1-d0a87104b005
 ---
@@ -15,7 +15,7 @@ Sometimes you want to find elements based on their position. You might want to f
 ## Example  
  This example finds the second through the fourth `Test` element. The result is a collection of elements.  
   
- This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md).  
+ This example uses the following XML document: [Sample XML File: Test Configuration (LINQ to XML)](sample-xml-file-test-configuration-linq-to-xml.md).  
   
 ```vb  
 Dim testCfg As XElement = XElement.Load("TestConfig.xml")  
@@ -50,7 +50,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 <Test TestId="0002" TestType="CMD">  
   <Name>Find succeeding characters</Name>  
@@ -72,5 +72,6 @@ Results are identical
 </Test>  
 ```  
   
-## See Also  
- [LINQ to XML for XPath Users (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+## See also
+
+- [LINQ to XML for XPath Users (Visual Basic)](linq-to-xml-for-xpath-users.md)

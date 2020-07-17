@@ -13,7 +13,7 @@ Starting with the .NET Framework version 2.0, the .NET Framework Data Provider f
  Currently there are 18 different items available from the Microsoft SQL Server provider. The number of items available can be accessed via the **Count** property of the <xref:System.Collections.IDictionary> interface reference returned by <xref:System.Data.SqlClient.SqlConnection.RetrieveStatistics%2A>. All of the counters for provider statistics use the common language runtime <xref:System.Int64> type (**long** in C# and Visual Basic), which is 64 bits wide. The maximum value of the **int64** data type, as defined by the **int64.MaxValue** field, is ((2^63)-1)). When the values for the counters reach this maximum value, they should no longer be considered accurate. This means that **int64.MaxValue**-1((2^63)-2) is effectively the greatest valid value for any statistic.  
   
 > [!NOTE]
->  A dictionary is used for returning provider statistics because the number, names and order of the returned statistics may change in the future. Applications should not rely on a specific value being found in the dictionary, but should instead check whether the value is there and branch accordingly.  
+> A dictionary is used for returning provider statistics because the number, names and order of the returned statistics may change in the future. Applications should not rely on a specific value being found in the dictionary, but should instead check whether the value is there and branch accordingly.  
   
  The following table describes the current statistical values available. Note that the key names for the individual values are not localized across regional versions of the Microsoft .NET Framework.  
   
@@ -42,7 +42,7 @@ Starting with the .NET Framework version 2.0, the .NET Framework Data Provider f
  The following console application shows how to enable statistics on a connection, retrieve four individual statistic values, and write them out to the console window.  
   
 > [!NOTE]
->  The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
+> The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
   
 ```vb  
 Option Strict On  
@@ -59,7 +59,7 @@ Module Module1
   
     Using awConnection As New SqlConnection(connectionString)  
       ' StatisticsEnabled is False by default.  
-      ' It must be set to True to start the   
+      ' It must be set to True to start the
       ' statistic collection process.  
       awConnection.StatisticsEnabled = True  
   
@@ -108,7 +108,7 @@ Module Module1
   
   Function GetConnectionString() As String  
     ' To avoid storing the connection string in your code,  
-    ' you can retrive it from a configuration file.  
+    ' you can retrieve it from a configuration file.  
     Return "Data Source=localhost;Integrated Security=SSPI;" & _  
       "Initial Catalog=AdventureWorks"  
   End Function  
@@ -130,16 +130,16 @@ namespace CS_Stats_Console_GetValue
     {  
       string connectionString = GetConnectionString();  
   
-      using (SqlConnection awConnection =   
+      using (SqlConnection awConnection =
         new SqlConnection(connectionString))  
       {  
         // StatisticsEnabled is False by default.  
-        // It must be set to True to start the   
+        // It must be set to True to start the
         // statistic collection process.  
         awConnection.StatisticsEnabled = true;  
   
         string productSQL = "SELECT * FROM Production.Product";  
-        SqlDataAdapter productAdapter =   
+        SqlDataAdapter productAdapter =
           new SqlDataAdapter(productSQL, awConnection);  
   
         DataSet awDataSet = new DataSet();  
@@ -186,8 +186,8 @@ namespace CS_Stats_Console_GetValue
     private static string GetConnectionString()  
     {  
       // To avoid storing the connection string in your code,  
-      // you can retrive it from a configuration file.  
-      return "Data Source=localhost;Integrated Security=SSPI;" +   
+      // you can retrieve it from a configuration file.  
+      return "Data Source=localhost;Integrated Security=SSPI;" +
         "Initial Catalog=AdventureWorks";  
     }  
   }  
@@ -198,7 +198,7 @@ namespace CS_Stats_Console_GetValue
  The following console application shows how to enable statistics on a connection, retrieve all available statistic values using the enumerator, and write them to the console window.  
   
 > [!NOTE]
->  The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
+> The following example uses the sample **AdventureWorks** database included with SQL Server. The connection string provided in the sample code assumes the database is installed and available on the local computer. Modify the connection string as necessary for your environment.  
   
 ```vb  
 Option Strict On  
@@ -214,7 +214,7 @@ Module Module1
   
     Using awConnection As New SqlConnection(connectionString)  
       ' StatisticsEnabled is False by default.  
-      ' It must be set to True to start the   
+      ' It must be set to True to start the
       ' statistic collection process.  
       awConnection.StatisticsEnabled = True  
   
@@ -255,7 +255,7 @@ Module Module1
   
   Function GetConnectionString() As String  
     ' To avoid storing the connection string in your code,  
-    ' you can retrive it from a configuration file.  
+    ' you can retrieve it from a configuration file.  
     Return "Data Source=localhost;Integrated Security=SSPI;" & _  
       "Initial Catalog=AdventureWorks"  
   End Function  
@@ -278,11 +278,11 @@ namespace CS_Stats_Console_GetAll
     {  
       string connectionString = GetConnectionString();  
   
-      using (SqlConnection awConnection =   
+      using (SqlConnection awConnection =
         new SqlConnection(connectionString))  
       {  
         // StatisticsEnabled is False by default.  
-        // It must be set to True to start the   
+        // It must be set to True to start the
         // statistic collection process.  
         awConnection.StatisticsEnabled = true;  
   
@@ -324,14 +324,15 @@ namespace CS_Stats_Console_GetAll
     private static string GetConnectionString()  
     {  
       // To avoid storing the connection string in your code,  
-      // you can retrive it from a configuration file.  
-      return "Data Source=localhost;Integrated Security=SSPI;" +   
+      // you can retrieve it from a configuration file.  
+      return "Data Source=localhost;Integrated Security=SSPI;" +
         "Initial Catalog=AdventureWorks";  
     }  
   }  
 }  
 ```  
   
-## See Also  
- [SQL Server and ADO.NET](../../../../../docs/framework/data/adonet/sql/index.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [SQL Server and ADO.NET](index.md)
+- [ADO.NET Overview](../ado-net-overview.md)

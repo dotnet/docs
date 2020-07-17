@@ -17,7 +17,7 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
       <Genre>Computer</Genre>  
       <Price>44.95</Price>  
       <PublishDate>2000-10-01</PublishDate>  
-      <Description>An in-depth look at creating applications   
+      <Description>An in-depth look at creating applications
       with XML.</Description>  
    </Book>  
    <Book id="bk102">  
@@ -26,13 +26,9 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
       <Genre>Fantasy</Genre>  
       <Price>5.95</Price>  
       <PublishDate>2000-12-16</PublishDate>  
-      <Description>A former architect battles corporate zombies,   
-      an evil sorceress, and her own childhood to become queen   
+      <Description>A former architect battles corporate zombies,
+      an evil sorceress, and her own childhood to become queen
       of the world.</Description>  
    </Book>  
 </Catalog>  
 ```  
-  
-## See Also
-
-- [Sample XML Documents (LINQ to XML)](../../../../csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

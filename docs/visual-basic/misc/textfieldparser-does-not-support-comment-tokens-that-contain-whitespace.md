@@ -10,10 +10,10 @@ A comment token that contains white space has been supplied. The `TextFieldParse
   
 ## To correct this error  
   
--   Supply a correct comment token.  
+- Supply a correct comment token.  
   
 ## See also
 
-- [TextFieldParser.CommentTokens Property](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens%2A)  
-- [Parsing Text Files with the TextFieldParser Object](../../visual-basic/developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)  
-- [TextFieldParser Object](../../visual-basic/language-reference/objects/textfieldparser-object.md)
+- [TextFieldParser.CommentTokens Property](xref:Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens%2A)
+- [Parsing Text Files with the TextFieldParser Object](../developing-apps/programming/drives-directories-files/parsing-text-files-with-the-textfieldparser-object.md)
+- [TextFieldParser Object](../language-reference/objects/textfieldparser-object.md)

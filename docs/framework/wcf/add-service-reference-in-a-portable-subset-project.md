@@ -4,26 +4,27 @@ ms.date: "03/30/2017"
 ms.assetid: 61ccfe0f-a34b-40ca-8f5e-725fa1b8095e
 ---
 # Add Service Reference in a Portable Subset Project
-Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET implementations (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any .NET implementation.  
+
+Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET implementations (desktop, Silverlight, Windows Phone, and Xbox). Portable subset projects only reference portable libraries that are .NET assemblies that can be used on any .NET implementation.
   
 ## Add Service Reference Details  
  When adding a service reference in a portable subset project the following restrictions are enforced:  
   
-1.  For <xref:System.Xml.Serialization.XmlSerializer>, only literal encodings are allowed. SOAP encodings generate an error during import.  
+1. For <xref:System.Xml.Serialization.XmlSerializer>, only literal encodings are allowed. SOAP encodings generate an error during import.  
   
-2.  For services that use <xref:System.Runtime.Serialization.DataContractSerializer> scenarios, a data contract surrogate is provided to ensure that reused types come only from the portable subset.  
+2. For services that use <xref:System.Runtime.Serialization.DataContractSerializer> scenarios, a data contract surrogate is provided to ensure that reused types come only from the portable subset.  
   
-3.  Endpoints which rely on bindings not supported in portable libraries (all bindings except <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WSHttpBinding> without transaction flow, reliable sessions, or MTOM encoding, and equivalent custom bindings) are ignored.  
+3. Endpoints which rely on bindings not supported in portable libraries (all bindings except <xref:System.ServiceModel.BasicHttpBinding>, <xref:System.ServiceModel.WSHttpBinding> without transaction flow, reliable sessions, or MTOM encoding, and equivalent custom bindings) are ignored.  
   
-4.  Message headers are deleted from all message descriptions in all operations before import.  
+4. Message headers are deleted from all message descriptions in all operations before import.  
   
-5.  Non-portable attributes <xref:System.ComponentModel.DesignerCategoryAttribute>, <xref:System.SerializableAttribute>, and <xref:System.ServiceModel.TransactionFlowAttribute> are removed from generated client proxy code.  
+5. Non-portable attributes <xref:System.ComponentModel.DesignerCategoryAttribute>, <xref:System.SerializableAttribute>, and <xref:System.ServiceModel.TransactionFlowAttribute> are removed from generated client proxy code.  
   
-6.  Non-portable properties ProtectionLevel, SessionMode, IsInitiating, IsTerminating are removed from <xref:System.ServiceModel.ServiceContractAttribute>, <xref:System.ServiceModel.OperationContractAttribute>, and <xref:System.ServiceModel.FaultContractAttribute>.  
+6. Non-portable properties ProtectionLevel, SessionMode, IsInitiating, IsTerminating are removed from <xref:System.ServiceModel.ServiceContractAttribute>, <xref:System.ServiceModel.OperationContractAttribute>, and <xref:System.ServiceModel.FaultContractAttribute>.  
   
-7.  All service operations are generated as asynchronous operations on the client proxy.  
+7. All service operations are generated as asynchronous operations on the client proxy.  
   
-8.  Generated client constructors which use non-portable types are removed.  
+8. Generated client constructors which use non-portable types are removed.  
   
 9. A <xref:System.Net.CookieContainer> instance is exposed on the generated client.  
   
@@ -37,6 +38,7 @@ Portable subset projects enable .NET assembly programmers to maintain a single s
   
 14. <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> is not supported in portable subset projects.  
   
-## See Also  
- [Accessing Services Using a WCF Client](../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)  
- [Portable Class Library](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)
+## See also
+
+- [Accessing Services Using a WCF Client](accessing-services-using-a-wcf-client.md)
+- [Portable Class Library](../../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md)

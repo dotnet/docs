@@ -1,5 +1,6 @@
 ---
 title: "Data Member Order"
+description: Learn about data member order in WCF. Applications might need to know or change the order in which data members are sent or expected.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -14,11 +15,11 @@ In some applications, it is useful to know the order in which data from the vari
 ## Basic Rules  
  The basic rules for data ordering include:  
   
--   If a data contract type is a part of an inheritance hierarchy, data members of its base types are always first in the order.  
+- If a data contract type is a part of an inheritance hierarchy, data members of its base types are always first in the order.  
   
--   Next in order are the current type’s data members that do not have the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute set, in alphabetical order.  
+- Next in order are the current type’s data members that do not have the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute set, in alphabetical order.  
   
--   Next are any data members that have the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute set. These are ordered by the value of the `Order` property first and then alphabetically if there is more than one member of a certain `Order` value. Order values may be skipped.  
+- Next are any data members that have the <xref:System.Runtime.Serialization.DataMemberAttribute.Order%2A> property of the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute set. These are ordered by the value of the `Order` property first and then alphabetically if there is more than one member of a certain `Order` value. Order values may be skipped.  
   
  Alphabetical order is established by calling the <xref:System.String.CompareOrdinal%2A> method.  
   
@@ -33,13 +34,13 @@ In some applications, it is useful to know the order in which data from the vari
 ```xml  
 <DerivedType>  
     <!-- Zebra is a base data member, and appears first. -->  
-    <zebra/>   
+    <zebra/>
   
     <!-- Cat has no Order, appears alphabetically first. -->  
     <cat/>  
   
    <!-- Dog has no Order, appears alphabetically last. -->  
-    <dog/>   
+    <dog/>
   
     <!-- Bird is the member with the smallest Order value -->  
     <bird/>  
@@ -52,11 +53,12 @@ In some applications, it is useful to know the order in which data from the vari
   
     <!-- Antelope is the member with the highest Order value. Note that   
     Order=2 is skipped -->  
-     <antelope/>   
+     <antelope/>
 </DerivedType>  
 ```  
   
-## See Also  
- <xref:System.Runtime.Serialization.DataContractAttribute>  
- [Data Contract Equivalence](../../../../docs/framework/wcf/feature-details/data-contract-equivalence.md)  
- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
+## See also
+
+- <xref:System.Runtime.Serialization.DataContractAttribute>
+- [Data Contract Equivalence](data-contract-equivalence.md)
+- [Using Data Contracts](using-data-contracts.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Spacing and Alignment of ToolStrip Items in Windows Forms"
+title: "How to: Change the Spacing and Alignment of ToolStrip Items"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -17,7 +17,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
   
 ### To manually size a ToolStripItem  
   
-1.  Set the <xref:System.Windows.Forms.ToolStripItem.AutoSize%2A> property to `false` for the associated control.  
+1. Set the <xref:System.Windows.Forms.ToolStripItem.AutoSize%2A> property to `false` for the associated control.  
   
     ```vb  
     ToolStripButton1.AutoSize = False  
@@ -27,11 +27,11 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     toolStripButton1.AutoSize = false;  
     ```  
   
-2.  Set the <xref:System.Windows.Forms.ToolStripItem.Size%2A> property the way you want for the associated <xref:System.Windows.Forms.ToolStripItem>.  
+2. Set the <xref:System.Windows.Forms.ToolStripItem.Size%2A> property the way you want for the associated <xref:System.Windows.Forms.ToolStripItem>.  
   
 ### To set the spacing of a ToolStripItem  
   
-1.  Insert the desired values, in pixels, into the <xref:System.Windows.Forms.ToolStripItem.Margin%2A> property of the associated control.  
+1. Insert the desired values, in pixels, into the <xref:System.Windows.Forms.ToolStripItem.Margin%2A> property of the associated control.  
   
      The values of the <xref:System.Windows.Forms.ToolStripItem.Margin%2A> property specify the spacing between the item and adjacent items in this order: Left, Top, Right, and Bottom.  
   
@@ -41,13 +41,13 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```  
   
     ```csharp  
-    toolStripTextBox1.Margin = new System.Windows.Forms.Padding   
+    toolStripTextBox1.Margin = new System.Windows.Forms.Padding
         (3, 0, 3, 0);  
     ```  
   
 ### To align a ToolStripItem to the right side of the ToolStrip  
   
-1.  Set the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property to <xref:System.Windows.Forms.ToolStripItemAlignment.Right> for the associated control. By default, <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> is set to <xref:System.Windows.Forms.ToolStripItemAlignment.Left>, which aligns controls to the left side of the <xref:System.Windows.Forms.ToolStrip>.  
+1. Set the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property to <xref:System.Windows.Forms.ToolStripItemAlignment.Right> for the associated control. By default, <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> is set to <xref:System.Windows.Forms.ToolStripItemAlignment.Left>, which aligns controls to the left side of the <xref:System.Windows.Forms.ToolStrip>.  
   
     ```vb  
     ToolStripSplitButton1.Alignment = _  
@@ -55,13 +55,13 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```  
   
     ```csharp  
-    toolStripSplitButton1.Alignment =   
+    toolStripSplitButton1.Alignment =
         System.Windows.Forms.ToolStripItemAlignment.Right;  
     ```  
   
 ### To arrange ToolStrip items on the ToolStrip  
   
--   Set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to the value of <xref:System.Windows.Forms.ToolStripLayoutStyle> that you want.  
+- Set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to the value of <xref:System.Windows.Forms.ToolStripLayoutStyle> that you want.  
   
     ```vb  
     ToolStripDropDown1.LayoutStyle = _  
@@ -69,18 +69,19 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```  
   
     ```csharp  
-    toolStripDropDown1.LayoutStyle =   
+    toolStripDropDown1.LayoutStyle =
         System.Windows.Forms.ToolStripLayoutStyle.Flow;  
     ```  
   
-## See Also  
- <xref:System.Windows.Forms.ToolStrip>  
- <xref:System.Windows.Forms.Control.Layout>  
- <xref:System.Windows.Forms.ToolStrip.LayoutCompleted>  
- <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A>  
- <xref:System.Windows.Forms.ToolStripItem.TextImageRelation%2A>  
- <xref:System.Windows.Forms.ToolStripItem.Placement%2A>  
- <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A>  
- [ToolStrip Control Overview](../../../../docs/framework/winforms/controls/toolstrip-control-overview-windows-forms.md)  
- [ToolStrip Control Architecture](../../../../docs/framework/winforms/controls/toolstrip-control-architecture.md)  
- [ToolStrip Technology Summary](../../../../docs/framework/winforms/controls/toolstrip-technology-summary.md)
+## See also
+
+- <xref:System.Windows.Forms.ToolStrip>
+- <xref:System.Windows.Forms.Control.Layout>
+- <xref:System.Windows.Forms.ToolStrip.LayoutCompleted>
+- <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A>
+- <xref:System.Windows.Forms.ToolStripItem.TextImageRelation%2A>
+- <xref:System.Windows.Forms.ToolStripItem.Placement%2A>
+- <xref:System.Windows.Forms.ToolStrip.CanOverflow%2A>
+- [ToolStrip Control Overview](toolstrip-control-overview-windows-forms.md)
+- [ToolStrip Control Architecture](toolstrip-control-architecture.md)
+- [ToolStrip Technology Summary](toolstrip-technology-summary.md)

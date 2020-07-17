@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PreBindAssemblyEx Function
 Gets the post-policy display name for an assembly.  
@@ -24,7 +22,7 @@ Gets the post-policy display name for an assembly.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT PreBindAssemblyEx (  
     [in]  IApplicationContext *pAppCtx,  
     [in]  IAssemblyName       *pName,  
@@ -35,7 +33,7 @@ HRESULT PreBindAssemblyEx (
  );  
 ```  
   
-#### Parameters  
+## Parameters  
  `pAppCtx`  
  [in] Identifies the application context.  
   
@@ -58,7 +56,7 @@ HRESULT PreBindAssemblyEx (
  The `ppNamePostPolicy` output parameter is set only if the function returns HRESULT FUSION_E_REF_DEF_MISMATCH. Otherwise, it is null.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -66,5 +64,6 @@ HRESULT PreBindAssemblyEx (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
+## See also
+
+- [Fusion Global Static Functions](fusion-global-static-functions.md)

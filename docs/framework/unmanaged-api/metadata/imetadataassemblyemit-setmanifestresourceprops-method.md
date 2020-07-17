@@ -15,24 +15,22 @@ helpviewer_keywords:
 ms.assetid: ef77efd1-849c-4e51-ba92-7ee3d2bf0339
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::SetManifestResourceProps Method
 Modifies the specified `ManifestResource` metadata structure.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetManifestResourceProps (  
     [in] mdManifestResource  mr,  
-    [in] mdToken             tkImplementation,   
+    [in] mdToken             tkImplementation,
     [in] DWORD               dwOffset,  
     [in] DWORD               dwResourceFlags  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `mr`  
  [in] The token that specifies the `ManifestResource` metadata structure to be modified.  
   
@@ -46,10 +44,10 @@ HRESULT SetManifestResourceProps (
  [in] A bitwise combination of flag values that specify the attributes of the resource.  
   
 ## Remarks  
- To create a `ManifestResource` metadata structure, use the [IMetaDataAssemblyEmit::DefineManifestResource](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-definemanifestresource-method.md) method.  
+ To create a `ManifestResource` metadata structure, use the [IMetaDataAssemblyEmit::DefineManifestResource](imetadataassemblyemit-definemanifestresource-method.md) method.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -57,5 +55,6 @@ HRESULT SetManifestResourceProps (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataAssemblyEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataassemblyemit-interface.md)
+## See also
+
+- [IMetaDataAssemblyEmit Interface](imetadataassemblyemit-interface.md)

@@ -14,19 +14,17 @@ helpviewer_keywords:
 ms.assetid: 9432487e-f276-45d6-9a13-9a68024dbd46
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BucketParameters Structure
 Stores the type name of an event and the parameters for the current exception that is associated with the event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _BucketParameters {  
-    BOOL  fInited;                    
-    WCHAR pszEventTypeName[255];      
-    WCHAR pszParams[10][255];         
+    BOOL  fInited;
+    WCHAR pszEventTypeName[255];
+    WCHAR pszParams[10][255];
 } BucketParameters;  
 ```  
   
@@ -39,11 +37,12 @@ typedef struct _BucketParameters {
 |`pszParams`|An array of strings, each of which specifies a parameter for the current exception associated with the event.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+## See also
+
+- [Hosting Structures](hosting-structures.md)

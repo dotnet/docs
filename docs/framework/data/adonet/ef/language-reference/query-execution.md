@@ -1,5 +1,6 @@
 ---
 title: "Query Execution"
+description: Learn about different ways that a LINQ to Entities query runs, including deferred query execution, immediate query execution, and store execution.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -12,7 +13,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
  At what point query expressions are executed can vary. LINQ queries are always executed when the query variable is iterated over, not when the query variable is created. This is called *deferred execution*. You can also force a query to execute immediately, which is useful for caching query results. This is described later in this topic.  
   
  When a LINQ to Entities query is executed, some expressions in the query might be executed on the server and some parts might be executed locally on the client. Client-side evaluation of an expression takes place before the query is executed on the server. If an expression is evaluated on the client, the result of that evaluation is substituted for the expression in the query, and the query is then executed on the server. Because queries are executed on the data source, the data source configuration overrides the behavior specified in the client. For example, null value handling and numerical precision depend on the server settings. Any exceptions thrown during query execution on the server are passed directly up to the client.  
- 
+
 > [!TIP]
 > For a convenient summary of query operators in table format, which lets you quickly identify an operator's execution behavior, see [Classification of Standard Query Operators by Manner of Execution (C#)](../../../../../csharp/programming-guide/concepts/linq/classification-of-standard-query-operators-by-manner-of-execution.md).
 
@@ -41,7 +42,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
   
  Certain operations are always executed on the client, such as binding of values, sub expressions, sub queries from closures, and materialization of objects into query results. The net effect of this is that these elements (for example, parameter values) cannot be updated during the execution. Anonymous types can be constructed inline on the data source, but should not be assumed to do so. Inline groupings can be constructed in the data source, as well, but this should not be assumed in every instance. In general, it is best not to make any assumptions about what is constructed on the server.  
   
- This section describes the scenarios in which code is executed locally on the client. For more information about which types of expressions are executed locally, see [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md).  
+ This section describes the scenarios in which code is executed locally on the client. For more information about which types of expressions are executed locally, see [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md).  
   
 ### Literals and Parameters  
  Local variables, such as the `orderID` variable in the following example, are evaluated on the client.  
@@ -81,13 +82,13 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
   
  For example, the following are some differences in behavior between the CLR and SQL Server:  
   
--   SQL Server orders GUIDs differently than the CLR.  
+- SQL Server orders GUIDs differently than the CLR.  
   
--   There can also be differences in result precision when dealing with the Decimal type on SQL Server. This is due to the fixed precision requirements of the SQL Server decimal type. For example, the average of <xref:System.Decimal> values 0.0, 0.0, and 1.0 is 0.3333333333333333333333333333 in memory on the client, but 0.333333 in the store (based on the default precision for SQL Server’s decimal type).  
+- There can also be differences in result precision when dealing with the Decimal type on SQL Server. This is due to the fixed precision requirements of the SQL Server decimal type. For example, the average of <xref:System.Decimal> values 0.0, 0.0, and 1.0 is 0.3333333333333333333333333333 in memory on the client, but 0.333333 in the store (based on the default precision for SQL Server’s decimal type).  
   
--   Some string comparison operations are also handled differently in SQL Server than in the CLR. String comparison behavior depends on the collation settings on the server.  
+- Some string comparison operations are also handled differently in SQL Server than in the CLR. String comparison behavior depends on the collation settings on the server.  
   
--   Function or method calls, when included in a LINQ to Entities query, are mapped to canonical functions in the Entity Framework, which are then translated to Transact-SQL and executed on the SQL Server database. There are cases when the behavior these mapped functions exhibit might differ from the implementation in the base class libraries. For example, calling the <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, and <xref:System.String.EndsWith%2A> methods with an empty string as a parameter will return `true` when executed in the CLR, but will return `false` when executed in SQL Server. The <xref:System.String.EndsWith%2A> method can also return different results because SQL Server considers two strings to be equal if they only differ in trailing white space, whereas the CLR considers them to be not equal. This is illustrated by the following example:  
+- Function or method calls, when included in a LINQ to Entities query, are mapped to canonical functions in the Entity Framework, which are then translated to Transact-SQL and executed on the SQL Server database. There are cases when the behavior these mapped functions exhibit might differ from the implementation in the base class libraries. For example, calling the <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, and <xref:System.String.EndsWith%2A> methods with an empty string as a parameter will return `true` when executed in the CLR, but will return `false` when executed in SQL Server. The <xref:System.String.EndsWith%2A> method can also return different results because SQL Server considers two strings to be equal if they only differ in trailing white space, whereas the CLR considers them to be not equal. This is illustrated by the following example:  
   
  [!code-csharp[DP L2E Conceptual Examples#CanonicalFuncVsCLRBaseType](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS/Program.cs#canonicalfuncvsclrbasetype)]
  [!code-vb[DP L2E Conceptual Examples#CanonicalFuncVsCLRBaseType](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DP L2E Conceptual Examples/VB/Module1.vb#canonicalfuncvsclrbasetype)]

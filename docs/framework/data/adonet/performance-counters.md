@@ -1,5 +1,6 @@
 ---
-title: "Performance Counters in ADO.NET"
+title: "Performance Counters"
+description: Use ADO.NET performance counters to monitor your application status and its connection resources by using Windows Performance Monitor or programmatically.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -32,7 +33,7 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
 ### Connection Pool Groups and Connection Pools  
  When using Windows Authentication (integrated security), you must monitor both the `NumberOfActiveConnectionPoolGroups` and `NumberOfActiveConnectionPools` performance counters. The reason is that connection pool groups map to unique connection strings. When integrated security is used, connection pools map to connection strings and additionally create separate pools for individual Windows identities. For example, if Fred and Julie, each within the same AppDomain, both use the connection string `"Data Source=MySqlServer;Integrated Security=true"`, a connection pool group is created for the connection string, and two additional pools are created, one for Fred and one for Julie. If John and Martha use a connection string with an identical SQL Server login, `"Data Source=MySqlServer;User Id=lowPrivUser;Password=Strong?Password"`, then only a single pool is created for the **lowPrivUser** identity.  
   
-<a name="ActivatingOffByDefault"></a>   
+<a name="ActivatingOffByDefault"></a>
 ### Activating Off-By-Default Counters  
  The performance counters `NumberOfFreeConnections`, `NumberOfActiveConnections`, `SoftDisconnectsPerSecond`, and `SoftConnectsPerSecond` are off by default. Add the following information to the application's configuration file to enable them:  
   
@@ -49,7 +50,7 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
  The following console application shows how to retrieve performance counter values in your application. Connections must be open and active for information to be returned for all of the ADO.NET performance counters.  
   
 > [!NOTE]
->  This example uses the sample **AdventureWorks** database included with SQL Server. The connection strings provided in the sample code assume that the database is installed and available on the local computer with an instance name of SqlExpress, and that you have created SQL Server logins that match those supplied in the connection strings. You may need to enable SQL Server logins if your server is configured using the default security settings which allow only Windows Authentication. Modify the connection strings as necessary to suit your environment.  
+> This example uses the sample **AdventureWorks** database included with SQL Server. The connection strings provided in the sample code assume that the database is installed and available on the local computer with an instance name of SqlExpress, and that you have created SQL Server logins that match those supplied in the connection strings. You may need to enable SQL Server logins if your server is configured using the default security settings which allow only Windows Authentication. Modify the connection strings as necessary to suit your environment.  
   
 ### Example  
   
@@ -68,7 +69,7 @@ Class Program
   
     Public Shared Sub Main()  
         Dim prog As Program = New Program  
-        ' Open a connection and create the performance counters.   
+        ' Open a connection and create the performance counters.
         prog.connection.ConnectionString = _  
            GetIntegratedSecurityConnectionString()  
         prog.SetUpPerformanceCounters()  
@@ -165,17 +166,17 @@ Class Program
     Private Declare Function GetCurrentProcessId Lib "kernel32.dll" () As Integer  
   
     Private Function GetInstanceName() As String  
-        'This works for Winforms apps.   
+        'This works for Winforms apps.
         Dim instanceName As String = _  
            System.Reflection.Assembly.GetEntryAssembly.GetName.Name  
   
-        ' Must replace special characters like (, ), #, /, \\   
+        ' Must replace special characters like (, ), #, /, \\
         Dim instanceName2 As String = _  
            AppDomain.CurrentDomain.FriendlyName.ToString.Replace("(", "[") _  
            .Replace(")", "]").Replace("#", "_").Replace("/", "_").Replace("\\", "_")  
   
-        'For ASP.NET applications your instanceName will be your CurrentDomain's   
-        'FriendlyName. Replace the line above that sets the instanceName with this:   
+        'For ASP.NET applications your instanceName will be your CurrentDomain's
+        'FriendlyName. Replace the line above that sets the instanceName with this:
         'instanceName = AppDomain.CurrentDomain.FriendlyName.ToString.Replace("(", "[") _  
         '    .Replace(")", "]").Replace("#", "_").Replace("/", "_").Replace("\\", "_")  
   
@@ -195,28 +196,28 @@ Class Program
     End Sub  
   
     Private Shared Function GetIntegratedSecurityConnectionString() As String  
-        ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
-        Return ("Data Source=.\SqlExpress;Integrated Security=True;" &   
+        ' To avoid storing the connection string in your code,
+        ' you can retrieve it from a configuration file.
+        Return ("Data Source=.\SqlExpress;Integrated Security=True;" &
           "Initial Catalog=AdventureWorks")  
     End Function  
   
     Private Shared Function GetSqlConnectionString() As String  
-        ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
-        Return ("Data Source=.\SqlExpress;User Id=LowPriv;Password=Data!05;" &   
+        ' To avoid storing the connection string in your code,
+        ' you can retrieve it from a configuration file.
+        Return ("Data Source=.\SqlExpress;User Id=LowPriv;Password=Data!05;" &
           "Initial Catalog=AdventureWorks")  
     End Function  
   
     Private Shared Function GetSqlConnectionStringDifferent() As String  
-        ' To avoid storing the connection string in your code,   
-        ' you can retrive it from a configuration file.   
+        ' To avoid storing the connection string in your code,
+        ' you can retrieve it from a configuration file.
         Return ("Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" & _  
           "User Id=LowPriv;Password=Data!05;")  
     End Function  
 End Class  
 ```  
-  
+
 ```csharp  
 using System;  
 using System.Data.SqlClient;  
@@ -341,7 +342,7 @@ class Program
             AppDomain.CurrentDomain.FriendlyName.ToString().Replace('(', '[')  
             .Replace(')', ']').Replace('#', '_').Replace('/', '_').Replace('\\', '_');  
   
-        // For ASP.NET applications your instanceName will be your CurrentDomain's   
+        // For ASP.NET applications your instanceName will be your CurrentDomain's
         // FriendlyName. Replace the line above that sets the instanceName with this:  
         // instanceName = AppDomain.CurrentDomain.FriendlyName.ToString().Replace('(','[')  
         // .Replace(')',']').Replace('#','_').Replace('/','_').Replace('\\','_');  
@@ -366,32 +367,33 @@ class Program
     private static string GetIntegratedSecurityConnectionString()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Data Source=.\SqlExpress;Integrated Security=True;" +  
           "Initial Catalog=AdventureWorks";  
     }  
     private static string GetSqlConnectionString()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Data Source=.\SqlExpress;User Id=LowPriv;Password=Data!05;" +  
-        //  "Initial Catalog=AdventureWorks";  
+          "Initial Catalog=AdventureWorks";  
     }  
   
     private static string GetSqlConnectionStringDifferent()  
     {  
         // To avoid storing the connection string in your code,  
-        // you can retrive it from a configuration file.  
+        // you can retrieve it from a configuration file.  
         return @"Initial Catalog=AdventureWorks;Data Source=.\SqlExpress;" +  
           "User Id=LowPriv;Password=Data!05;";  
     }  
 }  
 ```  
-  
-## See Also  
- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)  
- [OLE DB, ODBC, and Oracle Connection Pooling](../../../../docs/framework/data/adonet/ole-db-odbc-and-oracle-connection-pooling.md)  
- [Performance Counters for ASP.NET](https://msdn.microsoft.com/library/1e122fcb-05c0-4f9f-bef1-f47023fa1ac6)  
- [Runtime Profiling](../../../../docs/framework/debug-trace-profile/runtime-profiling.md)  
- [Introduction to Monitoring Performance Thresholds](https://msdn.microsoft.com/library/d40f10b9-e2b7-4ec8-a9b3-706929e5bf35)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+
+## See also
+
+- [Connecting to a Data Source](connecting-to-a-data-source.md)
+- [OLE DB, ODBC, and Oracle Connection Pooling](ole-db-odbc-and-oracle-connection-pooling.md)
+- [Performance Counters for ASP.NET](https://docs.microsoft.com/previous-versions/aspnet/fxk122b4(v=vs.100))
+- [Runtime Profiling](../../debug-trace-profile/runtime-profiling.md)
+- [Introduction to Monitoring Performance Thresholds](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bd20x32d(v=vs.90))
+- [ADO.NET Overview](ado-net-overview.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms"
+title: "How to: Choose the Printers Attached to a User's Computer"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -10,14 +10,14 @@ helpviewer_keywords:
   - "printers [Windows Forms], choosing"
 ms.assetid: 63c1172b-2931-4ac0-953f-37f629494bbf
 ---
-# How to: Choose the Printers Attached to a User&#39;s Computer in Windows Forms
+# How to: Choose the Printers Attached to a User's Computer in Windows Forms
 Often, users want to choose a printer other than the default printer to print to. You can enable users to choose a printer from among those currently installed by using the <xref:System.Windows.Forms.PrintDialog> component. Through the <xref:System.Windows.Forms.PrintDialog> component, the <xref:System.Windows.Forms.DialogResult> of the <xref:System.Windows.Forms.PrintDialog> component is captured and used to select the printer.  
   
  In the following procedure, a text file is selected to be printed to the default printer. The <xref:System.Windows.Forms.PrintDialog> class is then instantiated.  
   
 ### To choose a printer and then print a file  
   
-1.  Select the printer to be used using the <xref:System.Windows.Forms.PrintDialog> component.  
+1. Select the printer to be used using the <xref:System.Windows.Forms.PrintDialog> component.  
   
      In the following code example, there are two events being handled. In the first, a <xref:System.Windows.Forms.Button> control's <xref:System.Windows.Forms.Control.Click> event, the <xref:System.Windows.Forms.PrintDialog> class is instantiated and the printer selected by the user is captured in the <xref:System.Windows.Forms.DialogResult> property.  
   
@@ -31,12 +31,12 @@ Often, users want to choose a printer other than the default printer to print to
   
        If (result = DialogResult.OK) Then  
          PrintDocument1.Print()  
-       End If   
+       End If
   
     End Sub  
   
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage  
-       e.Graphics.FillRectangle(Brushes.Red, New Rectangle(500, 500, 500, 500))          
+       e.Graphics.FillRectangle(Brushes.Red, New Rectangle(500, 500, 500, 500))
     End Sub  
     ```  
   
@@ -52,10 +52,10 @@ Often, users want to choose a printer other than the default printer to print to
        }  
     }  
   
-    private void printDocument1_PrintPage(object sender,   
+    private void printDocument1_PrintPage(object sender,
     System.Drawing.Printing.PrintPageEventArgs e)  
     {  
-       e.Graphics.FillRectangle(Brushes.Red,   
+       e.Graphics.FillRectangle(Brushes.Red,
          new Rectangle(500, 500, 500, 500));  
     }  
     ```  
@@ -67,7 +67,7 @@ Often, users want to choose a printer other than the default printer to print to
        {  
           PrintDialog ^ printDialog1 = gcnew PrintDialog();  
           printDialog1->Document = printDocument1;  
-          System::Windows::Forms::DialogResult result =   
+          System::Windows::Forms::DialogResult result =
              printDialog1->ShowDialog();  
           if (result == DialogResult::OK)  
           {  
@@ -83,7 +83,7 @@ Often, users want to choose a printer other than the default printer to print to
        }  
     ```  
   
-     (Visual C# and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
+     (Visual C# and Visual C++) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.printDocument1.PrintPage += new  
@@ -100,5 +100,6 @@ Often, users want to choose a printer other than the default printer to print to
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   
-## See Also  
- [Windows Forms Print Support](../../../../docs/framework/winforms/advanced/windows-forms-print-support.md)
+## See also
+
+- [Windows Forms Print Support](windows-forms-print-support.md)

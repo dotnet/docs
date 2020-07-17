@@ -145,5 +145,6 @@ Access type: Read-only
 |---------|-----------------------------------|  
 |Namespace|Defined in root\ServiceModel|  
   
-## See Also  
- <xref:System.ServiceModel.ServiceBehaviorAttribute>
+## See also
+
+- <xref:System.ServiceModel.ServiceBehaviorAttribute>

@@ -7,19 +7,19 @@ dev_langs:
 ms.assetid: bcd7b699-4e50-4523-8c33-2f54a103d94e
 ---
 # Query Results
-After a [!INCLUDE[linq_entities](../../../../../../includes/linq-entities-md.md)] query is converted to command trees and executed, the query results are usually returned as one of the following:  
+After a LINQ to Entities query is converted to command trees and executed, the query results are usually returned as one of the following:  
   
--   A collection of zero or more typed entity objects or a projection of complex types in the conceptual model.  
+- A collection of zero or more typed entity objects or a projection of complex types in the conceptual model.  
   
--   CLR types supported by the conceptual model.  
+- CLR types supported by the conceptual model.  
   
--   Inline collections.  
+- Inline collections.  
   
--   Anonymous types.  
+- Anonymous types.  
   
- When the query has executed against the data source, the results are materialized into CLR types and returned to the client. All object materialization is performed by the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. Any errors that result from an inability to map between the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)] and the CLR will cause exceptions to be thrown during object materialization.  
+ When the query has executed against the data source, the results are materialized into CLR types and returned to the client. All object materialization is performed by the Entity Framework. Any errors that result from an inability to map between the Entity Framework and the CLR will cause exceptions to be thrown during object materialization.
   
- If the query execution returns primitive conceptual model types, the results consist of CLR types that are stand-alone and disconnected from the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. However, if the query returns a collection of typed entity objects, represented by <xref:System.Data.Objects.ObjectQuery%601>, those types are tracked by the object context. All object behavior (such as child/parent collections, change tracking, polymorphism, and so on) are as defined in the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. This functionality can be used in its capacity, as defined in the [!INCLUDE[adonet_ef](../../../../../../includes/adonet-ef-md.md)]. For more information, see [Working with Objects](../../../../../../docs/framework/data/adonet/ef/working-with-objects.md).  
+ If the query execution returns primitive conceptual model types, the results consist of CLR types that are stand-alone and disconnected from the Entity Framework. However, if the query returns a collection of typed entity objects, represented by <xref:System.Data.Objects.ObjectQuery%601>, those types are tracked by the object context. All object behavior (such as child/parent collections, change tracking, polymorphism, and so on) are as defined in the Entity Framework. This functionality can be used in its capacity, as defined in the Entity Framework. For more information, see [Working with Objects](../working-with-objects.md).
   
  Struct types returned from queries (such as anonymous types and nullable complex types) can be of `null` value. An <xref:System.Data.Objects.DataClasses.EntityCollection%601> property of a returned entity can also be of `null` value. This can result from projecting the collection property of an entity that is of `null` value, such as calling <xref:System.Linq.Queryable.FirstOrDefault%2A> on an <xref:System.Data.Objects.ObjectQuery%601> that has no elements.  
   

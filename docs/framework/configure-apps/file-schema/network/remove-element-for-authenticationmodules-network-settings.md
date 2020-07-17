@@ -1,5 +1,5 @@
 ---
-title: "&lt;remove&gt; Element for authenticationModules (Network Settings)"
+title: "<remove> Element for authenticationModules (Network Settings)"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/authenticationModules/remove"
@@ -11,19 +11,19 @@ helpviewer_keywords:
   - "authenticationModules, remove element"
 ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
 ---
-# &lt;remove&gt; Element for authenticationModules (Network Settings)
+# \<remove> Element for authenticationModules (Network Settings)
 Removes an authentication module from the application.  
-  
- \<configuration>  
-\<system.net>  
-\<authenticationModules>  
-\<remove>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<authenticationModules>**](authenticationmodules-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
+
 ## Syntax  
   
 ```xml  
-<remove   
-   type="authentication module name"   
+<remove
+   type="authentication module name"
 />  
 ```  
   
@@ -43,7 +43,7 @@ Removes an authentication module from the application.
   
 |**Element**|**Description**|  
 |-----------------|---------------------|  
-|[authenticationModules](../../../../../docs/framework/configure-apps/file-schema/network/authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
+|[authenticationModules](authenticationmodules-element-network-settings.md)|Specifies modules used to authenticate network requests.|  
   
 ## Remarks  
  The `remove` element removes authentication modules that were defined earlier in the configuration file or at a higher level in the configuration hierarchy.  
@@ -66,7 +66,8 @@ Removes an authentication module from the application.
 </configuration>  
 ```  
   
-## See Also  
-- <xref:System.Net.IAuthenticationModule>  
-- <xref:System.Net.AuthenticationManager>  
-- [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)
+## See also
+
+- <xref:System.Net.IAuthenticationModule>
+- <xref:System.Net.AuthenticationManager>
+- [Network Settings Schema](index.md)

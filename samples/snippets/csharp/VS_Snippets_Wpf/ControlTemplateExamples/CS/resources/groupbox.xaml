@@ -1,0 +1,79 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="Shared.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+
+  <!-- SimpleStyles: GroupBox -->
+  <!--<SnippetGroupBox>-->
+  <Style TargetType="GroupBox">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="GroupBox">
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto" />
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0"
+                    BorderThickness="1"
+                    CornerRadius="2,2,0,0">
+              <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0"
+                                     EndPoint="0,1">
+                  <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                      <GradientStop Color="{DynamicResource BorderLightColor}"
+                                    Offset="0.0" />
+                      <GradientStop Color="{DynamicResource BorderDarkColor}"
+                                    Offset="1.0" />
+                    </GradientStopCollection>
+                  </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+              </Border.BorderBrush>
+
+              <Border.Background>
+                <LinearGradientBrush StartPoint="0,0"
+                                     EndPoint="0,1">
+                  <LinearGradientBrush.GradientStops>
+                    <GradientStopCollection>
+                      <GradientStop Color="{DynamicResource ControlLightColor}"
+                                    Offset="0.0" />
+                      <GradientStop Color="{DynamicResource ControlMediumColor}"
+                                    Offset="1.0" />
+                    </GradientStopCollection>
+                  </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+              </Border.Background>
+
+              <ContentPresenter Margin="4"
+                                ContentSource="Header"
+                                RecognizesAccessKey="True" />
+            </Border>
+
+            <Border Grid.Row="1"
+                    BorderThickness="1,0,1,1"
+                    CornerRadius="0,0,2,2">
+              <Border.BorderBrush>
+                <SolidColorBrush Color="{StaticResource BorderMediumColor}" />
+              </Border.BorderBrush>
+              <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1"
+                                     MappingMode="RelativeToBoundingBox"
+                                     StartPoint="0.5,0">
+                  <GradientStop Color="{DynamicResource ContentAreaColorLight}"
+                                Offset="0" />
+                  <GradientStop Color="{DynamicResource ContentAreaColorDark}"
+                                Offset="1" />
+                </LinearGradientBrush>
+              </Border.Background>
+              <ContentPresenter Margin="4" />
+            </Border>
+          </Grid>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--</SnippetGroupBox>-->
+</ResourceDictionary>

@@ -6,15 +6,15 @@ ms.assetid: b05c1742-8d0a-4673-9d71-725b18a3008e
 # How to: Add an ASP.NET AJAX Endpoint Without Using Configuration
 Windows Communication Foundation (WCF) allows you to create a service that exposes an ASP.NET AJAX-enabled endpoint that can be called from JavaScript on a client Web site. To create such an endpoint, you can either use a configuration file, as with all other WCF endpoints, or use a method that does not require any configuration elements. This topic demonstrates the second approach.  
   
- To create services with ASP.NET AJAX endpoints without configuration, the services must be hosted by Internet Information Services (IIS). To activate an ASP.NET AJAX endpoint using this approach, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> as the Factory parameter in the [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file. This custom factory is the component that automatically configures an ASP.NET AJAX endpoint so that it can be called from JavaScript on a client Web site.  
+ To create services with ASP.NET AJAX endpoints without configuration, the services must be hosted by Internet Information Services (IIS). To activate an ASP.NET AJAX endpoint using this approach, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> as the Factory parameter in the [\@ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) directive in the .svc file. This custom factory is the component that automatically configures an ASP.NET AJAX endpoint so that it can be called from JavaScript on a client Web site.  
   
- For a working example, see the [AJAX Service Without Configuration](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md).  
+ For a working example, see the [AJAX Service Without Configuration](../samples/ajax-service-without-configuration.md).  
   
- For an outline of how to configure an ASP.NET AJAX endpoint using configuration elements, see [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](../../../../docs/framework/wcf/feature-details/how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md).  
+ For an outline of how to configure an ASP.NET AJAX endpoint using configuration elements, see [How to: Use Configuration to Add an ASP.NET AJAX Endpoint](how-to-use-configuration-to-add-an-aspnet-ajax-endpoint.md).  
   
 ### To create a basic WCF service  
   
-1.  Define a basic WCF service contract with an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. Mark each operation with the <xref:System.ServiceModel.OperationContractAttribute>. Be sure to set the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
+1. Define a basic WCF service contract with an interface marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. Mark each operation with the <xref:System.ServiceModel.OperationContractAttribute>. Be sure to set the <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> property.  
   
     ```csharp  
     [ServiceContract(Namespace = "MyService")]]  
@@ -29,7 +29,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
     }  
     ```  
   
-2.  Implement the `ICalculator` service contract with a `CalculatorService`.  
+2. Implement the `ICalculator` service contract with a `CalculatorService`.  
   
     ```csharp  
     public class CalculatorService : ICalculator  
@@ -42,7 +42,7 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
     //Other operations omitted…  
     ```  
   
-3.  Define a namespace for the `ICalculator` and `CalculatorService` implementations by wrapping them in a namespace block.  
+3. Define a namespace for the `ICalculator` and `CalculatorService` implementations by wrapping them in a namespace block.  
   
     ```csharp  
     Namespace Microsoft.Ajax.Samples  
@@ -53,22 +53,22 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
 ### To host the service in Internet Information Services without configuration  
   
-1.  Create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. Specify that the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is to be used in the [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive to automatically configure an ASP.NET AJAX endpoint.  
+1. Create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [\@ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. Specify that the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> is to be used in the [\@ServiceHost](../../configure-apps/file-schema/wcf-directive/servicehost.md) directive to automatically configure an ASP.NET AJAX endpoint.  
   
-    ```  
-    <%@ServiceHost   
-        language=c#   
-        Debug="true"   
+    ```text
+    <%@ServiceHost
+        language=c#
+        Debug="true"
         Service="Microsoft.Ajax.Samples.CalculatorService"  
         Factory=System.ServiceModel.Activation.WebScriptServiceHostFactory  
     %>  
     ```  
   
-2.  Build the service and call it from the client. Internet Information Services (IIS) activates the service when called. For more information about hosting in IIS, see [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
+2. Build the service and call it from the client. Internet Information Services (IIS) activates the service when called. For more information about hosting in IIS, see [How to: Host a WCF Service in IIS](how-to-host-a-wcf-service-in-iis.md).  
   
 ### To call the service  
   
-1.  The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Without Configuration](../../../../docs/framework/wcf/samples/ajax-service-without-configuration.md).  
+1. The endpoint is configured at an empty address relative to the .svc file, so the service is now available and can be invoked by sending requests to service.svc/\<operation> - for example, service.svc/Add for the `Add` operation. You can use it by entering the service URL into the Scripts collection of the ASP.NET AJAX Script Manager control. For an example, see the [AJAX Service Without Configuration](../samples/ajax-service-without-configuration.md).  
   
 ## Example  
   
@@ -80,16 +80,17 @@ Windows Communication Foundation (WCF) allows you to create a service that expos
   
  You cannot use configuration to modify settings on the automatically-configured endpoint. If any setting (such as a reader quota) must be modified, you must not use the configuration-free approach by removing the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> from the .svc file and creating a configuration entry for the endpoint.  
   
- If your service requires ASP.NET Compatibility Mode - for example, if it uses the <xref:System.Web.HttpContext> class or ASP.NET authorization mechanisms - a configuration file is still required to turn on this mode. The configuration element required is the [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) element, which must be added as follows.  
+ If your service requires ASP.NET Compatibility Mode - for example, if it uses the <xref:System.Web.HttpContext> class or ASP.NET authorization mechanisms - a configuration file is still required to turn on this mode. The configuration element required is the [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md) element, which must be added as follows.  
   
  `<system.serviceModel>`  
   
  `<serviceHostingEnvironment aspNetCompatibilityEnabled="true" /> </system.serviceModel>`  
   
- For more information, see the [WCF Services and ASP.NET](../../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md) topic.  
+ For more information, see the [WCF Services and ASP.NET](wcf-services-and-aspnet.md) topic.  
   
- The <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> class is a derived class of <xref:System.ServiceModel.Activation.ServiceHostFactory>. For a detailed explanation of the service host factory mechanism, see the [Extending Hosting Using ServiceHostFactory](../../../../docs/framework/wcf/extending/extending-hosting-using-servicehostfactory.md) topic.  
+ The <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> class is a derived class of <xref:System.ServiceModel.Activation.ServiceHostFactory>. For a detailed explanation of the service host factory mechanism, see the [Extending Hosting Using ServiceHostFactory](../extending/extending-hosting-using-servicehostfactory.md) topic.  
   
-## See Also  
- [Creating WCF Services for ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md)  
- [How to: Migrate AJAX-Enabled ASP.NET Web Services to WCF](../../../../docs/framework/wcf/feature-details/how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md)
+## See also
+
+- [Creating WCF Services for ASP.NET AJAX](creating-wcf-services-for-aspnet-ajax.md)
+- [How to: Migrate AJAX-Enabled ASP.NET Web Services to WCF](how-to-migrate-ajax-enabled-aspnet-web-services-to-wcf.md)

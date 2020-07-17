@@ -4,12 +4,12 @@ ms.date: "03/30/2017"
 ms.assetid: 911ffad4-4d47-4430-b7c2-79192ce6bcbd
 ---
 # Multiple Endpoints at a Single ListenUri
-This sample demonstrates a service that hosts multiple endpoints at a single `ListenUri`. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service.  
+This sample demonstrates a service that hosts multiple endpoints at a single `ListenUri`. This sample is based on the [Getting Started](getting-started-sample.md) that implements a calculator service.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- As demonstrated in the [Multiple Endpoints](../../../../docs/framework/wcf/samples/multiple-endpoints.md) sample, a service can host multiple endpoints, each with different addresses and possibly also different bindings. This sample shows that it is possible to host multiple endpoints at the same address. This sample also demonstrates the differences between the two kinds of addresses that a service endpoint has: `EndpointAddress` and `ListenUri`.  
+ As demonstrated in the [Multiple Endpoints](multiple-endpoints.md) sample, a service can host multiple endpoints, each with different addresses and possibly also different bindings. This sample shows that it is possible to host multiple endpoints at the same address. This sample also demonstrates the differences between the two kinds of addresses that a service endpoint has: `EndpointAddress` and `ListenUri`.  
   
  The `EndpointAddress` is the logical address of a service. It is the address that SOAP messages are addressed to. The `ListenUri` is the physical address of the service. It has the port and address information where the service endpoint actually listens for messages on the current machine. In most cases, there is no need for these addresses to differ; when a `ListenUri` is not explicitly specified, it defaults to the URI of the `EndpointAddress` of the endpoint. In a few cases, it is useful to distinguish them, such as when configuring a router, which might accept messages addressed to a number of different services.  
   
@@ -19,15 +19,15 @@ This sample demonstrates a service that hosts multiple endpoints at a single `Li
 ```xml  
 <endpoint address="urn:Stuff"  
         binding="wsHttpBinding"  
-        contract="Microsoft.ServiceModel.Samples.ICalculator"   
+        contract="Microsoft.ServiceModel.Samples.ICalculator"
         listenUri="http://localhost/servicemodelsamples/service.svc" />  
 <endpoint address="urn:Stuff"  
         binding="wsHttpBinding"  
-        contract="Microsoft.ServiceModel.Samples.IEcho"   
+        contract="Microsoft.ServiceModel.Samples.IEcho"
         listenUri="http://localhost/servicemodelsamples/service.svc" />  
 <endpoint address="urn:OtherEcho"  
         binding="wsHttpBinding"  
-        contract="Microsoft.ServiceModel.Samples.IEcho"   
+        contract="Microsoft.ServiceModel.Samples.IEcho"
         listenUri="http://localhost/servicemodelsamples/service.svc" />  
 ```  
   
@@ -55,22 +55,20 @@ calcClient.ChannelFactory.Endpoint.Behaviors.Add(
   
 #### To set up, build, and run the sample  
   
-1.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2.  To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3.  To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
     > [!NOTE]
-    >  For cross-machine, you must replace localhost in the Client.cs file with the name of the service machine.  
+    > For cross-machine, you must replace localhost in the Client.cs file with the name of the service machine.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
->  `<InstallDrive>:\WF_WCF_Samples`  
->   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleEndpointsSingleUri`  
-  
-## See Also
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+>
+> `<InstallDrive>:\WF_WCF_Samples`  
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleEndpointsSingleUri`  

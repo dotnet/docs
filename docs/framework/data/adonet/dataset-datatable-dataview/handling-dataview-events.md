@@ -32,10 +32,10 @@ End Sub
 ```  
   
 ```csharp  
-custView.ListChanged  += new   
+custView.ListChanged  += new
   System.ComponentModel.ListChangedEventHandler(OnListChanged);  
   
-protected static void OnListChanged(object sender,   
+protected static void OnListChanged(object sender,
   System.ComponentModel.ListChangedEventArgs args)  
 {  
   Console.WriteLine("ListChanged:");  
@@ -45,8 +45,9 @@ protected static void OnListChanged(object sender,
 }  
 ```  
   
-## See Also  
- <xref:System.Data.DataView>  
- <xref:System.ComponentModel.ListChangedEventHandler>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- <xref:System.Data.DataView>
+- <xref:System.ComponentModel.ListChangedEventHandler>
+- [DataViews](dataviews.md)
+- [ADO.NET Overview](../ado-net-overview.md)

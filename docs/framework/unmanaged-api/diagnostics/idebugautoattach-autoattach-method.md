@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3cf3bd9c-7d88-4afa-a476-94cdc7609aa6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IDebugAutoAttach::AutoAttach Method
 Performs server-invoked debugger auto attach.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AutoAttach  
 (  
     [in]  REFGUID   guidPort,  
@@ -34,7 +32,7 @@ HRESULT AutoAttach
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `guidPort`  
  [in] Always set to `GUID_NULL`.  
   
@@ -56,5 +54,6 @@ HRESULT AutoAttach
 ## Requirements  
  **Header:** DbgAutoAttach.h  
   
-## See Also  
- [IDebugAutoAttach Interface](../../../../docs/framework/unmanaged-api/diagnostics/idebugautoattach-interface.md)
+## See also
+
+- [IDebugAutoAttach Interface](idebugautoattach-interface.md)

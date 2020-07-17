@@ -1,5 +1,5 @@
 ---
-title: "Bookmarks1"
+title: "Bookmarks - WF"
 ms.date: "03/30/2017"
 ms.assetid: 9b51a346-09ae-455c-a70a-e2264ddeb9e2
 ---
@@ -24,12 +24,12 @@ public sealed class ReadLine : NativeActivity<string>
     protected override void Execute(NativeActivityContext context)  
     {  
         // Create a Bookmark and wait for it to be resumed.  
-        context.CreateBookmark(BookmarkName.Get(context),   
+        context.CreateBookmark(BookmarkName.Get(context),
             new BookmarkCallback(OnResumeBookmark));  
     }  
   
-    // NativeActivity derived activities that do asynchronous operations by calling   
-    // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext   
+    // NativeActivity derived activities that do asynchronous operations by calling
+    // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext
     // must override the CanInduceIdle property and return true.  
     protected override bool CanInduceIdle  
     {  

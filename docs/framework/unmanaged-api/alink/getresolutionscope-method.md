@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 5b48ca60-dacd-44b2-9979-4a5122f00812
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetResolutionScope Method
 Retrieves the scope of a given type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetResolutionScope(  
     mdAssembly  AssemblyID,  
     mdToken     FileToken,  
@@ -31,7 +29,7 @@ HRESULT GetResolutionScope(
 ) PURE;  
 ```  
   
-#### Parameters  
+## Parameters  
  `AssemblyID`  
  ID of the assembly.  
   
@@ -39,7 +37,7 @@ HRESULT GetResolutionScope(
  File that is in need of a reference.  
   
  `TargetFile`  
- Token of file that type is defined in, usually retrieved with [ImportFile Method](../../../../docs/framework/unmanaged-api/alink/importfile-method.md).  
+ Token of file that type is defined in, usually retrieved with [ImportFile Method](importfile-method.md).  
   
  `pScope`  
  Receives the assembly or module reference.  
@@ -50,7 +48,8 @@ HRESULT GetResolutionScope(
 ## Requirements  
  Requires alink.h.  
   
-## See Also  
- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)  
- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)  
- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+## See also
+
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

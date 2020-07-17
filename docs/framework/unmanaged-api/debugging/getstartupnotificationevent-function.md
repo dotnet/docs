@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: c94b1b61-045a-4695-bacd-0f18c5acc246
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetStartupNotificationEvent Function
 Creates or opens an event handle that will be signaled upon by any common language runtime (CLR) that is loading in the specified target process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartupNotificationEvent  
     (  
     [in]  DWORD     debuggeePID,  
@@ -32,7 +30,7 @@ HRESULT GetStartupNotificationEvent
     );  
 ```  
   
-#### Parameters  
+## Parameters  
  `debuggeePID`  
  [in] Process identifier of the target process from which to receive CLR startup notifications.  
   
@@ -55,7 +53,7 @@ HRESULT GetStartupNotificationEvent
  The event is signaled before any managed code is executed by the CLR that signaled the event.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** dbgshim.h  
   

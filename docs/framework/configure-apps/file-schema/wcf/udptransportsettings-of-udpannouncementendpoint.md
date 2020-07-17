@@ -1,35 +1,37 @@
 ---
-title: "&lt;udpTransportSettings&gt; of &lt;udpAnnouncementEndpoint&gt;"
+title: "<udpTransportSettings> of <udpAnnouncementEndpoint>"
 ms.date: "03/30/2017"
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
 ---
-# &lt;udpTransportSettings&gt; of &lt;udpAnnouncementEndpoint&gt;
-This configuration element exposes UDP transport settings for [\<udpAnnoucementEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md).  
+# \<udpTransportSettings> of \<udpAnnouncementEndpoint>
+This configuration element exposes UDP transport settings for [\<udpAnnouncementEndpoint>](udpannouncementendpoint.md).  
   
-\<system.ServiceModel>  
-\<standardEndpoints>  
-\<udpAnnouncementEndpoint>  
-  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<standardEndpoints>**](standardendpoints.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<udpAnnouncementEndpoint>**](udpannouncementendpoint.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<updTransportSettings>**  
+
 ## Syntax  
   
 ```xml  
-<system.serviceModel>  
+<system.serviceModel>
   <standardEndpoints>
     <udpAnnouncementEndpoint>
       <standardEndpoint>
-        <updTransportSettings duplicateMessageHistoryLength="Integer" 
-                              maxBufferPoolSize="Integer" 
-                              maxMulticastRetransmitCount="Integer" 
-                              maxPendingMessageCount="Integer" 
-                              maxReceivedMessageSize="Integer" 
-                              maxUnicastRetransmitCount="Integer" 
-                              multicastInterfaceId="String" 
-                              socketReceiveBufferSize="Integer" 
+        <updTransportSettings duplicateMessageHistoryLength="Integer"
+                              maxBufferPoolSize="Integer"
+                              maxMulticastRetransmitCount="Integer"
+                              maxPendingMessageCount="Integer"
+                              maxReceivedMessageSize="Integer"
+                              maxUnicastRetransmitCount="Integer"
+                              multicastInterfaceId="String"
+                              socketReceiveBufferSize="Integer"
                               timeToLive="Integer" />
       </standardEndpoint>
     </udpAnnouncementEndpoint>
-  </standardEndpoints>  
-</system.serviceModel>  
+  </standardEndpoints>
+</system.serviceModel>
 ```  
   
 ## Attributes and Elements  
@@ -56,7 +58,8 @@ This configuration element exposes UDP transport settings for [\<udpAnnoucementE
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<udpAnnoucementEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md)|A standard endpoint that has fixed announcement contract and UDP transport binding.|  
+|[\<udpAnnouncementEndpoint>](udpannouncementendpoint.md)|A standard endpoint that has fixed announcement contract and UDP transport binding.|  
   
-## See Also  
- <xref:System.ServiceModel.Discovery.UdpTransportSettings>
+## See also
+
+- <xref:System.ServiceModel.Discovery.UdpTransportSettings>

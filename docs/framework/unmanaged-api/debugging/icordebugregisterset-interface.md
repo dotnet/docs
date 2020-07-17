@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d3d9676d-0b87-4bc3-b679-7bbc7a186c88
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet Interface
 Represents the set of registers available on the computer that is currently executing code.  
@@ -24,20 +22,20 @@ Represents the set of registers available on the computer that is currently exec
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetRegisters Method](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-getregisters-method.md)|Gets the value of each register (on the computer that is currently executing code) that is specified by the bit mask.|  
-|[GetRegistersAvailable Method](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-getregistersavailable-method.md)|Gets a bit mask indicating which registers in this `ICorDebugRegisterSet` are currently available.|  
-|[GetThreadContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-getthreadcontext-method.md)|Gets the context of the current thread.|  
-|[SetRegisters Method](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-setregisters-method.md)|Not implemented for the .NET Framework version 2.0.|  
-|[SetThreadContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-setthreadcontext-method.md)|Not implemented for the .NET Framework 2.0.|  
+|[GetRegisters Method](icordebugregisterset-getregisters-method.md)|Gets the value of each register (on the computer that is currently executing code) that is specified by the bit mask.|  
+|[GetRegistersAvailable Method](icordebugregisterset-getregistersavailable-method.md)|Gets a bit mask indicating which registers in this `ICorDebugRegisterSet` are currently available.|  
+|[GetThreadContext Method](icordebugregisterset-getthreadcontext-method.md)|Gets the context of the current thread.|  
+|[SetRegisters Method](icordebugregisterset-setregisters-method.md)|Not implemented for the .NET Framework version 2.0.|  
+|[SetThreadContext Method](icordebugregisterset-setthreadcontext-method.md)|Not implemented for the .NET Framework 2.0.|  
   
 ## Remarks  
- The `ICorDebugRegisterSet` interface supports only 32-bit registers. Use the [ICorDebugRegisterSet2](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md) interface on platforms such as IA-64 that require additional registers.  
+ The `ICorDebugRegisterSet` interface supports only 32-bit registers. Use the [ICorDebugRegisterSet2](icordebugregisterset2-interface.md) interface on platforms such as IA-64 that require additional registers.  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -45,6 +43,7 @@ Represents the set of registers available on the computer that is currently exec
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)  
- [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
+## See also
+
+- [Debugging Interfaces](debugging-interfaces.md)
+- [ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)

@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: d1de53ad-9435-4b5f-9df7-07f21210e5b5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::CountEnum Method
 Gets the number of elements in the enumeration that was retrieved by the specified enumerator.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CountEnum (  
-   [in]  HCORENUM    hEnum,   
+   [in]  HCORENUM    hEnum,
    [out] ULONG       *pulCount  
 );  
 ```  
   
-#### Parameters  
+## Parameters  
  `hEnum`  
  [in] The handle for the enumerator.  
   
@@ -38,10 +36,10 @@ HRESULT CountEnum (
  [out] The number of elements enumerated.  
   
 ## Remarks  
- The handle specified by `hEnum` is obtained from a previous `Enum`*Name* call (for example, [IMetaDataImport::EnumTypeDefs](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-enumtypedefs-method.md)).  
+ The handle specified by `hEnum` is obtained from a previous `Enum`*Name* call (for example, [IMetaDataImport::EnumTypeDefs](imetadataimport-enumtypedefs-method.md)).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -49,6 +47,7 @@ HRESULT CountEnum (
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)  
- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+## See also
+
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

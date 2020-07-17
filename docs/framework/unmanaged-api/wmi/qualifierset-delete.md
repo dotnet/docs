@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_Delete function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_Delete function
 Deletes a specified qualifier by name.  
@@ -24,12 +22,12 @@ Deletes a specified qualifier by name.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Delete (
-   [in] int                  vFunc, 
-   [in] IWbemQualifierSet*   ptr, 
+   [in] int                  vFunc,
+   [in] IWbemQualifierSet*   ptr,
    [in] LPCWSTR              wszName
-); 
+);
 ```  
 
 ## Parameters
@@ -37,10 +35,10 @@ HRESULT QualifierSet_Delete (
 `vFunc`  
 [in] This parameter is unused.
 
-`ptr`   
+`ptr`
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`wszName`   
+`wszName`
 [in] The name of the qualifier to delete.
 
 ## Return value
@@ -62,11 +60,12 @@ This function wraps a call to the [IWbemQualifierSet::Delete](/windows/desktop/a
 Due to qualifier propagation rules, a particular qualifier may have been inherited from another object and merely overridden in the current class or instance. In this case, the `QualifierSet_Delete` method resets the qualifier to its original inherited value. The function in this case returns the status code `WBEM_S_RESET_TO_DEFAULT`.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
   
-## See also  
-[WMI and Performance Counters (Unmanaged API Reference)](index.md)
+## See also
+
+- [WMI and Performance Counters (Unmanaged API Reference)](index.md)

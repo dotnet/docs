@@ -7,19 +7,19 @@ dev_langs:
 ms.assetid: b555544e-7abb-4814-859b-ab9cdd7d8716
 ---
 # System.Transactions Integration with SQL Server
-The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 2.0 introduced a transaction framework that can be accessed through the <xref:System.Transactions> namespace. This framework exposes transactions in a way that is fully integrated in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], including [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)].  
+The .NET Framework version 2.0 introduced a transaction framework that can be accessed through the <xref:System.Transactions> namespace. This framework exposes transactions in a way that is fully integrated in the .NET Framework, including ADO.NET.  
   
- In addition to the programmability enhancements, <xref:System.Transactions> and [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] can work together to coordinate optimizations when you work with transactions. A promotable transaction is a lightweight (local) transaction that can be automatically promoted to a fully distributed transaction on an as-needed basis.  
+ In addition to the programmability enhancements, <xref:System.Transactions> and ADO.NET can work together to coordinate optimizations when you work with transactions. A promotable transaction is a lightweight (local) transaction that can be automatically promoted to a fully distributed transaction on an as-needed basis.  
   
- Starting with [!INCLUDE[vstecado](../../../../includes/vstecado-md.md)] 2.0, <xref:System.Data.SqlClient> supports promotable transactions when you work with SQL Server. A promotable transaction does not invoke the added overhead of a distributed transaction unless the added overhead is required. Promotable transactions are automatic and require no intervention from the developer.  
+ Starting with ADO.NET 2.0, <xref:System.Data.SqlClient> supports promotable transactions when you work with SQL Server. A promotable transaction does not invoke the added overhead of a distributed transaction unless the added overhead is required. Promotable transactions are automatic and require no intervention from the developer.  
   
- Promotable transactions are only available when you use the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Data Provider for SQL Server (`SqlClient`) with SQL Server.  
+ Promotable transactions are only available when you use the .NET Framework Data Provider for SQL Server (`SqlClient`) with SQL Server.  
   
 ## Creating Promotable Transactions  
- The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] Provider for SQL Server provides support for promotable transactions, which are handled through the classes in the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] <xref:System.Transactions> namespace. Promotable transactions optimize distributed transactions by deferring creating a distributed transaction until it is needed. If only one resource manager is required, no distributed transaction occurs.  
+ The .NET Framework Provider for SQL Server provides support for promotable transactions, which are handled through the classes in the .NET Framework <xref:System.Transactions> namespace. Promotable transactions optimize distributed transactions by deferring creating a distributed transaction until it is needed. If only one resource manager is required, no distributed transaction occurs.  
   
 > [!NOTE]
->  In a partially trusted scenario, the <xref:System.Transactions.DistributedTransactionPermission> is required when a transaction is promoted to a distributed transaction.  
+> In a partially trusted scenario, the <xref:System.Transactions.DistributedTransactionPermission> is required when a transaction is promoted to a distributed transaction.  
   
 ## Promotable Transaction Scenarios  
  Distributed transactions typically consume significant system resources, being managed by Microsoft Distributed Transaction Coordinator (MS DTC), which integrates all the resource managers accessed in the transaction. A promotable transaction is a special form of a <xref:System.Transactions> transaction that effectively delegates the work to a simple SQL Server transaction. <xref:System.Transactions>, <xref:System.Data.SqlClient>, and SQL Server coordinate the work involved in handling the transaction, promoting it to a full distributed transaction as needed.  
@@ -46,10 +46,10 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 2.0 
  If an exception occurs in the <xref:System.Transactions.TransactionScope>, the transaction is marked as inconsistent and is abandoned. It will be rolled back when the <xref:System.Transactions.TransactionScope> is disposed. If no exception occurs, participating transactions commit.  
   
 > [!NOTE]
->  The `TransactionScope` class creates a transaction with a <xref:System.Transactions.Transaction.IsolationLevel%2A> of `Serializable` by default. Depending on your application, you might want to consider lowering the isolation level to avoid high contention in your application.  
+> The `TransactionScope` class creates a transaction with a <xref:System.Transactions.Transaction.IsolationLevel%2A> of `Serializable` by default. Depending on your application, you might want to consider lowering the isolation level to avoid high contention in your application.  
   
 > [!NOTE]
->  We recommend that you perform only updates, inserts, and deletes within distributed transactions because they consume significant database resources. Select statements may lock database resources unnecessarily, and in some scenarios, you may have to use transactions for selects. Any non-database work should be done outside the scope of the transaction, unless it involves other transacted resource managers. Although an exception in the scope of the transaction prevents the transaction from committing, the <xref:System.Transactions.TransactionScope> class has no provision for rolling back any changes your code has made outside the scope of the transaction itself. If you have to take some action when the transaction is rolled back, you must write your own implementation of the <xref:System.Transactions.IEnlistmentNotification> interface and explicitly enlist in the transaction.  
+> We recommend that you perform only updates, inserts, and deletes within distributed transactions because they consume significant database resources. Select statements may lock database resources unnecessarily, and in some scenarios, you may have to use transactions for selects. Any non-database work should be done outside the scope of the transaction, unless it involves other transacted resource managers. Although an exception in the scope of the transaction prevents the transaction from committing, the <xref:System.Transactions.TransactionScope> class has no provision for rolling back any changes your code has made outside the scope of the transaction itself. If you have to take some action when the transaction is rolled back, you must write your own implementation of the <xref:System.Transactions.IEnlistmentNotification> interface and explicitly enlist in the transaction.  
   
 ## Example  
  Working with <xref:System.Transactions> requires that you have a reference to System.Transactions.dll.  
@@ -59,7 +59,7 @@ The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 2.0 
 ```csharp  
 // This function takes arguments for the 2 connection strings and commands in order  
 // to create a transaction involving two SQL Servers. It returns a value > 0 if the  
-// transaction committed, 0 if the transaction rolled back. To test this code, you can   
+// transaction committed, 0 if the transaction rolled back. To test this code, you can
 // connect to two different databases on the same server by altering the connection string,  
 // or to another RDBMS such as Oracle by altering the code in the connection2 code block.  
 static public int CreateTransactionScope(  
@@ -78,7 +78,7 @@ static public int CreateTransactionScope(
         {  
             try  
             {  
-                // Opening the connection automatically enlists it in the   
+                // Opening the connection automatically enlists it in the
                 // TransactionScope as a lightweight transaction.  
                 connection1.Open();  
   
@@ -89,8 +89,8 @@ static public int CreateTransactionScope(
   
                 // if you get here, this means that command1 succeeded. By nesting  
                 // the using block for connection2 inside that of connection1, you  
-                // conserve server and network resources by opening connection2   
-                // only when there is a chance that the transaction can commit.     
+                // conserve server and network resources by opening connection2
+                // only when there is a chance that the transaction can commit.
                 using (SqlConnection connection2 = new SqlConnection(connectString2))  
                     try  
                     {  
@@ -119,7 +119,7 @@ static public int CreateTransactionScope(
             }  
         }  
   
-        // If an exception has been thrown, Complete will not   
+        // If an exception has been thrown, Complete will not
         // be called and the transaction is rolled back.  
         scope.Complete();  
     }  
@@ -146,7 +146,7 @@ static public int CreateTransactionScope(
 ```vb  
 ' This function takes arguments for the 2 connection strings and commands in order  
 ' to create a transaction involving two SQL Servers. It returns a value > 0 if the  
-' transaction committed, 0 if the transaction rolled back. To test this code, you can   
+' transaction committed, 0 if the transaction rolled back. To test this code, you can
 ' connect to two different databases on the same server by altering the connection string,  
 ' or to another RDBMS such as Oracle by altering the code in the connection2 code block.  
 Public Function CreateTransactionScope( _  
@@ -162,7 +162,7 @@ Public Function CreateTransactionScope( _
     Using scope As New TransactionScope()  
         Using connection1 As New SqlConnection(connectString1)  
             Try  
-                ' Opening the connection automatically enlists it in the   
+                ' Opening the connection automatically enlists it in the
                 ' TransactionScope as a lightweight transaction.  
                 connection1.Open()  
   
@@ -173,8 +173,8 @@ Public Function CreateTransactionScope( _
   
                 ' If you get here, this means that command1 succeeded. By nesting  
                 ' the Using block for connection2 inside that of connection1, you  
-                ' conserve server and network resources by opening connection2   
-                ' only when there is a chance that the transaction can commit.     
+                ' conserve server and network resources by opening connection2
+                ' only when there is a chance that the transaction can commit.
                 Using connection2 As New SqlConnection(connectString2)  
                     Try  
                         ' The transaction is promoted to a full distributed  
@@ -201,7 +201,7 @@ Public Function CreateTransactionScope( _
             End Try  
         End Using  
   
-        ' If an exception has been thrown, Complete will   
+        ' If an exception has been thrown, Complete will
         ' not be called and the transaction is rolled back.  
         scope.Complete()  
     End Using  
@@ -222,6 +222,7 @@ Public Function CreateTransactionScope( _
 End Function  
 ```  
   
-## See Also  
- [Transactions and Concurrency](../../../../docs/framework/data/adonet/transactions-and-concurrency.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- [Transactions and Concurrency](transactions-and-concurrency.md)
+- [ADO.NET Overview](ado-net-overview.md)

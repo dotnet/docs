@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4d946ad4-3c19-42cb-bec9-8633325ba769
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugExceptionCallbackType Enumeration
-Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-exception-method.md) event.  
+Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](icordebugmanagedcallback2-exception-method.md) event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorDebugExceptionCallbackType {  
     DEBUG_EXCEPTION_FIRST_CHANCE         = 1,  
     DEBUG_EXCEPTION_USER_FIRST_CHANCE    = 2,  
@@ -41,7 +39,7 @@ typedef enum CorDebugExceptionCallbackType {
 |`DEBUG_EXCEPTION_UNHANDLED`|The exception was not handled.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   
@@ -49,5 +47,6 @@ typedef enum CorDebugExceptionCallbackType {
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v20plus](../../../../includes/net-current-v20plus-md.md)]  
   
-## See Also  
- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+## See also
+
+- [Debugging Enumerations](debugging-enumerations.md)

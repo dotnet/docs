@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 7e90af1b-f8f6-41b9-a63a-8490ada502b1
 ---
 # Synchronous Scenarios using HTTP, TCP or Named-Pipe
-This topic describes the activities and transfers for different synchronous request/reply scenarios, with a single-threaded client, using HTTP, TCP or named pipe. See [Asynchronous Scenarios using HTTP, TCP, or Named-Pipe](../../../../../docs/framework/wcf/diagnostics/tracing/asynchronous-scenarios-using-http-tcp-or-named-pipe.md) for more information on multi-threaded requests.  
+This topic describes the activities and transfers for different synchronous request/reply scenarios, with a single-threaded client, using HTTP, TCP or named pipe. See [Asynchronous Scenarios using HTTP, TCP, or Named-Pipe](asynchronous-scenarios-using-http-tcp-or-named-pipe.md) for more information on multi-threaded requests.  
   
 ## Synchronous Request/Reply without Errors  
  This section describes the activities and transfers for a valid synchronous request/reply scenario, with single-threaded client.  
@@ -39,7 +39,7 @@ This topic describes the activities and transfers for different synchronous requ
 #### Closing a Service Host  
  The ServiceHost’s close activity (Z) is created from the ambient activity.  
   
- ![Synchronous scenarios using HTTP&#47;TCP&#47; Named Pipes](../../../../../docs/framework/wcf/diagnostics/tracing/media/sync.gif "Sync")  
+ ![Diagram showing synchronous scenarios: HTTP, TCP, or named pipes.](./media/synchronous-scenarios-using-http-tcp-or-named-pipe/synchronous-scenario-http-tcp-named-pipes.gif)  
   
  In \<A: name>, `A` is a shortcut symbol that describes the activity in the previous text and in table 3. `Name` is a shortened name of the activity.  
   

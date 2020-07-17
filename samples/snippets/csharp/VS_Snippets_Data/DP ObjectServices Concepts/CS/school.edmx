@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SchoolModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SchoolModelStoreContainer">
+          <EntitySet Name="Course" EntityType="SchoolModel.Store.Course" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CourseInstructor" EntityType="SchoolModel.Store.CourseInstructor" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Department" EntityType="SchoolModel.Store.Department" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OfficeAssignment" EntityType="SchoolModel.Store.OfficeAssignment" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OnlineCourse" EntityType="SchoolModel.Store.OnlineCourse" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="OnsiteCourse" EntityType="SchoolModel.Store.OnsiteCourse" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Person" EntityType="SchoolModel.Store.Person" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="StudentGrade" EntityType="SchoolModel.Store.StudentGrade" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Course_Department" Association="SchoolModel.Store.FK_Course_Department">
+            <End Role="Department" EntitySet="Department" />
+            <End Role="Course" EntitySet="Course" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CourseInstructor_Course" Association="SchoolModel.Store.FK_CourseInstructor_Course">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="CourseInstructor" EntitySet="CourseInstructor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_CourseInstructor_Person" Association="SchoolModel.Store.FK_CourseInstructor_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="CourseInstructor" EntitySet="CourseInstructor" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfficeAssignment_Person" Association="SchoolModel.Store.FK_OfficeAssignment_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="OfficeAssignment" EntitySet="OfficeAssignment" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OnlineCourse_Course" Association="SchoolModel.Store.FK_OnlineCourse_Course">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="OnlineCourse" EntitySet="OnlineCourse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OnsiteCourse_Course" Association="SchoolModel.Store.FK_OnsiteCourse_Course">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="OnsiteCourse" EntitySet="OnsiteCourse" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentGrade_Course" Association="SchoolModel.Store.FK_StudentGrade_Course">
+            <End Role="Course" EntitySet="Course" />
+            <End Role="StudentGrade" EntitySet="StudentGrade" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentGrade_Student" Association="SchoolModel.Store.FK_StudentGrade_Student">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="StudentGrade" EntitySet="StudentGrade" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Course">
+          <Key>
+            <PropertyRef Name="CourseID" />
+          </Key>
+          <Property Name="CourseID" Type="int" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" Nullable="false" MaxLength="100" />
+          <Property Name="Credits" Type="int" Nullable="false" />
+          <Property Name="DepartmentID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CourseInstructor">
+          <Key>
+            <PropertyRef Name="CourseID" />
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="CourseID" Type="int" Nullable="false" />
+          <Property Name="PersonID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Name="DepartmentID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Budget" Type="money" Nullable="false" />
+          <Property Name="StartDate" Type="datetime" Nullable="false" />
+          <Property Name="Administrator" Type="int" />
+        </EntityType>
+        <EntityType Name="OfficeAssignment">
+          <Key>
+            <PropertyRef Name="InstructorID" />
+          </Key>
+          <Property Name="InstructorID" Type="int" Nullable="false" />
+          <Property Name="Location" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Timestamp" Type="timestamp" Nullable="false" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="OnlineCourse">
+          <Key>
+            <PropertyRef Name="CourseID" />
+          </Key>
+          <Property Name="CourseID" Type="int" Nullable="false" />
+          <Property Name="URL" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="OnsiteCourse">
+          <Key>
+            <PropertyRef Name="CourseID" />
+          </Key>
+          <Property Name="CourseID" Type="int" Nullable="false" />
+          <Property Name="Location" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Days" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Time" Type="smalldatetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="PersonID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="FirstName" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="HireDate" Type="datetime" />
+          <Property Name="EnrollmentDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="StudentGrade">
+          <Key>
+            <PropertyRef Name="EnrollmentID" />
+          </Key>
+          <Property Name="EnrollmentID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CourseID" Type="int" Nullable="false" />
+          <Property Name="StudentID" Type="int" Nullable="false" />
+          <Property Name="Grade" Type="decimal" Precision="3" Scale="2" />
+        </EntityType>
+        <Association Name="FK_Course_Department">
+          <End Role="Department" Type="SchoolModel.Store.Department" Multiplicity="1" />
+          <End Role="Course" Type="SchoolModel.Store.Course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="Course">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CourseInstructor_Course">
+          <End Role="Course" Type="SchoolModel.Store.Course" Multiplicity="1" />
+          <End Role="CourseInstructor" Type="SchoolModel.Store.CourseInstructor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseID" />
+            </Principal>
+            <Dependent Role="CourseInstructor">
+              <PropertyRef Name="CourseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_CourseInstructor_Person">
+          <End Role="Person" Type="SchoolModel.Store.Person" Multiplicity="1" />
+          <End Role="CourseInstructor" Type="SchoolModel.Store.CourseInstructor" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonID" />
+            </Principal>
+            <Dependent Role="CourseInstructor">
+              <PropertyRef Name="PersonID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfficeAssignment_Person">
+          <End Role="Person" Type="SchoolModel.Store.Person" Multiplicity="1" />
+          <End Role="OfficeAssignment" Type="SchoolModel.Store.OfficeAssignment" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonID" />
+            </Principal>
+            <Dependent Role="OfficeAssignment">
+              <PropertyRef Name="InstructorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OnlineCourse_Course">
+          <End Role="Course" Type="SchoolModel.Store.Course" Multiplicity="1" />
+          <End Role="OnlineCourse" Type="SchoolModel.Store.OnlineCourse" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseID" />
+            </Principal>
+            <Dependent Role="OnlineCourse">
+              <PropertyRef Name="CourseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OnsiteCourse_Course">
+          <End Role="Course" Type="SchoolModel.Store.Course" Multiplicity="1" />
+          <End Role="OnsiteCourse" Type="SchoolModel.Store.OnsiteCourse" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseID" />
+            </Principal>
+            <Dependent Role="OnsiteCourse">
+              <PropertyRef Name="CourseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentGrade_Course">
+          <End Role="Course" Type="SchoolModel.Store.Course" Multiplicity="1" />
+          <End Role="StudentGrade" Type="SchoolModel.Store.StudentGrade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseID" />
+            </Principal>
+            <Dependent Role="StudentGrade">
+              <PropertyRef Name="CourseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentGrade_Student">
+          <End Role="Person" Type="SchoolModel.Store.Person" Multiplicity="1" />
+          <End Role="StudentGrade" Type="SchoolModel.Store.StudentGrade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonID" />
+            </Principal>
+            <Dependent Role="StudentGrade">
+              <PropertyRef Name="StudentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="DeleteOfficeAssignment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="InstructorID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="DeletePerson" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PersonID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="GetDepartmentName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="ID" Type="int" Mode="In" />
+          <Parameter Name="Name" Type="nvarchar" Mode="InOut" />
+        </Function>
+        <Function Name="GetStudentGrades" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="StudentID" Type="int" Mode="In" />
+        </Function>
+        <Function Name="InsertOfficeAssignment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="InstructorID" Type="int" Mode="In" />
+          <Parameter Name="Location" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="InsertPerson" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="HireDate" Type="datetime" Mode="In" />
+          <Parameter Name="EnrollmentDate" Type="datetime" Mode="In" />
+        </Function>
+        <Function Name="UpdateOfficeAssignment" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="InstructorID" Type="int" Mode="In" />
+          <Parameter Name="Location" Type="nvarchar" Mode="In" />
+          <Parameter Name="OrigTimestamp" Type="timestamp" Mode="In" />
+        </Function>
+        <Function Name="UpdatePerson" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="PersonID" Type="int" Mode="In" />
+          <Parameter Name="LastName" Type="nvarchar" Mode="In" />
+          <Parameter Name="FirstName" Type="nvarchar" Mode="In" />
+          <Parameter Name="HireDate" Type="datetime" Mode="In" />
+          <Parameter Name="EnrollmentDate" Type="datetime" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SchoolModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SchoolEntities">
+          <EntitySet Name="Courses" EntityType="SchoolModel.Course" />
+          <EntitySet Name="Departments" EntityType="SchoolModel.Department" />
+          <EntitySet Name="OfficeAssignments" EntityType="SchoolModel.OfficeAssignment" />
+          <EntitySet Name="People" EntityType="SchoolModel.Person" />
+          <EntitySet Name="StudentGrades" EntityType="SchoolModel.StudentGrade" />
+          <AssociationSet Name="FK_Course_Department" Association="SchoolModel.FK_Course_Department">
+            <End Role="Department" EntitySet="Departments" />
+            <End Role="Course" EntitySet="Courses" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentGrade_Course" Association="SchoolModel.FK_StudentGrade_Course">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="StudentGrade" EntitySet="StudentGrades" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OfficeAssignment_Person" Association="SchoolModel.FK_OfficeAssignment_Person">
+            <End Role="Person" EntitySet="People" />
+            <End Role="OfficeAssignment" EntitySet="OfficeAssignments" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentGrade_Student" Association="SchoolModel.FK_StudentGrade_Student">
+            <End Role="Person" EntitySet="People" />
+            <End Role="StudentGrade" EntitySet="StudentGrades" />
+          </AssociationSet>
+          <AssociationSet Name="CourseInstructor" Association="SchoolModel.CourseInstructor">
+            <End Role="Course" EntitySet="Courses" />
+            <End Role="Person" EntitySet="People" />
+          </AssociationSet>
+          <FunctionImport Name="GetStudentGrades" EntitySet="StudentGrades" ReturnType="Collection(SchoolModel.StudentGrade)">
+          <Parameter Name="StudentID" Mode="In" Type="Int32" /></FunctionImport>
+          <FunctionImport Name="GetDepartmentName">
+            <Parameter Name="ID" Mode="In" Type="Int32" />
+            <Parameter Name="Name" Mode="InOut" Type="String" /></FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Course" Abstract="true">
+          <Key>
+            <PropertyRef Name="CourseID" />
+          </Key>
+          <Property Name="CourseID" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="Credits" Type="Int32" Nullable="false" />
+          <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Department" Relationship="SchoolModel.FK_Course_Department" FromRole="Course" ToRole="Department" />
+          <NavigationProperty Name="StudentGrades" Relationship="SchoolModel.FK_StudentGrade_Course" FromRole="Course" ToRole="StudentGrade" />
+          <NavigationProperty Name="People" Relationship="SchoolModel.CourseInstructor" FromRole="Course" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Department">
+          <Key>
+            <PropertyRef Name="DepartmentID" />
+          </Key>
+          <Property Name="DepartmentID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Budget" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="StartDate" Type="DateTime" Nullable="false" />
+          <Property Name="Administrator" Type="Int32" />
+          <NavigationProperty Name="Courses" Relationship="SchoolModel.FK_Course_Department" FromRole="Department" ToRole="Course" />
+        </EntityType>
+        <EntityType Name="OfficeAssignment">
+          <Key>
+            <PropertyRef Name="InstructorID" />
+          </Key>
+          <Property Name="InstructorID" Type="Int32" Nullable="false" />
+          <Property Name="Location" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Timestamp" Type="Binary" Nullable="false" MaxLength="8" FixedLength="true" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Person" Relationship="SchoolModel.FK_OfficeAssignment_Person" FromRole="OfficeAssignment" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="OnlineCourse" BaseType="SchoolModel.Course">
+          <Property Name="URL" Type="String" Nullable="false" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="OnsiteCourse" BaseType="SchoolModel.Course">
+          <Property Name="Location" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Days" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Time" Type="DateTime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="PersonID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="HireDate" Type="DateTime" />
+          <Property Name="EnrollmentDate" Type="DateTime" />
+          <NavigationProperty Name="OfficeAssignment" Relationship="SchoolModel.FK_OfficeAssignment_Person" FromRole="Person" ToRole="OfficeAssignment" />
+          <NavigationProperty Name="StudentGrades" Relationship="SchoolModel.FK_StudentGrade_Student" FromRole="Person" ToRole="StudentGrade" />
+          <NavigationProperty Name="Courses" Relationship="SchoolModel.CourseInstructor" FromRole="Person" ToRole="Course" />
+        </EntityType>
+        <EntityType Name="StudentGrade">
+          <Key>
+            <PropertyRef Name="EnrollmentID" />
+          </Key>
+          <Property Name="EnrollmentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CourseID" Type="Int32" Nullable="false" />
+          <Property Name="StudentID" Type="Int32" Nullable="false" />
+          <Property Name="Grade" Type="Decimal" Precision="3" Scale="2" />
+          <NavigationProperty Name="Course" Relationship="SchoolModel.FK_StudentGrade_Course" FromRole="StudentGrade" ToRole="Course" />
+          <NavigationProperty Name="Person" Relationship="SchoolModel.FK_StudentGrade_Student" FromRole="StudentGrade" ToRole="Person" />
+        </EntityType>
+        <Association Name="FK_Course_Department">
+          <End Role="Department" Type="SchoolModel.Department" Multiplicity="1" />
+          <End Role="Course" Type="SchoolModel.Course" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Department">
+              <PropertyRef Name="DepartmentID" />
+            </Principal>
+            <Dependent Role="Course">
+              <PropertyRef Name="DepartmentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentGrade_Course">
+          <End Role="Course" Type="SchoolModel.Course" Multiplicity="1" />
+          <End Role="StudentGrade" Type="SchoolModel.StudentGrade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Course">
+              <PropertyRef Name="CourseID" />
+            </Principal>
+            <Dependent Role="StudentGrade">
+              <PropertyRef Name="CourseID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OfficeAssignment_Person">
+          <End Role="Person" Type="SchoolModel.Person" Multiplicity="1" />
+          <End Role="OfficeAssignment" Type="SchoolModel.OfficeAssignment" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonID" />
+            </Principal>
+            <Dependent Role="OfficeAssignment">
+              <PropertyRef Name="InstructorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentGrade_Student">
+          <End Role="Person" Type="SchoolModel.Person" Multiplicity="1" />
+          <End Role="StudentGrade" Type="SchoolModel.StudentGrade" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonID" />
+            </Principal>
+            <Dependent Role="StudentGrade">
+              <PropertyRef Name="StudentID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="CourseInstructor">
+          <End Role="Course" Type="SchoolModel.Course" Multiplicity="*" />
+          <End Role="Person" Type="SchoolModel.Person" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SchoolModelStoreContainer" CdmEntityContainer="SchoolEntities">
+          <EntitySetMapping Name="Courses">
+            <EntityTypeMapping TypeName="IsTypeOf(SchoolModel.Course)">
+              <MappingFragment StoreEntitySet="Course">
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="Credits" ColumnName="Credits" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(SchoolModel.OnsiteCourse)">
+              <MappingFragment StoreEntitySet="OnsiteCourse">
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(SchoolModel.OnlineCourse)">
+              <MappingFragment StoreEntitySet="OnlineCourse">
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departments">
+            <EntityTypeMapping TypeName="SchoolModel.Department">
+              <MappingFragment StoreEntitySet="Department">
+                <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Budget" ColumnName="Budget" />
+                <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+                <ScalarProperty Name="Administrator" ColumnName="Administrator" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OfficeAssignments">
+            <EntityTypeMapping TypeName="SchoolModel.OfficeAssignment">
+              <MappingFragment StoreEntitySet="OfficeAssignment">
+                <ScalarProperty Name="InstructorID" ColumnName="InstructorID" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="SchoolModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+                <ScalarProperty Name="EnrollmentDate" ColumnName="EnrollmentDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentGrades">
+            <EntityTypeMapping TypeName="SchoolModel.StudentGrade">
+              <MappingFragment StoreEntitySet="StudentGrade">
+                <ScalarProperty Name="EnrollmentID" ColumnName="EnrollmentID" />
+                <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+                <ScalarProperty Name="StudentID" ColumnName="StudentID" />
+                <ScalarProperty Name="Grade" ColumnName="Grade" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="CourseInstructor" TypeName="SchoolModel.CourseInstructor" StoreEntitySet="CourseInstructor">
+            <EndProperty Name="Course">
+              <ScalarProperty Name="CourseID" ColumnName="CourseID" />
+            </EndProperty>
+            <EndProperty Name="Person">
+              <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <FunctionImportMapping FunctionImportName="GetStudentGrades" FunctionName="SchoolModel.Store.GetStudentGrades" />
+          <FunctionImportMapping FunctionImportName="GetDepartmentName" FunctionName="SchoolModel.Store.GetDepartmentName" />
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="School" />
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

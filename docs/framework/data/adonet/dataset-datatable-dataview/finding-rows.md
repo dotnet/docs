@@ -36,7 +36,7 @@ End If
 ```  
   
 ```csharp  
-DataView custView = new DataView(custDS.Tables["Customers"], "",   
+DataView custView = new DataView(custDS.Tables["Customers"], "",
   "CompanyName", DataViewRowState.CurrentRows);  
   
 int rowIndex = custView.Find("The Cracker Box");  
@@ -76,19 +76,20 @@ DataView custView = new DataView(custDS.Tables["Customers"], "",
   "CompanyName, ContactName",  
   DataViewRowState.CurrentRows);  
   
-DataRowView[] foundRows =   
+DataRowView[] foundRows =
   custView.FindRows(new object[] {"The Cracker Box", "Liu Wong"});  
   
 if (foundRows.Length == 0)  
   Console.WriteLine("No match found.");  
 else  
   foreach (DataRowView myDRV in foundRows)  
-    Console.WriteLine("{0}, {1}", myDRV["CompanyName"].ToString(),   
+    Console.WriteLine("{0}, {1}", myDRV["CompanyName"].ToString(),
       myDRV["ContactName"].ToString());  
 ```  
   
-## See Also  
- <xref:System.Data.DataTable>  
- <xref:System.Data.DataView>  
- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)  
- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+## See also
+
+- <xref:System.Data.DataTable>
+- <xref:System.Data.DataView>
+- [DataViews](dataviews.md)
+- [ADO.NET Overview](../ado-net-overview.md)

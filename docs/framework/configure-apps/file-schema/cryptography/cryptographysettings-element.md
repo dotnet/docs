@@ -1,5 +1,5 @@
 ---
-title: "&lt;cryptographySettings&gt; Element"
+title: "<cryptographySettings> Element"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/mscorlib/cryptographySettings"
@@ -8,20 +8,18 @@ helpviewer_keywords:
   - "cryptographySettings element"
   - "<cryptographySettings> element"
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
-author: "mcleblanc"
-ms.author: "markl"
 ---
-# &lt;cryptographySettings&gt; Element
+# \<cryptographySettings> Element
 Contains cryptography settings.  
-  
- \<configuration>  
-\<mscorlib>  
-\<cryptographySettings>  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<mscorlib>**](mscorlib-element-for-cryptography-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<cryptographySettings>**
+
 ## Syntax  
   
 ```xml  
-      <cryptographySettings>   
+      <cryptographySettings>
 </cryptographySettings>  
 ```  
   
@@ -35,8 +33,8 @@ Contains cryptography settings.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<cryptoNameMapping>](../../../../../docs/framework/configure-apps/file-schema/cryptography/cryptonamemapping-element.md)|Contains mappings of classes to friendly names.|  
-|[\<oidMap>](../../../../../docs/framework/configure-apps/file-schema/cryptography/oidmap-element.md)|Contains ASN.1 object identifier (OID) mappings to classes.|  
+|[\<cryptoNameMapping>](cryptonamemapping-element.md)|Contains mappings of classes to friendly names.|  
+|[\<oidMap>](oidmap-element.md)|Contains ASN.1 object identifier (OID) mappings to classes.|  
   
 ### Parent Elements  
   
@@ -72,7 +70,8 @@ Contains cryptography settings.
 </configuration>  
 ```  
   
-## See Also  
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
-- [Cryptography Settings Schema](../../../../../docs/framework/configure-apps/file-schema/cryptography/index.md)  
-- [Cryptographic Services](../../../../../docs/standard/security/cryptographic-services.md)
+## See also
+
+- [Configuration File Schema](../index.md)
+- [Cryptography Settings Schema](index.md)
+- [Cryptographic Services](../../../../standard/security/cryptographic-services.md)

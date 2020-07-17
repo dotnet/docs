@@ -1,5 +1,5 @@
 ---
-title: "Declared Elements in Visual Basic"
+title: "Declared Elements"
 ms.date: 07/20/2015
 ms.assetid: 0d1d1bb5-ac0b-485f-8922-cdcec5574c79
 ---
@@ -8,50 +8,50 @@ A *declared element* is a programming element that is defined in a declaration s
   
  Declaration statements include the following:  
   
--   [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)  
+- [Dim Statement](../../../language-reference/statements/dim-statement.md)  
   
--   [Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)  
+- [Const Statement](../../../language-reference/statements/const-statement.md)  
   
--   [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)  
+- [Enum Statement](../../../language-reference/statements/enum-statement.md)  
   
--   [Class Statement](../../../../visual-basic/language-reference/statements/class-statement.md)  
+- [Class Statement](../../../language-reference/statements/class-statement.md)  
   
--   [Structure Statement](../../../../visual-basic/language-reference/statements/structure-statement.md)  
+- [Structure Statement](../../../language-reference/statements/structure-statement.md)  
   
--   [Module Statement](../../../../visual-basic/language-reference/statements/module-statement.md)  
+- [Module Statement](../../../language-reference/statements/module-statement.md)  
   
--   [Interface Statement](../../../../visual-basic/language-reference/statements/interface-statement.md)  
+- [Interface Statement](../../../language-reference/statements/interface-statement.md)  
   
--   [Function Statement](../../../../visual-basic/language-reference/statements/function-statement.md)  
+- [Function Statement](../../../language-reference/statements/function-statement.md)  
   
--   [Sub Statement](../../../../visual-basic/language-reference/statements/sub-statement.md)  
+- [Sub Statement](../../../language-reference/statements/sub-statement.md)  
   
--   [Declare Statement](../../../../visual-basic/language-reference/statements/declare-statement.md)  
+- [Declare Statement](../../../language-reference/statements/declare-statement.md)  
   
--   [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md)  
+- [Operator Statement](../../../language-reference/statements/operator-statement.md)  
   
--   [Property Statement](../../../../visual-basic/language-reference/statements/property-statement.md)  
+- [Property Statement](../../../language-reference/statements/property-statement.md)  
   
--   [Event Statement](../../../../visual-basic/language-reference/statements/event-statement.md)  
+- [Event Statement](../../../language-reference/statements/event-statement.md)  
   
--   [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)  
+- [Delegate Statement](../../../language-reference/statements/delegate-statement.md)  
   
 ## In This Section  
- [Declared Element Names](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)  
+ [Declared Element Names](declared-element-names.md)  
  Describes how to name elements and use alphabetic case.  
   
- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)  
+ [Declared Element Characteristics](declared-element-characteristics.md)  
  Covers characteristics, such as scope, possessed by declared elements.  
   
- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)  
+ [References to Declared Elements](references-to-declared-elements.md)  
  Describes how the compiler matches a reference to a declaration and how to qualify a name.  
   
 ## Related Sections  
- [Program Structure and Code Conventions](../../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
+ [Program Structure and Code Conventions](../../program-structure/program-structure-and-code-conventions.md)  
  Presents guidelines for making your code easier to read, understand, and maintain.  
   
- [Statements](../../../../visual-basic/language-reference/statements/index.md)  
+ [Statements](../../../language-reference/statements/index.md)  
  Describes statements that name and define procedures, variables, arrays, and constants.  
   
- [Declaration Contexts and Default Access Levels](../../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md)  
+ [Declaration Contexts and Default Access Levels](../../../language-reference/statements/declaration-contexts-and-default-access-levels.md)  
  Lists the types of declared elements and shows for each one its declaration statement, in what context you can declare it, and its default access level.

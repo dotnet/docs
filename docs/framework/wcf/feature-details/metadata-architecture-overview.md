@@ -20,7 +20,7 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
   
 - A <xref:System.ServiceModel.Description.MetadataLocation> instance.  
   
- A <xref:System.ServiceModel.Description.MetadataReference?displayProperty=nameWithType> instances  point to another metadata exchange (MEX) endpoint and <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType> instances point to a metadata document using an HTTP URL. WCF supports using WSDL documents to describe service endpoints, service contracts, bindings, message exchange patterns, messages and fault messages implemented by a service. Data types used by the service are described in WSDL documents using XML schema. For more information, see [Schema Import and Export](../../../../docs/framework/wcf/feature-details/schema-import-and-export.md). You can use WCF to export and import WSDL extensions for service behavior, contract behaviors, and binding elements that extend the functionality of a service. For more information, see [Exporting Custom Metadata for a WCF Extension](../../../../docs/framework/wcf/extending/exporting-custom-metadata-for-a-wcf-extension.md).  
+ A <xref:System.ServiceModel.Description.MetadataReference?displayProperty=nameWithType> instances  point to another metadata exchange (MEX) endpoint and <xref:System.ServiceModel.Description.MetadataLocation?displayProperty=nameWithType> instances point to a metadata document using an HTTP URL. WCF supports using WSDL documents to describe service endpoints, service contracts, bindings, message exchange patterns, messages and fault messages implemented by a service. Data types used by the service are described in WSDL documents using XML schema. For more information, see [Schema Import and Export](schema-import-and-export.md). You can use WCF to export and import WSDL extensions for service behavior, contract behaviors, and binding elements that extend the functionality of a service. For more information, see [Exporting Custom Metadata for a WCF Extension](../extending/exporting-custom-metadata-for-a-wcf-extension.md).  
   
 ## Exporting Service Metadata  
  In WCF, *metadata export* is the process of describing service endpoints and projecting them into a parallel, standardized representation that clients can use to understand how to use the service. To export metadata from <xref:System.ServiceModel.Description.ServiceEndpoint> instances, use an implementation of the <xref:System.ServiceModel.Description.MetadataExporter> abstract class. A <xref:System.ServiceModel.Description.MetadataExporter?displayProperty=nameWithType> implementation generates metadata that is encapsulated in a <xref:System.ServiceModel.Description.MetadataSet> instance.  
@@ -40,7 +40,7 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
   
  To add metadata endpoints that use the MEX protocol, add service endpoints to your service host that use the service contract named IMetadataExchange.WCF defines the <xref:System.ServiceModel.Description.IMetadataExchange> interface that has this service contract name. WS-MetadataExchange endpoints, or MEX endpoints, can use one of the four default bindings exposed by the static factory methods on the <xref:System.ServiceModel.Description.MetadataExchangeBindings> class to match the default bindings used by WCF tools, such as Svcutil.exe. You can also configure MEX metadata endpoints using a custom binding.  
   
- The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> uses a <xref:System.ServiceModel.Description.WsdlExporter?displayProperty=nameWithType> to export metadata for all service endpoints in your service. For more information about exporting metadata from a service, see [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md).  
+ The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> uses a <xref:System.ServiceModel.Description.WsdlExporter?displayProperty=nameWithType> to export metadata for all service endpoints in your service. For more information about exporting metadata from a service, see [Exporting and Importing Metadata](exporting-and-importing-metadata.md).  
   
  The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> augments your service host by adding a <xref:System.ServiceModel.Description.ServiceMetadataExtension> instance as an extension to your service host. The <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> provides the implementation for the metadata publishing protocols. You can also use the <xref:System.ServiceModel.Description.ServiceMetadataExtension?displayProperty=nameWithType> to get the service's metadata at runtime by accessing the <xref:System.ServiceModel.Description.ServiceMetadataExtension.Metadata%2A> property.  
   
@@ -51,7 +51,7 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
 >
 > You can work around this issue by either adding the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in the configuration file or adding both the endpoint and <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code.  
 >
-> For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](../../../../docs/framework/wcf/samples/self-host.md) sample.  
+> For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in an application configuration file, see the [Getting Started](../samples/getting-started-sample.md). For an example of adding <xref:System.ServiceModel.Description.ServiceMetadataBehavior> in code, see the [Self-Host](../samples/self-host.md) sample.  
 
 > [!CAUTION]
 > When publishing metadata for a service that exposes two different service contracts in which each contain an operation of the same name an exception is thrown. For example, if you have a service that exposes a service contract called ICarService that has an operation Get(Car c) and the same service exposes a service contract called IBookService that has an operation Get(Book b), an exception is thrown or an error message is displayed when generating the service's metadata. To work around this issue do one of the following:  
@@ -81,12 +81,13 @@ Windows Communication Foundation (WCF) provides a rich infrastructure for export
 ## Dynamic Bindings  
  You can dynamically update the binding that you use to create a channel to a service endpoint in the event that the binding for the endpoint changes or you want to create a channel to an endpoint that uses the same contract but has a different binding. You can use the <xref:System.ServiceModel.Description.MetadataResolver> static class to retrieve and import metadata at runtime for service endpoints that implement a specific contract. You can then use the imported <xref:System.ServiceModel.Description.ServiceEndpoint?displayProperty=nameWithType> objects to create a client or channel factory to the desired endpoint.  
   
-## See Also  
- <xref:System.ServiceModel.Description>  
- [Metadata Formats](../../../../docs/framework/wcf/feature-details/metadata-formats.md)  
- [Exporting and Importing Metadata](../../../../docs/framework/wcf/feature-details/exporting-and-importing-metadata.md)  
- [Publishing Metadata](../../../../docs/framework/wcf/feature-details/publishing-metadata.md)  
- [Retrieving Metadata](../../../../docs/framework/wcf/feature-details/retrieving-metadata.md)  
- [Using Metadata](../../../../docs/framework/wcf/feature-details/using-metadata.md)  
- [Security Considerations with Metadata](../../../../docs/framework/wcf/feature-details/security-considerations-with-metadata.md)  
- [Extending the Metadata System](../../../../docs/framework/wcf/extending/extending-the-metadata-system.md)
+## See also
+
+- <xref:System.ServiceModel.Description>
+- [Metadata Formats](metadata-formats.md)
+- [Exporting and Importing Metadata](exporting-and-importing-metadata.md)
+- [Publishing Metadata](publishing-metadata.md)
+- [Retrieving Metadata](retrieving-metadata.md)
+- [Using Metadata](using-metadata.md)
+- [Security Considerations with Metadata](security-considerations-with-metadata.md)
+- [Extending the Metadata System](../extending/extending-the-metadata-system.md)

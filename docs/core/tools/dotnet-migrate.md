@@ -1,28 +1,32 @@
 ---
 title: dotnet migrate command
 description: The dotnet migrate command migrates a project and all of its dependencies.
-ms.date: 05/25/2018
+ms.date: 02/14/2020
 ---
 # dotnet migrate
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.x SDK
 
 ## Name
 
-`dotnet migrate` - Migrates a Preview 2 .NET Core project to a .NET Core SDK 1.0 project.
+`dotnet migrate` - Migrates a Preview 2 .NET Core project to a .NET Core SDK-style project.
 
 ## Synopsis
 
-```
-dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [--format-report-file-json] [-r|--report-file] [-s|--skip-project-references] [--skip-backup] [-t|--template-file] [-v|--sdk-package-version] [-x|--xproj-file]
-dotnet migrate [-h|--help]
+```dotnetcli
+dotnet migrate [<SOLUTION_FILE|PROJECT_DIR>] [--format-report-file-json <REPORT_FILE>]
+    [-r|--report-file <REPORT_FILE>] [-s|--skip-project-references [Debug|Release]]
+    [--skip-backup] [-t|--template-file <TEMPLATE_FILE>] [-v|--sdk-package-version]
+    [-x|--xproj-file]
+
+dotnet migrate -h|--help
 ```
 
 ## Description
 
-The `dotnet migrate` command migrates a valid Preview 2 *project.json*-based project to a valid .NET Core SDK 1.0 *csproj* project.
+This command is deprecated. The `dotnet migrate` command is no longer available starting with .NET Core 3.0 SDK. It can only migrate a Preview 2 .NET Core project to a 1.x .NET Core project, which is out of support.
 
-By default, the command migrates the root project and any project references that the root project contains. This behavior is disabled using the `--skip-project-references` option at runtime.
+By default, the command migrates the root project and any project references that the root project contains. This behavior is disabled using the `--skip-project-references` option at run time.
 
 Migration can be performed on the following assets:
 

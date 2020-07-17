@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7f74d9c5-1377-4958-b842-6306d611cbd5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::CloseNamespace Method
 Closes the most recently opened namespace.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseNamespace();  
 ```  
   
@@ -33,6 +31,7 @@ HRESULT CloseNamespace();
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
-## See Also  
- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)  
- [OpenNamespace Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-opennamespace-method.md)
+## See also
+
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)
+- [OpenNamespace Method](isymunmanagedwriter-opennamespace-method.md)

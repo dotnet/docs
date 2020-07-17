@@ -1,5 +1,5 @@
 ---
-title: "Skip Clause (Visual Basic)"
+title: "Skip Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QuerySkip"
@@ -14,7 +14,7 @@ Bypasses a specified number of elements in a collection and then returns the rem
   
 ## Syntax  
   
-```  
+```vb  
 Skip count  
 ```  
   
@@ -27,20 +27,21 @@ Skip count
   
  You can use the `Skip` clause with the `Take` clause to return a range of data from any segment of a query. To do this, pass the index of the first element of the range to the `Skip` clause and the size of the range to the `Take` clause.  
   
- When you use the `Skip` clause in a query, you may also need to ensure that the results are returned in an order that will enable the `Skip` clause to bypass the intended results. For more information about ordering query results, see [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md).  
+ When you use the `Skip` clause in a query, you may also need to ensure that the results are returned in an order that will enable the `Skip` clause to bypass the intended results. For more information about ordering query results, see [Order By Clause](order-by-clause.md).  
   
  You can use the `SkipWhile` clause to specify that only certain elements are ignored, depending on a supplied condition.  
   
 ## Example  
  The following code example uses the `Skip` clause together with the `Take` clause to return data from a query in pages. The `GetCustomers` function uses the `Skip` clause to bypass the customers in the list until the supplied starting index value, and uses the `Take` clause to return a page of customers starting from that index value.  
   
- [!code-vb[VbSimpleQuerySamples#1](../../../visual-basic/language-reference/queries/codesnippet/VisualBasic/skip-clause_1.vb)]  
+ [!code-vb[VbSimpleQuerySamples#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#1)]  
   
-## See Also  
- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- [Queries](../../../visual-basic/language-reference/queries/index.md)  
- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)  
- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)  
- [Order By Clause](../../../visual-basic/language-reference/queries/order-by-clause.md)  
- [Skip While Clause](../../../visual-basic/language-reference/queries/skip-while-clause.md)  
- [Take Clause](../../../visual-basic/language-reference/queries/take-clause.md)
+## See also
+
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](index.md)
+- [Select Clause](select-clause.md)
+- [From Clause](from-clause.md)
+- [Order By Clause](order-by-clause.md)
+- [Skip While Clause](skip-while-clause.md)
+- [Take Clause](take-clause.md)

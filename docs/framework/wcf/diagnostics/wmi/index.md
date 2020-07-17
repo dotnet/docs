@@ -11,7 +11,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
   
  A WMI provider is a component that exposes instrumentation at runtime through a WBEM-compatible interface. It consists of a set of WMI objects that have attribute/value pairs. Pairs can be of a number of simple types. Management tools can connect to the services through the interface at runtime. WCF exposes attributes of services such as addresses, bindings, behaviors, and listeners.  
   
- The built-in WMI provider can be activated in the configuration file of the application. This is done through the `wmiProviderEnabled` attribute of the [\<diagnostics>](../../../../../docs/framework/configure-apps/file-schema/wcf/diagnostics.md) in the [\<system.serviceModel>](../../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) section, as shown in the following sample configuration.  
+ The built-in WMI provider can be activated in the configuration file of the application. This is done through the `wmiProviderEnabled` attribute of the [\<diagnostics>](../../../configure-apps/file-schema/wcf/diagnostics.md) in the [\<system.serviceModel>](../../../configure-apps/file-schema/wcf/system-servicemodel.md) section, as shown in the following sample configuration.  
   
 ```xml  
 <system.serviceModel>  
@@ -24,14 +24,14 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
   
 ## Accessing WMI Data  
- WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)]. For more information, see [Using WMI](https://go.microsoft.com/fwlink/?LinkId=95183).  
+ WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the .NET Framework. For more information, see [Using WMI](/windows/win32/wmisdk/using-wmi).  
   
 > [!CAUTION]
->  If you use the .NET Framework provided methods to programmatically access WMI data, you should be aware that such methods may throw exceptions when the connection is established. The connection is not established during the construction of the <xref:System.Management.ManagementObject> instance, but on the first request involving actual data exchange. Therefore, you should use a `try..catch` block to catch the possible exceptions.  
+> If you use the .NET Framework provided methods to programmatically access WMI data, you should be aware that such methods may throw exceptions when the connection is established. The connection is not established during the construction of the <xref:System.Management.ManagementObject> instance, but on the first request involving actual data exchange. Therefore, you should use a `try..catch` block to catch the possible exceptions.  
   
- You can change the trace and message logging level, as well as message logging options for the `System.ServiceModel` trace source in WMI. This can be done by accessing the [AppDomainInfo](../../../../../docs/framework/wcf/diagnostics/wmi/appdomaininfo.md) instance, which exposes these Boolean properties: `LogMessagesAtServiceLevel`, `LogMessagesAtTransportLevel`, `LogMalformedMessages`, and `TraceLevel`. Therefore, if you configure a trace listener for message logging, but set these options to `false` in configuration, you can later change them to `true` when the application is running. This will effectively enable message logging at runtime. Similarly, if you enable message logging in your configuration file, you can disable it at runtime using WMI.  
+ You can change the trace and message logging level, as well as message logging options for the `System.ServiceModel` trace source in WMI. This can be done by accessing the [AppDomainInfo](appdomaininfo.md) instance, which exposes these Boolean properties: `LogMessagesAtServiceLevel`, `LogMessagesAtTransportLevel`, `LogMalformedMessages`, and `TraceLevel`. Therefore, if you configure a trace listener for message logging, but set these options to `false` in configuration, you can later change them to `true` when the application is running. This will effectively enable message logging at runtime. Similarly, if you enable message logging in your configuration file, you can disable it at runtime using WMI.  
   
- You should be aware that if no message logging trace listeners for message logging, or no `System.ServiceModel` trace listeners for tracing are specified in the configuration file, none of your changes are taken into effect, even though the changes are accepted by WMI. For more information on properly setting up the respective listeners, see [Configuring Message Logging](../../../../../docs/framework/wcf/diagnostics/configuring-message-logging.md) and [Configuring Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/configuring-tracing.md). The trace level of all other trace sources specified by configuration is effective when the application starts, and cannot be changed.  
+ You should be aware that if no message logging trace listeners for message logging, or no `System.ServiceModel` trace listeners for tracing are specified in the configuration file, none of your changes are taken into effect, even though the changes are accepted by WMI. For more information on properly setting up the respective listeners, see [Configuring Message Logging](../configuring-message-logging.md) and [Configuring Tracing](../tracing/configuring-tracing.md). The trace level of all other trace sources specified by configuration is effective when the application starts, and cannot be changed.  
   
  WCF exposes a `GetOperationCounterInstanceName` method for scripting. This method returns a performance counter instance name if you provide it with an operation name. However, it does not validate your input. Therefore, if you provide an incorrect operation name, an incorrect counter name is returned.  
   
@@ -44,32 +44,32 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
   
  In addition, if you relax access permissions for the MOF file, less-trusted parties can manipulate the behavior of WMI and alter the objects that are loaded in the WMI schema. For example, fields can be removed such that critical data is concealed from the administrator or that fields that do not populate or cause exceptions are added to the file.  
   
- By default, the WCF WMI provider grants "execute method", "provider write", and "enable account" permission for Administrator, and "enable account" permission for ASP.NET, Local Service and Network Service. In particular, on non-[!INCLUDE[wv](../../../../../includes/wv-md.md)] platforms, the ASP.NET account has read access to the WMI ServiceModel namespace. If you do not want to grant these privileges to a particular user group, you should either deactivate the WMI provider (it is disabled by default), or disable access for the specific user group.  
+ By default, the WCF WMI provider grants "execute method", "provider write", and "enable account" permission for Administrator, and "enable account" permission for ASP.NET, Local Service and Network Service. In particular, on non-Windows Vista platforms, the ASP.NET account has read access to the WMI ServiceModel namespace. If you do not want to grant these privileges to a particular user group, you should either deactivate the WMI provider (it is disabled by default), or disable access for the specific user group.  
   
  In addition, when you attempt to enable WMI through configuration, WMI may not be enabled due to insufficient user privilege. However, no event is written to the event log to record this failure.  
   
  To modify user privilege levels, use the following steps.  
   
-1.  Click Start and then Run and type **compmgmt.msc**.  
+1. Click Start and then Run and type **compmgmt.msc**.  
   
-2.  Right-click **Services and Application/WMI Controls** to select **Properties**.  
+2. Right-click **Services and Application/WMI Controls** to select **Properties**.  
   
-3.  Select the **Security** Tab, and navigate to the **Root/ServiceModel** namespace. Click the **Security** button.  
+3. Select the **Security** Tab, and navigate to the **Root/ServiceModel** namespace. Click the **Security** button.  
   
-4.  Select the specific group or user that you want to control access and use the **Allow** or **Deny** checkbox to configure permissions.  
+4. Select the specific group or user that you want to control access and use the **Allow** or **Deny** checkbox to configure permissions.  
   
 ## Granting WCF WMI Registration Permissions to Additional Users  
  WCF exposes management data to WMI. It does so by hosting an in-process WMI provider, sometimes called a "decoupled provider". For the management data to be exposed, the account that registers this provider must have the appropriate permissions. In Windows, only a small set of privileged accounts can register decoupled providers by default. This is a problem because users commonly want to expose WMI data from a WCF service running under an account that is not in the default set.  
   
  To provide this access, an administrator must grant the following permissions to the additional account in the following order:  
   
-1.  Permission to access to the WCF WMI Namespace.  
+1. Permission to access to the WCF WMI Namespace.  
   
-2.  Permission to register the WCF Decoupled WMI Provider.  
+2. Permission to register the WCF Decoupled WMI Provider.  
   
 #### To grant WMI namespace access permission  
   
-1.  Run the following PowerShell script.  
+1. Run the following PowerShell script.  
   
     ```powershell  
     write-host ""  
@@ -93,7 +93,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     write-host "Previous ACL: "$outsddl.SDDL  
   
     # Change the Access Control List (ACL) using SDDL  
-    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)   
+    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)
   
     # Get and output the current settings  
     $binarySD = @($null)  
@@ -106,17 +106,17 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
   
      This PowerShell script uses Security Descriptor Definition Language (SDDL) to grant the Built-In Users group access to the "root/servicemodel" WMI namespace. It specifies the following ACLs:  
   
-    -   Built-In Administrator (BA) - Already Had Access.  
+    - Built-In Administrator (BA) - Already Had Access.  
   
-    -   Network Service (NS) - Already Had Access.  
+    - Network Service (NS) - Already Had Access.  
   
-    -   Local System (LS) - Already Had Access.  
+    - Local System (LS) - Already Had Access.  
   
-    -   Built-In Users - The group to grant access to.  
+    - Built-In Users - The group to grant access to.  
   
 #### To grant provider registration access  
   
-1.  Run the following PowerShell script.  
+1. Run the following PowerShell script.  
   
     ```powershell  
     write-host ""  
@@ -135,32 +135,33 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     ```  
   
 ### Granting Access to Arbitrary Users or Groups  
- The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group’s Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
+ The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group's Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
   
-```  
+```console
 Whoami /user  
 ```  
   
- This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](https://go.microsoft.com/fwlink/?LinkId=186467) tool from the [Windows 2000 Resource Kit Tools for administrative tasks](https://go.microsoft.com/fwlink/?LinkId=178660). This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](https://go.microsoft.com/fwlink/?LinkId=186468).  
+ This provides the SID of the current user, but this method cannot be used to get the SID on any arbitrary user. Another method to get the SID is to use the [getsid.exe](/windows/win32/wmisdk/using-wmi) tool from the Windows 2000 Resource Kit Tools for administrative tasks. This tool compares the SID of two users (local or domain), and as a side effect prints the two SIDs to the command line. For more information, see [Well Known SIDs](https://support.microsoft.com/help/243330/well-known-security-identifiers-in-windows-operating-systems).  
   
 ## Accessing Remote WMI Object Instances  
  If you need to access WCF WMI instances on a remote machine, you must enable packet privacy on the tools that you use for access. The following section describes how to achieve these using the WMI CIM Studio, Windows Management Instrumentation Tester, as well as .NET SDK 2.0.  
   
-### WMI CIM Studio  
- If you have installed [WMI Administrative Tools](https://go.microsoft.com/fwlink/?LinkId=95185), you can use the WMI CIM Studio to access WMI instances. The tools are in the following folder  
+### WMI CIM Studio
+
+If you've installed WMI Administrative Tools, you can use the WMI CIM Studio to access WMI instances. The tools are in the following folder:
   
- **%windir%\Program Files\WMI Tools\\**  
+*%windir%\Program Files\WMI Tools\\*
   
-1.  In the **Connect to namespace:** window, type **root\ServiceModel** and click **OK.**  
+1. In the **Connect to namespace:** window, type **root\ServiceModel** and click **OK.**  
   
-2.  In the **WMI CIM Studio Login** window, click the **Options >>** button to expand the window. Select **Packet privacy** for **Authentication level**, and click **OK**.  
+2. In the **WMI CIM Studio Login** window, click the **Options >>** button to expand the window. Select **Packet privacy** for **Authentication level**, and click **OK**.  
   
 ### Windows Management Instrumentation Tester  
  This tool is installed by Windows. To run it, launch a command console by typing **cmd.exe** in the **Start/Run** dialog box and click **OK**. Then, type **wbemtest.exe** in the command window. The Windows Management Instrumentation Tester tool is then launched.  
   
-1.  Click the **Connect** button on the top right corner of the window.  
+1. Click the **Connect** button on the top right corner of the window.  
   
-2.  In the new window, enter **root\ServiceModel** for the **Namespace** field, and select **Packet privacy** for **Authentication level**. Click **Connect**.  
+2. In the new window, enter **root\ServiceModel** for the **Namespace** field, and select **Packet privacy** for **Authentication level**. Click **Connect**.  
   
 ### Using Managed Code  
  You can also access remote WMI instances programmatically by using classes provided by the <xref:System.Management> namespace. The following code sample demonstrates how to do this.  

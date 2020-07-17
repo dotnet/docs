@@ -1,5 +1,5 @@
 ---
-title: "How to: Query LINQ to XML Using XPath (Visual Basic)"
+title: "How to: Query LINQ to XML Using XPath"
 ms.date: 07/20/2015
 ms.assetid: e1f69a20-1efa-452d-9089-c472fa84b3d5
 ---
@@ -36,5 +36,6 @@ Next
 <Child2>6</Child2>  
 ```  
   
-## See Also  
- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md)
+## See also
+
+- [Advanced Query Techniques (LINQ to XML) (Visual Basic)](advanced-query-techniques-linq-to-xml.md)

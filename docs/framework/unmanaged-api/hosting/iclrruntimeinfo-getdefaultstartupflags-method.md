@@ -15,22 +15,20 @@ helpviewer_keywords:
 ms.assetid: 35c2173e-3b0b-4b2a-950d-e0a01c6df052
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeInfo::GetDefaultStartupFlags Method
 Gets the startup flags and host configuration file that will be used to start the runtime.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDefaultStartupFlags(  
      [out]  DWORD *pdwStartupFlags,  
      [out, size_is(*pcchHostConfigFile)] LPWSTR pwzHostConfigFile,  
      [in, out]  DWORD *pcchHostConfigFile);  
 ```  
   
-#### Parameters  
+## Parameters  
  `pdwStartupFlags`  
  [out] A pointer to the host startup flags that are currently set.  
   
@@ -48,10 +46,10 @@ HRESULT GetDefaultStartupFlags(
 |S_OK|The method completed successfully.|  
   
 ## Remarks  
- This method returns the default flag values (`STARTUP_CONCURRENT_GC` and `NULL`), or the values provided by a previous call to the [ICLRRuntimeInfo::SetDefaultStartupFlags method](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-setdefaultstartupflags-method.md), or the values set by any of the `CorBind*` methods if they are bound to this runtime.  
+ This method returns the default flag values (`STARTUP_CONCURRENT_GC` and `NULL`), or the values provided by a previous call to the [ICLRRuntimeInfo::SetDefaultStartupFlags method](iclrruntimeinfo-setdefaultstartupflags-method.md), or the values set by any of the `CorBind*` methods if they are bound to this runtime.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -59,7 +57,8 @@ HRESULT GetDefaultStartupFlags(
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v40plus](../../../../includes/net-current-v40plus-md.md)]  
   
-## See Also  
- [ICLRRuntimeInfo Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimeinfo-interface.md)  
- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)  
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+## See also
+
+- [ICLRRuntimeInfo Interface](iclrruntimeinfo-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

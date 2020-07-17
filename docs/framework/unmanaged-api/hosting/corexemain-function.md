@@ -17,29 +17,27 @@ helpviewer_keywords:
 ms.assetid: 898f76e2-16f4-4a63-b7d9-dad2d3824d8a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # _CorExeMain Function
 Initializes the common language runtime (CLR), locates the managed entry point in the executable assembly's CLR header, and begins execution.  
   
 ## Syntax  
   
-```  
+```cpp  
 __int32 STDMETHODCALLTYPE _CorExeMain ();  
 ```  
   
 ## Remarks  
- This function is called by the loader in processes created from managed executable assemblies. For DLL assemblies, the loader calls the [_CorDllMain](../../../../docs/framework/unmanaged-api/hosting/cordllmain-function.md) function instead.  
+ This function is called by the loader in processes created from managed executable assemblies. For DLL assemblies, the loader calls the [_CorDllMain](cordllmain-function.md) function instead.  
   
  The operating system loader calls this method regardless of the entry point specified in the image file.  
   
  In Windows 98, Windows ME, Windows NT, and Windows 2000, the `_CorExeMain` function is called indirectly through a fixup in the operating system loader. In all other versions of Windows, it is called directly by the operating system loader.  
   
- For additional information, see the Remarks section in the [_CorValidateImage](../../../../docs/framework/unmanaged-api/hosting/corvalidateimage-function.md) topic.  
+ For additional information, see the Remarks section in the [_CorValidateImage](corvalidateimage-function.md) topic.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -47,5 +45,6 @@ __int32 STDMETHODCALLTYPE _CorExeMain ();
   
  **.NET Framework Versions:** [!INCLUDE[net_current_v10plus](../../../../includes/net-current-v10plus-md.md)]  
   
-## See Also  
- [Metadata Global Static Functions](../../../../docs/framework/unmanaged-api/metadata/metadata-global-static-functions.md)
+## See also
+
+- [Metadata Global Static Functions](../metadata/metadata-global-static-functions.md)

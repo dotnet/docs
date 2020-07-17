@@ -1,5 +1,6 @@
 ---
 title: "Using an Asynchronous Client Socket"
+description: This example shows an asynchronous client socket. .NET Framework asynchronous programming lets an application continue to run while processing a connection.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -40,7 +41,7 @@ End Sub 'Connect
   
 ```csharp  
 public static void Connect(EndPoint remoteEP, Socket client) {  
-    client.BeginConnect(remoteEP,   
+    client.BeginConnect(remoteEP,
         new AsyncCallback(ConnectCallback), client );  
   
    connectDone.WaitOne();  
@@ -156,11 +157,11 @@ private static void SendCallback(IAsyncResult ar) {
 ```vb  
 Public Class StateObject  
     ' Client socket.  
-    Public workSocket As Socket = Nothing   
+    Public workSocket As Socket = Nothing
     ' Size of receive buffer.  
     Public BufferSize As Integer = 256  
     ' Receive buffer.  
-    Public buffer(256) As Byte   
+    Public buffer(256) As Byte
     ' Received data string.  
     Public sb As New StringBuilder()  
 End Class 'StateObject  
@@ -220,7 +221,7 @@ private static void Receive(Socket client) {
 ```vb  
 Private Shared Sub ReceiveCallback(ar As IAsyncResult)  
     Try  
-        ' Retrieve the state object and the client socket   
+        ' Retrieve the state object and the client socket
         ' from the asynchronous state object.  
         Dim state As StateObject = CType(ar.AsyncState, StateObject)  
         Dim client As Socket = state.workSocket  
@@ -253,7 +254,7 @@ End Sub 'ReceiveCallback
 ```csharp  
 private static void ReceiveCallback( IAsyncResult ar ) {  
     try {  
-        // Retrieve the state object and the client socket   
+        // Retrieve the state object and the client socket
         // from the asynchronous state object.  
         StateObject state = (StateObject) ar.AsyncState;  
         Socket client = state.workSocket;  
@@ -279,7 +280,8 @@ private static void ReceiveCallback( IAsyncResult ar ) {
 }  
 ```  
   
-## See Also  
- [Using a Synchronous Client Socket](../../../docs/framework/network-programming/using-a-synchronous-client-socket.md)  
- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)  
- [Asynchronous Client Socket Example](../../../docs/framework/network-programming/asynchronous-client-socket-example.md)
+## See also
+
+- [Using a Synchronous Client Socket](using-a-synchronous-client-socket.md)
+- [Listening with Sockets](listening-with-sockets.md)
+- [Asynchronous Client Socket Example](asynchronous-client-socket-example.md)

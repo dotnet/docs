@@ -1,5 +1,5 @@
 ---
-title: "Off (Visual Basic)"
+title: "Off"
 ms.date: 07/20/2015
 f1_keywords: 
   - "Off"
@@ -14,11 +14,12 @@ Turns a compiler option off.
 ## Remarks  
  The `Off` keyword can be used in these contexts:  
   
- [Option Explicit Statement](../../visual-basic/language-reference/statements/option-explicit-statement.md)  
+ [Option Explicit Statement](../language-reference/statements/option-explicit-statement.md)  
   
- [Option Strict Statement](../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [Option Strict Statement](../language-reference/statements/option-strict-statement.md)  
   
- [Option Infer Statement](../../visual-basic/language-reference/statements/option-infer-statement.md)  
+ [Option Infer Statement](../language-reference/statements/option-infer-statement.md)  
   
-## See Also  
- [Keywords](../../visual-basic/language-reference/keywords/index.md)
+## See also
+
+- [Keywords](../language-reference/keywords/index.md)

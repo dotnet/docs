@@ -1,5 +1,5 @@
 ---
-title: "Constants Overview (Visual Basic)"
+title: "Constants Overview"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "constants [Visual Basic]"
@@ -14,7 +14,7 @@ A constant is a meaningful name that takes the place of a number or string that 
  A constant's scope, which is the set of all code that can refer to it without qualifying its name, is the same as that of a variable declared in the same location. To create a constant that exists within the scope of a particular procedure, declare it inside that procedure. To create a constant that is available throughout an application, declare it using the `Public` keyword in the declarations section of the class.  
   
 > [!NOTE]
->  Although constants somewhat resemble variables, you cannot modify them or assign new values to them as you can to variables.  
+> Although constants somewhat resemble variables, you cannot modify them or assign new values to them as you can to variables.  
   
  The constants you use in your code can be defined by the object model for controls or components you work with, or they can be user-defined (that is, those you create yourself).  
   
@@ -25,19 +25,20 @@ A constant is a meaningful name that takes the place of a number or string that 
   
 |Definition|Term|  
 |---|---|  
-|[How to: Declare A Constant](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-a-constant.md)|Explains how to use the `Const` statement to declare a constant and set its value; by declaring a constant, you assign a meaningful name to the value.|  
-|[User-Defined Constants](../../../../visual-basic/programming-guide/language-features/constants-enums/user-defined-constants.md)|Describes how to create your own constants, including information on scoping and how to avoid circular references.|  
-|[Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)|Provides information on how the Visual Basic compiler initializes constants when `Option Explicit` is turned off.|  
-|[How to: Group Related Constant Values Together](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-group-related-constant-values-together.md)|Demonstrates how to group constant values that are related.|  
+|[How to: Declare A Constant](how-to-declare-a-constant.md)|Explains how to use the `Const` statement to declare a constant and set its value; by declaring a constant, you assign a meaningful name to the value.|  
+|[User-Defined Constants](user-defined-constants.md)|Describes how to create your own constants, including information on scoping and how to avoid circular references.|  
+|[Constant and Literal Data Types](constant-and-literal-data-types.md)|Provides information on how the Visual Basic compiler initializes constants when `Option Explicit` is turned off.|  
+|[How to: Group Related Constant Values Together](how-to-group-related-constant-values-together.md)|Demonstrates how to group constant values that are related.|  
   
 ## Reference  
   
 |Definition|Term|  
 |---|---|  
-|[Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)|Lists the constants predefined by Visual Basic.|  
-|[Const Statement](../../../../visual-basic/language-reference/statements/const-statement.md)|Describes the `Const` statement and its use.|  
-|[Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)|Describes the `Option Strict` statement and its use.|  
+|[Constants and Enumerations](../../../language-reference/constants-and-enumerations.md)|Lists the constants predefined by Visual Basic.|  
+|[Const Statement](../../../language-reference/statements/const-statement.md)|Describes the `Const` statement and its use.|  
+|[Option Strict Statement](../../../language-reference/statements/option-strict-statement.md)|Describes the `Option Strict` statement and its use.|  
   
-## See Also  
- [Enumerations Overview](../../../../visual-basic/programming-guide/language-features/constants-enums/enumerations-overview.md)  
- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)
+## See also
+
+- [Enumerations Overview](enumerations-overview.md)
+- [How to: Initialize an Array Variable in Visual Basic](../arrays/how-to-initialize-an-array-variable.md)

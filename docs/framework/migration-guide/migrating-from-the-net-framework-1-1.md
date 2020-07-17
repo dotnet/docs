@@ -1,5 +1,6 @@
 ---
 title: "Migrating from the .NET Framework 1.1"
+description: Learn about the steps required to run an application compiled using .NET Framework 1.1 on Windows 7 or later.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - ".NET Framework 4.5, migrating from 1.1"

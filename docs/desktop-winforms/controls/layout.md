@@ -104,7 +104,7 @@ The <xref:System.Windows.Forms.Panel> control is similar to a form in that it si
 
 A panel blends in seamlessly with the parent, and it does cut off any area of a control that falls out of bounds of the panel. If a control falls outside the bounds of the panel and <xref:System.Windows.Forms.Form.AutoScroll> is set to `true`, scroll bars appear and the user can scroll the panel.
 
-Unlike the [group box](#container-groupbox) control, a panel doesn't have a caption and border.
+Unlike the [group box](#container-group-box) control, a panel doesn't have a caption and border.
 
 :::image type="content" source="media/layout/panel-groupbox.png" alt-text="A Windows Form with a panel and group box.":::
 

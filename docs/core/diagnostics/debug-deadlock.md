@@ -10,7 +10,7 @@ ms.date: 07/16/2020
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-In this scenario, the endpoint will experience a hang and thread accumulation. We'll show how you can use various tools to analyze the problem.
+In this scenario, the endpoint will experience a hang, and thread accumulation. We'll show how you can use various tools to analyze the problem., such as code dumps,
 
 ## Preparing
 
@@ -87,11 +87,8 @@ Since we're looking at a potential hang, we want an overall feel for the thread 
  24 0x1DC23 (121891)
  25 0x1DC24 (121892)
  26 0x1DC25 (121893)
-
 ...
-
 ...
-
  317 0x1DD48 (122184)
  318 0x1DD49 (122185)
  319 0x1DD4A (122186)
@@ -190,7 +187,6 @@ OS Thread Id: 0x1dc88
 00007F2ADFFAED70 00007f30593044af [DebuggerU2MCatchHandlerFrame: 00007f2adffaed70]
 ...
 ...
-...
 ```
 
 Eye balling the callstacks for all 300+ threads shows a pattern where a majority of the threads share a common callstack:
@@ -259,7 +255,6 @@ OS Thread Id: 0x1dc1e (21)
 00007F2B85AB8980 00007F2FE02B7CBE System.Threading.ThreadHelper.ThreadStart() [/__w/3/s/src/System.Private.CoreLib/src/System/Threading/Thread.CoreCLR.cs @ 101]
 00007F2B85AB8CA0 00007f30593044af [GCFrame: 00007f2b85ab8ca0]
 00007F2B85AB8D70 00007f30593044af [DebuggerU2MCatchHandlerFrame: 00007f2b85ab8d70]
-
 ```
 
 The second thread is similar. It's also trying to acquire a lock that it already owns. The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock.

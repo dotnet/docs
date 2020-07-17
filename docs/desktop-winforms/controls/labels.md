@@ -17,9 +17,9 @@ Windows Forms <xref:System.Windows.Forms.Label> controls are used to display tex
 
 ## Working with the Label Control  
 
-Because the <xref:System.Windows.Forms.Label> control can't receive focus, it can be used to create access keys for other controls. An access key allows a user to focus the next control in tab order by pressing the <kbd>Alt</kbd> key with the chosen access key. For more information, see [Use a label to focus a control](how-to-create-access-keys-for-windows-forms-controls.md#use-a-label-to-focus-a-control).
+Because the <xref:System.Windows.Forms.Label> control can't receive focus, it can be used to create access keys for other controls. An access key allows a user to focus the next control in tab order by pressing the <kbd>Alt</kbd> key with the chosen access key. For more information, see [Use a label to focus a control](how-to-create-access-keys.md#use-a-label-to-focus-a-control).
   
-The caption displayed in the label is contained in the <xref:System.Windows.Forms.Label.Text%2A> property. The <xref:System.Windows.Forms.Label.TextAlign%2A> property allows you to set the alignment of the text within the label. For more information, see [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md).
+The caption displayed in the label is contained in the <xref:System.Windows.Forms.Label.Text%2A> property. The <xref:System.Windows.Forms.Label.TextAlign%2A> property allows you to set the alignment of the text within the label. For more information, see [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-display-text.md).
 
 ## See also
 

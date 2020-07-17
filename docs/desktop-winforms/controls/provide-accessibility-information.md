@@ -16,11 +16,11 @@ dev_langs:
 
 Accessibility aids are specialized programs and devices that help people with disabilities use computers more effectively. Examples include screen readers for people who are blind and voice input utilities for people who provide verbal commands instead of using the mouse or keyboard. These accessibility aids interact with the accessibility properties exposed by Windows Forms controls. These properties are:
 
-- <xref:System.Windows.Forms.AccessibleObject>
-- <xref:System.Windows.Forms.AccessibleDefaultActionDescription>
-- <xref:System.Windows.Forms.AccessibleDescription>
-- <xref:System.Windows.Forms.AccessibleName>
-- <xref:System.Windows.Forms.AccessibleRole>
+- <xref:System.Windows.Forms.AccessibleObject?displayProperty=fullName>
+- <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription?displayProperty=fullName>
+- <xref:System.Windows.Forms.Control.AccessibleDescription?displayProperty=fullName>
+- <xref:System.Windows.Forms.Control.AccessibleName?displayProperty=fullName>
+- <xref:System.Windows.Forms.AccessibleRole?displayProperty=fullName>
 
 ## AccessibilityObject Property
 
@@ -28,7 +28,7 @@ This read-only property contains an <xref:System.Windows.Forms.AccessibleObject>
 
 ## AccessibleDefaultActionDescription Property
 
-This string describes the action of the control. It does not appear in the Properties window and may only be set in code. The following example sets the <xref:System.Windows.Forms.AccessibleDefaultActionDescription> property for a button control:
+This string describes the action of the control. It does not appear in the Properties window and may only be set in code. The following example sets the <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription> property for a button control:
 
 ```vb
 Button1.AccessibleDefaultActionDescription = "Closes the application."
@@ -44,7 +44,7 @@ button1->AccessibleDefaultActionDescription = "Closes the application.";
 
 ## AccessibleDescription Property
 
-This string describes the control. The <xref:System.Windows.Forms.AccessibleDescription> property may be set in the Properties window, or in code as follows:
+This string describes the control. The <xref:System.Windows.Forms.Control.AccessibleDescription> property may be set in the Properties window, or in code as follows:
 
 ```vb
 Button1.AccessibleDescription = "A button with text 'Exit'."
@@ -60,7 +60,7 @@ button1->AccessibleDescription = "A button with text 'Exit'";
 
 ## AccessibleName Property
 
-This is the name of a control reported to accessibility aids. The <xref:System.Windows.Forms.AccessibleName> property may be set in the Properties window, or in code as follows:
+This is the name of a control reported to accessibility aids. The <xref:System.Windows.Forms.Control.AccessibleName> property may be set in the Properties window, or in code as follows:
 
 ```vb
 Button1.AccessibleName = "Order"
@@ -93,9 +93,9 @@ pictureBox1->AccessibleRole = AccessibleRole::Chart;
 ## See also
 
 - <xref:System.Windows.Forms.AccessibleObject>
-- <xref:System.Windows.Forms.Control.AccessibilityObject%2A?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription%2A?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Control.AccessibleDescription%2A?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Control.AccessibleName%2A?displayProperty=nameWithType>
-- <xref:System.Windows.Forms.Control.AccessibleRole%2A?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibilityObject?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleDefaultActionDescription?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleDescription?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleName?displayProperty=nameWithType>
+- <xref:System.Windows.Forms.Control.AccessibleRole?displayProperty=nameWithType>
 - <xref:System.Windows.Forms.AccessibleRole>

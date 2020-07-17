@@ -1,6 +1,6 @@
 ---
 title: Runtime and retargeting changes - .NET Framework
-description: Learn about application compatibility in the .NET Framework and how it is affected by runtime and retargeting changes when migrating to another version.
+description: Learn about application compatibility in the .NET Framework and how it's affected by runtime and retargeting changes when migrating to another version.
 ms.date: 10/29/2019
 helpviewer_keywords:
   - "application compatibility"

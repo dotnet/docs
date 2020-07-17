@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
 ---
 # Mitigation: New 64-bit JIT Compiler
-Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT compiler for just-in-time compilation. This change does not affect compilation with the 32-bit JIT compiler.  
+Starting with .NET Framework 4.6, the runtime includes a new 64-bit JIT compiler for just-in-time compilation. This change does not affect compilation with the 32-bit JIT compiler.  
   
 ## Unexpected behavior or exceptions  
  In some cases, compilation with the new 64-bit JIT compiler results in a runtime exception or in behavior that is not observed when executing code compiled by the older 64-bit JIT compiler. The known differences include the following:  

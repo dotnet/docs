@@ -27,7 +27,7 @@ The configuration sections schema contains elements that define custom settings 
 
 <a name="dep"></a>
 
-## Deprecated elements
+## Unimplemented elements
 
 The following elements have no impact and should not be used:
 

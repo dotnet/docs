@@ -31,8 +31,6 @@ None
 | --- | ----------- |
 | [**\<section>**](section-element.md) | Contains a configuration section declaration. |
 | [**\<sectionGroup>**](sectiongroup-element-for-configsections.md) | Defines a namespace for configuration sections. |
-| [**\<remove>**](remove-element-for-configsections.md) | Removes a predefined section or section group. |
-| [**\<clear>**](clear-element-for-configsections.md) | Clears all previously defined sections and section groups. |
 
 ## Remarks
 

@@ -1,5 +1,6 @@
 ---
 title: "Using the StringBuilder Class in .NET"
+description: Learn how to use the StringBuilder class in .NET. Use this class to modify a string without creating a new object.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -60,7 +61,7 @@ The <xref:System.String> object is immutable. Every time you use one of the meth
 |<xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>|Replaces a format specifier passed in a string with formatted text.|  
 |<xref:System.Text.StringBuilder.Insert%2A?displayProperty=nameWithType>|Inserts a string or object into the specified index of the current **StringBuilder**.|  
 |<xref:System.Text.StringBuilder.Remove%2A?displayProperty=nameWithType>|Removes a specified number of characters from the current **StringBuilder**.|  
-|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Replaces a specified character at a specified index.|  
+|<xref:System.Text.StringBuilder.Replace%2A?displayProperty=nameWithType>|Replaces all occurrences of a specified character or string in the current **StringBuilder** with another specified character or string.|  
   
 ### Append  
  The **Append** method can be used to add text or a string representation of an object to the end of a string represented by the current **StringBuilder**. The following example initializes a **StringBuilder** to "Hello World" and then appends some text to the end of the object. Space is allocated automatically as needed.  

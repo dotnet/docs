@@ -6,7 +6,7 @@ Class Base
         For Each b As Base In bases
             Console.WriteLine(b)
         Next
-    End Sub    
+    End Sub
 End Class
 
 Class Derived

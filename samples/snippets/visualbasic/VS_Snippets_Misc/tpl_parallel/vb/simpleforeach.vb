@@ -11,7 +11,7 @@ Module ForEachDemo
         Dim files As String() = Directory.GetFiles("C:\Users\Public\Pictures\Sample Pictures", "*.jpg")
         Dim newDir As String = "C:\Users\Public\Pictures\Sample Pictures\Modified"
         Directory.CreateDirectory(newDir)
-       
+
         Parallel.ForEach(files, Sub(currentFile)
                                     ' The more computational work you do here, the greater 
                                     ' the speedup compared to a sequential foreach loop.

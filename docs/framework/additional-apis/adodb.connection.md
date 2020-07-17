@@ -1,5 +1,6 @@
 ---
 title: Connection Interface (adodb)
+description: See reference information for the Connection interface in .NET. This interface is in the adodb namespace and the adodb assembly (in the adodb.dll library).
 ms.date: 03/28/2019
 topic_type:
   - "apiref"

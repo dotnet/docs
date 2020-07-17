@@ -1,5 +1,6 @@
 ---
 title: "How to: Cancel a Task and Its Children"
+description: See examples of how to cancel a task and its children in .NET. The examples cover steps from cancelable task creation, to the notice that the task was canceled.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

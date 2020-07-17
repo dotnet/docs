@@ -44,7 +44,7 @@ Module Module1
     ' From Lambda Expressions topic
     '<Snippet12>
     ' Definition of function delegate ExampleDel.
-    Delegate Function ExampleDel(ByVal arg1 As Integer, 
+    Delegate Function ExampleDel(ByVal arg1 As Integer,
                                  ByVal arg2 As String) As Integer
     '</Snippet12>
 

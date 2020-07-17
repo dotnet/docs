@@ -1,5 +1,6 @@
 ---
 title: "How to: Write a Parallel.For Loop with Thread-Local Variables"
+description: See an example of how to write a Parallel.For loop in .NET that uses thread-local variables, which store and retrieve state in each separate task in the loop.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

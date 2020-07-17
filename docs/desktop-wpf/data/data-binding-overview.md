@@ -1,7 +1,7 @@
 ---
 title: Data binding overview
 description: Learn about the different data sources you can add to your project in Windows Presentation Foundation for .NET Core. Data sources can be bound to XAML elements to create dynamic apps.
-author: thraka
+author: adegeo
 ms.date: 09/19/2019
 ms.author: adegeo
 dev_langs:
@@ -185,7 +185,7 @@ A <xref:System.Windows.Data.BindingExpression> object is returned by calling <xr
 
 In the [Creating a binding](#creating-a-binding) section, the button is red because its <xref:System.Windows.Controls.Control.Background%2A> property is bound to a string property with the value "Red". This string value works because a type converter is present on the <xref:System.Windows.Media.Brush> type to convert the string value to a <xref:System.Windows.Media.Brush>.
 
-Adding this information to the figure the [Creating a Binding](#creating-a-binding) section looks like this.
+Adding this information to the figure in the [Creating a Binding](#creating-a-binding) section looks like this.
 
 ![Diagram that shows the data binding Default property.](./media/data-binding-overview/data-binding-button-default-conversion.png)
 

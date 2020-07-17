@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous File I/O"
+description: Read about asynchronous file I/O in .NET. Learn async methods to simplify asynchronous operations, such as ReadAsync, WriteAsync, and more.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:

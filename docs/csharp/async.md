@@ -144,7 +144,7 @@ private async void OnSeeTheDotNetsButtonClick(object sender, RoutedEventArgs e)
     NetworkProgressBar.IsEnabled = true;
     NetworkProgressBar.Visibility = Visibility.Visible;
 
-    // The await operator suspends SeeTheDotNets_Click, returning control to its caller.
+    // The await operator suspends OnSeeTheDotNetsButtonClick(), returning control to its caller.
     // This is what allows the app to be responsive and not block the UI thread.
     var html = await getDotNetFoundationHtmlTask;
     int count = Regex.Matches(html, @"\.NET").Count;
@@ -201,7 +201,7 @@ public static async Task<User[]> GetUsersAsync(IEnumerable<int> userIds)
 }
 ```
 
-Although it's less code, take care when mixing LINQ with asynchronous code. Because LINQ uses deferred (lazy) execution, async calls won't happen immediately as they do in a `foreach` loop unless you force the generated sequence to iterate with a call to `.ToList()` or `.ToArray()`.
+Although it's less code, use caution when mixing LINQ with asynchronous code. Because LINQ uses deferred (lazy) execution, async calls won't happen immediately as they do in a `foreach` loop unless you force the generated sequence to iterate with a call to `.ToList()` or `.ToArray()`.
 
 ## Important info and advice
 

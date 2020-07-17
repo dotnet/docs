@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Custom Claim"
+description: Learn how to create a custom claim in WCF. WCF supports a variety of built-in claims and some applications may require custom claims.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

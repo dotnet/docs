@@ -1,11 +1,11 @@
 ---
-title: Create a console application with .NET Core using Visual Studio Code
+title: Create a .NET Core console application using Visual Studio Code
 description: Learn how to create a .NET Core console application using Visual Studio Code and the .NET Core CLI.
 ms.date: 05/22/2020
 ---
-# Tutorial: Create a console application with .NET Core using Visual Studio Code
+# Tutorial: Create a .NET Core console application using Visual Studio Code
 
-This tutorial shows how to create and run a .NET Core console application by using Visual Studio Code and the .NET Core CLI. Project tasks, such as creating, compiling, and running a project are done by using the CLI, so you can follow this tutorial with a different code editor and run commands in a terminal if you prefer.
+This tutorial shows how to create and run a .NET Core console application by using Visual Studio Code and the .NET Core CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET Core CLI. You can follow this tutorial with a different code editor and run commands in a terminal if you prefer.
 
 ## Prerequisites
 
@@ -14,25 +14,29 @@ This tutorial shows how to create and run a .NET Core console application by usi
 
 ## Create the app
 
-1. Open Visual Studio Code.
+Create a .NET Core console app project named "HelloWorld".
 
-1. Create a project.
+1. Start Visual Studio Code.
 
-   1. Select **File** > **Open Folder**/**Open...** from the main menu, create a *HelloWorld* folder, and click **Select Folder**/**Open**.
+1. Select **File** > **Open Folder** (**File** > **Open...** on macOS) from the main menu.
 
-      The folder name becomes the project name and the namespace name by default. You'll add code later in the tutorial that assumes the project namespace is `HelloWorld`.
+1. In the **Open Folder** dialog, create a *HelloWorld* folder and click **Select Folder** (**Open** on macOS).
 
-   1. Open the **Terminal** in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
+   The folder name becomes the project name and the namespace name by default. You'll add code later in the tutorial that assumes the project namespace is `HelloWorld`.
 
-      The **Terminal** opens with the command prompt in the *HelloWorld* folder.
+1. Open the **Terminal** in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
-   1. In the **Terminal**, enter the following command:
+   The **Terminal** opens with the command prompt in the *HelloWorld* folder.
 
-      ```dotnetcli
-      dotnet new console
-      ```
+1. In the **Terminal**, enter the following command:
 
-The Console Application template for .NET Core defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument. The *Program.cs* file has the following code:
+   ```dotnetcli
+   dotnet new console
+   ```
+
+The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window.
+
+The template code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument:
 
 ```csharp
 using System;
@@ -50,8 +54,6 @@ namespace HelloWorld
 ```
 
 `Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
-
-The template creates a simple application that calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window.
 
 ## Run the app
 
@@ -79,11 +81,11 @@ Enhance the application to prompt the user for their name and display it along w
 
    ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
 
-1. Replace the contents of the `Main` method in *Program.cs*, which is currently just the line that calls `Console.WriteLine`, with the following code:
+1. Replace the contents of the `Main` method in *Program.cs*, which is the line that calls `Console.WriteLine`, with the following code:
 
-   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="Snippet1":::
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
 
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the **Enter** key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it displays these values in the console window.
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it displays these values in the console window.
 
    The `\n` represents a newline character.
 
@@ -100,7 +102,7 @@ Enhance the application to prompt the user for their name and display it along w
    dotnet run
    ```
 
-1. Respond to the prompt by entering a name and pressing the **Enter** key.
+1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Terminal window with modified program output":::
 
@@ -112,7 +114,7 @@ Enhance the application to prompt the user for their name and display it along w
 
 ## Next steps
 
-In this tutorial, you created a .NET Core application. In the next tutorial, you debug the app.
+In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
 > [Debug a .NET Core console application using Visual Studio Code](debugging-with-visual-studio-code.md)

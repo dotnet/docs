@@ -8,27 +8,19 @@ items:
 - name: Install
   items:
   - name: Overview
-    href: install/index.md
-  - name: Install SDK
-    href: install/sdk.md
-  - name: Install runtime
-    href: install/runtime.md
-  - name: Supported OS and dependencies
-    href: install/dependencies.md
-  - name: Remove outdated runtimes and SDKs
-    href: install/remove-runtime-sdk-versions.md
-  - name: Manage .NET templates
-    href: install/templates.md
-  - name: macOS Notarization issues
-    href: install/macos-notarization-issues.md
-  - name: How to check .NET Core versions
-    href: install/how-to-detect-installed-versions.md
-  - name: Linux
+    href: install/index.yml
+  - name: Install on Windows
+    href: install/windows.md
+  - name: Install on macOS
+    href: install/macos.md
+  - name: Install on Linux
     items:
     - name: Overview
       href: install/linux.md
     - name: Ubuntu
       href: install/linux-ubuntu.md
+    - name: Alpine
+      href: install/linux-alpine.md
     - name: CentOS
       href: install/linux-centos.md
     - name: Debian
@@ -41,6 +33,14 @@ items:
       href: install/linux-rhel.md
     - name: SLES
       href: install/linux-sles.md
+  - name: Remove outdated runtimes and SDKs
+    href: install/remove-runtime-sdk-versions.md
+  - name: Manage .NET templates
+    href: install/templates.md
+  - name: macOS Notarization issues
+    href: install/macos-notarization-issues.md
+  - name: How to check .NET Core versions
+    href: install/how-to-detect-installed-versions.md
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started
@@ -95,13 +95,13 @@ items:
       displayName: tutorials, visual studio code, vs code
     - name: Publish an app
       href: tutorials/publishing-with-visual-studio-code.md
-      displayName: tutorials, visual studio, vs
+      displayName: tutorials, visual studio code, vs code
     - name: Create a library
       href: tutorials/library-with-visual-studio-code.md
-      displayName: tutorials, visual studio, vs
+      displayName: tutorials, visual studio code, vs code
     - name: Unit test a library
       href: tutorials/testing-library-with-visual-studio-code.md
-      displayName: tutorials, visual studio, vs
+      displayName: tutorials, visual studio code, vs code
     - name: Install and use a package
       href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
       displayName: tutorials, cli
@@ -111,13 +111,25 @@ items:
   - name: Use Visual Studio for Mac
     items:
     - name: Create a console app
-      href: tutorials/using-on-mac-vs.md
-      displayName: tutorials
-    - name: Create a library and unit test it
-      href: tutorials/using-on-mac-vs-full-solution.md
-      displayName: tutorials
+      href: tutorials/with-visual-studio-mac.md
+      displayName: tutorials, visual studio for mac, vs for mac, cli
+    - name: Debug an app
+      href: tutorials/debugging-with-visual-studio-mac.md
+      displayName: tutorials, visual studio for mac, vs for mac
+    - name: Publish an app
+      href: tutorials/publishing-with-visual-studio-mac.md
+      displayName: tutorials, visual studio for mac, vs for mac
+    - name: Create a library
+      href: tutorials/library-with-visual-studio-mac.md
+      displayName: tutorials, visual studio for mac, vs for mac
+    - name: Unit test a library
+      href: tutorials/testing-library-with-visual-studio-mac.md
+      displayName: tutorials, visual studio for mac, vs for mac
     - name: Install and use a package
       href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+      displayName: tutorials, visual studio for mac, vs for mac
+    - name: Create and publish a package
+      href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
       displayName: tutorials
   - name: Advanced topics
     items:
@@ -417,6 +429,8 @@ items:
     href: testing/selective-unit-tests.md
   - name: Order unit tests
     href: testing/order-unit-tests.md
+  - name: Unit test code coverage
+    href: testing/unit-testing-code-coverage.md
   - name: Unit test published output
     href: testing/unit-testing-published-output.md
   - name: Live unit test .NET Core projects with Visual Studio

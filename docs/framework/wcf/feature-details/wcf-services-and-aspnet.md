@@ -1,5 +1,6 @@
 ---
 title: "WCF services and ASP.NET"
+description: Learn about hosting WCF services side-by-side with ASP.NET and hosting them in ASP.NET compatibility mode.
 ms.date: "03/30/2017"
 ms.assetid: b980496a-f0b0-4319-8e55-a0f0fa32da70
 ---

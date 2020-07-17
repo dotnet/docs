@@ -171,48 +171,48 @@ Imports System.Globalization
 Imports System.Threading
 
 Module NumericFormats
-   Public Sub Main()
-      ' Display string representations of numbers for en-us culture
-      Dim ci As New CultureInfo("en-us")
-      
-      ' Output floating point values
-      Dim floating As Double = 10761.937554
-      Console.WriteLine("C: {0}", _
-              floating.ToString("C", ci))           ' Displays "C: $10,761.94"
-      Console.WriteLine("E: {0}", _
-              floating.ToString("E03", ci))         ' Displays "E: 1.076E+004"
-      Console.WriteLine("F: {0}", _
-              floating.ToString("F04", ci))         ' Displays "F: 10761.9376"         
-      Console.WriteLine("G: {0}", _ 
-              floating.ToString("G", ci))           ' Displays "G: 10761.937554"
-      Console.WriteLine("N: {0}", _
-              floating.ToString("N03", ci))         ' Displays "N: 10,761.938"
-      Console.WriteLine("P: {0}", _
-              (floating/10000).ToString("P02", ci)) ' Displays "P: 107.62 %"
-      Console.WriteLine("R: {0}", _
-              floating.ToString("R", ci))           ' Displays "R: 10761.937554"            
-      Console.WriteLine()
-      
-      ' Output integral values
-      Dim integral As Integer = 8395
-      Console.WriteLine("C: {0}", _
-              integral.ToString("C", ci))           ' Displays "C: $8,395.00"
-      Console.WriteLine("D: {0}", _
-              integral.ToString("D6"))              ' Displays "D: 008395" 
-      Console.WriteLine("E: {0}", _
-              integral.ToString("E03", ci))         ' Displays "E: 8.395E+003"
-      Console.WriteLine("F: {0}", _
-              integral.ToString("F01", ci))         ' Displays "F: 8395.0"    
-      Console.WriteLine("G: {0}", _ 
-              integral.ToString("G", ci))           ' Displays "G: 8395"
-      Console.WriteLine("N: {0}", _
-              integral.ToString("N01", ci))         ' Displays "N: 8,395.0"
-      Console.WriteLine("P: {0}", _
-              (integral/10000).ToString("P02", ci)) ' Displays "P: 83.95 %"
-      Console.WriteLine("X: 0x{0}", _
-              integral.ToString("X", ci))           ' Displays "X: 0x20CB"
-      Console.WriteLine()
-   End Sub
+    Public Sub Main()
+        ' Display string representations of numbers for en-us culture
+        Dim ci As New CultureInfo("en-us")
+
+        ' Output floating point values
+        Dim floating As Double = 10761.937554
+        Console.WriteLine("C: {0}", _
+                floating.ToString("C", ci))           ' Displays "C: $10,761.94"
+        Console.WriteLine("E: {0}", _
+                floating.ToString("E03", ci))         ' Displays "E: 1.076E+004"
+        Console.WriteLine("F: {0}", _
+                floating.ToString("F04", ci))         ' Displays "F: 10761.9376"         
+        Console.WriteLine("G: {0}", _
+                floating.ToString("G", ci))           ' Displays "G: 10761.937554"
+        Console.WriteLine("N: {0}", _
+                floating.ToString("N03", ci))         ' Displays "N: 10,761.938"
+        Console.WriteLine("P: {0}", _
+                (floating / 10000).ToString("P02", ci)) ' Displays "P: 107.62 %"
+        Console.WriteLine("R: {0}", _
+                floating.ToString("R", ci))           ' Displays "R: 10761.937554"            
+        Console.WriteLine()
+
+        ' Output integral values
+        Dim integral As Integer = 8395
+        Console.WriteLine("C: {0}", _
+                integral.ToString("C", ci))           ' Displays "C: $8,395.00"
+        Console.WriteLine("D: {0}", _
+                integral.ToString("D6"))              ' Displays "D: 008395" 
+        Console.WriteLine("E: {0}", _
+                integral.ToString("E03", ci))         ' Displays "E: 8.395E+003"
+        Console.WriteLine("F: {0}", _
+                integral.ToString("F01", ci))         ' Displays "F: 8395.0"    
+        Console.WriteLine("G: {0}", _
+                integral.ToString("G", ci))           ' Displays "G: 8395"
+        Console.WriteLine("N: {0}", _
+                integral.ToString("N01", ci))         ' Displays "N: 8,395.0"
+        Console.WriteLine("P: {0}", _
+                (integral / 10000).ToString("P02", ci)) ' Displays "P: 83.95 %"
+        Console.WriteLine("X: 0x{0}", _
+                integral.ToString("X", ci))           ' Displays "X: 0x20CB"
+        Console.WriteLine()
+    End Sub
 End Module
 ' </Snippet1>
 

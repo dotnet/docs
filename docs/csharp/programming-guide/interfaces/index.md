@@ -44,7 +44,7 @@ A base class can also implement interface members by using virtual members. In t
 
 An interface has the following properties:
 
-- An interface is typically like an abstract base class with only abstract members. Any class or struct that implements the interface must implement all its members. Optionally, an interface may define default implementations for some or all of its members.
+- An interface is typically like an abstract base class with only abstract members. Any class or struct that implements the interface must implement all its members. Optionally, an interface may define default implementations for some or all of its members. For more information, see [default interface methods](../../tutorials/default-interface-methods-versions.md).
 - An interface can't be instantiated directly. Its members are implemented by any class or struct that implements the interface.
 - A class or struct can implement multiple interfaces. A class can inherit a base class and also implement one or more interfaces.
 
@@ -55,12 +55,13 @@ An interface has the following properties:
 - [How to implement interface events](../events/how-to-implement-interface-events.md)
 - [Classes and Structs](../classes-and-structs/index.md)  
 - [Inheritance](../classes-and-structs/inheritance.md)  
+- [Interfaces](../../language-reference/keywords/interface.md)
 - [Methods](../classes-and-structs/methods.md)  
 - [Polymorphism](../classes-and-structs/polymorphism.md)  
 - [Abstract and Sealed Classes and Class Members](../classes-and-structs/abstract-and-sealed-classes-and-class-members.md)  
 - [Properties](../classes-and-structs/properties.md)  
 - [Events](../events/index.md)  
-- [Indexers](../indexers/index.md)  
+- [Indexers](../indexers/index.md)
   
 ## See also
 

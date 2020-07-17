@@ -1,5 +1,6 @@
 ---
 title: "Creating New Strings in .NET"
+description: Learn to create strings using assignment, class constructors, or System.String methods that combine several strings, arrays of strings, or objects in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

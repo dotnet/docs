@@ -1,5 +1,6 @@
 ---
 title: "Grouping Constructs in Regular Expressions"
+description: Learn to use grouping constructs in .NET. Grouping constructs delineate subexpressions of a regular expression and capture substrings of an input string.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

@@ -1,5 +1,6 @@
 ---
 title: "BlockingCollection Overview"
+description: Read about BlockingCollection<T>, a thread-safe collection class in .NET. This class offers features like concurrent adding & taking of items from many threads.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

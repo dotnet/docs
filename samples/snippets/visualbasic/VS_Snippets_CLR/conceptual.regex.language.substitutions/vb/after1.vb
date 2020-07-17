@@ -5,18 +5,18 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim input As String = "aa1bb2cc3dd4ee5"
-      Dim pattern As String = "\d+"
-      Dim substitution As String = "$'"
-      Console.WriteLine("Matches:")
-      For Each match As Match In Regex.Matches(input, pattern)
-         Console.WriteLine("   {0} at position {1}", match.Value, match.Index)
-      Next   
-      Console.WriteLine("Input string:  {0}", input)
-      Console.WriteLine("Output string: " + _
-                        Regex.Replace(input, pattern, substitution))
-   End Sub
+    Public Sub Main()
+        Dim input As String = "aa1bb2cc3dd4ee5"
+        Dim pattern As String = "\d+"
+        Dim substitution As String = "$'"
+        Console.WriteLine("Matches:")
+        For Each match As Match In Regex.Matches(input, pattern)
+            Console.WriteLine("   {0} at position {1}", match.Value, match.Index)
+        Next
+        Console.WriteLine("Input string:  {0}", input)
+        Console.WriteLine("Output string: " + _
+                          Regex.Replace(input, pattern, substitution))
+    End Sub
 End Module
 ' The example displays the following output:
 '    Matches:

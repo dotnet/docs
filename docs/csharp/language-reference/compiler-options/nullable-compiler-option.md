@@ -1,5 +1,7 @@
 ---
 title: "-nullable (C# Compiler Options)"
+author: IEvangelist
+ms.author: dapine
 ms.date: 06/04/2020
 f1_keywords:
   - "/nullable"
@@ -37,13 +39,13 @@ Invocation of methods annotated with the following attributes will also affect f
 - Simple pre-conditions: <xref:System.Diagnostics.CodeAnalysis.AllowNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.DisallowNullAttribute>
 - Simple post-conditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullAttribute>
 - Conditional post-conditions: <xref:System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute> and <xref:System.Diagnostics.CodeAnalysis.NotNullWhenAttribute>
-- <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute> (e.g. `DoesNotReturnIf(false)` for <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>) and <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute>
+- <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute> (for example, `DoesNotReturnIf(false)` for <xref:System.Diagnostics.Debug.Assert%2A?displayProperty=nameWithType>) and <xref:System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute>
 - <xref:System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute>
 - Member post-conditions: <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String)> and <xref:System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.%23ctor(System.String[])>
 
 ### To set this compiler option in a project
 
-Edit the *.csproj* to add the `<Nullable>` tag within a `Project/PropertyGroup` hierarchy:
+Edit the *.csproj* file to add the `<Nullable>` tag within a `Project/PropertyGroup` hierarchy:
 
 ```xml
 <Project Sdk="...">

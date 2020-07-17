@@ -1,5 +1,6 @@
 ---
 title: "Semaphore and SemaphoreSlim"
+description: Learn about Semaphore & SemaphoreSlim. Class Semaphore is a thin wrapper around the Win32 semaphore object. Class SemaphoreSlim is a fast lightweight semaphore.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

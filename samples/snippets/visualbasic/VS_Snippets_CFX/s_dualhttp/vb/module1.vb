@@ -121,18 +121,18 @@ Namespace CS
             MyBase.New()
             Initialize()
         End Sub
-       
+
         Public Property MaxBufferedChunks() As Integer
             Get
                 Return 0
             End Get
-            
+
             Set(ByVal value As Integer)
             End Set
         End Property
 
         Private Sub Initialize()
-            
+
         End Sub
 
 #Region "IBindingRuntimePreferences Members"

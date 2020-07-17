@@ -1,5 +1,6 @@
 ---
 title: ".NET class library overview"
+description: Learn about the .NET class library. .NET implementations include classes, interfaces, delegates, and value types to provide access to system functionality.
 ms.date: "02/08/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

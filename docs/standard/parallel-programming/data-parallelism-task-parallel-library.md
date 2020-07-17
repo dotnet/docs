@@ -1,5 +1,6 @@
 ---
 title: "Data Parallelism (Task Parallel Library)"
+description: Read how the Task Parallel Library (TPL) supports data parallelism to do the same operation concurrently on a source collection or array's elements in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

@@ -2,6 +2,7 @@
 title: Order unit tests
 description: Learn how to order unit tests with .NET Core.
 author: IEvangelist
+ms.author: dapine
 ms.date: 05/18/2020
 zone_pivot_groups: unit-testing-framework-set-one
 ---
@@ -79,4 +80,4 @@ To order tests explicitly, NUnit provides an [`OrderAttribute`](https://github.c
 ## Next Steps
 
 > [!div class="nextstepaction"]
-> [Unit testing best practices](unit-testing-best-practices.md)
+> [Unit test code coverage](unit-testing-code-coverage.md)

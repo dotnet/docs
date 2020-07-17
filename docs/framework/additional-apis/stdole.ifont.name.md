@@ -1,5 +1,6 @@
 ---
 title: IFont.Name Property (stdole)
+description: Get reference information about the IFont.Name property in .NET. This read/write property is in the stdole namespace and the stdole assembly.
 ms.date: 02/22/2019
 topic_type:
   - "apiref"

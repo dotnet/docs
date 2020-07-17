@@ -19,8 +19,8 @@ End Class
 ' </Snippet34>
 
 Module Example
-   Public Sub Main()
+    Public Sub Main()
 
-   End Sub
+    End Sub
 End Module
 

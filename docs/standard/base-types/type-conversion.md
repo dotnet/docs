@@ -1,5 +1,6 @@
 ---
 title: "Type Conversion in the .NET Framework"
+description: Read about type conversion in .NET, which creates a value in a new type that's equivalent to the old type's value, but may not keep the original's identity.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

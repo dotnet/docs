@@ -1,5 +1,6 @@
 ---
 title: "Default Marshaling for Arrays"
+description: Understand default marshaling for arrays. Review managed arrays, unmanaged arrays, passing array parameters to .NET code, and passing arrays to COM.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

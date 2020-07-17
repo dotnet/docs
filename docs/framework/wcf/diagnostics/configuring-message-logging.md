@@ -1,5 +1,6 @@
 ---
 title: "Configuring Message Logging"
+description: Learn how to configure message logging, including how to enable logging, logging levels, message filters, and how to configure a custom listener in WCF.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "message logging [WCF]"

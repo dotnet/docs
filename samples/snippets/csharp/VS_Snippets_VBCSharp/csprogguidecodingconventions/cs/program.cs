@@ -102,7 +102,7 @@ namespace Coding_Conventions_Examples
             //</snippet11>
 
             //<snippet12>
-            foreach (var ch in laugh)
+            foreach (char ch in laugh)
             {
                 if (ch == 'h')
                     Console.Write("H");

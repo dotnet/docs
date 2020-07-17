@@ -9,18 +9,18 @@ Class Example
     Public Shared Function DownloadStringAsync(url As Uri) As Task(Of String)
         Dim tcs As New TaskCompletionSource(Of String)()
         Dim wc As New WebClient()
-        AddHandler wc.DownloadStringCompleted, Sub(s,e) 
-                If e.Error IsNot Nothing Then 
-                   tcs.TrySetException(e.Error)
-                ElseIf e.Cancelled Then 
-                   tcs.TrySetCanceled()
-                Else 
-                   tcs.TrySetResult(e.Result)
-                End If   
-            End Sub
+        AddHandler wc.DownloadStringCompleted, Sub(s, e)
+                                                   If e.Error IsNot Nothing Then
+                                                       tcs.TrySetException(e.Error)
+                                                   ElseIf e.Cancelled Then
+                                                       tcs.TrySetCanceled()
+                                                   Else
+                                                       tcs.TrySetResult(e.Result)
+                                                   End If
+                                               End Sub
         wc.DownloadStringAsync(url)
         Return tcs.Task
-   End Function
-   ' </Snippet11>
+    End Function
+    ' </Snippet11>
 End Class
 

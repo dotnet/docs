@@ -1,5 +1,6 @@
 ---
 title: "How to: Open and append to a log file"
+description: Open and append to a log file using the StreamWriter and StreamReader classes in .NET, which write characters to and read characters from streams.
 ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 

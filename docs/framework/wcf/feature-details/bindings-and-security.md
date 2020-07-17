@@ -1,5 +1,6 @@
 ---
 title: "Bindings and Security"
+description: Find out how to select the right binding for your security needs. The system-provided bindings included with WCF provide a quick way to program WCF applications.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "bindings [WCF], security"

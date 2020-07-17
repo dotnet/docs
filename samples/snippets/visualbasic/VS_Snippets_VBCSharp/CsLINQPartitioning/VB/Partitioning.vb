@@ -8,7 +8,7 @@
 
         Dim words = {"an", "apple", "a", "day", "keeps", "the", "doctor", "away"}
 
-        Dim query = From word In words 
+        Dim query = From word In words
                     Skip 4
 
         Dim sb As New System.Text.StringBuilder()
@@ -34,7 +34,7 @@
 
         Dim words = {"an", "apple", "a", "day", "keeps", "the", "doctor", "away"}
 
-        Dim query = From word In words 
+        Dim query = From word In words
                     Skip While word.Substring(0, 1) = "a"
 
         Dim sb As New System.Text.StringBuilder()
@@ -61,7 +61,7 @@
 
         Dim words = {"an", "apple", "a", "day", "keeps", "the", "doctor", "away"}
 
-        Dim query = From word In words 
+        Dim query = From word In words
                     Take 2
 
         Dim sb As New System.Text.StringBuilder()
@@ -85,7 +85,7 @@
 
         Dim words = {"an", "apple", "a", "day", "keeps", "the", "doctor", "away"}
 
-        Dim query = From word In words 
+        Dim query = From word In words
                     Take While word.Length < 6
 
         Dim sb As New System.Text.StringBuilder()

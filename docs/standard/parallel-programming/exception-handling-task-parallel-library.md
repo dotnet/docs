@@ -1,5 +1,6 @@
 ---
 title: "Exception handling (Task Parallel Library)"
+description: Explore exception handling using the Task Parallel Library (TPL) in .NET. See nested aggregate exceptions, inner exceptions, unobserved task exceptions, & more.
 ms.date: 04/20/2020
 ms.technology: dotnet-standard
 dev_langs: 

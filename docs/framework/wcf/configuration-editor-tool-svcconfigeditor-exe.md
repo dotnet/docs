@@ -1,5 +1,6 @@
 ---
 title: "Configuration Editor Tool (SvcConfigEditor.exe)"
+description: Find out how to manage settings for WCF bindings, behaviors, services, and diagnostics by using the WCF Service Configuration Editor.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "configuration files, creating"

@@ -1,6 +1,7 @@
 ---
 title: "Introduction to WPF in Visual Studio"
 titleSuffix: ""
+description: Build line-of-business desktop applications with the unified programming model provided in Windows Presentation Foundation (WPF).
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "typography [WPF]"

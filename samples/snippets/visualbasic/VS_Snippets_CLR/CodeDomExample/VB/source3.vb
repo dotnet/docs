@@ -26,9 +26,9 @@ Class Example
         ' Build the output file name.
         Dim sourceFile As String
         If provider.FileExtension(0) = "." Then
-           sourceFile = "HelloWorld" + provider.FileExtension
+            sourceFile = "HelloWorld" + provider.FileExtension
         Else
-           sourceFile = "HelloWorld." + provider.FileExtension
+            sourceFile = "HelloWorld." + provider.FileExtension
         End If
 
         ' Create a TextWriter to a StreamWriter to the output file.
@@ -56,7 +56,7 @@ Class Example
         Dim cp As New CompilerParameters()
 
         ' Add an assembly reference.
-        cp.ReferencedAssemblies.Add( "System.dll" )
+        cp.ReferencedAssemblies.Add("System.dll")
 
         ' Generate an executable instead of
         ' a class library.
@@ -73,8 +73,8 @@ Class Example
 
         If cr.Errors.Count > 0 Then
             ' Display compilation errors.
-             Console.WriteLine("Errors building {0} into {1}", _
-                 sourceFile, cr.PathToAssembly)
+            Console.WriteLine("Errors building {0} into {1}", _
+                sourceFile, cr.PathToAssembly)
             For Each ce As CompilerError In cr.Errors
                 Console.WriteLine("  {0}", ce.ToString())
                 Console.WriteLine()

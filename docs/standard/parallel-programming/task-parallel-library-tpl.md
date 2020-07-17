@@ -1,5 +1,6 @@
 ---
 title: "Task Parallel Library (TPL)"
+description: Explore the Task Parallel Library (TPL), a set of public types and APIs to simplify the process of adding parallelism & concurrency to applications in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

@@ -1,5 +1,6 @@
 ---
 title: "Shadow Copying Assemblies"
+description: Explore the shadow copying of assemblies in .NET, so ones that are used in an application domain can be updated without unloading the application domain.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "assemblies [.NET Framework], shadow copying"

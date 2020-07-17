@@ -1,6 +1,7 @@
 ---
 title: Design-time errors in the Windows Forms Designer
 titleSuffix: ""
+description: Learn about the errors that occur when the Windows Forms Designer fails to load due to an error in your code, in a third-party component, or elsewhere.
 ms.date: 09/09/2019
 f1_keywords:
   - "DTELErrorList"

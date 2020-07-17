@@ -1,5 +1,6 @@
 ---
 title: "Security and Public Read-only Array Fields"
+description: Read why you should avoid using public read-only array fields to define the boundary behavior or security of your applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [.NET Framework], public read-only array fields"

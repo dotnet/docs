@@ -1,5 +1,6 @@
 ---
 title: "Obtain Mixed Text Attribute Details Using UI Automation"
+description: Obtain mixed text attribute details using the managed UI Automation classes in the System.Windows.Automation namespace of the .NET API.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

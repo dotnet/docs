@@ -1,5 +1,6 @@
 ---
 title: "Transport Security with Certificate Authentication"
+description: Learn about how WFC uses certificates for server and client authentication when using transport security. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

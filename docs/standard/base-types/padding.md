@@ -1,5 +1,6 @@
 ---
 title: "Padding Strings in .NET"
+description: Learn how to pad strings in .NET. Use the String.PadLeft and String.PadRight methods to add leading or trailing characters to achieve a specified total length.
 ms.date: "03/15/2018"
 ms.technology: dotnet-standard
 dev_langs: 

@@ -1,18 +1,18 @@
 ---
-title: Breaking change categories
-description: Learn about the ways in which breaking changes are categorized in .NET Core.
+title: Compatibility
+description: Learn about the ways in which code changes can affect compatibility in .NET.
 ms.date: 06/10/2019
 ---
-# Breaking change categories
+# How code changes can affect compatibility
 
-*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A particular change can affect compatibility in six different ways. The [individual kinds of changes](index.md) that are considered when evaluating compatibility fall into the following categories:
+*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A [particular change](index.md) can affect compatibility in six different ways:
 
-- [behavioral change](#behavioral-change)
-- [binary compatibility](#binary-compatibility)
-- [source compatibility](#source-compatibility)
-- [design-time compatibility](#design-time-compatibility)
-- [backwards compatibility](#backwards-compatibility)
-- [forward compatibility](#forward-compatibility) (not a goal of .NET Core)
+- [Behavioral change](#behavioral-change)
+- [Binary compatibility](#binary-compatibility)
+- [Source compatibility](#source-compatibility)
+- [Design-time compatibility](#design-time-compatibility)
+- [Backwards compatibility](#backwards-compatibility)
+- [Forward compatibility](#forward-compatibility) (not a goal of .NET Core)
 
 ## Behavioral change
 

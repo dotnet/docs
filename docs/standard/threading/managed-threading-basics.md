@@ -1,5 +1,6 @@
 ---
 title: "Managed Threading Basics"
+description: See links to other managed threading articles, covering topics such as exceptions, synchronizing data, foreground & background threads, local storage, and more.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

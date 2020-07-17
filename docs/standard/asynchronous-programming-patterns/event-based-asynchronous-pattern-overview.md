@@ -1,5 +1,6 @@
 ---
 title: "Event-based Asynchronous Pattern Overview"
+description: Review Event-based Asynchronous Patterns (EAPs) in .NET, which make available the advantages of multithreaded applications but hide some design complexities.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

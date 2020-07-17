@@ -1,5 +1,6 @@
 ---
 title: "How to: Receive First-Chance Exception Notifications"
+description: Get first-chance exception notifications in .NET through the AppDomain class's FirstChanceException event, before the CLR searches for exception handlers.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

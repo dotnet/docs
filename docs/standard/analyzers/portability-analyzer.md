@@ -27,9 +27,6 @@ To begin using the .NET Portability Analyzer in Visual Studio, you first need to
 
 You can also use the ApiPort console application, download it from [ApiPort repository](https://aka.ms/apiportdownload). You can use `listTargets` command option to display the available target list, then pick target platforms by specifying `-t` or `--target` command option.
 
-> [!IMPORTANT]
-> If there are no results when running the tool, the default targets may not be available. If you encounter this, please ensure to add explicit targets.
-
 ### Solution wide view
 
 A useful step in analyzing a solution with many projects would be to visualize the dependencies to understand which subset of assemblies depend on what. The general recommendation is to apply the results of the analysis in a bottom-up approach starting with the leaf nodes in a dependency graph.

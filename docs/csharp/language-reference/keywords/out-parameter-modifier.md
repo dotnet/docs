@@ -50,7 +50,7 @@ In addition, [extension methods](../../programming-guide/classes-and-structs/ext
 
 ## Declaring `out` parameters
 
-Declaring a method with `out` arguments is a classic workaround to return multiple values. Beginning with C# 7.0, consider [tuples](../../tuples.md) for similar scenarios. The following example uses `out` to return three variables with a single method call. The third argument is assigned to null. This enables methods to return values optionally.  
+Declaring a method with `out` arguments is a classic workaround to return multiple values. Beginning with C# 7.0, consider [value tuples](../builtin-types/value-tuples.md) for similar scenarios. The following example uses `out` to return three variables with a single method call. The third argument is assigned to null. This enables methods to return values optionally.  
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#3)]  
 

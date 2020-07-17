@@ -1,5 +1,6 @@
 ---
 title: "Comparisons and Sorts Within Collections"
+description: Do comparisons & sorts using the System.Collections classes in .NET, which help in finding an element to remove or returning the value of a key-and-value pair.
 ms.date: 04/30/2020
 ms.technology: dotnet-standard
 dev_langs: 

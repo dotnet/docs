@@ -1,5 +1,6 @@
 ---
 title: "Naming Resources"
+description: Review naming guidelines for resources in .NET, which are similar to the guidelines for naming properties.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:

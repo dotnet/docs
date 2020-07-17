@@ -1,5 +1,6 @@
 ---
 title: "Weak References"
+description: Learn about weak references, which allow the .NET garbage collector to collect an object while still allowing the application to access the object.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

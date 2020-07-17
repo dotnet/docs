@@ -1,5 +1,6 @@
 ---
 title: "How to: Enable Streaming"
+description: Learn how to enable streamed messages in WCF rather than the default buffered transfers, which must be completely received before they are processed.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

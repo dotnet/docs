@@ -6,21 +6,21 @@ Imports System.Windows.Forms
 '<Snippet2>
 Class ExampleForm
     Inherits Form
-    
-    Public Sub New() 
+
+    Public Sub New()
         Me.Text = "Click me"
-    
+
     End Sub
 End Class
 '</Snippet2>
 
 Class Example
-    Public Shared Sub Main() 
+    Public Shared Sub Main()
         Dim ex As New Example()
         ex.HookUpDelegate()
     End Sub
-        
-    Private Sub HookUpDelegate() 
+
+    Private Sub HookUpDelegate()
         ' Load an assembly, for example using the Assembly.Load
         ' method. In this case, the executing assembly is loaded, to
         ' keep the demonstration simple.
@@ -77,7 +77,7 @@ Class Example
         '
         '<Snippet8>
         Dim miAddHandler As MethodInfo = evClick.GetAddMethod()
-        Dim addHandlerArgs() As Object = { d }
+        Dim addHandlerArgs() As Object = {d}
         miAddHandler.Invoke(exFormAsObj, addHandlerArgs)
         '</Snippet8>
 
@@ -114,11 +114,11 @@ Class Example
         '
         '<Snippet10>
         Dim ilgen As ILGenerator = handler.GetILGenerator()
-        
-        Dim showParameters As Type() = { GetType(String) }
+
+        Dim showParameters As Type() = {GetType(String)}
         Dim simpleShow As MethodInfo = _
             GetType(MessageBox).GetMethod("Show", showParameters)
-        
+
         ilgen.Emit(OpCodes.Ldstr, _
             "This event handler was constructed at run time.")
         ilgen.Emit(OpCodes.Call, simpleShow)
@@ -132,7 +132,7 @@ Class Example
         '
         '<Snippet11>
         Dim dEmitted As [Delegate] = handler.CreateDelegate(tDelegate)
-        miAddHandler.Invoke(exFormAsObj, New Object() { dEmitted })
+        miAddHandler.Invoke(exFormAsObj, New Object() {dEmitted})
         '</Snippet11>
 
         ' Show the form. Clicking on the form causes the two
@@ -141,17 +141,17 @@ Class Example
         '<Snippet12>
         Application.Run(CType(exFormAsObj, Form))
         '</Snippet12>
-    
+
     End Sub
-    
+
     Private Sub LuckyHandler(ByVal sender As [Object], _
-        ByVal e As EventArgs) 
+        ByVal e As EventArgs)
 
         MessageBox.Show("This event handler just happened to be lying around.")
     End Sub
-    
+
     Private Function GetDelegateParameterTypes(ByVal d As Type) _
-        As Type() 
+        As Type()
 
         If d.BaseType IsNot GetType(MulticastDelegate) Then
             Throw New ApplicationException("Not a delegate.")
@@ -171,11 +171,11 @@ Class Example
         Next i
 
         Return typeParameters
-    
-    End Function 
-    
-    
-    Private Function GetDelegateReturnType(ByVal d As Type) As Type 
+
+    End Function
+
+
+    Private Function GetDelegateReturnType(ByVal d As Type) As Type
 
         If d.BaseType IsNot GetType(MulticastDelegate) Then
             Throw New ApplicationException("Not a delegate.")
@@ -187,7 +187,7 @@ Class Example
         End If
 
         Return invoke.ReturnType
-    
-    End Function 
-End Class 
+
+    End Function
+End Class
 '</Snippet1>

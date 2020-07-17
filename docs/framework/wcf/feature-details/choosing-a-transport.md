@@ -1,5 +1,6 @@
 ---
 title: "Choosing a Transport"
+description: "Learn about criteria for choosing among the main transports that WCF offers: HTTP, TCP, and named pipes."
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "choosing transports [WCF]"

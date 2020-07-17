@@ -1,5 +1,6 @@
 ---
 title: "Hosting in Windows Process Activation Service"
+description: Learn about how WAS manages the activation and lifetime of the worker processes containing applications that host WCF services.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "hosting services [WCF], WAS"

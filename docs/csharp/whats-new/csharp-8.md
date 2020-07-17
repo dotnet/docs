@@ -188,7 +188,7 @@ Pattern matching creates a concise syntax for expressing this algorithm.
 
 ### Tuple patterns
 
-Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
+Some algorithms depend on multiple inputs. **Tuple patterns** allow you to switch based on multiple values expressed as a [tuple](../language-reference/builtin-types/value-tuples.md).  The following code shows a switch expression for the game *rock, paper, scissors*:
 
 ```csharp
 public static string RockPaperScissors(string first, string second)
@@ -392,7 +392,7 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 ## Asynchronous disposable
 
-Starting with C# 8.0, the language supports asynchronous disposable types that implement the <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface. The operand of a `using` expression can implement either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. In the case of `IAsyncDisposable`, the compiler generates code to `await` the <xref:System.Threading.Tasks.Task> returned from <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType>. For more information, see the [`using` statement](../language-reference/keywords/using-statement.md).
+Starting with C# 8.0, the language supports asynchronous disposable types that implement the <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface. You use the `await using` statement to work with an asynchronously disposable object. For more information, see the [Implement a DisposeAsync method](../../standard/garbage-collection/implementing-disposeasync.md) article.
 
 ## Indices and ranges
 

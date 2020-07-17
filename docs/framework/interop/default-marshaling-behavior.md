@@ -1,5 +1,6 @@
 ---
 title: "Default Marshaling Behavior"
+description: Learn default marshaling behavior in .NET. Review memory management with interop marshaling, and see default marshaling for classes, delegates, and value types.
 ms.date: "06/26/2018"
 dev_langs: 
   - "csharp"

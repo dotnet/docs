@@ -1,5 +1,6 @@
 ---
 title: "General Naming Conventions"
+description: Use general naming conventions relating to word choice, guidelines on using abbreviations and acronyms, and guidance on avoiding language-specific names.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:

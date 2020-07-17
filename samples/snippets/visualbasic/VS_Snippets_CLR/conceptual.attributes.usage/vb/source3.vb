@@ -2,7 +2,7 @@
 Imports System.Reflection
 Imports CustomCodeAttributes
 
-<Developer("Joan Smith", "42", Reviewed := True)>
+<Developer("Joan Smith", "42", Reviewed:=True)>
 Class MainApp
     Public Shared Sub Main()
         ' Call function to get and display the attribute.
@@ -18,11 +18,11 @@ Class MainApp
             Console.WriteLine("The attribute was not found.")
         Else
             ' Get the Name value.
-            Console.WriteLine("The Name Attribute is: {0}." , MyAttribute.Name)
+            Console.WriteLine("The Name Attribute is: {0}.", MyAttribute.Name)
             ' Get the Level value.
-            Console.WriteLine("The Level Attribute is: {0}." , MyAttribute.Level)
+            Console.WriteLine("The Level Attribute is: {0}.", MyAttribute.Level)
             ' Get the Reviewed value.
-            Console.WriteLine("The Reviewed Attribute is: {0}." , MyAttribute.Reviewed)
+            Console.WriteLine("The Reviewed Attribute is: {0}.", MyAttribute.Reviewed)
         End If
     End Sub
 End Class
@@ -39,9 +39,9 @@ Class GetAttribTest1
         Else
             For i As Integer = 0 To MyAttributes.Length - 1
                 ' Get the Name value.
-                Console.WriteLine("The Name Attribute is: {0}." , MyAttributes(i).Name)
+                Console.WriteLine("The Name Attribute is: {0}.", MyAttributes(i).Name)
                 ' Get the Level value.
-                Console.WriteLine("The Level Attribute is: {0}." , MyAttributes(i).Level)
+                Console.WriteLine("The Level Attribute is: {0}.", MyAttributes(i).Level)
                 ' Get the Reviewed value.
                 Console.WriteLine("The Reviewed Attribute is: {0}.", MyAttributes(i).Reviewed)
             Next i
@@ -80,7 +80,7 @@ Class GetAttribTest2
             att = CType(Attribute.GetCustomAttribute(MyMemberInfo(i), _
                 GetType(DeveloperAttribute)), DeveloperAttribute)
             If att Is Nothing Then
-                Console.WriteLine("No attribute in member function {0}.\n" , MyMemberInfo(i).ToString())
+                Console.WriteLine("No attribute in member function {0}.\n", MyMemberInfo(i).ToString())
             Else
                 Console.WriteLine("The Name Attribute for the {0} member is: {1}.",
                     MyMemberInfo(i).ToString(), att.Name)

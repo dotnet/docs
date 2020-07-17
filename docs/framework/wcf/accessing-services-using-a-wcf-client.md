@@ -1,5 +1,6 @@
 ---
 title: "Accessing Services Using a WCF Client"
+description: Learn how to create a WCF client proxy for your WCF service. A client application uses the client proxy to communicate with the service.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Transport Security with Basic Authentication"
+description: Review this WCF scenario, which shows basic authentication for a WCF service and client. The service needs a valid certificate that the client trusts.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -12,7 +12,7 @@ Module Module1
         <OperationContract()>
         Function SayHello(ByVal name As String) As String
     End Interface
-    
+
     Public Class HelloWorldService
         Implements IHelloWorldService
 

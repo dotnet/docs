@@ -1,2 +1,2 @@
 > [!WARNING]
-> Binary serialization can be dangerous. Never deserialize data from an untrusted source and never round-trip serialized data to systems not under your control.
+> Binary serialization can be dangerous. For more information, see [BinaryFormatter security guide](../docs/standard/serialization/binaryformatter-security-guide.md).

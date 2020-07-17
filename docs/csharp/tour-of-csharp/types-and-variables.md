@@ -46,7 +46,7 @@ The following outline provides an overview of C#'s type system.
 [EnumTypes]: ../language-reference/builtin-types/enum.md
 [StructTypes]: ../language-reference/builtin-types/struct.md
 [NullableTypes]: ../language-reference/builtin-types/nullable-value-types.md
-[TupleTypes]: ../tuples.md
+[TupleTypes]: ../language-reference/builtin-types/value-tuples.md
 [ReferenceTypes]: ../language-reference/keywords/reference-types.md
 [ClassTypes]: ../language-reference/keywords/class.md
 [InterfaceTypes]: ../language-reference/keywords/interface.md

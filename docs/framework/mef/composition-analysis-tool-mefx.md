@@ -1,5 +1,6 @@
 ---
 title: "Composition Analysis Tool (Mefx)"
+description: Read about the composition analysis tool (Mefx), which analyzes DLL and EXE files that contain Managed Extensibility Framework (MEF) parts in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Composition Analysis Tool [MEF]"

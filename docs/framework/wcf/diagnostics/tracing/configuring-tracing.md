@@ -1,5 +1,6 @@
 ---
 title: "Configuring Tracing"
+description: Learn how to enable tracing, configure trace sources, set activity tracing and propagation, and set trace listeners to access traces in WCF.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "tracing [WCF]"

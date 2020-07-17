@@ -101,4 +101,4 @@ The following example defines two `Deconstruct` extension methods for the <xref:
 ## See also
 
 - [Discards](discards.md)
-- [Tuples](tuples.md)
+- [Tuple types](language-reference/builtin-types/value-tuples.md)

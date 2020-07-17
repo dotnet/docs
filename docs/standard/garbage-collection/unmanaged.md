@@ -1,5 +1,6 @@
 ---
 title: "Cleaning up unmanaged resources"
+description: See how to clean up unmanaged resources not handled by the .NET garbage collector, such as files, windows, & network or database connections.
 ms.date: 05/13/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:

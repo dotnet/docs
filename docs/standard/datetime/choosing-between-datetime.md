@@ -1,5 +1,6 @@
 ---
-title: "Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo"
+title: Compare DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
+description: Learn about differences between the DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo types to represent date and time information in .NET.
 ms.date: "04/10/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -14,9 +15,9 @@ helpviewer_keywords:
   - "DateTime structure"
 ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 ---
-# Choosing between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
+# Choose between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo
 
-.NET applications that use date and time information are very diverse and can use that information in several ways. The more common uses of date and time information include one or more of the following:
+.NET applications can use date and time information in several ways. The more common uses of date and time information include:
 
 - To reflect a date only, so that time information is not important.
 
@@ -26,7 +27,7 @@ ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 
 - To retrieve date and time information from sources outside of .NET, typically where date and time information is stored in a simple data type.
 
-- To uniquely and unambiguously identify a single point in time. Some applications require that a date and time be unambiguous only on the host system; others require that it be unambiguous across systems (that is, a date serialized on one system can be meaningfully deserialized and used on another system anywhere in the world).
+- To uniquely and unambiguously identify a single point in time. Some applications require that a date and time be unambiguous only on the host system. Other apps require that it be unambiguous across systems (that is, a date serialized on one system can be meaningfully deserialized and used on another system anywhere in the world).
 
 - To preserve multiple related times (such as the requestor's local time and the server's time of receipt for a Web request).
 
@@ -41,7 +42,7 @@ ms.assetid: 07f17aad-3571-4014-9ef3-b695a86f3800
 
 A <xref:System.DateTime> value defines a particular date and time. It includes a <xref:System.DateTime.Kind%2A> property that provides limited information about the time zone to which that date and time belongs. The <xref:System.DateTimeKind> value returned by the <xref:System.DateTime.Kind%2A> property indicates whether the <xref:System.DateTime> value represents the local time (<xref:System.DateTimeKind.Local?displayProperty=nameWithType>), Coordinated Universal Time (UTC) (<xref:System.DateTimeKind.Utc?displayProperty=nameWithType>), or an unspecified time (<xref:System.DateTimeKind.Unspecified?displayProperty=nameWithType>).
 
-The <xref:System.DateTime> structure is suitable for applications that do the following:
+The <xref:System.DateTime> structure is suitable for applications with one or more of the following characteristics:
 
 - Work with dates only.
 
@@ -66,7 +67,7 @@ Unless a particular <xref:System.DateTime> value represents UTC, that date and t
 
 The <xref:System.DateTimeOffset> structure represents a date and time value, together with an offset that indicates how much that value differs from UTC. Thus, the value always unambiguously identifies a single point in time.
 
-The <xref:System.DateTimeOffset> type includes all of the functionality of the <xref:System.DateTime> type along with time zone awareness. This makes it suitable for applications that do the following:
+The <xref:System.DateTimeOffset> type includes all of the functionality of the <xref:System.DateTime> type along with time zone awareness. This makes it suitable for applications that:
 
 - Uniquely and unambiguously identify a single point in time. The <xref:System.DateTimeOffset> type can be used to unambiguously define the meaning of "now", to log transaction times, to log the times of system or application events, and to record file creation and modification times.
 
@@ -75,14 +76,14 @@ The <xref:System.DateTimeOffset> type includes all of the functionality of the <
 - Preserve multiple related times, as long as those times are stored as two separate values or as two members of a structure.
 
 > [!NOTE]
-> These uses for <xref:System.DateTimeOffset> values are much more common than those for <xref:System.DateTime> values. As a result, <xref:System.DateTimeOffset> should be considered the default date and time type for application development.
+> These uses for <xref:System.DateTimeOffset> values are much more common than those for <xref:System.DateTime> values. As a result, consider <xref:System.DateTimeOffset> as the default date and time type for application development.
 
-A <xref:System.DateTimeOffset> value is not tied to a particular time zone, but can originate from any of a variety of time zones. To illustrate this, the following example lists the time zones to which a number of <xref:System.DateTimeOffset> values (including a local Pacific Standard Time) can belong.
+A <xref:System.DateTimeOffset> value isn't tied to a particular time zone, but can originate from a variety of time zones. The following example lists the time zones to which a number of <xref:System.DateTimeOffset> values (including a local Pacific Standard Time) can belong.
 
 [!code-csharp[System.DateTimeOffset.Conceptual#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/cs/Conceptual1.cs#1)]
 [!code-vb[System.DateTimeOffset.Conceptual#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual/vb/Conceptual1.vb#1)]
 
-The output shows that each date and time value in this example can belong to at least three different time zones. The <xref:System.DateTimeOffset> value of 6/10/2007 shows that if a date and time value represents a daylight saving time, its offset from UTC does not even necessarily correspond to the originating time zone's base UTC offset or to the offset from UTC found in its display name. This means that, because a single <xref:System.DateTimeOffset> value is not tightly coupled with its time zone, it cannot reflect a time zone's transition to and from daylight saving time. This can be particularly problematic when date and time arithmetic is used to manipulate a <xref:System.DateTimeOffset> value. For a discussion of how to perform date and time arithmetic in a way that takes account of a time zone's adjustment rules, see [Performing arithmetic operations with dates and times](performing-arithmetic-operations.md).
+The output shows that each date and time value in this example can belong to at least three different time zones. The <xref:System.DateTimeOffset> value of 6/10/2007 shows that if a date and time value represents a daylight saving time, its offset from UTC doesn't even necessarily correspond to the originating time zone's base UTC offset or to the offset from UTC found in its display name. Because a single <xref:System.DateTimeOffset> value isn't tightly coupled with its time zone, it can't reflect a time zone's transition to and from daylight saving time. This can be problematic when date and time arithmetic is used to manipulate a <xref:System.DateTimeOffset> value. For a discussion of how to perform date and time arithmetic in a way that takes account of a time zone's adjustment rules, see [Performing arithmetic operations with dates and times](performing-arithmetic-operations.md).
 
 ## The TimeSpan structure
 
@@ -110,7 +111,7 @@ The <xref:System.TimeZoneInfo> class represents any of the Earth's time zones, a
 
 In some cases, taking full advantage of the <xref:System.TimeZoneInfo> class may require further development work. If date and time values are not tightly coupled with the time zones to which they belong, further work is required. Unless your application provides some mechanism for linking a date and time with its associated time zone, it's easy for a particular date and time value to become disassociated from its time zone. One method of linking this information is to define a class or structure that contains both the date and time value and its associated time zone object.
 
-Taking advantage of time zone support in .NET is possible only if the time zone to which a date and time value belongs is known when that date and time object is instantiated. This is often not the case, particularly in Web or network applications.
+To take advantage of time zone support in .NET, you must know the time zone to which a date and time value belongs when that date and time object is instantiated. The time zone is often not known, particularly in web or network apps.
 
 ## See also
 

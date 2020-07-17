@@ -1,5 +1,6 @@
 ---
 title: "Pausing and interrupting threads"
+description: Learn how to pause & interrupt threads in .NET. Learn how to use methods like Thread.Sleep & Thread.Interrupt, & exceptions such as ThreadInterruptedException.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

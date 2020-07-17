@@ -1,9 +1,9 @@
 ---
-title: Publish a .NET Core Hello World application with Visual Studio Code
+title: Publish a .NET Core console application using Visual Studio Code
 description: Publishing creates the set of files that are needed to run a .NET Core application.
-ms.date: 05/28/2020
+ms.date: 07/04/2020
 ---
-# Tutorial: Publish a .NET Core console application with Visual Studio Code
+# Tutorial: Publish a .NET Core console application using Visual Studio Code
 
 This tutorial shows how to publish a console app so that other users can run it. Publishing creates the set of files that are needed to run an application. To deploy the files, copy them to the target machine.
 
@@ -15,7 +15,7 @@ The .NET Core CLI is used to publish the app, so you can follow this tutorial wi
 
 ## Publish the app
 
-1. Open Visual Studio Code.
+1. Start Visual Studio Code.
 
 1. Open the *HelloWorld* project folder that you created in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
 
@@ -79,7 +79,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 ## Run the published app
 
-1. In **Explorer**, right-click the *publish* folder (or <kbd>Ctrl</kbd>+click on macOS), and select **Open in Terminal**.
+1. In **Explorer**, right-click the *publish* folder (<kbd>Ctrl</kbd>-click on macOS), and select **Open in Terminal**.
 
    :::image type="content" source="media/publishing-with-visual-studio-code/open-in-terminal.png" alt-text="Context menu showing Open in Terminal":::
 
@@ -103,10 +103,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 ## Next steps
 
-In this tutorial, you published a console app. To learn how to build libraries, see [Develop libraries with the .NET Core CLI](libraries.md).
-
-<!--In the next tutorial, you create a class library.
+In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md)
--->
+> [Create a .NET Standard library in Visual Studio Code](library-with-visual-studio-code.md)

@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Named Pipes for Network Interprocess Communication"
+description: See two examples of using named pipes for interprocess communication between a pipe server and one or more pipe clients in a network.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

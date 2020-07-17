@@ -1,5 +1,6 @@
 ---
 title: "Comparing Strings in .NET"
+description: Read about methods to compare strings in .NET. Learn about the Compare, CompareOrdinal, CompareTo, StartsWith, EndsWith, Equals, IndexOf, & LastIndexOf methods.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

@@ -55,7 +55,7 @@ namespace builtin_types
                 if (detailedDescription == null)
                 {
                     return shortDescription;
-                } else if (detailedDescription.Length > 0) // OK, optionalGreeting can't be null.
+                } else if (detailedDescription.Length > 0) // OK, detailedDescription can't be null.
                 {
                     return $"{shortDescription}\n{detailedDescription}";
                 }
@@ -68,7 +68,7 @@ namespace builtin_types
         {
             // <SnippetLocalWarnings>
             string shortDescription = default; // Warning! non-nullable set to null;
-            var product = new ProductDescription(shortDescription); // Warning! static analysis knows greeting maybe null.
+            var product = new ProductDescription(shortDescription); // Warning! static analysis knows shortDescription maybe null.
 
             string description = "widget";
             var item = new ProductDescription(description);

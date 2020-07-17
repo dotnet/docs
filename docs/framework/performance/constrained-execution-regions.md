@@ -1,5 +1,6 @@
 ---
 title: "Constrained Execution Regions"
+description: Get started with constrained execution regions (CER), which are part of a mechanism for authoring reliable managed code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "constrained execution regions"
@@ -8,7 +9,10 @@ ms.assetid: 99354547-39c1-4b0b-8553-938e8f8d1808
 ---
 # Constrained Execution Regions
 A constrained execution region (CER) is part of a mechanism for authoring reliable managed code. A CER defines an area in which the common language runtime (CLR) is constrained from throwing out-of-band exceptions that would prevent the code in the area from executing in its entirety. Within that region, user code is constrained from executing code that would result in the throwing of out-of-band exceptions. The <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareConstrainedRegions%2A> method must immediately precede a `try` block and marks `catch`, `finally`, and `fault` blocks as constrained execution regions. Once marked as a constrained region, code must only call other code with strong reliability contracts, and code should not allocate or make virtual calls to unprepared or unreliable methods unless the code is prepared to handle failures. The CLR delays thread aborts for code that is executing in a CER.  
-  
+
+> [!IMPORTANT]
+> CER is only supported in .NET Framework. This article doesn't apply to .NET Core or .NET 5 and above.
+
  Constrained execution regions are used in different forms in the CLR in addition to an annotated `try` block, notably critical finalizers executing in classes derived from the <xref:System.Runtime.ConstrainedExecution.CriticalFinalizerObject> class and code executed using the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup%2A> method.  
   
 ## CER Advance Preparation  

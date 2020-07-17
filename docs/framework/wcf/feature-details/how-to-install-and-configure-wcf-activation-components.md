@@ -1,5 +1,6 @@
 ---
 title: "How to: Install and Configure WCF Activation Components"
+description: Learn how to set up the Windows Process Activation Service (WAS) on Windows Vista to host WCF services that do not communicate over HTTP.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "HTTP activation [WCF]"

@@ -130,8 +130,8 @@ Namespace Custom_Binder
                 Dim newType As Object
                 newType = Convert.ChangeType(value, myChangeType)
                 Return newType
-            ' Throw an InvalidCastException If the conversion cannot
-            ' be done by the Convert.ChangeType method.
+                ' Throw an InvalidCastException If the conversion cannot
+                ' be done by the Convert.ChangeType method.
             Catch
                 Return Nothing
             End Try

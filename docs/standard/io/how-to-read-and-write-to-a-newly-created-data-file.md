@@ -1,5 +1,6 @@
 ---
 title: "How to: Read and write to a newly created data file"
+description: Learn how to read and write to a newly created data file in .NET using the System.IO.BinaryReader and System.IO.BinaryWriter classes.
 ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 

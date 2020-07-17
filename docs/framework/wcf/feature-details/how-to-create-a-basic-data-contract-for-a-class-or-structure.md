@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Basic Data Contract for a Class or Structure"
+description: Follow this example to learn how to create a data contract using a class or structure in WCF by using the DataContractAttribute attribute.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

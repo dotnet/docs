@@ -1,5 +1,6 @@
 ---
 title: "Cancellation in Managed Threads"
+description: Understand cancellation in managed threads. Learn about cancellation tokens in cooperative cancellation of asynchronous or long-running synchronous operations.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

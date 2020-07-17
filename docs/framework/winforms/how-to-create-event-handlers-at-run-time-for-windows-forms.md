@@ -1,5 +1,6 @@
 ---
 title: "How to: Create Event Handlers at Run Time"
+description: Learn how to create an event handler at run time with the Windows Forms Designer in Visual Studio. This action allows you to connect event handlers at run time.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

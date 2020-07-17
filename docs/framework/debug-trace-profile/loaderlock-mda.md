@@ -1,5 +1,6 @@
 ---
 title: "loaderLock MDA"
+description: Review the loaderLock managed debugging assistant (MDA) in .NET, which detects attempts to run managed code on a thread holding the Windows OS loader lock.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "deadlocks [.NET Framework]"

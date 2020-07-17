@@ -1,5 +1,6 @@
 ---
 title: "Security in .NET"
+description: Learn about security in .NET. Follow links that describe key security concepts, role-based security, the cryptography model, and secure coding guidelines.
 ms.date: "06/04/2018"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

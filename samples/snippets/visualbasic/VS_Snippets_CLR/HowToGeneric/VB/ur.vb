@@ -34,9 +34,9 @@ Public Class Example
     Private Shared Sub DisplayGenericType(ByVal t As Type)
         Console.WriteLine(vbCrLf & t.ToString())
         '<Snippet3>
-        Console.WriteLine("   Is this a generic type? " _ 
+        Console.WriteLine("   Is this a generic type? " _
             & t.IsGenericType)
-        Console.WriteLine("   Is this a generic type definition? " _ 
+        Console.WriteLine("   Is this a generic type definition? " _
             & t.IsGenericTypeDefinition)
         '</Snippet3>
 
@@ -150,7 +150,7 @@ Public Class Example
         ' dictionary is Example.
         '<Snippet11>
         Dim typeArgs() As Type = _
-            { GetType(String), GetType(Example) }
+            {GetType(String), GetType(Example)}
         '</Snippet11>
 
         ' Construct the type Dictionary(Of String, Example).
@@ -169,7 +169,7 @@ Public Class Example
             "Compare types obtained by different methods:")
         Console.WriteLine("   Are the constructed types equal? " _
             & (d2.GetType() Is constructed))
-        Console.WriteLine("   Are the generic definitions equal? " _ 
+        Console.WriteLine("   Are the generic definitions equal? " _
             & (d1 Is constructed.GetGenericTypeDefinition()))
 
         ' Demonstrate the DisplayGenericType and 

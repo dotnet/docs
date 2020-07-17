@@ -245,7 +245,7 @@ Remove a tool by using the [dotnet tool uninstall](dotnet-tool-uninstall.md) com
 
 ```dotnetcli
 dotnet tool uninstall --global <packagename>
-dotnet tool uninstall --tool-path<packagename>
+dotnet tool uninstall --tool-path <packagename>
 dotnet tool uninstall <packagename>
 ```
 

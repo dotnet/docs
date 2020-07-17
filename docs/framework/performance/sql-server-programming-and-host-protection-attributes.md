@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Programming and Host Protection Attributes"
+description: Get started with SQL Server programming and host protection attributes. Review SQL Server permission sets and programming model restrictions.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "SQL Server [.NET Framework]"

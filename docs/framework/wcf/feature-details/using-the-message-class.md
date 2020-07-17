@@ -1,5 +1,6 @@
 ---
 title: "Using the Message Class"
+description: Learn about the Message class, which is fundamental to WCF. You need to program using Message class directly only in some advanced scenarios.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

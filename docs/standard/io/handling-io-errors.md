@@ -1,5 +1,6 @@
 ---
 title: "Handling I/O errors in .NET"
+description: Learn how to handle I/O errors in .NET. Map error codes to exceptions, handle exceptions in I/O operations, and handle IOException.
 ms.date: "08/27/2018"
 ms.technology: dotnet-standard
 dev_langs: 

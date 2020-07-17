@@ -99,7 +99,7 @@ Module Module1
 
                 Next
             Finally
-               cts.Dispose()
+                cts.Dispose()
             End Try
 
             If (Not results Is Nothing) Then
@@ -172,8 +172,8 @@ Module Module1
                 Dim words() As String = args.Result.Split(" "c)
                 Dim NAME As String = nameToSearch.ToUpper()
                 Dim nameCount = (From word In words.AsParallel()
-                                Where word.ToUpper().Contains(NAME)
-                                Select word).Count()
+                                 Where word.ToUpper().Contains(NAME)
+                                 Select word).Count()
 
                 ' Associate the results with the url, and add new string to the array that 
                 ' the underlying Task object will return in its Result property.

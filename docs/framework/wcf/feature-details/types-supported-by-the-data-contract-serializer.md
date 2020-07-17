@@ -1,5 +1,6 @@
 ---
 title: "Types Supported by the Data Contract Serializer"
+description: See the complete list of types that the WCF data contract serializer supports for serialization and deserialization. 
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "serialization [WCF], supported types"

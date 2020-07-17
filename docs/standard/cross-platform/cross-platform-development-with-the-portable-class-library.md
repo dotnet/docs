@@ -1,5 +1,6 @@
 ---
 title: "Cross-Platform Development with the Portable Class Library"
+description: Build cross-platform apps and libraries for Microsoft platforms quickly and easily using the Portable Class Library project type in .NET.
 ms.date: 09/17/2018
 ms.technology: dotnet-standard
 helpviewer_keywords:

@@ -51,7 +51,7 @@ Class ListMembers
 
     Public Shared Sub PrintMembers(ms() As MemberInfo)
         Dim m As MemberInfo
-        For Each m In  ms
+        For Each m In ms
             Console.WriteLine("{0}{1}", "     ", m)
         Next m
         Console.WriteLine()

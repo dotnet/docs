@@ -20,7 +20,7 @@ If the return value from `Main` is not used, returning `void` allows for slightl
 
 ## Example
 
-This example uses [.NET Core](../../../core/index.yml) command-line tools. If you are unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/cli-create-console-app.md).
+This example uses [.NET Core](../../../core/index.yml) command-line tools. If you are unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/with-visual-studio-code.md).
 
 Modify the `Main` method in *program.cs* as follows:
 

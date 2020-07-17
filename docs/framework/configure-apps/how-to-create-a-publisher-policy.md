@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Publisher Policy"
+description: Learn how assembly vendors can create a publisher policy file with an upgraded assembly in .NET, to stipulate that applications should use the newer version.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "publisher policy assembly"

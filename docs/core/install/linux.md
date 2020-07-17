@@ -1,12 +1,18 @@
 ---
-title: Install .NET Core and Linux Distributions
+title: Install .NET Core on Linux Distributions
 description: Learn about what Linux distributions support installing .NET Core on Linux.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/01/2020
 ---
 
 # Install .NET Core on Linux
+
+> [!div class="op_single_selector"]
+>
+> - [Install on Windows](windows.md)
+> - [Install on macOS](macos.md)
+> - [Install on Linux](linux.md)
 
 .NET Core is available on different Linux distributions. Most Linux platforms and distributions have a major release each year, and most provide a package manager that is used to install .NET Core. This article describes what is currently supported and which package manager is used.
 
@@ -23,6 +29,26 @@ The following versions of .NET Core are ❌ no longer supported. The downloads f
 - 2.0
 
 These unsupported versions aren't detailed in the sections below and your mileage may vary if you try to install them.
+
+## Alpine
+
+There are no installers for Alpine. You must either use the [install script](linux-alpine.md#scripted-install) or follow the [manual install](linux-alpine.md#manual-install) instructions.
+
+The following table is a list of currently supported .NET Core releases and the versions of Alpine they're supported on. These versions remain supported until either the version of [.NET Core reaches end-of-support](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) or the version of [Alpine reaches end-of-life](https://wiki.alpinelinux.org/wiki/Alpine_Linux:Releases).
+
+- A ✔️ indicates that the version of Alpine or .NET Core is still supported.
+- A ❌ indicates that the version of Alpine or .NET Core isn't supported on that Alpine release.
+- When both a version of Alpine and a version of .NET Core have ✔️, that OS and .NET combination are supported.
+
+| Alpine                      | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview |
+|-----------------------------|---------------|---------------|----------------|
+| ✔️ [3.12](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [3.11](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [3.10](linux-alpine.md)  | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ✔️ [3.9](linux-alpine.md)   | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [3.8](linux-alpine.md)   | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+
+For more information, see [Install .NET Core on Alpine](linux-alpine.md).
 
 ## CentOS
 
@@ -52,6 +78,8 @@ The following table is a list of currently supported .NET Core releases and the 
 | ✔️ [10](linux-debian.md#debian-10-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [9](linux-debian.md#debian-9-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ❌ [8](linux-debian.md#debian-8-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
+
+For more information, see [Install .NET Core on Debian](linux-debian.md).
 
 ## Fedora
 
@@ -88,6 +116,8 @@ The following table is a list of currently supported .NET Core releases on openS
 |----------------------------|---------------|---------------|----------------|
 | ✔️ [15](linux-opensuse.md#opensuse-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
+For more information, see [Install .NET Core on openSUSE](linux-opensuse.md).
+
 ## Red Hat
 
 Red Hat Enterprise Linux (RHEL) uses yum (RHEL 7) and DNF (RHEL 8) as the package manager.
@@ -103,6 +133,8 @@ The following table is a list of currently supported .NET Core releases on both 
 | ✔️ [8](linux-rhel.md#rhel-8-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [7](linux-rhel.md#rhel-7-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
+For more information, see [Install .NET Core on RHEL](linux-rhel.md).
+
 ## SLES
 
 SLES uses zypper as the package manager.
@@ -117,6 +149,8 @@ The following table is a list of currently supported .NET Core releases on both 
 |------------------------|---------------|---------------|----------------|
 | ✔️ [15](linux-sles.md#sles-15-)     | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ✔️ [12 SP2](linux-sles.md#sles-12-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+
+For more information, see [Install .NET Core on SLES](linux-sles.md).
 
 ## Ubuntu
 
@@ -141,3 +175,9 @@ The following table represents the support status of Ubuntu and .NET Core.
 | ✔️ [16.04 (LTS)](linux-ubuntu.md#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
 For more information, see [Install .NET Core on Ubuntu](linux-ubuntu.md).
+
+## Next steps
+
+- [How to check if .NET Core is already installed](how-to-detect-installed-versions.md?pivots=os-linux).
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
+- [Tutorial: Containerize a .NET Core app](../docker/build-container.md).

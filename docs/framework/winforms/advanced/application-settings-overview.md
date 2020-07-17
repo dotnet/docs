@@ -1,5 +1,6 @@
 ---
 title: "Application Settings Overview"
+description: Learn about the Application Settings feature of Windows Forms, for example how to create and store settings data on behalf of your application and your users.
 ms.date: "03/30/2017"
 f1_keywords:
   - "ApplicationsSettingsOverview"
@@ -10,14 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc
 ---
 # Application Settings Overview
-This topic discusses how to create and store settings data on behalf of your application and your users.
+
+This article discusses how to create and store settings data on behalf of your application and your users.
 
  The Application Settings feature of Windows Forms makes it easy to create, store, and maintain custom application and user preferences on the client computer. With Windows Forms application settings, you can store not only application data such as database connection strings, but also user-specific data, such as user application preferences. Using Visual Studio or custom managed code, you can create new settings, read them from and write them to disk, bind them to properties on your forms, and validate settings data prior to loading and saving.
 
  Application settings enables developers to save state in their application using very little custom code, and is a replacement for dynamic properties in previous versions of the .NET Framework. Application settings contains many improvements over dynamic properties, which are read-only, late-bound, and require more custom programming. The dynamic property classes have been retained in .NET Framework 2.0, but they are just shell classes that thinly wrap the application settings classes.
 
 ## What Are Application Settings?
- Your Windows Forms applications will often require data that is critical to running the application, but which you do not want to include directly in the application's code. If your application uses a Web Service or a database server, you may want to store this information in a separate file, so that you can change it in the future without re-compiling. Similarly, your applications may require storing data that is specific to the current user. Most applications, for example, have user preferences that customize the application's appearance and behavior.
+ Your Windows Forms applications will often require data that's critical to running the application, but which you don't want to include directly in the application's code. If your application uses a Web Service or a database server, you may want to store this information in a separate file, so that you can change it in the future without recompiling. Similarly, your applications may require storing data that is specific to the current user. Most applications, for example, have user preferences that customize the application's appearance and behavior.
 
  Application settings addresses both needs by providing an easy way to store both application-scoped and user-scoped settings on the client computer. Using Visual Studio or a code editor, you define a setting for a given property by specifying its name, data type, and scope (application or user). You can even place related settings into named groups for easier use and readability. Once defined, these settings are persisted and read back into memory automatically at run time. A pluggable architecture enables the persistence mechanism to be changed, but by default, the local file system is used.
 
@@ -35,7 +37,7 @@ This topic discusses how to create and store settings data on behalf of your app
  Application settings has no built-in facility for encrypting information automatically. You should never store security-related information, such as database passwords, in clear text. If you want to store such sensitive information, you as the application developer are responsible for making sure it is secure. If you want to store connection strings, we recommend that you use Windows Integrated Security and not resort to hard-coding passwords into the URL. For more information, see [Code Access Security and ADO.NET](../../data/adonet/code-access-security.md).
 
 ## Getting Started with Application Settings
- If you use Visual Studio, you can define settings within the Windows Forms Designer using the **(ApplicationSettings)** property in the **Properties** window. When you define settings this way, Visual Studio automatically creates a custom managed wrapper class which associates each setting with a class property. Visual Studio also takes care of binding the setting to a property on a form or control so that the control's settings are restored automatically when its form is displayed, and saved automatically when the form is closed.
+ If you use Visual Studio, you can define settings within the Windows Forms Designer using the **(ApplicationSettings)** property in the **Properties** window. When you define settings this way, Visual Studio automatically creates a custom managed wrapper class that associates each setting with a class property. Visual Studio also takes care of binding the setting to a property on a form or control so that the control's settings are restored automatically when its form is displayed, and saved automatically when the form is closed.
 
  If you want more detailed control over your settings, you can define your own custom applications settings wrapper class. This is accomplished by deriving a class from <xref:System.Configuration.ApplicationSettingsBase>, adding a property that corresponds to each setting, and applying special attributes to these properties. For details about creating wrapper classes, see [Application Settings Architecture](application-settings-architecture.md).
 

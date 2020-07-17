@@ -1,5 +1,6 @@
 ---
 title: "DataContractSerializer Sample"
+description: This sample demonstrates DataContractSerializer in WCF, which performs general serialization and deserialization services for the data contract classes.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XML Formatter"

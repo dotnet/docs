@@ -1,5 +1,6 @@
 ---
 title: "Data Member Order"
+description: Learn about data member order in WCF. Applications might need to know or change the order in which data members are sent or expected.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

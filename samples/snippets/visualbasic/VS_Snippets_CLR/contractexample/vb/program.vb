@@ -43,7 +43,7 @@ Friend MustInherit Class IArrayContract
         Contract.Ensures(Contract.Result(Of Integer)() >= -1) '
         Contract.Ensures(Contract.Result(Of Integer)() < CType(Me, IArray).Count) '
         Return 0
-        
+
     End Function 'IArray.Add
     '</Snippet3>
 

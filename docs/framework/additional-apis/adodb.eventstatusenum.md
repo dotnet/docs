@@ -1,5 +1,6 @@
 ---
 title: EventStatus Enumeration (adodb)
+description: Get information about the EventStatus enumeration in .NET. This enumeration is in the adodb namespace and the adodb assembly (in the adodb.dll library).
 ms.date: 03/28/2019
 topic_type:
   - "apiref"

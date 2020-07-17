@@ -1,5 +1,6 @@
 ---
 title: "Using the XmlSerializer Class"
+description: Learn about the XmlSerializer, which WCF uses to serialize the data in your application into XML that is transmitted between clients and services.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

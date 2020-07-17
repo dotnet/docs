@@ -1,5 +1,6 @@
 ---
 title: "Exceptions in Managed Threads"
+description: See how unhandled exceptions are handled in .NET. With .NET version 2.0, most unhandled thread exceptions proceed naturally and lead to application termination.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

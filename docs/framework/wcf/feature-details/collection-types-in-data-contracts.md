@@ -1,5 +1,6 @@
 ---
 title: "Collection Types in Data Contracts"
+description: Learn about how the data contract model treats collections in the .NET Framework and how WCF supports data serialization for collection types.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

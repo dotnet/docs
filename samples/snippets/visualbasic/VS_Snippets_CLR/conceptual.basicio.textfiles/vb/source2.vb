@@ -18,7 +18,7 @@ Class DirAppend
         w.WriteLine($"{DateTime.Now.ToLongTimeString()} {DateTime.Now.ToLongDateString()}")
         w.WriteLine("  :")
         w.WriteLine($"  :{logMessage}")
-        w.WriteLine ("-------------------------------")
+        w.WriteLine("-------------------------------")
     End Sub
 
     Public Shared Sub DumpLog(r As StreamReader)

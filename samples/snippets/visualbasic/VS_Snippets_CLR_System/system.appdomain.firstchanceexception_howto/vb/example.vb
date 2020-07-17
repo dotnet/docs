@@ -4,7 +4,7 @@ Imports System.Runtime.ExceptionServices
 
 Class Example
     Shared Sub Main()
-    
+
         ' To receive first chance notifications of exceptions in 
         ' an application domain, handle the FirstChanceException
         ' event in that application domain.
@@ -13,7 +13,7 @@ Class Example
         AddHandler ad.FirstChanceException, AddressOf FirstChanceHandler
         '</Snippet2>
 
-        
+
         ' Create a worker object in the application domain.
         '<Snippet4>
         Dim w As Worker = CType(ad.CreateInstanceAndUnwrap(
@@ -30,17 +30,17 @@ Class Example
             w.Thrower(false)
 
         Catch ex As ArgumentException
-        
-            Console.WriteLine("ArgumentException caught in {0}: {1}", 
+
+            Console.WriteLine("ArgumentException caught in {0}: {1}",
                 AppDomain.CurrentDomain.FriendlyName, ex.Message)
         End Try
         '</Snippet6>
     End Sub
 
     '<Snippet3>
-    Shared Sub FirstChanceHandler(ByVal source As Object, 
+    Shared Sub FirstChanceHandler(ByVal source As Object,
                                   ByVal e As FirstChanceExceptionEventArgs)
-    
+
         Console.WriteLine("FirstChanceException event raised in {0}: {1}",
             AppDomain.CurrentDomain.FriendlyName, e.Exception.Message)
     End Sub
@@ -51,20 +51,20 @@ Public Class Worker
     Inherits MarshalByRefObject
 
     Public Sub Thrower(ByVal catchException As Boolean)
-    
+
         '<Snippet5>
         If catchException
-        
+
             Try
                 Throw New ArgumentException("Thrown in " & AppDomain.CurrentDomain.FriendlyName)
 
             Catch ex As ArgumentException
-            
-                Console.WriteLine("ArgumentException caught in {0}: {1}", 
+
+                Console.WriteLine("ArgumentException caught in {0}: {1}",
                     AppDomain.CurrentDomain.FriendlyName, ex.Message)
             End Try
         Else
-        
+
             Throw New ArgumentException("Thrown in " & AppDomain.CurrentDomain.FriendlyName)
         End If
         '</Snippet5>

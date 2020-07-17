@@ -1,5 +1,6 @@
 ---
 title: "Naming Parameters"
+description: Learn guidelines for the naming of parameters. For example, use descriptive parameter names & camel casing, & consider naming based on meaning instead of type.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:

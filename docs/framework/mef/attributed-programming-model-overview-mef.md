@@ -1,5 +1,6 @@
 ---
 title: "Attributed Programming Model Overview (MEF)"
+description: Get started with the attributed programming model, which is the default programming model for the Managed Extensibility Framework (MEF) in .NET.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement an Observer"
+description: Implement an observer in .NET. The observer design pattern requires a division between an observer, which registers for notifications, and a provider.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

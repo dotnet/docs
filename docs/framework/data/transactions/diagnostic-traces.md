@@ -1,5 +1,6 @@
 ---
 title: "Diagnostic Traces"
+description: Learn about diagnostic traces in .NET. Traces are the publishing of specific messages that are generated during application execution.
 ms.date: "03/30/2017"
 ms.assetid: 28e77a63-d20d-4b6a-9caf-ddad86550427
 ---

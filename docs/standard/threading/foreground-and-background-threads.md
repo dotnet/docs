@@ -1,5 +1,6 @@
 ---
 title: "Foreground and Background Threads"
+description: Determine or change whether a thread is a background thread or a foreground thread using the Thread.IsBackground property in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords: 

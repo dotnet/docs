@@ -106,7 +106,7 @@ Class CustomContext
                 Case "FindTaskBy" ' Implemented but not called.
                     Return New XPathExtensionFunctions(2, 2, _
                                     XPathResultType.String, ArgTypes, "FindTaskBy")
-  
+
                 Case "Right"  ' Implemented but not called.
                     Return New XPathExtensionFunctions(2, 2, _
                                     XPathResultType.String, ArgTypes, "Right")

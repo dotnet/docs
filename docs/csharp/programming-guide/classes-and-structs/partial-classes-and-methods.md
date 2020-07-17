@@ -1,6 +1,6 @@
 ---
 title: "Partial Classes and Methods - C# Programming Guide"
-description: Partial classes and methods in C# split the definition of a class, a struct, an interface or a method over two or more source files.
+description: Partial classes and methods in C# split the definition of a class, a struct, an interface, or a method over two or more source files.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "partial methods [C#]"

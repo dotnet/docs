@@ -36,31 +36,29 @@ items:
 - name: Controls
   items:
   - name: Overview
-    href: file.md
+    href: controls/overview.md
   - name: Layout options
-    href: file.md
+    href: controls/layout.md
   - name: Labels
-    href: file.md
+    href: controls/labels.md
   - name: Custom controls
-    href: file.md
+    href: controls/custom.md
   - name: Custom painting and drawing
-    href: file.md
+    href: controls/custom-painting-drawing.md
   - name: Apply accessibility information
-    href: file.md
+    href: controls/provide-accessibility-information.md
   - name: Control reference ...
     href: file.md
   - name: Common tasks
     items:
     - name: Add a control to a form
-      href: file.md
-    - name: Arrange controls on a form
-      href: file.md
-    - name: Add shortcuts to controls
-      href: file.md
+      href: controls/how-to-add-to-a-form.md
+    - name: Add create access key shortcuts
+      href: controls/how-to-create-access-keys.md
     - name: Set the text displayed by a control
-      href: file.md
+      href: controls/how-to-set-the-dipslay-text.md
     - name: Set the image displayed by a control
-      href: file.md
+      href: controls/how-to-add-a-picture-to-a-control.md
 - name: Custom controls
   items:
   - name: Overview

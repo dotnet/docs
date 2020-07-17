@@ -1,5 +1,6 @@
 ---
 title: "Generating and Compiling Source Code from a CodeDOM Graph"
+description: Generate and compile source code from a CodeDOM graph in .NET. Use a CodeDOM code provider to generate source code and compile assemblies.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Private Constructors - C# Programming Guide"
+description: A private constructor is a special instance constructor in C#, generally used in classes that contain static members only.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, private constructors"

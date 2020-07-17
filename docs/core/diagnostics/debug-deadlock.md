@@ -10,13 +10,13 @@ ms.date: 07/16/2020
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-The tutorial walks through a deadlock scenario, using an example source code repository that contains code that will cause a deadlock. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as code dumps, code dump analysis, and process tracing.
+The tutorial walks through a deadlock scenario, using an [ASP.NET Core web app source code example](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) that causes a deadlock. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
 
 ## Prerequisites
 
 The tutorial relies the following:
 
-- [Sample debug target](sample-debug-target.md) to trigger the scenario.
+- [Sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario.
 - [dotnet-trace](dotnet-trace.md) to list processes.
 - [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file.
 
@@ -24,7 +24,7 @@ The tutorial runs on **Linux**.
 
 ## Core dump generation
 
-To investigate application hang, a memory dump allows you to inspect the state of its threads, and any possible locks that may have contention issues. Run the [sample debug](sample-debug-target.md) application using the following command.
+To investigate application hang, a memory dump allows you to inspect the state of its threads, and any possible locks that may have contention issues. Run the [sample debug](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) application using the following command.
 
 ```dotnetcli
 dotnet run
@@ -36,7 +36,7 @@ To find the process ID, use the following command:
 dotnet-trace list-processes
 ```
 
-Take note of the process ID, yours will be different than this tutorials, but imagine that the ID is `4807`. Navigate to the following URL, which is an API endpoint on the sample site:
+Take note of the process ID from your command output (yours will be different), ours was `4807`. Navigate to the following URL, which is an API endpoint on the sample site:
 
 [http://localhost:5000/api/diagscenario/deadlock](http://localhost:5000/api/diagscenario/deadlock)
 

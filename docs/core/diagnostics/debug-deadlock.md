@@ -262,6 +262,4 @@ OS Thread Id: 0x1dc1e (21)
 
 ```
 
-The second thread is similar. It's also trying to acquire a lock that it already owns.
-
-The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock.
+The second thread is similar. It's also trying to acquire a lock that it already owns. The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock.

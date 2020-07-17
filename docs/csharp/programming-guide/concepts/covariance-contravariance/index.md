@@ -1,5 +1,6 @@
 ---
 title: "Covariance and Contravariance (C#)"
+description: In this article, learn about covariance and contravariance and how they affect assignment compatibility in C#.
 ms.date: 07/20/2015
 ms.assetid: 066d9a3c-aab7-4ea6-826d-0b1a85399c74
 ---

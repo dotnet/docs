@@ -1,5 +1,6 @@
 ---
 title: "Storeadm.exe (Isolated Storage Tool)"
+description: Read about Storeadm.exe, the Isolated Storage tool. This tool lists or removes all existing stores for the current user.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Storeadm.exe"

@@ -1,7 +1,7 @@
 ---
 title: Garbage collector config settings
 description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET Core apps.
-ms.date: 01/09/2020
+ms.date: 07/10/2020
 ms.topic: reference
 ---
 # Run-time configuration options for garbage collection
@@ -234,6 +234,7 @@ Example:
 
 - Specifies the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
 - This setting only applies to 64-bit computers.
+- This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
 - The default value, which only applies in certain cases, is the greater of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
@@ -265,6 +266,7 @@ Example:
 - If [System.GC.HeapHardLimit](#systemgcheaphardlimitcomplus_gcheaphardlimit) is also set, this setting is ignored.
 - This setting only applies to 64-bit computers.
 - If the process is running inside a container that has a specified memory limit, the percentage is calculated as a percentage of that memory limit.
+- This setting is ignored if the [Per-object-heap limits](#per-object-heap-limits) are configured.
 - The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
 
   - The process is running inside a container that has a specified memory limit.
@@ -289,6 +291,40 @@ Example:
 
 > [!TIP]
 > If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the values would be 30 for the JSON file and 0x1E or 1E for the environment variable.
+
+### Per-object-heap limits
+
+You can specify the GC's allowable heap usage on a per-object-heap basis. The different heaps are the large object heap (LOH), small object heap (SOH), and pinned object heap (POH).
+
+#### COMPLUS_GCHeapHardLimitSOH, COMPLUS_GCHeapHardLimitLOH, COMPLUS_GCHeapHardLimitPOH
+
+- If you specify a value for any of the `COMPLUS_GCHeapHardLimitSOH`, `COMPLUS_GCHeapHardLimitLOH`, or `COMPLUS_GCHeapHardLimitPOH` settings, you must also specify a value for `COMPLUS_GCHeapHardLimitSOH` and `COMPLUS_GCHeapHardLimitLOH`. If you don't, the runtime will fail to initialize.
+- The default value for `COMPLUS_GCHeapHardLimitPOH` is 0. `COMPLUS_GCHeapHardLimitSOH` and `COMPLUS_GCHeapHardLimitLOH` don't have default values.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **Environment variable** | `COMPLUS_GCHeapHardLimitSOH` | *hexadecimal value* | .NET 5.0 |
+| **Environment variable** | `COMPLUS_GCHeapHardLimitLOH` | *hexadecimal value* | .NET 5.0 |
+| **Environment variable** | `COMPLUS_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 5.0 |
+
+> [!TIP]
+> If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 200 mebibytes (MiB), the value would be 0xC800000 or C800000.
+
+#### COMPLUS_GCHeapHardLimitSOHPercent, COMPLUS_GCHeapHardLimitLOHPercent, COMPLUS_GCHeapHardLimitPOHPercent
+
+- If you specify a value for any of the `COMPLUS_GCHeapHardLimitSOHPercent`, `COMPLUS_GCHeapHardLimitLOHPercent`, or `COMPLUS_GCHeapHardLimitPOHPercent` settings, you must also specify a value for `COMPLUS_GCHeapHardLimitSOHPercent` and `COMPLUS_GCHeapHardLimitLOHPercent`. If you don't, the runtime will fail to initialize.
+- These settings are ignored if `COMPLUS_GCHeapHardLimitSOH`, `COMPLUS_GCHeapHardLimitLOH`, and `COMPLUS_GCHeapHardLimitPOH` are specified.
+- A value of 1 means that GC uses 1% of total physical memory for that object heap.
+- Each value must be greater than zero and less than 100. Additionally, the sum of the three percentage values must be less than 100. Otherwise, the runtime will fail to initialize.
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **Environment variable** | `COMPLUS_GCHeapHardLimitSOHPercent` | *hexadecimal value* | .NET 5.0 |
+| **Environment variable** | `COMPLUS_GCHeapHardLimitLOHPercent` | *hexadecimal value* | .NET 5.0 |
+| **Environment variable** | `COMPLUS_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5.0 |
+
+> [!TIP]
+> If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the value would be 0x1E or 1E.
 
 ### System.GC.RetainVM/COMPlus_GCRetainVM
 

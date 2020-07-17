@@ -20,6 +20,7 @@ The following breaking changes are documented on this page:
 - [Authorization: AddAuthorization overload moved to different assembly](#authorization-addauthorization-overload-moved-to-different-assembly)
 - [Authorization: IAllowAnonymous removed from AuthorizationFilterContext.Filters](#authorization-iallowanonymous-removed-from-authorizationfiltercontextfilters)
 - [Authorization: IAuthorizationPolicyProvider implementations require new method](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
+- [Authorization: Resource in endpoint routing is HttpContext](#authorization-resource-in-endpoint-routing-is-httpcontext)
 - [Azure: Microsoft-prefixed Azure integration packages removed](#azure-microsoft-prefixed-azure-integration-packages-removed)
 - [Blazor: Insignificant whitespace trimmed from components at compile time](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
 - [Blazor: Target framework of NuGet packages changed](#blazor-target-framework-of-nuget-packages-changed)
@@ -85,6 +86,10 @@ The following breaking changes are documented on this page:
 - [Target framework: .NET Framework not supported](#target-framework-net-framework-support-dropped)
 
 ## ASP.NET Core 5.0
+
+[!INCLUDE[Authorization: Resource in endpoint routing is HttpContext](~/includes/core-changes/aspnetcore/5.0/authorization-resource-in-endpoint-routing.md)]
+
+***
 
 [!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
 

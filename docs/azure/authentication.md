@@ -60,7 +60,7 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
     .WithDefaultSubscription();
 ```
 
-It is preferred that you explicitly provide the *subscriptionId* from the JSON output to the `Azure` object.
+It is recommended that you explicitly provide the *subscriptionId* from the JSON output to the `Azure` object:
 
 ```csharp
 var azure = Microsoft.Azure.Management.Fluent.Azure

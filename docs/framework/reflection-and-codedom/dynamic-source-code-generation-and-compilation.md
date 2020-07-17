@@ -1,5 +1,6 @@
 ---
 title: "Dynamic Source Code Generation and Compilation"
+description: Compile and generate dynamic source code in .NET with the Code Document Object Model (CodeDOM). CodeDOM elements are linked to form a CodeDOM graph.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Code Document Object Model"

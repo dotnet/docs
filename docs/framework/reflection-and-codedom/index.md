@@ -1,5 +1,6 @@
 ---
 title: "Dynamic Programming in the .NET Framework"
+description: See links to articles about dynamic programming in .NET. The articles cover reflection, emitting dynamic methods and assemblies, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ".NET Framework, dynamic programming"

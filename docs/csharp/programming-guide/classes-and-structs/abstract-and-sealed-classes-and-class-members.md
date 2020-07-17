@@ -1,5 +1,6 @@
 ---
 title: "Abstract and Sealed Classes and Class Members - C# Programming Guide"
+description: The abstract keyword in C# creates incomplete classes and class members. The sealed keyword prevents inheritance of previously virtual classes or class members.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "abstract classes [C#]"

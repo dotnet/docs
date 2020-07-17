@@ -32,7 +32,7 @@ The following compiler options are sorted by category. For an alphabetical list,
 |[-preferreduilang](preferreduilang-compiler-option.md)|Specify a language for compiler output.|
 |[-refout](refout-compiler-option.md)|Generate a reference assembly in addition to the primary assembly.|
 |[-refonly](refonly-compiler-option.md)|Generate a reference assembly instead of a primary assembly.|
-|[-target](target-compiler-option.md)|Specifies the format of the output file using one of five options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), or [-target:winmdobj](target-winmdobj-compiler-option.md).|
+|[-target](target-compiler-option.md)|Specifies the format of the output file using one of the following options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md), or [-target:winmdobj](target-winmdobj-compiler-option.md).|
 |-modulename:\<string>|Specify the name of the source module|
 
 ## .NET Framework Assemblies

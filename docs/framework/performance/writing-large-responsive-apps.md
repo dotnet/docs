@@ -1,5 +1,6 @@
 ---
 title: "Writing Large, Responsive .NET Framework Apps"
+description: Write large, responsive .NET apps, or apps that process a large amount of data, such as files or databases.
 ms.date: "03/30/2017"
 ms.assetid: 123457ac-4223-4273-bb58-3bc0e4957e9d
 author: "BillWagner"

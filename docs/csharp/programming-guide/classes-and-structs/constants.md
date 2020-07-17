@@ -1,5 +1,6 @@
 ---
 title: "Constants - C# Programming Guide"
+description: Constants in C# are compile-time literal values, which do not change once the program is compiled. Only C# built-in types can be constants.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, constants"

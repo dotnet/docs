@@ -1,6 +1,6 @@
 ---
 title: Collectible assemblies for dynamic type generation
-description: 
+description: Get started with collectible assemblies for dynamic type generation in .NET. Read about collectible assembly lifetimes and restrictions.
 ms.date: "08/29/2017"
 helpviewer_keywords: 
   - "reflection, dynamic assembly"

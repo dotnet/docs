@@ -1,5 +1,6 @@
 ---
 title: "Stack ETW Event"
+description: Read about the stack ETW event, which should be used in conjunction with other events to generate stack traces after an event is raised.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "stack event [.NET Framework]"

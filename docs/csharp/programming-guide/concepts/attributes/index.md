@@ -1,5 +1,6 @@
 ---
 title: "Attributes (C#)"
+description: Learn how to use attributes to associate metadata or declarative information with code in C#. An attribute can be queried at run time by using reflection.
 ms.date: 04/26/2018
 ---
 # Attributes (C#)

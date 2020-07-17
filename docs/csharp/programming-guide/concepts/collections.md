@@ -1,5 +1,6 @@
 ---
 title: "Collections (C#)"
+description: Learn about collections in C#, which are used to work with groups of objects that can grow and shrink dynamically as the needs of the application change.
 ms.date: 07/20/2015
 ms.assetid: 317d7dc3-8587-4873-8b3e-556f86497939
 ---

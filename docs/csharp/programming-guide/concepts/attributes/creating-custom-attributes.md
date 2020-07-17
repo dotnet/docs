@@ -1,5 +1,6 @@
 ---
 title: "Creating Custom Attributes (C#)"
+description: Learn how to create custom attributes in C# by defining an attribute class that derives from the Attribute class.
 ms.date: 07/20/2015
 ms.assetid: 500e1977-c6de-462d-abce-78a0eb1eda22
 ---

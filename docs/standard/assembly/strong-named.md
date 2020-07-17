@@ -24,7 +24,7 @@ When a strong-named assembly is created, it contains the simple text name of the
 
 ## Why strong-name your assemblies?
 
-For .NET Framework, strong-named assemblies can be installed in the global assembly cache, which is useful in the following scenarios:
+For .NET Framework, strong-named assemblies are useful in the following scenarios:
 
 - You want to enable your assemblies to be referenced by strong-named assemblies, or you want to give `friend` access to your assemblies from other strong-named assemblies.
 

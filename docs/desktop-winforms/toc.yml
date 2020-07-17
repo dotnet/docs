@@ -1,0 +1,202 @@
+items:
+- name: Windows Forms for .NET
+  href: index.yml
+- name: Get started
+  items:
+  - name: Overview
+    href: overview/index.md
+  - name: Create an app
+    href: https://docs.microsoft.com/visualstudio/ide/create-csharp-winform-visual-studio?toc=/dotnet/desktop-winforms/toc.json&bc=/dotnet/breadcrumb/toc.json
+- name: Migration
+  items:
+  - name: Differences from .NET Framework
+    href: file.md
+  - name: Migrate to .NET 5
+    href: file.md
+- name: Forms
+  items:
+  - name: Overview
+    href: file.md
+  - name: Event handlers
+    href: forms/events.md
+  - name: Automatic scaling
+    href: forms/autoscale.md
+  - name: Common tasks
+    items:
+    - name: Add a form
+      href: forms/how-to-add.md
+    - name: Configure autoscaling
+      href: forms/how-to-configure-autoscale.md
+    - name: Respond to scale changes
+      href: forms/how-to-respond-to-scale-changes.md
+    - name: Resize a form
+      href: how-to-resize.md
+    - name: Change the border style
+      href: how-to-change-border.md
+- name: Controls
+  items:
+  - name: Overview
+    href: overview.md
+  - name: Layout options
+    href: layout.md
+  - name: Labels
+    href: labels.md
+  - name: Custom controls
+    href: custom.md
+  - name: Custom painting and drawing
+    href: custom-painting-drawing.md
+  - name: Apply accessibility information
+    href: provide-accessibility-information.md
+  - name: Control reference ...
+    href: file.md
+  - name: Common tasks
+    items:
+    - name: Add a control to a form
+      href: how-to-add-to-a-form.md
+    - name: Add create access key shortcuts
+      href: how-to-create-access-keys.md
+    - name: Set the text displayed by a control
+      href: how-to-set-the-dipslay-text.md
+    - name: Set the image displayed by a control
+      href: how-to-add-a-picture-to-a-control.md
+- name: Custom controls
+  items:
+  - name: Overview
+    href: file.md
+  - name: Properties in custom controls
+    href: file.md
+  - name: Events in custom controls
+    href: file.md
+  - name: Properties and attributes
+    href: file.md
+  - name: Custom control painting and rendering
+    href: file.md
+  - name: Common tasks
+    items:
+    - name: Create a simple custom control
+      href: file.md
+    - name: Create a composite user control
+      href: file.md
+    - name: Overriding OnPaint for custom drawing
+      href: file.md
+    - name: Handling user input
+      href: file.md
+    - name: Define designer-aware properties
+      href: file.md
+- name: User input - Keyboard
+  items:
+  - name: Overview
+    href: file.md
+  - name: Using keyboard events
+    href: file.md
+  - name: Simulate keyboard events
+    href: file.md
+  - name: Input validation
+    href: file.md
+  - name: Common tasks
+    items:
+    - name: Change the pressed key
+      href: file.md
+    - name: Determine which modifier key is pressed
+      href: file.md
+    - name: Handle input at the form level
+      href: file.md
+    - name: Handle input at the control level
+      href: file.md
+- name: User input - Mouse
+  items:
+  - name: Overview
+    href: file.md
+  - name: Using mouse events
+    href: file.md
+  - name: Drag-and-drop functionality
+    href: file.md
+  - name: Simulate mouse events
+    href: file.md
+  - name: Input validation
+    href: file.md
+  - name: Common tasks
+    items:
+    - name: Distinguish between clicks and double-clicks
+      href: file.md
+    - name: Control and modify the mouse pointer
+      href: file.md
+    - name: Capture the mouse pointer
+      href: file.md
+    - name: Handle input at the control level
+      href: file.md
+- name: Dialog boxes and popups
+  items:
+  - name: Overview
+    href: file.md
+  - name: Dialog styles
+    href: file.md
+  - name: Common tasks
+    items:
+    - name: Display a message box
+      href: file.md
+    - name: Display a form as a popup
+      href: file.md
+- name: Accessibility
+  items:
+  - name: Overview
+    href: file.md
+  - name: Windows Forms features
+    href: file.md
+  - name: Introduction to Windows.UIAutomation
+    href: file.md
+  - name: Common tasks
+    items:
+    - name: Unknown
+      href: file.md
+- name: Data and data binding
+  items:
+  - name: Overview
+    href: file.md
+  - name: Some feature
+    href: file.md
+  - name: Interfaces related to data binding
+    href: file.md
+  - name: Change notifications
+    href: file.md
+    items:
+    - name: Apply the PropertyNameChanged pattern
+      href: file.md
+    - name: Bind and format data with a control
+      href: file.md
+    - name: Synchronize multiple controls
+      href: file.md
+    - name: Programmatically navigating bound data
+      href: file.md
+- name: Publishing
+  items:
+  - name: Overview
+    href: file.md
+  - name: Package with MSIX
+    href: file.md
+  - name: Publish to the Windows Store
+    href: file.md
+  - name: Package and publish with NuGet
+    href: file.md
+- name: Advanced
+  items:
+  - name: Graphics and drawing ...
+    href: file.md
+  - name: App settings ...
+    href: file.md
+  - name: Drag and drop ...
+    href: file.md
+  - name: COM and unmanaged apps ...
+    href: file.md
+  - name: Power management ...
+    href: file.md
+  - name: Forms visual inheritance ...
+    href: file.md
+  - name: Multiple-document interface (MDI) apps ...
+    href: file.md
+  - name: Integrate user help ...
+    href: file.md
+  - name: Interop with WPF and UWP ...
+    href: file.md
+  - name: Localizing apps ...
+    href: file.md

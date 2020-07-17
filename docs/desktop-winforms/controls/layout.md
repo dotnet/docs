@@ -20,7 +20,7 @@ helpviewer_keywords:
   - "AutoSizeMode property"
 ---
 
-# Position and layout of controls
+# Position and layout of controls (Windows Forms .NET)
 
 Control placement in Windows Forms is determined not only by the control, but also by the parent of the control. This article describes the different settings provided by controls and the different types of parent containers that affect layout.
 

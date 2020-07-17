@@ -16,7 +16,7 @@ helpviewer_keywords:
   - "controls [Windows Forms], composite"
 ---
 
-# Types of custom controls
+# Types of custom controls (Windows Forms .NET)
 
 With Windows Forms, you can develop and implement new controls. You can create a new user control, modify existing controls through inheritance, and write a custom control that does its own painting.
 

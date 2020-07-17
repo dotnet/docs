@@ -12,7 +12,7 @@ dev_langs:
   - "cpp"
 ---
 
-# Providing Accessibility Information for Controls on a Windows Form
+# Providing Accessibility Information for Controls (Windows Forms .NET)
 
 Accessibility aids are specialized programs and devices that help people with disabilities use computers more effectively. Examples include screen readers for people who are blind and voice input utilities for people who provide verbal commands instead of using the mouse or keyboard. These accessibility aids interact with the accessibility properties exposed by Windows Forms controls. These properties are:
 

@@ -35,5 +35,5 @@ For more information, see [Position and layout of controls](layout.md).
 <!-- TODO -->
 
 - [Position and layout of controls](layout.md)
-- [# Label control overview (Windows Forms .NET)](labels.md)
+- [Label control overview (Windows Forms .NET)](labels.md)
 - [Add a control (Windows Forms .NET)](how-to-add-to-a-form.md)

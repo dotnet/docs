@@ -14,7 +14,7 @@ helpviewer_keywords:
   - "examples [Windows Forms], controls"
 ---
 
-# How to display an image on a control
+# How to display an image on a control (Windows Forms .NET)
 
 Several Windows Forms controls can display images. These images can be icons that clarify the purpose of the control, such as a diskette icon on a button denoting the Save command. Alternatively, the icons can be background images to give the control the appearance and behavior you want.
 

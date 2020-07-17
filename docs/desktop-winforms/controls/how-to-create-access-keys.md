@@ -21,7 +21,7 @@ helpviewer_keywords:
   - "ALT key"
 ---
 
-# Add an access key shortcut to a control
+# Add an access key shortcut to a control (Windows Forms .NET)
 
 An *access key* is an underlined character in the text of a menu, menu item, or the label of a control such as a button. With an access key, the user can "click" a button by pressing the <kbd>Alt</kbd> key in combination with the predefined access key. For example, if a button runs a procedure to print a form, and therefore its `Text` property is set to "Print," adding an ampersand (&) before the letter "P" causes the letter "P" to be underlined in the button text at run time. The user can run the command associated with the button by pressing <kbd>Alt</kbd>.
 
@@ -105,5 +105,5 @@ button1->Text = "Print && Close";
 - <xref:System.Windows.Forms.Button>
 - <xref:System.Windows.Forms.Label>
 - [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
-- [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
+- [How to: Set the text displayed by a Windows Forms control](how-to-set-the-display-text.md)
 - [Labeling Individual Windows Forms Controls and Providing Shortcuts to Them](labeling-individual-windows-forms-controls-and-providing-shortcuts-to-them.md)

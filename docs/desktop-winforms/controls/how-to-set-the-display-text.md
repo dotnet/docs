@@ -23,11 +23,27 @@ helpviewer_keywords:
   - "forms [Windows Forms], captions"
 ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
 ---
-# How to: Set the text displayed by a Windows Forms control
+# How to: Set the text displayed by a control (Windows Forms .NET)
 
 Windows Forms controls usually display some text that's related to the primary function of the control. For example, a <xref:System.Windows.Forms.Button> control usually displays a caption indicating what action will be performed if the button is clicked. For all controls, you can set or return the text by using the <xref:System.Windows.Forms.Control.Text%2A> property. You can change the font by using the <xref:System.Windows.Forms.Control.Font%2A> property.
 
 You can also set the text by using the [designer](#designer).
+
+## Designer
+
+01. In the **Properties** window in Visual Studio, set the **Text** property of the control to an appropriate string.
+
+    To create an underlined shortcut key, include an ampersand (&) before the letter that will be the shortcut key.
+
+    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-text.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
+
+01. In the **Properties** window, select the ellipsis button (![Ellipsis button (...) in the Properties window of Visual Studio](../media/visual-studio-ellipsis-button.png)) next to the **Font** property.
+
+    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-font.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
+
+    In the standard font dialog box, adjust the font with settings such as type, size, and style.
+
+    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/font-window.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
 
 ## Programmatic
 
@@ -66,22 +82,6 @@ You can also set the text by using the [designer](#designer).
     ```cpp
     mpMenuItem->Text = "&& Now For Something Completely Different";
     ```
-
-## Designer
-
-01. In the **Properties** window in Visual Studio, set the **Text** property of the control to an appropriate string.
-
-    To create an underlined shortcut key, include an ampersand (&) before the letter that will be the shortcut key.
-
-    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-text.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
-
-01. In the **Properties** window, select the ellipsis button (![Ellipsis button (...) in the Properties window of Visual Studio](../media/visual-studio-ellipsis-button.png)) next to the **Font** property.
-
-    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/properties-font.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
-
-    In the standard font dialog box, adjust the font with settings such as type, size, and style.
-
-    :::image type="content" source="media/how-to-set-the-text-displayed-by-a-windows-forms-control/font-window.png" alt-text="Visual Studio Properties pane for .NET Windows Forms with Text property shown.":::
 
 ## See also
 

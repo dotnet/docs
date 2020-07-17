@@ -44,8 +44,9 @@ The following code adds and positions two controls, a [Label](xref:System.Window
 
 ## See also
 
+- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
+- [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-display-text.md)
+- [How to: Add an access key shortcut to a control](how-to-create-access-keys.md)
 - <xref:System.Windows.Forms.Label>
 - <xref:System.Windows.Forms.TextBox>
-- [How to: Respond to Windows Forms Button Clicks](how-to-respond-to-windows-forms-button-clicks.md)
-- [How to: Set the Text Displayed by a Windows Forms Control](how-to-set-the-text-displayed-by-a-windows-forms-control.md)
-- [How to: Add an access key shortcut to a control](how-to-create-access-keys-for-windows-forms-controls.md)
+- <xref:System.Windows.Forms.Button>

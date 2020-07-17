@@ -10,39 +10,37 @@ ms.date: 07/16/2020
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-In this scenario, the endpoint will experience a hang, and thread accumulation. We'll show how you can use various tools to analyze the problem., such as code dumps,
+The tutorial walks through a deadlock scenario, using an example source code repository that contains code that will cause a deadlock. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as code dumps, code dump analysis, and process tracing.
 
-## Preparing
+## Prerequisites
 
-The tutorial uses:
+The tutorial relies the following:
 
 - [Sample debug target](sample-debug-target.md) to trigger the scenario.
 - [dotnet-trace](dotnet-trace.md) to list processes.
 - [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file.
 
-The tutorial runs on **Linux**, and assumes the sample, and corresponding tools are ready to use.
+The tutorial runs on **Linux**.
 
 ## Core dump generation
 
-To investigate hung application, a memory dump allows us to inspect the state of its threads and any possible locks that may have contention issues.
-
-Lets run the [Sample debug target](sample-debug-target.md).
+To investigate application hang, a memory dump allows you to inspect the state of its threads, and any possible locks that may have contention issues. Run the [sample debug](sample-debug-target.md) application using the following command.
 
 ```dotnetcli
 dotnet run
 ```
 
-Then find the process ID using:
+To find the process ID, use the following command:
 
 ```dotnetcli
 dotnet-trace list-processes
 ```
 
-Navigate to the following URL:
+Take note of the process ID, yours will be different than this tutorials, but imagine that the ID is `4807`. Navigate to the following URL, which is an API endpoint on the sample site:
 
 [http://localhost:5000/api/diagscenario/deadlock](http://localhost:5000/api/diagscenario/deadlock)
 
-Let the request run for about 10-15 seconds then create the dump:
+The API request to the site will lag, let the request run for about 10-15 seconds. Then create the code dump using the following command:
 
 ```dotnetcli
 sudo dotnet-dump collect -p 4807
@@ -50,15 +48,15 @@ sudo dotnet-dump collect -p 4807
 
 ## Analyzing the core dump
 
-To start our investigation, let's open the core dump using dotnet-dump analyze:
+To start the core dump analysis, open the core dump using the following `dotnet-dump analyze` command:
 
 ```dotnetcli
 dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
 ```
 
-Since we're looking at a potential hang, we want an overall feel for the thread activity in the process. We can use the threads command as shown below:
+Since you're looking at a potential hang, you want an overall feel for the thread activity in the process. You can use the `threads` command as shown below:
 
-```console
+```bash
 > threads
 *0 0x1DBFF (121855)
  1 0x1DC01 (121857)
@@ -96,21 +94,17 @@ Since we're looking at a potential hang, we want an overall feel for the thread 
  321 0x1DD4C (122188)
  ```
 
-The output shows all the threads currently running in the process with their associated debugger thread ID and operating system thread ID.
+The output shows all the threads currently running in the process, with their associated debugger thread ID, and operating system thread ID. Based on the output, there is little over 300 threads.
 
-Based on the output above it looks like we have a little over 300 threads.
+The next step is to get a better understanding of what the threads are currently doing by getting their callstacks. There's a command called `clrstack` that can be used to output callstacks. It can either output a single callstack, or all the callstacks. Use the following command to output all the callstacks for all the threads in the process.
 
-The next step is to get a better understanding of what the threads are currently doing by getting their callstacks. There's a command called `clrstack` that can be used to output callstacks. It can either output a single callstack or all the callstacks.
-
-Run:
-
-```console
+```bash
 > clrstack -all
 ```
 
 A representative portion of the output looks like:
 
-```console
+```bash
   ...
   ...
   ...
@@ -191,7 +185,7 @@ OS Thread Id: 0x1dc88
 
 Eye balling the callstacks for all 300+ threads shows a pattern where a majority of the threads share a common callstack:
 
-```console
+```bash
 OS Thread Id: 0x1dc88
         Child SP               IP Call Site
 00007F2ADFFAE680 00007f305abc6360 [GCFrame: 00007f2adffae680]
@@ -207,7 +201,7 @@ The callstack seems to show that the request arrived in our deadlock method that
 
 The next step then is to find out which thread is actually holding the monitor lock. Since monitors typically store lock information in the sync block table, we can use the `syncblk` command to get more information:
 
-```console
+```bash
 > syncblk
 Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBlock Owner
    41 000000000143D038          603         1 00007F2B542D28C0 1dc1d  20   00007f2e90080fb8 System.Object
@@ -222,7 +216,7 @@ The two interesting columns are the `MonitorHeld` and the `Owning Thread Info` c
 
 At this point, we know two different threads (0x1dc1d and 0x1dc1e) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks:
 
-```console
+```bash
 > setthread 0x1dc1d
 > clrstack
 OS Thread Id: 0x1dc1d (20)
@@ -241,7 +235,7 @@ OS Thread Id: 0x1dc1d (20)
 
 Lets look at the first thread. The deadlock function is waiting to acquire a lock, but it already owns the lock. It's in deadlock waiting for the lock it already holds.
 
-```console
+```bash
 > setthread 0x1dc1e
 > clrstack
 OS Thread Id: 0x1dc1e (21)

@@ -1,5 +1,6 @@
 ---
 title: "Get the Toggle State of a Check Box Using UI Automation"
+description: See a code example that shows how to get the toggle state of a control (such as a check box) using Microsoft UI Automation.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

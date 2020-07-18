@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation GridItem Control Pattern"
+description: Know guidelines and conventions to implement the GridItemPattern control pattern from grid items in UI Automation. See required members for IGridItemProvider.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, GridItem"

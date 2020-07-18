@@ -1,5 +1,6 @@
 ---
 title: "Get UI Automation Element Properties"
+description: See instructions and an example that shows how to retrieve current or cached properties of a UI Automation element.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

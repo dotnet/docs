@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation MultipleView Control Pattern"
+description: Review guidelines and conventions to implement the MultipleView control pattern in UI Automation. See required members for the IMultipleViewProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, MultipleView control pattern"

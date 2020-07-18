@@ -1,5 +1,6 @@
 ---
 title: "Single-Dimensional Arrays - C# Programming Guide"
+description: Create a single-dimensional array in C# using the new operator specifying the array element type and the number of elements. 
 ms.date: 06/03/2020
 helpviewer_keywords: 
   - "single-dimensional arrays [C#]"

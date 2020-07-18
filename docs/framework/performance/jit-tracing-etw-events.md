@@ -1,5 +1,6 @@
 ---
 title: "JIT Tracing ETW Events"
+description: Understand just-in-time (JIT) tracing ETW events. These events collect information relating to the success or failure of JIT inlining and JIT tail calls.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "JIT tracing events [.NET Framework]"

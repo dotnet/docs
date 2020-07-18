@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure an app to support .NET Framework 4 or later versions"
+description: Use the included example to learn how to configure your desktop app to support .NET Framework 4 or later.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "configuring apps to support .NET Framework"
@@ -8,7 +9,7 @@ ms.assetid: 63c6b9a8-0088-4077-9aa3-521ab7290f79
 ---
 # How to: Configure an App to Support .NET Framework 4 or later versions
 
-All apps that host the common language runtime (CLR) need to start, or *activate*, the CLR in order to run managed code. Typically, a   .NET Framework app runs on the version of the CLR that it was built on, but you can change this behavior for desktop apps by using an application configuration file (sometimes referred to as an app.config file). However, you cannot change the default activation behavior for Windows Store apps or Windows Phone apps by using an application configuration file. This article explains how to enable your desktop app to run on another version of the .NET Framework and provides an example of how to target version 4 or later versions.
+All apps that host the common language runtime (CLR) need to start, or *activate*, the CLR in order to run managed code. Typically, a .NET Framework app runs on the version of the CLR that it was built on, but you can change this behavior for desktop apps by using an application configuration file (sometimes referred to as an app.config file). However, you cannot change the default activation behavior for Windows Store apps or Windows Phone apps by using an application configuration file. This article explains how to enable your desktop app to run on another version of the .NET Framework and provides an example of how to target version 4 or later versions.
 
  The version of the .NET Framework that an app runs on is determined in the following order:
 

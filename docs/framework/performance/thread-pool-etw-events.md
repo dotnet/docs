@@ -1,5 +1,6 @@
 ---
 title: "Thread Pool ETW Events"
+description: Review thread pool ETW events, which collect information about threads in .NET. Thread pool events are worker thread pool events or I/O thread pool events.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "thread pool events [.NET Framework]"

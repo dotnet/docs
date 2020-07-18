@@ -1,5 +1,6 @@
 ---
 title: "Register a Client-Side Provider Assembly"
+description: Review an example that shows how to register a DLL that contains client-side UI Automation providers.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Raise Events from a UI Automation Provider"
+description: See an example that shows how to raise an event from a UI Automation provider. It raises a UI Automation event in the implementation of a custom button control.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, raising events"

@@ -78,11 +78,17 @@ Press p to pause, r to resume, q to quit.
     Working Set (MB)                                      63
 ```
 
-With the web app running, immediately after startup, the CPU isn't being consumed at all `0%`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter, which is an API endpoint on the sample site:
+With the web app running, immediately after startup, the CPU isn't being consumed at all, and is reported at `0%`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter:
 
 [https://localhost:5001/api/diagscenario/highcpu/60000](https://localhost:5001/api/diagscenario/highcpu/60000)
 
-Now, rerun the [dotnet-counters](dotnet-counters.md) command. You should see an increase in CPU usage as shown below:
+Now, rerun the [dotnet-counters](dotnet-counters.md) command. To monitor just the `cpu-usage`, specify `System.Runtime[cpu-usage]` as part of the command.
+
+```dotnetcli
+dotnet-counters monitor System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
+```
+
+You should see an increase in CPU usage as shown below:
 
 ```console
 Press p to pause, r to resume, q to quit.
@@ -92,11 +98,10 @@ Press p to pause, r to resume, q to quit.
     CPU Usage (%)                                         25
 ```
 
-Throughout the duration of the request, the CPU will hover around 25% - depending on the host machine, expect varying CPU. To monitor just the `cpu-usage`, specify `System.Runtime[cpu-usage]` as part of the command. To visualize an even higher CPU, you can exercise this endpoint in multiple tabs simultaneously.
+Throughout the duration of the request, the CPU will hover around 25% - depending on the host machine, expect varying CPU.
 
-```dotnetcli
-dotnet-counters monitor System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
-```
+> [!TIP]
+> To visualize an even higher CPU, you can exercise this endpoint in multiple browser tabs simultaneously.
 
 At this point, you can safely say the CPU is running higher than you expect.
 

@@ -1,6 +1,6 @@
 ---
 title: "Objects - C# Programming Guide"
-description: C# uses a class or struct definition to create an object. In an object-oriented language such as C#, a program consists of objects interacting dynamically.
+description: C# uses a class or struct definition to define types of objects. In an object-oriented language such as C#, a program consists of objects interacting dynamically.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "objects [C#], about objects"

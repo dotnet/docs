@@ -1,5 +1,6 @@
 ---
 title: "How to: Get type and member information by using reflection"
+description: Learn how to get type and member information with reflection, using the System.Reflection namespace.
 ms.date: "09/03/2019"
 helpviewer_keywords: 
   - "reflection, obtaining member information"

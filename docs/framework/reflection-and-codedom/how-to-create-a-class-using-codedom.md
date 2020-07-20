@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Class Using CodeDOM"
+description: See a detailed example that explains how to create a class using the Code Document Object Model (CodeDOM).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

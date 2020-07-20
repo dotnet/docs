@@ -1,5 +1,6 @@
 ---
 title: "Security Issues in Reflection Emit"
+description: Know security issues in reflection emit, which is done through dynamic assemblies, or dynamic methods connected with existing assemblies or anonymously hosted.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "partially trusted code"

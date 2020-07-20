@@ -1,5 +1,6 @@
 ---
 title: "How to know the difference between passing a struct and passing a class reference to a method - C# Programming Guide"
+description: Passing a struct to a method differs from passing a class instance to a method in C#. This example shows struct and class instance passed by value.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structs [C#], passing as method parameter"

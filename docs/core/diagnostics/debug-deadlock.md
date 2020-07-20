@@ -1,30 +1,38 @@
 ---
 title: Debugging deadlock - .NET Core
 description: A tutorial walk-through, debugging locking issues in .NET Core.
-author: sdmaclea
-ms.author: stmaclea
-ms.date: 07/16/2020
+ms.topic: tutorial
+ms.date: 07/20/2020
 ---
 
-# Debugging deadlock
+# Debug deadlock in .NET Core
 
-**This article applies to: ✔️** .NET Core 3.0 SDK and later versions
+**This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
 The tutorial walks through a deadlock scenario, using an [ASP.NET Core web app source code example](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) that causes a deadlock. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
 
+In this tutorial, you will:
+
+> [!div class="checklist"]
+>
+> - Investigate app hang
+> - Generate a core dump file
+> - Analyze process threads in the dump file
+> - Analyze callstacks and sync blocks
+> - Diagnose and solve a deadlock
+
 ## Prerequisites
 
-The tutorial relies the following:
+The tutorial runs on **Linux**, and relies the following prerequisites:
 
-- [Sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario.
-- [dotnet-trace](dotnet-trace.md) to list processes.
-- [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file.
-
-The tutorial runs on **Linux**.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [Sample debug target - web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario
+- [dotnet-trace](dotnet-trace.md) to list processes
+- [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file
 
 ## Core dump generation
 
-To investigate application hang, a memory dump allows you to inspect the state of its threads, and any possible locks that may have contention issues. Run the [sample debug](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) application using the following command.
+To investigate application hang, a core dump (memory dump) allows you to inspect the state of its threads, and any possible locks that may have contention issues. Run the [sample debug](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) application using the following command from the sample root directory.
 
 ```dotnetcli
 dotnet run
@@ -33,22 +41,32 @@ dotnet run
 To find the process ID, use the following command:
 
 ```dotnetcli
-dotnet-trace list-processes
+dotnet-trace ps
 ```
 
 Take note of the process ID from your command output (yours will be different), ours was `4807`. Navigate to the following URL, which is an API endpoint on the sample site:
 
 [http://localhost:5000/api/diagscenario/deadlock](http://localhost:5000/api/diagscenario/deadlock)
 
-The API request to the site will lag, let the request run for about 10-15 seconds. Then create the code dump using the following command:
+The API request to the site will hang, and not respond - let the request run for about 10-15 seconds. Then create the core dump using the following command:
+
+### [Linux](#tab/linux)
 
 ```dotnetcli
-sudo dotnet-dump collect -p 4807
+sude dotnet-dump collect -p 4807
 ```
+
+### [Window](#tab/windows)
+
+```dotnetcli
+dotnet-dump collect -p 4807
+```
+
+---
 
 ## Analyzing the core dump
 
-To start the core dump analysis, open the core dump using the following `dotnet-dump analyze` command:
+To start the core dump analysis, open the core dump using the following `dotnet-dump analyze` command. The argument is the path to the core dump file which was collected earlier.
 
 ```dotnetcli
 dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
@@ -56,7 +74,7 @@ dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
 
 Since you're looking at a potential hang, you want an overall feel for the thread activity in the process. You can use the `threads` command as shown below:
 
-```bash
+```console
 > threads
 *0 0x1DBFF (121855)
  1 0x1DC01 (121857)
@@ -96,15 +114,15 @@ Since you're looking at a potential hang, you want an overall feel for the threa
 
 The output shows all the threads currently running in the process, with their associated debugger thread ID, and operating system thread ID. Based on the output, there is little over 300 threads.
 
-The next step is to get a better understanding of what the threads are currently doing by getting their callstacks. There's a command called `clrstack` that can be used to output callstacks. It can either output a single callstack, or all the callstacks. Use the following command to output all the callstacks for all the threads in the process.
+The next step is to get a better understanding of what the threads are currently doing by getting each threads' callstack. The `clrstack` command can be used to output callstacks. It can either output a single callstack, or all the callstacks. Use the following command to output all the callstacks for all the threads in the process.
 
-```bash
-> clrstack -all
+```console
+clrstack -all
 ```
 
 A representative portion of the output looks like:
 
-```bash
+```console
   ...
   ...
   ...
@@ -185,7 +203,7 @@ OS Thread Id: 0x1dc88
 
 Eye balling the callstacks for all 300+ threads shows a pattern where a majority of the threads share a common callstack:
 
-```bash
+```console
 OS Thread Id: 0x1dc88
         Child SP               IP Call Site
 00007F2ADFFAE680 00007f305abc6360 [GCFrame: 00007f2adffae680]
@@ -201,22 +219,24 @@ The callstack seems to show that the request arrived in our deadlock method that
 
 The next step then is to find out which thread is actually holding the monitor lock. Since monitors typically store lock information in the sync block table, we can use the `syncblk` command to get more information:
 
-```bash
+```console
 > syncblk
 Index         SyncBlock MonitorHeld Recursion Owning Thread Info          SyncBlock Owner
-   41 000000000143D038          603         1 00007F2B542D28C0 1dc1d  20   00007f2e90080fb8 System.Object
-   42 000000000143D080            3         1 00007F2B400016A0 1dc1e  21   00007f2e90080fd0 System.Object
+   43 00000246E51268B8          603         1 0000024B713F4E30 5634  28   00000249654b14c0 System.Object
+   44 00000246E5126908            3         1 0000024B713F47E0 51d4  29   00000249654b14d8 System.Object
 -----------------------------
-Total           264
+Total           344
+CCW             1
+RCW             2
+ComClassFactory 0
 Free            0
-
 ```
 
-The two interesting columns are the `MonitorHeld` and the `Owning Thread Info` columns. The `MonitorHeld` shows whether a monitor lock is acquired by a thread and the number of waiting threads. The `Owning Thread Info` shows which thread currently owns the monitor lock. The thread info has three different subcolumns. The second subcolumn shows operating system thread ID.
+The two interesting columns are the **MonitorHeld**, and the **Owning Thread Info** columns. The **MonitorHeld** shows whether a monitor lock is acquired by a thread and the number of waiting threads. The **Owning Thread Info** shows which thread currently owns the monitor lock. The thread info has three different subcolumns. The second subcolumn shows operating system thread ID.
 
-At this point, we know two different threads (0x1dc1d and 0x1dc1e) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks:
+At this point, we know two different threads (0x5634 and 0x51d4) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks:
 
-```bash
+```console
 > setthread 0x1dc1d
 > clrstack
 OS Thread Id: 0x1dc1d (20)
@@ -233,22 +253,23 @@ OS Thread Id: 0x1dc1d (20)
 00007F2B862B9D70 00007f30593044af [DebuggerU2MCatchHandlerFrame: 00007f2b862b9d70]
 ```
 
-Lets look at the first thread. The deadlock function is waiting to acquire a lock, but it already owns the lock. It's in deadlock waiting for the lock it already holds.
+To look at the first thread, run the `setthread` command, and find the index of the 0x5634 thread (our index was 28). The deadlock function is waiting to acquire a lock, but it already owns the lock. It's in deadlock waiting for the lock it already holds.
 
-```bash
-> setthread 0x1dc1e
+```console
+> setthread 28
 > clrstack
-OS Thread Id: 0x1dc1e (21)
+OS Thread Id: 0x5634 (28)
         Child SP               IP Call Site
-00007F2B85AB8640 00007f305abc6360 [GCFrame: 00007f2b85ab8640]
-00007F2B85AB8730 00007f305abc6360 [GCFrame: 00007f2b85ab8730]
-00007F2B85AB8790 00007f305abc6360 [HelperMethodFrame_1OBJ: 00007f2b85ab8790] System.Threading.Monitor.Enter(System.Object)
-00007F2B85AB88E0 00007F2FE392AAAE testwebapi.Controllers.DiagScenarioController.<DeadlockFunc>b__4_0() [/home/marioh/webapi/Controllers/diagscenario.cs @ 53]
-00007F2B85AB8910 00007F2FE02B7BA2 System.Threading.ThreadHelper.ThreadStart_Context(System.Object) [/__w/3/s/src/System.Private.CoreLib/src/System/Threading/Thread.CoreCLR.cs @ 51]
-00007F2B85AB8930 00007F2FE02C1021 System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object) [/__w/3/s/src/System.Private.CoreLib/shared/System/Threading/ExecutionContext.cs @ 172]
-00007F2B85AB8980 00007F2FE02B7CBE System.Threading.ThreadHelper.ThreadStart() [/__w/3/s/src/System.Private.CoreLib/src/System/Threading/Thread.CoreCLR.cs @ 101]
-00007F2B85AB8CA0 00007f30593044af [GCFrame: 00007f2b85ab8ca0]
-00007F2B85AB8D70 00007f30593044af [DebuggerU2MCatchHandlerFrame: 00007f2b85ab8d70]
+0000004E46AFEAA8 00007fff43a5cbc4 [GCFrame: 0000004e46afeaa8]
+0000004E46AFEC18 00007fff43a5cbc4 [GCFrame: 0000004e46afec18]
+0000004E46AFEC68 00007fff43a5cbc4 [HelperMethodFrame_1OBJ: 0000004e46afec68] System.Threading.Monitor.Enter(System.Object)
+0000004E46AFEDC0 00007FFE5EAF9C80 testwebapi.Controllers.DiagScenarioController.DeadlockFunc() [C:\Users\dapine\Downloads\Diagnostic_scenarios_sample_debug_target\Controllers\DiagnosticScenarios.cs @ 58]
+0000004E46AFEE30 00007FFE5EAF9B8C testwebapi.Controllers.DiagScenarioController.<deadlock>b__3_0() [C:\Users\dapine\Downloads\Diagnostic_scenarios_sample_debug_target\Controllers\DiagnosticScenarios.cs @ 26]
+0000004E46AFEE80 00007FFEBB251A5B System.Threading.ThreadHelper.ThreadStart_Context(System.Object) [/_/src/System.Private.CoreLib/src/System/Threading/Thread.CoreCLR.cs @ 44]
+0000004E46AFEEB0 00007FFE5EAEEEEC System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object) [/_/src/System.Private.CoreLib/shared/System/Threading/ExecutionContext.cs @ 201]
+0000004E46AFEF20 00007FFEBB234EAB System.Threading.ThreadHelper.ThreadStart() [/_/src/System.Private.CoreLib/src/System/Threading/Thread.CoreCLR.cs @ 93]
+0000004E46AFF138 00007ffebdcc6b63 [GCFrame: 0000004e46aff138]
+0000004E46AFF3A0 00007ffebdcc6b63 [DebuggerU2MCatchHandlerFrame: 0000004e46aff3a0]
 ```
 
-The second thread is similar. It's also trying to acquire a lock that it already owns. The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock.
+The second thread is similar. It's also trying to acquire a lock that it already owns. The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock. Knowing this, you can fix the deadlock issues in the code.

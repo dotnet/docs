@@ -4,9 +4,10 @@ description: Learn how to debug a memory leak in .NET Core.
 ms.topic: tutorial
 ms.date: 04/20/2020
 ---
-# Tutorial: Debug a memory leak in .NET Core
 
-**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
+# Debug a memory leak in .NET Core
+
+**This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
 This tutorial demonstrates the tools to analyze a .NET Core memory leak.
 
@@ -24,7 +25,7 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
 - [dotnet-trace](dotnet-trace.md) to list processes.
 - [dotnet-counters](dotnet-counters.md) to check managed memory usage.
 - [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.

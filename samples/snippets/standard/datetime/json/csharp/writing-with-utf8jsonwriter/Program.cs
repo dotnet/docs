@@ -30,6 +30,6 @@ public class Example
 
 // The example output similar to the following:
 // {
-//     "date": "2019-07-26T00:00:00-05:00",
+//     "date": "2019-07-26T00:00:00-00:00",
 //     "temp": 42
 // }

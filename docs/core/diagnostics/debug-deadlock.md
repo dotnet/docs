@@ -273,3 +273,15 @@ OS Thread Id: 0x5634 (28)
 ```
 
 The second thread is similar. It's also trying to acquire a lock that it already owns. The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock. Knowing this, you can fix the deadlock issues in the code.
+
+## See also
+
+- [dotnet-trace](dotnet-trace.md) to list processes
+- [dotnet-counters](dotnet-counters.md) to check managed memory usage
+- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [What diagnostic tools are available in .NET Core](index.md)

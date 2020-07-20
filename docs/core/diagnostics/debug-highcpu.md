@@ -2,7 +2,7 @@
 title: Debug high CPU usage - .NET Core
 description: A tutorial walk-through, debugging high CPU usage in .NET Core.
 ms.topic: tutorial
-ms.date: 07/16/2020
+ms.date: 07/20/2020
 ---
 
 # Debug high CPU usage in .NET Core
@@ -120,15 +120,11 @@ At this point, you can safely say the CPU is running higher than you expect.
 
 ## Trace generation
 
-When analyzing a slow request, you need a diagnostics tool that can give us insight into what the code is doing. The usual choice is a profiler. There are a few different profilers options.
+When analyzing a slow request, you need a diagnostics tool that can provides insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from.
 
 ### [Linux](#tab/linux)
 
-### Profile and view with Linux `perf`
-
-Here, you'll demonstrate the Linux `perf` tool to generate .NET Core app profiles.
-
-Exit the previous instance of the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios).
+The `perf` tool can be used to generate .NET Core app profiles. Exit the previous instance of the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios).
 
 Set the `COMPlus_PerfMapEnabled` to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
 
@@ -139,7 +135,7 @@ export COMPlus_PerfMapEnabled=1
 dotnet run
 ```
 
-Hit the URL (<http://localhost:5000/api/diagscenario/highcpu/60000>) again and while its running within the 1-minute request, run:
+Exercise the high CPU API (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again, and while its running within the 1-minute request, run the `perf` command with your process ID:
 
 ```bash
 sudo perf record -p 2266 -g
@@ -160,13 +156,13 @@ sudo perf script | FlameGraph/stackcollapse-perf.pl | FlameGraph/flamegraph.pl >
 
 This command will generate a `flamegraph.svg` that you can view in the browser to investigate the performance problem:
 
-![alt text](https://user-images.githubusercontent.com/15442480/57110767-87ed4180-6cee-11e9-98d9-9f1c908acfd5.jpg)
+[![Flame graph SVG image](media/flamegraph.jpg)](media/flamegraph.jpg#lightbox)
 
 ### [Window](#tab/windows)
 
 ### Profile with `dotnet-trace` then view with Windows `PerfView`
 
-You can use the [dotnet-trace](dotnet-trace.md) tool. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), hit the URL (<http://localhost:5000/api/diagscenario/highcpu/60000>) again and while its running within the 1-minute request, run:
+You can use the [dotnet-trace](dotnet-trace.md) tool. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), hit the URL (<https://localhost:5001/api/diagscenario/highcpu/60000>) again and while its running within the 1-minute request, run:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler
@@ -176,6 +172,18 @@ Let [dotnet-trace](dotnet-trace.md) run for about 20-30 seconds, and then press 
 
 Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob/master/documentation/Downloading.md) as shown below.
 
-![alt text](https://user-images.githubusercontent.com/15442480/57110777-976c8a80-6cee-11e9-9cf7-407a01a08b1d.jpg)
+[![PerfView image](media/perfview.jpg)](media/perfview.jpg#lightbox)
 
 ---
+
+## See also
+
+- [dotnet-trace](dotnet-trace.md) to list processes
+- [dotnet-counters](dotnet-counters.md) to check managed memory usage
+- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Debug a deadlock in .NET Core](debug-deadlock.md)

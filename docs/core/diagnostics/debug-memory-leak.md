@@ -97,7 +97,7 @@ Focusing on this line:
 
 You can see that the managed heap memory is 4 MB right after startup.
 
-Now, hit the URL `http://localhost:5000/api/diagscenario/memleak/20000`.
+Now, hit the URL `https://localhost:5001/api/diagscenario/memleak/20000`.
 
 Observe that the memory usage has grown to 30 MB.
 
@@ -128,7 +128,7 @@ Complete
 
 Once the dump is collected, you should have sufficient information to diagnose the failed process. If the failed process is running on a production server, now it's the ideal time for short-term remediation by restarting the process.
 
-In this tutorial, you're now done with the [Sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) and you can close it. Navigate to the terminal that started the server and press `Control-C`.
+In this tutorial, you're now done with the [Sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) and you can close it. Navigate to the terminal that started the server, and press <kbd>Ctrl+C</kbd>.
 
 ### Analyze the core dump
 
@@ -227,14 +227,14 @@ In this tutorial, you started a sample web server. This server should have been 
 
 You can also delete the dump file that was created.
 
+## See also
+
+- [dotnet-trace](dotnet-trace.md) to list processes
+- [dotnet-counters](dotnet-counters.md) to check managed memory usage
+- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file
+- [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial)
+
 ## Next steps
 
-Congratulations on completing this tutorial.
-
-We're still publishing more diagnostic tutorials. You can read the draft versions on the [dotnet/diagnostics](https://github.com/dotnet/diagnostics/tree/master/documentation/tutorial) repository.
-
-This tutorial covered the basics of key .NET diagnostic tools. For advanced usage, see the following reference documentation:
-
-* [dotnet-trace](dotnet-trace.md) to list processes.
-* [dotnet-counters](dotnet-counters.md) to check managed memory usage.
-* [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
+> [!div class="nextstepaction"]
+> [Debug high CPU in .NET Core](debug-highcpu.md)

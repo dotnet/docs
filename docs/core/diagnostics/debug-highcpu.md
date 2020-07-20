@@ -9,7 +9,7 @@ ms.date: 07/20/2020
 
 **This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
-In this tutorial, you'll learn how to debug an excessive CPU scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to diagnose this scenario, with several key pieces of diagnostics data.
+In this tutorial, you'll learn how to debug an excessive CPU scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to diagnose this scenario, with several key pieces of diagnostics data.
 
 In this tutorial, you will:
 
@@ -50,7 +50,7 @@ Take note of the process ID from your command output (yours will be different), 
 dotnet-counters monitor --refresh-interval 1 -p 22884
 ```
 
-Our process ID was `22884` (again, yours will be different), and was found using `dotnet-trace ps`. The `refresh-interval` is the number of seconds between the counter polling CPU values. The output should be similar to the following:
+Our process ID was `22884` (again, yours will be different), and was found using `dotnet-trace ps`. The `refresh-interval` is the number of seconds between the counter polling CPU values. The output should be similar to the output:
 
 ```console
 Press p to pause, r to resume, q to quit.
@@ -78,39 +78,21 @@ Press p to pause, r to resume, q to quit.
     Working Set (MB)                                      63
 ```
 
-With the web app running, immediately after startup, the CPU isn't being consumed at all `0%`. Navigate to the following URL, which is an API endpoint on the sample site:
+With the web app running, immediately after startup, the CPU isn't being consumed at all `0%`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter, which is an API endpoint on the sample site:
 
 [https://localhost:5001/api/diagscenario/highcpu/60000](https://localhost:5001/api/diagscenario/highcpu/60000)
 
-Now, re-run the [dotnet-counters](dotnet-counters.md) command. You should see an increase in CPU usage as shown below:
+Now, rerun the [dotnet-counters](dotnet-counters.md) command. You should see an increase in CPU usage as shown below:
 
 ```console
 Press p to pause, r to resume, q to quit.
     Status: Running
 
 [System.Runtime]
-    % Time in GC since last GC (%)                         0
-    Allocation Rate / 1 sec (B)                            0
     CPU Usage (%)                                         25
-    Exception Count / 1 sec                                0
-    GC Heap Size (MB)                                      6
-    Gen 0 GC Count / 60 sec                                0
-    Gen 0 Size (B)                                         0
-    Gen 1 GC Count / 60 sec                                0
-    Gen 1 Size (B)                                         0
-    Gen 2 GC Count / 60 sec                                0
-    Gen 2 Size (B)                                         0
-    LOH Size (B)                                           0
-    Monitor Lock Contention Count / 1 sec                  0
-    Number of Active Timers                                1
-    Number of Assemblies Loaded                          140
-    ThreadPool Completed Work Item Count / 1 sec           2
-    ThreadPool Queue Length                                0
-    ThreadPool Thread Count                               10
-    Working Set (MB)                                      66
 ```
 
-Throughout the duration of the request, the CPU will hover around 25% - depending on the host machine this will very. To monitor just the `cpu-usage`, specify `System.Runtime[cpu-usage]` as part of the command. To visualize an even higher CPU, you can exercise this endpoint in multiple tabs simultaneously.
+Throughout the duration of the request, the CPU will hover around 25% - depending on the host machine, expect varying CPU. To monitor just the `cpu-usage`, specify `System.Runtime[cpu-usage]` as part of the command. To visualize an even higher CPU, you can exercise this endpoint in multiple tabs simultaneously.
 
 ```dotnetcli
 dotnet-counters monitor System.Runtime[cpu-usage] -p 22884 --refresh-interval 1
@@ -120,7 +102,7 @@ At this point, you can safely say the CPU is running higher than you expect.
 
 ## Trace generation
 
-When analyzing a slow request, you need a diagnostics tool that can provides insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from.
+When analyzing a slow request, you need a diagnostics tool that can provide insights into what the code is doing. The usual choice is a profiler, and there are different profiler options to choose from.
 
 ### [Linux](#tab/linux)
 
@@ -158,11 +140,9 @@ This command will generate a `flamegraph.svg` that you can view in the browser t
 
 [![Flame graph SVG image](media/flamegraph.jpg)](media/flamegraph.jpg#lightbox)
 
-### [Window](#tab/windows)
+### [Windows](#tab/windows)
 
-### Profile with `dotnet-trace` then view with Windows `PerfView`
-
-You can use the [dotnet-trace](dotnet-trace.md) tool. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), hit the URL (<https://localhost:5001/api/diagscenario/highcpu/60000>) again and while its running within the 1-minute request, run:
+On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again, and while its running within the 1-minute request, use the `collect` command as follows:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler

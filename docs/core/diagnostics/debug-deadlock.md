@@ -9,7 +9,7 @@ ms.date: 07/20/2020
 
 **This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
-In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
+In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
 
 In this tutorial, you will:
 
@@ -56,7 +56,7 @@ The API request to the site will hang, and not respond - let the request run for
 sudo dotnet-dump collect -p 4807
 ```
 
-### [Window](#tab/windows)
+### [Windows](#tab/windows)
 
 ```console
 dotnet-dump collect -p 4807
@@ -66,7 +66,7 @@ dotnet-dump collect -p 4807
 
 ## Analyzing the core dump
 
-To start the core dump analysis, open the core dump using the following `dotnet-dump analyze` command. The argument is the path to the core dump file which was collected earlier.
+To start the core dump analysis, open the core dump using the following `dotnet-dump analyze` command. The argument is the path to the core dump file that was collected earlier.
 
 ```dotnetcli
 dotnet-dump analyze  ~/.dotnet/tools/core_20190513_143916
@@ -112,9 +112,9 @@ Since you're looking at a potential hang, you want an overall feel for the threa
  321 0x1DD4C (122188)
  ```
 
-The output shows all the threads currently running in the process, with their associated debugger thread ID, and operating system thread ID. Based on the output, there is little over 300 threads.
+The output shows all the threads currently running in the process, with their associated debugger thread ID, and operating system thread ID. Based on the output, there are little over 300 threads.
 
-The next step is to get a better understanding of what the threads are currently doing by getting each threads' callstack. The `clrstack` command can be used to output callstacks. It can either output a single callstack, or all the callstacks. Use the following command to output all the callstacks for all the threads in the process.
+The next step is to get a better understanding of what the threads are currently doing by getting each thread's callstack. The `clrstack` command can be used to output callstacks. It can either output a single callstack, or all the callstacks. Use the following command to output all the callstacks for all the threads in the process.
 
 ```console
 clrstack -all
@@ -272,7 +272,7 @@ OS Thread Id: 0x5634 (28)
 0000004E46AFF3A0 00007ffebdcc6b63 [DebuggerU2MCatchHandlerFrame: 0000004e46aff3a0]
 ```
 
-The second thread is similar. It's also trying to acquire a lock that it already owns. The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock. Knowing this, you can fix the deadlock issues in the code.
+The second thread is similar. It's also trying to acquire a lock that it already owns. The remaining 300+ threads that are all waiting are most likely also waiting on one of the locks that caused the deadlock.
 
 ## See also
 

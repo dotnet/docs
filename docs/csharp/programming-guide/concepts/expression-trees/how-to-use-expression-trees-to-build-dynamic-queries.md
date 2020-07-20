@@ -1,5 +1,6 @@
 ---
 title: "How to use expression trees to build dynamic queries (C#)"
+description: Learn how to use expression trees to create dynamic LINQ queries. These queries are useful when the specifics of a query are unknown at compile time.
 ms.date: 07/20/2015
 ms.assetid: 52cd44dd-a3ec-441e-b93a-4eca388119c7
 ---

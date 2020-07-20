@@ -1,5 +1,6 @@
 ---
 title: "Aggregation Operations (C#)"
+description: This article provides methods to perform an aggregation operation. An aggregation operation computes a single value from a collection of values.
 ms.date: 07/20/2015
 ms.assetid: 6fc035e5-7639-48b8-bc7f-b093dd31b039
 ---

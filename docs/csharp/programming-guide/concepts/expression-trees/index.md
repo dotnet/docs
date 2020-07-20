@@ -1,5 +1,6 @@
 ---
 title: "Expression Trees (C#)"
+description: Expression trees are tree-like data structures where each node is an expression. Learn how to compile and run code represented by expression trees.
 ms.date: 07/20/2015
 ms.assetid: 7d0ac21a-6d90-4e2e-8903-528cb78615b7
 ---

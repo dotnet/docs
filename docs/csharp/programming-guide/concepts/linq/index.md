@@ -1,5 +1,6 @@
 ---
 title: "Language-Integrated Query (LINQ) (C#)"
+description: Learn about Language-Integrated Queries (LINQs) and review an example of the complete query operation.
 ms.date: 02/02/2017
 ms.assetid: 19dd1782-905b-4a9d-a3e9-618453037fa2
 ---

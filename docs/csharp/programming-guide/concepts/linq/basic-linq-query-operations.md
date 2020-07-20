@@ -1,5 +1,6 @@
 ---
 title: "Basic LINQ Query Operations (C#)"
+description: This article provides an introduction to LINQ query expressions and some of the operations you might perform in a query.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "orderby clause [LINQ in C#]"

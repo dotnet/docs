@@ -1,6 +1,6 @@
 ---
 title: "Object and Collection Initializers - C# Programming Guide"
-description: Object initializers in C# assign values to accessible fields or properties of an object at creation without invoking a constructor and assignment statements.
+description: Object initializers in C# assign values to accessible fields or properties of an object at creation after invoking a constructor.
 ms.date: 12/19/2018
 helpviewer_keywords: 
   - "object initializers [C#]"

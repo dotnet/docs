@@ -1,5 +1,6 @@
 ---
 title: "Properties - C# Programming Guide"
+description: A property in C# is a member that uses accessor methods to read, write, or compute the value of a private field as if it were a public data member.
 ms.date: 03/10/2017
 f1_keywords: 
   - "cs.properties"

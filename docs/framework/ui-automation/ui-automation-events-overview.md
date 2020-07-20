@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Events Overview"
+description: See an overview of Microsoft UI Automation event notification. Review the types of events, UI Automation event identifiers, and UI Automation event arguments.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, providers"

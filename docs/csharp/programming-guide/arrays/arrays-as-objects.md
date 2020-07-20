@@ -1,5 +1,6 @@
 ---
 title: "Arrays as Objects - C# Programming Guide"
+description: Arrays in C# are Objects of the abstract base type Array. You can use the properties and other class members of Array, such as the Length property. 
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "arrays [C#], as objects"

@@ -1,5 +1,6 @@
 ---
 title: "Mitigation: TLS Protocols"
+description: Learn about the impact and mitigation for the TLS Protocol changes beginning with .NET Framework 4.6.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -5,11 +5,11 @@ ms.topic: tutorial
 ms.date: 07/20/2020
 ---
 
-# Debug deadlock in .NET Core
+# Debug a deadlock in .NET Core
 
 **This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
-The tutorial walks through a deadlock scenario, using an [ASP.NET Core web app source code example](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) that causes a deadlock. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
+In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. In this scenario, the endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
 
 In this tutorial, you will:
 
@@ -23,7 +23,7 @@ In this tutorial, you will:
 
 ## Prerequisites
 
-The tutorial runs on **Linux**, and relies the following prerequisites:
+The tutorial uses:
 
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
 - [Sample debug target - web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario
@@ -46,19 +46,19 @@ dotnet-trace ps
 
 Take note of the process ID from your command output (yours will be different), ours was `4807`. Navigate to the following URL, which is an API endpoint on the sample site:
 
-[http://localhost:5000/api/diagscenario/deadlock](http://localhost:5000/api/diagscenario/deadlock)
+[https://localhost:5001/api/diagscenario/deadlock](https://localhost:5001/api/diagscenario/deadlock)
 
 The API request to the site will hang, and not respond - let the request run for about 10-15 seconds. Then create the core dump using the following command:
 
 ### [Linux](#tab/linux)
 
-```dotnetcli
-sude dotnet-dump collect -p 4807
+```bash
+sudo dotnet-dump collect -p 4807
 ```
 
 ### [Window](#tab/windows)
 
-```dotnetcli
+```console
 dotnet-dump collect -p 4807
 ```
 

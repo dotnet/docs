@@ -17,6 +17,7 @@ on:
       - "**.vbhtml"
       - "**.*proj"
       - "**global.json"
+      - "snippets.5000.json"
     branches: [ master ]
 
 env:

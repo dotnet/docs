@@ -1,5 +1,6 @@
 ---
 title: "Mitigation: Pointer-based Touch and Stylus Support"
+description: Learn about the effects of enabling an optional WPF touch/stylus stack for WPF apps that target .NET Framework 4.7.
 ms.date: "04/07/2017"
 helpviewer_keywords:
   - "retargeting changes"

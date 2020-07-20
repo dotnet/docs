@@ -1,5 +1,6 @@
 ---
 title: "C# Programming Guide"
+description: Use these resources for detailed information on key C# language features and features accessible to C# through .NET.
 ms.date: 05/02/2017
 f1_keywords: 
   - "cs.langref"

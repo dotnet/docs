@@ -26,8 +26,8 @@ The following example shows a synchronous read operation within a console app. T
 > [!IMPORTANT]
 > The example assumes that a file named *TestFile.txt* already exists in the same folder as the app.  
 
- [!code-csharp[Conceptual.BasicIO.TextFiles](./snippets/how-to-read-text-from-a-file/csharp/Program.cs)]
- [!code-vb[Conceptual.BasicIO.TextFiles](./snippets/how-to-read-text-from-a-file/vb/Program.vb)]  
+[!code-csharp[Conceptual.BasicIO.TextFiles](./snippets/how-to-read-text-from-a-file/csharp/sync-console/Program.cs)]
+[!code-vb[Conceptual.BasicIO.TextFiles](./snippets/how-to-read-text-from-a-file/vb/sync-console/Program.vb)]
   
 ## Example: Asynchronous read in a WPF app
  The following example shows an asynchronous read operation in a Windows Presentation Foundation (WPF) app.  
@@ -35,8 +35,8 @@ The following example shows a synchronous read operation within a console app. T
 > [!IMPORTANT]
 > The example assumes that a file named *TestFile.txt* already exists in the same folder as the app.  
 
- [!code-csharp[TextFiles](../../../samples/snippets/csharp/VS_Snippets_Wpf/TextFiles/MainWindow.xaml.cs)]
- [!code-vb[TextFiles](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/TextFiles/MainWindow.xaml.vb)]  
+[!code-csharp[TextFiles](./snippets/how-to-read-text-from-a-file/csharp/async-wpf/MainWindow.xaml.cs)]
+[!code-vb[TextFiles](./snippets/how-to-read-text-from-a-file/vb/async-wpf/MainWindow.xaml.vb)]
   
 ## See also
 

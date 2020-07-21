@@ -35,8 +35,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |Unfocused|FocusStates|The control does not have focus.|  
 |FocusedDropDown|FocusStates|The drop-down for the <xref:System.Windows.Controls.ComboBox> has focus.|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|  
 |Editable|EditStates|The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is `true`.|  
 |Uneditable|EditStates|The <xref:System.Windows.Controls.ComboBox.IsEditable%2A> property is `false`.|  
   
@@ -57,8 +57,8 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 |Unselected|SelectionStates|The item is not selected.|  
 |SelectedUnfocused|SelectionStates|The item is selected, but does not have focus.|  
 |Valid|ValidationStates|The control uses the <xref:System.Windows.Controls.Validation> class and the <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `false`.|  
-|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
-|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
+|InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control has focus.|  
+|InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` and the control does not have focus.|  
   
 ## ComboBox ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.ComboBox> control and associated types.  

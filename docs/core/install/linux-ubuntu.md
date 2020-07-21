@@ -25,7 +25,7 @@ The following table is a list of currently supported .NET Core releases and the 
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ❌ [19.04](#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
 | ❌ [18.10](#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 | ✔️ [18.04 (LTS)](#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
@@ -55,7 +55,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
-## 19.10 ✔️
+## 19.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 

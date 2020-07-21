@@ -1,5 +1,6 @@
 ---
 title: "How to: Define a Generic Type with Reflection Emit"
+description: See how to define a generic type with reflection emit. Create a generic type with two type parameters, apply class constraints, interface constraints, and more.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

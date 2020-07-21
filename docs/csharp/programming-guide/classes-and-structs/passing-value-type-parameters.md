@@ -1,5 +1,6 @@
 ---
 title: "Passing Value-Type Parameters - C# Programming Guide"
+description: When you pass a value-type variable to a method by value in C#, any changes have no effect on the original data. To change the value, pass by reference.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "method parameters [C#], value types"

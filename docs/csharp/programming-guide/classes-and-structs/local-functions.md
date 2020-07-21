@@ -1,5 +1,6 @@
 ---
 title: "Local functions - C# Programming Guide"
+description: Local functions in C# are private methods that are nested in another member and can be called from their containing member.
 ms.date: 06/14/2017
 helpviewer_keywords: 
   - "local functions [C#]"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Define and Execute Dynamic Methods"
+description: See how to define and execute dynamic methods in .NET. View examples of a simple dynamic method and a dynamic method bound to an instance of a class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

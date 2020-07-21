@@ -1,5 +1,6 @@
 ---
 title: "Reflection in .NET"
+description: Review reflection in .NET. Get information about loaded assemblies and the types defined within them, such as classes, interfaces, structures, and enumerations.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assemblies [.NET], reflection"

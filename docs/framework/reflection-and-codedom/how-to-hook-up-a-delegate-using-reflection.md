@@ -1,5 +1,6 @@
 ---
 title: "How to: Hook Up a Delegate Using Reflection"
+description: See how to hook up a delegate using reflection in .NET. Connect an existing method to an event by getting the necessary types through reflection.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

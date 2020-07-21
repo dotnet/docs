@@ -90,8 +90,11 @@ namespace SystemTextJsonSamples
             Console.WriteLine("\n============================= Callbacks\n");
             RoundtripCallbacks.Run();
 
-            Console.WriteLine("\n============================= Required property\n");
+            Console.WriteLine("\n============================= Required property converter\n");
             DeserializeRequiredProperty.Run();
+
+            Console.WriteLine("\n============================= Required property converter using attribute registration\n");
+            DeserializeRequiredPropertyUsingAttributeRegistration.Run();
 
             Console.WriteLine("\n============================= Null value to nonnullable type\n");
             DeserializeNullToNonnullableType.Run();

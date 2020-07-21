@@ -1,5 +1,6 @@
 ---
 title: "Troubleshooting: Debugging Windows Services"
+description: Get started with debugging Windows services. When you debug a Windows service application, your service and the Windows Service Manager interact.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "debugging Windows Service applications"

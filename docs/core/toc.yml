@@ -304,6 +304,10 @@ items:
     items:
     - name: Debug a memory leak
       href: diagnostics/debug-memory-leak.md
+    - name: Debug high CPU usage
+      href: diagnostics/debug-highcpu.md
+    - name: Debug deadlock
+      href: diagnostics/debug-deadlock.md
 - name: .NET Core additional tools
   items:
   - name: Overview

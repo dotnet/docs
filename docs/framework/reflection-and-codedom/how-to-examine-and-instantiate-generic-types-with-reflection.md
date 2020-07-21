@@ -1,5 +1,6 @@
 ---
 title: "How to: Examine and Instantiate Generic Types with Reflection"
+description: See how to examine and instantiate generic types with reflection. Use the IsGenericType, IsGenericParameter, and GenericParameterPosition properties.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

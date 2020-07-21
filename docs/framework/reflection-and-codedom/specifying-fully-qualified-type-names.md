@@ -1,5 +1,6 @@
 ---
 title: "Specifying Fully Qualified Type Names"
+description: For valid input to reflection operations, use fully qualified type names, which have assembly name specifications, namespace specifications, and type names.
 ms.date: "02/21/2019"
 helpviewer_keywords:
   - "names [.NET Framework], fully qualified type names"

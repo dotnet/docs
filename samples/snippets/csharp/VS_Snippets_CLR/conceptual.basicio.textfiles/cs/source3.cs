@@ -10,9 +10,9 @@ class Test
         {   // Open the text file using a stream reader.
             using (StreamReader sr = new StreamReader("TestFile.txt"))
             {
-	        // Read the stream to a string, and write the string to the console.
-                String line = sr.ReadToEnd();
-                Console.WriteLine(line);
+	            // Read the stream to a string, and write the string to the console.
+                String fileContent = sr.ReadToEnd();
+                Console.WriteLine(fileContent);
             }
         }
         catch (IOException e)

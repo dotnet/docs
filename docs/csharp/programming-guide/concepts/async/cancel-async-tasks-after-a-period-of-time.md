@@ -1,5 +1,6 @@
 ---
 title: "Cancel Async Tasks after a Period of Time (C#)"
+description: Use the CancellationTokenSource.CancelAfter method in C# to schedule cancellation of any associated tasks not completed within a period in this example.
 ms.date: 07/20/2015
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 ---

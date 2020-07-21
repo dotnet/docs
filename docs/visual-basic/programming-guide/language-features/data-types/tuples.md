@@ -76,7 +76,7 @@ A Visual Basic tuple is a value type that is an instance of one of the a **Syste
 
 If custom members, property and field validation, or immutability are important, you should use the Visual Basic [Structure](../../../language-reference/statements/structure-statement.md) statement to define a custom value type.
 
-A Visual Basic tuple does inherit the members of its **ValueTuple** type. In addition to its fields, these include the following methods:
+A Visual Basic tuple does inherit the members of its **ValueTuple** type. In addition to its fields, these include the following members:
 
 | Member | Description |
 | ---|---|

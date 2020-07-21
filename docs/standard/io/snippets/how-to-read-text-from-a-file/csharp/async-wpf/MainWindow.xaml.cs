@@ -18,10 +18,9 @@ namespace TextFiles
         {
             try
             {
-                using (StreamReader sr = new StreamReader("TestFile.txt"))
+                using (var sr = new StreamReader("TestFile.txt"))
                 {
-                    string fileContent = await sr.ReadToEndAsync();
-                    ResultBlock.Text = fileContent;
+                    ResultBlock.Text = await sr.ReadToEndAsync();
                 }
             }
             catch (FileNotFoundException ex)

@@ -8,11 +8,10 @@ class Program
         try
         {
             // Open the text file using a stream reader.
-            using (StreamReader sr = new StreamReader("TestFile.txt"))
+            using (var sr = new StreamReader("TestFile.txt"))
             {
-                // Read the stream to a string, and write the string to the console.
-                string fileContent = sr.ReadToEnd();
-                Console.WriteLine(fileContent);
+                // Read the stream as a string, and write the string to the console.
+                Console.WriteLine(sr.ReadToEnd());
             }
         }
         catch (IOException e)

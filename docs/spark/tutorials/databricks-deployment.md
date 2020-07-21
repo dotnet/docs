@@ -161,7 +161,7 @@ In this section, you upload several files to DBFS so that your cluster has every
    databricks fs cp input.txt dbfs:/input.txt
 
    cd mySparkApp\bin\Release\netcoreapp3.1\ubuntu.16.04-x64 directory
-   databricks fs cp mySparkApp.zip dbfs:/spark-dotnet/publish.zip
+   databricks fs cp publish.zip dbfs:/spark-dotnet/publish.zip
    databricks fs cp microsoft-spark-2.4.x-0.6.0.jar dbfs:/spark-dotnet/microsoft-spark-2.4.x-0.6.0.jar
    ```
 

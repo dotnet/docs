@@ -1,5 +1,6 @@
 ---
 title: "How to query the contents of text files in a folder (LINQ) (C#)"
+description: Learn how to use LINQ in C# to query over all the files in a directory tree, open each file, and inspect its contents.
 ms.date: 07/20/2015
 ms.assetid: f5b4dce7-1a34-4eb4-9bf1-60d5bdda264c
 ---

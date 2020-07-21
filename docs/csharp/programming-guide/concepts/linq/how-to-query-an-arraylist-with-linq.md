@@ -1,5 +1,6 @@
 ---
 title: "How to query an ArrayList with LINQ (C#)"
+description: This example uses LINQ to query over ArrayList in C#. You must declare the type of the range variable to reflect the type of the objects in the collection.
 ms.date: 07/20/2015
 ms.assetid: 2bfb471c-6e9a-4e60-bd83-4a1778abde11
 ---

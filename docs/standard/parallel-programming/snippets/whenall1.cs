@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System;
 using System.Threading.Tasks;
 
-public class Example
+public class WhenAllExample
 {
     public static async Task Main()
     {

@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-public class Example
+public class ExceptionTwoExample
 {
     public static async Task Main()
     {

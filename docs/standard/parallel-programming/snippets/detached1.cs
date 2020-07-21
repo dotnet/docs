@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-public class Example
+public class DetachedExample
 {
     public static async Task Main()
     {

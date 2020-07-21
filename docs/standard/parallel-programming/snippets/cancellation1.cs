@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-public class Example
+public class CancellationExample
 {
     public static async Task Main()
     {

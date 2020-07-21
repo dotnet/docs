@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-public class Example
+public class ResultTwoExample
 {
     public static async Task Main() =>
         await Task.Run(

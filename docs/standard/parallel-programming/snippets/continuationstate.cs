@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-class ContinuationState
+class ContinuationStateExample
 {
     static DateTime DoWork()
     {

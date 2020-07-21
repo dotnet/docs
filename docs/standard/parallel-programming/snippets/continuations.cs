@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace ChildContinuation
+namespace ContinuationExample
 {
     class Program
     {

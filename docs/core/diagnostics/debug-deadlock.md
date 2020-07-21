@@ -234,24 +234,7 @@ Free            0
 
 The two interesting columns are **MonitorHeld** and **Owning Thread Info**. The **MonitorHeld** column shows whether a monitor lock is acquired by a thread and the number of waiting threads. The **Owning Thread Info** column shows which thread currently owns the monitor lock. The thread info has three different subcolumns. The second subcolumn shows operating system thread ID.
 
-At this point, we know two different threads (0x5634 and 0x51d4) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks:
-
-```console
-> setthread 0x1dc1d
-> clrstack
-OS Thread Id: 0x1dc1d (20)
-        Child SP               IP Call Site
-00007F2B862B9610 00007f305abc6360 [GCFrame: 00007f2b862b9610]
-00007F2B862B9700 00007f305abc6360 [GCFrame: 00007f2b862b9700]
-00007F2B862B9760 00007f305abc6360 [HelperMethodFrame_1OBJ: 00007f2b862b9760] System.Threading.Monitor.Enter(System.Object)
-00007F2B862B98B0 00007F2FE392A9E5 testwebapi.Controllers.DiagScenarioController.DeadlockFunc() [/home/marioh/webapi/Controllers/diagscenario.cs @ 57]
-00007F2B862B98F0 00007F2FE392A8FC testwebapi.Controllers.DiagScenarioController.<deadlock>b__3_0() [/home/marioh/webapi/Controllers/diagscenario.cs @ 27]
-00007F2B862B9910 00007F2FE02B7BA2 System.Threading.ThreadHelper.ThreadStart_Context(System.Object) [/__w/3/s/src/System.Private.CoreLib/src/System/Threading/Thread.CoreCLR.cs @ 51]
-00007F2B862B9930 00007F2FE02C1021 System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object) [/__w/3/s/src/System.Private.CoreLib/shared/System/Threading/ExecutionContext.cs @ 172]
-00007F2B862B9980 00007F2FE02B7CBE System.Threading.ThreadHelper.ThreadStart() [/__w/3/s/src/System.Private.CoreLib/src/System/Threading/Thread.CoreCLR.cs @ 101]
-00007F2B862B9CA0 00007f30593044af [GCFrame: 00007f2b862b9ca0]
-00007F2B862B9D70 00007f30593044af [DebuggerU2MCatchHandlerFrame: 00007f2b862b9d70]
-```
+At this point, we know two different threads (0x5634 and 0x51d4) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks.
 
 To look at the first thread, run the `setthread` command, and find the index of the 0x5634 thread (our index was 28). The deadlock function is waiting to acquire a lock, but it already owns the lock. It's in deadlock waiting for the lock it already holds.
 

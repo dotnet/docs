@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML Overview (C#)"
+description: LINQ to XML leverages the .NET LINQ Framework to provide in-memory document modification capabilities and query expressions with functionality like XPath.
 ms.date: 10/30/2018
 ms.assetid: 716b94d3-0091-4de1-8e05-41bc069fa9dd
 ---

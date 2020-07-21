@@ -1,5 +1,6 @@
 ---
 title: "How to: Load Assemblies into the Reflection-Only Context"
+description: View an example of how to load assemblies into the reflection-only context in .NET. Examine assemblies compiled for other platforms or .NET versions.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to use implicitly typed local variables and arrays in a query expression - C# Programming Guide"
+description: Use implicitly typed local variables in C# to have the compiler determine the type of a local variable. You must use them to store anonymous types.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "implicitly-typed local variables [C#], how to use"

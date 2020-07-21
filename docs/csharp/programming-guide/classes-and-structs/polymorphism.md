@@ -1,5 +1,6 @@
 ---
 title: "Polymorphism - C# Programming Guide"
+description: Learn about polymorphism, a key concept in object-oriented programming languages like C#, which describes the relationship between base and derived classes.
 ms.date: 02/08/2020
 helpviewer_keywords: 
   - "C# language, polymorphism"

@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Emitting Code in Partial Trust Scenarios"
+description: See how to emit code in partial trust scenarios. Reflection emit uses the same APIs, but some features need special permissions in partial trusted code.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

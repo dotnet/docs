@@ -45,8 +45,8 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 
 ### Debug high CPU usage
 
-[Tutorial: Debug high CPU usage](debug-highcpu.md) walks through investigating high CPU usage. It uses the [dotnet-counters](dotnet-counters.md) tool to confirm the high CPU usage. It then walks through using [Trace for performance analysis utility (`dotnet-trace`)](dotnet-trace.md) or Linux `perf` to collect and view CPU usage profile.
+[Tutorial: Debug high CPU usage](debug-highcpu.md) walks you through investigating high CPU usage. It uses the [dotnet-counters](dotnet-counters.md) tool to confirm the high CPU usage. It then walks you through using [Trace for performance analysis utility (`dotnet-trace`)](dotnet-trace.md) or Linux `perf` to collect and view CPU usage profile.
 
 ### Debug deadlock
 
-The [Tutorial: Debug deadlock](debug-deadlock.md) explores using the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.
+[Tutorial: Debug deadlock](debug-deadlock.md) shows you how to use the [dotnet-dump](dotnet-dump.md) tool to investigate threads and locks.

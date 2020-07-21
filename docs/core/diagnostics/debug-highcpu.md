@@ -1,6 +1,6 @@
 ---
 title: Debug high CPU usage - .NET Core
-description: A tutorial walk-through, debugging high CPU usage in .NET Core.
+description: A tutorial that walks you through debugging high CPU usage in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
 ---
@@ -9,17 +9,17 @@ ms.date: 07/20/2020
 
 **This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
-In this tutorial, you'll learn how to debug an excessive CPU scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to diagnose this scenario, with several key pieces of diagnostics data.
+In this tutorial, you'll learn how to debug an excessive CPU usage scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang and thread accumulation. You'll learn how you can use various tools to diagnose this scenario with several key pieces of diagnostics data.
 
 In this tutorial, you will:
 
 > [!div class="checklist"]
 >
-> - Investigate high CPU
-> - Determine CPU with [dotnet-counters](dotnet-counters.md)
+> - Investigate high CPU usage
+> - Determine CPU usage with [dotnet-counters](dotnet-counters.md)
 > - Use [dotnet-trace](dotnet-trace.md) for trace generation
 > - Profile performance in PerfView
-> - Diagnose and solve excessive CPU
+> - Diagnose and solve excessive CPU usage
 
 ## Prerequisites
 
@@ -44,13 +44,13 @@ To find the process ID, use the following command:
 dotnet-trace ps
 ```
 
-Take note of the process ID from your command output (yours will be different), ours was `22884`. To check the current CPU, use the [dotnet-counters](dotnet-counters.md) tool command:
+Take note of the process ID from your command output. Our process ID was `22884`, but yours will be different. To check the current CPU usage, use the [dotnet-counters](dotnet-counters.md) tool command:
 
 ```dotnetcli
 dotnet-counters monitor --refresh-interval 1 -p 22884
 ```
 
-Our process ID was `22884` (again, yours will be different), and was found using `dotnet-trace ps`. The `refresh-interval` is the number of seconds between the counter polling CPU values. The output should be similar to the output:
+The `refresh-interval` is the number of seconds between the counter polling CPU values. The output should be similar to the following:
 
 ```console
 Press p to pause, r to resume, q to quit.
@@ -78,7 +78,7 @@ Press p to pause, r to resume, q to quit.
     Working Set (MB)                                      63
 ```
 
-With the web app running, immediately after startup, the CPU isn't being consumed at all, and is reported at `0%`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter:
+With the web app running, immediately after startup, the CPU isn't being consumed at all and is reported at `0%`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter:
 
 [https://localhost:5001/api/diagscenario/highcpu/60000](https://localhost:5001/api/diagscenario/highcpu/60000)
 
@@ -98,10 +98,10 @@ Press p to pause, r to resume, q to quit.
     CPU Usage (%)                                         25
 ```
 
-Throughout the duration of the request, the CPU will hover around 25% - depending on the host machine, expect varying CPU.
+Throughout the duration of the request, the CPU usage will hover around 25% . Depending on the host machine, expect varying CPU usage.
 
 > [!TIP]
-> To visualize an even higher CPU, you can exercise this endpoint in multiple browser tabs simultaneously.
+> To visualize an even higher CPU usage, you can exercise this endpoint in multiple browser tabs simultaneously.
 
 At this point, you can safely say the CPU is running higher than you expect.
 
@@ -113,7 +113,7 @@ When analyzing a slow request, you need a diagnostics tool that can provide insi
 
 The `perf` tool can be used to generate .NET Core app profiles. Exit the previous instance of the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios).
 
-Set the `COMPlus_PerfMapEnabled` to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
+Set the `COMPlus_PerfMapEnabled` environment variable to cause the .NET Core app to create a `map` file in the `/tmp` directory. This `map` file is used by `perf` to map CPU address to JIT-generated functions by name. For more information, see [Write perf map](../run-time-config/debugging-profiling.md#write-perf-map).
 
 Run the [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) in the same terminal session.
 
@@ -122,13 +122,13 @@ export COMPlus_PerfMapEnabled=1
 dotnet run
 ```
 
-Exercise the high CPU API (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again, and while its running within the 1-minute request, run the `perf` command with your process ID:
+Exercise the high CPU API (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again. While it's running within the 1-minute request, run the `perf` command with your process ID:
 
 ```bash
 sudo perf record -p 2266 -g
 ```
 
-The `perf` command will start the performance collection process. Let it run for about 20-30 seconds, then press <kbd>Ctrl+C</kbd> to exit the collection process. You can use the same `perf` command to see the output of the trace.
+The `perf` command starts the performance collection process. Let it run for about 20-30 seconds, then press <kbd>Ctrl+C</kbd> to exit the collection process. You can use the same `perf` command to see the output of the trace.
 
 ```bash
 sudo perf report -f
@@ -141,19 +141,19 @@ git clone --depth=1 https://github.com/BrendanGregg/FlameGraph
 sudo perf script | FlameGraph/stackcollapse-perf.pl | FlameGraph/flamegraph.pl > flamegraph.svg
 ```
 
-This command will generate a `flamegraph.svg` that you can view in the browser to investigate the performance problem:
+This command generates a `flamegraph.svg` that you can view in the browser to investigate the performance problem:
 
 [![Flame graph SVG image](media/flamegraph.jpg)](media/flamegraph.jpg#lightbox)
 
 ### [Windows](#tab/windows)
 
-On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again, and while its running within the 1-minute request, use the `collect` command as follows:
+On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again. While it's running within the 1-minute request, use the `collect` command as follows:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler
 ```
 
-Let [dotnet-trace](dotnet-trace.md) run for about 20-30 seconds, and then press the <kbd>Enter</kbd> to exit the collection. The result is a `nettrace` file located in the same folder. The `nettrace` files are a great way to use existing analysis tools on **Windows**.
+Let [dotnet-trace](dotnet-trace.md) run for about 20-30 seconds, and then press the <kbd>Enter</kbd> to exit the collection. The result is a `nettrace` file located in the same folder. The `nettrace` files are a great way to use existing analysis tools on Windows.
 
 Open the `nettrace` with [`PerfView`](https://github.com/microsoft/perfview/blob/master/documentation/Downloading.md) as shown below.
 

@@ -158,5 +158,5 @@ For more information, see [Standard Query Operators Overview (C#)](../../csharp/
 
 ## See also
 
-- [Introduction to pure functional transformations](pure-functional-transformations.md)
+- [Introduction to pure functional transformations](introduction-pure-functional-transformations.md)
 - [Functional programming vs. imperative programming](functional-vs-imperative-programming.md)

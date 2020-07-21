@@ -27,6 +27,6 @@ Although they're beyond the scope of this tutorial, designs that are influenced 
 
 ## See also
 
-- [Introduction to pure functional transformations](pure-functional-transformations.md)
+- [Introduction to pure functional transformations](introduction-pure-functional-transformations.md)
 - [Functional transformation of XML](functional-transformation-xml.md)
 - [Refactor into pure functions](refactor-pure-functions.md)

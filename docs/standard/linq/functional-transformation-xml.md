@@ -31,6 +31,6 @@ XSLT is the recommended tool for  document-centric transformations when the sour
 
 ## See also
 
-- [Introduction to pure functional transformations](pure-functional-transformations.md)
+- [Introduction to pure functional transformations](introduction-pure-functional-transformations.md)
 - [Tutorial: Manipulate content in a WordprocessingML document](xml-shape-wordprocessingml-documents.md)
 - [LINQ to XML vs. other XML technologies](linq-xml-vs-xml-technologies.md)

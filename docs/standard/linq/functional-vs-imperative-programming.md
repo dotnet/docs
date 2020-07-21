@@ -51,6 +51,6 @@ Fortunately, C# and Visual Basic don't require the full leap to functional progr
 
 ## See also
 
-- [Introduction to pure functional transformations](pure-functional-transformations.md)
+- [Introduction to pure functional transformations](introduction-pure-functional-transformations.md)
 - [XSLT Transformations](/../../standard/data/xml/xslt-transformations.md)
 - [Refactor into pure functions](refactor-pure-functions.md)

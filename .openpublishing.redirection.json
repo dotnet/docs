@@ -1263,39 +1263,24 @@
       "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/how-to-query-an-assembly-s-metadata-with-reflection-linq"
     },
     {
-      "source_path": "docs/csharp/programming-guide/concepts/linq/",
-      "redirect_url": "/dotnet/standard/linq/",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/csharp/programming-guide/concepts/linq/getting-started-with-linq.md",
-      "redirect_url": "/dotnet/standard/linq/",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/csharp/programming-guide/concepts/linq/introduction-to-linq.md",
-      "redirect_url": "/dotnet/standard/linq/",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/linq-xml-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml-programming-overview.md",
       "redirect_url": "/dotnet/standard/linq/linq-xml-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/programming-guide-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/linq-xml-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/getting-started-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/linq-xml-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml-overview.md",
@@ -1350,7 +1335,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/creating-xml-trees.md",
       "redirect_url": "/dotnet/standard/linq/create-xml-trees",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2.md",
@@ -1360,12 +1345,12 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/cloning-vs-attaching.md",
       "redirect_url": "/dotnet/standard/linq/create-xml-trees#example-attach-vs-clone",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/parsing-xml.md",
       "redirect_url": "/dotnet/standard/linq/parse-string",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-parse-a-string.md",
@@ -1415,7 +1400,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/working-with-xml-namespaces.md",
       "redirect_url": "/dotnet/standard/linq/namespaces-overview",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md",
@@ -1455,7 +1440,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/serializing-xml-trees.md",
       "redirect_url": "/dotnet/standard/linq/serialize-files-textwriters-xmlwriters",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/serializing-to-files-textwriters-and-xmlwriters.md",
@@ -1595,7 +1580,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/projections-and-transformations-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/work-dictionaries-linq-xml",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-work-with-dictionaries-using-linq-to-xml.md",
@@ -1640,7 +1625,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/advanced-query-techniques-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/join-two-collections",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-join-two-collections-linq-to-xml.md",
@@ -1690,7 +1675,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md",
       "redirect_url": "/dotnet/standard/linq/comparison-xpath-linq-xml",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md",
@@ -1779,12 +1764,12 @@
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md",
-      "redirect_url": "/dotnet/standard/linq/pure-functional-transformations",
-      "redirect_document_id": true
+      "redirect_url": "/dotnet/standard/linq/introduction-pure-functional-transformations",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md",
-      "redirect_url": "/dotnet/standard/linq/pure-functional-transformations",
+      "redirect_url": "/dotnet/standard/linq/introduction-pure-functional-transformations",
       "redirect_document_id": true
     },
     {
@@ -1825,7 +1810,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/tutorial-chaining-queries-together.md",
       "redirect_url": "/dotnet/standard/linq/chain-queries-example",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/chaining-queries-example.md",
@@ -1845,7 +1830,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md",
       "redirect_url": "/dotnet/standard/linq/xml-shape-wordprocessingml-documents",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/shape-of-wordprocessingml-documents.md",
@@ -1910,7 +1895,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/modifying-xml-trees-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/in-memory-xml-tree-modification-vs-functional-construction",
-      "redirect_document_id": true
+      "redirect_document_id": false
    },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/in-memory-xml-tree-modification-vs-functional-construction-linq-to-xml.md",
@@ -2025,7 +2010,7 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md",
@@ -5087,21 +5072,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/visual-basic/programming-guide/concepts/linq/",
-      "redirect_url": "/dotnet/standard/linq/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md",
-      "redirect_url": "/dotnet/standard/linq/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "docs/visual-basic/programming-guide/concepts/linq/introduction-to-linq.md.md",
-      "redirect_url": "/dotnet/standard/linq/",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/linq-xml-overview",
       "redirect_document_id": false
@@ -5392,6 +5362,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md",
+      "redirect_url": "/dotnet/standard/linq/write-queries-complex-filtering",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-filter-on-an-optional-element.md",
       "redirect_url": "/dotnet/standard/linq/filter-optional-element",
       "redirect_document_id": false
@@ -5608,12 +5583,12 @@
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/pure-functional-transformations-of-xml.md",
-      "redirect_url": "/dotnet/standard/linq/pure-functional-transformations",
+      "redirect_url": "/dotnet/standard/linq/introduction-pure-functional-transformations",
       "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md",
-      "redirect_url": "/dotnet/standard/linq/pure-functional-transformations",
+      "redirect_url": "/dotnet/standard/linq/introduction-pure-functional-transformations",
       "redirect_document_id": false
     },
     {

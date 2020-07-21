@@ -1,5 +1,6 @@
 ---
 title: "Passing Parameters - C# Programming Guide"
+description: You can pass an argument to a parameter in C# by value or reference. Changes to an argument passed by reference persist. Use ref or out to pass by reference.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "parameters [C#], passing"

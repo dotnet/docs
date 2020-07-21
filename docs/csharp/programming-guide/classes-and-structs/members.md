@@ -1,5 +1,6 @@
 ---
 title: "Members - C# Programming Guide"
+description: Classes and structs in C# have members that represent data and behavior, including members declared in the class and declared in its inheritance hierarchy.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "types [C#], nested types"

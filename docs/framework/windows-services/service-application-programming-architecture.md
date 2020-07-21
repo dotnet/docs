@@ -1,5 +1,6 @@
 ---
 title: "Service Application Programming Architecture"
+description: Understand service application programming architecture. Windows Service applications are based on a class that inherits from System.ServiceProcess.ServiceBase.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

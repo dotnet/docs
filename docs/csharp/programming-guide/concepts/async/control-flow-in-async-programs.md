@@ -1,5 +1,6 @@
 ---
 title: "Control Flow in Async Programs (C#)"
+description: Learn about control flow in a simple async C# program to understand how to write and maintain asynchronous programs by using the async and await keywords.
 ms.date: 07/20/2015
 ms.assetid: fc92b08b-fe1d-4d07-84ab-5192fafe06bb
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Passing Reference-Type Parameters - C# Programming Guide"
+description: When you pass a reference-type parameter by value in C#, the data in the referenced object can change, but not the value of the reference itself.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "method parameters [C#], reference types"

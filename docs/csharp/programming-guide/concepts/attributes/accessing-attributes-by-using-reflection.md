@@ -1,5 +1,6 @@
 ---
 title: "Accessing Attributes by Using Reflection (C#)"
+description: Use reflection to get information defined with custom attributes in C# by using the GetCustomAttributes method.
 ms.date: 07/20/2015
 ms.assetid: dce3a696-4ceb-489a-b5e4-322a83052f18
 ---

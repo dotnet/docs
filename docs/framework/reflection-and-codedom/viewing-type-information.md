@@ -1,5 +1,6 @@
 ---
 title: "Viewing Type Information"
+description: View type information using System.Type, which is central to reflection in .NET. Review ConstructorInfo, MemberInfo, MethodInfo, FieldInfo, and PropertyInfo.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

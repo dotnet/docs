@@ -1,5 +1,6 @@
 ---
 title: "How to: Write Services Programmatically"
+description: See how to write services programmatically by setting up the inheritance and other infrastructure elements yourself.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

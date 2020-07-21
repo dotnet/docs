@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify the Security Context for Services"
+description: Specify the security context for services. Services run in the default system account context have other system resource access rights than the logged-in user.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Service applications, security"

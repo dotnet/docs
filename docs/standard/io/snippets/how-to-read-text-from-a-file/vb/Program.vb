@@ -1,7 +1,7 @@
 Imports System.IO
 
 Module Program
-    Public Shared Sub Main()
+    Public Sub Main()
         Try
             ' Open the file using a stream reader.
             Using sr As New StreamReader("TestFile.txt")

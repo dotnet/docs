@@ -11,7 +11,7 @@ class Test
             using (StreamReader sr = new StreamReader("TestFile.txt"))
             {
 	            // Read the stream to a string, and write the string to the console.
-                String fileContent = sr.ReadToEnd();
+                string fileContent = sr.ReadToEnd();
                 Console.WriteLine(fileContent);
             }
         }

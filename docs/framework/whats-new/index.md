@@ -1,6 +1,6 @@
 ---
-title: "What's new in the .NET Framework"
-description: See what's new in various versions of the .NET Framework. Read a summary of key new features and improvements in each version.
+title: "What's new in .NET Framework"
+description: See what's new in various versions of .NET Framework. Read a summary of key new features and improvements in each version.
 ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
 dev_langs:

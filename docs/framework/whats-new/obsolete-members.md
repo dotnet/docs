@@ -1,6 +1,6 @@
 ---
 title: "Obsolete members - .NET Framework"
-description: See the list of type members that are obsolete in .NET 4.5 and later versions. Type members are grouped by assembly. It doesn't list members of obsolete types.
+description: See the list of type members that are obsolete in .NET 4.5 and later versions. Type members are grouped by assembly. Members of obsolete types are excluded here.
 ms.custom: "updateeachrelease"
 ms.date: "10/17/2017"
 helpviewer_keywords:

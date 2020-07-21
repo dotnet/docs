@@ -1,5 +1,6 @@
 ---
 title: "How to list all nodes in a tree (C#)"
+description: Learn how to list all the nodes in a tree by running an XPath expression using LINQ to XML in C#. You can learn how a method or property affects the tree.
 ms.date: 07/20/2015
 ms.assetid: 3e934371-f4c6-458b-9f6b-f9061b596f5b
 ---

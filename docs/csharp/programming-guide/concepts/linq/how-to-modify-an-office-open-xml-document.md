@@ -1,5 +1,6 @@
 ---
 title: "How to modify an Office Open XML document (C#)"
+description: Learn how to open an Office Open XML document, modify it, and save it. This example uses classes found in the WindowsBase assembly.
 ms.date: 07/20/2015
 ms.assetid: 467d489c-2b1b-453b-a757-8ac180e82a96
 ---

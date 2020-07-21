@@ -1,5 +1,6 @@
 ---
 title: "How to find related elements (XPath-LINQ to XML) (C#)"
+description: This C# example compares XPath to LINQ to XML for how to get an element selecting on an attribute that is referred to by the value of another element.
 ms.date: 07/20/2015
 ms.assetid: 41b386ee-562d-4841-bd6b-e44a7eb69f26
 ---

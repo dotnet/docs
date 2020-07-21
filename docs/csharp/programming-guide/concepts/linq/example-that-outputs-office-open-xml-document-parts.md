@@ -1,6 +1,6 @@
 ---
 title: "Example that Outputs Office Open XML Document Parts (C#)"
-description: Learn how to open an Office Open XML document and access parts of it with LINQ in C#. This example the document part and the style part of a document.
+description: Learn how to open an Office Open XML document and access parts of it with LINQ in C#. This example prints the document part and the style part of a document.
 ms.date: 07/20/2015
 ms.assetid: 6cd37055-89b4-42e8-bf27-5a29717e35f3
 ---

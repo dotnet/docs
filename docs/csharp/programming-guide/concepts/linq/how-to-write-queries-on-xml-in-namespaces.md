@@ -1,5 +1,6 @@
 ---
 title: "How to write queries on XML in namespaces (C#)"
+description: Learn how to write queries on XML namespaces. For these queries, you must use xref:System.Xml.Linq.XName objects with the correct namespace.
 ms.date: 07/20/2015
 ms.assetid: 7c54df81-15e4-4091-8c81-a87637029130
 ---

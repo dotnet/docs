@@ -1,5 +1,6 @@
 ---
 title: "How to serialize using DataContractSerializer (C#)"
+description: Learn how to serialize objects using DataContractSerializer. See an example that creates objects, serializes them into text files, and then deserializes them.
 ms.date: 07/20/2015
 ms.assetid: 3320ecbf-cdbe-480e-979c-2c14bbef9988
 ---

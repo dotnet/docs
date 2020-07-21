@@ -1,5 +1,6 @@
 ---
 title: "How to split a file into many files by using groups (LINQ) (C#)"
+description: Learn how to split a file into many files using groups. See an example of merging file contents, and then creating new files to organize the data in a new way.
 ms.date: 07/20/2015
 ms.assetid: 8179b91c-d778-4e57-884f-77fe5a8e4e40
 ---

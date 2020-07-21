@@ -1,5 +1,6 @@
 ---
 title: "How to sort elements (C#)"
+description: Learn how to sort elements. See examples of how to write a query that sort its results in an XML document.
 ms.date: 07/20/2015
 ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
 ---

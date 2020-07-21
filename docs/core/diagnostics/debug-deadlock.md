@@ -1,6 +1,6 @@
 ---
 title: Debugging deadlock - .NET Core
-description: A tutorial walk-through, debugging locking issues in .NET Core.
+description: A tutorial that walks you through debugging a locking issue in .NET Core.
 ms.topic: tutorial
 ms.date: 07/20/2020
 ---
@@ -9,13 +9,13 @@ ms.date: 07/20/2020
 
 **This article applies to: ✔️** .NET Core 3.1 SDK and later versions
 
-In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang, and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
+In this tutorial, you'll learn how to debug a deadlock scenario. Using the provided example [ASP.NET Core web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) source code repository, you can cause a deadlock intentionally. The endpoint will experience a hang and thread accumulation. You'll learn how you can use various tools to analyze the problem, such as core dumps, core dump analysis, and process tracing.
 
 In this tutorial, you will:
 
 > [!div class="checklist"]
 >
-> - Investigate app hang
+> - Investigate an app hang
 > - Generate a core dump file
 > - Analyze process threads in the dump file
 > - Analyze callstacks and sync blocks
@@ -25,14 +25,14 @@ In this tutorial, you will:
 
 The tutorial uses:
 
-- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version
 - [Sample debug target - web app](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) to trigger the scenario
 - [dotnet-trace](dotnet-trace.md) to list processes
 - [dotnet-dump](dotnet-dump.md) to collect, and analyze a dump file
 
 ## Core dump generation
 
-To investigate application hang, a core dump (memory dump) allows you to inspect the state of its threads, and any possible locks that may have contention issues. Run the [sample debug](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) application using the following command from the sample root directory.
+To investigate application unresponsiveness, a core dump or memory dump allows you to inspect the state of its threads and any possible locks that may have contention issues. Run the [sample debug](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) application using the following command from the sample root directory:
 
 ```dotnetcli
 dotnet run
@@ -44,11 +44,11 @@ To find the process ID, use the following command:
 dotnet-trace ps
 ```
 
-Take note of the process ID from your command output (yours will be different), ours was `4807`. Navigate to the following URL, which is an API endpoint on the sample site:
+Take note of the process ID from your command output. Our process ID was `4807`, but yours will be different. Navigate to the following URL, which is an API endpoint on the sample site:
 
 [https://localhost:5001/api/diagscenario/deadlock](https://localhost:5001/api/diagscenario/deadlock)
 
-The API request to the site will hang, and not respond - let the request run for about 10-15 seconds. Then create the core dump using the following command:
+The API request to the site will hang and not respond. Let the request run for about 10-15 seconds. Then create the core dump using the following command:
 
 ### [Linux](#tab/linux)
 
@@ -64,7 +64,7 @@ dotnet-dump collect -p 4807
 
 ---
 
-## Analyzing the core dump
+## Analyze the core dump
 
 To start the core dump analysis, open the core dump using the following `dotnet-dump analyze` command. The argument is the path to the core dump file that was collected earlier.
 
@@ -112,9 +112,9 @@ Since you're looking at a potential hang, you want an overall feel for the threa
  321 0x1DD4C (122188)
  ```
 
-The output shows all the threads currently running in the process, with their associated debugger thread ID, and operating system thread ID. Based on the output, there are little over 300 threads.
+The output shows all the threads currently running in the process with their associated debugger thread ID and operating system thread ID. Based on the output, there are over 300 threads.
 
-The next step is to get a better understanding of what the threads are currently doing by getting each thread's callstack. The `clrstack` command can be used to output callstacks. It can either output a single callstack, or all the callstacks. Use the following command to output all the callstacks for all the threads in the process.
+The next step is to get a better understanding of what the threads are currently doing by getting each thread's callstack. The `clrstack` command can be used to output callstacks. It can either output a single callstack or all the callstacks. Use the following command to output all the callstacks for all the threads in the process:
 
 ```console
 clrstack -all
@@ -201,7 +201,7 @@ OS Thread Id: 0x1dc88
 ...
 ```
 
-Eye balling the callstacks for all 300+ threads shows a pattern where a majority of the threads share a common callstack:
+Observing the callstacks for all 300+ threads shows a pattern where a majority of the threads share a common callstack:
 
 ```console
 OS Thread Id: 0x1dc88
@@ -232,7 +232,7 @@ ComClassFactory 0
 Free            0
 ```
 
-The two interesting columns are the **MonitorHeld**, and the **Owning Thread Info** columns. The **MonitorHeld** shows whether a monitor lock is acquired by a thread and the number of waiting threads. The **Owning Thread Info** shows which thread currently owns the monitor lock. The thread info has three different subcolumns. The second subcolumn shows operating system thread ID.
+The two interesting columns are **MonitorHeld** and **Owning Thread Info**. The **MonitorHeld** column shows whether a monitor lock is acquired by a thread and the number of waiting threads. The **Owning Thread Info** column shows which thread currently owns the monitor lock. The thread info has three different subcolumns. The second subcolumn shows operating system thread ID.
 
 At this point, we know two different threads (0x5634 and 0x51d4) hold a monitor lock. The next step is to take a look at what those threads are doing. We need to check if they're stuck indefinitely holding the lock. Let's use the `setthread` and `clrstack` commands to switch to each of the threads and display the callstacks:
 

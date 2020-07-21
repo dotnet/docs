@@ -1,5 +1,6 @@
 ---
 title: "How to find descendants of a child element (XPath-LINQ to XML) (C#)"
+description: Learn how to find descendant elements of a child element with a particular name using an XPath expression. 
 ms.date: 07/20/2015
 ms.assetid: 505b7512-bb8b-4f85-abbf-491f039c961e
 ---

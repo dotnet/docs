@@ -1,5 +1,6 @@
 ---
 title: "How to find all nodes in a namespace (C#)"
+description: Learn how to filter on the namespace of each element or attribute to find all of the nodes in that namespace.
 ms.date: 07/20/2015
 ms.assetid: 3a38b913-a53e-4d0e-a19d-8782bffd3364
 ---

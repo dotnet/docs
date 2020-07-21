@@ -1,5 +1,6 @@
 ---
 title: "How to find descendants with a specific element name (C#)"
+description: Learn how to find all descendants with a particular name using the xref:System.Xml.Linq.XContainer.Descendants%2A axis.
 ms.date: 07/20/2015
 ms.assetid: f684da20-bee9-47f5-9607-7e3fd7e67470
 ---

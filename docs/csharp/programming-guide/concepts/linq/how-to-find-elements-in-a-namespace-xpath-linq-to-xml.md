@@ -1,5 +1,6 @@
 ---
 title: "How to find elements in a namespace (XPath-LINQ to XML) (C#)"
+description: Learn how to find elements in a namespace using an XPath expression. See an example that reads an XML tree containing two namespaces.
 ms.date: 07/20/2015
 ms.assetid: cae1c4ac-6cd5-46cf-9b1c-bd85bc9b7ea9
 ---

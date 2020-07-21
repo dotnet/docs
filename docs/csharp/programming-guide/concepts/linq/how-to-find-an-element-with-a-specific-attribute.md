@@ -1,5 +1,6 @@
 ---
 title: "How to find an element with a specific attribute (C#)"
+description: Learn how to find an element that has an attribute with a specific value. See examples using sample XML documents.
 ms.date: 07/20/2015
 ms.assetid: b92591aa-3cfb-490e-99f6-da8de335e362
 ---

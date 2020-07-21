@@ -1,5 +1,6 @@
 ---
 title: "How to find an attribute of the parent (XPath-LINQ to XML) (C#)"
+description: Learn how to find an attribute of the parent element. See an example that finds a specific element, and then the 'id' attribute of that element.
 ms.date: 07/20/2015
 ms.assetid: dbef9d89-a5c4-431f-80cc-7a2ebf323f86
 ---

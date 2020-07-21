@@ -1,8 +1,7 @@
-﻿// <Snippet3>
-using System;
+﻿using System;
 using System.IO;
 
-class Test
+class Program
 {
     public static void Main()
     {
@@ -23,4 +22,3 @@ class Test
         }
     }
 }
-// </Snippet3>

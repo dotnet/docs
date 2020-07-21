@@ -26,8 +26,8 @@ The following example shows a synchronous read operation within a console app. T
 > [!IMPORTANT]
 > The example assumes that a file named *TestFile.txt* already exists in the same folder as the app.  
 
- [!code-csharp[Conceptual.BasicIO.TextFiles#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/source3.cs#3)]
- [!code-vb[Conceptual.BasicIO.TextFiles#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/source3.vb#3)]  
+ [!code-csharp[Conceptual.BasicIO.TextFiles](./snippets/how-to-read-text-from-a-file/csharp/Program.cs)]
+ [!code-vb[Conceptual.BasicIO.TextFiles](./snippets/how-to-read-text-from-a-file/vb/Program.vb)]  
   
 ## Example: Asynchronous read in a WPF app
  The following example shows an asynchronous read operation in a Windows Presentation Foundation (WPF) app.  

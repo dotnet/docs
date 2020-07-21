@@ -1,7 +1,6 @@
-﻿' <Snippet3>
 Imports System.IO
 
-Class Test
+Module Program
     Public Shared Sub Main()
         Try
             ' Open the file using a stream reader.
@@ -15,5 +14,4 @@ Class Test
             Console.WriteLine(e.Message)
         End Try
     End Sub
-End Class
-' </Snippet3>
+End Module

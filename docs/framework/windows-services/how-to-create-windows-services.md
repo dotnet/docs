@@ -1,5 +1,6 @@
 ---
 title: "How to: Create Windows Services"
+description: Use the Windows Service project template to create a service. Set the ServiceName property, create installers, and override the OnStart and OnStop methods.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Service applications, creating"

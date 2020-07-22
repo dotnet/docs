@@ -29,7 +29,7 @@ val data : (int * int) list list =
  [(5, 1); (5, 2); (5, 3); (5, 4); (5, 5)]]
 ```
 
-Plain text formatting is activated when using the `%A` format in printf formatting strings. This has limited customizability.
+Plain text formatting is activated when you use the `%A` format in `printf` formatting strings.
 Plain text formatting is also used when formatting the output of values in F# interactive, when the output includes extra information and is additionally customizable.
 Plain text formatting is observable through the following:
 

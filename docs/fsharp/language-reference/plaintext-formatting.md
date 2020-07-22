@@ -39,9 +39,7 @@ Plain text formatting is observable through the following:
 
 ## `%A` formatting
 
-The `%A` format specifier is used to format values in a human-readable way suitable for interpretation by the F#
-programmer.  It is not suitable for formatting results for other users and should not generally be used to format
-results in a user interface or web programming service.  It is often useful for reporting diagnostic information.
+The `%A` format specifier is used to format values in a human-readable way, and can also be useful for reporting diagnostic information.
 
 ### `%A` formatting of primitive values
 

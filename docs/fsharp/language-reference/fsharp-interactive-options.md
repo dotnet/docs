@@ -151,7 +151,7 @@ fsi.AddPrintTransformer(fun (x:obj) ->
 let y = "beep"
 ```
 
-gives
+This outputs:
 
 ```console
 val y : string = ["quack"; "quack"; "quack"]

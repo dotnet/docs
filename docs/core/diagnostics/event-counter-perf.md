@@ -10,9 +10,9 @@ ms.date: 07/22/2020
 
 While an <xref:System.Diagnostics.Tracing.EventSource> is fast, logging too many events for frequent events is still a performance consideration. In this tutorial, you'll learn how an <xref:System.Diagnostics.Tracing.EventCounter> can be used to measure performance of a high frequency of events.
 
-For events that happen frequently (every few milliseconds), in general, you will want the performance overhead per event to be low (less than a millisecond); otherwise, it is going to cost a significant performance overhead. Logging an event means you're going to write something to the disk. If the disk is not fast enough, you will lose events. You need a solution other than logging the event itself.
+For events that happen every few milliseconds, you'll want the performance per event to be low (less than a millisecond). Otherwise, it is going to cost a significant performance overhead. Logging an event means you're going to write something to disk. If the disk is not fast enough, you will lose events. You need a solution other than logging the event itself.
 
-When dealing with large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
+When dealing with a large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
 
 ```csharp
 // Give your event sources a descriptive name using the EventSourceAttribute, otherwise the name of the class is used.

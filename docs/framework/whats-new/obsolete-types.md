@@ -1,5 +1,6 @@
 ---
-title: "Obsolete Types in the .NET Framework"
+title: "Obsolete Types in .NET Framework"
+description: See the list of types that are obsolete in .NET Framework 4.5 and .NET 4.6, organized by assembly. Recommended alternatives are also listed.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - ".NET Framework 4.5, obsolete types"

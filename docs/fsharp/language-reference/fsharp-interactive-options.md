@@ -112,7 +112,7 @@ let newYearsDay1999 =
     Label = "New Year" }
 ```
 
-gives output that uses the specific date time format:
+If you execute the example in F# Interactive, it outputs based on the formatting option set. In this case, it affects the formatting of date and time:
 
 ```console
 type DateAndLabel =

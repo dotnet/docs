@@ -1,6 +1,6 @@
 ---
 title: "How to debug empty query results sets (C#)"
-description: Learn how to debug empty query results sets that might occur if a developer wrote a query as though the XML were not in a namespace.
+description: Learn how to debug empty query results sets. These sets might occur if a developer wrote a query as though the XML were not in a namespace.
 ms.date: 07/20/2015
 ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
 ---

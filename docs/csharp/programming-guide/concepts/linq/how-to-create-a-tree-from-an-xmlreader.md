@@ -1,6 +1,6 @@
 ---
 title: "How to create a tree from an XmlReader (C#)"
-description: "Learn how to create an XML tree directly from an XmlReader. An included example shows how to create a T:System.Xml.XmlReader object."
+description: "Learn how to create an XML tree directly from an XmlReader. See an example showing how to create a T:System.Xml.XmlReader object."
 ms.date: 07/20/2015
 ms.assetid: 60951c9c-7087-406c-b5bb-c60e58609b21
 ---

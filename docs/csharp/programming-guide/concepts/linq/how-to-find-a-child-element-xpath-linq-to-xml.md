@@ -1,6 +1,6 @@
 ---
 title: "How to find a child element (XPath-LINQ to XML) (C#)"
-description: Learn how to find a child element by comparing the XPath child element axis to the xref:System.Xml.Linq.XContainer.Element%2A method.
+description: Learn how to find a child element by comparing the XPath child element axis to the LINQ to XML Element method.
 ms.date: 07/20/2015
 ms.assetid: 4fa6182d-6196-4ed1-9c9e-82949ff89c71
 ---

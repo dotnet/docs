@@ -140,7 +140,7 @@ val x : MyList = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10]
 ```
 
 If the transformer function passed to `fsi,AddPrintTransformer` returns `null` then the print transformer is ignored.
-This can be used to filter any input value by starting with type `obj`.  For example,
+This can be used to filter any input value by starting with type `obj`.  For example:
 
 ```fsharp
 fsi.AddPrintTransformer(fun (x:obj) ->

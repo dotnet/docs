@@ -1,5 +1,6 @@
 ---
 title: "How to control namespace prefixes (C#) (LINQ to XML)"
+description: Learn how to control namespace prefixes when serializing an XML tree in LINQ to XML in C#. Some situations require control of namespace prefixes.
 ms.date: 07/20/2015
 ms.assetid: 64de5186-b81a-4ddd-8327-8693df59a01b
 ---

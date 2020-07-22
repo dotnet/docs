@@ -1,5 +1,6 @@
 ---
 title: "How to change the namespace for an entire XML tree (C#)"
+description: Learn how to programmatically change the namespace for an element or an attribute in LINQ to XML in C#.
 ms.date: 07/20/2015
 ms.assetid: 1584ff3b-c77d-4241-ab62-80adfb7bfc1b
 ---

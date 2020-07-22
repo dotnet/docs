@@ -1,10 +1,10 @@
 ---
-title: Measure performance using EventCounters - .NET Core
+title: Measure performance using EventCounters in .NET Core
 description: Installing and using the dotnet-trace command-line tool.
 ms.date: 07/22/2020
 ---
 
-# Tutorial: How to measure performance for frequent events using EventCounters
+# Tutorial: Measure performance using EventCounters in .NET Core
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 

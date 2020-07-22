@@ -1,5 +1,6 @@
 ---
 title: "Reference (LINQ to XML)"
+description: View links to LINQ to XML reference topics. These links include documentation for LINQ to XML classes and extension methods.
 ms.date: 07/20/2015
 ms.assetid: 815b45e2-3527-4dee-9986-b1277a693cde
 ---

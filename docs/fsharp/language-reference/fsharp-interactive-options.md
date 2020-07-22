@@ -133,7 +133,7 @@ fsi.AddPrintTransformer(fun (x:MyList) -> box x.Values)
 let x = MyList([1..10])
 ```
 
-gives
+This outputs:
 
 ```console
 val x : MyList = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10]

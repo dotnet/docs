@@ -1,21 +1,18 @@
 ---
 title: Interactive Options
 description: Learn about the command-line options supported by F# Interactive, fsi.exe.
-ms.date: 05/16/2016
+ms.date: 22/07/2030
 ---
 # F# Interactive Options
-
-> [!NOTE]
-> This article currently describes the experience for Windows only.  It will be rewritten.
 
 This topic describes the command-line options supported by F# Interactive, `fsi.exe`. F# Interactive accepts many of the same command line options as the F# compiler, but also accepts some additional options.
 
 ## Using F# Interactive for Scripting
 
-F# Interactive, `fsi.exe`, can be launched interactively, or it can be launched from the command line to run a script. The command line syntax is
+F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launched from the command line to run a script. The command line syntax is
 
 ```console
-> fsi.exe [options] [ script-file [arguments] ]
+> dotnet fsi [options] [ script-file [arguments] ]
 ```
 
 The file extension for F# script files is `.fsx`.
@@ -52,8 +49,6 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 |**--quotations-debug**|Specifies that extra debugging information should be emitted for expressions that are derived from F# quotation literals and reflected definitions. The debug information is added to the custom attributes of an F# expression tree node. See [Code Quotations](code-quotations.md) and [Expr.CustomAttributes](https://msdn.microsoft.com/library/eb89943f-5f5b-474e-b125-030ca412edb3).|
 |**--readline**[**+**&#124;**-**]|Enable or disable tab completion in interactive mode.|
 |**--reference:&lt;filename&gt;**<br /><br />**-r:&lt;filename&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
-|**--shadowcopyreferences**[**+**&#124;**-**]|Prevents references from being locked by the F# Interactive process.|
-|**--simpleresolution**|Resolves assembly references using directory-based rules rather than MSBuild resolution.|
 |**--tailcalls**[**+**&#124;**-**]|Enable or disable the use of the tail IL instruction, which causes the stack frame to be reused for tail recursive functions. This option is enabled by default.|
 |**--targetprofile:&lt;string&gt;**|Specifies target framework profile of this assembly. Valid values are mscorlib, netcore or netstandard.  The default is mscorlib.|
 |**--use:&lt;filename&gt;**|Tells the interpreter to use the given file on startup as initial input.|
@@ -61,6 +56,106 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 |**--warn:&lt;warning-level&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--warnaserror**[**+**&#124;**-**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--warnaserror**[**+**&#124;**-**]:**&lt;int-list&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
+
+## F# Interactive Structured Printing
+
+F# Interactive (`dotnet fsi`) uses an extended version of [structured plain text formatting](plaintext-formatting.md) to
+report values.
+
+1. All features of `%A` plaintext formatting are supported, and some are additionally customizable (see below).
+
+2. Printing is colorized if colours are aupported by the output console.
+
+3. A limit is placed on the length of strings shown, unless you explicitly evaluate that string.
+
+4. A set of user-definable settings are available via the `fsi` object.
+
+The available settings to customize plain text printing for reported values are:
+
+```fsharp
+open System.Globalization
+
+fsi.FormatProvider <- CultureInfo("de-DE")  // control the default culture for primitives
+
+fsi.PrintWidth <- 120        // control the width used for structured printing
+
+fsi.PrintDepth <- 10         // control the maximum depth of nested printing
+
+fsi.PrintLength <- 10        // control the length of lists and arrays
+
+fsi.PrintSize <- 100         // control the maximum overall object count
+
+fsi.ShowProperties <- false  // control whether properties of .NET objects are shown by default
+
+fsi.ShowIEnumerable <- false // control whether sequence values are expanded by default
+
+fsi.ShowDeclarationValues <- false // control whether values are shown for declaration outputs
+```
+
+### Customizing F# Interactive structured printing with `AddPrinter` and `AddPrintTransformer`
+
+Printing in F# Interactive outputs can be customized by using `fsi.AddPrinter` and `fsi.AddPrintTransformer`.
+The first gives text to replace the printing of an object, the second returns a surrogate object to display
+instead. For example, in F# Interactive
+
+```fsharp
+open System
+
+fsi.AddPrinter<DateTime>(fun dt -> dt.ToString("s"))
+
+type DateAndLabel =
+  { Date : DateTime
+    Label  : string  }
+
+let newYearsDay1999 =
+  { Date = DateTime(1999, 1, 1)
+    Label = "New Year" }
+```
+
+gives output that uses the specific date time format:
+
+```console
+type DateAndLabel =
+  { Date: DateTime
+    Label: string }
+val newYearsDay1999 : DateAndLabel = { Date = 1999-01-01T00:00:00
+                                       Label = "New Year" }
+```
+
+`fsi.AddPrintTransformer` can be used to give a surrogate object for printing:
+
+```fsharp
+type MyList(values: int list) =
+    member x.Values = values
+
+fsi.AddPrintTransformer(fun (x:MyList) -> box x.Values)
+
+let x = MyList([1..10])
+```
+
+gives
+
+```console
+val x : MyList = [1; 2; 3; 4; 5; 6; 7; 8; 9; 10]
+```
+
+If the transformer function passed to `fsi,AddPrintTransformer` returns `null` then the print transformer is ignored.
+This can be used to filter any input value by starting with type `obj`.  For example,
+
+```fsharp
+fsi.AddPrintTransformer(fun (x:obj) ->
+    match x with
+    | :? string as s when s = "beep" -> box ["quack"; "quack"; "quack"]
+    | _ -> null)
+
+let y = "beep"
+```
+
+gives
+
+```console
+val y : string = ["quack"; "quack"; "quack"]
+```
 
 ## Related Topics
 

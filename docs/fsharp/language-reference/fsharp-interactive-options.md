@@ -12,7 +12,7 @@ This topic describes the command-line options supported by F# Interactive, `fsi.
 F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launched from the command line to run a script. The command line syntax is
 
 ```dotnetcli
-> dotnet fsi [options] [ script-file [arguments] ]
+dotnet fsi [options] [ script-file [arguments] ]
 ```
 
 The file extension for F# script files is `.fsx`.

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Plain Text Formatting"
+title: "Plain Text Formatting"
 description: Learn how to use structured formatted plain text in F# applications and scripts.
 ms.date: 07/22/2020
 ---

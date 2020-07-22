@@ -7,7 +7,7 @@ ms.date: 07/22/2020
 # Plain Text Formatting
 
 F# allows values to be formatted as structured plain text in a compositional way.
-As a simple example, consider the following and note how the otuput has been formatted as a matrix-like display of tuples.
+For example, consider the following and note how the output has been formatted as a matrix-like display of tuples.
 
 ```console
 dotnet fsi

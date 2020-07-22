@@ -64,7 +64,7 @@ report values.
 
 1. All features of `%A` plain text formatting are supported, and some are additionally customizable.
 
-2. Printing is colorized if colours are aupported by the output console.
+2. Printing is colorized if colors are supported by the output console.
 
 3. A limit is placed on the length of strings shown, unless you explicitly evaluate that string.
 

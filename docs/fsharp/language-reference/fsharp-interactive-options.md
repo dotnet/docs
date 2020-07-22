@@ -157,7 +157,7 @@ gives
 val y : string = ["quack"; "quack"; "quack"]
 ```
 
-## Related Topics
+## Related topics
 
 |Title|Description|
 |-----|-----------|

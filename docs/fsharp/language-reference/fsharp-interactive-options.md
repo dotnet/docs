@@ -62,7 +62,7 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 F# Interactive (`dotnet fsi`) uses an extended version of [structured plain text formatting](plaintext-formatting.md) to
 report values.
 
-1. All features of `%A` plaintext formatting are supported, and some are additionally customizable (see below).
+1. All features of `%A` plain text formatting are supported, and some are additionally customizable.
 
 2. Printing is colorized if colours are aupported by the output console.
 

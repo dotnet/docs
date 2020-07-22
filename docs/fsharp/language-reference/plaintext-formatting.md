@@ -319,7 +319,7 @@ F# Interactive (`dotnet fsi`) uses an extended version of structured plain text 
 report values and allows additional customizability. See [F# Interactive](fsharp-interactive-options.md)
 for details.
 
-## Customizing debug displays using DebuggerDisplayAttribute, DebuggerTypeProxyAttribute and other attributes
+## Customize debug displays using `DebuggerDisplayAttribute`, `DebuggerTypeProxyAttribute`, and other attributes
 
 Debuggers for .NET respect the use of attributes such as `DebuggerDisplayAttribute` and `DebuggerTypeProxyAttribute`
 and these affect the structured display of objects in debugger inspection windows.

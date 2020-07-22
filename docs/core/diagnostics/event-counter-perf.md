@@ -4,15 +4,15 @@ description: Installing and using the dotnet-trace command-line tool.
 ms.date: 07/22/2020
 ---
 
-# Tutorial: How to measure performance for very frequent events using EventCounters
+# Tutorial: How to measure performance for frequent events using EventCounters
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-While <xref:System.Diagnostics.Tracing.EventSource> is fast, logging too many events for very frequent events is still a performance hit. In this tutorial, we will introduce <xref:System.Diagnostics.Tracing.EventCounter>, a mechanism for measuring performance for very frequent events.
+While <xref:System.Diagnostics.Tracing.EventSource> is fast, logging too many events for frequent events is still a performance hit. In this tutorial, we will introduce <xref:System.Diagnostics.Tracing.EventCounter>, a mechanism for measuring performance for frequent events.
 
-For events that happen very frequently (for example, if it happens every few milliseconds), in general, you will want the performance overhead per event to be very low (e.g. less than a millisecond); otherwise, it is going to cost a significant performance overhead. Logging an event, at the end of the day, needs to write something to the disk. If the disk is not fast enough, you will lose events. We need a solution other than logging the event itself.
+For events that happen frequently (for example, if it happens every few milliseconds), in general, you will want the performance overhead per event to be low (for example, less than a millisecond); otherwise, it is going to cost a significant performance overhead. Logging an event, at the end of the day, needs to write something to the disk. If the disk is not fast enough, you will lose events. We need a solution other than logging the event itself.
 
-When dealing with large number of events, knowing the measure per event is not very useful either. Most of the time all we need is just some statistics out of it. So we could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do for us. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
+When dealing with large number of events, knowing the measure per event is not useful either. Most of the time all we need is just some statistics out of it. So we could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do for us. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
 
 In the sequel, we assume you are familiar with the basic <xref:System.Diagnostics.Tracing.EventSource> usage, if you are not, please refer to [Vance's excellent blog](https://docs.microsoft.com/archive/blogs/vancem/introduction-tutorial-logging-etw-events-in-c-system-diagnostics-tracing-eventsource) on that.
 
@@ -76,7 +76,7 @@ Now let's drill into what the data captured means - when I copied from PerfView,
 ThreadID="17,800" ProcessorNumber="5" Payload="{ Name:"request", Mean:142.0735, StandardDeviation:42.07355, Count:2, Min:100, Max:184.1471, IntervalSec:1.000588 }"
 ```
 
-Now it is obvious that within a sampling period, we have 9 events, and all the other statistics.
+Now it is obvious that within a sampling period, we have nine events, and all the other statistics.
 
 Notice that this command also logs the events, so we will get both the events and the counter statistics.
 
@@ -91,7 +91,7 @@ PerfView /onlyProviders=*Samples-EventCounterDemos-Minimal:*:Critical:EventCount
 > [!TIP]
 > The `Critical` keyword is used to filter out the other events with lower priorities.
 
-In the next release of PerfView (> 2.0.26), we can visualize the counters using PerfView. To do so, you can right click on the event like this and choose the show event counter graph item:
+In the next release of PerfView (> 2.0.26), we can visualize the counters using PerfView. To do so, you can right-click on the event like this and choose the show event counter graph item:
 
 :::image type="content" source="media/perfview-menu.png" lightbox="media/perfview-menu.png" alt-text="Show EventCounter graph menu item":::
 

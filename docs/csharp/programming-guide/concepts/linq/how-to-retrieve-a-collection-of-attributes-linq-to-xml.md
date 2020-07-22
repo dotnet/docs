@@ -1,6 +1,6 @@
 ---
 title: "How to retrieve a collection of attributes (LINQ to XML) (C#)"
-description: The Attributes method in C# retrieves the attributes of an element. This LINQ to XML iterates through the collection of attributes of an element.
+description: The Attributes method in C# retrieves the attributes of an element. This LINQ to XML example iterates through the collection of attributes of an element.
 ms.date: 07/20/2015
 ms.assetid: a49ee7a3-b2c2-4d49-9b5c-b7c6c41f4f13
 ---

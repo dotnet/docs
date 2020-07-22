@@ -1,5 +1,6 @@
 ---
 title: "Enabling a Data Source for LINQ Querying"
+description: Learn how to extend LINQ in C# to enable any data source to be queried in the LINQ pattern, which makes it easy for clients to query a data source.
 ms.date: 07/20/2015
 ms.assetid: d2ef04a5-31a6-45cb-af9a-a5ce7732662c
 ---

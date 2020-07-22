@@ -1,5 +1,6 @@
 ---
 title: "Atomized XName and XNamespace Objects (LINQ to XML) (C#)"
+description: Learn about atomized XName and XNamespace objects and how they provide performance benefits for queries.
 ms.date: 07/20/2015
 ms.assetid: a5b21433-b49d-415c-b00e-bcbfb0d267d7
 ---

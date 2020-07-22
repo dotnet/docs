@@ -6,7 +6,7 @@ ms.date: 07/22/2020
 
 # Plain Text Formatting
 
-F# allows values to be formatted as structured plain text in a compositional way.
+F# allows structured values to be formatted as plain text.
 For example, consider the following and note how the output has been formatted as a matrix-like display of tuples.
 
 ```console
@@ -31,9 +31,8 @@ val data : (int * int) list list =
 
 Plain text formatting is activated when you use the `%A` format in `printf` formatting strings.
 Plain text formatting is also used when formatting the output of values in F# interactive, when the output includes extra information and is additionally customizable.
-Plain text formatting is observable through the following:
-
-1. The default results of `x.ToString()` on F# union and record values, when `sprintf "%+A"` is used.
+Plain text formatting is also observable through any calls to `x.ToString()` on F# union and record values, including those
+that occur implicitly in debugging, logging and other tooling.
 
 2. The default debug text of F# union and record values (and structured values containing these), when `sprintf "%+A"` is also used.
 
@@ -134,6 +133,27 @@ produces
   (3, 9); (4, 16);
   (5, 25)|]
 [|(1, 1); (2, 4); (3, 9); (4, 16); (5, 25)|]
+```
+
+Specifying a print width of 0 results in no print width being used. A single line of text will result, except where embedded strings in the
+output themselves contain linebreaks.  For example
+
+```fsharp
+printfn "%0A" [| for i in 1 .. 5 -> (i, i*i) |]
+
+printfn "%0A" [| for i in 1 .. 5 -> "abc\ndef |]
+```
+
+produces
+
+```console
+[|(1, 1); (2, 4); (3, 9); (4, 16); (5, 25)|]
+[|"abc
+def"; "abc
+def"; "abc
+def"; "abc
+def"; "abc
+def"|]
 ```
 
 A depth limit of 4 is used for sequence (IEnumerable) values, which are shown as `seq { ...}`, and a depth limit of 100 is used for list and array values.
@@ -286,31 +306,38 @@ name of the type. For example,
 type MyClassType(clicks: int list) =
    member x.Clicks = clicks
 
-printfn "The default ToString gives --> %s" (MyClassType([1..5]).ToString())
+let data = [ MyClassType([1..5]); MyClassType([1..5]) ]
+printfn "Default structured print gives this:\n%A" data
+printfn "Default ToString gives:\n%s" (data.ToString())
 ```
 
 produces
 
 ```console
-The default ToString gives --> MyClassType
+Default structured print gives this:
+[MyClassType; MyClassType]
+Default ToString gives:
+[MyClassType; MyClassType]
 ```
 
-Sometimes `sprintf "%A"` plus a `StructuredFormatDisplay` attribute makes for a suitable implementation
-of `ToString`, e.g.
-
+Adding an override for `ToString()` can give better formatting.
 ```fsharp
-[<StructuredFormatDisplay("Counts({Clicks})")>]
 type MyClassType(clicks: int list) =
    member x.Clicks = clicks
-   override x.ToString() = sprintf "%A" x
+   override x.ToString() = sprintf "MyClassType(%0A)" clicks
 
-printfn "ToString now gives --> %s" (MyClassType([1..5]).ToString())
+let data = [ MyClassType([1..5]); MyClassType([1..5]) ]
+printfn "Now structured print gives this:\n%A" data
+printfn "Now ToString gives:\n%s" (data.ToString())
 ```
 
 produces
 
 ```console
-ToString now gives --> Counts([1; 2; 3; 4; 5])
+Now structured print gives this:
+[MyClassType([1; 2; 3; 4; 5]); MyClassType([1; 2; 3; 4; 5])]
+Now ToString gives:
+[MyClassType([1; 2; 3; 4; 5]); MyClassType([1; 2; 3; 4; 5])]
 ```
 
 ## F# Interactive Structured Printing

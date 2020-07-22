@@ -8,15 +8,11 @@ ms.date: 07/22/2020
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-While <xref:System.Diagnostics.Tracing.EventSource> is fast, logging too many events for frequent events is still a performance hit. In this tutorial, we will introduce <xref:System.Diagnostics.Tracing.EventCounter>, a mechanism for measuring performance for frequent events.
+While an <xref:System.Diagnostics.Tracing.EventSource> is fast, logging too many events for frequent events is still a performance consideration. In this tutorial, you'll learn how an <xref:System.Diagnostics.Tracing.EventCounter> can be used to measure performance of a high frequency of events.
 
-For events that happen frequently (for example, if it happens every few milliseconds), in general, you will want the performance overhead per event to be low (for example, less than a millisecond); otherwise, it is going to cost a significant performance overhead. Logging an event, at the end of the day, needs to write something to the disk. If the disk is not fast enough, you will lose events. We need a solution other than logging the event itself.
+For events that happen frequently (every few milliseconds), in general, you will want the performance overhead per event to be low (less than a millisecond); otherwise, it is going to cost a significant performance overhead. Logging an event means you're going to write something to the disk. If the disk is not fast enough, you will lose events. You need a solution other than logging the event itself.
 
-When dealing with large number of events, knowing the measure per event is not useful either. Most of the time all we need is just some statistics out of it. So we could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do for us. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
-
-In the sequel, we assume you are familiar with the basic <xref:System.Diagnostics.Tracing.EventSource> usage, if you are not, please refer to [Vance's excellent blog](https://docs.microsoft.com/archive/blogs/vancem/introduction-tutorial-logging-etw-events-in-c-system-diagnostics-tracing-eventsource) on that.
-
-Without further ado, here is an example on how to use the <xref:System.Diagnostics.Tracing.EventCounter>
+When dealing with large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
 
 ```csharp
 // Give your event sources a descriptive name using the EventSourceAttribute, otherwise the name of the class is used.
@@ -32,8 +28,7 @@ public sealed class MinimalEventCounterSource : EventSource
         RequestCounter = new EventCounter("request", this);
     }
 
-    /// <summary>
-    /// Call this method to indicate that a request for a URL was made which took a particular amount of time
+    // Indicate that a request for a URL was made which took a particular amount of time
     public void Request(string url, float elapsedMSec)
     {
         // Notes:
@@ -55,7 +50,7 @@ public sealed class MinimalEventCounterSource : EventSource
 
 The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> line is the <xref:System.Diagnostics.Tracing.EventSource> part and is not part of <xref:System.Diagnostics.Tracing.EventCounter>, it was written to show that you can log a message together with the event counter.
 
-So, with that, we logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless we can actually get the statistics out of it, it is not useful. To get the statistics, we need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by setting off a timer how frequently we want the events, as well as a listener to capture the events, to do that, you can use PerfView. Again, we assumed familiarity with PerfView, if not, you can refer to Vance's blog on that.
+You logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless you can actually get the statistics out of it, it is not useful. To get the statistics, you need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by setting off a timer how frequently you want the events, as well as a listener to capture the events, to do that, you can use PerfView.
 
 There is an extra keyword that you will need to specify the turn on the EventCounters.
 

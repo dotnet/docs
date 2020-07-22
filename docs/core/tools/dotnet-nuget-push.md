@@ -16,7 +16,7 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet nuget push [<ROOT>] [-d|--disable-buffering] [--force-english-output]
-    [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols]
+    [--interactive] [-k|--api-key <API_KEY>] [-n|--no-symbols true]
     [--no-service-endpoint] [-s|--source <SOURCE>] [--skip-duplicate]
     [-sk|--symbol-api-key <API_KEY>] [-ss|--symbol-source <SOURCE>]
     [-t|--timeout <TIMEOUT>]
@@ -58,7 +58,7 @@ The command pushes an existing package. It doesn't create a package. To create a
 
   The API key for the server.
 
-- **`-n|--no-symbols`**
+- **`-n|--no-symbols true`**
 
   Doesn't push symbols (even if present).
 

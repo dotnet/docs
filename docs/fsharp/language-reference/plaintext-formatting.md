@@ -34,8 +34,6 @@ Plain text formatting is also used when formatting the output of values in F# in
 Plain text formatting is also observable through any calls to `x.ToString()` on F# union and record values, including those
 that occur implicitly in debugging, logging and other tooling.
 
-2. The default debug text of F# union and record values (and structured values containing these), when `sprintf "%+A"` is also used.
-
 ## `%A` formatting
 
 The `%A` format specifier is used to format values in a human-readable way, and can also be useful for reporting diagnostic information.
@@ -321,6 +319,7 @@ Default ToString gives:
 ```
 
 Adding an override for `ToString()` can give better formatting.
+
 ```fsharp
 type MyClassType(clicks: int list) =
    member x.Clicks = clicks

@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Numerical Data (LINQ to XML)"
+description: This XML file is used in various examples in the LINQ to XML documentation. The file contains numerical data for summing, averaging, and grouping.
 ms.date: 07/20/2015
 ms.assetid: 365cae86-a166-46df-b56a-0209d9771c27
 ---

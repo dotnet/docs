@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Typical Purchase Order in a Namespace"
+description: This XML file is used in various examples in the LINQ to XML documentation. The file is a typical purchase order. The XML is in a namespace.
 ms.date: 07/20/2015
 ms.assetid: 84dc3339-ea32-4ccc-9af6-ab38ddfecced
 ---

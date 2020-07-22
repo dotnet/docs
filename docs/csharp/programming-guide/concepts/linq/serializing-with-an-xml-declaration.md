@@ -1,5 +1,6 @@
 ---
 title: "Serializing with an XML Declaration (C#)"
+description: Learn about the configurations in which serialization in C# generates an XML declaration, including serializing to a file, TextWriter, and XmlWriter.
 ms.date: 07/20/2015
 ms.assetid: c237fa4a-a042-40fd-886f-17b54c66bb75
 ---

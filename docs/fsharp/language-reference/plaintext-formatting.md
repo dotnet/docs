@@ -30,7 +30,7 @@ val data : (int * int) list list =
 ```
 
 Plain text formatting is activated when using the `%A` format in printf formatting strings. This has limited customizability.
-It is also used when formatting the output of values in F# interactive, when the output includes extra information and is additionally customizable.
+Plain text formatting is also used when formatting the output of values in F# interactive, when the output includes extra information and is additionally customizable.
 Plain text formatting is observable through the following:
 
 1. The default results of `x.ToString()` on F# union and record values, when `sprintf "%+A"` is used.

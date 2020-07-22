@@ -258,7 +258,7 @@ Counts([0; 1; 2; 3;
         18; 19; 20])
 ```
 
-### Customizing plain text formatting by overriding `ToString`
+### Customize plain text formatting by overriding `ToString`
 
 The default implementation of `x.ToString()` is observable in F# programming. Often the default results
 are not suitable for use in either programmer-facing information display nor user output, and as a result it

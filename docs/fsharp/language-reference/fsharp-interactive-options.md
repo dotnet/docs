@@ -1,7 +1,7 @@
 ---
 title: Interactive Options
 description: Learn about the command-line options supported by F# Interactive, fsi.exe.
-ms.date: 22/07/2030
+ms.date: 07/22/2020
 ---
 # F# Interactive Options
 

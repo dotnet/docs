@@ -1,5 +1,6 @@
 ---
 title: "Statically Compiled Queries (LINQ to XML) (C#)"
+description: Learn about statically compiled queries in LINQ to XML in C# and how they differ from XPath queries, which must be interpreted at runtime.
 ms.date: 07/20/2015
 ms.assetid: 3bf558fe-0705-479d-86d4-00188f5fcf9c
 ---

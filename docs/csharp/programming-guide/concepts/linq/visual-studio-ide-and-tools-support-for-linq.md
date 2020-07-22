@@ -1,5 +1,6 @@
 ---
 title: "Visual Studio IDE and Tools Support for LINQ (C#)"
+description: The Visual Studio IDE features support LINQ application development, such as Object Relational Designer, SQLMetal tool, LINQ-Aware code editor, and Debugger.
 ms.date: 07/20/2015
 ms.assetid: c1f6cfdf-c96f-417f-acc8-4a049772ead3
 ---

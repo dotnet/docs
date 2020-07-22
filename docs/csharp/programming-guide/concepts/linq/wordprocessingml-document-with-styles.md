@@ -1,5 +1,6 @@
 ---
 title: "WordprocessingML Document with Styles3"
+description: This example WordprocessingML document has paragraphs that are formatted with styles. Learn about the document parts that pertain to styles.
 ms.date: 07/20/2015
 ms.assetid: 40e35de6-ac93-4bba-88ab-a018cbe93873
 ---

@@ -235,7 +235,7 @@ a permitted represenation.
 
 F# function values are printed as their internally generated closure name, for example `<fun:it@43-7>`.
 
-### Customizing plain text formatting with `StructuredFormatDisplayAttribute`
+### Customize plain text formatting with `StructuredFormatDisplayAttribute`
 
 When using the `%A` specifier, the presence of `StructuredFormatDisplayAttribute` on type declarations is respected.  This can
 be used to specify surrogate text and property to display a value. For example:

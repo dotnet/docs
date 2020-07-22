@@ -3,7 +3,7 @@ title: Interactive options
 description: Learn about the command-line options supported by F# Interactive, fsi.exe.
 ms.date: 07/22/2020
 ---
-# F# Interactive Options
+# F# Interactive options
 
 This topic describes the command-line options supported by F# Interactive, `fsi.exe`. F# Interactive accepts many of the same command line options as the F# compiler, but also accepts some additional options.
 

@@ -96,7 +96,7 @@ fsi.ShowDeclarationValues <- false // Control whether values are shown for decla
 
 Printing in F# Interactive outputs can be customized by using `fsi.AddPrinter` and `fsi.AddPrintTransformer`.
 The first gives text to replace the printing of an object, the second returns a surrogate object to display
-instead. For example, in F# Interactive
+instead. For example, consider the following F# code:
 
 ```fsharp
 open System

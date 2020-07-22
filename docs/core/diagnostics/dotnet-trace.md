@@ -42,12 +42,12 @@ The `dotnet-trace` tool:
 
 ## Commands
 
-| Command                                                     |
-| ----------------------------------------------------------- |
-| [dotnet-trace collect](#dotnet-trace-collect)               |
-| [dotnet-trace convert](#dotnet-trace-convert)               |
-| [dotnet-trace ps](#dotnet-trace-ps) |
-| [dotnet-trace list-profiles](#dotnet-trace-list-profiles)   |
+| Command                                                   |
+|-----------------------------------------------------------|
+| [dotnet-trace collect](#dotnet-trace-collect)             |
+| [dotnet-trace convert](#dotnet-trace-convert)             |
+| [dotnet-trace ps](#dotnet-trace-ps)                       |
+| [dotnet-trace list-profiles](#dotnet-trace-list-profiles) |
 
 ## dotnet-trace collect
 

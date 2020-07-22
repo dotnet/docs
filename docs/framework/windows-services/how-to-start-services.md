@@ -1,5 +1,6 @@
 ---
 title: "How to: Start Services"
+description: Learn several ways to start services. After a service is installed, it must be started. Starting calls the OnStart method on the service class.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Service applications, starting"

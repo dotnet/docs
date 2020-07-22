@@ -1,5 +1,6 @@
 ---
 title: "How to make multiple web requests in parallel by using async and await (C#)"
+description: Learn how to separate creating a task from using the await operator in C#, instead of applying it when a task is created.
 ms.date: 07/20/2015
 ms.assetid: 19745899-f97a-4499-a7c7-e813d1447580
 ---

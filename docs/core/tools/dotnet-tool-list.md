@@ -31,7 +31,7 @@ The `dotnet tool list` command provides a way for you to list all .NET Core glob
 
 * To list global tools installed in the default location, use the `--global` option
 * To list global tools installed in a custom location, use the `--tool-path` option.
-* To list local tools, A local tool. use the `--local` option or omit the `--global`, `--tool-path`, and `--local` options.
+* To list local tools, use the `--local` option or omit the `--global`, `--tool-path`, and `--local` options.
 
 **Local tools are available starting with .NET Core SDK 3.0.**
 

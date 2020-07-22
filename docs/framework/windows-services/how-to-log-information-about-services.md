@@ -1,5 +1,6 @@
 ---
 title: "How to: Log Information About Services"
+description: Know how to log information about services. Set the AutoLog property if you want your Windows Service project to interact with the Application event log.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

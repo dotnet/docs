@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Accessing the Web by Using async and await (C#)"
+description: This walkthrough converts a synchronous application into an asynchronous solution in C# that uses the async and await features. 
 ms.date: 07/20/2015
 ms.assetid: c95d8d71-5a98-4bf0-aaf4-45fed2ebbacd
 ---

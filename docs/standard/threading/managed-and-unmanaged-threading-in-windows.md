@@ -18,9 +18,6 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
   
  In managed threading, <xref:System.Threading.Thread.GetHashCode%2A?displayProperty=nameWithType> is the stable managed thread identification. For the lifetime of your thread, it will not collide with the value from any other thread, regardless of the application domain from which you obtain this value.  
   
-> [!NOTE]
-> An operating-system **ThreadId** has no fixed relationship to a managed thread, because an unmanaged host can control the relationship between managed and unmanaged threads. Specifically, a sophisticated host can use the Fiber API to schedule many managed threads against the same operating system thread, or to move a managed thread among different operating system threads.  
-  
 ## Mapping from Win32 threading to managed threading
 
  The following table maps Win32 threading elements to their approximate runtime equivalent. Note that this mapping does not represent identical functionality. For example, **TerminateThread** does not execute **finally** clauses or free up resources, and cannot be prevented. However, <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> executes all your rollback code, reclaims all the resources, and can be denied using <xref:System.Threading.Thread.ResetAbort%2A>. Be sure to read the documentation closely before making assumptions about functionality.  

@@ -1,5 +1,6 @@
 ---
 title: "Fine-Tuning Your Async Application (C#)"
+description: These C# examples use CancellationToken and important Task methods such as Task.WhenAll and Task.WhenAny to fine-tune async applications.
 ms.date: 07/20/2015
 ms.assetid: 97696eb9-81fc-4940-9655-84daa8eb4d5c
 ---

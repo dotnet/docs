@@ -1,5 +1,6 @@
 ---
 title: "How to extend the async walkthrough by using Task.WhenAll (C#)"
+description: Learn how to improve performance of the async solution in C# by using Task.WhenAll. This method asynchronously awaits multiple asynchronous operations.
 ms.date: 07/20/2015
 ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
 ---

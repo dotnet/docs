@@ -1,5 +1,6 @@
 ---
 title: "How to implement custom event accessors - C# Programming Guide"
+description: Learn how to implement custom event accessors. See a code example and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "accessors [C#], event accessors"

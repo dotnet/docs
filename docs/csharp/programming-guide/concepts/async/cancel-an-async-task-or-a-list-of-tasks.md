@@ -1,5 +1,6 @@
 ---
 title: "Cancel an Async Task or a List of Tasks (C#)"
+description: Use these examples to add a button that cancels an async application before it finishes. This C# application downloads the contents of one or more websites.
 ms.date: 07/20/2015
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
 ---

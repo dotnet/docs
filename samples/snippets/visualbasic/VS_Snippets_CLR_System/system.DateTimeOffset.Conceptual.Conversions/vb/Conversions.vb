@@ -254,8 +254,9 @@ Module modMain
                           originalDate, _
                           localDate, _
                           localDate.Kind.ToString())
-        ' The example displays the following output to the console:
-        '       6/19/2008 7:00:00 AM -05:00 converted to 6/19/2008 5:00:00 AM Local
+        ' The example displays the following output to the console,
+        ' when you run it on a machine that is set to Pacific Time (US & Canada):
+        '       6/18/2008 7:00:00 AM -05:00 converted to 6/18/2008 5:00:00 AM Local
         '       11/4/2007 4:00:00 AM -05:00 converted to 11/4/2007 1:00:00 AM Local
         ' </Snippet11>
     End Sub

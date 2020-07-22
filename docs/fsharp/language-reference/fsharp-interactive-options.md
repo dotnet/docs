@@ -77,19 +77,19 @@ open System.Globalization
 
 fsi.FormatProvider <- CultureInfo("de-DE")  // control the default culture for primitives
 
-fsi.PrintWidth <- 120        // control the width used for structured printing
+fsi.PrintWidth <- 120        // Control the width used for structured printing
 
-fsi.PrintDepth <- 10         // control the maximum depth of nested printing
+fsi.PrintDepth <- 10         // Control the maximum depth of nested printing
 
-fsi.PrintLength <- 10        // control the length of lists and arrays
+fsi.PrintLength <- 10        // Control the length of lists and arrays
 
-fsi.PrintSize <- 100         // control the maximum overall object count
+fsi.PrintSize <- 100         // Control the maximum overall object count
 
-fsi.ShowProperties <- false  // control whether properties of .NET objects are shown by default
+fsi.ShowProperties <- false  // Control whether properties of .NET objects are shown by default
 
-fsi.ShowIEnumerable <- false // control whether sequence values are expanded by default
+fsi.ShowIEnumerable <- false // Control whether sequence values are expanded by default
 
-fsi.ShowDeclarationValues <- false // control whether values are shown for declaration outputs
+fsi.ShowDeclarationValues <- false // Control whether values are shown for declaration outputs
 ```
 
 ### Customizing F# Interactive structured printing with `AddPrinter` and `AddPrintTransformer`

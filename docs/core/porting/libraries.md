@@ -21,9 +21,6 @@ You should also become familiar with the content of the following articles:
 [.NET Standard](../../standard/net-standard.md)\
 This article describes the formal specification of .NET APIs that are intended to be available on all .NET implementations.
 
-[Packages, Metapackages and Frameworks](../packages.md)\
-This article discusses how .NET Core defines and uses packages and how packages support code running on multiple .NET implementations.
-
 [Developing Libraries with Cross Platform Tools](../tutorials/libraries.md)\
 This article explains how to write libraries using the .NET Core CLI.
 

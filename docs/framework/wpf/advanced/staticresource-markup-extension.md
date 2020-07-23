@@ -1,5 +1,6 @@
 ---
 title: "StaticResource Markup Extension"
+description: Provides a value for any XAML property attribute by looking up a reference to an already defined resource.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "StaticResource"

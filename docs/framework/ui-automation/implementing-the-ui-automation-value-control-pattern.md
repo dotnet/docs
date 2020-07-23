@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Value Control Pattern"
+description: Review guidelines and conventions to implement the Value control pattern in UI Automation. Know required members for the IValueProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, Value"

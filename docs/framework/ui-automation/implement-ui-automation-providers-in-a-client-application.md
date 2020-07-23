@@ -1,5 +1,6 @@
 ---
 title: "Implement UI Automation Providers in a Client Application"
+description: See an example of how to implement a client-side UI Automation provider in an application. Note that this is an uncommon scenario.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

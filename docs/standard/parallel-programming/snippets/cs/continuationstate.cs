@@ -19,7 +19,7 @@ class ContinuationStateExample
         var continuations = new List<Task<DateTime>>();
         for (int i = 0; i < 5; i++)
         {
-            task = task.ContinueWith(delegate { return DoWork(); }, DateTime.Now);
+            task = task.ContinueWith((antecedent, _) => DoWork(), DateTime.Now);
             continuations.Add(task);
         }
 

@@ -1,5 +1,6 @@
 ---
 title: "C# Features That Support LINQ"
+description: Learn about C# features to use with LINQ queries and in other contexts. These language constructs were introduced in C# 3.0.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "LINQ [C#], features supporting LINQ"

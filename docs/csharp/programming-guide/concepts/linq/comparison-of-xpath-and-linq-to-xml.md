@@ -1,5 +1,6 @@
 ---
 title: "Comparison of XPath and LINQ to XML"
+description: Learn about the similarities and differences in functionality between XPath and LINQ to XML in C#. You can use both to query an XML tree.
 ms.date: 07/20/2015
 dev_langs: 
   - "csharp"

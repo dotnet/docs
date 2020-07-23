@@ -1,5 +1,6 @@
 ---
 title: "How to read and write an encoded document (C#)"
+description: Learn how to create an encoded XML document in C# by adding an XDeclaration to the XML tree and setting the encoding to the desired code page name.
 ms.date: 07/20/2015
 ms.assetid: 84f64e71-39a6-42c6-ad68-f052bb158a03
 ---

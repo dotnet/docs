@@ -1,5 +1,6 @@
 ---
 title: "Functional vs. Procedural Programming (LINQ to XML) (C#)"
+description: For processing XML, LINQ to XML supports both procedural, in-memory XML tree modification and a functional construction that uses a declarative approach.
 ms.date: 07/20/2015
 ms.assetid: fc64e39c-a487-4882-9169-da4de97917d9
 ---

@@ -1,5 +1,6 @@
 ---
 title: "How to create a document with namespaces (C#) (LINQ to XML)"
+description: Learn how to create a document with a namespace in LINQ to XML in C# by using an XNamespace object to combine the namespace with the local name.
 ms.date: 07/20/2015
 ms.assetid: 37e63c57-f86d-47ac-88a7-2c2d107def30
 ---

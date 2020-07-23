@@ -1,5 +1,6 @@
 ---
 title: "How to catch parsing errors (C#)"
+description: This LINQ to XML example in C# detects badly formed or invalid XML. LINQ to XML uses XmlReader, which throws an exception for badly formed or invalid XML.
 ms.date: 07/20/2015
 ms.assetid: bfb612d4-5605-48ef-8c93-915cf9d5dcfb
 ---

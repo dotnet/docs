@@ -1,5 +1,6 @@
 ---
 title: "How to build LINQ to XML examples (C#)"
+description: Supply the appropriate using directives needed to compile C# to run the provided snippets and examples of LINQ to XML.
 ms.date: 07/20/2015
 ms.assetid: e5d18fa1-2704-48fe-a44b-1564f97c9e9c
 ---

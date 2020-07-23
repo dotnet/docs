@@ -1,5 +1,6 @@
 ---
 title: "Applicability of Functional Transformation (C#)"
+desciption: Learn about functional transformation. See how this approach to LINQ and other processes where the focus is on transforming data from one form to another.
 ms.date: 07/20/2015
 ms.assetid: c78107bd-b006-4574-a3d4-bbf808388ff3
 ---

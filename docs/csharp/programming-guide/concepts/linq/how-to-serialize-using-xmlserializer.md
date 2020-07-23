@@ -1,6 +1,6 @@
 ---
 title: "How to serialize using XmlSerializer (C#)"
-description: Learn how to serialize objects using XmlSerializer. See an example that creates objects, serializes them to a memory stream, and then deserializes them.
+description: Learn how to serialize objects by using XmlSerializer. See an example that creates objects, serializes them to a memory stream, and then deserializes them.
 ms.date: 07/20/2015
 ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
 ---

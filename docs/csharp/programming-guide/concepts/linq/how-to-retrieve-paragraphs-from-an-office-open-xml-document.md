@@ -1,6 +1,6 @@
 ---
 title: "How to retrieve paragraphs from an Office Open XML document (C#)"
-description: Learn how to retrieve a collection of paragraphs from an Office Open XML document. See an example that uses the StringConcatenate extension method.
+description: Learn how to retrieve a collection of paragraphs from an Office Open XML document. See an example that uses the 'StringConcatenate' extension method.
 ms.date: 07/20/2015
 ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
 ---

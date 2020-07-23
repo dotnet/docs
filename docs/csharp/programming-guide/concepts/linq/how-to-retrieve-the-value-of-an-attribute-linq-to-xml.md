@@ -1,6 +1,6 @@
 ---
 title: "How to retrieve the value of an attribute (LINQ to XML) (C#)"
-description: Learn how to get the value of an attribute. See examples of different methods and additional information.
+description: Learn how to get the value of an attribute. See code examples and view additional available resources.
 ms.date: 07/20/2015
 ms.assetid: 817bbe89-5979-4234-bf0c-46f63692ac8c
 ---

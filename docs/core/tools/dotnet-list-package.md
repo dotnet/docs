@@ -87,15 +87,15 @@ The project or solution file to operate on. If not specified, the command search
 
 - **`--highest-minor`**
 
-  Considers only the packages with a matching major version number when searching for newer packages. Requires the '--outdated' or '--deprecated' option.
+  Considers only the packages with a matching major version number when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 - **`--highest-patch`**
 
-  Considers only the packages with a matching major and minor version numbers when searching for newer packages. Requires the '--outdated' or '--deprecated' option.
+  Considers only the packages with a matching major and minor version numbers when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 - **`--include-prerelease`**
 
-  Considers packages with prerelease versions when searching for newer packages. Requires the '--outdated' or '--deprecated' option.
+  Considers packages with prerelease versions when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 - **`--include-transitive`**
 
@@ -111,7 +111,7 @@ The project or solution file to operate on. If not specified, the command search
 
 - **`-s|--source <SOURCE>`**
 
-  The NuGet sources to use when searching for newer packages. Requires the '--outdated' or '--deprecated' option.
+  The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 ## Examples
 

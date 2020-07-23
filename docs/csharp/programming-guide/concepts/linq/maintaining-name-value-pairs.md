@@ -1,5 +1,6 @@
 ---
 title: "Maintaining Name-Value Pairs (C#)"
+description: LINQ to XML contains methods that make it easy to maintain name/value pairs, either as attributes or as a set of child elements.
 ms.date: 07/20/2015
 ms.assetid: 7b04b0f1-af64-42eb-8737-83f8861b5915
 ---

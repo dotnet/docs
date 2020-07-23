@@ -1,5 +1,6 @@
 ---
 title: "Finding the Default Paragraph Style (C#)"
+description: Learn how to process a WordprocessingML document with LINQ in C#. This example finds the default style of paragraphs in the document.
 ms.date: 07/20/2015
 ms.assetid: be102177-8ab0-444a-b671-7023e555ffdb
 ---

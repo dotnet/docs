@@ -1,5 +1,6 @@
 ---
 title: "Functional Transformation of XML (C#)"
+description: Learn how to modify XML documents using the pure functional transformation approach in C# and how that differs from a procedural approach.
 ms.date: 07/20/2015
 ms.assetid: 0ccb9251-38d7-44e3-9b84-1b5fe25e4b59
 ---

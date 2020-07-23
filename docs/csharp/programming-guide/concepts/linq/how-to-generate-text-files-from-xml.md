@@ -1,5 +1,6 @@
 ---
 title: "How to generate text files from XML (C#)"
+description: Learn how to generate a .csv file from an XML file in C#. This example uses method syntax and the Aggregate operator.
 ms.date: 07/20/2015
 ms.assetid: 9ad283f7-7cac-42ff-bf32-92aa866e6883
 ---

@@ -1,5 +1,6 @@
 ---
 title: "How to generate XML from CSV files (C#)"
+description: Learn how to use LINQ and LINQ to XML in C# to generate XML from a .csv file. The query uses a let clause to split strings into arrays of fields.
 ms.date: 07/20/2015
 ms.assetid: 57b9ccde-f983-4a21-ae61-70ecede30307
 ---

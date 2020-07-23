@@ -1,5 +1,6 @@
 ---
 title: "How to find the root element (XPath-LINQ to XML) (C#)"
+description: This C# example compares XPath to LINQ to XML for how to get the root element for a sample XML document.
 ms.date: 07/20/2015
 ms.assetid: 4fd824e0-4d39-429b-b092-f6a5c046ee6c
 ---

@@ -1,5 +1,6 @@
 ---
 title: "How to join two collections (LINQ to XML) (C#)"
+description: This C# example joins the elements in LINQ to XML to other elements and generates a new XML document.
 ms.date: 07/20/2015
 ms.assetid: 7b817ede-911a-4cff-9dd3-639c3fc228c9
 ---

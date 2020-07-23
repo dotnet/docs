@@ -1,5 +1,6 @@
 ---
 title: "Creating the Source Office Open XML Document (C#)"
+description: Create an Office Open XML WordprocessingML document to use with C# tutorials. This article requires Microsoft Office.
 ms.date: 07/20/2015
 ms.assetid: 653c8cdb-73be-4dc2-927f-924cfb4ed9ed
 ---

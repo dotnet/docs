@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Support for the Thumb Control Type"
+description: Get information about UI Automation support for the Thumb control type. Learn the required tree structure, properties, control patterns, and events.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control types, Thumb"

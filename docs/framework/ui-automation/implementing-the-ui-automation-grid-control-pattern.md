@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Grid Control Pattern"
+description: Understand guidelines and conventions for implementing the GridPattern grid control pattern in UI Automation. Learn to implement the IGridProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, grid"

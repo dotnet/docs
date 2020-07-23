@@ -12,5 +12,5 @@ public class SimpleExample
         await taskA.ContinueWith(antecedent => Console.WriteLine($"Today is {antecedent.Result}."));
     }
 }
-// The example displays output like the following output:
+// The example displays the following output:
 //       Today is Monday.

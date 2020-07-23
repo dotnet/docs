@@ -26,5 +26,5 @@ public class WhenAllExample
         Console.WriteLine(sum);
     }
 }
-// The example displays the following output:
+// The example displays the similar output:
 //    1 + 4 + 9 + 16 + 25 + 36 + 49 + 64 + 81 + 100 = 385

@@ -26,23 +26,13 @@ public class ExceptionExample
             await task;
             await continuation;
         }
-        catch (Exception e)
+        catch (Exception ex)
         {
-            if (e is AggregateException ae)
-            {
-                foreach (Exception ie in ae.InnerExceptions)
-                {
-                    Console.WriteLine(ie.Message);
-                }
-            }
-            else
-            {
-                Console.WriteLine(e.Message);
-            }
+            Console.WriteLine(ex.Message);
         }
     }
 }
-// The example displays the following output:
+// The example displays the similar output:
 //       Executing task 1
 //       Executing continuation task 2
 //       Value from antecedent: 54

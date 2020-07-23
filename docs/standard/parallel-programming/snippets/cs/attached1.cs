@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Threading.Tasks;
 
 public class AttachedExample
@@ -15,9 +14,10 @@ public class AttachedExample
                 for (int ctr = 1; ctr <= 5; ctr++)
                 {
                     int index = ctr;
-                    Task.Factory.StartNew((value) => {
+                    Task.Factory.StartNew(async value =>
+                    {
                         Console.WriteLine($"   Attached child task #{value} running");
-                        Thread.Sleep(1000);
+                        await Task.Delay(1000);
                     }, index, TaskCreationOptions.AttachedToParent);
                 }
                 Console.WriteLine("Finished launching attached child tasks...");
@@ -26,7 +26,7 @@ public class AttachedExample
                     Console.WriteLine($"Executing continuation of Task {antecedent.Id}"));
     }
 }
-// The example displays the following output:
+// The example displays the similar output:
 //     Running antecedent task 1...
 //     Launching attached child tasks...
 //     Finished launching attached child tasks...

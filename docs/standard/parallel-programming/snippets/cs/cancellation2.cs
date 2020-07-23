@@ -11,7 +11,7 @@ public class CancellationTwoExample
         cts.Cancel();
 
         var task = Task.FromCanceled(token);
-        var continuation =
+        Task continuation =
             task.ContinueWith(
                 antecedent => Console.WriteLine("The continuation is running."),
                 TaskContinuationOptions.NotOnCanceled);
@@ -20,23 +20,9 @@ public class CancellationTwoExample
         {
             await task;
         }
-        catch (Exception e)
+        catch (Exception ex)
         {
-            static void WriteException(Exception ex) =>
-                Console.WriteLine($"{ex.GetType().Name}: {ex.Message}");
-
-            if (e is AggregateException ae)
-            {
-                foreach (Exception ie in ae.InnerExceptions)
-                {
-                    WriteException(ie);
-                }
-            }
-            else
-            {
-                WriteException(e);
-            }
-
+            Console.WriteLine($"{ex.GetType().Name}: {ex.Message}");
             Console.WriteLine();
         }
 
@@ -44,7 +30,7 @@ public class CancellationTwoExample
         Console.WriteLine($"Task {continuation.Id}: {continuation.Status:G}");
     }
 }
-// The example displays the following output:
+// The example displays the similar output:
 //       TaskCanceledException: A task was canceled.
 //
 //       Task 1: Canceled

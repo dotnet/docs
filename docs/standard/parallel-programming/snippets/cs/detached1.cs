@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Threading.Tasks;
 
 public class DetachedExample
@@ -16,10 +15,10 @@ public class DetachedExample
                     {
                         int index = ctr;
                         Task.Factory.StartNew(
-                            value =>
+                            async value =>
                             {
                                 Console.WriteLine($"   Attached child task #{value} running");
-                                Thread.Sleep(1000);
+                                await Task.Delay(1000);
                             }, index);
                     }
                     Console.WriteLine("Finished launching detached child tasks...");
@@ -35,7 +34,7 @@ public class DetachedExample
         Console.ReadLine();
     }
 }
-// The example displays output like the following:
+// The example displays the similar output:
 //     Running antecedent task 1...
 //     Launching attached child tasks...
 //     Finished launching detached child tasks...

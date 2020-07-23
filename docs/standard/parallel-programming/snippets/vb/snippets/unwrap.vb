@@ -36,13 +36,13 @@ Module UnwrapExample
     End Function
 End Module
 
-' Example output
-'  Started RemoteIncrement(0)
-'  Started RemoteIncrement(...(RemoteIncrement(RemoteIncrement(4))...)
-'  Thread=4, Next=1
-'  Finished RemoteIncrement(0)
-'  Thread=5, Next=5
-'  Thread=6, Next=6
-'  Thread=6, Next=7
-'  Thread=6, Next=8
-'  Finished RemoteIncrement(...(RemoteIncrement(RemoteIncrement(4))...)
+' The example displays the similar output:
+'     Started RemoteIncrement(0)
+'     Started RemoteIncrement(...(RemoteIncrement(RemoteIncrement(4))...)
+'     Thread=4, Next=1
+'     Finished RemoteIncrement(0)
+'     Thread=5, Next=5
+'     Thread=6, Next=6
+'     Thread=6, Next=7
+'     Thread=6, Next=8
+'     Finished RemoteIncrement(...(RemoteIncrement(RemoteIncrement(4))...)

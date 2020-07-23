@@ -27,7 +27,7 @@ class ContinuationStateExample
 
         foreach (Task<DateTime> continuation in continuations)
         {
-            DateTime start = continuation.AsyncState is DateTime date ? date : default;
+            DateTime start = (DateTime)continuation.AsyncState;
             DateTime end = continuation.Result;
 
             Console.WriteLine($"Task was created at {start.TimeOfDay} and finished at {end.TimeOfDay}.");
@@ -36,7 +36,7 @@ class ContinuationStateExample
         Console.ReadLine();
     }
 }
-// Sample output:
+// The example displays the similar output:
 //     Task was created at 10:56:21.1561762 and finished at 10:56:25.1672062.
 //     Task was created at 10:56:21.1610677 and finished at 10:56:27.1707646.
 //     Task was created at 10:56:21.1610677 and finished at 10:56:29.1743230.

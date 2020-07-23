@@ -24,6 +24,6 @@ public class ResultExample
             }, TaskContinuationOptions.OnlyOnRanToCompletion);
    }
 }
-// The example displays output like the following:
+// The example displays the similar output:
 //       Good afternoon!
 //       And how are you this fine afternoon?

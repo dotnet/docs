@@ -1,5 +1,6 @@
 ---
 title: "How to perform streaming transform of large XML documents (C#)"
+description: Learn how to do a streaming transformation of text to XML in C# to avoid excessive memory use for some files.
 ms.date: 07/20/2015
 ms.assetid: 5f16d1f8-5370-4b55-b0c8-e497df163037
 ---

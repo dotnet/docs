@@ -1,5 +1,6 @@
 ---
 title: "How to project a new type (LINQ to XML) (C#)"
+description: Learn how to create queries in LINQ to XML in C# that return IEnumerable<T> of types besides XElement, string, or int, which are described in other examples.
 ms.date: 07/20/2015
 ms.assetid: 48145cf9-1e0b-4e73-bbfd-28fc04800dc4
 ---

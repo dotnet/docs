@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML Security (C#)"
+description: Learn about security issues associated with LINQ to XML, including some guidance for mitigating security exposure.
 ms.date: 07/20/2015
 ms.assetid: ef2c0dc9-ecf9-4c17-b24e-144184ab725f
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Deferred Execution Example (C#)"
+description: See how deferred execution and lazy evaluation affect the execution of your LINQ to XML queries in C#.
 ms.date: 07/20/2015
 ms.assetid: 50f4fbac-81fe-4f26-aedf-506e21419b19
 ---

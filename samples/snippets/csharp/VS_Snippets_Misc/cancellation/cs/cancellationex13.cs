@@ -55,7 +55,6 @@ class WorkerWithTimer
   public WorkerWithTimer()
   {
       internalTokenSource = new CancellationTokenSource();
-      internalToken = internalTokenSource.Token;
 
       // A toy cancellation trigger that times out after 3 seconds
       // if the user does not press 'c'.

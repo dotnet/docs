@@ -1,5 +1,6 @@
 ---
 title: "How to project an anonymous type (C#)"
+description: Learn how to project a query to an anonymous type in C#. Using an anonymous type can be easier than creating a new type to use only briefly.
 ms.date: 07/20/2015
 ms.assetid: 5cb9be13-5ac4-4373-a034-b3520a5b2dec
 ---

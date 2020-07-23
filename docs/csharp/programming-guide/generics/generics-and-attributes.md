@@ -1,5 +1,6 @@
 ---
 title: "Generics and Attributes - C# Programming Guide"
+description: Learn about applying attributes to generic types. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], attributes"

@@ -1,5 +1,6 @@
 ---
 title: "Generics - C# Programming Guide"
+description: Learn about generics. Generic types maximize code reuse, type safety, and performance, and are commonly used to create collection classes.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, generics"

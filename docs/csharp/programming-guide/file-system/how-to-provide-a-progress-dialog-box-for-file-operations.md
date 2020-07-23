@@ -1,5 +1,6 @@
 ---
 title: "How to provide a progress dialog box for file operations - C# Programming Guide"
+description: Learn how to provide a progress dialog box for file operations using the CopyFile(String, String, UIOption) method.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "progress dialog [C#]"

@@ -1,5 +1,6 @@
 ---
 title: "Generics and Reflection - C# Programming Guide"
+description: Learn about using reflection to obtain information about generic types and view lists of terms and conditions for generic reflection.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], reflection"

@@ -1,5 +1,6 @@
 ---
 title: "Popup Overview"
+description: Learn about the Windows Presentation Foundation Popup control, which provides a way to display content in a window that floats over the current application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [WPF], Popup"

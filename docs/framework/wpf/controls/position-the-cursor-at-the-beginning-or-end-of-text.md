@@ -1,5 +1,6 @@
 ---
 title: "How to: Position the Cursor at the Beginning or End of Text in a TextBox Control"
+description: Learn how to position the cursor at the beginning or end of the text contents of a Windows Presentation Foundation TextBox control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

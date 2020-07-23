@@ -1,5 +1,6 @@
 ---
 title: "TreeView Overview"
+description: Learn how the Windows Presentation Foundation TreeView control displays information in a hierarchical structure by using nodes, including simple examples.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "expanding node [WPF]"

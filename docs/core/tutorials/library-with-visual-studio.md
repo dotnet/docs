@@ -105,7 +105,7 @@ Initially, the new console app project doesn't have access to the class library.
 
    ![Visual Studio project context menu to set startup project](media/library-with-visual-studio/set-startup-project-context-menu.png)
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to compile and run the program without debugging.
 
    ![Visual Studio project toolbar showing Debug button](media/library-with-visual-studio/visual-studio-project-toolbar.png)
 

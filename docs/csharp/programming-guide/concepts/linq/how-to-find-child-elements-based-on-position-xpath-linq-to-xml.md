@@ -1,6 +1,6 @@
 ---
 title: "How to find child elements based on position (XPath-LINQ to XML) (C#)"
-description: Learn how to find child elements based on position using an XPath expression. Review a code example that uses a sample XML file.
+description: Learn how to find child elements based on position by using an XPath expression. Review a code example that uses a sample XML file.
 ms.date: 07/20/2015
 ms.assetid: e35bb269-ec86-4c96-8321-12491a0eb2c3
 ---

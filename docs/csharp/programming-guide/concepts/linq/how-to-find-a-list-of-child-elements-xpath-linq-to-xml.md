@@ -1,6 +1,6 @@
 ---
 title: "How to find a list of child elements (XPath-LINQ to XML) (C#)"
-description: Learn how to find a list of child elements using an XPath expression. Review a code example that finds all the child elements of a specific element.
+description: Learn how to find a list of child elements by using an XPath expression. Review a code example that finds all the child elements of a specific element.
 ms.date: 07/20/2015
 ms.assetid: 7c589dd8-f680-4cdb-9d6a-78d57e2555e8
 ---

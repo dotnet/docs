@@ -1,6 +1,6 @@
 ---
 title: "How to find a single descendant using the descendants method (C#)"
-description: Learn how to find a single descendant using the Descendants axis method. This method is useful in finding a particular descendant with a specific name.
+description: Learn how to find a single descendant by using the Descendants axis method. This method is useful in finding a particular descendant with a specific name.
 ms.date: 07/20/2015
 ms.assetid: 6f735be9-0293-4680-8007-ca9d96bfebed
 ---

@@ -1,6 +1,6 @@
 ---
 title: "How to find descendants with a specific element name (C#)"
-description: Learn how to find all descendants with a particular name using the Descendants axis. See code examples and additional resources.
+description: Learn how to find all descendants with a particular name by using the Descendants axis. See code examples and additional resources.
 ms.date: 07/20/2015
 ms.assetid: f684da20-bee9-47f5-9607-7e3fd7e67470
 ---

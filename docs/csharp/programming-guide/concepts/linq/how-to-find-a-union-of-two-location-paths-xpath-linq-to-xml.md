@@ -1,6 +1,6 @@
 ---
 title: "How to find a union of two location paths (XPath-LINQ to XML) (C#)"
-description: Learn how to find a union of two XPath location paths using an XPath expression. Review a code example that uses a sample XML file.
+description: Learn how to find a union of two XPath location paths by using an XPath expression. Review a code example that uses a sample XML file.
 ms.date: 07/20/2015
 ms.assetid: 069622d3-2b58-4919-8903-710a564c0788
 ---

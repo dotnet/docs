@@ -1,5 +1,6 @@
 ---
 title: "How to perform streaming transformations of text to XML (C#)"
+description: Learn how to do a streaming transformation of text to XML in C#, where you stream the text file a line at a time and use a LINQ query to process the text file.
 ms.date: 07/20/2015
 ms.assetid: 9b3bd941-d0ff-4f2d-ae41-7c3b81d8fae6
 ---

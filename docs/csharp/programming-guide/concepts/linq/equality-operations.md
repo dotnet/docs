@@ -1,5 +1,6 @@
 ---
 title: "Equality Operations (C#)"
+description: Learn about the equality operators in LINQ in C#, where two sequences whose elements are equal and which have the same number of elements are equal.
 ms.date: 07/20/2015
 ms.assetid: 9d9a5bf2-f211-4865-bd19-c59ffa004615
 ---

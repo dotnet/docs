@@ -1,5 +1,6 @@
 ---
 title: "How to find preceding siblings (XPath-LINQ to XML) (C#)"
+description: This C# example compares the XPath preceding-sibling axis to the LINQ to XML child XNode.ElementsBeforeSelf axis.
 ms.date: 07/20/2015
 ms.assetid: b281ff99-d08a-43d0-bea1-eff831b2f8ae
 ---

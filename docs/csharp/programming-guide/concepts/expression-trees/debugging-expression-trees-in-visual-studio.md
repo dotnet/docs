@@ -1,5 +1,6 @@
 ---
 title: "Debugging Expression Trees in Visual Studio (C#)"
+description: Learn about the DebugView property in Visual Studio. See how to use this property to analyze the structure and content of expression trees.
 ms.date: 07/20/2015
 ms.assetid: 1369fa25-0fbd-4b92-98d0-8df79c49c27a
 ---

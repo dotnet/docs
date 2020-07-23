@@ -1,5 +1,6 @@
 ---
 title: "Functional Construction (LINQ to XML) (C#)"
+description: Learn how the LINQ to XML programming interface enables functional construction, the ability to create an XML tree in a single statement in C#.
 ms.date: 07/20/2015
 ms.assetid: 57a82bcf-de03-4f1c-a0c8-9a76e989d542
 ---

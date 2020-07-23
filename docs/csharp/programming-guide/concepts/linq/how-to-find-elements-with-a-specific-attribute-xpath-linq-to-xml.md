@@ -1,5 +1,6 @@
 ---
 title: "How to find elements with a specific attribute (XPath-LINQ to XML) (C#)"
+description: This C# example compares XPath to LINQ to XML for how they find elements that have a specific attribute.
 ms.date: 07/20/2015
 ms.assetid: daed00dd-923a-43be-8a90-eee406f6f574
 ---

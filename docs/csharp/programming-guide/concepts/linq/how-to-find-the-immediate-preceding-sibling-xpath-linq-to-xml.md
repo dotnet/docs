@@ -1,5 +1,6 @@
 ---
 title: "How to find the immediate preceding sibling (XPath-LINQ to XML) (C#)"
+description: This C# example compares XPath to LINQ to XML for how to find the sibling that immediately precedes a node.
 ms.date: 07/20/2015
 ms.assetid: 74c06201-0b1b-4b5e-b3ac-0092980614e6
 ---

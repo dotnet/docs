@@ -1,5 +1,6 @@
 ---
 title: "How to find sibling nodes (XPath-LINQ to XML) (C#)"
+description: This C# example compares XPath to LINQ to XML for how to find all siblings of a node that have a specific name.
 ms.date: 07/20/2015
 ms.assetid: e2c73d10-a8ca-4e11-b5aa-d055de285874
 ---

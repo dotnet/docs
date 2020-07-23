@@ -1,5 +1,6 @@
 ---
 title: "How to control the type of a projection (C#)"
+description: Learn about how to control the type of a projection in LINQ in C# to create collections of types other than IEnumerable<T> of XElement.
 ms.date: 07/20/2015
 ms.assetid: e4db6b7e-4cc9-4c8f-af85-94acf32aa348
 ---

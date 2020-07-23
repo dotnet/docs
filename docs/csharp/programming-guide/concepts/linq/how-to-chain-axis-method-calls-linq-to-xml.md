@@ -1,5 +1,6 @@
 ---
 title: "How to chain axis method calls (LINQ to XML) (C#)"
+description: These LINQ to XML examples in C# demonstrate calls to two axes to find all elements of a specified name at a given depth in the tree.
 ms.date: 07/20/2015
 ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
 ---

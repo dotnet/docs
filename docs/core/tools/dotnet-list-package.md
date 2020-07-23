@@ -15,6 +15,7 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
+    [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>]
@@ -71,6 +72,10 @@ The project or solution file to operate on. If not specified, the command search
 - **`--config <SOURCE>`**
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.
+
+- **`--deprecated`**
+
+  Displays packages that have been deprecated.
 
 - **`--framework <FRAMEWORK>`**
 

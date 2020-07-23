@@ -1,5 +1,6 @@
 ---
 title: "LINQ and strings (C#)"
+description: LINQ can query and transform strings and collections of strings. You can combine LINQ queries with C# string functions and regular expressions.
 ms.date: 07/20/2015
 ms.assetid: dbe2d657-b3f3-487e-b645-21fb2d71cd7b
 ---

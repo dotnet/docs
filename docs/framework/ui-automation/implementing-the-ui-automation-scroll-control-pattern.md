@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Scroll Control Pattern"
+description: Review guidelines and conventions for implementing the Scroll control pattern in UI Automation. See required members for the IScrollProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, Scroll control pattern"

@@ -1,5 +1,6 @@
 ---
 title: "Find a UI Automation Element Based on a Property Condition"
+description: Find a UI Automation element based on a property condition. Locate an element within the UI Automation tree based on a specific property or properties.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

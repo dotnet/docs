@@ -1,5 +1,6 @@
 ---
 title: "Cert2spc.exe (Software Publisher Certificate Test Tool)"
+description: Use Cert2spc.exe, the Software Publisher Certificate Test tool. This tool creates a Software Publisher's Certificate (SPC) from one or more X.509 certificates.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "SPC"

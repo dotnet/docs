@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Toggle Control Pattern"
+description: Review guidelines and conventions to implement the Toggle control pattern in UI Automation. Know required members for the IToggleProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Toggle control pattern"

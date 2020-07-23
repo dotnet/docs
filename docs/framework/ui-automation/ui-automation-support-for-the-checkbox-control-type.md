@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Support for the CheckBox Control Type"
+description: Get information about UI Automation support for the CheckBox control type. Learn the required tree structure, properties, and control patterns.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CheckBox control type"

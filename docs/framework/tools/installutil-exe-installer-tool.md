@@ -1,5 +1,6 @@
 ---
 title: "Installutil.exe (Installer Tool)"
+description: Use Installutil.exe, the Installer Tool. This tool lets you install or uninstall server resources by executing the installer components in specified assemblies.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "uninstalling server resources"

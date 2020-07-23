@@ -1,5 +1,6 @@
 ---
 title: "Obtaining UI Automation Elements"
+description: Review various ways to obtain UI Automation element (AutomationElement) objects for user interface (UI) elements.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, obtaining elements"

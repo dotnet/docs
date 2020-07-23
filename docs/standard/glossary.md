@@ -134,8 +134,6 @@ The words library and [framework](#framework) are often used synonymously.
 
 A NuGet package that has no library of its own but is only a list of dependencies. The included packages can optionally establish the API for a target framework.
 
-See [Packages, Metapackages, and Frameworks](../core/packages.md)
-
 ## Mono
 
 Mono is an open source, [cross-platform](#cross-platform) .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS, and watchOS and is focused primarily on apps that require a small footprint.

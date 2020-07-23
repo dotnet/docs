@@ -1,5 +1,6 @@
 ---
 title: "Creating Satellite Assemblies for Desktop Apps"
+description: Get started with creating satellite assemblies for desktop apps. A satellite assembly can be easily updated or replaced to provide localized resources.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

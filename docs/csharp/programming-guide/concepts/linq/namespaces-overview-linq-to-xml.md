@@ -1,6 +1,6 @@
 ---
 title: "Namespaces Overview (LINQ to XML)"
-description: Learn about namespaces, the XName class, and the XNamespace class. This information helps break down the complexity in XML programming.
+description: Introduce yourself to namespaces, the XName class, the XNamespace class, and other aspects of XML names.
 ms.date: 07/20/2015
 ms.assetid: 16283322-8238-4918-ab11-802ac6748eb7
 ---

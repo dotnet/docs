@@ -346,3 +346,8 @@ For more information on how to collect counter values over time, see the corresp
 TraceEvent is a managed library that makes it easy to consume ETW and EventPipe events. For more information, see the [TraceEvent Library Programmers Guide](https://github.com/Microsoft/perfview/blob/master/documentation/TraceEvent/TraceEventProgrammersGuide.md).
 
 For additional code samples, see [Criteo Labs blog](https://medium.com/criteo-labs/net-core-counters-internals-how-to-integrate-counters-in-your-monitoring-pipeline-5354cd61b42e).
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Tutorial: Measure performance using EventCounters](event-counter-perf.md)

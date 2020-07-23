@@ -93,3 +93,8 @@ In the next release of PerfView (> 2.0.26), we can visualize the counters using 
 Then it will show you a line graph showing the mean of the data like this. If you have multiple event counters, it can show multiple plots. You can also filter out a particular subset of counters using the filter text option:
 
 :::image type="content" source="media/perfview-plot.png" lightbox="media/perfview-plot.png" alt-text="EventCounter graph":::
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Tutorial: Debug a memory leak](debug-memory-leak.md)

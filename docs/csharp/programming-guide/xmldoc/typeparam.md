@@ -1,5 +1,6 @@
 ---
 title: "<typeparam> - C# programming guide"
+description: Learn about the XML <typeparam> tag. This tag is used in the comment for a generic type or method declaration to describe a type parameter.
 ms.date: 07/20/2015
 f1_keywords:
   - "typeparam"

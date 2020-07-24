@@ -1,5 +1,6 @@
 ---
 title: "<seealso> - C# programming guide"
+description: Learn how to use the XML <seealso> tag. This tag lets you specify the text that you might want to appear in a See Also section.
 ms.date: 07/20/2015
 f1_keywords:
   - "cref"

@@ -1,5 +1,6 @@
 ---
 title: "<include> - C# programming guide"
+description: Learn about the XML <include> tag. This tag lets you refer to comments in another file that describe the types and members in your source code.
 ms.date: 07/20/2015
 f1_keywords:
   - "include"

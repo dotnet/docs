@@ -69,7 +69,6 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
 
-
 - **`--blame-crash`**
 
   Runs the tests in blame mode and enables collecting crash dump when testhost exits unexpectedly. This option is currently only supported on Windows, and requires procdump.exe and procdump64.exe to be available in PATH. Or PROCDUMP_PATH environment variable to be set, and point to a directory that contains procdump.exe and procdump64.exe. The tools can be downloaded [here](https://docs.microsoft.com/sysinternals/downloads/procdump). Implies `--blame`.

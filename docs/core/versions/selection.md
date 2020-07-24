@@ -84,6 +84,7 @@ A few usage examples demonstrate the behavior, if you target 3.0:
 - ✔️ 3.0 is specified. 3.0.3 is the highest patch version installed. 3.0.3 is used.
 - ❌ 3.0 is specified. No 3.0.* versions are installed. 2.1.1 is the highest runtime installed. An error message is displayed.
 - ✔️ 3.0 is specified. No 3.0.* versions are installed. 3.1.0 is the highest runtime version installed. 3.1.0 is used.
+- ✔️ 3.1.3 is specified. 3.1.3 and 3.1.6 versions are installed. 3.1.6 is the highest runtime version installed. 3.1.6 is used.
 - ❌ 2.0 is specified. No 2.x versions are installed. 3.0.0 is the highest runtime installed. An error message is displayed.
 
 Minor version roll-forward has one side-effect that may affect end users. Consider the following scenario:

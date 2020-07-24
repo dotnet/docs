@@ -54,7 +54,7 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
 ## Distributed cache synchronization using SQL Dependency
 Some of the third-party distributed caches like [NCache](https://www.alachisoft.com/ncache/) also provides support to keep SQL database and cache synchronized using [SQL Depenpendcy](https://www.alachisoft.com/resources/docs/ncache/prog-guide/sql-dependency.html). Following is the sample implementation.
 
-- [Distributed Cache SQL Dependency Sample](https://github.com/Alachisoft/NCache-Samples/tree/master/dotnet/Dependencies/SQLDependency)
+- [Distributed Cache SQL Dependency Sample](https://github.com/Alachisoft/NCache-Samples/tree/master/dotnet/Dependencies/SQLDependency)  
 
 ## See also
 

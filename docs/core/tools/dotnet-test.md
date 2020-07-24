@@ -15,14 +15,17 @@ ms.date: 04/29/2020
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION> | <DIRECTORY> | <DLL>]
-    [-a|--test-adapter-path <PATH_TO_ADAPTER>] [--blame]
+    [-a|--test-adapter-path <ADAPTER_PATH>] [--blame] [--blame-crash]
+    [--blame-crash-dump-type <DUMP_TYPE>] [--blame-crash-collect-always]
+    [--blame-hang] [--blame-hang-dump-type <DUMP_TYPE>]
+    [--blame-hang-timeout <TIMESPAN>]
     [-c|--configuration <CONFIGURATION>]
-    [--collect <DATA_COLLECTOR_FRIENDLY_NAME>]
-    [-d|--diag <PATH_TO_DIAGNOSTICS_FILE>] [-f|--framework <FRAMEWORK>]
+    [--collect <DATA_COLLECTOR_NAME>]
+    [-d|--diag <LOG_FILE>] [-f|--framework <FRAMEWORK>]
     [--filter <EXPRESSION>] [--interactive]
-    [-l|--logger <LOGGER_URI/FRIENDLY_NAME>] [--no-build]
+    [-l|--logger <LOGGER>] [--no-build]
     [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>]
-    [-r|--results-directory <PATH>] [--runtime <RUNTIME_IDENTIFIER>]
+    [-r|--results-directory <RESULTS_DIR>] [--runtime <RUNTIME_IDENTIFIER>]
     [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
     [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
 
@@ -58,13 +61,38 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 ## Options
 
-- **`-a|--test-adapter-path <PATH_TO_ADAPTER>`**
+- **`-a|--test-adapter-path <ADAPTER_PATH>`**
 
   Path to a directory to be searched for additional test adapters. Only *.dll* files with suffix `.TestAdapter.dll` are inspected. If not specified, the directory of the test *.dll* is searched.
 
 - **`--blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. When a crash is detected, it creates a sequence file in `TestResults/<Guid>/<Guid>_Sequence.xml` that captures the order of tests that were run before the crash.
+
+
+- **`--blame-crash`**
+
+  Runs the tests in blame mode and enables collecting crash dump when testhost exits unexpectedly. This option is currently only supported on Windows, and requires procdump.exe and procdump64.exe to be available in PATH. Or PROCDUMP_PATH environment variable to be set, and point to a directory that contains procdump.exe and procdump64.exe. The tools can be downloaded [here](https://docs.microsoft.com/sysinternals/downloads/procdump). Implies `--blame`.
+
+- **`--blame-crash-dump-type <DUMP_TYPE>`**
+
+  The type of crash dump to be collected. Implies `--blame-crash`.
+
+- **`--blame-crash-collect-always`**
+
+  Enables collecting crash dump on expected as well as unexpected testhost exit.
+
+- **`--blame-hang`**
+
+  Run the tests in blame mode and enables collecting hang dump when test exceeds the given timeout. Implies `--blame-hang`.
+
+- **`--blame-hang-dump-type <DUMP_TYPE>`**
+
+  The type of crash dump to be collected. When None, is used then test host is terminated on timeout, but no dump is collected. Implies `--blame-hang`.
+
+- **`--blame-hang-timeout <TIMESPAN>`**
+
+  Per-test timeout, after which hang dump is triggered and the testhost process is terminated. The timeout value is specified in the following format: 1.5h / 90m / 5400s / 5400000ms. When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all testcases. This option is currently supported only on Windows together with netcoreapp2.1 and newer. And on Linux with netcoreapp3.1 and newer. OSX and UWP are not supported.
 
 - **`-c|--configuration <CONFIGURATION>`**
 
@@ -135,7 +163,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
 
 - **`-t|--list-tests`**
 
-  List all of the discovered tests in the current project.
+  List the discovered tests instead of running the tests.
 
 - **`-v|--verbosity <LEVEL>`**
 

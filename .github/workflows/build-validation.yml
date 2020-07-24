@@ -17,7 +17,7 @@ on:
       - "**.vbhtml"
       - "**.*proj"
       - "**global.json"
-    branches: [ master ]
+    branches: [ snippets-testing ]
 
 env:
   DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx-preview7'

@@ -115,7 +115,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
   Specifies the target runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
-- **`-s|--source <SOURCE>`**
+- **`--source <SOURCE>`**
 
   The URI of the NuGet package source to use during the restore operation.
 

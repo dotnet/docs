@@ -1,5 +1,6 @@
 ---
 title: "Menu Styles and Templates"
+description: Learn about styles and templates for the Windows Presentation Foundation the Menu control. Modify the ControlTemplate to give the control a unique appearance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "styles [WPF], Menu"

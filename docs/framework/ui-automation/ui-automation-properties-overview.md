@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Properties Overview"
+description: See a broad overview of Microsoft UI Automation properties. Learn about property identifiers, properties by category, localization, and properties and events.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, properties"

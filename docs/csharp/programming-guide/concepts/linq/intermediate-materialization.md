@@ -1,5 +1,6 @@
 ---
 title: "Intermediate Materialization (C#)"
+description: This C# example shows intermediate materialization, where a query causes AppendString to enumerate its entire source before yielding the first item.
 ms.date: 07/20/2015
 ms.assetid: 7922d38f-5044-41cf-8e17-7173d6553a5e
 ---

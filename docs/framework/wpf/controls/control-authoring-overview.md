@@ -1,5 +1,6 @@
 ---
 title: "Control Authoring Overview"
+description: The extensibility of Windows Presentation Foundation controls minimizes the need to create custom controls. Learn how to create a new control, if necessary.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Expose a Server-side UI Automation Provider"
+description: View an example that shows how to expose a server-side UI Automation provider that's hosted in a System.Windows.Forms.Control window.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

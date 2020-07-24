@@ -20,7 +20,7 @@ on:
     branches: [ master ]
 
 env:
-  DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx-preview6'
+  DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx-preview7'
   DOTNET_DO_INSTALL: 'true'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel

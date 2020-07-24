@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Providers Overview"
+description: See an overview of UI Automation providers, which let controls communicate with UI Automation client applications. Review provider types and provider concepts.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, providers"

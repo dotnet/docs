@@ -1,5 +1,6 @@
 ---
 title: "Support Control Patterns in a UI Automation Provider"
+description: Understand how to implement support control patterns on a UI Automation provider so that client applications can manipulate controls and get data from them.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

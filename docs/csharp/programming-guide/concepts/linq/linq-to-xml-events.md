@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML Events (C#)"
+description: Add LINQ to XML events in C# to an instance of any XObject. The event handler receives events when the XML tree for that XObject is modified.
 ms.date: 07/20/2015
 ms.assetid: ce7de951-cba7-4870-9962-733eb01cd680
 ---

@@ -1,5 +1,6 @@
 ---
 title: "LINQ to Objects (C#)"
+description: Learn about LINQ to Objects in C#, which uses LINQ queries with any IEnumerable or IEnumerable<T> collection without an intermediate LINQ provider or API.
 ms.date: 07/20/2015
 ms.assetid: c5c2c178-3529-4f6c-b3df-2d5267af7f22
 ---

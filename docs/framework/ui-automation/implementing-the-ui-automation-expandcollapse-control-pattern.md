@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation ExpandCollapse Control Pattern"
+description: Learn implementation guidelines and conventions for the ExpandCollapse control pattern in UI Automation. Know how to implement IExpandCollapseProvider.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "UI Automation, ExpandCollapse control pattern"

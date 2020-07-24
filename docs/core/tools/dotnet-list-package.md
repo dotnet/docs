@@ -15,6 +15,7 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet list [<PROJECT>|<SOLUTION>] package [--config <SOURCE>]
+    [--deprecated]
     [--framework <FRAMEWORK>] [--highest-minor] [--highest-patch]
     [--include-prerelease] [--include-transitive] [--interactive]
     [--outdated] [--source <SOURCE>]
@@ -72,6 +73,10 @@ The project or solution file to operate on. If not specified, the command search
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.
 
+- **`--deprecated`**
+
+  Displays packages that have been deprecated.
+
 - **`--framework <FRAMEWORK>`**
 
   Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.
@@ -82,15 +87,15 @@ The project or solution file to operate on. If not specified, the command search
 
 - **`--highest-minor`**
 
-  Considers only the packages with a matching major version number when searching for newer packages. Requires the `--outdated` option.
+  Considers only the packages with a matching major version number when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 - **`--highest-patch`**
 
-  Considers only the packages with a matching major and minor version numbers when searching for newer packages. Requires the `--outdated` option.
+  Considers only the packages with a matching major and minor version numbers when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 - **`--include-prerelease`**
 
-  Considers packages with prerelease versions when searching for newer packages. Requires the `--outdated` option.
+  Considers packages with prerelease versions when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 - **`--include-transitive`**
 
@@ -106,7 +111,7 @@ The project or solution file to operate on. If not specified, the command search
 
 - **`-s|--source <SOURCE>`**
 
-  The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.
+  The NuGet sources to use when searching for newer packages. Requires the `--outdated` or `--deprecated` option.
 
 ## Examples
 

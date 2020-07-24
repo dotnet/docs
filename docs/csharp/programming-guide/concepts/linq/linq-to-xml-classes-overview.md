@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML Classes Overview (C#)"
+description: This article summarizes the LINQ to XML classes in C# in the System.Xml.Linq namespace, with a short description of each.
 ms.date: 07/20/2015
 ms.assetid: bf666100-5392-4968-97f4-f6b9d3287d7b
 ---

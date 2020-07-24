@@ -1,5 +1,6 @@
 ---
 title: "CorFlags.exe (CorFlags Conversion Tool)"
+description: Understand CorFlags.exe, the CorFlags Conversion tool. This tool lets you configure the CorFlags section of the header of a portable executable image.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CorFlags conversion tool"

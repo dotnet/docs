@@ -1,5 +1,6 @@
 ---
 title: "Navigate Among UI Automation Elements with TreeWalker"
+description: See a code example that shows how to navigate among UI Automation elements by using the TreeWalker class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

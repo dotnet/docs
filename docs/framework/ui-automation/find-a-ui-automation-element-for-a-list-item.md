@@ -1,5 +1,6 @@
 ---
 title: "Find a UI Automation Element for a List Item"
+description: See an example that shows how to find a UI Automation element for a list item when the index of the item is known.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Multiline TextBox Control"
+description: Learn how to use XAML to define a TextBox control that expands to accommodate multiple lines of text in a Windows Presentation Foundation application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "TextBox control [WPF], multiple lines of text"

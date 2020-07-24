@@ -1,5 +1,6 @@
 ---
 title: "Caching in UI Automation Clients"
+description: Get details about caching in UI Automation clients in .NET. Caching is defined as the pre-fetching of data.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation caching in clients"

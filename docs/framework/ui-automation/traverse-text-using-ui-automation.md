@@ -1,5 +1,6 @@
 ---
 title: "Traverse Text Using UI Automation"
+description: See an example of how to traverse the text content of a document using Microsoft UI Automation, in TextUnit increments.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

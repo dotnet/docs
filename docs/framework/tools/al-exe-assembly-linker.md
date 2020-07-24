@@ -1,5 +1,6 @@
 ---
 title: "Al.exe (Assembly Linker)"
+description: Use AI.exe, the Assembly Linker tool. This tool generates a file that has an assembly manifest from one or more files that are either modules or resource files.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Al.exe"

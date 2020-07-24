@@ -1,5 +1,6 @@
 ---
 title: "Invoke a Control Using UI Automation"
+description: Use UI Automation to find a control matching certain property conditions, create an AutomationElement, get an InvokePattern, and use Invoke on the control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Ildasm.exe (IL Disassembler)"
+description: Use Ildasm.exe (IL Disassembler), which takes a portable executable (PE) file containing intermediate language (IL) code, and makes a text file for Ilasm.exe.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "PE files, MSIL Disassembler"

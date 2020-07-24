@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Support for the Header Control Type"
+description: Get information about UI Automation support for the Header control type. Learn the required tree structure, properties, control patterns, and events.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, Header control type"

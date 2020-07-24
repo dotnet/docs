@@ -1,5 +1,6 @@
 ---
 title: "TextPattern and Embedded Objects Overview"
+description: Read an overview of how UI Automation exposes embedded objects, or child elements, within a text document or container using TextPattern and TextPatternRange.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, TextPattern class"

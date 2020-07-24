@@ -70,11 +70,11 @@ A given component, like `System.Runtime`, describes:
 Derivative artifacts are provided to enable more convenient reading and to enable certain developer scenarios (for example, using a compiler).
 
 - [API list in markdown](https://github.com/dotnet/standard/tree/master/docs/versions)
-- Reference assemblies, distributed as [NuGet packages](../core/packages.md) and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
+- Reference assemblies, distributed as NuGet packages and referenced by the [NETStandard.Library](https://www.nuget.org/packages/NETStandard.Library/) metapackage.
 
 ### Package representation
 
-The primary distribution vehicle for the .NET Standard reference assemblies is [NuGet packages](../core/packages.md). Implementations are delivered in a variety of ways, appropriate for each .NET implementation.
+The primary distribution vehicle for the .NET Standard reference assemblies is NuGet packages. Implementations are delivered in a variety of ways, appropriate for each .NET implementation.
 
 NuGet packages target one or more [frameworks](frameworks.md). The .NET Standard packages target the ".NET Standard" framework. You can target the .NET Standard framework using the `netstandard` [compact TFM](frameworks.md) (for example, `netstandard1.4`). Libraries that are intended to run on multiple runtimes should target this framework. For the broadest set of APIs, target `netstandard2.0` since the number of available APIs more than doubled between .NET Standard 1.6 and 2.0.
 
@@ -96,7 +96,7 @@ APIs added to any of the implementations (such as, .NET Framework, .NET Core and
 
 ## Target .NET Standard
 
-You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting .NET Standard with .NET Core tools](../core/packages.md).
+You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage.
 
 ## .NET Framework compatibility mode
 

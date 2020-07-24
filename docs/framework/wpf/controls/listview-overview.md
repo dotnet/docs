@@ -1,5 +1,6 @@
 ---
 title: "ListView Overview"
+description: Learn about the Windows Presentation Foundation ListView control, which provides the infrastructure to display data items in different layouts or views.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

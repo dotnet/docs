@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation ScrollItem Control Pattern"
+description: Review guidelines and conventions for implementing the ScrollItem control pattern in UI Automation. See required members for the IScrollItemProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, Scroll Item"

@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML vs. Other XML Technologies3"
+description: This article compares LINQ to XML to several XML technologies, including XmlReader, XSLT, MSXML, and XmlLite, to help you decide which technology to use.
 ms.date: 07/20/2015
 ms.assetid: 01b8e746-12d3-471d-b811-7539e4547784
 ---

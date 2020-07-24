@@ -1,5 +1,6 @@
 ---
 title: "Weak Event Patterns"
+description: Learn about the Windows Presentation Foundation weak event pattern, which addresses the issue of handlers that are not destroyed, avoiding memory leaks.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "weak event pattern implementation [WPF]"

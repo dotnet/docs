@@ -1,5 +1,6 @@
 ---
 title: "Using Namespaces - C# Programming Guide"
+description: Learn how to use namespaces in C# programming, such as accessing namespaces, namespace aliases, and using namespaces to control scope.
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.names"

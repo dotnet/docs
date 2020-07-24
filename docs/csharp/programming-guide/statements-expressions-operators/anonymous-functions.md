@@ -1,5 +1,6 @@
 ---
 title: "Anonymous functions - C# Programming Guide"
+description: Learn about anonymous functions. You can use a lambda expression or anonymous method to create an anonymous function.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [C#], as anonymous functions"

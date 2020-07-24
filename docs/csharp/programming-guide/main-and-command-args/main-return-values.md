@@ -1,5 +1,6 @@
 ---
 title: "Main() Return Values - C# Programming Guide"
+description: Learn about Main() return values. See code examples, compiler-generated code, and view additional available resources.
 ms.date: 08/02/2017
 helpviewer_keywords: 
   - "Main method [C#], return values"

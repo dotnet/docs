@@ -50,7 +50,12 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
  The application caches the data displayed on the Web form and refreshes it every three minutes if there is no activity. If a change occurs to the database, the cache is refreshed immediately. Run the application from Visual Studio, which loads the page into the browser. The cache refresh time displayed indicates when the cache was last refreshed. Wait three minutes, and then refresh the page, causing a postback event to occur. Note that the time displayed on the page has changed. If you refresh the page in less than three minutes, the time displayed on the page will remain the same.  
   
  Now update the data in the database, using a Transact-SQL UPDATE command and refresh the page. The time displayed now indicates that the cache was refreshed with the new data from the database. Note that although the cache is updated, the time displayed on the page does not change until a postback event occurs.  
-  
+
+## Distributed cache synchronization using SQL Dependency
+Some of the third-party distributed caches like [NCache](https://www.alachisoft.com/ncache/) also provides support to keep SQL database and cache synchronized using [SQL Depenpendcy](https://www.alachisoft.com/resources/docs/ncache/prog-guide/sql-dependency.html). Following is the sample implementation.
+
+- [Distributed Cache SQL Dependency Sample](https://github.com/Alachisoft/NCache-Samples/tree/master/dotnet/Dependencies/SQLDependency) 
+
 ## See also
 
 - [Query Notifications in SQL Server](query-notifications-in-sql-server.md)

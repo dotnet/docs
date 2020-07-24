@@ -1,5 +1,6 @@
 ---
 title: "Delimiters for documentation tags - C# programming guide"
+description: Learn about delimiters for documentation tags. Delimiters indicate to the compiler where a documentation comment begins and ends.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "XML [C#], delimiters"

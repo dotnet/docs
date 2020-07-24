@@ -1,5 +1,6 @@
 ---
 title: "How to convert a string to a number - C# Programming Guide"
+description: Learn how to convert a string to a number in C# by calling the Parse, TryParse, or Convert class methods.
 ms.date: 02/11/2019
 helpviewer_keywords: 
   - "conversions [C#]"

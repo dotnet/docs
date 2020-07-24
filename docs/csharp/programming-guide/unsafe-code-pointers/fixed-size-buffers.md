@@ -1,5 +1,6 @@
 ---
 title: "Fixed Size Buffers - C# Programming Guide"
+description: Learn about fixed size buffers. Fixed size buffers are used to write methods that interop with data sources from other languages.
 ms.date: 04/23/2020
 helpviewer_keywords:
   - "fixed size buffers [C#]"

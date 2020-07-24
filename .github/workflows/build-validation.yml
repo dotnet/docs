@@ -18,7 +18,7 @@ on:
       - "**.*proj"
       - "**global.json"
       - "**snippets.5000.json"
-    branches: [ snippets-testing ]
+    branches: [ master ]
 
 env:
   DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx-preview7'

@@ -19,7 +19,7 @@ This change was introduced for two reasons:
 
 #### Recommended action
 
-No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../../docs/core/run-time-config/globalization.md#nls) to revert to that behavior. The [.NET Globalization and ICU](https://docs.microsoft.com/en-us/dotnet/standard/globalization-localization/globalization-icu) document contains more information about the available switches.
+No action is required on the part of the developer. However, if you wish to continue using NLS globalization APIs, you can set a [run-time switch](../../../../docs/core/run-time-config/globalization.md#nls) to revert to that behavior. The [.NET Globalization and ICU](https://docs.microsoft.com/dotnet/standard/globalization-localization/globalization-icu) document contains more information about the available switches.
 
 #### Category
 

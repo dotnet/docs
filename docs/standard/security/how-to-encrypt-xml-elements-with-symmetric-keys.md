@@ -7,7 +7,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "AES algorithm"
-  - "cryptography [.NE], symmetric keys"
+  - "cryptography [.NET], symmetric keys"
   - "encryption [.NET], symmetric keys"
   - "symmetric keys"
   - "System.Security.Cryptography.EncryptedXml class"

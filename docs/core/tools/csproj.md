@@ -180,7 +180,7 @@ A `<DotNetCliToolReference>` item element specifies the CLI tool that the user w
 <DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
-Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](https://aka.ms/local-tools).
+Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](../global-tools#install-a-local-tool).
 
 #### Version
 

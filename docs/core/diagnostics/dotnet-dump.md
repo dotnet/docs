@@ -217,3 +217,7 @@ On Microsoft .NET Core SDK Linux Docker images, some `dotnet-dump` commands can 
 > Unhandled exception: System.DllNotFoundException: Unable to load shared library 'libdl.so' or one of its dependencies' exception.
 
 To work around this problem, install the "libc6-dev" package.
+
+## See also
+
+- [Collecting and analyzing memory dumps blog](https://devblogs.microsoft.com/dotnet/collecting-and-analyzing-memory-dumps/)

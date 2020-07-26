@@ -61,7 +61,7 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 - **`-o|--output <gcdump-file-path>`**
 
-  The path where collected gcdumps should be written. Defaults to *.\YYYYMMDD_HHMMSS_<pid>.gcdump*.
+  The path where collected gcdumps should be written. Defaults to *.\\YYYYMMDD\_HHMMSS\_\<pid>.gcdump*.
 
 - **`-v|--verbose`**
 

@@ -76,7 +76,7 @@ In addition to configuring access using `web.config`, you can also programmatica
 This code can be used both in codebehind logic as well as in the page itself:
 
 ```html
-<% if(HttpContext.Current.User.IsInRole("Administrators")) { %>
+<% if (HttpContext.Current.User.IsInRole("Administrators")) { %>
   <a href="/admin">Go To Admin</a>
 <% } %>
 ```
@@ -139,7 +139,23 @@ Requiring a policy be satisfied:
 @attribute [Authorize(Policy ="CanadiansOnly")]
 ```
 
-If you need access to a user's authentication state, roles, or claims you can access these by injecting the `AuthenticationStateProvider` into your component:
+If you need access to a user's authentication state, roles, or claims in your code, there are two primary ways to achieve this. The first is to configure authentication state as a cascading parameter. The second is to access the state using an injected `AuthenticationStateProvider`. The details of each of these approaches are described in the [Blazor Security documentation](https://docs.microsoft.com/aspnet/core/blazor/security/).
+
+The following code shows how to configure `AuthenticationState` as a cascading parameter:
+
+```csharp
+[CascadingParameter]
+private Task<AuthenticationState> authenticationStateTask { get; set; }
+```
+
+With this parameter in place, you can get the user using this code:
+
+```csharp
+var authState = await authenticationStateTask;
+var user = authState.User;
+```
+
+The following code shows how to inject the `AuthenticationStateProvider`:
 
 ```csharp
 @using Microsoft.AspNetCore.Components.Authorization
@@ -158,7 +174,9 @@ if (user.Identity.IsAuthenticated)
 }
 ```
 
-To work with users and claims you may also need to inject a `UserManager<T>` (use `IdentityUser` for default) which you can use to enumerate and modify claims for a user. First inject the type and assign it to a property:
+**Note:** The `AuthorizeView` component, covered later in this chapter, provides a declarative way to control what a user sees on a page or component.
+
+To work with users and claims (in Blazor Server applications) you may also need to inject a `UserManager<T>` (use `IdentityUser` for default) which you can use to enumerate and modify claims for a user. First inject the type and assign it to a property:
 
 ```csharp
 @inject UserManager<IdentityUser> MyUserManager
@@ -187,6 +205,8 @@ private async Task AddCountryClaim()
 ```
 
 If you need to work with roles, follow the same approach. You may need to inject a `RoleManager<T>` (use `IdentityRole` for default type) to list and manage the roles themselves.
+
+**Note:** In Blazor WebAssembly projects, you will need to provide server APIs to perform these operations (instead of using `UserManager<T>` or `RoleManager<T>` directly). A Blazor WebAssembly client application would manage claims and/or roles by securely calling API endpoints exposed for this purpose.
 
 ### Migration guide
 

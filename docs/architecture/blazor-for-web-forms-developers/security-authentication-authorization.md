@@ -236,7 +236,7 @@ Once you have the destination table schema in place, the next step is to migrate
 
 To migrate your users from membership to the new identity tables, you should [follow the steps described in the documentation](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x/membership-to-core-identity). After following these steps and the script provided, your users will need to change their password the next time they log in.
 
-It is possible to migrate user passwords but the process is much more involved. It's quite likely that many users' passwords from the prior system have previously been exposed along with their email address in hacks of other systems where the user used the same credentials. Requiring users to update their passwords as part of the migration process, and encouraging them to use new, unique passwords, is likely to enhance the overall security of the application.
+It is possible to migrate user passwords but the process is much more involved. Requiring users to update their passwords as part of the migration process, and encouraging them to use new, unique passwords, is likely to enhance the overall security of the application.
 
 ### Migrating auth settings from web.config to Startup.cs
 

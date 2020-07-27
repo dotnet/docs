@@ -60,6 +60,15 @@ var azure = Microsoft.Azure.Management.Fluent.Azure
     .WithDefaultSubscription();
 ```
 
+It is recommended that you explicitly provide the *subscriptionId* from the JSON output to the `Azure` object:
+
+```csharp
+var azure = Microsoft.Azure.Management.Fluent.Azure
+    .Configure()
+    .Authenticate(credentials)
+    .WithSubscription(subscriptionId);
+```
+
 ### <a name="mgmt-file"></a>File-based authentication
 
 File-based authentication allows you to put the service principal credentials in a plain text file and secure it within the file system.

@@ -20,7 +20,7 @@ In this article, various names are used to identify types of files used for migr
 
 ## Prerequisites
 
-- [Visual Studio 2019 version 16.5 or later](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&ch=pre&rel=16) for any designer work you want to do. We recommend to update to the [latest version of Visual Studio](https://visualstudio.microsoft.com/vs/).
+- [Visual Studio 2019 version 16.5 or later](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16) for any designer work you want to do. We recommend to update to the [latest version of Visual Studio](https://visualstudio.microsoft.com/vs/).
 
   Install the following Visual Studio workloads:
   

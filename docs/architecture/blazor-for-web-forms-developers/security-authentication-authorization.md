@@ -313,7 +313,7 @@ If you further had denied access except to those users belonging to a certain ro
 
 Note that the `[Authorize]` attribute only works on `@page` components that are reached via the Blazor Router. The attribute does not work with child components, which should instead use `AuthorizeView`.
 
-If you have logic within page markup for determining whether to display some code to a certain user, you can replace this with the `AuthorizeView` component. The [AuthorizeView component](https://docs.microsoft.com/aspnet/core/blazor/security/?view=aspnetcore-3.1#authorizeview-component) selectively displays UI depending on whether the user is authorized to see it. It also exposes a `context` variable that can be used to access user information.
+If you have logic within page markup for determining whether to display some code to a certain user, you can replace this with the `AuthorizeView` component. The [AuthorizeView component](https://docs.microsoft.com/aspnet/core/blazor/security#authorizeview-component) selectively displays UI depending on whether the user is authorized to see it. It also exposes a `context` variable that can be used to access user information.
 
 ```razor
 <AuthorizeView>

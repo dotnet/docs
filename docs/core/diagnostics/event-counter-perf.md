@@ -10,7 +10,7 @@ ms.date: 07/22/2020
 
 While an <xref:System.Diagnostics.Tracing.EventSource> is fast, logging too many events for frequent events is still a performance consideration. In this tutorial, you'll learn how an <xref:System.Diagnostics.Tracing.EventCounter> can be used to measure performance of a high frequency of events.
 
-For events that happen every few milliseconds, you'll want the performance per event to be low (less than a millisecond). Otherwise, it is going to cost a significant performance overhead. Logging an event means you're going to write something to disk. If the disk is not fast enough, you will lose events. You need a solution other than logging the event itself.
+For events that happen every few milliseconds, you'll want the overhead per event to be low (less than a millisecond). Otherwise, the impact on performance will be significant. Logging an event means you're going to write something to disk. If the disk is not fast enough, you will lose events. You need a solution other than logging the event itself.
 
 When dealing with a large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
 
@@ -18,9 +18,9 @@ When dealing with a large number of events, knowing the measure per event is not
 
 The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> line is the <xref:System.Diagnostics.Tracing.EventSource> part and is not part of <xref:System.Diagnostics.Tracing.EventCounter>, it was written to show that you can log a message together with the event counter.
 
-You logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless you can actually get the statistics out of it, it is not useful. To get the statistics, you need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by setting off a timer how frequently you want the events, as well as a listener to capture the events, to do that, you can use PerfView.
+You logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless you can actually get the statistics out of it, it is not useful. To get the statistics, you need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by creating a timer that fires as frequently as you want the events, as well as a listener to capture the events. To do that, you can use PerfView.
 
-There is an extra keyword that you will need to specify the turn on the EventCounters.
+There is an extra keyword that you will need to turn on the EventCounters.
 
 ```
 PerfView /onlyProviders=*Samples-EventCounterDemos-Minimal:EventCounterIntervalSec=1 collect
@@ -29,17 +29,17 @@ PerfView /onlyProviders=*Samples-EventCounterDemos-Minimal:EventCounterIntervalS
 > [!NOTE]
 > The `EventCounterIntervalSec` segment is used to indicate the frequency of the sampling.
 
-As usual, turn on PerfView, and then run the sample code - we get have something like this.
+Turn on PerfView, and then run the sample code - we get have something like this.
 
 :::image type="content" source="media/perfview-counters.png" lightbox="media/perfview-counters.png" alt-text="PerfView of EventCounter traces":::
 
-Now let's drill into what the data captured means - when I copied from PerfView, it looks like this
+Examine the captured data. When you copy from PerfView, it looks like this:
 
 ```
 ThreadID="17,800" ProcessorNumber="5" Payload="{ Name:"request", Mean:142.0735, StandardDeviation:42.07355, Count:2, Min:100, Max:184.1471, IntervalSec:1.000588 }"
 ```
 
-Now it is obvious that within a sampling period, we have nine events, and all the other statistics.
+Within a sampling period, there are nine events and all the other statistics.
 
 Notice that this command also logs the events, so we will get both the events and the counter statistics.
 

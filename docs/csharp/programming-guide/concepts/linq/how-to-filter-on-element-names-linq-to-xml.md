@@ -1,5 +1,6 @@
 ---
 title: "How to filter on element names (LINQ to XML) (C#)"
+description: Learn how to filter on the element name when you call a method that returns IEnumerable of XElement.
 ms.date: 07/20/2015
 ms.assetid: 1849fb03-f075-421f-863c-e8fb32773cdf
 ---

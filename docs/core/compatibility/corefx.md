@@ -1,7 +1,7 @@
 ---
 title: Base class library breaking changes
 description: Lists the breaking changes in core .NET libraries.
-ms.date: 09/20/2019
+ms.date: 07/27/2020
 ---
 # Core .NET libraries breaking changes
 

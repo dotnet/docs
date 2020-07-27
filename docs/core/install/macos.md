@@ -154,7 +154,7 @@ This approach lets you install different versions into separate locations and ch
 
 ## Install with Visual Studio for Mac
 
-Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation). For the latest release, .NET Core 3.1, you must use the Visual Studio for Mac 8.4 Preview.
+Visual Studio for Mac installs the .NET Core SDK when the **.NET Core** workload is selected. To get started with .NET Core development on macOS, see [Install Visual Studio 2019 for Mac](/visualstudio/mac/installation). For the latest release, .NET Core 3.1, you must use the Visual Studio for Mac 8.4.
 
 [![macOS Visual Studio 2019 for Mac with .NET Core workload feature](media/install-sdk/mac-install-selection.png)](media/install-sdk/mac-install-selection.png#lightbox)
 

@@ -1,6 +1,6 @@
 ---
 title: "File system and the registry - C# Programming Guide"
-description: View articles showing how to use C# and .NET to perform basic operations on files, folders, and the registry.
+description: View articles that show how to use C# and .NET to perform basic operations on files, folders, and the registry.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file system [C#]"

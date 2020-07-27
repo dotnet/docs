@@ -1,4 +1,4 @@
-### Vector<T> always throws NotSupportedException for unsupported types
+### Vector\<T> always throws NotSupportedException for unsupported types
 
 <xref:System.Numerics.Vector%601?displayProperty=nameWithType> now always throws a <xref:System.NotSupportedException> for unsupported type parameters.
 

@@ -1,5 +1,5 @@
 ---
-title: "Sample XML File: Customers and Orders in a Namespace2"
+title: "Sample XML File: Customers and Orders in a Namespace"
 description: This XML file is used in various examples in the LINQ to XML documentation. The file contains customers and orders. The XML is in a namespace.
 ms.date: 07/20/2015
 ms.assetid: 2da1c474-f658-4dca-a457-c35ef5ba4aff

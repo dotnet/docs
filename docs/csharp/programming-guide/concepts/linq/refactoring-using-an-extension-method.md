@@ -1,5 +1,6 @@
 ---
 title: "Refactoring Using an Extension Method (C#)"
+description: Learn how to refactor code using an extension method. See code examples and view additional available resources.
 ms.date: 07/20/2015
 ms.assetid: c5fc123d-af10-4a2f-b8e4-db921efb2639
 ---

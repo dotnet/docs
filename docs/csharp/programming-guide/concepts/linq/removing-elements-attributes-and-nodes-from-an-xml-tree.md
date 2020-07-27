@@ -1,5 +1,6 @@
 ---
 title: "Removing Elements, Attributes, and Nodes from an XML Tree (C#)"
+description: Learn how to remove elements, attributes, and nodes from an XML tree. See a list of removal methods and a code example.
 ms.date: 07/20/2015
 ms.assetid: 07dd06d6-1117-4077-bf98-9120cf51176e
 ---

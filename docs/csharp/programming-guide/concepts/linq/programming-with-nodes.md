@@ -1,5 +1,6 @@
 ---
 title: "Programming with Nodes (C#)"
+description: Learn about programming with nodes. This allows developers to write programs that work at a finer level of detail than elements and attributes.
 ms.date: 07/20/2015
 ms.assetid: c38df0f2-c805-431a-93ff-9103a4284c2f
 ---

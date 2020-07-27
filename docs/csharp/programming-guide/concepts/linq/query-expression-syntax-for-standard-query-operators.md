@@ -1,5 +1,6 @@
 ---
 title: "Query Expression Syntax for Standard Query Operators (C#)"
+description: Learn about query expression syntax for standard query operators. See a list of standard query operators with equivalent query expression clauses.
 ms.date: 07/20/2015
 ms.assetid: e1e17ef2-68ff-4c26-b6e2-015668227fa5
 ---

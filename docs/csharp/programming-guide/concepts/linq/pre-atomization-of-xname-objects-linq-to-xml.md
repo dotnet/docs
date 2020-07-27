@@ -1,5 +1,6 @@
 ---
 title: "Pre-Atomization of XName Objects (LINQ to XML) (C#)"
+description: Learn about pre-atomization of XName objects. Pre-atomizing objects improves performance when creating a large XML tree in which specific names are repeated.
 ms.date: 07/20/2015
 ms.assetid: e84fbbe7-f072-4771-bfbb-059d18e1ad15
 ---

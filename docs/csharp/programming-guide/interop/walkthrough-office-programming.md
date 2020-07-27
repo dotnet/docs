@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Office Programming (C# and Visual Basic)"
+description: Learn about the features Visual Studio offers in C# and Visual Basic that improve Microsoft Office programming. 
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to use indexed properties in COM interop programming - C# Programming Guide"
+description: Learn how indexed properties improve the way in which COM properties that have parameters are consumed in this C# example.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "indexed properties [C#]"

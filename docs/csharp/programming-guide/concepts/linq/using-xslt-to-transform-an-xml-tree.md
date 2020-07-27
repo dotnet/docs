@@ -1,5 +1,6 @@
 ---
 title: "Using XSLT to Transform an XML Tree (C#)"
+description: Learn how to use XSLT to transform an XML tree in C# by invoking the XSLT transform on instances of XmlReader and XmlWriter.
 ms.date: 07/20/2015
 ms.assetid: 373a2699-d4c5-471b-9bda-c1f0ab73b477
 ---

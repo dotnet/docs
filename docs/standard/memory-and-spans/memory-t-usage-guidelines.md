@@ -115,7 +115,7 @@ Using a parameter of type <xref:System.Span%601> instead of type <xref:System.Me
 
 Sometimes, you'll have to use a <xref:System.Memory%601> parameter instead of a <xref:System.Span%601> parameter, even if you're fully synchronous. Perhaps an API that you depend accepts only <xref:System.Memory%601> arguments. This is fine, but be aware of the tradeoffs involved when using <xref:System.Memory%601> synchronously.
 
-<a name="rule-2" />
+<a name="rule-2"></a>
 
 **Rule #2: Use ReadOnlySpan\<T> or ReadOnlyMemory\<T> if the buffer should be read-only.**
 

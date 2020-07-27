@@ -14,8 +14,8 @@ Module Module1
         Using AWEntities As New AdventureWorksEntities()
             Dim productModelIds As System.Nullable(Of Integer)() = {19, 26, 118}
             Dim products = From p In AWEntities.Products _
-                Where productModelIds.Contains(p.ProductModelID) _
-                Select p
+                           Where productModelIds.Contains(p.ProductModelID) _
+                           Select p
             For Each product In products
                 Console.WriteLine("{0}: {1}", product.ProductModelID, product.ProductID)
             Next
@@ -27,9 +27,9 @@ Module Module1
         '<snippet2> 
         Using AWEntities As New AdventureWorksEntities()
             Dim products = From p In AWEntities.Products _
-                Where (New System.Nullable(Of Integer)() {19, 26, 18}).Contains(p.ProductModelID) _
-                OrElse (New String() {"L", "XL"}).Contains(p.Size) _
-                Select p
+                           Where (New System.Nullable(Of Integer)() {19, 26, 18}).Contains(p.ProductModelID) _
+                           OrElse (New String() {"L", "XL"}).Contains(p.Size) _
+                           Select p
             For Each product In products
                 Console.WriteLine("{0}: {1}, {2}", product.ProductID, _
                                                    product.ProductModelID, _

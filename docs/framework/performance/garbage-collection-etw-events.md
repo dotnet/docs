@@ -1,5 +1,6 @@
 ---
 title: "Garbage Collection ETW Events"
+description: View detailed information about garbage collection ETW events. The events covered include GCStart_V1, GCEnd_V1, GCHeapStats_V1, GCCreateSegment_V1, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "GC events"

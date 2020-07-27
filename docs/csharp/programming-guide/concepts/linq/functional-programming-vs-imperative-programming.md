@@ -1,5 +1,6 @@
 ---
 title: "Functional Programming vs. Imperative Programming (C#)"
+description: This article compares functional programming in C# with the procedural approach. Functional programming enforces immutability through pure functions.
 ms.date: 07/20/2015
 ms.assetid: 5e35c5a0-c949-422a-873b-fca6b2254f57
 ---

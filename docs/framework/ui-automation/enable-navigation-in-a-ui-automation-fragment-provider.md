@@ -1,5 +1,6 @@
 ---
 title: "Enable Navigation in a UI Automation Fragment Provider"
+description: Read an example that shows how to enable navigation in a UI Automation provider for an element that's within a fragment.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

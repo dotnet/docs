@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Duplex Contract"
+description: Learn how to make a duplex contract, which allows WCF clients and servers to communicate with each other independently. Either can initiate calls to the other.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

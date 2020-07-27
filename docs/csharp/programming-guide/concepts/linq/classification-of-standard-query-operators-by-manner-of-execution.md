@@ -1,5 +1,6 @@
 ---
 title: "Classification of Standard Query Operators by Manner of Execution (C#)"
+description: "Learn about the manners of execution of the standard query operator in C# for LINQ to Objects: immediate, deferred streaming, and deferred non-streaming."
 ms.date: 07/20/2015
 ms.assetid: b9435ce5-a7cf-4182-9f01-f3468a5533dc
 ---

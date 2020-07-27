@@ -1,5 +1,6 @@
 ---
 title: Serialization of control characters with DataContractJsonSerializer
+description: Learn about the way control characters serialization has changed to conform to ECMAScript V6 and V8 in .NET Framework 4.7.
 ms.date: 04/07/2017
 helpviewer_keywords: 
   - ".NET Framework 4.7 retargeting changes"

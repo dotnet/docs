@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Books (LINQ to XML)"
+description: This XML file is used in various examples in the LINQ to XML documentation. The file contains information about books.
 ms.date: 07/20/2015
 ms.assetid: b75ab1a2-fb76-4df9-bd01-c45ec22a29ef
 ---

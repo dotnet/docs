@@ -1,5 +1,6 @@
 ---
 title: "Publish events that conform to .NET Guidelines - C# Programming Guide"
+description: Learn how to publish events that conform to .NET guidelines. All events in the .NET Framework class library are based on the EventHandler delegate.
 ms.date: 05/26/2020
 helpviewer_keywords:
   - "events [C#], implementation guidelines"

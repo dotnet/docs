@@ -1,5 +1,6 @@
 ---
 title: "Mixed Declarative Code-Imperative Code Bugs (LINQ to XML) (C#)"
+description: LINQ to XML methods can modify an XML tree directly. Iterating through one of the axes while modifying the XML tree can give rise to odd bugs.
 ms.date: 07/20/2015
 ms.assetid: fada62d0-0680-4e73-945a-2b00d7a507af
 ---

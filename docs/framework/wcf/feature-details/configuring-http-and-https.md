@@ -1,5 +1,6 @@
 ---
 title: "Configuring HTTP and HTTPS"
+description: Learn how to configure HTTP/HTTPS to allow WCF services and clients to communicate. Configure a URL registration and a Firewall exception by using Netsh.exe.
 ms.date: "04/08/2019"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"

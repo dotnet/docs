@@ -1,6 +1,8 @@
 ---
 title: "protected internal - C# Reference"
 ms.date: 11/15/2017
+f1_keywords:
+  - "protectedinternal_CSharpKeyword"
 author: "sputier"
 ---
 # protected internal (C# Reference)

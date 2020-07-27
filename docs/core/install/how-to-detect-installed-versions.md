@@ -1,7 +1,7 @@
 ---
 title: Check installed .NET Core versions on Windows, Linux, and macOS - .NET Core
 description: Learn how to list which versions of .NET Core are installed on your computer. This includes the .NET Core runtime and SDK.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 12/04/2019
 ms.custom: "updateeachrelease"
@@ -14,7 +14,7 @@ This article teaches you how to check which versions of the .NET Core runtime an
 
 Installing an SDK installs the corresponding runtime.
 
-If any command in this article fails, you don't have the runtime or SDK installed. For more information, see [Download and install .NET Core](index.md).
+If any command in this article fails, you don't have the runtime or SDK installed. For more information, see the install articles for [Windows](windows.md), [macOS](macos.md), or [Linux](linux.md).
 
 ## Check SDK versions
 
@@ -212,5 +212,4 @@ You can see both the SDK versions and runtime versions with the command `dotnet 
 
 ## Next steps
 
-- [Install the .NET Core Runtime](runtime.md).
-- [Install the .NET Core SDK](sdk.md).
+- [Install the .NET Core Runtime and SDK](windows.md).

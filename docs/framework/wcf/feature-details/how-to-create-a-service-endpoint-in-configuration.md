@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Service Endpoint in Configuration"
+description: Learn how to add endpoints for a WCF service using a configuration file containing both relative and absolute addresses.
 ms.date: 06/16/2016
 ms.assetid: f474e25d-2a27-4f31-84c5-395c442b8e70
 ---

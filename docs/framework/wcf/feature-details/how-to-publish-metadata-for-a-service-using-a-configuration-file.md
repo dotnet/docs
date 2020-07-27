@@ -1,5 +1,6 @@
 ---
 title: "How to: Publish Metadata for a Service Using a Configuration File"
+description: Learn how to publish metadata for a WCF service using a configuration file. Publishing allows clients to get that metadata using a GET or HTTP/GET request.
 ms.date: "03/30/2017"
 ms.assetid: f061443f-92df-4824-b36a-609c4cd14a17
 ---

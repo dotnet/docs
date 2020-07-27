@@ -1,5 +1,6 @@
 ---
 title: "Inheritance - C# Programming Guide"
+description: Inheritance in C# enables you to create new classes that reuse, extend, and modify the behavior defined in other classes.
 ms.date: 02/07/2020
 helpviewer_keywords: 
   - "abstract methods [C#]"

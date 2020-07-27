@@ -3,6 +3,7 @@ title: Data access and management
 description: Learn how to access and handle data in ASP.NET Web Forms and Blazor.
 author: csharpfritz    
 ms.author: jefritz
+no-loc: [Blazor]
 ms.date: 04/26/2020
 ---
 

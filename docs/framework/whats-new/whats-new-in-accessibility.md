@@ -1,5 +1,6 @@
 ---
 title: "What's new in accessibility in the .NET Framework"
+description: See what's new in .NET accessibility, starting with .NET Framework 4.7.1. Accessibility features let an app provide the right experience for Assistive Technology users.
 ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
 dev_langs:
@@ -73,7 +74,7 @@ Applications that target versions of the .NET Framework starting with 4.7.1 can 
 
 - [Windows Workflow Foundation (WF) workflow designer](#wf48)
 
-<a name="winforms48" />
+<a name="winforms48"></a>
 
 ### Windows Forms
 
@@ -164,7 +165,7 @@ The following figure shows the tooltip when the user has selected a button with 
 
 ![Screenshot of tooltip when user navigates to button with the keyboard.](./media/whats-new-in-accessibility/select-tooltip-with-keyboard.png)
 
-<a name="wpf48" />
+<a name="wpf48"></a>
 
 ### Windows Presentation Foundation (WPF)
 
@@ -300,7 +301,7 @@ Automatic values are only provided if the application targets .NET Framework 4.8
 </configuration>
 ```
 
-<a name="wf48" />
+<a name="wf48"></a>
 
 ### Windows Workflow Foundation (WF) workflow designer
 

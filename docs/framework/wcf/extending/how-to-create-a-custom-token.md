@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Custom Token"
+description: Learn how to create a custom security token in WCF using the SecurityToken class and how to integrate it with a security token provider and an authenticator.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

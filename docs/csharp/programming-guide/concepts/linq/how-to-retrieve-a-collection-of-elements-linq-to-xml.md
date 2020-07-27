@@ -1,5 +1,6 @@
 ---
 title: "How to retrieve a collection of elements (LINQ to XML) (C#)"
+description: The Elements method in C# retrieves a collection of the child elements of an element. This LINQ to XML example iterates through child elements of an element.
 ms.date: 07/20/2015
 ms.assetid: b849668c-7976-4974-b8e1-1cd587d34258
 ---

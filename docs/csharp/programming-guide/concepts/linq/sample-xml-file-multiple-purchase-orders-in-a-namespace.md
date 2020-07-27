@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Multiple Purchase Orders in a Namespace2"
+description: This XML file is used in various examples in the LINQ to XML documentation. The file contains several purchase orders. The XML is in a namespace.
 ms.date: 07/20/2015
 ms.assetid: 595024f2-374a-4615-acb5-64fa1600f377
 ---

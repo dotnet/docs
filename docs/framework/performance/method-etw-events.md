@@ -1,5 +1,6 @@
 ---
 title: "Method ETW Events"
+description: See ETW events that collect information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ETW, method events (CLR)"

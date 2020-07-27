@@ -1,5 +1,6 @@
 ---
 title: "How to: Host a WCF Service in IIS"
+description: Learn how to create a WCF service that is hosted in Internet Information Services (IIS). You can use IIS hosting only with an HTTP transport.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -21,7 +22,7 @@ This topic outlines the basic steps required to create a Windows Communication F
   
 3. Create a new file named "service.svc" in the application directory. Edit this file by adding the following @ServiceHost element.  
   
-   ```
+   ```aspx-csharp
    <%@ServiceHost language=c# Debug="true" Service="Microsoft.ServiceModel.Samples.CalculatorService"%>
    ```  
   

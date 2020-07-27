@@ -1,5 +1,6 @@
 ---
 title: "Security ETW Events"
+description: Understand security ETW events, which are raised during strong name verification and Authenticode verification in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security events [.NET Framework]"

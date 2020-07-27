@@ -1,5 +1,6 @@
 ---
 title: "Registering Assemblies with COM"
+description: Register or unregister assemblies with COM using the Assembly Registration Tool (Regasm.exe), which adds information about the class to the system registry.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "COM interop, registering assemblies"

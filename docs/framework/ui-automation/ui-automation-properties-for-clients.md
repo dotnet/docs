@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Properties for Clients"
+description: Read an overview of UI Automation properties as they are exposed to UI Automation client applications.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

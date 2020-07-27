@@ -1,5 +1,6 @@
 ---
 title: "Fuslogvw.exe (Assembly Binding Log Viewer)"
+description: Use Fuslogvw.exe, the Assembly Binding Log Viewer. This viewer shows assembly bind details, which helps diagnose why .NET can't find an assembly at run time.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "failed assembly binds"

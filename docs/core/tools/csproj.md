@@ -10,7 +10,7 @@ This document outlines the changes that were added to the project files as part 
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md).
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order.
 
 ```xml
  <PropertyGroup>
@@ -180,7 +180,7 @@ A `<DotNetCliToolReference>` item element specifies the CLI tool that the user w
 <DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
-Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](https://aka.ms/local-tools).
+Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](./global-tools.md#install-a-local-tool).
 
 #### Version
 

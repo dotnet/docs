@@ -13,7 +13,7 @@ Module MultiplyMatrices
             For j As Integer = 0 To matBCols - 1
                 Dim temp As Double = 0
                 For k As Integer = 0 To matACols - 1
-                   temp += matA(i, k) * matB(k, j)
+                    temp += matA(i, k) * matB(k, j)
                 Next
                 result(i, j) += temp
             Next

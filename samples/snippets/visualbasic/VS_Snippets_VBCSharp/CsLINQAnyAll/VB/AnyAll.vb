@@ -30,8 +30,8 @@ Module All
         ' Create the list of Person objects that will be queried.
         Dim people As New System.Collections.Generic.List(Of Person)(New Person() {charlotte, arlene, rui})
 
-        Dim query = From pers In people 
-                    Where (Aggregate pt In pers.Pets Into All(pt.Age > 2)) 
+        Dim query = From pers In people
+                    Where (Aggregate pt In pers.Pets Into All(pt.Age > 2))
                     Select pers.Name
 
         Dim sb As New System.Text.StringBuilder()
@@ -78,8 +78,8 @@ Module Any
         ' Create the list of Person objects that will be queried.
         Dim people As New System.Collections.Generic.List(Of Person)(New Person() {charlotte, arlene, rui})
 
-        Dim query = From pers In people 
-                    Where (Aggregate pt In pers.Pets Into Any(pt.Age > 7)) 
+        Dim query = From pers In people
+                    Where (Aggregate pt In pers.Pets Into Any(pt.Age > 7))
                     Select pers.Name
 
         Dim sb As New System.Text.StringBuilder()

@@ -1,5 +1,6 @@
 ---
 title: "Deploying the .NET Framework"
+description: Learn how to deploy .NET for developers who want to install .NET with their applications, and for administrators who want to deploy .NET across a network.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ".NET Framework, deploying"

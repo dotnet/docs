@@ -3,6 +3,7 @@ title: Build reusable UI components with Blazor
 description: Learn how to build reusable UI components with Blazor and how they compare to ASP.NET Web Forms controls.
 author: danroth27
 ms.author: daroth
+no-loc: [Blazor]
 ms.date: 09/18/2019
 ---
 # Build reusable UI components with Blazor
@@ -594,8 +595,8 @@ The output of this component looks like this:
 ```html
 <h1>My list</h1>
 <ul>
-    <li>The message is: message1</li>
-    <li>The message is: message2</li>
+    <li><p>The message is: message1</p></li>
+    <li><p>The message is: message2</p></li>
 <ul>
 ```
 

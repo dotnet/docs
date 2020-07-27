@@ -1,5 +1,6 @@
 ---
 title: "Interop Marshaling"
+description: Get started with interop marshaling, which governs how data is passed in method arguments and return values between managed and unmanaged memory during calls.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "marshaling, COM interop"

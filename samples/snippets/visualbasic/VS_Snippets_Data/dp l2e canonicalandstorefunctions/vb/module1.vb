@@ -15,8 +15,8 @@ Module Module1
         '<snippet1>
         Using AWEntities As New AdventureWorksEntities()
             Dim products = From p In AWEntities.Products _
-                Where EntityFunctions.DiffDays(p.SellEndDate, p.SellStartDate) < 365 _
-                Select p
+                           Where EntityFunctions.DiffDays(p.SellEndDate, p.SellStartDate) < 365 _
+                           Select p
 
             For Each product In products
                 Console.WriteLine(product.ProductID)
@@ -43,8 +43,8 @@ Module Module1
 
             ' SqlFunctions.CharIndex is executed in the database.
             Dim contacts = From c In AWEntities.Contacts _
-                Where SqlFunctions.CharIndex("Si", c.LastName) = 1 _
-                Select c
+                           Where SqlFunctions.CharIndex("Si", c.LastName) = 1 _
+                           Select c
 
             For Each contact In contacts
                 Console.WriteLine(contact.LastName)

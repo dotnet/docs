@@ -1,5 +1,6 @@
 ---
 title: "Static Classes and Static Class Members - C# Programming Guide"
+description: Static classes cannot be instantiated in C#. You access the members of a static class by using the class name itself.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, static members"
@@ -48,7 +49,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  Creating a static class is therefore basically the same as creating a class that contains only static members and a private constructor. A private constructor prevents the class from being instantiated. The advantage of using a static class is that the compiler can check to make sure that no instance members are accidentally added. The compiler will guarantee that instances of this class cannot be created.  
   
- Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class except <xref:System.Object>. Static classes cannot contain an instance constructor; however, they can contain a static constructor. Non-static classes should also define a static constructor if the class contains static members that require non-trivial initialization. For more information, see [Static Constructors](./static-constructors.md).  
+ Static classes are sealed and therefore cannot be inherited. They cannot inherit from any class except <xref:System.Object>. Static classes cannot contain an instance constructor. However, they can contain a static constructor. Non-static classes should also define a static constructor if the class contains static members that require non-trivial initialization. For more information, see [Static Constructors](./static-constructors.md).  
   
 ## Example  
  Here is an example of a static class that contains two methods that convert temperature from Celsius to Fahrenheit and from Fahrenheit to Celsius:  
@@ -56,15 +57,15 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
  [!code-csharp[csProgGuideObjects#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#31)]  
   
 ## Static Members  
- A non-static class can contain static methods, fields, properties, or events. The static member is callable on a class even when no instance of the class has been created. The static member is always accessed by the class name, not the instance name. Only one copy of a static member exists, regardless of how many instances of the class are created. Static methods and properties cannot access non-static fields and events in their containing type, and they cannot access an instance variable of any object unless it is explicitly passed in a method parameter.  
+ A non-static class can contain static methods, fields, properties, or events. The static member is callable on a class even when no instance of the class has been created. The static member is always accessed by the class name, not the instance name. Only one copy of a static member exists, regardless of how many instances of the class are created. Static methods and properties cannot access non-static fields and events in their containing type, and they cannot access an instance variable of any object unless it's explicitly passed in a method parameter.  
   
  It is more typical to declare a non-static class with some static members, than to declare an entire class as static. Two common uses of static fields are to keep a count of the number of objects that have been instantiated, or to store a value that must be shared among all instances.  
   
  Static methods can be overloaded but not overridden, because they belong to the class, and not to any instance of the class.  
   
- Although a field cannot be declared as `static const`, a [const](../../language-reference/keywords/const.md) field is essentially static in its behavior. It belongs to the type, not to instances of the type. Therefore, const fields can be accessed by using the same `ClassName.MemberName` notation that is used for static fields. No object instance is required.  
+ Although a field cannot be declared as `static const`, a [const](../../language-reference/keywords/const.md) field is essentially static in its behavior. It belongs to the type, not to instances of the type. Therefore, `const` fields can be accessed by using the same `ClassName.MemberName` notation that's used for static fields. No object instance is required.  
   
- C# does not support static local variables (variables that are declared in method scope).  
+ C# does not support static local variables (that is, variables that are declared in method scope).  
   
  You declare static class members by using the `static` keyword before the return type of the member, as shown in the following example:  
   
@@ -76,7 +77,7 @@ Console.WriteLine(Math.Round(Math.Abs(dub)));
   
  If your class contains static fields, provide a static constructor that initializes them when the class is loaded.  
   
- A call to a static method generates a call instruction in Microsoft intermediate language (MSIL), whereas a call to an instance method generates a `callvirt` instruction, which also checks for a null object references. However, most of the time the performance difference between the two is not significant.  
+ A call to a static method generates a call instruction in Microsoft intermediate language (MSIL), whereas a call to an instance method generates a `callvirt` instruction, which also checks for null object references. However, most of the time the performance difference between the two is not significant.  
   
 ## C# Language Specification  
 

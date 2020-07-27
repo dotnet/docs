@@ -1,5 +1,6 @@
 ---
 title: "How to: Secure a Service with Windows Credentials"
+description: Learn how to enable transport security on a WCF service that resides in a Windows domain and is called by clients in the same domain. 
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

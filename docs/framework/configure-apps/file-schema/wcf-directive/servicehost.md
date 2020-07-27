@@ -9,7 +9,7 @@ Associates the factory used to produce the service host with the service to be h
 
 ## Syntax
 
-```xml
+```aspx-csharp
 <% @ServiceHost
 Service = "Service, ServiceNamespace"
 Factory = "Factory, FactoryNamespace"
@@ -57,7 +57,7 @@ Keep the factory implementations as light as possible. If you have lots of custo
 
 For example, to enable an AJAX-enabled endpoint for `MyService`, specify the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory> for the value of the `Factory` attribute, instead of the default <xref:System.ServiceModel.Activation.ServiceHostFactory>, in the `@ServiceHost` directive as shown in the following example:
 
-```xml
+```aspx-csharp
 <% @ServiceHost
 Service="MyService"
 Language="C#"

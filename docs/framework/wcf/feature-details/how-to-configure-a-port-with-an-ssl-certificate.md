@@ -1,5 +1,6 @@
 ---
 title: "How to: Configure a Port with an SSL Certificate"
+description: Learn how to configure a port with an X.509 certificate, required for a self-hosted WCF service with the WSHttpBinding class using transport security.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

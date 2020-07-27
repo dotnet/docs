@@ -1,5 +1,6 @@
 ---
 title: "Data and modeling - .NET"
+description: View links to articles that describe modeling and how to access data in .NET. The articles cover WCF Data Services, ADO.NET, and transaction processing.
 ms.date: "09/09/2019"
 helpviewer_keywords: 
   - ".NET Framework, data access"

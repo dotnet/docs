@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML Axes Overview (C#)"
+description: Learn about the axis methods in C#, also called axes. You can query an XML tree in LINQ to find elements and attributes and retrieve their values through axes.
 ms.date: 07/20/2015
 ms.assetid: 516792fb-461d-40a8-8a50-9993a51258fc
 ---

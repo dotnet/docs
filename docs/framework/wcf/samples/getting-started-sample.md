@@ -1,5 +1,6 @@
 ---
 title: "Getting Started Sample"
+description: Learn how to implement a typical service and a typical client using WCF. This sample is the basis for all other basic technology samples.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

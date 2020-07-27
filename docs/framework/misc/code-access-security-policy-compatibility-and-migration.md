@@ -1,5 +1,6 @@
 ---
 title: "Code Access Security Policy Compatibility and Migration"
+description: Read a summary and see links about code access security policy compatibility and migration in .NET 4.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "policy migration, compatibility"

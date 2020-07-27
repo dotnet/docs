@@ -1,5 +1,6 @@
 ---
 title: "Security-Transparent Code, Level 1"
+description: Review the Level 1 transparency code model, transparency attributes, and security transparency examples.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transparent"

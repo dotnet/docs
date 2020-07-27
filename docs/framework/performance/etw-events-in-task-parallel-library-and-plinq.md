@@ -1,5 +1,6 @@
 ---
 title: "ETW Events in Task Parallel Library and PLINQ"
+description: Read about ETW events in the Task Parallel Library and PLINQ. Use these events to profile and troubleshoot applications.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "tasks, ETW events"

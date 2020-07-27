@@ -1,5 +1,6 @@
 ---
 title: "Global Assembly Cache"
+description: Understand the global assembly cache, which is a computer-wide code cache where the common language runtime for .NET is installed.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], global assembly cache"

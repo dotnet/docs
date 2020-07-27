@@ -1,5 +1,6 @@
 ---
 title: "Introduction to LINQ Queries (C#)"
+description: LINQ offers a consistent model for queries on data across various kinds of data sources and formats. In a LINQ query, you are always working with objects.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "deferred execution [LINQ]"

@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML vs. DOM (C#)"
+description: Learn about some key differences between LINQ to XML and the W3C Document Object Model (DOM) XML programming API.
 ms.date: 07/20/2015
 ms.assetid: 51c0e3d2-c047-4e6a-a423-d61a882400b7
 ---

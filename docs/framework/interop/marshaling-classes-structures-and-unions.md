@@ -1,5 +1,6 @@
 ---
 title: "Marshaling Classes, Structures, and Unions"
+description: Review how to marshal classes, structures, and unions. View samples of marshaling classes, structures with nested structures, arrays of structures, and unions.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

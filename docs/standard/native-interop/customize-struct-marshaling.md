@@ -1,13 +1,12 @@
 ---
 title: Customizing structure marshaling - .NET
-description: Learn how to customize how .NET marshals your structures to a native representation.
+description: Learn how to customize how .NET marshals structures to a native representation.
 ms.date: 01/18/2019
 dev_langs:
   - "csharp"
   - "cpp"
 ---
-
-# Customizing structure marshaling
+# Customize structure marshaling
 
 Sometimes the default marshaling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshaled.
 
@@ -259,7 +258,7 @@ struct BString
 };
 ```
 
-When using a WinRT-based API, you may need to marshal a string as an `HSTRING`.  Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal a string as a `HSTRING`.
+When using a WinRT-based API, you may need to marshal a string as an `HSTRING`. Using the <xref:System.Runtime.InteropServices.UnmanagedType.HString?displayProperty=nameWithType> value, you can marshal a string as a `HSTRING`.
 
 ```csharp
 public struct HString
@@ -312,7 +311,7 @@ struct DefaultString
 
 ## Customizing decimal field marshaling
 
-If you're working on Windows, you might encounter some APIs that use the native [`CY` or `CURRENCY`](/windows/win32/api/wtypes/ns-wtypes-cy~r1) structure. By default, the .NET `decimal` type marshals to the native [`DECIMAL`](/windows/win32/api/wtypes/ns-wtypes-decimal~r1) structure. However, you can use a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType> value to instruct the marshaler to convert a `decimal` value to a native `CY` value.
+If you're working on Windows, you might encounter some APIs that use the native [`CY` or `CURRENCY`](/windows/win32/api/wtypes/ns-wtypes-cy-r1) structure. By default, the .NET `decimal` type marshals to the native [`DECIMAL`](/windows/win32/api/wtypes/ns-wtypes-decimal-r1) structure. However, you can use a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType> value to instruct the marshaler to convert a `decimal` value to a native `CY` value.
 
 ```csharp
 public struct Currency
@@ -329,7 +328,7 @@ struct Currency
 };
 ```
 
-## Marshaling `System.Object`s
+## Marshal `System.Object`
 
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types:
 

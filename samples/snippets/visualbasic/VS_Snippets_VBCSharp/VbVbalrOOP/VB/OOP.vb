@@ -107,7 +107,7 @@ Class Class15785a8ea9884de2a88f54ee6c9480bc
         Dim WithEvents Button1 As New Button
 
         ' <snippet13>
-        Private Sub Button1_Click(ByVal sender As Object, 
+        Private Sub Button1_Click(ByVal sender As Object,
             ByVal e As System.EventArgs) Handles Button1.Click
             Dim newForm As New Form1
             newForm.Show()
@@ -124,7 +124,7 @@ Class Class15785a8ea9884de2a88f54ee6c9480bc
 
         Dim PictureBox1 As New PictureBox
         ' <snippet15>
-        Protected Sub Form1_Click(ByVal sender As System.Object, 
+        Protected Sub Form1_Click(ByVal sender As System.Object,
               ByVal e As System.EventArgs) Handles MyBase.Click
             Dim pictureSource As New Form2
             pictureSource.GetPicture(PictureBox1)
@@ -319,7 +319,7 @@ Class Class19c0598e9c8e4f0382b772f1684e3d34
         Private Const shpLine As String = "line"
         Dim type As String
         ' <snippet115>
-        Sub Draw(ByVal Shape As DrawingShape, ByVal X As Integer, 
+        Sub Draw(ByVal Shape As DrawingShape, ByVal X As Integer,
             ByVal Y As Integer, ByVal Size As Integer)
 
             Select Case Shape.type
@@ -371,8 +371,8 @@ Class Class2167e8f512254b139ebd02591ba90213
     Const PayRate As Decimal = 14.75D
 
     Class Payroll
-        Overridable Function PayEmployee( 
-            ByVal HoursWorked As Decimal, 
+        Overridable Function PayEmployee(
+            ByVal HoursWorked As Decimal,
             ByVal PayRate As Decimal) As Decimal
 
             PayEmployee = HoursWorked * PayRate
@@ -381,8 +381,8 @@ Class Class2167e8f512254b139ebd02591ba90213
 
     Class BonusPayroll
         Inherits Payroll
-        Overrides Function PayEmployee( 
-            ByVal HoursWorked As Decimal, 
+        Overrides Function PayEmployee(
+            ByVal HoursWorked As Decimal,
             ByVal PayRate As Decimal) As Decimal
 
             ' The following code calls the original method in the base 
@@ -396,9 +396,9 @@ Class Class2167e8f512254b139ebd02591ba90213
         Dim BonusPayrollItem As New BonusPayroll
         Dim HoursWorked As Decimal = 40
 
-        MsgBox("Normal pay is: " & 
+        MsgBox("Normal pay is: " &
             PayrollItem.PayEmployee(HoursWorked, PayRate))
-        MsgBox("Pay with bonus is: " & 
+        MsgBox("Pay with bonus is: " &
             BonusPayrollItem.PayEmployee(HoursWorked, PayRate))
     End Sub
     ' </snippet28>
@@ -506,7 +506,7 @@ Class Class326214bb636748e7bb24714844791400
     ' Class Methods
 
     ' <snippet32>
-    Public Function WithDrawal(ByVal Amount As Decimal, 
+    Public Function WithDrawal(ByVal Amount As Decimal,
           ByVal TransactionCode As Byte) As Double
         ' Add code here to perform the withdrawal,
         ' return a transaction code, 
@@ -655,7 +655,7 @@ Class Class57be4229e5254926a8a000616896116f
 
     Dim WithEvents Button1 As New Button
     ' <snippet49>
-    Protected Sub Button1_Click(ByVal sender As System.Object, 
+    Protected Sub Button1_Click(ByVal sender As System.Object,
           ByVal e As System.EventArgs) Handles Button1.Click
         Dim clsNew As New ShowMe
         clsNew.ShowFrm()
@@ -687,7 +687,7 @@ Class Class79a7b8b4b8c74ad8aca812a9a2b32f03
     ' <snippet54>
     Private Sub CallMath()
         Dim Math As New MathClass
-        Me.TextBox1.Text = CStr(CallByName(Math, Me.TextBox2.Text, 
+        Me.TextBox1.Text = CStr(CallByName(Math, Me.TextBox2.Text,
            Microsoft.VisualBasic.CallType.Method, TextBox1.Text))
     End Sub
     ' </snippet54>
@@ -779,7 +779,7 @@ Class Classadf7a2324ebb485d86268d64421eb0c4
             ' Insert appropriate constructor code here.
         End Sub
 
-        Protected Overridable Overloads Sub Dispose( 
+        Protected Overridable Overloads Sub Dispose(
             ByVal disposing As Boolean)
             If Not Me.disposed Then
                 If disposing Then
@@ -794,7 +794,7 @@ Class Classadf7a2324ebb485d86268d64421eb0c4
 
         Public Sub AnyOtherMethods()
             If Me.disposed Then
-                Throw New ObjectDisposedException(Me.GetType().ToString, 
+                Throw New ObjectDisposedException(Me.GetType().ToString,
                     "This object has been disposed.")
             End If
         End Sub
@@ -938,15 +938,15 @@ Class Classb686fb97e7d74001afaa6650cba08f0d
 
     ' <snippet67>
     Public Class TaxClass
-        Overloads Function TaxAmount(ByVal decPrice As Decimal, 
+        Overloads Function TaxAmount(ByVal decPrice As Decimal,
              ByVal TaxRate As Single) As String
-            TaxAmount = "Price is a Decimal. Tax is $" & 
+            TaxAmount = "Price is a Decimal. Tax is $" &
                (CStr(decPrice * TaxRate))
         End Function
 
-        Overloads Function TaxAmount(ByVal strPrice As String, 
+        Overloads Function TaxAmount(ByVal strPrice As String,
               ByVal TaxRate As Single) As String
-            TaxAmount = "Price is a String. Tax is $" & 
+            TaxAmount = "Price is a String. Tax is $" &
                CStr((CDec(strPrice) * TaxRate))
         End Function
     End Class
@@ -1020,8 +1020,8 @@ Class Classc5729e29104244e8904d7b24e0d50b01
 
     Public Sub Method73()
         ' <snippet73>
-        MsgBox("Database update complete", 
-               MsgBoxStyle.OKOnly Or MsgBoxStyle.Exclamation, 
+        MsgBox("Database update complete",
+               MsgBoxStyle.OKOnly Or MsgBoxStyle.Exclamation,
                "My Application")
         ' </snippet73>
     End Sub
@@ -1029,8 +1029,8 @@ Class Classc5729e29104244e8904d7b24e0d50b01
     Public Sub Method74()
         ' <snippet74>
         Dim Response As MsgBoxResult
-        Response = MsgBox("Do you want to exit?", 
-                           MsgBoxStyle.YesNo Or MsgBoxStyle.Question, 
+        Response = MsgBox("Do you want to exit?",
+                           MsgBoxStyle.YesNo Or MsgBoxStyle.Question,
                            "My Application")
         ' </snippet74>
     End Sub
@@ -1103,7 +1103,7 @@ Class Classd6ff7f1eb94f4205ab8d5cfa91758724
         '  Create a variable to hold a new object.
         Dim FS As System.IO.FileStream
         ' Assign a new object to the variable.
-        FS = New System.IO.FileStream("C:\tmp.txt", 
+        FS = New System.IO.FileStream("C:\tmp.txt",
             System.IO.FileMode.Open)
         ' </snippet90>
     End Sub
@@ -1188,7 +1188,7 @@ Class Classdbc3783f83a24225995dc2d6d025663d
         Public SerialNumber As Integer
         Public Name As String
         Public Sub InstanceMethod()
-            MsgBox("Information in the first object: " & 
+            MsgBox("Information in the first object: " &
                 Me.SerialNumber & vbTab & Me.Name)
         End Sub
     End Class
@@ -1303,7 +1303,7 @@ Class Classded82af29f52423298effe458180f112
         ' </snippet107>
 
         ' <snippet108>
-        Private Sub Form1_Load(ByVal sender As System.Object, 
+        Private Sub Form1_Load(ByVal sender As System.Object,
                                ByVal e As System.EventArgs) Handles MyBase.Load
             Test() ' Test the class.
         End Sub
@@ -1316,8 +1316,8 @@ Class Classdfc8debaf5b34d1da9377cb826446fc5
     ' Inheritance Basics
 
     Class BaseClass
-        Public Overridable Function CalculateShipping( 
-            ByVal Dist As Double, 
+        Public Overridable Function CalculateShipping(
+            ByVal Dist As Double,
             ByVal Rate As Double) As Double
 
             Return Dist * Rate
@@ -1327,8 +1327,8 @@ Class Classdfc8debaf5b34d1da9377cb826446fc5
     ' <snippet109>
     Class DerivedClass
         Inherits BaseClass
-        Public Overrides Function CalculateShipping( 
-            ByVal Dist As Double, 
+        Public Overrides Function CalculateShipping(
+            ByVal Dist As Double,
             ByVal Rate As Double) As Double
 
             ' Call the method in the base class and modify the return value.
@@ -1351,7 +1351,7 @@ Class Classe9039225e8004f27b1eb9d448ebbfbe1
         ProcessShape2(RectangleObject2, 3, 5)
     End Sub
 
-    Sub ProcessShape2(ByVal Shape2 As Shape2, ByVal X As Double, 
+    Sub ProcessShape2(ByVal Shape2 As Shape2, ByVal X As Double,
           ByVal Y As Double)
         MsgBox("The area of the object is " &
             Shape2.CalculateArea(X, Y))
@@ -1363,7 +1363,7 @@ Class Classe9039225e8004f27b1eb9d448ebbfbe1
 
     Public Class RightTriangleClass2
         Implements Shape2
-        Function CalculateArea(ByVal X As Double, 
+        Function CalculateArea(ByVal X As Double,
               ByVal Y As Double) As Double Implements Shape2.CalculateArea
             ' Calculate the area of a right triangle. 
             Return 0.5 * (X * Y)
@@ -1372,7 +1372,7 @@ Class Classe9039225e8004f27b1eb9d448ebbfbe1
 
     Public Class RectangleClass2
         Implements Shape2
-        Function CalculateArea(ByVal X As Double, 
+        Function CalculateArea(ByVal X As Double,
               ByVal Y As Double) As Double Implements Shape2.CalculateArea
             ' Calculate the area of a rectangle. 
             Return X * Y

@@ -1,5 +1,6 @@
 ---
 title: "Basic WCF Programming"
+description: Refer to these articles to develop Windows Communication Foundation applications, from the basic programming lifecycle to troubleshooting.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "basic programming [WCF]"

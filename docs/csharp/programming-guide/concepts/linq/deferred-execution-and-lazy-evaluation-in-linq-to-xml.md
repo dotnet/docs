@@ -1,5 +1,6 @@
 ---
 title: "Deferred Execution and Lazy Evaluation in LINQ to XML (C#)"
+description: Query and axis operations can use deferred execution in C#. Learn about requirements and advantages of deferred execution and implementation considerations.
 ms.date: 07/20/2015
 ms.assetid: 8683d1b4-b7ec-407b-be12-906ebe958a09
 ---

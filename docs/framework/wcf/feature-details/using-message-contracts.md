@@ -1,5 +1,6 @@
 ---
 title: "Using Message Contracts"
+description: Learn how to use the message contract attributes to create a message contract specifying the structure of a SOAP message in WFC.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

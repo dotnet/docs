@@ -1,5 +1,6 @@
 ---
 title: "Dialog Boxes Overview"
+description: Learn about the varieties of dialog boxes in Windows Foundation Presentation (WPF) that you can use to gather and display information.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

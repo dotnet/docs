@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Development Guide"
+description: Explore the .NET development guide, which explains how to create, configure, debug, secure, and deploy your .NET apps.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ".NET Framework, development guide"

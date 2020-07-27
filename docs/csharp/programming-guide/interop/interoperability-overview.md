@@ -1,5 +1,6 @@
 ---
 title: "Interoperability Overview - C# Programming Guide"
+description: Learn about interoperability between C# and unmanaged code, including platform invoke, C++ interop, exposing COM components to C#, and exposing C# to COM.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "COM interop"

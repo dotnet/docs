@@ -1,5 +1,6 @@
 ---
 title: "Concepts and Terminology (Functional Transformation) (C#)"
+description: Functional programming capabilities make it easier to transform XML. Learn about concepts and terminology of pure functional transformations in C#.
 ms.date: 07/20/2015
 ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
 ---

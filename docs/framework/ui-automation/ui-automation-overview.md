@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Overview"
+description: Read an overview of Microsoft UI Automation, the accessibility framework for Windows operating systems that support Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, overview"

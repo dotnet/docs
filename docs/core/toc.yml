@@ -8,22 +8,12 @@ items:
 - name: Install
   items:
   - name: Overview
-    href: install/index.md
-  - name: Install SDK
-    href: install/sdk.md
-  - name: Install runtime
-    href: install/runtime.md
-  - name: Supported OS and dependencies
-    href: install/dependencies.md
-  - name: Remove outdated runtimes and SDKs
-    href: install/remove-runtime-sdk-versions.md
-  - name: Manage .NET templates
-    href: install/templates.md
-  - name: macOS Notarization issues
-    href: install/macos-notarization-issues.md
-  - name: How to check .NET Core versions
-    href: install/how-to-detect-installed-versions.md
-  - name: Linux
+    href: install/index.yml
+  - name: Install on Windows
+    href: install/windows.md
+  - name: Install on macOS
+    href: install/macos.md
+  - name: Install on Linux
     items:
     - name: Overview
       href: install/linux.md
@@ -43,6 +33,14 @@ items:
       href: install/linux-rhel.md
     - name: SLES
       href: install/linux-sles.md
+  - name: Remove outdated runtimes and SDKs
+    href: install/remove-runtime-sdk-versions.md
+  - name: Manage .NET templates
+    href: install/templates.md
+  - name: macOS Notarization issues
+    href: install/macos-notarization-issues.md
+  - name: How to check .NET Core versions
+    href: install/how-to-detect-installed-versions.md
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started
@@ -306,6 +304,10 @@ items:
     items:
     - name: Debug a memory leak
       href: diagnostics/debug-memory-leak.md
+    - name: Debug high CPU usage
+      href: diagnostics/debug-highcpu.md
+    - name: Debug deadlock
+      href: diagnostics/debug-deadlock.md
 - name: .NET Core additional tools
   items:
   - name: Overview
@@ -431,6 +433,8 @@ items:
     href: testing/selective-unit-tests.md
   - name: Order unit tests
     href: testing/order-unit-tests.md
+  - name: Unit test code coverage
+    href: testing/unit-testing-code-coverage.md
   - name: Unit test published output
     href: testing/unit-testing-published-output.md
   - name: Live unit test .NET Core projects with Visual Studio
@@ -475,7 +479,5 @@ items:
   href: native-interop/expose-components-to-com.md
 - name: Host .NET Core from native code
   href: tutorials/netcore-hosting.md
-- name: Packages, metapackages, and frameworks
-  href: packages.md
 - name: Continuous integration
   href: tools/using-ci-with-cli.md

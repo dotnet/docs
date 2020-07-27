@@ -1,5 +1,6 @@
 ---
 title: "Security-Transparent Code, Level 2"
+description: Understand Level 2 transparent code. See usage examples and behaviors, override patterns, inheritance rules, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "transparency"

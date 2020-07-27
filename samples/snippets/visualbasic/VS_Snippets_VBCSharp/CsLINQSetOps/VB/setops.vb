@@ -8,7 +8,7 @@
 
         Dim classGrades = New System.Collections.Generic.List(Of Integer) From {63, 68, 71, 75, 68, 92, 75}
 
-        Dim distinctQuery = From grade In classGrades 
+        Dim distinctQuery = From grade In classGrades
                             Select grade Distinct
 
         Dim sb As New System.Text.StringBuilder("The distinct grades are: ")

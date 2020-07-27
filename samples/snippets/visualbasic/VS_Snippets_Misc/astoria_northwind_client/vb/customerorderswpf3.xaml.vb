@@ -29,14 +29,14 @@ Partial Public Class CustomerOrdersWpf3
 
             ' Create a LINQ query that returns customers with related orders.
             Dim customerQuery = From cust In context.Customers _
-                                    Where cust.Country = customerCountry _
-                                    Select cust
+                                Where cust.Country = customerCountry _
+                                Select cust
 
-                '<snippetBindPagedDataSpecific>
-                ' Create a new collection for binding based on the LINQ query.
+            '<snippetBindPagedDataSpecific>
+            ' Create a new collection for binding based on the LINQ query.
             trackedCustomers = New DataServiceCollection(Of Customer)(customerQuery)
 
-                ' Load all pages of the response at once.
+            ' Load all pages of the response at once.
             While trackedCustomers.Continuation IsNot Nothing
                 trackedCustomers.Load( _
                         context.Execute(Of Customer)(trackedCustomers.Continuation.NextLinkUri))

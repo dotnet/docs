@@ -1,5 +1,6 @@
 ---
 title: "Using Data Contracts"
+description: Learn about a data contract, which defines, for each parameter or return type, what data is serialized to be exchanged between a WCF client and server.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

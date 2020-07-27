@@ -1,5 +1,6 @@
 ---
 title: "How to search strings (C# Guide)"
+description: Learn about two strategies to search for text in strings in C#. String class methods search for specific text. Regular expressions search for patterns in text.
 ms.date: 02/21/2018
 helpviewer_keywords: 
   - "searching strings [C#]"
@@ -18,11 +19,11 @@ The [string](../language-reference/builtin-types/reference-types.md#the-string-t
 
 ## Does a string contain text?
 
-The <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType> and <xref:System.String.EndsWith%2A?displayProperty=nameWithType> methods search a string for specific text. The following example shows each of these methods and a variation that uses a case insensitive search:
+The <xref:System.String.Contains%2A?displayProperty=nameWithType>, <xref:System.String.StartsWith%2A?displayProperty=nameWithType>, and <xref:System.String.EndsWith%2A?displayProperty=nameWithType> methods search a string for specific text. The following example shows each of these methods and a variation that uses a case-insensitive search:
 
 :::code language="csharp" interactive="try-dotnet-method" source="../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs" id="Snippet1":::
 
-The preceding example demonstrates an important point for using these methods. Searches are **case-sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType> enum value to specify a case insensitive search.
+The preceding example demonstrates an important point for using these methods. Searches are **case-sensitive** by default. You use the <xref:System.StringComparison.CurrentCultureIgnoreCase?displayProperty=nameWithType> enumeration value to specify a case-insensitive search.
 
 ## Where does the sought text occur in a string?
 
@@ -36,7 +37,7 @@ The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> cla
 
 The following code example searches for the word "the" or "their" in a sentence, ignoring case. The static method <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=nameWithType> performs the search. You give it the string to search and a search pattern. In this case, a third argument specifies case-insensitive search. For more information, see <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType>.
 
-The search pattern describes the text you search for. The following table describes each element of the search pattern. (The table below uses the single `\` which must be escaped as `\\` in a C# string).
+The search pattern describes the text you search for. The following table describes each element of the search pattern. (The table below uses the single `\`, which must be escaped as `\\` in a C# string).
 
 | Pattern  | Meaning                          |
 |----------|----------------------------------|

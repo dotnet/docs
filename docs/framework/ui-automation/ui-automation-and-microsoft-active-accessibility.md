@@ -1,5 +1,6 @@
 ---
 title: "UI Automation and Microsoft Active Accessibility"
+description: Understand the differences between UI Automation and Microsoft Active Accessibility, the previous solution for making applications accessible.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Active Accessibility"

@@ -1,5 +1,6 @@
 ---
 title: "Lc.exe (License Compiler)"
+description: Use Lc.exe, the License Compiler. This tool reads text files that have licensing information and makes a binary file to embed in a CLR executable as a resource.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Lc.exe"

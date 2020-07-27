@@ -1,7 +1,7 @@
 ---
 title: "Boolean logical operators - C# reference"
 description: "Learn about C# operators that perform logical negation, conjunction (AND), and inclusive and exclusive disjunction (OR) operations with Boolean operands."
-ms.date: 09/27/2019
+ms.date: 06/29/2020
 author: pkulikov
 f1_keywords: 
   - "!_CSharpKeyword"
@@ -109,8 +109,14 @@ The [logical OR operator](#logical-or-operator-) `|` also computes the logical O
 
 ## Nullable Boolean logical operators
 
-For `bool?` operands, the `&` and `|` operators support the three-valued logic. The semantics of these operators is defined by the following table:  
-  
+For `bool?` operands, the [`&` (logical AND)](#logical-and-operator-) and [`|` (logical OR)](#logical-or-operator-) operators support the three-valued logic as follows:
+
+- The `&` operator produces `true` only if both its operands evaluate to `true`. If either `x` or `y` evaluates to `false`, `x & y` produces `false` (even if another operand evaluates to `null`). Otherwise, the result of `x & y` is `null`.
+
+- The `|` operator produces `false` only if both its operands evaluate to `false`. If either `x` or `y` evaluates to `true`, `x | y` produces `true` (even if another operand evaluates to `null`). Otherwise, the result of `x | y` is `null`.
+
+The following table presents that semantics:
+
 |x|y|x&y|x&#124;y|  
 |----|----|----|----|  
 |true|true|true|true|  

@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Binding in Code"
+description: Learn how to create a binding in code in a Windows Presentation Foundation application by calling the SetBinding method directly.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

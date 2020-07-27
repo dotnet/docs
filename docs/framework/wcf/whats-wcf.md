@@ -1,5 +1,6 @@
 ---
 title: "What Is Windows Communication Foundation"
+description: Learn about the Windows Communication Foundation, which is a framework for building service-oriented applications.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Communication Foundation [WCF], technology overview"

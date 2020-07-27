@@ -1,5 +1,6 @@
 ---
 title: "How to: View the Contents of the Global Assembly Cache"
+description: Learn how to view the contents of the global assembly cache in .NET by using the global assembly cache (GAC) tool (gacutil.exe).
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "assemblies [.NET Framework], global assembly cache"

@@ -1,6 +1,6 @@
 ---
 title: "await operator - C# reference"
-ms.date: 11/08/2019
+ms.date: 07/13/2020
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
@@ -25,11 +25,17 @@ You can use the `await` operator only in a method, [lambda expression](../../pro
 
 The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharplang/spec/expressions.md#awaitable-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
-Beginning with C# 8.0, you can use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../keywords/foreach-in.md) article and the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
-
 The type of expression `await t` is `TResult` if the type of expression `t` is <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>. If the type of `t` is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, the type of `await t` is `void`. In both cases, if `t` throws an exception, `await t` rethrows the exception. For more information about exception handling, see the [Exceptions in async methods](../keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch statement](../keywords/try-catch.md) article.
 
 The `async` and `await` keywords are available in C# 5 and later.
+
+## Asynchronous streams and disposables
+
+Beginning with C# 8.0, you can work with asynchronous streams and disposables.
+
+You use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [`foreach` statement](../keywords/foreach-in.md) article and the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
+
+You use the `await using` statement to work with an asynchronously disposable object, that is, an object of a type that implements an <xref:System.IAsyncDisposable> interface. For more information, see the [Using async disposable](../../../standard/garbage-collection/implementing-disposeasync.md#using-async-disposable) section of the [Implement a DisposeAsync method](../../../standard/garbage-collection/implementing-disposeasync.md) article.
 
 ## await operator in the Main method
 

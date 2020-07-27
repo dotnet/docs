@@ -20,7 +20,7 @@ Public Class PipeServer
         Thread.Sleep(250)
         While i > 0
             For j As Integer = 0 To numThreads - 1
-                If Not(servers(j) Is Nothing) Then
+                If Not (servers(j) Is Nothing) Then
                     if servers(j).Join(250)
                         Console.WriteLine("Server thread[{0}] finished.", servers(j).ManagedThreadId)
                         servers(j) = Nothing
@@ -63,8 +63,8 @@ Public Class PipeServer
                 filename, threadId, pipeServer.GetImpersonationUserName())
             pipeServer.RunAsClient(AddressOf fileReader.Start)
             '</snippet2>
-        ' Catch the IOException that is raised if the pipe is broken
-        ' or disconnected.
+            ' Catch the IOException that is raised if the pipe is broken
+            ' or disconnected.
         Catch e As IOException
             Console.WriteLine("ERROR: {0}", e.Message)
         End Try

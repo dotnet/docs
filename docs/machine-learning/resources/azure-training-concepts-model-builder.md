@@ -51,7 +51,7 @@ To create an Azure Machine Learning workspace, the following are required:
 
 ## Training
 
-Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. The training process takes some time and the amount of time may vary depending on the size of compute selected as well as amount of data. The first time a model is trained, you can expect a slightly longer training time because resources have to be provisioned. You can track the progress of your runs by selecting the "Monitor current run in Azure portal" link in Visual Studio.
+Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. The training process takes some time and the amount of time may vary depending on the size of compute selected as well as amount of data. You can track the progress of your runs by selecting the "Monitor current run in Azure portal" link in Visual Studio.
 
 ## Results
 

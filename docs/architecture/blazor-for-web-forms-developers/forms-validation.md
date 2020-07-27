@@ -3,6 +3,7 @@ title: Forms and validation
 description: Learn how to build forms with client-side validation in Blazor.
 author: danroth27
 ms.author: daroth
+no-loc: [Blazor, "Blazor WebAssembly"]
 ms.date: 09/19/2019
 ---
 # Forms and validation

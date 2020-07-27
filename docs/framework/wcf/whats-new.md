@@ -1,5 +1,6 @@
 ---
 title: "What's New in Windows Communication Foundation 4.5"
+description: This article describes the features new to Windows Communication Foundation (WCF) version 4.5 and links to additional resources.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WCF [WCF], what's new"

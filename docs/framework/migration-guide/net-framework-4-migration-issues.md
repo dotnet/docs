@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework 4 migration issues"
+description: Learn about migration issues between .NET Framework 3.5 Service Pack 1 and .NET Framework 4, including fixes and changes for standards compliance and security.
 ms.date: "05/02/2017"
 helpviewer_keywords:
   - ".NET Framework 4, migration"

@@ -1,5 +1,6 @@
 ---
 title: XpsDocumentWriter.raise__WritingCancelled Method (System.Windows.Xps)
+description: Understand the XpsDocumentWriter.raise__WritingCancelled method, which raises the WritingCancelled event for an XML Paper Specification (XPS) document in .NET.
 ms.date: 12/12/2007
 api_location:
 - system.printing.dll

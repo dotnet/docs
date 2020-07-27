@@ -1,5 +1,6 @@
 ---
 title: View Multiple Lines in TextBox Control
+description: Learn how to view multiple lines in the Windows Forms TextBox control by setting the Multiline, WordWrap, and ScrollBars properties.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "newline"

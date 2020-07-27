@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET Core
 description: Find resources to learn how to build .NET Core applications on Windows, Linux, and macOS.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 12/03/2019
 ms.custom: vs-dotnet
@@ -69,7 +69,7 @@ Get started developing .NET Core applications by following these step-by-step tu
 - [Get started with .NET Core on macOS using Visual Studio Code](./tutorials/using-on-macos.md)
 - [Get started with .NET Core using the command-line](./tutorials/cli-create-console-app.md)
 - [Get started with .NET Core on macOS using Visual Studio for Mac](./tutorials/using-on-mac-vs.md)
-- [Build a complete .NET Core solution on macOS using Visual Studio for Mac](./tutorials/using-on-mac-vs-full-solution.md)
+- [Build a .NET Standard library on macOS using Visual Studio for Mac](tutorials/library-with-visual-studio-mac.md)
 
 |   |   |
 |---|---|

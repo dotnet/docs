@@ -28,10 +28,10 @@ Module Module1
 
         ' <Snippet2>
         Dim query = From ord In db.Orders, prod In db.Products _
-            Join det In db.OrderDetails _
-            On New With {ord.OrderID, prod.ProductID} Equals _
-            New With {det.OrderID, det.ProductID} _
-            Select ord.OrderID, prod.ProductID, det.UnitPrice
+                    Join det In db.OrderDetails _
+                    On New With {ord.OrderID, prod.ProductID} Equals _
+                    New With {det.OrderID, det.ProductID} _
+                    Select ord.OrderID, prod.ProductID, det.UnitPrice
         ' </Snippet2>
 
     End Sub

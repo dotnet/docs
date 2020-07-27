@@ -3,6 +3,7 @@ title: Pages, routing, and layouts
 description: Learn how to create pages in Blazor, work with client-side routing, and manage page layouts.
 author: danroth27
 ms.author: daroth
+no-loc: [Blazor]
 ms.date: 09/19/2019
 ---
 # Pages, routing, and layouts

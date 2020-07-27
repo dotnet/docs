@@ -1,5 +1,6 @@
 ---
 title: "Variance in Delegates (C#)"
+description: Learn how the variance support in .NET Framework allows you to match method signatures with delegate types in all delegates.
 ms.date: 07/20/2015
 ms.assetid: 19de89d2-8224-4406-8964-2965b732b890
 ---
@@ -152,7 +153,8 @@ dvariant("test");
 ```  
   
 ### Combining Variant Generic Delegates  
- You should not combine variant delegates. The <xref:System.Delegate.Combine%2A> method does not support variant delegate conversion and expects delegates to be of exactly the same type. This can lead to a run-time exception when you combine delegates either by using the <xref:System.Delegate.Combine%2A> method or by using the `+` operator, as shown in the following code example.  
+
+Don't combine variant delegates. The <xref:System.Delegate.Combine%2A> method does not support variant delegate conversion and expects delegates to be of exactly the same type. This can lead to a run-time exception when you combine delegates either by using the <xref:System.Delegate.Combine%2A> method or by using the `+` operator, as shown in the following code example.  
   
 ```csharp  
 Action<object> actObj = x => Console.WriteLine("object: {0}", x);  

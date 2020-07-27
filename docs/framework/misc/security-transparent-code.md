@@ -1,5 +1,6 @@
 ---
 title: "Security-Transparent Code"
+description: Understand the purpose of the transparent code model, how to specify the transparency level, and transparency enforcement in security.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "transparent code"

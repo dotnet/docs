@@ -1,5 +1,6 @@
 ---
 title: "Serializing to an XmlReader (Invoking XSLT) (C#)"
+description: Learn how to use CreateReader to create an XmlReader in C#. The module that reads from this XmlReader reads the nodes from the XML tree and processes them.
 ms.date: 07/20/2015
 ms.assetid: 4cc3ee03-ef4c-429b-a408-fedd10b728cd
 ---

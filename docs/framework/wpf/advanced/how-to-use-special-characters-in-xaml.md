@@ -1,5 +1,6 @@
 ---
 title: "How to: Use Special Characters in XAML"
+description: Learn about the syntax for encoding special characters in Unicode UTF-8 file format in Visual Studio for use in XAML files in Windows Presentation Foundation.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Unicode UTF-8 file format"

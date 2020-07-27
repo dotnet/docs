@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Numerical Data in a Namespace3"
+description: This XML file is used in various examples in the LINQ to XML documentation. It contains data for summing, averaging, and grouping. The XML is in a namespace.
 ms.date: 07/20/2015
 ms.assetid: 51750cab-3c66-4511-90fb-b9d211308d31
 ---

@@ -7,90 +7,90 @@ Imports System.Threading.Tasks.Dataflow
 ' and finds all reversed words that appear in that book.
 Module DataflowReversedWords
 
-   Sub Main()
-      ' <snippet3>
-      '
-      ' Create the members of the pipeline.
-      ' 
+    Sub Main()
+        ' <snippet3>
+        '
+        ' Create the members of the pipeline.
+        ' 
 
-      ' Downloads the requested resource as a string.
-      Dim downloadString = New TransformBlock(Of String, String)(
-          Async Function(uri)
-             Console.WriteLine("Downloading '{0}'...", uri)
+        ' Downloads the requested resource as a string.
+        Dim downloadString = New TransformBlock(Of String, String)(
+            Async Function(uri)
+                Console.WriteLine("Downloading '{0}'...", uri)
 
-             Return Await New HttpClient().GetStringAsync(uri)
-          End Function)
+                Return Await New HttpClient().GetStringAsync(uri)
+            End Function)
 
-      ' Separates the specified text into an array of words.
-      Dim createWordList = New TransformBlock(Of String, String())(
-         Function(text)
-            Console.WriteLine("Creating word list...")
+        ' Separates the specified text into an array of words.
+        Dim createWordList = New TransformBlock(Of String, String())(
+           Function(text)
+               Console.WriteLine("Creating word list...")
 
-            ' Remove common punctuation by replacing all non-letter characters 
-            ' with a space character.
-            Dim tokens() As Char = text.Select(Function(c) If(Char.IsLetter(c), c, " "c)).ToArray()
-            text = New String(tokens)
+             ' Remove common punctuation by replacing all non-letter characters 
+             ' with a space character.
+             Dim tokens() As Char = text.Select(Function(c) If(Char.IsLetter(c), c, " "c)).ToArray()
+               text = New String(tokens)
 
-            ' Separate the text into an array of words.
-            Return text.Split(New Char() {" "c}, StringSplitOptions.RemoveEmptyEntries)
-         End Function)
+             ' Separate the text into an array of words.
+             Return text.Split(New Char() {" "c}, StringSplitOptions.RemoveEmptyEntries)
+           End Function)
 
-      ' Removes short words and duplicates.
-      Dim filterWordList = New TransformBlock(Of String(), String())(
-         Function(words)
-            Console.WriteLine("Filtering word list...")
+        ' Removes short words and duplicates.
+        Dim filterWordList = New TransformBlock(Of String(), String())(
+           Function(words)
+               Console.WriteLine("Filtering word list...")
 
-            Return words.Where(Function(word) word.Length > 3).Distinct().ToArray()
-         End Function)
+               Return words.Where(Function(word) word.Length > 3).Distinct().ToArray()
+           End Function)
 
-      ' Finds all words in the specified collection whose reverse also 
-      ' exists in the collection.
-      Dim findReversedWords = New TransformManyBlock(Of String(), String)(
-         Function(words)
+        ' Finds all words in the specified collection whose reverse also 
+        ' exists in the collection.
+        Dim findReversedWords = New TransformManyBlock(Of String(), String)(
+           Function(words)
 
-            Dim wordsSet = New HashSet(Of String)(words)
+               Dim wordsSet = New HashSet(Of String)(words)
 
-            Return From word In words.AsParallel()
-                   Let reverse = New String(word.Reverse().ToArray())
-                   Where word <> reverse AndAlso wordsSet.Contains(reverse)
-                   Select word
-         End Function)
+               Return From word In words.AsParallel()
+                      Let reverse = New String(word.Reverse().ToArray())
+                      Where word <> reverse AndAlso wordsSet.Contains(reverse)
+                      Select word
+           End Function)
 
-      ' Prints the provided reversed words to the console.    
-      Dim printReversedWords = New ActionBlock(Of String)(
-         Sub(reversedWord)
-            Console.WriteLine("Found reversed words {0}/{1}", reversedWord, New String(reversedWord.Reverse().ToArray()))
-         End Sub)
-      ' </snippet3>
+        ' Prints the provided reversed words to the console.    
+        Dim printReversedWords = New ActionBlock(Of String)(
+           Sub(reversedWord)
+               Console.WriteLine("Found reversed words {0}/{1}", reversedWord, New String(reversedWord.Reverse().ToArray()))
+           End Sub)
+        ' </snippet3>
 
-      ' <snippet4>
-      '
-      ' Connect the dataflow blocks to form a pipeline.
-      '
+        ' <snippet4>
+        '
+        ' Connect the dataflow blocks to form a pipeline.
+        '
 
-      Dim linkOptions = New DataflowLinkOptions With { .PropagateCompletion = True }
+        Dim linkOptions = New DataflowLinkOptions With {.PropagateCompletion = True}
 
-      downloadString.LinkTo(createWordList, linkOptions)
-      createWordList.LinkTo(filterWordList, linkOptions)
-      filterWordList.LinkTo(findReversedWords, linkOptions)
-      findReversedWords.LinkTo(printReversedWords, linkOptions)
-      ' </snippet4>
+        downloadString.LinkTo(createWordList, linkOptions)
+        createWordList.LinkTo(filterWordList, linkOptions)
+        filterWordList.LinkTo(findReversedWords, linkOptions)
+        findReversedWords.LinkTo(printReversedWords, linkOptions)
+        ' </snippet4>
 
-      ' <snippet6>
-      ' Process "The Iliad of Homer" by Homer.
-      downloadString.Post("http://www.gutenberg.org/cache/epub/16452/pg16452.txt")
-      ' </snippet6>
+        ' <snippet6>
+        ' Process "The Iliad of Homer" by Homer.
+        downloadString.Post("http://www.gutenberg.org/cache/epub/16452/pg16452.txt")
+        ' </snippet6>
 
-      ' <snippet7>
-      ' Mark the head of the pipeline as complete.
-      downloadString.Complete()
-      ' </snippet7>
+        ' <snippet7>
+        ' Mark the head of the pipeline as complete.
+        downloadString.Complete()
+        ' </snippet7>
 
-      ' <snippet8>
-      ' Wait for the last block in the pipeline to process all messages.
-      printReversedWords.Completion.Wait()
-      ' </snippet8>
-   End Sub
+        ' <snippet8>
+        ' Wait for the last block in the pipeline to process all messages.
+        printReversedWords.Completion.Wait()
+        ' </snippet8>
+    End Sub
 
 End Module
 

@@ -13,7 +13,7 @@ Public Class BinReadWrite
         Dim bw As New BinaryWriter(fs, utf8)
         Dim bstring As String
 
-        bstring  = "This is line #1 of text written as a binary stream." + vbNewLine
+        bstring = "This is line #1 of text written as a binary stream." + vbNewLine
         bstring = bstring + "This is line #2 of text written as a binary stream." + vbNewLine
         bstring = bstring + "This is line #3 of text written as a binary stream." + vbNewLine
         bw.Write(bstring)
@@ -42,7 +42,7 @@ Public Class BinReadWrite
         Dim br As New BinaryReader(fs, utf8)
         ' ReadString will read the length prefix and return the string.
         bstring = br.ReadString()
-        Console.WriteLine("Read from BinaryReader: "+ vbNewLine + bstring)
+        Console.WriteLine("Read from BinaryReader: " + vbNewLine + bstring)
         fs.Close()
     End Sub
 End Class

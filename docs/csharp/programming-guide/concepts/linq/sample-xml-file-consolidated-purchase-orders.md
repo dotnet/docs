@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Consolidated Purchase Orders2"
+description: This XML file is used in various examples in the LINQ to XML documentation. The file contains purchase orders with different shapes from multiple companies.
 ms.date: 07/20/2015
 ms.assetid: 9d9698a5-95f2-4564-813b-ba536cdf3bfb
 ---

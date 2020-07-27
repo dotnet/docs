@@ -1,5 +1,6 @@
 ---
 title: "Enhancing Debugging with the Debugger Display Attributes"
+description: Get started with debugger display attributes in .NET, which allow the type developer to also specify what the type will look like when it's shown in a debugger.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

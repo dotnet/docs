@@ -1,5 +1,6 @@
 ---
 title: "How to: Run Partially Trusted Code in a Sandbox"
+description: Discover how to run partially trusted code in a sandbox in .NET. The AppDomain class is an effective way of sandboxing managed applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "partially trusted code"
@@ -116,7 +117,7 @@ AppDomain.CreateDomain( string friendlyName,
            typeof(Sandboxer).FullName );  
     ```  
   
-     Note that in order to create an instance of a class in a new domain, the class has to extend the <xref:System.MarshalByRefObject> class  
+     To create an instance of a class in a new domain, the class must extend the <xref:System.MarshalByRefObject> class.
   
     ```csharp
     class Sandboxer:MarshalByRefObject  

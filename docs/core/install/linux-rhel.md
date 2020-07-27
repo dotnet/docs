@@ -1,7 +1,7 @@
 ---
 title: Install .NET Core on RHEL - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on RHEL.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
 ---
@@ -95,7 +95,7 @@ As an alternative to the ASP.NET Core Runtime, you can install the .NET Core Run
 
 ## Dependencies
 
-[!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
+[!INCLUDE [linux-rpm-install-dependencies](includes/linux-rpm-install-dependencies.md)]
 
 ## Scripted install
 

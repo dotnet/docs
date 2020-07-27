@@ -157,7 +157,7 @@ Class PhotoServiceStreamProvider
     End Property
 #End Region
 
-   
+
 #Region "IDisposable Members"
 
     Public Sub Dispose() Implements IDisposable.Dispose

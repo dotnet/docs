@@ -5,7 +5,7 @@ Imports System.IO
 Module continuations
     Public Sub Main
     End Sub
-    
+
     Class Program
 
         Shared Sub MultiTaskContinuations()
@@ -39,7 +39,7 @@ Module continuations
             task1.Start()
             task2.Start()
             continuation.Wait()
-            
+
             cts.Dispose()
         End Sub
 

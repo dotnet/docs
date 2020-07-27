@@ -35,8 +35,8 @@ Module Module1
             Try
                 Dim ordFetch = _
                 (From ofetch In db.Orders _
-                Where ofetch.OrderID = reqOrder _
-                Select ofetch).First()
+                 Where ofetch.OrderID = reqOrder _
+                 Select ofetch).First()
 
                 db.Orders.DeleteOnSubmit(ordFetch)
                 Console.WriteLine("{0} OrderID is marked for deletion.,", ordFetch.OrderID)

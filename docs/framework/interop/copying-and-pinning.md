@@ -1,5 +1,6 @@
 ---
 title: "Copying and Pinning"
+description: Review how the interop marshaler can copy or pin data that's being marshaled. Copying data places a copy of data from one memory location into another location.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "pinning, interop marshaling"

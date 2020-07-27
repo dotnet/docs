@@ -1,5 +1,6 @@
 ---
 title: "ServicePoint.m_ConnectionGroupList Field"
+description: Understand the ServicePoint.m_ConnectionGroupList field, a hash table of connection groups that each hold a connection for the ServicePoint URI in .NET.
 ms.date: "05/01/2017"
 topic_type: 
   - "apiref"

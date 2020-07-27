@@ -1,5 +1,6 @@
 ---
 title: "asynchronousThreadAbort MDA"
+description: Review how the asynchronousThreadAbort managed debugging assistant (MDA) is activated when a thread tries to put an asynchronous abort into another thread.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "asynchronous thread aborts"

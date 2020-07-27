@@ -1,6 +1,6 @@
 ---
 title: "Generics and Arrays - C# Programming Guide"
-description: Learn about generic arrays used in C# 2.0 and later. See code examples and view additional available resources.
+description: Learn about generics and arrays in C# programming. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], arrays"

@@ -385,6 +385,24 @@ You can access authentication state within procedural logic by accessing the use
 }
 ```
 
+The `AuthenticationState` does first need to be setup as a cascading value before it can be bound to a cascading parameter like this. That's typically done using the `CascadingAuthenticationState` component. This is typically done in `App.razor`:
+
+```razor
+<CascadingAuthenticationState>
+    <Router AppAssembly="@typeof(Program).Assembly">
+        <Found Context="routeData">
+            <AuthorizeRouteView RouteData="@routeData"
+                DefaultLayout="@typeof(MainLayout)" />
+        </Found>
+        <NotFound>
+            <LayoutView Layout="@typeof(MainLayout)">
+                <p>Sorry, there's nothing at this address.</p>
+            </LayoutView>
+        </NotFound>
+    </Router>
+</CascadingAuthenticationState>
+```
+
 ## Summary
 
 Blazor uses the same security model as ASP.NET Core, which is ASP.NET Core Identity. Migrating from universal providers to ASP.NET Core Identity is relatively straightforward, assuming not too much customization was applied to the original data schema. Once the data has been migrated, working with authentication and authorization in Blazor apps is well-documented, with configurable as well as programmatic support for most security requirements.

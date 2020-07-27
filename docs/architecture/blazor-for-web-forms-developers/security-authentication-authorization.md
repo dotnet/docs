@@ -139,7 +139,7 @@ Requiring a policy be satisfied:
 @attribute [Authorize(Policy ="CanadiansOnly")]
 ```
 
-If you need access to a user's authentication state, roles, or claims in your code, there are two primary ways to achieve this. The first is to configure authentication state as a cascading parameter. The second is to access the state using an injected `AuthenticationStateProvider`. The details of each of these approaches are described in the [Blazor Security documentation](https://docs.microsoft.com/aspnet/core/blazor/security/).
+If you need access to a user's authentication state, roles, or claims in your code, there are two primary ways to achieve this. The first is to receive the authentication state as a cascading parameter. The second is to access the state using an injected `AuthenticationStateProvider`. The details of each of these approaches are described in the [Blazor Security documentation](https://docs.microsoft.com/aspnet/core/blazor/security/).
 
 The following code shows how to receive the `AuthenticationState` as a cascading parameter:
 

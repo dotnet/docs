@@ -17,7 +17,7 @@ The Universal Providers work with a SQL database schema that includes tables lik
 
 ![universal providers schema](./media/security/membership-tables.png)
 
-The universal provider handle users, membership, roles, and profiles. Users are assigned globally unique identifiers and very basic information (userId, userName) was stored in the `aspnet_Users` table. Authentication information, such as password, password format, password salt, lockout counters and details, etc. are stored in the `aspnet_Membership` table. Roles consist simply of names and unique identifiers, which are assigned to users via the `aspnet_UsersInRoles` association table, providing a many-to-many relationship.
+The universal provider handles users, membership, roles, and profiles. Users are assigned globally unique identifiers and very basic information (userId, userName) is stored in the `aspnet_Users` table. Authentication information, such as password, password format, password salt, lockout counters and details, etc. are stored in the `aspnet_Membership` table. Roles consist simply of names and unique identifiers, which are assigned to users via the `aspnet_UsersInRoles` association table, providing a many-to-many relationship.
 
 If your existing system is using roles in addition to membership, you will need to migrate the user accounts, the associated passwords, the roles, and the role membership into ASP.NET Core Identity. You will also most likely need to update your code where you're currently performing role checks using if statements to instead leverage declarative filters, attributes, and/or tag helpers. We will review migration considerations in greater detail at the end of this chapter.
 

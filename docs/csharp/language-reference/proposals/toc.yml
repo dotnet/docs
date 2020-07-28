@@ -82,3 +82,31 @@
       href: ../../../../_csharplang/proposals/csharp-8.0/readonly-instance-members.md
     - name: Nested stackalloc
       href: ../../../../_csharplang/proposals/csharp-8.0/nested-stackalloc.md
+  - name: C# 9.0 specification proposal
+    items:
+    - name: Covariant return types
+      href: ../../../../_csharplang/proposals/csharp-9.0/covariant-returns.md
+    - name: Extending partial methods
+      href: ../../../../_csharplang/proposals/csharp-9.0/extending-partial-methods.md
+    - name: Function pointers
+      href: ../../../../_csharplang/proposals/csharp-9.0/function-pointers.md
+    - name: Init only setters
+      href: ../../../../_csharplang/proposals/csharp-9.0/init.md
+    - name: Lambda discard parameters
+      href: ../../../../_csharplang/proposals/csharp-9.0/lamdba-discard-parameters.md
+    - name: Attributes on local functions
+      href: ../../../../_csharplang/proposals/csharp-9.0/local-function-attributes.md
+    - name: Module initializers
+      href: ../../../../_csharplang/proposals/csharp-9.0/module-initializers.md
+    - name: Native sized integers
+      href: ../../../../_csharplang/proposals/csharp-9.0/native-integers.md
+    - name: Records
+      href: ../../../../_csharplang/proposals/csharp-9.0/records.md
+    - name: Supress emitting localsinit flag
+      href: ../../../../_csharplang/proposals/csharp-9.0/skip-localsinit.md
+    - name: Target-types conditional expression
+      href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-conditional-expression.md
+    - name: Target-typed new expressions
+      href: ../../../../_csharplang/proposals/csharp-9.0/target-typed-new.md
+    - name: Top-level statements
+      href: ../../../../_csharplang/proposals/csharp-9.0/Top-level statements.md

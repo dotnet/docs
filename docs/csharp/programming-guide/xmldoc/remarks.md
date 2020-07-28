@@ -1,5 +1,6 @@
 ---
 title: "<remarks> - C# programming guide"
+description: Learn about the XML <remarks> tag. This tag is used to add information about a type, supplementing the information specified with <summary>.
 ms.date: 07/20/2015
 f1_keywords:
   - "remarks"

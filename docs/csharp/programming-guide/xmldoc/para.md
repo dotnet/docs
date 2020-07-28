@@ -1,5 +1,6 @@
 ---
 title: "<para> - C# programming guide"
+description: Learn about the XML <para> tag. This tag lets you add structure to the text in another tag, such as <summary>, <remarks>, or <returns>.
 ms.date: 07/20/2015
 f1_keywords:
   - "<para>"

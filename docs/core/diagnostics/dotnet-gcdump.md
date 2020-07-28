@@ -7,7 +7,7 @@ ms.date: 07/26/2020
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 
-## Installing `dotnet-gcdump`
+## Install dotnet-gcdump
 
 To install the latest release version of the `dotnet-gcdump` [NuGet package](https://www.nuget.org/packages/dotnet-gcdump), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
@@ -25,9 +25,9 @@ dotnet-gcdump [-h|--help] [--version] <command>
 
 The `dotnet-gcdump` global tool is a way to collect gcdumps of live .NET processes. It is built using the EventPipe technology which is a cross-platform alternative to ETW on Windows. Gcdumps are created by triggering a GC in the target process, turning on special events, and regenerating the graph of object roots from the event stream. This allows for gcdumps to be collected while the process is running with minimal overhead. These dumps are useful for several scenarios:
 
-- comparing the number of objects on the heap at several points in time.
-- analyzing roots of objects (answering questions like, "what still has a reference to this type?").
-- collecting general statistics about the counts of objects on the heap.
+- Comparing the number of objects on the heap at several points in time.
+- Analyzing roots of objects (answering questions like, "what still has a reference to this type?").
+- Collecting general statistics about the counts of objects on the heap.
 
 ## Options
 

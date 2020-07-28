@@ -1,5 +1,6 @@
 ---
 title: "How to create hierarchy using grouping (C#)"
+description: Learn how to group data, and then generate a new XML file where the XML hierarchy reflects the grouping.
 ms.date: 07/20/2015
 ms.assetid: 0213d59e-5f76-438c-9cab-4bf11f7b971d
 ---

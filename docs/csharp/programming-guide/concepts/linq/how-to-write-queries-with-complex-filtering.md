@@ -1,5 +1,6 @@
 ---
 title: "How to write queries with complex filtering (C#)"
+description: Learn how to write LINQ to XML queries with complex filters. See code examples and view additional resources.
 ms.date: 07/20/2015
 ms.assetid: 4065d901-cf89-4e47-8bf9-abb65acfb003
 ---

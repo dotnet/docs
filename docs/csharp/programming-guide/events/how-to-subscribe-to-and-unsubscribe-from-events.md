@@ -1,5 +1,6 @@
 ---
 title: "How to subscribe to and unsubscribe from events - C# Programming Guide"
+description: Learn how to subscribe to and unsubscribe from events. Subscribe to events using the Visual Studio IDE, programmatically, or using an anonymous method.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event handlers [C#], creating"

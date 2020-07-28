@@ -1,5 +1,6 @@
 ---
 title: "Exceptions and Exception Handling - C# Programming Guide"
+description: Learn about exceptions and exception handling. These C# features help deal with unexpected or exceptional situations that happen when a program is running.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "exception handling [C#]"

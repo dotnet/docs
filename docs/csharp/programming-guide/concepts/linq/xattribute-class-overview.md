@@ -1,5 +1,6 @@
 ---
 title: "XAttribute Class Overview (C#)"
+description: Attributes are name/value pairs associated with an element. XAttribute represents XML attributes. Learn about working with attributes in LINQ to XML in C#.
 ms.date: 07/20/2015
 ms.assetid: 5a630f24-f9ad-400e-831e-c14ebfc9e142
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Preserving White Space while Loading or Parsing XML"
+description: Learn how to control white-space behavior while loading or parsing XML, specifically the behavior of methods that populate XML trees.
 ms.date: 07/20/2015
 ms.assetid: f3ff58c4-55aa-4fcd-b933-e3a2ee6e706c
 ---

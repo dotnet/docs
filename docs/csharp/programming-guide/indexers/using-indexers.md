@@ -1,5 +1,6 @@
 ---
 title: "Using Indexers - C# Programming Guide"
+description: Learn how to declare and use an indexer for a class, struct, or interface in C#. This article includes example code.
 ms.date: 07/15/2020
 helpviewer_keywords:
   - "indexers [C#], about indexers"

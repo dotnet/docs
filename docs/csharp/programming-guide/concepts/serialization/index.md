@@ -1,5 +1,6 @@
 ---
 title: "Serialization (C#)"
+description: Serialization converts an object into a stream of bytes to store the object or transmit it to memory, a database, or a file. 
 ms.date: 01/02/2020
 ---
 # Serialization (C#)

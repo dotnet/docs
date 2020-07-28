@@ -1,4 +1,8 @@
-﻿Namespace ExampleNamespace
+﻿Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Media
+
+Namespace ExampleNamespace
 Partial Public Class ExamplePage
 '<SnippetButtonWithCodeBehindHandler>
 Private Sub Button_Click(ByVal sender As System.Object, ByVal e As System.Windows.RoutedEventArgs)

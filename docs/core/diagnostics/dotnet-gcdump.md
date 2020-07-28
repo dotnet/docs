@@ -77,7 +77,7 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 ## `dotnet-gcdump ps`
 
-Lists the dotnet processes that gcdumps can be collected.
+Lists the dotnet processes that gcdumps can be collected for.
 
 ### Synopsis
 

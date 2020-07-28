@@ -1,5 +1,6 @@
 ---
 title: "Querying an XDocument vs. Querying an XElement (C#)"
+description: Learn about the differences between querying an XDocument and querying an XElement. Review code examples that demonstrate these differences.
 ms.date: 07/20/2015
 ms.assetid: 46221ff5-62ee-4de8-93ba-66465facb5c1
 ---

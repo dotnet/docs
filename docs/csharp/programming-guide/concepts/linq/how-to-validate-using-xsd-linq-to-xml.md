@@ -1,5 +1,6 @@
 ---
 title: "How to validate using XSD (LINQ to XML) (C#)"
+description: Learn how to validate an XML tree against an XML Schema Definition Language (XSD) file. See code examples and view additional resources.
 ms.date: 07/20/2015
 ms.assetid: 6a7f83a9-2d74-4c2b-8417-0a8595879516
 ---

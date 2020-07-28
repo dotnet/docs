@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Persisting an Object using C#"
+description: This example creates a basic Loan object in C# and persist its data to a file, then creates a new object with data from the file.
 ms.date: 04/26/2018
 ---
 # Walkthrough: persisting an object using C\#

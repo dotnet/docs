@@ -1,5 +1,6 @@
 ---
 title: "How to find attributes of siblings with a specific name (XPath-LINQ to XML) (C#)"
+description: Learn how to find all attributes of the siblings of the context node. Review a code example that uses a sample XML file.
 ms.date: 07/20/2015
 ms.assetid: c3133d64-523f-422d-8838-73d36b945ca0
 ---

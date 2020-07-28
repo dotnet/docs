@@ -1,5 +1,6 @@
 ---
 title: "How to handle an exception using try-catch - C# Programming Guide"
+description: Learn how to handle an exception using a try-catch block. See a code example and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exception handling [C#], try/catch blocks"

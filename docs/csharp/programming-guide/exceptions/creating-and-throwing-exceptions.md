@@ -1,5 +1,6 @@
 ---
 title: "Creating and Throwing Exceptions - C# Programming Guide"
+description: Learn about creating and throwing exceptions. Exceptions are used to indicate that an error has occurred while running a program.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "catching exceptions [C#]"

@@ -1,5 +1,6 @@
 ---
 title: "How to work with dictionaries using LINQ to XML (C#)"
+description: Learn how to work with dictionaries using LINQ to XML. See examples converting dictionaries to XML, and XML back to other data structures.
 ms.date: 07/20/2015
 ms.assetid: 57bcefe3-8433-4d3b-935a-511c9bcbdfa8
 ---

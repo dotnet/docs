@@ -1,5 +1,6 @@
 ---
 title: "Shape of WordprocessingML Documents (C#)"
+description: Learn about the format of a WordprocessingML document. Several C# examples use a WordprocessingML document.
 ms.date: 07/20/2015
 ms.assetid: 3791b5e0-c502-469b-bb75-a7bf6fdd0a94
 ---

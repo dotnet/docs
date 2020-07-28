@@ -1,6 +1,8 @@
 ---
 title: "Private Protected"
 ms.date: 05/10/2018
+f1_keywords:
+  - "vb.PrivateProtected"
 helpviewer_keywords:
   - "Private Protected keyword [Visual Basic]"
   - "Private Protected keyword [Visual Basic], syntax"

@@ -1,5 +1,6 @@
 ---
 title: "Query Syntax and Method Syntax in LINQ (C#)"
+description: Learn about query syntax and method syntax in LINQ. This includes standard query operator extension methods and lambda expressions.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "LINQ [C#], query syntax vs. method syntax"

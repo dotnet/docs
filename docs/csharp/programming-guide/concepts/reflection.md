@@ -1,5 +1,6 @@
 ---
 title: "Reflection (C#)"
+description: Reflection provides objects that describe assemblies, modules, and types in C#. If your code includes attributes, reflection enables you to access them.
 ms.date: 07/20/2015
 ms.assetid: f80a2362-953b-4e8e-9759-cd5f334190d4
 ---

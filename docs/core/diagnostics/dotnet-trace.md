@@ -56,15 +56,16 @@ Collects a diagnostic trace from a running process.
 ### Synopsis
 
 ```console
-dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output]
-    [--providers] [--profile <profile-name>] [--format]
+dotnet-trace collect [-h|--help] [-p|--process-id <pid>] [--buffersize <size>] [-o|--output <trace-file-path>]
+    [--providers <list-of-comma-separated-providers>] [--profile <profile-name>] [--format <Chromium|NetTrace|Speedscope>]
+    [--clrevents <clrevents>] [--clreventlevel <clreventlevel>] [-n, --name <name>]
 ```
 
 ### Options
 
 - **`-p|--process-id <PID>`**
 
-  The process to collect the trace from.
+  The process id to collect the trace from.
 
 - **`--buffersize <size>`**
 
@@ -72,7 +73,7 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
 
 - **`-o|--output <trace-file-path>`**
 
-  The output path for the collected trace data. If not specified it defaults to `trace.nettrace`.
+  The output path for the collected trace data. If not specified, it defaults to `trace.nettrace`.
 
 - **`--providers <list-of-comma-separated-providers>`**
 
@@ -88,9 +89,21 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
 
   A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
 
-- **`--format {NetTrace|Speedscope}`**
+- **`--format {Chromium|NetTrace|Speedscope}`**
 
   Sets the output format for the trace file conversion. The default is `NetTrace`.
+
+- **`--clrevents <clrevents>`**
+
+  List of CLR runtime events to emit.
+
+- **`--clreventlevel <clreventlevel>`**
+
+  Verbosity of CLR events to be emitted.
+
+- **`-n, --name <name>`**
+
+  The name of the process to collect the trace from.
 
 ## dotnet-trace convert
 
@@ -99,7 +112,7 @@ Converts `nettrace` traces to alternate formats for use with alternate trace ana
 ### Synopsis
 
 ```console
-dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
+dotnet-trace convert [<input-filename>] [-h|--help] [--format <Chromium|NetTrace|Speedscope>] [-o|--output <output-filename>]
 ```
 
 ### Arguments
@@ -110,7 +123,7 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
 ### Options
 
-- **`--format <NetTrace|Speedscope>`**
+- **`--format <Chromium|NetTrace|Speedscope>`**
 
   Sets the output format for the trace file conversion.
 
@@ -120,7 +133,7 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
 ## dotnet-trace ps
 
-Lists dotnet processes that can be attached to.
+ Lists the dotnet processes that traces can be collected from.
 
 ### Synopsis
 

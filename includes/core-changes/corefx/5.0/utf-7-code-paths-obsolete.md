@@ -53,7 +53,90 @@ Additionally, disabling UTF-7 code paths allows optimizing compilers, such as th
 
 #### Recommended action
 
+In most cases, you don't need to take any action. However, for apps that have previously activated UTF-7-related code paths, consider the guidance that follows.
 
+- If your app calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> with unknown encoding names provided by an untrusted source:
+
+  Instead, compare the encoding names against a configurable allow list. The configurable allow list should at minimum include the industry-standard "utf-8". Depending on your clients and regulatory requirements, you may also need to allow region-specific encodings such as "GB18030".
+
+  If you don't implement an allow list, <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> will return any <xref:System.Text.Encoding> that's built into the system or that's registered via a custom <xref:System.Text.EncodingProvider>. Audit your service's requirements to validate that this is the desired behavior. UTF-7 continues to be disabled by default unless your application re-enables the compatibility switch mentioned later in this article.
+
+- If you're using <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> or <xref:System.Text.UTF7Encoding> within your own protocol or file format:
+
+  Switch to using <xref:System.Text.Encoding.UTF8?displayProperty=nameWithType> or <xref:System.Text.UTF8Encoding>. UTF-8 is an industry standard and is widely supported across languages, operating systems, and runtimes. Using UTF-8 eases future maintenance of your code and makes it more interoperable with the rest of the ecosystem.
+
+- If you're comparing an <xref:System.Text.Encoding> instance against <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType>:
+
+  Instead, consider performing a check against the well-known UTF-7 code page, which is `65000`. By comparing against the code page, you avoid the warning and also handle some edge cases, such as if somebody called `new UTF7Encoding()` or subclassed the type.
+
+  ```csharp
+  void DoSomething(Encoding enc)
+  {
+      // Don't perform the check this way.
+      // It produces a warning and misses some edge cases.
+      if (enc == Encoding.UTF7)
+      {
+          // Encoding is UTF-7.
+      }
+
+      // Instead, perform the check this way.
+      if (enc != null && enc.CodePage == 65000)
+      {
+          // Encoding is UTF-7.
+      }
+  }
+  ```
+
+- If you must use <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> or <xref:System.Text.UTF7Encoding>:
+
+  You can suppress the `SYSLIB0001` warning in code or within your project's *.csproj* file.
+
+  ```csharp
+  #pragma warning suppress SYSLIB0001 // Disable the warning.
+  Encoding enc = Encoding.UTF7;
+  #pragma warning restore SYSLIB0001 // Re-enable the warning.
+  ```
+
+  ```xml
+  <Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+     <TargetFramework>net5.0</TargetFramework>
+     <!-- NoWarn below will suppress SYSLIB0001 project-wide -->
+     <NoWarn>$(NoWarn);SYSLIB0001</NoWarn>
+    </PropertyGroup>
+  </Project>
+  ```
+
+  > [!NOTE]
+  > Suppressing `SYSLIB0001` only disables the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> and <xref:System.Text.UTF7Encoding> obsoletion warnings. It doesn't disable any other warnings or change the behavior of APIs like <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>.
+
+- If you must support `Encoding.GetEncoding("utf-7", ...)`:
+
+  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [run-time configuration file](../../../../docs/core/run-time-config/index.md).
+
+  In the application's *.csproj* file:
+
+  ```xml
+  <Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+     <TargetFramework>net5.0</TargetFramework>
+     <!-- Re-enable support for UTF-7 -->
+     <EnableUnsafeUTF7Encoding>true</EnableUnsafeUTF7Encoding>
+    </PropertyGroup>
+  </Project>
+  ```
+
+  In the application's *runtimeconfig.template.json* file:
+
+  ```json
+  {
+    "configProperties": {
+      "System.Text.Encoding.EnableUnsafeUTF7Encoding": true
+    }
+  }
+  ```
+
+  If you re-enable support for UTF-7, you should perform a security review of code that calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>.
 
 #### Category
 

@@ -73,7 +73,7 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 - **`-n|--name <name>`**
 
-  The name of the process to collect the dump for.
+  The name of the process to collect the gcdump for.
 
 ## `dotnet-gcdump ps`
 

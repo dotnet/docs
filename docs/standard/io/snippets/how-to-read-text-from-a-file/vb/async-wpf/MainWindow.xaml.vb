@@ -13,9 +13,8 @@ Partial Public Class MainWindow
 
     Private Async Sub MainWindow_Loaded(sender As Object, e As RoutedEventArgs)
         Try
-            Using sr As StreamReader = New StreamReader("TestFile.txt")
-                Dim line = Await sr.ReadToEndAsync()
-                ResultBlock.Text = line
+            Using sr As New StreamReader("TestFile.txt")
+                ResultBlock.Text = Await sr.ReadToEndAsync()
             End Using
         Catch ex As FileNotFoundException
             ResultBlock.Text = ex.Message

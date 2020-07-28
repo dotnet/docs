@@ -3,14 +3,14 @@ title: dotnet-dump - .NET Core
 description: Installing and using the dotnet-dump command-line tool.
 ms.date: 10/14/2019
 ---
-# Dump collection and analysis utility (`dotnet-dump`)
+# Dump collection and analysis utility (dotnet-dump)
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
 > `dotnet-dump` isn't supported on macOS.
 
-## Installing `dotnet-dump`
+## Install dotnet-dump
 
 To install the latest release version of the `dotnet-dump` [NuGet package](https://www.nuget.org/packages/dotnet-dump), use the [dotnet tool install](../tools/dotnet-tool-install.md) command:
 
@@ -221,3 +221,4 @@ To work around this problem, install the "libc6-dev" package.
 ## See also
 
 - [Collecting and analyzing memory dumps blog](https://devblogs.microsoft.com/dotnet/collecting-and-analyzing-memory-dumps/)
+- [Heap analysis tool (dotnet-gcdump)](dotnet-gcdump.md)

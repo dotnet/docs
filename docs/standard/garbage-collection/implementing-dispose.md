@@ -14,7 +14,7 @@ ms.assetid: eb4e1af0-3b48-4fbc-ad4e-fc2f64138bf9
 
 # Implement a Dispose method
 
-Implementing the <xref:System.IDisposable.Dispose%2A> method is primarily for releasing unmanaged resources used by your code. When working with instance members that are <xref:System.IDisposable> implementations, it's common to cascade <xref:System.IDisposable.Dispose%2A> calls. There are additional reasons for implementing <xref:System.IDisposable.Dispose%2A>, such as undoing something that was previously done. For example, freeing memory that was allocated, removing an item from a collection that was added, signaling the release of a lock that was acquired, and so on.
+Implementing the <xref:System.IDisposable.Dispose%2A> method is primarily for releasing unmanaged resources. When working with instance members that are <xref:System.IDisposable> implementations, it's common to cascade <xref:System.IDisposable.Dispose%2A> calls. There are additional reasons for implementing <xref:System.IDisposable.Dispose%2A>, such as undoing something that was previously done. For example, freeing memory that was allocated, removing an item from a collection that was added, signaling the release of a lock that was acquired, and so on.
 
 The [.NET garbage collector](index.md) does not allocate or release unmanaged memory. The pattern for disposing an object, referred to as the dispose pattern, imposes order on the lifetime of an object. The dispose pattern is used for objects that implement the <xref:System.IDisposable> interface, and is common when interacting with file and pipe handles, registry handles, wait handles, or pointers to blocks of unmanaged memory. This is because the garbage collector is unable to reclaim unmanaged objects.
 

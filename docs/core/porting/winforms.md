@@ -30,8 +30,8 @@ In this article, various names are used to identify types of files used for migr
 - A working Windows Forms project in a solution that builds and runs without issue.
 - A project coded in C#.
 
-> [!NOTE] <!-- TODO: (Need guidance on how this note should be changed) -->
-> .NET Core 3.0 projects are only supported in **Visual Studio 2019** or a later version. Starting with **Visual Studio 2019 version 16.5 Preview 1**, the .NET Core Windows Forms designer is also supported.
+> [!NOTE]
+> .NET Core 3.0 projects are only supported in **Visual Studio 2019** or a later version. Starting with **Visual Studio 2019 version 16.5**, the .NET Core Windows Forms designer is also supported.
 >
 > To enable the designer, go to **Tools** > **Options** > **Environment** > **Preview Features** and select the **Use the preview Windows Forms designer for .NET Core apps** option.
 

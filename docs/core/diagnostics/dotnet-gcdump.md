@@ -3,7 +3,7 @@ title: dotnet-gcdump - .NET Core
 description: Installing and using the dotnet-gcdump command-line tool.
 ms.date: 07/26/2020
 ---
-# Heap analysis tool (`dotnet-gcdump`)
+# Heap analysis tool (dotnet-gcdump)
 
 **This article applies to:** ✔️ .NET Core 3.1 SDK and later versions
 

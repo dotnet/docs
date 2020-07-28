@@ -69,7 +69,7 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 - **`-t|--timeout <timeout>`**
 
-  Give up on collecting the GC dump if it takes longer than this many seconds. The default value is 30s.
+  Give up on collecting the GC dump if it takes longer than this many seconds. The default value is 30.
 
 - **`-n|--name <name>`**
 

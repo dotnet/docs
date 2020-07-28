@@ -12,7 +12,7 @@ Starting in .NET 5.0, the <xref:Microsoft.Extensions.Logging.Console.ConsoleLogg
 - `UseUtcTimestamp`
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format?displayProperty=nameWithType>
 
-With the introduction of new formatters, these properties are now available on the individual formatters. 
+With the introduction of new formatters, these properties are now available on the individual formatters.
 
 #### Reason for change
 

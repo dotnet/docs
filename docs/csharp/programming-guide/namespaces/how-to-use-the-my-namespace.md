@@ -1,5 +1,6 @@
 ---
 title: "How to use the My namespace - C# Programming Guide"
+description: Learn how to us the 'My' namespace. The 'My' namespace gives easy and intuitive access to a number of .NET classes.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, My namespace access"

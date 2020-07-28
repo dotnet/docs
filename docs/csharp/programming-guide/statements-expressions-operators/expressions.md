@@ -1,5 +1,6 @@
 ---
 title: "Expressions - C# Programming Guide"
+description: Learn about expressions in C# programming, such as invocation, query, lambda, literals, and simple names.
 ms.date: 05/11/2017
 helpviewer_keywords: 
   - "expressions [C#]"

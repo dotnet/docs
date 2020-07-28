@@ -103,7 +103,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - **`-p|--process-id <pid>`**
 
-  The process id to collect the trace.
+  The process id to collect the GC dump from.
 
 - **`-t|--report-type <HeapStat>`**
 

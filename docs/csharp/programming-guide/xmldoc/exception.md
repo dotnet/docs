@@ -1,5 +1,6 @@
 ---
 title: "<exception> - C# programming guide"
+description: Learn about the XML <exception> tag. This tag lets you specify which exceptions can be thrown, and can be applied to methods, properties, events, and indexers.
 ms.date: 07/20/2015
 f1_keywords:
   - "exception"

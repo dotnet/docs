@@ -1,5 +1,6 @@
 ---
 title: "How to convert between hexadecimal strings and numeric types - C# Programming Guide"
+description: Learn how to convert between hexadecimal strings and numeric types. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "hexadecimal strings [C#], converting to numeric type"

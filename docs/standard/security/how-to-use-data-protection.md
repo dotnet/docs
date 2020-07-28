@@ -27,17 +27,7 @@ ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
 
 .NET provides access to the data protection API (DPAPI), which allows you to encrypt data using information from the current user account or computer.  When you use the DPAPI, you alleviate the difficult problem of explicitly generating and storing a cryptographic key.  
   
-Use the <xref:System.Security.Cryptography.ProtectedMemory> class to encrypt an array of in-memory bytes.  This functionality is available in .NET Framework (not .NET Core or .NET 5) on Microsoft Windows XP and later operating systems.  You can specify that memory encrypted by the current process can be decrypted by the current process only, by all processes, or from the same user context.  See the <xref:System.Security.Cryptography.MemoryProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedMemory> options.  
-  
-Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes. This functionality is available in .NET Framework, .NET Core, and .NET 5 on Microsoft Windows 2000 and later operating systems.  You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.  See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.  
-  
-### To encrypt in-memory data using data protection  
-  
-1. Call the static <xref:System.Security.Cryptography.ProtectedMemory.Protect%2A> method while passing an array of bytes to encrypt, the entropy, and the memory protection scope.  
-  
-### To decrypt in-memory data using data protection  
-  
-1. Call the static <xref:System.Security.Cryptography.ProtectedMemory.Unprotect%2A> method while passing an array of bytes to decrypt and the memory protection scope.  
+Use the <xref:System.Security.Cryptography.ProtectedData> class to encrypt a copy of an array of bytes. This functionality is available in .NET Framework, .NET Core, and .NET 5.  You can specify that data encrypted by the current user account can be decrypted only by the same user account, or you can specify that data encrypted by the current user account can be decrypted by any account on the computer.  See the <xref:System.Security.Cryptography.DataProtectionScope> enumeration for a detailed description of <xref:System.Security.Cryptography.ProtectedData> options.  
   
 ### To encrypt data to a file or stream using data protection  
   

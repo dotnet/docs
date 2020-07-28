@@ -28,7 +28,7 @@ This walkthrough uses the following guidelines for encryption:
 - Use the <xref:System.Security.Cryptography.RSA> asymmetric algorithm to encrypt and decrypt the key to the data encrypted by <xref:System.Security.Cryptography.Aes>. Asymmetric algorithms are best used for smaller amounts of data, such as a key.  
   
     > [!NOTE]
-    > If you want to protect data on your computer instead of exchanging encrypted content with other people, consider using the <xref:System.Security.Cryptography.ProtectedData> or <xref:System.Security.Cryptography.ProtectedMemory> classes.  
+    > If you want to protect data on your computer instead of exchanging encrypted content with other people, consider using the <xref:System.Security.Cryptography.ProtectedData> class.  
   
  The following table summarizes the cryptographic tasks in this topic.  
   

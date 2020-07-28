@@ -54,15 +54,19 @@ aes.GenerateKey();
   
 ## Asymmetric Keys
 
- .NET provides the <xref:System.Security.Cryptography.RSA> and <xref:System.Security.Cryptography.DSA> classes for asymmetric encryption. These classes create a public/private key pair when you use the parameterless `Create()` method to create a new instance. Asymmetric keys can be either stored for use in multiple sessions or generated for one session only. While the public key can be made generally available, the private key should be closely guarded.  
+ .NET provides the <xref:System.Security.Cryptography.RSA> class for asymmetric encryption. This class creates a public/private key pair when you use the parameterless `Create()` method to create a new instance. Asymmetric keys can be either stored for use in multiple sessions or generated for one session only. While the public key can be made generally available, the private key should be closely guarded.  
   
- A public/private key pair is generated whenever a new instance of an asymmetric algorithm class is created. After a new instance of the class is created, the key information can be extracted using one of two methods:  
-  
-- The <xref:System.Security.Cryptography.RSA.ToXmlString%2A> method, which returns an XML representation of the key information.  
-  
-- The <xref:System.Security.Cryptography.RSA.ExportParameters%2A> method, which returns an <xref:System.Security.Cryptography.RSAParameters> structure that holds the key information.  
-  
- Both methods accept a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information. An **RSA** instance can be initialized to the value of an **RSAParameters** structure by using the <xref:System.Security.Cryptography.RSA.ImportParameters%2A> method. Or create a new instance by using the <xref:System.Security.Cryptography.RSA.Create(System.Security.Cryptography.RSAParameters)?displayProperty=nameWithType> method.  
+ A public/private key pair is generated whenever a new instance of an asymmetric algorithm class is created. After a new instance of the class is created, the key information can be extracted using the <xref:System.Security.Cryptography.RSA.ExportParameters%2A> method, which returns an <xref:System.Security.Cryptography.RSAParameters> structure that holds the key information. The method accepts a Boolean value that indicates whether to return only the public key information or to return both the public-key and the private-key information.
+
+There are also other methods that let you extract key information, such as:
+
+* <xref:System.Security.Cryptography.RSA.ExportRSAPublicKey%2A?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.RSA.ExportRSAPrivateKey%2A?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.AsymmetricAlgorithm.ExportSubjectPublicKeyInfo%2A?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.AsymmetricAlgorithm.ExportPkcs8PrivateKey%2A?displayProperty=nameWithType>
+* <xref:System.Security.Cryptography.AsymmetricAlgorithm.ExportEncryptedPkcs8PrivateKey%2A?displayProperty=nameWithType>
+
+An **RSA** instance can be initialized to the value of an **RSAParameters** structure by using the <xref:System.Security.Cryptography.RSA.ImportParameters%2A> method. Or create a new instance by using the <xref:System.Security.Cryptography.RSA.Create(System.Security.Cryptography.RSAParameters)?displayProperty=nameWithType> method.  
   
  Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, you should use a key container. For more information about how to store a private key in a key container, see [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md).  
   

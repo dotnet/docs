@@ -32,14 +32,14 @@ public class main
             //Write to the stream.  
             sWriter.WriteLine("Hello World!");
 
-            //Inform the user that the message was written  
-            //to the stream.  
-            Console.WriteLine("The file was encrypted.");
-
             //Close all the connections.  
             sWriter.Close();
             cryptStream.Close();
             myStream.Close();
+
+            //Inform the user that the message was written  
+            //to the stream.  
+            Console.WriteLine("The file was encrypted.");
         }
         catch
         {

@@ -28,14 +28,14 @@ Module Module1
             'Write to the stream.  
             sWriter.WriteLine("Hello World!")
 
-            'Inform the user that the message was written  
-            'to the stream.  
-            Console.WriteLine("The text was encrypted.")
-
             'Close all the connections.  
             sWriter.Close()
             cryptStream.Close()
             myStream.Close()
+
+            'Inform the user that the message was written  
+            'to the stream.  
+            Console.WriteLine("The text was encrypted.")
         Catch
             'Inform the user that an exception was raised.  
             Console.WriteLine("The encryption failed.")

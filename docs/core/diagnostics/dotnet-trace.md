@@ -60,7 +60,6 @@ dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--
     [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
     [-n, --name <name>]  [-o|--output <trace-file-path>] [-p|--process-id <pid>]
     [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
-    
 ```
 
 ### Options

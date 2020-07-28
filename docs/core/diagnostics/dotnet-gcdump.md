@@ -87,7 +87,7 @@ dotnet-gcdump ps
 
 ## `dotnet-gcdump report <gcdump_filename>`
 
-Generate report into stdout from a previously generated GC dump or from a running process.
+Generate a report from a previously generated GC dump or from a running process, and write to `stdout`.
 
 ### Synopsis
 

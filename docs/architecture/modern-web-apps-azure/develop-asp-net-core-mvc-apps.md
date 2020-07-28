@@ -494,6 +494,10 @@ Blazor Server applications can leverage the same authentication features as any 
 >   <https://stackoverflow.com/a/52493428>
 > - **Authentication and Authorization for SPAs**
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity-api-authorization>
+> - **ASP.NET Core Blazor Authentication and Authorization**
+>   <https://docs.microsoft.com/aspnet/core/blazor/security/>
+> - **Security: Authentication and Authorization in ASP.NET Web Forms and Blazor**
+>   <https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/security-authentication-authorization>
 
 ### Authorization
 
@@ -509,7 +513,7 @@ public class SalaryController : Controller
 
 In this case, users belonging to either the HRManager or Finance roles (or both) would have access to the SalaryController. To require that a user belong to multiple roles (not just one of several), you can apply the attribute multiple times, specifying a required role each time.
 
-Specifying certain sets of roles as strings in many different controllers and actions can lead to undesirable repetition. You can configure authorization policies, which encapsulate authorization rules, and then specify the policy instead of individual roles when applying the \[Authorize\] attribute:
+Specifying certain sets of roles as strings in many different controllers and actions can lead to undesirable repetition. At a minimum, define constants for these string literals and use the constants anywhere you need to specify the string. You can also configure authorization policies, which encapsulate authorization rules, and then specify the policy instead of individual roles when applying the \[Authorize\] attribute:
 
 ```csharp
 [Authorize(Policy = "CanViewPrivateReport")]
@@ -540,13 +544,28 @@ This policy could then be used with the \[Authorize\] attribute to protect any c
 
 #### Securing web APIs
 
-Most web APIs should implement a token-based authentication system. Token authentication is stateless and designed to be scalable. In a token-based authentication system, the client must first authenticate with the authentication provider. If successful, the client is issued a token, which is simply a cryptographically meaningful string of characters. When the client then needs to issue a request to an API, it adds this token as a header on the request. The server then validates the token found in the request header before completing the request. Figure 7-4 demonstrates this process.
+Most web APIs should implement a token-based authentication system. Token authentication is stateless and designed to be scalable. In a token-based authentication system, the client must first authenticate with the authentication provider. If successful, the client is issued a token, which is simply a cryptographically meaningful string of characters. The most common format for tokens is JSON Web Token, or JWT (often pronounced "jot"). When the client then needs to issue a request to an API, it adds this token as a header on the request. The server then validates the token found in the request header before completing the request. Figure 7-4 demonstrates this process.
 
 ![TokenAuth](./media/image7-4.png)
 
 **Figure 7-4.** Token-based authentication for Web APIs.
 
 You can create your own authentication service, integrate with Azure AD and OAuth, or implement a service using an open-source tool like [IdentityServer](https://github.com/IdentityServer).
+
+JWT tokens can embed claims about the user, which can be read on the client or server. You can use a tool like [jwt.io](https://jwt.io/) to view the contents of a JWT token. Do not store sensitive data like passwords or keys in JTW tokens, since their contents are easily read.
+
+When using JWT tokens with SPA or Blazor WebAssembly applications, you must store the token somewhere on the client and then add it to every API call. This is typically done as a header, as the following code demonstrates:
+
+```csharp
+// AuthService.cs in BlazorAdmin project of eShopOnWeb
+private async Task SetAuthorizationHeader()
+{
+    var token = await GetToken();
+    _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+}
+```
+
+After calling the above method, requests made with the `_httpClient` will have the token embedded in the request's headers, allowing the server-side API to authenticate and authorize the request.
 
 #### Custom Security
 
@@ -651,8 +670,6 @@ In addition to these model types, DDD typically employs a variety of patterns:
 - [Repository](https://deviq.com/repository-pattern/), for abstracting persistence details.
 
 - [Factory](https://en.wikipedia.org/wiki/Factory_method_pattern), for encapsulating complex object creation.
-
-- Domain events, for decoupling dependent behavior from triggering behavior.
 
 - [Services](http://gorodinski.com/blog/2012/04/14/services-in-domain-driven-design-ddd/), for encapsulating complex behavior and/or infrastructure implementation details.
 

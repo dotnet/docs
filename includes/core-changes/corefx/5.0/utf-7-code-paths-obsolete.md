@@ -1,6 +1,6 @@
 ### UTF-7 code paths are obsolete
 
-The UTF-7 encoding is no longer in wide use among applications, and many specs now forbid its use in interchange. It's also occasionally used as an attack vector in applications that don't anticipate encountering UTF-7-encoded data. Microsoft warns against use of <xref:System.Text.UTF7Encoding?displayProperty=nameWithType> in application code.
+The UTF-7 encoding is no longer in wide use among applications, and many specs now [forbid its use](https://security.stackexchange.com/a/68609/3573) in interchange. It's also occasionally [used as an attack vector](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=utf-7) in applications that don't anticipate encountering UTF-7-encoded data. Microsoft warns against use of <xref:System.Text.UTF7Encoding?displayProperty=nameWithType> because it doesn't provide error detection.
 
 Consequently, the <xref:System.Text.Encoding.UTF7?displayProperty=nameWithType> property and <xref:System.Text.UTF7Encoding.%23ctor%2A> constructors are now obsolete. Additionally, <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> and <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> no longer allow you to specify `UTF-7`.
 
@@ -57,7 +57,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
 
 - If your app calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> with unknown encoding names provided by an untrusted source:
 
-  Instead, compare the encoding names against a configurable allow list. The configurable allow list should at minimum include the industry-standard "utf-8". Depending on your clients and regulatory requirements, you may also need to allow region-specific encodings such as "GB18030".
+  Instead, compare the encoding names against a configurable allow list. The configurable allow list should at minimum include the industry-standard "utf-8". Depending on your clients and regulatory requirements, you may also need to allow region-specific encodings, such as "GB18030".
 
   If you don't implement an allow list, <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> will return any <xref:System.Text.Encoding> that's built into the system or that's registered via a custom <xref:System.Text.EncodingProvider>. Audit your service's requirements to validate that this is the desired behavior. UTF-7 continues to be disabled by default unless your application re-enables the compatibility switch mentioned later in this article.
 
@@ -101,7 +101,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
   <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
      <TargetFramework>net5.0</TargetFramework>
-     <!-- NoWarn below will suppress SYSLIB0001 project-wide -->
+     <!-- NoWarn below suppresses SYSLIB0001 project-wide -->
      <NoWarn>$(NoWarn);SYSLIB0001</NoWarn>
     </PropertyGroup>
   </Project>
@@ -112,7 +112,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
 
 - If you must support `Encoding.GetEncoding("utf-7", ...)`:
 
-  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [run-time configuration file](../../../../docs/core/run-time-config/index.md).
+  You can re-enable support for this via a compatibility switch. This compatibility switch can be specified in the application's *.csproj* file or in a [run-time configuration file](../../../../docs/core/run-time-config/index.md), as shown in the following examples.
 
   In the application's *.csproj* file:
 
@@ -136,7 +136,8 @@ In most cases, you don't need to take any action. However, for apps that have pr
   }
   ```
 
-  If you re-enable support for UTF-7, you should perform a security review of code that calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>.
+  > [!TIP]
+  > If you re-enable support for UTF-7, you should perform a security review of code that calls <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType>.
 
 #### Category
 

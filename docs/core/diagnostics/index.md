@@ -35,7 +35,7 @@ The [dotnet-dump](dotnet-dump.md) tool is a way to collect and analyze Windows a
 
 ### dotnet-gcdump
 
-The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect gcdumps of live .NET processes.
+The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Collector) dumps of live .NET processes.
 
 ### dotnet-trace
 

@@ -42,7 +42,7 @@ The remaining properties were set on <xref:Microsoft.Extensions.Logging.Console.
   - `"Format": "Systemd"` maps to `"FormatterName": "Systemd"`.
   - `"Format": "Default"` maps to `"FormatterName": "Simple"`.
 
-- For the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat>, and `UseUtcTimestamp`, use the corresponding property on the new `Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions` or `Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions` types instead. For example:
+- For the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat>, and `UseUtcTimestamp` properties, use the corresponding property on the new `Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions` or `Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions` types instead. For example:
 
   ```csharp
   loggingBuilder.AddSimpleConsole(options =>
@@ -51,9 +51,7 @@ The remaining properties were set on <xref:Microsoft.Extensions.Logging.Console.
   });
   ```
 
-For example, the following two JSON snippets show how the configuration file changes.
-
-Old configuration file:
+The following two JSON snippets show how the configuration file changes. Old configuration file:
 
 ```json
 {

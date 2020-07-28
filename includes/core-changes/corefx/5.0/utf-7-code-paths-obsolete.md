@@ -92,7 +92,7 @@ In most cases, you don't need to take any action. However, for apps that have pr
   You can suppress the `SYSLIB0001` warning in code or within your project's *.csproj* file.
 
   ```csharp
-  #pragma warning suppress SYSLIB0001 // Disable the warning.
+  #pragma warning disable SYSLIB0001 // Disable the warning.
   Encoding enc = Encoding.UTF7;
   #pragma warning restore SYSLIB0001 // Re-enable the warning.
   ```

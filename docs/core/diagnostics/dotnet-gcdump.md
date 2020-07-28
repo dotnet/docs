@@ -23,7 +23,7 @@ dotnet-gcdump [-h|--help] [--version] <command>
 
 ## Description
 
-The `dotnet-gcdump` global tool is a way to collect gcdumps of live .NET processes. It is built using the EventPipe technology which is a cross-platform alternative to ETW on Windows. Gcdumps are created by triggering a GC in the target process, turning on special events, and regenerating the graph of object roots from the event stream. This allows for gcdumps to be collected while the process is running with minimal overhead. These dumps are useful for several scenarios:
+The `dotnet-gcdump` global tool is a way to collect GC (Garbage Collector) dumps of live .NET processes. It is built using the EventPipe technology which is a cross-platform alternative to ETW on Windows. GC dumps are created by triggering a GC in the target process, turning on special events, and regenerating the graph of object roots from the event stream. This allows for GC dumps to be collected while the process is running with minimal overhead. These dumps are useful for several scenarios:
 
 - Comparing the number of objects on the heap at several points in time.
 - Analyzing roots of objects (answering questions like, "what still has a reference to this type?").
@@ -41,7 +41,7 @@ The `dotnet-gcdump` global tool is a way to collect gcdumps of live .NET process
 
 ## `dotnet-gcdump collect`
 
-Collects a gcdump from a currently running process.
+Collects a GC dump from a currently running process.
 
 ### Synopsis
 
@@ -57,27 +57,27 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 - **`-p|--process-id <pid>`**
 
-  The process id to collect the gcdump.
+  The process id to collect the GC dump from.
 
 - **`-o|--output <gcdump-file-path>`**
 
-  The path where collected gcdumps should be written. Defaults to *.\\YYYYMMDD\_HHMMSS\_\<pid>.gcdump*.
+  The path where collected GC dumps should be written. Defaults to *.\\YYYYMMDD\_HHMMSS\_\<pid>.gcdump*.
 
 - **`-v|--verbose`**
 
-  Output the log while collecting the gcdump.
+  Output the log while collecting the GC dump.
 
 - **`-t|--timeout <timeout>`**
 
-  Give up on collecting the gcdump if it takes longer than this many seconds. The default value is 30s.
+  Give up on collecting the GC dump if it takes longer than this many seconds. The default value is 30s.
 
 - **`-n|--name <name>`**
 
-  The name of the process to collect the gcdump for.
+  The name of the process to collect the GC dump from.
 
 ## `dotnet-gcdump ps`
 
-Lists the dotnet processes that gcdumps can be collected for.
+Lists the dotnet processes that GC dumps can be collected for.
 
 ### Synopsis
 
@@ -87,7 +87,7 @@ dotnet-gcdump ps
 
 ## `dotnet-gcdump report <gcdump_filename>`
 
-Generate report into stdout from a previously generated gcdump or from a running process.
+Generate report into stdout from a previously generated GC dump or from a running process.
 
 ### Synopsis
 

@@ -1,5 +1,6 @@
 ---
 title: "Lambda expressions - C# Programming Guide"
+description: Learn about lambda expressions. There are expression lambdas that have an expression as its body, or statement lambdas that have a statement block as its body.
 ms.date: 07/29/2019
 helpviewer_keywords: 
   - "lambda expressions [C#]"

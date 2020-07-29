@@ -1,5 +1,6 @@
 ---
 title: "How to filter on an optional element (C#)"
+description: Learn how to filter for an optional element even if you are not sure that it exists in your XML document. 
 ms.date: 07/20/2015
 ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
 ---

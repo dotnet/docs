@@ -1,5 +1,6 @@
 ---
 title: "<list> - C# programming guide"
+description: Learn about the XML <list> tag. This tag is used to create tables and definition, bulleted, or numbered lists by using 'item' blocks.
 ms.date: 07/20/2015
 f1_keywords:
   - "list"

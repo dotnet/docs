@@ -1,5 +1,6 @@
 ---
 title: "Interfaces - C# Programming Guide"
+description: An interface in C# contains definitions for a group of related functionalities that a non-abstract class or a struct must implement.
 ms.date: 02/20/2020
 helpviewer_keywords: 
   - "interfaces [C#]"

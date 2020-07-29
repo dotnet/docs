@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Typical Purchase Order (LINQ to XML)"
+description: This XML file is used in various examples in the LINQ to XML documentation. The file is a typical purchase order.
 ms.date: 07/20/2015
 ms.assetid: dcbfb859-24fc-4758-b01c-51d1b6f644e6
 ---

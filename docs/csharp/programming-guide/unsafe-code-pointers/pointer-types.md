@@ -1,5 +1,6 @@
 ---
 title: "Pointer types - C# Programming Guide"
+description: Learn about pointer types. See examples of different pointers, code examples, and view additional available resources.
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "unsafe code [C#], pointers"

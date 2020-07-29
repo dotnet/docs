@@ -1,10 +1,11 @@
 ---
 title: "Refactoring Using a Pure Function (C#)"
+description: Learn how to refactor code using a pure function. See code examples and view additional available resources.
 ms.date: 07/20/2015
 ms.assetid: a3416a45-9e12-4e4a-9747-897f06eef510
 ---
 # Refactoring Using a Pure Function (C#)
-The following example refactors the previous example, [Refactoring Using an Extension Method (C#)](./refactoring-using-an-extension-method.md), to use a pure function In this example, the code to find the text of a paragraph is moved to the pure static method `ParagraphText`.  
+The following example refactors the previous example, [Refactoring Using an Extension Method (C#)](./refactoring-using-an-extension-method.md), to use a pure function. In this example, the code to find the text of a paragraph is moved to the pure static method `ParagraphText`.  
   
 ## Example  
  This example processes a WordprocessingML document, retrieving the paragraph nodes from a WordprocessingML document. It also identifies the style of each paragraph. This example builds on the previous examples in this tutorial. The refactored code is called out in comments in the code below.  

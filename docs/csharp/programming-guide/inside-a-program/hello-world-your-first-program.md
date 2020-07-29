@@ -1,5 +1,6 @@
 ---
 title: "Hello World -- Your first program using Visual Studio on Windows or Mac - C# Programming Guide"
+description: Visual Studio is a professional development environment with many features for .NET development. Use Visual Studio to create a C# version of Hello World!
 ms.date: 09/12/2019
 f1_keywords:
   - "cs.program"

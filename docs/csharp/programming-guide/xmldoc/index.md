@@ -1,5 +1,6 @@
 ---
 title: "XML documentation comments - C# programming guide"
+description: Learn about XML documentation comments. You can create documentation for your code by including XML elements in special comment fields.
 ms.date: 07/20/2015
 f1_keywords:
   - "cs.xml"

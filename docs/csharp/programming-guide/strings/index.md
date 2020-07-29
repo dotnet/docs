@@ -1,5 +1,6 @@
 ---
 title: "Strings - C# Programming Guide"
+description: Learn about strings in C# programming. See information on declaring and initializing strings, the immutability of string objects, and string escape sequences.
 ms.date: 06/27/2019
 helpviewer_keywords: 
   - "C# language, strings"

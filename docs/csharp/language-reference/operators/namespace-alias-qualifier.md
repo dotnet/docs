@@ -59,5 +59,5 @@ For more information, see the [Namespace alias qualifiers](~/_csharplang/spec/na
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - [Using namespaces](../../programming-guide/namespaces/using-namespaces.md)

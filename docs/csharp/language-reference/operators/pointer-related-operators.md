@@ -182,7 +182,7 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [unsafe keyword](../keywords/unsafe.md)
 - [fixed keyword](../keywords/fixed-statement.md)

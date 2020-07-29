@@ -37,7 +37,7 @@ The major features of C# 1.0 included:
 - [Events](../events-overview.md)
 - [Properties](../properties.md)
 - [Delegates](../delegates-overview.md)
-- [Expressions](../programming-guide/statements-expressions-operators/expressions.md)
+- [Operators and expressions](../language-reference/operators/index.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)
 - [Attributes](../programming-guide/concepts/attributes/index.md)
 

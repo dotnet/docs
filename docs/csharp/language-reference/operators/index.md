@@ -1,6 +1,6 @@
 ---
-title: "C# operators - C# reference"
-ms.date: 04/28/2020
+title: "C# operators and expressions - C# reference"
+ms.date: 07/31/2020
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -10,11 +10,31 @@ helpviewer_keywords:
   - "expressions [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
-# C# operators (C# reference)
+# C# operators and expressions (C# reference)
 
-C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../builtin-types/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
+C# provides a number of operators. Many of them are supported by the [built-in types](../builtin-types/built-in-types.md) and allow you to perform basic operations with values of those types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with [`bool`](../builtin-types/bool.md) operands. Others can be used in a broader scope. For example, you can use [conditional operator `?:`](conditional-operator.md) or [`switch` expression](switch-expression.md) to select which operand expression to evaluate based on a Boolean condition or a matched pattern, respectively.
 
-In an [expression](../../programming-guide/statements-expressions-operators/expressions.md), operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
+The simplest C# expressions are literals (which may be [integer](../builtin-types/integral-numeric-types.md#integer-literals) or [real](../builtin-types/floating-point-numeric-types.md#real-literals) numbers, [characters](../builtin-types/char.md#literals) or [strings](../builtin-types/reference-types.md#the-string-types), [Boolean](../builtin-types/bool.md) `true` or `false`) and simple names (which usually denote variables). With use of operators, you get more complex expressions. Operator [precedence](#operator-precedence) and [associativity](#operator-associativity) determine the order in which the operations in an expression are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
+
+In the following code, the right-hand operands of assignments are examples of expressions:
+
+[!code-csharp[expression examples](snippets/Overview.cs#Expressions)]
+
+Additionally, C# provides the following forms of expressions:
+
+- [Interpolated string expressions](../tokens/interpolated.md) that provide convenient syntax to create formatted strings
+- [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md) that allow you to create anonymous functions
+- [Query expressions](../keywords/query-keywords.md) that allow you to use query capabilities directly in C#
+
+Typically, an expression produces a result. A [`void`](../builtin-types/void.md) method invocation is an example of an expression that doesn't produce a result. Any [method invocation](member-access-operators.md#invocation-expression-) is also an example of a *statement expression*, which is an expression that you can use as a statement, that is, in the following form:
+
+```csharp
+statement-expression;
+```
+
+Other statement expressions are [assignment](assignment-operator.md), [await](await.md), [new object instantiation](new-operator.md), [increment](arithmetic-operators.md#increment-operator-), and [decrement](arithmetic-operators.md#decrement-operator---) expressions. When a statement expression is used as a statement, its result, if any, is discarded.
+
+You can use an [expression body definition](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to provide a concise definition for a method, constructor, property, indexer, or finalizer.
 
 ## Operator precedence
 
@@ -84,9 +104,13 @@ Typically, all operator operands are evaluated. However, some operators evaluate
 
 ## C# language specification
 
-For more information, see the [Operators](~/_csharplang/spec/expressions.md#operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+
+- [Expressions](~/_csharplang/spec/expressions.md)
+- [Operators](~/_csharplang/spec/expressions.md#operators)
 
 ## See also
 
 - [C# reference](../index.md)
-- [Expressions](../../programming-guide/statements-expressions-operators/expressions.md)
+- [Operator overloading](operator-overloading.md)
+- [Expression trees](../../programming-guide/concepts/expression-trees/index.md)

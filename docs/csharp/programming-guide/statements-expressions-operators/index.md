@@ -18,9 +18,9 @@ The C# code that comprises an application consists of statements made up of keyw
 
 - [Statements](statements.md)
 
-- [Expressions](expressions.md)
+- [Operators and expressions](../../language-reference/operators/index.md)
 
-  - [Expression-bodied members](expression-bodied-members.md)
+- [Expression-bodied members](expression-bodied-members.md)
 
 - [Anonymous Functions](anonymous-functions.md)
 

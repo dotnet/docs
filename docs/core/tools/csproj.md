@@ -344,7 +344,7 @@ A URL to the license that is applicable to the package. (_deprecated since Visua
 
 ### PackageIcon
 
-A URL for a 64x64 image with transparent background to use as the icon for the package in UI display. [PackageIconUrl is deprecated](/nuget/reference/msbuild-targets#packageiconurl) in favor of PackageIcon.
+A path to an image in the package to use as a package icon. Read more about [`icon` metadata](/nuget/reference/nuspec#icon). [PackageIconUrl is deprecated](/nuget/reference/msbuild-targets#packageiconurl) in favor of PackageIcon.
 
 ### PackageReleaseNotes
 

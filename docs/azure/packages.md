@@ -16,8 +16,8 @@ ms.date: 07/29/2020
 
 ## Libraries using Azure.Core
 
-[!INCLUDE [dotnet-new-releases](../includes/dotnet-new.md)]
+[!INCLUDE [dotnet-new-releases](./includes/dotnet-new.md)]
 
 ## All libraries
 
-[!INCLUDE [dotnet-all-libraries](../includes/dotnet-all.md)]
+[!INCLUDE [dotnet-all-libraries](./includes/dotnet-all.md)]

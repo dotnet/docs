@@ -31,7 +31,7 @@ The following code illustrates a trivial recursive function that computes the *n
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet4001.fs)]
 
 > [!NOTE]
-> In practice, code like the previous sample is not ideal because it unecessarily recomputes values that have already been computed. This is because it is not tail recursive, which is explained further in the document.
+> In practice, code like the previous sample is not ideal because it unecessarily recomputes values that have already been computed. This is because it is not tail recursive, which is explained further in this article.
 
 Methods are implicitly recursive within the type; there is no need to add the `rec` keyword. Let bindings within classes are not implicitly recursive.
 
@@ -50,7 +50,7 @@ let fib n =
     loop 0 1 n
 ```
 
-This is a more complicated implementation. Generating a fibonacci number is a great example of a "naive" algorithm that is mathematically pure, but inefficient in practice. Making it efficient in F# while still remaining recursively-defined makes use of a few things:
+This is a more complicated implementation. Generating a fibonacci number is a great example of a "naive" algorithm that's mathematically pure but inefficient in practice. Several aspects make it efficient in F# while still remaining recursively defined:
 
 * A recursive inner function named `loop`, which is an idiomatic F# pattern
 * Two accumulator parameters, which pass accumulate values to recursive calls
@@ -60,7 +60,7 @@ If this example were written iteratively with a loop, the code would look simila
 
 The reason why this is tail-recursive is because the recursive call does not need to save any values on the call stack. All intermediate values being calculated are accumulated via inputs to the inner function. This also allows the F# compiler to optimize the code to be just as fast as if you had written something like a `while` loop.
 
-It is very common to write F# code that recursively processes something via an inner function that uses tail recursion, then has an outer function with a nicer interface for callers just like the previous example.
+It's common to write F# code that recursively processes something with an inner and outer function, as the previous example shows. The inner function uses tail recursion, while the outer function has a better interface for callers.
 
 ## Mutually Recursive Functions
 

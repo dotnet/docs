@@ -1,5 +1,6 @@
 ---
 title: "Expression-bodied members - C# Programming Guide"
+description: Learn about expression-bodied members. See code examples that use expression body definition for properties, constructors, finalizers, and more.
 ms.date: 02/06/2019
 helpviewer_keywords: 
   - "expression-bodied members[C#]"

@@ -1,5 +1,6 @@
 ---
 title: "<see> - C# programming guide"
+description: Learn about the XML <see> tag. This tag lets you specify a link from within text, for example by using a cref attribute.
 ms.date: 07/20/2015
 f1_keywords:
   - "<see>"

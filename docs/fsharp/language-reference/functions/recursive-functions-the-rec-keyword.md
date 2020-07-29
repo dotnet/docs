@@ -26,7 +26,7 @@ function2-body
 
 Recursive functions, functions that call themselves, are identified explicitly in the F# language. This makes the identifer that is being defined available in the scope of the function.
 
-The following code illustrates a trivial recursive function that computes the *n*<sup>th</sup> Fibonacci number.
+The following code illustrates a recursive function that computes the *n*<sup>th</sup> Fibonacci number using the mathematical definition.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet4001.fs)]
 
@@ -52,9 +52,9 @@ let fib n =
 
 This is a more complicated implementation. Generating a fibonacci number is a great example of a "naive" algorithm that's mathematically pure but inefficient in practice. Several aspects make it efficient in F# while still remaining recursively defined:
 
-* A recursive inner function named `loop`, which is an idiomatic F# pattern
-* Two accumulator parameters, which pass accumulate values to recursive calls
-* A check on the value of `n` to return a specific accumulate
+* A recursive inner function named `loop`, which is an idiomatic F# pattern.
+* Two accumulator parameters, which pass accumulate values to recursive calls.
+* A check on the value of `n` to return a specific accumulate.
 
 If this example were written iteratively with a loop, the code would look similar with two different values accumulating numbers until a particular condition was met.
 

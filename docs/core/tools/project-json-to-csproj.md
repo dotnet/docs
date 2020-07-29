@@ -472,7 +472,7 @@ See also [Files](#files).
   <!-- summary is not migrated from project.json, but you can use the <Description> property for that if needed. -->
   <PackageTags>machine learning;framework</PackageTags>
   <PackageReleaseNotes>Version 0.9.12-beta</PackageReleaseNotes>
-  <PackageIconUrl>http://numl.net/images/ico.png</PackageIconUrl>
+  <PackageIcon>http://numl.net/images/ico.png</PackageIconUrl>
   <PackageProjectUrl>http://numl.net</PackageProjectUrl>
   <PackageLicenseUrl>https://raw.githubusercontent.com/sethjuarez/numl/master/LICENSE.md</PackageLicenseUrl>
   <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -482,7 +482,7 @@ See also [Files](#files).
 </PropertyGroup>
 ```
 
-There is no equivalent for the `owners` element in MSBuild. For `summary`, you can use the MSBuild `<Description>` property. The value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#other-common-root-level-options) element.
+There is no equivalent for the `owners` element in MSBuild. For `summary`, you can use the MSBuild `<Description>` property. The value of `summary` is not migrated automatically to that property, since that property is mapped to the [`description`](#other-common-root-level-options) element.  [PackageIconUrl is deprecated](/nuget/reference/msbuild-targets#packageiconurl) in favor of PackageIcon.
 
 ## scripts
 

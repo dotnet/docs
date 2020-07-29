@@ -50,7 +50,7 @@ let fib n =
     loop 0 1 n
 ```
 
-This is a more complicated implementation. Generating a fibonacci number is a great example of a "naiive" algorithm that is mathematically pure, but inefficient in practice. Making it efficient in F# while still remaining recursively-defined makes use of a few things:
+This is a more complicated implementation. Generating a fibonacci number is a great example of a "naive" algorithm that is mathematically pure, but inefficient in practice. Making it efficient in F# while still remaining recursively-defined makes use of a few things:
 
 * A recursive inner function named `loop`, which is an idiomatic F# pattern
 * Two accumulator parameters, which pass accumulate values to recursive calls
@@ -58,7 +58,7 @@ This is a more complicated implementation. Generating a fibonacci number is a gr
 
 If this example were written iteratively with a loop, the code would look similar with two different values accumulating numbers until a particular condition was met.
 
-The reason why this is tail-recursive is because the recursive call does not need to save any values on the call stack. All intermediate values being calculated are accumulated via inputs to the inner function. This also allows the F# compiler to optimize the code to be just as fast as if you had written something like a `while `loop.
+The reason why this is tail-recursive is because the recursive call does not need to save any values on the call stack. All intermediate values being calculated are accumulated via inputs to the inner function. This also allows the F# compiler to optimize the code to be just as fast as if you had written something like a `while` loop.
 
 It is very common to write F# code that recursively processes something via an inner function that uses tail recursion, then has an outer function with a nicer interface for callers just like the previous example.
 

@@ -1,7 +1,6 @@
 ---
 title: Package index for Azure SDK for .NET
 description: Listing of the package names, NuGet links, docs links, and source code links for all libraries in the Azure SDK for .NET.
-ms.service: multiple
 ms.custom: azure-sdk-dotnet
 author: camsoper
 ms.author: casoper

@@ -5,7 +5,6 @@ author: adegeo
 ms.author: adegeo
 ms.date: 04/24/2020
 zone_pivot_groups: operating-systems-set-one
-no-loc: ['dotnet new', 'dotnet nuget add source']
 ---
 
 # Manage .NET project and item templates
@@ -16,13 +15,13 @@ For more information about creating templates, see [Tutorial: Create templates](
 
 ## Install template
 
-Templates are installed through the [dotnet new](../tools/dotnet-new.md) SDK command with the `-i` parameter. You can either provide the NuGet package identifier of a template, or a folder that contains the template files.
+Templates are installed through the [`dotnet new`](../tools/dotnet-new.md) SDK command with the `-i` parameter. You can either provide the NuGet package identifier of a template, or a folder that contains the template files.
 
 ### NuGet hosted package
 
 .NET CLI templates are uploaded to [NuGet](https://www.nuget.org/) for wide distribution. Templates can also be installed from a private feed. Instead of uploading a template to a NuGet feed, *nupkg* template files can be distributed and manually installed, as described in the [Local NuGet package](#local-nuget-package) section.
 
-For more information about configuring NuGet feeds, see [dotnet nuget add source](../tools/dotnet-nuget-add-source.md).
+For more information about configuring NuGet feeds, see [`dotnet nuget add source`](../tools/dotnet-nuget-add-source.md).
 
 To install a template pack from the default NuGet feed, use the `dotnet new -i {package-id}` command:
 
@@ -120,7 +119,7 @@ Currently installed items:
 
 ## Uninstall template
 
-Templates are uninstalled through the [dotnet new](../tools/dotnet-new.md) SDK command with the `-u` parameter. You can either provide the NuGet package identifier of a template, or a folder that contains the template files.
+Templates are uninstalled through the [`dotnet new`](../tools/dotnet-new.md) SDK command with the `-u` parameter. You can either provide the NuGet package identifier of a template, or a folder that contains the template files.
 
 ### NuGet package
 
@@ -229,5 +228,5 @@ For example, the .NET Core SDK includes templates for a console app targeting .N
 ## See also
 
 - [Tutorial: Create an item template](../tutorials/cli-templates-create-item-template.md)
-- [dotnet new](../tools/dotnet-new.md)
-- [dotnet nuget add source](../tools/dotnet-nuget-add-source.md)
+- [`dotnet new`](../tools/dotnet-new.md)
+- [`dotnet nuget add source`](../tools/dotnet-nuget-add-source.md)

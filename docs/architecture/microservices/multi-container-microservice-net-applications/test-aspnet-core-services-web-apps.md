@@ -193,11 +193,11 @@ As you can see, these docker-compose files only start the Redis, RabbitMQ, SQL S
 
 ### Additional resources
 
-- **Tests README file** on the eShopOnContainers repo on GitHub \
-    <https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test>
+- **Unit and integration testing** on the eShopOnContainers repo on GitHub \
+    <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Unit-and-integration-testing>
 
-- **Load tests README file** on the eShopOnContainers repo on GitHub \
-    <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/>
+- **Load testing** on the eShopOnContainers repo on GitHub \
+    <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Load-testing>
 
 > [!div class="step-by-step"]
 > [Previous](subscribe-events.md)

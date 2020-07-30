@@ -7,7 +7,7 @@ ms.date: 07/22/2020
 
 This article describes the command-line options supported by F# Interactive, `fsi.exe`. F# Interactive accepts many of the same command line options as the F# compiler, but also accepts some additional options.
 
-## Using F# Interactive for scripting
+## Use F# Interactive for scripting
 
 F# Interactive, `dotnet fsi`, can be launched interactively, or it can be launched from the command line to run a script. The command line syntax is
 

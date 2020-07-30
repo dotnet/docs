@@ -104,7 +104,7 @@ Valid flags are:
 The printf `#` flag is invalid and a compile-time error will be reported if it is used.
 
 Values are formatted using invariant culture and culture settings are irrelevant to `printf` formatting except
-when they affect the results of `%O` and `%A` formatting, see [structured plain text formatting](plaintext-formatting.md) for more details.
+when they affect the results of `%O` and `%A` formatting. For more information, see [structured plain text formatting](plaintext-formatting.md).
 
 ## `%A` formatting
 

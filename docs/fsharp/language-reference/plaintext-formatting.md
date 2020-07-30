@@ -99,7 +99,7 @@ Valid flags are:
 | `0`  | add zeros instead of spaces to make up the required width |    |
 | `-` |  left justify the result within the width specified  |   |
 | `+`  | add a `+` character if the number is positive (to match a `-` sign for negatives) |   |
-| a space character | add an extra space if the number is positive (to match a '-' sign for negatives) | 
+| a space character | add an extra space if the number is positive (to match a '-' sign for negatives) |
 
 The printf `#` flag is invalid and a compile-time error will be reported if it is used.
 

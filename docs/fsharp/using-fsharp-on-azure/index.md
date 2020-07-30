@@ -50,11 +50,14 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 * [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
 * [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
 
-## Using Apache Spark with F# with Azure HDInsight
+## Using Apache Spark with F# on Azure HDInsight or Azure Databricks
 
 [Apache Spark for Azure HDInsight](https://azure.microsoft.com/services/hdinsight/apache-spark/) is an open source processing framework that runs large-scale data analytics applications. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [.NET for Apache Spark](../../spark/what-is-apache-spark-dotnet.md), a set of .NET bindings for Apache Spark.
 
 * [.NET for Apache Spark F# samples](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
+* [Install .NET Interactive Jupyter notebooks in Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
+* [Submit jobs to Azure HDInsight](../../spark/how-to-guides/hdinsight-deploy-methods.md)
+* [Submit jobs to Azure Databricks](../../spark/how-to-guides/databricks-deploy-methods.md)
 
 ## Using Azure Cosmos DB with F\#
 

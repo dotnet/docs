@@ -56,8 +56,8 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 
 * [.NET for Apache Spark F# samples](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
 * [Install .NET Interactive Jupyter notebooks in Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
-* [Submit jobs to Azure HDInsight](../../spark/how-to-guides/hdinsight-deploy-methods.md)
-* [Submit jobs to Azure Databricks](../../spark/how-to-guides/databricks-deploy-methods.md)
+* [Submit Apache Spark jobs to Azure HDInsight](../../spark/how-to-guides/hdinsight-deploy-methods.md)
+* [Submit Apache Spark jobs to Azure Databricks](../../spark/how-to-guides/databricks-deploy-methods.md)
 
 ## Using Azure Cosmos DB with F\#
 

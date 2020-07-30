@@ -422,7 +422,7 @@ for details.
 Debuggers for .NET respect the use of attributes such as `DebuggerDisplayAttribute` and `DebuggerTypeProxyAttribute`
 and these affect the structured display of objects in debugger inspection windows.
 The F# compiler automatically generated these attributes for discriminated union and record types, but
-not class, interface or struct types.
+not class, interface, or struct types.
 
 These attributes are ignored in F# plain text formatting, but it can be useful to implement
 these methods to improve displays when debugging F# types.

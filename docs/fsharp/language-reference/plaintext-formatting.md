@@ -86,7 +86,7 @@ where the type is interpreted as follows:
 | `%a` | any value  |   Requires two arguments - a formatting function accepting a context parameter and the value, and the particular value to print |
 | `%t` | any value  |   Requires one argument, a formatting function accepting a context parameter that either outputs or returns the appropriate text |
 
-Basic integer types are `byte` (`System.Byte`), `sbyte` (`System.SByte`), `int16` (`System.Int16`), `uint16` (`System.UInt16`), `int32` (`System.Int32`), `uint32` (`System.UInt32`), `int64` (`System.Int64`), `uint64` (`System.UInt64`), `nativeint`  (`System.IntPtr`)and `unativeint`  (`System.UIntPtr`).
+Basic integer types are `byte` (`System.Byte`), `sbyte` (`System.SByte`), `int16` (`System.Int16`), `uint16` (`System.UInt16`), `int32` (`System.Int32`), `uint32` (`System.UInt32`), `int64` (`System.Int64`), `uint64` (`System.UInt64`), `nativeint`  (`System.IntPtr`), and `unativeint`  (`System.UIntPtr`).
  Basic floating point types are `float` (`System.Double`) and `float32` (`System.Single`).
 
 The optional width is an integer indicating the minimal width of the result. For instance, `%6d` prints an integer, prefixing it with spaces

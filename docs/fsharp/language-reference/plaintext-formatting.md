@@ -416,7 +416,7 @@ Now ToString gives:
 F# Interactive (`dotnet fsi`) uses an extended version of structured plain text formatting to
 report values and allows additional customizability. See [F# Interactive](fsharp-interactive-options.md)
 
-## Customize debug displays using `DebuggerDisplayAttribute`, `DebuggerTypeProxyAttribute`, and other attributes
+## Customize debug displays
 
 Debuggers for .NET respect the use of attributes such as `DebuggerDisplayAttribute` and `DebuggerTypeProxyAttribute`
 and these affect the structured display of objects in debugger inspection windows.

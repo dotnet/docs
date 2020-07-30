@@ -63,7 +63,7 @@ Technically speaking, when using `printf` and other related functions, a special
 checks the string literal passed as the format string, ensuring the subsequent arguments applied are of
 the correct type to match the format specifiers used.
 
-## Format Specifiers for `printf`
+## Format specifiers for `printf`
 
 Format specifications for `printf` formats are strings with `%` markers indicating format. Format placeholders consist of `%[flags][width][.precision][type]`
 where the type is interpreted as follows:

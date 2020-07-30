@@ -199,7 +199,7 @@ Example:
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | N/A | N/A | N/A |
+| **runtimeconfig.json** | `System.GC.CpuGroup` | `0` - disabled<br/>`1` - enabled | .NET 5.0 |
 | **Environment variable** | `COMPlus_GCCpuGroup` | `0` - disabled<br/>`1` - enabled | .NET Core 1.0 |
 | **app.config for .NET Framework** | [GCCpuGroup](../../framework/configure-apps/file-schema/runtime/gccpugroup-element.md) | `false` - disabled<br/>`true` - enabled |  |
 
@@ -303,12 +303,21 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitSOH` | *hexadecimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitSOH` | *hexadecimal value* | .NET 5.0 |
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitLOH` | *hexadecimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitLOH` | *hexadecimal value* | .NET 5.0 |
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitPOH` | *hexadecimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 5.0 |
 
 > [!TIP]
-> If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 200 mebibytes (MiB), the value would be 0xC800000 or C800000.
+> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 200 mebibytes (MiB), the values would be 209715200 for the JSON file and 0xC800000 or C800000 for the environment variable.
 
 #### COMPLUS_GCHeapHardLimitSOHPercent, COMPLUS_GCHeapHardLimitLOHPercent, COMPLUS_GCHeapHardLimitPOHPercent
 
@@ -319,12 +328,21 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitSOHPercent` | *hexadecimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitSOHPercent` | *hexadecimal value* | .NET 5.0 |
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitLOHPercent` | *hexadecimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitLOHPercent` | *hexadecimal value* | .NET 5.0 |
+
+| | Setting name | Values | Version introduced |
+| - | - | - | - |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5.0 |
 
 > [!TIP]
-> If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the value would be 0x1E or 1E.
+> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to limit the heap usage to 30%, the values would be 30 for the JSON file and 0x1E or 1E for the environment variable.
 
 ### System.GC.RetainVM/COMPlus_GCRetainVM
 

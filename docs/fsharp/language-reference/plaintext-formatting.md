@@ -65,7 +65,7 @@ the correct type to match the format specifiers used.
 
 ## Format specifiers for `printf`
 
-Format specifications for `printf` formats are strings with `%` markers indicating format. Format placeholders consist of `%[flags][width][.precision][type]`
+Format specifications for `printf` formats are strings with `%` markers that indicate format. Format placeholders consist of `%[flags][width][.precision][type]`
 where the type is interpreted as follows:
 
 | Format specifier   | Type(s)        | Remarks                      |

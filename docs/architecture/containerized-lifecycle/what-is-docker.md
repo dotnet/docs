@@ -1,7 +1,7 @@
 ---
 title: What is Docker?
 description: Get a little deeper in your understanding of Docker, a simple analogy here might help you.
-ms.date: 02/15/2019
+ms.date: 04/16/2020
 ---
 # What is Docker?
 
@@ -13,7 +13,7 @@ ms.date: 02/15/2019
 
 As shown in the above diagram, Docker containers can run anywhere, on-premises in the customer datacenter, in an external service provider or in the cloud, on Azure. Docker image containers can also run natively on Linux and Windows. However, Windows images can run only on Windows hosts and Linux images can run on Linux hosts and Windows hosts (using a Hyper-V Linux VM, so far), where host means a server or a VM.
 
-Developers can use development environments on Windows, Linux, or macOS. On the development computer, the developer runs a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or on the Mac, use a Docker host that's Linux-based, and they can only create images for Linux containers. (Developers working on the Mac can edit code or run the Docker CLI from macOS, but as of this writing, containers don't run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
+Developers can use development environments on Windows, Linux, or macOS. On the development computer, the developer runs a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or on the Mac, use a Docker host that's Linux-based, and they can only create images for Linux containers. (Developers working on the Mac can edit code or run the Docker command-line interface (CLI) from macOS, but as of this writing, containers don't run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
 
 To host containers in development environments and provide additional developer tools, Docker ships [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows or for macOS. These products install the necessary VM (the Docker host) to host the containers. Docker also makes available [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition), which is designed for enterprise development and is used by IT teams who build, ship, and run large business-critical applications in production.
 
@@ -74,5 +74,5 @@ You can think of an image as an auxiliary read-only hard disk ready to be instal
 Similarly, you can think of a container as the "computer" with the image hard disk installed. The container, just like a computer, can be powered on or off.
 
 >[!div class="step-by-step"]
->[Previous](index.md)
+>[Previous](introduction-to-containers-and-docker.md)
 >[Next](docker-terminology.md)

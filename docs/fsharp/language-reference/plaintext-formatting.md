@@ -36,7 +36,7 @@ dotnet fsi
  [(5, 1); (5, 2); (5, 3); (5, 4); (5, 5)]]
 ```
 
-Structured plain text formatting is activated when you use the `%A` format in [`printf` formatting strings](printf.md)
+Structured plain text formatting is activated when you use the `%A` format in `printf` formatting strings.
 and also when formatting the output of values in F# interactive, where the output includes extra information and is additionally customizable.
 Plain text formatting is also observable through any calls to `x.ToString()` on F# union and record values, including those
 that occur implicitly in debugging, logging and other tooling.

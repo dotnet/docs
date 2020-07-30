@@ -4,7 +4,7 @@ description: Learn how to use printf and other plain text formatting in F# appli
 ms.date: 07/22/2020
 ---
 
-# Plain Text Formatting
+# Plain text formatting
 
 F# supports type-checked formatting of plain text using `printf`, `printfn`, `sprintf` and related functions.
 For example,

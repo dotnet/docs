@@ -92,7 +92,7 @@ fsi.ShowIEnumerable <- false // Control whether sequence values are expanded by 
 fsi.ShowDeclarationValues <- false // Control whether values are shown for declaration outputs
 ```
 
-### Customizing F# Interactive structured printing with `AddPrinter` and `AddPrintTransformer`
+### Customize with `AddPrinter` and `AddPrintTransformer`
 
 Printing in F# Interactive outputs can be customized by using `fsi.AddPrinter` and `fsi.AddPrintTransformer`.
 The first gives text to replace the printing of an object, the second returns a surrogate object to display

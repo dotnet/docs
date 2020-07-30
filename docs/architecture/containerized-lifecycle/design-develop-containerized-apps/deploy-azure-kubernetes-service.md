@@ -1,8 +1,9 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: Learn how to deploy an app using Azure Kubernetes Service.
-ms.date: 02/15/2019
+ms.date: 04/22/2020
 ---
+
 # Deploy to Azure Kubernetes Service (AKS)
 
 You can interact with AKS using your preferred client operating system, here we show how to do it with Microsoft Windows and an embedded version of Ubuntu Linux in Windows, using Bash commands.
@@ -26,39 +27,48 @@ Prerequisites to have before using AKS are:
 
 There are several ways to create the AKS Environment. It can be done by using Azure-CLI commands or by using the Azure portal.
 
-Here you can explore some examples using the Azure-CLI to create the cluster and the Azure portal to review the results. You also need to have Kubectl and Docker in your development machine.  
+Here you can explore some examples using the Azure-CLI to create the cluster and the Azure portal to review the results. You also need to have Kubectl and Docker in your development machine.
 
 ## Create the AKS cluster
 
-Create the AKS cluster using this command:
+Create the AKS cluster using this command (the resource group must exist):
 
 ```console
-az aks create --resource-group MSSampleResourceGroup --name MSSampleClusterK801 --agent-count 1 --generate-ssh-keys --location westus2
+az aks create --resource-group explore-docker-aks-rg --name explore-docker-aks --node-vm-size Standard_B2s --node-count 1 --generate-ssh-keys --location westeurope
 ```
 
-After the creation job finishes, you can see the AKS created in the Azure portal:
+> [!NOTE]
+> The `--node-vm-size` and `--node-count` parameter values are good enough for a sample/dev application.
 
-The resource group:
+After the creation job finishes, you can see:
 
-![Browser view of the Azure AKS resource group.](media/aks-resource-group-view.png)
+- The AKS cluster created in the initial resource group
+- A new, related resource group, containing the resources related to the AKS cluster, as show in the following images.
+
+The initial resource group, with the AKS cluster:
+
+![Browser view of an AKS resource group.](media/deploy-azure-kubernetes-service/aks-cluster-view.png)
 
 **Figure 4-17**. AKS Resource Group view from Azure.
 
-The AKS cluster:
+The AKS cluster resource group:
 
-![Browser view of an AKS resource group.](media/aks-cluster-view.png)
+![Browser view of the Azure AKS resource group.](media/deploy-azure-kubernetes-service/aks-resource-group-view.png)
 
 **Figure 4-18**. AKS view from Azure.
+
+> [!IMPORTANT]
+> In general, you shouldn't need to modify the resources in the AKS cluster resource group. For example, the resource group is deleted when you delete the AKS cluster.
 
 You can also view the node created using `Azure-CLI` and `Kubectl`.
 
 First, getting the credentials:
 
 ```console
-az aks get-credentials --resource-group MSSampleK8ClusterRG --name MSSampleK8Cluster
+az aks get-credentials --resource-group explore-docker-aks-rg --name explore-docker-aks
 ```
 
-![Console output from the above command: Merged "MsSampleK8Cluster as current context in /root/.kube/config.](media/get-credentials-command-result.png)
+![Console output from the above command: Merged "explore-docker-aks" as current context in /home/miguel/.kube/config.](media/deploy-azure-kubernetes-service/get-credentials-command-result.png)
 
 **Figure 4-19**. `aks get-credentials` command result.
 
@@ -68,10 +78,9 @@ And then, getting nodes from Kubectl:
 kubectl get nodes
 ```
 
-![Console output from above command: List of nodes with status, age (time running), and version](media/kubectl-get-nodes-command-result.png)
+![Console output from above command: List of nodes with status, age (time running), and version](media/deploy-azure-kubernetes-service/kubectl-get-nodes-command-result.png)
 
 **Figure 4-20**. `kubectl get nodes` command result.
 
->[!div class="step-by-step"]
->[Previous](orchestrate-high-scalability-availability.md)
->[Next](docker-apps-development-environment.md)
+> [!div class="step-by-step"][previous](orchestrate-high-scalability-availability.md)
+> [Next](docker-apps-development-environment.md)

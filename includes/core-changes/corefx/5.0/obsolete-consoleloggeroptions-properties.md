@@ -9,7 +9,7 @@ Starting in .NET 5.0, the <xref:Microsoft.Extensions.Logging.Console.ConsoleLogg
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat?displayProperty=nameWithType>
-- `UseUtcTimestamp`
+- <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp?displayProperty=nameWithType>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format?displayProperty=nameWithType>
 
 With the introduction of new formatters, these properties are now available on the individual formatters.
@@ -42,7 +42,7 @@ The remaining properties were set on <xref:Microsoft.Extensions.Logging.Console.
   - `"Format": "Systemd"` maps to `"FormatterName": "Systemd"`.
   - `"Format": "Default"` maps to `"FormatterName": "Simple"`.
 
-- For the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat>, and `UseUtcTimestamp` properties, use the corresponding property on the new `Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions` or `Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions` types instead. For example:
+- For the <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes>, <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat>, and <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp> properties, use the corresponding property on the new <xref:Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions> or <xref:Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions> types instead. For example:
 
   ```csharp
   loggingBuilder.AddSimpleConsole(options =>
@@ -113,7 +113,7 @@ New configuration file:
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat?displayProperty=fullName>
-- `UseUtcTimestamp`
+- <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp?displayProperty=fullName>
 - <xref:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format?displayProperty=fullName>
 
 <!--
@@ -123,7 +123,7 @@ New configuration file:
 - `P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.DisableColors`
 - `P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.IncludeScopes`
 - `P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.TimestampFormat`
-- `P:UseUtcTimestamp`
+- `P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.UseUtcTimestamp`
 - `P:Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions.Format`
 
 -->

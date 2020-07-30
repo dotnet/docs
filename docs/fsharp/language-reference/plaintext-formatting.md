@@ -22,7 +22,7 @@ Hello world, 2 + 2 is 4
 ```
 
 F# also allows structured values to be formatted as plain text.
-For example, consider the following and note how the output has been formatted as a matrix-like display of tuples.
+For example, consider the following example that formats the output as a matrix-like display of tuples.
 
 ```console
 dotnet fsi

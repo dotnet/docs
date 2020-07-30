@@ -22,8 +22,7 @@ namespace operators
             a = s.Length;
             l = s[3];
             
-            List<int> numbers;
-            numbers = new List<int>(new[] { 1, 2, 3 });
+            var numbers = new List<int>(new[] { 1, 2, 3 });
             b = numbers.FindLast(n => n > 1);
 
             Console.WriteLine("void method invocation is also an expression");

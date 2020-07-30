@@ -424,7 +424,7 @@ and these affect the structured display of objects in debugger inspection window
 The F# compiler automatically generated these attributes for discriminated union and record types, but
 not class, interface or struct types.
 
-These attributed are ignored in F# plain text formatting, but it can be useful to implement
+These attributes are ignored in F# plain text formatting, but it can be useful to implement
 these methods to improve displays when debugging F# types.
 
 ## See also

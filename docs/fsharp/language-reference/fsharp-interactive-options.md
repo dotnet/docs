@@ -57,7 +57,7 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 |**--warnaserror**[**+**&#124;**-**]|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--warnaserror**[**+**&#124;**-**]:**&lt;int-list&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 
-## F# Interactive Structured Printing
+## F# Interactive structured printing
 
 F# Interactive (`dotnet fsi`) uses an extended version of [structured plain text formatting](plaintext-formatting.md) to
 report values.

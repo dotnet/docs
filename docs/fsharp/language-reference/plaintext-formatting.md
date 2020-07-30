@@ -1,27 +1,34 @@
 ---
 title: "Plain Text Formatting"
-description: Learn how to use structured formatted plain text in F# applications and scripts.
+description: Learn how to use printf and other plain text formatting in F# applications and scripts.
 ms.date: 07/22/2020
 ---
 
 # Plain Text Formatting
 
-F# allows structured values to be formatted as plain text.
+F# supports type-checked formatting of plain text using `printf`, `printfn`, `sprintf` and related functions.
+For example,
+
+```console
+dotnet fsi
+
+> printfn "Hello %s, %d + %d is %d" "world" 2 2 (2+2);;
+```
+
+gives the output
+
+```fsharp
+Hello world, 2 + 2 is 4
+```
+
+F# also allows structured values to be formatted as plain text.
 For example, consider the following and note how the output has been formatted as a matrix-like display of tuples.
 
 ```console
 dotnet fsi
 
-> let data = [ for i in 1 .. 3 -> [ for j in 1 .. 3 -> (i, j) ] ];;
+> printfn "%A" [ for i in 1 .. 5 -> [ for j in 1 .. 5 -> (i, j) ] ];;
 
-val data : (int * int) list list =
-  [[(1, 1); (1, 2); (1, 3); (1, 4); (1, 5)];
-   [(2, 1); (2, 2); (2, 3); (2, 4); (2, 5)];
-   [(3, 1); (3, 2); (3, 3); (3, 4); (3, 5)];
-   [(4, 1); (4, 2); (4, 3); (4, 4); (4, 5)];
-   [(5, 1); (5, 2); (5, 3); (5, 4); (5, 5)]]
-
->  printfn "%A" data;;
 [[(1, 1); (1, 2); (1, 3); (1, 4); (1, 5)];
  [(2, 1); (2, 2); (2, 3); (2, 4); (2, 5)];
  [(3, 1); (3, 2); (3, 3); (3, 4); (3, 5)];
@@ -29,10 +36,75 @@ val data : (int * int) list list =
  [(5, 1); (5, 2); (5, 3); (5, 4); (5, 5)]]
 ```
 
-Plain text formatting is activated when you use the `%A` format in `printf` formatting strings.
-Plain text formatting is also used when formatting the output of values in F# interactive, when the output includes extra information and is additionally customizable.
+Structured plain text formatting is activated when you use the `%A` format in [`printf` formatting strings](printf.md)
+and also when formatting the output of values in F# interactive, where the output includes extra information and is additionally customizable.
 Plain text formatting is also observable through any calls to `x.ToString()` on F# union and record values, including those
 that occur implicitly in debugging, logging and other tooling.
+
+## Checking of `printf`-format strings
+
+A compile-time error will be reported if a `printf` formatting function is used with an argument that doesn't match the printf format
+specifiers in the format string.  For example,
+
+```fsharp
+sprintf "Hello %s" (2+2)
+```
+
+gives the output
+
+```console
+  sprintf "Hello %s" (2+2)
+  ----------------------^
+
+stdin(3,25): error FS0001: The type 'string' does not match the type 'int'
+```
+
+Technically speaking, when using `printf` and other related functions a special rule in the F# compiler
+checks the string literal passed as the format string, ensuring the subsequent arguments applied are of
+the correct type to match the format specifiers used.
+
+## Format Specifiers for `printf`
+
+Format specifications for `printf` formats are strings with `%` markers indicating format. Format placeholders consist of `%[flags][width][.precision][type]`
+where the type is interpreted as follows:
+
+| Format specifier   | Type(s)        | Remarks                      |
+|:-------------------|:---------------|:-----------------------------|
+| `%b`               | bool      | Formatted as `true` or `false`                |
+| `%s`               | string    | Formatted as its unescaped contents         |
+| `%c`               | char      | Formatted as the character literal  |
+| `%d`, `%i`         | a basic integer type | Formatted as a decimal integer, signed if the basic integer type is signed |
+| `%u`               | a basic integer type | Formatted as an unsigned decimal integer   |
+| `%x`, `%X`         | a basic integer type | Formatted as an unsigned hexadecimal number (a-f or A-F for hex digits respectively)  |
+|  `%o`              | a basic integer type | Formatted as an unsigned octal number |
+| `%e`, `%E`         | a basic floating point type | Formatted as a signed value having the form `[-]d.dddde[sign]ddd` where d is a single decimal digit, dddd is one or more decimal digits, ddd is exactly three decimal digits, and sign is `+` or `-` |
+| `%f`               | a basic floating point type | Formatted as a signed value having the form `[-]dddd.dddd`, where `dddd` is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision. |
+| `%g`, `%G` | a basic floating point type |  Formatted using as a signed value printed in `%f` or `%e` format, whichever is more compact for the given value and precision. |
+| `%M` | a `System.Decimal` value  |    Formatted using the `"G"` format specifier for `System.Decimal.ToString(format)` |
+| `%O` | any value  |   Formatted by boxing the object and valling its `System.Object.ToString()` method |
+| `%A` | any value  |   Formatted using [structured plain text formatting](plaintext-formatting.md) with the default layout settings |
+| `%a` | any value  |   Requires two arguments - a formatting function accepting a context parameter and the value, and the particular value to print |
+| `%t` | any value  |   Requires one argument, a formatting function accepting a context parameter which either outputs or returns the appropriate text |
+
+Basic integer types are `byte` (`System.Byte`), `sbyte` (`System.SByte`), `int16` (`System.Int16`), `uint16` (`System.UInt16`), `int32` (`System.Int32`), `uint32` (`System.UInt32`), `int64` (`System.Int64`), `uint64` (`System.UInt64`), `nativeint`  (`System.IntPtr`)and `unativeint`  (`System.UIntPtr`).
+ Basic floating point types are `float` (`System.Double`) and `float32` (`System.Single`).
+
+The optional width is an integer indicating the minimal width of the result. For instance, `%6d` prints an integer, prefixing it with spaces
+to fill at least 6 characters. If width is `*`, then an extra integer  argument is taken to specify the corresponding width.
+
+Valid flags are:
+
+| Flag   | Effect        | Remarks                      |
+|:-------------------|:---------------|:-----------------------------|
+| `0`  | add zeros instead of spaces to make up the required width |    |
+| `-` |  left justify the result within the width specified  |   |
+| `+`  | add a `+` character if the number is positive (to match a `-` sign for negatives) |   |
+| a space character | add an extra space if the number is positive (to match a '-' sign for negatives) | 
+
+The printf `#` flag is invalid and a compile-time error will be reported if it is used.
+
+Values are formatted using invariant culture and culture settings are irrelevant to `printf` formatting except
+when they affect the results of `%O` and `%A` formatting, see [structured plain text formatting](plaintext-formatting.md) for more details.
 
 ## `%A` formatting
 

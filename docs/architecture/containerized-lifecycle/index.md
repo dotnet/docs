@@ -1,6 +1,6 @@
 ---
 title: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-description: Get a high level overview of the development and deployment process for developing and deploying containerized applications with Docker and Microsoft platform and tools.
+description: Get a high-level overview of the development and deployment process for developing and deploying containerized applications with Docker and Microsoft platform and tools.
 ms.date: 04/15/2020
 ---
 # Containerized Docker Application Lifecycle with Microsoft Platform and Tools
@@ -9,7 +9,7 @@ ms.date: 04/15/2020
 
 **EDITION v3.1** - Updated to ASP.NET Core 3.1
 
-This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools. The guide includes high level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR), and Azure Kubernetes Services AKS for deployment.
+This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools. The guide includes a high-level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR), and Azure Kubernetes Services AKS for deployment.
 
 For low-level, development-related details you can see the [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/architecture/microservices/) guide and it related reference application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).
 

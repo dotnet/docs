@@ -37,7 +37,7 @@ Methods are implicitly recursive within the type; there is no need to add the `r
 
 ## Tail recursion
 
-For some recursive functions, it is necessary to refactor a more "pure" definition to one that is [tail recursive](https://cs.stackexchange.com/questions/6230/what-is-tail-recursion). This prevents unecessary recomputations. For example, the previous fibonacci number generator can be rewritten like this:
+For some recursive functions, it is necessary to refactor a more "pure" definition to one that is [tail recursive](https://cs.stackexchange.com/questions/6230/what-is-tail-recursion). This prevents unnecessary recomputations. For example, the previous fibonacci number generator can be rewritten like this:
 
 ```fsharp
 let fib n =

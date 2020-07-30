@@ -59,7 +59,7 @@ gives the output
 stdin(3,25): error FS0001: The type 'string' does not match the type 'int'
 ```
 
-Technically speaking, when using `printf` and other related functions a special rule in the F# compiler
+Technically speaking, when using `printf` and other related functions, a special rule in the F# compiler
 checks the string literal passed as the format string, ensuring the subsequent arguments applied are of
 the correct type to match the format specifiers used.
 

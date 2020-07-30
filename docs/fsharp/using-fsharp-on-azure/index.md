@@ -2,7 +2,7 @@
 title: Using F# on Azure
 description: Guide to using Azure services with F#
 author: sylvanc
-ms.date: 09/22/2016
+ms.date: 07/29/2020
 ---
 
 # Using F# on Azure
@@ -52,10 +52,9 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 
 ## Using Apache Spark with F# with Azure HDInsight
 
-[Apache Spark for Azure HDInsight](https://azure.microsoft.com/services/hdinsight/apache-spark/) is an open source processing framework that runs large-scale data analytics applications. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [Mobius](https://github.com/Microsoft/Mobius), a .NET API for Spark.
+[Apache Spark for Azure HDInsight](https://azure.microsoft.com/services/hdinsight/apache-spark/) is an open source processing framework that runs large-scale data analytics applications. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [.NET for Apache Spark](../../spark/what-is-apache-spark-dotnet.md), a set of .NET Bindings for Apache Spark.
 
-* [Implementing Spark Apps in F# using Mobius](https://github.com/Microsoft/Mobius/blob/master/notes/spark-fsharp-mobius.md)
-* [Example F# Spark Apps using Mobius](https://github.com/Microsoft/Mobius/tree/master/examples/fsharp)
+* [.NET for Apache Spark F# samples](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
 
 ## Using Azure Cosmos DB with F\#
 

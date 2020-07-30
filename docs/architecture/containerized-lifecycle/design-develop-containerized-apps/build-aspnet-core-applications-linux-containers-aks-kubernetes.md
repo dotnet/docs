@@ -1,7 +1,7 @@
 ---
 title: Build ASP.NET Core applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.date: 04/23/2020
+ms.date: 07/30/2020
 ---
 
 # Build ASP.NET Core applications deployed as Linux containers into an AKS/Kubernetes orchestrator
@@ -13,8 +13,8 @@ AKS main features are:
 - An Azure-hosted control plane
 - Automated upgrades
 - Self-healing
-- User configurable scaling
-- A simpler user experience for both developers and cluster operators.
+- User-configurable scaling
+- Much simpler user experience for both developers and cluster operators.
 
 The following examples explore the creation of an ASP.NET Core 3.1 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019.
 
@@ -160,7 +160,7 @@ Browser opened:
 
 ![Browser view with web app running](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/browser-opened.png)
 
-**Figure 4-44**. Browser windows with multi-container application running.
+**Figure 4-44**. Browser window with an application running on multiple containers.
 
 Container window:
 

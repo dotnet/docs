@@ -1,7 +1,7 @@
 ---
 title: Inner-loop development workflow for Docker apps
-description: Learn the "inner loop" workflow for development of Docker applications.
-ms.date: 04/21/2020
+description: Learn about "inner-loop" development workflow for Docker applications.
+ms.date: 07/30/2020
 ---
 
 # Inner-loop development workflow for Docker apps
@@ -273,7 +273,7 @@ On the Docker host, open a browser and navigate to that site; you should see you
 
 ![Browser view of the response from localhost/API/values.](media/docker-apps-inner-loop-workflow/test-docker-app-locally-localhost.png)
 
-**Figure 4-29**. Testing your Docker application locally using localhost
+**Figure 4-29**. Testing your Docker application locally by using the browser
 
 Note that it's using port 50080, but internally it's being redirected to port 80, because that's how it was deployed with `docker compose`, as explained earlier.
 
@@ -281,7 +281,7 @@ You can test this by using the browser using CURL from the terminal, as depicted
 
 ![Curl result obtained from http://localhost:51080/WeatherForecast](media/docker-apps-inner-loop-workflow/test-docker-app-locally-curl.png)
 
-**Figure 4-30**. Testing a Docker application locally with the bro
+**Figure 4-30**. Testing a Docker application locally by using CURL
 
 **Debugging a container running on Docker**
 

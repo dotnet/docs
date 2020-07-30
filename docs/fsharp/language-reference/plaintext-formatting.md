@@ -6,7 +6,7 @@ ms.date: 07/22/2020
 
 # Plain text formatting
 
-F# supports type-checked formatting of plain text using `printf`, `printfn`, `sprintf` and related functions.
+F# supports type-checked formatting of plain text using `printf`, `printfn`, `sprintf`, and related functions.
 For example,
 
 ```console

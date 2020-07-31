@@ -30,9 +30,9 @@ The following serialization methods are also now obsolete, but have no behaviora
 
   ```csharp
   // Now read the purchase order back from disk
-  using (FileStream readStream = new FileStream("myfile.bin", FileMode.Open))
+  using (var readStream = new FileStream("myfile.bin", FileMode.Open))
   {
-      BinaryFormatter formatter = new BinaryFormatter();
+      var formatter = new BinaryFormatter();
   #pragma warning disable SYSLIB0011
       return (PurchaseOrder)formatter.Deserialize(readStream);
   #pragma warning restore SYSLIB0011

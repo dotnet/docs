@@ -1,9 +1,9 @@
 ﻿using System.Diagnostics.Tracing;
 
-[EventSource(Name = "Samples-EventCounterDemos-Minimal")]
+[EventSource(Name = "Samples.EventCounterDemos.Minimal")]
 public sealed class MinimalEventCounterSource : EventSource
 {
-    public static MinimalEventCounterSource Log { get; } = new MinimalEventCounterSource();
+    public static readonly MinimalEventCounterSource Log = new MinimalEventCounterSource();
 
     private EventCounter _requestCounter;
 
@@ -21,5 +21,7 @@ public sealed class MinimalEventCounterSource : EventSource
     {
         _requestCounter?.Dispose();
         _requestCounter = null;
+
+        base.Dispose(disposing);
     }
 }

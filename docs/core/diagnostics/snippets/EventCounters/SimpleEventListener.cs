@@ -10,7 +10,6 @@ public class SimpleEventListener : EventListener
 
     public SimpleEventListener(int intervalSec) => _intervalSec = intervalSec;
 
-    // <OnEventSourceCreated>
     protected override void OnEventSourceCreated(EventSource source)
     {
         if (!source.Name.Equals("System.Runtime"))
@@ -23,7 +22,6 @@ public class SimpleEventListener : EventListener
             ["EventCounterIntervalSec"] = "1"
         });
     }
-    // </OnEventSourceCreated>
 
     protected override void OnEventWritten(EventWrittenEventArgs eventData)
     {
@@ -32,7 +30,7 @@ public class SimpleEventListener : EventListener
             return;
         }
 
-        for (var i = 0; i < eventData.Payload.Count; ++ i)
+        for (int i = 0; i < eventData.Payload.Count; ++ i)
         {
             if (eventData.Payload[i] is IDictionary<string, object> eventPayload)
             {

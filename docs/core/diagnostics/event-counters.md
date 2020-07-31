@@ -14,13 +14,13 @@ The .NET Core runtime and a few .NET libraries publish basic diagnostics informa
 
 EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and EventPipe. This article focuses on the cross-platform capabilities of EventCounters, and intentionally excludes PerfView and ETW (Event Tracing for Windows) - although both can be used with EventCounters.
 
-![EventCounters in-proc and out-of-proc diagram image](media/event-counters.svg)]
+![EventCounters in-proc and out-of-proc diagram image](media/event-counters.svg)
 
 [!INCLUDE [available-counters](includes/available-counters.md)]
 
 ## EventCounters API overview
 
-There are two primary categories of counters. Some counters are for ever-increasing values, such as total # of exceptions, total # of GCs, and total # of requests. Other counters are "snapshot" values, such as heap usage, CPU usage, and working set size. Within each of these categories of counters, there are two types of counters that vary by how they get their value. Polling counters retrieve their value via a callback, and non-polling counters have their values directly set on the counter instance.
+There are two primary categories of counters. Some counters are for ever-increasing values, such as total number of exceptions, total number of GCs, and total number of requests. Other counters are "snapshot" values, such as heap usage, CPU usage, and working set size. Within each of these categories of counters, there are two types of counters that vary by how they get their value. Polling counters retrieve their value via a callback, and non-polling counters have their values directly set on the counter instance.
 
 The counters are represented by the following implementations <xref:System.Diagnostics.Tracing.EventCounter>, <xref:System.Diagnostics.Tracing.IncrementingEventCounter>, <xref:System.Diagnostics.Tracing.IncrementingPollingCounter>, and <xref:System.Diagnostics.Tracing.PollingCounter>.
 
@@ -32,9 +32,9 @@ The counters are represented by the following implementations <xref:System.Diagn
 
 1. The <xref:System.Diagnostics.Tracing.PollingCounter> uses a callback to determine the value that is reported. With each time interval, the user provided callback function is invoked and the return value is used as the counter value. A <xref:System.Diagnostics.Tracing.PollingCounter> can be used to query a metric from an external source, for example getting the current free bytes on a disk. It can also be used to report custom statistics that can be computed on demand by an application. Examples include reporting the 95th percentile of recent request latencies, or the current hit or miss ratio of a cache.
 
-## Writing EventCounters
+## Implement an EventSource
 
-The following code implements a sample <xref:System.Diagnostics.Tracing.EventSource> exposed as the named `"Samples-EventCounterDemos-Minimal"` provider. This source contains an <xref:System.Diagnostics.Tracing.EventCounter> representing request processing time. Such a counter has a name (that is, its unique ID in the source) and a display name, both used by listener tools such as [dotnet-counter](dotnet-counters.md).
+The following code implements a sample <xref:System.Diagnostics.Tracing.EventSource> exposed as the named `"Samples.EventCounterDemos.Minimal"` provider. This source contains an <xref:System.Diagnostics.Tracing.EventCounter> representing request processing time. Such a counter has a name (that is, its unique ID in the source) and a display name, both used by listener tools such as [dotnet-counter](dotnet-counters.md).
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
@@ -52,7 +52,7 @@ dotnet-counters ps
 Pass the <xref:System.Diagnostics.Tracing.EventSource> name as an argument to `--providers` to start monitoring your counter with the following command:
 
 ```console
-dotnet-counters monitor --process-id 1400180 --providers Samples-EventCounterDemos-Minimal
+dotnet-counters monitor --process-id 1400180 --providers "Samples.EventCounterDemos.Minimal"
 ```
 
 You should see the monitor output as shown below:
@@ -62,8 +62,10 @@ Press p to pause, r to resume, q to quit.
     Status: Running
 
 [Samples-EventCounterDemos-Minimal]
-    Request Processing Time (MSec)                            0.445
+    Request Processing Time (ms)                            0.445
 ```
+
+#### Conditional
 
 ### .NET Core runtime example counters
 
@@ -127,7 +129,7 @@ You can consume the counter values via the <xref:System.Diagnostics.Tracing.Even
 
 First, the <xref:System.Diagnostics.Tracing.EventSource> that produces the counter value needs to be enabled. Override the <xref:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated%2A> method to get a notification when an <xref:System.Diagnostics.Tracing.EventSource> is created, and if this is the correct <xref:System.Diagnostics.Tracing.EventSource> with your EventCounters, then you can call <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A?displayProperty=nameWithType> on it. Here is an example override:
 
-:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" id="OnEventSourceCreated":::
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="13-24":::
 
 #### Sample code
 
@@ -143,9 +145,7 @@ Consuming EventCounters out-of-proc is also possible. You can use [dotnet-counte
 
 #### dotnet-trace
 
-Similar to how PerfView can be used to consume the counter data through ETW, dotnet-trace can be used to consume the counter data through EventPipe.
-
-Here is an example of using dotnet-trace to get the same counter data.
+The `dotnet-trace` tool can be used to consume the counter data through an EventPipe. Here is an example using `dotnet-trace` to collect counter data.
 
 ```console
 dotnet-trace collect --process-id <pid> --providers Samples-EventCounterDemos-Minimal:0:0:EventCounterIntervalSec=1

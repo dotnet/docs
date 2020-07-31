@@ -3,7 +3,7 @@ using System.Diagnostics.Tracing;
 
 public class RequestEventSource : EventSource
 {
-    public static RequestEventSource Log { get; } = new RequestEventSource();
+    public static readonly RequestEventSource Log = new RequestEventSource();
 
     private IncrementingPollingCounter _requestRateCounter;
     private int _requestCount = 0;

@@ -14,39 +14,7 @@ For events that happen every few milliseconds, you'll want the performance per e
 
 When dealing with a large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
 
-```csharp
-// Give your event sources a descriptive name using the EventSourceAttribute, otherwise the name of the class is used.
-[EventSource(Name = "Samples-EventCounterDemos-Minimal")]
-public sealed class MinimalEventCounterSource : EventSource
-{
-    // Define the singleton instance of the event source
-    public static MinimalEventCounterSource Log = new MinimalEventCounterSource();
-    private EventCounter RequestCounter;
-
-    private MinimalEventCounterSource() : base(EventSourceSettings.EtwSelfDescribingEventFormat)
-    {
-        RequestCounter = new EventCounter("request", this);
-    }
-
-    // Indicate that a request for a URL was made which took a particular amount of time
-    public void Request(string url, float elapsedMSec)
-    {
-        // Notes:
-        //   1. the event ID passed to WriteEvent (1) corresponds to the (implied) event ID
-        //      assigned to this method. The event ID could have been explicitly declared
-        //      using an EventAttribute for this method
-        //   2. Each counter supports a single float value, so conceptually it maps to a single
-        //      measurement in the code.
-        //   3. You don't have to have log with WriteEvent if you don't think you will ever care about details
-        //       of individual requests (that counter data is sufficient).
-
-        // This logs it to the event stream if events are on.
-        WriteEvent(1, url, elapsedMSec);
-        // This adds it to the PerfCounter called 'Request' if PerfCounters are on
-        RequestCounter.WriteMetric(elapsedMSec);
-    }
-}
-```
+:::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
 The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> line is the <xref:System.Diagnostics.Tracing.EventSource> part and is not part of <xref:System.Diagnostics.Tracing.EventCounter>, it was written to show that you can log a message together with the event counter.
 
@@ -58,7 +26,7 @@ There is an extra keyword that you will need to specify the turn on the EventCou
 PerfView /onlyProviders=*Samples-EventCounterDemos-Minimal:EventCounterIntervalSec=1 collect
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > The `EventCounterIntervalSec` segment is used to indicate the frequency of the sampling.
 
 As usual, turn on PerfView, and then run the sample code - we get have something like this.

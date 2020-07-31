@@ -1,7 +1,7 @@
 ---
 title: EventCounters in .NET Core
 description: In this article you'll learn what EventCounters are, how to implement them, and how to consume them.
-ms.date: 07/22/2020
+ms.date: 07/31/2020
 ---
 
 # EventCounters in .NET Core
@@ -22,7 +22,7 @@ The .NET runtime publishes the many counters.
 
 ### `System.Runtime` providers
 
-- % Time in GC
+- % Time in Garbage Collection (GC)
 - Active Timer Count
 - Allocation Rate
 - Assembly Count
@@ -78,36 +78,7 @@ The counters are represented by the following implementations <xref:System.Diagn
 
 The following code implements a sample <xref:System.Diagnostics.Tracing.EventSource> exposed as the named `"Samples-EventCounterDemos-Minimal"` provider. This source contains an <xref:System.Diagnostics.Tracing.EventCounter> representing request processing time. Such a counter has a name (that is, its unique ID in the source) and a display name both used by listener tools such as [dotnet-counter](dotnet-counters.md).
 
-```csharp
-using System;
-using System.Diagnostics.Tracing;
-
-[EventSource(Name = "Samples-EventCounterDemos-Minimal")]
-public sealed class MinimalEventCounterSource : EventSource
-{
-    // Define the singleton instance of the event source
-    public static MinimalEventCounterSource Log = new MinimalEventCounterSource();
-    public EventCounter RequestTimeCounter;
-
-    private MinimalEventCounterSource() : base(EventSourceSettings.EtwSelfDescribingEventFormat)
-    {
-        RequestTimeCounter = new EventCounter("request-time", this)
-        {
-            DisplayName = "Request Processing Time",
-            DisplayUnits = "MSec"
-        };
-    }
-
-    public static void Main()
-    {
-        var rand = new Random();
-        while(true)
-        {
-            MinimalEventCounterSource.Log.RequestTimeCounter.WriteMetric(rand.NextDouble());
-        }
-    }
-}
-```
+:::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
 Create a [new .NET console app](../tools/dotnet-new.md#console) using the previous code snippet as a replacement for the _Program.cs_ file. Build and run the app. Then use `dotnet-counters ps` to see what its process ID is:
 
@@ -144,8 +115,7 @@ There are many great example implementations in the .NET Core runtime. Here is t
 var workingSetCounter = new PollingCounter(
     "working-set",
     this,
-    () => (double)(Environment.WorkingSet / 1_000_000)
-)
+    () => (double)(Environment.WorkingSet / 1_000_000))
 {
     DisplayName = "Working Set",
     DisplayUnits = "MB"
@@ -181,39 +151,12 @@ There are more counter implementations to use as a reference in the [.NET runtim
 
 For example, consider the following <xref:System.Diagnostics.Tracing.EventSource> to keep track of requests.
 
-```csharp
-public class RequestEventSource : EventSource
-{
-    // Define a singleton instance of the request EventSource.
-    public static RequestEventSource Log = new RequestEventSource();
-
-    public IncrementingPollingCounter RequestRateCounter;
-    private int _requestCount = 0;
-
-    private RequestEventSource() : base(EventSourceSettings.EtwSelfDescribingEventFormat)
-    {
-        RequestRateCounter = new IncrementingPollingCounter("request-rate", this, () => _requestCnt)
-        {
-            DisplayName = "Request Rate",
-            DisplayRateTimeScale = TimeSpan.FromSeconds(1)
-        };
-    }
-
-    // Method being called from request handlers to log that a request happened
-    public void AddRequest()
-    {
-        _requestCount++;
-    }
-}
-```
+:::code language="csharp" source="snippets/EventCounters/RequestEventSource.cs":::
 
 The `AddRequest()` method can be called from a request handler, and the `RequestRateCounter` polls the value at the interval specified by the consumer of the counter. However, the `AddRequest()` method can be called by multiple threads at once, putting a race condition on `_requestCount`. A thread-safe alternative way to increment the `_requestCount` is to use <xref:System.Threading.Interlocked.Increment%2A?displayProperty=nameWithType>.
 
 ```csharp
-public void AddRequest()
-{
-    Interlocked.Increment(ref _requestCount);
-}
+public void AddRequest() => Interlocked.Increment(ref _requestCount);
 ```
 
 ## Consuming EventCounters
@@ -226,88 +169,13 @@ You can consume the counter values via the <xref:System.Diagnostics.Tracing.Even
 
 First, the <xref:System.Diagnostics.Tracing.EventSource> that produces the counter value needs to be enabled. Override the <xref:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated%2A> method to get a notification when an <xref:System.Diagnostics.Tracing.EventSource> is created, and if this is the correct <xref:System.Diagnostics.Tracing.EventSource> with your EventCounters, then you can call <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A?displayProperty=nameWithType> on it. Here is an example override:
 
-```csharp
-protected override void OnEventSourceCreated(EventSource source)
-{
-    if (source.Name.Equals("System.Runtime"))
-    {
-        var refreshInterval = new Dictionary<string, string>()
-        {
-            ["EventCounterIntervalSec"] = "1"
-        };
-
-        EnableEvents(source, 1, 1, refreshInterval);
-    }
-}
-```
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" id="OnEventSourceCreated":::
 
 #### Sample code
 
 Here is a sample <xref:System.Diagnostics.Tracing.EventListener> class that prints out all the counter names, and values from the .NET runtime's <xref:System.Diagnostics.Tracing.EventSource> for publishing its internal counters (`System.Runtime`) at some interval.
 
-```csharp
-public class SimpleEventListener : EventListener
-{
-    private readonly EventLevel _level = EventLevel.Verbose;
-    private int _intervalSec;
-
-    public int EventCount { get; private set; }
-
-    public SimpleEventListener(int intervalSec)
-    {
-        _intervalSec = intervalSec;
-    }
-
-    protected override void OnEventSourceCreated(EventSource source)
-    {
-        if (source.Name.Equals("System.Runtime"))
-        {
-            var refreshInterval = new Dictionary<string, string>()
-            {
-                ["EventCounterIntervalSec"] = "1"
-            };
-
-            EnableEvents(source, _level, (EventKeywords)(-1), refreshInterval);
-        }
-    }
-
-    private (string counterName, string counterValue) GetRelevantMetric(
-        IDictionary<string, object> eventPayload)
-    {
-        string counterName = "";
-        string counterValue = "";
-
-        foreach ((string key, object value) in eventPayload)
-        {
-            if (key.Equals("DisplayName"))
-            {
-                counterName = value.ToString();
-            }
-            else if (key.Equals("Mean") || key.Equals("Increment"))
-            {
-                counterValue = value.ToString();
-            }
-        }
-
-        return (counterName, counterValue);
-    }
-
-    protected override void OnEventWritten(EventWrittenEventArgs eventData)
-    {
-        if (eventData.EventName.Equals("EventCounters"))
-        {
-            for (int i = 0; i < eventData.Payload.Count; i++)
-            {
-                if (eventData.Payload[i] is IDictionary<string, object> eventPayload)
-                {
-                    (string counterName, string counterValue) = GetRelevantMetric(eventPayload);
-                    Console.WriteLine($"{counterName} : {counterValue}");
-                }
-            }
-        }
-    }
-}
-```
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs":::
 
 As shown above, you _must_ make sure the `"EventCounterIntervalSec"` argument is set in the `filterPayload` argument when calling <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A>. Otherwise the counters will not be able to flush out values since it doesn't know at which interval it should be getting flushed out.
 

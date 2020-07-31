@@ -1,7 +1,7 @@
 ---
 title: EventCounters in .NET Core
 description: In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
-ms.date: 07/22/2020
+ms.date: 07/31/2020
 ---
 
 # EventCounters in .NET Core
@@ -12,7 +12,7 @@ EventCounters are .NET Core APIs used for lightweight, cross-platform, and near 
 
 The .NET Core runtime and a few .NET libraries publish basic diagnostics information using EventCounters starting in .NET Core 3.0. Apart from the EventCounters that are provided by the .NET runtime, you may choose to implement your own EventCounters. EventCounters can be used to track various metrics.
 
-EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and EventPipe/ETW (Event Tracing for Windows).
+EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and EventPipe. This article focuses on the cross-platform capabilities of EventCounters, and intentionally excludes PerfView and ETW (Event Tracing for Windows) - although both can be used with EventCounters.
 
 [![EventCounters in-proc and out-of-proc diagram image](media/event-counters.svg)](media/event-counters.svg#lightbox)
 
@@ -20,45 +20,61 @@ EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>
 
 The .NET runtime publishes many counters.
 
-### `System.Runtime` providers
+### `System.Runtime` counters
 
-- :::no-loc text="% Time in GC":::
-- :::no-loc text="Active Timer Count":::
-- :::no-loc text="Allocation Rate":::
-- :::no-loc text="Assembly Count":::
-- :::no-loc text="CPU usage":::
-- :::no-loc text="Exception Rate":::
-- :::no-loc text="GC Heap Size":::
-- :::no-loc text="Gen 0 GC Rate":::
-- :::no-loc text="Gen 0 Heap Size":::
-- :::no-loc text="Gen 1 GC Rate":::
-- :::no-loc text="Gen 1 Heap Size":::
-- :::no-loc text="Gen 2 GC Rate":::
-- :::no-loc text="Gen 2 Heap Size":::
-- :::no-loc text="LOH Heap Size":::
-- :::no-loc text="Monitor Lock Contention Rate":::
-- :::no-loc text="ThreadPool Completed Items Rate":::
-- :::no-loc text="ThreadPool Queue Length":::
-- :::no-loc text="ThreadPool Thread Count":::
-- :::no-loc text="Working Set Size":::
+- :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`)
+- :::no-loc text="Allocation Rate"::: (`alloc-rate`)
+- :::no-loc text="CPU Usage"::: (`cpu-usage`)
+- :::no-loc text="Exception Count"::: (`exception-count`)
+- :::no-loc text="GC Heap Size"::: (`gc-heap-size`)
+- :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`)
+- :::no-loc text="Gen 0 Size"::: (`gen-0-size`)
+- :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`)
+- :::no-loc text="Gen 1 Size"::: (`gen-1-size`)
+- :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`)
+- :::no-loc text="Gen 2 Size"::: (`gen-2-size`)
+- :::no-loc text="LOH Size"::: (`loh-size`)
+- :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`)
+- :::no-loc text="Number of Active Timers"::: (`active-timer-count`)
+- :::no-loc text="Number of Assemblies Loaded"::: (`assembly-count`)
+- :::no-loc text="ThreadPool Completed Work Item Count"::: (`threadpool-completed-items-count`)
+- :::no-loc text="ThreadPool Queue Length"::: (`threadpool-queue-length`)
+- :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`)
+- :::no-loc text="Working Set"::: (`working-set`)
 
-### `Microsoft.AspNetCore.Hosting` providers
+### `Microsoft.AspNetCore.Hosting` counters
 
 The following counters are published as part of [ASP.NET Core](/aspnet/core).
 
-- :::no-loc text="Current Requests Count":::
-- :::no-loc text="Failed Requests Count":::
-- :::no-loc text="Requests per second":::
-- :::no-loc text="Total Requests Count":::
+- :::no-loc text="Current Requests"::: (`current-requests`)
+- :::no-loc text="Failed Requests"::: (`failed-requests`)
+- :::no-loc text="Request Rate"::: (`requests-per-second`)
+- :::no-loc text="Total Requests"::: (`total-requests`)
 
-### `Microsoft.AspNetCore.Http.Connections` providers
+### `Microsoft.AspNetCore.Http.Connections` counters
 
 The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction).
 
-- :::no-loc text="Average Connection Duration":::
-- :::no-loc text="Total Connections Started":::
-- :::no-loc text="Total Connections Stopped":::
-- :::no-loc text="Total Connections Timed Out":::
+- :::no-loc text="Average Connection Duration"::: (`connections-duration`)
+- :::no-loc text="Current Connections"::: (`current-connections`)
+- :::no-loc text="Total Connections Started"::: (`connections-started`)
+- :::no-loc text="Total Connections Stopped"::: (`connections-stopped`)
+- :::no-loc text="Total Connections Timed Out"::: (`connections-timed-out`)
+
+### `Microsoft.AspNetCore.Server.Kestrel` counters
+
+The following counters are published as part of [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel).
+
+- :::no-loc text="Connection Rate"::: (`connections-per-second`)
+- :::no-loc text="Total Connections"::: (`total-connections`)
+- :::no-loc text="TLS Handshake Rate"::: (`tls-handshakes-per-second`)
+- :::no-loc text="Total TLS Handshakes"::: (`total-tls-handshakes`)
+- :::no-loc text="Current TLS Handshakes""current-tls-handshakes`)
+- :::no-loc text="Failed TLS Handshakes""failed-tls-handshakes`)
+- :::no-loc text="Current Connections"::: (`current-connections`)
+- :::no-loc text="Connection Queue Length"::: (`connection-queue-length`)
+- :::no-loc text="Request Queue Length"::: (`request-queue-length`)
+- :::no-loc text="Current Upgraded Requests (WebSockets)"::: (`current-upgraded-requests`)
 
 ## EventCounters API overview
 
@@ -118,7 +134,7 @@ var workingSetCounter = new PollingCounter(
     () => (double)(Environment.WorkingSet / 1_000_000))
 {
     DisplayName = "Working Set",
-    DisplayUnits = "MB"
+    DisplayUnits = "MB`)
 };
 ```
 

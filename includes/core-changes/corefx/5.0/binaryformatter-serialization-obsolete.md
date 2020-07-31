@@ -4,7 +4,7 @@
 
 #### Change description
 
-Due to [security vulnerabilities](../../../../docs/standard/serialization/binaryformatter-security-guide#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following methods are now obsolete. Additionally, in ASP.NET 5.0 and later apps, they will throw a <xref:System.NotSupportedException>, unless the web app has re-enabled <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> functionality.
+Due to [security vulnerabilities](../../../../docs/standard/serialization/binaryformatter-security-guide.md#binaryformatter-security-vulnerabilities) in <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, the following methods are now obsolete. Additionally, in ASP.NET 5.0 and later apps, they will throw a <xref:System.NotSupportedException>, unless the web app has re-enabled <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> functionality.
 
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Serialize%2A?displayProperty=nameWithType>
 - <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize%2A?displayProperty=nameWithType>
@@ -30,9 +30,9 @@ The following serialization methods are also now obsolete, but have no behaviora
 
   ```csharp
   // Now read the purchase order back from disk
-  using (FileStream readStream = new FileStream("myfile.bin", FileMode.Open))
+  using (var readStream = new FileStream("myfile.bin", FileMode.Open))
   {
-      BinaryFormatter formatter = new BinaryFormatter();
+      var formatter = new BinaryFormatter();
   #pragma warning disable SYSLIB0011
       return (PurchaseOrder)formatter.Deserialize(readStream);
   #pragma warning restore SYSLIB0011

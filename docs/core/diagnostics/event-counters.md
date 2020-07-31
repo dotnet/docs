@@ -14,67 +14,9 @@ The .NET Core runtime and a few .NET libraries publish basic diagnostics informa
 
 EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and EventPipe. This article focuses on the cross-platform capabilities of EventCounters, and intentionally excludes PerfView and ETW (Event Tracing for Windows) - although both can be used with EventCounters.
 
-[![EventCounters in-proc and out-of-proc diagram image](media/event-counters.svg)](media/event-counters.svg#lightbox)
+![EventCounters in-proc and out-of-proc diagram image](media/event-counters.svg)]
 
-## Runtime counters
-
-The .NET runtime publishes many counters.
-
-### `System.Runtime` counters
-
-- :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`)
-- :::no-loc text="Allocation Rate"::: (`alloc-rate`)
-- :::no-loc text="CPU Usage"::: (`cpu-usage`)
-- :::no-loc text="Exception Count"::: (`exception-count`)
-- :::no-loc text="GC Heap Size"::: (`gc-heap-size`)
-- :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`)
-- :::no-loc text="Gen 0 Size"::: (`gen-0-size`)
-- :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`)
-- :::no-loc text="Gen 1 Size"::: (`gen-1-size`)
-- :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`)
-- :::no-loc text="Gen 2 Size"::: (`gen-2-size`)
-- :::no-loc text="LOH Size"::: (`loh-size`)
-- :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`)
-- :::no-loc text="Number of Active Timers"::: (`active-timer-count`)
-- :::no-loc text="Number of Assemblies Loaded"::: (`assembly-count`)
-- :::no-loc text="ThreadPool Completed Work Item Count"::: (`threadpool-completed-items-count`)
-- :::no-loc text="ThreadPool Queue Length"::: (`threadpool-queue-length`)
-- :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`)
-- :::no-loc text="Working Set"::: (`working-set`)
-
-### `Microsoft.AspNetCore.Hosting` counters
-
-The following counters are published as part of [ASP.NET Core](/aspnet/core).
-
-- :::no-loc text="Current Requests"::: (`current-requests`)
-- :::no-loc text="Failed Requests"::: (`failed-requests`)
-- :::no-loc text="Request Rate"::: (`requests-per-second`)
-- :::no-loc text="Total Requests"::: (`total-requests`)
-
-### `Microsoft.AspNetCore.Http.Connections` counters
-
-The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction).
-
-- :::no-loc text="Average Connection Duration"::: (`connections-duration`)
-- :::no-loc text="Current Connections"::: (`current-connections`)
-- :::no-loc text="Total Connections Started"::: (`connections-started`)
-- :::no-loc text="Total Connections Stopped"::: (`connections-stopped`)
-- :::no-loc text="Total Connections Timed Out"::: (`connections-timed-out`)
-
-### `Microsoft.AspNetCore.Server.Kestrel` counters
-
-The following counters are published as part of [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel).
-
-- :::no-loc text="Connection Rate"::: (`connections-per-second`)
-- :::no-loc text="Total Connections"::: (`total-connections`)
-- :::no-loc text="TLS Handshake Rate"::: (`tls-handshakes-per-second`)
-- :::no-loc text="Total TLS Handshakes"::: (`total-tls-handshakes`)
-- :::no-loc text="Current TLS Handshakes""current-tls-handshakes`)
-- :::no-loc text="Failed TLS Handshakes""failed-tls-handshakes`)
-- :::no-loc text="Current Connections"::: (`current-connections`)
-- :::no-loc text="Connection Queue Length"::: (`connection-queue-length`)
-- :::no-loc text="Request Queue Length"::: (`request-queue-length`)
-- :::no-loc text="Current Upgraded Requests (WebSockets)"::: (`current-upgraded-requests`)
+[!INCLUDE [available-counters](includes/available-counters.md)]
 
 ## EventCounters API overview
 
@@ -197,21 +139,7 @@ As shown above, you _must_ make sure the `"EventCounterIntervalSec"` argument is
 
 ### Consuming out-of-proc
 
-Consuming EventCounters out-of-proc is also possible. You can use ETW to capture counter data as events, and view them on your ETW trace viewer (PerfView and WPA). You may also use [dotnet-counters](dotnet-counters.md) to consume them in a cross-platform manner via an EventPipe. Likewise, you could also use <xref:System.Diagnostics.TraceSource.TraceEvent%2A?displayProperty=nameWithType>, or <xref:System.Diagnostics.TraceListener.TraceEvent%2A?displayProperty=nameWithType> to consume EventCounters.
-
-#### dotnet-counters
-
-The `dotnet-counters` tool is a cross-platform dotnet CLI global tool that can be used to monitor the counter values. To find out how to use `dotnet-counters` to monitor your counters, see [dotnet-counters](dotnet-counters.md).
-
-#### ETW/PerfView
-
-Since <xref:System.Diagnostics.Tracing.EventCounter> payloads are reported as <xref:System.Diagnostics.Tracing.EventSource> events, you can use PerfView to collect/view these counter-data.
-
-Here is a command that can be passed to PerfView to collect an ETW trace with the counters.
-
-```console
-PerfView.exe /onlyProviders=*Samples-EventCounterDemos-Minimal:EventCounterIntervalSec=1 collect
-```
+Consuming EventCounters out-of-proc is also possible. You can use [dotnet-counters](dotnet-counters.md) to consume them in a cross-platform manner via an EventPipe. The `dotnet-counters` tool is a cross-platform dotnet CLI global tool that can be used to monitor the counter values. To find out how to use `dotnet-counters` to monitor your counters, see [dotnet-counters](dotnet-counters.md). Likewise, you could also use <xref:System.Diagnostics.TraceSource.TraceEvent%2A?displayProperty=nameWithType>, or <xref:System.Diagnostics.TraceListener.TraceEvent%2A?displayProperty=nameWithType> to consume EventCounters.
 
 #### dotnet-trace
 
@@ -224,12 +152,6 @@ dotnet-trace collect --process-id <pid> --providers Samples-EventCounterDemos-Mi
 ```
 
 For more information on how to collect counter values over time, see the corresponding [dotnet-trace](dotnet-trace.md#use-dotnet-trace-to-collect-counter-values-over-time) section.
-
-#### TraceEvent
-
-TraceEvent is a managed library that makes it easy to consume ETW and EventPipe events. For more information, see the [TraceEvent Library Programmers Guide](https://github.com/Microsoft/perfview/blob/master/documentation/TraceEvent/TraceEventProgrammersGuide.md).
-
-For additional code samples, see [Criteo Labs blog](https://medium.com/criteo-labs/net-core-counters-internals-how-to-integrate-counters-in-your-monitoring-pipeline-5354cd61b42e).
 
 ## Next steps
 

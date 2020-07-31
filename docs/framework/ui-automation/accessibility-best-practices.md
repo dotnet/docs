@@ -1,5 +1,6 @@
 ---
 title: "Accessibility Best Practices"
+description: Learn about accessibility best practices in .NET. Explore programmatic access, user settings, visual UI design, navigation, and multimodal interfaces.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "best practices for accessibility"

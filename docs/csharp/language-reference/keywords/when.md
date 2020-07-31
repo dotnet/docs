@@ -10,10 +10,11 @@ ms.assetid: dd543335-ae37-48ac-9560-bd5f047b9aea
 ---
 # when (C# Reference)
 
-You can use the `when` contextual keyword to specify a filter condition in two contexts:
+You can use the `when` contextual keyword to specify a filter condition in the following contexts:
 
 - In the `catch` statement of a [try/catch](try-catch.md) or [try/catch/finally](try-catch-finally.md) block.
 - In the `case` label of a [switch](switch.md) statement.
+- In the [`switch` expression](../operators/switch-expression.md).
 
 ## `when` in a `catch` statement
 

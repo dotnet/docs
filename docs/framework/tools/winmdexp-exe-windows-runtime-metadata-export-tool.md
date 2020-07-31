@@ -1,5 +1,6 @@
 ---
 title: "Winmdexp.exe (Windows Runtime Metadata Export Tool)"
+description: Understand Winmdexp.exe, the Windows Runtime Metadata Export Tool. This tool transforms a .NET module into a file that contains Windows Runtime metadata.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Runtime Metadata Export Tool"

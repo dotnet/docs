@@ -1,5 +1,6 @@
 ---
 title: "SecAnnotate.exe (.NET Security Annotator Tool)"
+description: Use SecAnnotate.exe, the .NET Security Annotator tool. Identify SecurityCritical and SecuritySafeCritical portions of one or more assemblies.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "SecAnnotate.exe"

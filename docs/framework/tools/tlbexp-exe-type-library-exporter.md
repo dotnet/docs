@@ -1,5 +1,6 @@
 ---
 title: "Tlbexp.exe (Type Library Exporter)"
+description: Review Tlbexp.exe, the Type Library Exporter. This tool generates a type library that describes the types defined in a common language runtime (CLR) assembly.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "exporting type library [.NET Framework]"

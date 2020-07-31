@@ -1,5 +1,6 @@
 ---
 title: "SignTool.exe (Sign Tool)"
+description: Learn about SignTool.exe, the Sign Tool. This command-line tool digitally signs files, verifies signatures in files, and applies timestamps to files.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Sign tool"

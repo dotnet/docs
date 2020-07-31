@@ -88,8 +88,8 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |Grouping construct|Description|Pattern|Matches|
 |------------------------|-----------------|-------------|-------------|
 |`(` *subexpression* `)`|Captures the matched subexpression and assigns it a one-based ordinal number.|`(\w)\1`|`"ee"` in `"deep"`|
-|`(?<` *name* `>` *subexpression* `)`|Captures the matched subexpression into a named group.|`(?<double>\w)\k<double>`|`"ee"` in `"deep"`|
-|`(?<` *name1* `-` *name2* `>` *subexpression* `)`|Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs](grouping-constructs-in-regular-expressions.md).|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|`"((1-3)*(3-1))"` in `"3+2^((1-3)*(3-1))"`|
+|`(?<` *name* `>` *subexpression* `)`<br/>or<br/>`(?'` *name* `'` *subexpression* `)`|Captures the matched subexpression into a named group.|`(?<double>\w)\k<double>`|`"ee"` in `"deep"`|
+|`(?<` *name1* `-` *name2* `>` *subexpression* `)`<br/>or</br>`(?`'` *name1* `-` *name2* `'` *subexpression* `)`|Defines a balancing group definition. For more information, see the "Balancing Group Definition" section in [Grouping Constructs](grouping-constructs-in-regular-expressions.md).|`(((?'Open'\()[^\(\)]*)+((?'Close-Open'\))[^\(\)]*)+)*(?(Open)(?!))$`|`"((1-3)*(3-1))"` in `"3+2^((1-3)*(3-1))"`|
 |`(?:` *subexpression* `)`|Defines a noncapturing group.|`Write(?:Line)?`|`"WriteLine"` in `"Console.WriteLine()"`<br /><br /> `"Write"` in `"Console.Write(value)"`|
 |`(?imnsx-imnsx:` *subexpression* `)`|Applies or disables the specified options within *subexpression*. For more information, see [Regular Expression Options](regular-expression-options.md).|`A\d{2}(?i:\w+)\b`|`"A12xl"`, `"A12XL"` in `"A12xl A12XL a12xl"`|
 |`(?=` *subexpression* `)`|Zero-width positive lookahead assertion.|`\w+(?=\.)`|`"is"`, `"ran"`, and `"out"` in `"He is. The dog ran. The sun is out."`|

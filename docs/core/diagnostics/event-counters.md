@@ -65,7 +65,11 @@ Press p to pause, r to resume, q to quit.
     Request Processing Time (ms)                            0.445
 ```
 
-#### Conditional
+#### Conditional counters
+
+When implementing an <xref:System.Diagnostics.Tracing.EventSource>, the containing counters can be conditionally instantiated when the <xref:System.Diagnostics.Tracing.EventSource.OnEventCommand%2A?displayProperty=nameWithType> method is called with a <xref:System.Diagnostics.Tracing.EventCommandEventArgs.Command> value of enabled. To safely instantiate a counter instance only if it is `null`, use the [null-coalescing assignment operator](../../csharp/language-reference/operators/null-coalescing-operator.md). Additionally, custom methods can evaluate the <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A> method to whether or not the current event source is enabled.
+
+:::code language="csharp" source="snippets/EventCounters/ConditionalEventCounterSource.cs":::
 
 ### .NET Core runtime example counters
 
@@ -148,7 +152,7 @@ Consuming EventCounters out-of-proc is also possible. You can use [dotnet-counte
 The `dotnet-trace` tool can be used to consume the counter data through an EventPipe. Here is an example using `dotnet-trace` to collect counter data.
 
 ```console
-dotnet-trace collect --process-id <pid> --providers Samples-EventCounterDemos-Minimal:0:0:EventCounterIntervalSec=1
+dotnet-trace collect --process-id <pid> --providers Samples.EventCounterDemos.Minimal:0:0:EventCounterIntervalSec=1
 ```
 
 For more information on how to collect counter values over time, see the corresponding [dotnet-trace](dotnet-trace.md#use-dotnet-trace-to-collect-counter-values-over-time) section.

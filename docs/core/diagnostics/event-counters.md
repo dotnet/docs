@@ -14,7 +14,7 @@ The .NET Core runtime and a few .NET libraries publish basic diagnostics informa
 
 EventCounters live as a part of an <xref:System.Diagnostics.Tracing.EventSource>, and are automatically pushed to listener tools on a regular basis. Like all other events on an <xref:System.Diagnostics.Tracing.EventSource>, they can be consumed both in-proc and out-of-proc via <xref:System.Diagnostics.Tracing.EventListener> and EventPipe/ETW (Event Tracing for Windows).
 
-[![EventCounters in-proc and out-of-proc diagram image](media/eventcounters.jpg)](media/eventcounters.jpg#lightbox)
+[![EventCounters in-proc and out-of-proc diagram image](media/event-counters.svg)](media/event-counters.svg#lightbox)
 
 ## Runtime counters
 
@@ -22,43 +22,43 @@ The .NET runtime publishes many counters.
 
 ### `System.Runtime` providers
 
-- % Time in Garbage Collection (GC)
-- Active Timer Count
-- Allocation Rate
-- Assembly Count
-- CPU usage
-- Exception Rate
-- GC Heap Size
-- Gen 0 GC Rate
-- Gen 0 Heap Size
-- Gen 1 GC Rate
-- Gen 1 Heap Size
-- Gen 2 GC Rate
-- Gen 2 Heap Size
-- LOH Heap Size
-- Monitor Lock Contention Rate
-- ThreadPool Completed Items Rate
-- ThreadPool Queue Length
-- ThreadPool Thread Count
-- Working Set Size
+- :::no-loc text="% Time in GC":::
+- :::no-loc text="Active Timer Count":::
+- :::no-loc text="Allocation Rate":::
+- :::no-loc text="Assembly Count":::
+- :::no-loc text="CPU usage":::
+- :::no-loc text="Exception Rate":::
+- :::no-loc text="GC Heap Size":::
+- :::no-loc text="Gen 0 GC Rate":::
+- :::no-loc text="Gen 0 Heap Size":::
+- :::no-loc text="Gen 1 GC Rate":::
+- :::no-loc text="Gen 1 Heap Size":::
+- :::no-loc text="Gen 2 GC Rate":::
+- :::no-loc text="Gen 2 Heap Size":::
+- :::no-loc text="LOH Heap Size":::
+- :::no-loc text="Monitor Lock Contention Rate":::
+- :::no-loc text="ThreadPool Completed Items Rate":::
+- :::no-loc text="ThreadPool Queue Length":::
+- :::no-loc text="ThreadPool Thread Count":::
+- :::no-loc text="Working Set Size":::
 
 ### `Microsoft.AspNetCore.Hosting` providers
 
 The following counters are published as part of [ASP.NET Core](/aspnet/core).
 
-- Current Requests Count
-- Failed Requests Count
-- Requests per second
-- Total Requests Count
+- :::no-loc text="Current Requests Count":::
+- :::no-loc text="Failed Requests Count":::
+- :::no-loc text="Requests per second":::
+- :::no-loc text="Total Requests Count":::
 
 ### `Microsoft.AspNetCore.Http.Connections` providers
 
 The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction).
 
-- Average Connection Duration
-- Total Connections Started
-- Total Connections Stopped
-- Total Connections Timed Out
+- :::no-loc text="Average Connection Duration":::
+- :::no-loc text="Total Connections Started":::
+- :::no-loc text="Total Connections Stopped":::
+- :::no-loc text="Total Connections Timed Out":::
 
 ## EventCounters API overview
 

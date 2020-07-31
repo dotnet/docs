@@ -1,7 +1,7 @@
 ---
 title: Measure performance using EventCounters in .NET Core
 description: Installing and using the dotnet-trace command-line tool.
-ms.date: 07/22/2020
+ms.date: 07/31/2020
 ---
 
 # Tutorial: Measure performance using EventCounters in .NET Core

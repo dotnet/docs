@@ -1,5 +1,6 @@
 ---
 title: "Ngen.exe (Native Image Generator)"
+description: Review Ngen.exe, the Native Image Generator. Improve managed application performance by creating native images and installing into the local native image cache.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

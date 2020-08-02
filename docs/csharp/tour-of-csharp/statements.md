@@ -97,7 +97,7 @@ The following lists the kinds of statements that can be used, and provides an ex
 
 * `lock` statement:
 
- [!code-csharp[LockStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L257-L273)]
+ [!code-csharp[LockStatement](../../../samples/snippets/csharp/tour/statements/Program.cs#L259-L275)]
 
 * `using` statement:
 

@@ -1,6 +1,6 @@
 ---
 title: Implement a DisposeAsync method
-description:
+description: Learn how to implement a DisposeAsync method, which releases unmanaged resources asynchronously.
 author: IEvangelist
 ms.author: dapine
 ms.date: 06/02/2020

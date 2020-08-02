@@ -1,4 +1,4 @@
-﻿Class MainWindow 
+﻿Class MainWindow
 
     '<SnippetManipulationStarting>
     Private Sub Window_ManipulationStarting(ByVal sender As Object, ByVal e As ManipulationStartingEventArgs)

@@ -1,9 +1,9 @@
 ﻿'<SnippetHandleExitCODEBEHIND>
 
 Imports System.Collections
-Imports System.Windows
 Imports System.IO
 Imports System.IO.IsolatedStorage
+Imports System.Windows
 
 Namespace VisualBasic
     Public Enum ApplicationExitCode

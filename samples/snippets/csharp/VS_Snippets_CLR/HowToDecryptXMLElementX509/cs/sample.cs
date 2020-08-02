@@ -1,9 +1,9 @@
 ﻿// <snippet1>
 using System;
-using System.Xml;
 using System.Security.Cryptography;
-using System.Security.Cryptography.Xml;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Cryptography.Xml;
+using System.Xml;
 
 class Program
 {

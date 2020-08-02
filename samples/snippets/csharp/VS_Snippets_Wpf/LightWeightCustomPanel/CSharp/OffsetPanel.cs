@@ -1,15 +1,15 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Threading;
 
 namespace OffsetPanel
 {
-	public class MyApp : Application
-	{
+    public class MyApp : Application
+    {
         Window mainWindow;
         OffsetPanel offsetPanel1;
         TextBlock txt1;
@@ -66,7 +66,7 @@ namespace OffsetPanel
             OffsetPanel.SetShareCoordinates(rect1, false);
 
             // ********* Add the text element defined above as a child of the OffsetPanel *********
-			offsetPanel1.Children.Add(txt1);
+            offsetPanel1.Children.Add(txt1);
             offsetPanel1.Children.Add(btn1);
             offsetPanel1.Children.Add(rect1);
 
@@ -80,8 +80,8 @@ namespace OffsetPanel
             mainWindow.Show();
         }
 
-		// Define the custom OffsetPanel class, derived from Panel
-		
+        // Define the custom OffsetPanel class, derived from Panel
+
         public class OffsetPanel : Panel
         {
 
@@ -94,7 +94,7 @@ namespace OffsetPanel
             // Override the OnRender call to add a Background and Border to the OffSetPanel
             protected override void OnRender(DrawingContext dc)
             {
-                SolidColorBrush mySolidColorBrush  = new SolidColorBrush();
+                SolidColorBrush mySolidColorBrush = new SolidColorBrush();
                 mySolidColorBrush.Color = Colors.LimeGreen;
                 Pen myPen = new Pen(Brushes.Blue, 10);
                 Rect myRect = new Rect(0, 0, 500, 500);
@@ -150,20 +150,20 @@ namespace OffsetPanel
                             if (i + 1 >= InternalChildren.Count) { break; }
                             if (GetOffsetLeft(InternalChildren[i]) == GetOffsetLeft(InternalChildren[i + 1])
                                 && GetOffsetTop(InternalChildren[i]) == GetOffsetTop(InternalChildren[i + 1]))
+                            {
+                                child.Arrange(new Rect(new Point(0, 0), new Size(0, 0)));
+                            }
+                            else
+                            {
+                                if (z == 0 || z == Double.NaN)
                                 {
-                                    child.Arrange(new Rect(new Point(0, 0), new Size(0, 0)));
+                                    child.Arrange(new Rect(new Point(x, y), child.DesiredSize));
                                 }
                                 else
                                 {
-                                    if (z == 0 || z == Double.NaN)
-                                    {
-                                        child.Arrange(new Rect(new Point(x, y), child.DesiredSize));
-                                    }
-                                    else
-                                    {
-                                        child.Arrange(new Rect(new Point(x, y), new Size(z + child.DesiredSize.Width, z + child.DesiredSize.Height)));
-                                    }
+                                    child.Arrange(new Rect(new Point(x, y), new Size(z + child.DesiredSize.Width, z + child.DesiredSize.Height)));
                                 }
+                            }
                         }
                     }
                 }
@@ -240,8 +240,8 @@ namespace OffsetPanel
         }
     }
 
-	// Run the application
-	
+    // Run the application
+
     internal static class EntryClass
     {
         [System.STAThread()]

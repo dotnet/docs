@@ -24,8 +24,8 @@ Module Module2
         End Sub
     End Class
 
-    <Extension()> 
-    Sub ExampleMethod(ByVal ec As ExampleClass, 
+    <Extension()>
+    Sub ExampleMethod(ByVal ec As ExampleClass,
                       ByVal n As Long)
         Console.WriteLine("Extension method")
     End Sub

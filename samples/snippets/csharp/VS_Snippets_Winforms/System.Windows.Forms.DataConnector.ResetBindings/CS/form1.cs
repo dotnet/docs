@@ -1,15 +1,15 @@
 ﻿//<snippet1>
 using System;
+using System.Collections;
 using System.ComponentModel;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using System.Collections;
 
 namespace System_Windows_Forms_UpdateBinding
 {
-	class Form1 : Form
-	{
+    class Form1 : Form
+    {
         // Declare the objects on the form.
         private Label label1;
         private Label label2;
@@ -19,8 +19,8 @@ namespace System_Windows_Forms_UpdateBinding
         private BindingSource bindingSource1;
         ArrayList states;
 
-		public Form1()
-		{
+        public Form1()
+        {
             // Basic form setup.
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -70,7 +70,7 @@ namespace System_Windows_Forms_UpdateBinding
             // Bind the two text boxes to properties of State.
             textBox1.DataBindings.Add("Text", bindingSource1, "Name");
             textBox2.DataBindings.Add("Text", bindingSource1, "Capital");
-		}
+        }
 
         //<snippet3>
         private void button1_Click(object sender, EventArgs e)
@@ -94,26 +94,26 @@ namespace System_Windows_Forms_UpdateBinding
         }
 
         // The State class to add to the ArrayList.
-		private class State
-		{
-			private string stateName;
-			public string Name
-			{
-				get {return stateName;}
-			}
+        private class State
+        {
+            private string stateName;
+            public string Name
+            {
+                get { return stateName; }
+            }
 
-			private string stateCapital;
-			public string Capital
-			{
-				get {return stateCapital;}
-			}
+            private string stateCapital;
+            public string Capital
+            {
+                get { return stateCapital; }
+            }
 
-			public State ( string name, string capital)
-			{
+            public State(string name, string capital)
+            {
                 stateName = name;
                 stateCapital = capital;
-			}
-		}
-	}
+            }
+        }
+    }
 }
 //</snippet1>

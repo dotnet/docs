@@ -1,8 +1,8 @@
 ﻿Option Explicit On
 Option Strict On
+Imports System.IO
 Imports System.Reflection
 Imports System.Windows.Forms
-Imports System.IO
 Imports NorthwindClient
 
 Module Program

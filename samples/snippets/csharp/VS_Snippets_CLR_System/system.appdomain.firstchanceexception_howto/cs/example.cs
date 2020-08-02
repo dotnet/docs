@@ -17,7 +17,7 @@ class Example
 
         // Create a worker object in the application domain.
         //<Snippet4>
-        Worker w = (Worker) ad.CreateInstanceAndUnwrap(
+        Worker w = (Worker)ad.CreateInstanceAndUnwrap(
                                 typeof(Worker).Assembly.FullName, "Worker");
         //</Snippet4>
 

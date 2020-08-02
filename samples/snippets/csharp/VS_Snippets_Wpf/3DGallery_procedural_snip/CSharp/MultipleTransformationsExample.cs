@@ -50,12 +50,12 @@ namespace SDKSample
 
             // Create a collection of normal vectors for the MeshGeometry3D.
             Vector3DCollection myNormalCollection = new Vector3DCollection();
-            myNormalCollection.Add(new Vector3D(0,0,1));
-            myNormalCollection.Add(new Vector3D(0,0,1));
-            myNormalCollection.Add(new Vector3D(0,0,1));
-            myNormalCollection.Add(new Vector3D(0,0,1));
-            myNormalCollection.Add(new Vector3D(0,0,1));
-            myNormalCollection.Add(new Vector3D(0,0,1));
+            myNormalCollection.Add(new Vector3D(0, 0, 1));
+            myNormalCollection.Add(new Vector3D(0, 0, 1));
+            myNormalCollection.Add(new Vector3D(0, 0, 1));
+            myNormalCollection.Add(new Vector3D(0, 0, 1));
+            myNormalCollection.Add(new Vector3D(0, 0, 1));
+            myNormalCollection.Add(new Vector3D(0, 0, 1));
             myMeshGeometry3D.Normals = myNormalCollection;
 
             // Create a collection of vertex positions for the MeshGeometry3D.
@@ -113,7 +113,7 @@ namespace SDKSample
             // Create and apply a transformation that rotates the object.
             RotateTransform3D myRotateTransform3D = new RotateTransform3D();
             AxisAngleRotation3D myAxisAngleRotation3d = new AxisAngleRotation3D();
-            myAxisAngleRotation3d.Axis = new Vector3D(0,3,0);
+            myAxisAngleRotation3d.Axis = new Vector3D(0, 3, 0);
             myAxisAngleRotation3d.Angle = 40;
             myRotateTransform3D.Rotation = myAxisAngleRotation3d;
 

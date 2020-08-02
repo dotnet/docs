@@ -1,12 +1,12 @@
 ﻿Imports System.Activities
 Imports System.Activities.Statements
+'</snippet3>
+'<snippet5>
+Imports System.Collections.Generic
 Imports System.Diagnostics
 Imports System.Linq
 '<snippet3>
 Imports System.Threading
-'</snippet3>
-'<snippet5>
-Imports System.Collections.Generic
 '</snippet5>
 
 Module Module1

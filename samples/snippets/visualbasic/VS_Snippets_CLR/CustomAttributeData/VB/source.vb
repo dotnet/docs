@@ -1,7 +1,7 @@
 ﻿'<Snippet1>
-Imports System.Reflection
 Imports System.Collections.Generic
 Imports System.Collections.ObjectModel
+Imports System.Reflection
 
 ' The example attribute is applied to the assembly.
 <Assembly: Example(ExampleKind.ThirdKind, Note:="This is a note on the assembly.")>

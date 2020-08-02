@@ -1,12 +1,12 @@
 ﻿// <SnippetGlyphRunDrawingExampleWholePage>
 using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Windows.Media.Imaging;
-using System.Collections.Generic;
+using System.Windows.Shapes;
 
 namespace SDKSample
 {
@@ -22,7 +22,7 @@ namespace SDKSample
                 0,
                 false,
                 13.333333333333334,
-                new ushort[]{43, 72, 79, 79, 82, 3, 58, 82, 85, 79, 71},
+                new ushort[] { 43, 72, 79, 79, 82, 3, 58, 82, 85, 79, 71 },
                 new Point(0, 12.29),
                 new double[]{
                     9.62666666666667, 7.41333333333333, 2.96,

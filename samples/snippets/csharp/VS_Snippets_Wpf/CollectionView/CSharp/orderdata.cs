@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Input;
-using System.Collections.ObjectModel;
 
 namespace SDKSample
 {

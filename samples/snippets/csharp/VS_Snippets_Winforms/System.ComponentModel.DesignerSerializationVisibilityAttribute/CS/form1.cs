@@ -78,7 +78,7 @@ namespace SerializationDemo
         // serialize the property. This property can also be edited
         // at design time with a CollectionEditor.
         [DesignerSerializationVisibility(
-            DesignerSerializationVisibility.Content )]
+            DesignerSerializationVisibility.Content)]
         public String[] Strings
         {
             get

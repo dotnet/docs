@@ -23,7 +23,7 @@ namespace GenericsExample1
         }
         //</snippet3>
 
-       //<snippet4>
+        //<snippet4>
         T Generic<T>(T arg)
         {
             T temp = arg;
@@ -55,6 +55,6 @@ namespace GenericsExample2
             return temp;
         }
     }
-   //</snippet5>
+    //</snippet5>
 } // GenericsExample2
 //</snippet1>

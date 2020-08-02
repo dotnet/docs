@@ -5,7 +5,7 @@ public class Example
 {
     public static void Main()
     {
-         var enUs = new CultureInfo("en-US");
+        var enUs = new CultureInfo("en-US");
         var japaneseCal = new JapaneseCalendar();
         var jaJp = new CultureInfo("ja-JP");
         jaJp.DateTimeFormat.Calendar = japaneseCal;
@@ -17,11 +17,11 @@ public class Example
 
         int GetEraIndex(string eraName)
         {
-           foreach (var ctr in japaneseCal.Eras)
-              if (jaJp.DateTimeFormat.GetEraName(ctr) == eraName)
-                 return ctr;
+            foreach (var ctr in japaneseCal.Eras)
+                if (jaJp.DateTimeFormat.GetEraName(ctr) == eraName)
+                    return ctr;
 
-           return 0;
+            return 0;
         }
     }
 }

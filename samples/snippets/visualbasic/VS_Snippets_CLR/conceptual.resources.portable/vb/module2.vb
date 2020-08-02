@@ -1,10 +1,9 @@
-﻿Imports System.Resources
-
+﻿Imports System.Collections.Generic
+Imports System.Globalization
+Imports System.Resources
+Imports System.Threading
 ' <Snippet3>
 Imports MyCompany.Employees
-Imports System.Collections.Generic
-Imports System.Globalization
-Imports System.Threading
 
 Module Module1
     Sub Main()

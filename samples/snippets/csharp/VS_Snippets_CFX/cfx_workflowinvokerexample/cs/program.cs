@@ -210,7 +210,7 @@ namespace WorkflowInvokerExample
 
             WorkflowInvoker invoker = new WorkflowInvoker(new LongRunningDiceRoll());
 
-            invoker.InvokeCompleted += delegate(object sender, InvokeCompletedEventArgs args)
+            invoker.InvokeCompleted += delegate (object sender, InvokeCompletedEventArgs args)
             {
                 if (args.Cancelled == true)
                 {
@@ -250,7 +250,7 @@ namespace WorkflowInvokerExample
 
             WorkflowInvoker invoker = new WorkflowInvoker(new LongRunningDiceRoll());
 
-            invoker.InvokeCompleted += delegate(object sender, InvokeCompletedEventArgs args)
+            invoker.InvokeCompleted += delegate (object sender, InvokeCompletedEventArgs args)
             {
                 if (args.Cancelled == true)
                 {

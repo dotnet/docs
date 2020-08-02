@@ -18,8 +18,8 @@ namespace object_collection_initializers
             public string this[int position]
             {
                 // Baseball positions are 1 - 9.
-                get { return players[position-1]; }
-                set { players[position-1] = value; }
+                get { return players[position - 1]; }
+                set { players[position - 1] = value; }
             }
             public string this[string position]
             {

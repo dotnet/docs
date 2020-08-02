@@ -1,10 +1,10 @@
 ﻿Imports System.Collections.ObjectModel
+Imports System.Runtime.Serialization
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Syndication
 Imports System.ServiceModel.Web
 Imports System.Xml
-Imports System.Runtime.Serialization
 
 <DataContract()> _
 Public Class SomeData

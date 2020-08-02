@@ -1,9 +1,9 @@
-﻿ ' <SnippetFormatConvertedBitmapCodeExample2WholePage>
+﻿' <SnippetFormatConvertedBitmapCodeExample2WholePage>
+Imports System.Collections.Generic
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
-Imports System.Collections.Generic
 
 Namespace SDKSample
 

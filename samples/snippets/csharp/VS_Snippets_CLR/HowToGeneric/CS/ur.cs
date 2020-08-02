@@ -1,27 +1,27 @@
 ﻿// Example code for How to: Discover and Manipulate Generic Types
 //<Snippet1>
 using System;
-using System.Reflection;
 using System.Collections.Generic;
+using System.Reflection;
 using System.Security.Permissions;
 
 // Define an example interface.
-public interface ITestArgument {}
+public interface ITestArgument { }
 
 // Define an example base class.
-public class TestBase {}
+public class TestBase { }
 
 // Define a generic class with one parameter. The parameter
 // has three constraints: It must inherit TestBase, it must
 // implement ITestArgument, and it must have a parameterless
 // constructor.
-public class Test<T> where T : TestBase, ITestArgument, new() {}
+public class Test<T> where T : TestBase, ITestArgument, new() { }
 
 // Define a class that meets the constraints on the type
 // parameter of class Test.
 public class TestArgument : TestBase, ITestArgument
 {
-    public TestArgument() {}
+    public TestArgument() { }
 }
 
 public class Example
@@ -46,7 +46,7 @@ public class Example
         //<Snippet5>
         Console.WriteLine("   List {0} type arguments:",
             typeParameters.Length);
-        foreach( Type tParam in typeParameters )
+        foreach (Type tParam in typeParameters)
         {
             if (tParam.IsGenericParameter)
             {
@@ -74,7 +74,7 @@ public class Example
         //<Snippet7>
         Type classConstraint = null;
 
-        foreach(Type iConstraint in tp.GetGenericParameterConstraints())
+        foreach (Type iConstraint in tp.GetGenericParameterConstraints())
         {
             if (iConstraint.IsInterface)
             {
@@ -126,7 +126,7 @@ public class Example
         //</Snippet9>
     }
 
-    [PermissionSetAttribute(SecurityAction.Demand, Name="FullTrust")]
+    [PermissionSetAttribute(SecurityAction.Demand, Name = "FullTrust")]
     public static void Main()
     {
         // Two ways to get a Type object that represents the generic
@@ -165,7 +165,7 @@ public class Example
         // is of type string, and the type to be contained in the
         // dictionary is Example.
         //<Snippet11>
-        Type[] typeArgs = {typeof(string), typeof(Example)};
+        Type[] typeArgs = { typeof(string), typeof(Example) };
         //</Snippet11>
 
         // Construct the type Dictionary<String, Example>.
@@ -181,9 +181,9 @@ public class Example
 
         Console.WriteLine("\r\nCompare types obtained by different methods:");
         Console.WriteLine("   Are the constructed types equal? {0}",
-            (d2.GetType()==constructed));
+            (d2.GetType() == constructed));
         Console.WriteLine("   Are the generic definitions equal? {0}",
-            (d1==constructed.GetGenericTypeDefinition()));
+            (d1 == constructed.GetGenericTypeDefinition()));
 
         // Demonstrate the DisplayGenericType and
         // DisplayGenericParameter methods with the Test class

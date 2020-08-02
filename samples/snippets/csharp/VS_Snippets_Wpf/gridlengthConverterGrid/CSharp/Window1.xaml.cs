@@ -5,12 +5,12 @@ using System.Windows.Documents;
 
 namespace GridLengthConverter_grid
 {
-	/// <summary>
-	/// Interaction logic for Window1.xaml
-	/// </summary>
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
 
-	public partial class Window1 : Window
-	{
+    public partial class Window1 : Window
+    {
 
         private void changeRowVal(object sender, RoutedEventArgs e)
         {
@@ -19,7 +19,7 @@ namespace GridLengthConverter_grid
 
         // <Snippet1>
         private void changeColVal(object sender, RoutedEventArgs e)
-		{
+        {
             txt1.Text = "Current Grid Column is " + hs1.Value.ToString();
         }
 
@@ -54,15 +54,15 @@ namespace GridLengthConverter_grid
                 GridLength gl4 = (GridLength)myGridLengthConverter2.ConvertFromString(li2.Content.ToString());
                 row1.Height = gl4;
             }
-             else if (hs2.Value == 1)
+            else if (hs2.Value == 1)
             {
                 GridLength gl5 = (GridLength)myGridLengthConverter2.ConvertFromString(li2.Content.ToString());
                 row2.Height = gl5;
             }
-             else if (hs2.Value == 2)
+            else if (hs2.Value == 2)
             {
-               GridLength gl6 = (GridLength)myGridLengthConverter2.ConvertFromString(li2.Content.ToString());
-               row3.Height = gl6;
+                GridLength gl6 = (GridLength)myGridLengthConverter2.ConvertFromString(li2.Content.ToString());
+                row3.Height = gl6;
             }
         }
 

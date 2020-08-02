@@ -2,9 +2,9 @@
 Option Strict On
 
 Imports System.Collections.Generic
+Imports System.Data.Services.Common
 Imports System.Linq
 Imports System.Text
-Imports System.Data.Services.Common
 
 '<snippetCustomerAddressDefinition>
 <DataServiceKey("CustomerID")> _

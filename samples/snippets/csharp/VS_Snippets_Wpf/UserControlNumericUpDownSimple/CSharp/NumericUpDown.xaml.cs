@@ -60,12 +60,12 @@ namespace MyUserControl
         //<SnippetEventHandlerCode>
         private void upButton_Click(object sender, EventArgs e)
         {
-                Value++;
+            Value++;
         }
 
         private void downButton_Click(object sender, EventArgs e)
         {
-                Value--;
+            Value--;
         }
         //</SnippetEventHandlerCode>
 

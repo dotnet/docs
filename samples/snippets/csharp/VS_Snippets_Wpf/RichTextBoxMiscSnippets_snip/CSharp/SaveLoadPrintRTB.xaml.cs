@@ -10,7 +10,7 @@ namespace SDKSample
 {
 
     public partial class SaveLoadPrintRTB : Page
-	{
+    {
 
         // Handle "Save RichTextBox Content" button click.
         void SaveRTBContent(Object sender, RoutedEventArgs args)

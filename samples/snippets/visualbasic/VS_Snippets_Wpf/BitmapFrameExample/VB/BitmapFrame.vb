@@ -1,13 +1,13 @@
 ﻿
 Imports System.Collections.Generic
+Imports System.Collections.ObjectModel
 Imports System.IO
+Imports System.Security.Permissions
+Imports System.Threading
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
-Imports System.Threading
-Imports System.Security.Permissions
-Imports System.Collections.ObjectModel
 
 Namespace SDKSample
 

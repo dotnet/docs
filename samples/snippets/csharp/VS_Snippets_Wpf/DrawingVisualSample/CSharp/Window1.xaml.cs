@@ -8,12 +8,12 @@ namespace SDKSample
 {
     public partial class Window1 : Window
     {
-         private void WindowLoaded(object sender, EventArgs e)
-         {
-             MyVisualHost visualHost = new MyVisualHost();
-             MyCanvas.Children.Add(visualHost);
-         }
-     }
+        private void WindowLoaded(object sender, EventArgs e)
+        {
+            MyVisualHost visualHost = new MyVisualHost();
+            MyCanvas.Children.Add(visualHost);
+        }
+    }
 
     //<Snippet100>
     // Create a host visual derived from the FrameworkElement class.

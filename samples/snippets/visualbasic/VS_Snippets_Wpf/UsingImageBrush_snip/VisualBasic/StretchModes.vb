@@ -2,31 +2,31 @@
 
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Media.Imaging
 Imports System.Windows.Media
+Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
 
 Namespace Microsoft.Samples.Graphics.UsingImageBrush
-	''' <summary>
-	''' Demonstrates different ImageBrush Stretch settings.
-	''' </summary>
-	Public Class StretchModes
-		Inherits Page
-		Public Sub New()
+    ''' <summary>
+    ''' Demonstrates different ImageBrush Stretch settings.
+    ''' </summary>
+    Public Class StretchModes
+        Inherits Page
+        Public Sub New()
 
-			' Create an ImageBrush with its Stretch
-			' property set to Uniform. The image it
-			' contains will be expanded as much as possible
-			' to fill the output area while still
-			' preserving its aspect ratio.
-			Dim uniformBrush As New ImageBrush()
-			uniformBrush.ImageSource = New BitmapImage(New Uri("sampleImages\square.jpg", UriKind.Relative))
-			uniformBrush.Stretch = Stretch.Uniform
+            ' Create an ImageBrush with its Stretch
+            ' property set to Uniform. The image it
+            ' contains will be expanded as much as possible
+            ' to fill the output area while still
+            ' preserving its aspect ratio.
+            Dim uniformBrush As New ImageBrush()
+            uniformBrush.ImageSource = New BitmapImage(New Uri("sampleImages\square.jpg", UriKind.Relative))
+            uniformBrush.Stretch = Stretch.Uniform
 
-			' Freeze the brush (make it unmodifiable) for performance benefits.
-			uniformBrush.Freeze()
+            ' Freeze the brush (make it unmodifiable) for performance benefits.
+            uniformBrush.Freeze()
 
-			' Create a rectangle and paint it with the ImageBrush.
+            ' Create a rectangle and paint it with the ImageBrush.
             Dim rectangle1 As New Rectangle()
             With rectangle1
                 .Width = 300
@@ -68,8 +68,8 @@ Namespace Microsoft.Samples.Graphics.UsingImageBrush
             Title = "ImageBrush Stretch Modes"
 
 
-		End Sub
-	End Class
+        End Sub
+    End Class
 End Namespace
 ' </SnippetImageBrushStretchModesExampleWholePage>
 

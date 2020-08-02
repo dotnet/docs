@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace operators
 {
     // <SnippetPersonClass>
-    #nullable enable
+#nullable enable
     public class Person
     {
         public Person(string name) => Name = name ?? throw new ArgumentNullException(nameof(name));

@@ -14,6 +14,6 @@ public class Form1 : Form
 
     static void Main()
     {
-	    Application.Run(new Form1());
+        Application.Run(new Form1());
     }
 }

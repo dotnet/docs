@@ -9,13 +9,13 @@ namespace serialization
     [Serializable()]
     // </Snippet2>
     // <Snippet1>
-   public class Loan : INotifyPropertyChanged
+    public class Loan : INotifyPropertyChanged
     {
         public double LoanAmount { get; set; }
         public double InterestRatePercent { get; set; }
 
         // <Snippet4>
-        [field:NonSerialized()]
+        [field: NonSerialized()]
         public DateTime TimeLastLoaded { get; set; }
         // </Snippet4>
 

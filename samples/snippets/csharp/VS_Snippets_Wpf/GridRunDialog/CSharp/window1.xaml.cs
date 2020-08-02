@@ -6,28 +6,28 @@ using System.Windows.Media;
 
 namespace Grid_Run_Dialog
 {
-	public partial class Window1 : Window
-	{
-		Grid grid1;
-		ColumnDefinition colDef1;
-		ColumnDefinition colDef2;
-		ColumnDefinition colDef3;
-		ColumnDefinition colDef4;
-		ColumnDefinition colDef5;
-		RowDefinition rowDef1;
-		RowDefinition rowDef2;
-		RowDefinition rowDef3;
-		RowDefinition rowDef4;
-		TextBlock txt1;
-		TextBlock txt2;
-		Button button1;
-		Button button2;
-		Button button3;
-		TextBox tb1;
-		Image img1;
+    public partial class Window1 : Window
+    {
+        Grid grid1;
+        ColumnDefinition colDef1;
+        ColumnDefinition colDef2;
+        ColumnDefinition colDef3;
+        ColumnDefinition colDef4;
+        ColumnDefinition colDef5;
+        RowDefinition rowDef1;
+        RowDefinition rowDef2;
+        RowDefinition rowDef3;
+        RowDefinition rowDef4;
+        TextBlock txt1;
+        TextBlock txt2;
+        Button button1;
+        Button button2;
+        Button button3;
+        TextBox tb1;
+        Image img1;
 
         void onLoaded(object sender, EventArgs e)
-		{
+        {
             // Create the application's main window.
             mainWindow.Title = "Grid Run Dialog Sample";
             mainWindow.Background = Brushes.White;
@@ -35,7 +35,7 @@ namespace Grid_Run_Dialog
             // <Snippet1>
 
             // Create the Grid.
-            grid1 = new Grid ();
+            grid1 = new Grid();
             grid1.Background = Brushes.Gainsboro;
             grid1.HorizontalAlignment = HorizontalAlignment.Left;
             grid1.VerticalAlignment = VerticalAlignment.Top;

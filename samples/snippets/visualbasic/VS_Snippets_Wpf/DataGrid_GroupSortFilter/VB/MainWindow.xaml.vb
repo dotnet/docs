@@ -1,6 +1,6 @@
 ﻿' <snippet100>
-Imports System.ComponentModel
 Imports System.Collections.ObjectModel
+Imports System.ComponentModel
 
 Class MainWindow
     Public Sub New()

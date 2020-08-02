@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace Coding_Conventions_Examples
@@ -197,8 +197,13 @@ namespace Coding_Conventions_Examples
 
             //<snippet21>
             // Object initializer.
-            var instance3 = new ExampleClass { Name = "Desktop", ID = 37414,
-                Location = "Redmond", Age = 2.3 };
+            var instance3 = new ExampleClass
+            {
+                Name = "Desktop",
+                ID = 37414,
+                Location = "Redmond",
+                Age = 2.3
+            };
 
             // Default constructor and assignment statements.
             var instance4 = new ExampleClass();
@@ -228,7 +233,7 @@ namespace Coding_Conventions_Examples
             //<snippet25>
             //<snippet28>
             var seattleCustomers = from customer in customers
-                                   //</snippet28>
+                                       //</snippet28>
                                    where customer.City == "Seattle"
                                    select customer.Name;
             //</snippet25>

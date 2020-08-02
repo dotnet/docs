@@ -29,7 +29,7 @@ namespace MediaElementExample
             volumeSL.Value = 0.5;
         }
 
-//<SnippetUIElementVisibility>
+        //<SnippetUIElementVisibility>
         private void PlayMedia(object sender, MouseButtonEventArgs args)
         {
             pauseBTN.Visibility = Visibility.Visible;
@@ -38,7 +38,7 @@ namespace MediaElementExample
             media.SpeedRatio = 1.0;
             media.Play();
         }
-//</SnippetUIElementVisibility>
+        //</SnippetUIElementVisibility>
 
         private void PauseMedia(object sender, MouseButtonEventArgs args)
         {
@@ -121,12 +121,12 @@ namespace MediaElementExample
             //MediaCommands.TogglePlayPause.Execute(null, media);
         }
 
-//<SnippetExceptionRoutedEventArgs>
+        //<SnippetExceptionRoutedEventArgs>
         private void Media_MediaFailed(object sender, ExceptionRoutedEventArgs args)
         {
             MessageBox.Show(args.ErrorException.Message);
         }
-//</SnippetExceptionRoutedEventArgs>
+        //</SnippetExceptionRoutedEventArgs>
 
         private void QueryMediaCommand(object sender, CanExecuteRoutedEventArgs args)
         {

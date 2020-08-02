@@ -118,7 +118,7 @@ namespace csrefLINQExamples
 
     // var
 
-//varTest removed to csrefKeywordsTypes
+    //varTest removed to csrefKeywordsTypes
 
     //<snippet4>
     class GroupByExample1
@@ -195,38 +195,38 @@ namespace csrefLINQExamples
 
     //Return Subsets of Element Properties
 
-        //<snippet31>
-        class AnonymousTypes
+    //<snippet31>
+    class AnonymousTypes
+    {
+        static void Main(string[] args)
         {
-            static void Main(string[] args)
+            // Create a data source.
+            List<Student> students = CommonMethods.CreateStudentList();
+
+            // Create the query. var is required because
+            // the query produces a sequence of anonymous types.
+            var queryHighScores =
+                from student in students
+                where student.ExamScores[0] > 95
+                select new { student.FirstName, student.LastName };
+
+            // Execute the query.
+            foreach (var student in queryHighScores)
             {
-                // Create a data source.
-                List<Student> students = CommonMethods.CreateStudentList();
-
-                // Create the query. var is required because
-                // the query produces a sequence of anonymous types.
-                var queryHighScores =
-                    from student in students
-                    where student.ExamScores[0] > 95
-                    select new { student.FirstName, student.LastName };
-
-                // Execute the query.
-                foreach (var student in queryHighScores)
-                {
-                    // The anonymous type's properties were not named. Therefore
-                    // they have the same names as the Student properties.
-                    Console.WriteLine(student.FirstName + ", " + student.LastName);
-                }
+                // The anonymous type's properties were not named. Therefore
+                // they have the same names as the Student properties.
+                Console.WriteLine(student.FirstName + ", " + student.LastName);
             }
         }
-        /* Output:
-            Adams, Terry
-            Fakhouri, Fadi
-            Garcia, Cesar
-            Omelchenko, Svetlana
-            Zabokritski, Eugene
-       */
-        //</snippet31>
+    }
+    /* Output:
+        Adams, Terry
+        Fakhouri, Fadi
+        Garcia, Cesar
+        Omelchenko, Svetlana
+        Zabokritski, Eugene
+   */
+    //</snippet31>
 
     class ImplicitTyping
     {   // How to use implicitly typed locals
@@ -496,7 +496,7 @@ namespace csrefLINQExamples
 
             // C# 2.0: A delegate can be initialized with
             // inline code, called an "anonymous method."
-            testDelegate testDelB = delegate(string s) { Console.WriteLine(s); };
+            testDelegate testDelB = delegate (string s) { Console.WriteLine(s); };
 
             // C# 3.0. A delegate can be initialized with
             // a lambda expression.
@@ -525,7 +525,7 @@ namespace csrefLINQExamples
     {
         Func<int, bool> f;
 
-        bool M(Func<double,bool> func, int i)
+        bool M(Func<double, bool> func, int i)
         {
 
             int local = i;
@@ -555,8 +555,8 @@ namespace csrefLINQExamples
         IEnumerable<string> QueryMethod1(ref int[] ints)
         {
             var intsToStrings = from i in ints
-                          where i > 4
-                          select i.ToString();
+                                where i > 4
+                                select i.ToString();
             return intsToStrings;
         }
 
@@ -600,34 +600,34 @@ namespace csrefLINQExamples
 
         class Product
         {
-            public string Color {get;set;}
-            public  decimal Price {get;set;}
+            public string Color { get; set; }
+            public decimal Price { get; set; }
         }
-    class Anonymous
-    {
-        static void Main()
+        class Anonymous
         {
-            // don't show this unless you add a bunch more
-            // properties to the type. otherwise it obviates the
-            // need for the anonymous type
-            List<Product> products = new List<Product>()
+            static void Main()
+            {
+                // don't show this unless you add a bunch more
+                // properties to the type. otherwise it obviates the
+                // need for the anonymous type
+                List<Product> products = new List<Product>()
             {
                 new Product() { Color="Orange", Price=2.00M},
             };
 
-            //<snippet81>
-            var productQuery =
-                from prod in products
-                select new { prod.Color, prod.Price };
+                //<snippet81>
+                var productQuery =
+                    from prod in products
+                    select new { prod.Color, prod.Price };
 
-            foreach (var v in productQuery)
-            {
-                Console.WriteLine("Color={0}, Price={1}", v.Color, v.Price);
+                foreach (var v in productQuery)
+                {
+                    Console.WriteLine("Color={0}, Price={1}", v.Color, v.Price);
+                }
+                //</snippet81>
             }
-            //</snippet81>
         }
     }
-}
 
     class CSHarp30
     {

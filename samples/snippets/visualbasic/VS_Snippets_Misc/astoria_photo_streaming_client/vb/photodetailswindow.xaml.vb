@@ -9,6 +9,8 @@
 '
 '*********************************************************
 Imports System.Collections.Generic
+Imports System.Data.Services.Client
+Imports System.IO
 Imports System.Linq
 Imports System.Text
 Imports System.Windows
@@ -19,10 +21,7 @@ Imports System.Windows.Input
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
-
 Imports PhotoStreamingClient.PhotoData
-Imports System.Data.Services.Client
-Imports System.IO
 
 ''' <summary>
 ''' Interaction logic for PhotoDetailsWindow.xaml

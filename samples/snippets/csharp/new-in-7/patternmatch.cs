@@ -81,18 +81,18 @@ namespace new_in_7
                     case int i:
                         Console.WriteLine($"The object is an integer: {i}");
                         break;
-                        // <SnippetMoreCases>
+                    // <SnippetMoreCases>
                     case long l:
                         Console.WriteLine($"The object is a long: {l}");
                         break;
                     case double d:
                         Console.WriteLine($"The object is a double: {d}");
                         break;
-                        // <SnippetWhenClause>
+                    // <SnippetWhenClause>
                     case string s when s.StartsWith("This"):
                         Console.WriteLine($"This was a string that started with the word 'This': {s}");
                         break;
-                        // </SnippetWhenClause>
+                    // </SnippetWhenClause>
                     case string s:
                         Console.WriteLine($"The object is a string: {s}");
                         break;

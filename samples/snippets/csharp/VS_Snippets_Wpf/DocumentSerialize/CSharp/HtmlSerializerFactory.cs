@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.IO;
+using System.Text;
 using System.Windows.Documents.Serialization;
 
 namespace SdkSample
 {
-    class HtmlSerializerFactory :  ISerializerFactory
+    class HtmlSerializerFactory : ISerializerFactory
     {
         /// <summary>
         /// Create a SerializerWriter on the passed in stream

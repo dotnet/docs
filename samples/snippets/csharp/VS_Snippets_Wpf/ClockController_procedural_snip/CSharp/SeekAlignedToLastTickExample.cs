@@ -1,14 +1,14 @@
 ﻿// <SnippetClockControllerSeekExample>
 using System;
+using System.Configuration;
+using System.Data;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
 using System.Xml;
-using System.Configuration;
 
 namespace SDKSample
 {
@@ -16,7 +16,7 @@ namespace SDKSample
     /// Shows how to interactively control a clock.
     /// </summary>
 
-  public class SeekAlignedToLastTickExample : Page
+    public class SeekAlignedToLastTickExample : Page
     {
 
         private AnimationClock myClock;
@@ -38,7 +38,7 @@ namespace SDKSample
             myRectangle = new Rectangle();
             myRectangle.Width = 100;
             myRectangle.Height = 20;
-            myRectangle.Margin = new Thickness(12,0,0,5);
+            myRectangle.Margin = new Thickness(12, 0, 0, 5);
             myRectangle.Fill = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             myRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(myRectangle);
@@ -65,27 +65,27 @@ namespace SDKSample
             buttonPanel.Children.Add(beginButton);
             Button pauseButton = new Button();
             pauseButton.Content = "Pause";
-            pauseButton.Click +=new RoutedEventHandler(pauseButton_Clicked);
+            pauseButton.Click += new RoutedEventHandler(pauseButton_Clicked);
             buttonPanel.Children.Add(pauseButton);
             Button resumeButton = new Button();
             resumeButton.Content = "Resume";
-            resumeButton.Click +=new RoutedEventHandler(resumeButton_Clicked);
+            resumeButton.Click += new RoutedEventHandler(resumeButton_Clicked);
             buttonPanel.Children.Add(resumeButton);
             Button skipToFillButton = new Button();
             skipToFillButton.Content = "Skip to Fill";
-            skipToFillButton.Click +=new RoutedEventHandler(skipToFillButton_Clicked);
+            skipToFillButton.Click += new RoutedEventHandler(skipToFillButton_Clicked);
             buttonPanel.Children.Add(skipToFillButton);
             Button setSpeedRatioButton = new Button();
             setSpeedRatioButton.Content = "Triple Speed";
-            setSpeedRatioButton.Click +=new RoutedEventHandler(setSpeedRatioButton_Clicked);
+            setSpeedRatioButton.Click += new RoutedEventHandler(setSpeedRatioButton_Clicked);
             buttonPanel.Children.Add(setSpeedRatioButton);
             Button stopButton = new Button();
             stopButton.Content = "Stop";
-            stopButton.Click +=new RoutedEventHandler(stopButton_Clicked);
+            stopButton.Click += new RoutedEventHandler(stopButton_Clicked);
             buttonPanel.Children.Add(stopButton);
             Button removeButton = new Button();
             removeButton.Content = "Remove";
-            removeButton.Click +=new RoutedEventHandler(removeButton_Clicked);
+            removeButton.Click += new RoutedEventHandler(removeButton_Clicked);
             buttonPanel.Children.Add(removeButton);
 
             myStackPanel.Children.Add(buttonPanel);
@@ -120,7 +120,7 @@ namespace SDKSample
             aPanel = new StackPanel();
             aPanel.Orientation = Orientation.Horizontal;
             aLabel = new Label();
-            aLabel.Content = "Seek Offset: " ;
+            aLabel.Content = "Seek Offset: ";
             aPanel.Children.Add(aLabel);
             seekDestination = new TextBox();
             seekDestination.Text = "0";
@@ -189,7 +189,8 @@ namespace SDKSample
 
         private void seekButton_Clicked(object sender, RoutedEventArgs args)
         {
-            try {
+            try
+            {
 
                 // The rectangle width will probably not be at its new
                 // value when this call is made, because the
@@ -197,7 +198,8 @@ namespace SDKSample
                 TimeSpan seekTime = TimeSpan.Parse(seekDestination.Text);
                 myClock.Controller.Seek(seekTime, TimeSeekOrigin.BeginTime);
                 rectangleWidthIndicator.Text = myRectangle.Width.ToString();
-            }catch(FormatException ex)
+            }
+            catch (FormatException ex)
             {
                 MessageBox.Show("Invalid TimeSpan value.");
                 seekDestination.Focus();
@@ -207,7 +209,8 @@ namespace SDKSample
         private void seekAlignedToLastTickButton_Clicked(object sender, RoutedEventArgs args)
         {
 
-            try {
+            try
+            {
 
                 // The rectangle width will be at its new
                 // value when this call is made, because SeekAlignedToLastTick
@@ -216,7 +219,8 @@ namespace SDKSample
                 TimeSpan seekTime = TimeSpan.Parse(seekDestination.Text);
                 myClock.Controller.SeekAlignedToLastTick(seekTime, TimeSeekOrigin.BeginTime);
                 rectangleWidthIndicator.Text = myRectangle.Width.ToString();
-            }catch(FormatException ex)
+            }
+            catch (FormatException ex)
             {
                 MessageBox.Show("Invalid TimeSpan value.");
                 seekDestination.Focus();

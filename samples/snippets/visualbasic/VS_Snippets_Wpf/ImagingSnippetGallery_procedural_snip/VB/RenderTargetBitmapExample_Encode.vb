@@ -1,16 +1,16 @@
-﻿ ' <SnippetRenderTargetBitmapEncodeCodeExampleWholePage>
+﻿' <SnippetRenderTargetBitmapEncodeCodeExampleWholePage>
+Imports System.Globalization
 Imports System.IO
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
-Imports System.Globalization
 
 Namespace SDKSample
 
     Class RenderTargetBitmapExample_Encode
         Inherits Page
- 
+
         Public Sub New()
 
             '<SnippetRTBEncodeInline1>

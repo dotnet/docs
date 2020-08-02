@@ -2,8 +2,8 @@
 ' in Visual Studio 2005 documentation.
 
 ' <Snippet0>
-Imports System.Drawing
 Imports System.ComponentModel
+Imports System.Drawing
 Imports System.Windows.Forms
 
 Namespace UserInputWalkthrough

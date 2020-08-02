@@ -10,8 +10,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
@@ -26,22 +26,22 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             WindowTitle = "FillBehavior Example";
 
             StackPanel myStackPanel = new StackPanel();
-            myStackPanel.Margin = new Thickness( 20 );
+            myStackPanel.Margin = new Thickness(20);
 
             Border myBorder = new Border();
-            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(153,255,255,255));
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(153, 255, 255, 255));
             myBorder.Background = mySolidColorBrush;
 
             TextBlock myTextBlock = new TextBlock();
             myTextBlock.Text = "This example shows how the FillBehavior property determines how an ";
             myTextBlock.Text += "animation behaves after it reaches the end of its duration.";
-            myTextBlock.Margin = new Thickness( 20 );
-            myBorder.Child =  myTextBlock;
-            myStackPanel.Children.Add( myBorder );
+            myTextBlock.Margin = new Thickness(20);
+            myBorder.Child = myTextBlock;
+            myStackPanel.Children.Add(myBorder);
 
             myTextBlock = new TextBlock();
             myTextBlock.Text = "FillBehavior = \"Deactivate\"";
-            myStackPanel.Children.Add( myTextBlock );
+            myStackPanel.Children.Add(myTextBlock);
 
             //
             //  Create the first rectangle to animate.
@@ -51,14 +51,14 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             this.RegisterName(deactivateAnimationRectangle.Name, deactivateAnimationRectangle);
             deactivateAnimationRectangle.Width = 20;
             deactivateAnimationRectangle.Height = 20;
-            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             deactivateAnimationRectangle.Fill = mySolidColorBrush;
             deactivateAnimationRectangle.HorizontalAlignment = HorizontalAlignment.Left;
-            myStackPanel.Children.Add( deactivateAnimationRectangle );
+            myStackPanel.Children.Add(deactivateAnimationRectangle);
 
             myTextBlock = new TextBlock();
             myTextBlock.Text = "\nFillBehavior = \"HoldEnd\"";
-            myStackPanel.Children.Add( myTextBlock );
+            myStackPanel.Children.Add(myTextBlock);
 
             //
             //  Create the second rectangle to animate.
@@ -68,10 +68,10 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             this.RegisterName(holdEndAnimationRectangle.Name, holdEndAnimationRectangle);
             holdEndAnimationRectangle.Width = 20;
             holdEndAnimationRectangle.Height = 20;
-            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             holdEndAnimationRectangle.Fill = mySolidColorBrush;
             holdEndAnimationRectangle.HorizontalAlignment = HorizontalAlignment.Left;
-            myStackPanel.Children.Add( holdEndAnimationRectangle );
+            myStackPanel.Children.Add(holdEndAnimationRectangle);
 
             //
             // Create an animation which reverts the  width of the rectangle
@@ -83,7 +83,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
                 new PropertyPath(Rectangle.WidthProperty));
             myStopDoubleAnimation.From = 100;
             myStopDoubleAnimation.To = 400;
-            myStopDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myStopDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myStopDoubleAnimation.FillBehavior = FillBehavior.Stop;
 
             //
@@ -95,7 +95,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
                 new PropertyPath(Rectangle.WidthProperty));
             myHoldEndDoubleAnimation.From = 100;
             myHoldEndDoubleAnimation.To = 400;
-            myHoldEndDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myHoldEndDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myHoldEndDoubleAnimation.FillBehavior = FillBehavior.HoldEnd;
 
             //
@@ -110,11 +110,11 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             //
             Button myButton = new Button();
             myButton.Name = "myButton";
-            this.RegisterName( myButton.Name, myButton );
-            myButton.Margin = new Thickness( 0,30,0,0 );
+            this.RegisterName(myButton.Name, myButton);
+            myButton.Margin = new Thickness(0, 30, 0, 0);
             myButton.Content = "Restart Animations";
             myButton.HorizontalAlignment = HorizontalAlignment.Left;
-            myStackPanel.Children.Add( myButton );
+            myStackPanel.Children.Add(myButton);
 
             //
             //  Create an EventTrigger and a BeginStoryboard action to start

@@ -10,11 +10,11 @@
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Linq;
+    using System.Numerics;
     using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
     using System.Xml.Linq;
-    using System.Numerics;
 
     class OrderableListPartitioner<TSource> : OrderablePartitioner<TSource>
     {

@@ -17,7 +17,7 @@ namespace MouseRollBackSingleClick
             initialStyle = this.FormBorderStyle;
             this.ClientSize = new System.Drawing.Size(292, 266);
             button1 = new DoubleClickButton();
-            button1.Location = new Point (40,40);
+            button1.Location = new Point(40, 40);
             button1.Click += new EventHandler(button1_Click);
             button1.AutoSize = true;
             this.AllowDrop = true;
@@ -47,7 +47,7 @@ namespace MouseRollBackSingleClick
             Application.Run(new Form1());
         }
     }
-//<snippet2>
+    //<snippet2>
     public class DoubleClickButton : Button
     {
         public DoubleClickButton() : base()
@@ -57,6 +57,6 @@ namespace MouseRollBackSingleClick
                 ControlStyles.StandardDoubleClick, true);
         }
     }
-//</snippet2>
+    //</snippet2>
 }
 //</snippet1>

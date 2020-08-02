@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using System.Collections.Generic;
 
 class WriteTextFiles
 {
@@ -39,7 +39,8 @@ class WriteTextFiles
             Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         // Write the string array to a new file named "WriteLines.txt".
-        using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath,"WriteLines.txt"))) {
+        using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt")))
+        {
             foreach (string line in lines)
                 outputFile.WriteLine(line);
         }
@@ -55,7 +56,8 @@ class WriteTextFiles
         string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         // Append text to an existing file named "WriteLines.txt".
-        using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath,"WriteLines.txt"), true)) {
+        using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteLines.txt"), true))
+        {
             outputFile.WriteLine("Fourth Line");
         }
         // </SnippetAppendText>
@@ -70,7 +72,8 @@ class WriteTextFiles
         string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         // Write the specified text asynchronously to a new file named "WriteTextAsync.txt".
-        using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath,"WriteTextAsync.txt"))) {
+        using (StreamWriter outputFile = new StreamWriter(Path.Combine(docPath, "WriteTextAsync.txt")))
+        {
             await outputFile.WriteAsync("This is a sentence.");
         }
         // </SnippetWriteAsync>
@@ -88,13 +91,13 @@ class WriteTextFiles
         string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
         // Write the text to a new file named "WriteFile.txt".
-        File.WriteAllText(Path.Combine(docPath,"WriteFile.txt"), text);
+        File.WriteAllText(Path.Combine(docPath, "WriteFile.txt"), text);
 
         // Create a string array with the additional lines of text
         string[] lines = { "New line 1", "New line 2" };
 
         // Append new lines of text to the file
-        File.AppendAllLines(Path.Combine(docPath,"WriteFile.txt"), lines);
+        File.AppendAllLines(Path.Combine(docPath, "WriteFile.txt"), lines);
 
         // </SnippetWriteFile>
     }

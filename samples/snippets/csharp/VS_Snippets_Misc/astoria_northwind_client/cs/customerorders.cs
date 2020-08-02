@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+//<snippetCustomersOrdersUsing>
+using System.Data.Services.Client;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-//<snippetCustomersOrdersUsing>
-using System.Data.Services.Client;
 using NorthwindClient.Northwind;
 //</snippetCustomersOrdersUsing>
 

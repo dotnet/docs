@@ -2,13 +2,13 @@
 ' <Snippet1>
 ' Service Code:
 
-Imports System.ServiceModel.Channels
+Imports System.Collections.Generic
 Imports System.Configuration
 Imports System.Messaging
 Imports System.ServiceModel
-Imports System.Transactions
+Imports System.ServiceModel.Channels
 Imports System.Text
-Imports System.Collections.Generic
+Imports System.Transactions
 
 Namespace Microsoft.ServiceModel.Samples
     ' Define a service contract. 

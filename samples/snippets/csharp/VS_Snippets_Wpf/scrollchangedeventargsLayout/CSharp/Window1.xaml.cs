@@ -5,12 +5,12 @@ using System.Windows.Documents;
 
 namespace ScrollChangedEventArgs_layout
 {
-	/// <summary>
-	/// Interaction logic for Window1.xaml
-	/// </summary>
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
 
-	public partial class Window1 : Window
-	{
+    public partial class Window1 : Window
+    {
         // <Snippet4>
         private void scrollTrue(object sender, RoutedEventArgs e)
         {

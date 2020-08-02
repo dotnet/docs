@@ -3,48 +3,48 @@
 
 using System;
 using System.Collections.Generic;
+using System.ServiceModel.MsmqIntegration;
 using System.Text;
 using System.Transactions;
-using System.ServiceModel.MsmqIntegration;
 
 namespace Microsoft.ServiceModel.Samples
 {
-	
-	[System.Diagnostics.DebuggerStepThroughAttribute()]
-			[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-	public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrderProcessor>, IOrderProcessor
-	{
 
-		public OrderProcessorClient()
-		{
-		}
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+    public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrderProcessor>, IOrderProcessor
+    {
 
-		public OrderProcessorClient(string endpointConfigurationName) :
-				base(endpointConfigurationName)
-		{
-		}
+        public OrderProcessorClient()
+        {
+        }
 
-		public OrderProcessorClient(string endpointConfigurationName, string remoteAddress) :
-				base(endpointConfigurationName, remoteAddress)
-		{
-		}
+        public OrderProcessorClient(string endpointConfigurationName) :
+                base(endpointConfigurationName)
+        {
+        }
 
-		public OrderProcessorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
-				base(endpointConfigurationName, remoteAddress)
-		{
-		}
+        public OrderProcessorClient(string endpointConfigurationName, string remoteAddress) :
+                base(endpointConfigurationName, remoteAddress)
+        {
+        }
 
-		public OrderProcessorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
-				base(binding, remoteAddress)
-		{
-		}
+        public OrderProcessorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
+                base(endpointConfigurationName, remoteAddress)
+        {
+        }
 
-		public void SubmitPurchaseOrder
-				(MsmqMessage<PurchaseOrder> po)
-		{
-			base.Channel.SubmitPurchaseOrder(po);
-		}
-	}
+        public OrderProcessorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
+                base(binding, remoteAddress)
+        {
+        }
+
+        public void SubmitPurchaseOrder
+                (MsmqMessage<PurchaseOrder> po)
+        {
+            base.Channel.SubmitPurchaseOrder(po);
+        }
+    }
 
     class Program
     {

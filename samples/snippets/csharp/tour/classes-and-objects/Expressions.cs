@@ -4,28 +4,28 @@
     using System.Collections.Generic;
     public abstract class Expression
     {
-        public abstract double Evaluate(Dictionary<string,object> vars);
+        public abstract double Evaluate(Dictionary<string, object> vars);
     }
-    public class Constant: Expression
+    public class Constant : Expression
     {
         double value;
         public Constant(double value)
         {
             this.value = value;
         }
-        public override double Evaluate(Dictionary<string,object> vars)
+        public override double Evaluate(Dictionary<string, object> vars)
         {
             return value;
         }
     }
-    public class VariableReference: Expression
+    public class VariableReference : Expression
     {
         string name;
         public VariableReference(string name)
         {
             this.name = name;
         }
-        public override double Evaluate(Dictionary<string,object> vars)
+        public override double Evaluate(Dictionary<string, object> vars)
         {
             object value = vars[name];
             if (value == null)
@@ -35,7 +35,7 @@
             return Convert.ToDouble(value);
         }
     }
-    public class Operation: Expression
+    public class Operation : Expression
     {
         Expression left;
         char op;
@@ -46,11 +46,12 @@
             this.op = op;
             this.right = right;
         }
-        public override double Evaluate(Dictionary<string,object> vars)
+        public override double Evaluate(Dictionary<string, object> vars)
         {
             double x = left.Evaluate(vars);
             double y = right.Evaluate(vars);
-            switch (op) {
+            switch (op)
+            {
                 case '+': return x + y;
                 case '-': return x - y;
                 case '*': return x * y;
@@ -78,7 +79,7 @@ namespace ClassesAndObjects
                     new Constant(2)
                 )
             );
-            Dictionary<string,object> vars = new Dictionary<string, object>();
+            Dictionary<string, object> vars = new Dictionary<string, object>();
             vars["x"] = 3;
             vars["y"] = 5;
             Console.WriteLine(e.Evaluate(vars));		// Outputs "21"

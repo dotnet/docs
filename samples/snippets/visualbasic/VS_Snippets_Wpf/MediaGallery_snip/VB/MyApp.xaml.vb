@@ -1,9 +1,9 @@
 ﻿
+Imports System.Configuration
+Imports System.Data
 Imports System.Windows
 Imports System.Windows.Navigation
-Imports System.Data
 Imports System.Xml
-Imports System.Configuration
 
 Namespace SDKSample
 
@@ -12,6 +12,6 @@ Namespace SDKSample
     '/ </summary>
 
     Class MyApp
-        Inherits Application 
+        Inherits Application
     End Class
 End Namespace 'SDKSample

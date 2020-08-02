@@ -3,24 +3,24 @@ Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
 Imports System.Drawing
+Imports System.IO
 Imports System.Text
 Imports System.Windows.Forms
-Imports System.IO
 
 
 
 Public Class Form1
     Inherits Form
-    
-    Public Sub New() 
+
+    Public Sub New()
         ExtractAssociatedIconEx()
-    
+
     End Sub
     ' <snippet1>
     Private listView1 As ListView
     Private imageList1 As ImageList
-    
-    
+
+
     Public Sub ExtractAssociatedIconEx()
 
         ' Initialize the ListView, ImageList and Form.
@@ -61,5 +61,5 @@ Public Class Form1
         Next file
         listView1.EndUpdate()
     End Sub
- ' </snippet1>
+    ' </snippet1>
 End Class

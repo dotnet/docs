@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Data;
+using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.MatrixExamples
 {
@@ -264,43 +264,43 @@ namespace Microsoft.Samples.MatrixExamples
         private void transformExamples()
         {
 
-             Matrix myMatrix = new Matrix(5, 10, 15, 20, 25, 30);
+            Matrix myMatrix = new Matrix(5, 10, 15, 20, 25, 30);
 
-             //
-             // Transform a point.
-             //
-             Point myPoint = new Point(15,25);
+            //
+            // Transform a point.
+            //
+            Point myPoint = new Point(15, 25);
 
-             // pointResult is (475, 680).
-             Point pointResult = myMatrix.Transform(myPoint);
+            // pointResult is (475, 680).
+            Point pointResult = myMatrix.Transform(myPoint);
 
-             //
-             // Transform an array of points.
-             //
-             Point[] myPointArray = new Point[]
-                {new Point(15,25), new Point(30,35)};
+            //
+            // Transform an array of points.
+            //
+            Point[] myPointArray = new Point[]
+               {new Point(15,25), new Point(30,35)};
 
-             // myPointArray[0] becomes (475, 680).
-             // myPointArray[1] becomes (700, 1030).
-             myMatrix.Transform(myPointArray);
+            // myPointArray[0] becomes (475, 680).
+            // myPointArray[1] becomes (700, 1030).
+            myMatrix.Transform(myPointArray);
 
-             //
-             // Transform a vector.
-             //
-             Vector myVector = new Vector(15,25);
+            //
+            // Transform a vector.
+            //
+            Vector myVector = new Vector(15, 25);
 
-             // vectorResult becomes (450, 650).
-             Vector vectorResult = myMatrix.Transform(myVector);
+            // vectorResult becomes (450, 650).
+            Vector vectorResult = myMatrix.Transform(myVector);
 
-             //
-             // Transform an array of vectors.
-             //
-             Vector[] myVectorArray = new Vector[]
-                {new Vector(15, 25), new Vector(30,35)};
+            //
+            // Transform an array of vectors.
+            //
+            Vector[] myVectorArray = new Vector[]
+               {new Vector(15, 25), new Vector(30,35)};
 
-             // myVectorArray[0] becomes (450, 650).
-             // myVectorArray[1] becomes (675, 1000).
-             myMatrix.Transform(myVectorArray);
+            // myVectorArray[0] becomes (450, 650).
+            // myVectorArray[1] becomes (675, 1000).
+            myMatrix.Transform(myVectorArray);
         }
         // </SnippetMatrixTransformExamples_csharp>
 
@@ -324,7 +324,7 @@ namespace Microsoft.Samples.MatrixExamples
             // (1,0,0,1,0,0).
             Matrix myMatrix = Matrix.Identity;
 
-            Matrix m = new Matrix(1,0,0,1,0,0);
+            Matrix m = new Matrix(1, 0, 0, 1, 0, 0);
 
             return myMatrix;
         }
@@ -358,7 +358,7 @@ namespace Microsoft.Samples.MatrixExamples
             // Returns
             return myMatrix.GetHashCode();
         }
-         // </SnippetMatrixGetHashCodeExample_csharp>
+        // </SnippetMatrixGetHashCodeExample_csharp>
 
         // <SnippetMatrixMultiplicationExample_csharp>
         private void multiplicationExample()

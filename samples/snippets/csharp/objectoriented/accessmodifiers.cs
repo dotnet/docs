@@ -1,4 +1,4 @@
-namespace objectoriented
+﻿namespace objectoriented
 {
     //<SnippetPublicAccess>
     public class Bicycle

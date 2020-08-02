@@ -4,12 +4,12 @@ using System.Globalization;
 
 public class Example
 {
-   public static void Main()
-   {
-      Console.WriteLine("'d' standard format string:");
-      foreach (var customString in DateTimeFormatInfo.CurrentInfo.GetAllDateTimePatterns('d'))
-          Console.WriteLine("   {0}", customString);
-   }
+    public static void Main()
+    {
+        Console.WriteLine("'d' standard format string:");
+        foreach (var customString in DateTimeFormatInfo.CurrentInfo.GetAllDateTimePatterns('d'))
+            Console.WriteLine("   {0}", customString);
+    }
 }
 // The example displays the following output:
 //       'd' standard format string:

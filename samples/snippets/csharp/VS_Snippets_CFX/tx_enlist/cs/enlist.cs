@@ -18,103 +18,103 @@ using System.Transactions;
 
 namespace Microsoft.Samples.Transactions.Quickstarts
 {
-	// A simple usage of transactions with the using statement
-	class VolatileEnlist
-	{
-		//<snippet1>
-		static void Main(string[] args)
-		{
-			try
-			{
-				using (TransactionScope scope = new TransactionScope())
-				{
-				
-					//Create an enlistment object
-					myEnlistmentClass myElistment = new myEnlistmentClass();
+    // A simple usage of transactions with the using statement
+    class VolatileEnlist
+    {
+        //<snippet1>
+        static void Main(string[] args)
+        {
+            try
+            {
+                using (TransactionScope scope = new TransactionScope())
+                {
 
-					//Enlist on the current transaction with the enlistment object
-					Transaction.Current.EnlistVolatile(myElistment, EnlistmentOptions.None);
+                    //Create an enlistment object
+                    myEnlistmentClass myElistment = new myEnlistmentClass();
 
-					//Perform transactional work here.
+                    //Enlist on the current transaction with the enlistment object
+                    Transaction.Current.EnlistVolatile(myElistment, EnlistmentOptions.None);
 
-					//Call complete on the TransactionScope based on console input
-	                    			ConsoleKeyInfo c;
-					while(true)
-	                    			{
-						Console.Write("Complete the transaction scope? [Y|N] ");
-						c = Console.ReadKey();
-						Console.WriteLine();
-				
-		                        			if ((c.KeyChar == 'Y') || (c.KeyChar == 'y'))
-						{
-							scope.Complete();
-							break;
-						}
-						else if ((c.KeyChar == 'N') || (c.KeyChar == 'n'))
-						{
-							break;
-						}
-					}
-				}
-			}
-			catch (System.Transactions.TransactionException ex)
-			{
-				Console.WriteLine(ex);
-			}
-			catch
-			{
-				Console.WriteLine("Cannot complete transaction");
-				throw;
-			}
-		}
+                    //Perform transactional work here.
 
-		//<snippet2>
-		class myEnlistmentClass : IEnlistmentNotification
-		{
-			public void Prepare(PreparingEnlistment preparingEnlistment)
-			{
-				Console.WriteLine("Prepare notification received");
+                    //Call complete on the TransactionScope based on console input
+                    ConsoleKeyInfo c;
+                    while (true)
+                    {
+                        Console.Write("Complete the transaction scope? [Y|N] ");
+                        c = Console.ReadKey();
+                        Console.WriteLine();
 
-				//Perform transactional work
+                        if ((c.KeyChar == 'Y') || (c.KeyChar == 'y'))
+                        {
+                            scope.Complete();
+                            break;
+                        }
+                        else if ((c.KeyChar == 'N') || (c.KeyChar == 'n'))
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+            catch (System.Transactions.TransactionException ex)
+            {
+                Console.WriteLine(ex);
+            }
+            catch
+            {
+                Console.WriteLine("Cannot complete transaction");
+                throw;
+            }
+        }
 
-				//If work finished correctly, reply prepared
-				preparingEnlistment.Prepared();
+        //<snippet2>
+        class myEnlistmentClass : IEnlistmentNotification
+        {
+            public void Prepare(PreparingEnlistment preparingEnlistment)
+            {
+                Console.WriteLine("Prepare notification received");
 
-				// otherwise, do a ForceRollback
-				preparingEnlistment.ForceRollback();
-			}
+                //Perform transactional work
 
-			public void Commit(Enlistment enlistment)
-			{
-				Console.WriteLine("Commit notification received");
+                //If work finished correctly, reply prepared
+                preparingEnlistment.Prepared();
 
-				//Do any work necessary when commit notification is received
+                // otherwise, do a ForceRollback
+                preparingEnlistment.ForceRollback();
+            }
 
-				//Declare done on the enlistment
-				enlistment.Done();
-			}
+            public void Commit(Enlistment enlistment)
+            {
+                Console.WriteLine("Commit notification received");
 
-			public void Rollback(Enlistment enlistment)
-			{
-				Console.WriteLine("Rollback notification received");
+                //Do any work necessary when commit notification is received
 
-				//Do any work necessary when rollback notification is received
+                //Declare done on the enlistment
+                enlistment.Done();
+            }
 
-				//Declare done on the enlistment
-				enlistment.Done();
-			}
+            public void Rollback(Enlistment enlistment)
+            {
+                Console.WriteLine("Rollback notification received");
 
-			public void InDoubt(Enlistment enlistment)
-			{
-				Console.WriteLine("In doubt notification received");
+                //Do any work necessary when rollback notification is received
 
-				//Do any work necessary when indout notification is received
-				
-				//Declare done on the enlistment
-				enlistment.Done();
-			}
-		}
-		//</snippet2>
-	//</snippet1>
-	}
+                //Declare done on the enlistment
+                enlistment.Done();
+            }
+
+            public void InDoubt(Enlistment enlistment)
+            {
+                Console.WriteLine("In doubt notification received");
+
+                //Do any work necessary when indout notification is received
+
+                //Declare done on the enlistment
+                enlistment.Done();
+            }
+        }
+        //</snippet2>
+        //</snippet1>
+    }
 }

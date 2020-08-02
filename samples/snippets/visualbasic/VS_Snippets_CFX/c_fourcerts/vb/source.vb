@@ -1,14 +1,14 @@
 ﻿'<snippet0>
+Imports System.IdentityModel.Policy
 Imports System.IdentityModel.Selectors
 Imports System.IdentityModel.Tokens
 Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
 Imports System.ServiceModel
+Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Security
 Imports System.ServiceModel.Security.Tokens
-Imports System.ServiceModel.Channels
-Imports System.IdentityModel.Policy
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.ServiceModel.Samples

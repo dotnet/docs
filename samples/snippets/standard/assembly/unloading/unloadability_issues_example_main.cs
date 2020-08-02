@@ -43,7 +43,7 @@ namespace example
                 return -1;
             }
 
-            var args = new object[1] {new string[] {"Hello"}};
+            var args = new object[1] { new string[] { "Hello" } };
 
             // Issue preventing unloading #1 - we keep MethodInfo of a method for an assembly loaded into the TestAssemblyLoadContext in a static variable
             entryPoint = new TestInfo(a.EntryPoint);

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.Linq;
+using System.Text;
 
 namespace cs_gettingstartedexpers
 {
@@ -26,7 +26,7 @@ namespace cs_gettingstartedexpers
                 Console.WriteLine(custObj.CustomerID);
                 foreach (Order ord in custObj.Orders)
                 {
-                    Console.WriteLine("\t {0}",ord.OrderDate);
+                    Console.WriteLine("\t {0}", ord.OrderDate);
                 }
             }
             // </Snippet1>

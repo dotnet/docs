@@ -1,10 +1,10 @@
 ﻿//<Snippet1>
 using System;
-using System.Drawing;
-using System.Windows.Forms;
 using System.ComponentModel;
-using System.Text;
+using System.Drawing;
 using System.IO;
+using System.Text;
+using System.Windows.Forms;
 
 namespace MyApplication
 {

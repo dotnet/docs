@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Security;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Threading;
-using System.Security;
 
 [assembly: SecurityTransparent]
 
@@ -16,16 +16,16 @@ namespace SDKSample
     {
         Window mainWindow;
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup (e);
-            CreateAndShowMainWindow ();
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
         }
-        private void CreateAndShowMainWindow ()
+        private void CreateAndShowMainWindow()
         {
 
             // Create the application's main window
-            mainWindow = new Window ();
+            mainWindow = new Window();
             mainWindow.Title = "JPEG Imaging Sample";
             ScrollViewer mySV = new ScrollViewer();
 
@@ -39,7 +39,7 @@ namespace SDKSample
             BitmapPalette myPalette = BitmapPalettes.Halftone256;
 
             // Creates a new empty image with the pre-defined palette
-			//<SnippetJpegEncoder>
+            //<SnippetJpegEncoder>
             //<Snippet2>
             BitmapSource image = BitmapSource.Create(
                 width,
@@ -64,7 +64,7 @@ namespace SDKSample
             encoder.Frames.Add(BitmapFrame.Create(image));
             encoder.Save(stream);
             //</Snippet3>
-			//</SnippetJpegEncoder>
+            //</SnippetJpegEncoder>
 
             //</Snippet4>
 
@@ -118,10 +118,10 @@ namespace SDKSample
     internal static class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
-            app app = new app ();
-            app.Run ();
+            app app = new app();
+            app.Run();
         }
     }
 }

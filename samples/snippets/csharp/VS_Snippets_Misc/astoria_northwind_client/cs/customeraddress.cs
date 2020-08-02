@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Services.Common;
 using System.Linq;
 using System.Text;
-using System.Data.Services.Common;
 
 namespace NorthwindClient
 {
@@ -180,12 +180,12 @@ namespace NorthwindClient
         string postalCode,
         string country)
         {
-         _customerID = customerID;
-         _address = address;
-         _city = city;
-         _region = region;
-         _postalCode = postalCode;
-         _country = country;
+            _customerID = customerID;
+            _address = address;
+            _city = city;
+            _region = region;
+            _postalCode = postalCode;
+            _country = country;
         }
     }
 }

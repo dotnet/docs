@@ -16,7 +16,7 @@ public class BinReadWrite
         BinaryWriter bw = new BinaryWriter(fs, utf8);
         string bstring;
 
-        bstring  = "This is line #1 of text written as a binary stream.\r\n";
+        bstring = "This is line #1 of text written as a binary stream.\r\n";
         bstring += "This is line #2 of text written as a binary stream.\r\n";
         bstring += "This is line #3 of text written as a binary stream.";
         bw.Write(bstring);

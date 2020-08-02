@@ -23,25 +23,25 @@ class Example
     {
         if (coll is Array)
         {
-           Array arr = (Array) coll;
-           Console.WriteLine($"An array with {arr.Length} elements.");
+            Array arr = (Array)coll;
+            Console.WriteLine($"An array with {arr.Length} elements.");
         }
         else if (coll is IEnumerable<int>)
         {
-            IEnumerable<int> ieInt = (IEnumerable<int>) coll;
+            IEnumerable<int> ieInt = (IEnumerable<int>)coll;
             Console.WriteLine($"Average: {ieInt.Average(s => s)}");
         }
         else if (coll is IList)
         {
-            IList list = (IList) coll;
+            IList list = (IList)coll;
             Console.WriteLine($"{list.Count} items");
         }
         else if (coll is IEnumerable)
         {
-            IEnumerable ie = (IEnumerable) coll;
+            IEnumerable ie = (IEnumerable)coll;
             string result = "";
             foreach (var e in ie)
-               result += $"{e} ";
+                result += $"{e} ";
             Console.WriteLine(result);
         }
         else if (coll == null)

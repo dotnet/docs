@@ -1,6 +1,6 @@
-﻿Imports System.ServiceModel
+﻿Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
-Imports System.Security.Cryptography.X509Certificates
+Imports System.ServiceModel
 
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

@@ -1,7 +1,7 @@
-﻿Imports System.IO
+﻿Imports System.Diagnostics
+Imports System.IO
 Imports System.Security.Cryptography
 Imports System.Xml
-Imports System.Diagnostics
 
 Public Class Form1
 

@@ -6,10 +6,10 @@ namespace SafeEfficientCode
     {
         static void Main(string[] args)
         {
-            var pt1 = new Point3D{X = 3, Y = 4, Z = 5};
-            var pt2 = new Point3D{X = 10, Y = 8, Z = 5};
+            var pt1 = new Point3D { X = 3, Y = 4, Z = 5 };
+            var pt2 = new Point3D { X = 10, Y = 8, Z = 5 };
 
-#region UseInArgument
+            #region UseInArgument
             var distance = CalculateDistance(pt1, pt2);
             var fromOrigin = CalculateDistance(pt1, new Point3D());
             #endregion
@@ -25,7 +25,7 @@ namespace SafeEfficientCode
             #region AssignRefReadonly
             var originValue = Point3D.Origin;
             ref readonly var originReference = ref Point3D.Origin;
-#endregion
+            #endregion
         }
 
         #region ByValue
@@ -48,9 +48,9 @@ namespace SafeEfficientCode
 
             return Math.Sqrt(xDifference * xDifference + yDifference * yDifference + zDifference * zDifference);
         }
-#endregion
+        #endregion
 
-#region InArgumentDefault
+        #region InArgumentDefault
         private static double CalculateDistance2(in Point3D point1, in Point3D point2 = default)
         {
             double xDifference = point1.X - point2.X;

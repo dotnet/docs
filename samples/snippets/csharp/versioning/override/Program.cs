@@ -2,7 +2,7 @@
 
 class Program
 {
-#region sample
+    #region sample
     public class MyBaseClass
     {
         public virtual string MethodOne()
@@ -27,5 +27,5 @@ class Program
         Console.WriteLine("Base Method One: {0}", b.MethodOne());
         Console.WriteLine("Derived Method One: {0}", d.MethodOne());
     }
-#endregion
+    #endregion
 }

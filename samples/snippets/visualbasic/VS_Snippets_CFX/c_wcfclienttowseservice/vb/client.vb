@@ -1,11 +1,11 @@
 ﻿' Copyright (c) Microsoft Corporation.  All Rights Reserved.
 ' <snippet0>
 Imports System.Collections.Generic
-Imports System.Text
 Imports System.Security.Cryptography.X509Certificates
 Imports System.ServiceModel
-Imports System.ServiceModel.Security
 Imports System.ServiceModel.Channels
+Imports System.ServiceModel.Security
+Imports System.Text
 
 Namespace Microsoft.ServiceModel.Samples
 

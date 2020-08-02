@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Net;
 
 namespace specialNamespaceForOneMethodSignature
 {
@@ -16,18 +16,18 @@ namespace specialNamespaceForOneMethodSignature
     {
         public TResult Tvalue;
     }
-    class Dummy <TResult>
+    class Dummy<TResult>
     {
-            // <snippet01>
-            public Task<TResult> FromAsync<TArg1, TArg2, TArg3>(
-                Func<TArg1, TArg2, TArg3, AsyncCallback, object, IAsyncResult> beginMethod, //BeginRead
-                 Func<IAsyncResult, TResult> endMethod, //EndRead
-                 TArg1 arg1, // the byte[] buffer
-                 TArg2 arg2, // the offset in arg1 at which to start writing data
-                 TArg3 arg3, // the maximum number of bytes to read
-                 object state // optional state information
-                )
-                //</snippet01>
+        // <snippet01>
+        public Task<TResult> FromAsync<TArg1, TArg2, TArg3>(
+            Func<TArg1, TArg2, TArg3, AsyncCallback, object, IAsyncResult> beginMethod, //BeginRead
+             Func<IAsyncResult, TResult> endMethod, //EndRead
+             TArg1 arg1, // the byte[] buffer
+             TArg2 arg2, // the offset in arg1 at which to start writing data
+             TArg3 arg3, // the maximum number of bytes to read
+             object state // optional state information
+            )
+        //</snippet01>
         { return new Task<TResult>(); }
     }
 }
@@ -334,8 +334,8 @@ class FileStreamDemo
     {
         FileStreamDemo fsd = new FileStreamDemo();
         //  var task = fsd.GetMultiFileData(new string[1]);
-         fsd.ShowCallingFromAsync();
-       // fsd.ShowCallingFromAsyncFileData();
+        fsd.ShowCallingFromAsync();
+        // fsd.ShowCallingFromAsyncFileData();
         //  fsd.ProcessFilesAsync();
         //  task.Wait();
         //  Console.WriteLine(task.Result);
@@ -386,291 +386,291 @@ class FileStreamDemo
     }
     //</snippet03>
 
-        void ShowCallingFromAsync()
+    void ShowCallingFromAsync()
+    {
+        string path = @"\\docbuild2\public\Main\Logs\DllDiffReport\DllDiffReport_BetweenInBuildAndInProduct.html";
+        //<snippet04>
+
+        Task<string> t = GetFileStringAsync(path);
+
+        // Do some other work:
+        // ...
+
+        try
         {
-            string path = @"\\docbuild2\public\Main\Logs\DllDiffReport\DllDiffReport_BetweenInBuildAndInProduct.html";
-            //<snippet04>
-
-            Task<string> t = GetFileStringAsync(path);
-
-            // Do some other work:
-            // ...
-
-            try
-            {
-                 Console.WriteLine(t.Result.Substring(0, 500));
-            }
-            catch (AggregateException ae)
-            {
-                Console.WriteLine(ae.InnerException.Message);
-            }
-            //</snippet04>
-
-            Console.ReadLine();
+            Console.WriteLine(t.Result.Substring(0, 500));
         }
-
-        //not used???
-        //<snippet12>
-        public static Task<int> GetFileDataAsync(string path, ref byte[] data)
+        catch (AggregateException ae)
         {
-            // Error handling omitted for brevity...
-
-            FileInfo fi = new FileInfo(path);
-            data = new byte[fi.Length];
-            FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, true);
-
-            // Task<int> returns the number of bytes read
-            // Pass FileStream in AsyncState parameter in order to close it from the call site.
-            return Task<int>.Factory.FromAsync(
-                    fs.BeginRead, fs.EndRead, data, 0, data.Length, fs);
+            Console.WriteLine(ae.InnerException.Message);
         }
-        //</snippet12>
+        //</snippet04>
 
-        void ShowCallingFromAsyncFileData()
+        Console.ReadLine();
+    }
+
+    //not used???
+    //<snippet12>
+    public static Task<int> GetFileDataAsync(string path, ref byte[] data)
+    {
+        // Error handling omitted for brevity...
+
+        FileInfo fi = new FileInfo(path);
+        data = new byte[fi.Length];
+        FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, true);
+
+        // Task<int> returns the number of bytes read
+        // Pass FileStream in AsyncState parameter in order to close it from the call site.
+        return Task<int>.Factory.FromAsync(
+                fs.BeginRead, fs.EndRead, data, 0, data.Length, fs);
+    }
+    //</snippet12>
+
+    void ShowCallingFromAsyncFileData()
+    {
+        //<snippet13>
+        string path = @"\\remoteComputer\filename.txt";
+
+        byte[] buffer = null;
+        Task<int> t = GetFileDataAsync(path, ref buffer);
+
+        // Can do some other work here:
+        // ...
+        for (int i = 0; i < 10; i++)
+            Console.Write("Working... ");
+
+        var result =
+        t.ContinueWith((antecedent) =>
         {
-            //<snippet13>
-            string path = @"\\remoteComputer\filename.txt";
-
-            byte[] buffer = null;
-            Task<int> t = GetFileDataAsync(path, ref buffer);
-
-            // Can do some other work here:
-            // ...
-            for(int i = 0; i < 10; i++)
-                Console.Write("Working... ");
-
-            var result =
-            t.ContinueWith((antecedent) =>
-            {
                 // Error handling omitted...
 
                 return new UTF8Encoding().GetString(buffer);
-            });
+        });
 
-            // Can also do some other work here:
-            // ...
-            for (int i = 0; i < 10; i++)
-                Console.Write("Working more... ");
-            try
-            {
-                t.Wait();
-                Console.WriteLine(result.Result.Substring(0, 50));
-            }
-            catch (AggregateException ae)
-            {
-                Console.WriteLine(ae.InnerException.Message);
-            }
-            //</snippet13>
-
-            Console.ReadLine();
-        }
-        // nested dummy class for snippet0 5 below
-        class MyCustomState
+        // Can also do some other work here:
+        // ...
+        for (int i = 0; i < 10; i++)
+            Console.Write("Working more... ");
+        try
         {
-            public string StateData { get; set; }
-            public MyCustomState() { StateData = "Hello"; }
+            t.Wait();
+            Console.WriteLine(result.Result.Substring(0, 50));
         }
-        private MyCustomState GetCustomState()
+        catch (AggregateException ae)
         {
-            return new MyCustomState();
+            Console.WriteLine(ae.InnerException.Message);
         }
+        //</snippet13>
 
-        //<snippet05>
-        public Task<string> GetFileStringAsync2(string path)
+        Console.ReadLine();
+    }
+    // nested dummy class for snippet0 5 below
+    class MyCustomState
+    {
+        public string StateData { get; set; }
+        public MyCustomState() { StateData = "Hello"; }
+    }
+    private MyCustomState GetCustomState()
+    {
+        return new MyCustomState();
+    }
+
+    //<snippet05>
+    public Task<string> GetFileStringAsync2(string path)
+    {
+        FileInfo fi = new FileInfo(path);
+        byte[] data = new byte[fi.Length];
+        MyCustomState state = GetCustomState();
+        FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, true);
+        // We still pass null for the last parameter because
+        // the state variable is visible to the continuation delegate.
+        Task<int> task = Task<int>.Factory.FromAsync(
+                fs.BeginRead, fs.EndRead, data, 0, data.Length, null);
+
+        return task.ContinueWith((antecedent) =>
         {
-            FileInfo fi = new FileInfo(path);
-            byte[] data = new byte[fi.Length];
-            MyCustomState state = GetCustomState();
-            FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, true);
-            // We still pass null for the last parameter because
-            // the state variable is visible to the continuation delegate.
-            Task<int> task = Task<int>.Factory.FromAsync(
-                    fs.BeginRead, fs.EndRead, data, 0, data.Length, null);
-
-            return task.ContinueWith((antecedent) =>
-            {
                 // It is safe to close the filestream now.
                 fs.Close();
 
                 // Capture custom state data directly in the user delegate.
                 // No need to pass it through the FromAsync method.
                 if (state.StateData.Contains("New York, New York"))
-                {
-                    return "Start spreading the news!";
-                }
-                else
-                {
+            {
+                return "Start spreading the news!";
+            }
+            else
+            {
                     // If we did not receive the entire file, the end of the
                     // data buffer will contain garbage.
                     if (antecedent.Result < data.Length)
-                        Array.Resize(ref data, antecedent.Result);
+                    Array.Resize(ref data, antecedent.Result);
 
                     // Will be returned in the Result property of the Task<string>
                     // at some future point after the asynchronous file I/O operation completes.
                     return new UTF8Encoding().GetString(data);
-                }
-            });
-        }
-        //</snippet05>
+            }
+        });
+    }
+    //</snippet05>
 
-        string[] GetFilesToRead()
+    string[] GetFilesToRead()
+    {
+        return new string[3] { "test.txt", "test1.txt", "test2.txt" };
+    }
+    //<snippet06>
+    public Task<string> GetMultiFileData(string[] filesToRead)
+    {
+        FileStream fs;
+        Task<string>[] tasks = new Task<string>[filesToRead.Length];
+        byte[] fileData = null;
+        for (int i = 0; i < filesToRead.Length; i++)
         {
-            return new string[3] { "test.txt", "test1.txt", "test2.txt" };
-        }
-        //<snippet06>
-        public Task<string> GetMultiFileData(string[] filesToRead)
-        {
-            FileStream fs;
-            Task<string>[] tasks = new Task<string>[filesToRead.Length];
-            byte[] fileData = null;
-            for (int i = 0; i < filesToRead.Length; i++)
-            {
-                fileData = new byte[0x1000];
-                fs = new FileStream(filesToRead[i], FileMode.Open, FileAccess.Read, FileShare.Read, fileData.Length, true);
+            fileData = new byte[0x1000];
+            fs = new FileStream(filesToRead[i], FileMode.Open, FileAccess.Read, FileShare.Read, fileData.Length, true);
 
-                // By adding the continuation here, the
-                // Result of each task will be a string.
-                tasks[i] = Task<int>.Factory.FromAsync(
-                         fs.BeginRead, fs.EndRead, fileData, 0, fileData.Length, null)
-                         .ContinueWith((antecedent) =>
-                             {
-                                 fs.Close();
+            // By adding the continuation here, the
+            // Result of each task will be a string.
+            tasks[i] = Task<int>.Factory.FromAsync(
+                     fs.BeginRead, fs.EndRead, fileData, 0, fileData.Length, null)
+                     .ContinueWith((antecedent) =>
+                         {
+                             fs.Close();
 
                                  // If we did not receive the entire file, the end of the
                                  // data buffer will contain garbage.
                                  if (antecedent.Result < fileData.Length)
-                                     Array.Resize(ref fileData, antecedent.Result);
+                                 Array.Resize(ref fileData, antecedent.Result);
 
                                  // Will be returned in the Result property of the Task<string>
                                  // at some future point after the asynchronous file I/O operation completes.
                                  return new UTF8Encoding().GetString(fileData);
-                             });
-            }
+                         });
+        }
 
-            // Wait for all tasks to complete.
-            return Task<string>.Factory.ContinueWhenAll(tasks, (data) =>
-            {
+        // Wait for all tasks to complete.
+        return Task<string>.Factory.ContinueWhenAll(tasks, (data) =>
+        {
                 // Propagate all exceptions and mark all faulted tasks as observed.
                 Task.WaitAll(data);
 
                 // Combine the results from all tasks.
                 StringBuilder sb = new StringBuilder();
-                foreach (var t in data)
-                {
-                    sb.Append(t.Result);
-                }
+            foreach (var t in data)
+            {
+                sb.Append(t.Result);
+            }
                 // Final result to be returned eventually on the calling thread.
                 return sb.ToString();
-            });
-        }
-        //</snippet06>
-        public string ProcessData(Task[] arr)
+        });
+    }
+    //</snippet06>
+    public string ProcessData(Task[] arr)
+    {
+        return "processed";
+    }
+
+    //<snippet11>
+    void ProcessFilesAsync()
+    {
+        string[] files = Directory.GetFiles(@"\\remoteComputer\folderName\", "*.*", SearchOption.AllDirectories);
+        CancellationTokenSource cts = new CancellationTokenSource();
+
+        List<Task<string>> tasks = new List<Task<string>>();
+
+        foreach (var file in files)
         {
-            return "processed";
-        }
-
-        //<snippet11>
-        void ProcessFilesAsync()
-        {
-            string[] files = Directory.GetFiles(@"\\remoteComputer\folderName\", "*.*", SearchOption.AllDirectories);
-            CancellationTokenSource cts = new CancellationTokenSource();
-
-            List<Task<string>> tasks = new List<Task<string>>();
-
-            foreach (var file in files)
-            {
-                Task<string> t = null;
-                try
-                {
-                    t = GetFileStringAsync3(file, cts.Token);
-                }
-                catch
-                {
-                    Console.WriteLine("Argument exception on {0}", file);
-                    continue;
-                }
-                t.ContinueWith((antecedent) => ProcessFileData(antecedent.Result));
-                tasks.Add(t);
-            }
-            Console.WriteLine("All tasks have been added.");
-            // Do some work here.
-
+            Task<string> t = null;
             try
             {
-                Task.WaitAll(tasks.ToArray());
-                Console.WriteLine("All tasks have completed.");
+                t = GetFileStringAsync3(file, cts.Token);
             }
-            catch (AggregateException ae)
+            catch
             {
-                foreach (var ex in ae.InnerExceptions)
-                    Console.WriteLine(ex.Message);
+                Console.WriteLine("Argument exception on {0}", file);
+                continue;
             }
-            finally
-            {
-                cts.Dispose();
-            }
+            t.ContinueWith((antecedent) => ProcessFileData(antecedent.Result));
+            tasks.Add(t);
+        }
+        Console.WriteLine("All tasks have been added.");
+        // Do some work here.
 
-            // If needed, perform a final step after all tasks have completed.
-            Task.Factory.ContinueWhenAll(tasks.ToArray(), (arr) =>
-                {
-                    foreach (var t in arr)
-                    {
-                        CompareFileData(t.Result);
-                    }
-                });
+        try
+        {
+            Task.WaitAll(tasks.ToArray());
+            Console.WriteLine("All tasks have completed.");
+        }
+        catch (AggregateException ae)
+        {
+            foreach (var ex in ae.InnerExceptions)
+                Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            cts.Dispose();
         }
 
-        public Task<string> GetFileStringAsync3(string path, CancellationToken token)
-        {
-            if (!File.Exists(path))
+        // If needed, perform a final step after all tasks have completed.
+        Task.Factory.ContinueWhenAll(tasks.ToArray(), (arr) =>
             {
-                throw new FileNotFoundException(String.Format("Could not find {0}", path));
-            }
-            FileInfo fi = new FileInfo(path);
-            byte[] data = null;
+                foreach (var t in arr)
+                {
+                    CompareFileData(t.Result);
+                }
+            });
+    }
 
-            if (fi.Length < MAX_FILE_SIZE && fi.Length > 0)
+    public Task<string> GetFileStringAsync3(string path, CancellationToken token)
+    {
+        if (!File.Exists(path))
+        {
+            throw new FileNotFoundException(String.Format("Could not find {0}", path));
+        }
+        FileInfo fi = new FileInfo(path);
+        byte[] data = null;
+
+        if (fi.Length < MAX_FILE_SIZE && fi.Length > 0)
         {
             data = new byte[fi.Length];
         }
         else
-            {
-                throw new ArgumentException(String.Format("{0} is too big to load!", path));
-            }
+        {
+            throw new ArgumentException(String.Format("{0} is too big to load!", path));
+        }
 
-            FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, true);
+        FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, true);
 
-            // We still pass null for the last parameter because
-            // the state variable is visible to the continuation delegate.
-            Task<int> task = Task<int>.Factory.FromAsync(
-                    fs.BeginRead, fs.EndRead, data, 0, data.Length, null);
+        // We still pass null for the last parameter because
+        // the state variable is visible to the continuation delegate.
+        Task<int> task = Task<int>.Factory.FromAsync(
+                fs.BeginRead, fs.EndRead, data, 0, data.Length, null);
 
-            return task.ContinueWith((antecedent) =>
-            {
-                fs.Close();
+        return task.ContinueWith((antecedent) =>
+        {
+            fs.Close();
 
                 // If we did not receive the entire file, the end of the
                 // data buffer will contain garbage.
                 if (antecedent.Result < data.Length)
-                    Array.Resize(ref data, antecedent.Result);
+                Array.Resize(ref data, antecedent.Result);
 
                 // Will be returned in the Result property of the Task<string>
                 // at some future point after the asynchronous file I/O operation completes.
                 return new UTF8Encoding().GetString(data);
-            });
-        }
-
-        string ProcessFileData(string data)
-        {
-
-            string s = data.Substring(0, 80);
-            Console.WriteLine(s);
-            return s;
-        }
-
-        string CompareFileData(string s)
-        {
-            return "compare results";
-        }
-        //</snippet11>
+        });
     }
+
+    string ProcessFileData(string data)
+    {
+
+        string s = data.Substring(0, 80);
+        Console.WriteLine(s);
+        return s;
+    }
+
+    string CompareFileData(string s)
+    {
+        return "compare results";
+    }
+    //</snippet11>
+}

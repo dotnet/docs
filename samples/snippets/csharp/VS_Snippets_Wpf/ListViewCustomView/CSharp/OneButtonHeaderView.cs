@@ -1,15 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
 using System.Windows;
+using System.Windows.Automation.Peers;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Data;
-using System.Globalization;
-using System.ComponentModel;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using System.Xml;
-using System.Windows.Automation.Peers;
-using System.Collections.Generic;
 
 namespace SDKSample
 {
@@ -18,26 +18,26 @@ namespace SDKSample
     {
         protected override IViewAutomationPeer GetAutomationPeer(ListView parent)
         {
-            return new OneButtonHeaderViewAutomationPeer( this, parent );
+            return new OneButtonHeaderViewAutomationPeer(this, parent);
         }
-    //</SnippetIVAPCreate>
+        //</SnippetIVAPCreate>
 
         protected override object DefaultStyleKey
         {
-          get
-          {
-            return new ComponentResourceKey(this.GetType(),
-                             "OneButtonHeaderViewDSK");
-          }
+            get
+            {
+                return new ComponentResourceKey(this.GetType(),
+                                 "OneButtonHeaderViewDSK");
+            }
         }
 
         protected override object ItemContainerDefaultStyleKey
         {
-          get
-          {
-            return new ComponentResourceKey(this.GetType(),
-                            "OneButtonHeaderViewItemDSK");
-          }
+            get
+            {
+                return new ComponentResourceKey(this.GetType(),
+                                "OneButtonHeaderViewItemDSK");
+            }
         }
     }
 

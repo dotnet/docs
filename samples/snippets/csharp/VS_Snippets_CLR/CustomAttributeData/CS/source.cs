@@ -1,11 +1,11 @@
 ﻿//<Snippet1>
 using System;
-using System.Reflection;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Reflection;
 
 // The example attribute is applied to the assembly.
-[assembly:Example(ExampleKind.ThirdKind, Note="This is a note on the assembly.")]
+[assembly: Example(ExampleKind.ThirdKind, Note = "This is a note on the assembly.")]
 
 // An enumeration used by the ExampleAttribute class.
 public enum ExampleKind
@@ -37,14 +37,14 @@ public class ExampleAttribute : Attribute
         kindValue = initKind;
         arrayStrings = initStrings;
     }
-    public ExampleAttribute(ExampleKind initKind) : this(initKind, null) {}
-    public ExampleAttribute() : this(ExampleKind.FirstKind, null) {}
+    public ExampleAttribute(ExampleKind initKind) : this(initKind, null) { }
+    public ExampleAttribute() : this(ExampleKind.FirstKind, null) { }
 
     // Properties. The Note and Numbers properties must be read/write, so they
     // can be used as named parameters.
     //
-    public ExampleKind Kind { get { return kindValue; }}
-    public string[] Strings { get { return arrayStrings; }}
+    public ExampleKind Kind { get { return kindValue; } }
+    public string[] Strings { get { return arrayStrings; } }
     public string Note
     {
         get { return noteValue; }
@@ -63,7 +63,7 @@ public class ExampleAttribute : Attribute
          new string[] { "String array argument, line 1",
                         "String array argument, line 2",
                         "String array argument, line 3" },
-         Note="This is a note on the class.",
+         Note = "This is a note on the class.",
          Numbers = new int[] { 53, 57, 59 })]
 public class Test
 {
@@ -71,7 +71,7 @@ public class Test
     // parameterless constructor and supplying a named argument.
     // The attribute is also applied to the method parameter.
     //
-    [Example(Note="This is a note on a method.")]
+    [Example(Note = "This is a note on a method.")]
     public void TestMethod([Example] object arg) { }
 
     // Main() gets objects representing the assembly, the test
@@ -98,21 +98,21 @@ public class Test
     private static void ShowAttributeData(
         IList<CustomAttributeData> attributes)
     {
-        foreach( CustomAttributeData cad in attributes )
+        foreach (CustomAttributeData cad in attributes)
         {
             Console.WriteLine("   {0}", cad);
             Console.WriteLine("      Constructor: '{0}'", cad.Constructor);
 
             Console.WriteLine("      Constructor arguments:");
-            foreach( CustomAttributeTypedArgument cata
-                in cad.ConstructorArguments )
+            foreach (CustomAttributeTypedArgument cata
+                in cad.ConstructorArguments)
             {
                 ShowValueOrArray(cata);
             }
 
             Console.WriteLine("      Named arguments:");
-            foreach( CustomAttributeNamedArgument cana
-                in cad.NamedArguments )
+            foreach (CustomAttributeNamedArgument cana
+                in cad.NamedArguments)
             {
                 Console.WriteLine("         MemberInfo: '{0}'",
                     cana.MemberInfo);
@@ -128,7 +128,7 @@ public class Test
             Console.WriteLine("         Array of '{0}':", cata.ArgumentType);
 
             foreach (CustomAttributeTypedArgument cataElement in
-                (ReadOnlyCollection<CustomAttributeTypedArgument>) cata.Value)
+                (ReadOnlyCollection<CustomAttributeTypedArgument>)cata.Value)
             {
                 Console.WriteLine("             Type: '{0}'  Value: '{1}'",
                     cataElement.ArgumentType, cataElement.Value);

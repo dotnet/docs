@@ -1,10 +1,10 @@
 ﻿Imports System.ComponentModel
 Imports System.Windows
 Imports System.Windows.Controls
+Imports System.Windows.Data
 Imports System.Windows.Documents
 Imports System.Windows.Navigation
 Imports System.Windows.Shapes
-Imports System.Windows.Data
 
 Partial Public Class Window1
     Inherits Window

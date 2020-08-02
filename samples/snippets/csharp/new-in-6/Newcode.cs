@@ -1,13 +1,13 @@
 ﻿// <UsingStaticMath>
-using static System.Math;
-// </UsingStaticMath>
-// <UsingStatic>
-using static System.String;
 // </UsingStatic>
 using System;
 using System.Collections.Generic;
 // <usingStaticLinq>
 using static System.Linq.Enumerable;
+using static System.Math;
+// </UsingStaticMath>
+// <UsingStatic>
+using static System.String;
 // </usingStaticLinq>
 
 namespace NewStyle
@@ -28,7 +28,7 @@ namespace NewStyle
 
         // <ReadOnlyAutoProperty>
         public string FirstName { get; }
-        public string LastName { get;  }
+        public string LastName { get; }
         // </ReadOnlyAutoProperty>
 
         // <Initialization>

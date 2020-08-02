@@ -39,31 +39,31 @@ namespace n1
 
     class Sample
     {
-    //<Snippet2>
-    // Contravariant delegate.
-    public delegate void DContravariant<in A>(A argument);
+        //<Snippet2>
+        // Contravariant delegate.
+        public delegate void DContravariant<in A>(A argument);
 
-    // Methods that match the delegate signature.
-    public static void SampleControl(Control control)
-    { }
-    public static void SampleButton(Button button)
-    { }
+        // Methods that match the delegate signature.
+        public static void SampleControl(Control control)
+        { }
+        public static void SampleButton(Button button)
+        { }
 
-    public void Test()
-    {
+        public void Test()
+        {
 
-        // Instantiating the delegates with the methods.
-        DContravariant<Control> dControl = SampleControl;
-        DContravariant<Button> dButton = SampleButton;
+            // Instantiating the delegates with the methods.
+            DContravariant<Control> dControl = SampleControl;
+            DContravariant<Button> dButton = SampleButton;
 
-        // You can assign dControl to dButton
-        // because the DContravariant delegate is contravariant.
-        dButton = dControl;
+            // You can assign dControl to dButton
+            // because the DContravariant delegate is contravariant.
+            dButton = dControl;
 
-        // Invoke the delegate.
-        dButton(new Button());
-    }
-    //</Snippet2>
+            // Invoke the delegate.
+            dButton(new Button());
+        }
+        //</Snippet2>
     }
 }
 
@@ -95,30 +95,30 @@ namespace n2
 
     class Sample
     {
-    //<Snippet4>
-    // Covariant delegate.
-    public delegate R DCovariant<out R>();
+        //<Snippet4>
+        // Covariant delegate.
+        public delegate R DCovariant<out R>();
 
-    // Methods that match the delegate signature.
-    public static Control SampleControl()
-    { return new Control(); }
+        // Methods that match the delegate signature.
+        public static Control SampleControl()
+        { return new Control(); }
 
-    public static Button SampleButton()
-    { return new Button(); }
+        public static Button SampleButton()
+        { return new Button(); }
 
-    public void Test()
-    {
-        // Instantiate the delegates with the methods.
-        DCovariant<Control> dControl = SampleControl;
-        DCovariant<Button> dButton = SampleButton;
+        public void Test()
+        {
+            // Instantiate the delegates with the methods.
+            DCovariant<Control> dControl = SampleControl;
+            DCovariant<Button> dButton = SampleButton;
 
-        // You can assign dButton to dControl
-        // because the DCovariant delegate is covariant.
-        dControl = dButton;
+            // You can assign dButton to dControl
+            // because the DCovariant delegate is covariant.
+            dControl = dButton;
 
-        // Invoke the delegate.
-        dControl();
-    }
-    //</Snippet4>
+            // Invoke the delegate.
+            dControl();
+        }
+        //</Snippet4>
     }
 }

@@ -1,7 +1,7 @@
-﻿ '<snippet0>
+﻿'<snippet0>
 Imports System.Drawing
-Imports System.IO
 Imports System.Drawing.Printing
+Imports System.IO
 Imports System.Windows.Forms
 
 
@@ -10,20 +10,20 @@ Class Form1
     Inherits Form
 
     Private WithEvents printPreviewButton As Button
-    
+
     '<snippet1>
     Private printPreviewDialog1 As New PrintPreviewDialog()
     Private WithEvents printDocument1 As New PrintDocument()
-    
+
     ' Declare a string to hold the entire document contents.
     Private documentContents As String
-    
+
     ' Declare a variable to hold the portion of the document that
     ' is not printed.
     Private stringToPrint As String
     '</snippet1>
 
-    Public Sub New() 
+    Public Sub New()
         Me.printPreviewButton = New System.Windows.Forms.Button()
         Me.printPreviewButton.Location = New System.Drawing.Point(12, 12)
         Me.printPreviewButton.Size = New System.Drawing.Size(125, 23)
@@ -32,9 +32,9 @@ Class Form1
         Me.Controls.Add(Me.printPreviewButton)
 
     End Sub
-    
+
     '<snippet2>
-    Private Sub ReadDocument() 
+    Private Sub ReadDocument()
         Dim docName As String = "testPage.txt"
         Dim docPath As String = "c:\"
         printDocument1.DocumentName = docName
@@ -50,7 +50,7 @@ Class Form1
             stream.Dispose()
         End Try
         stringToPrint = documentContents
-    
+
     End Sub
     '</snippet2>
 
@@ -96,12 +96,12 @@ Class Form1
     End Sub
     '</snippet4>
 
-    <STAThread()>  _
-    Shared Sub Main() 
+    <STAThread()> _
+    Shared Sub Main()
         Application.EnableVisualStyles()
         Application.SetCompatibleTextRenderingDefault(False)
         Application.Run(New Form1())
-    
+
     End Sub
-End Class 
+End Class
 '</snippet0>

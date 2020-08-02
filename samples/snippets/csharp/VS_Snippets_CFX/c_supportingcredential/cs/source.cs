@@ -1,15 +1,15 @@
 ﻿//<snippet0>
-using System.Security.Permissions;
 using System;
 using System.Collections.Generic;
-using System.ServiceModel;
-using System.ServiceModel.Description;
-using System.IO;
 using System.IdentityModel.Claims;
-using System.ServiceModel.Channels;
-using System.ServiceModel.Security.Tokens;
-using System.IdentityModel.Tokens;
 using System.IdentityModel.Selectors;
+using System.IdentityModel.Tokens;
+using System.IO;
+using System.Security.Permissions;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
+using System.ServiceModel.Security.Tokens;
 //</snippet0>
 
 [assembly: SecurityPermission(

@@ -1,8 +1,8 @@
-﻿Imports System.Windows
+﻿Imports System.IO
+Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Input
 Imports System.Windows.Media
-Imports System.IO
 
 ' Interaction logic for Window1.xaml
 Namespace SDKSamples
@@ -129,7 +129,7 @@ Namespace SDKSamples
                 Mouse.OverrideCursor = DisplayArea.Cursor
             End If
         End Sub
-      '</SnippetCursorsSampleOverrideCursor>
+        '</SnippetCursorsSampleOverrideCursor>
     End Class
 End Namespace
 

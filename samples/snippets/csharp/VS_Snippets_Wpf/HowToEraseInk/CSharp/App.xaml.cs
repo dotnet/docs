@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Windows;
-using System.Data;
-using System.Xml;
 using System.Configuration;
+using System.Data;
+using System.Windows;
+using System.Xml;
 
-    /// <summary>
-    /// Interaction logic for App.xaml
-    /// </summary>
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
 
-    public partial class App : Application
+public partial class App : Application
+{
+
+    public App()
     {
-
-        public App()
-        {
-            InitializeComponent();
-        }
+        InitializeComponent();
     }
+}

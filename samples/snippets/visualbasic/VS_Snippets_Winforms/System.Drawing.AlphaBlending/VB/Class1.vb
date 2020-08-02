@@ -1,17 +1,17 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports System.Windows.Forms
-Imports System.Drawing
 Imports System.Collections
-Imports System.Xml
+Imports System.Drawing
 Imports System.Drawing.Drawing2D
 Imports System.Drawing.Imaging
+Imports System.Windows.Forms
+Imports System.Xml
 
 Public Class SystemDrawingAlphaBlending
 
-' 8f2508af-f495-4223-b5cc-646cbbb520eb
-' How to: Draw Opaque and Semitransparent Lines
+    ' 8f2508af-f495-4223-b5cc-646cbbb520eb
+    ' How to: Draw Opaque and Semitransparent Lines
     Public Sub Method11(ByVal e As PaintEventArgs)
         ' <snippet11>
         Dim bitmap As New Bitmap("Texture1.jpg")
@@ -28,8 +28,8 @@ Public Class SystemDrawingAlphaBlending
 
         ' </snippet11>
     End Sub
-' a27121e6-f7e9-4c09-84e2-f05aa9d2a1bb
-' How to: Use a Color Matrix to Set Alpha Values in Images
+    ' a27121e6-f7e9-4c09-84e2-f05aa9d2a1bb
+    ' How to: Use a Color Matrix to Set Alpha Values in Images
     Public Sub Method21(ByVal e As PaintEventArgs)
         ' <snippet21>
         ' Create the Bitmap object and load it with the texture image.
@@ -78,8 +78,8 @@ Public Class SystemDrawingAlphaBlending
 
         ' </snippet21>
     End Sub
-' a4f6f6b8-3bc8-440a-84af-d62ef0f8ff40
-' How to: Draw with Opaque and Semitransparent Brushes
+    ' a4f6f6b8-3bc8-440a-84af-d62ef0f8ff40
+    ' How to: Draw with Opaque and Semitransparent Brushes
     Public Sub Method31(ByVal e As PaintEventArgs)
         ' <snippet31>
         Dim bitmap As New Bitmap("Texture1.jpg")
@@ -96,8 +96,8 @@ Public Class SystemDrawingAlphaBlending
 
         ' </snippet31>
     End Sub
-' f331df2d-b395-4b0a-95be-24fec8c9bbb5
-' How to: Use Compositing Mode to Control Alpha Blending
+    ' f331df2d-b395-4b0a-95be-24fec8c9bbb5
+    ' How to: Use Compositing Mode to Control Alpha Blending
     Public Sub Method41()
         ' Create a blank bitmap.
         Dim myBitmap As New Bitmap(180, 100)

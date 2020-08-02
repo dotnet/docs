@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Data.Linq;
+using System.Linq;
 using System.Text;
 using System.Xml.Linq;
-using System.Data.Linq;
 
 namespace LINQGettingStarted_1
 {
@@ -112,7 +112,7 @@ namespace LINQGettingStarted_1
     class Student
     {
         public string First { get; set; }
-        public string Last {get; set;}
+        public string Last { get; set; }
         public int ID { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
@@ -166,8 +166,8 @@ namespace LINQGettingStarted_1
 
             // Create the query.
             var peopleInSeattle = (from student in students
-                        where student.City == "Seattle"
-                        select student.Last)
+                                   where student.City == "Seattle"
+                                   select student.Last)
                         .Concat(from teacher in teachers
                                 where teacher.City == "Seattle"
                                 select teacher.Last);
@@ -253,7 +253,7 @@ namespace LINQGettingStarted_1
             double[] radii = { 1, 2, 3 };
 
             // LINQ query using method syntax.
-            IEnumerable<string> output = 
+            IEnumerable<string> output =
                 radii.Select(r => $"Area for a circle with a radius of '{r}' = {r * r * Math.PI:F2}");
 
             /*
@@ -267,7 +267,7 @@ namespace LINQGettingStarted_1
             {
                 Console.WriteLine(s);
             }
-                
+
             // Keep the console open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
@@ -556,7 +556,7 @@ namespace LINQGettingStarted_1
         {
             static void Main()
             {
-                int[] numbers = { 5, 10, 8, 3, 6, 12};
+                int[] numbers = { 5, 10, 8, 3, 6, 12 };
 
                 //Query syntax:
                 IEnumerable<int> numQuery1 =
@@ -596,7 +596,7 @@ namespace LINQGettingStarted_1
         class NamePhone
         {
             public string Name { get; set; }
-            public string Phone{ get; set; }
+            public string Phone { get; set; }
         }
         //</snippet31>
 
@@ -606,7 +606,7 @@ namespace LINQGettingStarted_1
             {
                 public string City { get; set; }
                 public string Name { get; set; }
-                public string Phone {get; set; }
+                public string Phone { get; set; }
             }
 
             public class Distributor
@@ -625,34 +625,34 @@ namespace LINQGettingStarted_1
                 //queryAllCustomers is an IEnumerable<Customer>
                 var queryAllCustomers = from cust in customers
                                         select cust;
-              //</snippet23>
+                //</snippet23>
 
-              //<snippet24>
-              var queryLondonCustomers = from cust in customers
-                                         where cust.City == "London"
-                                         select cust;
-              //</snippet24>
+                //<snippet24>
+                var queryLondonCustomers = from cust in customers
+                                           where cust.City == "London"
+                                           select cust;
+                //</snippet24>
 
-              IEnumerable<Customer> queryLondonCustomers2 =
-                                        from cust in customers
-              //<snippet25>
-                  where cust.City == "London" && cust.Name == "Devon"
-              //</snippet25>
-              //<snippet26>
-                  where cust.City == "London" || cust.City == "Paris"
-              //</snippet26>
-              select cust;
+                IEnumerable<Customer> queryLondonCustomers2 =
+                                          from cust in customers
+                                            //<snippet25>
+                                        where cust.City == "London" && cust.Name == "Devon"
+                                        //</snippet25>
+                                        //<snippet26>
+                                        where cust.City == "London" || cust.City == "Paris"
+                                        //</snippet26>
+                                        select cust;
 
-              //<snippet27>
-              var queryLondonCustomers3 =
-                  from cust in customers
-                  where cust.City == "London"
-                  orderby cust.Name ascending
-                  select cust;
-              //</snippet27>
+                //<snippet27>
+                var queryLondonCustomers3 =
+                    from cust in customers
+                    where cust.City == "London"
+                    orderby cust.Name ascending
+                    select cust;
+                //</snippet27>
 
-               //<snippet28>
-              // queryCustomersByCity is an IEnumerable<IGrouping<string, Customer>>
+                //<snippet28>
+                // queryCustomersByCity is an IEnumerable<IGrouping<string, Customer>>
                 var queryCustomersByCity =
                     from cust in customers
                     group cust by cust.City;
@@ -668,7 +668,7 @@ namespace LINQGettingStarted_1
                 }
                 //</snippet28>
 
-                 //<snippet29>
+                //<snippet29>
                 // custQuery is an IEnumerable<IGrouping<string, Customer>>
                 var custQuery =
                     from cust in customers
@@ -676,9 +676,9 @@ namespace LINQGettingStarted_1
                     where custGroup.Count() > 2
                     orderby custGroup.Key
                     select custGroup;
-                 //</snippet29>
+                //</snippet29>
 
-                 //<snippet30>
+                //<snippet30>
                 // queryNamesInLondon is an IEnumerable<String>
                 var queryNamesInLondon =
                     from cust in customers
@@ -687,17 +687,17 @@ namespace LINQGettingStarted_1
                     select cust.Name;
                 //</snippet30>
 
-              //number 31 is the NamePhone struct before this class
-             //<snippet32>
+                //number 31 is the NamePhone struct before this class
+                //<snippet32>
                 // var could also be used here
                 IEnumerable<NamePhone> queryLondonNamesPhones =
                     from cust in customers
                     where cust.City == "London"
                     orderby cust.Name ascending
-                    select new NamePhone {Name = cust.Name, Phone = cust.Phone};
-            //</snippet32>
+                    select new NamePhone { Name = cust.Name, Phone = cust.Phone };
+                //</snippet32>
 
-             //<snippet33>
+                //<snippet33>
                 // var must be used here because of the anonymous type
                 var queryNamesPhones =
                     from cust in customers
@@ -709,15 +709,15 @@ namespace LINQGettingStarted_1
                 {
                     Console.WriteLine("{0} {1}", item.Name, item.Phone);
                 }
-            //</snippet33>
+                //</snippet33>
 
-            //<snippet36>
+                //<snippet36>
                 var innerJoinQuery =
                     from cust in customers
                     join dist in distributors on cust.City equals dist.City
                     select new { CustomerName = cust.Name, DistributorName = dist.Name };
-            //</snippet36>
-           }
+                //</snippet36>
+            }
         }
 
         class LINQAndGenericTypes
@@ -727,7 +727,7 @@ namespace LINQGettingStarted_1
                 public string City { get; set; }
                 public string LastName { get; set; }
                 public string FirstName { get; set; }
-                public string Phone {get; set;}
+                public string Phone { get; set; }
             }
             static List<Customer> customers = new List<Customer>();
 
@@ -751,7 +751,7 @@ namespace LINQGettingStarted_1
                     where cust.City == "London"
                     select cust;
 
-                foreach(var customer in customerQuery2)
+                foreach (var customer in customerQuery2)
                 {
                     Console.WriteLine(customer.LastName + ", " + customer.FirstName);
                 }

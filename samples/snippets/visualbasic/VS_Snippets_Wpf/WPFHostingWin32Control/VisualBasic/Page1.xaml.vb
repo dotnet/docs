@@ -1,9 +1,9 @@
-﻿Imports System.Text
+﻿Imports System.Runtime.InteropServices
+Imports System.Text
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Navigation
 Imports System.Windows.Interop
-Imports System.Runtime.InteropServices
+Imports System.Windows.Navigation
 
 Namespace WPF_Hosting_Win32_Control
     '<SnippetHostWindowClass>

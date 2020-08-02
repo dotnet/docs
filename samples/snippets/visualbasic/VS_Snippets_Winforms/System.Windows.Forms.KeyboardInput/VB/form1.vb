@@ -9,7 +9,7 @@ Imports System.Windows.Forms
 
 
 Namespace KeyboardInput
-<System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _ 
+    <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _
     Class Form1
         Inherits Form
 
@@ -57,13 +57,13 @@ Namespace KeyboardInput
                         e.KeyChar.ToString() + "' replaced by 'a'."))
                     e.KeyChar = ChrW(97)
                     e.Handled = False
-                 '</Snippet7>
+                    '</Snippet7>
             End Select
         End Sub
         ' </Snippet5>
     End Class
 
-<System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _ 
+    <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.Demand, Name:="FullTrust")> _
     Public Class CustomTextBox
         Inherits TextBox
 

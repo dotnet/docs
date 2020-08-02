@@ -20,10 +20,10 @@
 
 // <Snippet0>
 using System;
-using System.Text;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Collections.Generic;
+using System.Text;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 

@@ -1,26 +1,26 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Documents;
-using System.Threading;
+using System.Windows.Media;
 
 namespace Table_Demo
 {
-	public class MyApp : System.Windows.Application
-	{
-            // System.Windows.Documents.TextFlow tf1;
+    public class MyApp : System.Windows.Application
+    {
+        // System.Windows.Documents.TextFlow tf1;
         FlowDocument flowDoc;
-        	System.Windows.Documents.Table table1;
-		    System.Windows.Window mainWindow;
+        System.Windows.Documents.Table table1;
+        System.Windows.Window mainWindow;
 
-		protected override void OnStartup(StartupEventArgs e)
-		{
-			base.OnStartup(e);
-			CreateAndShowMainWindow();
-		}
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
+        }
 
-		private void CreateAndShowMainWindow()
+        private void CreateAndShowMainWindow()
         {
             // Create the application's main window
             mainWindow = new System.Windows.Window();
@@ -47,7 +47,7 @@ namespace Table_Demo
                 table1.Columns.Add(new TableColumn());
 
                 // Set alternating background colors for the middle colums.
-                if(x%2 == 0)
+                if (x % 2 == 0)
                     table1.Columns[x].Background = Brushes.Beige;
                 else
                     table1.Columns[x].Background = Brushes.LightSteelBlue;
@@ -133,15 +133,15 @@ namespace Table_Demo
             mainWindow.Content = flowDoc;
             mainWindow.Show();
         }
-	}
+    }
 
-	internal static class EntryClass
-	{
-		[System.STAThread()]
-		private static void Main ()
-		{
-			MyApp app = new MyApp ();
-			app.Run ();
-		}
-	}
+    internal static class EntryClass
+    {
+        [System.STAThread()]
+        private static void Main()
+        {
+            MyApp app = new MyApp();
+            app.Run();
+        }
+    }
 }

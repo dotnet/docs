@@ -1,13 +1,13 @@
 ﻿//<snippetLinq2SqlProvider>
 using System;
-using System.ComponentModel;
 using System.Collections;
-using System.Linq;
-using System.Reflection;
+using System.ComponentModel;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
 using System.Data.Services;
 using System.Data.Services.Common;
+using System.Linq;
+using System.Reflection;
 
 namespace NorthwindService
 {
@@ -143,7 +143,7 @@ namespace NorthwindService
             // Comment out the following line if you'd prefer a silent failure
             throw new NotSupportedException();
         }
-    #endregion
+        #endregion
         //</snippetIUdatableImplementation>
     }
 }

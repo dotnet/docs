@@ -5,11 +5,11 @@
 'This example uses a delegate to obtain the results of each asynchronous 
 'operation.
 
+Imports System.Collections
+Imports System.Collections.Specialized
 Imports System.Net
 Imports System.Net.Sockets
 Imports System.Threading
-Imports System.Collections.Specialized
-Imports System.Collections
 
 Namespace Examples.AdvancedProgramming.AsynchronousOperations
 

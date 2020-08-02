@@ -1,11 +1,11 @@
 ﻿//<snippet0>
 using System;
 using System.Collections.Generic;
-using System.ServiceModel;
 //<snippet0>
 using System.Security.Permissions;
-using System.ServiceModel.Description;
 using System.Security.Principal;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 
 namespace Client
 {

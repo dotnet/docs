@@ -3,11 +3,11 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security;
 using System.ServiceModel.Security.Tokens;
-using System.Security.Permissions;
 //</snippet1>
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
@@ -15,18 +15,18 @@ namespace Samples
 {
     public sealed class CustomBindingCreator
     {
-	    private CustomBindingCreator(){}
+        private CustomBindingCreator() { }
 
         //<snippet2>
         // This method creates a CustomBinding using a SymmetricSecurityBindingElement.
         // It is largely equivalent to doing the following:
 
-            // WSHttpBinding b = new WSHttpBinding ( SecurityMode.Message );
-            // b.Security.Message.ClientCredentialType = MessageCredentialType.Windows;
-            // b.Security.Message.NegotiateServiceCredential = false;
-            // b.Security.Message.EstablishSecureSession = false;
+        // WSHttpBinding b = new WSHttpBinding ( SecurityMode.Message );
+        // b.Security.Message.ClientCredentialType = MessageCredentialType.Windows;
+        // b.Security.Message.NegotiateServiceCredential = false;
+        // b.Security.Message.EstablishSecureSession = false;
 
-	    // It differs in that it uses MessageProtectionOrder.SignBeforeEncrypt rather
+        // It differs in that it uses MessageProtectionOrder.SignBeforeEncrypt rather
         // than MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature.
         //<snippet3>
         public static Binding CreateCustomBinding()
@@ -46,7 +46,7 @@ namespace Samples
             // Set the algorithm suite to one that uses 128-bit keys.
             ssbe.DefaultAlgorithmSuite = SecurityAlgorithmSuite.Basic128;
 
-               // Set MessageProtectionOrder to SignBeforeEncrypt.
+            // Set MessageProtectionOrder to SignBeforeEncrypt.
             ssbe.MessageProtectionOrder = MessageProtectionOrder.SignBeforeEncrypt;
             // </snippet5>
 
@@ -55,7 +55,7 @@ namespace Samples
             // </snippet6>
 
             // Add the SymmetricSecurityBindingElement to the BindingElementCollection.
-            outputBec.Add ( ssbe );
+            outputBec.Add(ssbe);
             outputBec.Add(new TextMessageEncodingBindingElement());
             outputBec.Add(new HttpTransportBindingElement());
 

@@ -1,16 +1,16 @@
 ﻿
+Imports System.Collections.ObjectModel
+Imports System.IO
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
-Imports System.IO
-Imports System.Collections.ObjectModel
 
 Namespace SDKSample
 
     Class ColorConvertedBitmapExample
         Inherits Page
- 
+
         Public Sub New()
 
 

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Objects;
+using System.Data.Objects.DataClasses;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -11,8 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data.Objects;
-using System.Data.Objects.DataClasses;
 
 namespace WpfApplication1
 {
@@ -35,14 +35,16 @@ namespace WpfApplication1
             var query =
             from customer in customers
             orderby customer.CompanyName
-            select new {
+            select new
+            {
                 customer.LastName,
                 customer.FirstName,
                 customer.CompanyName,
                 customer.Title,
                 customer.EmailAddress,
                 customer.Phone,
-                customer.SalesPerson };
+                customer.SalesPerson
+            };
 
             dataGrid1.ItemsSource = query.ToList();
         }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -6,7 +7,6 @@ using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Collections.ObjectModel;
 
 namespace SDKSample
 {
@@ -71,20 +71,20 @@ namespace SDKSample
 
         public string FirstName
         {
-            get {return _firstName;}
-            set {_firstName = value;}
+            get { return _firstName; }
+            set { _firstName = value; }
         }
 
         public string LastName
         {
-            get {return _lastName;}
-            set {_lastName = value;}
+            get { return _lastName; }
+            set { _lastName = value; }
         }
 
         public string EmployeeNumber
         {
-            get {return _employeeNumber;}
-            set {_employeeNumber = value;}
+            get { return _employeeNumber; }
+            set { _employeeNumber = value; }
         }
 
         public EmployeeInfo(string firstname, string lastname, string empnumber)

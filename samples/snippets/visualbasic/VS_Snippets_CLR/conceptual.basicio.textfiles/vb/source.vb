@@ -1,6 +1,6 @@
-﻿Imports System.IO
+﻿Imports System.Collections.Generic
+Imports System.IO
 Imports System.Text
-Imports System.Collections.Generic
 
 Class WriteTextFiles
 

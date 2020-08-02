@@ -4,22 +4,24 @@ using System.Text;
 
 public class StringWrapper
 {
-   string internalString;
-   StringBuilder internalSB = null;
-   bool useSB = false;
+    string internalString;
+    StringBuilder internalSB = null;
+    bool useSB = false;
 
-   public StringWrapper(StringOperationType type)
-   {
-      if (type == StringOperationType.Normal) {
-         useSB = false;
-      }
-      else {
-         useSB = true;
-         internalSB = new StringBuilder();
-      }
-   }
+    public StringWrapper(StringOperationType type)
+    {
+        if (type == StringOperationType.Normal)
+        {
+            useSB = false;
+        }
+        else
+        {
+            useSB = true;
+            internalSB = new StringBuilder();
+        }
+    }
 
-   // The remaining source code...
+    // The remaining source code...
 }
 
 internal enum StringOperationType { Normal, Dynamic }

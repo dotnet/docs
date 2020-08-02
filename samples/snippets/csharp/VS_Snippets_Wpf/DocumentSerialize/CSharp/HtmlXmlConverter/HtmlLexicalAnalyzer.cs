@@ -9,9 +9,9 @@
 //---------------------------------------------------------------------------
 
 using System;
-using System.IO;
-using System.Diagnostics;
 using System.Collections;
+using System.Diagnostics;
+using System.IO;
 using System.Text;
 
 namespace SdkSample

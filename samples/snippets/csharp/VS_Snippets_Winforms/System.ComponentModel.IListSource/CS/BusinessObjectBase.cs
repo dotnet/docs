@@ -1,9 +1,9 @@
 ﻿// <snippet100>
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Text;
 
 namespace IListSourceCS
 {

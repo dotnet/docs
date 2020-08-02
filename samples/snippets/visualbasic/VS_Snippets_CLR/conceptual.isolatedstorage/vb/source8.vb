@@ -1,8 +1,8 @@
 ﻿'<snippet9>
-Imports System.IO
-Imports System.IO.IsolatedStorage
 Imports System.Collections
 Imports System.Collections.Generic
+Imports System.IO
+Imports System.IO.IsolatedStorage
 
 Public class FindingExistingFilesAndDirectories
     ' These arrayLists hold the directory and file names as they are found.

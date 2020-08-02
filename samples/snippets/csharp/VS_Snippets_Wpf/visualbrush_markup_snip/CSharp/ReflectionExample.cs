@@ -1,13 +1,13 @@
 ﻿// <SnippetGraphicsMMVisualBrushReflectionExampleWholePage>
 using System;
+using System.Collections.ObjectModel;
+using System.IO;
 using System.Windows;
-using System.Windows.Data;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
-using System.IO;
-using System.Collections.ObjectModel;
 using System.Windows.Shapes;
 namespace SDKSample
 {

@@ -42,7 +42,7 @@ namespace cs_mismatch
             // C# overflow in absence of explicit checks.
             int i = Int32.MaxValue;
             int j = 5;
-            if (i+j < 0) Console.WriteLine("Overflow!");
+            if (i + j < 0) Console.WriteLine("Overflow!");
             // This code prints the overflow message.
             // </Snippet5>
         }
@@ -87,8 +87,8 @@ namespace cs_mismatch
     // <Snippet4>
     class C
     {
-    string s1;       // Map to T2.Col1.
-    string s2;       // Map to T2.Col2.
+        string s1;       // Map to T2.Col1.
+        string s2;       // Map to T2.Col2.
 
         void Compare()
         {

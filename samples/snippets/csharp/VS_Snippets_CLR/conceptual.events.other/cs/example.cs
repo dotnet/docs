@@ -25,7 +25,7 @@ namespace EventSample
         //
         public int NumRings
         {
-            get { return nrings;}
+            get { return nrings; }
         }
 
         // The SnoozePressed property indicates whether the snooze
@@ -33,7 +33,7 @@ namespace EventSample
         //
         public bool SnoozePressed
         {
-            get {return snoozePressed;}
+            get { return snoozePressed; }
         }
 
         // The AlarmText property that contains the wake-up message.
@@ -71,8 +71,8 @@ namespace EventSample
         //
         public bool Stop
         {
-            get {return stop;}
-            set {stop = value;}
+            get { return stop; }
+            set { stop = value; }
         }
 
         // The SnoozePressed property indicates whether the snooze
@@ -80,8 +80,8 @@ namespace EventSample
         //
         public bool SnoozePressed
         {
-            get {return snoozePressed;}
-            set {snoozePressed = value;}
+            get { return snoozePressed; }
+            set { snoozePressed = value; }
         }
 
         // The event member that is of type AlarmEventHandler.
@@ -112,7 +112,7 @@ namespace EventSample
         //
         public void Start()
         {
-            for (;;)
+            for (; ; )
             {
                 nrings++;
                 if (stop)
@@ -143,7 +143,7 @@ namespace EventSample
     {
         public void AlarmRang(object sender, AlarmEventArgs e)
         {
-            Console.WriteLine(e.AlarmText +"\n");
+            Console.WriteLine(e.AlarmText + "\n");
 
             if (!(e.SnoozePressed))
             {
@@ -154,7 +154,7 @@ namespace EventSample
                     Console.WriteLine(" Stop Alarm? Enter Q");
                     String input = Console.ReadLine();
 
-                    if (input.Equals("Y") ||input.Equals("y"))
+                    if (input.Equals("Y") || input.Equals("y"))
                     {
                         return;
                     }

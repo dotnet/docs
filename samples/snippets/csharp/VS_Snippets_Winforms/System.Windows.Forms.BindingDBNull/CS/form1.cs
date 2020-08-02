@@ -4,18 +4,18 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace DBNullCS
 {
-	public class Form1 : Form
-	{
-		public Form1()
-		{		
-			this.Load += new EventHandler(Form1_Load);
+    public class Form1 : Form
+    {
+        public Form1()
+        {
+            this.Load += new EventHandler(Form1_Load);
         }
 
         // The controls and components we need for the form.
@@ -28,8 +28,8 @@ namespace DBNullCS
         // Data table to hold the database data.
         DataTable employeeTable = new DataTable();
 
-		void Form1_Load(object sender, EventArgs e)
-		{
+        void Form1_Load(object sender, EventArgs e)
+        {
             // Basic form setup.
             this.pictureBox1 = new PictureBox();
             this.bindingSource1 = new BindingSource();
@@ -56,10 +56,10 @@ namespace DBNullCS
             // Create the connection string and populate the data table
             // with data.
             string connectionString = "Integrated Security=SSPI;" +
-				"Persist Security Info = False;Initial Catalog=Northwind;" +
-				"Data Source = localhost";
-			SqlConnection connection = new SqlConnection();
-			connection.ConnectionString = connectionString;
+                "Persist Security Info = False;Initial Catalog=Northwind;" +
+                "Data Source = localhost";
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = connectionString;
             SqlDataAdapter employeeAdapter =
                 new SqlDataAdapter(new SqlCommand("Select * from Employees", connection));
             connection.Open();
@@ -68,7 +68,7 @@ namespace DBNullCS
             // Set the DataSource property of the BindingSource to the employee table.
             bindingSource1.DataSource = employeeTable;
 
-           // Set up the binding to the ReportsTo column.
+            // Set up the binding to the ReportsTo column.
             Binding reportsToBinding = textBox2.DataBindings.Add("Text", bindingSource1,
                 "ReportsTo", true);
 
@@ -82,7 +82,7 @@ namespace DBNullCS
 
             // Set up the remaining binding.
             textBox1.DataBindings.Add("Text", bindingSource1, "LastName", true);
-		}
+        }
 
         // Move through the data when the button is clicked.
         private void button1_Click(object sender, EventArgs e)
@@ -90,12 +90,12 @@ namespace DBNullCS
             bindingSource1.MoveNext();
         }
 
-		[STAThread]
-		static void Main()
-		{
-			Application.EnableVisualStyles();
-			Application.Run(new Form1());
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.Run(new Form1());
         }
-	}
+    }
 }
 // </snippet1>

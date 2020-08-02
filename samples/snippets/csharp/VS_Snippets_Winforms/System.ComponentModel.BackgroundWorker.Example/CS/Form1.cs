@@ -73,7 +73,7 @@ namespace BackgroundWorkerExample
         // are chosen randomly.
         private int TimeConsumingOperation(
             BackgroundWorker bw,
-            int sleepPeriod )
+            int sleepPeriod)
         {
             int result = 0;
 
@@ -87,34 +87,34 @@ namespace BackgroundWorkerExample
                 {
                     // Raise an exception.
                     case 0:
-                    {
-                        throw new Exception("An error condition occurred.");
-                        break;
-                    }
+                        {
+                            throw new Exception("An error condition occurred.");
+                            break;
+                        }
 
                     // Sleep for the number of milliseconds
                     // specified by the sleepPeriod parameter.
                     case 1:
-                    {
-                        Thread.Sleep(sleepPeriod);
-                        break;
-                    }
+                        {
+                            Thread.Sleep(sleepPeriod);
+                            break;
+                        }
 
                     // Exit and return normally.
                     case 2:
-                    {
-                        result = 23;
-                        exit = true;
-                        break;
-                    }
+                        {
+                            result = 23;
+                            exit = true;
+                            break;
+                        }
 
                     default:
-                    {
-                        break;
-                    }
+                        {
+                            break;
+                        }
                 }
 
-                if( exit )
+                if (exit)
                 {
                     break;
                 }

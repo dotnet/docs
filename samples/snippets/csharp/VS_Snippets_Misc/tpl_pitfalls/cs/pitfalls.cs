@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pitfalls_cs
 {
@@ -65,13 +65,13 @@ namespace pitfalls_cs
 
         private void Urg()
         {
-        string path = @"C\";
-        //<snippet04>
-        FileStream fs = File.OpenWrite(path);
-        byte[] bytes = new Byte[10000000];
-        // ...
-        Parallel.For(0, bytes.Length, (i) => fs.WriteByte(bytes[i]));
-        //</snippet04>
+            string path = @"C\";
+            //<snippet04>
+            FileStream fs = File.OpenWrite(path);
+            byte[] bytes = new Byte[10000000];
+            // ...
+            Parallel.For(0, bytes.Length, (i) => fs.WriteByte(bytes[i]));
+            //</snippet04>
         }
     }
 }

@@ -47,7 +47,7 @@ namespace CDSCountdownEvent
                 {
                     // Dynamically increment signal count.
                     e.AddCount();
-                    ThreadPool.QueueUserWorkItem(delegate(object state)
+                    ThreadPool.QueueUserWorkItem(delegate (object state)
                      {
                          try
                          {
@@ -148,7 +148,7 @@ namespace CDSCountdownEvent
                 DataWithToken item = new DataWithToken(element, cts.Token);
                 // Dynamically increment signal count.
                 e.AddCount();
-                ThreadPool.QueueUserWorkItem(delegate(object state)
+                ThreadPool.QueueUserWorkItem(delegate (object state)
                  {
                      ProcessData(state);
                      if (!cts.Token.IsCancellationRequested)
@@ -178,7 +178,8 @@ namespace CDSCountdownEvent
                     throw; //We don't know who canceled us!
                 }
             }
-            finally {
+            finally
+            {
                 e.Dispose();
                 cts.Dispose();
             }

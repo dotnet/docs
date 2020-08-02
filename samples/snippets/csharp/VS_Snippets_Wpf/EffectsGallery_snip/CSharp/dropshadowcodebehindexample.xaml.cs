@@ -2,15 +2,15 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Effects;
 
 namespace SDKSample
 {
 
     public partial class DropShadowExample : Page
-	{
+    {
 
         // Add Blur effect.
         void OnClickDropShadowButton(object sender, RoutedEventArgs args)

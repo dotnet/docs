@@ -1,8 +1,8 @@
 ﻿// <snippet1>
 using System;
 using System.IO;
-using System.Text;
 using System.Security.Cryptography;
+using System.Text;
 
 public class MemoryProtectionSample
 {
@@ -81,7 +81,7 @@ public class MemoryProtectionSample
         }
     }
 
-    public static void EncryptInMemoryData(byte[] Buffer, MemoryProtectionScope Scope )
+    public static void EncryptInMemoryData(byte[] Buffer, MemoryProtectionScope Scope)
     {
         if (Buffer == null)
             throw new ArgumentNullException("Buffer");
@@ -150,7 +150,7 @@ public class MemoryProtectionSample
     {
         if (S == null)
             throw new ArgumentNullException("S");
-        if (Length <= 0 )
+        if (Length <= 0)
             throw new ArgumentException("Length");
         if (Entropy == null)
             throw new ArgumentNullException("Entropy");

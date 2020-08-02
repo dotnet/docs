@@ -21,16 +21,16 @@
  *****************************************************************************/
 
 using System;
-using System.Windows;
-using System.Windows.Automation;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Threading;
-using System.Collections.Generic;
 using System.Text;
-using System.ComponentModel;
+using System.Threading;
+using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Forms;
-using System.Collections;
 
 namespace UIAAutomationID_snip
 {
@@ -304,8 +304,8 @@ namespace UIAAutomationID_snip
         //        System.Windows.Threading.DispatcherPriority.Background,
         //        new focusHandlerDelegate(InitializeFocusTracker));
 
-            //AutomationFocusChangedEventHandler focusChangeListener = new AutomationFocusChangedEventHandler(OnFocusChange);
-            //Automation.AddAutomationFocusChangedEventHandler(focusChangeListener);
+        //AutomationFocusChangedEventHandler focusChangeListener = new AutomationFocusChangedEventHandler(OnFocusChange);
+        //Automation.AddAutomationFocusChangedEventHandler(focusChangeListener);
         //}
 
         private void RegisterAutomationFocusChangeEventListener()
@@ -359,7 +359,7 @@ namespace UIAAutomationID_snip
         ///--------------------------------------------------------------------
         public void CreateUIAWorker()
         {
-           uiautoWorker = new FindByAutomationID(targetApp);
+            uiautoWorker = new FindByAutomationID(targetApp);
         }
         private FindByAutomationID uiautoWorker;
 
@@ -394,7 +394,7 @@ namespace UIAAutomationID_snip
         private void Playback(AutomationElement targetApp)
         {
             AutomationElement element;
-            foreach(ElementStore storedItem in uiautoWorker.elementQueue)
+            foreach (ElementStore storedItem in uiautoWorker.elementQueue)
             {
                 PropertyCondition propertyCondition =
                     new PropertyCondition(
@@ -406,7 +406,7 @@ namespace UIAAutomationID_snip
                 // child menu item that had been invoked the parent menu item
                 // would have to be expanded.
                 element = targetApp.FindFirst(TreeScope.Descendants, propertyCondition);
-                if(element == null)
+                if (element == null)
                 {
                     // Control not available, unable to continue.
                     // TODO: Handle error condition.
@@ -437,7 +437,7 @@ namespace UIAAutomationID_snip
         }
         // </SnippetPlayback>
 
-       //private void OnFocusChange(object src, PropertyChangedEventArgs e)
+        //private void OnFocusChange(object src, PropertyChangedEventArgs e)
         //{
         //    FocusHandler focusedElement = src as FocusHandler;
         //    ElementStore focusChange = new ElementStore();
@@ -484,17 +484,17 @@ namespace UIAAutomationID_snip
             try
             {
                 // Start target application.
-ProcessStartInfo startInfo =
-    new ProcessStartInfo(System.Windows.Forms.Application.StartupPath + "\\target.exe");
-            startInfo.WindowStyle = ProcessWindowStyle.Normal;
-            startInfo.UseShellExecute = true;
+                ProcessStartInfo startInfo =
+                    new ProcessStartInfo(System.Windows.Forms.Application.StartupPath + "\\target.exe");
+                startInfo.WindowStyle = ProcessWindowStyle.Normal;
+                startInfo.UseShellExecute = true;
 
-            Process p = Process.Start(startInfo);
+                Process p = Process.Start(startInfo);
 
                 // Give the target application some time to startup.
                 // For Win32 applications, WaitForInputIdle can be used instead.
                 // Another alternative is to listen for WindowOpened events.
-            Thread.Sleep(3000);
+                Thread.Sleep(3000);
 
                 // Return the automation element
                 IntPtr windowHandle = p.MainWindowHandle;

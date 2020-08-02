@@ -33,7 +33,7 @@ namespace Microsoft.Samples.BrushExamples
 
             Rectangle redRectangle = new Rectangle();
             redRectangle.Width = 25;
-            redRectangle.Height =25;
+            redRectangle.Height = 25;
             redRectangle.Fill = Brushes.Red;
             redRectangle.Margin = new Thickness(2);
             myStackPanel.Children.Add(redRectangle);
@@ -58,7 +58,7 @@ namespace Microsoft.Samples.BrushExamples
             myRectangle.Width = 150;
             myRectangle.Height = 150;
             myRectangle.Stroke = Brushes.Black;
-            myRectangle.Margin = new Thickness(5,0,5,0);
+            myRectangle.Margin = new Thickness(5, 0, 5, 0);
 
             // Use myVisualBrush to paint myRectangle.
             myRectangle.Fill = myVisualBrush;

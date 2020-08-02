@@ -10,7 +10,7 @@ public static class Wrapper
                                       int count)
     {
         if (stream == null)
-           throw new ArgumentNullException("stream");
+            throw new ArgumentNullException("stream");
 
         return Task<int>.Factory.FromAsync(stream.BeginRead,
                                            stream.EndRead, buffer,

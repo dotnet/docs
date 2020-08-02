@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -434,19 +434,19 @@ namespace n105
     {
         //<Snippet105>
         // Type T is declared covariant by using the out keyword.
-        public delegate T SampleGenericDelegate <out T>();
+        public delegate T SampleGenericDelegate<out T>();
 
         public static void Test()
         {
-            SampleGenericDelegate <String> dString = () => " ";
+            SampleGenericDelegate<String> dString = () => " ";
 
             // You can assign delegates to each other,
             // because the type T is declared covariant.
-            SampleGenericDelegate <Object> dObject = dString;
+            SampleGenericDelegate<Object> dObject = dString;
         }
         //</Snippet105>
-     }
- }
+    }
+}
 
 namespace n106
 {

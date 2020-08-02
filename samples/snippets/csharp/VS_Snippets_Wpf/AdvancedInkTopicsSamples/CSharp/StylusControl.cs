@@ -1,10 +1,10 @@
 ﻿//<Snippet20>
 using System;
+using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Input.StylusPlugIns;
-using System.Windows.Controls;
-using System.Windows;
 //</Snippet20>
 
 namespace AdavancedInkTopicsSamples

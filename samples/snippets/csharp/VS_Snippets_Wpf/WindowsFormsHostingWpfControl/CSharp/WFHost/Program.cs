@@ -2,23 +2,23 @@
 
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 using System.Threading;
 using System.Windows;
+using System.Windows.Forms;
 
 #endregion
 
 namespace WFHost
 {
-  static class Program
-  {
-    [STAThread]
-    static void Main()
+    static class Program
     {
-      //Run the application
-      System.Windows.Forms.Application.EnableVisualStyles();
-      //System.Windows.Forms.Application.EnableRTLMirroring();
-      System.Windows.Forms.Application.Run(new Form1());
+        [STAThread]
+        static void Main()
+        {
+            //Run the application
+            System.Windows.Forms.Application.EnableVisualStyles();
+            //System.Windows.Forms.Application.EnableRTLMirroring();
+            System.Windows.Forms.Application.Run(new Form1());
+        }
     }
-  }
 }

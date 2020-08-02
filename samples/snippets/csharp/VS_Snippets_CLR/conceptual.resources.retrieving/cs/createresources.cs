@@ -7,16 +7,16 @@ using System.Resources;
 
 public class Example
 {
-   public static void Main()
-   {
-      Bitmap bmp = new Bitmap(@".\SplashScreen.jpg");
-      MemoryStream imageStream = new MemoryStream();
-      bmp.Save(imageStream, ImageFormat.Jpeg);
+    public static void Main()
+    {
+        Bitmap bmp = new Bitmap(@".\SplashScreen.jpg");
+        MemoryStream imageStream = new MemoryStream();
+        bmp.Save(imageStream, ImageFormat.Jpeg);
 
-      ResXResourceWriter writer = new ResXResourceWriter("AppResources.resx");
-      writer.AddResource("SplashScreen", imageStream);
-      writer.Generate();
-      writer.Close();
-   }
+        ResXResourceWriter writer = new ResXResourceWriter("AppResources.resx");
+        writer.AddResource("SplashScreen", imageStream);
+        writer.Generate();
+        writer.Close();
+    }
 }
 // </Snippet4>

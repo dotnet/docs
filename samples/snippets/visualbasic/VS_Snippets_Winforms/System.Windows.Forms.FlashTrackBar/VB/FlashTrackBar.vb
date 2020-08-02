@@ -1,11 +1,11 @@
 ﻿' <snippet1>
 Imports System.ComponentModel
 Imports System.ComponentModel.Design
-Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.Drawing.Design
-Imports System.Windows.Forms
 Imports System.Diagnostics
+Imports System.Drawing
+Imports System.Drawing.Design
+Imports System.Drawing.Drawing2D
+Imports System.Windows.Forms
 
 Namespace Microsoft.Samples.WinForms.VB.FlashTrackBar
 

@@ -1,17 +1,17 @@
 ﻿//<snippetNamespaces>
 using System;
-using System.Collections.Generic;
 using System.Collections;
-using System.Data.Common;
+using System.Collections.Generic;
 using System.Data;
-using System.IO;
-using System.Data.SqlClient;
+using System.Data.Common;
 using System.Data.EntityClient;
 using System.Data.Metadata.Edm;
 //</snippetNamespaces>
 //<snippetIncludes>
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
+using System.Data.SqlClient;
+using System.IO;
 //</snippetIncludes>
 using System.Linq;
 
@@ -74,7 +74,7 @@ namespace Microsoft.Samples.Entity
                 new AdventureWorksEntities())
             {
                 ObjectQuery<DbDataRecord> query = new ObjectQuery<DbDataRecord>(queryString, context);
-                query.Parameters.Add(new ObjectParameter("customer",customerId));
+                query.Parameters.Add(new ObjectParameter("customer", customerId));
 
                 foreach (DbDataRecord rec in query)
                 {

@@ -1,7 +1,7 @@
 ﻿'<snippet01>
+Imports System.Diagnostics
 Imports System.IO
 Imports System.IO.Pipes
-Imports System.Diagnostics
 
 Class PipeServer
     Shared Sub Main()

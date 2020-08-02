@@ -40,10 +40,10 @@ namespace SDKSample
             {
                 if (fontStyles == null)
                 {
-                   fontStyles = new Collection<FontStyle>();
-                   fontStyles.Add(System.Windows.FontStyles.Normal);
-                   fontStyles.Add(System.Windows.FontStyles.Oblique);
-                   fontStyles.Add(System.Windows.FontStyles.Italic);
+                    fontStyles = new Collection<FontStyle>();
+                    fontStyles.Add(System.Windows.FontStyles.Normal);
+                    fontStyles.Add(System.Windows.FontStyles.Oblique);
+                    fontStyles.Add(System.Windows.FontStyles.Italic);
                 }
                 return fontStyles;
             }

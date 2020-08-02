@@ -24,16 +24,16 @@ Class Window1
     '
     '    public partial class Window1 : Window
     '--------------------^--- Syntax error: ';' expected
-    
+
     Private eraser As InkEraser
-    
-    
-    Public Sub New() 
+
+
+    Public Sub New()
         InitializeComponent()
         eraser = New InkEraser()
         Me.Content = eraser
-        
+
         Me.WindowState = WindowState.Maximized
-    
+
     End Sub
 End Class

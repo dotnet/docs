@@ -59,7 +59,7 @@ namespace OptionalNamespace
         //<Snippet15>
         public void ExampleMethod(int required, string optionalstr = "default string",
             int optionalint = 10)
-            //</Snippet15>
+        //</Snippet15>
         {
             Console.WriteLine("{0}: {1}, {2}, and {3}.", _name, required, optionalstr,
                 optionalint);

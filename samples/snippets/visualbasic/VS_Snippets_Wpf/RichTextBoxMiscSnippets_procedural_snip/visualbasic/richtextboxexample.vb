@@ -2,31 +2,31 @@
 
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Media
 Imports System.Windows.Documents
+Imports System.Windows.Media
 Namespace SDKSample
-	Partial Public Class RichTextBoxExample
-		Inherits Page
-		Public Sub New()
+    Partial Public Class RichTextBoxExample
+        Inherits Page
+        Public Sub New()
 
-			Dim myStackPanel As New StackPanel()
+            Dim myStackPanel As New StackPanel()
 
-			' Create a FlowDocument to contain content for the RichTextBox.
-			Dim myFlowDoc As New FlowDocument()
+            ' Create a FlowDocument to contain content for the RichTextBox.
+            Dim myFlowDoc As New FlowDocument()
 
-			' Add paragraphs to the FlowDocument.
-			myFlowDoc.Blocks.Add(New Paragraph(New Run("Paragraph 1")))
-			myFlowDoc.Blocks.Add(New Paragraph(New Run("Paragraph 2")))
-			myFlowDoc.Blocks.Add(New Paragraph(New Run("Paragraph 3")))
-			Dim myRichTextBox As New RichTextBox()
+            ' Add paragraphs to the FlowDocument.
+            myFlowDoc.Blocks.Add(New Paragraph(New Run("Paragraph 1")))
+            myFlowDoc.Blocks.Add(New Paragraph(New Run("Paragraph 2")))
+            myFlowDoc.Blocks.Add(New Paragraph(New Run("Paragraph 3")))
+            Dim myRichTextBox As New RichTextBox()
 
-			' Add initial content to the RichTextBox.
-			myRichTextBox.Document = myFlowDoc
+            ' Add initial content to the RichTextBox.
+            myRichTextBox.Document = myFlowDoc
 
-			myStackPanel.Children.Add(myRichTextBox)
-			Me.Content = myStackPanel
+            myStackPanel.Children.Add(myRichTextBox)
+            Me.Content = myStackPanel
 
-		End Sub
-	End Class
+        End Sub
+    End Class
 End Namespace
 ' </SnippetRichTextBoxCodeOnlyExample>

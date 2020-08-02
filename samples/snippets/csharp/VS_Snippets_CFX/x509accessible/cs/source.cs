@@ -1,9 +1,9 @@
 ﻿using System;
-using System.ServiceModel;
-using System.ServiceModel.Description;
-using System.ServiceModel.Channels;
-using System.Security.Cryptography.X509Certificates;
 using System.Runtime.Serialization;
+using System.Security.Cryptography.X509Certificates;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
 using ClientCalculator;
 namespace BasicAuthentication
 {
@@ -614,7 +614,7 @@ namespace MessageSecuritWithKerberosAuth
                 typeof(ICalculator));
 
             // Create a new ServiceEndpoint.
-            ServiceEndpoint se = new ServiceEndpoint(contract, binding ,ea);
+            ServiceEndpoint se = new ServiceEndpoint(contract, binding, ea);
 
             // Add the service endpoint to the service.
             myServiceHost.Description.Endpoints.Add(se);

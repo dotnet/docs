@@ -1,8 +1,8 @@
 ﻿using System;
-using System.ServiceModel;
-using System.ServiceModel.Channels;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Permissions;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
 
 [assembly: SecurityPermission(
@@ -135,7 +135,7 @@ namespace Windows.Communication.Foundation.Samples
             {
                 //<snippet10>
                 BasicHttpBinding b = new BasicHttpBinding();
-                b.Security.Mode = BasicHttpSecurityMode.Transport ;
+                b.Security.Mode = BasicHttpSecurityMode.Transport;
                 b.Security.Transport.ClientCredentialType = HttpClientCredentialType.Windows;
                 //</snippet10>
             }

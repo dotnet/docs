@@ -1,8 +1,8 @@
 ﻿//<SNIPPET1>
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Configuration;
+using System.Text;
 
 namespace ApplicationSettingsArchitectureCS
 {

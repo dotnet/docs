@@ -50,7 +50,7 @@ namespace object_collection_initializers
         {
             // <SnippetObjectPropertyInitialization>
             Cat cat = new Cat { Age = 10, Name = "Fluffy" };
-            Cat sameCat = new Cat("Fluffy"){ Age = 10 };
+            Cat sameCat = new Cat("Fluffy") { Age = 10 };
             // </SnippetObjectPropertyInitialization>
 
             // <SnippetMatrixInitialization>
@@ -141,7 +141,7 @@ namespace object_collection_initializers
         public static void Main()
         {
             Cat cat = new Cat { Age = 10, Name = "Fluffy" };
-            Cat sameCat = new Cat("Fluffy"){ Age = 10 };
+            Cat sameCat = new Cat("Fluffy") { Age = 10 };
 
             List<Cat> cats = new List<Cat>
             {

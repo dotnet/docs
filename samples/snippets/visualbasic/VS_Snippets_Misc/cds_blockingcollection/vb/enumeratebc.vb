@@ -1,10 +1,10 @@
 ﻿'<snippet03>
 Option Strict On
 Option Explicit On
+Imports System.Collections.Concurrent
 Imports System.Diagnostics
 Imports System.Threading
 Imports System.Threading.Tasks
-Imports System.Collections.Concurrent
 
 
 Module EnumerateBC

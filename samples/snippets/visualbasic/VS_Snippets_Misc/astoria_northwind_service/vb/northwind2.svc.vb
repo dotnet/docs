@@ -2,17 +2,15 @@
 Option Strict On
 
 Imports System.Collections.Generic
+Imports System.Data.Objects
 Imports System.Data.Services
 Imports System.Linq
-Imports System.ServiceModel.Web
-Imports System.Web
-
 '<snippetUsingLinqExpressions>
 Imports System.Linq.Expressions
-
 '</snippetUsingLinqExpressions>
 Imports System.Reflection
-Imports System.Data.Objects
+Imports System.ServiceModel.Web
+Imports System.Web
 
 <System.ServiceModel.ServiceBehavior(IncludeExceptionDetailInFaults:=True)> _
 Public Class Northwind2

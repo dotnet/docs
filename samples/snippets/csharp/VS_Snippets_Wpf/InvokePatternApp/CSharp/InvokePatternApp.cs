@@ -41,17 +41,17 @@
 
 using System;
 using System.ComponentModel;
-using System.Windows;
-using System.Windows.Documents;
-using System.Windows.Automation;
-using System.Windows.Controls;
-using System.Threading;
 using System.Diagnostics;
-using System.Text;
-using System.Windows.Threading;
-using System.Windows.Media;
 using System.IO;
 using System.Security.Permissions;
+using System.Text;
+using System.Threading;
+using System.Windows;
+using System.Windows.Automation;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Media;
+using System.Windows.Threading;
 
 namespace SDKSample
 {
@@ -182,7 +182,7 @@ namespace SDKSample
         /// root element for this sample.
         /// </remarks>
         ///--------------------------------------------------------------------
-        [SecurityPermission(SecurityAction.Demand, Flags=SecurityPermissionFlag.UnmanagedCode)]
+        [SecurityPermission(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
         private AutomationElement StartApp(string app)
         {
             if (File.Exists(app))

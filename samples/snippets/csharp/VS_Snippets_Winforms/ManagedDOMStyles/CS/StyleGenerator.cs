@@ -16,7 +16,7 @@ namespace ManagedDOMStyles
 
         public bool ContainsStyle(string name)
         {
-            return(styleDB.ContainsKey(name));
+            return (styleDB.ContainsKey(name));
         }
 
         public string SetStyle(string name, string value)
@@ -90,7 +90,7 @@ namespace ManagedDOMStyles
             if (styles.Length > 0)
             {
                 string[] stylePairs = styles.Split(new char[] { ';' });
-                foreach(string stylePair in stylePairs)
+                foreach (string stylePair in stylePairs)
                 {
                     if (stylePairs.Length > 0)
                     {

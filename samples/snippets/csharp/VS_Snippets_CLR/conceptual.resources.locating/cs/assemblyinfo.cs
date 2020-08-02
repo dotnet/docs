@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Resources;
 
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
@@ -37,4 +37,4 @@ using System.Resources;
 [assembly: AssemblyFileVersion("1.0.0.0")]
 // <Snippet2>
 [assembly: NeutralResourcesLanguageAttribute("en")]
- // </Snippet2>
+// </Snippet2>

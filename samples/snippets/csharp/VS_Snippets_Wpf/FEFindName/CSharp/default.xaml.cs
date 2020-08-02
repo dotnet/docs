@@ -5,8 +5,9 @@ using System.Windows.Media;
 
 namespace SDKSample
 {
-    public partial class FEFindName {
-//<SnippetFind>
+    public partial class FEFindName
+    {
+        //<SnippetFind>
         void Find(object sender, RoutedEventArgs e)
         {
             object wantedNode = stackPanel.FindName("dog");
@@ -17,6 +18,6 @@ namespace SDKSample
                 wantedChild.Foreground = Brushes.Blue;
             }
         }
-//</SnippetFind>
+        //</SnippetFind>
     }
 }

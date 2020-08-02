@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Printing;
 using System.IO;
+using System.Printing;
+using System.Text;
 
 namespace DiagnoseProblematicPrintJob
 {
@@ -84,7 +84,7 @@ namespace DiagnoseProblematicPrintJob
                 String pServer = Console.ReadLine();
                 if (pServer == "")
                 {
-                    pServer = "\\\\" +Environment.MachineName;
+                    pServer = "\\\\" + Environment.MachineName;
                 }
                 Console.Write("\nEnter the print queue hosting the job: ");
                 String pQueue = Console.ReadLine();

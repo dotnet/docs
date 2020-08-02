@@ -1,12 +1,12 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports System.Windows.Forms
-Imports System.Drawing
 Imports System.Collections
-Imports System.Xml
-Imports System.Drawing.Imaging
+Imports System.Drawing
 Imports System.Drawing.Drawing2D
+Imports System.Drawing.Imaging
+Imports System.Windows.Forms
+Imports System.Xml
 
 Public Class Form1
     Inherits Form

@@ -1,7 +1,7 @@
 ﻿'<snippet1>
-Imports System.IO
 Imports System.Data
 Imports System.Data.SqlClient
+Imports System.IO
 
 Public Class FileReaderException
     Inherits Exception

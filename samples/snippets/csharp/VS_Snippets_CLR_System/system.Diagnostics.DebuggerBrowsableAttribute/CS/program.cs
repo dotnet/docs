@@ -67,7 +67,7 @@ class MyHashtable : Hashtable
                 KeyValuePairs[] keys = new KeyValuePairs[hashtable.Count];
 
                 int i = 0;
-                foreach(object key in hashtable.Keys)
+                foreach (object key in hashtable.Keys)
                 {
                     keys[i] = new KeyValuePairs(hashtable, key, hashtable[key]);
                     i++;
@@ -75,7 +75,7 @@ class MyHashtable : Hashtable
                 return keys;
             }
         }
-      //</Snippet6>
+        //</Snippet6>
     }
 }
 //</Snippet5>

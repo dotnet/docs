@@ -8,7 +8,7 @@ public class Employee
     {
         get
         {
-            return(emlevel);
+            return (emlevel);
         }
         set
         {
@@ -24,7 +24,7 @@ public class Ex13
     public static void PromoteEmployee(Object emp)
     {
         // Cast object to Employee.
-        var e = (Employee) emp;
+        var e = (Employee)emp;
         // Increment employee level.
         e.Emlevel = e.Emlevel + 1;
     }

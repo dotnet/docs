@@ -1,9 +1,9 @@
 ﻿//<snippet0>
 using System;
-using System.ServiceModel;
-using System.ServiceModel.Security;
 using System.Security.Cryptography.X509Certificates;
+using System.ServiceModel;
 using System.ServiceModel.Description;
+using System.ServiceModel.Security;
 //</snippet0>
 namespace TcpService
 {
@@ -88,10 +88,10 @@ namespace TcpService
             }
             //</snippet1>
         }
-        private void AddMexEndpoint( ref ServiceHost sh)
+        private void AddMexEndpoint(ref ServiceHost sh)
         {
             ServiceMetadataBehavior sb = new ServiceMetadataBehavior();
-            sb.HttpGetEnabled=true;
+            sb.HttpGetEnabled = true;
             sb.HttpGetUrl = new Uri("http://localhost:90//calcluator");
             sh.Description.Behaviors.Add(sb);
         }
@@ -253,63 +253,63 @@ namespace TcpService
     }
 }
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ICalculator")]
-    public interface ICalculator
+[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+[System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ICalculator")]
+public interface ICalculator
+{
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ICalculator/Divide", ReplyAction = "http://tempuri.org/ICalculator/DivideResponse")]
+    double Divide(double a, double b);
+
+    [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ICalculator/CalculateTax", ReplyAction = "http://tempuri.org/ICalculator/CalculateTaxResponse")]
+    double CalculateTax(double a);
+}
+
+[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+public interface ICalculatorChannel : ICalculator, System.ServiceModel.IClientChannel
+{
+}
+
+[System.Diagnostics.DebuggerStepThroughAttribute()]
+[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
+public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
+{
+
+    public CalculatorClient()
     {
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ICalculator/Divide", ReplyAction = "http://tempuri.org/ICalculator/DivideResponse")]
-        double Divide(double a, double b);
-
-        [System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/ICalculator/CalculateTax", ReplyAction = "http://tempuri.org/ICalculator/CalculateTaxResponse")]
-        double CalculateTax(double a);
     }
 
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    public interface ICalculatorChannel : ICalculator, System.ServiceModel.IClientChannel
+    public CalculatorClient(string endpointConfigurationName)
+        :
+            base(endpointConfigurationName)
     {
     }
 
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
-    public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
+    public CalculatorClient(string endpointConfigurationName, string remoteAddress)
+        :
+            base(endpointConfigurationName, remoteAddress)
     {
-
-        public CalculatorClient()
-        {
-        }
-
-        public CalculatorClient(string endpointConfigurationName)
-            :
-                base(endpointConfigurationName)
-        {
-        }
-
-        public CalculatorClient(string endpointConfigurationName, string remoteAddress)
-            :
-                base(endpointConfigurationName, remoteAddress)
-        {
-        }
-
-        public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress)
-            :
-                base(endpointConfigurationName, remoteAddress)
-        {
-        }
-
-        public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress)
-            :
-                base(binding, remoteAddress)
-        {
-        }
-
-        public double Divide(double a, double b)
-        {
-            return base.Channel.Divide(a, b);
-        }
-
-        public double CalculateTax(double a)
-        {
-            return base.Channel.CalculateTax(a);
-        }
     }
+
+    public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress)
+        :
+            base(endpointConfigurationName, remoteAddress)
+    {
+    }
+
+    public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress)
+        :
+            base(binding, remoteAddress)
+    {
+    }
+
+    public double Divide(double a, double b)
+    {
+        return base.Channel.Divide(a, b);
+    }
+
+    public double CalculateTax(double a)
+    {
+        return base.Channel.CalculateTax(a);
+    }
+}

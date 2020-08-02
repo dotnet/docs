@@ -1,8 +1,8 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Threading;
 
 namespace SDKSample
 {
@@ -12,17 +12,17 @@ namespace SDKSample
         StackPanel myStackPanel;
         Window mainWindow;
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup (e);
-            CreateAndShowMainWindow ();
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
         }
-        private void CreateAndShowMainWindow ()
+        private void CreateAndShowMainWindow()
         {
             // <Snippet1>
 
             // Create the application's main Window.
-            mainWindow = new Window ();
+            mainWindow = new Window();
             mainWindow.Title = "Margins, Padding and Alignment Sample";
 
             // Add a Border
@@ -66,7 +66,7 @@ namespace SDKSample
 
             // Add the Border as the Content of the Parent Window Object.
             mainWindow.Content = myBorder;
-            mainWindow.Show ();
+            mainWindow.Show();
 
             //</Snippet1>
         }
@@ -76,10 +76,10 @@ namespace SDKSample
     internal static class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
-            app app = new app ();
-            app.Run ();
+            app app = new app();
+            app.Run();
         }
     }
 }

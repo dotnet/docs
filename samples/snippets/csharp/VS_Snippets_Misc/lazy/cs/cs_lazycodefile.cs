@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Data;
 using System.Data.SqlClient;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -67,7 +67,7 @@ namespace CS_lazy
         class Customer
         {
             private Lazy<Orders> _orders;
-            public string CustomerID {get; private set;}
+            public string CustomerID { get; private set; }
             public Customer(string id)
             {
                 CustomerID = id;
@@ -113,8 +113,8 @@ namespace CS_lazy
             Lazy<DataInitializedFromDb> _data =
                 new Lazy<DataInitializedFromDb>(delegate
                 {
-                    using(SqlConnection conn = new SqlConnection(connectionString))
-                    using(SqlCommand comm = new SqlCommand())
+                    using (SqlConnection conn = new SqlConnection(connectionString))
+                    using (SqlCommand comm = new SqlCommand())
                     {
                         SqlDataReader reader = comm.ExecuteReader();
                         DataInitializedFromDb data =
@@ -134,7 +134,7 @@ namespace CS_lazy
 
         static void Main(string[] args)
         {
-           // LazyAndThreadLocal();
+            // LazyAndThreadLocal();
             TestEnsureInitialized();
 
             Console.WriteLine("Press any key to exit.");
@@ -211,7 +211,7 @@ namespace CS_lazy
             //<snippet10>
             // Assume that _orders contains null values, and
             // we only need to initialize them if displayOrderInfo is true
-            if(displayOrderInfo == true)
+            if (displayOrderInfo == true)
             {
                 for (int i = 0; i < _orders.Length; i++)
                 {
@@ -224,7 +224,7 @@ namespace CS_lazy
                 }
             }
             //</snippet10>
-            foreach(var v in _orders)
+            foreach (var v in _orders)
                 Console.WriteLine(v.ToString());
         }
 
@@ -246,47 +246,48 @@ namespace CS_lazy
 }
 
 namespace HowToSnippets
-    {
+{
     using System;
-        using System.Net;
+    using System.Net;
 
-        class Number
+    class Number
+    {
+        public int Num { get; private set; }
+        public Lazy<int[]> primeFactors;
+        public Number(int i)
         {
-            public int Num {get; private set;}
-            public Lazy<int[]> primeFactors;
-            public Number(int i)
-            {
-                Num = i;
-                primeFactors = new Lazy<int[]>(() => GetPrimeFactors(Num));
-            }
+            Num = i;
+            primeFactors = new Lazy<int[]>(() => GetPrimeFactors(Num));
+        }
 
-            private static int[] GetPrimeFactors(int i)
-            {
-                return new int[100];
-            }
+        private static int[] GetPrimeFactors(int i)
+        {
+            return new int[100];
+        }
 
-            class WebPage
+        class WebPage
+        {
+            private Lazy<String> _text;
+            public WebPage(string url, string title)
             {
-                private Lazy<String> _text;
-                public WebPage(string url, string title)
-                {
-                    this.URL = url;
-                    this.Title = Title;
-                    this._text = new Lazy<string>(() =>
-                        {
-                            return new WebClient().DownloadString(URL);
-                        });
-                }
-
-                public string URL { get; private set; }
-                public string Title { get; private set; }
-                public string Text {
-                    get
+                this.URL = url;
+                this.Title = Title;
+                this._text = new Lazy<string>(() =>
                     {
-                        return _text.Value;
-                    }
+                        return new WebClient().DownloadString(URL);
+                    });
+            }
+
+            public string URL { get; private set; }
+            public string Title { get; private set; }
+            public string Text
+            {
+                get
+                {
+                    return _text.Value;
                 }
             }
+        }
         static void Main()
         {
             WebPage[] catalog = new WebPage[5]

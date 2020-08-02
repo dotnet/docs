@@ -24,11 +24,11 @@ namespace Microsoft.ServiceModel.Samples
     // <Snippet7>
     public partial class OrderProcessorProxy : System.ServiceModel.ClientBase<IOrderProcessor>, IOrderProcessor
     {
-        public OrderProcessorProxy(){}
-        public OrderProcessorProxy(string configurationName) : base(configurationName){}
+        public OrderProcessorProxy() { }
+        public OrderProcessorProxy(string configurationName) : base(configurationName) { }
 
         public OrderProcessorProxy(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address)
-            : base(binding, address){}
+            : base(binding, address) { }
 
         public void SubmitPurchaseOrder(MsmqMessage<PurchaseOrder> msg)
         {

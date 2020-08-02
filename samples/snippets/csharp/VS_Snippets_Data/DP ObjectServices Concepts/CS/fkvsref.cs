@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Objects;
+using System.Data.Objects.DataClasses;
 using System.Linq;
 using System.Text;
-using System.Data.Objects.DataClasses;
-using System.Data.Objects;
 
 namespace ObjectServicesConceptsCS
 {
@@ -391,7 +391,7 @@ namespace ObjectServicesConceptsCS
                 ctx.Contacts.AddObject(c);
                 ctx.AcceptAllChanges();
 
-//                Debug.ReferenceEquals(p.Contact, c);
+                //                Debug.ReferenceEquals(p.Contact, c);
             }
         }
     }

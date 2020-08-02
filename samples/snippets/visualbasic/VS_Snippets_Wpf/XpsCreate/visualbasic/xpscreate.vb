@@ -2,14 +2,14 @@
 ' Copyright (c) Microsoft Corporation. All rights reserved.
 
 
-Imports System.IO
 Imports System.Collections.Generic
+Imports System.IO
 Imports System.IO.Packaging
-Imports System.Xml
+Imports System.Printing
 Imports System.Windows.Forms
 Imports System.Windows.Xps
 Imports System.Windows.Xps.Packaging
-Imports System.Printing
+Imports System.Xml
 
 Public Class XpsCreate
     Private Const packageWithPrintTicketName As String = "XpsDocument-withPrintTicket.xps"

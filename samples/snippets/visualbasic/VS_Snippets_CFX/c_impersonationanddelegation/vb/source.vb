@@ -1,8 +1,8 @@
-﻿Imports System.ServiceModel.Description
-Imports System.ServiceModel.Security
-Imports System.ServiceModel
+﻿Imports System.Security.Permissions
 Imports System.Security.Principal
-Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.ServiceModel.Description
+Imports System.ServiceModel.Security
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace SnippetsPart1

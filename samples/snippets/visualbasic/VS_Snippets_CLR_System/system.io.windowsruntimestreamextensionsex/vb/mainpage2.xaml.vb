@@ -1,11 +1,11 @@
 ﻿Imports System.IO
+Imports System.Net.Http
 Imports System.Runtime.InteropServices.WindowsRuntime
+Imports Windows.Storage
+Imports Windows.Storage.Pickers
 Imports Windows.UI.Xaml
 Imports Windows.UI.Xaml.Controls
 Imports Windows.UI.Xaml.Media.Imaging
-Imports Windows.Storage
-Imports System.Net.Http
-Imports Windows.Storage.Pickers
 
 Private Async Sub button2_Click(sender As Object, e As RoutedEventArgs)
 

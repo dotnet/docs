@@ -10,21 +10,21 @@ namespace AppSettingsArchitectureProject
 {
     public partial class Form1 : Form
     {
-	
+
         public Form1()
         {
             InitializeComponent();
             this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
         }
-	
-	//<SNIPPET3>
-	//Make sure to hook up this event handler in the constructor!
-	//this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
+
+        //<SNIPPET3>
+        //Make sure to hook up this event handler in the constructor!
+        //this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
         void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             mus.Save();
         }
-	//</SNIPPET3>
+        //</SNIPPET3>
 
         private void button1_Click(object sender, EventArgs e)
         {

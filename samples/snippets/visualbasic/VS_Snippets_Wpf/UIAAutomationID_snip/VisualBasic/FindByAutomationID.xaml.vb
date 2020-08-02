@@ -1,16 +1,16 @@
 ﻿
+Imports System.Diagnostics
+Imports System.IO
+Imports System.Text
+Imports System.Threading
 Imports System.Windows
+Imports System.Windows.Automation
 Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Documents
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
-Imports System.Windows.Automation
-Imports System.Diagnostics
-Imports System.IO
-Imports System.Threading
-Imports System.Text
 
 Namespace UIAAutomationID_snip
 
@@ -18,7 +18,7 @@ Namespace UIAAutomationID_snip
     ''' Interaction logic for FindByAutomationID.xaml
     ''' </summary>
     Partial Public Class FindByAutomationID
-        Inherits Window 
+        Inherits Window
         Private targetApp As AutomationElement
 
         Public Sub New()

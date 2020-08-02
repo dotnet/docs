@@ -22,14 +22,14 @@
  *
  *************************************************************************************************/
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Automation.Provider;
-using System.Windows.Automation;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Diagnostics;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
+using System.Text;
+using System.Windows.Automation;
+using System.Windows.Automation.Provider;
+using System.Windows.Forms;
 
 namespace ElementProvider
 {
@@ -54,7 +54,7 @@ namespace ElementProvider
             myText = text;
             parentControl = parent;
             parentItems = items;
-            myID = parentItems.Count+1;
+            myID = parentItems.Count + 1;
             myIndex = parentItems.Count;
             myBounds = myRect;
         }

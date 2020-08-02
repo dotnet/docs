@@ -1,10 +1,10 @@
 ﻿'  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 ' <Snippet1>
-Imports System.ServiceModel.Channels
 Imports System.Configuration
 'using System.Messaging;
 Imports System.ServiceModel
+Imports System.ServiceModel.Channels
 Imports System.Transactions
 
 Namespace Microsoft.ServiceModel.Samples

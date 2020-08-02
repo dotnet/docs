@@ -42,10 +42,10 @@ namespace Highlighter
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         internal static extern int SetWindowLong(IntPtr hWnd, int nIndex,
             int dwNewLong);
-// <Snippet101>
+        // <Snippet101>
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         internal static extern bool SetProcessDPIAware();
-// </Snippet101>
+        // </Snippet101>
         internal const int GWL_EXSTYLE = -20;
 
         internal const int SW_SHOWNA = 8;

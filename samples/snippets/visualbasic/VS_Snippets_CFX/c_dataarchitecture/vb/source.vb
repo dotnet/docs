@@ -1,12 +1,12 @@
 ﻿Imports System.IO
 Imports System.Runtime.Serialization
-Imports System.Xml
-Imports System.Security.Permissions
 Imports System.Security
+Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
-Imports System.ServiceModel.Security.Tokens
 Imports System.ServiceModel.Description
+Imports System.ServiceModel.Security.Tokens
+Imports System.Xml
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples

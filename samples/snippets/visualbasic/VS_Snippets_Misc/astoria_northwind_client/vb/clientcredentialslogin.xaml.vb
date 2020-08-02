@@ -1,7 +1,7 @@
 ﻿'<snippetClientCredentialsLogin>
 Imports System.ComponentModel
-Imports System.Windows
 Imports System.Security
+Imports System.Windows
 
 Partial Public Class LoginWindow
     Inherits Window

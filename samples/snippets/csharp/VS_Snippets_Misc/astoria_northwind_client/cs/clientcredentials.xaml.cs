@@ -1,13 +1,13 @@
 ﻿// <snippetClientCredentials>
 using System;
+using System.Data.Services.Client;
 using System.Linq;
 using System.Net;
+using System.Security;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
-using System.Security;
 using NorthwindClient.Northwind;
-using System.Data.Services.Client;
 
 namespace NorthwindClient
 {

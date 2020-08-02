@@ -32,10 +32,10 @@ namespace AsyncBreakfast
             return new Juice();
         }
 
-        private static void ApplyJam(Toast toast) => 
+        private static void ApplyJam(Toast toast) =>
             Console.WriteLine("Putting jam on the toast");
 
-        private static void ApplyButter(Toast toast) => 
+        private static void ApplyButter(Toast toast) =>
             Console.WriteLine("Putting butter on the toast");
 
         private static Toast ToastBread(int slices)

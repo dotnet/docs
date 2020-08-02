@@ -1,4 +1,4 @@
-﻿ '******************************************************************************
+﻿'******************************************************************************
 ' * File: HighlightRectangle.vb
 ' *
 ' * Description: 
@@ -24,8 +24,8 @@
 ' *****************************************************************************
 
 Imports System.Drawing
-Imports System.Windows.Forms
 Imports System.Runtime.InteropServices
+Imports System.Windows.Forms
 
 Friend Class HighlightRectangle
 

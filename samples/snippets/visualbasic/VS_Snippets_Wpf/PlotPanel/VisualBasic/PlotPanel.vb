@@ -1,9 +1,9 @@
-﻿Imports System.Windows
+﻿Imports System.Threading
+Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
-Imports System.Windows.Shapes
 Imports System.Windows.Navigation
-Imports System.Threading
+Imports System.Windows.Shapes
 
 Namespace SDKSample
     Public Class PlotPanelSample

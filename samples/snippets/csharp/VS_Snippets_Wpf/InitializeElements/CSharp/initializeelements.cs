@@ -1,11 +1,11 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
-using System.Windows.Media;
 using System.Windows.Markup;
-using System.IO;
+using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
@@ -13,7 +13,7 @@ namespace SDKSamples
 {
     class InitializeElements : Application
     {
-//<SnippetMain>
+        //<SnippetMain>
         [STAThread]
         static void Main(string[] args)
         {
@@ -52,7 +52,7 @@ namespace SDKSamples
             RenderTargetBitmap image2 = Rasterize(b, paperSize.Width, paperSize.Height, 96, 96);
             Save(image2, "render2.png");
         }
-//</SnippetMain>
+        //</SnippetMain>
 
         private static RenderTargetBitmap Rasterize(Visual visual, double width, double height, double dpiX, double dpiY)
         {

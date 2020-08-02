@@ -4,11 +4,11 @@
 using System;
 using System.IO;
 using System.IO.Packaging;
+using System.Printing;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Xps.Packaging;
-using System.Printing;
 using Microsoft.Win32;
 using SDKSampleHelper;
 
@@ -72,7 +72,7 @@ namespace SDKSample
         public String ContentDir
         {
             get
-                { return _contentDir; }
+            { return _contentDir; }
         }
 
         #region Button Event Handlers
@@ -133,33 +133,33 @@ namespace SDKSample
             switch (currentMode)
             {
                 case eGuiMode.SingleVisual:
-                {
-                    printHelper.PrintSingleVisual(printQueue, async);
-                    break;
-                }
+                    {
+                        printHelper.PrintSingleVisual(printQueue, async);
+                        break;
+                    }
                 case eGuiMode.MultipleVisuals:
-                {
-                    printHelper.PrintMultipleVisuals(printQueue, async);
-                    break;
-                }
+                    {
+                        printHelper.PrintMultipleVisuals(printQueue, async);
+                        break;
+                    }
                 case eGuiMode.SingleFlowDocument:
-                {
-                    printHelper.PrintSingleFlowContentDocument(
-                        printQueue, async);
-                    break;
-                }
+                    {
+                        printHelper.PrintSingleFlowContentDocument(
+                            printQueue, async);
+                        break;
+                    }
                 case eGuiMode.SingleFixedDocument:
-                {
-                    printHelper.PrintSingleFixedContentDocument(
-                        printQueue, async);
-                    break;
-                }
+                    {
+                        printHelper.PrintSingleFixedContentDocument(
+                            printQueue, async);
+                        break;
+                    }
                 case eGuiMode.MultipleFixedDocuments:
-                {
-                    printHelper.PrintMultipleFixedContentDocuments(
-                        printQueue, async);
-                    break;
-                }
+                    {
+                        printHelper.PrintMultipleFixedContentDocuments(
+                            printQueue, async);
+                        break;
+                    }
             }// end:switch (currentMode)
         }// end:ButtonHelperSave()
 
@@ -180,8 +180,8 @@ namespace SDKSample
         /// <param name="saveHelper"></param>
         /// <param name="asyncInformation">
         ///   Progress information about the asynchronous save.</param>
-       private void AsyncPrintEvent(
-            object printHelper, AsyncPrintEventArgs asyncInformation)
+        private void AsyncPrintEvent(
+             object printHelper, AsyncPrintEventArgs asyncInformation)
         {
             if (asyncInformation.Completed)
             {

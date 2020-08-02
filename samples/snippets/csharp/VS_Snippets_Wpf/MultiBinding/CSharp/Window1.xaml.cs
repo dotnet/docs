@@ -1,34 +1,34 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Data;
-using System.Globalization;
-using System.Collections.ObjectModel;
 
 namespace SDKSample
 {
-  public partial class Window1 : Window
-  {
-    public Window1()
+    public partial class Window1 : Window
     {
-      InitializeComponent();
+        public Window1()
+        {
+            InitializeComponent();
+        }
     }
-  }
 
-  //<Snippet1>
-  public class NameList : ObservableCollection<PersonName>
-  {
-      public NameList() : base()
-      {
-          Add(new PersonName("Willa", "Cather"));
-          Add(new PersonName("Isak", "Dinesen"));
-          Add(new PersonName("Victor", "Hugo"));
-          Add(new PersonName("Jules", "Verne"));
-      }
+    //<Snippet1>
+    public class NameList : ObservableCollection<PersonName>
+    {
+        public NameList() : base()
+        {
+            Add(new PersonName("Willa", "Cather"));
+            Add(new PersonName("Isak", "Dinesen"));
+            Add(new PersonName("Victor", "Hugo"));
+            Add(new PersonName("Jules", "Verne"));
+        }
     }
 
     public class PersonName
@@ -54,5 +54,5 @@ namespace SDKSample
             set { lastName = value; }
         }
     }
-  //</Snippet1>
+    //</Snippet1>
 }

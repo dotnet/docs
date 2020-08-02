@@ -45,7 +45,7 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
 
             // Animate rectangle1's width.
             DoubleAnimation myDoubleAnimation =
-                new DoubleAnimation(10,100, new Duration(TimeSpan.FromSeconds(3)));
+                new DoubleAnimation(10, 100, new Duration(TimeSpan.FromSeconds(3)));
             Storyboard.SetTargetName(myDoubleAnimation, "rectangle1");
             Storyboard.SetTargetProperty(myDoubleAnimation,
                 new PropertyPath(Rectangle.WidthProperty));
@@ -69,7 +69,7 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
 
             // Animate rectangle2's width.
             myDoubleAnimation =
-                new DoubleAnimation(10,100, new Duration(TimeSpan.FromSeconds(3)));
+                new DoubleAnimation(10, 100, new Duration(TimeSpan.FromSeconds(3)));
             Storyboard.SetTargetName(myDoubleAnimation, "rectangle2");
             Storyboard.SetTargetProperty(myDoubleAnimation,
                 new PropertyPath(Rectangle.WidthProperty));
@@ -95,7 +95,8 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
         private void startRectangle2AnimationButton_clicked(object sender, RoutedEventArgs args)
         {
 
-            try {
+            try
+            {
 
                 // This statement throws an exception because
                 // rectangle2's name is registered with
@@ -106,11 +107,13 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
                 // however, because we gave childPanel1 its own
                 // name scope, it no longer shares mainPanel's name scope.
                 storyboard2.Begin(childPanel1);
-            }catch(System.InvalidOperationException ex)
+            }
+            catch (System.InvalidOperationException ex)
             {
             }
 
-            try {
+            try
+            {
 
                 // This statement also throws an exception because
                 // rectangle2's name is registered with
@@ -121,7 +124,8 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
                 // however, because we gave childPanel1 its own
                 // name scope, it no longer shares mainPanel's name scope.
                 storyboard2.Begin(rectangle2);
-            }catch(System.InvalidOperationException ex)
+            }
+            catch (System.InvalidOperationException ex)
             {
             }
 

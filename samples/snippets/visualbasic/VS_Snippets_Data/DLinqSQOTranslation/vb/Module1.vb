@@ -1,6 +1,6 @@
-﻿Imports System.Linq
+﻿Imports System.Data.Linq
+Imports System.Linq
 Imports System.Linq.Expressions
-Imports System.Data.Linq
 
 
 Module Module1

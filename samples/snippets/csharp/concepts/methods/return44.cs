@@ -19,19 +19,19 @@ class TestSimpleMath
 {
     static void Main()
     {
-       SimpleMath obj = new SimpleMath();
+        SimpleMath obj = new SimpleMath();
 
-       //<Snippet45>
-       int result = obj.AddTwoNumbers(1, 2);
-       result = obj.SquareANumber(result);
-       // The result is 9.
-       Console.WriteLine(result);
-       //</Snippet45>
+        //<Snippet45>
+        int result = obj.AddTwoNumbers(1, 2);
+        result = obj.SquareANumber(result);
+        // The result is 9.
+        Console.WriteLine(result);
+        //</Snippet45>
 
-       //<Snippet46>
-       result = obj.SquareANumber(obj.AddTwoNumbers(1, 2));
-       // The result is 9.
-       Console.WriteLine(result);
-       //</Snippet46>
+        //<Snippet46>
+        result = obj.SquareANumber(obj.AddTwoNumbers(1, 2));
+        // The result is 9.
+        Console.WriteLine(result);
+        //</Snippet46>
     }
 }

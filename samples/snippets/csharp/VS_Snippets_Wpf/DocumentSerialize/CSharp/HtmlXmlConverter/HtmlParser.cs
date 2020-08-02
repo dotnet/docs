@@ -9,12 +9,12 @@
 //---------------------------------------------------------------------------
 
 using System;
-using System.Xml;
-using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Xml;
 
 // important TODOS:
 // TODO 1. Start tags: The ParseXmlElement function has been modified to be called after both the

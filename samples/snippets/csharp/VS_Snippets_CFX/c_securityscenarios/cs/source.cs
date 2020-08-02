@@ -1,9 +1,9 @@
 ﻿using System;
-using System.ServiceModel;
-using System.ServiceModel.Description;
-using System.ServiceModel.Channels;
-using System.Security.Cryptography.X509Certificates;
 using System.Runtime.Serialization;
+using System.Security.Cryptography.X509Certificates;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
 using ClientCalculator;
 namespace BasicAuthentication
 {
@@ -102,7 +102,7 @@ namespace BasicAuthentication
                 Console.WriteLine(tex.Message);
                 cc.Abort();
             }
-            catch(CommunicationException cex)
+            catch (CommunicationException cex)
             {
                 Console.WriteLine(cex.Message);
                 cc.Abort();
@@ -186,12 +186,12 @@ namespace SecuredUsingWindows
                 cc.Close();
             }
             //</snippet4>
-                        catch (TimeoutException tex)
+            catch (TimeoutException tex)
             {
                 Console.WriteLine(tex.Message);
                 cc.Abort();
             }
-            catch(CommunicationException cex)
+            catch (CommunicationException cex)
             {
                 Console.WriteLine(cex.Message);
                 cc.Abort();
@@ -282,7 +282,7 @@ namespace SecuredByTransportWithAnonymousClient
                 Console.WriteLine(tex.Message);
                 cc.Abort();
             }
-            catch(CommunicationException cex)
+            catch (CommunicationException cex)
             {
                 Console.WriteLine(cex.Message);
                 cc.Abort();

@@ -10,7 +10,7 @@ class Program
         do
         {
             if (row == 0 || row >= 25)
-               ResetConsole();
+                ResetConsole();
 
             string input = Console.ReadLine();
             if (String.IsNullOrEmpty(input)) break;
@@ -24,8 +24,8 @@ class Program
         {
             if (row > 0)
             {
-               Console.WriteLine("Press any key to continue...");
-               Console.ReadKey();
+                Console.WriteLine("Press any key to continue...");
+                Console.ReadKey();
             }
             Console.Clear();
             Console.WriteLine("\nPress <Enter> only to exit; otherwise, enter a string and press <Enter>:\n");

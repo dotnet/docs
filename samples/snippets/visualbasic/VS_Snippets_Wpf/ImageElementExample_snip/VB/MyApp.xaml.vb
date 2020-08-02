@@ -1,11 +1,11 @@
 ﻿
+Imports System.Configuration
+Imports System.Data
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Input
 Imports System.Windows.Navigation
-Imports System.Data
 Imports System.Xml
-Imports System.Configuration
 
 
 Namespace ImageElementExample

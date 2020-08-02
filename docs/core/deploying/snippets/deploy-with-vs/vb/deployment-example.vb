@@ -14,7 +14,7 @@ Namespace Applications.ConsoleApps
         Private Sub ShowWords(s As String)
             Dim pattern = "\w+"
             Dim matches = Regex.Matches(s, pattern)
-            Console.WriteLine()   
+            Console.WriteLine()
             If matches.Count = 0 Then
                 Console.WriteLine("No words were identified in your input.")
             Else

@@ -1,17 +1,16 @@
 ﻿'<snippetNamespaces> 
-Imports System.Collections.Generic
 Imports System.Collections
-Imports System.Data.Common
+Imports System.Collections.Generic
 Imports System.Data
-Imports System.IO
-Imports System.Data.SqlClient
+Imports System.Data.Common
 Imports System.Data.EntityClient
 Imports System.Data.Metadata.Edm
-
 '</snippetNamespaces> 
 '<snippetIncludes> 
 Imports System.Data.Objects
 Imports System.Data.Objects.DataClasses
+Imports System.Data.SqlClient
+Imports System.IO
 
 '</snippetIncludes> 
 

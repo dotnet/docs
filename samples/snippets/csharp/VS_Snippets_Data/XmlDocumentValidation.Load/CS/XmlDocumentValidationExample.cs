@@ -61,7 +61,7 @@ class XmlDocumentValidationExample
         {
             Console.WriteLine("XmlDocumentValidationExample.XmlException: {0}", ex.Message);
         }
-        catch(XmlSchemaValidationException ex)
+        catch (XmlSchemaValidationException ex)
         {
             Console.WriteLine("XmlDocumentValidationExample.XmlSchemaValidationException: {0}", ex.Message);
         }

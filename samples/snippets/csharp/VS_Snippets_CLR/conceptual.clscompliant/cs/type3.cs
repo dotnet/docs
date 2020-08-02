@@ -6,43 +6,43 @@ using System;
 [CLSCompliant(false)]
 public class Counter
 {
-   UInt32 ctr;
+    UInt32 ctr;
 
-   public Counter()
-   {
-      ctr = 0;
-   }
+    public Counter()
+    {
+        ctr = 0;
+    }
 
-   protected Counter(UInt32 ctr)
-   {
-      this.ctr = ctr;
-   }
+    protected Counter(UInt32 ctr)
+    {
+        this.ctr = ctr;
+    }
 
-   public override string ToString()
-   {
-      return String.Format("{0}). ", ctr);
-   }
+    public override string ToString()
+    {
+        return String.Format("{0}). ", ctr);
+    }
 
-   public UInt32 Value
-   {
-      get { return ctr; }
-   }
+    public UInt32 Value
+    {
+        get { return ctr; }
+    }
 
-   public void Increment()
-   {
-      ctr += (uint) 1;
-   }
+    public void Increment()
+    {
+        ctr += (uint)1;
+    }
 }
 
 public class NonZeroCounter : Counter
 {
-   public NonZeroCounter(int startIndex) : this((uint) startIndex)
-   {
-   }
+    public NonZeroCounter(int startIndex) : this((uint)startIndex)
+    {
+    }
 
-   private NonZeroCounter(UInt32 startIndex) : base(startIndex)
-   {
-   }
+    private NonZeroCounter(UInt32 startIndex) : base(startIndex)
+    {
+    }
 }
 // Compilation produces a compiler warning like the following:
 //    Type3.cs(37,14): warning CS3009: 'NonZeroCounter': base type 'Counter' is not
@@ -52,7 +52,7 @@ public class NonZeroCounter : Counter
 
 public class Example
 {
-   public static void Main()
-   {
-   }
+    public static void Main()
+    {
+    }
 }

@@ -2,9 +2,11 @@
 using System.Windows;
 using System.Windows.Controls;
 
-namespace SDKSample {
-    public partial class FELoaded {
-//<SnippetHandler>
+namespace SDKSample
+{
+    public partial class FELoaded
+    {
+        //<SnippetHandler>
         void OnLoad(object sender, RoutedEventArgs e)
         {
             Button b1 = new Button();
@@ -14,6 +16,6 @@ namespace SDKSample {
             b1.Width = 200;
             b1.HorizontalAlignment = HorizontalAlignment.Left;
         }
-//</SnippetHandler>
+        //</SnippetHandler>
     }
 }

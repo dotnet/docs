@@ -1,4 +1,4 @@
-// <Snippet1>
+﻿// <Snippet1>
 public sealed class Foo : IDisposable
 {
     private readonly IDisposable _bar;

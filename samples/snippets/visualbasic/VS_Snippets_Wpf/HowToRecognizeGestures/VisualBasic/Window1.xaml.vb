@@ -1,8 +1,8 @@
-﻿ '<Snippet1>
+﻿'<Snippet1>
+Imports System.Collections.ObjectModel
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Ink
-Imports System.Collections.ObjectModel
 
 Class Window1
     Inherits Window

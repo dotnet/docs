@@ -34,7 +34,7 @@ namespace Metadata.Samples
             // <Snippet2>
             try
             {
-            // </Snippet2>
+                // </Snippet2>
                 // <Snippet4>
                 // Check to see if the service host already has a ServiceMetadataBehavior
                 ServiceMetadataBehavior smb = svcHost.Description.Behaviors.Find<ServiceMetadataBehavior>();
@@ -76,7 +76,7 @@ namespace Metadata.Samples
                 // Close the ServiceHostBase to shutdown the service.
                 svcHost.Close();
                 // </Snippet10>
-            // <Snippet3>
+                // <Snippet3>
             }
             catch (CommunicationException commProblem)
             {

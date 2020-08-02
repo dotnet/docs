@@ -21,8 +21,9 @@ namespace HOWTOWindowManagementSnippets
             //</SnippetSettingMainWindowInCodeCODEBEHIND>
 
             //<SnippetGetAllWindows>
-            foreach( Window window in Application.Current.Windows ) {
-              Console.WriteLine(window.Title);
+            foreach (Window window in Application.Current.Windows)
+            {
+                Console.WriteLine(window.Title);
             }
             //</SnippetGetAllWindows>
         }

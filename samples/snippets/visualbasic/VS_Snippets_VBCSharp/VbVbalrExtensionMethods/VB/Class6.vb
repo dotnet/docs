@@ -15,12 +15,12 @@ Module Module4
         'anObject.PrintMe()
     End Sub
 
-    <Extension()> 
+    <Extension()>
     Public Sub PrintMe(ByVal str As String)
         Console.WriteLine(str)
     End Sub
 
-    <Extension()> 
+    <Extension()>
     Public Sub PrintMe(ByVal obj As Object)
         Console.WriteLine(obj)
     End Sub

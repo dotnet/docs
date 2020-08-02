@@ -58,7 +58,7 @@ Public Class FibonacciForm
         ' Start the asynchronous operation.
         backgroundWorker1.RunWorkerAsync(numberToCompute)
         ' </snippet3>
-    End Sub 
+    End Sub
     ' </snippet13>
 
     ' <snippet4>
@@ -66,13 +66,13 @@ Public Class FibonacciForm
     ByVal sender As System.Object, _
     ByVal e As System.EventArgs) _
     Handles cancelAsyncButton.Click
-        
+
         ' Cancel the asynchronous operation.
         Me.backgroundWorker1.CancelAsync()
 
         ' Disable the Cancel button.
         cancelAsyncButton.Enabled = False
-        
+
     End Sub
     ' </snippet4>
 
@@ -171,7 +171,7 @@ Public Class FibonacciForm
         ' <snippet11>
         If worker.CancellationPending Then
             e.Cancel = True
-        ' </snippet11>
+            ' </snippet11>
         Else
             If n < 2 Then
                 result = 1

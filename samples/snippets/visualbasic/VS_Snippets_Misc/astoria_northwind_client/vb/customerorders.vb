@@ -1,13 +1,12 @@
 ﻿Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
+'<snippetCustomersOrdersUsing>
+Imports System.Data.Services.Client
 Imports System.Drawing
 Imports System.Linq
 Imports System.Text
 Imports System.Windows.Forms
-
-'<snippetCustomersOrdersUsing>
-Imports System.Data.Services.Client
 Imports NorthwindClient.Northwind
 
 '</snippetCustomersOrdersUsing>

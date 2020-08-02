@@ -1,10 +1,10 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.ComponentModel;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
-using System.ComponentModel;
 using System.Drawing.Text;
-using System;
+using System.Windows.Forms;
 
 public class Form1 :
     System.Windows.Forms.Form
@@ -27,8 +27,8 @@ public class Form1 :
     private void InitializeComponent()
     {
 
-// Form1
-//
+        // Form1
+        //
         this.ClientSize = new System.Drawing.Size(292, 266);
 
         this.Name = "Form1";
@@ -153,7 +153,7 @@ public class Form1 :
         bmp2.Dispose();
     }
     // </snippet4>
-//<snippet5>
+    //<snippet5>
     private void OpAdditionExample(PaintEventArgs e)
     {
         PointF point1 = new PointF(120.5F, 120F);
@@ -234,54 +234,54 @@ public class Form1 :
            imageAttributes);
         //</snippet9>
     }
-        //<snippetInstalledFonts>
-        InstalledFontCollection ifc = new InstalledFontCollection();
-        private void EnumerateInstalledFonts(PaintEventArgs e)
+    //<snippetInstalledFonts>
+    InstalledFontCollection ifc = new InstalledFontCollection();
+    private void EnumerateInstalledFonts(PaintEventArgs e)
+    {
+        FontFamily[] families = ifc.Families;
+        float x = 0.0F;
+        float y = 0.0F;
+        for (int i = 0; i < ifc.Families.Length; i++)
         {
-            FontFamily[] families = ifc.Families;
-            float x = 0.0F;
-            float y = 0.0F;
-            for (int i = 0; i < ifc.Families.Length; i++)
+            if (ifc.Families[i].IsStyleAvailable(FontStyle.Regular))
             {
-                if (ifc.Families[i].IsStyleAvailable(FontStyle.Regular))
+                e.Graphics.DrawString(ifc.Families[i].Name, new Font(ifc.Families[i], 12),
+                    Brushes.Black, x, y);
+                y += 20;
+                if (y % 700 == 0)
                 {
-                    e.Graphics.DrawString(ifc.Families[i].Name, new Font(ifc.Families[i], 12),
-			            Brushes.Black, x, y);
-                    y += 20;
-                    if (y % 700 == 0)
-                    {
-                        x += 140;
-                        y = 0;
-                    }
+                    x += 140;
+                    y = 0;
                 }
             }
         }
-        //</snippetInstalledFonts>
+    }
+    //</snippetInstalledFonts>
 
-        //<snippetConstructFontWithString>
-        private void ConstructFontWithString(PaintEventArgs e)
+    //<snippetConstructFontWithString>
+    private void ConstructFontWithString(PaintEventArgs e)
+    {
+        Font font1 = new Font("Arial", 20);
+        e.Graphics.DrawString("Arial Font", font1, Brushes.Red, new PointF(10, 10));
+    }
+    //</snippetConstructFontWithString>
+    public static Bitmap ResizeImage(System.Drawing.Image image)
+    {
+        //<snippetSetResolution>
+        Bitmap bitmap = new Bitmap(100, 100);
+        bitmap.SetResolution(96.0F, 96.0F);
+        //</snippetSetResolution>
+
+        using (Graphics graphics = Graphics.FromImage(bitmap))
         {
-            Font font1 = new Font("Arial", 20);
-            e.Graphics.DrawString("Arial Font", font1, Brushes.Red, new PointF(10, 10));
+            graphics.DrawImage(image,
+                 new Rectangle(0, 0, 100, 100),
+                 new Rectangle(0, 0, image.Width, image.Height),
+                 GraphicsUnit.Pixel);
         }
-        //</snippetConstructFontWithString>
- 	public static Bitmap ResizeImage(System.Drawing.Image image)
-        {
-            //<snippetSetResolution>
-            Bitmap bitmap = new Bitmap(100, 100);
-            bitmap.SetResolution(96.0F, 96.0F);
-            //</snippetSetResolution>
 
-            using (Graphics graphics = Graphics.FromImage(bitmap))
-            {
-               graphics.DrawImage(image,
-                    new Rectangle(0, 0, 100, 100),
-                    new Rectangle(0, 0, image.Width, image.Height),
-                    GraphicsUnit.Pixel);
-            }
-
-            return bitmap;
-        }
+        return bitmap;
+    }
     //<snippetGetThumbnail>
     public bool ThumbnailCallback()
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Windows;
-using System.Windows.Navigation;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Controls;
 
 namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 {
@@ -17,13 +17,13 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
         {
         }
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
             CreateAndShowMainWindow();
         }
 
-        private void CreateAndShowMainWindow ()
+        private void CreateAndShowMainWindow()
         {
             // Create the application's main window.
             NavigationWindow myWindow = new NavigationWindow();
@@ -40,11 +40,11 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
     internal sealed class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
 
-            app app = new app ();
-            app.Run ();
+            app app = new app();
+            app.Run();
         }
     }
 }

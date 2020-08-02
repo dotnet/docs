@@ -1,10 +1,10 @@
 ﻿'<snippet0>
 '<snippet1>
 Imports System.Collections.Generic
+Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security.Tokens
-Imports System.Security.Permissions
 
 '</snippet1>
 

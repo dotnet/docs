@@ -34,7 +34,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
             Button badExampleButton = new Button();
             badExampleButton.Content = "Bad Example";
-            badExampleButton.Click += delegate(object sender, RoutedEventArgs e)
+            badExampleButton.Click += delegate (object sender, RoutedEventArgs e)
             {
                 initialExample();
             };
@@ -42,7 +42,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
             Button goodExampleButton = new Button();
             goodExampleButton.Content = "Good Example";
-            goodExampleButton.Click += delegate(object sender, RoutedEventArgs e)
+            goodExampleButton.Click += delegate (object sender, RoutedEventArgs e)
             {
                 betterExample();
             };

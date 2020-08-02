@@ -1,6 +1,6 @@
 ﻿'<snippet4>
-Imports System.IO.IsolatedStorage
 Imports System.IO
+Imports System.IO.IsolatedStorage
 
 Public Class DeletingFilesDirectories
     Public Shared Sub Main()

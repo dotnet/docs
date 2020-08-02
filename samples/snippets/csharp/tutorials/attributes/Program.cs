@@ -40,7 +40,7 @@ namespace ConsoleApplication
 
             // <ReflectionExample2>
             var attrs = typeInfo.GetCustomAttributes();
-            foreach(var attr in attrs)
+            foreach (var attr in attrs)
                 Console.WriteLine("Attribute on MyClass: " + attr.GetType().Name);
             // </ReflectionExample2>
         }
@@ -103,7 +103,7 @@ namespace ConsoleApplication
         private string _name;
         public string Name
         {
-            get { return _name;}
+            get { return _name; }
             set
             {
                 if (value != _name)
@@ -119,7 +119,8 @@ namespace ConsoleApplication
     // <AttributeGothca1>
     public class GotchaAttribute : Attribute
     {
-        public GotchaAttribute(Foo myClass, string str) {
+        public GotchaAttribute(Foo myClass, string str)
+        {
         }
     }
     // </AttributeGothca1>

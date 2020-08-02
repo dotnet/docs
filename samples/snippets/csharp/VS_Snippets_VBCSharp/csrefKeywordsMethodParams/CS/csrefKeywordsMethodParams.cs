@@ -119,7 +119,7 @@ namespace KeywordsMethodParams
         2 b test again
         System.Int32[]
     */
-//</snippet5>
+    //</snippet5>
 
     //<snippet6>
     class RefExample

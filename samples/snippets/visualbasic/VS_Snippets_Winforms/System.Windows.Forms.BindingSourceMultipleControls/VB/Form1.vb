@@ -3,22 +3,22 @@ Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
 Imports System.Drawing
+Imports System.IO
 Imports System.Text
 Imports System.Windows.Forms
-Imports System.IO
 
 
 
 Public Class Form1
     Inherits Form
-    
-    
+
+
     Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
         'InitializeControlsAndDataSource();
         InitializeControlsAndData()
 
     End Sub
-    
+
     '<snippet1>
     '<snippet3>
     ' Declare the controls to be used.
@@ -26,9 +26,9 @@ Public Class Form1
     Private WithEvents textBox1 As TextBox
     Private WithEvents textBox2 As TextBox
     Private WithEvents dataGridView1 As DataGridView
-    
-    
-    Private Sub InitializeControlsAndDataSource() 
+
+
+    Private Sub InitializeControlsAndDataSource()
         ' Initialize the controls and set location, size and 
         ' other basic properties.
         Me.dataGridView1 = New DataGridView()
@@ -47,25 +47,25 @@ Public Class Form1
         Me.Controls.Add(Me.textBox2)
         Me.Controls.Add(Me.textBox1)
         Me.Controls.Add(Me.dataGridView1)
-        
+
         ' Declare the DataSet and add a table and column.
         Dim set1 As New DataSet()
         set1.Tables.Add("Menu")
         set1.Tables(0).Columns.Add("Beverages")
-        
+
         ' Add some rows to the table.
         set1.Tables(0).Rows.Add("coffee")
         set1.Tables(0).Rows.Add("tea")
         set1.Tables(0).Rows.Add("hot chocolate")
         set1.Tables(0).Rows.Add("milk")
         set1.Tables(0).Rows.Add("orange juice")
-        
+
         ' Set the data source to the DataSet.
         bindingSource1.DataSource = set1
-        
+
         'Set the DataMember to the Menu table.
         bindingSource1.DataMember = "Menu"
-        
+
         ' Add the control data bindings.
         dataGridView1.DataSource = bindingSource1
         textBox1.DataBindings.Add("Text", bindingSource1, "Beverages", _
@@ -73,9 +73,9 @@ Public Class Form1
         textBox2.DataBindings.Add("Text", bindingSource1, "Beverages", _
             True, DataSourceUpdateMode.OnPropertyChanged)
 
-    
+
     End Sub
-    
+
     '</snippet3>
     '<snippet2>
     Private Sub bindingSource1_BindingComplete(ByVal sender As Object, _
@@ -90,16 +90,16 @@ Public Class Form1
         End If
 
     End Sub
-     '</snippet2>
- '</snippet1>
+    '</snippet2>
+    '</snippet1>
     '<snippet11>
     Dim WithEvents bmb As BindingManagerBase
 
-    Private Sub InitializeControlsAndData() 
+    Private Sub InitializeControlsAndData()
         ' Initialize the controls and set location, size and 
         ' other basic properties.
         Me.dataGridView1 = New DataGridView()
-        
+
         Me.textBox1 = New TextBox()
         Me.textBox2 = New TextBox()
         Me.dataGridView1.ColumnHeadersHeightSizeMode = _
@@ -115,12 +115,12 @@ Public Class Form1
         Me.Controls.Add(Me.textBox2)
         Me.Controls.Add(Me.textBox1)
         Me.Controls.Add(Me.dataGridView1)
-        
+
         ' Declare the DataSet and add a table and column.
         Dim set1 As New DataSet()
         set1.Tables.Add("Menu")
         set1.Tables(0).Columns.Add("Beverages")
-        
+
         ' Add some rows to the table.
         set1.Tables(0).Rows.Add("coffee")
         set1.Tables(0).Rows.Add("tea")
@@ -140,7 +140,7 @@ Public Class Form1
         bmb = Me.BindingContext(set1, "Menu")
 
     End Sub
-    
+
     Private Sub bmb_BindingComplete(ByVal sender As Object, ByVal e As BindingCompleteEventArgs) _
         Handles bmb.BindingComplete
 
@@ -154,10 +154,10 @@ Public Class Form1
     End Sub
     '</snippet11>
 
-    <STAThread()>  _
-    Shared Sub Main() 
+    <STAThread()> _
+    Shared Sub Main()
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-    
+
     End Sub
 End Class

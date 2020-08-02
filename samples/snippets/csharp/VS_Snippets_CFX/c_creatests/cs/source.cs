@@ -1,14 +1,14 @@
 ﻿using System;
-using System.ServiceModel;
-using System.ServiceModel.Security;
-using System.IdentityModel.Tokens;
 using System.Collections.Generic;
-using System.Security.Permissions;
-using System.ServiceModel.Description;
-using System.ServiceModel.Security.Tokens;
 using System.IdentityModel.Claims;
-using System.ServiceModel.Channels;
+using System.IdentityModel.Tokens;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Permissions;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
+using System.ServiceModel.Security;
+using System.ServiceModel.Security.Tokens;
 
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]

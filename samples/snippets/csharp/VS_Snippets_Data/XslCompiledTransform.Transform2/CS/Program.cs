@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Text;
 using System.Xml;
-using System.Xml.Xsl;
 using System.Xml.XPath;
+using System.Xml.Xsl;
 
 namespace Transform
 {
@@ -15,7 +15,7 @@ namespace Transform
 
         public static void One()
         {
-	    //<snippet1>
+            //<snippet1>
             // Open books.xml as an XPathDocument.
             XPathDocument doc = new XPathDocument("books.xml");
 
@@ -35,7 +35,7 @@ namespace Transform
 
         public static void Two()
         {
-	    //<snippet2>
+            //<snippet2>
             // Create a reader to read books.xml
             XmlReader reader = XmlReader.Create("books.xml");
 
@@ -55,7 +55,7 @@ namespace Transform
 
         public static void Three()
         {
-	    //<snippet3>
+            //<snippet3>
             // Create and load the transform with script execution enabled.
             XslCompiledTransform transform = new XslCompiledTransform();
             XsltSettings settings = new XsltSettings();

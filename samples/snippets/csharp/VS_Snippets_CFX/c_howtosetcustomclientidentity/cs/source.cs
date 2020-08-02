@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Security.Cryptography.X509Certificates;
 using System.IdentityModel.Claims;
 using System.IdentityModel.Policy;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Permissions;
 using System.ServiceModel;
-using System.ServiceModel.Security;
-using System.ServiceModel.Security.Tokens;
+using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
 using System.ServiceModel.Dispatcher;
-using System.ServiceModel.Channels;
-using System.Security.Permissions;
+using System.ServiceModel.Security;
+using System.ServiceModel.Security.Tokens;
 
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
@@ -250,7 +250,7 @@ namespace Microsoft.ServiceModel.Samples
 
 namespace part2
 {
-        //<snippet7>
+    //<snippet7>
     public class CustomIdentityVerifier : IdentityVerifier
     {
         // Code to be added.

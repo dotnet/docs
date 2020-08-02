@@ -1,9 +1,9 @@
 ﻿namespace CsCsrefProgrammingProperties
 {
-    using System.Linq;
-    using System.Collections.Generic;
     using System;
+    using System.Collections.Generic;
     using System.Collections.ObjectModel;
+    using System.Linq;
 
     //---------------------------------------------------------------------------
     namespace WrapProperties
@@ -15,7 +15,7 @@
 
             public double Hours
             {
-				get => seconds / 3600;
+                get => seconds / 3600;
                 set => seconds = value * 3600;
             }
         }
@@ -151,7 +151,7 @@
             public double side;
 
             //constructor
-			public Square(double s) => side = s;
+            public Square(double s) => side = s;
 
             public override double Area
             {
@@ -165,7 +165,7 @@
             public double side;
 
             //constructor
-			public Cube(double s) => side = s;
+            public Cube(double s) => side = s;
 
             public override double Area
             {
@@ -346,21 +346,21 @@
         {
             ReadOnlyPropertyExamples ro = new ReadOnlyPropertyExamples();
             System.Console.WriteLine("return names");
-            foreach(string s in ro.Names)
+            foreach (string s in ro.Names)
                 System.Console.WriteLine(s);
             List<string> list = ro.Names.ToList();
             list.Add("Joy");
             Console.WriteLine("added 'Joy' to local list");
-            foreach(string s in ro.Names)
+            foreach (string s in ro.Names)
                 Console.WriteLine(s);
 
             //names_2
             System.Console.WriteLine("return from names...");
-           // foreach (string s in ro.Names_2)
-           //     System.Console.WriteLine(s);
-           //list = ro.Names_2.ToList();
-           // list.Add("Joy");
-           // Console.WriteLine("added 'Joy' to local list");
+            // foreach (string s in ro.Names_2)
+            //     System.Console.WriteLine(s);
+            //list = ro.Names_2.ToList();
+            // list.Add("Joy");
+            // Console.WriteLine("added 'Joy' to local list");
 
             var q = from s in ro.Names_2
                     where s.Contains('x')
@@ -372,7 +372,7 @@
 
             list2.RemoveAt(0);
 
-            foreach(string s in list2)
+            foreach (string s in list2)
                 Console.WriteLine(s);
 
             //names_3
@@ -398,7 +398,7 @@
             List<string> badList = ro.BadProp;
             badList.Add("Ha ha");
 
-            foreach(string s in ro.Names)
+            foreach (string s in ro.Names)
                 Console.WriteLine(s);
 
             // Keep the console open in debug mode.

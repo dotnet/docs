@@ -1,14 +1,14 @@
 ﻿//This is a list of commonly used namespaces for a pane.
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Media;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Data;
-using System.Windows.Media;
-using System.Collections.ObjectModel;
 
 namespace ListBoxEvent
 {
@@ -56,7 +56,7 @@ namespace ListBoxEvent
                 if (GetRectangle(color) == null)
                 {
                     Rectangle aRect = new Rectangle();
-                    aRect.Fill = (Brush) converter.ConvertFrom(color);
+                    aRect.Fill = (Brush)converter.ConvertFrom(color);
                     aRect.Tag = color;
                     rectanglesPanel.Children.Add(aRect);
                 }

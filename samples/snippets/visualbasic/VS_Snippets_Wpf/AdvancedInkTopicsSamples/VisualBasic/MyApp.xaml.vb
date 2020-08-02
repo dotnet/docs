@@ -1,8 +1,8 @@
 ﻿
-Imports System.Windows
-Imports System.Data
-Imports System.Xml
 Imports System.Configuration
+Imports System.Data
+Imports System.Windows
+Imports System.Xml
 
 
 '/ <summary>
@@ -11,7 +11,7 @@ Imports System.Configuration
 
 Class MyApp
     Inherits Application
-     '
+    '
     'ToDo: Error processing original source shown below
     '
     '    public partial class MyApp : Application

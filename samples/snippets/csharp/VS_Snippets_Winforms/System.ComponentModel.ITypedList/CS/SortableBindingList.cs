@@ -1,11 +1,11 @@
 ﻿// <snippet1>
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel;
-using System.Windows.Forms;
 using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Reflection;
+using System.Text;
+using System.Windows.Forms;
 
 namespace ITypedListCS
 {
@@ -35,7 +35,7 @@ namespace ITypedListCS
         {
             PropertyDescriptorCollection pdc;
 
-            if (listAccessors!=null && listAccessors.Length>0)
+            if (listAccessors != null && listAccessors.Length > 0)
             {
                 // Return child list shape.
                 pdc = ListBindingHelper.GetListItemProperties(listAccessors[0].PropertyType);

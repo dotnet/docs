@@ -4,28 +4,28 @@ public class StringConversion
 {
     public static void Main()
     {
-       string input = String.Empty;
-       try
-       {
-           int result = Int32.Parse(input);
-           Console.WriteLine(result);
-       }
-       catch (FormatException)
-       {
-           Console.WriteLine($"Unable to parse '{input}'");
-       }
-       // Output: Unable to parse ''
+        string input = String.Empty;
+        try
+        {
+            int result = Int32.Parse(input);
+            Console.WriteLine(result);
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine($"Unable to parse '{input}'");
+        }
+        // Output: Unable to parse ''
 
-       try
-       {
+        try
+        {
             int numVal = Int32.Parse("-105");
             Console.WriteLine(numVal);
-       }
-       catch (FormatException e)
-       {
-           Console.WriteLine(e.Message);
-       }
-       // Output: -105
+        }
+        catch (FormatException e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        // Output: -105
 
         if (Int32.TryParse("-105", out int j))
             Console.WriteLine(j);
@@ -49,5 +49,5 @@ public class StringConversion
         else
             Console.WriteLine($"Int32.TryParse could not parse '{inputString}' to an int.");
         // Output: Int32.TryParse could not parse 'abc' to an int.
-     }
+    }
 }

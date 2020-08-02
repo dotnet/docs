@@ -14,16 +14,16 @@ public static class Example
         var rwh = ThreadPool.RegisterWaitForSingleObject(waitHandle,
             delegate { tcs.TrySetResult(true); }, null, -1, true);
         var t = tcs.Task;
-        t.ContinueWith( (antecedent) => rwh.Unregister(null));
+        t.ContinueWith((antecedent) => rwh.Unregister(null));
         return t;
     }
-   // </Snippet12>
+    // </Snippet12>
 
-   public static void MethodA()
-   {
-     var task = Task.Run( () => { Thread.Sleep(1000); } );
-     // <Snippet14>
-     WaitHandle wh = ((IAsyncResult)task).AsyncWaitHandle;
-     // </Snippet14>
-   }
+    public static void MethodA()
+    {
+        var task = Task.Run(() => { Thread.Sleep(1000); });
+        // <Snippet14>
+        WaitHandle wh = ((IAsyncResult)task).AsyncWaitHandle;
+        // </Snippet14>
+    }
 }

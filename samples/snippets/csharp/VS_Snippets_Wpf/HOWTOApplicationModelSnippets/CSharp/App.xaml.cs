@@ -1,6 +1,6 @@
-﻿using System.Windows;
-using System.IO;
+﻿using System.IO;
 using System.IO.IsolatedStorage;
+using System.Windows;
 
 namespace SDKSample
 {
@@ -26,7 +26,7 @@ namespace SDKSample
                     // Restore each application-scope property individually
                     while (!reader.EndOfStream)
                     {
-                        string[] keyValue = reader.ReadLine().Split(new char[] {','});
+                        string[] keyValue = reader.ReadLine().Split(new char[] { ',' });
                         this.Properties[keyValue[0]] = keyValue[1];
                     }
                 }

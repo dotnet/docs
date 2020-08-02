@@ -6,42 +6,42 @@ using System.Windows.Data;
 namespace SDKSample
 {
     //<SnippetChangeNotification>
-	public class UserProfile : INotifyPropertyChanged
-	{
-        public UserProfile() {}
-		
-        private string itemName = "";
-		private string bidPrice = "";
+    public class UserProfile : INotifyPropertyChanged
+    {
+        public UserProfile() { }
 
-		public string ItemName
-		{
-			get
+        private string itemName = "";
+        private string bidPrice = "";
+
+        public string ItemName
+        {
+            get
             {
                 return itemName;
             }
             set
             {
-                itemName=value;
+                itemName = value;
                 OnPropertyChanged("ItemName");
             }
-		}
+        }
 
-		public string BidPrice
-		{
-			get
+        public string BidPrice
+        {
+            get
             {
                 return bidPrice;
             }
             set
             {
-                bidPrice=value;
+                bidPrice = value;
                 OnPropertyChanged("BidPrice");
             }
-		}
+        }
 
-	//Declare event
-	public event PropertyChangedEventHandler PropertyChanged;
-	//OnPropertyChanged event handler to update property value in binding
+        //Declare event
+        public event PropertyChangedEventHandler PropertyChanged;
+        //OnPropertyChanged event handler to update property value in binding
         private void OnPropertyChanged(string info)
         {
             PropertyChangedEventHandler handler = PropertyChanged;

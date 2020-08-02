@@ -14,11 +14,11 @@ namespace Microsoft.ServiceModel.Samples
     // ICalculatorDuplex allows one to perform multiple operations on a running result.
     // The result is sent back after each operation on the ICalculatorCallback interface.
     // <Snippet3>
-    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode=SessionMode.Required,
-                     CallbackContract=typeof(ICalculatorDuplexCallback))]
+    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode = SessionMode.Required,
+                     CallbackContract = typeof(ICalculatorDuplexCallback))]
     public interface ICalculatorDuplex
     {
-        [OperationContract(IsOneWay=true)]
+        [OperationContract(IsOneWay = true)]
         void Clear();
         [OperationContract(IsOneWay = true)]
         void AddTo(double n);

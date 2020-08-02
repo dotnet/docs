@@ -7,21 +7,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-    /// <summary>
-    /// Interaction logic for Window1.xaml
-    /// </summary>
+/// <summary>
+/// Interaction logic for Window1.xaml
+/// </summary>
 
-    public partial class Window1 : Window
+public partial class Window1 : Window
+{
+
+    InkEraser eraser;
+
+    public Window1()
     {
+        InitializeComponent();
+        eraser = new InkEraser();
+        this.Content = eraser;
 
-        InkEraser eraser;
-
-        public Window1()
-        {
-            InitializeComponent();
-            eraser = new InkEraser();
-            this.Content = eraser;
-
-            this.WindowState = WindowState.Maximized;
-        }
+        this.WindowState = WindowState.Maximized;
     }
+}

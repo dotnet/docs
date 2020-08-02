@@ -14,15 +14,15 @@ public static class Example
         var tcs = new TaskCompletionSource<T>(state);
         task.ContinueWith(t =>
                           {
-                             if (t.IsFaulted)
-                                tcs.TrySetException(t.Exception.InnerExceptions);
-                             else if (t.IsCanceled)
-                                tcs.TrySetCanceled();
-                             else
-                                tcs.TrySetResult(t.Result);
+                              if (t.IsFaulted)
+                                  tcs.TrySetException(t.Exception.InnerExceptions);
+                              else if (t.IsCanceled)
+                                  tcs.TrySetCanceled();
+                              else
+                                  tcs.TrySetResult(t.Result);
 
-                             if (callback != null)
-                                callback(tcs.Task);
+                              if (callback != null)
+                                  callback(tcs.Task);
                           }, TaskScheduler.Default);
         return tcs.Task;
     }

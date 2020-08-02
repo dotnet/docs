@@ -10,7 +10,7 @@ namespace AsyncBreakfast
         {
             Coffee cup = PourCoffee();
             Console.WriteLine("coffee is ready");
-            
+
             var eggsTask = FryEggsAsync(2);
             var baconTask = FryBaconAsync(3);
             var toastTask = MakeToastWithButterAndJamAsync(2);

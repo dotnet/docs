@@ -54,7 +54,7 @@ class Program
             Console.WriteLine("All Rows:");
             foreach (DataRow row in categories.Rows)
             {
-                    Console.WriteLine("  {0}: {1}", row[0], row[1]);
+                Console.WriteLine("  {0}: {1}", row[0], row[1]);
             }
         }
     }

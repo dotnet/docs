@@ -4,8 +4,8 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Windows.Media.Effects;
+using System.Windows.Shapes;
 
 namespace SDKSample
 {
@@ -15,7 +15,7 @@ namespace SDKSample
     /// one with a bitmap effect and one without.
     /// </summary>
 	public class BitmapEffectExample : Page
-	{
+    {
         public BitmapEffectExample()
         {
 
@@ -26,7 +26,7 @@ namespace SDKSample
             PathFigure pLineFigure = new PathFigure();
             pLineFigure.StartPoint = new Point(25, 25);
             PolyLineSegment pLineSegment = new PolyLineSegment();
-            pLineSegment.Points.Add(new Point(0,50));
+            pLineSegment.Points.Add(new Point(0, 50));
             pLineSegment.Points.Add(new Point(25, 75));
             pLineSegment.Points.Add(new Point(50, 50));
             pLineSegment.Points.Add(new Point(25, 25));
@@ -44,7 +44,7 @@ namespace SDKSample
             GeometryDrawing drawing2 = new GeometryDrawing(
                     Brushes.Lime,
                     new Pen(Brushes.Black, 2),
-                    new EllipseGeometry(new Point(10,10), 5, 5)
+                    new EllipseGeometry(new Point(10, 10), 5, 5)
                 );
 
             // Create a DrawingGroup
@@ -105,7 +105,7 @@ namespace SDKSample
             border02.BorderBrush = Brushes.Gray;
             border02.BorderThickness = new Thickness(1);
             border02.VerticalAlignment = VerticalAlignment.Top;
-            border02.Margin = new Thickness(50,10,10,10);
+            border02.Margin = new Thickness(50, 10, 10, 10);
             border02.Child = image02;
 
             StackPanel mainPanel = new StackPanel();
@@ -122,12 +122,12 @@ namespace SDKSample
                 new GeometryDrawing(
                     Brushes.White,
                     null,
-                    new RectangleGeometry(new Rect(0,0,1,1)));
+                    new RectangleGeometry(new Rect(0, 0, 1, 1)));
             GeometryGroup twoRectangles = new GeometryGroup();
-            twoRectangles.Children.Add(new RectangleGeometry(new Rect(0,0,0.5,0.5)));
-            twoRectangles.Children.Add(new RectangleGeometry(new Rect(0.5,0.5,0.5,0.5)));
+            twoRectangles.Children.Add(new RectangleGeometry(new Rect(0, 0, 0.5, 0.5)));
+            twoRectangles.Children.Add(new RectangleGeometry(new Rect(0.5, 0.5, 0.5, 0.5)));
             SolidColorBrush squaresBrush =
-                new SolidColorBrush(Color.FromArgb(102,204,204,204));
+                new SolidColorBrush(Color.FromArgb(102, 204, 204, 204));
             squaresBrush.Opacity = 0.4;
             GeometryDrawing checkerDrawing =
                 new GeometryDrawing(
@@ -138,7 +138,7 @@ namespace SDKSample
             checkerDrawings.Children.Add(backgroundSquareDrawing);
             checkerDrawings.Children.Add(checkerDrawing);
             DrawingBrush checkerBrush = new DrawingBrush(checkerDrawings);
-            checkerBrush.Viewport = new Rect(0,0,10,10);
+            checkerBrush.Viewport = new Rect(0, 0, 10, 10);
             checkerBrush.ViewportUnits = BrushMappingMode.Absolute;
             checkerBrush.TileMode = TileMode.Tile;
             checkerBrush.Freeze();
@@ -146,6 +146,6 @@ namespace SDKSample
             this.Background = checkerBrush;
             this.Content = mainPanel;
         }
-	}
+    }
 }
 // </SnippetDrawingGroupBitmapEffectExampleWholePage>

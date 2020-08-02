@@ -5,7 +5,7 @@ Imports System.Windows.Forms
 Class Form1
     Inherits Form
 
-    Private  BindingSource1 As New BindingSource()
+    Private BindingSource1 As New BindingSource()
     Private textBox1 As New TextBox()
     Private textBox2 As New TextBox()
     Private textBox3 As New TextBox()
@@ -43,7 +43,7 @@ Class Form1
             "PartName", True)
         partNumberBinding = textBox2.DataBindings.Add("Text", BindingSource1, _
             "PartNumber", True)
-        
+
         'Bind the textbox to the PartPrice value with currency formatting.
         textBox3.DataBindings.Add("Text", BindingSource1, "PartPrice", _
             True, DataSourceUpdateMode.OnPropertyChanged, 0, "C")
@@ -73,7 +73,7 @@ Class Form1
         If Not e.BindingCompleteState = BindingCompleteState.Success Then
             MessageBox.Show("partNameBinding: " + e.ErrorText)
         End If
-       
+
     End Sub
     '</snippet1>
 

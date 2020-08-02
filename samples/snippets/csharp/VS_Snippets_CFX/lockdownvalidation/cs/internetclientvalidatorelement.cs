@@ -17,4 +17,4 @@ namespace Microsoft.ServiceModel.Samples
         }
     }
     //</snippet3>
-  }
+}

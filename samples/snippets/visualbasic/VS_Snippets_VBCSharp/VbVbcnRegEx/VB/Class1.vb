@@ -14,11 +14,11 @@ Class Class5d9a918f6c1f41a3a019b5c2b8ce0381
     ''' <param name="numNumbers">Minimum number of numeric characters.</param>
     ''' <param name="numSpecial">Minimum number of special characters.</param>
     ''' <returns>True if the password is sufficiently complex.</returns>
-    Function ValidatePassword(ByVal pwd As String, 
-        Optional ByVal minLength As Integer = 8, 
-        Optional ByVal numUpper As Integer = 2, 
-        Optional ByVal numLower As Integer = 2, 
-        Optional ByVal numNumbers As Integer = 2, 
+    Function ValidatePassword(ByVal pwd As String,
+        Optional ByVal minLength As Integer = 8,
+        Optional ByVal numUpper As Integer = 2,
+        Optional ByVal numLower As Integer = 2,
+        Optional ByVal numNumbers As Integer = 2,
         Optional ByVal numSpecial As Integer = 2) As Boolean
 
         ' Replace [A-Z] with \p{Lu}, to allow for Unicode uppercase letters.
@@ -64,9 +64,9 @@ Class Class5d9a918f6c1f41a3a019b5c2b8ce0381
     ' How to: Validate Strings That Represent E-Mail Addresses (Visual Basic)
     ' <snippet3>
     Function ValidateEmail(ByVal email As String) As Boolean
-        Dim emailRegex As New System.Text.RegularExpressions.Regex( 
+        Dim emailRegex As New System.Text.RegularExpressions.Regex(
             "^(?<user>[^@]+)@(?<host>.+)$")
-        Dim emailMatch As System.Text.RegularExpressions.Match = 
+        Dim emailMatch As System.Text.RegularExpressions.Match =
            emailRegex.Match(email)
         Return emailMatch.Success
     End Function

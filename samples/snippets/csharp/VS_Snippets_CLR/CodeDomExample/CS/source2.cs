@@ -20,7 +20,7 @@ public class UsingTheCodeDOM
         // </snippet14>
 
         // <snippet15>
-        compileUnit.Namespaces.Add( samples );
+        compileUnit.Namespaces.Add(samples);
         // </snippet15>
 
         // <snippet16>
@@ -40,7 +40,7 @@ public class UsingTheCodeDOM
         // </snippet18>
 
         // <snippet19>
-        class1.Members.Add( start );
+        class1.Members.Add(start);
         // </snippet19>
 
         CodeDomProvider codeProvider = CodeDomProvider.CreateProvider("CSharp");

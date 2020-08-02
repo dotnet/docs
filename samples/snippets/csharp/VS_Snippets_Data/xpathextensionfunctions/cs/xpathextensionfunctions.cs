@@ -1,9 +1,9 @@
 ﻿//<snippet1>
 using System;
+using System.IO;
 using System.Xml;
 using System.Xml.XPath;
 using System.Xml.Xsl;
-using System.IO;
 
 namespace XPathExtensionFunctions
 {
@@ -253,7 +253,7 @@ namespace XPathExtensionFunctions
                 int charCount = 0;
                 for (int charIdx = 0; charIdx < node.Current.Value.Length; charIdx++)
                 {
-                    if (node.Current.Value[charIdx] ==  charToCount)
+                    if (node.Current.Value[charIdx] == charToCount)
                     {
                         charCount++;
                     }

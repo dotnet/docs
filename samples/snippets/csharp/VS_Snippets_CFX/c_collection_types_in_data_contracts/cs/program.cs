@@ -2,12 +2,12 @@
 // C:\sdtree\snippets\indigo\c_Collection_Types_in_Data_Contracts\CS\Program.cs
 using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Runtime.Serialization;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using System.ComponentModel;
-using System.Security.Permissions;
-using System.Collections.Generic;
 
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.Security.Samples
@@ -75,9 +75,9 @@ namespace Microsoft.Security.Samples
         [DataMember]
         public IList<int> testMarks;
     }
-    public class Marks1 : List<int> {}
-    [CollectionDataContract(ItemName="mark")]
-    public class Marks2 : List<int> {}
+    public class Marks1 : List<int> { }
+    [CollectionDataContract(ItemName = "mark")]
+    public class Marks2 : List<int> { }
     // </Snippet11>
 
     [CollectionDataContract(Name = "Custom{0}List", ItemName = "CustomItem")]
@@ -201,7 +201,7 @@ namespace Microsoft.Security.Samples
     }
 
     // <Snippet1>
-    [DataContract(Name="Customer")]
+    [DataContract(Name = "Customer")]
     public class Customer1
     {
         [DataMember]
@@ -210,7 +210,7 @@ namespace Microsoft.Security.Samples
         public Collection<Address> addresses;
     }
 
-    [DataContract(Name="Customer")]
+    [DataContract(Name = "Customer")]
     public class Customer2
     {
         [DataMember]
@@ -222,17 +222,17 @@ namespace Microsoft.Security.Samples
 
     // <Snippet2>
     [CollectionDataContract]
-    public class CustomerList2 : Collection<string> {}
+    public class CustomerList2 : Collection<string> { }
     // </Snippet2>
 
     // <Snippet3>
-    [CollectionDataContract(Name="cust_list")]
-    public class CustomerList3 : Collection<string> {}
+    [CollectionDataContract(Name = "cust_list")]
+    public class CustomerList3 : Collection<string> { }
     // </Snippet3>
 
     // <Snippet4>
-    [CollectionDataContract(ItemName="customer")]
-    public class CustomerList4 : Collection<string>  {}
+    [CollectionDataContract(ItemName = "customer")]
+    public class CustomerList4 : Collection<string> { }
     // </Snippet4>
 
     // <Snippet5>

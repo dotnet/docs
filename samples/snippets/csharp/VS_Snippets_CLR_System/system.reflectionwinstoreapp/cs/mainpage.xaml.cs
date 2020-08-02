@@ -1,15 +1,15 @@
 ﻿//<snippet1>
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using System.Text;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Navigation;
-using System.Reflection;
-using System.Globalization;
-using System.Text;
 
 namespace Reflection
 {
@@ -17,7 +17,7 @@ namespace Reflection
     {
         public MainPage()
         {
-           this.InitializeComponent();
+            this.InitializeComponent();
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

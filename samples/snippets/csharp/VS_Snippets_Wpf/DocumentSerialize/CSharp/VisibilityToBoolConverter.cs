@@ -4,8 +4,8 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Windows.Data;
 using System.Windows;
+using System.Windows.Data;
 
 namespace SdkSample
 {
@@ -18,8 +18,8 @@ namespace SdkSample
             try
             {
                 Visibility visibilityToConvert = (Visibility)value;
-                if (   (visibilityToConvert == Visibility.Collapsed)
-                    || (visibilityToConvert == Visibility.Hidden)    )
+                if ((visibilityToConvert == Visibility.Collapsed)
+                    || (visibilityToConvert == Visibility.Hidden))
                 {
                     return true;
                 }

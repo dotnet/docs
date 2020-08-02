@@ -1,8 +1,8 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports System.Windows.Forms
 Imports System.Drawing
+Imports System.Windows.Forms
 
 Public Class Class1
 
@@ -50,7 +50,7 @@ Public Class Class1
 
     Public Sub Method2()
         ' <snippet2>
-        My.Computer.Clipboard.SetText("This is a test string.", 
+        My.Computer.Clipboard.SetText("This is a test string.",
         System.Windows.Forms.TextDataFormat.Rtf)
         ' </snippet2>
     End Sub

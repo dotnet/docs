@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -31,10 +31,10 @@ namespace operators
 
             var orientation = direction switch
             {
-                Directions.Up    => Orientation.North,
+                Directions.Up => Orientation.North,
                 Directions.Right => Orientation.East,
-                Directions.Down  => Orientation.South,
-                Directions.Left  => Orientation.West,
+                Directions.Down => Orientation.South,
+                Directions.Left => Orientation.West,
             };
             Console.WriteLine($"Cardinal orientation is {orientation}");
         }
@@ -47,7 +47,7 @@ namespace operators
         {
             SwitchExample.Main();
 
-            var collection = new int[]{1,2,3,4,5,6,7,8,9};
+            var collection = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             var item = TypeExample(collection);
             Console.WriteLine(item);
             item = RecursiveExample(collection);
@@ -67,10 +67,12 @@ namespace operators
             item = CaseGuardExample(collection[0..1].AsEnumerable());
             Console.WriteLine(item);
             item = CaseGuardExample(collection[0..2].AsEnumerable());
-            try {
+            try
+            {
                 item = ExhaustiveExample(default(List<int>));
                 Console.WriteLine(item);
-            } catch (ArgumentNullException e)
+            }
+            catch (ArgumentNullException e)
             {
                 Console.WriteLine($"Caught expected exception: {e.Message}");
             }
@@ -82,7 +84,7 @@ namespace operators
             sequence switch
             {
                 System.Array array => (T)array.GetValue(2),
-                IList<T> list      => list[2],
+                IList<T> list => list[2],
                 IEnumerable<T> seq => seq.Skip(2).First(),
             };
         // </SnippetTypePattern>
@@ -91,12 +93,12 @@ namespace operators
         public static T RecursiveExample<T>(IEnumerable<T> sequence) =>
             sequence switch
             {
-                System.Array { Length : 0}       => default(T),
-                System.Array { Length : 1} array => (T)array.GetValue(0),
-                System.Array { Length : 2} array => (T)array.GetValue(1),
-                System.Array array               => (T)array.GetValue(2),
-                IList<T> list                    => list[2],
-                IEnumerable<T> seq               => seq.Skip(2).First(),
+                System.Array { Length: 0 } => default(T),
+                System.Array { Length: 1 } array => (T)array.GetValue(0),
+                System.Array { Length: 2 } array => (T)array.GetValue(1),
+                System.Array array => (T)array.GetValue(2),
+                IList<T> list => list[2],
+                IEnumerable<T> seq => seq.Skip(2).First(),
             };
         // </SnippetRecursivePattern>
 
@@ -104,14 +106,14 @@ namespace operators
         public static T CaseGuardExample<T>(IEnumerable<T> sequence) =>
             sequence switch
             {
-                System.Array { Length : 0}                => default(T),
-                System.Array { Length : 1} array          => (T)array.GetValue(0),
-                System.Array { Length : 2} array          => (T)array.GetValue(1),
-                System.Array array                        => (T)array.GetValue(2),
-                IEnumerable<T> list when !list.Any()      => default(T),
+                System.Array { Length: 0 } => default(T),
+                System.Array { Length: 1 } array => (T)array.GetValue(0),
+                System.Array { Length: 2 } array => (T)array.GetValue(1),
+                System.Array array => (T)array.GetValue(2),
+                IEnumerable<T> list when !list.Any() => default(T),
                 IEnumerable<T> list when list.Count() < 3 => list.Last(),
-                IList<T> list                             => list[2],
-                IEnumerable<T> seq                        => seq.Skip(2).First(),
+                IList<T> list => list[2],
+                IEnumerable<T> seq => seq.Skip(2).First(),
             };
         // </SnippetGuardCase>
 
@@ -119,17 +121,17 @@ namespace operators
         public static T ExhaustiveExample<T>(IEnumerable<T> sequence) =>
             sequence switch
             {
-                System.Array { Length : 0}       => default(T),
-                System.Array { Length : 1} array => (T)array.GetValue(0),
-                System.Array { Length : 2} array => (T)array.GetValue(1),
-                System.Array array               => (T)array.GetValue(2),
+                System.Array { Length: 0 } => default(T),
+                System.Array { Length: 1 } array => (T)array.GetValue(0),
+                System.Array { Length: 2 } array => (T)array.GetValue(1),
+                System.Array array => (T)array.GetValue(2),
                 IEnumerable<T> list
-                    when !list.Any()             => default(T),
+                    when !list.Any() => default(T),
                 IEnumerable<T> list
-                    when list.Count() < 3        => list.Last(),
-                IList<T> list                    => list[2],
-                null                             => throw new ArgumentNullException(nameof(sequence)),
-                _                                => sequence.Skip(2).First(),
+                    when list.Count() < 3 => list.Last(),
+                IList<T> list => list[2],
+                null => throw new ArgumentNullException(nameof(sequence)),
+                _ => sequence.Skip(2).First(),
             };
         // </SnippetExhaustive>
     }

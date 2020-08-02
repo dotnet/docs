@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Threading;
 using System.ComponentModel;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Documents;
 using System.Windows.Data;
+using System.Windows.Documents;
 
 namespace SDKSample
 {

@@ -1,7 +1,7 @@
 ﻿// <Snippet0>
 using System;
-using System.Runtime.InteropServices;
 using System.Drawing;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace SimulateKeyPress
@@ -44,7 +44,7 @@ namespace SimulateKeyPress
         {
             // Get a handle to the Calculator application. The window class
             // and window name were obtained using the Spy++ tool.
-            IntPtr calculatorHandle = FindWindow("CalcFrame","Calculator");
+            IntPtr calculatorHandle = FindWindow("CalcFrame", "Calculator");
 
             // Verify that Calculator is a running process.
             if (calculatorHandle == IntPtr.Zero)

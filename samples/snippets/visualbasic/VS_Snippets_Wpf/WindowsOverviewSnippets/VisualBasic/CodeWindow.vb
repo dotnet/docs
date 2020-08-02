@@ -1,5 +1,5 @@
-﻿Imports System.Windows.Controls
-Imports System.Windows
+﻿Imports System.Windows
+Imports System.Windows.Controls
 
 Namespace WindowsOverviewSnippetsVisualBasic
     Public Class CodeWindow

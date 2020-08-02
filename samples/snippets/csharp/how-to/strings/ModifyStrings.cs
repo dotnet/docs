@@ -68,7 +68,7 @@ namespace HowToStrings
             int i = source.IndexOf(toRemove);
             if (i >= 0)
             {
-                result= source.Remove(i, toRemove.Length);
+                result = source.Remove(i, toRemove.Length);
             }
             Console.WriteLine(source);
             Console.WriteLine(result);
@@ -134,12 +134,12 @@ namespace HowToStrings
             int length = chars.Length + 2;
             string result = string.Create(length, chars, (Span<char> strContent, char[] charArray) =>
             {
-	            strContent[0] = '0';
-	            strContent[1] = '1';
-	            for (int i = 0; i < charArray.Length; i++)
-	            {
-		            strContent[i + 2] = charArray[i];
-	            }
+                strContent[0] = '0';
+                strContent[1] = '1';
+                for (int i = 0; i < charArray.Length; i++)
+                {
+                    strContent[i + 2] = charArray[i];
+                }
             });
 
             Console.WriteLine(result);

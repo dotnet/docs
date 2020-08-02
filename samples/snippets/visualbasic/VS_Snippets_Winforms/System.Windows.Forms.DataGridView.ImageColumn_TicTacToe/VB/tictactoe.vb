@@ -1,9 +1,9 @@
 ﻿' The following code example demonstrates using images to create a 
 ' TicTacToe game.
 '<snippet0>
+Imports System.Drawing
 Imports System.IO
 Imports System.Windows.Forms
-Imports System.Drawing
 Public Class TicTacToe
     Inherits System.Windows.Forms.Form
 
@@ -324,7 +324,7 @@ Public Class TicTacToe
     Private Function IsAWin() As Boolean
         If ARowIsSame() OrElse AColumnIsSame() OrElse ADiagonalIsSame() Then
             Return True
-        Else 
+        Else
             Return False
         End If
     End Function
@@ -397,7 +397,7 @@ Public Class TicTacToe
 
     Private Function IsOsTurn() As Boolean
         If turn.Text.Equals(oString) Then Return True _
-        Else  : Return False
+        Else : Return False
     End Function
 
     <STAThread> Public Shared Sub Main()

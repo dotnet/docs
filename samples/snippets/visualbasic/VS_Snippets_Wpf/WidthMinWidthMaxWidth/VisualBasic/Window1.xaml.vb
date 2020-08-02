@@ -1,14 +1,14 @@
-﻿Imports System     
-Imports System.Windows     
-Imports System.Windows.Media     
-Imports System.Windows.Controls     
-Imports System.Windows.Documents     
+﻿Imports System
+Imports System.Windows
+Imports System.Windows.Controls
+Imports System.Windows.Documents
+Imports System.Windows.Media
 
 namespace Width_MinWidth_MaxWidth
 
-	'@ <summary>
-	'@ Interaction logic for Window1.xaml
-	'@ </summary>
+    '@ <summary>
+    '@ Interaction logic for Window1.xaml
+    '@ </summary>
 
     Partial Public Class Window1
         Inherits Window
@@ -59,4 +59,4 @@ namespace Width_MinWidth_MaxWidth
             txt5.Text = "Canvas.ClipToBounds is set to " + myCanvas.ClipToBounds.ToString
         End Sub
     End Class
-    End Namespace
+End Namespace

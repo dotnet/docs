@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -9,7 +10,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.ComponentModel;
 
 namespace ListBoxSort_snip
 {
@@ -28,10 +28,10 @@ namespace ListBoxSort_snip
         //<SnippetHowToCode>
         private void OnClick(object sender, RoutedEventArgs e)
         {
-//<SnippetSort>
+            //<SnippetSort>
             myListBox.Items.SortDescriptions.Add(
                 new SortDescription("Content", ListSortDirection.Descending));
-//</SnippetSort>
+            //</SnippetSort>
         }
         //</SnippetHowToCode>
     }

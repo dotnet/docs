@@ -24,11 +24,11 @@
  *************************************************************************************************/
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Automation;
 using System.Windows.Automation.Provider;
-using System.Collections;
 
 namespace ElementProvider
 {

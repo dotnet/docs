@@ -1,8 +1,7 @@
-﻿using static System.Console;
-
-using Microsoft.CodeAnalysis;
+﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using static System.Console;
 
 namespace SyntaxWalker
 {

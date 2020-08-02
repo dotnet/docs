@@ -1,87 +1,87 @@
-﻿using System.ComponentModel;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
+using System.ComponentModel;
 
 namespace SDKSample
 {
-  public class Task : INotifyPropertyChanged
-  {
-      private string name;
-      private string description;
-      private int priority;
-      private TaskType type;
+    public class Task : INotifyPropertyChanged
+    {
+        private string name;
+        private string description;
+        private int priority;
+        private TaskType type;
 
-      public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
-      public Task()
-      {
-      }
+        public Task()
+        {
+        }
 
-      public Task(string name, string description, int priority, TaskType type)
-      {
-          this.name = name;
-          this.description = description;
-          this.priority = priority;
-          this.type = type;
-      }
+        public Task(string name, string description, int priority, TaskType type)
+        {
+            this.name = name;
+            this.description = description;
+            this.priority = priority;
+            this.type = type;
+        }
 
-      //<SnippetToString>
-      public override string ToString()
-      {
-          return name.ToString();
-      }
-      //</SnippetToString>
-      public string TaskName
-      {
-          get { return name; }
-          set
-          {
-              name = value;
-              OnPropertyChanged("TaskName");
-          }
-      }
+        //<SnippetToString>
+        public override string ToString()
+        {
+            return name.ToString();
+        }
+        //</SnippetToString>
+        public string TaskName
+        {
+            get { return name; }
+            set
+            {
+                name = value;
+                OnPropertyChanged("TaskName");
+            }
+        }
 
-      public string Description
-      {
-          get { return description; }
-          set
-          {
-              description = value;
-              OnPropertyChanged("Description");
-          }
-      }
+        public string Description
+        {
+            get { return description; }
+            set
+            {
+                description = value;
+                OnPropertyChanged("Description");
+            }
+        }
 
-      public int Priority
-      {
-          get { return priority; }
-          set
-          {
-              priority = value;
-              OnPropertyChanged("Priority");
-          }
-      }
+        public int Priority
+        {
+            get { return priority; }
+            set
+            {
+                priority = value;
+                OnPropertyChanged("Priority");
+            }
+        }
 
-      public TaskType TaskType
-      {
-          get { return type; }
-          set
-          {
-              type = value;
-              OnPropertyChanged("TaskType");
-          }
-      }
+        public TaskType TaskType
+        {
+            get { return type; }
+            set
+            {
+                type = value;
+                OnPropertyChanged("TaskType");
+            }
+        }
 
-      protected void OnPropertyChanged(string info)
-      {
-          PropertyChangedEventHandler handler = PropertyChanged;
-          if (handler != null)
-          {
-              handler(this, new PropertyChangedEventArgs(info));
-          }
-      }
-  }
+        protected void OnPropertyChanged(string info)
+        {
+            PropertyChangedEventHandler handler = PropertyChanged;
+            if (handler != null)
+            {
+                handler(this, new PropertyChangedEventArgs(info));
+            }
+        }
+    }
     public class Tasks : ObservableCollection<Task>
     {
-        public Tasks(): base()
+        public Tasks() : base()
         {
             Add(new Task("Shopping", "Pick up Groceries and Detergent", 2, TaskType.Home));
             Add(new Task("Laundry", "Do my Laundry", 2, TaskType.Home));

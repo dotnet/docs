@@ -1,14 +1,13 @@
 ﻿' <Snippet8>
 Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
-
 ' <Snippet0>
 Imports System.ComponentModel
-Imports System.ServiceModel
-Imports System.ServiceProcess
 Imports System.Configuration
 Imports System.Configuration.Install
+Imports System.Linq
+Imports System.ServiceModel
+Imports System.ServiceProcess
+Imports System.Text
 ' </Snippet0>
 
 Namespace Microsoft.ServiceModel.Samples

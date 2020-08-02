@@ -1,7 +1,7 @@
 ﻿
 '<snippet01>
-Imports System.Threading.Tasks
 Imports System.Collections.Concurrent
+Imports System.Threading.Tasks
 
 Module PartitionDemo
 

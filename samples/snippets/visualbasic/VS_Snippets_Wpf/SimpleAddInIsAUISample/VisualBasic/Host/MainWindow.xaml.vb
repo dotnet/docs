@@ -1,24 +1,23 @@
-﻿Imports System.Collections.ObjectModel
-Imports System.AddIn.Contract
+﻿Imports System.AddIn.Contract
 Imports System.AddIn.Hosting
+Imports System.Collections.ObjectModel
 Imports System.Windows
-
 Imports HostViews
 
 Namespace Host
-	Partial Public Class MainWindow
-		Inherits Window
-		Private wpfAddInHostView As WPFAddInHostView
+    Partial Public Class MainWindow
+        Inherits Window
+        Private wpfAddInHostView As WPFAddInHostView
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-		Private Sub fileExitMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-			Me.Close()
-		End Sub
+        Private Sub fileExitMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            Me.Close()
+        End Sub
 
-		Private Sub loadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+        Private Sub loadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
             '<SnippetGetUICode>
             ' Get add-in pipeline folder (the folder in which this application was launched from)
             Dim appPath As String = Environment.CurrentDirectory
@@ -41,16 +40,16 @@ Namespace Host
 
             ' Display add-in UI
             Me.addInUIHostGrid.Children.Add(Me.wpfAddInHostView)
-'</SnippetGetUICode>
-		End Sub
+            '</SnippetGetUICode>
+        End Sub
 
-		Private Sub unloadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
-			' Stop displyaing add-in UI
-			Me.addInUIHostGrid.Children.Clear()
+        Private Sub unloadAddInUIMenuItem_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            ' Stop displyaing add-in UI
+            Me.addInUIHostGrid.Children.Clear()
 
-			' Unload add-in
-			Dim addInController As AddInController = AddInController.GetAddInController(Me.wpfAddInHostView)
-			addInController.Shutdown()
-		End Sub
-	End Class
+            ' Unload add-in
+            Dim addInController As AddInController = AddInController.GetAddInController(Me.wpfAddInHostView)
+            addInController.Shutdown()
+        End Sub
+    End Class
 End Namespace

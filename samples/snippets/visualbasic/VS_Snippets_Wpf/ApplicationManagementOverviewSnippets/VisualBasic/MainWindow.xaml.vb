@@ -1,24 +1,24 @@
 ﻿Imports System.Windows
 
 Namespace SDKSample
-	Public Class App
-		Inherits Application
-	End Class
+    Public Class App
+        Inherits Application
+    End Class
 
-	Partial Public Class MainWindow
-		Inherits Window
-		Public Sub New()
-			InitializeComponent()
+    Partial Public Class MainWindow
+        Inherits Window
+        Public Sub New()
+            InitializeComponent()
 
-			'<SnippetGetCurrentAppCODE>
-			' Get current application
+            '<SnippetGetCurrentAppCODE>
+            ' Get current application
             Dim current As Application = App.Current
-			'</SnippetGetCurrentAppCODE>
+            '</SnippetGetCurrentAppCODE>
 
-			'<SnippetGetSTCurrentAppCODE>
-			' Get strongly-typed current application
+            '<SnippetGetSTCurrentAppCODE>
+            ' Get strongly-typed current application
             Dim appCurrent As App = CType(App.Current, App)
-			'</SnippetGetSTCurrentAppCODE>
-		End Sub
-	End Class
+            '</SnippetGetSTCurrentAppCODE>
+        End Sub
+    End Class
 End Namespace

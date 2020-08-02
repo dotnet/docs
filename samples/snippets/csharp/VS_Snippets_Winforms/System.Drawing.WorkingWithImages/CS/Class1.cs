@@ -1,21 +1,21 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Drawing;
 using System.Collections;
-using System.Xml;
-using System.Drawing.Imaging;
+using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
+using System.Windows.Forms;
+using System.Xml;
 
 public class SystemDrawingWorkingWithImages : Form
 {
 
-	[STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SystemDrawingWorkingWithImages());
-        }
+    [STAThread]
+    static void Main()
+    {
+        Application.EnableVisualStyles();
+        Application.SetCompatibleTextRenderingDefault(false);
+        Application.Run(new SystemDrawingWorkingWithImages());
+    }
 
     // 053e3360-bca0-4b25-9afa-0e77a6f17b03
     // How to: Crop and Scale Images

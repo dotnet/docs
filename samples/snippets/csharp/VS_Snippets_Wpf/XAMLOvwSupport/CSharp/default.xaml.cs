@@ -12,7 +12,7 @@ namespace SDKSample
         void NavMe(object sender, RoutedEventArgs e)
         {
             ContentControl cc = e.Source as ContentControl;
-            this.NavigationService.Navigate(new Uri(cc.Content.ToString()+".xaml", UriKind.Relative));
+            this.NavigationService.Navigate(new Uri(cc.Content.ToString() + ".xaml", UriKind.Relative));
         }
     }
 }

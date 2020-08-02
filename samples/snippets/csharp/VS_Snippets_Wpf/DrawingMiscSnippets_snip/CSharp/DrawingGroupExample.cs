@@ -3,9 +3,9 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Effects;
 using System.Windows.Media.Imaging;
-using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
 namespace SDKSample
@@ -36,17 +36,17 @@ namespace SDKSample
                 new GeometryDrawing(
                     new SolidColorBrush(Color.FromArgb(102, 181, 243, 20)),
                     new Pen(Brushes.Black, 4),
-                    new EllipseGeometry(new Point(50,50), 50, 50)
+                    new EllipseGeometry(new Point(50, 50), 50, 50)
                 );
 
             ImageDrawing kiwiPictureDrawing =
                 new ImageDrawing(
                     new BitmapImage(new Uri(@"sampleImages\kiwi.png", UriKind.Relative)),
-                    new Rect(50,50,100,100));
+                    new Rect(50, 50, 100, 100));
 
             GeometryDrawing ellipseDrawing2 =
                 new GeometryDrawing(
-                    new SolidColorBrush(Color.FromArgb(102,181,243,20)),
+                    new SolidColorBrush(Color.FromArgb(102, 181, 243, 20)),
                     new Pen(Brushes.Black, 4),
                     new EllipseGeometry(new Point(150, 150), 50, 50)
                 );
@@ -127,13 +127,13 @@ namespace SDKSample
             maskedAndBeveledGroup.Children.Add(kiwiPictureDrawing);
 
             // Create an opacity mask.
-            RadialGradientBrush rgBrush =new RadialGradientBrush();
-            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(0,0,0,0), 0.55));
-            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(255,0,0,0), 0.65));
-            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(0,0,0,0), 0.75));
-            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(255,0,0,0), 0.80));
-            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(0,0,0,0), 0.90));
-            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(255,0,0,0), 1.0));
+            RadialGradientBrush rgBrush = new RadialGradientBrush();
+            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(0, 0, 0, 0), 0.55));
+            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(255, 0, 0, 0), 0.65));
+            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(0, 0, 0, 0), 0.75));
+            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(255, 0, 0, 0), 0.80));
+            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(0, 0, 0, 0), 0.90));
+            rgBrush.GradientStops.Add(new GradientStop(Color.FromArgb(255, 0, 0, 0), 1.0));
             maskedAndBeveledGroup.OpacityMask = rgBrush;
 
             // Apply a bevel.

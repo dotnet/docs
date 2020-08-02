@@ -1,6 +1,6 @@
 ﻿'<snippet00>
-Imports System.Windows.Forms
 Imports System.Collections.Generic
+Imports System.Windows.Forms
 '<snippet20>
 Public Enum Title
     King

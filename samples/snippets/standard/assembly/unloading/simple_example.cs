@@ -30,7 +30,7 @@ class Test
         alcWeakRef = new WeakReference(alc, trackResurrection: true);
 
         // <Snippet4>
-        var args = new object[1] { new string[] {"Hello"}};
+        var args = new object[1] { new string[] { "Hello" } };
         int result = (int)a.EntryPoint.Invoke(null, args);
         // </Snippet4>
 

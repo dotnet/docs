@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Objects;
 using System.Linq;
 using System.Text;
-using System.Data.Objects;
 using L2EMaterializationCS;
 
 namespace DP_L2E_Materialization_Example

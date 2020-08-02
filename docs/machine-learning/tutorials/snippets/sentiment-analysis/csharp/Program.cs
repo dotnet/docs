@@ -5,9 +5,9 @@ using System.IO;
 using System.Linq;
 using Microsoft.ML;
 using Microsoft.ML.Data;
-using static Microsoft.ML.DataOperationsCatalog;
 using Microsoft.ML.Trainers;
 using Microsoft.ML.Transforms.Text;
+using static Microsoft.ML.DataOperationsCatalog;
 // </SnippetAddUsings>
 
 namespace SentimentAnalysis
@@ -200,7 +200,7 @@ namespace SentimentAnalysis
             Console.WriteLine();
 
             // <SnippetDisplayResults>
-            foreach (SentimentPrediction prediction  in predictedResults)
+            foreach (SentimentPrediction prediction in predictedResults)
             {
                 Console.WriteLine($"Sentiment: {prediction.SentimentText} | Prediction: {(Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative")} | Probability: {prediction.Probability} ");
             }

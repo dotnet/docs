@@ -1,4 +1,4 @@
-namespace SDKSample
+﻿namespace SDKSample
 {
     class Person
     {

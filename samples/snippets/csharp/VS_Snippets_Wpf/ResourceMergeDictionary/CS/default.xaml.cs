@@ -1,13 +1,13 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.IO;
-using System.Windows.Markup;
-using System.Windows.Automation;
 
 namespace SDKSamples
 {
@@ -28,7 +28,8 @@ namespace SDKSamples
                 fs.Close();
                 return rd;
             }
-            else {
+            else
+            {
                 FileStream fs = new FileStream(_rdFileName, FileMode.Open);
                 ResourceDictionary rd = (ResourceDictionary)XamlReader.Load(fs);
                 root.Resources.MergedDictionaries.Add(rd);

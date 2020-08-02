@@ -1,9 +1,9 @@
-﻿Imports System.Xml
-Imports System.Collections.ObjectModel
+﻿Imports System.Collections.ObjectModel
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Syndication
 Imports System.ServiceModel.Web
+Imports System.Xml
 
 Public Class Snippets
     Public Shared Sub Snippet9()

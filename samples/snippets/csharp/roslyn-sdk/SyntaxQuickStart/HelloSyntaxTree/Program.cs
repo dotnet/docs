@@ -1,8 +1,8 @@
-﻿using static System.Console;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
+using static System.Console;
 
 namespace HelloSyntaxTree
 {

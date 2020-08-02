@@ -1,20 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Objects;
 using System.Data.Services;
-using System.Linq;
-using System.ServiceModel.Web;
-using System.Web;
 using System.Data.Services.Common;
+using System.IO;
+using System.Linq;
 //<snippetUsingLinqExpressions>
 using System.Linq.Expressions;
 //</snippetUsingLinqExpressions>
 using System.Reflection;
-using System.Data.Objects;
-using System.Data;
-using System.IO;
 using System.Runtime.Serialization;
-using System.Xml.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
+using System.Web;
+using System.Xml.Serialization;
 namespace NorthwindDataService
 {
     [ServiceBehavior(IncludeExceptionDetailInFaults = true)]
@@ -334,33 +334,33 @@ namespace NorthwindDataService
             }
         }
 
-[WebGet]
-public Customer CloneCustomer(string serializedCustomer)
-{
-    NorthwindEntities context = this.CurrentDataSource;
+        [WebGet]
+        public Customer CloneCustomer(string serializedCustomer)
+        {
+            NorthwindEntities context = this.CurrentDataSource;
 
-    XmlSerializer xmlSerializer =
-        new System.Xml.Serialization.XmlSerializer(typeof(Customer));
+            XmlSerializer xmlSerializer =
+                new System.Xml.Serialization.XmlSerializer(typeof(Customer));
 
-    TextReader reader = new StringReader(serializedCustomer);
+            TextReader reader = new StringReader(serializedCustomer);
 
-    // Get a customer created with a property-wise clone
-    // of the supplied entity, with a new ID.
-    Customer clone = CloneCustomer(xmlSerializer.Deserialize(reader) as Customer);
+            // Get a customer created with a property-wise clone
+            // of the supplied entity, with a new ID.
+            Customer clone = CloneCustomer(xmlSerializer.Deserialize(reader) as Customer);
 
-    try
-    {
-        // Note that this bypasses the service ops restrictions.
-        context.AddToCustomers(clone);
-        context.SaveChanges();
-    }
-    catch (Exception ex)
-    {
-        throw new DataServiceException(
-            "The Customer could not be cloned.", ex.GetBaseException());
-    }
-    return clone;
-}
+            try
+            {
+                // Note that this bypasses the service ops restrictions.
+                context.AddToCustomers(clone);
+                context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new DataServiceException(
+                    "The Customer could not be cloned.", ex.GetBaseException());
+            }
+            return clone;
+        }
 
         private static Customer CloneCustomer(Customer customer)
         {

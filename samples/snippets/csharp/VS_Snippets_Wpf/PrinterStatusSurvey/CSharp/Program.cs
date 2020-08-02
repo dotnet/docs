@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Printing;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
+using System.Printing;
+using System.Text;
 
 namespace PrinterStatusSurvey
 {
@@ -25,25 +25,25 @@ namespace PrinterStatusSurvey
             String line;
             String statusReport = "\n\nAny problem states are indicated below:\n\n";
             while ((line = fileOfPrintServers.ReadLine()) != null)
-             {
-                 PrintServer myPS = new PrintServer(line, PrintSystemDesiredAccess.AdministrateServer);
-                 PrintQueueCollection myPrintQueues = myPS.GetPrintQueues();
-                 statusReport = statusReport + "\n" + line;
-                 foreach (PrintQueue pq in myPrintQueues)
-                 {
-                     pq.Refresh();
-                     statusReport = statusReport + "\n\t" + pq.Name + ":";
-                     if (useAttributesResponse == "y")
-                     {
-                         TroubleSpotter.SpotTroubleUsingQueueAttributes(ref statusReport, pq);
-                         // TroubleSpotter class is defined in the complete example.
-                     }
-                     else
-                     {
-                         TroubleSpotter.SpotTroubleUsingProperties(ref statusReport, pq);
-                     }
-                 }// end for each print queue
-             }// end while list of print servers is not yet exhausted
+            {
+                PrintServer myPS = new PrintServer(line, PrintSystemDesiredAccess.AdministrateServer);
+                PrintQueueCollection myPrintQueues = myPS.GetPrintQueues();
+                statusReport = statusReport + "\n" + line;
+                foreach (PrintQueue pq in myPrintQueues)
+                {
+                    pq.Refresh();
+                    statusReport = statusReport + "\n\t" + pq.Name + ":";
+                    if (useAttributesResponse == "y")
+                    {
+                        TroubleSpotter.SpotTroubleUsingQueueAttributes(ref statusReport, pq);
+                        // TroubleSpotter class is defined in the complete example.
+                    }
+                    else
+                    {
+                        TroubleSpotter.SpotTroubleUsingProperties(ref statusReport, pq);
+                    }
+                }// end for each print queue
+            }// end while list of print servers is not yet exhausted
 
             fileOfPrintServers.Close();
             Console.WriteLine(statusReport);
@@ -187,8 +187,8 @@ namespace PrinterStatusSurvey
         {
             if (pq.StartTimeOfDay != pq.UntilTimeOfDay) // If the printer is not available 24 hours a day
             {
-		DateTime utcNow = DateTime.UtcNow;
-		Int32 utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
+                DateTime utcNow = DateTime.UtcNow;
+                Int32 utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
 
                 // If now is not within the range of available times . . .
                 if (!((pq.StartTimeOfDay < utcNowAsMinutesAfterMidnight)

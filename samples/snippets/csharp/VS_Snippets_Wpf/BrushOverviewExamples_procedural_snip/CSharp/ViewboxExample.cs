@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.BrushExamples
 {
@@ -28,7 +28,7 @@ namespace Microsoft.Samples.BrushExamples
             rectangleBorder.BorderBrush = Brushes.Black;
             rectangleBorder.BorderThickness = new Thickness(1);
             rectangleBorder.VerticalAlignment = VerticalAlignment.Top;
-            rectangleBorder.Margin = new Thickness(0,0,10,0);
+            rectangleBorder.Margin = new Thickness(0, 0, 10, 0);
 
             // <SnippetGraphicsMMTileBrushViewboxWithStretchTiling>
             // Create a rectangle.
@@ -44,7 +44,7 @@ namespace Microsoft.Samples.BrushExamples
 
             myImageBrush.Viewbox = new Rect(0.5, 0.25, 0.25, 0.5);
             myImageBrush.ViewboxUnits = BrushMappingMode.RelativeToBoundingBox;
-            myImageBrush.Viewport = new Rect(0,0,0.25,0.25);
+            myImageBrush.Viewport = new Rect(0, 0, 0.25, 0.25);
             myImageBrush.ViewportUnits = BrushMappingMode.RelativeToBoundingBox;
             myImageBrush.TileMode = TileMode.Tile;
             myImageBrush.Stretch = Stretch.Fill;

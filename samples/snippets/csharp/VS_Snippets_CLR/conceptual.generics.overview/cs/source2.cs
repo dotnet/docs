@@ -12,7 +12,7 @@ public class MyEventArgs : EventArgs
 
     public string Message
     {
-        get {return msg;}
+        get { return msg; }
     }
 }
 

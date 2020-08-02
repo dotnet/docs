@@ -1,5 +1,5 @@
-﻿Imports System.IO
-Imports System.Collections.Generic
+﻿Imports System.Collections.Generic
+Imports System.IO
 
 Public Class QuerySamples1
 

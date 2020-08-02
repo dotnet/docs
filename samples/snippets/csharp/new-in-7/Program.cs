@@ -6,7 +6,7 @@ namespace new_in_7
     class Numerics
     {
         // <SnippetThousandSeparators>
-        public const int Sixteen =   0b0001_0000;
+        public const int Sixteen = 0b0001_0000;
         public const int ThirtyTwo = 0b0010_0000;
         public const int SixtyFour = 0b0100_0000;
         public const int OneHundredTwentyEight = 0b1000_0000;

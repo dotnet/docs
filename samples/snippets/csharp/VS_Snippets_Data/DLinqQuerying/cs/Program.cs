@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
-using System.Data.Linq;
 
 namespace cs_querying
 {
@@ -95,7 +95,7 @@ namespace cs_querying
 
         public Northwnd GetNorthwind()
         {
-            Northwnd x = null ;
+            Northwnd x = null;
             return x;
         }
 

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Data.Services;
+using System.Data.Services.Common;
+using System.IO;
 using System.Linq;
 using System.ServiceModel.Web;
 using System.Web;
-using System.Data.Services.Common;
-using System.IO;
 
 namespace NorthwindDataService
 {
@@ -27,7 +27,7 @@ namespace NorthwindDataService
                 | EntitySetRights.WriteMerge);
             config.SetEntitySetAccessRule("Order_Details", EntitySetRights.All);
             config.SetEntitySetAccessRule("Products", EntitySetRights.All);
-        //</snippetDataServiceConfig>
+            //</snippetDataServiceConfig>
 
             //<snippetDataServiceConfigPaging>
             // Set page size defaults for the data service.

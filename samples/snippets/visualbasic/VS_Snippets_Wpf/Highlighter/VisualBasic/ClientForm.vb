@@ -1,4 +1,4 @@
-﻿ '******************************************************************************
+﻿'******************************************************************************
 ' * File: ClientForm.vb
 ' *
 ' * Description: 
@@ -39,10 +39,10 @@
 ' * 
 ' *****************************************************************************
 Imports System.Drawing
-Imports System.Windows.Forms
-Imports System.Windows.Automation
 Imports System.Threading
 Imports System.Timers
+Imports System.Windows.Automation
+Imports System.Windows.Forms
 
 
 

@@ -1,9 +1,9 @@
 ﻿Imports System.Collections.Generic
-Imports System.Text
-Imports System.Transactions
-Imports System.ServiceModel.MsmqIntegration
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
+Imports System.ServiceModel.MsmqIntegration
+Imports System.Text
+Imports System.Transactions
 
 
 Class Snippets

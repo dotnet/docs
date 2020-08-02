@@ -80,7 +80,7 @@ namespace GitHubActivityReport
             {
                 var results = await runPagedQueryAsync(client, PagedIssueQuery, "docs",
                     cancellationSource.Token, progressReporter);
-                foreach(var issue in results)
+                foreach (var issue in results)
                     Console.WriteLine(issue);
             }
             catch (OperationCanceledException)

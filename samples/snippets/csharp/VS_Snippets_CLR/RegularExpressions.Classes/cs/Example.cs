@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 public class Example
 {
@@ -44,9 +44,9 @@ public class Example
             // Print out the character position where a match was found.
             Console.WriteLine("Found match at position " + m.Index);
         }
-       // The example displays the following output:
-       //       Found match at position 3
-       // </Snippet2>
+        // The example displays the following output:
+        //       Found match at position 3
+        // </Snippet2>
     }
 
     private static void UseMatchCollection()
@@ -207,5 +207,5 @@ public class Example
         //       Section1
         //       119900
         // </Snippet8>
-   }
+    }
 }

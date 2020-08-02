@@ -11,7 +11,7 @@ public class Employee : IComparable
         var e = o as Employee;
         if (e == null)
         {
-           throw new ArgumentException("o is not an Employee object.");
+            throw new ArgumentException("o is not an Employee object.");
         }
         return Name.CompareTo(e.Name);
     }
@@ -22,7 +22,7 @@ public class Example
 {
     public static void Main()
     {
-        var emp1 = new Employee() { Name = "John"};
+        var emp1 = new Employee() { Name = "John" };
         var emp2 = new Employee() { Name = "Jon" };
         Console.WriteLine(emp1.CompareTo(emp2));
     }

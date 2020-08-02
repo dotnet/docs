@@ -40,10 +40,10 @@
  ******************************************************************************/
 using System;
 using System.Drawing;
-using System.Windows.Forms;
-using System.Windows.Automation;
 using System.Threading;
 using System.Timers;
+using System.Windows.Automation;
+using System.Windows.Forms;
 
 namespace Highlighter
 {
@@ -152,7 +152,7 @@ namespace Highlighter
         private void UpdateHighlight()
         {
             // Hide old rectangle.
-                highlight.Visible = false;
+            highlight.Visible = false;
 
             // Show new rectangle.
             highlight.Location = new Rectangle(

@@ -1,11 +1,11 @@
 ﻿'<Snippet1>
-Imports System.Reflection.Emit
+Imports System.Collections
+Imports System.Diagnostics
 Imports System.Reflection
+Imports System.Reflection.Emit
 Imports System.Security
 Imports System.Security.Permissions
 Imports System.Security.Policy
-Imports System.Collections
-Imports System.Diagnostics
 
 ' This code example works properly only if it is run from a fully 
 ' trusted location, such as your local computer.

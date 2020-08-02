@@ -6,17 +6,18 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Controls;
 using HexConverter;
 
 namespace Microsoft.Samples.Animation.TimingBehavior
 {
 
-    public class SampleViewer : Page {
+    public class SampleViewer : Page
+    {
 
         public SampleViewer()
         {
@@ -46,7 +47,7 @@ namespace Microsoft.Samples.Animation.TimingBehavior
             myTabItem = new TabItem();
             myTabItem.Header = "BeginTime Example";
             myFrame = new Frame();
-           // myFrame.Source = new Uri("BeginTimeExample.cs");
+            // myFrame.Source = new Uri("BeginTimeExample.cs");
             //myFrame.Content = new BeginTimeExample();
             myFrame.Background = Brushes.White;
             myTabControl.Items.Add(myTabItem);

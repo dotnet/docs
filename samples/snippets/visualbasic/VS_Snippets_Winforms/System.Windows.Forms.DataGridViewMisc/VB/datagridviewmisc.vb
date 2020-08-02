@@ -1,10 +1,10 @@
 ﻿' This file is for miscellaneous, tiny snippets that do not need to exist within a wider scope.
 ' Do not wrap the entire file in a snippet tag for use in any topic.
 
-Imports System.Windows.Forms
 Imports System.ComponentModel
 Imports System.Data
 Imports System.Drawing
+Imports System.Windows.Forms
 
 Public Class DataGridViewMisc
     Inherits Form

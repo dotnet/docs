@@ -1,14 +1,14 @@
 ﻿
 Imports System.Collections.Generic
 Imports System.IO
+Imports System.Security
+Imports System.Threading
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
-Imports System.Threading
-Imports System.Security
 
-<Assembly: SecurityTransparent()> 
+<Assembly: SecurityTransparent()>
 
 Namespace SDKSample
 

@@ -39,12 +39,12 @@
  *************************************************************************************************/
 
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Automation;
-using System.Timers;
 using System.Collections;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text;
+using System.Timers;
+using System.Windows.Automation;
 
 namespace FocusTracker
 {
@@ -87,8 +87,8 @@ namespace FocusTracker
             onWindowClosed = new AutomationEventHandler(WindowClosedHandler);
             foreach (AutomationElement element in elementCollection)
             {
-               int[] rid = (int[])element.GetCurrentPropertyValue(AutomationElement.RuntimeIdProperty);
-               if (RuntimeIdListed(rid, savedRuntimeIds) < 0)
+                int[] rid = (int[])element.GetCurrentPropertyValue(AutomationElement.RuntimeIdProperty);
+                if (RuntimeIdListed(rid, savedRuntimeIds) < 0)
                 {
                     savedRuntimeIds.Add(rid);
                     AddToWindowHandler(element);
@@ -106,15 +106,15 @@ namespace FocusTracker
                 new AutomationFocusChangedEventHandler(OnFocusChanged));
         }
 
-// <Snippet106>
+        // <Snippet106>
         private void OnFocusChanged(object src, AutomationFocusChangedEventArgs e)
         {
             AutomationElement elementFocused = src as AutomationElement;
             // TODO: Do something in response to the focus change.
         }
-// </Snippet106>
+        // </Snippet106>
 
-// <Snippet105>
+        // <Snippet105>
         /// <summary>
         /// Handles structure-changed events. If a new app window has been added, this method ensures
         /// it's in the list of runtime IDs and subscribed to window-close events.
@@ -147,9 +147,9 @@ namespace FocusTracker
                 }
             }
         }
-// </Snippet105>
+        // </Snippet105>
 
-// <Snippet101>
+        // <Snippet101>
         /// <summary>
         /// Handles window-closed events. Removes the window from the top-level window list.
         /// </summary>
@@ -191,9 +191,9 @@ namespace FocusTracker
             }
             return -1;
         }
-// </Snippet103>
+        // </Snippet103>
 
-// </Snippet101>
+        // </Snippet101>
 
         /// <summary>
         /// Gets the caption of a window.
@@ -230,7 +230,7 @@ namespace FocusTracker
             }
         }
 
-// <Snippet102>
+        // <Snippet102>
         /// <summary>
         /// Retrieves the top-level window that contains the specified UI Automation element.
         /// </summary>

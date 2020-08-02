@@ -1,9 +1,9 @@
-Imports System.Globalization
+﻿Imports System.Globalization
 
 Module Program
     Sub Main()
         Dim value As Decimal = 126.03
-        Dim amount As FormattableString = $"The amount is {value:C}" 
+        Dim amount As FormattableString = $"The amount is {value:C}"
         Console.WriteLine(amount.ToString())
         Console.WriteLine(amount.ToString(new CultureInfo("fr-FR")))
         Console.WriteLine(FormattableString.Invariant(amount))

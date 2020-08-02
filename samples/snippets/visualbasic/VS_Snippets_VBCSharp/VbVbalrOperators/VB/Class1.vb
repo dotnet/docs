@@ -1,6 +1,6 @@
-﻿Imports System.Windows.Forms
-Imports System.ComponentModel
+﻿Imports System.ComponentModel
 Imports System.Diagnostics
+Imports System.Windows.Forms
 
 Public Class Class1
 
@@ -182,7 +182,7 @@ Public Class Class1
     '****************************************************************************
     Public Sub TestPattern5()
         '<Snippet74>
-        Dim sMatch As Boolean = 
+        Dim sMatch As Boolean =
           (phoneNum Like "###[ -.]####") OrElse (phoneNum Like "#######")
         '</Snippet74>
     End Sub
@@ -218,7 +218,7 @@ Public Class Class1
 
     '****************************************************************************
     '<Snippet69>
-    Public Sub processControl(ByVal f As System.Windows.Forms.Form, 
+    Public Sub processControl(ByVal f As System.Windows.Forms.Form,
         ByVal c As System.Windows.Forms.Control)
         Dim active As System.Windows.Forms.Control = f.ActiveControl
         If (active IsNot Nothing) And (c Is active) Then
@@ -674,7 +674,7 @@ Public Class Class1
 
     '****************************************************************************
     '<Snippet25>
-    Public Function findValue(ByVal arr() As Double, 
+    Public Function findValue(ByVal arr() As Double,
         ByVal searchValue As Double) As Double
         Dim i As Integer = 0
         While i <= UBound(arr) AndAlso arr(i) <> searchValue

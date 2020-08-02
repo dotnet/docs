@@ -1,29 +1,25 @@
 ﻿'<snippetUsingSerialization> 
 '<snippetUsing> 
-Imports System.Linq
 Imports System.Collections.Generic
-Imports System.Text
+'<snippetUsingEvents> 
+Imports System.ComponentModel
 Imports System.Data
 Imports System.Data.Common
+Imports System.Data.Common.CommandTrees
+Imports System.Data.EntityClient
+Imports System.Data.Metadata.Edm
 Imports System.Data.Objects
 Imports System.Data.Objects.DataClasses
-
+'</snippetUsingEvents> 
+Imports System.Data.SqlClient
+Imports System.IO
+Imports System.Linq
 '</snippetUsing> 
 Imports System.Runtime.Serialization
 Imports System.Runtime.Serialization.Formatters.Binary
-Imports System.IO
-
+Imports System.Text
 '</snippetUsingSerialization> 
 Imports System.Xml.Serialization
-Imports System.Data.Common.CommandTrees
-Imports System.Data.Metadata.Edm
-Imports System.Data.EntityClient
-
-'<snippetUsingEvents> 
-Imports System.ComponentModel
-
-'</snippetUsingEvents> 
-Imports System.Data.SqlClient
 
 Class Source1
     '<snippetExecuteStoreCommandAndQueryForNewEntity> 

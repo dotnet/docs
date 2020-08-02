@@ -7,7 +7,7 @@ using System.ServiceModel;
 namespace Microsoft.ServiceModel.Samples
 {
     // Define a service contract.
-    [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
+    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
     public interface ICalculator
     {
         [OperationContract]

@@ -1,9 +1,9 @@
 ﻿'<Snippet1>
-Imports System.Drawing
-Imports System.Windows.Forms
 Imports System.ComponentModel
-Imports System.Text
+Imports System.Drawing
 Imports System.IO
+Imports System.Text
+Imports System.Windows.Forms
 
 ' A simple form that represents a window in our application
 Public Class AppForm1

@@ -1,22 +1,22 @@
 ﻿//<Snippet1>
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
-using System.Collections.Generic;
 
 // Define a trivial base class and two trivial interfaces
 // to use when demonstrating constraints.
 //
-public class ExampleBase {}
+public class ExampleBase { }
 
-public interface IExampleA {}
+public interface IExampleA { }
 
-public interface IExampleB {}
+public interface IExampleB { }
 
 // Define a trivial type that can substitute for type parameter
 // TSecond.
 //
-public class ExampleDerived : ExampleBase, IExampleA, IExampleB {}
+public class ExampleDerived : ExampleBase, IExampleA, IExampleB { }
 
 public class Example
 {
@@ -69,7 +69,7 @@ public class Example
         // in a variable with the same name as the type parameter.
         //
         //<Snippet5>
-        string[] typeParamNames = {"TFirst", "TSecond"};
+        string[] typeParamNames = { "TFirst", "TSecond" };
         GenericTypeParameterBuilder[] typeParams =
             myType.DefineGenericParameters(typeParamNames);
 
@@ -98,7 +98,7 @@ public class Example
         // containing the interface types.
         //<Snippet7>
         TSecond.SetBaseTypeConstraint(baseType);
-        Type[] interfaceTypes = {interfaceA, interfaceB};
+        Type[] interfaceTypes = { interfaceA, interfaceB };
         TSecond.SetInterfaceConstraints(interfaceTypes);
         //</Snippet7>
 
@@ -122,7 +122,7 @@ public class Example
         //<Snippet22>
         Type listOf = typeof(List<>);
         Type listOfTFirst = listOf.MakeGenericType(TFirst);
-        Type[] mParamTypes = {TFirst.MakeArrayType()};
+        Type[] mParamTypes = { TFirst.MakeArrayType() };
 
         MethodBuilder exMethod =
             myType.DefineMethod("ExampleMethod",
@@ -172,7 +172,7 @@ public class Example
         Type ienumOf = typeof(IEnumerable<>);
         Type TfromListOf = listOf.GetGenericArguments()[0];
         Type ienumOfT = ienumOf.MakeGenericType(TfromListOf);
-        Type[] ctorArgs = {ienumOfT};
+        Type[] ctorArgs = { ienumOfT };
 
         ConstructorInfo ctorPrep = listOf.GetConstructor(ctorArgs);
         ConstructorInfo ctor =
@@ -186,7 +186,7 @@ public class Example
         // Create the type and save the assembly.
         //<Snippet8>
         Type finished = myType.CreateType();
-        myAssembly.Save(myAsmName.Name+".dll");
+        myAssembly.Save(myAsmName.Name + ".dll");
         //</Snippet8>
 
         // Invoke the method.
@@ -201,7 +201,7 @@ public class Example
         // constructed type.
         //
         //<Snippet9>
-        Type[] typeArgs = {typeof(Example), typeof(ExampleDerived)};
+        Type[] typeArgs = { typeof(Example), typeof(ExampleDerived) };
         Type constructed = finished.MakeGenericType(typeArgs);
         MethodInfo mi = constructed.GetMethod("ExampleMethod");
         //</Snippet9>
@@ -213,11 +213,11 @@ public class Example
         // on the resulting List<Example>.
         //
         //<Snippet10>
-        Example[] input = {new Example(), new Example()};
-        object[] arguments = {input};
+        Example[] input = { new Example(), new Example() };
+        object[] arguments = { input };
 
         List<Example> listX =
-            (List<Example>) mi.Invoke(null, arguments);
+            (List<Example>)mi.Invoke(null, arguments);
 
         Console.WriteLine(
             "\nThere are {0} elements in the List<Example>.",
@@ -243,11 +243,11 @@ public class Example
         Console.WriteLine("\nListing {0} type parameters for type '{1}'.",
             typeParameters.Length, t);
 
-        foreach( Type tParam in typeParameters )
+        foreach (Type tParam in typeParameters)
         {
             Console.WriteLine("\r\nType parameter {0}:", tParam.ToString());
 
-            foreach( Type c in tParam.GetGenericParameterConstraints() )
+            foreach (Type c in tParam.GetGenericParameterConstraints())
             {
                 if (c.IsInterface)
                 {
@@ -286,7 +286,7 @@ public class Example
         }
 
         if ((constraints & GenericParameterAttributes.DefaultConstructorConstraint)
-            !=GenericParameterAttributes.None)
+            != GenericParameterAttributes.None)
         {
             Console.WriteLine("    DefaultConstructorConstraint");
         }

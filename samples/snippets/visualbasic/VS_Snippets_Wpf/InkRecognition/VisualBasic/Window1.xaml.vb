@@ -1,7 +1,7 @@
 ﻿'<Snippet2>
+Imports System.IO
 Imports System.Windows
 Imports Microsoft.Ink
-Imports System.IO
 
 '/ <summary>
 '/ Interaction logic for Window1.xaml

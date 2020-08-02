@@ -4,9 +4,9 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
-using System.Windows.Media.Animation;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.KeyFrameExamples
 {
@@ -108,7 +108,7 @@ namespace Microsoft.Samples.KeyFrameExamples
             myStoryboard.Children.Add(booleanAnimation);
 
             // Start the storyboard when the button is clicked.
-            myButton.Click += delegate(object sender, RoutedEventArgs e)
+            myButton.Click += delegate (object sender, RoutedEventArgs e)
             {
                 myStoryboard.Begin(this);
             };

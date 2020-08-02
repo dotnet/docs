@@ -40,7 +40,7 @@ class Example
         string string1 = "Hello World";
         string string2 = "Hello World!";
         int MyInt = string1.CompareTo(string2);
-        Console.WriteLine( MyInt );
+        Console.WriteLine(MyInt);
         //</snippet8>
     }
 

@@ -1,6 +1,6 @@
-﻿Imports System.ServiceModel
+﻿Imports System.Runtime.Serialization
 Imports System.Security.Permissions
-Imports System.Runtime.Serialization
+Imports System.ServiceModel
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Example

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security.Tokens;
-using System.Security.Permissions;
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
 namespace ProxySample
@@ -94,7 +94,7 @@ namespace ClientSample
     public class Calculator : ICalculator
     {
         //<snippet2>
-        [OperationBehavior(Impersonation=ImpersonationOption.Required)]
+        [OperationBehavior(Impersonation = ImpersonationOption.Required)]
         public double Add(double a, double b)
         {
             return a + b;

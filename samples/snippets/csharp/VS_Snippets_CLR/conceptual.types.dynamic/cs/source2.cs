@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Reflection;
 using System.Globalization;
+using System.Reflection;
 
 class CustomBinder : Binder
 {
@@ -175,15 +175,15 @@ public class CustomBinderDriver
         object[] args;
 
         // Case 1. Neither argument coercion nor member selection is needed.
-        args = new object[] {};
+        args = new object[] { };
         t.InvokeMember("PrintBob", flags, binder, null, args);
 
         // Case 2. Only member selection is needed.
-        args = new object[] {42};
+        args = new object[] { 42 };
         t.InvokeMember("PrintValue", flags, binder, null, args);
 
         // Case 3. Only argument coercion is needed.
-        args = new object[] {"5.5"};
+        args = new object[] { "5.5" };
         t.InvokeMember("PrintNumber", flags, binder, null, args);
     }
 

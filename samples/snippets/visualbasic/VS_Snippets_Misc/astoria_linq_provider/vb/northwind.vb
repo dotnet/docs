@@ -1,15 +1,15 @@
 ﻿Option Explicit On
 Option Strict On
 
+Imports System.Collections
 '<snippetLinq2SqlProvider>
 Imports System.ComponentModel
-Imports System.Collections
-Imports System.Linq
-Imports System.Reflection
 Imports System.Data.Linq
 Imports System.Data.Linq.Mapping
 Imports System.Data.Services
 Imports System.Data.Services.Common
+Imports System.Linq
+Imports System.Reflection
 
 '<snippetIQueryableRequirements>
 ' Define the key properties for the LINQ to SQL data classes.

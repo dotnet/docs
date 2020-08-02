@@ -1,6 +1,6 @@
-﻿ '<SnippetBitmapDecoderFullPage>
-Imports System.Windows
+﻿'<SnippetBitmapDecoderFullPage>
 Imports System.IO
+Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
@@ -10,7 +10,7 @@ Namespace SDKSample
 
     Class BitmapDecoderExample
         Inherits Page
- 
+
         Public Sub New()
             '<SnippetBitmapDecoderCreate>
             Dim uriBitmap As BitmapDecoder = BitmapDecoder.Create(New Uri("sampleImages/waterlilies.jpg", UriKind.Relative), BitmapCreateOptions.None, BitmapCacheOption.Default)

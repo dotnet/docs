@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Drawing;
 using System.Collections;
+using System.Drawing;
+using System.Windows.Forms;
 using System.Xml;
 
 public class Form1 : Form
@@ -48,7 +48,7 @@ public class Form1 : Form
         // dimensions the same size as the drawing surface of Form1.
         myBuffer = currentContext.Allocate(this.CreateGraphics(),
            this.DisplayRectangle);
-	// </snippet21>
+        // </snippet21>
 
         // <snippet22>
         // Draws an ellipse to the graphics buffer.

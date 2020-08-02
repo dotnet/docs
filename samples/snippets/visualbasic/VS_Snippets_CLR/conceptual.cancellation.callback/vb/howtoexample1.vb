@@ -1,9 +1,9 @@
 ﻿' Visual Basic .NET Document
 
 ' <Snippet1>
+Imports System.Net
 Imports System.Threading
 Imports System.Threading.Tasks
-Imports System.Net
 
 Class CancelWithCallback
     Shared Sub Main()
@@ -18,8 +18,8 @@ Class CancelWithCallback
                ' Create an event handler to receive the result.
                AddHandler wc.DownloadStringCompleted,
                           Sub(obj, e)
-                             ' Check status of WebClient, not external token.
-                             If Not e.Cancelled Then
+                              ' Check status of WebClient, not external token.
+                              If Not e.Cancelled Then
                                   Console.WriteLine("The download has completed:" + vbCrLf)
                                   Console.WriteLine(e.Result + vbCrLf + vbCrLf + "Press any key.")
                               Else

@@ -11,17 +11,17 @@ class Example
 
     private static string GetText(string path, string filename)
     {
-         var sr = File.OpenText(AppendPathSeparator(path) + filename);
-         var text = sr.ReadToEnd();
-         return text;
+        var sr = File.OpenText(AppendPathSeparator(path) + filename);
+        var text = sr.ReadToEnd();
+        return text;
 
-         // Declare a local function.
-         string AppendPathSeparator(string filepath)
-         {
-            if (! filepath.EndsWith(@"\"))
-               filepath += @"\";
+        // Declare a local function.
+        string AppendPathSeparator(string filepath)
+        {
+            if (!filepath.EndsWith(@"\"))
+                filepath += @"\";
 
             return filepath;
-         }
+        }
     }
 }

@@ -1,5 +1,5 @@
-﻿Imports System.Drawing.Imaging
-Imports System.Drawing
+﻿Imports System.Drawing
+Imports System.Drawing.Imaging
 Imports System.Windows.Forms
 
 Public Class Form1
@@ -61,6 +61,6 @@ Public Class Form1
     End Sub
     '</snippet1>
 
-  
+
 
 End Class

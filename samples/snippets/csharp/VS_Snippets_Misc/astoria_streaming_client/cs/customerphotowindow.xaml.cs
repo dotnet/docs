@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Services.Client;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -12,8 +14,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using NorthwindStreamingClient.Northwind;
-using System.Data.Services.Client;
-using System.IO;
 
 namespace NorthwindStreamingClient
 {

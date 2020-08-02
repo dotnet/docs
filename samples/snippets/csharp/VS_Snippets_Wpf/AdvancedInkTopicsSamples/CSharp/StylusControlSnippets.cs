@@ -10,7 +10,7 @@ namespace StylusControlSnippets
     //<Snippet14>
     class InkControl : Label
     {
-    //</Snippet14>
+        //</Snippet14>
 
         DynamicRenderer dr;
 
@@ -19,13 +19,13 @@ namespace StylusControlSnippets
         //<Snippet17>
         public InkControl()
         {
-        //</Snippet17>
+            //</Snippet17>
 
             // Add an InkPresenter for drawing.
             ip = new InkPresenter();
             this.Content = ip;
 
-        //<Snippet18>
+            //<Snippet18>
             // Add a dynamic renderer that
             // draws ink as it "flows" from the stylus.
             dr = new DynamicRenderer();
@@ -33,7 +33,7 @@ namespace StylusControlSnippets
             this.StylusPlugIns.Add(dr);
         }
         //</Snippet18>
-    //<Snippet15>
+        //<Snippet15>
     }
     //</Snippet15>
 }

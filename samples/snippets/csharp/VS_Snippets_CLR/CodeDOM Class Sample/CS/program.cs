@@ -1,9 +1,9 @@
 ﻿//<Snippet1>
 using System;
-using System.Reflection;
-using System.IO;
 using System.CodeDom;
 using System.CodeDom.Compiler;
+using System.IO;
+using System.Reflection;
 using Microsoft.CSharp;
 
 namespace SampleCodeDom

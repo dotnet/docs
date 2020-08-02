@@ -1,5 +1,5 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Resources;
+using System.Runtime.CompilerServices;
 
-[assembly: NeutralResourcesLanguageAttribute("en-US" , UltimateResourceFallbackLocation.Satellite)]
+[assembly: NeutralResourcesLanguageAttribute("en-US", UltimateResourceFallbackLocation.Satellite)]

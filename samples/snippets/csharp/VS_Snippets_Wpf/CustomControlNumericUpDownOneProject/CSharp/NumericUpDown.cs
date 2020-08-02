@@ -82,10 +82,10 @@ namespace MyCustomControl
         {
             RaiseEvent(args);
         }
-//</SnippetDependencyPropertyChangedEventArgs>
+        //</SnippetDependencyPropertyChangedEventArgs>
 
         #region Commands
-//<SnippetCommands>
+        //<SnippetCommands>
 
         public static RoutedCommand IncreaseCommand
         {
@@ -145,7 +145,7 @@ namespace MyCustomControl
 
         private static RoutedCommand _increaseCommand;
         private static RoutedCommand _decreaseCommand;
-//</SnippetCommands>
+        //</SnippetCommands>
 
         #endregion
 

@@ -1,9 +1,9 @@
-﻿Imports System.ServiceModel
-Imports System.Runtime.Serialization
+﻿Imports System.Runtime.Serialization
+Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
+Imports System.ServiceModel
 Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Description
-Imports System.Security.Cryptography.X509Certificates
 
 Class Program
     Shared Sub Main()

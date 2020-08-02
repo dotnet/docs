@@ -6,21 +6,21 @@ namespace Interfaces
     {
         void Paint();
     }
-    interface ITextBox: IControl
+    interface ITextBox : IControl
     {
         void SetText(string text);
     }
-    interface IListBox: IControl
+    interface IListBox : IControl
     {
         void SetItems(string[] items);
     }
-    interface IComboBox: ITextBox, IListBox {}
+    interface IComboBox : ITextBox, IListBox { }
 
     interface IDataBound
     {
         void Bind(Binder b);
     }
-    public class EditBox: IControl, IDataBound
+    public class EditBox : IControl, IDataBound
     {
         public void Paint() { }
         public void Bind(Binder b) { }
@@ -50,14 +50,14 @@ namespace Interfaces
 
     }
 
-    public class Binder {}
+    public class Binder { }
 }
 
 namespace ExplicitInterface
 {
     using Interfaces;
 
-    public class EditBox: IControl, IDataBound
+    public class EditBox : IControl, IDataBound
     {
         void IControl.Paint() { }
         void IDataBound.Bind(Binder b) { }

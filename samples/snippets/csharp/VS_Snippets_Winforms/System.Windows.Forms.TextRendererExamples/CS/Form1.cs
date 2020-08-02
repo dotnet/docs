@@ -105,7 +105,7 @@ namespace TextRendering
 
         //</snippet9>
 
-   //<snippet11>
+        //<snippet11>
         private static void DrawALineOfText(PaintEventArgs e)
         {
             // Declare strings to render on the form.
@@ -136,7 +136,7 @@ namespace TextRendering
                 startPoint.X += size.Width;
             }
         }
-	//</snippet11>
+        //</snippet11>
 
         private void InitializeComponent()
         {

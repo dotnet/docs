@@ -1,6 +1,6 @@
-﻿Imports System.Runtime.Serialization
+﻿Imports System.Collections
 Imports System.Collections.Generic
-Imports System.Collections
+Imports System.Runtime.Serialization
 Imports System.Security.Permissions
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

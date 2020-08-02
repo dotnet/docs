@@ -20,7 +20,7 @@ public class TextFromFile
             {
                 Console.WriteLine(input);
             }
-            Console.WriteLine ("The end of the stream has been reached.");
+            Console.WriteLine("The end of the stream has been reached.");
         }
     }
 }

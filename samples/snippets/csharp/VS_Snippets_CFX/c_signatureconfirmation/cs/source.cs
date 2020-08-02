@@ -1,14 +1,14 @@
 ﻿using System;
-using System.ServiceModel;
-using System.Security.Permissions;
+using System.Data;
+using System.IO;
 using System.Runtime.Serialization;
+using System.Security.Permissions;
+using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security.Tokens;
-using System.Data;
-using System.Xml;
-using System.IO;
 using System.Text;
+using System.Xml;
 
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
@@ -29,7 +29,7 @@ namespace Example
 
             bindings.Add(security);
             TextMessageEncodingBindingElement encoding = new TextMessageEncodingBindingElement();
-            bindings.Add(encoding );
+            bindings.Add(encoding);
             HttpTransportBindingElement transport = new HttpTransportBindingElement();
             bindings.Add(transport);
             CustomBinding myBinding = new CustomBinding(bindings);
@@ -43,7 +43,7 @@ namespace Example
             SymmetricSecurityBindingElement sec = (SymmetricSecurityBindingElement)
                 SecurityBindingElement.CreateMutualCertificateBindingElement();
             //</snippet2>
-         }
+        }
         static void Main()
         {
             // Empty

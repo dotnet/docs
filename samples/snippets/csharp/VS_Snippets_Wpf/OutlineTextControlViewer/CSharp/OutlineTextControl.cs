@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Globalization;
-using System.Windows.Media;
 using System.Windows;
+using System.Windows.Media;
 
 namespace OutlineText
 {
@@ -32,7 +32,7 @@ namespace OutlineText
         #endregion
 
         #region FrameworkElement Overrides
-//<SnippetOnRender>
+        //<SnippetOnRender>
         /// <summary>
         /// OnRender override draws the geometry of the text and optional highlight.
         /// </summary>
@@ -48,8 +48,8 @@ namespace OutlineText
                 drawingContext.DrawGeometry(null, new System.Windows.Media.Pen(Stroke, StrokeThickness), _textHighLightGeometry);
             }
         }
-//</SnippetOnRender>
-//<SnippetCreateText>
+        //</SnippetOnRender>
+        //<SnippetCreateText>
         /// <summary>
         /// Create the outline geometry based on the formatted text.
         /// </summary>
@@ -84,7 +84,7 @@ namespace OutlineText
                 _textHighLightGeometry = formattedText.BuildHighlightGeometry(new System.Windows.Point(0, 0));
             }
         }
-  //</SnippetCreateText>
+        //</SnippetCreateText>
         #endregion
 
         #region DependencyProperties

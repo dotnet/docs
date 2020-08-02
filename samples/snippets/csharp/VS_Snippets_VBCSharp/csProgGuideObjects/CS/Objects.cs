@@ -127,53 +127,53 @@ namespace CsCsrefProgrammingObjects
     namespace WrapPerson3
     {
         //<Snippet84>
-    public class Person
-    {
-        // Field
-        public string name;
-
-        // Constructor that takes no arguments.
-        public Person()
+        public class Person
         {
-            name = "unknown";
-        }
+            // Field
+            public string name;
 
-        // Constructor that takes one argument.
-        public Person(string nm)
+            // Constructor that takes no arguments.
+            public Person()
+            {
+                name = "unknown";
+            }
+
+            // Constructor that takes one argument.
+            public Person(string nm)
+            {
+                name = nm;
+            }
+
+            // Method
+            public void SetName(string newName)
+            {
+                name = newName;
+            }
+        }
+        class TestPerson
         {
-            name = nm;
+            static void Main()
+            {
+                // Call the constructor that has no parameters.
+                Person person1 = new Person();
+                Console.WriteLine(person1.name);
+
+                person1.SetName("John Smith");
+                Console.WriteLine(person1.name);
+
+                // Call the constructor that has one parameter.
+                Person person2 = new Person("Sarah Jones");
+                Console.WriteLine(person2.name);
+
+                // Keep the console window open in debug mode.
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
+            }
         }
-
-        // Method
-        public void SetName(string newName)
-        {
-            name = newName;
-        }
-    }
-    class TestPerson
-    {
-        static void Main()
-        {
-            // Call the constructor that has no parameters.
-            Person person1 = new Person();
-            Console.WriteLine(person1.name);
-
-            person1.SetName("John Smith");
-            Console.WriteLine(person1.name);
-
-            // Call the constructor that has one parameter.
-            Person person2 = new Person("Sarah Jones");
-            Console.WriteLine(person2.name);
-
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
-    }
-    // Output:
-    // unknown
-    // John Smith
-    // Sarah Jones
+        // Output:
+        // unknown
+        // John Smith
+        // Sarah Jones
         //</Snippet84>
     }
 
@@ -434,67 +434,67 @@ namespace CsCsrefProgrammingObjects
 
     //-----------------------------------------------------------------------------
     //<Snippet16>
-class Person
-{
-    // Copy constructor.
-    public Person(Person previousPerson)
+    class Person
     {
-        Name = previousPerson.Name;
-        Age = previousPerson.Age;
+        // Copy constructor.
+        public Person(Person previousPerson)
+        {
+            Name = previousPerson.Name;
+            Age = previousPerson.Age;
+        }
+
+        //// Alternate copy constructor calls the instance constructor.
+        //public Person(Person previousPerson)
+        //    : this(previousPerson.Name, previousPerson.Age)
+        //{
+        //}
+
+        // Instance constructor.
+        public Person(string name, int age)
+        {
+            Name = name;
+            Age = age;
+        }
+
+        public int Age { get; set; }
+
+        public string Name { get; set; }
+
+        public string Details()
+        {
+            return Name + " is " + Age.ToString();
+        }
     }
 
-    //// Alternate copy constructor calls the instance constructor.
-    //public Person(Person previousPerson)
-    //    : this(previousPerson.Name, previousPerson.Age)
-    //{
-    //}
-
-    // Instance constructor.
-    public Person(string name, int age)
+    class TestPerson
     {
-        Name = name;
-        Age = age;
+        static void Main()
+        {
+            // Create a Person object by using the instance constructor.
+            Person person1 = new Person("George", 40);
+
+            // Create another Person object, copying person1.
+            Person person2 = new Person(person1);
+
+            // Change each person's age.
+            person1.Age = 39;
+            person2.Age = 41;
+
+            // Change person2's name.
+            person2.Name = "Charles";
+
+            // Show details to verify that the name and age fields are distinct.
+            Console.WriteLine(person1.Details());
+            Console.WriteLine(person2.Details());
+
+            // Keep the console window open in debug mode.
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
     }
-
-    public int Age { get; set; }
-
-    public string Name { get; set; }
-
-    public string Details()
-    {
-        return Name + " is " + Age.ToString();
-    }
-}
-
-class TestPerson
-{
-    static void Main()
-    {
-        // Create a Person object by using the instance constructor.
-        Person person1 = new Person("George", 40);
-
-        // Create another Person object, copying person1.
-        Person person2 = new Person(person1);
-
-        // Change each person's age.
-        person1.Age = 39;
-        person2.Age = 41;
-
-        // Change person2's name.
-        person2.Name = "Charles";
-
-        // Show details to verify that the name and age fields are distinct.
-        Console.WriteLine(person1.Details());
-        Console.WriteLine(person2.Details());
-
-        // Keep the console window open in debug mode.
-        Console.WriteLine("Press any key to exit.");
-        Console.ReadKey();
-    }
-}
-// Output:
-// George is 39
-// Charles is 41
+    // Output:
+    // George is 39
+    // Charles is 41
     //</Snippet16>
 
     //-----------------------------------------------------------------------------
@@ -1350,8 +1350,8 @@ class TestPerson
         public const int Weeks = 52;
         public const int Days = 365;
 
-        public const double DaysPerWeek = (double) Days / (double) Weeks;
-        public const double DaysPerMonth = (double) Days / (double) Months;
+        public const double DaysPerWeek = (double)Days / (double)Weeks;
+        public const double DaysPerMonth = (double)Days / (double)Months;
     }
     //</Snippet66>
 
@@ -1482,7 +1482,7 @@ namespace RainyDay
             int secsFromSun = 149476000 / Constants.SpeedOfLight; // in km
         }
     }
-   //</Snippet89>
+    //</Snippet89>
 
     //<Snippet90>
     namespace TestReferenceEquality
@@ -1535,7 +1535,7 @@ namespace RainyDay
                 // Demonstrate that two value type instances never have reference equality.
                 #region ValueTypes
 
-                TestStruct tsC = new TestStruct( 1, "TestStruct 1");
+                TestStruct tsC = new TestStruct(1, "TestStruct 1");
 
                 // Value types are copied on assignment. tsD and tsC have
                 // the same values but are not the same object.

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+//<snippetCustomersOrdersUsingWpf>
+using System.Data.Services.Client;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -11,8 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-//<snippetCustomersOrdersUsingWpf>
-using System.Data.Services.Client;
 using NorthwindClient.Northwind;
 //</snippetCustomersOrdersUsingWpf>
 
@@ -40,9 +40,9 @@ namespace NorthwindClient
             context = new NorthwindEntities(new Uri(svcUri));
 
             // Create a LINQ query that returns customers with related orders.
-            var  customerQuery = from cust in context.Customers.Expand("Orders")
-                                 where cust.Country == customerCountry
-                                 select cust;
+            var customerQuery = from cust in context.Customers.Expand("Orders")
+                                where cust.Country == customerCountry
+                                select cust;
 
             // Create a new collection for binding based on the LINQ query.
             trackedCustomers = new DataServiceCollection<Customer>(customerQuery);

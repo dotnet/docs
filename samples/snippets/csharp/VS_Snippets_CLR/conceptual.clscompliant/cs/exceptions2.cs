@@ -5,37 +5,38 @@ using System;
 
 public class ErrorClass : Exception
 {
-   string msg;
+    string msg;
 
-   public ErrorClass(string errorMessage)
-   {
-      msg = errorMessage;
-   }
+    public ErrorClass(string errorMessage)
+    {
+        msg = errorMessage;
+    }
 
-   public override string Message
-   {
-      get { return msg; }
-   }
+    public override string Message
+    {
+        get { return msg; }
+    }
 }
 
 public static class StringUtilities
 {
-   public static string[] SplitString(this string value, int index)
-   {
-      if (index < 0 | index > value.Length) {
-         ErrorClass badIndex = new ErrorClass("The index is not within the string.");
-         throw badIndex;
-      }
-      string[] retVal = { value.Substring(0, index - 1),
+    public static string[] SplitString(this string value, int index)
+    {
+        if (index < 0 | index > value.Length)
+        {
+            ErrorClass badIndex = new ErrorClass("The index is not within the string.");
+            throw badIndex;
+        }
+        string[] retVal = { value.Substring(0, index - 1),
                           value.Substring(index) };
-      return retVal;
-   }
+        return retVal;
+    }
 }
 // </Snippet14>
 
 public class Example
 {
-   public static void Main()
-   {
-   }
+    public static void Main()
+    {
+    }
 }

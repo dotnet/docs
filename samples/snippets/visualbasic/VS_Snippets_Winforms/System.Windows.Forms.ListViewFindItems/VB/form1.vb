@@ -12,64 +12,64 @@ Imports System.Windows.Forms
 
 Class Form1
     Inherits Form
-    
-    Public Sub New() 
+
+    Public Sub New()
         InitializeComponent()
-        
+
         'InitializeTextSearchListView();
         InitializeLocationSearchListView()
-    
+
     End Sub
-    
+
     '/ <summary>
     '/ Required designer variable.
     '/ </summary>
     Private components As System.ComponentModel.IContainer = Nothing
-    
-    
+
+
     '/ <summary>
     '/ Clean up any resources being used.
     '/ </summary>
-    Protected Overrides Sub Dispose(ByVal disposing As Boolean) 
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         If disposing AndAlso (components IsNot Nothing) Then
             components.Dispose()
         End If
         MyBase.Dispose(disposing)
-    
+
     End Sub
-    
-    #Region "Windows Form Designer generated code"
-    
-    
+
+#Region "Windows Form Designer generated code"
+
+
     '/ <summary>
     '/ Required method for Designer support - do not modify
     '/ the contents of this method with the code editor.
     '/ </summary>
-    Private Sub InitializeComponent() 
+    Private Sub InitializeComponent()
         ' 
         ' Form1
         ' 
         Me.ClientSize = New System.Drawing.Size(292, 266)
         Me.Name = "Form1"
         Me.Text = "Form1"
-    
+
     End Sub
-    
-    #End Region
-    
+
+#End Region
+
     '<snippet1>
     Private textListView As New ListView()
     Private WithEvents searchBox As New TextBox()
-    
-    Private Sub InitializeTextSearchListView() 
+
+    Private Sub InitializeTextSearchListView()
         searchBox.Location = New Point(150, 20)
         textListView.Scrollable = True
         textListView.Width = 80
         textListView.Height = 50
-        
+
         ' Set the View to list to use the FindItemWithText method.
         textListView.View = View.List
-        
+
         ' Populate the ListView with items.
         textListView.Items.AddRange(New ListViewItem() { _
             New ListViewItem("Amy Alberts"), _
@@ -84,9 +84,9 @@ Class Form1
         ' Add the controls to the form.
         Me.Controls.Add(textListView)
         Me.Controls.Add(searchBox)
-    
+
     End Sub
-     
+
     '<snippet11>
     Private Sub searchBox_TextChanged(ByVal sender As Object, ByVal e As EventArgs) _
         Handles searchBox.TextChanged
@@ -106,8 +106,8 @@ Class Form1
     '<snippet2>
     Private WithEvents iconListView As New ListView()
     Private previousItemBox As New TextBox()
-    
-    
+
+
     Private Sub InitializeLocationSearchListView()
         previousItemBox.Location = New Point(150, 20)
 
@@ -133,7 +133,7 @@ Class Form1
         Me.Controls.Add(iconListView)
         Me.Controls.Add(previousItemBox)
     End Sub
-    
+
     ' <snippet21>
     Sub iconListView_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) _
         Handles iconListView.MouseDown
@@ -154,11 +154,11 @@ Class Form1
     ' </snippet21>
     '</snippet2>
 
-    <STAThread()>  _
-    Shared Sub Main() 
+    <STAThread()> _
+    Shared Sub Main()
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-    
+
     End Sub
 End Class
 

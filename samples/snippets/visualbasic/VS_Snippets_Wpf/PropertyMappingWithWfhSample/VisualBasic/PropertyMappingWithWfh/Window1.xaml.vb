@@ -1,17 +1,16 @@
 ﻿' <Snippet10>
+' <Snippet20>
+Imports System.Drawing
+Imports System.Drawing.Drawing2D
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Documents
+Imports System.Windows.Forms
+Imports System.Windows.Forms.Integration
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
-
-' <Snippet20>
-Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.Windows.Forms
-Imports System.Windows.Forms.Integration
 ' </Snippet20>
 
 ' <summary>
@@ -19,13 +18,13 @@ Imports System.Windows.Forms.Integration
 ' </summary>
 Class Window1
     Inherits Window
- 
-    Public Sub New() 
+
+    Public Sub New()
         InitializeComponent()
-    
+
     End Sub
-    
-    
+
+
     ' <Snippet11>
     ' The WindowLoaded method handles the Loaded event.
     ' It enables Windows Forms visual styles, creates 
@@ -143,7 +142,7 @@ Class Window1
             New PropertyTranslator(AddressOf OnClipChange))
 
     End Sub
-    
+
     ' The OnClipChange method assigns an elliptical clipping 
     ' region to the hosted control's Region property.
     Private Sub OnClipChange( _
@@ -160,7 +159,7 @@ Class Window1
         End If
 
     End Sub
-    
+
     ' The Window1_SizeChanged method handles the window's 
     ' SizeChanged event. It calls the OnClipChange method explicitly 
     ' to assign a new clipping region to the hosted control.
@@ -171,31 +170,31 @@ Class Window1
         Me.OnClipChange(wfHost, "Clip", Nothing)
 
     End Sub
-    
+
     ' The CreateClipRegion method creates a Region from an
     ' elliptical GraphicsPath.
-    Private Function CreateClipRegion() As [Region] 
+    Private Function CreateClipRegion() As [Region]
         Dim path As New GraphicsPath()
-        
+
         path.StartFigure()
-        
+
         path.AddEllipse(New System.Drawing.Rectangle( _
             0, _
             0, _
             wfHost.ActualWidth, _
             wfHost.ActualHeight))
-        
+
         path.CloseFigure()
-        
+
         Return New [Region](path)
-    
+
     End Function
     ' </Snippet14>
 
     ' <Snippet15>
     ' The ExtendBackgroundMapping method adds a property
     ' translator if a mapping already exists.
-    Private Sub ExtendBackgroundMapping() 
+    Private Sub ExtendBackgroundMapping()
         If wfHost.PropertyMap("Background") IsNot Nothing Then
 
             wfHost.PropertyMap("Background") = PropertyTranslator.Combine( _
@@ -205,21 +204,21 @@ Class Window1
                 Me, _
                 "OnBackgroundChange"))
         End If
-    
+
     End Sub
-    
-    
+
+
     ' The OnBackgroundChange method assigns a specific image 
     ' to the hosted control's BackgroundImage property.
-    Private Sub OnBackgroundChange(ByVal h As Object, ByVal propertyName As String, ByVal value As Object) 
-        Dim host As WindowsFormsHost = h 
-        Dim cb As System.Windows.Forms.CheckBox = host.Child 
-        Dim b As ImageBrush = value 
-        
+    Private Sub OnBackgroundChange(ByVal h As Object, ByVal propertyName As String, ByVal value As Object)
+        Dim host As WindowsFormsHost = h
+        Dim cb As System.Windows.Forms.CheckBox = host.Child
+        Dim b As ImageBrush = value
+
         If Not (b Is Nothing) Then
             cb.BackgroundImage = New System.Drawing.Bitmap("C:\WINDOWS\Santa Fe Stucco.bmp")
         End If
-    
+
     End Sub
     ' </Snippet15>
 End Class

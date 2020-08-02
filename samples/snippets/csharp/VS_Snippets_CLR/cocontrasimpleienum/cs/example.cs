@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
-class Base {}
-class Derived : Base {}
+class Base { }
+class Derived : Base { }
 
 class C
 {

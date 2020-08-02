@@ -1,7 +1,7 @@
-﻿Imports System.Reflection
-Imports System.Runtime.InteropServices
-Imports System.Globalization
+﻿Imports System.Globalization
+Imports System.Reflection
 Imports System.Resources
+Imports System.Runtime.InteropServices
 Imports System.Windows
 
 ' General Information about an assembly is controlled through the following 
@@ -10,12 +10,12 @@ Imports System.Windows
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("AdornerForStrokes")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("MS")> 
-<Assembly: AssemblyProduct("AdornerForStrokes")> 
-<Assembly: AssemblyCopyright("Copyright @ MS 2006")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("AdornerForStrokes")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("MS")>
+<Assembly: AssemblyProduct("AdornerForStrokes")>
+<Assembly: AssemblyCopyright("Copyright @ MS 2006")>
+<Assembly: AssemblyTrademark("")>
 <Assembly: ComVisible(false)>
 
 'In order to begin building localizable applications, set 
@@ -41,7 +41,7 @@ Imports System.Windows
 
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("b83a122b-fa69-474b-ad30-93d18d8a63e2")> 
+<Assembly: Guid("b83a122b-fa69-474b-ad30-93d18d8a63e2")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -54,5 +54,5 @@ Imports System.Windows
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

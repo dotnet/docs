@@ -1,8 +1,8 @@
 ﻿'<snippet0>
 '<snippet1>
 Imports System.IdentityModel.Claims
-Imports System.ServiceModel
 Imports System.Security.Permissions
+Imports System.ServiceModel
 
 '</snippet1>
 

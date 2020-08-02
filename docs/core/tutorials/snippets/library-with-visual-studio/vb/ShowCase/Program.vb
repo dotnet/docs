@@ -20,11 +20,11 @@ Module Program
         If row > 0 Then
             Console.WriteLine("Press any key to continue...")
             Console.ReadKey()
-        End If   
+        End If
         Console.Clear()
         Console.WriteLine("{0}Press <Enter> only to exit; otherwise, enter a string and press <Enter>:{0}",
                           vbCrLf)
-        row = 3  
+        row = 3
     End Sub
 End Module
 

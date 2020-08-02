@@ -8,8 +8,8 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
@@ -33,7 +33,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             myButton.Margin = new Thickness(50);
             myButton.HorizontalAlignment = HorizontalAlignment.Left;
             myButton.Content = "Click Me";
-            myScaleTransform = new ScaleTransform(1,1);
+            myScaleTransform = new ScaleTransform(1, 1);
             myButton.RenderTransform = myScaleTransform;
 
             // Associate an event handler with the

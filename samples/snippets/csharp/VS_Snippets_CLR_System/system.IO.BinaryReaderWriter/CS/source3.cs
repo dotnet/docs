@@ -50,32 +50,32 @@ public class BinReadWrite
         int i = 0;
         foreach (byte b in rawbytes)
         {
-             switch (b)
-             {
-                 case 254:
-                 {
-                     Console.Write("-%- ");
-                 }
-                 break;
+            switch (b)
+            {
+                case 254:
+                    {
+                        Console.Write("-%- ");
+                    }
+                    break;
 
-                 case 255:
-                 {
-                     Console.Write("-*- ");
-                 }
-                 break;
+                case 255:
+                    {
+                        Console.Write("-*- ");
+                    }
+                    break;
 
-                 default:
-                 {
-                     Console.Write("{0:d3} ", b);
-                 }
-                 break;
-             }
-             i++;
-             if (i == 16)
-             {
-                 Console.WriteLine();
-                 i = 0;
-             }
+                default:
+                    {
+                        Console.Write("{0:d3} ", b);
+                    }
+                    break;
+            }
+            i++;
+            if (i == 16)
+            {
+                Console.WriteLine();
+                i = 0;
+            }
         }
         fs.Close();
     }

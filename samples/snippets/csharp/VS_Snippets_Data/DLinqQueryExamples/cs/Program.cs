@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.Linq;
+using System.Text;
 
 namespace cs_DLinqQueryExamples
 {
@@ -21,7 +21,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet1>
             System.Nullable<Decimal> averageFreight =
                 (from ord in db.Orders
-                select ord.Freight)
+                 select ord.Freight)
                 .Average();
 
             Console.WriteLine(averageFreight);
@@ -30,7 +30,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet2>
             System.Nullable<Decimal> averageUnitPrice =
                 (from prod in db.Products
-                select prod.UnitPrice)
+                 select prod.UnitPrice)
                 .Average();
 
             Console.WriteLine(averageUnitPrice);
@@ -47,7 +47,7 @@ namespace cs_DLinqQueryExamples
                         from prod2 in grouping
                         where prod2.UnitPrice > grouping.Average(prod3 =>
                             prod3.UnitPrice)
-                    select prod2
+                        select prod2
                 };
 
             foreach (var grp in priceQuery)
@@ -69,8 +69,8 @@ namespace cs_DLinqQueryExamples
             // <Snippet5>
             System.Int32 notDiscontinuedCount =
                 (from prod in db.Products
-                where !prod.Discontinued
-                select prod)
+                 where !prod.Discontinued
+                 select prod)
                 .Count();
 
             Console.WriteLine(notDiscontinuedCount);
@@ -81,7 +81,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet6>
             System.Nullable<DateTime> latestHireDate =
                 (from emp in db.Employees
-                select emp.HireDate)
+                 select emp.HireDate)
                 .Max();
 
             Console.WriteLine(latestHireDate);
@@ -90,7 +90,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet7>
             System.Nullable<Int16> maxUnitsInStock =
                 (from prod in db.Products
-                select prod.UnitsInStock)
+                 select prod.UnitsInStock)
                 .Max();
 
             Console.WriteLine(maxUnitsInStock);
@@ -124,7 +124,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet9>
             System.Nullable<Decimal> lowestUnitPrice =
                 (from prod in db.Products
-                select prod.UnitPrice)
+                 select prod.UnitPrice)
                 .Min();
 
             Console.WriteLine(lowestUnitPrice);
@@ -133,7 +133,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet10>
             System.Nullable<Decimal> lowestFreight =
                 (from ord in db.Orders
-                select ord.Freight)
+                 select ord.Freight)
                 .Min();
 
             Console.WriteLine(lowestFreight);
@@ -167,7 +167,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet12>
             System.Nullable<Decimal> totalFreight =
                 (from ord in db.Orders
-                select ord.Freight)
+                 select ord.Freight)
                 .Sum();
 
             Console.WriteLine(totalFreight);
@@ -176,7 +176,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet13>
             System.Nullable<long> totalUnitsOnOrder =
                 (from prod in db.Products
-                select (long)prod.UnitsOnOrder)
+                 select (long)prod.UnitsOnOrder)
                 .Sum();
 
             Console.WriteLine(totalUnitsOnOrder);
@@ -193,8 +193,8 @@ namespace cs_DLinqQueryExamples
             // <Snippet15>
             Customer custQuery =
                 (from custs in db.Customers
-                where custs.CustomerID == "BONAP"
-                select custs)
+                 where custs.CustomerID == "BONAP"
+                 select custs)
                 .First();
 
             Console.WriteLine("ID = {0}, Contact = {1}", custQuery.CustomerID,
@@ -205,8 +205,8 @@ namespace cs_DLinqQueryExamples
             // <Snippet16>
             IQueryable<Employee> firstHiredQuery =
                 (from emp in db.Employees
-                orderby emp.HireDate
-                select emp)
+                 orderby emp.HireDate
+                 select emp)
                 .Take(5);
 
             foreach (Employee empObj in firstHiredQuery)
@@ -219,8 +219,8 @@ namespace cs_DLinqQueryExamples
             // <Snippet17>
             IQueryable<Product> lessExpensiveQuery =
                 (from prod in db.Products
-                orderby prod.UnitPrice descending
-                select prod)
+                 orderby prod.UnitPrice descending
+                 select prod)
                 .Skip(10);
 
             foreach (Product prodObj in lessExpensiveQuery)
@@ -232,8 +232,8 @@ namespace cs_DLinqQueryExamples
             // <Snippet18>
             var custQuery2 =
                 (from cust in db.Customers
-                orderby cust.ContactName
-                select cust)
+                 orderby cust.ContactName
+                 select cust)
                 .Skip(50).Take(10);
 
             foreach (var custRecord in custQuery2)
@@ -422,7 +422,7 @@ namespace cs_DLinqQueryExamples
             // <Snippet36>
             IQueryable<String> cityQuery =
                 (from cust in db.Customers
-                select cust.City).Distinct();
+                 select cust.City).Distinct();
 
             foreach (String cityString in cityQuery)
             {
@@ -464,15 +464,15 @@ namespace cs_DLinqQueryExamples
             // <Snippet40>
             var infoQuery =
                 (from cust in db.Customers
-                select new { Name = cust.CompanyName, cust.Phone }
+                 select new { Name = cust.CompanyName, cust.Phone }
                 )
                .Concat
                    (from emp in db.Employees
-                   select new
-                   {
-                       Name = emp.FirstName + " " + emp.LastName,
-                       Phone = emp.HomePhone
-                   }
+                    select new
+                    {
+                        Name = emp.FirstName + " " + emp.LastName,
+                        Phone = emp.HomePhone
+                    }
                    );
 
             foreach (var infoData in infoQuery)
@@ -501,7 +501,7 @@ namespace cs_DLinqQueryExamples
                 from emp in db.Employees
                 where emp.HireDate >= new DateTime(1994, 1, 1)
                 select emp;
-                List<Employee> qList = empQuery.ToList();
+            List<Employee> qList = empQuery.ToList();
             // </Snippet45>
 
             ////// C O N V E R T   T Y P E   T O   G E N   I E N U M //////
@@ -691,13 +691,13 @@ namespace cs_DLinqQueryExamples
             // <Snippet39>
             IQueryable<String> custQuery =
                 (from cust in db.Customers
-                select cust.Phone)
+                 select cust.Phone)
                 .Concat
                 (from cust in db.Customers
-                select cust.Fax)
+                 select cust.Fax)
                 .Concat
                 (from emp in db.Employees
-                select emp.HomePhone)
+                 select emp.HomePhone)
             ;
 
             foreach (var custData in custQuery)
@@ -714,10 +714,10 @@ namespace cs_DLinqQueryExamples
             // <Snippet41>
             var infoQuery =
                 (from cust in db.Customers
-                select cust.Country)
+                 select cust.Country)
                 .Except
                     (from emp in db.Employees
-                    select emp.Country)
+                     select emp.Country)
             ;
             // </Snippet41>
         }
@@ -728,10 +728,10 @@ namespace cs_DLinqQueryExamples
             // <Snippet42>
             var infoQuery =
                 (from cust in db.Customers
-                select cust.Country)
+                 select cust.Country)
                 .Intersect
                     (from emp in db.Employees
-                    select emp.Country)
+                     select emp.Country)
             ;
             // </Snippet42>
         }
@@ -742,10 +742,10 @@ namespace cs_DLinqQueryExamples
             // <Snippet43>
             var infoQuery =
                 (from cust in db.Customers
-                select cust.Country)
+                 select cust.Country)
                 .Union
                     (from emp in db.Employees
-                    select emp.Country)
+                     select emp.Country)
             ;
             // </Snippet43>
         }
@@ -758,7 +758,7 @@ namespace cs_DLinqQueryExamples
                 from cust in db.Customers
                 where cust.City == "London"
                 select cust;
-                Customer[] qArray = custQuery.ToArray();
+            Customer[] qArray = custQuery.ToArray();
 
             // </Snippet44>
         }
@@ -860,8 +860,8 @@ namespace cs_DLinqQueryExamples
             var q =
                 from e in db.Employees
                 join o in db.Orders on e equals o.Employee into ords
-                    from o in ords.DefaultIfEmpty()
-                    select new { e.FirstName, e.LastName, Order = o };
+                from o in ords.DefaultIfEmpty()
+                select new { e.FirstName, e.LastName, Order = o };
             // </Snippet53>
         }
 
@@ -874,8 +874,8 @@ namespace cs_DLinqQueryExamples
                 join o in db.Orders on c.CustomerID equals o.CustomerID
                     into ords
                 let z = c.City + c.Country
-                    from o in ords
-                    select new { c.ContactName, o.OrderID, z };
+                from o in ords
+                select new { c.ContactName, o.OrderID, z };
             // </Snippet54>
         }
 
@@ -888,12 +888,12 @@ namespace cs_DLinqQueryExamples
                 from p in db.Products
                 join d in db.OrderDetails
                     on new { o.OrderID, p.ProductID } equals new
-                {
-                    d.OrderID,
-                    d.ProductID
-                } into details
-                    from d in details
-                    select new { o.OrderID, p.ProductID, d.UnitPrice };
+                    {
+                        d.OrderID,
+                        d.ProductID
+                    } into details
+                from d in details
+                select new { o.OrderID, p.ProductID, d.UnitPrice };
             // </Snippet55>
         }
 
@@ -905,8 +905,8 @@ namespace cs_DLinqQueryExamples
                 from o in db.Orders
                 join e in db.Employees
                     on o.EmployeeID equals (int?)e.EmployeeID into emps
-                    from e in emps
-                    select new { o.OrderID, e.FirstName };
+                from e in emps
+                select new { o.OrderID, e.FirstName };
             // </Snippet56>
         }
 
@@ -966,8 +966,8 @@ namespace cs_DLinqQueryExamples
                         select od,
                     FreeShippingDiscount = ord.Freight
                 };
-        // </Snippet65>
-  } //end of class Program
+            // </Snippet65>
+        } //end of class Program
 
         // <Snippet46>
         private bool isValidProduct(Product prod)
@@ -993,17 +993,17 @@ namespace cs_DLinqQueryExamples
             public string LastName = "";
         }
 
-         void empMethod()
-         {
-         Northwnd db = new Northwnd(@"c:\northwnd.mdf");
-         var empQuery =
-             from emp in db.Employees
-             select new Name
-             {
-                 FirstName = emp.FirstName,
-                 LastName = emp.LastName
-             };
+        void empMethod()
+        {
+            Northwnd db = new Northwnd(@"c:\northwnd.mdf");
+            var empQuery =
+                from emp in db.Employees
+                select new Name
+                {
+                    FirstName = emp.FirstName,
+                    LastName = emp.LastName
+                };
         }
         // </Snippet62>
-        }
     }
+}

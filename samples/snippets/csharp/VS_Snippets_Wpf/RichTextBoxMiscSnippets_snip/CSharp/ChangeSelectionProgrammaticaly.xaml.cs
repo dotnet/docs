@@ -7,7 +7,7 @@ using System.Windows.Documents;
 namespace SDKSample
 {
     public partial class ChangeSelectionProgrammaticaly : Page
-	{
+    {
 
         // Change the current selection.
         void ChangeSelection(Object sender, RoutedEventArgs args)

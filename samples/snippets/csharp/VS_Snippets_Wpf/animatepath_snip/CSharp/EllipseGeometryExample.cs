@@ -6,16 +6,17 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Controls;
 
 namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 {
 
-    public class EllipseGeometryExample : Page {
+    public class EllipseGeometryExample : Page
+    {
 
         public EllipseGeometryExample()
         {
@@ -69,10 +70,10 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 
             // Use an anonymous event handler to begin the animation
             // when the path is loaded.
-            myPath.Loaded +=  delegate(object sender, RoutedEventArgs args)
-                {
-                    myStoryboard.Begin(myPath);
-                };
+            myPath.Loaded += delegate (object sender, RoutedEventArgs args)
+               {
+                   myStoryboard.Begin(myPath);
+               };
         }
     }
 }

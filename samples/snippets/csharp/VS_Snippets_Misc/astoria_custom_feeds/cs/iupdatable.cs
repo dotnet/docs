@@ -1,9 +1,9 @@
 ﻿//<snippetCustomIUpdatable>
 using System;
 using System.Collections;
-using System.Reflection;
 using System.Data.Services;
 using System.Linq;
+using System.Reflection;
 
 namespace CustomDataService
 {

@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Threading.Tasks;
-using System.Windows;
-
 // Add a using directive and a reference for System.Net.Http;
 using System.Net.Http;
+using System.Threading.Tasks;
+using System.Windows;
 
 namespace AsyncFirstExample
 {

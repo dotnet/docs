@@ -7,7 +7,7 @@ namespace NewStyle
         // <AsyncMethod>
         static Task DoThings()
         {
-             return Task.FromResult(0);
+            return Task.FromResult(0);
         }
         // </AsyncMethod>
 

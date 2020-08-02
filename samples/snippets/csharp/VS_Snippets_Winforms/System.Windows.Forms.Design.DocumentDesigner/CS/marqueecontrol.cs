@@ -12,12 +12,12 @@ using System.Windows.Forms.Design;
 namespace MarqueeControlLibrary
 {
     // <snippet240>
-	[Designer( typeof( MarqueeControlLibrary.Design.MarqueeControlRootDesigner ), typeof( IRootDesigner ) )]
+    [Designer(typeof(MarqueeControlLibrary.Design.MarqueeControlRootDesigner), typeof(IRootDesigner))]
     public class MarqueeControl : UserControl
     {
-		// </snippet240>
+        // </snippet240>
 
-		// Required designer variable.
+        // Required designer variable.
         private System.ComponentModel.Container components = null;
 
         // <snippet250>
@@ -35,16 +35,16 @@ namespace MarqueeControlLibrary
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        protected override void Dispose( bool disposing )
+        protected override void Dispose(bool disposing)
         {
-            if( disposing )
+            if (disposing)
             {
-                if(components != null)
+                if (components != null)
                 {
                     components.Dispose();
                 }
             }
-            base.Dispose( disposing );
+            base.Dispose(disposing);
         }
 
         // <snippet260>
@@ -54,9 +54,9 @@ namespace MarqueeControlLibrary
             // controls that implement IMarqueeWidget, so
             // find each IMarqueeWidget child and call its
             // StartMarquee method.
-            foreach( Control cntrl in this.Controls )
+            foreach (Control cntrl in this.Controls)
             {
-                if( cntrl is IMarqueeWidget )
+                if (cntrl is IMarqueeWidget)
                 {
                     IMarqueeWidget widget = cntrl as IMarqueeWidget;
                     widget.StartMarquee();
@@ -70,9 +70,9 @@ namespace MarqueeControlLibrary
             // controls that implement IMarqueeWidget, so find
             // each IMarqueeWidget child and call its StopMarquee
             // method.
-            foreach( Control cntrl in this.Controls )
+            foreach (Control cntrl in this.Controls)
             {
-                if( cntrl is IMarqueeWidget )
+                if (cntrl is IMarqueeWidget)
                 {
                     IMarqueeWidget widget = cntrl as IMarqueeWidget;
                     widget.StopMarquee();
@@ -84,13 +84,13 @@ namespace MarqueeControlLibrary
         // <snippet270>
         protected override void OnLayout(LayoutEventArgs levent)
         {
-            base.OnLayout (levent);
+            base.OnLayout(levent);
 
             // Repaint all IMarqueeWidget children if the layout
             // has changed.
-            foreach( Control cntrl in this.Controls )
+            foreach (Control cntrl in this.Controls)
             {
-                if( cntrl is IMarqueeWidget )
+                if (cntrl is IMarqueeWidget)
                 {
                     Control control = cntrl as Control;
 

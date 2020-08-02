@@ -1,7 +1,7 @@
-﻿using System.Text.RegularExpressions;
-using System;
-using System.Text;
+﻿using System;
 using System.Collections.Generic;
+using System.Text;
+using System.Text.RegularExpressions;
 
 namespace CsCsrefProgrammingStrings
 {
@@ -168,28 +168,28 @@ namespace CsCsrefProgrammingStrings
             //How to: Determine if a string represents a numeric value
             //<Snippet14>
 
-              string numString = "1287543"; //"1287543.0" will return false for a long
-              long number1 = 0;
-              bool canConvert = long.TryParse(numString, out number1);
-              if (canConvert == true)
+            string numString = "1287543"; //"1287543.0" will return false for a long
+            long number1 = 0;
+            bool canConvert = long.TryParse(numString, out number1);
+            if (canConvert == true)
                 Console.WriteLine("number1 now = {0}", number1);
-              else
+            else
                 Console.WriteLine("numString is not a valid long");
 
-              byte number2 = 0;
-              numString = "255"; // A value of 256 will return false
-              canConvert = byte.TryParse(numString, out number2);
-              if (canConvert == true)
+            byte number2 = 0;
+            numString = "255"; // A value of 256 will return false
+            canConvert = byte.TryParse(numString, out number2);
+            if (canConvert == true)
                 Console.WriteLine("number2 now = {0}", number2);
-              else
+            else
                 Console.WriteLine("numString is not a valid byte");
 
-              decimal number3 = 0;
-              numString = "27.3"; //"27" is also a valid decimal
-              canConvert = decimal.TryParse(numString, out number3);
-              if (canConvert == true)
+            decimal number3 = 0;
+            numString = "27.3"; //"27" is also a valid decimal
+            canConvert = decimal.TryParse(numString, out number3);
+            if (canConvert == true)
                 Console.WriteLine("number3 now = {0}", number3);
-              else
+            else
                 Console.WriteLine("number3 is not a valid decimal");
             //</Snippet14>
 
@@ -606,25 +606,25 @@ namespace CsCsrefProgrammingStrings
 
     class StringNullReference
     {
-    static void Main()
-    {
-        //<snippet27>
-        string question = "hOW DOES mICROSOFT wORD DEAL WITH THE cAPS lOCK KEY?";
-        System.Text.StringBuilder sb = new System.Text.StringBuilder(question);
-
-        for (int j = 0; j < sb.Length; j++)
+        static void Main()
         {
-            if (System.Char.IsLower(sb[j]) == true)
-                sb[j] = System.Char.ToUpper(sb[j]);
-            else if (System.Char.IsUpper(sb[j]) == true)
-                sb[j] = System.Char.ToLower(sb[j]);
+            //<snippet27>
+            string question = "hOW DOES mICROSOFT wORD DEAL WITH THE cAPS lOCK KEY?";
+            System.Text.StringBuilder sb = new System.Text.StringBuilder(question);
+
+            for (int j = 0; j < sb.Length; j++)
+            {
+                if (System.Char.IsLower(sb[j]) == true)
+                    sb[j] = System.Char.ToUpper(sb[j]);
+                else if (System.Char.IsUpper(sb[j]) == true)
+                    sb[j] = System.Char.ToLower(sb[j]);
+            }
+            // Store the new string.
+            string corrected = sb.ToString();
+            System.Console.WriteLine(corrected);
+            // Output: How does Microsoft Word deal with the Caps Lock key?
+            //</snippet27>
         }
-        // Store the new string.
-        string corrected = sb.ToString();
-        System.Console.WriteLine(corrected);
-        // Output: How does Microsoft Word deal with the Caps Lock key?
-        //</snippet27>
-    }
     }
     //-------------------------------------------------------------------------
 
@@ -766,50 +766,50 @@ namespace CsCsrefProgrammingStrings
     #endregion
 
     //<snippet33>
-// Use NotePad to save the following RTF code to a text file in the same folder as
-// your .exe file for this project. Name the file test.rtf.
-/*
-{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}
-{\f1\fnil\fprq1\fcharset0 Courier New;}{\f2\fswiss\fprq2\fcharset0 Arial;}}
-{\colortbl ;\red0\green128\blue0;\red0\green0\blue0;}
-{\*\generator Msftedit 5.41.21.2508;}
-\viewkind4\uc1\pard\f0\fs20 The \i Greek \i0 word for "psyche" is spelled \cf1\f1\u968?\u965?\u967?\u942?\cf2\f2 . The Greek letters are encoded in Unicode.\par
-These characters are from the extended \b ASCII \b0 character set (Windows code page 1252):  \'e2\'e4\u1233?\'e5\cf0\par }
-*/
-class ConvertFromRTF
-{
-    static void Main()
+    // Use NotePad to save the following RTF code to a text file in the same folder as
+    // your .exe file for this project. Name the file test.rtf.
+    /*
+    {\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}
+    {\f1\fnil\fprq1\fcharset0 Courier New;}{\f2\fswiss\fprq2\fcharset0 Arial;}}
+    {\colortbl ;\red0\green128\blue0;\red0\green0\blue0;}
+    {\*\generator Msftedit 5.41.21.2508;}
+    \viewkind4\uc1\pard\f0\fs20 The \i Greek \i0 word for "psyche" is spelled \cf1\f1\u968?\u965?\u967?\u942?\cf2\f2 . The Greek letters are encoded in Unicode.\par
+    These characters are from the extended \b ASCII \b0 character set (Windows code page 1252):  \'e2\'e4\u1233?\'e5\cf0\par }
+    */
+    class ConvertFromRTF
     {
-        // If your RTF file isn't in the same folder as the .exe file for the project,
-        // specify the path to the file in the following assignment statement.
-        string path = @"test.rtf";
+        static void Main()
+        {
+            // If your RTF file isn't in the same folder as the .exe file for the project,
+            // specify the path to the file in the following assignment statement.
+            string path = @"test.rtf";
 
-        //Create the RichTextBox. (Requires a reference to System.Windows.Forms.)
-        System.Windows.Forms.RichTextBox rtBox = new System.Windows.Forms.RichTextBox();
+            //Create the RichTextBox. (Requires a reference to System.Windows.Forms.)
+            System.Windows.Forms.RichTextBox rtBox = new System.Windows.Forms.RichTextBox();
 
-        // Get the contents of the RTF file. When the contents of the file are
-        // stored in the string (rtfText), the contents are encoded as UTF-16.
-        string rtfText = System.IO.File.ReadAllText(path);
+            // Get the contents of the RTF file. When the contents of the file are
+            // stored in the string (rtfText), the contents are encoded as UTF-16.
+            string rtfText = System.IO.File.ReadAllText(path);
 
-        // Display the RTF text. This should look like the contents of your file.
-        System.Windows.Forms.MessageBox.Show(rtfText);
+            // Display the RTF text. This should look like the contents of your file.
+            System.Windows.Forms.MessageBox.Show(rtfText);
 
-        // Use the RichTextBox to convert the RTF code to plain text.
-        rtBox.Rtf = rtfText;
-        string plainText = rtBox.Text;
+            // Use the RichTextBox to convert the RTF code to plain text.
+            rtBox.Rtf = rtfText;
+            string plainText = rtBox.Text;
 
-        // Display the plain text in a MessageBox because the console can't
-        // display the Greek letters. You should see the following result:
-        //   The Greek word for "psyche" is spelled ψυχή. The Greek letters are
-        //   encoded in Unicode.
-        //   These characters are from the extended ASCII character set (Windows
-        //   code page 1252): âäӑå
-        System.Windows.Forms.MessageBox.Show(plainText);
+            // Display the plain text in a MessageBox because the console can't
+            // display the Greek letters. You should see the following result:
+            //   The Greek word for "psyche" is spelled ψυχή. The Greek letters are
+            //   encoded in Unicode.
+            //   These characters are from the extended ASCII character set (Windows
+            //   code page 1252): âäӑå
+            System.Windows.Forms.MessageBox.Show(plainText);
 
-        // Output the plain text to a file, encoded as UTF-8.
-        System.IO.File.WriteAllText(@"output.txt", plainText);
+            // Output the plain text to a file, encoded as UTF-8.
+            System.IO.File.WriteAllText(@"output.txt", plainText);
+        }
     }
-}
     //</snippet33>
 
     //<snippet34>
@@ -839,7 +839,7 @@ class ConvertFromRTF
 
             // Conversion is complete. Show the bytes to prove the conversion.
             Console.WriteLine("8-bit encoding byte values:");
-            foreach(byte b in codePageValues)
+            foreach (byte b in codePageValues)
                 Console.Write("{0:X}-", b);
 
             Console.WriteLine();
@@ -847,11 +847,11 @@ class ConvertFromRTF
             string unicodeString = System.IO.File.ReadAllText("greek_unicode.txt");
             System.Globalization.TextElementEnumerator enumerator =
                 System.Globalization.StringInfo.GetTextElementEnumerator(unicodeString);
-            while(enumerator.MoveNext())
+            while (enumerator.MoveNext())
             {
-               string s = enumerator.GetTextElement();
-               int i = Char.ConvertToUtf32(s, 0);
-               Console.Write("{0:X}-", i);
+                string s = enumerator.GetTextElement();
+                int i = Char.ConvertToUtf32(s, 0);
+                Console.Write("{0:X}-", i);
             }
             Console.WriteLine();
 

@@ -1,6 +1,7 @@
 ﻿// <Snippet1>
 using System;
 using System.Collections.Generic;
+using MyCompany.Employees;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -8,7 +9,6 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using MyCompany.Employees;
 
 namespace ConsumerCS
 {
@@ -20,7 +20,7 @@ namespace ConsumerCS
         public BlankPage()
         {
             this.InitializeComponent();
-         }
+        }
 
         /// <summary>
         /// Invoked when this page is about to be displayed in a Frame.
@@ -29,8 +29,8 @@ namespace ConsumerCS
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-           Example.DisplayData(outputBlock);
-       }
+            Example.DisplayData(outputBlock);
+        }
     }
 }
 

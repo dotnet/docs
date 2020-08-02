@@ -1,6 +1,6 @@
 ﻿'<snippet0>
-Imports System.Windows.Forms
 Imports System.Drawing
+Imports System.Windows.Forms
 
 Public Class DataGridViewBandDemo
     Inherits Form

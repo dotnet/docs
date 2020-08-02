@@ -1,6 +1,6 @@
 ﻿Imports System.ComponentModel
-Imports System.Windows.Data
 Imports System.Windows
+Imports System.Windows.Data
 
 '<Snippet18>
 Public Class DateConverter

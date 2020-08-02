@@ -1,6 +1,6 @@
-﻿Imports System.Threading
+﻿Imports System.IO
+Imports System.Threading
 Imports System.Threading.Tasks
-Imports System.IO
 
 Module continuations
     Public Sub Main

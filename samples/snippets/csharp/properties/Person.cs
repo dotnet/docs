@@ -224,7 +224,7 @@ namespace properties
 
             public string LastName { get; set; }
 
-            [field:NonSerialized]
+            [field: NonSerialized]
             public int Id { get; set; }
 
             public string FullName => $"{FirstName} {LastName}";

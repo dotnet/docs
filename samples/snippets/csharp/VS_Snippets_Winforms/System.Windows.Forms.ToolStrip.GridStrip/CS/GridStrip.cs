@@ -104,7 +104,7 @@ namespace GridStripLib
 
                     // If this is the ToolStripButton control at cell (0,0),
                     // assign it as the empty cell button.
-                    if( i == 0 && j == 0 )
+                    if (i == 0 && j == 0)
                     {
                         btn.Text = "Empty Cell";
                         btn.Image = b;
@@ -145,8 +145,8 @@ namespace GridStripLib
             int i = 0;
             int lastElement = this.Items.Count - 1;
 
-            while ( (i != lastElement ) &&
-                    (lastElement - i > 1) )
+            while ((i != lastElement) &&
+                    (lastElement - i > 1))
             {
                 TableLayoutPanelCellPosition pos1 =
                     this.tableSettings.GetCellPosition(this.Items[i]);
@@ -212,7 +212,7 @@ namespace GridStripLib
 
             // If the ToolStripButton control is the empty cell,
             // indicate that the move operation is valid.
-            if( item == this.emptyCellButton )
+            if (item == this.emptyCellButton)
             {
                 // Set the drag operation to indicate a valid move.
                 dea.Effect = DragDropEffects.Move;

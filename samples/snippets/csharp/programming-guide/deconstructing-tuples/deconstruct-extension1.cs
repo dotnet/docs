@@ -11,7 +11,7 @@ public static class ReflectionExtensions
         var getter = p.GetMethod;
 
         // Is the property read-only?
-        isReadOnly = ! p.CanWrite;
+        isReadOnly = !p.CanWrite;
 
         // Is the property instance or static?
         isStatic = getter.IsStatic;

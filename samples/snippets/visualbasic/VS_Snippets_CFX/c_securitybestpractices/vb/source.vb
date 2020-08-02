@@ -1,8 +1,8 @@
 ﻿Imports System.Collections.Generic
-Imports System.Text
+Imports System.Security.Permissions
 Imports System.Security.Principal
 Imports System.ServiceModel
-Imports System.Security.Permissions
+Imports System.Text
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Design2

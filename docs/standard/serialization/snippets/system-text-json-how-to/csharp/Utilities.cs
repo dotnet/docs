@@ -1,7 +1,7 @@
-﻿using Microsoft.VisualBasic.CompilerServices;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.VisualBasic.CompilerServices;
 
 namespace SystemTextJsonSamples
 {

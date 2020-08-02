@@ -4,11 +4,11 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-using System.Numerics;
 
 namespace PartitionerTests
 {
@@ -17,7 +17,7 @@ namespace PartitionerTests
         static void Main(string[] args)
         {
             Consumer.Main2();
-          //  TestDefaultRangePartitioner();
+            //  TestDefaultRangePartitioner();
             //TestLoadBalancingCreateMethods();
             // ParallelLoopsWithPartitioner();
             //  XMLWithPartitioner();
@@ -64,7 +64,7 @@ namespace PartitionerTests
 
             // Must be load balanced partitioner
             // for this simple data source.
-         //   Partitioner<int> p = Partitioner.Create(nums, true);
+            //   Partitioner<int> p = Partitioner.Create(nums, true);
 
             Parallel.ForEach(customPartitioner, (x) =>
             {
@@ -78,7 +78,7 @@ namespace PartitionerTests
 
             customPartitioner = Partitioner.Create(nums, true);
             var q7 = from x in customPartitioner.AsParallel()
-                    select x;// *Math.PI;
+                     select x;// *Math.PI;
 
             q7.ForAll((x) =>
             {
@@ -130,7 +130,7 @@ namespace PartitionerTests
         {
             //Math.
             int[] sourceArray = Enumerable.Range(1, 12680).ToArray();
-          //  int partitionCount = 4;
+            //  int partitionCount = 4;
 
             Task.Factory.StartNew(() =>
             {
@@ -175,7 +175,7 @@ namespace PartitionerTests
             //   System.IO.File.WriteAllText(@"..\..\logfile1.txt", sb.ToString());
             //  Console.WriteLine("Press any key");
             //   Console.ReadKey();
-           cts.Dispose();
+            cts.Dispose();
         }
 
         BigInteger FakeFibonacci(int i)
@@ -294,7 +294,7 @@ namespace PartitionerTests
             {
                 double area = partitionArea * i;
 
-               // Solve for base given the area and the slope of the hypotenuse.
+                // Solve for base given the area and the slope of the hypotenuse.
                 partitionLimits[i] = (int)Math.Floor(Math.Sqrt((2 * area) / rateOfIncrease));
             }
             return partitionLimits;
@@ -329,7 +329,7 @@ namespace PartitionerTests
             sw = Stopwatch.StartNew();
 
             var query2 = from n in source2.AsParallel()
-                        select ProcessData(n);
+                         select ProcessData(n);
 
             foreach (var v in query2) { }
             Console.WriteLine("Processing time with default partitioner {0}", sw.ElapsedMilliseconds);

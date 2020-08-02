@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections.Concurrent;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 class PLINQ_Files
@@ -49,10 +49,10 @@ class PLINQ_Files
         }
 
         var fileContents = from file in files.AsParallel()
-                let extension = Path.GetExtension(file)
-                where extension == ".txt" || extension == ".htm"
-                let text = File.ReadAllText(file)
-                select new FileResult { Text = text , FileName = file }; //Or ReadAllBytes, ReadAllLines, etc.
+                           let extension = Path.GetExtension(file)
+                           where extension == ".txt" || extension == ".htm"
+                           let text = File.ReadAllText(file)
+                           select new FileResult { Text = text, FileName = file }; //Or ReadAllBytes, ReadAllLines, etc.
 
         try
         {
@@ -68,39 +68,39 @@ class PLINQ_Files
                 {
                     if (ex is UnauthorizedAccessException)
                     {
-                       Console.WriteLine(ex.Message);
-                       return true;
+                        Console.WriteLine(ex.Message);
+                        return true;
                     }
                     return false;
                 });
         }
 
         Console.WriteLine("FileIteration_1 processed {0} files in {1} milliseconds", count, sw.ElapsedMilliseconds);
-        }
+    }
     //</snippet33>
-        //q.ForAll((s) =>
-        //    {
+    //q.ForAll((s) =>
+    //    {
 
-        //        // ...Do work here.
+    //        // ...Do work here.
 
-        //        // Perform some minimal progress updates.
-        //        if (c % 100 == 0)
-        //        {
-        //            // Locking is necessary to so that all writes
-        //            // start at 0,0.
-        //            lock(_lock)
-        //            {
-        //            Console.CursorLeft = 0;
-        //            Console.CursorTop = 0;
-        //            Console.Write(c + ":" + sw.ElapsedMilliseconds);
-        //            }
+    //        // Perform some minimal progress updates.
+    //        if (c % 100 == 0)
+    //        {
+    //            // Locking is necessary to so that all writes
+    //            // start at 0,0.
+    //            lock(_lock)
+    //            {
+    //            Console.CursorLeft = 0;
+    //            Console.CursorTop = 0;
+    //            Console.Write(c + ":" + sw.ElapsedMilliseconds);
+    //            }
 
-        //        }
-        //        Interlocked.Increment(ref c);
+    //        }
+    //        Interlocked.Increment(ref c);
 
-        //    });
+    //    });
 
-  //<snippet34>
+    //<snippet34>
 
     struct FileResult
     {
@@ -135,8 +135,8 @@ class PLINQ_Files
                 {
                     if (ex is UnauthorizedAccessException)
                     {
-                       Console.WriteLine(ex.Message);
-                       return true;
+                        Console.WriteLine(ex.Message);
+                        return true;
                     }
                     return false;
                 });

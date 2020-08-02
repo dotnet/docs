@@ -1,12 +1,12 @@
 ﻿using System;
-using System.ServiceModel.Channels;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Messaging;
-using System.ServiceModel;
-using System.Transactions;
 using System.Runtime.Serialization;
-using System.Collections.Generic;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
+using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples
 
@@ -46,13 +46,13 @@ namespace Microsoft.ServiceModel.Samples
             }
             catch (TimeoutException timeProblem)
             {
-              Console.WriteLine("The service operation timed out. " + timeProblem.Message);
-              Console.ReadLine();
+                Console.WriteLine("The service operation timed out. " + timeProblem.Message);
+                Console.ReadLine();
             }
             catch (CommunicationException commProblem)
             {
-              Console.WriteLine("There was a communication problem. " + commProblem.Message + commProblem.StackTrace);
-              Console.ReadLine();
+                Console.WriteLine("There was a communication problem. " + commProblem.Message + commProblem.StackTrace);
+                Console.ReadLine();
             }
         }
     }

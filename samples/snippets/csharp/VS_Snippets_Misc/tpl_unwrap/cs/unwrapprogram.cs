@@ -13,7 +13,7 @@ class IntroSnippets
     {
         return Task<String>.Factory.StartNew(() =>
         {
-           //...
+            //...
             return "Work completed.";
         });
     }
@@ -88,7 +88,7 @@ namespace Unwrap
             // With Unwrap: stepTwo is a Task<byte[]>
             var stepTwo = data.ContinueWith((antecedent) =>
                 {
-                    return Task<byte>.Factory.StartNew( () => Compute(antecedent.Result));
+                    return Task<byte>.Factory.StartNew(() => Compute(antecedent.Result));
                 })
                 .Unwrap();
 
@@ -96,17 +96,17 @@ namespace Unwrap
             // and the following method will not compile.
             // With Unwrap: antecedent.Result = byte and
             // we can work directly with the result of the Compute method.
-            var lastStep = stepTwo.ContinueWith( (antecedant) =>
-                {
-                    if (antecedant.Result >= threshold)
-                    {
-                      return Task.Factory.StartNew( () =>  Console.WriteLine("Program complete. Final = 0x{0:x} threshold = 0x{1:x}", stepTwo.Result, threshold));
-                    }
-                    else
-                    {
-                        return DoSomeOtherAsyncronousWork(stepTwo.Result, threshold);
-                    }
-                });
+            var lastStep = stepTwo.ContinueWith((antecedant) =>
+               {
+                   if (antecedant.Result >= threshold)
+                   {
+                       return Task.Factory.StartNew(() => Console.WriteLine("Program complete. Final = 0x{0:x} threshold = 0x{1:x}", stepTwo.Result, threshold));
+                   }
+                   else
+                   {
+                       return DoSomeOtherAsyncronousWork(stepTwo.Result, threshold);
+                   }
+               });
 
             lastStep.Wait();
             Console.WriteLine("Press any key");

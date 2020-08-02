@@ -5,46 +5,46 @@ using System.Windows.Controls.Primitives;
 
 namespace SDKSample
 {
-//<SnippetMyStateControl>
-  public class MyStateControl : ButtonBase
-  {
-    public MyStateControl() : base() { }
-    public Boolean State
+    //<SnippetMyStateControl>
+    public class MyStateControl : ButtonBase
     {
-      get { return (Boolean)this.GetValue(StateProperty); }
-      set { this.SetValue(StateProperty, value); }
+        public MyStateControl() : base() { }
+        public Boolean State
+        {
+            get { return (Boolean)this.GetValue(StateProperty); }
+            set { this.SetValue(StateProperty, value); }
+        }
+        public static readonly DependencyProperty StateProperty = DependencyProperty.Register(
+          "State", typeof(Boolean), typeof(MyStateControl), new PropertyMetadata(false));
     }
-    public static readonly DependencyProperty StateProperty = DependencyProperty.Register(
-      "State", typeof(Boolean), typeof(MyStateControl),new PropertyMetadata(false));
-  }
-  //</SnippetMyStateControl>
+    //</SnippetMyStateControl>
 
-  //<SnippetUnrelatedStateControl>
-  public class UnrelatedStateControl : Control
-  {
-    public UnrelatedStateControl() { }
-    public static readonly DependencyProperty StateProperty = MyStateControl.StateProperty.AddOwner(typeof(UnrelatedStateControl), new PropertyMetadata(true));
-    public Boolean State
+    //<SnippetUnrelatedStateControl>
+    public class UnrelatedStateControl : Control
     {
-      get { return (Boolean)this.GetValue(StateProperty); }
-      set { this.SetValue(StateProperty, value); }
+        public UnrelatedStateControl() { }
+        public static readonly DependencyProperty StateProperty = MyStateControl.StateProperty.AddOwner(typeof(UnrelatedStateControl), new PropertyMetadata(true));
+        public Boolean State
+        {
+            get { return (Boolean)this.GetValue(StateProperty); }
+            set { this.SetValue(StateProperty, value); }
+        }
     }
-  }
-  //</SnippetUnrelatedStateControl>
+    //</SnippetUnrelatedStateControl>
 
-  //<SnippetMyAdvancedStateControl>
-  public class MyAdvancedStateControl : MyStateControl
-  {
-    public MyAdvancedStateControl() : base() { }
-    static MyAdvancedStateControl()
+    //<SnippetMyAdvancedStateControl>
+    public class MyAdvancedStateControl : MyStateControl
     {
-      MyStateControl.StateProperty.OverrideMetadata(typeof(MyAdvancedStateControl), new PropertyMetadata(true));
+        public MyAdvancedStateControl() : base() { }
+        static MyAdvancedStateControl()
+        {
+            MyStateControl.StateProperty.OverrideMetadata(typeof(MyAdvancedStateControl), new PropertyMetadata(true));
+        }
     }
-  }
-  //</SnippetMyAdvancedStateControl>
+    //</SnippetMyAdvancedStateControl>
     public class AreaButton : Button
     {
-  //<SnippetInvalidateProperty>
+        //<SnippetInvalidateProperty>
         static AreaButton()
         {
             WidthProperty.OverrideMetadata(typeof(AreaButton), new FrameworkPropertyMetadata(new PropertyChangedCallback(InvalidateAreaProperty)));
@@ -54,7 +54,7 @@ namespace SDKSample
         {
             d.InvalidateProperty(AreaProperty);
         }
-   //</SnippetInvalidateProperty>
+        //</SnippetInvalidateProperty>
         public double Area
         {
             get { return (double)this.GetValue(AreaProperty); }
@@ -63,13 +63,14 @@ namespace SDKSample
             "Area",
             typeof(double),
             typeof(AreaButton),
-            new PropertyMetadata(0.0,null,new CoerceValueCallback(CalculateArea))
+            new PropertyMetadata(0.0, null, new CoerceValueCallback(CalculateArea))
         );
-        private static object CalculateArea(object d, object previousValue) {
+        private static object CalculateArea(object d, object previousValue)
+        {
             FrameworkElement fe = d as FrameworkElement;
             if (fe != null)
             {
-                return(fe.ActualWidth * fe.ActualHeight);
+                return (fe.ActualWidth * fe.ActualHeight);
             }
             else
             {

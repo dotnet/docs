@@ -1,13 +1,13 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Data;
-using System.Globalization;
-using System.Collections.ObjectModel;
 
 namespace SDKSample
 {

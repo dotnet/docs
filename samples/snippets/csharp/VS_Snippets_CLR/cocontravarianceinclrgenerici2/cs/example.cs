@@ -4,15 +4,15 @@ using System.Collections.Generic;
 
 abstract class Shape
 {
-    public virtual double Area { get { return 0; }}
+    public virtual double Area { get { return 0; } }
 }
 
 class Circle : Shape
 {
     private double r;
     public Circle(double radius) { r = radius; }
-    public double Radius { get { return r; }}
-    public override double Area { get { return Math.PI * r * r; }}
+    public double Radius { get { return r; } }
+    public override double Area { get { return Math.PI * r * r; } }
 }
 
 class ShapeAreaComparer : System.Collections.Generic.IComparer<Shape>

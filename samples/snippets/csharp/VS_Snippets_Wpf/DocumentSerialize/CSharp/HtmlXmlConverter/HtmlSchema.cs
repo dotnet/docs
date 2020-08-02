@@ -10,8 +10,8 @@
 
 namespace SdkSample
 {
-    using System.Diagnostics;
     using System.Collections;
+    using System.Diagnostics;
 
     /// <summary>
     /// HtmlSchema class
@@ -195,7 +195,7 @@ namespace SdkSample
         {
             if (_htmlCharacterEntities.Contains(entityName))
             {
-                return (char) _htmlCharacterEntities[entityName];
+                return (char)_htmlCharacterEntities[entityName];
             }
             else
             {

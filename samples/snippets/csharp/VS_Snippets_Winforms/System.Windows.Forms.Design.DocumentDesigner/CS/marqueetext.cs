@@ -208,9 +208,9 @@ namespace MarqueeControlLibrary
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 
-//
-// backgroundWorker1
-//
+            //
+            // backgroundWorker1
+            //
             this.backgroundWorker1.WorkerReportsProgress = true;
             this.backgroundWorker1.WorkerSupportsCancellation = true;
             this.backgroundWorker1.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker1_ProgressChanged);

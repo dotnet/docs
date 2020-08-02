@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Windows;
-using System.Data;
-using System.Xml;
 using System.Configuration;
+using System.Data;
 using System.Diagnostics;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
 using System.Windows.Documents;
+using System.Xml;
 
 namespace SDKSample
 {

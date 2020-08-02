@@ -64,105 +64,105 @@ namespace WordSpell
 //-----------------------------------------------------------------------------
 namespace Microsoft.Office.Interop
 {
-  namespace Word
-  {
-
-    //-------------------------------------------------------------------------
-    class Application
+    namespace Word
     {
-        private bool _Visible;
-        public bool Visible
+
+        //-------------------------------------------------------------------------
+        class Application
         {
-            get{return _Visible;}
-            set{_Visible = value;}
+            private bool _Visible;
+            public bool Visible
+            {
+                get { return _Visible; }
+                set { _Visible = value; }
+            }
+
+            private Documents _Documents = new Documents();
+            public Documents Documents
+            {
+                get { return _Documents; }
+            }
+
+            public void Quit(ref object SaveChanges, ref object OriginalFormat, ref object RouteDocument)
+            {
+            }
         }
 
-        private Documents _Documents = new Documents();
-        public Documents Documents
+        //-------------------------------------------------------------------------
+        class Documents
         {
-            get{return _Documents;}
+            public Document Add(ref object a, ref object b, ref object c, ref object d)
+            {
+                return new Document();
+            }
         }
 
-        public void Quit(ref object SaveChanges, ref object OriginalFormat, ref object RouteDocument)
+        //-------------------------------------------------------------------------
+        public interface _Document
         {
+            Words Words { get; }
+            ProofreadingErrors SpellingErrors { get; }
+            void CheckSpelling(ref object CustomDictionary, ref object IgnoreUppercase, ref object AlwaysSuggest, ref object CustomDictionary2, ref object CustomDictionary3, ref object CustomDictionary4, ref object CustomDictionary5, ref object CustomDictionary6, ref object CustomDictionary7, ref object CustomDictionary8, ref object CustomDictionary9, ref object CustomDictionary10);
+            Characters Characters { get; }
+            Range Range(ref object first, ref object last);
+        }
+
+        //-------------------------------------------------------------------------
+        class Document : _Document
+        {
+            Words _Words = (Words)new object();
+            public Words Words
+            {
+                get { return _Words; }
+            }
+
+            ProofreadingErrors _SpellingErrors = (ProofreadingErrors)new object();
+            public ProofreadingErrors SpellingErrors
+            {
+                get { return _SpellingErrors; }
+            }
+
+            public void CheckSpelling(ref object CustomDictionary, ref object IgnoreUppercase, ref object AlwaysSuggest, ref object CustomDictionary2, ref object CustomDictionary3, ref object CustomDictionary4, ref object CustomDictionary5, ref object CustomDictionary6, ref object CustomDictionary7, ref object CustomDictionary8, ref object CustomDictionary9, ref object CustomDictionary10)
+            {
+            }
+
+            Characters _Characters = (Characters)new object();
+            public Characters Characters
+            {
+                get { return _Characters; }
+            }
+
+            public Range Range(ref object first, ref object last)
+            {
+                return (Range)new object();
+            }
+        }
+
+        //-------------------------------------------------------------------------
+        public interface Range
+        {
+            void InsertBefore(string Text);
+            string Text { set; get; }
+        }
+
+        //-------------------------------------------------------------------------
+        public interface ProofreadingErrors
+        {
+            int Count { get; }
+        }
+
+        //-------------------------------------------------------------------------
+        public interface Words
+        {
+            Range First { get; }
+        }
+
+        //-------------------------------------------------------------------------
+        public interface Characters
+        {
+            int Count { get; }
         }
     }
-
-    //-------------------------------------------------------------------------
-    class Documents
-    {
-        public Document Add(ref object a, ref object b, ref object c, ref object d)
-        {
-            return new Document();
-        }
-    }
-
-    //-------------------------------------------------------------------------
-    public interface _Document
-    {
-        Words Words {get;}
-        ProofreadingErrors SpellingErrors {get;}
-        void CheckSpelling(ref object CustomDictionary, ref object IgnoreUppercase, ref object AlwaysSuggest, ref object CustomDictionary2, ref object CustomDictionary3, ref object CustomDictionary4, ref object CustomDictionary5, ref object CustomDictionary6, ref object CustomDictionary7, ref object CustomDictionary8, ref object CustomDictionary9, ref object CustomDictionary10);
-        Characters Characters {get;}
-        Range Range(ref object first, ref object last);
-    }
-
-    //-------------------------------------------------------------------------
-    class Document : _Document
-    {
-        Words _Words = (Words) new object();
-        public Words Words
-        {
-            get{ return _Words; }
-        }
-
-        ProofreadingErrors _SpellingErrors = (ProofreadingErrors) new object();
-        public ProofreadingErrors SpellingErrors
-        {
-            get{ return _SpellingErrors; }
-        }
-
-        public void CheckSpelling(ref object CustomDictionary, ref object IgnoreUppercase, ref object AlwaysSuggest, ref object CustomDictionary2, ref object CustomDictionary3, ref object CustomDictionary4, ref object CustomDictionary5, ref object CustomDictionary6, ref object CustomDictionary7, ref object CustomDictionary8, ref object CustomDictionary9, ref object CustomDictionary10)
-        {
-        }
-
-        Characters _Characters = (Characters) new object();
-        public Characters Characters
-        {
-            get{ return _Characters; }
-        }
-
-        public Range Range(ref object first, ref object last)
-        {
-            return (Range)new object();
-        }
-    }
-
-    //-------------------------------------------------------------------------
-    public interface Range
-    {
-        void InsertBefore(string Text);
-        string Text { set; get; }
-    }
-
-    //-------------------------------------------------------------------------
-    public interface ProofreadingErrors
-    {
-        int Count { get; }
-    }
-
-    //-------------------------------------------------------------------------
-    public interface Words
-    {
-        Range First {get;}
-    }
-
-    //-------------------------------------------------------------------------
-    public interface Characters
-    {
-        int Count {get;}
-    }
-  }
 }
 
 //-----------------------------------------------------------------------------
@@ -173,7 +173,7 @@ namespace WordSpell
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components=null;
+        private System.ComponentModel.IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.

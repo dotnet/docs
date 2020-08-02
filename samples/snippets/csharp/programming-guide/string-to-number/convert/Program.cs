@@ -25,7 +25,7 @@ public class ConvertStringExample1
                 {
                     Console.WriteLine("numVal cannot be incremented beyond its current value");
                 }
-           }
+            }
             catch (FormatException)
             {
                 Console.WriteLine("Input string is not a sequence of digits.");

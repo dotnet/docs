@@ -1,10 +1,10 @@
-﻿ '<Snippet1>
+﻿'<Snippet1>
+Imports System.IO
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Ink
 Imports System.Windows.Input
 Imports System.Windows.Media
-Imports System.IO
 
 ' This control initializes with ink already on it and allows the
 ' user to erase the ink with the tablet pen or mouse.
@@ -12,9 +12,9 @@ Imports System.IO
 Public Class InkEraser
     Inherits Label
     Private eraseTester As IncrementalStrokeHitTester
-    
+
     Private presenter As InkPresenter
-    
+
     ' The base-64 encoded string that contains ink data 
     ' in ink serialized format (ISF).
     Private strokesString As String = _
@@ -39,23 +39,23 @@ Public Class InkEraser
         & "8OACloSh/BFl4Gf/IOt6FXfF8F4ToPCZzlPwP4+B+DHmQO847rfDeCcG8eKh/EZV" _
         & "4i9eZt8A9nUF8VzxaUe5grl7YrPaHfpRKJNx4yHmUuj1vicwmMBEAjUVgKB61A="
 
-    Public Sub New() 
+    Public Sub New()
         presenter = New InkPresenter()
         Me.Content = presenter
-        
+
         ' Create a StrokeCollection the string and add it to
         Dim converter As New StrokeCollectionConverter()
-        
+
         If converter.CanConvertFrom(GetType(String)) Then
             Dim newStrokes As StrokeCollection = converter.ConvertFrom(strokesString)
 
             presenter.Strokes.Clear()
             presenter.Strokes.Add(newStrokes)
         End If
-    
+
     End Sub
-     
-    Protected Overrides Sub OnStylusDown(ByVal e As StylusDownEventArgs) 
+
+    Protected Overrides Sub OnStylusDown(ByVal e As StylusDownEventArgs)
 
         MyBase.OnStylusDown(e)
         Dim points As StylusPointCollection = e.GetStylusPoints(Me)
@@ -63,8 +63,8 @@ Public Class InkEraser
         InitializeEraserHitTester(points)
 
     End Sub
-     
-    Protected Overrides Sub OnMouseLeftButtonDown(ByVal e As MouseButtonEventArgs) 
+
+    Protected Overrides Sub OnMouseLeftButtonDown(ByVal e As MouseButtonEventArgs)
 
         MyBase.OnMouseLeftButtonDown(e)
 
@@ -79,93 +79,93 @@ Public Class InkEraser
         InitializeEraserHitTester(collectedPoints)
 
     End Sub
-    
+
     ' Get the IncrementalHitTester from the InkPresenter's 
     ' StrokeCollection and subscribe to its StrokeHitChanged event.
-    Private Sub InitializeEraserHitTester(ByVal points As StylusPointCollection) 
+    Private Sub InitializeEraserHitTester(ByVal points As StylusPointCollection)
 
         Dim eraserTip As New EllipseStylusShape(3, 3, 0)
         eraseTester = presenter.Strokes.GetIncrementalStrokeHitTester(eraserTip)
         AddHandler eraseTester.StrokeHit, AddressOf eraseTester_StrokeHit
         eraseTester.AddPoints(points)
-    
+
     End Sub
-    
-    
-    Protected Overrides Sub OnStylusMove(ByVal e As StylusEventArgs) 
+
+
+    Protected Overrides Sub OnStylusMove(ByVal e As StylusEventArgs)
         Dim points As StylusPointCollection = e.GetStylusPoints(Me)
-        
+
         AddPointsToEraserHitTester(points)
-    
+
     End Sub
-    
-    
-    Protected Overrides Sub OnMouseMove(ByVal e As MouseEventArgs) 
+
+
+    Protected Overrides Sub OnMouseMove(ByVal e As MouseEventArgs)
         MyBase.OnMouseMove(e)
-        
+
         If Not (e.StylusDevice Is Nothing) Then
             Return
         End If
-        
+
         If e.LeftButton = MouseButtonState.Released Then
             Return
         End If
-        
+
         Dim pt As Point = e.GetPosition(Me)
-        
+
         Dim collectedPoints As New StylusPointCollection(New Point() {pt})
-        
+
         AddPointsToEraserHitTester(collectedPoints)
-    
+
     End Sub
-    
-    
+
+
     ' Collect the StylusPackets as the stylus moves.
-    Private Sub AddPointsToEraserHitTester(ByVal points As StylusPointCollection) 
+    Private Sub AddPointsToEraserHitTester(ByVal points As StylusPointCollection)
 
         If eraseTester.IsValid Then
             eraseTester.AddPoints(points)
         End If
-    
+
     End Sub
-    
-    
+
+
     ' Unsubscribe from the StrokeHitChanged event when the
     ' user lifts the stylus.
-    Protected Overrides Sub OnStylusUp(ByVal e As StylusEventArgs) 
+    Protected Overrides Sub OnStylusUp(ByVal e As StylusEventArgs)
 
         Dim points As StylusPointCollection = e.GetStylusPoints(Me)
-        
+
         StopEraseHitTesting(points)
-    
+
     End Sub
-    
-    
-    Protected Overrides Sub OnMouseLeftButtonUp(ByVal e As MouseButtonEventArgs) 
+
+
+    Protected Overrides Sub OnMouseLeftButtonUp(ByVal e As MouseButtonEventArgs)
 
         MyBase.OnMouseLeftButtonUp(e)
-        
+
         If Not (e.StylusDevice Is Nothing) Then
             Return
         End If
-        
+
         Dim pt As Point = e.GetPosition(Me)
-        
+
         Dim collectedPoints As New StylusPointCollection(New Point() {pt})
-        
+
         StopEraseHitTesting(collectedPoints)
-    
+
     End Sub
-    
-    
-    Private Sub StopEraseHitTesting(ByVal points As StylusPointCollection) 
+
+
+    Private Sub StopEraseHitTesting(ByVal points As StylusPointCollection)
 
         eraseTester.AddPoints(points)
         RemoveHandler eraseTester.StrokeHit, AddressOf eraseTester_StrokeHit
         eraseTester.EndHitTesting()
-    
+
     End Sub
-    
+
     ' When the stylus intersects a stroke, erase that part of
     ' the stroke.  When the stylus dissects a stoke, the 
     ' Stroke.Erase method returns a StrokeCollection that contains

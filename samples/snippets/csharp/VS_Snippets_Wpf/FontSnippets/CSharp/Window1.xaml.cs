@@ -175,7 +175,7 @@ namespace SDKSample
             // Determine whether the dictionary contains the current culture info.
             //if (dictionary.ContainsKey())
             //{
-                // Font family contains the family name for the current culture info.
+            // Font family contains the family name for the current culture info.
             //}
             //</Snippet106>
             //else

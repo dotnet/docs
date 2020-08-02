@@ -64,7 +64,7 @@ class Program
             args.Status = UpdateStatus.SkipCurrentRow;
         }
     }
-   // </Snippet2>
+    // </Snippet2>
 
     static private string GetConnectionString()
     {

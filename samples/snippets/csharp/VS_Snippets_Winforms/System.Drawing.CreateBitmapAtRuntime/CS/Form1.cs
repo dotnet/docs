@@ -28,7 +28,7 @@ namespace BitmapAtRuntime
             CreateBitmapAtRuntime();
         }
 
-            //<snippet1>
+        //<snippet1>
         PictureBox pictureBox1 = new PictureBox();
         public void CreateBitmapAtRuntime()
         {
@@ -39,14 +39,15 @@ namespace BitmapAtRuntime
             Graphics flagGraphics = Graphics.FromImage(flag);
             int red = 0;
             int white = 11;
-            while (white <= 100) {
-                flagGraphics.FillRectangle(Brushes.Red, 0, red, 200,10);
+            while (white <= 100)
+            {
+                flagGraphics.FillRectangle(Brushes.Red, 0, red, 200, 10);
                 flagGraphics.FillRectangle(Brushes.White, 0, white, 200, 10);
                 red += 20;
                 white += 20;
             }
             pictureBox1.Image = flag;
         }
-   //</snippet1>
+        //</snippet1>
     }
 }

@@ -2,16 +2,15 @@
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
-
-using System.ServiceModel.Description;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Messaging;
+using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
-using System.Transactions;
-using System.Runtime.Serialization;
-using System.Collections.Generic;
+using System.ServiceModel.Description;
 using System.Text;
+using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples
 {
@@ -130,7 +129,7 @@ namespace Microsoft.ServiceModel.Samples
 
     // Service class that implements the service contract.
     // Added code to write output to the console window.
-    [ServiceBehavior(AddressFilterMode=AddressFilterMode.Any)]
+    [ServiceBehavior(AddressFilterMode = AddressFilterMode.Any)]
     public class OrderProcessorService : IOrderProcessor
     {
         [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]

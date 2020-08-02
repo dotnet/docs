@@ -1,14 +1,13 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Media;
-using System.Windows.Shapes;
-
-using System.Windows.Media.Animation;
-using System.IO;
 using System.Windows.Markup;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace FlowDocumentSnippets
 {
@@ -308,25 +307,25 @@ namespace FlowDocumentSnippets
             FlowDocument flowDoc = new FlowDocument(new Paragraph(new Run("A bit of text content...")));
 
             // Change various default typography variations.
-            flowDoc.Typography.Capitals               = FontCapitals.SmallCaps;
-            flowDoc.Typography.CapitalSpacing         = true;
-            flowDoc.Typography.CaseSensitiveForms     = true;
-            flowDoc.Typography.ContextualAlternates   = false;
-            flowDoc.Typography.ContextualLigatures    = false;
+            flowDoc.Typography.Capitals = FontCapitals.SmallCaps;
+            flowDoc.Typography.CapitalSpacing = true;
+            flowDoc.Typography.CaseSensitiveForms = true;
+            flowDoc.Typography.ContextualAlternates = false;
+            flowDoc.Typography.ContextualLigatures = false;
             flowDoc.Typography.DiscretionaryLigatures = true;
-            flowDoc.Typography.EastAsianExpertForms   = true;
-            flowDoc.Typography.EastAsianLanguage      = FontEastAsianLanguage.Traditional;
-            flowDoc.Typography.EastAsianWidths        = FontEastAsianWidths.Proportional;
-            flowDoc.Typography.Fraction               = FontFraction.Stacked;
-            flowDoc.Typography.HistoricalForms        = true;
-            flowDoc.Typography.HistoricalLigatures    = true;
-            flowDoc.Typography.Kerning                = false;
-            flowDoc.Typography.MathematicalGreek      = true;
-            flowDoc.Typography.NumeralAlignment       = FontNumeralAlignment.Proportional;
-            flowDoc.Typography.NumeralStyle           = FontNumeralStyle.OldStyle;
-            flowDoc.Typography.SlashedZero            = true;
-            flowDoc.Typography.StandardLigatures      = false;
-            flowDoc.Typography.Variants               = FontVariants.Ruby;
+            flowDoc.Typography.EastAsianExpertForms = true;
+            flowDoc.Typography.EastAsianLanguage = FontEastAsianLanguage.Traditional;
+            flowDoc.Typography.EastAsianWidths = FontEastAsianWidths.Proportional;
+            flowDoc.Typography.Fraction = FontFraction.Stacked;
+            flowDoc.Typography.HistoricalForms = true;
+            flowDoc.Typography.HistoricalLigatures = true;
+            flowDoc.Typography.Kerning = false;
+            flowDoc.Typography.MathematicalGreek = true;
+            flowDoc.Typography.NumeralAlignment = FontNumeralAlignment.Proportional;
+            flowDoc.Typography.NumeralStyle = FontNumeralStyle.OldStyle;
+            flowDoc.Typography.SlashedZero = true;
+            flowDoc.Typography.StandardLigatures = false;
+            flowDoc.Typography.Variants = FontVariants.Ruby;
             // </Snippet_FlowDocumentTypography>
         }
 
@@ -522,22 +521,22 @@ namespace FlowDocumentSnippets
             // <Snippet_TextBlockProps>
             TextBlock textBlock = new TextBlock(new Run("A bit of text content..."));
 
-            textBlock.Background              = Brushes.AntiqueWhite;
-            textBlock.Foreground              = Brushes.Navy;
+            textBlock.Background = Brushes.AntiqueWhite;
+            textBlock.Foreground = Brushes.Navy;
 
-            textBlock.FontFamily              = new FontFamily("Century Gothic");
-            textBlock.FontSize                = 12;
-            textBlock.FontStretch             = FontStretches.UltraExpanded;
-            textBlock.FontStyle               = FontStyles.Italic;
-            textBlock.FontWeight              = FontWeights.UltraBold;
+            textBlock.FontFamily = new FontFamily("Century Gothic");
+            textBlock.FontSize = 12;
+            textBlock.FontStretch = FontStretches.UltraExpanded;
+            textBlock.FontStyle = FontStyles.Italic;
+            textBlock.FontWeight = FontWeights.UltraBold;
 
-            textBlock.LineHeight              = Double.NaN;
-            textBlock.Padding                 = new Thickness(5, 10, 5, 10);
-            textBlock.TextAlignment           = TextAlignment.Center;
-            textBlock.TextWrapping            = TextWrapping.Wrap;
+            textBlock.LineHeight = Double.NaN;
+            textBlock.Padding = new Thickness(5, 10, 5, 10);
+            textBlock.TextAlignment = TextAlignment.Center;
+            textBlock.TextWrapping = TextWrapping.Wrap;
 
             textBlock.Typography.NumeralStyle = FontNumeralStyle.OldStyle;
-            textBlock.Typography.SlashedZero  = true;
+            textBlock.Typography.SlashedZero = true;
             // </Snippet_TextBlockProps>
         }
 

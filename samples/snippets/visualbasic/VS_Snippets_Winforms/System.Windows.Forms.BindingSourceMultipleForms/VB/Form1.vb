@@ -1,7 +1,7 @@
-﻿ '<snippet1>
+﻿'<snippet1>
+Imports System.Data
 Imports System.Drawing
 Imports System.Windows.Forms
-Imports System.Data
 
 Public Class MainForm
     Inherits Form

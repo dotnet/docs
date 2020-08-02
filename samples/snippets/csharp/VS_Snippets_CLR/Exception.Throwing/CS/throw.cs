@@ -17,7 +17,7 @@ public class ProcessFile
             string line = sr.ReadLine();
             Console.WriteLine(line);
         }
-        catch(FileNotFoundException e)
+        catch (FileNotFoundException e)
         {
             Console.WriteLine($"[Data File Missing] {e}");
             throw new FileNotFoundException(@"[data.txt not in c:\temp directory]", e);

@@ -1,12 +1,12 @@
 ﻿'  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
-Imports System.ServiceModel.Channels
+Imports System.Collections.Generic
 Imports System.Configuration
-'using System.Messaging;
-Imports System.ServiceModel
 'using System.Transactions;
 Imports System.Runtime.Serialization
-Imports System.Collections.Generic
+'using System.Messaging;
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
 Imports System.Text
 
 Namespace Microsoft.ServiceModel.Samples

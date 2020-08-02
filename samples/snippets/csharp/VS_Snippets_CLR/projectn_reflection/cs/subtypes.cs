@@ -19,25 +19,25 @@ public class Page
 
 public class TextBlock
 {
-   public string Text;
+    public string Text;
 }
 
 namespace Examples
 {
-   public partial class MainPage
-   {
-      public TextBlock block = new TextBlock();
-      private void InitializeComponent() {}
-   }
+    public partial class MainPage
+    {
+        public TextBlock block = new TextBlock();
+        private void InitializeComponent() { }
+    }
 }
 
 // <Snippet5>
 namespace Examples
 {
-   using System.Reflection;
-   using Examples.Libraries;
+    using System.Reflection;
+    using Examples.Libraries;
 
-   public sealed partial class MainPage : Page
+    public sealed partial class MainPage : Page
     {
         public MainPage()
         {
@@ -57,31 +57,31 @@ namespace Examples
 // <Snippet4>
 namespace Examples.Libraries
 {
-   public class BaseClass
-   {
-      public BaseClass()
-      { }
+    public class BaseClass
+    {
+        public BaseClass()
+        { }
 
-      public override string ToString()
-      {
- 	      return String.Format("{0} Version  {1}", this.GetType().Name, Version);
-      }
-      public virtual double Version
-      { get { return 1.0; }}
+        public override string ToString()
+        {
+            return String.Format("{0} Version  {1}", this.GetType().Name, Version);
+        }
+        public virtual double Version
+        { get { return 1.0; } }
     }
 
-   public class Derived1 : BaseClass
-   {
-      public Derived1() : base()
-      {}
+    public class Derived1 : BaseClass
+    {
+        public Derived1() : base()
+        { }
 
-      public override double Version
-      { get { return 1.1; }}
+        public override double Version
+        { get { return 1.1; } }
 
-      public override string ToString()
-      {
-         return String.Format("{0} Version {1}", this.GetType().Name, Version);
-      }
-   }
+        public override string ToString()
+        {
+            return String.Format("{0} Version {1}", this.GetType().Name, Version);
+        }
+    }
 }
 // </Snippet4>

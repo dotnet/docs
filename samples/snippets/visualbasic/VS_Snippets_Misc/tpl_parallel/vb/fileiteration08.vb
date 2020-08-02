@@ -13,25 +13,25 @@ Module Example
         Try
             TraverseTreeParallelForEach("C:\Program Files",
                                         Sub(f)
-                                         ' Exceptions are No-ops.         
-                                         Try
-                                             ' Do nothing with the data except read it.
-                                             Dim data() As Byte = File.ReadAllBytes(f)
-                                             ' In the event the file has been deleted.
-                                         Catch e As FileNotFoundException
+                                            ' Exceptions are No-ops.         
+                                            Try
+                                                ' Do nothing with the data except read it.
+                                                Dim data() As Byte = File.ReadAllBytes(f)
+                                                ' In the event the file has been deleted.
+                                            Catch e As FileNotFoundException
 
-                                             ' General I/O exception, especially if the file is in use.
-                                         Catch e As IOException
+                                                ' General I/O exception, especially if the file is in use.
+                                            Catch e As IOException
 
-                                             ' Lack of adequate permissions.
-                                         Catch e As UnauthorizedAccessException
+                                                ' Lack of adequate permissions.
+                                            Catch e As UnauthorizedAccessException
 
-                                             ' Lack of adequate permissions.
-                                         Catch e As SecurityException
+                                                ' Lack of adequate permissions.
+                                            Catch e As SecurityException
 
                                             End Try
-                                         ' Display the filename.
-                                         Console.WriteLine(f)
+                                            ' Display the filename.
+                                            Console.WriteLine(f)
                                         End Sub)
         Catch e As ArgumentException
             Console.WriteLine("The directory 'C:\Program Files' does not exist.")

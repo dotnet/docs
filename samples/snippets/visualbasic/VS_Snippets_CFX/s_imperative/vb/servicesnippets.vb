@@ -1,8 +1,8 @@
 ﻿
-Imports System.ServiceModel.Channels
-Imports System.ServiceModel
-Imports System.ServiceModel.Description
 Imports System.Collections.Generic
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
+Imports System.ServiceModel.Description
 
 Namespace Microsoft.ServiceModel.Samples
     Public Class serviceSnippets

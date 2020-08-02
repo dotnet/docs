@@ -8,15 +8,15 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Packaging;
+using System.Printing;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Documents;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows;
-using System.Windows.Documents;
-using System.Windows.Xps.Packaging;
-using System.Windows.Controls;
 using System.Windows.Shapes;
-using System.Windows.Markup;
-using System.Printing;
+using System.Windows.Xps.Packaging;
 using SDKSample;
 
 namespace SDKSampleHelper
@@ -52,11 +52,11 @@ namespace SDKSampleHelper
         public Canvas CreateFirstVisual(bool shouldMeasure)
         {
             Canvas canvas1 = new Canvas();
-            canvas1.Width  = 96 * 8.5;
+            canvas1.Width = 96 * 8.5;
             canvas1.Height = 96 * 11;
 
             // Top-Left
-            TextBlock label  = new TextBlock();
+            TextBlock label = new TextBlock();
             label.Foreground = Brushes.DarkBlue;
             label.FontFamily = new System.Windows.Media.FontFamily("Arial");
             label.FontSize = 36.0;
@@ -180,7 +180,7 @@ namespace SDKSampleHelper
             rectangle.RadiusY = 5;
             rectangle.Stroke = Brushes.Orange;
             rectangle.Height = 200;
-            rectangle.Width  = 350;
+            rectangle.Width = 350;
             Canvas.SetTop(rectangle, 50);
             Canvas.SetLeft(rectangle, 100);
             canvas.Children.Add(rectangle);
@@ -263,8 +263,8 @@ namespace SDKSampleHelper
         ///   The canvas containing the visual.</returns>
         public Canvas CreateThirdVisual(bool shouldMeasure)
         {
-            Canvas               canvas      = new Canvas();
-            RadialGradientBrush  brush       = new RadialGradientBrush();
+            Canvas canvas = new Canvas();
+            RadialGradientBrush brush = new RadialGradientBrush();
 
             brush.GradientStops.Add(new GradientStop(Colors.Black, 0));
             brush.GradientStops.Add(new GradientStop(Colors.Yellow, 0.5));
@@ -281,10 +281,10 @@ namespace SDKSampleHelper
 
             Thickness thick = new Thickness();
             thick.Left = 100;
-            thick.Top  = 100;
+            thick.Top = 100;
 
             r.Margin = thick;
-            r.Width  = 400;
+            r.Width = 400;
             r.Height = 400;
 
             canvas.Children.Add(r);
@@ -304,10 +304,10 @@ namespace SDKSampleHelper
 
             thick = new Thickness();
             thick.Left = 200;
-            thick.Top  = 200;
+            thick.Top = 200;
 
             r.Margin = thick;
-            r.Width  = 400;
+            r.Width = 400;
             r.Height = 400;
 
             canvas.Children.Add(r);
@@ -462,10 +462,10 @@ namespace SDKSampleHelper
             FixedPage.SetLeft(visual, 0);
             FixedPage.SetTop(visual, 0);
 
-            double pageWidth  = 96 * 8.5;
+            double pageWidth = 96 * 8.5;
             double pageHeight = 96 * 11;
-            fixedPage.Width   = pageWidth;
-            fixedPage.Height  = pageHeight;
+            fixedPage.Width = pageWidth;
+            fixedPage.Height = pageHeight;
 
             fixedPage.Children.Add((UIElement)visual);
 
@@ -489,10 +489,10 @@ namespace SDKSampleHelper
             FixedPage.SetLeft(visual, 0);
             FixedPage.SetTop(visual, 0);
 
-            double pageWidth  = 96 * 8.5;
+            double pageWidth = 96 * 8.5;
             double pageHeight = 96 * 11;
-            fixedPage.Width   = pageWidth;
-            fixedPage.Height  = pageHeight;
+            fixedPage.Width = pageWidth;
+            fixedPage.Height = pageHeight;
 
             fixedPage.Children.Add((UIElement)visual);
 
@@ -566,10 +566,10 @@ namespace SDKSampleHelper
 
             fixedPage.Children.Add(canvas1);
 
-            double pageWidth  = 96 * 8.5;
+            double pageWidth = 96 * 8.5;
             double pageHeight = 96 * 11;
-            fixedPage.Width   = pageWidth;
-            fixedPage.Height  = pageHeight;
+            fixedPage.Width = pageWidth;
+            fixedPage.Height = pageHeight;
 
             PerformTransform(ref fixedPage, pq);
 
@@ -586,13 +586,13 @@ namespace SDKSampleHelper
         ///   The page content for the fourth fixed page.</returns>
         private PageContent CreateFourthPageContent(PrintQueue pq)
         {
-            PageContent    pageContent = new PageContent();
-            FixedPage      fixedPage   = new FixedPage();
-            fixedPage.Background       = Brushes.BlanchedAlmond;
+            PageContent pageContent = new PageContent();
+            FixedPage fixedPage = new FixedPage();
+            fixedPage.Background = Brushes.BlanchedAlmond;
 
             BitmapImage bitmapImage = new BitmapImage(
                 new Uri(_contentDir + @"\tiger.jpg",
-                        UriKind.RelativeOrAbsolute)  );
+                        UriKind.RelativeOrAbsolute));
 
             Image image = new Image();
             image.Source = bitmapImage;
@@ -603,18 +603,18 @@ namespace SDKSampleHelper
             Image image2 = new Image();
             image2.Source = bitmapImage;
             image2.Opacity = 0.3;
-            FixedPage.SetTop(image2,150);
-            FixedPage.SetLeft(image2,150);
+            FixedPage.SetTop(image2, 150);
+            FixedPage.SetLeft(image2, 150);
             fixedPage.Children.Add(image2);
 
             PerformTransform(ref fixedPage, pq);
 
             ((IAddChild)pageContent).AddChild(fixedPage);
 
-            double pageWidth  = 96 * 8.5;
+            double pageWidth = 96 * 8.5;
             double pageHeight = 96 * 11;
 
-            fixedPage.Width  = pageWidth;
+            fixedPage.Width = pageWidth;
             fixedPage.Height = pageHeight;
 
             return pageContent;
@@ -629,9 +629,9 @@ namespace SDKSampleHelper
         ///   The page content for the fifth fixed page.</returns>
         private PageContent CreateFifthPageContent(PrintQueue pq)
         {
-            PageContent     pageContent = new PageContent();
-            FixedPage       fixedPage   = new FixedPage();
-            UIElement       visual      = CreateThirdVisual(false);
+            PageContent pageContent = new PageContent();
+            FixedPage fixedPage = new FixedPage();
+            UIElement visual = CreateThirdVisual(false);
 
             FixedPage.SetLeft(visual, 0);
             FixedPage.SetTop(visual, 0);
@@ -660,7 +660,7 @@ namespace SDKSampleHelper
         ///   The print queue that the page will be output to.</param>
         private void PerformTransform(ref FixedPage fp, PrintQueue pq)
         {
-           // ContainerVisual root = new ContainerVisual();
+            // ContainerVisual root = new ContainerVisual();
             const double inch = 96;
 
             // Getting margins
@@ -679,31 +679,31 @@ namespace SDKSampleHelper
 
         #endregion  // Create FixedPage methods
 
-/*!!!
-        // --------------------- LoadViewableFixedContent ---------------------
-        /// <summary>
-        ///   Loads a document with fixed content.</summary>
-        /// <param name="documentName">
-        ///   The path and file of the fixed content to load.</param>
-        /// <returns>
-        ///   The FixedDocumentSequence of the loaded content.</returns>
-        public IDocumentPaginatorSource LoadViewableFixedContent(
-                                        string documentName, bool isDocument)
-        {
-            XpsDocument xpsPackage = new XpsDocument(
-                documentName, FileAccess.Read, CompressionOption.NotCompressed);
+        /*!!!
+                // --------------------- LoadViewableFixedContent ---------------------
+                /// <summary>
+                ///   Loads a document with fixed content.</summary>
+                /// <param name="documentName">
+                ///   The path and file of the fixed content to load.</param>
+                /// <returns>
+                ///   The FixedDocumentSequence of the loaded content.</returns>
+                public IDocumentPaginatorSource LoadViewableFixedContent(
+                                                string documentName, bool isDocument)
+                {
+                    XpsDocument xpsPackage = new XpsDocument(
+                        documentName, FileAccess.Read, CompressionOption.NotCompressed);
 
-            FixedDocumentSequence fixedDocumentSequence =
-                xpsPackage.GetFixedDocumentSequence();
+                    FixedDocumentSequence fixedDocumentSequence =
+                        xpsPackage.GetFixedDocumentSequence();
 
-            IDocumentPaginatorSource document =
-                fixedDocumentSequence as IDocumentPaginatorSource;
+                    IDocumentPaginatorSource document =
+                        fixedDocumentSequence as IDocumentPaginatorSource;
 
-            xpsPackage.Close();
+                    xpsPackage.Close();
 
-            return document;
-        }// end:LoadViewableFixedContent()
-!!!*/
+                    return document;
+                }// end:LoadViewableFixedContent()
+        !!!*/
 
         // ---------------------------- SetEllipse ----------------------------
         /// <summary>
@@ -718,10 +718,10 @@ namespace SDKSampleHelper
         {
             Thickness thick = new Thickness();
             thick.Left = cx - rx;
-            thick.Top  = cy - ry;
+            thick.Top = cy - ry;
 
             shape.Margin = thick;
-            shape.Width  = rx * 2;
+            shape.Width = rx * 2;
             shape.Height = ry * 2;
         }// end:SetEllipse()
 
@@ -750,8 +750,8 @@ namespace SDKSampleHelper
             double bottommargin = 1 * inch;
 
             // Calculate the content size.
-            double contentwidth  = width  - leftmargin - rightmargin;
-            double contentheight = height - topmargin  - bottommargin;
+            double contentwidth = width - leftmargin - rightmargin;
+            double contentheight = height - topmargin - bottommargin;
             idp.PageSize = new Size(contentwidth, contentheight);
 
             DocumentPage p = idp.GetPage(0);
@@ -810,7 +810,7 @@ namespace SDKSampleHelper
            "except in details of dates or numbers - but the outlines and " +
            "significance of things had lost edge in the haze of new interests.";
 
-        private          String _contentDir;
+        private String _contentDir;
 
         #endregion // private members
 

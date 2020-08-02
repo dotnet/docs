@@ -3,9 +3,9 @@ Option Strict On
 
 '<snippetCustomIUpdatable>
 Imports System.Collections
-Imports System.Reflection
 Imports System.Data.Services
 Imports System.Linq
+Imports System.Reflection
 
 Namespace CustomDataServiceClient
     Partial Public Class OrderItemData

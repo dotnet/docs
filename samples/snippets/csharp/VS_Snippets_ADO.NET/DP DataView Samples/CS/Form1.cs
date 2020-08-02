@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Data.Common;
+using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using System.Globalization;
 
 namespace DataViewSamples
 {
@@ -472,7 +472,7 @@ namespace DataViewSamples
             bindingSource1.DataSource = view;
             dataGridView1.AutoResizeColumns();
 
-           // </SnippetLDVFromQueryWhere2>
+            // </SnippetLDVFromQueryWhere2>
         }
 
         private void button18_Click(object sender, EventArgs e)
@@ -553,7 +553,7 @@ namespace DataViewSamples
 
             view.Sort = "Color";
 
-            object[] criteria = new object[] { "Red"};
+            object[] criteria = new object[] { "Red" };
 
             DataRowView[] foundRowsView = view.FindRows(criteria);
             // </SnippetLDVFromQueryFindRows>
@@ -649,15 +649,18 @@ namespace DataViewSamples
             DataTable productsTable = (DataTable)view.Table;
 
             // Set RowStateFilter to display the current rows.
-            view.RowStateFilter = DataViewRowState.CurrentRows ;
+            view.RowStateFilter = DataViewRowState.CurrentRows;
 
             // Query the DataView for red colored products ordered by list price.
             var productQuery = from DataRowView rowView in view
                                where rowView.Row.Field<string>("Color") == "Red"
                                orderby rowView.Row.Field<decimal>("ListPrice")
-                               select new { Name = rowView.Row.Field<string>("Name"),
-                                            Color = rowView.Row.Field<string>("Color"),
-                                            Price = rowView.Row.Field<decimal>("ListPrice")};
+                               select new
+                               {
+                                   Name = rowView.Row.Field<string>("Name"),
+                                   Color = rowView.Row.Field<string>("Color"),
+                                   Price = rowView.Row.Field<decimal>("ListPrice")
+                               };
 
             // Bind the query results to another DataGridView.
             dataGridView2.DataSource = productQuery.ToList();

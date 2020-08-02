@@ -1,4 +1,4 @@
-using System; // EventArgs
+﻿using System; // EventArgs
 using System.Windows; // DependencyObject, DependencyPropertyChangedEventArgs,
                       // FrameworkPropertyMetadata, PropertyChangedCallback,
                       // RoutedPropertyChangedEventArgs

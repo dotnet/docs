@@ -5,27 +5,27 @@ using System;
 
 public class InvoiceItem
 {
-   private uint invId = 0;
-   private uint itemId = 0;
-   private Nullable<uint> qty;
+    private uint invId = 0;
+    private uint itemId = 0;
+    private Nullable<uint> qty;
 
-   public InvoiceItem(uint sku, Nullable<uint> quantity)
-   {
-      itemId = sku;
-      qty = quantity;
-   }
+    public InvoiceItem(uint sku, Nullable<uint> quantity)
+    {
+        itemId = sku;
+        qty = quantity;
+    }
 
-   public Nullable<uint> Quantity
-   {
-      get { return qty; }
-      set { qty = value; }
-   }
+    public Nullable<uint> Quantity
+    {
+        get { return qty; }
+        set { qty = value; }
+    }
 
-   public uint InvoiceId
-   {
-      get { return invId; }
-      set { invId = value; }
-   }
+    public uint InvoiceId
+    {
+        get { return invId; }
+        set { invId = value; }
+    }
 }
 // The attempt to compile the example displays the following output:
 //    Type1.cs(13,23): warning CS3001: Argument type 'uint' is not CLS-compliant

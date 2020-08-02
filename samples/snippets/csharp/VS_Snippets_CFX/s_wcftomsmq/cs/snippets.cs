@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Transactions;
-using System.ServiceModel.MsmqIntegration;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
+using System.ServiceModel.MsmqIntegration;
+using System.Text;
+using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples
 {

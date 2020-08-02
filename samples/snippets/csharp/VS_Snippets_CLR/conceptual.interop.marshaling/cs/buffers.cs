@@ -1,7 +1,7 @@
 ﻿//<snippet1>
 using System;
-using System.Text;
 using System.Runtime.InteropServices;
+using System.Text;
 
 //<snippet2>
 internal static class NativeMethods

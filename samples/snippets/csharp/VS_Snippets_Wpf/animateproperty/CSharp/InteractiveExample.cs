@@ -12,18 +12,19 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.LocalAnimations
 {
 
     // Create the demonstration.
-    public class InteractiveAnimationExample : Page {
+    public class InteractiveAnimationExample : Page
+    {
 
         private TranslateTransform interactiveTranslateTransform;
         private Border containerBorder;

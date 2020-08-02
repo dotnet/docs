@@ -5,20 +5,21 @@ using System.Threading;
 
 public class Example
 {
-   public static void Main()
-   {
-      string[] cultureNames = { "en-US", "fr-FR", "es-MX", "de-DE" };
-      DateTime dateToFormat = new DateTime(2012, 5, 28, 11, 30, 0);
+    public static void Main()
+    {
+        string[] cultureNames = { "en-US", "fr-FR", "es-MX", "de-DE" };
+        DateTime dateToFormat = new DateTime(2012, 5, 28, 11, 30, 0);
 
-      foreach (var cultureName in cultureNames) {
-         // Change the current thread culture.
-         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
-         Console.WriteLine("The current culture is {0}",
-                           Thread.CurrentThread.CurrentCulture.Name);
-         Console.WriteLine(dateToFormat.ToString("F"));
-         Console.WriteLine();
-      }
-   }
+        foreach (var cultureName in cultureNames)
+        {
+            // Change the current thread culture.
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
+            Console.WriteLine("The current culture is {0}",
+                              Thread.CurrentThread.CurrentCulture.Name);
+            Console.WriteLine(dateToFormat.ToString("F"));
+            Console.WriteLine();
+        }
+    }
 }
 // The example displays the following output:
 //       The current culture is en-US

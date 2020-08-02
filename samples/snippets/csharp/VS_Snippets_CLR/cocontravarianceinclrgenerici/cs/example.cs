@@ -6,7 +6,7 @@ class Base
 {
     public static void PrintBases(IEnumerable<Base> bases)
     {
-        foreach(Base b in bases)
+        foreach (Base b in bases)
         {
             Console.WriteLine(b);
         }

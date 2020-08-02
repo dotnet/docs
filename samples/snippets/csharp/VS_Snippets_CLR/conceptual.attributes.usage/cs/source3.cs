@@ -16,7 +16,7 @@ class MainApp
     {
         // Get instance of the attribute.
         DeveloperAttribute MyAttribute =
-            (DeveloperAttribute) Attribute.GetCustomAttribute(t, typeof (DeveloperAttribute));
+            (DeveloperAttribute)Attribute.GetCustomAttribute(t, typeof(DeveloperAttribute));
 
         if (MyAttribute == null)
         {
@@ -25,11 +25,11 @@ class MainApp
         else
         {
             // Get the Name value.
-            Console.WriteLine("The Name Attribute is: {0}." , MyAttribute.Name);
+            Console.WriteLine("The Name Attribute is: {0}.", MyAttribute.Name);
             // Get the Level value.
-            Console.WriteLine("The Level Attribute is: {0}." , MyAttribute.Level);
+            Console.WriteLine("The Level Attribute is: {0}.", MyAttribute.Level);
             // Get the Reviewed value.
-            Console.WriteLine("The Reviewed Attribute is: {0}." , MyAttribute.Reviewed);
+            Console.WriteLine("The Reviewed Attribute is: {0}.", MyAttribute.Reviewed);
         }
     }
 }
@@ -41,7 +41,7 @@ class GetAttribTest1
     public static void GetAttribute(Type t)
     {
         DeveloperAttribute[] MyAttributes =
-            (DeveloperAttribute[]) Attribute.GetCustomAttributes(t, typeof (DeveloperAttribute));
+            (DeveloperAttribute[])Attribute.GetCustomAttributes(t, typeof(DeveloperAttribute));
 
         if (MyAttributes.Length == 0)
         {
@@ -49,12 +49,12 @@ class GetAttribTest1
         }
         else
         {
-            for (int i = 0 ; i < MyAttributes.Length ; i++)
+            for (int i = 0; i < MyAttributes.Length; i++)
             {
                 // Get the Name value.
-                Console.WriteLine("The Name Attribute is: {0}." , MyAttributes[i].Name);
+                Console.WriteLine("The Name Attribute is: {0}.", MyAttributes[i].Name);
                 // Get the Level value.
-                Console.WriteLine("The Level Attribute is: {0}." , MyAttributes[i].Level);
+                Console.WriteLine("The Level Attribute is: {0}.", MyAttributes[i].Level);
                 // Get the Reviewed value.
                 Console.WriteLine("The Reviewed Attribute is: {0}.", MyAttributes[i].Reviewed);
             }
@@ -73,7 +73,7 @@ class GetAttribTest2
         // Get the class-level attributes.
 
         // Put the instance of the attribute on the class level in the att object.
-        att = (DeveloperAttribute) Attribute.GetCustomAttribute (t, typeof (DeveloperAttribute));
+        att = (DeveloperAttribute)Attribute.GetCustomAttribute(t, typeof(DeveloperAttribute));
 
         if (att == null)
         {
@@ -96,10 +96,10 @@ class GetAttribTest2
         // MyMemberInfo array.
         for (int i = 0; i < MyMemberInfo.Length; i++)
         {
-            att = (DeveloperAttribute) Attribute.GetCustomAttribute(MyMemberInfo[i], typeof (DeveloperAttribute));
+            att = (DeveloperAttribute)Attribute.GetCustomAttribute(MyMemberInfo[i], typeof(DeveloperAttribute));
             if (att == null)
             {
-                Console.WriteLine("No attribute in member function {0}.\n" , MyMemberInfo[i].ToString());
+                Console.WriteLine("No attribute in member function {0}.\n", MyMemberInfo[i].ToString());
             }
             else
             {

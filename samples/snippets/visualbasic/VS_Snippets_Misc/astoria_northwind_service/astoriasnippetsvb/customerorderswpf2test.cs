@@ -1,7 +1,7 @@
-﻿using NorthwindClient;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+﻿using System;
 using System.Windows.Markup;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NorthwindClient;
 
 namespace AstoriaSnippetsVB
 {

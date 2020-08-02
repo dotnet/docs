@@ -12,7 +12,7 @@ namespace IntoClause
         {
 
             // Create a data source.
-            string[] words = { "apples", "blueberries", "oranges", "bananas", "apricots"};
+            string[] words = { "apples", "blueberries", "oranges", "bananas", "apricots" };
 
             // Create the query.
             var wordGroups1 =

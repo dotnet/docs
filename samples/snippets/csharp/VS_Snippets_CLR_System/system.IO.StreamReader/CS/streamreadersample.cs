@@ -118,14 +118,14 @@ namespace StreamReaderSample
             srRead.Close();
             //</snippet6>
         }
-		
+
         private void useNull()
         {
             //<snippet7>
             StreamReader srNull = new StreamReader(
                 (System.IO.Stream)File.OpenRead("C:\\Temp\\Test.txt"),
                 System.Text.Encoding.ASCII);
-            if(!srNull.Equals(StreamReader.Null))
+            if (!srNull.Equals(StreamReader.Null))
             {
                 srNull.BaseStream.Seek(0, SeekOrigin.Begin);
                 Console.WriteLine(srNull.ReadToEnd());

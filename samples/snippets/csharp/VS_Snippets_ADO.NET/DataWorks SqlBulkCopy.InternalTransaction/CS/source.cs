@@ -98,8 +98,8 @@ class Program
     }
 
     private static string GetConnectionString()
-        // To avoid storing the sourceConnection string in your code,
-        // you can retrieve it from a configuration file.
+    // To avoid storing the sourceConnection string in your code,
+    // you can retrieve it from a configuration file.
     {
         return "Data Source=(local); " +
             " Integrated Security=true;" +

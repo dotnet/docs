@@ -20,7 +20,7 @@ namespace SDKSample
             // BitmapSource objects like BitmapImage can only have their properties
             // changed within a BeginInit/EndInit block.
             myBitmapImage.BeginInit();
-            myBitmapImage.UriSource = new Uri(@"sampleImages/WaterLilies.jpg",UriKind.Relative);
+            myBitmapImage.UriSource = new Uri(@"sampleImages/WaterLilies.jpg", UriKind.Relative);
 
             // To save significant application memory, set the DecodePixelWidth or
             // DecodePixelHeight of the BitmapImage value of the image source to the desired
@@ -50,7 +50,7 @@ namespace SDKSample
             // Crop the image to the rectangular area defined below.
             // The image is cropped to 80 pixels less in width and 60 less
             // in height then the original source.
-            myCroppedBitmap.SourceRect = new Int32Rect(0,0,(int)myBitmapImage.Width-80, (int)myBitmapImage.Height-60);
+            myCroppedBitmap.SourceRect = new Int32Rect(0, 0, (int)myBitmapImage.Width - 80, (int)myBitmapImage.Height - 60);
             myCroppedBitmap.EndInit();
 
             // Create Image Element

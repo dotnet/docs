@@ -1,11 +1,11 @@
 ﻿// <Snippet12>
 using System;
-using System.Xml;
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Syndication;
 using System.ServiceModel.Web;
+using System.Xml;
 namespace Service
 {
     // <Snippet0>
@@ -83,7 +83,7 @@ namespace Service
             // </Snippet6>
             try
             {
-                 // <Snippet8>
+                // <Snippet8>
                 svcHost.Open();
                 Console.WriteLine("Service is running");
 

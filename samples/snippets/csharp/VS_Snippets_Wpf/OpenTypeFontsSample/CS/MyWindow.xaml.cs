@@ -7,7 +7,7 @@ namespace SDKSample
     {
         public MyWindow()
         {
-             InitializeComponent();
+            InitializeComponent();
         }
     }
 }

@@ -5,12 +5,12 @@ using System.Windows.Documents;
 
 namespace Viewbox_Stretch_Layout_Samp
 {
-	/// <summary>
-	/// Interaction logic for Window1.xaml
-	/// </summary>
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
 
-	public partial class Window1 : Window
-	{
+    public partial class Window1 : Window
+    {
         // <Snippet2>
         private void stretchNone(object sender, RoutedEventArgs e)
         {

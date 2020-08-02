@@ -1,8 +1,8 @@
 ﻿// <snippet1>
 // Code for building SimpleType.dll.
 using System;
-using System.Reflection;
 using System.Globalization;
+using System.Reflection;
 using Simple_Type;
 
 namespace Simple_Type
@@ -46,7 +46,7 @@ namespace Custom_Binder
             // Invoke the overload.
             myType.InvokeMember("MyMethod", BindingFlags.InvokeMethod,
                 myCustomBinder, myInstance,
-                new Object[] {"Testing...", (int)32});
+                new Object[] { "Testing...", (int)32 });
         }
     }
 

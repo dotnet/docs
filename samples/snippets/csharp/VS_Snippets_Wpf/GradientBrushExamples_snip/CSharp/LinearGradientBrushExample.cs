@@ -25,8 +25,8 @@ namespace Microsoft.Samples.GradientBrushExamples
             // Create a diagonal linear gradient with four stops.
             LinearGradientBrush myLinearGradientBrush =
                 new LinearGradientBrush();
-            myLinearGradientBrush.StartPoint = new Point(0,0);
-            myLinearGradientBrush.EndPoint = new Point(1,1);
+            myLinearGradientBrush.StartPoint = new Point(0, 0);
+            myLinearGradientBrush.EndPoint = new Point(1, 1);
             myLinearGradientBrush.GradientStops.Add(
                 new GradientStop(Colors.Yellow, 0.0));
             myLinearGradientBrush.GradientStops.Add(
@@ -48,8 +48,8 @@ namespace Microsoft.Samples.GradientBrushExamples
             // Create a horizontal linear gradient with four stops.
             LinearGradientBrush myHorizontalGradient =
                 new LinearGradientBrush();
-            myHorizontalGradient.StartPoint = new Point(0,0.5);
-            myHorizontalGradient.EndPoint = new Point(1,0.5);
+            myHorizontalGradient.StartPoint = new Point(0, 0.5);
+            myHorizontalGradient.EndPoint = new Point(1, 0.5);
             myHorizontalGradient.GradientStops.Add(
                 new GradientStop(Colors.Yellow, 0.0));
             myHorizontalGradient.GradientStops.Add(
@@ -72,8 +72,8 @@ namespace Microsoft.Samples.GradientBrushExamples
             // Create a vertical linear gradient with four stops.
             LinearGradientBrush myVerticalGradient =
                 new LinearGradientBrush();
-            myVerticalGradient.StartPoint = new Point(0.5,0);
-            myVerticalGradient.EndPoint = new Point(0.5,1);
+            myVerticalGradient.StartPoint = new Point(0.5, 0);
+            myVerticalGradient.EndPoint = new Point(0.5, 1);
             myVerticalGradient.GradientStops.Add(
                 new GradientStop(Colors.Yellow, 0.0));
             myVerticalGradient.GradientStops.Add(

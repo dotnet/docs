@@ -5,18 +5,6 @@ Option Explicit On
 '</Snippet47>
 
 
-'********************************************************************
-'<Snippet16>
-' Add an Imports statement at the top of the class, structure, or
-' module that uses the DllImport attribute.
-Imports System.Runtime.InteropServices
-'</Snippet16>
-
-
-'********************************************************************
-'<Snippet35>
-' Place Imports statements at the top of your program.
-Imports str = Microsoft.VisualBasic.Strings
 '</Snippet35>
 
 
@@ -24,7 +12,19 @@ Imports str = Microsoft.VisualBasic.Strings
 Imports System.Diagnostics
 Imports System.Drawing.Font
 Imports System.Drawing.FontStyle
+'********************************************************************
+'<Snippet16>
+' Add an Imports statement at the top of the class, structure, or
+' module that uses the DllImport attribute.
+Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
+'</Snippet16>
+
+
+'********************************************************************
+'<Snippet35>
+' Place Imports statements at the top of your program.
+Imports str = Microsoft.VisualBasic.Strings
 
 
 '********************************************************************

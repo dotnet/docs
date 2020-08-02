@@ -1,4 +1,4 @@
-﻿ ' <snippet1>
+﻿' <snippet1>
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Drawing
@@ -6,28 +6,28 @@ Imports System.Windows.Forms
 
 Public Class Form1
     Inherits Form
-   
-   Public Sub New()
-      InitializeComponent()
+
+    Public Sub New()
+        InitializeComponent()
     End Sub
-   
-   ' <snippet2>
+
+    ' <snippet2>
     ' The Modifiers property for button1 is "Private".
     Private button1 As Button
-   
+
     ' The Modifiers property for button2 is "Protected".
     Protected button2 As Button
-   
-   ' button3 is not a member, because 
-   ' its GenerateMember property is false.
+
+    ' button3 is not a member, because 
+    ' its GenerateMember property is false.
     ' </snippet2>
 
     ' <summary>
     ' Required designer variable.
     ' </summary>
     Private components As System.ComponentModel.IContainer = Nothing
-   
-   
+
+
     ' <summary>
     ' Clean up any resources being used.
     ' </summary>
@@ -38,7 +38,7 @@ Public Class Form1
         End If
         MyBase.Dispose(disposing)
     End Sub
-   
+
 #Region "Windows Form Designer generated code"
 
     ' <snippet3>

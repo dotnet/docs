@@ -1,3 +1,3 @@
-﻿            var queryCountryGroups =
-                from country in countries
-                group country by country.Name[0];
+﻿var queryCountryGroups =
+    from country in countries
+    group country by country.Name[0];

@@ -1,8 +1,8 @@
 ﻿namespace PLINQ_Samples
 {
     using System;
-    using System.Collections.Generic;
     using System.Collections.Concurrent;
+    using System.Collections.Generic;
     using System.Linq;
     using System.Threading;
 
@@ -219,7 +219,7 @@
                 }
                 finally
                 {
-                   cts.Dispose();
+                    cts.Dispose();
                 }
 
                 if (results != null)
@@ -351,23 +351,27 @@
                 CancellationTokenSource cs = new CancellationTokenSource();
 
                 IEnumerable<int> results = null;
-                try {
+                try
+                {
                     results = from num in source.AsParallel().WithCancellation(cs.Token)
                               where num % 3 == 0
                               orderby num descending
                               select num;
                 }
-                catch (OperationCanceledException e) {
+                catch (OperationCanceledException e)
+                {
                     Console.WriteLine(e.Message);
                 }
-                catch (AggregateException ae) {
+                catch (AggregateException ae)
+                {
                     if (ae.InnerExceptions != null)
                     {
                         foreach (Exception e in ae.InnerExceptions)
                             Console.WriteLine(e.Message);
                     }
                 }
-                finally {
+                finally
+                {
                     cs.Dispose();
                 }
 
@@ -461,7 +465,7 @@
                     // the compiler this is a type double. Can also use: 0d.
                     0.0,
 
-                    // do this on each thread
+                     // do this on each thread
                      (subtotal, item) => subtotal + Math.Pow((item - mean), 2),
 
                      // aggregate results after all threads are done.
@@ -804,12 +808,12 @@
         }
         //</snippet24>
 
-//<snippet25>
-class FileIteration
-{
-   static void Main(){}
-}
-//</snippet25>
+        //<snippet25>
+        class FileIteration
+        {
+            static void Main() { }
+        }
+        //</snippet25>
 
         //<snippet41>
         // Paste into PLINQDataSample class.

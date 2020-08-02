@@ -51,17 +51,17 @@
  *****************************************************************************/
 
 using System;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
+using System.Security.Permissions;
+using System.Text;
+using System.Threading;
 using System.Windows;
-using System.Windows.Documents;
 using System.Windows.Automation;
 using System.Windows.Controls;
-using System.Threading;
-using System.IO;
-using System.Text;
-using System.Diagnostics;
-using System.ComponentModel;
+using System.Windows.Documents;
 using System.Windows.Threading;
-using System.Security.Permissions;
 
 namespace SDKSample
 {
@@ -173,7 +173,7 @@ namespace SDKSample
         /// <summary>
         /// Start the WindowMove client.
         /// </summary>
-       private void CreateWindow()
+        private void CreateWindow()
         {
             Window window = new Window();
             StackPanel sp = new StackPanel();

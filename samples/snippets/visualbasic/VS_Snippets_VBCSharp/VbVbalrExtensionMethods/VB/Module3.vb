@@ -19,8 +19,8 @@ Module Module3
         End Sub
     End Class
 
-    <Extension()> 
-    Sub ExampleMethod(ByVal ec As ExampleClass, 
+    <Extension()>
+    Sub ExampleMethod(ByVal ec As ExampleClass,
                   ByVal stringParameter As String)
         Console.WriteLine(stringParameter)
     End Sub

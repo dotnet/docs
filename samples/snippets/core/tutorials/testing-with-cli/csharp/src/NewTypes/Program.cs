@@ -1,6 +1,6 @@
 ﻿using System;
-using Pets;
 using System.Collections.Generic;
+using Pets;
 
 namespace ConsoleApplication
 {

@@ -7,8 +7,8 @@ using System.Windows.Media;
 namespace SDKSample
 {
 
-	public partial class Window1 : Window
-	{
+    public partial class Window1 : Window
+    {
         //<Snippet2>
         private void Wrap(object sender, RoutedEventArgs e)
         {
@@ -25,6 +25,6 @@ namespace SDKSample
             txt2.TextWrapping = System.Windows.TextWrapping.WrapWithOverflow;
             txt1.Text = "The TextWrap property is currently set to WrapWithOverflow.";
         }
-    //</Snippet2>
+        //</Snippet2>
     }
 }

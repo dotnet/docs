@@ -8,8 +8,8 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
 {
@@ -38,7 +38,7 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             myRectangle = new Rectangle();
             myRectangle.Width = 100;
             myRectangle.Height = 20;
-            myRectangle.Margin = new Thickness(12,0,0,5);
+            myRectangle.Margin = new Thickness(12, 0, 0, 5);
             myRectangle.Fill = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             myRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(myRectangle);
@@ -72,27 +72,27 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             buttonPanel.Children.Add(beginButton);
             Button pauseButton = new Button();
             pauseButton.Content = "Pause";
-            pauseButton.Click +=new RoutedEventHandler(pauseButton_Clicked);
+            pauseButton.Click += new RoutedEventHandler(pauseButton_Clicked);
             buttonPanel.Children.Add(pauseButton);
             Button resumeButton = new Button();
             resumeButton.Content = "Resume";
-            resumeButton.Click +=new RoutedEventHandler(resumeButton_Clicked);
+            resumeButton.Click += new RoutedEventHandler(resumeButton_Clicked);
             buttonPanel.Children.Add(resumeButton);
             Button skipToFillButton = new Button();
             skipToFillButton.Content = "Skip to Fill";
-            skipToFillButton.Click +=new RoutedEventHandler(skipToFillButton_Clicked);
+            skipToFillButton.Click += new RoutedEventHandler(skipToFillButton_Clicked);
             buttonPanel.Children.Add(skipToFillButton);
             Button setSpeedRatioButton = new Button();
             setSpeedRatioButton.Content = "Triple Speed";
-            setSpeedRatioButton.Click +=new RoutedEventHandler(setSpeedRatioButton_Clicked);
+            setSpeedRatioButton.Click += new RoutedEventHandler(setSpeedRatioButton_Clicked);
             buttonPanel.Children.Add(setSpeedRatioButton);
             Button stopButton = new Button();
             stopButton.Content = "Stop";
-            stopButton.Click +=new RoutedEventHandler(stopButton_Clicked);
+            stopButton.Click += new RoutedEventHandler(stopButton_Clicked);
             buttonPanel.Children.Add(stopButton);
             Button removeButton = new Button();
             removeButton.Content = "Remove";
-            removeButton.Click +=new RoutedEventHandler(removeButton_Clicked);
+            removeButton.Click += new RoutedEventHandler(removeButton_Clicked);
             buttonPanel.Children.Add(removeButton);
 
             myStackPanel.Children.Add(buttonPanel);
@@ -127,7 +127,7 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             aPanel = new StackPanel();
             aPanel.Orientation = Orientation.Horizontal;
             aLabel = new Label();
-            aLabel.Content = "Seek Offset: " ;
+            aLabel.Content = "Seek Offset: ";
             aPanel.Children.Add(aLabel);
             seekDestination = new TextBox();
             seekDestination.Text = "0";
@@ -161,19 +161,19 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
         // Pauses the storyboard.
         private void pauseButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Pause(this);
+            myStoryboard.Pause(this);
         }
 
         // Resumes the storyboard.
         private void resumeButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Resume(this);
+            myStoryboard.Resume(this);
         }
 
         // Advances the storyboard to its fill period.
         private void skipToFillButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.SkipToFill(this);
+            myStoryboard.SkipToFill(this);
         }
 
         // Updates the storyboard's speed.
@@ -186,18 +186,19 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
         // Stops the storyboard.
         private void stopButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Stop(this);
+            myStoryboard.Stop(this);
         }
 
         // Removes the storyboard.
         private void removeButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Remove(this);
+            myStoryboard.Remove(this);
         }
 
         private void seekButton_Clicked(object sender, RoutedEventArgs args)
         {
-            try {
+            try
+            {
 
                 // The rectangle width will probably not be at its new
                 // value when this call is made, because the storyboard's
@@ -205,7 +206,8 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
                 TimeSpan seekTime = TimeSpan.Parse(seekDestination.Text);
                 myStoryboard.Seek(this, seekTime, TimeSeekOrigin.BeginTime);
                 rectangleWidthIndicator.Text = myRectangle.Width.ToString();
-            }catch(FormatException ex)
+            }
+            catch (FormatException ex)
             {
                 MessageBox.Show("Invalid TimeSpan value.");
                 seekDestination.Focus();
@@ -215,7 +217,8 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
         private void seekAlignedToLastTickButton_Clicked(object sender, RoutedEventArgs args)
         {
 
-            try {
+            try
+            {
 
                 // The rectangle width will be at its new
                 // value when this call is made, because SeekAlignedToLastTick
@@ -224,7 +227,8 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
                 TimeSpan seekTime = TimeSpan.Parse(seekDestination.Text);
                 myStoryboard.SeekAlignedToLastTick(this, seekTime, TimeSeekOrigin.BeginTime);
                 rectangleWidthIndicator.Text = myRectangle.Width.ToString();
-            }catch(FormatException ex)
+            }
+            catch (FormatException ex)
             {
                 MessageBox.Show("Invalid TimeSpan value.");
                 seekDestination.Focus();

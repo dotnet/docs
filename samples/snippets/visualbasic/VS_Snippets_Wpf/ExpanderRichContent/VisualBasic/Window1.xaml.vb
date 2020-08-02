@@ -1,21 +1,21 @@
 ﻿Imports System.Windows
 Imports System.Windows.Controls
+Imports System.Windows.Controls.Primitives
 Imports System.Windows.Data
 Imports System.Windows.Documents
 Imports System.Windows.Media
-Imports System.Windows.Shapes
-Imports System.Windows.Controls.Primitives
 Imports System.Windows.Media.Imaging
+Imports System.Windows.Shapes
 
 
-    '@ <summary>
-    '@ Interaction logic for Window1.xaml
-    '@ </summary>
+'@ <summary>
+'@ Interaction logic for Window1.xaml
+'@ </summary>
 
-    public partial class Window1 
-inherits window
+public partial class Window1
+    inherits window
 
- 
+
     Private Sub WindowLoaded(ByVal Sender As Object, ByVal e As RoutedEventArgs)
 
         MakeExpander()

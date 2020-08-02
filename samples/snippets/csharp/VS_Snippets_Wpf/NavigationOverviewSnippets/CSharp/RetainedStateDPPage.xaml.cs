@@ -5,42 +5,42 @@ using System.Windows.Navigation;
 
 namespace SDKSample
 {
-//<SnippetDPDeclarationCODE>
-public partial class RetainedStateDPPage : System.Windows.Controls.Page
-{
-    // Journalable dependency property
-    public static readonly DependencyProperty RetainedStateDP;
-
-    static RetainedStateDPPage()
+    //<SnippetDPDeclarationCODE>
+    public partial class RetainedStateDPPage : System.Windows.Controls.Page
     {
-        // Register the local property with the journalable dependency property
-        RetainedStateDPPage.RetainedStateDP =
-            DependencyProperty.Register(
-                "RetainedState",
-                typeof(string),
-                typeof(RetainedStateDPPage),
-                new FrameworkPropertyMetadata(
-                    null,
-                    FrameworkPropertyMetadataOptions.Journal));
-    }
+        // Journalable dependency property
+        public static readonly DependencyProperty RetainedStateDP;
 
-    public RetainedStateDPPage()
-    {
-        InitializeComponent();
-    }
-
-    // Property to register with the journalable dependency property
-    public string RetainedState
-    {
-        get
+        static RetainedStateDPPage()
         {
-            return (string)base.GetValue(RetainedStateDPPage.RetainedStateDP);
+            // Register the local property with the journalable dependency property
+            RetainedStateDPPage.RetainedStateDP =
+                DependencyProperty.Register(
+                    "RetainedState",
+                    typeof(string),
+                    typeof(RetainedStateDPPage),
+                    new FrameworkPropertyMetadata(
+                        null,
+                        FrameworkPropertyMetadataOptions.Journal));
         }
-        set
+
+        public RetainedStateDPPage()
         {
-            base.SetValue(RetainedStateDPPage.RetainedStateDP, value);
+            InitializeComponent();
+        }
+
+        // Property to register with the journalable dependency property
+        public string RetainedState
+        {
+            get
+            {
+                return (string)base.GetValue(RetainedStateDPPage.RetainedStateDP);
+            }
+            set
+            {
+                base.SetValue(RetainedStateDPPage.RetainedStateDP, value);
+            }
         }
     }
-}
     //</SnippetDPDeclarationCODE>
 }

@@ -5,28 +5,30 @@ using System.Xml;
 using System.Xml.XPath;
 using System.Xml.Xsl;
 
-public class Sample {
+public class Sample
+{
 
-   public static void Main() {
+    public static void Main()
+    {
 
-      // Create the XslCompiledTransform and load the style sheet.
-      XslCompiledTransform xslt = new XslCompiledTransform();
-      xslt.Load("discount.xsl");
+        // Create the XslCompiledTransform and load the style sheet.
+        XslCompiledTransform xslt = new XslCompiledTransform();
+        xslt.Load("discount.xsl");
 
-      // Create the XsltArgumentList.
-      XsltArgumentList argList = new XsltArgumentList();
+        // Create the XsltArgumentList.
+        XsltArgumentList argList = new XsltArgumentList();
 
-      // Calculate the discount date.
-      DateTime orderDate = new DateTime(2004, 01, 15);
-      DateTime discountDate = orderDate.AddDays(20);
-      argList.AddParam("discount", "", discountDate.ToString());
+        // Calculate the discount date.
+        DateTime orderDate = new DateTime(2004, 01, 15);
+        DateTime discountDate = orderDate.AddDays(20);
+        argList.AddParam("discount", "", discountDate.ToString());
 
-      // Create an XmlWriter to write the output.
-     XmlWriter writer = XmlWriter.Create("orderOut.xml");
+        // Create an XmlWriter to write the output.
+        XmlWriter writer = XmlWriter.Create("orderOut.xml");
 
-     // Transform the file.
-     xslt.Transform(new XPathDocument("order.xml"), argList, writer);
-     writer.Close();
-  }
+        // Transform the file.
+        xslt.Transform(new XPathDocument("order.xml"), argList, writer);
+        writer.Close();
+    }
 }
 //</snippet1>

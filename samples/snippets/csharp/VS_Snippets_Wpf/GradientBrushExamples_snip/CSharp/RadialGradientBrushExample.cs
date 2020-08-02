@@ -28,8 +28,8 @@ namespace Microsoft.Samples.GradientBrushExamples
         {
             // <SnippetRadialGradient1CSharp>
             RadialGradientBrush myRadialGradientBrush = new RadialGradientBrush();
-            myRadialGradientBrush.GradientOrigin = new Point(0.5,0.5);
-            myRadialGradientBrush.Center = new Point(0.5,0.5);
+            myRadialGradientBrush.GradientOrigin = new Point(0.5, 0.5);
+            myRadialGradientBrush.Center = new Point(0.5, 0.5);
             myRadialGradientBrush.RadiusX = 0.5;
             myRadialGradientBrush.RadiusY = 0.5;
             myRadialGradientBrush.GradientStops.Add(

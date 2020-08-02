@@ -1,8 +1,8 @@
 ﻿' <snippet2>
-Imports System.Text
 Imports System.IO
-Imports Windows.Storage.Pickers
+Imports System.Text
 Imports Windows.Storage
+Imports Windows.Storage.Pickers
 
 NotInheritable Public Class BlankPage
     Inherits Page

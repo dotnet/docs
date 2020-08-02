@@ -1,6 +1,8 @@
 ﻿//<snippetWpfDataBindingCustom>
 using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Data.Services.Client;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -12,9 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data.Services.Client;
 using NorthwindClient.Northwind;
-using System.Collections.Specialized;
 
 namespace NorthwindClient
 {
@@ -45,7 +45,7 @@ namespace NorthwindClient
 
                 // Create a new collection for binding based on the LINQ query.
                 trackedCustomers = new DataServiceCollection<Customer>(customerQuery,
-                    TrackingMode.AutoChangeTracking,"Customers",
+                    TrackingMode.AutoChangeTracking, "Customers",
                     OnPropertyChanged, OnCollectionChanged);
 
                 // Bind the root StackPanel element to the collection;

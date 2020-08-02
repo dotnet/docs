@@ -91,7 +91,7 @@ namespace SDKSample
             pathAnimationStoryboard.Children.Add(matrixAnimation);
 
             // Start the storyboard when the button is loaded.
-            aButton.Loaded += delegate(object sender, RoutedEventArgs e)
+            aButton.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 // Start the storyboard.
                 pathAnimationStoryboard.Begin(this);

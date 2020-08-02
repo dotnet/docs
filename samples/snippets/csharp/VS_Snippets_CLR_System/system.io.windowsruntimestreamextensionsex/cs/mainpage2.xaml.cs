@@ -1,12 +1,12 @@
 ﻿using System;
 using System.IO;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Storage;
+using Windows.Storage.Pickers;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media.Imaging;
-using Windows.Storage;
-using System.Net.Http;
-using Windows.Storage.Pickers;
 
 private async void button2_Click(object sender, RoutedEventArgs e)
 {

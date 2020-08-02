@@ -11,7 +11,7 @@ namespace SDKSample
     {
         public TransformedBitmapExample()
         {
-			//<SnippetTransformedBitmapInline1>
+            //<SnippetTransformedBitmapInline1>
             ///// Create a BitmapImage and set it's DecodePixelWidth to 200. Use  /////
             ///// this BitmapImage as a source for other BitmapSource objects.    /////
 
@@ -54,7 +54,7 @@ namespace SDKSample
             myRotatedBitmapSource.Transform = new RotateTransform(90);
             myRotatedBitmapSource.EndInit();
             //</SnippetTransformedBitmapPropInit>
-			//</SnippetTransformedBitmapInline1>
+            //</SnippetTransformedBitmapInline1>
 
             // Create Image element
             Image myImage = new Image();

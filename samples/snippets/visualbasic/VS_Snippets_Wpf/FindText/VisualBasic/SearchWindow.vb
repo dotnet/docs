@@ -32,16 +32,16 @@
 ' *
 ' *****************************************************************************************
 
-Imports System.Windows
-Imports System.Windows.Automation
-Imports System.Windows.Controls
 Imports System.Diagnostics
 Imports System.IO
-Imports System.Windows.Automation.Text
 Imports System.Text
 Imports System.Threading
-Imports System.Windows.Threading
+Imports System.Windows
+Imports System.Windows.Automation
+Imports System.Windows.Automation.Text
+Imports System.Windows.Controls
 Imports System.Windows.Media
+Imports System.Windows.Threading
 
 Namespace SDKSample
 

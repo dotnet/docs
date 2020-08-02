@@ -28,10 +28,10 @@ namespace SDKSample
         private void OnMouseDown(object sender, MouseButtonEventArgs e)
         {
             // Retrieve the coordinate of the mouse position.
-           Point pt = e.GetPosition((UIElement)sender);
+            Point pt = e.GetPosition((UIElement)sender);
 
-           // Get the parent of the Border object, since it is also the parent of the other objects.
-           DependencyObject parent = VisualTreeHelper.GetParent((DependencyObject)sender);
+            // Get the parent of the Border object, since it is also the parent of the other objects.
+            DependencyObject parent = VisualTreeHelper.GetParent((DependencyObject)sender);
 
             // Set up a callback to receive the hit test result enumeration.
             VisualTreeHelper.HitTest(((Visual)parent), null,

@@ -1,6 +1,6 @@
 ﻿'<Snippet0>
-Imports System.Windows.Forms
 Imports System.Security.Permissions
+Imports System.Windows.Forms
 
 <PermissionSet(SecurityAction.Demand, Name:="FullTrust")> _
 Public Class Form1

@@ -1,10 +1,10 @@
 ﻿// This example demonstrates using images to create a
 // TicTacToe game.
 //<snippet0>
+using System;
+using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using System.Drawing;
-using System;
 
 public class TicTacToe : System.Windows.Forms.Form
 {
@@ -197,7 +197,7 @@ public class TicTacToe : System.Windows.Forms.Form
     {
         dataGridView1.ColumnHeadersVisible = false;
         dataGridView1.RowHeadersVisible = false;
-        dataGridView1.AllowUserToResizeColumns = false;;
+        dataGridView1.AllowUserToResizeColumns = false; ;
         dataGridView1.AllowUserToResizeRows = false;
         dataGridView1.BorderStyle = BorderStyle.None;
 

@@ -94,7 +94,7 @@ namespace EncryptionSample
                 #endregion
             }
 
-            Cleanup:
+        Cleanup:
             File.Delete("EncryptionSample.db");
         }
     }

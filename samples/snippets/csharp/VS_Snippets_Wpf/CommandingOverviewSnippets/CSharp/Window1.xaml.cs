@@ -1,13 +1,13 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Windows.Input;
-using System.ComponentModel;
-using System.Threading;
 using System.Windows.Threading;
 
 namespace SDKSamples
@@ -171,7 +171,7 @@ namespace SDKSamples
         {
             Control target = e.Source as Control;
 
-            if(target != null)
+            if (target != null)
             {
                 e.CanExecute = true;
             }
@@ -188,19 +188,19 @@ namespace SDKSamples
         {
             RoutedCommand command = e.Command as RoutedCommand;
 
-            if(command != null)
+            if (command != null)
             {
-                if(command == MediaCommands.Pause)
+                if (command == MediaCommands.Pause)
                 {
-                       MyPauseMethod();
+                    MyPauseMethod();
                 }
-                if(command == MediaCommands.Play)
+                if (command == MediaCommands.Play)
                 {
-                       MyPlayMethod();
+                    MyPlayMethod();
                 }
-                if(command == MediaCommands.Stop)
+                if (command == MediaCommands.Stop)
                 {
-                       MyStopMethod();
+                    MyStopMethod();
                 }
             }
         }

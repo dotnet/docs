@@ -1,10 +1,10 @@
 ﻿// <Snippet2>
 using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Threading;
 
 namespace SDKSample
 {
@@ -12,16 +12,16 @@ namespace SDKSample
     {
         Window mainWindow;
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup (e);
-            CreateAndShowMainWindow ();
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
         }
         // <Snippet1>
         private void CreateAndShowMainWindow()
         {
             // Create the application's main window
-            mainWindow = new Window ();
+            mainWindow = new Window();
 
             // Create a DockPanel
             DockPanel myDockPanel = new DockPanel();

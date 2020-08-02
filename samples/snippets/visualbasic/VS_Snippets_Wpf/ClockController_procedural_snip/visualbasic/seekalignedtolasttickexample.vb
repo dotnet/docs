@@ -1,42 +1,42 @@
 ﻿' <SnippetClockControllerSeekExample>
 
+Imports System.Configuration
+Imports System.Data
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Animation
 Imports System.Windows.Navigation
 Imports System.Windows.Shapes
-Imports System.Data
 Imports System.Xml
-Imports System.Configuration
 
 
 
 Namespace SDKSample
-	''' <summary>
-	''' Shows how to interactively control a clock.
-	''' </summary>
+    ''' <summary>
+    ''' Shows how to interactively control a clock.
+    ''' </summary>
 
-  Public Class SeekAlignedToLastTickExample
-	  Inherits Page
+    Public Class SeekAlignedToLastTickExample
+        Inherits Page
 
-		Private myClock As AnimationClock
-		Private currentTimeIndicator As TextBlock
-		Private seekDestination As TextBox
-		Private rectangleWidthIndicator As TextBlock
-		Private myRectangle As Rectangle
+        Private myClock As AnimationClock
+        Private currentTimeIndicator As TextBlock
+        Private seekDestination As TextBox
+        Private rectangleWidthIndicator As TextBlock
+        Private myRectangle As Rectangle
 
-		Public Sub New()
+        Public Sub New()
 
 
 
-			Me.WindowTitle = "Controlling a Storyboard"
-			Me.Background = Brushes.White
+            Me.WindowTitle = "Controlling a Storyboard"
+            Me.Background = Brushes.White
 
-			Dim myStackPanel As New StackPanel()
-			myStackPanel.Margin = New Thickness(20)
+            Dim myStackPanel As New StackPanel()
+            myStackPanel.Margin = New Thickness(20)
 
-			' Create a rectangle.
+            ' Create a rectangle.
             myRectangle = New Rectangle()
             With myRectangle
                 .Width = 100
@@ -147,93 +147,93 @@ Namespace SDKSample
             Me.Content = myStackPanel
 
             AddHandler myClock.CurrentTimeInvalidated, AddressOf myClock_CurrentTimeInvalidated
-		End Sub
+        End Sub
 
-		' Begins the clock.
-		Private Sub beginButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+        ' Begins the clock.
+        Private Sub beginButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
 
-			myClock.Controller.Begin()
-		End Sub
+            myClock.Controller.Begin()
+        End Sub
 
-		' Pauses the clock.
-		Private Sub pauseButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			myClock.Controller.Pause()
+        ' Pauses the clock.
+        Private Sub pauseButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            myClock.Controller.Pause()
 
-		End Sub
+        End Sub
 
-		' Resumes the clock.
-		Private Sub resumeButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			myClock.Controller.Resume()
+        ' Resumes the clock.
+        Private Sub resumeButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            myClock.Controller.Resume()
 
-		End Sub
+        End Sub
 
-		' Advances the clock to its fill period.
-		Private Sub skipToFillButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			myClock.Controller.SkipToFill()
+        ' Advances the clock to its fill period.
+        Private Sub skipToFillButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            myClock.Controller.SkipToFill()
 
-		End Sub
+        End Sub
 
-		' Updates the clock's speed.
-		Private Sub setSpeedRatioButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			' Makes the clock progress three times as fast as normal.
-			myClock.Controller.SpeedRatio = 3
+        ' Updates the clock's speed.
+        Private Sub setSpeedRatioButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            ' Makes the clock progress three times as fast as normal.
+            myClock.Controller.SpeedRatio = 3
 
-		End Sub
+        End Sub
 
-		' Stops the clock.
-		Private Sub stopButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			myClock.Controller.Stop()
+        ' Stops the clock.
+        Private Sub stopButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            myClock.Controller.Stop()
 
-		End Sub
+        End Sub
 
-		' Removes the clock.
-		Private Sub removeButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			myClock.Controller.Remove()
+        ' Removes the clock.
+        Private Sub removeButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            myClock.Controller.Remove()
 
-		End Sub
+        End Sub
 
-		Private Sub seekButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			Try
+        Private Sub seekButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            Try
 
-				' The rectangle width will probably not be at its new
-				' value when this call is made, because the 
-				' clock probably hasn't ticked yet.
-				Dim seekTime As TimeSpan = TimeSpan.Parse(seekDestination.Text)
-				myClock.Controller.Seek(seekTime, TimeSeekOrigin.BeginTime)
-				rectangleWidthIndicator.Text = myRectangle.Width.ToString()
+                ' The rectangle width will probably not be at its new
+                ' value when this call is made, because the 
+                ' clock probably hasn't ticked yet.
+                Dim seekTime As TimeSpan = TimeSpan.Parse(seekDestination.Text)
+                myClock.Controller.Seek(seekTime, TimeSeekOrigin.BeginTime)
+                rectangleWidthIndicator.Text = myRectangle.Width.ToString()
 
-			Catch ex As FormatException
-				MessageBox.Show("Invalid TimeSpan value.")
-				seekDestination.Focus()
-			End Try
-		End Sub
+            Catch ex As FormatException
+                MessageBox.Show("Invalid TimeSpan value.")
+                seekDestination.Focus()
+            End Try
+        End Sub
 
-		Private Sub seekAlignedToLastTickButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
+        Private Sub seekAlignedToLastTickButton_Clicked(ByVal sender As Object, ByVal args As RoutedEventArgs)
 
-			Try
+            Try
 
-				' The rectangle width will be at its new
-				' value when this call is made, because SeekAlignedToLastTick 
-				' operation immediately updates timeline and animation
-				' values.        
-				Dim seekTime As TimeSpan = TimeSpan.Parse(seekDestination.Text)
-				myClock.Controller.SeekAlignedToLastTick(seekTime, TimeSeekOrigin.BeginTime)
-				rectangleWidthIndicator.Text = myRectangle.Width.ToString()
+                ' The rectangle width will be at its new
+                ' value when this call is made, because SeekAlignedToLastTick 
+                ' operation immediately updates timeline and animation
+                ' values.        
+                Dim seekTime As TimeSpan = TimeSpan.Parse(seekDestination.Text)
+                myClock.Controller.SeekAlignedToLastTick(seekTime, TimeSeekOrigin.BeginTime)
+                rectangleWidthIndicator.Text = myRectangle.Width.ToString()
 
-			Catch ex As FormatException
-				MessageBox.Show("Invalid TimeSpan value.")
-				seekDestination.Focus()
-			End Try
-		End Sub
+            Catch ex As FormatException
+                MessageBox.Show("Invalid TimeSpan value.")
+                seekDestination.Focus()
+            End Try
+        End Sub
 
-		Private Sub myClock_CurrentTimeInvalidated(ByVal sender As Object, ByVal e As EventArgs)
+        Private Sub myClock_CurrentTimeInvalidated(ByVal sender As Object, ByVal e As EventArgs)
 
-			currentTimeIndicator.Text = myClock.CurrentTime.ToString()
+            currentTimeIndicator.Text = myClock.CurrentTime.ToString()
 
-		End Sub
+        End Sub
 
 
 
-  End Class
+    End Class
 End Namespace
 ' </SnippetClockControllerSeekExample>

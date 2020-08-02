@@ -1,11 +1,11 @@
 ﻿' <snippet20>
 Imports System.ComponentModel
 Imports System.ComponentModel.Design
-Imports System.Drawing
-Imports System.Drawing.Drawing2D
-Imports System.Drawing.Design
-Imports System.Windows.Forms
 Imports System.Diagnostics
+Imports System.Drawing
+Imports System.Drawing.Design
+Imports System.Drawing.Drawing2D
+Imports System.Windows.Forms
 Imports System.Windows.Forms.ComponentModel
 Imports System.Windows.Forms.Design
 
@@ -62,7 +62,7 @@ Namespace Microsoft.Samples.WinForms.VB.FlashTrackBar
 
             Return value
 
-         End Function
+        End Function
 
         Overrides OverLoads Public Function GetEditStyle(context As ITypeDescriptorContext) As UITypeEditorEditStyle
             If ((context IsNot Nothing) And (context.Instance IsNot Nothing)) Then

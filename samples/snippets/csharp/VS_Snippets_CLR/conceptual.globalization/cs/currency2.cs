@@ -7,47 +7,48 @@ using System.Threading;
 
 public class Example
 {
-   public static void Main()
-   {
-      // Display the currency value.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
-      Decimal value = 16039.47m;
-      Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
-      Console.WriteLine("Currency Value: {0:C2}", value);
+    public static void Main()
+    {
+        // Display the currency value.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
+        Decimal value = 16039.47m;
+        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
+        Console.WriteLine("Currency Value: {0:C2}", value);
 
-      // Serialize the currency data.
-      BinaryFormatter bf = new BinaryFormatter();
-      FileStream fw = new FileStream("currency.dat", FileMode.Create);
-      CurrencyValue data = new CurrencyValue(value, CultureInfo.CurrentCulture.Name);
-      bf.Serialize(fw, data);
-      fw.Close();
-      Console.WriteLine();
+        // Serialize the currency data.
+        BinaryFormatter bf = new BinaryFormatter();
+        FileStream fw = new FileStream("currency.dat", FileMode.Create);
+        CurrencyValue data = new CurrencyValue(value, CultureInfo.CurrentCulture.Name);
+        bf.Serialize(fw, data);
+        fw.Close();
+        Console.WriteLine();
 
-      // Change the current thread culture.
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
-      Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
+        // Change the current thread culture.
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
+        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
 
-      // Deserialize the data.
-      FileStream fr = new FileStream("currency.dat", FileMode.Open);
-      CurrencyValue restoredData = (CurrencyValue) bf.Deserialize(fr);
-      fr.Close();
+        // Deserialize the data.
+        FileStream fr = new FileStream("currency.dat", FileMode.Open);
+        CurrencyValue restoredData = (CurrencyValue)bf.Deserialize(fr);
+        fr.Close();
 
-      // Display the original value.
-      CultureInfo culture = CultureInfo.CreateSpecificCulture(restoredData.CultureName);
-      Console.WriteLine("Currency Value: {0}", restoredData.Amount.ToString("C2", culture));
-   }
+        // Display the original value.
+        CultureInfo culture = CultureInfo.CreateSpecificCulture(restoredData.CultureName);
+        Console.WriteLine("Currency Value: {0}", restoredData.Amount.ToString("C2", culture));
+    }
 }
 
-[Serializable] internal struct CurrencyValue
+[Serializable]
+internal struct CurrencyValue
 {
-   public CurrencyValue(Decimal amount, string name)
-   {
-      this.Amount = amount;
-      this.CultureName = name;
-   }
+    public CurrencyValue(Decimal amount, string name)
+    {
+        this.Amount = amount;
+        this.CultureName = name;
+    }
 
-   public Decimal Amount;
-   public string CultureName;
+    public Decimal Amount;
+    public string CultureName;
 }
 // The example displays the following output:
 //       Current Culture: English (United States)

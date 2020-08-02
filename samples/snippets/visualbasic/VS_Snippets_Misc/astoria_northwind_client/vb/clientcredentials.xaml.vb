@@ -1,10 +1,10 @@
 ﻿'<snippetClientCredentials>
-Imports NorthwindClient.Northwind
 Imports System.Data.Services.Client
-Imports System.Windows.Data
 Imports System.Net
-Imports System.Windows
 Imports System.Security
+Imports System.Windows
+Imports System.Windows.Data
+Imports NorthwindClient.Northwind
 
 Partial Public Class ClientCredentials
     Inherits Window

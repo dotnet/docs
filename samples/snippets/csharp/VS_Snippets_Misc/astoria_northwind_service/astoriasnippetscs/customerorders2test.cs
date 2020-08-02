@@ -1,6 +1,6 @@
-﻿using NorthwindClient;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+using NorthwindClient;
 
 namespace AstoriaSnippetsCS
 {

@@ -1,7 +1,7 @@
 ﻿Imports System.Activities
-Imports System.Threading
 '<snippet14>
 Imports System.Activities.DurableInstancing
+Imports System.Threading
 '</snippet14>
 
 Public Class ExtraSnippets

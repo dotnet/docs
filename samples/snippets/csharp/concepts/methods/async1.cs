@@ -8,7 +8,7 @@ public class Example
     // This Click event is marked with the async modifier.
     public static void Main()
     {
-       DoSomethingAsync().Wait();
+        DoSomethingAsync().Wait();
     }
 
     private static async Task DoSomethingAsync()

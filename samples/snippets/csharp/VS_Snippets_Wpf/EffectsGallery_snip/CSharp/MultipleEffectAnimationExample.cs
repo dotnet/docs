@@ -126,7 +126,7 @@ namespace SDKSample
             myStoryboard.Children.Add(myDoubleAnimationUsingKeyFrames);
 
             // Start the storyboard when button is clicked.
-            myButton.Click += delegate(object sender, RoutedEventArgs e)
+            myButton.Click += delegate (object sender, RoutedEventArgs e)
             {
                 myStoryboard.Begin(this);
             };

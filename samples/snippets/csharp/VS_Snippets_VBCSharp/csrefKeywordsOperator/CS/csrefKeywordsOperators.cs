@@ -13,12 +13,12 @@ namespace KeywordsUberProject
             return new T();
         }
     }
-   //</snippet5>
+    //</snippet5>
 
     //<snippet6>
     public class ItemFactory2<T>
         where T : IComparable, new()
-    {  }
+    { }
     //</snippet6>
 
     //<snippet8>
@@ -67,46 +67,46 @@ namespace KeywordsUberProject
         */
         //</snippet9>
 
-    namespace newModifier2
-    {
-    //<snippet10>
-    public class BaseC
-    {
-        public class NestedC
+        namespace newModifier2
         {
-            public int x = 200;
-            public int y;
-        }
-    }
+            //<snippet10>
+            public class BaseC
+            {
+                public class NestedC
+                {
+                    public int x = 200;
+                    public int y;
+                }
+            }
 
-    public class DerivedC : BaseC
-    {
-        // Nested type hiding the base type members.
-        new public class NestedC
-        {
-            public int x = 100;
-            public int y;
-            public int z;
-        }
+            public class DerivedC : BaseC
+            {
+                // Nested type hiding the base type members.
+                new public class NestedC
+                {
+                    public int x = 100;
+                    public int y;
+                    public int z;
+                }
 
-        static void Main()
-        {
-            // Creating an object from the overlapping class:
-            NestedC c1  = new NestedC();
+                static void Main()
+                {
+                    // Creating an object from the overlapping class:
+                    NestedC c1 = new NestedC();
 
-            // Creating an object from the hidden class:
-            BaseC.NestedC c2 = new BaseC.NestedC();
+                    // Creating an object from the hidden class:
+                    BaseC.NestedC c2 = new BaseC.NestedC();
 
-            Console.WriteLine(c1.x);
-            Console.WriteLine(c2.x);
-        }
-    }
-    /*
-    Output:
-    100
-    200
-    */
-     //</snippet10>
+                    Console.WriteLine(c1.x);
+                    Console.WriteLine(c2.x);
+                }
+            }
+            /*
+            Output:
+            100
+            200
+            */
+            //</snippet10>
         }
     }
 }

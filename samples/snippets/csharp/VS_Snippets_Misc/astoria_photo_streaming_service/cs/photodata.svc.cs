@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Data.Services;
 using System.Data.Services.Common;
+using System.Data.Services.Providers;
 using System.Linq;
+using System.ServiceModel;
 using System.ServiceModel.Web;
 using System.Web;
-using System.Data.Services.Providers;
 using PhotoService;
-using System.ServiceModel;
 
 namespace PhotoService
 {

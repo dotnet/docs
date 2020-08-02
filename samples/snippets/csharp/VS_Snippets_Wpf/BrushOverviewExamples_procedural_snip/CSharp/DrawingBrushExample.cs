@@ -32,9 +32,9 @@ namespace Microsoft.Samples.BrushExamples
             myGeometryDrawing.Brush = Brushes.LightBlue;
             myGeometryDrawing.Pen = new Pen(Brushes.Gray, 1);
             GeometryGroup ellipses = new GeometryGroup();
-            ellipses.Children.Add(new EllipseGeometry(new Point(25,50), 12.5, 25));
-            ellipses.Children.Add(new EllipseGeometry(new Point(50,50), 12.5, 25));
-            ellipses.Children.Add(new EllipseGeometry(new Point(75,50), 12.5, 25));
+            ellipses.Children.Add(new EllipseGeometry(new Point(25, 50), 12.5, 25));
+            ellipses.Children.Add(new EllipseGeometry(new Point(50, 50), 12.5, 25));
+            ellipses.Children.Add(new EllipseGeometry(new Point(75, 50), 12.5, 25));
 
             myGeometryDrawing.Geometry = ellipses;
             myDrawingBrush.Drawing = myGeometryDrawing;

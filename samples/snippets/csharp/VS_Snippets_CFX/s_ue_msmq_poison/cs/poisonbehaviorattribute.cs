@@ -1,8 +1,8 @@
 ﻿using System;
 using System.ServiceModel;
-using System.ServiceModel.Dispatcher;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
+using System.ServiceModel.Dispatcher;
 
 namespace Microsoft.ServiceModel.Samples
 {

@@ -36,12 +36,12 @@
 
         static void ExampleThree()
         {
-            int[] a = new int[] {1, 2, 3};
+            int[] a = new int[] { 1, 2, 3 };
         }
 
         static void ExampleFour()
         {
-            int[] a = {1, 2, 3};
+            int[] a = { 1, 2, 3 };
         }
 
         static void ExampleFive()

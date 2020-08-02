@@ -2,8 +2,8 @@
 using System;
 using System.IdentityModel.Selectors;
 using System.IdentityModel.Tokens;
-using System.Security.Permissions;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security.Tokens;
@@ -29,7 +29,7 @@ namespace CustomProvider
     //</snippet1>
 
     //<snippet2>
-    internal class MyClientCredentialsSecurityTokenManager:ClientCredentialsSecurityTokenManager
+    internal class MyClientCredentialsSecurityTokenManager : ClientCredentialsSecurityTokenManager
     {
         ClientCredentials credentials;
 

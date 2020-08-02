@@ -8,11 +8,11 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Controls;
 
 namespace Microsoft.Samples.Animation.LocalAnimations
 {
@@ -36,7 +36,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             DoubleAnimation myDoubleAnimation = new DoubleAnimation();
             myDoubleAnimation.From = 75;
             myDoubleAnimation.To = 300;
-            myDoubleAnimation.Duration =  new Duration(TimeSpan.FromSeconds(5));
+            myDoubleAnimation.Duration = new Duration(TimeSpan.FromSeconds(5));
             myDoubleAnimation.AutoReverse = true;
             myDoubleAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
@@ -50,7 +50,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             ColorAnimation myColorAnimation = new ColorAnimation();
             myColorAnimation.From = Colors.Blue;
             myColorAnimation.To = Colors.Red;
-            myColorAnimation.Duration =  new Duration(TimeSpan.FromMilliseconds(7000));
+            myColorAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(7000));
             myColorAnimation.AutoReverse = true;
             myColorAnimation.RepeatBehavior = RepeatBehavior.Forever;
 

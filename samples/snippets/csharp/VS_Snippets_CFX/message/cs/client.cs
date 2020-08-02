@@ -1,10 +1,10 @@
 ﻿//<snippet0>
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
-using System.Runtime.Serialization;
+using System.Text;
 
 namespace ConsoleApplication1
 {

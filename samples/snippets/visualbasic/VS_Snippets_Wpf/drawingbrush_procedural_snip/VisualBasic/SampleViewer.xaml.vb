@@ -2,16 +2,16 @@
 
 
 Namespace Microsoft.Samples.DrawingBrushExamples
-	''' <summary>
-	''' Interaction logic for SampleViewer.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for SampleViewer.xaml
+    ''' </summary>
 
-	Partial Public Class SampleViewer
-		Inherits Window
+    Partial Public Class SampleViewer
+        Inherits Window
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-	End Class
+    End Class
 End Namespace

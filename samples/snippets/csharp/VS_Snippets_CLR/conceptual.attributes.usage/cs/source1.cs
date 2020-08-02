@@ -2,7 +2,7 @@
 using System;
 //<snippet2>
 using System.Reflection;
-[assembly:AssemblyTitle("My Assembly")]
+[assembly: AssemblyTitle("My Assembly")]
 //</snippet2>
 
 //<snippet3>

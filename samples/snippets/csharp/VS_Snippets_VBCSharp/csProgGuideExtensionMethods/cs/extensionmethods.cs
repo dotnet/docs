@@ -1,7 +1,7 @@
 ﻿//<Snippet1>
+using System;
 using System.Linq;
 using System.Text;
-using System;
 
 namespace CustomExtensions
 {
@@ -13,7 +13,7 @@ namespace CustomExtensions
         // and specifies the type for which the method is defined.
         public static int WordCount(this String str)
         {
-            return str.Split(new char[] {' ', '.','?'}, StringSplitOptions.RemoveEmptyEntries).Length;
+            return str.Split(new char[] { ' ', '.', '?' }, StringSplitOptions.RemoveEmptyEntries).Length;
         }
     }
 }
@@ -39,69 +39,69 @@ namespace Extension_Methods_Simple
 namespace Extension2
 {
 
-//<snippet2>
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Linq;
+    //<snippet2>
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
 
-namespace EnumExtension
-{
-    // Define an extension method in a non-nested static class.
-    public static class Extensions
+    namespace EnumExtension
     {
-        public static Grades minPassing = Grades.D;
-        public static bool Passing(this Grades grade)
+        // Define an extension method in a non-nested static class.
+        public static class Extensions
         {
-            return grade >= minPassing;
-        }
-    }
-
-    public enum Grades { F = 0, D=1, C=2, B=3, A=4 };
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Grades g1 = Grades.D;
-            Grades g2 = Grades.F;
-            Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
-            Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
-
-            Extensions.minPassing = Grades.C;
-            Console.WriteLine("\r\nRaising the bar!\r\n");
-            Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
-            Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
-        }
-    }
-  }
-/* Output:
-    First is a passing grade.
-    Second is not a passing grade.
-
-    Raising the bar!
-
-    First is not a passing grade.
-    Second is not a passing grade.
- */
-    //</snippet2>
-} //namespace Extension2
-
-    //<snippet3>
-    class ExtensionMethods2
-    {
-
-        static void Main()
-        {
-            int[] ints = { 10, 45, 15, 39, 21, 26 };
-            var result = ints.OrderBy(g => g);
-            foreach (var i in result)
+            public static Grades minPassing = Grades.D;
+            public static bool Passing(this Grades grade)
             {
-                System.Console.Write(i + " ");
+                return grade >= minPassing;
+            }
+        }
+
+        public enum Grades { F = 0, D = 1, C = 2, B = 3, A = 4 };
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                Grades g1 = Grades.D;
+                Grades g2 = Grades.F;
+                Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
+                Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
+
+                Extensions.minPassing = Grades.C;
+                Console.WriteLine("\r\nRaising the bar!\r\n");
+                Console.WriteLine("First {0} a passing grade.", g1.Passing() ? "is" : "is not");
+                Console.WriteLine("Second {0} a passing grade.", g2.Passing() ? "is" : "is not");
             }
         }
     }
-    //Output: 10 15 21 26 39 45
-    //</snippet3>
+    /* Output:
+        First is a passing grade.
+        Second is not a passing grade.
+
+        Raising the bar!
+
+        First is not a passing grade.
+        Second is not a passing grade.
+     */
+    //</snippet2>
+} //namespace Extension2
+
+//<snippet3>
+class ExtensionMethods2
+{
+
+    static void Main()
+    {
+        int[] ints = { 10, 45, 15, 39, 21, 26 };
+        var result = ints.OrderBy(g => g);
+        foreach (var i in result)
+        {
+            System.Console.Write(i + " ");
+        }
+    }
+}
+//Output: 10 15 21 26 39 45
+//</snippet3>
 
 //<snippet4>
 namespace ExtensionMethods
@@ -169,8 +169,8 @@ namespace Extensions
 namespace ExtensionMethodsDemo1
 {
     using System;
-    using Extensions;
     using DefineIMyInterface;
+    using Extensions;
 
     class A : IMyInterface
     {

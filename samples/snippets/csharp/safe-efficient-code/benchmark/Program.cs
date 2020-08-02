@@ -18,7 +18,7 @@ namespace benchmark
         private readonly double f;
         private readonly double g;
         private readonly double h;
-        public MyImmutableStruct(double x, double y=0, double z=0)
+        public MyImmutableStruct(double x, double y = 0, double z = 0)
         {
             X = x;
             Y = y;

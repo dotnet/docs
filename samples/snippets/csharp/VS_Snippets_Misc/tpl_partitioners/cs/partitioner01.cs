@@ -32,7 +32,7 @@ class Program
         char input = Console.ReadKey().KeyChar;
         if (input == 'y' || input == 'Y')
         {
-            foreach(double d in results)
+            foreach (double d in results)
             {
                 Console.Write("{0} ", d);
             }

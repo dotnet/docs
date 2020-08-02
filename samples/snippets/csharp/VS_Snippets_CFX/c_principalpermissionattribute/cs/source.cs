@@ -1,10 +1,10 @@
 ﻿//<snippet0>
-using System.Security.Permissions;
 using System;
+using System.IdentityModel.Claims;
+using System.IO;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Description;
-using System.IO;
-using System.IdentityModel.Claims;
 //</snippet0>
 
 namespace Samples

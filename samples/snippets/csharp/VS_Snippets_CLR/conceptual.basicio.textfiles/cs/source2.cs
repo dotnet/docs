@@ -24,7 +24,7 @@ class DirAppend
         w.WriteLine($"{DateTime.Now.ToLongTimeString()} {DateTime.Now.ToLongDateString()}");
         w.WriteLine("  :");
         w.WriteLine($"  :{logMessage}");
-        w.WriteLine ("-------------------------------");
+        w.WriteLine("-------------------------------");
     }
 
     public static void DumpLog(StreamReader r)

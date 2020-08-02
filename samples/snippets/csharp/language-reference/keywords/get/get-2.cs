@@ -1,4 +1,4 @@
-﻿    class TimePeriod2
-    {
-        public double Hours { get; set; }
-    }
+﻿class TimePeriod2
+{
+    public double Hours { get; set; }
+}

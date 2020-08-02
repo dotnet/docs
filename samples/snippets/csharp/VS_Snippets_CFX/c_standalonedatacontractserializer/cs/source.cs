@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.IO;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
-using System.IO;
+using System.Text;
 using System.Xml;
 
 [assembly: SecurityPermission(SecurityAction.RequestMinimum)]
@@ -97,7 +97,7 @@ namespace ServiceModel.Samples
             DataContractSerializer dcs =
                 new DataContractSerializer(typeof(Person));
             XmlDictionaryWriter xdw =
-                XmlDictionaryWriter.CreateTextWriter(someStream,Encoding.UTF8 );
+                XmlDictionaryWriter.CreateTextWriter(someStream, Encoding.UTF8);
             dcs.WriteObject(xdw, p);
             //</snippet8>
 
@@ -162,7 +162,7 @@ namespace ServiceModel.Samples
                                 Console.WriteLine("Found the element");
                                 Person p = (Person)ser.ReadObject(reader);
                                 Console.WriteLine("{0} {1}    id:{2}",
-                                    p.Name , p.Address);
+                                    p.Name, p.Address);
                             }
                             Console.WriteLine(reader.Name);
                             break;

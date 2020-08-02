@@ -34,7 +34,7 @@ namespace GitHubIssueClassification
             Console.WriteLine($"=============== Loading Dataset  ===============");
 
             // <SnippetLoadTrainData>
-            _trainingDataView = _mlContext.Data.LoadFromTextFile<GitHubIssue>(_trainDataPath,hasHeader: true);
+            _trainingDataView = _mlContext.Data.LoadFromTextFile<GitHubIssue>(_trainDataPath, hasHeader: true);
             // </SnippetLoadTrainData>
 
             Console.WriteLine($"=============== Finished Loading Dataset  ===============");
@@ -48,7 +48,7 @@ namespace GitHubIssueClassification
             // </SnippetCallProcessData>
 
             // <SnippetCallBuildAndTrainModel>
-           var trainingPipeline = BuildAndTrainModel(_trainingDataView, pipeline);
+            var trainingPipeline = BuildAndTrainModel(_trainingDataView, pipeline);
             // </SnippetCallBuildAndTrainModel>
 
             // <SnippetCallEvaluate>
@@ -77,7 +77,7 @@ namespace GitHubIssueClassification
                             //Sample Caching the DataView so estimators iterating over the data multiple times, instead of always reading from file, using the cache might get better performance.
                             // <SnippetAppendCache>
                             .AppendCacheCheckpoint(_mlContext);
-                            // </SnippetAppendCache>
+            // </SnippetAppendCache>
 
             Console.WriteLine($"=============== Finished Processing Data ===============");
 
@@ -112,7 +112,8 @@ namespace GitHubIssueClassification
             _predEngine = _mlContext.Model.CreatePredictionEngine<GitHubIssue, IssuePrediction>(_trainedModel);
             // </SnippetCreatePredictionEngine1>
             // <SnippetCreateTestIssue1>
-            GitHubIssue issue = new GitHubIssue() {
+            GitHubIssue issue = new GitHubIssue()
+            {
                 Title = "WebSockets communication is slow in my machine",
                 Description = "The WebSockets communication used under the covers by SignalR looks like is going slow in my development machine.."
             };
@@ -138,7 +139,7 @@ namespace GitHubIssueClassification
 
             //Load the test dataset into the IDataView
             // <SnippetLoadTestDataset>
-            var testDataView = _mlContext.Data.LoadFromTextFile<GitHubIssue>(_testDataPath,hasHeader: true);
+            var testDataView = _mlContext.Data.LoadFromTextFile<GitHubIssue>(_testDataPath, hasHeader: true);
             // </SnippetLoadTestDataset>
 
             //Evaluate the model on a test dataset and calculate metrics of the model on the test data.
@@ -188,7 +189,7 @@ namespace GitHubIssueClassification
             // </SnippetDisplayResults>
         }
 
-        private static void SaveModelAsFile(MLContext mlContext,DataViewSchema trainingDataViewSchema, ITransformer model)
+        private static void SaveModelAsFile(MLContext mlContext, DataViewSchema trainingDataViewSchema, ITransformer model)
         {
             // <SnippetSaveModel>
             mlContext.Model.Save(model, trainingDataViewSchema, _modelPath);

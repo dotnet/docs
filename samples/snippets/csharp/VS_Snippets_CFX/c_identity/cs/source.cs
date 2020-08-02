@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
-using System.ServiceModel;
 using System.Runtime.Serialization;
-using System.ServiceModel.Description;
-using System.ServiceModel.Channels;
 using System.Security.Permissions;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
 using System.ServiceModel.Security.Tokens;
 
 [assembly: SecurityPermission(

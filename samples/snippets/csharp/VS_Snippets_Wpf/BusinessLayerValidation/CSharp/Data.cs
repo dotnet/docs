@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
-using System.ComponentModel;
 
 namespace BusinessLayerValidation
 {
-//<SnippetIDataErrorInfo>
+    //<SnippetIDataErrorInfo>
     public class Person : IDataErrorInfo
     {
         private int age;
@@ -42,5 +42,5 @@ namespace BusinessLayerValidation
             }
         }
     }
-//</SnippetIDataErrorInfo>
+    //</SnippetIDataErrorInfo>
 }

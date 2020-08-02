@@ -1,8 +1,8 @@
-﻿using Humanizer.Localisation.Formatters;
-using PluginBase;
-using System;
+﻿using System;
 using System.Linq;
 using System.Reflection;
+using Humanizer.Localisation.Formatters;
+using PluginBase;
 
 namespace FrenchPlugin
 {

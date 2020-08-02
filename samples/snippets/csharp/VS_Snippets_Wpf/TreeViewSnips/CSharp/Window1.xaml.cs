@@ -49,7 +49,7 @@ namespace TreeViewSnips
         private void SelectionChanged(object sender, RoutedPropertyChangedEventArgs<Object> e)
         {
             //Perform actions when SelectedItem changes
-            MessageBox.Show(((TreeViewItem) e.NewValue).Header.ToString());
+            MessageBox.Show(((TreeViewItem)e.NewValue).Header.ToString());
         }
         //</SnippetSelectedValueChangedMethod>
 

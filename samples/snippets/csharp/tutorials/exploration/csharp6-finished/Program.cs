@@ -1,7 +1,7 @@
 ﻿// <SnippetUsingStatic>
-using static System.Console;
 // </SnippetUsingStatic>
 using System.Linq;
+using static System.Console;
 
 public class Person
 {

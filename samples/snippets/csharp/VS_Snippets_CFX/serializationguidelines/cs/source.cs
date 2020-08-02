@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Runtime.Serialization;
 using System.Security.Permissions;
+using System.Text;
 
 namespace MiscCodeExamples
 {
@@ -216,7 +216,8 @@ namespace MiscCodeExamples
 
         public Person_Runtime_Serializable() { }
         //<snippet9>
-        protected Person_Runtime_Serializable(SerializationInfo info, StreamingContext context){
+        protected Person_Runtime_Serializable(SerializationInfo info, StreamingContext context)
+        {
             //</snippet9>
             if (info == null) throw new System.ArgumentNullException("info");
             fullName = (string)info.GetValue("name", typeof(string));
@@ -227,8 +228,9 @@ namespace MiscCodeExamples
         //</snippet11>
         //<snippet10>
         void ISerializable.GetObjectData(SerializationInfo info,
-                StreamingContext context) {
-        //</snippet10>
+                StreamingContext context)
+        {
+            //</snippet10>
             if (info == null) throw new System.ArgumentNullException("info");
             info.AddValue("name", fullName);
         }

@@ -108,7 +108,7 @@ namespace BrushesIntroduction
 
             // Begin the storyboard when the left mouse button is
             // pressed over the rectangle.
-            aRectangle.MouseLeftButtonDown += delegate(object sender, MouseButtonEventArgs e)
+            aRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs e)
             {
                 gradientStopAnimationStoryboard.Begin(this);
             };

@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Services.Client;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-
-using System.Data.Services.Client;
 using NorthwindClient.Northwind;
 
 namespace NorthwindClient

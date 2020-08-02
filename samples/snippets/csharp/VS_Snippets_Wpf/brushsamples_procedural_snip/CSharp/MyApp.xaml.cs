@@ -1,10 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Windows;
-using System.Windows.Navigation;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
-using System.IO;
+using System.Windows.Navigation;
 
 namespace Microsoft.Samples.BrushExamples
 {
@@ -22,13 +22,15 @@ namespace Microsoft.Samples.BrushExamples
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs args)
         {
 
-            try {
+            try
+            {
                 StreamWriter wr = new StreamWriter("error.txt");
                 wr.Write(args.ExceptionObject.ToString());
                 wr.Close();
-            }catch( Exception e)
+            }
+            catch (Exception e)
             {
-               throw e;
+                throw e;
             }
             MessageBox.Show("Unhandled exception: " + args.ExceptionObject.ToString());
         }

@@ -19,20 +19,20 @@ public class person
 // <Snippet17>
 public class Size
 {
-   private double a1;
-   private double a2;
+    private double a1;
+    private double a2;
 
-   public double Å
-   {
-       get { return a1; }
-       set { a1 = value; }
-   }
+    public double Å
+    {
+        get { return a1; }
+        set { a1 = value; }
+    }
 
-   public double Å
-   {
-       get { return a2; }
-       set { a2 = value; }
-   }
+    public double Å
+    {
+        get { return a2; }
+        set { a2 = value; }
+    }
 }
 // Compilation produces a compiler warning like the following:
 //    Naming2a.cs(16,18): warning CS3005: Identifier 'Size.Å' differing only in case is not
@@ -48,7 +48,7 @@ public class Size
 
 public class Example
 {
-   public static void Main()
-   {
-   }
+    public static void Main()
+    {
+    }
 }

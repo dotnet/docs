@@ -4,19 +4,18 @@
 // Service Code:
 
 using System;
-
-using System.ServiceModel.Channels;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Messaging;
 using System.ServiceModel;
-using System.Transactions;
+using System.ServiceModel.Channels;
 using System.Text;
-using System.Collections.Generic;
+using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples
 {
     // Define a service contract.
-    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode=SessionMode.Required)]
+    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode = SessionMode.Required)]
     public interface IOrderTaker
     {
         [OperationContract(IsOneWay = true)]
@@ -113,7 +112,7 @@ namespace Microsoft.ServiceModel.Samples
 
     // Service class which implements the service contract.
     // Added code to write output to the console window
-    [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
     public class OrderTakerService : IOrderTaker
     {
         PurchaseOrder po;

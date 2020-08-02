@@ -1,10 +1,10 @@
 ﻿// <snippet3>
 using System;
+using System.IO;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.IO;
 
 namespace WpfApplication1
 {

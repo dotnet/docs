@@ -37,7 +37,8 @@ class TestMyServices
 //</Snippet19>
 
 //-----------------------------------------------------------------------------
-public class TestCopy{
+public class TestCopy
+{
 
     public void CopyDirectory()
     {

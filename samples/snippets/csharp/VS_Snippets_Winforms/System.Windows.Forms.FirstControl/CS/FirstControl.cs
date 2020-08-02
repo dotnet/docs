@@ -1,8 +1,8 @@
 ﻿// <snippet1>
 using System;
-using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace CustomWinControls

@@ -110,33 +110,33 @@ namespace FilterAndSort
         // method.
         //<snippet1>
         private void InitializeSortedFilteredBindingSource()
-		{
-			// Create the connection string, data adapter and data table.
-			SqlConnection connectionString =
-				 new SqlConnection("Initial Catalog=Northwind;" +
-				 "Data Source=localhost;Integrated Security=SSPI;");
-			SqlDataAdapter customersTableAdapter =
-				new SqlDataAdapter("Select * from Customers", connectionString);
-			DataTable customerTable = new DataTable();
+        {
+            // Create the connection string, data adapter and data table.
+            SqlConnection connectionString =
+                 new SqlConnection("Initial Catalog=Northwind;" +
+                 "Data Source=localhost;Integrated Security=SSPI;");
+            SqlDataAdapter customersTableAdapter =
+                new SqlDataAdapter("Select * from Customers", connectionString);
+            DataTable customerTable = new DataTable();
 
-			// Fill the adapter with the contents of the customer table.
-			customersTableAdapter.Fill(customerTable);
+            // Fill the adapter with the contents of the customer table.
+            customersTableAdapter.Fill(customerTable);
 
-			// Set data source for BindingSource1.
-			BindingSource1.DataSource = customerTable;
+            // Set data source for BindingSource1.
+            BindingSource1.DataSource = customerTable;
 
-			// Filter the items to show contacts who are owners.
-			// <snippet11>
-			BindingSource1.Filter = "ContactTitle='Owner'";
-			// </snippet11>
+            // Filter the items to show contacts who are owners.
+            // <snippet11>
+            BindingSource1.Filter = "ContactTitle='Owner'";
+            // </snippet11>
 
-			// Sort the items on the company name in descending order.
-			// <snippet12>
-			BindingSource1.Sort = "Country DESC, Address ASC";
-			// </snippet12>
+            // Sort the items on the company name in descending order.
+            // <snippet12>
+            BindingSource1.Sort = "Country DESC, Address ASC";
+            // </snippet12>
 
-			// Set the data source for dataGridView1 to BindingSource1.
-			dataGridView1.DataSource = BindingSource1;
+            // Set the data source for dataGridView1 to BindingSource1.
+            dataGridView1.DataSource = BindingSource1;
         }
         //</snippet1>
 

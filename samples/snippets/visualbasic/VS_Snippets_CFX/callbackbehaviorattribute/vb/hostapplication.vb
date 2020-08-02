@@ -1,5 +1,5 @@
-﻿Imports System.Configuration
-Imports System.Collections.Generic
+﻿Imports System.Collections.Generic
+Imports System.Configuration
 Imports System.ServiceModel
 Imports System.Text
 

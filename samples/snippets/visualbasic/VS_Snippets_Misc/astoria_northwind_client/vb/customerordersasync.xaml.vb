@@ -1,5 +1,6 @@
 ﻿'<snippetWpfDataBindingAsync>
 Imports System.Collections.Generic
+Imports System.Data.Services.Client
 Imports System.Linq
 Imports System.Text
 Imports System.Windows
@@ -11,9 +12,8 @@ Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Navigation
 Imports System.Windows.Shapes
-Imports NorthwindClient.Northwind
-Imports System.Data.Services.Client
 Imports System.Windows.Threading
+Imports NorthwindClient.Northwind
 
 '/ <summary>
 '/ Interaction logic for OrderItems.xaml

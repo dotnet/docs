@@ -63,7 +63,7 @@ public class CodeDOMSample
         CompilerParameters cp = new CompilerParameters();
 
         // Add an assembly reference.
-        cp.ReferencedAssemblies.Add( "System.dll" );
+        cp.ReferencedAssemblies.Add("System.dll");
 
         // Generate an executable instead of
         // a class library.
@@ -83,7 +83,7 @@ public class CodeDOMSample
             // Display compilation errors.
             Console.WriteLine("Errors building {0} into {1}",
                 sourceFile, cr.PathToAssembly);
-            foreach(CompilerError ce in cr.Errors)
+            foreach (CompilerError ce in cr.Errors)
             {
                 Console.WriteLine("  {0}", ce.ToString());
                 Console.WriteLine();

@@ -1,9 +1,9 @@
 ﻿// <snippet0>
 using System;
 using System.Windows;
-using System.Windows.Navigation;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Navigation;
 
 namespace MyControls
 {

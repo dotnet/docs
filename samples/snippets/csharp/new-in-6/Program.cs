@@ -34,7 +34,7 @@ namespace NewInCSharp6
             test.Grades.Add(1.0);
         }
 
-        private void PerformFailingOperation() {}
+        private void PerformFailingOperation() { }
     }
 
     public class RecoverableException : Exception

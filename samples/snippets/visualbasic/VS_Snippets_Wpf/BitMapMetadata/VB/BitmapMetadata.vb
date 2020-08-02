@@ -1,10 +1,10 @@
 ﻿
 Imports System.IO
+Imports System.Threading
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
-Imports System.Threading
 
 Namespace SDKSample
 

@@ -52,7 +52,7 @@ namespace Pipes
                 }
             }
 
-             // By completing PipeWriter, tell the PipeReader that there's no more data coming.
+            // By completing PipeWriter, tell the PipeReader that there's no more data coming.
             await writer.CompleteAsync();
         }
 

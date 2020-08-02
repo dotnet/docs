@@ -197,7 +197,7 @@ namespace UpdateBindings
 
         public string CompanyName
         {
-            get {return this.companyNameValue;}
+            get { return this.companyNameValue; }
 
             set
             {

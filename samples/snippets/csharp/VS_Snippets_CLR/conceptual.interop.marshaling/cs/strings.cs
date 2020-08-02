@@ -1,7 +1,7 @@
 ﻿//<snippet13>
 using System;
-using System.Text;
 using System.Runtime.InteropServices;
+using System.Text;
 
 //<snippet14>
 // Declares a managed structure for each unmanaged structure.

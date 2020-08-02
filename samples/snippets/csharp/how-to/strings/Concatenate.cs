@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace HowToStrings
@@ -96,7 +96,7 @@ namespace HowToStrings
             // <Snippet6>
             string[] words = { "The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog." };
 
-            var phrase = words.Aggregate((partialPhrase, word) =>$"{partialPhrase} {word}");
+            var phrase = words.Aggregate((partialPhrase, word) => $"{partialPhrase} {word}");
             System.Console.WriteLine(phrase);
             // </Snippet6>
         }

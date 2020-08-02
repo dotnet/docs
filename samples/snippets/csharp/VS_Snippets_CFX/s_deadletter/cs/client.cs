@@ -3,15 +3,15 @@
 
 // <Snippet1>
 using System;
-using System.ServiceModel.Channels;
 using System.Configuration;
 //using System.Messaging;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples
 {
-	
+
     //The service contract is defined in generatedProxy.cs, generated from the service by the svcutil tool.
 
     //Client implementation code.
@@ -27,8 +27,8 @@ namespace Microsoft.ServiceModel.Samples
                 System.Messaging.MessageQueue.Create(deadLetterQueueName, true);
 
             OrderProcessorClient client = new OrderProcessorClient("OrderProcessorEndpoint");
-	    try
-            {	
+            try
+            {
 
                 // Create the purchase order.
                 PurchaseOrder po = new PurchaseOrder();
@@ -60,16 +60,16 @@ namespace Microsoft.ServiceModel.Samples
 
                 client.Close();
             }
-            catch(TimeoutException timeout)
+            catch (TimeoutException timeout)
             {
-		Console.WriteLine(timeout.Message);
+                Console.WriteLine(timeout.Message);
                 client.Abort();
-	    }
-            catch(CommunicationException conexcp)
+            }
+            catch (CommunicationException conexcp)
             {
-		Console.WriteLine(conexcp.Message);
+                Console.WriteLine(conexcp.Message);
                 client.Abort();
-	    }
+            }
 
             Console.WriteLine();
             Console.WriteLine("Press <ENTER> to terminate client.");

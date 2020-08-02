@@ -6,16 +6,16 @@ Imports System.Windows.Navigation
 
 
 Namespace SDKSample
-	Partial Public Class SampleViewer
-		Inherits Page
-		Public Sub New()
-			InitializeComponent()
-			MyPaintWithVideoExampleFrame.Content = New PaintWithVideoExample()
-			MyReflectionExampleFrame.Content = New ReflectionExample()
-			MyAutoLayoutContentExampleFrame.Content = New AutoLayoutContentExample()
-		End Sub
+    Partial Public Class SampleViewer
+        Inherits Page
+        Public Sub New()
+            InitializeComponent()
+            MyPaintWithVideoExampleFrame.Content = New PaintWithVideoExample()
+            MyReflectionExampleFrame.Content = New ReflectionExample()
+            MyAutoLayoutContentExampleFrame.Content = New AutoLayoutContentExample()
+        End Sub
 
-	End Class
+    End Class
 
 
 End Namespace

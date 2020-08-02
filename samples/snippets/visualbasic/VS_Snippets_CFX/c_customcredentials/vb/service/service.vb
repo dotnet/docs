@@ -1,12 +1,12 @@
 ﻿'<snippet0>
+Imports System.Configuration
 Imports System.IdentityModel.Selectors
+Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
 Imports System.ServiceModel
+Imports System.ServiceModel.Configuration
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Security
-Imports System.Security.Cryptography.X509Certificates
-Imports System.ServiceModel.Configuration
-Imports System.Configuration
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 

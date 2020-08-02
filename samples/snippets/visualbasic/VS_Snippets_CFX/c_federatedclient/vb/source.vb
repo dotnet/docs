@@ -4,11 +4,11 @@
 Imports System.Collections.Generic
 Imports System.IdentityModel.Tokens
 Imports System.Security.Cryptography.X509Certificates
+Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security
 Imports System.ServiceModel.Security.Tokens
-Imports System.Security.Permissions
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples
     '</snippet1>

@@ -32,7 +32,7 @@ class Form1 : Form
 //<Snippet201>
 public class DataGridViewRolloverCell : DataGridViewTextBoxCell
 {
-//</Snippet201>
+    //</Snippet201>
     //<Snippet210>
     protected override void Paint(
         Graphics graphics,
@@ -81,7 +81,7 @@ public class DataGridViewRolloverCell : DataGridViewTextBoxCell
     }
     //</Snippet220>
 
-//<Snippet202>
+    //<Snippet202>
 }
 //</Snippet202>
 //</Snippet200>

@@ -70,15 +70,15 @@
  ******************************************************************************************/
 
 using System;
-using System.Windows;
-using System.Windows.Documents;
-using System.Windows.Automation;
-using System.Windows.Controls;
-using System.Diagnostics;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.IO;
-using System.Windows.Automation.Text;
 using System.Threading;
+using System.Windows;
+using System.Windows.Automation;
+using System.Windows.Automation.Text;
+using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Threading;
 
 namespace SDKSample
@@ -407,10 +407,10 @@ namespace SDKSample
         // Handle the TextSelectChange event on the WCP thread
         private void onTextSelectionChange(object sender, AutomationEventArgs e)
         {
-            _window.Dispatcher.BeginInvoke(DispatcherPriority.Background, new DispatcherOperationCallback(ChangeSelection),null);
+            _window.Dispatcher.BeginInvoke(DispatcherPriority.Background, new DispatcherOperationCallback(ChangeSelection), null);
         }
 
-       // The delegate for the onTextSelectionChange event
+        // The delegate for the onTextSelectionChange event
         private object ChangeSelection(object arg)
         {
             TextPatternRange[] currentSelection = targetTextPattern.GetSelection();
@@ -437,7 +437,7 @@ namespace SDKSample
         private void onNotepadClose(object sender, AutomationEventArgs e)
         {
             _window.Dispatcher.BeginInvoke(
-                    DispatcherPriority.Background, new DispatcherOperationCallback(CloseApp),null);
+                    DispatcherPriority.Background, new DispatcherOperationCallback(CloseApp), null);
         }
 
         // The delegate for the notepad close event
@@ -461,7 +461,7 @@ namespace SDKSample
         private void GetAnimationStyleAttribute()
         {
             // Start application.
-            Process p = Process.Start("Notepad.exe","text.txt");
+            Process p = Process.Start("Notepad.exe", "text.txt");
 
             // target --> The root AutomationElement.
             AutomationElement target = AutomationElement.FromHandle(p.MainWindowHandle);
@@ -524,7 +524,7 @@ namespace SDKSample
         }
         // </Snippet1001>
 
-            // <Snippet1002>
+        // <Snippet1002>
         private void GetBulletStyleAttribute()
         {
             // Start application.
@@ -556,9 +556,9 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1002>
+        // </Snippet1002>
 
-            // <Snippet1003>
+        // <Snippet1003>
         private void GetCapStyleAttribute()
         {
             // Start application.
@@ -590,7 +590,7 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1003>
+        // </Snippet1003>
         //    // <Snippet1004>
         //private void GetCompositionStateAttribute()
         //{
@@ -624,7 +624,7 @@ namespace SDKSample
         //    }
         //}
         //    // </Snippet1004>
-            // <Snippet1005>
+        // <Snippet1005>
         private void GetCultureAttribute()
         {
             // Start application.
@@ -656,7 +656,7 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1005>
+        // </Snippet1005>
         // <SnippetStartTarget>
         /// -------------------------------------------------------------------
         /// <summary>
@@ -783,7 +783,7 @@ namespace SDKSample
         }
         // </SnippetFontName>
 
-            // <Snippet1007>
+        // <Snippet1007>
         private void GetFontSizeAttribute()
         {
             // Start application.
@@ -815,8 +815,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1007>
-            // <Snippet1008>
+        // </Snippet1007>
+        // <Snippet1008>
         private void GetFontWeightAttribute()
         {
             // Start application.
@@ -848,8 +848,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1008>
-            // <Snippet1009>
+        // </Snippet1008>
+        // <Snippet1009>
         private void GetForegroundColorAttribute()
         {
             // Start application.
@@ -881,7 +881,7 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1009>
+        // </Snippet1009>
         //    // <Snippet1010>
         //private void GetHeadingLevelAttribute()
         //{
@@ -915,7 +915,7 @@ namespace SDKSample
         //    }
         //}
         //    // </Snippet1010>
-            // <Snippet1011>
+        // <Snippet1011>
         private void GetHorizontalTextAlignmentAttribute()
         {
             // Start application.
@@ -947,8 +947,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1011>
-            // <Snippet1012>
+        // </Snippet1011>
+        // <Snippet1012>
         private void GetIndentationFirstLineAttribute()
         {
             // Start application.
@@ -980,8 +980,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1012>
-            // <Snippet1013>
+        // </Snippet1012>
+        // <Snippet1013>
         private void GetIndentationLeadingAttribute()
         {
             // Start application.
@@ -1013,8 +1013,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1013>
-            // <Snippet1014>
+        // </Snippet1013>
+        // <Snippet1014>
         private void GetIndentationTrailingAttribute()
         {
             // Start application.
@@ -1046,8 +1046,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1014>
-            // <Snippet1015>
+        // </Snippet1014>
+        // <Snippet1015>
         private void GetIsHiddenAttribute()
         {
             // Start application.
@@ -1079,8 +1079,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1015>
-            // <Snippet1016>
+        // </Snippet1015>
+        // <Snippet1016>
         private void GetIsItalicAttribute()
         {
             // Start application.
@@ -1112,7 +1112,7 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1016>
+        // </Snippet1016>
         //    // <Snippet1017>
         //private void GetIsMarkedAutocorrectedAttribute()
         //{
@@ -1278,7 +1278,7 @@ namespace SDKSample
         //    }
         //}
         //    // </Snippet1021>
-            // <Snippet1022>
+        // <Snippet1022>
         private void GetIsReadOnlyAttribute()
         {
             // Start application.
@@ -1310,8 +1310,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1022>
-            // <Snippet1023>
+        // </Snippet1022>
+        // <Snippet1023>
         private void GetIsSubscriptAttribute()
         {
             // Start application.
@@ -1343,8 +1343,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1023>
-            // <Snippet1024>
+        // </Snippet1023>
+        // <Snippet1024>
         private void GetIsSuperscriptAttribute()
         {
             // Start application.
@@ -1376,8 +1376,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1024>
-            // <Snippet1025>
+        // </Snippet1024>
+        // <Snippet1025>
         private void GetMarginBottomAttribute()
         {
             // Start application.
@@ -1409,8 +1409,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1025>
-            // <Snippet1026>
+        // </Snippet1025>
+        // <Snippet1026>
         private void GetMarginLeadingAttribute()
         {
             // Start application.
@@ -1442,8 +1442,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1026>
-            // <Snippet1027>
+        // </Snippet1026>
+        // <Snippet1027>
         private void GetMarginTopAttribute()
         {
             // Start application.
@@ -1475,8 +1475,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1027>
-            // <Snippet1028>
+        // </Snippet1027>
+        // <Snippet1028>
         private void GetMarginTrailingAttribute()
         {
             // Start application.
@@ -1508,7 +1508,7 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1028>
+        // </Snippet1028>
         //    // <Snippet1030>
         //private void GetOrderedListStringAttribute()
         //{
@@ -1542,7 +1542,7 @@ namespace SDKSample
         //    }
         //}
         //    // </Snippet1030>
-            // <Snippet1031>
+        // <Snippet1031>
         private void GetOutlineStylesAttribute()
         {
             // Start application.
@@ -1574,8 +1574,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1031>
-            // <Snippet1032>
+        // </Snippet1031>
+        // <Snippet1032>
         private void GetOverlineColorAttribute()
         {
             // Start application.
@@ -1607,8 +1607,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1032>
-            // <Snippet1033>
+        // </Snippet1032>
+        // <Snippet1033>
         private void GetOverlineStyleAttribute()
         {
             // Start application.
@@ -1640,7 +1640,7 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1033>
+        // </Snippet1033>
         //    // <Snippet1034>
         //private void GetPageHeightAttribute()
         //{
@@ -1740,7 +1740,7 @@ namespace SDKSample
         //    }
         //}
         //    // </Snippet1036>
-            // <Snippet1038>
+        // <Snippet1038>
         private void GetStrikethroughColorAttribute()
         {
             // Start application.
@@ -1772,8 +1772,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1038>
-            // <Snippet1039>
+        // </Snippet1038>
+        // <Snippet1039>
         private void GetStrikethroughStyleAttribute()
         {
             // Start application.
@@ -1805,8 +1805,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1039>
-            // <Snippet1040>
+        // </Snippet1039>
+        // <Snippet1040>
         private void GetTabsAttribute()
         {
             // Start application.
@@ -1838,8 +1838,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1040>
-            // <Snippet1041>
+        // </Snippet1040>
+        // <Snippet1041>
         private void GetTextFlowDirectionsAttribute()
         {
             // Start application.
@@ -1871,8 +1871,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1041>
-            // <Snippet1043>
+        // </Snippet1041>
+        // <Snippet1043>
         private void GetUnderlineColorAttribute()
         {
             // Start application.
@@ -1904,8 +1904,8 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1043>
-            // <Snippet1044>
+        // </Snippet1043>
+        // <Snippet1044>
         private void GetUnderlineStyleAttribute()
         {
             // Start application.
@@ -1937,7 +1937,7 @@ namespace SDKSample
                 Console.WriteLine(oAttribute.ToString());
             }
         }
-            // </Snippet1044>
+        // </Snippet1044>
         //    // <Snippet1045>
         //private void GetVerticalTextAlignmentAttribute()
         //{
@@ -1971,13 +1971,13 @@ namespace SDKSample
         //    }
         //}
         //    // </Snippet1045>
-            // <Snippet1049>
+        // <Snippet1049>
         private TextPatternRange GetRangeFromPoint()
         {
             return targetTextPattern.RangeFromPoint(
                 _root.Current.BoundingRectangle.TopLeft);
         }
-            // </Snippet1049>
+        // </Snippet1049>
         //    // <Snippet1051>
         //private void GetSupportsTextSelection()
         //{
@@ -2099,7 +2099,7 @@ namespace SDKSample
         }
         // </Snippet1062>
         // <Snippet1063>
-         private void ExpandSelection(AutomationElement target)
+        private void ExpandSelection(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2120,7 +2120,7 @@ namespace SDKSample
         }
         // </Snippet1063>
         // <Snippet1064>
-         private TextPatternRange RangeFromAttribute(AutomationElement target)
+        private TextPatternRange RangeFromAttribute(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2141,7 +2141,7 @@ namespace SDKSample
         }
         // </Snippet1064>
         // <Snippet1065>
-         private TextPatternRange TextFromSelection(AutomationElement target)
+        private TextPatternRange TextFromSelection(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2162,7 +2162,7 @@ namespace SDKSample
         }
         // </Snippet1065>
         // <Snippet1066>
-         private Object AttributeValueFromSelection(AutomationElement target)
+        private Object AttributeValueFromSelection(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2183,7 +2183,7 @@ namespace SDKSample
         }
         // </Snippet1066>
         // <Snippet1067>
-         private Rect[] BoundingRectanglesFromSelection(AutomationElement target)
+        private Rect[] BoundingRectanglesFromSelection(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2270,9 +2270,9 @@ namespace SDKSample
                 if ((bool)embeddedObject.GetCurrentPropertyValue(
                     AutomationElement.IsTextPatternAvailableProperty))
                 {
-                   // For full functionality a secondary TextPattern should
-                   // be obtained from the embedded object.
-                   // embeddedObject must be a child of the text provider.
+                    // For full functionality a secondary TextPattern should
+                    // be obtained from the embedded object.
+                    // embeddedObject must be a child of the text provider.
                     TextPatternRange embeddedObjectRange =
                         textPattern.RangeFromChild(embeddedObject);
                     // GetText(-1) retrieves all text in the range.
@@ -2284,7 +2284,7 @@ namespace SDKSample
         }
         // </SnippetGetRangeFromChild>
         // <Snippet1069>
-         private AutomationElement EnclosingElementFromSelection(AutomationElement target)
+        private AutomationElement EnclosingElementFromSelection(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2305,7 +2305,7 @@ namespace SDKSample
         }
         // </Snippet1069>
         // <Snippet1070>
-         private String TextFromSelection(AutomationElement target, Int32 length)
+        private String TextFromSelection(AutomationElement target, Int32 length)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2382,7 +2382,7 @@ namespace SDKSample
         }
         // </SnippetMoveSelection>
         // <Snippet1072>
-         private void MoveEndpointByRangeFromSelection(AutomationElement target)
+        private void MoveEndpointByRangeFromSelection(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);

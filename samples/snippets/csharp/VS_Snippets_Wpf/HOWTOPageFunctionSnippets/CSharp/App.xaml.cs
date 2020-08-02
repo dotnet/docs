@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Configuration;
+using System.Data;
 using System.Windows;
 using System.Windows.Navigation;
-using System.Data;
 using System.Xml;
-using System.Configuration;
 
 namespace UsingPageFunctionsSample
 {

@@ -1,15 +1,15 @@
 ﻿//
 using System;
+//<snippet1>
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
-//<snippet1>
-using System.Collections.Generic;
+using Microsoft.Office.Tools.Excel;
 using Excel = Microsoft.Office.Interop.Excel;
-using Word = Microsoft.Office.Interop.Word;
 //</snippet1>
 using Office = Microsoft.Office.Core;
-using Microsoft.Office.Tools.Excel;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace OfficeWalkthroughCS
 {

@@ -1,15 +1,14 @@
 ﻿// <Snippet8>
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 // <Snippet0>
 using System.ComponentModel;
-using System.ServiceModel;
-using System.ServiceProcess;
 using System.Configuration;
 using System.Configuration.Install;
+using System.Linq;
+using System.ServiceModel;
+using System.ServiceProcess;
+using System.Text;
 // </Snippet0>
 
 namespace Microsoft.ServiceModel.Samples
@@ -75,7 +74,7 @@ namespace Microsoft.ServiceModel.Samples
         {
             ServiceBase.Run(new CalculatorWindowsService());
         }
-    // </Snippet3>
+        // </Snippet3>
 
         // <Snippet4>
         // Start the Windows service.

@@ -1,8 +1,8 @@
-﻿Imports System.Windows
-Imports System.Windows.Navigation
+﻿Imports System.Configuration
 Imports System.Data
+Imports System.Windows
+Imports System.Windows.Navigation
 Imports System.Xml
-Imports System.Configuration
 
 Namespace SDKSample
 

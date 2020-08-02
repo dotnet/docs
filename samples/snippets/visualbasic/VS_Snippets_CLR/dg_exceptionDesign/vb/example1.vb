@@ -1,7 +1,7 @@
-﻿Imports System.IO
+﻿Imports System.Collections.Generic
+Imports System.IO
 Imports System.Net
 Imports System.Runtime.Serialization
-Imports System.Collections.Generic
 
 Namespace Examples.DesignGuidelines.Exceptions
 

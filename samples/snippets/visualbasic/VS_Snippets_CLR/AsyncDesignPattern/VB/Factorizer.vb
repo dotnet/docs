@@ -1,6 +1,6 @@
 ﻿' <Snippet6>
-Imports System.Threading
 Imports System.Runtime.Remoting.Messaging
+Imports System.Threading
 
 Namespace Examples.AdvancedProgramming.AsynchronousOperations
 

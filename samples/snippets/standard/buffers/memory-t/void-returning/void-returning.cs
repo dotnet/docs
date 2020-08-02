@@ -37,7 +37,7 @@ public class Example
 // </Snippet1>
 
 // Possible implementation of Log:
-    // private static void Log(ReadOnlyMemory<char> message)
-    // {
-    //     Console.WriteLine(message);
-    // }
+// private static void Log(ReadOnlyMemory<char> message)
+// {
+//     Console.WriteLine(message);
+// }

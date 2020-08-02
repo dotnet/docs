@@ -8,13 +8,13 @@ namespace SafeEfficientCode
         public double Y;
         public double Z;
 
-#region OriginReference
+        #region OriginReference
         private static Point3D origin = new Point3D();
         public static ref readonly Point3D Origin => ref origin;
-#endregion
+        #endregion
     }
 
-#region ReadonlyOnlyPoint3D
+    #region ReadonlyOnlyPoint3D
     readonly public struct ReadonlyPoint3D
     {
         public ReadonlyPoint3D(double x, double y, double z)
@@ -31,5 +31,5 @@ namespace SafeEfficientCode
         private static readonly ReadonlyPoint3D origin = new ReadonlyPoint3D();
         public static ref readonly ReadonlyPoint3D Origin => ref origin;
     }
-#endregion
+    #endregion
 }

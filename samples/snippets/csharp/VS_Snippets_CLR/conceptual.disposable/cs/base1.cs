@@ -1,7 +1,7 @@
 ﻿// <Snippet9>
-using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
+using Microsoft.Win32.SafeHandles;
 
 public class DisposableStreamResource : IDisposable
 {

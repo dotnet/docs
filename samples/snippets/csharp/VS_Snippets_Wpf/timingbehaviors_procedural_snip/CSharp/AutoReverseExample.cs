@@ -7,10 +7,10 @@ AutoReverseExample.xaml
 
 using System;
 using System.Windows;
-using System.Windows.Shapes;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
@@ -23,11 +23,11 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             NameScope.SetNameScope(this, new NameScope());
 
             StackPanel myStackPanel = new StackPanel();
-            myStackPanel.Margin = new Thickness( 20 );
+            myStackPanel.Margin = new Thickness(20);
 
             Border myBorder = new Border();
             TextBlock myTextBlock = new TextBlock();
-            myTextBlock.Margin = new Thickness( 20 );
+            myTextBlock.Margin = new Thickness(20);
             myTextBlock.Text = "This example shows how to use the AutoReverse property to make a";
             myTextBlock.Text += " timeline play backwards at the end of each  iteration. Several rectangles are";
             myTextBlock.Text += " animated by DoubleAnimations with identical durations and target values, but with different ";
@@ -45,22 +45,22 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             //
             Rectangle withoutAutoReverseRectangle = new Rectangle();
             withoutAutoReverseRectangle.Name = "withoutAutoReverseRectangle";
-            this.RegisterName( withoutAutoReverseRectangle.Name,withoutAutoReverseRectangle );
+            this.RegisterName(withoutAutoReverseRectangle.Name, withoutAutoReverseRectangle);
             withoutAutoReverseRectangle.Width = 100;
             withoutAutoReverseRectangle.Height = 20;
-            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             withoutAutoReverseRectangle.Fill = mySolidColorBrush;
             withoutAutoReverseRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(withoutAutoReverseRectangle);
 
             myTextBlock = new TextBlock();
-            myTextBlock.Margin = new Thickness( 0,20,0,0 );
+            myTextBlock.Margin = new Thickness(0, 20, 0, 0);
             myTextBlock.Text = "AutoReverse=\"True\".";
             myStackPanel.Children.Add(myTextBlock);
 
             Rectangle autoReverseRectangle = new Rectangle();
             autoReverseRectangle.Name = "autoReverseRectangle";
-            this.RegisterName( autoReverseRectangle.Name, autoReverseRectangle );
+            this.RegisterName(autoReverseRectangle.Name, autoReverseRectangle);
             autoReverseRectangle.Width = 100;
             autoReverseRectangle.Height = 20;
             autoReverseRectangle.Fill = mySolidColorBrush;
@@ -68,13 +68,13 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             myStackPanel.Children.Add(autoReverseRectangle);
 
             myTextBlock = new TextBlock();
-            myTextBlock.Margin = new Thickness( 0,20,0,0 );
+            myTextBlock.Margin = new Thickness(0, 20, 0, 0);
             myTextBlock.Text = "In this example, AutoReverse=\"True\" \nRepeatBehavior=\"2x\".";
             myStackPanel.Children.Add(myTextBlock);
 
             Rectangle autoReverseRectangleWithRepeats = new Rectangle();
             autoReverseRectangleWithRepeats.Name = "autoReverseRectangleWithRepeats";
-            this.RegisterName( autoReverseRectangleWithRepeats.Name, autoReverseRectangleWithRepeats );
+            this.RegisterName(autoReverseRectangleWithRepeats.Name, autoReverseRectangleWithRepeats);
             autoReverseRectangleWithRepeats.Width = 100;
             autoReverseRectangleWithRepeats.Height = 20;
             autoReverseRectangleWithRepeats.Fill = mySolidColorBrush;
@@ -82,14 +82,14 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             myStackPanel.Children.Add(autoReverseRectangleWithRepeats);
 
             myTextBlock = new TextBlock();
-            myTextBlock.Margin = new Thickness( 0,20,0,0 );
+            myTextBlock.Margin = new Thickness(0, 20, 0, 0);
             myTextBlock.Text = "In this example, AutoReverse=\"True\" and RepeatBehavior=\"2x\" ";
             myTextBlock.Text += "have been set on the animation's parent timeline.";
             myStackPanel.Children.Add(myTextBlock);
 
             Rectangle complexAutoReverseExample = new Rectangle();
             complexAutoReverseExample.Name = "complexAutoReverseExample";
-            this.RegisterName( complexAutoReverseExample.Name, complexAutoReverseExample );
+            this.RegisterName(complexAutoReverseExample.Name, complexAutoReverseExample);
             complexAutoReverseExample.Width = 100;
             complexAutoReverseExample.Height = 20;
             complexAutoReverseExample.Fill = mySolidColorBrush;
@@ -104,7 +104,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             Storyboard.SetTargetProperty(myDoubleAnimation, new PropertyPath(Rectangle.WidthProperty));
             myDoubleAnimation.From = 100;
             myDoubleAnimation.To = 400;
-            myDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myDoubleAnimation.AutoReverse = false;
 
             //
@@ -115,7 +115,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             Storyboard.SetTargetProperty(myAutomaticallyReversedDoubleAnimation, new PropertyPath(Rectangle.WidthProperty));
             myAutomaticallyReversedDoubleAnimation.From = 100;
             myAutomaticallyReversedDoubleAnimation.To = 400;
-            myAutomaticallyReversedDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myAutomaticallyReversedDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myAutomaticallyReversedDoubleAnimation.AutoReverse = true;
 
             //
@@ -128,7 +128,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
                 new PropertyPath(Rectangle.WidthProperty));
             myRepeatedAndReversedDoubleAnimation.From = 100;
             myRepeatedAndReversedDoubleAnimation.To = 400;
-            myRepeatedAndReversedDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myRepeatedAndReversedDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myRepeatedAndReversedDoubleAnimation.AutoReverse = true;
             myRepeatedAndReversedDoubleAnimation.RepeatBehavior = new RepeatBehavior(2);
 
@@ -144,7 +144,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
                 new PropertyPath(Rectangle.WidthProperty));
             myParallelRepeatedAndReversedDoubleAnimation.From = 100;
             myParallelRepeatedAndReversedDoubleAnimation.To = 400;
-            myParallelRepeatedAndReversedDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myParallelRepeatedAndReversedDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myParallelRepeatedAndReversedDoubleAnimation.AutoReverse = true;
             myParallelRepeatedAndReversedDoubleAnimation.RepeatBehavior = new RepeatBehavior(2);
 
@@ -162,7 +162,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             //  Create the button to restart the animations.
             //
             Button myButton = new Button();
-            myButton.Margin = new Thickness( 0,30,0,0 );
+            myButton.Margin = new Thickness(0, 30, 0, 0);
             myButton.HorizontalAlignment = HorizontalAlignment.Left;
             myButton.Content = "Restart Animations";
             myStackPanel.Children.Add(myButton);

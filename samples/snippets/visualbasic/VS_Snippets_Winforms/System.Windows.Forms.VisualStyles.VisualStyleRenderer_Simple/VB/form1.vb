@@ -35,7 +35,7 @@ Namespace SimpleVisualStyleRendererSample
 
             If Application.RenderWithVisualStyles And _
                 VisualStyleRenderer.IsElementDefined(element) Then
-                    renderer = New VisualStyleRenderer(element)
+                renderer = New VisualStyleRenderer(element)
             End If
         End Sub
         ' </Snippet4>
@@ -46,8 +46,8 @@ Namespace SimpleVisualStyleRendererSample
             If (renderer IsNot Nothing) Then
                 renderer.DrawBackground(e.Graphics, Me.ClientRectangle)
 
-            ' Visual styles are disabled or the element is undefined, 
-            ' so just draw a message.
+                ' Visual styles are disabled or the element is undefined, 
+                ' so just draw a message.
             Else
                 Me.Text = "Visual styles are disabled."
                 TextRenderer.DrawText(e.Graphics, Me.Text, Me.Font, _

@@ -2,9 +2,9 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
-using System.Windows.Media.Animation;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.KeyFrameExamples
 {
@@ -86,7 +86,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                 new SplineDoubleKeyFrame(
                     0, // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(6)), // KeyTime
-                    new KeySpline(0.6,0.0,0.9,0.0) // KeySpline
+                    new KeySpline(0.6, 0.0, 0.9, 0.0) // KeySpline
                     )
                 );
 
@@ -104,7 +104,7 @@ namespace Microsoft.Samples.KeyFrameExamples
             translationStoryboard.Children.Add(translationAnimation);
 
             // Start the storyboard after the rectangle loads.
-            aRectangle.Loaded += delegate(object sender, RoutedEventArgs e)
+            aRectangle.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 translationStoryboard.Begin(this);
             };

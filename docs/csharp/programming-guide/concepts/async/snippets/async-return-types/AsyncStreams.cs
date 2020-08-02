@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
@@ -29,7 +29,7 @@ namespace AsyncExamples
             string? line = await readStream.ReadLineAsync();
             while (line != null)
             {
-                var words = line.Split(' ',StringSplitOptions.RemoveEmptyEntries);
+                var words = line.Split(' ', StringSplitOptions.RemoveEmptyEntries);
                 foreach (var word in words)
                 {
                     yield return word;

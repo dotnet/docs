@@ -1,8 +1,8 @@
 ﻿//<snippet0>
 using System;
 using System.Drawing;
-using System.IO;
 using System.Drawing.Printing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace PrintPreviewApp
@@ -81,10 +81,10 @@ namespace PrintPreviewApp
         private void printPreviewButton_Click(object sender, EventArgs e)
         {
             ReadDocument();
-    	    //<snippet5>
+            //<snippet5>
             printPreviewDialog1.Document = printDocument1;
             //</snippet5>
-	    printPreviewDialog1.ShowDialog();
+            printPreviewDialog1.ShowDialog();
         }
         //</snippet4>
 

@@ -16,8 +16,8 @@ namespace ConsoleApplication
                     ZipArchiveEntry readmeEntry = archive.CreateEntry("Readme.txt");
                     using (StreamWriter writer = new StreamWriter(readmeEntry.Open()))
                     {
-                            writer.WriteLine("Information about this package.");
-                            writer.WriteLine("========================");
+                        writer.WriteLine("Information about this package.");
+                        writer.WriteLine("========================");
                     }
                 }
             }

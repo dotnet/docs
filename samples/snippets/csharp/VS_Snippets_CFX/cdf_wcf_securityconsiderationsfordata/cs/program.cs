@@ -1,10 +1,10 @@
 ﻿using System;
+using System.IO;
 using System.Runtime.Serialization;
 using System.Security;
-using System.IO;
 
 //<snippet2>
-[assembly:System.Runtime.CompilerServices.InternalsVisibleTo("System.Runtime.Serialization, PublicKey = 00000000000000000400000000000000")]
+[assembly: System.Runtime.CompilerServices.InternalsVisibleTo("System.Runtime.Serialization, PublicKey = 00000000000000000400000000000000")]
 //</snippet2>
 
 namespace SecurityConsiderationsForData
@@ -16,8 +16,8 @@ namespace SecurityConsiderationsForData
         {
             try
             {
-//              PermissionsHelper.InternetZone corresponds to the PermissionSet for partial trust.
-//              PermissionsHelper.InternetZone.PermitOnly();
+                //              PermissionsHelper.InternetZone corresponds to the PermissionSet for partial trust.
+                //              PermissionsHelper.InternetZone.PermitOnly();
                 MemoryStream memoryStream = new MemoryStream();
                 new DataContractSerializer(typeof(DataNode)).
                     WriteObject(memoryStream, new DataNode());

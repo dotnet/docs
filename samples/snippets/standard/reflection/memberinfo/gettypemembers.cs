@@ -1,11 +1,11 @@
-using System;
+﻿using System;
 using System.Reflection;
 
 class Asminfo1
 {
     public static void Main()
     {
-        Console.WriteLine ("\nReflection.MemberInfo");
+        Console.WriteLine("\nReflection.MemberInfo");
 
         // Get the Type and MemberInfo.
         // Insert the fully qualified class name inside the quotation marks in the

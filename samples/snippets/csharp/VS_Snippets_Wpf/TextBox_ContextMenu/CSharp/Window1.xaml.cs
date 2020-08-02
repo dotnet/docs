@@ -42,13 +42,13 @@ namespace SDKSample
             }
         }
 
-        void ClickPaste(Object sender, RoutedEventArgs args)     { cxmTextBox.Paste(); }
-        void ClickCopy(Object sender, RoutedEventArgs args)      { cxmTextBox.Copy(); }
-        void ClickCut(Object sender, RoutedEventArgs args)       { cxmTextBox.Cut(); }
+        void ClickPaste(Object sender, RoutedEventArgs args) { cxmTextBox.Paste(); }
+        void ClickCopy(Object sender, RoutedEventArgs args) { cxmTextBox.Copy(); }
+        void ClickCut(Object sender, RoutedEventArgs args) { cxmTextBox.Cut(); }
         void ClickSelectAll(Object sender, RoutedEventArgs args) { cxmTextBox.SelectAll(); }
-        void ClickClear(Object sender, RoutedEventArgs args)     { cxmTextBox.Clear(); }
-        void ClickUndo(Object sender, RoutedEventArgs args)      { cxmTextBox.Undo(); }
-        void ClickRedo(Object sender, RoutedEventArgs args)      { cxmTextBox.Redo(); }
+        void ClickClear(Object sender, RoutedEventArgs args) { cxmTextBox.Clear(); }
+        void ClickUndo(Object sender, RoutedEventArgs args) { cxmTextBox.Undo(); }
+        void ClickRedo(Object sender, RoutedEventArgs args) { cxmTextBox.Redo(); }
 
         void ClickSelectLine(Object sender, RoutedEventArgs args)
         {

@@ -1,7 +1,7 @@
 ﻿' <snippet1>
 ' Code for building SimpleType.dll.
-Imports System.Reflection
 Imports System.Globalization
+Imports System.Reflection
 Imports Simple_Type
 
 Namespace Simple_Type

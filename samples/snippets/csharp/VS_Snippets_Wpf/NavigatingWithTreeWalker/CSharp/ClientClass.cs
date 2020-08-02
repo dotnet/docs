@@ -43,8 +43,8 @@
 \*************************************************************************************************/
 using System;
 using System.Text;
-using System.Windows.Forms;
 using System.Windows.Automation;
+using System.Windows.Forms;
 
 namespace NavigateWithTreeWalker
 {
@@ -93,7 +93,7 @@ namespace NavigateWithTreeWalker
             // GetSupportedPatterns() is typically used only in debugging situations.
             // It is more efficient to call GetCurrentPattern() for just those patterns
             // you want to retrieve.
-            AutomationPattern[] supportedPatterns =  element.GetSupportedPatterns();
+            AutomationPattern[] supportedPatterns = element.GetSupportedPatterns();
             structureStringBuilder.Append(padding + "Supported Patterns\r\n");
             foreach (AutomationPattern pattern in supportedPatterns)
             {
@@ -108,7 +108,7 @@ namespace NavigateWithTreeWalker
         /// </summary>
         /// <param name="ae">The automation element for the control.</param>
         /// <param name="structureStringBuilder">The StringBuilder that gets the string. </param>
-        private void GetAnIdentifier(AutomationElement element,  ref StringBuilder structureStringBuilder)
+        private void GetAnIdentifier(AutomationElement element, ref StringBuilder structureStringBuilder)
         {
             StringBuilder padding = new StringBuilder();
             padding.Insert(0, " ", treeDepth * 8);
@@ -345,7 +345,7 @@ namespace NavigateWithTreeWalker
                     }
                 }
                 // Find the "UIAutomation is listening" textbox.
-                 listenElement = FindByAutomationId(mainWindowElement, "tbListen");
+                listenElement = FindByAutomationId(mainWindowElement, "tbListen");
 
                 // Find the tab control and add an event handler for when the automation tree structure changes.
                 // This event will be raised whenever the user selects a tab.

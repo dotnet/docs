@@ -30,7 +30,7 @@ End Class
 '<Snippet201>
 Public Class DataGridViewRolloverCell
     Inherits DataGridViewTextBoxCell
-'</Snippet201>
+    '</Snippet201>
 
     '<Snippet210>
     Protected Overrides Sub Paint( _
@@ -78,7 +78,7 @@ Public Class DataGridViewRolloverCell
     End Sub
     '</Snippet220>
 
-'<Snippet202>
+    '<Snippet202>
 End Class
 '</Snippet202>
 '</Snippet200>

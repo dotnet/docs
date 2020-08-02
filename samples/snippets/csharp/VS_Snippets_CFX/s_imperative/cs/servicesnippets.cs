@@ -1,9 +1,8 @@
 ﻿using System;
-
-using System.ServiceModel.Channels;
-using System.ServiceModel;
-using System.ServiceModel.Description;
 using System.Collections.Generic;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
 
 namespace Microsoft.ServiceModel.Samples
 {
@@ -12,10 +11,10 @@ namespace Microsoft.ServiceModel.Samples
         public static void Snippet3()
         {
             // <Snippet3>
-             Uri baseAddress = new Uri("http://localhost:8000/servicemodelsamples/service");
+            Uri baseAddress = new Uri("http://localhost:8000/servicemodelsamples/service");
 
             // Create a ServiceHost for the CalculatorService type and provide the base address.
-             ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress);
+            ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService), baseAddress);
 
             // Create a custom binding that contains two binding elements.
             ReliableSessionBindingElement reliableSession = new ReliableSessionBindingElement();
@@ -32,7 +31,7 @@ namespace Microsoft.ServiceModel.Samples
             CustomBinding binding = new CustomBinding(elements);
             // </Snippet3>
 
-           // Add an endpoint using that binding.
+            // Add an endpoint using that binding.
             serviceHost.AddServiceEndpoint(typeof(ICalculator), binding, "");
 
             // Add a MEX endpoint.

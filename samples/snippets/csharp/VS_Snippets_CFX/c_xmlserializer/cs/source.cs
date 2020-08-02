@@ -1,7 +1,7 @@
 ﻿using System;
-using System.ServiceModel;
-using System.Security.Permissions;
 using System.Runtime.Serialization;
+using System.Security.Permissions;
+using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.Xml.Serialization;
 [assembly: SecurityPermission(
@@ -22,7 +22,7 @@ namespace UsingXml1
     [XmlSerializerFormat]
     public class BankingService
     {
-	[OperationContract]
+        [OperationContract]
         public void ProcessTransaction(BankingTransaction bt)
         {
             // Code not shown.
@@ -103,7 +103,7 @@ namespace UsingXml3
         [MessageHeader] public string Operation;
 
         //This element will be <fromAcct> and not <from>:
-        [XmlElement(ElementName="fromAcct"), MessageBodyMember(Name="from")]
+        [XmlElement(ElementName = "fromAcct"), MessageBodyMember(Name = "from")]
         public Account fromAccount;
 
         [XmlElement, MessageBodyMember]
@@ -111,6 +111,6 @@ namespace UsingXml3
 
         [XmlAttribute, MessageBodyMember]
         public int amount;
-}
+    }
     //</snippet4>
 }

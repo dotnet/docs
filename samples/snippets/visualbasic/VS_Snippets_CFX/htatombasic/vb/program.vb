@@ -1,12 +1,12 @@
 ﻿' <Snippet12>
-Imports System.Xml
 Imports System.Collections.Generic
 Imports System.Collections.ObjectModel
 Imports System.ServiceModel
+Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Syndication
-Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Web
+Imports System.Xml
 
 ' <Snippet0>
 <ServiceContract()> _

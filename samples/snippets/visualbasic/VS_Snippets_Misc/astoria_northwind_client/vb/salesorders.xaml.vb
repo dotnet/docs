@@ -49,9 +49,9 @@
 'Imports System.Collections.Generic
 
 '<snippetWpfDataBindingCode>
+Imports System.Data.Services.Client
 Imports System.Linq
 Imports System.Windows
-Imports System.Data.Services.Client
 Imports NorthwindClient.Northwind
 
 '/ <summary>

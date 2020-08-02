@@ -1,14 +1,13 @@
-﻿Imports System.Windows
+﻿Imports System.IO
+Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Documents
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Navigation
-Imports System.Windows.Shapes
-
 Imports System.Windows.Resources
-Imports System.IO
+Imports System.Windows.Shapes
 
 Namespace ResourcesSample
     ''' <summary>

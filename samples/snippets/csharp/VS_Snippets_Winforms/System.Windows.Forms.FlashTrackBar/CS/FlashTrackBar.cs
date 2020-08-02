@@ -1,16 +1,18 @@
 ﻿// <snippet1>
-namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
+namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar
+{
     using System;
     using System.ComponentModel;
     using System.ComponentModel.Design;
-    using System.Drawing;
-    using System.Drawing.Drawing2D;
-    using System.Drawing.Design;
-    using System.Windows.Forms;
     using System.Diagnostics;
+    using System.Drawing;
+    using System.Drawing.Design;
+    using System.Drawing.Drawing2D;
+    using System.Windows.Forms;
 
     [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
-    public class FlashTrackBar : System.Windows.Forms.Control {
+    public class FlashTrackBar : System.Windows.Forms.Control
+    {
         /// <summary>
         ///    Required designer variable.
         /// </summary>
@@ -35,7 +37,8 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         private Brush backgroundDim = null;
         private byte darkenBy = 200;
 
-        public FlashTrackBar() {
+        public FlashTrackBar()
+        {
             //
             // Required for Windows Form Designer support
             //
@@ -51,20 +54,23 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         /// </summary>
         protected override void Dispose(bool disposing)
         {
-           if (disposing) {
-                if (components != null) {
+            if (disposing)
+            {
+                if (components != null)
+                {
                     components.Dispose();
                 }
-           }
-           base.Dispose(disposing);
+            }
+            base.Dispose(disposing);
         }
 
         /// <summary>
         ///    Required method for Designer support - do not modify
         ///    the contents of this method with the code editor.
         /// </summary>
-        void InitializeComponent () {
-            this.components = new System.ComponentModel.Container ();
+        void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
             this.ForeColor = System.Drawing.Color.White;
             this.BackColor = System.Drawing.Color.Black;
             this.Size = new System.Drawing.Size(100, 23);
@@ -75,14 +81,19 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             Category("Flash"),
             DefaultValue(true)
         ]
-        public bool AllowUserEdit {
-            get {
+        public bool AllowUserEdit
+        {
+            get
+            {
                 return allowUserEdit;
             }
-            set {
-                if (value != allowUserEdit) {
+            set
+            {
+                if (value != allowUserEdit)
+                {
                     allowUserEdit = value;
-                    if (!allowUserEdit) {
+                    if (!allowUserEdit)
+                    {
                         Capture = false;
                         dragging = false;
                     }
@@ -93,13 +104,17 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         [
             Category("Flash")
         ]
-        public Color EndColor {
-            get {
+        public Color EndColor
+        {
+            get
+            {
                 return endColor;
             }
-            set {
+            set
+            {
                 endColor = value;
-                if (baseBackground != null && showGradient) {
+                if (baseBackground != null && showGradient)
+                {
                     baseBackground.Dispose();
                     baseBackground = null;
                 }
@@ -107,7 +122,8 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             }
         }
 
-        public bool ShouldSerializeEndColor() {
+        public bool ShouldSerializeEndColor()
+        {
             return !(endColor == Color.LimeGreen);
         }
 
@@ -116,14 +132,19 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             Editor(typeof(FlashTrackBarDarkenByEditor), typeof(UITypeEditor)),
             DefaultValue((byte)200)
         ]
-        public byte DarkenBy {
-            get {
+        public byte DarkenBy
+        {
+            get
+            {
                 return darkenBy;
             }
-            set {
-                if (value != darkenBy) {
+            set
+            {
+                if (value != darkenBy)
+                {
                     darkenBy = value;
-                    if (backgroundDim != null) {
+                    if (backgroundDim != null)
+                    {
                         backgroundDim.Dispose();
                         backgroundDim = null;
                     }
@@ -136,12 +157,16 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             Category("Flash"),
             DefaultValue(100)
         ]
-        public int Max {
-            get {
+        public int Max
+        {
+            get
+            {
                 return max;
             }
-            set {
-                if (max != value) {
+            set
+            {
+                if (max != value)
+                {
                     max = value;
                     Invalidate();
                 }
@@ -152,12 +177,16 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             Category("Flash"),
             DefaultValue(0)
         ]
-        public int Min {
-            get {
+        public int Min
+        {
+            get
+            {
                 return min;
             }
-            set {
-                if (min != value) {
+            set
+            {
+                if (min != value)
+                {
                     min = value;
                     Invalidate();
                 }
@@ -167,13 +196,17 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         [
             Category("Flash")
         ]
-        public Color StartColor {
-            get {
+        public Color StartColor
+        {
+            get
+            {
                 return startColor;
             }
-            set {
+            set
+            {
                 startColor = value;
-                if (baseBackground != null && showGradient) {
+                if (baseBackground != null && showGradient)
+                {
                     baseBackground.Dispose();
                     baseBackground = null;
                 }
@@ -181,7 +214,8 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             }
         }
 
-        public bool ShouldSerializeStartColor() {
+        public bool ShouldSerializeStartColor()
+        {
             return !(startColor == Color.Red);
         }
 
@@ -190,14 +224,19 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             RefreshProperties(RefreshProperties.Repaint),
             DefaultValue(false)
         ]
-        public bool ShowPercentage {
-            get {
+        public bool ShowPercentage
+        {
+            get
+            {
                 return showPercentage;
             }
-            set {
-                if (value != showPercentage) {
+            set
+            {
+                if (value != showPercentage)
+                {
                     showPercentage = value;
-                    if (showPercentage) {
+                    if (showPercentage)
+                    {
                         showValue = false;
                     }
                     Invalidate();
@@ -210,14 +249,19 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             RefreshProperties(RefreshProperties.Repaint),
             DefaultValue(false)
         ]
-        public bool ShowValue {
-            get {
+        public bool ShowValue
+        {
+            get
+            {
                 return showValue;
             }
-            set {
-                if (value != showValue) {
+            set
+            {
+                if (value != showValue)
+                {
                     showValue = value;
-                    if (showValue) {
+                    if (showValue)
+                    {
                         showPercentage = false;
                     }
                     Invalidate();
@@ -229,14 +273,19 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             Category("Flash"),
             DefaultValue(true)
         ]
-        public bool ShowGradient {
-            get {
+        public bool ShowGradient
+        {
+            get
+            {
                 return showGradient;
             }
-            set {
-                if (value != showGradient) {
+            set
+            {
+                if (value != showGradient)
+                {
                     showGradient = value;
-                    if (baseBackground != null) {
+                    if (baseBackground != null)
+                    {
                         baseBackground.Dispose();
                         baseBackground = null;
                     }
@@ -250,15 +299,20 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             Editor(typeof(FlashTrackBarValueEditor), typeof(UITypeEditor)),
             DefaultValue(0)
         ]
-        public int Value {
-            get {
-                if (dragging) {
+        public int Value
+        {
+            get
+            {
+                if (dragging)
+                {
                     return dragValue;
                 }
                 return value;
             }
-            set {
-                if (value != this.value) {
+            set
+            {
+                if (value != this.value)
+                {
                     int old = this.value;
                     this.value = value;
                     OnValueChanged(EventArgs.Empty);
@@ -269,16 +323,20 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
 
         // ValueChanged Event
         [Description("Raised when the Value displayed changes")]
-        public event EventHandler ValueChanged {
-            add {
+        public event EventHandler ValueChanged
+        {
+            add
+            {
                 onValueChanged += value;
             }
-            remove {
+            remove
+            {
                 onValueChanged -= value;
             }
         }
 
-        private void OptimizedInvalidate(int oldValue, int newValue) {
+        private void OptimizedInvalidate(int oldValue, int newValue)
+        {
             Rectangle client = ClientRectangle;
 
             float oldPercentValue = ((float)oldValue / ((float)Max - (float)Min));
@@ -303,20 +361,24 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             string oldToDisplay;
             string newToDisplay;
 
-            if (ShowPercentage) {
+            if (ShowPercentage)
+            {
                 oldToDisplay = Convert.ToString((int)(oldPercentValue * 100f)) + "%";
                 newToDisplay = Convert.ToString((int)(newPercentValue * 100f)) + "%";
             }
-            else if (ShowValue) {
+            else if (ShowValue)
+            {
                 oldToDisplay = Convert.ToString(oldValue);
                 newToDisplay = Convert.ToString(newValue);
             }
-            else {
+            else
+            {
                 oldToDisplay = null;
                 newToDisplay = null;
             }
 
-            if (oldToDisplay != null && newToDisplay != null) {
+            if (oldToDisplay != null && newToDisplay != null)
+            {
                 Graphics g = CreateGraphics();
                 SizeF oldFontSize = g.MeasureString(oldToDisplay, Font);
                 SizeF newFontSize = g.MeasureString(newToDisplay, Font);
@@ -333,9 +395,11 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         }
 
         // <snippet7>
-        protected override void OnMouseDown(MouseEventArgs e) {
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
             base.OnMouseDown(e);
-            if (!allowUserEdit) {
+            if (!allowUserEdit)
+            {
                 return;
             }
             Capture = true;
@@ -345,9 +409,11 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         // </snippet7>
 
         // <snippet8>
-        protected override void OnMouseMove(MouseEventArgs e) {
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
             base.OnMouseMove(e);
-            if (!allowUserEdit || !dragging) {
+            if (!allowUserEdit || !dragging)
+            {
                 return;
             }
             SetDragValue(new Point(e.X, e.Y));
@@ -355,9 +421,11 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         // </snippet8>
 
         // <snippet9>
-        protected override void OnMouseUp(MouseEventArgs e) {
+        protected override void OnMouseUp(MouseEventArgs e)
+        {
             base.OnMouseUp(e);
-            if (!allowUserEdit || !dragging) {
+            if (!allowUserEdit || !dragging)
+            {
                 return;
             }
             Capture = false;
@@ -367,21 +435,26 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
         }
         // </snippet9>
 
-        protected override void OnPaint(PaintEventArgs e) {
+        protected override void OnPaint(PaintEventArgs e)
+        {
 
             // <snippet4>
             base.OnPaint(e);
-            if (baseBackground == null) {
-                if (showGradient) {
+            if (baseBackground == null)
+            {
+                if (showGradient)
+                {
                     baseBackground = new LinearGradientBrush(new Point(0, 0),
                                                              new Point(ClientSize.Width, 0),
                                                              StartColor,
                                                              EndColor);
                 }
-                else if (BackgroundImage != null) {
+                else if (BackgroundImage != null)
+                {
                     baseBackground = new TextureBrush(BackgroundImage);
                 }
-                else {
+                else
+                {
                     baseBackground = new SolidBrush(BackColor);
                 }
             }
@@ -399,15 +472,19 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             string toDisplay = null;
             RectangleF textRect = new RectangleF();
 
-            if (ShowPercentage || ShowValue || text.Length > 0) {
+            if (ShowPercentage || ShowValue || text.Length > 0)
+            {
 
-                if (ShowPercentage) {
+                if (ShowPercentage)
+                {
                     toDisplay = Convert.ToString((int)(percentValue * 100f)) + "%";
                 }
-                else if (ShowValue) {
+                else if (ShowValue)
+                {
                     toDisplay = Convert.ToString(Value);
                 }
-                else {
+                else
+                {
                     toDisplay = text;
                 }
 
@@ -421,84 +498,105 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
             e.Graphics.FillRectangle(baseBackground, ClientRectangle);
             e.Graphics.FillRectangle(backgroundDim, toDim);
             e.Graphics.Flush();
-            if (toDisplay != null && toDisplay.Length > 0) {
+            if (toDisplay != null && toDisplay.Length > 0)
+            {
                 e.Graphics.DrawString(toDisplay, Font, new SolidBrush(ForeColor), textRect);
             }
         }
 
         // <snippet2>
-        protected override void OnTextChanged(EventArgs e) {
+        protected override void OnTextChanged(EventArgs e)
+        {
             base.OnTextChanged(e);
             Invalidate();
         }
 
-        protected override void OnBackColorChanged(EventArgs e) {
+        protected override void OnBackColorChanged(EventArgs e)
+        {
             base.OnBackColorChanged(e);
-            if ((baseBackground != null) && (!showGradient)) {
-                        baseBackground.Dispose();
-                        baseBackground = null;
+            if ((baseBackground != null) && (!showGradient))
+            {
+                baseBackground.Dispose();
+                baseBackground = null;
             }
         }
         // </snippet2>
 
-        protected override void OnBackgroundImageChanged(EventArgs e) {
+        protected override void OnBackgroundImageChanged(EventArgs e)
+        {
             base.OnTextChanged(e);
-            if ((baseBackground != null) && (!showGradient)) {
-                        baseBackground.Dispose();
-                        baseBackground = null;
+            if ((baseBackground != null) && (!showGradient))
+            {
+                baseBackground.Dispose();
+                baseBackground = null;
             }
         }
 
         // <snippet3>
-        protected override void OnResize(EventArgs e) {
+        protected override void OnResize(EventArgs e)
+        {
             base.OnResize(e);
-            if (baseBackground != null) {
+            if (baseBackground != null)
+            {
                 baseBackground.Dispose();
                 baseBackground = null;
             }
         }
         // </snippet3>
 
-        protected virtual void OnValueChanged(EventArgs e) {
-            if (onValueChanged != null) {
+        protected virtual void OnValueChanged(EventArgs e)
+        {
+            if (onValueChanged != null)
+            {
                 onValueChanged.Invoke(this, e);
             }
         }
 
-        private void SetDragValue(Point mouseLocation) {
+        private void SetDragValue(Point mouseLocation)
+        {
 
             Rectangle client = ClientRectangle;
 
-            if (client.Contains(mouseLocation)) {
+            if (client.Contains(mouseLocation))
+            {
                 float percentage = (float)mouseLocation.X / (float)ClientRectangle.Width;
                 int newDragValue = (int)(percentage * (float)(max - min));
-                if (newDragValue != dragValue) {
+                if (newDragValue != dragValue)
+                {
                     int old = dragValue;
                     dragValue = newDragValue;
                     OptimizedInvalidate(old, dragValue);
                 }
             }
-            else {
-                if (client.Y <= mouseLocation.Y && mouseLocation.Y <= client.Y + client.Height) {
-                    if (mouseLocation.X <= client.X && mouseLocation.X > client.X - LeftRightBorder) {
+            else
+            {
+                if (client.Y <= mouseLocation.Y && mouseLocation.Y <= client.Y + client.Height)
+                {
+                    if (mouseLocation.X <= client.X && mouseLocation.X > client.X - LeftRightBorder)
+                    {
                         int newDragValue = min;
-                        if (newDragValue != dragValue) {
+                        if (newDragValue != dragValue)
+                        {
                             int old = dragValue;
                             dragValue = newDragValue;
                             OptimizedInvalidate(old, dragValue);
                         }
                     }
-                    else if (mouseLocation.X >= client.X + client.Width && mouseLocation.X < client.X + client.Width + LeftRightBorder) {
+                    else if (mouseLocation.X >= client.X + client.Width && mouseLocation.X < client.X + client.Width + LeftRightBorder)
+                    {
                         int newDragValue = max;
-                        if (newDragValue != dragValue) {
+                        if (newDragValue != dragValue)
+                        {
                             int old = dragValue;
                             dragValue = newDragValue;
                             OptimizedInvalidate(old, dragValue);
                         }
                     }
                 }
-                else {
-                    if (dragValue != value) {
+                else
+                {
+                    if (dragValue != value)
+                    {
                         int old = dragValue;
                         dragValue = value;
                         OptimizedInvalidate(old, dragValue);

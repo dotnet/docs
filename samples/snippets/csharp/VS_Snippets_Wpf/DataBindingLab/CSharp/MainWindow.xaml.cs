@@ -1,11 +1,11 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.ComponentModel;
 
 namespace DataBindingLab
 {
@@ -48,12 +48,12 @@ namespace DataBindingLab
 
         private void AddGrouping(object sender, RoutedEventArgs args)
         {
-        //<Snippet6>
+            //<Snippet6>
             // This groups the items in the view by the property "Category"
             PropertyGroupDescription groupDescription = new PropertyGroupDescription();
             groupDescription.PropertyName = "Category";
             listingDataView.GroupDescriptions.Add(groupDescription);
-        //</Snippet6>
+            //</Snippet6>
         }
 
         //<Snippet7>
@@ -85,9 +85,9 @@ namespace DataBindingLab
 
         private void AddFiltering(object sender, RoutedEventArgs args)
         {
-        //<Snippet10>
+            //<Snippet10>
             listingDataView.Filter += new FilterEventHandler(ShowOnlyBargainsFilter);
-        //</Snippet10>
+            //</Snippet10>
         }
 
         //<Snippet11>

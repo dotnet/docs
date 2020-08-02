@@ -26,17 +26,17 @@ namespace BindToResults
         {
             InitializeComponent();
 
-            Button_Click_LoadXMLFromFile(null, null) ;
+            Button_Click_LoadXMLFromFile(null, null);
         }
 
         private void CheckBox_Checked_Sort(object sender, RoutedEventArgs e)
         {
-//<SnippetBindToResults>
+            //<SnippetBindToResults>
             stacky.DataContext =
             from c in planetsDoc.Element("{http://planetsNS}SolarSystemPlanets").Elements()
             orderby Int32.Parse(c.Element("{http://planetsNS}DiameterKM").Value)
             select c;
-//</snippetBindToResults>
+            //</snippetBindToResults>
         }
 
         private void CheckBox_Unchecked_NoSort(object sender, RoutedEventArgs e)
@@ -57,10 +57,10 @@ namespace BindToResults
 
         private void Button_Click_LoadXMLFromXAML(object sender, RoutedEventArgs e)
         {
-//<SnippetLoadDCFromXAML>
+            //<SnippetLoadDCFromXAML>
             planetsDoc = (XDocument)((ObjectDataProvider)Resources["justTwoPlanets"]).Data;
             stacky.DataContext = planetsDoc.Element("{http://planetsNS}SolarSystemPlanets").Elements();
-//</SnippetLoadDCFromXAML>
+            //</SnippetLoadDCFromXAML>
             sortCheckBox.IsChecked = false;
         }
     }

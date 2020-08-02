@@ -1,15 +1,15 @@
-﻿Imports System.Windows
+﻿Imports System.Configuration
 Imports System.Data
+Imports System.Windows
 Imports System.Xml
-Imports System.Configuration
 
 Namespace SDKSample
-	''' <summary>
-	''' Interaction logic for app.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for app.xaml
+    ''' </summary>
 
-	Partial Public Class app
-		Inherits Application
+    Partial Public Class app
+        Inherits Application
 
-	End Class
+    End Class
 End Namespace

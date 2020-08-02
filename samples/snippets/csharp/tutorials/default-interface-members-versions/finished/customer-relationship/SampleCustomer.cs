@@ -33,7 +33,7 @@ namespace customer_relationship
         // <SnippetOverrideAndExtend>
         public decimal ComputeLoyaltyDiscount()
         {
-           if (PreviousOrders.Any() == false)
+            if (PreviousOrders.Any() == false)
                 return 0.50m;
             else
                 return ICustomer.DefaultLoyaltyDiscount(this);

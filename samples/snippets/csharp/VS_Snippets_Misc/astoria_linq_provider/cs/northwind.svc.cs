@@ -35,9 +35,9 @@ namespace NorthwindService
             get
             {
                 List<SomeType> types = new List<SomeType>();
-                for (int i=0; i <2; i++)
+                for (int i = 0; i < 2; i++)
                 {
-                    types.Add(new SomeType(i, "string"+i.ToString()));
+                    types.Add(new SomeType(i, "string" + i.ToString()));
                 }
                 return types.AsQueryable<SomeType>();
             }
@@ -53,9 +53,9 @@ namespace NorthwindService
             this.Prop = prop;
         }
 
-        public int Key {get; set;}
+        public int Key { get; set; }
 
-        public string Prop { get; set;}
+        public string Prop { get; set; }
     }
-#endregion
+    #endregion
 }

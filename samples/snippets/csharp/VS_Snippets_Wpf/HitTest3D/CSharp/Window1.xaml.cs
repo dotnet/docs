@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Windows;
 using System.Collections;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
@@ -32,7 +32,7 @@ namespace HitTest3D
 
             //test for a result in the Viewport3D
             VisualTreeHelper.HitTest(myViewport, null, HTResult, pointparams);
-        //</SnippetHitTest3D3DN4>
+            //</SnippetHitTest3D3DN4>
             UpdateTestPointInfo(testpoint3D, testdirection);
         }
 

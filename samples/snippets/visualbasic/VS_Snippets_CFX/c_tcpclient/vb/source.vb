@@ -1,9 +1,9 @@
 ﻿'<snippet0>
 Imports System.Collections.ObjectModel
-Imports System.Security.Cryptography.X509Certificates
-Imports System.ServiceModel
 Imports System.Runtime.Serialization
+Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
+Imports System.ServiceModel
 '</snippet0>
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

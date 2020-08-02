@@ -1,9 +1,9 @@
 ﻿// <snippet03>
 using System;
+using System.Drawing;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Drawing;
 
 public class Example
 {

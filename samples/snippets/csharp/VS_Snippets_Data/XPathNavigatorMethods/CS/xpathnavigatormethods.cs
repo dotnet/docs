@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Collections;
 using System.IO;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.XPath;
-using System.Collections;
 
 class XPathNavigatorMethods
 {
@@ -88,7 +88,7 @@ class XPathNavigatorMethods
         childNodes.Load(new StringReader("<pages xmlns=\"http://www.contoso.com/books\">100</pages>"));
         XPathNavigator childNodesNavigator = childNodes.CreateNavigator();
 
-        if(childNodesNavigator.MoveToChild("pages", "http://www.contoso.com/books"))
+        if (childNodesNavigator.MoveToChild("pages", "http://www.contoso.com/books"))
         {
             navigator.AppendChild(childNodesNavigator);
         }
@@ -928,7 +928,7 @@ class XPathNavigatorMethods
 
         XPathNodeIterator nodes = navigator.Select("/bk:bookstore/bk:book/bk:price", manager);
         // Move to the first node bk:price node
-        if(nodes.MoveNext())
+        if (nodes.MoveNext())
         {
             // now nodes.Current points to the first selected node
             XPathNavigator nodesNavigator = nodes.Current;
@@ -937,9 +937,9 @@ class XPathNavigatorMethods
             XPathNodeIterator nodesText =
                nodesNavigator.SelectDescendants(XPathNodeType.Text, false);
 
-            while(nodesText.MoveNext())
+            while (nodesText.MoveNext())
             {
-               Console.WriteLine(nodesText.Current.Value);
+                Console.WriteLine(nodesText.Current.Value);
             }
         }
         //</snippet41>

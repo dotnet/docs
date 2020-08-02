@@ -1,10 +1,10 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Imports System.Reflection
-Imports System.Resources
 ' <Snippet3>
 Imports System.Globalization
+Imports System.Reflection
+Imports System.Resources
 Imports System.Threading
 
 Module Example

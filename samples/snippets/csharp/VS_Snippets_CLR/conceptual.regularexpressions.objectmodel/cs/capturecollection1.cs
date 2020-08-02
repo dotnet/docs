@@ -4,28 +4,30 @@ using System.Text.RegularExpressions;
 
 public class Example
 {
-   public static void Main()
-   {
-      string pattern = "((a(b))c)+";
-      string input = "abcabcabc";
+    public static void Main()
+    {
+        string pattern = "((a(b))c)+";
+        string input = "abcabcabc";
 
-      Match match = Regex.Match(input, pattern);
-      if (match.Success)
-      {
-         Console.WriteLine("Match: '{0}' at position {1}",
-                           match.Value, match.Index);
-         GroupCollection groups = match.Groups;
-         for (int ctr = 0; ctr < groups.Count; ctr++) {
-            Console.WriteLine("   Group {0}: '{1}' at position {2}",
-                              ctr, groups[ctr].Value, groups[ctr].Index);
-            CaptureCollection captures = groups[ctr].Captures;
-            for (int ctr2 = 0; ctr2 < captures.Count; ctr2++) {
-               Console.WriteLine("      Capture {0}: '{1}' at position {2}",
-                                 ctr2, captures[ctr2].Value, captures[ctr2].Index);
+        Match match = Regex.Match(input, pattern);
+        if (match.Success)
+        {
+            Console.WriteLine("Match: '{0}' at position {1}",
+                              match.Value, match.Index);
+            GroupCollection groups = match.Groups;
+            for (int ctr = 0; ctr < groups.Count; ctr++)
+            {
+                Console.WriteLine("   Group {0}: '{1}' at position {2}",
+                                  ctr, groups[ctr].Value, groups[ctr].Index);
+                CaptureCollection captures = groups[ctr].Captures;
+                for (int ctr2 = 0; ctr2 < captures.Count; ctr2++)
+                {
+                    Console.WriteLine("      Capture {0}: '{1}' at position {2}",
+                                      ctr2, captures[ctr2].Value, captures[ctr2].Index);
+                }
             }
-         }
-      }
-   }
+        }
+    }
 }
 // The example displays the following output:
 //       Match: 'abcabcabc' at position 0

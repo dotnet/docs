@@ -23,10 +23,10 @@
  *************************************************************************************************/
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Automation.Provider;
-using System.Collections;
 
 namespace ElementProvider
 {
@@ -89,7 +89,7 @@ namespace ElementProvider
             if (SelectedIndex >= 0)
             {
                 IRawElementProviderSimple itemProvider = (IRawElementProviderSimple)MyList[SelectedIndex];
-                IRawElementProviderSimple[] providers =  { itemProvider };
+                IRawElementProviderSimple[] providers = { itemProvider };
                 return providers;
             }
             else

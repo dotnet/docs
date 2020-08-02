@@ -21,7 +21,7 @@ public class DumpFileSample
                     byte[] chunk;
 
                     chunk = br.ReadBytes(CHUNK_SIZE);
-                    while(chunk.Length > 0)
+                    while (chunk.Length > 0)
                     {
                         DumpBytes(chunk, chunk.Length);
                         chunk = br.ReadBytes(CHUNK_SIZE);

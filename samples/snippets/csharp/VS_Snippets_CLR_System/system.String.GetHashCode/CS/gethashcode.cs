@@ -5,26 +5,26 @@ class GetHashCode
 {
     public static void Main()
     {
-        DisplayHashCode( "" );
-        DisplayHashCode( "a" );
-        DisplayHashCode( "ab" );
-        DisplayHashCode( "abc" );
-        DisplayHashCode( "abd" );
-        DisplayHashCode( "abe" );
-        DisplayHashCode( "abcdef" );
-        DisplayHashCode( "abcdeg" );
-        DisplayHashCode( "abcdeh" );
-        DisplayHashCode( "abcdei" );
-        DisplayHashCode( "Abcdeg" );
-        DisplayHashCode( "Abcdeh" );
-        DisplayHashCode( "Abcdei" );
+        DisplayHashCode("");
+        DisplayHashCode("a");
+        DisplayHashCode("ab");
+        DisplayHashCode("abc");
+        DisplayHashCode("abd");
+        DisplayHashCode("abe");
+        DisplayHashCode("abcdef");
+        DisplayHashCode("abcdeg");
+        DisplayHashCode("abcdeh");
+        DisplayHashCode("abcdei");
+        DisplayHashCode("Abcdeg");
+        DisplayHashCode("Abcdeh");
+        DisplayHashCode("Abcdei");
     }
 
-    static void DisplayHashCode( String Operand )
+    static void DisplayHashCode(String Operand)
     {
-        int     HashCode = Operand.GetHashCode( );
+        int HashCode = Operand.GetHashCode();
         Console.WriteLine("The hash code for \"{0}\" is: 0x{1:X8}, {1}",
-                          Operand, HashCode );
+                          Operand, HashCode);
     }
 }
 /*

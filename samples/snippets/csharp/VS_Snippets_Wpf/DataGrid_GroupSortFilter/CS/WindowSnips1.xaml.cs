@@ -1,9 +1,9 @@
 ﻿// This file is only a container for additional snippets that can't go
 // in the MainWindow file. It is not otherwise used in the sample application.
 
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Data;
-using System.ComponentModel;
 
 namespace DGGroupSortFilterExample
 {

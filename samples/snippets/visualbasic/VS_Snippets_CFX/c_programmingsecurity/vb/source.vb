@@ -1,7 +1,7 @@
-﻿Imports System.ServiceModel
-Imports System.ServiceModel.Channels
-Imports System.Security.Cryptography.X509Certificates
+﻿Imports System.Security.Cryptography.X509Certificates
 Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Description
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

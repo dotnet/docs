@@ -11,17 +11,17 @@ namespace SdkSample
     #region Namespaces.
 
     using System;
-    using System.IO;
     using System.Diagnostics;
+    using System.IO;
     using System.Reflection;
     using System.Security.Policy;
-    using System.Xml;
-    using System.Xml.Xsl;
-    using System.Xml.XPath;
     using System.Windows;
-    using System.Windows.Documents;
     using System.Windows.Controls;
+    using System.Windows.Documents;
     using System.Windows.Media;
+    using System.Xml;
+    using System.Xml.XPath;
+    using System.Xml.Xsl;
 
     #endregion Namespaces.
 
@@ -223,7 +223,7 @@ namespace SdkSample
                 weight = (FontWeight)value;
                 _writer.WriteStartElement(WordXmlSerializer.WordBoldTag);
                 _writer.WriteAttributeString(WordXmlSerializer.WordValue,
-                    (weight > FontWeights.Medium)? WordXmlSerializer.WordOn : WordXmlSerializer.WordOff);
+                    (weight > FontWeights.Medium) ? WordXmlSerializer.WordOn : WordXmlSerializer.WordOff);
                 _writer.WriteEndElement();
             }
             else if (property == TextBlock.FontStyleProperty)
@@ -233,7 +233,7 @@ namespace SdkSample
                 style = (FontStyle)value;
                 _writer.WriteStartElement(WordXmlSerializer.WordItalicTag);
                 _writer.WriteAttributeString(WordXmlSerializer.WordValue,
-                    (style != FontStyles.Normal)? WordXmlSerializer.WordOn : WordXmlSerializer.WordOff);
+                    (style != FontStyles.Normal) ? WordXmlSerializer.WordOn : WordXmlSerializer.WordOff);
                 _writer.WriteEndElement();
             }
             else if (property == TextBlock.ForegroundProperty)
@@ -248,7 +248,7 @@ namespace SdkSample
                     color = brush.Color;
                     _writer.WriteStartElement(WordXmlSerializer.WordColorTag);
                     _writer.WriteAttributeString(WordXmlSerializer.WordValue,
-                        String.Format( "{0:x2}{1:x2}{2:x2}",
+                        String.Format("{0:x2}{1:x2}{2:x2}",
                         color.R, color.G, color.B));
                     _writer.WriteEndElement();
                 }
@@ -314,7 +314,7 @@ namespace SdkSample
             parent = position.Parent;
 
             _writer.WriteStartElement(tagName);
-            foreach(DependencyProperty property in properties)
+            foreach (DependencyProperty property in properties)
             {
                 WriteProperty(property, parent.GetValue(property));
             }

@@ -1,7 +1,7 @@
 ﻿' <snippet3>
+Imports System.Security.Principal
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
-Imports System.Security.Principal
 Imports System.Threading
 
 Namespace Microsoft.WCF.Documentation

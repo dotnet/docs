@@ -1,8 +1,8 @@
 ﻿//<snippet01>
 using System;
+using System.Diagnostics;
 using System.IO;
 using System.IO.Pipes;
-using System.Diagnostics;
 
 class PipeServer
 {

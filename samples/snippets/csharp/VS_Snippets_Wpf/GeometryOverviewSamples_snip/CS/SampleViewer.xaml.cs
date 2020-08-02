@@ -1,17 +1,17 @@
 ﻿//This is a list of commonly used namespaces for a window.
 using System;
+using System.Collections;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Collections;
-using System.Threading;
 namespace GeoOvwSample
 {
-        /// <summary>
-        /// Interaction logic for Window1.xaml
-        /// </summary>
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
 
     public partial class SampleViewer : Page
     {
@@ -19,5 +19,5 @@ namespace GeoOvwSample
         {
             InitializeComponent();
         }
-     }
+    }
 }

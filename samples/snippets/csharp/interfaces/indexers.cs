@@ -1,4 +1,4 @@
-namespace interfaces
+﻿namespace interfaces
 {
     // <SnippetDefineIndexer>
     public interface ISomeInterface

@@ -69,7 +69,8 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
         private void onCurrentTimeChanged(object oldValue, object newValue)
         {
-            if (previousTime != null && ((TimeSpan)previousTime).Milliseconds != ((TimeSpan)theClock.CurrentTime).Milliseconds){
+            if (previousTime != null && ((TimeSpan)previousTime).Milliseconds != ((TimeSpan)theClock.CurrentTime).Milliseconds)
+            {
                 SetValue(CurrentTimeAsStringProperty, theClock.CurrentTime.ToString());
                 previousTime = (TimeSpan)theClock.CurrentTime;
             }

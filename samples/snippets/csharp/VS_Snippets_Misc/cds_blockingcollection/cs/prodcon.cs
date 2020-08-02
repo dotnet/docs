@@ -221,18 +221,22 @@ namespace ProdConsumerCS
                 },
                 cts.Token);
 
-            try {
+            try
+            {
                 Task.WaitAll(tasks, cts.Token);
             }
-            catch (OperationCanceledException e) {
+            catch (OperationCanceledException e)
+            {
                 if (e.CancellationToken == cts.Token)
                     Console.WriteLine("Operation was canceled by user. Press any key to exit");
             }
-            catch (AggregateException ae) {
+            catch (AggregateException ae)
+            {
                 foreach (var v in ae.InnerExceptions)
                     Console.WriteLine(v.Message);
             }
-            finally {
+            finally
+            {
                 cts.Dispose();
             }
 

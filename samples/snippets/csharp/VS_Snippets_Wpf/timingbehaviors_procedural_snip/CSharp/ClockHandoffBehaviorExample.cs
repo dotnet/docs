@@ -12,18 +12,19 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
 
     // Create the demonstration.
-    public class ClockHandoffBehaviorExample : Page {
+    public class ClockHandoffBehaviorExample : Page
+    {
 
         private TranslateTransform interactiveTranslateTransform;
         private Border containerBorder;

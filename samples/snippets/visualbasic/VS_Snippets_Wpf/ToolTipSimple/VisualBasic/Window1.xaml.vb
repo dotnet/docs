@@ -1,12 +1,12 @@
-﻿Imports System.Windows
+﻿Imports System.Collections.Generic
+Imports System.Collections.ObjectModel
+Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Controls.Primitives
+Imports System.Windows.Data
 Imports System.Windows.Documents
 Imports System.Windows.Navigation
 Imports System.Windows.Shapes
-Imports System.Windows.Data
-Imports System.Collections.ObjectModel
-Imports System.Collections.Generic
 
 
 Namespace SDKSample

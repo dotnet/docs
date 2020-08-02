@@ -9,17 +9,18 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
 
-    public class TimelineCurrentGlobalSpeedInvalidatedExample : Page {
+    public class TimelineCurrentGlobalSpeedInvalidatedExample : Page
+    {
 
         private TextBlock currentTimeTextBlock;
         public TimelineCurrentGlobalSpeedInvalidatedExample()
@@ -46,7 +47,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             animatedTransform.Angle = 0;
             this.RegisterName("animatedTransform", animatedTransform);
             animatedRectangle.RenderTransform = animatedTransform;
-            animatedRectangle.RenderTransformOrigin = new Point(0.5,0.5);
+            animatedRectangle.RenderTransformOrigin = new Point(0.5, 0.5);
             myPanel.Children.Add(animatedRectangle);
             this.Content = myPanel;
 
@@ -55,7 +56,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             myPanel.Children.Add(currentTimeTextBlock);
 
             // Animate the RotateTransform's angle using a Storyboard.
-            DoubleAnimation angleAnimation = new DoubleAnimation(0,360, TimeSpan.FromSeconds(5));
+            DoubleAnimation angleAnimation = new DoubleAnimation(0, 360, TimeSpan.FromSeconds(5));
             angleAnimation.RepeatBehavior = RepeatBehavior.Forever;
             angleAnimation.AutoReverse = true;
             Storyboard.SetTargetName(angleAnimation, "animatedTransform");

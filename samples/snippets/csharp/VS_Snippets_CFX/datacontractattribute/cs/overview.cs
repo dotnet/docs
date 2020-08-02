@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Xml;
 using System.Security.Permissions;
+using System.Xml;
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
 //<snippet1>
@@ -173,7 +173,7 @@ namespace SecurityConsiderations
 namespace XmlAndADOTypes
 {
     //<snippet4>
-    [DataContract(Namespace=@"http://schemas.contoso.com")]
+    [DataContract(Namespace = @"http://schemas.contoso.com")]
     public class MyDataContract
     {
         [DataMember]
@@ -184,7 +184,7 @@ namespace XmlAndADOTypes
             myDataMember = xd.CreateElement("myElement");
             myDataMember.InnerText = "myContents";
             myDataMember.SetAttribute
-             ("myAttribute","myValue");
+             ("myAttribute", "myValue");
         }
     }
     //</snippet4>
@@ -193,7 +193,7 @@ namespace XmlAndADOTypes
 namespace XmlAndADO2
 {
     //<snippet5>
-    [DataContract(Namespace="http://schemas.contoso.com")]
+    [DataContract(Namespace = "http://schemas.contoso.com")]
     public class MyDataContract
     {
         [DataMember]
@@ -204,15 +204,15 @@ namespace XmlAndADO2
             XmlElement xe = xd.CreateElement("myElement");
             xe.InnerText = "myContents";
             xe.SetAttribute
-             ("myAttribute","myValue");
-		
+             ("myAttribute", "myValue");
+
             XmlAttribute atr = xe.Attributes[0];
             XmlComment cmnt = xd.CreateComment("myComment");
-			
-		  myDataMember[0] = atr;
-		  myDataMember[1] = cmnt;
-		  myDataMember[2] = xe;
-		  myDataMember[3] = xe;
+
+            myDataMember[0] = atr;
+            myDataMember[1] = cmnt;
+            myDataMember[2] = xe;
+            myDataMember[3] = xe;
         }
     }
     //</snippet5>

@@ -1,17 +1,17 @@
-﻿    public class StudentClass
+﻿public class StudentClass
+{
+    #region data
+    protected enum GradeLevel { FirstYear = 1, SecondYear, ThirdYear, FourthYear };
+    protected class Student
     {
-        #region data
-        protected enum GradeLevel { FirstYear = 1, SecondYear, ThirdYear, FourthYear };
-        protected class Student
-        {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-            public int ID { get; set; }
-            public GradeLevel Year;
-            public List<int> ExamScores;
-        }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int ID { get; set; }
+        public GradeLevel Year;
+        public List<int> ExamScores;
+    }
 
-        protected static List<Student> students = new List<Student>
+    protected static List<Student> students = new List<Student>
         {
             new Student {FirstName = "Terry", LastName = "Adams", ID = 120,
                 Year = GradeLevel.SecondYear,
@@ -50,37 +50,37 @@
                 Year = GradeLevel.FourthYear,
                 ExamScores = new List<int>{ 96, 85, 91, 60}}
         };
-        #endregion
+    #endregion
 
-        //Helper method, used in GroupByRange.
-        protected static int GetPercentile(Student s)
-        {
-            double avg = s.ExamScores.Average();
-            return avg > 0 ? (int)avg / 10 : 0;
-        }
-
-        public void QueryHighScores(int exam, int score)
-        {
-            var highScores = from student in students
-                             where student.ExamScores[exam] > score
-                             select new {Name = student.FirstName, Score = student.ExamScores[exam]};
-
-            foreach (var item in highScores)
-            {
-                Console.WriteLine($"{item.Name,-15}{item.Score}");
-            }
-        }
-    }
-
-    public class Program
+    //Helper method, used in GroupByRange.
+    protected static int GetPercentile(Student s)
     {
-        public static void Main()
-        {
-            StudentClass sc = new StudentClass();
-            sc.QueryHighScores(1, 90);
+        double avg = s.ExamScores.Average();
+        return avg > 0 ? (int)avg / 10 : 0;
+    }
 
-            // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit");
-            Console.ReadKey();
+    public void QueryHighScores(int exam, int score)
+    {
+        var highScores = from student in students
+                         where student.ExamScores[exam] > score
+                         select new { Name = student.FirstName, Score = student.ExamScores[exam] };
+
+        foreach (var item in highScores)
+        {
+            Console.WriteLine($"{item.Name,-15}{item.Score}");
         }
     }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        StudentClass sc = new StudentClass();
+        sc.QueryHighScores(1, 90);
+
+        // Keep the console window open in debug mode.
+        Console.WriteLine("Press any key to exit");
+        Console.ReadKey();
+    }
+}

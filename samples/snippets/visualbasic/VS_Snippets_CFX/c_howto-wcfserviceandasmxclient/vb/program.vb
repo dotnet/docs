@@ -1,9 +1,9 @@
 ﻿' <snippet0>
 
 Imports System.Collections.Generic
-Imports System.Text
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
+Imports System.Text
 
 <ServiceContract()> _
 Public Interface IEcho

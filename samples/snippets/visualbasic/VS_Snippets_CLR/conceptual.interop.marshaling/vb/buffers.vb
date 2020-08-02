@@ -1,6 +1,6 @@
 ﻿'<snippet1>
-Imports System.Text
 Imports System.Runtime.InteropServices
+Imports System.Text
 
 '<snippet2>
 Friend Class NativeMethods

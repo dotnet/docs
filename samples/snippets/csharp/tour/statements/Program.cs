@@ -121,9 +121,9 @@ namespace Statements
         {
             int i = 0;
             goto check;
-            loop:
+        loop:
             Console.WriteLine(args[i++]);
-            check:
+        check:
             if (i < args.Length)
                 goto loop;
         }
@@ -134,8 +134,8 @@ namespace Statements
         }
         static void ReturnStatement(string[] args)
         {
-           Console.WriteLine(Add(1, 2));
-           return;
+            Console.WriteLine(Add(1, 2));
+            return;
         }
 
         static System.Collections.Generic.IEnumerable<int> Range(int start, int end)
@@ -148,7 +148,7 @@ namespace Statements
         }
         static void YieldStatement(string[] args)
         {
-            foreach (int i in Range(-10,10))
+            foreach (int i in Range(-10, 10))
             {
                 Console.WriteLine(i);
             }
@@ -233,24 +233,26 @@ namespace Statements
 
             GoToStatement(args);
 
-           ReturnStatement(args);
+            ReturnStatement(args);
 
-           YieldStatement(args);
+            YieldStatement(args);
 
-           TryCatch(args);
+            TryCatch(args);
 
-           try {
-               CheckedUnchecked(args);
-           } catch (OverflowException)
-           {
-               Console.WriteLine("Caught Expected Exception");
-           }
+            try
+            {
+                CheckedUnchecked(args);
+            }
+            catch (OverflowException)
+            {
+                Console.WriteLine("Caught Expected Exception");
+            }
 
-           var a = new Account();
-           a.Withdraw(-5);
-           a.Withdraw(2);
+            var a = new Account();
+            a.Withdraw(-5);
+            a.Withdraw(2);
 
-           UsingStatement(args);
+            UsingStatement(args);
         }
     }
 

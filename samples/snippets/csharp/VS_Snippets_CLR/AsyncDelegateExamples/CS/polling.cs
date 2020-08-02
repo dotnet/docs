@@ -6,7 +6,8 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
     public class AsyncMain
     {
-        static void Main() {
+        static void Main()
+        {
             // The asynchronous method puts the thread id here.
             int threadId;
 
@@ -21,7 +22,8 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 out threadId, null, null);
 
             // Poll while simulating work.
-            while(result.IsCompleted == false) {
+            while (result.IsCompleted == false)
+            {
                 Thread.Sleep(250);
                 Console.Write(".");
             }

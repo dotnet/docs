@@ -1,8 +1,8 @@
 ﻿Option Explicit On
 Option Strict On
 Imports System.Data
-Imports System.Security.Permissions
 Imports System.Data.SqlClient
+Imports System.Security.Permissions
 
 Class Program
     Shared Sub Main()

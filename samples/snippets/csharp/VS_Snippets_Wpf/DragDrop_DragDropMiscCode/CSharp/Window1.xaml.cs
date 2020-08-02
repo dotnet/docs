@@ -1,12 +1,11 @@
 ﻿using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Shapes;
-
-using System.Text;
 
 namespace DragDropMiscCode
 {
@@ -16,7 +15,8 @@ namespace DragDropMiscCode
 
     public partial class Window1 : Window
     {
-        public Window1() {
+        public Window1()
+        {
             InitializeComponent(); string utf8DataFormat = typeof(string).FullName;
 
             ClipboardMethods();
@@ -99,7 +99,7 @@ namespace DragDropMiscCode
                 // UTF-32 and UTF-8, which are seldom used in practice; the following strings
                 // will be used to identify these "custom" data formats.
                 string utf32DataFormat = "UTF-32";
-                string utf8DataFormat  = "UTF-8";
+                string utf8DataFormat = "UTF-8";
 
                 // Store the text in the data object, letting the data object choose
                 // the data format (which will be DataFormats.Text in this case).
@@ -218,7 +218,7 @@ namespace DragDropMiscCode
                         // Take some action if/when data in the Text data format is found.
                         break;
                     }
-                    else if(dataFormat == DataFormats.StringFormat)
+                    else if (dataFormat == DataFormats.StringFormat)
                     {
                         // Take some action if/when data in the string data format is found.
                         break;
@@ -342,7 +342,7 @@ namespace DragDropMiscCode
 
                 // If there is HTML data on the clipboard, retrieve it.
                 string htmlData;
-                if(IsHTMLDataOnClipboard)
+                if (IsHTMLDataOnClipboard)
                 {
 
                     htmlData = Clipboard.GetText(TextDataFormat.Html);
@@ -379,7 +379,7 @@ namespace DragDropMiscCode
 
                 // If the data to be copied is supposed to be persisted after the application ends,
                 // then set the second parameter of SetDataObject to true.
-                if(persistentData)
+                if (persistentData)
                 {
                     // Place the persisted data on the clipboard.
                     Clipboard.SetDataObject(data, true);

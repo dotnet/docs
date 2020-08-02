@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Security.Permissions;
+using System.Security.Principal;
+using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security;
-using System.ServiceModel;
-using System.Security.Principal;
-using System.Security.Permissions;
 
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]

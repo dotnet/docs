@@ -1,8 +1,8 @@
 ﻿//<snippet2>
 using System;
+using System.Collections;
 using System.IO;
 using System.IO.IsolatedStorage;
-using System.Collections;
 
 public class EnumeratingStores
 {

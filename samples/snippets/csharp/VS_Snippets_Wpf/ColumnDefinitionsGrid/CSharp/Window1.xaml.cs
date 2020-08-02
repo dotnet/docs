@@ -92,7 +92,7 @@ namespace columndefinitions_grid
             }
             else
             {
-                grid1.ColumnDefinitions.RemoveRange(0,5);
+                grid1.ColumnDefinitions.RemoveRange(0, 5);
             }
         }
         // </Snippet16>

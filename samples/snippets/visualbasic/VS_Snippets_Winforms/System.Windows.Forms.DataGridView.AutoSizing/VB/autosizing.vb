@@ -1,5 +1,5 @@
-﻿Imports System.Windows.Forms
-Imports System.Drawing
+﻿Imports System.Drawing
+Imports System.Windows.Forms
 
 '<snippet0> 
 Public Class AutoSizing

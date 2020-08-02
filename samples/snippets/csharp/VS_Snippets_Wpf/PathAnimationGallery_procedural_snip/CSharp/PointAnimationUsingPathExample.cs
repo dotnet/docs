@@ -81,7 +81,7 @@ namespace SDKSample
             pathAnimationStoryboard.Children.Add(centerPointAnimation);
 
             // Start the Storyboard when ellipsePath is loaded.
-            ellipsePath.Loaded += delegate(object sender, RoutedEventArgs e)
+            ellipsePath.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 // Start the storyboard.
                 pathAnimationStoryboard.Begin(this);

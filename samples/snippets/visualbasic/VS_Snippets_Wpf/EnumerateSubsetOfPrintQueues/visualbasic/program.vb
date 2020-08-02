@@ -1,6 +1,6 @@
-﻿Imports System.Text
+﻿Imports System.Collections
 Imports System.Printing
-Imports System.Collections
+Imports System.Text
 
 Namespace EnumerateSubsetOfPrintQueues
     Friend Class Program

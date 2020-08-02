@@ -31,7 +31,7 @@ class Example
         // Queue the producer tasks.
         var produceTaskOne = Task.Run(() => RunProducer("A", 0));
         var produceTaskTwo = Task.Run(() => RunProducer("B", ItemsToProduce));
-        var producerTasks = new[] { produceTaskOne , produceTaskTwo };
+        var producerTasks = new[] { produceTaskOne, produceTaskTwo };
 
         // Create a cleanup task that will call CompleteAdding after
         // all producers are done adding items.

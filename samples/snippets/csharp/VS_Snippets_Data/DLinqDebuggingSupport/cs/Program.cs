@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Data.Linq;
 using System.Linq;
 using System.Text;
-using System.Data.Linq;
-using System.Data.Common;
 
 namespace cs_debuggingsupport
 {
@@ -21,7 +21,7 @@ namespace cs_debuggingsupport
                 where cust.City == "London"
                 select cust;
 
-            foreach(Customer custObj in custQuery)
+            foreach (Customer custObj in custQuery)
             {
                 Console.WriteLine(custObj.CustomerID);
             }
@@ -69,13 +69,13 @@ namespace cs_debuggingsupport
             Console.WriteLine("Customers from London:");
             foreach (var z in q)
             {
-                Console.WriteLine("\t {0}",z.ContactName);
+                Console.WriteLine("\t {0}", z.ContactName);
             }
 
             DbCommand dc = db.GetCommand(q);
-            Console.WriteLine("\nCommand Text: \n{0}",dc.CommandText);
-            Console.WriteLine("\nCommand Type: {0}",dc.CommandType);
-            Console.WriteLine("\nConnection: {0}",dc.Connection);
+            Console.WriteLine("\nCommand Text: \n{0}", dc.CommandText);
+            Console.WriteLine("\nCommand Type: {0}", dc.CommandType);
+            Console.WriteLine("\nConnection: {0}", dc.Connection);
 
             Console.ReadLine();
             // </Snippet3>

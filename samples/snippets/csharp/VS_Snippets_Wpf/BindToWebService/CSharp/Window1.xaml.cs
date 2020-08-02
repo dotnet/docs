@@ -23,7 +23,7 @@ namespace BindtoContentService
         // Handler for the Windows Loaded event
         void OnLoad(object sender, RoutedEventArgs e)
         {
-//<SnippetWebServiceCall>
+            //<SnippetWebServiceCall>
             // 2. Set up the request object
             // To use the MSTP web service, we need to configure and send a request
             // In this example, we create a simple request that has the ID of the XmlReader.Read method page
@@ -36,7 +36,7 @@ namespace BindtoContentService
             // 4. Call the web service method and set the DataContext of the Window
             // (GetContent returns an object of type getContentResponse)
             this.DataContext = proxy.GetContent(request);
-//</SnippetWebServiceCall>
+            //</SnippetWebServiceCall>
         }
     }
 }

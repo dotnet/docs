@@ -20,7 +20,7 @@ namespace L2E_ArraysAndListsInQueriesCS
             //<snippet1>
             using (AdventureWorksEntities AWEntities = new AdventureWorksEntities())
             {
-                int?[] productModelIds = {19, 26, 118};
+                int?[] productModelIds = { 19, 26, 118 };
                 var products = from p in AWEntities.Products
                                where productModelIds.Contains(p.ProductModelID)
                                select p;

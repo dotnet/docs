@@ -1,12 +1,11 @@
 ﻿' <snippet1>
 Imports System.Drawing
-Imports System.Windows.Forms
-
 ' <snippet10>
 Imports System.Windows
+Imports System.Windows.Forms
+Imports System.Windows.Forms.Integration
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
-Imports System.Windows.Forms.Integration
 ' </snippet10>
 
 Class Form1

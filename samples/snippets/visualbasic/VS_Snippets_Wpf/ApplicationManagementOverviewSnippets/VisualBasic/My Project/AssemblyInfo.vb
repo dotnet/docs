@@ -1,22 +1,22 @@
 ﻿#Region "Using directives"
 
-Imports System.Reflection
-Imports System.Runtime.CompilerServices
-Imports System.Resources
 Imports System.Globalization
-Imports System.Windows
+Imports System.Reflection
+Imports System.Resources
+Imports System.Runtime.CompilerServices
 Imports System.Runtime.InteropServices
+Imports System.Windows
 
 #End Region
 
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("VisualBasic")> 
+<Assembly: AssemblyTitle("VisualBasic")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("VisualBasic")> 
+<Assembly: AssemblyProduct("VisualBasic")>
 <Assembly: AssemblyCopyright("Copyright @  2006")>
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
@@ -32,10 +32,10 @@ Imports System.Runtime.InteropServices
 '[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
 
 
-	'(used if a resource is not found in the page, 
-	' or application resource dictionaries)
-	'(used if a resource is not found in the page, 
-	' app, or any theme specific resource dictionaries)
+'(used if a resource is not found in the page, 
+' or application resource dictionaries)
+'(used if a resource is not found in the page, 
+' app, or any theme specific resource dictionaries)
 <Assembly: ThemeInfo(ResourceDictionaryLocation.None, ResourceDictionaryLocation.SourceAssembly)> 'where the generic resource dictionary is located - where theme specific resource dictionaries are located
 
 

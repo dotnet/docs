@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.IO;
-using System.Windows.Documents.Serialization;
+using System.Printing;
+using System.Text;
+using System.Windows;
 using System.Windows.Documents;
+using System.Windows.Documents.Serialization;
 using System.Windows.Markup;
 using System.Windows.Media;
-using System.Printing;
-using System.Windows;
 using System.Xml;
 
 namespace SdkSample
 {
-    class XamlSerializerWriter:SerializerWriter
+    class XamlSerializerWriter : SerializerWriter
     {
         public XamlSerializerWriter(Stream stream)
         {

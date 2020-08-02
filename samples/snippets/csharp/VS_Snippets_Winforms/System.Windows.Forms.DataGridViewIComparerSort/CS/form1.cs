@@ -30,28 +30,28 @@ class Form1 : Form
         Text = "DataGridView IComparer sort demo";
 
         FlowLayoutPanel1.FlowDirection = FlowDirection.TopDown;
-        FlowLayoutPanel1.Location = new System.Drawing.Point( 304, 0 );
+        FlowLayoutPanel1.Location = new System.Drawing.Point(304, 0);
         FlowLayoutPanel1.AutoSize = true;
 
-        FlowLayoutPanel1.Controls.Add( RadioButton1 );
-        FlowLayoutPanel1.Controls.Add( RadioButton2 );
-        FlowLayoutPanel1.Controls.Add( Button1 );
+        FlowLayoutPanel1.Controls.Add(RadioButton1);
+        FlowLayoutPanel1.Controls.Add(RadioButton2);
+        FlowLayoutPanel1.Controls.Add(Button1);
 
         Button1.Text = "Sort";
         RadioButton1.Text = "Ascending";
         RadioButton2.Text = "Descending";
         RadioButton1.Checked = true;
 
-        Controls.Add( FlowLayoutPanel1 );
-        Controls.Add( DataGridView1 );
+        Controls.Add(FlowLayoutPanel1);
+        Controls.Add(DataGridView1);
     }
 
-    protected override void OnLoad( EventArgs e )
+    protected override void OnLoad(EventArgs e)
     {
         PopulateDataGridView();
         Button1.Click += new EventHandler(Button1_Click);
 
-        base.OnLoad( e );
+        base.OnLoad(e);
     }
 
     // Replace this with your own code to populate the DataGridView.
@@ -82,15 +82,15 @@ class Form1 : Form
     }
 
     //<snippet10>
-    private void Button1_Click( object sender, EventArgs e )
+    private void Button1_Click(object sender, EventArgs e)
     {
-        if ( RadioButton1.Checked == true )
+        if (RadioButton1.Checked == true)
         {
-            DataGridView1.Sort( new RowComparer( SortOrder.Ascending ) );
+            DataGridView1.Sort(new RowComparer(SortOrder.Ascending));
         }
-        else if ( RadioButton2.Checked == true )
+        else if (RadioButton2.Checked == true)
         {
-            DataGridView1.Sort( new RowComparer( SortOrder.Descending ) );
+            DataGridView1.Sort(new RowComparer(SortOrder.Descending));
         }
     }
 
@@ -121,7 +121,7 @@ class Form1 : Form
                 DataGridViewRow2.Cells[1].Value.ToString());
 
             // If the Last Names are equal, sort based on the First Name.
-            if ( CompareResult == 0 )
+            if (CompareResult == 0)
             {
                 CompareResult = System.String.Compare(
                     DataGridViewRow1.Cells[0].Value.ToString(),

@@ -21,7 +21,7 @@ namespace DelegatesAndEvents
     {
         public static Action<string> WriteMessage;
 
-        public static Severity LogLevel {get;set;} = Severity.Warning;
+        public static Severity LogLevel { get; set; } = Severity.Warning;
 
         public static void LogMessage(Severity s, string component, string msg)
         {

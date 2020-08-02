@@ -91,7 +91,7 @@ namespace SDKSample
             pathAnimationStoryboard.Children.Add(matrixAnimation);
 
             // Start the animation when the button is clicked.
-            aButton.Click += delegate(object sender, RoutedEventArgs e)
+            aButton.Click += delegate (object sender, RoutedEventArgs e)
             {
                 // Start the storyboard.
                 pathAnimationStoryboard.Begin(this);

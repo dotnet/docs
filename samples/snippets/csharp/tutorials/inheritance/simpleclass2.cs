@@ -2,7 +2,7 @@
 using System;
 
 public class SimpleClass
-{}
+{ }
 
 public class Example
 {

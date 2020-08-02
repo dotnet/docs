@@ -1,13 +1,6 @@
 ﻿Option Explicit On
 Option Strict On
 
-' <snippet4>
-Imports CtrlChrs = Microsoft.VisualBasic.ControlChars
-' </snippet4>
-
-' <snippet9>
-Imports LBControl = System.Windows.Forms.ListBox
-Imports MyListBox = ListBoxProject.Form1.ListBox
 ' </snippet9>
 
 ' <snippet11>
@@ -15,6 +8,13 @@ Imports MyListBox = ListBoxProject.Form1.ListBox
 Imports MyProj1
 ' This namespace also contains a class called Class1.
 Imports MyProj2
+' <snippet4>
+Imports CtrlChrs = Microsoft.VisualBasic.ControlChars
+' </snippet4>
+
+' <snippet9>
+Imports LBControl = System.Windows.Forms.ListBox
+Imports MyListBox = ListBoxProject.Form1.ListBox
 ' </snippet11>
 Namespace MyProj1
     Class Class1

@@ -1,10 +1,9 @@
-﻿Imports System.ServiceModel
-
-'<snippetCustomIQueryableFeeds>
+﻿'<snippetCustomIQueryableFeeds>
 Imports System.Collections.Generic
 Imports System.Data.Services
 Imports System.Data.Services.Common
 Imports System.Linq
+Imports System.ServiceModel
 
 Namespace CustomDataService
     '<snippetCustomOrderFeed>

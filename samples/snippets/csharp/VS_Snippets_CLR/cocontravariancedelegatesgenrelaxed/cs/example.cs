@@ -1,9 +1,9 @@
 ﻿//<Snippet1>
 using System;
 
-public class Type1 {}
-public class Type2 : Type1 {}
-public class Type3 : Type2 {}
+public class Type1 { }
+public class Type2 : Type1 { }
+public class Type3 : Type2 { }
 
 public class Program
 {

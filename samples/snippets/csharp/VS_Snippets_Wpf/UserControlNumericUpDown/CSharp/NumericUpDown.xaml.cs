@@ -46,7 +46,7 @@ namespace MyUserControl
 
         private static void OnValueChanged(DependencyObject obj, DependencyPropertyChangedEventArgs args)
         {
-            NumericUpDown control = (NumericUpDown)obj;			
+            NumericUpDown control = (NumericUpDown)obj;
 
             RoutedPropertyChangedEventArgs<decimal> e = new RoutedPropertyChangedEventArgs<decimal>(
                 (decimal)args.OldValue, (decimal)args.NewValue, ValueChangedEvent);

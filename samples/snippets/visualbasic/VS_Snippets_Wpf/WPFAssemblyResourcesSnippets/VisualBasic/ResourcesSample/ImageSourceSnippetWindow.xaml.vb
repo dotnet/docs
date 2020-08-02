@@ -1,11 +1,11 @@
 ﻿'<SnippetSetImageSourceCODEBEHIND1>
 
-Imports System.Windows.Media.Imaging
 '</SnippetSetImageSourceCODEBEHIND1>
 Imports System.IO
-Imports System.Windows.Resources
 Imports System.Windows
 Imports System.Windows.Controls
+Imports System.Windows.Media.Imaging
+Imports System.Windows.Resources
 
 Namespace ResourcesSample
     Partial Public Class ImageSourceSnippetWindow

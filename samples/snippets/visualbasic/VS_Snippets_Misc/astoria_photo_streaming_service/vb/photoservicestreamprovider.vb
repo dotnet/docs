@@ -1,12 +1,12 @@
 ﻿Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
-Imports System.IO
+Imports System.Data.Objects
 Imports System.Data.Services
 Imports System.Data.Services.Providers
-Imports System.Data.Objects
-Imports System.Web.Hosting
 Imports System.Drawing
+Imports System.IO
+Imports System.Linq
+Imports System.Text
+Imports System.Web.Hosting
 
 Class PhotoServiceStreamProvider
     Implements IDataServiceStreamProvider, IDisposable

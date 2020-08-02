@@ -10,7 +10,8 @@ public class Example
     static void Log(ReadOnlyMemory<char> message)
     {
         // Run in the background so that we don't block the main thread while performing IO.
-        Task.Run(() => {
+        Task.Run(() =>
+        {
             string defensiveCopy = message.ToString();
             StreamWriter sw = File.AppendText(@".\input-numbers.dat");
             sw.WriteLine(defensiveCopy);

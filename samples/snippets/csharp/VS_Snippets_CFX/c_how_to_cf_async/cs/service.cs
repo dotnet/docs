@@ -2,11 +2,11 @@
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
-using System.ServiceModel;
-using System.Threading;
-using System.IO;
-using System.Text;
 using System.Globalization;
+using System.IO;
+using System.ServiceModel;
+using System.Text;
+using System.Threading;
 
 namespace Microsoft.ServiceModel.Samples
 {

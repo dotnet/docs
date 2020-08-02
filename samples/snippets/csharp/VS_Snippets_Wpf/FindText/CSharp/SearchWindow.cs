@@ -33,16 +33,16 @@
  ******************************************************************************************/
 
 using System;
-using System.Windows;
-using System.Windows.Automation;
-using System.Windows.Controls;
 using System.Diagnostics;
 using System.IO;
-using System.Windows.Automation.Text;
 using System.Text;
 using System.Threading;
-using System.Windows.Threading;
+using System.Windows;
+using System.Windows.Automation;
+using System.Windows.Automation.Text;
+using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Threading;
 
 namespace SDKSample
 {
@@ -133,7 +133,7 @@ namespace SDKSample
             // Layout the client controls.
             try
             {
-               // Specs for Window.
+                // Specs for Window.
                 double clientHeight = 600;
                 double clientWidth = 550;
 
@@ -1020,10 +1020,10 @@ namespace SDKSample
             {
                 textRange.Move(navigationUnit, navDirection);
                 textRange.Select();
-           }
-           // The WPF target doesn't show selected text as highlighted unless
-           // the window has focus.
-           targetDocument.SetFocus();
+            }
+            // The WPF target doesn't show selected text as highlighted unless
+            // the window has focus.
+            targetDocument.SetFocus();
         }
         // </SnippetNavigate>
         #endregion Target Navigation
@@ -1111,16 +1111,16 @@ namespace SDKSample
         /// <param name="arg">null argument</param>
         /// <returns>A null object.</returns>
         ///--------------------------------------------------------------------
-       private void NotifyTextChanged(string message)
+        private void NotifyTextChanged(string message)
         {
-           // Notify the user of the text changed event.
-           targetSelectionLabel.Content = message;
-           // Re-initialize the document range for the text of the document
-           // since we don't know the extent of the changes. For example, a
-           // change in the font color attribute, such as on a hyperlink
-           // mouseover, raises this event but doesn't change the content of
-           // the text control.
-           documentRange = targetTextPattern.DocumentRange;
+            // Notify the user of the text changed event.
+            targetSelectionLabel.Content = message;
+            // Re-initialize the document range for the text of the document
+            // since we don't know the extent of the changes. For example, a
+            // change in the font color attribute, such as on a hyperlink
+            // mouseover, raises this event but doesn't change the content of
+            // the text control.
+            documentRange = targetTextPattern.DocumentRange;
         }
 
         ///--------------------------------------------------------------------

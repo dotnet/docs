@@ -3,8 +3,8 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
@@ -25,7 +25,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             Rectangle myRectangle = new Rectangle();
             myRectangle.Width = 100;
             myRectangle.Height = 20;
-            myRectangle.Margin = new Thickness(12,0,0,5);
+            myRectangle.Margin = new Thickness(12, 0, 0, 5);
             myRectangle.Fill = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             myRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(myRectangle);

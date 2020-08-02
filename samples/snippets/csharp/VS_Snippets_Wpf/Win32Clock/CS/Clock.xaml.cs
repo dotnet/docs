@@ -11,20 +11,21 @@ using System.Windows.Threading;
 
 namespace WPFClock
 {
-	/// <summary>
-	/// Interaction logic for Clock.xaml
-	/// </summary>
-	public partial class Clock : Page
+    /// <summary>
+    /// Interaction logic for Clock.xaml
+    /// </summary>
+    public partial class Clock : Page
     {
-		private DispatcherTimer _dayTimer;
+        private DispatcherTimer _dayTimer;
 
         public Clock()
         {
-			InitializeComponent();
+            InitializeComponent();
             this.Loaded += new RoutedEventHandler(Clock_Loaded);
         }
 
-        void Clock_Loaded(object sender, RoutedEventArgs e) {
+        void Clock_Loaded(object sender, RoutedEventArgs e)
+        {
             // set the datacontext to be today's date
             DateTime now = DateTime.Now;
             DataContext = now.Day.ToString();
@@ -43,13 +44,13 @@ namespace WPFClock
             sb.Seek(PodClock, now.TimeOfDay, TimeSeekOrigin.BeginTime);
         }
 
-		private void OnDayChange(object sender, EventArgs e)
-		{
+        private void OnDayChange(object sender, EventArgs e)
+        {
             // date has changed, update the datacontext to reflect today's date
-			DateTime now = DateTime.Now;
-			DataContext = now.Day.ToString();
-			_dayTimer.Interval = new TimeSpan(1, 0, 0, 0);
-		}
-	}
+            DateTime now = DateTime.Now;
+            DataContext = now.Day.ToString();
+            _dayTimer.Interval = new TimeSpan(1, 0, 0, 0);
+        }
+    }
 }
 //</SnippetAllClockCS>

@@ -3,8 +3,8 @@
 Imports System.Collections.Generic
 Imports System.IdentityModel.Claims
 Imports System.IdentityModel.Policy
-Imports System.ServiceModel
 Imports System.Security.Permissions
+Imports System.ServiceModel
 
 '</snippet1>
 

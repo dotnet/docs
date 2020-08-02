@@ -1,7 +1,7 @@
 ﻿//<Snippet0>
 using System;
-using System.Windows.Forms;
 using System.Security.Permissions;
+using System.Windows.Forms;
 
 [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
 public class Form1 : Form

@@ -1,26 +1,26 @@
 ﻿//<snippetUsingSerialization>
 //<snippetUsing>
 using System;
-using System.Linq;
 using System.Collections.Generic;
-using System.Text;
+//<snippetUsingEvents>
+using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
+using System.Data.Common.CommandTrees;
+using System.Data.EntityClient;
+using System.Data.Metadata.Edm;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
+//</snippetUsingEvents>
+using System.Data.SqlClient;
+using System.IO;
+using System.Linq;
 //</snippetUsing>
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.IO;
+using System.Text;
 //</snippetUsingSerialization>
 using System.Xml.Serialization;
-using System.Data.Common.CommandTrees;
-using System.Data.Metadata.Edm;
-using System.Data.EntityClient;
-//<snippetUsingEvents>
-using System.ComponentModel;
-//</snippetUsingEvents>
-using System.Data.SqlClient;
 
 namespace ObjectServicesConceptsCS
 {
@@ -714,14 +714,14 @@ namespace ObjectServicesConceptsCS
             }
             //</snippetProjection_Union>
         }
-	static public void Projection_Union_LINQ()
+        static public void Projection_Union_LINQ()
         {
             //<snippetProjectionUnionLINQ>
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 var query = (from a in context.Products
-                         where a.Name.StartsWith("A")
-                         select new { a.Name, pid = a.ProductID, a.ListPrice })
+                             where a.Name.StartsWith("A")
+                             select new { a.Name, pid = a.ProductID, a.ListPrice })
                         .Union
                         (from b in context.Products
                          where b.Name.StartsWith("B")
@@ -2867,7 +2867,7 @@ namespace ObjectServicesConceptsCS
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                ObjectQuery<Contact> query= context.Contacts.Where("it.LastName==@ln",
+                ObjectQuery<Contact> query = context.Contacts.Where("it.LastName==@ln",
                     new ObjectParameter("ln", "Zhou"));
 
                 // Iterate through the collection of Contact items.
@@ -3584,13 +3584,13 @@ namespace ObjectServicesConceptsCS
             {
                 int courseID = 4022;
                 var course = (from c in context.Courses
-                             where c.CourseID == courseID
-                             select c).First();
+                              where c.CourseID == courseID
+                              select c).First();
 
                 int personID = 17;
                 var student = (from p in context.People
-                              where p.PersonID == personID
-                              select p).First();
+                               where p.PersonID == personID
+                               select p).First();
 
                 StudentGrade grade = new StudentGrade
                 {
@@ -3656,54 +3656,54 @@ namespace ObjectServicesConceptsCS
         public static void DDLTest()
         {
             //<snippetDDL>
-			// Initialize the connection string.
-			String connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
-			"provider connection string=\"Data Source=.;Initial Catalog=School;Integrated Security=True;MultipleActiveResultSets=True\"";
+            // Initialize the connection string.
+            String connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
+            "provider connection string=\"Data Source=.;Initial Catalog=School;Integrated Security=True;MultipleActiveResultSets=True\"";
 
-			using (SchoolEntities context = new SchoolEntities(connectionString))
-			{
-				try
-				{
-					if (context.DatabaseExists())
-					{
-						// Make sure the database instance is closed.
-						context.DeleteDatabase();
-					}
-					// View the database creation script.
-					Console.WriteLine(context.CreateDatabaseScript());
+            using (SchoolEntities context = new SchoolEntities(connectionString))
+            {
+                try
+                {
+                    if (context.DatabaseExists())
+                    {
+                        // Make sure the database instance is closed.
+                        context.DeleteDatabase();
+                    }
+                    // View the database creation script.
+                    Console.WriteLine(context.CreateDatabaseScript());
                     // Create the new database instance based on the storage (SSDL) section
                     // of the .edmx file.
-					context.CreateDatabase();
+                    context.CreateDatabase();
 
-					// The following code adds a new objects to the context
-					// and saves the changes to the database.
-					Department dpt = new Department
-					{
-						Name = "Engineering",
-						Budget = 350000.00M,
-						StartDate = DateTime.Now
-					};
+                    // The following code adds a new objects to the context
+                    // and saves the changes to the database.
+                    Department dpt = new Department
+                    {
+                        Name = "Engineering",
+                        Budget = 350000.00M,
+                        StartDate = DateTime.Now
+                    };
 
-					context.Departments.AddObject(dpt);
-					// An entity has a temporary key
-					// until it is saved to the database.
-					Console.WriteLine(dpt.EntityKey.IsTemporary);
-					context.SaveChanges();
-					// The object was saved and the key
-					// is not temporary any more.
-					Console.WriteLine(dpt.EntityKey.IsTemporary);
-				}
-				catch (InvalidOperationException ex)
-				{
-					Console.WriteLine(ex.InnerException.Message);
-				}
-				catch (NotSupportedException ex)
-				{
-					Console.WriteLine(ex.InnerException.Message);
-				}
-		     }
+                    context.Departments.AddObject(dpt);
+                    // An entity has a temporary key
+                    // until it is saved to the database.
+                    Console.WriteLine(dpt.EntityKey.IsTemporary);
+                    context.SaveChanges();
+                    // The object was saved and the key
+                    // is not temporary any more.
+                    Console.WriteLine(dpt.EntityKey.IsTemporary);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine(ex.InnerException.Message);
+                }
+                catch (NotSupportedException ex)
+                {
+                    Console.WriteLine(ex.InnerException.Message);
+                }
+            }
             //</snippetDDL>
-         }
+        }
 
         public static void DDLTest2()
         {
@@ -4088,8 +4088,8 @@ namespace ObjectServicesConceptsCS
             {
                 // Query for the StudentGrade object with the specified ID.
                 var original = (from o in context.StudentGrades
-                                 where o.EnrollmentID == updatedItem.EnrollmentID
-                                 select o).First();
+                                where o.EnrollmentID == updatedItem.EnrollmentID
+                                select o).First();
 
                 // Apply changes.
                 context.StudentGrades.ApplyCurrentValues(updatedItem);

@@ -1,7 +1,7 @@
 ﻿//<Snippet1>
 using System;
-using System.Threading;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
 
 //Use the following config settings to enable the throwing of unobserved exceptions.

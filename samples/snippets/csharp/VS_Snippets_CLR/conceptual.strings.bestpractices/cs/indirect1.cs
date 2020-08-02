@@ -2,82 +2,82 @@
 
 public class Class1
 {
-   public static void Main()
-   {
-   }
+    public static void Main()
+    {
+    }
 
-   // <Snippet7>
-   // Incorrect.
-   string []storedNames;
+    // <Snippet7>
+    // Incorrect.
+    string[] storedNames;
 
-   public void StoreNames(string [] names)
-   {
-      int index = 0;
-      storedNames = new string[names.Length];
+    public void StoreNames(string[] names)
+    {
+        int index = 0;
+        storedNames = new string[names.Length];
 
-      foreach (string name in names)
-      {
-         this.storedNames[index++] = name;
-      }
+        foreach (string name in names)
+        {
+            this.storedNames[index++] = name;
+        }
 
-      Array.Sort(names); // Line A.
-   }
+        Array.Sort(names); // Line A.
+    }
 
-   public bool DoesNameExist(string name)
-   {
-      return (Array.BinarySearch(this.storedNames, name) >= 0);  // Line B.
-   }
-   // </Snippet7>
+    public bool DoesNameExist(string name)
+    {
+        return (Array.BinarySearch(this.storedNames, name) >= 0);  // Line B.
+    }
+    // </Snippet7>
 }
 
 public class Class8
 {
-   // <Snippet8>
-   // Correct.
-   string []storedNames;
+    // <Snippet8>
+    // Correct.
+    string[] storedNames;
 
-   public void StoreNames(string [] names)
-   {
-      int index = 0;
-      storedNames = new string[names.Length];
+    public void StoreNames(string[] names)
+    {
+        int index = 0;
+        storedNames = new string[names.Length];
 
-      foreach (string name in names)
-      {
-         this.storedNames[index++] = name;
-      }
+        foreach (string name in names)
+        {
+            this.storedNames[index++] = name;
+        }
 
-      Array.Sort(names, StringComparer.Ordinal);  // Line A.
-   }
+        Array.Sort(names, StringComparer.Ordinal);  // Line A.
+    }
 
-   public bool DoesNameExist(string name)
-   {
-      return (Array.BinarySearch(this.storedNames, name, StringComparer.Ordinal) >= 0);  // Line B.
-   }
-   // </Snippet8>
+    public bool DoesNameExist(string name)
+    {
+        return (Array.BinarySearch(this.storedNames, name, StringComparer.Ordinal) >= 0);  // Line B.
+    }
+    // </Snippet8>
 }
 
 public class Class9
 {
-   // <Snippet9>
-   // Correct.
-   string []storedNames;
+    // <Snippet9>
+    // Correct.
+    string[] storedNames;
 
-   public void StoreNames(string [] names)
-   {
-      int index = 0;
-      storedNames = new string[names.Length];
+    public void StoreNames(string[] names)
+    {
+        int index = 0;
+        storedNames = new string[names.Length];
 
-      foreach (string name in names)
-      {
-         this.storedNames[index++] = name;
-      }
+        foreach (string name in names)
+        {
+            this.storedNames[index++] = name;
+        }
 
-      Array.Sort(names, StringComparer.InvariantCulture);  // Line A.
-   }
+        Array.Sort(names, StringComparer.InvariantCulture);  // Line A.
+    }
 
-   public bool DoesNameExist(string name)
-   {
-      return (Array.BinarySearch(this.storedNames, name, StringComparer.InvariantCulture) >= 0);  // Line B.
-   }
-   // </Snippet9>
+    public bool DoesNameExist(string name)
+    {
+        return (Array.BinarySearch(this.storedNames, name, StringComparer.InvariantCulture) >= 0);  // Line B.
+    }
+    // </Snippet9>
 }

@@ -1,9 +1,9 @@
 ﻿using System;
-using static System.Console;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace PatternMatching
 {
@@ -30,7 +30,7 @@ namespace PatternMatching
             WriteLine(wrong);
         }
 
-#region VarCaseExpression
+        #region VarCaseExpression
         static object CreateShape(string shapeDescription)
         {
             switch (shapeDescription)
@@ -51,6 +51,6 @@ namespace PatternMatching
                     return "invalid shape description";
             }
         }
-#endregion
+        #endregion
     }
 }

@@ -1,11 +1,11 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports System.Windows.Forms
-Imports System.Drawing
 Imports System.Collections
-Imports System.Xml
+Imports System.Drawing
 Imports System.Drawing.Drawing2D
+Imports System.Windows.Forms
+Imports System.Xml
 
 Public Class class1
 
@@ -78,7 +78,7 @@ Public Class class1
         e.Graphics.FillPath(pthGrBrush, path)
         '</snippet12>
     End Sub
-    
+
 
     Public Sub Method13(ByVal e As PaintEventArgs)
         '<snippet13>
@@ -209,7 +209,7 @@ Public Class class1
 
         e.Graphics.FillEllipse(pthGrBrush, 0, 0, 140, 70)
         ' </snippet16>
-    
+
         '<snippet17>
         pthGrBrush.CenterPoint = New PointF(145, 35)
         '</snippet17>

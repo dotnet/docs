@@ -1,8 +1,8 @@
 ﻿//<Snippet1>
 using System;
-using System.Threading;
 using System.Security.Permissions;
 using System.Security.Principal;
+using System.Threading;
 
 class SecurityPrincipalDemo
 {

@@ -1,8 +1,8 @@
-﻿Imports System.Data
-Imports System.Data.SqlClient
-Imports System.Data.OleDb
-Imports System.Configuration
+﻿Imports System.Configuration
+Imports System.Data
 Imports System.Data.Common
+Imports System.Data.OleDb
+Imports System.Data.SqlClient
 
 Class Program
     Shared Sub Main()

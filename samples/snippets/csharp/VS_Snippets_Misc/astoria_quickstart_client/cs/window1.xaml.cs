@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+//<snippetUsing>
+using System.Data.Services.Client;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -10,8 +12,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-//<snippetUsing>
-using System.Data.Services.Client;
 using NorthwindClient.Northwind;
 //</snippetUsing>
 

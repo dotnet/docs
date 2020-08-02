@@ -18,16 +18,16 @@ Module ThreadLocalForWithOptions
 
         Parallel.For(0, N, New ParallelOptions With {.MaxDegreeOfParallelism = 4},
            Function()
-             ' Initialize the local states 
-             Return 0
+               ' Initialize the local states 
+               Return 0
            End Function,
            Function(i, loopState, localState)
-             ' Accumulate the thread-local computations in the loop body
-             Return localState + Compute(i)
+               ' Accumulate the thread-local computations in the loop body
+               Return localState + Compute(i)
            End Function,
            Sub(localState)
-             ' Combine all local states
-             Interlocked.Add(result, localState)
+               ' Combine all local states
+               Interlocked.Add(result, localState)
            End Sub
         )
 

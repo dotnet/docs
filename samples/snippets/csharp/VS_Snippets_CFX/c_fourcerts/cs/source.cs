@@ -1,15 +1,15 @@
 ﻿//<snippet0>
 using System;
+using System.IdentityModel.Policy;
 using System.IdentityModel.Selectors;
 using System.IdentityModel.Tokens;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Permissions;
 using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security;
 using System.ServiceModel.Security.Tokens;
-using System.ServiceModel.Channels;
-using System.IdentityModel.Policy;
 
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
@@ -103,7 +103,7 @@ namespace Microsoft.ServiceModel.Samples
         MyClientCredentials credentials;
 
         public MyClientCredentialsSecurityTokenManager(
-            MyClientCredentials credentials): base(credentials)
+            MyClientCredentials credentials) : base(credentials)
         {
             this.credentials = credentials;
         }

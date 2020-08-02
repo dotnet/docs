@@ -75,7 +75,7 @@ namespace StringInterpolation
             // <Snippet4>
             var xs = new int[] { 1, 2, 7, 9 };
             var ys = new int[] { 7, 9, 12 };
-            Console.WriteLine($"Find the intersection of the {{{string.Join(", ",xs)}}} and {{{string.Join(", ",ys)}}} sets.");
+            Console.WriteLine($"Find the intersection of the {{{string.Join(", ", xs)}}} and {{{string.Join(", ", ys)}}} sets.");
 
             var userName = "Jane";
             var stringWithEscapes = $"C:\\Users\\{userName}\\Documents";

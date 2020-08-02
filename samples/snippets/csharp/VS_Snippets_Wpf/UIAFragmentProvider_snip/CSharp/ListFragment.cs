@@ -30,14 +30,14 @@
  *************************************************************************************************/
 
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Automation.Provider;
-using System.Windows.Automation;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Diagnostics;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Drawing;
+using System.Text;
+using System.Windows.Automation;
+using System.Windows.Automation.Provider;
+using System.Windows.Forms;
 
 namespace ElementProvider
 {
@@ -63,7 +63,7 @@ namespace ElementProvider
             this.Size = new Size(70, itemHeight + 2);
 
             // Create an instance of the child control.
-            Rectangle controlRect1 = new Rectangle(this.Left, this.Bottom+1, 100, 50);
+            Rectangle controlRect1 = new Rectangle(this.Left, this.Bottom + 1, 100, 50);
 
             // Save the handle in a member, because we're not allowed to access the UI thread
             // to get the property when we need it.
@@ -76,7 +76,7 @@ namespace ElementProvider
             Select(-1);
         }
 
- // <Snippet122>
+        // <Snippet122>
         /// <summary>
         /// Raises an event when a control is invoked.
         /// </summary>
@@ -91,9 +91,9 @@ namespace ElementProvider
                     provider, args);
             }
         }
-// </Snippet122>
+        // </Snippet122>
 
-// <Snippet123>
+        // <Snippet123>
         /// <summary>
         /// Raises an event when the IsEnabled property on a control is changed.
         /// </summary>
@@ -109,7 +109,7 @@ namespace ElementProvider
                 AutomationInteropProvider.RaiseAutomationPropertyChangedEvent(provider, args);
             }
         }
-// </Snippet123>
+        // </Snippet123>
 
         /// <summary>
         /// Add an item to the list.
@@ -192,8 +192,8 @@ namespace ElementProvider
                     AutomationPropertyChangedEventArgs propArgs;
                     if (oldItem != null)
                     {
-                         propArgs = new AutomationPropertyChangedEventArgs(
-                            SelectionItemPatternIdentifiers.IsSelectedProperty, true, false);
+                        propArgs = new AutomationPropertyChangedEventArgs(
+                           SelectionItemPatternIdentifiers.IsSelectedProperty, true, false);
                         AutomationInteropProvider.RaiseAutomationPropertyChangedEvent(oldItem, propArgs);
                     }
 
@@ -204,7 +204,7 @@ namespace ElementProvider
                 }
             }
         }
-         // </Snippet118>
+        // </Snippet118>
 
         #endregion Public methods
 
@@ -521,7 +521,7 @@ namespace ElementProvider
             }
             else if (direction == NavigateDirection.LastChild)
             {
-                return (IRawElementProviderFragment)myItems[myItems.Count-1];
+                return (IRawElementProviderFragment)myItems[myItems.Count - 1];
             }
             else
             {
@@ -605,7 +605,7 @@ namespace ElementProvider
         #region IRawElementProviderAdviseEvents Members
 
         ArrayList subscribedProperties = new ArrayList();
-// <Snippet124>
+        // <Snippet124>
         void IRawElementProviderAdviseEvents.AdviseEventAdded(int eventId,
                                                               int[] properties)
         {
@@ -619,9 +619,9 @@ namespace ElementProvider
                 }
             }
         }
-// </Snippet124>
+        // </Snippet124>
 
-// <Snippet125>
+        // <Snippet125>
         void IRawElementProviderAdviseEvents.AdviseEventRemoved(int eventId,
                                                                 int[] properties)
         {
@@ -636,7 +636,7 @@ namespace ElementProvider
                 }
             }
         }
-// </Snippet125>
+        // </Snippet125>
 
         #endregion
     }  // ParentList class

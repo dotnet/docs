@@ -21,7 +21,7 @@ public class Example
 {
     public static void Main()
     {
-        var emp1 = new Employee() { Name = "John"};
+        var emp1 = new Employee() { Name = "John" };
         var emp2 = new Employee() { Name = "Jon" };
         Console.WriteLine(emp1.CompareTo(emp2));
     }

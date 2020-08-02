@@ -2,7 +2,6 @@
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // <snipppet5>
 using System;
-using System.Text;
 using System.Collections.Generic;
 using System.Net.Security;
 using System.Runtime.Serialization;
@@ -10,8 +9,8 @@ using System.Security.Principal;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security;
-
 using System.ServiceModel.Security.Tokens;
+using System.Text;
 using System.Xml;
 
 namespace Microsoft.ServiceModel.Samples
@@ -19,7 +18,7 @@ namespace Microsoft.ServiceModel.Samples
     // <snippet1>
     public class WseHttpBinding : Binding
     {
-    // </snippet1>
+        // </snippet1>
         public WseHttpBinding() { }
         // <snippet2>
         public override BindingElementCollection CreateBindingElements()

@@ -18,7 +18,7 @@ namespace CancelParallelLoops
             int[] nums = Enumerable.Range(0, 10000000).ToArray();
             CancellationTokenSource cts = new CancellationTokenSource();
 
-           // Use ParallelOptions instance to store the CancellationToken
+            // Use ParallelOptions instance to store the CancellationToken
             ParallelOptions po = new ParallelOptions();
             po.CancellationToken = cts.Token;
             po.MaxDegreeOfParallelism = System.Environment.ProcessorCount;

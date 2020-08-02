@@ -78,28 +78,28 @@ namespace cs_insertonsubmit
 
             Northwnd db = new Northwnd(@"c:\northwnd.mdf");
 
-// <Snippet3>
-// Query the database for the rows to be deleted.
-var deleteOrderDetails =
-    from details in db.OrderDetails
-    where details.OrderID == 11000
-    select details;
+            // <Snippet3>
+            // Query the database for the rows to be deleted.
+            var deleteOrderDetails =
+                from details in db.OrderDetails
+                where details.OrderID == 11000
+                select details;
 
-foreach (var detail in deleteOrderDetails)
-{
-    db.OrderDetails.DeleteOnSubmit(detail);
-}
+            foreach (var detail in deleteOrderDetails)
+            {
+                db.OrderDetails.DeleteOnSubmit(detail);
+            }
 
-try
-{
-    db.SubmitChanges();
-}
-catch (Exception e)
-{
-    Console.WriteLine(e);
-    // Provide for exceptions.
-}
-// </Snippet3>
+            try
+            {
+                db.SubmitChanges();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                // Provide for exceptions.
+            }
+            // </Snippet3>
         }
     }
 }

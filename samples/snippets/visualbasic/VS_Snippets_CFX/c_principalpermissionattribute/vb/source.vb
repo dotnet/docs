@@ -1,9 +1,9 @@
 ﻿'<snippet0>
+Imports System.IdentityModel.Claims
+Imports System.IO
 Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
-Imports System.IO
-Imports System.IdentityModel.Claims
 '</snippet0>
 
 Public Class Calculator

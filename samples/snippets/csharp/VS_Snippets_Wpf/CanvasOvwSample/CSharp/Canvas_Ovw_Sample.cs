@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Threading;
 
 namespace SDKSample
 {
@@ -15,17 +15,17 @@ namespace SDKSample
         Canvas myCanvas3;
         Window mainWindow;
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup (e);
-            CreateAndShowMainWindow ();
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
         }
-        private void CreateAndShowMainWindow ()
+        private void CreateAndShowMainWindow()
         {
             // <Snippet1>
 
             // Create the application's main window
-            mainWindow = new Window ();
+            mainWindow = new Window();
             mainWindow.Title = "Canvas Sample";
 
             // Create the Canvas
@@ -62,7 +62,7 @@ namespace SDKSample
 
             // Add the parent Canvas as the Content of the Window Object
             mainWindow.Content = myParentCanvas;
-            mainWindow.Show ();
+            mainWindow.Show();
 
             //</Snippet1>
         }
@@ -72,10 +72,10 @@ namespace SDKSample
     internal static class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
-            app app = new app ();
-            app.Run ();
+            app app = new app();
+            app.Run();
         }
     }
 }

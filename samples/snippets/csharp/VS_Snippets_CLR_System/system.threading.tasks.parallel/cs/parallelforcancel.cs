@@ -76,7 +76,7 @@ class ParallelForCancellation
         }
         finally
         {
-           cancellationSource.Dispose();
+            cancellationSource.Dispose();
         }
     }
 }

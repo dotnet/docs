@@ -1,9 +1,9 @@
 ﻿// <Snippet2>
 using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Threading;
 
 namespace SDKSample
 {
@@ -51,10 +51,10 @@ namespace SDKSample
     internal static class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
-            app app = new app ();
-            app.Run ();
+            app app = new app();
+            app.Run();
         }
     }
 }

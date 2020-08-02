@@ -39,8 +39,8 @@ namespace WindowsFormsApplication1
 namespace w1
 {
     //<Snippet201>
-    class Mammals{}
-    class Dogs : Mammals{}
+    class Mammals { }
+    class Dogs : Mammals { }
 
     class Program
     {

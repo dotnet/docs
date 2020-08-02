@@ -1,10 +1,10 @@
 ﻿using System;
+using System.Collections;
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
 using System.Windows.Input;
-using System.IO;
-using System.Collections;
+using System.Windows.Media;
 
 namespace SDKSamples
 {
@@ -147,11 +147,11 @@ namespace SDKSamples
                 }
                 if (source.Name == "rbScopeApplication")
                 {
-                   // Setting the element only scope flag to false
-                   cursorScopeElementOnly = false;
+                    // Setting the element only scope flag to false
+                    cursorScopeElementOnly = false;
 
-                   // Forcing the cursor for all elements.
-                   Mouse.OverrideCursor = DisplayArea.Cursor;
+                    // Forcing the cursor for all elements.
+                    Mouse.OverrideCursor = DisplayArea.Cursor;
                 }
             }
         }

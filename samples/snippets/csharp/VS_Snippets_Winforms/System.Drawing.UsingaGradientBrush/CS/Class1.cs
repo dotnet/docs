@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Drawing;
 using System.Collections;
-using System.Xml;
+using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+using System.Xml;
 
 public class class1
 {
@@ -294,11 +294,11 @@ public class class1
     // <snippet31>
     public void FillTwoRectangles(PaintEventArgs e)
     {
-       LinearGradientBrush linGrBrush = new LinearGradientBrush(
-           new Point(0, 10),
-           new Point(200, 10),
-           Color.Red,
-           Color.Blue);
+        LinearGradientBrush linGrBrush = new LinearGradientBrush(
+            new Point(0, 10),
+            new Point(200, 10),
+            Color.Red,
+            Color.Blue);
 
         e.Graphics.FillRectangle(linGrBrush, 0, 0, 200, 50);
         linGrBrush.GammaCorrection = true;

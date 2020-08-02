@@ -1,10 +1,10 @@
-﻿ ' <snippet10>
+﻿' <snippet10>
 Imports System.Windows
-Imports System.Windows.Media
 Imports System.Windows.Controls
+Imports System.Windows.Forms.Integration
+Imports System.Windows.Media
 Imports System.Windows.Navigation
 Imports MyControls
-Imports System.Windows.Forms.Integration
 
 
 Class MainWindow

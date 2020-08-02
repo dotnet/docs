@@ -48,9 +48,9 @@ class GenericMethodBuilder
         // is a generic List containing strings.
         //
         //<Snippet17>
-        string[] arr = {"a", "b", "c", "d", "e"};
+        string[] arr = { "a", "b", "c", "d", "e" };
         List<string> list1 =
-            GenericMethodBuilder.Factory<string, List <string>>(arr);
+            GenericMethodBuilder.Factory<string, List<string>>(arr);
         Console.WriteLine("The first element is: {0}", list1[0]);
         //</Snippet17>
 
@@ -69,7 +69,7 @@ class GenericMethodBuilder
         // assembly name plus a file extension.
         ModuleBuilder demoModule =
             demoAssembly.DefineDynamicModule(asmName.Name,
-                asmName.Name+".dll");
+                asmName.Name + ".dll");
         //</Snippet2>
 
         // Define a type to contain the method.
@@ -95,7 +95,7 @@ class GenericMethodBuilder
         // type parameter is copied to a variable of the same name.
         //
         //<Snippet5>
-        string[] typeParameterNames = {"TInput", "TOutput"};
+        string[] typeParameterNames = { "TInput", "TOutput" };
         GenericTypeParameterBuilder[] typeParameters =
             factory.DefineGenericParameters(typeParameterNames);
 
@@ -129,14 +129,14 @@ class GenericMethodBuilder
         //<Snippet7>
         Type icoll = typeof(ICollection<>);
         Type icollOfTInput = icoll.MakeGenericType(TInput);
-        Type[] constraints = {icollOfTInput};
+        Type[] constraints = { icollOfTInput };
         TOutput.SetInterfaceConstraints(constraints);
         //</Snippet7>
 
         // Set parameter types for the method. The method takes
         // one parameter, an array of type TInput.
         //<Snippet8>
-        Type[] parms = {TInput.MakeArrayType()};
+        Type[] parms = { TInput.MakeArrayType() };
         factory.SetParameters(parms);
         //</Snippet8>
 
@@ -259,7 +259,7 @@ class GenericMethodBuilder
         // Complete the type.
         Type dt = demoType.CreateType();
         // Save the assembly, so it can be examined with Ildasm.exe.
-        demoAssembly.Save(asmName.Name+".dll");
+        demoAssembly.Save(asmName.Name + ".dll");
         //</Snippet14>
 
         // To create a constructed generic method that can be
@@ -285,8 +285,8 @@ class GenericMethodBuilder
         // one element in that array, the argument 'arr'.
         //
         //<Snippet22>
-        object o = bound.Invoke(null, new object[]{arr});
-        List<string> list2 = (List<string>) o;
+        object o = bound.Invoke(null, new object[] { arr });
+        List<string> list2 = (List<string>)o;
 
         Console.WriteLine("The first element is: {0}", list2[0]);
         //</Snippet22>
@@ -297,9 +297,9 @@ class GenericMethodBuilder
         // earlier.
         //
         //<Snippet23>
-        Type dType = typeof(D<string, List <string>>);
-        D<string, List <string>> test;
-        test = (D<string, List <string>>)
+        Type dType = typeof(D<string, List<string>>);
+        D<string, List<string>> test;
+        test = (D<string, List<string>>)
             Delegate.CreateDelegate(dType, bound);
 
         List<string> list3 = test(arr);

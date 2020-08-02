@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Windows.Controls.Primitives;
-using System.Collections.ObjectModel;
 
 namespace SDKSample
 {
@@ -15,7 +15,7 @@ namespace SDKSample
     /// </summary>
 
     public partial class Window1 : Window
-    {}
+    { }
 
     public class myDateCollection :
             ObservableCollection<DateTime>
@@ -29,4 +29,4 @@ namespace SDKSample
             Add(new DateTime(2004, 6, 30));
         }
     }
-    }
+}

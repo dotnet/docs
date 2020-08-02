@@ -70,27 +70,27 @@
  ******************************************************************************************/
 
 using System;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
+using System.Threading;
 using System.Windows;
-using System.Windows.Documents;
 using System.Windows.Automation;
 using System.Windows.Controls;
-using System.Diagnostics;
-using System.ComponentModel;
-using System.Threading;
-using System.IO;
+using System.Windows.Documents;
 
 namespace SDKSample
 {
-    public class FindText: Application
+    public class FindText : Application
     {
         protected override void OnStartup(StartupEventArgs e)
         {
-			// Initialize the sample
+            // Initialize the sample
             new SearchWindow();
         }
 
         // Window shut down event handler
-        protected override void  OnExit(ExitEventArgs e)
+        protected override void OnExit(ExitEventArgs e)
         {
             base.OnExit(e);
         }

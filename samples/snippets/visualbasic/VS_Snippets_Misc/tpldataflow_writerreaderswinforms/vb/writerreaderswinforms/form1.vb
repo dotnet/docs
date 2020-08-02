@@ -40,11 +40,11 @@ Namespace WriterReadersWinForms
             ' that scheduler.
             Dim readerActions = From checkBox In New CheckBox() {checkBox1, checkBox2, checkBox3} _
                                 Select New ActionBlock(Of Integer)(Sub(milliseconds)
-                                                       ' Toggle the check box to the checked state.
-                                                       ' Perform the read action. For demonstration, suspend the current
-                                                       ' thread to simulate a lengthy read operation.
-                                                       ' Toggle the check box to the unchecked state.
-                                                       toggleCheckBox.Post(checkBox)
+                                                                       ' Toggle the check box to the checked state.
+                                                                       ' Perform the read action. For demonstration, suspend the current
+                                                                       ' thread to simulate a lengthy read operation.
+                                                                       ' Toggle the check box to the unchecked state.
+                                                                       toggleCheckBox.Post(checkBox)
                                                                        Thread.Sleep(milliseconds)
                                                                        toggleCheckBox.Post(checkBox)
                                                                    End Sub, New ExecutionDataflowBlockOptions With {.TaskScheduler = taskSchedulerPair.ConcurrentScheduler})

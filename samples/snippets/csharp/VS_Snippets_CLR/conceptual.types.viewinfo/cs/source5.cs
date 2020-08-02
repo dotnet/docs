@@ -8,8 +8,8 @@ class OtherSnippets
 {
     public static void Main()
     {
-         SnippetA();
-         SnippetB();
+        SnippetA();
+        SnippetB();
     }
 
     public static void SnippetA()

@@ -5,41 +5,41 @@ namespace Samples
 {
 
     //<snippet1>
-  [ServiceContract]
-  public interface ICalculator
-  {
-     [OperationContract]
-     double Add(double n1, double n2);
-     [OperationContract]
-     double Subtract(double n1, double n2);
-     [OperationContract]
-     double Multiply(double n1, double n2);
-     [OperationContract]
-     double Divide(double n1, double n2);
-  }
+    [ServiceContract]
+    public interface ICalculator
+    {
+        [OperationContract]
+        double Add(double n1, double n2);
+        [OperationContract]
+        double Subtract(double n1, double n2);
+        [OperationContract]
+        double Multiply(double n1, double n2);
+        [OperationContract]
+        double Divide(double n1, double n2);
+    }
 
     //</snippet1>
 
     //<snippet2>
-  public class CalculatorService : ICalculator
-  {
-     public double Add(double n1, double n2)
-     {
-        return n1 + n2;
-     }
-     public double Subtract(double n1, double n2)
-     {
-        return n1 - n2;
-     }
-     public double Multiply(double n1, double n2)
-     {
-        return n1 * n2;
-     }
-     public double Divide(double n1, double n2)
-     {
-        return n1 / n2;
-     }
-  }
+    public class CalculatorService : ICalculator
+    {
+        public double Add(double n1, double n2)
+        {
+            return n1 + n2;
+        }
+        public double Subtract(double n1, double n2)
+        {
+            return n1 - n2;
+        }
+        public double Multiply(double n1, double n2)
+        {
+            return n1 * n2;
+        }
+        public double Divide(double n1, double n2)
+        {
+            return n1 / n2;
+        }
+    }
 
     //</snippet2>
 
@@ -60,20 +60,20 @@ namespace Samples
 
             TimeSpan modifiedCloseTimeout = new TimeSpan(00, 02, 00);
             binding1.CloseTimeout = modifiedCloseTimeout;
-	    //</snippet5>
+            //</snippet5>
 
             //<snippet4>
 
             //<snippet6>
 
-            using(ServiceHost host = new ServiceHost(typeof(CalculatorService)))
+            using (ServiceHost host = new ServiceHost(typeof(CalculatorService)))
             {
-                host.AddServiceEndpoint(typeof(ICalculator),binding1, baseAddress);
+                host.AddServiceEndpoint(typeof(ICalculator), binding1, baseAddress);
 
-            //</snippet6>
+                //</snippet6>
 
                 host.Open();
-            }	
+            }
             //</snippet4>
 
             Console.WriteLine("Press <ENTER> to close...");

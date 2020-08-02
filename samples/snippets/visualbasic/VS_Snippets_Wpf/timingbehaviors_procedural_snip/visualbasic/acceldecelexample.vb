@@ -8,19 +8,19 @@
 
 Imports System.Windows
 Imports System.Windows.Controls
+Imports System.Windows.Data
 Imports System.Windows.Media
 Imports System.Windows.Media.Animation
-Imports System.Windows.Data
-Imports System.Windows.Shapes
 Imports System.Windows.Media.Imaging
+Imports System.Windows.Shapes
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
-	Partial Public Class AccelDecelExample
-		Inherits Page
-		Public Sub New()
+    Partial Public Class AccelDecelExample
+        Inherits Page
+        Public Sub New()
 
-			' Create a name scope for the page.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a name scope for the page.
+            NameScope.SetNameScope(Me, New NameScope())
 
             WindowTitle = "Acceleration and Deceleration Example"
 
@@ -160,5 +160,5 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
             Content = myStackPanel
 
         End Sub
-	End Class
+    End Class
 End Namespace

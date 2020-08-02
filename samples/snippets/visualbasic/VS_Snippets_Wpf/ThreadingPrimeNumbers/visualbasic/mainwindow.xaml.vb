@@ -1,8 +1,8 @@
 ﻿'<SnippetThreadingPrimeNumberCodeBehind>
+Imports System.Threading
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Threading
-Imports System.Threading
 
 Namespace SDKSamples
     Partial Public Class MainWindow

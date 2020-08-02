@@ -20,11 +20,11 @@ class EventingSnippets
     //</snippet22>
 
     //<snippet23>
-    void EventHandler(object sender, EventNameEventArgs e) {}
+    void EventHandler(object sender, EventNameEventArgs e) { }
     //</snippet23>
 
     //<snippet24>
-    void Mouse_Moved(object sender, MouseEventArgs e){}
+    void Mouse_Moved(object sender, MouseEventArgs e) { }
     //</snippet24>
 
     void OnSomeSignal(EventNameEventArgs e)

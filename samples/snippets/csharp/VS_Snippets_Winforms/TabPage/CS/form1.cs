@@ -17,13 +17,13 @@ public class Form1 : Form
         this.tabPage1 = new System.Windows.Forms.TabPage();
 
         this.tabControl1.Controls.AddRange(new Control[] {
-	        this.tabPage1});
+            this.tabPage1});
         this.tabControl1.Location = new Point(25, 25);
         this.tabControl1.Size = new Size(250, 250);
 
         this.ClientSize = new Size(300, 300);
         this.Controls.AddRange(new Control[] {
-	        this.tabControl1});
+            this.tabControl1});
     }
 
     public Form1()

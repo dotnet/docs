@@ -24,23 +24,23 @@ class Example
         switch (coll)
         {
             case Array arr:
-               Console.WriteLine($"An array with {arr.Length} elements.");
-               break;
+                Console.WriteLine($"An array with {arr.Length} elements.");
+                break;
             case IEnumerable<int> ieInt:
-               Console.WriteLine($"Average: {ieInt.Average(s => s)}");
-               break;
+                Console.WriteLine($"Average: {ieInt.Average(s => s)}");
+                break;
             case IList list:
-               Console.WriteLine($"{list.Count} items");
-               break;
+                Console.WriteLine($"{list.Count} items");
+                break;
             case IEnumerable ie:
-               string result = "";
-               foreach (var e in ie)
-                  result += $"{e} ";
-               Console.WriteLine(result);
-               break;
+                string result = "";
+                foreach (var e in ie)
+                    result += $"{e} ";
+                Console.WriteLine(result);
+                break;
             case object o:
-               Console.WriteLine($"A instance of type {o.GetType().Name}");
-               break;
+                Console.WriteLine($"A instance of type {o.GetType().Name}");
+                break;
             default:
                 Console.WriteLine("Null passed to this method.");
                 break;

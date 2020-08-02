@@ -15,9 +15,9 @@ namespace NorthwindService
         {
             //<snippetAllReadConfig>
             // Grant only the rights needed to support the client application.
-           config.SetEntitySetAccessRule("Orders", EntitySetRights.AllRead
-                | EntitySetRights.WriteMerge
-                | EntitySetRights.WriteReplace );
+            config.SetEntitySetAccessRule("Orders", EntitySetRights.AllRead
+                 | EntitySetRights.WriteMerge
+                 | EntitySetRights.WriteReplace);
             config.SetEntitySetAccessRule("Order_Details", EntitySetRights.AllRead
                 | EntitySetRights.AllWrite);
             config.SetEntitySetAccessRule("Customers", EntitySetRights.AllRead);

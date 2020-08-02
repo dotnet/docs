@@ -1,20 +1,20 @@
-﻿Imports System.Windows
+﻿Imports System.Configuration
 Imports System.Data
+Imports System.Windows
 Imports System.Xml
-Imports System.Configuration
 
 Namespace Blank3DSample
-	''' <summary>
-	''' Interaction logic for app.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for app.xaml
+    ''' </summary>
 
-	Partial Public Class app
-		Inherits Application
-		Private Sub AppStartingUp(ByVal sender As Object, ByVal e As StartupEventArgs)
-			Dim mainWindow As New Window1()
-			mainWindow.Show()
+    Partial Public Class app
+        Inherits Application
+        Private Sub AppStartingUp(ByVal sender As Object, ByVal e As StartupEventArgs)
+            Dim mainWindow As New Window1()
+            mainWindow.Show()
 
-		End Sub
+        End Sub
 
-	End Class
+    End Class
 End Namespace

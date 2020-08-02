@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Activities.DurableInstancing;
+using System.Activities.Statements;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.ServiceModel.Activities.Description;
 using System.ServiceModel;
 using System.ServiceModel.Activities;
-using System.Activities.Statements;
-using System.Activities.DurableInstancing;
+using System.ServiceModel.Activities.Description;
+using System.Text;
 namespace ConsoleX
 {
     class Program
@@ -23,8 +23,8 @@ namespace ConsoleX
             //<snippet1>
             // Code to create a WorkFlowServiceHost is not shown here.
             // Note that SqlWorkflowInstanceStore is in the System.Activities.DurableInstancing.dll
-            host.DurableInstancingOptions.InstanceStore = new SqlWorkflowInstanceStore(connectionString );
-            WorkflowIdleBehavior alteredBehavior =  new WorkflowIdleBehavior();
+            host.DurableInstancingOptions.InstanceStore = new SqlWorkflowInstanceStore(connectionString);
+            WorkflowIdleBehavior alteredBehavior = new WorkflowIdleBehavior();
             // Alter the time to persist and unload.
             alteredBehavior.TimeToPersist = new TimeSpan(0, 4, 0);
             alteredBehavior.TimeToUnload = new TimeSpan(0, 5, 0);

@@ -1,8 +1,8 @@
 ﻿'<snippet1>
+Imports System.Collections
 Imports System.Xml
 Imports System.Xml.Schema
 Imports System.Xml.Serialization
-Imports System.Collections
 
 
 Namespace Microsoft.Samples.Xml.Schema

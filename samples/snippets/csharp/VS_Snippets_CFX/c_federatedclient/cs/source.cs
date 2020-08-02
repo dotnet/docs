@@ -4,11 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens;
 using System.Security.Cryptography.X509Certificates;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security;
 using System.ServiceModel.Security.Tokens;
-using System.Security.Permissions;
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
 namespace Samples
@@ -47,4 +47,4 @@ namespace Samples
         private IssuedTokenClientCredentialsConfiguration() { }
     }
 }
-  //</snippet0>
+//</snippet0>

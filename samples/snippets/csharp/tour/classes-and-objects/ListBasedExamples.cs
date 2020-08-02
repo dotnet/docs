@@ -74,7 +74,7 @@
                     return false;
                 }
             }
-        return true;
+            return true;
         }
 
         // Event

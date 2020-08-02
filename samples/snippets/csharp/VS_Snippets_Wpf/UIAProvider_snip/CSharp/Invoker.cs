@@ -27,13 +27,13 @@
  *************************************************************************************************/
 
 using System;
-using System.Text;
 using System.Collections;
+using System.Text;
 using System.Windows;
-using System.Windows.Forms;
 using System.Windows.Automation;
-using System.Windows.Automation.Text;
 using System.Windows.Automation.Provider;
+using System.Windows.Automation.Text;
+using System.Windows.Forms;
 
 namespace ElementProvider
 {
@@ -78,7 +78,7 @@ namespace ElementProvider
             // because it is illegal to update the UI from a different thread.
             MouseEventHandler onMouseEvent = ProviderControl.RootButtonControl_MouseDown;
             ProviderControl.BeginInvoke(onMouseEvent, new object[] { this, mouseArgs });
-            }
         }
-// </Snippet106>
+    }
+    // </Snippet106>
 }

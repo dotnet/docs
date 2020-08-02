@@ -3,21 +3,21 @@ using System.Threading.Tasks;
 
 class Example
 {
-   static void Main()
-   {
-      int result = GetMultipleAsync(6).Result; //Line 8
-      Console.WriteLine($"The returned value is {result:N0}");
-   }
+    static void Main()
+    {
+        int result = GetMultipleAsync(6).Result; //Line 8
+        Console.WriteLine($"The returned value is {result:N0}");
+    }
 
-   static async Task<int> GetMultipleAsync(int secondsDelay)
-   {
-      Console.WriteLine("Executing GetMultipleAsync...");
-      if (secondsDelay < 0 || secondsDelay > 5)
-         throw new ArgumentOutOfRangeException("secondsDelay cannot exceed 5."); // Line 16
+    static async Task<int> GetMultipleAsync(int secondsDelay)
+    {
+        Console.WriteLine("Executing GetMultipleAsync...");
+        if (secondsDelay < 0 || secondsDelay > 5)
+            throw new ArgumentOutOfRangeException("secondsDelay cannot exceed 5."); // Line 16
 
-      await Task.Delay(secondsDelay * 1000);
-      return secondsDelay * new Random().Next(2,10);
-   }
+        await Task.Delay(secondsDelay * 1000);
+        return secondsDelay * new Random().Next(2, 10);
+    }
 }
 // The example displays the following output:
 //    Executing GetMultipleAsync...

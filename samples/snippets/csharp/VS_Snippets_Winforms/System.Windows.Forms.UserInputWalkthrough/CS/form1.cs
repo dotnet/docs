@@ -3,8 +3,8 @@
 
 // <Snippet0>
 using System;
-using System.Drawing;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace UserInputWalkthrough

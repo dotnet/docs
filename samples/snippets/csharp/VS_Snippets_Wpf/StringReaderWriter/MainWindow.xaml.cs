@@ -1,7 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Text;
 using System.Windows;
-using System.IO;
 
 namespace StringReaderWriter
 {

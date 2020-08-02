@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.IO;
+using System.Data.Objects;
 using System.Data.Services;
 using System.Data.Services.Providers;
-using System.Data.Objects;
-using System.Web.Hosting;
 using System.Drawing;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Web.Hosting;
 
 namespace PhotoService
 {

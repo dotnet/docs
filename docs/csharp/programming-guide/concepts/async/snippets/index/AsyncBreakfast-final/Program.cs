@@ -97,7 +97,7 @@ namespace AsyncBreakfast
             Console.WriteLine("cooking the eggs ...");
             await Task.Delay(3000);
             Console.WriteLine("Put eggs on plate");
-            
+
             return new Egg();
         }
 

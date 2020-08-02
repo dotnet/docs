@@ -12,41 +12,41 @@
 
 
 Imports System.Windows
-Imports System.Windows.Navigation
-Imports System.Windows.Media
-Imports System.Windows.Media.Animation
-Imports System.Windows.Shapes
 Imports System.Windows.Controls
 Imports System.Windows.Input
+Imports System.Windows.Media
+Imports System.Windows.Media.Animation
+Imports System.Windows.Navigation
+Imports System.Windows.Shapes
 
 Namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
 
-	' Create the demonstration.
-	Public Class FrameworkElementStoryboardHandoffBehaviorExample
-		Inherits Page
+    ' Create the demonstration.
+    Public Class FrameworkElementStoryboardHandoffBehaviorExample
+        Inherits Page
 
 
-		Private containerBorder As Border
-		Private interactiveEllipse As Ellipse
-		Private theStoryboard As Storyboard
-		Private xAnimation As DoubleAnimation
-		Private yAnimation As DoubleAnimation
+        Private containerBorder As Border
+        Private interactiveEllipse As Ellipse
+        Private theStoryboard As Storyboard
+        Private xAnimation As DoubleAnimation
+        Private yAnimation As DoubleAnimation
 
-		Public Sub New()
+        Public Sub New()
 
-			WindowTitle = "Interactive Animation Example"
+            WindowTitle = "Interactive Animation Example"
 
-			' Create a name scope for the page.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a name scope for the page.
+            NameScope.SetNameScope(Me, New NameScope())
 
-			Dim myPanel As New DockPanel()
-			myPanel.Margin = New Thickness(20.0)
+            Dim myPanel As New DockPanel()
+            myPanel.Margin = New Thickness(20.0)
 
-			containerBorder = New Border()
-			containerBorder.Background = Brushes.White
-			containerBorder.BorderBrush = Brushes.Black
-			containerBorder.BorderThickness = New Thickness(2.0)
-			containerBorder.VerticalAlignment = VerticalAlignment.Stretch
+            containerBorder = New Border()
+            containerBorder.Background = Brushes.White
+            containerBorder.BorderBrush = Brushes.Black
+            containerBorder.BorderThickness = New Thickness(2.0)
+            containerBorder.VerticalAlignment = VerticalAlignment.Stretch
 
             interactiveEllipse = New Ellipse()
             With interactiveEllipse
@@ -83,57 +83,57 @@ Namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             containerBorder.Child = interactiveEllipse
             myPanel.Children.Add(containerBorder)
             Me.Content = myPanel
-		End Sub
+        End Sub
 
 
-		' When the user left-clicks, use the 
-		' SnapshotAndReplace HandoffBehavior when applying the animation.        
-		Private Sub border_mouseLeftButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
+        ' When the user left-clicks, use the 
+        ' SnapshotAndReplace HandoffBehavior when applying the animation.        
+        Private Sub border_mouseLeftButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
 
-			Dim clickPoint As Point = Mouse.GetPosition(containerBorder)
+            Dim clickPoint As Point = Mouse.GetPosition(containerBorder)
 
-			' Set the target point so the center of the ellipse
-			' ends up at the clicked point.
-			Dim targetPoint As New Point()
+            ' Set the target point so the center of the ellipse
+            ' ends up at the clicked point.
+            Dim targetPoint As New Point()
             targetPoint.X = clickPoint.X - interactiveEllipse.Width / 2
             targetPoint.Y = clickPoint.Y - interactiveEllipse.Height / 2
 
-			' Animate to the target point.
-			xAnimation.To = targetPoint.X
-			yAnimation.To = targetPoint.Y
-			theStoryboard.Begin(Me, HandoffBehavior.SnapshotAndReplace)
+            ' Animate to the target point.
+            xAnimation.To = targetPoint.X
+            yAnimation.To = targetPoint.Y
+            theStoryboard.Begin(Me, HandoffBehavior.SnapshotAndReplace)
 
 
-			' Change the color of the ellipse.
-			interactiveEllipse.Fill = Brushes.Lime
+            ' Change the color of the ellipse.
+            interactiveEllipse.Fill = Brushes.Lime
 
-		End Sub
+        End Sub
 
-		' When the user right-clicks, use the 
-		' Compose HandoffBehavior when applying the animation.
-		Private Sub border_mouseRightButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
+        ' When the user right-clicks, use the 
+        ' Compose HandoffBehavior when applying the animation.
+        Private Sub border_mouseRightButtonDown(ByVal sender As Object, ByVal e As MouseButtonEventArgs)
 
-			' Find the point where the use clicked.
-			Dim clickPoint As Point = Mouse.GetPosition(containerBorder)
+            ' Find the point where the use clicked.
+            Dim clickPoint As Point = Mouse.GetPosition(containerBorder)
 
-			' Set the target point so the center of the ellipse
-			' ends up at the clicked point.
-			Dim targetPoint As New Point()
+            ' Set the target point so the center of the ellipse
+            ' ends up at the clicked point.
+            Dim targetPoint As New Point()
             targetPoint.X = clickPoint.X - interactiveEllipse.Width / 2
             targetPoint.Y = clickPoint.Y - interactiveEllipse.Height / 2
 
-			' Animate to the target point.
-			xAnimation.To = targetPoint.X
-			yAnimation.To = targetPoint.Y
-			theStoryboard.Begin(Me, HandoffBehavior.Compose)
+            ' Animate to the target point.
+            xAnimation.To = targetPoint.X
+            yAnimation.To = targetPoint.Y
+            theStoryboard.Begin(Me, HandoffBehavior.Compose)
 
-			' Change the color of the ellipse.
-			interactiveEllipse.Fill = Brushes.Orange
+            ' Change the color of the ellipse.
+            interactiveEllipse.Fill = Brushes.Orange
 
 
-		End Sub
+        End Sub
 
-	End Class
+    End Class
 
 End Namespace
 ' </SnippetGraphicsMMFrameworkElementStoryboardHandoffBehaviorExample>

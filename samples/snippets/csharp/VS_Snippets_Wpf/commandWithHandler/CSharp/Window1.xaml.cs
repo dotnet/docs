@@ -24,7 +24,7 @@ namespace WCSamples
             String command, targetobj;
             command = ((RoutedCommand)e.Command).Name;
             targetobj = ((FrameworkElement)target).Name;
-            MessageBox.Show("The " + command +  " command has been invoked on target object " + targetobj);
+            MessageBox.Show("The " + command + " command has been invoked on target object " + targetobj);
         }
         //</SnippetCommandHandlerExecutedHandler>
         //<SnippetCommandHandlerCanExecuteHandler>

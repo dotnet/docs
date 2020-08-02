@@ -1,9 +1,9 @@
 ﻿
 '<snippet1>
-Imports Windows.UI.Xaml.Navigation
-Imports System.Reflection
 Imports System.Globalization
+Imports System.Reflection
 Imports System.Text
+Imports Windows.UI.Xaml.Navigation
 
 Public NotInheritable Class MainPage
     Inherits Page

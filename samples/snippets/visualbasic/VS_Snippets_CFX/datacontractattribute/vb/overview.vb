@@ -1,7 +1,7 @@
 ﻿Imports System.IO
 Imports System.Runtime.Serialization
-Imports System.Xml
 Imports System.Security.Permissions
+Imports System.Xml
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 '<snippet1>

@@ -3,8 +3,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Windows.Forms;
 
 // This form demonstrates using a BindingNavigator to display
@@ -53,7 +53,7 @@ public class Form1 : Form
         {
 
             SqlDataAdapter dataAdapter1 =
-                new SqlDataAdapter(new SqlCommand("Select * From Customers",connection));
+                new SqlDataAdapter(new SqlCommand("Select * From Customers", connection));
             DataSet ds = new DataSet("Northwind Customers");
             ds.Tables.Add("Customers");
             dataAdapter1.Fill(ds.Tables["Customers"]);

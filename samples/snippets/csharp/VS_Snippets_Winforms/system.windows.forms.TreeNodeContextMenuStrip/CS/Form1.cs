@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
-using System.Drawing;
 using System.Collections;
+using System.Drawing;
+using System.Windows.Forms;
 
 //Create a Class that inherits from System.Windows.Forms.Form.
 class myForm : Form
@@ -68,9 +68,9 @@ class myForm : Form
 
         this.SuspendLayout();
 
-//
-// myForm
-//
+        //
+        // myForm
+        //
         this.ClientSize = new System.Drawing.Size(292, 266);
         this.Name = "myForm";
         this.ResumeLayout(false);

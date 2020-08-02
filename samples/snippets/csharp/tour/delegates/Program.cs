@@ -28,11 +28,11 @@
         }
         static void Main()
         {
-            double[] a = {0.0, 0.5, 1.0};
+            double[] a = { 0.0, 0.5, 1.0 };
             double[] squares = Apply(a, Square);
             double[] sines = Apply(a, Math.Sin);
             Multiplier m = new Multiplier(2.0);
-            double[] doubles =  Apply(a, m.Multiply);
+            double[] doubles = Apply(a, m.Multiply);
         }
     }
 
@@ -40,8 +40,8 @@
     {
         static void ApplyDelegate()
         {
-            double[] a = {0.0, 0.5, 1.0};
-            double[] doubles =  Apply(a, (double x) => x * 2.0);
+            double[] a = { 0.0, 0.5, 1.0 };
+            double[] doubles = Apply(a, (double x) => x * 2.0);
         }
         static double[] Apply(double[] a, Function f)
         {

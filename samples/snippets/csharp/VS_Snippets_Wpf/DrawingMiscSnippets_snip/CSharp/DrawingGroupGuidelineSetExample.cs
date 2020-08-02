@@ -13,7 +13,7 @@ namespace SDKSample
     /// a drawing.
     /// </summary>
 	public class DrawingGroupGuidelineSetExample : Page
-	{
+    {
         public DrawingGroupGuidelineSetExample()
         {
 
@@ -24,7 +24,7 @@ namespace SDKSample
             GeometryDrawing drawing1 = new GeometryDrawing(
                     Brushes.Black,
                     null,
-                    new RectangleGeometry(new Rect(0,20,30,80))
+                    new RectangleGeometry(new Rect(0, 20, 30, 80))
                 );
 
             GeometryGroup whiteRectangles = new GeometryGroup();
@@ -103,7 +103,7 @@ namespace SDKSample
                 new GeometryDrawing(
                     Brushes.White,
                     null,
-                    new RectangleGeometry(new Rect(0,0,1,1))
+                    new RectangleGeometry(new Rect(0, 0, 1, 1))
                 );
             PolyLineSegment backgroundLine1 = new PolyLineSegment();
             backgroundLine1.Points.Add(new Point(1, 0));
@@ -114,7 +114,7 @@ namespace SDKSample
             PathGeometry backgroundLine1Geometry = new PathGeometry();
             backgroundLine1Geometry.Figures.Add(line1Figure);
             GeometryDrawing backgroundLineDrawing1 = new GeometryDrawing(
-                    new SolidColorBrush(Color.FromArgb(255,204,204,255)),
+                    new SolidColorBrush(Color.FromArgb(255, 204, 204, 255)),
                     null,
                     backgroundLine1Geometry
                 );
@@ -158,6 +158,6 @@ namespace SDKSample
             this.Content = mainBorder;
             this.Background = Brushes.White;
         }
-	}
+    }
 }
 // </SnippetGraphicsMMDrawingGroupGuidelineSetExampleWholePage>

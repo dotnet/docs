@@ -1,7 +1,7 @@
 ﻿using System;
-using System.ServiceModel;
-using System.Security.Permissions;
 using System.Runtime.Serialization;
+using System.Security.Permissions;
+using System.ServiceModel;
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
 
@@ -179,7 +179,7 @@ namespace VersionTolerantCallback
         // This data member was added in version 2, and thus may be missing
         // in the incoming data if the data conforms to version 1 of the
         // Data Contract. Use the callback to add a default for this case.
-        [DataMember(Order=2)]
+        [DataMember(Order = 2)]
         public string CountryRegion;
 
         // This method is used as a kind of constructor to initialize

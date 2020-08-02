@@ -1,13 +1,13 @@
-﻿Imports System.ServiceModel
-Imports System.Security.Permissions
+﻿Imports System.Data
+Imports System.IO
 Imports System.Runtime.Serialization
+Imports System.Security.Permissions
+Imports System.ServiceModel
 Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Security.Tokens
-Imports System.Data
-Imports System.Xml
-Imports System.IO
 Imports System.Text
+Imports System.Xml
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Public Class Test

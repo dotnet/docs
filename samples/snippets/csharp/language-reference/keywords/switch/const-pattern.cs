@@ -7,19 +7,19 @@ class Program
     {
         switch (DateTime.Now.DayOfWeek)
         {
-           case DayOfWeek.Sunday:
-           case DayOfWeek.Saturday:
-              Console.WriteLine("The weekend");
-              break;
-           case DayOfWeek.Monday:
-              Console.WriteLine("The first day of the work week.");
-              break;
-           case DayOfWeek.Friday:
-              Console.WriteLine("The last day of the work week.");
-              break;
-           default:
-              Console.WriteLine("The middle of the work week.");
-              break;
+            case DayOfWeek.Sunday:
+            case DayOfWeek.Saturday:
+                Console.WriteLine("The weekend");
+                break;
+            case DayOfWeek.Monday:
+                Console.WriteLine("The first day of the work week.");
+                break;
+            case DayOfWeek.Friday:
+                Console.WriteLine("The last day of the work week.");
+                break;
+            default:
+                Console.WriteLine("The middle of the work week.");
+                break;
         }
     }
 }

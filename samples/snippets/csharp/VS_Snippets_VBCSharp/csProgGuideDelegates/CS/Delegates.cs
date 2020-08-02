@@ -1,7 +1,7 @@
 ﻿using System;
-using System.Windows.Forms;
 //using System.Threading;
 using System.Drawing;
+using System.Windows.Forms;
 
 public delegate int PerformCalculation(int x, int y);
 class DelegatesIntro
@@ -26,13 +26,13 @@ class DelegatesIntro
         var perf = new PerformCalculation(Add);
 
         Console.WriteLine(Calc(Multiply, 5, 5));
-        Console.WriteLine(Calc(Add, 2,2));
-        PerformCalculation p = (a,b) => a * b;
-        p = (n,b) => n = 5 * n;
-        Console.WriteLine(p(6,6));
+        Console.WriteLine(Calc(Add, 2, 2));
+        PerformCalculation p = (a, b) => a * b;
+        p = (n, b) => n = 5 * n;
+        Console.WriteLine(p(6, 6));
 
         perf = Multiply;
-        Console.WriteLine(perf(2,3));
+        Console.WriteLine(perf(2, 3));
 
         // Keep the console window open in debug mode.
         Console.WriteLine("Press any key to exit.");
@@ -87,13 +87,13 @@ class TestStuffAgain
 
         //<Snippet15>
         // Instantiate Del by using an anonymous method.
-        Del del3 = delegate(string name)
+        Del del3 = delegate (string name)
             { Console.WriteLine($"Notification received for: {name}"); };
         //</Snippet15>
 
         //<Snippet31>
         // Instantiate Del by using a lambda expression.
-        Del del4 = name =>  { Console.WriteLine($"Notification received for: {name}"); };
+        Del del4 = name => { Console.WriteLine($"Notification received for: {name}"); };
         //</Snippet31>
     }
 

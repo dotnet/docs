@@ -2,12 +2,11 @@
 Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Documents
+'<snippet11>
+Imports System.Windows.Forms
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
-
-'<snippet11>
-Imports System.Windows.Forms
 '</snippet11>
 
 ' Interaction logic for MainWindow.xaml

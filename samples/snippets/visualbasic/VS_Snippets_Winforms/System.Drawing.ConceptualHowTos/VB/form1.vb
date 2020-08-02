@@ -1,8 +1,8 @@
-﻿Option Explicit On 
+﻿Option Explicit On
 Option Strict On
 
-Imports System.Windows.Forms
 Imports System.Drawing
+Imports System.Windows.Forms
 
 
 Public Class Form1

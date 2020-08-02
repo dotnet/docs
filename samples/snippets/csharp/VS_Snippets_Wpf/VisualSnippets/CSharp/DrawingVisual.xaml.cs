@@ -10,10 +10,10 @@ namespace SDKSample
     {
         private void WindowLoaded(object sender, EventArgs e)
         {
-             MyVisualHost2 visualHost = new MyVisualHost2();
-             MyCanvas.Children.Add(visualHost);
+            MyVisualHost2 visualHost = new MyVisualHost2();
+            MyCanvas.Children.Add(visualHost);
 
-             RetrieveDrawings(visualHost);
+            RetrieveDrawings(visualHost);
         }
 
         //<SnippetDrawingVisualSnippet1>
@@ -39,31 +39,31 @@ namespace SDKSample
                         }
                     }
                 }
-             }
-         }
+            }
+        }
 
-         // Enumerate the drawings in the DrawingGroup.
-         public void EnumDrawingGroup(DrawingGroup drawingGroup)
-         {
-             DrawingCollection dc = drawingGroup.Children;
+        // Enumerate the drawings in the DrawingGroup.
+        public void EnumDrawingGroup(DrawingGroup drawingGroup)
+        {
+            DrawingCollection dc = drawingGroup.Children;
 
-             // Enumerate the drawings in the DrawingCollection.
-             foreach (Drawing drawing in dc)
-             {
-                 // If the drawing is a DrawingGroup, call the function recursively.
-                 if (drawing.GetType() == typeof(DrawingGroup))
-                 {
-                     EnumDrawingGroup((DrawingGroup)drawing);
-                 }
+            // Enumerate the drawings in the DrawingCollection.
+            foreach (Drawing drawing in dc)
+            {
+                // If the drawing is a DrawingGroup, call the function recursively.
+                if (drawing.GetType() == typeof(DrawingGroup))
+                {
+                    EnumDrawingGroup((DrawingGroup)drawing);
+                }
 
-                 if (drawing.GetType() == typeof(GeometryDrawing))
-                 {
-                     // Perform action based on drawing type.
-                 }
-             }
-         }
-         //</SnippetDrawingVisualSnippet1>
-     }
+                if (drawing.GetType() == typeof(GeometryDrawing))
+                {
+                    // Perform action based on drawing type.
+                }
+            }
+        }
+        //</SnippetDrawingVisualSnippet1>
+    }
 
     // Create a host visual derived from the FrameworkElement class.
     // This class provides layout, event handling, and container support for

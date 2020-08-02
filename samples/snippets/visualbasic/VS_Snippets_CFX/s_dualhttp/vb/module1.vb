@@ -1,10 +1,10 @@
 ﻿
 Imports System.Collections.Generic
+Imports System.Runtime.Serialization
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
 Imports System.Text
 Imports System.Xml
-Imports System.ServiceModel
-Imports System.Runtime.Serialization
-Imports System.ServiceModel.Channels
 
 Namespace CS
     Module Module1

@@ -11,15 +11,14 @@
 namespace SdkSample
 {
     using System;
-    using System.Xml;
-    using System.Diagnostics;
     using System.Collections;
     using System.Collections.Generic;
-    using System.Text;
+    using System.Diagnostics;
     using System.IO;
-
+    using System.Text;
     using System.Windows;
     using System.Windows.Documents;
+    using System.Xml;
 
     internal static class HtmlCssParser
     {
@@ -963,7 +962,7 @@ namespace SdkSample
             // TODO: Add id processing for style selectors
             if (_styleDefinitions != null)
             {
-                for (int i = _styleDefinitions.Count - 1; i >= 0;  i--)
+                for (int i = _styleDefinitions.Count - 1; i >= 0; i--)
                 {
                     string selector = _styleDefinitions[i].Selector;
 

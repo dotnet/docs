@@ -9,29 +9,29 @@
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
-Imports System.Windows.Shapes
 Imports System.Windows.Media.Animation
+Imports System.Windows.Shapes
 
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
-	Partial Public Class ControlStoryboardExample
-		Inherits Page
+    Partial Public Class ControlStoryboardExample
+        Inherits Page
 
         Private ReadOnly myStoryboard As Storyboard
 
         Public Sub New()
 
-			' Create a name scope for the page.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a name scope for the page.
+            NameScope.SetNameScope(Me, New NameScope())
 
-			WindowTitle = "Controlling a Storyboard"
-			Background = Brushes.White
+            WindowTitle = "Controlling a Storyboard"
+            Background = Brushes.White
 
             Dim myStackPanel As New StackPanel With {
                 .Margin = New Thickness(20)
             }
 
-                ' Create a rectangle.
+            ' Create a rectangle.
             Dim myRectangle As New Rectangle With {
                 .Width = 100,
                 .Height = 20,
@@ -41,21 +41,21 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
             }
             myStackPanel.Children.Add(myRectangle)
 
-			' Assign the rectangle a name by 
-			' registering it with the page, so that
-			' it can be targeted by storyboard
-			' animations.
-			RegisterName("myRectangle", myRectangle)
+            ' Assign the rectangle a name by 
+            ' registering it with the page, so that
+            ' it can be targeted by storyboard
+            ' animations.
+            RegisterName("myRectangle", myRectangle)
 
-			'
-			' Create an animation and a storyboard to animate the
-			' rectangle.
-			'
-			Dim myDoubleAnimation As New DoubleAnimation(100, 500, New Duration(TimeSpan.FromSeconds(5)))
-			Storyboard.SetTargetName(myDoubleAnimation, "myRectangle")
-			Storyboard.SetTargetProperty(myDoubleAnimation, New PropertyPath(Rectangle.WidthProperty))
-			myStoryboard = New Storyboard()
-			myStoryboard.Children.Add(myDoubleAnimation)
+            '
+            ' Create an animation and a storyboard to animate the
+            ' rectangle.
+            '
+            Dim myDoubleAnimation As New DoubleAnimation(100, 500, New Duration(TimeSpan.FromSeconds(5)))
+            Storyboard.SetTargetName(myDoubleAnimation, "myRectangle")
+            Storyboard.SetTargetProperty(myDoubleAnimation, New PropertyPath(Rectangle.WidthProperty))
+            myStoryboard = New Storyboard()
+            myStoryboard.Children.Add(myDoubleAnimation)
 
             '
             ' Create some buttons to control the storyboard
@@ -68,35 +68,35 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
                 .Content = "Begin"
             }
             AddHandler beginButton.Click, AddressOf beginButton_Clicked
-			buttonPanel.Children.Add(beginButton)
+            buttonPanel.Children.Add(beginButton)
             Dim pauseButton As New Button With {
                 .Content = "Pause"
             }
             AddHandler pauseButton.Click, AddressOf pauseButton_Clicked
-			buttonPanel.Children.Add(pauseButton)
+            buttonPanel.Children.Add(pauseButton)
             Dim resumeButton As New Button With {
                 .Content = "Resume"
             }
             AddHandler resumeButton.Click, AddressOf resumeButton_Clicked
-			buttonPanel.Children.Add(resumeButton)
+            buttonPanel.Children.Add(resumeButton)
             Dim skipToFillButton As New Button With {
                 .Content = "Skip to Fill"
             }
             AddHandler skipToFillButton.Click, AddressOf skipToFillButton_Clicked
-			buttonPanel.Children.Add(skipToFillButton)
+            buttonPanel.Children.Add(skipToFillButton)
             Dim setSpeedRatioButton As New Button With {
                 .Content = "Triple Speed"
             }
             AddHandler setSpeedRatioButton.Click, AddressOf setSpeedRatioButton_Clicked
-			buttonPanel.Children.Add(setSpeedRatioButton)
+            buttonPanel.Children.Add(setSpeedRatioButton)
             Dim stopButton As New Button With {
                 .Content = "Stop"
             }
             AddHandler stopButton.Click, AddressOf stopButton_Clicked
-			buttonPanel.Children.Add(stopButton)
-			myStackPanel.Children.Add(buttonPanel)
-			Content = myStackPanel
-		End Sub
+            buttonPanel.Children.Add(stopButton)
+            myStackPanel.Children.Add(buttonPanel)
+            Content = myStackPanel
+        End Sub
 
         ' Begins the storyboard.
         Private Sub beginButton_Clicked(sender As Object, args As RoutedEventArgs)

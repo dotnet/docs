@@ -1,13 +1,13 @@
 ﻿' <Snippet10>
 ' This is the hosting application.
 
-Imports System.ServiceModel.Channels
+Imports System.Collections.Generic
 Imports System.Configuration
 Imports System.Messaging
-Imports System.ServiceModel
-Imports System.Transactions
 Imports System.Runtime.Serialization
-Imports System.Collections.Generic
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
+Imports System.Transactions
 
 Namespace Microsoft.ServiceModel.Samples
     Friend Class hostApp

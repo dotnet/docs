@@ -8,10 +8,10 @@ public class Program
 {
     static void Main(string[] args)
     {
-    //<Snippet1>
-    // The following code causes an error if ISampleInterface is an embedded interop type.
-    ISampleInterface<SampleType> sample;
-    //</Snippet1>
+        //<Snippet1>
+        // The following code causes an error if ISampleInterface is an embedded interop type.
+        ISampleInterface<SampleType> sample;
+        //</Snippet1>
     }
 }
 

@@ -1,32 +1,32 @@
 ﻿Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Shapes
 Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
+Imports System.Windows.Shapes
 
 
 Namespace Microsoft.Samples.BrushExamples
 
-	Public Class AlignmentExample
-		Inherits Page
+    Public Class AlignmentExample
+        Inherits Page
 
 
-		Public Sub New()
+        Public Sub New()
 
-			' Create the main panel.
-			Dim mainPanel As New StackPanel()
-			mainPanel.Orientation = Orientation.Horizontal
-			createTopLeftAlignmentExample(mainPanel)
-			Me.Content = mainPanel
-
-
-		End Sub
+            ' Create the main panel.
+            Dim mainPanel As New StackPanel()
+            mainPanel.Orientation = Orientation.Horizontal
+            createTopLeftAlignmentExample(mainPanel)
+            Me.Content = mainPanel
 
 
-		Private Sub createTopLeftAlignmentExample(ByVal mainPanel As Panel)
+        End Sub
 
-			' <SnippetGraphicsMMTopLeftAlignmentExample>
-			' Create a rectangle.
+
+        Private Sub createTopLeftAlignmentExample(ByVal mainPanel As Panel)
+
+            ' <SnippetGraphicsMMTopLeftAlignmentExample>
+            ' Create a rectangle.
             Dim myRectangle As New Rectangle()
             With myRectangle
                 .Width = 150
@@ -57,9 +57,9 @@ Namespace Microsoft.Samples.BrushExamples
 
             mainPanel.Children.Add(myRectangle)
 
-		End Sub
+        End Sub
 
 
-	End Class
+    End Class
 
 End Namespace

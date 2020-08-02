@@ -99,10 +99,10 @@ namespace operators
         {
             // <SnippetRightShift>
             uint x = 0b_1001;
-            Console.WriteLine($"Before: {Convert.ToString(x, toBase: 2), 4}");
+            Console.WriteLine($"Before: {Convert.ToString(x, toBase: 2),4}");
 
             uint y = x >> 2;
-            Console.WriteLine($"After:  {Convert.ToString(y, toBase: 2), 4}");
+            Console.WriteLine($"After:  {Convert.ToString(y, toBase: 2),4}");
             // Output:
             // Before: 1001
             // After:    10
@@ -121,10 +121,10 @@ namespace operators
 
             // <SnippetLogicalRightShift>
             uint c = 0b_1000_0000_0000_0000_0000_0000_0000_0000;
-            Console.WriteLine($"Before: {Convert.ToString(c, toBase: 2), 32}");
+            Console.WriteLine($"Before: {Convert.ToString(c, toBase: 2),32}");
 
             uint d = c >> 3;
-            Console.WriteLine($"After:  {Convert.ToString(d, toBase: 2), 32}");
+            Console.WriteLine($"After:  {Convert.ToString(d, toBase: 2),32}");
             // Output:
             // Before: 10000000000000000000000000000000
             // After:     10000000000000000000000000000
@@ -168,7 +168,7 @@ namespace operators
             a >>= 4;
             Display(a);  // output:     1110
 
-            void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2), 8}");
+            void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2),8}");
             // </SnippetCompoundAssignment>
         }
 
@@ -198,7 +198,7 @@ namespace operators
             uint d2 = (a | b) & c;
             Display(d2);  // output: 1000
 
-            void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2), 4}");
+            void Display(uint x) => Console.WriteLine($"{Convert.ToString(x, toBase: 2),4}");
             // </SnippetPrecedence>
         }
     }

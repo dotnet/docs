@@ -36,7 +36,7 @@ namespace SDKSample
             myEllipseGeometry.RadiusY = 30;
 
             RectangleGeometry myRectangleGeometry = new RectangleGeometry();
-            myRectangleGeometry.Rect = new Rect(30,55, 100,30);
+            myRectangleGeometry.Rect = new Rect(30, 55, 100, 30);
 
             GeometryGroup myGeometryGroup = new GeometryGroup();
             myGeometryGroup.FillRule = FillRule.EvenOdd;

@@ -10,15 +10,15 @@ namespace SDKSample
 
     public partial class Window1 : Window
     {
-         private void WindowLoaded(object sender, EventArgs e)
-         {
-             SetDefaultStrikethrough();
-             //SetRedUnderline();
-             SetLinearGradientUnderline();
-             SetMaroonBaseline();
-             SetToNone();
-             //Stub01();
-         }
+        private void WindowLoaded(object sender, EventArgs e)
+        {
+            SetDefaultStrikethrough();
+            //SetRedUnderline();
+            SetLinearGradientUnderline();
+            SetMaroonBaseline();
+            SetToNone();
+            //Stub01();
+        }
 
         // <SnippetTextDecorationSnippets1>
         // Use the default font values for the strikethrough text decoration.

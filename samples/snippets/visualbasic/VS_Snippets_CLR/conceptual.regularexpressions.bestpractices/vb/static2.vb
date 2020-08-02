@@ -1,10 +1,10 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
-Imports System.Windows.Forms
 Imports System.Drawing
 ' <Snippet4>
 Imports System.Text.RegularExpressions
+Imports System.Windows.Forms
 
 Public Module RegexLib
     Public Function IsValidCurrency(currencyValue As String) As Boolean

@@ -1,10 +1,10 @@
 ﻿
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
 using System.Data.Objects;
+using System.Linq;
+using System.Text;
 
 namespace L2E_ConceptualExamplesCS
 {
@@ -36,8 +36,8 @@ namespace L2E_ConceptualExamplesCS
             // RestrictionExpression_MQ();
             // DateTimeComparison();
             // DateTimeComparison_MQ();
-             //PropertyAsConstant();
-           // MethodAsConstantFails();
+            //PropertyAsConstant();
+            // MethodAsConstantFails();
             // NullComparison(); // Needs work
             // CastResultsIsNull(); // Needs work
             // JoinOnNull();
@@ -201,7 +201,7 @@ namespace L2E_ConceptualExamplesCS
         }
 
         // <SnippetMyClass>
-        class AClass { public int ID;}
+        class AClass { public int ID; }
         // </SnippetMyClass>
         static void PropertyAsConstant()
         {
@@ -949,10 +949,11 @@ namespace L2E_ConceptualExamplesCS
                     .Where(sale => sale.SalesOrderID == saleId)
                     .Select(sale => sale);
 
-                try{
-                // NotSupportedException exception is thrown here.
-                foreach (SalesOrderDetail order in query)
-                    Console.WriteLine("SalesOrderID: " + order.SalesOrderID);
+                try
+                {
+                    // NotSupportedException exception is thrown here.
+                    foreach (SalesOrderDetail order in query)
+                        Console.WriteLine("SalesOrderID: " + order.SalesOrderID);
                 }
                 catch (NotSupportedException ex)
                 {
@@ -1031,7 +1032,7 @@ namespace L2E_ConceptualExamplesCS
                 Console.WriteLine("ID: {0} \t Total due: {1}", result.SalesOrderID, result.TotalDue);
             }
         }
-            // </SnippetSBUDT543574>
+        // </SnippetSBUDT543574>
 
         public static void SBUDT555877()
         {
@@ -1043,8 +1044,8 @@ namespace L2E_ConceptualExamplesCS
                 // Referencing a non-scalar closure in a query will
                 // throw an exception when the query is executed.
                 IQueryable<string> contacts = from c in context.Contacts
-                    where c == contact
-                    select c.LastName;
+                                              where c == contact
+                                              select c.LastName;
 
                 try
                 {
@@ -1061,15 +1062,15 @@ namespace L2E_ConceptualExamplesCS
             // </SnippetSBUDT555877>
         }
 
-# endregion
-        # region "How to examples"
+        #endregion
+        #region "How to examples"
         public static void QueryReturnsPrimitiveValue()
         {
             // <SnippetQueryReturnsPrimitiveValue>
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 IQueryable<Int32> productQuery = from p in context.Products
-                                          select p.Name.Length;
+                                                 select p.Name.Length;
 
                 foreach (Int32 result in productQuery)
                 {
@@ -1085,7 +1086,7 @@ namespace L2E_ConceptualExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 IQueryable<string> contactsQuery = from c in context.Contacts
-                                    select c.LastName;
+                                                   select c.LastName;
 
                 IQueryable<string> distinctNames = contactsQuery.Distinct();
 
@@ -1313,7 +1314,7 @@ namespace L2E_ConceptualExamplesCS
                 var compiledQuery = CompiledQuery.Compile((AdventureWorksEntities ctx, DateTime orderDate) =>
                     from order in ctx.SalesOrderHeaders
                     where order.OrderDate > orderDate
-                    select new {order.OrderDate, order.SalesOrderID, order.TotalDue});
+                    select new { order.OrderDate, order.SalesOrderID, order.TotalDue });
 
                 DateTime date = new DateTime(2004, 3, 8);
                 var results = compiledQuery.Invoke(context, date);
@@ -1363,9 +1364,9 @@ namespace L2E_ConceptualExamplesCS
             }
         }
         // </SnippetCompiledQuery7>
-        # endregion
+        #endregion
 
-	static void ProjectToAnonType()
+        static void ProjectToAnonType()
         {
             //<snippetProjToAnonType1>
             using (AdventureWorksEntities context = new AdventureWorksEntities())

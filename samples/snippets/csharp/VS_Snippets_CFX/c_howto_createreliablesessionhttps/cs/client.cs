@@ -8,28 +8,28 @@ namespace Microsoft.ServiceModel.Samples
     //<snippet1221>
     // Generated interface defining the ICalculator contract	
     [System.ServiceModel.ServiceContractAttribute(
-    Namespace="http://Microsoft.ServiceModel.Samples",
-    ConfigurationName="Microsoft.ServiceModel.Samples.ICalculator")]
+    Namespace = "http://Microsoft.ServiceModel.Samples",
+    ConfigurationName = "Microsoft.ServiceModel.Samples.ICalculator")]
     public interface ICalculator
     {
         [System.ServiceModel.OperationContractAttribute(
-        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Add",
-        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]
+        Action = "http://Microsoft.ServiceModel.Samples/ICalculator/Add",
+        ReplyAction = "http://Microsoft.ServiceModel.Samples/ICalculator/AddResponse")]
         double Add(double n1, double n2);
 
         [System.ServiceModel.OperationContractAttribute(
-        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Subtract",
-        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/SubtractResponse")]
+        Action = "http://Microsoft.ServiceModel.Samples/ICalculator/Subtract",
+        ReplyAction = "http://Microsoft.ServiceModel.Samples/ICalculator/SubtractResponse")]
         double Subtract(double n1, double n2);
 
         [System.ServiceModel.OperationContractAttribute(
-        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Multiply",
-        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/MultiplyResponse")]
+        Action = "http://Microsoft.ServiceModel.Samples/ICalculator/Multiply",
+        ReplyAction = "http://Microsoft.ServiceModel.Samples/ICalculator/MultiplyResponse")]
         double Multiply(double n1, double n2);
 
         [System.ServiceModel.OperationContractAttribute(
-        Action="http://Microsoft.ServiceModel.Samples/ICalculator/Divide",
-        ReplyAction="http://Microsoft.ServiceModel.Samples/ICalculator/DivideResponse")]
+        Action = "http://Microsoft.ServiceModel.Samples/ICalculator/Divide",
+        ReplyAction = "http://Microsoft.ServiceModel.Samples/ICalculator/DivideResponse")]
         double Divide(double n1, double n2);
     }
     //</snippet1221>

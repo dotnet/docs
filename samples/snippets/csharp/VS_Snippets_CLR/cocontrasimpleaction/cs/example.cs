@@ -1,7 +1,7 @@
 ﻿using System;
 
-class Base {}
-class Derived : Base {}
+class Base { }
+class Derived : Base { }
 
 class Example
 {

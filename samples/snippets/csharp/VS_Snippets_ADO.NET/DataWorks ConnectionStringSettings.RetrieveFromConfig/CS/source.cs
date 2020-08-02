@@ -18,7 +18,7 @@ class Program
 
         if (settings != null)
         {
-            foreach(ConnectionStringSettings cs in settings)
+            foreach (ConnectionStringSettings cs in settings)
             {
                 Console.WriteLine(cs.Name);
                 Console.WriteLine(cs.ProviderName);

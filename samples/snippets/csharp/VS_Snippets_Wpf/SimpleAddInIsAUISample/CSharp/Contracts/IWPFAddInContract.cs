@@ -9,6 +9,6 @@ namespace Contracts
     /// In this case, the add-in is a UI.
     /// </summary>
     [AddInContract]
-    public interface IWPFAddInContract : INativeHandleContract {}
+    public interface IWPFAddInContract : INativeHandleContract { }
 }
 //</SnippetContractCode>

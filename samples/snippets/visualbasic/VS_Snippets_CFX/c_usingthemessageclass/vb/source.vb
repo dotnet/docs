@@ -1,10 +1,10 @@
-﻿Imports System.ServiceModel
-Imports System.Runtime.Serialization
+﻿Imports System.Collections.Generic
 Imports System.IO
-Imports System.Collections.Generic
-Imports System.Xml
-Imports System.ServiceModel.Channels
+Imports System.Runtime.Serialization
 Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
+Imports System.Xml
 
 
 Namespace Samples

@@ -12,8 +12,8 @@ namespace MakeConst.Test
 
         // This section contains code to analyze where no diagnostic should e reported
 
-// <SnippetVariableAssigned>
-private const string VariableAssigned = @"
+        // <SnippetVariableAssigned>
+        private const string VariableAssigned = @"
 using System;
 
 namespace MakeConstTest
@@ -27,10 +27,10 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetVariableAssigned>
+        // </SnippetVariableAssigned>
 
-// <SnippetAlreadyConst>
-private const string AlreadyConst = @"
+        // <SnippetAlreadyConst>
+        private const string AlreadyConst = @"
 using System;
 
 namespace MakeConstTest
@@ -44,10 +44,10 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetAlreadyConst>
+        // </SnippetAlreadyConst>
 
-// <SnippetNoInitializer>
-private const string NoInitializer = @"
+        // <SnippetNoInitializer>
+        private const string NoInitializer = @"
 using System;
 
 namespace MakeConstTest
@@ -62,10 +62,10 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetNoInitializer>
+        // </SnippetNoInitializer>
 
-// <SnippetInitializerNotConstant>
-private const string InitializerNotConstant = @"
+        // <SnippetInitializerNotConstant>
+        private const string InitializerNotConstant = @"
 using System;
 
 namespace MakeConstTest
@@ -79,10 +79,10 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetInitializerNotConstant>
+        // </SnippetInitializerNotConstant>
 
-// <SnippetMultipleInitializers>
-private const string MultipleInitializers = @"
+        // <SnippetMultipleInitializers>
+        private const string MultipleInitializers = @"
 using System;
 
 namespace MakeConstTest
@@ -96,10 +96,10 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetMultipleInitializers>
+        // </SnippetMultipleInitializers>
 
-// <SnippetDeclarationIsInvalid>
-private const string DeclarationIsInvalid = @"
+        // <SnippetDeclarationIsInvalid>
+        private const string DeclarationIsInvalid = @"
 using System;
 
 namespace MakeConstTest
@@ -112,10 +112,10 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetDeclarationIsInvalid>
+        // </SnippetDeclarationIsInvalid>
 
-// <SnippetDeclarationIsntString>
-private const string ReferenceTypeIsntString = @"
+        // <SnippetDeclarationIsntString>
+        private const string ReferenceTypeIsntString = @"
 using System;
 
 namespace MakeConstTest
@@ -128,13 +128,13 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetDeclarationIsntString>
+        // </SnippetDeclarationIsntString>
 
-// This section contains code to analyze where the diagnostic should trigger,
-// followed by the code after the fix has been applied.
+        // This section contains code to analyze where the diagnostic should trigger,
+        // followed by the code after the fix has been applied.
 
-//<SnippetFirstFixTest>
-private const string LocalIntCouldBeConstant = @"
+        //<SnippetFirstFixTest>
+        private const string LocalIntCouldBeConstant = @"
 using System;
 
 namespace MakeConstTest
@@ -149,7 +149,7 @@ namespace MakeConstTest
     }
 }";
 
-private const string LocalIntCouldBeConstantFixed = @"
+        private const string LocalIntCouldBeConstantFixed = @"
 using System;
 
 namespace MakeConstTest
@@ -163,10 +163,10 @@ namespace MakeConstTest
         }
     }
 }";
-//</SnippetFirstFixTest>
+        //</SnippetFirstFixTest>
 
-// <SnippetConstantIsString>
-private const string ConstantIsString = @"
+        // <SnippetConstantIsString>
+        private const string ConstantIsString = @"
 using System;
 
 namespace MakeConstTest
@@ -180,7 +180,7 @@ namespace MakeConstTest
     }
 }";
 
-private const string ConstantIsStringFixed = @"
+        private const string ConstantIsStringFixed = @"
 using System;
 
 namespace MakeConstTest
@@ -193,10 +193,10 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetConstantIsString>
+        // </SnippetConstantIsString>
 
-// <SnippetVarDeclarations>
-private const string DeclarationUsesVar = @"
+        // <SnippetVarDeclarations>
+        private const string DeclarationUsesVar = @"
 using System;
 
 namespace MakeConstTest
@@ -210,7 +210,7 @@ namespace MakeConstTest
     }
 }";
 
-private const string DeclarationUsesVarFixedHasType = @"
+        private const string DeclarationUsesVarFixedHasType = @"
 using System;
 
 namespace MakeConstTest
@@ -223,7 +223,7 @@ namespace MakeConstTest
         }
     }
 }";
-private const string StringDeclarationUsesVar = @"
+        private const string StringDeclarationUsesVar = @"
 using System;
 
 namespace MakeConstTest
@@ -236,7 +236,7 @@ namespace MakeConstTest
         }
     }
 }";
-private const string StringDeclarationUsesVarFixedHasType = @"
+        private const string StringDeclarationUsesVarFixedHasType = @"
 using System;
 
 namespace MakeConstTest
@@ -249,7 +249,7 @@ namespace MakeConstTest
         }
     }
 }";
-// </SnippetVarDeclarations>
+        // </SnippetVarDeclarations>
 
         // <SnippetFinishedTests>
         //No diagnostics expected to show up

@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Resources;
 using System.Reflection;
 using System.Resources;
 using System.Threading;
-using System.Collections;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Resources;
 
 namespace ResourcesSample
 {

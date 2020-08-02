@@ -15,10 +15,10 @@ namespace SDKSample
 
         void hyperlink_Click(object sender, RoutedEventArgs e)
         {
-//<SnippetGetNSCODEBEHIND2>
-// Get a reference to the NavigationService that navigated to this Page
-NavigationService ns = NavigationService.GetNavigationService(this);
-//</SnippetGetNSCODEBEHIND2>
+            //<SnippetGetNSCODEBEHIND2>
+            // Get a reference to the NavigationService that navigated to this Page
+            NavigationService ns = NavigationService.GetNavigationService(this);
+            //</SnippetGetNSCODEBEHIND2>
         }
     }
 }

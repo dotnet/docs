@@ -1,14 +1,14 @@
 ﻿// <SnippetImportsUsing>
 using System;
-using System.Data;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.Common;
+using System.Data.EntityClient;
+using System.Data.Objects;
+using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Text;
-using System.Data.Objects;
-using System.Globalization;
-using System.Data.EntityClient;
-using System.Data.SqlClient;
-using System.Data.Common;
 // </SnippetImportsUsing>
 
 namespace L2E_ExamplesCS
@@ -69,7 +69,7 @@ namespace L2E_ExamplesCS
             //GroupBySimple3();
             //GroupBySimple3_MQ();
             //GroupByCount();
-           // GroupByCount_MQ();
+            // GroupByCount_MQ();
             //GroupByNested(); //Needs work. Don't know how to mimic SalesOrderContact DataRelation object.
 
             //*** Set Operators ***//
@@ -424,11 +424,13 @@ namespace L2E_ExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 string LastName = "Zhou";
-                var query = from contact in context.Contacts where
-                                contact.LastName == LastName select contact;
+                var query = from contact in context.Contacts
+                            where
+contact.LastName == LastName
+                            select contact;
 
                 // Iterate through the collection of Contact items.
-                foreach( var result in query)
+                foreach (var result in query)
                 {
                     Console.WriteLine("Contact First Name: {0}; Last Name: {1}",
                             result.FirstName, result.LastName);
@@ -1033,7 +1035,7 @@ namespace L2E_ExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 var query = context.Contacts
-                    .GroupBy(c => c.LastName.Substring(0,1))
+                    .GroupBy(c => c.LastName.Substring(0, 1))
                     .OrderBy(c => c.Key);
 
                 foreach (IGrouping<string, Contact> group in query)
@@ -1057,8 +1059,11 @@ namespace L2E_ExamplesCS
                 var query =
                     from address in context.Addresses
                     group address by address.PostalCode into addressGroup
-                    select new { PostalCode = addressGroup.Key,
-                                 AddressLine = addressGroup };
+                    select new
+                    {
+                        PostalCode = addressGroup.Key,
+                        AddressLine = addressGroup
+                    };
 
                 foreach (var addressGroup in query)
                 {
@@ -1079,7 +1084,7 @@ namespace L2E_ExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 var query = context.Addresses
-                    .GroupBy( address => address.PostalCode);
+                    .GroupBy(address => address.PostalCode);
 
                 foreach (IGrouping<string, Address> addressGroup in query)
                 {
@@ -1101,9 +1106,12 @@ namespace L2E_ExamplesCS
             {
                 var query = from order in context.SalesOrderHeaders
                             group order by order.CustomerID into idGroup
-                            select new {CustomerID = idGroup.Key,
+                            select new
+                            {
+                                CustomerID = idGroup.Key,
                                 OrderCount = idGroup.Count(),
-                                Sales = idGroup};
+                                Sales = idGroup
+                            };
 
                 foreach (var orderGroup in query)
                 {
@@ -2143,9 +2151,9 @@ namespace L2E_ExamplesCS
                     }
                     Console.WriteLine("");
                 }
-                }
-                //</SnippetGroupJoin_MQ>
             }
+            //</SnippetGroupJoin_MQ>
+        }
 
         static void GroupJoin2()
         {

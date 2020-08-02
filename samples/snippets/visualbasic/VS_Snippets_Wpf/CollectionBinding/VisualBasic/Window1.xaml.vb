@@ -3,14 +3,14 @@ Imports System.Diagnostics
 Imports System.Windows
 Imports System.Windows.Markup
 
-    Public Class Window1
-        Inherits Window
+Public Class Window1
+    Inherits Window
 
-        ' Methods
-        Public Sub New()
-            Me.InitializeComponent()
-        End Sub
+    ' Methods
+    Public Sub New()
+        Me.InitializeComponent()
+    End Sub
 
-    End Class
+End Class
 
 

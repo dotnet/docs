@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Windows;
 using System.Configuration;
+using System.Windows;
 
 namespace GridSplitterSnips
 {

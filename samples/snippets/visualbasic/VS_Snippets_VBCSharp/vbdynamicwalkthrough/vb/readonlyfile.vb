@@ -1,7 +1,7 @@
 ﻿Option Strict On
+Imports System.Dynamic
 '<Snippet1>
 Imports System.IO
-Imports System.Dynamic
 '</Snippet1>
 
 '<Snippet2>

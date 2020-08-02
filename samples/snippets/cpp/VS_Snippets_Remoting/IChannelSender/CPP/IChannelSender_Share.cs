@@ -6,14 +6,14 @@ using System;
 
 public class MyHelloServer : MarshalByRefObject
 {
-   public MyHelloServer()
-   {
-      Console.WriteLine("HelloServer activated");
-   }
+    public MyHelloServer()
+    {
+        Console.WriteLine("HelloServer activated");
+    }
 
-   public String myHelloMethod(String myString)
-   {
-      Console.WriteLine("Hello.HelloMethod : {0}", myString);
-      return "Hi there " + myString;
-   }
+    public String myHelloMethod(String myString)
+    {
+        Console.WriteLine("Hello.HelloMethod : {0}", myString);
+        return "Hi there " + myString;
+    }
 }

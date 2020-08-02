@@ -11,12 +11,12 @@ Namespace SDKSample
     ' of two buttons.
     Public Class StoryboardExample
         Inherits Page
-        
+
         Private Dim WithEvents myWidthAnimatedButton As Button
-        Private Dim WithEvents myColorAnimatedButton As Button        
+        Private Dim WithEvents myColorAnimatedButton As Button
         Private Dim myWidthAnimatedButtonStoryboard As Storyboard
         Private Dim myColorAnimatedButtonStoryboard As Storyboard
-        
+
 
         Public Sub New()
             ' Create a name scope for the page.
@@ -109,21 +109,21 @@ Namespace SDKSample
             Me.Content = myStackPanel
 
         End Sub
-        
+
         ' Start the animation when the button is clicked.
         Private Sub myWidthAnimatedButton_Loaded(ByVal sender as object, ByVal args as RoutedEventArgs) Handles myWidthAnimatedButton.Click
-        
+
             myWidthAnimatedButtonStoryboard.Begin(myWidthAnimatedButton)
-        
-        End Sub        
-        
+
+        End Sub
+
         ' Start the animation when the button is clicked.
         Private Sub myColorAnimatedButton_Loaded(ByVal sender as object, ByVal args as RoutedEventArgs) Handles myColorAnimatedButton.Click
-        
+
             myColorAnimatedButtonStoryboard.Begin(myColorAnimatedButton)
-        
-        End Sub           
-        
+
+        End Sub
+
     End Class
 End Namespace
 ' </Snippet11>

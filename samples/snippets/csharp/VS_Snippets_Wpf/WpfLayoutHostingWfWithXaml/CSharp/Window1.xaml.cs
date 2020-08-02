@@ -21,7 +21,7 @@ namespace WpfLayoutHostingWfWithXaml
         // </snippet104>
 
         // <snippet101>
-        private void button1_Click(object sender, EventArgs e )
+        private void button1_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Button b = sender as System.Windows.Forms.Button;
 

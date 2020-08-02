@@ -3,13 +3,13 @@
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
-using System.ServiceModel.Channels;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Messaging;
-using System.ServiceModel;
-using System.Transactions;
 using System.Runtime.Serialization;
-using System.Collections.Generic;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples
 {
@@ -28,7 +28,7 @@ namespace Microsoft.ServiceModel.Samples
 
         public override string ToString()
         {
-            String displayString = "Order LineItem: " + Quantity + " of "  + ProductId + " @unit price: $" + UnitCost + "\n";
+            String displayString = "Order LineItem: " + Quantity + " of " + ProductId + " @unit price: $" + UnitCost + "\n";
             return displayString;
         }
 
@@ -115,14 +115,14 @@ namespace Microsoft.ServiceModel.Samples
 
         public static void DeleteOrder(string poNumber)
         {
-            if(purchaseOrders[poNumber] != null)
+            if (purchaseOrders[poNumber] != null)
                 purchaseOrders.Remove(poNumber);
         }
     }
 
     // Define a service contract.
     // <Snippet1>
-    [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
+    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
     public interface IOrderProcessor
     {
         [OperationContract(IsOneWay = true)]

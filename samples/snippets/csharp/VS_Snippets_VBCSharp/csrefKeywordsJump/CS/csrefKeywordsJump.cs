@@ -292,7 +292,7 @@ namespace csrefKeywordsJump
             // loop 1 to 3
             for (int i = 1; i <= 3; i++)
             {
-                switch(i)
+                switch (i)
                 {
                     case 1:
                         Console.WriteLine("Current value is 1");

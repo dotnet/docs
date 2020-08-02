@@ -1,14 +1,14 @@
-﻿Imports System.Windows.Shapes
+﻿Imports System.Collections.Generic
+Imports System.Collections.ObjectModel
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Controls.Primitives
-Imports System.Windows.Documents
-Imports System.Windows.Navigation
-Imports System.Windows.Media.Imaging
-Imports System.Windows.Media
 Imports System.Windows.Data
-Imports System.Collections.ObjectModel
-Imports System.Collections.Generic
+Imports System.Windows.Documents
+Imports System.Windows.Media
+Imports System.Windows.Media.Imaging
+Imports System.Windows.Navigation
+Imports System.Windows.Shapes
 '<Snippet1cb>
 Partial Public Class TransformExample
     Inherits Page

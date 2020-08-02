@@ -1,11 +1,11 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Collections.ObjectModel;
 
 namespace TreeViewDataBinding
 {
@@ -26,7 +26,7 @@ namespace TreeViewDataBinding
         {
 
             EnglishNewspaper engnews = EnglishNewspapers.SelectedItem as EnglishNewspaper;
-            if( engnews != null ) NewspaperFrame.Navigate(new System.Uri(engnews.Website));
+            if (engnews != null) NewspaperFrame.Navigate(new System.Uri(engnews.Website));
         }
         //</Snippet5>
     }

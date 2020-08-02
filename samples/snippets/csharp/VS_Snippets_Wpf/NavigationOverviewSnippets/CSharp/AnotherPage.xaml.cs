@@ -24,12 +24,12 @@ namespace SDKSample
             InitializeComponent();
         }
 
-//<SnippetNavigationServiceRefreshCODE>
-void refreshHyperlink_Click(object sender, RoutedEventArgs e)
-{
-    // Reload the current page.
-    this.NavigationService.Refresh();
-}
-//</SnippetNavigationServiceRefreshCODE>
+        //<SnippetNavigationServiceRefreshCODE>
+        void refreshHyperlink_Click(object sender, RoutedEventArgs e)
+        {
+            // Reload the current page.
+            this.NavigationService.Refresh();
+        }
+        //</SnippetNavigationServiceRefreshCODE>
     }
 }

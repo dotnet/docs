@@ -92,11 +92,11 @@ Partial Public Class MainWindow
                     virtualizingPanel.BringIntoView(index)
 
                     subContainer =
-                        DirectCast(container.ItemContainerGenerator.ContainerFromIndex(index), 
+                        DirectCast(container.ItemContainerGenerator.ContainerFromIndex(index),
                             TreeViewItem)
                 Else
                     subContainer =
-                        DirectCast(container.ItemContainerGenerator.ContainerFromIndex(index), 
+                        DirectCast(container.ItemContainerGenerator.ContainerFromIndex(index),
                             TreeViewItem)
 
                     ' Bring the item into view to maintain the 

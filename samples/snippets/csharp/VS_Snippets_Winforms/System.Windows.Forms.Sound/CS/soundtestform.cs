@@ -29,7 +29,7 @@ namespace SoundApiExample
         {
             // Initialize Forms Designer generated code.
             InitializeComponent();
-			
+
             // Disable playback controls until a valid .wav file
             // is selected.
             EnablePlaybackControls(false);
@@ -175,7 +175,7 @@ namespace SoundApiExample
         // affected.
         private void playOnceSyncButton_Click(object sender,
             System.EventArgs e)
-        {	
+        {
             // <snippet4>
             ReportStatus("Playing .wav file synchronously.");
             player.PlaySync();
@@ -207,7 +207,7 @@ namespace SoundApiExample
         // Stops the currently playing .wav file, if any.
         private void stopButton_Click(System.Object sender,
             System.EventArgs e)
-        {	
+        {
             // <snippet7>
             player.Stop();
             ReportStatus("Stopped by user.");

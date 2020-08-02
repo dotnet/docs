@@ -1,9 +1,9 @@
 ﻿//<snippet1>
 using System;
+using System.Collections;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.Serialization;
-using System.Collections;
 
 namespace Microsoft.Samples.Xml.Schema
 {

@@ -1,6 +1,6 @@
-﻿using System.Threading.Tasks;
-using System;
+﻿using System;
 using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace NewStyle
 {
@@ -33,10 +33,12 @@ namespace NewStyle
             await logMethodEntrance();
             var client = new System.Net.Http.HttpClient();
             var streamTask = client.GetStringAsync("https://localHost:10000");
-            try {
+            try
+            {
                 var responseText = await streamTask;
                 return responseText;
-            } catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains("301"))
+            }
+            catch (System.Net.Http.HttpRequestException e) when (e.Message.Contains("301"))
             {
                 await logError("Recovered from redirect", e);
                 return "Site Moved";
@@ -73,10 +75,12 @@ namespace OldStyle
         {
             var client = new System.Net.Http.HttpClient();
             var streamTask = client.GetStringAsync("https://localHost:10000");
-            try {
+            try
+            {
                 var responseText = await streamTask;
                 return responseText;
-            } catch (System.Net.Http.HttpRequestException e)
+            }
+            catch (System.Net.Http.HttpRequestException e)
             {
                 if (e.Message.Contains("301"))
                     return "Site Moved";

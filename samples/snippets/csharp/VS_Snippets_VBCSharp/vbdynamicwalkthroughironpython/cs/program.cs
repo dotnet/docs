@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using IronPython.Hosting;
 //<Snippet1>
 using Microsoft.Scripting.Hosting;
-using IronPython.Hosting;
 //</Snippet1>
 
 namespace IronPythonSample

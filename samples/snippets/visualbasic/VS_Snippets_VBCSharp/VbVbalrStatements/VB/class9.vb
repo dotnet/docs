@@ -1,5 +1,5 @@
-﻿Imports System.Diagnostics
-Imports System.Collections.Generic
+﻿Imports System.Collections.Generic
+Imports System.Diagnostics
 
 Public Class Class9
     ' ebce3120-95c3-42b1-b70b-fa7da40c75e2

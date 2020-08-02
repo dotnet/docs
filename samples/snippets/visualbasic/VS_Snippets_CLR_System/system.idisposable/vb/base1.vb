@@ -1,9 +1,9 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
+Imports System.Runtime.InteropServices
 ' <Snippet3>
 Imports Microsoft.Win32.SafeHandles
-Imports System.Runtime.InteropServices
 
 Class BaseClass : Implements IDisposable
     ' Flag: Has Dispose already been called?

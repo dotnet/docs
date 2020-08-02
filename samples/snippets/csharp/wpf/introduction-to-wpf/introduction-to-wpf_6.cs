@@ -1,4 +1,4 @@
-using System.Windows; // Window
+﻿using System.Windows; // Window
 
 namespace SDKSample
 {

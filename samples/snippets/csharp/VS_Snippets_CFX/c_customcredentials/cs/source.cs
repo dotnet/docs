@@ -1,13 +1,13 @@
 ﻿//<snippet0>
 using System;
+using System.Configuration;
 using System.IdentityModel.Selectors;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Permissions;
 using System.ServiceModel;
+using System.ServiceModel.Configuration;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security;
-using System.Security.Cryptography.X509Certificates;
-using System.ServiceModel.Configuration;
-using System.Configuration;
 
 [assembly: SecurityPermission(SecurityAction.RequestMinimum,
     Execution = true)]
@@ -293,37 +293,37 @@ namespace Microsoft.ServiceModel.Samples
         #endregion
     }
     public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
-{
-
-    public CalculatorClient()
     {
-    }
 
-    public CalculatorClient(string endpointConfigurationName) :
-            base(endpointConfigurationName)
-    {
-    }
+        public CalculatorClient()
+        {
+        }
 
-    public CalculatorClient(string endpointConfigurationName, string remoteAddress) :
-            base(endpointConfigurationName, remoteAddress)
-    {
-    }
+        public CalculatorClient(string endpointConfigurationName) :
+                base(endpointConfigurationName)
+        {
+        }
 
-    public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
-            base(endpointConfigurationName, remoteAddress)
-    {
-    }
+        public CalculatorClient(string endpointConfigurationName, string remoteAddress) :
+                base(endpointConfigurationName, remoteAddress)
+        {
+        }
 
-    public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
-            base(binding, remoteAddress)
-    {
-    }
+        public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
+                base(endpointConfigurationName, remoteAddress)
+        {
+        }
 
-    public double Add(double a, double b)
-    {
-        return base.Channel.Add(a, b);
+        public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
+                base(binding, remoteAddress)
+        {
+        }
+
+        public double Add(double a, double b)
+        {
+            return base.Channel.Add(a, b);
+        }
     }
-}
 
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName = "ICalculator")]
     public interface ICalculator

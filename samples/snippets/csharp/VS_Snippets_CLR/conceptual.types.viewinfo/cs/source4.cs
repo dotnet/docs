@@ -32,7 +32,7 @@ class ListMembers
         PrintMembers(ei);
 
         // Static methods.
-        MethodInfo[] mi = t.GetMethods (BindingFlags.Static |
+        MethodInfo[] mi = t.GetMethods(BindingFlags.Static |
             BindingFlags.NonPublic | BindingFlags.Public);
         Console.WriteLine("// Static Methods");
         PrintMembers(mi);
@@ -52,7 +52,7 @@ class ListMembers
         // Instance properites.
         pi = t.GetProperties(BindingFlags.Instance | BindingFlags.NonPublic |
             BindingFlags.Public);
-        Console.WriteLine ("// Instance Properties");
+        Console.WriteLine("// Instance Properties");
         PrintMembers(pi);
 
         // Instance events.
@@ -71,11 +71,11 @@ class ListMembers
         Console.Read();
     }
 
-    public static void PrintMembers (MemberInfo [] ms)
+    public static void PrintMembers(MemberInfo[] ms)
     {
         foreach (MemberInfo m in ms)
         {
-            Console.WriteLine ("{0}{1}", "     ", m);
+            Console.WriteLine("{0}{1}", "     ", m);
         }
         Console.WriteLine();
     }

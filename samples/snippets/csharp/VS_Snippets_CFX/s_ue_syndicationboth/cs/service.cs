@@ -14,7 +14,7 @@ namespace Service
     public interface IBlog
     {
         [OperationContract]
-        [WebGet(UriTemplate="GetBlog?format={format}", BodyStyle=WebMessageBodyStyle.Bare)]
+        [WebGet(UriTemplate = "GetBlog?format={format}", BodyStyle = WebMessageBodyStyle.Bare)]
         SyndicationFeedFormatter GetBlog(string format);
     }
     // </Snippet0>

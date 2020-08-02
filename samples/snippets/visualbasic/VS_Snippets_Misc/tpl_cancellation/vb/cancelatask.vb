@@ -1,6 +1,6 @@
 ﻿'<snippet03>
-Imports System.Threading.Tasks
 Imports System.Threading
+Imports System.Threading.Tasks
 
 Namespace CancellationWithOCE
 

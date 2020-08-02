@@ -14,8 +14,8 @@ namespace NorthwindClient
             NorthwindDataContext context = new NorthwindDataContext(new Uri("http://localhost:54321/Northwind.svc"));
 
             var order = (from o in context.Orders.Expand("Order_Details")
-                                where o.OrderID == 10248
-                                select o).FirstOrDefault();
+                         where o.OrderID == 10248
+                         select o).FirstOrDefault();
 
             var item = order.Order_Details.FirstOrDefault();
 

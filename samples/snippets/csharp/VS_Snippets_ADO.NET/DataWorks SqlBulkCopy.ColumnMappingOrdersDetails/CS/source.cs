@@ -113,7 +113,7 @@ class Program
                     }
 
                     // Set up the order details destination.
-                    bulkCopy.DestinationTableName ="dbo.BulkCopyDemoOrderDetail";
+                    bulkCopy.DestinationTableName = "dbo.BulkCopyDemoOrderDetail";
 
                     // Clear the ColumnMappingCollection.
                     bulkCopy.ColumnMappings.Clear();
@@ -157,8 +157,8 @@ class Program
     }
 
     private static string GetConnectionString()
-        // To avoid storing the connection string in your code,
-        // you can retrieve it from a configuration file.
+    // To avoid storing the connection string in your code,
+    // you can retrieve it from a configuration file.
     {
         return "Data Source=(local); " +
             " Integrated Security=true;" +

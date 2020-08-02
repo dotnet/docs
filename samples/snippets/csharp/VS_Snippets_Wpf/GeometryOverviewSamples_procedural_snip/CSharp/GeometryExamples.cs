@@ -1,17 +1,17 @@
 ﻿//This is a list of commonly used namespaces for a window.
 using System;
+using System.Collections;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Collections;
-using System.Threading;
 namespace GeoOvwSample
 {
-        /// <summary>
-        /// Interaction logic for Window1.xaml
-        /// </summary>
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
 
     public class GeometryExamples : Page
     {
@@ -79,8 +79,8 @@ namespace GeoOvwSample
 
             // <SnippetGraphicsMMLineGeometryExample>
             LineGeometry myLineGeometry = new LineGeometry();
-            myLineGeometry.StartPoint = new Point(10,20);
-            myLineGeometry.EndPoint = new Point(100,130);
+            myLineGeometry.StartPoint = new Point(10, 20);
+            myLineGeometry.EndPoint = new Point(100, 130);
 
             Path myPath = new Path();
             myPath.Stroke = Brushes.Black;
@@ -115,7 +115,7 @@ namespace GeoOvwSample
 
             // <SnippetGraphicsMMRectangleGeometryExample>
             RectangleGeometry myRectangleGeometry = new RectangleGeometry();
-            myRectangleGeometry.Rect = new Rect(50,50,25,25);
+            myRectangleGeometry.Rect = new Rect(50, 50, 25, 25);
 
             Path myPath = new Path();
             myPath.Fill = Brushes.LemonChiffon;
@@ -161,9 +161,9 @@ namespace GeoOvwSample
             // Create a figure that describes a
             // line from (10,20) to (100,130).
             PathFigure myPathFigure = new PathFigure();
-            myPathFigure.StartPoint = new Point(10,20);
+            myPathFigure.StartPoint = new Point(10, 20);
             myPathFigure.Segments.Add(
-                new LineSegment(new Point(100,130),
+                new LineSegment(new Point(100, 130),
                 true /* IsStroked */ ));
 
             /// Create a PathGeometry to contain the figure.
@@ -187,21 +187,21 @@ namespace GeoOvwSample
 
             // Create a figure.
             PathFigure myPathFigure = new PathFigure();
-            myPathFigure.StartPoint = new Point(10,50);
+            myPathFigure.StartPoint = new Point(10, 50);
             myPathFigure.Segments.Add(
                 new BezierSegment(
-                    new Point(100,0),
-                    new Point(200,200),
-                    new Point(300,100),
+                    new Point(100, 0),
+                    new Point(200, 200),
+                    new Point(300, 100),
                     true /* IsStroked */  ));
             myPathFigure.Segments.Add(
                 new LineSegment(
-                    new Point(400,100),
+                    new Point(400, 100),
                     true /* IsStroked */ ));
             myPathFigure.Segments.Add(
                 new ArcSegment(
-                    new Point(200,100),
-                    new Size(50,50),
+                    new Point(200, 100),
+                    new Size(50, 50),
                     45,
                     true, /* IsLargeArc */
                     SweepDirection.Clockwise,
@@ -230,21 +230,21 @@ namespace GeoOvwSample
 
             // Create a figure.
             PathFigure pathFigure1 = new PathFigure();
-            pathFigure1.StartPoint = new Point(10,50);
+            pathFigure1.StartPoint = new Point(10, 50);
             pathFigure1.Segments.Add(
                 new BezierSegment(
-                    new Point(100,0),
-                    new Point(200,200),
-                    new Point(300,100),
+                    new Point(100, 0),
+                    new Point(200, 200),
+                    new Point(300, 100),
                     true /* IsStroked */ ));
             pathFigure1.Segments.Add(
                 new LineSegment(
-                    new Point(400,100),
+                    new Point(400, 100),
                     true /* IsStroked */ ));
             pathFigure1.Segments.Add(
                 new ArcSegment(
-                    new Point(200,100),
-                    new Size(50,50),
+                    new Point(200, 100),
+                    new Size(50, 50),
                     45,
                     true, /* IsLargeArc */
                     SweepDirection.Clockwise,
@@ -253,17 +253,17 @@ namespace GeoOvwSample
 
             // Create another figure.
             PathFigure pathFigure2 = new PathFigure();
-            pathFigure2.StartPoint = new Point(10,100);
+            pathFigure2.StartPoint = new Point(10, 100);
             Point[] polyLinePointArray =
-                new Point[]{ new Point(50, 100), new Point(50, 150)};
+                new Point[] { new Point(50, 100), new Point(50, 150) };
             PolyLineSegment myPolyLineSegment = new PolyLineSegment();
             myPolyLineSegment.Points =
                 new PointCollection(polyLinePointArray);
             pathFigure2.Segments.Add(myPolyLineSegment);
             pathFigure2.Segments.Add(
                 new QuadraticBezierSegment(
-                    new Point(200,200),
-                    new Point(300,100),
+                    new Point(200, 200),
+                    new Point(300, 100),
                     true /* IsStroked */ ));
             myPathGeometry.Figures.Add(pathFigure2);
 
@@ -276,5 +276,5 @@ namespace GeoOvwSample
 
             return myPath;
         }
-     }
+    }
 }

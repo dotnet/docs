@@ -1,9 +1,9 @@
-﻿Imports System.IO
-Imports System.Collections.Generic
+﻿Imports System.Collections.Generic
+Imports System.IO
 Imports System.Linq
-Imports System.Text
 Imports System.Runtime.Serialization
 Imports System.Security.Permissions
+Imports System.Text
 
 Namespace SerializationGuidelines
 

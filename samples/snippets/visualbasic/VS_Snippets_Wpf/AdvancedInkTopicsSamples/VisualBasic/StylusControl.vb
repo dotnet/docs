@@ -1,11 +1,11 @@
 ﻿'<Snippet20>
 Imports System.Collections.Generic
 Imports System.Text
+Imports System.Windows
+Imports System.Windows.Controls
 Imports System.Windows.Ink
 Imports System.Windows.Input
 Imports System.Windows.Input.StylusPlugIns
-Imports System.Windows.Controls
-Imports System.Windows
 '</Snippet20>
 
 '<Snippet6>

@@ -1,9 +1,9 @@
 ﻿Option Explicit On
 Option Strict On
 
+Imports System.Configuration
 Imports System.Data
 Imports System.Data.SqlClient
-Imports System.Configuration
 
 Module Module1
 

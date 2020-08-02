@@ -6,22 +6,23 @@ using System;
 [AttributeUsageAttribute(AttributeTargets.Class | AttributeTargets.Struct)]
 public class NumericAttribute
 {
-   private bool _isNumeric;
+    private bool _isNumeric;
 
-   public NumericAttribute(bool isNumeric)
-   {
-      _isNumeric = isNumeric;
-   }
+    public NumericAttribute(bool isNumeric)
+    {
+        _isNumeric = isNumeric;
+    }
 
-   public bool IsNumeric
-   {
-      get { return _isNumeric; }
-   }
+    public bool IsNumeric
+    {
+        get { return _isNumeric; }
+    }
 }
 
-[Numeric(true)] public struct UDouble
+[Numeric(true)]
+public struct UDouble
 {
-   double Value;
+    double Value;
 }
 // Compilation produces a compiler error like the following:
 //    Attribute1.cs(22,2): error CS0616: 'NumericAttribute' is not an attribute class
@@ -30,7 +31,7 @@ public class NumericAttribute
 
 public class Example
 {
-   public static void Main()
-   {
-   }
+    public static void Main()
+    {
+    }
 }

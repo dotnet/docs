@@ -1,12 +1,12 @@
-﻿ '<Snippet1>
+﻿'<Snippet1>
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Controls.Primitives
 Imports System.Windows.Documents
+Imports System.Windows.Ink
 Imports System.Windows.Input
 Imports System.Windows.Media
 Imports System.Windows.Shapes
-Imports System.Windows.Ink
 
 
 
@@ -15,24 +15,24 @@ Public Class RotatingStrokesAdorner
 
     ' The Thumb to drag to rotate the strokes.
     Private rotateHandle As Thumb
-    
+
     ' The surrounding boarder.
     Private outline As Path
-    
+
     Private visualChildren As VisualCollection
-    
+
     ' The center of the strokes.
     Private center As Point
     Private lastAngle As Double
-    
+
     Private rotation As RotateTransform
-    
+
     Private Const HANDLEMARGIN As Integer = 10
-    
+
     ' The bounds of the Strokes;
     Private strokeBounds As Rect = Rect.Empty
-    
-    
+
+
     Public Sub New(ByVal adornedElement As UIElement)
         MyBase.New(adornedElement)
 
@@ -58,8 +58,8 @@ Public Class RotatingStrokesAdorner
         strokeBounds = AdornedStrokes.GetBounds()
 
     End Sub
-    
-    
+
+
     ''' <summary>
     ''' Draw the rotation handle and the outline of
     ''' the element.
@@ -95,8 +95,8 @@ Public Class RotatingStrokesAdorner
         Return finalSize
 
     End Function 'ArrangeOverride
-    
-    
+
+
     ''' <summary>
     ''' Rotates the rectangle representing the
     ''' strokes' bounds as the user drags the
@@ -146,8 +146,8 @@ Public Class RotatingStrokesAdorner
         outline.RenderTransform = rotation
 
     End Sub
-    
-    
+
+
     ''' <summary>
     ''' Rotates the strokes to the same angle as outline.
     ''' </summary>
@@ -170,7 +170,7 @@ Public Class RotatingStrokesAdorner
         Me.InvalidateArrange()
 
     End Sub
-    
+
     ''' <summary>
     ''' Gets the strokes of the adorned element 
     ''' (in this case, an InkPresenter).
@@ -180,20 +180,20 @@ Public Class RotatingStrokesAdorner
             Return CType(AdornedElement, InkPresenter).Strokes
         End Get
     End Property
-    
+
     ' Override the VisualChildrenCount and 
     ' GetVisualChild properties to interface with 
     ' the adorner's visual collection.
-    
-    Protected Overrides ReadOnly Property VisualChildrenCount() As Integer 
+
+    Protected Overrides ReadOnly Property VisualChildrenCount() As Integer
         Get
             Return visualChildren.Count
         End Get
     End Property
-     
-    Protected Overrides Function GetVisualChild(ByVal index As Integer) As Visual 
+
+    Protected Overrides Function GetVisualChild(ByVal index As Integer) As Visual
         Return visualChildren(index)
-    
+
     End Function 'GetVisualChild
 End Class
 '</Snippet1>

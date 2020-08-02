@@ -43,7 +43,7 @@ namespace SDKSample
             // </SnippetFontPackageSnippet6>
         }
 
-                public void PackageStub4()
+        public void PackageStub4()
         {
             myTextBlock.Foreground = Brushes.Maroon;
 

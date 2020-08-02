@@ -8,30 +8,30 @@ Imports System.Windows.Shapes
 
 
 Namespace SpanSnippets
-	''' <summary>
-	''' Interaction logic for Window1.xaml
-	''' </summary>
+    ''' <summary>
+    ''' Interaction logic for Window1.xaml
+    ''' </summary>
 
-	Partial Public Class Window1
-		Inherits Window
+    Partial Public Class Window1
+        Inherits Window
 
-		Public Sub New()
-			InitializeComponent()
-		End Sub
+        Public Sub New()
+            InitializeComponent()
+        End Sub
 
-		Private Sub WindowLoaded(ByVal sender As Object, ByVal args As RoutedEventArgs)
-			Dim spanx As New Span()
-			Constructors()
-			BoldConstructors()
-			ItalicConstructors()
-			UnderlineConstructors()
-			UIContConstructors()
-			ParagraphConst()
+        Private Sub WindowLoaded(ByVal sender As Object, ByVal args As RoutedEventArgs)
+            Dim spanx As New Span()
+            Constructors()
+            BoldConstructors()
+            ItalicConstructors()
+            UnderlineConstructors()
+            UIContConstructors()
+            ParagraphConst()
 
-			TextProp()
-		End Sub
+            TextProp()
+        End Sub
 
-		Private Sub Constructors()
+        Private Sub Constructors()
             ' <Snippet_Span_Const1>
             ' A child Inline element for the new Span element.
             Dim runx1 As New Run("The Run element derives from Inline, and is therefore" & "an acceptable child element for this new Span.")
@@ -102,57 +102,57 @@ Namespace SpanSnippets
             ' contains the specified Block element, "parx".
             Dim secx As New Section(parx)
             ' </Snippet_Section_Const1>
-		End Sub
+        End Sub
 
-		Private Sub InlinesProp()
-			' Append an Inline element (Run) to the contents of a Span.
-			' <Snippet_SpanInlinesAdd>
-			Dim spanx As New Span()
-			spanx.Inlines.Add(New Run("A bit of text content..."))
-			spanx.Inlines.Add(New Run("A bit more text content..."))
-			' </Snippet_SpanInlinesAdd>
+        Private Sub InlinesProp()
+            ' Append an Inline element (Run) to the contents of a Span.
+            ' <Snippet_SpanInlinesAdd>
+            Dim spanx As New Span()
+            spanx.Inlines.Add(New Run("A bit of text content..."))
+            spanx.Inlines.Add(New Run("A bit more text content..."))
+            ' </Snippet_SpanInlinesAdd>
 
-			' Insert a content inline at the begining of the Span.
-			' <Snippet_SpanInlinesInsert>
-			Dim runx As New Run("Text to insert...")
-			spanx.Inlines.InsertBefore(spanx.Inlines.FirstInline, runx)
-			' </Snippet_SpanInlinesInsert>
+            ' Insert a content inline at the begining of the Span.
+            ' <Snippet_SpanInlinesInsert>
+            Dim runx As New Run("Text to insert...")
+            spanx.Inlines.InsertBefore(spanx.Inlines.FirstInline, runx)
+            ' </Snippet_SpanInlinesInsert>
 
-			' Get the number of top-level Inline elements in the Span.
-			' <Snippet_SpanInlinesCount>
-			Dim countTopLevelInlines As Integer = spanx.Inlines.Count
-			' </Snippet_SpanInlinesCount>
+            ' Get the number of top-level Inline elements in the Span.
+            ' <Snippet_SpanInlinesCount>
+            Dim countTopLevelInlines As Integer = spanx.Inlines.Count
+            ' </Snippet_SpanInlinesCount>
 
-			' Remove the last inline in the Span.
-			' <Snippet_SpanInlinesRemoveLast>
-			spanx.Inlines.Remove(spanx.Inlines.LastInline)
-			' </Snippet_SpanInlinesRemoveLast>
+            ' Remove the last inline in the Span.
+            ' <Snippet_SpanInlinesRemoveLast>
+            spanx.Inlines.Remove(spanx.Inlines.LastInline)
+            ' </Snippet_SpanInlinesRemoveLast>
 
-			' Clear all of the inlines (contents) of the Span.
-			' <Snippet_SpanInlinesClear>
-			spanx.Inlines.Clear()
-			' </Snippet_SpanInlinesClear>
-		End Sub
+            ' Clear all of the inlines (contents) of the Span.
+            ' <Snippet_SpanInlinesClear>
+            spanx.Inlines.Clear()
+            ' </Snippet_SpanInlinesClear>
+        End Sub
 
-		Private Sub TextProp()
-			' <Snippet_Span_Text>
-			Dim spanx As New Span()
-			spanx.Inlines.Add(New Run("The text contents of this Span."))
-			' </Snippet_Span_Text>
+        Private Sub TextProp()
+            ' <Snippet_Span_Text>
+            Dim spanx As New Span()
+            spanx.Inlines.Add(New Run("The text contents of this Span."))
+            ' </Snippet_Span_Text>
 
-			' <Snippet_Paragraph_Text>
-			Dim parx As New Paragraph()
-			parx.Inlines.Add(New Run("The text contents of this Paragraph."))
-			' </Snippet_Paragraph_Text>
+            ' <Snippet_Paragraph_Text>
+            Dim parx As New Paragraph()
+            parx.Inlines.Add(New Run("The text contents of this Paragraph."))
+            ' </Snippet_Paragraph_Text>
 
-			' <Snippet_TextBlock_Text>
-			Dim textBlock As New TextBlock()
-			textBlock.Text = "The text contents of this TextBlock."
-			' </Snippet_TextBlock_Text>
-		End Sub
+            ' <Snippet_TextBlock_Text>
+            Dim textBlock As New TextBlock()
+            textBlock.Text = "The text contents of this TextBlock."
+            ' </Snippet_TextBlock_Text>
+        End Sub
 
 
-		Private Sub BoldConstructors()
+        Private Sub BoldConstructors()
             ' <Snippet_Bold_Const1>
             ' A child Inline element for the new Bold element.
             Dim runx1 As New Run("Text to make bold.")
@@ -197,9 +197,9 @@ Namespace SpanSnippets
             ' will enclose the second text run, "run2".
             Dim boldx3 As New Bold(run2.ContentStart, run2.ContentEnd)
             ' </Snippet_Bold_Const3>
-		End Sub
+        End Sub
 
-		Private Sub ItalicConstructors()
+        Private Sub ItalicConstructors()
             ' <Snippet_Italic_Const1>
             ' A child Inline element for the new Italic element.
             Dim runx1 As New Run("Text to make italic.")
@@ -244,9 +244,9 @@ Namespace SpanSnippets
             ' will enclose the second text run, "run2".
             Dim italx3 As New Italic(run2.ContentStart, run2.ContentEnd)
             ' </Snippet_Italic_Const3>
-		End Sub
+        End Sub
 
-		Private Sub UnderlineConstructors()
+        Private Sub UnderlineConstructors()
             ' <Snippet_Underline_Const1>
             ' A child Inline element for the new Underline element.
             Dim runx1 As New Run("Text to make underlined.")
@@ -291,9 +291,9 @@ Namespace SpanSnippets
             ' will enclose the second text run, "run2".
             Dim underx As New Underline(run2.ContentStart, run2.ContentEnd)
             ' </Snippet_Underline_Const3>
-		End Sub
+        End Sub
 
-		Private Sub InlineUI()
+        Private Sub InlineUI()
             ' <Snippet_InlineUI_Child>
             Dim parx As New Paragraph()
             Dim run1 As New Run(" Text to precede the button... ")
@@ -333,9 +333,9 @@ Namespace SpanSnippets
             secx.Blocks.Add(uiCont2)
             secx.Blocks.Add(par2)
             ' </Snippet_BlockUI_Child>
-		End Sub
+        End Sub
 
-		Private Sub UIContConstructors()
+        Private Sub UIContConstructors()
             ' <Snippet_InlineUI_Const1>
             ' A child UIElement element for the new InlineUIContainer element.
             Dim buttonx1 As New Button()
@@ -372,16 +372,16 @@ Namespace SpanSnippets
             Dim blockUI As New BlockUIContainer(buttonx3)
             ' </Snippet_BlockUI_Const1>
 
-		End Sub
-		Private Sub ParagraphConst()
-			' <Snippet_Paragraph_Const1>
-			' A child Inline element for the new Paragraph element.
-			Dim runx As New Run("Text to be hosted in the new paragraph...")
+        End Sub
+        Private Sub ParagraphConst()
+            ' <Snippet_Paragraph_Const1>
+            ' A child Inline element for the new Paragraph element.
+            Dim runx As New Run("Text to be hosted in the new paragraph...")
 
-			' After this line executes, the new element "parx"
-			' contains the specified Inline element, "runx".
-			Dim parx As New Paragraph(runx)
-			' </Snippet_Paragraph_Const1>
-		End Sub
-	End Class
+            ' After this line executes, the new element "parx"
+            ' contains the specified Inline element, "runx".
+            Dim parx As New Paragraph(runx)
+            ' </Snippet_Paragraph_Const1>
+        End Sub
+    End Class
 End Namespace

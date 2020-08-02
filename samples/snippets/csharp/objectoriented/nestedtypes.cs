@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace objectoriented
 {
@@ -28,7 +28,7 @@ namespace objectoriented
         //</SnippetPublicNestedClass>
     }
 
-        //<SnippetDeclareNestedInstance>
+    //<SnippetDeclareNestedInstance>
     public class Container
     {
         public class Nested

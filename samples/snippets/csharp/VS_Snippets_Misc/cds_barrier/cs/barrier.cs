@@ -11,8 +11,8 @@ namespace BarrierSimple
 {
     class Program
     {
-        static string[] words1 = new string[] { "brown",  "jumps", "the", "fox", "quick"};
-        static string[] words2 = new string[] { "dog", "lazy","the","over"};
+        static string[] words1 = new string[] { "brown", "jumps", "the", "fox", "quick" };
+        static string[] words2 = new string[] { "dog", "lazy", "the", "over" };
         static string solution = "the quick brown fox jumps over the lazy dog.";
 
         static bool success = false;
@@ -28,7 +28,7 @@ namespace BarrierSimple
             {
                 sb.Append(words2[i]);
 
-                if(i < words2.Length - 1)
+                if (i < words2.Length - 1)
                     sb.Append(" ");
             }
             sb.Append(".");
@@ -61,7 +61,7 @@ namespace BarrierSimple
         // Success of right or left side only is not stored and does not count.
         static void Solve(string[] wordArray)
         {
-            while(success == false)
+            while (success == false)
             {
                 Random random = new Random();
                 for (int i = wordArray.Length - 1; i > 0; i--)
@@ -85,56 +85,56 @@ namespace BarrierSimple
 class BarrierDemo
 {
 
-        static byte[][] data = new byte[10][];
-        static byte[][] results = new byte[10][];
+    static byte[][] data = new byte[10][];
+    static byte[][] results = new byte[10][];
 
-        static bool success = false;
-        static bool someCondition = false;
+    static bool success = false;
+    static bool someCondition = false;
     //<snippet02>
 
-        // Create the Barrier object, and supply a post-phase delegate
-        // to be invoked at the end of each phase.
-        Barrier barrier = new Barrier(2, (bar) =>
-            {
+    // Create the Barrier object, and supply a post-phase delegate
+    // to be invoked at the end of each phase.
+    Barrier barrier = new Barrier(2, (bar) =>
+        {
                 // Examine results from all threads, determine
                 // whether to continue, create inputs for next phase, etc.
                 if (someCondition)
-                    success = true;
-            });
+                success = true;
+        });
 
-        // Define the work that each thread will perform. (Threads do not
-        // have to all execute the same method.)
-        void CrunchNumbers(int partitionNum)
+    // Define the work that each thread will perform. (Threads do not
+    // have to all execute the same method.)
+    void CrunchNumbers(int partitionNum)
+    {
+        // Up to System.Int64.MaxValue phases are supported. We assume
+        // in this code that the problem will be solved before that.
+        while (success == false)
         {
-            // Up to System.Int64.MaxValue phases are supported. We assume
-            // in this code that the problem will be solved before that.
-            while (success == false)
-            {
-                // Begin phase:
-                // Process data here on each thread, and optionally
-                // store results, for example:
-                results[partitionNum] = ProcessData(data[partitionNum]);
+            // Begin phase:
+            // Process data here on each thread, and optionally
+            // store results, for example:
+            results[partitionNum] = ProcessData(data[partitionNum]);
 
-                // End phase:
-                // After all threads arrive,post-phase delegate
-                // is invoked, then threads are unblocked. Overloads
-                // accept a timeout value and/or CancellationToken.
-                barrier.SignalAndWait();
-            }
+            // End phase:
+            // After all threads arrive,post-phase delegate
+            // is invoked, then threads are unblocked. Overloads
+            // accept a timeout value and/or CancellationToken.
+            barrier.SignalAndWait();
         }
+    }
 
-        // Perform n tasks to run in in parallel. For simplicity
-       // all threads execute the same method in this example.
-        static void Main()
-        {
-            var app = new BarrierDemo();
-            Thread t1 = new Thread(() => app.CrunchNumbers(0));
-            Thread t2 = new Thread(() => app.CrunchNumbers(1));
-            t1.Start();
-            t2.Start();
-        }
+    // Perform n tasks to run in in parallel. For simplicity
+    // all threads execute the same method in this example.
+    static void Main()
+    {
+        var app = new BarrierDemo();
+        Thread t1 = new Thread(() => app.CrunchNumbers(0));
+        Thread t2 = new Thread(() => app.CrunchNumbers(1));
+        t1.Start();
+        t2.Start();
+    }
     //</snippet02>
 
-     byte[] ProcessData(byte[] input)
-        { return new byte[2]; }
+    byte[] ProcessData(byte[] input)
+    { return new byte[2]; }
 }

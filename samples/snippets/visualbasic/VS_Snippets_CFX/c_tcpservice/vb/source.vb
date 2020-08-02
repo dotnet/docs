@@ -1,7 +1,7 @@
 ﻿'<snippet0>
+Imports System.Security.Cryptography.X509Certificates
 Imports System.ServiceModel
 Imports System.ServiceModel.Security
-Imports System.Security.Cryptography.X509Certificates
 '</snippet0>
 
 Class Test

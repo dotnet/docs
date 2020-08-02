@@ -7,7 +7,7 @@ class Mymemberinfo
 {
     public static void Main()
     {
-        Console.WriteLine ("\nReflection.MemberInfo");
+        Console.WriteLine("\nReflection.MemberInfo");
         // Gets the Type and MemberInfo.
         Type MyType = Type.GetType("System.IO.File");
         MemberInfo[] Mymemberinfoarray = MyType.GetMembers();

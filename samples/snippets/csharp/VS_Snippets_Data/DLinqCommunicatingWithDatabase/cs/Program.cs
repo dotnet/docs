@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.SqlClient;
-using System.Runtime.Serialization;
 using System.Data.SqlClient;
+using System.Linq;
+using System.Runtime.Serialization;
+using System.Text;
 
 namespace cs_test20730build
 {
@@ -14,23 +14,23 @@ namespace cs_test20730build
         static void Main(string[] args)
         {
 
-          //  Northwnd db = new Northwnd(@"c:\northwnd.mdf");
+            //  Northwnd db = new Northwnd(@"c:\northwnd.mdf");
 
             // <Snippet1>
-// DataContext takes a connection string.
-DataContext db = new DataContext(@"c:\Northwind.mdf");
+            // DataContext takes a connection string.
+            DataContext db = new DataContext(@"c:\Northwind.mdf");
 
-// Get a typed table to run queries.
-Table<Customer> Customers = db.GetTable<Customer>();
+            // Get a typed table to run queries.
+            Table<Customer> Customers = db.GetTable<Customer>();
 
-// Query for customers from London.
-var query =
-    from cust in Customers
-    where cust.City == "London"
-    select cust;
+            // Query for customers from London.
+            var query =
+                from cust in Customers
+                where cust.City == "London"
+                select cust;
 
-foreach (var cust in query)
-    Console.WriteLine("id = {0}, City = {1}", cust.CustomerID, cust.City);
+            foreach (var cust in query)
+                Console.WriteLine("id = {0}, City = {1}", cust.CustomerID, cust.City);
             // </Snippet1>
 
             // <Snippet3>
@@ -89,7 +89,7 @@ foreach (var cust in query)
         }
         // </Snippet2>
 
-       void method()
+        void method()
         {
             // <Snippet5>
             Northwnd db = new Northwnd(@"c:\Northwnd.mdf");

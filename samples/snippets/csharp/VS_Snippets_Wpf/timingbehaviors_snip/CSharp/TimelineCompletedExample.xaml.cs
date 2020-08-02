@@ -30,13 +30,13 @@ namespace SDKSample
         {
             // Cache the zoom-out storyboard resource.
             zoomInStoryboard =
-                (Storyboard) this.Resources["ZoomInStoryboardResource"];
+                (Storyboard)this.Resources["ZoomInStoryboardResource"];
 
             // Cache the ImageSource resources.
             currentImageSource =
-                (ImageSource) this.Resources["RectangleDrawingImage"];
+                (ImageSource)this.Resources["RectangleDrawingImage"];
             nextImageSource =
-                (ImageSource) this.Resources["CircleDrawingImage"];
+                (ImageSource)this.Resources["CircleDrawingImage"];
 
             // Display the current image source.
             AnimatedImage.Source = currentImageSource;

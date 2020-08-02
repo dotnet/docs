@@ -20,7 +20,7 @@ namespace ConsoleApplication1
 
         static void c_ThresholdReached(object sender, ThresholdReachedEventArgs e)
         {
-            Console.WriteLine("The threshold of {0} was reached at {1}.", e.Threshold,  e.TimeReached);
+            Console.WriteLine("The threshold of {0} was reached at {1}.", e.Threshold, e.TimeReached);
             Environment.Exit(0);
         }
     }

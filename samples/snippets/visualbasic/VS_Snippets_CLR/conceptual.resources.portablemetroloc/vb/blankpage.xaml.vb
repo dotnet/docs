@@ -1,6 +1,6 @@
 ﻿' <Snippet1>
-Imports Windows.Globalization
 Imports MyCompany.Employees
+Imports Windows.Globalization
 
 Public NotInheritable Class BlankPage
     Inherits Page

@@ -17,7 +17,7 @@ public class ExampleAttribute : Attribute
     }
 }
 
-[Example(StringValue="This is a string.")]
+[Example(StringValue = "This is a string.")]
 class Class1
 {
     public static void Main()

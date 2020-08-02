@@ -78,7 +78,7 @@ namespace DragDropSnippets
             Ellipse ellipse = sender as Ellipse;
             if (ellipse != null && e.LeftButton == MouseButtonState.Pressed)
             {
-                DragDrop.DoDragDrop( ellipse,
+                DragDrop.DoDragDrop(ellipse,
                                      ellipse.Fill.ToString(),
                                      DragDropEffects.Copy);
             }

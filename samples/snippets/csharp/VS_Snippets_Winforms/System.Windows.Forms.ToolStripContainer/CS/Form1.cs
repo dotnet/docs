@@ -16,8 +16,8 @@ public class Form1 : Form
     {
         InitializeComponent();
     }
-[STAThread]
-static void Main()
+    [STAThread]
+    static void Main()
     {
         Application.EnableVisualStyles();
         Application.Run(new Form1());

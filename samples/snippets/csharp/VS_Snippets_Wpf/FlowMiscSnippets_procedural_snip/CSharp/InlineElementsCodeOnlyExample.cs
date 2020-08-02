@@ -1,9 +1,9 @@
 ﻿// <SnippetInlineElementsCodeOnlyExampleWholePage>
 using System;
 using System.Windows;
-using System.Windows.Media;
 using System.Windows.Controls;
 using System.Windows.Documents;
+using System.Windows.Media;
 
 namespace SDKSample
 {
@@ -48,21 +48,21 @@ namespace SDKSample
 
             this.Content = myFlowDocument;
 
-/*
-                    <Figure
-          Width="300" Height="50" Background="GhostWhite"
-          HorizontalAnchor="PageLeft"
-          HorizontalOffset="100" VerticalOffset="20"
-          >
-          <Paragraph
-            FontStyle="Italic" TextAlignment="Left"
-            Background="Beige" Foreground="DarkGreen"
-            >
-            Neptune has 72 times Earth's volume...
-          </Paragraph>
-        </Figure>
+            /*
+                                <Figure
+                      Width="300" Height="50" Background="GhostWhite"
+                      HorizontalAnchor="PageLeft"
+                      HorizontalOffset="100" VerticalOffset="20"
+                      >
+                      <Paragraph
+                        FontStyle="Italic" TextAlignment="Left"
+                        Background="Beige" Foreground="DarkGreen"
+                        >
+                        Neptune has 72 times Earth's volume...
+                      </Paragraph>
+                    </Figure>
 
- */
+             */
         }
     }
 }

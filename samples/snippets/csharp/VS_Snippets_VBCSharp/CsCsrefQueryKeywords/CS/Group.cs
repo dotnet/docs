@@ -38,12 +38,12 @@ namespace Group
             //</snippet11>
             Console.WriteLine("The SimpleGroup method produces this output:\r\n");
 
-           //<snippet12>
-           // Iterate group items with a nested foreach. This IGrouping encapsulates
-           // a sequence of Student objects, and a Key of type char.
-           // For convenience, var can also be used in the foreach statement.
-           foreach (IGrouping<char, Student> studentGroup in studentQuery2)
-           {
+            //<snippet12>
+            // Iterate group items with a nested foreach. This IGrouping encapsulates
+            // a sequence of Student objects, and a Key of type char.
+            // For convenience, var can also be used in the foreach statement.
+            foreach (IGrouping<char, Student> studentGroup in studentQuery2)
+            {
                 Console.WriteLine(studentGroup.Key);
                 // Explicit type for student could also be used here.
                 foreach (var student in studentGroup)

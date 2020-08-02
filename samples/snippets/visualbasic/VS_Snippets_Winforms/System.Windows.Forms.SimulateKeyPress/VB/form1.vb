@@ -1,6 +1,6 @@
 ﻿' <Snippet0>
-Imports System.Runtime.InteropServices
 Imports System.Drawing
+Imports System.Runtime.InteropServices
 Imports System.Windows.Forms
 
 Namespace SimulateKeyPress

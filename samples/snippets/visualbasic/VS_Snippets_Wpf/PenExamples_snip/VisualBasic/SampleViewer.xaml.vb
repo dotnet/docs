@@ -6,14 +6,14 @@ Imports System.Windows.Navigation
 
 
 Namespace SDKSample
-	Partial Public Class SampleViewer
-		Inherits Page
-		Public Sub New()
-			InitializeComponent()
-			MyPenExampleFrame.Content = New PenExample()
-		End Sub
+    Partial Public Class SampleViewer
+        Inherits Page
+        Public Sub New()
+            InitializeComponent()
+            MyPenExampleFrame.Content = New PenExample()
+        End Sub
 
-	End Class
+    End Class
 
 
 End Namespace

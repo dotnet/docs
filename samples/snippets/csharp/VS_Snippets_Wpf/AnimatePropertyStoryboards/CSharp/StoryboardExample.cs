@@ -62,7 +62,7 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             myWidthAnimatedButtonStoryboard.Children.Add(myDoubleAnimation);
 
             // Animate the button width when it's clicked.
-            myWidthAnimatedButton.Click += delegate(object sender, RoutedEventArgs args)
+            myWidthAnimatedButton.Click += delegate (object sender, RoutedEventArgs args)
                 {
                     myWidthAnimatedButtonStoryboard.Begin(myWidthAnimatedButton);
                 };
@@ -108,7 +108,7 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             myColorAnimatedButtonStoryboard.Children.Add(myColorAnimation);
 
             // Animate the button background color when it's clicked.
-            myColorAnimatedButton.Click += delegate(object sender, RoutedEventArgs args)
+            myColorAnimatedButton.Click += delegate (object sender, RoutedEventArgs args)
                 {
                     myColorAnimatedButtonStoryboard.Begin(myColorAnimatedButton);
                 };

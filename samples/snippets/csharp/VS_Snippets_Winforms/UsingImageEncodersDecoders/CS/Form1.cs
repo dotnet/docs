@@ -4,9 +4,9 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Drawing.Imaging;
 using System.Text;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
 
 namespace GDIPlusPort
 {
@@ -240,7 +240,7 @@ namespace GDIPlusPort
             GetSupportedParameters(e);
             SaveBmpAsPNG();
             VaryQualityLevel();
-           // GetImageDecodersExample(e);
+            // GetImageDecodersExample(e);
         }
     }
 }

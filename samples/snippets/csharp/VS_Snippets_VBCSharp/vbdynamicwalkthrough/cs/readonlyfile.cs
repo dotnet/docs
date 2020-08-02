@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+using System.Dynamic;
 //<Snippet1>
 using System.IO;
-using System.Dynamic;
+using System.Linq;
+using System.Text;
 //</Snippet1>
 
 namespace DynamicWalkthrough
@@ -126,7 +126,7 @@ namespace DynamicWalkthrough
             }
             finally
             {
-                if (sr != null) {sr.Close();}
+                if (sr != null) { sr.Close(); }
             }
 
             return results;

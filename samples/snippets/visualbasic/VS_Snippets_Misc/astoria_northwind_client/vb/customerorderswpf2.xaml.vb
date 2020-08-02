@@ -1,4 +1,6 @@
 ﻿Imports System.Collections.Generic
+'<snippetCustomersOrdersImportsWpf>
+Imports System.Data.Services.Client
 Imports System.Linq
 Imports System.Text
 Imports System.Windows
@@ -10,9 +12,6 @@ Imports System.Windows.Media
 Imports System.Windows.Media.Imaging
 Imports System.Windows.Navigation
 Imports System.Windows.Shapes
-
-'<snippetCustomersOrdersImportsWpf>
-Imports System.Data.Services.Client
 Imports NorthwindClient.Northwind
 
 '</snippetCustomersOrdersImportsWpf>

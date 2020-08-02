@@ -12,17 +12,17 @@ namespace SdkSample
     #region Namespaces.
 
     using System;
-    using System.IO;
     using System.Diagnostics;
+    using System.IO;
     using System.Reflection;
     using System.Security.Policy;
-    using System.Xml;
-    using System.Xml.Xsl;
-    using System.Xml.XPath;
     using System.Windows;
-    using System.Windows.Documents;
     using System.Windows.Controls;
+    using System.Windows.Documents;
     using System.Windows.Media;
+    using System.Xml;
+    using System.Xml.XPath;
+    using System.Xml.Xsl;
 
     #endregion Namespaces.
 
@@ -93,7 +93,7 @@ namespace SdkSample
                     return false;
                 }
             }
-            catch(XmlException)
+            catch (XmlException)
             {
                 return false;
             }

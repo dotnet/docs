@@ -1,10 +1,10 @@
 ﻿'<SnippetCallApplicationGetResourceStreamCODEBEHIND1>
 
 Imports System.IO
-Imports System.Windows.Resources
 '</SnippetCallApplicationGetResourceStreamCODEBEHIND1>
 Imports System.Windows
 Imports System.Windows.Controls
+Imports System.Windows.Resources
 Namespace ResourcesSample
     ''' <summary>
     ''' Interaction logic for ApplicationGetResourceStreamSnippetWindow.xaml

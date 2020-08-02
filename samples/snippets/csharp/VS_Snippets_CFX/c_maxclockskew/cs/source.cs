@@ -1,6 +1,6 @@
 ﻿using System;
-using System.ServiceModel;
 using System.Security.Permissions;
+using System.ServiceModel;
 //using System.Runtime.Serialization;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
@@ -44,7 +44,7 @@ namespace Examples
         private void Run()
         {
             // Create a custom binding using the method defined above. The MaxClockSkew is set to 30 minutes.
-            Binding customBinding= CreateCustomBinding(TimeSpan.FromMinutes(30));
+            Binding customBinding = CreateCustomBinding(TimeSpan.FromMinutes(30));
 
             // Create a ServiceHost instance, and add a metadata endpoint.
             // NOTE  When using Visual Studio, you must run as administrator.

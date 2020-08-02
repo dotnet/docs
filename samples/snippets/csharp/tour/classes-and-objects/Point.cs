@@ -9,7 +9,7 @@
             this.y = y;
         }
     }
-    public class Point3D: Point
+    public class Point3D : Point
     {
         public int z;
         public Point3D(int x, int y, int z) :

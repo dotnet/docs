@@ -8,10 +8,10 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Shapes;
-using System.Windows.Media.Animation;
 using System.Windows.Documents;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
 {
@@ -81,27 +81,27 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
             buttonPanel.Children.Add(beginButton);
             Button pauseButton = new Button();
             pauseButton.Content = "Pause";
-            pauseButton.Click +=new RoutedEventHandler(pauseButton_Clicked);
+            pauseButton.Click += new RoutedEventHandler(pauseButton_Clicked);
             buttonPanel.Children.Add(pauseButton);
             Button resumeButton = new Button();
             resumeButton.Content = "Resume";
-            resumeButton.Click +=new RoutedEventHandler(resumeButton_Clicked);
+            resumeButton.Click += new RoutedEventHandler(resumeButton_Clicked);
             buttonPanel.Children.Add(resumeButton);
             Button skipToFillButton = new Button();
             skipToFillButton.Content = "Skip to Fill";
-            skipToFillButton.Click +=new RoutedEventHandler(skipToFillButton_Clicked);
+            skipToFillButton.Click += new RoutedEventHandler(skipToFillButton_Clicked);
             buttonPanel.Children.Add(skipToFillButton);
             Button setSpeedRatioButton = new Button();
             setSpeedRatioButton.Content = "Triple Speed";
-            setSpeedRatioButton.Click +=new RoutedEventHandler(setSpeedRatioButton_Clicked);
+            setSpeedRatioButton.Click += new RoutedEventHandler(setSpeedRatioButton_Clicked);
             buttonPanel.Children.Add(setSpeedRatioButton);
             Button stopButton = new Button();
             stopButton.Content = "Stop";
-            stopButton.Click +=new RoutedEventHandler(stopButton_Clicked);
+            stopButton.Click += new RoutedEventHandler(stopButton_Clicked);
             buttonPanel.Children.Add(stopButton);
             Button removeButton = new Button();
             removeButton.Content = "Remove";
-            removeButton.Click +=new RoutedEventHandler(removeButton_Clicked);
+            removeButton.Click += new RoutedEventHandler(removeButton_Clicked);
             buttonPanel.Children.Add(removeButton);
 
             controlsContainer.Child = buttonPanel;
@@ -119,19 +119,19 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
         // Pauses the storyboard.
         private void pauseButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Pause(this);
+            myStoryboard.Pause(this);
         }
 
         // Resumes the storyboard.
         private void resumeButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Resume(this);
+            myStoryboard.Resume(this);
         }
 
         // Advances the storyboard to its fill period.
         private void skipToFillButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.SkipToFill(this);
+            myStoryboard.SkipToFill(this);
         }
 
         // Updates the storyboard's speed.
@@ -144,13 +144,13 @@ namespace Microsoft.Samples.Animation.AnimatingWithStoryboards
         // Stops the storyboard.
         private void stopButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Stop(this);
+            myStoryboard.Stop(this);
         }
 
         // Removes the storyboard.
         private void removeButton_Clicked(object sender, RoutedEventArgs args)
         {
-             myStoryboard.Remove(this);
+            myStoryboard.Remove(this);
         }
     }
 }

@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Linq;
 using System.Activities;
 using System.Activities.Statements;
-using System.IO;
-using System.Xaml;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using System.Threading;
+using System.Xaml;
 
 namespace CompensationExample
 {
@@ -257,7 +257,7 @@ namespace CompensationExample
             AutoResetEvent syncEvent = new AutoResetEvent(false);
             WorkflowApplication wfApp = new WorkflowApplication(wf);
 
-            wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
+            wfApp.Completed = delegate (WorkflowApplicationCompletedEventArgs e)
             {
                 if (e.TerminationException != null)
                 {
@@ -274,7 +274,7 @@ namespace CompensationExample
                 syncEvent.Set();
             };
 
-            wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
+            wfApp.OnUnhandledException = delegate (WorkflowApplicationUnhandledExceptionEventArgs e)
             {
                 Console.WriteLine("Workflow Unhandled Exception:\n{0}: {1}",
                     e.UnhandledException.GetType().FullName,

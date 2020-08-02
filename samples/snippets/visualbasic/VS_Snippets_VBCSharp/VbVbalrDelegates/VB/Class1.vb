@@ -6,24 +6,24 @@
 
     ' <snippet14>
     ' <snippet1>
-    Delegate Function MathOperator( 
-        ByVal x As Double, 
-        ByVal y As Double 
+    Delegate Function MathOperator(
+        ByVal x As Double,
+        ByVal y As Double
     ) As Double
     ' </snippet1>
 
     ' <snippet2>
-    Function AddNumbers( 
-        ByVal x As Double, 
-        ByVal y As Double 
+    Function AddNumbers(
+        ByVal x As Double,
+        ByVal y As Double
     ) As Double
         Return x + y
     End Function
     ' </snippet2>
 
     ' <snippet3>
-    Function SubtractNumbers( 
-        ByVal x As Double, 
+    Function SubtractNumbers(
+        ByVal x As Double,
         ByVal y As Double
     ) As Double
         Return x - y
@@ -31,10 +31,10 @@
     ' </snippet3>
 
     ' <snippet4>
-    Sub DelegateTest( 
-        ByVal x As Double, 
-        ByVal op As MathOperator, 
-        ByVal y As Double 
+    Sub DelegateTest(
+        ByVal x As Double,
+        ByVal op As MathOperator,
+        ByVal y As Double
     )
         Dim ret As Double
         ret = op.Invoke(x, y) ' Call the method.

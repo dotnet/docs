@@ -61,7 +61,7 @@ class Example
             typeof(Example).GetMethod("LuckyHandler",
                 BindingFlags.NonPublic | BindingFlags.Instance);
         //</Snippet6>
-			
+
         // Create an instance of the delegate. Using the overloads
         // of CreateDelegate that take MethodInfo is recommended.
         //
@@ -137,7 +137,7 @@ class Example
         // delegates to be invoked.
         //
         //<Snippet12>
-        Application.Run((Form) exFormAsObj);
+        Application.Run((Form)exFormAsObj);
         //</Snippet12>
     }
 

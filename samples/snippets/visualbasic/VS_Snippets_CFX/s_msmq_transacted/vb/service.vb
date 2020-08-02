@@ -2,13 +2,13 @@
 ' This is the service code
 '  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
-Imports System.ServiceModel.Channels
+Imports System.Collections.Generic
 Imports System.Configuration
 Imports System.Messaging
-Imports System.ServiceModel
-Imports System.Transactions
 Imports System.Runtime.Serialization
-Imports System.Collections.Generic
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
+Imports System.Transactions
 
 Namespace Microsoft.ServiceModel.Samples
     ' Define the purchase order line item.

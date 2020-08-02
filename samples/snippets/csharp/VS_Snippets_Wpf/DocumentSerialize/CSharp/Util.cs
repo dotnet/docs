@@ -3,15 +3,15 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.IO;
-using System.Windows.Markup;
-using System.Windows.Threading;
-using System.Windows.Documents;
-using System.Windows.Media;
-using System.Windows;
-using System.Xml;
 using System.Security;
+using System.Text;
+using System.Windows;
+using System.Windows.Documents;
+using System.Windows.Markup;
+using System.Windows.Media;
+using System.Windows.Threading;
+using System.Xml;
 
 namespace SdkSample
 {

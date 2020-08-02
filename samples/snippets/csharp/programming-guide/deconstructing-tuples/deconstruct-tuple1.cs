@@ -10,7 +10,7 @@ public class Example
         var pop = result.Item2;
         var size = result.Item3;
 
-         // Do something with the data.
+        // Do something with the data.
     }
 
     private static (string, int, double) QueryCityData(string name)

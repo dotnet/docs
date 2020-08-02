@@ -3,10 +3,10 @@ using System;
 using System.Collections;
 using System.IO;
 using System.Runtime.Serialization;
-using System.Xml;
-using System.ServiceModel.Description;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
+using System.Xml;
 
 namespace Replay
 {

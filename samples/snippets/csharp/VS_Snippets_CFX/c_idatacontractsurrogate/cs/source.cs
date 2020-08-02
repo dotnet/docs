@@ -1,18 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections;
-using System.Text;
-using System.IO;
-using System.Xml;
-using System.Xml.Schema;
-using System.Runtime.Serialization;
-using System.CodeDom.Compiler;
-using System.Xml.Serialization;
 using System.CodeDom;
+using System.CodeDom.Compiler;
+using System.Collections;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
+using System.Runtime.Serialization;
 using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Description;
+using System.Text;
+using System.Xml;
+using System.Xml.Schema;
+using System.Xml.Serialization;
 
 namespace DCSurrogateSample
 {
@@ -269,7 +269,7 @@ namespace DCSurrogateSample
             //</snippet8>
         }
 
-        private void WSDLImport(string metadataAddress )
+        private void WSDLImport(string metadataAddress)
         {
             //<snippet9>
             MetadataExchangeClient mexClient = new MetadataExchangeClient(metadataAddress);
@@ -323,7 +323,7 @@ namespace DCSurrogateSample
     {
     }
 
-    public class InventorySurrogated:IDataContractSurrogate
+    public class InventorySurrogated : IDataContractSurrogate
     {
 
         #region IDataContractSurrogate Members

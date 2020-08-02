@@ -1,11 +1,11 @@
 ﻿// <snippet10>
 using System;
 using System.Windows;
-using System.Windows.Media;
 using System.Windows.Controls;
+using System.Windows.Forms.Integration;
+using System.Windows.Media;
 using System.Windows.Navigation;
 using MyControls;
-using System.Windows.Forms.Integration;
 
 namespace WpfHost
 {
@@ -106,11 +106,11 @@ namespace WpfHost
 
             if (args.IsOK)
             {
-                txtName.Inlines.Add( " " + args.MyName );
-                txtAddress.Inlines.Add( " " + args.MyStreetAddress );
-                txtCity.Inlines.Add( " " + args.MyCity );
-                txtState.Inlines.Add( " " + args.MyState );
-                txtZip.Inlines.Add( " " + args.MyZip );
+                txtName.Inlines.Add(" " + args.MyName);
+                txtAddress.Inlines.Add(" " + args.MyStreetAddress);
+                txtCity.Inlines.Add(" " + args.MyCity);
+                txtState.Inlines.Add(" " + args.MyState);
+                txtZip.Inlines.Add(" " + args.MyZip);
             }
         }
         // </snippet12>

@@ -1,5 +1,5 @@
-﻿Imports System.Xml
-Imports System.Configuration
+﻿Imports System.Configuration
+Imports System.Xml
 
 Namespace VisualBasic
     ''' <summary>

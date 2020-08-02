@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Annotations;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Windows.Annotations;
-using System.Windows.Input;
 
 namespace SDKSamples
 {
@@ -79,7 +79,7 @@ namespace SDKSamples
             }
 
             // If the pressed key is equal to the target key.
-            if(e.Key == target)
+            if (e.Key == target)
             {
                 // Incrementing  the number of hits, and updating
                 // the label which displays the number of hits.

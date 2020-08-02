@@ -2,14 +2,14 @@
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
 using System;
-using System.ServiceModel.Channels;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Messaging;
-using System.ServiceModel;
-using System.Transactions;
 using System.Runtime.Serialization;
-using System.Collections.Generic;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
+using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples
 {

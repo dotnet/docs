@@ -1,8 +1,8 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports System.Data
 Imports System.data.SqlTypes
+Imports System.Data
 
 
 Module Module1

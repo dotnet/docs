@@ -2,9 +2,9 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
-using System.Net;
 using System.IO;
 using System.IO.Packaging;
+using System.Net;
 using System.Printing;
 using System.Windows;
 using System.Windows.Annotations;
@@ -373,8 +373,8 @@ namespace SDKSample
                     // Print the document with annotations.
                     try
                     {
-                        xdw.Write(  GetAnnotationDocumentPaginator(
-                            _xpsDocument.GetFixedDocumentSequence() )  );
+                        xdw.Write(GetAnnotationDocumentPaginator(
+                            _xpsDocument.GetFixedDocumentSequence()));
                     }
                     catch (PrintingCanceledException)
                     {

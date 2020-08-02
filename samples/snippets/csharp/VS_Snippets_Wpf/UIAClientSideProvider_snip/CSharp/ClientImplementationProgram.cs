@@ -1,10 +1,10 @@
 ﻿// <Snippet201>
 using System;
-using System.Windows.Automation;
-using System.Windows.Automation.Provider;
+using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.IO;
+using System.Windows.Automation;
+using System.Windows.Automation.Provider;
 
 namespace CSClientProviderImplementation
 {

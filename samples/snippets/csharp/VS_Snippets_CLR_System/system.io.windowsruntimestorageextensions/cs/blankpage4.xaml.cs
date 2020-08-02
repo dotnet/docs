@@ -18,7 +18,7 @@ namespace ExampleApplication
         {
             using (StreamWriter writer =
                 new StreamWriter(await ApplicationData.Current.LocalFolder.OpenStreamForWriteAsync(
-                "testfile.txt",  CreationCollisionOption.OpenIfExists)))
+                "testfile.txt", CreationCollisionOption.OpenIfExists)))
             {
                 await writer.WriteLineAsync("new entry");
                 await writer.WriteLineAsync(UserText.Text);

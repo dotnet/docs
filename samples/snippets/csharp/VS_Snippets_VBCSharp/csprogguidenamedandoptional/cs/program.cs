@@ -40,5 +40,5 @@ namespace NamedAndOptionalSnippets
             Console.WriteLine($"Seller: {sellerName}, Order #: {orderNum}, Product: {productName}");
         }
     }
-//</Snippet1>
+    //</Snippet1>
 }

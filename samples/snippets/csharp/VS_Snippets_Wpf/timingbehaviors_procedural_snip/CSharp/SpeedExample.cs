@@ -7,8 +7,8 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
@@ -23,7 +23,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             this.WindowTitle = "Speed Example";
 
             StackPanel myStackPanel = new StackPanel();
-            myStackPanel.Margin = new Thickness( 20 );
+            myStackPanel.Margin = new Thickness(20);
 
             TextBlock myTextBlock = new TextBlock();
             myTextBlock.Text = "Speed=\"1\"";
@@ -34,40 +34,40 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             //
             Rectangle defaultSpeedRectangle = new Rectangle();
             defaultSpeedRectangle.Name = "defaultSpeedRectangle";
-            this.RegisterName( defaultSpeedRectangle.Name, defaultSpeedRectangle );
+            this.RegisterName(defaultSpeedRectangle.Name, defaultSpeedRectangle);
             defaultSpeedRectangle.Width = 20;
             defaultSpeedRectangle.Height = 20;
-            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             defaultSpeedRectangle.Fill = mySolidColorBrush;
             defaultSpeedRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(defaultSpeedRectangle);
 
             myTextBlock = new TextBlock();
-            myTextBlock.Margin= new Thickness(0,20,0,0);
+            myTextBlock.Margin = new Thickness(0, 20, 0, 0);
             myTextBlock.Text = "Speed=\"2\"";
             myStackPanel.Children.Add(myTextBlock);
 
             Rectangle fasterRectangle = new Rectangle();
             fasterRectangle.Name = "fasterRectangle";
-            this.RegisterName( fasterRectangle.Name, fasterRectangle );
+            this.RegisterName(fasterRectangle.Name, fasterRectangle);
             fasterRectangle.Width = 20;
             fasterRectangle.Height = 20;
-            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             fasterRectangle.Fill = mySolidColorBrush;
             fasterRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(fasterRectangle);
 
             myTextBlock = new TextBlock();
-            myTextBlock.Margin= new Thickness(0,20,0,0);
+            myTextBlock.Margin = new Thickness(0, 20, 0, 0);
             myTextBlock.Text = "Speed=\"0.5\"";
             myStackPanel.Children.Add(myTextBlock);
 
             Rectangle slowerRectangle = new Rectangle();
             slowerRectangle.Name = "slowerRectangle";
-            this.RegisterName( slowerRectangle.Name, slowerRectangle );
+            this.RegisterName(slowerRectangle.Name, slowerRectangle);
             slowerRectangle.Width = 20;
             slowerRectangle.Height = 20;
-            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             slowerRectangle.Fill = mySolidColorBrush;
             slowerRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(slowerRectangle);
@@ -80,7 +80,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             Storyboard.SetTargetProperty(myDoubleAnimation, new PropertyPath(Rectangle.WidthProperty));
             myDoubleAnimation.From = 20;
             myDoubleAnimation.To = 400;
-            myDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myDoubleAnimation.SpeedRatio = 1;
 
             //
@@ -118,7 +118,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             //  Create the button to restart the animations.
             //
             Button myButton = new Button();
-            myButton.Margin = new Thickness( 0,30,0,0 );
+            myButton.Margin = new Thickness(0, 30, 0, 0);
             myButton.HorizontalAlignment = HorizontalAlignment.Left;
             myButton.Content = "Restart Animations";
             myStackPanel.Children.Add(myButton);

@@ -1,7 +1,7 @@
-﻿Imports System.Threading
-Imports System.Threading.Tasks
+﻿Imports System.IO
 Imports System.Linq
-Imports System.IO
+Imports System.Threading
+Imports System.Threading.Tasks
 Imports System.Windows.Forms
 
 Module Module1

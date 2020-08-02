@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.BrushExamples
 {
@@ -31,7 +31,7 @@ namespace Microsoft.Samples.BrushExamples
             myRectangle.Height = 150;
             myRectangle.Stroke = Brushes.LimeGreen;
             myRectangle.StrokeThickness = 1;
-            myRectangle.Margin = new Thickness(0,5,0,0);
+            myRectangle.Margin = new Thickness(0, 5, 0, 0);
 
             // Load the image.
             BitmapImage theImage =

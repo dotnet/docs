@@ -1,8 +1,8 @@
 ﻿Option Strict On
 Option Explicit On
+Imports System.Collections.Concurrent
 Imports System.Threading
 Imports System.Threading.Tasks
-Imports System.Collections.Concurrent
 
 Module Module1
 

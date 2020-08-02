@@ -4,12 +4,11 @@ Option Strict On
 Option Infer On
 
 Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Text
 Imports System.Data.Services.Client
-
 '<snippetUsingForAttributes>
 Imports System.Data.Services.Common
+Imports System.Linq
+Imports System.Text
 Imports NorthwindClient.Northwind
 
 '</snippetUsingForAttributes>

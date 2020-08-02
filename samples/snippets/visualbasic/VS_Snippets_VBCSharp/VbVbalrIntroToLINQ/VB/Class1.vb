@@ -1,6 +1,6 @@
-﻿Imports System.Linq
-Imports System.Collections.Generic
+﻿Imports System.Collections.Generic
 Imports System.Diagnostics
+Imports System.Linq
 
 Class Customer
     Public Country As String

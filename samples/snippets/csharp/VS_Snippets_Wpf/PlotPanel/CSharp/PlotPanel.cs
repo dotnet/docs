@@ -1,40 +1,40 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 using System.Windows.Media;
-using System.Threading;
+using System.Windows.Shapes;
 
 namespace PlotPanel
 {
-	public class app : System.Windows.Application
-	{
+    public class app : System.Windows.Application
+    {
         PlotPanel plot1;
         Window mainWindow;
         Rectangle rect1;
 
-        protected override void OnStartup (StartupEventArgs e)
-		{
-		base.OnStartup (e);
-		CreateAndShowMainWindow ();
-		}
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
+        }
 
-		private void CreateAndShowMainWindow()
-		{
-		// Create the application's main window
-		mainWindow = new System.Windows.Window();
-        plot1 = new PlotPanel();
-        plot1.Background = Brushes.White;
+        private void CreateAndShowMainWindow()
+        {
+            // Create the application's main window
+            mainWindow = new System.Windows.Window();
+            plot1 = new PlotPanel();
+            plot1.Background = Brushes.White;
 
-        rect1 = new Rectangle();
-        rect1.Fill = Brushes.CornflowerBlue;
-        rect1.Width = 200;
-        rect1.Height = 200;
-        mainWindow.Content = plot1;
-        plot1.Children.Add(rect1);
-        mainWindow.Title = "Custom Panel Sample";
-        mainWindow.Show();
-		}
+            rect1 = new Rectangle();
+            rect1.Fill = Brushes.CornflowerBlue;
+            rect1.Width = 200;
+            rect1.Height = 200;
+            mainWindow.Content = plot1;
+            plot1.Children.Add(rect1);
+            mainWindow.Title = "Custom Panel Sample";
+            mainWindow.Show();
+        }
         // <Snippet1>
         public class PlotPanel : Panel
         {
@@ -58,7 +58,7 @@ namespace PlotPanel
                     panelDesiredSize = child.DesiredSize;
                 }
 
-                return panelDesiredSize ;
+                return panelDesiredSize;
             }
             //</Snippet2>
             protected override Size ArrangeOverride(Size finalSize)
@@ -76,13 +76,13 @@ namespace PlotPanel
         //</Snippet1>
     }
 
-	internal static class EntryClass
-	{
-		[System.STAThread()]
-		private static void Main()
-		{
-			app app = new app();
-			app.Run();
-		}
-	}
+    internal static class EntryClass
+    {
+        [System.STAThread()]
+        private static void Main()
+        {
+            app app = new app();
+            app.Run();
+        }
+    }
 }

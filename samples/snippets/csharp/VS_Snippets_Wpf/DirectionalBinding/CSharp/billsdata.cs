@@ -16,7 +16,7 @@ namespace SDKSample
         private int savings = 0;
         public NetIncome()
         {
-            savings = totalIncome - (rent+food+misc);
+            savings = totalIncome - (rent + food + misc);
         }
 
         public int TotalIncome
@@ -27,7 +27,7 @@ namespace SDKSample
             }
             set
             {
-                if( TotalIncome != value)
+                if (TotalIncome != value)
                 {
                     totalIncome = value;
                     OnPropertyChanged("TotalIncome");
@@ -42,7 +42,7 @@ namespace SDKSample
             }
             set
             {
-                if( Rent != value)
+                if (Rent != value)
                 {
                     rent = value;
                     OnPropertyChanged("Rent");
@@ -58,7 +58,7 @@ namespace SDKSample
             }
             set
             {
-                if( Food != value)
+                if (Food != value)
                 {
                     food = value;
                     OnPropertyChanged("Food");
@@ -74,7 +74,7 @@ namespace SDKSample
             }
             set
             {
-                if( Misc != value)
+                if (Misc != value)
                 {
                     misc = value;
                     OnPropertyChanged("Misc");
@@ -90,7 +90,7 @@ namespace SDKSample
             }
             set
             {
-                if( Savings != value)
+                if (Savings != value)
                 {
                     savings = value;
                     OnPropertyChanged("Savings");
@@ -101,17 +101,17 @@ namespace SDKSample
 
         private void UpdateSavings()
         {
-            Savings = TotalIncome - (Rent+Misc+Food);
-            if(Savings < 0)
-            {}
-            else if(Savings >= 0)
-            {}
+            Savings = TotalIncome - (Rent + Misc + Food);
+            if (Savings < 0)
+            { }
+            else if (Savings >= 0)
+            { }
         }
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(String info)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
-            if (handler !=null)
+            if (handler != null)
             {
                 handler(this, new PropertyChangedEventArgs(info));
             }

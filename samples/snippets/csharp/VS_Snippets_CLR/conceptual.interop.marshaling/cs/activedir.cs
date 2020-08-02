@@ -8,21 +8,21 @@ public struct DsBrowseInfo
 {
     public const int MAX_PATH = 256;
 
-    public int    Size;
+    public int Size;
     public IntPtr OwnerHandle;
     public string Caption;
     public string Title;
     public string Root;
     public string Path;
-    public int    PathSize;
-    public int    Flags;
+    public int PathSize;
+    public int Flags;
     public IntPtr Callback;
-    public int    Param;
-    public int    ReturnFormat;
+    public int Param;
+    public int ReturnFormat;
     public string UserName;
     public string Password;
     public string ObjectClass;
-    public int    ObjectClassSize;
+    public int ObjectClassSize;
 }
 
 internal static class NativeMethods

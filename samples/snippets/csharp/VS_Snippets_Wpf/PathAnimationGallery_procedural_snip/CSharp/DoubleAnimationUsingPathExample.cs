@@ -107,7 +107,7 @@ namespace SDKSample
             pathAnimationStoryboard.Children.Add(translateYAnimation);
 
             // Start the animations when the rectangle is loaded.
-            aRectangle.Loaded += delegate(object sender, RoutedEventArgs e)
+            aRectangle.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 // Start the storyboard.
                 pathAnimationStoryboard.Begin(this);

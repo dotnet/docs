@@ -1,8 +1,8 @@
-﻿Imports System.Windows
+﻿Imports System.Threading
+Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Media
 Imports System.Windows.Documents
-Imports System.Threading
+Imports System.Windows.Media
 
 Namespace Table_Demo
 

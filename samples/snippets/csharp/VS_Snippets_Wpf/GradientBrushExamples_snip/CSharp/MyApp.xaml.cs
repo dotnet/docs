@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Windows;
-using System.Data;
-using System.Xml;
 using System.Configuration;
+using System.Data;
+using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Navigation;
+using System.Xml;
 
 namespace Microsoft.Samples.GradientBrushExamples
 {
@@ -22,10 +22,10 @@ namespace Microsoft.Samples.GradientBrushExamples
         private void myAppStartup(object sender, StartupEventArgs args)
         {
 
-          Window myWindow = new Window();
-          myWindow.Content = new SampleViewer();
+            Window myWindow = new Window();
+            myWindow.Content = new SampleViewer();
 
-          myWindow.Show();
+            myWindow.Show();
         }
 
         private void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs args)

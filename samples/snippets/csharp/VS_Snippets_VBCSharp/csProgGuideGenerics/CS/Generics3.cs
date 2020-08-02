@@ -1,8 +1,8 @@
 ﻿//<Snippet54>
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
-using System.Collections;
 
 static class VarianceWorkaround
 {
@@ -31,7 +31,7 @@ static class VarianceWorkaround
     private class EnumerableWrapper<S, D> : IEnumerable<D>
         where S : D
     {
-    //</Snippet60>
+        //</Snippet60>
         public EnumerableWrapper(IEnumerable<S> source)
         {
             this.source = source;
@@ -193,7 +193,7 @@ static class VarianceWorkaround
         {
             if (item is S)
             {
-                return this.source.IndexOf((S) item);
+                return this.source.IndexOf((S)item);
             }
             else
             {
@@ -214,7 +214,7 @@ static class VarianceWorkaround
                 throw new Exception("Invalid type exception");
             }
         }
-    //</Snippet62>
+        //</Snippet62>
 
         public void RemoveAt(int index)
         {
@@ -312,6 +312,7 @@ namespace MultipleConstraints
     class Base { }
     class Test<T, U>
         where U : struct
-        where T : Base, new() { }
+        where T : Base, new()
+    { }
     //</Snippet64>
 }

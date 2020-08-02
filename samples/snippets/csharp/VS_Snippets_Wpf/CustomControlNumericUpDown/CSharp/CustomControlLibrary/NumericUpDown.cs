@@ -1,12 +1,12 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Globalization;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Input;
+using System.Windows.Automation;
 using System.Windows.Automation.Peers;
 using System.Windows.Automation.Provider;
-using System.Windows.Automation;
-using System.Globalization;
-using System.Diagnostics;
+using System.Windows.Controls;
+using System.Windows.Input;
 
 namespace CustomControlLibrary
 {
@@ -102,7 +102,7 @@ namespace CustomControlLibrary
             DependencyProperty.Register(
                 "Minimum", typeof(decimal), typeof(NumericUpDown),
                 new FrameworkPropertyMetadata(DefaultMinValue,
-                    new PropertyChangedCallback(OnMinimumChanged),new CoerceValueCallback(CoerceMinimum)
+                    new PropertyChangedCallback(OnMinimumChanged), new CoerceValueCallback(CoerceMinimum)
                 )
             );
 
@@ -143,7 +143,7 @@ namespace CustomControlLibrary
         {
             NumericUpDown control = (NumericUpDown)element;
             decimal newMaximum = (decimal)value;
-            return Decimal.Round(Math.Max(newMaximum, control.Minimum),control.DecimalPlaces);
+            return Decimal.Round(Math.Max(newMaximum, control.Minimum), control.DecimalPlaces);
         }
         #endregion
         #region Change
@@ -156,7 +156,7 @@ namespace CustomControlLibrary
         public static readonly DependencyProperty ChangeProperty =
             DependencyProperty.Register(
                 "Change", typeof(decimal), typeof(NumericUpDown),
-                new FrameworkPropertyMetadata(DefaultChange, new PropertyChangedCallback(OnChangeChanged),new CoerceValueCallback(CoerceChange)),
+                new FrameworkPropertyMetadata(DefaultChange, new PropertyChangedCallback(OnChangeChanged), new CoerceValueCallback(CoerceChange)),
             new ValidateValueCallback(ValidateChange)
             );
 
@@ -256,7 +256,7 @@ namespace CustomControlLibrary
         private void updateValueString()
         {
             _numberFormatInfo.NumberDecimalDigits = this.DecimalPlaces;
-            string newValueString = this.Value.ToString("f",_numberFormatInfo);
+            string newValueString = this.Value.ToString("f", _numberFormatInfo);
             this.SetValue(ValueStringPropertyKey, newValueString);
         }
         private NumberFormatInfo _numberFormatInfo = new NumberFormatInfo();
@@ -301,7 +301,7 @@ namespace CustomControlLibrary
 
         private static void InitializeCommands()
         {
-            _increaseCommand = new RoutedCommand("IncreaseCommand",typeof(NumericUpDown));
+            _increaseCommand = new RoutedCommand("IncreaseCommand", typeof(NumericUpDown));
             CommandManager.RegisterClassCommandBinding(typeof(NumericUpDown), new CommandBinding(_increaseCommand, OnIncreaseCommand));
             CommandManager.RegisterClassInputBinding(typeof(NumericUpDown), new InputBinding(_increaseCommand, new KeyGesture(Key.Up)));
 
@@ -329,11 +329,11 @@ namespace CustomControlLibrary
 
         protected virtual void OnIncrease()
         {
-            this.Value+=Change;
+            this.Value += Change;
         }
         protected virtual void OnDecrease()
         {
-            this.Value-=Change;
+            this.Value -= Change;
         }
 
         private static RoutedCommand _increaseCommand;
@@ -473,7 +473,7 @@ namespace CustomControlLibrary
                 return (NumericUpDown)base.Owner;
             }
         }
-    //<SnippetClose>
+        //<SnippetClose>
     }
     //</SnippetClose>
 }

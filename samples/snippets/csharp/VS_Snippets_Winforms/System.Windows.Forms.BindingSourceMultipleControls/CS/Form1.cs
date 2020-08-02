@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
-using System.IO;
 
 namespace MultipleControls
 {
@@ -153,7 +153,7 @@ namespace MultipleControls
                 // If not, end the current edit.
                 e.Binding.BindingManagerBase.EndCurrentEdit(); ;
         }
- 	//</snippet11>
+        //</snippet11>
         [STAThread]
         static void Main()
         {

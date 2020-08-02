@@ -64,7 +64,7 @@ namespace TransferLearningTF
             // </SnippetMapKeyToValue>
 
             // <SnippetLoadData>
-            IDataView trainingData = mlContext.Data.LoadFromTextFile<ImageData>(path:  _trainTagsTsv, hasHeader: false);
+            IDataView trainingData = mlContext.Data.LoadFromTextFile<ImageData>(path: _trainTagsTsv, hasHeader: false);
             // </SnippetLoadData>
 
             // Train the model

@@ -103,7 +103,7 @@ namespace Snippets
             //<snippet4>
             Claim c1 = Claim.CreateUpnClaim("someone@example.com");
             Claim c2 = Claim.CreateUpnClaim("example\\someone");
-        //</snippet4>
+            //</snippet4>
         }
 
         //<snippet5>

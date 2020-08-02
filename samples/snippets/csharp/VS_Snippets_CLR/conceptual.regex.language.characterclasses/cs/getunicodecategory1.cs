@@ -4,14 +4,14 @@ using System.Text.RegularExpressions;
 
 public class Example
 {
-   public static void Main()
-   {
-      char[] chars = { 'a', 'X', '8', ',', ' ', '\u0009', '!' };
+    public static void Main()
+    {
+        char[] chars = { 'a', 'X', '8', ',', ' ', '\u0009', '!' };
 
-      foreach (char ch in chars)
-         Console.WriteLine("'{0}': {1}", Regex.Escape(ch.ToString()),
-                           Char.GetUnicodeCategory(ch));
-   }
+        foreach (char ch in chars)
+            Console.WriteLine("'{0}': {1}", Regex.Escape(ch.ToString()),
+                              Char.GetUnicodeCategory(ch));
+    }
 }
 // The example displays the following output:
 //       'a': LowercaseLetter

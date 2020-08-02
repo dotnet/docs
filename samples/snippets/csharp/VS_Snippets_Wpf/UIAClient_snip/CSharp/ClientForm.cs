@@ -11,18 +11,18 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
-using System.Windows.Forms;
-using System.Windows.Automation;
 using System.Windows;
-using System.Diagnostics;
+using System.Windows.Automation;
+using System.Windows.Forms;
 
 namespace CustomElementClient
 {
     public partial class Form1 : Form
     {
-// <Snippet185>
+        // <Snippet185>
         public struct CursorPoint
         {
             public int X;
@@ -44,7 +44,7 @@ namespace CustomElementClient
                 return false;
             }
         }
-// </Snippet185>
+        // </Snippet185>
 
         AutomationElement RootElement = null;
         AutomationElement MainWindowElement = null;
@@ -58,7 +58,7 @@ namespace CustomElementClient
         {
             InitializeComponent();
         }
-// <Snippet181>
+        // <Snippet181>
         private AutomationElement ElementFromCursor()
         {
             // Convert mouse position from System.Drawing.Point to System.Windows.Point.
@@ -66,7 +66,7 @@ namespace CustomElementClient
             AutomationElement element = AutomationElement.FromPoint(point);
             return element;
         }
-// </Snippet181>
+        // </Snippet181>
 
         // <Snippet171>
         /// <summary>
@@ -98,7 +98,7 @@ namespace CustomElementClient
         }
         // </Snippet171>
 
-// <Snippet174>
+        // <Snippet174>
         /// <summary>
         /// Walks the UI Automation tree and adds the control type of each enabled control
         /// element it finds to a TreeView.
@@ -125,7 +125,7 @@ namespace CustomElementClient
                 elementNode = walker.GetNextSibling(elementNode);
             }
         }
-// </Snippet174>
+        // </Snippet174>
 
         // <Snippet110>
         /// <summary>
@@ -932,7 +932,7 @@ namespace CustomElementClient
             AutomationElement elementListItem = ListElement.FindFirst(TreeScope.Children, cond);
 
             ShowUsage();
-           // VISTAONLY GetPhysicalCursorPos(ref pt);
+            // VISTAONLY GetPhysicalCursorPos(ref pt);
 
             /* Test for a WPF listbox in the window under the cursor.
             System.Windows.Point pt = new System.Windows.Point(Cursor.Position.X, Cursor.Position.Y);
@@ -987,7 +987,7 @@ namespace CustomElementClient
             //cond = new PropertyCondition(AutomationElement.AutomationIdProperty, "btnDisable");
             //elementButton = MainWindowElement.FindFirst(TreeScope.Subtree, cond);
 
-           // ps.SubscribePropertyChange(elementButton);
+            // ps.SubscribePropertyChange(elementButton);
         }
     }  // end class
 }  // end namespace

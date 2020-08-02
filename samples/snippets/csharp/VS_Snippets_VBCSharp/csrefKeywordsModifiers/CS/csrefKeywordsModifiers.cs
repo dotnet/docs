@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 //for #8
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace csrefKeywordsModifiers
 {
@@ -36,7 +36,7 @@ namespace csrefKeywordsModifiers
     {
         void M();
     }
-    
+
     abstract class C : I
     {
         public abstract void M();
@@ -49,8 +49,8 @@ namespace csrefKeywordsModifiers
         protected int _x = 100;
         protected int _y = 150;
         public abstract void AbstractMethod();   // Abstract method
-        public abstract int X    { get; }
-        public abstract int Y    { get; }
+        public abstract int X { get; }
+        public abstract int Y { get; }
     }
 
     class DerivedClass : BaseClass
@@ -96,7 +96,7 @@ namespace AccessibilityDomainNamespace
         public static int publicInt;
         internal static int internalInt;
         private static int privateInt = 0;
-        
+
         static T1()
         {
             // T1 can access public or internal members
@@ -238,7 +238,7 @@ namespace csrefKeywordsModifiers
     //using System.Runtime.InteropServices;
     class ExternTest
     {
-        [DllImport("User32.dll", CharSet=CharSet.Unicode)]
+        [DllImport("User32.dll", CharSet = CharSet.Unicode)]
         public static extern int MessageBox(IntPtr h, string m, string c, int type);
 
         static int Main()
@@ -383,7 +383,7 @@ namespace csrefKeywordsModifiers
         protected int y;
     }
 
-    class DerivedPoint: Point
+    class DerivedPoint : Point
     {
         static void Main()
         {
@@ -437,42 +437,42 @@ namespace csrefKeywordsModifiers
     //<snippet15>
     public class ReadOnlyTest
     {
-       class SampleClass
-       {
-          public int x;
-          // Initialize a readonly field.
-          public readonly int y = 25;
-          public readonly int z;
+        class SampleClass
+        {
+            public int x;
+            // Initialize a readonly field.
+            public readonly int y = 25;
+            public readonly int z;
 
-          public SampleClass()
-          {
-             // Initialize a readonly instance field.
-             z = 24;
-          }
+            public SampleClass()
+            {
+                // Initialize a readonly instance field.
+                z = 24;
+            }
 
-          public SampleClass(int p1, int p2, int p3)
-          {
-             x = p1;
-             y = p2;
-             z = p3;
-          }
-       }
+            public SampleClass(int p1, int p2, int p3)
+            {
+                x = p1;
+                y = p2;
+                z = p3;
+            }
+        }
 
-       static void Main()
-       {
-          var p1 = new SampleClass(11, 21, 32);   // OK
-          Console.WriteLine($"p1: x={p1.x}, y={p1.y}, z={p1.z}");
-          var p2 = new SampleClass();
-          p2.x = 55;   // OK
-          Console.WriteLine($"p2: x={p2.x}, y={p2.y}, z={p2.z}");
-       }
+        static void Main()
+        {
+            var p1 = new SampleClass(11, 21, 32);   // OK
+            Console.WriteLine($"p1: x={p1.x}, y={p1.y}, z={p1.z}");
+            var p2 = new SampleClass();
+            p2.x = 55;   // OK
+            Console.WriteLine($"p2: x={p2.x}, y={p2.y}, z={p2.z}");
+        }
     }
     /*
      Output:
         p1: x=11, y=21, z=32
         p2: x=55, y=25, z=24
     */
-     //</snippet15>
+    //</snippet15>
 
     //<snippet16>
     class X
@@ -741,7 +741,7 @@ namespace csrefKeywordsModifiers
             using (var sr = new System.IO.StreamReader(@"C:\Users\Public\Documents\test.txt"))
             {
                 string s = null;
-                while((s = sr.ReadLine()) != null)
+                while ((s = sr.ReadLine()) != null)
                 {
                     Console.WriteLine(s);
                 }
@@ -772,8 +772,8 @@ namespace csrefKeywordsModifiers
     {
         private string name;
 
-       // Override auto-implemented property with ordinary property
-       // to provide specialized accessor behavior.
+        // Override auto-implemented property with ordinary property
+        // to provide specialized accessor behavior.
         public override string Name
         {
             get

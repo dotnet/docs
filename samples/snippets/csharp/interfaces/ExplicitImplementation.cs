@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace interfaces
 {
@@ -93,7 +93,7 @@ namespace interfaces
                 // IControl.Paint
                 // ISurface.Paint
                 //</SnippetCallExplicitImplementation>
-           }
+            }
         }
 
         private static class NameCollisions
@@ -101,7 +101,7 @@ namespace interfaces
             //<SnippetNameCollision>
             interface ILeft
             {
-                int P { get;}
+                int P { get; }
             }
             interface IRight
             {

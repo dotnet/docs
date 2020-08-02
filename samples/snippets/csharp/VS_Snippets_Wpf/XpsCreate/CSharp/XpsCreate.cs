@@ -2,14 +2,14 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
-using System.IO;
 using System.Collections.Generic;
+using System.IO;
 using System.IO.Packaging;
-using System.Xml;
+using System.Printing;
 using System.Windows.Forms;
 using System.Windows.Xps;
 using System.Windows.Xps.Packaging;
-using System.Printing;
+using System.Xml;
 
 public class XpsCreate
 {
@@ -17,8 +17,8 @@ public class XpsCreate
     const string packageName = "XpsDocument.xps"; // (without PrintTicket)
     const string image1 = "picture.jpg";
     const string image2 = "image.tif";
-    const string font1  = "courier.ttf";
-    const string font2  = "arial.ttf";
+    const string font1 = "courier.ttf";
+    const string font2 = "arial.ttf";
     const string fontContentType =
         "application/vnd.ms-package.obfuscated-opentype";
 
@@ -203,12 +203,12 @@ public class XpsCreate
 
         // Collections of images and fonts used in the current page.
         List<XpsResource> xpsImages = new List<XpsResource>();
-        List<XpsResource> xpsFonts  = new List<XpsResource>();
+        List<XpsResource> xpsFonts = new List<XpsResource>();
 
         try
         {
             XpsImage xpsImage;
-            XpsFont  xpsFont;
+            XpsFont xpsFont;
 
             // Add, Write, and Commit image1 to the current page.
             xpsImage = fixedPageWriter.AddImage(XpsImageType.JpegImageType);
@@ -288,8 +288,8 @@ public class XpsCreate
             printTicket.Collation = Collation.Collated;
         }
 
-        if ( printCapabilites.DuplexingCapability.Contains(
-                Duplexing.TwoSidedLongEdge) )
+        if (printCapabilites.DuplexingCapability.Contains(
+                Duplexing.TwoSidedLongEdge))
         {
             printTicket.Duplexing = Duplexing.TwoSidedLongEdge;
         }
@@ -309,77 +309,77 @@ public class XpsCreate
         Dictionary<string, List<XpsResource>> resources)
     {
         List<XpsResource> xpsImages = resources["XpsImage"];
-        List<XpsResource> xpsFonts  = resources["XpsFont"];
+        List<XpsResource> xpsFonts = resources["XpsFont"];
 
         // Element are indented for reading purposes only
         xmlWriter.WriteStartElement("FixedPage");
-            xmlWriter.WriteAttributeString("Width", "816");
-            xmlWriter.WriteAttributeString("Height", "1056");
-            xmlWriter.WriteAttributeString("xmlns",
-                "http://schemas.microsoft.com/xps/2005/06");
-            xmlWriter.WriteAttributeString("xml:lang", "en-US");
+        xmlWriter.WriteAttributeString("Width", "816");
+        xmlWriter.WriteAttributeString("Height", "1056");
+        xmlWriter.WriteAttributeString("xmlns",
+            "http://schemas.microsoft.com/xps/2005/06");
+        xmlWriter.WriteAttributeString("xml:lang", "en-US");
 
-            xmlWriter.WriteStartElement("Glyphs");
-                xmlWriter.WriteAttributeString("Fill", "#ff000000");
-                xmlWriter.WriteAttributeString(
-                    "FontUri", xpsFonts[0].Uri.ToString());
-                xmlWriter.WriteAttributeString("FontRenderingEmSize", "18");
-                xmlWriter.WriteAttributeString("OriginX", "120");
-                xmlWriter.WriteAttributeString("OriginY", "110");
-                xmlWriter.WriteAttributeString("UnicodeString", documentUri);
-            xmlWriter.WriteEndElement();
+        xmlWriter.WriteStartElement("Glyphs");
+        xmlWriter.WriteAttributeString("Fill", "#ff000000");
+        xmlWriter.WriteAttributeString(
+            "FontUri", xpsFonts[0].Uri.ToString());
+        xmlWriter.WriteAttributeString("FontRenderingEmSize", "18");
+        xmlWriter.WriteAttributeString("OriginX", "120");
+        xmlWriter.WriteAttributeString("OriginY", "110");
+        xmlWriter.WriteAttributeString("UnicodeString", documentUri);
+        xmlWriter.WriteEndElement();
 
-            xmlWriter.WriteStartElement("Glyphs");
-                xmlWriter.WriteAttributeString("Fill", "#ff000000");
-                xmlWriter.WriteAttributeString(
-                    "FontUri", xpsFonts[1].Uri.ToString());
-                xmlWriter.WriteAttributeString("FontRenderingEmSize", "16");
-                xmlWriter.WriteAttributeString("OriginX", "120");
-                xmlWriter.WriteAttributeString("OriginY", "130");
-                xmlWriter.WriteAttributeString(
-                    "UnicodeString", "Test String in Arial");
-            xmlWriter.WriteEndElement();
+        xmlWriter.WriteStartElement("Glyphs");
+        xmlWriter.WriteAttributeString("Fill", "#ff000000");
+        xmlWriter.WriteAttributeString(
+            "FontUri", xpsFonts[1].Uri.ToString());
+        xmlWriter.WriteAttributeString("FontRenderingEmSize", "16");
+        xmlWriter.WriteAttributeString("OriginX", "120");
+        xmlWriter.WriteAttributeString("OriginY", "130");
+        xmlWriter.WriteAttributeString(
+            "UnicodeString", "Test String in Arial");
+        xmlWriter.WriteEndElement();
 
-            xmlWriter.WriteStartElement("Path");
-                xmlWriter.WriteAttributeString(
-                    "Data", "M 120,187 L 301,187 301,321 120,321 z");
-                xmlWriter.WriteStartElement("Path.Fill");
-                    xmlWriter.WriteStartElement("ImageBrush");
-                        xmlWriter.WriteAttributeString(
-                            "ImageSource", xpsImages[0].Uri.ToString());
-                        xmlWriter.WriteAttributeString(
-                            "Viewbox", "0,0,181,134");
-                        xmlWriter.WriteAttributeString("TileMode", "None");
-                        xmlWriter.WriteAttributeString(
-                            "ViewboxUnits", "Absolute");
-                        xmlWriter.WriteAttributeString(
-                            "ViewportUnits", "Absolute");
-                        xmlWriter.WriteAttributeString(
-                            "Viewport", "120,187,181,134");
-                    xmlWriter.WriteEndElement();
-                xmlWriter.WriteEndElement();
-            xmlWriter.WriteEndElement();
+        xmlWriter.WriteStartElement("Path");
+        xmlWriter.WriteAttributeString(
+            "Data", "M 120,187 L 301,187 301,321 120,321 z");
+        xmlWriter.WriteStartElement("Path.Fill");
+        xmlWriter.WriteStartElement("ImageBrush");
+        xmlWriter.WriteAttributeString(
+            "ImageSource", xpsImages[0].Uri.ToString());
+        xmlWriter.WriteAttributeString(
+            "Viewbox", "0,0,181,134");
+        xmlWriter.WriteAttributeString("TileMode", "None");
+        xmlWriter.WriteAttributeString(
+            "ViewboxUnits", "Absolute");
+        xmlWriter.WriteAttributeString(
+            "ViewportUnits", "Absolute");
+        xmlWriter.WriteAttributeString(
+            "Viewport", "120,187,181,134");
+        xmlWriter.WriteEndElement();
+        xmlWriter.WriteEndElement();
+        xmlWriter.WriteEndElement();
 
-            xmlWriter.WriteStartElement("Path");
-                xmlWriter.WriteAttributeString(
-                    "Data", "M 120,357 L 324,357 324,510 120,510 z");
-                xmlWriter.WriteStartElement("Path.Fill");
-                    xmlWriter.WriteStartElement("ImageBrush");
-                        xmlWriter.WriteAttributeString(
-                            "ImageSource", xpsImages[1].Uri.ToString());
-                        xmlWriter.WriteAttributeString(
-                            "Viewbox", "0,0,204,153");
-                        xmlWriter.WriteAttributeString(
-                            "TileMode", "None");
-                        xmlWriter.WriteAttributeString(
-                            "ViewboxUnits", "Absolute");
-                        xmlWriter.WriteAttributeString(
-                            "ViewportUnits", "Absolute");
-                        xmlWriter.WriteAttributeString(
-                            "Viewport", "120,357,204,153");
-                    xmlWriter.WriteEndElement();
-                xmlWriter.WriteEndElement();
-            xmlWriter.WriteEndElement();
+        xmlWriter.WriteStartElement("Path");
+        xmlWriter.WriteAttributeString(
+            "Data", "M 120,357 L 324,357 324,510 120,510 z");
+        xmlWriter.WriteStartElement("Path.Fill");
+        xmlWriter.WriteStartElement("ImageBrush");
+        xmlWriter.WriteAttributeString(
+            "ImageSource", xpsImages[1].Uri.ToString());
+        xmlWriter.WriteAttributeString(
+            "Viewbox", "0,0,204,153");
+        xmlWriter.WriteAttributeString(
+            "TileMode", "None");
+        xmlWriter.WriteAttributeString(
+            "ViewboxUnits", "Absolute");
+        xmlWriter.WriteAttributeString(
+            "ViewportUnits", "Absolute");
+        xmlWriter.WriteAttributeString(
+            "Viewport", "120,357,204,153");
+        xmlWriter.WriteEndElement();
+        xmlWriter.WriteEndElement();
+        xmlWriter.WriteEndElement();
         xmlWriter.WriteEndElement();
     }// end:WritePageContent()
     //</SnippetXpsCreateWritePageContent>
@@ -391,8 +391,8 @@ public class XpsCreate
         byte[] buf = new byte[bufSize];
         int bytesRead = 0;
 
-        using ( FileStream fileStream =
-            new FileStream(resource, FileMode.Open, FileAccess.Read) )
+        using (FileStream fileStream =
+            new FileStream(resource, FileMode.Open, FileAccess.Read))
         {
             while ((bytesRead = fileStream.Read(buf, 0, bufSize)) > 0)
             {

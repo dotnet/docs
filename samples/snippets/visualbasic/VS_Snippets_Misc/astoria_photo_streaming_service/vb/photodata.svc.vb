@@ -1,10 +1,10 @@
 ﻿Imports System.Data.Services
 Imports System.Data.Services.Common
-Imports System.Linq
-Imports System.ServiceModel.Web
 Imports System.Data.Services.Providers
-Imports PhotoService
+Imports System.Linq
 Imports System.ServiceModel
+Imports System.ServiceModel.Web
+Imports PhotoService
 
 '<System.ServiceModel.ServiceBehavior(IncludeExceptionDetailInFaults:=True)> _
 '<snippetPhotoServiceStreamingProvider>

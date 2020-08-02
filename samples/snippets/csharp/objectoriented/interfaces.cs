@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace objectoriented
 {
@@ -15,7 +15,7 @@ namespace objectoriented
     //<SnippetImplementEquatable>
     public class Car : IEquatable<Car>
     {
-        public string Make {get; set;}
+        public string Make { get; set; }
         public string Model { get; set; }
         public string Year { get; set; }
 

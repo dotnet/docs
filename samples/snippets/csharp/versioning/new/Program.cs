@@ -2,7 +2,7 @@
 
 class Program
 {
-#region sample
+    #region sample
     public class BaseClass
     {
         public void MyMethod()
@@ -27,5 +27,5 @@ class Program
         b.MyMethod();
         d.MyMethod();
     }
-#endregion
+    #endregion
 }

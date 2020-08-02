@@ -2,11 +2,11 @@
 Option Explicit On
 Option Strict On
 
-' <snippet35>
-Imports System.IO
 ' </snippet35>
 
 Imports System.Drawing
+' <snippet35>
+Imports System.IO
 Imports System.Windows.Forms
 Imports Microsoft.VisualBasic.FileIO
 

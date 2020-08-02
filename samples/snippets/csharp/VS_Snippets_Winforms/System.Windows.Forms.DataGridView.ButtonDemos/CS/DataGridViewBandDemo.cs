@@ -1,7 +1,7 @@
 ﻿//<snippet0>
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System;
 
 public class DataGridViewBandDemo : Form
 {

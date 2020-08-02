@@ -196,7 +196,7 @@ namespace SDKSampleHelper
                 PrintSingleFixedContentDocument(xdwPrint, fd);
         }// end:PrintSingleFixedContentDocument()
 
-		//<SnippetPrintMultipleFixedContentDocuments>
+        //<SnippetPrintMultipleFixedContentDocuments>
 
         // ---------------- PrintMultipleFixedContentDocuments ----------------
         /// <summary>
@@ -228,7 +228,7 @@ namespace SDKSampleHelper
                 PrintMultipleFixedContentDocuments(xdwPrint, fds);
         }// end:PrintMultipleFixedContentDocuments()
 
-		//</SnippetPrintMultipleFixedContentDocuments>
+        //</SnippetPrintMultipleFixedContentDocuments>
 
         // -------------------- PrintDocumentViewerContent --------------------
         /// <summary>
@@ -516,7 +516,7 @@ namespace SDKSampleHelper
             }
         }// end:AsyncPrintingProgress()
 
-		//<SnippetMultipleFixedContentDocuments_WritingPrintTicketRequired>
+        //<SnippetMultipleFixedContentDocuments_WritingPrintTicketRequired>
 
         // ----- MultipleFixedContentDocuments_WritingPrintTicketRequired -----
         /// <summary>
@@ -578,7 +578,7 @@ namespace SDKSampleHelper
             // to FixedPage as well.
         }// end:MultipleFixedContentDocuments_WritingPrintTicketRequired()
 
-		//</SnippetMultipleFixedContentDocuments_WritingPrintTicketRequired>
+        //</SnippetMultipleFixedContentDocuments_WritingPrintTicketRequired>
 
         // -------------- CreateFixedDocumentSequencePrintTicket --------------
         /// <summary>
@@ -633,7 +633,7 @@ namespace SDKSampleHelper
 
         #region Helper Methods
 
-		//<SnippetPrintQueueSnip>
+        //<SnippetPrintQueueSnip>
         // -------------------- GetPrintXpsDocumentWriter() -------------------
         /// <summary>
         ///   Returns an XpsDocumentWriter for the default print queue.</summary>
@@ -651,7 +651,7 @@ namespace SDKSampleHelper
             XpsDocumentWriter xpsdw = PrintQueue.CreateXpsDocumentWriter(pq);
             return xpsdw;
         }// end:GetPrintXpsDocumentWriter()
-		//</SnippetPrintQueueSnip>
+         //</SnippetPrintQueueSnip>
 
         // --------------- GetPrintXpsDocumentWriter(PrintQueue) --------------
         /// <summary>
@@ -703,12 +703,12 @@ namespace SDKSampleHelper
         #endregion // Helper Methods
 
         #region Private Data
-        private int                   _batchProgress = 0;
-        private int                   _firstDocumentPrintTicket = 0;
-        private String                _contentDir = null;
-        private WPFContent            _wpfContent = null;
-        private VisualsToXpsDocument  _activeVtoXPSD = null;
-        private XpsDocumentWriter     _xpsdwActive = null;
+        private int _batchProgress = 0;
+        private int _firstDocumentPrintTicket = 0;
+        private String _contentDir = null;
+        private WPFContent _wpfContent = null;
+        private VisualsToXpsDocument _activeVtoXPSD = null;
+        private XpsDocumentWriter _xpsdwActive = null;
         #endregion // Private Data
 
     }// end:class XpsPrintHelper

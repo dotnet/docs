@@ -1,7 +1,7 @@
 ﻿//<Snippet2>
+using System.IO;
 using System.Windows;
 using Microsoft.Ink;
-using System.IO;
 
 namespace InkRecognition
 {
@@ -49,7 +49,8 @@ namespace InkRecognition
             }
         }
 
-        private void btnClear_Click(object sender, RoutedEventArgs e) {
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
             theInkCanvas.Strokes.Clear();
         }
     }

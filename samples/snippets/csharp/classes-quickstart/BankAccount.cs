@@ -7,7 +7,7 @@ namespace classes
     {
         public string Number { get; }
         public string Owner { get; set; }
-#region BalanceComputation
+        #region BalanceComputation
         public decimal Balance
         {
             get
@@ -21,10 +21,10 @@ namespace classes
                 return balance;
             }
         }
-#endregion
+        #endregion
 
         private static int accountNumberSeed = 1234567890;
-#region Constructor
+        #region Constructor
         public BankAccount(string name, decimal initialBalance)
         {
             this.Number = accountNumberSeed.ToString();
@@ -33,13 +33,13 @@ namespace classes
             this.Owner = name;
             MakeDeposit(initialBalance, DateTime.Now, "Initial balance");
         }
-#endregion
+        #endregion
 
-#region TransactionDeclaration
+        #region TransactionDeclaration
         private List<Transaction> allTransactions = new List<Transaction>();
-#endregion
+        #endregion
 
-#region DepositAndWithdrawal
+        #region DepositAndWithdrawal
         public void MakeDeposit(decimal amount, DateTime date, string note)
         {
             if (amount <= 0)
@@ -63,9 +63,9 @@ namespace classes
             var withdrawal = new Transaction(-amount, date, note);
             allTransactions.Add(withdrawal);
         }
-#endregion
+        #endregion
 
-#region History
+        #region History
         public string GetAccountHistory()
         {
             var report = new System.Text.StringBuilder();
@@ -80,6 +80,6 @@ namespace classes
 
             return report.ToString();
         }
-#endregion
+        #endregion
     }
 }

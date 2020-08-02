@@ -4,19 +4,19 @@ using System.Text.RegularExpressions;
 
 public class Example
 {
-   public static void Main()
-   {
-      string input = "aa1bb2cc3dd4ee5";
-      string pattern = @"\d+";
-      string substitution = "$`";
-      Console.WriteLine("Matches:");
-      foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("   {0} at position {1}", match.Value, match.Index);
+    public static void Main()
+    {
+        string input = "aa1bb2cc3dd4ee5";
+        string pattern = @"\d+";
+        string substitution = "$`";
+        Console.WriteLine("Matches:");
+        foreach (Match match in Regex.Matches(input, pattern))
+            Console.WriteLine("   {0} at position {1}", match.Value, match.Index);
 
-      Console.WriteLine("Input string:  {0}", input);
-      Console.WriteLine("Output string: " +
-                        Regex.Replace(input, pattern, substitution));
-   }
+        Console.WriteLine("Input string:  {0}", input);
+        Console.WriteLine("Output string: " +
+                          Regex.Replace(input, pattern, substitution));
+    }
 }
 // The example displays the following output:
 //    Matches:

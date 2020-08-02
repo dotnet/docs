@@ -2,11 +2,11 @@
 // <Snippet1>
 using System;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Security;
 using System.ServiceModel.Security.Tokens;
-using System.Security.Permissions;
 // </Snippet1>
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]

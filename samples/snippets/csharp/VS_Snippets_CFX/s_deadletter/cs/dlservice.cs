@@ -2,11 +2,11 @@
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 // <Snippet3>
 using System;
-using System.ServiceModel.Description;
 using System.Configuration;
 using System.Messaging;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
 using System.Transactions;
 
 namespace Microsoft.ServiceModel.Samples

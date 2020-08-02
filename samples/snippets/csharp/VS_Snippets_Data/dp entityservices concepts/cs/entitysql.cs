@@ -1,14 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Collections;
-using System.Data.Common;
+using System.Collections.Generic;
 using System.Data;
-using System.IO;
-using System.Data.SqlClient;
+using System.Data.Common;
 using System.Data.EntityClient;
 using System.Data.Metadata.Edm;
 using System.Data.Objects;
 using System.Data.Objects.DataClasses;
+using System.Data.SqlClient;
+using System.IO;
 using System.Text;
 
 namespace Microsoft.Samples.Entity

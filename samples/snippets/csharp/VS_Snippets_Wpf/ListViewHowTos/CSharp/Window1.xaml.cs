@@ -29,7 +29,7 @@ namespace ListViewHowTos
         void ListViewItem_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
 
-            XmlElement book = ((ListViewItem) sender).Content as XmlElement;
+            XmlElement book = ((ListViewItem)sender).Content as XmlElement;
 
             if (book == null)
             {

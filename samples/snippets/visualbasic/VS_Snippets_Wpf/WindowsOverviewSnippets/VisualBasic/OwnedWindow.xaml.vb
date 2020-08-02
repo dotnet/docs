@@ -10,9 +10,9 @@ Imports System.Windows.Media.Imaging
 Imports System.Windows.Shapes
 
 Partial Public Class OwnedWindow
-	Inherits System.Windows.Window
-	Public Sub New()
-		InitializeComponent()
-	End Sub
+    Inherits System.Windows.Window
+    Public Sub New()
+        InitializeComponent()
+    End Sub
 
 End Class

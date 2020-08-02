@@ -15,7 +15,7 @@ namespace SDKSample
             myButton.Content = "Click";
 
             // Set the center point of the transforms.
-            myButton.RenderTransformOrigin = new Point(0.5,0.5);
+            myButton.RenderTransformOrigin = new Point(0.5, 0.5);
 
             // Create a transform to scale the size of the button.
             ScaleTransform myScaleTransform = new ScaleTransform();

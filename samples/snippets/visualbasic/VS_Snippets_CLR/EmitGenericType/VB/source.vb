@@ -1,7 +1,7 @@
 ﻿'<Snippet1>
+Imports System.Collections.Generic
 Imports System.Reflection
 Imports System.Reflection.Emit
-Imports System.Collections.Generic
 
 ' Define a trivial base class and two trivial interfaces 
 ' to use when demonstrating constraints.

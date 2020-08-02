@@ -4,8 +4,8 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace GridSplitterSnips
 {
@@ -24,8 +24,8 @@ namespace GridSplitterSnips
         private void InitializeGridSplitterSnip(object sender, EventArgs e)
         {
             GridSplitter myGridSplitter = new GridSplitter();
-            Grid.SetRow(myGridSplitter,6);
-            Grid.SetColumn(myGridSplitter,6);
+            Grid.SetRow(myGridSplitter, 6);
+            Grid.SetColumn(myGridSplitter, 6);
             //<SnippetDragIncrement>
             myGridSplitter.DragIncrement = 10;
             //</SnippetDragIncrement>
@@ -47,12 +47,12 @@ namespace GridSplitterSnips
             //</SnippetShowsPreview>
 
             //<SnippetGridSplitterSimpleExample>
-             GridSplitter mySimpleGridSplitter = new GridSplitter();
-             Grid.SetColumn(mySimpleGridSplitter, 0);
-             mySimpleGridSplitter.Background = Brushes.Blue;
-             mySimpleGridSplitter.HorizontalAlignment = HorizontalAlignment.Right;
-             mySimpleGridSplitter.VerticalAlignment = VerticalAlignment.Stretch;
-             mySimpleGridSplitter.Width = 5;
+            GridSplitter mySimpleGridSplitter = new GridSplitter();
+            Grid.SetColumn(mySimpleGridSplitter, 0);
+            mySimpleGridSplitter.Background = Brushes.Blue;
+            mySimpleGridSplitter.HorizontalAlignment = HorizontalAlignment.Right;
+            mySimpleGridSplitter.VerticalAlignment = VerticalAlignment.Stretch;
+            mySimpleGridSplitter.Width = 5;
             //</SnippetGridSplitterSimpleExample>
         }
     }

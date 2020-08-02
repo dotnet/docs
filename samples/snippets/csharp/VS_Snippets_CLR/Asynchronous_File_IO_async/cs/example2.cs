@@ -1,7 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Threading.Tasks;
 using System.Windows;
-using System.IO;
 
 namespace WpfApplication1
 {
@@ -12,7 +12,7 @@ namespace WpfApplication1
             InitializeComponent();
         }
 
-	// <snippet2>
+        // <snippet2>
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             string UserDirectory = @"c:\Users\exampleuser\";
@@ -35,6 +35,6 @@ namespace WpfApplication1
                 await Destination.WriteAsync(buffer, 0, numRead);
             }
         }
-	// </snippet2>
+        // </snippet2>
     }
 }

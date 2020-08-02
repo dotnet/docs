@@ -5,15 +5,15 @@ get Domain Name System information for the specified host computer.
 */
 
 using System;
+using System.Collections;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using System.Collections;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-// Create a state object that holds each requested host name,
-// an associated IPHostEntry object or a SocketException.
+    // Create a state object that holds each requested host name,
+    // an associated IPHostEntry object or a SocketException.
     public class HostRequest
     {
         // Stores the requested host name.
@@ -44,7 +44,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             }
             set
             {
-                 e = value;
+                e = value;
             }
         }
 
@@ -91,7 +91,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                     hostData.Add(request);
                     // Start the asynchronous request for DNS information.
                     Dns.BeginGetHostEntry(host, callBack, request);
-                 }
+                }
             } while (host.Length > 0);
             // The user has entered all of the host names for lookup.
             // Now wait until the threads complete.
@@ -100,44 +100,44 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 UpdateUserInterface();
             }
             // Display the results.
-            foreach(HostRequest r in hostData)
+            foreach (HostRequest r in hostData)
             {
-                    if (r.ExceptionObject != null)
+                if (r.ExceptionObject != null)
+                {
+                    Console.WriteLine("Request for host {0} returned the following error: {1}.",
+                        r.HostName, r.ExceptionObject.Message);
+                }
+                else
+                {
+                    // Get the results.
+                    IPHostEntry h = r.HostEntry;
+                    string[] aliases = h.Aliases;
+                    IPAddress[] addresses = h.AddressList;
+                    if (aliases.Length > 0)
                     {
-                        Console.WriteLine("Request for host {0} returned the following error: {1}.",
-                            r.HostName, r.ExceptionObject.Message);
-                    }
-                    else
-                    {
-                        // Get the results.
-                        IPHostEntry h = r.HostEntry;
-                        string[] aliases = h.Aliases;
-                        IPAddress[] addresses = h.AddressList;
-                        if (aliases.Length > 0)
+                        Console.WriteLine("Aliases for {0}", r.HostName);
+                        for (int j = 0; j < aliases.Length; j++)
                         {
-                            Console.WriteLine("Aliases for {0}", r.HostName);
-                            for (int j = 0; j < aliases.Length; j++)
-                            {
-                                Console.WriteLine("{0}", aliases[j]);
-                            }
-                        }
-                        if (addresses.Length > 0)
-                        {
-                            Console.WriteLine("Addresses for {0}", r.HostName);
-                            for (int k = 0; k < addresses.Length; k++)
-                            {
-                                Console.WriteLine("{0}",addresses[k].ToString());
-                            }
+                            Console.WriteLine("{0}", aliases[j]);
                         }
                     }
+                    if (addresses.Length > 0)
+                    {
+                        Console.WriteLine("Addresses for {0}", r.HostName);
+                        for (int k = 0; k < addresses.Length; k++)
+                        {
+                            Console.WriteLine("{0}", addresses[k].ToString());
+                        }
+                    }
+                }
             }
-       }
+        }
 
         // The following method is invoked when each asynchronous operation completes.
         static void ProcessDnsInformation(IAsyncResult result)
         {
-           // Get the state object associated with this request.
-           HostRequest request = (HostRequest) result.AsyncState;
+            // Get the state object associated with this request.
+            HostRequest request = (HostRequest)result.AsyncState;
             try
             {
                 // Get the results and store them in the state object.

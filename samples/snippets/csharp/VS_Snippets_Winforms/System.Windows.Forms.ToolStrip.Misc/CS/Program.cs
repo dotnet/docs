@@ -1,8 +1,8 @@
 ﻿// <snippet1>
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
 using System.Drawing;
+using System.Windows.Forms;
 // </snippet1>
 
 namespace WindowsApplication2
@@ -583,42 +583,42 @@ namespace WindowsApplication2
                 switch (targetComboBox.SelectedItem.ToString())
                 {
                     case "Reset":
-                    {
-                        ms.RenderMode = ToolStripRenderMode.ManagerRenderMode;
-                        ts.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+                        {
+                            ms.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+                            ts.RenderMode = ToolStripRenderMode.ManagerRenderMode;
 
-                        // Set the default RenderMode to Professional.
-                        ToolStripManager.RenderMode = ToolStripManagerRenderMode.Professional;
+                            // Set the default RenderMode to Professional.
+                            ToolStripManager.RenderMode = ToolStripManagerRenderMode.Professional;
 
-                        break;
-                    }
+                            break;
+                        }
 
                     case "All":
-                    {
-                        ms.RenderMode = ToolStripRenderMode.ManagerRenderMode;
-                        ts.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+                        {
+                            ms.RenderMode = ToolStripRenderMode.ManagerRenderMode;
+                            ts.RenderMode = ToolStripRenderMode.ManagerRenderMode;
 
-                        // Assign the custom renderer at the application level.
-                        ToolStripManager.Renderer = new CustomProfessionalRenderer();
+                            // Assign the custom renderer at the application level.
+                            ToolStripManager.Renderer = new CustomProfessionalRenderer();
 
-                        break;
-                    }
+                            break;
+                        }
 
                     case "MenuStrip":
-                    {
-                        // Assign the custom renderer to the MenuStrip control only.
-                        ms.Renderer = new CustomProfessionalRenderer();
+                        {
+                            // Assign the custom renderer to the MenuStrip control only.
+                            ms.Renderer = new CustomProfessionalRenderer();
 
-                        break;
-                    }
+                            break;
+                        }
 
                     case "ToolStrip":
-                    {
-                        // Assign the custom renderer to the ToolStrip control only.
-                        ts.Renderer = new CustomProfessionalRenderer();
+                        {
+                            // Assign the custom renderer to the ToolStrip control only.
+                            ts.Renderer = new CustomProfessionalRenderer();
 
-                        break;
-                    }
+                            break;
+                        }
                 }
             }
         }

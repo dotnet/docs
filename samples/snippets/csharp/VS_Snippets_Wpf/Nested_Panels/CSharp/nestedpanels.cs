@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Threading;
 
 namespace SDKSample
 {
@@ -13,15 +13,15 @@ namespace SDKSample
         DockPanel myDockPanel;
         Window mainWindow;
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup (e);
-            CreateAndShowMainWindow ();
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
         }
-        private void CreateAndShowMainWindow ()
+        private void CreateAndShowMainWindow()
         {
             // Create the application's main window.
-            mainWindow = new Window ();
+            mainWindow = new Window();
             mainWindow.Title = "Nested Panels Sample";
 
             // Define the Parent Border
@@ -145,7 +145,7 @@ namespace SDKSample
 
             // Add the Border as the Content of the Parent Window Object.
             mainWindow.Content = myBorder;
-            mainWindow.Show ();
+            mainWindow.Show();
         }
     }
 
@@ -153,10 +153,10 @@ namespace SDKSample
     internal static class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
-            MyApp app = new MyApp ();
-            app.Run ();
+            MyApp app = new MyApp();
+            app.Run();
         }
     }
 }

@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Buffers;
-using System.Text;
-using System.Linq;
 using System.Globalization;
+using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Text;
 
 namespace RuneSamples
 {

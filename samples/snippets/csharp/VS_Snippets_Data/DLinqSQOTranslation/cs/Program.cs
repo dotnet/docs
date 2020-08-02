@@ -14,9 +14,9 @@ namespace cs_sqotranslation
             // <Snippet1>
             var custQuery =
                 (from cust in db.Customers
-                where cust.City == "London"
-                orderby cust.CustomerID
-                select cust).Skip(1).Take(1);
+                 where cust.City == "London"
+                 orderby cust.CustomerID
+                 select cust).Skip(1).Take(1);
             // </Snippet1>
         }
 
@@ -38,7 +38,7 @@ namespace cs_sqotranslation
             db.Customers.Select(c => c);
             db.Customers.Select(c => new { c.CustomerID, c.City });
             db.Orders.Select(o => new { o.OrderID, o.Customer.City });
-            db.Orders.Select(o => new { o.OrderID, o.Customer });	
+            db.Orders.Select(o => new { o.OrderID, o.Customer });
             // </Snippet3>
         }
 

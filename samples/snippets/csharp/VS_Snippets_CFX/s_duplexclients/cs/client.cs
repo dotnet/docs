@@ -7,65 +7,65 @@ using System.ServiceModel.Channels;
 // contract.
 public class CallbackHandler : ICalculatorDuplexCallback
 {
-  public void Result(double result)
-  {
-    Console.WriteLine("Result({0})", result);
-  }
-  public void Equation(string equation)
-  {
-    Console.WriteLine("Equation({0})", equation);
-  }
+    public void Result(double result)
+    {
+        Console.WriteLine("Result({0})", result);
+    }
+    public void Equation(string equation)
+    {
+        Console.WriteLine("Equation({0})", equation);
+    }
 }
 
 public class Client
 {
-  public static void Main()
-  {
-    // Picks up configuration from the config file.
-
-    CalculatorDuplexClient wcfClient
-      = new CalculatorDuplexClient(new InstanceContext(new CallbackHandler()));
-    try
+    public static void Main()
     {
-      // Call the AddTo service operation.
-      double value = 100.00D;
-      wcfClient.AddTo(value);
+        // Picks up configuration from the config file.
 
-      // Call the SubtractFrom service operation.
-      value = 50.00D;
-      wcfClient.SubtractFrom(value);
+        CalculatorDuplexClient wcfClient
+          = new CalculatorDuplexClient(new InstanceContext(new CallbackHandler()));
+        try
+        {
+            // Call the AddTo service operation.
+            double value = 100.00D;
+            wcfClient.AddTo(value);
 
-      // Call the MultiplyBy service operation.
-      value = 17.65D;
-      wcfClient.MultiplyBy(value);
+            // Call the SubtractFrom service operation.
+            value = 50.00D;
+            wcfClient.SubtractFrom(value);
 
-      // Call the DivideBy service operation.
-      value = 2.00D;
-      wcfClient.DivideBy(value);
+            // Call the MultiplyBy service operation.
+            value = 17.65D;
+            wcfClient.MultiplyBy(value);
 
-      // Complete equation.
-      wcfClient.Clear();
+            // Call the DivideBy service operation.
+            value = 2.00D;
+            wcfClient.DivideBy(value);
 
-      // Wait for callback messages to complete before
-      // closing.
-      System.Threading.Thread.Sleep(5000);
+            // Complete equation.
+            wcfClient.Clear();
 
-      // Close the WCF client.
-      wcfClient.Close();
-      Console.WriteLine("Done!");
+            // Wait for callback messages to complete before
+            // closing.
+            System.Threading.Thread.Sleep(5000);
+
+            // Close the WCF client.
+            wcfClient.Close();
+            Console.WriteLine("Done!");
+        }
+        catch (TimeoutException timeProblem)
+        {
+            Console.WriteLine("The service operation timed out. " + timeProblem.Message);
+            wcfClient.Abort();
+            Console.Read();
+        }
+        catch (CommunicationException commProblem)
+        {
+            Console.WriteLine("There was a communication problem. " + commProblem.Message);
+            wcfClient.Abort();
+            Console.Read();
+        }
     }
-    catch (TimeoutException timeProblem)
-    {
-      Console.WriteLine("The service operation timed out. " + timeProblem.Message);
-      wcfClient.Abort();
-      Console.Read();
-    }
-    catch (CommunicationException commProblem)
-    {
-      Console.WriteLine("There was a communication problem. " + commProblem.Message);
-      wcfClient.Abort();
-      Console.Read();
-    }
-  }
 }
 // </snippet1>

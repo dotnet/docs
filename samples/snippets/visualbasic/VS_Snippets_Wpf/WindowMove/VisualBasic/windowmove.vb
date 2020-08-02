@@ -50,17 +50,17 @@
 ' *
 ' *****************************************************************************
 
+Imports System.ComponentModel
+Imports System.Diagnostics
+Imports System.IO
+Imports System.Security.Permissions
+Imports System.Text
+Imports System.Threading
 Imports System.Windows
-Imports System.Windows.Documents
 Imports System.Windows.Automation
 Imports System.Windows.Controls
-Imports System.Threading
+Imports System.Windows.Documents
 Imports System.Windows.Threading
-Imports System.IO
-Imports System.Text
-Imports System.Diagnostics
-Imports System.ComponentModel
-Imports System.Security.Permissions
 
 
 Namespace SDKSample

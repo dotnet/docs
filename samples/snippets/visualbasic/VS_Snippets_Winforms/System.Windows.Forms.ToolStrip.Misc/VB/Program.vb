@@ -1,7 +1,7 @@
-﻿ ' <snippet1>
+﻿' <snippet1>
 Imports System.Collections.Generic
-Imports System.Windows.Forms
 Imports System.Drawing
+Imports System.Windows.Forms
 ' </snippet1>
 
 Public Class Program
@@ -26,90 +26,90 @@ End Class
 ' This code example demonstrates how to use ToolStripPanel
 ' controls with a multiple document interface (MDI).
 Public Class Form1
-   Inherits Form
-   
-   Public Sub New()
-      ' Make the Form an MDI parent.
-      Me.IsMdiContainer = True
-      
-      ' <snippet11>
-      ' Create ToolStripPanel controls.
-      Dim tspTop As New ToolStripPanel()
-      Dim tspBottom As New ToolStripPanel()
-      Dim tspLeft As New ToolStripPanel()
-      Dim tspRight As New ToolStripPanel()
-      
-      ' Dock the ToolStripPanel controls to the edges of the form.
-      tspTop.Dock = DockStyle.Top
-      tspBottom.Dock = DockStyle.Bottom
-      tspLeft.Dock = DockStyle.Left
-      tspRight.Dock = DockStyle.Right
-      
-      ' Create ToolStrip controls to move among the 
-      ' ToolStripPanel controls.
-      ' Create the "Top" ToolStrip control and add
-      ' to the corresponding ToolStripPanel.
-      Dim tsTop As New ToolStrip()
-      tsTop.Items.Add("Top")
-      tspTop.Join(tsTop)
-      
-      ' Create the "Bottom" ToolStrip control and add
-      ' to the corresponding ToolStripPanel.
-      Dim tsBottom As New ToolStrip()
-      tsBottom.Items.Add("Bottom")
-      tspBottom.Join(tsBottom)
-      
-      ' Create the "Right" ToolStrip control and add
-      ' to the corresponding ToolStripPanel.
-      Dim tsRight As New ToolStrip()
-      tsRight.Items.Add("Right")
-      tspRight.Join(tsRight)
-      
-      ' Create the "Left" ToolStrip control and add
-      ' to the corresponding ToolStripPanel.
-      Dim tsLeft As New ToolStrip()
-      tsLeft.Items.Add("Left")
-      tspLeft.Join(tsLeft)
+    Inherits Form
+
+    Public Sub New()
+        ' Make the Form an MDI parent.
+        Me.IsMdiContainer = True
+
+        ' <snippet11>
+        ' Create ToolStripPanel controls.
+        Dim tspTop As New ToolStripPanel()
+        Dim tspBottom As New ToolStripPanel()
+        Dim tspLeft As New ToolStripPanel()
+        Dim tspRight As New ToolStripPanel()
+
+        ' Dock the ToolStripPanel controls to the edges of the form.
+        tspTop.Dock = DockStyle.Top
+        tspBottom.Dock = DockStyle.Bottom
+        tspLeft.Dock = DockStyle.Left
+        tspRight.Dock = DockStyle.Right
+
+        ' Create ToolStrip controls to move among the 
+        ' ToolStripPanel controls.
+        ' Create the "Top" ToolStrip control and add
+        ' to the corresponding ToolStripPanel.
+        Dim tsTop As New ToolStrip()
+        tsTop.Items.Add("Top")
+        tspTop.Join(tsTop)
+
+        ' Create the "Bottom" ToolStrip control and add
+        ' to the corresponding ToolStripPanel.
+        Dim tsBottom As New ToolStrip()
+        tsBottom.Items.Add("Bottom")
+        tspBottom.Join(tsBottom)
+
+        ' Create the "Right" ToolStrip control and add
+        ' to the corresponding ToolStripPanel.
+        Dim tsRight As New ToolStrip()
+        tsRight.Items.Add("Right")
+        tspRight.Join(tsRight)
+
+        ' Create the "Left" ToolStrip control and add
+        ' to the corresponding ToolStripPanel.
+        Dim tsLeft As New ToolStrip()
+        tsLeft.Items.Add("Left")
+        tspLeft.Join(tsLeft)
         ' </snippet11>
 
-      ' <snippet12>
-      ' Create a MenuStrip control with a new window.
-      Dim ms As New MenuStrip()
-      Dim windowMenu As New ToolStripMenuItem("Window")
-      Dim windowNewMenu As New ToolStripMenuItem("New", Nothing, New EventHandler(AddressOf windowNewMenu_Click))
-      windowMenu.DropDownItems.Add(windowNewMenu)
-      CType(windowMenu.DropDown, ToolStripDropDownMenu).ShowImageMargin = False
-      CType(windowMenu.DropDown, ToolStripDropDownMenu).ShowCheckMargin = True
-      
-      ' Assign the ToolStripMenuItem that displays 
-      ' the list of child forms.
-      ms.MdiWindowListItem = windowMenu
-      
-      ' Add the window ToolStripMenuItem to the MenuStrip.
-      ms.Items.Add(windowMenu)
-      
-      ' Dock the MenuStrip to the top of the form.
-      ms.Dock = DockStyle.Top
-      
-      ' The Form.MainMenuStrip property determines the merge target.
-      Me.MainMenuStrip = ms
+        ' <snippet12>
+        ' Create a MenuStrip control with a new window.
+        Dim ms As New MenuStrip()
+        Dim windowMenu As New ToolStripMenuItem("Window")
+        Dim windowNewMenu As New ToolStripMenuItem("New", Nothing, New EventHandler(AddressOf windowNewMenu_Click))
+        windowMenu.DropDownItems.Add(windowNewMenu)
+        CType(windowMenu.DropDown, ToolStripDropDownMenu).ShowImageMargin = False
+        CType(windowMenu.DropDown, ToolStripDropDownMenu).ShowCheckMargin = True
+
+        ' Assign the ToolStripMenuItem that displays 
+        ' the list of child forms.
+        ms.MdiWindowListItem = windowMenu
+
+        ' Add the window ToolStripMenuItem to the MenuStrip.
+        ms.Items.Add(windowMenu)
+
+        ' Dock the MenuStrip to the top of the form.
+        ms.Dock = DockStyle.Top
+
+        ' The Form.MainMenuStrip property determines the merge target.
+        Me.MainMenuStrip = ms
         ' </snippet12>
-      
-      ' Add the ToolStripPanels to the form in reverse order.
-      Me.Controls.Add(tspRight)
-      Me.Controls.Add(tspLeft)
-      Me.Controls.Add(tspBottom)
-      Me.Controls.Add(tspTop)
-      
-      ' Add the MenuStrip last.
-      ' This is important for correct placement in the z-order.
-      Me.Controls.Add(ms)
+
+        ' Add the ToolStripPanels to the form in reverse order.
+        Me.Controls.Add(tspRight)
+        Me.Controls.Add(tspLeft)
+        Me.Controls.Add(tspBottom)
+        Me.Controls.Add(tspTop)
+
+        ' Add the MenuStrip last.
+        ' This is important for correct placement in the z-order.
+        Me.Controls.Add(ms)
     End Sub
-   
-   ' This event handler is invoked when 
-   ' the "New" ToolStripMenuItem is clicked.
-   ' It creates a new Form and sets its MdiParent 
-   ' property to the main form.
+
+    ' This event handler is invoked when 
+    ' the "New" ToolStripMenuItem is clicked.
+    ' It creates a new Form and sets its MdiParent 
+    ' property to the main form.
     Private Sub windowNewMenu_Click(ByVal sender As Object, ByVal e As EventArgs)
         Dim f As New Form()
         f.MdiParent = Me
@@ -124,44 +124,44 @@ End Class
 ' to define custom professional colors at runtime.
 ' <snippet21>
 Class Form2
-   Inherits Form
-   
-   Public Sub New()
-      ' Create a new ToolStrip control.
-      Dim ts As New ToolStrip()
-      
-      ' Populate the ToolStrip control.
-      ts.Items.Add("Apples")
-      ts.Items.Add("Oranges")
-      ts.Items.Add("Pears")
-      ts.Items.Add("Change Colors", Nothing, New EventHandler(AddressOf ChangeColors_Click))
-      
-      ' Create a new MenuStrip.
-      Dim ms As New MenuStrip()
+    Inherits Form
 
-      ' Dock the MenuStrip control to the top of the form.
-      ms.Dock = DockStyle.Top
-      
-      ' Add the top-level menu items.
-      ms.Items.Add("File")
-      ms.Items.Add("Edit")
-      ms.Items.Add("View")
-      ms.Items.Add("Window")
-      
-      ' <snippet23>
-      ' Add the ToolStrip to Controls collection.
-      Me.Controls.Add(ts)
-      
-      ' Add the MenuStrip control last.
-      ' This is important for correct placement in the z-order.
-      Me.Controls.Add(ms)
-      ' </snippet23>
+    Public Sub New()
+        ' Create a new ToolStrip control.
+        Dim ts As New ToolStrip()
+
+        ' Populate the ToolStrip control.
+        ts.Items.Add("Apples")
+        ts.Items.Add("Oranges")
+        ts.Items.Add("Pears")
+        ts.Items.Add("Change Colors", Nothing, New EventHandler(AddressOf ChangeColors_Click))
+
+        ' Create a new MenuStrip.
+        Dim ms As New MenuStrip()
+
+        ' Dock the MenuStrip control to the top of the form.
+        ms.Dock = DockStyle.Top
+
+        ' Add the top-level menu items.
+        ms.Items.Add("File")
+        ms.Items.Add("Edit")
+        ms.Items.Add("View")
+        ms.Items.Add("Window")
+
+        ' <snippet23>
+        ' Add the ToolStrip to Controls collection.
+        Me.Controls.Add(ts)
+
+        ' Add the MenuStrip control last.
+        ' This is important for correct placement in the z-order.
+        Me.Controls.Add(ms)
+        ' </snippet23>
     End Sub
-   
-   ' <snippet22>
-   ' This event handler is invoked when the "Change colors"
-   ' ToolStripItem is clicked. It assigns the Renderer
-   ' property for the ToolStrip control.
+
+    ' <snippet22>
+    ' This event handler is invoked when the "Change colors"
+    ' ToolStripItem is clicked. It assigns the Renderer
+    ' property for the ToolStrip control.
     Sub ChangeColors_Click(ByVal sender As Object, ByVal e As EventArgs)
         ToolStripManager.Renderer = New ToolStripProfessionalRenderer(New CustomProfessionalColors())
     End Sub
@@ -173,36 +173,36 @@ End Class
 ' This class defines the gradient colors for 
 ' the MenuStrip and the ToolStrip.
 Class CustomProfessionalColors
-   Inherits ProfessionalColorTable
-   
-   Public Overrides ReadOnly Property ToolStripGradientBegin() As Color
-      Get
-         Return Color.BlueViolet
-      End Get 
-   End Property
-   
-   Public Overrides ReadOnly Property ToolStripGradientMiddle() As Color
-      Get
-         Return Color.CadetBlue
-      End Get 
-   End Property
-   
-   Public Overrides ReadOnly Property ToolStripGradientEnd() As Color
-      Get
-         Return Color.CornflowerBlue
-      End Get 
-   End Property
-   
-   Public Overrides ReadOnly Property MenuStripGradientBegin() As Color
-      Get
-         Return Color.Salmon
-      End Get 
-   End Property
-   
-   Public Overrides ReadOnly Property MenuStripGradientEnd() As Color
-      Get
-         Return Color.OrangeRed
-      End Get
+    Inherits ProfessionalColorTable
+
+    Public Overrides ReadOnly Property ToolStripGradientBegin() As Color
+        Get
+            Return Color.BlueViolet
+        End Get
+    End Property
+
+    Public Overrides ReadOnly Property ToolStripGradientMiddle() As Color
+        Get
+            Return Color.CadetBlue
+        End Get
+    End Property
+
+    Public Overrides ReadOnly Property ToolStripGradientEnd() As Color
+        Get
+            Return Color.CornflowerBlue
+        End Get
+    End Property
+
+    Public Overrides ReadOnly Property MenuStripGradientBegin() As Color
+        Get
+            Return Color.Salmon
+        End Get
+    End Property
+
+    Public Overrides ReadOnly Property MenuStripGradientEnd() As Color
+        Get
+            Return Color.OrangeRed
+        End Get
     End Property
 
 End Class
@@ -216,50 +216,50 @@ End Class
 Class Form3
     Inherits Form
 
-   ' Declare the ContextMenuStrip control.
-   Private fruitContextMenuStrip As ContextMenuStrip
-   
-   
-   Public Sub New()
-      ' Create a new ContextMenuStrip control.
-      fruitContextMenuStrip = New ContextMenuStrip()
-      
-      ' Attach an event handler for the 
-      ' ContextMenuStrip control's Opening event.
-      AddHandler fruitContextMenuStrip.Opening, AddressOf cms_Opening
-      
-      ' Create a new ToolStrip control.
-      Dim ts As New ToolStrip()
-      
-      ' Create a ToolStripDropDownButton control and add it
-      ' to the ToolStrip control's Items collections.
-      Dim fruitToolStripDropDownButton As New ToolStripDropDownButton("Fruit", Nothing, Nothing, "Fruit")
-      ts.Items.Add(fruitToolStripDropDownButton)
-      
-      ' Dock the ToolStrip control to the top of the form.
-      ts.Dock = DockStyle.Top
-      
-      ' Assign the ContextMenuStrip control as the 
-      ' ToolStripDropDownButton control's DropDown menu.
-      fruitToolStripDropDownButton.DropDown = fruitContextMenuStrip
-      
-      ' Create a new MenuStrip control and add a ToolStripMenuItem.
-      Dim ms As New MenuStrip()
-      Dim fruitToolStripMenuItem As New ToolStripMenuItem("Fruit", Nothing, Nothing, "Fruit")
-      ms.Items.Add(fruitToolStripMenuItem)
-      
-      ' Dock the MenuStrip control to the top of the form.
-      ms.Dock = DockStyle.Top
-      
-      ' Assign the MenuStrip control as the 
-      ' ToolStripMenuItem's DropDown menu.
-      fruitToolStripMenuItem.DropDown = fruitContextMenuStrip
-      
-      ' Assign the ContextMenuStrip to the form's 
-      ' ContextMenuStrip property.
-      Me.ContextMenuStrip = fruitContextMenuStrip
-      
-      ' Add the ToolStrip control to the Controls collection.
+    ' Declare the ContextMenuStrip control.
+    Private fruitContextMenuStrip As ContextMenuStrip
+
+
+    Public Sub New()
+        ' Create a new ContextMenuStrip control.
+        fruitContextMenuStrip = New ContextMenuStrip()
+
+        ' Attach an event handler for the 
+        ' ContextMenuStrip control's Opening event.
+        AddHandler fruitContextMenuStrip.Opening, AddressOf cms_Opening
+
+        ' Create a new ToolStrip control.
+        Dim ts As New ToolStrip()
+
+        ' Create a ToolStripDropDownButton control and add it
+        ' to the ToolStrip control's Items collections.
+        Dim fruitToolStripDropDownButton As New ToolStripDropDownButton("Fruit", Nothing, Nothing, "Fruit")
+        ts.Items.Add(fruitToolStripDropDownButton)
+
+        ' Dock the ToolStrip control to the top of the form.
+        ts.Dock = DockStyle.Top
+
+        ' Assign the ContextMenuStrip control as the 
+        ' ToolStripDropDownButton control's DropDown menu.
+        fruitToolStripDropDownButton.DropDown = fruitContextMenuStrip
+
+        ' Create a new MenuStrip control and add a ToolStripMenuItem.
+        Dim ms As New MenuStrip()
+        Dim fruitToolStripMenuItem As New ToolStripMenuItem("Fruit", Nothing, Nothing, "Fruit")
+        ms.Items.Add(fruitToolStripMenuItem)
+
+        ' Dock the MenuStrip control to the top of the form.
+        ms.Dock = DockStyle.Top
+
+        ' Assign the MenuStrip control as the 
+        ' ToolStripMenuItem's DropDown menu.
+        fruitToolStripMenuItem.DropDown = fruitContextMenuStrip
+
+        ' Assign the ContextMenuStrip to the form's 
+        ' ContextMenuStrip property.
+        Me.ContextMenuStrip = fruitContextMenuStrip
+
+        ' Add the ToolStrip control to the Controls collection.
         Me.Controls.Add(ts)
 
         'Add a button to the form and assign its ContextMenuStrip.
@@ -267,22 +267,22 @@ Class Form3
         b.Location = New System.Drawing.Point(60, 60)
         Me.Controls.Add(b)
         b.ContextMenuStrip = fruitContextMenuStrip
-      
-      ' Add the MenuStrip control last.
-      ' This is important for correct placement in the z-order.
-      Me.Controls.Add(ms)
+
+        ' Add the MenuStrip control last.
+        ' This is important for correct placement in the z-order.
+        Me.Controls.Add(ms)
     End Sub
-   
-   ' <snippet42>
-   ' This event handler is invoked when the ContextMenuStrip
-   ' control's Opening event is raised. It demonstrates
-   ' dynamic item addition and dynamic SourceControl 
-   ' determination with reuse.
+
+    ' <snippet42>
+    ' This event handler is invoked when the ContextMenuStrip
+    ' control's Opening event is raised. It demonstrates
+    ' dynamic item addition and dynamic SourceControl 
+    ' determination with reuse.
     Sub cms_Opening(ByVal sender As Object, ByVal e As System.ComponentModel.CancelEventArgs)
 
         ' Acquire references to the owning control and item.
         Dim c As Control = fruitContextMenuStrip.SourceControl
-        Dim tsi As ToolStripDropDownItem = fruitContextMenuStrip.OwnerItem 
+        Dim tsi As ToolStripDropDownItem = fruitContextMenuStrip.OwnerItem
 
         ' Clear the ContextMenuStrip control's 
         ' Items collection.
@@ -317,34 +317,34 @@ End Class
 Class Form4
     Inherits Form
 
-   ' Declare the ToolStripStatusLabel.
-   Private middleLabel As ToolStripStatusLabel
-   
-   
-   Public Sub New()
-      ' Create a new StatusStrip control.
-      Dim ss As New StatusStrip()
-      
-      ' Add the leftmost label.
-      ss.Items.Add("Left")
-      
-      ' Handle middle label separately -- action will occur
-      ' when the label is clicked.
-      middleLabel = New ToolStripStatusLabel("Middle (Spring)")
-      AddHandler middleLabel.Click, AddressOf middleLabel_Click
-      ss.Items.Add(middleLabel)
-      
-      ' Add the rightmost label
-      ss.Items.Add("Right")
-      
-      ' Add the StatusStrip control to the controls collection.
-      Me.Controls.Add(ss)
+    ' Declare the ToolStripStatusLabel.
+    Private middleLabel As ToolStripStatusLabel
+
+
+    Public Sub New()
+        ' Create a new StatusStrip control.
+        Dim ss As New StatusStrip()
+
+        ' Add the leftmost label.
+        ss.Items.Add("Left")
+
+        ' Handle middle label separately -- action will occur
+        ' when the label is clicked.
+        middleLabel = New ToolStripStatusLabel("Middle (Spring)")
+        AddHandler middleLabel.Click, AddressOf middleLabel_Click
+        ss.Items.Add(middleLabel)
+
+        ' Add the rightmost label
+        ss.Items.Add("Right")
+
+        ' Add the StatusStrip control to the controls collection.
+        Me.Controls.Add(ss)
     End Sub
-   
-   ' <snippet51>
-   ' This event hadler is invoked when the 
-   ' middleLabel control is clicked. It toggles
-   ' the value of the Spring property.
+
+    ' <snippet51>
+    ' This event hadler is invoked when the 
+    ' middleLabel control is clicked. It toggles
+    ' the value of the Spring property.
     Sub middleLabel_Click(ByVal sender As Object, ByVal e As EventArgs)
 
         ' Toggle the value of the Spring property.
@@ -363,62 +363,62 @@ End Class
 ' This code example demonstrates how to set the check
 ' and image margins for a ToolStripMenuItem.
 Class Form5
-   Inherits Form
-   
-   ' <snippet61>
-   Public Sub New()
-      ' Size the form to show three wide menu items.
-      Me.Width = 500
-      Me.Text = "ToolStripContextMenuStrip: Image and Check Margins"
-      
-      ' Create a new MenuStrip control.
-      Dim ms As New MenuStrip()
-      
-      ' Create the ToolStripMenuItems for the MenuStrip control.
-      Dim bothMargins As New ToolStripMenuItem("BothMargins")
-      Dim imageMarginOnly As New ToolStripMenuItem("ImageMargin")
-      Dim checkMarginOnly As New ToolStripMenuItem("CheckMargin")
-      Dim noMargins As New ToolStripMenuItem("NoMargins")
-      
-      ' Customize the DropDowns menus.
-      ' This ToolStripMenuItem has an image margin 
-      ' and a check margin.
-      bothMargins.DropDown = CreateCheckImageContextMenuStrip()
-      CType(bothMargins.DropDown, ContextMenuStrip).ShowImageMargin = True
-      CType(bothMargins.DropDown, ContextMenuStrip).ShowCheckMargin = True
-      
-      ' This ToolStripMenuItem has only an image margin.
-      imageMarginOnly.DropDown = CreateCheckImageContextMenuStrip()
-      CType(imageMarginOnly.DropDown, ContextMenuStrip).ShowImageMargin = True
-      CType(imageMarginOnly.DropDown, ContextMenuStrip).ShowCheckMargin = False
-      
-      ' This ToolStripMenuItem has only a check margin.
-      checkMarginOnly.DropDown = CreateCheckImageContextMenuStrip()
-      CType(checkMarginOnly.DropDown, ContextMenuStrip).ShowImageMargin = False
-      CType(checkMarginOnly.DropDown, ContextMenuStrip).ShowCheckMargin = True
-      
-      ' This ToolStripMenuItem has no image and no check margin.
-      noMargins.DropDown = CreateCheckImageContextMenuStrip()
-      CType(noMargins.DropDown, ContextMenuStrip).ShowImageMargin = False
-      CType(noMargins.DropDown, ContextMenuStrip).ShowCheckMargin = False
-      
-      ' Populate the MenuStrip control with the ToolStripMenuItems.
-      ms.Items.Add(bothMargins)
-      ms.Items.Add(imageMarginOnly)
-      ms.Items.Add(checkMarginOnly)
-      ms.Items.Add(noMargins)
-      
-      ' Dock the MenuStrip control to the top of the form.
-      ms.Dock = DockStyle.Top
-      
-      ' Add the MenuStrip control to the controls collection last.
-      ' This is important for correct placement in the z-order.
-      Me.Controls.Add(ms)
+    Inherits Form
+
+    ' <snippet61>
+    Public Sub New()
+        ' Size the form to show three wide menu items.
+        Me.Width = 500
+        Me.Text = "ToolStripContextMenuStrip: Image and Check Margins"
+
+        ' Create a new MenuStrip control.
+        Dim ms As New MenuStrip()
+
+        ' Create the ToolStripMenuItems for the MenuStrip control.
+        Dim bothMargins As New ToolStripMenuItem("BothMargins")
+        Dim imageMarginOnly As New ToolStripMenuItem("ImageMargin")
+        Dim checkMarginOnly As New ToolStripMenuItem("CheckMargin")
+        Dim noMargins As New ToolStripMenuItem("NoMargins")
+
+        ' Customize the DropDowns menus.
+        ' This ToolStripMenuItem has an image margin 
+        ' and a check margin.
+        bothMargins.DropDown = CreateCheckImageContextMenuStrip()
+        CType(bothMargins.DropDown, ContextMenuStrip).ShowImageMargin = True
+        CType(bothMargins.DropDown, ContextMenuStrip).ShowCheckMargin = True
+
+        ' This ToolStripMenuItem has only an image margin.
+        imageMarginOnly.DropDown = CreateCheckImageContextMenuStrip()
+        CType(imageMarginOnly.DropDown, ContextMenuStrip).ShowImageMargin = True
+        CType(imageMarginOnly.DropDown, ContextMenuStrip).ShowCheckMargin = False
+
+        ' This ToolStripMenuItem has only a check margin.
+        checkMarginOnly.DropDown = CreateCheckImageContextMenuStrip()
+        CType(checkMarginOnly.DropDown, ContextMenuStrip).ShowImageMargin = False
+        CType(checkMarginOnly.DropDown, ContextMenuStrip).ShowCheckMargin = True
+
+        ' This ToolStripMenuItem has no image and no check margin.
+        noMargins.DropDown = CreateCheckImageContextMenuStrip()
+        CType(noMargins.DropDown, ContextMenuStrip).ShowImageMargin = False
+        CType(noMargins.DropDown, ContextMenuStrip).ShowCheckMargin = False
+
+        ' Populate the MenuStrip control with the ToolStripMenuItems.
+        ms.Items.Add(bothMargins)
+        ms.Items.Add(imageMarginOnly)
+        ms.Items.Add(checkMarginOnly)
+        ms.Items.Add(noMargins)
+
+        ' Dock the MenuStrip control to the top of the form.
+        ms.Dock = DockStyle.Top
+
+        ' Add the MenuStrip control to the controls collection last.
+        ' This is important for correct placement in the z-order.
+        Me.Controls.Add(ms)
     End Sub
     ' </snippet61>
 
-   ' This utility method creates a Bitmap for use in 
-   ' a ToolStripMenuItem's image margin.
+    ' This utility method creates a Bitmap for use in 
+    ' a ToolStripMenuItem's image margin.
     Friend Function CreateSampleBitmap() As Bitmap
 
         ' The Bitmap is a smiley face.
@@ -446,44 +446,44 @@ Class Form5
 
         Return sampleBitmap
     End Function
-   
-   ' <snippet62>
-   ' This utility method creates a ContextMenuStrip control
-   ' that has four ToolStripMenuItems showing the four 
-   ' possible combinations of image and check margins.
-   Friend Function CreateCheckImageContextMenuStrip() As ContextMenuStrip
-      ' Create a new ContextMenuStrip control.
-      Dim checkImageContextMenuStrip As New ContextMenuStrip()
-      
-      ' Create a ToolStripMenuItem with a
-      ' check margin and an image margin.
-      Dim yesCheckYesImage As New ToolStripMenuItem("Check, Image")
-      yesCheckYesImage.Checked = True
-      yesCheckYesImage.Image = CreateSampleBitmap()
-      
-      ' Create a ToolStripMenuItem with no
-      ' check margin and with an image margin.
-      Dim noCheckYesImage As New ToolStripMenuItem("No Check, Image")
-      noCheckYesImage.Checked = False
-      noCheckYesImage.Image = CreateSampleBitmap()
-      
-      ' Create a ToolStripMenuItem with a
-      ' check margin and without an image margin.
-      Dim yesCheckNoImage As New ToolStripMenuItem("Check, No Image")
-      yesCheckNoImage.Checked = True
-      
-      ' Create a ToolStripMenuItem with no
-      ' check margin and no image margin.
-      Dim noCheckNoImage As New ToolStripMenuItem("No Check, No Image")
-      noCheckNoImage.Checked = False
-      
-      ' Add the ToolStripMenuItems to the ContextMenuStrip control.
-      checkImageContextMenuStrip.Items.Add(yesCheckYesImage)
-      checkImageContextMenuStrip.Items.Add(noCheckYesImage)
-      checkImageContextMenuStrip.Items.Add(yesCheckNoImage)
-      checkImageContextMenuStrip.Items.Add(noCheckNoImage)
-      
-      Return checkImageContextMenuStrip
+
+    ' <snippet62>
+    ' This utility method creates a ContextMenuStrip control
+    ' that has four ToolStripMenuItems showing the four 
+    ' possible combinations of image and check margins.
+    Friend Function CreateCheckImageContextMenuStrip() As ContextMenuStrip
+        ' Create a new ContextMenuStrip control.
+        Dim checkImageContextMenuStrip As New ContextMenuStrip()
+
+        ' Create a ToolStripMenuItem with a
+        ' check margin and an image margin.
+        Dim yesCheckYesImage As New ToolStripMenuItem("Check, Image")
+        yesCheckYesImage.Checked = True
+        yesCheckYesImage.Image = CreateSampleBitmap()
+
+        ' Create a ToolStripMenuItem with no
+        ' check margin and with an image margin.
+        Dim noCheckYesImage As New ToolStripMenuItem("No Check, Image")
+        noCheckYesImage.Checked = False
+        noCheckYesImage.Image = CreateSampleBitmap()
+
+        ' Create a ToolStripMenuItem with a
+        ' check margin and without an image margin.
+        Dim yesCheckNoImage As New ToolStripMenuItem("Check, No Image")
+        yesCheckNoImage.Checked = True
+
+        ' Create a ToolStripMenuItem with no
+        ' check margin and no image margin.
+        Dim noCheckNoImage As New ToolStripMenuItem("No Check, No Image")
+        noCheckNoImage.Checked = False
+
+        ' Add the ToolStripMenuItems to the ContextMenuStrip control.
+        checkImageContextMenuStrip.Items.Add(yesCheckYesImage)
+        checkImageContextMenuStrip.Items.Add(noCheckYesImage)
+        checkImageContextMenuStrip.Items.Add(yesCheckNoImage)
+        checkImageContextMenuStrip.Items.Add(noCheckNoImage)
+
+        Return checkImageContextMenuStrip
     End Function
     ' </snippet62>
 End Class
@@ -494,10 +494,10 @@ End Class
 ' custom professional renderer to an individual
 ' ToolStrip or to the application as a whole.
 Class Form6
-   Inherits Form
-   Private targetComboBox As New ComboBox()
-   
-   
+    Inherits Form
+    Private targetComboBox As New ComboBox()
+
+
     Public Sub New()
 
         ' Alter the renderer at the top level.
@@ -565,7 +565,7 @@ Class Form6
         ' This is important for correct placement in the z-order.
         Me.Controls.Add(ms)
     End Sub
-   
+
     ' <snippet80>
     ' This event handler is invoked when 
     ' the "Apply Renderers" button is clicked.
@@ -622,47 +622,47 @@ End Class
 ' OnRenderMenuItemBackground and OnRenderButtonBackground methods
 ' to customize the backgrounds of MenuStrip items and ToolStrip buttons.
 Class CustomProfessionalRenderer
-   Inherits ToolStripProfessionalRenderer
-   
-   ' <snippet101>
-   Protected Overrides Sub OnRenderMenuItemBackground(e As ToolStripItemRenderEventArgs)
-      If e.Item.Selected Then
-         Dim b = New SolidBrush(ProfessionalColors.SeparatorLight)
-         Try
-            e.Graphics.FillEllipse(b, e.Item.ContentRectangle)
-         Finally
-            b.Dispose()
-         End Try
-      Else
-         Dim p As New Pen(ProfessionalColors.SeparatorLight)
-         Try
-            e.Graphics.DrawEllipse(p, e.Item.ContentRectangle)
-         Finally
-            p.Dispose()
-         End Try
-      End If
+    Inherits ToolStripProfessionalRenderer
+
+    ' <snippet101>
+    Protected Overrides Sub OnRenderMenuItemBackground(e As ToolStripItemRenderEventArgs)
+        If e.Item.Selected Then
+            Dim b = New SolidBrush(ProfessionalColors.SeparatorLight)
+            Try
+                e.Graphics.FillEllipse(b, e.Item.ContentRectangle)
+            Finally
+                b.Dispose()
+            End Try
+        Else
+            Dim p As New Pen(ProfessionalColors.SeparatorLight)
+            Try
+                e.Graphics.DrawEllipse(p, e.Item.ContentRectangle)
+            Finally
+                p.Dispose()
+            End Try
+        End If
     End Sub
     ' </snippet101>
 
-   ' <snippet102>
-   Protected Overrides Sub OnRenderButtonBackground(e As ToolStripItemRenderEventArgs)
-      Dim r As Rectangle = Rectangle.Inflate(e.Item.ContentRectangle, - 2, - 2)
-      
-      If e.Item.Selected Then
-         Dim b = New SolidBrush(ProfessionalColors.SeparatorLight)
-         Try
-            e.Graphics.FillRectangle(b, r)
-         Finally
-            b.Dispose()
-         End Try
-      Else
-         Dim p As New Pen(ProfessionalColors.SeparatorLight)
-         Try
-            e.Graphics.DrawRectangle(p, r)
-         Finally
-            p.Dispose()
-         End Try
-      End If
+    ' <snippet102>
+    Protected Overrides Sub OnRenderButtonBackground(e As ToolStripItemRenderEventArgs)
+        Dim r As Rectangle = Rectangle.Inflate(e.Item.ContentRectangle, -2, -2)
+
+        If e.Item.Selected Then
+            Dim b = New SolidBrush(ProfessionalColors.SeparatorLight)
+            Try
+                e.Graphics.FillRectangle(b, r)
+            Finally
+                b.Dispose()
+            End Try
+        Else
+            Dim p As New Pen(ProfessionalColors.SeparatorLight)
+            Try
+                e.Graphics.DrawRectangle(p, r)
+            Finally
+                p.Dispose()
+            End Try
+        End If
     End Sub
     ' </snippet102>
 End Class

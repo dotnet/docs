@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Security.Permissions;
 using System.Security.Principal;
 using System.ServiceModel;
-using System.Security.Permissions;
+using System.Text;
 
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]

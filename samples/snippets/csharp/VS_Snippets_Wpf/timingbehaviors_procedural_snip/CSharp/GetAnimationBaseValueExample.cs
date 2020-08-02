@@ -11,17 +11,18 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
-using System.Windows.Media;
-using System.Windows.Media.Animation;
-using System.Windows.Shapes;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
 
-    public class GetAnimationBaseValueExample : Page {
+    public class GetAnimationBaseValueExample : Page
+    {
 
         private RotateTransform animatedRotateTransform;
         public GetAnimationBaseValueExample()
@@ -43,20 +44,20 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             animatedRotateTransform = new RotateTransform();
             animatedRotateTransform.Angle = 45;
             DoubleAnimation angleAnimation =
-                new DoubleAnimation(0,360, TimeSpan.FromSeconds(5));
+                new DoubleAnimation(0, 360, TimeSpan.FromSeconds(5));
             angleAnimation.RepeatBehavior = RepeatBehavior.Forever;
             animatedRotateTransform.BeginAnimation(
                 RotateTransform.AngleProperty, angleAnimation);
             animatedButton.RenderTransform = animatedRotateTransform;
-            animatedButton.RenderTransformOrigin = new Point(0.5,0.5);
-//<SnippetBeginAnimation>
+            animatedButton.RenderTransformOrigin = new Point(0.5, 0.5);
+            //<SnippetBeginAnimation>
             // Animate the button's width.
             DoubleAnimation widthAnimation =
                 new DoubleAnimation(120, 300, TimeSpan.FromSeconds(5));
             widthAnimation.RepeatBehavior = RepeatBehavior.Forever;
             widthAnimation.AutoReverse = true;
             animatedButton.BeginAnimation(Button.WidthProperty, widthAnimation);
-//</SnippetBeginAnimation>
+            //</SnippetBeginAnimation>
 
             // Handle button clicks.
             animatedButton.Click += new RoutedEventHandler(animatedButton_Clicked);
@@ -66,7 +67,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             this.Content = myPanel;
         }
 
- //<SnippetGetAnimationBaseValue>
+        //<SnippetGetAnimationBaseValue>
         // Display the base value for Button.Width and RotateTransform.Angle.
         private void animatedButton_Clicked(object sender, RoutedEventArgs e)
         {
@@ -76,7 +77,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
                 + "\nRotateTransform base value: " +
                 animatedRotateTransform.GetAnimationBaseValue(RotateTransform.AngleProperty));
         }
- //</SnippetGetAnimationBaseValue>
+        //</SnippetGetAnimationBaseValue>
     }
 }
 //</SnippetGetAnimationBaseValueExampleWholePage>

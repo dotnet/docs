@@ -15,7 +15,7 @@ namespace TimePickerApplication
         {
             InitializeTimePicker();
         }
-//<snippet4>
+        //<snippet4>
         private DateTimePicker timePicker;
 
         private void InitializeTimePicker()
@@ -31,7 +31,7 @@ namespace TimePickerApplication
             timePicker.Width = 100;
             Controls.Add(timePicker);
         }
-//</snippet4>
+        //</snippet4>
         [STAThread]
         static void Main()
         {

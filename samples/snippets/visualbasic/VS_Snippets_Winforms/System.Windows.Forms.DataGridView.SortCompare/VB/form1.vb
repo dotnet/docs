@@ -51,7 +51,7 @@ Public Class Form1
 
         ' Autosize the columns.
         Me.DataGridView1.AutoResizeColumns()
- 
+
     End Sub
     '</snippet20>
 

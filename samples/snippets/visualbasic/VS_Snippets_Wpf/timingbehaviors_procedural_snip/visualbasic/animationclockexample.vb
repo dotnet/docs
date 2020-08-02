@@ -8,43 +8,43 @@
 Imports System.Windows
 Imports System.Windows.Controls
 Imports System.Windows.Media
-Imports System.Windows.Shapes
 Imports System.Windows.Media.Animation
+Imports System.Windows.Shapes
 
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
-	Public Class AnimationClockExample
-		Inherits Page
+    Public Class AnimationClockExample
+        Inherits Page
 
         Private ReadOnly myScaleTransform As ScaleTransform
 
         Public Sub New()
 
-			WindowTitle = "Opacity Animation Example"
-			Background = Brushes.White
+            WindowTitle = "Opacity Animation Example"
+            Background = Brushes.White
             Dim myStackPanel As New StackPanel With {
                 .Margin = New Thickness(20)
             }
 
-                ' Create a button that with a ScaleTransform.
-                ' The ScaleTransform will animate when the
-                ' button is clicked.
+            ' Create a button that with a ScaleTransform.
+            ' The ScaleTransform will animate when the
+            ' button is clicked.
             Dim myButton As New Button With {
                 .Margin = New Thickness(50),
                 .HorizontalAlignment = HorizontalAlignment.Left,
                 .Content = "Click Me"
             }
-            myScaleTransform = New ScaleTransform(1,1)
-			myButton.RenderTransform = myScaleTransform
+            myScaleTransform = New ScaleTransform(1, 1)
+            myButton.RenderTransform = myScaleTransform
 
 
-			' Associate an event handler with the
-			' button's Click event.
-			AddHandler myButton.Click, AddressOf myButton_Clicked
+            ' Associate an event handler with the
+            ' button's Click event.
+            AddHandler myButton.Click, AddressOf myButton_Clicked
 
-			myStackPanel.Children.Add(myButton)
-			Content = myStackPanel
-		End Sub
+            myStackPanel.Children.Add(myButton)
+            Content = myStackPanel
+        End Sub
 
         ' Create and apply and animation when the button is clicked.
         Private Sub myButton_Clicked(sender As Object, e As RoutedEventArgs)

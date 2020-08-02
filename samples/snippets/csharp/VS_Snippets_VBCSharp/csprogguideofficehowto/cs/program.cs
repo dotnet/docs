@@ -74,7 +74,7 @@ namespace OfficeProgrammingWalkthrough
             // for two of the parameters. Although these are reference
             // parameters, you do not need to use the ref keyword, or to create
             // variables to send in as arguments. You can send the values directly.
-            wordApp.Selection.PasteSpecial( Link: true, DisplayAsIcon: true);
+            wordApp.Selection.PasteSpecial(Link: true, DisplayAsIcon: true);
         }
         //</Snippet9>
 
@@ -103,7 +103,7 @@ namespace OfficeProgrammingWalkthrough
             object link = true;
             object displayAsIcon = true;
 
-            wordApp.Selection.PasteSpecial( ref useDefaultValue,
+            wordApp.Selection.PasteSpecial(ref useDefaultValue,
                                             ref link,
                                             ref useDefaultValue,
                                             ref displayAsIcon,
@@ -222,7 +222,7 @@ namespace OfficeProgrammingWalkthrough
             // only the parameters for which you do not want to use the default
             // value, and omit arguments for the other parameters. In the following
             // call, a value is sent for only one parameter.
-            excelApp.get_Range("A1", "B4").AutoFormat( Format: myFormat );
+            excelApp.get_Range("A1", "B4").AutoFormat(Format: myFormat);
 
             // In Visual C# 2008 and earlier versions, you need to supply an argument for
             // every parameter. The following call supplies a value for the first

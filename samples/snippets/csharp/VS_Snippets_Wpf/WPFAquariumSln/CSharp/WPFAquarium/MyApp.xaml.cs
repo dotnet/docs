@@ -1,16 +1,16 @@
 ﻿using System;
-using System.Windows;
-using System.Data;
-using System.Xml;
 using System.Configuration;
+using System.Data;
+using System.Windows;
+using System.Xml;
 
 namespace WPFAquarium
 {
-  /// <summary>
-  /// Interaction logic for MyApp.xaml
-  /// </summary>
+    /// <summary>
+    /// Interaction logic for MyApp.xaml
+    /// </summary>
 
-  public partial class MyApp : Application
-  {
-  }
+    public partial class MyApp : Application
+    {
+    }
 }

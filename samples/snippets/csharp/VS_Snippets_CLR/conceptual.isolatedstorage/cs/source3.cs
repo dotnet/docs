@@ -9,7 +9,7 @@ public class DeletingStores
         // Get a new isolated store for this user, domain, and assembly.
         // Put the store into an IsolatedStorageFile object.
 
-        IsolatedStorageFile isoStore1 =  IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
+        IsolatedStorageFile isoStore1 = IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
             IsolatedStorageScope.Domain | IsolatedStorageScope.Assembly, null, null);
         Console.WriteLine("A store isolated by user, assembly, and domain has been obtained.");
 

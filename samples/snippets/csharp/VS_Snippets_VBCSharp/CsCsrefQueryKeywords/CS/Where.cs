@@ -30,43 +30,43 @@ namespace Where
     //</snippet5>
 
     //<snippet6>
-class WhereSample2
-{
-    static void Main()
+    class WhereSample2
     {
-        // Data source.
-        int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
-
-        // Create the query with two predicates in where clause.
-        var queryLowNums2 =
-            from num in numbers
-            where num < 5 && num % 2 == 0
-            select num;
-
-        // Execute the query
-        foreach (var s in queryLowNums2)
+        static void Main()
         {
-            Console.Write(s.ToString() + " ");
-        }
-        Console.WriteLine();
+            // Data source.
+            int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
 
-        // Create the query with two where clause.
-        var queryLowNums3 =
-            from num in numbers
-            where num < 5
-            where num % 2 == 0
-            select num;
+            // Create the query with two predicates in where clause.
+            var queryLowNums2 =
+                from num in numbers
+                where num < 5 && num % 2 == 0
+                select num;
 
-        // Execute the query
-        foreach (var s in queryLowNums3)
-        {
-            Console.Write(s.ToString() + " ");
+            // Execute the query
+            foreach (var s in queryLowNums2)
+            {
+                Console.Write(s.ToString() + " ");
+            }
+            Console.WriteLine();
+
+            // Create the query with two where clause.
+            var queryLowNums3 =
+                from num in numbers
+                where num < 5
+                where num % 2 == 0
+                select num;
+
+            // Execute the query
+            foreach (var s in queryLowNums3)
+            {
+                Console.Write(s.ToString() + " ");
+            }
         }
     }
-}
-// Output:
-// 4 2 0
-// 4 2 0
+    // Output:
+    // 4 2 0
+    // 4 2 0
     //</snippet6>
 
     //<snippet7>
@@ -85,7 +85,7 @@ class WhereSample2
                 where IsEven(num)
                 select num;
 
-             // Execute the query.
+            // Execute the query.
             foreach (var s in queryEvenNums)
             {
                 Console.Write(s.ToString() + " ");

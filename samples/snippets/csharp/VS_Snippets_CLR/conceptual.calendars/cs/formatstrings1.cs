@@ -6,26 +6,26 @@ using System.Threading;
 
 public class Example
 {
-   public static void Main()
-   {
-      StreamWriter sw = new StreamWriter(@".\eras.txt");
-      DateTime dt = new DateTime(2012, 5, 1);
+    public static void Main()
+    {
+        StreamWriter sw = new StreamWriter(@".\eras.txt");
+        DateTime dt = new DateTime(2012, 5, 1);
 
-      CultureInfo culture = CultureInfo.CreateSpecificCulture("ja-JP");
-      DateTimeFormatInfo dtfi = culture.DateTimeFormat;
-      dtfi.Calendar = new JapaneseCalendar();
-      Thread.CurrentThread.CurrentCulture = culture;
+        CultureInfo culture = CultureInfo.CreateSpecificCulture("ja-JP");
+        DateTimeFormatInfo dtfi = culture.DateTimeFormat;
+        dtfi.Calendar = new JapaneseCalendar();
+        Thread.CurrentThread.CurrentCulture = culture;
 
-      sw.WriteLine("\n{0,-43} {1}", "Full Date and Time Pattern:", dtfi.FullDateTimePattern);
-      sw.WriteLine(dt.ToString("F"));
-      sw.WriteLine();
+        sw.WriteLine("\n{0,-43} {1}", "Full Date and Time Pattern:", dtfi.FullDateTimePattern);
+        sw.WriteLine(dt.ToString("F"));
+        sw.WriteLine();
 
-      sw.WriteLine("\n{0,-43} {1}", "Long Date Pattern:", dtfi.LongDatePattern);
-      sw.WriteLine(dt.ToString("D"));
+        sw.WriteLine("\n{0,-43} {1}", "Long Date Pattern:", dtfi.LongDatePattern);
+        sw.WriteLine(dt.ToString("D"));
 
-      sw.WriteLine("\n{0,-43} {1}", "Short Date Pattern:", dtfi.ShortDatePattern);
-      sw.WriteLine(dt.ToString("d"));
-      sw.Close();
+        sw.WriteLine("\n{0,-43} {1}", "Short Date Pattern:", dtfi.ShortDatePattern);
+        sw.WriteLine(dt.ToString("d"));
+        sw.Close();
     }
 }
 // The example writes the following output to a file:

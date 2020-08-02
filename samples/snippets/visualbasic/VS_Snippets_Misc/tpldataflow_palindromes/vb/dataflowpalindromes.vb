@@ -26,13 +26,13 @@ Module DataflowReversedWords
            Function(text)
                Console.WriteLine("Creating word list...")
 
-             ' Remove common punctuation by replacing all non-letter characters 
-             ' with a space character.
-             Dim tokens() As Char = text.Select(Function(c) If(Char.IsLetter(c), c, " "c)).ToArray()
+               ' Remove common punctuation by replacing all non-letter characters 
+               ' with a space character.
+               Dim tokens() As Char = text.Select(Function(c) If(Char.IsLetter(c), c, " "c)).ToArray()
                text = New String(tokens)
 
-             ' Separate the text into an array of words.
-             Return text.Split(New Char() {" "c}, StringSplitOptions.RemoveEmptyEntries)
+               ' Separate the text into an array of words.
+               Return text.Split(New Char() {" "c}, StringSplitOptions.RemoveEmptyEntries)
            End Function)
 
         ' Removes short words and duplicates.

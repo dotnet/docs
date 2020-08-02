@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data;
 using System.Data.Common;
-using System.Reflection;
 using System.Data.SqlClient;
 using System.Globalization;
+using System.Linq;
+using System.Reflection;
+using System.Text;
 
 namespace DP_Custom_CopyToDataTable_Examples
 {
@@ -16,10 +16,10 @@ namespace DP_Custom_CopyToDataTable_Examples
         {
             //ItemsQueries();
 
-           // JoinQuery();
-           // LoadScalarSequence();
-           // LoadItemsIntoTable();
-           // LoadItemsIntoExistingTable();
+            // JoinQuery();
+            // LoadScalarSequence();
+            // LoadItemsIntoTable();
+            // LoadItemsIntoExistingTable();
             LoadItemsExpandSchema();
 
             Console.WriteLine("Hit enter...");
@@ -74,9 +74,9 @@ namespace DP_Custom_CopyToDataTable_Examples
 
             // Query for items with price greater than 9.99.
             var query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select i;
+                        where i.Price > 9.99
+                        orderby i.Price
+                        select i;
 
             // Load the query results into new DataTable.
             DataTable table = query.CopyToDataTable();
@@ -100,9 +100,9 @@ namespace DP_Custom_CopyToDataTable_Examples
             table.Columns.Add("Genre", typeof(string));
 
             var query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select new { i.Price, i.Genre };
+                        where i.Price > 9.99
+                        orderby i.Price
+                        select new { i.Price, i.Genre };
 
             query.CopyToDataTable(table, LoadOption.PreserveChanges);
             //</SnippetLoadItemsIntoExistingTable>
@@ -127,9 +127,9 @@ namespace DP_Custom_CopyToDataTable_Examples
             table.Columns.Add("ExtraColumn", typeof(string));
 
             var query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select new { i.Price, i.Genre };
+                        where i.Price > 9.99
+                        orderby i.Price
+                        select new { i.Price, i.Genre };
 
             query.CopyToDataTable(table, LoadOption.PreserveChanges);
             //</SnippetLoadItemsExpandSchema>
@@ -148,9 +148,9 @@ namespace DP_Custom_CopyToDataTable_Examples
 
             // load sequence of scalars.
             IEnumerable<double> query = from i in items
-                         where i.Price > 9.99
-                         orderby i.Price
-                         select i.Price;
+                                        where i.Price > 9.99
+                                        orderby i.Price
+                                        select i.Price;
 
             DataTable table = query.CopyToDataTable();
             //</SnippetLoadScalarSequence>

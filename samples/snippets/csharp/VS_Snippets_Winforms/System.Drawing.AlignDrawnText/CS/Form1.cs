@@ -11,7 +11,7 @@ namespace AlignText
     {
         public Form1()
         {
-            this.Paint +=new PaintEventHandler(Form1_Paint);
+            this.Paint += new PaintEventHandler(Form1_Paint);
         }
         [STAThread]
         static void Main()
@@ -66,9 +66,10 @@ namespace AlignText
         private void DrawTextAtLocation1(PaintEventArgs e)
         {
             //<snippet30>
-            using (Font font1 = new Font("Times New Roman", 24, FontStyle.Bold, GraphicsUnit.Pixel)){
-            PointF pointF1 = new PointF(30, 10);
-            e.Graphics.DrawString("Hello", font1, Brushes.Blue, pointF1);
+            using (Font font1 = new Font("Times New Roman", 24, FontStyle.Bold, GraphicsUnit.Pixel))
+            {
+                PointF pointF1 = new PointF(30, 10);
+                e.Graphics.DrawString("Hello", font1, Brushes.Blue, pointF1);
             }
             //</snippet30>
         }

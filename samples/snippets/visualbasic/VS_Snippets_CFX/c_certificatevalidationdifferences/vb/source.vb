@@ -1,12 +1,12 @@
-﻿Imports System.Xml
-Imports System.Collections
-Imports System.ServiceModel
-Imports System.Security.Cryptography.X509Certificates
-Imports System.ServiceModel.Security
-Imports System.Security.Permissions
+﻿Imports System.Collections
 Imports System.Net
 Imports System.Net.Security
 Imports System.Runtime.Serialization
+Imports System.Security.Cryptography.X509Certificates
+Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.ServiceModel.Security
+Imports System.Xml
 Imports System.Xml.Schema
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

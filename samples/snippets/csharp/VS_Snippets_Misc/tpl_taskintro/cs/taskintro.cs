@@ -52,35 +52,35 @@ namespace TPL_Intro
 
         //<snippet02>
 
-       class MyCustomData
-       {
-        public long CreationTime;
-        public int Name;
-        public int ThreadNum;
-        }
-
-    static void TaskDemo2()
-    {
-        // Create the task object by using an Action(Of Object) to pass in custom data
-        // in the Task constructor. This is useful when you need to capture outer variables
-        // from within a loop. As an experiment, try modifying this code to
-        // capture i directly in the lambda, and compare results.
-        Task[] taskArray = new Task[10];
-
-        for(int i = 0; i < taskArray.Length; i++)
+        class MyCustomData
         {
-            taskArray[i] = new Task((obj) =>
-                {
-                                        MyCustomData mydata = (MyCustomData) obj;
-                                        mydata.ThreadNum = Thread.CurrentThread.ManagedThreadId;
-                                        Console.WriteLine("Hello from Task #{0} created at {1} running on thread #{2}.",
-                                                          mydata.Name, mydata.CreationTime, mydata.ThreadNum);
-                },
-            new MyCustomData () {Name = i, CreationTime = DateTime.Now.Ticks}
-            );
-            taskArray[i].Start();
+            public long CreationTime;
+            public int Name;
+            public int ThreadNum;
         }
-    }
+
+        static void TaskDemo2()
+        {
+            // Create the task object by using an Action(Of Object) to pass in custom data
+            // in the Task constructor. This is useful when you need to capture outer variables
+            // from within a loop. As an experiment, try modifying this code to
+            // capture i directly in the lambda, and compare results.
+            Task[] taskArray = new Task[10];
+
+            for (int i = 0; i < taskArray.Length; i++)
+            {
+                taskArray[i] = new Task((obj) =>
+                    {
+                        MyCustomData mydata = (MyCustomData)obj;
+                        mydata.ThreadNum = Thread.CurrentThread.ManagedThreadId;
+                        Console.WriteLine("Hello from Task #{0} created at {1} running on thread #{2}.",
+                                      mydata.Name, mydata.CreationTime, mydata.ThreadNum);
+                    },
+                new MyCustomData() { Name = i, CreationTime = DateTime.Now.Ticks }
+                );
+                taskArray[i].Start();
+            }
+        }
 
         //</snippet02>
 

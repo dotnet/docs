@@ -34,7 +34,7 @@ public class Example
         // int, so the array has only one element.
         //
         //<Snippet3>
-        Type[] methodArgs = {typeof(int)};
+        Type[] methodArgs = { typeof(int) };
         //</Snippet3>
 
         // Create a DynamicMethod. In this example the method is

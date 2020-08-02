@@ -5,12 +5,12 @@ using System.Windows.Documents;
 
 namespace TextTrimming_layout
 {
-	/// <summary>
-	/// Interaction logic for Window1.xaml
-	/// </summary>
+    /// <summary>
+    /// Interaction logic for Window1.xaml
+    /// </summary>
 
-	public partial class Window1 : Window
-	{
+    public partial class Window1 : Window
+    {
         void ChangeTextTrimmingProperty()
         {
             // <Snippet_TextTrimmingSetTextTrimming>

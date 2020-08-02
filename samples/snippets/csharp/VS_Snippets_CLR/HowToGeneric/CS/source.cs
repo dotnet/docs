@@ -2,8 +2,8 @@
 using System;
 
 // <snippet22>
-class B<T, U> {}
-class D<V, W> : B<int, V> {}
+class B<T, U> { }
+class D<V, W> : B<int, V> { }
 // </snippet22>
 
 class GenTypes

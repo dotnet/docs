@@ -7,9 +7,9 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.BrushExamples
 {
@@ -56,7 +56,7 @@ namespace Microsoft.Samples.BrushExamples
             Image myImage = new Image();
             BitmapImage myBitmapImage = new BitmapImage();
             myBitmapImage.BeginInit();
-            myBitmapImage.UriSource = new Uri("sampleImages/berries.jpg",UriKind.Relative);
+            myBitmapImage.UriSource = new Uri("sampleImages/berries.jpg", UriKind.Relative);
             myBitmapImage.EndInit();
             myImage.Source = myBitmapImage;
             ImageBrush myImageBrush = new ImageBrush(myBitmapImage);

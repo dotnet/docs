@@ -1,13 +1,12 @@
 ﻿// <snippet1>
 using System;
 using System.Drawing;
-using System.Windows.Forms;
-
 // <snippet10>
 using System.Windows;
+using System.Windows.Forms;
+using System.Windows.Forms.Integration;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Forms.Integration;
 // </snippet10>
 
 namespace PropertyMappingWithElementHost
@@ -84,7 +83,7 @@ namespace PropertyMappingWithElementHost
             System.Windows.Controls.Button wpfButton =
                 host.Child as System.Windows.Controls.Button;
 
-            Thickness t = new Thickness(p.Left, p.Top, p.Right, p.Bottom );
+            Thickness t = new Thickness(p.Left, p.Top, p.Right, p.Bottom);
 
             wpfButton.Margin = t;
         }

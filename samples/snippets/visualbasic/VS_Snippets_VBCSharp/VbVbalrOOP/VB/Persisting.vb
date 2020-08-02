@@ -1,11 +1,11 @@
 ﻿' Need a reference to System.Runtime.Serialization.Formatters.Soap
 ' And System.Xml
 ' <snippet83>
-Imports System.Runtime.Serialization.Formatters.Soap
 ' </snippet83>
 ' <snippet80>
 Imports System.IO
 Imports System.Runtime.Serialization.Formatters.Binary
+Imports System.Runtime.Serialization.Formatters.Soap
 ' </snippet80>
 
 Class Classcb0a091708d54578ad2b3764ccf6167f

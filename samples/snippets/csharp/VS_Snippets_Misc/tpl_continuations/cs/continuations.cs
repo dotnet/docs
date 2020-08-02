@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Child_Continuation
 {
-   class Program
-   {
-      static void Main(string[] args)
-      {
+    class Program
+    {
+        static void Main(string[] args)
+        {
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
-      }
+        }
 
         static void MultiTaskContinuations()
         {
@@ -37,7 +37,7 @@ namespace Child_Continuation
             tasks[1] = new Task<int>(() =>
             {
                 // Do some work...
-                 return 8;
+                return 8;
             });
 
             var continuation = Task.Factory.ContinueWhenAll(

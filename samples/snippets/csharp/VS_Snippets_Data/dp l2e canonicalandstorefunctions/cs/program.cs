@@ -1,9 +1,9 @@
 ﻿using System;
-//using System.Collections.Generic;
-using System.Linq;
 //using System.Text;
 using System.Data.Objects;
 using System.Data.Objects.SqlClient;
+//using System.Collections.Generic;
+using System.Linq;
 
 namespace CanonicalAndStoreFunctions
 {

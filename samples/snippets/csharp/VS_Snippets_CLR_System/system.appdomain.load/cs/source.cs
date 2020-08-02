@@ -2,19 +2,19 @@
 
 class AppDomainLoad
 {
-        public static void Main()
+    public static void Main()
+    {
+        try
         {
-		try
-		{
-// <Snippet1>
-		AppDomain ad = AppDomain.CreateDomain("ChildDomain");
-		ad.Load("MyAssembly");
-// </Snippet1>
-		}
-		catch (Exception ex)
-		{
-			Console.WriteLine(ex.Message);
-			Console.WriteLine(ex.StackTrace);
-		}
-	}
+            // <Snippet1>
+            AppDomain ad = AppDomain.CreateDomain("ChildDomain");
+            ad.Load("MyAssembly");
+            // </Snippet1>
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            Console.WriteLine(ex.StackTrace);
+        }
+    }
 }

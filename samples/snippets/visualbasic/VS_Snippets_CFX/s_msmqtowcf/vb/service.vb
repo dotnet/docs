@@ -1,12 +1,12 @@
 ﻿Imports System.Collections.Generic
-Imports System.Text
+Imports System.Configuration
+Imports System.Messaging
+Imports System.Runtime.Serialization
+Imports System.Security.Principal
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
 Imports System.ServiceModel.MsmqIntegration
-Imports System.Runtime.Serialization
-Imports System.Configuration
-Imports System.Messaging
-Imports System.Security.Principal
+Imports System.Text
 'Imports Order
 
 Module Service

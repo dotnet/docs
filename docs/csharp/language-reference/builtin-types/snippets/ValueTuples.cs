@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace builtin_types
@@ -53,7 +53,7 @@ namespace builtin_types
         private static void LargeTuple()
         {
             // <SnippetLargeTuple>
-            var t = 
+            var t =
             (1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
             11, 12, 13, 14, 15, 16, 17, 18,
             19, 20, 21, 22, 23, 24, 25, 26);
@@ -182,7 +182,7 @@ namespace builtin_types
             // <SnippetDeconstructExisting>
             var destination = string.Empty;
             var distance = 0.0;
-            
+
             var t = ("post office", 3.6);
             (destination, distance) = t;
             Console.WriteLine($"Distance to {destination} is {distance} kilometers.");

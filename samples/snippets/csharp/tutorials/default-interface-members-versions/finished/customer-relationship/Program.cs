@@ -32,7 +32,7 @@ namespace customer_relationship
 
             // Add more orders to get the discount:
             DateTime recurring = new DateTime(2013, 3, 15);
-            for(int i = 0; i < 15; i++)
+            for (int i = 0; i < 15; i++)
             {
                 o = new SampleOrder(recurring, 19.23m * i);
                 c.AddOrder(o);
@@ -43,7 +43,7 @@ namespace customer_relationship
             Console.WriteLine($"Data about {c.Name}");
             Console.WriteLine($"Joined on {c.DateJoined}. Made {c.PreviousOrders.Count()} orders, the last on {c.LastOrder}");
             Console.WriteLine("Reminders:");
-            foreach(var item in c.Reminders)
+            foreach (var item in c.Reminders)
             {
                 Console.WriteLine($"\t{item.Value} on {item.Key}");
             }

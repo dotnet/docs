@@ -3,20 +3,20 @@
 
 '<Snippet153>
 ' Place Imports statements at the top of your program.
-Imports System.Text
 Imports System.IO
+Imports System.Text
 Imports Microsoft.VisualBasic.ControlChars
-'</Snippet153>
-
-'<Snippet155>
-Imports systxt = System.Text
-Imports sysio = System.IO
 Imports ch = Microsoft.VisualBasic.ControlChars
+Imports dirinf = System.IO.DirectoryInfo
 '</Snippet155>
 
 '<Snippet157>
 Imports strbld = System.Text.StringBuilder
-Imports dirinf = System.IO.DirectoryInfo
+Imports sysio = System.IO
+'</Snippet153>
+
+'<Snippet155>
+Imports systxt = System.Text
 '</Snippet157>
 
 

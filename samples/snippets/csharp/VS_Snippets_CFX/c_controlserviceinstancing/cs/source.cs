@@ -1,6 +1,6 @@
 ﻿using System;
-using System.ServiceModel;
 using System.Security.Permissions;
+using System.ServiceModel;
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]
 namespace Microsoft.ServiceModel.Samples

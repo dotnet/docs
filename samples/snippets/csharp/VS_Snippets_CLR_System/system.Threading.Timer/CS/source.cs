@@ -34,11 +34,11 @@ class TimerExample
 class StatusChecker
 {
     private int invokeCount;
-    private int  maxCount;
+    private int maxCount;
 
     public StatusChecker(int count)
     {
-        invokeCount  = 0;
+        invokeCount = 0;
         maxCount = count;
     }
 
@@ -50,7 +50,7 @@ class StatusChecker
             DateTime.Now.ToString("h:mm:ss.fff"),
             (++invokeCount).ToString());
 
-        if(invokeCount == maxCount)
+        if (invokeCount == maxCount)
         {
             // Reset the counter and signal the waiting thread.
             invokeCount = 0;

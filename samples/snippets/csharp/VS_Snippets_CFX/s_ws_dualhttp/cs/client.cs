@@ -11,15 +11,15 @@ namespace Microsoft.ServiceModel.Samples
     // Define class which implements callback interface of duplex contract
     public class CallbackHandler : ICalculatorDuplexCallback
     {
-		public void Equals(double result)
-		{
-			Console.WriteLine("Equals({0})", result);
-		}
+        public void Equals(double result)
+        {
+            Console.WriteLine("Equals({0})", result);
+        }
 
         public void Equation(string eqn)
-		{
+        {
             Console.WriteLine("Equation({0})", eqn);
-		}
+        }
     }
 
     class Client

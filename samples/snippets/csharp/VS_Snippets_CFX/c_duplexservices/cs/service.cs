@@ -7,8 +7,8 @@ using System.ServiceModel;
 namespace Microsoft.ServiceModel.Samples
 {
     //<snippet0>
-    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode=SessionMode.Required,
-                     CallbackContract=typeof(ICalculatorDuplexCallback))]
+    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples", SessionMode = SessionMode.Required,
+                     CallbackContract = typeof(ICalculatorDuplexCallback))]
     public interface ICalculatorDuplex
     {
         [OperationContract(IsOneWay = true)]

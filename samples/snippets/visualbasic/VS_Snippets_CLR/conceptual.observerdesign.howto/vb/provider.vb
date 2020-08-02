@@ -1,8 +1,8 @@
 ﻿' <Snippet7>
-Imports System.Threading
 ' <Snippet3>
 ' <Snippet2>
 Imports System.Collections.Generic
+Imports System.Threading
 
 
 Public Class TemperatureMonitor : Implements IObservable(Of Temperature)

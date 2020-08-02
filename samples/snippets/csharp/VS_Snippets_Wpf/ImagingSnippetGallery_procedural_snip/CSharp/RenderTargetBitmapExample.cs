@@ -1,10 +1,10 @@
 ﻿// <SnippetRenderTargetBitmapCodeExampleWholePage>
 using System;
+using System.Globalization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Globalization;
 
 namespace SDKSample
 {
@@ -13,7 +13,7 @@ namespace SDKSample
         public RenderTargetBitmapExample()
         {
 
- 			//<SnippetCreateRTBImage>
+            //<SnippetCreateRTBImage>
             Image myImage = new Image();
             FormattedText text = new FormattedText("ABC",
                     new CultureInfo("en-us"),
@@ -30,7 +30,7 @@ namespace SDKSample
             RenderTargetBitmap bmp = new RenderTargetBitmap(180, 180, 120, 96, PixelFormats.Pbgra32);
             bmp.Render(drawingVisual);
             myImage.Source = bmp;
- 			//</SnippetCreateRTBImage>
+            //</SnippetCreateRTBImage>
 
             // Add Image to the UI
             StackPanel myStackPanel = new StackPanel();

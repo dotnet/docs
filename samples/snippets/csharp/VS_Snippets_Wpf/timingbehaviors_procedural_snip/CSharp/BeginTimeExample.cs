@@ -10,8 +10,8 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
@@ -26,11 +26,11 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             this.WindowTitle = "BeginTime Example";
 
             StackPanel myStackPanel = new StackPanel();
-            myStackPanel.Margin = new Thickness( 20 );
+            myStackPanel.Margin = new Thickness(20);
 
             Border myBorder = new Border();
             Color myColor = new Color();
-            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(153,255,255,255));
+            SolidColorBrush mySolidColorBrush = new SolidColorBrush(Color.FromArgb(153, 255, 255, 255));
             mySolidColorBrush.Color = myColor;
             myBorder.Background = mySolidColorBrush;
 
@@ -48,27 +48,27 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
             Rectangle defaultBeginTimeRectangle = new Rectangle();
             defaultBeginTimeRectangle.Name = "defaultBeginTimeRectangle";
-            this.RegisterName( defaultBeginTimeRectangle.Name, defaultBeginTimeRectangle );
+            this.RegisterName(defaultBeginTimeRectangle.Name, defaultBeginTimeRectangle);
             defaultBeginTimeRectangle.Width = 20;
             defaultBeginTimeRectangle.Height = 20;
             myColor = new Color();
-            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             defaultBeginTimeRectangle.Fill = mySolidColorBrush;
             defaultBeginTimeRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(defaultBeginTimeRectangle);
 
             myTextBlock = new TextBlock();
-            myTextBlock.Margin = new Thickness(0,20,0,0);
+            myTextBlock.Margin = new Thickness(0, 20, 0, 0);
             myTextBlock.Text = "Animation BeginTime: \"0:0:5\" \n";
             myStackPanel.Children.Add(myTextBlock);
 
             Rectangle delayedBeginTimeRectangle = new Rectangle();
             delayedBeginTimeRectangle.Name = "delayedBeginTimeRectangle";
-            this.RegisterName( delayedBeginTimeRectangle.Name, delayedBeginTimeRectangle );
+            this.RegisterName(delayedBeginTimeRectangle.Name, delayedBeginTimeRectangle);
             delayedBeginTimeRectangle.Width = 20;
             delayedBeginTimeRectangle.Height = 20;
             myColor = new Color();
-            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             delayedBeginTimeRectangle.Fill = mySolidColorBrush;
             delayedBeginTimeRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(delayedBeginTimeRectangle);
@@ -79,12 +79,12 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
             Rectangle delayedAnimationWithDelayedParentRectangle = new Rectangle();
             delayedAnimationWithDelayedParentRectangle.Name = "delayedAnimationWithDelayedParentRectangle";
-            this.RegisterName( delayedAnimationWithDelayedParentRectangle.Name,
-                delayedAnimationWithDelayedParentRectangle );
+            this.RegisterName(delayedAnimationWithDelayedParentRectangle.Name,
+                delayedAnimationWithDelayedParentRectangle);
             delayedAnimationWithDelayedParentRectangle.Width = 20;
             delayedAnimationWithDelayedParentRectangle.Height = 20;
             myColor = new Color();
-            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170,51,51,255));
+            mySolidColorBrush = new SolidColorBrush(Color.FromArgb(170, 51, 51, 255));
             delayedAnimationWithDelayedParentRectangle.Fill = mySolidColorBrush;
             delayedAnimationWithDelayedParentRectangle.HorizontalAlignment = HorizontalAlignment.Left;
             myStackPanel.Children.Add(delayedAnimationWithDelayedParentRectangle);
@@ -98,7 +98,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             myDoubleAnimation.From = 20;
             myDoubleAnimation.To = 400;
             myDoubleAnimation.BeginTime = TimeSpan.FromSeconds(0);
-            myDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myDoubleAnimation.FillBehavior = FillBehavior.HoldEnd;
 
             //
@@ -110,7 +110,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             myDelayedDoubleAnimation.BeginTime = TimeSpan.FromSeconds(5);
             myDelayedDoubleAnimation.From = 20;
             myDelayedDoubleAnimation.To = 400;
-            myDelayedDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myDelayedDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myDelayedDoubleAnimation.FillBehavior = FillBehavior.HoldEnd;
 
             //
@@ -126,7 +126,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
                 new PropertyPath(Rectangle.WidthProperty));
             myParallelDelayedDoubleAnimation.From = 20;
             myParallelDelayedDoubleAnimation.To = 400;
-            myParallelDelayedDoubleAnimation.Duration = new Duration( TimeSpan.FromMilliseconds(2000));
+            myParallelDelayedDoubleAnimation.Duration = new Duration(TimeSpan.FromMilliseconds(2000));
             myParallelDelayedDoubleAnimation.FillBehavior = FillBehavior.HoldEnd;
             myParallelDelayedDoubleAnimation.BeginTime = TimeSpan.FromSeconds(5);
 
@@ -143,24 +143,24 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             //  Create the button to restart the animations
             //
             Button myButton = new Button();
-            myButton.Margin = new Thickness(0,30,0,0);
+            myButton.Margin = new Thickness(0, 30, 0, 0);
             myButton.HorizontalAlignment = HorizontalAlignment.Left;
             myButton.Content = "Restart Animations";
-            myStackPanel.Children.Add( myButton );
+            myStackPanel.Children.Add(myButton);
 
-           //
-           //  Create an EventTrigger and a BeginStoryboard action to start
-           //    the storyboard
-           //
-           BeginStoryboard myBeginStoryboard = new BeginStoryboard();
-           myBeginStoryboard.Storyboard = myStoryboard;
-           EventTrigger myEventTrigger = new EventTrigger();
-           myEventTrigger.RoutedEvent = Button.ClickEvent;
-           myEventTrigger.SourceName = myButton.Name;
-           myEventTrigger.Actions.Add(myBeginStoryboard);
-           myStackPanel.Triggers.Add(myEventTrigger);
+            //
+            //  Create an EventTrigger and a BeginStoryboard action to start
+            //    the storyboard
+            //
+            BeginStoryboard myBeginStoryboard = new BeginStoryboard();
+            myBeginStoryboard.Storyboard = myStoryboard;
+            EventTrigger myEventTrigger = new EventTrigger();
+            myEventTrigger.RoutedEvent = Button.ClickEvent;
+            myEventTrigger.SourceName = myButton.Name;
+            myEventTrigger.Actions.Add(myBeginStoryboard);
+            myStackPanel.Triggers.Add(myEventTrigger);
 
-           this.Content = myStackPanel;
+            this.Content = myStackPanel;
         }
     }
 }

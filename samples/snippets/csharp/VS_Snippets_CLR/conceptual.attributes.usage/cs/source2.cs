@@ -25,7 +25,7 @@ namespace CustomCodeAttributes
 
         public virtual string Name
         {
-            get {return name;}
+            get { return name; }
         }
 
         // Define Level property.
@@ -33,7 +33,7 @@ namespace CustomCodeAttributes
 
         public virtual string Level
         {
-            get {return level;}
+            get { return level; }
         }
 
         // Define Reviewed property.
@@ -41,8 +41,8 @@ namespace CustomCodeAttributes
 
         public virtual bool Reviewed
         {
-            get {return reviewed;}
-            set {reviewed = value;}
+            get { return reviewed; }
+            set { reviewed = value; }
         }
     }
     //</snippet4>
@@ -116,7 +116,7 @@ namespace CustomCodeAttributes_Examples2
     }
     //</snippet11>
 
-// #if'd out since MyClass will intentionally not compile
+    // #if'd out since MyClass will intentionally not compile
 #if false
     //<snippet12>
     [Developer("Joan Smith", "1")]
@@ -178,15 +178,15 @@ namespace CustomCodeAttributes_Examples4
         //<snippet16>
         public bool MyProperty
         {
-            get {return this.myvalue;}
-            set {this.myvalue = value;}
+            get { return this.myvalue; }
+            set { this.myvalue = value; }
         }
         //</snippet16>
 
         public string OptionalParameter
         {
-            get {return this.myoptional;}
-            set {this.myoptional = value;}
+            get { return this.myoptional; }
+            set { this.myoptional = value; }
         }
     }
 

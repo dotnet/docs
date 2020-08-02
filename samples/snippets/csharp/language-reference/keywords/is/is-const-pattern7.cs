@@ -29,7 +29,7 @@ class Program
             Console.WriteLine($"The value is {HIGH_ROLL}!");
         else
             Console.WriteLine($"The dice roll is not a {HIGH_ROLL}!");
-     }
+    }
 }
 // The example displays output like the following:
 //      The value is 6!

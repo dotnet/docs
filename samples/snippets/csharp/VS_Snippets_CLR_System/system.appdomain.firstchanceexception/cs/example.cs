@@ -12,7 +12,7 @@ class Example
         // Create a set of application domains, with a Worker object in each one.
         // Each Worker object creates the next application domain.
         AppDomain ad = AppDomain.CreateDomain("AD0");
-        Worker w = (Worker) ad.CreateInstanceAndUnwrap(
+        Worker w = (Worker)ad.CreateInstanceAndUnwrap(
                                 typeof(Worker).Assembly.FullName, "Worker");
         w.Initialize(0, 3);
 
@@ -62,7 +62,7 @@ public class Worker : MarshalByRefObject
         {
             int next = count + 1;
             ad = AppDomain.CreateDomain("AD" + next);
-            w = (Worker) ad.CreateInstanceAndUnwrap(
+            w = (Worker)ad.CreateInstanceAndUnwrap(
                              typeof(Worker).Assembly.FullName, "Worker");
             w.Initialize(next, max);
         }

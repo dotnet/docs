@@ -1,6 +1,6 @@
-﻿Imports System.Transactions
-Imports System.Data
+﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports System.Transactions
 
 Namespace Microsoft.Samples
 

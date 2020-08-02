@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Collections.Generic;
 
 namespace SDKSample
 {
@@ -11,7 +11,7 @@ namespace SDKSample
     {
         public PixelFormatsExample()
         {
-			//<SnippetPixelFormatConversion>
+            //<SnippetPixelFormatConversion>
 
             ///// Create a BitmapImage and set it's DecodePixelWidth to 200. Use  /////
             ///// this BitmapImage as a source for other BitmapSource objects.    /////
@@ -21,7 +21,7 @@ namespace SDKSample
             // BitmapSource objects like BitmapImage can only have their properties
             // changed within a BeginInit/EndInit block.
             myBitmapImage.BeginInit();
-            myBitmapImage.UriSource = new Uri("sampleImages/WaterLilies.jpg",UriKind.Relative);
+            myBitmapImage.UriSource = new Uri("sampleImages/WaterLilies.jpg", UriKind.Relative);
 
             // To save significant application memory, set the DecodePixelWidth or
             // DecodePixelHeight of the BitmapImage value of the image source to the desired
@@ -51,7 +51,7 @@ namespace SDKSample
             // Set the new format to Gray32Float (grayscale).
             newFormatedBitmapSource.DestinationFormat = createPixelFormat();
             newFormatedBitmapSource.EndInit();
-			//</SnippetPixelFormatConversion>
+            //</SnippetPixelFormatConversion>
 
             // Create Image Element
             Image myImage = new Image();

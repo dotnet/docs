@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.ServiceModel.Configuration;
 using System.ServiceModel.Description;
-using System.ServiceModel;
 using System.ServiceModel.Security.Tokens;
 
 namespace Microsoft.ServiceModel.Samples
 {
-  //<snippet2>
+    //<snippet2>
     public class InternetClientValidatorBehavior : IEndpointBehavior
     {
         public void AddBindingParameters(ServiceEndpoint serviceEndpoint, System.ServiceModel.Channels.BindingParameterCollection bindingParameters) { }

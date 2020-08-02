@@ -2,19 +2,19 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Data;
 
 namespace MenuStyles
 {
-	/// <summary>
-	/// Interaction logic for Pane1.xaml
-	/// </summary>
+    /// <summary>
+    /// Interaction logic for Pane1.xaml
+    /// </summary>
 
-	public partial class Pane1 : StackPanel
-	{
+    public partial class Pane1 : StackPanel
+    {
         string status;
 
         void StatusClick(object sender, RoutedEventArgs e)

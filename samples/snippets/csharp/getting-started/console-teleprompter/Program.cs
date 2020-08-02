@@ -39,7 +39,8 @@ namespace TeleprompterConsole
         {
             Action work = () =>
             {
-                do {
+                do
+                {
                     var key = Console.ReadKey(true);
                     if (key.KeyChar == '>')
                         config.UpdateDelay(-10);

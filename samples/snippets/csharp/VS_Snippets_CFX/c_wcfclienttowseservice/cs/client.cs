@@ -3,11 +3,11 @@
 // <snippet0>
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
-using System.ServiceModel.Security;
 using System.ServiceModel.Channels;
+using System.ServiceModel.Security;
+using System.Text;
 
 namespace Microsoft.ServiceModel.Samples
 {

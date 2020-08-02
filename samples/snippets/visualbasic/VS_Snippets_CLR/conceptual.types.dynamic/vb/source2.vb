@@ -1,5 +1,5 @@
-﻿Imports System.Reflection
-Imports System.Globalization
+﻿Imports System.Globalization
+Imports System.Reflection
 
 Class CustomBinder
     Inherits Binder

@@ -2,8 +2,8 @@
 using System;
 using System.Collections.ObjectModel;
 using System.ServiceModel;
-using System.ServiceModel.Description;
 using System.ServiceModel.Channels;
+using System.ServiceModel.Description;
 
 public class Client
 {

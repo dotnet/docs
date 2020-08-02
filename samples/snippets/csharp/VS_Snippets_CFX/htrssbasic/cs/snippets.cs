@@ -1,16 +1,16 @@
 ﻿using System;
-using System.Xml;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Syndication;
 using System.ServiceModel.Web;
-using System.Collections.ObjectModel;
-using System.Collections.Generic;
+using System.Xml;
 
 namespace Service
 {
-	class Snippets
-	{
+    class Snippets
+    {
         public static void Snippet9()
         {
             // <Snippet9>
@@ -36,5 +36,5 @@ namespace Service
             }
             // </Snippet11>
         }
-	}
+    }
 }

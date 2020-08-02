@@ -1,6 +1,5 @@
 ﻿' Copyright (c) Microsoft Corporation.  All Rights Reserved.
 ' <snipppet5>
-Imports System.Text
 Imports System.Collections.Generic
 Imports System.Net.Security
 Imports System.Runtime.Serialization
@@ -8,8 +7,8 @@ Imports System.Security.Principal
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security
-
 Imports System.ServiceModel.Security.Tokens
+Imports System.Text
 Imports System.Xml
 
 Namespace Microsoft.ServiceModel.Samples

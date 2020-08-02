@@ -1,7 +1,7 @@
 ﻿using System;
-using System.ServiceModel;
-using System.Security.Permissions;
 using System.Runtime.Serialization;
+using System.Security.Permissions;
+using System.ServiceModel;
 using System.Xml;
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]

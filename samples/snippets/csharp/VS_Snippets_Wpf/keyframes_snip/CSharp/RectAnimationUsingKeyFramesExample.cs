@@ -2,9 +2,9 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
-using System.Windows.Media.Animation;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.KeyFrameExamples
 {
@@ -62,7 +62,7 @@ namespace Microsoft.Samples.KeyFrameExamples
             // a smooth, linear animation between values.
             rectAnimation.KeyFrames.Add(
                 new LinearRectKeyFrame(
-                    new Rect(600,50,200,50), // Target value (KeyValue)
+                    new Rect(600, 50, 200, 50), // Target value (KeyValue)
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2))) // KeyTime
                 );
 
@@ -97,7 +97,7 @@ namespace Microsoft.Samples.KeyFrameExamples
             rectStoryboard.Children.Add(rectAnimation);
 
             // Start the storyboard after the rectangle loads.
-            myPath.Loaded += delegate(object sender, RoutedEventArgs e)
+            myPath.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 rectStoryboard.Begin(this);
             };

@@ -1,10 +1,10 @@
-﻿ '<Snippet1>
+﻿'<Snippet1>
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Media
+Imports System.Windows.Ink
 Imports System.Windows.Input
 Imports System.Windows.Input.StylusPlugIns
-Imports System.Windows.Ink
+Imports System.Windows.Media
 
 
 '<Snippet2>

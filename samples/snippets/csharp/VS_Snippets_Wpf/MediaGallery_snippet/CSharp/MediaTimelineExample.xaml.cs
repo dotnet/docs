@@ -8,7 +8,7 @@ namespace SDKSample
 {
 
     public partial class MediaTimelineExample : Page
-	{
+    {
         // <SnippetCodeBehindMediaTimelineExampleInline1>
         // When the media opens, initialize the "Seek To" slider maximum value
         // to the total number of miliseconds in the length of the media clip.

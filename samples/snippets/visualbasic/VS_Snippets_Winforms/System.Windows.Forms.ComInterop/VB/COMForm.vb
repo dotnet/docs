@@ -1,7 +1,7 @@
 ﻿' <snippet1>
 ' <snippet2>
-Imports System.Windows.Forms
 Imports System.Runtime.InteropServices
+Imports System.Windows.Forms
 ' </snippet2>
 
 <ComClass(COMForm.ClassId, COMForm.InterfaceId, COMForm.EventsId)> _

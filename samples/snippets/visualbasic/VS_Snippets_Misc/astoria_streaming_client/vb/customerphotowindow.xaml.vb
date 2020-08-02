@@ -1,9 +1,9 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports NorthwindStreamingClient.Northwind
 Imports System.Data.Services.Client
 Imports System.IO
+Imports NorthwindStreamingClient.Northwind
 
 Class CustomerPhotoWindow
     Private context As NorthwindEntities

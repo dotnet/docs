@@ -20,7 +20,7 @@ namespace L2S_QueryCache
 
             // This query returns an object from the query cache.
             var b = context.Customers.Where(c => c.CustomerID == a.CustomerID);
-            foreach (var customer in b )
+            foreach (var customer in b)
             {
                 Console.WriteLine(customer.CustomerID);
             }

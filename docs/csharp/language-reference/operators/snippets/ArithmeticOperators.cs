@@ -221,7 +221,7 @@ namespace operators
             {
                 int d = checked(a + b);
             }
-            catch(OverflowException)
+            catch (OverflowException)
             {
                 Console.WriteLine($"Overflow occurred when adding {a} to {b}.");
             }

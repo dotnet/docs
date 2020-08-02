@@ -7,8 +7,8 @@ using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Windows.Shapes;
 using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.Animation.TimingBehaviors
 {
@@ -93,7 +93,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
             //
 
             StackPanel seekDetailsPanel = new StackPanel();
-            seekDetailsPanel.Margin = new Thickness(0,20,0,20);
+            seekDetailsPanel.Margin = new Thickness(0, 20, 0, 20);
             seekDetailsPanel.Orientation = Orientation.Horizontal;
             Label seekAmountLabel = new Label();
             seekAmountLabel.Content = "Seek amount:";
@@ -166,7 +166,8 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         private void seekButton_Clicked(object sender, RoutedEventArgs e)
         {
 
-            try {
+            try
+            {
 
                 // Obtain the seek amount from the seekAmountTextBox TextBox.
                 TimeSpan seekAmount = TimeSpan.Parse(seekAmountTextBox.Text);
@@ -179,7 +180,8 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
 
                 // Seek to the specified location.
                 myControllableClock.Controller.Seek(seekAmount, selectedOrigin);
-            }catch(FormatException formatEx)
+            }
+            catch (FormatException formatEx)
             {
                 MessageBox.Show(seekAmountTextBox.Text
                     + " is not a valid TimeSpan. Please enter another value.");

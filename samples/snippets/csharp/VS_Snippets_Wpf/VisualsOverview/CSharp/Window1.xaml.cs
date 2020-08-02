@@ -8,17 +8,17 @@ namespace SDKSample
 {
     public partial class Window1 : Window
     {
-         private void WindowLoaded(object sender, EventArgs e)
-         {
-             MyVisualHost vh = new MyVisualHost();
-             MyCanvas.Children.Add(vh);
-         }
+        private void WindowLoaded(object sender, EventArgs e)
+        {
+            MyVisualHost vh = new MyVisualHost();
+            MyCanvas.Children.Add(vh);
+        }
 
         // Handle the Click event for the button.
         private void OnClick(object sender, EventArgs e)
         {
         }
-     }
+    }
 
     //<Snippet100>
     // Create a visual object derived from DrawingVisual.
@@ -175,7 +175,7 @@ namespace SDKSample
             FormattedText formattedText = new FormattedText("Hi", CultureInfo.CurrentCulture,
                  FlowDirection.LeftToRight,
                  new Typeface("Verdana"), 24, Brushes.Black);
-            dc.DrawText(formattedText, new Point(430-12, 136-12));
+            dc.DrawText(formattedText, new Point(430 - 12, 136 - 12));
             dc.Close();
 
             return dv;

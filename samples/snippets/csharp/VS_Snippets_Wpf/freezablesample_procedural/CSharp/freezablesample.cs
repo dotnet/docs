@@ -6,11 +6,11 @@
 
 using System;
 using System.Windows;
-using System.Windows.Navigation;
+using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Controls;
 
 namespace Microsoft.Samples.Animation.LocalAnimations
 {
@@ -19,13 +19,13 @@ namespace Microsoft.Samples.Animation.LocalAnimations
     public class MyApp : Application
     {
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
             CreateAndShowMainWindow();
         }
 
-        private void CreateAndShowMainWindow ()
+        private void CreateAndShowMainWindow()
         {
             // Create the application's main window.
             NavigationWindow myWindow = new NavigationWindow();
@@ -45,7 +45,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
 
         public FreezableExample()
         {
-           this.WindowTitle = "Freezable Example";
+            this.WindowTitle = "Freezable Example";
 
             myMainPanel = new StackPanel();
             UnFrozenExample();
@@ -107,11 +107,13 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             myButton.Background = myBrush;
             // </SnippetFreezeExample1>
 
-            try {
+            try
+            {
 
                 // Throws an InvalidOperationException, because the brush is frozen.
                 myBrush.Color = Colors.Red;
-            }catch(InvalidOperationException ex)
+            }
+            catch (InvalidOperationException ex)
             {
                 MessageBox.Show("Invalid operation: " + ex.ToString());
             }
@@ -215,11 +217,11 @@ namespace Microsoft.Samples.Animation.LocalAnimations
     internal sealed class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
 
-            MyApp app = new MyApp ();
-            app.Run ();
+            MyApp app = new MyApp();
+            app.Run();
         }
     }
 }

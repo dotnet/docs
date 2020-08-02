@@ -1,10 +1,10 @@
-﻿ ' <snippet1>
+﻿' <snippet1>
 ' <snippet2>
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
-Imports System.Drawing
 Imports System.Data.SqlClient
+Imports System.Drawing
 Imports System.Windows.Forms
 ' </snippet2>
 
@@ -14,19 +14,19 @@ Imports System.Windows.Forms
 Public Class Form1
     Inherits System.Windows.Forms.Form
 
-   ' <snippet5>
+    ' <snippet5>
     ' This is the BindingSource that will provide data for
-   ' the DataGridView control.
+    ' the DataGridView control.
     Private WithEvents customersBindingSource As New BindingSource()
-   
-   ' This is the DataGridView control that will display our data.
-   Private customersDataGridView As New DataGridView()
-   
-   ' Set up the StatusBar for displaying ListChanged events.
-   Private status As New StatusBar()
+
+    ' This is the DataGridView control that will display our data.
+    Private customersDataGridView As New DataGridView()
+
+    ' Set up the StatusBar for displaying ListChanged events.
+    Private status As New StatusBar()
     ' </snippet5>
 
-   ' <snippet6>
+    ' <snippet6>
     Public Sub New()
 
         ' Set up the form.
@@ -41,7 +41,7 @@ Public Class Form1
     End Sub
     ' </snippet6>
 
-   ' <snippet7>
+    ' <snippet7>
     Private Sub Form1_Load( _
     ByVal sender As System.Object, _
     ByVal e As System.EventArgs)
@@ -56,8 +56,8 @@ Public Class Form1
     End Sub
     ' </snippet7>
 
-   ' <snippet8>
-   ' This event handler provides custom item-creation behavior.
+    ' <snippet8>
+    ' This event handler provides custom item-creation behavior.
     Private Sub customersBindingSource_AddingNew( _
     ByVal sender As Object, _
     ByVal e As AddingNewEventArgs) _
@@ -68,9 +68,9 @@ Public Class Form1
     End Sub
     ' </snippet8>
 
-   ' <snippet9>
+    ' <snippet9>
     ' This event handler detects changes in the BindingSource 
-   ' list or changes to items within the list.
+    ' list or changes to items within the list.
     Private Sub customersBindingSource_ListChanged( _
     ByVal sender As Object, _
     ByVal e As ListChangedEventArgs) _
@@ -81,10 +81,10 @@ Public Class Form1
     End Sub
     ' </snippet9>
 
-   <STAThread()>  _
-   Shared Sub Main()
-      Application.EnableVisualStyles()
-      Application.Run(New Form1())
+    <STAThread()> _
+    Shared Sub Main()
+        Application.EnableVisualStyles()
+        Application.Run(New Form1())
     End Sub
 End Class
 ' </snippet3>

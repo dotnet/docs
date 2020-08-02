@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.Text;
 using System.Xml;
-using System.ServiceModel;
-using System.Runtime.Serialization;
-using System.ServiceModel.Channels;
 
 namespace CS
 {
@@ -127,7 +127,7 @@ namespace CS
     // <Snippet23>
     public class TcpChunkingBinding : IBindingRuntimePreferences
     {
-    // </Snippet23>
+        // </Snippet23>
         //TcpTransportBindingElement tcpbe;
         //ChunkingBindingElement be;
 
@@ -150,18 +150,18 @@ namespace CS
         // }
         public int MaxBufferedChunks
         {
-            get { return 0 ;/*this.be.MaxBufferedChunks;*/ }
+            get { return 0;/*this.be.MaxBufferedChunks;*/ }
             set { /*this.be.MaxBufferedChunks = value;*/ }
         }
 
         void Initialize()
         {
-//            be = new ChunkingBindingElement();
-//            tcpbe = new TcpTransportBindingElement();
-//            tcpbe.TransferMode = TransferMode.Buffered; //no transport streaming
-//            tcpbe.MaxReceivedMessageSize = ChunkingUtils.ChunkSize + 100 * 1024; //add 100KB for headers
-//            this.SendTimeout = new TimeSpan(0, 5, 0);
-//            this.ReceiveTimeout = this.SendTimeout;
+            //            be = new ChunkingBindingElement();
+            //            tcpbe = new TcpTransportBindingElement();
+            //            tcpbe.TransferMode = TransferMode.Buffered; //no transport streaming
+            //            tcpbe.MaxReceivedMessageSize = ChunkingUtils.ChunkSize + 100 * 1024; //add 100KB for headers
+            //            this.SendTimeout = new TimeSpan(0, 5, 0);
+            //            this.ReceiveTimeout = this.SendTimeout;
         }
 
         #region IBindingRuntimePreferences Members
@@ -195,4 +195,4 @@ namespace CS
       </bindings>
      //</snippet134>
     */
-  }
+}

@@ -2,10 +2,10 @@
 Imports System.Collections.Generic
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
+Imports System.ServiceModel.Configuration
 Imports System.ServiceModel.Description
 Imports System.Text
 Imports System.Xml
-Imports System.ServiceModel.Configuration
 
 Namespace Microsoft.WCF.Documentation
     ' <snippet13>

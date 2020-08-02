@@ -2,10 +2,10 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
 using System.Windows.Data;
-using System.Windows.Media.Animation;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace Microsoft.Samples.KeyFrameExamples
 {
@@ -73,7 +73,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                 new LinearDoubleKeyFrame(500, KeyTime.FromTimeSpan(TimeSpan.FromSeconds(10))));
 
             // Start the animation when the rectangle is loaded.
-            aRectangle.Loaded += delegate(object sender, RoutedEventArgs e)
+            aRectangle.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 translateTransform1.BeginAnimation(TranslateTransform.XProperty, transformAnimation);
             };
@@ -124,7 +124,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                 new LinearDoubleKeyFrame(500, KeyTime.FromPercent(1.0)));
 
             // Start the animation when the rectangle is loaded.
-            aRectangle.Loaded += delegate(object sender, RoutedEventArgs e)
+            aRectangle.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 translateTransform2.BeginAnimation(TranslateTransform.XProperty, transformAnimation);
             };
@@ -183,7 +183,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                 new LinearDoubleKeyFrame(500, KeyTime.Uniform));
 
             // Start the animation when the rectangle is loaded.
-            aRectangle.Loaded += delegate(object sender, RoutedEventArgs e)
+            aRectangle.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 translateTransform3.BeginAnimation(TranslateTransform.XProperty, transformAnimation);
             };
@@ -243,7 +243,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                 new LinearDoubleKeyFrame(500, KeyTime.Paced));
 
             // Start the animation when the rectangle is loaded.
-            aRectangle.Loaded += delegate(object sender, RoutedEventArgs e)
+            aRectangle.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 translateTransform4.BeginAnimation(TranslateTransform.XProperty, transformAnimation);
             };

@@ -1,12 +1,12 @@
 ﻿'<snippet0>
-Imports System.ServiceModel
-Imports System.Net.Security
-Imports System.ServiceModel.Description
-Imports System.Security.Permissions
-Imports System.Security.Cryptography.X509Certificates
-Imports System.Runtime.Serialization
-Imports System.ComponentModel
 Imports System.Collections.Generic
+Imports System.ComponentModel
+Imports System.Net.Security
+Imports System.Runtime.Serialization
+Imports System.Security.Cryptography.X509Certificates
+Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.ServiceModel.Description
 
 '</snippet0>
 

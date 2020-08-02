@@ -1,10 +1,10 @@
 ﻿using System;
-using System.ServiceModel;
-using System.ServiceModel.Channels;
+using System.Configuration;
 using System.Security.Cryptography.X509Certificates;
 using System.Security.Permissions;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
-using System.Configuration;
 
 [assembly: SecurityPermission(
    SecurityAction.RequestMinimum, Execution = true)]

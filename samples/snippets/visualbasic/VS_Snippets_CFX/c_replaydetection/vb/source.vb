@@ -2,10 +2,10 @@
 Imports System.Collections
 Imports System.IO
 Imports System.Runtime.Serialization
-Imports System.Xml
-Imports System.ServiceModel.Description
 Imports System.ServiceModel
 Imports System.ServiceModel.Channels
+Imports System.ServiceModel.Description
+Imports System.Xml
 
 Namespace Replay
     Public Class Test

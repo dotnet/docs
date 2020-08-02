@@ -1,6 +1,7 @@
 ﻿//<snippetWpfDataBindingAsync>
 using System;
 using System.Collections.Generic;
+using System.Data.Services.Client;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -12,9 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using NorthwindClient.Northwind;
-using System.Data.Services.Client;
 using System.Windows.Threading;
+using NorthwindClient.Northwind;
 
 namespace NorthwindClient
 {
@@ -82,7 +82,7 @@ namespace NorthwindClient
                 {
                     MessageBox.Show(ex.ToString());
                 }
-            }),null);
+            }), null);
         }
         private void saveChangesButton_Click(object sender, RoutedEventArgs e)
         {

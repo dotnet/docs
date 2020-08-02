@@ -1,6 +1,6 @@
-﻿Imports System.Windows
+﻿Imports System.Text.RegularExpressions
+Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Text.RegularExpressions
 
 Namespace SDKSample
 

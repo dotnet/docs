@@ -29,7 +29,7 @@ class Example
     {
         // <snippet18>
         string MyString = "Hello World!";
-        char[] MyChar = {'r','o','W','l','d','!',' '};
+        char[] MyChar = { 'r', 'o', 'W', 'l', 'd', '!', ' ' };
         string NewString = MyString.TrimEnd(MyChar);
         Console.WriteLine(NewString);
         // </snippet18>
@@ -39,7 +39,7 @@ class Example
     {
         // <snippet19>
         string MyString = "Hello, World!";
-        char[] MyChar = {'r','o','W','l','d','!',' '};
+        char[] MyChar = { 'r', 'o', 'W', 'l', 'd', '!', ' ' };
         string NewString = MyString.TrimEnd(MyChar);
         Console.WriteLine(NewString);
         // </snippet19>
@@ -49,7 +49,7 @@ class Example
     {
         // <snippet20>
         string MyString = "Hello World!";
-        char[] MyChar = {'e', 'H','l','o',' ' };
+        char[] MyChar = { 'e', 'H', 'l', 'o', ' ' };
         string NewString = MyString.TrimStart(MyChar);
         Console.WriteLine(NewString);
         // </snippet20>
@@ -59,7 +59,7 @@ class Example
     {
         // <snippet21>
         string MyString = "Hello Beautiful World!";
-        Console.WriteLine(MyString.Remove(5,10));
+        Console.WriteLine(MyString.Remove(5, 10));
         // The example displays the following output:
         //         Hello World!
         // </snippet21>

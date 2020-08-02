@@ -1,10 +1,10 @@
 ﻿using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Automation.Provider;
 using System.Windows.Controls;
 using System.Windows.Documents;
 using System.Windows.Navigation;
-using System.Text;
 
 namespace ScrollViewer_Methods
 {

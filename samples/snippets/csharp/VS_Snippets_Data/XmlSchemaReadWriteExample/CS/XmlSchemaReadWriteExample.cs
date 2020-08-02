@@ -19,7 +19,7 @@ class XmlSchemaReadWriteExample
             xwriter.Formatting = Formatting.Indented;
             myschema.Write(xwriter);
         }
-        catch(Exception e)
+        catch (Exception e)
         {
             Console.WriteLine(e);
         }

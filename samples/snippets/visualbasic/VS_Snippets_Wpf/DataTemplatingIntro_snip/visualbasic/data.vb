@@ -1,5 +1,5 @@
-﻿Imports System.ComponentModel
-Imports System.Collections.ObjectModel
+﻿Imports System.Collections.ObjectModel
+Imports System.ComponentModel
 
 Namespace SDKSample
     Public Class Task

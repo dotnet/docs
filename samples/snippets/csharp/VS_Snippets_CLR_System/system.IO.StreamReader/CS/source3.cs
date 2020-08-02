@@ -21,7 +21,7 @@ public class ReadBuf
         {
             byte input;
             // While not at the end of the file, read lines from the file.
-            while (br.PeekChar() > -1 )
+            while (br.PeekChar() > -1)
             {
                 input = br.ReadByte();
                 Console.WriteLine(input);

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Security.Cryptography.X509Certificates;
 using System.ServiceModel;
 using System.ServiceModel.Description;
 using System.ServiceModel.Security;
+using System.Text;
 
 namespace WsHttp
 {
@@ -16,7 +16,7 @@ namespace WsHttp
             WSHttpBinding b = new WSHttpBinding();
             b.Name = "myBinding";
             b.Security.Mode = SecurityMode.Message;
-            b.Security.Message.ClientCredentialType=MessageCredentialType.Windows;
+            b.Security.Message.ClientCredentialType = MessageCredentialType.Windows;
             //</snippet1>
         }
 

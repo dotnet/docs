@@ -1,8 +1,8 @@
 ﻿// <SnippetAddUsings>
 using System;
+using System.Collections.Generic;
 using System.IO;
 using Microsoft.ML;
-using System.Collections.Generic;
 // </SnippetAddUsings>
 
 namespace ProductSalesAnomalyDetection
@@ -53,7 +53,7 @@ namespace ProductSalesAnomalyDetection
             // </SnippetTrainModel1>
 
             Console.WriteLine("=============== End of training process ===============");
-             //Apply data transformation to create predictions.
+            //Apply data transformation to create predictions.
             // <SnippetTransformData1>
             IDataView transformedData = iidSpikeTransform.Transform(productSales);
             // </SnippetTransformData1>
@@ -127,7 +127,8 @@ namespace ProductSalesAnomalyDetection
         }
 
         // <SnippetCreateEmptyDataView>
-        static IDataView CreateEmptyDataView(MLContext mlContext) {
+        static IDataView CreateEmptyDataView(MLContext mlContext)
+        {
             // Create empty DataView. We just need the schema to call Fit() for the time series transforms
             IEnumerable<ProductSalesData> enumerableData = new List<ProductSalesData>();
             return mlContext.Data.LoadFromEnumerable(enumerableData);

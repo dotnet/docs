@@ -1,6 +1,6 @@
-﻿Imports System.Windows.Navigation
+﻿Imports System.Windows.Interop
+Imports System.Windows.Navigation
 Imports System.Windows.Shapes
-Imports System.Windows.Interop
 
 Namespace WpfBrowserApplication1VB
     ''' <summary>

@@ -7,11 +7,11 @@ operation.
 */
 
 using System;
+using System.Collections;
+using System.Collections.Specialized;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using System.Collections.Specialized;
-using System.Collections;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
@@ -42,7 +42,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                     Interlocked.Increment(ref requestCounter);
                     // Start the asynchronous request for DNS information.
                     Dns.BeginGetHostEntry(host, callBack, host);
-                 }
+                }
             } while (host.Length > 0);
             // The user has entered all of the host names for lookup.
             // Now wait until the threads complete.
@@ -51,9 +51,9 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 UpdateUserInterface();
             }
             // Display the results.
-            for (int i = 0; i< hostNames.Count; i++)
+            for (int i = 0; i < hostNames.Count; i++)
             {
-                object data = hostData [i];
+                object data = hostData[i];
                 string message = data as string;
                 // A SocketException was thrown.
                 if (message != null)
@@ -63,7 +63,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                     continue;
                 }
                 // Get the results.
-                IPHostEntry h = (IPHostEntry) data;
+                IPHostEntry h = (IPHostEntry)data;
                 string[] aliases = h.Aliases;
                 IPAddress[] addresses = h.AddressList;
                 if (aliases.Length > 0)
@@ -79,16 +79,16 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                     Console.WriteLine("Addresses for {0}", hostNames[i]);
                     for (int k = 0; k < addresses.Length; k++)
                     {
-                        Console.WriteLine("{0}",addresses[k].ToString());
+                        Console.WriteLine("{0}", addresses[k].ToString());
                     }
                 }
             }
-       }
+        }
 
         // The following method is called when each asynchronous operation completes.
         static void ProcessDnsInformation(IAsyncResult result)
         {
-            string hostName = (string) result.AsyncState;
+            string hostName = (string)result.AsyncState;
             hostNames.Add(hostName);
             try
             {

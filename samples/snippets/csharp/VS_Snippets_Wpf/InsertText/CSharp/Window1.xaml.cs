@@ -59,14 +59,14 @@
  *****************************************************************************/
 
 using System;
-using System.Windows;
+using System.ComponentModel;
 using System.Diagnostics;
-using System.Windows.Automation;
-using System.Threading;
 using System.IO;
 using System.Text;
+using System.Threading;
+using System.Windows;
+using System.Windows.Automation;
 using System.Windows.Forms;
-using System.ComponentModel;
 using System.Windows.Threading;
 
 namespace InsertTextClient
@@ -194,7 +194,7 @@ namespace InsertTextClient
                 Feedback("Please enter some text to insert.");
                 return;
             }
-            switch (((System.Windows.Controls.Button) sender).Content.ToString())
+            switch (((System.Windows.Controls.Button)sender).Content.ToString())
             {
                 case "UIAutomation":
                     SetValueWithUIAutomation(tbInsert.Text);

@@ -1,7 +1,7 @@
 ﻿Imports System.Data.Objects
 Imports System.Data.Objects.DataClasses
-Imports System.Reflection
 Imports System.Linq.Expressions
+Imports System.Reflection
 
 '<snippet2>
 Partial Public Class AdventureWorksEntities

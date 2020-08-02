@@ -1,10 +1,10 @@
 ﻿Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Documents
-Imports System.Windows.Navigation
-Imports System.Windows.Media
-Imports System.Windows.Shapes
 Imports System.Windows.Data
+Imports System.Windows.Documents
+Imports System.Windows.Media
+Imports System.Windows.Navigation
+Imports System.Windows.Shapes
 
 Namespace ButtonAlign_vb
 
@@ -95,7 +95,7 @@ Namespace ButtonAlign_vb
             cv2.Children.Add(btnvb)
             '</Snippet3>
         End Sub
-                
+
     End Class
 
 End Namespace

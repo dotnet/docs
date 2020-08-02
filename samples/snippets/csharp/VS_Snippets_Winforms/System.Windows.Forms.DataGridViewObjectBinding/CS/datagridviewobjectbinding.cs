@@ -31,7 +31,7 @@ public class DataGridViewObjectBinding : Form
         this.Text = "DataGridView collection-binding demo";
     }
 
-    void  DataGridViewObjectBinding_Load(object sender, EventArgs e)
+    void DataGridViewObjectBinding_Load(object sender, EventArgs e)
     {
         // Set up a collection of objects for binding.
         System.Collections.ArrayList customers = new System.Collections.ArrayList();

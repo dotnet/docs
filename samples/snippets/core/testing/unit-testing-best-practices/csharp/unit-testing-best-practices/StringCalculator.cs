@@ -49,7 +49,7 @@ namespace UnitTestingBestPractices
             var result = int.TryParse(number, out var parsedNumber);
             if (result == false)
             {
-                 throw new ArgumentException(nameof(number));
+                throw new ArgumentException(nameof(number));
             }
 
             return parsedNumber;

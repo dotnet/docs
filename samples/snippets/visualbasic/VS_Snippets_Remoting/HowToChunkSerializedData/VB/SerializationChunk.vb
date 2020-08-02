@@ -1,11 +1,11 @@
 ﻿Imports System.IO
+Imports System.Runtime.Serialization
+Imports System.Security.Permissions
 Imports System.Web.Services
 Imports System.Web.Services.Protocols
-Imports System.Runtime.Serialization
 Imports System.Xml
-Imports System.Xml.Serialization
 Imports System.Xml.Schema
-Imports System.Security.Permissions
+Imports System.Xml.Serialization
 
 Public Class Test
 

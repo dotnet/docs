@@ -1,8 +1,8 @@
 ﻿// <snippet5>
 using System;
+using System.IO;
 using System.Text;
 using System.Windows;
-using System.IO;
 
 namespace WpfApplication
 {
@@ -29,7 +29,7 @@ namespace WpfApplication
 
             // Open a streamwriter to a new text file named "UserInputFile.txt"and write the contents of
             // the stringbuilder to it.
-            using (StreamWriter outfile = new StreamWriter(Path.Combine(mydocpath,"UserInputFile.txt"), true))
+            using (StreamWriter outfile = new StreamWriter(Path.Combine(mydocpath, "UserInputFile.txt"), true))
             {
                 await outfile.WriteAsync(sb.ToString());
             }

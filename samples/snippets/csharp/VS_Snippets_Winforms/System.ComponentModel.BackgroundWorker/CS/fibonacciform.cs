@@ -9,9 +9,9 @@ using System.Windows.Forms;
 // </snippet2>
 
 namespace BackgroundWorkerExample
-{	
+{
     public class FibonacciForm : System.Windows.Forms.Form
-    {	
+    {
         // <snippet14>
         private int numberToCompute = 0;
         private int highestPercentageReached = 0;
@@ -25,7 +25,7 @@ namespace BackgroundWorkerExample
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
 
         public FibonacciForm()
-        {	
+        {
             InitializeComponent();
 
             InitializeBackgroundWorker();
@@ -44,7 +44,7 @@ namespace BackgroundWorkerExample
                 new ProgressChangedEventHandler(
             backgroundWorker1_ProgressChanged);
         }
-	
+
         // <snippet13>
         private void startAsyncButton_Click(System.Object sender,
             System.EventArgs e)
@@ -216,8 +216,8 @@ namespace BackgroundWorkerExample
         }
         // </snippet10>
 
-		#region Windows Form Designer generated code
-		
+        #region Windows Form Designer generated code
+
         private void InitializeComponent()
         {
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -306,7 +306,7 @@ namespace BackgroundWorkerExample
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
         }
-		#endregion
+        #endregion
 
         [STAThread]
         static void Main()

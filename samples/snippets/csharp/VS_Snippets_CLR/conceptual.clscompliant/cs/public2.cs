@@ -5,9 +5,9 @@ using System;
 
 public class Person
 {
-   private Int16 personAge = 0;
+    private Int16 personAge = 0;
 
-   public Int16 Age
-   { get { return personAge; } }
+    public Int16 Age
+    { get { return personAge; } }
 }
 // </Snippet2>

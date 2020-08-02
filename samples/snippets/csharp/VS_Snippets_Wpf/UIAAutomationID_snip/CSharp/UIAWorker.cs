@@ -23,13 +23,13 @@
  *
  ******************************************************************************/
 using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Forms;
-using System.Windows.Automation;
-using System.Diagnostics;
-using System.Threading;
 using System.Collections;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Text;
+using System.Threading;
+using System.Windows.Automation;
+using System.Windows.Forms;
 
 namespace UIAAutomationID_snip
 {

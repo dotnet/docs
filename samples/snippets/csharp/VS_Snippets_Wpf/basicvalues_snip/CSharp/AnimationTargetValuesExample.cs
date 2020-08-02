@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-using System.Windows.Controls;
 
 namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 {
 
-    public class AnimationTargetValuesExample : Page {
+    public class AnimationTargetValuesExample : Page
+    {
 
         private Rectangle CreateRectangle1()
         {
@@ -47,7 +48,7 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 
             // Use an anonymous event handler to begin the animation
             // when the rectangle is clicked.
-            myRectangle.MouseLeftButtonDown += delegate(object sender, MouseButtonEventArgs args)
+            myRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs args)
                 {
                     myStoryboard.Begin(myRectangle);
                 };
@@ -91,7 +92,7 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 
             // Use an anonymous event handler to begin the animation
             // when the rectangle is clicked.
-            myRectangle.MouseLeftButtonDown += delegate(object sender, MouseButtonEventArgs args)
+            myRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs args)
                 {
                     myStoryboard.Begin(myRectangle);
                 };
@@ -136,7 +137,7 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 
             // Use an anonymous event handler to begin the animation
             // when the rectangle is clicked.
-            myRectangle.MouseLeftButtonDown += delegate(object sender, MouseButtonEventArgs args)
+            myRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs args)
                 {
                     myStoryboard.Begin(myRectangle);
                 };
@@ -182,7 +183,7 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 
             // Use an anonymous event handler to begin the animation
             // when the rectangle is clicked.
-            myRectangle.MouseLeftButtonDown += delegate(object sender, MouseButtonEventArgs args)
+            myRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs args)
                 {
                     myStoryboard.Begin(myRectangle);
                 };
@@ -226,7 +227,7 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
 
             // Use an anonymous event handler to begin the animation
             // when the rectangle is clicked.
-            myRectangle.MouseLeftButtonDown += delegate(object sender, MouseButtonEventArgs args)
+            myRectangle.MouseLeftButtonDown += delegate (object sender, MouseButtonEventArgs args)
                 {
                     myStoryboard.Begin(myRectangle);
                 };

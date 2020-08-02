@@ -1,12 +1,12 @@
 ﻿' snippet
 
 Imports System.Collections
+Imports System.Collections.Generic
+Imports System.ComponentModel
 Imports System.Runtime.Serialization
+Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
-Imports System.ComponentModel
-Imports System.Security.Permissions
-Imports System.Collections.Generic
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.Security.Samples

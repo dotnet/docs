@@ -90,7 +90,7 @@ Class Class7d7b4934b5214ed3b054aeb71f8daacf
 
     Private WithEvents Button1 As New Button
     ' <snippet21>
-    Sub Button1_Click(ByVal sender As System.Object, 
+    Sub Button1_Click(ByVal sender As System.Object,
             ByVal e As System.EventArgs) Handles Button1.Click
         ' </snippet21>
     End Sub

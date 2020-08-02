@@ -2,19 +2,19 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
+using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Media;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Data;
-using System.Windows.Media;
 
 namespace ContextMenus
 {
 
-	public partial class Pane1
-	{
+    public partial class Pane1
+    {
         bool FlagForCustomContextMenu;
-//<SnippetBuildMenu>
+        //<SnippetBuildMenu>
         ContextMenu BuildMenu()
         {
             ContextMenu theMenu = new ContextMenu();
@@ -29,8 +29,8 @@ namespace ContextMenus
             theMenu.Items.Add(mic);
             return theMenu;
         }
-//</SnippetBuildMenu>
-//<SnippetAddItemNoHandle>
+        //</SnippetBuildMenu>
+        //<SnippetAddItemNoHandle>
         void AddItemToCM(object sender, ContextMenuEventArgs e)
         {
             //check if Item4 is already there, this will probably run more than once
@@ -44,15 +44,15 @@ namespace ContextMenus
             mi4.Header = "Item4";
             fe.ContextMenu.Items.Add(mi4);
         }
-//</SnippetAddItemNoHandle>
-//<SnippetReplaceNoReopen>
+        //</SnippetAddItemNoHandle>
+        //<SnippetReplaceNoReopen>
         void HandlerForCMO(object sender, ContextMenuEventArgs e)
         {
             FrameworkElement fe = e.Source as FrameworkElement;
             fe.ContextMenu = BuildMenu();
         }
-//</SnippetReplaceNoReopen>
-//<SnippetReplaceReopen>
+        //</SnippetReplaceNoReopen>
+        //<SnippetReplaceReopen>
         void HandlerForCMO2(object sender, ContextMenuEventArgs e)
         {
             if (!FlagForCustomContextMenu)
@@ -64,9 +64,9 @@ namespace ContextMenus
                 fe.ContextMenu.IsOpen = true;
             }
         }
-	}
-//</SnippetReplaceReopen>
-//<SnippetClassHandler>
+    }
+    //</SnippetReplaceReopen>
+    //<SnippetClassHandler>
     public class MyButton : Button
     {
         protected override void OnContextMenuOpening(ContextMenuEventArgs e)
@@ -86,5 +86,5 @@ namespace ContextMenus
             fe.ContextMenu = buttonMenu;
         }
     }
-//</SnippetClassHandler>
+    //</SnippetClassHandler>
 }

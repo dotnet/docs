@@ -9,7 +9,7 @@ public class CheckingSpace
     {
         // Get an isolated store for this assembly and put it into an
         // IsolatedStoreFile object.
-        IsolatedStorageFile isoStore =  IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
+        IsolatedStorageFile isoStore = IsolatedStorageFile.GetStore(IsolatedStorageScope.User |
             IsolatedStorageScope.Assembly, null, null);
 
         // Create a few placeholder files in the isolated store.

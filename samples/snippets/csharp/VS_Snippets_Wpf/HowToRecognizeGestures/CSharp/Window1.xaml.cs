@@ -1,9 +1,9 @@
 ﻿//<Snippet1>
 using System;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Ink;
-using System.Collections.ObjectModel;
 
 public partial class Window1 : Window
 {

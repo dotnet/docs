@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Linq;
-using System.Xml.Linq;
 //using System.Data.Linq;
 using System.IO;
+using System.Linq;
+using System.Text;
+using System.Xml.Linq;
 
 namespace FromClause
 {
@@ -20,8 +20,8 @@ namespace FromClause
             // Create the query.
             // lowNums is an IEnumerable<int>
             var lowNums = from num in numbers
-                where num < 5
-                select num;
+                          where num < 5
+                          select num;
 
             // Execute the query.
             foreach (int i in lowNums)
@@ -40,7 +40,7 @@ namespace FromClause
         public class Student
         {
             public string LastName { get; set; }
-            public List<int> Scores {get; set;}
+            public List<int> Scores { get; set; }
         }
 
         static void Main()
@@ -61,8 +61,8 @@ namespace FromClause
             // Note the similarity to a nested foreach statement.
             var scoreQuery = from student in students
                              from score in student.Scores
-                                where score > 90
-                                select new { Last = student.LastName, score };
+                             where score > 90
+                             select new { Last = student.LastName, score };
 
             // Execute the queries.
             Console.WriteLine("scoreQuery:");

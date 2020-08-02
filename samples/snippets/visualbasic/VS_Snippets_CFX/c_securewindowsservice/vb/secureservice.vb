@@ -1,8 +1,8 @@
 ﻿Imports System.Collections
 Imports System.Runtime.Serialization
+Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Description
-Imports System.Security.Permissions
 
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

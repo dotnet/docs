@@ -1,4 +1,4 @@
-Imports System.Windows ' Window, RoutedEventArgs, MessageBox
+﻿Imports System.Windows ' Window, RoutedEventArgs, MessageBox
 
 Namespace SDKSample
 

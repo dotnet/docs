@@ -29,10 +29,10 @@ public class WordCount
 
 public class Example
 {
-   public static void Main()
-   {
-      WordCount wc = new WordCount(@"C:\users\ronpet\documents\Fr_Mike_Mass.txt");
-      Console.WriteLine("File {0} ({1}) has {2} words",
-                        wc.Name, wc.FullName, wc.Count);
-   }
+    public static void Main()
+    {
+        WordCount wc = new WordCount(@"C:\users\ronpet\documents\Fr_Mike_Mass.txt");
+        Console.WriteLine("File {0} ({1}) has {2} words",
+                          wc.Name, wc.FullName, wc.Count);
+    }
 }

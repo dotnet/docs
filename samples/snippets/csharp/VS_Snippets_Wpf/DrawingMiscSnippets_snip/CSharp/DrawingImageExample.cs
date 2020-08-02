@@ -19,7 +19,7 @@ namespace SDKSample
             //
             GeometryGroup ellipses = new GeometryGroup();
             ellipses.Children.Add(
-                new EllipseGeometry(new Point(50,50), 45, 20)
+                new EllipseGeometry(new Point(50, 50), 45, 20)
                 );
             ellipses.Children.Add(
                 new EllipseGeometry(new Point(50, 50), 20, 45)
@@ -35,9 +35,9 @@ namespace SDKSample
             aGeometryDrawing.Brush =
                 new LinearGradientBrush(
                     Colors.Blue,
-                    Color.FromRgb(204,204,255),
-                    new Point(0,0),
-                    new Point(1,1));
+                    Color.FromRgb(204, 204, 255),
+                    new Point(0, 0),
+                    new Point(1, 1));
 
             // Outline the drawing with a solid color.
             aGeometryDrawing.Pen = new Pen(Brushes.Black, 10);

@@ -7,12 +7,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("FindText_VB")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Microsoft")> 
-<Assembly: AssemblyProduct("FindText_VB")> 
-<Assembly: AssemblyCopyright("Copyright @ Microsoft 2005")> 
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyTitle("FindText_VB")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("Microsoft")>
+<Assembly: AssemblyProduct("FindText_VB")>
+<Assembly: AssemblyCopyright("Copyright @ Microsoft 2005")>
+<Assembly: AssemblyTrademark("")>
 
 'In order to begin building localizable applications, set <UICulture>CultureYouAreCodingWith</UICulture> in your
 '.vbproj file inside a <PropertyGroup>.  For example, if you are using US english in your source files, set the
@@ -23,7 +23,7 @@ Imports System.Runtime.InteropServices
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("fc262552-55c9-420c-94ce-ac3483dc79ea")> 
+<Assembly: Guid("fc262552-55c9-420c-94ce-ac3483dc79ea")>
 
 ' Version information for an assembly consists of the following four values:
 '
@@ -36,5 +36,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.0.0")>
+<Assembly: AssemblyFileVersion("1.0.0.0")>

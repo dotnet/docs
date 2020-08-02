@@ -1,10 +1,10 @@
 ﻿'<snippet0>
 Imports System.Collections.Generic
-Imports System.Text
-Imports System.Security.Permissions
-Imports System.Runtime.Serialization
-Imports System.ServiceModel
 Imports System.IO
+Imports System.Runtime.Serialization
+Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.Text
 Imports System.Xml
 
 '</snippet0>

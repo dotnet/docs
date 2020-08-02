@@ -83,7 +83,7 @@ public class ListViewInsertionMarkExample : Form
             // the right of the midpoint of the closest item and set
             // the InsertionMark.AppearsAfterItem property accordingly.
             Rectangle itemBounds = myListView.GetItemRect(targetIndex);
-            if ( targetPoint.X > itemBounds.Left + (itemBounds.Width / 2) )
+            if (targetPoint.X > itemBounds.Left + (itemBounds.Width / 2))
             {
                 myListView.InsertionMark.AppearsAfterItem = true;
             }

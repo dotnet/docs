@@ -13,12 +13,13 @@ public class Example
         int eraIndex = 0;
 
         for (int ctr = 0; ctr < jaJp.DateTimeFormat.Calendar.Eras.Length; ctr++)
-           if (jaJp.DateTimeFormat.GetEraName(ctr) == "明治")
-              eraIndex = ctr;
+            if (jaJp.DateTimeFormat.GetEraName(ctr) == "明治")
+                eraIndex = ctr;
         var date1 = japaneseCal.ToDateTime(23, 9, 8, 0, 0, 0, 0, eraIndex);
         Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}");
 
-        try {
+        try
+        {
             var date2 = DateTime.Parse("明治23/9/8", jaJp);
             Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}");
         }
@@ -27,7 +28,8 @@ public class Example
             Console.WriteLine("The parsing operation failed.");
         }
 
-        try {
+        try
+        {
             var date3 = DateTime.ParseExact("明治23/9/8", "gyy/m/d", jaJp);
             Console.WriteLine($"{date1.ToString("d", jaJp)} (Gregorian {date1:d}");
         }

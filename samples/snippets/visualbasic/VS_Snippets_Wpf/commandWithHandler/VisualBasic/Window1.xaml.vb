@@ -2,8 +2,8 @@
 Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Documents
-Imports System.Windows.Media
 Imports System.Windows.Input
+Imports System.Windows.Media
 
 ' Interaction logic for Window1.xaml
 Namespace WCSamples

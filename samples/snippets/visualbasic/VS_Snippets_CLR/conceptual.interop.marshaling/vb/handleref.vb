@@ -1,7 +1,7 @@
 ﻿'<snippet42>
 Imports System.IO
-Imports System.Text
 Imports System.Runtime.InteropServices
+Imports System.Text
 
 '<snippet43>
 ' Declares a managed structure for the unmanaged structure.

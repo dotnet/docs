@@ -1,7 +1,7 @@
 ﻿Option Strict On
 
-Imports System.Collections.Generic
 Imports System.Collections.Concurrent
+Imports System.Collections.Generic
 Imports System.Linq
 
 Module Example

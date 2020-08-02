@@ -8,24 +8,25 @@ using System.Threading;
 
 public class Example
 {
-   public static void Main()
-   {
-      string[] cultureNames = { "en-US", "fr-FR", "ru-RU", "es-ES" };
-      Random rnd = new Random();
-      ResourceManager rm = new ResourceManager("Strings",
-                               typeof(Example).Assembly);
+    public static void Main()
+    {
+        string[] cultureNames = { "en-US", "fr-FR", "ru-RU", "es-ES" };
+        Random rnd = new Random();
+        ResourceManager rm = new ResourceManager("Strings",
+                                 typeof(Example).Assembly);
 
-      for (int ctr = 0; ctr <= cultureNames.Length; ctr++) {
-         string cultureName = cultureNames[rnd.Next(0, cultureNames.Length)];
-         CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
-         Thread.CurrentThread.CurrentCulture = culture;
-         Thread.CurrentThread.CurrentUICulture = culture;
+        for (int ctr = 0; ctr <= cultureNames.Length; ctr++)
+        {
+            string cultureName = cultureNames[rnd.Next(0, cultureNames.Length)];
+            CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
 
-         Console.WriteLine("Current culture: {0}", culture.NativeName);
-         string timeString = rm.GetString("TimeHeader");
-         Console.WriteLine("{0} {1:T}\n", timeString, DateTime.Now);
-      }
-   }
+            Console.WriteLine("Current culture: {0}", culture.NativeName);
+            string timeString = rm.GetString("TimeHeader");
+            Console.WriteLine("{0} {1:T}\n", timeString, DateTime.Now);
+        }
+    }
 }
 // The example displays output like the following:
 //    Current culture: English (United States)

@@ -38,7 +38,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         private void setButton3BackgroundBrushColor(object sender, EventArgs e)
         {
 
-             // This appears to work:
+            // This appears to work:
             // the brush changes to blue.
             MyStoryboard.Remove(Button3);
             Button3BackgroundBrush.Color = Colors.Blue;
@@ -49,7 +49,7 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         private void setButton4BackgroundBrushColor(object sender, EventArgs e)
         {
 
-             // This appears to work:
+            // This appears to work:
             // the brush changes to blue.
             Button4BackgroundBrush.BeginAnimation(SolidColorBrush.ColorProperty, null);
             Button4BackgroundBrush.Color = Colors.Blue;

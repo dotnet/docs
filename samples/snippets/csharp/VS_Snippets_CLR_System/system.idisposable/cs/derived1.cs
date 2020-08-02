@@ -1,7 +1,7 @@
 ﻿// <Snippet4>
-using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
+using Microsoft.Win32.SafeHandles;
 
 class DerivedClass : BaseClass
 {
@@ -21,7 +21,7 @@ class DerivedClass : BaseClass
 
         if (disposing)
         {
-           // Dispose managed state (managed objects).
+            // Dispose managed state (managed objects).
             _safeHandle?.Dispose();
         }
 

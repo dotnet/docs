@@ -1,9 +1,9 @@
 ﻿//<snippet0>
 using System;
-using System.Windows.Forms;
 using System.Security.Permissions;
+using System.Windows.Forms;
 
-[PermissionSet(SecurityAction.Demand, Name="FullTrust")]
+[PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
 [System.Runtime.InteropServices.ComVisibleAttribute(true)]
 public class Form1 : Form
 {

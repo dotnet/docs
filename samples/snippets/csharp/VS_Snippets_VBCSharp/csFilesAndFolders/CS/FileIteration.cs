@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 //using System.Text;
 //using System.IO;
 using System.Diagnostics;
+using System.Linq;
 
 namespace FileIteration
 {
@@ -199,72 +199,72 @@ namespace FileIteration
 
     // How to: Write to a Text File
     //<snippet3>
-class WriteTextFile
-{
-    static void Main()
+    class WriteTextFile
     {
-
-        // These examples assume a "C:\Users\Public\TestFolder" folder on your machine.
-        // You can modify the path if necessary.
-
-        // Example #1: Write an array of strings to a file.
-        // Create a string array that consists of three lines.
-        string[] lines = { "First line", "Second line", "Third line" };
-        // WriteAllLines creates a file, writes a collection of strings to the file,
-        // and then closes the file.  You do NOT need to call Flush() or Close().
-        System.IO.File.WriteAllLines(@"C:\Users\Public\TestFolder\WriteLines.txt", lines);
-
-        // Example #2: Write one string to a text file.
-        string text = "A class is the most powerful data type in C#. Like a structure, " +
-                       "a class defines the data and behavior of the data type. ";
-        // WriteAllText creates a file, writes the specified string to the file,
-        // and then closes the file.    You do NOT need to call Flush() or Close().
-        System.IO.File.WriteAllText(@"C:\Users\Public\TestFolder\WriteText.txt", text);
-
-        // Example #3: Write only some strings in an array to a file.
-        // The using statement automatically flushes AND CLOSES the stream and calls
-        // IDisposable.Dispose on the stream object.
-        // NOTE: do not use FileStream for text files because it writes bytes, but StreamWriter
-        // encodes the output as text.
-        using (System.IO.StreamWriter file =
-            new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt"))
+        static void Main()
         {
-            foreach (string line in lines)
+
+            // These examples assume a "C:\Users\Public\TestFolder" folder on your machine.
+            // You can modify the path if necessary.
+
+            // Example #1: Write an array of strings to a file.
+            // Create a string array that consists of three lines.
+            string[] lines = { "First line", "Second line", "Third line" };
+            // WriteAllLines creates a file, writes a collection of strings to the file,
+            // and then closes the file.  You do NOT need to call Flush() or Close().
+            System.IO.File.WriteAllLines(@"C:\Users\Public\TestFolder\WriteLines.txt", lines);
+
+            // Example #2: Write one string to a text file.
+            string text = "A class is the most powerful data type in C#. Like a structure, " +
+                           "a class defines the data and behavior of the data type. ";
+            // WriteAllText creates a file, writes the specified string to the file,
+            // and then closes the file.    You do NOT need to call Flush() or Close().
+            System.IO.File.WriteAllText(@"C:\Users\Public\TestFolder\WriteText.txt", text);
+
+            // Example #3: Write only some strings in an array to a file.
+            // The using statement automatically flushes AND CLOSES the stream and calls
+            // IDisposable.Dispose on the stream object.
+            // NOTE: do not use FileStream for text files because it writes bytes, but StreamWriter
+            // encodes the output as text.
+            using (System.IO.StreamWriter file =
+                new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt"))
             {
-                // If the line doesn't contain the word 'Second', write the line to the file.
-                if (!line.Contains("Second"))
+                foreach (string line in lines)
                 {
-                    file.WriteLine(line);
+                    // If the line doesn't contain the word 'Second', write the line to the file.
+                    if (!line.Contains("Second"))
+                    {
+                        file.WriteLine(line);
+                    }
                 }
             }
-        }
 
-        // Example #4: Append new text to an existing file.
-        // The using statement automatically flushes AND CLOSES the stream and calls
-        // IDisposable.Dispose on the stream object.
-        using (System.IO.StreamWriter file =
-            new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt", true))
-        {
-            file.WriteLine("Fourth line");
+            // Example #4: Append new text to an existing file.
+            // The using statement automatically flushes AND CLOSES the stream and calls
+            // IDisposable.Dispose on the stream object.
+            using (System.IO.StreamWriter file =
+                new System.IO.StreamWriter(@"C:\Users\Public\TestFolder\WriteLines2.txt", true))
+            {
+                file.WriteLine("Fourth line");
+            }
         }
     }
-}
- //Output (to WriteLines.txt):
- //   First line
- //   Second line
- //   Third line
+    //Output (to WriteLines.txt):
+    //   First line
+    //   Second line
+    //   Third line
 
- //Output (to WriteText.txt):
- //   A class is the most powerful data type in C#. Like a structure, a class defines the data and behavior of the data type.
+    //Output (to WriteText.txt):
+    //   A class is the most powerful data type in C#. Like a structure, a class defines the data and behavior of the data type.
 
- //Output to WriteLines2.txt after Example #3:
- //   First line
- //   Third line
+    //Output to WriteLines2.txt after Example #3:
+    //   First line
+    //   Third line
 
- //Output to WriteLines2.txt after Example #4:
- //   First line
- //   Third line
- //   Fourth line
+    //Output to WriteLines2.txt after Example #4:
+    //   First line
+    //   Third line
+    //   Fourth line
     //</snippet3>
 
     // How to: Read From a Text File
@@ -382,7 +382,7 @@ class WriteTextFile
                 System.IO.FileInfo fi = null;
                 try
                 {
-                     fi = new System.IO.FileInfo(s);
+                    fi = new System.IO.FileInfo(s);
                 }
                 catch (System.IO.FileNotFoundException e)
                 {
@@ -392,7 +392,7 @@ class WriteTextFile
                     Console.WriteLine(e.Message);
                     continue;
                 }
-                Console.WriteLine("{0} : {1}",fi.Name, fi.Directory);
+                Console.WriteLine("{0} : {1}", fi.Name, fi.Directory);
             }
 
             // Change the directory. In this case, first check to see
@@ -429,7 +429,7 @@ class WriteTextFile
         {
             string fileName = "test.txt";
             string sourcePath = @"C:\Users\Public\TestFolder";
-            string targetPath =  @"C:\Users\Public\TestFolder\SubDir";
+            string targetPath = @"C:\Users\Public\TestFolder\SubDir";
 
             // Use Path class to manipulate file and directory paths.
             string sourceFile = System.IO.Path.Combine(sourcePath, fileName);
@@ -506,7 +506,7 @@ class WriteTextFile
         static void Main()
         {
             // Delete a file by using File class static method...
-            if(System.IO.File.Exists(@"C:\Users\Public\DeleteTest\test.txt"))
+            if (System.IO.File.Exists(@"C:\Users\Public\DeleteTest\test.txt"))
             {
                 // Use a try block to catch IOExceptions, to
                 // handle the case of the file already being
@@ -543,7 +543,7 @@ class WriteTextFile
                 Console.WriteLine(e.Message);
             }
             // Delete a directory and all subdirectories with Directory static method...
-            if(System.IO.Directory.Exists(@"C:\Users\Public\DeleteTest"))
+            if (System.IO.Directory.Exists(@"C:\Users\Public\DeleteTest"))
             {
                 try
                 {
@@ -572,92 +572,92 @@ class WriteTextFile
     //</snippet9>
 
     //<snippet10>
-public class CreateFileOrFolder
-{
-    static void Main()
+    public class CreateFileOrFolder
     {
-        // Specify a name for your top-level folder.
-        string folderName = @"c:\Top-Level Folder";
-
-        // To create a string that specifies the path to a subfolder under your
-        // top-level folder, add a name for the subfolder to folderName.
-        string pathString = System.IO.Path.Combine(folderName, "SubFolder");
-
-        // You can write out the path name directly instead of using the Combine
-        // method. Combine just makes the process easier.
-        string pathString2 = @"c:\Top-Level Folder\SubFolder2";
-
-        // You can extend the depth of your path if you want to.
-        //pathString = System.IO.Path.Combine(pathString, "SubSubFolder");
-
-        // Create the subfolder. You can verify in File Explorer that you have this
-        // structure in the C: drive.
-        //    Local Disk (C:)
-        //        Top-Level Folder
-        //            SubFolder
-        System.IO.Directory.CreateDirectory(pathString);
-
-        // Create a file name for the file you want to create.
-        string fileName = System.IO.Path.GetRandomFileName();
-
-        // This example uses a random string for the name, but you also can specify
-        // a particular name.
-        //string fileName = "MyNewFile.txt";
-
-        // Use Combine again to add the file name to the path.
-        pathString = System.IO.Path.Combine(pathString, fileName);
-
-        // Verify the path that you have constructed.
-        Console.WriteLine("Path to my file: {0}\n", pathString);
-
-        // Check that the file doesn't already exist. If it doesn't exist, create
-        // the file and write integers 0 - 99 to it.
-        // DANGER: System.IO.File.Create will overwrite the file if it already exists.
-        // This could happen even with random file names, although it is unlikely.
-        if (!System.IO.File.Exists(pathString))
+        static void Main()
         {
-            using (System.IO.FileStream fs = System.IO.File.Create(pathString))
+            // Specify a name for your top-level folder.
+            string folderName = @"c:\Top-Level Folder";
+
+            // To create a string that specifies the path to a subfolder under your
+            // top-level folder, add a name for the subfolder to folderName.
+            string pathString = System.IO.Path.Combine(folderName, "SubFolder");
+
+            // You can write out the path name directly instead of using the Combine
+            // method. Combine just makes the process easier.
+            string pathString2 = @"c:\Top-Level Folder\SubFolder2";
+
+            // You can extend the depth of your path if you want to.
+            //pathString = System.IO.Path.Combine(pathString, "SubSubFolder");
+
+            // Create the subfolder. You can verify in File Explorer that you have this
+            // structure in the C: drive.
+            //    Local Disk (C:)
+            //        Top-Level Folder
+            //            SubFolder
+            System.IO.Directory.CreateDirectory(pathString);
+
+            // Create a file name for the file you want to create.
+            string fileName = System.IO.Path.GetRandomFileName();
+
+            // This example uses a random string for the name, but you also can specify
+            // a particular name.
+            //string fileName = "MyNewFile.txt";
+
+            // Use Combine again to add the file name to the path.
+            pathString = System.IO.Path.Combine(pathString, fileName);
+
+            // Verify the path that you have constructed.
+            Console.WriteLine("Path to my file: {0}\n", pathString);
+
+            // Check that the file doesn't already exist. If it doesn't exist, create
+            // the file and write integers 0 - 99 to it.
+            // DANGER: System.IO.File.Create will overwrite the file if it already exists.
+            // This could happen even with random file names, although it is unlikely.
+            if (!System.IO.File.Exists(pathString))
             {
-                for (byte i = 0; i < 100; i++)
+                using (System.IO.FileStream fs = System.IO.File.Create(pathString))
                 {
-                    fs.WriteByte(i);
+                    for (byte i = 0; i < 100; i++)
+                    {
+                        fs.WriteByte(i);
+                    }
                 }
             }
-        }
-        else
-        {
-            Console.WriteLine("File \"{0}\" already exists.", fileName);
-            return;
-        }
-
-        // Read and display the data from your file.
-        try
-        {
-            byte[] readBuffer = System.IO.File.ReadAllBytes(pathString);
-            foreach (byte b in readBuffer)
+            else
             {
-                Console.Write(b + " ");
+                Console.WriteLine("File \"{0}\" already exists.", fileName);
+                return;
             }
-            Console.WriteLine();
-        }
-        catch (System.IO.IOException e)
-        {
-            Console.WriteLine(e.Message);
-        }
 
-        // Keep the console window open in debug mode.
-        System.Console.WriteLine("Press any key to exit.");
-        System.Console.ReadKey();
+            // Read and display the data from your file.
+            try
+            {
+                byte[] readBuffer = System.IO.File.ReadAllBytes(pathString);
+                foreach (byte b in readBuffer)
+                {
+                    Console.Write(b + " ");
+                }
+                Console.WriteLine();
+            }
+            catch (System.IO.IOException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            // Keep the console window open in debug mode.
+            System.Console.WriteLine("Press any key to exit.");
+            System.Console.ReadKey();
+        }
+        // Sample output:
+
+        // Path to my file: c:\Top-Level Folder\SubFolder\ttxvauxe.vv0
+
+        //0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
+        //30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56
+        // 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 8
+        //3 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99
     }
-    // Sample output:
-
-    // Path to my file: c:\Top-Level Folder\SubFolder\ttxvauxe.vv0
-
-    //0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29
-    //30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56
-    // 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 8
-    //3 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99
-}
     //</snippet10>
 
     namespace FileProgressNamespace

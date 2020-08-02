@@ -5,46 +5,46 @@ using System;
 
 public interface IFahrenheit
 {
-   decimal GetTemperature();
+    decimal GetTemperature();
 }
 
 public interface ICelsius
 {
-   decimal GetTemperature();
+    decimal GetTemperature();
 }
 
 public class Temperature : ICelsius, IFahrenheit
 {
-   private decimal _value;
+    private decimal _value;
 
-   public Temperature(decimal value)
-   {
-      // We assume that this is the Celsius value.
-      _value = value;
-   }
+    public Temperature(decimal value)
+    {
+        // We assume that this is the Celsius value.
+        _value = value;
+    }
 
-   decimal IFahrenheit.GetTemperature()
-   {
-      return _value * 9 / 5 + 32;
-   }
+    decimal IFahrenheit.GetTemperature()
+    {
+        return _value * 9 / 5 + 32;
+    }
 
-   decimal ICelsius.GetTemperature()
-   {
-      return _value;
-   }
+    decimal ICelsius.GetTemperature()
+    {
+        return _value;
+    }
 }
 public class Example
 {
-   public static void Main()
-   {
-      Temperature temp = new Temperature(100.0m);
-      ICelsius cTemp = temp;
-      IFahrenheit fTemp = temp;
-      Console.WriteLine("Temperature in Celsius: {0} degrees",
-                        cTemp.GetTemperature());
-      Console.WriteLine("Temperature in Fahrenheit: {0} degrees",
-                        fTemp.GetTemperature());
-   }
+    public static void Main()
+    {
+        Temperature temp = new Temperature(100.0m);
+        ICelsius cTemp = temp;
+        IFahrenheit fTemp = temp;
+        Console.WriteLine("Temperature in Celsius: {0} degrees",
+                          cTemp.GetTemperature());
+        Console.WriteLine("Temperature in Fahrenheit: {0} degrees",
+                          fTemp.GetTemperature());
+    }
 }
 // The example displays the following output:
 //       Temperature in Celsius: 100.0 degrees

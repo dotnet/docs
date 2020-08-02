@@ -43,8 +43,8 @@ namespace SelectClause
             {
                 ContactInfo cInfo =
                     (from ci in app.contactList
-                    where ci.ID == id
-                    select ci)
+                     where ci.ID == id
+                     select ci)
                     .FirstOrDefault();
 
                 return cInfo;
@@ -218,8 +218,8 @@ namespace SelectClause
             // Keep the console window open in debug mode
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
-            }
         }
+    }
     /* Output
         Query1: select range_variable
         Claire O'Donnell:112

@@ -1,8 +1,8 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
-using System.Threading;
 
 namespace SDKSample
 {
@@ -106,7 +106,7 @@ namespace SDKSample
             txt7.Text = db3.ToString();
             Grid.SetRow(txt7, 2);
             Grid.SetColumn(txt7, 2);
-			// <Snippet2>
+            // <Snippet2>
 
             // Total all Data and Span Three Columns
             TextBlock txt8 = new TextBlock();
@@ -128,7 +128,7 @@ namespace SDKSample
 
             // Add the Grid as the Content of the Parent Window Object
             mainWindow.Content = myGrid;
-            mainWindow.Show ();
+            mainWindow.Show();
             //</Snippet2>
 
             //</Snippet3>
@@ -139,10 +139,10 @@ namespace SDKSample
     internal static class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
-            app app = new app ();
-            app.Run ();
+            app app = new app();
+            app.Run();
         }
     }
 }

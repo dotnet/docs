@@ -1,9 +1,9 @@
 ﻿using System;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Threading;
 
 namespace ShapesProcedural
 {
@@ -29,15 +29,15 @@ namespace ShapesProcedural
         RowDefinition myRowDef6;
         Window myWindow;
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup (e);
-            CreateAndShowMainWindow ();
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
         }
         private void CreateAndShowMainWindow()
         {
             // Create the application's main window
-            myWindow = new Window ();
+            myWindow = new Window();
 
             // Add a Border
             myBorder = new Border();
@@ -158,7 +158,7 @@ namespace ShapesProcedural
             myPath.HorizontalAlignment = HorizontalAlignment.Left;
             myPath.VerticalAlignment = VerticalAlignment.Center;
             EllipseGeometry myEllipseGeometry = new EllipseGeometry();
-            myEllipseGeometry.Center = new System.Windows.Point(50,50);
+            myEllipseGeometry.Center = new System.Windows.Point(50, 50);
             myEllipseGeometry.RadiusX = 25;
             myEllipseGeometry.RadiusY = 25;
             myPath.Data = myEllipseGeometry;
@@ -184,8 +184,8 @@ namespace ShapesProcedural
             myPolygon.HorizontalAlignment = HorizontalAlignment.Left;
             myPolygon.VerticalAlignment = VerticalAlignment.Center;
             System.Windows.Point Point1 = new System.Windows.Point(1, 50);
-            System.Windows.Point Point2 = new System.Windows.Point(10,80);
-            System.Windows.Point Point3 = new System.Windows.Point(50,50);
+            System.Windows.Point Point2 = new System.Windows.Point(10, 80);
+            System.Windows.Point Point3 = new System.Windows.Point(50, 50);
             PointCollection myPointCollection = new PointCollection();
             myPointCollection.Add(Point1);
             myPointCollection.Add(Point2);

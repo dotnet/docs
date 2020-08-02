@@ -170,11 +170,11 @@ namespace BlockingCollectionExamples
 namespace Demos
 {
     using System;
+    using System.Collections.Concurrent;
     using System.Data.SqlClient;
     using System.Diagnostics;
-    using System.Collections.Concurrent;
-    using System.Text;
     using System.Linq;
+    using System.Text;
     using System.Threading;
     using System.Threading.Tasks;
 
@@ -248,10 +248,10 @@ namespace Demos
                 var them = results[i];
                 var diff = Math.Abs(them - myAverage);
 
-                if(myAverage > them)
+                if (myAverage > them)
                     sb.AppendFormat("    greater than buffer[{0}] by {1}\n", i, diff);
                 else if (myAverage == them)
-                        sb.AppendFormat("    equal to buffer[{0}]\n", i, diff);
+                    sb.AppendFormat("    equal to buffer[{0}]\n", i, diff);
                 else if (myAverage < them)
                     sb.AppendFormat("    less than buffer[{0}] by {1}\n", i, diff);
             }
@@ -325,203 +325,203 @@ namespace Demos
         }
     }
 
-        //class Lazy<T> : Lazy<T> where T: MyClass, new()
-        //{
-        //    public Lazy(Action<T> action)
-        //    {
-        //        return new MyClass(() => "test");
-        //    }
-        //    public Lazy()
-        //{}
-        //}
+    //class Lazy<T> : Lazy<T> where T: MyClass, new()
+    //{
+    //    public Lazy(Action<T> action)
+    //    {
+    //        return new MyClass(() => "test");
+    //    }
+    //    public Lazy()
+    //{}
+    //}
 
     class DataInitializedFromDb
-            {
-                public DataInitializedFromDb (SqlDataReader reader){}
-                public int Rows = 0;
-            }
-        //class ThreadLocal<T>
-        //{
-        //    public ThreadLocal(T input) {}
-        //    public T Value {get; set;}
-        //}
-        /*
-            class LazyDemo
-            {
-                static void Main()
-                {
-                    Lazy<MyClass> mc = new Lazy<MyClass>();
-
-                    LazyInit.EnsureInitialized<MyClass>(ref mc);
-
-
-                    MyClass mc2 = null;
-
-                    LazyInit.EnsureInitialized<MyClass>(ref mc2);
-
-                    Console.WriteLine("I've created the LI");
-
-                    Console.WriteLine("Process Data? Y/N");
-                    char c = Console.ReadKey().KeyChar;
-                    if (c == 'y' || c == 'Y')
-                        //  mc.Value.DoSomething();
-                        mc.Value.DoSomething();
-
-                    else
-                        Console.WriteLine("Program complete.");
-
-                    Console.WriteLine("Enter Name to find? Exapmle: Fred ");
-                    string s = Console.ReadLine();
-
-                    if (s.Length > 0)
-                    {
-                        Console.WriteLine("mc.Value.data.Value");
-                        mc = new Lazy<MyClass>(() => new MyClass(s));
-                        Console.WriteLine(mc.Value.data.Value.Name);
-
-                    }
-                    Console.WriteLine("Press any key");
-                    Console.ReadKey();
-                }
-
-                static void Test()
-                {
-                    // snip pet 9 was here. deleted per JoshP
-
-                }
-
-                private static void ProcessData(DataInitializedFromDb data){}
-                private static void Test2()
-                {
-                    string cmdText = "";
-                    // was s n i p p e t 10 removed per joshp
-
-                    Lazy<DataInitializedFromDb> _data =
-                        new Lazy<DataInitializedFromDb>(delegate
-                    {
-                        using(SqlConnection conn = new SqlConnection(...))
-                        using(SqlCommand comm = new SqlCommand(cmdText, conn))
-                        {
-                            SqlDataReader reader = comm.ExecuteReader();
-                            DataInitializedFromDb data =
-                                new DataInitializedFromDb(reader);
-                            return data;
-                        }
-                    }, LazyExecutionMode.AllowMultipleThreadSafeExecutions);
-
-                    // use the data
-                    if (_data.Value.Rows > 10)
-                    {
-                        ProcessData(_data.Value);
-                    }
-                    ///s n i p p e t 10
-                }
-
-                private static int Compute(int i){return i;}
-                private static void Test3()
-                {
-                    //<snippet11>
-                    //Initializing a value with a big computation, computed in parallel
-                    Lazy<int> _data = new Lazy<int>(delegate
-                    {
-                        return ParallelEnumerable.Range(0, 1000).
-                            Select(i => Compute(i)).Aggregate((x,y) => x + y);
-                    }, LazyExecutionMode.EnsureSingleThreadSafeExecution);
-                  //  ...
-                    // use the data
-                    if (_data.Value > 100)
-                    {
-                        Console.WriteLine("Good data");
-                    }
-                    //</snippet11>
-                }
-
-
-
-
-                   //<snippet12>
-                    // Direct initialization to avoid overhead
-                    static List<Exception> m_exceptions;
-
-                    static void AddException(Exception e)
-                    {
-                        LazyInitializer.EnsureInitialized(ref m_exceptions).Add(e);
-                    }
-                    //</snippet12>
-
-                 private static void Test5()
-                {
-                    //<snippet13>
-                    //Initializing a value per thread, per instance
-                     ThreadLocal<int[][]> _scratchArrays =
-                         new ThreadLocal<int[][]>(InitializeArrays);
-                    // . . .
-                     static int[][] InitializeArrays () {return new int[][]}
-                    //   . . .
-                    // use the thread-local data
-                    int i = 8;
-                    int [] tempArr = _scratchArrays.Value[i];
-                //</snippet13>
-
-                }
-
-                    static void Test6()
-                    {
-
-                        //<snippet14>
-                        Action<int>[] actions = new Action<int>[5];
-                        // ...initialize actions
-
-                        // Lazily-initializing a local with minimal overhead
-                        var exceptions = new LazyVariable<List<Exception>>();
-                        foreach(var action in actions)
-                        {
-                            try
-                            {
-                                action();
-                            }
-                            catch(Exception exc)
-                            {
-                                exceptions.Value.Add(exc);
-                            }
-                        }
-                        if (exceptions.IsValueCreated)
-                            throw new AggregateException(exceptions.Value);
-
-                    //</snippet14>
-                    }
-
+    {
+        public DataInitializedFromDb(SqlDataReader reader) { }
+        public int Rows = 0;
     }
-
-        class Data
+    //class ThreadLocal<T>
+    //{
+    //    public ThreadLocal(T input) {}
+    //    public T Value {get; set;}
+    //}
+    /*
+        class LazyDemo
         {
-            public Data(string s) { Name = s; }
-            public string Name {get; set;}
-            public int Number {get; set;}
-            //... assume
-        }
-            class MyClass
+            static void Main()
             {
+                Lazy<MyClass> mc = new Lazy<MyClass>();
 
-                public LazyVariable<Data> data;
-                public MyClass()
-                {
-                    Console.WriteLine("Default constructor called.");
-                }
-                public MyClass(string str)
-                {
-                    Console.Write("Constructor with string argument called: ");
-                    data = new LazyVariable<Data>( () => new Data(str));
-                    Console.WriteLine(data.Value.Name);
-                }
+                LazyInit.EnsureInitialized<MyClass>(ref mc);
 
-                public void DoSomething()
+
+                MyClass mc2 = null;
+
+                LazyInit.EnsureInitialized<MyClass>(ref mc2);
+
+                Console.WriteLine("I've created the LI");
+
+                Console.WriteLine("Process Data? Y/N");
+                char c = Console.ReadKey().KeyChar;
+                if (c == 'y' || c == 'Y')
+                    //  mc.Value.DoSomething();
+                    mc.Value.DoSomething();
+
+                else
+                    Console.WriteLine("Program complete.");
+
+                Console.WriteLine("Enter Name to find? Exapmle: Fred ");
+                string s = Console.ReadLine();
+
+                if (s.Length > 0)
                 {
-                    Console.WriteLine("Do something");
+                    Console.WriteLine("mc.Value.data.Value");
+                    mc = new Lazy<MyClass>(() => new MyClass(s));
+                    Console.WriteLine(mc.Value.data.Value.Name);
+
                 }
+                Console.WriteLine("Press any key");
+                Console.ReadKey();
+            }
+
+            static void Test()
+            {
+                // snip pet 9 was here. deleted per JoshP
 
             }
-            */
+
+            private static void ProcessData(DataInitializedFromDb data){}
+            private static void Test2()
+            {
+                string cmdText = "";
+                // was s n i p p e t 10 removed per joshp
+
+                Lazy<DataInitializedFromDb> _data =
+                    new Lazy<DataInitializedFromDb>(delegate
+                {
+                    using(SqlConnection conn = new SqlConnection(...))
+                    using(SqlCommand comm = new SqlCommand(cmdText, conn))
+                    {
+                        SqlDataReader reader = comm.ExecuteReader();
+                        DataInitializedFromDb data =
+                            new DataInitializedFromDb(reader);
+                        return data;
+                    }
+                }, LazyExecutionMode.AllowMultipleThreadSafeExecutions);
+
+                // use the data
+                if (_data.Value.Rows > 10)
+                {
+                    ProcessData(_data.Value);
+                }
+                ///s n i p p e t 10
+            }
+
+            private static int Compute(int i){return i;}
+            private static void Test3()
+            {
+                //<snippet11>
+                //Initializing a value with a big computation, computed in parallel
+                Lazy<int> _data = new Lazy<int>(delegate
+                {
+                    return ParallelEnumerable.Range(0, 1000).
+                        Select(i => Compute(i)).Aggregate((x,y) => x + y);
+                }, LazyExecutionMode.EnsureSingleThreadSafeExecution);
+              //  ...
+                // use the data
+                if (_data.Value > 100)
+                {
+                    Console.WriteLine("Good data");
+                }
+                //</snippet11>
+            }
+
+
+
+
+               //<snippet12>
+                // Direct initialization to avoid overhead
+                static List<Exception> m_exceptions;
+
+                static void AddException(Exception e)
+                {
+                    LazyInitializer.EnsureInitialized(ref m_exceptions).Add(e);
+                }
+                //</snippet12>
+
+             private static void Test5()
+            {
+                //<snippet13>
+                //Initializing a value per thread, per instance
+                 ThreadLocal<int[][]> _scratchArrays =
+                     new ThreadLocal<int[][]>(InitializeArrays);
+                // . . .
+                 static int[][] InitializeArrays () {return new int[][]}
+                //   . . .
+                // use the thread-local data
+                int i = 8;
+                int [] tempArr = _scratchArrays.Value[i];
+            //</snippet13>
+
+            }
+
+                static void Test6()
+                {
+
+                    //<snippet14>
+                    Action<int>[] actions = new Action<int>[5];
+                    // ...initialize actions
+
+                    // Lazily-initializing a local with minimal overhead
+                    var exceptions = new LazyVariable<List<Exception>>();
+                    foreach(var action in actions)
+                    {
+                        try
+                        {
+                            action();
+                        }
+                        catch(Exception exc)
+                        {
+                            exceptions.Value.Add(exc);
+                        }
+                    }
+                    if (exceptions.IsValueCreated)
+                        throw new AggregateException(exceptions.Value);
+
+                //</snippet14>
+                }
+
+}
+
+    class Data
+    {
+        public Data(string s) { Name = s; }
+        public string Name {get; set;}
+        public int Number {get; set;}
+        //... assume
+    }
+        class MyClass
+        {
+
+            public LazyVariable<Data> data;
+            public MyClass()
+            {
+                Console.WriteLine("Default constructor called.");
+            }
+            public MyClass(string str)
+            {
+                Console.Write("Constructor with string argument called: ");
+                data = new LazyVariable<Data>( () => new Data(str));
+                Console.WriteLine(data.Value.Name);
+            }
+
+            public void DoSomething()
+            {
+                Console.WriteLine("Do something");
+            }
+
+        }
+        */
 
     // NOT USED!!!!!
     //<snippet15>
@@ -555,7 +555,7 @@ namespace Demos
         }
     }
     //</snippet15>
-    }
+}
 
 class Test5
 {

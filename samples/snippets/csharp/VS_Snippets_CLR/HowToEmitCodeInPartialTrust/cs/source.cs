@@ -1,12 +1,12 @@
 ﻿//<Snippet1>
 using System;
-using System.Reflection.Emit;
+using System.Collections;
+using System.Diagnostics;
 using System.Reflection;
+using System.Reflection.Emit;
 using System.Security;
 using System.Security.Permissions;
 using System.Security.Policy;
-using System.Collections;
-using System.Diagnostics;
 
 // This code example works properly only if it is run from a fully
 // trusted location, such as your local computer.
@@ -23,7 +23,7 @@ public delegate char Test2(String instance);
 //<Snippet10>
 public class Worker : MarshalByRefObject
 {
-//</Snippet10>
+    //</Snippet10>
     private void PrivateMethod()
     {
         Console.WriteLine("Worker.PrivateMethod()");
@@ -39,7 +39,7 @@ public class Worker : MarshalByRefObject
         il.Emit(OpCodes.Ret);
         //</Snippet15>
 
-        Test1 t1 = (Test1) meth.CreateDelegate(typeof(Test1));
+        Test1 t1 = (Test1)meth.CreateDelegate(typeof(Test1));
         t1();
     }
     //</Snippet11>
@@ -76,7 +76,7 @@ public class Worker : MarshalByRefObject
         // invoke it.
         try
         {
-            Test t = (Test) meth.CreateDelegate(typeof(Test));
+            Test t = (Test)meth.CreateDelegate(typeof(Test));
             try
             {
                 t(this);
@@ -126,7 +126,7 @@ public class Worker : MarshalByRefObject
         // invoke it.
         try
         {
-            Test2 t = (Test2) meth.CreateDelegate(typeof(Test2));
+            Test2 t = (Test2)meth.CreateDelegate(typeof(Test2));
             char first = t("Hello, World!");
             Console.WriteLine("{0} is the first character.", first);
         }
@@ -175,7 +175,7 @@ public class Worker : MarshalByRefObject
         // namespace, which is the project name. For example, if the project
         // is "AnonymouslyHosted", the class is "AnonymouslyHosted.Worker".
         //<Snippet12>
-        Worker w = (Worker) ad.CreateInstanceAndUnwrap(asmName, "Worker");
+        Worker w = (Worker)ad.CreateInstanceAndUnwrap(asmName, "Worker");
         //</Snippet12>
 
         // Emit a simple dynamic method that prints "Hello, World!"
@@ -210,7 +210,7 @@ public class Worker : MarshalByRefObject
 
         // Create an instance of the Worker class in the partially trusted
         // domain.
-        w = (Worker) ad.CreateInstanceAndUnwrap(asmName, "Worker");
+        w = (Worker)ad.CreateInstanceAndUnwrap(asmName, "Worker");
 
         // Again, emit and invoke a dynamic method that calls a private method
         // of Worker, skipping JIT visibility checks. This time compilation

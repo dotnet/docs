@@ -1,5 +1,5 @@
-﻿using Microsoft.Win32;
-using System;
+﻿using System;
+using Microsoft.Win32;
 
 public static class VersionTest
 {
@@ -45,7 +45,7 @@ public static class VersionTest
                             Console.WriteLine($"{versionKeyName}  {name}  SP{sp}");
                         }
                     }
-                    if (! string.IsNullOrEmpty(name))
+                    if (!string.IsNullOrEmpty(name))
                     {
                         continue;
                     }
@@ -53,7 +53,7 @@ public static class VersionTest
                     {
                         RegistryKey subKey = versionKey.OpenSubKey(subKeyName);
                         name = (string)subKey.GetValue("Version", "");
-                        if (! string.IsNullOrEmpty(name))
+                        if (!string.IsNullOrEmpty(name))
                             sp = subKey.GetValue("SP", "").ToString();
 
                         install = subKey.GetValue("Install", "").ToString();
@@ -63,7 +63,7 @@ public static class VersionTest
                         }
                         else
                         {
-                            if (!(string.IsNullOrEmpty(sp )) && install == "1")
+                            if (!(string.IsNullOrEmpty(sp)) && install == "1")
                             {
                                 Console.WriteLine($"{subKeyName}  {name}  SP{sp}");
                             }

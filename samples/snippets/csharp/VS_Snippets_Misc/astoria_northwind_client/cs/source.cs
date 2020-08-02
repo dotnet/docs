@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.Services.Client;
-using NorthwindClient.Northwind;
 //<snippetUsingForAttributes>
 using System.Data.Services.Common;
+using System.Linq;
+using System.Text;
+using NorthwindClient.Northwind;
 //</snippetUsingForAttributes>
 
 namespace NorthwindClient
@@ -146,8 +146,8 @@ namespace NorthwindClient
             // Define the query to execute asynchronously that returns
             // all customers with their respective orders.
             DataServiceQuery<Customer> query = (DataServiceQuery<Customer>)(from cust in context.Customers.Expand("Orders")
-                                               where cust.CustomerID == "ALFKI"
-                                               select cust);
+                                                                            where cust.CustomerID == "ALFKI"
+                                                                            select cust);
 
             try
             {
@@ -421,7 +421,7 @@ namespace NorthwindClient
 
             // Add the query requests to a batch request array.
             DataServiceRequest[] batchRequests =
-                new DataServiceRequest[]{customerQuery, productsQuery};
+                new DataServiceRequest[] { customerQuery, productsQuery };
 
             DataServiceResponse batchResponse;
 
@@ -619,7 +619,7 @@ namespace NorthwindClient
                 // Send the update to the data service.
                 context.SaveChanges();
             }
-            catch (DataServiceRequestException  ex)
+            catch (DataServiceRequestException ex)
             {
                 throw new ApplicationException(
                     "An error occurred when saving changes.", ex);
@@ -1032,13 +1032,15 @@ namespace NorthwindClient
             //<snippetProjectWithInitializer>
             var query = from c in context.Customers
                         where c.Country == "Germany"
-                        select new CustomerAddress {
+                        select new CustomerAddress
+                        {
                             CustomerID = c.CustomerID,
                             Address = c.Address,
                             City = c.City,
                             Region = c.Region,
                             PostalCode = c.PostalCode,
-                            Country = c.Country};
+                            Country = c.Country
+                        };
             //</snippetProjectWithInitializer>
             //</snippetSelectCustomerAddressSpecific>
 
@@ -1216,7 +1218,7 @@ namespace NorthwindClient
                     Console.WriteLine("Customer ID: {0} \r\nStreet: {1} "
                         + "\r\nCity: {2} \r\nState: {3} \r\nZip Code: {4} \r\nCountry: {5}",
                         item.CustomerID, item.Address, item.City, item.Region,
-                        item.PostalCode.Split(new char[]{'-'})[0], item.Country);
+                        item.PostalCode.Split(new char[] { '-' })[0], item.Country);
                 }
             }
             catch (NotSupportedException ex)
@@ -1234,9 +1236,9 @@ namespace NorthwindClient
             // Define a query for orders that have shipped.
             //<snippetLinqQueryPrecedenceSpecific>
             var ordersQuery = (from o in context.Orders
-                                 where o.ShippedDate < DateTime.Today
-                                 orderby o.OrderDate descending, o.CustomerID
-                                 select o).Skip(10).Take(10);
+                               where o.ShippedDate < DateTime.Today
+                               orderby o.OrderDate descending, o.CustomerID
+                               select o).Skip(10).Take(10);
             //</snippetLinqQueryPrecedenceSpecific>
 
             try
@@ -1311,8 +1313,8 @@ namespace NorthwindClient
             // Define a query for orders with a Freight value greater than 30.
             //<snippetLinqWhereClauseSpecific>
             var filteredOrders = from o in context.Orders
-                                    where o.Freight > 30
-                                    select o;
+                                 where o.Freight > 30
+                                 select o;
             //</snippetLinqWhereClauseSpecific>
 
             try
@@ -1405,9 +1407,9 @@ namespace NorthwindClient
             // Define a query for orders with a Freight value greater than 30.
             //<snippetLinqOrderByClauseSpecific>
             var sortedCustomers = from c in context.Customers
-                                 orderby c.CompanyName ascending,
-                                 c.PostalCode descending
-                                 select c;
+                                  orderby c.CompanyName ascending,
+                                  c.PostalCode descending
+                                  select c;
             //</snippetLinqOrderByClauseSpecific>
 
             try
@@ -1501,8 +1503,8 @@ namespace NorthwindClient
             // first 50 orders returned by the query.
             //<snippetLinqSkipTakeMethodSpecific>
             var pagedOrders = (from o in context.Orders
-                                  orderby o.OrderDate descending
-                                 select o).Skip(50).Take(25);
+                               orderby o.OrderDate descending
+                               select o).Skip(50).Take(25);
             //</snippetLinqSkipTakeMethodSpecific>
 
             try
@@ -1567,15 +1569,15 @@ namespace NorthwindClient
             // Define a query for orders with a Freight value greater than 30.
             //<snippetLinqSelectClauseSpecific>
             var projectedQuery = from c in context.Customers
-                        select new CustomerAddress
-                        {
-                            CustomerID = c.CustomerID,
-                            Address = c.Address,
-                            City = c.City,
-                            Region = c.Region,
-                            PostalCode = c.PostalCode,
-                            Country = c.Country
-                        };
+                                 select new CustomerAddress
+                                 {
+                                     CustomerID = c.CustomerID,
+                                     Address = c.Address,
+                                     City = c.City,
+                                     Region = c.Region,
+                                     PostalCode = c.PostalCode,
+                                     Country = c.Country
+                                 };
             //</snippetLinqSelectClauseSpecific>
 
             try
@@ -1613,7 +1615,8 @@ namespace NorthwindClient
                     City = c.City,
                     Region = c.Region,
                     PostalCode = c.PostalCode,
-                    Country = c.Country});
+                    Country = c.Country
+                });
             //</snippetLinqSelectMethodSpecific>
 
             try
@@ -1646,8 +1649,8 @@ namespace NorthwindClient
             // for the customer "ALKFI".
             //<snippetLinqQueryExpandSpecific>
             var ordersQuery = from o in context.Orders.Expand("Order_Details")
-                                 where o.CustomerID == "ALFKI"
-                                 select o;
+                              where o.CustomerID == "ALFKI"
+                              select o;
             //</snippetLinqQueryExpandSpecific>
 
             try
@@ -1729,10 +1732,10 @@ namespace NorthwindClient
             // Define a query that returns products based on a
             // calculation that is determined on the client.
             var productsQuery = from p in context.Products
-                              where p.UnitPrice >
-                              (basePrice - (basePrice * discount)) &&
-                              p.ProductName.Contains("bike")
-                              select p;
+                                where p.UnitPrice >
+                                (basePrice - (basePrice * discount)) &&
+                                p.ProductName.Contains("bike")
+                                select p;
             //</snippetLinqQueryClientEvalSpecific>
 
             try
@@ -1769,8 +1772,8 @@ namespace NorthwindClient
 
             // Define a query for orders with a Freight value greater than 30.
             var query = from cust in context.Customers
-                where cust.Country == "Germany"
-                select cust;
+                        where cust.Country == "Germany"
+                        select cust;
 
             try
             {
@@ -2092,7 +2095,7 @@ namespace NorthwindClient
         }
         //</snippetOnAsyncQueryExecutionComplete>
 
-    public static void CallServiceOperationAsync()
+        public static void CallServiceOperationAsync()
         {
             //<snippetCallServiceOperationAsync>
             // Define the service operation query parameter.

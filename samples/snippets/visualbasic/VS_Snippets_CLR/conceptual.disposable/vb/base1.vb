@@ -1,9 +1,9 @@
 ﻿' Visual Basic .NET Document
 Option Strict On
 
+Imports System.IO
 ' <Snippet9>
 Imports Microsoft.Win32.SafeHandles
-Imports System.IO
 
 Public Class DisposableStreamResource : Implements IDisposable
     ' Define constants.

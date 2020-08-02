@@ -1,10 +1,10 @@
 ﻿//<Snippet1>
+using System.IO;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.IO;
 
 // This control initializes with ink already on it and allows the
 // user to erase the ink with the tablet pen or mouse.

@@ -1,10 +1,10 @@
 ﻿'  Copyright (c) Microsoft Corporation.  All Rights Reserved.
 
-Imports System.ServiceModel
-Imports System.Threading
-Imports System.IO
-Imports System.Text
 Imports System.Globalization
+Imports System.IO
+Imports System.ServiceModel
+Imports System.Text
+Imports System.Threading
 
 Namespace Microsoft.ServiceModel.Samples
     ' Define a service contract.

@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Windows;
-using System.Data;
-using System.Xml;
 using System.Configuration;
+using System.Data;
+using System.Windows;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Navigation;
+using System.Xml;
 
 namespace BrushesIntroduction
 {

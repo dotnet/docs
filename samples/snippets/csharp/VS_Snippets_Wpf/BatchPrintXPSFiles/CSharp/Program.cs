@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Printing;
 using System.IO;
+using System.Printing;
+using System.Text;
 using System.Threading;
 
 namespace BatchPrintXPSFiles

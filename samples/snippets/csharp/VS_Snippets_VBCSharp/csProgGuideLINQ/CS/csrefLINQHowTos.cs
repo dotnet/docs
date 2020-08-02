@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
-using System.IO;
 
 //test
 // This file contains all the code examples for LINQ-related topics
@@ -96,7 +96,7 @@ namespace csrefLINQExamples
         {
             var highScores = from student in students
                              where student.ExamScores[exam] > score
-                             select new {Name = student.FirstName, Score = student.ExamScores[exam]};
+                             select new { Name = student.FirstName, Score = student.ExamScores[exam] };
 
             foreach (var item in highScores)
             {
@@ -517,7 +517,7 @@ namespace csrefLINQExamples
     //}
     //< / s n i p p e t 2 2 >
 
-#region moreOldCode
+    #region moreOldCode
     //// Create a list of filenames.
     //        string[] files = Directory.GetFiles(System.Environment.CurrentDirectory);
 
@@ -552,7 +552,7 @@ namespace csrefLINQExamples
     //        }
     //        return retval;
     //    }
-#endregion
+    #endregion
 
     //How To: Handle Exceptions in Query Expressions 4ce6c081-7731-4b8f-b4fa-d947f165a18a
     //<snippet12>
@@ -758,8 +758,11 @@ namespace csrefLINQExamples
 
             var queryHighScoreGroups =
                 from student in students
-                group student by new { FirstLetter = student.LastName[0],
-                    Score = student.ExamScores[0] > 85 } into studentGroup
+                group student by new
+                {
+                    FirstLetter = student.LastName[0],
+                    Score = student.ExamScores[0] > 85
+                } into studentGroup
                 orderby studentGroup.Key.FirstLetter
                 select studentGroup;
 

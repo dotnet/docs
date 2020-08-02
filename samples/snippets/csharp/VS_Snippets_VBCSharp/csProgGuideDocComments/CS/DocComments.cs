@@ -573,7 +573,7 @@ namespace Wrap16
     }
 
     ///<inheritdoc/>
-    public class TestClass: MainClass
+    public class TestClass : MainClass
     {
     }
     //</Snippet16>

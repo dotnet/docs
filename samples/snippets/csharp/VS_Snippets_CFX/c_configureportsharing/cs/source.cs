@@ -9,13 +9,13 @@ namespace Samples
     interface IMyService
     {
 
-       //Define the contract operations.
+        //Define the contract operations.
     }
 
     class MyService : IMyService
     {
 
-    //Implement the IMyService operations.
+        //Implement the IMyService operations.
     }
     //</snippet1>
 
@@ -25,15 +25,15 @@ namespace Samples
         {
         }
 
-	private void CreateNetTcpBinding()
+        private void CreateNetTcpBinding()
         {
             //<snippet2>
             NetTcpBinding portsharingBinding = new NetTcpBinding();
             portsharingBinding.PortSharingEnabled = true;
             //</snippet2>
             //<snippet3>
-            ServiceHost host = new ServiceHost( typeof( MyService ) );
-            host.AddServiceEndpoint( typeof( IMyService ), portsharingBinding,"net.tcp://localhost/MyService" );
+            ServiceHost host = new ServiceHost(typeof(MyService));
+            host.AddServiceEndpoint(typeof(IMyService), portsharingBinding, "net.tcp://localhost/MyService");
 
             //</snippet3>
         }

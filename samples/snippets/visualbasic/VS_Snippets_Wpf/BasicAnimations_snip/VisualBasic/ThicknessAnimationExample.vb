@@ -2,20 +2,20 @@
 
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Shapes
-Imports System.Windows.Media.Animation
 Imports System.Windows.Media
+Imports System.Windows.Media.Animation
+Imports System.Windows.Shapes
 
 Namespace SDKSamples
-	Public Class ThicknessAnimationExample
-		Inherits Page
-		Public Sub New()
+    Public Class ThicknessAnimationExample
+        Inherits Page
+        Public Sub New()
 
-			' Create a NameScope for this page so that
-			' Storyboards can be used.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a NameScope for this page so that
+            ' Storyboards can be used.
+            NameScope.SetNameScope(Me, New NameScope())
 
-			' Create a Border which will be the target of the animation.
+            ' Create a Border which will be the target of the animation.
             Dim myBorder As New Border()
             With myBorder
                 .Background = Brushes.Gray
@@ -25,9 +25,9 @@ Namespace SDKSamples
                 .Padding = New Thickness(20)
             End With
 
-			' Assign the border a name so that
-			' it can be targeted by a Storyboard.
-			Me.RegisterName("myAnimatedBorder", myBorder)
+            ' Assign the border a name so that
+            ' it can be targeted by a Storyboard.
+            Me.RegisterName("myAnimatedBorder", myBorder)
 
             Dim myThicknessAnimation As New ThicknessAnimation()
             With myThicknessAnimation
@@ -58,8 +58,8 @@ Namespace SDKSamples
             myStackPanel.Children.Add(myBorder)
 
             Content = myStackPanel
-		End Sub
-	End Class
+        End Sub
+    End Class
 End Namespace
 ' </SnippetThicknessAnimationWholePage>
 

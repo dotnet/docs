@@ -134,8 +134,8 @@ namespace ListViewFindItemWithTextHowTo
             this.Controls.Add(previousItemBox);
 
             // Handle the MouseDown event to capture user input.
-           iconListView.MouseDown +=
-               new MouseEventHandler(iconListView_MouseDown);
+            iconListView.MouseDown +=
+                new MouseEventHandler(iconListView_MouseDown);
             //iconListView.MouseWheel += new MouseEventHandler(iconListView_MouseWheel);
         }
 

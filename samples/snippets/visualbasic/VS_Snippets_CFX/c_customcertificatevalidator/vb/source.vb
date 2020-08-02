@@ -1,10 +1,10 @@
 ﻿'<snippet3>
 Imports System.IdentityModel.Selectors
+Imports System.IdentityModel.Tokens
 Imports System.Security.Cryptography.X509Certificates
+Imports System.Security.Permissions
 Imports System.ServiceModel
 Imports System.ServiceModel.Security
-Imports System.IdentityModel.Tokens
-Imports System.Security.Permissions
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 <ServiceContract([Namespace]:="http://Microsoft.ServiceModel.Samples")> _

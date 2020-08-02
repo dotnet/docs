@@ -3,8 +3,8 @@
 Option Strict On
 
 Imports System.IO
-Imports System.ServiceModel
 Imports System.Runtime.Serialization
+Imports System.ServiceModel
 
 Namespace Microsoft.ServiceModel.Samples
 

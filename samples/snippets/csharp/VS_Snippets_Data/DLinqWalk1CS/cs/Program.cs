@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 // <Snippet1>
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.Linq;
+using System.Text;
 // </Snippet1>
 
 namespace cs_walkthru1
@@ -33,34 +33,34 @@ namespace cs_walkthru1
     public class snippet3
     {
 
-// <Snippet3>
-private string _CustomerID;
-[Column(IsPrimaryKey=true, Storage="_CustomerID")]
-public string CustomerID
-{
-    get
-    {
-        return this._CustomerID;
-    }
-    set
-    {
-        this._CustomerID = value;
-    }
-}
+        // <Snippet3>
+        private string _CustomerID;
+        [Column(IsPrimaryKey = true, Storage = "_CustomerID")]
+        public string CustomerID
+        {
+            get
+            {
+                return this._CustomerID;
+            }
+            set
+            {
+                this._CustomerID = value;
+            }
+        }
 
-private string _City;
-[Column(Storage="_City")]
-public string City
-{
-    get
-    {
-        return this._City;
-    }
-    set
-    {
-        this._City=value;
-    }
-}
-// </Snippet3>
+        private string _City;
+        [Column(Storage = "_City")]
+        public string City
+        {
+            get
+            {
+                return this._City;
+            }
+            set
+            {
+                this._City = value;
+            }
+        }
+        // </Snippet3>
     }
 }

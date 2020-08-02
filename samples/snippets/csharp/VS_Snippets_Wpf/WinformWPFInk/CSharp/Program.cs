@@ -1,17 +1,16 @@
 ﻿using System;
-using System.IO;
-using wpf = System.Windows;
-using System.Windows.Input;
-
-// Using Statements for winforms
-//<SnippetUsingWinforms>
-using Microsoft.Ink;
 using System.Drawing;
+using System.IO;
 //</SnippetUsingWinforms>
 
 // Using Statements for WPF.
 //<SnippetUsingWPF>
 using System.Windows.Ink;
+using System.Windows.Input;
+// Using Statements for winforms
+//<SnippetUsingWinforms>
+using Microsoft.Ink;
+using wpf = System.Windows;
 //</SnippetUsingWPF>
 
 namespace WinformStylusPointsTest_Console

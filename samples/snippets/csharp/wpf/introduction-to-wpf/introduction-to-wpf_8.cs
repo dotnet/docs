@@ -1,4 +1,4 @@
-using System.Windows; // Window, MessageBox
+﻿using System.Windows; // Window, MessageBox
 using System.Windows.Input; // MouseButtonEventHandler
 
 namespace SDKSample

@@ -3,11 +3,11 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Windows.Annotations.Storage;
 using System.IO;
-using System.Windows.Annotations;
 using System.IO.Packaging;
+using System.Text;
+using System.Windows.Annotations;
+using System.Windows.Annotations.Storage;
 using System.Windows.Controls;
 using System.Windows.Documents;
 
@@ -43,9 +43,9 @@ namespace SDKSample
         public DocumentViewer DocViewer
         {
             set
-                { _docViewer = value; }
+            { _docViewer = value; }
             get
-                { return _docViewer; }
+            { return _docViewer; }
         }
 
         // ---------------------------- SetSource -----------------------------
@@ -76,11 +76,11 @@ namespace SDKSample
         ///     calling StartAnnotations().</remarks>
         public void StartAnnotations()
         {
-            if (_docViewer==null)
+            if (_docViewer == null)
                 throw new InvalidOperationException(
                     "Required DocumentViewer control has not been specified.");
 
-            if ((_packageUri==null) || (_rootUri==null))
+            if ((_packageUri == null) || (_rootUri == null))
                 throw new InvalidOperationException(
                     "Required SetSource() has not been called.");
 
@@ -88,7 +88,7 @@ namespace SDKSample
             if (_annotService == null)
             {
                 // Get the annotations data stream from the XPS container.
-                _annotStream  = GetAnnotationPart(_rootUri).GetStream();
+                _annotStream = GetAnnotationPart(_rootUri).GetStream();
 
                 // Create the AnnotationService.
                 _annotService = new AnnotationService(_docViewer);
@@ -112,7 +112,7 @@ namespace SDKSample
         public void StopAnnotations()
         {
             // If the AnnotationStore is active, flush and close it.
-            if ( (_annotService != null) && _annotService.IsEnabled )
+            if ((_annotService != null) && _annotService.IsEnabled)
             {
                 _annotService.Store.Flush();
                 _annotStream.Flush();
@@ -176,8 +176,8 @@ namespace SDKSample
             // Search through all the document relationships to find the
             // annotations relationship part (or null, of there is none).
             PackageRelationship annotRel = null;
-            foreach ( PackageRelationship rel in
-                docPart.GetRelationshipsByType(_annotRelsType) )
+            foreach (PackageRelationship rel in
+                docPart.GetRelationshipsByType(_annotRelsType))
             {
                 annotRel = rel;
             }

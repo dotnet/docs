@@ -4,11 +4,11 @@
 #region Using directives
 
 using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
 //using System.Data.SqlClient;
 using System.Drawing;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Text;
 using System.Windows.Forms;
 
@@ -218,7 +218,7 @@ class DataGridViewMisc : Form
     private void setCurrentCellButton_Click(object sender, System.EventArgs e)
     {
         // Set the current cell to the cell in column 1, Row 0.
-        this.dataGridView1.CurrentCell = this.dataGridView1[1,0];
+        this.dataGridView1.CurrentCell = this.dataGridView1[1, 0];
     }
     //</Snippet085>
 

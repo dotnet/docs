@@ -1,9 +1,9 @@
 ﻿Imports System.IO
-Imports System.ServiceModel
 Imports System.Runtime.Serialization
-Imports System.ServiceModel.Description
-Imports System.ServiceModel.Channels
 Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
+Imports System.ServiceModel.Description
 Imports System.ServiceModel.Security.Tokens
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

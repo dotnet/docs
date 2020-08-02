@@ -3,10 +3,10 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Windows.Input;
 
 namespace Input_Ovw
 {
@@ -20,7 +20,7 @@ namespace Input_Ovw
         {
             //<SnippetInput_OvwHandlingInputCodeBehind>
             // Create the UI elements.
-            StackPanel inputStackPanel= new StackPanel();
+            StackPanel inputStackPanel = new StackPanel();
             Button inputButton = new Button();
             TextBox inputTextBox = new TextBox();
 

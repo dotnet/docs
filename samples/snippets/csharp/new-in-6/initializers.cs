@@ -20,6 +20,6 @@ namespace Initializers
             [302] = "Page moved, but left a forwarding address.",
             [500] = "The web server can't come out to play today."
         };
-         // </DictionaryInitializer>
+        // </DictionaryInitializer>
     }
 }

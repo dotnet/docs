@@ -8,31 +8,31 @@
 '
 
 Imports System.Windows
-Imports System.Windows.Navigation
-Imports System.Windows.Media
-Imports System.Windows.Media.Animation
-Imports System.Windows.Shapes
 Imports System.Windows.Controls
 Imports System.Windows.Input
+Imports System.Windows.Media
+Imports System.Windows.Media.Animation
+Imports System.Windows.Navigation
+Imports System.Windows.Shapes
 
 Namespace Microsoft.Samples.Animation.TimingBehaviors
 
 
-	Public Class TimelineCurrentTimeInvalidatedExample
-		Inherits Page
+    Public Class TimelineCurrentTimeInvalidatedExample
+        Inherits Page
 
 
-		Private currentTimeTextBlock As TextBlock
-		Public Sub New()
+        Private currentTimeTextBlock As TextBlock
+        Public Sub New()
 
-			' Create a name scope.
-			NameScope.SetNameScope(Me, New NameScope())
+            ' Create a name scope.
+            NameScope.SetNameScope(Me, New NameScope())
 
-			WindowTitle = "GetAnimationBaseValue Example"
-			Dim myPanel As New StackPanel()
-			myPanel.Margin = New Thickness(20)
+            WindowTitle = "GetAnimationBaseValue Example"
+            Dim myPanel As New StackPanel()
+            myPanel.Margin = New Thickness(20)
 
-			' Create a rectangle.
+            ' Create a rectangle.
             Dim animatedRectangle As New Rectangle()
             With animatedRectangle
                 .Width = 100
@@ -74,20 +74,20 @@ Namespace Microsoft.Samples.Animation.TimingBehaviors
             theStoryboard.Begin(animatedRectangle, True)
 
 
-		End Sub
+        End Sub
 
-		Private Sub storyboard_CurrentTimeInvalidated(ByVal sender As Object, ByVal e As EventArgs)
+        Private Sub storyboard_CurrentTimeInvalidated(ByVal sender As Object, ByVal e As EventArgs)
 
-			' Sender is the clock that was created for this storyboard.
-			Dim storyboardClock As Clock = CType(sender, Clock)
+            ' Sender is the clock that was created for this storyboard.
+            Dim storyboardClock As Clock = CType(sender, Clock)
 
-			' Update the TextBlock with the storyboard's current time.
-			currentTimeTextBlock.Text = storyboardClock.CurrentTime.ToString()
-		End Sub
+            ' Update the TextBlock with the storyboard's current time.
+            currentTimeTextBlock.Text = storyboardClock.CurrentTime.ToString()
+        End Sub
 
 
 
-	End Class
+    End Class
 
 End Namespace
 '</SnippetTimelineCurrentTimeInvalidatedExampleWholePage>

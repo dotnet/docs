@@ -1,8 +1,8 @@
-﻿Imports System.IO
+﻿Imports System.Collections
+Imports System.IO
 Imports System.Xml
 Imports System.Xml.Schema
 Imports System.Xml.XPath
-Imports System.Collections
 
 Class XPathNavigatorMethods
 

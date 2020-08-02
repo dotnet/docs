@@ -1,13 +1,13 @@
-﻿Imports System.Security.Cryptography.X509Certificates
-Imports System.IdentityModel.Claims
+﻿Imports System.IdentityModel.Claims
 Imports System.IdentityModel.Policy
+Imports System.Security.Cryptography.X509Certificates
+Imports System.Security.Permissions
 Imports System.ServiceModel
-Imports System.ServiceModel.Security
-Imports System.ServiceModel.Security.Tokens
+Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Description
 Imports System.ServiceModel.Dispatcher
-Imports System.ServiceModel.Channels
-Imports System.Security.Permissions
+Imports System.ServiceModel.Security
+Imports System.ServiceModel.Security.Tokens
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Microsoft.ServiceModel.Samples

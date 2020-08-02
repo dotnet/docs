@@ -304,7 +304,7 @@ public class Form1 : Form
         toolStripMenuItem1.DropDownItems.AddRange(new ToolStripItem[] {
             toolStripRadioButtonMenuItem5, toolStripRadioButtonMenuItem6});
 
-        menuStrip1.Items.AddRange(new ToolStripItem[] {mainToolStripMenuItem});
+        menuStrip1.Items.AddRange(new ToolStripItem[] { mainToolStripMenuItem });
         Controls.Add(menuStrip1);
         MainMenuStrip = menuStrip1;
         Text = "ToolStripRadioButtonMenuItem demo";

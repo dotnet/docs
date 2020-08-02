@@ -1,9 +1,9 @@
 ﻿' <SnippetRectFadeInOutCodeExampleWholePage>
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Shapes
 Imports System.Windows.Media
 Imports System.Windows.Media.Animation
+Imports System.Windows.Shapes
 
 Namespace SDKSample
 

@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
+using System.Security.Permissions;
+using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Threading;
-using System.Security.Permissions;
-using System.Collections.ObjectModel;
 
 namespace SDKSample
 {
@@ -15,25 +15,25 @@ namespace SDKSample
     {
         Window mainWindow;
 
-        protected override void OnStartup (StartupEventArgs e)
+        protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup (e);
-            CreateAndShowMainWindow ();
+            base.OnStartup(e);
+            CreateAndShowMainWindow();
         }
         [SecurityPermissionAttribute(SecurityAction.Demand, Flags = SecurityPermissionFlag.UnmanagedCode)]
-        private void CreateAndShowMainWindow ()
+        private void CreateAndShowMainWindow()
         {
 
             // Create the application's main window
-            mainWindow = new Window ();
+            mainWindow = new Window();
             mainWindow.Title = "Imaging Sample";
             ScrollViewer mySV = new ScrollViewer();
 
             //<Snippet1>
             int width = 128;
             int height = width;
-            int stride = width/8;
-            byte[] pixels = new byte[height*stride];
+            int stride = width / 8;
+            byte[] pixels = new byte[height * stride];
 
             // Try creating a new image with a custom palette.
             List<System.Windows.Media.Color> colors = new List<System.Windows.Media.Color>();
@@ -138,19 +138,19 @@ namespace SDKSample
             //</Snippet9>
 
             // <Snippet8>
-            FileStream stream3 = new FileStream( "image2.tif", FileMode.Create );
-            BitmapMetadata myBitmapMetadata = new BitmapMetadata( "tiff" );
+            FileStream stream3 = new FileStream("image2.tif", FileMode.Create);
+            BitmapMetadata myBitmapMetadata = new BitmapMetadata("tiff");
             TiffBitmapEncoder encoder3 = new TiffBitmapEncoder();
             myBitmapMetadata.ApplicationName = "Microsoft Digital Image Suite 10";
             myBitmapMetadata.Author = new ReadOnlyCollection<string>(
-                new List<string>() { "Lori Kane" } );
+                new List<string>() { "Lori Kane" });
             myBitmapMetadata.CameraManufacturer = "Tailspin Toys";
             myBitmapMetadata.CameraModel = "TT23";
             myBitmapMetadata.Comment = "Nice Picture";
             myBitmapMetadata.Copyright = "2010";
             myBitmapMetadata.DateTaken = "5/23/2010";
             myBitmapMetadata.Keywords = new ReadOnlyCollection<string>(
-                new List<string>() { "Lori", "Kane" } );
+                new List<string>() { "Lori", "Kane" });
             myBitmapMetadata.Rating = 5;
             myBitmapMetadata.Subject = "Lori";
             myBitmapMetadata.Title = "Lori's photo";
@@ -162,9 +162,9 @@ namespace SDKSample
                 decoder2.Frames[0],
                 decoder2.Frames[0].Thumbnail,
                 myBitmapMetadata,
-                decoder2.Frames[0].ColorContexts ) );
+                decoder2.Frames[0].ColorContexts));
 
-            encoder3.Save( stream3 );
+            encoder3.Save(stream3);
             stream3.Close();
             // </Snippet8>
 
@@ -209,10 +209,10 @@ namespace SDKSample
     internal static class EntryClass
     {
         [System.STAThread()]
-        private static void Main ()
+        private static void Main()
         {
-            MyApp app = new MyApp ();
-            app.Run ();
+            MyApp app = new MyApp();
+            app.Run();
         }
     }
 }

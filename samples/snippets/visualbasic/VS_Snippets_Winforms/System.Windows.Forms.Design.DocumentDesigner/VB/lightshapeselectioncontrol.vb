@@ -14,21 +14,21 @@ Public Class LightShapeSelectionControl
     Inherits System.Windows.Forms.UserControl
 
     ' <snippet330>
-   Private lightShapeValue As MarqueeLightShape = MarqueeLightShape.Square
+    Private lightShapeValue As MarqueeLightShape = MarqueeLightShape.Square
     ' </snippet330>
 
     Private editorService As IWindowsFormsEditorService
-   Private squarePanel As System.Windows.Forms.Panel
-   Private circlePanel As System.Windows.Forms.Panel
-   
-   ' Required designer variable.
-   Private components As System.ComponentModel.Container = Nothing
-   
-   
+    Private squarePanel As System.Windows.Forms.Panel
+    Private circlePanel As System.Windows.Forms.Panel
+
+    ' Required designer variable.
+    Private components As System.ComponentModel.Container = Nothing
+
+
     ' <snippet340>
-   ' This constructor takes a MarqueeLightShape value from the
-   ' design-time environment, which will be used to display
-   ' the initial state.
+    ' This constructor takes a MarqueeLightShape value from the
+    ' design-time environment, which will be used to display
+    ' the initial state.
     Public Sub New( _
     ByVal lightShape As MarqueeLightShape, _
     ByVal editorService As IWindowsFormsEditorService)

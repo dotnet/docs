@@ -1,11 +1,11 @@
 ﻿using System;
-using System.ServiceModel;
-using System.Runtime.Serialization;
-using System.IO;
 using System.Collections.Generic;
-using System.Xml;
-using System.ServiceModel.Channels;
+using System.IO;
+using System.Runtime.Serialization;
 using System.Security.Permissions;
+using System.ServiceModel;
+using System.ServiceModel.Channels;
+using System.Xml;
 
 namespace Samples
 {
@@ -59,13 +59,13 @@ namespace Samples
     {
         public Message GetData()
         {
-            FileStream stream = new FileStream("myfile.xml",FileMode.Open);
+            FileStream stream = new FileStream("myfile.xml", FileMode.Open);
             XmlDictionaryReader xdr =
                    XmlDictionaryReader.CreateTextReader(stream,
                                new XmlDictionaryReaderQuotas());
             MessageVersion ver =
                 OperationContext.Current.IncomingMessageVersion;
-            return Message.CreateMessage(ver,"GetDataResponse",xdr);
+            return Message.CreateMessage(ver, "GetDataResponse", xdr);
         }
 
         public void PutData(Message m)
@@ -82,7 +82,7 @@ namespace Samples
         {
             FaultCode fc = new FaultCode("Receiver");
             MessageVersion ver = OperationContext.Current.IncomingMessageVersion;
-                return Message.CreateMessage(ver,fc,"Bad data","GetDataResponse");
+            return Message.CreateMessage(ver, fc, "Bad data", "GetDataResponse");
         }
 
         public void PutData(Message m)
@@ -97,7 +97,7 @@ namespace Samples
     {
         public void PutData(Message m)
         {
-            FileStream stream = new FileStream("myfile.xml",FileMode.Create);
+            FileStream stream = new FileStream("myfile.xml", FileMode.Create);
             XmlDictionaryWriter xdw =
                 XmlDictionaryWriter.CreateTextWriter(stream);
             m.WriteBodyContents(xdw);
@@ -153,7 +153,7 @@ namespace Samples2
         private List<IOutputChannel> forwardingAddresses;
 
         [OperationContract]
-        public void ForwardMessage (Message m)
+        public void ForwardMessage(Message m)
         {
             //Copy the message to a buffer.
             MessageBuffer mb = m.CreateBufferedCopy(65536);
@@ -166,7 +166,7 @@ namespace Samples2
             }
 
             //Log to a file.
-            FileStream stream = new FileStream("log.xml",FileMode.Append);
+            FileStream stream = new FileStream("log.xml", FileMode.Append);
             mb.WriteMessage(stream);
             stream.Flush();
         }
@@ -194,18 +194,18 @@ namespace Samples2
     //<snippet9>
     public class RandomMessage : Message
     {
-        override protected  void  OnWriteBodyContents(XmlDictionaryWriter writer)
+        override protected void OnWriteBodyContents(XmlDictionaryWriter writer)
         {
             Random r = new Random();
-            for (int i = 0; i <100000; i++)
+            for (int i = 0; i < 100000; i++)
             {
                 writer.WriteStartElement("number");
-                writer.WriteValue(r.Next(1,20));
+                writer.WriteValue(r.Next(1, 20));
                 writer.WriteEndElement();
             }
         }
         //code omitted…
-    //</snippet9>
+        //</snippet9>
 
         //<snippet10>
         public override MessageHeaders Headers
@@ -228,7 +228,7 @@ namespace Samples2
     {
         override protected XmlDictionaryReader OnGetReaderAtBodyContents()
         {
-        return new RandomNumbersXmlReader();
+            return new RandomNumbersXmlReader();
         }
 
         override protected void OnWriteBodyContents(XmlDictionaryWriter writer)

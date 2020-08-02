@@ -2,27 +2,27 @@
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Input;
-using System.Windows.Documents;
-using System.Windows.Documents.Serialization;
-using System.IO;
-using System.Windows.Markup;
-using System.Windows.Controls;
-using System.Windows.Controls.Primitives;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Threading;
 using System.Diagnostics;
-using System.Windows.Shapes;
-using System.Windows.Media.Animation;
+using System.IO;
 using System.Reflection;
-using System.Windows.Xps.Packaging;
-using System.Windows.Xps;
+using System.Windows;
 using System.Windows.Annotations;
 using System.Windows.Annotations.Storage;
-using System.Collections;
+using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
+using System.Windows.Documents;
+using System.Windows.Documents.Serialization;
+using System.Windows.Input;
+using System.Windows.Markup;
+using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
+using System.Windows.Threading;
+using System.Windows.Xps;
+using System.Windows.Xps.Packaging;
 using System.Xml;
 
 namespace SdkSample
@@ -33,39 +33,39 @@ namespace SdkSample
         // ------------------------ AddCommandHandlers ------------------------
         private void AddCommandHandlers(FrameworkElement uiScope)
         {
-            CommandManager.RegisterClassCommandBinding( typeof(ThumbViewer),
-                new CommandBinding( ApplicationCommands.Open,
+            CommandManager.RegisterClassCommandBinding(typeof(ThumbViewer),
+                new CommandBinding(ApplicationCommands.Open,
                             new ExecutedRoutedEventHandler(OnOpen),
-                            new CanExecuteRoutedEventHandler(OnNewQuery) ) );
+                            new CanExecuteRoutedEventHandler(OnNewQuery)));
 
             // Add Command Handlers
             CommandBindingCollection commandBindings = uiScope.CommandBindings;
 
             commandBindings.Add(
-                new CommandBinding( ThumbViewer.Exit,
+                new CommandBinding(ThumbViewer.Exit,
                             new ExecutedRoutedEventHandler(OnExit),
-                            new CanExecuteRoutedEventHandler(OnNewQuery) ) );
+                            new CanExecuteRoutedEventHandler(OnNewQuery)));
 
             commandBindings.Add(
-                new CommandBinding( ThumbViewer.SaveAs,
+                new CommandBinding(ThumbViewer.SaveAs,
                             new ExecutedRoutedEventHandler(OnSaveAs),
-                            new CanExecuteRoutedEventHandler(OnNewQuery) ) );
+                            new CanExecuteRoutedEventHandler(OnNewQuery)));
 
             commandBindings.Add(
                 new CommandBinding(ThumbViewer.AddBookmark,
                             new ExecutedRoutedEventHandler(OnAddBookmark),
-                            new CanExecuteRoutedEventHandler(OnNewQuery) ) );
+                            new CanExecuteRoutedEventHandler(OnNewQuery)));
 
             commandBindings.Add(
                 new CommandBinding(ThumbViewer.AddComment,
                             new ExecutedRoutedEventHandler(OnAddComment),
-                            new CanExecuteRoutedEventHandler(OnNewQuery) ) );
+                            new CanExecuteRoutedEventHandler(OnNewQuery)));
 
             //<SnippetDocSerEnableAnn>
             // Enable Annotations
             _annotationBuffer = new MemoryStream();
             _annStore = new XmlStreamStore(_annotationBuffer);
-            _annServ  = new AnnotationService(FDPV);
+            _annServ = new AnnotationService(FDPV);
             _annStore.StoreContentChanged +=
                 new StoreContentChangedEventHandler(_annStore_StoreContentChanged);
             _annServ.Enable(_annStore);
@@ -73,28 +73,28 @@ namespace SdkSample
         }// end:AddCommandHandlers()
 
         public static RoutedCommand Exit
-            { get { return DeclareCommand(ref _Exit, "FileExit"); } }
+        { get { return DeclareCommand(ref _Exit, "FileExit"); } }
 
         private static RoutedCommand _Exit;
 
         public static RoutedCommand SaveAs
-            { get { return DeclareCommand(ref _SaveAs, "SaveAs"); } }
+        { get { return DeclareCommand(ref _SaveAs, "SaveAs"); } }
 
         private static RoutedCommand _SaveAs;
 
         public static RoutedCommand AddBookmark
-            { get { return DeclareCommand(ref _AddBookmark, "AddBookmark"); } }
+        { get { return DeclareCommand(ref _AddBookmark, "AddBookmark"); } }
 
         private static RoutedCommand _AddBookmark;
 
         public static RoutedCommand AddComment
-            { get { return DeclareCommand(ref _AddComment, "AddComment"); } }
+        { get { return DeclareCommand(ref _AddComment, "AddComment"); } }
 
         private static RoutedCommand _AddComment;
 
         private static RoutedCommand DeclareCommand(ref RoutedCommand command,
                                                       string commandDebugName)
-            { return DeclareCommand(ref command, commandDebugName, null); }
+        { return DeclareCommand(ref command, commandDebugName, null); }
 
         private static RoutedCommand DeclareCommand(ref RoutedCommand command,
                                 string commandDebugName, InputGesture gesture)
@@ -122,12 +122,12 @@ namespace SdkSample
         {
             AddCommandHandlers(this);
             _reflectionTextPointer_InsertTextElement =
-                typeof(TextPointer).GetMethod( "InsertTextElement",
-                              BindingFlags.NonPublic | BindingFlags.Instance );
+                typeof(TextPointer).GetMethod("InsertTextElement",
+                              BindingFlags.NonPublic | BindingFlags.Instance);
             if (_reflectionTextPointer_InsertTextElement == null)
             {
                 throw new Exception(
-                    "TextPointer.InsertTextElement method not found" );
+                    "TextPointer.InsertTextElement method not found");
             }
             Debug.Assert(FDPV.Document == null);
         }// end:InitializeThumbViewer()
@@ -178,14 +178,14 @@ namespace SdkSample
             Microsoft.Win32.OpenFileDialog dialog;
 
             // If there is a document currently open, close it.
-            if (this.Document != null)  CloseFile();
+            if (this.Document != null) CloseFile();
 
             dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.CheckFileExists = true;
             dialog.InitialDirectory = GetContentFolder();
             dialog.Filter = this.OpenFileFilter;
             bool result = (bool)dialog.ShowDialog(null);
-            if (result == false)  return false;
+            if (result == false) return false;
 
             fileName = dialog.FileName;
             return OpenFile(fileName);
@@ -223,7 +223,7 @@ namespace SdkSample
         // ----------------------------- OpenFile -----------------------------
         private bool OpenFile(string fileName)
         {
-            if (fileName == null)  throw new ArgumentNullException("fileName");
+            if (fileName == null) throw new ArgumentNullException("fileName");
 
             // Check file existence
             if (!System.IO.File.Exists(fileName))
@@ -359,7 +359,7 @@ namespace SdkSample
         // --------------------------- CreateThumbs ---------------------------
         public void CreateThumbs()
         {
-            if ( (ThumbList.Items != null) && (ThumbList.Items.Count > 0) )
+            if ((ThumbList.Items != null) && (ThumbList.Items.Count > 0))
                 ThumbList.Items.Clear();
 
             _currentThumbnail = 0;
@@ -401,7 +401,7 @@ namespace SdkSample
         private int CalculateMaxThumbnails()
         {
             int numRows = (int)(ThumbList.ActualHeight / (_thumbnailHeight));
-            int numColumns = (int)(ThumbList.ActualWidth/ (_thumbnailWidth));
+            int numColumns = (int)(ThumbList.ActualWidth / (_thumbnailWidth));
             return (Math.Max(numRows, 1) * Math.Max(numColumns, 1));
         }
 
@@ -414,7 +414,7 @@ namespace SdkSample
                 Rect pageRect = new Rect(size);
                 RenderTargetBitmap renderTargetBitmap = new RenderTargetBitmap(
                         (int)pageRect.Width, (int)pageRect.Height,
-                         96.0, 96.0, PixelFormats.Pbgra32 );
+                         96.0, 96.0, PixelFormats.Pbgra32);
                 renderTargetBitmap.Render(visual);
 
                 StackPanel sp = new StackPanel();
@@ -500,7 +500,7 @@ namespace SdkSample
                 bool result = (bool)dialog.ShowDialog(null);
 
                 // If the user clicked "Cancel", cancel the saving the file.
-                if (result == false)  return false;
+                if (result == false) return false;
                 fileName = dialog.FileName;
             }
 
@@ -518,10 +518,10 @@ namespace SdkSample
         ///   if there was an error or the user canceled the save.</returns>
         private bool SaveToFile(string fileName)
         {
-            if (fileName == null)  throw new ArgumentNullException("fileName");
+            if (fileName == null) throw new ArgumentNullException("fileName");
 
             // If the file already exists, delete it (replace).
-            if ( File.Exists(fileName) )  File.Delete(fileName);
+            if (File.Exists(fileName)) File.Delete(fileName);
 
             FlowDocument flowDocument = FDPV.Document as FlowDocument;
             string fileContent = null;
@@ -533,11 +533,11 @@ namespace SdkSample
 
                 // Locate the serializer that matches the fileName extension.
                 SerializerDescriptor selectedPlugIn = null;
-                foreach ( SerializerDescriptor serializerDescriptor in
-                                serializerProvider.InstalledSerializers )
+                foreach (SerializerDescriptor serializerDescriptor in
+                                serializerProvider.InstalledSerializers)
                 {
-                    if ( serializerDescriptor.IsLoadable &&
-                         fileName.EndsWith(serializerDescriptor.DefaultFileExtension) )
+                    if (serializerDescriptor.IsLoadable &&
+                         fileName.EndsWith(serializerDescriptor.DefaultFileExtension))
                     {   // The plug-in serializer and fileName extensions match.
                         selectedPlugIn = serializerDescriptor;
                         break; // foreach
@@ -559,7 +559,7 @@ namespace SdkSample
                     return true;
                 }
                 //</SnippetDocSerializePlugIn>
-               else if (fileName.EndsWith(".xml"))
+                else if (fileName.EndsWith(".xml"))
                 {
                     //<SnippetDocSerializeLinked>
                     // Save as a WordXML document.
@@ -595,7 +595,7 @@ namespace SdkSample
             }
             catch (Exception e)
             {
-                MessageBox.Show( "Error occurred during document save: " +
+                MessageBox.Show("Error occurred during document save: " +
                     fileName + "\n" + e.ToString(), this.GetType().Name,
                     MessageBoxButton.OK, MessageBoxImage.Error);
                 return false;
@@ -628,7 +628,7 @@ namespace SdkSample
                     if (serializerDescriptor.IsLoadable)
                     {
                         // After the first, separate entries with a "|".
-                        if (filter.Length > 0)   filter += "|";
+                        if (filter.Length > 0) filter += "|";
 
                         // Add an entry with the plug-in name and extension.
                         filter += serializerDescriptor.DisplayName + " (*" +
@@ -648,7 +648,7 @@ namespace SdkSample
         #region Public Properties
         public IDocumentPaginatorSource Document
         {
-            get { return FDPV.Document;  }
+            get { return FDPV.Document; }
             set { FDPV.Document = value; }
         }
         #endregion Public Properties
@@ -679,7 +679,7 @@ namespace SdkSample
         {
             Dispatcher.BeginInvoke(DispatcherPriority.Normal,
                 new DispatcherOperationCallback(
-                    delegate { RefreshThumbnails(); return null; } ), null );
+                    delegate { RefreshThumbnails(); return null; }), null);
         }
 
         // ------------------------ SplitterEndResize -------------------------
@@ -688,7 +688,7 @@ namespace SdkSample
         void SplitterEndResize(object sender, DragCompletedEventArgs e)
         {
             LeftTabControl.Width = MainGrid.ColumnDefinitions[0].ActualWidth;
-            ThumbList.Width    = LeftTabControl.Width - 24;
+            ThumbList.Width = LeftTabControl.Width - 24;
             BookmarkList.Width = LeftTabControl.Width - 24;
             CommentsList.Width = LeftTabControl.Width - 24;
             foreach (StackPanel sp in BookmarkList.Items)
@@ -725,7 +725,7 @@ namespace SdkSample
         // ------------------------ IncrementPathData -------------------------
         private void IncrementPathData(System.Windows.Shapes.Path path, double p)
         {
-            if (path == null)  return;
+            if (path == null) return;
             PathGeometry pGeom = path.Data as PathGeometry;
 
             if (pGeom == null) return;
@@ -752,7 +752,7 @@ namespace SdkSample
         void miEnlarge_Click(object sender, RoutedEventArgs e)
         {
             _thumbnailHeight *= 2;
-            _thumbnailWidth  *= 2;
+            _thumbnailWidth *= 2;
             RefreshThumbnailSizes();
         }
 
@@ -760,7 +760,7 @@ namespace SdkSample
         void miReduce_Click(object sender, RoutedEventArgs e)
         {
             _thumbnailHeight /= 2;
-            _thumbnailWidth  /= 2;
+            _thumbnailWidth /= 2;
             RefreshThumbnailSizes();
         }
 
@@ -831,7 +831,7 @@ namespace SdkSample
         {
             //FDPV.Focus();
             bool createMode =
-                (ThumbList.Items.CurrentItem is Border) ?  false : true;
+                (ThumbList.Items.CurrentItem is Border) ? false : true;
 
             for (int i = 0; i < _numDisplayedThumbnails; i++)
             {
@@ -840,21 +840,21 @@ namespace SdkSample
 
                 StackPanel pageThumb =
                     CreatePageThumb(
-                        docPage.Visual, docPage.Size, _currentThumbnail + i + 1 );
+                        docPage.Visual, docPage.Size, _currentThumbnail + i + 1);
 
                 if (!createMode)
                 {
                     Object currentItem = ThumbList.Items.CurrentItem;
-                    if ( !(currentItem is Border) )  continue;
+                    if (!(currentItem is Border)) continue;
                     PrepareBorderForDisplay((Border)currentItem);
                     ((Border)currentItem).Child = pageThumb;
                 }
                 else
                 {
-                    Border border = CreateThumbBorder( _currentThumbnail + i + 1);
+                    Border border = CreateThumbBorder(_currentThumbnail + i + 1);
                     ThumbList.Items.Add(border);
                     ThumbList.Items.MoveCurrentToNext();
-                    if ( !(ThumbList.Items.CurrentItem is Border) )  continue;
+                    if (!(ThumbList.Items.CurrentItem is Border)) continue;
                     PrepareBorderForDisplay(border);
                     border.Child = pageThumb;
                     continue;
@@ -862,7 +862,7 @@ namespace SdkSample
 
                 // If ThumbList doesn't have enough items,
                 // the FixedDocument pages may have increased.
-                if ( !ThumbList.Items.MoveCurrentToNext() )  createMode = true;
+                if (!ThumbList.Items.MoveCurrentToNext()) createMode = true;
             }
 
             for (int i = _numDisplayedThumbnails; i > 0; i--)
@@ -991,7 +991,7 @@ namespace SdkSample
             if (ann.Cargos.Count <= 1)
             {
                 ann.Cargos.Add(
-                    new AnnotationResource( FDPV.MasterPageNumber.ToString() ) );
+                    new AnnotationResource(FDPV.MasterPageNumber.ToString()));
             }
 
             Assembly a = System.Reflection.Assembly.GetExecutingAssembly();
@@ -1029,7 +1029,7 @@ namespace SdkSample
                 LogicalTreeHelper.FindLogicalNode(EntryInList, "MarkPath")
                     as System.Windows.Shapes.Path;
 
-            if ( (collection == CommentsList) && (markPath != null) )
+            if ((collection == CommentsList) && (markPath != null))
             {
                 LinearGradientBrush lBrush = new LinearGradientBrush();
                 GradientStopCollection gColl = new GradientStopCollection();
@@ -1049,11 +1049,11 @@ namespace SdkSample
             {
                 ContentLocator cloc =
                     ann.Anchors[0].ContentLocators[0] as ContentLocator;
-                if (cloc == null)         return;
+                if (cloc == null) return;
                 if (cloc.Parts.Count < 2) return;
 
                 ContentLocatorPart cPart = cloc.Parts[1];
-                if (cPart == null)        return;
+                if (cPart == null) return;
                 if (cPart.NameValuePairs["Segment0"] != null)
                 {
                     string[] charPos = cPart.NameValuePairs["Segment0"].Split(',');
@@ -1061,14 +1061,14 @@ namespace SdkSample
                     TextPointer tp = fd.ContentStart.GetPositionAtOffset(
                         int.Parse(charPos[0]), LogicalDirection.Forward);
 
-                    if (tp == null)       return;
-                    if (   tp.GetPointerContext(LogicalDirection.Forward)
-                        == TextPointerContext.Text )
+                    if (tp == null) return;
+                    if (tp.GetPointerContext(LogicalDirection.Forward)
+                        == TextPointerContext.Text)
                     {
                         MarkText += tp.GetTextInRun(LogicalDirection.Forward);
                     }
-                    spText.Text = MarkText.Substring( 0,
-                        (MarkText.Length > 150) ? 150 : MarkText.Length );
+                    spText.Text = MarkText.Substring(0,
+                        (MarkText.Length > 150) ? 150 : MarkText.Length);
                 }
             }
         }// end:AddBookmarkOrComment()
@@ -1104,25 +1104,25 @@ namespace SdkSample
                 ann = ((Button)sender).Tag as Annotation;
             else if (sender is MenuItem)
                 ann = ((MenuItem)sender).Tag as Annotation;
-            if (ann == null)          return;
+            if (ann == null) return;
 
             ContentLocator cloc =
                 ann.Anchors[0].ContentLocators[0] as ContentLocator;
-            if (cloc == null)         return;
+            if (cloc == null) return;
             if (cloc.Parts.Count < 2) return;
 
             ContentLocatorPart cPart = cloc.Parts[1];
-            if (cPart == null)        return;
+            if (cPart == null) return;
             if (cPart.NameValuePairs["Segment0"] != null)
             {
                 string[] charPos = cPart.NameValuePairs["Segment0"].Split(',');
                 FlowDocument fd = FDPV.Document as FlowDocument;
                 TextPointer tp = fd.ContentStart.GetPositionAtOffset(
                                  int.Parse(charPos[0]), LogicalDirection.Forward);
-                if (tp == null)   return;
+                if (tp == null) return;
 
                 FrameworkContentElement fce = tp.Parent as FrameworkContentElement;
-                if (fce == null)  return;
+                if (fce == null) return;
 
                 fce.BringIntoView();
             }
@@ -1147,7 +1147,7 @@ namespace SdkSample
         private void ZoomSlider_Loaded(object sender, RoutedEventArgs e)
         {
             Slider zoomSlider = sender as Slider;
-            if (zoomSlider != null)  zoomSlider.Value = _articleZoomValue;
+            if (zoomSlider != null) zoomSlider.Value = _articleZoomValue;
         }
 
         // ---------------------- ZoomSlider_ValueChanged ---------------------
@@ -1170,7 +1170,7 @@ namespace SdkSample
                 //      initialized.  Basically we don't want to set the
                 //      ArticleZoomValue property BEFORE ZoomSlider_Loaded is
                 //      called.  There might be a better way of guarranting this.
-                if ( (newValue != oldValue) && (oldValue > 0) )
+                if ((newValue != oldValue) && (oldValue > 0))
                     _articleZoomValue = e.NewValue;
             }
         }// end:ZoomSlider_ValueChanged()

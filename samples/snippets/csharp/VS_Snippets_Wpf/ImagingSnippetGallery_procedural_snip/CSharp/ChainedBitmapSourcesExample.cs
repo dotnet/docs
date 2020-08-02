@@ -20,7 +20,7 @@ namespace SDKSample
             // BitmapSource objects like BitmapImage can only have their properties
             // changed within a BeginInit/EndInit block.
             myBitmapImage.BeginInit();
-            myBitmapImage.UriSource = new Uri("sampleImages/WaterLilies.jpg",UriKind.Relative);
+            myBitmapImage.UriSource = new Uri("sampleImages/WaterLilies.jpg", UriKind.Relative);
 
             // To save significant application memory, set the DecodePixelWidth or
             // DecodePixelHeight of the BitmapImage value of the image source to the desired

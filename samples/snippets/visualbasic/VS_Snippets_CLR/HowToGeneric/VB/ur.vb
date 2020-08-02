@@ -1,7 +1,7 @@
 ﻿' Example code for How to: Discover and Manipulate Generic Types
 '<Snippet1>
-Imports System.Reflection
 Imports System.Collections.Generic
+Imports System.Reflection
 Imports System.Security.Permissions
 
 ' Define an example interface.

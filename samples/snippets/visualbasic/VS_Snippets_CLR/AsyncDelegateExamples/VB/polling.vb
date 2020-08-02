@@ -1,6 +1,6 @@
 ﻿' <Snippet4>
-Imports System.Threading
 Imports System.Runtime.InteropServices
+Imports System.Threading
 
 Namespace Examples.AdvancedProgramming.AsynchronousOperations
 

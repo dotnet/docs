@@ -1,4 +1,4 @@
-﻿ '<Snippet1>
+﻿'<Snippet1>
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Data
@@ -7,21 +7,21 @@ Imports System.Text
 Imports System.Windows.Forms
 
 Public Class Form1
-   Inherits Form
-   Private toolStripButton1 As ToolStripButton
-   Private toolStripButton2 As ToolStripButton
-   Private toolStripButton3 As ToolStripButton
-   Private contextMenuStrip1 As ContextMenuStrip
-   Private components As IContainer
-   Private toolStripMenuItem1 As ToolStripMenuItem
-   Private toolStripMenuItem2 As ToolStripMenuItem
-   Private contextMenuStrip2 As ContextMenuStrip
-   Private rearrangeButtonsToolStripMenuItem As ToolStripMenuItem
-   Private selectIconsToolStripMenuItem As ToolStripMenuItem
-   Private toolStrip1 As ToolStrip
-   
-   
-   Public Sub New()
+    Inherits Form
+    Private toolStripButton1 As ToolStripButton
+    Private toolStripButton2 As ToolStripButton
+    Private toolStripButton3 As ToolStripButton
+    Private contextMenuStrip1 As ContextMenuStrip
+    Private components As IContainer
+    Private toolStripMenuItem1 As ToolStripMenuItem
+    Private toolStripMenuItem2 As ToolStripMenuItem
+    Private contextMenuStrip2 As ContextMenuStrip
+    Private rearrangeButtonsToolStripMenuItem As ToolStripMenuItem
+    Private selectIconsToolStripMenuItem As ToolStripMenuItem
+    Private toolStrip1 As ToolStrip
+
+
+    Public Sub New()
         InitializeComponent()
     End Sub
 

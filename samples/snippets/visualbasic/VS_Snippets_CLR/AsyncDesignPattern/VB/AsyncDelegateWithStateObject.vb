@@ -2,10 +2,10 @@
 ' The following example demonstrates using asynchronous methods to
 ' get Domain Name System information for the specified host computer.
 
+Imports System.Collections
 Imports System.Net
 Imports System.Net.Sockets
 Imports System.Threading
-Imports System.Collections
 
 Namespace Examples.AdvancedProgramming.AsynchronousOperations
     ' Create a state object that holds each requested host name, 

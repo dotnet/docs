@@ -7,40 +7,40 @@ using System.ServiceModel.Channels;
 namespace Microsoft.ServiceModel.Samples
 {
     //<snippet1>
-  [ServiceContract]
-  public interface ICalculator
-  {
-     [OperationContract]
-     double Add(double n1, double n2);
-     [OperationContract]
-     double Subtract(double n1, double n2);
-     [OperationContract]
-     double Multiply(double n1, double n2);
-     [OperationContract]
-     double Divide(double n1, double n2);
-  }
+    [ServiceContract]
+    public interface ICalculator
+    {
+        [OperationContract]
+        double Add(double n1, double n2);
+        [OperationContract]
+        double Subtract(double n1, double n2);
+        [OperationContract]
+        double Multiply(double n1, double n2);
+        [OperationContract]
+        double Divide(double n1, double n2);
+    }
 
     //</snippet1>
 
-  public class CalculatorService : ICalculator
-  {
-     public double Add(double n1, double n2)
-     {
-        return n1 + n2;
-     }
-     public double Subtract(double n1, double n2)
-     {
-        return n1 - n2;
-     }
-     public double Multiply(double n1, double n2)
-     {
-        return n1 * n2;
-     }
-     public double Divide(double n1, double n2)
-     {
-        return n1 / n2;
-     }
-  }
+    public class CalculatorService : ICalculator
+    {
+        public double Add(double n1, double n2)
+        {
+            return n1 + n2;
+        }
+        public double Subtract(double n1, double n2)
+        {
+            return n1 - n2;
+        }
+        public double Multiply(double n1, double n2)
+        {
+            return n1 * n2;
+        }
+        public double Divide(double n1, double n2)
+        {
+            return n1 / n2;
+        }
+    }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
     public interface ICalculatorChannel : Microsoft.ServiceModel.Samples.ICalculator, System.ServiceModel.IClientChannel
@@ -99,7 +99,7 @@ namespace Microsoft.ServiceModel.Samples
 
     //</snippet2>
 
-//<snippet3>
+    //<snippet3>
 
     //Client implementation code.
     class Client

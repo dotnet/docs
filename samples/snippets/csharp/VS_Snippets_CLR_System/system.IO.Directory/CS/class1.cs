@@ -17,7 +17,7 @@ namespace GetFileSystemEntries
             string filter = "*.exe";
 
             snippets.PrintFileSystemEntries(path);
-            snippets.PrintFileSystemEntries(path, filter);		
+            snippets.PrintFileSystemEntries(path, filter);
             snippets.GetLogicalDrives();
             snippets.GetParent(path);
             snippets.Move("C:\\proof", "C:\\Temp");
@@ -25,7 +25,7 @@ namespace GetFileSystemEntries
 
         void PrintFileSystemEntries(string path)
         {
-			
+
             try
             {
                 // Obtain the file system entries in the directory path.
@@ -156,7 +156,7 @@ namespace GetFileSystemEntries
             {
                 System.Console.WriteLine("Path is an empty string, " +
                     "contains only white spaces, " +
-                    "or contains invalid characters.");	
+                    "or contains invalid characters.");
             }
             catch (System.IO.IOException)
             {

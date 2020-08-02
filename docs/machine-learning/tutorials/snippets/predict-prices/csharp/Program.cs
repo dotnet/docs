@@ -42,10 +42,10 @@ namespace TaxiFarePrediction
             // </Snippet6>
 
             // <Snippet7>
-            var pipeline = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName:"FareAmount")
-            // </Snippet7>
+            var pipeline = mlContext.Transforms.CopyColumns(outputColumnName: "Label", inputColumnName: "FareAmount")
+                    // </Snippet7>
                     // <Snippet8>
-                    .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "VendorIdEncoded", inputColumnName:"VendorId"))
+                    .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "VendorIdEncoded", inputColumnName: "VendorId"))
                     .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "RateCodeEncoded", inputColumnName: "RateCode"))
                     .Append(mlContext.Transforms.Categorical.OneHotEncoding(outputColumnName: "PaymentTypeEncoded", inputColumnName: "PaymentType"))
                     // </Snippet8>
@@ -54,7 +54,7 @@ namespace TaxiFarePrediction
                     // </Snippet9>
                     // <Snippet10>
                     .Append(mlContext.Regression.Trainers.FastTree());
-                    // </Snippet10>
+            // </Snippet10>
 
             Console.WriteLine("=============== Create and Train the Model ===============");
 

@@ -60,24 +60,24 @@ namespace PhotoService
 
         public void BeforeSendReply(ref System.ServiceModel.Channels.Message reply, object correlationState)
         {
-        //    if (correlationState != null && correlationState is string)
-        //    {
-        //        // if we have a JSONP callback then buffer the response, wrap it with the
-        //        // callback call and then re-create the response message
+            //    if (correlationState != null && correlationState is string)
+            //    {
+            //        // if we have a JSONP callback then buffer the response, wrap it with the
+            //        // callback call and then re-create the response message
 
-        //        string callback = (string)correlationState;
+            //        string callback = (string)correlationState;
 
-        //        XmlDictionaryReader reader = reply.GetReaderAtBodyContents();
-        //        reader.ReadStartElement();
-        //        string content = CustomCompressionInspector.encoding.GetString(reader.ReadContentAsBase64());
+            //        XmlDictionaryReader reader = reply.GetReaderAtBodyContents();
+            //        reader.ReadStartElement();
+            //        string content = CustomCompressionInspector.encoding.GetString(reader.ReadContentAsBase64());
 
-        //        content = callback + "(" + content + ")";
+            //        content = callback + "(" + content + ")";
 
-        //        Message newreply = Message.CreateMessage(MessageVersion.None, "", new Writer(content));
-        //        newreply.Properties.CopyProperties(reply.Properties);
+            //        Message newreply = Message.CreateMessage(MessageVersion.None, "", new Writer(content));
+            //        newreply.Properties.CopyProperties(reply.Properties);
 
-        //        reply = newreply;
-        //    }
+            //        reply = newreply;
+            //    }
         }
 
         #endregion

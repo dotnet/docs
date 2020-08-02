@@ -1,5 +1,5 @@
-﻿Imports System.ServiceModel
-Imports System.Security.Permissions
+﻿Imports System.Security.Permissions
+Imports System.ServiceModel
 
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>

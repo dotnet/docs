@@ -1,7 +1,7 @@
 ﻿// <Snippet3>
-using Microsoft.Win32.SafeHandles;
 using System;
 using System.Runtime.InteropServices;
+using Microsoft.Win32.SafeHandles;
 
 class BaseClass : IDisposable
 {
@@ -24,7 +24,7 @@ class BaseClass : IDisposable
 
         if (disposing)
         {
-           // Dispose managed state (managed objects).
+            // Dispose managed state (managed objects).
             _safeHandle?.Dispose();
         }
 

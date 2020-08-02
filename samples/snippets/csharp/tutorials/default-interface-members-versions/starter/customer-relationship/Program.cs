@@ -25,7 +25,7 @@ namespace customer_relationship
             Console.WriteLine($"Data about {c.Name}");
             Console.WriteLine($"Joined on {c.DateJoined}. Made {c.PreviousOrders.Count()} orders, the last on {c.LastOrder}");
             Console.WriteLine("Reminders:");
-            foreach(var item in c.Reminders)
+            foreach (var item in c.Reminders)
             {
                 Console.WriteLine($"\t{item.Value} on {item.Key}");
             }

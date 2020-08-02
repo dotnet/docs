@@ -1,8 +1,8 @@
 ﻿//<snippet20>
 using System;
-using System.IO;
 using System.CodeDom;
 using System.CodeDom.Compiler;
+using System.IO;
 using Microsoft.CSharp;
 
 class Example
@@ -31,11 +31,11 @@ class Example
         string sourceFile;
         if (provider.FileExtension[0] == '.')
         {
-           sourceFile = "HelloWorld" + provider.FileExtension;
+            sourceFile = "HelloWorld" + provider.FileExtension;
         }
         else
         {
-           sourceFile = "HelloWorld." + provider.FileExtension;
+            sourceFile = "HelloWorld." + provider.FileExtension;
         }
 
         // Create a TextWriter to a StreamWriter to the output file.
@@ -64,7 +64,7 @@ class Example
         CompilerParameters cp = new CompilerParameters();
 
         // Add an assembly reference.
-        cp.ReferencedAssemblies.Add( "System.dll" );
+        cp.ReferencedAssemblies.Add("System.dll");
 
         // Generate an executable instead of
         // a class library.
@@ -79,9 +79,9 @@ class Example
         // Invoke compilation.
         CompilerResults cr = provider.CompileAssemblyFromFile(cp, sourceFile);
 
-       if (cr.Errors.Count > 0)
-       {
-           // Display compilation errors.
+        if (cr.Errors.Count > 0)
+        {
+            // Display compilation errors.
             Console.WriteLine("Errors building {0} into {1}",
                 sourceFile, cr.PathToAssembly);
             foreach (CompilerError ce in cr.Errors)

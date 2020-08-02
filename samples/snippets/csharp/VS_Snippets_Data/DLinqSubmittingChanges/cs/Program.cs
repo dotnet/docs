@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.Linq;
 using System.Reflection;
+using System.Text;
 using System.Transactions;
 
 namespace cs_submittingchanges
@@ -97,7 +97,7 @@ namespace cs_submittingchanges
                     prod1.UnitsInStock -= 3;
                     prod2.UnitsInStock -= 5;
                     db.SubmitChanges();
-		    ts.Complete();
+                    ts.Complete();
                 }
                 catch (Exception e)
                 {
@@ -113,7 +113,7 @@ namespace cs_submittingchanges
             MyDVDs db = new MyDVDs("c:\\mydvds.mdf");
             db.CreateDatabase();
         }
-       // </Snippet6>
+        // </Snippet6>
 
         // <Snippet7>
         public void CreateDatabase2()
@@ -164,5 +164,5 @@ namespace cs_submittingchanges
         [Column]
         public string Rating;
     }
-// </Snippet5>
+    // </Snippet5>
 }

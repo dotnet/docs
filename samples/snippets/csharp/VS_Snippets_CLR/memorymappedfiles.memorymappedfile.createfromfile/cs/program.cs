@@ -12,7 +12,7 @@ class Program
         long length = 0x20000000; // 512 megabytes
 
         // Create the memory-mapped file.
-        using (var mmf = MemoryMappedFile.CreateFromFile(@"c:\ExtremelyLargeImage.data", FileMode.Open,"ImgA"))
+        using (var mmf = MemoryMappedFile.CreateFromFile(@"c:\ExtremelyLargeImage.data", FileMode.Open, "ImgA"))
         {
             // <Snippet2>
             // Create a random access view, from the 256th megabyte (the offset)

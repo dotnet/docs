@@ -10,6 +10,8 @@
 //*********************************************************
 using System;
 using System.Collections.Generic;
+using System.Data.Services.Client;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -20,10 +22,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
 using PhotoData;
-using System.Data.Services.Client;
-using System.IO;
 
 namespace PhotoStreamingClient
 {

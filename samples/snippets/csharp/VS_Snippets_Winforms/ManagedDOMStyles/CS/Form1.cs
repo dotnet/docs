@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Security.Permissions;
 using System.Text;
 using System.Windows.Forms;
-using System.Security.Permissions;
 
 namespace ManagedDOMStyles
 {
-    [PermissionSet(SecurityAction.Demand, Name="FullTrust")]
+    [PermissionSet(SecurityAction.Demand, Name = "FullTrust")]
     public partial class Form1 : Form
     {
 

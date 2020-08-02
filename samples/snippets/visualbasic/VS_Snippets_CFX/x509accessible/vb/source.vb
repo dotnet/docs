@@ -1,9 +1,9 @@
 ﻿
-Imports System.ServiceModel
-Imports System.ServiceModel.Description
-Imports System.ServiceModel.Channels
-Imports System.Security.Cryptography.X509Certificates
 Imports System.Runtime.Serialization
+Imports System.Security.Cryptography.X509Certificates
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
+Imports System.ServiceModel.Description
 Imports ClientCalculator
 
 Namespace BasicAuthentication

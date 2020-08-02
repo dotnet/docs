@@ -9,7 +9,7 @@ namespace OldStyle
         public string FirstName { get; set; }
         public string LastName { get; set; }
         // </ClassicAutoProperty>
-        public ICollection<double> Grades { get; private set;}
+        public ICollection<double> Grades { get; private set; }
 
         public Student()
         {

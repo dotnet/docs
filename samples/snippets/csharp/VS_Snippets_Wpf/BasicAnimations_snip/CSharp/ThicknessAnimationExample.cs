@@ -2,9 +2,9 @@
 using System;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Shapes;
-using System.Windows.Media.Animation;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
+using System.Windows.Shapes;
 
 namespace SDKSamples
 {
@@ -51,7 +51,7 @@ namespace SDKSamples
             ellipseStoryboard.Children.Add(myThicknessAnimation);
 
             // Start the storyboard when the Path loads.
-            myBorder.Loaded += delegate(object sender, RoutedEventArgs e)
+            myBorder.Loaded += delegate (object sender, RoutedEventArgs e)
             {
                 ellipseStoryboard.Begin(this);
             };

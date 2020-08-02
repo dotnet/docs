@@ -4,37 +4,37 @@ using System.Text.RegularExpressions;
 
 class Example
 {
-   public static void Main()
-   {
-      string pattern = "^[^<>]*" +
-                       "(" +
-                       "((?'Open'<)[^<>]*)+" +
-                       "((?'Close-Open'>)[^<>]*)+" +
-                       ")*" +
-                       "(?(Open)(?!))$";
-      string input = "<abc><mno<xyz>>";
+    public static void Main()
+    {
+        string pattern = "^[^<>]*" +
+                         "(" +
+                         "((?'Open'<)[^<>]*)+" +
+                         "((?'Close-Open'>)[^<>]*)+" +
+                         ")*" +
+                         "(?(Open)(?!))$";
+        string input = "<abc><mno<xyz>>";
 
-      Match m = Regex.Match(input, pattern);
-      if (m.Success == true)
-      {
-         Console.WriteLine("Input: \"{0}\" \nMatch: \"{1}\"", input, m);
-         int grpCtr = 0;
-         foreach (Group grp in m.Groups)
-         {
-            Console.WriteLine("   Group {0}: {1}", grpCtr, grp.Value);
-            grpCtr++;
-            int capCtr = 0;
-            foreach (Capture cap in grp.Captures)
+        Match m = Regex.Match(input, pattern);
+        if (m.Success == true)
+        {
+            Console.WriteLine("Input: \"{0}\" \nMatch: \"{1}\"", input, m);
+            int grpCtr = 0;
+            foreach (Group grp in m.Groups)
             {
-                Console.WriteLine("      Capture {0}: {1}", capCtr, cap.Value);
-                capCtr++;
+                Console.WriteLine("   Group {0}: {1}", grpCtr, grp.Value);
+                grpCtr++;
+                int capCtr = 0;
+                foreach (Capture cap in grp.Captures)
+                {
+                    Console.WriteLine("      Capture {0}: {1}", capCtr, cap.Value);
+                    capCtr++;
+                }
             }
-          }
-      }
-      else
-      {
-         Console.WriteLine("Match failed.");
-      }
+        }
+        else
+        {
+            Console.WriteLine("Match failed.");
+        }
     }
 }
 // The example displays the following output:

@@ -1,8 +1,8 @@
 ﻿Imports System.Collections.Generic
-Imports System.Text
+Imports System.IO
 Imports System.Runtime.Serialization
 Imports System.Security.Permissions
-Imports System.IO
+Imports System.Text
 Imports System.Xml
 
 <assembly: SecurityPermission(SecurityAction.RequestMinimum)>

@@ -1,5 +1,5 @@
-﻿using Microsoft.Data.Sqlite;
-using System;
+﻿using System;
+using Microsoft.Data.Sqlite;
 
 namespace SqliteProviderSample
 {

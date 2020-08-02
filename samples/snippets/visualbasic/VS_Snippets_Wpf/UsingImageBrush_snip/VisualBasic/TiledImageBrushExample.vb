@@ -1,20 +1,20 @@
 ﻿' <SnippetTiledImageBrushExampleWholePage>
 Imports System.Windows
 Imports System.Windows.Controls
-Imports System.Windows.Media.Imaging
 Imports System.Windows.Media
+Imports System.Windows.Media.Imaging
 
 Namespace Microsoft.Samples.Graphics.UsingImageBrush
 
-	Public Class TiledImageBrushExample
-		Inherits Page
+    Public Class TiledImageBrushExample
+        Inherits Page
 
-		Public Sub New()
-			Background = Brushes.White
-			Dim mainPanel As New StackPanel()
-			mainPanel.Margin = New Thickness(20.0)
+        Public Sub New()
+            Background = Brushes.White
+            Dim mainPanel As New StackPanel()
+            mainPanel.Margin = New Thickness(20.0)
 
-			' Create a button.
+            ' Create a button.
             Dim berriesButton As New Button()
             With berriesButton
                 .Foreground = Brushes.White
@@ -42,7 +42,7 @@ Namespace Microsoft.Samples.Graphics.UsingImageBrush
 
             mainPanel.Children.Add(berriesButton)
             Me.Content = mainPanel
-		End Sub
-	End Class
+        End Sub
+    End Class
 End Namespace
 ' </SnippetTiledImageBrushExampleWholePage>

@@ -1,11 +1,11 @@
 ﻿//<snippet0>
 using System;
-using System.ServiceModel;
 using System.Net.Security;
-using System.ServiceModel.Description;
-using System.Security.Permissions;
-using System.Security.Cryptography.X509Certificates;
 using System.Runtime.Serialization;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Permissions;
+using System.ServiceModel;
+using System.ServiceModel.Description;
 //</snippet0>
 
 [assembly: SecurityPermission(SecurityAction.RequestMinimum)]

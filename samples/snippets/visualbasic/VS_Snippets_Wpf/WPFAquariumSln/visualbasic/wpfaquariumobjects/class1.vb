@@ -1,13 +1,13 @@
 ﻿Imports System.Collections.Generic
+Imports System.ComponentModel
 Imports System.Text
 Imports System.Windows
-Imports System.Windows.Shapes
-Imports System.Windows.Media
-Imports System.Windows.Media.Imaging
 Imports System.Windows.Controls
 Imports System.Windows.Data
 Imports System.Windows.Markup
-Imports System.ComponentModel
+Imports System.Windows.Media
+Imports System.Windows.Media.Imaging
+Imports System.Windows.Shapes
 
 Namespace WPFAquariumObjects
     Public Class AquariumFilter

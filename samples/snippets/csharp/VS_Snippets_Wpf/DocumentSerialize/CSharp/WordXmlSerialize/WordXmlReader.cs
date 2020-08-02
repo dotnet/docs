@@ -16,11 +16,11 @@ namespace SdkSample
     using System.IO;
     using System.Reflection;
     using System.Security.Policy;
-    using System.Xml;
     using System.Windows;
-    using System.Windows.Documents;
     using System.Windows.Controls;
+    using System.Windows.Documents;
     using System.Windows.Media;
+    using System.Xml;
 
     #endregion Namespaces.
 
@@ -94,7 +94,7 @@ namespace SdkSample
             System.Diagnostics.Debug.Assert(_cursor.Parent.GetType() == typeof(Paragraph));
 
             styleDictionary = GetResources(_cursor);
-            foreach(Style style in styleDictionary.Values)
+            foreach (Style style in styleDictionary.Values)
             {
                 // TODO: consider applying the paragraph with the matching style id.
                 if (style.TargetType == typeof(Paragraph))
@@ -166,7 +166,7 @@ namespace SdkSample
             if (IsPopulatingStyle)
             {
                 System.Diagnostics.Debug.Assert(_currentStyle != null);
-                _currentStyle.Setters.Add (new Setter(property, value));
+                _currentStyle.Setters.Add(new Setter(property, value));
             }
             else
             {

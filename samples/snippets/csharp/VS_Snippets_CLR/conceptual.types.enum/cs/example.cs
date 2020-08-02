@@ -24,35 +24,35 @@ public enum Seasons
 
 public class Example
 {
-   public static void Main()
-   {
-       // Hash table of when vegetables are available.
-       Dictionary<SomeRootVegetables, Seasons> AvailableIn = new Dictionary<SomeRootVegetables, Seasons>();
+    public static void Main()
+    {
+        // Hash table of when vegetables are available.
+        Dictionary<SomeRootVegetables, Seasons> AvailableIn = new Dictionary<SomeRootVegetables, Seasons>();
 
-       AvailableIn[SomeRootVegetables.HorseRadish] = Seasons.All;
-       AvailableIn[SomeRootVegetables.Radish] = Seasons.Spring;
-       AvailableIn[SomeRootVegetables.Turnip] = Seasons.Spring |
-            Seasons.Autumn;
+        AvailableIn[SomeRootVegetables.HorseRadish] = Seasons.All;
+        AvailableIn[SomeRootVegetables.Radish] = Seasons.Spring;
+        AvailableIn[SomeRootVegetables.Turnip] = Seasons.Spring |
+             Seasons.Autumn;
 
-       // Array of the seasons, using the enumeration.
-       Seasons[] theSeasons = new Seasons[] { Seasons.Summer, Seasons.Autumn,
+        // Array of the seasons, using the enumeration.
+        Seasons[] theSeasons = new Seasons[] { Seasons.Summer, Seasons.Autumn,
             Seasons.Winter, Seasons.Spring };
 
-       // Print information of what vegetables are available each season.
-       foreach (Seasons season in theSeasons)
-       {
-          Console.Write(String.Format(
-              "The following root vegetables are harvested in {0}:\n",
-              season.ToString("G")));
-          foreach (KeyValuePair<SomeRootVegetables, Seasons> item in AvailableIn)
-          {
-             // A bitwise comparison.
-             if (((Seasons)item.Value & season) > 0)
-                 Console.Write(String.Format("  {0:G}\n",
-                      (SomeRootVegetables)item.Key));
-          }
-       }
-   }
+        // Print information of what vegetables are available each season.
+        foreach (Seasons season in theSeasons)
+        {
+            Console.Write(String.Format(
+                "The following root vegetables are harvested in {0}:\n",
+                season.ToString("G")));
+            foreach (KeyValuePair<SomeRootVegetables, Seasons> item in AvailableIn)
+            {
+                // A bitwise comparison.
+                if (((Seasons)item.Value & season) > 0)
+                    Console.Write(String.Format("  {0:G}\n",
+                         (SomeRootVegetables)item.Key));
+            }
+        }
+    }
 }
 // The example displays the following output:
 //    The following root vegetables are harvested in Summer:

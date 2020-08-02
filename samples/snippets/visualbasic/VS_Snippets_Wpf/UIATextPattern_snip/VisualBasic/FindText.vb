@@ -54,14 +54,14 @@
 ' *
 ' ******************************************************************************************
 
+Imports System.ComponentModel
+Imports System.Diagnostics
+Imports System.IO
+Imports System.Threading
 Imports System.Windows
-Imports System.Windows.Documents
 Imports System.Windows.Automation
 Imports System.Windows.Controls
-Imports System.Diagnostics
-Imports System.ComponentModel
-Imports System.Threading
-Imports System.IO
+Imports System.Windows.Documents
 
 Namespace SDKSample
 

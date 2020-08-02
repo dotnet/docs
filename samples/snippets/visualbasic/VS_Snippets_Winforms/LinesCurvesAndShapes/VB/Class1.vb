@@ -1,18 +1,18 @@
 ﻿Option Explicit On
 Option Strict On
 
-Imports System.Diagnostics
-Imports System.Windows.Forms
-Imports System.Xml
-Imports System.Data
 Imports System.Collections
+Imports System.Data
+Imports System.Diagnostics
 Imports System.Drawing
 Imports System.Drawing.Drawing2D
+Imports System.Windows.Forms
+Imports System.Xml
 
 Public Class LinesCurvesAndShapes
     Inherits Form
     Dim myPen As Pen = Pens.Black
-    Dim mySolidBrush As SolidBrush = CType(Brushes.Red,SolidBrush)
+    Dim mySolidBrush As SolidBrush = CType(Brushes.Red, SolidBrush)
     Dim myGraphicsPath As New GraphicsPath()
 
     <STAThread()> _

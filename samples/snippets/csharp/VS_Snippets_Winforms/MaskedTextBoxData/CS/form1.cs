@@ -5,9 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 #endregion
 
@@ -57,7 +57,7 @@ namespace MaskedTextBoxDataCSharp
                 currentBinding = new Binding("Text", employeesTable, "Employees.LastName");
                 lastName.DataBindings.Add(currentBinding);
 
-                phoneBinding =new Binding("Text", employeesTable, "Employees.HomePhone");
+                phoneBinding = new Binding("Text", employeesTable, "Employees.HomePhone");
                 // We must add the event handlers before we bind, or the Format event will not get called
                 // for the first record.
                 phoneBinding.Format += new ConvertEventHandler(phoneBinding_Format);
@@ -79,7 +79,8 @@ namespace MaskedTextBoxDataCSharp
             if (currentRow["Extension"] == null)
             {
                 ext = "";
-            } else
+            }
+            else
             {
                 ext = currentRow["Extension"].ToString();
             }

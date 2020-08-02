@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.Linq;
 using System.Data.Linq.Mapping;
+using System.Linq;
+using System.Text;
 
 namespace cs_sprox
 {
@@ -31,7 +31,7 @@ namespace cs_sprox
 
             // Iterate through the list and write results (the company names)
             // to the console.
-            foreach(VariableResultShapesResult1 compName in
+            foreach (VariableResultShapesResult1 compName in
                 result.GetResult<VariableResultShapesResult1>())
             {
                 Console.WriteLine(compName.CompanyName);

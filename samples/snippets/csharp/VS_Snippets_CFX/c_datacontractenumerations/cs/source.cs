@@ -1,9 +1,9 @@
 ﻿//<snippet0>
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Security.Permissions;
 using System.Runtime.Serialization;
+using System.Security.Permissions;
+using System.Text;
 //</snippet0>
 [assembly: SecurityPermission(SecurityAction.RequestMinimum)]
 namespace ServiceModel.Samples
@@ -59,7 +59,8 @@ namespace ServiceModel.Samples
     //</snippet3>
 
     //<snippet4>
-    [DataContract][Flags]
+    [DataContract]
+    [Flags]
     public enum CarFeatures
     {
         None = 0,

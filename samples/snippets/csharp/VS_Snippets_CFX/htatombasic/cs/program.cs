@@ -3,11 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ServiceModel;
-using System.Xml;
+using System.ServiceModel.Channels;
 using System.ServiceModel.Description;
 using System.ServiceModel.Syndication;
-using System.ServiceModel.Channels;
 using System.ServiceModel.Web;
+using System.Xml;
 
 namespace Service
 {

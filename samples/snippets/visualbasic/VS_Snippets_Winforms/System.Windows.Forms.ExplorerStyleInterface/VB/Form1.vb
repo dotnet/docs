@@ -2,9 +2,9 @@
 Imports System.Collections.Generic
 Imports System.ComponentModel
 Imports System.Drawing
-Imports System.Windows.Forms
 '<snippet4>
 Imports System.IO
+Imports System.Windows.Forms
 '</snippet4>
 
 
@@ -20,15 +20,15 @@ Public Class Form1
     Private modifiedColumn As ColumnHeader
     Friend WithEvents ImageList2 As System.Windows.Forms.ImageList
     Private listView1 As ListView
-    
-    
+
+
     '<snippet2>
-    Public Sub New() 
+    Public Sub New()
         InitializeComponent()
         PopulateTreeView()
-    
+
     End Sub
-    
+
     '</snippet2>
     '<snippet3>
     Private Sub treeView1_NodeMouseClick(ByVal sender As Object, _
@@ -68,12 +68,12 @@ Public Class Form1
         listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize)
 
     End Sub
-    
+
     '</snippet3>
     '<snippet1>
-    Private Sub PopulateTreeView() 
+    Private Sub PopulateTreeView()
         Dim rootNode As TreeNode
-        
+
         Dim info As New DirectoryInfo("../..")
         If info.Exists Then
             rootNode = New TreeNode(info.Name)
@@ -81,9 +81,9 @@ Public Class Form1
             GetDirectories(info.GetDirectories(), rootNode)
             treeView1.Nodes.Add(rootNode)
         End If
-    
+
     End Sub
-    
+
     Private Sub GetDirectories(ByVal subDirs() As DirectoryInfo, _
         ByVal nodeToAddTo As TreeNode)
 
@@ -102,17 +102,17 @@ Public Class Form1
         Next subDir
 
     End Sub
-    
+
     '</snippet1>
-    <STAThread()>  _
-    Shared Sub Main() 
+    <STAThread()> _
+    Shared Sub Main()
         Application.EnableVisualStyles()
         Application.Run(New Form1())
-    
+
     End Sub
-    
-    
-    Private Sub InitializeComponent() 
+
+
+    Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.splitContainer1 = New System.Windows.Forms.SplitContainer

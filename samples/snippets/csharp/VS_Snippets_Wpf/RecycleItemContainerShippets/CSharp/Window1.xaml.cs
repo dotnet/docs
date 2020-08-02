@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Windows;
@@ -11,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Collections.ObjectModel;
 
 namespace RecycleItemContainerShippets
 {
@@ -93,7 +93,7 @@ namespace RecycleItemContainerShippets
                 return null;
             }
 
-            StackPanel sp = ((Window1) Application.Current.MainWindow).sp1;
+            StackPanel sp = ((Window1)Application.Current.MainWindow).sp1;
 
             if (value < 5)
             {

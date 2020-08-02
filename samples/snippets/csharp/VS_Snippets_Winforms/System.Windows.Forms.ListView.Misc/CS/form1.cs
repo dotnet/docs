@@ -1,9 +1,9 @@
 ﻿using System;
-using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
-using System.Windows.Forms;
 using System.Data;
+using System.Drawing;
+using System.Windows.Forms;
 
 /// <summary>
 /// Summary description for Form1.
@@ -32,16 +32,16 @@ public class Form1 : System.Windows.Forms.Form
     /// <summary>
     /// Clean up any resources being used.
     /// </summary>
-    protected override void Dispose( bool disposing )
+    protected override void Dispose(bool disposing)
     {
-        if( disposing )
+        if (disposing)
         {
             if (components != null)
             {
                 components.Dispose();
             }
         }
-        base.Dispose( disposing );
+        base.Dispose(disposing);
     }
 
     #region Windows Form Designer generated code
@@ -59,9 +59,9 @@ public class Form1 : System.Windows.Forms.Form
         this.button1 = new System.Windows.Forms.Button();
         this.SuspendLayout();
 
-//
-// listView1
-//
+        //
+        // listView1
+        //
         this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem11, listViewItem12, listViewItem13
         });
@@ -70,9 +70,9 @@ public class Form1 : System.Windows.Forms.Form
         this.listView1.Size = new System.Drawing.Size(278, 207);
         this.listView1.TabIndex = 0;
 
-//
-// button1
-//
+        //
+        // button1
+        //
         this.button1.Location = new System.Drawing.Point(175, 10);
         this.button1.Name = "button1";
         this.button1.Size = new System.Drawing.Size(100, 22);
@@ -80,9 +80,9 @@ public class Form1 : System.Windows.Forms.Form
         this.button1.Text = "button1";
         this.button1.Click += new System.EventHandler(this.button1_Click);
 
-//
-// Form1
-//
+        //
+        // Form1
+        //
         this.ClientSize = new System.Drawing.Size(292, 273);
         this.Controls.Add(this.button1);
         this.Controls.Add(this.listView1);

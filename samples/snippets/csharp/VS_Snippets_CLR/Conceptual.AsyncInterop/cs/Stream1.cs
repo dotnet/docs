@@ -12,7 +12,7 @@ public class Stream
                                   int count, AsyncCallback callback,
                                   object state)
     // </Snippet2>
-    { return null;  }
+    { return null; }
 
     // <Snippet3>
     public int EndRead(IAsyncResult asyncResult)

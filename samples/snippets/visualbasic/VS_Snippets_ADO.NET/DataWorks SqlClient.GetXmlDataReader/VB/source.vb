@@ -2,8 +2,8 @@
 Option Strict
 
 Imports System.Data.SqlClient
-Imports System.Xml
 Imports System.Data.SqlTypes
+Imports System.Xml
 
 Module Module1
     Sub Main()

@@ -1,13 +1,13 @@
-﻿Imports System.ServiceModel
-Imports System.ServiceModel.Security
-Imports System.IdentityModel.Tokens
-Imports System.Collections.Generic
-Imports System.Security.Permissions
-Imports System.ServiceModel.Description
-Imports System.ServiceModel.Security.Tokens
+﻿Imports System.Collections.Generic
 Imports System.IdentityModel.Claims
-Imports System.ServiceModel.Channels
+Imports System.IdentityModel.Tokens
 Imports System.Security.Cryptography.X509Certificates
+Imports System.Security.Permissions
+Imports System.ServiceModel
+Imports System.ServiceModel.Channels
+Imports System.ServiceModel.Description
+Imports System.ServiceModel.Security
+Imports System.ServiceModel.Security.Tokens
 
 <Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace CreateSts

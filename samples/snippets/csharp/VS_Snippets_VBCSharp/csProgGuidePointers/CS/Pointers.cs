@@ -13,7 +13,7 @@ class ClassConvert
             System.Console.Write("The 4 bytes of the integer:");
 
             // Display the 4 bytes of the int variable:
-            for (int i = 0 ; i < sizeof(int) ; ++i)
+            for (int i = 0; i < sizeof(int); ++i)
             {
                 System.Console.Write(" {0:X2}", *p);
                 // Increment the pointer:
@@ -28,10 +28,10 @@ class ClassConvert
         }
     }
 }
-    /* Output:
-        The 4 bytes of the integer: 00 04 00 00
-        The value of the integer: 1024
-    */
+/* Output:
+    The 4 bytes of the integer: 00 04 00 00
+    The value of the integer: 1024
+*/
 //</Snippet4>
 
 //<Snippet18>
@@ -144,13 +144,13 @@ class TestCopy
 
 class TestFixed1
 {
-	//<Snippet19>
-	public struct MyArray
-	{
+    //<Snippet19>
+    public struct MyArray
+    {
         public char[] pathName;
         private int reserved;
-	}
-	//</Snippet19>
+    }
+    //</Snippet19>
 }
 
 //<Snippet20>
@@ -305,20 +305,20 @@ class TestUnsafe
 {
     unsafe static void PointyMethod()
     {
-        int i=10;
+        int i = 10;
 
-        int *p = &i;
+        int* p = &i;
         System.Console.WriteLine("*p = " + *p);
         System.Console.WriteLine("Address of p = {0:X2}\n", (int)p);
     }
 
     static void StillPointy()
     {
-        int i=10;
+        int i = 10;
 
         unsafe
         {
-            int *p = &i;
+            int* p = &i;
             System.Console.WriteLine("*p = " + *p);
             System.Console.WriteLine("Address of p = {0:X2}\n", (int)p);
         }
@@ -340,11 +340,11 @@ class TestFixed
     {
         unsafe
         {
-            fixed (char *p = array)
+            fixed (char* p = array)
             {
-                for (int i=0; i<array.Length; i++)
+                for (int i = 0; i < array.Length; i++)
                 {
-                    System.Console.Write(*(p+i));
+                    System.Console.Write(*(p + i));
                 }
             }
         }

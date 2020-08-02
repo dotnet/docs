@@ -3,13 +3,13 @@
 
 using System;
 using System.IO;
-using System.ServiceModel;
 using System.Runtime.Serialization;
+using System.ServiceModel;
 
 namespace Microsoft.ServiceModel.Samples
 {
     // Define a service contract.
-    [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples")]
+    [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
     public interface ICalculator
     {
         [OperationContract]
@@ -20,16 +20,16 @@ namespace Microsoft.ServiceModel.Samples
 
         [OperationContract]
         int Multiply(int n1, int n2);
-//<snippet1>
+        //<snippet1>
         [OperationContract]
         [FaultContract(typeof(MathFault))]
         int Divide(int n1, int n2);
-//</snippet1>
+        //</snippet1>
     }
 
-//<snippet2>
+    //<snippet2>
     // Define a math fault data contract
-    [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]
+    [DataContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
     public class MathFault
     {
         private string operation;
@@ -49,7 +49,7 @@ namespace Microsoft.ServiceModel.Samples
             set { problemType = value; }
         }
     }
-//</snippet2>
+    //</snippet2>
 
     // Service class which implements the service contract.
     public class CalculatorService : ICalculator

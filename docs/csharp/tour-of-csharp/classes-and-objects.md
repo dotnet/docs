@@ -186,7 +186,7 @@ An *abstract method* is a virtual method with no implementation. An abstract met
 
 The following example declares an abstract class, `Expression`, which represents an expression tree node, and three derived classes, `Constant`, `VariableReference`, and `Operation`, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This example is similar to, but not to be confused with the expression tree types).
 
-[!code-csharp[ExpressionClass](~/samples/snippets/csharp/tour/classes-and-objects/Expressions.cs#L3-L61)]
+[!code-csharp[ExpressionClass](~/samples/snippets/csharp/tour/classes-and-objects/Expressions.cs#L3-L62)]
 
 The previous four classes can be used to model arithmetic expressions. For example, using instances of these classes, the expression `x + 3` can be represented as follows.
 
@@ -198,7 +198,7 @@ A `Constant`'s implementation of `Evaluate` simply returns the stored constant. 
 
 The following program uses the `Expression` classes to evaluate the expression `x * (y + 2)` for different values of `x` and `y`.
 
-[!code-csharp[ExpressionUsage](~/samples/snippets/csharp/tour/classes-and-objects/Expressions.cs#L66-L89)]
+[!code-csharp[ExpressionUsage](~/samples/snippets/csharp/tour/classes-and-objects/Expressions.cs#L67-L90)]
 
 ### Method overloading
 

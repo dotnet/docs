@@ -29,7 +29,7 @@ In the following code, examples of expressions are at the right-hand side of ass
 
 [!code-csharp[expression examples](snippets/Overview.cs#Expressions)]
 
-As the preceding example shows, property and indexer accesses as well as method invocations also form expressions. A [`void`](../builtin-types/void.md) method invocation is an example of an expression that doesn't produce a result. Unlike expressions that produce a result and can be used in other expressions, a `void` method invocation can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
+Typically, an expression produces a result and can be included into another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
 
 ```csharp
 Console.WriteLine("Hello, world!");

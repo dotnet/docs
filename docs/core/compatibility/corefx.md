@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [PrincipalPermissionAttribute is obsolete as error](#principalpermissionattribute-is-obsolete-as-error) | 5.0 |
 | [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps) | 5.0 |
 | [UTF-7 code paths are obsolete](#utf-7-code-paths-are-obsolete) | 5.0 |
 | [Vector\<T> always throws NotSupportedException for unsupported types](#vectort-always-throws-notsupportedexception-for-unsupported-types) | 5.0 |
@@ -41,6 +42,10 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [principalpermissionattribute-obsolete](../../../includes/core-changes/corefx/5.0/principalpermissionattribute-obsolete.md)]
+
+***
 
 [!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
 

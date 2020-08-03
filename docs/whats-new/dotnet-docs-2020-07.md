@@ -1,12 +1,12 @@
 ---
-title: ".NET docs: What's new for June 28, 2020 - August 1, 2020"
+title: ".NET docs: What's new for July 2020"
 description: "What's new in the .NET docs for June 28, 2020 - August 1, 2020."
 ms.date: 08/03/2020
 ---
 
-# .NET docs: What's new for June 28, 2020 - August 1, 2020
+# .NET docs: What's new for July 2020
 
-Welcome to what's new in the .NET docs from June 28, 2020 through August 1, 2020. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs from July 2020. This article lists some of the major changes to docs during this period.
 
 ## .NET Core
 

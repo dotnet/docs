@@ -127,24 +127,27 @@ The command pushes an existing package. It doesn't create a package. To create a
 - Push all *.nupkg* files in the current directory to the default push source:
 
   ```dotnetcli
-  dotnet nuget push *.nupkg
+  dotnet nuget push "*.nupkg"
   ```
 
   > [!NOTE]
   > If this command doesn't work, it might be due to a bug that existed in older versions of the SDK (.NET Core 2.1 SDK and earlier versions).
   > To fix this, upgrade your SDK version or run the following command instead:
-  > `dotnet nuget push **/*.nupkg`
+  > `dotnet nuget push "**/*.nupkg"`
+  
+  > [!NOTE]
+  > The enclosing quotes are required for shells such as bash that perform file globbing. For more information, see [NuGet/Home#4393](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120).
 
 - Push all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
 
   ```dotnetcli
-  dotnet nuget push *.nupkg --skip-duplicate
+  dotnet nuget push "*.nupkg" --skip-duplicate
   ```
 
 - Push all *.nupkg* files in the current directory to a local feed directory:
 
   ```dotnetcli
-  dotnet nuget push *.nupkg -s c:\mydir
+  dotnet nuget push "*.nupkg" -s c:\mydir
   ```
 
   This command doesn't store packages in a hierarchical folder structure, which is recommended to optimize performance. For more information, see [Local feeds](/nuget/hosting-packages/local-feeds).  

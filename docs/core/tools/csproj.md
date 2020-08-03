@@ -392,7 +392,7 @@ Specifies that pack should not run package analysis after building the package.
 
 ### MinClientVersion
 
-Specifies the minimum version of the NuGet client that can install this package, enforced by nuget.exe and the Visual Studio Package Manager.
+Specifies the minimum version of the NuGet client that can install this package, enforced by `nuget.exe` and the Visual Studio Package Manager.
 
 ### IncludeBuildOutput
 

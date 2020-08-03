@@ -29,7 +29,7 @@ In the following code, examples of expressions are at the right-hand side of ass
 
 [!code-csharp[expression examples](snippets/Overview.cs#Expressions)]
 
-Typically, an expression produces a result and can be included into another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
+Typically, an expression produces a result and can be included in another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
 
 ```csharp
 Console.WriteLine("Hello, world!");

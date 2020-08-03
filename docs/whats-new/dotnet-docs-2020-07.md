@@ -1,12 +1,12 @@
 ---
-title: ".NET docs: What's new for July 1, 2020 - August 1, 2020"
-description: "What's new in the .NET docs for July 1, 2020 - August 1, 2020."
+title: ".NET docs: What's new for June 28, 2020 - August 1, 2020"
+description: "What's new in the .NET docs for June 28, 2020 - August 1, 2020."
 ms.date: 08/03/2020
 ---
 
-# .NET docs: What's new for July 1, 2020 - August 1, 2020
+# .NET docs: What's new for June 28, 2020 - August 1, 2020
 
-Welcome to what's new in the .NET docs from July 1, 2020 through August 1, 2020. This article lists some of the major changes to docs during this period.
+Welcome to what's new in the .NET docs from June 28, 2020 through August 1, 2020. This article lists some of the major changes to docs during this period.
 
 ## .NET Core
 
@@ -15,6 +15,9 @@ Welcome to what's new in the .NET docs from July 1, 2020 through August 1, 2020.
 - [Serialization breaking changes](/dotnet/core/compatibility/serialization) - Deserialize rewraps exceptions
 - [Debug a deadlock in .NET Core](/dotnet/core/diagnostics/debug-deadlock) - New docs for debugging deadlock and high CPU usage
 - [Debug high CPU usage in .NET Core](/dotnet/core/diagnostics/debug-highcpu) - New docs for debugging deadlock and high CPU usage
+- [Install .NET Core on Windows, Linux, and macOS](/dotnet/core/install/index) - Split Runtime/SDK pages into OS specific (to match linux design)
+- [Install .NET Core on macOS](/dotnet/core/install/macos) - Split Runtime/SDK pages into OS specific (to match linux design)
+- [Install .NET Core on Windows](/dotnet/core/install/windows) - Split Runtime/SDK pages into OS specific (to match linux design)
 
 ## C# language
 
@@ -32,6 +35,7 @@ Welcome to what's new in the .NET docs from July 1, 2020 through August 1, 2020.
 
 ### New articles
 
+- [Choosing between anonymous and tuple types](/dotnet/standard/design-guidelines/choosing-between-anonymous-and-tuple) - Choosing between anonymous and tuple types
 - [Cross-Platform Cryptography in .NET Core and .NET 5](/dotnet/standard/security/cross-platform-cryptography) - Cross-plat cryptography article
 - [BinaryFormatter security guide](/dotnet/standard/serialization/binaryformatter-security-guide) - Ra off binary formatter
 
@@ -44,9 +48,10 @@ Welcome to what's new in the .NET docs from July 1, 2020 through August 1, 2020.
 The following people contributed to the .NET docs during this period. Thank you! Learn how to contribute by following the links under "Get involved" in the [what's new landing page](index.yml).
 
 - [Youssef1313](https://github.com/Youssef1313) - Youssef Victor (30)
-- [NextTurn](https://github.com/NextTurn) - Next Turn (16)
-- [pkulikov](https://github.com/pkulikov) - Petr Kulikov (9)
+- [NextTurn](https://github.com/NextTurn) - Next Turn (20)
+- [pkulikov](https://github.com/pkulikov) - Petr Kulikov (10)
 - [imba-tjd](https://github.com/imba-tjd) - 谭九鼎 (2)
+- [LauraKellerGitHub](https://github.com/LauraKellerGitHub) - Laura Keller (2)
 - [tonytins](https://github.com/tonytins) - Anthony Leland (2)
 - [azure-sdk](https://github.com/azure-sdk) - Azure SDK Bot (1)
 - [BiP00](https://github.com/BiP00) - Ben (1)
@@ -59,16 +64,18 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [jasonmerino](https://github.com/jasonmerino) - Jason Merino (1)
 - [jnm2](https://github.com/jnm2) - Joseph Musser (1)
 - [JosephHerreraDev](https://github.com/JosephHerreraDev) - Joseph (1)
-- [LauraKellerGitHub](https://github.com/LauraKellerGitHub) - Laura Keller (1)
 - [lv1il0s](https://github.com/lv1il0s) (1)
 - [mderriey](https://github.com/mderriey) - Mickaël Derriey (1)
+- [mrlife](https://github.com/mrlife) (1)
 - [MSDN-WhiteKnight](https://github.com/MSDN-WhiteKnight) - MSDN.WhiteKnight (1)
 - [nagarjunbaindla](https://github.com/nagarjunbaindla) (1)
 - [nschonni](https://github.com/nschonni) - Nick Schonning (1)
 - [rhoughton](https://github.com/rhoughton) - Rob (1)
 - [richardwerkman](https://github.com/richardwerkman) - Richard Werkman (1)
+- [robertmuehsig](https://github.com/robertmuehsig) - Robert Muehsig (1)
 - [rosstimo](https://github.com/rosstimo) - Tim Rossiter (1)
 - [Santurysim](https://github.com/Santurysim) - Peter (1)
 - [shankargurav](https://github.com/shankargurav) - Shankar (1)
+- [shyboylpf](https://github.com/shyboylpf) - Mart (1)
 - [sughosneo](https://github.com/sughosneo) - Sumit Ghosh (1)
 - [usmanmohammed](https://github.com/usmanmohammed) - Usman Mohammed (1)

@@ -78,7 +78,7 @@ Apache Spark supports the following programming languages:
 * Java
 * SQL
 * R
-* .NET languages (C#/VB/F#)
+* .NET languages (C#/F#)
 
 ## Spark APIs
 

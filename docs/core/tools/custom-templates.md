@@ -91,7 +91,7 @@ The *mytemplate* folder is an installable template pack. Once the pack is instal
 
 ## Packing a template into a NuGet package (nupkg file)
 
-A custom template is packed with the [dotnet pack](dotnet-pack.md) command and a *.csproj* file. Alternatively, [NuGet](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference) can be used with the [nuget pack](https://docs.microsoft.com/nuget/tools/cli-ref-pack) command along with a *.nuspec* file. However, NuGet requires the .NET Framework on Windows and [Mono](https://www.mono-project.com/) on Linux and macOS.
+A custom template is packed with the [`dotnet pack`](dotnet-pack.md) command and a *.csproj* file. Alternatively, [NuGet](https://docs.microsoft.com/nuget/tools/nuget-exe-cli-reference) can be used with the [`nuget pack`](https://docs.microsoft.com/nuget/tools/cli-ref-pack) command along with a *.nuspec* file. However, NuGet requires the .NET Framework on Windows and [Mono](https://www.mono-project.com/) on Linux and macOS.
 
 The *.csproj* file is slightly different from a traditional code-project *.csproj* file. Note the following settings:
 

@@ -7,5 +7,6 @@
 > - [Globalization](~/docs/core/compatibility/globalization.md)
 > - [Interop](~/docs/core/compatibility/interop.md)
 > - [Networking](~/docs/core/compatibility/networking.md)
+> - [Serialization](~/docs/core/compatibility/serialization.md)
 > - [Visual Basic](~/docs/core/compatibility/visualbasic.md)
 > - [Windows Forms](~/docs/core/compatibility/winforms.md)

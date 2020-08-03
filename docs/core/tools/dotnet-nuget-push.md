@@ -136,7 +136,7 @@ The command pushes an existing package. It doesn't create a package. To create a
   > `dotnet nuget push "**/*.nupkg"`
   
   > [!NOTE]
-  > Please note the enclosing quotes are _mandatory_ for shells that perform file globbing. See the [relevant NuGet issue](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120) for some details.
+  > The enclosing quotes are required for shells such as bash that perform file globbing. For more information, see [NuGet/Home#4393](https://github.com/NuGet/Home/issues/4393#issuecomment-667618120).
 
 - Push all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
 

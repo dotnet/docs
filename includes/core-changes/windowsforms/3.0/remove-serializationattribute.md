@@ -24,7 +24,7 @@ For more information, see [Binary serialization](~/docs/standard/serialization/b
 
 #### Version introduced
 
-3.0 Preview 9
+3.0
 
 #### Recommended action
 

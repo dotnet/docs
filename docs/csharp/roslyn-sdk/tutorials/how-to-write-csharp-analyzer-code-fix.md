@@ -499,7 +499,7 @@ else if (variableType.IsReferenceType && constantValue.Value != null)
 }
 ```
 
-You must write a bit more code in your code fix provider to replace the var' keyword with the correct type name. Return to **CodeFixProvider.cs**. The code you'll add does the following steps:
+You must write a bit more code in your code fix provider to replace the `var` keyword with the correct type name. Return to **CodeFixProvider.cs**. The code you'll add does the following steps:
 
 - Check if the declaration is a `var` declaration, and if it is:
 - Create a new type for the inferred type.
@@ -517,12 +517,12 @@ You'll need to add one `using` directive to use the <xref:Microsoft.CodeAnalysis
 using Microsoft.CodeAnalysis.Simplification;
 ```
 
-Run your tests, and they should all pass. Congratulate yourself by running your finished analyzer. Press <kbd>Ctrl+F5</kbd> to run the analyzer project in a second instance of Visual Studio with the Roslyn Preview extension loaded.
+Run your tests, and they should all pass. Congratulate yourself by running your finished analyzer. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio with the Roslyn Preview extension loaded.
 
 - In the second Visual Studio instance, create a new C# Console Application project and add `int x = "abc";` to the Main method. Thanks to the first bug fix, no warning should be reported for this local variable declaration (though there's a compiler error as expected).
 - Next, add `object s = "abc";` to the Main method. Because of the second bug fix, no warning should be reported.
 - Finally, add another local variable that uses the `var` keyword. You'll see that a warning is reported and a suggestion appears beneath to the left.
-- Move the editor caret over the squiggly underline and press <kbd>Ctrl+</kbd>. to display the suggested code fix. Upon selecting your code fix, note that the var' keyword is now handled correctly.
+- Move the editor caret over the squiggly underline and press <kbd>Ctrl</kbd>+<kbd>.</kbd>. to display the suggested code fix. Upon selecting your code fix, note that the `var` keyword is now handled correctly.
 
 Finally, add the following code:
 

@@ -1,7 +1,7 @@
 ---
 title: CBC decryption vulnerability
 description: Learn how to detect and mitigate timing vulnerabilities with Cipher-Block-Chaining (CBC) mode symmetric decryption using padding.
-ms.date: 06/12/2018
+ms.date: 07/15/2020
 author: blowdart
 ---
 # Timing vulnerabilities with CBC-mode symmetric decryption using padding
@@ -698,3 +698,10 @@ namespace Microsoft.Examples.Cryptography
     }
 }
 ```
+
+## See also
+
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

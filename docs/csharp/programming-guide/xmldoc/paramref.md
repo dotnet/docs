@@ -1,5 +1,6 @@
 ---
 title: "<paramref> - C# programming guide"
+description: Learn about the XML <paramref> tag. This tag gives you a way to indicate that a word in the code is a parameter.
 ms.date: 07/20/2015
 f1_keywords:
   - "paramref"

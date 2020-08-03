@@ -1,5 +1,6 @@
 ---
 title: "<param> - C# programming guide"
+description: Learn about the XML <param> tag. This tag is used in the comment for a method declaration to describe one of the parameters for the method.
 ms.date: 07/20/2015
 f1_keywords:
   - "param"

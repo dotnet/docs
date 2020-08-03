@@ -1,5 +1,6 @@
 ---
 title: "Regsvcs.exe (.NET Services Installation Tool)"
+description: Use Regsvcs.exe, the .NET Services Installation tool. Load and register an assembly, configure services you've added programmatically to a class, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Regsvcs.exe"

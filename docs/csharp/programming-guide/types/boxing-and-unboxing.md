@@ -1,5 +1,6 @@
 ---
 title: "Boxing and Unboxing - C# Programming Guide"
+description: Learn about boxing and unboxing in C# programming. See code examples and view additional available resources.
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.boxing"

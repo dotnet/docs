@@ -30,7 +30,7 @@ namespace HelloWorld
 }";
         // </SnippetDeclareSampleCode>
 
-        static void Main(string[] args)
+        static void Main()
         {
             // <SnippetCreateIdentifierName>
             NameSyntax name = IdentifierName("System");

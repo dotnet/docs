@@ -9,7 +9,7 @@ metadata:
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
   ms.prod: azure-dotnet
-  ms.date: 03/04/2020
+  ms.date: 07/31/2020
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new 
@@ -40,6 +40,8 @@ highlightedContent:
       url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
 
 conceptualContent:
+  title: Featured content
+  summary: Learn to develop .NET apps leveraging a variety of Azure services.
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
     - title: Create web apps
@@ -256,7 +258,7 @@ additionalContent:
               url: https://channel9.msdn.com/Shows/The-Cloud-Native-Show
             - text: On .NET
               url: https://channel9.msdn.com/Shows/On-NET
-            - text: ASP.NET Community Standup
+            - text: .NET Community Standup
               url: https://dotnet.microsoft.com/platform/community/standup
             - text: The .NET Docs Show
               url: https://dotnetdocs.dev

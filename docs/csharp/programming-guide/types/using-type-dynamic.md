@@ -1,5 +1,6 @@
 ---
 title: "Using type dynamic - C# Programming Guide"
+description: Learn how to use the dynamic type. The dynamic type is a static type, but dynamic objects bypass static type checking.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "dynamic [C#], about dynamic type"

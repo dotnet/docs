@@ -1,6 +1,6 @@
 ---
 title: "How to: Verify the Digital Signatures of XML Documents"
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
@@ -8,7 +8,7 @@ dev_langs:
 helpviewer_keywords: 
   - "System.Security.Cryptography.SignedXml class"
   - "signatures, cryptographic"
-  - "System.Security.Cryptography.RSACryptoServiceProvider class"
+  - "System.Security.Cryptography.RSA class"
   - "verifying signatures"
   - "checking signatures"
   - "XML digital signatures"
@@ -16,11 +16,15 @@ helpviewer_keywords:
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
 ---
 # How to: Verify the Digital Signatures of XML Documents
+
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to verify XML data signed with a digital signature. XML digital signatures (XMLDSIG) allow you to verify that data was not altered after it was signed. For more information about the XMLDSIG standard, see the World Wide Web Consortium (W3C) specification at <https://www.w3.org/TR/xmldsig-core/>.
   
- The code example in this procedure demonstrates how to verify an XML digital signature contained in a <`Signature`> element.  The example retrieves an RSA public key from a key container and then uses the key to verify the signature.  
+> [!NOTE]
+> The code in this article applies to Windows.
+
+The code example in this procedure demonstrates how to verify an XML digital signature contained in a <`Signature`> element.  The example retrieves an RSA public key from a key container and then uses the key to verify the signature.  
   
- For information about how create a digital signature that can be verified using this technique, see [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md).  
+For information about how create a digital signature that can be verified using this technique, see [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md).  
   
 ### To verify the digital signature of an XML document  
   
@@ -59,24 +63,32 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
      [!code-csharp[HowToVerifyXMLDocumentRSA#8](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/cs/sample.cs#8)]
      [!code-vb[HowToVerifyXMLDocumentRSA#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/vb/sample.vb#8)]  
   
-## Example  
- This example assumes that a file named `"test.xml"` exists in the same directory as the compiled program.  The `"test.xml"` file must be signed using the techniques described in [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md).  
+## Example
+
+This example assumes that a file named `"test.xml"` exists in the same directory as the compiled program.  The `"test.xml"` file must be signed using the techniques described in [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md).  
   
- [!code-csharp[HowToVerifyXMLDocumentRSA#1](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/cs/sample.cs#1)]
- [!code-vb[HowToVerifyXMLDocumentRSA#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/vb/sample.vb#1)]  
+[!code-csharp[HowToVerifyXMLDocumentRSA#1](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/cs/sample.cs#1)]
+[!code-vb[HowToVerifyXMLDocumentRSA#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/vb/sample.vb#1)]  
   
 ## Compiling the Code  
   
-- To compile this example, you need to include a reference to `System.Security.dll`.  
+- In a project that targets .NET Framework, include a reference to `System.Security.dll`.
+
+- In a project that targets .NET Core or .NET 5, install NuGet package [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   
-## .NET Framework Security  
- Never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md).  
+## .NET Security
+
+Never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md).  
   
- Never embed a private key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.  
+Never embed a private key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.  
   
 ## See also
 
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - <xref:System.Security.Cryptography.Xml>
 - [How to: Sign XML Documents with Digital Signatures](how-to-sign-xml-documents-with-digital-signatures.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

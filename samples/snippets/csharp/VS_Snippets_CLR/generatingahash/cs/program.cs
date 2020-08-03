@@ -19,9 +19,9 @@ class Class1
         //Convert the string into an array of bytes.
         byte[] messageBytes = ue.GetBytes(messageString);
 
-        //Create a new instance of the SHA1Managed class to create
+        //Create a new instance of the SHA256 class to create
         //the hash value.
-        SHA1Managed shHash = new SHA1Managed();
+        SHA256 shHash = SHA256.Create();
 
         //Create the hash value from the array of bytes.
         hashValue = shHash.ComputeHash(messageBytes);

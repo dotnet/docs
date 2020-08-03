@@ -32,7 +32,7 @@ If you encounter the obsoletion error, you must take action.
 
 - **If you're applying the attribute to an ASP.NET MVC action method:**
 
-  Consider using ASP.NET's built-in authorization infrastructure. The following code snippet demonstrates annotating a controller with an <xref:System.Web.Mvc.AuthorizeAttribute> attribute. The ASP.NET runtime will authorize the user before performing the action.
+  Consider using ASP.NET's built-in authorization infrastructure. The following code demonstrates how to annotate a controller with an <xref:System.Web.Mvc.AuthorizeAttribute> attribute. The ASP.NET runtime will authorize the user before performing the action.
 
   ```csharp
   using Microsoft.AspNetCore.Authorization;

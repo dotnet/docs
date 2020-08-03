@@ -38,7 +38,7 @@ An expression body definition has the following general syntax:
 member => expression;
 ```
 
-where `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member's return type is `void` or if the member is a constructor, a finalizer, or a property `set` accessor, `expression` must be a [*statement expression*](~/_csharplang/spec/statements.md#expression-statements), which can be of any type.
+where `expression` is a valid expression. The return type of `expression` must be implicitly convertible to the member's return type. If the member's return type is `void` or if the member is a constructor, a finalizer, or a property or indexer `set` accessor, `expression` must be a [*statement expression*](~/_csharplang/spec/statements.md#expression-statements). Because the expression's result is discarded, the return type of that expression can be any type.
 
 The following example shows an expression body definition for a `Person.ToString` method:
 
@@ -70,4 +70,4 @@ For more information about the lambda operator, see the [Anonymous function expr
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)

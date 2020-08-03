@@ -46,7 +46,7 @@ Consider building your web application with Blazor when:
 
 - Your team is more comfortable with .NET development than JavaScript or TypeScript development
 
-If you have an existing web forms application you're considering migrating to .NET Core, you may wish to review the free e-book, [Blazor for Web Forms Developers](https://docs.microsoft.com/dotnet/architecture/blazor-for-web-forms-developers/) to see whether it makes sense to consider migrating it to Blazor.
+If you have an existing web forms application you're considering migrating to .NET Core, you may wish to review the free e-book, [Blazor for Web Forms Developers](../blazor-for-web-forms-developers/index.md) to see whether it makes sense to consider migrating it to Blazor.
 
 For more information about Blazor, see [Get started with Blazor](https://blazor.net/docs/get-started.html).
 

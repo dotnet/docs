@@ -424,7 +424,7 @@ report values and allows additional customizability. For more information, see [
 
 ## Customize debug displays
 
-Debuggers for .NET respect the use of attributes such as `DebuggerDisplayAttribute` and `DebuggerTypeProxyAttribute`,
+Debuggers for .NET respect the use of attributes such as `DebuggerDisplay` and `DebuggerTypeProxy`,
 and these affect the structured display of objects in debugger inspection windows.
 The F# compiler automatically generated these attributes for discriminated union and record types, but
 not class, interface, or struct types.

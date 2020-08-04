@@ -1,4 +1,4 @@
-class ExampleProgram
+﻿class ExampleProgram
 {
     static async Task Main()
     {

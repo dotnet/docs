@@ -356,7 +356,7 @@ Counts([0; 1; 2; 3;
 
 ### Customize plain text formatting by overriding `ToString`
 
-The default implementation of `x.ToString()` is observable in F# programming. Often, the default results
+The default implementation of `ToString` is observable in F# programming. Often, the default results
 aren't suitable for use in either programmer-facing information display or user output, and as a result it
 is common to override the default implementation.  
 

@@ -375,7 +375,7 @@ produces
 { Clicks = [0; 1; 2; 3; 4; 5; 6; 7; 8; 9; 10] }
 ```
 
-For class types, no default implementation of `ToString()` is provided and the .NET default is used, which reports the
+For class types, no default implementation of `ToString` is provided and the .NET default is used, which reports the
 name of the type. For example,
 
 ```fsharp

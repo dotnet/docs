@@ -14,6 +14,8 @@ ms.assetid: b921bc94-bd3a-4c91-9ede-2c8d4f78ea9a
 ---
 # Security and serialization
 
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
+
 Because serialization can allow other code to see or modify object instance data that would otherwise be inaccessible, a special permission is required of code performing serialization: <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> flag specified. Under default policy, this permission is not given to Internet-downloaded or intranet code; only code on the local computer is granted this permission.  
   
  Normally, all fields of an object instance are serialized, meaning that data is represented in the serialized data for the instance. It is possible for code that can interpret the format to determine what the data values are, independent of the accessibility of the member. Similarly, deserialization extracts data from the serialized representation and sets object state directly, again irrespective of accessibility rules.  

@@ -140,7 +140,7 @@ produces
 c"d")
 ```
 
-### `%A` formatting of .NET values
+### .NET values
 
 When formatting plain text using the `%A` specifier, non-F# .NET objects are formatted by using `x.ToString()` using the default settings of .NET given by
 `System.Globalization.CultureInfo.CurrentCulture` and `System.Globalization.CultureInfo.CurrentUICulture`.  For example,

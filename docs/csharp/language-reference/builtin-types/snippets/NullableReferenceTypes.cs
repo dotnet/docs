@@ -44,7 +44,8 @@ namespace builtin_types
                 if (detailedDescription.Length == 0) // Warning! dereference possible null
                 {
                     return shortDescription;
-                } else
+                }
+                else
                 {
                     return $"{shortDescription}\n{detailedDescription}";
                 }
@@ -55,7 +56,8 @@ namespace builtin_types
                 if (detailedDescription == null)
                 {
                     return shortDescription;
-                } else if (detailedDescription.Length > 0) // OK, detailedDescription can't be null.
+                }
+                else if (detailedDescription.Length > 0) // OK, detailedDescription can't be null.
                 {
                     return $"{shortDescription}\n{detailedDescription}";
                 }

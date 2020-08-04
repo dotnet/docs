@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.Tracing;
 
-[EventSource(Name = "Samples.EventCounterDemos.Minimal")]
+[EventSource(Name = "Sample.EventCounter.Minimal")]
 public sealed class MinimalEventCounterSource : EventSource
 {
     public static readonly MinimalEventCounterSource Log = new MinimalEventCounterSource();
@@ -14,8 +14,11 @@ public sealed class MinimalEventCounterSource : EventSource
             DisplayUnits = "ms"
         };
 
-    public void Request(string url, float elapsedMilliseconds) =>
-        _requestCounter.WriteMetric(elapsedMilliseconds);
+    public void Request(string url, float elapsedMilliseconds)
+    {
+        WriteEvent(1, url, elapsedMilliseconds);
+        _requestCounter?.WriteMetric(elapsedMilliseconds);
+    }
 
     protected override void Dispose(bool disposing)
     {

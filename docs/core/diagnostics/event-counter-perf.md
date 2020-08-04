@@ -1,29 +1,52 @@
 ---
 title: Measure performance using EventCounters in .NET Core
-description: Installing and using the dotnet-trace command-line tool.
-ms.date: 07/31/2020
+description: In this tutorial, you'll learn how to measure performance using EventCounters.
+ms.date: 08/04/2020
+ms.topic: tutorial
 ---
 
 # Tutorial: Measure performance using EventCounters in .NET Core
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-While an <xref:System.Diagnostics.Tracing.EventSource> is fast, logging too many events for frequent events is still a performance consideration. In this tutorial, you'll learn how an <xref:System.Diagnostics.Tracing.EventCounter> can be used to measure performance of a high frequency of events.
+In this tutorial, you'll learn how an <xref:System.Diagnostics.Tracing.EventCounter> can be used to measure performance with a high frequency events. You can use the [available counters](event-counters.md#available-counters) published by various official .NET Core packages, third-party providers, or create your own metrics for monitoring.
+
+In this tutorial, you will:
+
+> [!div class="checklist"]
+>
+> - Implement an <xref:System.Diagnostics.Tracing.EventSource>.
+> - Monitor counters with [dotnet-counters](dotnet-counters.md).
+
+## Prerequisites
+
+The tutorial uses:
+
+- [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
+- [dotnet-counters](dotnet-counters.md) to monitor event counters.
+
+## Implement an EventSource
 
 For events that happen every few milliseconds, you'll want the overhead per event to be low (less than a millisecond). Otherwise, the impact on performance will be significant. Logging an event means you're going to write something to disk. If the disk is not fast enough, you will lose events. You need a solution other than logging the event itself.
 
-When dealing with a large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could crank the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Let's take a look at an example how to do this in <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
+When dealing with a large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could get the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Below is an example of how to implement an <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
 The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=nameWithType> line is the <xref:System.Diagnostics.Tracing.EventSource> part and is not part of <xref:System.Diagnostics.Tracing.EventCounter>, it was written to show that you can log a message together with the event counter.
 
-You logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless you can actually get the statistics out of it, it is not useful. To get the statistics, you need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by creating a timer that fires as frequently as you want the events, as well as a listener to capture the events. To do that, you can use PerfView.
+You logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless you access the statistics from of it, it is not useful. To get the statistics, you need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by creating a timer that fires as frequently as you want the events, as well as a listener to capture the events. To do that, you can use [dotnet-counters](dotnet-counters.md).
 
-There is an extra keyword that you will need to turn on the EventCounters.
+Use the [dotnet-counters ps](dotnet-counters.md#dotnet-counters-ps) command, to display a list of .NET processes that can be monitored.
 
+```console
+dotnet-counters ps
 ```
-PerfView /onlyProviders=*Samples-EventCounterDemos-Minimal:EventCounterIntervalSec=1 collect
+
+Using the process identifier from the output of the `dotnet-counters ps` command, start monitoring the event counter interval.
+
+```console
+dotnet-counters monitor --process-id 20184 Sample.EventCounter.Minimal
 ```
 
 > [!NOTE]
@@ -48,7 +71,7 @@ Notice that this command also logs the events, so we will get both the events an
 As we mentioned, to avoid overhead, sometimes we will want just the counters. This command can be used to log _only_ the counters:
 
 ```
-PerfView /onlyProviders=*Samples-EventCounterDemos-Minimal:*:Critical:EventCounterIntervalSec=1 collect
+PerfView /onlyProviders=*Samples.EventCounterDemos.Minimal:*:Critical:EventCounterIntervalSec=1 collect
 ```
 
 > [!TIP]

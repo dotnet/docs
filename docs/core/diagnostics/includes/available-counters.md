@@ -1,8 +1,10 @@
 ## Available counters
 
-The following counters are published as part of .NET runtime, and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
+Throughout various .NET packages, basic metrics on GC, Just-in-Time (JIT), assemblies, exceptions, threading, networking, and web requests are published using EventCounters.
 
 ### "System.Runtime" counters
+
+The following counters are published as part of .NET runtime, and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
 
 | Counter | Description |
 |--|--|

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics.Tracing;
 
-[EventSource(Name = "Samples.EventCounterDemos.Conditional")]
+[EventSource(Name = "Sample.EventCounter.Conditional")]
 public sealed class ConditionalEventCounterSource : EventSource
 {
     public static readonly ConditionalEventCounterSource Log = new ConditionalEventCounterSource();

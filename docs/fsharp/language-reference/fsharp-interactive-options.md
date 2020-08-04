@@ -126,7 +126,7 @@ val newYearsDay1999 : DateAndLabel = { Date = 1999-01-01T00:00:00
 
 ```fsharp
 type MyList(values: int list) =
-    member x.Values = values
+    member _.Values = values
 
 fsi.AddPrintTransformer(fun (x:MyList) -> box x.Values)
 

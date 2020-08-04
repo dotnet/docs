@@ -5,9 +5,6 @@ ms.date: 04/04/2019
 ---
 # Import Declarations: The `open` Keyword
 
-> [!NOTE]
-> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
-
 An *import declaration* specifies a module or namespace whose elements you can reference without using a fully qualified name.
 
 ## Syntax

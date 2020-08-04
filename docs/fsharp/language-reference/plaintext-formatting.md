@@ -281,7 +281,7 @@ internal view:
   Y = ["one"; "two"; "three"] }
 ```
 
-### `%A` formatting of large, cyclic, or deeply nested values
+### Large, cyclic, or deeply nested values
 
 Large structured values are formatted to a maximum overall object node count of 10000.
 Deeply nested values are formatted to a depth of 100.  In both cases `...` is used

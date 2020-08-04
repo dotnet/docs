@@ -5,7 +5,7 @@ ms.date: 07/30/2020
 ---
 # Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 
-![Book cover](./media/cover-small.png)
+![Book cover](./media/devops-book-cover-large-we.png)
 
 **EDITION v3.1** - Updated to ASP.NET Core 3.1
 

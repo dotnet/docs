@@ -322,7 +322,7 @@ produces
 { Links = [...] }
 ```
 
-### `%A` formatting of lazy, null, and function values
+### Lazy, null, and function values
 
 Lazy values are printed as `Value is not created` or equivalent text when the value has not yet been evaluated.
 

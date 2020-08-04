@@ -91,7 +91,7 @@ var workingSetCounter = new PollingCounter(
 
 The <xref:System.Diagnostics.Tracing.PollingCounter> reports the current amount of physical memory mapped to the process (working set) of the app, since it captures a metric at a moment in time. The callback for polling a value is the provided lambda expression, which is just a call to the <xref:System.Environment.WorkingSet?displayProperty=fullName> API. <xref:System.Diagnostics.Tracing.DiagnosticCounter.DisplayName> and <xref:System.Diagnostics.Tracing.DiagnosticCounter.DisplayUnits> are optional properties that can be set to help the consumer side of the counter to display the value more clearly. For example, [dotnet-counters](dotnet-counters.md) uses these properties to display the more display-friendly version of the counter names.
 
-> [!NOTE]
+> [!IMPORTANT]
 > The `DisplayName` properties are not localized.
 
 For the <xref:System.Diagnostics.Tracing.PollingCounter>, and the <xref:System.Diagnostics.Tracing.IncrementingPollingCounter>), nothing else needs to be done. They both poll the values themselves at an interval requested by the consumer.
@@ -139,7 +139,7 @@ You can consume the counter values via the <xref:System.Diagnostics.Tracing.Even
 
 First, the <xref:System.Diagnostics.Tracing.EventSource> that produces the counter value needs to be enabled. Override the <xref:System.Diagnostics.Tracing.EventListener.OnEventSourceCreated%2A> method to get a notification when an <xref:System.Diagnostics.Tracing.EventSource> is created, and if this is the correct <xref:System.Diagnostics.Tracing.EventSource> with your EventCounters, then you can call <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A?displayProperty=nameWithType> on it. Here is an example override:
 
-:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="13-24":::
+:::code language="csharp" source="snippets/EventCounters/SimpleEventListener.cs" range="16-27":::
 
 #### Sample code
 

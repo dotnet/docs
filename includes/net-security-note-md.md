@@ -3,7 +3,7 @@
 >
 > The .NET Framework provides a mechanism for the enforcement of varying levels of trust on different code running in the same application called Code Access Security (CAS).
 >
-> **CAS is not supported in .NET Core, .NET 5, or later versions. CAS is not supported by versions of C# later than 7.0.
+> **CAS is not supported in .NET Core, .NET 5, or later versions. CAS is not supported by versions of C# later than 7.0.**
 >
 > CAS in .NET Framework should not be used as a mechanism for enforcing security boundaries based on code origination or other identity aspects. CAS and Security-Transparent Code are not supported as a security boundary with partially trusted code, especially code of unknown origin. We advise against loading and executing code of unknown origins without putting alternative security measures in place.
 >

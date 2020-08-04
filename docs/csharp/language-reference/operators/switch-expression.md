@@ -47,5 +47,5 @@ You can read more in the C# language spec proposal for [recursive patterns](~/_c
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - [Pattern matching](../../pattern-matching.md)

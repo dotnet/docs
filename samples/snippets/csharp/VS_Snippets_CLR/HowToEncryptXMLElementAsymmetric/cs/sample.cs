@@ -33,7 +33,7 @@ class Program
         // </snippet2>
 
         // Create a new RSA key and save it in the container.  This key will encrypt
-        // a symmetric key, which will then be encryped in the XML document.
+        // a symmetric key, which will then be encrypted in the XML document.
         // <snippet3>
         RSACryptoServiceProvider rsaKey = new RSACryptoServiceProvider(cspParams);
         // </snippet3>
@@ -89,7 +89,7 @@ class Program
 
         ////////////////////////////////////////////////
         // Find the specified element in the XmlDocument
-        // object and create a new XmlElemnt object.
+        // object and create a new XmlElement object.
         ////////////////////////////////////////////////
         // <snippet5>
         XmlElement elementToEncrypt = Doc.GetElementsByTagName(ElementToEncrypt)[0] as XmlElement;
@@ -100,7 +100,7 @@ class Program
             throw new XmlException("The specified element was not found");
         }
         // </snippet5>
-        RijndaelManaged sessionKey = null;
+        Aes sessionKey = null;
 
         try
         {
@@ -111,9 +111,8 @@ class Program
             //////////////////////////////////////////////////
 
             // <snippet6>
-            // Create a 256 bit Rijndael key.
-            sessionKey = new RijndaelManaged();
-            sessionKey.KeySize = 256;
+            // Create an AES key.
+            sessionKey = Aes.Create();
             // </snippet6>
 
             // <snippet7>

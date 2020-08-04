@@ -7,31 +7,32 @@ helpviewer_keywords:
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
 ---
-# Accessibility Best Practices
+# Accessibility best practices
+
 > [!NOTE]
-> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
+> This article is intended for .NET Framework developers who want to use the managed UI Automation classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about UI Automation, see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
- Implementing the following best practices in controls or applications will improve their accessibility for people who use assistive technology devices. Many of these best practices focus on good [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] design. Each best practice includes implementation information for [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls or applications. In many cases, the work to meet these best practices is already included in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls.  
+ Implementing the following best practices in controls or applications will improve their accessibility for people who use assistive technology devices. Many of these best practices focus on good user interface (UI) design. Each best practice includes implementation information for Windows Presentation Foundation (WPF) controls or applications. In many cases, the work to meet these best practices is already included in WPF controls.  
   
 <a name="Programmatic_Access"></a>
 ## Programmatic Access  
- Programmatic access involves ensuring that all [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements are labeled, property values are exposed, and appropriate events are raised. For standard [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] controls, most of this work is already done through <xref:System.Windows.Automation.Peers.AutomationPeer>. Custom controls require additional work to ensure that programmatic access is correctly implemented.  
+ Programmatic access involves ensuring that all UI elements are labeled, property values are exposed, and appropriate events are raised. For standard WPF controls, most of this work is already done through <xref:System.Windows.Automation.Peers.AutomationPeer>. Custom controls require additional work to ensure that programmatic access is correctly implemented.  
   
 <a name="Enable_Programmatic_Access_to_all_UI_Elements_and_Text"></a>
 ### Enable Programmatic Access to all UI Elements and Text  
- User interface (UI) elements should enable programmatic access. If the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] is a standard [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] control, support for programmatic access is included in the control. If the control is a custom control – a control that has been subclassed from a common control or a control that has been subclassed from Control – then you must check the <xref:System.Windows.Automation.Peers.AutomationPeer> implementation for areas that may need modification.  
+ User interface (UI) elements should enable programmatic access. If the UI is a standard WPF control, support for programmatic access is included in the control. If the control is a custom control – a control that has been subclassed from a common control or a control that has been subclassed from Control – then you must check the <xref:System.Windows.Automation.Peers.AutomationPeer> implementation for areas that may need modification.  
   
- Following this best practice allows assistive technology vendors to identify and manipulate elements of your product's [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
+ Following this best practice allows assistive technology vendors to identify and manipulate elements of your product's UI.  
   
 <a name="Place_Names__Titles_and_Descriptions_on_UI_Objects_"></a>
 ### Place Names, Titles, and Descriptions on UI Objects, Frames, and Pages  
- Assistive technologies, especially screen readers, use the title to understand the location of the frame, object, or page in the navigation scheme. Therefore, the title must be very descriptive. For example, a Web page title of "Microsoft Web Page" is useless if the user has navigated deeply into some particular area. A descriptive title is critical for users who are blind and depend on screen readers. Similarly, for [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] controls, <xref:System.Windows.Automation.AutomationProperties.NameProperty> and <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> are important for assistive technology devices.  
+ Assistive technologies, especially screen readers, use the title to understand the location of the frame, object, or page in the navigation scheme. Therefore, the title must be descriptive. For example, a Web page title of "Microsoft Web Page" is useless if the user has navigated deeply into some particular area. A descriptive title is critical for users who are blind and depend on screen readers. Similarly, for WPF controls, <xref:System.Windows.Automation.AutomationProperties.NameProperty> and <xref:System.Windows.Automation.AutomationProperties.HelpTextProperty> are important for assistive technology devices.  
   
- Following this best practice allows assistive technologys to identify and manipulate [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] in sample controls and applications.  
+ Following this best practice allows assistive technologies to identify and manipulate UI in sample controls and applications.  
   
 <a name="Ensure_Programmatic_Events_are_Triggered_by_all_UI"></a>
 ### Ensure Programmatic Events Are Triggered by All UI Activities  
- Following this best practice allows assistive technologys to listen for changes in the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] and notify the user about these changes.  
+ Following this best practice allows assistive technologies to listen for changes in the UI and notify the user about these changes.  
   
 <a name="User_Settings"></a>
 ## User Settings  
@@ -55,13 +56,13 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
 <a name="Support_High_Contrast_and_all_System_Display_Attributes"></a>
 ### Support High Contrast and all System Display Attributes  
- Applications should not disrupt or disable user-selected, system-wide contrast settings, color selections, or other system-wide display settings and attributes. System-wide settings adopted by a user enhance the accessibility of applications, so they should not be disabled or disregarded by applications. Color should be used in their correct foreground-on-background combination to provide proper contrast. Unrelated colors should not be mixed, and colors should not be reversed.  
+ Applications should not disrupt or disable user-selected, system-wide contrast settings, color selections, or other system-wide display settings and attributes. System-wide settings adopted by a user enhance the accessibility of applications, so they should not be disabled or disregarded by applications. Color should be used in their correct foreground-on-background combination to provide proper contrast. Don't mix unrelated colors, and don't reverse colors.  
   
  Many users require specific high-contrast combinations, such as white text on a black background. Drawing these reversed, as black text on a white background causes the background to bleed over the foreground and can make reading difficult for some users.  
   
 <a name="Ensure_all_UI_Correctly_Scales_by_any_DPI_Setting"></a>
 ### Ensure All UI Correctly Scales by Any DPI Setting  
- Ensure that all [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] can correctly scale by any dots per inch (dpi) setting. Also, ensure that [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements fit in a screen of 1024 x 768 with 120 dots per inch (dpi).  
+ Ensure that all UI can correctly scale by any dots per inch (dpi) setting. Also, ensure that UI elements fit in a screen of 1024 x 768 with 120 dots per inch (dpi).  
   
 <a name="Navigation"></a>
 ## Navigation  
@@ -69,7 +70,7 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
 <a name="Provide_Keyboard_Interface_for_all_UI_Elements"></a>
 ### Provide Keyboard Interface for All UI Elements  
- Tab stops, especially when carefully planned, give users another way to navigate the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
+ Tab stops, especially when carefully planned, give users another way to navigate the UI.  
   
  Applications should provide the following keyboard interfaces:  
   
@@ -79,7 +80,7 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
 <a name="Show_the_Keyboard_Focus"></a>
 ### Show the Keyboard Focus  
- Users need to know which object has the keyboard focus so that they can anticipate the effect of their keystrokes. To highlight the keyboard focus, use colors, fonts, or graphics such as rectangles or magnification. To audibly highlight the keyboard focus, change the volume, pitch or tonal quality.  
+ Users need to know which object has the keyboard focus so that they can anticipate the effect of their keystrokes. To highlight the keyboard focus, use colors, fonts, or graphics such as rectangles or magnification. To audibly highlight the keyboard focus, change the volume, pitch, or tonal quality.  
   
  To avoid confusion, applications should hide all visual focus indicators and dim selections that are located in inactive windows (or panes).  
   
@@ -93,11 +94,11 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
 <a name="Support_Navigation_Standards_and_Powerful_Navigation"></a>
 ### Support Navigation Standards and Powerful Navigation Schemes  
- Different aspects of keyboard navigation provide different ways for users to navigate the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
+ Different aspects of keyboard navigation provide different ways for users to navigate the UI.  
   
  Applications should provide the following keyboard interfaces:  
   
-- shortcut keys and underlined access keys for all commands, menus and controls  
+- shortcut keys and underlined access keys for all commands, menus, and controls  
   
 - keyboard shortcuts to important links  
   
@@ -105,17 +106,17 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
 <a name="Do_not_let_Mouse_Location_Interfere_with_Keyboard"></a>
 ### Do Not Let Mouse Location Interfere with Keyboard Navigation  
- Mouse location should not interfere with keyboard navigation. For example, if the mouse is positioned someplace and the user is navigating with the keyboard, a mouse click should not happen unless initiated by the user.  
+ Mouse location should not interfere with keyboard navigation. For example, if the mouse is positioned some place and the user is navigating with the keyboard, a mouse click should not happen unless initiated by the user.  
   
 <a name="Multimodal_Interface"></a>
 ## Multimodal Interface  
- Best Practices in this section ensure that application [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] includes alternatives for visual elements.  
+ Best Practices in this section ensure that application UI includes alternatives for visual elements.  
   
 <a name="Provide_User_Selectable_Equivalents_for_Non_Text"></a>
 ### Provide User-Selectable Equivalents for Non-Text Elements  
  For each non-text element, provide a user-selectable equivalent for text, transcripts, or audio descriptions, such as alt text, captions, or visual feedback.  
   
- Non-text elements cover a wide range of [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements including: images, image map regions, animations, applets, frames, scripts, graphical buttons, sounds, stand-alone audio files and video. Non-text elements are important when they contain visual information, speech, or general audio information that the user needs access to in order to understand the content of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
+ Non-text elements cover a wide range of UI elements including: images, image map regions, animations, applets, frames, scripts, graphical buttons, sounds, stand-alone audio files, and video. Non-text elements are important when they contain visual information, speech, or general audio information that the user needs access to in order to understand the content of the UI.  
   
 <a name="Use_Color_but_also_Provide_Alternatives_to_Color"></a>
 ### Use Color but Also Provide Alternatives to Color  
@@ -123,7 +124,7 @@ ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
   
 <a name="Use_Standard_Input_APIs_with_Devices_Independent"></a>
 ### Use Standard Input APIs with Device-Independent Calls  
- Device-independent calls ensure keyboard and mouse feature equality, while providing assistive technology with needed information about the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)].  
+ Device-independent calls ensure keyboard and mouse feature equality, while providing assistive technology with needed information about the UI.  
   
 ## See also
 

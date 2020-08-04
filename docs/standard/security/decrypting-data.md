@@ -1,12 +1,13 @@
 ---
 title: "Decrypting Data"
-ms.date: "03/30/2017"
+description: Learn how to decrypt data in .NET, using a symmetric algorithm or an asymmetric algorithm.
+ms.date: 07/16/2020
 ms.technology: dotnet-standard
 dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "data [.NET Framework], decryption"
+  - "data [.NET], decryption"
   - "symmetric decryption"
   - "asymmetric decryption"
   - "decryption"
@@ -19,28 +20,26 @@ Decryption is the reverse operation of encryption. For secret-key encryption, yo
 
 ## Symmetric Decryption
 
-The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by the .NET Framework to decrypt data read from any managed stream object.
+The decryption of data encrypted with symmetric algorithms is similar to the process used to encrypt data with symmetric algorithms. The <xref:System.Security.Cryptography.CryptoStream> class is used with symmetric cryptography classes provided by .NET to decrypt data read from any managed stream object.
 
-The following example illustrates how to create a new instance of the <xref:System.Security.Cryptography.RijndaelManaged> class and use it to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the **RijndaelManaged** class. Next it creates a **CryptoStream** object and initializes it to the value of a managed stream called `myStream`. Next, the **CreateDecryptor** method from the **RijndaelManaged** class is passed the same key and IV that was used for encryption and is then passed to the **CryptoStream** constructor. Finally, the **CryptoStreamMode.Read** enumeration is passed to the **CryptoStream** constructor to specify read access to the stream.
+The following example illustrates how to create a new instance of the default implementation class for the <xref:System.Security.Cryptography.Aes> algorithm. The instance is used to perform decryption on a <xref:System.Security.Cryptography.CryptoStream> object. This example first creates a new instance of the **Aes** implementation class. Next it creates a **CryptoStream** object and initializes it to the value of a managed stream called `myStream`. Next, the **CreateDecryptor** method from the **Aes** class is passed the same key and IV that was used for encryption and is then passed to the **CryptoStream** constructor.
 
 ```vb
-Dim rmCrypto As New RijndaelManaged()
-Dim cryptStream As New CryptoStream(myStream, rmCrypto.CreateDecryptor(rmCrypto.Key, rmCrypto.IV), CryptoStreamMode.Read)
+Dim aes As Aes = Aes.Create()
+Dim cryptStream As New CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 ```
 
 ```csharp
-RijndaelManaged rmCrypto = new RijndaelManaged();
-CryptoStream cryptStream = new CryptoStream(myStream, rmCrypto.CreateDecryptor(Key, IV), CryptoStreamMode.Read);
+Aes aes = Aes.Create();
+CryptoStream cryptStream = new CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
 ```
 
-The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A <xref:System.Net.Sockets.TcpListener> object is created that initializes a network stream when a connection to the listening object is made. The network stream is then decrypted using the **CryptoStream** class and the **RijndaelManaged** class. This example assumes that the key and IV values have been either successfully transferred or previously agreed upon. It does not show the code needed to encrypt and transfer these values.
+The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A file stream object is created that reads a file named *TestData.txt*. The file stream is then decrypted using the **CryptoStream** class and the **Aes** class. This example specifies key and IV values that are used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It does not show the code needed to encrypt and transfer these values.
 
 ```vb
+Imports System
 Imports System.IO
-Imports System.Net
-Imports System.Net.Sockets
 Imports System.Security.Cryptography
-Imports System.Threading
 
 Module Module1
     Sub Main()
@@ -49,33 +48,16 @@ Module Module1
             Dim key As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
             Dim iv As Byte() = {&H1, &H2, &H3, &H4, &H5, &H6, &H7, &H8, &H9, &H10, &H11, &H12, &H13, &H14, &H15, &H16}
         Try
-            'Initialize a TCPListener on port 11000
-            'using the current IP address.
-            Dim tcpListen As New TcpListener(IPAddress.Any, 11000)
+            'Create a file stream.
+            Dim myStream As FileStream = new FileStream("TestData.txt", FileMode.Open)
 
-            'Start the listener.
-            tcpListen.Start()
-
-            'Check for a connection every five seconds.
-            While Not tcpListen.Pending()
-                Console.WriteLine("Still listening. Will try in 5 seconds.")
-
-                Thread.Sleep(5000)
-            End While
-
-            'Accept the client if one is found.
-            Dim tcp As TcpClient = tcpListen.AcceptTcpClient()
-
-            'Create a network stream from the connection.
-            Dim netStream As NetworkStream = tcp.GetStream()
-
-            'Create a new instance of the RijndaelManaged class
+            'Create a new instance of the default Aes implementation class
             'and decrypt the stream.
-            Dim rmCrypto As New RijndaelManaged()
+            Dim aes As Aes = Aes.Create()
 
-            'Create an instance of the CryptoStream class, pass it the NetworkStream, and decrypt
+            'Create an instance of the CryptoStream class, pass it the file stream, and decrypt
             'it with the Rijndael class using the key and IV.
-            Dim cryptStream As New CryptoStream(netStream, rmCrypto.CreateDecryptor(key, iv), CryptoStreamMode.Read)
+            Dim cryptStream As New CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read)
 
             'Read the stream.
             Dim sReader As New StreamReader(cryptStream)
@@ -85,11 +67,11 @@ Module Module1
 
             'Close the streams.
             sReader.Close()
-            netStream.Close()
-            tcp.Close()
+            myStream.Close()
             'Catch any exceptions.
         Catch
-            Console.WriteLine("The Listener Failed.")
+            Console.WriteLine("The decryption Failed.")
+            Throw
         End Try
     End Sub
 End Module
@@ -98,72 +80,52 @@ End Module
 ```csharp
 using System;
 using System.IO;
-using System.Net;
-using System.Net.Sockets;
 using System.Security.Cryptography;
-using System.Threading;
 
 class Class1
 {
-   static void Main(string[] args)
-   {
-      //The key and IV must be the same values that were used
-      //to encrypt the stream.
-      byte[] key = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};
-      byte[] iv = {0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16};
-      try
-      {
-         //Initialize a TCPListener on port 11000
-         //using the current IP address.
-         TcpListener tcpListen = new TcpListener(IPAddress.Any, 11000);
+    static void Main(string[] args)
+    {
+        //The key and IV must be the same values that were used
+        //to encrypt the stream.
+        byte[] key = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
+        byte[] iv = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
+        try
+        {
+            //Create a file stream.
+            FileStream myStream = new FileStream("TestData.txt", FileMode.Open);
 
-         //Start the listener.
-         tcpListen.Start();
+            //Create a new instance of the default Aes implementation class
+            Aes aes = Aes.Create();
 
-         //Check for a connection every five seconds.
-         while(!tcpListen.Pending())
-         {
-            Console.WriteLine("Still listening. Will try in 5 seconds.");
-            Thread.Sleep(5000);
-         }
+            //Create a CryptoStream, pass it the file stream, and decrypt
+            //it with the Aes class using the key and IV.
+            CryptoStream cryptStream = new CryptoStream(
+               myStream,
+               aes.CreateDecryptor(key, iv),
+               CryptoStreamMode.Read);
 
-         //Accept the client if one is found.
-         TcpClient tcp = tcpListen.AcceptTcpClient();
+            //Read the stream.
+            StreamReader sReader = new StreamReader(cryptStream);
 
-         //Create a network stream from the connection.
-         NetworkStream netStream = tcp.GetStream();
+            //Display the message.
+            Console.WriteLine("The decrypted original message: {0}", sReader.ReadToEnd());
 
-         //Create a new instance of the RijndaelManaged class
-         // and decrypt the stream.
-         RijndaelManaged rmCrypto = new RijndaelManaged();
-
-         //Create a CryptoStream, pass it the NetworkStream, and decrypt
-         //it with the Rijndael class using the key and IV.
-         CryptoStream cryptStream = new CryptoStream(netStream,
-            rmCrypto.CreateDecryptor(key, iv),
-            CryptoStreamMode.Read);
-
-         //Read the stream.
-         StreamReader sReader = new StreamReader(cryptStream);
-
-         //Display the message.
-         Console.WriteLine("The decrypted original message: {0}", sReader.ReadToEnd());
-
-         //Close the streams.
-         sReader.Close();
-         netStream.Close();
-         tcp.Close();
-      }
-      //Catch any exceptions.
-      catch
-      {
-         Console.WriteLine("The Listener Failed.");
-      }
-   }
+            //Close the streams.
+            sReader.Close();
+            myStream.Close();
+        }
+        //Catch any exceptions.
+        catch
+        {
+            Console.WriteLine("The decryption failed.");
+            throw;
+        }
+    }
 }
 ```
 
-For the previous sample to work, an encrypted connection must be made to the listener. The connection must use the same key, IV, and algorithm used in the listener. If such a connection is made, the message is decrypted and displayed to the console.
+The preceding example uses the same key, IV, and algorithm used in the symmetric encryption example for [Encrypting Data](encrypting-data.md). It decrypts the *TestData.txt* file that is created by that example and displays the original text on the console.
 
 ## Asymmetric Decryption
 
@@ -171,30 +133,30 @@ Typically, a party (party A) generates both a public and private key and stores 
 
 For information on how to store an asymmetric key in secure cryptographic key container and how to later retrieve the asymmetric key, see [How to: Store Asymmetric Keys in a Key Container](how-to-store-asymmetric-keys-in-a-key-container.md).
 
-The following example illustrates the decryption of two arrays of bytes that represent a symmetric key and IV. For information on how to extract the asymmetric public key from the <xref:System.Security.Cryptography.RSACryptoServiceProvider> object in a format that you can easily send to a third party, see [Encrypting Data](encrypting-data.md).
+The following example illustrates the decryption of two arrays of bytes that represent a symmetric key and IV. For information on how to extract the asymmetric public key from the <xref:System.Security.Cryptography.RSA> object in a format that you can easily send to a third party, see [Encrypting Data](encrypting-data.md).
 
 ```vb
-'Create a new instance of the RSACryptoServiceProvider class.
-Dim rsa As New RSACryptoServiceProvider()
+'Create a new instance of the RSA class.
+Dim rsa As RSA = RSA.Create()
 
 ' Export the public key information and send it to a third party.
 ' Wait for the third party to encrypt some data and send it back.
 
 'Decrypt the symmetric key and IV.
-symmetricKey = rsa.Decrypt(encryptedSymmetricKey, False)
-symmetricIV = rsa.Decrypt(encryptedSymmetricIV, False)
+symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.Pkcs1)
+symmetricIV = rsa.Decrypt(encryptedSymmetricIV, RSAEncryptionPadding.Pkcs1)
 ```
 
 ```csharp
-//Create a new instance of the RSACryptoServiceProvider class.
-RSACryptoServiceProvider rsa = new RSACryptoServiceProvider();
+//Create a new instance of the RSA class.
+RSA rsa = RSA.Create();
 
 // Export the public key information and send it to a third party.
 // Wait for the third party to encrypt some data and send it back.
 
 //Decrypt the symmetric key and IV.
-symmetricKey = rsa.Decrypt(encryptedSymmetricKey, false);
-symmetricIV = rsa.Decrypt(encryptedSymmetricIV , false);
+symmetricKey = rsa.Decrypt(encryptedSymmetricKey, RSAEncryptionPadding.Pkcs1);
+symmetricIV = rsa.Decrypt(encryptedSymmetricIV , RSAEncryptionPadding.Pkcs1);
 ```
 
 ## See also
@@ -202,3 +164,7 @@ symmetricIV = rsa.Decrypt(encryptedSymmetricIV , false);
 - [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md)
 - [Encrypting Data](encrypting-data.md)
 - [Cryptographic Services](cryptographic-services.md)
+- [Cryptography Model](cryptography-model.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
+- [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

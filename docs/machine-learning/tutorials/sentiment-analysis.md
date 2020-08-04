@@ -207,7 +207,7 @@ The [Fit()](xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer.Fit%28Microsof
 
 ## Evaluate the model
 
-After your model is trained, use your test data validate the model's performance.
+After your model is trained, use your test data to validate the model's performance.
 
 1. Create the `Evaluate()` method, just after `BuildAndTrainModel()`, with the following code:
 

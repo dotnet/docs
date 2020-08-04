@@ -288,7 +288,9 @@ Deeply nested values are formatted to a depth of 100.  In both cases `...` is us
 to elide some of the output.  For example,
 
 ```fsharp
-type Tree = Node of Tree * Tree | Tip
+type Tree =
+    | Tip
+    | Node of Tree * Tree
 
 let rec make n = if n = 0 then Tip else Node(Tip, make (n-1))
 

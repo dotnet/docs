@@ -164,7 +164,7 @@ Culture 1: 31.12.1999 00:00:00
 Culture 2: 12/31/1999 12:00:00 AM
 ```
 
-### `%A` formatting of structured values
+### Structured values
 
 When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. The is shown in the previous example.
 The structure of arrays is also used, including multi-dimensional arrays.  Single-dimensional arrays are shown with `[| ... |]` syntax. For example,

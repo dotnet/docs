@@ -260,7 +260,7 @@ is also revealed by using reflection. For example
 ```fsharp
 type internal R =
     { X : int list; Y : string list }
-    override x.ToString() = "R"
+    override _.ToString() = "R"
 
 let internal data = { X = [ 1;2;3 ]; Y = ["one"; "two"; "three"] }
 

@@ -51,7 +51,6 @@ The following people contributed to the .NET docs during this period. Thank you!
 - [NextTurn](https://github.com/NextTurn) - Next Turn (20)
 - [pkulikov](https://github.com/pkulikov) - Petr Kulikov (10)
 - [imba-tjd](https://github.com/imba-tjd) - 谭九鼎 (2)
-- [LauraKellerGitHub](https://github.com/LauraKellerGitHub) - Laura Keller (2)
 - [tonytins](https://github.com/tonytins) - Anthony Leland (2)
 - [BiP00](https://github.com/BiP00) - Ben (1)
 - [danespinosa](https://github.com/danespinosa) (1)

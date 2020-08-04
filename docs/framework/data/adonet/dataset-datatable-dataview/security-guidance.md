@@ -28,13 +28,13 @@ On all supported versions of .NET Framework, .NET Core, and .NET, `DataSet` and 
 
 If the incoming XML data contains an object whose type is not in this list:
 
-* An exception is thrown with the following message and stack trace.<br>
-    Error Message:<br>
-       System.InvalidOperationException : Type '<Type Name>, Version=<n.n.n.n>, Culture=<culture>, PublicKeyToken=<token value>' is not allowed here. See https://go.microsoft.com/fwlink/?linkid=2132227 for more details.<br>
-      Stack Trace:<br>
-       at System.Data.TypeLimiter.EnsureTypeIsAllowed(Type type, TypeLimiter capturedLimiter)<br>
-       at System.Data.DataColumn.UpdateColumnType(Type type, StorageType typeCode)<br>
-       at System.Data.DataColumn.set_DataType(Type value)<br>
+* An exception is thrown with the following message and stack trace.  
+    Error Message:  
+       System.InvalidOperationException : Type '<Type Name>, Version=<n.n.n.n>, Culture=<culture>, PublicKeyToken=<token value>' is not allowed here. See https://go.microsoft.com/fwlink/?linkid=2132227 for more details.  
+      Stack Trace:  
+       at System.Data.TypeLimiter.EnsureTypeIsAllowed(Type type, TypeLimiter capturedLimiter)  
+       at System.Data.DataColumn.UpdateColumnType(Type type, StorageType typeCode)  
+       at System.Data.DataColumn.set_DataType(Type value)  
     
 * The deserialization operation fails.
 

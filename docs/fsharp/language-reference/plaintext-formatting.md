@@ -96,14 +96,14 @@ Valid flags are:
 
 | Flag   | Effect        | Remarks                      |
 |:-------------------|:---------------|:-----------------------------|
-| `0`  | add zeros instead of spaces to make up the required width |    |
-| `-` |  left justify the result within the width specified  |   |
-| `+`  | add a `+` character if the number is positive (to match a `-` sign for negatives) |   |
-| a space character | add an extra space if the number is positive (to match a '-' sign for negatives) |
+| `0`  | Add zeros instead of spaces to make up the required width |    |
+| `-` |  Left justify the result within the specified width |   |
+| `+`  | Add a `+` character if the number is positive (to match a `-` sign for negatives) |   |
+| space character | Add an extra space if the number is positive (to match a '-' sign for negatives) |
 
 The printf `#` flag is invalid and a compile-time error will be reported if it is used.
 
-Values are formatted using invariant culture and culture settings are irrelevant to `printf` formatting except
+Values are formatted using invariant culture. Culture settings are irrelevant to `printf` formatting except
 when they affect the results of `%O` and `%A` formatting. For more information, see [structured plain text formatting](plaintext-formatting.md).
 
 ## `%A` formatting
@@ -166,7 +166,7 @@ Culture 2: 12/31/1999 12:00:00 AM
 
 ### `%A` formatting of structured values
 
-When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. The is shown in the example above.
+When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. The is shown in the previous example.
 The structure of arrays is also used, including multi-dimensional arrays.  Single-dimensional arrays are shown with `[| ... |]` syntax. For example,
 
 ```fsharp
@@ -181,7 +181,7 @@ produces
   (17, 289); (18, 324); (19, 361); (20, 400)|]
 ```
 
-A default print width of 80 is used.  This can be customized by using a print width in the format specifier. For example,
+The default print width is 80.  This width can be customized by using a print width in the format specifier. For example,
 
 ```fsharp
 printfn "%10A" [| for i in 1 .. 5 -> (i, i*i) |]
@@ -226,7 +226,7 @@ def"; "abc
 def"|]
 ```
 
-A depth limit of 4 is used for sequence (IEnumerable) values, which are shown as `seq { ...}`, and a depth limit of 100 is used for list and array values.
+A depth limit of 4 is used for sequence (`IEnumerable`) values, which are shown as `seq { ...}`. A depth limit of 100 is used for list and array values.
 For example,
 
 ```fsharp
@@ -254,7 +254,7 @@ produces
   Y = ["one"; "two"; "three"] }
 ```
 
-If `%+A` is used then the private structure of records and unions
+If `%+A` is used, then the private structure of records and unions
 is also revealed by using reflection. For example
 
 ```fsharp
@@ -295,7 +295,7 @@ let rec make n = if n = 0 then Tip else Node(Tip, make (n-1))
 printfn "%A" (make 1000)
 ```
 
-produces a large output with some parts elided
+produces a large output with some parts elided:
 
 ```console
 Node(Tip, Node(Tip, ....Node (..., ...)...))
@@ -323,7 +323,7 @@ Lazy values are printed as `Value is not created` or equivalent text when the va
 Null values are printed as `null` unless the static type of the value is determined to be a union type where `null` is
 a permitted represenation.
 
-F# function values are printed as their internally generated closure name, for example `<fun:it@43-7>`.
+F# function values are printed as their internally generated closure name, for example, `<fun:it@43-7>`.
 
 ### Customize plain text formatting with `StructuredFormatDisplayAttribute`
 
@@ -350,11 +350,11 @@ Counts([0; 1; 2; 3;
 
 ### Customize plain text formatting by overriding `ToString`
 
-The default implementation of `x.ToString()` is observable in F# programming. Often the default results
-are not suitable for use in either programmer-facing information display nor user output, and as a result it
+The default implementation of `x.ToString()` is observable in F# programming. Often, the default results
+aren't suitable for use in either programmer-facing information display or user output, and as a result it
 is common to override the default implementation.  
 
-By default F# record and union types override the implementation of `x.ToString()` with an implementation that
+By default, F# record and union types override the implementation of `x.ToString()` with an implementation that
 uses `sprintf "%+A"`.  For example,
 
 ```fsharp
@@ -411,10 +411,10 @@ Now ToString gives:
 [MyClassType([1; 2; 3; 4; 5]); MyClassType([1; 2; 3; 4; 5])]
 ```
 
-## F# Interactive Structured Printing
+## F# Interactive structured printing
 
 F# Interactive (`dotnet fsi`) uses an extended version of structured plain text formatting to
-report values and allows additional customizability. See [F# Interactive](fsharp-interactive-options.md)
+report values and allows additional customizability. For more information, see [F# Interactive](fsharp-interactive-options.md).
 
 ## Customize debug displays
 

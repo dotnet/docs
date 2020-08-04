@@ -292,7 +292,11 @@ type Tree =
     | Tip
     | Node of Tree * Tree
 
-let rec make n = if n = 0 then Tip else Node(Tip, make (n-1))
+let rec make n =
+    if n = 0 then
+        Tip
+    else
+        Node(Tip, make (n-1))
 
 printfn "%A" (make 1000)
 ```

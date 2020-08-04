@@ -110,7 +110,7 @@ when they affect the results of `%O` and `%A` formatting. For more information, 
 
 The `%A` format specifier is used to format values in a human-readable way, and can also be useful for reporting diagnostic information.
 
-### `%A` formatting of primitive values
+### Primitive values
 
 When formatting plain text using the `%A` specifier, F# numeric values are formatted
 with their suffix and invariant culture. Floating point values are formatted using

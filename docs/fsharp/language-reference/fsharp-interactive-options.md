@@ -104,12 +104,12 @@ open System
 fsi.AddPrinter<DateTime>(fun dt -> dt.ToString("s"))
 
 type DateAndLabel =
-  { Date : DateTime
-    Label  : string  }
+    { Date: DateTime
+      Label: string  }
 
 let newYearsDay1999 =
-  { Date = DateTime(1999, 1, 1)
-    Label = "New Year" }
+    { Date = DateTime(1999, 1, 1)
+      Label = "New Year" }
 ```
 
 If you execute the example in F# Interactive, it outputs based on the formatting option set. In this case, it affects the formatting of date and time:

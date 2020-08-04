@@ -82,5 +82,6 @@ kubectl get nodes
 
 **Figure 4-20**. `kubectl get nodes` command result.
 
-> [!div class="step-by-step"][previous](orchestrate-high-scalability-availability.md)
+> [!div class="step-by-step"]
+> [Previous](orchestrate-high-scalability-availability.md)
 > [Next](docker-apps-development-environment.md)

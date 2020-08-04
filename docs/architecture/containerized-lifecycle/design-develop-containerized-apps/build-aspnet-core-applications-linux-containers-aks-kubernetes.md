@@ -423,5 +423,6 @@ Now you have your ASP.NET Core application, running in Linux containers, and dep
 > [!NOTE]
 > For more information on deployment with Kubernetes see: <https://kubernetes.io/docs/reference/kubectl/cheatsheet/>
 
-> [!div class="step-by-step"][previous](set-up-windows-containers-with-powershell.md)
+> [!div class="step-by-step"]
+> [Previous](set-up-windows-containers-with-powershell.md)
 > [Next](../docker-devops-workflow/index.md)

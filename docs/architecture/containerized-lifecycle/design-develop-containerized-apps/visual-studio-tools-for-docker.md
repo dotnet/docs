@@ -83,5 +83,6 @@ The following table might help you decide how to set these options.
 >
 > Deploy an ASP.NET container to a container registry using Visual Studio: <https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker>
 
-> [!div class="step-by-step"][previous](docker-apps-inner-loop-workflow.md)
+> [!div class="step-by-step"]
+> [Previous](docker-apps-inner-loop-workflow.md)
 > [Next](set-up-windows-containers-with-powershell.md)

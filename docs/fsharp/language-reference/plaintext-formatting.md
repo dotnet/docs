@@ -400,8 +400,8 @@ Adding an override for `ToString` can give better formatting.
 
 ```fsharp
 type MyClassType(clicks: int list) =
-   member x.Clicks = clicks
-   override x.ToString() = sprintf "MyClassType(%0A)" clicks
+   member _.Clicks = clicks
+   override _.ToString() = sprintf "MyClassType(%0A)" clicks
 
 let data = [ MyClassType([1..5]); MyClassType([1..5]) ]
 printfn "Now structured print gives this:\n%A" data

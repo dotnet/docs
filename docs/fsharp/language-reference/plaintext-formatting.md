@@ -380,7 +380,7 @@ name of the type. For example,
 
 ```fsharp
 type MyClassType(clicks: int list) =
-   member x.Clicks = clicks
+   member _.Clicks = clicks
 
 let data = [ MyClassType([1..5]); MyClassType([1..5]) ]
 printfn "Default structured print gives this:\n%A" data

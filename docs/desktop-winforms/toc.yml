@@ -89,8 +89,6 @@ items:
     href: input-keyboard/overview.md
   - name: Using keyboard events
     href: input-keyboard/events.md
-  - name: Simulate keyboard events
-    href: input-keyboard/simulate-events.md
   - name: Input validation
     href: input-keyboard/validation.md
   - name: Common tasks
@@ -103,6 +101,8 @@ items:
       href: input-keyboard/how-to-handle-forms.md
     - name: Handle input at the control level
       href: input-keyboard/how-to-handle-controls.md
+    - name: Simulate keyboard events
+      href: input-keyboard/how-to-simulate-events.md
 - name: User input - Mouse
   items:
   - name: Overview
@@ -110,8 +110,6 @@ items:
   - name: Using mouse events
     href: file.md
   - name: Drag-and-drop functionality
-    href: file.md
-  - name: Simulate mouse events
     href: file.md
   - name: Input validation
     href: file.md
@@ -124,6 +122,8 @@ items:
     - name: Capture the mouse pointer
       href: file.md
     - name: Handle input at the control level
+      href: file.md
+    - name: Simulate mouse events
       href: file.md
 - name: Dialog boxes and popups
   items:

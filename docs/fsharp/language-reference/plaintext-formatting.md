@@ -360,7 +360,7 @@ The default implementation of `ToString` is observable in F# programming. Often,
 aren't suitable for use in either programmer-facing information display or user output, and as a result it
 is common to override the default implementation.  
 
-By default, F# record and union types override the implementation of `x.ToString()` with an implementation that
+By default, F# record and union types override the implementation of `ToString` with an implementation that
 uses `sprintf "%+A"`.  For example,
 
 ```fsharp

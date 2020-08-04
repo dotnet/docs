@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 // Using a string as an indexer value
 class DayCollection

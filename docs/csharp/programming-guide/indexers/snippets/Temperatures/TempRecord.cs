@@ -1,4 +1,4 @@
-public class TempRecord
+﻿public class TempRecord
 {
     // Array of temperature values
     float[] temps = new float[10]

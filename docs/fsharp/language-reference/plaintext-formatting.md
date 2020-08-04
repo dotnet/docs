@@ -333,7 +333,7 @@ F# function values are printed as their internally generated closure name, for e
 
 ### Customize plain text formatting with `StructuredFormatDisplay`
 
-When using the `%A` specifier, the presence of `StructuredFormatDisplayAttribute` on type declarations is respected.  This can
+When using the `%A` specifier, the presence of the `StructuredFormatDisplay` attribute on type declarations is respected.  This can
 be used to specify surrogate text and property to display a value. For example:
 
 ```fsharp

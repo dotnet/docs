@@ -11,11 +11,11 @@ ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
 
 The `Main` method can return `void`:
 
- [!code-csharp[csProgGuideMain#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
+ [!code-csharp[csProgGuideMain#12](~../../../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
 
 It can also return an `int`:
 
- [!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
+ [!code-csharp[csProgGuideMain#13](~../../../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
 
 If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main`, the exit code will be implicitly `0`. The following example shows how the return value from `Main` can be accessed.
 
@@ -25,7 +25,7 @@ This example uses [.NET Core](../../../core/index.yml) command-line tools. If yo
 
 Modify the `Main` method in *program.cs* as follows:
 
- [!code-csharp[csProgGuideMain#14](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#14)]
+ [!code-csharp[csProgGuideMain#14](~../../../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#14)]
 
 When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or `$LastExitCode` from powershell.
 
@@ -75,7 +75,7 @@ private static async Task<int> AsyncConsoleWork()
 
 Now, this can be replaced by:
 
-[!code-csharp[AsyncMain](../../../../samples/snippets/csharp/main-arguments/program.cs#AsyncMain)]
+[!code-csharp[AsyncMain](../../../../samples/snippets/csharp/main-arguments/Program.cs#AsyncMain)]
 
 The advantage of the new syntax is that the compiler always generates the correct code.
 

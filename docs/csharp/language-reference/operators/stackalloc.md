@@ -66,7 +66,7 @@ For more information, see the [Stack allocation](~/_csharplang/spec/unsafe-code.
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - [Pointer related operators](pointer-related-operators.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Memory and span-related types](../../../standard/memory-and-spans/index.md)

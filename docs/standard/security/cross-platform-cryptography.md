@@ -363,3 +363,5 @@ macOS doesn't support a user-initiated timeout on CRL (Certificate Revocation Li
 
 * [.NET Cryptography Model](cryptography-model.md)
 * [.NET Cryptographic Services](cryptographic-services.md)
+* [Timing vulnerabilities with CBC-mode symmetric decryption using padding](vulnerabilities-cbc-mode.md)
+* [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

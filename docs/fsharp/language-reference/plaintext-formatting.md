@@ -396,7 +396,7 @@ Default ToString gives:
 [MyClassType; MyClassType]
 ```
 
-Adding an override for `ToString()` can give better formatting.
+Adding an override for `ToString` can give better formatting.
 
 ```fsharp
 type MyClassType(clicks: int list) =

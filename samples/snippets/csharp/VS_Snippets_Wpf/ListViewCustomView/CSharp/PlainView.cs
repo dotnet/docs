@@ -8,9 +8,9 @@ namespace SDKSample
 {
     //<SnippetPlainView>
     public class PlainView : ViewBase
-    {    
+    {
 
-      public static readonly DependencyProperty 
+      public static readonly DependencyProperty
         ItemContainerStyleProperty =
         ItemsControl.ItemContainerStyleProperty.AddOwner(typeof(PlainView));
 
@@ -34,7 +34,7 @@ namespace SDKSample
 
       public double ItemWidth
       {
-          get { return (double)GetValue(ItemWidthProperty); }           
+          get { return (double)GetValue(ItemWidthProperty); }
           set { SetValue(ItemWidthProperty, value); }
       }
 
@@ -49,11 +49,11 @@ namespace SDKSample
 
       protected override object DefaultStyleKey
       {
-          get 
-          { 
-            return new ComponentResourceKey(GetType(), "myPlainViewDSK"); 
+          get
+          {
+            return new ComponentResourceKey(GetType(), "myPlainViewDSK");
           }
       }
     }
-//</SnippetPlainView> 
+//</SnippetPlainView>
     }

@@ -25,7 +25,7 @@ It is important to test the release builds of your Universal Windows Platform ap
 > [!NOTE]
 > You can control whether the debug and release builds are compiled with the .NET Native tool chain by checking or unchecking the **Compile with .NET Native tool chain** box.   Note, however, that the Windows Store will always compile the production version of your app with the .NET Native tool chain.  
   
-<a name="Messages"></a>   
+<a name="Messages"></a>
 ## Runtime exception messages  
  To minimize application executable size, .NET Native does not include the full text of exception messages. As a result, runtime exceptions thrown in release builds may not display the full text of exception messages. Instead, the text may consist of a substring along with a link to follow for more information. For example, the exception information may appear as:  
   
@@ -45,7 +45,7 @@ Exception thrown: 'System.AggregateException' in NativeApp.exe.
 Additional information: Value does not fall within the expected range.  
 ```  
   
-<a name="CallStack"></a>   
+<a name="CallStack"></a>
 ## Runtime call stack  
  Because of inlining and other optimizations, the call stack displayed by an app compiled by the .NET Native tool chain may not help you to  clearly identify the path to a runtime exception.  
   

@@ -22,7 +22,7 @@ namespace WindowsApplication10
         private ToolStripMenuItem rearrangeButtonsToolStripMenuItem;
         private ToolStripMenuItem selectIconsToolStripMenuItem;
         private ToolStrip toolStrip1;
-    
+
         public Form1()
         {
             InitializeComponent();
@@ -53,7 +53,7 @@ namespace WindowsApplication10
             this.contextMenuStrip2.SuspendLayout();
             this.SuspendLayout();
             //
-            // <Snippet2> 
+            // <Snippet2>
             // Associate contextMenuStrip2 with toolStrip1.
             // toolStrip1 property settings follow.
             //
@@ -68,70 +68,70 @@ namespace WindowsApplication10
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // </Snippet2>
-            // 
+            //
             // toolStripButton1
-            // 
+            //
             this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Text = "toolStripButton1";
-            // 
+            //
             // toolStripButton2
-            // 
+            //
             this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
             this.toolStripButton2.Text = "toolStripButton2";
-            // 
+            //
             // toolStripButton3
-            // 
+            //
             this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
             this.toolStripButton3.Text = "toolStripButton3";
-            // 
+            //
             // contextMenuStrip1
-            // 
+            //
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem1,
             this.toolStripMenuItem2});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.contextMenuStrip1.Size = new System.Drawing.Size(131, 48);
-            // 
+            //
             // contextMenuStrip2
-            // 
+            //
             this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.rearrangeButtonsToolStripMenuItem,
             this.selectIconsToolStripMenuItem});
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.contextMenuStrip2.Size = new System.Drawing.Size(162, 48);
-            // 
+            //
             // toolStripMenuItem1
-            // 
+            //
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Text = "&Resize";
-            // 
+            //
             // toolStripMenuItem2
-            // 
+            //
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Text = "&Keep on Top";
-            // 
+            //
             // rearrangeButtonsToolStripMenuItem
-            // 
+            //
             this.rearrangeButtonsToolStripMenuItem.Name = "rearrangeButtonsToolStripMenuItem";
             this.rearrangeButtonsToolStripMenuItem.Text = "R&earrange Buttons";
-            // 
+            //
             // selectIconsToolStripMenuItem
-            // 
+            //
             this.selectIconsToolStripMenuItem.Name = "selectIconsToolStripMenuItem";
             this.selectIconsToolStripMenuItem.Text = "&Select Icons";
-            // 
-            // <Snippet3> 
+            //
+            // <Snippet3>
             // Associate contextMenuStrip1 with Form1.
             // Form1 property settings follow.
             //

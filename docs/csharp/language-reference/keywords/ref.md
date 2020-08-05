@@ -1,6 +1,6 @@
 ---
 title: "ref keyword - C# Reference"
-ms.date: 03/26/2019
+ms.date: 04/21/2020
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
@@ -15,11 +15,11 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 - In a method signature and in a method call, to pass an argument to a method by reference. For more information, see [Passing an argument by reference](#passing-an-argument-by-reference).
 - In a method signature, to return a value to the caller by reference. For more information, see [Reference return values](#reference-return-values).
 - In a member body, to indicate that a reference return value is stored locally as a reference that the caller intends to modify or, in general, a local variable accesses another value by reference. For more information, see [Ref locals](#ref-locals).
-- In a `struct` declaration to declare a `ref struct` or a `readonly ref struct`. For more information, see [ref struct types](#ref-struct-types).
+- In a `struct` declaration to declare a `ref struct` or a `readonly ref struct`. For more information, see the [`ref` struct](../builtin-types/struct.md#ref-struct) section of the [Structure types](../builtin-types/struct.md) article.
 
 ## Passing an argument by reference
 
-When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.
+When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller's local variable or the array element now refers to the new object when the method returns.
 
 > [!NOTE]
 > Do not confuse the concept of passing by reference with the concept of reference types. The two concepts are not the same. A method parameter can be modified by `ref` regardless of whether it is a value type or a reference type. There is no boxing of a value type when it is passed by reference.  
@@ -35,7 +35,7 @@ Members of a class can't have signatures that differ only by `ref`, `in`, or `ou
 ```csharp
 class CS0663_Example
 {
-    // Compiler error CS0663: "Cannot define overloaded 
+    // Compiler error CS0663: "Cannot define overloaded
     // methods that differ only on ref and out".
     public void SampleMethod(out int i) { }
     public void SampleMethod(ref int i) { }
@@ -53,7 +53,13 @@ However, methods can be overloaded when one method has a `ref`, `in`, or `out` p
  You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:  
   
 - Async methods, which you define by using the [async](async.md) modifier.  
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+
+In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
+
+- The `out` keyword cannot be used on the first argument of an extension method.
+- The `ref` keyword cannot be used on the first argument of an extension method when the argument is not a struct, or a generic type not constrained to be a struct.
+- The `in` keyword cannot be used unless the first argument is a struct. The `in` keyword cannot be used on any generic type, even when constrained to be a struct.
 
 ## Passing an argument by reference: An example
 
@@ -65,7 +71,7 @@ For more information about how to pass reference types by value and by reference
   
 ## Reference return values
 
-Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object that contains the method.
+Reference return values (or ref returns) are values that a method returns by reference to the caller. That is, the caller can modify the value returned by a method, and that change is reflected in the state of the object in the calling method.
 
 A reference return value is defined by using the `ref` keyword:
 
@@ -83,13 +89,17 @@ return ref DecimalArray[0];
 
 In order for the caller to modify the object's state, the reference return value must be stored to a variable that is explicitly defined as a [ref local](#ref-locals).
 
+Here is a more complete ref return example, showing both the method signature and method body.
+
+[!code-csharp[FindReturningRef](~/samples/snippets/csharp/new-in-7/MatrixSearch.cs#FindReturningRef "Find returning by reference")]
+
 The called method may also declare the return value as `ref readonly` to return the value by reference, and enforce that the calling code cannot modify the returned value. The calling method can avoid copying the returned valued by storing the value in a local [ref readonly](#ref-readonly-locals) variable.
 
 For an example, see [A ref returns and ref locals example](#a-ref-returns-and-ref-locals-example).
 
 ## Ref locals
 
-A ref local variable is used to refer to values returned using `return ref`. A ref local variable cannot be initialized to a non-ref return value. In other words, the right hand side of the initialization must be a reference. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
+A ref local variable is used to refer to values returned using `return ref`. A ref local variable cannot be initialized to a non-ref return value. In other words, the right-hand side of the initialization must be a reference. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
 
 You define a ref local by using the `ref` keyword before the variable declaration, as well as immediately before the call to the method that returns the value by reference.
 
@@ -105,7 +115,7 @@ You can access a value by reference in the same way. In some cases, accessing a 
 ref VeryLargeStruct reflocal = ref veryLargeStruct;
 ```
 
-Note that in both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
+In both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
 
 Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or ref readonly local variable. For more information, see the [foreach statement](foreach-in.md) article.
 
@@ -113,7 +123,7 @@ Also beginning with C# 7.3, you can reassign a ref local or ref readonly local v
 
 ## Ref readonly locals
 
-A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
+A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified.
 
 ## A ref returns and ref locals example
 
@@ -124,24 +134,6 @@ The following example defines a `Book` class that has two <xref:System.String> f
 When the caller stores the value returned by the `GetBookByTitle` method as a ref local, changes that the caller makes to the return value are reflected in the `BookCollection` object, as the following example shows.
 
 [!code-csharp[csrefKeywordsMethodParams#6](~/samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/RefParameterModifier.cs#5)]
-
-## Ref struct types
-
-Adding the `ref` modifier to a `struct` declaration defines that instances of that type must be stack allocated. In other words, instances of these types can never be created on the
-heap as a member of another class. The primary motivation for this feature was <xref:System.Span%601> and related structures.
-
-The goal of keeping a `ref struct` type as a stack-allocated variable introduces several rules that the compiler enforces for all `ref struct` types.
-
-- You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
-- `ref struct` types cannot implement interfaces.
-- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field. 
-- You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601> or `Task`-like types.
-- You cannot declare `ref struct` local variables in iterators.
-- You cannot capture `ref struct` variables in lambda expressions or local functions.
-
-These restrictions ensure you don't accidentally use a `ref struct` in a manner that could promote it to the managed heap.
-
-You can combine modifiers to declare a struct as `readonly ref`. A `readonly ref struct` combines the benefits and restrictions of `ref struct` and `readonly struct` declarations.
 
 ## C# language specification
 

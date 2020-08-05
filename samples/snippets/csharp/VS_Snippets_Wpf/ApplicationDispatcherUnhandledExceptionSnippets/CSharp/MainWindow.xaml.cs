@@ -23,7 +23,7 @@ namespace SDKSample
 
         void raiseUnecoverableException_Click(object sender, RoutedEventArgs e)
         {
-            throw new DivideByZeroException("Unrecoverable Exception"); 
+            throw new DivideByZeroException("Unrecoverable Exception");
         }
     }
 }

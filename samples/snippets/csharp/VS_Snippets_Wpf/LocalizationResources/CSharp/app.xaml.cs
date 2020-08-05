@@ -17,7 +17,7 @@
                 Window Mywindow = new Window();
                 Mywindow.Width =(500);
                 Mywindow.Height =(420);
-                ResourceManager rm = new ResourceManager 
+                ResourceManager rm = new ResourceManager
                    ("MySampleApp.data.stringtable", Assembly.GetExecutingAssembly());
                 Mywindow.Title = rm.GetString("Title");
                 FrameworkElement root;

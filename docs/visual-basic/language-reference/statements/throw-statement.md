@@ -46,5 +46,5 @@ The following code uses the `Throw` statement to throw an exception:
 
 ## See also
 
-- [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md)
-- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)
+- [Try...Catch...Finally Statement](try-catch-finally-statement.md)
+- [On Error Statement](on-error-statement.md)

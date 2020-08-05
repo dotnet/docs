@@ -30,7 +30,7 @@ When using the type pattern to perform pattern matching, `is` tests whether an e
    expr is type varname
 ```
 
-Where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`. 
+Where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`.
 
 The `is` expression is `true` if *expr* isn't `null`, and any of the following is true:
 
@@ -106,7 +106,7 @@ A pattern match with the `var` pattern always succeeds. Its syntax is:
    expr is var varname
 ```
 
-Where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a variable of the same type as the compile-time type of *expr*. 
+Where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a variable of the same type as the compile-time type of *expr*.
 
 If *expr* evaluates to `null`, the `is` expression produces `true` and assigns `null` to *varname*. The var pattern is one of the few uses of `is` that produces `true` for a `null` value.
 

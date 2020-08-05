@@ -5,24 +5,24 @@ using System.Text.RegularExpressions;
 public class Example
 {
    static string pattern;
-   
+
    public static void Main()
    {
-      string input = "aa aaaa aaaaaa "; 
+      string input = "aa aaaa aaaaaa ";
       pattern = @"((a+)(\1) ?)+";
-      
+
       // Match input using canonical matching.
       AnalyzeMatch(Regex.Match(input, pattern));
-      
+
       // Match input using ECMAScript.
       AnalyzeMatch(Regex.Match(input, pattern, RegexOptions.ECMAScript));
-   }   
-   
+   }
+
    private static void AnalyzeMatch(Match m)
    {
       if (m.Success)
       {
-         Console.WriteLine("'{0}' matches {1} at position {2}.",  
+         Console.WriteLine("'{0}' matches {1} at position {2}.",
                            pattern, m.Value, m.Index);
          int grpCtr = 0;
          foreach (Group grp in m.Groups)
@@ -40,13 +40,13 @@ public class Example
       else
       {
          Console.WriteLine("No match found.");
-      }   
+      }
       Console.WriteLine();
    }
 }
 // The example displays the following output:
 //    No match found.
-//    
+//
 //    '((a+)(\1) ?)+' matches aa aaaa aaaaaa  at position 0.
 //       0: 'aa aaaa aaaaaa '
 //          0: 'aa aaaa aaaaaa '

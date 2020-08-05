@@ -14,7 +14,7 @@ Represents a collection of queries that are used to track the handling of faults
 &nbsp;&nbsp;&nbsp;&nbsp;[**\<tracking>**](tracking.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<trackingProfile>**](trackingprofile.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<workflow>**](workflow.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<faultPropagationQueries>** 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<faultPropagationQueries>**
   
 ## Syntax  
   
@@ -23,7 +23,7 @@ Represents a collection of queries that are used to track the handling of faults
   <trackingProfile name="Name">
     <workflow>
       <faultPropagationQueries>
-        <faultPropagationQuery activityName="String" 
+        <faultPropagationQuery activityName="String"
                                faultHandlerActivityName="String" />
       </faultPropagationQueries>
     </workflow>

@@ -170,7 +170,7 @@ namespace GDIPlusPort
             }
             e.Graphics.DrawString(paramInfo.ToString(), this.Font, Brushes.Red, 10.0F, 10.0F);
         }
-        
+
         //<snippet6>
         private ImageCodecInfo GetEncoder(ImageFormat format)
         {
@@ -183,7 +183,7 @@ namespace GDIPlusPort
                     return codec;
                 }
             }
-            
+
             return null;
         }
         //</snippet6>
@@ -229,13 +229,13 @@ namespace GDIPlusPort
             bmp1.Save(@"c:\TestPhotoQualityZero.jpg", jpgEncoder, myEncoderParameters);
         }
         //</snippet8>
-       
+
         private void Form1_Load(object sender, EventArgs e)
         {
             //SaveBmpAsPng();
         }
 
-        private void Form1_Paint(object sender, PaintEventArgs e) 
+        private void Form1_Paint(object sender, PaintEventArgs e)
         {
             GetSupportedParameters(e);
             SaveBmpAsPNG();

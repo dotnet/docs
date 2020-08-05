@@ -1,5 +1,6 @@
 ---
 title: "Asynchronous Client Socket Example"
+description: This example .NET Framework program creates a client that connects to a server, using an asynchronous socket. It sends a string and displays a result.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -102,7 +103,7 @@ Public Class AsynchronousClient
   
     Private Shared Sub ReceiveCallback(ByVal ar As IAsyncResult)  
   
-        ' Retrieve the state object and the client socket   
+        ' Retrieve the state object and the client socket
         ' from the asynchronous state object.  
         Dim state As StateObject = CType(ar.AsyncState, StateObject)  
         Dim client As Socket = state.workSocket  
@@ -172,11 +173,11 @@ public class AsynchronousClient {
     private const int port = 11000;  
   
     // ManualResetEvent instances signal completion.  
-    private static ManualResetEvent connectDone =   
+    private static ManualResetEvent connectDone =
         new ManualResetEvent(false);  
-    private static ManualResetEvent sendDone =   
+    private static ManualResetEvent sendDone =
         new ManualResetEvent(false);  
-    private static ManualResetEvent receiveDone =   
+    private static ManualResetEvent receiveDone =
         new ManualResetEvent(false);  
   
     // The response from the remote device.  
@@ -186,7 +187,7 @@ public class AsynchronousClient {
         // Connect to a remote device.  
         try {  
             // Establish the remote endpoint for the socket.  
-            // The name of the   
+            // The name of the
             // remote device is "host.contoso.com".  
             IPHostEntry ipHostInfo = Dns.GetHostEntry("host.contoso.com");  
             IPAddress ipAddress = ipHostInfo.AddressList[0];  
@@ -197,7 +198,7 @@ public class AsynchronousClient {
                 SocketType.Stream, ProtocolType.Tcp);  
   
             // Connect to the remote endpoint.  
-            client.BeginConnect( remoteEP,   
+            client.BeginConnect( remoteEP,
                 new AsyncCallback(ConnectCallback), client);  
             connectDone.WaitOne();  
   
@@ -255,7 +256,7 @@ public class AsynchronousClient {
   
     private static void ReceiveCallback( IAsyncResult ar ) {  
         try {  
-            // Retrieve the state object and the client socket   
+            // Retrieve the state object and the client socket
             // from the asynchronous state object.  
             StateObject state = (StateObject) ar.AsyncState;  
             Socket client = state.workSocket;  

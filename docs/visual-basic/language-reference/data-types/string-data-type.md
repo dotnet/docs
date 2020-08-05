@@ -65,7 +65,7 @@ S = Microsoft.VisualBasic.Left(S, 4)
   
  A string created by another component might be padded with leading or trailing spaces. If you receive such a string, you can use the <xref:Microsoft.VisualBasic.Strings.Trim%2A>, <xref:Microsoft.VisualBasic.Strings.LTrim%2A>, and <xref:Microsoft.VisualBasic.Strings.RTrim%2A> functions to remove these spaces.  
   
- For more information about string manipulations, see [Strings](../../../visual-basic/programming-guide/language-features/strings/index.md).  
+ For more information about string manipulations, see [Strings](../../programming-guide/language-features/strings/index.md).  
   
 ## Programming Tips  
   
@@ -80,9 +80,9 @@ S = Microsoft.VisualBasic.Left(S, 4)
 ## See also
 
 - <xref:System.String?displayProperty=nameWithType>
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
-- [Char Data Type](../../../visual-basic/language-reference/data-types/char-data-type.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [How to: Call a Windows Function that Takes Unsigned Types](../../../visual-basic/programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
-- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Data Types](index.md)
+- [Char Data Type](char-data-type.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Summary](../keywords/conversion-summary.md)
+- [How to: Call a Windows Function that Takes Unsigned Types](../../programming-guide/com-interop/how-to-call-a-windows-function-that-takes-unsigned-types.md)
+- [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)

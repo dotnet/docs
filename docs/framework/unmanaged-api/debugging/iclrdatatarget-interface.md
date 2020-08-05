@@ -38,7 +38,7 @@ Provides methods for interaction with a target item of the common language runti
  The API client (that is, the debugger) must implement this interface as appropriate for the particular target item. For example, a live process would have an implementation different from that of a memory dump.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   

@@ -82,7 +82,7 @@ names to each of the members of the tuple:
 
 The `namedLetters` tuple contains fields referred to as `Alpha` and
 `Beta`. Those names exist only at compile time and aren't preserved,
-for example when inspecting the tuple using reflection at runtime.
+for example when inspecting the tuple using reflection at run time.
 
 In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:
@@ -107,8 +107,7 @@ You can extract the individual fields by assigning a `Point` to a tuple:
 
 [!code-csharp[DeconstructPoint](~/samples/snippets/csharp/new-in-7/program.cs#DeconstructPoint "Deconstruct a point")]
 
-You can learn more in depth about tuples in the
-[tuples article](../tuples.md).
+For more information, see [Tuple types](../language-reference/builtin-types/value-tuples.md).
 
 ## Discards
 
@@ -261,8 +260,7 @@ work begins:
 [!code-csharp[TaskExample](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#TaskExample "Task returning method with local function")]
 
 > [!NOTE]
-> Some of the designs that are supported by local functions
-> could also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../local-functions-vs-lambdas.md).
+> Some of the designs that are supported by local functions can also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../programming-guide/classes-and-structs/local-functions.md#local-functions-vs-lambda-expressions).
 
 ## More expression-bodied members
 

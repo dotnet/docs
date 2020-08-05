@@ -17,7 +17,7 @@ public class Circle
 
    public double Circumference
    {
-      get { return 2 * Radius * Math.PI; }      
+      get { return 2 * Radius * Math.PI; }
    }
 
    public double Area

@@ -11,7 +11,7 @@ namespace TestNotifyPropertyChangedCS
 {
     // This form demonstrates using a BindingSource to bind
     // a list to a DataGridView control. The list does not
-    // raise change notifications. However the DemoCustomer type 
+    // raise change notifications. However the DemoCustomer type
     // in the list does.
     public partial class Form1 : Form
     {
@@ -59,7 +59,7 @@ namespace TestNotifyPropertyChangedCS
                 this.customersBindingSource;
         }
 
-        // Change the value of the CompanyName property for the first 
+        // Change the value of the CompanyName property for the first
         // item in the list when the "Change Item" button is clicked.
         void changeItemBtn_Click(object sender, EventArgs e)
         {
@@ -67,7 +67,7 @@ namespace TestNotifyPropertyChangedCS
             BindingList<DemoCustomer> customerList =
                 this.customersBindingSource.DataSource as BindingList<DemoCustomer>;
 
-            // Change the value of the CompanyName property for the 
+            // Change the value of the CompanyName property for the
             // first item in the list.
             customerList[0].CustomerName = "Tailspin Toys";
             customerList[0].PhoneNumber = "(708)555-0150";
@@ -75,7 +75,7 @@ namespace TestNotifyPropertyChangedCS
     }
 
     // <snippet9>
-    // This is a simple customer class that 
+    // This is a simple customer class that
     // implements the IPropertyChange interface.
     public class DemoCustomer : INotifyPropertyChanged
     {

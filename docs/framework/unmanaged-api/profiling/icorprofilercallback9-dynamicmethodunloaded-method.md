@@ -24,10 +24,10 @@ HRESULT DynamicMethodUnloaded(
   
 ## Parameters  
 [in] `functionId`  
-The identifier of the in-memory function that has been garbage collected and unloaded.   
+The identifier of the in-memory function that has been garbage collected and unloaded.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

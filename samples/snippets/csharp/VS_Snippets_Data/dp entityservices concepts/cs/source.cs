@@ -28,8 +28,8 @@ namespace Microsoft.Samples.Entity
                 new AdventureWorksEntities())
             {
                 // Query that returns average TotalDue for a contact.
-                string queryString = @"SELECT TOP(@number1) contactID, AVG(GroupPartition(order.TotalDue)) 
-                            FROM AdventureWorksEntities.SalesOrderHeaders 
+                string queryString = @"SELECT TOP(@number1) contactID, AVG(GroupPartition(order.TotalDue))
+                            FROM AdventureWorksEntities.SalesOrderHeaders
                             AS order GROUP BY order.Contact.ContactID as contactID";
 
                 ObjectQuery<DbDataRecord> query1 = new ObjectQuery<DbDataRecord>(queryString, context);
@@ -41,8 +41,8 @@ namespace Microsoft.Samples.Entity
                         rec[0], rec[1]);
                 }
 
-                queryString = @"SELECT TOP(@number2) contactID, AVG(order.TotalDue) 
-                            FROM AdventureWorksEntities.SalesOrderHeaders 
+                queryString = @"SELECT TOP(@number2) contactID, AVG(order.TotalDue)
+                            FROM AdventureWorksEntities.SalesOrderHeaders
                             AS order GROUP BY order.Contact.ContactID as contactID";
                 ObjectQuery<DbDataRecord> query2 = new ObjectQuery<DbDataRecord>(queryString, context);
                 query2.Parameters.Add(new ObjectParameter("number2", 10));
@@ -78,7 +78,7 @@ namespace Microsoft.Samples.Entity
 
                 foreach (DbDataRecord rec in query)
                 {
-                    Console.WriteLine("Order Total: Current - {0}, Calculated - {1}.", 
+                    Console.WriteLine("Order Total: Current - {0}, Calculated - {1}.",
                         rec[0], rec[1]);
                 }
             }
@@ -90,11 +90,11 @@ namespace Microsoft.Samples.Entity
             using (EntityConnection conn = new EntityConnection("name=SchoolEntities"))
             {
                 conn.Open();
-                // Create a query that specifies to 
+                // Create a query that specifies to
                 // get a collection of only OnsiteCourses.
 
-                string esqlQuery = @"SELECT VAlUE onsiteCourse FROM 
-                    OFTYPE(SchoolEntities.Courses, SchoolModel.OnsiteCourse) 
+                string esqlQuery = @"SELECT VAlUE onsiteCourse FROM
+                    OFTYPE(SchoolEntities.Courses, SchoolModel.OnsiteCourse)
                     AS onsiteCourse";
                 using (EntityCommand cmd = new EntityCommand(esqlQuery, conn))
                 {
@@ -123,7 +123,7 @@ namespace Microsoft.Samples.Entity
                 EntityTransaction transaction = con.BeginTransaction();
                 DbCommand cmd = con.CreateCommand();
                 cmd.Transaction = transaction;
-                cmd.CommandText = @"SELECT VALUE Contact FROM AdventureWorksEntities.Contacts 
+                cmd.CommandText = @"SELECT VALUE Contact FROM AdventureWorksEntities.Contacts
                     AS Contact WHERE Contact.LastName = @ln";
                 EntityParameter param = new EntityParameter();
                 param.ParameterName = "ln";
@@ -153,7 +153,7 @@ namespace Microsoft.Samples.Entity
                 conn.Open();
 
                 string esqlQuery = @"SELECT VALUE contacts FROM
-                        AdventureWorksEntities.Contacts AS contacts 
+                        AdventureWorksEntities.Contacts AS contacts
                         WHERE contacts.ContactID == @id";
 
                 // Create an EntityCommand.
@@ -169,7 +169,7 @@ namespace Microsoft.Samples.Entity
                     using (EntityDataReader rdr =
                         cmd.ExecuteReader(CommandBehavior.SequentialAccess))
                     {
-                        // The result returned by this query contains 
+                        // The result returned by this query contains
                         // Address complex Types.
                         while (rdr.Read())
                         {
@@ -283,14 +283,14 @@ namespace Microsoft.Samples.Entity
                 conn.Open();
                 // Create a query that takes two parameters.
                 string esqlQuery =
-                    @"SELECT VALUE Contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE Contact FROM AdventureWorksEntities.Contacts
                                 AS Contact WHERE Contact.LastName = @ln AND
                                 Contact.FirstName = @fn";
 
                 using (EntityCommand cmd = new EntityCommand(esqlQuery, conn))
                 {
-                    // Create two parameters and add them to 
-                    // the EntityCommand's Parameters collection 
+                    // Create two parameters and add them to
+                    // the EntityCommand's Parameters collection
                     EntityParameter param1 = new EntityParameter();
                     param1.ParameterName = "ln";
                     param1.Value = "Adams";
@@ -328,8 +328,8 @@ namespace Microsoft.Samples.Entity
                 {
                     // Create an Entity SQL query.
                     string esqlQuery =
-                        @"SELECT address.AddressID, (SELECT VALUE DEREF(soh) FROM 
-                      NAVIGATE(address, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID) 
+                        @"SELECT address.AddressID, (SELECT VALUE DEREF(soh) FROM
+                      NAVIGATE(address, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID)
                       AS soh) FROM AdventureWorksEntities.Addresses AS address";
 
                     cmd.CommandText = esqlQuery;
@@ -369,7 +369,7 @@ namespace Microsoft.Samples.Entity
                     using (EntityDataReader rdr =
                         cmd.ExecuteReader(CommandBehavior.SequentialAccess))
                     {
-                        // The result returned by this query contains 
+                        // The result returned by this query contains
                         // ContactID and a nested collection of SalesOrderHeader items.
                         // associated with this Contact.
                         while (rdr.Read())
@@ -377,7 +377,7 @@ namespace Microsoft.Samples.Entity
                             // the first column contains Contact ID.
                             Console.WriteLine("Contact ID: {0}", rdr["ContactID"]);
 
-                            // The second column contains a collection of SalesOrderHeader 
+                            // The second column contains a collection of SalesOrderHeader
                             // items associated with the Contact.
                             DbDataReader nestedReader = rdr.GetDataReader(1);
                             while (nestedReader.Read())
@@ -422,7 +422,7 @@ namespace Microsoft.Samples.Entity
             {
                 // Create a query that takes two parameters.
                 string queryString =
-                    @"SELECT VALUE Contact FROM AdventureWorksEntities.Contacts 
+                    @"SELECT VALUE Contact FROM AdventureWorksEntities.Contacts
                             AS Contact WHERE Contact.LastName = @ln AND
                             Contact.FirstName = @fn";
 
@@ -447,7 +447,7 @@ namespace Microsoft.Samples.Entity
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string esqlQuery = @"SELECT c.FirstName, c.SalesOrderHeaders 
+                string esqlQuery = @"SELECT c.FirstName, c.SalesOrderHeaders
                     FROM AdventureWorksEntities.Contacts AS c where c.LastName = @ln";
                 ObjectQuery<DbDataRecord> query = new ObjectQuery<DbDataRecord>(esqlQuery, context);
                 query.Parameters.Add(new ObjectParameter("ln", "Zhou"));
@@ -458,7 +458,7 @@ namespace Microsoft.Samples.Entity
                     // Display contact's first name.
                     Console.WriteLine("First Name {0}: ", rec[0]);
                     List<SalesOrderHeader> list = rec[1] as List<SalesOrderHeader>;
-                    // Display SalesOrderHeader information 
+                    // Display SalesOrderHeader information
                     // associated with the contact.
                     foreach (SalesOrderHeader soh in list)
                     {
@@ -476,7 +476,7 @@ namespace Microsoft.Samples.Entity
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string myQuery = @"SELECT p.ProductID, p.Name FROM 
+                string myQuery = @"SELECT p.ProductID, p.Name FROM
                     AdventureWorksEntities.Products as p";
 
                 foreach (DbDataRecord rec in
@@ -494,7 +494,7 @@ namespace Microsoft.Samples.Entity
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string queryString = @"SELECT VALUE Length(p.Name)FROM 
+                string queryString = @"SELECT VALUE Length(p.Name)FROM
                 AdventureWorksEntities.Products AS p";
 
                 ObjectQuery<Int32> productQuery =
@@ -510,10 +510,10 @@ namespace Microsoft.Samples.Entity
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string esqlQuery = @"SELECT ln, 
-                    (SELECT c1.LastName FROM AdventureWorksEntities.Contacts 
-                        AS c1 WHERE SUBSTRING(c1.LastName ,1,1) = ln) 
-                    AS CONTACT 
+                string esqlQuery = @"SELECT ln,
+                    (SELECT c1.LastName FROM AdventureWorksEntities.Contacts
+                        AS c1 WHERE SUBSTRING(c1.LastName ,1,1) = ln)
+                    AS CONTACT
                     FROM AdventureWorksEntities.Contacts AS c2 GROUP BY SUBSTRING(c2.LastName ,1,1) AS ln
                     ORDER BY ln";
 
@@ -542,8 +542,8 @@ namespace Microsoft.Samples.Entity
             using (AdventureWorksEntities context =
                 new AdventureWorksEntities())
             {
-                string esqlQuery = @"SELECT contactID, AVG(order.TotalDue) 
-                                        FROM AdventureWorksEntities.SalesOrderHeaders 
+                string esqlQuery = @"SELECT contactID, AVG(order.TotalDue)
+                                        FROM AdventureWorksEntities.SalesOrderHeaders
                                         AS order GROUP BY order.Contact.ContactID as contactID";
 
                 foreach (DbDataRecord rec in
@@ -563,11 +563,11 @@ namespace Microsoft.Samples.Entity
                 new AdventureWorksEntities())
             {
                 String esqlQuery = @"SELECT P2.Name, P2.ListPrice
-                    FROM ((SELECT P1.Name, P1.ProductID as Pid, P1.ListPrice 
+                    FROM ((SELECT P1.Name, P1.ProductID as Pid, P1.ListPrice
                         FROM AdventureWorksEntities.Products as P1
                         where P1.Name like 'A%')
                     union all
-                        (SELECT P1.Name, P1.ProductID as Pid, P1.ListPrice 
+                        (SELECT P1.Name, P1.ProductID as Pid, P1.ListPrice
                         FROM AdventureWorksEntities.Products as P1
                         WHERE P1.Name like 'B%')
                     ) as P2
@@ -590,8 +590,8 @@ namespace Microsoft.Samples.Entity
             {
                 // Create a query that takes two parameters.
                 string queryString =
-                    @"SELECT VALUE product FROM 
-                      AdventureWorksEntities.Products AS product 
+                    @"SELECT VALUE product FROM
+                      AdventureWorksEntities.Products AS product
                       order by product.ListPrice SKIP @skip LIMIT @limit";
 
                 ObjectQuery<Product> productQuery =
@@ -657,7 +657,7 @@ namespace Microsoft.Samples.Entity
                     BuiltInTypeKind fieldTypeKind = record.DataRecordInfo.FieldMetadata[fieldIndex].
                         FieldType.TypeUsage.EdmType.BuiltInTypeKind;
                     // The EntityType, ComplexType and RowType are structural types
-                    // that have members. 
+                    // that have members.
                     // Read only the PrimitiveType members of this structural type.
                     if (fieldTypeKind == BuiltInTypeKind.PrimitiveType)
                     {
@@ -717,7 +717,7 @@ namespace Microsoft.Samples.Entity
                 //read only fields that contain PrimitiveType
                 if (fieldTypeKind == BuiltInTypeKind.RefType)
                 {
-                    // Ref types are surfaced as EntityKey instances. 
+                    // Ref types are surfaced as EntityKey instances.
                     // The containing record sees them as atomic.
                     EntityKey key = record.GetValue(fieldIndex) as EntityKey;
                     // Get the EntitySet name.
@@ -760,7 +760,7 @@ namespace Microsoft.Samples.Entity
                         while (rdr.Read())
                         {
                             IExtendedDataRecord record = rdr as IExtendedDataRecord;
-                            // For PrimitiveType 
+                            // For PrimitiveType
                             // the record contains exactly one field.
                             int fieldIndex = 0;
                             Console.WriteLine("Value: " + record.GetValue(fieldIndex));

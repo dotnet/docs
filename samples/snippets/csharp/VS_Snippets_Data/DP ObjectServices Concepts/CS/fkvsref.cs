@@ -94,7 +94,7 @@ namespace ObjectServicesConceptsCS
                     ContactID = 2
                 };
                 context.SalesOrderHeaders.AddObject(order);
-                // Not that the only difference from the customers perspective is 
+                // Not that the only difference from the customers perspective is
                 // that the BOTH entities need to be added, this seems acceptable
                 context.Contacts.AddObject(c);
                 context.SaveChanges();
@@ -142,7 +142,7 @@ namespace ObjectServicesConceptsCS
                 context.SalesOrderHeaders.AddObject(order);
                 context.Contacts.AddObject(c);
 
-                // Must not fail because of a dependency issue... 
+                // Must not fail because of a dependency issue...
                 // i.e. Update must re-order so that the Contact is created before the SalesOrderHeader
                 context.SaveChanges();
             }
@@ -269,7 +269,7 @@ namespace ObjectServicesConceptsCS
         {
             using (var context = new AdventureWorksEntities())
             {
-                //Get the food category into the statemanager... 
+                //Get the food category into the statemanager...
                 //so the subsequent query will bring span in product.Contact? Is this the expected behavior?
                 Contact contact = context.Contacts.Single(c => c.FirstName == "Alex");
 
@@ -321,7 +321,7 @@ namespace ObjectServicesConceptsCS
                 //Debug.ReferenceEquals(food, product.Contact);
 
                 // ADVICE: should NULL out the category / or do some sort of query etc.
-                // RULE: if this is EOCO we should notice that they made an EXPLICIT change 
+                // RULE: if this is EOCO we should notice that they made an EXPLICIT change
                 // and that takes precedence over IMPLICIT fixup.
                 order.ContactID = contact.ContactID + 1;
                 context.SaveChanges();
@@ -401,7 +401,7 @@ namespace ObjectServicesConceptsCS
 
 /*
 
-// The following example creates a new order for existing Contact using the Foreign key property. 
+// The following example creates a new order for existing Contact using the Foreign key property.
 // Notice that you do not need to load a contact, just assign the Contact's ID to the foreign key property.
 using (var context = new AdventureWorksEntities())
 {
@@ -410,7 +410,7 @@ using (var context = new AdventureWorksEntities())
         SalesOrderID = 1,
         ModifiedDate = DateTime.Now,
         // Set the foreign key property to the ID of the principal
-        // to create the association between the Category and SalesOrderHeader. 
+        // to create the association between the Category and SalesOrderHeader.
         ContactID = 13
     };
     context.SalesOrderHeaders.AddObject(order);
@@ -418,9 +418,9 @@ using (var context = new AdventureWorksEntities())
 }
 
 
-// The following example creates a new order for existing Contact using the reference assignment. 
-// Notice that to set the reference, we need to load the contact. 
-// You do not need to call AddObject() because when you assign the reference 
+// The following example creates a new order for existing Contact using the reference assignment.
+// Notice that to set the reference, we need to load the contact.
+// You do not need to call AddObject() because when you assign the reference
 // to the navigation property the objects on both ends get synronized in the state manager.
 using (var context = new AdventureWorksEntities())
 {

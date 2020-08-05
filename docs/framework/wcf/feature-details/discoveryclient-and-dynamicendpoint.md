@@ -40,18 +40,18 @@ else
 ```csharp
 static void FindServiceAsync()  
 {  
-   DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());   
+   DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());
    dc.FindCompleted += new EventHandler<FindCompletedEventArgs>( discoveryClient_FindCompleted);  
    dc.FindProgressChanged += new EventHandler<FindProgressChangedEventArgs>(discoveryClient_FindProgressChanged);  
-   dc.FindAsync(new FindCriteria(typeof(ICalculatorService)));   
-}   
+   dc.FindAsync(new FindCriteria(typeof(ICalculatorService)));
+}
 static void discoveryClient_FindProgressChanged(object sender, FindProgressChangedEventArgs e)  
 {  
    Console.WriteLine("Found service at: " + e.EndpointDiscoveryMetadata.Address  
-}   
+}
   
 static void discoveryClient_FindCompleted(object sender, FindCompletedEventArgs e)  
-{    
+{
       if (e.Result.Endpoints.Count > 0)  
             {  
                 EndpointAddress ep = e.Result.Endpoints[0].Address;  
@@ -83,7 +83,7 @@ EndpointAddress newEp = response.EndpointDiscoveryMetadata.Address;
 ```  
   
 ## DynamicEndpoint  
- <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint (For more information, see [Standard Endpoints](../../../../docs/framework/wcf/feature-details/standard-endpoints.md)) which performs discovery and automatically selects a matching service. Just create a <xref:System.ServiceModel.Discovery.DynamicEndpoint> passing in the contract to search for and the binding to use and pass the <xref:System.ServiceModel.Discovery.DynamicEndpoint> instance to the WCF client. The following example shows how to create and use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> to call the calculator service. The discovery is performed every time the client is opened. Any endpoint defined in configuration can also be turned into a <xref:System.ServiceModel.Discovery.DynamicEndpoint> by adding the `kind ="dynamicEndpoint"` attribute to the endpoint configuration element.  
+ <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint (For more information, see [Standard Endpoints](standard-endpoints.md)) which performs discovery and automatically selects a matching service. Just create a <xref:System.ServiceModel.Discovery.DynamicEndpoint> passing in the contract to search for and the binding to use and pass the <xref:System.ServiceModel.Discovery.DynamicEndpoint> instance to the WCF client. The following example shows how to create and use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> to call the calculator service. The discovery is performed every time the client is opened. Any endpoint defined in configuration can also be turned into a <xref:System.ServiceModel.Discovery.DynamicEndpoint> by adding the `kind ="dynamicEndpoint"` attribute to the endpoint configuration element.  
   
 ```csharp  
 DynamicEndpoint dynamicEndpoint = new DynamicEndpoint(ContractDescription.GetContract(typeof(ICalculatorService)), new WSHttpBinding());  
@@ -101,5 +101,5 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
   
 ## See also
 
-- [Discovery with Scopes](../../../../docs/framework/wcf/samples/discovery-with-scopes-sample.md)
-- [Basic](../../../../docs/framework/wcf/samples/basic-sample.md)
+- [Discovery with Scopes](../samples/discovery-with-scopes-sample.md)
+- [Basic](../samples/basic-sample.md)

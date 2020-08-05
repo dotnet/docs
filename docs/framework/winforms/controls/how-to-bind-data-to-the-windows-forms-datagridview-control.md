@@ -1,6 +1,7 @@
 ---
 title: Bind data to DataGridView Control
 ms.date: "02/08/2019"
+description: Learn how DataGridView control supports the standard Windows Forms data binding model so it can bind to a variety of data sources. 
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,7 +19,7 @@ Visual Studio has extensive support for data binding to the DataGridView control
 
 To connect a DataGridView control to data:
 
-1. Implement a method to handle the details of retrieving the data. The following code example implements a `GetData` method that initializes a <xref:System.Data.SqlClient.SqlDataAdapter>, and uses it to populate a <xref:System.Data.DataTable>. It then binds the <xref:System.Data.DataTable> to the <xref:System.Windows.Forms.BindingSource>. 
+1. Implement a method to handle the details of retrieving the data. The following code example implements a `GetData` method that initializes a <xref:System.Data.SqlClient.SqlDataAdapter>, and uses it to populate a <xref:System.Data.DataTable>. It then binds the <xref:System.Data.DataTable> to the <xref:System.Windows.Forms.BindingSource>.
 
 2. In the form's <xref:System.Windows.Forms.Form.Load> event handler, bind the <xref:System.Windows.Forms.DataGridView> control to the <xref:System.Windows.Forms.BindingSource>, and call the `GetData` method to retrieve the data.  
 
@@ -26,9 +27,9 @@ To connect a DataGridView control to data:
 
 This complete code example retrieves data from a database to populate a DataGridView control in a Windows form. The form also has buttons to reload data and submit changes to the database.  
 
-This example requires: 
+This example requires:
 
-- Access to a Northwind SQL Server sample database. For more information about installing the Northwind sample database, see [Get the sample databases for ADO.NET code samples](../../data/adonet/sql/linq/downloading-sample-databases.md). 
+- Access to a Northwind SQL Server sample database. For more information about installing the Northwind sample database, see [Get the sample databases for ADO.NET code samples](../../data/adonet/sql/linq/downloading-sample-databases.md).
 
 - References to the System, System.Windows.Forms, System.Data, and System.Xml assemblies.  
 

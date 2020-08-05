@@ -28,7 +28,7 @@ class DirectoryCopyExample
         {
             Directory.CreateDirectory(destDirName);
         }
-        
+
         // Get the files in the directory and copy them to the new location.
         FileInfo[] files = dir.GetFiles();
         foreach (FileInfo file in files)

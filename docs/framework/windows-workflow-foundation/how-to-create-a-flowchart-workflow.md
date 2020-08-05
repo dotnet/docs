@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Flowchart Workflow"
+description: This article describes creating a workflow that uses both built-in activities and the custom activities from the previous article.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

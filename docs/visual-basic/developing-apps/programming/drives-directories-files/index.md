@@ -16,21 +16,21 @@ You can use Visual Basic to process drives, folders, and files with the `My.Comp
   
 ## In This Section  
 
- [File Access with Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)  
+ [File Access with Visual Basic](file-access.md)  
  Discusses how to use the `My.Computer.FileSystem` object to work with files, drives, and folders.  
   
- [Basics of .NET Framework File I/O and the File System (Visual Basic)](../../../../visual-basic/developing-apps/programming/drives-directories-files/basics-of-net-framework-file-io-and-the-file-system.md)  
+ [Basics of .NET Framework File I/O and the File System (Visual Basic)](basics-of-net-framework-file-io-and-the-file-system.md)  
  Provides an overview of file I/O concepts in the .NET Framework, including streams, isolated storage, file events, file attributes, and file access.  
   
- [Walkthrough: Manipulating Files by Using .NET Framework Methods](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
+ [Walkthrough: Manipulating Files by Using .NET Framework Methods](walkthrough-manipulating-files-by-using-net-framework-methods.md)  
  Demonstrates how to use the .NET Framework to manipulate files and folders.  
   
- [Walkthrough: Manipulating Files and Directories in Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-and-directories.md)  
+ [Walkthrough: Manipulating Files and Directories in Visual Basic](walkthrough-manipulating-files-and-directories.md)  
  Demonstrates how to use the `My.Computer.FileSystem` object to manipulate files and folders.  
   
 ## Related Sections  
 
- [Program Structure and Code Conventions](../../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
+ [Program Structure and Code Conventions](../../../programming-guide/program-structure/program-structure-and-code-conventions.md)  
  Provides guidelines for the physical structure and appearance of programs.  
   
  <xref:Microsoft.VisualBasic.FileIO.FileSystem>  

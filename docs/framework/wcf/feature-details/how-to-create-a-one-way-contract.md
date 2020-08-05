@@ -9,7 +9,7 @@ ms.assetid: 85084cd9-31cc-4e95-b667-42ef01336622
 # How to: Create a One-Way Contract
 This topic shows the basic steps to create methods that use a one-way contract. Such methods invoke operations on a Windows Communication Foundation (WCF) service from a client but do not expect a reply. This type of contract can be used, for example, to publish notifications to many subscribers. You can also use one-way contracts when creating a duplex (two-way) contract, which allows clients and servers to communicate with each other independently so that either can initiate calls to the other. This can allow, in particular, the server to make one-way calls to the client that the client can treat as events. For detailed information about specifying one-way methods, see the <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property and the <xref:System.ServiceModel.OperationContractAttribute> class.  
   
- For more information about creating a client application for a duplex contract, see [How to: Access Services with One-Way and Request-Reply Contracts](../../../../docs/framework/wcf/feature-details/how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md). For a working sample, see the [One-Way](../../../../docs/framework/wcf/samples/one-way.md) sample.  
+ For more information about creating a client application for a duplex contract, see [How to: Access Services with One-Way and Request-Reply Contracts](how-to-access-wcf-services-with-one-way-and-request-reply-contracts.md). For a working sample, see the [One-Way](../samples/one-way.md) sample.  
   
 ### To create a one-way contract  
   
@@ -29,7 +29,7 @@ This topic shows the basic steps to create methods that use a one-way contract. 
 
 - <xref:System.ServiceModel.ServiceContractAttribute>
 - <xref:System.ServiceModel.OperationContractAttribute>
-- [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md)
-- [How to: Define a Service Contract](../../../../docs/framework/wcf/how-to-define-a-wcf-service-contract.md)
-- [Session](../../../../docs/framework/wcf/samples/session.md)
-- [How to: Create a Duplex Contract](../../../../docs/framework/wcf/feature-details/how-to-create-a-duplex-contract.md)
+- [Designing and Implementing Services](../designing-and-implementing-services.md)
+- [How to: Define a Service Contract](../how-to-define-a-wcf-service-contract.md)
+- [Session](../samples/session.md)
+- [How to: Create a Duplex Contract](how-to-create-a-duplex-contract.md)

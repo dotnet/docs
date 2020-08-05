@@ -18,4 +18,4 @@ The following example shows how to expose an arbitrary sequence of Event-Based A
   
 ## See also
 
-- [TPL and Traditional .NET Framework Asynchronous Programming](../../../docs/standard/parallel-programming/tpl-and-traditional-async-programming.md)
+- [TPL and Traditional .NET Framework Asynchronous Programming](tpl-and-traditional-async-programming.md)

@@ -1,6 +1,7 @@
 ---
-title: LOH on Windows - .NET
-ms.date: "05/02/2018"
+title: Large object heap (LOH) on Windows
+description: This article discusses large objects, how they are managed by the .NET garbage collector, and the performance implications of using large objects.
+ms.date: 05/02/2018
 helpviewer_keywords:
   - large object heap (LOH)"
   - LOH
@@ -9,18 +10,18 @@ helpviewer_keywords:
 ---
 # The large object heap on Windows systems
 
-The .NET Garbage Collector (GC) divides objects up into small and large objects. When an object is large, some of its attributes become more significant than if the object is small. For instance, compacting it -- that is, copying it in memory elsewhere on the heap -- can be expensive. Because of this, the .NET Garbage Collector places large objects on the large object heap (LOH). In this topic, we'll look at the large object heap in depth. We'll discuss what qualifies an object as a large object, how these large objects are collected, and what kind of performance implications large objects impose.
+The .NET garbage collector (GC) divides objects up into small and large objects. When an object is large, some of its attributes become more significant than if the object is small. For instance, compacting it&mdash;that is, copying it in memory elsewhere on the heap&mdash;can be expensive. Because of this, the garbage collector places large objects on the large object heap (LOH). This article discusses what qualifies an object as a large object, how large objects are collected, and what kind of performance implications large objects impose.
 
 > [!IMPORTANT]
-> This topic discusses the large object heap in the .NET Framework and .NET Core running on Windows systems only. It does not cover the LOH running on .NET implementations on other platforms.
+> This article discusses the large object heap in .NET Framework and .NET Core running on Windows systems only. It does not cover the LOH running on .NET implementations on other platforms.
 
-## How an object ends up on the large object heap and how GC handles them
+## How an object ends up on the LOH
 
 If an object is greater than or equal to 85,000 bytes in size, it’s considered a large object. This number was determined by performance tuning. When an object allocation request is for 85,000 or more bytes, the runtime allocates it on the large object heap.
 
-To understand what this means, it's useful to examine some fundamentals about the .NET GC.
+To understand what this means, it's useful to examine some fundamentals about the garbage collector.
 
-The .NET Garbage Collector is a generational collector. It has three generations: generation 0, generation 1, and generation 2. The reason for having 3 generations is that, in a well-tuned app, most objects die in gen0. For example, in a server app, the allocations associated with each request should die after the request is finished. The in-flight allocation requests will make it into gen1 and die there. Essentially, gen1 acts as a buffer between young object areas and long-lived object areas.
+The garbage collector is a generational collector. It has three generations: generation 0, generation 1, and generation 2. The reason for having 3 generations is that, in a well-tuned app, most objects die in gen0. For example, in a server app, the allocations associated with each request should die after the request is finished. The in-flight allocation requests will make it into gen1 and die there. Essentially, gen1 acts as a buffer between young object areas and long-lived object areas.
 
 Small objects are always allocated in generation 0 and, depending on their lifetime, may be promoted to generation 1 or generation2. Large objects are always allocated in generation 2.
 
@@ -58,7 +59,7 @@ Figure 3: The LOH after a generation 2 GC
 
 ## When is a large object collected?
 
-In general, a GC occurs when one of the following 3 conditions happens:
+In general, a GC occurs under one of the following three conditions:
 
 - Allocation exceeds the generation 0 or large object threshold.
 
@@ -74,7 +75,7 @@ In general, a GC occurs when one of the following 3 conditions happens:
 
   This occurs when the garbage collector receives a high memory notification from the OS. If the garbage collector thinks that doing a generation 2 GC will be productive, it triggers one.
 
-## LOH Performance Implications
+## LOH performance implications
 
 Allocations on the large object heap impact performance in the following ways.
 
@@ -116,7 +117,7 @@ Allocations on the large object heap impact performance in the following ways.
 
 Out of the three factors, the first two are usually more significant than the third. Because of this, we recommend that you allocate a pool of large objects that you reuse instead of allocating temporary ones.
 
-## Collecting performance data for the LOH
+## Collect performance data for the LOH
 
 Before you collect performance data for a specific area, you should already have done the following:
 
@@ -196,7 +197,7 @@ As you can see, this is a very simple test that just allocates large objects fro
 
 ### A debugger
 
-If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](../../../docs/framework/tools/sos-dll-sos-debugging-extension.md) provided by .NET.
+If all you have is a memory dump and you need to look at what objects are actually on the LOH, you can use the [SoS debugger extension](../../framework/tools/sos-dll-sos-debugging-extension.md) provided by .NET.
 
 > [!NOTE]
 > The debugging commands mentioned in this section are applicable to the [Windows Debuggers](https://www.microsoft.com/whdc/devtools/debugging/default.mspx).
@@ -304,6 +305,6 @@ This command breaks into the debugger and shows the call stack only if [VirtualA
 
 CLR 2.0 added a feature called *VM Hoarding* that can be useful for scenarios where segments (including on the large and small object heaps) are frequently acquired and released. To specify VM Hoarding, you specify a startup flag called `STARTUP_HOARD_GC_VM` via the hosting API. Instead of releasing empty segments back to the OS, the CLR decommits the memory on these segments and puts them on a standby list. (Note that the CLR doesn't do this for segments that are too large.) The CLR later uses those segments to satisfy new segment requests. The next time that your app needs a new segment, the CLR uses one from this standby list if it can find one that’s big enough.
 
-VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out of memory exceptions.
+VM hoarding is also useful for applications that want to hold onto the segments that they already acquired, such as some server apps that are the dominant apps running on the system, to avoid out-of-memory exceptions.
 
 We strongly recommend that you carefully test your application when you use this feature to ensure your application has fairly stable memory usage.

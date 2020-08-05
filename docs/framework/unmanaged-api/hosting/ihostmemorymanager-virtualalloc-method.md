@@ -46,7 +46,7 @@ HRESULT VirtualAlloc (
  [in] Memory protection for the region of pages to be allocated.  
   
  `dwCriticalLevel`  
- [in] An [EMemoryCriticalLevel](../../../../docs/framework/unmanaged-api/hosting/ememorycriticallevel-enumeration.md) value that indicates the impact of an allocation failure.  
+ [in] An [EMemoryCriticalLevel](ememorycriticallevel-enumeration.md) value that indicates the impact of an allocation failure.  
   
  `ppMem`  
  [out] Pointer to the starting address of the allocated memory, or null if the request could not be satisfied.  
@@ -69,7 +69,7 @@ HRESULT VirtualAlloc (
  The Win32 `VirtualAlloc` function does not have a `ppMem` parameter, and returns the pointer to the allocated memory instead. For more information, see the Windows Platform documentation.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -79,4 +79,4 @@ HRESULT VirtualAlloc (
   
 ## See also
 
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)

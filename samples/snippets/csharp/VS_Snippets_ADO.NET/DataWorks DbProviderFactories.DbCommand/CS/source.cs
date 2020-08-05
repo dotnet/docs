@@ -12,7 +12,7 @@ class Program
     }
 
     // <Snippet1>
-    // Takes a DbConnection, creates and executes a DbCommand. 
+    // Takes a DbConnection, creates and executes a DbCommand.
     // Assumes SQL INSERT syntax is supported by provider.
     static void ExecuteDbCommand(DbConnection connection)
     {
@@ -68,7 +68,7 @@ class Program
         // Create the factory if there's a valid connection string.
         if (connectionString != null)
         {
-            DbProviderFactory factory = 
+            DbProviderFactory factory =
                 DbProviderFactories.GetFactory(providerName);
 
             // Create the connection.
@@ -84,15 +84,15 @@ class Program
             }
 
             Console.WriteLine(connection.State);
-            
+
             // Return the open connection.
             return connection;
         }
         return null;
     }
 
-    // Return the connection string for the specified provider. 
-    // If there are multiple connection strings for the same 
+    // Return the connection string for the specified provider.
+    // If there are multiple connection strings for the same
     // provider, the first one found is returned.
     // Returns null if the provider is not found.
     static string GetConnectionStringByProvider(string providerName)

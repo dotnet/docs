@@ -21,5 +21,5 @@ A property is declared with the same name as a property defined in the base clas
   
 ## See also
 
-- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
-- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
+- [Shadows](../modifiers/shadows.md)
+- [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md)

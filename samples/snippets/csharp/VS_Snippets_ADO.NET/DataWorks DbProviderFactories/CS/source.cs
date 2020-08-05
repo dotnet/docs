@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Data.OleDb;
 using System.Configuration;
-using System.Data.Common; 
+using System.Data.Common;
 
 class Program
 {

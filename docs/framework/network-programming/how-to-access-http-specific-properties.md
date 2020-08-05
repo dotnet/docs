@@ -26,7 +26,7 @@ HttpWResp.Close()
 ```  
   
 ```csharp  
-HttpWebRequest HttpWReq =   
+HttpWebRequest HttpWReq =
     (HttpWebRequest)WebRequest.Create("http://www.contoso.com");  
 // Turn off connection keep-alives.  
 HttpWReq.KeepAlive = false;  

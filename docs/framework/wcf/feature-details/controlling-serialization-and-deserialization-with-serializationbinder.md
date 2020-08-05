@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ba8dcecf-acc7-467c-939d-021bbac797d4
 ---
 # Controlling Serialization and Deserialization with SerializationBinder
-During serialization, a formatter transmits the information required to create an instance of an object of the correct type and version. This information generally includes the full type name and assembly name of the object. By default, deserialization uses this information to create an instance of an identical object. Some users may need to control which class to serialize and deserialize, either because the original class may not exist on the machine performing deserialization, the original class has moved between assemblies, or a different version of the class is required on the server and client. For more information, see [Usage of Serialization Binder](../../../../docs/framework/wcf/samples/usage-of-serialization-binder.md).  
+During serialization, a formatter transmits the information required to create an instance of an object of the correct type and version. This information generally includes the full type name and assembly name of the object. By default, deserialization uses this information to create an instance of an identical object. Some users may need to control which class to serialize and deserialize, either because the original class may not exist on the machine performing deserialization, the original class has moved between assemblies, or a different version of the class is required on the server and client. For more information, see [Usage of Serialization Binder](../samples/usage-of-serialization-binder.md).  
   
 > [!WARNING]
 > This functionality is only available when using the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> or the <xref:System.Runtime.Serialization.NetDataContractSerializer>.  
@@ -14,5 +14,5 @@ During serialization, a formatter transmits the information required to create a
   
 ## See also
 
-- [Serialization and Deserialization](../../../../docs/framework/wcf/feature-details/serialization-and-deserialization.md)
-- [Usage of Serialization Binder](../../../../docs/framework/wcf/samples/usage-of-serialization-binder.md)
+- [Serialization and Deserialization](serialization-and-deserialization.md)
+- [Usage of Serialization Binder](../samples/usage-of-serialization-binder.md)

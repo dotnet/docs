@@ -22,7 +22,7 @@ Redirects one assembly version to another.
 ## Syntax  
   
 ```xml  
-   <bindingRedirect    
+   <bindingRedirect
 oldVersion="existing assembly version"  
 newVersion="new assembly version"/>  
 ```  

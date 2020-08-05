@@ -30,7 +30,7 @@ namespace NorthwindClient
         private NorthwindEntities context;
         private string customerId = "ALFKI";
 
-        // Replace the host server and port number with the values 
+        // Replace the host server and port number with the values
         // for the test server hosting your Northwind data service instance.
         private Uri svcUri = new Uri("http://localhost:12345/Northwind.svc");
 
@@ -43,13 +43,13 @@ namespace NorthwindClient
 
                 context.IgnoreMissingProperties = true;
 
-                // Define a LINQ query that returns Orders and 
+                // Define a LINQ query that returns Orders and
                 // Order_Details for a specific customer.
                 var ordersQuery = from o in context.Orders.Expand("Order_Details")
                                   where o.Customer.CustomerID == customerId
                                   select o;
 
-                // Create an DataServiceCollection<T> based on 
+                // Create an DataServiceCollection<T> based on
                 // execution of the LINQ query for Orders.
                 DataServiceCollection<Order> customerOrders = new
                     DataServiceCollection<Order>(ordersQuery);
@@ -82,6 +82,6 @@ namespace NorthwindClient
         {
             this.Close();
         }
-        //</snippetSaveChanges> 
+        //</snippetSaveChanges>
     }
 }

@@ -12,7 +12,7 @@ public class Example
    {
       string[] cultureNames = { "en-US", "en-CA", "ru-RU", "fr-FR" };
       ResourceManager rm = ResourceManager.CreateFileBasedResourceManager("Strings", "Resources", null);
-      
+
       foreach (var cultureName in cultureNames) {
          Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName);
          string greeting = rm.GetString("Greeting", CultureInfo.CurrentCulture);
@@ -29,16 +29,16 @@ public class Example
 //       Hello!
 //       What is your name? Dakota
 //       Hello, Dakota!
-//       
+//
 //       Hello!
 //       What is your name? Koani
 //       Hello, Koani!
-//       
+//
 //       Здравствуйте!
 //       Как вас зовут?Samuel
 //       Здравствуйте, Samuel!
-//       
+//
 //       Bon jour!
 //       Comment vous appelez-vous?Yiska
 //       Bon jour, Yiska!
-// </Snippet9> 
+// </Snippet9>

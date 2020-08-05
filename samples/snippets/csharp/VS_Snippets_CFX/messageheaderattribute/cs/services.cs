@@ -48,7 +48,7 @@ namespace Microsoft.WCF.Documentation
 
    /*
     The following is the response message, edited for clarity.
-    
+
     <s:Envelope>
       <s:Header>
         <a:Action s:mustUnderstand="1">http://HelloResponseMessage/Action</a:Action>
@@ -58,7 +58,7 @@ namespace Microsoft.WCF.Documentation
         <HelloResponseMessage xmlns="Microsoft.WCF.Documentation">
           <ResponseToGreeting xmlns="http://www.examples.com">Service received: Hello.</ResponseToGreeting>
         </HelloResponseMessage>
-      </s:Body>    
+      </s:Body>
     </s:Envelope>
     */
  }
@@ -70,7 +70,7 @@ namespace Microsoft.WCF.Documentation
     private string localGreeting;
 
     [MessageBodyMember(
-      Name = "Salutations", 
+      Name = "Salutations",
       Namespace = "http://www.examples.com"
     )]
     public string Greeting
@@ -82,11 +82,11 @@ namespace Microsoft.WCF.Documentation
 
   /*
    The following is the request message, edited for clarity.
-    
+
     <s:Envelope>
       <s:Header>
         <!-- Note: Some header content has been removed for clarity.
-        <a:Action>http://GreetingMessage/Action</a:Action> 
+        <a:Action>http://GreetingMessage/Action</a:Action>
         <a:To s:mustUnderstand="1"></a:To>
       </s:Header>
       <s:Body u:Id="_0" xmlns:u="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">

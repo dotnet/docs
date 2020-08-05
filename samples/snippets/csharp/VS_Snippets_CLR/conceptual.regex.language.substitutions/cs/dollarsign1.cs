@@ -17,9 +17,9 @@ public class Example
       string symbol = NumberFormatInfo.CurrentInfo.CurrencySymbol;
       // If symbol is a "$", add an extra "$".
       if (symbol == "$") symbol = "$$";
-      
+
       // Define regular expression pattern and replacement string.
-      string pattern = @"\b(\d+)(" + cSeparator + @"(\d+))?"; 
+      string pattern = @"\b(\d+)(" + cSeparator + @"(\d+))?";
       string replacement = "$1$2";
       replacement = precedes ? symbol + " " + replacement : replacement + " " + symbol;
       foreach (string value in values)

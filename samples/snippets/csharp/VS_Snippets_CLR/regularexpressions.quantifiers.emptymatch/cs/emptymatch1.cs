@@ -9,23 +9,23 @@ public class Example
       string pattern = "(a?)*";
       string input = "aaabbb";
       Match match = Regex.Match(input, pattern);
-      Console.WriteLine("Match: '{0}' at index {1}", 
+      Console.WriteLine("Match: '{0}' at index {1}",
                         match.Value, match.Index);
       if (match.Groups.Count > 1) {
          GroupCollection groups = match.Groups;
          for (int grpCtr = 1; grpCtr <= groups.Count - 1; grpCtr++) {
-            Console.WriteLine("   Group {0}: '{1}' at index {2}", 
-                              grpCtr, 
+            Console.WriteLine("   Group {0}: '{1}' at index {2}",
+                              grpCtr,
                               groups[grpCtr].Value,
                               groups[grpCtr].Index);
             int captureCtr = 0;
             foreach (Capture capture in groups[grpCtr].Captures) {
                captureCtr++;
-               Console.WriteLine("      Capture {0}: '{1}' at index {2}", 
+               Console.WriteLine("      Capture {0}: '{1}' at index {2}",
                                  captureCtr, capture.Value, capture.Index);
             }
-         } 
-      }   
+         }
+      }
    }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿// <snippet1> 
+﻿// <snippet1>
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 namespace Contoso
 {
    public class Widget
-   {     
+   {
       public Task Run()
       {
-         // Create a long-running task that is attached to the 
+         // Create a long-running task that is attached to the
          // parent in the task hierarchy.
          return Task.Factory.StartNew(() =>
          {
@@ -47,11 +47,11 @@ class DenyChildAttach
 
             return widgetTask;
          }, parentTaskOptions);
-      
+
       // Wait for the parent task to finish.
       Console.WriteLine("Waiting for parent task to finish...");
       runWidget.Wait();
-      Console.WriteLine("Parent task has finished. Elapsed time is {0} ms.", 
+      Console.WriteLine("Parent task has finished. Elapsed time is {0} ms.",
          stopwatch.ElapsedMilliseconds);
 
       // Perform more work...
@@ -65,7 +65,7 @@ class DenyChildAttach
       Console.WriteLine("Child task has finished. Elapsed time is {0} ms.",
         stopwatch.ElapsedMilliseconds);
    }
-     
+
    static void Main(string[] args)
    {
       Contoso.Widget w = new Contoso.Widget();

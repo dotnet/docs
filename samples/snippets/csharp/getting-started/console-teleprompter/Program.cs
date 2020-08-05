@@ -70,7 +70,7 @@ namespace TeleprompterConsole
                             lineLength = 0;
                         }
                     }
-                    yield return Environment.NewLine;                
+                    yield return Environment.NewLine;
                 }
             }
         }

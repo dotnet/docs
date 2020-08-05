@@ -3064,9 +3064,9 @@ We’re sorry, but we don’t have any specific information about this error. Yo
  Provides a forum for questions about and issues with Visual Basic.  
   
  Also see:  
- [Additional Resources for Visual Basic Programmers](../../visual-basic/getting-started/additional-resources.md)  
+ [Additional Resources for Visual Basic Programmers](../getting-started/additional-resources.md)  
   
 ## See also
 
-- [Visual Basic Programming Guide](../../visual-basic/programming-guide/index.md)
-- [Visual Basic Reference](../../visual-basic/reference/index.md)
+- [Visual Basic Programming Guide](../programming-guide/index.md)
+- [Visual Basic Reference](../reference/index.md)

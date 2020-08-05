@@ -16,4 +16,4 @@ The rate calculation does not contain the required arguments.
   
 ## See also
 
-- [Financial Summary](../../visual-basic/language-reference/keywords/financial-summary.md)
+- [Financial Summary](../language-reference/keywords/financial-summary.md)

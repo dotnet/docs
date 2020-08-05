@@ -6,7 +6,7 @@ Imports System.Windows.Automation
 
 
 Class PropertySnips
-    
+
     'AutomationElement autoElement;
     ''' <summary>
     ''' Constructor.
@@ -38,7 +38,7 @@ Class PropertySnips
     ''' </summary>
     ''' <param name="src">The source whose properties changed.</param>
     ''' <param name="e">Event arguments.</param>
-    Private Sub OnPropertyChange(ByVal src As Object, ByVal e As AutomationPropertyChangedEventArgs) 
+    Private Sub OnPropertyChange(ByVal src As Object, ByVal e As AutomationPropertyChangedEventArgs)
         Dim sourceElement As AutomationElement = DirectCast(src, AutomationElement)
         If e.Property Is AutomationElement.IsEnabledProperty Then
             Dim enabled As Boolean = CBool(e.NewValue)
@@ -46,20 +46,20 @@ Class PropertySnips
             ' The element that raised the event can be identified by its runtime ID property.
         Else
         End If
-     ' TODO: Handle other property-changed events.
+        ' TODO: Handle other property-changed events.
     End Sub
-    
-    
+
+
     Public Sub UnsubscribePropertyChange(ByVal element As AutomationElement)
         If (propChangeHandler IsNot Nothing) Then
             Automation.RemoveAutomationPropertyChangedEventHandler(element, propChangeHandler)
         End If
 
     End Sub
-    
+
     ' </Snippet172>
-    Public Sub GetAllProperties(ByVal autoElement As AutomationElement) 
-        
+    Public Sub GetAllProperties(ByVal autoElement As AutomationElement)
+
         ' *** AcceleratorKeyProperty
         ' <Snippet124>
         Dim acceleratorKey As String = _
@@ -75,7 +75,7 @@ Class PropertySnips
             acceleratorKeyString = CStr(acceleratorKeyNoDefault)
         End If
         ' </Snippet125>
-        
+
         ' *** AccessKeyProperty
         ' <Snippet127>
         Dim accessKey As String = _
@@ -145,7 +145,7 @@ Class PropertySnips
         ' *** ClickablePointProperty. 
 
         ' <Snippet135>
-        Dim clickablePoint As New System.Windows.Point(- 1, - 1)
+        Dim clickablePoint As New System.Windows.Point(-1, -1)
         Dim prop As Object = autoElement.GetCurrentPropertyValue(AutomationElement.ClickablePointProperty)
         ' Do not attempt to cast prop if it is null.
         If TypeOf prop Is System.Windows.Point Then
@@ -180,7 +180,7 @@ Class PropertySnips
             controlTypeId1 = DirectCast(controlTypeNoDefault, ControlType)
         End If
         ' </Snippet137>
-        
+
         ' *** CultureInfoProperty
         ' <Snippet138>
         Dim culture As System.Globalization.CultureInfo = _
@@ -194,12 +194,12 @@ Class PropertySnips
         Dim frameworkId As String = _
             CStr(autoElement.GetCurrentPropertyValue(AutomationElement.FrameworkIdProperty))
         ' </Snippet139>
-        
+
         ' *** HasKeyboardFocusProperty
         ' <Snippet140>
         Dim hasFocus As Boolean = CBool(autoElement.GetCurrentPropertyValue(AutomationElement.HasKeyboardFocusProperty))
         ' </Snippet140>
-        
+
         ' *** IsContentElementProperty
         ' <Snippet141>
         Dim isContent As Boolean = CBool(autoElement.GetCurrentPropertyValue(AutomationElement.IsContentElementProperty))
@@ -230,7 +230,7 @@ Class PropertySnips
             isControl1 = CBool(isControlNoDefault)
         End If
         ' </Snippet144>
-        
+
         ' *** IsXXXPatternAvailableProperty
 
         ' <Snippet145>
@@ -238,14 +238,14 @@ Class PropertySnips
         Dim isPatternAvailable As Boolean = _
             CBool(autoElement.GetCurrentPropertyValue(AutomationElement.IsDockPatternAvailableProperty))
         ' </Snippet145>
-        
+
         ' *** IsEnabledProperty
 
         ' <Snippet146>
         Dim isControlEnabled As Boolean = _
             CBool(autoElement.GetCurrentPropertyValue(AutomationElement.IsEnabledProperty))
         ' </Snippet146>
-        
+
         ' *** IsKeyboardFocusableProperty
 
         ' <Snippet147>
@@ -259,7 +259,7 @@ Class PropertySnips
         Dim isControlOffscreen As Boolean = _
             CBool(autoElement.GetCurrentPropertyValue(AutomationElement.IsOffscreenProperty))
         ' </Snippet148>
-        
+
         ' <Snippet149>
         Dim isControlOffscreen1 As Boolean
         Dim isOffscreenNoDefault As Object = autoElement.GetCurrentPropertyValue(AutomationElement.IsOffscreenProperty, True)
@@ -269,13 +269,13 @@ Class PropertySnips
             isControlOffscreen1 = CBool(isOffscreenNoDefault)
         End If
         ' </Snippet149>
-        
+
         ' *** IsPasswordProperty
 
         ' <Snippet150>
         Dim isTextPassword As Boolean = CBool(autoElement.GetCurrentPropertyValue(AutomationElement.IsPasswordProperty))
         ' </Snippet150>
-        
+
         ' *** IsRequiredForFormProperty
 
         ' <Snippet151> 
@@ -300,7 +300,7 @@ Class PropertySnips
             itemStatus1 = CStr(itemStatusNoDefault)
         End If
         ' </Snippet153>
-        
+
         ' *** ItemTypeProperty
         ' <Snippet154>
         Dim itemType As String = _
@@ -317,7 +317,7 @@ Class PropertySnips
             itemType1 = CStr(itemStatusNoDefault)
         End If
         ' </Snippet155>
-        
+
         ' *** LabeledByProperty
         ' <Snippet156>
         Dim labeler As AutomationElement = _
@@ -334,7 +334,7 @@ Class PropertySnips
             labeler1 = DirectCast(labelerNoDefault, AutomationElement)
         End If
         ' </Snippet157>
-        
+
         ' *** LocalizedControlTypeProperty
         ' <Snippet158>
         Dim localizedType As String = _
@@ -367,7 +367,7 @@ Class PropertySnips
             nameProp1 = CStr(namePropNoDefault)
         End If
         ' </Snippet161>
-        
+
         ' *** NativeWindowHandleProperty
 
         ' <Snippet162>
@@ -384,8 +384,8 @@ Class PropertySnips
             nativeHandle1 = CInt(nativeHandleNoDefault)
         End If
         ' </Snippet163>
-        
-        
+
+
         ' *** OrientationProperty
         ' <Snippet164>
         Dim orientationType As OrientationType = _
@@ -402,7 +402,7 @@ Class PropertySnips
             orientationType1 = DirectCast(orientationTypeNoDefault, OrientationType)
         End If
         ' </Snippet165>
-        
+
         ' *** ProcessIdProperty
 
         ' <Snippet167>
@@ -419,7 +419,7 @@ Class PropertySnips
             processIdentifier1 = CInt(processIdentifierNoDefault)
         End If
         ' </Snippet168>
-        
+
         ' *** RuntimeIdProperty
         ' <Snippet169>
         Dim runtimeIdentifier As Integer() = _

@@ -26,7 +26,7 @@ The following web sites provide guidance and can help you find answers to common
 
 |URL|Description|
 |----------|----------------|
-|[Visual Basic documentation samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
+|[Visual Basic documentation samples](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic)|Contains the samples used throughout the Visual Basic and .NET documentation.|
 
 ### Forums
 
@@ -57,5 +57,5 @@ The following web sites provide guidance and can help you find answers to common
 
 ## See also
 
-- [Get started with Visual Basic](../../visual-basic/getting-started/index.md)
+- [Get started with Visual Basic](index.md)
 - [Talk to Us](/visualstudio/ide/feedback-options)

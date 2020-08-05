@@ -11,7 +11,7 @@ Provides properties for accessing the current state of the keyboard, such as wha
 ## Remarks  
  For information about the methods and properties of the `My.Computer.Keyword` object, see <xref:Microsoft.VisualBasic.Devices.Keyboard>.  
   
- For more information, see [Accessing the Keyboard](../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md).  
+ For more information, see [Accessing the Keyboard](../../developing-apps/programming/computer-resources/accessing-the-keyboard.md).  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Devices>  
@@ -22,4 +22,4 @@ Provides properties for accessing the current state of the keyboard, such as wha
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](my-computer-object.md)

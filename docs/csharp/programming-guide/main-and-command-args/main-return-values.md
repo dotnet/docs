@@ -16,11 +16,11 @@ It can also return an `int`:
 
  [!code-csharp[csProgGuideMain#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#13)]
 
-If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main` the exit code will be implicitly `0`. The following example shows how the return value from `Main` can be accessed.
+If the return value from `Main` is not used, returning `void` allows for slightly simpler code. However, returning an integer enables the program to communicate status information to other programs or scripts that invoke the executable file. The return value from `Main` is treated as the exit code for the process. If `void` is returned from `Main`, the exit code will be implicitly `0`. The following example shows how the return value from `Main` can be accessed.
 
 ## Example
 
-This example uses [.NET Core](../../../core/index.md) command line tools. If you are unfamiliar with .NET Core command line tools, you can learn about them in this [Get started topic](../../../core/tutorials/cli-create-console-app.md).
+This example uses [.NET Core](../../../core/index.yml) command-line tools. If you are unfamiliar with .NET Core command-line tools, you can learn about them in this [get-started article](../../../core/tutorials/cli-create-console-app.md).
 
 Modify the `Main` method in *program.cs* as follows:
 
@@ -32,7 +32,7 @@ You can build the application using the [dotnet CLI](../../../core/tools/dotnet.
 
 Next, create a Powershell script to run the application and display the result. Paste the following code into a text file and save it as `test.ps1` in the folder that contains the project. Run the powershell script by typing `test.ps1` at the powershell prompt.
 
-Because the code returns zero, the batch file will report success. However, if you change MainReturnValTest.cs to return a non-zero value and then re-compile the program, subsequent execution of the powershell script will report failure.
+Because the code returns zero, the batch file will report success. However, if you change MainReturnValTest.cs to return a non-zero value and then recompile the program, subsequent execution of the powershell script will report failure.
 
 ```dotnetcli
 dotnet run
@@ -78,7 +78,7 @@ Now, this can be replaced by:
 
 The advantage of the new syntax is that the compiler always generates the correct code.
 
-## Compiler generated code
+## Compiler-generated code
 
 When the application entry point returns a `Task` or `Task<int>`, the compiler generates a new entry point that calls the entry point method declared in the application code. Assuming that this entry point is called `$GeneratedMain`, the compiler generates the following code for these entry points:
 

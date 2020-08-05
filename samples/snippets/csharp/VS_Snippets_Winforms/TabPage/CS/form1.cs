@@ -31,7 +31,7 @@ public class Form1 : Form
         MyTabs();
     }
 
-    static void Main() 
+    static void Main()
     {
         Application.Run(new Form1());
     }

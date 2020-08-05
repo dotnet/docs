@@ -26,14 +26,14 @@ using System.Runtime.Serialization;
 namespace DataGridSQLExample
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class AdventureWorksLT2008Entities : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new AdventureWorksLT2008Entities object using the connection string found in the 'AdventureWorksLT2008Entities' section of the application configuration file.
         /// </summary>
@@ -42,7 +42,7 @@ namespace DataGridSQLExample
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksLT2008Entities object.
         /// </summary>
@@ -51,7 +51,7 @@ namespace DataGridSQLExample
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new AdventureWorksLT2008Entities object.
         /// </summary>
@@ -60,17 +60,17 @@ namespace DataGridSQLExample
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -86,7 +86,7 @@ namespace DataGridSQLExample
             }
         }
         private ObjectSet<Product> _Products;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -105,7 +105,7 @@ namespace DataGridSQLExample
 
         #endregion
         #region AddTo Methods
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Products EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -113,7 +113,7 @@ namespace DataGridSQLExample
         {
             base.AddObject("Products", product);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the ProductCategories EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -124,12 +124,12 @@ namespace DataGridSQLExample
 
         #endregion
     }
-    
+
 
     #endregion
-    
+
     #region Entities
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -139,7 +139,7 @@ namespace DataGridSQLExample
     public partial class Product : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Product object.
         /// </summary>
@@ -167,7 +167,7 @@ namespace DataGridSQLExample
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -194,7 +194,7 @@ namespace DataGridSQLExample
         private global::System.Int32 _ProductID;
         partial void OnProductIDChanging(global::System.Int32 value);
         partial void OnProductIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -218,7 +218,7 @@ namespace DataGridSQLExample
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -242,7 +242,7 @@ namespace DataGridSQLExample
         private global::System.String _ProductNumber;
         partial void OnProductNumberChanging(global::System.String value);
         partial void OnProductNumberChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -266,7 +266,7 @@ namespace DataGridSQLExample
         private global::System.String _Color;
         partial void OnColorChanging(global::System.String value);
         partial void OnColorChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -290,7 +290,7 @@ namespace DataGridSQLExample
         private global::System.Decimal _StandardCost;
         partial void OnStandardCostChanging(global::System.Decimal value);
         partial void OnStandardCostChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -314,7 +314,7 @@ namespace DataGridSQLExample
         private global::System.Decimal _ListPrice;
         partial void OnListPriceChanging(global::System.Decimal value);
         partial void OnListPriceChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -338,7 +338,7 @@ namespace DataGridSQLExample
         private global::System.String _Size;
         partial void OnSizeChanging(global::System.String value);
         partial void OnSizeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -362,7 +362,7 @@ namespace DataGridSQLExample
         private Nullable<global::System.Decimal> _Weight;
         partial void OnWeightChanging(Nullable<global::System.Decimal> value);
         partial void OnWeightChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -386,7 +386,7 @@ namespace DataGridSQLExample
         private Nullable<global::System.Int32> _ProductCategoryID;
         partial void OnProductCategoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductCategoryIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -410,7 +410,7 @@ namespace DataGridSQLExample
         private Nullable<global::System.Int32> _ProductModelID;
         partial void OnProductModelIDChanging(Nullable<global::System.Int32> value);
         partial void OnProductModelIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -434,7 +434,7 @@ namespace DataGridSQLExample
         private global::System.DateTime _SellStartDate;
         partial void OnSellStartDateChanging(global::System.DateTime value);
         partial void OnSellStartDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -458,7 +458,7 @@ namespace DataGridSQLExample
         private Nullable<global::System.DateTime> _SellEndDate;
         partial void OnSellEndDateChanging(Nullable<global::System.DateTime> value);
         partial void OnSellEndDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -482,7 +482,7 @@ namespace DataGridSQLExample
         private Nullable<global::System.DateTime> _DiscontinuedDate;
         partial void OnDiscontinuedDateChanging(Nullable<global::System.DateTime> value);
         partial void OnDiscontinuedDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -506,7 +506,7 @@ namespace DataGridSQLExample
         private global::System.Byte[] _ThumbNailPhoto;
         partial void OnThumbNailPhotoChanging(global::System.Byte[] value);
         partial void OnThumbNailPhotoChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -530,7 +530,7 @@ namespace DataGridSQLExample
         private global::System.String _ThumbnailPhotoFileName;
         partial void OnThumbnailPhotoFileNameChanging(global::System.String value);
         partial void OnThumbnailPhotoFileNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -554,7 +554,7 @@ namespace DataGridSQLExample
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -580,9 +580,9 @@ namespace DataGridSQLExample
         partial void OnModifiedDateChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -623,7 +623,7 @@ namespace DataGridSQLExample
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -633,7 +633,7 @@ namespace DataGridSQLExample
     public partial class ProductCategory : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new ProductCategory object.
         /// </summary>
@@ -653,7 +653,7 @@ namespace DataGridSQLExample
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -680,7 +680,7 @@ namespace DataGridSQLExample
         private global::System.Int32 _ProductCategoryID;
         partial void OnProductCategoryIDChanging(global::System.Int32 value);
         partial void OnProductCategoryIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -704,7 +704,7 @@ namespace DataGridSQLExample
         private Nullable<global::System.Int32> _ParentProductCategoryID;
         partial void OnParentProductCategoryIDChanging(Nullable<global::System.Int32> value);
         partial void OnParentProductCategoryIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -728,7 +728,7 @@ namespace DataGridSQLExample
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -752,7 +752,7 @@ namespace DataGridSQLExample
         private global::System.Guid _rowguid;
         partial void OnrowguidChanging(global::System.Guid value);
         partial void OnrowguidChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -778,9 +778,9 @@ namespace DataGridSQLExample
         partial void OnModifiedDateChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -802,7 +802,7 @@ namespace DataGridSQLExample
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -824,7 +824,7 @@ namespace DataGridSQLExample
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -867,5 +867,5 @@ namespace DataGridSQLExample
     }
 
     #endregion
-    
+
 }

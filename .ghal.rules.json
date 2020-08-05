@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "configRevision": 1,
+  "configRevision": 2,
 
   "issue": {
     "opened": {
@@ -47,9 +47,42 @@
           },
           "(?i)dotnet-architecture$": {
             "labels-add": ":books: Area - .NET Architecture Guide"
+          },
+          "(?i)azure-dotnet$": {
+            "labels-add": ":books: Area - Azure .NET SDK"
           }
         },
         "technology": {
+          "(?i)csharp-advanced-concepts$": {
+            "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+          },
+          "(?i)csharp-async$": {
+            "labels-add": ":card_file_box: Technology - Async Task"
+          },
+          "(?i)csharp-diagnostics$": {
+            "labels-add": ":card_file_box: Technology - C# / VB diagnostics"
+          },
+          "(?i)csharp-fundamentals$": {
+            "labels-add": ":card_file_box: Technology - C# Fundamentals"
+          },
+          "(?i)csharp-get-started$": {
+            "labels-add": ":card_file_box: Technology - C# Get Started"
+          },
+          "(?i)csharp-language-reference$": {
+            "labels-add": ":card_file_box: Technology - C# Language Reference"
+          },
+          "(?i)csharp-linq$": {
+            "labels-add": ":card_file_box: Technology - LINQ"
+          },
+          "(?i)csharp-null-safety$": {
+            "labels-add": ":card_file_box: Technology - C# Null safety"
+          },
+          "(?i)csharp-csharp-roslyn$": {
+            "labels-add": ":card_file_box: Technology - Roslyn APIs"
+          },
+          "(?i)csharp-whats-new$": {
+            "labels-add": ":card_file_box: Technology - C# What's New"
+          },
           "(?i)dotnet-wpf$": {
             "labels-add": ":card_file_box: Technology - WPF"
           }
@@ -133,7 +166,7 @@
           "(?i).*docs\/whats-new\/.*": {
             "labels-add": ":star2: What's New"
           }
-    }
+        }
       },
       "processor-meta-custom": {
         "issuetype": {
@@ -156,7 +189,7 @@
       },
       "processor-conditional": {
         "type": "query",
-        "value": "PullRequest.base.ref == 'master'",
+        "value": "PullRequest.base.ref != 'live'",
         "processors": {
           "processor-files": {
             "changedfile": {
@@ -201,6 +234,117 @@
               },
               "(?i).*docs\/csharp.*": {
                 "labels-add": ":books: Area - C# Guide"
+              },
+              "(?i).*docs\/csharp\/misc.*": {
+                "labels-add": ":card_file_box: Technology - C# / VB diagnostics"
+              },
+              "(?i).*docs\/csharp\/whats-new.*": {
+                "labels-add": ":card_file_box: Technology - C# What's New"
+              },
+              "(?i).*docs\/csharp\/how-to.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/linq.*": {
+                "labels-add": ":card_file_box: Technology - LINQ"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/main-and-command-args.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/indexers.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/generics.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/strings.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/types.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/statements-expressions-operators.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/interop.*": {
+                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/unsafe-code-pointers.*": {
+                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/exceptions.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/namespaces.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/nullable-types.*": {
+                "labels-add": ":card_file_box: Technology - C# Null safety"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/arrays.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/concepts\/covariance-contravariance.*": {
+                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/concepts\/serialization.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/concepts\/expression-trees.*": {
+                "labels-add": ":card_file_box: Technology - C# Advanced concepts"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/concepts\/async.*": {
+                "labels-add": ":card_file_box: Technology - Async Task"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/concepts\/linq.*":  {
+                "labels-add": ":card_file_box: Technology - LINQ"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/concepts\/attributes.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/xmldoc.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/classes-and-structs.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/delegates.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/file-system.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/events.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/inside-a-program.*": {
+                "labels-add": ":card_file_box: Technology - C# Get Started"
+              },
+              "(?i).*docs\/csharp\/programming-guide\/interfaces.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/getting-started.*": {
+                "labels-add": ":card_file_box: Technology - C# Get Started"
+              },
+              "(?i).*docs\/csharp\/tutorials\/exploration.*": {
+                "labels-add": ":card_file_box: Technology - C# Get Started"
+              },
+              "(?i).*docs\/csharp\/tutorial\/intro-to-csharp.*": {
+                "labels-add": ":card_file_box: Technology - C# Get Started"
+              },
+              "(?i).*docs\/csharp\/tutorials.*": {
+                "labels-add": ":card_file_box: Technology - C# Fundamentals"
+              },
+              "(?i).*docs\/csharp\/language-reference\/compiler-messages.*": {
+                "labels-add": ":card_file_box: Technology - C# / VB diagnostics"
+              },
+              "(?i).*docs\/csharp\/language-reference.*": {
+                "labels-add": ":card_file_box: Technology - C# Language Reference"
+              },
+              "(?i).*docs\/csharp\/roslyn-sdk.*": {
+                "labels-add": ":card_file_box: Technology - Roslyn APIs"
+              },
+              "(?i).*docs\/csharp\/tour-of-csharp.*": {
+                "labels-add": ":card_file_box: Technology - C# Get Started"
               },
               "(?i).*docs\/desktop-wpf*": {
                 "labels-add": ":books: Area - Desktop Guide,:card_file_box: Technology - WPF"
@@ -267,6 +411,9 @@
               },
               "(?i).*docs\/whats-new\/.*": {
                 "labels-add": ":star2: What's New"
+              },
+              "(?i).*docs\/azure\/.*": {
+                "labels-add": ":books: Area - Azure .NET SDK"
               }
             }
           }

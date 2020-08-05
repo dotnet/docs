@@ -1,4 +1,4 @@
-﻿ '<Snippet1>
+﻿'<Snippet1>
 Imports System.Collections
 Imports System.Diagnostics
 Imports System.Reflection
@@ -15,7 +15,7 @@ Class DebugViewTest
     Public Shared y As String = "Test String"
     '</Snippet2>
 
-    Shared Sub Main() 
+    Shared Sub Main()
         Dim myHashTable As New MyHashtable()
         myHashTable.Add("one", 1)
         myHashTable.Add("two", 2)
@@ -25,14 +25,14 @@ Class DebugViewTest
     End Sub
 End Class
 '<Snippet3>
-<DebuggerDisplay("{value}", Name := "{key}")>  _
+<DebuggerDisplay("{value}", Name:="{key}")> _
 Friend Class KeyValuePairs
     Private dictionary As IDictionary
     Private key As Object
     Private value As Object
-    
-    
-    Public Sub New(ByVal dictionary As IDictionary, ByVal key As Object, ByVal value As Object) 
+
+
+    Public Sub New(ByVal dictionary As IDictionary, ByVal key As Object, ByVal value As Object)
         Me.value = value
         Me.key = key
         Me.dictionary = dictionary
@@ -60,7 +60,7 @@ Class MyHashtable
         <DebuggerBrowsable(DebuggerBrowsableState.RootHidden)> _
         ReadOnly Property Keys as KeyValuePairs()
             Get
-                Dim nkeys(hashtable.Count) as KeyValuePairs
+                Dim nkeys(hashtable.Count - 1) As KeyValuePairs
 
                 Dim i as Integer = 0
                 For Each key As Object In hashtable.Keys

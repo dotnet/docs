@@ -17,7 +17,7 @@ namespace Samples
 	}
 
 	//<snippet2>
-	// The FindSomeClaims method looks in the provided ClaimSet for Claims of the specified type and right. 
+	// The FindSomeClaims method looks in the provided ClaimSet for Claims of the specified type and right.
     // It returns such Claims in a list.
 	public static IList<Claim> FindSomeClaims ( ClaimSet cs, string type, string right )
 	{

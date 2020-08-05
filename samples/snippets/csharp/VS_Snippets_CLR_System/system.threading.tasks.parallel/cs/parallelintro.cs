@@ -1,5 +1,5 @@
 ﻿    //<snippet07>
-    using System.Threading.Tasks;   
+    using System.Threading.Tasks;
     class Test
     {
         static int N = 1000;

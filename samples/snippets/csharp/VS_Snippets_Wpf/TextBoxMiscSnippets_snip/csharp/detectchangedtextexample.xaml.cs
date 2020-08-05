@@ -6,7 +6,7 @@ using System.Windows.Documents;
 
 namespace SDKSample
 {
- 
+
     public partial class DetectChangedTextExample : Page
     {
 

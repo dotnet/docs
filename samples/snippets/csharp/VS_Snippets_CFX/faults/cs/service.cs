@@ -31,7 +31,7 @@ namespace Microsoft.ServiceModel.Samples
     // Define a math fault data contract
     [DataContract(Namespace="http://Microsoft.ServiceModel.Samples")]
     public class MathFault
-    {    
+    {
         private string operation;
         private string problemType;
 
@@ -42,7 +42,7 @@ namespace Microsoft.ServiceModel.Samples
             set { operation = value; }
         }
 
-        [DataMember]        
+        [DataMember]
         public string ProblemType
         {
             get { return problemType; }

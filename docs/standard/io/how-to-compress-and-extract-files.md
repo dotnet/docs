@@ -1,5 +1,6 @@
 ---
 title: "How to: Compress and extract files"
+description: Compress & extract files using System.IO.Compression. See examples using ZipFile, ZipArchive, ZipArchiveEntry, DeflateStream, & GZipStream.
 ms.date: "01/14/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -21,15 +22,21 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
 - <xref:System.IO.Compression.DeflateStream>
 - <xref:System.IO.Compression.GZipStream>
 
-The following examples show some of the operations you can perform with compressed files.
+The following examples show some of the operations you can perform with compressed files. These examples require the following NuGet packages to be added to your project:
+
+- [System.IO.Compression](https://www.nuget.org/packages/System.IO.Compression)
+- [System.IO.Compression.ZipFile](https://www.nuget.org/packages/System.IO.Compression.ZipFile)
+
+If you're using .NET Framework, add references to these two libraries to your project:
+
+- `System.IO.Compression`
+- `System.IO.Compression.FileSystem`
 
 ## Example 1: Create and extract a .zip file
 
 The following example shows how to create and extract a compressed *.zip* file by using the <xref:System.IO.Compression.ZipFile> class. The example compresses the contents of a folder into a new *.zip* file, and then extracts the zip to a new folder.
 
 To run the sample, create a *start* folder in your program folder and populate it with files to zip.
-
-If you get the build error "The name 'ZipFile' does not exist in the current context," add a reference to the `System.IO.Compression.FileSystem` assembly to your project.
 
 [!code-csharp[System.IO.Compression.ZipFile#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.io.compression.zipfile/cs/program1.cs#1)]
 [!code-vb[System.IO.Compression.ZipFile#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.io.compression.zipfile/vb/program1.vb#1)]
@@ -39,10 +46,6 @@ If you get the build error "The name 'ZipFile' does not exist in the current con
 The next example iterates through the contents of an existing *.zip* file and extracts files that have a *.txt* extension. It uses the <xref:System.IO.Compression.ZipArchive> class to access the zip, and the <xref:System.IO.Compression.ZipArchiveEntry> class to inspect the individual entries. The extension method <xref:System.IO.Compression.ZipFileExtensions.ExtractToFile%2A> for the <xref:System.IO.Compression.ZipArchiveEntry> object is available in the <xref:System.IO.Compression.ZipFileExtensions?displayProperty=nameWithType> class.
 
 To run the sample, place a *.zip* file called *result.zip* in your program folder. When prompted, provide a folder name to extract to.
-
-If you get the build error "The name 'ZipFile' does not exist in the current context," add a reference to the `System.IO.Compression.FileSystem` assembly to your project.
-
-If you get the error "The type 'ZipArchive' is defined in an assembly that is not referenced," add a reference to the `System.IO.Compression` assembly to your project.
 
 > [!IMPORTANT]
 > When unzipping files, you must look for malicious file paths, which can escape out of the directory you unzip into. This is known as a path traversal attack. The following example demonstrates how to check for malicious file paths and provides a safe way to unzip.
@@ -71,4 +74,4 @@ You can also use the <xref:System.IO.Compression.GZipStream> and <xref:System.IO
 - <xref:System.IO.Compression.ZipArchiveEntry>  
 - <xref:System.IO.Compression.DeflateStream>  
 - <xref:System.IO.Compression.GZipStream>  
-- [File and stream I/O](../../../docs/standard/io/index.md)
+- [File and stream I/O](index.md)

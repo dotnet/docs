@@ -40,9 +40,9 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically p
     ```csharp  
     public void addImage()  
     {  
-    // Be sure that you use an appropriate escape sequence (such as the   
+    // Be sure that you use an appropriate escape sequence (such as the
     // @) when specifying the location of the file.  
-       System.Drawing.Image myImage =   
+       System.Drawing.Image myImage =
          Image.FromFile  
        (System.Environment.GetFolderPath  
        (System.Environment.SpecialFolder.Personal)  
@@ -55,11 +55,11 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically p
     public:  
        void addImage()  
        {  
-       // Replace the bold image in the following sample   
+       // Replace the bold image in the following sample
        // with your own icon.  
-       // Be sure that you use an appropriate escape sequence (such as   
+       // Be sure that you use an appropriate escape sequence (such as
        // \\) when specifying the location of the file.  
-          System::Drawing::Image ^ myImage =   
+          System::Drawing::Image ^ myImage =
              Image::FromFile(String::Concat(  
              System::Environment::GetFolderPath(  
              System::Environment::SpecialFolder::Personal),  
@@ -88,9 +88,9 @@ The Windows Forms <xref:System.Windows.Forms.ImageList> component is typically p
 ```csharp  
 public void addImage()  
 {  
-// Be sure that you use an appropriate escape sequence (such as the   
+// Be sure that you use an appropriate escape sequence (such as the
 // @) when specifying the location of the file.  
-   System.Drawing.Image myImage =   
+   System.Drawing.Image myImage =
      Image.FromFile  
    (System.Environment.GetFolderPath  
    (System.Environment.SpecialFolder.Personal)  

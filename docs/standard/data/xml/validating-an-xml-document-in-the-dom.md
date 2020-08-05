@@ -86,5 +86,5 @@ Validation errors are handled by the <xref:System.Xml.Schema.ValidationEventHand
 - <xref:System.Xml.XmlReader>
 - <xref:System.Xml.Schema.ValidationEventHandler>
 - <xref:System.Xml.XmlReaderSettings>
-- [Process XML Data Using the DOM Model](../../../../docs/standard/data/xml/process-xml-data-using-the-dom-model.md)
-- [Working with XML Schemas](../../../../docs/standard/data/xml/working-with-xml-schemas.md)
+- [Process XML Data Using the DOM Model](process-xml-data-using-the-dom-model.md)
+- [Working with XML Schemas](working-with-xml-schemas.md)

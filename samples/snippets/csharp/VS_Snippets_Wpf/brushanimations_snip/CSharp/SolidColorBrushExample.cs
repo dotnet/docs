@@ -1,6 +1,6 @@
 ﻿//<Snippet1>
 
-// <SnippetSolidColorBrushAnimationExample> 
+// <SnippetSolidColorBrushAnimationExample>
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,7 +12,7 @@ using System.Windows.Input;
 namespace Microsoft.Samples.Animation
 {
     /// <summary>
-    /// This example shows how to animate the Opacity and Color 
+    /// This example shows how to animate the Opacity and Color
     /// properties of a SolidColorBrush.
     /// </summary>
     public class SolidColorBrushExample : Page
@@ -103,7 +103,7 @@ namespace Microsoft.Samples.Animation
         }
     }
 }
-// </SnippetSolidColorBrushAnimationExample> 
+// </SnippetSolidColorBrushAnimationExample>
 
 
 //</Snippet1>

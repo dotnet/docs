@@ -8,7 +8,7 @@ ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
 This sample shows how to make a service discoverable and how to search for and call a discoverable service. This sample is composed of two projects: service and client.
 
 > [!NOTE]
-> This sample implements discovery in code.  For a sample that implements discovery in configuration, see [Configuration](../../../../docs/framework/wcf/samples/configuration-sample.md).
+> This sample implements discovery in code.  For a sample that implements discovery in configuration, see [Configuration](configuration-sample.md).
 
 ## Service
 

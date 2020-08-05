@@ -35,7 +35,7 @@ public class Form1 : Form
         get
         {
             Clipboard.SetData("CustomerFormat", new Customer("Customer Name"));
-            if (Clipboard.ContainsData("CustomerFormat")) 
+            if (Clipboard.ContainsData("CustomerFormat"))
             {
                 return Clipboard.GetData("CustomerFormat") as Customer;
             }
@@ -55,7 +55,7 @@ public class Form1 : Form
         data.SetData(new Customer("Customer as Customer object"));
 
         // Add a ListViewItem object using a custom format name.
-        data.SetData("CustomFormat", 
+        data.SetData("CustomFormat",
             new ListViewItem("Customer as ListViewItem"));
 
         Clipboard.SetDataObject(data);
@@ -63,7 +63,7 @@ public class Form1 : Form
 
         if (retrievedData.GetDataPresent("CustomFormat"))
         {
-            ListViewItem item = 
+            ListViewItem item =
                 retrievedData.GetData("CustomFormat") as ListViewItem;
             if (item != null)
             {
@@ -73,7 +73,7 @@ public class Form1 : Form
 
         if (retrievedData.GetDataPresent(typeof(Customer)))
         {
-            Customer customer = 
+            Customer customer =
                 retrievedData.GetData(typeof(Customer)) as Customer;
             if (customer != null)
             {

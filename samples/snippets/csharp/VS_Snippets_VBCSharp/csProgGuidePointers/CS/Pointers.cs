@@ -1,11 +1,11 @@
 ﻿//<Snippet4>
 class ClassConvert
 {
-    static void Main() 
+    static void Main()
     {
         int number = 1024;
 
-        unsafe 
+        unsafe
         {
             // Convert to byte:
             byte* p = (byte*)&number;
@@ -55,9 +55,9 @@ class TestCopy
             throw new System.ArgumentException();
         }
 
-        // If the number of bytes from the offset to the end of the array is 
+        // If the number of bytes from the offset to the end of the array is
         // less than the number of bytes you want to copy, you cannot complete
-        // the copy. 
+        // the copy.
         if ((source.Length - sourceOffset < count) ||
             (target.Length - targetOffset < count))
         {
@@ -115,7 +115,7 @@ class TestCopy
         }
         System.Console.WriteLine("\n");
 
-        // Copy the contents of the last 10 elements of byteArray1 to the 
+        // Copy the contents of the last 10 elements of byteArray1 to the
         // beginning of byteArray2.
         // The offset specifies where the copying begins in the source array.
         int offset = length - 10;
@@ -190,8 +190,8 @@ namespace FixedSizeBuffers
 namespace N
 {
     /// <summary>
-    /// Enter description here for class X. 
-    /// ID string generated is "T:N.X". 
+    /// Enter description here for class X.
+    /// ID string generated is "T:N.X".
     /// </summary>
     public unsafe class X
     {
@@ -239,7 +239,7 @@ namespace N
 
         /// <summary>
         /// Enter description for method gg.
-        /// ID string generated is "M:N.X.gg(System.Int16[],System.Int32[0:,0:])". 
+        /// ID string generated is "M:N.X.gg(System.Int16[],System.Int32[0:,0:])".
         /// </summary>
         /// <param name="array1">Describe parameter.</param>
         /// <param name="array">Describe parameter.</param>
@@ -248,7 +248,7 @@ namespace N
 
         /// <summary>
         /// Enter description for operator.
-        /// ID string generated is "M:N.X.op_Addition(N.X,N.X)". 
+        /// ID string generated is "M:N.X.op_Addition(N.X,N.X)".
         /// </summary>
         /// <param name="x">Describe parameter.</param>
         /// <param name="xx">Describe parameter.</param>
@@ -283,7 +283,7 @@ namespace N
 
         /// <summary>
         /// Enter description for delegate.
-        /// ID string generated is "T:N.X.D". 
+        /// ID string generated is "T:N.X.D".
         /// </summary>
         /// <param name="i">Describe parameter.</param>
         public delegate void D(int i);

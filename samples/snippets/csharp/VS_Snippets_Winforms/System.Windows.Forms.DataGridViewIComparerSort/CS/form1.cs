@@ -68,9 +68,9 @@ class Form1 : Form
         DataGridView1.Columns[1].Name = "Last";
         DataGridView1.Columns["First"].HeaderText = "First Name";
         DataGridView1.Columns["Last"].HeaderText = "Last Name";
-        DataGridView1.Columns["First"].SortMode = 
+        DataGridView1.Columns["First"].SortMode =
             DataGridViewColumnSortMode.Programmatic;
-        DataGridView1.Columns["Last"].SortMode = 
+        DataGridView1.Columns["Last"].SortMode =
             DataGridViewColumnSortMode.Programmatic;
 
         // Add rows of data to the DataGridView.

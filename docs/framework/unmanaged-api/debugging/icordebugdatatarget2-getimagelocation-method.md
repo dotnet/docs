@@ -18,7 +18,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
   
 ## Parameters  
  `baseAddress`  
- [in] A [CORDB_ADDRESS](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
+ [in] A [CORDB_ADDRESS](../common-data-types-unmanaged-api-reference.md) value that represents the module's base address.  
   
  `cchName`  
  [in] The number of characters in the buffer that is to receive the module path.  
@@ -35,7 +35,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 > This method is available with .NET Native only.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

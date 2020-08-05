@@ -16,7 +16,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 > [!NOTE]
 > Special consideration is given to the *hybrid control* scenario. A hybrid control has a control from one technology nested in a control from the other technology. This is also called a *nested interoperation*. A *multilevel hybrid control* has more than one level of hybrid control nesting. An example of a multilevel nested interoperation is a Windows Forms control that contains a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control, which contains another Windows Forms control. Multilevel hybrid controls are not supported.  
 
-<a name="Windows_Presentation_Foundation_Application_Hosting"></a>   
+<a name="Windows_Presentation_Foundation_Application_Hosting"></a>
 ## Hosting Windows Forms Controls in WPF  
  The following interoperation scenarios are supported when a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control hosts a Windows Forms control:  
   
@@ -74,7 +74,7 @@ ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
 |Clipboard|All Clipboard operations work as usual. This includes cutting and pasting between Windows Forms and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
 |Drag-and-drop feature|All drag-and-drop operations work as usual. This includes operations between Windows Forms and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.|Not applicable.|  
   
-<a name="Windows_Forms_Application_Hosting_Windows"></a>   
+<a name="Windows_Forms_Application_Hosting_Windows"></a>
 ## Hosting WPF Controls in Windows Forms  
  The following interoperation scenarios are supported when a Windows Forms control hosts a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control:  
   

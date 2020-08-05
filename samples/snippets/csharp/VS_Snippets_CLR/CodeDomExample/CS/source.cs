@@ -12,21 +12,21 @@ using Microsoft.CSharp;
 using Microsoft.VisualBasic;
 using Microsoft.JScript;
 
-// This example demonstrates building a Hello World program graph 
+// This example demonstrates building a Hello World program graph
 // using System.CodeDom elements. It calls code generator and
 // code compiler methods to build the program using CSharp, VB, or
 // JScript.  A Windows Forms interface is included. Note: Code
-// must be compiled and linked with the Microsoft.JScript assembly. 
+// must be compiled and linked with the Microsoft.JScript assembly.
 namespace CodeDOMExample
 {
     class CodeDomExample
     {
         //<Snippet2>
-        // Build a Hello World program graph using 
+        // Build a Hello World program graph using
         // System.CodeDom types.
         public static CodeCompileUnit BuildHelloWorldGraph()
         {
-            // Create a new CodeCompileUnit to contain 
+            // Create a new CodeCompileUnit to contain
             // the program graph.
             CodeCompileUnit compileUnit = new CodeCompileUnit();
 
@@ -241,7 +241,7 @@ namespace CodeDOMExample
                                     | System.Windows.Forms.AnchorStyles.Right
                                     | System.Windows.Forms.AnchorStyles.Top;
             this.comboBox1.SelectedIndex = 0;
-            // Set properties for generate_button. 
+            // Set properties for generate_button.
             this.generate_button.Location = new System.Drawing.Point(8, 16);
             this.generate_button.Name = "generate_button";
             this.generate_button.Size = new System.Drawing.Size(120, 23);
@@ -260,7 +260,7 @@ namespace CodeDOMExample
             this.run_button.Size = new System.Drawing.Size(120, 23);
             this.run_button.Text = "Run";
             this.run_button.Click += new System.EventHandler(this.run_button_Click);
-            // Set properties for textBox1.        
+            // Set properties for textBox1.
             this.textBox1.Anchor = (System.Windows.Forms.AnchorStyles.Top
                                      | System.Windows.Forms.AnchorStyles.Bottom
                                      | System.Windows.Forms.AnchorStyles.Left
@@ -275,7 +275,7 @@ namespace CodeDOMExample
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(768, 340);
             this.MinimumSize = new System.Drawing.Size(750, 340);
-            this.Controls.AddRange(new System.Windows.Forms.Control[] {this.textBox1, 
+            this.Controls.AddRange(new System.Windows.Forms.Control[] {this.textBox1,
                 this.run_button, this.compile_button, this.generate_button,
                 this.comboBox1, this.label1 });
             this.Name = "CodeDomExampleForm";

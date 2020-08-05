@@ -1,5 +1,6 @@
 ---
 title: "Mapping Algorithm Names to Cryptography Classes"
+description: Map algorithm names to cryptography classes in .NET. A developer has four options for creating a cryptography object.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "mapping algorithm names"

@@ -30,17 +30,17 @@ Module Module1
         Console.WriteLine(myTest.Name & ": " & myTest.Number)
 
         ' Return an array produced by a PLINQ query.
-        Dim task3 As Task(Of String())= Task(Of String()).Factory.StartNew(Function()
+        Dim task3 As Task(Of String()) = Task(Of String()).Factory.StartNew(Function()
 
-                                                           Dim path = "C:\Users\Public\Pictures\Sample Pictures\"
-                                                           Dim files = System.IO.Directory.GetFiles(path)
+                                                                                Dim path = "C:\Users\Public\Pictures\Sample Pictures\"
+                                                                                Dim files = System.IO.Directory.GetFiles(path)
 
-                                                           Dim result = (From file In files.AsParallel()
-                                                                Let info = New System.IO.FileInfo(file)
-                                                                Where info.Extension = ".jpg"
-                                                                Select file).ToArray()
-                                                           Return result
-                                                       End Function)
+                                                                                Dim result = (From file In files.AsParallel()
+                                                                                              Let info = New System.IO.FileInfo(file)
+                                                                                              Where info.Extension = ".jpg"
+                                                                                              Select file).ToArray()
+                                                                                Return result
+                                                                            End Function)
 
         For Each name As String In task3.Result
             Console.WriteLine(name)

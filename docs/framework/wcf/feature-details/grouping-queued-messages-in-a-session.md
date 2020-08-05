@@ -39,7 +39,7 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
 4. Each service operation requires a transaction. Specify this with the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. The operation that completes the transaction should also set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete> to `true`.  
   
     ```csharp  
-    [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]   
+    [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]
     ```  
   
 5. Configure an endpoint that uses the system-provided `NetMsmqBinding` binding.  
@@ -56,7 +56,7 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
   
 1. Create a transaction scope to write to the transactional queue.  
   
-2. Create the WCF client using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool.  
+2. Create the WCF client using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) tool.  
   
 3. Place the order.  
   
@@ -77,5 +77,5 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
 
 ## See also
 
-- [Sessions and Queues](../../../../docs/framework/wcf/samples/sessions-and-queues.md)
-- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)
+- [Sessions and Queues](../samples/sessions-and-queues.md)
+- [Queues Overview](queues-overview.md)

@@ -31,7 +31,7 @@ HRESULT CorQueueUserWorkItem (
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -41,4 +41,4 @@ HRESULT CorQueueUserWorkItem (
   
 ## See also
 
-- [ICorThreadpool Interface](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)
+- [ICorThreadpool Interface](icorthreadpool-interface.md)

@@ -1,5 +1,5 @@
 ﻿//---------------------------------------------------------------------------
-// 
+//
 // File: HtmlTokenType.cs
 //
 // Copyright (C) Microsoft Corporation.  All rights reserved.

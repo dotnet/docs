@@ -33,7 +33,7 @@ namespace cs_udfs
             // <Snippet5>
             var custQuery =
                 from cust in db.Customers
-                select new {cust.ContactName, Title = 
+                select new {cust.ContactName, Title =
                     db.ReverseCustName(cust.ContactTitle)};
             // </Snippet5>
         }

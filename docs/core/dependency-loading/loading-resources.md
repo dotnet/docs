@@ -34,6 +34,7 @@ The .NET Core resource fallback process involves the following steps:
         >
         > [!NOTE]
         > On Linux and macOS, the subdirectory is case-sensitive and must either:
+        >
         > - Exactly match case.
         > - Be in lower case.
 

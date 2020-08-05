@@ -47,7 +47,7 @@ The expression `*myVariable` denotes the `int` variable found at the address con
 
 There are several examples of pointers in the topics [fixed Statement](../../language-reference/keywords/fixed-statement.md) and [Pointer Conversions](./pointer-conversions.md). The following example uses the `unsafe` keyword and the `fixed` statement, and shows how to increment an interior pointer.  You can paste this code into the Main function of a console application to run it. These examples must be compiled with the [-unsafe](../../language-reference/compiler-options/unsafe-compiler-option.md) compiler option set.
 
-[!code-csharp[Using pointer types](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#5)]
+[!code-csharp[Using pointer types](snippets/FixedKeywordExamples.cs#5)]
 
 You cannot apply the indirection operator to a pointer of type `void*`. However, you can use a cast to convert a void pointer to any other pointer type, and vice versa.
 
@@ -66,7 +66,7 @@ The following table lists the operators and statements that can operate on point
 |`++` and `--`|Increments and decrements pointers.|
 |`+` and `-`|Performs pointer arithmetic.|
 |`==`, `!=`, `<`, `>`, `<=`, and `>=`|Compares pointers.|
-|[`stackalloc` operator](../../language-reference/operators/stackalloc.md)|Allocates memory on the stack.|
+|[`stackalloc`](../../language-reference/operators/stackalloc.md)|Allocates memory on the stack.|
 |[`fixed` statement](../../language-reference/keywords/fixed-statement.md)|Temporarily fixes a variable so that its address may be found.|
 
 For more information about pointer related operators, see [Pointer related operators](../../language-reference/operators/pointer-related-operators.md).

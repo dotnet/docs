@@ -29,8 +29,8 @@ You can declare only an operator that is eligible for overloading. The following
   
 ## See also
 
-- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
-- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
-- [How to: Define an Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-an-operator.md)
-- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Operator Statement](../statements/operator-statement.md)
+- [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)
+- [How to: Define an Operator](../../programming-guide/language-features/procedures/how-to-define-an-operator.md)
+- [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Function Statement](../statements/function-statement.md)

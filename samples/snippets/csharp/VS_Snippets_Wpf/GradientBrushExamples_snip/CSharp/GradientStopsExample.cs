@@ -9,16 +9,16 @@ namespace Microsoft.Samples.GradientBrushExamples
 
     public class GradientStopsExample : Page
     {
-    
+
         private StackPanel myMainPanel;
-    
+
         public GradientStopsExample()
         {
             this.WindowTitle = "Gradient Stop Examples";
             this.Background = Brushes.White;
-            
+
             myMainPanel = new StackPanel();
-            
+
             createTransparentGradientStopExample();
 
             this.Content = myMainPanel;
@@ -28,12 +28,12 @@ namespace Microsoft.Samples.GradientBrushExamples
         {
             // <SnippetTransparentGradientStopExample1CSharp>
             LinearGradientBrush myLinearGradientBrush = new LinearGradientBrush();
-            
+
             // This gradient stop is partially transparent.
             myLinearGradientBrush.GradientStops.Add(
                 new GradientStop(Color.FromArgb(32, 0, 0, 255), 0.0));
-            
-            // This gradient stop is fully opaque. 
+
+            // This gradient stop is fully opaque.
             myLinearGradientBrush.GradientStops.Add(
                 new GradientStop(Color.FromArgb(255, 0, 0, 255), 1.0));
 
@@ -43,8 +43,8 @@ namespace Microsoft.Samples.GradientBrushExamples
             myRectangle.Fill = myLinearGradientBrush;
 
             // </SnippetTransparentGradientStopExample1CSharp>
-            
-            myMainPanel.Children.Add(myRectangle); 
+
+            myMainPanel.Children.Add(myRectangle);
         }
     }
 }

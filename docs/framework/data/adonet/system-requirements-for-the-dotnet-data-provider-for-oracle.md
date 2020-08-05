@@ -12,7 +12,7 @@ The .NET Framework Data Provider for Oracle requires Microsoft Data Access Compo
  Oracle Client software prior to version Oracle 9i cannot access UTF16 databases because UTF16 is a new feature in Oracle 9i. To use this feature, you must upgrade your client software to Oracle 9i or later.  
   
 ## Working with the Data Provider for Oracle and Unicode Data  
- 
+
 The following is a list of Unicode-related issues that you should consider when working with the .NET Framework Data Provider for Oracle and Oracle client libraries. For more information, see your Oracle documentation.  
   
 ### Setting the Unicode Value in a Connection String Attribute  

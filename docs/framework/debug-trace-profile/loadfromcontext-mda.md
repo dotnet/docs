@@ -1,5 +1,6 @@
 ---
 title: "loadFromContext MDA"
+description: Understand the loadFromContext managed debugging assistant (MDA) in .NET, which is activated if an assembly is loaded into the LoadFrom context.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), LoadFrom context"
@@ -56,8 +57,8 @@ namespace ConsoleApplication1
         static void Main(string[] args)  
         {  
             // The following call caused the LoadFrom context to be used  
-            // because the assembly is loaded using LoadFrom and the path is   
-            // located outside of the Load context probing path.   
+            // because the assembly is loaded using LoadFrom and the path is
+            // located outside of the Load context probing path.
             Assembly.LoadFrom(@"C:\Text\Test.dll");  
         }  
     }  

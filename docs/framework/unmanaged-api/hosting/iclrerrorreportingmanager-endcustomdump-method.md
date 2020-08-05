@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRErrorReportingManager::EndCustomDump Method
-Removes the custom stack dump configuration that was specified in an earlier call to the [ICLRErrorReportingManager::BeginCustomDump](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-begincustomdump-method.md) method.  
+Removes the custom stack dump configuration that was specified in an earlier call to the [ICLRErrorReportingManager::BeginCustomDump](iclrerrorreportingmanager-begincustomdump-method.md) method.  
   
 ## Syntax  
   
@@ -43,7 +43,7 @@ HRESULT EndCustomDump ();
 > Failure to call `EndCustomDump` causes memory to leak.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -53,6 +53,6 @@ HRESULT EndCustomDump ();
   
 ## See also
 
-- [CustomDumpItem Structure](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md)
-- [ECustomDumpFlavor Enumeration](../../../../docs/framework/unmanaged-api/hosting/ecustomdumpflavor-enumeration.md)
-- [ICLRErrorReportingManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrerrorreportingmanager-interface.md)
+- [CustomDumpItem Structure](customdumpitem-structure.md)
+- [ECustomDumpFlavor Enumeration](ecustomdumpflavor-enumeration.md)
+- [ICLRErrorReportingManager Interface](iclrerrorreportingmanager-interface.md)

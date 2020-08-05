@@ -48,13 +48,13 @@ ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
 ```csharp  
 ServiceHost svchost = new ServiceHost(typeof(Service1), baseAddress);  
             NetHttpBinding binding = new NetHttpBinding();  
-            svchost.AddServiceEndpoint(typeof(IService1), binding, address);   
+            svchost.AddServiceEndpoint(typeof(IService1), binding, address);
         }  
 ```  
   
 ## See also
 
-- [Configuring Bindings for Services](../../../../docs/framework/wcf/configuring-bindings-for-wcf-services.md)
-- [Bindings](../../../../docs/framework/wcf/feature-details/bindings.md)
-- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
-- [Duplex Services](../../../../docs/framework/wcf/feature-details/duplex-services.md)
+- [Configuring Bindings for Services](../configuring-bindings-for-wcf-services.md)
+- [Bindings](bindings.md)
+- [System-Provided Bindings](../system-provided-bindings.md)
+- [Duplex Services](duplex-services.md)

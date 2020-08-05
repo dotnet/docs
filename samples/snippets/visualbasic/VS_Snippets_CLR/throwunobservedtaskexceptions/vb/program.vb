@@ -13,13 +13,13 @@ Imports System.Threading.Tasks
 '</configuration>
 
 Public Class Example
-	Shared Sub Main()
+    Shared Sub Main()
         Task.Run(Sub() Throw New InvalidOperationException("test"))
-		Do
-			Thread.Sleep(100)
-			GC.Collect()
-			GC.WaitForPendingFinalizers()
-		Loop
-	End Sub
+        Do
+            Thread.Sleep(100)
+            GC.Collect()
+            GC.WaitForPendingFinalizers()
+        Loop
+    End Sub
 End Class
 '</Snippet1>

@@ -14,4 +14,4 @@ This error occurs as a result of either naming a new file with the name of an ex
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

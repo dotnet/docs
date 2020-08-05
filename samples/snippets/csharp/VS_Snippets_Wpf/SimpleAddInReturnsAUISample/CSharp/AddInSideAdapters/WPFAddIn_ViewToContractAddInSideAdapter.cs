@@ -18,14 +18,14 @@ namespace AddInSideAdapters
 
         public WPFAddIn_ViewToContractAddInSideAdapter(IWPFAddInView wpfAddInView)
         {
-            // Adapt the add-in view of the contract (IWPFAddInView) 
+            // Adapt the add-in view of the contract (IWPFAddInView)
             // to the contract (IWPFAddInContract)
             this.wpfAddInView = wpfAddInView;
         }
 
         public INativeHandleContract GetAddInUI()
         {
-            // Convert the FrameworkElement from the add-in to an INativeHandleContract 
+            // Convert the FrameworkElement from the add-in to an INativeHandleContract
             // that will be passed across the isolation boundary to the host application.
             FrameworkElement fe = this.wpfAddInView.GetAddInUI();
             INativeHandleContract inhc = FrameworkElementAdapters.ViewToContractAdapter(fe);

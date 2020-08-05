@@ -8,7 +8,7 @@ public class Example
    public static void Main()
    {
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("pl-PL");
-      string composite = "\u0041\u0300"; 
+      string composite = "\u0041\u0300";
       Console.WriteLine("Comparing using Char:   {0}", composite.IndexOf('\u00C0'));
       Console.WriteLine("Comparing using String: {0}", composite.IndexOf("\u00C0"));
    }

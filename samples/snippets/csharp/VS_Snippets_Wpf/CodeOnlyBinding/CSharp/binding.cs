@@ -35,7 +35,7 @@ namespace SDKSample
             BindingOperations.ClearBinding(myText, TextBlock.TextProperty);
             //<Snippet1>
             // Make a new source.
-            MyData myDataObject = new MyData(DateTime.Now);      
+            MyData myDataObject = new MyData(DateTime.Now);
             Binding myBinding = new Binding("MyDataProperty");
             myBinding.Source = myDataObject;
             // Bind the new data source to the myText TextBlock control's Text dependency property.

@@ -24,9 +24,9 @@ Gets a pointer to the MemberDef token for field or method that is enclosed by th
 ```cpp  
 HRESULT FindMember (  
    [in]  mdTypeDef         td,  
-   [in]  LPCWSTR           szName,   
-   [in]  PCCOR_SIGNATURE   pvSigBlob,   
-   [in]  ULONG             cbSigBlob,   
+   [in]  LPCWSTR           szName,
+   [in]  PCCOR_SIGNATURE   pvSigBlob,
+   [in]  ULONG             cbSigBlob,
    [out] mdToken           *pmb  
 );  
 ```  
@@ -55,10 +55,10 @@ HRESULT FindMember (
  `FindMember` finds only members that were defined directly in the class or interface; it does not find inherited members.  
   
 > [!NOTE]
-> `FindMember` is a helper method. It calls [IMetaDataImport::FindMethod](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-findmethod-method.md); if that call does not find a match, `FindMember` then calls [IMetaDataImport::FindField](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-findfield-method.md).  
+> `FindMember` is a helper method. It calls [IMetaDataImport::FindMethod](imetadataimport-findmethod-method.md); if that call does not find a match, `FindMember` then calls [IMetaDataImport::FindField](imetadataimport-findfield-method.md).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -68,5 +68,5 @@ HRESULT FindMember (
   
 ## See also
 
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
-- [IMetaDataImport2 Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport2-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)
+- [IMetaDataImport2 Interface](imetadataimport2-interface.md)

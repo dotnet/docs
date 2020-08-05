@@ -46,7 +46,7 @@ HRESULT Collect (
  The `Collect` method forces the CLR's garbage collector to perform a collection regardless of its current state.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -58,8 +58,8 @@ HRESULT Collect (
 
 - [Automatic Memory Management](../../../standard/automatic-memory-management.md)
 - [Garbage Collection](../../../standard/garbage-collection/index.md)
-- [ICLRControl Interface](../../../../docs/framework/unmanaged-api/hosting/iclrcontrol-interface.md)
-- [ICLRGCManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrgcmanager-interface.md)
-- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [ICLRControl Interface](iclrcontrol-interface.md)
+- [ICLRGCManager Interface](iclrgcmanager-interface.md)
+- [CLR Hosting Interfaces](clr-hosting-interfaces.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

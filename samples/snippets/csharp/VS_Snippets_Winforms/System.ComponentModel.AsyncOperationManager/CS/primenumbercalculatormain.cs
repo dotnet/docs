@@ -52,15 +52,15 @@ namespace AsyncOperationManagerExample
 			InitializeComponent();
 
             // Hook up event handlers.
-            this.primeNumberCalculator1.CalculatePrimeCompleted += 
+            this.primeNumberCalculator1.CalculatePrimeCompleted +=
                 new CalculatePrimeCompletedEventHandler(
                 primeNumberCalculator1_CalculatePrimeCompleted);
 
-            this.primeNumberCalculator1.ProgressChanged += 
+            this.primeNumberCalculator1.ProgressChanged +=
                 new ProgressChangedEventHandler(
                 primeNumberCalculator1_ProgressChanged);
 
-            this.listView1.SelectedIndexChanged += 
+            this.listView1.SelectedIndexChanged +=
                 new EventHandler(listView1_SelectedIndexChanged);
 		}
 
@@ -68,7 +68,7 @@ namespace AsyncOperationManagerExample
 		{
 			if( disposing )
 			{
-				if (components != null) 
+				if (components != null)
 				{
 					components.Dispose();
 				}
@@ -83,13 +83,13 @@ namespace AsyncOperationManagerExample
         #region Implementation
 
         // This event handler selects a number randomly to test
-        // for primality. It then starts the asynchronous 
+        // for primality. It then starts the asynchronous
         // calculation by calling the PrimeNumberCalculator
         // component's CalculatePrimeAsync method.
         private void startAsyncButton_Click (
             System.Object sender, System.EventArgs e)
         {
-            // Randomly choose test numbers 
+            // Randomly choose test numbers
             // up to 200,000 for primality.
             Random rand = new Random();
             int testNumber = rand.Next(200000);
@@ -97,7 +97,7 @@ namespace AsyncOperationManagerExample
             // Task IDs are Guids.
             Guid taskId = Guid.NewGuid();
             this.AddListViewItem(taskId, testNumber);
-            
+
             // Start the asynchronous task.
             this.primeNumberCalculator1.CalculatePrimeAsync(
                 testNumber,
@@ -105,7 +105,7 @@ namespace AsyncOperationManagerExample
         }
 
         private void listView1_SelectedIndexChanged(
-            object sender, 
+            object sender,
             EventArgs e)
         {
             this.cancelButton.Enabled = CanCancel();
@@ -114,15 +114,15 @@ namespace AsyncOperationManagerExample
         // This event handler cancels all pending tasks that are
         // selected in the ListView control.
         private void cancelButton_Click(
-            System.Object sender, 
+            System.Object sender,
             System.EventArgs e)
-        {   
+        {
             Guid taskId = Guid.Empty;
 
             // Cancel all selected tasks.
             foreach(ListViewItem lvi in this.listView1.SelectedItems)
             {
-                // Tasks that have been completed or canceled have 
+                // Tasks that have been completed or canceled have
                 // their corresponding ListViewItem.Tag property
                 // set to null.
                 if (lvi.Tag != null)
@@ -141,9 +141,9 @@ namespace AsyncOperationManagerExample
         // PrimeNumberCalculator raises the ProgressChanged event.
         //
         // On fast computers, the PrimeNumberCalculator can raise many
-        // successive ProgressChanged events, so the user interface 
+        // successive ProgressChanged events, so the user interface
         // may be flooded with messages. To prevent the user interface
-        // from hanging, progress is only reported at intervals. 
+        // from hanging, progress is only reported at intervals.
         private void primeNumberCalculator1_ProgressChanged(
             ProgressChangedEventArgs e)
         {
@@ -170,7 +170,7 @@ namespace AsyncOperationManagerExample
             }
             else if (this.progressCounter > this.progressInterval)
             {
-                this.progressCounter = 0; 
+                this.progressCounter = 0;
             }
         }
         // </snippet40>
@@ -181,13 +181,13 @@ namespace AsyncOperationManagerExample
         // event. The ListView item is updated with the appropriate
         // outcome of the calculation: Canceled, Error, or result.
         private void primeNumberCalculator1_CalculatePrimeCompleted(
-            object sender, 
+            object sender,
             CalculatePrimeCompletedEventArgs e)
         {
             Guid taskId = (Guid)e.UserState;
 
             if (e.Cancelled)
-            {   
+            {
                 string result = "Canceled";
 
                 ListViewItem lvi = UpdateListViewItem(taskId, result);
@@ -212,12 +212,12 @@ namespace AsyncOperationManagerExample
                 }
             }
             else
-            {   
+            {
                 bool result = e.IsPrime;
 
                 ListViewItem lvi = UpdateListViewItem(
-                    taskId, 
-                    result, 
+                    taskId,
+                    result,
                     e.FirstDivisor);
 
                 if (lvi != null)
@@ -235,8 +235,8 @@ namespace AsyncOperationManagerExample
         //
         #region Private Methods
 
-        private ListViewItem AddListViewItem( 
-            Guid guid, 
+        private ListViewItem AddListViewItem(
+            Guid guid,
             int testNumber )
         {
             ListViewItem lvi = new ListViewItem();
@@ -256,8 +256,8 @@ namespace AsyncOperationManagerExample
         }
 
         private ListViewItem UpdateListViewItem(
-            Guid guid, 
-            int percentComplete, 
+            Guid guid,
+            int percentComplete,
             int current )
         {
             ListViewItem lviRet = null;
@@ -268,10 +268,10 @@ namespace AsyncOperationManagerExample
                 {
                     if ((Guid)lvi.Tag == guid)
                     {
-                        lvi.SubItems[1].Text = 
+                        lvi.SubItems[1].Text =
                             percentComplete.ToString(
                             CultureInfo.CurrentCulture.NumberFormat);
-                        lvi.SubItems[2].Text = 
+                        lvi.SubItems[2].Text =
                             current.ToString(
                             CultureInfo.CurrentCulture.NumberFormat);
                         lviRet = lvi;
@@ -283,9 +283,9 @@ namespace AsyncOperationManagerExample
             return lviRet;
         }
 
-        private ListViewItem UpdateListViewItem( 
-            Guid guid, 
-            int percentComplete, 
+        private ListViewItem UpdateListViewItem(
+            Guid guid,
+            int percentComplete,
             int current,
             bool result,
             int firstDivisor )
@@ -296,15 +296,15 @@ namespace AsyncOperationManagerExample
             {
                 if ((Guid)lvi.Tag == guid)
                 {
-                    lvi.SubItems[1].Text = 
+                    lvi.SubItems[1].Text =
                         percentComplete.ToString(
                         CultureInfo.CurrentCulture.NumberFormat);
-                    lvi.SubItems[2].Text = 
+                    lvi.SubItems[2].Text =
                         current.ToString(
                         CultureInfo.CurrentCulture.NumberFormat);
-                    lvi.SubItems[4].Text = 
+                    lvi.SubItems[4].Text =
                         result ? "Prime" : "Composite";
-                    lvi.SubItems[5].Text = 
+                    lvi.SubItems[5].Text =
                         firstDivisor.ToString(
                         CultureInfo.CurrentCulture.NumberFormat);
 
@@ -318,7 +318,7 @@ namespace AsyncOperationManagerExample
         }
 
         private ListViewItem UpdateListViewItem(
-            Guid guid, 
+            Guid guid,
             int percentComplete )
         {
             ListViewItem lviRet = null;
@@ -329,7 +329,7 @@ namespace AsyncOperationManagerExample
                 {
                     if ((Guid)lvi.Tag == guid)
                     {
-                        lvi.SubItems[1].Text = 
+                        lvi.SubItems[1].Text =
                             percentComplete.ToString(
                             CultureInfo.CurrentCulture.NumberFormat);
                         lviRet = lvi;
@@ -342,8 +342,8 @@ namespace AsyncOperationManagerExample
         }
 
         private ListViewItem UpdateListViewItem(
-            Guid guid, 
-            bool result, 
+            Guid guid,
+            bool result,
             int firstDivisor )
         {
             ListViewItem lviRet = null;
@@ -354,9 +354,9 @@ namespace AsyncOperationManagerExample
                 {
                     if ((Guid)lvi.Tag == guid)
                     {
-                        lvi.SubItems[4].Text = 
+                        lvi.SubItems[4].Text =
                             result ? "Prime" : "Composite";
-                        lvi.SubItems[5].Text = 
+                        lvi.SubItems[5].Text =
                             firstDivisor.ToString(
                             CultureInfo.CurrentCulture.NumberFormat);
                         lviRet = lvi;
@@ -369,7 +369,7 @@ namespace AsyncOperationManagerExample
         }
 
         private ListViewItem UpdateListViewItem(
-            Guid guid, 
+            Guid guid,
             string result)
         {
             ListViewItem lviRet = null;
@@ -406,7 +406,7 @@ namespace AsyncOperationManagerExample
             return( oneIsActive == true );
         }
 
-        #endregion 
+        #endregion
 
 		#region Windows Form Designer generated code
 		
@@ -429,9 +429,9 @@ namespace AsyncOperationManagerExample
             this.taskGroupBox.SuspendLayout();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
+            //
             // taskGroupBox
-            // 
+            //
             this.taskGroupBox.Controls.Add(this.buttonPanel);
             this.taskGroupBox.Controls.Add(this.listView1);
             this.taskGroupBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -441,9 +441,9 @@ namespace AsyncOperationManagerExample
             this.taskGroupBox.TabIndex = 1;
             this.taskGroupBox.TabStop = false;
             this.taskGroupBox.Text = "Tasks";
-            // 
+            //
             // buttonPanel
-            // 
+            //
             this.buttonPanel.Controls.Add(this.cancelButton);
             this.buttonPanel.Controls.Add(this.startAsyncButton);
             this.buttonPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -451,9 +451,9 @@ namespace AsyncOperationManagerExample
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Size = new System.Drawing.Size(602, 75);
             this.buttonPanel.TabIndex = 1;
-            // 
+            //
             // cancelButton
-            // 
+            //
             this.cancelButton.Enabled = false;
             this.cancelButton.Location = new System.Drawing.Point(128, 24);
             this.cancelButton.Name = "cancelButton";
@@ -461,18 +461,18 @@ namespace AsyncOperationManagerExample
             this.cancelButton.TabIndex = 1;
             this.cancelButton.Text = "Cancel";
             this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
-            // 
+            //
             // startAsyncButton
-            // 
+            //
             this.startAsyncButton.Location = new System.Drawing.Point(24, 24);
             this.startAsyncButton.Name = "startAsyncButton";
             this.startAsyncButton.Size = new System.Drawing.Size(88, 23);
             this.startAsyncButton.TabIndex = 0;
             this.startAsyncButton.Text = "Start New Task";
             this.startAsyncButton.Click += new System.EventHandler(this.startAsyncButton_Click);
-            // 
+            //
             // listView1
-            // 
+            //
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
                 this.testNumberColHeader,
                 this.progressColHeader,
@@ -488,43 +488,43 @@ namespace AsyncOperationManagerExample
             this.listView1.Size = new System.Drawing.Size(602, 160);
             this.listView1.TabIndex = 0;
             this.listView1.View = System.Windows.Forms.View.Details;
-            // 
+            //
             // testNumberColHeader
-            // 
+            //
             this.testNumberColHeader.Text = "Test Number";
             this.testNumberColHeader.Width = 80;
-            // 
+            //
             // progressColHeader
-            // 
+            //
             this.progressColHeader.Text = "Progress";
-            // 
+            //
             // currentColHeader
-            // 
+            //
             this.currentColHeader.Text = "Current";
-            // 
+            //
             // taskIdColHeader
-            // 
+            //
             this.taskIdColHeader.Text = "Task ID";
             this.taskIdColHeader.Width = 200;
-            // 
+            //
             // resultColHeader
-            // 
+            //
             this.resultColHeader.Text = "Result";
             this.resultColHeader.Width = 80;
-            // 
+            //
             // firstDivisorColHeader
-            // 
+            //
             this.firstDivisorColHeader.Text = "First Divisor";
             this.firstDivisorColHeader.Width = 80;
-            // 
+            //
             // panel2
-            // 
+            //
             this.panel2.Location = new System.Drawing.Point(200, 128);
             this.panel2.Name = "panel2";
             this.panel2.TabIndex = 2;
-            // 
+            //
             // PrimeNumberCalculatorMain
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(608, 254);
             this.Controls.Add(this.taskGroupBox);
             this.Name = "PrimeNumberCalculatorMain";
@@ -536,7 +536,7 @@ namespace AsyncOperationManagerExample
 		#endregion
 
 		[STAThread]
-		static void Main() 
+		static void Main()
 		{
 			Application.Run(new PrimeNumberCalculatorMain());
         }
@@ -573,7 +573,7 @@ namespace AsyncOperationManagerExample
         // </snippet9>
 
         // <snippet23>
-        private HybridDictionary userStateToLifetime = 
+        private HybridDictionary userStateToLifetime =
             new HybridDictionary();
         // </snippet23>
 
@@ -593,7 +593,7 @@ namespace AsyncOperationManagerExample
         #region Construction and destruction
 
         public PrimeNumberCalculator(IContainer container)
-        {   
+        {
             container.Add(this);
             InitializeComponent();
 
@@ -602,7 +602,7 @@ namespace AsyncOperationManagerExample
 
         // <snippet21>
         public PrimeNumberCalculator()
-        {   
+        {
             InitializeComponent();
 
             InitializeDelegates();
@@ -638,9 +638,9 @@ namespace AsyncOperationManagerExample
         #region Implementation
 
         // <snippet3>
-        // This method starts an asynchronous calculation. 
+        // This method starts an asynchronous calculation.
         // First, it checks the supplied task ID for uniqueness.
-        // If taskId is unique, it creates a new WorkerEventHandler 
+        // If taskId is unique, it creates a new WorkerEventHandler
         // and calls its BeginInvoke method to start the calculation.
         public virtual void CalculatePrimeAsync(
             int numberToTest,
@@ -657,7 +657,7 @@ namespace AsyncOperationManagerExample
                 if (userStateToLifetime.Contains(taskId))
                 {
                     throw new ArgumentException(
-                        "Task ID parameter must be unique", 
+                        "Task ID parameter must be unique",
                         "taskId");
                 }
 
@@ -675,7 +675,7 @@ namespace AsyncOperationManagerExample
         // </snippet3>
 
         // <snippet32>
-        // Utility method for determining if a 
+        // Utility method for determining if a
         // task has been canceled.
         private bool TaskCanceled(object taskId)
         {
@@ -689,7 +689,7 @@ namespace AsyncOperationManagerExample
         {
             AsyncOperation asyncOp = userStateToLifetime[taskId] as AsyncOperation;
             if (asyncOp != null)
-            {   
+            {
                 lock (userStateToLifetime.SyncRoot)
                 {
                     userStateToLifetime.Remove(taskId);
@@ -716,7 +716,7 @@ namespace AsyncOperationManagerExample
             {
                 try
                 {
-                    // Find all the prime numbers up to 
+                    // Find all the prime numbers up to
                     // the square root of numberToTest.
                     ArrayList primes = BuildPrimeNumberList(
                         numberToTest,
@@ -774,7 +774,7 @@ namespace AsyncOperationManagerExample
             primes.Add(3);
 
             // Do the work.
-            while (n < numberToTest && 
+            while (n < numberToTest &&
                    !TaskCanceled( asyncOp.UserSuppliedState ) )
             {
                 if (IsPrime(primes, n, out firstDivisor))
@@ -802,7 +802,7 @@ namespace AsyncOperationManagerExample
         // </snippet5>
 
         // <snippet28>
-        // This method tests n for primality against the list of 
+        // This method tests n for primality against the list of
         // prime numbers contained in the primes parameter.
         private bool IsPrime(
             ArrayList primes,
@@ -819,14 +819,14 @@ namespace AsyncOperationManagerExample
             // Stop the search if:
             // there are no more primes in the list,
             // there is a divisor of n in the list, or
-            // there is a prime that is larger than 
+            // there is a prime that is larger than
             // the square root of n.
             while (
                 (i < primes.Count) &&
                 !foundDivisor &&
                 !exceedsSquareRoot)
             {
-                // The divisor variable will be the smallest 
+                // The divisor variable will be the smallest
                 // prime number not yet tried.
                 divisor = (int)primes[i++];
 
@@ -888,14 +888,14 @@ namespace AsyncOperationManagerExample
         // </snippet24>
 
         // <snippet26>
-        // This is the method that the underlying, free-threaded 
+        // This is the method that the underlying, free-threaded
         // asynchronous behavior will invoke.  This will happen on
         // an arbitrary thread.
-        private void CompletionMethod( 
+        private void CompletionMethod(
             int numberToTest,
-            int firstDivisor, 
+            int firstDivisor,
             bool isPrime,
-            Exception exception, 
+            Exception exception,
             bool canceled,
             AsyncOperation asyncOp )
 
@@ -910,7 +910,7 @@ namespace AsyncOperationManagerExample
                 }
             }
 
-            // Package the results of the operation in a 
+            // Package the results of the operation in a
             // CalculatePrimeCompletedEventArgs.
             CalculatePrimeCompletedEventArgs e =
                 new CalculatePrimeCompletedEventArgs(
@@ -921,11 +921,11 @@ namespace AsyncOperationManagerExample
                 canceled,
                 asyncOp.UserSuppliedState);
 
-            // End the task. The asyncOp object is responsible 
+            // End the task. The asyncOp object is responsible
             // for marshaling the call.
             asyncOp.PostOperationCompleted(onCompletedDelegate, e);
 
-            // Note that after the call to OperationCompleted, 
+            // Note that after the call to OperationCompleted,
             // asyncOp is no longer usable, and any attempt to use it
             // will cause an exception to be thrown.
         }
@@ -942,7 +942,7 @@ namespace AsyncOperationManagerExample
         }
 
         #endregion
-        
+
     }
 
     // <snippet29>
@@ -994,11 +994,11 @@ namespace AsyncOperationManagerExample
         {
             get
             {
-                // Raise an exception if the operation failed or 
+                // Raise an exception if the operation failed or
                 // was canceled.
                 RaiseExceptionIfNecessary();
 
-                // If the operation was successful, return the 
+                // If the operation was successful, return the
                 // property value.
                 return numberToTestValue;
             }
@@ -1008,11 +1008,11 @@ namespace AsyncOperationManagerExample
         {
             get
             {
-                // Raise an exception if the operation failed or 
+                // Raise an exception if the operation failed or
                 // was canceled.
                 RaiseExceptionIfNecessary();
 
-                // If the operation was successful, return the 
+                // If the operation was successful, return the
                 // property value.
                 return firstDivisorValue;
             }
@@ -1022,11 +1022,11 @@ namespace AsyncOperationManagerExample
         {
             get
             {
-                // Raise an exception if the operation failed or 
+                // Raise an exception if the operation failed or
                 // was canceled.
                 RaiseExceptionIfNecessary();
 
-                // If the operation was successful, return the 
+                // If the operation was successful, return the
                 // property value.
                 return isPrimeValue;
             }

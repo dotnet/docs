@@ -1,5 +1,6 @@
 ---
 title: "Cancellation in Managed Threads"
+description: Understand cancellation in managed threads. Learn about cancellation tokens in cooperative cancellation of asynchronous or long-running synchronous operations.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -27,7 +28,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
   
  The following illustration shows the relationship between a token source and all the copies of its token.  
   
- ![CancellationTokenSource and cancellation tokens](../../../docs/standard/threading/media/vs-cancellationtoken.png "VS_CancellationToken")  
+ ![CancellationTokenSource and cancellation tokens](media/vs-cancellationtoken.png "VS_CancellationToken")  
   
  The new cancellation model makes it easier to create cancellation-aware applications and libraries, and it supports the following features:  
   
@@ -58,7 +59,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
  In the following example, the requesting object creates a <xref:System.Threading.CancellationTokenSource> object, and then passes its <xref:System.Threading.CancellationTokenSource.Token%2A> property to the cancelable operation. The operation that receives the request monitors the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property of the token by polling. When the value becomes `true`, the listener can terminate in whatever manner is appropriate. In this example, the method just exits, which is all that is required in many cases.  
   
 > [!NOTE]
-> The example uses the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> method to demonstrate that the new cancellation framework is compatible with legacy APIs. For an example that uses the new, preferred <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> type, see [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md).  
+> The example uses the <xref:System.Threading.ThreadPool.QueueUserWorkItem%2A> method to demonstrate that the new cancellation framework is compatible with legacy APIs. For an example that uses the new, preferred <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> type, see [How to: Cancel a Task and Its Children](../parallel-programming/how-to-cancel-a-task-and-its-children.md).  
   
  [!code-csharp[Cancellation#1](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex1.cs#1)]
  [!code-vb[Cancellation#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex1.vb#1)]  
@@ -78,7 +79,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
   
  However, in more complex cases, it might be necessary for the user delegate to notify library code that cancellation has occurred. In such cases, the correct way to terminate the operation is for the delegate to call the <xref:System.Threading.CancellationToken.ThrowIfCancellationRequested%2A>, method, which will cause an <xref:System.OperationCanceledException> to be thrown. Library code can catch this exception on the user delegate thread and examine the exception's token to determine whether the exception indicates cooperative cancellation or some other exceptional situation.  
   
- The <xref:System.Threading.Tasks.Task> class handles <xref:System.OperationCanceledException> in this way. For more information, see [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md).  
+ The <xref:System.Threading.Tasks.Task> class handles <xref:System.OperationCanceledException> in this way. For more information, see [Task Cancellation](../parallel-programming/task-cancellation.md).  
   
 ### Listening by Polling  
  For long-running computations that loop or recurse, you can listen for a cancellation request by periodically polling the value of the <xref:System.Threading.CancellationToken.IsCancellationRequested%2A?displayProperty=nameWithType> property. If its value is `true`, the method should clean up and terminate as quickly as possible. The optimal frequency of polling depends on the type of application. It is up to the developer to determine the best polling frequency for any given program. Polling itself does not significantly impact performance. The following example shows one possible way to poll.  
@@ -86,7 +87,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
  [!code-csharp[Cancellation#3](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex11.cs#3)]
  [!code-vb[Cancellation#3](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex11.vb#3)]  
   
- For a more complete example, see [How to: Listen for Cancellation Requests by Polling](../../../docs/standard/threading/how-to-listen-for-cancellation-requests-by-polling.md).  
+ For a more complete example, see [How to: Listen for Cancellation Requests by Polling](how-to-listen-for-cancellation-requests-by-polling.md).  
   
 ### Listening by Registering a Callback  
  Some operations can become blocked in such a way that they cannot check the value of the cancellation token in a timely manner. For these cases, you can register a callback method that unblocks the method when a cancellation request is received.  
@@ -106,7 +107,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
   
 - Callbacks should not perform any manual thread or <xref:System.Threading.SynchronizationContext> usage in a callback. If a callback must run on a particular thread, use the <xref:System.Threading.CancellationTokenRegistration?displayProperty=nameWithType> constructor that enables you to specify that the target syncContext is the active <xref:System.Threading.SynchronizationContext.Current%2A?displayProperty=nameWithType>. Performing manual threading in a callback can cause deadlock.  
   
- For a more complete example, see [How to: Register Callbacks for Cancellation Requests](../../../docs/standard/threading/how-to-register-callbacks-for-cancellation-requests.md).  
+ For a more complete example, see [How to: Register Callbacks for Cancellation Requests](how-to-register-callbacks-for-cancellation-requests.md).  
   
 ### Listening by Using a Wait Handle  
  When a cancelable operation can block while it waits on a synchronization primitive such as a <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> or <xref:System.Threading.Semaphore?displayProperty=nameWithType>, you can use the <xref:System.Threading.CancellationToken.WaitHandle%2A?displayProperty=nameWithType> property to enable the operation to wait on both the event and the cancellation request. The wait handle of the cancellation token will become signaled in response to a cancellation request, and the method can use the return value of the <xref:System.Threading.WaitHandle.WaitAny%2A> method to determine whether it was the cancellation token that signaled. The operation can then just exit, or throw a <xref:System.OperationCanceledException>, as appropriate.  
@@ -119,7 +120,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
  [!code-csharp[Cancellation#6](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex10.cs#6)]
  [!code-vb[Cancellation#6](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex10.vb#6)]  
   
- For a more complete example, see [How to: Listen for Cancellation Requests That Have Wait Handles](../../../docs/standard/threading/how-to-listen-for-cancellation-requests-that-have-wait-handles.md).  
+ For a more complete example, see [How to: Listen for Cancellation Requests That Have Wait Handles](how-to-listen-for-cancellation-requests-that-have-wait-handles.md).  
   
 ### Listening to Multiple Tokens Simultaneously  
  In some cases, a listener may have to listen to multiple cancellation tokens simultaneously. For example, a cancelable operation may have to monitor an internal cancellation token in addition to a token passed in externally as an argument to a method parameter. To accomplish this, create a linked token source that can join two or more tokens into one token, as shown in the following example.  
@@ -127,7 +128,7 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
  [!code-csharp[Cancellation#7](../../../samples/snippets/csharp/VS_Snippets_Misc/cancellation/cs/cancellationex13.cs#7)]
  [!code-vb[Cancellation#7](../../../samples/snippets/visualbasic/VS_Snippets_Misc/cancellation/vb/cancellationex13.vb#7)]  
   
- Notice that you must call `Dispose` on the linked token source when you are done with it. For a more complete example, see [How to: Listen for Multiple Cancellation Requests](../../../docs/standard/threading/how-to-listen-for-multiple-cancellation-requests.md).  
+ Notice that you must call `Dispose` on the linked token source when you are done with it. For a more complete example, see [How to: Listen for Multiple Cancellation Requests](how-to-listen-for-multiple-cancellation-requests.md).  
   
 ## Cooperation Between Library Code and User Code  
  The unified cancellation framework makes it possible for library code to cancel user code, and for user code to cancel library code in a cooperative manner. Smooth cooperation depends on each side following these guidelines:  
@@ -138,8 +139,8 @@ Starting with the .NET Framework 4, the .NET Framework uses a unified model for 
   
 - User-delegates should attempt to respond to cancellation requests from library code in a timely manner.  
   
- <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType> are examples of classes that follow these guidelines. For more information, see [Task Cancellation](../../../docs/standard/parallel-programming/task-cancellation.md) and [How to: Cancel a PLINQ Query](../../../docs/standard/parallel-programming/how-to-cancel-a-plinq-query.md).  
+ <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> and <xref:System.Linq.ParallelEnumerable?displayProperty=nameWithType> are examples of classes that follow these guidelines. For more information, see [Task Cancellation](../parallel-programming/task-cancellation.md) and [How to: Cancel a PLINQ Query](../parallel-programming/how-to-cancel-a-plinq-query.md).  
   
 ## See also
 
-- [Managed Threading Basics](../../../docs/standard/threading/managed-threading-basics.md)
+- [Managed Threading Basics](managed-threading-basics.md)

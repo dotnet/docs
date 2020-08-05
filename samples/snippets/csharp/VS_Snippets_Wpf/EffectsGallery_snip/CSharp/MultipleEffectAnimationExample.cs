@@ -59,21 +59,21 @@ namespace SDKSample
 
             myButton.BitmapEffect = myBitmapEffectGroup;
 
-            // Create an animation to animate the ScaleX property of the 
+            // Create an animation to animate the ScaleX property of the
             // ScaleTransform applied to the button.
             DoubleAnimation myDoubleAnimationScaleX = new DoubleAnimation();
             myDoubleAnimationScaleX.Duration = TimeSpan.FromSeconds(1);
             myDoubleAnimationScaleX.AutoReverse = true;
             myDoubleAnimationScaleX.To = 5;
 
-            // Set the animation to target the ScaleX property of 
+            // Set the animation to target the ScaleX property of
             // the object named "MyAnimatedScaleTransform. This makes the
             // button get larger and smaller on the horizontal axis."
             Storyboard.SetTargetName(myDoubleAnimationScaleX, "MyAnimatedScaleTransform");
             Storyboard.SetTargetProperty(
                 myDoubleAnimationScaleX, new PropertyPath(ScaleTransform.ScaleXProperty));
 
-            // Set the animation to target the ScaleY property of 
+            // Set the animation to target the ScaleY property of
             // the object named "MyAnimatedScaleTransform. This makes the
             // button get larger and smaller on the vertical axis."
             DoubleAnimation myDoubleAnimationScaleY = new DoubleAnimation();
@@ -85,7 +85,7 @@ namespace SDKSample
             Storyboard.SetTargetProperty(
                 myDoubleAnimationScaleY, new PropertyPath(ScaleTransform.ScaleYProperty));
 
-            // Set the animation to target the ShadowDepth property of 
+            // Set the animation to target the ShadowDepth property of
             // the object named "myDropShadowBitmapEffect. This makes the
             // button appear to be lifting off the screen as its shadow moves."
             DoubleAnimation myDoubleAnimationShadowDepth = new DoubleAnimation();
@@ -100,7 +100,7 @@ namespace SDKSample
 
             // Animate the blur to make the object appear to
             // be comming out of the screen. Use a spline key
-            // frame to make the blur animate suddenly at the 
+            // frame to make the blur animate suddenly at the
             // very end of the animation.
             DoubleAnimationUsingKeyFrames myDoubleAnimationUsingKeyFrames = new DoubleAnimationUsingKeyFrames();
             myDoubleAnimationUsingKeyFrames.AutoReverse = true;
@@ -134,7 +134,7 @@ namespace SDKSample
             StackPanel myStackPanel = new StackPanel();
             myStackPanel.Children.Add(myButton);
             this.Content = myStackPanel;
-        }      
+        }
     }
 }
 // </SnippetMultipleEffectAnimationExampleWholePage>

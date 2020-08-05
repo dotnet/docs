@@ -22,10 +22,10 @@ namespace BT2
         private DataGridView dataGridView2;
         private CheckBox cachePositionCheckBox;
         public DataSet set1;
-       
+
         private void InitializeControlsAndDataSource()
         {
-            // Initialize the controls and set location, size and 
+            // Initialize the controls and set location, size and
             // other basic properties.
             this.dataGridView1 = new DataGridView();
             this.bindingSource1 = new BindingSource();
@@ -39,10 +39,10 @@ namespace BT2
             this.dataGridView1.Size = new Size(292, 170);
             this.button1.Location = new System.Drawing.Point(18, 175);
             this.button1.Size = new System.Drawing.Size(125, 23);
-        
+
             button1.Text = "Clear Parent Field";
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.dataGridView2.ColumnHeadersHeightSizeMode = 
+            this.dataGridView2.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(0, 225);
             this.dataGridView2.Size = new System.Drawing.Size(309, 130);
@@ -57,13 +57,13 @@ namespace BT2
             this.Controls.Add(this.cachePositionCheckBox);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.button1);
-          
+
             // Initialize the data.
             set1 = InitializeDataSet();
-           
+
             // Set the data source to the DataSet.
             bindingSource1.DataSource = set1;
-           
+
             //Set the DataMember to the Menu table.
             bindingSource1.DataMember = "Customers";
 
@@ -75,18 +75,18 @@ namespace BT2
             dataGridView2.DataMember = "custOrders";
 
             // Get the currency manager for the customer orders binding.
-            CurrencyManager relatedCM = 
+            CurrencyManager relatedCM =
                 bindingSource1.GetRelatedCurrencyManager("custOrders");
-            
+
             // Set the position in the child table for demonstration purposes.
             relatedCM.Position = 3;
 
             // Handle the current changed event. This event occurs when
             // the current item is changed, but not when a field of the current
             // item is changed.
-            bindingSource1.CurrentChanged += 
+            bindingSource1.CurrentChanged +=
                 new EventHandler(bindingSource1_CurrentChanged);
-            
+
             // Handle the two events for caching and resetting the position.
             relatedCM.ListChanged += new ListChangedEventHandler(relatedCM_ListChanged);
             relatedCM.PositionChanged
@@ -147,7 +147,7 @@ namespace BT2
         void relatedCM_ListChanged(object sender, ListChangedEventArgs e)
         {
             // Check to see if this is a caching situation.
-            if (cacheChildPosition && cachePositionCheckBox.Checked) 
+            if (cacheChildPosition && cachePositionCheckBox.Checked)
             {
                 // If so, check to see if it is a reset situation, and the current
                 // position is greater than zero.
@@ -162,7 +162,7 @@ namespace BT2
         //<snippet5>
         void bindingSource1_CurrentChanged(object sender, EventArgs e)
         {
-            // If the CurrentChanged event occurs, this is not a caching 
+            // If the CurrentChanged event occurs, this is not a caching
             // situation.
             cacheChildPosition = false;
         }
@@ -175,8 +175,8 @@ namespace BT2
             {
                 CurrencyManager relatedCM = sender as CurrencyManager;
 
-                // If so, check to see if the current position is 
-                // not equal to the cached position and the cached 
+                // If so, check to see if the current position is
+                // not equal to the cached position and the cached
                 // position is not out of bounds.
                 if (relatedCM.Position != cachedPosition && cachedPosition
                     > 0 && cachedPosition < relatedCM.Count)
@@ -195,7 +195,7 @@ namespace BT2
             DataRow row1 = set1.Tables[0].Rows[0];
             row1[1] = DBNull.Value;
         }
-        
+
         [STAThread]
         static void Main()
         {

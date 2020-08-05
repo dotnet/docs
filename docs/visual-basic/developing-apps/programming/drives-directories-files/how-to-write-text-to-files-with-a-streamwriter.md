@@ -33,5 +33,5 @@ This example opens a <xref:System.IO.StreamWriter> object with the `My.Computer.
 
 - <xref:System.IO.StreamWriter>
 - <xref:Microsoft.VisualBasic.FileIO.FileSystem.OpenTextFileWriter%2A>
-- [How to: Read from Text Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)
-- [Writing to Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/writing-to-files.md)
+- [How to: Read from Text Files](how-to-read-from-text-files.md)
+- [Writing to Files](writing-to-files.md)

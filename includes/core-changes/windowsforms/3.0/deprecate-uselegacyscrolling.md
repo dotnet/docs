@@ -27,7 +27,7 @@ Windows Forms
 
 <!-- 
 
-### Affected APIs
+#### Affected APIs
 
 - `M:System.Windows.Forms.DomainUpDown.DownButton`
 - `M:System.Windows.Forms.DomainUpDown.UpButton`

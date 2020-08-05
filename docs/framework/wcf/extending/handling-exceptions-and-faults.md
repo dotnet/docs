@@ -17,9 +17,9 @@ Exceptions are used to communicate errors locally within the service or the clie
 |<xref:System.ServiceModel.AddressAlreadyInUseException>|The endpoint address specified for listening is already in use.|If present, provides more details about the transport error that caused this exception. For example. <xref:System.IO.PipeException>, <xref:System.Net.HttpListenerException>, or <xref:System.Net.Sockets.SocketException>.|Try a different address.|  
 |<xref:System.ServiceModel.AddressAccessDeniedException>|The process is not allowed access to the endpoint address specified for listening.|If present, provides more details about the transport error that caused this exception. For example, <xref:System.IO.PipeException>, or <xref:System.Net.HttpListenerException>.|Try with different credentials.|  
 |<xref:System.ServiceModel.CommunicationObjectFaultedException>|The <xref:System.ServiceModel.ICommunicationObject> being used is in the Faulted state (for more information, see [Understanding State Changes](understanding-state-changes.md)). Note that when an object with multiple pending calls transitions to the Faulted state, only one call throws an exception that is related to the failure and the rest of the calls throw a <xref:System.ServiceModel.CommunicationObjectFaultedException>. This exception is typically thrown because an application overlooks some exception and tries to use an already faulted object, possibly on a thread other than the one that caught the original exception.|If present provides details about the inner exception.|Create a new object. Note that depending on what caused the <xref:System.ServiceModel.ICommunicationObject> to fault in the first place, there may be other work required to recover.|  
-|<xref:System.ServiceModel.CommunicationObjectAbortedException>|The <xref:System.ServiceModel.ICommunicationObject> being used has been Aborted (for more information, see [Understanding State Changes](understanding-state-changes.md)). Similar to <xref:System.ServiceModel.CommunicationObjectFaultedException>, his exception indicates the application has called <xref:System.ServiceModel.ICommunicationObject.Abort%2A> on the object, possibly from another thread, and the object is no longer usable for that reason.|If present provides details about the inner exception.|Create a new object. Note that depending on what caused the <xref:System.ServiceModel.ICommunicationObject> to abort in the first place, there may be other work required to recover.|  
+|<xref:System.ServiceModel.CommunicationObjectAbortedException>|The <xref:System.ServiceModel.ICommunicationObject> being used has been Aborted (for more information, see [Understanding State Changes](understanding-state-changes.md)). Similar to <xref:System.ServiceModel.CommunicationObjectFaultedException>, this exception indicates the application has called <xref:System.ServiceModel.ICommunicationObject.Abort%2A> on the object, possibly from another thread, and the object is no longer usable for that reason.|If present provides details about the inner exception.|Create a new object. Note that depending on what caused the <xref:System.ServiceModel.ICommunicationObject> to abort in the first place, there may be other work required to recover.|  
 |<xref:System.ServiceModel.EndpointNotFoundException>|The target remote endpoint is not listening. This can result from any part of the endpoint address being incorrect, irresolvable, or the endpoint being down. Examples include DNS error, Queue Manager not available, and service not running.|The inner exception provides details, typically from the underlying transport.|Try a different address. Alternatively, the sender may wait a while and try again in case the service was down|  
-|<xref:System.ServiceModel.ProtocolException>|The communication protocols, as described by the endpoint’s policy, are mismatched between endpoints. For example, framing content type mismatch or max message size exceeded.|If present provides more information about the specific protocol error. For example, <xref:System.ServiceModel.QuotaExceededException> is the inner exception when the error cause is exceeding MaxReceivedMessageSize.|Recovery: Ensure sender and received protocol settings match. One way to do this is to re-import the service endpoint’s metadata (policy) and use the generated binding to recreate the channel.|  
+|<xref:System.ServiceModel.ProtocolException>|The communication protocols, as described by the endpoint's policy, are mismatched between endpoints. For example, framing content type mismatch or max message size exceeded.|If present provides more information about the specific protocol error. For example, <xref:System.ServiceModel.QuotaExceededException> is the inner exception when the error cause is exceeding MaxReceivedMessageSize.|Recovery: Ensure sender and received protocol settings match. One way to do this is to re-import the service endpoint's metadata (policy) and use the generated binding to recreate the channel.|  
 |<xref:System.ServiceModel.ServerTooBusyException>|The remote endpoint is listening but is not prepared to process messages.|If present, the inner Exception provides the SOAP fault or transport-level error details.|Recovery: Wait and retry the operation later.|  
 |<xref:System.TimeoutException>|The operation failed to complete within the timeout period.|May provide details about the timeout.|Wait and retry the operation later.|  
   
@@ -28,7 +28,7 @@ Exceptions are used to communicate errors locally within the service or the clie
 ### Exception Messages  
  Exception messages are targeted at the user not the program so they should provide sufficient information to help the user understand and solve the problem. The three essential parts of a good exception message are:  
   
- What happened. Provide a clear description of the problem using terms that relate to the user’s experience. For example, a bad exception message would be "Invalid configuration section". This leaves the user wondering which configuration section is incorrect and why it is incorrect. An improved message would be "Invalid configuration section \<customBinding>". An even better message would be "Cannot add the transport named myTransport to the binding named myBinding because the binding already has a transport named myTransport". This is a very specific message using terms and names that the user can easily identify in the application’s configuration file. However, there are still a few key components missing.  
+ What happened. Provide a clear description of the problem using terms that relate to the user's experience. For example, a bad exception message would be "Invalid configuration section". This leaves the user wondering which configuration section is incorrect and why it is incorrect. An improved message would be "Invalid configuration section \<customBinding>". An even better message would be "Cannot add the transport named myTransport to the binding named myBinding because the binding already has a transport named myTransport". This is a very specific message using terms and names that the user can easily identify in the application's configuration file. However, there are still a few key components missing.  
   
  The significance of the error. Unless the message states clearly what the error means, the user is likely to wonder whether it is a fatal error or if it can be ignored. In general, messages should lead with the meaning or significance of the error. To improve the previous example, the message could be "ServiceHost failed to Open due to a configuration error: Cannot add the transport named myTransport to the binding named myBinding because the binding already has a transport named myTransport".  
   
@@ -88,7 +88,7 @@ public class FaultCode
 }  
 ```  
   
- The `Reason` property corresponds to the `env:Reason` (or `faultString` in SOAP 1.1) a human-readable description of the error condition analogous to an exception’s message. The `FaultReason` class (and SOAP `env:Reason/faultString`) has built-in support for having multiple translations in the interest of globalization.  
+ The `Reason` property corresponds to the `env:Reason` (or `faultString` in SOAP 1.1) a human-readable description of the error condition analogous to an exception's message. The `FaultReason` class (and SOAP `env:Reason/faultString`) has built-in support for having multiple translations in the interest of globalization.  
   
 ```csharp
 public class FaultReason  
@@ -97,9 +97,9 @@ public class FaultReason
     public FaultReason(IEnumerable<FaultReasonText> translations);  
     public FaultReason(string text);  
   
-    public SynchronizedReadOnlyCollection<FaultReasonText> Translations   
-    {   
-       get;   
+    public SynchronizedReadOnlyCollection<FaultReasonText> Translations
+    {
+       get;
     }  
   
  }  
@@ -118,18 +118,18 @@ public class FaultConverter
     public static FaultConverter GetDefaultFaultConverter(  
                                    MessageVersion version);  
     protected abstract bool OnTryCreateFaultMessage(  
-                                   Exception exception,   
+                                   Exception exception,
                                    out Message message);  
     public bool TryCreateFaultMessage(  
-                                   Exception exception,   
+                                   Exception exception,
                                    out Message message);  
 }  
 ```  
   
- Each channel that generates custom faults must implement `FaultConverter` and return it from a call to `GetProperty<FaultConverter>`. The custom `OnTryCreateFaultMessage` implementation must either convert the exception to a fault or delegate to the inner channel’s `FaultConverter`. If the channel is a transport it must either convert the exception or delegate to the encoder’s `FaultConverter` or the default `FaultConverter` provided in WCF . The default `FaultConverter` converts errors corresponding to fault messages specified by WS-Addressing and SOAP. Here is an example `OnTryCreateFaultMessage` implementation.  
+ Each channel that generates custom faults must implement `FaultConverter` and return it from a call to `GetProperty<FaultConverter>`. The custom `OnTryCreateFaultMessage` implementation must either convert the exception to a fault or delegate to the inner channel's `FaultConverter`. If the channel is a transport it must either convert the exception or delegate to the encoder's `FaultConverter` or the default `FaultConverter` provided in WCF . The default `FaultConverter` converts errors corresponding to fault messages specified by WS-Addressing and SOAP. Here is an example `OnTryCreateFaultMessage` implementation.  
   
 ```csharp
-public override bool OnTryCreateFaultMessage(Exception exception,   
+public override bool OnTryCreateFaultMessage(Exception exception,
                                              out Message message)  
 {  
     if (exception is ...)  
@@ -139,23 +139,23 @@ public override bool OnTryCreateFaultMessage(Exception exception,
     }  
   
 #if IMPLEMENTING_TRANSPORT_CHANNEL  
-    FaultConverter encoderConverter =   
+    FaultConverter encoderConverter =
                     this.encoder.GetProperty<FaultConverter>();  
-    if ((encoderConverter != null) &&               
+    if ((encoderConverter != null) &&
         (encoderConverter.TryCreateFaultMessage(  
          exception, out message)))  
     {  
         return true;  
     }  
   
-    FaultConverter defaultConverter =   
+    FaultConverter defaultConverter =
                    FaultConverter.GetDefaultFaultConverter(  
                    this.channel.messageVersion);  
     return defaultConverter.TryCreateFaultMessage(  
-                   exception,   
+                   exception,
                    out message);  
 #else  
-    FaultConverter inner =   
+    FaultConverter inner =
                    this.innerChannel.GetProperty<FaultConverter>();  
     if (inner != null)  
     {  
@@ -190,9 +190,9 @@ public override bool OnTryCreateFaultMessage(Exception exception,
 ### Interpreting Received Faults  
  This section provides guidance for generating the appropriate exception when receiving a fault message. The decision tree for processing a message at every layer in the stack is as follows:  
   
-1. If the layer considers the message to be invalid, the layer should do its ‘invalid message’ processing. Such processing is specific to the layer but could include dropping the message, tracing, or throwing an exception that gets converted to a fault. Examples include security receiving a message that is not secured properly, or RM receiving a message with a bad sequence number.  
+1. If the layer considers the message to be invalid, the layer should do its 'invalid message' processing. Such processing is specific to the layer but could include dropping the message, tracing, or throwing an exception that gets converted to a fault. Examples include security receiving a message that is not secured properly, or RM receiving a message with a bad sequence number.  
   
-2. Otherwise, if the message is a fault message that applies specifically to the layer, and the message is not meaningful outside the layer’s interaction, the layer should handle the error condition. An example of this is an RM Sequence Refused fault that is meaningless to layers above the RM channel and that implies faulting the RM channel and throwing from pending operations.  
+2. Otherwise, if the message is a fault message that applies specifically to the layer, and the message is not meaningful outside the layer's interaction, the layer should handle the error condition. An example of this is an RM Sequence Refused fault that is meaningless to layers above the RM channel and that implies faulting the RM channel and throwing from pending operations.  
   
 3. Otherwise, the message should be returned from Request() or Receive(). This includes cases where the layer recognizes the fault, but the fault just indicates that a request failed and does not imply faulting the channel and throwing from pending operations. To improve usability in such a case, the layer should implement `GetProperty<FaultConverter>` and return a `FaultConverter` derived class that can convert the fault to an exception by overriding `OnTryCreateException`.  
   
@@ -204,12 +204,12 @@ public class FaultConverter
     public static FaultConverter GetDefaultFaultConverter(  
                                   MessageVersion version);  
     protected abstract bool OnTryCreateException(  
-                                 Message message,   
-                                 MessageFault fault,   
+                                 Message message,
+                                 MessageFault fault,
                                  out Exception exception);  
     public bool TryCreateException(  
-                                 Message message,   
-                                 MessageFault fault,   
+                                 Message message,
+                                 MessageFault fault,
                                  out Exception exception);  
 }  
 ```  
@@ -220,8 +220,8 @@ public class FaultConverter
   
 ```csharp
 public override bool OnTryCreateException(  
-                            Message message,   
-                            MessageFault fault,   
+                            Message message,
+                            MessageFault fault,
                             out Exception exception)  
 {  
     if (message.Action == "...")  
@@ -247,9 +247,9 @@ public override bool OnTryCreateException(
     }  
   
 #if IMPLEMENTING_TRANSPORT_CHANNEL  
-    FaultConverter encoderConverter =   
+    FaultConverter encoderConverter =
               this.encoder.GetProperty<FaultConverter>();  
-    if ((encoderConverter != null) &&   
+    if ((encoderConverter != null) &&
         (encoderConverter.TryCreateException(  
                               message, fault, out exception)))  
     {  
@@ -262,7 +262,7 @@ public override bool OnTryCreateException(
     return defaultConverter.TryCreateException(  
                              message, fault, out exception);  
 #else  
-    FaultConverter inner =   
+    FaultConverter inner =
                     this.innerChannel.GetProperty<FaultConverter>();  
     if (inner != null)  
     {  
@@ -289,7 +289,7 @@ public class MessageFault
 {  
     ...  
     public bool IsMustUnderstandFault { get; }  
-    public static bool WasHeaderNotUnderstood(MessageHeaders headers,   
+    public static bool WasHeaderNotUnderstood(MessageHeaders headers,
         string name, string ns) { }  
     ...  
   
@@ -328,14 +328,14 @@ udpsource.TraceInformation("UdpInputChannel received a message");
 > It is highly recommended that you specify a trace source name that is unique to your custom channel to help trace output readers understand where the output came from.  
   
 #### Integrating with the Trace Viewer  
- Traces generated by your channel can be output in a format readable by the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) by using <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> as the trace listener. This is not something you, as the channel developer, need to do. Rather, it is the application user (or the person troubleshooting the application) that needs to configure this trace listener in the application’s configuration file. For example, the following configuration outputs trace information from both <xref:System.ServiceModel?displayProperty=nameWithType> and `Microsoft.Samples.Udp` to the file named `TraceEventsFile.e2e`:  
+ Traces generated by your channel can be output in a format readable by the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../service-trace-viewer-tool-svctraceviewer-exe.md) by using <xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType> as the trace listener. This is not something you, as the channel developer, need to do. Rather, it is the application user (or the person troubleshooting the application) that needs to configure this trace listener in the application's configuration file. For example, the following configuration outputs trace information from both <xref:System.ServiceModel?displayProperty=nameWithType> and `Microsoft.Samples.Udp` to the file named `TraceEventsFile.e2e`:  
   
 ```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  
       <!-- configure System.ServiceModel trace source -->  
-      <source name="System.ServiceModel" switchValue="Verbose"   
+      <source name="System.ServiceModel" switchValue="Verbose"
               propagateActivity="true">  
         <listeners>  
           <add name="e2e" />  
@@ -374,7 +374,7 @@ udpsource.TraceInformation("UdpInputChannel received a message");
     <TimeCreated SystemTime="2006-01-13T22:58:03.0654832Z" />  
     <Source Name="Microsoft.ServiceModel.Samples.Udp" />  
     <Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />  
-    <Execution  ProcessName="UdpTestConsole"   
+    <Execution  ProcessName="UdpTestConsole"
                 ProcessID="3348" ThreadID="4" />  
     <Channel />  
     <Computer>COMPUTER-LT01</Computer>  
@@ -383,7 +383,7 @@ udpsource.TraceInformation("UdpInputChannel received a message");
   <ApplicationData>  
   <TraceData>  
    <DataItem>  
-   <TraceRecord   
+   <TraceRecord
      Severity="Information"  
      xmlns="…">  
         <TraceIdentifier>some trace id</TraceIdentifier>  

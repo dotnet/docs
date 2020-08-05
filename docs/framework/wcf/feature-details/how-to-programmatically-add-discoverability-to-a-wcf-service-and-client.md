@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4f7ae7ab-6fc8-4769-9730-c14d43f7b9b1
 ---
 # How to: Programmatically Add Discoverability to a WCF Service and Client
-This topic explains how to make a Windows Communication Foundation (WCF) service discoverable. It is based on the [Self-Host](https://go.microsoft.com/fwlink/?LinkId=145523) sample.  
+This topic explains how to make a Windows Communication Foundation (WCF) service discoverable. It is based on the [Self-Host](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) sample.  
   
 ### To configure the existing Self-Host service sample for Discovery  
   
@@ -27,7 +27,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
         using (ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService)))  
         {  
             // Add a ServiceDiscoveryBehavior  
-            serviceHost.Description.Behaviors.Add(new ServiceDiscoveryBehavior());                  
+            serviceHost.Description.Behaviors.Add(new ServiceDiscoveryBehavior());
   
             // ...  
         }  
@@ -91,7 +91,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
 8. On the next line, call the <xref:System.ServiceModel.Discovery.DiscoveryClient.Find%2A> method and specify a <xref:System.ServiceModel.Discovery.FindCriteria> instance that contains the service contract you want to search for. In this case, specify `ICalculator`.  
   
     ```csharp  
-    // Find ICalculatorService endpoints              
+    // Find ICalculatorService endpoints
     FindResponse findResponse = discoveryClient.Find(new FindCriteria(typeof(ICalculator)));  
     ```  
   
@@ -118,7 +118,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
      This method uses the endpoint address returned from `FindCalculatorServiceAddress` to call the calculator service.  
   
-11. Inside the `InvokeCalculatorService` method, create an instance of the `CalculatorServiceClient` class. This class is defined by the [Self-Host](https://go.microsoft.com/fwlink/?LinkId=145523) sample. It was generated using Svcutil.exe.  
+11. Inside the `InvokeCalculatorService` method, create an instance of the `CalculatorServiceClient` class. This class is defined by the [Self-Host](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) sample. It was generated using Svcutil.exe.  
   
     ```csharp  
     // Create a client  
@@ -214,7 +214,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
     ```  
   
 ## Example  
- The following is a listing of the code for this sample. Because this code is based on the [Self-Host](https://go.microsoft.com/fwlink/?LinkId=145523) sample, only those files that are changed are listed. For more information about the Self-Host sample, see [Setup Instructions](https://go.microsoft.com/fwlink/?LinkId=145522).  
+ The following is a listing of the code for this sample. Because this code is based on the [Self-Host](https://docs.microsoft.com/dotnet/framework/wcf/samples/self-host) sample, only those files that are changed are listed. For more information about the Self-Host sample, see [Setup Instructions](https://docs.microsoft.com/dotnet/framework/wcf/samples/set-up-instructions).  
   
 ```csharp  
 // Service.cs  
@@ -271,7 +271,7 @@ namespace DiscoveryClientApp
             // Create DiscoveryClient  
             DiscoveryClient discoveryClient = new DiscoveryClient(new UdpDiscoveryEndpoint());  
   
-            // Find ICalculatorService endpoints              
+            // Find ICalculatorService endpoints
             FindResponse findResponse = discoveryClient.Find(new FindCriteria(typeof(ICalculator)));  
   
             if (findResponse.Endpoints.Count > 0)  
@@ -336,5 +336,5 @@ namespace DiscoveryClientApp
 
 ## See also
 
-- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [WCF Discovery Object Model](../../../../docs/framework/wcf/feature-details/wcf-discovery-object-model.md)
+- [WCF Discovery Overview](wcf-discovery-overview.md)
+- [WCF Discovery Object Model](wcf-discovery-object-model.md)

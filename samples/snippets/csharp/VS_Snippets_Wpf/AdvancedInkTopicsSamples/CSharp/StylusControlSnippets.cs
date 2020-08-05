@@ -11,22 +11,22 @@ namespace StylusControlSnippets
     class InkControl : Label
     {
     //</Snippet14>
-    
+
         DynamicRenderer dr;
-        
+
         InkPresenter ip;
 
         //<Snippet17>
         public InkControl()
         {
         //</Snippet17>
-            
+
             // Add an InkPresenter for drawing.
             ip = new InkPresenter();
             this.Content = ip;
 
         //<Snippet18>
-            // Add a dynamic renderer that 
+            // Add a dynamic renderer that
             // draws ink as it "flows" from the stylus.
             dr = new DynamicRenderer();
             ip.AttachVisuals(dr.RootVisual, dr.DrawingAttributes);

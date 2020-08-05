@@ -33,12 +33,12 @@ namespace LocConsumerCS
             // Set the application preferences.
             ApplicationLanguages.PrimaryLanguageOverride = "fr-FR";
 
-            // Get the data from some data source. 
+            // Get the data from some data source.
             var employees = InitializeData();
             outputBlock.FontFamily = new FontFamily("Courier New");
             // Display application title.
             string title = UILibrary.GetTitle();
-            outputBlock.Text += title + Environment.NewLine + Environment.NewLine; 
+            outputBlock.Text += title + Environment.NewLine + Environment.NewLine;
 
             // Retrieve resources.
             string[] fields = UILibrary.GetFieldNames();

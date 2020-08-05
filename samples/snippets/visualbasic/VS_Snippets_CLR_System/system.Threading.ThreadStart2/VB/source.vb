@@ -28,13 +28,13 @@ Public Class Test
     End Sub
 End Class
 
-Public Class Work 
+Public Class Work
     Public Shared Sub DoWork()
         Console.WriteLine("Static thread procedure.")
     End Sub
     Public Data As Integer
-    Public Sub DoMoreWork() 
-        Console.WriteLine("Instance thread procedure. Data={0}", Data) 
+    Public Sub DoMoreWork()
+        Console.WriteLine("Instance thread procedure. Data={0}", Data)
     End Sub
 End Class
 

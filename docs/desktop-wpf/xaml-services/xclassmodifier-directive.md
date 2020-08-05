@@ -56,4 +56,4 @@ The access level as declared in `x:ClassModifier` is still subject to interpreta
 - [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
 - [x:FieldModifier Directive](xfieldmodifier-directive.md)
 - [Security (WPF)](../../framework/wpf/security-wpf.md)
-- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)
+- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)

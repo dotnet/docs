@@ -66,4 +66,4 @@ Widening conversion occurs when a value of one type is converted to another type
 ## See also
 
 - <xref:System.Convert?displayProperty=nameWithType>
-- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)
+- [Type Conversion in .NET](type-conversion.md)

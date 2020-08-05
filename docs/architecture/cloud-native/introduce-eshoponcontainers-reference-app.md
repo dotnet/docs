@@ -1,11 +1,10 @@
 ---
 title: Introducing eShopOnContainers reference app
 description: Introducing the eShopOnContainers Cloud Native Microservices Reference App for ASP.NET Core and Azure.
-ms.date: 06/30/2019
+ms.date: 05/13/2020
 ---
-# Introducing eShopOnContainers reference app
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Introducing eShopOnContainers reference app
 
 Microsoft, in partnership with leading community experts, has produced a full-featured cloud-native microservices reference application, eShopOnContainers. This application is built to showcase using .NET Core and Docker, and optionally Azure, Kubernetes, and Visual Studio, to build an online storefront.
 
@@ -44,7 +43,7 @@ The application also has the following non-functional requirements:
 
 The eShopOnContainers application is accessible from web or mobile clients that access the application over HTTPS targeting either the ASP.NET Core MVC server application or an appropriate API Gateway. API Gateways offer several advantages, such as decoupling back-end services from individual front-end clients and providing better security. The application also makes use of a related pattern known as Backends-for-Frontends (BFF), which recommends creating separate API gateways for each front-end client. The reference architecture demonstrates breaking up the API gateways based on whether the request is coming from a web or mobile client.
 
-The application's functionality is broken up into a number of distinct microservices. There are services responsible for authentication and identity, listing items from the product catalog, managing users' shopping baskets, and  placing orders. Each of these separate services has its own persistent storage. Note that there's no single master data store with which all services interact. Instead, coordination and communication between the services is done on an as-needed basis and through the use of a message bus.
+The application's functionality is broken up into a number of distinct microservices. There are services responsible for authentication and identity, listing items from the product catalog, managing users' shopping baskets, and  placing orders. Each of these separate services has its own persistent storage. There's no single master data store with which all services interact. Instead, coordination and communication between the services is done on an as-needed basis and through the use of a message bus.
 
 Each of the different microservices is designed differently, based on their individual requirements. This means their technology stack may differ, although they're all built using .NET Core and designed for the cloud. Simpler services provide basic Create-Read-Update-Delete (CRUD) access to the underlying data stores, while more advanced services use Domain-Driven Design approaches and patterns to manage business complexity.
 
@@ -64,7 +63,7 @@ The code is organized to support the different microservices, and within each mi
 
 ## Understanding microservices
 
-This book focuses on cloud-native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, read the companion book, [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/learn/aspnet/microservices-architecture). The book is available online, in PDF, or eReader formats.
+This book focuses on cloud-native applications built using Azure technology. To learn more about microservices best practices and how to architect microservice-based applications, read the companion book, [.NET Microservices: Architecture for Containerized .NET Applications](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook).
 
 >[!div class="step-by-step"]
 >[Previous](candidate-apps.md)

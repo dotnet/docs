@@ -13,7 +13,7 @@ namespace ResourcesSample
         public ApplicationGetContentStreamSnippetWindow()
         {
             InitializeComponent();
-            
+
             Method1();
             Method2();
             Method3();

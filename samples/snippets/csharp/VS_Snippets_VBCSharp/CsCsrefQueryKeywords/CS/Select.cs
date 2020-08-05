@@ -7,9 +7,9 @@ namespace SelectClause
 {
     //<Snippet8>
     class SelectSample1
-    {   
+    {
         static void Main()
-        {           
+        {
             //Create the data source
             List<int> Scores = new List<int>() { 97, 92, 81, 60 };
 
@@ -23,7 +23,7 @@ namespace SelectClause
             foreach (int i in queryHighScores)
             {
                 Console.Write(i + " ");
-            }            
+            }
         }
     }
     //Output: 97 92 81
@@ -46,7 +46,7 @@ namespace SelectClause
                     where ci.ID == id
                     select ci)
                     .FirstOrDefault();
-                    
+
                 return cInfo;
             }
 
@@ -143,7 +143,7 @@ namespace SelectClause
                 Console.WriteLine("First score = {0}", i);
             }
 
-            // Produce a filtered sequence of doubles 
+            // Produce a filtered sequence of doubles
             // that are the result of an expression.
             IEnumerable<double> studentQuery5 =
                 from student in app.students
@@ -184,7 +184,7 @@ namespace SelectClause
 
             // Produce a filtered sequence of named objects that contain
             // a method return value and a property from each Student.
-            // Use named types if you need to pass the query variable 
+            // Use named types if you need to pass the query variable
             // across a method boundary.
             IEnumerable<ScoreInfo> studentQuery8 =
                 from student in app.students

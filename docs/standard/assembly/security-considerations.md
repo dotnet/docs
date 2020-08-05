@@ -1,5 +1,6 @@
 ---
 title: "Assembly security considerations"
+description: When you build a .NET assembly, you can specify permissions the assembly requires to run. This article discusses strong-named assemblies and signing tools.
 ms.date: "08/20/2019"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], security"
@@ -32,7 +33,7 @@ When you build an assembly, you can specify a set of permissions that the assemb
 - Do not use a permission request to obtain permissions your code might need, but be prepared to handle security exceptions if permissions are not granted.  
   
   > [!NOTE]
-  > Security is a complex area, and you have many options to choose from. For more information, see [Key Security Concepts](../../standard/security/key-security-concepts.md).  
+  > Security is a complex area, and you have many options to choose from. For more information, see [Key Security Concepts](../security/key-security-concepts.md).  
   
  At load time, the assembly's evidence is used as input to security policy. Security policy is established by the enterprise and the computer's administrator as well as by user policy settings, and determines the set of permissions that is granted to all managed code when executed. Security policy can be established for the publisher of the assembly (if it has a signing tool generated signature), for the Web site and zone (in Internet Explorer terms) the assembly was downloaded from, or for the assembly's strong name. For example, a computer's administrator can establish security policy that allows all code downloaded from a Web site and signed by a given software company to access a database on a computer, but does not grant access to write to the computer's disk.  
   

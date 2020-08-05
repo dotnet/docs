@@ -45,10 +45,10 @@ namespace FocusSample
                     (_focusMoveValue == FocusNavigationDirection.Left) ||
                     (_focusMoveValue == FocusNavigationDirection.Right))
                 {
-    
+
                     // Get the element which would receive focus if focus were changed.
                     predictionElement = elementWithFocus.PredictFocus(_focusMoveValue);
-                   
+
                     Control controlElement = predictionElement as Control;
 
                     // If a ContentElement.
@@ -58,7 +58,7 @@ namespace FocusSample
                         controlElement.FontSize += 10;
                         controlElement.FontWeight = FontWeights.ExtraBold;
 
-                        // Fields used to reset the UI when the mouse 
+                        // Fields used to reset the UI when the mouse
                         // button is released.
                         _focusPredicted = true;
                         _predictedControl = controlElement;
@@ -74,7 +74,7 @@ namespace FocusSample
             // Creating a FocusNavigationDirection object and setting it to a
             // local field that contains the direction selected.
             FocusNavigationDirection focusDirection = _focusMoveValue;
-            
+
             // MoveFocus takes a TraveralReqest as its argument.
             TraversalRequest request = new TraversalRequest(focusDirection);
 

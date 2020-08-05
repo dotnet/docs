@@ -5,7 +5,7 @@ author: luisquintanilla
 ms.author: luquinta
 ms.date: 11/21/2019
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically generate a model to classify violation severity using Model Builder.
 ---
 
@@ -146,6 +146,6 @@ Congratulations! You've successfully built a machine learning model to categoriz
 
 To learn more about topics mentioned in this tutorial, visit the following resources:
 
-- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
+- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenario)
 - [Multiclass Classification](../resources/glossary.md#multiclass-classification)
 - [Multiclass Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-multi-class-classification)

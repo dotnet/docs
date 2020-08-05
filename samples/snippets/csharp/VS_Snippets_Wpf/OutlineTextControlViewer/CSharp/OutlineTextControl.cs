@@ -72,7 +72,7 @@ namespace OutlineText
                     fontWeight,
                     FontStretches.Normal),
                 FontSize,
-                System.Windows.Media.Brushes.Black // This brush does not matter since we use the geometry of the text. 
+                System.Windows.Media.Brushes.Black // This brush does not matter since we use the geometry of the text.
                 );
 
             // Build the geometry object that represents the text.
@@ -84,7 +84,7 @@ namespace OutlineText
                 _textHighLightGeometry = formattedText.BuildHighlightGeometry(new System.Windows.Point(0, 0));
             }
         }
-  //</SnippetCreateText>      
+  //</SnippetCreateText>
         #endregion
 
         #region DependencyProperties

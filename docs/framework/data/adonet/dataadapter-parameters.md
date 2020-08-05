@@ -1,5 +1,6 @@
 ---
 title: "DataAdapter Parameters"
+description: Learn about the properties of DbDataAdapter that return data from a data source and manage changes to the data source.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -12,7 +13,7 @@ The <xref:System.Data.Common.DbDataAdapter> has four properties that are used to
  When you update a row at the data source, you call the UPDATE statement, which uses a unique identifier to identify the row in the table to be updated. The unique identifier is typically the value of a primary key field. The UPDATE statement uses parameters that contain both the unique identifier and the columns and values to be updated, as shown in the following Transact-SQL statement.  
   
 ```sql
-UPDATE Customers SET CompanyName = @CompanyName   
+UPDATE Customers SET CompanyName = @CompanyName
   WHERE CustomerID = @CustomerID  
 ```  
   
@@ -71,13 +72,13 @@ Dim deleteSQL As String = "DELETE FROM Customers WHERE CustomerID = ?"
 ```  
   
 ```csharp  
-string selectSQL =   
+string selectSQL =
   "SELECT CustomerID, CompanyName FROM Customers " +  
   "WHERE CountryRegion = ? AND City = ?";  
-string insertSQL =   
+string insertSQL =
   "INSERT INTO Customers (CustomerID, CompanyName) " +  
   "VALUES (?, ?)";  
-string updateSQL =   
+string updateSQL =
   "UPDATE Customers SET CustomerID = ?, CompanyName = ? " +  
   "WHERE CustomerID = ? ";  
 string deleteSQL = "DELETE FROM Customers WHERE CustomerID = ?";  
@@ -91,7 +92,7 @@ string deleteSQL = "DELETE FROM Customers WHERE CustomerID = ?";
   
 ```vb  
 ' Assumes that connection is a valid OleDbConnection object.  
-Dim adapter As OleDbDataAdapter = New OleDbDataAdapter   
+Dim adapter As OleDbDataAdapter = New OleDbDataAdapter
   
 Dim selectCMD AS OleDbCommand = New OleDbCommand(selectSQL, connection)  
 adapter.SelectCommand = selectCMD  

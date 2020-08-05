@@ -28,8 +28,8 @@ namespace builtin_types
             int? m = m2;
 
             bool? flag = null;
-            
-            // An array of a nullable type:
+
+            // An array of a nullable value type:
             int?[] arr = new int?[10];
             // </SnippetDeclaration>
         }
@@ -159,14 +159,14 @@ namespace builtin_types
         private static void WhetherTypeIsNullable()
         {
             // <SnippetIsTypeNullable>
-            Console.WriteLine($"int? is {(IsNullable(typeof(int?)) ? "nullable" : "non nullable")} type");
-            Console.WriteLine($"int is {(IsNullable(typeof(int)) ? "nullable" : "non-nullable")} type");
+            Console.WriteLine($"int? is {(IsNullable(typeof(int?)) ? "nullable" : "non nullable")} value type");
+            Console.WriteLine($"int is {(IsNullable(typeof(int)) ? "nullable" : "non-nullable")} value type");
 
             bool IsNullable(Type type) => Nullable.GetUnderlyingType(type) != null;
 
             // Output:
-            // int? is nullable type
-            // int is non-nullable type
+            // int? is nullable value type
+            // int is non-nullable value type
             // </SnippetIsTypeNullable>
         }
 

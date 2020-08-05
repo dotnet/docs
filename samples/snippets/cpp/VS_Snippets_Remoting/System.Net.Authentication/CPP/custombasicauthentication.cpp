@@ -311,7 +311,7 @@ public:
 
 // <Snippet2>
 // This is the program entry point. It allows the user to enter
-// her credentials and the Internet resource (Web page) to access.
+// their credentials and the Internet resource (Web page) to access.
 // It also unregisters the standard and registers the customized basic
 // authentication.
 int main()

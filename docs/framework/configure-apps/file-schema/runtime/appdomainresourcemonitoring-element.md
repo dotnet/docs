@@ -16,7 +16,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
 ## Syntax  
   
 ```xml  
-<appDomainResourceMonitoring    
+<appDomainResourceMonitoring
    enabled="true|false"/>  
 ```  
   

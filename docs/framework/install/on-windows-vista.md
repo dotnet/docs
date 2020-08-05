@@ -17,7 +17,7 @@ These instructions will help you install the .NET Framework versions you need. T
 
 The [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46) is the latest supported .NET Framework version on Windows Vista and Windows Server 2008.
 
-The [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True) supports applications built for .NET Framework 4.0 through 4.6.
+The [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46) supports applications built for .NET Framework 4.0 through 4.6.
 
 ## .NET Framework 3.5
 

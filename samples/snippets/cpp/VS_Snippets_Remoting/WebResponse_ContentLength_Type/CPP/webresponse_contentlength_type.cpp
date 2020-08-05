@@ -48,7 +48,7 @@ int main()
    {
       Console::WriteLine( "\nPlease enter the Url as command line parameter:" );
       Console::WriteLine( "Example:" );
-      Console::WriteLine( "WebResponse_ContentLength_Type http://www.microsoft.com/net/" );
+      Console::WriteLine( "WebResponse_ContentLength_Type http://dotnet.microsoft.com/" );
    }
    else
    {

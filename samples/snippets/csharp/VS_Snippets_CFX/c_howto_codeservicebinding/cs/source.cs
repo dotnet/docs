@@ -39,7 +39,7 @@ namespace Samples
      {
         return n1 / n2;
      }
-  } 
+  }
 
     //</snippet2>
 
@@ -57,7 +57,7 @@ namespace Samples
             BasicHttpBinding binding1 = new BasicHttpBinding();
             //</snippet3>		
             //<snippet5>
- 
+
             TimeSpan modifiedCloseTimeout = new TimeSpan(00, 02, 00);
             binding1.CloseTimeout = modifiedCloseTimeout;
 	    //</snippet5>
@@ -65,7 +65,7 @@ namespace Samples
             //<snippet4>
 
             //<snippet6>
- 
+
             using(ServiceHost host = new ServiceHost(typeof(CalculatorService)))
             {
                 host.AddServiceEndpoint(typeof(ICalculator),binding1, baseAddress);

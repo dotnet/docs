@@ -1,6 +1,6 @@
 ---
 title: Common Type System
-description: Learn about the type system in .NET.
+description: Explore the type system in .NET. Read about types in .NET (value types or reference types), type definition, type members, and type member characteristics.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -17,7 +17,8 @@ helpviewer_keywords:
   - "types, about types"
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
 ---
-# Common Type System
+# Common type system
+
 The common type system defines how types are declared, used, and managed in the common language runtime, and is also an important part of the runtime's support for cross-language integration. The common type system performs the following functions:  
   
 - Establishes a framework that helps enable cross-language integration, type safety, and high-performance code execution.  
@@ -26,20 +27,10 @@ The common type system defines how types are declared, used, and managed in the 
   
 - Defines rules that languages must follow, which helps ensure that objects written in different languages can interact with each other.  
   
-- Provides a library that contains the primitive data types (such as <xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.Int32>, and <xref:System.UInt64>) used in application development.  
+- Provides a library that contains the primitive data types (such as <xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.Int32>, and <xref:System.UInt64>) used in application development.
   
- This topic contains the following sections:  
-  
-- [Types in .NET](#types_in_the_net_framework)  
-  
-- [Type Definitions](#type_definitions)  
-  
-- [Type Members](#type_members)  
-  
-- [Characteristics of Type Members](#characteristics_of_type_members)  
-  
-<a name="types_in_the_net_framework"></a>
-## Types in .NET  
+## Types in .NET
+
  All types in .NET are either value types or reference types.  
   
  Value types are data types whose objects are represented by the object's actual value. If an instance of a value type is assigned to a variable, that variable is given a fresh copy of the value.  
@@ -48,18 +39,18 @@ The common type system defines how types are declared, used, and managed in the 
   
  The common type system in .NET supports the following five categories of types:  
   
-- [Classes](#Classes)  
+- [Classes](#classes)  
   
-- [Structures](#Structures)  
+- [Structures](#structures)  
   
-- [Enumerations](#Enumerations)  
+- [Enumerations](#enumerations)  
   
-- [Interfaces](#Interfaces)  
+- [Interfaces](#interfaces)  
   
-- [Delegates](#Delegates)  
+- [Delegates](#delegates)  
   
-<a name="Classes"></a>
-### Classes  
+### Classes
+
  A class is a reference type that can be derived directly from another class and that is derived implicitly from <xref:System.Object?displayProperty=nameWithType>. The class defines the operations that an object (which is an instance of the class) can perform (methods, events, or properties) and the data that the object contains (fields). Although a class generally includes both definition and implementation (unlike interfaces, for example, which contain only definition without implementation), it can have one or more members that have no implementation.  
   
  The following table describes some of the characteristics that a class may have. Each language that supports the runtime provides a way to indicate that a class or class member has one or more of these characteristics. However, individual programming languages that target .NET may not make all these characteristics available.  
@@ -73,15 +64,15 @@ The common type system defines how types are declared, used, and managed in the 
 |exported or not exported|Indicates whether a class is visible outside the assembly in which it is defined. This characteristic applies only to top-level classes and not to nested classes.|  
   
 > [!NOTE]
-> A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested Types](#NestedTypes).  
+> A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested Types](#nested-types).  
   
  Class members that have no implementation are abstract members. A class that has one or more abstract members is itself abstract; new instances of it cannot be created. Some languages that target the runtime let you mark a class as abstract even if none of its members are abstract. You can use an abstract class when you want to encapsulate a basic set of functionality that derived classes can inherit or override when appropriate. Classes that are not abstract are referred to as concrete classes.  
   
  A class can implement any number of interfaces, but it can inherit from only one base class in addition to <xref:System.Object?displayProperty=nameWithType>, from which all classes inherit implicitly. All classes must have at least one constructor, which initializes new instances of the class. If you do not explicitly define a constructor, most compilers will automatically provide a parameterless constructor.  
   
-<a name="Structures"></a>
-### Structures  
- A structure is a value type that derives implicitly from <xref:System.ValueType?displayProperty=nameWithType>, which in turn is derived from <xref:System.Object?displayProperty=nameWithType>. A structure is very useful for representing values whose memory requirements are small, and for passing values as by-value parameters to methods that have strongly typed parameters. In .NET, all primitive data types (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, and <xref:System.UInt64>) are defined as structures.  
+### Structures
+
+ A structure is a value type that derives implicitly from <xref:System.ValueType?displayProperty=nameWithType>, which in turn is derived from <xref:System.Object?displayProperty=nameWithType>. A structure is useful for representing values whose memory requirements are small, and for passing values as by-value parameters to methods that have strongly typed parameters. In .NET, all primitive data types (<xref:System.Boolean>, <xref:System.Byte>, <xref:System.Char>, <xref:System.DateTime>, <xref:System.Decimal>, <xref:System.Double>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.SByte>, <xref:System.Single>, <xref:System.UInt16>, <xref:System.UInt32>, and <xref:System.UInt64>) are defined as structures.  
   
  Like classes, structures define both data (the fields of the structure) and the operations that can be performed on that data (the methods of the structure). This means that you can call methods on structures, including the virtual methods defined on the <xref:System.Object?displayProperty=nameWithType> and <xref:System.ValueType?displayProperty=nameWithType> classes, and any methods defined on the value type itself. In other words, structures can have fields, properties, and events, as well as static and nonstatic methods. You can create instances of structures, pass them as parameters, store them as local variables, or store them in a field of another value type or reference type. Structures can also implement interfaces.  
   
@@ -89,9 +80,9 @@ The common type system defines how types are declared, used, and managed in the 
   
  For each value type, the common language runtime supplies a corresponding boxed type, which is a class that has the same state and behavior as the value type. An instance of a value type is boxed when it is passed to a method that accepts a parameter of type <xref:System.Object?displayProperty=nameWithType>. It is unboxed (that is, converted from an instance of a class back to an instance of a value type) when control returns from a method call that accepts a value type as a by-reference parameter. Some languages require that you use special syntax when the boxed type is required; others automatically use the boxed type when it is needed. When you define a value type, you are defining both the boxed and the unboxed type.  
   
-<a name="Enumerations"></a>
-### Enumerations  
- An enumeration (enum) is a value type that inherits directly from <xref:System.Enum?displayProperty=nameWithType> and that supplies alternate names for the values of an underlying primitive type. An enumeration type has a name, an underlying type that must be one of the built-in signed or unsigned integer types (such as <xref:System.Byte>, <xref:System.Int32>, or <xref:System.UInt64>), and a set of fields. The fields are static literal fields, each of which represents a constant. The same value can be assigned to multiple fields. When this occurs, you must mark one of the values as the primary enumeration value for reflection and string conversion.  
+### Enumerations
+
+ An enumeration is a value type that inherits directly from <xref:System.Enum?displayProperty=nameWithType> and that supplies alternate names for the values of an underlying primitive type. An enumeration type has a name, an underlying type that must be one of the built-in signed or unsigned integer types (such as <xref:System.Byte>, <xref:System.Int32>, or <xref:System.UInt64>), and a set of fields. The fields are static literal fields, each of which represents a constant. The same value can be assigned to multiple fields. When this occurs, you must mark one of the values as the primary enumeration value for reflection and string conversion.  
   
  You can assign a value of the underlying type to an enumeration and vice versa (no cast is required by the runtime). You can create an instance of an enumeration and call the methods of <xref:System.Enum?displayProperty=nameWithType>, as well as any methods defined on the enumeration's underlying type. However, some languages might not let you pass an enumeration as a parameter when an instance of the underlying type is required (or vice versa).  
   
@@ -114,9 +105,9 @@ The common type system defines how types are declared, used, and managed in the 
   
  [!code-csharp[Conceptual.Types.Enum#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.enum/cs/example.cs#1)]
  [!code-vb[Conceptual.Types.Enum#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.enum/vb/example.vb#1)]  
-  
-<a name="Interfaces"></a>
-### Interfaces  
+
+### Interfaces
+
  An interface defines a contract that specifies a "can do" relationship or a "has a" relationship. Interfaces are often used to implement functionality, such as comparing and sorting (the <xref:System.IComparable> and <xref:System.IComparable%601> interfaces), testing for equality (the <xref:System.IEquatable%601> interface), or enumerating items in a collection (the <xref:System.Collections.IEnumerable> and <xref:System.Collections.Generic.IEnumerable%601> interfaces). Interfaces can have properties, methods, and events, all of which are abstract members; that is, although the interface defines the members and their signatures, it leaves it to the type that implements the interface to define the functionality of each interface member. This means that any class or structure that implements an interface must supply definitions for the abstract members declared in the interface. An interface can require any implementing class or structure to also implement one or more other interfaces.  
   
  The following restrictions apply to interfaces:  
@@ -130,9 +121,9 @@ The common type system defines how types are declared, used, and managed in the 
 - Interfaces can define only instance members. They cannot define static members.  
   
  Each language must provide rules for mapping an implementation to the interface that requires the member, because more than one interface can declare a member with the same signature, and these members can have separate implementations.  
-  
-<a name="Delegates"></a>
-### Delegates  
+
+### Delegates
+
  Delegates are reference types that serve a purpose similar to that of function pointers in C++. They are used for event handlers and callback functions in .NET. Unlike function pointers, delegates are secure, verifiable, and type safe. A delegate type can represent any instance method or static method that has a compatible signature.  
   
  A parameter of a delegate is compatible with the corresponding parameter of a method if the type of the delegate parameter is more restrictive than the type of the method parameter, because this guarantees that an argument passed to the delegate can be passed safely to the method.  
@@ -157,8 +148,8 @@ The common type system defines how types are declared, used, and managed in the 
 > [!NOTE]
 > It is not necessary to use these methods for event-handler delegates in C#, C++, and Visual Basic, because these languages provide syntax for adding and removing event handlers.  
 
-<a name="type_definitions"></a>
-## Type Definitions  
+## Type definitions
+
  A type definition includes the following:  
   
 - Any attributes defined on the type.  
@@ -178,7 +169,7 @@ The common type system defines how types are declared, used, and managed in the 
   
  Attributes are themselves classes that inherit from <xref:System.Attribute?displayProperty=nameWithType>. Languages that support the use of attributes each have their own syntax for applying attributes to a language element. Attributes can be applied to almost any language element; the specific elements to which an attribute can be applied are defined by the <xref:System.AttributeUsageAttribute> that is applied to that attribute class.  
   
-### Type Accessibility  
+### Type accessibility  
  All types have a modifier that governs their accessibility from other types. The following table describes the type accessibilities supported by the runtime.  
   
 |Accessibility|Description|  
@@ -211,29 +202,29 @@ The common type system defines how types are declared, used, and managed in the 
   
  Although a type might reference types from other modules and assemblies, a type must be fully defined within one .NET module. (Depending on compiler support, however, it can be divided into multiple source code files.) Type names need be unique only within a namespace. To fully identify a type, the type name must be qualified by the namespace that contains the implementation of the type.  
   
-### Base Types and Interfaces  
+### Base types and interfaces  
  A type can inherit values and behaviors from another type. The common type system does not allow types to inherit from more than one base type.  
   
  A type can implement any number of interfaces. To implement an interface, a type must implement all the virtual members of that interface. A virtual method can be implemented by a derived type and can be invoked either statically or dynamically.  
 
-<a name="type_members"></a>
-## Type Members  
+## Type members
+
  The runtime enables you to define members of your type, which specifies the behavior and state of a type. Type members include the following:  
   
-- [Fields](#Fields)  
+- [Fields](#fields)  
   
-- [Properties](#Properties)  
+- [Properties](#properties)  
   
-- [Methods](#Methods)  
+- [Methods](#methods)  
   
-- [Constructors](#Constructors)  
+- [Constructors](#constructors)  
   
-- [Events](#Events)  
+- [Events](#events)  
   
-- [Nested types](#NestedTypes)  
-  
-<a name="Fields"></a>
-### Fields  
+- [Nested types](#nested-types)  
+
+### Fields
+
  A field describes and contains part of the type's state. Fields can be of any type supported by the runtime. Most commonly, fields are either `private` or `protected`, so that they are accessible only from within the class or from a derived class. If the value of a field can be modified from outside its type, a property set accessor is typically used. Publicly exposed fields are usually read-only and can be of two types:  
   
 - Constants, whose value is assigned at design time. These are static members of a class, although they are not defined using the `static` (`Shared` in Visual Basic) keyword.  
@@ -244,42 +235,42 @@ The common type system defines how types are declared, used, and managed in the 
   
  [!code-csharp[Conceptual.Types.Members.Fields#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.members.fields/cs/example.cs#1)]
  [!code-vb[Conceptual.Types.Members.Fields#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.members.fields/vb/example.vb#1)]  
-  
-<a name="Properties"></a>
-### Properties  
+
+### Properties
+
  A property names a value or state of the type and defines methods for getting or setting the property's value. Properties can be primitive types, collections of primitive types, user-defined types, or collections of user-defined types. Properties are often used to keep the public interface of a type independent from the type's actual representation. This enables properties to reflect values that are not directly stored in the class (for example, when a property returns a computed value) or to perform validation before values are assigned to private fields. The following example illustrates the latter pattern.  
   
  [!code-csharp[Conceptual.Types.Members.Properties#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.types.members.properties/cs/example.cs#1)]
  [!code-vb[Conceptual.Types.Members.Properties#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.members.properties/vb/example.vb#1)]  
   
  In addition to including the property itself, the Microsoft intermediate language (MSIL) for a type that contains a readable property includes a `get_`*propertyname* method, and the MSIL for a type that contains a writable property includes a `set_`*propertyname* method.  
-  
-<a name="Methods"></a>
-### Methods  
+
+### Methods
+
  A method describes operations that are available on the type. A method's signature specifies the allowable types of all its parameters and of its return value.  
   
  Although most methods define the precise number of parameters required for method calls, some methods support a variable number of parameters. The final declared parameter of these methods is marked with the <xref:System.ParamArrayAttribute> attribute. Language compilers typically provide a keyword, such as `params` in C# and `ParamArray` in Visual Basic, that makes explicit use of <xref:System.ParamArrayAttribute> unnecessary.  
-  
-<a name="Constructors"></a>
-### Constructors  
+
+### Constructors
+
  A constructor is a special kind of method that creates new instances of a class or structure. Like any other method, a constructor can include parameters; however, constructors have no return value (that is, they return `void`).  
   
  If the source code for a class does not explicitly define a constructor, the compiler includes a parameterless constructor. However, if the source code for a class defines only parameterized constructors, the Visual Basic and C# compilers do not generate a parameterless constructor.  
   
  If the source code for a structure defines constructors, they must be parameterized; a structure cannot define a parameterless constructor, and compilers do not generate parameterless constructors for structures or other value types. All value types do have an implicit parameterless constructor. This constructor is implemented by the common language runtime and initializes all fields of the structure to their default values.  
-  
-<a name="Events"></a>
-### Events  
- An event defines an incident that can be responded to, and defines methods for subscribing to, unsubscribing from, and raising the event. Events are often used to inform other types of state changes. For more information, see [Events](../../../docs/standard/events/index.md).  
-  
-<a name="NestedTypes"></a>
-### Nested Types  
+
+### Events
+
+ An event defines an incident that can be responded to, and defines methods for subscribing to, unsubscribing from, and raising the event. Events are often used to inform other types of state changes. For more information, see [Events](../events/index.md).  
+
+### Nested types
+
  A nested type is a type that is a member of some other type. Nested types should be tightly coupled to their containing type and must not be useful as a general-purpose type. Nested types are useful when the declaring type uses and creates instances of the nested type, and use of the nested type is not exposed in public members.  
   
  Nested types are confusing to some developers and should not be publicly visible unless there is a compelling reason for visibility. In a well-designed library, developers should rarely have to use nested types to instantiate objects or declare variables.  
 
-<a name="characteristics_of_type_members"></a>
-## Characteristics of Type Members  
+## Characteristics of type members
+
  The common type system allows type members to have a variety of characteristics; however, languages are not required to support all these characteristics. The following table describes member characteristics.  
   
 |Characteristic|Can apply to|Description|  
@@ -300,7 +291,7 @@ The common type system defines how types are declared, used, and managed in the 
 > [!NOTE]
 > The return type is not considered part of a method's signature. That is, methods cannot be overloaded if they differ only by return type.  
   
-### Inheriting, Overriding, and Hiding Members  
+### Inherit, override, and hide members  
  A derived type inherits all members of its base type; that is, these members are defined on, and available to, the derived type. The behavior or qualities of inherited members can be modified in two ways:  
   
 - A derived type can hide an inherited member by defining a new member with the same signature. This might be done to make a previously public member private or to define new behavior for an inherited method that is marked as `final`.  
@@ -310,5 +301,5 @@ The common type system defines how types are declared, used, and managed in the 
 ## See also
 
 - [.NET API Browser](/dotnet/api)
-- [Common Language Runtime](../../../docs/standard/clr.md)
-- [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)
+- [Common Language Runtime](../clr.md)
+- [Type Conversion in .NET](type-conversion.md)

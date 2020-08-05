@@ -7,7 +7,7 @@ ms.date: 04/29/2018
 
 Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications and Cloud-Native applications.
 
-However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don’t need to rearchitect your application.
+However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don't need to rearchitect your application.
 
 ## What are containers? (Linux or Windows)
 
@@ -51,7 +51,7 @@ Significant improvements in agility, portability, and control ultimately lead to
 
 To someone familiar with virtual machines, containers might appear to be remarkably similar. A container runs an operating system, has a file system, and can be accessed over a network, just like a physical or virtual computer system. However, the technology and concepts behind containers are vastly different from virtual machines. From a developer point of view, a container must be treated more like a single process. In fact, a container has a single entry point for one process.
 
-Docker containers (for simplicity, *containers*) can run natively on Linux and Windows. When running regular containers, Windows containers can run only on Windows hosts (a host server or a VM), and Linux containers can run only on Linux hosts. However, in recent versions of Windows Server and Hyper-V containers, a Linux container also can run natively on Windows Server by using the Hyper-V isolation technology that currently is available only in Windows Server Containers.
+Docker containers (for simplicity, *containers*) can run natively on Linux and Windows. When running regular containers, Windows containers can run only on Windows hosts (a host server or a VM), and Linux containers can run only on Linux hosts. However, in recent versions of Windows Server and Hyper-V containers, a Linux container can also run natively on Windows Server by using the Hyper-V isolation technology that currently is available only in Windows Server Containers.
 
 In the near future, mixed environments that have both Linux and Windows containers will be possible and even common.
 
@@ -99,7 +99,7 @@ For .NET Core (cross-platform for Linux and Windows), the tags would look like t
 
 ### Multi-arch images
 
-Beginning in mid-2017, you also can use a new feature in Docker called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Core Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **microsoft/dotnet:2.0.0-runtime**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
+Beginning in mid-2017, you can also use a new feature in Docker called [multi-arch](https://github.com/moby/moby/issues/15866) images. .NET Core Docker images can use multi-arch tags. Your Dockerfile files no longer need to define the operating system that you are targeting. The multi-arch feature allows a single tag to be used across multiple machine configurations. For instance, with multi-arch, you can use one common tag: **microsoft/dotnet:2.0.0-runtime**. If you pull that tag from a Linux container environment, you get the Debian-based image. If you pull that tag from a Windows container environment, you get the Nano Server-based image.
 
 For .NET Framework images, because the traditional .NET Framework supports only Windows, you cannot use the multi-arch feature.
 
@@ -129,8 +129,8 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 ## The container ecosystem in Azure
 
-In previous sections, it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
-However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application’s needs, you should choose one or another Azure product.
+In previous sections, it's been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
+However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application's needs, you should choose one or another Azure product.
 
 ![Diagram of the container ecosystem in Azure.](./media/deploy-existing-net-apps-as-windows-containers/azure-container-ecosystem.png)
 

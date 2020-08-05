@@ -120,7 +120,7 @@ It's useful to declare [discriminated unions](discriminated-unions.md) whose cas
 ```fsharp
 type FullName = { FirstName: string; LastName: string }
 
-// Note that using a named for Manager and Executive would require mutually recursive definitions.
+// Note that using a named record for Manager and Executive would require mutually recursive definitions.
 type Employee =
     | Engineer of FullName
     | Manager of {| Name: FullName; Reports: Employee list |}
@@ -224,7 +224,7 @@ You can serialize anonymous records just as you can with named records. Here is 
 open Newtonsoft.Json
 
 let phillip' = {| name="Phillip"; age=28 |}
-let philStr = JsonConvert.SerializeObject(phillip') 
+let philStr = JsonConvert.SerializeObject(phillip')
 
 let phillip = JsonConvert.DeserializeObject<{|name: string; age: int|}>(philStr)
 printfn "Name: %s Age: %d" phillip.name phillip.age

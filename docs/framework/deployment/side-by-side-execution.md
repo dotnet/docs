@@ -1,5 +1,6 @@
 ---
 title: "Side-by-Side Execution in the .NET Framework"
+description: Explore side-by-side execution in .NET. Side-by-side execution lets you run many versions of an application or component on the same computer.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "side-by-side execution"
@@ -22,7 +23,7 @@ The following illustration shows several applications using two different versio
 Side-by-side execution gives you more control over which versions of a component an application binds to, and more control over which version of the runtime an application uses.  
   
 ## Benefits of Side-by-Side Execution  
- 
+
 Prior to Windows XP and the .NET Framework, DLL conflicts occurred because applications were unable to distinguish between incompatible versions of the same code. Type information contained in a DLL was bound only to a file name. An application had no way of knowing if the types contained in a DLL were the same types that the application was built with. As a result, a new version of a component could overwrite an older version and break applications.  
   
 Side-by-side execution and the .NET Framework provide the following features to eliminate DLL conflicts:  
@@ -96,13 +97,13 @@ To mitigate partially qualified assembly references in code, you can use the [\<
  The following example shows the application configuration file entry to fully qualify an assembly called `myAssembly`.  
   
 ```xml  
-<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">   
-<qualifyAssembly partialName="myAssembly"   
+<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+<qualifyAssembly partialName="myAssembly"
 fullName="myAssembly,  
-      version=1.0.0.0,   
-publicKeyToken=...,   
-      culture=neutral"/>   
-</assemblyBinding>   
+      version=1.0.0.0,
+publicKeyToken=...,
+      culture=neutral"/>
+</assemblyBinding>
 ```  
   
  Whenever an assembly load statement references `myAssembly`, these configuration file settings cause the runtime to automatically translate the partially qualified `myAssembly` reference to a fully qualified reference. For example, Assembly.Load("myAssembly") becomes Assembly.Load("myAssembly, version=1.0.0.0, publicKeyToken=..., culture=neutral").  

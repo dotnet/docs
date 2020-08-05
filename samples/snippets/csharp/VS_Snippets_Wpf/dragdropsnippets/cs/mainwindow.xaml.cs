@@ -83,11 +83,11 @@ namespace DragDropSnippets
                                      DragDropEffects.Copy);
             }
         }
-        // </snippetDoDragDrop> 
+        // </snippetDoDragDrop>
 
         // <snippetGiveFeedback>
-        // Declare the custom cursor outside of the GiveFeedback handler. GiveFeedback is 
-        // called continuously during the drag, so it is inefficient to create a new cursor 
+        // Declare the custom cursor outside of the GiveFeedback handler. GiveFeedback is
+        // called continuously during the drag, so it is inefficient to create a new cursor
         // each time it is called.
         private Cursor _customCopyCursor = null;
         private void ellipse_GiveFeedback(object sender, GiveFeedbackEventArgs e)
@@ -123,7 +123,7 @@ namespace DragDropSnippets
         #endregion
 
         #region DropTarget
-        
+
         // <snippetDragEnterLeave>
         // <snippetDragEnter>
         private Brush _previousFill = null;
@@ -134,7 +134,7 @@ namespace DragDropSnippets
             {
                 // Save the current Fill brush so that you can revert back to this value in DragLeave.
                 _previousFill = ellipse.Fill;
-                
+
                 // If the DataObject contains string data, extract it.
                 if (e.Data.GetDataPresent(DataFormats.StringFormat))
                 {
@@ -195,7 +195,7 @@ namespace DragDropSnippets
                 {
                     string dataString = (string)e.Data.GetData(DataFormats.StringFormat);
 
-                    // If the string can be converted into a Brush, 
+                    // If the string can be converted into a Brush,
                     // convert it and apply it to the ellipse.
                     BrushConverter converter = new BrushConverter();
                     if (converter.IsValid(dataString))

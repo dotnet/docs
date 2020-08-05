@@ -115,7 +115,7 @@ namespace DataBindingLab
             this.bids = new ObservableCollection<Bid>();
         }
 
-        // Exposing Bids as a ReadOnlyObservableCollection and adding an AddBid method so that CurrentPrice 
+        // Exposing Bids as a ReadOnlyObservableCollection and adding an AddBid method so that CurrentPrice
         // is updated when a new Bid is added
         public void AddBid(Bid bid)
         {

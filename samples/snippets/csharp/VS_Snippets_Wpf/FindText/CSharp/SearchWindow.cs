@@ -1,26 +1,26 @@
 ﻿/*****************************************************************************************
  * File: FindText.cs
  *
- * Description: 
+ * Description:
  *    This sample demonstrates the UI Automation TextPattern and TextPatternRange classes.
- * 
- *    The sample consists of a Windows Presentation Foundation (WPF) client and the choice 
- *    of a WPF FlowDocumentReader target or a Win32 WordPad target. The client uses the 
- *    TextPattern control pattern and the TextPatternRange class to interact with the text 
- *    controls in either target.  
- * 
- *    The functionality demonstrated by the sample includes the ability to search for and 
- *    select text, expand a selection to a specific TextUnit, navigate by TextUnit, access 
+ *
+ *    The sample consists of a Windows Presentation Foundation (WPF) client and the choice
+ *    of a WPF FlowDocumentReader target or a Win32 WordPad target. The client uses the
+ *    TextPattern control pattern and the TextPatternRange class to interact with the text
+ *    controls in either target.
+ *
+ *    The functionality demonstrated by the sample includes the ability to search for and
+ *    select text, expand a selection to a specific TextUnit, navigate by TextUnit, access
  *    embedded objects within a selection, and access the enclosing element of a selection.
- * 
- *    Note: Three WPF documents, a RichText document, and a plain text document are provided 
+ *
+ *    Note: Three WPF documents, a RichText document, and a plain text document are provided
  *          in the Content folder of the TextProvider project.
- * 
+ *
  *
  * This file is part of the Microsoft .NET Framework SDK Code Samples.
- * 
+ *
  * Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
@@ -64,7 +64,7 @@ namespace SDKSample
         private AutomationElement targetDocument;
         // Text pattern obtained from the target text control.
         private TextPattern targetTextPattern;
-        // Text range for entire target text control. 
+        // Text range for entire target text control.
         private TextPatternRange documentRange;
         // Text range for current selection in target text control.
         private TextPatternRange searchRange;
@@ -82,7 +82,7 @@ namespace SDKSample
         // String to search for in the target text control.
         private TextBox searchString;
         // Depending on the location of the selection in the target text
-        // control, the client can search forward or backward for the 
+        // control, the client can search forward or backward for the
         // search string.
         private Button searchBackwardButton;
         private Button searchForwardButton;
@@ -90,7 +90,7 @@ namespace SDKSample
         private bool searchBackward;
         // Expand the target text selection by the specified text unit.
         private ComboBox expandHighlight;
-        // Move the target text selection by the specified text unit. 
+        // Move the target text selection by the specified text unit.
         private ComboBox navigateTarget;
         private TextUnit navigationUnit;
         // Display the target text selection and attributes.
@@ -122,11 +122,11 @@ namespace SDKSample
         public SearchWindow()
         {
             // Specify the target applications.
-            WPFTarget = 
+            WPFTarget =
                 System.Windows.Forms.Application.StartupPath + "\\TextProvider.exe";
-            W32Target = "WordPad.exe"; 
+            W32Target = "WordPad.exe";
 
-            // Initialize search direction. 
+            // Initialize search direction.
             // Search direction buttons are enabled or disabled based on this value.
             searchBackward = false;
 
@@ -305,7 +305,7 @@ namespace SDKSample
                 targetSelection.TextWrapping = TextWrapping.Wrap;
                 targetSelection.MaxWidth = 400;
                 targetSelection.Height = 100;
-                targetSelection.VerticalScrollBarVisibility = 
+                targetSelection.VerticalScrollBarVisibility =
                     ScrollBarVisibility.Auto;
                 targetSelection.IsReadOnly = true;
                 targetSelection.Margin = new Thickness(0, 0, 0, 0);
@@ -346,7 +346,7 @@ namespace SDKSample
                 navigateTarget.Items.Add(TextUnit.Paragraph);
                 navigateTarget.Items.Add(TextUnit.Page);
                 navigateTarget.SelectedIndex = 0;
-                navigateTarget.SelectionChanged += 
+                navigateTarget.SelectionChanged +=
                     new SelectionChangedEventHandler(NavigationUnit_Change);
                 Grid.SetRow(navigateTarget, 6);
                 Grid.SetColumn(navigateTarget, 1);
@@ -392,7 +392,7 @@ namespace SDKSample
                 expandHighlight.Items.Add(TextUnit.Page);
                 expandHighlight.Items.Add(TextUnit.Document);
                 expandHighlight.SelectedIndex = 0;
-                expandHighlight.SelectionChanged += 
+                expandHighlight.SelectionChanged +=
                     new SelectionChangedEventHandler(ExpandToTextUnit_Change);
                 expandHighlight.Margin = new Thickness(0, 0, 0, 10);
                 Grid.SetRow(expandHighlight, 8);
@@ -407,11 +407,11 @@ namespace SDKSample
                 infoGrid.Children.Add(expandLabel);
                 infoGrid.Children.Add(expandHighlight);
 
-                // Row 10 - target selection details such as child elements 
+                // Row 10 - target selection details such as child elements
                 //         and enclosing unit.
                 targetSelectionDetails = new TextBox();
                 targetSelectionDetails.Height = 100;
-                targetSelectionDetails.VerticalScrollBarVisibility = 
+                targetSelectionDetails.VerticalScrollBarVisibility =
                     ScrollBarVisibility.Auto;
                 targetSelectionDetails.IsReadOnly = true;
                 Grid.SetRow(targetSelectionDetails, 9);
@@ -419,7 +419,7 @@ namespace SDKSample
                 Grid.SetColumnSpan(targetSelectionDetails, 2);
                 infoGrid.Children.Add(targetSelectionDetails);
 
-                // Row 11 - get the child elements and the enclosing unit 
+                // Row 11 - get the child elements and the enclosing unit
                 //         of the target selection.
                 Button getChildren = new Button();
                 getChildren.Width = buttonWidth;
@@ -459,7 +459,7 @@ namespace SDKSample
         /// <param name="sender">The object that raised the event.</param>
         /// <param name="e">Event arguments.</param>
         /// <remarks>
-        /// Starts the application that we are going to use for as our 
+        /// Starts the application that we are going to use for as our
         /// root element for this sample.
         /// </remarks>
         ///--------------------------------------------------------------------
@@ -486,7 +486,7 @@ namespace SDKSample
                 targetWindow, TreeScope.Element, OnTargetClose);
 
             // Set size and position of target.
-            // Since the target is started and manipulated from the client 
+            // Since the target is started and manipulated from the client
             // and both windows show UI changes this section of code just
             // ensures neither window obscures the other.
             TransformPattern targetTransformPattern =
@@ -513,7 +513,7 @@ namespace SDKSample
         /// </param>
         /// <returns>The automation element for the app main window.</returns>
         /// <remarks>
-        /// Three WPF documents, a rich text document, and a plain text document 
+        /// Three WPF documents, a rich text document, and a plain text document
         /// are provided in the Content folder of the TextProvider project.
         /// </remarks>
         ///--------------------------------------------------------------------
@@ -567,7 +567,7 @@ namespace SDKSample
                 new AndCondition(documentControl, textPatternAvailable);
 
             // Get the Automation Element for the first text control found.
-            // For the purposes of this sample it is sufficient to find the 
+            // For the purposes of this sample it is sufficient to find the
             // first text control. In other cases there may be multiple text
             // controls to sort through.
             targetDocument =
@@ -584,7 +584,7 @@ namespace SDKSample
                 return;
             }
 
-            // Get required control patterns 
+            // Get required control patterns
             targetTextPattern =
                 targetDocument.GetCurrentPattern(
                 TextPattern.Pattern) as TextPattern;
@@ -641,18 +641,18 @@ namespace SDKSample
 
             //<SnippetTextChanged>
             // Initialize a text changed listener.
-            // An instance of TextPatternRange will become invalid if 
+            // An instance of TextPatternRange will become invalid if
             // one of the following occurs:
             // 1) The text in the provider changes via some user activity.
-            // 2) ValuePattern.SetValue is used to programatically change 
+            // 2) ValuePattern.SetValue is used to programatically change
             // the value of the text in the provider.
-            // The only way the client application can detect if the text 
-            // has changed (to ensure that the ranges are still valid), 
-            // is by setting a listener for the TextChanged event of 
-            // the TextPattern. If this event is raised, the client needs 
-            // to update the targetDocumentRange member data to ensure the 
-            // user is working with the updated text. 
-            // Clients must always anticipate the possibility that the text 
+            // The only way the client application can detect if the text
+            // has changed (to ensure that the ranges are still valid),
+            // is by setting a listener for the TextChanged event of
+            // the TextPattern. If this event is raised, the client needs
+            // to update the targetDocumentRange member data to ensure the
+            // user is working with the updated text.
+            // Clients must always anticipate the possibility that the text
             // can change underneath them.
             Automation.AddAutomationEventHandler(
                 TextPattern.TextChangedEvent,
@@ -716,7 +716,7 @@ namespace SDKSample
                 return;
             }
             // Otherwise, select the range from the child element.
-            TextPatternRange childRange = 
+            TextPatternRange childRange =
                 documentRange.TextPattern.RangeFromChild(enclosingElement);
             childRange.Select();
         }
@@ -761,12 +761,12 @@ namespace SDKSample
                     .AppendLine(textProviderChildren[i].Current.ControlType.ProgrammaticName);
 
                 // Obtain the supported control patterns.
-                // NOTE: For the purposes of this sample we use GetSupportedPatterns(). 
-                // However, the use of GetSupportedPatterns() is strongly discouraged 
-                // as it calls GetCurrentPattern() internally on every known pattern. 
-                // It is therefore much more efficient to use GetCurrentPattern() for 
+                // NOTE: For the purposes of this sample we use GetSupportedPatterns().
+                // However, the use of GetSupportedPatterns() is strongly discouraged
+                // as it calls GetCurrentPattern() internally on every known pattern.
+                // It is therefore much more efficient to use GetCurrentPattern() for
                 // the specific patterns you are interested in.
-                AutomationPattern[] childPatterns = 
+                AutomationPattern[] childPatterns =
                     textProviderChildren[i].GetSupportedPatterns();
                 childInformation.AppendLine("\tSupported Control Patterns:");
                 if (childPatterns.Length <= 0)
@@ -783,9 +783,9 @@ namespace SDKSample
                 }
 
                 // Obtain the child elements, if any, of the child control.
-                TextPatternRange childRange = 
+                TextPatternRange childRange =
                     documentRange.TextPattern.RangeFromChild(textProviderChildren[i]);
-                AutomationElement[] childRangeChildren = 
+                AutomationElement[] childRangeChildren =
                     childRange.GetChildren();
                 childInformation.Append("\tChildren: \t").Append(childRangeChildren.Length).AppendLine();
             }
@@ -819,7 +819,7 @@ namespace SDKSample
                 TextPatternRangeEndpoint.End);
 
             // If the starting endpoints of the document range and the search
-            // range are equivalent then we can search forward only since the 
+            // range are equivalent then we can search forward only since the
             // search range is at the start of the document.
             if (startPoints == 0)
             {
@@ -827,7 +827,7 @@ namespace SDKSample
                 searchBackwardButton.IsEnabled = false;
             }
             // If the ending endpoints of the document range and the search
-            // range are identical then we can search backward only since the 
+            // range are identical then we can search backward only since the
             // search range is at the end of the document.
             else if (endPoints == 0)
             {
@@ -855,7 +855,7 @@ namespace SDKSample
             Button searchDirection = (Button)sender;
 
             // Are we searching backward through the text control?
-            searchBackward = 
+            searchBackward =
                 ((traversalDirection)searchDirection.Tag == traversalDirection.Backward);
 
             // Check if search text entered
@@ -883,13 +883,13 @@ namespace SDKSample
                 targetResult.Background = Brushes.Salmon;
                 return;
             }
-            //</SnippetSupportedTextSelection>                
+            //</SnippetSupportedTextSelection>
 
-            // Clone the document range since we modify the endpoints 
+            // Clone the document range since we modify the endpoints
             // as we search.
             TextPatternRange documentRangeClone = documentRange.Clone();
-            
-            // Move the cloned document range endpoints to enable the 
+
+            // Move the cloned document range endpoints to enable the
             // selection of the next matching text range.
             TextPatternRange[] selectionRange =
                 targetTextPattern.GetSelection();
@@ -925,8 +925,8 @@ namespace SDKSample
             {
                 // Search string not found at all.
                 if (documentRangeClone.CompareEndpoints(
-                    TextPatternRangeEndpoint.Start, 
-                    searchRangeClone, 
+                    TextPatternRangeEndpoint.Start,
+                    searchRangeClone,
                     TextPatternRangeEndpoint.Start) == 0)
                 {
                     targetResult.Content = "Text not found.";
@@ -934,8 +934,8 @@ namespace SDKSample
                     searchBackwardButton.IsEnabled = false;
                     searchForwardButton.IsEnabled = false;
                 }
-                // End of document (either the start or end of the document 
-                // range depending on search direction) was reached before 
+                // End of document (either the start or end of the document
+                // range depending on search direction) was reached before
                 // finding another occurence of the search string.
                 else
                 {
@@ -944,8 +944,8 @@ namespace SDKSample
                     if (!searchBackward)
                     {
                         searchRangeClone.MoveEndpointByRange(
-                            TextPatternRangeEndpoint.Start, 
-                            documentRange, 
+                            TextPatternRangeEndpoint.Start,
+                            documentRange,
                             TextPatternRangeEndpoint.End);
                         searchBackwardButton.IsEnabled = true;
                         searchForwardButton.IsEnabled = false;
@@ -953,8 +953,8 @@ namespace SDKSample
                     else
                     {
                         searchRangeClone.MoveEndpointByRange(
-                            TextPatternRangeEndpoint.End, 
-                            documentRange, 
+                            TextPatternRangeEndpoint.End,
+                            documentRange,
                             TextPatternRangeEndpoint.Start);
                         searchBackwardButton.IsEnabled = false;
                         searchForwardButton.IsEnabled = true;
@@ -1007,12 +1007,12 @@ namespace SDKSample
 
             // Which direction is the user searching through the text control?
             int navDirection =
-                ((traversalDirection)moveSelection.Tag == traversalDirection.Forward) ? 1 : -1;            
-            
+                ((traversalDirection)moveSelection.Tag == traversalDirection.Forward) ? 1 : -1;
+
             // Obtain the ranges to move.
             TextPatternRange[] selectionRanges =
                            targetTextPattern.GetSelection();
-            
+
             // Iterate throught the ranges for a text control that supports
             // multiple selections and move the selections the specified text
             // unit and direction.
@@ -1050,8 +1050,8 @@ namespace SDKSample
                 {
                     case "None":
                         textRange.MoveEndpointByRange(
-                            TextPatternRangeEndpoint.End, 
-                            textRange, 
+                            TextPatternRangeEndpoint.End,
+                            textRange,
                             TextPatternRangeEndpoint.Start);
                         break;
                     case "Character":
@@ -1113,12 +1113,12 @@ namespace SDKSample
         ///--------------------------------------------------------------------
        private void NotifyTextChanged(string message)
         {
-           // Notify the user of the text changed event. 
+           // Notify the user of the text changed event.
            targetSelectionLabel.Content = message;
            // Re-initialize the document range for the text of the document
-           // since we don't know the extent of the changes. For example, a 
-           // change in the font color attribute, such as on a hyperlink 
-           // mouseover, raises this event but doesn't change the content of 
+           // since we don't know the extent of the changes. For example, a
+           // change in the font color attribute, such as on a hyperlink
+           // mouseover, raises this event but doesn't change the content of
            // the text control.
            documentRange = targetTextPattern.DocumentRange;
         }
@@ -1157,7 +1157,7 @@ namespace SDKSample
             // For the purposes of this sample only the first selection
             // range will be echoed in the client.
             searchRange = selectionRanges[0];
-            // For performance and security reasons we'll limit 
+            // For performance and security reasons we'll limit
             // the length of the string retrieved to 100 characters.
             // Alternatively, GetText(-1) will retrieve all selected text.
             string selectedText = searchRange.GetText(100);
@@ -1179,9 +1179,9 @@ namespace SDKSample
         private void DisplaySelectedTextWithAttributes(string selectedText)
         {
             targetSelection.Text = selectedText;
-            // We're only interested in the FontNameAttribute for the purposes 
+            // We're only interested in the FontNameAttribute for the purposes
             // of this sample.
-            targetSelectionAttributes.Text = 
+            targetSelectionAttributes.Text =
                 ParseTextRangeByAttribute(
                 selectedText, TextPattern.FontNameAttribute);
         }
@@ -1199,7 +1199,7 @@ namespace SDKSample
         /// </returns>
         ///--------------------------------------------------------------------
         private string ParseTextRangeByAttribute(
-            string selectedText, 
+            string selectedText,
             AutomationTextAttribute automationTextAttribute)
         {
             StringBuilder attributeDetails = new StringBuilder();
@@ -1214,9 +1214,9 @@ namespace SDKSample
             {
                 searchRangeClone.Move(TextUnit.Character, 1);
                 // Get the attribute value of the current character.
-                string newAttributeValue = 
+                string newAttributeValue =
                     searchRangeClone.GetAttributeValue(automationTextAttribute).ToString();
-                // If the new attribute value is not equal to the old then report 
+                // If the new attribute value is not equal to the old then report
                 // the new value along with its location within the range.
                 if (newAttributeValue != attributeValue)
                 {

@@ -9,7 +9,7 @@ public class Dice
     }
     public int Roll()
     {
-        return rnd.Next(1, 7); 
+        return rnd.Next(1, 7);
     }
 }
 

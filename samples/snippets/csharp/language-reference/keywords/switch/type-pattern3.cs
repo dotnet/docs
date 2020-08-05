@@ -34,7 +34,7 @@ class Example
                break;
             case IEnumerable ie:
                string result = "";
-               foreach (var e in ie) 
+               foreach (var e in ie)
                   result += $"{e} ";
                Console.WriteLine(result);
                break;

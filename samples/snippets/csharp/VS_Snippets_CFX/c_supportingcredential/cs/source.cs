@@ -42,15 +42,15 @@ namespace Samples
             SymmetricSecurityBindingElement secBindingEle =
                 SecurityBindingElement.CreateIssuedTokenBindingElement(issuedSecTok);
 
-            // Create a Kerberos token parameter object and set the inclusion 
-            // mode to AlwaysToRecipient. Add the object as an endorsing token for 
+            // Create a Kerberos token parameter object and set the inclusion
+            // mode to AlwaysToRecipient. Add the object as an endorsing token for
             // all operations of the endpoint.
             KerberosSecurityTokenParameters kstp = new KerberosSecurityTokenParameters();
             kstp.InclusionMode = SecurityTokenInclusionMode.AlwaysToRecipient;
             secBindingEle.EndpointSupportingTokenParameters.Endorsing.Add(kstp);
 
-            // Create a username token parameter object and set its 
-            // RequireDerivedKeys to false. 
+            // Create a username token parameter object and set its
+            // RequireDerivedKeys to false.
             UserNameSecurityTokenParameters userNameParams =
                 new UserNameSecurityTokenParameters();
             userNameParams.RequireDerivedKeys = false;
@@ -63,7 +63,7 @@ namespace Samples
             stp.SignedEncrypted.Add(userNameParams);
 
             // Create a generic dictionary item, a KeyValuePair object
-            // that includes all supporting token parameters. Then add 
+            // that includes all supporting token parameters. Then add
             // it to the dictionary for operation-scope supporting tokens.
             KeyValuePair<string, SupportingTokenParameters> x =
                 new KeyValuePair<string, SupportingTokenParameters>("1", stp);
@@ -91,7 +91,7 @@ namespace Samples
             // 1) A user name/password encrypted with the service token.
             // 2) A client certificate used to sign the message.
 
-            // Instantiate a binding element that will require the user name/password token 
+            // Instantiate a binding element that will require the user name/password token
             // in the message (encrypted with the server certificate).
             SymmetricSecurityBindingElement messageSecurity = SecurityBindingElement.CreateUserNameForCertificateBindingElement();
 
@@ -101,7 +101,7 @@ namespace Samples
             clientX509SupportingTokenParameters.InclusionMode = SecurityTokenInclusionMode.AlwaysToRecipient;
             // Turn off derived keys.
             clientX509SupportingTokenParameters.RequireDerivedKeys = false;
-            // Augment the binding element to require the client's X.509 certificate as an 
+            // Augment the binding element to require the client's X.509 certificate as an
             // endorsing token in the message.
             messageSecurity.EndpointSupportingTokenParameters.Endorsing.Add(clientX509SupportingTokenParameters);
 

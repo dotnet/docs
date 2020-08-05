@@ -22,16 +22,16 @@ Serves as the host's representation of a critical section for threading.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Enter Method](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-enter-method.md)|Enters the critical section.|  
-|[Leave Method](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-leave-method.md)|Leaves the critical section.|  
-|[SetSpinCount Method](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-setspincount-method.md)|Sets the spin count for the critical section.|  
-|[TryEnter Method](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-tryenter-method.md)|Attempts to enter the critical section, and reports success or failure immediately.|  
+|[Enter Method](ihostcrst-enter-method.md)|Enters the critical section.|  
+|[Leave Method](ihostcrst-leave-method.md)|Leaves the critical section.|  
+|[SetSpinCount Method](ihostcrst-setspincount-method.md)|Sets the spin count for the critical section.|  
+|[TryEnter Method](ihostcrst-tryenter-method.md)|Attempts to enter the critical section, and reports success or failure immediately.|  
   
 ## Remarks  
  `IHostCrst` allows the common language runtime (CLR) to communicate directly with the host's representation of a critical section, rather than using Win32 functions such as `EnterCriticalSection` or `LeaveCriticalSection`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -41,6 +41,6 @@ Serves as the host's representation of a critical section for threading.
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

@@ -41,7 +41,7 @@ namespace SDKSample
                 }
                 else if (drawing is GeometryDrawing)
                 {
-                    // Perform action based on drawing type.  
+                    // Perform action based on drawing type.
                 }
                 else if (drawing is ImageDrawing)
                 {

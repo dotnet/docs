@@ -10,7 +10,7 @@ ms.assetid: f704b81c-449a-47a4-ace1-9332e3cc6d60
 # Safe Constructor Patterns for DependencyObjects
 Generally, class constructors should not call callbacks such as virtual methods or delegates, because constructors can be called as base initialization of constructors for a derived class. Entering the virtual might be done at an incomplete initialization state of any given object. However, the property system itself calls and exposes callbacks internally, as part of the dependency property system. As simple an operation as setting a dependency property value with <xref:System.Windows.DependencyObject.SetValue%2A> call potentially includes a callback somewhere in the determination. For this reason, you should be careful when setting dependency property values within the body of a constructor, which can become problematic if your type is used as a base class. There is a particular pattern for implementing <xref:System.Windows.DependencyObject> constructors that avoids specific problems with dependency property states and the inherent callbacks, which is documented here.  
 
-<a name="Property_System_Virtual_Methods"></a>   
+<a name="Property_System_Virtual_Methods"></a>
 ## Property System Virtual Methods  
  The following virtual methods or callbacks are potentially called during the computations of the <xref:System.Windows.DependencyObject.SetValue%2A> call that sets a dependency property value: <xref:System.Windows.ValidateValueCallback>, <xref:System.Windows.PropertyChangedCallback>, <xref:System.Windows.CoerceValueCallback>, <xref:System.Windows.DependencyObject.OnPropertyChanged%2A>. Each of these virtual methods or callbacks serves a particular purpose in expanding the versatility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] property system and dependency properties. For more information on how to use these virtuals to customize property value determination, see [Dependency Property Callbacks and Validation](dependency-property-callbacks-and-validation.md).  
   
@@ -39,7 +39,7 @@ public class MyClass : DependencyObject
         Wobble = toSetWobble; //this is backed by a DependencyProperty  
         _myList = new ArrayList();    // this line should be in the default ctor  
     }  
-    public static readonly DependencyProperty WobbleProperty =   
+    public static readonly DependencyProperty WobbleProperty =
         DependencyProperty.Register("Wobble", typeof(object), typeof(MyClass));  
     public object Wobble  
     {  
@@ -58,7 +58,7 @@ public class MyClass : DependencyObject
   
  One way to avoid these issues is to make sure that callbacks use only other dependency properties, and that each such dependency property has an established default value as part of its registered metadata.  
   
-<a name="Safe_Constructor_Patterns"></a>   
+<a name="Safe_Constructor_Patterns"></a>
 ## Safe Constructor Patterns  
  To avoid the risks of incomplete initialization if your class is used as a base class, follow these patterns:  
   
@@ -68,7 +68,7 @@ public class MyClass : DependencyObject
 ```csharp  
 public MyClass : SomeBaseClass {  
     public MyClass() : base() {  
-        // ALL class initialization, including initial defaults for   
+        // ALL class initialization, including initial defaults for
         // possible values that other ctors specify or that callbacks need.  
     }  
 }  

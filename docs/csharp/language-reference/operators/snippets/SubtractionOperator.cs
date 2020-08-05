@@ -40,7 +40,7 @@ namespace operators
 
             var abbaab = a + b + b + a + a + b;
             var aba = a + b + a;
-            
+
             var first = abbaab - aba;
             first();  // output: abbaab
             Console.WriteLine();

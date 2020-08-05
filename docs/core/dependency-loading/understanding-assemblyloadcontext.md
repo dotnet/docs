@@ -100,8 +100,8 @@ Given two objects `a` and `b`, evaluating the following in the debugger will be 
 a.GetType().Assembly
 b.GetType().Assembly
 // In debugger look at each AssemblyLoadContext's instance and name
-System.Runtime.AssemblyLoadContext.GetLoadContext(a.GetType().Assembly)
-System.Runtime.AssemblyLoadContext.GetLoadContext(b.GetType().Assembly)
+System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(a.GetType().Assembly)
+System.Runtime.Loader.AssemblyLoadContext.GetLoadContext(b.GetType().Assembly)
 ```
 
 ### Resolving type conversion issues

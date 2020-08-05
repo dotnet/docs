@@ -16,7 +16,7 @@ namespace ProductSalesAnomalyDetection
         // </SnippetDeclareGlobalVariables>
         static void Main(string[] args)
         {
-            // Create MLContext to be shared across the model creation workflow objects 
+            // Create MLContext to be shared across the model creation workflow objects
             // <SnippetCreateMLContext>
             MLContext mlContext = new MLContext();
             // </SnippetCreateMLContext>
@@ -31,7 +31,7 @@ namespace ProductSalesAnomalyDetection
             DetectSpike(mlContext, _docsize, dataView);
             // </SnippetCallDetectSpike>
 
-            // Changepoint detects pattern persistent changes 
+            // Changepoint detects pattern persistent changes
             // <SnippetCallDetectChangepoint>
             DetectChangepoint(mlContext, _docsize, dataView);
             // </SnippetCallDetectChangepoint>
@@ -40,10 +40,10 @@ namespace ProductSalesAnomalyDetection
         {
             Console.WriteLine("Detect temporary changes in pattern");
 
-            // STEP 2: Set the training algorithm   
-            // <SnippetAddSpikeTrainer> 
+            // STEP 2: Set the training algorithm
+            // <SnippetAddSpikeTrainer>
             var iidSpikeEstimator = mlContext.Transforms.DetectIidSpike(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95, pvalueHistoryLength: docSize / 4);
-            // </SnippetAddSpikeTrainer> 
+            // </SnippetAddSpikeTrainer>
 
             // STEP 3: Create the transform
             // Create the spike detection transform
@@ -57,11 +57,11 @@ namespace ProductSalesAnomalyDetection
             // <SnippetTransformData1>
             IDataView transformedData = iidSpikeTransform.Transform(productSales);
             // </SnippetTransformData1>
- 
+
             // <SnippetCreateEnumerable1>
             var predictions = mlContext.Data.CreateEnumerable<ProductSalesPrediction>(transformedData, reuseRowObject: false);
             // </SnippetCreateEnumerable1>
-            
+
             // <SnippetDisplayHeader1>
             Console.WriteLine("Alert\tScore\tP-Value");
             // </SnippetDisplayHeader1>
@@ -86,10 +86,10 @@ namespace ProductSalesAnomalyDetection
         {
             Console.WriteLine("Detect Persistent changes in pattern");
 
-            //STEP 2: Set the training algorithm 
-            // <SnippetAddChangePointTrainer> 
+            //STEP 2: Set the training algorithm
+            // <SnippetAddChangePointTrainer>
             var iidChangePointEstimator = mlContext.Transforms.DetectIidChangePoint(outputColumnName: nameof(ProductSalesPrediction.Prediction), inputColumnName: nameof(ProductSalesData.numSales), confidence: 95, changeHistoryLength: docSize / 4);
-            // </SnippetAddChangePointTrainer> 
+            // </SnippetAddChangePointTrainer>
 
             //STEP 3: Create the transform
             Console.WriteLine("=============== Training the model Using Change Point Detection Algorithm===============");
@@ -106,7 +106,7 @@ namespace ProductSalesAnomalyDetection
             // <SnippetCreateEnumerable2>
             var predictions = mlContext.Data.CreateEnumerable<ProductSalesPrediction>(transformedData, reuseRowObject: false);
             // </SnippetCreateEnumerable2>
-            
+
             // <SnippetDisplayHeader2>
             Console.WriteLine("Alert\tScore\tP-Value\tMartingale value");
             // </SnippetDisplayHeader2>

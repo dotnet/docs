@@ -1,5 +1,6 @@
 ---
 title: "How to: Authenticate with a User Name and Password"
+description: Learn how to enable a WCF service to authenticate a client by using a Windows domain username and password, with sample code.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "authentication [WCF], user name and password"
@@ -7,7 +8,7 @@ ms.assetid: a5415be2-0ef3-464c-9f76-c255cb8165a4
 ---
 # How to: Authenticate with a User Name and Password
 
-This topic demonstrates how to enable a Windows Communication Foundation (WCF) service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file, see [Message Security User Name](../samples/message-security-user-name.md).
+This topic demonstrates how to enable a Windows Communication Foundation (WCF) service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file, see [Message Security User Name](../samples/message-security-user-name.md).
 
 To configure a service to authenticate its clients using Windows Domain username and passwords use the <xref:System.ServiceModel.WSHttpBinding> and set its `Security.Mode` property to `Message`. In addition you must specify an X509 certificate that will be used to encrypt the username and password as they are sent from the client to the service.
 
@@ -34,7 +35,7 @@ On the client, you must prompt the user for the username and password and specif
     // ...
     ```
 
-    You can use your own certificate, just modify the code to refer to your certificate. For more information about creating and using certificates see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md). Make sure the certificate is in the Trusted People certificate store for the Local Machine. You can do this by running mmc.exe and selecting the **File**, **Add/Remove Snap-in...** menu item. In the **Add or Remove Snap-ins** dialog, select the **Certificates snap-in** and click **Add**. In the Certificates Snap-in dialog select **Computer account**. By default the certificate generated from the Message Security User name sample will be located in the Personal/Certificates folder.  It will be listed as "localhost" under the Issued to column in the MMC window. Drag and drop the certificate into the **Trusted People** folder. This will allow WCF to treat the certificate as a trusted certificate when performing authentication.
+    You can use your own certificate, just modify the code to refer to your certificate. For more information about creating and using certificates see [Working with Certificates](working-with-certificates.md). Make sure the certificate is in the Trusted People certificate store for the Local Machine. You can do this by running mmc.exe and selecting the **File**, **Add/Remove Snap-in...** menu item. In the **Add or Remove Snap-ins** dialog, select the **Certificates snap-in** and click **Add**. In the Certificates Snap-in dialog select **Computer account**. By default the certificate generated from the Message Security User name sample will be located in the Personal/Certificates folder.  It will be listed as "localhost" under the Issued to column in the MMC window. Drag and drop the certificate into the **Trusted People** folder. This will allow WCF to treat the certificate as a trusted certificate when performing authentication.
 
 ## To call the service passing username and password
 

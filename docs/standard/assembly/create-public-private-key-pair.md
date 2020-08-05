@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a public-private key pair"
+description: Learn how to create a public/private cryptographic key pair to use during compilation to create a strong-named assembly.
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "key pairs for strong-named assemblies"

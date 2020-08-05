@@ -19,7 +19,7 @@ Specifies that the Windows identity does not flow across asynchronous points, re
 ## Syntax  
   
 ```xml  
-<legacyImpersonationPolicy    
+<legacyImpersonationPolicy
    enabled="true|false"/>  
 ```  
   

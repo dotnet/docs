@@ -34,7 +34,7 @@ HRESULT GetCount (
  This method will always return zero in the .NET Framework version 3.5 Service Pack 1 (SP1) and later versions.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

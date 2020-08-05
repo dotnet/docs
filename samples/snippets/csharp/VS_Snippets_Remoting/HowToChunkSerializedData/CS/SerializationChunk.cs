@@ -143,7 +143,7 @@ public class SongFile : IXmlSerializable
     void ReadFileName(XmlReader reader)
     {
         string fileName = reader.ReadElementString("fileName", ns);
-        this.filePath = 
+        this.filePath =
             Path.Combine(MusicPath, Path.ChangeExtension(fileName, ".mp3"));
     }
 

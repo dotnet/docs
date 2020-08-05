@@ -14,7 +14,7 @@
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.WCF.Documentation", ConfigurationName="ISampleService", CallbackContract=typeof(ISampleServiceCallback), SessionMode=System.ServiceModel.SessionMode.Required)]
 public interface ISampleService
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://Microsoft.WCF.Documentation/ISampleService/Push")]
     void Push(string msg);
 }
@@ -22,7 +22,7 @@ public interface ISampleService
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public interface ISampleServiceCallback
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://Microsoft.WCF.Documentation/ISampleService/PushBack")]
     void PushBack(string msg);
 }
@@ -36,32 +36,32 @@ public interface ISampleServiceChannel : ISampleService, System.ServiceModel.ICl
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class SampleServiceClient : System.ServiceModel.DuplexClientBase<ISampleService>, ISampleService
 {
-    
-    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance) : 
+
+    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance) :
             base(callbackInstance)
     {
     }
-    
-    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) : 
+
+    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName) :
             base(callbackInstance, endpointConfigurationName)
     {
     }
-    
-    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) : 
+
+    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, string remoteAddress) :
             base(callbackInstance, endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(callbackInstance, endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleServiceClient(System.ServiceModel.InstanceContext callbackInstance, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(callbackInstance, binding, remoteAddress)
     {
     }
-    
+
     public void Push(string msg)
     {
         base.Channel.Push(msg);

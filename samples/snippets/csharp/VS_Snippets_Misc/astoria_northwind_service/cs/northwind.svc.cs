@@ -22,7 +22,7 @@ namespace NorthwindDataService
             // based on the requirements of client applications.
             config.SetEntitySetAccessRule("Customers", EntitySetRights.AllRead);
             config.SetEntitySetAccessRule("Employees", EntitySetRights.ReadSingle);
-            config.SetEntitySetAccessRule("Orders", EntitySetRights.All  
+            config.SetEntitySetAccessRule("Orders", EntitySetRights.All
                 | EntitySetRights.WriteAppend
                 | EntitySetRights.WriteMerge);
             config.SetEntitySetAccessRule("Order_Details", EntitySetRights.All);

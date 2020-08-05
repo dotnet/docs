@@ -7,7 +7,7 @@ class Example
 {
     static void Main()
     {
-        // To receive first chance notifications of exceptions in 
+        // To receive first chance notifications of exceptions in
         // an application domain, handle the FirstChanceException
         // event in that application domain.
         //<Snippet2>
@@ -32,7 +32,7 @@ class Example
         }
         catch (ArgumentException ex)
         {
-            Console.WriteLine("ArgumentException caught in {0}: {1}", 
+            Console.WriteLine("ArgumentException caught in {0}: {1}",
                 AppDomain.CurrentDomain.FriendlyName, ex.Message);
         }
         //</Snippet6>
@@ -60,7 +60,7 @@ public class Worker : MarshalByRefObject
             }
             catch (ArgumentException ex)
             {
-                Console.WriteLine("ArgumentException caught in {0}: {1}", 
+                Console.WriteLine("ArgumentException caught in {0}: {1}",
                     AppDomain.CurrentDomain.FriendlyName, ex.Message);
             }
         }

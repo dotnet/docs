@@ -13,7 +13,7 @@ namespace cs_adonet
             Northwnd db = new Northwnd(@"");
 
             // <Snippet1>
-            db.Connection.Close(); 
+            db.Connection.Close();
             // </Snippet1>
 
             // <Snippet2>

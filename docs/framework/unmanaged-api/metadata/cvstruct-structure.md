@@ -39,7 +39,7 @@ typedef struct {
 |Build|Build number.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -49,4 +49,4 @@ typedef struct {
   
 ## See also
 
-- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
+- [Metadata Structures](metadata-structures.md)

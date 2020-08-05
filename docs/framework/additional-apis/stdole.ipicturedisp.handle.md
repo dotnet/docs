@@ -1,5 +1,6 @@
 ---
 title: IPictureDisp.Handle Property (stdole)
+description: Read about the IPictureDisp.Handle property in .NET. This property is in the stdole namespace and the stdole assembly (in the stdole.dll library).
 ms.date: 02/22/2019
 topic_type:
   - "apiref"

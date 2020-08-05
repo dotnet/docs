@@ -17,16 +17,16 @@ namespace NavigateWithTreeWalker
             InitializeComponent();
             showAutomation.mainForm = this;
         }
-        
+
         private void btnStartAutomation_Click(object sender, EventArgs e)
         {
-            if (automationStarted) 
+            if (automationStarted)
             {
                 showAutomation.StopListening();
                 btnStartAutomation.Text = "Start Automation";
                 automationStarted = false;
             }
-            else 
+            else
             {
                 automationStarted = showAutomation.StartListening();
                 if (automationStarted)

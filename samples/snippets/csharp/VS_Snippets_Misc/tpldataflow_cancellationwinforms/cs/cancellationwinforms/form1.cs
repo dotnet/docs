@@ -60,17 +60,17 @@ namespace CancellationWinForms
          // Create the cancellation source.
          cancellationSource = new CancellationTokenSource();
 
-         // Create the first node in the pipeline. 
+         // Create the first node in the pipeline.
          startWork = new TransformBlock<WorkItem, WorkItem>(workItem =>
          {
             // Perform some work.
             workItem.DoWork(250);
 
-            // Decrement the progress bar that tracks the count of 
+            // Decrement the progress bar that tracks the count of
             // active work items in this stage of the pipeline.
             decrementProgress.Post(toolStripProgressBar1);
 
-            // Increment the progress bar that tracks the count of 
+            // Increment the progress bar that tracks the count of
             // active work items in the next stage of the pipeline.
             incrementProgress.Post(toolStripProgressBar2);
 
@@ -82,31 +82,31 @@ namespace CancellationWinForms
             CancellationToken = cancellationSource.Token
          });
 
-         // Create the second, and final, node in the pipeline. 
+         // Create the second, and final, node in the pipeline.
          completeWork = new ActionBlock<WorkItem>(workItem =>
          {
             // Perform some work.
             workItem.DoWork(1000);
 
-            // Decrement the progress bar that tracks the count of 
+            // Decrement the progress bar that tracks the count of
             // active work items in this stage of the pipeline.
             decrementProgress.Post(toolStripProgressBar2);
 
-            // Increment the progress bar that tracks the overall 
+            // Increment the progress bar that tracks the overall
             // count of completed work items.
             incrementProgress.Post(toolStripProgressBar3);
-         }, 
+         },
          new ExecutionDataflowBlockOptions
          {
             CancellationToken = cancellationSource.Token,
             MaxDegreeOfParallelism = 2
          });
 
-         // Connect the two nodes of the pipeline. When the first node completes, 
+         // Connect the two nodes of the pipeline. When the first node completes,
          // set the second node also to the completed state.
          startWork.LinkTo(
             completeWork, new DataflowLinkOptions { PropagateCompletion = true });
-                  
+
          // Create the dataflow action blocks that increment and decrement
          // progress bars.
          // These blocks use the task scheduler that is associated with
@@ -170,24 +170,24 @@ namespace CancellationWinForms
             // Asynchronously wait for the pipeline to complete processing and for
             // the progress bars to update.
             await Task.WhenAll(
-               completeWork.Completion, 
-               incrementProgress.Completion, 
+               completeWork.Completion,
+               incrementProgress.Completion,
                decrementProgress.Completion);
          }
          catch (OperationCanceledException)
          {
          }
 
-         // Increment the progress bar that tracks the number of cancelled 
+         // Increment the progress bar that tracks the number of cancelled
          // work items by the number of active work items.
-         toolStripProgressBar4.Value += toolStripProgressBar1.Value;         
+         toolStripProgressBar4.Value += toolStripProgressBar1.Value;
          toolStripProgressBar4.Value += toolStripProgressBar2.Value;
 
          // Reset the progress bars that track the number of active work items.
          toolStripProgressBar1.Value = 0;
          toolStripProgressBar2.Value = 0;
 
-         // Enable the Add Work Items button.      
+         // Enable the Add Work Items button.
          toolStripButton1.Enabled = true;
       }
       // </snippet6>

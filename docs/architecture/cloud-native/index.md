@@ -2,14 +2,14 @@
 title: Architecting Cloud Native .NET Applications for Azure
 description: A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
 author: ardalis
-ms.date: 03/07/2019
+ms.date: 05/13/2020
 ---
 
 # Architecting Cloud Native .NET Applications for Azure
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 ![cover image](./media/cover.png)
+
+**EDITION v.1.0**
 
 PUBLISHED BY
 
@@ -21,15 +21,15 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2019 by Microsoft Corporation
+Copyright &copy; 2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
-This book is provided “as-is” and expresses the author’s views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
+This book is provided "as-is" and expresses the author's views and opinions. The views, opinions, and information expressed in this book, including URL and other Internet website references, may change without notice.
 
 Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
 
-Microsoft and the trademarks listed at https://www.microsoft.com on the “Trademarks” webpage are trademarks of the Microsoft group of companies.
+Microsoft and the trademarks listed at <https://www.microsoft.com> on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
 
 Mac and macOS are trademarks of Apple Inc.
 
@@ -39,19 +39,27 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
+> **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
-> **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [RobVettor.com](https://robvettor.com)
+> **Steve "ardalis" Smith**, Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 
 Participants and Reviewers:
 
 > **Cesar De la Torre**, Principal Program Manager, .NET team, Microsoft
 >
-> **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
+> **Nish Anil**, Senior Program Manager, .NET team, Microsoft
+>
+> **Jeremy Likness**, Senior Program Manager, .NET team, Microsoft
+>
+> **Cecil Phillip**, Senior Cloud Advocate, Microsoft
 
 Editors:
 
-> **Maira Wenzel**, Sr. Content Developer, .NET team, Microsoft
+> **Maira Wenzel**, Program Manager, .NET team, Microsoft
+
+## Version
+
+This guide has been written to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release.
 
 ## Who should use this guide
 
@@ -71,7 +79,11 @@ This guide begins by defining cloud native and introducing a reference applicati
 - Identity and security
 - DevOps
 
-This guide is available both in PDF form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
+This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
+
+## Send your feedback
+
+This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
 >[Next](introduction.md)

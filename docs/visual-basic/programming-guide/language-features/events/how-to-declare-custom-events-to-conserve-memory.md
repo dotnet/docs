@@ -24,5 +24,5 @@ There are several circumstances when it is important that an application keep it
 ## See also
 
 - <xref:System.ComponentModel.EventHandlerList>
-- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
-- [How to: Declare Custom Events To Avoid Blocking](../../../../visual-basic/programming-guide/language-features/events/how-to-declare-custom-events-to-avoid-blocking.md)
+- [Events](index.md)
+- [How to: Declare Custom Events To Avoid Blocking](how-to-declare-custom-events-to-avoid-blocking.md)

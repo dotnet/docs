@@ -1,5 +1,6 @@
 ---
 title: "Handling and Raising Events"
+description: Learn to handle and raise .NET events, which are based on the delegate model. This model lets subscribers register with or receive notifications from providers.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 

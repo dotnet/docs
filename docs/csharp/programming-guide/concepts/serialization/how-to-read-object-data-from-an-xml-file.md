@@ -12,7 +12,7 @@ This example reads object data that was previously written to an XML file using 
 public class Book  
 {  
     public String title;  
-}         
+}
   
 public void ReadXML()  
 {  
@@ -24,7 +24,7 @@ public void ReadXML()
     wfile.Close();  
   
     // Now we can read the serialized book ...  
-    System.Xml.Serialization.XmlSerializer reader =   
+    System.Xml.Serialization.XmlSerializer reader =
         new System.Xml.Serialization.XmlSerializer(typeof(Book));  
     System.IO.StreamReader file = new System.IO.StreamReader(  
         @"c:\temp\SerializationOverview.xml");  
@@ -52,7 +52,7 @@ Replace the file name "c:\temp\SerializationOverview.xml" with the name of the f
   
 - The file does not exist (<xref:System.IO.IOException>).  
   
-## .NET Framework Security  
+## .NET Security  
  Always verify inputs, and never deserialize data from an untrusted source. The re-created object runs on a local computer with the permissions of the code that deserialized it. Verify all inputs before using the data in your application.  
   
 ## See also

@@ -23,7 +23,7 @@ namespace Microsoft.Samples.BrushExamples
 
             // Set Stretch to None so that the brush's
             // content doesn't automatically expand to
-            // fill the entire tile. 
+            // fill the entire tile.
             topLeftAlignedTileBrush.Stretch = Stretch.None;
 
             // Define the brush's content.
@@ -71,7 +71,7 @@ namespace Microsoft.Samples.BrushExamples
 
             // <SnippetTileBrushTopLeftAlignmentTiledInline>
             //
-            // Create a TileBrush that generates a 
+            // Create a TileBrush that generates a
             // tiled pattern and align its
             // content to the top-left of its tile.
             //
@@ -80,7 +80,7 @@ namespace Microsoft.Samples.BrushExamples
             tiledTopLeftAlignedTileBrush.AlignmentY = AlignmentY.Top;
             tiledTopLeftAlignedTileBrush.Stretch = Stretch.Uniform;
 
-            // Set the brush's Viewport and TileMode to produce a 
+            // Set the brush's Viewport and TileMode to produce a
             // tiled pattern.
             tiledTopLeftAlignedTileBrush.Viewport = new Rect(0, 0, 0.25, 0.5);
             tiledTopLeftAlignedTileBrush.TileMode = TileMode.Tile;
@@ -101,7 +101,7 @@ namespace Microsoft.Samples.BrushExamples
 
             // <SnippetTileBrushBottomRightAlignmentTiledInline>
             //
-            // Create a TileBrush that generates a 
+            // Create a TileBrush that generates a
             // tiled pattern and align its
             // content to the bottom-right of its tile.
             //
@@ -110,7 +110,7 @@ namespace Microsoft.Samples.BrushExamples
             tiledBottomRightAlignedTileBrush.AlignmentY = AlignmentY.Bottom;
             tiledBottomRightAlignedTileBrush.Stretch = Stretch.Uniform;
 
-            // Set the brush's Viewport and TileMode to produce a 
+            // Set the brush's Viewport and TileMode to produce a
             // tiled pattern.
             tiledBottomRightAlignedTileBrush.Viewport = new Rect(0, 0, 0.25, 0.5);
             tiledBottomRightAlignedTileBrush.TileMode = TileMode.Tile;

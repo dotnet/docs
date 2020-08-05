@@ -33,7 +33,7 @@ namespace WPF_Hosting_Win32_Control
       hwndHost = CreateWindowEx(0, "static", "",
                                 WS_CHILD | WS_VISIBLE,
                                 0, 0,
-                                hostWidth, hostHeight, 
+                                hostWidth, hostHeight,
                                 hwndParent.Handle,
                                 (IntPtr)HOST_ID,
                                 IntPtr.Zero,
@@ -43,7 +43,7 @@ namespace WPF_Hosting_Win32_Control
                                     WS_CHILD | WS_VISIBLE | LBS_NOTIFY
                                       | WS_VSCROLL | WS_BORDER,
                                     0, 0,
-                                    hostWidth, hostHeight, 
+                                    hostWidth, hostHeight,
                                     hwndHost,
                                     (IntPtr) LISTBOX_ID,
                                     IntPtr.Zero,

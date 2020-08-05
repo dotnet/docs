@@ -29,7 +29,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
         {
             // Create the application's main window.
             NavigationWindow myWindow = new NavigationWindow();
-            
+
             // Display the sample
             Page myContent = new FreezableExample();
             myWindow.Navigate(myContent);
@@ -40,9 +40,9 @@ namespace Microsoft.Samples.Animation.LocalAnimations
 
     public class FreezableExample : Page
     {
-    
+
         private StackPanel myMainPanel;
-    
+
         public FreezableExample()
         {
            this.WindowTitle = "Freezable Example";
@@ -54,30 +54,30 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             exceptionExample();
             this.Content = myMainPanel;
         }
-        
+
         private void UnFrozenExample()
         {
-        
+
             // <SnippetUnFrozenExampleShort>
             Button myButton = new Button();
             SolidColorBrush myBrush = new SolidColorBrush(Colors.Yellow);
-            myButton.Background = myBrush;  
+            myButton.Background = myBrush;
 
             // Changes the button's background to red.
             myBrush.Color = Colors.Red;
             // </SnippetUnFrozenExampleShort>
-            
+
             myMainPanel.Children.Add(myButton);
         }
-        
+
         private void FrozenExample()
         {
             // <SnippetFrozenExamplePart1>
             Button myButton = new Button();
             SolidColorBrush myBrush = new SolidColorBrush(Colors.Yellow);
-            myButton.Background = myBrush;  
+            myButton.Background = myBrush;
             // </SnippetFrozenExamplePart1>
-            
+
             // <SnippetFrozenExamplePart2>
             if (myBrush.CanFreeze)
             {
@@ -85,30 +85,30 @@ namespace Microsoft.Samples.Animation.LocalAnimations
                 myBrush.Freeze();
             }
             // </SnippetFrozenExamplePart2>
-            
+
             myMainPanel.Children.Add(myButton);
-        } 
-        
+        }
+
         private void exceptionExample()
         {
-        
+
             // <SnippetExceptionExample>
 
             // <SnippetFreezeExample1>
             Button myButton = new Button();
-            SolidColorBrush myBrush = new SolidColorBrush(Colors.Yellow);          
+            SolidColorBrush myBrush = new SolidColorBrush(Colors.Yellow);
 
             if (myBrush.CanFreeze)
             {
                 // Makes the brush unmodifiable.
                 myBrush.Freeze();
             }
-            
-            myButton.Background = myBrush;  
+
+            myButton.Background = myBrush;
             // </SnippetFreezeExample1>
 
             try {
-            
+
                 // Throws an InvalidOperationException, because the brush is frozen.
                 myBrush.Color = Colors.Red;
             }catch(InvalidOperationException ex)
@@ -118,7 +118,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
 
             // </SnippetExceptionExample>
 
-            myMainPanel.Children.Add(myButton);        
+            myMainPanel.Children.Add(myButton);
         }
 
         private void checkIsFrozenExample()
@@ -128,13 +128,13 @@ namespace Microsoft.Samples.Animation.LocalAnimations
 
             Button myButton = new Button();
             SolidColorBrush myBrush = new SolidColorBrush(Colors.Yellow);
-            
+
             if (myBrush.CanFreeze)
             {
                 // Makes the brush unmodifiable.
                 myBrush.Freeze();
-            }            
-            
+            }
+
             myButton.Background = myBrush;
 
             if (myBrush.IsFrozen) // Evaluates to true.
@@ -155,36 +155,36 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             // </SnippetCheckIsFrozenExample>
 
             myMainPanel.Children.Add(myButton);
-        }    
+        }
 
         private void CloneExample()
         {
-        
+
             // <SnippetCloneExample>
             Button myButton = new Button();
             SolidColorBrush myBrush = new SolidColorBrush(Colors.Yellow);
-            
+
             // Freezing a Freezable before it provides
             // performance improvements if you don't
-            // intend on modifying it. 
+            // intend on modifying it.
             if (myBrush.CanFreeze)
             {
                 // Makes the brush unmodifiable.
                 myBrush.Freeze();
             }
 
-            myButton.Background = myBrush;  
-            
+            myButton.Background = myBrush;
+
             // If you need to modify a frozen brush,
             // the Clone method can be used to
             // create a modifiable copy.
             SolidColorBrush myBrushClone = myBrush.Clone();
-            
+
             // Changing myBrushClone does not change
             // the color of myButton, because its
             // background is still set by myBrush.
             myBrushClone.Color = Colors.Red;
-            
+
             // Replacing myBrush with myBrushClone
             // makes the button change to red.
             myButton.Background = myBrushClone;
@@ -193,23 +193,23 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             myMainPanel.Children.Add(myButton);
         }
     }
-    
+
     // <SnippetCreateInstanceCoreExample>
     public class MyFreezable : Freezable
     {
         // Typical implementation of CreateInstanceCore
         protected override Freezable CreateInstanceCore()
         {
-        
-            return new MyFreezable();      
+
+            return new MyFreezable();
         }
 
         // ...
         // Other code for the MyFreezableClass.
         // ...
     }
-    
-    // </SnippetCreateInstanceCoreExample>    
+
+    // </SnippetCreateInstanceCoreExample>
 
     // Starts the application.
     internal sealed class EntryClass
@@ -217,7 +217,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
         [System.STAThread()]
         private static void Main ()
         {
-            
+
             MyApp app = new MyApp ();
             app.Run ();
         }

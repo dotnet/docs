@@ -11,7 +11,7 @@ using System.Xml;
 class Person : IExtensibleDataObject
 {
     private string LastNameValue;
-    // Apply the DataMemberAttribute to fields (or properties) 
+    // Apply the DataMemberAttribute to fields (or properties)
     // that must be serialized.
     [DataMember()]
     public string FirstName;
@@ -26,7 +26,7 @@ class Person : IExtensibleDataObject
     [DataMember(Name = "ID")]
     public int IdNumber;
 
-    // Note that you can apply the DataMemberAttribute to 
+    // Note that you can apply the DataMemberAttribute to
     // a private field as well.
     [DataMember]
     private string Secret;
@@ -39,9 +39,9 @@ class Person : IExtensibleDataObject
         Secret = newfName + newLName + newIdNumber;
     }
 
-    // The extensionDataValue field holds data from future versions 
-    // of the type.  This enables this type to be compatible with 
-    // future versions. The field is required to implement the 
+    // The extensionDataValue field holds data from future versions
+    // of the type.  This enables this type to be compatible with
+    // future versions. The field is required to implement the
     // IExtensibleDataObject interface.
 
     private ExtensionDataObject extensionDatavalue;
@@ -98,7 +98,7 @@ public class Test
     //<snippet2>
     public static void ReadObject(string filename)
     {
-        // Deserialize an instance of the Person class 
+        // Deserialize an instance of the Person class
         // from an XML file.
         FileStream fs = new FileStream(filename,
         FileMode.OpenOrCreate);
@@ -138,7 +138,7 @@ namespace samples2
         [DataMember(EmitDefaultValue = false)]
         public int? bonus = null;
 
-        // This will be written as <targetSalary>57800</targetSalary> 
+        // This will be written as <targetSalary>57800</targetSalary>
         [DataMember(EmitDefaultValue = false)]
         public int targetSalary = 57800;
     }

@@ -33,15 +33,12 @@ items:
 
     Let's try a few more string interpolation examples with some other data types.
 
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
-
 - title: Include different data types
   durationInMinutes: 5
   content: |
     In the previous step, you used string interpolation to insert one string inside of another. Each interpolation expression that is part of an interpolated string expression can be of any data type, though. Let's include values of various data type expressions in an interpolated string.
 
-    In the following example, we first define a [tuple](../../tuples.md) that has `Name`, `Price`, and `perPackage` members. Run the following code in the interactive window:
+    In the following example, we first define a [tuple](../../language-reference/builtin-types/value-tuples.md) that has `Name`, `Price`, and `perPackage` members. Run the following code in the interactive window:
 
     ```csharp
     var item = (Name: "eggplant", Price: 1.99m, perPackage: 3);
@@ -56,9 +53,6 @@ items:
     - If the interpolation expression doesn't evaluate to `null`, typically the `ToString` method of the result expression is called.
 
     In the output from this example, the date is too precise (the price of eggplant doesn't change every second), and the price value doesn't indicate a unit of currency. In the next step, you'll learn how to fix those issues by controlling the format of string representations of the expression results.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Control the formatting of interpolation expressions
   durationInMinutes: 5
@@ -76,9 +70,6 @@ items:
     Try modifying the format strings in the example to see how they affect the formatting of the date and time and the numeric value. Change the "d" in `{date:d}` to "t" (to display the short time format), "y" (to display the year and month), and "yyyy" (to display the year as a four-digit number). Change the "C2" in `{price:C2}` to "e" (for exponential notation) and "F3" (for a numeric value with three digits after the decimal point).
 
     In addition to controlling formatting, you can also control the field width and alignment of the formatted strings that are included in the result string. In the next step, you'll learn how to do this.
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - title: Control the field width and alignment of interpolation expressions
   durationInMinutes: 6
@@ -109,9 +100,6 @@ items:
     ```csharp
     Console.WriteLine($"[{DateTime.Now,-20:d}] Hour [{DateTime.Now,-10:HH}] [{1063.342,15:N2}] feet");
     ```
-
-    > [!NOTE]
-    > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
     You've completed the string interpolation interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding.

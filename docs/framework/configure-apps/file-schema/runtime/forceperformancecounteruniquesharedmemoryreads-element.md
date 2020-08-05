@@ -16,7 +16,7 @@ Specifies whether PerfCounter.dll uses the CategoryOptions registry setting in a
 ## Syntax  
   
 ```xml  
-<forcePerformanceCounterUniqueSharedMemoryReads   
+<forcePerformanceCounterUniqueSharedMemoryReads
 enabled="true|false"/>  
 ```  
   

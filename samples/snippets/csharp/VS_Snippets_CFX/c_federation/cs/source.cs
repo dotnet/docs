@@ -53,9 +53,9 @@ namespace FederationSample
             }
         }
 
-        // This helper method checks whether SAML Token was issued by STS-B.     
-        // It compares the Thumbprint Claim of the Issuer against the 
-        // Certificate of STS-B. 
+        // This helper method checks whether SAML Token was issued by STS-B.
+        // It compares the Thumbprint Claim of the Issuer against the
+        // Certificate of STS-B.
         private bool IssuedBySTS_B(ClaimSet myClaimSet)
         {
             ClaimSet issuerClaimSet = myClaimSet.Issuer;
@@ -66,8 +66,8 @@ namespace FederationSample
                 return false;
             if (issuerClaim.Resource == null) return false;
             byte[] claimThumbprint = (byte[])issuerClaim.Resource;
-            // It is assumed that stsB_Certificate is a variable of type 
-            // X509Certificate2 that is initialized with the Certificate of 
+            // It is assumed that stsB_Certificate is a variable of type
+            // X509Certificate2 that is initialized with the Certificate of
             // STS-B.
             X509Certificate2 stsB_Certificate = GetStsBCertificate();
             byte[] certThumbprint = stsB_Certificate.GetCertHash();
@@ -94,7 +94,7 @@ namespace FederationSample
             string samlSubjectNameFormat = "4";
             string samlSubjectEmailAddress = "5";
 
-            //<snippet5>    
+            //<snippet5>
             // Create the list of SAML Attributes.
             List<SamlAttribute> samlAttributes = new List<SamlAttribute>();
             // Add the userAuthenticated claim.
@@ -103,7 +103,7 @@ namespace FederationSample
             SamlAttribute mySamlAttribute = new SamlAttribute("http://www.tmpuri.org",
                  "userAuthenticated", strList);
             samlAttributes.Add(mySamlAttribute);
-            // Create the SAML token with the userAuthenticated claim. It is assumed that 
+            // Create the SAML token with the userAuthenticated claim. It is assumed that
             // the method CreateSamlToken() is implemented as part of STS-A.
             SamlSecurityToken samlToken = CreateSamlToken(
                 proofToken,
@@ -112,7 +112,7 @@ namespace FederationSample
                 samlSubjectNameFormat,
                 samlSubjectEmailAddress,
                 samlAttributes);
-            //</snippet5>    
+            //</snippet5>
         }
         private SamlSecurityToken CreateSamlToken(string proofToken, string issuerToken,
     string samlConditions, string samlSubjectNameFormat, string samlSubjectEmailAddress,
@@ -151,8 +151,8 @@ public class STS_B_AuthorizationManager : ServiceAuthorizationManager
         }
     }
 
-    // This helper method checks whether SAML Token was issued by STS-A. 
-    // It compares the Thumbprint Claim of the Issuer against the 
+    // This helper method checks whether SAML Token was issued by STS-A.
+    // It compares the Thumbprint Claim of the Issuer against the
     // Certificate of STS-A.
     private bool IssuedBySTS_A(ClaimSet myClaimSet)
     {
@@ -201,7 +201,7 @@ public class STS_B_AuthorizationManager : ServiceAuthorizationManager
         "accessAuthorized",
         strList));
 
-        // Create the SAML token with the accessAuthorized claim. It is assumed that 
+        // Create the SAML token with the accessAuthorized claim. It is assumed that
         // the method CreateSamlToken() is implemented as part of STS-B.
         SamlSecurityToken samlToken = CreateSamlToken(
             proofToken,
@@ -250,7 +250,7 @@ public class STS_B_AuthorizationManager : ServiceAuthorizationManager
             }
         }
 
-        // This helper method performs a rudimentary check for whether 
+        // This helper method performs a rudimentary check for whether
         //a given email is valid.
         private static bool IsValidEmailAddress(string emailAddress)
         {

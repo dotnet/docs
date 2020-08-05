@@ -26,7 +26,7 @@ namespace SDKSample
 
           be = bidPriceTextBox.GetBindingExpression(TextBox.TextProperty);
           be.UpdateSource();
-          
+
           userdata.Opacity = 1;
           Finish.Opacity = 1;
       }

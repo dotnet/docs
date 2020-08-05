@@ -31,7 +31,7 @@ is the only concrete example in the .NET Core libraries. It's used
 to represent an expression that maps to any delegate type. Because
 this type maps to a delegate type, .NET can examine
 the expression, and generate IL for an appropriate delegate that
-matches the signature of the lambda expression. 
+matches the signature of the lambda expression.
 
 In most cases, this creates a simple mapping between an expression,
 and its corresponding delegate. For example, an expression tree that
@@ -99,7 +99,7 @@ the same executable code.
 Compiling a lambda expression to a delegate and invoking that delegate
 is one of the simplest operations you can perform with an expression
 tree. However, even with this simple operation, there are caveats
-you must be aware of. 
+you must be aware of.
 
 Lambda Expressions create closures over any local variables that are
 referenced in the expression. You must guarantee that any variables
@@ -170,7 +170,7 @@ private static Func<int, int> CreateBoundResource()
 
 The delegate returned from this method has closed over the `constant` object,
 which has been disposed of. (It's been disposed, because it was declared in a
-`using` statement.) 
+`using` statement.)
 
 Now, when you execute the delegate returned from this method, you'll have a
 `ObjectDisposedException` thrown at the point of execution.

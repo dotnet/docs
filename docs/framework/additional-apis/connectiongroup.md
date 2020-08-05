@@ -1,5 +1,6 @@
 ---
 title: "ConnectionGroup Class"
+description: Read about the ConnectionGroup class, which groups connections within the ServicePoint context and is used to maintain context for network resources in .NET.
 ms.date: "05/01/2017"
 topic_type: 
   - "apiref"
@@ -23,7 +24,7 @@ internal class ConnectionGroup
 
 > [!WARNING]
 > The `ConnectionGroup` class is internal and is not meant to be used directly in your code.
-> 
+>
 > Microsoft does not support the use of this class in a production application under any circumstance.
 
 ## Requirements

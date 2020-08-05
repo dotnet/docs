@@ -19,7 +19,7 @@ Northwnd db = new Northwnd(@"c\northwnd.mdf");
 Customer cust = db.Customers.Where(c => c.CustomerID ==
     "ALFKI").Single();
 
-DataContractSerializer dcs = 
+DataContractSerializer dcs =
     new DataContractSerializer(typeof(Customer));
 StringBuilder sb = new StringBuilder();
 XmlWriter writer = XmlWriter.Create(sb);

@@ -23,5 +23,5 @@ To use any of the Windows Communication Foundation (WCF) features of that use X.
   
 ## See also
 
-- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [How to: Create Temporary Certificates for Use During Development](../../../../docs/framework/wcf/feature-details/how-to-create-temporary-certificates-for-use-during-development.md)
+- [Working with Certificates](working-with-certificates.md)
+- [How to: Create Temporary Certificates for Use During Development](how-to-create-temporary-certificates-for-use-during-development.md)

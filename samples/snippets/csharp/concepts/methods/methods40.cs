@@ -16,7 +16,7 @@ abstract class Motorcycle
    public virtual int Drive(TimeSpan time, int speed) { /* Method statements here */ return 0; }
 
    // Derived classes must implement this.
-   public abstract double GetTopSpeed(); 
+   public abstract double GetTopSpeed();
 }
 //</Snippet40>
 
@@ -31,14 +31,14 @@ class TestMotorcycle : Motorcycle
 
    static void Main()
    {
-      
+
       TestMotorcycle moto = new TestMotorcycle();
 
       moto.StartEngine();
       moto.AddGas(15);
       moto.Drive(5, 20);
       double speed = moto.GetTopSpeed();
-      Console.WriteLine("My top speed is {0}", speed);            
+      Console.WriteLine("My top speed is {0}", speed);
    }
 }
 //</Snippet41>

@@ -23,7 +23,7 @@ class Program
                 connection);
 
             //Create the SqlCommand to execute the stored procedure.
-            adapter.InsertCommand = new SqlCommand("dbo.InsertCategory", 
+            adapter.InsertCommand = new SqlCommand("dbo.InsertCategory",
                 connection);
             adapter.InsertCommand.CommandType = CommandType.StoredProcedure;
 
@@ -35,7 +35,7 @@ class Program
 
             // Add the SqlParameter to retrieve the new identity value.
             // Specify the ParameterDirection as Output.
-            SqlParameter parameter = 
+            SqlParameter parameter =
                 adapter.InsertCommand.Parameters.Add(
                 "@Identity", SqlDbType.Int, 0, "CategoryID");
             parameter.Direction = ParameterDirection.Output;
@@ -44,7 +44,7 @@ class Program
             DataTable categories = new DataTable();
             adapter.Fill(categories);
 
-            // Add a new row. 
+            // Add a new row.
             DataRow newRow = categories.NewRow();
             newRow["CategoryName"] = "New Category";
             categories.Rows.Add(newRow);
@@ -64,7 +64,7 @@ class Program
 
     static private string GetConnectionString()
     {
-        // To avoid storing the connection string in your code, 
+        // To avoid storing the connection string in your code,
         // you can retrieve it from a configuration file.
         return "Data Source=(local);Initial Catalog=Northwind;"
             + "Integrated Security=true";

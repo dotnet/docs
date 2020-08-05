@@ -1,5 +1,6 @@
 ---
 title: "Using Client Sockets"
+description: This example shows how to create a TCP/IP connection to a remote service by using a Socket in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

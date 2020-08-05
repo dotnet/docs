@@ -12,11 +12,11 @@ This sample demonstrates how to perform transacted queued communication by using
   
 ### To set up, build, and run the sample  
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).  
   
-2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
+2. To build the C# or Visual Basic .NET edition of the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).  
   
-3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
+3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).  
   
 4. Before running the sample in **Add/Remove Windows Components**, ensure that MSMQ is installed with HTTP support. Installing HTTP support automatically installs Internet Information Services (IIS) and adds the protocol support in IIS for MSMQ.  
   
@@ -51,9 +51,9 @@ This sample demonstrates how to perform transacted queued communication by using
       <!-- Define NetMsmqEndpoint -->  
       <endpoint name="OrderProcessorEndpoint"  
            address=  
-          "net.msmq://localhost/private/ServiceModelSamplesSrmp"   
-           bindingConfiguration="srmpBinding"   
-           binding="netMsmqBinding"   
+          "net.msmq://localhost/private/ServiceModelSamplesSrmp"
+           bindingConfiguration="srmpBinding"
+           binding="netMsmqBinding"
            contract="IOrderProcessor" />  
     </client>  
     <bindings>  
@@ -72,20 +72,20 @@ This sample demonstrates how to perform transacted queued communication by using
  Running the sample yields the following output.  
   
 ```console  
-Processing Purchase Order: 556b70be-31ee-4a3b-8df4-ed5e538015a4   
-Customer: somecustomer.com   
-OrderDetails   
-    Order LineItem: 54 of Blue Widget @unit price: $29.99   
-    Order LineItem: 890 of Red Widget @unit price: $45.89   
-    Total cost of this order: $42461.56   
+Processing Purchase Order: 556b70be-31ee-4a3b-8df4-ed5e538015a4
+Customer: somecustomer.com
+OrderDetails
+    Order LineItem: 54 of Blue Widget @unit price: $29.99
+    Order LineItem: 890 of Red Widget @unit price: $45.89
+    Total cost of this order: $42461.56
     Order status: Pending  
 ```  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\SRMP`  

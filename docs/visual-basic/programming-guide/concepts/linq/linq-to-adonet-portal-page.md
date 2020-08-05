@@ -31,4 +31,4 @@ LINQ to ADO.NET enables you to query over any enumerable object in ADO.NET by us
 ## See also
 
 - [LINQ and ADO.NET](../../../../framework/data/adonet/linq-and-ado-net.md)
-- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)
+- [Language-Integrated Query (LINQ) (Visual Basic)](index.md)

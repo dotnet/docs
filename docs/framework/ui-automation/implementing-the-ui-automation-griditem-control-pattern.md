@@ -15,7 +15,7 @@ ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
   
  The <xref:System.Windows.Automation.GridItemPattern> control pattern is used to support individual child controls of containers that implement <xref:System.Windows.Automation.Provider.IGridProvider>. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing <xref:System.Windows.Automation.Provider.IGridProvider>, note the following guidelines and conventions:  
   
@@ -27,7 +27,7 @@ ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
   
 - Controls that implement <xref:System.Windows.Automation.Provider.IGridItemProvider> can typically be traversed (that is, a UI Automation client can move to adjacent controls) by using the keyboard.  
   
-<a name="Required_Members_for_IGridItemProvider"></a>   
+<a name="Required_Members_for_IGridItemProvider"></a>
 ## Required Members for IGridItemProvider  
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.IGridItemProvider>.  
   
@@ -41,7 +41,7 @@ ms.assetid: bffbae08-fe2a-42fd-ab84-f37187518916
   
  This control pattern has no associated methods or events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  This control pattern has no associated exceptions.  
   

@@ -16,11 +16,11 @@ public class RegexLib
 // </Snippet3>
 
 public class CurrencyForm : Form
-{ 
+{
    Button OKButton;
    TextBox sourceCurrency;
    Label status;
-   
+
    public CurrencyForm()
    {
       sourceCurrency = new TextBox();
@@ -29,7 +29,7 @@ public class CurrencyForm : Form
       sourceCurrency.Text = String.Empty;
       sourceCurrency.TextChanged += new System.EventHandler(this.sourceCurrency_TextChanged);
       this.Controls.Add(sourceCurrency);
-      
+
       OKButton = new Button();
       OKButton.Location = new Point(100, 150);
       OKButton.Size = new Size(75, 25);
@@ -45,7 +45,7 @@ public class CurrencyForm : Form
       status.Anchor = AnchorStyles.Bottom;
       this.Controls.Add(status);
    }
-   
+
    public static void Main()
    {
       Form frm = new CurrencyForm();
@@ -53,14 +53,14 @@ public class CurrencyForm : Form
    }
 
    private void PerformConversion() {}
-   
+
    public void sourceCurrency_TextChanged(object sender, EventArgs e)
-   { 
-      status.Text = "";           
-   }  
-   
-   // <Snippet2>         
-   public void OKButton_Click(object sender, EventArgs e) 
+   {
+      status.Text = "";
+   }
+
+   // <Snippet2>
+   public void OKButton_Click(object sender, EventArgs e)
    {
       if (! String.IsNullOrEmpty(sourceCurrency.Text))
          if (RegexLib.IsValidCurrency(sourceCurrency.Text))

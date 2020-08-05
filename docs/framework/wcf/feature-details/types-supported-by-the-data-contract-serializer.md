@@ -1,5 +1,6 @@
 ---
 title: "Types Supported by the Data Contract Serializer"
+description: See the complete list of types that the WCF data contract serializer supports for serialization and deserialization. 
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "serialization [WCF], supported types"
@@ -11,22 +12,22 @@ Windows Communication Foundation (WCF) uses the <xref:System.Runtime.Serializati
 
 - All publicly visible types that have a constructor that does not have parameters.
 
-- Data contract types. These are types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has been applied. New custom types that represent business objects should normally be created as data contract types. For more information, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md) and [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md).
+- Data contract types. These are types to which the <xref:System.Runtime.Serialization.DataContractAttribute> attribute has been applied. New custom types that represent business objects should normally be created as data contract types. For more information, see [Using Data Contracts](using-data-contracts.md) and [Serializable Types](serializable-types.md).
 
-- Collection types. These are types that represent lists of data. These can be regular arrays of types, or collection types, such as <xref:System.Collections.ArrayList> and <xref:System.Collections.Generic.Dictionary%602>. The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute can be used to customize the serialization of these types, but is not required. For more information, see [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md).
+- Collection types. These are types that represent lists of data. These can be regular arrays of types, or collection types, such as <xref:System.Collections.ArrayList> and <xref:System.Collections.Generic.Dictionary%602>. The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute can be used to customize the serialization of these types, but is not required. For more information, see [Collection Types in Data Contracts](collection-types-in-data-contracts.md).
 
-- Enumeration types. Enumerations, including flag enumerations, are serializable. Optionally, enumeration types can be marked with the <xref:System.Runtime.Serialization.DataContractAttribute> attribute, in which case every member that participates in serialization must be marked with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute. Members that are not marked are not serialized. For more information, see [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md).
+- Enumeration types. Enumerations, including flag enumerations, are serializable. Optionally, enumeration types can be marked with the <xref:System.Runtime.Serialization.DataContractAttribute> attribute, in which case every member that participates in serialization must be marked with the <xref:System.Runtime.Serialization.EnumMemberAttribute> attribute. Members that are not marked are not serialized. For more information, see [Enumeration Types in Data Contracts](enumeration-types-in-data-contracts.md).
 
 - .NET Framework primitive types. The following types built into the .NET Framework can all be serialized and are considered to be primitive types: <xref:System.Byte>, <xref:System.SByte>, <xref:System.Int16>, <xref:System.Int32>, <xref:System.Int64>, <xref:System.UInt16>, <xref:System.UInt32>, <xref:System.UInt64>, <xref:System.Single>, <xref:System.Double>, <xref:System.Boolean>, <xref:System.Char>, <xref:System.Decimal>, <xref:System.Object>, and <xref:System.String>.
 
 - Other primitive types. These types are not primitives in the .NET Framework but are treated as primitives in the serialized XML form. These types are <xref:System.DateTime>, <xref:System.DateTimeOffset>, <xref:System.TimeSpan>, <xref:System.Guid>, <xref:System.Uri>, <xref:System.Xml.XmlQualifiedName>, and arrays of <xref:System.Byte>.
 
   > [!NOTE]
-  > Unlike other primitive types, <xref:System.DateTimeOffset> is not a known type by default. For more information, see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)).
+  > Unlike other primitive types, <xref:System.DateTimeOffset> is not a known type by default. For more information, see [Data Contract Known Types](data-contract-known-types.md)).
 
 - Types marked with the <xref:System.SerializableAttribute> attribute. Many types included in the .NET Framework base class library fall into this category. The <xref:System.Runtime.Serialization.DataContractSerializer> fully supports this serialization programming model that was used by .NET Framework remoting, the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, and the <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter>, including support for the <xref:System.Runtime.Serialization.ISerializable> interface.
 
-- Types that represent raw XML or types that represent ADO.NET relational data. The <xref:System.Xml.XmlElement> and array of <xref:System.Xml.XmlNode> types are supported as a way of representing XML directly. Additionally, types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface are supported, including the related <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute, and the <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> types. The ADO.NET<xref:System.Data.DataTable> type and the <xref:System.Data.DataSet> type (as well as its typed derived classes) all implement the <xref:System.Xml.Serialization.IXmlSerializable> interface, and therefore fit into this category. For more information, see [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md).
+- Types that represent raw XML or types that represent ADO.NET relational data. The <xref:System.Xml.XmlElement> and array of <xref:System.Xml.XmlNode> types are supported as a way of representing XML directly. Additionally, types that implement the <xref:System.Xml.Serialization.IXmlSerializable> interface are supported, including the related <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute, and the <xref:System.Xml.Linq.XDocument> and <xref:System.Xml.Linq.XElement> types. The ADO.NET<xref:System.Data.DataTable> type and the <xref:System.Data.DataSet> type (as well as its typed derived classes) all implement the <xref:System.Xml.Serialization.IXmlSerializable> interface, and therefore fit into this category. For more information, see [XML and ADO.NET Types in Data Contracts](xml-and-ado-net-types-in-data-contracts.md).
 
 ## Limitations of Using Certain Types in Partial Trust Mode
 
@@ -34,7 +35,7 @@ The following is a list of limitations when using certain types in partial trust
 
 - To serialize or deserialize a type that implements <xref:System.Runtime.Serialization.ISerializable> in partially-trusted code using the <xref:System.Runtime.Serialization.DataContractSerializer> requires the <xref:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter%2A> and <xref:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode%2A> permissions.
 
-- When running WCF code in [Partial Trust](../../../../docs/framework/wcf/feature-details/partial-trust.md) mode, the serialization and deserialization of `readonly` fields (both `public` and `private`) is not supported. This is because the generated IL is unverifiable and therefore requires elevated permissions.
+- When running WCF code in [Partial Trust](partial-trust.md) mode, the serialization and deserialization of `readonly` fields (both `public` and `private`) is not supported. This is because the generated IL is unverifiable and therefore requires elevated permissions.
 
 - Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Xml.Serialization.XmlSerializer> are supported in a partial trust environment. However, use of the <xref:System.Runtime.Serialization.DataContractSerializer> is subject to the following conditions:
 
@@ -54,7 +55,7 @@ The following rules also apply to types supported by the Data Contract Serialize
 
 - Generic types are fully supported by the data contract serializer.
 
-- Nullable types are fully supported by the data contract serializer.
+- Nullable value types are fully supported by the data contract serializer.
 
 - Interface types are treated either as <xref:System.Object> or, in the case of collection interfaces, as collection types.
 
@@ -66,8 +67,8 @@ The following rules also apply to types supported by the Data Contract Serialize
 
 ## See also
 
-- [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md)
-- [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md)
-- [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md)
-- [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md)
-- [Enumeration Types in Data Contracts](../../../../docs/framework/wcf/feature-details/enumeration-types-in-data-contracts.md)
+- [XML and ADO.NET Types in Data Contracts](xml-and-ado-net-types-in-data-contracts.md)
+- [Using Data Contracts](using-data-contracts.md)
+- [Serializable Types](serializable-types.md)
+- [Collection Types in Data Contracts](collection-types-in-data-contracts.md)
+- [Enumeration Types in Data Contracts](enumeration-types-in-data-contracts.md)

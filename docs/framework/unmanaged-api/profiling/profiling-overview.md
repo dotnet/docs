@@ -117,8 +117,6 @@ The profiling API does not support the following functionality:
 
   - The CLR code profiler must register one or more callback interfaces with the runtime on the local computer on which the profiled application is running. This limits the ability to create a remote code profiler.
 
-- Profiling in production environments with high-availability requirements. The profiling API was created to support development-time diagnostics. It has not undergone the rigorous testing required to support production environments.
-
 ## Notification Threads
 
 In most cases, the thread that generates an event also executes notifications. Such notifications (for example, [FunctionEnter](functionenter-function.md) and [FunctionLeave](functionleave-function.md)) do not need to supply the explicit `ThreadID`. Also, the profiler might decide to use thread-local storage to store and update its analysis blocks instead of indexing the analysis blocks in global storage, based on the `ThreadID` of the affected thread.

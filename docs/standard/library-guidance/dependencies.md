@@ -18,7 +18,7 @@ At build time, NuGet analyzes all the packages that a project depends on, includ
 Most diamond dependencies are easily resolved; however, they can create issues in certain circumstances:
 
 1. **Conflicting NuGet package references** prevent a version from being resolved during package restore.
-2. **Breaking changes between the versions** cause bugs and exceptions at runtime.
+2. **Breaking changes between the versions** cause bugs and exceptions at run time.
 3. **The package assembly is strong named**, the assembly version changed, and the app is running on the .NET Framework. Assembly binding redirects are required.
 
 It's not possible to know what packages will be used alongside your own. A good way to reduce the likelihood of a diamond dependency breaking your library is to minimize the number of packages you depend on.
@@ -34,7 +34,7 @@ A package reference specifies the range of valid packages it allows. Typically, 
 <PackageReference Include="ExamplePackage" Version="1.0" />
 ```
 
-The rules that NuGet uses when resolving dependencies are [complex](/nuget/consume-packages/dependency-resolution), but NuGet always looks for the lowest applicable version. NuGet prefers the lowest applicable version over using the highest available because the lowest will have the least compatibility issues.
+The rules that NuGet uses when resolving dependencies are [complex](/nuget/consume-packages/dependency-resolution), but NuGet [by default](/nuget/consume-packages/install-use-packages-visual-studio#install-and-update-options) looks for the lowest applicable version. NuGet prefers the lowest applicable version over using the highest available because the lowest will have the least compatibility issues.
 
 Because of NuGet's lowest applicable version rule, it isn't necessary to place an upper version or exact range on package references to avoid getting the latest version. NuGet already tries to find the lowest, most compatible version for you.
 

@@ -54,7 +54,7 @@ namespace MiscCodeExamples
 
         [DataMember]
         public string LastName
-        { 
+        {
             // Implement get and set.
             get { return lastName; }
             private set { lastName = value; }
@@ -93,10 +93,10 @@ namespace MiscCodeExamples
             get { return fullName; }
         }
 
-        // This method is called after the object 
+        // This method is called after the object
         // is completely deserialized. Use it instead of the
         // constructror.
-        [OnDeserialized] 
+        [OnDeserialized]
         void OnDeserialized(StreamingContext context)
         {
             fullName = firstName + " " + lastName;
@@ -176,12 +176,12 @@ namespace MiscCodeExamples
         {
             get { return fullNameValue; }
         }
-                
+
         ExtensionDataObject IExtensibleDataObject.ExtensionData
         {
-            get 
-            {                 
-                return serializationData; 
+            get
+            {
+                return serializationData;
             }
             set { serializationData = value; }
         }
@@ -194,14 +194,14 @@ namespace MiscCodeExamples
         [System.Xml.Serialization.XmlAttribute] // Serialize as XML attribute, instead of an element.
         public string Name { get { return "Poe, Toni"; } set { } }
         [System.Xml.Serialization.XmlElement(ElementName = "StreetLine")] // Explicitly name the element.
-        public string Street = "1 Main Street";        
+        public string Street = "1 Main Street";
     }
     //</snippet6>
 
     //<snippet7>
     // Apply SerializableAttribute to support runtime serialization.
     [Serializable]
-    public class Person6 
+    public class Person6
     {
         // Code not shown.
     }
@@ -239,5 +239,5 @@ namespace MiscCodeExamples
             set { fullName = value; }
         }
     }
-    //</snippet8>      
+    //</snippet8>
 }

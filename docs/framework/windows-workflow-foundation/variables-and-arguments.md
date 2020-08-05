@@ -1,5 +1,6 @@
 ---
 title: "Variables and Arguments"
+description: This article describes variables, which represent storage of data, and arguments, which represent flow of data to/from an activity in Workflow Foundation.
 ms.date: "03/30/2017"
 ms.assetid: d03dbe34-5b2e-4f21-8b57-693ee49611b8
 ---
@@ -63,7 +64,7 @@ Variable<string> var = new Variable<string>
   
 3. Arguments can optionally have their <xref:System.Activities.Argument.EvaluationOrder%2A> specified. <xref:System.Activities.Argument.EvaluationOrder%2A> is a zero-based value that specifies the order in which the argument is evaluated. By default, the evaluation order of the argument is unspecified and is equal to the <xref:System.Activities.Argument.UnspecifiedEvaluationOrder> value. Set <xref:System.Activities.Argument.EvaluationOrder%2A> to a value greater or equal to zero to specify an evaluation order for this argument. Windows Workflow Foundation evaluates arguments with a specified evaluation order in ascending order. Note that arguments with an unspecified evaluation order are evaluated before those with a specified evaluation order.  
   
- An activity author can use a strongly-typed mechanism for exposing its arguments. This is accomplished by declaring properties of type <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, and <xref:System.Activities.InOutArgument%601>. This allows an activity author to establish a specific contract about the data going into and out of an activity.  
+ An activity author can use a strongly typed mechanism for exposing its arguments. This is accomplished by declaring properties of type <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, and <xref:System.Activities.InOutArgument%601>. This allows an activity author to establish a specific contract about the data going into and out of an activity.  
   
 ### Defining the Arguments on an Activity  
  Arguments can be defined on an activity by specifying properties of type <xref:System.Activities.InArgument%601>, <xref:System.Activities.OutArgument%601>, and <xref:System.Activities.InOutArgument%601>. The following code shows how to define the arguments for a `Prompt` activity that takes in a string to display to the user and returns a string that contains the user's response.  
@@ -96,7 +97,7 @@ Variable<string> var3 = new Variable<string>();
 Activity wf = new Sequence  
 {  
     Variables = { var1, var2, var3 },  
-    Activities =   
+    Activities =
     {  
         new Assign<string>()  
         {  

@@ -10,11 +10,11 @@ ms.assetid: 10028f97-bb63-41fc-b8ad-663dac7ea203
 # Key-Frame Animations Overview
 This topic introduces you to key-frame animations. Key-frame animations enable you to animate using more than two target values, and control an animation's interpolation method.  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  To understand this overview, you should be familiar with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] animations and timelines. For an introduction to animations, see the [Animation Overview](animation-overview.md). It also helps to be familiar with From/To/By animations. For more information, see the From/To/By Animations Overview.  
   
-<a name="whatisakeyframeanimation"></a>   
+<a name="whatisakeyframeanimation"></a>
 ## What is a Key-Frame Animation?  
  Like a From/To/By animation, a key-frame animation animates the value of a target property. It creates a transition among its target values over its <xref:System.Windows.Media.Animation.Timeline.Duration%2A>. However, while a From/To/By animation creates a transition between two values, a single key-frame animation can create transitions among any number of target values. Unlike a From/To/By animation, a key frame animation has no From, To, or By properties with which to set its target values. A key-frame animation's target values are described using key frames objects (hence the term, "key-frame animation"). To specify the animation's target values, you create key frame objects and add them to the animation's <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames.KeyFrames%2A> collection. When the animation runs, it transitions between the frames you specified.  
   
@@ -34,7 +34,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
  Like a From/To/By animation, a key-frame animation can be applied to a property by using a <xref:System.Windows.Media.Animation.Storyboard> in markup and code or by using the <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%2A> method in code. You may also use a key-frame animation to create an <xref:System.Windows.Media.Animation.AnimationClock> and apply it to one or more properties. For more information about the different methods for applying animations, see the [Property Animation Techniques Overview](property-animation-techniques-overview.md).  
   
-<a name="animation_types"></a>   
+<a name="animation_types"></a>
 ## Key-Frame Animation Types  
  Because animations generate property values, there are different animation types for different property types. To animate a property that takes a <xref:System.Double> (such as an element's <xref:System.Windows.FrameworkElement.Width%2A> property), you use an animation that produces <xref:System.Double> values. To animate a property that takes a <xref:System.Windows.Point>, you use an animation that produces <xref:System.Windows.Point> values, and so on.  
   
@@ -69,7 +69,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
 |<xref:System.Windows.Media.Media3D.Vector3D>|<xref:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames>|Discrete, Linear, Splined|  
 |<xref:System.Windows.Vector>|<xref:System.Windows.Media.Animation.VectorAnimationUsingKeyFrames>|Discrete, Linear, Splined|  
   
-<a name="animation_target_values"></a>   
+<a name="animation_target_values"></a>
 ## Target Values (key frames) and Key Times  
  Just as there are different types of key-frame animations for animating different property types, there are also different types of key frame objects: one for each type of value animated and interpolation method supported. Key frame types adhere to the following naming convention:  
   
@@ -109,7 +109,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
  [!code-xaml[keyframes_ovw_snippet#BasicKeyFrameExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/KeyFramesIntroduction.xaml#basickeyframeexamplewholepage)]  
   
-<a name="interpolationmethods"></a>   
+<a name="interpolationmethods"></a>
 ## Interpolation Methods  
  The preceding sections mentioned that some key-frame animations support multiple interpolation methods. An animation's interpolation describes how an animation transitions between values over its duration. By selecting which key frame type you use with your animation, you can define the interpolation method for that key frame segment. There are three different types of interpolation methods: linear, discrete, and splined.  
   
@@ -145,7 +145,7 @@ This topic introduces you to key-frame animations. Key-frame animations enable y
   
  Splined interpolation is more complex. It is described in the next section.  
   
-<a name="anim_spline"></a>   
+<a name="anim_spline"></a>
 ### Splined Interpolation  
  Splined interpolation can be used to achieve more realistic timing effects. Because animations are so often used to imitate effects that occur in the real world, developers might need fine control of the acceleration and deceleration of objects, and close manipulation of timing segments. Spline key frames enable you to animate with splined interpolation. With other key frames, you specify a <xref:System.Windows.Media.Animation.IKeyFrame.Value%2A> and <xref:System.Windows.Media.Animation.IKeyFrame.KeyTime%2A>. With a spline key frame, you also specify a <xref:System.Windows.Media.Animation.SplineDoubleKeyFrame.KeySpline%2A>. The following example shows a single spline key frame for a <xref:System.Windows.Media.Animation.DoubleAnimationUsingKeyFrames>. Notice the <xref:System.Windows.Media.Animation.KeySpline> property; that's what makes a spline key frame different from the other types of key frames.  
   
@@ -177,9 +177,9 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
   
  [!code-xaml[keyframes_ovw_snippet#SplinedInterpolationExample](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/InterpolationMethodsExample.xaml#splinedinterpolationexample)]  
   
- Splined interpolation can be difficult to understand; experimenting with different settings can help. The [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011) enables you to change key spline values and see the result it has on an animation.  
+ Splined interpolation can be difficult to understand; experimenting with different settings can help. The [Key Spline Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/KeySplineAnimations) enables you to change key spline values and see the result it has on an animation.  
   
-<a name="combininginterpolationmethods"></a>   
+<a name="combininginterpolationmethods"></a>
 ### Combining Interpolation Methods  
  You can use key frames with different interpolation types in a single key frame animation. When two key frame animations with different interpolations follow each other, the interpolation method of the second key frame is used to create the transition from the first value to the second.  
   
@@ -187,7 +187,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
   
  [!code-xaml[keyframes_ovw_snippet#ComboInterpolationExample](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/InterpolationMethodsExample.xaml#combointerpolationexample)]  
   
-<a name="keytimes"></a>   
+<a name="keytimes"></a>
 ## More about Duration and Key Times  
  Like other animations, key-frame animations have a <xref:System.Windows.Duration> property. In addition to specifying the animation's <xref:System.Windows.Duration>, you need to specify what portion of that duration is given to each key frame. You do so by describing a   <xref:System.Windows.Media.Animation.IKeyFrame.KeyTime%2A> for each of the animation's key frames. Each key frame's <xref:System.Windows.Media.Animation.IKeyFrame.KeyTime%2A> specifies when that key frame ends.  
   
@@ -247,7 +247,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
   
  Different key frames within a single key frame animation may use different key time types.  
   
-<a name="combiningkeytimes"></a>   
+<a name="combiningkeytimes"></a>
 ## Combining Key Times, Out-Of-Order Key Frames  
  You can use key frames with different <xref:System.Windows.Media.Animation.KeyTime> value types in the same animation. And, although it's recommended that you add key frames in the order in which they should play, it's not necessary. The animation and timing system is capable of resolving out of order key frames. Key frames with invalid key times are ignored.  
   
@@ -282,8 +282,8 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
 - <xref:System.Windows.Media.Animation.KeyTime>
 - <xref:System.Windows.Media.Animation.KeySpline>
 - <xref:System.Windows.Media.Animation.Timeline>
-- [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011)
-- [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012)
+- [Key Spline Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/KeySplineAnimations)
+- [KeyFrame Animation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Animation/KeyFrameAnimation)
 - [Animation Overview](animation-overview.md)
 - [Storyboards Overview](storyboards-overview.md)
 - [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

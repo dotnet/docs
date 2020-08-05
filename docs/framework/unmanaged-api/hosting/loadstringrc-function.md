@@ -24,9 +24,9 @@ Translates an HRESULT value into an error message by using the default culture o
   
 ```cpp  
 HRESULT LoadStringRC (  
-    [in]  UINT    iResourceID,   
-    [out] LPWSTR  szBuffer,   
-    [in]  int     iMax,   
+    [in]  UINT    iResourceID,
+    [out] LPWSTR  szBuffer,
+    [in]  int     iMax,
     [in]  int     bQuiet  
 );  
 ```  
@@ -56,7 +56,7 @@ HRESULT LoadStringRC (
  If the method does not complete successfully, `szBuffer` contains an empty string.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -66,5 +66,5 @@ HRESULT LoadStringRC (
   
 ## See also
 
-- [LoadStringRCEx Function](../../../../docs/framework/unmanaged-api/hosting/loadstringrcex-function.md)
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [LoadStringRCEx Function](loadstringrcex-function.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

@@ -16,7 +16,7 @@ Specifies the type that serves as the application domain manager for the default
 ## Syntax  
   
 ```xml  
-<appDomainManagerAssembly   
+<appDomainManagerAssembly
    value="type name" />  
 ```  
   
@@ -59,7 +59,7 @@ Specifies the type that serves as the application domain manager for the default
 <configuration>  
    <runtime>  
       <appDomainManagerType value="MyMgr" />  
-      <appDomainManagerAssembly   
+      <appDomainManagerAssembly
          value="AdMgrExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6856bccf150f00b3" />  
    </runtime>  
 </configuration>  

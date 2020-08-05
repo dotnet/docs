@@ -18,7 +18,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
 ## Syntax  
   
 ```xml  
-<system.diagnostics>   
+<system.diagnostics>
 </system.diagnostics>  
 ```  
   

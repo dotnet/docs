@@ -41,8 +41,8 @@ Class Program
             Try
                 Dim lastCollCount As Integer = 0
                 Dim newCollCount As Integer = 0
-                
-                
+
+
                 While (True)
                     If bAllocate = True Then
 
@@ -65,7 +65,7 @@ Class Program
 
                     End If
                 End While
-                
+
             Catch outofMem As OutOfMemoryException
                 Console.WriteLine("Out of memory.")
             End Try

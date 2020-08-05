@@ -36,7 +36,7 @@ public class Form1 :
         memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
     }
 
-    private void printDocument1_PrintPage(System.Object sender,  
+    private void printDocument1_PrintPage(System.Object sender,
            System.Drawing.Printing.PrintPageEventArgs e)
     {
         e.Graphics.DrawImage(memoryImage, 0, 0);

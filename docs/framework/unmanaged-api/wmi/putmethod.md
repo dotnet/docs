@@ -19,18 +19,18 @@ topic_type:
 Creates a method.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
 ```cpp  
 HRESULT PutMethod (
-   [in] int                vFunc, 
-   [in] IWbemClassObject*  ptr, 
+   [in] int                vFunc,
+   [in] IWbemClassObject*  ptr,
    [in] LPCWSTR            wszName,
    [in] LONG               lFlags,
    [in] IWbemClassObject*  pInSignature,
    [in] IWbemClassObject*  pOutSignature
-); 
+);
 ```  
 
 ## Parameters
@@ -42,7 +42,7 @@ HRESULT PutMethod (
 [in] A pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) instance.
 
 `wszName`  
-[in] The name of the method to create. 
+[in] The name of the method to create.
 
 `lFlags`  
 [in] Reserved. This parameter must be 0.

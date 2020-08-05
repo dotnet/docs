@@ -7,7 +7,7 @@
     href: xaml-in-wpf.md
     items:
     - name: XAML Overview (WPF)
-      href: xaml-overview-wpf.md
+      href: ../../../desktop-wpf/fundamentals/xaml.md
     - name: XAML Syntax In Detail
       href: xaml-syntax-in-detail.md
     - name: Code-Behind and XAML in WPF
@@ -290,7 +290,7 @@
     href: resources-wpf.md
     items:
     - name: XAML Resources
-      href: xaml-resources.md
+      href: ../../../desktop-wpf/fundamentals/xaml-resources-define.md
       items:
       - name: Resources and Code
         href: resources-and-code.md
@@ -463,24 +463,25 @@
       href: localization-attributes-and-comments.md
     - name: Bidirectional Features in WPF Overview
       href: bidirectional-features-in-wpf-overview.md
-    - name: How-to Topics
-      href: globalization-and-localization-how-to-topics.md
+    - name: How-tos
       items:
-      - name: Localize an Application
+      - name: Localize an app
         href: how-to-localize-an-application.md
-      - name: Use Automatic Layout to Create a Button
+      - name: Use automatic layout to create a button
         href: how-to-use-automatic-layout-to-create-a-button.md
-      - name: Use a Grid for Automatic Layout
+      - name: Use a grid for automatic layout
         href: how-to-use-a-grid-for-automatic-layout.md
-      - name: Use a ResourceDictionary to Manage Localizable String Resources
+      - name: Use a ResourceDictionary to manage resources
         href: how-to-use-a-resourcedictionary-to-manage-localizable-string-resources.md
-      - name: Use Resources in Localizable Applications
+      - name: Use resources in localizable apps
         href: how-to-use-resources-in-localizable-applications.md
   - name: Layout
     href: layout.md
   - name: Migration and Interoperability
     href: migration-and-interoperability.md
     items:
+    - name: Migrate from WPF 3.X to WPF 4.5
+      href: types-migrated-from-wpf-to-system.md
     - name: WPF and Windows Forms Interoperation
       href: wpf-and-windows-forms-interoperation.md
       items:
@@ -508,7 +509,7 @@
         href: walkthrough-arranging-windows-forms-controls-in-wpf.md
       - name: "Walkthrough: Binding to Data in Hybrid Applications"
         href: walkthrough-binding-to-data-in-hybrid-applications.md
-      - name: "Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms"
+      - name: "Walkthrough: Hosting a 3D WPF Composite Control in Windows Forms"
         href: walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md
       - name: "Walkthrough: Hosting a WPF Composite Control in Windows Forms"
         href: walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md

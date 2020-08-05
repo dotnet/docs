@@ -22,8 +22,8 @@ Removes an IP address or DNS name from the connection management list.
 ## Syntax  
   
 ```xml  
-<remove   
-  address="server name or IP address"   
+<remove
+  address="server name or IP address"
 />  
 ```  
   

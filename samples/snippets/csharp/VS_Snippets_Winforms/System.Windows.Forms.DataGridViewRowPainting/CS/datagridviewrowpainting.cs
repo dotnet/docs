@@ -26,17 +26,17 @@ class DataGridViewRowPainting : Form
     void DataGridViewRowPainting_Load(object sender, EventArgs e)
     {
         //<Snippet10>
-        // Set a cell padding to provide space for the top of the focus 
-        // rectangle and for the content that spans multiple columns. 
+        // Set a cell padding to provide space for the top of the focus
+        // rectangle and for the content that spans multiple columns.
         Padding newPadding = new Padding(0, 1, 0, CUSTOM_CONTENT_HEIGHT);
         this.dataGridView1.RowTemplate.DefaultCellStyle.Padding = newPadding;
 
-        // Set the selection background color to transparent so 
+        // Set the selection background color to transparent so
         // the cell won't paint over the custom selection background.
         this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionBackColor =
             Color.Transparent;
 
-        // Set the row height to accommodate the content that 
+        // Set the row height to accommodate the content that
         // spans multiple columns.
         this.dataGridView1.RowTemplate.Height += CUSTOM_CONTENT_HEIGHT;
         //</Snippet10>
@@ -57,23 +57,23 @@ class DataGridViewRowPainting : Form
         this.dataGridView1.Columns[2].Name = "Main Ingredients";
         this.dataGridView1.Columns[3].Name = "Rating";
 
-        // Hide the column that contains the content that spans 
+        // Hide the column that contains the content that spans
         // multiple columns.
         this.dataGridView1.Columns[2].Visible = false;
 
         // Populate the rows of the DataGridView.
         string[] row1 = new string[]{"Meatloaf", "Main Dish",
-            "1 lb. lean ground beef, 1/2 cup bread crumbs, " + 
+            "1 lb. lean ground beef, 1/2 cup bread crumbs, " +
             "1/4 cup ketchup, 1/3 tsp onion powder, 1 clove of garlic, " +
             "1/2 pack onion soup mix, dash of your favorite BBQ Sauce",
             "****"};
-        string[] row2 = new string[]{"Key Lime Pie", "Dessert", 
+        string[] row2 = new string[]{"Key Lime Pie", "Dessert",
             "lime juice, whipped cream, eggs, evaporated milk", "****"};
-        string[] row3 = new string[]{"Orange-Salsa Pork Chops", 
+        string[] row3 = new string[]{"Orange-Salsa Pork Chops",
             "Main Dish", "pork chops, salsa, orange juice, pineapple", "****"};
-        string[] row4 = new string[]{"Black Bean and Rice Salad", 
+        string[] row4 = new string[]{"Black Bean and Rice Salad",
             "Salad", "black beans, brown rice", "****"};
-        string[] row5 = new string[]{"Chocolate Cheesecake", 
+        string[] row5 = new string[]{"Chocolate Cheesecake",
             "Dessert", "cream cheese, unsweetened chocolate", "***"};
         string[] row6 = new string[]{"Black Bean Dip", "Appetizer",
             "black beans, sour cream, salsa, chips", "***"};
@@ -101,7 +101,7 @@ class DataGridViewRowPainting : Form
     }
 
     //<snippet18>
-    // Forces the control to repaint itself when the user 
+    // Forces the control to repaint itself when the user
     // manually changes the width of a column.
     void dataGridView1_ColumnWidthChanged(object sender,
         DataGridViewColumnEventArgs e)
@@ -111,7 +111,7 @@ class DataGridViewRowPainting : Form
     //</snippet18>
 
     //<Snippet19>
-    // Forces the row to repaint itself when the user changes the 
+    // Forces the row to repaint itself when the user changes the
     // current cell. This is necessary to refresh the focus rectangle.
     void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
     {
@@ -197,8 +197,8 @@ class DataGridViewRowPainting : Form
             {
                 String text = recipe.ToString();
 
-                // Calculate the bounds for the content that spans multiple 
-                // columns, adjusting for the horizontal scrolling position 
+                // Calculate the bounds for the content that spans multiple
+                // columns, adjusting for the horizontal scrolling position
                 // and the current row height, and displaying only whole
                 // lines of text.
                 Rectangle textArea = rowBounds;
@@ -239,7 +239,7 @@ class DataGridViewRowPainting : Form
     //</Snippet30>
 
     //<Snippet40>
-    // Adjusts the padding when the user changes the row height so that 
+    // Adjusts the padding when the user changes the row height so that
     // the normal cell content is fully displayed and any extra
     // height is used for the content that spans multiple columns.
     void dataGridView1_RowHeightChanged(object sender,
@@ -247,7 +247,7 @@ class DataGridViewRowPainting : Form
     {
         // Calculate the new height of the normal cell content.
         Int32 preferredNormalContentHeight =
-            e.Row.GetPreferredHeight(e.Row.Index, 
+            e.Row.GetPreferredHeight(e.Row.Index,
             DataGridViewAutoSizeRowMode.AllCellsExceptHeader, true) -
             e.Row.DefaultCellStyle.Padding.Bottom;
 

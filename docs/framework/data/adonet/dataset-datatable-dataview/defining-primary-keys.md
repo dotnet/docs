@@ -48,7 +48,7 @@ workTable.PrimaryKey = keyColumn
 ```  
   
 ```csharp  
-workTable.PrimaryKey = new DataColumn[] {workTable.Columns["CustLName"],   
+workTable.PrimaryKey = new DataColumn[] {workTable.Columns["CustLName"],
                                          workTable.Columns["CustFName"]};  
   
 // Or  

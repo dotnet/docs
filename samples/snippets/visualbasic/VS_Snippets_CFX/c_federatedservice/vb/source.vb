@@ -8,7 +8,7 @@ Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security
 Imports System.ServiceModel.Security.Tokens
 Imports System.Security.Permissions
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 '</snippet1>
 
 Public NotInheritable Class IssuedTokenServiceCredentialsConfiguration

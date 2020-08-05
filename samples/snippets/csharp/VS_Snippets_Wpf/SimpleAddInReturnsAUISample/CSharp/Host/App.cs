@@ -7,7 +7,7 @@ namespace Host
     /// A custom entry point method, Main(), is required to use LoaderOptimizationAttribute,
     /// which ensures that WPF assemblies are shared between the main application's appdomain
     /// and the subsequent appdomains that are created to host isolated add-ins. Using
-    /// LoaderOptimizationAttribute dramatically improves performance; otherwise, each 
+    /// LoaderOptimizationAttribute dramatically improves performance; otherwise, each
     /// add-in needs to load a complete set of WPF assemblies.
     /// </summary>
     public class App : Application

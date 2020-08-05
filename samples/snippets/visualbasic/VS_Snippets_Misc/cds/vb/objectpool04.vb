@@ -33,11 +33,11 @@ Module ObjectPoolExample
         Dim cts As CancellationTokenSource = New CancellationTokenSource()
 
         ' Create an opportunity for the user to cancel.
-      Task.Run(Sub()
-                  If Console.ReadKey().KeyChar = "c"c Or Console.ReadKey().KeyChar = "C"c Then
-                     cts.Cancel()
-                  End If
-               End Sub)
+        Task.Run(Sub()
+                     If Console.ReadKey().KeyChar = "c"c Or Console.ReadKey().KeyChar = "C"c Then
+                         cts.Cancel()
+                     End If
+                 End Sub)
         Dim pool As ObjectPool(Of TestClass) = New ObjectPool(Of TestClass)(Function() New TestClass())
 
         ' Create a high demand for TestClass objects.

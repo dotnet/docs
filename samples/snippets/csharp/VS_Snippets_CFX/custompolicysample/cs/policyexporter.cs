@@ -32,7 +32,7 @@ namespace Microsoft.WCF.Documentation
         throw new NullReferenceException("The MetadataExporter object passed to the ExporterBindingElement is null.");
       if (policyContext == null)
         throw new NullReferenceException("The PolicyConversionContext object passed to the ExporterBindingElement is null.");
-      
+
       XmlElement elem = doc.CreateElement(name1, ns1);
       elem.InnerText = "My custom text.";
       XmlAttribute att = doc.CreateAttribute("MyCustomAttribute", ns1);
@@ -49,8 +49,8 @@ namespace Microsoft.WCF.Documentation
 
     public override BindingElement Clone()
     {
-      // Note: All custom binding elements must return a deep clone 
-      // to enable the run time to support multiple bindings using the 
+      // Note: All custom binding elements must return a deep clone
+      // to enable the run time to support multiple bindings using the
       // same custom binding.
       return this;
     }

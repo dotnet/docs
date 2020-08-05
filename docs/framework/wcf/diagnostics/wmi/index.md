@@ -93,7 +93,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     write-host "Previous ACL: "$outsddl.SDDL  
   
     # Change the Access Control List (ACL) using SDDL  
-    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)   
+    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)
   
     # Get and output the current settings  
     $binarySD = @($null)  
@@ -135,7 +135,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     ```  
   
 ### Granting Access to Arbitrary Users or Groups  
- The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group’s Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
+ The example in this section grants WMI Provider registration privileges to all local users. If you want to grant access to a user or group that is not built in, then you must obtain that user or group's Security Identifier (SID). There is no simple way to get the SID for an arbitrary user. One method is to log on as the desired user and then issue the following shell command.  
   
 ```console
 Whoami /user  
@@ -146,10 +146,11 @@ Whoami /user
 ## Accessing Remote WMI Object Instances  
  If you need to access WCF WMI instances on a remote machine, you must enable packet privacy on the tools that you use for access. The following section describes how to achieve these using the WMI CIM Studio, Windows Management Instrumentation Tester, as well as .NET SDK 2.0.  
   
-### WMI CIM Studio  
- If you have installed [WMI Administrative Tools](https://go.microsoft.com/fwlink/?LinkId=95185), you can use the WMI CIM Studio to access WMI instances. The tools are in the following folder  
+### WMI CIM Studio
+
+If you've installed WMI Administrative Tools, you can use the WMI CIM Studio to access WMI instances. The tools are in the following folder:
   
- **%windir%\Program Files\WMI Tools\\**  
+*%windir%\Program Files\WMI Tools\\*
   
 1. In the **Connect to namespace:** window, type **root\ServiceModel** and click **OK.**  
   

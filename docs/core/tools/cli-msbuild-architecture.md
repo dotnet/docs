@@ -24,7 +24,7 @@ Let's start with a quick refresher on Preview 2 layering as shown in the followi
 
 ![Preview 2 tools high-level architecture](media/cli-msbuild-architecture/p2-arch.png)
 
-The layering of the tools in Preview 2 is straightforward. At the bottom, the foundation is the .NET Core CLI. All other, higher-level tools, such as Visual Studio or Visual Studio Code, depend and rely on the CLI to build projects, restore dependencies, and so on. For example, if Visual Studio wanted to perform a restore operation, it would call into the `dotnet restore` ([see note](#dotnet-restore-note)) command in the CLI.
+The layering of the tools in Preview 2 is straightforward. At the bottom, the foundation is the .NET Core CLI. All other, higher-level tools, such as Visual Studio or Visual Studio Code, depend and rely on the CLI to build projects, restore dependencies, and so on. For example, if Visual Studio wanted to perform a restore operation, it would call into the `dotnet restore` command in the CLI.
 
 With the move to the new project system, the previous diagram changes:
 
@@ -35,7 +35,7 @@ The main difference is that the CLI is not the foundational layer anymore; this 
 > [!NOTE]
 > A "target" is an MSBuild term that indicates a named operation that MSBuild can invoke. It is usually coupled with one or more tasks that execute some logic that the target is supposed to do. MSBuild supports many ready-made targets such as `Copy` or `Execute`; it also allows users to write their own tasks using managed code and define targets to execute those tasks. For more information, see [MSBuild tasks](/visualstudio/msbuild/msbuild-tasks).
 
-All the toolsets now consume the shared SDK component and its targets, CLI included. For example, Visual Studio 2019 doesn't call into the `dotnet restore` ([see note](#dotnet-restore-note)) command to restore dependencies for .NET Core projects. Instead, it uses the "Restore" target directly. Since these are MSBuild targets, you can also use raw MSBuild to execute them using the [dotnet msbuild](dotnet-msbuild.md) command.
+All the toolsets now consume the shared SDK component and its targets, CLI included. For example, Visual Studio 2019 doesn't call into the `dotnet restore` command to restore dependencies for .NET Core projects. Instead, it uses the "Restore" target directly. Since these are MSBuild targets, you can also use raw MSBuild to execute them using the [dotnet msbuild](dotnet-msbuild.md) command.
 
 ### CLI commands
 
@@ -67,5 +67,6 @@ This command publishes an application into a `pub` folder using the "Release" co
 
 Notable exceptions to this rule are the `new` and `run` commands. They have not been implemented as MSBuild targets.
 
-<a name="dotnet-restore-note"></a>
+### Implicit restore
+
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

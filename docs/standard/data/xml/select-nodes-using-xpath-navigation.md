@@ -1,5 +1,6 @@
 ---
 title: "Select Nodes Using XPath Navigation"
+description: Learn to select XML nodes in .NET. Use Document Object Model (DOM) methods allowing you to use XML Path Language (XPath) navigation to query DOM information.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -156,4 +157,4 @@ this doc.DocumentElement.FirstChild.SelectNodes(. . .);
   
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

@@ -16,17 +16,17 @@ Support for CMS/PKCS #7 messages was introduced into .NET Core in version 2.1.
 
 To ensure a PIN prompt appears if required, desktop applications should call <xref:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner,System.Boolean)?displayProperty=nameWithType> and set the Boolean parameter to `false`. The resulting behavior is the same as on .NET Framework regardless of whether the silent context is disabled there.
 
-### Category
+#### Category
 
 Cryptography
 
-### Affected APIs
+#### Affected APIs
 
 - <xref:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner,System.Boolean)?displayProperty=nameWithType>
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `M:System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature(System.Security.Cryptography.Pkcs.CmsSigner,System.Boolean)`
 

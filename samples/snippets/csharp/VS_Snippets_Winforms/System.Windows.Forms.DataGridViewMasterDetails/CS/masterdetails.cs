@@ -50,7 +50,7 @@ public class Form1 : System.Windows.Forms.Form
 
         // Configure the details DataGridView so that its columns automatically
         // adjust their widths when the data changes.
-        detailsDataGridView.AutoSizeColumnsMode = 
+        detailsDataGridView.AutoSizeColumnsMode =
             DataGridViewAutoSizeColumnsMode.AllCells;
     }
     //</Snippet10>
@@ -60,7 +60,7 @@ public class Form1 : System.Windows.Forms.Form
     {
         try
         {
-            // Specify a connection string. Replace the given value with a 
+            // Specify a connection string. Replace the given value with a
             // valid connection string for a Northwind SQL Server sample
             // database accessible to your system.
             String connectionString =
@@ -93,8 +93,8 @@ public class Form1 : System.Windows.Forms.Form
             masterBindingSource.DataMember = "Customers";
 
             // Bind the details data connector to the master data connector,
-            // using the DataRelation name to filter the information in the 
-            // details table based on the current row in the master table. 
+            // using the DataRelation name to filter the information in the
+            // details table based on the current row in the master table.
             detailsBindingSource.DataSource = masterBindingSource;
             detailsBindingSource.DataMember = "CustomersOrders";
         }

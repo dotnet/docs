@@ -1,6 +1,6 @@
 ---
 title: "char type - C# reference"
-ms.date: 11/22/2019
+ms.date: 05/11/2020
 f1_keywords:
   - "char"
   - "char_CSharpKeyword"
@@ -18,6 +18,8 @@ The `char` type keyword is an alias for the .NET <xref:System.Char?displayProper
 
 The default value of the `char` type is `\0`, that is, U+0000.
 
+The `char` type supports [comparison](../operators/comparison-operators.md), [equality](../operators/equality-operators.md), [increment](../operators/arithmetic-operators.md#increment-operator-), and [decrement](../operators/arithmetic-operators.md#decrement-operator---) operators. Moreover, for `char` operands, [arithmetic](../operators/arithmetic-operators.md) and [bitwise logical](../operators/bitwise-and-shift-operators.md) operators perform an operation on the corresponding character codes and produce the result of the `int` type.
+
 The [string](reference-types.md#the-string-type) type represents text as a sequence of `char` values.
 
 ## Literals
@@ -30,7 +32,7 @@ You can specify a `char` value with:
 
 [!code-csharp-interactive[char literals](snippets/CharType.cs#Literals)]
 
-As the preceding example shows, you also can cast the value of a character code into the corresponding `char` value.
+As the preceding example shows, you can also cast the value of a character code into the corresponding `char` value.
 
 > [!NOTE]
 > In the case of a Unicode escape sequence, you must specify all four hexadecimal digits. That is, `\u006A` is a valid escape sequence, while `\u06A` and `\u6A` are not valid.
@@ -53,3 +55,4 @@ For more information, see the [Integral types](~/_csharplang/spec/types.md#integ
 - [Value types](value-types.md)
 - [Strings](../../programming-guide/strings/index.md)
 - <xref:System.Text.Rune?displayProperty=nameWithType>
+- [Character encoding in .NET](../../../standard/base-types/character-encoding-introduction.md)

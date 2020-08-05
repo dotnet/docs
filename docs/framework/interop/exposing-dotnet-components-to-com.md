@@ -1,5 +1,6 @@
 ---
 title: "Exposing .NET components to COM"
+description: Expose .NET components to COM. Qualify .NET types for interoperation. Apply interop attributes. Package an assembly for COM. Consume a managed type from COM.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "exposing .NET Framework components to COM"

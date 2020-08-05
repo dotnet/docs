@@ -1,5 +1,6 @@
 ---
 title: "Sessions, Instancing, and Concurrency"
+description: Learn about sessions, instancing, and concurrency, how to use them, and the interactions between them in WFC.
 ms.date: "03/30/2017"
 ms.assetid: 50797a3b-7678-44ed-8138-49ac1602f35b
 ---
@@ -45,9 +46,9 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
  The following code example shows the default <xref:System.ServiceModel.InstanceContextMode> value, <xref:System.ServiceModel.InstanceContextMode.PerSession> being explicitly set on a service class.  
   
 ```csharp  
-[ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]   
-public class CalculatorService : ICalculatorInstance   
-{   
+[ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]
+public class CalculatorService : ICalculatorInstance
+{
     ...  
 }  
 ```  
@@ -57,7 +58,7 @@ public class CalculatorService : ICalculatorInstance
 ### Well-Known Singleton Services  
  One variation on single instance service objects is sometimes useful: you can create a service object yourself and create the service host using that object. To do so, you must also set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A?displayProperty=nameWithType> property to <xref:System.ServiceModel.InstanceContextMode.Single> or an exception is thrown when the service host is opened.  
   
- Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=nameWithType> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a parameterless public constructor).  
+ Use the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29> constructor to create such a service. It provides an alternative to implementing a custom <xref:System.ServiceModel.Dispatcher.IInstanceContextInitializer?displayProperty=nameWithType> when you wish to provide a specific object instance for use by a singleton service. You can use this overload when your service implementation type is difficult to construct (for example, if it does not implement a parameterless public constructor).  
   
  Note that when an object is provided to this constructor, some features related to the Windows Communication Foundation (WCF) instancing behavior work differently. For example, calling <xref:System.ServiceModel.InstanceContext.ReleaseServiceInstance%2A?displayProperty=nameWithType> has no effect when a singleton object instance is provided. Similarly, any other instance-release mechanism is ignored. The <xref:System.ServiceModel.ServiceHost> always behaves as if the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A?displayProperty=nameWithType> property is set to <xref:System.ServiceModel.ReleaseInstanceMode.None?displayProperty=nameWithType> for all operations.  
   
@@ -83,9 +84,9 @@ public class CalculatorService : ICalculatorInstance
  The following code example demonstrates setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property to <xref:System.ServiceModel.ConcurrencyMode.Multiple>.  
   
 ```csharp
-[ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.Single)]   
-public class CalculatorService : ICalculatorConcurrency   
-{   
+[ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.Single)]
+public class CalculatorService : ICalculatorConcurrency
+{
     ...  
 }  
 ```  
@@ -103,9 +104,9 @@ public class CalculatorService : ICalculatorConcurrency
   
 ## See also
 
-- [Using Sessions](../../../../docs/framework/wcf/using-sessions.md)
-- [How to: Create a Service That Requires Sessions](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-that-requires-sessions.md)
-- [How to: Control Service Instancing](../../../../docs/framework/wcf/feature-details/how-to-control-service-instancing.md)
-- [Concurrency](../../../../docs/framework/wcf/samples/concurrency.md)
-- [Instancing](../../../../docs/framework/wcf/samples/instancing.md)
-- [Session](../../../../docs/framework/wcf/samples/session.md)
+- [Using Sessions](../using-sessions.md)
+- [How to: Create a Service That Requires Sessions](how-to-create-a-service-that-requires-sessions.md)
+- [How to: Control Service Instancing](how-to-control-service-instancing.md)
+- [Concurrency](../samples/concurrency.md)
+- [Instancing](../samples/instancing.md)
+- [Session](../samples/session.md)

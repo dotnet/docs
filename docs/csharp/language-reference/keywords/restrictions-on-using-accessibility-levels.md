@@ -65,7 +65,7 @@ public class A
 
     public B MyMethod()
     {
-        // Error: The type B is less accessible 
+        // Error: The type B is less accessible
         // than the method A.MyMethod.
         return new B();
     }
@@ -79,8 +79,8 @@ public class A
     }
 
     MyDelegate d = new MyDelegate(B.MyPrivateMethod);
-    // Even when B is declared public, you still get the error: 
-    // "The parameter B.MyPrivateMethod is not accessible due to 
+    // Even when B is declared public, you still get the error:
+    // "The parameter B.MyPrivateMethod is not accessible due to
     // protection level."
 
     public static B operator +(A m1, B m2)
@@ -103,14 +103,14 @@ public class A
 
 ## See also
 
-- [C# Reference](../../language-reference/index.md)
+- [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](../../language-reference/keywords/index.md)
-- [Access Modifiers](../../language-reference/keywords/access-modifiers.md)
-- [Accessibility Domain](../../language-reference/keywords/accessibility-domain.md)
-- [Accessibility Levels](../../language-reference/keywords/accessibility-levels.md)
+- [C# Keywords](index.md)
+- [Access Modifiers](access-modifiers.md)
+- [Accessibility Domain](accessibility-domain.md)
+- [Accessibility Levels](accessibility-levels.md)
 - [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md)
-- [public](../../language-reference/keywords/public.md)
-- [private](../../language-reference/keywords/private.md)
-- [protected](../../language-reference/keywords/protected.md)
-- [internal](../../language-reference/keywords/internal.md)
+- [public](public.md)
+- [private](private.md)
+- [protected](protected.md)
+- [internal](internal.md)

@@ -86,11 +86,11 @@ myMoney = 400.75M;
 
 The preceding example also shows the use of `_` as a *digit separator*, which is supported starting with C# 7.0. You can use the digit separator with all kinds of numeric literals.
 
-You also can use scientific notation, that is, specify an exponent part of a real literal, as the following example shows:
+You can also use scientific notation, that is, specify an exponent part of a real literal, as the following example shows:
 
 ```csharp-interactive
 double d = 0.42e2;
-Console.WriteLine(d);  // output 42;
+Console.WriteLine(d);  // output 42
 
 float f = 134.45E-2f;
 Console.WriteLine(f);  // output: 1.3445
@@ -101,7 +101,7 @@ Console.WriteLine(m);  // output: 1500000
 
 ## Conversions
 
-There is only one implicit conversion between floating-point numeric types: from `float` to `double`. However, you can convert any floating-point type to any other floating-point type with the [explicit cast](../operators/type-testing-and-cast.md#cast-operator-). For more information, see [Built-in numeric conversions](numeric-conversions.md).
+There is only one implicit conversion between floating-point numeric types: from `float` to `double`. However, you can convert any floating-point type to any other floating-point type with the [explicit cast](../operators/type-testing-and-cast.md#cast-expression). For more information, see [Built-in numeric conversions](numeric-conversions.md).
 
 ## C# language specification
 

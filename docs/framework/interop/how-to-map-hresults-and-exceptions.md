@@ -1,5 +1,6 @@
 ---
 title: "How to: Map HRESULTs and Exceptions"
+description: Review how to map HRESULT values returned from COM methods to exceptions thrown by .NET methods. The runtime handles the transition between COM and .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"
@@ -29,7 +30,7 @@ COM methods report errors by returning HRESULTs; .NET methods report them by thr
     Class NoAccessException : public ApplicationException  
     {  
         NoAccessException () {  
-        HResult = E_ACCESSDENIED;   
+        HResult = E_ACCESSDENIED;
     }  
     }  
     CMyClass::MethodThatThrows  

@@ -1,5 +1,6 @@
 ---
 title: "Retrieving Identity or Autonumber Values"
+description: Learn how to retrieve identity and autonumber values of primary keys in relational databases, and how to merge new identity values in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

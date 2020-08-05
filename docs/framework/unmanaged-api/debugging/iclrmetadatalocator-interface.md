@@ -28,7 +28,7 @@ Used by the data access services layer to locate metadata of assemblies in a tar
  The API client (that is, the debugger) must implement this interface as appropriate for the particular target process. For example, the implementation for a live process would be different from that of a memory dump.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   

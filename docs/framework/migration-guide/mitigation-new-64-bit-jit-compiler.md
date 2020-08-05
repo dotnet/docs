@@ -30,7 +30,7 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
 - Under certain conditions, if an `if` statement is used to test for a condition before entering  a `try` block and in the exit from the `try` block, and the same condition is evaluated in the `catch` or `finally` block, the new 64-bit JIT compiler removes the `if` condition from the `catch` or `finally` block when it optimizes code. As a result, code inside the `if` statement in the `catch` or `finally` block is executed unconditionally.  
   
-<a name="General"></a>   
+<a name="General"></a>
 ## Mitigation of known issues  
  If you encounter the issues listed above, you can address them by doing any of the following:  
   
@@ -40,7 +40,7 @@ Starting with the .NET Framework 4.6, the runtime includes a new 64-bit JIT comp
   
 - Compile with the older 64-bit JIT compiler. See the [Mitigation of other issues](#Other) section for more information on how to do this.  
   
-<a name="Other"></a>   
+<a name="Other"></a>
 ## Mitigation of other issues  
  If you encounter any other difference in behavior between code compiled with the older 64-bit compiler and the new 64-bit JIT compiler, or between the debug and release versions of your app that are both compiled with the new 64-bit JIT compiler, you can do the following to compile your app with the older 64-bit JIT compiler:  
   

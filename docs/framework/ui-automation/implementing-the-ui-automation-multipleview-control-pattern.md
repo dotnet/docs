@@ -17,7 +17,7 @@ ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
   
  Examples of controls that can present multiple views include the list view (which can show its contents as thumbnails, tiles, icons, or details), Microsoft Excel charts (pie, line, bar, cell value with a formula), Microsoft Word documents (normal, Web layout, print layout, reading layout, outline), Microsoft Outlook calendar (year, month, week, day), and Microsoft Windows Media Player skins. The supported views are determined by the control developer and are specific to each control.  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Multiple View control pattern, note the following guidelines and conventions:  
   
@@ -29,7 +29,7 @@ ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
   
 - View names must be suitable for use in Text to Speech, Braille, and other human-readable applications.  
   
-<a name="Required_Members_for_IMultipleViewProvider"></a>   
+<a name="Required_Members_for_IMultipleViewProvider"></a>
 ## Required Members for IMultipleViewProvider  
  The following properties and methods are required for implementing IMultipleViewProvider.  
   
@@ -42,7 +42,7 @@ ms.assetid: 5bf1b248-ffee-48c8-9613-0b134bbe9f6a
   
  There are no events associated with this control pattern.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Provider must throw the following exceptions.  
   

@@ -10,10 +10,10 @@ public class Numbers
    {
       byte[] numbersOut = new byte[numbers.Length];
       for (int ctr = 0; ctr < numbers.Length; ctr++) {
-         int square = ((int) numbers[ctr]) * ((int) numbers[ctr]); 
+         int square = ((int) numbers[ctr]) * ((int) numbers[ctr]);
          if (square <= Byte.MaxValue)
             numbersOut[ctr] = (byte) square;
-         // If there's an overflow, assign MaxValue to the corresponding 
+         // If there's an overflow, assign MaxValue to the corresponding
          // element.
          else
             numbersOut[ctr] = Byte.MaxValue;
@@ -25,7 +25,7 @@ public class Numbers
    {
       BigInteger[] numbersOut = new BigInteger[numbers.Length];
       for (int ctr = 0; ctr < numbers.Length; ctr++)
-         numbersOut[ctr] = numbers[ctr] * numbers[ctr]; 
+         numbersOut[ctr] = numbers[ctr] * numbers[ctr];
 
       return numbersOut;
    }
@@ -36,8 +36,8 @@ public class Example
 {
    public static void Main()
    {
-       Byte[] bytes = Numbers.GetSquares( new Byte[] { (byte) 3, (byte) 10, 
-                                                       (byte) 13, (byte) 20 } ); 
+       Byte[] bytes = Numbers.GetSquares( new Byte[] { (byte) 3, (byte) 10,
+                                                       (byte) 13, (byte) 20 } );
        foreach (var byt in bytes)
           Console.Write("{0}  ", byt);
 

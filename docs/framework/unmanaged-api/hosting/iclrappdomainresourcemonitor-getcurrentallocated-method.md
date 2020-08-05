@@ -45,7 +45,7 @@ HRESULT GetCurrentAllocated([in]  DWORD dwAppDomainId,
  This method is the unmanaged equivalent of the managed <xref:System.AppDomain.MonitoringTotalAllocatedMemorySize%2A?displayProperty=nameWithType> property.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MetaHost.h  
   
@@ -55,7 +55,7 @@ HRESULT GetCurrentAllocated([in]  DWORD dwAppDomainId,
   
 ## See also
 
-- [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)
+- [ICLRAppDomainResourceMonitor Interface](iclrappdomainresourcemonitor-interface.md)
 - [Application Domain Resource Monitoring](../../../standard/garbage-collection/app-domain-resource-monitoring.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
-- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)
+- [Hosting Interfaces](hosting-interfaces.md)
+- [Hosting](index.md)

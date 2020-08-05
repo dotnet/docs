@@ -16,18 +16,18 @@ Introduces a response to a run-time error or turns a compiler option on.
 ## Remarks  
  The `On` keyword is used in these contexts:  
   
- [Group Join Clause](../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Group Join Clause](../language-reference/queries/group-join-clause.md)  
   
- [Join Clause](../../visual-basic/language-reference/queries/join-clause.md)  
+ [Join Clause](../language-reference/queries/join-clause.md)  
   
- [On Error Statement](../../visual-basic/language-reference/statements/on-error-statement.md)  
+ [On Error Statement](../language-reference/statements/on-error-statement.md)  
   
- [Option Explicit Statement](../../visual-basic/language-reference/statements/option-explicit-statement.md)  
+ [Option Explicit Statement](../language-reference/statements/option-explicit-statement.md)  
   
- [Option Infer Statement](../../visual-basic/language-reference/statements/option-infer-statement.md)  
+ [Option Infer Statement](../language-reference/statements/option-infer-statement.md)  
   
- [Option Strict Statement](../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [Option Strict Statement](../language-reference/statements/option-strict-statement.md)  
   
 ## See also
 
-- [Keywords](../../visual-basic/language-reference/keywords/index.md)
+- [Keywords](../language-reference/keywords/index.md)

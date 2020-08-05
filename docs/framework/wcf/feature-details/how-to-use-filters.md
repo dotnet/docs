@@ -23,7 +23,7 @@ This topic outlines the basic steps required to create a routing configuration t
      For this example, if the client application needs the message to be processed by the rounding calculator, it adds a custom header by using the following code:  
   
     ```csharp  
-    messageHeadersElement.Add(MessageHeader.CreateHeader("RoundingCalculator",   
+    messageHeadersElement.Add(MessageHeader.CreateHeader("RoundingCalculator",
                                    "http://my.custom.namespace/", "rounding"));  
     ```  
   
@@ -98,7 +98,7 @@ This topic outlines the basic steps required to create a routing configuration t
           <filters>  
             <!--define the different message filters-->  
             <!--define an xpath message filter to look for the custom header coming from the client-->  
-            <filter name="XPathFilter" filterType="XPath"   
+            <filter name="XPathFilter" filterType="XPath"
                     filterData="/s12:Envelope/s12:Header/custom:RoundingCalculator = 'rounding'"/>  
           </filters>  
     </routing>  
@@ -130,7 +130,7 @@ This topic outlines the basic steps required to create a routing configuration t
   
     > [!NOTE]
     > The PrefixEndpointAddress filter does not evaluate the host name when performing a match, because a single host can be referred to by using a variety of host names that may all be valid ways of referring to the host from the client application. For example, all of the following may refer to the same host:  
-    >   
+    >
     > - localhost  
     > - 127.0.0.1  
     > - `www.contoso.com`  
@@ -174,7 +174,7 @@ This topic outlines the basic steps required to create a routing configuration t
                 <add filterName="XPathFilter" endpointName="roundingCalcEndpoint" priority="2"/>  
               </entries>  
             </table>  
-          <filterTables>  
+          </filterTables>  
     </routing>  
     ```  
   
@@ -321,4 +321,4 @@ This topic outlines the basic steps required to create a routing configuration t
   
 ## See also
 
-- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+- [Routing Services](../samples/routing-services.md)

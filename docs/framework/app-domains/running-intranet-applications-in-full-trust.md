@@ -1,5 +1,6 @@
 ---
 title: "Running Intranet Applications in Full Trust"
+description: Run Intranet applications in full trust with .NET 3.5 SP1. Applications and their library assemblies can be run as full-trust assemblies from a network share.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "full trust, running intranet applications in"
@@ -31,4 +32,4 @@ This new behavior is the default for intranet assemblies. You can return to the 
   
 ## See also
 
-- [Programming with Assemblies](../../standard/assembly/program.md)
+- [Programming with Assemblies](../../standard/assembly/index.md)

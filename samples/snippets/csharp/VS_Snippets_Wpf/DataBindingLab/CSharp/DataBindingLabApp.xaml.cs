@@ -9,7 +9,7 @@ using System.Configuration;
 namespace DataBindingLab
 {
     public partial class DataBindingLabApp : Application
-    {        
+    {
         private User currentUser;
         private ObservableCollection<AuctionItem> auctionItems = new ObservableCollection<AuctionItem>();
 

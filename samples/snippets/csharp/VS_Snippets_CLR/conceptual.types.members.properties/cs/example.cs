@@ -4,9 +4,9 @@ using System;
 public class Person
 {
    private int m_Age;
-   
+
    public int Age
-   { 
+   {
       get { return m_Age; }
       set {
          if (value < 0 || value > 125)
@@ -16,7 +16,7 @@ public class Person
          else
          {
             m_Age = value;
-         }         
+         }
       }
    }
 }

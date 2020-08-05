@@ -22,9 +22,9 @@ Indicates that text within a description is code.
 |`text`|The text you would like to indicate as code.|  
   
 ## Remarks  
- The `<c>` tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](../../../visual-basic/language-reference/xmldoc/code.md) to indicate multiple lines as code.  
+ The `<c>` tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](code.md) to indicate multiple lines as code.  
   
- Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<c>` tag in the summary section to indicate that `Counter` is code.  
@@ -33,4 +33,4 @@ Indicates that text within a description is code.
   
 ## See also
 
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](index.md)

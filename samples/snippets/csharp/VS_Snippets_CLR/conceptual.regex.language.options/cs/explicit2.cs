@@ -6,8 +6,8 @@ public class Example
 {
    public static void Main()
    {
-      string input = "This is the first sentence. Is it the beginning " + 
-                     "of a literary masterpiece? I think not. Instead, " + 
+      string input = "This is the first sentence. Is it the beginning " +
+                     "of a literary masterpiece? I think not. Instead, " +
                      "it is a nonsensical paragraph.";
       string pattern = @"(?n)\b\(?((?>\w+),?\s?)+[\.!?]\)?";
 

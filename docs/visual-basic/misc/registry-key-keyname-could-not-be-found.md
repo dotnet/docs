@@ -14,4 +14,4 @@ A registry key cannot be found.
   
 ## See also
 
-- [Registry Summary](../../visual-basic/language-reference/keywords/registry-summary.md)
+- [Registry Summary](../language-reference/keywords/registry-summary.md)

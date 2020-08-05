@@ -20,11 +20,11 @@ A service behavior that allows you to configure the <xref:System.Activities.Dura
 <behaviors>
   <serviceBehaviors>
     <behavior name="String">
-      <sqlWorkflowInstanceStore connectionStringName="String" 
-                                hostLockRenewalPeriod="TimeSpan" 
-                                instanceCompletionAction="DeleteNothing/DeleteAll" 
-                                instanceEncodingAction="None/GZip" 
-                                instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry" 
+      <sqlWorkflowInstanceStore connectionStringName="String"
+                                hostLockRenewalPeriod="TimeSpan"
+                                instanceCompletionAction="DeleteNothing/DeleteAll"
+                                instanceEncodingAction="None/GZip"
+                                instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry"
                                 runnableInstancesDetectionPeriod="TimeSpan" />
     </behavior>
   </serviceBehaviors>

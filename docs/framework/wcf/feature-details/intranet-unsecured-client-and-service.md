@@ -43,11 +43,11 @@ The following illustration depicts a simple Windows Communication Foundation (WC
   <system.serviceModel>  
     <behaviors />  
     <services>  
-      <service behaviorConfiguration=""   
+      <service behaviorConfiguration=""
                name="ServiceModel.Calculator">  
-        <endpoint address="net.tcp://localhost:8008/Calculator"   
+        <endpoint address="net.tcp://localhost:8008/Calculator"
                   binding="netTcpBinding"  
-                  bindingConfiguration="tcp_Unsecured"   
+                  bindingConfiguration="tcp_Unsecured"
                   name="netTcp_ICalculator"  
                   contract="ServiceModel.ICalculator" />  
       </service>  
@@ -97,9 +97,9 @@ The following illustration depicts a simple Windows Communication Foundation (WC
     </bindings>  
     <client>  
       <endpoint address="net.tcp://machineName:8008/Calculator "  
-                binding="netTcpBinding"   
+                binding="netTcpBinding"
                 bindingConfiguration="NetTcpBinding_ICalculator"  
-                contract="ICalculator"   
+                contract="ICalculator"
                 name="NetTcpBinding_ICalculator" />  
     </client>  
   </system.serviceModel>  
@@ -109,5 +109,5 @@ The following illustration depicts a simple Windows Communication Foundation (WC
 ## See also
 
 - <xref:System.ServiceModel.NetTcpBinding>
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Overview](security-overview.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

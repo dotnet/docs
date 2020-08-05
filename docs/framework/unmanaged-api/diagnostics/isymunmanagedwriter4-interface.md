@@ -17,12 +17,12 @@ ISymUnmanagedWriter4 interface.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetDebugInfoWithPadding Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter4-getdebuginfowithpadding-method.md)|Functions the same as [GetDebugInfo Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-getdebuginfo-method.md) except that the path string is padded with zeros following the terminating null character to make the string data a fixed size of `MAX_PATH`. Padding is only given if the path string length itself is less than `MAX_PATH`.<br /><br /> This makes it easier to write tools that difference PE files.|  
+|[GetDebugInfoWithPadding Method](isymunmanagedwriter4-getdebuginfowithpadding-method.md)|Functions the same as [GetDebugInfo Method](isymunmanagedwriter-getdebuginfo-method.md) except that the path string is padded with zeros following the terminating null character to make the string data a fixed size of `MAX_PATH`. Padding is only given if the path string length itself is less than `MAX_PATH`.<br /><br /> This makes it easier to write tools that difference PE files.|  
   
 ## Requirements  
  **Header:** CorSym.idl, CorSym.h  
   
 ## See also
 
-- [Diagnostics Symbol Store Interfaces](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-interfaces.md)
-- [ISymUnmanagedWriter3 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter3-interface.md)
+- [Diagnostics Symbol Store Interfaces](diagnostics-symbol-store-interfaces.md)
+- [ISymUnmanagedWriter3 Interface](isymunmanagedwriter3-interface.md)

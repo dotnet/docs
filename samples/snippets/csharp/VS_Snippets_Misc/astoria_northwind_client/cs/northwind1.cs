@@ -12,7 +12,7 @@
 // Generation date: 7/31/2009 1:23:06 AM
 namespace NorthwindModel
 {
-    
+
     /// <summary>
     /// There are no comments for NorthwindEntities in the schema.
     /// </summary>
@@ -21,7 +21,7 @@ namespace NorthwindModel
         /// <summary>
         /// Initialize a new NorthwindEntities object.
         /// </summary>
-        public NorthwindEntities(global::System.Uri serviceRoot) : 
+        public NorthwindEntities(global::System.Uri serviceRoot) :
                 base(serviceRoot)
         {
             this.OnContextCreated();

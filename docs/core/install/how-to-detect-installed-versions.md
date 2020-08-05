@@ -1,7 +1,7 @@
 ---
 title: Check installed .NET Core versions on Windows, Linux, and macOS - .NET Core
 description: Learn how to list which versions of .NET Core are installed on your computer. This includes the .NET Core runtime and SDK.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 12/04/2019
 ms.custom: "updateeachrelease"
@@ -14,7 +14,7 @@ This article teaches you how to check which versions of the .NET Core runtime an
 
 Installing an SDK installs the corresponding runtime.
 
-If any command in this article fails, you don't have the runtime or SDK installed. For more information, see [Download and install .NET Core](index.md).
+If any command in this article fails, you don't have the runtime or SDK installed. For more information, see the install articles for [Windows](windows.md), [macOS](macos.md), or [Linux](linux.md).
 
 ## Check SDK versions
 
@@ -158,6 +158,51 @@ Microsoft.NETCore.App 2.2.7 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 Microsoft.NETCore.App 3.0.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 Microsoft.NETCore.App 3.1.0 [/usr/local/share/dotnet/shared/Microsoft.NETCore.App]
 ```
+
+::: zone-end
+
+## Check for install folders
+
+It's possible that .NET Core is installed but not added to the `PATH` variable for your operating system or user profile. Running the commands from the previous sections may not work. As an alternative, you can check that the .NET Core install folders exist.
+
+When you install .NET Core from an installer or script, it's installed to a standard folder. Much of the time the installer or script you're using to install .NET Core gives you an option to install to a different folder. If you choose to install to a different folder, adjust the start of the folder path.
+
+::: zone pivot="os-windows"
+
+- **dotnet executable**\
+_C:\\program files\\dotnet\\dotnet.exe_
+
+- **.NET SDK**\
+_C:\\program files\\dotnet\\sdk\\{version}\\_
+
+- **.NET Runtime**\
+_C:\\program files\\dotnet\\shared\\{runtime-type}\\{version}\\_
+
+::: zone-end
+
+::: zone pivot="os-linux"
+
+- **dotnet executable**\
+_/home/user/share/dotnet/dotnet_
+
+- **.NET SDK**\
+_/home/user/share/dotnet/sdk/{version}/_
+
+- **.NET Runtime**\
+_/home/user/share/dotnet/shared/{runtime-type}/{version}/_
+
+::: zone-end
+
+::: zone pivot="os-macos"
+
+- **dotnet executable**\
+_/usr/local/share/dotnet/dotnet_
+
+- **.NET SDK**\
+_/usr/local/share/dotnet/sdk/{version}/_
+
+- **.NET Runtime**\
+_/usr/local/share/dotnet/shared/{runtime-type}/{version}/_
 
 ::: zone-end
 

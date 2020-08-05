@@ -13,7 +13,7 @@ ms.assetid: 2424c137-c7c2-4aa9-8d5d-a066e12fefda
 
 *Signature confirmation* is a mechanism for a message initiator to ensure that a received reply was generated in response to the sender's original message. Signature confirmation is defined in the WS-Security 1.1 specification. If an endpoint supports WS-Security 1.0, you cannot use signature confirmation.
 
-The following procedures specify how to enable signature confirmation using an <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>. You can use the same procedure with a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>. The procedure builds upon the basic steps found in [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).
+The following procedures specify how to enable signature confirmation using an <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>. You can use the same procedure with a <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>. The procedure builds upon the basic steps found in [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md).
 
 ### To enable signature confirmation in code
 
@@ -25,7 +25,7 @@ The following procedures specify how to enable signature confirmation using an <
 
 4. Add the security element to the binding collection.
 
-5. Create a custom binding, as specified in [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).
+5. Create a custom binding, as specified in [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md).
 
 ### To enable signature confirmation in configuration
 
@@ -37,9 +37,9 @@ The following procedures specify how to enable signature confirmation using an <
 
 4. Add a `<security>` child element and set the `requireSignatureConfirmation` attribute to `true`.
 
-5. Optional. To enable signature confirmation during the bootstrap, add a [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) child element and set the `requireSignatureConfirmation` attribute to `true`.
+5. Optional. To enable signature confirmation during the bootstrap, add a [\<secureConversationBootstrap>](../../configure-apps/file-schema/wcf/secureconversationbootstrap.md) child element and set the `requireSignatureConfirmation` attribute to `true`.
 
-6. Add an appropriate transport element. The following example adds an [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md):
+6. Add an appropriate transport element. The following example adds an [\<httpTransport>](../../configure-apps/file-schema/wcf/httptransport.md):
 
     ```xml
     <bindings>
@@ -67,5 +67,5 @@ The following code creates an instance of the <xref:System.ServiceModel.Channels
 - <xref:System.ServiceModel.Channels.SymmetricSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.AsymmetricSecurityBindingElement>
 - <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement%2A>
-- [How to: Create a Custom Binding Using the SecurityBindingElement](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md)
-- [How to: Create a SecurityBindingElement for a Specified Authentication Mode](../../../../docs/framework/wcf/feature-details/how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)
+- [How to: Create a Custom Binding Using the SecurityBindingElement](how-to-create-a-custom-binding-using-the-securitybindingelement.md)
+- [How to: Create a SecurityBindingElement for a Specified Authentication Mode](how-to-create-a-securitybindingelement-for-a-specified-authentication-mode.md)

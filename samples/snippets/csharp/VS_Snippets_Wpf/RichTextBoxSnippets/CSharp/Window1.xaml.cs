@@ -22,9 +22,9 @@ namespace RichTextBoxSnippets
 
         private void WindowLoaded(Object sender, RoutedEventArgs args)
         {
-            // <Snippet_RTB_StringFromCall>            
+            // <Snippet_RTB_StringFromCall>
             string plainText = StringFromRichTextBox(richTB);
-            // </Snippet_RTB_StringFromCall>            
+            // </Snippet_RTB_StringFromCall>
         }
 
         void Constructor()
@@ -72,8 +72,8 @@ namespace RichTextBoxSnippets
 
             // Create a new FlowDocument, and add 3 paragraphs.
             FlowDocument flowDoc = new FlowDocument();
-            flowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 1"))); 
-            flowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 2"))); 
+            flowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 1")));
+            flowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 2")));
             flowDoc.Blocks.Add(new Paragraph(new Run("Paragraph 3")));
             // Set the FlowDocument to be the content for a new RichTextBox.
             RichTextBox rtb = new RichTextBox(flowDoc);
@@ -86,15 +86,15 @@ namespace RichTextBoxSnippets
 
             // Specify the new caret position at the end of the current document.
             rtb.CaretPosition = caretPos;
-            // </Snippet_RTB_CaretPosition>            
+            // </Snippet_RTB_CaretPosition>
         }
 
-        // <Snippet_RTB_StringFrom>            
+        // <Snippet_RTB_StringFrom>
         string StringFromRichTextBox(RichTextBox rtb)
         {
             TextRange textRange = new TextRange(
                 // TextPointer to the start of content in the RichTextBox.
-                rtb.Document.ContentStart, 
+                rtb.Document.ContentStart,
                 // TextPointer to the end of content in the RichTextBox.
                 rtb.Document.ContentEnd
             );
@@ -103,14 +103,14 @@ namespace RichTextBoxSnippets
             // representing the plain text content of the TextRange.
             return textRange.Text;
         }
-        // </Snippet_RTB_StringFrom>  
+        // </Snippet_RTB_StringFrom>
 
         // <Snippet_TextBox_MouseUpDownHandlers>
         void MouseUpHandler(Object sender, RoutedEventArgs args)
         {
             // This method is called whenever the PreviewMouseUp event fires.
         }
-        
+
         void MouseDownHandler(Object sender, RoutedEventArgs args)
         {
             // This method is called whenever the PreviewMouseDown event fires.

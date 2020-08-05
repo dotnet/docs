@@ -26,6 +26,6 @@ Any program element — such as a variable, class, or member — can have the sa
   
 ## See also
 
-- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
-- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Visual Basic Naming Conventions](naming-conventions.md)
+- [Program Structure and Code Conventions](program-structure-and-code-conventions.md)
+- [Keywords](../../language-reference/keywords/index.md)

@@ -24,4 +24,4 @@ Gets the <xref:System.Web.HttpResponse> object associated with the <xref:System.
 ## See also
 
 - <xref:System.Web.HttpResponse>
-- [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
+- [My.Request Object](my-request-object.md)

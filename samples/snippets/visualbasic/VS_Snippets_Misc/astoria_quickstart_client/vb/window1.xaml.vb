@@ -21,12 +21,12 @@ Class Window1
             ' Define a LINQ query that returns Orders and 
             ' Order_Details for a specific customer.
             Dim ordersQuery = From o In context.Orders.Expand("Order_Details") _
-                                  Where o.Customer.CustomerID = customerId _
-                                  Select o
+                              Where o.Customer.CustomerID = customerId _
+                              Select o
 
             ' Create an DataServiceCollection(Of T) based on
             ' execution of the LINQ query for Orders.
-            Dim customerOrders As DataServiceCollection(Of Order) = New  _
+            Dim customerOrders As DataServiceCollection(Of Order) = New _
                 DataServiceCollection(Of Order)(ordersQuery)
 
             '<snippetWpfDataBindingCodeShort>

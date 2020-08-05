@@ -20,7 +20,7 @@ namespace BidiTest
         {
             InitializeComponent();
 
-            string currentLanguage = 
+            string currentLanguage =
                 System.Globalization.CultureInfo.CurrentCulture.IetfLanguageTag;
 
             text1.Language = System.Windows.Markup.XmlLanguage.GetLanguage(currentLanguage);

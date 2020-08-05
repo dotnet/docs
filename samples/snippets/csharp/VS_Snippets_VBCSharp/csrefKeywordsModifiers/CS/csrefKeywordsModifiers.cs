@@ -7,12 +7,12 @@ using System.Runtime.InteropServices;
 
 namespace csrefKeywordsModifiers
 {
-    //<snippet1>    
+    //<snippet1>
     abstract class Shape
     {
         public abstract int GetArea();
     }
-    
+
     class Square : Shape
     {
         int side;
@@ -22,7 +22,7 @@ namespace csrefKeywordsModifiers
         // GetArea method is required to avoid a compile-time error.
         public override int GetArea() => side * side;
 
-        static void Main() 
+        static void Main()
         {
             var sq = new Square(12);
             Console.WriteLine($"Area of the square = {sq.GetArea()}");
@@ -30,18 +30,19 @@ namespace csrefKeywordsModifiers
     }
     // Output: Area of the square = 144
     //</snippet1>
-    
-    //<snippet2>        
+
+    //<snippet2>
     interface I
     {
         void M();
     }
+    
     abstract class C : I
     {
         public abstract void M();
     }
     //</snippet2>
-        
+
     //<snippet3>
     abstract class BaseClass   // Abstract class
     {
@@ -95,6 +96,7 @@ namespace AccessibilityDomainNamespace
         public static int publicInt;
         internal static int internalInt;
         private static int privateInt = 0;
+        
         static T1()
         {
             // T1 can access public or internal members
@@ -135,7 +137,7 @@ namespace AccessibilityDomainNamespace
             T1.internalInt = 2;
 
             // Error CS0122: inaccessible outside T1.
-            // T1.privateInt = 3;  
+            // T1.privateInt = 3;
 
             // Access is unlimited.
             T1.M1.publicInt = 1;
@@ -144,7 +146,7 @@ namespace AccessibilityDomainNamespace
             T1.M1.internalInt = 2;
 
             // Error CS0122: inaccessible outside M1.
-            //    T1.M1.privateInt = 3; 
+            //    T1.M1.privateInt = 3;
 
             // Error CS0122: inaccessible outside T1.
             //    T1.M2.publicInt = 1;
@@ -165,8 +167,8 @@ namespace AccessibilityDomainNamespace
 
 namespace csrefKeywordsModifiers
 {
-    //<snippet5>       
-    public class ConstTest 
+    //<snippet5>
+    public class ConstTest
     {
         class SampleClass
         {
@@ -175,9 +177,9 @@ namespace csrefKeywordsModifiers
             public const int C1 = 5;
             public const int C2 = C1 + 5;
 
-            public SampleClass(int p1, int p2) 
+            public SampleClass(int p1, int p2)
             {
-                x = p1; 
+                x = p1;
                 y = p2;
             }
         }
@@ -210,10 +212,10 @@ namespace csrefKeywordsModifiers
     //<snippet7>
     public class SampleEventArgs
     {
-        public SampleEventArgs(string s) { Text = s; }
-        public String Text { get; } // readonly
+        public SampleEventArgs(string text) { Text = text; }
+        public string Text { get; } // readonly
     }
-    
+
     public class Publisher
     {
         // Declare the delegate (if using non-generic pattern).
@@ -236,7 +238,7 @@ namespace csrefKeywordsModifiers
     //using System.Runtime.InteropServices;
     class ExternTest
     {
-        [DllImport("User32.dll", CharSet=CharSet.Unicode)] 
+        [DllImport("User32.dll", CharSet=CharSet.Unicode)]
         public static extern int MessageBox(IntPtr h, string m, string c, int type);
 
         static int Main()
@@ -256,7 +258,7 @@ namespace csrefKeywordsModifiers
         {
             public string name;
 
-            // Basepay is defined as protected, so that it may be 
+            // Basepay is defined as protected, so that it may be
             // accessed only by this class and derived classes.
             protected decimal basepay;
 
@@ -282,13 +284,13 @@ namespace csrefKeywordsModifiers
 
             // The constructor calls the base-class version, and
             // initializes the salesbonus field.
-            public SalesEmployee(string name, decimal basepay, 
+            public SalesEmployee(string name, decimal basepay,
                       decimal salesbonus) : base(name, basepay)
             {
                 this.salesbonus = salesbonus;
             }
 
-            // Override the CalculatePay method 
+            // Override the CalculatePay method
             // to take bonus into account.
             public override decimal CalculatePay()
             {
@@ -299,13 +301,13 @@ namespace csrefKeywordsModifiers
         static void Main()
         {
             // Create some new employees.
-            var employee1 = new SalesEmployee("Alice", 
+            var employee1 = new SalesEmployee("Alice",
                           1000, 500);
             var employee2 = new Employee("Bob", 1200);
 
-            Console.WriteLine("Employee4 " + employee1.name + 
+            Console.WriteLine("Employee4 " + employee1.name +
                       " earned: " + employee1.CalculatePay());
-            Console.WriteLine("Employee4 " + employee2.name + 
+            Console.WriteLine("Employee4 " + employee2.name +
                       " earned: " + employee2.CalculatePay());
         }
     }
@@ -368,7 +370,7 @@ namespace csrefKeywordsModifiers
 
             // Error CS1540, because x can only be accessed by
             // classes derived from A.
-            // a.x = 10; 
+            // a.x = 10;
 
             // OK, because this class derives from A.
             b.x = 10;
@@ -377,22 +379,22 @@ namespace csrefKeywordsModifiers
     //</snippet11>
 
     //<snippet12>
-    class Point 
+    class Point
     {
-        protected int x; 
+        protected int x;
         protected int y;
     }
 
-    class DerivedPoint: Point 
+    class DerivedPoint: Point
     {
-        static void Main() 
+        static void Main()
         {
             var dpoint = new DerivedPoint();
 
             // Direct access to protected members.
             dpoint.x = 10;
             dpoint.y = 15;
-            Console.WriteLine($"x = {dpoint.x}, y = {dpoint.y}"); 
+            Console.WriteLine($"x = {dpoint.x}, y = {dpoint.y}");
         }
     }
     // Output: x = 10, y = 15
@@ -401,19 +403,19 @@ namespace csrefKeywordsModifiers
     //<snippet13>
     class PointTest
     {
-        public int x; 
+        public int x;
         public int y;
     }
 
     class MainClass4
     {
-        static void Main() 
+        static void Main()
         {
             var p = new PointTest();
             // Direct access to public members.
             p.x = 10;
             p.y = 15;
-            Console.WriteLine($"x = {p.x}, y = {p.y}"); 
+            Console.WriteLine($"x = {p.x}, y = {p.y}");
         }
     }
     // Output: x = 10, y = 15
@@ -480,13 +482,13 @@ namespace csrefKeywordsModifiers
         protected virtual void F() { Console.WriteLine("X.F"); }
         protected virtual void F2() { Console.WriteLine("X.F2"); }
     }
-    
+
     class Y : X
     {
         sealed protected override void F() { Console.WriteLine("Y.F"); }
         protected override void F2() { Console.WriteLine("Y.F2"); }
     }
-    
+
     class Z : Y
     {
         // Attempting to override F causes compiler error CS0239.
@@ -586,7 +588,7 @@ namespace csrefKeywordsModifiers
     Matthias Berndt
     AF643G
     15
-     * 
+     *
     Sample Output:
     Enter the employee's name: Matthias Berndt
     Enter the employee's ID: AF643G
@@ -648,11 +650,11 @@ namespace csrefKeywordsModifiers
         {
             public const double PI = Math.PI;
             protected double x, y;
-            
+
             public Shape()
             {
             }
-            
+
             public Shape(double x, double y)
             {
                 this.x = x;
@@ -732,7 +734,7 @@ namespace csrefKeywordsModifiers
         }
     }
     //</snippet24>
-    
+
     class UsingTest
     {
         static void Main()
@@ -791,7 +793,7 @@ namespace csrefKeywordsModifiers
                     name = "Unknown";
                 }
             }
-        } 
+        }
     }
-    //</snippet26>       
+    //</snippet26>
 }

@@ -37,7 +37,7 @@ class Program
             Console.WriteLine(" {0}", guidSorted);
         }
         Console.WriteLine("");
-        
+
         // Create an ArrayList of SqlGuids.
         ArrayList sqlGuidList = new ArrayList();
         sqlGuidList.Add(new SqlGuid("3AAAAAAA-BBBB-CCCC-DDDD-2EEEEEEEEEEE"));

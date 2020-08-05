@@ -20,7 +20,7 @@ Specifies that a declared programming element redeclares and hides an identicall
 
 The main purpose of shadowing (which is also known as *hiding by name*) is to preserve the definition of your class members. The base class might undergo a change that creates an element with the same name as one you have already defined. If this happens, the `Shadows` modifier forces references through your class to be resolved to the member you defined, instead of to the new base class element.
 
-Both shadowing and overriding redefine an inherited element, but there are significant differences between the two approaches. For more information, see [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md).
+Both shadowing and overriding redefine an inherited element, but there are significant differences between the two approaches. For more information, see [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md).
 
 ## Rules
 
@@ -40,40 +40,40 @@ Both shadowing and overriding redefine an inherited element, but there are signi
 
 The `Shadows` modifier can be used in these contexts:
 
-- [Class Statement](../../../visual-basic/language-reference/statements/class-statement.md)
+- [Class Statement](../statements/class-statement.md)
 
-- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
+- [Const Statement](../statements/const-statement.md)
 
-- [Declare Statement](../../../visual-basic/language-reference/statements/declare-statement.md)
+- [Declare Statement](../statements/declare-statement.md)
 
-- [Delegate Statement](../../../visual-basic/language-reference/statements/delegate-statement.md)
+- [Delegate Statement](../statements/delegate-statement.md)
 
-- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
+- [Dim Statement](../statements/dim-statement.md)
 
-- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
+- [Enum Statement](../statements/enum-statement.md)
 
-- [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
+- [Event Statement](../statements/event-statement.md)
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Function Statement](../statements/function-statement.md)
 
-- [Interface Statement](../../../visual-basic/language-reference/statements/interface-statement.md)
+- [Interface Statement](../statements/interface-statement.md)
 
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../statements/property-statement.md)
 
-- [Structure Statement](../../../visual-basic/language-reference/statements/structure-statement.md)
+- [Structure Statement](../statements/structure-statement.md)
 
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Sub Statement](../statements/sub-statement.md)
 
 ## See also
 
-- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
-- [Static](../../../visual-basic/language-reference/modifiers/static.md)
-- [Private](../../../visual-basic/language-reference/modifiers/private.md)
-- [Me, My, MyBase, and MyClass](../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
-- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
-- [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)
-- [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)
-- [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)
-- [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)
-- [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)
-- [Shadowing in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
+- [Shared](shared.md)
+- [Static](static.md)
+- [Private](private.md)
+- [Me, My, MyBase, and MyClass](../../programming-guide/program-structure/me-my-mybase-and-myclass.md)
+- [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [MustOverride](mustoverride.md)
+- [NotOverridable](notoverridable.md)
+- [Overloads](overloads.md)
+- [Overridable](overridable.md)
+- [Overrides](overrides.md)
+- [Shadowing in Visual Basic](../../programming-guide/language-features/declared-elements/shadowing.md)

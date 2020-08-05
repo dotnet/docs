@@ -268,7 +268,7 @@ namespace UserInputWalkthrough
             CheckAllChildCheckBoxes(this, true);
         }
 
-        // Recursively search the form for all contained checkboxes and 
+        // Recursively search the form for all contained checkboxes and
         // initially check them
         private void CheckAllChildCheckBoxes(Control parent, bool value)
         {
@@ -390,7 +390,7 @@ namespace UserInputWalkthrough
                         " " + e.Location.ToString());
             }
 
-            // The TextBox control was designed to change focus only on  
+            // The TextBox control was designed to change focus only on
             // the primary click, so force focus to avoid user confusion.
             if (!TextBoxInput.Focused)
             {
@@ -633,8 +633,8 @@ namespace UserInputWalkthrough
             ConfigureCheckBoxSettings();
         }
 
-        // Reconcile dependencies between the check box 
-        // selection choices. 
+        // Reconcile dependencies between the check box
+        // selection choices.
         private void ConfigureCheckBoxSettings()
         {
             // CheckBoxMouse is a top-level check box.

@@ -23,7 +23,7 @@ Gets the value of each register (on the computer that is currently executing cod
   
 ```cpp  
 HRESULT GetRegisters (  
-    [in] ULONG64       mask,   
+    [in] ULONG64       mask,
     [in] ULONG32       regCount,  
     [out, size_is(regCount), length_is(regCount)]  
         CORDB_REGISTER regBuffer[]  
@@ -46,7 +46,7 @@ HRESULT GetRegisters (
  If the bit mask specifies a register that is unavailable, `GetRegisters` returns an indeterminate value for that register.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

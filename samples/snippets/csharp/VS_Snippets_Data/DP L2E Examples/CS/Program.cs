@@ -66,7 +66,7 @@ namespace L2E_ExamplesCS
             /*** Grouping Operators ***/
             //GroupBySimple2();
             //GroupBySimple2_MQ();
-            //GroupBySimple3(); 
+            //GroupBySimple3();
             //GroupBySimple3_MQ();
             //GroupByCount();
            // GroupByCount_MQ();
@@ -85,7 +85,7 @@ namespace L2E_ExamplesCS
             /*** Conversion Operators ***/
             //ToArray();  //Streamlined code
             //ToList();   //Streamlined code
-            //ToDictionary();            
+            //ToDictionary();
 
             /*** Element Operators ***/
             //FirstSimple();
@@ -93,7 +93,7 @@ namespace L2E_ExamplesCS
             //ElementAt();  // ElementAt not supported by L2E.
 
             /*** Quantifier Operators ***/
-            //AnyGrouped_MQ(); 
+            //AnyGrouped_MQ();
             //AllGrouped_MQ();
 
             /*** Aggregate Operators ***/
@@ -101,17 +101,17 @@ namespace L2E_ExamplesCS
             //Average_MQ();
             //Average2_MQ();
             //Count();
-            //CountNested();   
+            //CountNested();
             //CountGrouped();
             //LongCountSimple();
             //SumProjection_MQ();
             //SumGrouped_MQ();
             //MinProjection_MQ();
             //MinGrouped_MQ();
-            //MinElements_MQ(); 
+            //MinElements_MQ();
             //AverageProjection_MQ();
             //AverageGrouped_MQ();
-            //AverageElements_MQ(); 
+            //AverageElements_MQ();
             //MaxProjection_MQ();
             //MaxGrouped_MQ();
             //MaxElements_MQ();
@@ -122,7 +122,7 @@ namespace L2E_ExamplesCS
             //JoinWithGroupedResults_MQ();  //Times out.
             // GroupJoin();
             //GroupJoin_MQ();
-            //GroupJoin2();  
+            //GroupJoin2();
             //GroupJoin2_MQ();
 
             /*** Relationship Navigation***/
@@ -411,7 +411,7 @@ namespace L2E_ExamplesCS
                  {
                      Console.WriteLine("SalesOrderID: " + smallOrder);
                  }
-                
+
              }*/
             // </SnippetSelectMany1_MQ>
         }
@@ -424,13 +424,13 @@ namespace L2E_ExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 string LastName = "Zhou";
-                var query = from contact in context.Contacts where 
+                var query = from contact in context.Contacts where
                                 contact.LastName == LastName select contact;
 
                 // Iterate through the collection of Contact items.
                 foreach( var result in query)
                 {
-                    Console.WriteLine("Contact First Name: {0}; Last Name: {1}", 
+                    Console.WriteLine("Contact First Name: {0}; Last Name: {1}",
                             result.FirstName, result.LastName);
                 }
             }
@@ -777,7 +777,7 @@ namespace L2E_ExamplesCS
 
         static void SkipWhileSimple_MQ()
         {
-            // SkipWhile not supported in L2E. 
+            // SkipWhile not supported in L2E.
             /* using (AdventureWorksEntities context = new AdventureWorksEntities())
              {
                  ObjectSet<Product> products = context.Products;
@@ -1057,7 +1057,7 @@ namespace L2E_ExamplesCS
                 var query =
                     from address in context.Addresses
                     group address by address.PostalCode into addressGroup
-                    select new { PostalCode = addressGroup.Key, 
+                    select new { PostalCode = addressGroup.Key,
                                  AddressLine = addressGroup };
 
                 foreach (var addressGroup in query)
@@ -1079,8 +1079,8 @@ namespace L2E_ExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 var query = context.Addresses
-                    .GroupBy( address => address.PostalCode);                     
-                    
+                    .GroupBy( address => address.PostalCode);
+
                 foreach (IGrouping<string, Address> addressGroup in query)
                 {
                     Console.WriteLine("Postal Code: {0}", addressGroup.Key);
@@ -1100,8 +1100,8 @@ namespace L2E_ExamplesCS
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 var query = from order in context.SalesOrderHeaders
-                            group order by order.CustomerID into idGroup 
-                            select new {CustomerID = idGroup.Key, 
+                            group order by order.CustomerID into idGroup
+                            select new {CustomerID = idGroup.Key,
                                 OrderCount = idGroup.Count(),
                                 Sales = idGroup};
 
@@ -1128,7 +1128,7 @@ namespace L2E_ExamplesCS
             {
                 var query = context.SalesOrderHeaders
                     .GroupBy(order => order.CustomerID);
-                    
+
                 foreach (IGrouping<int, SalesOrderHeader> group in query)
                 {
                     Console.WriteLine("Customer ID: {0}", group.Key);
@@ -1138,7 +1138,7 @@ namespace L2E_ExamplesCS
                     {
                         Console.WriteLine("   Sale ID: {0}", sale.SalesOrderID);
                     }
-                    Console.WriteLine("");                    
+                    Console.WriteLine("");
                 }
             }
             //</SnippetGroupByCount_MQ>
@@ -1290,7 +1290,7 @@ namespace L2E_ExamplesCS
         {
             // <SnippetUnion1_MQ>
             string title = "Ms.";
-            string firstName = "Sandra"; 
+            string firstName = "Sandra";
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 IQueryable<Contact> query1 = context.Contacts
@@ -1316,7 +1316,7 @@ namespace L2E_ExamplesCS
         {
             // <SnippetIntersect1>
             string title = "Ms.";
-            string firstName = "Sandra"; 
+            string firstName = "Sandra";
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 ObjectSet<Contact> contact = context.Contacts;
@@ -1346,7 +1346,7 @@ namespace L2E_ExamplesCS
         {
             // <SnippetIntersect1_MQ>
             string title = "Ms.";
-            string firstName = "Sandra"; 
+            string firstName = "Sandra";
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
                 ObjectSet<Contact> contact = context.Contacts;
@@ -2123,7 +2123,7 @@ namespace L2E_ExamplesCS
                 ObjectSet<Contact> contacts = context.Contacts;
                 ObjectSet<SalesOrderHeader> orders = context.SalesOrderHeaders;
 
-                var query = contacts.GroupJoin(orders, 
+                var query = contacts.GroupJoin(orders,
                     contact => contact.ContactID,
                     order => order.Contact.ContactID,
                     (contact, contactGroup) => new
@@ -2184,7 +2184,7 @@ namespace L2E_ExamplesCS
                 ObjectSet<SalesOrderHeader> orders = context.SalesOrderHeaders;
                 ObjectSet<SalesOrderDetail> details = context.SalesOrderDetails;
 
-                var query = orders.GroupJoin(details, 
+                var query = orders.GroupJoin(details,
                     order => order.SalesOrderID,
                     detail => detail.SalesOrderID,
                     (order, orderGroup) => new
@@ -2350,7 +2350,7 @@ namespace L2E_ExamplesCS
                     Console.WriteLine("");
                 }
             }
-            //</SnippetGetOrderInfoThruRelationships>         
+            //</SnippetGetOrderInfoThruRelationships>
         }
 
         static void GetOrderInfoThruRelationships_MQ()
@@ -2379,7 +2379,7 @@ namespace L2E_ExamplesCS
                     Console.WriteLine("");
                 }
             }
-            //</SnippetGetOrderInfoThruRelationships_MQ>         
+            //</SnippetGetOrderInfoThruRelationships_MQ>
         }
         #endregion
 

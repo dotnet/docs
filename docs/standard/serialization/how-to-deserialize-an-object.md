@@ -1,5 +1,6 @@
 ---
 title: How to deserialize an object using XmlSerializer
+description: Learn how to deserialize an object. The transport format determines whether to create a stream or file object. 
 ms.date: 03/30/2017
 dev_langs: 
   - "csharp"

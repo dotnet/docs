@@ -28,7 +28,7 @@ makecert -sr LocalMachine -ss My -n CN=ServiceModelSamples-HTTPS-Server -sky exc
   
 5. Complete the wizard. Select the option to assign a certificate. Select the ServiceModelSamples-HTTPS-Server certificate from the list of certificates that are displayed.  
   
-     ![IIS Certificate Wizard](../../../../docs/framework/wcf/samples/media/iiscertificate-wizard.GIF "IISCertificate_Wizard")  
+     ![IIS Certificate Wizard](media/iiscertificate-wizard.GIF "IISCertificate_Wizard")  
   
 6. Test access to the service in a browser by using the HTTPS address `https://localhost/servicemodelsamples/service.svc`.  
   

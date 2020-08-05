@@ -18,9 +18,9 @@ In a <xref:System.Data.DataSet>, you form an association between two or more col
 ```xml  
 <xs:element name="Order">  
   <xs:complexType>  
-     <xs:sequence>          
+     <xs:sequence>
        <xs:element name="OrderDetail" />  
-           <xs:complexType>               
+           <xs:complexType>
            </xs:complexType>  
      </xs:sequence>  
   </xs:complexType>  
@@ -33,10 +33,10 @@ In a <xref:System.Data.DataSet>, you form an association between two or more col
  The **msdata:Relationship** annotation allows you to explicitly specify parent-child relationships between elements in the schema that are not nested. The following example shows the structure of the **Relationship** element.  
   
 ```xml  
-<msdata:Relationship name="CustOrderRelationship"    
-msdata:parent=""    
-msdata:child=""    
-msdata:parentkey=""    
+<msdata:Relationship name="CustOrderRelationship"
+msdata:parent=""
+msdata:child=""
+msdata:parentkey=""
 msdata:childkey="" />  
 ```  
   
@@ -65,7 +65,7 @@ msdata:childkey="" />
      <xs:appinfo>  
        <msdata:Relationship name="OrdOrdDetailRelation"  
           msdata:parent="Order"  
-          msdata:child="OrderDetail"   
+          msdata:child="OrderDetail"
           msdata:parentkey="OrderNumber"  
           msdata:childkey="OrderNo"/>  
      </xs:appinfo>  

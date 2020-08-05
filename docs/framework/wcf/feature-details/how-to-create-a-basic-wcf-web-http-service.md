@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Basic WCF Web HTTP Service"
+description: Learn how to create a service that exposes a web endpoint in WCF. Web endpoints send data by using XML or JSON. There is no SOAP envelope.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Specifying an Assembly's Location"
+description: See how to specify the location of an assembly in .NET by using the codeBase element or the probing element in an XML configuration file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "configuration [.NET Framework], applications"
@@ -62,6 +63,6 @@ There are two ways to specify an assembly's location:
 ## See also
 
 - [Assemblies in .NET](../../standard/assembly/index.md)
-- [Programming with Assemblies](../../standard/assembly/program.md)
+- [Programming with Assemblies](../../standard/assembly/index.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps by using Configuration Files](index.md)

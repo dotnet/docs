@@ -12,7 +12,7 @@ Microsoft believes that it's no longer safe to decrypt data encrypted with the C
 
 A padding oracle attack is a type of attack against encrypted data that allows the attacker to decrypt the contents of the data, without knowing the key.
 
-An oracle refers to a "tell" which gives an attacker information about whether the action they're executing is correct or not. Imagine playing a board or card game with a child. When her face lights up with a big smile because she thinks she's about to make a good move, that's an oracle. You, as the opponent, can use this oracle to plan your next move appropriately.
+An oracle refers to a "tell" which gives an attacker information about whether the action they're executing is correct or not. Imagine playing a board or card game with a child. When their face lights up with a big smile because they think they're about to make a good move, that's an oracle. You, as the opponent, can use this oracle to plan your next move appropriately.
 
 Padding is a specific cryptographic term. Some ciphers, which are the algorithms used to encrypt your data, work on blocks of data where each block is a fixed size. If the data you want to encrypt isn't the right size to fill the blocks, your data is padded until it does. Many forms of padding require that padding to always be present, even if the original input was of the right size. This allows the padding to always be safely removed upon decryption.
 

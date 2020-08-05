@@ -2,22 +2,22 @@
  *
  * File: FindByAutomationID.xaml.cs
  *
- * Description: 
- * 
- * 
+ * Description:
+ *
+ *
  *  This file is part of the Microsoft WinfFX SDK Code Samples.
- * 
+ *
  *  Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
- * 
+ *
  * THIS CODE AND INFORMATION ARE PROVIDED AS IS WITHOUT WARRANTY OF ANY
  * KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
  * PARTICULAR PURPOSE.
- * 
+ *
  *****************************************************************************/
 
 using System;
@@ -63,7 +63,7 @@ namespace UIAAutomationID_snip
         ///--------------------------------------------------------------------
         public FindByAutomationID(AutomationElement target)
         {
-            InitializeComponent();            
+            InitializeComponent();
         }
 
         ///--------------------------------------------------------------------
@@ -73,7 +73,7 @@ namespace UIAAutomationID_snip
         /// <param name="src">Object that raised the event.</param>
         /// <param name="e">Event arguments.</param>
         /// <remarks>
-        /// Starts the target application, initializes the queue, and 
+        /// Starts the target application, initializes the queue, and
         /// registers for events of interest.
         /// </remarks>
         ///--------------------------------------------------------------------
@@ -86,7 +86,7 @@ namespace UIAAutomationID_snip
             }
             btnStartTarget.IsEnabled = false;
         }
-        
+
         private void StartRecording(object src, RoutedEventArgs e)
         {
 
@@ -130,7 +130,7 @@ namespace UIAAutomationID_snip
             //focusTracker.RemoveAutomationFocusChangedEventHandler();
             //Thread.Sleep(5000);
             //focusTracker.Dispose();
-            
+
             //AppForm.Invoke(new MethodInvoker(delegate()
             //{
             //    AppForm.OutputResults(outputStr + Environment.NewLine);
@@ -188,15 +188,15 @@ namespace UIAAutomationID_snip
                 switch (automationPattern.ProgrammaticName)
                 {
                     case "ScrollPatternIdentifiers.Pattern":
-                        AutomationPropertyChangedEventHandler targetScrollListener = 
+                        AutomationPropertyChangedEventHandler targetScrollListener =
                             new AutomationPropertyChangedEventHandler(OnTargetScrolled);
                         Automation.AddAutomationPropertyChangedEventHandler(
-                            focusedElement, 
-                            TreeScope.Element, 
+                            focusedElement,
+                            TreeScope.Element,
                             targetScrollListener,
                             ScrollPattern.HorizontallyScrollableProperty);
-                        Automation.AddAutomationPropertyChangedEventHandler(focusedElement, 
-                            TreeScope.Element, 
+                        Automation.AddAutomationPropertyChangedEventHandler(focusedElement,
+                            TreeScope.Element,
                             targetScrollListener,
                             ScrollPattern.VerticalScrollPercentProperty);
                         break;
@@ -209,7 +209,7 @@ namespace UIAAutomationID_snip
                     case "RangeValuePatternIdentifiers.Pattern":
                         AutomationPropertyChangedEventHandler targetRangeValueChangeListener =
                             new AutomationPropertyChangedEventHandler(OnRangeValueChange);
-                        Automation.AddAutomationPropertyChangedEventHandler(focusedElement, 
+                        Automation.AddAutomationPropertyChangedEventHandler(focusedElement,
                             TreeScope.Element, targetRangeValueChangeListener, RangeValuePattern.ValueProperty);
                         break;
                     default:
@@ -285,11 +285,11 @@ namespace UIAAutomationID_snip
         /// The AutomationID value of interest.
         /// </param>
         /// <returns>
-        /// The collection of UI Automation elements that have the specified 
+        /// The collection of UI Automation elements that have the specified
         /// AutomationID value.
         /// </returns>
         ///--------------------------------------------------------------------
-        private AutomationElementCollection FindElementFromAutomationID(AutomationElement targetApp, 
+        private AutomationElementCollection FindElementFromAutomationID(AutomationElement targetApp,
             string automationID)
         {
             return targetApp.FindAll(
@@ -318,8 +318,8 @@ namespace UIAAutomationID_snip
 
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Function to start UI Automation tasks on a separate thread. 
-        /// This is the best practice when the application may be 
+        /// Function to start UI Automation tasks on a separate thread.
+        /// This is the best practice when the application may be
         /// attempting to access its own UI.
         /// </summary>
         ///--------------------------------------------------------------------
@@ -337,7 +337,7 @@ namespace UIAAutomationID_snip
         /// <param name="sender">Object that raised the event.</param>
         /// <param name="e">Event arguments.</param>
         /// <remarks>
-        /// UI Automation must be called on a separate thread if the client 
+        /// UI Automation must be called on a separate thread if the client
         /// application itself could become a target for event handling.
         /// For example, focus tracking is a desktop event that could involve
         /// the client application.
@@ -353,7 +353,7 @@ namespace UIAAutomationID_snip
 
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Delegated method for ThreadStart. Creates a UI Automation worker 
+        /// Delegated method for ThreadStart. Creates a UI Automation worker
         /// class that does all UI Automation related work.
         /// </summary>
         ///--------------------------------------------------------------------
@@ -372,39 +372,39 @@ namespace UIAAutomationID_snip
         /// a WriteToScript function for each event of interest.
         /// </summary>
         /// <remarks>
-        /// A major drawback to using AutomationID for recording user 
-        /// interactions in a volatile UI is the probability of catastrophic 
-        /// change in the UI. For example, the //Processes// dialog where items 
+        /// A major drawback to using AutomationID for recording user
+        /// interactions in a volatile UI is the probability of catastrophic
+        /// change in the UI. For example, the //Processes// dialog where items
         /// in the listbox container can change with no input from the user.
-        /// This mandates thtat a record and playback application must be 
-        /// reliant on the tester owning the UI being tested. In other words, 
-        /// there has to be a contract between the provider and client that 
-        /// excludes uncontrolled, external applications. The added benefit 
+        /// This mandates thtat a record and playback application must be
+        /// reliant on the tester owning the UI being tested. In other words,
+        /// there has to be a contract between the provider and client that
+        /// excludes uncontrolled, external applications. The added benefit
         /// is the guarantee that each control in the UI should have an
         /// AutomationID assigned to it.
-        /// 
+        ///
         /// This function relies on a UI Automation worker class to create
-        /// the System.Collections.Generic.Queue object that stores the 
+        /// the System.Collections.Generic.Queue object that stores the
         /// information for the recorded user interactions. This
         /// allows post-processing of the recorded items prior to actually
-        /// writing them to a script. If this is not necessary the interaction 
+        /// writing them to a script. If this is not necessary the interaction
         /// could be written to the script immediately.
         /// </remarks>
         ///--------------------------------------------------------------------
         private void Playback(AutomationElement targetApp)
         {
-            AutomationElement element; 
+            AutomationElement element;
             foreach(ElementStore storedItem in uiautoWorker.elementQueue)
             {
-                PropertyCondition propertyCondition = 
+                PropertyCondition propertyCondition =
                     new PropertyCondition(
                     AutomationElement.AutomationIdProperty, storedItem.AutomationID);
                 // Confirm the existence of a control.
                 // Depending on the controls and complexity of interaction
-                // this step may not be necessary or may require additional 
-                // functionality. For example, to confirm the existence of a 
-                // child menu item that had been invoked the parent menu item 
-                // would have to be expanded. 
+                // this step may not be necessary or may require additional
+                // functionality. For example, to confirm the existence of a
+                // child menu item that had been invoked the parent menu item
+                // would have to be expanded.
                 element = targetApp.FindFirst(TreeScope.Descendants, propertyCondition);
                 if(element == null)
                 {
@@ -418,7 +418,7 @@ namespace UIAAutomationID_snip
 
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Generates script code and outputs the code to a text control in 
+        /// Generates script code and outputs the code to a text control in
         /// the client.
         /// </summary>
         /// <param name="automationID">
@@ -484,11 +484,11 @@ namespace UIAAutomationID_snip
             try
             {
                 // Start target application.
-ProcessStartInfo startInfo = 
+ProcessStartInfo startInfo =
     new ProcessStartInfo(System.Windows.Forms.Application.StartupPath + "\\target.exe");
             startInfo.WindowStyle = ProcessWindowStyle.Normal;
             startInfo.UseShellExecute = true;
-            
+
             Process p = Process.Start(startInfo);
 
                 // Give the target application some time to startup.
@@ -506,5 +506,5 @@ ProcessStartInfo startInfo =
                 return null;
             }
         }
-    }    
+    }
 }

@@ -1,5 +1,6 @@
 ---
 title: "Windows Communication Foundation Architecture"
+description: Learn about the major layers of the Windows Communication Foundation architecture, including contracts, service runtime, messaging, and activation & hosting.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Communication Foundation [WCF], architecture"

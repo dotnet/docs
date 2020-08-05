@@ -13,7 +13,7 @@ namespace SDKSamples
         public Window1()
         {
             InitializeComponent();
- 
+
             // Instantiating UIElements.
             DockPanel mainPanel = new DockPanel();
             Menu mainMenu = new Menu();

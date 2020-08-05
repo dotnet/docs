@@ -37,7 +37,7 @@ At any given time at medium and large companies there may be multiple printers t
   
 - You can read each relevant property such as <xref:System.Printing.PrintQueue.IsOutOfPaper%2A>, and <xref:System.Printing.PrintQueue.IsPaperJammed%2A>.  
   
- This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "y" if he or she wanted to use the flags of the <xref:System.Printing.PrintQueue.QueueStatus%2A> property. See below for the details of the two methods.  
+ This example demonstrates both methods, so the user was previously prompted as to which method to use and responded with "y" if they wanted to use the flags of the <xref:System.Printing.PrintQueue.QueueStatus%2A> property. See below for the details of the two methods.  
   
  Finally, the results are presented to the user.  
   

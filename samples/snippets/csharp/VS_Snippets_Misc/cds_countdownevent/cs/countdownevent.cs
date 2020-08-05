@@ -121,7 +121,7 @@ namespace CDSCountdownEvent
         static void Main(string[] args)
         {
             EventWithCancel();
-            
+
             Console.WriteLine("Press enter to exit.");
             Console.ReadLine();
         }
@@ -182,7 +182,7 @@ namespace CDSCountdownEvent
                 e.Dispose();
                 cts.Dispose();
             }
-            //... 
+            //...
             //</snippet04>
         } //end method
     } //end class
@@ -243,7 +243,7 @@ namespace CDSCountdownEvent
                 ss.Dispose();
                 cts.Dispose();
             }
-            //... 
+            //...
             //</snippet03>
         } //end method
     } //end class

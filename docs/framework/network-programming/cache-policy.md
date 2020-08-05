@@ -1,5 +1,6 @@
 ---
 title: "Cache Policy"
+description: Learn about cache policy, the rules that determine whether a request can be satisfied using a cached copy of the requested resource.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "time-based cache policies"

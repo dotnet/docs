@@ -1,5 +1,6 @@
 ---
 title: "Sockets"
+description: Learn about the .NET Framework Socket class, which is a managed-code version of the socket services provided by the Winsock32 API.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application protocols, sockets"

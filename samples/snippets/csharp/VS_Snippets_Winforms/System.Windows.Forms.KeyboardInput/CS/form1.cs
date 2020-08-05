@@ -104,7 +104,7 @@ namespace KeyboardInput
                         MessageBox.Show("Control.PreProcessMessage: '" +
                           keyCode.ToString() + "' pressed.");
 
-                        // Replace F3 with F1, so that ProcessKeyMessage will  
+                        // Replace F3 with F1, so that ProcessKeyMessage will
                         // receive F1 instead of F3.
                         if (keyCode == Keys.F3)
                         {

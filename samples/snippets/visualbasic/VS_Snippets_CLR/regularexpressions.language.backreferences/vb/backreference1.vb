@@ -5,14 +5,14 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim pattern As String = "(\w)\1"
-      Dim input As String = "trellis llama webbing dresser swagger"
-      For Each match As Match In Regex.Matches(input, pattern)
-         Console.WriteLine("Found '{0}' at position {1}.", _
-                           match.Value, match.Index)
-      Next   
-   End Sub
+    Public Sub Main()
+        Dim pattern As String = "(\w)\1"
+        Dim input As String = "trellis llama webbing dresser swagger"
+        For Each match As Match In Regex.Matches(input, pattern)
+            Console.WriteLine("Found '{0}' at position {1}.", _
+                              match.Value, match.Index)
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       Found 'll' at position 3.

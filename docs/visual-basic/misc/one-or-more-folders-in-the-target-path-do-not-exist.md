@@ -12,4 +12,4 @@ One or more of the directories supplied in the target path do not exist. This ma
   
 ## See also
 
-- [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)
+- [How to: Parse File Paths](../developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)

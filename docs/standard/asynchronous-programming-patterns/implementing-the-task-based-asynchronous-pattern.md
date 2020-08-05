@@ -1,5 +1,6 @@
 ---
 title: "Implementing the Task-based Asynchronous Pattern"
+description: This article explains how to implement the Task-based Asynchronous Pattern. You can use it to implement compute-bound and I/O-bound asynchronous operations.
 ms.date: "06/14/2017"
 dev_langs: 
   - "csharp"
@@ -18,7 +19,7 @@ You can implement the Task-based Asynchronous Pattern (TAP) in three ways: by us
 ## Generating TAP methods
 
 ### Using the compilers
-Starting with .NET Framework 4.5, any method that is attributed with the `async` keyword (`Async` in Visual Basic) is considered an asynchronous method, and the C# and Visual Basic compilers perform the necessary transformations to implement the method asynchronously by using TAP. An asynchronous method should return either a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> or a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> object. For the latter, the body of the function should return a `TResult`, and the compiler ensures that this result is made available through the resulting task object. Similarly, any exceptions that go unhandled within the body of the method are marshaled to the output task and cause the resulting task to end in the <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType> state. The exception is when an <xref:System.OperationCanceledException> (or derived type) goes unhandled, in which case the resulting task ends in the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.
+Starting with .NET Framework 4.5, any method that is attributed with the `async` keyword (`Async` in Visual Basic) is considered an asynchronous method, and the C# and Visual Basic compilers perform the necessary transformations to implement the method asynchronously by using TAP. An asynchronous method should return either a <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> or a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType> object. For the latter, the body of the function should return a `TResult`, and the compiler ensures that this result is made available through the resulting task object. Similarly, any exceptions that go unhandled within the body of the method are marshaled to the output task and cause the resulting task to end in the <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=nameWithType> state. The exception to this rule is when an <xref:System.OperationCanceledException> (or derived type) goes unhandled, in which case the resulting task ends in the <xref:System.Threading.Tasks.TaskStatus.Canceled?displayProperty=nameWithType> state.
 
 ### Generating TAP methods manually
 You may implement the TAP pattern manually for better control over implementation. The compiler relies on the public surface area exposed from the <xref:System.Threading.Tasks?displayProperty=nameWithType> namespace and supporting types in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace. To implement the TAP yourself, you create a <xref:System.Threading.Tasks.TaskCompletionSource%601> object, perform the asynchronous operation, and when it completes, call the <xref:System.Threading.Tasks.TaskCompletionSource%601.SetResult%2A>, <xref:System.Threading.Tasks.TaskCompletionSource%601.SetException%2A>, or <xref:System.Threading.Tasks.TaskCompletionSource%601.SetCanceled%2A> method, or the `Try` version of one of these methods. When you implement a TAP method manually, you must complete the resulting task when the represented asynchronous operation completes. For example:
@@ -91,10 +92,10 @@ Asynchronous methods are not limited to just compute-bound or I/O-bound operatio
 [!code-csharp[Conceptual.TAP_Patterns#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.tap_patterns/cs/patterns1.cs#7)]
 [!code-vb[Conceptual.TAP_Patterns#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.tap_patterns/vb/patterns1.vb#7)]
 
-This example also demonstrates how a single cancellation token may be threaded through multiple asynchronous operations. For more information, see the cancellation usage section in [Consuming the Task-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
+This example also demonstrates how a single cancellation token may be threaded through multiple asynchronous operations. For more information, see the cancellation usage section in [Consuming the Task-based Asynchronous Pattern](consuming-the-task-based-asynchronous-pattern.md).
 
 ## See also
 
-- [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)
-- [Consuming the Task-based Asynchronous Pattern](../../../docs/standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md)
-- [Interop with Other Asynchronous Patterns and Types](../../../docs/standard/asynchronous-programming-patterns/interop-with-other-asynchronous-patterns-and-types.md)
+- [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md)
+- [Consuming the Task-based Asynchronous Pattern](consuming-the-task-based-asynchronous-pattern.md)
+- [Interop with Other Asynchronous Patterns and Types](interop-with-other-asynchronous-patterns-and-types.md)

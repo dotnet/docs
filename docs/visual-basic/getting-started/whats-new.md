@@ -36,7 +36,7 @@ Visual Basic / Visual Studio 2015\
 For new features, see [Visual Basic 14](#visual-basic-14).
 
 Visual Basic / Visual Studio 2013\
-Technology previews of the .NET Compiler Platform (“Roslyn”)
+Technology previews of the .NET Compiler Platform ("Roslyn")
 
 Visual Basic / Visual Studio 2012\
 `Async` and `await` keywords, iterators, caller info attributes
@@ -180,7 +180,7 @@ For more information, see the "Literal assignments" section of the [Byte](../lan
 
 Starting with C# 7.0, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
 
-For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that the caller can not only read the returned value; he or she can also modify it, and that modification is reflected in the `Sentence` class.
+For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that in addition to reading the returned value, the caller can also modify it, and that modification is reflected in the `Sentence` class.
 
 [!code-csharp[Ref-Return](../../../samples/snippets/visualbasic/getting-started/ref-returns.cs)]
 
@@ -204,7 +204,7 @@ For more information, see [Reference Return Values](../programming-guide/languag
 
 You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.
 
-[String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
+[String interpolation](../programming-guide/language-features/strings/interpolated-strings.md)
 
 You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-formatting.md).
 
@@ -212,7 +212,7 @@ You can use string interpolation expressions to construct strings.  An interpola
 
 You can test for null in a very light syntactic way before performing a member access (`?.`) or index (`?[]`) operation.  These operators help you write less code to handle null checks, especially for descending into data structures.  If the left operand or object reference is null, the operations returns null.
 
-[Multi-line string literals](../../visual-basic/programming-guide/language-features/strings/string-basics.md)
+[Multi-line string literals](../programming-guide/language-features/strings/string-basics.md)
 
 String literals can contain newline sequences.  You no longer need the old work around of using `<xml><![CDATA[...text with newlines...]]></xml>.Value`
 
@@ -232,11 +232,11 @@ You can have date literals in yyyy-mm-dd format, `#2015-03-17 16:10 PM#`.
 
 You can implement readonly interface properties using a readwrite property. The interface guarantees minimum functionality, and it does not stop an implementing class from allowing the property to be set.
 
-[TypeOf \<expr> IsNot \<type>](../../visual-basic/language-reference/operators/typeof-operator.md)
+[TypeOf \<expr> IsNot \<type>](../language-reference/operators/typeof-operator.md)
 
 For more readability of your code, you can now use `TypeOf` with `IsNot`.
 
-[#Disable Warning \<ID> and #Enable Warning \<ID>](../../visual-basic/language-reference/directives/index.md)
+[#Disable Warning \<ID> and #Enable Warning \<ID>](../language-reference/directives/index.md)
 
 You can disable and enable specific warnings for regions within a source file.
 
@@ -244,15 +244,15 @@ You can disable and enable specific warnings for regions within a source file.
 
 When writing doc comments, you get smart editor and build support for validating parameter names, proper handling of `crefs` (generics, operators, etc.), colorizing, and refactoring.
 
-[Partial module and interface definitions](../../visual-basic/language-reference/modifiers/partial.md)
+[Partial module and interface definitions](../language-reference/modifiers/partial.md)
 
 In addition to classes and structs, you can declare partial modules and interfaces.
 
-[#Region directives inside method bodies](../../visual-basic/language-reference/directives/region-directive.md)
+[#Region directives inside method bodies](../language-reference/directives/region-directive.md)
 
 You can put #Region…#End Region delimiters anywhere in a file, inside functions, and even spanning across function bodies.
 
-[Overrides definitions are implicitly overloads](../../visual-basic/language-reference/modifiers/overrides.md)
+[Overrides definitions are implicitly overloads](../language-reference/modifiers/overrides.md)
 
 If you add the `Overrides` modifier to a definition, the compiler implicitly adds `Overloads` so that you can type less code in common cases.
 

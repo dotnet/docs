@@ -56,13 +56,13 @@ Next [ element ]
 Use a `For Each`...`Next` loop when you want to repeat a set of statements for each element of a collection or array.
 
 > [!TIP]
-> A [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md) works well when you can associate each iteration of a loop with a control variable and determine that variable's initial and final values. However, when you are dealing with a collection, the concept of initial and final values isn't meaningful, and you don't necessarily know how many elements the collection has. In this kind of case, a `For Each`...`Next` loop is often a better choice.
+> A [For...Next Statement](for-next-statement.md) works well when you can associate each iteration of a loop with a control variable and determine that variable's initial and final values. However, when you are dealing with a collection, the concept of initial and final values isn't meaningful, and you don't necessarily know how many elements the collection has. In this kind of case, a `For Each`...`Next` loop is often a better choice.
 
 In the following example, the `For Each`…`Next` statement iterates through all the elements of a List collection.
 
 [!code-vb[VbVbalrStatements#121](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#121)]
 
-For more examples, see [Collections](../../../standard/collections/index.md) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).
+For more examples, see [Collections](../../../standard/collections/index.md) and [Arrays](../../programming-guide/language-features/arrays/index.md).
 
 ## Nested Loops
 
@@ -74,13 +74,13 @@ The following example demonstrates nested `For Each`…`Next` structures.
 
 When you nest loops, each loop must have a unique `element` variable.
 
-You can also nest different kinds of control structures within each other. For more information, see [Nested Control Structures](../../../visual-basic/programming-guide/language-features/control-flow/nested-control-structures.md).
+You can also nest different kinds of control structures within each other. For more information, see [Nested Control Structures](../../programming-guide/language-features/control-flow/nested-control-structures.md).
 
 ## Exit For and Continue For
 
-The [Exit For](../../../visual-basic/language-reference/statements/exit-statement.md) statement causes execution to exit the `For`…`Next` loop and transfers control to the statement that follows the `Next` statement.
+The [Exit For](exit-statement.md) statement causes execution to exit the `For`…`Next` loop and transfers control to the statement that follows the `Next` statement.
 
-The `Continue For` statement transfers control immediately to the next iteration of the loop. For more information, see [Continue Statement](../../../visual-basic/language-reference/statements/continue-statement.md).
+The `Continue For` statement transfers control immediately to the next iteration of the loop. For more information, see [Continue Statement](continue-statement.md).
 
 The following example shows how to use the `Continue For` and `Exit For` statements.
 
@@ -94,7 +94,7 @@ You can put any number of `Exit For` statements in a `For Each` loop. When used 
 
 - An exception is caught in a `Try`...`Catch`...`Finally`. You might use `Exit For` at the end of the `Finally` block.
 
-- There an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md).
+- There an endless loop, which is a loop that could run a large or even infinite number of times. If you detect such a condition, you can use `Exit For` to escape the loop. For more information, see [Do...Loop Statement](do-loop-statement.md).
 
 ## Iterators
 
@@ -102,11 +102,11 @@ You use an *iterator* to perform a custom iteration over a collection. An iterat
 
 You call an iterator by using a `For Each...Next` statement. Each iteration of the `For Each` loop calls the iterator. When a `Yield` statement is reached in the iterator, the expression in the `Yield` statement is returned, and the current location in code is retained. Execution is restarted from that location the next time that the iterator is called.
 
-The following example uses an iterator function. The iterator function has a `Yield` statement that's inside a [For…Next](../../../visual-basic/language-reference/statements/for-next-statement.md) loop. In the `ListEvenNumbers` method, each iteration of the `For Each` statement body creates a call to the iterator function, which proceeds to the next `Yield` statement.
+The following example uses an iterator function. The iterator function has a `Yield` statement that's inside a [For…Next](for-next-statement.md) loop. In the `ListEvenNumbers` method, each iteration of the `For Each` statement body creates a call to the iterator function, which proceeds to the next `Yield` statement.
 
 [!code-vb[VbVbalrStatements#127](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class9.vb#127)]
 
-For more information, see [Iterators](../../programming-guide/concepts/iterators.md), [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md), and [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).
+For more information, see [Iterators](../../programming-guide/concepts/iterators.md), [Yield Statement](yield-statement.md), and [Iterator](../modifiers/iterator.md).
 
 ## Technical Implementation
 
@@ -146,7 +146,7 @@ Each time Visual Basic encounters the `Next` statement, it returns to the `For E
 
 However, this blocking of modification isn't determined by Visual Basic, but rather by the implementation of the <xref:System.Collections.IEnumerable> interface. It is possible to implement `IEnumerable` in a way that allows for modification during iteration. If you are considering doing such dynamic modification, make sure that you understand the characteristics of the `IEnumerable` implementation on the collection you are using.
 
-**Modifying Collection Elements.** The <xref:System.Collections.IEnumerator.Current%2A> property of the enumerator object is [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md), and it returns a local copy of each collection element. This means that you cannot modify the elements themselves in a `For Each`...`Next` loop. Any modification you make affects only the local copy from `Current` and isn't reflected back into the underlying collection. However, if an element is a reference type, you can modify the members of the instance to which it points. The following example modifies the `BackColor` member of each `thisControl` element. You cannot, however, modify `thisControl` itself.
+**Modifying Collection Elements.** The <xref:System.Collections.IEnumerator.Current%2A> property of the enumerator object is [ReadOnly](../modifiers/readonly.md), and it returns a local copy of each collection element. This means that you cannot modify the elements themselves in a `For Each`...`Next` loop. Any modification you make affects only the local copy from `Current` and isn't reflected back into the underlying collection. However, if an element is a reference type, you can modify the members of the instance to which it points. The following example modifies the `BackColor` member of each `thisControl` element. You cannot, however, modify `thisControl` itself.
 
 ```vb
 Sub LightBlueBackground(thisForm As System.Windows.Forms.Form)
@@ -179,11 +179,11 @@ In the `ListCars` method, the `cars.Sort()` statement sorts the list. This call 
 ## See also
 
 - [Collections](../../../standard/collections/index.md)
-- [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)
-- [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)
-- [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)
-- [Do...Loop Statement](../../../visual-basic/language-reference/statements/do-loop-statement.md)
-- [Widening and Narrowing Conversions](../../../visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
-- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Collection Initializers](../../../visual-basic/programming-guide/language-features/collection-initializers/index.md)
-- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
+- [For...Next Statement](for-next-statement.md)
+- [Loop Structures](../../programming-guide/language-features/control-flow/loop-structures.md)
+- [While...End While Statement](while-end-while-statement.md)
+- [Do...Loop Statement](do-loop-statement.md)
+- [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md)
+- [Object Initializers: Named and Anonymous Types](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [Collection Initializers](../../programming-guide/language-features/collection-initializers/index.md)
+- [Arrays](../../programming-guide/language-features/arrays/index.md)

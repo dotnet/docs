@@ -1,145 +1,120 @@
 ---
-title: Get started with C# and Visual Studio Code
-description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code.
-author: kendrahavens
-ms.date: 12/05/2018
+title: Create a .NET Core console application using Visual Studio Code
+description: Learn how to create a .NET Core console application using Visual Studio Code and the .NET Core CLI.
+ms.date: 05/22/2020
 ---
-# Get started with C# and Visual Studio Code
+# Tutorial: Create a .NET Core console application using Visual Studio Code
 
-.NET Core gives you a fast and modular platform for creating applications that run on Windows, Linux, and macOS. Use Visual Studio Code with the C# extension to get a powerful editing experience with full support for C# IntelliSense (smart code completion) and debugging.
+This tutorial shows how to create and run a .NET Core console application by using Visual Studio Code and the .NET Core CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET Core CLI. You can follow this tutorial with a different code editor and run commands in a terminal if you prefer.
 
 ## Prerequisites
 
-1. Install [Visual Studio Code](https://code.visualstudio.com/).
-2. Install the [.NET Core SDK](https://dotnet.microsoft.com/download).
-3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) for Visual Studio Code. For more information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+1. [Visual Studio Code](https://code.visualstudio.com/) with the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) installed. For information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+2. The [.NET Core 3.1 SDK or later](https://dotnet.microsoft.com/download)
 
-## Hello World
+## Create the app
 
-Let's get started with a simple "Hello World" program on .NET Core:
+Create a .NET Core console app project named "HelloWorld".
 
-1. Open a project:
+1. Start Visual Studio Code.
 
-    - Open Visual Studio Code.
-    - Click on the Explorer icon on the left menu and then click **Open Folder**.
-    - Select **File** > **Open Folder** from the main menu to open the folder you want your C# project to be in and click **Select Folder**. For our example, we're creating a folder for our project named *HelloWorld*.
+1. Select **File** > **Open Folder** (**File** > **Open...** on macOS) from the main menu.
 
-      ![Visual Studio Code open folder](media/with-visual-studio-code/vs-code-open-folder.png)
+1. In the **Open Folder** dialog, create a *HelloWorld* folder and click **Select Folder** (**Open** on macOS).
 
-2. Initialize a C# project:
+   The folder name becomes the project name and the namespace name by default. You'll add code later in the tutorial that assumes the project namespace is `HelloWorld`.
 
-    - Open the Integrated Terminal from Visual Studio Code by selecting **View** > **Integrated Terminal** from the main menu.
-    - In the terminal window, type `dotnet new console`.
-    - This command creates a *Program.cs* file in your folder with a simple "Hello World" program already written, along with a C# project file named *HelloWorld.csproj*.
+1. Open the **Terminal** in Visual Studio Code by selecting **View** > **Terminal** from the main menu.
 
-      ![The dotnet new command](media/with-visual-studio-code/dotnet-new-command.png)
+   The **Terminal** opens with the command prompt in the *HelloWorld* folder.
 
-3. Resolve the build assets:
+1. In the **Terminal**, enter the following command:
 
-    - For **.NET Core 1.x**, type `dotnet restore`. Running `dotnet restore` gives you access to the  required .NET Core packages that are needed to build your project.
+   ```dotnetcli
+   dotnet new console
+   ```
 
-      ![The dotnet restore command](media/with-visual-studio-code/dotnet-restore-command.png)
+The template creates a simple "Hello World" application. It calls the <xref:System.Console.WriteLine(System.String)?displayProperty=nameWithType> method to display "Hello World!" in the console window.
 
-      [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
+The template code defines a class, `Program`, with a single method, `Main`, that takes a <xref:System.String> array as an argument:
 
-4. Run the "Hello World" program:
+```csharp
+using System;
 
-    - Type `dotnet run`.
-
-      ![The dotnet run command](media/with-visual-studio-code/dotnet-run-command.png)
-
-You can also watch a short video tutorial for further setup help on [Windows](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core), [macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core-on-MacOS), or [Linux](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu).
-
-## Debug
-
-1. Open *Program.cs* by clicking on it. The first time you open a C# file in Visual Studio Code, [OmniSharp](https://www.omnisharp.net/) loads in the editor.
-
-    ![Open the Program.cs file](media/with-visual-studio-code/open-program-cs.png)
-
-2. Visual Studio Code should prompt you to add the missing assets to build and debug your app. Select **Yes**.
-
-    ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
-
-3. To open the Debug view, click on the Debugging icon on the left side menu.
-
-    ![Open the Debug tab in Visual Studio Code](media/with-visual-studio-code/open-debug-tab.png)
-
-4. Locate the green arrow at the top of the pane. Make sure the drop-down next to it has **.NET Core Launch (console)** selected.
-
-    ![Selecting .NET Core in Visual Studio Code](media/with-visual-studio-code/select-net-core.png)
-
-5. Add a breakpoint to your project by clicking on the **editor margin**, which is the space on the left of the line numbers in the editor, next to line 9, or move the text cursor onto line 9 in the editor and  press <kbd>F9</kbd>.
-
-    ![Setting a Breakpoint](media/with-visual-studio-code/set-breakpoint-vs-code.png)
-
-6. To start debugging, press <kbd>F5</kbd> or select the green arrow. The debugger stops execution of your program when it reaches the breakpoint you set in the previous step.
-    - While debugging, you can view your local variables in the top left pane or use the debug console.
-
-7. Select the blue arrow at the top to continue debugging, or select the red square at the top to stop.
-
-    ![Run and Debug in Visual Studio Code](media/with-visual-studio-code/run-debug-vs-code.png)
-
-> [!TIP]
-> For more information and troubleshooting tips on .NET Core debugging with OmniSharp in Visual Studio Code, see [Instructions for setting up the .NET Core debugger](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
-
-## Add a class
-
-1. To add a new class, right click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
-2. Name your file *MyClass.cs*. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
-3. Add the code below to create your first class. Make sure to include the correct namespace so you can reference it from your *Program.cs* file:
-
-    ``` csharp
-    using System;
-
-    namespace HelloWorld
+namespace HelloWorld
+{
+    class Program
     {
-        public class MyClass
+        static void Main(string[] args)
         {
-            public string ReturnMessage()
-            {
-                return "Happy coding!";
-            }
+            Console.WriteLine("Hello World!");
         }
     }
-    ```
+}
+```
 
-4. Call your new class from your main method in *Program.cs* by adding the code below:
+`Main` is the application entry point, the method that's called automatically by the runtime when it launches the application. Any command-line arguments supplied when the application is launched are available in the *args* array.
 
-    ```csharp
-    using System;
+## Run the app
 
-    namespace HelloWorld
-    {
-        class Program
-        {
-            static void Main(string[] args)
-            {
-                var c1 = new MyClass();
-                Console.WriteLine($"Hello World! {c1.ReturnMessage()}");
-            }
-        }
-    }
-    ```
+Run the following command in the **Terminal**:
 
-5. Save your changes and run your program again. The new message should appear with the appended string.
+```dotnetcli
+dotnet run
+```
 
-    ```dotnetcli
-    dotnet run
-    ```
+The program displays "Hello World!" and ends.
 
-    You get the following output:
+![The dotnet run command](media/with-visual-studio-code/dotnet-run-command.png)
 
-    ```console
-    Hello World! Happy coding!
-    ```
+## Enhance the app
 
-## FAQ
+Enhance the application to prompt the user for their name and display it along with the date and time.
 
-### I'm missing required assets to build and debug C# in Visual Studio Code. My debugger says "No Configuration."
+1. Open *Program.cs* by clicking on it.
 
-The Visual Studio Code C# extension can generate assets to build and debug for you. Visual Studio Code prompts you to generate these assets when you first open a C# project. If you didn't generate assets then, you can still run this command by opening the Command Palette (**View > Command Palette**) and typing ">.NET: Generate Assets for Build and Debug". Selecting this generates the *.vscode*, *launch.json*, and *tasks.json* configuration files that you need.
+   The first time you open a C# file in Visual Studio Code, [OmniSharp](https://www.omnisharp.net/) loads in the editor.
 
-## See also
+   ![Open the Program.cs file](media/with-visual-studio-code/open-program-cs.png)
+
+1. Select **Yes** when Visual Studio Code prompts you to add the missing assets to build and debug your app.
+
+   ![Prompt for missing assets](media/with-visual-studio-code/missing-assets.png)
+
+1. Replace the contents of the `Main` method in *Program.cs*, which is the line that calls `Console.WriteLine`, with the following code:
+
+   :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
+
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it displays these values in the console window.
+
+   The `\n` represents a newline character.
+
+   The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
+
+1. Save your changes.
+
+   > [!IMPORTANT]
+   > In Visual Studio Code, you have to explicitly save changes. Unlike Visual Studio, file changes are not automatically saved when you build and run an app.
+
+1. Run the program again:
+
+   ```dotnetcli
+   dotnet run
+   ```
+
+1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
+
+   :::image type="content" source="media/debugging-with-visual-studio-code/run-modified-program.png" alt-text="Terminal window with modified program output":::
+
+1. Press any key to exit the program.
+
+## Additional resources
 
 - [Setting up Visual Studio Code](https://code.visualstudio.com/docs/setup/setup-overview)
-- [Debugging in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)
+
+## Next steps
+
+In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
+
+> [!div class="nextstepaction"]
+> [Debug a .NET Core console application using Visual Studio Code](debugging-with-visual-studio-code.md)

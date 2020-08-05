@@ -65,7 +65,7 @@ string serviceAddress = "soap.udp://224.0.0.1:40000";
 UdpBinding myBinding = new UdpBinding();
 
 // Channel factory
-ChannelFactory<IStockTicker> factory 
+ChannelFactory<IStockTicker> factory
     = new ChannelFactory<IStockTicker>(myBinding,
                 new EndpointAddress(serviceAddress));
 
@@ -85,7 +85,7 @@ while (true)
  This code generates stock information and then uses the service contract IStockTicker to send multicast messages to call services listening on the correct UDP address.  
   
 ### UDP and Reliable Messaging  
- The UDP binding does not support reliable messaging because of the lightweight nature of the UDP protocol. If you need to confirm that messages are received by a remote endpoint, use a transport that supports reliable messaging like  HTTP or TCP. For more information about reliable messaging see https://go.microsoft.com/fwlink/?LinkId=231830  
+  The UDP binding does not support reliable messaging because of the lightweight nature of the UDP protocol. If you need to confirm that messages are received by a remote endpoint, use a transport that supports reliable messaging like  HTTP or TCP. For more information about reliable messaging, see <https://go.microsoft.com/fwlink/?LinkId=231830>.  
   
 ### Two-way Multicast Messaging  
  While multicast messages are generally one-way, the UdpBinding does support request/reply message exchange. Messages sent using the UDP transport contain both a From and To address. Care must be taken when using the From address as it could be maliciously changed en-route.  The address can be checked using the following code:  

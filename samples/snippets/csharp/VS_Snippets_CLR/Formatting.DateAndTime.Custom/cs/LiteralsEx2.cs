@@ -8,14 +8,14 @@ public class Example
    {
       String format = "dd MMM yyyy hh:mm tt p\\s\\t";
       var dat = new DateTime(2016, 8, 18, 16, 50, 0);
-      // Display the result string. 
+      // Display the result string.
       Console.WriteLine(dat.ToString(format));
-      
-      // Parse a string. 
+
+      // Parse a string.
       String value = "25 Dec 2016 12:00 pm pst";
       DateTime newDate;
-      if (DateTime.TryParseExact(value, format, null, 
-                                 DateTimeStyles.None, out newDate)) 
+      if (DateTime.TryParseExact(value, format, null,
+                                 DateTimeStyles.None, out newDate))
          Console.WriteLine(newDate);
       else
          Console.WriteLine("Unable to parse '{0}'", value);

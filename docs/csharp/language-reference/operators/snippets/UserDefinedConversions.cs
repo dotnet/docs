@@ -24,7 +24,7 @@ public static class UserDefinedConversions
     public static void Main()
     {
         var d = new Digit(7);
-        
+
         byte number = d;
         Console.WriteLine(number);  // output: 7
 

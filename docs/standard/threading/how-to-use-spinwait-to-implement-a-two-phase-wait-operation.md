@@ -24,5 +24,5 @@ The following example shows how to use a <xref:System.Threading.SpinWait?display
   
 ## See also
 
-- [SpinWait](../../../docs/standard/threading/spinwait.md)
-- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)
+- [SpinWait](spinwait.md)
+- [Threading Objects and Features](threading-objects-and-features.md)

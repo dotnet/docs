@@ -12,9 +12,9 @@ public class Example
                           RegexOptions.None, TimeSpan.FromMilliseconds(150));
       Match m = r.Match(url);
       if (m.Success)
-         Console.WriteLine(m.Result("${proto}${port}")); 
+         Console.WriteLine(m.Result("${proto}${port}"));
    }
 }
 // The example displays the following output:
 //       http:8080
-// </Snippet1>      
+// </Snippet1>

@@ -7,7 +7,7 @@ ms.assetid: 7e9da0ca-e925-4644-aa96-8bfaf649d4bb
 This sample demonstrates federated security.  
   
 ## Sample Details  
- Windows Communication Foundation (WCF) provides support for deploying federated security architectures through the `wsFederationHttpBinding`. The `wsFederationHttpBinding` provides a secure, reliable, and interoperable binding that involves the use of HTTP as the underlying transport mechanism for request/reply communication, and Text/XML as the wire format for encoding. For more information about Federation in WCF, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
+ Windows Communication Foundation (WCF) provides support for deploying federated security architectures through the `wsFederationHttpBinding`. The `wsFederationHttpBinding` provides a secure, reliable, and interoperable binding that involves the use of HTTP as the underlying transport mechanism for request/reply communication, and Text/XML as the wire format for encoding. For more information about Federation in WCF, see [Federation](../feature-details/federation.md).  
   
  The scenario is made up of 4 pieces:  
   
@@ -104,9 +104,9 @@ This sample demonstrates federated security.
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\Federation`  

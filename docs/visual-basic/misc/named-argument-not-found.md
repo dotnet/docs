@@ -14,4 +14,4 @@ A named argument can not be used in a procedure invocation unless it appears in 
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

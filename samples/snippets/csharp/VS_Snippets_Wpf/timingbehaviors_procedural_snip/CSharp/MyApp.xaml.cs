@@ -14,8 +14,8 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         public MyApp()
         {
             AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
-        }        
-    
+        }
+
         void myAppStartup(object sender, StartupEventArgs e)
         {
             Window myWindow = new Window();

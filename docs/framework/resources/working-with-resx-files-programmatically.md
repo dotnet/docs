@@ -9,10 +9,11 @@ helpviewer_keywords:
   - ".resx files"
 ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
 ---
-# Working with .resx files programmatically
-Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Class Library. You can also use the .NET Class Library to retrieve resources that are stored in .resx files. This topic explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.
+# Work with .resx files programmatically
 
- Note that this article discusses working with XML (.resx) files that contain resources. For information on working with binary resource files that have been embedded in assemblies, see the <xref:System.Resources.ResourceManager> topic.
+Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Class Library. You can also use the .NET Class Library to retrieve resources that are stored in .resx files. This article explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.
+
+This article discusses working with XML (.resx) files that contain resources. For information on working with binary resource files that have been embedded in assemblies, see <xref:System.Resources.ResourceManager>.
 
 > [!WARNING]
 > There are also ways to work with .resx files other than programmatically. When you add a resource file to a [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) project, Visual Studio provides an interface for creating and maintaining a .resx file, and automatically converts the .resx file to a .resources file at compile time. You can also use a text editor to manipulate a .resx file directly. However, to avoid corrupting the file, be careful not to modify any binary information that is stored in the file.
@@ -21,7 +22,7 @@ Because XML resource (.resx) files must consist of well-defined XML, including a
 
 You can use the <xref:System.Resources.ResXResourceWriter?displayProperty=nameWithType> class to create a .resx file programmatically, by following these steps:
 
-1. Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29?displayProperty=nameWithType> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method in step 3.
+1. Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method in step 3.
 
 2. Call the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method for each resource you want to add to the file. Use the overloads of this method to add string, object, and binary (byte array) data. If the resource is an object, it must be serializable.
 
@@ -32,7 +33,7 @@ The resulting .resx file has the appropriate header and a `data` tag for each re
 > [!WARNING]
 > Do not use resource files to store passwords, security-sensitive information, or private data.
 
-The following example creates a .resx file named CarResources.resx that stores six strings, an icon, and two application-defined objects (two `Automobile` objects). Note that the `Automobile` class, which is defined and instantiated in the example, is tagged with the <xref:System.SerializableAttribute> attribute.
+The following example creates a .resx file named CarResources.resx that stores six strings, an icon, and two application-defined objects (two `Automobile` objects). The `Automobile` class, which is defined and instantiated in the example, is tagged with the <xref:System.SerializableAttribute> attribute.
 
 [!code-csharp[Conceptual.Resources.ResX#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resx/cs/create1.cs#1)]
 [!code-vb[Conceptual.Resources.ResX#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/create1.vb#1)]

@@ -99,5 +99,5 @@ You cannot pass a parameter array by name. This is because when you call the pro
 - [Passing Arguments by Value and by Reference](./passing-arguments-by-value-and-by-reference.md)
 - [Optional Parameters](./optional-parameters.md)
 - [Parameter Arrays](./parameter-arrays.md)
-- [Optional](../../../../visual-basic/language-reference/modifiers/optional.md)
-- [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md)
+- [Optional](../../../language-reference/modifiers/optional.md)
+- [ParamArray](../../../language-reference/modifiers/paramarray.md)

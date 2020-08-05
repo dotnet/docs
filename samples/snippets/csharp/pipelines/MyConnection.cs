@@ -40,7 +40,7 @@ namespace Pipes
                             break;
                         }
 
-                        // Process all messages from the buffer, modifying the input buffer on each 
+                        // Process all messages from the buffer, modifying the input buffer on each
                         // iteration.
                         while (TryParseMessage(ref buffer, out Message message))
                         {
@@ -55,7 +55,7 @@ namespace Pipes
                     }
                     finally
                     {
-                        // Since all messages in the buffer are being processed, you can use the 
+                        // Since all messages in the buffer are being processed, you can use the
                         // remaining buffer's Start and End position to determine consumed and examined.
                         reader.AdvanceTo(buffer.Start, buffer.End);
                     }

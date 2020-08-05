@@ -37,7 +37,7 @@ JSON serialization serializes the public properties of an object into a string, 
 
 The <xref:System.Runtime.Serialization> namespace contains classes for binary and XML serialization and deserialization.
 
-Binary serialization uses binary encoding to produce compact serialization for uses such as storage or socket-based network streams. In binary serialization, all members, even members that are read-only, are serialized, and performance is enhanced. 
+Binary serialization uses binary encoding to produce compact serialization for uses such as storage or socket-based network streams. In binary serialization, all members, even members that are read-only, are serialized, and performance is enhanced.
 
 XML serialization serializes the public fields and properties of an object, or the parameters and return values of methods, into an XML stream that conforms to a specific XML Schema definition language (XSD) document. XML serialization results in strongly typed classes with public properties and fields that are converted to XML. <xref:System.Xml.Serialization> contains classes for serializing and deserializing XML. You apply attributes to classes and class members to control the way the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an instance of the class.
 
@@ -59,7 +59,7 @@ If a serialized class contains references to objects of other classes that are m
 
 Binary and XML serialization can be performed in two ways, basic and custom.
 
-Basic serialization uses the .NET Framework to automatically serialize the object. The only requirement is that the class has the <xref:System.SerializableAttribute> attribute applied. The <xref:System.NonSerializedAttribute> can be used to keep specific fields from being serialized.
+Basic serialization uses .NET to automatically serialize the object. The only requirement is that the class has the <xref:System.SerializableAttribute> attribute applied. The <xref:System.NonSerializedAttribute> can be used to keep specific fields from being serialized.
 
 When you use basic serialization, the versioning of objects may create problems. You would use custom serialization when versioning issues are important. Basic serialization is the easiest way to perform serialization, but it does not provide much control over the process.
 
@@ -74,7 +74,7 @@ Designer serialization is a special form of serialization that involves the kind
 [System.Text.Json overview](../../../../standard/serialization/system-text-json-overview.md)
 Shows how to get the `System.Text.Json` library.
 
-[How to serialize and deserialize JSON in .NET](../../../../standard/serialization/system-text-json-how-to.md). 
+[How to serialize and deserialize JSON in .NET](../../../../standard/serialization/system-text-json-how-to.md).
 Shows how to read and write object data to and from JSON using the <xref:System.Text.Json.JsonSerializer> class.
 
 [Walkthrough: Persisting an Object in Visual Studio (C#)](walkthrough-persisting-an-object-in-visual-studio.md)  

@@ -14,7 +14,7 @@ class Example
     {
         String filename = "TestFile1.txt";
         Char[] buffer;
-        
+
         using (var sr = new StreamReader(filename)) {
             buffer = new Char[(int)sr.BaseStream.Length];
             await sr.ReadAsync(buffer, 0, (int)sr.BaseStream.Length);

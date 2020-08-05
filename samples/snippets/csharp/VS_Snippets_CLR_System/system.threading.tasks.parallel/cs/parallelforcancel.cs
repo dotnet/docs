@@ -18,7 +18,7 @@ class ParallelForCancellation
     // 		An iteration for each argument value (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) is executed.
     //		The order of execution of the iterations is undefined.
     //		The iteration when i=2 cancels the loop.
-    //		Some iterations may bail out or not start at all; because they are temporally executed in unpredictable order, 
+    //		Some iterations may bail out or not start at all; because they are temporally executed in unpredictable order,
     //          it is impossible to say which will start/complete and which won't.
     //		At the end, an OperationCancelledException is surfaced.
     // Documentation:

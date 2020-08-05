@@ -95,7 +95,7 @@ namespace UsingXml2
 namespace UsingXml3
 {
     using UsingXml1;
-    
+
     //<snippet4>
     [MessageContract]
     public class BankingTransaction
@@ -103,13 +103,13 @@ namespace UsingXml3
         [MessageHeader] public string Operation;
 
         //This element will be <fromAcct> and not <from>:
-        [XmlElement(ElementName="fromAcct"), MessageBodyMember(Name="from")] 
+        [XmlElement(ElementName="fromAcct"), MessageBodyMember(Name="from")]
         public Account fromAccount;
-        
-        [XmlElement, MessageBodyMember] 
+
+        [XmlElement, MessageBodyMember]
         public Account toAccount;
-        
-        [XmlAttribute, MessageBodyMember] 
+
+        [XmlAttribute, MessageBodyMember]
         public int amount;
 }
     //</snippet4>

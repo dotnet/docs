@@ -1,7 +1,7 @@
 ---
 title: "lock statement - C# reference"
 description: "Use the C# lock statement to synchronize thread access to a shared resource"
-ms.date: 10/01/2018
+ms.date: 04/02/2020
 f1_keywords: 
   - "lock_CSharpKeyword"
   - "lock"
@@ -42,7 +42,7 @@ Since the code uses a [try...finally](try-finally.md) block, the lock is release
 
 You can't use the [await operator](../operators/await.md) in the body of a `lock` statement.
 
-## Remarks
+## Guidelines
 
 When you synchronize thread access to a shared resource, lock on a dedicated object instance (for example, `private readonly object balanceLock = new object();`) or another instance that is unlikely to be used as a lock object by unrelated parts of the code. Avoid using the same lock object instance for different shared resources, as it might result in deadlock or lock contention. In particular, avoid using the following as lock objects:
 
@@ -50,11 +50,13 @@ When you synchronize thread access to a shared resource, lock on a dedicated obj
 - <xref:System.Type> instances, as those might be obtained by the [typeof](../operators/type-testing-and-cast.md#typeof-operator) operator or reflection.
 - string instances, including string literals, as those might be [interned](/dotnet/api/system.string.intern#remarks).
 
+Hold a lock for as short time as possible to reduce lock contention.
+
 ## Example
 
 The following example defines an `Account` class that synchronizes access to its private `balance` field by locking on a dedicated `balanceLock` instance. Using the same instance for locking ensures that the `balance` field cannot be updated simultaneously by two threads attempting to call the `Debit` or `Credit` methods simultaneously.
 
-[!code-csharp[lock-statement-example](~/samples/snippets/csharp/keywords/LockStatementExample.cs)]
+[!code-csharp[lock-statement-example](snippets/LockStatementExample.cs)]
 
 ## C# language specification
 
@@ -62,9 +64,9 @@ For more information, see [The lock statement](~/_csharplang/spec/statements.md#
 
 ## See also
 
+- [C# reference](../index.md)
+- [C# keywords](index.md)
 - <xref:System.Threading.Monitor?displayProperty=nameWithType>
 - <xref:System.Threading.SpinLock?displayProperty=nameWithType>
 - <xref:System.Threading.Interlocked?displayProperty=nameWithType>
-- [C# reference](../index.md)
-- [C# keywords](index.md)
 - [Overview of synchronization primitives](../../../standard/threading/overview-of-synchronization-primitives.md)

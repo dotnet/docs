@@ -23,7 +23,7 @@ Specifies that a property or procedure redeclares one or more existing propertie
 
 - **Declaration Context.** You can use `Overloads` only in a property or procedure declaration statement.
 
-- **Combined Modifiers.** You cannot specify `Overloads` together with [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md) in the same procedure declaration.
+- **Combined Modifiers.** You cannot specify `Overloads` together with [Shadows](shadows.md) in the same procedure declaration.
 
 - **Required Differences.** The *signature* in this declaration must be different from the signature of every property or procedure that it overloads. The signature comprises the property or procedure name together with the following:
 
@@ -61,18 +61,18 @@ If you use `Overrides`, the compiler implicitly adds `Overloads` so that your li
 
 The `Overloads` modifier can be used in these contexts:
 
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
+- [Function Statement](../statements/function-statement.md)
 
-- [Operator Statement](../../../visual-basic/language-reference/statements/operator-statement.md)
+- [Operator Statement](../statements/operator-statement.md)
 
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
+- [Property Statement](../statements/property-statement.md)
 
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
+- [Sub Statement](../statements/sub-statement.md)
 
 ## See also
 
-- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
-- [Procedure Overloading](../../../visual-basic/programming-guide/language-features/procedures/procedure-overloading.md)
-- [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
-- [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md)
-- [How to: Define a Conversion Operator](../../../visual-basic/programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)
+- [Shadows](shadows.md)
+- [Procedure Overloading](../../programming-guide/language-features/procedures/procedure-overloading.md)
+- [Generic Types in Visual Basic](../../programming-guide/language-features/data-types/generic-types.md)
+- [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md)
+- [How to: Define a Conversion Operator](../../programming-guide/language-features/procedures/how-to-define-a-conversion-operator.md)

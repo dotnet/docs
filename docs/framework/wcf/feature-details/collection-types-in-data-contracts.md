@@ -1,5 +1,6 @@
 ---
 title: "Collection Types in Data Contracts"
+description: Learn about how the data contract model treats collections in the .NET Framework and how WCF supports data serialization for collection types.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -22,7 +23,7 @@ Types that implement the <xref:System.Collections.IEnumerable> interface, includ
 
 Additional requirements on collection types, such as having a method called `Add` and a parameterless constructor, are discussed in detail in the following sections. This ensures that collection types can be both serialized and deserialized. This means that some collections are not directly supported, such as the Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> (because it has no parameterless constructor). However, for information about circumventing these restrictions, see the section "Using Collection Interface Types and Read-Only Collections" later in this topic.
 
-The types contained in collections must be data contract types, or be otherwise serializable. For more information, see [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md).
+The types contained in collections must be data contract types, or be otherwise serializable. For more information, see [Types Supported by the Data Contract Serializer](types-supported-by-the-data-contract-serializer.md).
 
 For more information about what is and what is not considered a valid collection, as well as about how collections are serialized, see the information about serializing collections in the "Advanced Collection Rules" section of this topic.
 
@@ -70,7 +71,7 @@ Collection interface types (<xref:System.Collections.IEnumerable>, <xref:System.
 
 During serialization, when the declared type is an interface, the actual instance type used can be any type that implements that interface. Restrictions discussed previously (having a parameterless constructor and an `Add` method) do not apply. For example, you can set addresses in Customer2 to an instance of Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601> of Address, even though you cannot directly declare a data member of type Generic <xref:System.Collections.ObjectModel.ReadOnlyCollection%601>.
 
-During deserialization, when the declared type is an interface, the serialization engine chooses a type that implements the declared interface, and the type is instantiated. The known types mechanism (described in [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md)) has no effect here; the choice of type is built into WCF.
+During deserialization, when the declared type is an interface, the serialization engine chooses a type that implements the declared interface, and the type is instantiated. The known types mechanism (described in [Data Contract Known Types](data-contract-known-types.md)) has no effect here; the choice of type is built into WCF.
 
 ## Customizing Collection Types
 
@@ -80,7 +81,7 @@ Note that customizing collection types compromises collection interchangeability
 
 ### Collection Data Contract Naming
 
-The rules for naming collection types are similar to those for naming regular data contract types, as described in [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md), although some important differences exist:
+The rules for naming collection types are similar to those for naming regular data contract types, as described in [Data Contract Names](data-contract-names.md), although some important differences exist:
 
 - The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute is used to customize the name, instead of the <xref:System.Runtime.Serialization.DataContractAttribute> attribute. The <xref:System.Runtime.Serialization.CollectionDataContractAttribute> attribute also has `Name` and `Namespace` properties.
 
@@ -226,7 +227,7 @@ Customized collection types, collection interfaces, and arrays are still treated
 
 All equivalent collections have the same representation in XML Schema definition language (XSD) schema. Because of this, you normally do not get the same collection type in the generated client code as the one on the server. For example, the server may use a data contract with a Generic <xref:System.Collections.Generic.List%601> of Integer data member, but in the generated client code the same data member may become an array of integers.
 
-Dictionary collections are marked with a WCF-specific schema annotation that indicate that they are dictionaries; otherwise, they are indistinguishable from simple lists that contain entries with a key and a value. For an exact description of how collections are represented in data contract schema, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).
+Dictionary collections are marked with a WCF-specific schema annotation that indicate that they are dictionaries; otherwise, they are indistinguishable from simple lists that contain entries with a key and a value. For an exact description of how collections are represented in data contract schema, see [Data Contract Schema Reference](data-contract-schema-reference.md).
 
 By default, types are not generated for non-customized collections in imported code. Data members of list collection types are imported as arrays, and data members of dictionary collection types are imported as Generic Dictionary.
 
@@ -310,7 +311,7 @@ The following is a list of collection rules for serialization:
 
 - Combining collection types (having collections of collections) is allowed. Jagged arrays are treated as collections of collections. Multidimensional arrays are not supported.
 
-- Arrays of byte and arrays of <xref:System.Xml.XmlNode> are special array types that are treated as primitives, not collections. Serializing an array of byte results in a single XML element that contains a chunk of Base64-encoded data, instead of a separate element for each byte. For more information about how an array of <xref:System.Xml.XmlNode> is treated, see [XML and ADO.NET Types in Data Contracts](../../../../docs/framework/wcf/feature-details/xml-and-ado-net-types-in-data-contracts.md). Of course, these special types can themselves participate in collections: an array of array of byte results in multiple XML elements, with each containing a chunk of Base64-encoded data.
+- Arrays of byte and arrays of <xref:System.Xml.XmlNode> are special array types that are treated as primitives, not collections. Serializing an array of byte results in a single XML element that contains a chunk of Base64-encoded data, instead of a separate element for each byte. For more information about how an array of <xref:System.Xml.XmlNode> is treated, see [XML and ADO.NET Types in Data Contracts](xml-and-ado-net-types-in-data-contracts.md). Of course, these special types can themselves participate in collections: an array of array of byte results in multiple XML elements, with each containing a chunk of Base64-encoded data.
 
 - If the <xref:System.Runtime.Serialization.DataContractAttribute> attribute is applied to a collection type, the type is treated as a regular data contract type, not as a collection.
 
@@ -354,11 +355,11 @@ The following is a list of collection naming rules:
 
 - The default name for list collection data contracts, unless overridden using Name, is the string "ArrayOf" combined with the data contract name of the type contained in the collection. For example, the data contract name for a Generic List of Integers is "ArrayOfint". Keep in mind that the data contract name of `Object` is "anyType", so the data contract name of non-generic lists like <xref:System.Collections.ArrayList> is "ArrayOfanyType".
 
-The default name for dictionary collection data contracts, unless overridden using `Name`, is the string "ArrayOfKeyValueOf" combined with the data contract name of the key type followed by the data contract name of the value type. For example, the data contract name for a Generic Dictionary of String and Integer is "ArrayOfKeyValueOfstringint". Additionally, if either the key or the value types are not primitive types, a namespace hash of the data contract namespaces of the key and value types is appended to the name. For more information about namespace hashes, see [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md).
+The default name for dictionary collection data contracts, unless overridden using `Name`, is the string "ArrayOfKeyValueOf" combined with the data contract name of the key type followed by the data contract name of the value type. For example, the data contract name for a Generic Dictionary of String and Integer is "ArrayOfKeyValueOfstringint". Additionally, if either the key or the value types are not primitive types, a namespace hash of the data contract namespaces of the key and value types is appended to the name. For more information about namespace hashes, see [Data Contract Names](data-contract-names.md).
 
 Each dictionary collection data contract has a companion data contract that represents one entry in the dictionary. Its name is the same as for the dictionary data contract, except for the "ArrayOf" prefix, and its namespace is the same as for the dictionary data contract. For example, for the "ArrayOfKeyValueOfstringint" dictionary data contract, the "KeyValueofstringint" data contract represents one entry in the dictionary. You can customize the name of this data contract by using the `ItemName` property, as described in the next section.
 
-Generic type naming rules, as described in [Data Contract Names](../../../../docs/framework/wcf/feature-details/data-contract-names.md), fully apply to collection types; that is, you can use curly braces within Name to indicate generic type parameters. However, numbers within the braces refer to generic parameters and not types contained within the collection.
+Generic type naming rules, as described in [Data Contract Names](data-contract-names.md), fully apply to collection types; that is, you can use curly braces within Name to indicate generic type parameters. However, numbers within the braces refer to generic parameters and not types contained within the collection.
 
 ## Collection Customization
 

@@ -10,7 +10,7 @@ ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110
  The following example shows how to resolve a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception that is thrown when an app compiled with the .NET Native tool chain tries to bind data. Here’s the exception information:  
   
 ```output
-This operation cannot be carried out as metadata for the following type was removed for performance reasons:   
+This operation cannot be carried out as metadata for the following type was removed for performance reasons:
 App.ViewModels.MainPageVM  
 ```  
   
@@ -25,8 +25,8 @@ System::Reflection::PropertyInfo.GetValue+0x22
 System::Runtime::InteropServices::WindowsRuntime::CustomPropertyImpl.GetValue+0x42  
 App!$66_Interop::McgNative.Func_IInspectable_IInspectable+0x158  
 App!$66_Interop::McgNative::__vtable_Windows_UI_Xaml_Data__ICustomProperty.GetValue__STUB+0x46  
-Windows_UI_Xaml!DirectUI::PropertyProviderPropertyAccess::GetValue+0x3f   
-Windows_UI_Xaml!DirectUI::PropertyAccessPathStep::GetValue+0x31   
+Windows_UI_Xaml!DirectUI::PropertyProviderPropertyAccess::GetValue+0x3f
+Windows_UI_Xaml!DirectUI::PropertyAccessPathStep::GetValue+0x31
 Windows_UI_Xaml!DirectUI::PropertyPathListener::ConnectPathStep+0x113  
 ```  
   

@@ -68,7 +68,7 @@ Suppose you are writing a `Sub` procedure to post a transaction against a custom
 
 ### Overloaded Versions
 
-An alternative is to overload a single procedure name. You can use the [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md) keyword to define a version of the procedure for each parameter list, as follows:
+An alternative is to overload a single procedure name. You can use the [Overloads](../../../language-reference/modifiers/overloads.md) keyword to define a version of the procedure for each parameter list, as follows:
 
 [!code-vb[VbVbcnProcedures#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#72)]
 
@@ -93,5 +93,5 @@ The advantage of overloading a procedure is in the flexibility of the call. To u
 - [How to: Overload a Procedure that Takes an Indefinite Number of Parameters](./how-to-overload-a-procedure-that-takes-an-indefinite-number-of-parameters.md)
 - [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md)
 - [Overload Resolution](./overload-resolution.md)
-- [Overloads](../../../../visual-basic/language-reference/modifiers/overloads.md)
-- [Generic Types in Visual Basic](../../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
+- [Overloads](../../../language-reference/modifiers/overloads.md)
+- [Generic Types in Visual Basic](../data-types/generic-types.md)

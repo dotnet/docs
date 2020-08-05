@@ -1,5 +1,6 @@
 ---
 title: "Transport Security with Windows Authentication"
+description: Review this scenario, which shows a WCF client/service secured by Windows security. In this example, an intranet service displays human resources information.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -7,7 +8,7 @@ dev_langs:
 ms.assetid: 96dd26e2-46e7-4de0-9a29-4fcb05bf187b
 ---
 # Transport Security with Windows Authentication
-The following scenario shows a Windows Communication Foundation (WCF) client and service secured by Windows security. For more information about programming, see [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md).  
+The following scenario shows a Windows Communication Foundation (WCF) client and service secured by Windows security. For more information about programming, see [How to: Secure a Service with Windows Credentials](../how-to-secure-a-service-with-windows-credentials.md).  
   
  An intranet Web service displays human resources information. The client is a Windows Form application. The application is deployed in a domain with a Kerberos controller securing the domain.  
   
@@ -46,9 +47,9 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
     <behaviors />  
     <services>  
       <service behaviorConfiguration="" name="ServiceModel.Calculator">  
-        <endpoint address="net.tcp://localhost:8008/Calculator"   
+        <endpoint address="net.tcp://localhost:8008/Calculator"
                   binding="netTcpBinding"  
-          bindingConfiguration="WindowsClientOverTcp"   
+          bindingConfiguration="WindowsClientOverTcp"
                   name="WindowsClientOverTcp"  
                   contract="ServiceModel.ICalculator" />  
       </service>  
@@ -100,9 +101,9 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
       </netTcpBinding>  
     </bindings>  
     <client>  
-      <endpoint address="net.tcp://localhost:8008/Calculator"   
-                binding="netTcpBinding"            
-                bindingConfiguration="NetTcpBinding_ICalculator"   
+      <endpoint address="net.tcp://localhost:8008/Calculator"
+                binding="netTcpBinding"
+                bindingConfiguration="NetTcpBinding_ICalculator"
                 contract="ICalculator"  
                 name="NetTcpBinding_ICalculator">  
       </endpoint>  
@@ -113,6 +114,6 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
   
 ## See also
 
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [How to: Secure a Service with Windows Credentials](../../../../docs/framework/wcf/how-to-secure-a-service-with-windows-credentials.md)
+- [Security Overview](security-overview.md)
+- [How to: Secure a Service with Windows Credentials](../how-to-secure-a-service-with-windows-credentials.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

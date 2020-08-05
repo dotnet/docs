@@ -72,20 +72,20 @@ namespace ConsoleApplication
     {
     }
     // </CreateAttributeExample2>
-    
+
     // <AttributeUsageExample1>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Struct)]
     public class MyAttributeForClassAndStructOnly : Attribute
     {
     }
     // </AttributeUsageExample1>
-    
+
     // <AttributeUsageExample2>
     public class Foo
     {
         // if the below attribute was uncommented, it would cause a compiler error
         // [MyAttributeForClassAndStructOnly]
-        public Foo() 
+        public Foo()
         { }
     }
     // </AttributeUsageExample2>
@@ -101,12 +101,12 @@ namespace ConsoleApplication
         }
 
         private string _name;
-        public string Name 
+        public string Name
         {
             get { return _name;}
-            set 
+            set
             {
-                if (value != _name) 
+                if (value != _name)
                 {
                     _name = value;
                     RaisePropertyChanged();   // notice that "Name" is not needed here explicitly

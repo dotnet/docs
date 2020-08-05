@@ -35,7 +35,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
  [Critical Code Management](#critical_code)  
   
-<a name="threat_modeling"></a>   
+<a name="threat_modeling"></a>
 ### Threat Modeling  
  Threat modeling is a core component of the SDL, and is used to profile a system to determine potential security vulnerabilities. Once the vulnerabilities are identified, threat modeling also ensures that appropriate mitigations are in place.  
   
@@ -57,7 +57,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
  These threat models are important for identifying security design requirements and threat mitigations during the development process.  
   
-<a name="tools"></a>   
+<a name="tools"></a>
 ### Source Analysis and Editing Tools  
  In addition to the manual security code review elements of the SDL, the [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] team uses several tools for source analysis and associated edits to decrease security vulnerabilities. A wide range of source tools are used, and include the following:  
   
@@ -67,7 +67,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
 - **Banned APIs**: Searches source code to identify accidental usage of functions that are well-known for causing security issues, such as `strcpy`. Once identified, these functions are replaced with alternatives that are more secure.  
   
-<a name="techniques"></a>   
+<a name="techniques"></a>
 ### Testing Techniques  
  [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] uses a variety of security testing techniques that include:  
   
@@ -79,7 +79,7 @@ Trustworthy Computing is a Microsoft initiative for ensuring the production of s
   
 - **Tools-Based Penetration Testing through File Fuzzing**: File fuzzing is the exploitation of a file reader's input range through a variety of inputs. One example in [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] where this technique is used is to check for failure in image decoding code.  
   
-<a name="critical_code"></a>   
+<a name="critical_code"></a>
 ### Critical Code Management  
  For XAML browser applications (XBAPs), [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] builds a security sandbox by using .NET Framework support for marking and tracking security-critical code that elevates privileges (see **Security-Critical Methodology** in [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). Given the high security quality requirements on security critical code, such code receives an additional level of source management control and security audit. Approximately 5% to 10% of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] consists of security-critical code, which is reviewed by a dedicated reviewing team. The source code and check-in process is managed by tracking security critical code and mapping each critical entity (i.e. a method that contains critical code) to its sign off state. The sign off state includes the names of one or more reviewers. Each daily build of [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] compares the critical code to that in previous builds to check for unapproved changes. If an engineer modifies critical code without approval from the reviewing team, it is identified and fixed immediately. This process enables the application and maintenance of an especially high level of scrutiny over [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] sandbox code.  
   

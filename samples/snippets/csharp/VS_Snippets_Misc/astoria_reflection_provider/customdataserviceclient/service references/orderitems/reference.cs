@@ -12,7 +12,7 @@
 // Generation date: 11/20/2009 1:47:48 PM
 namespace CustomDataServiceClient.OrderItems
 {
-    
+
     /// <summary>
     /// There are no comments for OrderItemData in the schema.
     /// </summary>
@@ -22,7 +22,7 @@ namespace CustomDataServiceClient.OrderItems
         /// Initialize a new OrderItemData object.
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public OrderItemData(global::System.Uri serviceRoot) : 
+        public OrderItemData(global::System.Uri serviceRoot) :
                 base(serviceRoot)
         {
             this.ResolveName = new global::System.Func<global::System.Type, string>(this.ResolveNameFromType);

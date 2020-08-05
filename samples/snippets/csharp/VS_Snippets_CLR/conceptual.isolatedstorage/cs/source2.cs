@@ -15,7 +15,7 @@ public class EnumeratingStores
             isoStore.CreateFile("TestFileC.Txt");
             isoStore.CreateFile("TestFileD.Txt");
         }
-        
+
         IEnumerator allFiles = IsolatedStorageFile.GetEnumerator(IsolatedStorageScope.User);
         long totalsize = 0;
 
@@ -24,7 +24,7 @@ public class EnumeratingStores
             IsolatedStorageFile storeFile = (IsolatedStorageFile)allFiles.Current;
             totalsize += (long)storeFile.UsedSize;
         }
-       
+
         Console.WriteLine("The total size = " + totalsize);
     }
 }

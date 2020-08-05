@@ -1,5 +1,6 @@
 ---
 title: "Using Secure Sockets Layer"
+description: Learn about how System.Net and extending classes use the Secure Sockets Layer to encrypt the connection for several network protocols in the .NET Framework.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

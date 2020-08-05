@@ -38,4 +38,4 @@ If you are the administrator for a server that is shared by hosting several smal
   
 ## See also
 
-- [Garbage Collection](../../../docs/standard/garbage-collection/index.md)
+- [Garbage Collection](index.md)

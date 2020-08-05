@@ -19,7 +19,7 @@ namespace SDKSample
             // Create a StreamGeometry to use to specify myPath.
             StreamGeometry geometry = new StreamGeometry();
 
-            // Open a StreamGeometryContext that can be used to describe this StreamGeometry 
+            // Open a StreamGeometryContext that can be used to describe this StreamGeometry
             // object's contents.
             using (StreamGeometryContext ctx = geometry.Open())
             {
@@ -27,16 +27,16 @@ namespace SDKSample
                 ctx.BeginFigure(new Point(10, 100), true /* is filled */, false /* is closed */);
 
                 // Create a Quadratic Bezier curve using the 2 specifed points. The first point
-                // specifies the control point while the second point specifies the end point 
+                // specifies the control point while the second point specifies the end point
                 // of the curve.
-                ctx.QuadraticBezierTo(new Point(100, 0), new Point(200, 200), true /* is stroked */, 
+                ctx.QuadraticBezierTo(new Point(100, 0), new Point(200, 200), true /* is stroked */,
                                       false /* is smooth join */);
             }
 
             // Freeze the geometry (make it unmodifiable)
             // for additional performance benefits.
             geometry.Freeze();
-            
+
             // specify the shape (quadratic Bezier curve) of the path using the StreamGeometry.
             myPath.Data = geometry;
 

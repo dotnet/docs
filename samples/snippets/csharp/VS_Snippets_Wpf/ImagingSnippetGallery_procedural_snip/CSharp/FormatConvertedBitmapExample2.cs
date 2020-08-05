@@ -22,10 +22,10 @@ namespace SDKSample
             myBitmapImage.BeginInit();
             myBitmapImage.UriSource = new Uri(@"sampleImages/WaterLilies.jpg",UriKind.Relative);
 
-            // To save significant application memory, set the DecodePixelWidth or  
-            // DecodePixelHeight of the BitmapImage value of the image source to the desired 
-            // height or width of the rendered image. If you don't do this, the application will 
-            // cache the image as though it were rendered as its normal size rather then just 
+            // To save significant application memory, set the DecodePixelWidth or
+            // DecodePixelHeight of the BitmapImage value of the image source to the desired
+            // height or width of the rendered image. If you don't do this, the application will
+            // cache the image as though it were rendered as its normal size rather then just
             // the size that is displayed.
             // Note: In order to preserve aspect ratio, set DecodePixelWidth
             // or DecodePixelHeight but not both.
@@ -34,7 +34,7 @@ namespace SDKSample
 
             ////////// Convert the BitmapSource to a new format ////////////
             // Use the BitmapImage created above as the source for a new BitmapSource object
-            // which is set to a two color pixel format using the FormatConvertedBitmap BitmapSource.                                               
+            // which is set to a two color pixel format using the FormatConvertedBitmap BitmapSource.
             // Note: New BitmapSource does not cache. It is always pulled when required.
 
             FormatConvertedBitmap newFormatedBitmapSource = new FormatConvertedBitmap();
@@ -43,7 +43,7 @@ namespace SDKSample
             // changed within a BeginInit/EndInit block.
             newFormatedBitmapSource.BeginInit();
 
-            // Use the BitmapSource object defined above as the source for this new 
+            // Use the BitmapSource object defined above as the source for this new
             // BitmapSource (chain the BitmapSource objects together).
             newFormatedBitmapSource.Source = myBitmapImage;
 

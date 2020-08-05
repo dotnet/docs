@@ -38,7 +38,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
 ## Auditing Event Log Can Be Filled  
  If a malicious user understands that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails.  
   
- To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information about using the Event Viewer to view and manage event logs, see [Event Viewer](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
+ To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information about using the Event Viewer to view and manage event logs, see [Event Viewer](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc766042(v=ws.11)). For more information, see [Auditing](auditing-security-events.md).  
   
 ## Invalid Implementations of IAuthorizationPolicy Can Cause Service to Become Unresponsive  
  Calling the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%2A> method on a faulty implementation of the <xref:System.IdentityModel.Policy.IAuthorizationPolicy> interface can cause the service to become unresponsive.  
@@ -53,7 +53,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
  The impact is that WCF services may fail to open on domains with autoenrollment. This occurs because the default service X.509 credential search criteria might be ambiguous because multiple certificates with the machine's fully qualified Domain Name System (DNS) name exist. One certificate originates from autoenrollment; the other might be a self-issued certificate.  
   
- To mitigate this, reference the exact certificate to use by using a more precise search criterion on the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md). For example, use the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> option, and specify the certificate by its unique thumbprint (hash).  
+ To mitigate this, reference the exact certificate to use by using a more precise search criterion on the [\<serviceCredentials>](../../configure-apps/file-schema/wcf/servicecredentials.md). For example, use the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> option, and specify the certificate by its unique thumbprint (hash).  
   
  For more information about the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc778954(v%3dws.10)).  
   
@@ -69,16 +69,16 @@ Denial of service occurs when a system is overwhelmed in such a way that message
  When a client is successfully authenticated by a service and a secure session is established with the service, the service keeps track of the session until the client cancels it or the session expires. Every established session counts against the limit for the maximum number of active simultaneous sessions with a service. When this limit is reached, clients that attempt to create a new session with that service are rejected until one or more active sessions expire or are canceled by a client. A client can have multiple sessions with a service, and each one of those sessions counts toward the limit.  
   
 > [!NOTE]
-> When you use stateful sessions, the previous paragraph does not apply. For more information about stateful sessions, see [How to: Create a Security Context Token for a Secure Session](../../../../docs/framework/wcf/feature-details/how-to-create-a-security-context-token-for-a-secure-session.md).  
+> When you use stateful sessions, the previous paragraph does not apply. For more information about stateful sessions, see [How to: Create a Security Context Token for a Secure Session](how-to-create-a-security-context-token-for-a-secure-session.md).  
   
  To mitigate this, set the limit for the maximum number of active sessions and the maximum lifetime for a session by setting the <xref:System.ServiceModel.Channels.SecurityBindingElement> property of the <xref:System.ServiceModel.Channels.SecurityBindingElement> class.  
   
 ## See also
 
-- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)
-- [Information Disclosure](../../../../docs/framework/wcf/feature-details/information-disclosure.md)
-- [Elevation of Privilege](../../../../docs/framework/wcf/feature-details/elevation-of-privilege.md)
-- [Denial of Service](../../../../docs/framework/wcf/feature-details/denial-of-service.md)
-- [Replay Attacks](../../../../docs/framework/wcf/feature-details/replay-attacks.md)
-- [Tampering](../../../../docs/framework/wcf/feature-details/tampering.md)
-- [Unsupported Scenarios](../../../../docs/framework/wcf/feature-details/unsupported-scenarios.md)
+- [Security Considerations](security-considerations-in-wcf.md)
+- [Information Disclosure](information-disclosure.md)
+- [Elevation of Privilege](elevation-of-privilege.md)
+- [Denial of Service](denial-of-service.md)
+- [Replay Attacks](replay-attacks.md)
+- [Tampering](tampering.md)
+- [Unsupported Scenarios](unsupported-scenarios.md)

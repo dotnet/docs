@@ -1,5 +1,6 @@
 ---
 title: "How to: Install and Configure WCF Activation Components"
+description: Learn how to set up the Windows Process Activation Service (WAS) on Windows Vista to host WCF services that do not communicate over HTTP.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "HTTP activation [WCF]"
@@ -13,7 +14,7 @@ This topic describes the steps required to set up Windows Process Activation Ser
 
 - Configure WAS to support a non-HTTP protocol. The following procedure configures Windows Vista for TCP activation.
 
-After installing and configuring WAS, see [How to: Host a WCF Service in WAS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-was.md) for the procedures to create a WCF service that exposes an non-HTTP endpoint that employs WAS.
+After installing and configuring WAS, see [How to: Host a WCF Service in WAS](how-to-host-a-wcf-service-in-was.md) for the procedures to create a WCF service that exposes an non-HTTP endpoint that employs WAS.
 
 ## To install the WCF non-HTTP activation components
 
@@ -97,7 +98,7 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 
 ## See also
 
-- [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)
-- [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)
-- [NamedPipe Activation](../../../../docs/framework/wcf/samples/namedpipe-activation.md)
+- [TCP Activation](../samples/tcp-activation.md)
+- [MSMQ Activation](../samples/msmq-activation.md)
+- [NamedPipe Activation](../samples/namedpipe-activation.md)
 - [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

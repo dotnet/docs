@@ -12,7 +12,7 @@ public class Example
       {
          if (! String.IsNullOrEmpty(item))
             Console.WriteLine(item);
-      }      
+      }
    }
 }
 // The example displays the following output:

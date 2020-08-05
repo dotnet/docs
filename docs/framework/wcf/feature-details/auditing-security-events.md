@@ -10,7 +10,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
   
  Auditing provides a way for an administrator to detect an attack that has already occurred or is in progress. In addition, auditing can help a developer to debug security-related problems. For example, if an error in the configuration of the authorization or checking policy accidentally denies access to an authorized user, a developer can quickly discover and isolate the cause of this error by examining the event log.  
   
- For more information about WCF security, see [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md). For more information about programming WCF, see [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md).  
+ For more information about WCF security, see [Security Overview](security-overview.md). For more information about programming WCF, see [Basic WCF Programming](../basic-wcf-programming.md).  
   
 ## Audit Level and Behavior  
  Two levels of security audits exist:  
@@ -45,10 +45,10 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |<xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.ServiceAuthorizationAuditLevel%2A>|Specifies which types of service authorization events are audited at the service level. The choices are `None`, `Failure`, `Success`, and `SuccessOrFailure`.|  
 |<xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A>|Specifies what happens to the client request when auditing fails. For example, when the service attempts to write to the security log, but does not have `SeAuditPrivilege`. The default value of `true` indicates that failures are ignored, and the client request is processed normally.|  
   
- For an example of setting up an application to log audit events, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
+ For an example of setting up an application to log audit events, see [How to: Audit Security Events](how-to-audit-wcf-security-events.md).  
   
 ### Configuration  
- You can also use configuration to specify auditing behavior by adding a [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) under the [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md). You must add the element under a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) as shown in the following code.  
+ You can also use configuration to specify auditing behavior by adding a [\<serviceSecurityAudit>](../../configure-apps/file-schema/wcf/servicesecurityaudit.md) under the [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md). You must add the element under a [\<behavior>](../../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) as shown in the following code.  
   
 ```xml  
 <configuration>  
@@ -60,7 +60,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
                   auditLogLocation="Application"  
                   suppressAuditFailure="true"  
                   serviceAuthorizationAuditLevel="Failure"  
-                  messageAuthenticationAuditLevel="SuccessOrFailure" />   
+                  messageAuthenticationAuditLevel="SuccessOrFailure" />
       </behavior>  
     </behaviors>  
   </system.serviceModel>  
@@ -96,9 +96,9 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 
 - <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior>
 - <xref:System.ServiceModel.AuditLogLocation>
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)
-- [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
-- [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)
-- [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+- [Security Overview](security-overview.md)
+- [Basic WCF Programming](../basic-wcf-programming.md)
+- [How to: Audit Security Events](how-to-audit-wcf-security-events.md)
+- [\<serviceSecurityAudit>](../../configure-apps/file-schema/wcf/servicesecurityaudit.md)
+- [\<behaviors>](../../configure-apps/file-schema/wcf/behaviors.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

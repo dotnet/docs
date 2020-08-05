@@ -21,19 +21,19 @@ To use a reliable session with a WCF application, either use one of the system-p
 
 ## In This Section
 
-[Reliable Sessions Overview](../../../../docs/framework/wcf/feature-details/reliable-sessions-overview.md)
+[Reliable Sessions Overview](reliable-sessions-overview.md)
 Describes reliable sessions, when to use them, the different bindings that support reliable sessions, and how they work.
 
-[How to: Exchange Messages Within a Reliable Session](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-within-a-reliable-session.md)
+[How to: Exchange Messages Within a Reliable Session](how-to-exchange-messages-within-a-reliable-session.md)
 Describes how to create a reliable session over HTTP using a custom binding specified in the configuration.
 
-[How to: Secure Messages within Reliable Sessions](../../../../docs/framework/wcf/feature-details/how-to-secure-messages-within-reliable-sessions.md)
+[How to: Secure Messages within Reliable Sessions](how-to-secure-messages-within-reliable-sessions.md)
 Describes how to secure a reliable session.
 
-[How to: Create a Custom Reliable Session Binding with HTTPS](../../../../docs/framework/wcf/feature-details/how-to-create-a-custom-reliable-session-binding-with-https.md)
+[How to: Create a Custom Reliable Session Binding with HTTPS](how-to-create-a-custom-reliable-session-binding-with-https.md)
 Describes how to create a reliable session over HTTPS.
 
-[Best Practices for Reliable Sessions](../../../../docs/framework/wcf/feature-details/best-practices-for-reliable-sessions.md)
+[Best Practices for Reliable Sessions](best-practices-for-reliable-sessions.md)
 Describes some of the best practices associated with using a reliable session.
 
 ## Reference
@@ -42,5 +42,5 @@ Describes some of the best practices associated with using a reliable session.
 
 ## See also
 
-- [Queues and Reliable Sessions](../../../../docs/framework/wcf/feature-details/queues-and-reliable-sessions.md)
-- [Sessions, Instancing, and Concurrency](../../../../docs/framework/wcf/feature-details/sessions-instancing-and-concurrency.md)
+- [Queues and Reliable Sessions](queues-and-reliable-sessions.md)
+- [Sessions, Instancing, and Concurrency](sessions-instancing-and-concurrency.md)

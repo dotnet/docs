@@ -22,7 +22,7 @@ Gets an enumerator for all cached Windows Runtime types.
 ## Syntax  
   
 ```cpp  
-HRESULT GetCachedWinRTTypes (   
+HRESULT GetCachedWinRTTypes (
     [out] ICorDebugGuidToTypeEnum **ppGuidToTypeEnum)  
 ;  
 ```  

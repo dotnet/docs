@@ -14,6 +14,6 @@ The property requires a value other than `Nothing`. This may be a result of inco
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
-- [Nothing](../../visual-basic/language-reference/nothing.md)
+- [Error Types](../programming-guide/language-features/error-types.md)
+- [Nothing](../language-reference/nothing.md)
 - <xref:System.NullReferenceException>

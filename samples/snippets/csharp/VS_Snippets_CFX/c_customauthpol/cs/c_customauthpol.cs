@@ -58,7 +58,7 @@ namespace Samples
             bool bRet = false;
             CustomAuthState customstate = null;
 
-            // If the state is null, then this has not been called before so 
+            // If the state is null, then this has not been called before so
             // set up a custom state.
             if (state == null)
             {

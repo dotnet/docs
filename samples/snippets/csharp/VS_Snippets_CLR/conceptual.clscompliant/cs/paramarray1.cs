@@ -6,13 +6,13 @@ using System;
 public class Group
 {
    private string[] members;
-   
+
    public Group(params string[] memberList)
    {
       members = memberList;
    }
-   
-   public override string ToString() 
+
+   public override string ToString()
    {
       return String.Join(", ", members);
    }
@@ -23,7 +23,7 @@ public class Example
    public static void Main()
    {
       Group gp = new Group("Matthew", "Mark", "Luke", "John");
-      Console.WriteLine(gp.ToString());    
+      Console.WriteLine(gp.ToString());
    }
 }
 // The example displays the following output:

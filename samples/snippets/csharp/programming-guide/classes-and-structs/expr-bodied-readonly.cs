@@ -4,7 +4,7 @@
 public class Location
 {
    private string locationName;
-   
+
    public Location(string name)
    {
       locationName = name;

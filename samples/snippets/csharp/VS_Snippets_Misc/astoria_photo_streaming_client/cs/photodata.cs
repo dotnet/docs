@@ -12,7 +12,7 @@
 // Generation date: 12/19/2010 10:42:52 PM
 namespace PhotoData
 {
-    
+
     /// <summary>
     /// There are no comments for PhotoDataContainer in the schema.
     /// </summary>
@@ -22,7 +22,7 @@ namespace PhotoData
         /// Initialize a new PhotoDataContainer object.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Services.Design", "1.0.0")]
-        public PhotoDataContainer(global::System.Uri serviceRoot) : 
+        public PhotoDataContainer(global::System.Uri serviceRoot) :
                 base(serviceRoot, global::System.Data.Services.Common.DataServiceProtocolVersion.V3)
         {
             this.OnContextCreated();
@@ -376,7 +376,7 @@ namespace PhotoData
         {
             get
             {
-                if (((this._Exposure == null) 
+                if (((this._Exposure == null)
                             && (this._ExposureInitialized != true)))
                 {
                     this._Exposure = new Exposure();
@@ -407,7 +407,7 @@ namespace PhotoData
         {
             get
             {
-                if (((this._Dimensions == null) 
+                if (((this._Dimensions == null)
                             && (this._DimensionsInitialized != true)))
                 {
                     this._Dimensions = new Dimensions();

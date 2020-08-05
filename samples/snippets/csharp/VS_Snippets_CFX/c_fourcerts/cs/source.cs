@@ -97,7 +97,7 @@ namespace Microsoft.ServiceModel.Samples
     //</snippet1>
 
     //<snippet2>
-    internal class MyClientCredentialsSecurityTokenManager : 
+    internal class MyClientCredentialsSecurityTokenManager :
         ClientCredentialsSecurityTokenManager
     {
         MyClientCredentials credentials;
@@ -152,16 +152,16 @@ namespace Microsoft.ServiceModel.Samples
             return result;
         }
 
-        public override SecurityTokenAuthenticator 
-            CreateSecurityTokenAuthenticator(SecurityTokenRequirement 
+        public override SecurityTokenAuthenticator
+            CreateSecurityTokenAuthenticator(SecurityTokenRequirement
             tokenRequirement, out SecurityTokenResolver outOfBandTokenResolver)
         {
-            return base.CreateSecurityTokenAuthenticator(tokenRequirement, 
+            return base.CreateSecurityTokenAuthenticator(tokenRequirement,
                 out outOfBandTokenResolver);
         }
     }
     //</snippet2>
-    
+
     //<snippet3>
     public class MyServiceCredentials : ServiceCredentials
     {
@@ -244,7 +244,7 @@ namespace Microsoft.ServiceModel.Samples
     //</snippet3>
 
     //<snippet4>
-    internal class MyServiceCredentialsSecurityTokenManager : 
+    internal class MyServiceCredentialsSecurityTokenManager :
         ServiceCredentialsSecurityTokenManager
     {
         MyServiceCredentials credentials;
@@ -318,31 +318,31 @@ namespace Microsoft.ServiceModel.Samples
         static void Main(string[] args)
         {
             //<snippet5>
-            EndpointAddress serviceEndpoint = 
+            EndpointAddress serviceEndpoint =
                 new EndpointAddress(new Uri("http://localhost:6060/service"));
 
             CustomBinding binding = new CustomBinding();
 
-            AsymmetricSecurityBindingElement securityBE = 
+            AsymmetricSecurityBindingElement securityBE =
                 SecurityBindingElement.CreateMutualCertificateDuplexBindingElement(
                 MessageSecurityVersion.
 WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy11BasicSecurityProfile10);
-            // Add a custom IdentityVerifier because the service uses two certificates 
-            // (one for signing and one for encryption) and an endpoint identity that 
+            // Add a custom IdentityVerifier because the service uses two certificates
+            // (one for signing and one for encryption) and an endpoint identity that
             // contains a single identity claim.
             securityBE.LocalClientSettings.IdentityVerifier = new MyIdentityVerifier();
             binding.Elements.Add(securityBE);
 
-            CompositeDuplexBindingElement compositeDuplex = 
+            CompositeDuplexBindingElement compositeDuplex =
                 new CompositeDuplexBindingElement();
             compositeDuplex.ClientBaseAddress = new Uri("http://localhost:6061/client");
             binding.Elements.Add(compositeDuplex);
 
             binding.Elements.Add(new OneWayBindingElement());
-            
+
             binding.Elements.Add(new HttpTransportBindingElement());
-            
-            using (ChannelFactory<IMyServiceChannel> factory = 
+
+            using (ChannelFactory<IMyServiceChannel> factory =
                 new ChannelFactory<IMyServiceChannel>(binding, serviceEndpoint))
             {
                 MyClientCredentials credentials = new MyClientCredentials();
@@ -372,7 +372,7 @@ WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy1
             this.defaultVerifier = IdentityVerifier.CreateDefault();
         }
 
-        public override bool CheckAccess(EndpointIdentity identity, 
+        public override bool CheckAccess(EndpointIdentity identity,
             AuthorizationContext authContext)
         {
             // The following implementation is for demonstration only, and
@@ -381,7 +381,7 @@ WSSecurity10WSTrustFebruary2005WSSecureConversationFebruary2005WSSecurityPolicy1
             return true;
         }
 
-        public override bool TryGetIdentity(EndpointAddress reference, 
+        public override bool TryGetIdentity(EndpointAddress reference,
             out EndpointIdentity identity)
         {
             return this.defaultVerifier.TryGetIdentity(reference, out identity);

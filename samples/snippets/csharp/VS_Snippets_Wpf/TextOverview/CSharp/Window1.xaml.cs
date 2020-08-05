@@ -11,7 +11,7 @@ namespace Windows.Samples.WinFX
     /// </summary>
 
     public partial class Window1 : Window
-    {     
+    {
         public Window1()
         {
             InitializeComponent();
@@ -22,7 +22,7 @@ namespace Windows.Samples.WinFX
         {
             FillFontComboBox(comboBoxFonts);
         }
-        
+
         //<Snippet100>
         public void FillFontComboBox(ComboBox comboBoxFonts)
         {

@@ -16,5 +16,5 @@ A `Resume` statement appeared outside error-handling code, or the code jumped in
   
 ## See also
 
-- [Resume Statement](../../../visual-basic/language-reference/statements/resume-statement.md)
-- [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)
+- [Resume Statement](../statements/resume-statement.md)
+- [On Error Statement](../statements/on-error-statement.md)

@@ -18,7 +18,7 @@ namespace ButtonAlign
     {
         // To use PaneLoaded put Loaded="PaneLoaded" in root element of .xaml file.
         // private void PaneLoaded(object sender, EventArgs e) {}
-        // Sample event handler: 
+        // Sample event handler:
         static int newcolor = 0;
         Button btncsharp;
         //<Snippet2>

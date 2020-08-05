@@ -13,12 +13,12 @@
             counter = 1;
 
             // Error! This is an expression, not an expression statement.
-            // counter + 1; 
+            // counter + 1;
 
             // Declaration statements with initializers are functionally
-            // equivalent to  declaration statement followed by assignment statement:         
+            // equivalent to  declaration statement followed by assignment statement:
             int[] radii = { 15, 32, 108, 74, 9 }; // Declare and initialize an array.
-            const double pi = 3.14159; // Declare and initialize  constant.          
+            const double pi = 3.14159; // Declare and initialize  constant.
 
             // foreach statement block that contains multiple statements.
             foreach (int radius in radii)
@@ -71,7 +71,7 @@
             int num = 5;
             System.Console.WriteLine(num); // Output: 5
             num = 6;
-            System.Console.WriteLine(num); // Output: 6            
+            System.Console.WriteLine(num); // Output: 6
             //</Snippet3>
 
             int y = 0;
@@ -215,7 +215,7 @@
                 if ((z < 1) || (z > 2000))
                 {
                     throw new System.ArgumentException("Point must be in range 1 - 2000");
-                }    
+                }
                 this.Z = z;
             }
 
@@ -241,14 +241,14 @@
                 // Check properties that this class declares.
                 if (Z == p.Z)
                 {
-                    // Let base class check its own fields 
+                    // Let base class check its own fields
                     // and do the run-time type comparison.
                     return base.Equals((TwoDPoint)p);
                 }
                 else
                 {
                     return false;
-                }    
+                }
             }
 
             public override int GetHashCode()
@@ -309,8 +309,8 @@
                 Console.WriteLine("pointE.Equals(list[0]): {0}", pointE.Equals(list[0]));
 
                 // Keep the console window open in debug mode.
-                System.Console.WriteLine("Press any key to exit.");
-                System.Console.ReadKey();
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
             }
         }
 
@@ -402,8 +402,8 @@
 
     namespace ValueEqualityValueTypes
     {
-        using System;
         //<Snippet20>
+        using System;
         struct TwoDPoint : IEquatable<TwoDPoint>
         {
             // Read/write auto-implemented properties.
@@ -461,7 +461,7 @@
                 // True:
                 Console.WriteLine("pointA == pointB = {0}", pointA == pointB);
                 // True:
-                Console.WriteLine("Object.Equals(pointA, pointB) = {0}", Object.Equals(pointA, pointB));
+                Console.WriteLine("object.Equals(pointA, pointB) = {0}", object.Equals(pointA, pointB));
                 // False:
                 Console.WriteLine("pointA.Equals(null) = {0}", pointA.Equals(null));
                 // False:
@@ -471,13 +471,13 @@
                 // False:
                 Console.WriteLine("pointA.Equals(i) = {0}", pointA.Equals(i));
                 // CS0019:
-                // Console.WriteLine("pointA == i = {0}", pointA == i); 
+                // Console.WriteLine("pointA == i = {0}", pointA == i);
 
                 // Compare unboxed to boxed.
                 System.Collections.ArrayList list = new System.Collections.ArrayList();
                 list.Add(new TwoDPoint(3, 4));
                 // True:
-                Console.WriteLine("pointE.Equals(list[0]): {0}", pointA.Equals(list[0]));
+                Console.WriteLine("pointA.Equals(list[0]): {0}", pointA.Equals(list[0]));
 
                 // Compare nullable to nullable and to non-nullable.
                 TwoDPoint? pointC = null;
@@ -497,8 +497,8 @@
                 Console.WriteLine("pointD == (pointC = 3,4) = {0}", pointD == pointC);
 
                 // Keep the console window open in debug mode.
-                System.Console.WriteLine("Press any key to exit.");
-                System.Console.ReadKey();
+                Console.WriteLine("Press any key to exit.");
+                Console.ReadKey();
             }
         }
 
@@ -533,7 +533,7 @@
                 {
                     System.Console.WriteLine("I'll never write anything."); //CS0162
                 }
-                //</Snippet22>  
+                //</Snippet22>
                 */
             }
 
@@ -546,9 +546,9 @@
 
                 // Constant declaration statement.
                 const double pi = 3.14159;
-                //</Snippet23> 
+                //</Snippet23>
 
-                //<Snippet24>    
+                //<Snippet24>
                 // Expression statement (assignment).
                 area = 3.14 * (radius * radius);
 
@@ -561,7 +561,7 @@
                 // Expression statement (new object creation).
                 System.Collections.Generic.List<string> strings =
                     new System.Collections.Generic.List<string>();
-                //</Snippet24> 
+                //</Snippet24>
 
                 System.Console.WriteLine(pi.ToString());
             }
@@ -596,7 +596,7 @@
             exit:
                 ; // Statement needed here.
             }
-            //</Snippet25> 
+            //</Snippet25>
 
             void G()
             {
@@ -619,7 +619,7 @@
                 //<Snippet27>
                 if(pointB == true)
                     //Error CS1023:
-                    int radius = 5; 
+                    int radius = 5;
                 //</Snippet27>
                  */
 
@@ -630,7 +630,7 @@
                     System.DateTime d = System.DateTime.Now;
                     System.Console.WriteLine(d.ToLongDateString());
                 }
-                //</Snippet28> 
+                //</Snippet28>
             }
             string S()
             {
@@ -647,7 +647,7 @@
                     }
                 }
                 return "Not found.";
-                //</Snippet29>  
+                //</Snippet29>
             }
         }
     }
@@ -697,7 +697,7 @@
             person2 Name = Molly Age = 16
             person1 Name = Molly Age = 16
         */
-        //</Snippet30> 
+        //</Snippet30>
     }
 
     // Separate namespace to have  struct and class by same name in code examples
@@ -706,7 +706,7 @@
     {
         using System;
 
-        //<Snippet31>    
+        //<Snippet31>
         public struct Person
         {
             public string Name;
@@ -750,13 +750,13 @@
             p2 Name = Spencer Age = 7
             p1 Name = Alex Age = 9
         */
-        //</Snippet31> 
+        //</Snippet31>
 
         class Equality
         {
             static void Main()
             {
-            //<Snippet32>  
+            //<Snippet32>
             // Person is defined in the previous example.
 
             //public struct Person
@@ -779,7 +779,7 @@
                 Console.WriteLine("p2 and p1 have the same values.");
 
             // Output: p2 and p1 have the same values.
-            //</Snippet32> 
+            //</Snippet32>
             }
         }
     }

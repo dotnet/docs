@@ -25,4 +25,4 @@ An error occurred while trying to access the specified file. Among the possible 
 ## See also
 
 - <xref:Microsoft.VisualBasic.FileSystem.FileOpen%2A>
-- [Visual Basic Naming Conventions](../../../visual-basic/programming-guide/program-structure/naming-conventions.md)
+- [Visual Basic Naming Conventions](../../programming-guide/program-structure/naming-conventions.md)

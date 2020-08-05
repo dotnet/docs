@@ -19,7 +19,7 @@ namespace Pipes
                 ReadResult result = await reader.ReadAsync(cancellationToken);
                 ReadOnlySequence<byte> buffer = result.Buffer;
 
-                // In the event that no message is parsed successfully, mark consumed 
+                // In the event that no message is parsed successfully, mark consumed
                 // as nothing and examined as the entire buffer.
                 SequencePosition consumed = buffer.Start;
                 SequencePosition examined = buffer.End;
@@ -28,13 +28,13 @@ namespace Pipes
                 {
                     if (TryParseMessage(ref buffer, out Message message))
                     {
-                        // A single message was successfully parsed so mark the start as the 
-                        // parsed buffer as consumed. TryParseMessage trims the buffer to 
+                        // A single message was successfully parsed so mark the start as the
+                        // parsed buffer as consumed. TryParseMessage trims the buffer to
                         // point to the data after the message was parsed.
                         consumed = buffer.Start;
 
-                        // Examined is marked the same as consumed here, so the next call 
-                        // to ReadSingleMessageAsync will process the next message if there's 
+                        // Examined is marked the same as consumed here, so the next call
+                        // to ReadSingleMessageAsync will process the next message if there's
                         // one.
                         examined = consumed;
 

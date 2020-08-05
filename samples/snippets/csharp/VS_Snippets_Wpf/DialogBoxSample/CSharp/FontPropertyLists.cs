@@ -16,7 +16,7 @@ namespace SDKSample
         static Collection<double> fontSizes;
 
         /// <summary>
-        /// Return a collection of avaliable font styles 
+        /// Return a collection of avaliable font styles
         /// </summary>
         public static ICollection<FontFamily> FontFaces
         {
@@ -32,7 +32,7 @@ namespace SDKSample
         }
 
         /// <summary>
-        /// Return a collection of avaliable font styles 
+        /// Return a collection of avaliable font styles
         /// </summary>
         public static ICollection FontStyles
         {

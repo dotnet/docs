@@ -22,7 +22,7 @@ Specifies that the compiler should not automatically reference the commonly used
 > [!NOTE]
 > The Mscorlib.dll and Microsoft.VisualBasic.dll assemblies are always referenced.  
   
- You can modify the Vbc.rsp file to specify additional compiler options that should be included in every Vbc.exe compilation (except when specifying the `-noconfig` option). For more information, see [@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md).  
+ You can modify the Vbc.rsp file to specify additional compiler options that should be included in every Vbc.exe compilation (except when specifying the `-noconfig` option). For more information, see [@ (Specify Response File)](specify-response-file.md).  
   
  The compiler processes the options passed to the `vbc` command last. Therefore, any option on the command line overrides the setting of the same option in the Vbc.rsp file.  
   
@@ -31,7 +31,7 @@ Specifies that the compiler should not automatically reference the commonly used
   
 ## See also
 
-- [-nostdlib (Visual Basic)](../../../visual-basic/reference/command-line-compiler/nostdlib.md)
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [@ (Specify Response File)](../../../visual-basic/reference/command-line-compiler/specify-response-file.md)
-- [-reference (Visual Basic)](../../../visual-basic/reference/command-line-compiler/reference.md)
+- [-nostdlib (Visual Basic)](nostdlib.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [@ (Specify Response File)](specify-response-file.md)
+- [-reference (Visual Basic)](reference.md)

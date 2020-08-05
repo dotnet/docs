@@ -12,13 +12,13 @@ ms.assetid: 9be69d50-3384-4938-886f-08ce00e4a7a6
 # Custom Animations Overview
 This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation system by creating custom key frames, animation classes, or by using per-frame callback to bypass it.  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  To understand this topic, you should be familiar with the different types of animations provided by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. For more information, see the From/To/By Animations Overview, the [Key-Frame Animations Overview](key-frame-animations-overview.md), and the [Path Animations Overview](path-animations-overview.md).  
   
  Because the animation classes inherit from the <xref:System.Windows.Freezable> class, you should be familiar with <xref:System.Windows.Freezable> objects and how to inherit from <xref:System.Windows.Freezable>. For more information, see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
   
-<a name="extendingtheanimationsystem"></a>   
+<a name="extendingtheanimationsystem"></a>
 ## Extending the Animation System  
  There are a number of ways to extend the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation system, depending on the level of built-in functionality you want to use.  There are three primary extensibility points in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation engine:  
   
@@ -37,7 +37,7 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
 |Animate a type that has no corresponding [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation|Use an <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames> or create a class that inherits from <xref:System.Windows.Media.Animation.AnimationTimeline>. For more information, see the [Create a Custom Animation Class](#createacustomanimationtype) section.|  
 |Animate multiple objects with values that are computed each frame and are based on the last set of object interactions|Use per-frame callback. For more information, see the [Create a Use Per-Frame Callback](#useperframecallback) section.|  
   
-<a name="createacustomkeyframe"></a>   
+<a name="createacustomkeyframe"></a>
 ## Create a Custom Key Frame  
  Creating a custom key frame class is the simplest way to extend the animation system. Use this approach when you want to a different interpolation method for a key-frame animation.  As described in the [Key-Frame Animations Overview](key-frame-animations-overview.md), a key-frame animation uses key frame objects to generate its output values. Each key frame object performs three functions:  
   
@@ -55,7 +55,7 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
   
  After you've created your custom *\<Type>*KeyFrame animation, you can use it with the *\<Type>*AnimationUsingKeyFrames for that type.  
   
-<a name="createacustomanimationtype"></a>   
+<a name="createacustomanimationtype"></a>
 ## Create a Custom Animation Class  
  Creating your own animation type gives you more control over how an object in animated. There are two recommended ways to create your own animation type: you can derive from the <xref:System.Windows.Media.Animation.AnimationTimeline> class or the *\<Type>*AnimationBase class. Deriving from the *\<Type>*Animation or *\<Type>*AnimationUsingKeyFrames classes is not recommended.  
   
@@ -101,7 +101,7 @@ This topic describes how and when to extend the [!INCLUDE[TLA2#tla_winclient](..
   
  If you want to animate a type that has no corresponding From/To/By animation or key-frame animation, consider using an <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames>. Because it is weakly typed, an <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames> can animate any type of value. The drawback to this approach is that <xref:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames> only supports discrete interpolation.  
   
-<a name="useperframecallback"></a>   
+<a name="useperframecallback"></a>
 ## Use Per-Frame Callback  
  Use this approach when you need to completely bypass the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation system. One scenario for this approach is physics animations, where at each animation step a new direction or position of animated objects needs to be recomputed based on the  last set of object interactions.  
   

@@ -1,5 +1,6 @@
 ---
 title: "Qualifying .NET Types for COM Interoperation"
+description: This article provides guidelines to help you expose types in a .NET assembly to COM applications for COM interop.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "exposing .NET Framework components to COM"
@@ -42,7 +43,7 @@ If you intend to expose types in an assembly to COM applications, consider the r
 ## See also
 
 - <xref:System.Runtime.InteropServices.ComVisibleAttribute>
-- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
+- [Exposing .NET Framework Components to COM](../../framework/interop/exposing-dotnet-components-to-com.md)
 - [Introducing the class interface](com-callable-wrapper.md#introducing-the-class-interface)
-- [Applying Interop Attributes](../../../docs/standard/native-interop/apply-interop-attributes.md)
-- [Packaging a .NET Framework Assembly for COM](../../../docs/framework/interop/packaging-an-assembly-for-com.md)
+- [Applying Interop Attributes](apply-interop-attributes.md)
+- [Packaging a .NET Framework Assembly for COM](../../framework/interop/packaging-an-assembly-for-com.md)

@@ -2,12 +2,10 @@
 title: Front-end client communication
 description: Learn how front-end clients communicate with cloud-native systems
 author: robvet
-ms.date: 09/08/2019
+ms.date: 05/13/2020
 ---
 
 # Front-end client communication
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 In a cloud-native system, front-end clients (mobile, web, and desktop applications) require a communication channel to interact with independent back-end microservices.  
 
@@ -66,9 +64,9 @@ Like any API Gateway, its primary functionality is to forward incoming HTTP requ
 
 Each Ocelot gateway specifies the upstream and downstream addresses and configurable features in a JSON configuration file. The client sends an HTTP request to the Ocelot gateway. Once received, Ocelot passes the HttpRequest object through its pipeline manipulating it into the state specified by its configuration. At the end of pipeline, Ocelot creates a new HTTPResponseObject and passes it to the downstream service. For the response, Ocelot reverses the pipeline, sending the response back to client.
 
-Ocelot is available as a NuGet package. It targets the NET Standard 2.0, making it compatible with both .NET Core 2.0+ and .NET Framework 4.6.1+ runtimes. Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. Ocelot is extensible and supports many modern platforms, including Docker containers, Azure Kubernetes Services, or other public clouds.  Ocelot integrates with open-source packages like [Consul](https://www.consul.io), [GraphQL](https://graphql.org), and Netflix’s [Eureka](https://github.com/Netflix/eureka).
+Ocelot is available as a NuGet package. It targets the NET Standard 2.0, making it compatible with both .NET Core 2.0+ and .NET Framework 4.6.1+ runtimes. Ocelot integrates with anything that speaks HTTP and runs on the platforms which .NET Core supports: Linux, macOS, and Windows. Ocelot is extensible and supports many modern platforms, including Docker containers, Azure Kubernetes Services, or other public clouds.  Ocelot integrates with open-source packages like [Consul](https://www.consul.io), [GraphQL](https://graphql.org), and Netflix's [Eureka](https://github.com/Netflix/eureka).
 
-Consider Ocelot for simple cloud-native applications that don’t require the rich feature-set of a commercial API gateway.
+Consider Ocelot for simple cloud-native applications that don't require the rich feature-set of a commercial API gateway.
 
 ## Azure Application Gateway
 
@@ -119,7 +117,7 @@ Azure API Management is available across [four different tiers](https://azure.mi
 
 The Developer tier is meant for non-production workloads and evaluation. The other tiers offer progressively more power, features, and higher service level agreements (SLAs). The Premium tier provides [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) and [multi-region support](https://docs.microsoft.com/azure/api-management/api-management-howto-deploy-multi-region). All tiers have a fixed price per hour.
 
-Recently, Microsoft announced a [API Management serverless tier](https://azure.microsoft.com/blog/announcing-azure-api-management-for-serverless-architectures/) for Azure API Management. Referred to as the *consumption pricing tier*, the service is a variant of API Management designed around the serverless computing model. Unlike the “pre-allocated” pricing tiers previously shown, the consumption tier provides  instant provisioning and pay-per-action pricing.
+The Azure cloud also offers a [serverless tier](https://azure.microsoft.com/blog/announcing-azure-api-management-for-serverless-architectures/) for Azure API Management. Referred to as the *consumption pricing tier*, the service is a variant of API Management designed around the serverless computing model. Unlike the "pre-allocated" pricing tiers previously shown, the consumption tier provides  instant provisioning and pay-per-action pricing.
 
 It enables API Gateway features for the following use cases:
 
@@ -136,8 +134,6 @@ The consumption tier uses the same underlying service API Management components,
 - Cost is based on actual usage.
   
 The new consumption tier is a great choice for cloud-native systems that expose serverless resources as APIs.
-
-> At the time of writing, the consumption tier is in preview in the Azure cloud.
 
 ## Real-time communication
 

@@ -12,23 +12,23 @@
 namespace CodeDOMSample
 {
     using System;
-    
-    
+
+
     public sealed class CodeDOMCreatedClass
     {
-        
+
         // The width of the object.
         private double widthValue;
-        
+
         // The height of the object.
         private double heightValue;
-        
+
         public CodeDOMCreatedClass(double width, double height)
         {
             this.widthValue = width;
             this.heightValue = height;
         }
-        
+
         // The Width property for the object.
         public double Width
         {
@@ -37,7 +37,7 @@ namespace CodeDOMSample
                 return this.widthValue;
             }
         }
-        
+
         // The Height property for the object.
         public double Height
         {
@@ -46,7 +46,7 @@ namespace CodeDOMSample
                 return this.heightValue;
             }
         }
-        
+
         // The Area property for the object.
         public double Area
         {
@@ -55,14 +55,14 @@ namespace CodeDOMSample
                 return (this.widthValue * this.heightValue);
             }
         }
-        
+
         public override string ToString()
         {
             return string.Format(
-                "The object:\r\n width = {0},\r\n height = {1},\r\n area = {2}", 
+                "The object:\r\n width = {0},\r\n height = {1},\r\n area = {2}",
                 this.Width, this.Height, this.Area);
         }
-        
+
         public static void Main()
         {
             CodeDOMCreatedClass testClass = new CodeDOMCreatedClass(5.3, 6.9);

@@ -13,10 +13,10 @@ The <xref:System.Threading.SpinLock> structure is a low-level, mutual-exclusion 
   
  Because SpinLock is a value type, you must explicitly pass it by reference if you intend the two copies to refer to the same lock.  
   
- For more information about how to use this type, see <xref:System.Threading.SpinLock?displayProperty=nameWithType>. For an example, see [How to: Use SpinLock for Low-Level Synchronization](../../../docs/standard/threading/how-to-use-spinlock-for-low-level-synchronization.md).  
+ For more information about how to use this type, see <xref:System.Threading.SpinLock?displayProperty=nameWithType>. For an example, see [How to: Use SpinLock for Low-Level Synchronization](how-to-use-spinlock-for-low-level-synchronization.md).  
   
- <xref:System.Threading.SpinLock> supports a *thread*-*tracking* mode that you can use during the development phase to help track the thread that is holding the lock at a specific time. Thread-tracking mode is very useful for debugging, but we recommend that you turn it off in the release version of your program because it may slow performance. For more information, see [How to: Enable Thread-Tracking Mode in SpinLock](../../../docs/standard/threading/how-to-enable-thread-tracking-mode-in-spinlock.md).  
+ <xref:System.Threading.SpinLock> supports a *thread*-*tracking* mode that you can use during the development phase to help track the thread that is holding the lock at a specific time. Thread-tracking mode is very useful for debugging, but we recommend that you turn it off in the release version of your program because it may slow performance. For more information, see [How to: Enable Thread-Tracking Mode in SpinLock](how-to-enable-thread-tracking-mode-in-spinlock.md).  
   
 ## See also
 
-- [Threading Objects and Features](../../../docs/standard/threading/threading-objects-and-features.md)
+- [Threading Objects and Features](threading-objects-and-features.md)

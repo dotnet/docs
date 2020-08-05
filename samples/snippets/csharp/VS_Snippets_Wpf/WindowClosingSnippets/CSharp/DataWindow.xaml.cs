@@ -27,11 +27,11 @@ namespace CSharp
             if (this.isDataDirty)
             {
                 string msg = "Data is dirty. Close without saving?";
-                MessageBoxResult result = 
+                MessageBoxResult result =
                   MessageBox.Show(
-                    msg, 
-                    "Data App", 
-                    MessageBoxButton.YesNo, 
+                    msg,
+                    "Data App",
+                    MessageBoxButton.YesNo,
                     MessageBoxImage.Warning);
                 if (result == MessageBoxResult.No)
                 {

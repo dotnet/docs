@@ -14,7 +14,7 @@ ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
  .NET Framework 4 introduces a new attribute called <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> that allows you to specify a cache profile name. This attribute is applied to a service operation. The following example applies the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to a service to enable ASP.NET compatibility and configures the `GetCustomer` operation for caching. The <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute specifies a cache profile that contains the cache settings to be used.  
   
 ```csharp
-[ServiceContract] 
+[ServiceContract]
 [AspNetCompatibilityRequirements(RequirementsMode=AspNetCompatibilityRequirementsMode.Allowed)]
 public class Service
 {
@@ -152,7 +152,7 @@ public Customer GetCustomer(string id)
         // since when the client last retrieved it
         WebOperationContext.Current.IncomingRequest.CheckConditionalRetrieve((long)itemEtag);
         Customer result = this.customers[id] as Customer;
-        
+
         // set the customer etag before returning the result
         WebOperationContext.Current.OutgoingResponse.SetETag((long)itemEtag);
         return result;

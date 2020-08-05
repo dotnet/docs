@@ -33,8 +33,8 @@ namespace DataViewSamples
 
         private void FillDataSet(DataSet ds)
         {
-            // Create a new adapter and give it a query to fetch sales order, contact, 
-            // address, and product information for sales in the year 2002. Point connection 
+            // Create a new adapter and give it a query to fetch sales order, contact,
+            // address, and product information for sales in the year 2002. Point connection
             // information to the configuration setting "AdventureWorks".
             string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
                 + "Integrated Security=true;";
@@ -200,7 +200,7 @@ namespace DataViewSamples
                 value = buffer.ToString();
             }
             // Return the value.
-            return value;            
+            return value;
         }
         // </SnippetSoundEx>
 
@@ -216,7 +216,7 @@ namespace DataViewSamples
                 select order;
 
             DataView view = query.AsDataView();
-            
+
             bindingSource1.DataSource = view;
             // </SnippetCreateLDVFromQuery1>
         }
@@ -246,7 +246,7 @@ namespace DataViewSamples
             DataTable contacts = dataSet.Tables["Contact"];
 
             EnumerableRowCollection<DataRow> query = from contact in contacts.AsEnumerable()
-                                                     where contact.Field<string>("LastName").StartsWith("S")                                                     
+                                                     where contact.Field<string>("LastName").StartsWith("S")
                                                      select contact;
 
             DataView view = query.AsDataView();
@@ -272,7 +272,7 @@ namespace DataViewSamples
 
         private void button5_Click(object sender, EventArgs e)
         {
-            
+
             // <SnippetCreateLDVFromTable>
             DataTable orders = dataSet.Tables["SalesOrderDetail"];
 
@@ -342,7 +342,7 @@ namespace DataViewSamples
                 select order;
 
             DataView view = query.AsDataView();
-            
+
             bindingSource1.DataSource = view;
 
             // </SnippetCreateLDVFromQueryOrderBy2>
@@ -383,7 +383,7 @@ namespace DataViewSamples
             DataTable orders = dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
-                                                     orderby order.Field<decimal>("TotalDue") 
+                                                     orderby order.Field<decimal>("TotalDue")
                                                      select order;
 
             DataView view = query.AsDataView();
@@ -449,7 +449,7 @@ namespace DataViewSamples
             DataTable orders = dataSet.Tables["SalesOrderDetail"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
-                                                     where order.Field<Int16>("OrderQty") > 2 && order.Field<Int16>("OrderQty") < 6 
+                                                     where order.Field<Int16>("OrderQty") > 2 && order.Field<Int16>("OrderQty") < 6
                                                      select order;
 
             DataView view = query.AsDataView();
@@ -471,7 +471,7 @@ namespace DataViewSamples
 
             bindingSource1.DataSource = view;
             dataGridView1.AutoResizeColumns();
-            
+
            // </SnippetLDVFromQueryWhere2>
         }
 
@@ -481,7 +481,7 @@ namespace DataViewSamples
             DataTable orders = dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
-                                                     where order.Field<DateTime>("OrderDate") > new DateTime(2002, 6, 1) 
+                                                     where order.Field<DateTime>("OrderDate") > new DateTime(2002, 6, 1)
                                                      select order;
 
             DataView view = query.AsDataView();
@@ -546,7 +546,7 @@ namespace DataViewSamples
             DataTable products = dataSet.Tables["Product"];
 
             EnumerableRowCollection<DataRow> query = from product in products.AsEnumerable()
-                                                     orderby product.Field<Decimal>("ListPrice"), product.Field<string>("Color") 
+                                                     orderby product.Field<Decimal>("ListPrice"), product.Field<string>("Color")
                                                      select product;
 
             DataView view = query.AsDataView();
@@ -555,7 +555,7 @@ namespace DataViewSamples
 
             object[] criteria = new object[] { "Red"};
 
-            DataRowView[] foundRowsView = view.FindRows(criteria);            
+            DataRowView[] foundRowsView = view.FindRows(criteria);
             // </SnippetLDVFromQueryFindRows>
         }
 
@@ -583,7 +583,7 @@ namespace DataViewSamples
             DataTable orders = dataSet.Tables["SalesOrderHeader"];
 
             EnumerableRowCollection<DataRow> query = from order in orders.AsEnumerable()
-                                                     where order.Field<DateTime>("OrderDate") > new DateTime(2002, 11, 20) 
+                                                     where order.Field<DateTime>("OrderDate") > new DateTime(2002, 11, 20)
                                                         && order.Field<Decimal>("TotalDue") < new Decimal(60.00)
                                                      select order;
 
@@ -630,7 +630,7 @@ namespace DataViewSamples
 
         private void button27_Click(object sender, EventArgs e)
         {
-            
+
             DataTable products = dataSet.Tables["Product"];
 
             // Query for red colored products.
@@ -643,11 +643,11 @@ namespace DataViewSamples
 
             bindingSource1.DataSource = boundView;
             // <SnippetQueryDataView1>
-            // Create a table from the bound view representing a query of 
+            // Create a table from the bound view representing a query of
             // available products.
             DataView view = (DataView)bindingSource1.DataSource;
-            DataTable productsTable = (DataTable)view.Table;            
-                        
+            DataTable productsTable = (DataTable)view.Table;
+
             // Set RowStateFilter to display the current rows.
             view.RowStateFilter = DataViewRowState.CurrentRows ;
 
@@ -658,7 +658,7 @@ namespace DataViewSamples
                                select new { Name = rowView.Row.Field<string>("Name"),
                                             Color = rowView.Row.Field<string>("Color"),
                                             Price = rowView.Row.Field<decimal>("ListPrice")};
-            
+
             // Bind the query results to another DataGridView.
             dataGridView2.DataSource = productQuery.ToList();
             // </SnippetQueryDataView1>
@@ -692,7 +692,7 @@ namespace DataViewSamples
             // Query for the modified and deleted rows.
             IEnumerable<DataRowView> modifiedDeletedQuery = from DataRowView rowView in view
                                                             select rowView;
-            
+
             dataGridView2.DataSource = modifiedDeletedQuery.ToList();
             // </SnippetQueryDataView2>
         }

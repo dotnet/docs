@@ -7,9 +7,9 @@ public class Example
    public static void Main()
    {
       string pattern = @"\b\w+(?=\sis\b)";
-      string[] inputs = { "The dog is a Malamute.", 
-                          "The island has beautiful birds.", 
-                          "The pitch missed home plate.", 
+      string[] inputs = { "The dog is a Malamute.",
+                          "The island has beautiful birds.",
+                          "The pitch missed home plate.",
                           "Sunday is a weekend day." };
 
       foreach (string input in inputs)
@@ -18,7 +18,7 @@ public class Example
          if (match.Success)
             Console.WriteLine("'{0}' precedes 'is'.", match.Value);
          else
-            Console.WriteLine("'{0}' does not match the pattern.", input); 
+            Console.WriteLine("'{0}' does not match the pattern.", input);
       }
    }
 }

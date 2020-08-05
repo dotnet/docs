@@ -27,10 +27,10 @@ namespace NorthwindStreamingClient
         private Employees currentEmployee;
 
         // Ideally, the service URI should be stored in the settings file.
-        private Uri svcUri = 
-            new Uri("http://" + Environment.MachineName + 
+        private Uri svcUri =
+            new Uri("http://" + Environment.MachineName +
                 "/NorthwindStreaming/NorthwindStreaming.svc");
-        
+
         public CustomerPhotoWindow()
         {
             InitializeComponent();
@@ -80,24 +80,24 @@ namespace NorthwindStreamingClient
             // Get the currently selected employee.
             currentEmployee =
                 (Employees)this.employeesComboBox.SelectedItem;
-            
+
             try
             {
                 //<snippetGetReadStreamClient>
-                // Get the read stream for the Media Resource of the currently selected 
+                // Get the read stream for the Media Resource of the currently selected
                 // entity (Media Link Entry).
                 using (DataServiceStreamResponse response =
                     context.GetReadStream(currentEmployee, "image/bmp"))
                 {
-                    // Use the returned binary stream to create a bitmap image that is 
+                    // Use the returned binary stream to create a bitmap image that is
                     // the source of the image control.
                     employeeImage.Source = CreateBitmapFromStream(response.Stream);
                 }
                 //</snippetGetReadStreamClient>
 
                 //<snippetGetReadStreamClientUri>
-                // Get the read stream URI for the Media Resource of the currently selected 
-                // entity (Media Link Entry), and use it to create a bitmap image that is 
+                // Get the read stream URI for the Media Resource of the currently selected
+                // entity (Media Link Entry), and use it to create a bitmap image that is
                 // the source of the image control.
                 employeeImage.Source = new BitmapImage(context.GetReadStreamUri(currentEmployee));
                 //</snippetGetReadStreamClientUri>
@@ -125,12 +125,12 @@ namespace NorthwindStreamingClient
                     // Use the FileStream to open an existing image file.
                     FileStream imageStream =
                         new FileStream(openImage.FileName, FileMode.Open);
-                    
-                    // Set the file stream as the source of binary stream 
-                    // to send to the data service. Allow the context to 
+
+                    // Set the file stream as the source of binary stream
+                    // to send to the data service. Allow the context to
                     // close the filestream.
-                    context.SetSaveStream(currentEmployee, 
-                        imageStream, true, "image/bmp", 
+                    context.SetSaveStream(currentEmployee,
+                        imageStream, true, "image/bmp",
                         string.Empty);
 
                     // Upload the binary stream to the data service.
@@ -139,7 +139,7 @@ namespace NorthwindStreamingClient
 
                     imageStream =
                         new FileStream(openImage.FileName, FileMode.Open);
-                    
+
                     employeeImage.Source = CreateBitmapFromStream(imageStream);
                 }
             }
@@ -148,7 +148,7 @@ namespace NorthwindStreamingClient
                 MessageBox.Show(ex.InnerException.Message);
             }
         }
-        
+
         private BitmapImage CreateBitmapFromStream(Stream stream)
         {
             try

@@ -1,12 +1,13 @@
 ---
 title: "Object-Oriented Programming (C#)"
-ms.date: 02/08/2020
+ms.date: 05/13/2020
 ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
 ---
 # Object-Oriented programming (C#)
 
-C# provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.
+C# provides full support for object-oriented programming including abstraction, encapsulation, inheritance, and polymorphism.
 
+- *Abstraction* means hiding the unnecessary details from type consumers.
 - *Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.
 - *Inheritance* describes the ability to create new classes based on an existing class.
 - *Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
@@ -23,7 +24,7 @@ class SampleClass
 }
 ```
 
-C# also provides types called *structures* that are useful when you don't need support for inheritance or polymorphism.
+C# also provides types called *structures* that are useful when you don't need support for inheritance or polymorphism. For more information, see [Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md).
 
 To define a structure:
 
@@ -86,7 +87,6 @@ Most properties have methods or procedures to both set and get the property valu
 For more information, see:
 
 - [get](../../language-reference/keywords/get.md)
-
 - [set](../../language-reference/keywords/set.md)
 
 #### Methods
@@ -98,7 +98,7 @@ To define a method of a class:
 ```csharp
 class SampleClass
 {
-    public int sampleMethod(string sampleParam)
+    public int SampleMethod(string sampleParam)
     {
         // Insert code here
     }
@@ -110,8 +110,8 @@ A class can have several implementations, or *overloads*, of the same method tha
 To overload a method:
 
 ```csharp
-public int sampleMethod(string sampleParam) {}
-public int sampleMethod(int sampleParam) {}
+public int SampleMethod(string sampleParam) { }
+public int SampleMethod(int sampleParam) { }
 ```
 
 In most cases you declare a method within a class definition. However, C# also supports *extension methods* that allow you to add methods to an existing class outside the actual definition of the class.
@@ -141,18 +141,16 @@ For more information, see [Constructors](../classes-and-structs/constructors.md)
 
 #### Finalizers
 
-Finalizers are used to destruct instances of classes. In the .NET Framework, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need finalizers to clean up any unmanaged resources that your application creates. There can be only one finalizers for a class.
+A finalizer is used to destruct instances of classes. In .NET, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need finalizers to clean up any unmanaged resources that your application creates. There can be only one finalizer for a class.
 
-For more information about finalizers and garbage collection in the .NET Framework, see [Garbage Collection](../../../standard/garbage-collection/index.md).
+For more information about finalizers and garbage collection in .NET, see [Garbage Collection](../../../standard/garbage-collection/index.md).
 
 #### Events
 
 Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../../../standard/events/index.md).
 
 - To declare an event in a class, use the [event](../../language-reference/keywords/event.md) keyword.
-
 - To raise an event, invoke the event delegate.
-
 - To subscribe to an event, use the `+=` operator; to unsubscribe from an event, use the `-=` operator.
 
 #### Nested classes
@@ -181,14 +179,14 @@ All classes and class members can specify what access level they provide to othe
 
 The following access modifiers are available:
 
-|C# Modifier|Definition|
-|------------------|----------------|
-|[public](../../language-reference/keywords/public.md)|The type or member can be accessed by any other code in the same assembly or another assembly that references it.|
-|[private](../../language-reference/keywords/private.md)|The type or member can only be accessed by code in the same class.|
-|[protected](../../language-reference/keywords/protected.md)|The type or member can only be accessed by code in the same class or in a derived class.|
-|[internal](../../language-reference/keywords/internal.md)|The type or member can be accessed by any code in the same assembly, but not from another assembly.|
-|[protected internal](../../language-reference/keywords/protected-internal.md)|The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.|
-|[private protected](../../language-reference/keywords/private-protected.md)|The type or member can be accessed by code in the same class or in a derived class within the base class assembly.|
+| C# Modifier | Definition |
+|--|--|
+| [public](../../language-reference/keywords/public.md) | The type or member can be accessed by any other code in the same assembly or another assembly that references it. |
+| [private](../../language-reference/keywords/private.md) | The type or member can only be accessed by code in the same class. |
+| [protected](../../language-reference/keywords/protected.md) | The type or member can only be accessed by code in the same class or in a derived class. |
+| [internal](../../language-reference/keywords/internal.md) | The type or member can be accessed by any code in the same assembly, but not from another assembly. |
+| [protected internal](../../language-reference/keywords/protected-internal.md) | The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly. |
+| [private protected](../../language-reference/keywords/private-protected.md) | The type or member can be accessed by code in the same class or in a derived class within the base class assembly. |
 
 For more information, see [Access Modifiers](../classes-and-structs/access-modifiers.md).
 
@@ -206,15 +204,18 @@ After instantiating a class, you can assign values to the instance's properties 
 // Set a property value.
 sampleObject.sampleProperty = "Sample String";
 // Call a method.
-sampleObject.sampleMethod();
+sampleObject.SampleMethod();
 ```
 
 To assign values to properties during the class instantiation process, use object initializers:
 
 ```csharp
 // Set a property value.
-SampleClass sampleObject = new SampleClass
-    { FirstProperty = "A", SecondProperty = "B" };
+var sampleObject = new SampleClass
+{
+    FirstProperty = "A",
+    SecondProperty = "B"
+};
 ```
 
 For more information, see:
@@ -253,8 +254,11 @@ To create an instance of an anonymous type:
 
 ```csharp
 // sampleObject is an instance of a simple anonymous type.
-var sampleObject =
-    new { FirstProperty = "A", SecondProperty = "B" };
+var sampleObject = new
+{
+    FirstProperty = "A",
+    SecondProperty = "B"
+};
 ```
 
 For more information, see: [Anonymous Types](../classes-and-structs/anonymous-types.md).
@@ -269,7 +273,7 @@ Inheritance enables you to create a new class that reuses, extends, and modifies
 To inherit from a base class:
 
 ```csharp
-class DerivedClass:BaseClass {}
+class DerivedClass:BaseClass { }
 ```
 
 By default all classes can be inherited. However, you can specify whether a class must not be used as a base class, or create a class that can be used as a base class only.
@@ -289,7 +293,6 @@ public abstract class B { }
 For more information, see:
 
 - [sealed](../../language-reference/keywords/sealed.md)
-
 - [abstract](../../language-reference/keywords/abstract.md)
 
 ### Overriding Members
@@ -298,12 +301,12 @@ By default, a derived class inherits all members from its base class. If you wan
 
 The following modifiers are used to control how properties and methods are overridden:
 
-|C# Modifier|Definition|
-|------------------|----------------|
-|[virtual](../../language-reference/keywords/virtual.md)|Allows a class member to be overridden in a derived class.|
-|[override](../../language-reference/keywords/override.md)|Overrides a virtual (overridable) member defined in the base class.|
-|[abstract](../../language-reference/keywords/abstract.md)|Requires that a class member to be overridden in the derived class.|
-|[new Modifier](../../language-reference/keywords/new-modifier.md)|Hides a member inherited from a base class|
+| C# Modifier | Definition |
+|--|--|
+| [virtual](../../language-reference/keywords/virtual.md) | Allows a class member to be overridden in a derived class. |
+| [override](../../language-reference/keywords/override.md) | Overrides a virtual (overridable) member defined in the base class. |
+| [abstract](../../language-reference/keywords/abstract.md) | Requires that a class member to be overridden in the derived class. |
+| [new Modifier](../../language-reference/keywords/new-modifier.md) | Hides a member inherited from a base class |
 
 ## Interfaces
 
@@ -314,7 +317,7 @@ To define an interface:
 ```csharp
 interface ISampleInterface
 {
-    void doSomething();
+    void DoSomething();
 }
 ```
 
@@ -323,7 +326,7 @@ To implement an interface in a class:
 ```csharp
 class SampleClass : ISampleInterface
 {
-    void ISampleInterface.doSomething()
+    void ISampleInterface.DoSomething()
     {
         // Method implementation.
     }
@@ -334,7 +337,7 @@ For more information, see the programming guide article on [Interfaces](../inter
 
 ## Generics
 
-Classes, structures, interfaces and methods in the .NET Framework can include *type parameters* that define types of objects that they can store or use. The most common example of generics is a collection, where you can specify the type of objects to be stored in a collection.
+Classes, structures, interfaces, and methods in .NET can include *type parameters* that define types of objects that they can store or use. The most common example of generics is a collection, where you can specify the type of objects to be stored in a collection.
 
 To define a generic class:
 
@@ -348,15 +351,14 @@ public class SampleGeneric<T>
 To create an instance of a generic class:
 
 ```csharp
-SampleGeneric<string> sampleObject = new SampleGeneric<string>();
+var sampleObject = new SampleGeneric<string>();
 sampleObject.Field = "Sample string";
 ```
 
 For more information, see:
 
-- [Generics](../../../standard/generics/index.md)
-
-- [Generics](../generics/index.md)
+- [Generics in .NET](../../../standard/generics/index.md)
+- [Generics - C# Programming Guide](../generics/index.md)
 
 ## Delegates
 
@@ -377,10 +379,11 @@ To create a reference to a method that matches the signature specified by the de
 class SampleClass
 {
     // Method that matches the SampleDelegate signature.
-    public static void sampleMethod(string message)
+    public static void SampleMethod(string message)
     {
         // Add code here.
     }
+
     // Method that instantiates the delegate.
     void SampleDelegate()
     {

@@ -1,4 +1,4 @@
-﻿int a = 5;             
+﻿int a = 5;
 int b = a + 2; //OK
 
 bool test = true;

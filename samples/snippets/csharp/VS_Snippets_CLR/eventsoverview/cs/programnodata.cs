@@ -21,7 +21,7 @@ namespace ConsoleApplication1
         static void c_ThresholdReached(object sender, EventArgs e)
         {
             Console.WriteLine("The threshold was reached.");
-            Environment.Exit(0); 
+            Environment.Exit(0);
         }
     }
 

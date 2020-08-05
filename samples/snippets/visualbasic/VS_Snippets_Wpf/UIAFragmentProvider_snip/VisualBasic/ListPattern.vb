@@ -1,4 +1,4 @@
-﻿ '************************************************************************************************
+﻿'************************************************************************************************
 ' *
 ' * File: ListPattern.cs
 ' *
@@ -33,22 +33,22 @@ Class ListPattern
     Implements ISelectionProvider
     Private MyList As ArrayList
     Private SelectedIndex As Integer
-    
-    
+
+
     ''' <summary>
     ''' Constructor
     ''' </summary>
     ''' <param name="list">List box that this pattern supports.</param>
     ''' <param name="index">Index of the selected item.</param>
-    Public Sub New(ByVal list As ArrayList, ByVal index As Integer) 
+    Public Sub New(ByVal list As ArrayList, ByVal index As Integer)
         MyList = list
         SelectedIndex = index
-    
+
     End Sub
-    
+
     ' <Snippet119>
-    #Region "ISelectionProvider Members"
-    
+#Region "ISelectionProvider Members"
+
     ' <Snippet108>
     ''' <summary>
     ''' Specifies whether selection of more than one item at a time is supported.
@@ -65,14 +65,14 @@ Class ListPattern
     ''' Specifies whether the list has to have an item selected at all times.
     ''' </summary>
     ' <Snippet109>
-    
+
     Public ReadOnly Property IsSelectionRequired() As Boolean _
         Implements ISelectionProvider.IsSelectionRequired
         Get
             Return True
         End Get
     End Property
-    
+
     ' </Snippet109>
     ' <Snippet110>
     ''' <summary>
@@ -96,7 +96,7 @@ Class ListPattern
 
     End Function 'GetSelection 
     ' </Snippet110>
-    #End Region
+#End Region
     Private Members As ISelectionProvider
     ' </Snippet119>
 End Class

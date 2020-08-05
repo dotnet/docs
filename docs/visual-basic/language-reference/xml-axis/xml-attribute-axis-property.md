@@ -38,7 +38,7 @@ object.@<attribute>
 |Part|Description|  
 |----------|-----------------|  
 |`prefix`|Optional. XML namespace prefix for the attribute. Must be a global XML namespace defined with an `Imports` statement.|  
-|`name`|Required. Local attribute name. See [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
+|`name`|Required. Local attribute name. See [Names of Declared XML Elements and Attributes](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md).|  
   
  \>  
  Optional. Denotes the end of the name of the attribute when `attribute` is not a valid identifier in Visual Basic.  
@@ -54,7 +54,7 @@ object.@<attribute>
  The naming rules for XML attributes differ from the naming rules for Visual Basic identifiers. To access an XML attribute that has a name that is not a valid Visual Basic identifier, enclose the name in angle brackets (\< and >).  
   
 ## XML Namespaces  
- The name in an attribute axis property can use only XML namespace prefixes declared globally by using the `Imports` statement. It cannot use XML namespace prefixes declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../../../visual-basic/language-reference/statements/imports-statement-xml-namespace.md).  
+ The name in an attribute axis property can use only XML namespace prefixes declared globally by using the `Imports` statement. It cannot use XML namespace prefixes declared locally within XML element literals. For more information, see [Imports Statement (XML Namespace)](../statements/imports-statement-xml-namespace.md).  
   
 ## Example  
  The following example shows how to get the values of the XML attributes named `type` from a collection of XML elements that are named `phone`.  
@@ -103,7 +103,7 @@ object.@<attribute>
 ## See also
 
 - <xref:System.Xml.Linq.XElement>
-- [XML Axis Properties](../../../visual-basic/language-reference/xml-axis/index.md)
-- [XML Literals](../../../visual-basic/language-reference/xml-literals/index.md)
-- [Creating XML in Visual Basic](../../../visual-basic/programming-guide/language-features/xml/creating-xml.md)
-- [Names of Declared XML Elements and Attributes](../../../visual-basic/programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)
+- [XML Axis Properties](index.md)
+- [XML Literals](../xml-literals/index.md)
+- [Creating XML in Visual Basic](../../programming-guide/language-features/xml/creating-xml.md)
+- [Names of Declared XML Elements and Attributes](../../programming-guide/language-features/xml/names-of-declared-xml-elements-and-attributes.md)

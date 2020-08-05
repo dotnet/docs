@@ -21,7 +21,7 @@ You can use the async feature to access files. By using the async feature, you c
 ## Running the Examples  
  To run the examples in this topic, you can create a **WPF Application** or a **Windows Forms Application** and then add a **Button**. In the button's `Click` event, add a call to the first method in each example.  
   
- In the following examples, include the following `using` statements.  
+ In the following examples, include the following `using` directives.  
   
 ```csharp  
 using System;  

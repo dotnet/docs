@@ -1,5 +1,6 @@
 ---
 title: "Automatic Proxy Detection"
+description: Learn about automatic proxy detection, where the system identifies a web proxy server and uses it to send requests on behalf of the client.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -56,7 +57,7 @@ Public Shared Sub DisableForMyRequest(ByVal resource As Uri)
     Dim request As WebRequest = WebRequest.Create(resource)  
     request.Proxy = Nothing  
     Dim response As WebResponse = request.GetResponse()  
-    End Sub   
+    End Sub
 ```  
   
  Requests that do not have a proxy use your application domain's default proxy, which is available in the <xref:System.Net.WebRequest.DefaultWebProxy%2A> property.  

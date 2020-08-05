@@ -70,5 +70,5 @@ HRESULT DefineLocalVariable2(
   
 ## See also
 
-- [ISymUnmanagedWriter2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter2-interface.md)
-- [DefineLocalVariable Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-definelocalvariable-method.md)
+- [ISymUnmanagedWriter2 Interface](isymunmanagedwriter2-interface.md)
+- [DefineLocalVariable Method](isymunmanagedwriter-definelocalvariable-method.md)

@@ -11,7 +11,7 @@ namespace SDKSample
     public class app : Application
     {
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);

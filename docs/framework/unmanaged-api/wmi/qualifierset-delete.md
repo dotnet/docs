@@ -24,10 +24,10 @@ Deletes a specified qualifier by name.
   
 ```cpp  
 HRESULT QualifierSet_Delete (
-   [in] int                  vFunc, 
-   [in] IWbemQualifierSet*   ptr, 
+   [in] int                  vFunc,
+   [in] IWbemQualifierSet*   ptr,
    [in] LPCWSTR              wszName
-); 
+);
 ```  
 
 ## Parameters
@@ -35,10 +35,10 @@ HRESULT QualifierSet_Delete (
 `vFunc`  
 [in] This parameter is unused.
 
-`ptr`   
+`ptr`
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
-`wszName`   
+`wszName`
 [in] The name of the qualifier to delete.
 
 ## Return value

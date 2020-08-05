@@ -12,7 +12,7 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
     // Displays the sample.
     public class app : Application
     {
-    
+
         public app()
         {
         }
@@ -27,22 +27,22 @@ namespace Microsoft.Samples.Animation.AnimatePathShapeSample
         {
             // Create the application's main window.
             NavigationWindow myWindow = new NavigationWindow();
-            
+
             // Display the sample
             Page myContent = new EllipseGeometryExample();
             myWindow.Navigate(myContent);
             MainWindow = myWindow;
             myWindow.Show();
-        }      
+        }
     }
-    
+
     // Starts the application.
     internal sealed class EntryClass
     {
         [System.STAThread()]
         private static void Main ()
         {
-            
+
             app app = new app ();
             app.Run ();
         }

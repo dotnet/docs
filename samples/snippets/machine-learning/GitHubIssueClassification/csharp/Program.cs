@@ -22,23 +22,23 @@ namespace GitHubIssueClassification
         // </SnippetDeclareGlobalVariables>
         static void Main(string[] args)
         {
-            // Create MLContext to be shared across the model creation workflow objects 
+            // Create MLContext to be shared across the model creation workflow objects
             // Set a random seed for repeatable/deterministic results across multiple trainings.
             // <SnippetCreateMLContext>
             _mlContext = new MLContext(seed: 0);
             // </SnippetCreateMLContext>
 
-            // STEP 1: Common data loading configuration 
+            // STEP 1: Common data loading configuration
             // CreateTextReader<GitHubIssue>(hasHeader: true) - Creates a TextLoader by inferencing the dataset schema from the GitHubIssue data model type.
             // .Read(_trainDataPath) - Loads the training text file into an IDataView (_trainingDataView) and maps from input columns to IDataView columns.
             Console.WriteLine($"=============== Loading Dataset  ===============");
-            
+
             // <SnippetLoadTrainData>
             _trainingDataView = _mlContext.Data.LoadFromTextFile<GitHubIssue>(_trainDataPath,hasHeader: true);
             // </SnippetLoadTrainData>
 
             Console.WriteLine($"=============== Finished Loading Dataset  ===============");
-            
+
             // <SnippetSplitData>
             //   var (trainData, testData) = _mlContext.MulticlassClassification.TrainTestSplit(_trainingDataView, testFraction: 0.1);
             // </SnippetSplitData>
@@ -80,7 +80,7 @@ namespace GitHubIssueClassification
                             // </SnippetAppendCache>
 
             Console.WriteLine($"=============== Finished Processing Data ===============");
-            
+
             // <SnippetReturnPipeline>
             return pipeline;
             // </SnippetReturnPipeline>
@@ -91,17 +91,17 @@ namespace GitHubIssueClassification
             // STEP 3: Create the training algorithm/trainer
             // Use the multi-class SDCA algorithm to predict the label using features.
             //Set the trainer/algorithm and map label to value (original readable state)
-            // <SnippetAddTrainer> 
+            // <SnippetAddTrainer>
             var trainingPipeline = pipeline.Append(_mlContext.MulticlassClassification.Trainers.SdcaMaximumEntropy("Label", "Features"))
                     .Append(_mlContext.Transforms.Conversion.MapKeyToValue("PredictedLabel"));
-            // </SnippetAddTrainer> 
+            // </SnippetAddTrainer>
 
             // STEP 4: Train the model fitting to the DataSet
             Console.WriteLine($"=============== Training the model  ===============");
 
-            // <SnippetTrainModel> 
+            // <SnippetTrainModel>
             _trainedModel = trainingPipeline.Fit(trainingDataView);
-            // </SnippetTrainModel> 
+            // </SnippetTrainModel>
             Console.WriteLine($"=============== Finished Training the model Ending time: {DateTime.Now.ToString()} ===============");
 
             // (OPTIONAL) Try/test a single prediction with the "just-trained model" (Before saving the model)
@@ -111,7 +111,7 @@ namespace GitHubIssueClassification
             // <SnippetCreatePredictionEngine1>
             _predEngine = _mlContext.Model.CreatePredictionEngine<GitHubIssue, IssuePrediction>(_trainedModel);
             // </SnippetCreatePredictionEngine1>
-            // <SnippetCreateTestIssue1> 
+            // <SnippetCreateTestIssue1>
             GitHubIssue issue = new GitHubIssue() {
                 Title = "WebSockets communication is slow in my machine",
                 Description = "The WebSockets communication used under the covers by SignalR looks like is going slow in my development machine.."
@@ -167,12 +167,12 @@ namespace GitHubIssueClassification
         public static void PredictIssue()
         {
             // <SnippetLoadModel>
-            ITransformer loadedModel = _mlContext.Model.Load(_modelPath, out var modelInputSchema);            
+            ITransformer loadedModel = _mlContext.Model.Load(_modelPath, out var modelInputSchema);
             // </SnippetLoadModel>
 
-            // <SnippetAddTestIssue> 
+            // <SnippetAddTestIssue>
             GitHubIssue singleIssue = new GitHubIssue() { Title = "Entity Framework crashes", Description = "When connecting to the database, EF is crashing" };
-            // </SnippetAddTestIssue> 
+            // </SnippetAddTestIssue>
 
             //Predict label for single hard-coded issue
             // <SnippetCreatePredictionEngine>
@@ -190,7 +190,7 @@ namespace GitHubIssueClassification
 
         private static void SaveModelAsFile(MLContext mlContext,DataViewSchema trainingDataViewSchema, ITransformer model)
         {
-            // <SnippetSaveModel> 
+            // <SnippetSaveModel>
             mlContext.Model.Save(model, trainingDataViewSchema, _modelPath);
             // </SnippetSaveModel>
 

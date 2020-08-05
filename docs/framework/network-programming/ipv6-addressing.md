@@ -1,5 +1,6 @@
 ---
 title: "IPv6 Addressing"
+description: Learn about Internet Protocol version 6 (IPv6), addresses, including text representation and address types.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Internet Protocol version 6, addresses in"

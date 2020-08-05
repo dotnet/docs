@@ -32,7 +32,7 @@ HRESULT GetLength (
  [out] A pointer to a value that specifies the length of the string referenced by this `ICorDebugStringValue` object.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -53,7 +53,7 @@ End Sub
 
 - `Partial`
 
-  Optional. Indicates definition of a partial method. See [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md).
+  Optional. Indicates definition of a partial method. See [Partial Methods](../../programming-guide/language-features/procedures/partial-methods.md).
 
 - `accessmodifier`
 
@@ -67,11 +67,11 @@ End Sub
 
   - [Private](../modifiers/private.md)
 
-  - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+  - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [Private Protected](../../language-reference/modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
-  See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+  See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 - `proceduremodifiers`
 
@@ -105,7 +105,7 @@ End Sub
 
 - `name`
 
-  Required. Name of the procedure. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md). To create a constructor procedure for a class, set the name of a `Sub` procedure to the `New` keyword. For more information, see [Object Lifetime: How Objects Are Created and Destroyed](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).
+  Required. Name of the procedure. See [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md). To create a constructor procedure for a class, set the name of a `Sub` procedure to the `New` keyword. For more information, see [Object Lifetime: How Objects Are Created and Destroyed](../../programming-guide/language-features/objects-and-classes/object-lifetime-how-objects-are-created-and-destroyed.md).
 
 - `typeparamlist`
 
@@ -201,7 +201,7 @@ Visual Basic sometimes rearranges arithmetic expressions to increase internal ef
 
 By using the Async feature, you can invoke asynchronous functions without using explicit callbacks or manually splitting your code across multiple functions or lambda expressions.
 
-If you mark a procedure with the [Async](../modifiers/async.md) modifier, you can use the [Await](../../../visual-basic/language-reference/operators/await-operator.md) operator in the procedure. When control reaches an `Await` expression in the `Async` procedure, control returns to the caller, and progress in the procedure is suspended until the awaited task completes. When the task is complete, execution can resume in the procedure.
+If you mark a procedure with the [Async](../modifiers/async.md) modifier, you can use the [Await](../operators/await-operator.md) operator in the procedure. When control reaches an `Await` expression in the `Async` procedure, control returns to the caller, and progress in the procedure is suspended until the awaited task completes. When the task is complete, execution can resume in the procedure.
 
 > [!NOTE]
 > An `Async` procedure returns to the caller when either the first awaited object that’s not yet complete is encountered or the end of the `Async` procedure is reached, whichever occurs first.
@@ -212,7 +212,7 @@ You can also mark a [Function Statement](function-statement.md) with the `Async`
 
 An `Async` procedure can't declare any [ByRef](../modifiers/byref.md) parameters.
 
-For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](../../../visual-basic/programming-guide/concepts/async/index.md), [Control Flow in Async Programs](../../../visual-basic/programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../../visual-basic/programming-guide/concepts/async/async-return-types.md).
+For more information about `Async` procedures, see [Asynchronous Programming with Async and Await](../../programming-guide/concepts/async/index.md), [Control Flow in Async Programs](../../programming-guide/concepts/async/control-flow-in-async-programs.md), and [Async Return Types](../../programming-guide/concepts/async/async-return-types.md).
 
 ## Example
 
@@ -236,7 +236,7 @@ The `startButton_Click` procedure is an example of an `Async Sub` procedure. Bec
 - [Dim Statement](dim-statement.md)
 - [Call Statement](call-statement.md)
 - [Of](of-clause.md)
-- [Parameter Arrays](../../../visual-basic/programming-guide/language-features/procedures/parameter-arrays.md)
-- [How to: Use a Generic Class](../../../visual-basic/programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
-- [Troubleshooting Procedures](../../../visual-basic/programming-guide/language-features/procedures/troubleshooting-procedures.md)
-- [Partial Methods](../../../visual-basic/programming-guide/language-features/procedures/partial-methods.md)
+- [Parameter Arrays](../../programming-guide/language-features/procedures/parameter-arrays.md)
+- [How to: Use a Generic Class](../../programming-guide/language-features/data-types/how-to-use-a-generic-class.md)
+- [Troubleshooting Procedures](../../programming-guide/language-features/procedures/troubleshooting-procedures.md)
+- [Partial Methods](../../programming-guide/language-features/procedures/partial-methods.md)

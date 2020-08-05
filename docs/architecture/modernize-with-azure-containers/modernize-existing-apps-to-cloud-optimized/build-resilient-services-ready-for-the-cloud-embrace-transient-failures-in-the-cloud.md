@@ -49,7 +49,7 @@ To learn how to implement strategies for handling partial failures in the cloud,
 
 - **Polly library for resilient HTTP communication**
 
-    https://github.com/App-vNext/Polly
+    <https://github.com/App-vNext/Polly>
 
 >[!div class="step-by-step"]
 >[Previous](when-to-deploy-windows-containers-to-azure-container-service-kubernetes.md)

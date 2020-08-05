@@ -64,7 +64,7 @@ This topic describes how to use the five timing events available on <xref:System
 ## Registering for Events  
  There are two ways to register for timing events: you can register with the timeline or with the clock created from the timeline. Registering for an event directly with a clock is fairly straightforward, although it can only be done from code. You can register for events with a timeline from markup or code. The next section describes how to register for clock events with a timeline.  
   
-<a name="registeringforclockeventswithatimeline"></a>   
+<a name="registeringforclockeventswithatimeline"></a>
 ## Registering for Clock Events with a Timeline  
  Although a timeline's <xref:System.Windows.Media.Animation.Timeline.Completed>, <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated>, <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated>, <xref:System.Windows.Media.Animation.Timeline.CurrentTimeInvalidated>, and <xref:System.Windows.Media.Animation.Timeline.RemoveRequested> events appear to be associated with the timeline, registering for these events actually associates an event handler with the <xref:System.Windows.Media.Animation.Clock> created for the timeline.  
   

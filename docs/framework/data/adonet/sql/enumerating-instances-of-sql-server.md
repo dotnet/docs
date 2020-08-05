@@ -21,7 +21,7 @@ Dim instance As System.Data.Sql.SqlDataSourceEnumerator = _
 ```  
   
 ```csharp  
-System.Data.Sql.SqlDataSourceEnumerator instance =   
+System.Data.Sql.SqlDataSourceEnumerator instance =
    System.Data.Sql.SqlDataSourceEnumerator.Instance  
 ```  
   

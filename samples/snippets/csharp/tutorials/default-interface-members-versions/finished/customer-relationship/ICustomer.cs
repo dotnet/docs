@@ -33,8 +33,8 @@ namespace customer_relationship
         // <SnippetLoyaltyDiscountVersionTwo>
         // Version 2:
         public static void SetLoyaltyThresholds(
-            TimeSpan ago, 
-            int minimumOrders = 10, 
+            TimeSpan ago,
+            int minimumOrders = 10,
             decimal percentageDiscount = 0.10m)
         {
             length = ago;

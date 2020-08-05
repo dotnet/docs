@@ -20,7 +20,7 @@ namespace BrushesIntroduction
     {
         public SampleViewer()
         {
-            InitializeComponent();  
+            InitializeComponent();
         }
     }
 }

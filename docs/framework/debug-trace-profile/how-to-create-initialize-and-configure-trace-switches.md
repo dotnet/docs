@@ -1,5 +1,6 @@
 ---
 title: "How to: Create, Initialize and Configure Trace Switches"
+description: Create, initialize, and configure trace switches using the System.Diagnostics.BooleanSwitch and System.Diagnostics.TraceSwitch classes in .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -15,7 +16,7 @@ ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
 # How to: Create, Initialize and Configure Trace Switches
 Trace switches enable you to enable, disable, and filter tracing output.  
   
-<a name="create"></a>   
+<a name="create"></a>
 ## Creating and initializing a trace switch  
  In order to use trace switches, you must first create them and place them in your code. There are two predefined classes from which you can create switch objects: the <xref:System.Diagnostics.BooleanSwitch?displayProperty=nameWithType> class and the <xref:System.Diagnostics.TraceSwitch?displayProperty=nameWithType> class. You would use <xref:System.Diagnostics.BooleanSwitch> if you care only about whether or not a tracing message appears; you would use <xref:System.Diagnostics.TraceSwitch> if you want to discriminate between levels of tracing. If you use a <xref:System.Diagnostics.TraceSwitch>, you can define your own debugging messages and associate them with different trace levels. You can use both types of switches with either tracing or debugging. By default, a <xref:System.Diagnostics.BooleanSwitch> is disabled and a <xref:System.Diagnostics.TraceSwitch> is set to level <xref:System.Diagnostics.TraceLevel.Off?displayProperty=nameWithType>. Trace switches can be created and placed in any part of your code that might use them.  
   
@@ -35,14 +36,14 @@ Trace switches enable you to enable, disable, and filter tracing output.
     ```  
   
     ```csharp  
-    System.Diagnostics.BooleanSwitch dataSwitch =   
+    System.Diagnostics.BooleanSwitch dataSwitch =
        new System.Diagnostics.BooleanSwitch("Data", "DataAccess module");  
-    System.Diagnostics.TraceSwitch generalSwitch =   
-       new System.Diagnostics.TraceSwitch("General",   
+    System.Diagnostics.TraceSwitch generalSwitch =
+       new System.Diagnostics.TraceSwitch("General",
        "Entire application");  
     ```  
   
-<a name="configure"></a>   
+<a name="configure"></a>
 ## Configuring trace switches  
  After your application has been distributed, you can still enable or disable trace output by configuring the trace switches in your application. Configuring a switch means changing its value from an external source after it has been initialized. You can change the values of the switch objects using the configuration file. You configure a trace switch to turn it on and off, or to set its level, determining the amount and type of messages it passes along to listeners.  
   

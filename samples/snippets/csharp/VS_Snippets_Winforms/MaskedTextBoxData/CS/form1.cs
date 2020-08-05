@@ -47,13 +47,13 @@ namespace MaskedTextBoxDataCSharp
             dataConnect.Fill(employeesTable, "Employees");
 
             // Now bind MaskedTextBox to appropriate field. Note that we must create the Binding objects
-            // before adding them to the control - otherwise, we won't get a Format event on the 
-            // initial load. 
+            // before adding them to the control - otherwise, we won't get a Format event on the
+            // initial load.
             try
             {
                 currentBinding = new Binding("Text", employeesTable, "Employees.FirstName");
                 firstName.DataBindings.Add(currentBinding);
-                
+
                 currentBinding = new Binding("Text", employeesTable, "Employees.LastName");
                 lastName.DataBindings.Add(currentBinding);
 
@@ -76,10 +76,10 @@ namespace MaskedTextBoxDataCSharp
             String ext;
 
             DataRowView currentRow = (DataRowView)BindingContext[employeesTable, "Employees"].Current;
-            if (currentRow["Extension"] == null) 
+            if (currentRow["Extension"] == null)
             {
                 ext = "";
-            } else 
+            } else
             {
                 ext = currentRow["Extension"].ToString();
             }
@@ -95,7 +95,7 @@ namespace MaskedTextBoxDataCSharp
             String ext = phoneNumberAndExt.Substring(extIndex).Trim();
             String phoneNumber = phoneNumberAndExt.Substring(0, extIndex).Trim();
 
-            //Get the current binding object, and set the new extension manually. 
+            //Get the current binding object, and set the new extension manually.
             DataRowView currentRow = (DataRowView)BindingContext[employeesTable, "Employees"].Current;
             // Remove the "x" from the extension.
             currentRow["Extension"] = ext.Substring(1);

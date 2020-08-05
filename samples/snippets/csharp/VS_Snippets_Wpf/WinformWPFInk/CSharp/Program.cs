@@ -80,7 +80,7 @@ namespace WinformStylusPointsTest_Console
         /// <summary>
         /// Saves the digital ink from a Windows Forms application.
         /// </summary>
-        /// <param name="inkToSave">An Ink object that contains the 
+        /// <param name="inkToSave">An Ink object that contains the
         /// digital ink.</param>
         /// <returns>A MemoryStream containing the digital ink.</returns>
         MemoryStream SaveInkInWinforms(Ink inkToSave)
@@ -149,7 +149,7 @@ namespace WinformStylusPointsTest_Console
         /// <summary>
         /// Saves the digital ink from a WPF application.
         /// </summary>
-        /// <param name="inkToSave">A StrokeCollection that contains the 
+        /// <param name="inkToSave">A StrokeCollection that contains the
         /// digital ink.</param>
         /// <returns>A MemoryStream containing the digital ink.</returns>
         MemoryStream SaveInkInWPF(StrokeCollection strokesToSave)
@@ -164,7 +164,7 @@ namespace WinformStylusPointsTest_Console
 
         //<SnippetLoadWPF>
         /// <summary>
-        /// Loads digital ink into a StrokeCollection, which can be 
+        /// Loads digital ink into a StrokeCollection, which can be
         /// used by a WPF application.
         /// </summary>
         /// <param name="savedInk">A MemoryStream containing the digital ink.</param>
@@ -218,12 +218,12 @@ namespace WinformStylusPointsTest_Console
             MemoryStream savedStrokes;
 
             //winformTest.ChangeStylusPoints();
-            
+
             // First save the ink in winforms and load it into WPF.
             Console.WriteLine("Winforms Saved Ink:");
             savedStrokes = winformTest.SaveInk();
             winformTest.ReportStrokes();
-            
+
             Console.WriteLine("\nWPF Loaded Ink:");
             wpfTest.LoadInkInWPF(savedStrokes);
             wpfTest.ReportStrokes();

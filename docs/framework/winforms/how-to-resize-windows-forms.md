@@ -1,5 +1,6 @@
 ---
 title: Resize form
+description: Learn how to resize both the height and width of the form by setting a new value for the Size property, or adjust the Height or Width properties individually.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

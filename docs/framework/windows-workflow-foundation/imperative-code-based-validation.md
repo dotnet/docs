@@ -20,7 +20,7 @@ public sealed class CreateProduct : CodeActivity
     public double Price { get; set; }  
     public double Cost { get; set; }  
   
-    // [RequiredArgument] attribute will generate a validation error   
+    // [RequiredArgument] attribute will generate a validation error
     // if the Description argument is not set.  
     [RequiredArgument]  
     public InArgument<string> Description { get; set; }  

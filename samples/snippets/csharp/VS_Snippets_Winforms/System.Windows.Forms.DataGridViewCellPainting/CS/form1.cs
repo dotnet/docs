@@ -28,7 +28,7 @@ class Form1 : Form
         data.Locale = System.Globalization.CultureInfo.InvariantCulture;
         new SqlDataAdapter(
             "select * from customers",
-            "data source=localhost;initial catalog=northwind;" + 
+            "data source=localhost;initial catalog=northwind;" +
             "integrated security=sspi")
             .Fill(data);
         this.dataGridView1.DataSource = data;

@@ -1,5 +1,6 @@
 ---
 title: "Multifile assemblies"
+description: Use multifile assemblies that target .NET using command-line compilers or Visual Studio with Visual C++. A file in the assembly must hold the assembly manifest.
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "assemblies [.NET Framework], multifile"
@@ -36,4 +37,4 @@ Once you create the assembly, you can sign the file that contains the assembly m
 ## See also
 
 - [How to: Build a multifile assembly](build-multifile-assembly.md)
-- [Program with assemblies](../../standard/assembly/program.md)
+- [Program with assemblies](../../standard/assembly/index.md)

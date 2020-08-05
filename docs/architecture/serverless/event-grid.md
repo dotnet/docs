@@ -3,7 +3,7 @@ title: Azure Event Grid - Serverless apps
 description: Azure Event Grid is a serverless solution for reliable event delivery and routing at massive scale on a pay-per-event model.
 author: JEREMYLIKNESS
 ms.author: jeliknes
-ms.date: 06/26/2018
+ms.date: 04/06/2020
 ---
 # Event Grid
 
@@ -126,14 +126,12 @@ In this chapter you learned about the Azure serverless platform that is composed
 - [Azure Logic Apps](https://docs.microsoft.com/azure/logic-apps)
 - [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging)
 - [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
-- [Compare functions 1.x and 2.x](https://docs.microsoft.com/azure/azure-functions/functions-versions)
 - [Connecting to on-premises data sources with Azure On-premises Data Gateway](https://docs.microsoft.com/azure/analysis-services/analysis-services-gateway)
 - [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function)
 - [Create your first function using the Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli)
 - [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio)
 - [Functions supported languages](https://docs.microsoft.com/azure/azure-functions/supported-languages)
 - [Monitor Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-monitoring)
-- [Work with Azure Functions Proxies](https://docs.microsoft.com/azure/azure-functions/functions-proxies)
 
 >[!div class="step-by-step"]
 >[Previous](logic-apps.md)

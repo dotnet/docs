@@ -11,21 +11,21 @@
 namespace Microsoft.ServiceModel.Samples
 {
     using System.Runtime.Serialization;
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute()]
     public partial class PurchaseOrder : object, System.Runtime.Serialization.IExtensibleDataObject
     {
-        
+
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
+
         private string CustomerIdField;
-        
+
         private string PONumberField;
-        
+
         private Microsoft.ServiceModel.Samples.PurchaseOrderLineItem[] orderLineItemsField;
-        
+
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
             get
@@ -37,7 +37,7 @@ namespace Microsoft.ServiceModel.Samples
                 this.extensionDataField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string CustomerId
         {
@@ -50,7 +50,7 @@ namespace Microsoft.ServiceModel.Samples
                 this.CustomerIdField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string PONumber
         {
@@ -63,7 +63,7 @@ namespace Microsoft.ServiceModel.Samples
                 this.PONumberField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public Microsoft.ServiceModel.Samples.PurchaseOrderLineItem[] orderLineItems
         {
@@ -77,20 +77,20 @@ namespace Microsoft.ServiceModel.Samples
             }
         }
     }
-    
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "3.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute()]
     public partial class PurchaseOrderLineItem : object, System.Runtime.Serialization.IExtensibleDataObject
     {
-        
+
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
+
         private string ProductIdField;
-        
+
         private int QuantityField;
-        
+
         private float UnitCostField;
-        
+
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData
         {
             get
@@ -102,7 +102,7 @@ namespace Microsoft.ServiceModel.Samples
                 this.extensionDataField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string ProductId
         {
@@ -115,7 +115,7 @@ namespace Microsoft.ServiceModel.Samples
                 this.ProductIdField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public int Quantity
         {
@@ -128,7 +128,7 @@ namespace Microsoft.ServiceModel.Samples
                 this.QuantityField = value;
             }
         }
-        
+
         [System.Runtime.Serialization.DataMemberAttribute()]
         public float UnitCost
         {
@@ -149,7 +149,7 @@ namespace Microsoft.ServiceModel.Samples
 [System.ServiceModel.ServiceContractAttribute(Namespace="http://Microsoft.ServiceModel.Samples", ConfigurationName="IOrderProcessor")]
 public interface IOrderProcessor
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(IsOneWay=true, Action="http://Microsoft.ServiceModel.Samples/IOrderProcessor/SubmitPurchaseOrder")]
     void SubmitPurchaseOrder(Microsoft.ServiceModel.Samples.PurchaseOrder po);
 }
@@ -163,31 +163,31 @@ public interface IOrderProcessorChannel : IOrderProcessor, System.ServiceModel.I
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class OrderProcessorClient : System.ServiceModel.ClientBase<IOrderProcessor>, IOrderProcessor
 {
-    
+
     public OrderProcessorClient()
     {
     }
-    
-    public OrderProcessorClient(string endpointConfigurationName) : 
+
+    public OrderProcessorClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public OrderProcessorClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public OrderProcessorClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public OrderProcessorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public OrderProcessorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public OrderProcessorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public OrderProcessorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public void SubmitPurchaseOrder(Microsoft.ServiceModel.Samples.PurchaseOrder po)
     {
         base.Channel.SubmitPurchaseOrder(po);

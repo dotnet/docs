@@ -19,7 +19,7 @@ class Program
               break;
            default:
               Console.WriteLine("The middle of the work week.");
-              break;   
+              break;
         }
     }
 }

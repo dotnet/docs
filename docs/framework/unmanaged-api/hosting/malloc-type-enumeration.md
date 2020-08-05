@@ -35,7 +35,7 @@ typedef enum {
 |`MALLOC_THREADSAFE`|The allocated memory is thread-safe. That is, the memory can be accessed by multiple threads without any synchronization.<br /><br /> If this flag is not set, calls on the object must be serialized.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -45,4 +45,4 @@ typedef enum {
   
 ## See also
 
-- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)
+- [Hosting Enumerations](hosting-enumerations.md)

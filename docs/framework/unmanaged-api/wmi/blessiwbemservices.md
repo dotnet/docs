@@ -16,7 +16,7 @@ topic_type:
   - "Reference"
 ---
 # BlessIWbemServices function
-Indicates whether the user credentials permit access to the specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) class.   
+Indicates whether the user credentials permit access to the specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) class.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -25,10 +25,10 @@ Indicates whether the user credentials permit access to the specified [IWbemServ
 ```cpp
 HRESULT BlessIWbemServices (
    [in] IWbemServices* pIWbemServices,
-   [in] BSTR strUser, 
-   [in] BSTR strPassword, 
-   [in] BSTR strAuthority, 
-   [in] DWORD impLevel, 
+   [in] BSTR strUser,
+   [in] BSTR strPassword,
+   [in] BSTR strAuthority,
+   [in] DWORD impLevel,
    [in] DWORD authnLevel
 );
 ```  
@@ -60,10 +60,10 @@ The following values returned by this function are defined in the *WinError.h* h
 |Constant  |Value  |Description  |
 |---------|---------|---------|
 | `E_INVALIDARG` | 0x80070057 | One or more arguments are invalid. |
-| `E_POINTER` | 0x80004003 | `pIWbemServices` is `null`. | 
+| `E_POINTER` | 0x80004003 | `pIWbemServices` is `null`. |
 | `E_FAIL` | 0x80000008 | An unspecified error has occurred. |
-| `E_OUTOFMEMORY` | 0x80000002 | Insufficient memory is available to perform the operation. | 
-| `S_OK` | 0 | The function call was successful. | 
+| `E_OUTOFMEMORY` | 0x80000002 | Insufficient memory is available to perform the operation. |
+| `S_OK` | 0 | The function call was successful. |
 
 ## Requirements  
 

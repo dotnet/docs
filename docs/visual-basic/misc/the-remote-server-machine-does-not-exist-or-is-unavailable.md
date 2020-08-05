@@ -14,4 +14,4 @@ You are trying to connect to a remote server that is unavailable or does not exi
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

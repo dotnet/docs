@@ -42,18 +42,18 @@ The currently selected date or time in the Windows Forms <xref:System.Windows.Fo
   
     ```vb  
     MessageBox.Show("The selected value is ", DateTimePicker1.Text)  
-    MessageBox.Show("The day of the week is ",   
+    MessageBox.Show("The day of the week is ",
        DateTimePicker1.Value.DayOfWeek.ToString)  
-    MessageBox.Show("Millisecond is: ",   
+    MessageBox.Show("Millisecond is: ",
        DateTimePicker1.Value.Millisecond.ToString)  
     ```  
   
     ```csharp  
-    MessageBox.Show ("The selected value is " +   
+    MessageBox.Show ("The selected value is " +
        dateTimePicker1.Text);  
-    MessageBox.Show ("The day of the week is " +   
+    MessageBox.Show ("The day of the week is " +
        dateTimePicker1.Value.DayOfWeek.ToString());  
-    MessageBox.Show("Millisecond is: " +   
+    MessageBox.Show("Millisecond is: " +
        dateTimePicker1.Value.Millisecond.ToString());  
     ```  
   

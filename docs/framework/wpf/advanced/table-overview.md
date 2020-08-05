@@ -31,16 +31,16 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
 - [Building a Table With Code](#building_a_table_with_code)  
   
-- [Related Topics] 
+- [Related Topics]
   
-<a name="table_basics"></a>   
+<a name="table_basics"></a>
 ## Table Basics  
   
-<a name="table_vs_Grid"></a>   
+<a name="table_vs_Grid"></a>
 ### How is Table Different then Grid?  
  <xref:System.Windows.Documents.Table> and <xref:System.Windows.Controls.Grid> share some common functionality, but each is best suited for different scenarios. A <xref:System.Windows.Documents.Table> is designed for use within flow content (see [Flow Document Overview](flow-document-overview.md) for more information on flow content). Grids are best used inside of forms (basically anywhere outside of flow content). Within a <xref:System.Windows.Documents.FlowDocument>, <xref:System.Windows.Documents.Table> supports flow content behaviors like pagination, column reflow, and content selection while a <xref:System.Windows.Controls.Grid> does not. A <xref:System.Windows.Controls.Grid> on the other hand is best used outside of a <xref:System.Windows.Documents.FlowDocument> for many reasons including <xref:System.Windows.Controls.Grid> adds elements based on a row and column index, <xref:System.Windows.Documents.Table> does not. The <xref:System.Windows.Controls.Grid> element allows layering of child content, allowing more than one element to exist within a single "cell." <xref:System.Windows.Documents.Table> does not support layering. Child elements of a <xref:System.Windows.Controls.Grid> can be absolutely positioned relative to the area of their "cell" boundaries. <xref:System.Windows.Documents.Table> does not support this feature. Finally, a <xref:System.Windows.Controls.Grid> requires less resources then a <xref:System.Windows.Documents.Table> so consider using a <xref:System.Windows.Controls.Grid> to improve performance.  
   
-<a name="basic_table_structure"></a>   
+<a name="basic_table_structure"></a>
 ### Basic Table Structure  
  <xref:System.Windows.Documents.Table> provides a grid-based presentation consisting of columns (represented by <xref:System.Windows.Documents.TableColumn> elements) and rows (represented by <xref:System.Windows.Documents.TableRow> elements). <xref:System.Windows.Documents.TableColumn> elements do not host content; they simply define columns and characteristics of columns. <xref:System.Windows.Documents.TableRow> elements must be hosted in a <xref:System.Windows.Documents.TableRowGroup> element, which defines a grouping of rows for the table. <xref:System.Windows.Documents.TableCell> elements, which contain the actual content to be presented by the table, must be hosted in a <xref:System.Windows.Documents.TableRow> element. <xref:System.Windows.Documents.TableCell> may only contain elements that derive from <xref:System.Windows.Documents.Block>.  Valid child elements for a <xref:System.Windows.Documents.TableCell> include.  
   
@@ -68,7 +68,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  ![Screenshot that shows how a basic table renders.](./media/table-overview/basic-table-render-example.png)  
   
-<a name="table_containment"></a>   
+<a name="table_containment"></a>
 ### Table Containment  
  <xref:System.Windows.Documents.Table> derives from the <xref:System.Windows.Documents.Block> element, and adheres to the common rules for <xref:System.Windows.Documents.Block> level elements.  A <xref:System.Windows.Documents.Table> element may be contained by any of the following elements:  
   
@@ -86,7 +86,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
 - <xref:System.Windows.Documents.Figure>  
   
-<a name="row_groupings"></a>   
+<a name="row_groupings"></a>
 ### Row Groupings  
  The <xref:System.Windows.Documents.TableRowGroup> element provides a way to arbitrarily group rows within a table; every row in a table must belong to a row grouping.  Rows within a row group often share a common intent, and may be styled as a group.  A common use for row groupings is to separate special-purpose rows, such as a title, header, and footer rows, from the primary content contained by the table.  
   
@@ -98,7 +98,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  ![Screenshot: Table row groups](./media/table-rowgroups.png "Table_RowGroups")  
   
-<a name="rendering_precedence"></a>   
+<a name="rendering_precedence"></a>
 ### Background Rendering Precedence  
  Table elements render in the following order (z-order from lowest to highest). This order cannot be changed. For example, there is no "Z-order" property for these elements that you can use to override this established order.  
   
@@ -120,7 +120,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  ![Screenshot: Table z&#45;order](./media/table-zorder.png "Table_ZOrder")  
   
-<a name="spanning_rows_or_columns"></a>   
+<a name="spanning_rows_or_columns"></a>
 ### Spanning Rows or Columns  
  Table cells may be configured to span multiple rows or columns by using the <xref:System.Windows.Documents.TableCell.RowSpan%2A> or <xref:System.Windows.Documents.TableCell.ColumnSpan%2A> attributes, respectively.  
   
@@ -132,7 +132,7 @@ ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
   
  ![Screenshot: Cell spanning all three columns](./media/table-columnspan.png "Table_ColumnSpan")  
   
-<a name="building_a_table_with_code"></a>   
+<a name="building_a_table_with_code"></a>
 ## Building a Table With Code  
  The following examples show how to programmatically create a <xref:System.Windows.Documents.Table> and populate it with content. The contents of the table are apportioned into five rows (represented by <xref:System.Windows.Documents.TableRow> objects contained in a <xref:System.Windows.Documents.Table.RowGroups%2A> object) and six columns (represented by <xref:System.Windows.Documents.TableColumn> objects). The rows are used for different presentation purposes, including a title row intended to title the entire table, a header row to describe the columns of data in the table, and a footer row with summary information.  Note that the notion of "title", "header", and "footer" rows are not inherent to the table; these are simply rows with different characteristics. Table cells contain the actual content, which can be comprised of text, images, or nearly any other [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] element.  
   

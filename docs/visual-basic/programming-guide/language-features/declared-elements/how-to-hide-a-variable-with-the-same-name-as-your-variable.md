@@ -19,7 +19,7 @@ You can hide a variable by *shadowing* it, that is, by redefining it with a vari
 
 - **Shadowing Through Scope.** You can shadow it through scope by redeclaring it inside a subregion of the region containing the variable you want to hide.
 
-- **Shadowing Through Inheritance.** If the variable you want to hide is defined at class level, you can shadow it through inheritance by redeclaring it with the [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) keyword in a derived class.
+- **Shadowing Through Inheritance.** If the variable you want to hide is defined at class level, you can shadow it through inheritance by redeclaring it with the [Shadows](../../../language-reference/modifiers/shadows.md) keyword in a derived class.
 
 ## Two Ways to Hide a Variable
 
@@ -36,7 +36,7 @@ You can hide a variable by *shadowing* it, that is, by redefining it with a vari
 
 2. Create the subregion if it does not already exist.
 
-3. Within the subregion, write a [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) declaring the shadowing variable.
+3. Within the subregion, write a [Dim Statement](../../../language-reference/statements/dim-statement.md) declaring the shadowing variable.
 
     When code inside the subregion refers to the variable name, the compiler resolves the reference to the shadowing variable.
 
@@ -72,7 +72,7 @@ You can hide a variable by *shadowing* it, that is, by redefining it with a vari
 
 2. Define a class derived from the variable's class if one does not already exist.
 
-3. Inside the derived class, write a `Dim` statement declaring your variable. Include the [Shadows](../../../../visual-basic/language-reference/modifiers/shadows.md) keyword in the declaration.
+3. Inside the derived class, write a `Dim` statement declaring your variable. Include the [Shadows](../../../language-reference/modifiers/shadows.md) keyword in the declaration.
 
     When code in the derived class refers to the variable name, the compiler resolves the reference to your variable.
 
@@ -101,11 +101,11 @@ Shadowing introduces more than one version of a variable with the same name. Whe
 
 ## See also
 
-- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
-- [Shadowing in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/shadowing.md)
-- [Differences Between Shadowing and Overriding](../../../../visual-basic/programming-guide/language-features/declared-elements/differences-between-shadowing-and-overriding.md)
-- [How to: Hide an Inherited Variable](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-hide-an-inherited-variable.md)
-- [How to: Access a Variable Hidden by a Derived Class](../../../../visual-basic/programming-guide/language-features/declared-elements/how-to-access-a-variable-hidden-by-a-derived-class.md)
-- [Overrides](../../../../visual-basic/language-reference/modifiers/overrides.md)
-- [Me, My, MyBase, and MyClass](../../../../visual-basic/programming-guide/program-structure/me-my-mybase-and-myclass.md)
-- [Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [References to Declared Elements](references-to-declared-elements.md)
+- [Shadowing in Visual Basic](shadowing.md)
+- [Differences Between Shadowing and Overriding](differences-between-shadowing-and-overriding.md)
+- [How to: Hide an Inherited Variable](how-to-hide-an-inherited-variable.md)
+- [How to: Access a Variable Hidden by a Derived Class](how-to-access-a-variable-hidden-by-a-derived-class.md)
+- [Overrides](../../../language-reference/modifiers/overrides.md)
+- [Me, My, MyBase, and MyClass](../../program-structure/me-my-mybase-and-myclass.md)
+- [Inheritance Basics](../objects-and-classes/inheritance-basics.md)

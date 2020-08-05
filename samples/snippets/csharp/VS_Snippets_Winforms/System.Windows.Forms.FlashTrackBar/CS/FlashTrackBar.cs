@@ -9,7 +9,7 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
     using System.Windows.Forms;
     using System.Diagnostics;
 
-    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")] 
+    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
     public class FlashTrackBar : System.Windows.Forms.Control {
         /// <summary>
         ///    Required designer variable.
@@ -292,9 +292,9 @@ namespace Microsoft.Samples.WinForms.Cs.FlashTrackBar {
 
             // <snippet6>
             Rectangle invalid = new Rectangle(
-                client.X + min, 
-                client.Y, 
-                max - min, 
+                client.X + min,
+                client.Y,
+                max - min,
                 client.Height);
 
             Invalidate(invalid);

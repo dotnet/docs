@@ -48,7 +48,7 @@ With the latest versions of Docker for Mac and Windows, it's easier than ever to
 
 In addition, you'll need a code editor so that you can actually develop your application while using Docker CLI.
 
-Microsoft provides Visual Studio Code, which is a lightweight code editor that's supported on Windows, Linux, and macOS, and provides IntelliSense with [support for many languages](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python, and most modern languages), [debugging](https://code.visualstudio.com/Docs/editor/debugging), [integration with Git](https://code.visualstudio.com/Docs/editor/versioncontrol) and [extensions support](https://code.visualstudio.com/docs/extensions/overview). This editor is a great fit for macOS and Linux developers. In Windows, you also can use Visual Studio.
+Microsoft provides Visual Studio Code, which is a lightweight code editor that's supported on Windows, Linux, and macOS, and provides IntelliSense with [support for many languages](https://code.visualstudio.com/docs/languages/overview) (JavaScript, .NET, Go, Java, Ruby, Python, and most modern languages), [debugging](https://code.visualstudio.com/Docs/editor/debugging), [integration with Git](https://code.visualstudio.com/Docs/editor/versioncontrol) and [extensions support](https://code.visualstudio.com/docs/extensions/overview). This editor is a great fit for macOS and Linux developers. In Windows, you can also use Visual Studio.
 
 > [!TIP]
 > For instructions on installing Visual Studio Code for Windows, Linux, or macOS, go to <https://code.visualstudio.com/docs/setup/setup-overview/>.
@@ -94,7 +94,7 @@ In Figure 4-24, you can see how a docker-compose file is added by using the Dock
 
 **Figure 4-24**. Docker files added using the **Add Docker files to Workspace command**
 
-When you add a DockerFile, you specify what base Docker image you’ll be using (like using `FROM mcr.microsoft.com/dotnet/core/aspnet`). You'll usually build your custom image on top of a base image that you get from any official repository at the [Docker Hub registry](https://hub.docker.com/) (like an [image for .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/) or the one [for Node.js](https://hub.docker.com/_/node/)).
+When you add a DockerFile, you specify what base Docker image you'll be using (like using `FROM mcr.microsoft.com/dotnet/core/aspnet`). You'll usually build your custom image on top of a base image that you get from any official repository at the [Docker Hub registry](https://hub.docker.com/) (like an [image for .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/) or the one [for Node.js](https://hub.docker.com/_/node/)).
 
 ***Use an existing official Docker image***
 
@@ -150,7 +150,7 @@ For each custom service that comprises your app, you'll need to create a related
 >
 > Therefore, each developer first needs to do the entire inner-loop process to test locally and continue developing until they want to push a complete feature or change to the source control system.
 
-To create an image in your local environment and using the DockerFile, you can use the docker build command, as demonstrated in Figure 4-25 (you also can run `docker-compose up --build` for applications composed by several containers/services).
+To create an image in your local environment and using the DockerFile, you can use the docker build command, as demonstrated in Figure 4-25 (you can also run `docker-compose up --build` for applications composed by several containers/services).
 
 ![Screenshot showing the console output of the docker build command.](./media/docker-apps-inner-loop-workflow/run-docker-build-command.png)
 
@@ -257,7 +257,7 @@ You can test this by using CURL from the terminal. In a Docker installation on W
 
 Visual Studio Code supports debugging Docker if you're using Node.js and other platforms like .NET Core containers.
 
-You also can debug .NET Core or .NET Framework containers in Docker when using Visual Studio for Windows or Mac, as described in the next section.
+You can also debug .NET Core or .NET Framework containers in Docker when using Visual Studio for Windows or Mac, as described in the next section.
 
 > [!TIP]
 > To learn more about debugging Node.js Docker containers, see <https://blog.docker.com/2016/07/live-debugging-docker/> and <https://docs.microsoft.com/archive/blogs/user_ed/visual-studio-code-new-features-13-big-debugging-updates-rich-object-hover-conditional-breakpoints-node-js-mono-more>.

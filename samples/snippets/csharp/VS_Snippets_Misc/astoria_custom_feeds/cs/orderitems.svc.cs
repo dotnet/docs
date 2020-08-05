@@ -8,11 +8,11 @@ using System.Linq;
 namespace CustomDataService
 {
     //<snippetCustomOrderFeed>
-    [EntityPropertyMappingAttribute("Customer", 
+    [EntityPropertyMappingAttribute("Customer",
         SyndicationItemProperty.AuthorName,
         SyndicationTextContentKind.Plaintext, true)]
-    [EntityPropertyMapping("OrderId", 
-        SyndicationItemProperty.Title, 
+    [EntityPropertyMapping("OrderId",
+        SyndicationItemProperty.Title,
         SyndicationTextContentKind.Plaintext, false)]
     [DataServiceKeyAttribute("OrderId")]
     public class Order
@@ -74,7 +74,7 @@ namespace CustomDataService
             config.SetEntitySetAccessRule("Items",
                 EntitySetRights.AllRead |
                 EntitySetRights.AllWrite);
-            config.DataServiceBehavior.MaxProtocolVersion = 
+            config.DataServiceBehavior.MaxProtocolVersion =
                 DataServiceProtocolVersion.V2;
         }
     }

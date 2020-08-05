@@ -1,8 +1,8 @@
 ﻿//<SnippetGetAnimationBaseValueExampleWholePage>
 /*
 
-   This sample shows how to use the 
-   Animatable.GetAnimationBaseValue and 
+   This sample shows how to use the
+   Animatable.GetAnimationBaseValue and
    UIElement.GetAnimationBaseValue methods
    to get the non-animated value of an
    animated Animatable or UIElement.
@@ -26,57 +26,57 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
         private RotateTransform animatedRotateTransform;
         public GetAnimationBaseValueExample()
         {
-        
+
             WindowTitle = "GetAnimationBaseValue Example";
             StackPanel myPanel = new StackPanel();
-            myPanel.Margin = new Thickness(20.0);    
-            
+            myPanel.Margin = new Thickness(20.0);
+
             // Create a button.
             Button animatedButton = new Button();
             animatedButton.Content = "Click Me";
             animatedButton.Width = 100;
             animatedButton.Margin = new Thickness(100);
-       
+
             // Create and animate a RotateTransform and
             // apply it to the button's RenderTransform
             // property.
             animatedRotateTransform = new RotateTransform();
             animatedRotateTransform.Angle = 45;
-            DoubleAnimation angleAnimation = 
+            DoubleAnimation angleAnimation =
                 new DoubleAnimation(0,360, TimeSpan.FromSeconds(5));
             angleAnimation.RepeatBehavior = RepeatBehavior.Forever;
             animatedRotateTransform.BeginAnimation(
-                RotateTransform.AngleProperty, angleAnimation);           
+                RotateTransform.AngleProperty, angleAnimation);
             animatedButton.RenderTransform = animatedRotateTransform;
             animatedButton.RenderTransformOrigin = new Point(0.5,0.5);
-//<SnippetBeginAnimation>               
+//<SnippetBeginAnimation>
             // Animate the button's width.
-            DoubleAnimation widthAnimation = 
+            DoubleAnimation widthAnimation =
                 new DoubleAnimation(120, 300, TimeSpan.FromSeconds(5));
             widthAnimation.RepeatBehavior = RepeatBehavior.Forever;
             widthAnimation.AutoReverse = true;
             animatedButton.BeginAnimation(Button.WidthProperty, widthAnimation);
 //</SnippetBeginAnimation>
-            
+
             // Handle button clicks.
-            animatedButton.Click += new RoutedEventHandler(animatedButton_Clicked);           
+            animatedButton.Click += new RoutedEventHandler(animatedButton_Clicked);
 
             // Add the button to the panel.
             myPanel.Children.Add(animatedButton);
             this.Content = myPanel;
         }
 
- //<SnippetGetAnimationBaseValue>       
+ //<SnippetGetAnimationBaseValue>
         // Display the base value for Button.Width and RotateTransform.Angle.
         private void animatedButton_Clicked(object sender, RoutedEventArgs e)
         {
             Button animatedButton = (Button)sender;
-            MessageBox.Show("Button width base value: " + 
+            MessageBox.Show("Button width base value: " +
                 animatedButton.GetAnimationBaseValue(Button.WidthProperty)
                 + "\nRotateTransform base value: " +
                 animatedRotateTransform.GetAnimationBaseValue(RotateTransform.AngleProperty));
         }
- //</SnippetGetAnimationBaseValue> 
+ //</SnippetGetAnimationBaseValue>
     }
 }
 //</SnippetGetAnimationBaseValueExampleWholePage>

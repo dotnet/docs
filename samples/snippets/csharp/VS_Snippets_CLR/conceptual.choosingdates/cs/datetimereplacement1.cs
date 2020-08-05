@@ -12,7 +12,7 @@ public struct StoreInfo
    {
       return IsOpenAt(DateTime.Now.TimeOfDay);
    }
-   
+
    public bool IsOpenAt(TimeSpan time)
    {
       TimeZoneInfo local = TimeZoneInfo.Local;
@@ -25,7 +25,7 @@ public struct StoreInfo
       else {
          TimeSpan delta = TimeSpan.Zero;
          TimeSpan storeDelta = TimeSpan.Zero;
-         
+
          // Is it daylight saving time in either time zone?
          if (local.IsDaylightSavingTime(DateTime.Now.Date + time))
             delta = local.GetAdjustmentRules()[local.GetAdjustmentRules().Length - 1].DaylightDelta;
@@ -53,7 +53,7 @@ public class Example
       store103.open = new TimeSpan(8, 0, 0);
       // Store closes at 9:30.
       store103.close = new TimeSpan(21, 30, 0);
-      
+
       Console.WriteLine("Store is open now at {0}: {1}",
                         DateTime.Now.TimeOfDay, store103.IsOpenNow());
       TimeSpan[] times = { new TimeSpan(8, 0, 0), new TimeSpan(21, 0, 0),

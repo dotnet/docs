@@ -14,7 +14,7 @@ public class Math
     /// <returns>
     /// The sum of two doubles.
     /// </returns>
-    /// <exception cref="System.OverflowException">Thrown when one parameter is max 
+    /// <exception cref="System.OverflowException">Thrown when one parameter is max
     /// and the other is greater than zero.</exception>
     /// See <see cref="Math.Add(int, int)"/> to add integers.
     /// <param name="a">A double precision number.</param>

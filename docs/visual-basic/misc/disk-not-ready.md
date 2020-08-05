@@ -16,4 +16,4 @@ For the specified drive, either there is no disk or the drive door is open.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

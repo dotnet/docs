@@ -33,7 +33,7 @@ namespace PartitionerTests
 
         static void TestDefaultRangePartitioner()
         {
-           
+
             Console.WriteLine("Operation completed.");
             Console.ReadKey();
         }
@@ -62,7 +62,7 @@ namespace PartitionerTests
 
             Stopwatch sw = Stopwatch.StartNew();
 
-            // Must be load balanced partitioner 
+            // Must be load balanced partitioner
             // for this simple data source.
          //   Partitioner<int> p = Partitioner.Create(nums, true);
 
@@ -210,7 +210,7 @@ namespace PartitionerTests
     // A static range partitioner for sources that require
     // a linear increase in processing time for each succeeding element.
     // The range sizes are calculated based on the rate of increase
-    // with the first partition getting the most elements and the 
+    // with the first partition getting the most elements and the
     // last partition getting the least.
     class MyPartitioner : Partitioner<int>
     {
@@ -243,7 +243,7 @@ namespace PartitionerTests
             int end = 0;
             int start = 0;
             int[] nums = CalculatePartitions(partitionCount, source.Length);
-            
+
             for (int i = 0; i < nums.Length; i++)
             {
                 start = nums[i];
@@ -260,8 +260,8 @@ namespace PartitionerTests
             return (IList<IEnumerator<int>>)_list;
         }
         /*
-         * 
-         * 
+         *
+         *
          *                                                               B
           // Model increasing workloads as a right triangle           /  |
              divided into equal areas along vertical lines.         / |  |
@@ -274,7 +274,7 @@ namespace PartitionerTests
                                                 A     /______|____|___|__| C
          */
         private int[] CalculatePartitions(int partitionCount, int sourceLength)
-        {                          
+        {
             // Corresponds to the opposite side of angle A, which corresponds
             // to an index into the source array.
             int[] partitionLimits = new int[partitionCount];
@@ -289,7 +289,7 @@ namespace PartitionerTests
             double partitionArea = totalWork / partitionCount;
 
             // Draw the next partitionLimit on the vertical coordinate that gives
-            // an area of partitionArea * currentPartition. 
+            // an area of partitionArea * currentPartition.
             for (int i = 1; i < partitionLimits.Length; i++)
             {
                 double area = partitionArea * i;
@@ -337,7 +337,7 @@ namespace PartitionerTests
 
         // Consistent processing time for measurement purposes.
         static int ProcessData(int i)
-        {            
+        {
             Thread.SpinWait(i * 1000);
             return i;
         }
@@ -348,7 +348,7 @@ namespace PartitionerTests
     {
         //Goes with snippet05. Not used until we figure out why this is the case.
 
-        // More interesting calculation. However, this method 
+        // More interesting calculation. However, this method
         // does not seem to exhibit the linear increase
         // that is assumed by the partitioner.
         BigInteger Fibonacci(int x)

@@ -1,5 +1,6 @@
 ---
 title: "Regular Expression Options"
+description: Learn how to use regular expression options in .NET, such as case-insensitive matching, multiline mode, and right-to-left mode.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -35,7 +36,7 @@ By default, the comparison of an input string with any literal characters in a r
 
 You can specify options for regular expressions in one of three ways:
 
-- In the `options` parameter of a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static (`Shared` in Visual Basic) pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. The `options` parameter is a bitwise OR combination of <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumerated values.
+- In the `options` parameter of a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static (`Shared` in Visual Basic) pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29> or <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. The `options` parameter is a bitwise OR combination of <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumerated values.
 
   When options are supplied to a <xref:System.Text.RegularExpressions.Regex> instance by using the `options` parameter of a class constructor, the options are assigned to the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property. However, the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property does not reflect inline options in the regular expression pattern itself.
 
@@ -44,14 +45,14 @@ You can specify options for regular expressions in one of three ways:
   [!code-csharp[Conceptual.Regex.Language.Options#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#6)]
   [!code-vb[Conceptual.Regex.Language.Options#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#6)]
 
-- By applying inline options in a regular expression pattern with the syntax `(?imnsx-imnsx)`. The option applies to the pattern from the point that the option is defined to either the end of the pattern or to the point at which the option is undefined by another inline option. Note that the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property of a <xref:System.Text.RegularExpressions.Regex> instance does not reflect these inline options. For more information, see the [Miscellaneous Constructs](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md) topic.
+- By applying inline options in a regular expression pattern with the syntax `(?imnsx-imnsx)`. The option applies to the pattern from the point that the option is defined to either the end of the pattern or to the point at which the option is undefined by another inline option. Note that the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property of a <xref:System.Text.RegularExpressions.Regex> instance does not reflect these inline options. For more information, see the [Miscellaneous Constructs](miscellaneous-constructs-in-regular-expressions.md) topic.
 
   The following example provides an illustration. It uses inline options to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
   [!code-csharp[Conceptual.Regex.Language.Options#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#7)]
   [!code-vb[Conceptual.Regex.Language.Options#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#7)]
 
-- By applying inline options in a particular grouping construct in a regular expression pattern with the syntax `(?imnsx-imnsx:`*subexpression*`)`. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (`?` is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+- By applying inline options in a particular grouping construct in a regular expression pattern with the syntax `(?imnsx-imnsx:`*subexpression*`)`. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (`?` is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
   The following example provides an illustration. It uses inline options in a grouping construct to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
@@ -293,7 +294,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayPropert
 [!code-csharp[Conceptual.Regex.Language.Options#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft1.cs#17)]
 [!code-vb[Conceptual.Regex.Language.Options#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft1.vb#17)]
 
-Also note that the lookahead assertion (the `(?=`*subexpression*`)` language element) and the lookbehind assertion (the `(?<=`*subexpression*`)` language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+Also note that the lookahead assertion (the `(?=`*subexpression*`)` language element) and the lookbehind assertion (the `(?<=`*subexpression*`)` language element) do not change direction. The lookahead assertions look to the right; the lookbehind assertions look to the left. For example, the regular expression `(?<=\d{1,2}\s)\w+,?\s\d{4}` uses the lookbehind assertion to test for a date that precedes a month name. The regular expression then matches the month and the year. For information on lookahead and lookbehind assertions, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).
 
 [!code-csharp[Conceptual.Regex.Language.Options#18](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft2.cs#18)]
 [!code-vb[Conceptual.Regex.Language.Options#18](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft2.vb#18)]
@@ -319,7 +320,7 @@ The <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty
 
 The behavior of ECMAScript and canonical regular expressions differs in three areas: character class syntax, self-referencing capturing groups, and octal versus backreference interpretation.
 
-- Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements `\p` and `\P`. Similarly, the `\w` element, which matches a word character, is equivalent to the `[a-zA-Z_0-9]` character class when using ECMAScript and `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` when using canonical behavior. For more information, see [Character Classes](../../../docs/standard/base-types/character-classes-in-regular-expressions.md).
+- Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements `\p` and `\P`. Similarly, the `\w` element, which matches a word character, is equivalent to the `[a-zA-Z_0-9]` character class when using ECMAScript and `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` when using canonical behavior. For more information, see [Character Classes](character-classes-in-regular-expressions.md).
 
   The following example illustrates the difference between canonical and ECMAScript pattern matching. It defines a regular expression, `\b(\w+\s*)+`, that matches words followed by white-space characters. The input consists of two strings, one that uses the Latin character set and the other that uses the Cyrillic character set. As the output shows, the call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method that uses ECMAScript matching fails to match the Cyrillic words, whereas the method call that uses canonical matching does match these words.
 
@@ -358,7 +359,7 @@ However, this behavior is undesirable for some types of comparisons, particularl
 [!code-vb[Conceptual.Regex.Language.Options#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#14)]
 
 > [!NOTE]
-> For more information about string comparisons that are case-sensitive and that use the invariant culture, see [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md).
+> For more information about string comparisons that are case-sensitive and that use the invariant culture, see [Best Practices for Using Strings](best-practices-strings.md).
 
 Instead of using the case-insensitive comparisons of the current culture, you can specify the <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant?displayProperty=nameWithType> option to ignore cultural differences in language and to use the conventions of the invariant culture.
 
@@ -372,4 +373,4 @@ The following example is identical to the previous example, except that the stat
 
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)

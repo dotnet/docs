@@ -12,7 +12,7 @@ namespace Microsoft.Samples.Graphics
 
     public partial class SampleViewer : Window
     {
-    
+
     	private Page[] navigationArray;
 
 		public SampleViewer()

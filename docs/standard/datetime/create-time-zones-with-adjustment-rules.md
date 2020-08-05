@@ -21,12 +21,12 @@ The precise time zone information that is required by an application may not be 
 
 - The time zone does not have accurate information about time zone adjustments for a particular historic period.
 
-In these cases, you can call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to define the time zone required by your application. You can use the overloads of this method to create a time zone with or without adjustment rules. If the time zone supports daylight saving time, you can define adjustments with either fixed or floating adjustment rules. (For definitions of these terms, see the "Time Zone Terminology" section in [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md).)
+In these cases, you can call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to define the time zone required by your application. You can use the overloads of this method to create a time zone with or without adjustment rules. If the time zone supports daylight saving time, you can define adjustments with either fixed or floating adjustment rules. (For definitions of these terms, see the "Time Zone Terminology" section in [Time zone overview](time-zone-overview.md).)
 
 > [!IMPORTANT]
 > Custom time zones created by calling the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method are not added to the registry. Instead, they can be accessed only through the object reference returned by the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method call.
 
-This topic shows how to create a time zone with adjustment rules. To create a time zone that does not support daylight saving time adjustment rules, see [How to: Create Time Zones Without Adjustment Rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md).
+This topic shows how to create a time zone with adjustment rules. To create a time zone that does not support daylight saving time adjustment rules, see [How to: Create Time Zones Without Adjustment Rules](create-time-zones-without-adjustment-rules.md).
 
 ### To create a time zone with floating adjustment rules
 
@@ -85,6 +85,6 @@ This example requires:
 
 ## See also
 
-- [Dates, times, and time zones](../../../docs/standard/datetime/index.md)
-- [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md)
-- [How to: Create time zones without adjustment rules](../../../docs/standard/datetime/create-time-zones-without-adjustment-rules.md)
+- [Dates, times, and time zones](index.md)
+- [Time zone overview](time-zone-overview.md)
+- [How to: Create time zones without adjustment rules](create-time-zones-without-adjustment-rules.md)

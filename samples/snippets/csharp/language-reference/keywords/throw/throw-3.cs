@@ -16,12 +16,12 @@ public class Sentence
          return Value[0];
         }
       catch (NullReferenceException e) {
-         throw;   
-      } 
+         throw;
+      }
    }
 }
 
-public class Example 
+public class Example
 {
    public static void Main()
    {

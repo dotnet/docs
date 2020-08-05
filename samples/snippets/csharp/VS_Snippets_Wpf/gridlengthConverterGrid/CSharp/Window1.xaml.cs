@@ -11,14 +11,14 @@ namespace GridLengthConverter_grid
 
 	public partial class Window1 : Window
 	{
-        
+
         private void changeRowVal(object sender, RoutedEventArgs e)
         {
             txt2.Text = "Current Grid Row is " + hs2.Value.ToString();
         }
-        
+
         // <Snippet1>
-        private void changeColVal(object sender, RoutedEventArgs e) 
+        private void changeColVal(object sender, RoutedEventArgs e)
 		{
             txt1.Text = "Current Grid Column is " + hs1.Value.ToString();
         }

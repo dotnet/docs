@@ -31,7 +31,7 @@ namespace SDKSample
             // Set the LightAngle (direction where light is coming from) to 320 degrees.
             myBevelEffect.LightAngle = 320;
 
-            // Set the Relief to an intermediate value of 0.5. Relief specifies the relief 
+            // Set the Relief to an intermediate value of 0.5. Relief specifies the relief
             // between light and shadow for the bevel. The default value is 0.3.
             myBevelEffect.Relief = 0.4;
 

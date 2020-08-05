@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify a Client Binding in Configuration"
+description: Learn how to specify the binding for a WCF client declaratively in a configuration file. The client accesses a service in this example.
 ms.date: "03/30/2017"
 ms.assetid: 4a7c79aa-50ee-4991-891e-adc0599323a7
 ---
@@ -21,7 +22,7 @@ In this example, a client console application is created to use a calculator ser
 1. Use Svcutil.exe from the command line to generate code from service metadata.  
   
     ```console  
-    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
+    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
     ```  
   
 2. The client that is generated contains the `ICalculator` interface that defines the service contract that the client implementation must satisfy.  
@@ -36,8 +37,8 @@ In this example, a client console application is created to use a calculator ser
   
 4. Svcutil.exe also generates the configuration for the client that uses the <xref:System.ServiceModel.BasicHttpBinding> class. When using Visual Studio, name this file App.config. Note that the address and binding information are not specified anywhere inside the implementation of the service. Also, code does not have to be written to retrieve that information from the configuration file.  
   
-     [!code-xml[C_HowTo_ConfigureClientBinding#100](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/common/client.exe.config#100)]   
-            
+     [!code-xml[C_HowTo_ConfigureClientBinding#100](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/common/client.exe.config#100)]
+
 5. Create an instance of the `ClientCalculator` in an application, and then call the service operations.  
   
      [!code-csharp[C_HowTo_ConfigureClientBinding#3](../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_configureclientbinding/cs/client.cs#3)]  

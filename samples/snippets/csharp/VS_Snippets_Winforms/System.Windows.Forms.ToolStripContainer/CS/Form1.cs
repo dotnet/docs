@@ -15,7 +15,7 @@ public class Form1 : Form
     public Form1()
     {
         InitializeComponent();
-    }    
+    }
 [STAThread]
 static void Main()
     {

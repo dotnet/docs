@@ -9,7 +9,7 @@ Imports System.ServiceModel.Channels
 Imports System.ServiceModel.Security
 Imports System.ServiceModel.Security.Tokens
 Imports System.Security.Permissions
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution := True)>
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace Samples
     '</snippet1>
 
@@ -48,6 +48,6 @@ Namespace Samples
         End Sub
     End Class
 End Namespace
-  '</snippet0>
+'</snippet0>
 
 

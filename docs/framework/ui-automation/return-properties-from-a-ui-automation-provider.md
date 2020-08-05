@@ -1,5 +1,6 @@
 ---
 title: "Return Properties from a UI Automation Provider"
+description: See how a UI Automation provider can return properties of an element to client applications in .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -18,7 +18,7 @@ namespace ExpenseIt
     /// <summary>
     /// Interaction logic for ExpenseReportPage.xaml
     /// </summary>
-    
+
     public partial class ExpenseReportPage : Page
     {
         public ExpenseReportPage()

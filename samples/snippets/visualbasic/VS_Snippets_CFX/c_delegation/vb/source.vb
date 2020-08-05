@@ -4,7 +4,7 @@ Imports System.ServiceModel
 Imports System.Security.Principal
 Imports System.Security.Permissions
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 Namespace SnippetsPart1
 
     Interface IHelloService

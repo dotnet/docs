@@ -7,11 +7,11 @@ ms.assetid: 9029771a-097e-448a-a13a-55d2878330b8
 This section discusses Message Queuing (MSMQ) transport security that you can use to secure messages sent to a queue.  
   
 > [!NOTE]
-> Before reading through this topic, it is recommended that you read [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md).  
+> Before reading through this topic, it is recommended that you read [Security Concepts](security-concepts.md).  
   
  The following illustration provides a conceptual model of queued communication using Windows Communication Foundation (WCF). This illustration and terminology is used to explain transport security concepts.  
   
- ![Queued Application Diagram](../../../../docs/framework/wcf/feature-details/media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
+ ![Queued Application Diagram](media/distributed-queue-figure.jpg "Distributed-Queue-Figure")  
   
  When sending queued messages using WCF with <xref:System.ServiceModel.NetMsmqBinding>, the WCF message is attached as a body of the MSMQ message. Transport security secures the entire MSMQ message (MSMQ message headers or properties and the message body). Because it is the body of the MSMQ message, using transport security also secures the WCF message.  
   
@@ -95,5 +95,5 @@ This section discusses Message Queuing (MSMQ) transport security that you can us
 ## See also
 
 - [Queues Overview](queues-overview.md)
-- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
-- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
+- [Security Concepts](security-concepts.md)
+- [Securing Services and Clients](securing-services-and-clients.md)

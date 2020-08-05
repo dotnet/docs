@@ -14,7 +14,7 @@ ms.assetid: 5b646751-6ab7-465c-916c-b1a76aefa9f5
 ---
 # Generic collections in .NET
 
- The .NET class library provides a number of generic collection classes in the <xref:System.Collections.Generic> and <xref:System.Collections.ObjectModel> namespaces. For more detailed information about these classes, see [Commonly Used Collection Types](../../../docs/standard/collections/commonly-used-collection-types.md).  
+ The .NET class library provides a number of generic collection classes in the <xref:System.Collections.Generic> and <xref:System.Collections.ObjectModel> namespaces. For more detailed information about these classes, see [Commonly Used Collection Types](../collections/commonly-used-collection-types.md).  
   
 ## System.Collections.Generic
 
@@ -49,6 +49,6 @@ ms.assetid: 5b646751-6ab7-465c-916c-b1a76aefa9f5
 
 - <xref:System.Collections.Generic?displayProperty=nameWithType>
 - <xref:System.Collections.ObjectModel?displayProperty=nameWithType>
-- [Generics](../../../docs/standard/generics/index.md)
-- [Generic Delegates for Manipulating Arrays and Lists](../../../docs/standard/generics/delegates-for-manipulating-arrays-and-lists.md)
-- [Generic Interfaces](../../../docs/standard/generics/interfaces.md)
+- [Generics](index.md)
+- [Generic Delegates for Manipulating Arrays and Lists](delegates-for-manipulating-arrays-and-lists.md)
+- [Generic Interfaces](interfaces.md)

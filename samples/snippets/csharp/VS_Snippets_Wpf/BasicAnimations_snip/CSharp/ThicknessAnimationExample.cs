@@ -35,7 +35,7 @@ namespace SDKSamples
             myThicknessAnimation.FillBehavior = FillBehavior.HoldEnd;
 
             // Set the From and To properties of the animation.
-            // BorderThickness animates from left=1, right=1, top=1, and bottom=1 
+            // BorderThickness animates from left=1, right=1, top=1, and bottom=1
             // to left=28, right=28, top=14, and bottom=14 over one and a half seconds.
             myThicknessAnimation.From = new Thickness(1, 1, 1, 1);
             myThicknessAnimation.To = new Thickness(28, 14, 28, 14);

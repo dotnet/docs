@@ -1,5 +1,6 @@
 ---
 title: "Deploying .NET Framework Applications"
+description: Get started with deploying .NET applications. See articles about how the common language runtime locates assemblies, and best practices for assembly loading.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework]"

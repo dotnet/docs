@@ -22,19 +22,19 @@ Visual Basic provides new features for rapid application development that improv
   
 ## In This Section  
 
- [Performing Tasks with My.Application, My.Computer, and My.User](../../../visual-basic/developing-apps/development-with-my/performing-tasks-with-my-application-my-computer-and-my-user.md)  
+ [Performing Tasks with My.Application, My.Computer, and My.User](performing-tasks-with-my-application-my-computer-and-my-user.md)  
  Describes the three central `My` objects, `My.Application`, `My.Computer`, and `My.User`, which provide access to information and functionality  
   
- [Default Object Instances Provided by My.Forms and My.WebServices](../../../visual-basic/developing-apps/development-with-my/default-object-instances-provided-by-my-forms-and-my-webservices.md)  
+ [Default Object Instances Provided by My.Forms and My.WebServices](default-object-instances-provided-by-my-forms-and-my-webservices.md)  
  Describes the `My.Forms` and `My.WebServices` objects, which provide access to forms, data sources, and XML Web services used by your application.  
   
- [Rapid Application Development with My.Resources and My.Settings](../../../visual-basic/developing-apps/development-with-my/rapid-application-development-with-my-resources-and-my-settings.md)  
+ [Rapid Application Development with My.Resources and My.Settings](rapid-application-development-with-my-resources-and-my-settings.md)  
  Describes the `My.Resources` and `My.Settings` objects, which provide access to an application's resources and settings.  
   
- [Overview of the Visual Basic Application Model](../../../visual-basic/developing-apps/development-with-my/overview-of-the-visual-basic-application-model.md)  
+ [Overview of the Visual Basic Application Model](overview-of-the-visual-basic-application-model.md)  
  Describes the Visual Basic Application Startup/Shutdown model.  
   
- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)  
+ [How My Depends on Project Type](how-my-depends-on-project-type.md)  
  Gives details on which `My` features are available in different project types.  
   
 ## See also
@@ -42,6 +42,6 @@ Visual Basic provides new features for rapid application development that improv
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>
-- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
-- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
-- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+- [My.Forms Object](../../language-reference/objects/my-forms-object.md)
+- [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)
+- [How My Depends on Project Type](how-my-depends-on-project-type.md)

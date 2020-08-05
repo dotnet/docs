@@ -7,7 +7,7 @@ Public Class DeletingFilesDirectories
         ' Get a new isolated store for this user domain and assembly.
         ' Put the store into an isolatedStorageFile object.
 
-        Dim isoStore As IsolatedStorageFile =  IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or
+        Dim isoStore As IsolatedStorageFile = IsolatedStorageFile.GetStore(IsolatedStorageScope.User Or
             IsolatedStorageScope.Domain Or IsolatedStorageScope.Assembly, Nothing, Nothing)
 
         Console.WriteLine("Creating Directories:")

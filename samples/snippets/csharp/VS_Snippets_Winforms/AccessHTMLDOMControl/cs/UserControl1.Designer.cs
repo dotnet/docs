@@ -23,15 +23,15 @@
 		#region Component Designer generated code
 
 		/// <summary>
-		/// Required method for Designer support - do not modify 
+		/// Required method for Designer support - do not modify
 		/// the contents of this method with the code editor.
 		/// </summary>
 		private void InitializeComponent()
 		{
 			this.SuspendLayout();
-			// 
+			//
 			// UserControl1
-			// 
+			//
 			this.Name = "UserControl1";
 			this.Size = new System.Drawing.Size(435, 401);
 			this.Load += new System.EventHandler(this.UserControl1_Load);

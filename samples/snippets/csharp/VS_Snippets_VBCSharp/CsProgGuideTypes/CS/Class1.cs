@@ -212,7 +212,7 @@ namespace CsProgGuideTypes
             //<Snippet14>
             int i = 123;
             // The following line boxes i.
-            object o = i;  
+            object o = i;
             //</Snippet14>
 
             //<Snippet15>
@@ -222,25 +222,25 @@ namespace CsProgGuideTypes
 
             //<Snippet47>
             // String.Concat example.
-            // String.Concat has many versions. Rest the mouse pointer on 
+            // String.Concat has many versions. Rest the mouse pointer on
             // Concat in the following statement to verify that the version
             // that is used here takes three object arguments. Both 42 and
             // true must be boxed.
             Console.WriteLine(String.Concat("Answer", 42, true));
 
             // List example.
-            // Create a list of objects to hold a heterogeneous collection 
+            // Create a list of objects to hold a heterogeneous collection
             // of elements.
             List<object> mixedList = new List<object>();
 
-            // Add a string element to the list. 
+            // Add a string element to the list.
             mixedList.Add("First Group:");
 
-            // Add some integers to the list. 
+            // Add some integers to the list.
             for (int j = 1; j < 5; j++)
             {
                 // Rest the mouse pointer over j to verify that you are adding
-                // an int to a list of objects. Each element j is boxed when 
+                // an int to a list of objects. Each element j is boxed when
                 // you add j to mixedList.
                 mixedList.Add(j);
             }
@@ -252,7 +252,7 @@ namespace CsProgGuideTypes
                 mixedList.Add(j);
             }
 
-            // Display the elements in the list. Declare the loop variable by 
+            // Display the elements in the list. Declare the loop variable by
             // using var, so that the compiler assigns its type.
             foreach (var item in mixedList)
             {
@@ -268,12 +268,12 @@ namespace CsProgGuideTypes
             var sum = 0;
             for (var j = 1; j < 5; j++)
             {
-                // The following statement causes a compiler error: Operator 
+                // The following statement causes a compiler error: Operator
                 // '*' cannot be applied to operands of type 'object' and
-                // 'object'. 
+                // 'object'.
                 //sum += mixedList[j] * mixedList[j]);
 
-                // After the list elements are unboxed, the computation does 
+                // After the list elements are unboxed, the computation does
                 // not cause a compiler error.
                 sum += (int)mixedList[j] * (int)mixedList[j];
             }
@@ -320,11 +320,11 @@ namespace CsProgGuideTypes
 
             //<Snippet18>
             // Boxing copies the value of i into object o.
-            object o = i;  
+            object o = i;
             //</Snippet18>
 
             // Change the value of i.
-            i = 456;  
+            i = 456;
 
             // The change in i doesn't affect the value stored in o.
             System.Console.WriteLine("The value-type value = {0}", i);
@@ -518,7 +518,7 @@ namespace CsProgGuideTypes
         {
             byte numA = 0xA;
 
-            //<snippet35>             
+            //<snippet35>
             public string GetName(int ID)
             {
                 if (ID < names.Length)
@@ -593,7 +593,7 @@ namespace CsProgGuideTypes
             float f = BitConverter.ToSingle(floatVals, 0);
             Console.WriteLine("float convert = {0}", f);
 
-            // Output: 200.0056            
+            // Output: 200.0056
             //</snippet39>
             // Keep the console window open in debug mode.
             System.Console.WriteLine("Press any key to exit.");
@@ -636,7 +636,7 @@ namespace CsProgGuideTypes
             app.UseAsOperator(sn);
 
             // Use the as operator with a value type.
-            // Note the implicit conversion to int? in 
+            // Note the implicit conversion to int? in
             // the method body.
             int i = 5;
             app.UseAsWithNullable(i);
@@ -687,35 +687,31 @@ namespace CsProgGuideTypes
     //</snippet40>
 
     //<snippet41>
-    
-    using System;
-
     class Animal
     {
-        public void Eat() { Console.WriteLine("Eating."); }
-        public override string ToString()
-        {
-            return "I am an animal.";
-        }
+        public void Eat() => System.Console.WriteLine("Eating.");
+
+        public override string ToString() => "I am an animal.";
     }
+
     class Reptile : Animal { }
     class Mammal : Animal { }
 
     class UnSafeCast
     {
         static void Main()
-        {            
+        {
             Test(new Mammal());
 
             // Keep the console window open in debug mode.
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
+            System.Console.WriteLine("Press any key to exit.");
+            System.Console.ReadKey();
         }
 
         static void Test(Animal a)
         {
-            // Cause InvalidCastException at run time 
-            // because Mammal is not convertible to Reptile.
+            // System.InvalidCastException at run time
+            // Unable to cast object of type 'Mammal' to type 'Reptile'
             Reptile r = (Reptile)a;
         }
     }
@@ -729,11 +725,11 @@ namespace CsProgGuideTypes
             int i = (int)System.IO.FileMode.Create;
             /*
             //<snippet42>
-            int a = 5;             
+            int a = 5;
             int b = a + 2; //OK
-            
+
             bool test = true;
-              
+
             // Error. Operator '+' cannot be applied to operands of type 'int' and 'bool'.
             int c = a + test;
             //</snippet42>
@@ -810,7 +806,7 @@ namespace CsProgGuideTypes
         }
     }
 
-    //<Snippet46>     
+    //<Snippet46>
     class Base { }
     class Derived : Base { }
 
@@ -827,7 +823,7 @@ namespace CsProgGuideTypes
             // true:
             Console.WriteLine("derived is Base = {0}", derived is Base);
 
-            // GetType returns the exact run-time type.            
+            // GetType returns the exact run-time type.
             object o = derived;
             Console.WriteLine("The run-time type of o is {0}", o.GetType().Name);
         }
@@ -838,5 +834,5 @@ namespace CsProgGuideTypes
         The run-time type of o is Derived
      */
 
-    //</Snippet46> 
+    //</Snippet46>
 }

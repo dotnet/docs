@@ -101,7 +101,7 @@ namespace winformcs
         private async Task ExcAsync(string info)
         {
             await Task.Delay(100);
-            
+
             throw new Exception("Error-" + info);
         }
 

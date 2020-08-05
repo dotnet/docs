@@ -7,17 +7,17 @@ public class Example
    public static void Main()
    {
       string pattern = @"(\w)\1";
-      string[] words = { "trellis", "seer", "latter", "summer", 
+      string[] words = { "trellis", "seer", "latter", "summer",
                          "hoarse", "lesser", "aardvark", "stunned" };
       foreach (string word in words)
       {
          Match match = Regex.Match(word, pattern);
          if (match.Success)
-            Console.WriteLine("'{0}' found in '{1}' at position {2}.", 
+            Console.WriteLine("'{0}' found in '{1}' at position {2}.",
                               match.Value, word, match.Index);
          else
             Console.WriteLine("No double characters in '{0}'.", word);
-      }                                                  
+      }
    }
 }
 // The example displays the following output:

@@ -28,7 +28,7 @@ A XAML namespace is a concept that expands on the definition of an XML namespace
   
  `clr-namespace:` and `; assembly=` are literal components of the syntax.  
   
- *clrnsName* is the string name that identifies a CLR namespace. This string name includes any internal dot characters (.) that provide hints about the CLR namespace and its relation to other CLR namespaces. 
+ *clrnsName* is the string name that identifies a CLR namespace. This string name includes any internal dot characters (.) that provide hints about the CLR namespace and its relation to other CLR namespaces.
   
  *assemblyShortName* is the string name of an assembly that defines types that are useful in XAML. The types to be accessed through the declared XAML namespace are expected to be defined by the assembly and to be declared within the CLR namespace specified by *clrnsName*. This string name typically parallels the information as reported by <xref:System.Reflection.AssemblyName.Name%2A?displayProperty=nameWithType>.  
   

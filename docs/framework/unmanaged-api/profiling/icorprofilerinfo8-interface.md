@@ -17,7 +17,7 @@ A subclass of [ICorProfilerInfo7](icorprofilerinfo7-interface.md) that provides 
 |[GetDynamicFunctionInfo Method](icorprofilerinfo8-getdynamicfunctioninfo-method.md)| Retrieves information about dynamic methods. |
 
 ## Requirements  
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** CorProf.idl, CorProf.h  
 **.NET Framework Versions:** [!INCLUDE[net_current_v472plus](../../../../includes/net-current-v472plus.md)]  
 

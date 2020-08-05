@@ -1,5 +1,6 @@
 ---
 title: "virtualCERCall MDA"
+description: Review the virtualCERCall managed debugging assistant (MDA), which is invoked if a CER contains a call to a virtual method that can't be prepared automatically.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), CER calls"
@@ -81,7 +82,7 @@ void MethodWithCer(MyClass object)
         // Start of the CER.  
   
         // Cannot tell at analysis time whether object is a MyClass  
-        // or a MyDerivedClass, so we do not know which version of   
+        // or a MyDerivedClass, so we do not know which version of
         // VirtualMethod we are going to call.  
         object.VirtualMethod();  
     }  

@@ -37,7 +37,7 @@ A major focus of .NET Core 2.1 is improving build-time performance, particularly
 
 ### New CLI commands
 
-A number of tools that were available only on a per project basis using [`DotnetCliToolReference`](../tools/extensibility.md) are now available as part of the .NET Core SDK. These tools include:
+A number of tools that were available only on a per project basis using `DotnetCliToolReference` are now available as part of the .NET Core SDK. These tools include:
 
 - `dotnet watch` provides a file system watcher that waits for a file to change before executing a designated set of commands. For example, the following command automatically rebuilds the current project and generates verbose output whenever a file in it changes:
 
@@ -59,7 +59,7 @@ A number of tools that were available only on a per project basis using [`Dotnet
 
 ### Global Tools
 
-.NET Core 2.1 supports *Global Tools* -- that is, custom tools that are available globally from the command line. The extensibility model in previous versions of .NET Core made custom tools available on a per project basis only by using [`DotnetCliToolReference`](../tools/extensibility.md#consuming-per-project-tools).
+.NET Core 2.1 supports *Global Tools* -- that is, custom tools that are available globally from the command line. The extensibility model in previous versions of .NET Core made custom tools available on a per project basis only by using `DotnetCliToolReference`.
 
 To install a Global Tool, you use the [dotnet tool install](../tools/dotnet-tool-install.md) command. For example:
 
@@ -85,7 +85,7 @@ In .NET Core 2.1 SDK, all tools operations use the `dotnet tool` command. The fo
 
 All .NET Core applications starting with .NET Core 2.0 automatically roll forward to the latest *minor version* installed on a system.
 
-Starting with .NET Core 2.0, if the version of .NET Core that an application was built with is not present at runtime, the application automatically runs against the latest installed *minor version* of .NET Core. In other words, if an application is built with .NET Core 2.0, and .NET Core 2.0 is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
+Starting with .NET Core 2.0, if the version of .NET Core that an application was built with is not present at run time, the application automatically runs against the latest installed *minor version* of .NET Core. In other words, if an application is built with .NET Core 2.0, and .NET Core 2.0 is not present on the host system but .NET Core 2.1 is, the application runs with .NET Core 2.1.
 
 > [!IMPORTANT]
 > This roll-forward behavior doesn't apply to preview releases. By default, it also doesn't apply to major releases, but this can be changed with the settings below.
@@ -118,11 +118,11 @@ Patch version roll forward is independent of this setting and is done after any 
 
 ### Self-contained application servicing
 
-`dotnet publish` now publishes self-contained applications with a serviced runtime version. When you publish a self-contained application with the .NET Core 2.1 SDK (v 2.1.300), your application includes the latest serviced runtime version known by that SDK. When you upgrade to the latest SDK, you’ll publish with the latest .NET Core runtime version. This applies for .NET Core 1.0 runtimes and later.
+`dotnet publish` now publishes self-contained applications with a serviced runtime version. When you publish a self-contained application with the .NET Core 2.1 SDK (v 2.1.300), your application includes the latest serviced runtime version known by that SDK. When you upgrade to the latest SDK, you'll publish with the latest .NET Core runtime version. This applies for .NET Core 1.0 runtimes and later.
 
 Self-contained publishing relies on runtime versions on NuGet.org. You do not need to have the serviced runtime on your machine.
 
-Using the .NET Core 2.0 SDK, self-contained applications are published with the .NET Core 2.0.0 runtime unless a different version is specified via the `RuntimeFrameworkVersion` property. With this new behavior, you’ll no longer need to set this property to select a higher runtime version for a self-contained application. The easiest approach going forward is to always publish with .NET Core 2.1 SDK (v 2.1.300).
+Using the .NET Core 2.0 SDK, self-contained applications are published with the .NET Core 2.0.0 runtime unless a different version is specified via the `RuntimeFrameworkVersion` property. With this new behavior, you'll no longer need to set this property to select a higher runtime version for a self-contained application. The easiest approach going forward is to always publish with .NET Core 2.1 SDK (v 2.1.300).
 
 For more information, see [Self-contained deployment runtime roll forward](../deploying/runtime-patch-selection.md).
 ## Windows Compatibility Pack
@@ -245,6 +245,6 @@ For information about breaking changes, see [Breaking changes for migration from
 
 ## See also
 
-- [What's new in .NET Core](index.md)
+- [What's new in .NET Core 3.1](dotnet-core-3-1.md)
 - [New features in EF Core 2.1](/ef/core/what-is-new/ef-core-2.1)
 - [What's new in ASP.NET Core 2.1](/aspnet/core/aspnetcore-2.1)

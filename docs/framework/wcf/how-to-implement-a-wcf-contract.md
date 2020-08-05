@@ -1,5 +1,6 @@
 ---
 title: "Tutorial: Implement a Windows Communication Foundation service contract"
+description: Learn how to add code to implement a WCF service interface as part of a series of articles that help you get started creating a WCF application.
 ms.date: 03/19/2019
 dev_langs:
   - "csharp"
@@ -12,7 +13,7 @@ ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
 
 This tutorial describes the second of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-The next step for creating a WCF application is to add code to implement the WCF service interface that you created in the previous step. In this step, you create a class named `CalculatorService` that implements the user-defined `ICalculator` interface. Each method in the following code calls a calculator operation and writes text to the console to test it. 
+The next step for creating a WCF application is to add code to implement the WCF service interface that you created in the previous step. In this step, you create a class named `CalculatorService` that implements the user-defined `ICalculator` interface. Each method in the following code calls a calculator operation and writes text to the console to test it.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]

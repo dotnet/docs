@@ -1,5 +1,6 @@
 ---
 title: Overview
+description: Learn how you can use Windows Forms to build smart clients that meet the needs of today's enterprises and end users. 
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "smart clients"

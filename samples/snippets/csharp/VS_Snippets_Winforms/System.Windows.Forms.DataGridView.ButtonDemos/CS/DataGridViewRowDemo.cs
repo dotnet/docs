@@ -83,15 +83,15 @@ public class DataGridViewRowDemo : Form
         dataGridView.Columns[3].Name = "Rating";
 
         // Populate the rows.
-        string[] row1 = new string[]{"Meatloaf", 
+        string[] row1 = new string[]{"Meatloaf",
                                             "Main Dish", boringMeatloaf, boringMeatloafRanking};
-        string[] row2 = new string[]{"Key Lime Pie", 
+        string[] row2 = new string[]{"Key Lime Pie",
                                             "Dessert", "lime juice, evaporated milk", "****"};
-        string[] row3 = new string[]{"Orange-Salsa Pork Chops", 
+        string[] row3 = new string[]{"Orange-Salsa Pork Chops",
                                             "Main Dish", "pork chops, salsa, orange juice", "****"};
-        string[] row4 = new string[]{"Black Bean and Rice Salad", 
+        string[] row4 = new string[]{"Black Bean and Rice Salad",
                                             "Salad", "black beans, brown rice", "****"};
-        string[] row5 = new string[]{"Chocolate Cheesecake", 
+        string[] row5 = new string[]{"Chocolate Cheesecake",
                                             "Dessert", "cream cheese", "***"};
         string[] row6 = new string[]{"Black Bean Dip", "Appetizer",
                                             "black beans, sour cream", "***"};
@@ -185,7 +185,7 @@ public class DataGridViewRowDemo : Form
 
     private void AdjustDataGridViewSizing()
     {
-        dataGridView.ColumnHeadersHeightSizeMode = 
+        dataGridView.ColumnHeadersHeightSizeMode =
             DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         dataGridView.Columns[ratingColumn].Width = 50;
     }
@@ -199,7 +199,7 @@ public class DataGridViewRowDemo : Form
         DataGridViewRow row = dataGridView.Rows[secondRow];
         row.MinimumHeight = 40;
     }
-    //</snippet207> 
+    //</snippet207>
 
     //<snippet208>
     // Set height.
@@ -255,7 +255,7 @@ public class DataGridViewRowDemo : Form
         row.Cells[ratingColumn].Value = stars;
 
         // Resize the column width to account for the new value.
-        row.DataGridView.AutoResizeColumn(ratingColumn, 
+        row.DataGridView.AutoResizeColumn(ratingColumn,
             DataGridViewAutoSizeColumnMode.DisplayedCells);
     }
     //</snippet211>

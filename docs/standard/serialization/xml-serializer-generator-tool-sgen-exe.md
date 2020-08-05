@@ -1,16 +1,23 @@
 ---
 title: "XML Serializer Generator Tool (Sgen.exe)"
+description: The XML Serializer Generator creates an XML serialization assembly for types in an assembly, which improves the startup performance of XmlSerializer.
 ms.date: "03/30/2017"
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
 ---
 # XML Serializer Generator Tool (Sgen.exe)
-The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly in order to improve the startup performance of a <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types.  
+
+The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly. The serialization assembly improves the startup performance of a <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types.
   
-## Syntax  
+## Syntax
+
+Run the tool from the command line.
   
 ```console  
 sgen [options]  
-```  
+```
+  
+> [!TIP]
+> For .NET Framework tools to function properly, you must set your `Path`, `Include`, and `Lib` environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\v2.0\Bin directory. SDKVars.bat must be executed in every command shell.
   
 ## Parameters  
   
@@ -51,5 +58,5 @@ sgen Data.dll
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](../../framework/tools/index.md)
+- [Command Prompts](../../framework/tools/developer-command-prompt-for-vs.md)

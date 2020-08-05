@@ -14,7 +14,7 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
 > [!NOTE]
 > This scenario does not perform negotiation of the service certificate. The service certificate must be provided to the client in advance of any communication. The server certificate can be distributed with the application or provided in an out-of-band communication.  
   
- ![Message security with mutual certificates](../../../../docs/framework/wcf/feature-details/media/f4157312-b17c-416c-a5ee-fa7b54db211b.gif "f4157312-b17c-416c-a5ee-fa7b54db211b")  
+ ![Message security with mutual certificates](media/f4157312-b17c-416c-a5ee-fa7b54db211b.gif "f4157312-b17c-416c-a5ee-fa7b54db211b")  
   
 |Characteristic|Description|  
 |--------------------|-----------------|  
@@ -50,18 +50,18 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       <serviceBehaviors>  
         <behavior name="serviceCredentialBehavior">  
           <serviceCredentials>  
-            <serviceCertificate findValue="Contoso.com"   
+            <serviceCertificate findValue="Contoso.com"
                                 storeLocation="LocalMachine"  
-                                storeName="My"   
+                                storeName="My"
                                 x509FindType="FindBySubjectName" />  
           </serviceCredentials>  
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
     <services>  
-      <service behaviorConfiguration="serviceCredentialBehavior"   
+      <service behaviorConfiguration="serviceCredentialBehavior"
                name="ServiceModel.Calculator">  
-        <endpoint address="http://localhost/Calculator"   
+        <endpoint address="http://localhost/Calculator"
                   binding="wsHttpBinding"  
                   bindingConfiguration="InteropCertificateBinding"  
                   name="WSHttpBinding_ICalculator"  
@@ -101,7 +101,7 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
  [!code-vb[C_SecurityScenarios#20](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_securityscenarios/vb/source.vb#20)]  
   
 ### Configuration  
- The following configures the client. A client certificate must be specified using the [\<clientCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md). Also, the service certificate is specified using the [\<defaultCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/defaultcertificate-element.md).  
+ The following configures the client. A client certificate must be specified using the [\<clientCertificate>](../../configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md). Also, the service certificate is specified using the [\<defaultCertificate>](../../configure-apps/file-schema/wcf/defaultcertificate-element.md).  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8"?>  
@@ -111,12 +111,12 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       <endpointBehaviors>  
         <behavior name="ClientCredentialsBehavior">  
           <clientCredentials>  
-            <clientCertificate findValue="Cohowinery.com"   
+            <clientCertificate findValue="Cohowinery.com"
                  storeLocation="CurrentUser"  
                  storeName="My"  
                  x509FindType="FindBySubjectName" />  
             <serviceCertificate>  
-              <defaultCertificate findValue="Contoso.com"   
+              <defaultCertificate findValue="Contoso.com"
                                   storeLocation="CurrentUser"  
                                   storeName="TrustedPeople"  
                                   x509FindType="FindBySubjectName" />  
@@ -129,7 +129,7 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       <wsHttpBinding>  
         <binding name="WSHttpBinding_ICalculator" >  
           <security mode="Message">  
-            <message clientCredentialType="Certificate"   
+            <message clientCredentialType="Certificate"
                      negotiateServiceCredential="false"  
                      establishSecurityContext="false" />  
           </security>  
@@ -137,9 +137,9 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       </wsHttpBinding>  
     </bindings>  
     <client>  
-      <endpoint address="http://machineName/Calculator"   
+      <endpoint address="http://machineName/Calculator"
                 behaviorConfiguration="ClientCredentialsBehavior"  
-                binding="wsHttpBinding"   
+                binding="wsHttpBinding"
                 bindingConfiguration="WSHttpBinding_ICalculator"  
                 contract="ICalculator"  
                 name="WSHttpBinding_ICalculator">  
@@ -154,6 +154,6 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
   
 ## See also
 
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
+- [Security Overview](security-overview.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
 - [How to: Create and Install Temporary Certificates in WCF for Transport Security During Development](https://docs.microsoft.com/previous-versions/msp-n-p/ff648498(v=pandp.10))

@@ -19,7 +19,7 @@ Specifies a trace source that initiates tracing messages.
 ## Syntax  
   
 ```xml  
-<source>   
+<source>
   <listeners>...</listeners>  
 </source>  
 ```  
@@ -71,8 +71,8 @@ Specifies a trace source that initiates tracing messages.
     </sources>  
         <switches>  
            <add name="sourceSwitch" value="Warning" />  
-        </switches>    
-  </system.diagnostics>   
+        </switches>
+  </system.diagnostics>
 </configuration>  
 ```  
   

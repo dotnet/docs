@@ -99,8 +99,8 @@ Module Module1
                     bulkCopy.ColumnMappings.Add("SalesOrderID", "SalesOrderID")
                     bulkCopy.ColumnMappings.Add("OrderDate", "OrderDate")
                     bulkCopy.ColumnMappings.Add("AccountNumber", "AccountNumber")
- 
-                   ' Write readerHeader to the destination.
+
+                    ' Write readerHeader to the destination.
                     Try
                         bulkCopy.WriteToServer(readerHeader)
                     Catch ex As Exception

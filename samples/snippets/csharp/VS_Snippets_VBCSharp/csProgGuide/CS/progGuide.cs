@@ -4,9 +4,9 @@
 using System;
 namespace HelloWorld
 {
-    class Hello 
+    class Hello
     {
-        static void Main() 
+        static void Main()
         {
             Console.WriteLine("Hello World!");
         }
@@ -27,9 +27,9 @@ This program displays the string "Hello World!" on the screen. */
 //</Snippet33>
 
 //-----------------------------------------------------------------------------
-class HelloAgain 
+class HelloAgain
 {
-    static void Main() 
+    static void Main()
     {
 		//<Snippet22>
         System.Console.WriteLine("Hello World!");

@@ -14,4 +14,4 @@ The name specified for file name or class in a call to the `GetObject` function 
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)

@@ -25,5 +25,5 @@ Dim query = From var1 In collection1
 
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Select Clause](../queries/select-clause.md)

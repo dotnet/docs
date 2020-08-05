@@ -23,10 +23,10 @@ Requests that the host allocate the specified amount of memory from the heap, an
   
 ```cpp  
 HRESULT DebugAlloc (  
-    [in]  SIZE_T  cbSize,   
-    [in]  EMemoryCriticalLevel dwCriticalLevel,   
-    [in]  char*   pszFileName,   
-    [in]  int     iLineNo,   
+    [in]  SIZE_T  cbSize,
+    [in]  EMemoryCriticalLevel dwCriticalLevel,
+    [in]  char*   pszFileName,
+    [in]  int     iLineNo,
     [out] void**  ppMem  
 );  
 ```  
@@ -36,7 +36,7 @@ HRESULT DebugAlloc (
  [in] The size, in bytes, of the current memory allocation request.  
   
  `dwCriticalLevel`  
- [in] One of the [EMemoryCriticalLevel](../../../../docs/framework/unmanaged-api/hosting/ememorycriticallevel-enumeration.md) values, indicating the impact of an allocation failure.  
+ [in] One of the [EMemoryCriticalLevel](ememorycriticallevel-enumeration.md) values, indicating the impact of an allocation failure.  
   
  `pszFileName`  
  [in] The code file of the executable being debugged.  
@@ -60,10 +60,10 @@ HRESULT DebugAlloc (
 |E_OUTOFMEMORY|Not enough memory was available to complete the allocation request.|  
   
 ## Remarks  
- The CLR gets an interface pointer to an [IHostMalloc](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md) instance by calling the [IHostMemoryManager::CreateMalloc](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-createmalloc-method.md) method. `DebugAlloc` allows the runtime to get code file information for use during debugging.  
+ The CLR gets an interface pointer to an [IHostMalloc](ihostmalloc-interface.md) instance by calling the [IHostMemoryManager::CreateMalloc](ihostmemorymanager-createmalloc-method.md) method. `DebugAlloc` allows the runtime to get code file information for use during debugging.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -73,5 +73,5 @@ HRESULT DebugAlloc (
   
 ## See also
 
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
-- [IHostMalloc Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmalloc-interface.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)
+- [IHostMalloc Interface](ihostmalloc-interface.md)

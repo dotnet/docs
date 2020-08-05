@@ -16,17 +16,17 @@ namespace AdavancedInkTopicsSamples
         InkPresenter ip;
         DynamicRenderer dr;
 
-        // The StylusPointsCollection that gathers points 
+        // The StylusPointsCollection that gathers points
         // before Stroke from is created.
         StylusPointCollection stylusPoints = null;
-        
+
         public InkControl()
         {
             // Add an InkPresenter for drawing.
             ip = new InkPresenter();
             this.Content = ip;
 
-            // Add a dynamic renderer that 
+            // Add a dynamic renderer that
             // draws ink as it "flows" from the stylus.
             dr = new DynamicRenderer();
             ip.AttachVisuals(dr.RootVisual, dr.DrawingAttributes);
@@ -50,7 +50,7 @@ namespace AdavancedInkTopicsSamples
             // Allocate memory for the StylusPointsCollection and
             // add the StylusPoints that have come in so far.
             stylusPoints = new StylusPointCollection();
-            StylusPointCollection eventPoints = 
+            StylusPointCollection eventPoints =
                 e.GetStylusPoints(this, stylusPoints.Description);
 
             stylusPoints.Add(eventPoints);
@@ -65,9 +65,9 @@ namespace AdavancedInkTopicsSamples
                 return;
             }
 
-            // Add the StylusPoints that have come in since the 
+            // Add the StylusPoints that have come in since the
             // last call to OnStylusMove.
-            StylusPointCollection newStylusPoints = 
+            StylusPointCollection newStylusPoints =
                 e.GetStylusPoints(this, stylusPoints.Description);
             stylusPoints.Add(newStylusPoints);
         }
@@ -81,9 +81,9 @@ namespace AdavancedInkTopicsSamples
                 return;
             }
 
-            // Add the StylusPoints that have come in since the 
+            // Add the StylusPoints that have come in since the
             // last call to OnStylusMove.
-            StylusPointCollection newStylusPoints = 
+            StylusPointCollection newStylusPoints =
                 e.GetStylusPoints(this, stylusPoints.Description);
             stylusPoints.Add(newStylusPoints);
 
@@ -134,7 +134,7 @@ namespace AdavancedInkTopicsSamples
 
             // Don't collect points unless the left mouse button
             // is down.
-            if (e.LeftButton == MouseButtonState.Released || 
+            if (e.LeftButton == MouseButtonState.Released ||
                 stylusPoints == null)
             {
                 return;

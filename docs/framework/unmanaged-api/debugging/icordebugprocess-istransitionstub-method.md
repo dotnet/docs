@@ -40,7 +40,7 @@ HRESULT IsTransitionStub(
  You can also identity transition stubs by looking at information in the portable executable (PE) file.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

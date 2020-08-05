@@ -1,5 +1,6 @@
 ---
 title: "Serialization concepts"
+description: Serialization can be used to capture the state of an object so a copy can be created or to send an object by value from one application domain to another. 
 ms.date: "08/07/2017"
 ms.assetid: e1ff4740-20a1-4c76-a8ad-d857db307054
 ---
@@ -11,7 +12,7 @@ Why would you want to use serialization? The two most important reasons are to p
 ## Persistent storage
 It is often necessary to store the value of the fields of an object to disk and then, later, retrieve this data. Although this is easy to achieve without relying on serialization, this approach is often cumbersome and error prone, and becomes progressively more complex when you need to track a hierarchy of objects. Imagine writing a large business application, that contains thousands of objects, and having to write code to save and restore the fields and properties to and from disk for each object. Serialization provides a convenient mechanism for achieving this objective.
 
-The common language runtime manages how objects are stored in memory and provides an automated serialization mechanism by using [reflection](../../../docs/framework/reflection-and-codedom/reflection.md). When an object is serialized, the name of the class, the assembly, and all the data members of the class instance are written to storage. Objects often store references to other instances in member variables. When the class is serialized, the serialization engine tracks referenced objects, already serialized, to ensure that the same object is not serialized more than once. The serialization architecture provided with the .NET Framework correctly handles object graphs and circular references automatically. The only requirement placed on object graphs is that all objects, referenced by the serialized object, must also be marked as `Serializable` (for more information, see [Basic Serialization](basic-serialization.md)). If this is not done, an exception will be thrown when the serializer attempts to serialize the unmarked object.
+The common language runtime manages how objects are stored in memory and provides an automated serialization mechanism by using [reflection](../../framework/reflection-and-codedom/reflection.md). When an object is serialized, the name of the class, the assembly, and all the data members of the class instance are written to storage. Objects often store references to other instances in member variables. When the class is serialized, the serialization engine tracks referenced objects, already serialized, to ensure that the same object is not serialized more than once. The serialization architecture provided with the .NET Framework correctly handles object graphs and circular references automatically. The only requirement placed on object graphs is that all objects, referenced by the serialized object, must also be marked as `Serializable` (for more information, see [Basic Serialization](basic-serialization.md)). If this is not done, an exception will be thrown when the serializer attempts to serialize the unmarked object.
 
 When the serialized class is deserialized, the class is recreated and the values of all the data members are automatically restored.
 
@@ -21,11 +22,11 @@ Objects are valid only in the application domain where they are created. Any att
 When an object derives from `MarshalByRefObject`, an object reference is passed from one application domain to another, rather than the object itself. You can also mark an object that derives from `MarshalByRefObject` as `Serializable`. When this object is used with remoting, the formatter responsible for serialization, which has been preconfigured with a surrogate selector (`SurrogateSelector`), takes control of the serialization process, and replaces all objects derived from `MarshalByRefObject` with a proxy. Without the `SurrogateSelector` in place, the serialization architecture follows the standard serialization rules described in [Steps in the Serialization Process](steps-in-the-serialization-process.md).  
 
 ## Related sections  
- [Binary Serialization](../../../docs/standard/serialization/binary-serialization.md)  
+ [Binary Serialization](binary-serialization.md)  
  Describes the binary serialization mechanism that is included with the common language runtime.  
   
  [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
  Describes the various communications methods available in the .NET Framework for remote communications.  
   
- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)  
+ [XML and SOAP Serialization](xml-and-soap-serialization.md)  
  Describes the XML and SOAP serialization mechanism that is included with the common language runtime.

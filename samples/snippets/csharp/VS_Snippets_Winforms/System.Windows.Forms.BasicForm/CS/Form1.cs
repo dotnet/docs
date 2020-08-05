@@ -11,8 +11,8 @@ using System.Windows.Forms;
     {
         //<snippet4>
         public Form1() {}
-        //</snippet4>  
-  
+        //</snippet4>
+
         //<snippet5>
         [STAThread]
         public static void Main()
@@ -20,7 +20,7 @@ using System.Windows.Forms;
           Application.EnableVisualStyles();
           Application.Run(new Form1());
         }
-        
+
         //</snippet5>
     }
 

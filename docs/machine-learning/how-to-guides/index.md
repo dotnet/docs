@@ -13,7 +13,7 @@ In the How to section of the ML.NET Guide, you can find quick answers to common 
 
 ### Prepare the data
 
-* [Preprocess training data with normalizers to use in data processing.](normalizers-preprocess-data-ml-net.md)
+* [Preprocess training data with normalizers to use in data processing.](prepare-data-ml-net.md)
 
 ## Train the model
 
@@ -21,15 +21,9 @@ In the How to section of the ML.NET Guide, you can find quick answers to common 
 
 * [Train a regression model to predict a value using ML.NET.](train-machine-learning-model-ml-net.md)
 
-### Evaluate the model quality
-
-* [Calculate metrics to evaluate model quality.](verify-model-quality-ml-net.md)
-
 ### Model explainability
 
 * [Determine the feature importance of models with Permutation Feature Importance.](explain-machine-learning-model-permutation-feature-importance-ml-net.md)
-
-* [Use Generalized Additive Models and shape functions for model explainability.](use-gams-for-model-explainability.md)
 
 ## Run
 

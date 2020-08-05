@@ -76,7 +76,7 @@ public interface ISampleService
 //</snippet12>
 
 /*
-//<snippet22> 
+//<snippet22>
 [ServiceContractAttribute(
   Namespace = "http://microsoft.wcf.documentation"
 )]

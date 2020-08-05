@@ -6,39 +6,39 @@ Imports System.Globalization
 Imports System.Threading
 
 Module Example
-   Public Sub Main()
-      Dim dateForMonth As Date = #1/1/2013#
-      Dim temperatures() As Double = {  3.4, 3.5, 7.6, 10.4, 14.5, 17.2, 
-                                       19.9, 18.2, 15.9, 11.3, 6.9, 5.3 }
+    Public Sub Main()
+        Dim dateForMonth As Date = #1/1/2013#
+        Dim temperatures() As Double = {3.4, 3.5, 7.6, 10.4, 14.5, 17.2,
+                                         19.9, 18.2, 15.9, 11.3, 6.9, 5.3}
 
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR")
-      Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
-      Dim fmtString As String = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}" 
-      For ctr = 0 To temperatures.Length - 1
-         Console.WriteLine(fmtstring, 
-                           dateForMonth.AddMonths(ctr), 
-                           temperatures(ctr))
-      Next  
-      Console.WriteLine()
-      
-      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
-      Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
-      ' Build the format string dynamically so we allocate enough space for the month name.
-      fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}" 
-      For ctr = 0 To temperatures.Length - 1
-         Console.WriteLine(fmtstring, 
-                           dateForMonth.AddMonths(ctr), 
-                           temperatures(ctr))
-      Next  
-   End Sub
-   
-   Private Function GetLongestMonthNameLength() As Integer
-      Dim length As Integer
-      For Each nameOfMonth In DateTimeFormatInfo.CurrentInfo.MonthNames
-         If nameOfMonth.Length > length Then length = nameOfMonth.Length
-      Next
-      Return length
-   End Function
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("fr-FR")
+        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
+        Dim fmtString As String = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}"
+        For ctr = 0 To temperatures.Length - 1
+            Console.WriteLine(fmtstring,
+                              dateForMonth.AddMonths(ctr),
+                              temperatures(ctr))
+        Next
+        Console.WriteLine()
+
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-US")
+        Console.WriteLine("Current Culture: {0}", CultureInfo.CurrentCulture.DisplayName)
+        ' Build the format string dynamically so we allocate enough space for the month name.
+        fmtString = "{0,-" + GetLongestMonthNameLength().ToString() + ":MMMM}     {1,4}"
+        For ctr = 0 To temperatures.Length - 1
+            Console.WriteLine(fmtstring,
+                              dateForMonth.AddMonths(ctr),
+                              temperatures(ctr))
+        Next
+    End Sub
+
+    Private Function GetLongestMonthNameLength() As Integer
+        Dim length As Integer
+        For Each nameOfMonth In DateTimeFormatInfo.CurrentInfo.MonthNames
+            If nameOfMonth.Length > length Then length = nameOfMonth.Length
+        Next
+        Return length
+    End Function
 End Module
 ' The example displays the following output:
 '       Current Culture: French (France)

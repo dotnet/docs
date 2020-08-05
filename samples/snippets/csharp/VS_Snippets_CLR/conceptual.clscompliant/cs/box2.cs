@@ -6,14 +6,14 @@ using System;
 public unsafe class TestClass
 {
    private int* val;
-   
+
    public TestClass(int number)
    {
       val = (int*) number;
    }
 
    public int* Value {
-      get { return val; }        
+      get { return val; }
    }
 }
 // The compiler generates the following output when compiling this example:

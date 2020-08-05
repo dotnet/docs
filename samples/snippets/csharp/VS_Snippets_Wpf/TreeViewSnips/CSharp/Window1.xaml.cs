@@ -37,13 +37,13 @@ namespace TreeViewSnips
             }
             //<SnippetIsExpanded>
             Employee1Data.IsExpanded = true;
-            //</SnippetIsExpanded>      
+            //</SnippetIsExpanded>
             //<SnippetIsSelected>
             EmployeeWorkDays.IsSelected = true;
-            //</SnippetIsSelected>      
+            //</SnippetIsSelected>
             //<SnippetIsSelectionActive>
             bool isEmployee1Active = Employee1Data.IsSelectionActive;
-            //</SnippetIsSelectionActive> 
+            //</SnippetIsSelectionActive>
         }
         //<SnippetSelectedValueChangedMethod>
         private void SelectionChanged(object sender, RoutedPropertyChangedEventArgs<Object> e)

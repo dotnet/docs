@@ -32,7 +32,7 @@ The localizability review consists of the following three checks:
 <a name="global"></a>
 ## Implement globalization recommendations
 
-If you have designed and developed your application with localization in mind, and if you have followed the recommendations discussed in the [Globalization](../../../docs/standard/globalization-localization/globalization.md) article, the localizability review will largely be a quality assurance pass. Otherwise, during this stage you should review and implement the recommendations for [globalization](../../../docs/standard/globalization-localization/globalization.md) and fix the errors in source code that prevent localization.
+If you have designed and developed your application with localization in mind, and if you have followed the recommendations discussed in the [Globalization](globalization.md) article, the localizability review will largely be a quality assurance pass. Otherwise, during this stage you should review and implement the recommendations for [globalization](globalization.md) and fix the errors in source code that prevent localization.
 
 <a name="culture"></a>
 ## Handle culture-sensitive features
@@ -69,11 +69,11 @@ Before you localize your application, you should test it by using international 
 
 - String comparisons or comparisons for equality that return unexpected results.
 
-If you've followed the globalization recommendations when developing your application, handled culture-sensitive features correctly, and identified and addressed the localization issues that arose during testing, you can proceed to the next step, [Localization](../../../docs/standard/globalization-localization/localization.md).
+If you've followed the globalization recommendations when developing your application, handled culture-sensitive features correctly, and identified and addressed the localization issues that arose during testing, you can proceed to the next step, [Localization](localization.md).
 
 ## See also
 
-- [Globalization and Localization](../../../docs/standard/globalization-localization/index.md)
-- [Localization](../../../docs/standard/globalization-localization/localization.md)
-- [Globalization](../../../docs/standard/globalization-localization/globalization.md)
-- [Resources in Desktop Apps](../../../docs/framework/resources/index.md)
+- [Globalization and Localization](index.md)
+- [Localization](localization.md)
+- [Globalization](globalization.md)
+- [Resources in Desktop Apps](../../framework/resources/index.md)

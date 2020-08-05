@@ -1,5 +1,6 @@
 ---
 title: "Serialization - .NET"
+description: This article provides information about .NET serialization technologies, including binary serialization, XML and SOAP serialization, and JSON serialization.
 ms.date: "09/02/2019"
 helpviewer_keywords: 
   - "JSON serialization"

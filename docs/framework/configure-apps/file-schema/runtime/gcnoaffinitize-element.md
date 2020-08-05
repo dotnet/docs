@@ -50,7 +50,7 @@ None.
 
 ## Remarks
 
-By default, server GC threads are hard-affinitized with their respective CPUs. Each of the system's available processors has its own GC heap and thread. This is typically the preferred setting since it optimizes cache usage. Starting with .NET Framework 4.6.2, by setting the **GCNoAffinitize** element's `enabled` attribute to `false`, you can specify that server GC threads and CPUs should not be tightly coupled.
+By default, server GC threads are hard-affinitized with their respective CPUs. Each of the system's available processors has its own GC heap and thread. This is typically the preferred setting since it optimizes cache usage. Starting with .NET Framework 4.6.2, by setting the **GCNoAffinitize** element's `enabled` attribute to `true`, you can specify that server GC threads and CPUs should not be tightly coupled.
 
 You can specify the **GCNoAffinitize** configuration element alone to not affinitize server GC threads with CPUs. You can also use it along with the [GCHeapCount](gcheapcount-element.md) element to control the number of GC heaps and threads used by an application.
 

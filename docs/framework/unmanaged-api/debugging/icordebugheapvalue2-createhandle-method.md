@@ -23,7 +23,7 @@ Creates a handle of the specified type for the heap value represented by this IC
   
 ```cpp  
 HRESULT CreateHandle (  
-    [in] CorDebugHandleType      type,   
+    [in] CorDebugHandleType      type,
     [out] ICorDebugHandleValue   **ppHandle  
 );  
 ```  
@@ -41,7 +41,7 @@ HRESULT CreateHandle (
  Multiple calls to this function for the same heap value will create multiple handles. Because handles affect the performance of the garbage collector, the debugger should limit itself to a relatively small number of handles (about 256) that are active at a time.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

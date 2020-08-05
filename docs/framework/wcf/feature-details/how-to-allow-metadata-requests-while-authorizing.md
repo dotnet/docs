@@ -11,7 +11,7 @@ ms.assetid: 90cec34f-b619-452b-a056-8b1c0de49d05
 # How To: Allow Metadata Requests While Authorizing
 During custom authorization, it may be necessary to allow a request for metadata to be processed. The following topic walks through the steps to validate such a request.  
   
- For more information about Windows Communication Foundation (WCF) authorization, see [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md).  
+ For more information about Windows Communication Foundation (WCF) authorization, see [Authorization](authorization-in-wcf.md).  
   
 ### To allow metadata requests during authorization  
   
@@ -21,7 +21,7 @@ During custom authorization, it may be necessary to allow a request for metadata
   
 3. In the override, check the contract name, namespace, and the action as shown in the following example. If the conditions are valid, then return `true.`  
   
-4. Use the extensibility point to employ the class. For more information, see [How to: Create a Custom Authorization Manager for a Service](../../../../docs/framework/wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
+4. Use the extensibility point to employ the class. For more information, see [How to: Create a Custom Authorization Manager for a Service](../extending/how-to-create-a-custom-authorization-manager-for-a-service.md).  
   
 ## Example  
  The following example shows an override of the <xref:System.ServiceModel.ServiceAuthorizationManager.CheckAccessCore%2A> method.  
@@ -32,5 +32,5 @@ During custom authorization, it may be necessary to allow a request for metadata
 ## See also
 
 - <xref:System.ServiceModel.ServiceAuthorizationManager>
-- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
-- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
+- [Authorization](authorization-in-wcf.md)
+- [Managing Claims and Authorization with the Identity Model](managing-claims-and-authorization-with-the-identity-model.md)

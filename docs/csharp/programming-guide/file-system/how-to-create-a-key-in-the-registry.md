@@ -42,7 +42,7 @@ key.Close();
   
 - The registry key is read-only.  
   
-## .NET Framework Security  
+## .NET Security  
  It is more secure to write data to the user folder — `Microsoft.Win32.Registry.CurrentUser` — rather than to the local computer — `Microsoft.Win32.Registry.LocalMachine`.  
   
  When you create a registry value, you need to decide what to do if that value already exists. Another process, perhaps a malicious one, may have already created the value and have access to it. When you put data in the registry value, the data is available to the other process. To prevent this, use the.`Overload:Microsoft.Win32.RegistryKey.GetValue` method. It returns null if the key does not already exist.  

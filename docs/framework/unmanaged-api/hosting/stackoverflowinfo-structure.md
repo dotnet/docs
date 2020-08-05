@@ -31,14 +31,14 @@ typedef struct _StackOverflowInfo {
   
 |Member|Description|  
 |------------|-----------------|  
-|`soType`|A value of the [StackOverflowType](../../../../docs/framework/unmanaged-api/hosting/stackoverflowtype-enumeration.md) enumeration that specifies the type of overflow.|  
+|`soType`|A value of the [StackOverflowType](stackoverflowtype-enumeration.md) enumeration that specifies the type of overflow.|  
 |`pExceptionInfo`|A pointer to a Win32 `EXCEPTION_POINTERS` object, which contains an exception record with a machine-independent description of an exception and a context record with a machine-dependent description of the processor context at the time of the exception.|  
   
 ## Remarks  
- A `StackOverflowInfo` object is passed to the [IActionOnCLREvent::OnEvent](../../../../docs/framework/unmanaged-api/hosting/iactiononclrevent-onevent-method.md) method for `Event_StackOverflow` events.  
+ A `StackOverflowInfo` object is passed to the [IActionOnCLREvent::OnEvent](iactiononclrevent-onevent-method.md) method for `Event_StackOverflow` events.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
@@ -48,4 +48,4 @@ typedef struct _StackOverflowInfo {
   
 ## See also
 
-- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)
+- [Hosting Structures](hosting-structures.md)

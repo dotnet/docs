@@ -46,9 +46,9 @@ public class Service : IEcho
 ```xml  
 <httpModules>  
     <remove name="ServiceModel" />  
-<httpModules/>  
+</httpModules>
 ```  
   
 ## See also
 
-- [How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients](../../../../docs/framework/wcf/feature-details/config-wcf-service-with-aspnet-web-service.md)
+- [How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients](config-wcf-service-with-aspnet-web-service.md)

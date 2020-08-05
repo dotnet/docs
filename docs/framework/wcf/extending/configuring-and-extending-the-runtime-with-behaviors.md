@@ -1,5 +1,6 @@
 ---
 title: "Configuring and Extending the Runtime with Behaviors"
+description: Learn how to implement behavior interfaces in WCF apps and add them to a service description or endpoint, either programmatically or in a configuration file.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "attaching extensions using behaviors [WCF]"
@@ -129,7 +130,7 @@ protected override object CreateBehavior()
 <configuration>  
   <system.serviceModel>  
     <services>  
-      <service   
+      <service
         name="Microsoft.WCF.Documentation.SampleService"  
         behaviorConfiguration="metadataSupport"  
       >  
@@ -141,7 +142,7 @@ protected override object CreateBehavior()
         <endpoint  
           address="/SampleService"  
           binding="wsHttpBinding"  
-          behaviorConfiguration="withMessageInspector"   
+          behaviorConfiguration="withMessageInspector"
           contract="Microsoft.WCF.Documentation.ISampleService"  
         />  
         <endpoint  
@@ -165,7 +166,7 @@ protected override object CreateBehavior()
     </behaviors>  
     <extensions>  
       <behaviorExtensions>  
-        <add   
+        <add
           name="endpointMessageInspector"  
           type="Microsoft.WCF.Documentation.EndpointBehaviorMessageInspector, HostApplication, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"  
         />  

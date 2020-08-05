@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICLRSyncManager::GetMonitorOwner Method
-Gets the [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance that owns the monitor identified by the specified cookie.  
+Gets the [IHostTask](ihosttask-interface.md) instance that owns the monitor identified by the specified cookie.  
   
 ## Syntax  
   
@@ -47,7 +47,7 @@ HRESULT GetMonitorOwner (
 |E_FAIL|An unknown catastrophic failure occurred. When a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Remarks  
- The host typically calls `GetMonitorOwner` as part of a deadlock-detection mechanism. The cookie is associated with a monitor when it is created by using a call to [IHostSyncManager::CreateMonitorEvent](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-createmonitorevent-method.md).  
+ The host typically calls `GetMonitorOwner` as part of a deadlock-detection mechanism. The cookie is associated with a monitor when it is created by using a call to [IHostSyncManager::CreateMonitorEvent](ihostsyncmanager-createmonitorevent-method.md).  
   
 > [!NOTE]
 > A call to release the event underlying the monitor might block—but will not deadlock—if a call to this method is currently in effect on the cookie associated with that monitor. Other tasks might also block if they attempt to acquire this monitor.  
@@ -55,7 +55,7 @@ HRESULT GetMonitorOwner (
  `GetMonitorOwner` always returns immediately and can be called any time after a call to `CreateMonitorEvent`. The host does not need to wait until a task is waiting on the event.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -65,5 +65,5 @@ HRESULT GetMonitorOwner (
   
 ## See also
 
-- [ICLRSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-interface.md)
-- [IHostSyncManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-interface.md)
+- [ICLRSyncManager Interface](iclrsyncmanager-interface.md)
+- [IHostSyncManager Interface](ihostsyncmanager-interface.md)

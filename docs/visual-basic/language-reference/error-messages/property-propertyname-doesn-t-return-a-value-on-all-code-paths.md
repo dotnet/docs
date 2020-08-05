@@ -19,9 +19,9 @@ Property '\<propertyname>' doesn't return a value on all code paths. A null refe
   
 - Assign the value to the property name and then perform the `End Get` statement.  
   
-- Include the value in a [Return Statement](../../../visual-basic/language-reference/statements/return-statement.md).  
+- Include the value in a [Return Statement](../statements/return-statement.md).  
   
- If control passes to `Exit Property` or `End Get` and you have not assigned any value to the property name, the `Get` procedure returns the default value of the property's data type. For more information, see "Behavior" in [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md).  
+ If control passes to `Exit Property` or `End Get` and you have not assigned any value to the property name, the `Get` procedure returns the default value of the property's data type. For more information, see "Behavior" in [Function Statement](../statements/function-statement.md).  
   
  By default, this message is a warning. For more information on hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  
   
@@ -35,6 +35,6 @@ Property '\<propertyname>' doesn't return a value on all code paths. A null refe
   
 ## See also
 
-- [Property Procedures](../../../visual-basic/programming-guide/language-features/procedures/property-procedures.md)
-- [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)
-- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
+- [Property Procedures](../../programming-guide/language-features/procedures/property-procedures.md)
+- [Property Statement](../statements/property-statement.md)
+- [Get Statement](../statements/get-statement.md)

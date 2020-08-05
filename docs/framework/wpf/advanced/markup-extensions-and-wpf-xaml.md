@@ -19,11 +19,11 @@ ms.assetid: 618dc745-8b14-4886-833f-486d2254bb78
 # Markup Extensions and WPF XAML
 This topic introduces the concept of markup extensions for XAML, including their syntax rules, purpose, and the class object model that underlies them. Markup extensions are a general feature of the XAML language and of the .NET implementation of XAML services. This topic specifically details markup extensions for use in WPF XAML.  
 
-<a name="XAML_Processors_and_Markup_Extensions"></a>   
+<a name="XAML_Processors_and_Markup_Extensions"></a>
 ## XAML Processors and Markup Extensions  
  Generally speaking, a XAML parser can either interpret an attribute value as a literal string that can be converted to a primitive, or convert it to an object by some means. One such means is by referencing a type converter; this is documented in the topic [TypeConverters and XAML](typeconverters-and-xaml.md). However, there are scenarios where different behavior is required. For example, a XAML processor can be instructed that a value of an attribute should not result in a new object in the object graph. Instead, the attribute should result in an object graph that makes a reference to an already constructed object in another part of the graph, or a static object. Another scenario is that a XAML processor can be instructed to use a syntax that provides non-default arguments to the constructor of an object. These are the types of scenarios where a markup extension can provide the solution.  
   
-<a name="Basic_Markup_Extension_Syntax"></a>   
+<a name="Basic_Markup_Extension_Syntax"></a>
 ## Basic Markup Extension Syntax  
  A markup extension can be implemented to provide values for properties in an attribute usage, properties in a property element usage, or both.  
   
@@ -31,7 +31,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
  When used in property element syntax, a markup extension is visually the same as any other element used to provide a property element value: a XAML element declaration that references the markup extension class as an element, enclosed within angle brackets (<>).  
   
-<a name="XAML_Defined_Markup_Extensions"></a>   
+<a name="XAML_Defined_Markup_Extensions"></a>
 ## XAML-Defined Markup Extensions  
  Several markup extensions exist that are not specific to the WPF implementation of XAML, but are instead implementations of intrinsics or features of XAML as a language. These markup extensions are implemented in the System.Xaml assembly as part of the general .NET Framework XAML services, and are within the XAML language XAML namespace. In terms of common markup usage, these markup extensions are typically identifiable by the `x:` prefix in the usage. The <xref:System.Windows.Markup.MarkupExtension> base class (also defined in System.Xaml) provides the pattern that all markup extensions should use in order to be supported in XAML readers and XAML writers, including in WPF XAML.  
   
@@ -46,7 +46,7 @@ This topic introduces the concept of markup extensions for XAML, including their
 > [!NOTE]
 > The `x:` prefix is used for the typical XAML namespace mapping of the XAML language intrinsics, in the root element of a XAML file or production. For example, the Visual Studio templates for WPF applications initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML namespace for the XAML language, as opposed to the WPF default namespace or other XAML namespaces not related to a specific framework.  
   
-<a name="WPF_Specific_Markup_Extensions"></a>   
+<a name="WPF_Specific_Markup_Extensions"></a>
 ## WPF-Specific Markup Extensions  
  The most common markup extensions used in WPF programming are those that support resource references (`StaticResource` and `DynamicResource`), and those that support data binding (`Binding`).  
   
@@ -64,7 +64,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 - `ComponentResourceKey` and `ThemeDictionary` support aspects of resource lookup, particularly for resources and themes that are packaged with custom controls. For more information, see [ComponentResourceKey Markup Extension](componentresourcekey-markup-extension.md), [ThemeDictionary Markup Extension](themedictionary-markup-extension.md), or [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
-<a name="StarExtension"></a>   
+<a name="StarExtension"></a>
 ## \*Extension Classes  
  For both the general XAML language and WPF-specific markup extensions, the behavior of each markup extension is identified to a XAML processor through a `*Extension` class that derives from <xref:System.Windows.Markup.MarkupExtension>, and provides an implementation of the <xref:System.Windows.Markup.StaticExtension.ProvideValue%2A> method. This method on each extension provides the object that is returned when the markup extension is evaluated. The returned object is typically evaluated based on the various string tokens that are passed to the markup extension.  
   
@@ -90,11 +90,11 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 - A literal comma cannot be passed to a markup extension without escapement.  
   
-<a name="EscapeSequences"></a>   
+<a name="EscapeSequences"></a>
 ## Escape Sequences and Markup Extensions  
  Attribute handling in a XAML processor uses the curly braces as indicators of a markup extension sequence. It is also possible to produce a literal curly brace character attribute value if necessary, by entering an escape sequence using an empty curly brace pair followed by the literal curly brace. See [{} Escape Sequence - Markup Extension](../../../desktop-wpf/xaml-services/escape-sequence-markup-extension.md).  
   
-<a name="Nesting"></a>   
+<a name="Nesting"></a>
 ## Nesting Markup Extensions in XAML Usage  
  Nesting of multiple markup extensions is supported, and each markup extension will be evaluated deepest first. For example, consider the following usage:  
   

@@ -35,11 +35,11 @@ namespace Microsoft.Samples.BrushExamples
             Rectangle myRectangle = new Rectangle();
             myRectangle.Width = 100;
             myRectangle.Height = 100;
-            
+
             // Load the image.
-            BitmapImage theImage = 
+            BitmapImage theImage =
                 new BitmapImage(
-                    new Uri("sampleImages\\testImage.gif", UriKind.Relative));   
+                    new Uri("sampleImages\\testImage.gif", UriKind.Relative));
             ImageBrush myImageBrush = new ImageBrush(theImage);
 
             myImageBrush.Viewbox = new Rect(0.5, 0.25, 0.25, 0.5);
@@ -54,9 +54,9 @@ namespace Microsoft.Samples.BrushExamples
             // Use the ImageBrush to paint the rectangle's background.
             myRectangle.Fill = myImageBrush;
             // </SnippetGraphicsMMTileBrushViewboxWithStretchTiling>
-            
+
             rectangleBorder.Child = myRectangle;
-            mainPanel.Children.Add(rectangleBorder);            
+            mainPanel.Children.Add(rectangleBorder);
         }
     }
 }

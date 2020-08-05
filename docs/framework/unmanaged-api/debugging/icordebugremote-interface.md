@@ -61,7 +61,7 @@ interface ICorDebugRemote : IUnknown
  Currently, this functionality is supported only for debugging a Silverlight-based application target that is running on a remote Macintosh machine.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

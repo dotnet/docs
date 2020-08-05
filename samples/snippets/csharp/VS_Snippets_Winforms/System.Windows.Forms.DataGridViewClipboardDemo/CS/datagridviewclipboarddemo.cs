@@ -46,7 +46,7 @@ public class Form1 : Form
         this.DataGridView1.Rows.Add(new string[] { "U", "V", "W", "X", "Y" });
         this.DataGridView1.AutoResizeColumns();
         //<Snippet15>
-        this.DataGridView1.ClipboardCopyMode = 
+        this.DataGridView1.ClipboardCopyMode =
             DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
         //</Snippet15>
     }
@@ -62,13 +62,13 @@ public class Form1 : Form
                 // Add the selection to the clipboard.
                 Clipboard.SetDataObject(
                     this.DataGridView1.GetClipboardContent());
-                
+
                 // Replace the text box contents with the clipboard text.
                 this.TextBox1.Text = Clipboard.GetText();
             }
             catch (System.Runtime.InteropServices.ExternalException)
             {
-                this.TextBox1.Text = 
+                this.TextBox1.Text =
                     "The Clipboard could not be accessed. Please try again.";
             }
         }

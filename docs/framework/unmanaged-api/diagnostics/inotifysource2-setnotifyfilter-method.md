@@ -31,10 +31,10 @@ HRESULT SetNotifyFilter
   
 ## Parameters  
  `in_NotifyFilter`  
- [in] A bitwise combination of the [NOTIFY_FILTER](../../../../docs/framework/unmanaged-api/diagnostics/notify-filter-enumeration.md) enumeration values that identify callbacks for the debugger API.  
+ [in] A bitwise combination of the [NOTIFY_FILTER](notify-filter-enumeration.md) enumeration values that identify callbacks for the debugger API.  
   
  `in_pUserThreadFilter`  
- [in] A pointer to a [USER_THREAD](../../../../docs/framework/unmanaged-api/diagnostics/user-thread-structure.md) structure that identifies threads for the debugger API.  
+ [in] A pointer to a [USER_THREAD](user-thread-structure.md) structure that identifies threads for the debugger API.  
   
 ## Return Value  
  S_OK if the method succeeds.  
@@ -44,6 +44,6 @@ HRESULT SetNotifyFilter
   
 ## See also
 
-- [INotifySource2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-interface.md)
-- [INotifyConnection2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifyconnection2-interface.md)
-- [INotifySink2 Interface](../../../../docs/framework/unmanaged-api/diagnostics/inotifysink2-interface.md)
+- [INotifySource2 Interface](inotifysource2-interface.md)
+- [INotifyConnection2 Interface](inotifyconnection2-interface.md)
+- [INotifySink2 Interface](inotifysink2-interface.md)

@@ -17,9 +17,9 @@ namespace Microsoft.Samples.BrushExamples
         public OpacityExample()
         {
             this.WindowTitle = "Opacity Example";
-            this.Background = Brushes.White;        
+            this.Background = Brushes.White;
             StackPanel myMainPanel = new StackPanel();
-            
+
             // <SnippetOpacityExample1CSharp>
             Rectangle myRectangle = new Rectangle();
             myRectangle.Width = 100;
@@ -29,9 +29,9 @@ namespace Microsoft.Samples.BrushExamples
             partiallyTransparentSolidColorBrush.Opacity = 0.25;
             myRectangle.Fill = partiallyTransparentSolidColorBrush;
             // </SnippetOpacityExample1CSharp>
-            
+
             myMainPanel.Children.Add(myRectangle);
- 
+
             this.Content = myMainPanel;
         }
     }

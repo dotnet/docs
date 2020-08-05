@@ -1,5 +1,6 @@
 ---
 title: "Formatting types in .NET"
+description: Learn how to format types in .NET. Understand how to use or override the ToString method. Learn about culture-sensitive, composite, and custom formatting.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -34,12 +35,12 @@ Formatting is the process of converting an instance of a class, structure, or en
 
 - Sometimes the conversion of an object to its string representation is not intuitive. For example, it is not clear how the string representation of a Temperature object or a Person object should appear. For an example that formats a Temperature object in a variety of ways, see the [Standard Format Strings](#standard-format-strings) section.
 
-- Values often require culture-sensitive formatting. For example, in an application that uses numbers to reflect monetary values, numeric strings should include the current culture’s currency symbol, group separator (which, in most cultures, is the thousands separator), and decimal symbol. For an example, see the [Culture-sensitive formatting with format providers](#culture-sensitive-formatting-with-format-providers) section.
+- Values often require culture-sensitive formatting. For example, in an application that uses numbers to reflect monetary values, numeric strings should include the current culture's currency symbol, group separator (which, in most cultures, is the thousands separator), and decimal symbol. For an example, see the [Culture-sensitive formatting with format providers](#culture-sensitive-formatting-with-format-providers) section.
 
 - An application may have to display the same value in different ways. For example, an application may represent an enumeration member by displaying a string representation of its name or by displaying its underlying value. For an example that formats a member of the <xref:System.DayOfWeek> enumeration in different ways, see the [Standard Format Strings](#standard-format-strings) section.
 
 > [!NOTE]
-> Formatting converts the value of a type into a string representation. Parsing is the inverse of formatting. A parsing operation creates an instance of a data type from its string representation. For information about converting strings to other data types, see [Parsing Strings](../../../docs/standard/base-types/parsing-strings.md).
+> Formatting converts the value of a type into a string representation. Parsing is the inverse of formatting. A parsing operation creates an instance of a data type from its string representation. For information about converting strings to other data types, see [Parsing Strings](parsing-strings.md).
 
 .NET provides rich formatting support that enables developers to address these requirements.
 
@@ -47,9 +48,9 @@ Formatting is the process of converting an instance of a class, structure, or en
 
 The basic mechanism for formatting is the default implementation of the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method, which is discussed in the [Default Formatting Using the ToString Method](#default-formatting-using-the-tostring-method) section later in this topic. However, .NET provides several ways to modify and extend its default formatting support. These include the following:
 
-- Overriding the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to define a custom string representation of an object’s value. For more information, see the [Override the ToString Method](#override-the-tostring-method) section later in this topic.
+- Overriding the <xref:System.Object.ToString%2A?displayProperty=nameWithType> method to define a custom string representation of an object's value. For more information, see the [Override the ToString Method](#override-the-tostring-method) section later in this topic.
 
-- Defining format specifiers that enable the string representation of an object’s value to take multiple forms. For example, the "X" format specifier in the following statement converts an integer to the string representation of a hexadecimal value.
+- Defining format specifiers that enable the string representation of an object's value to take multiple forms. For example, the "X" format specifier in the following statement converts an integer to the string representation of a hexadecimal value.
 
      [!code-csharp[Conceptual.Formatting.Overview#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/specifier1.cs#3)]
      [!code-vb[Conceptual.Formatting.Overview#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/specifier1.vb#3)]
@@ -88,12 +89,12 @@ Because all types other than interfaces are derived from <xref:System.Object>, t
 
 ## Override the ToString method
 
-Displaying the name of a type is often of limited use and does not allow consumers of your types to differentiate one instance from another. However, you can override the `ToString` method to provide a more useful representation of an object’s value. The following example defines a `Temperature` object and overrides its `ToString` method to display the temperature in degrees Celsius.
+Displaying the name of a type is often of limited use and does not allow consumers of your types to differentiate one instance from another. However, you can override the `ToString` method to provide a more useful representation of an object's value. The following example defines a `Temperature` object and overrides its `ToString` method to display the temperature in degrees Celsius.
 
 [!code-csharp[Conceptual.Formatting.Overview#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/overrides1.cs#2)]
 [!code-vb[Conceptual.Formatting.Overview#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/overrides1.vb#2)]
 
-In .NET, the `ToString` method of each primitive value type has been overridden to display the object’s value instead of its name. The following table shows the override for each primitive type. Note that most of the overridden methods call another overload of the `ToString` method and pass it the "G" format specifier, which defines the general format for its type, and an <xref:System.IFormatProvider> object that represents the current culture.
+In .NET, the `ToString` method of each primitive value type has been overridden to display the object's value instead of its name. The following table shows the override for each primitive type. Note that most of the overridden methods call another overload of the `ToString` method and pass it the "G" format specifier, which defines the general format for its type, and an <xref:System.IFormatProvider> object that represents the current culture.
 
 |Type|ToString override|
 |----------|-----------------------|
@@ -126,16 +127,16 @@ A standard format string contains a single format specifier, which is an alphabe
 
 .NET defines a set of standard format specifiers for all numeric types, all date and time types, and all enumeration types. For example, each of these categories supports a "G" standard format specifier, which defines a general string representation of a value of that type.
 
-Standard format strings for enumeration types directly control the string representation of a value. The format strings passed to an enumeration value’s `ToString` method determine whether the value is displayed using its string name (the "G" and "F" format specifiers), its underlying integral value (the "D" format specifier), or its hexadecimal value (the "X" format specifier). The following example illustrates the use of standard format strings to format a <xref:System.DayOfWeek> enumeration value.
+Standard format strings for enumeration types directly control the string representation of a value. The format strings passed to an enumeration value's `ToString` method determine whether the value is displayed using its string name (the "G" and "F" format specifiers), its underlying integral value (the "D" format specifier), or its hexadecimal value (the "X" format specifier). The following example illustrates the use of standard format strings to format a <xref:System.DayOfWeek> enumeration value.
 
 [!code-csharp[Conceptual.Formatting.Overview#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/standard1.cs#4)]
 [!code-vb[Conceptual.Formatting.Overview#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/standard1.vb#4)]
 
-For information about enumeration format strings, see [Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md).
+For information about enumeration format strings, see [Enumeration Format Strings](enumeration-format-strings.md).
 
-Standard format strings for numeric types usually define a result string whose precise appearance is controlled by one or more property values. For example, the "C" format specifier formats a number as a currency value. When you call the `ToString` method with the "C" format specifier as the only parameter, the following property values from the current culture’s <xref:System.Globalization.NumberFormatInfo> object are used to define the string representation of the numeric value:
+Standard format strings for numeric types usually define a result string whose precise appearance is controlled by one or more property values. For example, the "C" format specifier formats a number as a currency value. When you call the `ToString` method with the "C" format specifier as the only parameter, the following property values from the current culture's <xref:System.Globalization.NumberFormatInfo> object are used to define the string representation of the numeric value:
 
-- The <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property, which specifies the current culture’s currency symbol.
+- The <xref:System.Globalization.NumberFormatInfo.CurrencySymbol%2A> property, which specifies the current culture's currency symbol.
 
 - The <xref:System.Globalization.NumberFormatInfo.CurrencyNegativePattern%2A> or <xref:System.Globalization.NumberFormatInfo.CurrencyPositivePattern%2A> property, which returns an integer that determines the following:
 
@@ -160,16 +161,16 @@ In addition, numeric format strings may include a precision specifier. The meani
 [!code-csharp[Conceptual.Formatting.Overview#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/precisionspecifier1.cs#6)]
 [!code-vb[Conceptual.Formatting.Overview#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/precisionspecifier1.vb#6)]
 
-For more information about standard numeric formatting strings, see [Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md).
+For more information about standard numeric formatting strings, see [Standard Numeric Format Strings](standard-numeric-format-strings.md).
 
-Standard format strings for date and time values are aliases for custom format strings stored by a particular <xref:System.Globalization.DateTimeFormatInfo> property. For example, calling the `ToString` method of a date and time value with the "D" format specifier displays the date and time by using the custom format string stored in the current culture’s <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> property. (For more information about custom format strings, see the [next section](#custom-format-strings).) The following example illustrates this relationship.
+Standard format strings for date and time values are aliases for custom format strings stored by a particular <xref:System.Globalization.DateTimeFormatInfo> property. For example, calling the `ToString` method of a date and time value with the "D" format specifier displays the date and time by using the custom format string stored in the current culture's <xref:System.Globalization.DateTimeFormatInfo.LongDatePattern%2A?displayProperty=nameWithType> property. (For more information about custom format strings, see the [next section](#custom-format-strings).) The following example illustrates this relationship.
 
 [!code-csharp[Conceptual.Formatting.Overview#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.formatting.overview/cs/alias1.cs#5)]
 [!code-vb[Conceptual.Formatting.Overview#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.formatting.overview/vb/alias1.vb#5)]
 
-For more information about standard date and time format strings, see [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md).
+For more information about standard date and time format strings, see [Standard Date and Time Format Strings](standard-date-and-time-format-strings.md).
 
-You can also use standard format strings to define the string representation of an application-defined object that is produced by the object’s `ToString(String)` method. You can define the specific standard format specifiers that your object supports, and you can determine whether they are case-sensitive or case-insensitive. Your implementation of the `ToString(String)` method should support the following:
+You can also use standard format strings to define the string representation of an application-defined object that is produced by the object's `ToString(String)` method. You can define the specific standard format specifiers that your object supports, and you can determine whether they are case-sensitive or case-insensitive. Your implementation of the `ToString(String)` method should support the following:
 
 - A "G" format specifier that represents a customary or common format of the object. The parameterless overload of your object's `ToString` method should call its `ToString(String)` overload and pass it the "G" standard format string.
 
@@ -182,7 +183,7 @@ For example, a `Temperature` class can internally store the temperature in degre
 
 ### Custom format strings
 
-In addition to the standard format strings, .NET defines custom format strings for both numeric values and date and time values. A custom format string consists of one or more custom format specifiers that define the string representation of a value. For example, the custom date and time format string "yyyy/mm/dd hh:mm:ss.ffff t zzz" converts a date to its string representation in the form "2008/11/15 07:45:00.0000 P -08:00" for the en-US culture. Similarly, the custom format string "0000" converts the integer value 12 to "0012". For a complete list of custom format strings, see [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md) and [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md).
+In addition to the standard format strings, .NET defines custom format strings for both numeric values and date and time values. A custom format string consists of one or more custom format specifiers that define the string representation of a value. For example, the custom date and time format string "yyyy/mm/dd hh:mm:ss.ffff t zzz" converts a date to its string representation in the form "2008/11/15 07:45:00.0000 P -08:00" for the en-US culture. Similarly, the custom format string "0000" converts the integer value 12 to "0012". For a complete list of custom format strings, see [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md) and [Custom Numeric Format Strings](custom-numeric-format-strings.md).
 
 If a format string consists of a single custom format specifier, the format specifier should be preceded by the percent (%) symbol to avoid confusion with a standard format specifier. The following example uses the "M" custom format specifier to display a one-digit or two-digit number of the month of a particular date.
 
@@ -207,13 +208,13 @@ All numeric types (that is, the <xref:System.Byte>, <xref:System.Decimal>, <xref
 
 |Title|Definition|
 |-----------|----------------|
-|[Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|
-|[Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|
-|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|
-|[Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|
-|[Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)|Describes standard format strings that create commonly used string representations of time intervals.|
-|[Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)|Describes custom format strings that create application-specific formats for time intervals.|
-|[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|Describes standard format strings that are used to create string representations of enumeration values.|
+|[Standard Numeric Format Strings](standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|
+|[Custom Numeric Format Strings](custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|
+|[Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|
+|[Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> and <xref:System.DateTimeOffset> values.|
+|[Standard TimeSpan Format Strings](standard-timespan-format-strings.md)|Describes standard format strings that create commonly used string representations of time intervals.|
+|[Custom TimeSpan Format Strings](custom-timespan-format-strings.md)|Describes custom format strings that create application-specific formats for time intervals.|
+|[Enumeration Format Strings](enumeration-format-strings.md)|Describes standard format strings that are used to create string representations of enumeration values.|
 |<xref:System.Guid.ToString%28System.String%29?displayProperty=nameWithType>|Describes standard format strings for <xref:System.Guid> values.|
 
 ## Culture-sensitive formatting with format providers
@@ -247,7 +248,7 @@ A number of formatting or string conversion methods include a parameter of type 
 
 - <xref:System.Globalization.CultureInfo>. Its <xref:System.IFormatProvider.GetFormat%2A?displayProperty=nameWithType> implementation can return either a <xref:System.Globalization.NumberFormatInfo> object to provide numeric formatting information or a <xref:System.Globalization.DateTimeFormatInfo> object to provide formatting information for date and time values.
 
-You can also implement your own format provider to replace any one of these classes. However, your implementation’s <xref:System.IFormatProvider.GetFormat%2A> method must return an object of the type listed in the previous table if it has to provide formatting information to the `ToString` method.
+You can also implement your own format provider to replace any one of these classes. However, your implementation's <xref:System.IFormatProvider.GetFormat%2A> method must return an object of the type listed in the previous table if it has to provide formatting information to the `ToString` method.
 
 ### Culture-sensitive formatting of numeric values
 
@@ -323,11 +324,11 @@ In addition to replacing a format item with the string representation of its cor
 
      Note that, if both the alignment string component and the format string component are present, the former precedes the latter (for example, `{0,-20:g}`.
 
-For more information about composite formatting, see [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md).
+For more information about composite formatting, see [Composite Formatting](composite-formatting.md).
 
 ## Custom formatting with ICustomFormatter
 
-Two composite formatting methods, <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a <xref:System.Type> object that represents an <xref:System.ICustomFormatter> interface to the format provider’s <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method is then responsible for returning the <xref:System.ICustomFormatter> implementation that provides custom formatting.
+Two composite formatting methods, <xref:System.String.Format%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType> and <xref:System.Text.StringBuilder.AppendFormat%28System.IFormatProvider%2CSystem.String%2CSystem.Object%5B%5D%29?displayProperty=nameWithType>, include a format provider parameter that supports custom formatting. When either of these formatting methods is called, it passes a <xref:System.Type> object that represents an <xref:System.ICustomFormatter> interface to the format provider's <xref:System.IFormatProvider.GetFormat%2A> method. The <xref:System.IFormatProvider.GetFormat%2A> method is then responsible for returning the <xref:System.ICustomFormatter> implementation that provides custom formatting.
 
 The <xref:System.ICustomFormatter> interface has a single method, <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29>, that is called automatically by a composite formatting method, once for each format item in a composite format string. The <xref:System.ICustomFormatter.Format%28System.String%2CSystem.Object%2CSystem.IFormatProvider%29> method has three parameters: a format string, which represents the `formatString` argument in a format item, an object to format, and an <xref:System.IFormatProvider> object that provides formatting services. Typically, the class that implements <xref:System.ICustomFormatter> also implements <xref:System.IFormatProvider>, so this last parameter is a reference to the custom formatting class itself. The method returns a custom formatted string representation of the object to be formatted. If the method cannot format the object, it should return a null reference (`Nothing` in Visual Basic).
 
@@ -345,16 +346,15 @@ The following example uses the `ByteByByteFormatter` class to format integer val
 
 |Title|Definition|
 |-----------|----------------|
-|[Standard Numeric Format Strings](../../../docs/standard/base-types/standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|
-|[Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|
-|[Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> values.|
-|[Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> values.|
-|[Standard TimeSpan Format Strings](../../../docs/standard/base-types/standard-timespan-format-strings.md)|Describes standard format strings that create commonly used string representations of time intervals.|
-|[Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md)|Describes custom format strings that create application-specific formats for time intervals.|
-|[Enumeration Format Strings](../../../docs/standard/base-types/enumeration-format-strings.md)|Describes standard format strings that are used to create string representations of enumeration values.|
-|[Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)|Describes how to embed one or more formatted values in a string. The string can subsequently be displayed on the console or written to a stream.|
-|[Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)|Lists topics that provide step-by-step instructions for performing specific formatting operations.|
-|[Parsing Strings](../../../docs/standard/base-types/parsing-strings.md)|Describes how to initialize objects to the values described by string representations of those objects. Parsing is the inverse operation of formatting.|
+|[Standard Numeric Format Strings](standard-numeric-format-strings.md)|Describes standard format strings that create commonly used string representations of numeric values.|
+|[Custom Numeric Format Strings](custom-numeric-format-strings.md)|Describes custom format strings that create application-specific formats for numeric values.|
+|[Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)|Describes standard format strings that create commonly used string representations of <xref:System.DateTime> values.|
+|[Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)|Describes custom format strings that create application-specific formats for <xref:System.DateTime> values.|
+|[Standard TimeSpan Format Strings](standard-timespan-format-strings.md)|Describes standard format strings that create commonly used string representations of time intervals.|
+|[Custom TimeSpan Format Strings](custom-timespan-format-strings.md)|Describes custom format strings that create application-specific formats for time intervals.|
+|[Enumeration Format Strings](enumeration-format-strings.md)|Describes standard format strings that are used to create string representations of enumeration values.|
+|[Composite Formatting](composite-formatting.md)|Describes how to embed one or more formatted values in a string. The string can subsequently be displayed on the console or written to a stream.|
+|[Parsing Strings](parsing-strings.md)|Describes how to initialize objects to the values described by string representations of those objects. Parsing is the inverse operation of formatting.|
 
 ## Reference
 

@@ -40,7 +40,7 @@ namespace Microsoft.ServiceModel.Samples
      {
         return n1 / n2;
      }
-  } 
+  }
 
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
     public interface ICalculatorChannel : Microsoft.ServiceModel.Samples.ICalculator, System.ServiceModel.IClientChannel
@@ -51,46 +51,46 @@ namespace Microsoft.ServiceModel.Samples
 
     public class CalculatorClient : System.ServiceModel.ClientBase<Microsoft.ServiceModel.Samples.ICalculator>, Microsoft.ServiceModel.Samples.ICalculator
     {
-        
+
         public CalculatorClient()
         {
         }
-        
-        public CalculatorClient(string endpointConfigurationName) : 
+
+        public CalculatorClient(string endpointConfigurationName) :
                 base(endpointConfigurationName)
         {
         }
-        
-        public CalculatorClient(string endpointConfigurationName, string remoteAddress) : 
+
+        public CalculatorClient(string endpointConfigurationName, string remoteAddress) :
                 base(endpointConfigurationName, remoteAddress)
         {
         }
-        
-        public CalculatorClient(string endpointConfigurationName, EndpointAddress remoteAddress) : 
+
+        public CalculatorClient(string endpointConfigurationName, EndpointAddress remoteAddress) :
                 base(endpointConfigurationName, remoteAddress)
         {
         }
-        
-        public CalculatorClient(Binding binding, EndpointAddress remoteAddress) : 
+
+        public CalculatorClient(Binding binding, EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
-        
+
         public double Add(double n1, double n2)
         {
             return base.Channel.Add(n1, n2);
         }
-        
+
         public double Subtract(double n1, double n2)
         {
             return base.Channel.Subtract(n1, n2);
         }
-        
+
         public double Multiply(double n1, double n2)
         {
             return base.Channel.Multiply(n1, n2);
         }
-        
+
         public double Divide(double n1, double n2)
         {
             return base.Channel.Divide(n1, n2);
@@ -111,7 +111,7 @@ namespace Microsoft.ServiceModel.Samples
             BasicHttpBinding binding = new BasicHttpBinding();
 
             //Specify the address to be used for the client.
-            EndpointAddress address = 
+            EndpointAddress address =
                new EndpointAddress("http://localhost/servicemodelsamples/service.svc");
 
             // Create a client that is configured with this address and binding.
@@ -150,5 +150,5 @@ namespace Microsoft.ServiceModel.Samples
         }
     }
 }
-    
+
 //</snippet3>

@@ -15,9 +15,9 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
       <webServices >  
           <protocols>  
            <remove name="HttpSoap12"/>  
-          </protocols>    
+          </protocols>
       </webServices>  
-     </system.web>   
+     </system.web>
 </configuration>  
 ```  
   
@@ -60,13 +60,13 @@ To ensure an easier future migration of new ASP.NET applications to WCF, follow 
 ```csharp  
 [Serializable]  
 [XmlRoot(Namespace="ExplicitNamespace", IsNullable=true)]  
-public partial class AnticipatedException 
-{ 
+public partial class AnticipatedException
+{
     private string anticipatedExceptionInformationField;  
 
-    public string AnticipatedExceptionInformation 
+    public string AnticipatedExceptionInformation
     {  
-        get {   
+        get {
             return this.anticipatedExceptionInformationField;  
         }  
         set {  
@@ -120,4 +120,4 @@ throw new SoapException(
   
 ## See also
 
-- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](../../../../docs/framework/wcf/feature-details/anticipating-adopting-the-wcf-easing-future-integration.md)
+- [Anticipating Adopting the Windows Communication Foundation: Easing Future Integration](anticipating-adopting-the-wcf-easing-future-integration.md)

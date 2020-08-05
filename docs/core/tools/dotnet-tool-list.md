@@ -14,22 +14,24 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool list <-g|--global>
+dotnet tool list -g|--global
 
-dotnet tool list <--tool-path>
+dotnet tool list --tool-path <PATH>
+
+dotnet tool list --local
 
 dotnet tool list
 
-dotnet tool list <-h|--help>
+dotnet tool list -h|--help
 ```
 
 ## Description
 
-The `dotnet tool list` command provides a way for you to list all .NET Core global, tool-path, or local Tools installed on your machine. The command lists the package name, version installed, and the tool command.  To use the command, you specify one of the following:
+The `dotnet tool list` command provides a way for you to list all .NET Core global, tool-path, or local tools installed on your machine. The command lists the package name, version installed, and the tool command.  To use the command, you specify one of the following:
 
-* A global tool installed in the default location. Use the `--global` option
-* A global tool installed in a custom location. Use the `--tool-path` option.
-* A local tool. Omit the `--global` and `--tool-path` options.
+* To list global tools installed in the default location, use the `--global` option
+* To list global tools installed in a custom location, use the `--tool-path` option.
+* To list local tools, A local tool. use the `--local` option or omit the `--global`, `--tool-path`, and `--local` options.
 
 **Local tools are available starting with .NET Core SDK 3.0.**
 
@@ -42,6 +44,10 @@ The `dotnet tool list` command provides a way for you to list all .NET Core glob
 - **`-h|--help`**
 
   Prints out a short help for the command.
+
+- **`--local`**
+
+  Lists local tools for the current directory. Can't be combined with the `--global` or `--tool-path` options. Omitting both `--global` and `--tool-path` lists local tools even if `--local` is not specified.
 
 - **`--tool-path <PATH>`**
 
@@ -61,7 +67,7 @@ The `dotnet tool list` command provides a way for you to list all .NET Core glob
 
   Lists the global tools from a specific Linux/macOS directory.
 
-- **`dotnet tool list`**
+- **`dotnet tool list`** or **`dotnet tool list --local`**
 
   Lists all local tools available in the current directory.
 

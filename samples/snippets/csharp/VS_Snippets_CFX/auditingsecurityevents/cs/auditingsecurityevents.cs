@@ -66,23 +66,23 @@ namespace Microsoft.ServiceModel.Samples
             Uri baseAddress = new Uri(ConfigurationManager.
                 AppSettings["baseAddress"]);
 
-            // Create a ServiceHost for the CalculatorService type 
+            // Create a ServiceHost for the CalculatorService type
             // and provide the base address.
-            using (ServiceHost serviceHost = new 
+            using (ServiceHost serviceHost = new
                 ServiceHost(typeof(CalculatorService), baseAddress))
             {
                 //<snippet4>
                 //<snippet3>
                 //<snippet2>
                 // Create a new auditing behavior and set the log location.
-                ServiceSecurityAuditBehavior newAudit = 
+                ServiceSecurityAuditBehavior newAudit =
                     new ServiceSecurityAuditBehavior();
-                newAudit.AuditLogLocation = 
+                newAudit.AuditLogLocation =
                     AuditLogLocation.Application;
                 //</snippet2>
-                newAudit.MessageAuthenticationAuditLevel = 
+                newAudit.MessageAuthenticationAuditLevel =
                     AuditLevel.SuccessOrFailure;
-                newAudit.ServiceAuthorizationAuditLevel = 
+                newAudit.ServiceAuthorizationAuditLevel =
                     AuditLevel.SuccessOrFailure;
                 //</snippet3>
                 newAudit.SuppressAuditFailure = false;
@@ -93,7 +93,7 @@ namespace Microsoft.ServiceModel.Samples
                     Behaviors.Remove<ServiceSecurityAuditBehavior>();
                 serviceHost.Description.Behaviors.Add(newAudit);
                 //</snippet5>
-                // Open the ServiceHostBase to create listeners 
+                // Open the ServiceHostBase to create listeners
                 // and start listening for messages.
                 serviceHost.Open();
 

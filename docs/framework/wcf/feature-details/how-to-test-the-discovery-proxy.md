@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d96e3fa2-3c42-4e5d-8244-2694081bdc32
 ---
 # How to: Test the Discovery Proxy
-This is the fourth of four topics that shows how to implement a discovery proxy. In the previous topic, [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md), you implemented a WCF client application that uses the discovery proxy to find a service and then calls the service. This topic describes how to verify the discovery proxy, the service, and the client application work as expected.  
+This is the fourth of four topics that shows how to implement a discovery proxy. In the previous topic, [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](client-app-discovery-proxy-to-find-a-service.md), you implemented a WCF client application that uses the discovery proxy to find a service and then calls the service. This topic describes how to verify the discovery proxy, the service, and the client application work as expected.  
   
 ### Run the Discovery Proxy  
   
@@ -46,7 +46,7 @@ This is the fourth of four topics that shows how to implement a discovery proxy.
   
 ## See also
 
-- [WCF Discovery Overview](../../../../docs/framework/wcf/feature-details/wcf-discovery-overview.md)
-- [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)
-- [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](../../../../docs/framework/wcf/feature-details/discoverable-service-that-registers-with-the-discovery-proxy.md)
-- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](../../../../docs/framework/wcf/feature-details/client-app-discovery-proxy-to-find-a-service.md)
+- [WCF Discovery Overview](wcf-discovery-overview.md)
+- [How to: Implement a Discovery Proxy](how-to-implement-a-discovery-proxy.md)
+- [How to: Implement a Discoverable Service that Registers with the Discovery Proxy](discoverable-service-that-registers-with-the-discovery-proxy.md)
+- [How to: Implement a Client Application that Uses the Discovery Proxy to Find a Service](client-app-discovery-proxy-to-find-a-service.md)

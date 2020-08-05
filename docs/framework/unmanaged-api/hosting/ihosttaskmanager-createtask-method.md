@@ -23,7 +23,7 @@ Requests that the host create a new task.
   
 ```cpp  
 HRESULT CreateTask (  
-    [in]  DWORD stacksize,   
+    [in]  DWORD stacksize,
     [in]  LPTHREAD_START_ROUTINE pStartAddress,  
     [in]  PVOID pParameter,  
     [out] IHostTask **ppTask  
@@ -41,7 +41,7 @@ HRESULT CreateTask (
  [in] A pointer to the user data to be passed to the function, or null if the function takes no parameters.  
   
  `ppTask`  
- [out] A pointer to the address of an [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance created by the host, or null if the task cannot be created. The task remains in a suspended state until it is explicitly started by a call to [IHostTask::Start](../../../../docs/framework/unmanaged-api/hosting/ihosttask-start-method.md).  
+ [out] A pointer to the address of an [IHostTask](ihosttask-interface.md) instance created by the host, or null if the task cannot be created. The task remains in a suspended state until it is explicitly started by a call to [IHostTask::Start](ihosttask-start-method.md).  
   
 ## Return Value  
   
@@ -59,7 +59,7 @@ HRESULT CreateTask (
  The CLR calls `CreateTask` to request that the host create a new task. The host returns an interface pointer to an `IHostTask` instance. The returned task must remain suspended until it is explicitly started by a call to `IHostTask::Start`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -69,7 +69,7 @@ HRESULT CreateTask (
   
 ## See also
 
-- [ICLRTask Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md)
-- [ICLRTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrtaskmanager-interface.md)
-- [IHostTask Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md)
-- [IHostTaskManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-interface.md)
+- [ICLRTask Interface](iclrtask-interface.md)
+- [ICLRTaskManager Interface](iclrtaskmanager-interface.md)
+- [IHostTask Interface](ihosttask-interface.md)
+- [IHostTaskManager Interface](ihosttaskmanager-interface.md)

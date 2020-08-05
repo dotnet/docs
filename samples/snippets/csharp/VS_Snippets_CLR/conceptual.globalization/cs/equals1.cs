@@ -16,7 +16,7 @@ public class Example
          // Prohibit access.
          Console.WriteLine("Access is not allowed.");
    }
-   
+
    private static bool AccessesFileSystem(string uri)
    {
       return uri.StartsWith("FILE", true, CultureInfo.CurrentCulture);

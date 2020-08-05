@@ -48,33 +48,33 @@ Declare [ charsetmodifier ] [ Function ] name Lib "libname" _
 
 |Term|Definition|
 |---|---|
-|`attributelist`|Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).|
-|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../../../visual-basic/language-reference/modifiers/public.md)<br />-   [Protected](../../../visual-basic/language-reference/modifiers/protected.md)<br />-   [Friend](../../../visual-basic/language-reference/modifiers/friend.md)<br />-   [Private](../../../visual-basic/language-reference/modifiers/private.md)<br />- [Protected Friend](../../language-reference/modifiers/protected-friend.md)<br />- [Private Protected](../../language-reference/modifiers/private-protected.md)<br /><br /> See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).|
-|`Shadows`|Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).|
-|`charsetmodifier`|Optional. Specifies character set and file search information. Can be one of the following:<br /><br /> -   [Ansi](../../../visual-basic/language-reference/modifiers/ansi.md) (default)<br />-   [Unicode](../../../visual-basic/language-reference/modifiers/unicode.md)<br />-   [Auto](../../../visual-basic/language-reference/modifiers/auto.md)|
+|`attributelist`|Optional. See [Attribute List](attribute-list.md).|
+|`accessmodifier`|Optional. Can be one of the following:<br /><br /> -   [Public](../modifiers/public.md)<br />-   [Protected](../modifiers/protected.md)<br />-   [Friend](../modifiers/friend.md)<br />-   [Private](../modifiers/private.md)<br />- [Protected Friend](../modifiers/protected-friend.md)<br />- [Private Protected](../modifiers/private-protected.md)<br /><br /> See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).|
+|`Shadows`|Optional. See [Shadows](../modifiers/shadows.md).|
+|`charsetmodifier`|Optional. Specifies character set and file search information. Can be one of the following:<br /><br /> -   [Ansi](../modifiers/ansi.md) (default)<br />-   [Unicode](../modifiers/unicode.md)<br />-   [Auto](../modifiers/auto.md)|
 |`Sub`|Optional, but either `Sub` or `Function` must appear. Indicates that the external procedure does not return a value.|
 |`Function`|Optional, but either `Sub` or `Function` must appear. Indicates that the external procedure returns a value.|
-|`name`|Required. Name of this external reference. For more information, see [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).|
+|`name`|Required. Name of this external reference. For more information, see [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
 |`Lib`|Required. Introduces a `Lib` clause, which identifies the external file (DLL or code resource) that contains an external procedure.|
 |`libname`|Required. Name of the file that contains the declared procedure.|
 |`Alias`|Optional. Indicates that the procedure being declared cannot be identified within its file by the name specified in `name`. You specify its identification in `aliasname`.|
 |`aliasname`|Required if you use the `Alias` keyword. String that identifies the procedure in one of two ways:<br /><br /> The entry point name of the procedure within its file, within quotes (`""`)<br /><br /> -or-<br /><br /> A number sign (`#`) followed by an integer specifying the ordinal number of the procedure's entry point within its file|
-|`parameterlist`|Required if the procedure takes parameters. See [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md).|
+|`parameterlist`|Required if the procedure takes parameters. See [Parameter List](parameter-list.md).|
 |`returntype`|Required if `Function` is specified and `Option Strict` is `On`. Data type of the value returned by the procedure.|
 
 ## Remarks
 
 Sometimes you need to call a procedure defined in a file (such as a DLL or code resource) outside your project. When you do this, the Visual Basic compiler does not have access to the information it needs to call the procedure correctly, such as where the procedure is located, how it is identified, its calling sequence and return type, and the string character set it uses. The `Declare` statement creates a reference to an external procedure and supplies this necessary information.
 
-You can use `Declare` only at module level. This means the *declaration context* for an external reference must be a class, structure, or module, and cannot be a source file, namespace, interface, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).
+You can use `Declare` only at module level. This means the *declaration context* for an external reference must be a class, structure, or module, and cannot be a source file, namespace, interface, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).
 
-External references default to [Public](../../../visual-basic/language-reference/modifiers/public.md) access. You can adjust their access levels with the access modifiers.
+External references default to [Public](../modifiers/public.md) access. You can adjust their access levels with the access modifiers.
 
 ## Rules
 
 - **Attributes.** You can apply attributes to an external reference. Any attribute you apply has effect only in your project, not in the external file.
 
-- **Modifiers.** External procedures are implicitly [Shared](../../../visual-basic/language-reference/modifiers/shared.md). You cannot use the `Shared` keyword when declaring an external reference, and you cannot alter its shared status.
+- **Modifiers.** External procedures are implicitly [Shared](../modifiers/shared.md). You cannot use the `Shared` keyword when declaring an external reference, and you cannot alter its shared status.
 
   An external procedure cannot participate in overriding, implement interface members, or handle events. Accordingly, you cannot use the `Overrides`, `Overridable`, `NotOverridable`, `MustOverride`, `Implements`, or `Handles` keyword in a `Declare` statement.
 
@@ -97,7 +97,7 @@ External references default to [Public](../../../visual-basic/language-reference
   > [!NOTE]
   > The Visual Basic compiler does not verify that your data types are compatible with those of the external procedure. If there is a mismatch, the common language runtime generates a <xref:System.Runtime.InteropServices.MarshalDirectiveException> exception at run time.
 
-- **Default Data Types.** If `Option Strict` is `Off` and you do not specify the data type of a parameter in `parameterlist`, the Visual Basic compiler converts the corresponding argument to the [Object Data Type](../../../visual-basic/language-reference/data-types/object-data-type.md). Similarly, if you do not specify `returntype`, the compiler takes the return data type to be `Object`.
+- **Default Data Types.** If `Option Strict` is `Off` and you do not specify the data type of a parameter in `parameterlist`, the Visual Basic compiler converts the corresponding argument to the [Object Data Type](../data-types/object-data-type.md). Similarly, if you do not specify `returntype`, the compiler takes the return data type to be `Object`.
 
   > [!NOTE]
   > Because you are dealing with an external procedure that might have been written on a different platform, it is dangerous to make any assumptions about data types or to allow them to default. It is much safer to specify the data type of every parameter and of the return value, if any. This also improves the readability of your code.
@@ -108,7 +108,7 @@ External references default to [Public](../../../visual-basic/language-reference
 
 - **Lifetime.** An external reference has the same lifetime as the class, structure, or module in which it is declared.
 
-- **Calling an External Procedure.** You call an external procedure the same way you call a `Function` or `Sub` procedure—by using it in an expression if it returns a value, or by specifying it in a [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md) if it does not return a value.
+- **Calling an External Procedure.** You call an external procedure the same way you call a `Function` or `Sub` procedure—by using it in an expression if it returns a value, or by specifying it in a [Call Statement](call-statement.md) if it does not return a value.
 
   You pass arguments to the external procedure exactly as specified by `parameterlist` in the `Declare` statement. Do not take into account how the parameters were originally declared in the external file. Similarly, if there is a return value, use it exactly as specified by `returntype` in the `Declare` statement.
 
@@ -120,10 +120,10 @@ External references default to [Public](../../../visual-basic/language-reference
 
   - On a Unicode platform, such as Windows NT, Windows 2000, or Windows XP, first look up the external procedure with no name modification. If that fails, append "W" to the end of the external procedure name and look it up again.
 
-- **Mechanism.** Visual Basic uses the .NET Framework *platform invoke* (PInvoke) mechanism to resolve and access external procedures. The `Declare` statement and the <xref:System.Runtime.InteropServices.DllImportAttribute> class both use this mechanism automatically, and you do not need any knowledge of PInvoke. For more information, see [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md).
+- **Mechanism.** Visual Basic uses the .NET Framework *platform invoke* (PInvoke) mechanism to resolve and access external procedures. The `Declare` statement and the <xref:System.Runtime.InteropServices.DllImportAttribute> class both use this mechanism automatically, and you do not need any knowledge of PInvoke. For more information, see [Walkthrough: Calling Windows APIs](../../programming-guide/com-interop/walkthrough-calling-windows-apis.md).
 
 > [!IMPORTANT]
-> If the external procedure runs outside the common language runtime (CLR), it is *unmanaged code*. When you call such a procedure, for example a Windows API function or a COM method, you might expose your application to security risks. For more information, see [Secure Coding Guidelines for Unmanaged Code](../../../framework/security/secure-coding-guidelines-for-unmanaged-code.md).
+> If the external procedure runs outside the common language runtime (CLR), it is *unmanaged code*. When you call such a procedure, for example a Windows API function or a COM method, you might expose your application to security risks. For more information, see [Secure Coding Guidelines for Unmanaged Code](https://docs.microsoft.com/previous-versions/dotnet/framework/security/secure-coding-guidelines-for-unmanaged-code).
 
 ## Example
 
@@ -142,10 +142,10 @@ The <xref:System.Runtime.InteropServices.DllImportAttribute> provides an alterna
 ## See also
 
 - <xref:Microsoft.VisualBasic.ErrObject.LastDllError%2A>
-- [Imports Statement (.NET Namespace and Type)](../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)
-- [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
-- [Sub Statement](../../../visual-basic/language-reference/statements/sub-statement.md)
-- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
-- [Call Statement](../../../visual-basic/language-reference/statements/call-statement.md)
-- [Walkthrough: Calling Windows APIs](../../../visual-basic/programming-guide/com-interop/walkthrough-calling-windows-apis.md)
+- [Imports Statement (.NET Namespace and Type)](imports-statement-net-namespace-and-type.md)
+- [AddressOf Operator](../operators/addressof-operator.md)
+- [Function Statement](function-statement.md)
+- [Sub Statement](sub-statement.md)
+- [Parameter List](parameter-list.md)
+- [Call Statement](call-statement.md)
+- [Walkthrough: Calling Windows APIs](../../programming-guide/com-interop/walkthrough-calling-windows-apis.md)

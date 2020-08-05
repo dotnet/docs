@@ -25,14 +25,14 @@ Retrieves the specified property value if it exists.
 
 ```cpp
 HRESULT Get (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
    [in] LPCWSTR           wszName,
    [in] LONG              lFlags,
    [out] VARIANT*         pVal,
    [out] CIMTYPE*         pvtType,
    [out] LONG*            plFlavor
-); 
+);
 ```
 
 ## Parameters
@@ -53,10 +53,10 @@ HRESULT Get (
 [out] If the function returns successfully, contains the value of the `wszName` property. The `pval` argument is assigned the correct type and value for the qualifier.
 
 `pvtType`\
-[out] If the function returns successfully, contains a [CIM-type constant](/windows/win32/api/wbemcli/ne-wbemcli-cimtype_enumeration) that indicates the property type. Its value can also be `null`. 
+[out] If the function returns successfully, contains a [CIM-type constant](/windows/win32/api/wbemcli/ne-wbemcli-cimtype_enumeration) that indicates the property type. Its value can also be `null`.
 
 `plFlavor`\
-[out] If the function returns successfully, receives information about the origin of the property. Its value can be `null`, or one of the following WBEM_FLAVOR_TYPE constants defined in the *WbemCli.h* header file: 
+[out] If the function returns successfully, receives information about the origin of the property. Its value can be `null`, or one of the following WBEM_FLAVOR_TYPE constants defined in the *WbemCli.h* header file:
 
 |Constant  |Value  |Description  |
 |---------|---------|---------|

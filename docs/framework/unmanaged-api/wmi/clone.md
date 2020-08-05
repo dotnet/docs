@@ -16,7 +16,7 @@ topic_type:
   - "Reference"
 ---
 # Clone function
-Returns a new object that is a complete clone of the current object.   
+Returns a new object that is a complete clone of the current object.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -24,10 +24,10 @@ Returns a new object that is a complete clone of the current object.
   
 ```cpp  
 HRESULT Clone (
-   [in] int                  vFunc, 
-   [in] IWbemClassObject*    ptr, 
+   [in] int                  vFunc,
+   [in] IWbemClassObject*    ptr,
    [out] IWbemClassObject**  ppCopy
-); 
+);
 ```  
 
 ## Parameters

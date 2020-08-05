@@ -67,7 +67,7 @@ namespace ContextMenus
         }
 
         //Not snippeting these event handlers because they're identical to
-        //MenuItemCommandAndEvents#2.  Use that snippet as the companion to 
+        //MenuItemCommandAndEvents#2.  Use that snippet as the companion to
         //ContextMenu#Events (in pane1.xaml of this project).
         private void Bold_Checked(object sender, RoutedEventArgs e)
         {

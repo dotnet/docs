@@ -14,8 +14,8 @@ namespace SDKSample
             TextBox myTextBox = new TextBox();
             myTextBox.Width = 100;
 
-            // The CharacterCasing property of this TextBox is set to 
-            // "Upper" which causes all manually typed characters to 
+            // The CharacterCasing property of this TextBox is set to
+            // "Upper" which causes all manually typed characters to
             // be converted to upper case.
             myTextBox.CharacterCasing = CharacterCasing.Upper;
             myStackPanel.Children.Add(myTextBox);

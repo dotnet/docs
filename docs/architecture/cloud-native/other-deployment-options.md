@@ -1,42 +1,58 @@
 ---
 title: Other container deployment options
 description: Other Container Deployment Options using Azure
-ms.date: 06/30/2019
+ms.date: 05/13/2020
 ---
+
 # Other container deployment options
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
-In addition to deploying to AKS, you can also deploy containers to Azure App Service for Containers and Azure Container Instances.
+Aside from Azure Kubernetes Service (AKS), you can also deploy containers to Azure App Service for Containers and Azure Container Instances.
 
 ## When does it make sense to deploy to App Service for Containers?
 
-Simple production applications that don't require orchestration are well-suited to Azure App Service for Containers.
+Simple production applications that don't require orchestration are well suited to Azure App Service for Containers.
 
 ## How to deploy to App Service for Containers
 
-To deploy to [Azure App Service for Containers](https://azure.microsoft.com/services/app-service/containers/), you need to have configured an Azure Container Registry (ACR) and credentials for accessing it. Push the container you intend to host to the registry so it's available to pull into your Azure App Service. Once created, you can configure the app for Continuous Deployment, which will automatically deploy updates to the app whenever you update its corresponding image in ACR.
+To deploy to [Azure App Service for Containers](https://azure.microsoft.com/services/app-service/containers/), you'll need an Azure Container Registry (ACR) instance and credentials to access it. Push your container image to the ACR repository so it can pulled into your Azure App Service. Once complete, you can configure the app for Continuous Deployment. Doing so will automatically deploy updates whenever the image changes in ACR.
 
 ## When does it make sense to deploy to Azure Container Instances?
 
-Azure Container Instances are best used for testing scenarios. They provide a fast, simple way to deploy an application to a cloud-hosted container instance. Use them to test or demo applications when you don't require scaling and orchestration features offered by Azure Kubernetes Service.
+[Azure Container Instances (ACI)](https://azure.microsoft.com/services/container-instances/) enables you to run Docker containers in a managed, serverless cloud environment, without having to set up virtual machines or clusters. It's a great solution for short-running workloads that can run in an isolated container. Consider ACI for simple services, testing scenarios, task automation, and build jobs. ACI spins-up a container instance, performs the task, and then spins it down.
 
 ## How to deploy an app to Azure Container Instances
 
-To deploy to [Azure Container Instances (ACI)](https://docs.microsoft.com/azure/container-instances/), you need to have configured an Azure Container Registry (ACR) and credentials for accessing it. You must also have previously pushed your container image to the registry, so it's available to pull into ACI. You can work with ACI using the Azure CLI or through the portal. Azure Container Registries make it easy to deploy individual container instances to ACI directly from within the registry, as shown in Figure 3-14.
+To deploy to [Azure Container Instances (ACI)](https://docs.microsoft.com/azure/container-instances/), you need an Azure Container Registry (ACR) and credentials for accessing it. Once you push your container image to the repository, it's available to pull into ACI. You can work with ACI using the Azure portal or command-line interface. ACR provides tight integration with ACI. Figure 3-14 shows how to push an individual container image to ACR.
 
 ![Azure Container Registry Run Instance](./media/acr-runinstance-contextmenu.png)
 
 **Figure 3-14**. Azure Container Registry Run Instance
 
-Creating a container instance from the registry just requires you to specify the usual Azure settings (name, subscription, resource group, and location), how much memory to allocate to the container, and which port it should listen on. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
+Creating an instance in ACI can be done quickly. Specify the image registry, Azure resource group information, the amount of memory to allocate, and the port on which to listen. This [quickstart shows how to deploy a container instance to ACI using the Azure portal](https://docs.microsoft.com/azure/container-instances/container-instances-quickstart-portal).
 
 Once the deployment completes, find the newly deployed container's IP address and communicate with it over the port you specified.
 
-Azure Container Instances offers the fastest, simplest way to run a container in Azure. There's no need to configure an app service or an orchestrator or to deal with virtual machines. However, because of its simplicity, ACI should primarily be used for testing purposes. If your application requires automatic scalability, multiple containers configured to work together, or any additional complex features, there are other better-suited Azure services available to host your app.
+Azure Container Instances offers the fastest way to run simple container workloads in Azure. You don't need to configure an app service, orchestrator, or virtual machine. For scenarios where you require full container orchestration, service discovery, automatic scaling, or coordinated upgrades, we recommend Azure Kubernetes Service (AKS).
 
 ## References
 
+- [What is Kubernetes?](https://blog.newrelic.com/engineering/what-is-kubernetes/)
+- [Installing Kubernetes with Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
+- [MiniKube vs Docker Desktop](https://medium.com/containers-101/local-kubernetes-for-windows-minikube-vs-docker-desktop-25a1c6d3b766)
+- [Visual Studio Tools for Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
+- [Understanding serverless cold start](https://azure.microsoft.com/blog/understanding-serverless-cold-start/)
+- [Pre-warmed Azure Functions instances](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
+- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Run Azure Functions in a Docker Container](https://markheath.net/post/azure-functions-docker)
+- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Azure Functions with Kubernetes Event Driven Autoscaling](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda)
+- [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
+- [Azure Dev Spaces with VS Code](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore)
+- [Azure Dev Spaces with Visual Studio](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio)
+- [AKS Multiple Node Pools](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
+- [AKS Cluster Autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
+- [Tutorial: Scale applications in AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
+- [Azure Functions scale and hosting](https://docs.microsoft.com/azure/azure-functions/functions-scale)
 - [Azure Container Instances Docs](https://docs.microsoft.com/azure/container-instances/)
 - [Deploy Container Instance from ACR](https://docs.microsoft.com/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)
 

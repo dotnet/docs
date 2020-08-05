@@ -1,5 +1,6 @@
 ---
 title: "Adding Columns to a DataTable"
+description: A DataTable contains DataColumn objects referenced by the Columns property of the table. Use this example code to add columns to a table in ADO.NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

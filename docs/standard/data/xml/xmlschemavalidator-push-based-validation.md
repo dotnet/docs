@@ -450,7 +450,7 @@ The following table describes how the punctuation symbols found in the state tra
 |------------|-----------------|
 |&#124;|Either method or state (the one before the bar or the one after it) can be called.|
 |?|The method or state that precedes the question mark is optional but if it is called it can only be called once.|
-|*|The method or state that precedes the * symbol is optional, and can be called more than once.|
+|\*|The method or state that precedes the \* symbol is optional, and can be called more than once.|
 
 ## Validation Context
 

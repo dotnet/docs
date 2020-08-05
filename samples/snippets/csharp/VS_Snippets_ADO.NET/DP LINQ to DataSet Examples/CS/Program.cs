@@ -59,7 +59,7 @@ namespace LINQtoDataSetSamples
 
             /*** Grouping Operators ***/
             //GroupBySimple2();
-            //GroupBySimple3(); 
+            //GroupBySimple3();
             //GroupByNested();
 
             /*** Set Operators ***/
@@ -85,7 +85,7 @@ namespace LINQtoDataSetSamples
             //Range();      // Didn't use Range, couldn't get it to work.
 
             /*** Quantifier Operators ***/
-            //AnyGrouped_MQ(); 
+            //AnyGrouped_MQ();
             //AllGrouped_MQ();
 
             /*** Aggregate Operators ***/
@@ -93,17 +93,17 @@ namespace LINQtoDataSetSamples
             //Average_MQ();
             //Average2_MQ();
             //Count();
-            //CountNested(); 
+            //CountNested();
             //CountGrouped();
             //LongCountSimple();
             //SumProjection_MQ();
             //SumGrouped_MQ();
             //MinProjection_MQ();
             //MinGrouped_MQ();
-            //MinElements_MQ(); 
+            //MinElements_MQ();
             //AverageProjection_MQ();
             //AverageGrouped_MQ();
-            //AverageElements_MQ(); 
+            //AverageElements_MQ();
             //MaxProjection_MQ();
             //MaxGrouped_MQ();
             MaxElements_MQ();
@@ -122,7 +122,7 @@ namespace LINQtoDataSetSamples
             /*** DataRowComparer examples ***/
             //CompareDifferentDataRows();
             //CompareEqualDataRows();
-            //CompareNullDataRows();   
+            //CompareNullDataRows();
 
             /*** CopyToDataTable examples ***/
             //CopyToDataTable1();
@@ -134,7 +134,7 @@ namespace LINQtoDataSetSamples
             //OrderBy();
             //OrderByDescending();
             //Sum();
-            //GroupBy();   
+            //GroupBy();
 
             Console.WriteLine("Hit Enter...");
             Console.Read();
@@ -195,8 +195,8 @@ namespace LINQtoDataSetSamples
 
         /*[Category("Projection Operators")]
         [Title("Select - Anonymous Types ")]
-        [Description("This example uses Select to project the Name, ProductNumber, and 
-          ListPrice properties to a sequence of anonymous types.  The ListPrice 
+        [Description("This example uses Select to project the Name, ProductNumber, and
+          ListPrice properties to a sequence of anonymous types.  The ListPrice
           property is also renamed to Price in the resulting type.")]*/
         static void SelectAnonymousTypes_MQ()
         {
@@ -517,7 +517,7 @@ namespace LINQtoDataSetSamples
 
         /*[Category("Restriction Operators")]
         [Title("Where ")]
-        [Description("This example returns all red colored products.  This query does not used the generic Field 
+        [Description("This example returns all red colored products.  This query does not used the generic Field
          method, but explicitly checks column values for null.")]*/
         static void WhereIsNull()
         {
@@ -1266,7 +1266,7 @@ namespace LINQtoDataSetSamples
             DataTable contacts1 = query1.CopyToDataTable();
             DataTable contacts2 = query2.CopyToDataTable();
 
-            // Find the contacts that are in the first 
+            // Find the contacts that are in the first
             // table but not the second.
             var contacts = contacts1.AsEnumerable().Except(contacts2.AsEnumerable(),
                                                            DataRowComparer.Default);
@@ -2275,10 +2275,10 @@ namespace LINQtoDataSetSamples
 
             foreach (var result in query.Take(10))
             {
-                OnlineOrders.Rows.Add(new object[] { 
-                                      result.FirstName, 
-                                      result.LastName, 
-                                      result.OrderDate, 
+                OnlineOrders.Rows.Add(new object[] {
+                                      result.FirstName,
+                                      result.LastName,
+                                      result.OrderDate,
                                       result.TotalDue });
             }
 
@@ -2341,7 +2341,7 @@ namespace LINQtoDataSetSamples
 
             DataTable orders = ds.Tables["SalesOrderHeader"];
 
-            // Query the SalesOrderHeader table for orders placed 
+            // Query the SalesOrderHeader table for orders placed
             // after August 8, 2001.
             IEnumerable<DataRow> query =
                 from order in orders.AsEnumerable()
@@ -2351,7 +2351,7 @@ namespace LINQtoDataSetSamples
             // Create a table from the query.
             DataTable boundTable = query.CopyToDataTable<DataRow>();
 
-            // Bind the table to a System.Windows.Forms.BindingSource object, 
+            // Bind the table to a System.Windows.Forms.BindingSource object,
             // which acts as a proxy for a System.Windows.Forms.DataGridView object.
             bindingSource.DataSource = boundTable;
             //</SnippetCopyToDataTable1>
@@ -2621,8 +2621,8 @@ namespace LINQtoDataSetSamples
             // <SnippetFillDataSet>
             try
             {
-                // Create a new adapter and give it a query to fetch sales order, contact, 
-                // address, and product information for sales in the year 2002. Point connection 
+                // Create a new adapter and give it a query to fetch sales order, contact,
+                // address, and product information for sales in the year 2002. Point connection
                 // information to the configuration setting "AdventureWorks".
                 string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
                     + "Integrated Security=true;";

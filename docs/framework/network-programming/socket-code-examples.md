@@ -1,5 +1,6 @@
 ---
 title: "Socket Code Examples"
+description: Review these examples to see how to use the Socket class for a client to connect to network services and as a server to listen for connections from clients.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application protocols, sockets"

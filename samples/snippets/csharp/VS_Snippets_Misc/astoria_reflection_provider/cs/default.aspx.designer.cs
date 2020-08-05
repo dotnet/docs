@@ -9,10 +9,10 @@
 //------------------------------------------------------------------------------
 
 namespace CustomDataServiceClient {
-    
-    
+
+
     public partial class _Default {
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>

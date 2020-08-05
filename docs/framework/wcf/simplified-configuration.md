@@ -1,5 +1,6 @@
 ---
 title: "Simplified Configuration"
+description: Learn about simplified configuration for WCF services. .NET Framework 4.6.1 provides a way to reduce the size and complexity of service configuration.
 ms.date: "03/30/2017"
 ms.assetid: dcbe1f84-437c-495f-9324-2bc09fd79ea9
 ---
@@ -14,8 +15,8 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
   <behaviors>  
     <serviceBehaviors>  
       <behavior name="MyServiceBehavior">  
-        <serviceMetadata httpGetEnabled="true">  
-        <serviceDebug includeExceptionDetailInFaults="false">  
+        <serviceMetadata httpGetEnabled="true" />  
+        <serviceDebug includeExceptionDetailInFaults="false" />  
       </behavior>  
     </serviceBehaviors>  
   </behaviors>  

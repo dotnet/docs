@@ -3,15 +3,15 @@ title: Batch processing with .NET for Apache Spark tutorial
 description: Learn how to do batch processing using .NET for Apache Spark.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 12/13/2019
+ms.date: 06/25/2020
 ms.topic: tutorial
 ---
 
 # Tutorial: Do batch processing with .NET for Apache Spark
 
-In this tutorial, you learn how to do batch processing using .NET for Apache Spark. Batch processing is the transformation of data at rest, meaning that the source data has already been loaded into data storage. 
+In this tutorial, you learn how to do batch processing using .NET for Apache Spark. Batch processing is the transformation of data at rest, meaning that the source data has already been loaded into data storage.
 
-Batch processing is generally performed over large, flat datasets that need to be prepared for further analysis. Log processing and data warehousing are common batch processing scenarios. In this scenario, you analyze information about GitHub projects, such as the number of time different projects have been forked or how recently projects have been updated. 
+Batch processing is generally performed over large, flat datasets that need to be prepared for further analysis. Log processing and data warehousing are common batch processing scenarios. In this scenario, you analyze information about GitHub projects, such as the number of time different projects have been forked or how recently projects have been updated.
 
 In this tutorial, you learn how to:
 
@@ -21,9 +21,11 @@ In this tutorial, you learn how to:
 > * Read data into a DataFrame and prepare it for analysis
 > * Process the data using Spark SQL
 
-## Prerequisites 
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
-If this is your first time using .NET for Apache Spark, check out the [Get started with .NET for Apache Spark](../tutorials/get-started.md) tutorial to learn how to prepare your environment and run your first .NET for Apache Spark application.
+## Prerequisites
+
+If this is your first time using .NET for Apache Spark, check out the [Get started with .NET for Apache Spark](get-started.md) tutorial to learn how to prepare your environment and run your first .NET for Apache Spark application.
 
 ## Download the sample data
 
@@ -123,7 +125,7 @@ The goal of this app is to gain some insights about the GitHub projects data. Ad
 
    ```csharp
    // Sort by most forked languages first
-   groupedDF.OrderBy(Desc("avg(forked_from)")).Show(); 
+   groupedDF.OrderBy(Desc("avg(forked_from)")).Show();
    ```
 
 1. The next block of code shows you how recently projects have been updated. You register a new user-defined function called *MyUDF* and compare it with a date, *s_referenceDate*, which was declared at the beginning of the tutorial. The date for each project is compared against the reference date. Then, Spark SQL is used to call the UDF on each row of the data to analyze each project in the data set.
@@ -132,8 +134,8 @@ The goal of this app is to gain some insights about the GitHub projects data. Ad
    spark.Udf().Register<string, bool>(
        "MyUDF",
        (date) => DateTime.TryParse(date, out DateTime convertedDate) &&
-           (convertedDate > s_referenceDate);   
-   cleanedProjects.CreateOrReplaceTempView("dateView"); 
+           (convertedDate > s_referenceDate);
+   cleanedProjects.CreateOrReplaceTempView("dateView");
 
    DataFrame dateDf = spark.Sql(
        "SELECT *, MyUDF(dateView.updated_at) AS datebefore FROM dateView");

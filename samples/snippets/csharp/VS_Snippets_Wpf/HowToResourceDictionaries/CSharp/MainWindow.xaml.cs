@@ -22,7 +22,7 @@ namespace HowToResourceDictionaries
         public MainWindow()
         {
             InitializeComponent();
-            
+
             //<Snippet3>
             //Get a resource from the ResourceDictionary in code
             Brush gradientBrush = (Brush)Application.Current.FindResource("StandardLinearGradientBrush");

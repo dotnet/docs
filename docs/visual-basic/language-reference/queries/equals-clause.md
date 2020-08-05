@@ -13,10 +13,10 @@ Compares keys from collections being joined.
 ## Remarks  
  The `Equals` keyword is used in the following contexts:  
   
- [Group Join Clause](../../../visual-basic/language-reference/queries/group-join-clause.md)  
+ [Group Join Clause](group-join-clause.md)  
   
- [Join Clause](../../../visual-basic/language-reference/queries/join-clause.md)  
+ [Join Clause](join-clause.md)  
   
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Keywords](../keywords/index.md)

@@ -22,4 +22,4 @@ The following example shows how to synchronize concurrent tasks with a <xref:Sys
   
 ## See also
 
-- [Data Structures for Parallel Programming](../../../docs/standard/parallel-programming/data-structures-for-parallel-programming.md)
+- [Data Structures for Parallel Programming](../parallel-programming/data-structures-for-parallel-programming.md)

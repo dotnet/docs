@@ -531,7 +531,7 @@ Public Class ObjectShredder(Of T)
                 ' Add the field to the ordinal map.
                 Me._ordinalMap.Add(f.Name, dc.Ordinal)
             End If
-            
+
         Next
 
         For Each p In type.GetProperties

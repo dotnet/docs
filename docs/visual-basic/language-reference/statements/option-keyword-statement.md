@@ -15,14 +15,14 @@ Introduces a statement that specifies a compiler option that applies to the enti
   
  The `Option` keyword can be used in these contexts:  
   
- [Option Compare Statement](../../../visual-basic/language-reference/statements/option-compare-statement.md)  
+ [Option Compare Statement](option-compare-statement.md)  
   
- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)  
+ [Option Explicit Statement](option-explicit-statement.md)  
   
- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)  
+ [Option Infer Statement](option-infer-statement.md)  
   
- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)  
+ [Option Strict Statement](option-strict-statement.md)  
   
 ## See also
 
-- [Keywords](../../../visual-basic/language-reference/keywords/index.md)
+- [Keywords](../keywords/index.md)

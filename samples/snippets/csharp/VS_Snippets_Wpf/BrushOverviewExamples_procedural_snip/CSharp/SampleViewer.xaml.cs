@@ -18,7 +18,7 @@ namespace Microsoft.Samples.BrushExamples
        public SampleViewer()
        {
             InitializeComponent();
-            
+
             SolidColorBrushExampleFrame.Content = new SolidColorBrushExample();
        }
     }

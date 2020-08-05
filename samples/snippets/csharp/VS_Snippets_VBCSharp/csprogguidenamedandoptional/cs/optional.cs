@@ -32,11 +32,11 @@ namespace OptionalNamespace
             //anExample.ExampleMethod("One", 1);
             //anExample.ExampleMethod();
 
-            // You cannot leave a gap in the provided arguments. 
+            // You cannot leave a gap in the provided arguments.
             //anExample.ExampleMethod(3, ,4);
             //anExample.ExampleMethod(3, 4);
 
-            // You can use a named parameter to make the previous 
+            // You can use a named parameter to make the previous
             // statement work.
             anExample.ExampleMethod(3, optionalint: 4);
         }
@@ -54,7 +54,7 @@ namespace OptionalNamespace
         }
 
         // The first parameter, required, has no default value assigned
-        // to it. Therefore, it is not optional. Both optionalstr and 
+        // to it. Therefore, it is not optional. Both optionalstr and
         // optionalint have default values assigned to them. They are optional.
         //<Snippet15>
         public void ExampleMethod(int required, string optionalstr = "default string",

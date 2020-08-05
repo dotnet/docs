@@ -33,5 +33,5 @@ ms.assetid: d3646e6d-5c1f-4922-8fb0-ec5effb30d60
 
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Type Design Guidelines](type.md)
+- [Framework Design Guidelines](index.md)

@@ -26,7 +26,7 @@ Module Module1
         End Try
         ' </Snippet1>
 
-        
+
 
 
         Console.ReadLine()

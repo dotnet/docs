@@ -10,7 +10,7 @@ ms.assetid: de930027-9108-4f0c-b97c-5e7db4d6ef79
 ---
 # Default Object Instances Provided by My.Forms and My.WebServices (Visual Basic)
 
-The [My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.md) and [My.WebServices](../../../visual-basic/language-reference/objects/my-webservices-object.md) objects provide access to forms, data sources, and XML Web services used by your application. They do this by providing collections of *default instances* of each of these objects.  
+The [My.Forms](../../language-reference/objects/my-forms-object.md) and [My.WebServices](../../language-reference/objects/my-webservices-object.md) objects provide access to forms, data sources, and XML Web services used by your application. They provide access through collections of *default instances* of each of these objects.  
   
 ## Default Instances  
 
@@ -24,6 +24,6 @@ The [My.Forms](../../../visual-basic/language-reference/objects/my-forms-object.
   
 ## See also
 
-- [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
-- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
-- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+- [My.Forms Object](../../language-reference/objects/my-forms-object.md)
+- [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)
+- [How My Depends on Project Type](how-my-depends-on-project-type.md)

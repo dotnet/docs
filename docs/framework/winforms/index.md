@@ -1,6 +1,7 @@
 ---
 title: Windows Forms
 titleSuffix: ""
+description: Learn what it takes to get started with Windows Forms and how to enhance your Windows Forms applications.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms"

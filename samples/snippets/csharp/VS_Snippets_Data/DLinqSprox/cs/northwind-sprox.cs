@@ -73,25 +73,25 @@ public partial class Northwnd : System.Data.Linq.DataContext
 	{
 	}
 	
-	public Northwnd(string connection) : 
+	public Northwnd(string connection) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
 	}
 	
-	public Northwnd(System.Data.IDbConnection connection) : 
+	public Northwnd(System.Data.IDbConnection connection) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
 	}
 	
-	public Northwnd(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+	public Northwnd(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
 	}
 	
-	public Northwnd(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+	public Northwnd(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) :
 			base(connection, mappingSource)
 	{
 		OnCreated();
@@ -561,7 +561,7 @@ public partial class CustomerCustomerDemo : INotifyPropertyChanging, INotifyProp
 		set
 		{
 			CustomerDemographic previousValue = this._CustomerDemographic.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._CustomerDemographic.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -595,7 +595,7 @@ public partial class CustomerCustomerDemo : INotifyPropertyChanging, INotifyProp
 		set
 		{
 			Customer previousValue = this._Customer.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Customer.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -1593,7 +1593,7 @@ public partial class Employee : INotifyPropertyChanging, INotifyPropertyChanged
 		set
 		{
 			Employee previousValue = this._ReportsToEmployee.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._ReportsToEmployee.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -1808,7 +1808,7 @@ public partial class EmployeeTerritory : INotifyPropertyChanging, INotifyPropert
 		set
 		{
 			Employee previousValue = this._Employee.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Employee.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -1842,7 +1842,7 @@ public partial class EmployeeTerritory : INotifyPropertyChanging, INotifyPropert
 		set
 		{
 			Territory previousValue = this._Territory.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Territory.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -2048,7 +2048,7 @@ public partial class OrderDetail : INotifyPropertyChanging, INotifyPropertyChang
 		set
 		{
 			Order previousValue = this._Order.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Order.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -2082,7 +2082,7 @@ public partial class OrderDetail : INotifyPropertyChanging, INotifyPropertyChang
 		set
 		{
 			Product previousValue = this._Product.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Product.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -2527,7 +2527,7 @@ public partial class Order : INotifyPropertyChanging, INotifyPropertyChanged
 		set
 		{
 			Customer previousValue = this._Customer.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Customer.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -2561,7 +2561,7 @@ public partial class Order : INotifyPropertyChanging, INotifyPropertyChanged
 		set
 		{
 			Employee previousValue = this._Employee.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Employee.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -2595,7 +2595,7 @@ public partial class Order : INotifyPropertyChanging, INotifyPropertyChanged
 		set
 		{
 			Shipper previousValue = this._Shipper.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Shipper.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -2951,7 +2951,7 @@ public partial class Product : INotifyPropertyChanging, INotifyPropertyChanged
 		set
 		{
 			Category previousValue = this._Category.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Category.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -2985,7 +2985,7 @@ public partial class Product : INotifyPropertyChanging, INotifyPropertyChanged
 		set
 		{
 			Supplier previousValue = this._Supplier.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Supplier.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();
@@ -3778,7 +3778,7 @@ public partial class Territory : INotifyPropertyChanging, INotifyPropertyChanged
 		set
 		{
 			Region previousValue = this._Region.Entity;
-			if (((previousValue != value) 
+			if (((previousValue != value)
 						|| (this._Region.HasLoadedOrAssignedValue == false)))
 			{
 				this.SendPropertyChanging();

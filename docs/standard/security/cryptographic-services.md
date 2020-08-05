@@ -1,5 +1,6 @@
 ---
 title: "Cryptographic Services"
+description: Read an overview of the encryption methods and practices supported by .NET, such as ClickOnce manifests, Suite B, & Cryptography Next Generation (CNG) support.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -77,7 +78,7 @@ One way to compromise data that is encrypted with a CBC cipher is to perform an 
 
 The disadvantage of secret-key encryption is that it presumes two parties have agreed on a key and IV, and communicated their values. The IV is not considered a secret and can be transmitted in plaintext with the message. However, the key must be kept secret from unauthorized users. Because of these problems, secret-key encryption is often used together with public-key encryption to privately communicate the values of the key and IV.
 
-Assuming that Alice and Bob are two parties who want to communicate over a nonsecure channel, they might use secret-key encryption as follows: Alice and Bob agree to use one particular algorithm (AES, for example) with a particular key and IV. Alice composes a message and creates a network stream (perhaps a named pipe or network email) on which to send the message. Next, she encrypts the text using the key and IV, and sends the encrypted message and IV to Bob over the intranet. Bob receives the encrypted text and decrypts it by using the IV and previously agreed upon key. If the transmission is intercepted, the interceptor cannot recover the original message, because he does not know the key. In this scenario, only the key must remain secret. In a real world scenario, either Alice or Bob generates a secret key and uses public-key (asymmetric) encryption to transfer the secret (symmetric) key to the other party. For more information about public-key encryption, see the next section.
+Assuming that Alice and Bob are two parties who want to communicate over a nonsecure channel, they might use secret-key encryption as follows: Alice and Bob agree to use one particular algorithm (AES, for example) with a particular key and IV. Alice composes a message and creates a network stream (perhaps a named pipe or network email) on which to send the message. Next, she encrypts the text using the key and IV, and sends the encrypted message and IV to Bob over the intranet. Bob receives the encrypted text and decrypts it by using the IV and previously agreed upon key. If the transmission is intercepted, the interceptor cannot recover the original message, because they do not know the key. In this scenario, only the key must remain secret. In a real world scenario, either Alice or Bob generates a secret key and uses public-key (asymmetric) encryption to transfer the secret (symmetric) key to the other party. For more information about public-key encryption, see the next section.
 
 The .NET Framework provides the following classes that implement secret-key encryption algorithms:
 
@@ -265,6 +266,6 @@ The .NET Framework 3.5 also includes a variety of supporting CNG classes, such a
 
 |Title|Description|
 |-----------|-----------------|
-|[Cryptography Model](../../../docs/standard/security/cryptography-model.md)|Describes how cryptography is implemented in the base class library.|
-|[Walkthrough: Creating a Cryptographic Application](../../../docs/standard/security/walkthrough-creating-a-cryptographic-application.md)|Demonstrates basic encryption and decryption tasks.|
-|[Configuring Cryptography Classes](../../../docs/framework/configure-apps/configure-cryptography-classes.md)|Describes how to map algorithm names to cryptographic classes and map object identifiers to a cryptographic algorithm.|
+|[Cryptography Model](cryptography-model.md)|Describes how cryptography is implemented in the base class library.|
+|[Walkthrough: Creating a Cryptographic Application](walkthrough-creating-a-cryptographic-application.md)|Demonstrates basic encryption and decryption tasks.|
+|[Configuring Cryptography Classes](../../framework/configure-apps/configure-cryptography-classes.md)|Describes how to map algorithm names to cryptographic classes and map object identifiers to a cryptographic algorithm.|

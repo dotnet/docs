@@ -53,4 +53,4 @@ HRESULT GetDebugInfo(
   
 ## See also
 
-- [ISymUnmanagedWriter Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedwriter-interface.md)
+- [ISymUnmanagedWriter Interface](isymunmanagedwriter-interface.md)

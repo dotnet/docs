@@ -217,7 +217,7 @@ class DataGridViewMisc : Form
     //<Snippet085>
     private void setCurrentCellButton_Click(object sender, System.EventArgs e)
     {
-        // Set the current cell to the cell in column 1, Row 0. 
+        // Set the current cell to the cell in column 1, Row 0.
         this.dataGridView1.CurrentCell = this.dataGridView1[1,0];
     }
     //</Snippet085>
@@ -399,16 +399,16 @@ class DataGridViewMisc : Form
         dataGridView1.SelectAll();
     }
     //</Snippet180>
-    
+
     //<Snippet190>
-    private void dataGridView1_CellEnter(object sender, 
+    private void dataGridView1_CellEnter(object sender,
         DataGridViewCellEventArgs e)
     {
         dataGridView1[e.ColumnIndex, e.RowIndex].Style
             .SelectionBackColor = Color.Blue;
     }
 
-    private void dataGridView1_CellLeave(object sender, 
+    private void dataGridView1_CellLeave(object sender,
         DataGridViewCellEventArgs e)
     {
         dataGridView1[e.ColumnIndex, e.RowIndex].Style
@@ -417,7 +417,7 @@ class DataGridViewMisc : Form
     //</Snippet190>
 
     //<Snippet200>
-    private void dataGridView1_RowEnter(object sender, 
+    private void dataGridView1_RowEnter(object sender,
         DataGridViewCellEventArgs e)
     {
         for (int i = 0; i < dataGridView1.Rows[e.RowIndex].Cells.Count; i++)
@@ -426,7 +426,7 @@ class DataGridViewMisc : Form
         }
     }
 
-    private void dataGridView1_RowLeave(object sender, 
+    private void dataGridView1_RowLeave(object sender,
         DataGridViewCellEventArgs e)
     {
         for (int i = 0; i < dataGridView1.Rows[e.RowIndex].Cells.Count; i++)
@@ -437,7 +437,7 @@ class DataGridViewMisc : Form
     //</Snippet200>
 
     //<Snippet210>
-    private void dataGridView1_EditingControlShowing(object sender, 
+    private void dataGridView1_EditingControlShowing(object sender,
         DataGridViewEditingControlShowingEventArgs e)
     {
         e.CellStyle.BackColor = Color.Aquamarine;
@@ -467,7 +467,7 @@ class DataGridViewMisc : Form
         //<Snippet230>
         // Retrieve the cell value for the cell at column 3, row 7.
         String testValue1 = (String)dataGridView1[3, 7].Value;
-        
+
         // Retrieve the cell value for the cell in the Name column at row 4.
         String testValue2 = (String)dataGridView1["Name", 4].Value;
         //</Snippet230>

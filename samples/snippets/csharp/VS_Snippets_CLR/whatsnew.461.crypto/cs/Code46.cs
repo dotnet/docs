@@ -51,6 +51,6 @@ public class Net46Code
         ecDsaCng.HashAlgorithm = CngAlgorithm.Sha512;
         return ecDsaCng.SignData(data);
     }
-}   
+}
 // </Snippet2>
 }

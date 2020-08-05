@@ -73,7 +73,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
             </clientCredentials>  
           </behavior>  
         </endpointBehaviors>  
-      </behaviors>    
+      </behaviors>
     </system.serviceModel>  
     ```  
   

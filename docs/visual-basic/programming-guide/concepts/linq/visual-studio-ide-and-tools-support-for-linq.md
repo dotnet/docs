@@ -20,4 +20,4 @@ The Visual Studio integrated development environment (IDE) provides the followin
   
 ## See also
 
-- [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)
+- [Language-Integrated Query (LINQ) (Visual Basic)](index.md)

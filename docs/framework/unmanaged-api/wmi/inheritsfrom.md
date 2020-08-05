@@ -19,15 +19,15 @@ topic_type:
 Determines whether the current class or instance derives from a specified parent class.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
 ```cpp
 HRESULT InheritsFrom (
-   [in] int               vFunc, 
-   [in] IWbemClassObject* ptr, 
-   [in] LPCWSTR           wszAncestor 
-); 
+   [in] int               vFunc,
+   [in] IWbemClassObject* ptr,
+   [in] LPCWSTR           wszAncestor
+);
 ```  
 
 ## Parameters

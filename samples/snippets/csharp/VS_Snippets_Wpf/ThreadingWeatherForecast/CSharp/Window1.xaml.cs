@@ -28,19 +28,19 @@ namespace SDKSamples
         public Window1(): base()
         {
             InitializeComponent();
-        }  
+        }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // Load the storyboard resources.
-            showClockFaceStoryboard = 
+            showClockFaceStoryboard =
                 (Storyboard)this.Resources["ShowClockFaceStoryboard"];
-            hideClockFaceStoryboard = 
+            hideClockFaceStoryboard =
                 (Storyboard)this.Resources["HideClockFaceStoryboard"];
-            showWeatherImageStoryboard = 
+            showWeatherImageStoryboard =
                 (Storyboard)this.Resources["ShowWeatherImageStoryboard"];
-            hideWeatherImageStoryboard = 
-                (Storyboard)this.Resources["HideWeatherImageStoryboard"];   
+            hideWeatherImageStoryboard =
+                (Storyboard)this.Resources["HideWeatherImageStoryboard"];
         }
 
         //<SnippetThreadingWeatherButtonHandler>
@@ -51,7 +51,7 @@ namespace SDKSamples
             fetchButton.Content = "Contacting Server";
             weatherText.Text = "";
             hideWeatherImageStoryboard.Begin(this);
-            
+
             // Start fetching the weather forecast asynchronously.
             NoArgDelegate fetcher = new NoArgDelegate(
                 this.FetchWeatherFromServer);
@@ -64,8 +64,8 @@ namespace SDKSamples
         private void FetchWeatherFromServer()
         {
             // Simulate the delay from network access.
-            Thread.Sleep(4000);              
-            
+            Thread.Sleep(4000);
+
             // Tried and true method for weather forecasting - random numbers.
             Random rand = new Random();
             String weather;
@@ -83,7 +83,7 @@ namespace SDKSamples
             // Schedule the update function in the UI thread.
             tomorrowsWeather.Dispatcher.BeginInvoke(
                 System.Windows.Threading.DispatcherPriority.Normal,
-                new OneArgDelegate(UpdateUserInterface), 
+                new OneArgDelegate(UpdateUserInterface),
                 weather);
             //</SnippetThreadingWeatherDispatcherOneArge>
         }
@@ -91,10 +91,10 @@ namespace SDKSamples
 
         //<SnippetThreadingWeatherUpdateUI>
         private void UpdateUserInterface(String weather)
-        {    
+        {
             //Set the weather image
             if (weather == "sunny")
-            {       
+            {
                 weatherIndicatorImage.Source = (ImageSource)this.Resources[
                     "SunnyImageSource"];
             }
@@ -111,21 +111,21 @@ namespace SDKSamples
             //Update UI text
             fetchButton.IsEnabled = true;
             fetchButton.Content = "Fetch Forecast";
-            weatherText.Text = weather;     
+            weatherText.Text = weather;
         }
         //</SnippetThreadingWeatherUpdateUI>
 
         private void HideClockFaceStoryboard_Completed(object sender,
             EventArgs args)
-        {         
+        {
             showWeatherImageStoryboard.Begin(this);
         }
-        
+
         private void HideWeatherImageStoryboard_Completed(object sender,
             EventArgs args)
-        {           
+        {
             showClockFaceStoryboard.Begin(this, true);
-        }        
+        }
     }
 }
 //</SnippetThreadingWeatherCodeBehind>

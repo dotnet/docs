@@ -2,7 +2,7 @@
 using System.Security.Policy;
 
 class Test {
-   
+
    public static void Main() {
       // <Snippet1>
       // Set up the AppDomainSetup
@@ -16,7 +16,7 @@ class Test {
       evidence.AddAssembly("(some assembly)");
       evidence.AddHost("(some host)");
 
-      // Create the AppDomain      
+      // Create the AppDomain
       AppDomain newDomain = AppDomain.CreateDomain("newDomain", evidence, setup);
       // </Snippet1>
    }

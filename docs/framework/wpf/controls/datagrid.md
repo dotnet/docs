@@ -53,7 +53,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to display and e
 ## See also
 
 - <xref:System.Windows.Controls.DataGrid>
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Data Templating Overview](../data/data-templating-overview.md)
 - [Controls](index.md)

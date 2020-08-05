@@ -23,7 +23,7 @@ Represents a collection of queries that are used to track requests to cancel a c
   <trackingProfile name="Name">
     <workflow>
       <cancelRequestQueries>
-        <cancelRequestQuery activityName="String" 
+        <cancelRequestQuery activityName="String"
                             childActivityName="String"/>
       </cancelRequestQueries>
     </workflow>

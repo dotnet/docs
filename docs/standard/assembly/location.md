@@ -1,5 +1,6 @@
 ---
 title: "Assembly location"
+description: The location of a .NET assembly determines how the CLR finds it and whether it can be shared with other assemblies. 
 ms.date: "08/20/2019"
 helpviewer_keywords:
   - "locating assemblies"

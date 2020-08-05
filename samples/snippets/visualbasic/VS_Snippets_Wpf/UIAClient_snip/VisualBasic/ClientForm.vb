@@ -1,4 +1,4 @@
-﻿ '************************************************************************************************
+﻿'************************************************************************************************
 ' *
 ' * File: ClientForm.cs
 ' *
@@ -832,13 +832,13 @@ Class Form1
 
         ' <Snippet117>
         ' elementCollection is an AutomationElementCollection.
-        Dim elementArray(elementCollection.Count) As AutomationElement
+        Dim elementArray(elementCollection.Count - 1) As AutomationElement
         elementCollection.CopyTo(elementArray, 0)
         ' </Snippet117>
 
         ' <Snippet118>
         ' elementCollection is an AutomationElementCollection.
-        Dim elementUntypedArray(elementCollection.Count) As Object
+        Dim elementUntypedArray(elementCollection.Count - 1) As Object
         elementCollection.CopyTo(elementUntypedArray, 0)
         ' </Snippet118>
 

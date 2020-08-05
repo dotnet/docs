@@ -17,24 +17,24 @@ This section describes the interfaces that unmanaged hosts can use to integrate 
  The .NET Framework 4 hosting interfaces supersede the .NET Framework 2.0 interfaces.
   
 ## In This Section  
- [Deprecated CLR Hosting Interfaces and Coclasses](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-interfaces-and-coclasses.md)  
+ [Deprecated CLR Hosting Interfaces and Coclasses](deprecated-clr-hosting-interfaces-and-coclasses.md)  
  Describes the hosting interfaces introduced in the .NET Framework versions 1.0 and 1.1.  
   
- [CLR Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces.md)  
+ [CLR Hosting Interfaces](clr-hosting-interfaces.md)  
  Describes the hosting interfaces introduced in the .NET Framework version 2.0.  
   
- [CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5](../../../../docs/framework/unmanaged-api/hosting/clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)  
+ [CLR Hosting Interfaces Added in the .NET Framework 4 and 4.5](clr-hosting-interfaces-added-in-the-net-framework-4-and-4-5.md)  
  Describes the hosting interfaces introduced in the .NET Framework 4.  
   
 ## Related Sections  
- [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)  
+ [Hosting Coclasses](hosting-coclasses.md)  
   
- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)  
+ [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)  
   
- [Hosting Enumerations](../../../../docs/framework/unmanaged-api/hosting/hosting-enumerations.md)  
+ [Hosting Enumerations](hosting-enumerations.md)  
   
- [Hosting Structures](../../../../docs/framework/unmanaged-api/hosting/hosting-structures.md)  
+ [Hosting Structures](hosting-structures.md)  
   
- [Hosting](../../../../docs/framework/unmanaged-api/hosting/index.md)  
+ [Hosting](index.md)  
   
  [Runtime Hosts](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/a51xd4ze(v=vs.100))

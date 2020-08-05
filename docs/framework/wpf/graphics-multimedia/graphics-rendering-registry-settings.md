@@ -1,5 +1,6 @@
 ---
 title: "Graphics Rendering Registry Settings"
+description: Find out how to use registry settings for troubleshooting, debugging, and product support purposes in the Windows Presentation Foundation (WPF).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "rendering graphics [WPF], registry settings"
@@ -12,28 +13,28 @@ ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 # Graphics Rendering Registry Settings
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics rendering registry settings that affect [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
 
-<a name="overview"></a>   
+<a name="overview"></a>
 ## When to Use Graphics Rendering Registry Settings  
  These registry settings are provided for troubleshooting, debugging, and product support purposes. Because changes to the registry affect all [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, your application should never alter these registry keys automatically, or during installation.  
   
-<a name="xpdmandwddm"></a>   
+<a name="xpdmandwddm"></a>
 ## What are XPDM and WDDM?  
  Some of the graphics rendering registry settings have different default values, depending on whether your video card uses an XPDM or WDDM driver. XPDM is the Microsoft Windows XP Display Driver Model and WDDM is the Windows Display Driver Model. WDDM is available on computers running Windows Vista and Windows 7. XPDM is available on computers running Windows Vista, Microsoft Windows XP, and Microsoft Windows Server 2003. For more information about WDDM, see [Windows Display Driver Model (WDDM) Design Guide](/windows-hardware/drivers/display/windows-vista-display-driver-model-design-guide).  
   
-<a name="registry_settings"></a>   
+<a name="registry_settings"></a>
 ## Registry Settings  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides four registry settings for controlling [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering:  
   
 |Setting|Description|  
 |-------------|-----------------|  
 |**Disable Hardware Acceleration Option**|Specifies whether hardware acceleration should be enabled.|  
-|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing 3-D content.|  
+|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing 3D content.|  
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
 |**Use Reference Rasterizer Option**|Specifies whether [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] should use the reference rasterizer.|  
   
  These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor.  
   
-<a name="disablehardwareacceleration"></a>   
+<a name="disablehardwareacceleration"></a>
 ## Disable Hardware Acceleration Option  
   
 |Registry key|Value type|  
@@ -44,20 +45,20 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The **disable hardware acceleration option** is a DWORD value that is either 0 or 1. A value of 1 disables hardware acceleration. A value of 0 enables hardware acceleration, provided the system meets hardware acceleration requirements; for more information, see [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md).  
   
-<a name="maxmultisample"></a>   
+<a name="maxmultisample"></a>
 ## Maximum Multisample Value  
   
 |Registry key|Value type|  
 |------------------|----------------|  
 |`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics\MaxMultisampleType`|DWORD|  
   
- The **maximum multisample value** enables you to adjust the maximum amount of antialiasing of 3-D content. Use this level to disable 3-D antialiasing in Windows Vista.  
+ The **maximum multisample value** enables you to adjust the maximum amount of antialiasing of 3D content. Use this level to disable 3D antialiasing in Windows Vista.  
   
- The **maximum multisample value** is a DWORD value that ranges from 0 to 16. A value of 0 specifies that multisample antialiasing of 3-D content should be disabled, and a value of 16 will attempt to use up to 16x multisample antialiasing, if supported by the video card. Beware that setting this registry key value on computers using XPDM drivers will cause applications to use a large amount of additional video memory, decrease the performance of 3-D rendering, and has the potential to introduce rendering errors and stability problems.  
+ The **maximum multisample value** is a DWORD value that ranges from 0 to 16. A value of 0 specifies that multisample antialiasing of 3D content should be disabled, and a value of 16 will attempt to use up to 16x multisample antialiasing, if supported by the video card. Beware that setting this registry key value on computers using XPDM drivers will cause applications to use a large amount of additional video memory, decrease the performance of 3D rendering, and has the potential to introduce rendering errors and stability problems.  
   
  When this registry key is not set, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] defaults to 0 for XPDM drivers and 4 for WDDM drivers.  
   
-<a name="requiredvideodriverdatesetting"></a>   
+<a name="requiredvideodriverdatesetting"></a>
 ## Required Video Driver Date Setting  
   
 |Registry key|Value type|  
@@ -76,7 +77,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  Where *YYYY* is the four-digit year, *MM* is the two-digit month, and *DD* is the two digit day. When this value is unset, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses November, 2004 as its required video driver date.  
   
-<a name="usereferencerasterizeroption"></a>   
+<a name="usereferencerasterizeroption"></a>
 ## Use Reference Rasterizer Option  
   
 |Registry key|Value type|  

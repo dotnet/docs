@@ -71,7 +71,7 @@ typedef enum CorAssemblyFlags {
 |`afContentType_WindowsRuntime`|Indicates the Windows Runtime content type.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -79,4 +79,4 @@ typedef enum CorAssemblyFlags {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

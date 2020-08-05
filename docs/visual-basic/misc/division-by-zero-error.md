@@ -16,4 +16,4 @@ The value of an expression used as a divisor is zero.
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

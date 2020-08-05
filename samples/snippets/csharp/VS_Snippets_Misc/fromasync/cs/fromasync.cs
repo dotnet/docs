@@ -17,7 +17,7 @@ namespace specialNamespaceForOneMethodSignature
         public TResult Tvalue;
     }
     class Dummy <TResult>
-    {  
+    {
             // <snippet01>
             public Task<TResult> FromAsync<TArg1, TArg2, TArg3>(
                 Func<TArg1, TArg2, TArg3, AsyncCallback, object, IAsyncResult> beginMethod, //BeginRead
@@ -26,7 +26,7 @@ namespace specialNamespaceForOneMethodSignature
                  TArg2 arg2, // the offset in arg1 at which to start writing data
                  TArg3 arg3, // the maximum number of bytes to read
                  object state // optional state information
-                ) 
+                )
                 //</snippet01>
         { return new Task<TResult>(); }
     }
@@ -106,7 +106,7 @@ namespace APM_Task
         //</snippet07>
     }
 
-    //<snippet08> 
+    //<snippet08>
     class WebDataDownloader
     {
 
@@ -170,7 +170,7 @@ namespace APM_Task
             }
             Console.ReadKey();
         }
-               
+
         Task<string[]> GetWordCounts(string[] urls, string name, CancellationToken token)
         {
             TaskCompletionSource<string[]> tcs = new TaskCompletionSource<string[]>();
@@ -184,7 +184,7 @@ namespace APM_Task
                     {
                         if (wc != null)
                             wc.CancelAsync();
-                    }                    
+                    }
                 });
 
             object m_lock = new object();
@@ -225,7 +225,7 @@ namespace APM_Task
                                           select word)
                                          .Count();
 
-                         // Associate the results with the url, and add new string to the array that 
+                         // Associate the results with the url, and add new string to the array that
                          // the underlying Task object will return in its Result property.
                          results.Add(String.Format("{0} has {1} instances of {2}", args.UserState, nameCount, name));
                      }
@@ -248,7 +248,7 @@ namespace APM_Task
                 try
                 {
                     address = new Uri(urls[i]);
-                    // Pass the address, and also use it for the userToken 
+                    // Pass the address, and also use it for the userToken
                     // to identify the page when the delegate is invoked.
                     webClients[i].DownloadStringAsync(address, address);
                 }
@@ -267,7 +267,7 @@ namespace APM_Task
             // in the try-catch block there.
             return tcs.Task;
         }
-        //</snippet08>    
+        //</snippet08>
     }
 
     #region snippet09
@@ -361,7 +361,7 @@ class FileStreamDemo
         // for the antecedent task to complete.
         // ...
 
-        // Add the continuation, which returns a Task<string>. 
+        // Add the continuation, which returns a Task<string>.
         return task.ContinueWith((antecedent) =>
         {
             fs.Close();
@@ -389,9 +389,9 @@ class FileStreamDemo
         void ShowCallingFromAsync()
         {
             string path = @"\\docbuild2\public\Main\Logs\DllDiffReport\DllDiffReport_BetweenInBuildAndInProduct.html";
-            //<snippet04>            
-           
-            Task<string> t = GetFileStringAsync(path);          
+            //<snippet04>
+
+            Task<string> t = GetFileStringAsync(path);
 
             // Do some other work:
             // ...
@@ -403,14 +403,14 @@ class FileStreamDemo
             catch (AggregateException ae)
             {
                 Console.WriteLine(ae.InnerException.Message);
-            }            
+            }
             //</snippet04>
 
             Console.ReadLine();
         }
 
-        //not used???  
-        //<snippet12>     
+        //not used???
+        //<snippet12>
         public static Task<int> GetFileDataAsync(string path, ref byte[] data)
         {
             // Error handling omitted for brevity...
@@ -439,7 +439,7 @@ class FileStreamDemo
             for(int i = 0; i < 10; i++)
                 Console.Write("Working... ");
 
-            var result = 
+            var result =
             t.ContinueWith((antecedent) =>
             {
                 // Error handling omitted...
@@ -477,9 +477,9 @@ class FileStreamDemo
 
         //<snippet05>
         public Task<string> GetFileStringAsync2(string path)
-        {             
+        {
             FileInfo fi = new FileInfo(path);
-            byte[] data = new byte[fi.Length];                       
+            byte[] data = new byte[fi.Length];
             MyCustomState state = GetCustomState();
             FileStream fs = new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, data.Length, true);
             // We still pass null for the last parameter because
@@ -528,7 +528,7 @@ class FileStreamDemo
                 fileData = new byte[0x1000];
                 fs = new FileStream(filesToRead[i], FileMode.Open, FileAccess.Read, FileShare.Read, fileData.Length, true);
 
-                // By adding the continuation here, the 
+                // By adding the continuation here, the
                 // Result of each task will be a string.
                 tasks[i] = Task<int>.Factory.FromAsync(
                          fs.BeginRead, fs.EndRead, fileData, 0, fileData.Length, null)
@@ -547,7 +547,7 @@ class FileStreamDemo
                              });
             }
 
-            // Wait for all tasks to complete. 
+            // Wait for all tasks to complete.
             return Task<string>.Factory.ContinueWhenAll(tasks, (data) =>
             {
                 // Propagate all exceptions and mark all faulted tasks as observed.

@@ -51,8 +51,8 @@ public interface IMyService
     {  
         public IEnumerable<string> GetValues(string DisplayName)  
         {  
-            return new string[]  {   
-                DisplayName + " One",   
+            return new string[]  {
+                DisplayName + " One",
                 DisplayName + " Two",  
                 "Three " + DisplayName  
             } ;  
@@ -81,7 +81,7 @@ protected override void OnModelItemChanged(object newItem)
                 listBox1.ItemsSource = servInstance.GetValues(this.ModelItem.Properties["DisplayName"].ComputedValue.ToString());  
             }  
             );  
-        subscribed = true;   
+        subscribed = true;
     }  
 }  
 ```  

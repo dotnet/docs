@@ -18,7 +18,7 @@ This topic shows how to find all attributes of the siblings of the context node.
 ```csharp  
 XDocument books = XDocument.Load("Books.xml");  
   
-XElement book =   
+XElement book =
     books  
     .Root  
     .Element("Book");  

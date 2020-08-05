@@ -33,4 +33,4 @@ HRESULT Destroy();
   
 ## See also
 
-- [ISymUnmanagedDispose Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanageddispose-interface.md)
+- [ISymUnmanagedDispose Interface](isymunmanageddispose-interface.md)

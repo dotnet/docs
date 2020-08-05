@@ -39,7 +39,7 @@ HRESULT ThreadNameChanged(
  [in] The new name of the thread. The name is not null-terminated.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

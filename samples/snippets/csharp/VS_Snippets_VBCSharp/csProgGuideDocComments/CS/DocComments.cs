@@ -2,7 +2,7 @@
 namespace Wrap1
 {
     //<Snippet1>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class TestClass
     public class TestClass
@@ -32,7 +32,7 @@ namespace Wrap1
 namespace Wrap2
 {
     //<Snippet2>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class TestClass
     public class TestClass
@@ -54,7 +54,7 @@ namespace Wrap2
 //-----------------------------------------------------------------------------
 //<Snippet3>
 // Save this file as CRefTest.cs
-// Compile with: csc CRefTest.cs -doc:Results.xml 
+// Compile with: csc CRefTest.cs -doc:Results.xml
 
 namespace TestNamespace
 {
@@ -78,12 +78,12 @@ namespace TestNamespace
         /// <summary>
         /// The GetZero method.
         /// </summary>
-        /// <example> 
+        /// <example>
         /// This sample shows how to call the <see cref="GetZero"/> method.
         /// <code>
-        /// class TestClass 
+        /// class TestClass
         /// {
-        ///     static int Main() 
+        ///     static int Main()
         ///     {
         ///         return GetZero();
         ///     }
@@ -98,7 +98,7 @@ namespace TestNamespace
         /// <summary>
         /// The GetGenericValue method.
         /// </summary>
-        /// <remarks> 
+        /// <remarks>
         /// This sample shows how to specify the <see cref="GetGenericValue"/> method as a cref attribute.
         /// </remarks>
 
@@ -111,7 +111,7 @@ namespace TestNamespace
     /// <summary>
     /// GenericClass.
     /// </summary>
-    /// <remarks> 
+    /// <remarks>
     /// This example shows how to specify the <see cref="GenericClass{T}"/> type as a cref attribute.
     /// </remarks>
     class GenericClass<T>
@@ -131,7 +131,7 @@ namespace TestNamespace
 
 namespace Wrap3
 {
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class TestClass
     public class TestClass
@@ -141,9 +141,9 @@ namespace Wrap3
         /// </summary>
         /// <example> This sample shows how to call the <see cref="TestClass.GetZero"/> method.
         /// <code>
-        /// class TestClass 
+        /// class TestClass
         /// {
-        ///     static int Main() 
+        ///     static int Main()
         ///     {
         ///         return GetZero();
         ///     }
@@ -166,7 +166,7 @@ namespace Wrap3
 namespace Wrap4
 {
     //<Snippet4>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// Comment for class
     public class EClass : System.Exception
@@ -195,7 +195,7 @@ namespace Wrap4
 namespace Wrap5
 {
     //<Snippet5>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// <include file='xml_include_tag.doc' path='MyDocs/MyMembers[@name="test"]/*' />
     class Test
@@ -221,7 +221,7 @@ namespace Wrap5
 namespace Wrap6
 {
     //<Snippet6>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class TestClass
     public class TestClass
@@ -247,12 +247,12 @@ namespace Wrap6
 namespace Wrap7
 {
     //<Snippet7>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class TestClass
     public class TestClass
     {
-        /// <summary>DoWork is a method in the TestClass class.  
+        /// <summary>DoWork is a method in the TestClass class.
         /// The <paramref name="int1"/> parameter takes a number.
         /// </summary>
         public static void DoWork(int int1)
@@ -271,7 +271,7 @@ namespace Wrap7
 namespace Wrap8
 {
     //<Snippet8>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     class TestClass
     {
@@ -291,7 +291,7 @@ namespace Wrap8
 namespace Wrap9
 {
     //<Snippet9>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// <summary>
     /// You may have some primary information about this class.
@@ -313,7 +313,7 @@ namespace Wrap9
 namespace Wrap10
 {
     //<Snippet10>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class TestClass
     public class TestClass
@@ -336,7 +336,7 @@ namespace Wrap10
 namespace Wrap11
 {
     //<Snippet11>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     // the following cref shows how to specify the reference, such that,
     // the compiler will resolve the reference
@@ -344,7 +344,7 @@ namespace Wrap11
     /// </summary>
     class A { }
 
-    // the following cref shows another way to specify the reference, 
+    // the following cref shows another way to specify the reference,
     // such that, the compiler will resolve the reference
     // <summary cref="C &lt; T &gt;">
 
@@ -357,7 +357,7 @@ namespace Wrap11
     /// </summary>
     /// <typeparam name="T"></typeparam>
     class C<T> { }
-    
+
     class Program
     {
         static void Main() { }
@@ -369,7 +369,7 @@ namespace Wrap11
 namespace Wrap12
 {
     //<Snippet12>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class TestClass
     public class TestClass
@@ -394,7 +394,7 @@ namespace Wrap12
 namespace Wrap13
 {
     //<Snippet13>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// comment for class
     public class TestClass
@@ -415,7 +415,7 @@ namespace Wrap13
 namespace Wrap14
 {
     //<Snippet14>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// text for class Employee
     public class Employee
@@ -500,7 +500,7 @@ namespace Wrap15
         /// </summary>
         /// <param name="s"> Parameter description for s goes here.</param>
         /// <seealso cref="System.String">
-        /// You can use the cref attribute on any tag to reference a type or member 
+        /// You can use the cref attribute on any tag to reference a type or member
         /// and the compiler will check that the reference exists.
         /// </seealso>
         public void SomeMethod(string s)
@@ -563,7 +563,7 @@ namespace Wrap15
 namespace Wrap16
 {
     //<Snippet16>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// <summary>
     /// You may have some primary information about this class.
@@ -583,7 +583,7 @@ namespace Wrap16
 namespace Wrap17
 {
     //<Snippet17>
-    // compile with: -doc:DocFileName.xml 
+    // compile with: -doc:DocFileName.xml
 
     /// <summary>
     /// You may have some primary information about this interface.

@@ -20,4 +20,4 @@ Provides properties for getting information about the computer's memory, loaded 
   
 ## See also
 
-- [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)
+- [My.Computer Object](my-computer-object.md)

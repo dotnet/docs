@@ -19,7 +19,7 @@
     class OrderableListPartitioner<TSource> : OrderablePartitioner<TSource>
     {
         private readonly IList<TSource> m_input;
-      
+
         // Must override to return true.
         public override bool SupportsDynamicPartitions => true;
 
@@ -54,7 +54,7 @@
             {
                 while (true)
                 {
-                    // Each task gets the next item in the list. The index is 
+                    // Each task gets the next item in the list. The index is
                     // incremented in a thread-safe manner to avoid races.
                     int elemIndex = Interlocked.Increment(ref m_pos) - 1;
 

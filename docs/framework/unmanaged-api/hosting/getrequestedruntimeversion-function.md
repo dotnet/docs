@@ -25,9 +25,9 @@ Gets the version number of the common language runtime (CLR) requested by the sp
   
 ```cpp  
 HRESULT GetRequestedRuntimeVersion (  
-    [in]  LPWSTR  pExe,   
-    [out] LPWSTR  pVersion,   
-    [in]  DWORD   cchBuffer,   
+    [in]  LPWSTR  pExe,
+    [out] LPWSTR  pVersion,
+    [in]  DWORD   cchBuffer,
     [out] DWORD  *pdwLength  
 );  
 ```  
@@ -55,7 +55,7 @@ HRESULT GetRequestedRuntimeVersion (
 |E_POINTER|`pdwLength` is null.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -65,6 +65,6 @@ HRESULT GetRequestedRuntimeVersion (
   
 ## See also
 
-- [GetRequestedRuntimeInfo Function](../../../../docs/framework/unmanaged-api/hosting/getrequestedruntimeinfo-function.md)
-- [GetVersionFromProcess Function](../../../../docs/framework/unmanaged-api/hosting/getversionfromprocess-function.md)
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [GetRequestedRuntimeInfo Function](getrequestedruntimeinfo-function.md)
+- [GetVersionFromProcess Function](getversionfromprocess-function.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

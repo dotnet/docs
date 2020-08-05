@@ -14,6 +14,7 @@ namespace operators
             Arrays();
             Indexers();
             NullConditional();
+            NullConditionalWithNullCoalescing();
             Invocation();
             IndexFromEnd();
             Ranges();
@@ -96,6 +97,24 @@ namespace operators
             // </SnippetNullConditional>
         }
 
+        private static void NullConditionalWithNullCoalescing()
+        {
+            // <SnippetNullConditionalWithNullCoalescing>
+            int GetSumOfFirstTwoOrDefault(int[] numbers)
+            {
+                if ((numbers?.Length ?? 0) < 2)
+                {
+                    return 0;
+                }
+                return numbers[0] + numbers[1];
+            }
+
+            Console.WriteLine(GetSumOfFirstTwoOrDefault(null));  // output: 0
+            Console.WriteLine(GetSumOfFirstTwoOrDefault(new int[0]));  // output: 0
+            Console.WriteLine(GetSumOfFirstTwoOrDefault(new[] { 3, 4, 5 }));  // output: 7
+            // </SnippetNullConditionalWithNullCoalescing>
+        }
+
         private static void Invocation()
         {
             // <SnippetInvocation>
@@ -121,7 +140,7 @@ namespace operators
             var lines = new List<string> { "one", "two", "three", "four" };
             string prelast = lines[^2];
             Console.WriteLine(prelast);  // output: three
-            
+
             string word = "Twenty";
             Index toFirst = ^word.Length;
             char first = word[toFirst];

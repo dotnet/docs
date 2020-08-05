@@ -48,7 +48,7 @@ When the `SelectCommand` property is dynamically specified at run time, such as 
  To automatically generate SQL statements for a `DataAdapter`, first set the `SelectCommand` property of the `DataAdapter`, then create a `CommandBuilder` object, and specify as an argument the `DataAdapter` for which the `CommandBuilder` will automatically generate SQL statements.  
   
 ```vb  
-' Assumes that connection is a valid SqlConnection object   
+' Assumes that connection is a valid SqlConnection object
 ' inside of a Using block.  
 Dim adapter As SqlDataAdapter = New SqlDataAdapter( _  
   "SELECT * FROM dbo.Customers", connection)  
@@ -98,7 +98,7 @@ adapter.Fill(custDS, "Customers")
   
 ```csharp  
 // Assumes an open SqlConnection and SqlDataAdapter inside of a using block.  
-adapter.SelectCommand.CommandText =   
+adapter.SelectCommand.CommandText =
   "SELECT CustomerID, ContactName FROM dbo.Customers";  
 builder.RefreshSchema();  
   

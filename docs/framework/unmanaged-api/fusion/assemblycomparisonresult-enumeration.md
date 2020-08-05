@@ -22,18 +22,18 @@ Indicates the equivalence of two assembly identities, as determined by the [Comp
   
 ```cpp  
 typedef enum _tagAssemblyComparisonResult {  
-    ACR_Unknown,   
+    ACR_Unknown,
     ACR_EquivalentFullMatch,  
     ACR_EquivalentWeakNamed,  
     ACR_EquivalentFXUnified,  
-    ACR_EquivalentUnified,    
+    ACR_EquivalentUnified,
     ACR_NonEquivalentVersion,  
-    ACR_NonEquivalent,      
+    ACR_NonEquivalent,
     ACR_EquivalentPartialMatch,  
-    ACR_EquivalentPartialWeakNamed,    
+    ACR_EquivalentPartialWeakNamed,
     ACR_EquivalentPartialUnified,  
     ACR_EquivalentPartialFXUnified,  
-    ACR_NonEquivalentPartialVersion    
+    ACR_NonEquivalentPartialVersion
 } AssemblyComparisonResult;  
 ```  
   

@@ -1,5 +1,6 @@
 ---
 title: Create a Password Text Box with TextBox Control
+description: Learn how to cerate a Windows Forms text that displays placeholder characters while a user types a string.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

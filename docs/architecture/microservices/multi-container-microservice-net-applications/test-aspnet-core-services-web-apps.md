@@ -14,7 +14,7 @@ You need to test how the controller behaves based on valid or invalid inputs, an
 
 - Integration tests. These ensure that component interactions work as expected against external artifacts like databases. Assertions can test component API, UI, or the side effects of actions like database I/O, logging, etc.
 
-- Functional tests for each microservice. These ensure that the application works as expected from the user’s perspective.
+- Functional tests for each microservice. These ensure that the application works as expected from the user's perspective.
 
 - Service tests. These ensure that end-to-end service use cases, including testing multiple services at the same time, are tested. For this type of testing, you need to prepare the environment first. In this case, it means starting the services (for example, by using docker-compose up).
 

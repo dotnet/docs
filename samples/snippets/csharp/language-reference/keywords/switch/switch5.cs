@@ -9,13 +9,13 @@ public class Example
    {
       var values = new List<object>();
       for (int ctr = 0; ctr <= 7; ctr++) {
-         if (ctr == 2) 
+         if (ctr == 2)
             values.Add(DiceLibrary.Roll2());
          else if (ctr == 4)
             values.Add(DiceLibrary.Pass());
-         else   
+         else
             values.Add(DiceLibrary.Roll());
-      }   
+      }
 
       Console.WriteLine($"The sum of { values.Count } die is { DiceLibrary.DiceSum(values) }");
    }
@@ -35,7 +35,7 @@ public static class DiceLibrary
    // Roll two dice.
    public static List<object> Roll2()
    {
-      var rolls = new List<object>();      
+      var rolls = new List<object>();
       rolls.Add(Roll());
       rolls.Add(Roll());
       return rolls;

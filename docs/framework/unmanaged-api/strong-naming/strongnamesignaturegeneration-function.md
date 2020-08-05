@@ -22,7 +22,7 @@ Generates a strong name signature for the specified assembly.
 ## Syntax  
   
 ```cpp  
-BOOLEAN StrongNameSignatureGeneration (   
+BOOLEAN StrongNameSignatureGeneration (
     [in]  LPCWSTR   wszFilePath,  
     [in]  LPCWSTR   wszKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  

@@ -20,9 +20,9 @@ class TestPaint : System.Windows.Forms.Form
     private void InitializeComponent()
     {
         this.SuspendLayout();
-        // 
+        //
         // TestPaint
-        // 
+        //
         this.ClientSize = new System.Drawing.Size(284, 264);
         this.Name = "TestPaint";
         this.Load += new System.EventHandler(this.TestPaint_Load);
@@ -257,7 +257,7 @@ class Box : IDimensions
         lengthInches = length;
         widthInches = width;
     }
-    // Explicit interface member implementation: 
+    // Explicit interface member implementation:
     float IDimensions.GetLength()
     {
         return lengthInches;
@@ -276,15 +276,15 @@ class Box : IDimensions
         // Declare an interface instance dimensions:
         IDimensions dimensions = box1;
 
-        // The following commented lines would produce compilation 
+        // The following commented lines would produce compilation
         // errors because they try to access an explicitly implemented
-        // interface member from a class instance:                   
+        // interface member from a class instance:
         //<Snippet45>
         //System.Console.WriteLine("Length: {0}", box1.GetLength());
         //System.Console.WriteLine("Width: {0}", box1.GetWidth());
         //</Snippet45>
 
-        // Print out the dimensions of the box by calling the methods 
+        // Print out the dimensions of the box by calling the methods
         // from an instance of the interface:
         //<Snippet46>
         System.Console.WriteLine("Length: {0}", dimensions.GetLength());
@@ -650,13 +650,13 @@ namespace ExplicitConversion
     //<Snippet51>
     class Test
     {
-        public void M() 
+        public void M()
         { Console.WriteLine("I'm just a Test"); }
     }
     class Program2
     {
         static void Main()
-        {            
+        {
             System.Collections.ArrayList list = new System.Collections.ArrayList();
             list.Add(new Test());
             list.Add(new Test());
@@ -669,7 +669,7 @@ namespace ExplicitConversion
                 {
                     t.M();
                 }
-            }         
+            }
         }
     }
 
@@ -678,7 +678,7 @@ namespace ExplicitConversion
       I'm just a Test
       I'm just a Test
      */
-    //</Snippet51>  
+    //</Snippet51>
 }
 
 namespace RainyDay
@@ -690,22 +690,22 @@ namespace RainyDay
         {
             //<Snippet52>
             Console.WriteLine("Saving for a rainy day.");
-            //</Snippet52>  
+            //</Snippet52>
 
-            //<Snippet53>    
+            //<Snippet53>
             Console.WriteLine("Saving for a rainy day.");
-            //</Snippet53> 
-            //<Snippet54>    
+            //</Snippet53>
+            //<Snippet54>
             Console.WriteLine("Saving for a rainy day.");
-            //</Snippet54> 
-            //<Snippet55>    
+            //</Snippet54>
+            //<Snippet55>
             Console.WriteLine("Saving for a rainy day.");
-            //</Snippet55> 
-            //<Snippet56>    
+            //</Snippet55>
+            //<Snippet56>
             Console.WriteLine("Saving for a rainy day.");
-            //</Snippet56> 
+            //</Snippet56>
         }
-    }      
+    }
 }
 
 //<snippet70>
@@ -737,7 +737,7 @@ namespace OverrideAndNew
             // Derived - Method1
             // Derived - Method2
 
-            // The following two calls produce different results for the 
+            // The following two calls produce different results for the
             // method defined by using override (Method1) and the
             // method defined by using new (Method2).
             bcdc.Method1();
@@ -961,7 +961,7 @@ namespace OverrideAndNew2
             System.Console.WriteLine("\nTestCars2");
             System.Console.WriteLine("----------");
 
-            var cars = new List<Car> { new Car(), new ConvertibleCar(), 
+            var cars = new List<Car> { new Car(), new ConvertibleCar(),
                 new Minivan() };
 
             foreach (var car in cars)

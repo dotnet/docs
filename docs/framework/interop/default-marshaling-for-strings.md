@@ -1,5 +1,6 @@
 ---
 title: "Default Marshaling for Strings"
+description: Review the default marshaling behavior for strings in interfaces, platform invoke, structures, & fixed-length string buffers in .NET.
 ms.date: "03/20/2019"
 dev_langs:
   - "csharp"

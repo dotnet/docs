@@ -18,12 +18,12 @@ Activity tree inspection is used by workflow application authors to inspect the 
  This sample code provides the following output.  
   
  **List Item 1**  
-**List Item 2**   
-**List Item 3**   
-**List Item 4**   
-**List Item 5**   
-**Items added to collection.**   
-**Sequence**   
+**List Item 2**
+**List Item 3**
+**List Item 4**
+**List Item 5**
+**Items added to collection.**
+**Sequence**
  **Literal<List\<String>>**  
  **While**  
  **AddToCollection\<String>**  

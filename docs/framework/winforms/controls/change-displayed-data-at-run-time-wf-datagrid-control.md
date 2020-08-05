@@ -40,7 +40,7 @@ ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
     ```  
   
     ```cpp  
-    private:   
+    private:
        void button1_Click(System::Object^ sender, System::EventArgs^ e)  
        {  
           dataSet1->Tables[0]->Rows[0][1] = "NewEntry";  

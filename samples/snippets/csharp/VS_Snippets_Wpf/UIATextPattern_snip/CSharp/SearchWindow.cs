@@ -1,24 +1,24 @@
 ﻿/*****************************************************************************************
  * File: FindText.cs
  *
- * Description: 
- *    This sample opens a 'canned' text file (Text.txt) in Notepad and shows how to use 
+ * Description:
+ *    This sample opens a 'canned' text file (Text.txt) in Notepad and shows how to use
  *    UI Automation to find/select text and track text selection changes in the Notepad instance.
- * 
- *    Text.txt should be automatically copied to the same folder as the executable when 
- *    you build the sample. You may have to manually copy this file if you receive an error 
+ *
+ *    Text.txt should be automatically copied to the same folder as the executable when
+ *    you build the sample. You may have to manually copy this file if you receive an error
  *    stating the file cannot be found.
  *
  * Programming Elements:
  *    This sample demonstrates the following UI Automation programming elements from...
- * 
+ *
  *       System.Windows.Automation Namespace:
  *         Automation Class
  *           AddAutomationEventHandler
  *           AddAutomationPropertyChangedEventHandler
  *         WindowPattern Class
  *           WindowClosedEvent field
- *         AutomationPattern Class 
+ *         AutomationPattern Class
  *         AutomationEventHandler Delegate
  *         AutomationElement Class
  *           RootElement property
@@ -43,21 +43,21 @@
  *           Pattern field
  *           ValueProperty field
  *         AutomationPropertyChangedEventHandler Delegate
- * 
+ *
  *       System.Windows.Automation.Searcher Namespace:
  *         PropertyCondition Class
- * 
+ *
  *       System.Windows.Automation.Text Namespace:
  *         TextPatternRange Class
  *           FindText method
  *           Select method
  *         TextPatternRangeEndpoint Enumeration
- *         
+ *
  *
  * This file is part of the Microsoft .NET Framework SDK Code Samples.
- * 
+ *
  * Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
@@ -246,7 +246,7 @@ namespace SDKSample
 
                 // Move the TextPatternRange endpoints for 'Highlight Next' functionality
                 TextPatternRange[] tprSelection = targetTextPattern.GetSelection();
-                
+
                 if (tprSelection[0] != null)
                 {
                     if (_bBackward) documentTextRange.MoveEndpointByRange(TextPatternRangeEndpoint.End, tprSelection[0], TextPatternRangeEndpoint.Start);
@@ -298,7 +298,7 @@ namespace SDKSample
         // Start the text application that we are going to use for the TextPattern sample
         private void btnApp_Click(object sender, RoutedEventArgs e)
         {
-            // Start notepad.exe and use it as our root element.  
+            // Start notepad.exe and use it as our root element.
             // For performance reasons, it's not a good idea to start searching for UI from
             // The root unless the UI you are looking for is very near the root.
             string _sFile = System.Windows.Forms.Application.StartupPath + "\\" + "Text.txt";
@@ -660,7 +660,7 @@ namespace SDKSample
         // <SnippetStartTarget>
         /// -------------------------------------------------------------------
         /// <summary>
-        /// Starts the target application and returns the AutomationElement 
+        /// Starts the target application and returns the AutomationElement
         /// obtained from the targets window handle.
         /// </summary>
         /// <param name="exe">
@@ -707,9 +707,9 @@ namespace SDKSample
                 ControlType.Document);
 
             // The control pattern of interest; in this case 'TextPattern'.
-            PropertyCondition cond2 = 
+            PropertyCondition cond2 =
                 new PropertyCondition(
-                AutomationElement.IsTextPatternAvailableProperty, 
+                AutomationElement.IsTextPatternAvailableProperty,
                 true);
 
             AndCondition textCondition = new AndCondition(cond1, cond2);
@@ -733,7 +733,7 @@ namespace SDKSample
         /// -------------------------------------------------------------------
         private void GetFontNameAttribute(AutomationElement targetTextElement)
         {
-            TextPattern textPattern = 
+            TextPattern textPattern =
                 targetTextElement.GetCurrentPattern(TextPattern.Pattern) as TextPattern;
 
             if (textPattern == null)
@@ -744,7 +744,7 @@ namespace SDKSample
 
             // If the target control doesn't support selection then return.
             // Otherwise, get the text attribute for the selected text.
-            // If there are currently no selections then the text attribute 
+            // If there are currently no selections then the text attribute
             // will be obtained from the insertion point.
             TextPatternRange[] textRanges;
             if (textPattern.SupportedTextSelection == SupportedTextSelection.None)
@@ -764,14 +764,14 @@ namespace SDKSample
 
                 if (textAttribute == TextPattern.MixedAttributeValue)
                 {
-                    // Returns MixedAttributeValue if the value of the 
-                    // specified attribute varies over the text range. 
+                    // Returns MixedAttributeValue if the value of the
+                    // specified attribute varies over the text range.
                     Console.WriteLine("Mixed fonts.");
                 }
                 else if (textAttribute == AutomationElement.NotSupported)
                 {
-                    // Returns NotSupported if the specified attribute is 
-                    // not supported by the provider or the control. 
+                    // Returns NotSupported if the specified attribute is
+                    // not supported by the provider or the control.
                     Console.WriteLine(
                         "FontNameAttribute not supported by provider.");
                 }
@@ -1983,7 +1983,7 @@ namespace SDKSample
         //{
         //    TextPattern textpatternPattern;
         //    Process p = Process.Start("Notepad.exe");
-        //    AutomationElement target = AutomationElement.FromHandle(p.MainWindowHandle); 
+        //    AutomationElement target = AutomationElement.FromHandle(p.MainWindowHandle);
         //    PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
 
         //    AutomationElement textProvider = target.FindFirst(TreeScope.Descendants, cond);
@@ -2074,7 +2074,7 @@ namespace SDKSample
             return currentSelection[0].Compare(currentVisibleRanges[0]);
         }
         // </Snippet1061>
-        // <Snippet1062> 
+        // <Snippet1062>
         private Int32 CompareRangeEndpoints(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
@@ -2093,8 +2093,8 @@ namespace SDKSample
             TextPatternRange[] currentSelections = textpatternPattern.GetSelection();
             TextPatternRange[] currentVisibleRanges = textpatternPattern.GetVisibleRanges();
             return currentSelections[0].CompareEndpoints(
-                TextPatternRangeEndpoint.Start, 
-                currentVisibleRanges[0], 
+                TextPatternRangeEndpoint.Start,
+                currentVisibleRanges[0],
                 TextPatternRangeEndpoint.Start);
         }
         // </Snippet1062>
@@ -2214,8 +2214,8 @@ namespace SDKSample
         /// -------------------------------------------------------------------
         private void GetEmbeddedObjects(AutomationElement targetTextElement)
         {
-            TextPattern textPattern = 
-                targetTextElement.GetCurrentPattern(TextPattern.Pattern) 
+            TextPattern textPattern =
+                targetTextElement.GetCurrentPattern(TextPattern.Pattern)
                 as TextPattern;
 
             if (textPattern == null)
@@ -2239,7 +2239,7 @@ namespace SDKSample
         // <SnippetGetRangeFromChild>
         /// -------------------------------------------------------------------
         /// <summary>
-        /// Obtains a text range spanning an embedded child 
+        /// Obtains a text range spanning an embedded child
         /// of a document control and displays the content of the range.
         /// </summary>
         /// <param name="targetTextElement">
@@ -2276,7 +2276,7 @@ namespace SDKSample
                     TextPatternRange embeddedObjectRange =
                         textPattern.RangeFromChild(embeddedObject);
                     // GetText(-1) retrieves all text in the range.
-                    // Typically a more limited amount of text would be 
+                    // Typically a more limited amount of text would be
                     // retrieved for performance and security reasons.
                     Console.WriteLine(embeddedObjectRange.GetText(-1));
                 }
@@ -2329,7 +2329,7 @@ namespace SDKSample
         // <SnippetMoveSelection>
         /// -------------------------------------------------------------------
         /// <summary>
-        /// Moves a text range a specified number of text units. The text range 
+        /// Moves a text range a specified number of text units. The text range
         /// is the current selection.
         /// </summary>
         /// <param name="targetTextElement">
@@ -2345,23 +2345,23 @@ namespace SDKSample
         /// Direction to move the text range. Valid values are -1, 0, 1.
         /// </param>
         /// <returns>
-        /// The number of text units actually moved. This can be less than the 
-        /// number requested if either of the new text range endpoints is 
-        /// greater than or less than the DocumentRange endpoints. 
+        /// The number of text units actually moved. This can be less than the
+        /// number requested if either of the new text range endpoints is
+        /// greater than or less than the DocumentRange endpoints.
         /// </returns>
         /// <remarks>
-        /// Moving the text range does not modify the text source in any way. 
+        /// Moving the text range does not modify the text source in any way.
         /// Only the text range starting and ending endpoints are modified.
         /// </remarks>
         /// -------------------------------------------------------------------
         private Int32 MoveSelection(
-            AutomationElement targetTextElement, 
+            AutomationElement targetTextElement,
             TextUnit textUnit,
             int units,
             int direction)
         {
             TextPattern textPattern =
-                targetTextElement.GetCurrentPattern(TextPattern.Pattern) 
+                targetTextElement.GetCurrentPattern(TextPattern.Pattern)
                 as TextPattern;
 
             if (textPattern == null)
@@ -2402,7 +2402,7 @@ namespace SDKSample
 
             currentSelection[0].MoveEndpointByRange(
                 TextPatternRangeEndpoint.Start,
-                currentVisibleRanges[0], 
+                currentVisibleRanges[0],
                 TextPatternRangeEndpoint.Start);
         }
         // </Snippet1072>

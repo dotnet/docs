@@ -1,5 +1,6 @@
 ---
 title: XpsDocumentWriter._WritingCompleted Event (System.Windows.Xps)
+description: Understand the XpsDocumentWriter._WritingCompleted event, which occurs when a write operation for an XML Paper Specification (XPS) document finishes in .NET.
 ms.date: 10/17/2017
 api_location:
 - system.printing.dll
@@ -15,7 +16,7 @@ topic_type:
 
 # XpsDocumentWriter.\_WritingCompleted Event
 
-Occurs when a write operation finishes. 
+Occurs when a write operation finishes.
 
 ## Syntax
 

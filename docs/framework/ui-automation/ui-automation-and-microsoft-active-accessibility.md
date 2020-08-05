@@ -16,15 +16,15 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
   
  This topic includes the main features of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] and explains how these features differ from Active Accessibility.  
   
-<a name="Programming_Languages_compare"></a>   
+<a name="Programming_Languages_compare"></a>
 ## Programming Languages  
-<Active Accessibility is based on the Component Object Model (COM) with support for dual interfaces, and is therefore programmable in C/C++, Microsoft Visual Basic 6.0, and scripting languages. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] (including the client-side provider library for standard controls) is written in managed code, and UI Automation client applications are most easily programmed using C# or Visual Basic .NET. UI Automation providers, which are interface implementations, can be written in managed code or in C/C++.  
+Active Accessibility is based on the Component Object Model (COM) with support for dual interfaces, and is therefore programmable in C/C++, Microsoft Visual Basic 6.0, and scripting languages. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] (including the client-side provider library for standard controls) is written in managed code, and UI Automation client applications are most easily programmed using C# or Visual Basic .NET. UI Automation providers, which are interface implementations, can be written in managed code or in C/C++.  
   
-<a name="Support_in_Windows_Presentation_Foundation_"></a>   
+<a name="Support_in_Windows_Presentation_Foundation_"></a>
 ## Support in Windows Presentation Foundation  
  Windows Presentation Foundation (WPF) is the new model for creating user interfaces. WPF elements do not contain native support for Active Accessibility; however, they do support [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], which includes bridging support for Active Accessibility clients. Only clients written specifically for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] can take full advantage of the accessibility features of WPF, such as the rich support for text.  
   
-<a name="Servers_and_Clients_compare"></a>   
+<a name="Servers_and_Clients_compare"></a>
 ## Servers and Clients  
  In Active Accessibility, servers and clients communicate directly, largely through the server's implementation of `IAccessible`.  
   
@@ -32,13 +32,13 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
   
  UI Automation providers can provide information to Active Accessibility clients, and Active Accessibility servers can provide information to UI Automation client applications. However, because Active Accessibility does not expose as much information as [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], the two models are not fully compatible.  
   
-<a name="UI_Elements_compare"></a>   
+<a name="UI_Elements_compare"></a>
 ## UI Elements  
  Active Accessibility presents [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] elements either as an `IAccessible` interface or as a child identifier. It is difficult to compare two `IAccessible` pointers to determine if they refer to the same element.  
   
  In [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], every element is represented as an <xref:System.Windows.Automation.AutomationElement> object. Comparison is done by using the equality operator or the <xref:System.Windows.Automation.AutomationElement.Equals%2A> method, both of which compare the unique runtime identifiers of the elements.  
   
-<a name="Tree_Views_and_Navigation_compare"></a>   
+<a name="Tree_Views_and_Navigation_compare"></a>
 ## Tree Views and Navigation  
  The [!INCLUDE[TLA#tla_ui](../../../includes/tlasharptla-ui-md.md)] elements on the screen can be seen as a tree structure with the desktop as the root, application windows as immediate children, and elements within applications as further descendants.  
   
@@ -52,7 +52,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
   
  Navigation in [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] is more consistent than in Active Accessibility. Some elements such as drop-down lists and pop-up windows appear twice in the Active Accessibility tree, and navigation from them may have unexpected results. It is actually impossible to properly implement Active Accessibility for a rebar control. [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] enables reparenting and repositioning, so that an element can be placed anywhere in the tree despite the hierarchy imposed by ownership of windows.  
   
-<a name="Roles_and_Control_Types"></a>   
+<a name="Roles_and_Control_Types"></a>
 ## Roles and Control Types  
  Active Accessibility uses the `accRole` property (`IAccessible::get_actRole`) to retrieve a description of the element's role in the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)], such as ROLE_SYSTEM_SLIDER or ROLE_SYSTEM_MENUITEM. The role of an element is the main clue to its available functionality. Interaction with a control is achieved by using fixed methods such as `IAccessible::accSelect` and `IAccessible::accDoDefaultAction`. The interaction between the client application and the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] is limited to what can be done through `IAccessible`.  
   
@@ -106,7 +106,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
   
  For more information about the different control types, see [UI Automation Control Types](ui-automation-control-types.md).  
   
-<a name="States_and_Properties"></a>   
+<a name="States_and_Properties"></a>
 ## States and Properties  
  In Active Accessibility, elements support a common set of properties, and some properties (such as `accState`) must describe very different things, depending on the element's role. Servers must implement all methods of `IAccessible` that return a property, even those that are not relevant to the element.  
   
@@ -172,7 +172,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
   
  For a complete list of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] property identifiers, see [UI Automation Properties Overview](ui-automation-properties-overview.md).  
   
-<a name="uiautomation_events_compare"></a>   
+<a name="uiautomation_events_compare"></a>
 ## Events  
  The event mechanism in [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], unlike that in Active Accessibility, does not rely on Windows event routing (which is closely tied in with window handles) and does not require the client application to set up hooks. Subscriptions to events can be fine-tuned not just to particular events but to particular parts of the tree. Providers can also fine-tune their raising of events by keeping track of what events are being listened for.  
   
@@ -237,7 +237,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
 |No equivalent|<xref:System.Windows.Automation.AutomationElement.AsyncContentLoadedEvent> event|  
 |No equivalent|<xref:System.Windows.Automation.AutomationElement.ToolTipOpenedEvent>|  
   
-<a name="Security_compare"></a>   
+<a name="Security_compare"></a>
 ## Security  
  Some `IAccessible` customization scenarios require wrapping a base `IAccessible` and calling through to it. This has security implications, since a partially trusted component should not be an intermediary on a code path.  
   

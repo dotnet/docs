@@ -11,12 +11,12 @@ public class Example
       CultureInfo newUICulture;
       if (current.Name.Equals("sl-SI"))
          newUICulture = new CultureInfo("hr-HR");
-      else   
+      else
          newUICulture = new CultureInfo("sl-SI");
-      
+
       CultureInfo.CurrentUICulture = newUICulture;
-      Console.WriteLine("The current UI culture is now {0}", 
-                        CultureInfo.CurrentUICulture.Name);   
+      Console.WriteLine("The current UI culture is now {0}",
+                        CultureInfo.CurrentUICulture.Name);
    }
 }
 // The example displays output like the following:

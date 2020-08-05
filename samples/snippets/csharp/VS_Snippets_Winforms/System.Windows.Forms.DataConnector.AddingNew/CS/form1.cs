@@ -40,11 +40,11 @@ public class Form1 : System.Windows.Forms.Form
         this.Controls.Add(customersDataGridView);
 
         // Attach an event handler for the AddingNew event.
-        this.customersBindingSource.AddingNew += 
+        this.customersBindingSource.AddingNew +=
             new AddingNewEventHandler(customersBindingSource_AddingNew);
 
         // Attach an event handler for the ListChanged event.
-        this.customersBindingSource.ListChanged += 
+        this.customersBindingSource.ListChanged +=
             new ListChangedEventHandler(customersBindingSource_ListChanged);
     }
     // </snippet6>
@@ -55,9 +55,9 @@ public class Form1 : System.Windows.Forms.Form
         // Add a DemoCustomer to cause a row to be displayed.
         this.customersBindingSource.AddNew();
 
-        // Bind the BindingSource to the DataGridView 
+        // Bind the BindingSource to the DataGridView
         // control's DataSource.
-        this.customersDataGridView.DataSource = 
+        this.customersDataGridView.DataSource =
             this.customersBindingSource;
     }
     // </snippet7>
@@ -65,7 +65,7 @@ public class Form1 : System.Windows.Forms.Form
     // <snippet8>
     // This event handler provides custom item-creation behavior.
     void customersBindingSource_AddingNew(
-        object sender, 
+        object sender,
         AddingNewEventArgs e)
     {
         e.NewObject = DemoCustomer.CreateNewCustomer();
@@ -73,10 +73,10 @@ public class Form1 : System.Windows.Forms.Form
     // </snippet8>
 
     // <snippet9>
-    // This event handler detects changes in the BindingSource 
+    // This event handler detects changes in the BindingSource
     // list or changes to items within the list.
     void customersBindingSource_ListChanged(
-        object sender, 
+        object sender,
         ListChangedEventArgs e)
     {
         status.Text = e.ListChangedType.ToString();

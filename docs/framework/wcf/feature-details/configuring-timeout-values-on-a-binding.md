@@ -1,5 +1,6 @@
 ---
 title: "Configuring Timeout Values on a Binding"
+description: Learn how to manage timeout settings for WCF bindings to improve performance, usability, and security of your service.
 ms.date: "03/30/2017"
 ms.assetid: b5c825a2-b48f-444a-8659-61751ff11d34
 ---
@@ -21,20 +22,20 @@ There are a number of timeout settings available in WCF bindings. Setting these 
 public static void Main()
 {
     Uri baseAddress = new Uri("http://localhost/MyServer/MyService");
-    
+
     try
     {
         ServiceHost serviceHost = new ServiceHost(typeof(CalculatorService));
-        
+
         WSHttpBinding binding = new WSHttpBinding();
         binding.OpenTimeout = new TimeSpan(0, 10, 0);
         binding.CloseTimeout = new TimeSpan(0, 10, 0);
         binding.SendTimeout = new TimeSpan(0, 10, 0);
         binding.ReceiveTimeout = new TimeSpan(0, 10, 0);
-        
+
         serviceHost.AddServiceEndpoint("ICalculator", binding, baseAddress);
         serviceHost.Open();
-        
+
         // The service can now be accessed.
         Console.WriteLine("The service is ready.");
         Console.WriteLine("Press <ENTER> to terminate service.");
@@ -55,9 +56,9 @@ public static void Main()
   <system.serviceModel>
     <bindings>
       <wsHttpBinding>
-        <binding openTimeout="00:10:00" 
-                 closeTimeout="00:10:00" 
-                 sendTimeout="00:10:00" 
+        <binding openTimeout="00:10:00"
+                 closeTimeout="00:10:00"
+                 sendTimeout="00:10:00"
                  receiveTimeout="00:10:00">
         </binding>
       </wsHttpBinding>

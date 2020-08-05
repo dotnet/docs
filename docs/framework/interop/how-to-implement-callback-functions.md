@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement Callback Functions"
+description: See how to implement callback functions. In this example, a managed application, using platform invoke, prints the handle value for each window on a computer.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -68,16 +69,16 @@ public delegate bool CallBack(int hwnd, int lParam);
 public class EnumReportApp  
 {  
     [DllImport("user32")]  
-    public static extern int EnumWindows(CallBack x, int y);   
+    public static extern int EnumWindows(CallBack x, int y);
   
-    public static void Main()   
+    public static void Main()
     {  
         CallBack myCallBack = new CallBack(EnumReportApp.Report);  
         EnumWindows(myCallBack, 0);  
     }  
   
     public static bool Report(int hwnd, int lParam)  
-    {   
+    {
         Console.Write("Window handle is ");  
         Console.WriteLine(hwnd);  
         return true;  

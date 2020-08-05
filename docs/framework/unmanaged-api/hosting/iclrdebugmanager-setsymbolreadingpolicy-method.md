@@ -30,7 +30,7 @@ HRESULT SetSymbolReadingPolicy (
   
 ## Parameters  
  `policy`  
- [in] A member of the [ESymbolReadingPolicy](../../../../docs/framework/unmanaged-api/hosting/esymbolreadingpolicy-enumeration.md) enumeration.  
+ [in] A member of the [ESymbolReadingPolicy](esymbolreadingpolicy-enumeration.md) enumeration.  
   
 ## Return Value  
   
@@ -41,7 +41,7 @@ HRESULT SetSymbolReadingPolicy (
 |E_FAIL|An unknown catastrophic failure occurred. After a method returns E_FAIL, the CLR is no longer usable within the process. Subsequent calls to hosting methods return HOST_E_CLRNOTAVAILABLE.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -51,4 +51,4 @@ HRESULT SetSymbolReadingPolicy (
   
 ## See also
 
-- [ICLRDebugManager Interface](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-interface.md)
+- [ICLRDebugManager Interface](iclrdebugmanager-interface.md)

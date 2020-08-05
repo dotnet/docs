@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ba084444-9e68-4cde-9388-54b950670987
 ---
 # ISymUnmanagedAsyncMethod::GetKickoffMethod Method
-See [DefineKickoffMethod Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-definekickoffmethod-method.md).  
+See [DefineKickoffMethod Method](isymunmanagedasyncmethodpropertieswriter-definekickoffmethod-method.md).  
   
 ## Syntax  
   
@@ -26,4 +26,4 @@ HRESULT GetKickoffMethod(    [out, retval] mdToken* kickoffMethod);
   
 ## See also
 
-- [ISymUnmanagedAsyncMethod Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethod-interface.md)
+- [ISymUnmanagedAsyncMethod Interface](isymunmanagedasyncmethod-interface.md)

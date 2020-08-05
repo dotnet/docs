@@ -10,7 +10,7 @@ Module Program
         sw.Close()
     End Sub
 
-   Function OpenStream(path As String) As StreamWriter
+    Function OpenStream(path As String) As StreamWriter
         If path Is Nothing Then
             Console.WriteLine("You did not supply a file path.")
             Return Nothing
@@ -29,7 +29,7 @@ Module Program
             Console.WriteLine("'path' exceeds the maxium supported path length.")
         Catch e As UnauthorizedAccessException
             Console.WriteLine("You do not have permission to create this file.")
-        Catch e As IOException When (e.HResult And &h0000FFFF) = 32 
+        Catch e As IOException When (e.HResult And &h0000FFFF) = 32
             Console.WriteLine("There is a sharing violation.")
         Catch e As IOException When (e.HResult And &h0000FFFF) = 80
             Console.WriteLine("The file already exists.")

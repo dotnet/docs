@@ -115,7 +115,7 @@ The WCF framework automatically chooses the highest protocol available up to TLS
 
 ### For .NET Framework 3.5 - 4.5.2 and not WCF
 
-We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps. At some point in the future, your application may fail until you upgrade to .NET Framework 4.7 or later versions.
+We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps.
 
 Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry). The .NET Framework version 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
 
@@ -188,7 +188,7 @@ All of the registry keys described below have the same effect whether you're doi
 
 The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>: SchUseStrongCrypto` registry key has a value of type DWORD. A value of 1 causes your app to use strong cryptography. The strong cryptography uses more secure network protocols (TLS 1.2, TLS 1.1, and TLS 1.0) and blocks protocols that are not secure. A value of 0 disables strong cryptography. For more information, see [The SCH_USE_STRONG_CRYPTO flag](#the-sch_use_strong_crypto-flag).
 
-If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app runs on .NET Framework 4.6, but targets an earlier version, then the key defaults to 0. In that case, you should explicitly set its value to 1.
+If your app targets .NET Framework 4.6 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app targets .NET Framework 4.5.2 or earlier versions, the key defaults to 0. In that case, you should explicitly set its value to 1.
 
 This key should only have a value of 0 if you need to connect to legacy services that don't support strong cryptography and can't be upgraded.
 
@@ -198,7 +198,7 @@ The `HKEY_LOCAL_MACHINE\SOFTWARE\[Wow6432Node\]Microsoft\.NETFramework\<VERSION>
 
 `<VERSION>` must be v4.0.30319 (for .NET Framework 4 and above) or v2.0.50727 (for .NET Framework 3.5).
 
-If your app targets .NET Framework 4.7 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app runs on .NET Framework 4.7 or later versions, but targets an earlier version, the key defaults to 0. In that case, you should explicitly set its value to 1.
+If your app targets .NET Framework 4.7 or later versions, this key defaults to a value of 1. That's a secure default that we recommend. If your app targets .NET Framework 4.6.1 or earlier versions, the key defaults to 0. In that case, you should explicitly set its value to 1.
 
 For more info, see [Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016](https://support.microsoft.com/help/3156421/cumulative-update-for-windows-10-version-1511-and-windows-server-2016).
 

@@ -28,7 +28,7 @@ public class Form1 : Form
     //<snippet10>
     private void PrintHelpPage()
     {
-        // Create a WebBrowser instance. 
+        // Create a WebBrowser instance.
         WebBrowser webBrowserForPrinting = new WebBrowser();
 
         // Add an event handler that prints the document after it loads.
@@ -45,7 +45,7 @@ public class Form1 : Form
         // Print the document now that it is fully loaded.
         ((WebBrowser)sender).Print();
 
-        // Dispose the WebBrowser now that the task is complete. 
+        // Dispose the WebBrowser now that the task is complete.
         ((WebBrowser)sender).Dispose();
     }
     //</snippet10>
@@ -71,17 +71,17 @@ public class Form1 : Form
             "<input type='text' name='userName'/><br/>" +
             "<a href='http://www.microsoft.com'>continue</a>" +
             "</body></html>";
-        webBrowser1.Navigating += 
+        webBrowser1.Navigating +=
             new WebBrowserNavigatingEventHandler(webBrowser1_Navigating);
     }
 
-    private void webBrowser1_Navigating(object sender, 
+    private void webBrowser1_Navigating(object sender,
         WebBrowserNavigatingEventArgs e)
     {
         System.Windows.Forms.HtmlDocument document =
             this.webBrowser1.Document;
 
-        if (document != null && document.All["userName"] != null && 
+        if (document != null && document.All["userName"] != null &&
             String.IsNullOrEmpty(
             document.All["userName"].GetAttribute("value")))
         {
@@ -106,17 +106,17 @@ public class Form1 : Form
                 browser_DocumentCompleted);
     }
 
-    private void browser_DocumentCompleted(object sender, 
+    private void browser_DocumentCompleted(object sender,
         WebBrowserDocumentCompletedEventArgs e)
     {
-        ((WebBrowser)sender).Document.Window.Error += 
+        ((WebBrowser)sender).Document.Window.Error +=
             new HtmlElementErrorEventHandler(Window_Error);
     }
 
-    private void Window_Error(object sender, 
+    private void Window_Error(object sender,
         HtmlElementErrorEventArgs e)
     {
-        // Ignore the error and suppress the error dialog box. 
+        // Ignore the error and suppress the error dialog box.
         e.Handled = true;
     }
     //</snippet40>

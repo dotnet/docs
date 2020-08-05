@@ -14,5 +14,5 @@ An attempt has been made to read from a file, but the specified encoding is not 
 
 - [My.Computer.FileSystem.ReadAllText](xref:Microsoft.VisualBasic.FileIO.FileSystem.ReadAllText%2A)
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
-- [File Encodings](../../visual-basic/developing-apps/programming/drives-directories-files/file-encodings.md)
-- [How to: Read from Text Files](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)
+- [File Encodings](../developing-apps/programming/drives-directories-files/file-encodings.md)
+- [How to: Read from Text Files](../developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)

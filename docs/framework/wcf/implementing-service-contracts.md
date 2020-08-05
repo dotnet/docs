@@ -16,7 +16,7 @@ A service is a class that exposes functionality available to clients at one or m
 [ServiceContract]  
 public interface IMath  
 {  
-    [OperationContract]   
+    [OperationContract]
     double Add(double A, double B);  
   
     [OperationContract]  

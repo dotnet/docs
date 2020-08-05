@@ -70,7 +70,7 @@ namespace Table_Demo
             currentRow.FontSize = 40;
             currentRow.FontWeight = System.Windows.FontWeights.Bold;
 
-            // Add the header row with content, 
+            // Add the header row with content,
             currentRow.Cells.Add(new TableCell(new Paragraph(new Run("2004 Sales Project"))));
             // and set the row to span all 6 columns.
             currentRow.Cells[0].ColumnSpan = 6;
@@ -124,7 +124,7 @@ namespace Table_Demo
             currentRow.FontSize = 18;
             currentRow.FontWeight = System.Windows.FontWeights.Normal;
 
-            // Add the header row with content, 
+            // Add the header row with content,
             currentRow.Cells.Add(new TableCell(new Paragraph(new Run("Projected 2004 Revenue: $810,000"))));
             // and set the row to span all 6 columns.
             currentRow.Cells[0].ColumnSpan = 6;

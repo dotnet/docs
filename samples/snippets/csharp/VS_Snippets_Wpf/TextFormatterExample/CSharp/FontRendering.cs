@@ -8,7 +8,7 @@ using System.Windows.Media.TextFormatting;
 namespace SDKSamples
 {
    /// <summary>
-   /// Class for combining Font and other text related properties. 
+   /// Class for combining Font and other text related properties.
    /// (Typeface, Alignment, Decorations, etc)
    /// </summary>
    class FontRendering

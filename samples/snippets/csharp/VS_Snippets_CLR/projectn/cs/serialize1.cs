@@ -12,7 +12,7 @@ public class Example
       DataContractSerializer dataSer = new DataContractSerializer(typeof(T));
       DataContractJsonSerializer jsonSer = new DataContractJsonSerializer(typeof(T));
       // </Snippet5>
-      
+
       // <Snippet6>
       Type t = typeof(DataSet);
       XmlSerializer ser = new XmlSerializer(t);
@@ -22,9 +22,9 @@ public class Example
    public void UsesReflection()
    {
       // <Snippet7>
-      XmlSerializer xSerializer = new XmlSerializer(typeof(Teacher), 
-                                  new Type[] { typeof(Student), 
-                                               typeof(Course), 
+      XmlSerializer xSerializer = new XmlSerializer(typeof(Teacher),
+                                  new Type[] { typeof(Student),
+                                               typeof(Course),
                                                typeof(Location) });
       // </Snippet7>
    }

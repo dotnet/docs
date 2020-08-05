@@ -78,16 +78,16 @@ public class Example
 }
 // The example displays the following output:
 //    Attempting to match the entire input string:
-//    
+//
 //    Attempting to match each element in a string array:
 //    The Brooklyn Dodgers played in the National League in 1911, 1912, 1932-1957.
 //    The Chicago Cubs played in the National League in 1903-present.
 //    The Detroit Tigers played in the American League in 1901-present.
 //    The New York Giants played in the National League in 1885-1957.
 //    The Washington Senators played in the American League in 1901-1960.
-//    
+//
 //    Attempting to match each line of an input string with '$':
-//    
+//
 //    Attempting to match each line of an input string with '\r?$':
 //    The Brooklyn Dodgers played in the National League in 1911, 1912, 1932-1957.
 //    The Chicago Cubs played in the National League in 1903-present.

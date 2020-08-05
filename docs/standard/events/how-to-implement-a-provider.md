@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
 ---
 # How to: Implement a Provider
-The observer design pattern requires a division between a provider, which monitors data and sends notifications, and one or more observers, which receive notifications (callbacks) from the provider. This topic discusses how to create a provider. A related topic, [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md), discusses how to create an observer.  
+The observer design pattern requires a division between a provider, which monitors data and sends notifications, and one or more observers, which receive notifications (callbacks) from the provider. This topic discusses how to create a provider. A related topic, [How to: Implement an Observer](how-to-implement-an-observer.md), discusses how to create an observer.  
   
 ### To create a provider  
   
@@ -55,6 +55,6 @@ The observer design pattern requires a division between a provider, which monito
 ## See also
 
 - <xref:System.IObservable%601>
-- [Observer Design Pattern](../../../docs/standard/events/observer-design-pattern.md)
-- [How to: Implement an Observer](../../../docs/standard/events/how-to-implement-an-observer.md)
-- [Observer Design Pattern Best Practices](../../../docs/standard/events/observer-design-pattern-best-practices.md)
+- [Observer Design Pattern](observer-design-pattern.md)
+- [How to: Implement an Observer](how-to-implement-an-observer.md)
+- [Observer Design Pattern Best Practices](observer-design-pattern-best-practices.md)

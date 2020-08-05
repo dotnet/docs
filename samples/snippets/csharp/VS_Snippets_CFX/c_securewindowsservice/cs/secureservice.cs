@@ -32,7 +32,7 @@ namespace Microsoft.Security.Samples
             //<snippet2>
             // 2nd Procedure:
             // Use the binding in a service
-            // Create the Type instances for later use and the URI for 
+            // Create the Type instances for later use and the URI for
             // the base address.
             Type contractType = typeof(ICalculator);
             Type serviceType = typeof(Calculator);

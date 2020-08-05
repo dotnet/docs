@@ -18,17 +18,17 @@ Windows Presentation Foundation (WPF) provides a robust set of APIs for includin
 > [!NOTE]
 > All code examples within this document can be found in the [Advanced Text Formatting Sample](https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI/TextFormatting).  
 
-<a name="prereq"></a>   
+<a name="prereq"></a>
 ## Prerequisites  
  This topic assumes that you are familiar with the higher level APIs used for text presentation. Most user scenarios will not require the advanced text formatting APIs discussed in this topic. For an introduction to the different text APIs, see [Documents in WPF](documents-in-wpf.md).  
   
-<a name="section1"></a>   
+<a name="section1"></a>
 ## Advanced Text Formatting  
  The text layout and [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] controls in WPF provide formatting properties that allow you to easily include formatted text in your application. These controls expose a number of properties to handle the presentation of text, which includes its typeface, size, and color. Under ordinary circumstances, these controls can handle the majority of text presentation in your application. However, some advanced scenarios require the control of text storage as well as text presentation. WPF provides an extensible text formatting engine for this purpose.  
   
  The advanced text formatting features found in WPF consist of a text formatting engine, a text store, text runs, and formatting properties. The text formatting engine, <xref:System.Windows.Media.TextFormatting.TextFormatter>, creates lines of text to be used for presentation. This is achieved by initiating the line formatting process and calling the text formatter's <xref:System.Windows.Media.TextFormatting.TextFormatter.FormatLine%2A>. The text formatter retrieves text runs from your text store by calling the store's <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> method. The <xref:System.Windows.Media.TextFormatting.TextRun> objects are then formed into <xref:System.Windows.Media.TextFormatting.TextLine> objects by the text formatter and given to your application for inspection or display.  
   
-<a name="section2"></a>   
+<a name="section2"></a>
 ## Using the Text Formatter  
  <xref:System.Windows.Media.TextFormatting.TextFormatter> is the WPF text formatting engine and provides services for formatting and breaking text lines. The text formatter can handle different text character formats and paragraph styles, and includes support for international text layout.  
   
@@ -43,7 +43,7 @@ Windows Presentation Foundation (WPF) provides a robust set of APIs for includin
  [!code-csharp[TextFormatterExample#100](~/samples/snippets/csharp/VS_Snippets_Wpf/TextFormatterExample/CSharp/Window1.xaml.cs#100)]
  [!code-vb[TextFormatterExample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextFormatterExample/VisualBasic/Window1.xaml.vb#100)]  
   
-<a name="section3"></a>   
+<a name="section3"></a>
 ## Implementing the Client Text Store  
  When you extend the text formatting engine, you are required to implement and manage all aspects of the text store. This is not a trivial task. The text store is responsible for tracking text run properties, paragraph properties, embedded objects, and other similar content. It also provides the text formatter with individual <xref:System.Windows.Media.TextFormatting.TextRun> objects which the text formatter uses to create <xref:System.Windows.Media.TextFormatting.TextLine> objects.  
   
@@ -55,7 +55,7 @@ Windows Presentation Foundation (WPF) provides a robust set of APIs for includin
   
 - A Unicode newline sequence, such as "CF", "LF", or "CRLF", is returned.  
   
-<a name="section4"></a>   
+<a name="section4"></a>
 ## Providing Text Runs  
  The core of the text formatting process is the interaction between the text formatter and the text store. Your implementation of <xref:System.Windows.Media.TextFormatting.TextSource> provides the text formatter with the <xref:System.Windows.Media.TextFormatting.TextRun> objects and the properties with which to format the text runs. This interaction is handled by the <xref:System.Windows.Media.TextFormatting.TextSource.GetTextRun%2A> method, which is called by the text formatter.  
   
@@ -81,7 +81,7 @@ Windows Presentation Foundation (WPF) provides a robust set of APIs for includin
 > [!NOTE]
 > In this example, the text store provides the same text properties to all of the text. Advanced text stores would need to implement their own span management to allow individual characters to have different properties.  
   
-<a name="section5"></a>   
+<a name="section5"></a>
 ## Specifying Formatting Properties  
  <xref:System.Windows.Media.TextFormatting.TextRun> objects are formatted by using properties provided by the text store. These properties come in two types, <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties>. <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> handle paragraph inclusive properties such as <xref:System.Windows.TextAlignment> and <xref:System.Windows.FlowDirection>. <xref:System.Windows.Media.TextFormatting.TextRunProperties> are properties that can be different for each text run within a paragraph, such as foreground brush, <xref:System.Windows.Media.Typeface>, and font size. To implement custom paragraph and custom text run property types, your application must create classes that derive from <xref:System.Windows.Media.TextFormatting.TextParagraphProperties> and <xref:System.Windows.Media.TextFormatting.TextRunProperties> respectively.  
   

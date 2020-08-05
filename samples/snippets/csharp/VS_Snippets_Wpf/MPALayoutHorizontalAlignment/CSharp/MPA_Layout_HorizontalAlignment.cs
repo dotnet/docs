@@ -11,7 +11,7 @@ namespace SDKSample
         Border myBorder;
         StackPanel myStackPanel;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -61,10 +61,10 @@ namespace SDKSample
             myStackPanel.Children.Add(myButton2);
             myStackPanel.Children.Add(myButton3);
             myStackPanel.Children.Add(myButton4);
-            
+
             // Add the StackPanel as the lone Child of the Border.
             myBorder.Child = myStackPanel;
-            
+
             // Add the Border as the Content of the Parent Window Object.
             mainWindow.Content = myBorder;
             mainWindow.Show ();

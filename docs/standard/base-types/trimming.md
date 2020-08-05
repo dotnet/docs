@@ -1,5 +1,6 @@
 ---
 title: "Trimming and Removing Characters from Strings in .NET"
+description: Learn to trim blank spaces from the beginning or end of a string, or remove any number of spaces or characters from a specified position in the string in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -90,4 +91,4 @@ If you are parsing a sentence into individual words, you might end up with words
   
 ## See also
 
-- [Basic String Operations](../../../docs/standard/base-types/basic-string-operations.md)
+- [Basic String Operations](basic-string-operations.md)

@@ -12,8 +12,8 @@ ms.assetid: 77f1d761-ff45-4001-8f36-3a3e5c41fa63
 
 Clears all previously defined sections and section groups.
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)
+&nbsp;&nbsp;[**\<configSections>**](configsections-element-for-configuration.md)
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax
@@ -57,8 +57,8 @@ The following machine configuration file code declares two sections, **\<sampleS
     <section name="anotherSampleSection"
              type="System.Configuration.NameValueSectionHandler" />
   </configSections>
-  <sampleSection setting1="Value1" 
-                 setting2="value two" 
+  <sampleSection setting1="Value1"
+                 setting2="value two"
                  setting3="third value" />
 </configuration>
 ```
@@ -73,8 +73,8 @@ The following application configuration file code clears all previously declared
     <section name="anotherSection"
              type="System.Configuration.NameValueSectionHandler" />
   </configSections>
-  <anotherSection setting1="Value1" 
-                 setting2="value two" 
+  <anotherSection setting1="Value1"
+                 setting2="value two"
                  setting3="third value" />
 </configuration>
 ```

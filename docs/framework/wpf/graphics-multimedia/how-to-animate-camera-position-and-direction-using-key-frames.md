@@ -25,4 +25,4 @@ In the following example, <xref:System.Windows.Media.Animation.Point3DAnimationU
 ## See also
 
 - [Animate Camera Position and Direction in a 3D Scene](how-to-animate-camera-position-and-direction-in-a-3d-scene.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

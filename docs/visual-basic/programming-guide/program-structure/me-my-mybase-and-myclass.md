@@ -54,4 +54,4 @@ ChangeFormColor(Me)
   
 ## See also
 
-- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Inheritance Basics](../language-features/objects-and-classes/inheritance-basics.md)

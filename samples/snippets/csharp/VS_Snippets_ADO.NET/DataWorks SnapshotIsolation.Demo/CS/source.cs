@@ -8,7 +8,7 @@ class Program
     {
         // <Snippet1>
         // Assumes GetConnectionString returns a valid connection string
-        // where pooling is turned off by setting Pooling=False;. 
+        // where pooling is turned off by setting Pooling=False;.
         string connectionString = GetConnectionString();
         using (SqlConnection connection1 = new SqlConnection(connectionString))
         {
@@ -39,9 +39,9 @@ class Program
                 "INSERT INTO TestSnapshot VALUES (1,1)";
             command1.ExecuteNonQuery();
 
-            // Begin, but do not complete, a transaction to update the data 
+            // Begin, but do not complete, a transaction to update the data
             // with the Serializable isolation level, which locks the table
-            // pending the commit or rollback of the update. The original 
+            // pending the commit or rollback of the update. The original
             // value in valueCol was 1, the proposed new value is 22.
             SqlTransaction transaction1 =
                 connection1.BeginTransaction(IsolationLevel.Serializable);
@@ -55,7 +55,7 @@ class Program
             {
                 connection2.Open();
                 // Initiate a second transaction to read from TestSnapshot
-                // using Snapshot isolation. This will read the original 
+                // using Snapshot isolation. This will read the original
                 // value of 1 since transaction1 has not yet committed.
                 SqlCommand command2 = connection2.CreateCommand();
                 SqlTransaction transaction2 =
@@ -76,7 +76,7 @@ class Program
             // Open a third connection to AdventureWorks and
             // initiate a third transaction to read from TestSnapshot
             // using ReadCommitted isolation level. This transaction
-            // will not be able to view the data because of 
+            // will not be able to view the data because of
             // the locks placed on the table in transaction1
             // and will time out after 4 seconds.
             // You would see the same behavior with the
@@ -111,7 +111,7 @@ class Program
             // Open a fourth connection to AdventureWorks and
             // initiate a fourth transaction to read from TestSnapshot
             // using the ReadUncommitted isolation level. ReadUncommitted
-            // will not hit the table lock, and will allow a dirty read  
+            // will not hit the table lock, and will allow a dirty read
             // of the proposed new value 22 for valueCol. If the first
             // transaction rolls back, this value will never actually have
             // existed in the database.
@@ -166,8 +166,8 @@ class Program
 
     static private string GetConnectionString()
     {
-        // To avoid storing the connection string in your code, 
-        // you can retrieve it from a configuration file, using the 
+        // To avoid storing the connection string in your code,
+        // you can retrieve it from a configuration file, using the
         // System.Configuration.ConfigurationSettings.AppSettings property
         return "Data Source=localhost;Initial Catalog=AdventureWorks;"
             + "Integrated Security=SSPI";

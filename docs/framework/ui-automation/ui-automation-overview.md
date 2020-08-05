@@ -24,7 +24,7 @@ UI Automation provides full functionality on supported Windows operating systems
   
  UI Automation providers offer some support for Microsoft Active Accessibility client applications through a built-in bridging service.  
   
-<a name="Providers_and_Clients"></a>   
+<a name="Providers_and_Clients"></a>
 ## Providers and Clients  
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] has four main components, as shown in the following table.  
   
@@ -55,7 +55,7 @@ UI Automation provides full functionality on supported Windows operating systems
 |<xref:System.Windows.Automation.Text>|UIAutomationClientUIAutomationTypes|Developers of UI Automation providers for frameworks other than [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)]; used to implement the TextPattern control pattern.|  
 |<xref:System.Windows.Automation.Peers>|PresentationFramework|Developers of UI Automation providers for [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)].|  
   
-<a name="UI_Automation_Model"></a>   
+<a name="UI_Automation_Model"></a>
 ## UI Automation Model  
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] exposes every piece of the [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] to client applications as an <xref:System.Windows.Automation.AutomationElement>. Elements are contained in a tree structure, with the desktop as the root element. Clients can filter the raw view of the tree as a control view or a content view. Applications can also create custom views.  
   

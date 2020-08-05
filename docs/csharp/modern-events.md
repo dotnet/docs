@@ -11,7 +11,7 @@ ms.assetid: 9aa627c3-3222-4094-9ca8-7e88e1071e06
 [Previous](event-pattern.md)
 
 The previous article discussed the most common event patterns. .NET
-Core has a more relaxed pattern. In this version, the 
+Core has a more relaxed pattern. In this version, the
 `EventHandler<TEventArgs>` definition no longer has the constraint that
 `TEventArgs` must be a class derived from `System.EventArgs`.
 
@@ -87,7 +87,7 @@ to implement are below:
 ```csharp
 worker.StartWorking += async (sender, eventArgs) =>
 {
-    try 
+    try
     {
         await DoWorkAsync();
     }

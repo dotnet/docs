@@ -8,7 +8,7 @@ class AppDomain3
     {
         // Create the new application domain.
         AppDomain domain = AppDomain.CreateDomain("MyDomain", null);
-    
+
         // Output to the console.
         Console.WriteLine("Host domain: " + AppDomain.CurrentDomain.FriendlyName);
         Console.WriteLine("New domain: " + domain.FriendlyName);

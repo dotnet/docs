@@ -12,19 +12,19 @@ The `My.Computer.Ports` object provides a property and a method for accessing th
   
 ## In This Section  
 
- [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md)  
+ [How to: Show Available Serial Ports](how-to-show-available-serial-ports.md)  
  Demonstrates how to show available serial ports.  
   
- [How to: Dial Modems Attached to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-dial-modems-attached-to-serial-ports.md)  
+ [How to: Dial Modems Attached to Serial Ports](how-to-dial-modems-attached-to-serial-ports.md)  
  Demonstrates how to dial a modem attached to the serial port of a computer.  
   
- [How to: Send Strings to Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-send-strings-to-serial-ports.md)  
+ [How to: Send Strings to Serial Ports](how-to-send-strings-to-serial-ports.md)  
  Demonstrates how to send a string to a computer's serial port.  
   
- [How to: Receive Strings From Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-receive-strings-from-serial-ports.md)  
+ [How to: Receive Strings From Serial Ports](how-to-receive-strings-from-serial-ports.md)  
  Demonstrates how to receive a string from a computer's serial port.  
   
- [Port Operations in the .NET Framework](../../../../visual-basic/developing-apps/programming/computer-resources/port-operations-in-the-net-framework.md)  
+ [Port Operations in the .NET Framework](port-operations-in-the-net-framework.md)  
  Describes how to use the .NET Framework when performing port operations.  
   
 ## Reference  

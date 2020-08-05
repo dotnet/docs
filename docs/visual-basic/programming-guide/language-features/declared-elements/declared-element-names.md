@@ -85,7 +85,7 @@ Every declared element has a name, also called an *identifier*, which is what th
   
 ## See also
 
-- [Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/index.md)
-- [Declared Element Characteristics](../../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-characteristics.md)
-- [References to Declared Elements](../../../../visual-basic/programming-guide/language-features/declared-elements/references-to-declared-elements.md)
-- [Statements](../../../../visual-basic/language-reference/statements/index.md)
+- [Declared Elements](index.md)
+- [Declared Element Characteristics](declared-element-characteristics.md)
+- [References to Declared Elements](references-to-declared-elements.md)
+- [Statements](../../../language-reference/statements/index.md)

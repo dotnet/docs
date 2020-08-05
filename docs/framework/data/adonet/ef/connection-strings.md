@@ -1,5 +1,6 @@
 ---
 title: "Connection Strings in the ADO.NET Entity Framework"
+description: Learn about connection strings in the Entity Framework, which contain information to connect to the ADO.NET data provider and about model and mapping files.
 ms.date: "10/15/2018"
 ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 ---

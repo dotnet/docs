@@ -9,6 +9,7 @@ Source Link is a technology that enables source code debugging of .NET assemblie
 
 ## Source Link demo
 
+<!--markdownlint-disable MD034 -->
 > [!VIDEO https://www.youtube.com/embed/gyRGhCQPkB4?start=61]
 
 ## Using Source Link
@@ -31,6 +32,10 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 ✔️ CONSIDER publishing symbol files (`*.pdb`).
 
 > For the best debugging experience your library should publish symbol files as well as use Source Link. For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
+
+✔️ CONSIDER enabling deterministic builds.
+
+> Deterministic builds enable verification that the resulting binary was built from the specified source and provide traceability. For more information about deterministic builds and instructions for enabling them, see [Deterministic Builds](https://github.com/clairernovotny/DeterministicBuilds).
 
 >[!div class="step-by-step"]
 >[Previous](dependencies.md)

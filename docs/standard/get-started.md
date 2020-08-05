@@ -12,21 +12,23 @@ There are a number of ways to get started with .NET. Because .NET is a massive p
 
 ## Get started using .NET languages
 
-* The [C# getting started](../csharp/getting-started/index.md) articles and [C# tutorials](../csharp/tutorials/index.md) provide ways to get started in a C#-centric way.
+For getting-started tutorials in C#, Visual Basic, and F#, see:
 
-* The [F# getting started](../fsharp/get-started/index.md) tutorials cover the three primary ways you can use F#: with Visual Studio, Visual Studio Code, or command-line tools.
-
-* The [Visual Basic getting started](../visual-basic/getting-started/index.md) articles provide guides for using Visual Basic in Visual Studio.
+* [Get started in C#](../csharp/getting-started/index.md)
+* [C# tutorials](../csharp/tutorials/index.md)
+* [F# getting-started tutorials](../fsharp/get-started/index.md)
+* [Get started in Visual Basic](../visual-basic/getting-started/index.md)
 
 ## Get started using .NET Core
 
-* [Get started with .NET Core](../core/get-started.md) provides an overview of articles that show how to get started with .NET Core on different operating systems and using different tools.
+For .NET Core-specific guidance, see:
 
-* The [.NET Core tutorials](../core/tutorials/index.md) detail ways you can get started with .NET Core using your operating system and tooling of choice.
+* [Get started with .NET Core](../core/get-started.md)
+* [.NET Core tutorials](../core/tutorials/index.md)
 
 ## Get started using .NET Standard
 
-* For an introductory tutorial, see [Build a .NET Standard library in Visual Studio](../core/tutorials/library-with-visual-studio.md).
+For an introductory tutorial, see [Build a .NET Standard library in Visual Studio](../core/tutorials/library-with-visual-studio.md).
 
 ## Get started using .NET Core on Docker
 

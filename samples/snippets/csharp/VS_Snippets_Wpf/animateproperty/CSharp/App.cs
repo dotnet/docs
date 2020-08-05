@@ -12,7 +12,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
     // Displays the sample.
     public class app : Application
     {
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup(e);
@@ -26,11 +26,11 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             MainWindow = sViewer;
             sViewer.Show();
         }
-    }    
-    
+    }
+
     public class SampleViewer : Window
     {
-    
+
         public SampleViewer()
         {
             TabControl tControl = new TabControl();
@@ -46,7 +46,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
             contentFrame.Content = new InteractiveAnimationExample();
             tItem.Content = contentFrame;
             tControl.Items.Add(tItem);
-            
+
             this.Content = tControl;
             this.Title = "Local Animations Example";
         }
@@ -58,7 +58,7 @@ namespace Microsoft.Samples.Animation.LocalAnimations
         [System.STAThread()]
         private static void Main ()
         {
-            
+
             app app = new app ();
             app.Run ();
         }

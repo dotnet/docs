@@ -1,5 +1,6 @@
 ---
 title: "Marshaling Different Types of Arrays"
+description: Marshal different array types, like integers by value or reference, 2-dimensional integers by value, strings by value, and structures with integers or strings.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -83,14 +84,14 @@ An array is a reference type in managed code that contains one or more elements 
 ```cpp
 typedef struct _MYPOINT  
 {  
-   int x;   
-   int y;   
+   int x;
+   int y;
 } MYPOINT;  
   
 typedef struct _MYPERSON  
 {  
-   char* first;   
-   char* last;   
+   char* first;
+   char* last;
 } MYPERSON;  
 ```  
   

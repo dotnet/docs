@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 
 //test
-// This file contains all the code examples for LINQ-related topics 
+// This file contains all the code examples for LINQ-related topics
 // throughout the C# Programming Guide
 namespace csrefLINQExamples
 {
@@ -23,7 +23,7 @@ namespace csrefLINQExamples
 
             Console.WriteLine("{0} scores are greater than 80", highScoreCount);
 
-            // Outputs: 4 scores are greater than 80            
+            // Outputs: 4 scores are greater than 80
         }
     }
     //</snippet1>
@@ -37,48 +37,48 @@ namespace csrefLINQExamples
         {
             public string FirstName { get; set; }
             public string LastName { get; set; }
-            public int ID { get; set; }
+            public int Id { get; set; }
             public GradeLevel Year;
             public List<int> ExamScores;
         }
 
         protected static List<Student> students = new List<Student>
         {
-            new Student {FirstName = "Terry", LastName = "Adams", ID = 120, 
-                Year = GradeLevel.SecondYear, 
+            new Student {FirstName = "Terry", LastName = "Adams", Id = 120,
+                Year = GradeLevel.SecondYear,
                 ExamScores = new List<int>{ 99, 82, 81, 79}},
-            new Student {FirstName = "Fadi", LastName = "Fakhouri", ID = 116, 
+            new Student {FirstName = "Fadi", LastName = "Fakhouri", Id = 116,
                 Year = GradeLevel.ThirdYear,
                 ExamScores = new List<int>{ 99, 86, 90, 94}},
-            new Student {FirstName = "Hanying", LastName = "Feng", ID = 117, 
-                Year = GradeLevel.FirstYear, 
+            new Student {FirstName = "Hanying", LastName = "Feng", Id = 117,
+                Year = GradeLevel.FirstYear,
                 ExamScores = new List<int>{ 93, 92, 80, 87}},
-            new Student {FirstName = "Cesar", LastName = "Garcia", ID = 114, 
+            new Student {FirstName = "Cesar", LastName = "Garcia", Id = 114,
                 Year = GradeLevel.FourthYear,
                 ExamScores = new List<int>{ 97, 89, 85, 82}},
-            new Student {FirstName = "Debra", LastName = "Garcia", ID = 115, 
-                Year = GradeLevel.ThirdYear, 
+            new Student {FirstName = "Debra", LastName = "Garcia", Id = 115,
+                Year = GradeLevel.ThirdYear,
                 ExamScores = new List<int>{ 35, 72, 91, 70}},
-            new Student {FirstName = "Hugo", LastName = "Garcia", ID = 118, 
-                Year = GradeLevel.SecondYear, 
+            new Student {FirstName = "Hugo", LastName = "Garcia", Id = 118,
+                Year = GradeLevel.SecondYear,
                 ExamScores = new List<int>{ 92, 90, 83, 78}},
-            new Student {FirstName = "Sven", LastName = "Mortensen", ID = 113, 
-                Year = GradeLevel.FirstYear, 
+            new Student {FirstName = "Sven", LastName = "Mortensen", Id = 113,
+                Year = GradeLevel.FirstYear,
                 ExamScores = new List<int>{ 88, 94, 65, 91}},
-            new Student {FirstName = "Claire", LastName = "O'Donnell", ID = 112, 
-                Year = GradeLevel.FourthYear, 
+            new Student {FirstName = "Claire", LastName = "O'Donnell", Id = 112,
+                Year = GradeLevel.FourthYear,
                 ExamScores = new List<int>{ 75, 84, 91, 39}},
-            new Student {FirstName = "Svetlana", LastName = "Omelchenko", ID = 111, 
-                Year = GradeLevel.SecondYear, 
+            new Student {FirstName = "Svetlana", LastName = "Omelchenko", Id = 111,
+                Year = GradeLevel.SecondYear,
                 ExamScores = new List<int>{ 97, 92, 81, 60}},
-            new Student {FirstName = "Lance", LastName = "Tucker", ID = 119, 
-                Year = GradeLevel.ThirdYear, 
+            new Student {FirstName = "Lance", LastName = "Tucker", Id = 119,
+                Year = GradeLevel.ThirdYear,
                 ExamScores = new List<int>{ 68, 79, 88, 92}},
-            new Student {FirstName = "Michael", LastName = "Tucker", ID = 122, 
-                Year = GradeLevel.FirstYear, 
+            new Student {FirstName = "Michael", LastName = "Tucker", Id = 122,
+                Year = GradeLevel.FirstYear,
                 ExamScores = new List<int>{ 94, 92, 91, 91}},
-            new Student {FirstName = "Eugene", LastName = "Zabokritski", ID = 121,
-                Year = GradeLevel.FourthYear, 
+            new Student {FirstName = "Eugene", LastName = "Zabokritski", Id = 121,
+                Year = GradeLevel.FourthYear,
                 ExamScores = new List<int>{ 96, 85, 91, 60}}
         };
         #endregion
@@ -141,14 +141,14 @@ namespace csrefLINQExamples
             group student by student.Year into studentGroup
             select new { GradeLevel = studentGroup.Key, TotalScore = studentGroup.Sum(s => s.ExamScores.Sum()) };
 
-            // Execute the query.   
+            // Execute the query.
             foreach (var cat in categories)
             {
                 Console.WriteLine("Key = {0} Sum = {1}", cat.GradeLevel, cat.TotalScore);
             }
         }
         /*
-             Outputs: 
+             Outputs:
              Key = SecondYear Sum = 1014
              Key = ThirdYear Sum = 964
              Key = FirstYear Sum = 1058
@@ -162,7 +162,7 @@ namespace csrefLINQExamples
         static void Main()
         {
             ReuseQuery();
-            Console.ReadKey();           
+            Console.ReadKey();
         }
 
         //<snippet3>
@@ -171,11 +171,11 @@ namespace csrefLINQExamples
             //Create the query. The use of var is optional here.
             var reusableQuery =
                 from student in students
-                where student.ID > 115
+                where student.Id > 115
                 select student;
 
             // Execute the query. Note that enumerating over a query
-            // with foreach does not cause the results to be stored 
+            // with foreach does not cause the results to be stored
             // in the query variable.
             Console.WriteLine("Execute first query:");
             foreach (var item in reusableQuery)
@@ -188,14 +188,14 @@ namespace csrefLINQExamples
             // helpful names instead of reusing old query variables.
             reusableQuery =
                 from student in reusableQuery
-                where student.ID < 117
+                where student.Id < 117
                 select student;
 
             Console.WriteLine(System.Environment.NewLine + "Reuse query variable as data source:");
 
             // Execute the query after it has been reused
             // Note that only one student is returned,
-            // the ID that is > 115 and < 117.
+            // the Id that is > 115 and < 117.
 
             foreach (var item in reusableQuery)
             {
@@ -244,7 +244,7 @@ namespace csrefLINQExamples
            */
         //</snippet3>
     }
-    
+
     class GroupByExample : StudentClass
     {
         static void Main()
@@ -327,7 +327,7 @@ namespace csrefLINQExamples
         }
         static void Method1()
         {
-            //<snippet6> 
+            //<snippet6>
             List<int> numbers1 = new List<int>() { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
             List<int> numbers2 = new List<int>() { 15, 14, 11, 13, 19, 18, 16, 17, 12, 10 };
             // Query #4.
@@ -335,12 +335,12 @@ namespace csrefLINQExamples
 
             // Query #5.
             IEnumerable<int> concatenationQuery = numbers1.Concat(numbers2);
-            //</snippet6> 
+            //</snippet6>
 
-            //<snippet7> 
+            //<snippet7>
             // Query #6.
             IEnumerable<int> largeNumbersQuery = numbers2.Where(c => c > 15);
-            //</snippet7>  
+            //</snippet7>
         }
         static void Method2()
         {
@@ -391,12 +391,12 @@ namespace csrefLINQExamples
             }
             catch (InvalidOperationException)
             {
-                // Handle (or don't handle) the exception 
+                // Handle (or don't handle) the exception
                 // in the way that is appropriate for your application.
                 Console.WriteLine("Invalid operation");
                 goto Exit;
             }
-            
+
             // If we get here, it is safe to proceed.
             var query = from i in dataSource
                         select i * i;
@@ -424,7 +424,7 @@ namespace csrefLINQExamples
     //       string root = @"c:\";
 
     //       // DON'T DO THIS! GetFiles can throw an exception.
-    //       // Uncomment this query and press F5 to see the results            
+    //       // Uncomment this query and press F5 to see the results
     //       // var queryFiles1 =
     //       //    from file in Directory.GetFiles(root)
     //       //    where file.Substring(file.Length - 3) == ".txt"
@@ -474,7 +474,7 @@ namespace csrefLINQExamples
     {
         static void Main()
         {
-            
+
             // Specify the data source.
             int[] scores = new int[] { 97, 92, 81, 60 };
 
@@ -488,7 +488,7 @@ namespace csrefLINQExamples
             foreach (int i in scoreQuery)
             {
                 Console.Write(i + " ");
-            }            
+            }
         }
     }
     // Output: 97 92 81
@@ -498,7 +498,7 @@ namespace csrefLINQExamples
     //this snippet is out of order. ok.
 
     //removing as just too error-prone
-    //<s n i p p e t 2 2 > 
+    //<s n i p p e t 2 2 >
     //class CatchAndContinue
     //{
     //    static void Main()
@@ -623,14 +623,14 @@ namespace csrefLINQExamples
                 let x = name.Split(',')
                 from score in scores
                 let s = score.Split(',')
-                // Look for matching IDs from the two data files.
+                // Look for matching Ids from the two data files.
                 where x[2] == s[0]
-                // If the IDs match, build a Student object.
+                // If the Ids match, build a Student object.
                 select new Student()
                 {
                     FirstName = x[0],
                     LastName = x[1],
-                    ID = Convert.ToInt32(x[2]),
+                    Id = Convert.ToInt32(x[2]),
                     ExamScores = (from scoreAsText in s.Skip(1)
                                   select Convert.ToInt32(scoreAsText)).
                                   ToList()
@@ -656,11 +656,11 @@ namespace csrefLINQExamples
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public int ID { get; set; }
+        public int Id { get; set; }
         public List<int> ExamScores { get; set; }
     }
 
-    /* Output: 
+    /* Output:
         The average score of Omelchenko Svetlana is 82.5.
         The average score of O'Donnell Claire is 72.25.
         The average score of Mortensen Sven is 84.5.
@@ -674,7 +674,7 @@ namespace csrefLINQExamples
         The average score of Zabokritski Eugene is 83.
         The average score of Tucker Michael is 92.
      */
-    //</snippet13>        
+    //</snippet13>
 
     class MergeCSVData2
     {
@@ -690,7 +690,7 @@ namespace csrefLINQExamples
 
             foreach (var item in queryNamesWithScores)
             {
-                Console.WriteLine("Name and ID: {0}, Average Score: {1}", item.Name, item.TestScores.Average());
+                Console.WriteLine("Name and Id: {0}, Average Score: {1}", item.Name, item.TestScores.Average());
             }
             //</snippet14>
 
@@ -701,7 +701,7 @@ namespace csrefLINQExamples
     }
 
     // How To: Group Results in Various Ways (LINQ) ee981053-3392-4245-a8c2-b3730211da0d
-    
+
     class GroupExamples : StudentClass
     {
         //<snippet17>
@@ -709,8 +709,8 @@ namespace csrefLINQExamples
         {
             Console.WriteLine("Group by a single property in an object:");
 
-            // Variable queryLastNames is an IEnumerable<IGrouping<string, 
-            // DataClass.Student>>. 
+            // Variable queryLastNames is an IEnumerable<IGrouping<string,
+            // DataClass.Student>>.
             var queryLastNames =
                 from student in students
                 group student by student.LastName into newGroup
@@ -758,7 +758,7 @@ namespace csrefLINQExamples
 
             var queryHighScoreGroups =
                 from student in students
-                group student by new { FirstLetter = student.LastName[0], 
+                group student by new { FirstLetter = student.LastName[0],
                     Score = student.ExamScores[0] > 85 } into studentGroup
                 orderby studentGroup.Key.FirstLetter
                 select studentGroup;
@@ -803,7 +803,7 @@ namespace csrefLINQExamples
 
         //<snippet20>
         public void GroupByBoolean()
-        {            
+        {
             Console.WriteLine("\r\nGroup by a Boolean into two groups with string keys");
             Console.WriteLine("\"True\" and \"False\" and project into a new anonymous type:");
             var queryGroupByAverages = from student in students
@@ -816,7 +816,7 @@ namespace csrefLINQExamples
                 Console.WriteLine("Key: {0}", studentGroup.Key);
                 foreach (var student in studentGroup)
                     Console.WriteLine("\t{0} {1}", student.FirstName, student.LastName);
-            }            
+            }
         }
         /* Output:
             Group by a Boolean into two groups with string keys
@@ -840,7 +840,7 @@ namespace csrefLINQExamples
 
         //<snippet19>
         public void GroupByRange()
-        {            
+        {
             Console.WriteLine("\r\nGroup by numeric range and project into a new anonymous type:");
 
             var queryNumericRange =
@@ -858,7 +858,7 @@ namespace csrefLINQExamples
                 {
                     Console.WriteLine("\t{0}, {1}", item.LastName, item.FirstName);
                 }
-            }            
+            }
         }
         /* Output:
             Group by numeric range and project into a new anonymous type:
@@ -883,7 +883,7 @@ namespace csrefLINQExamples
 
         //<snippet18>
         public void GroupBySubstring()
-        {            
+        {
             Console.WriteLine("\r\nGroup by something other than a property of the object:");
 
             var queryFirstLetters =
@@ -898,7 +898,7 @@ namespace csrefLINQExamples
                 {
                     Console.WriteLine("\t{0}, {1}", student.LastName, student.FirstName);
                 }
-            }           
+            }
         }
         /* Output:
             Group by something other than a property of the object:
@@ -931,7 +931,7 @@ namespace csrefLINQExamples
     {
         static void Main(string[] args)
         {
-            // Adding this object just to allow me to make QueryMax public 
+            // Adding this object just to allow me to make QueryMax public
             // and call it like other methods in these how-to topics.
             var testObj = new HowToSubqueryAGroup();
             testObj.QueryMax();
@@ -972,7 +972,7 @@ namespace csrefLINQExamples
             // but it needs to be public instance method for this example to make it easier to just
             // paste into student class and call it.
             // StudentClass sc = new StudentClass();
-            //sc.QueryNestedGroups(); 
+            //sc.QueryNestedGroups();
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
@@ -987,8 +987,8 @@ namespace csrefLINQExamples
                      group student by student.LastName)
                 group newGroup2 by newGroup1.Key;
 
-            // Three nested foreach loops are required to iterate 
-            // over all elements of a grouped group. Hover the mouse 
+            // Three nested foreach loops are required to iterate
+            // over all elements of a grouped group. Hover the mouse
             // cursor over the iteration variables to see their actual type.
             foreach (var outerGroup in queryNestedGroups)
             {
@@ -1032,7 +1032,7 @@ namespace csrefLINQExamples
                 Names that begin with: O'Donnell
                         O'Donnell Claire
                 Names that begin with: Zabokritski
-                        Zabokritski Eugene        
+                        Zabokritski Eugene
          */
         //</snippet24>
     }
@@ -1077,17 +1077,17 @@ namespace csrefLINQExamples
             Console.ReadKey();
         }
 
-        static void QueryByID(string[] ids)
+        static void QueryById(string[] ids)
         {
             var queryNames =
                 from student in students
-                let i = student.ID.ToString()
+                let i = student.Id.ToString()
                 where ids.Contains(i)
-                select new { student.LastName, student.ID };
+                select new { student.LastName, student.Id };
 
             foreach (var name in queryNames)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.ID);
+                Console.WriteLine("{0}: {1}", name.LastName, name.Id);
             }
         }
     }
@@ -1096,7 +1096,7 @@ namespace csrefLINQExamples
     class DynamicPredicates2 : StudentClass
     {
         static void Main(string[] args)
-        {           
+        {
             // Run the query
             QueryByYear(args[0]);
 
@@ -1108,7 +1108,7 @@ namespace csrefLINQExamples
         //<snippet27>
         // To run this sample, first specify an integer value of 1 to 4 for the command
         // line. This number will be converted to a GradeLevel value that specifies which
-        // set of students to query. 
+        // set of students to query.
         // Call the method: QueryByYear(args[0]);
 
         static void QueryByYear(string level)
@@ -1144,7 +1144,7 @@ namespace csrefLINQExamples
             Console.WriteLine("The following students are at level {0}", year.ToString());
             foreach (Student name in studentQuery)
             {
-                Console.WriteLine("{0}: {1}", name.LastName, name.ID);
+                Console.WriteLine("{0}: {1}", name.LastName, name.Id);
             }
         }
         //</snippet27>

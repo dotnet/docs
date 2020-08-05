@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Sequential Workflow"
+description: This article creates a workflow that uses both built-in activities, such as the Sequence activity, and custom activities.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

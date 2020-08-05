@@ -39,7 +39,7 @@ HRESULT GetImageBase (
  The image file name may or may not have a path. If a path is specified, matching is done on the whole path; otherwise, matching is done only on the file name.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** ClrData.idl, ClrData.h  
   

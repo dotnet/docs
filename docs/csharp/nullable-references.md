@@ -2,23 +2,25 @@
 title: Nullable reference types
 description: This article provides an overview of nullable reference types, added in C# 8.0. You'll learn how the feature provides safety against null reference exceptions, for new and existing projects.
 ms.technology: csharp-null-safety
-ms.date: 02/19/2019
+ms.date: 04/21/2020
 ---
 # Nullable reference types
 
 C# 8.0 introduces **nullable reference types** and **non-nullable reference types** that enable you to make important statements about the properties for reference type variables:
 
-- **A reference is not supposed to be null**. When variables aren't supposed to be null, the compiler enforces rules that ensure it is safe to dereference these variables without first checking that it isn't null:
+- **A reference isn't supposed to be null**. When variables aren't supposed to be null, the compiler enforces rules that ensure it's safe to dereference these variables without first checking that it isn't null:
   - The variable must be initialized to a non-null value.
   - The variable can never be assigned the value `null`.
 - **A reference may be null**. When variables may be null, the compiler enforces different rules to ensure that you've correctly checked for a null reference:
   - The variable may only be dereferenced when the compiler can guarantee that the value isn't null.
   - These variables may be initialized with the default `null` value and may be assigned the value `null` in other code.
 
-This new feature provides significant benefits over the handling of reference variables in earlier versions of C# where the design intent couldn't be determined from the variable declaration. The compiler didn't provide safety against null reference exceptions for reference types:
+This new feature provides significant benefits over the handling of reference variables in earlier versions of C# where the design intent can't be determined from the variable declaration. The compiler didn't provide safety against null reference exceptions for reference types:
 
-- **A reference can be null**. No warning is issued when a reference type is initialized to null, or null is later assigned to it.
-- **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. (With nullable references,  the compiler issues warnings whenever you dereference a variable that may be null).
+- **A reference can be null**. The compiler doesn't issue warnings when a reference type is initialized to null, or later assigned to null. The compiler issues warnings when these variables are dereferenced without null checks.
+- **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. The compiler issues warnings if a variable is set to an expression that may be null.
+
+These warnings are emitted at compile time. The compiler doesn't add any null checks or other runtime constructs in a nullable context. At runtime, a nullable reference and a non-nullable reference are equivalent.
 
 With the addition of nullable reference types, you can declare your intent more clearly. The `null` value is the correct way to represent that a variable doesn't refer to a value. Don't use this feature to remove all `null` values from your code. Rather, you should declare your intent to the compiler and other developers that read your code. By declaring your intent, the compiler informs you when you write code that is inconsistent with that intent.
 
@@ -28,7 +30,7 @@ A **nullable reference type** is noted using the same syntax as [nullable value 
 string? name;
 ```
 
-Any variable where the `?` is not appended to the type name is a **non-nullable reference type**. That includes all reference type variables in existing code when you have enabled this feature.
+Any variable where the `?` isn't appended to the type name is a **non-nullable reference type**. That includes all reference type variables in existing code when you've enabled this feature.
 
 The compiler uses static analysis to determine if a nullable reference is known to be non-null. The compiler warns you if you dereference a nullable reference when it may be null. You can override this behavior by using the [null-forgiving operator](language-reference/operators/null-forgiving.md) `!` following a variable name. For example, if you know the `name` variable isn't null but the compiler issues a warning, you can write the following code to override the compiler's analysis:
 
@@ -42,8 +44,8 @@ Any reference type can have one of four *nullabilities*, which describes when wa
 
 - *Nonnullable*: Null can't be assigned to variables of this type. Variables of this type don't need to be null-checked before dereferencing.
 - *Nullable*: Null can be assigned to variables of this type. Dereferencing variables of this type without first checking for `null` causes a warning.
-- *Oblivious*: This is the pre-C# 8.0 state. Variables of this type can be dereferenced or assigned without warnings.
-- *Unknown*: This is generally for type parameters where constraints don't tell the compiler that the type must be *nullable* or *nonnullable*.
+- *Oblivious*: Oblivious is the pre-C# 8.0 state. Variables of this type can be dereferenced or assigned without warnings.
+- *Unknown*: Unknown is generally for type parameters where constraints don't tell the compiler that the type must be *nullable* or *nonnullable*.
 
 The nullability of a type in a variable declaration is controlled by the *nullable context* in which the variable is declared.
 
@@ -80,7 +82,9 @@ You can also use directives to set these same contexts anywhere in your project:
 - `#nullable enable annotations`: Set the nullable annotation context to **enabled**.
 - `#nullable restore annotations`: Restores the annotation warning context to the project settings.
 
-By default, nullable annotation and warning contexts are **disabled**. That means that your existing code compiles without changes and without generating any new warnings.
+By default, nullable annotation and warning contexts are **disabled**, including new projects. That means that your existing code compiles without changes and without generating any new warnings.
+
+These options provide two distinct strategies to [update an existing codebase](nullable-migration-strategies.md) to use nullable reference types.
 
 ## Nullable annotation context
 
@@ -97,7 +101,7 @@ The compiler uses the following rules in an enabled nullable annotation context:
 
 - Any variable of a reference type is a **non-nullable reference**.
 - Any non-nullable reference may be dereferenced safely.
-- Any nullable reference type (noted by `?` after the type in the variable declaration) may be null. Static analysis determines if the value is known to be non-null when it is dereferenced. If not, the compiler warns you.
+- Any nullable reference type (noted by `?` after the type in the variable declaration) may be null. Static analysis determines if the value is known to be non-null when it's dereferenced. If not, the compiler warns you.
 - You can use the null-forgiving operator to declare that a nullable reference isn't null.
 
 In an enabled nullable annotation context, the `?` character appended to a reference type declares a **nullable reference type**. The **null-forgiving operator** `!` may be appended to an expression to declare that the expression isn't null.
@@ -109,10 +113,15 @@ The nullable warning context is distinct from the nullable annotation context. W
 1. The variable has been definitely assigned to a non-null value.
 1. The variable or expression has been checked against null before de-referencing it.
 
-The compiler generates warnings whenever you dereference a variable or expression in a **maybe null** state when the nullable warning context is enabled. Furthermore, warnings are generated when a **maybe null** variable or expression is assigned to a nonnullable reference type in an enabled nullable annotation context.
+The compiler generates warnings when you dereference a variable or expression that is **maybe null** in a nullable warning context. Furthermore, the compiler generates warnings when a nonnullable reference type is assigned to a **maybe null** variable or expression in an enabled nullable annotation context.
+
+## Attributes describe APIs
+
+You add attributes to APIs that provide the compiler more information about when arguments or return values can or can't be null. You can learn more about these attributes in our article in the language reference covering the [nullable attributes](language-reference/attributes/nullable-analysis.md). These attributes are being added to .NET libraries over current and upcoming releases. The most commonly used APIs are being updated first.
 
 ## See also
 
 - [Draft nullable reference types specification](~/_csharplang/proposals/csharp-8.0/nullable-reference-types-specification.md)
 - [Intro to nullable references tutorial](tutorials/nullable-reference-types.md)
 - [Migrate an existing codebase to nullable references](tutorials/upgrade-to-nullable-references.md)
+- [-nullable (C# Compiler option)](language-reference/compiler-options/nullable-compiler-option.md)

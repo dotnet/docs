@@ -14,7 +14,7 @@ namespace SDKSample
         StackPanel myStackPanel;
         DockPanel myDockPanel;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);
@@ -55,7 +55,7 @@ namespace SDKSample
             bi2.UriSource = new Uri("smiley_stackpanel.png", UriKind.Relative);
             bi2.EndInit();
             myImage2.Source = bi2;
-            
+
             // <Snippet3>
             Image myImage3 = new Image();
             BitmapImage bi3 = new BitmapImage();
@@ -106,7 +106,7 @@ namespace SDKSample
             // Add the layout panels as children of the Grid
             myGrid.Children.Add(myDockPanel);
             myGrid.Children.Add(myStackPanel);
-            
+
             // Add the Grid as the Content of the Parent Window Object
             mainWindow.Content = myGrid;
             mainWindow.Show ();

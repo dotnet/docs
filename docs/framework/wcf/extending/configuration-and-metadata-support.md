@@ -32,7 +32,7 @@ This topic describes how to enable configuration and metadata support for bindin
   <system.serviceModel>  
     <extensions>  
       <bindingElementExtensions>  
-      <add name="udpTransport" type="Microsoft.ServiceModel.Samples.UdpTransportElement, UdpTransport />  
+      <add name="udpTransport" type="Microsoft.ServiceModel.Samples.UdpTransportElement, UdpTransport" />  
       </bindingElementExtensions>  
     </extensions>  
   </system.serviceModel>  
@@ -58,7 +58,7 @@ This topic describes how to enable configuration and metadata support for bindin
 ### Adding Configuration for a Binding  
  The section `SampleProfileUdpBindingCollectionElement` is a <xref:System.ServiceModel.Configuration.StandardBindingCollectionElement%602> that exposes `SampleProfileUdpBinding` to the configuration system. The bulk of the implementation is delegated to the `SampleProfileUdpBindingConfigurationElement`, which derives from <xref:System.ServiceModel.Configuration.StandardBindingElement>. The `SampleProfileUdpBindingConfigurationElement` has properties that correspond to the properties on `SampleProfileUdpBinding`, and functions to map from the `ConfigurationElement` binding. Finally, the `OnApplyConfiguration` method is overridden in the `SampleProfileUdpBinding`, as shown in the following sample code.  
   
-```csharp 
+```csharp
 protected override void OnApplyConfiguration(string configurationName)  
 {  
             if (binding == null)  
@@ -87,7 +87,7 @@ protected override void OnApplyConfiguration(string configurationName)
   <configSections>  
      <sectionGroup name="system.serviceModel">  
          <sectionGroup name="bindings">  
-                 <section name="sampleProfileUdpBinding" type="Microsoft.ServiceModel.Samples.SampleProfileUdpBindingCollectionElement, UdpTransport />  
+                 <section name="sampleProfileUdpBinding" type="Microsoft.ServiceModel.Samples.SampleProfileUdpBindingCollectionElement, UdpTransport" />  
          </sectionGroup>  
      </sectionGroup>  
   </configSections>  
@@ -101,9 +101,9 @@ protected override void OnApplyConfiguration(string configurationName)
   <system.serviceModel>  
     <client>  
       <endpoint configurationName="calculator"  
-                address="soap.udp://localhost:8001/"   
+                address="soap.udp://localhost:8001/"
                 bindingConfiguration="CalculatorServer"  
-                binding="sampleProfileUdpBinding"   
+                binding="sampleProfileUdpBinding"
                 contract= "Microsoft.ServiceModel.Samples.ICalculatorContract">  
       </endpoint>  
     </client>  
@@ -147,7 +147,7 @@ if (soapBinding != null)
       <metadata>  
         <wsdlImporters>  
           <extension type=" Microsoft.ServiceModel.Samples.UdpBindingElementImporter, UdpTransport" />  
-        </policyImporters>  
+        </wsdlImporters>  
       </metadata>  
     </client>  
   </system.serviceModel>  

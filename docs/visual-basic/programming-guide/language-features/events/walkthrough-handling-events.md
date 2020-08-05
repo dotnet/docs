@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
 ---
 # Walkthrough: Handling Events (Visual Basic)
-This is the second of two topics that demonstrate how to work with events. The first topic, [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md), shows how to declare and raise events. This section uses the form and class from that walkthrough to show how to handle events when they take place.  
+This is the second of two topics that demonstrate how to work with events. The first topic, [Walkthrough: Declaring and Raising Events](walkthrough-declaring-and-raising-events.md), shows how to declare and raise events. This section uses the form and class from that walkthrough to show how to handle events when they take place.  
   
  The `Widget` class example uses traditional event-handling statements. Visual Basic provides other techniques for working with events. As an exercise, you can modify this example to use the `AddHandler` and `Handles` statements.  
   
@@ -112,5 +112,5 @@ This is the second of two topics that demonstrate how to work with events. The f
   
 ## See also
 
-- [Walkthrough: Declaring and Raising Events](../../../../visual-basic/programming-guide/language-features/events/walkthrough-declaring-and-raising-events.md)
-- [Events](../../../../visual-basic/programming-guide/language-features/events/index.md)
+- [Walkthrough: Declaring and Raising Events](walkthrough-declaring-and-raising-events.md)
+- [Events](index.md)

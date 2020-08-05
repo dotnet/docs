@@ -1,5 +1,6 @@
 ---
 title: "In-Process Side-by-Side Execution"
+description: Use in-process side-by-side hosting to execute many versions of the common language runtime (CLR) in a single .NET process.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "in-process side-by-side execution"
@@ -39,7 +40,7 @@ Starting with the .NET Framework 4, you can use in-process side-by-side hosting 
 > [!NOTE]
 > .NET Framework versions 3.0 and 3.5 are built incrementally on version 2.0, and do not need to run side by side. These are inherently the same version.  
   
-<a name="scenarios"></a>   
+<a name="scenarios"></a>
 ## Common Side-by-Side Hosting Scenarios  
   
 - **Scenario 1:** Native application that uses COM components built with earlier versions of the .NET Framework.  
@@ -145,7 +146,7 @@ int _tmain(int argc, _TCHAR* argv[])
     IDispatch* pPrintInfo;  
     pUnk->QueryInterface(IID_IDispatch, (void**)&pPrintInfo);  
     OLECHAR FAR* szMethod[1];  
-    szMethod[0]=OLESTR("PrintInfo");   
+    szMethod[0]=OLESTR("PrintInfo");
     hr = pPrintInfo->GetIDsOfNames(IID_NULL,szMethod, 1, LOCALE_SYSTEM_DEFAULT, &dispid);  
     DISPPARAMS dispparams;  
     dispparams.cNamedArgs = 0;  

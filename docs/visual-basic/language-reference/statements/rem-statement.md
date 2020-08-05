@@ -43,5 +43,5 @@ REM comment
   
 ## See also
 
-- [Comments in Code](../../../visual-basic/programming-guide/program-structure/comments-in-code.md)
-- [How to: Break and Combine Statements in Code](../../../visual-basic/programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)
+- [Comments in Code](../../programming-guide/program-structure/comments-in-code.md)
+- [How to: Break and Combine Statements in Code](../../programming-guide/program-structure/how-to-break-and-combine-statements-in-code.md)

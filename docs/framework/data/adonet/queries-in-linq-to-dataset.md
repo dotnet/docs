@@ -1,5 +1,6 @@
 ---
 title: "Queries in LINQ to DataSet"
+description: Learn how to compose queries in LINQ to DataSet by obtaining the data source or sources, creating the query, and running the query.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

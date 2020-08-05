@@ -53,9 +53,9 @@ public class GenericList<T> : System.Collections.Generic.IEnumerable<T>
         }
     }
 
-    // IEnumerable<T> inherits from IEnumerable, therefore this class 
-    // must implement both the generic and non-generic versions of 
-    // GetEnumerator. In most cases, the non-generic method can 
+    // IEnumerable<T> inherits from IEnumerable, therefore this class
+    // must implement both the generic and non-generic versions of
+    // GetEnumerator. In most cases, the non-generic method can
     // simply call the generic method.
     System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
     {
@@ -65,7 +65,7 @@ public class GenericList<T> : System.Collections.Generic.IEnumerable<T>
 
 public class SortedList<T> : GenericList<T> where T : System.IComparable<T>
 {
-    // A simple, unoptimized sort algorithm that 
+    // A simple, unoptimized sort algorithm that
     // orders list elements from lowest to highest:
 
     public void BubbleSort()
@@ -113,8 +113,8 @@ public class SortedList<T> : GenericList<T> where T : System.IComparable<T>
     }
 }
 
-// A simple class that implements IComparable<T> using itself as the 
-// type argument. This is a common design pattern in objects that 
+// A simple class that implements IComparable<T> using itself as the
+// type argument. This is a common design pattern in objects that
 // are stored in generic lists.
 public class Person : System.IComparable<Person>
 {
@@ -154,18 +154,18 @@ class Program
         SortedList<Person> list = new SortedList<Person>();
 
         //Create name and age values to initialize Person objects.
-        string[] names = new string[] 
-        { 
-            "Franscoise", 
-            "Bill", 
-            "Li", 
-            "Sandra", 
-            "Gunnar", 
-            "Alok", 
-            "Hiroyuki", 
-            "Maria", 
-            "Alessandro", 
-            "Raul" 
+        string[] names = new string[]
+        {
+            "Franscoise",
+            "Bill",
+            "Li",
+            "Sandra",
+            "Gunnar",
+            "Alok",
+            "Hiroyuki",
+            "Maria",
+            "Alessandro",
+            "Raul"
         };
 
         int[] ages = new int[] { 45, 19, 28, 23, 18, 9, 108, 72, 30, 35 };

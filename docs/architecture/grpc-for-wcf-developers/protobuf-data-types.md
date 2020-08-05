@@ -37,7 +37,7 @@ Notes:
 
 ### Dates and times
 
-The native scalar types don't provide for date and time values, equivalent to C#'s <xref:System.DateTimeOffset>, <xref:System.DateTime>, and <xref:System.TimeSpan>. You can specify these types by using some of Google's "Well Known Types" extensions. These extensions provide code generation and runtime support for complex field types across the supported platforms. 
+The native scalar types don't provide for date and time values, equivalent to C#'s <xref:System.DateTimeOffset>, <xref:System.DateTime>, and <xref:System.TimeSpan>. You can specify these types by using some of Google's "Well Known Types" extensions. These extensions provide code generation and runtime support for complex field types across the supported platforms.
 
 The following table shows the date and time types:
 
@@ -82,7 +82,7 @@ TimeSpan? duration = meeting.Duration?.ToTimeSpan();
 
 ### System.Guid
 
-Protobuf doesn't directly support the <xref:System.Guid> type, known as `UUID` on other platforms. There's no well-known type for it. 
+Protobuf doesn't directly support the <xref:System.Guid> type, known as `UUID` on other platforms. There's no well-known type for it.
 
 The best approach is to handle `Guid` values as a `string` field, by using the standard `8-4-4-4-12` hexadecimal format (for example, `45a9fda3-bd01-47a9-8460-c1cd7484b0b3`). All languages and platforms can parse that format.
 
@@ -90,7 +90,7 @@ Don't use a `bytes` field for `Guid` values. Problems with *endianness* ([Wikipe
 
 ### Nullable types
 
-The Protobuf code generation for C# uses the native types, such as `int` for `int32`. So the values are always included and can't be null. 
+The Protobuf code generation for C# uses the native types, such as `int` for `int32`. So the values are always included and can't be null.
 
 For values that require explicit null, such as using `int?` in your C# code, Protobuf's "Well Known Types" include wrappers that are compiled to nullable C# types. To use them, import `wrappers.proto` into your `.proto` file, like this:
 
@@ -120,7 +120,7 @@ The following table shows the complete list of wrapper types with their equivale
 | `uint?`   | `google.protobuf.UInt32Value` |
 | `ulong?`  | `google.protobuf.UInt64Value` |
 
-The well-known types `Timestamp` and `Duration` are represented in .NET as classes, so there's no need for a nullable version. But it's important to check for null on properties of those types when you're converting to `DateTimeOffset` or `TimeSpan`.
+The well-known types `Timestamp` and `Duration` are represented in .NET as classes. In C# 8 and beyond, you can use nullable reference types. But it's important to check for null on properties of those types when you're converting to `DateTimeOffset` or `TimeSpan`.
 
 ## Decimals
 

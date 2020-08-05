@@ -15,7 +15,7 @@ Provides a way for custom control authors or applications that integrate third-p
 ## XAML Attribute Usage  
   
 ```xml  
-<object property="{ThemeDictionary assemblyUri}" .../>  
+<object property="{ThemeDictionary assemblyUri}" ... />  
 ```  
   
 ## XAML Object Element Usage  
@@ -48,7 +48,7 @@ Provides a way for custom control authors or applications that integrate third-p
  `ThemeDictionary` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.Markup.StaticExtension.Member%2A> property as a property=value pair:  
   
 ```xml  
-<object property="{ThemeDictionary AssemblyName=assemblyUri}" .../>  
+<object property="{ThemeDictionary AssemblyName=assemblyUri}" ... />  
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `ThemeDictionary` has only one settable property, which is required, this verbose usage is not typical.  
@@ -59,7 +59,7 @@ Provides a way for custom control authors or applications that integrate third-p
   
 ## See also
 
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)

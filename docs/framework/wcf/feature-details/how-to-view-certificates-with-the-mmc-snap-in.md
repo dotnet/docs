@@ -1,12 +1,13 @@
 ---
 title: "How to: View certificates with the MMC snap-in"
+description: A secure WCF client or service can use a certificate as a credential. Learn about the types of certificate stores you can examine by using the MMC plug-in.
 ms.date: 02/25/2019
 helpviewer_keywords: 
   - "certificates [WCF], viewing with the MMC snap-in"
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
 ---
 # How to: View certificates with the MMC snap-in
-When you create a secure client or service, you can use a [certificate](working-with-certificates.md) as the credential. For example, a common type of credential is the X.509 certificate, which you create with the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType> method. 
+When you create a secure client or service, you can use a [certificate](working-with-certificates.md) as the credential. For example, a common type of credential is the X.509 certificate, which you create with the <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential.SetCertificate%2A?displayProperty=nameWithType> method.
 
 There are three different types of certificate stores that you can examine with the Microsoft Management Console (MMC) on Windows systems:
 
@@ -16,25 +17,25 @@ There are three different types of certificate stores that you can examine with 
 
 - Service account: The store is local to a particular service on the device.
 
-## View certificates in the MMC snap-in 
+## View certificates in the MMC snap-in
 
-The following procedure demonstrates how to examine the stores on your local device to find an appropriate certificate: 
+The following procedure demonstrates how to examine the stores on your local device to find an appropriate certificate:
   
-1. Select **Run** from the **Start** menu, and then enter *mmc*. 
+1. Select **Run** from the **Start** menu, and then enter *mmc*.
 
-    The MMC appears. 
+    The MMC appears.
   
-2. From the **File** menu, select **Add/Remove Snap In**. 
-    
+2. From the **File** menu, select **Add/Remove Snap In**.
+
     The **Add or Remove Snap-ins** window appears.
   
 3. From the **Available snap-ins** list, choose **Certificates**, then select **Add**.  
 
     ![Add certificate snap-in](./media/mmc-add-certificate-snap-in.png)
   
-4. In the **Certificates snap-in** window, select **Computer account**, and then select **Next**. 
+4. In the **Certificates snap-in** window, select **Computer account**, and then select **Next**.
   
-    Optionally, you can select **My user account** for the current user or **Service account** for a particular service. 
+    Optionally, you can select **My user account** for the current user or **Service account** for a particular service.
 
     > [!NOTE]
     > If you're not an administrator for your device, you can manage certificates only for your user account.
@@ -57,17 +58,17 @@ You can also view, export, import, and delete certificates by using the Certific
 
 ### To view certificates for the local device
 
-1. Select **Run** from the **Start** menu, and then enter *certlm.msc*. 
+1. Select **Run** from the **Start** menu, and then enter *certlm.msc*.
 
-    The Certificate Manager tool for the local device appears. 
+    The Certificate Manager tool for the local device appears.
   
 2. To view your certificates, under **Certificates - Local Computer** in the left pane, expand the directory for the type of certificate you want to view.
 
 ### To view certificates for the current user
 
-1. Select **Run** from the **Start** menu, and then enter *certmgr.msc*. 
+1. Select **Run** from the **Start** menu, and then enter *certmgr.msc*.
 
-    The Certificate Manager tool for the current user appears. 
+    The Certificate Manager tool for the current user appears.
   
 2. To view your certificates, under **Certificates - Current User** in the left pane, expand the directory for the type of certificate you want to view.
 

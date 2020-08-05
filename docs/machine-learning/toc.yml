@@ -3,18 +3,28 @@
 - name: Overview
   expanded: true
   items:
-  - name: API
-    items:
-    - name: The ML.NET API
-      href: how-does-mldotnet-work.md
   - name: Model Builder & CLI
     items:
     - name: The ML.NET Model Builder tool
       href: automate-training-with-model-builder.md
     - name: The ML.NET Command-Line interface
       href: automate-training-with-cli.md
+  - name: API
+    items:
+    - name: The ML.NET API
+      href: how-does-mldotnet-work.md
 - name: Tutorials
   items:
+  - name: Model Builder & CLI
+    items:
+    - name: Predict prices (Model Builder & regression)
+      href: tutorials/predict-prices-with-model-builder.md
+    - name: Analyze sentiment using the ML.NET CLI
+      href: tutorials/sentiment-analysis-cli.md
+    - name: Analyze sentiment in Razor Pages (Model Builder & binary classification)
+      href: tutorials/sentiment-analysis-model-builder.md
+    - name: Categorize health violations (Model Builder & multiclass classification)
+      href: tutorials/health-violation-classification-model-builder.md
   - name: API
     items:
     - name: Overview
@@ -41,16 +51,6 @@
       href: tutorials/object-detection-onnx.md
     - name: Classify sentiment using TensorFlow (text classification)
       href: tutorials/text-classification-tf.md
-  - name: Model Builder & CLI
-    items:
-    - name: Predict prices (Model Builder & regression)
-      href: tutorials/predict-prices-with-model-builder.md
-    - name: Analyze sentiment using the ML.NET CLI
-      href: tutorials/sentiment-analysis-cli.md
-    - name: Analyze sentiment in Razor Pages (Model Builder & binary classification)
-      href: tutorials/sentiment-analysis-model-builder.md
-    - name: Categorize health violations (Model Builder & multiclass classification)
-      href: tutorials/health-violation-classification-model-builder.md
   - name: Infer.NET
     items:
     - name: Probabilistic programming with Infer.NET
@@ -69,8 +69,20 @@
     href: resources/improve-machine-learning-model-ml-net.md
 - name: How-to guides
   items:
+  - name: Model Builder & CLI
+    items:
+    - name: Load data into Model Builder
+      href: how-to-guides/load-data-model-builder.md
+    - name: Install Model Builder
+      href: how-to-guides/install-model-builder.md
+    - name: Install the CLI
+      href: how-to-guides/install-ml-net-cli.md
+    - name: Use the automated ML API
+      href: how-to-guides/how-to-use-the-automl-api.md
   - name: API
     items:
+    - name: Install extra dependencies
+      href: how-to-guides/install-extra-dependencies.md
     - name: Load data
       href: how-to-guides/load-data-ml-net.md
     - name: Prepare data
@@ -97,16 +109,6 @@
         href: how-to-guides/serve-model-serverless-azure-functions-ml-net.md
       - name: Deploy a model to a web API
         href: how-to-guides/serve-model-web-api-ml-net.md
-  - name: Model Builder & CLI
-    items:
-    - name: Load data into Model Builder
-      href: how-to-guides/load-data-model-builder.md
-    - name: Install Model Builder
-      href: how-to-guides/install-model-builder.md
-    - name: Install the CLI
-      href: how-to-guides/install-ml-net-cli.md
-    - name: Use the automated ML API
-      href: how-to-guides/how-to-use-the-automl-api.md
 - name: Reference
   items:
   - name: ML.NET API Reference

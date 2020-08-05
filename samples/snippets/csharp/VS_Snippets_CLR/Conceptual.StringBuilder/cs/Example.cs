@@ -16,7 +16,7 @@ public class Example
       Removing();
       Replacing();
    }
-   
+
    private static void InstantiateStringBuilder()
    {
       // <Snippet1>
@@ -27,7 +27,7 @@ public class Example
    private static void InstantiateWithCapacity()
    {
       // <Snippet2>
-      StringBuilder myStringBuilder = new StringBuilder("Hello World!", 25);  
+      StringBuilder myStringBuilder = new StringBuilder("Hello World!", 25);
       // </Snippet2>
       // <Snippet3>
       myStringBuilder.Capacity = 25;
@@ -48,12 +48,12 @@ public class Example
    private static void AppendingFormat()
    {
       // <Snippet5>
-      int MyInt = 25; 
+      int MyInt = 25;
       StringBuilder myStringBuilder = new StringBuilder("Your total is ");
       myStringBuilder.AppendFormat("{0:C} ", MyInt);
       Console.WriteLine(myStringBuilder);
       // The example displays the following output:
-      //       Your total is $25.00      
+      //       Your total is $25.00
       // </Snippet5>
    }
 

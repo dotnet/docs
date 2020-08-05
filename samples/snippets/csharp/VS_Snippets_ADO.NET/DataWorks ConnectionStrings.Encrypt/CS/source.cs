@@ -8,13 +8,13 @@ class Program
     {
     }
     // <Snippet1>
-    static void ToggleConfigEncryption(string exeConfigName)
+    static void ToggleConfigEncryption(string exeFile)
     {
         // Takes the executable file name without the
         // .config extension.
         try
         {
-            // Open the configuration file and retrieve 
+            // Open the configuration file and retrieve
             // the connectionStrings section.
             Configuration config = ConfigurationManager.
                 OpenExeConfiguration(exeConfigName);

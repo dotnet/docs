@@ -35,7 +35,7 @@
                         Console.WriteLine(s);
                     }
 
-                    // You also can execute the query returned from QueryMethod1 
+                    // You also can execute the query returned from QueryMethod1
                     // directly, without using myQuery1.
                     Console.WriteLine("\nResults of executing myQuery1 directly:");
                     // Rest the mouse pointer over the call to QueryMethod1 to see its
@@ -74,4 +74,4 @@
                     Console.WriteLine("Press any key to exit.");
                     Console.ReadKey();
                 }
-            } 
+            }

@@ -11,7 +11,7 @@ namespace SDKSample
     {
         StackPanel myStackPanel;
         Window mainWindow;
-        
+
         protected override void OnStartup (StartupEventArgs e)
         {
             base.OnStartup (e);

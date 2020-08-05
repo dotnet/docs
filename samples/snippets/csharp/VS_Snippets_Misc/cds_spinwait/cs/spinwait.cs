@@ -129,7 +129,7 @@ namespace CDS_Spinwait
             // two threads updating a shared integer and
             // accessing a shared StringBuilder. Both operations
             // are relatively fast, which enables the latch to
-            // demonstrate successful waits by spinning only. 
+            // demonstrate successful waits by spinning only.
 
             latch.Set();
 
@@ -332,7 +332,7 @@ namespace SpinWait2
             for (int i = 0; i < loopCount; i++)
             {
                 mre.Wait();
-                // Now do something with result array here...                
+                // Now do something with result array here...
             }
             long ticks = watch.ElapsedTicks;
             Console.WriteLine("Waiting on {0} complete. Elapsed ticks = {1}", loopCount, ticks);

@@ -20,7 +20,7 @@ To help minimize this overhead, WCF can cache channel factories when you are usi
 > [!TIP]
 > You have direct control over channel factory creation when you use the <xref:System.ServiceModel.ChannelFactory%601> class directly.
 
-WCF client proxies generated with [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) are derived from <xref:System.ServiceModel.ClientBase%601>. <xref:System.ServiceModel.ClientBase%601> defines a static <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> property that defines channel factory caching behavior. Cache settings are made for a specific type. For example, setting  `ClientBase<ITest>.CacheSettings` to one of the values defined below will affect only those proxy/ClientBase of type `ITest`. The cache setting for a particular <xref:System.ServiceModel.ClientBase%601> is immutable as soon as the first proxy/ClientBase instance is created.
+WCF client proxies generated with [ServiceModel Metadata Utility Tool (Svcutil.exe)](../servicemodel-metadata-utility-tool-svcutil-exe.md) are derived from <xref:System.ServiceModel.ClientBase%601>. <xref:System.ServiceModel.ClientBase%601> defines a static <xref:System.ServiceModel.ClientBase%601.CacheSetting%2A> property that defines channel factory caching behavior. Cache settings are made for a specific type. For example, setting  `ClientBase<ITest>.CacheSettings` to one of the values defined below will affect only those proxy/ClientBase of type `ITest`. The cache setting for a particular <xref:System.ServiceModel.ClientBase%601> is immutable as soon as the first proxy/ClientBase instance is created.
 
 ## Specifying Caching Behavior
 
@@ -110,7 +110,7 @@ In the example above, all instances of `TestClient` would use different channel 
 ## See also
 
 - <xref:System.ServiceModel.ClientBase%601>
-- [Building Clients](../../../../docs/framework/wcf/building-clients.md)
-- [Clients](../../../../docs/framework/wcf/feature-details/clients.md)
-- [Accessing Services Using a WCF Client](../../../../docs/framework/wcf/accessing-services-using-a-wcf-client.md)
-- [How to: Use the ChannelFactory](../../../../docs/framework/wcf/feature-details/how-to-use-the-channelfactory.md)
+- [Building Clients](../building-clients.md)
+- [Clients](clients.md)
+- [Accessing Services Using a WCF Client](../accessing-services-using-a-wcf-client.md)
+- [How to: Use the ChannelFactory](how-to-use-the-channelfactory.md)

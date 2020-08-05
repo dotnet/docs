@@ -16,7 +16,7 @@ Use this class to create and configure a <xref:System.Activities.ActivityBuilder
 ## Syntax  
   
 ```csharp  
-public class ClientActivityBuilder   
+public class ClientActivityBuilder
 ```  
   
 ## See also

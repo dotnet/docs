@@ -1,5 +1,6 @@
 ---
 title: "Table-Valued Parameters"
+description: Learn how to marshal multiple rows of data from a client application to SQL Server by using table-valued parameters.
 ms.date: "10/12/2018"
 dev_langs: 
   - "csharp"
@@ -33,7 +34,7 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
 - Use the `bcp` utility program or the <xref:System.Data.SqlClient.SqlBulkCopy> object to load many rows of data into a table. Although this technique is very efficient, it does not support server-side processing unless the data is loaded into a temporary table or table variable.  
   
 ## Creating Table-Valued Parameter Types  
- Table-valued parameters are based on strongly-typed table structures that are defined by using Transact-SQL CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
+ Table-valued parameters are based on strongly typed table structures that are defined by using Transact-SQL CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
   
  The following statement creates a table type named CategoryTableType that consists of CategoryID and CategoryName columns:  
   
@@ -45,7 +46,7 @@ CREATE TYPE dbo.CategoryTableType AS TABLE
  After you create a table type, you can declare table-valued parameters based on that type. The following Transact-SQL fragment demonstrates how to declare a table-valued parameter in a stored procedure definition. Note that the READONLY keyword is required for declaring a table-valued parameter.  
   
 ```sql
-CREATE PROCEDURE usp_UpdateCategories   
+CREATE PROCEDURE usp_UpdateCategories
     (@tvpNewCategories dbo.CategoryTableType READONLY)  
 ```  
   
@@ -81,7 +82,7 @@ INSERT INTO dbo.Categories (CategoryID, CategoryName)
   
 ## Configuring a SqlParameter Example  
  <xref:System.Data.SqlClient> supports populating table-valued parameters from <xref:System.Data.DataTable>, <xref:System.Data.Common.DbDataReader> or <xref:System.Collections.Generic.IEnumerable%601> \ <xref:Microsoft.SqlServer.Server.SqlDataRecord> objects. You must specify a type name for the table-valued parameter by using the <xref:System.Data.SqlClient.SqlParameter.TypeName%2A> property of a <xref:System.Data.SqlClient.SqlParameter>. The `TypeName` must match the name of a compatible type previously created on the server. The following code fragment demonstrates how to configure <xref:System.Data.SqlClient.SqlParameter> to insert data.  
- 
+
 In the following example, the `addedCategories` variable contains a <xref:System.Data.DataTable>. To see how the variable is populated, see the examples in the next section, [Passing a Table-Valued Parameter to a Stored Procedure](#passing).
 
 ```csharp  
@@ -178,7 +179,7 @@ using (connection)
   DataTable addedCategories = CategoriesDataTable.GetChanges(DataRowState.Added);  
 
   // Define the INSERT-SELECT statement.  
-  string sqlInsert =   
+  string sqlInsert =
       "INSERT INTO dbo.Categories (CategoryID, CategoryName)"  
       + " SELECT nc.CategoryID, nc.CategoryName"  
       + " FROM @tvpNewCategories AS nc;"  

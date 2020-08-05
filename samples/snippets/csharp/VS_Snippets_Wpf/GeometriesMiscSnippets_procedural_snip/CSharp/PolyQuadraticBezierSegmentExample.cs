@@ -19,7 +19,7 @@ namespace SDKSample
             // geometry starts at point 10,100.
             myPathFigure.StartPoint = new Point(10, 100);
 
-            // Create a PointCollection that holds the Points used to specify 
+            // Create a PointCollection that holds the Points used to specify
             // the points of the PolyQuadraticBezierSegment below.
             PointCollection myPointCollection = new PointCollection(4);
             myPointCollection.Add(new Point(200, 200));
@@ -30,7 +30,7 @@ namespace SDKSample
             // The PolyQuadraticBezierSegment specifies two Bezier curves.
             // The first curve is from 10,100 (start point specified above)
             // to 300,100 with a control point of 200,200. The second curve
-            // is from 200,200 (end of the last curve) to 30,400 with a 
+            // is from 200,200 (end of the last curve) to 30,400 with a
             // control point of 0,200.
             PolyQuadraticBezierSegment myBezierSegment = new PolyQuadraticBezierSegment();
             myBezierSegment.Points = myPointCollection;

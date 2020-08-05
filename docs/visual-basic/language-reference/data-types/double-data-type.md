@@ -32,7 +32,7 @@ The default value of `Double` is 0.
 
 ## Programming Tips
 
-- **Precision.** When you work with floating-point numbers, remember that they do not always have a precise representation in memory. This could lead to unexpected results from certain operations, such as value comparison and the `Mod` operator. For more information, see [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md).
+- **Precision.** When you work with floating-point numbers, remember that they do not always have a precise representation in memory. This could lead to unexpected results from certain operations, such as value comparison and the `Mod` operator. For more information, see [Troubleshooting Data Types](../../programming-guide/language-features/data-types/troubleshooting-data-types.md).
 
 - **Trailing Zeros.** The floating-point data types do not have any internal representation of trailing zero characters. For example, they do not distinguish between 4.2000 and 4.2. Consequently, trailing zero characters do not appear when you display or print floating-point values.
 
@@ -54,11 +54,11 @@ The default value of `Double` is 0.
 ## See also
 
 - <xref:System.Double?displayProperty=nameWithType>
-- [Data Types](../../../visual-basic/language-reference/data-types/index.md)
-- [Decimal Data Type](../../../visual-basic/language-reference/data-types/decimal-data-type.md)
-- [Single Data Type](../../../visual-basic/language-reference/data-types/single-data-type.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)
-- [Efficient Use of Data Types](../../../visual-basic/programming-guide/language-features/data-types/efficient-use-of-data-types.md)
-- [Troubleshooting Data Types](../../../visual-basic/programming-guide/language-features/data-types/troubleshooting-data-types.md)
-- [Type Characters](../../../visual-basic/programming-guide/language-features/data-types/type-characters.md)
+- [Data Types](index.md)
+- [Decimal Data Type](decimal-data-type.md)
+- [Single Data Type](single-data-type.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)
+- [Conversion Summary](../keywords/conversion-summary.md)
+- [Efficient Use of Data Types](../../programming-guide/language-features/data-types/efficient-use-of-data-types.md)
+- [Troubleshooting Data Types](../../programming-guide/language-features/data-types/troubleshooting-data-types.md)
+- [Type Characters](../../programming-guide/language-features/data-types/type-characters.md)

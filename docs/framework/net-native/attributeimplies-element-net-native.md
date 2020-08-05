@@ -12,7 +12,7 @@ Defines policy for code elements the containing attribute is applied to.
 <AttributeImplies Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
-                  Serialize="policy_type"   
+                  Serialize="policy_type"
                   DataContractSerializer="policy_setting"  
                   DataContractJsonSerializer="policy_setting"  
                   XmlSerializer="policy_setting"  

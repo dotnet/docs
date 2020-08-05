@@ -1,13 +1,13 @@
 ---
-title: "How to: Animate 3-D Translations"
+title: "How to: Animate 3D Translations"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "animation [WPF], 3-D translations"
-  - "3-D translations [WPF], animating"
+  - "animation [WPF], 3D translations"
+  - "3D translations [WPF], animating"
 ms.assetid: d4eece1f-0cd2-4a2c-8370-293354c380e4
 ---
-# How to: Animate 3-D Translations
-This topic demonstrates how to animate a translation transformation set on a 3-D model.  
+# How to: Animate 3D Translations
+This topic demonstrates how to animate a translation transformation set on a 3D model.  
   
  The code below shows the application of a <xref:System.Windows.Media.Media3D.TranslateTransform3D> object to the <xref:System.Windows.Media.Media3D.Model3D.Transform%2A> property of a <xref:System.Windows.Media.Media3D.GeometryModel3D>.  
   
@@ -25,6 +25,6 @@ This topic demonstrates how to animate a translation transformation set on a 3-D
 ## See also
 
 - [Animation Overview](animation-overview.md)
-- [Create a 3-D Scene](how-to-create-a-3-d-scene.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [Create a 3D Scene](how-to-create-a-3-d-scene.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)
 - [Transforms Overview](transforms-overview.md)

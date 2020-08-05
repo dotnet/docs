@@ -9,9 +9,9 @@ Extension methods are a language feature that allows static methods to be called
 
  The class that defines such extension methods is referred to as the "sponsor" class, and it must be declared as static. To use extension methods, one must import the namespace defining the sponsor class.
 
- ❌ AVOID frivolously defining extension methods, especially on types you don’t own.
+ ❌ AVOID frivolously defining extension methods, especially on types you don't own.
 
- If you do own source code of a type, consider using regular instance methods instead. If you don’t own, and you want to add a method, be very careful. Liberal use of extension methods has the potential of cluttering APIs of types that were not designed to have these methods.
+ If you do own source code of a type, consider using regular instance methods instead. If you don't own, and you want to add a method, be very careful. Liberal use of extension methods has the potential of cluttering APIs of types that were not designed to have these methods.
 
  ✔️ CONSIDER using extension methods in any of the following scenarios:
 
@@ -21,7 +21,7 @@ Extension methods are a language feature that allows static methods to be called
 
  ❌ AVOID defining extension methods on <xref:System.Object?displayProperty=nameWithType>.
 
- Visual Basic users will not be able to call such methods on object references using the extension method syntax. Visual Basic does not support calling such methods because, in Visual Basic, declaring a reference as Object forces all method invocations on it to be late bound (actual member called is determined at runtime), while bindings to extension methods are determined at compile-time (early bound).
+ VB users will not be able to call such methods on object references using the extension method syntax. VB does not support calling such methods because, in VB, declaring a reference as Object forces all method invocations on it to be late bound (actual member called is determined at runtime), while bindings to extension methods are determined at compile-time (early bound).
 
  Note that the guideline applies to other languages where the same binding behavior is present, or where extension methods are not supported.
 
@@ -35,11 +35,11 @@ Extension methods are a language feature that allows static methods to be called
 
  ❌ AVOID generic naming of namespaces dedicated to extension methods (e.g., "Extensions"). Use a descriptive name (e.g., "Routing") instead.
 
- *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
+ *Portions &copy; 2005, 2009 Microsoft Corporation. All rights reserved.*
 
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*
 
 ## See also
 
-- [Member Design Guidelines](../../../docs/standard/design-guidelines/member.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Member Design Guidelines](member.md)
+- [Framework Design Guidelines](index.md)

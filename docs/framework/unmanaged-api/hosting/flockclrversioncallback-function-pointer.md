@@ -30,7 +30,7 @@ typedef HRESULT (__stdcall *FLockClrVersionCallback) ( );
  This function is implemented by the host.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -40,5 +40,5 @@ typedef HRESULT (__stdcall *FLockClrVersionCallback) ( );
   
 ## See also
 
-- [LockClrVersion Function](../../../../docs/framework/unmanaged-api/hosting/lockclrversion-function.md)
-- [Deprecated CLR Hosting Functions](../../../../docs/framework/unmanaged-api/hosting/deprecated-clr-hosting-functions.md)
+- [LockClrVersion Function](lockclrversion-function.md)
+- [Deprecated CLR Hosting Functions](deprecated-clr-hosting-functions.md)

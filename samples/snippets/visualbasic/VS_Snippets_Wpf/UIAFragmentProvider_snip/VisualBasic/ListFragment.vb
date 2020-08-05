@@ -52,9 +52,9 @@ Class ParentList
     Public myItems As ArrayList
     Private mySelection As Integer
     Private Const itemHeight As Integer = 15
-    
-    #Region "Public methods"
-    
+
+#Region "Public methods"
+
     ''' <summary>
     ''' Constructor.
     ''' </summary>
@@ -101,14 +101,14 @@ Class ParentList
     ''' </summary>
     ''' <param name="provider">The UI Automation provider for the control.</param>
     ''' <param name="newValue">The current enabled state.</param>
-    Private Sub RaiseEnabledEvent(ByVal provider As IRawElementProviderSimple, ByVal newValue As Boolean) 
+    Private Sub RaiseEnabledEvent(ByVal provider As IRawElementProviderSimple, ByVal newValue As Boolean)
         If AutomationInteropProvider.ClientsAreListening Then
             Dim args As New AutomationPropertyChangedEventArgs(AutomationElement.IsEnabledProperty, Not newValue, newValue)
             AutomationInteropProvider.RaiseAutomationPropertyChangedEvent(provider, args)
         End If
-    
+
     End Sub
-    
+
     ' </Snippet123>
     ''' <summary>
     ''' Add an item to the list.
@@ -191,9 +191,9 @@ Class ParentList
 
     End Sub
     ' </Snippet118>      
-    #End Region
+#End Region
 
-    
+
 #Region "Control method overrides"
 
     ' <Snippet116>
@@ -350,9 +350,9 @@ Class ParentList
 
 #End Region
 
-    
-    
-    #Region "IRawElementProviderSimple"
+
+
+#Region "IRawElementProviderSimple"
 
     ' <Snippet120>
     ''' <summary>
@@ -428,7 +428,7 @@ Class ParentList
             Return ProviderOptions.ServerSideProvider
         End Get
     End Property
-    
+
 #End Region
 
 #Region "IRawElementProviderFragment"

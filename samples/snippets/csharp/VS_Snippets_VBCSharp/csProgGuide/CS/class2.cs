@@ -1,5 +1,5 @@
 ﻿//<Snippet34>
-// A skeleton of a C# program 
+// A skeleton of a C# program
 using System;
 namespace YourNamespace
 {
@@ -11,26 +11,26 @@ namespace YourNamespace
     {
     }
 
-    interface IYourInterface 
+    interface IYourInterface
     {
     }
 
     delegate int YourDelegate();
 
-    enum YourEnum 
+    enum YourEnum
     {
     }
 
     namespace YourNestedNamespace
     {
-        struct YourStruct 
+        struct YourStruct
         {
         }
     }
 
     class YourMainClass
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
             //Your program starts here...
         }

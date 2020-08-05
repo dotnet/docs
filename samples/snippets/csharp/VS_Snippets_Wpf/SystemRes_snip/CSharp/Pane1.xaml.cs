@@ -27,7 +27,7 @@ namespace ButtonResources
                   btncsharp.FontFamily = SystemFonts.CaptionFontFamily;
                   cv1.Children.Add(btncsharp);
                   //</SnippetFontResourcesCode>
-                  } 
+                  }
         void OnClick2(object sender, RoutedEventArgs e)
 		 {
                   //<SnippetParameterResourcesCode>

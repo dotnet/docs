@@ -5,24 +5,24 @@
 * Description:
 *   This sample client locates the element representing the main window of the
 *   TreeWalkerTarget sample application. It then locates the element representing
-*   the tab control in the automation element tree. The sample subscribes to the 
+*   the tab control in the automation element tree. The sample subscribes to the
 *   automation StructureChanged event on the tab control element.
-* 
+*
 *   To run the sample within Visual Studio, first open the solution properties and
-*   set both the target and the client applications to run as multiple startup 
+*   set both the target and the client applications to run as multiple startup
 *   projects.
 *
-*   When the user clicks a tab on the control, a StructureChanged event is raised and the 
+*   When the user clicks a tab on the control, a StructureChanged event is raised and the
 *   current stucture of the subtree is displayed in the client window.
-* 
+*
 *   The sample also demonstrates two-way communication between the target application and the client.
-*   When the user toggles automation on or off in the client application, a message is displayed 
+*   When the user toggles automation on or off in the client application, a message is displayed
 *   in a text box in the target application's window.
 *
 * Programming Elements:
 *    This sample demonstrates the following UI Automation programming elements from the
 *     System.Windows.Automation namespace:
-* 
+*
 *       AutomationElement class
 *           RootElement property
 *           AutomationId property
@@ -124,12 +124,12 @@ namespace NavigateWithTreeWalker
             }
             else if ((string)element.GetCurrentPropertyValue(AutomationElement.NameProperty) != "")
             {
-                structureStringBuilder.Append("Name : " 
+                structureStringBuilder.Append("Name : "
                     + element.GetCurrentPropertyValue(AutomationElement.NameProperty) + "\r\n");
             }
             else if ((string)element.GetCurrentPropertyValue(AutomationElement.LocalizedControlTypeProperty) != "")
             {
-                structureStringBuilder.Append("Localized Control Type : " 
+                structureStringBuilder.Append("Localized Control Type : "
                     + element.GetCurrentPropertyValue(AutomationElement.LocalizedControlTypeProperty) + "\r\n");
             }
             else
@@ -247,7 +247,7 @@ namespace NavigateWithTreeWalker
         {
             IsElementToggledOn((AutomationElement)sender);
             string StructureDescription = GetAutomationStructure(tabElement);
-            ShowStructure(StructureDescription); 
+            ShowStructure(StructureDescription);
         }
 
         /// <summary>
@@ -335,12 +335,12 @@ namespace NavigateWithTreeWalker
                 {
                     if ((bool)elementCheckBox.GetCurrentPropertyValue(AutomationElement.IsTogglePatternAvailableProperty) == true)
                     {
-                        IsElementToggledOn(elementCheckBox);  
-                        AutomationPropertyChangedEventHandler _onToggleStateChanged = 
+                        IsElementToggledOn(elementCheckBox);
+                        AutomationPropertyChangedEventHandler _onToggleStateChanged =
                             new AutomationPropertyChangedEventHandler(OnToggleStateChanged);
-                        Automation.AddAutomationPropertyChangedEventHandler(elementCheckBox, 
-                            TreeScope.Element, 
-                            _onToggleStateChanged, 
+                        Automation.AddAutomationPropertyChangedEventHandler(elementCheckBox,
+                            TreeScope.Element,
+                            _onToggleStateChanged,
                             propsWanted);
                     }
                 }

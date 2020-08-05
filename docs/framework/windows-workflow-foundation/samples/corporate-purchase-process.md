@@ -34,11 +34,11 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WF\Application\PurchaseProcess`  
   
 ## Description of the Process  
@@ -48,7 +48,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
   
     1. The employee types in the RFP title and description.  
   
-    2. The employee selects the vendors that he wants to invite to submit proposals.  
+    2. The employee selects the vendors that they want to invite to submit proposals.  
   
 2. The employee submits the proposal.  
   
@@ -87,7 +87,7 @@ This sample shows how to create a very basic Request for Proposals (RFP) based p
 |IPurchaseProcessHost.cs|Interface for the host of the workflow.|  
 |PurchaseProcessHost.cs|Implementation of a host for the workflow. The host abstracts the details of the workflow runtime and is used in all the client applications to load, run, and interact with `PurchaseProcess` workflow instances.|  
 |PurchaseProcessWorkflow.cs|An activity that contains the definition of the Purchase Process workflow (derives from <xref:System.Activities.Activity>).<br /><br /> Activities that derive from <xref:System.Activities.Activity> compose functionality by assembling existing custom activities and activities from the [!INCLUDE[netfx_current_long](../../../../includes/netfx-current-long-md.md)] activity library. Assembling these activities is the most basic way to create custom functionality.|  
-|WaitForVendorProposal.cs|This custom activity derives from <xref:System.Activities.NativeActivity> and creates a named bookmark that must be resumed later by a vendor when submitting the proposal.<br /><br /> Activities that derive from <xref:System.Activities.NativeActivity>, like those that derive from <xref:System.Activities.CodeActivity>, create imperative functionality by overriding <xref:System.Activities.NativeActivity.Execute%2A>, but also have access to all of the functionality of the workflow runtime through the <xref:System.Activities.ActivityContext> that gets passed into the `Execute` method. This context has support for scheduling and canceling child activities, setting up no-persist zones (execution blocks during which the runtime does not persist the workflow’s data, such as within atomic transactions), and <xref:System.Activities.Bookmark> objects (handles for resuming paused workflows).|  
+|WaitForVendorProposal.cs|This custom activity derives from <xref:System.Activities.NativeActivity> and creates a named bookmark that must be resumed later by a vendor when submitting the proposal.<br /><br /> Activities that derive from <xref:System.Activities.NativeActivity>, like those that derive from <xref:System.Activities.CodeActivity>, create imperative functionality by overriding <xref:System.Activities.NativeActivity.Execute%2A>, but also have access to all of the functionality of the workflow runtime through the <xref:System.Activities.ActivityContext> that gets passed into the `Execute` method. This context has support for scheduling and canceling child activities, setting up no-persist zones (execution blocks during which the runtime does not persist the workflow's data, such as within atomic transactions), and <xref:System.Activities.Bookmark> objects (handles for resuming paused workflows).|  
 |TrackingParticipant.cs|A <xref:System.Activities.Tracking.TrackingParticipant> that receives all tracking events and saves them to a text file.<br /><br /> Tracking participants are added to workflow instance as Extensions.|  
 |XmlWorkflowInstanceStore.cs|A custom <xref:System.Runtime.DurableInstancing.InstanceStore> that saves workflow applications to XML files.|  
 |XmlPersistenceParticipant.cs|A custom <xref:System.Activities.Persistence.PersistenceParticipant> that saves an instance of request for proposal to an XML file.|  

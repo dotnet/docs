@@ -19,7 +19,7 @@ class TestMyServices
         Console.WriteLine(myClock.LocalTime.DayOfWeek);
         Console.Write("Current date and time: ");
         Console.WriteLine(myClock.LocalTime);
-        
+
         // Display machine information with the Computer class:
         Computer myComputer = new Computer();
         Console.WriteLine("Computer name: " + myComputer.Name);

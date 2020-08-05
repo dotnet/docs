@@ -31,7 +31,7 @@ You need the following components to complete this walkthrough:
 
 3. In the Installed Templates pane, select **Data** and in the list of templates, select **ADO.NET Entity Data Model**.
 
-     ![ADO.NET Entity Data Model item template](../../wcf/feature-details/./media/ado-net-entity-data-model-item-template.png)
+     ![ADO.NET Entity Data Model item template](../../wcf/feature-details/media/ado-net-entity-data-model-item-template.png)
 
 4. Name the file `AdventureWorksModel.edmx` and then click **Add**.
 

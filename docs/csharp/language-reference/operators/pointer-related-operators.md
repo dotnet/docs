@@ -64,7 +64,7 @@ The binary `*` operator computes the [product](arithmetic-operators.md#multiplic
 
 ## Pointer member access operator ->
 
-The `->` operator combines [pointer indirection](#pointer-indirection-operator-) and [member access](member-access-operators.md#member-access-operator-). That is, if `x` is a pointer of type `T*` and `y` is an accessible member of type `T`, an expression of the form
+The `->` operator combines [pointer indirection](#pointer-indirection-operator-) and [member access](member-access-operators.md#member-access-expression-). That is, if `x` is a pointer of type `T*` and `y` is an accessible member of type `T`, an expression of the form
 
 ```csharp
 x->y
@@ -90,14 +90,14 @@ The following example demonstrates how to access array elements with a pointer a
 
 [!code-csharp[pointer element access](snippets/PointerOperators.cs#ElementAccess)]
 
-The example uses the [`stackalloc` operator](stackalloc.md) to allocate a block of memory on the stack.
+In the preceding example, a [`stackalloc` expression](stackalloc.md) allocates a block of memory on the stack.
 
 > [!NOTE]
 > The pointer element access operator doesn't check for out-of-bounds errors.
 
 You cannot use `[]` for pointer element access with an expression of type `void*`.
 
-You also can use the `[]` operator for [array element or indexer access](member-access-operators.md#indexer-operator-).
+You can also use the `[]` operator for [array element or indexer access](member-access-operators.md#indexer-operator-).
 
 ## Pointer arithmetic operators
 
@@ -186,5 +186,5 @@ For more information, see the following sections of the [C# language specificati
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [unsafe keyword](../keywords/unsafe.md)
 - [fixed keyword](../keywords/fixed-statement.md)
-- [stackalloc operator](stackalloc.md)
+- [stackalloc](stackalloc.md)
 - [sizeof operator](sizeof.md)

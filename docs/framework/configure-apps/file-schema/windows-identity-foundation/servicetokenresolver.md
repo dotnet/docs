@@ -60,4 +60,3 @@ Registers the service token resolver that is used by handlers in the token handl
 ```xml  
 <serviceTokenResolver type="MyNamespace.CustomTokenResolver, MyAssembly" />  
 ```
- 

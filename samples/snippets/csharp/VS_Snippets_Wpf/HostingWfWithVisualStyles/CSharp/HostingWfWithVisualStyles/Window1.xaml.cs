@@ -30,7 +30,7 @@ namespace HostingWfWithVisualStyles
 
             // Create a WindowsFormsHost element to host
             // the Windows Forms control.
-            System.Windows.Forms.Integration.WindowsFormsHost host = 
+            System.Windows.Forms.Integration.WindowsFormsHost host =
                 new System.Windows.Forms.Integration.WindowsFormsHost();
 
             // Create a Windows Forms tab control.

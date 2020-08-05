@@ -10,13 +10,13 @@ namespace MarqueeControlLibrary
     public interface IMarqueeWidget
     {
         // </snippet2>
-        // This method starts the animation. If the control can 
+        // This method starts the animation. If the control can
         // contain other classes that implement IMarqueeWidget as
         // children, the control should call StartMarquee on all
         // its IMarqueeWidget child controls.
         void StartMarquee();
 
-        // This method stops the animation. If the control can 
+        // This method stops the animation. If the control can
         // contain other classes that implement IMarqueeWidget as
         // children, the control should call StopMarquee on all
         // its IMarqueeWidget child controls.

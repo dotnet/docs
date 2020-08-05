@@ -13,7 +13,7 @@ public class Form1 : Form
     //<Snippet10>
     public Form1()
     {
-        // Initialize the images. 
+        // Initialize the images.
         try
         {
             highPriImage = new Bitmap("highPri.bmp");
@@ -47,7 +47,7 @@ public class Form1 : Form
 
     //<Snippet20>
     // Changes how cells are displayed depending on their columns and values.
-    private void dataGridView1_CellFormatting(object sender, 
+    private void dataGridView1_CellFormatting(object sender,
         System.Windows.Forms.DataGridViewCellFormattingEventArgs e)
     {
         //<Snippet21>
@@ -55,7 +55,7 @@ public class Form1 : Form
         if (dataGridView1.Columns[e.ColumnIndex].Name.Equals("Balance"))
         {
             Int32 intValue;
-            if (Int32.TryParse((String)e.Value, out intValue) && 
+            if (Int32.TryParse((String)e.Value, out intValue) &&
                 (intValue < 0))
             {
                 e.CellStyle.BackColor = Color.Red;

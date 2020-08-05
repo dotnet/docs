@@ -13,7 +13,7 @@ class Latch
    private int m_state = 0;
    private volatile int totalKernelWaits = 0;
 
-   // Block threads waiting for ManualResetEvent. 
+   // Block threads waiting for ManualResetEvent.
    private ManualResetEvent m_ev = new ManualResetEvent(false);
 #if LOGGING
    // For fast logging with minimal impact on latch behavior.
@@ -22,15 +22,15 @@ class Latch
 
    public void DisplayLog()
    {
-      for (int i = 0; i < spinCountLog.Length; i++)                                                          
+      for (int i = 0; i < spinCountLog.Length; i++)
       {
-          Console.WriteLine("Wait succeeded with spin count of {0} on {1:N0} attempts", 
+          Console.WriteLine("Wait succeeded with spin count of {0} on {1:N0} attempts",
                             i, spinCountLog[i]);
       }
       Console.WriteLine("Wait used the kernel event on {0:N0} attempts.", totalKernelWaits);
       Console.WriteLine("Logging complete");
    }
-#endif                     
+#endif
 
    public void Set()
    {
@@ -119,12 +119,12 @@ class Example
 
    static void Main()
    {
-      // Demonstrate latch with a simple scenario: multiple 
+      // Demonstrate latch with a simple scenario: multiple
       // threads updating a shared integer. Both operations
       // are relatively fast, which enables the latch to
-      // demonstrate successful waits by spinning only. 
+      // demonstrate successful waits by spinning only.
       latch.Set();
-      
+
       // UI thread. Press 'c' to cancel the loop.
       Task.Factory.StartNew(() =>
       {

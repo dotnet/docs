@@ -28,5 +28,5 @@ Strictly speaking, a class becomes a base class when another class is derived fr
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
+- [Framework Design Guidelines](index.md)
+- [Designing for Extensibility](designing-for-extensibility.md)

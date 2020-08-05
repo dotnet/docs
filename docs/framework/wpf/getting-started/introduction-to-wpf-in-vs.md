@@ -1,20 +1,21 @@
 ---
 title: "Introduction to WPF in Visual Studio"
 titleSuffix: ""
+description: Build line-of-business desktop applications with the unified programming model provided in Windows Presentation Foundation (WPF).
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "typography [WPF]"
   - "media [WPF]"
   - "code-behind [WPF]"
   - "Windows Presentation Foundation [WPF], about Windows Presentation Foundation"
-  - "2-D shapes [WPF]"
+  - "2D shapes [WPF]"
   - "animation [WPF]"
   - "standalone applications [WPF]"
   - "markup [WPF]"
-  - "2-D effects [WPF]"
+  - "2D effects [WPF]"
   - "browser-hosted applications [WPF]"
   - "WPF [WPF], about Windows Presentation Foundation"
-  - "3-D rendering [WPF]"
+  - "3D rendering [WPF]"
 ms.assetid: 582a314e-e23d-4144-b45b-acbbd5579252
 ---
 # Introduction to WPF in Visual Studio

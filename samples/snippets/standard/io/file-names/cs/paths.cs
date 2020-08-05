@@ -9,7 +9,7 @@ public class Example
    {
       Console.WriteLine($"Current directory is '{Environment.CurrentDirectory}'");
       Console.WriteLine("Setting current directory to 'C:\\'");
-      
+
       Directory.SetCurrentDirectory(@"C:\");
       string path = Path.GetFullPath(@"D:\FY2018");
       Console.WriteLine($"'D:\\FY2018' resolves to {path}");

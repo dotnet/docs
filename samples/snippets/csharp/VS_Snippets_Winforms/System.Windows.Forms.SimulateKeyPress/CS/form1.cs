@@ -53,7 +53,7 @@ namespace SimulateKeyPress
                 return;
             }
 
-            // Make Calculator the foreground application and send it 
+            // Make Calculator the foreground application and send it
             // a set of calculations.
             SetForegroundWindow(calculatorHandle);
             SendKeys.SendWait("111");
@@ -64,12 +64,12 @@ namespace SimulateKeyPress
         // </Snippet5>
 
         // <Snippet10>
-        // Send a key to the button when the user double-clicks anywhere 
+        // Send a key to the button when the user double-clicks anywhere
         // on the form.
         private void Form1_DoubleClick(object sender, EventArgs e)
         {
-            // Send the enter key to the button, which raises the click 
-            // event for the button. This works because the tab stop of 
+            // Send the enter key to the button, which raises the click
+            // event for the button. This works because the tab stop of
             // the button is 0.
             SendKeys.Send("{ENTER}");
         }

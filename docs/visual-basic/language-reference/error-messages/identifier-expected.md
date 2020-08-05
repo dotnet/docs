@@ -21,5 +21,5 @@ A programming element that is not a recognizable declared element name occurs wh
   
 ## See also
 
-- [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md)
-- [Attributes overview](../../../visual-basic/programming-guide/concepts/attributes/index.md)
+- [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md)
+- [Attributes overview](../../programming-guide/concepts/attributes/index.md)

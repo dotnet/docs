@@ -1,14 +1,14 @@
 ---
-title: "How to: Animate Material Properties in a 3-D Scene"
+title: "How to: Animate Material Properties in a 3D Scene"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "Material properties [WPF], animating in 3-D scenes"
-  - "animation [WPF], Material properties in 3-D scenes"
-  - "3-D scenes [WPF], animating Material properties"
+  - "Material properties [WPF], animating in 3D scenes"
+  - "animation [WPF], Material properties in 3D scenes"
+  - "3D scenes [WPF], animating Material properties"
 ms.assetid: 229fd6eb-7401-4992-b0c9-8b28de230c0f
 ---
-# How to: Animate Material Properties in a 3-D Scene
-This example shows how to animate the <xref:System.Windows.Media.Brush.Opacity%2A> property of the <xref:System.Windows.Media.Media3D.Material> applied to a 3-D model.  
+# How to: Animate Material Properties in a 3D Scene
+This example shows how to animate the <xref:System.Windows.Media.Brush.Opacity%2A> property of the <xref:System.Windows.Media.Media3D.Material> applied to a 3D model.  
   
  The following code example defines the <xref:System.Windows.Media.LinearGradientBrush> used as the <xref:System.Windows.Media.Media3D.Material> applied to the 3D object.  
   
@@ -25,5 +25,5 @@ This example shows how to animate the <xref:System.Windows.Media.Brush.Opacity%2
   
 ## See also
 
-- [Create a 3-D Scene](how-to-create-a-3-d-scene.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [Create a 3D Scene](how-to-create-a-3-d-scene.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

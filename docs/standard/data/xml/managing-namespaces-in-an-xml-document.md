@@ -1,5 +1,6 @@
 ---
 title: "Managing Namespaces in an XML Document"
+description: Learn how to manage namespaces in an XML document. XML namespaces associate element and attribute names in an XML document with custom and predefined URIs.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 682643fc-b848-4e42-8c0d-50deeaeb5f2a
@@ -19,7 +20,8 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ```xml  
 <mybook:BOOK xmlns:mybook="http://www.contoso.com/books.dtd">  
-<bb:BOOK xmlns:bb="urn:blueyonderairlines">  
+<bb:BOOK xmlns:bb="urn:blueyonderairlines" />
+</mybook>
 ```  
   
  To signify that an element is a part of a particular namespace, add the namespace prefix to it. For example, if a `Author` element belongs to the `mybook` namespace, it is declared as `<mybook:Author>`.  
@@ -47,6 +49,8 @@ XML namespaces associate element and attribute names in an XML document with cus
   
 ```xml  
 <BOOK xmlns="http://www.contoso.com/books.dtd">  
+...
+</BOOK>
 ```  
   
 ## Managing namespaces  
@@ -74,4 +78,4 @@ XML namespaces associate element and attribute names in an XML document with cus
 ## See also
 
 - <xref:System.Xml.XmlNamespaceManager>
-- [XML Documents and Data](../../../../docs/standard/data/xml/index.md)
+- [XML Documents and Data](index.md)

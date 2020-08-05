@@ -5,21 +5,21 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim pattern As String = "\b(\w+)(\W){1,2}"
-      Dim input As String = "The old, grey mare slowly walked across the narrow, green pasture."
-      For Each match As Match In Regex.Matches(input, pattern)
-         Console.WriteLine(match.Value)
-         Console.Write("   Non-word character(s):")
-         Dim captures As CaptureCollection = match.Groups(2).Captures
-         For ctr As Integer = 0 To captures.Count - 1
-             Console.Write("'{0}' (\u{1}){2}", captures(ctr).Value, _
-                           Convert.ToUInt16(captures(ctr).Value.Chars(0)).ToString("X4"), _
-                           If(ctr < captures.Count - 1, ", ", ""))
-         Next
-         Console.WriteLine()
-      Next
-   End Sub
+    Public Sub Main()
+        Dim pattern As String = "\b(\w+)(\W){1,2}"
+        Dim input As String = "The old, grey mare slowly walked across the narrow, green pasture."
+        For Each match As Match In Regex.Matches(input, pattern)
+            Console.WriteLine(match.Value)
+            Console.Write("   Non-word character(s):")
+            Dim captures As CaptureCollection = match.Groups(2).Captures
+            For ctr As Integer = 0 To captures.Count - 1
+                Console.Write("'{0}' (\u{1}){2}", captures(ctr).Value, _
+                              Convert.ToUInt16(captures(ctr).Value.Chars(0)).ToString("X4"), _
+                              If(ctr < captures.Count - 1, ", ", ""))
+            Next
+            Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       The

@@ -22,9 +22,9 @@ Provides information about an object on the managed heap.
   
 ```cpp  
 typedef struct _COR_HEAPOBJECT {  
-    CORDB_ADDRESS address;    
-    ULONG64 size;             
-    COR_TYPEID type;          
+    CORDB_ADDRESS address;
+    ULONG64 size;
+    COR_TYPEID type;
 } COR_HEAPOBJECT;  
 ```  
   

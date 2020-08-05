@@ -26,7 +26,7 @@ namespace BasicAuthentication
 
         public static void Run()
         {
-            
+
             // Create the binding.
             WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Mode = SecurityMode.Transport;
@@ -35,7 +35,7 @@ namespace BasicAuthentication
 
             // Create the URI for the endpoint.
             Uri httpUri = new Uri("https://localhost:8006/Calculator");
-            
+
             // Create the service host and add an endpoint.
             ServiceHost myServiceHost = new ServiceHost(
                 typeof(ServiceModel.Calculator), httpUri);
@@ -47,8 +47,8 @@ namespace BasicAuthentication
             Console.WriteLine("Listening...");
             Console.WriteLine("Press Enter to exit.");
             Console.ReadLine();
-            
-            // Close the service. 
+
+            // Close the service.
             myServiceHost.Close();
         }
 
@@ -63,11 +63,11 @@ namespace BasicAuthentication
 
             // Create the endpoint address. Note that the machine name must
             // must match the subject or DNS field of the X.509 certificate
-            // used to authenticate the service. 
+            // used to authenticate the service.
             EndpointAddress ea = new
                 EndpointAddress("https://machineName:8006/Calculator");
 
-            // Create the client. The code for the calculator 
+            // Create the client. The code for the calculator
             // client is not shown here. See the sample applications
             // for examples of the calculator code.
             CalculatorClient cc =
@@ -75,14 +75,14 @@ namespace BasicAuthentication
 
             // The client must provide a username and password. The code
             // to return the username and password is not shown here. Use
-            // a database to store the username and passwords, or use the 
+            // a database to store the username and passwords, or use the
             // ASP.NET Membership provider database.
             cc.ClientCredentials.UserName.UserName = ReturnUsername();
             cc.ClientCredentials.UserName.Password = ReturnPassword();
 
             // Begin using the client.
             cc.Open();
-            
+
             Console.WriteLine(cc.Add(100, 11));
             Console.ReadLine();
 
@@ -108,11 +108,11 @@ namespace SecuredUsingWindows
     {
         public static void Run()
         {
-            
+
             // Create the binding.
             NetTcpBinding binding = new NetTcpBinding();
             binding.Security.Mode = SecurityMode.Transport;
-            binding.Security.Transport.ClientCredentialType = 
+            binding.Security.Transport.ClientCredentialType =
                 TcpClientCredentialType.Windows;
 
             // Create the URI for the endpoint.
@@ -133,7 +133,7 @@ namespace SecuredUsingWindows
 
         public static void RunClient()
         {
-            
+
             // Create the binding.
             NetTcpBinding myBinding = new NetTcpBinding();
             myBinding.Security.Mode = SecurityMode.Transport;
@@ -144,7 +144,7 @@ namespace SecuredUsingWindows
             EndpointAddress myEndpointAddress = new
                 EndpointAddress("net.tcp://localhost:8008/Calculator");
 
-            // Create the client. The code for the calculator is not 
+            // Create the client. The code for the calculator is not
             // shown here. client is not shown here. See the sample applications
             // for examples of the calculator code.	
             CalculatorClient cc =
@@ -175,7 +175,7 @@ namespace SecuredByTransportWithAnonymousClient
     {
         public static void Run()
         {
-            
+
             // Create the binding.
             WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Mode = SecurityMode.Transport;
@@ -199,10 +199,10 @@ namespace SecuredByTransportWithAnonymousClient
             // Close the service.
             myServiceHost.Close();
         }
-    
+
         public static void RunClient()
         {
-                        
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Transport;
@@ -211,11 +211,11 @@ namespace SecuredByTransportWithAnonymousClient
 
             // Create the endpoint address. Note that the machine name must
             // must match the subject or DNS field of the X.509 certificate
-            // used to authenticate the service. 
+            // used to authenticate the service.
             EndpointAddress ea = new
                 EndpointAddress("https://machineName:8006/Calculator");
 
-            // Create the client. The code for the calculator 
+            // Create the client. The code for the calculator
             // client is not shown here. See the sample applications
             // for examples of the calculator code.
             CalculatorClient cc =
@@ -237,7 +237,7 @@ namespace SecuredTranserUsingCertificates
     {
         public static void Run()
         {
-            
+
             // Create the binding. The service needs a valid certificate
             // attached to port 8006. The client also needs a valid certificate.
             WSHttpBinding binding = new WSHttpBinding();
@@ -258,14 +258,14 @@ namespace SecuredTranserUsingCertificates
             myServiceHost.Open();
             Console.WriteLine("Listening...");
             Console.ReadLine();
-            
+
             // Close the service.
             myServiceHost.Close();
         }
 
         private void ClientRun()
         {
-            
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Transport;
@@ -274,11 +274,11 @@ namespace SecuredTranserUsingCertificates
 
             // Create the endpoint address. Note that the machine name must
             // must match the subject or DNS field of the X.509 certificate
-            // used to authenticate the service. 
+            // used to authenticate the service.
             EndpointAddress ea = new
                 EndpointAddress("https://localhost:8006/Calculator");
 
-            // Create the client. The code for the calculator 
+            // Create the client. The code for the calculator
             // client is not shown here. See the sample applications
             // for examples of the calculator code.
             CalculatorClient cc =
@@ -308,8 +308,8 @@ namespace SecuredUsingMessageSecurityWithAnonClient
     {
         public static void Run()
         {
-            
-            // Create the binding. 
+
+            // Create the binding.
             WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Mode = SecurityMode.Message;
             binding.Security.Message.ClientCredentialType = MessageCredentialType.None;
@@ -334,25 +334,25 @@ namespace SecuredUsingMessageSecurityWithAnonClient
             myServiceHost.Open();
             Console.WriteLine("Listening...");
             Console.ReadLine();
-            
+
             // Close the service.
             myServiceHost.Close();
         }
 
         private void ClientRun()
         {
-            
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Message;
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.None;
 
-            // Create the endpoint address. 
+            // Create the endpoint address.
             EndpointAddress ea = new
                 EndpointAddress("http://localhost:90/Calculator");
 
-            // Create the client. 
+            // Create the client.
             CalculatorClient cc =
                 new CalculatorClient(myBinding, ea);
 
@@ -374,7 +374,7 @@ namespace SecuredUsingMessageSecurityWithUsername
     {
         public static void Run()
         {
-            
+
             // Create the binding.
             WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Mode = SecurityMode.Message;
@@ -400,28 +400,28 @@ namespace SecuredUsingMessageSecurityWithUsername
             Console.WriteLine("Listening...");
             Console.ReadLine();
 
-            // Close the service. 
+            // Close the service.
             myServiceHost.Close();
         }
 
         private void ClientRun()
         {
-            
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Message;
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.UserName;
 
-            // Create the endpoint address. 
+            // Create the endpoint address.
             EndpointAddress ea = new
                 EndpointAddress("http://localhost:90/Calculator");
 
-            // Create the client. 
+            // Create the client.
             CalculatorClient cc =
                 new CalculatorClient(myBinding, ea);
 
-            // Set the username and password. The code to 
+            // Set the username and password. The code to
             // return the username and password is not shown here. Use
             // an interface to query the user for the information.
             cc.ClientCredentials.UserName.UserName = ReturnUsername();
@@ -454,7 +454,7 @@ namespace SecuredUsingMessageWithCertClient
     {
         public static void Run()
         {
-            
+
             // Create the binding.
             WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Mode = SecurityMode.Message;
@@ -480,24 +480,24 @@ namespace SecuredUsingMessageWithCertClient
             myServiceHost.Open();
             Console.WriteLine("Listening...");
             Console.ReadLine();
-            
+
             // Close the service.
             myServiceHost.Close();
         }
         private void ClientRun()
         {
-            
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Message;
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Certificate;
 
-            // Create the endpoint address. 
+            // Create the endpoint address.
             EndpointAddress ea = new
                 EndpointAddress("http://localhost:90/Calculator");
 
-            // Create the client. 
+            // Create the client.
             CalculatorClient cc =
                 new CalculatorClient(myBinding, ea);
 
@@ -526,7 +526,7 @@ namespace SecuredUsingMessageWithWindowsClient
     {
         public static void Run()
         {
-            
+
             // Create the binding.
             NetTcpBinding binding = new NetTcpBinding();
             binding.Security.Mode = SecurityMode.Message;
@@ -542,7 +542,7 @@ namespace SecuredUsingMessageWithWindowsClient
             myServiceHost.AddServiceEndpoint(
                 typeof(ICalculator), binding, "");
 
-            // Open the service. 
+            // Open the service.
             myServiceHost.Open();
             Console.WriteLine("Listening ....");
             Console.ReadLine();
@@ -553,18 +553,18 @@ namespace SecuredUsingMessageWithWindowsClient
 
         private void ClientRun()
         {
-            
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Message;
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Windows;
 
-            // Create the endpoint address. 
+            // Create the endpoint address.
             EndpointAddress ea = new
                 EndpointAddress("http://localhost:90/Calculator");
 
-            // Create the client. 
+            // Create the client.
             CalculatorClient cc =
                 new CalculatorClient(myBinding, ea);
 
@@ -586,7 +586,7 @@ namespace MessageSecuritWithKerberosAuth
     {
         public static void Run()
         {
-            
+
             // Create the service host.
             ServiceHost myServiceHost = new ServiceHost(typeof(Calculator));
 
@@ -618,25 +618,25 @@ namespace MessageSecuritWithKerberosAuth
 
             // Add the service endpoint to the service.
             myServiceHost.Description.Endpoints.Add(se);
-            
+
             // Open the service.
             myServiceHost.Open();
             Console.WriteLine("Listening...");
             Console.ReadLine();
 
-            // Close the service. 
+            // Close the service.
             myServiceHost.Close();
         }
         private void ClientRun()
         {
-            
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Message;
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Windows;
 
-            // Disable credential negotiation and the establishment of 
+            // Disable credential negotiation and the establishment of
             // a security context.
             myBinding.Security.Message.NegotiateServiceCredential = false;
             myBinding.Security.Message.EstablishSecurityContext = false;
@@ -650,7 +650,7 @@ namespace MessageSecuritWithKerberosAuth
             new Uri("http://localhost:8006/calculator"),
             EndpointIdentity.CreateSpnIdentity("service_spn_name"));
 
-            // Create the client. 
+            // Create the client.
             CalculatorClient cc =
                 new CalculatorClient(myBinding, ea);
 
@@ -672,18 +672,18 @@ namespace SecuredUsingMessageSecurityWithInteroperableCertClient
     {
         public static void Run()
         {
-            
-            // Create the binding. 
+
+            // Create the binding.
             WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Mode = SecurityMode.Message;
             binding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Certificate;
             binding.Security.Message.NegotiateServiceCredential = false;
             binding.Security.Message.EstablishSecurityContext = false;
-            
+
             // Create the URI for the endpoint.
             Uri httpUri = new Uri("http://localhost:8006/Calculator");
-            
+
             // Create the service host.
             ServiceHost myServiceHost =
                 new ServiceHost(typeof(Calculator), httpUri);
@@ -708,23 +708,23 @@ namespace SecuredUsingMessageSecurityWithInteroperableCertClient
         }
         private void ClientRun()
         {
-            
+
             // Create the binding.
             WSHttpBinding myBinding = new WSHttpBinding();
             myBinding.Security.Mode = SecurityMode.Message;
             myBinding.Security.Message.ClientCredentialType =
                 MessageCredentialType.Certificate;
 
-            // Disable credential negotiation and the establishment of 
+            // Disable credential negotiation and the establishment of
             // a security context.
             myBinding.Security.Message.NegotiateServiceCredential = false;
             myBinding.Security.Message.EstablishSecurityContext = false;
 
-            // Create the endpoint address. 
+            // Create the endpoint address.
             EndpointAddress ea = new
                 EndpointAddress("http://localhost:90/Calculator");
 
-            // Create the client. 
+            // Create the client.
             CalculatorClient cc =
                 new CalculatorClient(myBinding, ea);
 

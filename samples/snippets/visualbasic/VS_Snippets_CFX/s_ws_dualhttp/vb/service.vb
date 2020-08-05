@@ -35,7 +35,7 @@ Namespace Microsoft.ServiceModel.Samples
         Sub Equals(ByVal result As Double)
         <OperationContract(IsOneWay:=True)> _
         Sub Equation(ByVal eqn As String)
-    end interface 
+    end interface
 
     ' </Snippet4>
     ' Service class which implements a duplex service contract.

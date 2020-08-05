@@ -14,4 +14,4 @@ An attempt to convert a string variable to another type is not valid.
   
 ## See also
 
-- [Type Conversions in Visual Basic](../../visual-basic/programming-guide/language-features/data-types/type-conversions.md)
+- [Type Conversions in Visual Basic](../programming-guide/language-features/data-types/type-conversions.md)

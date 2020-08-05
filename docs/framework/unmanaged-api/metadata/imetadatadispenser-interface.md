@@ -22,12 +22,12 @@ Provides methods to create a new metadata scope, or open an existing one.
   
 |Method|Description|  
 |------------|-----------------|  
-|[DefineScope Method](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-definescope-method.md)|Creates a new area in memory where you can create new metadata.|  
-|[OpenScope Method](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-openscope-method.md)|Opens an existing, on-disk file and maps its metadata into memory.|  
-|[OpenScopeOnMemory Method](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenser-openscopeonmemory-method.md)|Opens an area of memory that contains existing metadata. That is, this method opens a specified area of memory in which the existing data is treated as metadata.|  
+|[DefineScope Method](imetadatadispenser-definescope-method.md)|Creates a new area in memory where you can create new metadata.|  
+|[OpenScope Method](imetadatadispenser-openscope-method.md)|Opens an existing, on-disk file and maps its metadata into memory.|  
+|[OpenScopeOnMemory Method](imetadatadispenser-openscopeonmemory-method.md)|Opens an area of memory that contains existing metadata. That is, this method opens a specified area of memory in which the existing data is treated as metadata.|  
   
 ## Requirements  
- **Platform:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platform:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Cor.h  
   
@@ -37,5 +37,5 @@ Provides methods to create a new metadata scope, or open an existing one.
   
 ## See also
 
-- [IMetaDataDispenserEx Interface](../../../../docs/framework/unmanaged-api/metadata/imetadatadispenserex-interface.md)
-- [Metadata Interfaces](../../../../docs/framework/unmanaged-api/metadata/metadata-interfaces.md)
+- [IMetaDataDispenserEx Interface](imetadatadispenserex-interface.md)
+- [Metadata Interfaces](metadata-interfaces.md)

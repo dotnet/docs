@@ -9,7 +9,7 @@ ms.topic: reference
 ## Enable diagnostics
 
 - Configures whether the debugger, the profiler, and EventPipe diagnostics are enabled or disabled.
-- Default: Enabled (`1`).
+- If you omit this setting, diagnostics are enabled. This is equivalent to setting the value to `1`.
 
 | | Setting name | Values |
 | - | - | - |
@@ -19,7 +19,7 @@ ms.topic: reference
 ## Enable profiling
 
 - Configures whether profiling is enabled for the currently running process.
-- Default: Disabled (`0`).
+- If you omit this setting, profiling is disabled. This is equivalent to setting the value to `0`.
 
 | | Setting name | Values |
 | - | - | - |
@@ -50,7 +50,7 @@ ms.topic: reference
 ## Write perf map
 
 - Enables or disables writing */tmp/perf-$pid.map* on Linux systems.
-- Default: Disabled (`0`).
+- If you omit this setting, writing the perf map is disabled. This is equivalent to setting the value to `0`.
 
 | | Setting name | Values |
 | - | - | - |
@@ -59,10 +59,13 @@ ms.topic: reference
 
 ## Perf log markers
 
-- When `COMPlus_PerfMapEnabled` is set to `1`, enables or disables the specified signal to be accepted and ignored as a marker in the perf logs.
-- Default: Disabled (`0`).
+- Enables or disables the specified signal to be accepted and ignored as a marker in the perf logs.
+- If you omit this setting, the specified signal is not ignored. This is equivalent to setting the value to `0`.
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | N/A | N/A |
 | **Environment variable** | `COMPlus_PerfMapIgnoreSignal` | `0` - disabled<br/>`1` - enabled |
+
+> [!NOTE]
+> This setting is ignored if [COMPlus_PerfMapEnabled](#write-perf-map) is omitted or set to `0` (that is, disabled).

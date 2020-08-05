@@ -7,38 +7,38 @@ ms.assetid: 04e4d3bd-ab89-4b50-8f42-2a4430751a9c
 This section includes sections of samples that demonstrate basic Windows Communication Foundation (WCF)functionality.  
   
 ## In This Section  
- [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md)  
+ [Getting Started](getting-started-sample.md)  
  Demonstrates how to implement a typical service and a typical client using WCF.  
   
- [AJAX](../../../../docs/framework/wcf/samples/ajax.md)  
+ [AJAX](ajax.md)  
  Demonstrates Asynchronous JavaScript and XML.  
   
- [Binding](../../../../docs/framework/wcf/samples/binding.md)  
+ [Binding](binding.md)  
  Demonstrates using the binding attribute of an endpoint element.  
   
- [Client](../../../../docs/framework/wcf/samples/client.md)  
+ [Client](client.md)  
  Demonstrates WCF client applications.  
   
- [Contract](../../../../docs/framework/wcf/samples/contract.md)  
+ [Contract](contract.md)  
  Demonstrates data contracts.  
   
- [Discovery](../../../../docs/framework/wcf/samples/discovery-samples.md)  
+ [Discovery](discovery-samples.md)  
  Demonstrates WCF discovery.  
   
- [Management](../../../../docs/framework/wcf/samples/management.md)  
+ [Management](management.md)  
  Demonstrates WCF management.  
   
- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)  
+ [Routing Services](routing-services.md)  
  Demonstrates WCF routing services.  
   
- [Security](../../../../docs/framework/wcf/samples/security-in-wcf.md)  
+ [Security](security-in-wcf.md)  
  Demonstrates WCF security.  
   
- [Services](../../../../docs/framework/wcf/samples/services.md)  
+ [Services](services.md)  
  Demonstrates WCF services.  
   
- [Syndication](../../../../docs/framework/wcf/samples/syndication.md)  
+ [Syndication](syndication.md)  
  DemonstratesWCF syndication.  
   
- [Web](../../../../docs/framework/wcf/samples/web.md)  
+ [Web](web.md)  
  Demonstrates Web-hosting in WCF.

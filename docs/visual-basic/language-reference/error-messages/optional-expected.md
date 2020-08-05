@@ -21,4 +21,4 @@ An optional argument in a procedure declaration is followed by a required argume
   
 ## See also
 
-- [Optional Parameters](../../../visual-basic/programming-guide/language-features/procedures/optional-parameters.md)
+- [Optional Parameters](../../programming-guide/language-features/procedures/optional-parameters.md)

@@ -31,11 +31,11 @@ coclass CLRRuntimeHost {
   
 |Interface|Description|  
 |---------------|-----------------|  
-|[ICLRRuntimeHost Interface](../../../../docs/framework/unmanaged-api/hosting/iclrruntimehost-interface.md)|Provides methods for controlling the execution of applications by the runtime.|  
-|[ICLRValidator Interface](../../../../docs/framework/unmanaged-api/hosting/iclrvalidator-interface.md)|Provides methods for validation of portable executable images and for detailed reporting of validation errors.|  
+|[ICLRRuntimeHost Interface](iclrruntimehost-interface.md)|Provides methods for controlling the execution of applications by the runtime.|  
+|[ICLRValidator Interface](iclrvalidator-interface.md)|Provides methods for validation of portable executable images and for detailed reporting of validation errors.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
@@ -45,4 +45,4 @@ coclass CLRRuntimeHost {
   
 ## See also
 
-- [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)
+- [Hosting Coclasses](hosting-coclasses.md)

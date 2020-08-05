@@ -1,5 +1,6 @@
 ---
 title: XpsDocumentWriter._WritingProgressChanged Event (System.Windows.Xps)
+description: Review the XpsDocumentWriter._WritingProgressChanged event, which occurs when the XML Paper Specification (XPS) document writer updates its progress in .NET.
 ms.date: 10/17/2017
 api_location:
 - system.printing.dll
@@ -15,7 +16,7 @@ topic_type:
 
 # XpsDocumentWriter.\_WritingProgressChanged Event
 
-Occurs when the <xref:System.Windows.Xps.XpsDocumentWriter> updates its progress. 
+Occurs when the <xref:System.Windows.Xps.XpsDocumentWriter> updates its progress.
 
 ## Syntax
 

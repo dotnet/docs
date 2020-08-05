@@ -1,5 +1,6 @@
 ---
 title: "How to: Navigate to a URL with the WebBrowser Control"
+description: Learn how to use the Windows Forms WebBrowser.Navigate control to navigate to a specific URL. Also learn how to determine when the new document is loaded.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -21,11 +22,11 @@ The following code example demonstrates how to navigate the <xref:System.Windows
 ## Example
 
 ```vb
-Me.webBrowser1.Navigate("http://www.microsoft.com")
+Me.webBrowser1.Navigate("https://www.microsoft.com")
 ```
 
 ```csharp
-this.webBrowser1.Navigate("http://www.microsoft.com");
+this.webBrowser1.Navigate("https://www.microsoft.com");
 ```
 
 ## Compiling the Code

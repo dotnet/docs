@@ -20,14 +20,14 @@ using System.Runtime.Serialization;
 namespace PhotoService
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class PhotoDataContainer : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new PhotoDataContainer object using the connection string found in the 'PhotoDataContainer' section of the application configuration file.
         /// </summary>
@@ -36,7 +36,7 @@ namespace PhotoService
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new PhotoDataContainer object.
         /// </summary>
@@ -45,7 +45,7 @@ namespace PhotoService
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new PhotoDataContainer object.
         /// </summary>
@@ -54,17 +54,17 @@ namespace PhotoService
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -83,7 +83,7 @@ namespace PhotoService
 
         #endregion
         #region AddTo Methods
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the PhotoInfo EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -94,12 +94,12 @@ namespace PhotoService
 
         #endregion
     }
-    
+
 
     #endregion
-    
+
     #region Entities
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -109,7 +109,7 @@ namespace PhotoService
     public partial class PhotoInfo : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new PhotoInfo object.
         /// </summary>
@@ -133,7 +133,7 @@ namespace PhotoService
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -160,7 +160,7 @@ namespace PhotoService
         private global::System.Int32 _PhotoId;
         partial void OnPhotoIdChanging(global::System.Int32 value);
         partial void OnPhotoIdChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -184,7 +184,7 @@ namespace PhotoService
         private global::System.String _FileName;
         partial void OnFileNameChanging(global::System.String value);
         partial void OnFileNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -208,7 +208,7 @@ namespace PhotoService
         private Nullable<global::System.Int32> _FileSize;
         partial void OnFileSizeChanging(Nullable<global::System.Int32> value);
         partial void OnFileSizeChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -232,7 +232,7 @@ namespace PhotoService
         private Nullable<global::System.DateTime> _DateTaken;
         partial void OnDateTakenChanging(Nullable<global::System.DateTime> value);
         partial void OnDateTakenChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -256,7 +256,7 @@ namespace PhotoService
         private global::System.String _TakenBy;
         partial void OnTakenByChanging(global::System.String value);
         partial void OnTakenByChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -280,7 +280,7 @@ namespace PhotoService
         private global::System.DateTime _DateAdded;
         partial void OnDateAddedChanging(global::System.DateTime value);
         partial void OnDateAddedChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -304,7 +304,7 @@ namespace PhotoService
         private global::System.DateTime _DateModified;
         partial void OnDateModifiedChanging(global::System.DateTime value);
         partial void OnDateModifiedChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -328,7 +328,7 @@ namespace PhotoService
         private global::System.String _Comments;
         partial void OnCommentsChanging(global::System.String value);
         partial void OnCommentsChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -355,7 +355,7 @@ namespace PhotoService
 
         #endregion
         #region Complex Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -386,7 +386,7 @@ namespace PhotoService
         private bool _ExposureInitialized;
         partial void OnExposureChanging(Exposure value);
         partial void OnExposureChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -419,12 +419,12 @@ namespace PhotoService
         partial void OnDimensionsChanged();
 
         #endregion
-    
+
     }
 
     #endregion
     #region ComplexTypes
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -434,7 +434,7 @@ namespace PhotoService
     public partial class Dimensions : ComplexObject
     {
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -458,7 +458,7 @@ namespace PhotoService
         private Nullable<global::System.Int16> _Height;
         partial void OnHeightChanging(Nullable<global::System.Int16> value);
         partial void OnHeightChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -485,7 +485,7 @@ namespace PhotoService
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -495,7 +495,7 @@ namespace PhotoService
     public partial class Exposure : ComplexObject
     {
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -519,7 +519,7 @@ namespace PhotoService
         private Nullable<global::System.Decimal> _Aperature;
         partial void OnAperatureChanging(Nullable<global::System.Decimal> value);
         partial void OnAperatureChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -543,7 +543,7 @@ namespace PhotoService
         private Nullable<global::System.Int16> _ShutterSpeed;
         partial void OnShutterSpeedChanging(Nullable<global::System.Int16> value);
         partial void OnShutterSpeedChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -572,5 +572,5 @@ namespace PhotoService
     }
 
     #endregion
-    
+
 }

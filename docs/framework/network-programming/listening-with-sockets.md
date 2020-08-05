@@ -1,5 +1,6 @@
 ---
 title: "Listening with Sockets"
+description: Learn how to create a remote service, where a server socket opens a port on the network and waits for a client to connect to that port.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -39,7 +40,7 @@ IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
   
 ```vb  
 Dim listener As New Socket(ipAddress.AddressFamily, _  
-    SocketType.Stream, ProtocolType.Tcp) 
+    SocketType.Stream, ProtocolType.Tcp)
 listener.Bind(localEndPoint)  
 listener.Listen(100)  
 ```  

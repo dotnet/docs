@@ -17,7 +17,7 @@ namespace SDKSample
             Paragraph myParagraph2 = new Paragraph(new Run("List Item 2"));
             Paragraph myParagraph3 = new Paragraph(new Run("List Item 3"));
 
-            // Create the ListItem elements for the List and add the 
+            // Create the ListItem elements for the List and add the
             // paragraphs to them.
             ListItem myListItem1 = new ListItem();
             myListItem1.Blocks.Add(myParagraph1);

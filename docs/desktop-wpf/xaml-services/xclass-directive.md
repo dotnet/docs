@@ -63,4 +63,4 @@ For Windows Workflow Foundation, `x:Class` names the class of a custom activity 
 - [x:Subclass Directive](xsubclass-directive.md)
 - [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)
-- [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)
+- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)

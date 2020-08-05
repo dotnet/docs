@@ -24,10 +24,10 @@ Creates an object forwarder sink to assist a client in receiving asynchronous ca
   
 ```cpp  
 HRESULT GetDemultiplexedStub (
-   [in] IUnknown*    pObject, 
-   [in] boolean      isLocal, 
+   [in] IUnknown*    pObject,
+   [in] boolean      isLocal,
    [out] IUnknown**  ppObject
-); 
+);
 ```  
 
 ## Parameters
@@ -46,7 +46,7 @@ HRESULT GetDemultiplexedStub (
 If the function succeeds, the return value is `S_OK` (0).
 
 If the function fails, the return value is a non-zero error code. To get extended error information, call the [GetErrorInfo](geterrorinfo.md) function.
-    
+
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   

@@ -33,7 +33,7 @@ namespace SDKSample
                     cxmTextBox.ClearValue(ContextMenuProperty);
                     break;
                 case "rbDisabled":
-                    // Setting the ContextMenu propety to 
+                    // Setting the ContextMenu propety to
                     // null disables the context menu.
                     cxmTextBox.ContextMenu = null;
                     break;
@@ -46,7 +46,7 @@ namespace SDKSample
         void ClickCopy(Object sender, RoutedEventArgs args)      { cxmTextBox.Copy(); }
         void ClickCut(Object sender, RoutedEventArgs args)       { cxmTextBox.Cut(); }
         void ClickSelectAll(Object sender, RoutedEventArgs args) { cxmTextBox.SelectAll(); }
-        void ClickClear(Object sender, RoutedEventArgs args)     { cxmTextBox.Clear(); } 
+        void ClickClear(Object sender, RoutedEventArgs args)     { cxmTextBox.Clear(); }
         void ClickUndo(Object sender, RoutedEventArgs args)      { cxmTextBox.Undo(); }
         void ClickRedo(Object sender, RoutedEventArgs args)      { cxmTextBox.Redo(); }
 

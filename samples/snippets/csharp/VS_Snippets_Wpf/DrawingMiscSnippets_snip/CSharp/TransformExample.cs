@@ -57,7 +57,7 @@ namespace SDKSample
             // drawing group.
             //
             RotateTransform rotation = new RotateTransform(
-                45, // Angle 
+                45, // Angle
                 50, // CenterX
                 75  // CenterY
                 );

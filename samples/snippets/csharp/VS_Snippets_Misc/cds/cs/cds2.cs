@@ -56,10 +56,10 @@ namespace ProducerConsumer
                 // Counter for demonstration purposes only.
                 additions++;
 
-                // For demonstration purposes, uncomment this line to 
+                // For demonstration purposes, uncomment this line to
                 // slow down the producer thread without sleeping.
 
-                // Thread.SpinWait(100000); 
+                // Thread.SpinWait(100000);
             }
 
             // Important!!! Tell consumers that no more items will be added.
@@ -70,7 +70,7 @@ namespace ProducerConsumer
 
         static void RunConsumer(Object stateInfo)
         {
-            // GetConsumingEnumerable returns the enumerator for the 
+            // GetConsumingEnumerable returns the enumerator for the
             // underlying collection.
             foreach (var item in collection.GetConsumingEnumerable())
             {
@@ -145,7 +145,7 @@ namespace BlockingCollectionExamples
             for (int i = 0; i < cities.Length; i++)
             {
                 blockingCollection.Add(new Data() { City = cities[i], Population = (int)(population[i] * 1000000) });
-                Thread.SpinWait(5000000); // Simulate some extra work.                
+                Thread.SpinWait(5000000); // Simulate some extra work.
             }
             blockingCollection.CompleteAdding();
 
@@ -179,27 +179,27 @@ namespace Demos
     using System.Threading.Tasks;
 
     //<snippet08>
-  
+
     class MyBarrier
     {
-        const int Partitions = 3;       
+        const int Partitions = 3;
 
         static byte[][] data = new byte[Partitions][];
         static double[] results = new double[Partitions];
-        
+
         static void Main()
-        {           
-            // Create a new barrier, specifying a participant count and a 
-            // delegate to invoke when the first phase is complete. 
+        {
+            // Create a new barrier, specifying a participant count and a
+            // delegate to invoke when the first phase is complete.
             Barrier b = new Barrier(Partitions);
 
             Task[] tasks = new Task[Partitions];
-            for (int i = 0; i < Partitions; i++)            
+            for (int i = 0; i < Partitions; i++)
             {
                 // Declare a variable that captures
                 // changing value of i on each iteration.
                 int index = i;
-               
+
                 tasks[i] = Task.Run(() =>
                 {
 
@@ -212,18 +212,18 @@ namespace Demos
                     b.SignalAndWait();
                 });
             }
-            
+
             Console.WriteLine("Press a key to exit");
             Console.ReadKey();
         }
 
         // Toy implementation to generate some data.
         static void GenerateDataForMyPartition(int taskNumber)
-        {            
+        {
             data[taskNumber] = new byte[100];
             var rand = new Random();
-            rand.NextBytes(data[taskNumber]);            
-            
+            rand.NextBytes(data[taskNumber]);
+
             Console.WriteLine("Generate for {0}", taskNumber);
             int total = 0;
             foreach (var b in data[taskNumber])
@@ -247,13 +247,13 @@ namespace Demos
                 if (i == index) continue; // Don't compare to myself.
                 var them = results[i];
                 var diff = Math.Abs(them - myAverage);
-                
+
                 if(myAverage > them)
                     sb.AppendFormat("    greater than buffer[{0}] by {1}\n", i, diff);
                 else if (myAverage == them)
                         sb.AppendFormat("    equal to buffer[{0}]\n", i, diff);
                 else if (myAverage < them)
-                    sb.AppendFormat("    less than buffer[{0}] by {1}\n", i, diff);                  
+                    sb.AppendFormat("    less than buffer[{0}] by {1}\n", i, diff);
             }
 
             Console.WriteLine(sb.ToString());
@@ -324,7 +324,7 @@ namespace Demos
             }
         }
     }
-   
+
         //class Lazy<T> : Lazy<T> where T: MyClass, new()
         //{
         //    public Lazy(Action<T> action)
@@ -334,8 +334,8 @@ namespace Demos
         //    public Lazy()
         //{}
         //}
-    
-    class DataInitializedFromDb 
+
+    class DataInitializedFromDb
             {
                 public DataInitializedFromDb (SqlDataReader reader){}
                 public int Rows = 0;
@@ -389,14 +389,14 @@ namespace Demos
                     // snip pet 9 was here. deleted per JoshP
 
                 }
-            
+
                 private static void ProcessData(DataInitializedFromDb data){}
                 private static void Test2()
                 {
                     string cmdText = "";
                     // was s n i p p e t 10 removed per joshp
-                
-                    Lazy<DataInitializedFromDb> _data = 
+
+                    Lazy<DataInitializedFromDb> _data =
                         new Lazy<DataInitializedFromDb>(delegate
                     {
                         using(SqlConnection conn = new SqlConnection(...))
@@ -408,9 +408,9 @@ namespace Demos
                             return data;
                         }
                     }, LazyExecutionMode.AllowMultipleThreadSafeExecutions);
-              
+
                     // use the data
-                    if (_data.Value.Rows > 10) 
+                    if (_data.Value.Rows > 10)
                     {
                         ProcessData(_data.Value);
                     }
@@ -436,24 +436,24 @@ namespace Demos
                     //</snippet11>
                 }
 
-           
 
-            
+
+
                    //<snippet12>
                     // Direct initialization to avoid overhead
                     static List<Exception> m_exceptions;
 
-                    static void AddException(Exception e) 
+                    static void AddException(Exception e)
                     {
                         LazyInitializer.EnsureInitialized(ref m_exceptions).Add(e);
                     }
                     //</snippet12>
-      
+
                  private static void Test5()
                 {
                     //<snippet13>
                     //Initializing a value per thread, per instance
-                     ThreadLocal<int[][]> _scratchArrays = 
+                     ThreadLocal<int[][]> _scratchArrays =
                          new ThreadLocal<int[][]>(InitializeArrays);
                     // . . .
                      static int[][] InitializeArrays () {return new int[][]}
@@ -462,13 +462,13 @@ namespace Demos
                     int i = 8;
                     int [] tempArr = _scratchArrays.Value[i];
                 //</snippet13>
-    
+
                 }
 
                     static void Test6()
                     {
 
-                        //<snippet14> 
+                        //<snippet14>
                         Action<int>[] actions = new Action<int>[5];
                         // ...initialize actions
 
@@ -476,21 +476,21 @@ namespace Demos
                         var exceptions = new LazyVariable<List<Exception>>();
                         foreach(var action in actions)
                         {
-                            try 
-                            { 
-                                action(); 
+                            try
+                            {
+                                action();
                             }
                             catch(Exception exc)
                             {
                                 exceptions.Value.Add(exc);
                             }
                         }
-                        if (exceptions.IsValueCreated) 
+                        if (exceptions.IsValueCreated)
                             throw new AggregateException(exceptions.Value);
 
                     //</snippet14>
                     }
-                        
+
     }
 
         class Data
@@ -519,7 +519,7 @@ namespace Demos
                 {
                     Console.WriteLine("Do something");
                 }
- 
+
             }
             */
 

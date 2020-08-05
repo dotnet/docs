@@ -65,7 +65,7 @@ namespace interfaces
         private string _name;
         public string Name  // read-write instance property
         {
-            get => _name;                
+            get => _name;
             set => _name = value;
         }
 
@@ -76,7 +76,7 @@ namespace interfaces
         }
 
         // constructor
-        public Employee() => _counter = ++numberOfEmployees; 
+        public Employee() => _counter = ++numberOfEmployees;
     }
     //</SnippetPropertyExample>
 

@@ -1,5 +1,6 @@
 ---
 title: "How to: Open and append to a log file"
+description: Open and append to a log file using the StreamWriter and StreamReader classes in .NET, which write characters to and read characters from streams.
 ms.date: "01/21/2019"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -31,10 +32,10 @@ As an alternative to this example, you could store the information as a single s
 - <xref:System.IO.File.AppendText%2A?displayProperty=nameWithType>  
 - <xref:System.IO.File.OpenText%2A?displayProperty=nameWithType>  
 - <xref:System.IO.StreamReader.ReadLine%2A?displayProperty=nameWithType>  
-- [How to: Enumerate directories and files](../../../docs/standard/io/how-to-enumerate-directories-and-files.md)  
-- [How to: Read and write to a newly created data file](../../../docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md)  
-- [How to: Read text from a file](../../../docs/standard/io/how-to-read-text-from-a-file.md)  
-- [How to: Write text to a file](../../../docs/standard/io/how-to-write-text-to-a-file.md)  
-- [How to: Read characters from a string](../../../docs/standard/io/how-to-read-characters-from-a-string.md)  
-- [How to: Write characters to a string](../../../docs/standard/io/how-to-write-characters-to-a-string.md)  
-- [File and stream I/O](../../../docs/standard/io/index.md)
+- [How to: Enumerate directories and files](how-to-enumerate-directories-and-files.md)  
+- [How to: Read and write to a newly created data file](how-to-read-and-write-to-a-newly-created-data-file.md)  
+- [How to: Read text from a file](how-to-read-text-from-a-file.md)  
+- [How to: Write text to a file](how-to-write-text-to-a-file.md)  
+- [How to: Read characters from a string](how-to-read-characters-from-a-string.md)  
+- [How to: Write characters to a string](how-to-write-characters-to-a-string.md)  
+- [File and stream I/O](index.md)

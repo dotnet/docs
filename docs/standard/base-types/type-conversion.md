@@ -1,5 +1,6 @@
 ---
 title: "Type Conversion in the .NET Framework"
+description: Read about type conversion in .NET, which creates a value in a new type that's equivalent to the old type's value, but may not keep the original's identity.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -151,7 +152,7 @@ Every value has an associated type, which defines attributes such as the amount 
  [!code-csharp[Conceptual.Conversion#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.conversion/cs/convert1.cs#9)]
  [!code-vb[Conceptual.Conversion#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.conversion/vb/convert1.vb#9)]  
   
- For a table that lists both the widening and narrowing conversions supported by the <xref:System.Convert> class, see [Type Conversion Tables](../../../docs/standard/base-types/conversion-tables.md).  
+ For a table that lists both the widening and narrowing conversions supported by the <xref:System.Convert> class, see [Type Conversion Tables](conversion-tables.md).  
 
 ### Custom Conversions with the ChangeType Method  
  In addition to supporting conversions to each of the base types, the <xref:System.Convert> class can be used to convert a custom type to one or more predefined types. This conversion is performed by the <xref:System.Convert.ChangeType%28System.Object%2CSystem.Type%2CSystem.IFormatProvider%29?displayProperty=nameWithType> method, which in turn wraps a call to the <xref:System.IConvertible.ToType%2A?displayProperty=nameWithType> method of the `value` parameter. This means that the object represented by the `value` parameter must provide an implementation of the <xref:System.IConvertible> interface.  
@@ -188,4 +189,4 @@ Every value has an associated type, which defines attributes such as the amount 
 
 - <xref:System.Convert?displayProperty=nameWithType>
 - <xref:System.IConvertible>
-- [Type Conversion Tables](../../../docs/standard/base-types/conversion-tables.md)
+- [Type Conversion Tables](conversion-tables.md)

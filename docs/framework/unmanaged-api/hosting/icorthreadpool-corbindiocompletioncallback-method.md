@@ -29,7 +29,7 @@ HRESULT CorBindIoCompletionCallback (
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -39,4 +39,4 @@ HRESULT CorBindIoCompletionCallback (
   
 ## See also
 
-- [ICorThreadpool Interface](../../../../docs/framework/unmanaged-api/hosting/icorthreadpool-interface.md)
+- [ICorThreadpool Interface](icorthreadpool-interface.md)

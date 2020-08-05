@@ -15,7 +15,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 ## XAML Attribute Usage  
   
 ```xml  
-<object property="{DynamicResource key}" .../>  
+<object property="{DynamicResource key}" ... />  
 ```  
   
 ## XAML Property Element Usage  
@@ -23,7 +23,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 ```xml  
 <object>  
   <object.property>  
-    <DynamicResource ResourceKey="key" .../>  
+    <DynamicResource ResourceKey="key" ... />  
   </object.property>  
 </object>  
 ```  
@@ -40,9 +40,9 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
 > [!IMPORTANT]
 > In terms of dependency property precedence, a `DynamicResource` expression is equivalent to the position where the dynamic resource reference is applied. If you set a local value for a property that previously had a `DynamicResource` expression as the local value, the `DynamicResource` is completely removed. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).  
   
- Certain resource access scenarios are particularly appropriate for `DynamicResource` as opposed to a [StaticResource Markup Extension](staticresource-markup-extension.md). See [XAML Resources](xaml-resources.md) for a discussion about the relative merits and performance implications of `DynamicResource` and `StaticResource`.  
+ Certain resource access scenarios are particularly appropriate for `DynamicResource` as opposed to a [StaticResource Markup Extension](staticresource-markup-extension.md). See [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md) for a discussion about the relative merits and performance implications of `DynamicResource` and `StaticResource`.  
   
- The specified <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> should correspond to an existing resource determined by [x:Key Directive](../../../desktop-wpf/xaml-services/xkey-directive.md) at some level in your page, application, the available control themes and external resources, or system resources, and the resource lookup will happen in that order. For more information about resource lookup for static and dynamic resources, see [XAML Resources](xaml-resources.md).  
+ The specified <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> should correspond to an existing resource determined by [x:Key Directive](../../../desktop-wpf/xaml-services/xkey-directive.md) at some level in your page, application, the available control themes and external resources, or system resources, and the resource lookup will happen in that order. For more information about resource lookup for static and dynamic resources, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
  A resource key may be any string defined in the [XamlName Grammar](../../../desktop-wpf/xaml-services/xamlname-grammar.md). A resource key may also be other object types, such as a <xref:System.Type>. A <xref:System.Type> key is fundamental to how controls can be styled by themes. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).  
   
@@ -57,7 +57,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
  `DynamicResource` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> property as a property=value pair:  
   
 ```xml  
-<object property="{DynamicResource ResourceKey=key}" .../>  
+<object property="{DynamicResource ResourceKey=key}" ... />  
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `DynamicResource` has only one settable property, which is required, this verbose usage is not typical.  
@@ -68,7 +68,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
 ## See also
 
-- [XAML Resources](xaml-resources.md)
+- [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [Resources and Code](resources-and-code.md)
 - [x:Key Directive](../../../desktop-wpf/xaml-services/xkey-directive.md)
 - [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)

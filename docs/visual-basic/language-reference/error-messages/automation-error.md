@@ -17,5 +17,5 @@ An error occurred while executing a method or getting or setting a property of a
   
 ## See also
 
-- [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../../programming-guide/language-features/error-types.md)
 - [Talk to Us](/visualstudio/ide/feedback-options)

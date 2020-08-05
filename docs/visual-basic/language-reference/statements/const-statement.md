@@ -21,13 +21,13 @@ Const constantlist
 ## Parts
 
 `attributelist`  
-Optional. List of attributes that apply to all the constants declared in this statement. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md) in angle brackets ("`<`" and "`>`").
+Optional. List of attributes that apply to all the constants declared in this statement. See [Attribute List](attribute-list.md) in angle brackets ("`<`" and "`>`").
 
 `accessmodifier`  
-Optional. Use this to specify what code can access these constants. Can be [Public](../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../visual-basic/language-reference/modifiers/friend.md), [Protected Friend](../modifiers/protected-friend.md), [Private](../../../visual-basic/language-reference/modifiers/private.md), or [Private Protected](../../language-reference/modifiers/private-protected.md).
+Optional. Use this to specify what code can access these constants. Can be [Public](../modifiers/public.md), [Protected](../modifiers/protected.md), [Friend](../modifiers/friend.md), [Protected Friend](../modifiers/protected-friend.md), [Private](../modifiers/private.md), or [Private Protected](../modifiers/private-protected.md).
 
 `Shadows`  
-Optional. Use this to redeclare and hide a programming element in a base class. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).
+Optional. Use this to redeclare and hide a programming element in a base class. See [Shadows](../modifiers/shadows.md).
 
 `constantlist`  
 Required. List of constants being declared in this statement.
@@ -40,7 +40,7 @@ Each `constant` has the following syntax and parts:
 
 |Part|Description|
 |----------|-----------------|
-|`constantname`|Required. Name of the constant. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).|
+|`constantname`|Required. Name of the constant. See [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
 |`datatype`|Required if `Option Strict` is `On`. Data type of the constant.|
 |`initializer`|Required. Expression that is evaluated at compile time and assigned to the constant.|
 
@@ -48,7 +48,7 @@ Each `constant` has the following syntax and parts:
 
 If you have a value that never changes in your application, you can define a named constant and use it in place of a literal value. A name is easier to remember than a value. You can define the constant just once and use it in many places in your code. If in a later version you need to redefine the value, the `Const` statement is the only place you need to make a change.
 
-You can use `Const` only at module or procedure level. This means the *declaration context* for a variable must be a class, structure, module, procedure, or block, and cannot be a source file, namespace, or interface. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).
+You can use `Const` only at module or procedure level. This means the *declaration context* for a variable must be a class, structure, module, procedure, or block, and cannot be a source file, namespace, or interface. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).
 
 Local constants (inside a procedure) default to public access, and you cannot use any access modifiers on them. Class and module member constants (outside any procedure) default to private access, and structure member constants default to public access. You can adjust their access levels with the access modifiers.
 
@@ -96,17 +96,17 @@ If you define a constant with data type `Object`, the Visual Basic compiler give
 
 [!code-vb[VbVbalrStatements#87](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#87)]
 
-The preceding example uses the <xref:System.Type.ToString%2A> method on the <xref:System.Type> object returned by the [GetType Operator](../../../visual-basic/language-reference/operators/gettype-operator.md), because <xref:System.Type> cannot be converted to `String` using `CStr`.
+The preceding example uses the <xref:System.Type.ToString%2A> method on the <xref:System.Type> object returned by the [GetType Operator](../operators/gettype-operator.md), because <xref:System.Type> cannot be converted to `String` using `CStr`.
 
 ## See also
 
 - <xref:Microsoft.VisualBasic.Strings.Asc%2A>
 - <xref:Microsoft.VisualBasic.Strings.AscW%2A>
-- [Enum Statement](../../../visual-basic/language-reference/statements/enum-statement.md)
-- [#Const Directive](../../../visual-basic/language-reference/directives/const-directive.md)
-- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)
-- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
-- [Implicit and Explicit Conversions](../../../visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
-- [Constants and Enumerations](../../../visual-basic/programming-guide/language-features/constants-enums/index.md)
-- [Constants and Enumerations](../../../visual-basic/language-reference/constants-and-enumerations.md)
-- [Type Conversion Functions](../../../visual-basic/language-reference/functions/type-conversion-functions.md)
+- [Enum Statement](enum-statement.md)
+- [#Const Directive](../directives/const-directive.md)
+- [Dim Statement](dim-statement.md)
+- [ReDim Statement](redim-statement.md)
+- [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md)
+- [Constants and Enumerations](../../programming-guide/language-features/constants-enums/index.md)
+- [Constants and Enumerations](../constants-and-enumerations.md)
+- [Type Conversion Functions](../functions/type-conversion-functions.md)

@@ -26,8 +26,8 @@ namespace TextRendering
             String text1 = "Measure this text";
             Font arialBold = new Font("Arial", 12.0F);
             Size textSize = TextRenderer.MeasureText(text1, arialBold);
-            TextRenderer.DrawText(e.Graphics, text1, arialBold, 
-                new Rectangle(new Point(10, 10), textSize), Color.Red);  
+            TextRenderer.DrawText(e.Graphics, text1, arialBold,
+                new Rectangle(new Point(10, 10), textSize), Color.Red);
         }
         //</snippet1>
         //<snippet10>
@@ -35,7 +35,7 @@ namespace TextRendering
         {
             String text1 = "How big is this text?";
             Font arialBold = new Font("Arial", 12.0F);
-            
+
             // Indicate a size taller than it is wide.
             Size proposedSize = new Size(40, 60);
 
@@ -47,7 +47,7 @@ namespace TextRendering
         //<snippet2>
         private void RenderText1(PaintEventArgs e)
         {
-            TextRenderer.DrawText(e.Graphics, "Regular Text", this.Font, 
+            TextRenderer.DrawText(e.Graphics, "Regular Text", this.Font,
                 new Point(10, 10), SystemColors.ControlText);
         }
         //</snippet2>
@@ -69,7 +69,7 @@ namespace TextRendering
         private void RenderText4(PaintEventArgs e)
         {
             TextRenderer.DrawText(e.Graphics, "Regular Text.", this.Font,
-                new Rectangle(10, 10, 70, 70), SystemColors.ControlText, 
+                new Rectangle(10, 10, 70, 70), SystemColors.ControlText,
                 SystemColors.ControlDark);
         }
         //</snippet5>
@@ -112,8 +112,8 @@ namespace TextRendering
             string[] stringsToPaint = { "Tail", "Spin", " Toys" };
 
             // Declare fonts for rendering the strings.
-            Font[] fonts = { new Font("Arial", 14, FontStyle.Regular), 
-                new Font("Arial", 14, FontStyle.Italic), 
+            Font[] fonts = { new Font("Arial", 14, FontStyle.Regular),
+                new Font("Arial", 14, FontStyle.Italic),
                 new Font("Arial", 14, FontStyle.Regular) };
 
             Point startPoint = new Point(10, 10);
@@ -124,11 +124,11 @@ namespace TextRendering
             // Declare a proposed size with dimensions set to the maximum integer value.
             Size proposedSize = new Size(int.MaxValue, int.MaxValue);
 
-            // Measure each string with its font and NoPadding value and 
+            // Measure each string with its font and NoPadding value and
             // draw it to the form.
             for (int i = 0; i < stringsToPaint.Length; i++)
             {
-                Size size = TextRenderer.MeasureText(e.Graphics, stringsToPaint[i], 
+                Size size = TextRenderer.MeasureText(e.Graphics, stringsToPaint[i],
                     fonts[i], proposedSize, flags);
                 Rectangle rect = new Rectangle(startPoint, size);
                 TextRenderer.DrawText(e.Graphics, stringsToPaint[i], fonts[i],
@@ -137,13 +137,13 @@ namespace TextRendering
             }
         }
 	//</snippet11>
-        
+
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
+            //
             // Form1
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(292, 273);
             this.Name = "Form1";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);

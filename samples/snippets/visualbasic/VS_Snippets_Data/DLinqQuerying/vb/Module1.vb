@@ -49,8 +49,8 @@ Module Module1
         db.LoadOptions = ds
 
         Dim custQuery = From cust In db.Customers _
-            Where cust.City = "London" _
-            Select cust
+                        Where cust.City = "London" _
+                        Select cust
 
         For Each custObj In custQuery
             Console.WriteLine("Customer ID: {0}", custObj.CustomerID)
@@ -102,7 +102,7 @@ Module Module1
     ' <Snippet7>
     ' The following example invokes such a compiled query in the main
     ' program
-    Public Function GetCustomersByCity(ByVal city As String) As  _
+    Public Function GetCustomersByCity(ByVal city As String) As _
         IEnumerable(Of Customer)
 
         Dim myDb = GetNorthwind()
@@ -115,13 +115,13 @@ End Module
 ' <Snippet6>
 Class Queries
 
-    Public Shared CustomersByCity As  _
+    Public Shared CustomersByCity As _
         Func(Of Northwnd, String, IQueryable(Of Customer)) = _
             CompiledQuery.Compile(Function(db As Northwnd, _
     city As String) _
         From c In db.Customers Where c.City = city Select c)
 
-    Public Shared CustomersById As  _
+    Public Shared CustomersById As _
         Func(Of Northwnd, String, IQueryable(Of Customer)) = _
             CompiledQuery.Compile(Function(db As Northwnd, _
     id As String) _

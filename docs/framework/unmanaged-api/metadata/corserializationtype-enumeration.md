@@ -73,7 +73,7 @@ typedef enum CorSerializationType {
 |`SERIALIZATION_TYPE_ENUM`|Object is serialized as an enumeration.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h  
   
@@ -81,4 +81,4 @@ typedef enum CorSerializationType {
   
 ## See also
 
-- [Metadata Enumerations](../../../../docs/framework/unmanaged-api/metadata/metadata-enumerations.md)
+- [Metadata Enumerations](metadata-enumerations.md)

@@ -16,7 +16,7 @@ public class Form1 : Form
 
     // 09f0c07a-19c0-43b4-90a2-862a10545ce8
     // Drawing, Positioning, and Cloning Images in GDI+
-   
+
     public void Method11()
     {
         Graphics myGraphics = this.CreateGraphics();
@@ -110,7 +110,7 @@ public class Form1 : Form
         myGraphics.DrawImage(
            myBitmap, destRectangle1, sourceRectangle, GraphicsUnit.Pixel);
 
-        // Draw the expanded hand. 
+        // Draw the expanded hand.
         myGraphics.DrawImage(
            myBitmap, destRectangle2, sourceRectangle, GraphicsUnit.Pixel);
         // </snippet32>

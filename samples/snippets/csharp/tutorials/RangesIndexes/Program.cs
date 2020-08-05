@@ -22,6 +22,8 @@ namespace RangesIndexes
             indexSamples.Syntax_WhyChosenSemantics();
             Console.WriteLine("          ==========          Scenario.              ==========");
             indexSamples.ComputeMovingAverages();
+            Console.WriteLine("          ==========          Jageged arrays.        ==========");
+            indexSamples.JaggedArrays();
         }
     }
 }

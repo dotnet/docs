@@ -26,13 +26,13 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
  The .NET Framework provides a security mechanism called code access security to help protect computer systems from malicious mobile code, to allow code from unknown origins to run with protection, and to help prevent trusted code from intentionally or accidentally compromising security. Code access security enables code to be trusted to varying degrees depending on where the code originates and on other aspects of the code's identity. Code access security also enforces the varying levels of trust on code, which minimizes the amount of code that must be fully trusted in order to run. Using code access security can reduce the likelihood that your code will be misused by malicious or error-filled code. It can reduce your liability, because you can specify the set of operations your code should be allowed to perform. Code access security can also help minimize the damage that can result from security vulnerabilities in your code.  
   
 > [!NOTE]
-> Major changes have been made to code access security in the .NET Framework 4. The most notable change has been [security transparency](security-transparent-code.md), but there are also other significant changes that affect code access security. For information about these changes, see [Security Changes](../security/security-changes.md).  
+> Major changes have been made to code access security in the .NET Framework 4. The most notable change has been [security transparency](security-transparent-code.md), but there are also other significant changes that affect code access security. For information about these changes, see [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes).  
   
  Code access security primarily affects library code and partially trusted applications. Library developers must protect their code from unauthorized access from partially trusted applications. Partially trusted applications are applications that are loaded from external sources such as the Internet. Applications that are installed on your desktop or on the local intranet run in full trust. Full-trust applications are not affected by code access security unless they are marked as [security-transparent](security-transparent-code.md), because they are fully trusted. The only limitation for full-trust applications is that applications that are marked with the <xref:System.Security.SecurityTransparentAttribute> attribute cannot call code that is marked with the <xref:System.Security.SecurityCriticalAttribute> attribute. Partially trusted applications must be run in a sandbox (for example, in Internet Explorer) so that code access security can be applied. If you download an application from the Internet and try to run it from your desktop, you will get a <xref:System.NotSupportedException> with the message: "An attempt was made to load an assembly from a network location which would have caused the assembly to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, so this load may be dangerous." If you are sure that the application can be trusted, you can enable it to be run as full trust by using the [\<loadFromRemoteSources> element](../configure-apps/file-schema/runtime/loadfromremotesources-element.md). For information about running an application in a sandbox, see [How to: Run Partially Trusted Code in a Sandbox](how-to-run-partially-trusted-code-in-a-sandbox.md).  
   
  All managed code that targets the common language runtime receives the benefits of code access security, even if that code does not make a single code access security call. For more information, see [Code Access Security Basics](code-access-security-basics.md).  
   
-<a name="key_functions"></a>   
+<a name="key_functions"></a>
 ## Key Functions of Code Access Security  
  Code access security helps limit the access that code has to protected resources and operations. In the .NET Framework, code access security performs the following functions:  
   
@@ -44,7 +44,7 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
   
 - Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.  
   
-<a name="walking_the_call_stack"></a>   
+<a name="walking_the_call_stack"></a>
 ## Walking the Call Stack  
  To determine whether code is authorized to access a resource or perform an operation, the runtime's security system walks the call stack, comparing the granted permissions of each caller to the permission being demanded. If any caller in the call stack does not have the demanded permission, a security exception is thrown and access is refused. The stack walk is designed to help prevent luring attacks, in which less-trusted code calls highly trusted code and uses it to perform unauthorized actions. Demanding permissions of all callers at run time affects performance, but it is essential to help protect code from luring attacks by less-trusted code. To optimize performance, you can have your code perform fewer stack walks; however, you must be sure that you do not expose a security weakness whenever you do this.  
   
@@ -53,7 +53,7 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
  ![Code access security](media/slide-10a.gif "slide_10a")  
 Security stack walk  
   
-<a name="related_topics"></a>   
+<a name="related_topics"></a>
 ## Related Topics  
   
 |Title|Description|  

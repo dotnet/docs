@@ -29,7 +29,7 @@ HRESULT ThreadIsBlockingForSuspension ( );
  The host may choose within the `ThreadIsBlockingForSuspension` callback whether to reschedule a thread.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -39,4 +39,4 @@ HRESULT ThreadIsBlockingForSuspension ( );
   
 ## See also
 
-- [IGCThreadControl Interface](../../../../docs/framework/unmanaged-api/hosting/igcthreadcontrol-interface.md)
+- [IGCThreadControl Interface](igcthreadcontrol-interface.md)

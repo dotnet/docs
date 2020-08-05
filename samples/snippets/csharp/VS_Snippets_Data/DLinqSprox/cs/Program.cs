@@ -39,7 +39,7 @@ namespace cs_sprox
 
             // Pause to view company names; press Enter to continue.
             Console.ReadLine();
-            
+
             // Assign the results of the procedure with an argument
             // of (2) to local variable 'result'.
             IMultipleResults result2 = db.VariableResultShapes(2);

@@ -8,10 +8,10 @@ Public Class Example
     ' demonstrate a method bound to an object.
     '
     Private test As Integer
-    Public Sub New(ByVal test As Integer) 
-        Me.test = test 
+    Public Sub New(ByVal test As Integer)
+        Me.test = test
     End Sub
-    
+
     ' Declare delegates that can be used to execute the completed 
     ' SquareIt dynamic method. The OneParameter delegate can be 
     ' used to execute any method with one parameter and a return
@@ -20,16 +20,16 @@ Public Class Example
     '
     '<Snippet2>
     Private Delegate Function _
-        SquareItInvoker(ByVal input As Integer) As Long 
-    
+        SquareItInvoker(ByVal input As Integer) As Long
+
     '<Snippet12>
     Private Delegate Function _
         OneParameter(Of TReturn, TParameter0) _
-        (ByVal p0 As TParameter0) As TReturn 
+        (ByVal p0 As TParameter0) As TReturn
     '</Snippet12>
     '</Snippet2>
 
-    Public Shared Sub Main() 
+    Public Shared Sub Main()
 
         ' Example 1: A simple dynamic method.
         '
@@ -38,7 +38,7 @@ Public Class Example
         ' Integer, so the array has only one element.
         '
         '<Snippet3>
-        Dim methodArgs As Type() = { GetType(Integer) }
+        Dim methodArgs As Type() = {GetType(Integer)}
         '</Snippet3>
 
         ' Create a DynamicMethod. In this example the method is
@@ -96,8 +96,8 @@ Public Class Example
                     GetType(OneParameter(Of Long, Integer))), _
                 OneParameter(Of Long, Integer) _
             )
-        
-        Console.WriteLine("123456789 squared = {0}", _ 
+
+        Console.WriteLine("123456789 squared = {0}", _
             invokeSquareIt(123456789))
         '</Snippet6>
 
@@ -112,7 +112,7 @@ Public Class Example
         '
         '<Snippet13>
         Dim methodArgs2 As Type() = _
-            { GetType(Example), GetType(Integer) }
+            {GetType(Example), GetType(Integer)}
         '</Snippet13>
 
         ' Create a DynamicMethod. In this example the method has no
@@ -144,7 +144,7 @@ Public Class Example
         '<Snippet15>
         Dim ilMP As ILGenerator = multiplyPrivate.GetILGenerator()
         ilMP.Emit(OpCodes.Ldarg_0)
-        
+
         Dim testInfo As FieldInfo = _
             GetType(Example).GetField("test", _
                 BindingFlags.NonPublic Or BindingFlags.Instance)
@@ -179,11 +179,11 @@ Public Class Example
                 ), _
                 OneParameter(Of Integer, Integer) _
             )
-        
+
         Console.WriteLine("3 * test = {0}", invoke(3))
         '</Snippet16>
 
-    End Sub 
+    End Sub
 
 End Class
 

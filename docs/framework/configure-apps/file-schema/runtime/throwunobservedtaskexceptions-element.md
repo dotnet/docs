@@ -69,10 +69,10 @@ Specifies whether unhandled task exceptions should terminate a running process.
  The following example shows how to enable the throwing of exceptions in tasks by using an application configuration file.  
   
 ```xml  
-<configuration>   
-    <runtime>   
-        <ThrowUnobservedTaskExceptions enabled="true"/>   
-    </runtime>   
+<configuration>
+    <runtime>
+        <ThrowUnobservedTaskExceptions enabled="true"/>
+    </runtime>
 </configuration>  
 ```  
   

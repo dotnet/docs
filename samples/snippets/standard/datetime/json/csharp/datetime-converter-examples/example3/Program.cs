@@ -66,7 +66,7 @@ namespace DateTimeConverterExamples
     }
 }
 
-// The example displays the following output:
+// The example displays output similar to the following:
 // The JSON value could not be converted to System.DateTime.Path: $ | LineNumber: 0 | BytePositionInLine: 35.
 // 7/16/2019 4:45:27 PM
 // "16/07/2019"

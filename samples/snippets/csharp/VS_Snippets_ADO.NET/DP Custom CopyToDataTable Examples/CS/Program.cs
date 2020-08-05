@@ -56,18 +56,18 @@ namespace DP_Custom_CopyToDataTable_Examples
                         detail.Field<int>("ProductID")
                 };
 
-            DataTable orderTable = query.CopyToDataTable(); 
-            //</SnippetJoin>           
+            DataTable orderTable = query.CopyToDataTable();
+            //</SnippetJoin>
 
-            DisplayTable(orderTable);  
+            DisplayTable(orderTable);
         }
 
         static void LoadItemsIntoTable()
         {
             //<SnippetLoadItemsIntoTable>
-            // Create a sequence. 
-            Item[] items = new Item[] 
-            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"}, 
+            // Create a sequence.
+            Item[] items = new Item[]
+            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
               new Movie{Id = 1, Price = 13.40, Genre = "Action", Director = "Emmanuel Fernandez"}};
@@ -87,14 +87,14 @@ namespace DP_Custom_CopyToDataTable_Examples
         static void LoadItemsIntoExistingTable()
         {
             //<SnippetLoadItemsIntoExistingTable>
-            // Create a sequence. 
-            Item[] items = new Item[] 
-            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"}, 
+            // Create a sequence.
+            Item[] items = new Item[]
+            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
               new Movie{Id = 1, Price = 13.40, Genre = "Action", Director = "Emmanuel Fernandez"}};
 
-            // Create a table with a schema that matches that of the query results.            
+            // Create a table with a schema that matches that of the query results.
             DataTable table = new DataTable();
             table.Columns.Add("Price", typeof(int));
             table.Columns.Add("Genre", typeof(string));
@@ -112,13 +112,13 @@ namespace DP_Custom_CopyToDataTable_Examples
         static void LoadItemsExpandSchema()
         {
             //<SnippetLoadItemsExpandSchema>
-            // Create a sequence. 
-            Item[] items = new Item[] 
-            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"}, 
+            // Create a sequence.
+            Item[] items = new Item[]
+            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
               new Movie{Id = 1, Price = 13.40, Genre = "Action", Director = "Emmanuel Fernandez"}};
-            
+
             // Load into an existing DataTable, expand the schema and
             // autogenerate a new Id.
             DataTable table = new DataTable();
@@ -139,13 +139,13 @@ namespace DP_Custom_CopyToDataTable_Examples
         static void LoadScalarSequence()
         {
             //<SnippetLoadScalarSequence>
-            // Create a sequence. 
-            Item[] items = new Item[] 
-            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"}, 
+            // Create a sequence.
+            Item[] items = new Item[]
+            { new Book{Id = 1, Price = 13.50, Genre = "Comedy", Author = "Gustavo Achong"},
               new Book{Id = 2, Price = 8.50, Genre = "Drama", Author = "Jessie Zeng"},
               new Movie{Id = 1, Price = 22.99, Genre = "Comedy", Director = "Marissa Barnes"},
               new Movie{Id = 1, Price = 13.40, Genre = "Action", Director = "Emmanuel Fernandez"}};
-            
+
             // load sequence of scalars.
             IEnumerable<double> query = from i in items
                          where i.Price > 9.99
@@ -175,8 +175,8 @@ namespace DP_Custom_CopyToDataTable_Examples
             // <SnippetFillDataSet>
             try
             {
-                // Create a new adapter and give it a query to fetch sales order, contact, 
-                // address, and product information for sales in the year 2002. Point connection 
+                // Create a new adapter and give it a query to fetch sales order, contact,
+                // address, and product information for sales in the year 2002. Point connection
                 // information to the configuration setting "AdventureWorks".
                 string connectionString = "Data Source=localhost;Initial Catalog=AdventureWorks;"
                     + "Integrated Security=true;";
@@ -302,10 +302,10 @@ namespace DP_Custom_CopyToDataTable_Examples
         /// Loads a DataTable from a sequence of objects.
         /// </summary>
         /// <param name="source">The sequence of objects to load into the DataTable.</param>
-        /// <param name="table">The input table. The schema of the table must match that 
-        /// the type T.  If the table is null, a new table is created with a schema 
+        /// <param name="table">The input table. The schema of the table must match that
+        /// the type T.  If the table is null, a new table is created with a schema
         /// created from the public properties and fields of the type T.</param>
-        /// <param name="options">Specifies how values from the source sequence will be applied to 
+        /// <param name="options">Specifies how values from the source sequence will be applied to
         /// existing rows in the table.</param>
         /// <returns>A DataTable created from the source sequence.</returns>
         public DataTable Shred(IEnumerable<T> source, DataTable table, LoadOption? options)
@@ -377,7 +377,7 @@ namespace DP_Custom_CopyToDataTable_Examples
 
             // Return the table.
             return table;
-        }        
+        }
 
         public object[] ShredObject(DataTable table, T instance)
         {
@@ -412,8 +412,8 @@ namespace DP_Custom_CopyToDataTable_Examples
 
         public DataTable ExtendTable(DataTable table, Type type)
         {
-            // Extend the table schema if the input table was null or if the value 
-            // in the sequence is derived from type T.            
+            // Extend the table schema if the input table was null or if the value
+            // in the sequence is derived from type T.
             foreach (FieldInfo f in type.GetFields())
             {
                 if (!_ordinalMap.ContainsKey(f.Name))

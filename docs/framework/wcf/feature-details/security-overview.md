@@ -13,7 +13,7 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
 > [!NOTE]
 > For a comprehensive guide to WCF security, see [WCF Security Guidance](https://archive.codeplex.com/?p=WCFSecurity).  
   
- WCF uses concepts that are familiar if you have built secure, distributed applications with existing technologies such as HTTPS, Windows integrated security, or user names and passwords to authenticate users. WCF not only integrates with existing security infrastructures, but also extends distributed security beyond Windows-only domains by using secure SOAP messages. Consider WCF an implementation of existing security mechanisms with the major advantage of using SOAP as the protocol in addition to existing protocols. For example, credentials that identify a client or a service, such as user name and password or X.509 certificates, have interoperable XML-based SOAP profiles. Using these profiles, messages are exchanged securely by taking advantage of open specifications like XML digital signatures and XML encryption. For a list of specifications, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](../../../../docs/framework/wcf/feature-details/web-services-protocols-supported-by-system-provided-interoperability-bindings.md).  
+ WCF uses concepts that are familiar if you have built secure, distributed applications with existing technologies such as HTTPS, Windows integrated security, or user names and passwords to authenticate users. WCF not only integrates with existing security infrastructures, but also extends distributed security beyond Windows-only domains by using secure SOAP messages. Consider WCF an implementation of existing security mechanisms with the major advantage of using SOAP as the protocol in addition to existing protocols. For example, credentials that identify a client or a service, such as user name and password or X.509 certificates, have interoperable XML-based SOAP profiles. Using these profiles, messages are exchanged securely by taking advantage of open specifications like XML digital signatures and XML encryption. For a list of specifications, see [Web Services Protocols Supported by System-Provided Interoperability Bindings](web-services-protocols-supported-by-system-provided-interoperability-bindings.md).  
   
  Another parallel is the Component Object Model (COM) on the Windows platform, which enables secure, distributed applications. COM has a comprehensive security mechanism whereby security context can be flowed between components; this mechanism enforces integrity, confidentiality, and authentication. However COM does not enable cross-platform, secure messaging like WCF does. Using WCF, you can build services and clients that span from Windows domains across the Internet. The interoperable messages of WCF are essential for building dynamic, business-driven services that help you feel confident in the security of your information.  
   
@@ -80,32 +80,32 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
   
 - *Message security mode*, on the other hand, uses WS-Security (and other specifications) to implement transfer security. Because the message security is applied directly to the SOAP messages and is contained inside the SOAP envelopes, together with the application data, it has the advantage of being transport protocol-independent, more extensible, and ensuring end-to-end security (versus point-to-point); it has the disadvantage of being several times slower than transport security mode because it has to deal with the XML nature of the SOAP messages.  
   
- For more information about these differences, see [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md).  
+ For more information about these differences, see [Securing Services and Clients](securing-services-and-clients.md).  
   
  A third security mode uses both previous modes and brings advantages of both. This mode is called `TransportWithMessageCredential`. In this mode, message security is used to authenticate the client and transport security is used to authenticate the server and provide message confidentiality and integrity. Thanks to this, the `TransportWithMessageCredential` security mode is almost as fast as transport security mode and provides client authentication extensibility in the same way as message security. However, unlike message security mode, it does not provide complete end-to-end security.  
   
 ### Access Control  
  *Access control* is also known as authorization. *Authorization* allows different users to have different privileges to view data. For example, because a company's human resources files contain sensitive employee data, only managers are allowed to view employee data. Further, managers can view only data for their direct reports. In this case, access control is based on both the role ("manager") as well as the specific identity of the manager (to prevent one manager from looking at another manager's employee records).  
   
- In WCF, access control features are provided through integration with the common language runtime (CLR) <xref:System.Security.Permissions.PrincipalPermissionAttribute> and through a set of APIs known as the *identity model*. For details about access control and claims-based authorization, see [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md).  
+ In WCF, access control features are provided through integration with the common language runtime (CLR) <xref:System.Security.Permissions.PrincipalPermissionAttribute> and through a set of APIs known as the *identity model*. For details about access control and claims-based authorization, see [Extending Security](../extending/extending-security.md).  
   
 ### Auditing  
- *Auditing* is the logging of security events to the Windows event log. You can log security-related events, such as authentication failures (or successes). For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md). For programming details, see [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md).  
+ *Auditing* is the logging of security events to the Windows event log. You can log security-related events, such as authentication failures (or successes). For more information, see [Auditing](auditing-security-events.md). For programming details, see [How to: Audit Security Events](how-to-audit-wcf-security-events.md).  
   
 ## See also
 
 - <xref:System.Security.Permissions.PrincipalPermissionAttribute>
-- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
-- [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
-- [Bindings and Security](../../../../docs/framework/wcf/feature-details/bindings-and-security.md)
-- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Authentication](../../../../docs/framework/wcf/feature-details/authentication-in-wcf.md)
-- [Authorization](../../../../docs/framework/wcf/feature-details/authorization-in-wcf.md)
-- [Federation and Issued Tokens](../../../../docs/framework/wcf/feature-details/federation-and-issued-tokens.md)
-- [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
-- [Security Guidance and Best Practices](../../../../docs/framework/wcf/feature-details/security-guidance-and-best-practices.md)
-- [Configuring Services Using Configuration Files](../../../../docs/framework/wcf/configuring-services-using-configuration-files.md)
-- [System-Provided Bindings](../../../../docs/framework/wcf/system-provided-bindings.md)
-- [Endpoint Creation Overview](../../../../docs/framework/wcf/endpoint-creation-overview.md)
-- [Extending Security](../../../../docs/framework/wcf/extending/extending-security.md)
+- [Securing Services](../securing-services.md)
+- [Common Security Scenarios](common-security-scenarios.md)
+- [Bindings and Security](bindings-and-security.md)
+- [Securing Services and Clients](securing-services-and-clients.md)
+- [Authentication](authentication-in-wcf.md)
+- [Authorization](authorization-in-wcf.md)
+- [Federation and Issued Tokens](federation-and-issued-tokens.md)
+- [Auditing](auditing-security-events.md)
+- [Security Guidance and Best Practices](security-guidance-and-best-practices.md)
+- [Configuring Services Using Configuration Files](../configuring-services-using-configuration-files.md)
+- [System-Provided Bindings](../system-provided-bindings.md)
+- [Endpoint Creation Overview](../endpoint-creation-overview.md)
+- [Extending Security](../extending/extending-security.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

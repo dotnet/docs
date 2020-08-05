@@ -53,7 +53,7 @@ namespace SDKSamples
             navigationMenu.Items.Add(item3);
             navigationMenu.Items.Add(item4);
 
-            KeyboardNavigation.SetTabNavigation(navigationMenu, 
+            KeyboardNavigation.SetTabNavigation(navigationMenu,
                 KeyboardNavigationMode.Cycle);
             //</SnippetMarkupKeyboardNavigationTabNavigationCODE>
 

@@ -18,8 +18,8 @@ public class MainPage
 internal class TextBlock
 {
    private String s;
-   
-   public String Text 
+
+   public String Text
    {
       get { return s; }
       set { s = value; }

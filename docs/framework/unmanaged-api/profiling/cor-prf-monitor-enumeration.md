@@ -37,9 +37,9 @@ typedef enum {
     COR_PRF_MONITOR_CODE_TRANSITIONS    = 0x00000800,  
     COR_PRF_MONITOR_ENTERLEAVE          = 0x00001000,  
     COR_PRF_MONITOR_CCW                 = 0x00002000,  
-    COR_PRF_MONITOR_REMOTING_COOKIE     = 0x00004000 |   
+    COR_PRF_MONITOR_REMOTING_COOKIE     = 0x00004000 |
                                           COR_PRF_MONITOR_REMOTING,  
-    COR_PRF_MONITOR_REMOTING_ASYNC      = 0x00008000 |   
+    COR_PRF_MONITOR_REMOTING_ASYNC      = 0x00008000 |
                                           COR_PRF_MONITOR_REMOTING,  
     COR_PRF_MONITOR_SUSPENDS            = 0x00010000,  
     COR_PRF_MONITOR_CACHE_SEARCHES      = 0x00020000,  
@@ -60,8 +60,8 @@ typedef enum {
                                         = 0x40000000,  
     COR_PRF_DISABLE_ALL_NGEN_IMAGES     = 0x80000000,  
     COR_PRF_ALL                         = 0x8FFFFFFF,  
-    COR_PRF_REQUIRE_PROFILE_IMAGE       = COR_PRF_USE_PROFILE_IMAGES |   
-                                          COR_PRF_MONITOR_CODE_TRANSITIONS |   
+    COR_PRF_REQUIRE_PROFILE_IMAGE       = COR_PRF_USE_PROFILE_IMAGES |
+                                          COR_PRF_MONITOR_CODE_TRANSITIONS |
                                           COR_PRF_MONITOR_ENTERLEAVE,  
     COR_PRF_ALLOWABLE_AFTER_ATTACH      = COR_PRF_MONITOR_THREADS |  
                                           COR_PRF_MONITOR_MODULE_LOADS |  
@@ -104,14 +104,14 @@ typedef enum {
   
 - [Composite flags](#Composite)  
   
-<a name="None"></a>   
+<a name="None"></a>
 ### No flags set  
   
 |Member|Description|  
 |------------|-----------------|  
 |`COR_PRF_MONITOR_NONE`|No flags are set.|  
   
-<a name="Callback"></a>   
+<a name="Callback"></a>
 ### Callback flags  
   
 |Member|Description|  
@@ -137,7 +137,7 @@ typedef enum {
 |`COR_PRF_MONITOR_SUSPENDS`|Controls the `RuntimeSuspend*`, `RuntimeResume*`, [RuntimeThreadSuspended](icorprofilercallback-runtimethreadsuspended-method.md), and [RuntimeThreadResumed](icorprofilercallback-runtimethreadresumed-method.md) callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) interface.|  
 |`COR_PRF_MONITOR_THREADS`|Controls the [ThreadCreated](icorprofilercallback-threadcreated-method.md),  [ThreadDestroyed](icorprofilercallback-threaddestroyed-method.md),  [ThreadAssignedToOSThread](icorprofilercallback-threadassignedtoosthread-method.md), and [ThreadNameChanged](icorprofilercallback2-threadnamechanged-method.md) callbacks in the [ICorProfilerCallback](icorprofilercallback-interface.md) and [ICorProfilerCallback2](icorprofilercallback2-interface.md) interfaces.|  
   
-<a name="Feature"></a>   
+<a name="Feature"></a>
 ### Feature-enabling flags  
   
 |Member|Description|  
@@ -151,7 +151,7 @@ typedef enum {
 |`COR_PRF_ENABLE_REJIT`|Enables calls to the [RequestReJIT](icorprofilerinfo4-requestrejit-method.md) and [RequestRevert](icorprofilerinfo4-requestrevert-method.md) methods. The profiler must set this flag on startup.  If the profiler specifies this flag, it must also specify `COR_PRF_DISABLE_ALL_NGEN_IMAGES`.|  
 |`COR_PRF_ENABLE_STACK_SNAPSHOT`|Enables calls to the [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) method.|  
   
-<a name="Config"></a>   
+<a name="Config"></a>
 ### Configuration flags  
   
 |Member|Description|  
@@ -162,7 +162,7 @@ typedef enum {
 |`COR_PRF_DISABLE_TRANSPARENCY_CHECKS_UNDER_FULL_TRUST`|Disables security transparency checks that are normally done during just-in-time (JIT) compilation and class loading for full-trust assemblies. This can make some instrumentation easier to perform.|  
 |`COR_PRF_USE_PROFILE_IMAGES`|Causes the native image search to look for profiler-enhanced images. If no profiler-enhanced image is found for a given assembly, the common language runtime falls back to JIT for that assembly. If this flag and the `COR_PRF_DISABLE_ALL_NGEN_IMAGES` flag are both specified, `COR_PRF_DISABLE_ALL_NGEN_IMAGES` is used.|  
   
-<a name="Composite"></a>   
+<a name="Composite"></a>
 ### Composite flags  
   
 |Member|Description|  
@@ -177,7 +177,7 @@ typedef enum {
  A `COR_PRF_MONITOR` value is used with the [ICorProfilerInfo::GetEventMask](icorprofilerinfo-geteventmask-method.md) and [ICorProfilerInfo::SetEventMask](icorprofilerinfo-seteventmask-method.md) methods to define the event notifications that the common language runtime makes to the profiler.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

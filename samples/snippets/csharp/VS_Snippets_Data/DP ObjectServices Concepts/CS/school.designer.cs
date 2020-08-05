@@ -29,14 +29,14 @@ using System.Runtime.Serialization;
 namespace ObjectServicesConceptsCS
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class SchoolEntities : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new SchoolEntities object using the connection string found in the 'SchoolEntities' section of the application configuration file.
         /// </summary>
@@ -45,7 +45,7 @@ namespace ObjectServicesConceptsCS
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new SchoolEntities object.
         /// </summary>
@@ -54,7 +54,7 @@ namespace ObjectServicesConceptsCS
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new SchoolEntities object.
         /// </summary>
@@ -63,17 +63,17 @@ namespace ObjectServicesConceptsCS
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -89,7 +89,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<Course> _Courses;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -105,7 +105,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<Department> _Departments;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -121,7 +121,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<OfficeAssignment> _OfficeAssignments;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -137,7 +137,7 @@ namespace ObjectServicesConceptsCS
             }
         }
         private ObjectSet<Person> _People;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -156,7 +156,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region AddTo Methods
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Courses EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -164,7 +164,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("Courses", course);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Departments EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -172,7 +172,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("Departments", department);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the OfficeAssignments EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -180,7 +180,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("OfficeAssignments", officeAssignment);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the People EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -188,7 +188,7 @@ namespace ObjectServicesConceptsCS
         {
             base.AddObject("People", person);
         }
-    
+
         /// <summary>
         /// Deprecated Method for adding a new object to the StudentGrades EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -199,7 +199,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Function Imports
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -215,7 +215,7 @@ namespace ObjectServicesConceptsCS
             {
                 studentIDParameter = new ObjectParameter("StudentID", typeof(global::System.Int32));
             }
-    
+
             return base.ExecuteFunction<StudentGrade>("GetStudentGrades", studentIDParameter);
         }
         /// <summary>
@@ -234,10 +234,10 @@ namespace ObjectServicesConceptsCS
             {
                 studentIDParameter = new ObjectParameter("StudentID", typeof(global::System.Int32));
             }
-    
+
             return base.ExecuteFunction<StudentGrade>("GetStudentGrades", mergeOption, studentIDParameter);
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -254,18 +254,18 @@ namespace ObjectServicesConceptsCS
             {
                 iDParameter = new ObjectParameter("ID", typeof(global::System.Int32));
             }
-    
+
             return base.ExecuteFunction("GetDepartmentName", iDParameter, name);
         }
 
         #endregion
     }
-    
+
 
     #endregion
-    
+
     #region Entities
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -277,7 +277,7 @@ namespace ObjectServicesConceptsCS
     public abstract partial class Course : EntityObject
     {
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -304,7 +304,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -328,7 +328,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -352,7 +352,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _Credits;
         partial void OnCreditsChanging(global::System.Int32 value);
         partial void OnCreditsChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -378,9 +378,9 @@ namespace ObjectServicesConceptsCS
         partial void OnDepartmentIDChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -418,7 +418,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -440,7 +440,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -465,7 +465,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -475,7 +475,7 @@ namespace ObjectServicesConceptsCS
     public partial class Department : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Department object.
         /// </summary>
@@ -495,7 +495,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -522,7 +522,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _DepartmentID;
         partial void OnDepartmentIDChanging(global::System.Int32 value);
         partial void OnDepartmentIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -546,7 +546,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -570,7 +570,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Decimal _Budget;
         partial void OnBudgetChanging(global::System.Decimal value);
         partial void OnBudgetChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -594,7 +594,7 @@ namespace ObjectServicesConceptsCS
         private global::System.DateTime _StartDate;
         partial void OnStartDateChanging(global::System.DateTime value);
         partial void OnStartDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -620,9 +620,9 @@ namespace ObjectServicesConceptsCS
         partial void OnAdministratorChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -647,7 +647,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -657,7 +657,7 @@ namespace ObjectServicesConceptsCS
     public partial class OfficeAssignment : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new OfficeAssignment object.
         /// </summary>
@@ -675,7 +675,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -702,7 +702,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _InstructorID;
         partial void OnInstructorIDChanging(global::System.Int32 value);
         partial void OnInstructorIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -726,7 +726,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Location;
         partial void OnLocationChanging(global::System.String value);
         partial void OnLocationChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -752,9 +752,9 @@ namespace ObjectServicesConceptsCS
         partial void OnTimestampChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -795,7 +795,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -805,7 +805,7 @@ namespace ObjectServicesConceptsCS
     public partial class OnlineCourse : Course
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new OnlineCourse object.
         /// </summary>
@@ -827,7 +827,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -853,9 +853,9 @@ namespace ObjectServicesConceptsCS
         partial void OnURLChanged();
 
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -865,7 +865,7 @@ namespace ObjectServicesConceptsCS
     public partial class OnsiteCourse : Course
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new OnsiteCourse object.
         /// </summary>
@@ -891,7 +891,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -915,7 +915,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Location;
         partial void OnLocationChanging(global::System.String value);
         partial void OnLocationChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -939,7 +939,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _Days;
         partial void OnDaysChanging(global::System.String value);
         partial void OnDaysChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -965,9 +965,9 @@ namespace ObjectServicesConceptsCS
         partial void OnTimeChanged();
 
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -977,7 +977,7 @@ namespace ObjectServicesConceptsCS
     public partial class Person : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new Person object.
         /// </summary>
@@ -995,7 +995,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1022,7 +1022,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _PersonID;
         partial void OnPersonIDChanging(global::System.Int32 value);
         partial void OnPersonIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1046,7 +1046,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _LastName;
         partial void OnLastNameChanging(global::System.String value);
         partial void OnLastNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1070,7 +1070,7 @@ namespace ObjectServicesConceptsCS
         private global::System.String _FirstName;
         partial void OnFirstNameChanging(global::System.String value);
         partial void OnFirstNameChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1094,7 +1094,7 @@ namespace ObjectServicesConceptsCS
         private Nullable<global::System.DateTime> _HireDate;
         partial void OnHireDateChanging(Nullable<global::System.DateTime> value);
         partial void OnHireDateChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1120,9 +1120,9 @@ namespace ObjectServicesConceptsCS
         partial void OnEnrollmentDateChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1160,7 +1160,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1182,7 +1182,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1207,7 +1207,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1217,7 +1217,7 @@ namespace ObjectServicesConceptsCS
     public partial class StudentGrade : EntityObject
     {
         #region Factory Method
-    
+
         /// <summary>
         /// Create a new StudentGrade object.
         /// </summary>
@@ -1235,7 +1235,7 @@ namespace ObjectServicesConceptsCS
 
         #endregion
         #region Primitive Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1262,7 +1262,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _EnrollmentID;
         partial void OnEnrollmentIDChanging(global::System.Int32 value);
         partial void OnEnrollmentIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1286,7 +1286,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1310,7 +1310,7 @@ namespace ObjectServicesConceptsCS
         private global::System.Int32 _StudentID;
         partial void OnStudentIDChanging(global::System.Int32 value);
         partial void OnStudentIDChanged();
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1336,9 +1336,9 @@ namespace ObjectServicesConceptsCS
         partial void OnGradeChanged();
 
         #endregion
-    
+
         #region Navigation Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1376,7 +1376,7 @@ namespace ObjectServicesConceptsCS
                 }
             }
         }
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1419,5 +1419,5 @@ namespace ObjectServicesConceptsCS
     }
 
     #endregion
-    
+
 }

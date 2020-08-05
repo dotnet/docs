@@ -21,5 +21,5 @@ This section talks about usage of several types residing in <xref:System.Xml?dis
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Usage Guidelines](../../../docs/standard/design-guidelines/usage-guidelines.md)
+- [Framework Design Guidelines](index.md)
+- [Usage Guidelines](usage-guidelines.md)

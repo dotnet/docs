@@ -9,7 +9,7 @@ public class Example
       string pattern = @"(?<2>\w)\k<2>";
       string input = "trellis llama webbing dresser swagger";
       foreach (Match match in Regex.Matches(input, pattern))
-         Console.WriteLine("Found '{0}' at position {1}.", 
+         Console.WriteLine("Found '{0}' at position {1}.",
                            match.Value, match.Index);
    }
 }

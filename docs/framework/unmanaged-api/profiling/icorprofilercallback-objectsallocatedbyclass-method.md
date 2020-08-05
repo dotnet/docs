@@ -46,7 +46,7 @@ HRESULT ObjectsAllocatedByClass(
  The `classIds` array may contain one or more null entries if the corresponding `cObjects` array has types that are unloading.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

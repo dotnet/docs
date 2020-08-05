@@ -18,14 +18,14 @@ namespace OfficeWalkthroughCS
         private void ThisAddIn_Startup(object sender, System.EventArgs e)
         {
             //<snippet3>
-            var bankAccounts = new List<Account> 
+            var bankAccounts = new List<Account>
             {
-                new Account 
+                new Account
                 {
                     ID = 345,
                     Balance = 541.27
                 },
-                new Account 
+                new Account
                 {
                     ID = 123,
                     Balance = -127.44
@@ -35,7 +35,7 @@ namespace OfficeWalkthroughCS
 
             //<snippet9>
             DisplayInExcel(bankAccounts, (account, cell) =>
-            // This multiline lambda expression sets custom processing rules  
+            // This multiline lambda expression sets custom processing rules
             // for the bankAccounts.
             {
                 cell.Value = account.ID;

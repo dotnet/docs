@@ -19,16 +19,16 @@ topic_type:
 Returns a textual rendering of the object in the Managed Object Format (MOF) syntax.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
-    
+
 ## Syntax  
   
 ```cpp  
 HRESULT GetObjectText (
-   [in] int                vFunc, 
-   [in] IWbemClassObject*   ptr, 
+   [in] int                vFunc,
+   [in] IWbemClassObject*   ptr,
    [in] LONG                lFlags,
    [out] BSTR*              pstrObjectText
-); 
+);
 ```  
 
 ## Parameters
@@ -42,7 +42,7 @@ HRESULT GetObjectText (
 `lFlags`  
 [in] Normally 0. If `WBEM_FLAG_NO_FLAVORS` (or 0x1) is specified, qualifiers are included without propagation or flavor information.
 
-`pstrObjectText`   
+`pstrObjectText`
 [out] A pointer to a `null` on entry. On return, a newly allocated `BSTR` that contains a MOF syntax rendering of the object.  
 
 ## Return value
@@ -66,7 +66,7 @@ The following algorithm is used to reconstruct the text of the parameters of a m
 
 1. Parameters are resequenced in the order of their identifier values.
 1. Parameters that are specified as `[in]` and `[out]` are combined into a single parameter.
- 
+
 `pstrObjectText` must be a pointer to a `null` when the function is called; it must not point to a string that is valid before the method call, because the pointer will not be deallocated.
 
 ## Requirements  

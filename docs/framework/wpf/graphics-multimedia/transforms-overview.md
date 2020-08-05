@@ -3,9 +3,9 @@ title: "Transforms Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transformations [WPF], about transformations"
-  - "classes [WPF], 2-D transform"
-  - "transform classes [WPF], 2-D"
-  - "2-D transform classes"
+  - "classes [WPF], 2D transform"
+  - "transform classes [WPF], 2D"
+  - "2D transform classes"
   - "FrameworkElement objects [WPF], rotating"
   - "FrameworkElement objects [WPF], skewing"
   - "FrameworkElement objects [WPF], translating"
@@ -14,9 +14,9 @@ helpviewer_keywords:
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
 ---
 # Transforms Overview
-This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
+This topic describes how to use the 2D <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
 
-<a name="whatIsATransformSection"></a>   
+<a name="whatIsATransformSection"></a>
 ## What Is a Transform?  
  A <xref:System.Windows.Media.Transform> defines how to map, or transform, points from one coordinate space to another coordinate space. This mapping is described by a transformation <xref:System.Windows.Media.Matrix>, which is a collection of three rows with three columns of <xref:System.Double> values.  
   
@@ -25,7 +25,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
   
  The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] matrix.  
   
-### A 2-D transformation matrix  
+### A 2D transformation matrix  
   
 ||||  
 |-|-|-|  
@@ -37,9 +37,9 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
   
  Although Windows Presentation Foundation (WPF) enables you to directly manipulate matrix values, it also provides several <xref:System.Windows.Media.Transform> classes that enable you to transform an object without knowing how the underlying matrix structure is configured. For example, the <xref:System.Windows.Media.ScaleTransform> class enables you to scale an object by setting its <xref:System.Windows.Media.ScaleTransform.ScaleX%2A> and <xref:System.Windows.Media.ScaleTransform.ScaleY%2A> properties, instead of manipulating a transformation matrix. Likewise, the <xref:System.Windows.Media.RotateTransform> class enables you to rotate an object by just setting its <xref:System.Windows.Media.RotateTransform.Angle%2A> property.  
   
-<a name="transformClassesSection"></a>   
+<a name="transformClassesSection"></a>
 ## Transform Classes  
- Windows Presentation Foundation (WPF) provides the following 2-D <xref:System.Windows.Media.Transform> classes for common transformation operations:  
+ Windows Presentation Foundation (WPF) provides the following 2D <xref:System.Windows.Media.Transform> classes for common transformation operations:  
   
 |Class|Description|Example|Illustration|  
 |-----------|-----------------|-------------|------------------|  
@@ -55,9 +55,9 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
 |<xref:System.Windows.Media.TransformGroup>|Groups multiple <xref:System.Windows.Media.TransformGroup> objects into a single <xref:System.Windows.Media.Transform> that you can then apply to transform properties.|[Apply Multiple Transforms to an Object](how-to-apply-multiple-transforms-to-an-object.md)|  
 |<xref:System.Windows.Media.MatrixTransform>|Creates custom transformations that are not provided by the other <xref:System.Windows.Media.Transform> classes. When you use a <xref:System.Windows.Media.MatrixTransform>, you manipulate a Matrix directly.|[Use a MatrixTransform to Create Custom Transforms](how-to-use-a-matrixtransform-to-create-custom-transforms.md)|  
   
- Windows Presentation Foundation (WPF) also provides 3-D transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
+ Windows Presentation Foundation (WPF) also provides 3D transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
   
-<a name="transformationproperties"></a>   
+<a name="transformationproperties"></a>
 ## Common Transformation Properties  
  One way to transform an object is to declare the appropriate <xref:System.Windows.Media.Transform> type and apply it to the transformation property of the object. Different types of objects have different types of transformation properties. The following table lists several commonly used Windows Presentation Foundation (WPF) types and their transformation properties.  
   
@@ -71,7 +71,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
 |<xref:System.Windows.Media.TextEffect>|<xref:System.Windows.Media.TextEffect.Transform%2A>|  
 |<xref:System.Windows.UIElement>|<xref:System.Windows.UIElement.RenderTransform%2A>|  
   
-<a name="transformcenter"></a>   
+<a name="transformcenter"></a>
 ## Transformations and Coordinate Systems  
  When you transform an object, you do not just transform the object, you transform coordinate space in which that object exists. By default, a transform is centered at the origin of the target object's coordinate system: (0,0). The only exception is <xref:System.Windows.Media.TranslateTransform>; a <xref:System.Windows.Media.TranslateTransform> has no center properties to set because the translation effect is the same regardless of where it is centered.  
   
@@ -91,7 +91,7 @@ A Rectangle element rotated 45 degrees about the point (25, 25)
   
  [!code-xaml[Transforms_snip#TransformsFERotatedAboutCenter](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/CoordinateSystemExample.xaml#transformsferotatedaboutcenter)]  
   
-<a name="layoutTransformsAndRenderTransformsSection"></a>   
+<a name="layoutTransformsAndRenderTransformsSection"></a>
 ## Transforming a FrameworkElement  
  To apply transformations to a <xref:System.Windows.FrameworkElement>, create a <xref:System.Windows.Media.Transform> and apply it to one of the two properties that the <xref:System.Windows.FrameworkElement> class provides:  
   
@@ -103,7 +103,7 @@ A Rectangle element rotated 45 degrees about the point (25, 25)
   
  For additional information about layout in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], see [Layout](../advanced/layout.md) overview.  
   
-<a name="exampleRotateAnElement45degSection"></a>   
+<a name="exampleRotateAnElement45degSection"></a>
 ## Example: Rotate a FrameworkElement 45 Degrees  
  The following example uses a <xref:System.Windows.Media.RotateTransform> to rotate a button clockwise by 45 degrees. The button is contained in a <xref:System.Windows.Controls.StackPanel> that has two other buttons.  
   
@@ -128,7 +128,7 @@ LayoutTransform used to rotate the button
   
  [!code-xaml[Transforms_snip#GraphicsMMRotateButtonExample3](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonRotateTransformExample.xaml#graphicsmmrotatebuttonexample3)]  
   
-<a name="animate_transforms"></a>   
+<a name="animate_transforms"></a>
 ## Animating Transformations  
  Because they inherit from the <xref:System.Windows.Media.Animation.Animatable> class, the <xref:System.Windows.Media.Transform> classes can be animated. To animate a <xref:System.Windows.Media.Transform>, apply an animation of a compatible type to the property you want to animate.  
   
@@ -136,9 +136,9 @@ LayoutTransform used to rotate the button
   
  [!code-xaml[Transforms_snip#GraphicsMMAnimatedRotateButtonExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonAnimatedRotateTransformExample.xaml#graphicsmmanimatedrotatebuttonexamplewholepage)]  
   
- For the complete sample, see [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252). For more information about animations, see the [Animation Overview](animation-overview.md).  
+ For the complete sample, see [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms). For more information about animations, see the [Animation Overview](animation-overview.md).  
   
-<a name="freezable_features"></a>   
+<a name="freezable_features"></a>
 ## Freezable Features  
  Because it inherits from the <xref:System.Windows.Freezable> class, the <xref:System.Windows.Media.Transform> class  provide several special features: <xref:System.Windows.Media.Transform> objects can be declared as [resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md), shared among multiple objects, made read-only to improve performance, cloned, and made thread-safe. For more information about the different features that are provided by <xref:System.Windows.Freezable> objects, see the [Freezable Objects Overview](../advanced/freezable-objects-overview.md).  
   
@@ -147,4 +147,4 @@ LayoutTransform used to rotate the button
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.Matrix>
 - [How-to Topics](transformations-how-to-topics.md)
-- [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)
+- [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)

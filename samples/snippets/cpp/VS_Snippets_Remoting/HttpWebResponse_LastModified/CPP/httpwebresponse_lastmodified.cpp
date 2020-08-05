@@ -55,7 +55,7 @@ int main()
    {
       Console::WriteLine( "\nPlease type the url as command line parameter:" );
       Console::WriteLine( "Example:" );
-      Console::WriteLine( "HttpWebResponse_LastModified http://www.microsoft.com/net/" );
+      Console::WriteLine( "HttpWebResponse_LastModified http://dotnet.microsoft.com/" );
    }
    else
    {

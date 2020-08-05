@@ -8,11 +8,11 @@ public class Example
       // Show hash code in current domain.
       DisplayString display = new DisplayString();
       display.ShowStringHashCode();
-      
+
       // Create a new app domain and show string hash code.
       AppDomain domain = AppDomain.CreateDomain("NewDomain");
-      var display2 = (DisplayString) domain.CreateInstanceAndUnwrap(typeof(Example).Assembly.FullName, 
-                                                          "DisplayString");   
+      var display2 = (DisplayString) domain.CreateInstanceAndUnwrap(typeof(Example).Assembly.FullName,
+                                                          "DisplayString");
       display2.ShowStringHashCode();
    }
 }
@@ -20,27 +20,27 @@ public class Example
 public class DisplayString : MarshalByRefObject
 {
    private String s = "This is a string.";
-   
+
    public override bool Equals(Object obj)
    {
-      String s2 = obj as String; 
+      String s2 = obj as String;
       if (s2 == null)
          return false;
       else
-         return s == s2; 
+         return s == s2;
    }
 
    public bool Equals(String str)
    {
       return s == str;
-   }    
-   
+   }
+
    public override int GetHashCode()
    {
       return s.GetHashCode();
    }
-   
-   public override String ToString() 
+
+   public override String ToString()
    {
       return s;
    }
@@ -48,7 +48,7 @@ public class DisplayString : MarshalByRefObject
    public void ShowStringHashCode()
    {
       Console.WriteLine("String '{0}' in domain '{1}': {2:X8}",
-                        s, AppDomain.CurrentDomain.FriendlyName, 
+                        s, AppDomain.CurrentDomain.FriendlyName,
                         s.GetHashCode());
    }
 }

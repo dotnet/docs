@@ -1,4 +1,4 @@
-﻿ '<snippet0>
+﻿'<snippet0>
 Imports System.IdentityModel.Selectors
 Imports System.Security.Permissions
 Imports System.ServiceModel
@@ -8,7 +8,7 @@ Imports System.Security.Cryptography.X509Certificates
 Imports System.ServiceModel.Configuration
 Imports System.Configuration
 
-<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)> 
+<Assembly: SecurityPermission(SecurityAction.RequestMinimum, Execution:=True)>
 
 Public Class MyClientCredentials
     Inherits ClientCredentials
@@ -95,17 +95,17 @@ Public Class MyServiceCredentials
     Inherits ServiceCredentials
     Private additionalCertificateValue As X509Certificate2
 
-    Public Sub New() 
-    
+    Public Sub New()
+
     End Sub
 
-    Protected Sub New(ByVal other As MyServiceCredentials) 
+    Protected Sub New(ByVal other As MyServiceCredentials)
         MyBase.New(other)
         Me.additionalCertificate = other.additionalCertificate
     End Sub
-    
-    
-    Public Property AdditionalCertificate() As X509Certificate2 
+
+
+    Public Property AdditionalCertificate() As X509Certificate2
         Get
             Return Me.additionalCertificateValue
         End Get
@@ -117,15 +117,15 @@ Public Class MyServiceCredentials
         End Set
     End Property
 
-    Public Overrides Function CreateSecurityTokenManager() As SecurityTokenManager 
+    Public Overrides Function CreateSecurityTokenManager() As SecurityTokenManager
         Return MyBase.CreateSecurityTokenManager()
-    
+
     End Function
-    
-    
-    Protected Overrides Function CloneCore() As ServiceCredentials 
+
+
+    Protected Overrides Function CloneCore() As ServiceCredentials
         Return New MyServiceCredentials(Me)
-    
+
     End Function
 End Class
 '</snippet4>
@@ -135,13 +135,13 @@ Friend Class MyServiceCredentialsSecurityTokenManager
     Inherits ServiceCredentialsSecurityTokenManager
     Private credentials As MyServiceCredentials
 
-    Public Sub New(ByVal credentials As MyServiceCredentials) 
+    Public Sub New(ByVal credentials As MyServiceCredentials)
         MyBase.New(credentials)
         Me.credentials = credentials
-    
+
     End Sub
-    
-    
+
+
     Public Overrides Function CreateSecurityTokenProvider(ByVal tokenRequirement As SecurityTokenRequirement) _
     As SecurityTokenProvider
         ' Return your implementation of SecurityTokenProvider, if required.
@@ -159,8 +159,8 @@ Friend Class MyServiceCredentialsSecurityTokenManager
         Return MyBase.CreateSecurityTokenAuthenticator(tokenRequirement, outOfBandTokenResolver)
 
     End Function
-    
-    
+
+
     Public Overrides Function CreateSecurityTokenSerializer(ByVal version As SecurityTokenVersion) _
     As SecurityTokenSerializer
         ' Return your implementation of SecurityTokenProvider, if required.
@@ -176,15 +176,15 @@ End Class
 Public Class MyClientCredentialsConfigHandler
     Inherits ClientCredentialsElement
     Private propertiesValue As ConfigurationPropertyCollection
-    
-    
-    Public Overrides ReadOnly Property BehaviorType() As Type 
+
+
+    Public Overrides ReadOnly Property BehaviorType() As Type
         Get
             Return GetType(MyClientCredentials)
         End Get
-    End Property 
-    
-    Public Property CreditCardNumber() As String 
+    End Property
+
+    Public Property CreditCardNumber() As String
         Get
             Return CStr(MyBase.Item("creditCardNumber"))
         End Get
@@ -195,9 +195,9 @@ Public Class MyClientCredentialsConfigHandler
             MyBase.Item("creditCardNumber") = value
         End Set
     End Property
-    
-    
-    Protected Overrides ReadOnly Property Properties() As ConfigurationPropertyCollection 
+
+
+    Protected Overrides ReadOnly Property Properties() As ConfigurationPropertyCollection
         Get
             If Me.propertiesValue Is Nothing Then
                 Dim myProperties As ConfigurationPropertyCollection = MyBase.Properties
@@ -213,14 +213,14 @@ Public Class MyClientCredentialsConfigHandler
             Return Me.propertiesValue
         End Get
     End Property
-    
-    
-    Protected Overrides Function CreateBehavior() As Object 
+
+
+    Protected Overrides Function CreateBehavior() As Object
         Dim creds As New MyClientCredentials()
         creds.CreditCardNumber = Me.CreditCardNumber
         MyBase.ApplyConfiguration(creds)
         Return creds
-    
+
     End Function
 End Class
 '</snippet7>
@@ -234,24 +234,24 @@ End Interface
 
 Public Class Service
     Implements IService
-    
-    Shared Sub Main() 
+
+    Shared Sub Main()
         '<snippet6>
         ' Create a service host with a service type.
         Dim serviceHost As New ServiceHost(GetType(Service))
-        
+
         ' Remove the default ServiceCredentials behavior.
         serviceHost.Description.Behaviors.Remove(Of ServiceCredentials)()
-        
+
         ' Add a custom service credentials instance to the collection.
         serviceHost.Description.Behaviors.Add(New MyServiceCredentials())
         '</snippet6>
         Console.WriteLine("Service started")
         Console.WriteLine("Press <ENTER> to terminate.")
         Console.ReadLine()
-    
+
     End Sub
-    
+
 #Region "IService Members"
     Public Function Echo(ByVal value As String) As String Implements IService.Echo
         Return value
@@ -261,9 +261,9 @@ End Class
 
 
 
-<System.ServiceModel.ServiceContractAttribute(ConfigurationName := "ICalculator")>  _
+<System.ServiceModel.ServiceContractAttribute(ConfigurationName:="ICalculator")> _
 Public Interface ICalculator
-    
+
     <System.ServiceModel.OperationContractAttribute(Action:="http://tempuri.org/ICalculator/Add", _
     ReplyAction:="http://tempuri.org/ICalculator/AddResponse")> _
     Function Add(ByVal a As Double, ByVal b As Double) As Double

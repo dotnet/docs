@@ -25,7 +25,7 @@ Specifies which exceptions can be thrown.
 ## Remarks  
  Use the `<exception>` tag to specify which exceptions can be thrown. This tag is applied to a method definition.  
   
- Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<exception>` tag to describe an exception that the `IntDivide` function can throw.  
@@ -34,4 +34,4 @@ Specifies which exceptions can be thrown.
   
 ## See also
 
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
+- [XML Comment Tags](index.md)

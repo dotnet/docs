@@ -13,7 +13,7 @@ class Program
       Console.WriteLine(str1);
       for (int ctr = 0; ctr <= str1.Length - 1; ctr++) {
          Console.Write("{0} ", Convert.ToUInt16(str1[ctr]).ToString("X4"));
-         if (ctr == str1.Length - 1) 
+         if (ctr == str1.Length - 1)
             Console.WriteLine();
       }
       Console.WriteLine();
@@ -47,9 +47,9 @@ public class CustomMapper : EncoderFallback
    internal Dictionary<ushort, ulong> mapping;
 
    public CustomMapper() : this("*")
-   {   
+   {
    }
-   
+
    public CustomMapper(string defaultString)
    {
       this.DefaultString = defaultString;
@@ -69,7 +69,7 @@ public class CustomMapper : EncoderFallback
    public override int MaxCharCount
    {
       get { return 3; }
-   } 
+   }
 }
 // </Snippet5>
 
@@ -78,8 +78,8 @@ public class CustomMapperFallbackBuffer : EncoderFallbackBuffer
 {
    int count = -1;                   // Number of characters to return
    int index = -1;                   // Index of character to return
-   CustomMapper fb; 
-   string charsToReturn; 
+   CustomMapper fb;
+   string charsToReturn;
 
    public CustomMapperFallbackBuffer(CustomMapper fallback)
    {
@@ -127,7 +127,7 @@ public class CustomMapperFallbackBuffer : EncoderFallbackBuffer
       // We'll return a character if possible, so subtract from the count of chars to return.
       count--;
       // If count is less than zero, we've returned all characters.
-      if (count < 0) 
+      if (count < 0)
          return '\u0000';
 
       this.index--;
@@ -146,7 +146,7 @@ public class CustomMapperFallbackBuffer : EncoderFallbackBuffer
       }
    }
 
-   public override int Remaining 
+   public override int Remaining
    {
       get { return count < 0 ? 0 : count; }
    }

@@ -1,5 +1,6 @@
 ---
 title: "Enabling Network Tracing"
+description: Learn how to enable network tracing, which provides information about method invocations and network traffic for a managed application in the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "trace destinations"
@@ -34,7 +35,7 @@ Network tracing provides access to information about method invocations and netw
   <trace autoflush="true" indentsize="4">  
     <listeners>  
       <add name="file" type="System.Diagnostics.TextWriterTraceListener" initializeData="trace.log"/>  
-    </listeners>   
+    </listeners>
   </trace>  
 </system.diagnostics>  
 ```  

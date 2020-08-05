@@ -19,8 +19,8 @@ Module PLinqSnippetsVB
 
             ' Opt-in to PLINQ with AsParallel
             Dim evenNums = From num In source.AsParallel()
-                            Where Compute(num) > 0
-                            Select num
+                           Where Compute(num) > 0
+                           Select num
 
 
 
@@ -31,14 +31,14 @@ Module PLinqSnippetsVB
 
             'Order first, then filter
             evenNums = From num In randomValues.AsParallel().AsOrdered()
-                           Where num Mod 2 = 0
-                           Select num
+                       Where num Mod 2 = 0
+                       Select num
 
             Dim nums = Enumerable.Range(10, 10000)
 
             Dim query = From num In nums.AsParallel()
-                    Where num Mod 10 = 0
-                    Select num
+                        Where num Mod 10 = 0
+                        Select num
 
             ' Process results as each thread completes.
             query.ForAll(Sub(e)
@@ -52,15 +52,15 @@ Module PLinqSnippetsVB
             Compute = 1
         End Function
 
-        
+
         Sub SimpleQuery()
 
             Dim source = Enumerable.Range(100, 20000)
 
             ' Result sequence might be out of order.
             Dim parallelQuery = From num In source.AsParallel()
-                                    Where num Mod 10 = 0
-                                    Select num
+                                Where num Mod 10 = 0
+                                Select num
 
             ' Process result sequence in parallel
             parallelQuery.ForAll(Sub(e)
@@ -77,8 +77,8 @@ Module PLinqSnippetsVB
             ' You can also use ToArray, ToList, etc
             ' as with LINQ to Objects.
             Dim parallelQuery2 = (From num In source.AsParallel()
-                                      Where num Mod 10 = 0
-                                      Select num).ToArray()
+                                  Where num Mod 10 = 0
+                                  Select num).ToArray()
 
             'Method syntax is also supported
             Dim parallelQuery3 = source.AsParallel().Where(Function(n)
@@ -108,8 +108,8 @@ Module PLinqSnippetsVB
 
             ' Source is ordered let's preserve it.
             Dim parallelQuery = From num In source.AsParallel().AsOrdered()
-                                    Where num Mod 3 = 0
-                                    Select num
+                                Where num Mod 3 = 0
+                                Select num
 
             ' Use For Each to preserve order at execution time.
             For Each item In parallelQuery
@@ -122,7 +122,7 @@ Module PLinqSnippetsVB
         End Sub
         '</snippet12>
 
-       
+
 
         '<Snippet13>
         Sub OrderedQuery2()
@@ -132,9 +132,9 @@ Module PLinqSnippetsVB
             ' Let the query access the data source will full parallelism
             ' and apply ordering to the filtered results.
             Dim orderedQuery = From num In source.AsParallel()
-                                   Where num Mod 8 = 0
-                                   Order By num
-                                   Select num
+                               Where num Mod 8 = 0
+                               Order By num
+                               Select num
 
 
             ' Use For Each to preserve query ordering.
@@ -148,8 +148,8 @@ Module PLinqSnippetsVB
         Sub OrderedQuery3()
             Dim source = Enumerable.Range(108, 100000)
             Dim parallelQuery = From num In source.AsParallel().AsOrdered()
-                                    Where num Mod 8 = 0
-                                    Select num
+                                Where num Mod 8 = 0
+                                Select num
 
             ' use For Each to preserve ordering
             ' during query execution.
@@ -159,7 +159,7 @@ Module PLinqSnippetsVB
         End Sub
 
 
-      
+
         '<snippet16>
         Class Program
             Private Shared Sub Main(ByVal args As String())
@@ -178,9 +178,9 @@ Module PLinqSnippetsVB
                 Try
 
                     results = (From num In source.AsParallel().WithCancellation(cs.Token) _
-                        Where num Mod 3 = 0 _
-                        Order By num Descending _
-                        Select num).ToArray()
+                               Where num Mod 3 = 0 _
+                               Order By num Descending _
+                               Select num).ToArray()
                 Catch e As OperationCanceledException
 
                     Console.WriteLine(e.Message)
@@ -237,8 +237,8 @@ Module PLinqSnippetsVB
                 Try
 
                     results = (From num In source.AsParallel().WithCancellation(cs.Token) _
-                        Where num Mod 3 = 0 _
-                        Select [Function](num, cs.Token)).ToArray()
+                               Where num Mod 3 = 0 _
+                               Select [Function](num, cs.Token)).ToArray()
                 Catch e As OperationCanceledException
 
 
@@ -296,9 +296,9 @@ Module PLinqSnippetsVB
         End Class
         '</snippet17>
 
-        
 
-       
+
+
 
     End Class
 
@@ -339,10 +339,10 @@ Module PLinqSnippetsVB
     End Class
     '</snippet31>
 
-    
-    
 
-   
+
+
+
 
     ' <snippet50>
     ' This class contains a subset of data from the Northwind database
@@ -606,14 +606,14 @@ Module PLinqSnippetsVB
                             TakeWhile(Function(line) line.StartsWith("END ORDERS") = False)
 
             Dim orderStrings = From line In orders
-                   Let fields = line.Split(","c)
-                   Let custID = fields(1).Trim()
-                   Where custID = id
-                   Select New Order With {
-                    .OrderID = CType(fields(0).Trim(), Integer),
-                    .CustomerID = custID,
-                    .OrderDate = DateTime.Parse(fields(2)),
-                    .ShippedDate = DateTime.Parse(fields(3))}
+                               Let fields = line.Split(","c)
+                               Let custID = fields(1).Trim()
+                               Where custID = id
+                               Select New Order With {
+                                .OrderID = CType(fields(0).Trim(), Integer),
+                                .CustomerID = custID,
+                                .OrderDate = DateTime.Parse(fields(2)),
+                                .ShippedDate = DateTime.Parse(fields(3))}
 
             Return orderStrings.ToArray()
 
@@ -640,15 +640,15 @@ Module PLinqSnippetsVB
                             TakeWhile(Function(line) line.StartsWith("END ORDER DETAILS") = False)
 
             Dim ordDetailStrings = From line In orderDetails
-                   Let fields = line.Split(","c)
-                   Let ordID = Convert.ToInt32(fields(0))
-                   Where ordID = orderID
-                       Select New OrderDetail With {
-                        .OrderID = ordID,
-                        .ProductID = CType(fields(1), Integer),
-                        .UnitPrice = CType(fields(2), Double),
-                        .Quantity = CType(fields(3), Double),
-                        .Discount = CType(fields(4), Double)}
+                                   Let fields = line.Split(","c)
+                                   Let ordID = Convert.ToInt32(fields(0))
+                                   Where ordID = orderID
+                                   Select New OrderDetail With {
+                                    .OrderID = ordID,
+                                    .ProductID = CType(fields(1), Integer),
+                                    .UnitPrice = CType(fields(2), Double),
+                                    .Quantity = CType(fields(3), Double),
+                                    .Discount = CType(fields(4), Double)}
             Return ordDetailStrings.ToArray()
 
         End Function
@@ -661,12 +661,12 @@ Module PLinqSnippetsVB
 
             Return From line In orderDetails
                    Let fields = line.Split(","c)
-                       Select New OrderDetail With {
-                        .OrderID = CType(fields(0), Integer),
-                        .ProductID = CType(fields(1), Integer),
-                        .UnitPrice = CType(fields(2), Double),
-                        .Quantity = CType(fields(3), Double),
-                        .Discount = CType(fields(4), Double)}
+                   Select New OrderDetail With {
+                    .OrderID = CType(fields(0), Integer),
+                    .ProductID = CType(fields(1), Integer),
+                    .UnitPrice = CType(fields(2), Double),
+                    .Quantity = CType(fields(3), Double),
+                    .Discount = CType(fields(4), Double)}
         End Function
 
     End Class
@@ -740,15 +740,15 @@ Module PLinqSnippetsVB
             ' Sometimes it's easier to create a query
             ' by composing two subqueries
             Dim query1 = From ord In Orders.AsParallel()
-                     Where ord.OrderDate < DateTime.Parse("07/04/1997")
-                     Select ord
-                     Order By ord.CustomerID
-                     Take 20
+                         Where ord.OrderDate < DateTime.Parse("07/04/1997")
+                         Select ord
+                         Order By ord.CustomerID
+                         Take 20
 
             Dim query2 = From ord In query1.AsUnordered()
-                     Join od In orderDetails.AsParallel() On ord.OrderID Equals od.OrderID
-                    Order By od.ProductID
-                    Select New With {ord.OrderID, ord.CustomerID, od.ProductID}
+                         Join od In orderDetails.AsParallel() On ord.OrderID Equals od.OrderID
+                         Order By od.ProductID
+                         Select New With {ord.OrderID, ord.CustomerID, od.ProductID}
 
 
             For Each item In query2
@@ -761,8 +761,8 @@ Module PLinqSnippetsVB
         Private Shared Sub ForceParallel()
             Dim customers = GetCustomers()
             Dim parallelQuery = (From cust In customers.AsParallel().WithExecutionMode(ParallelExecutionMode.ForceParallelism) _
-                Where cust.City = "Berlin" _
-                Select cust.CustomerName).ToList()
+                                 Where cust.City = "Berlin" _
+                                 Select cust.CustomerName).ToList()
         End Sub
         '</snippet22>
 
@@ -772,13 +772,13 @@ Module PLinqSnippetsVB
 
             Dim orders = GetOrders()
             Dim query = From ord In orders.AsParallel()
-                         Order By ord.CustomerID
-                         Select New With
-                         {
-                             ord.OrderID,
-                             ord.OrderDate,
-                             ord.ShippedDate
-                         }
+                        Order By ord.CustomerID
+                        Select New With
+                        {
+                            ord.OrderID,
+                            ord.OrderDate,
+                            ord.ShippedDate
+                        }
 
             Dim query2 = query.AsSequential().Take(5)
 
@@ -788,12 +788,12 @@ Module PLinqSnippetsVB
         End Sub
         '</snippet24>
 
-'<snippet25>
-Class FileIteration
-Shared Sub Main()
-End Sub
-End Class
-'</snippet25>
+        '<snippet25>
+        Class FileIteration
+            Shared Sub Main()
+            End Sub
+        End Class
+        '</snippet25>
 
         '<snippet41>
         ' Paste into PLINQDataSample class
@@ -807,9 +807,9 @@ End Class
 
             'throws indexoutofrange
             Dim query = From cust In customers.AsParallel() _
-                Let fields = cust.Split(","c) _
-                Where fields(3).StartsWith("C") _
-                Select fields
+                        Let fields = cust.Split(","c) _
+                        Where fields(3).StartsWith("C") _
+                        Select fields
             Try
                 ' We use ForAll although it doesn't really improve performance
                 ' since all output is serialized through the Console.
@@ -857,9 +857,9 @@ End Class
 
             ' Using the raw string array here
             Dim query = From cust In customers.AsParallel()
-                                Let fields = cust.Split(","c)
-                                Where isTrue(fields, "C")
-                               Select New With {.City = fields(3)}
+                        Let fields = cust.Split(","c)
+                        Where isTrue(fields, "C")
+                        Select New With {.City = fields(3)}
             Try
                 ' We use ForAll although it doesn't really improve performance
                 ' since all output must be serialized through the Console.
@@ -1117,14 +1117,14 @@ End Class
                             TakeWhile(Function(line) line.StartsWith("END ORDERS") = False)
 
             Dim orderStrings = From line In orders
-                   Let fields = line.Split(","c)
-                   Let custID = fields(1).Trim()
-                   Where custID = id
-                   Select New Order With {
-                    .OrderID = CType(fields(0).Trim(), Integer),
-                    .CustomerID = custID,
-                    .OrderDate = DateTime.Parse(fields(2)),
-                    .ShippedDate = DateTime.Parse(fields(3))}
+                               Let fields = line.Split(","c)
+                               Let custID = fields(1).Trim()
+                               Where custID = id
+                               Select New Order With {
+                                .OrderID = CType(fields(0).Trim(), Integer),
+                                .CustomerID = custID,
+                                .OrderDate = DateTime.Parse(fields(2)),
+                                .ShippedDate = DateTime.Parse(fields(3))}
 
             Return orderStrings.ToArray()
 
@@ -1151,15 +1151,15 @@ End Class
                             TakeWhile(Function(line) line.StartsWith("END ORDER DETAILS") = False)
 
             Dim ordDetailStrings = From line In orderDetails
-                   Let fields = line.Split(","c)
-                   Let ordID = Convert.ToInt32(fields(0))
-                   Where ordID = orderID
-                       Select New OrderDetail With {
-                        .OrderID = ordID,
-                        .ProductID = CType(fields(1), Integer),
-                        .UnitPrice = CType(fields(2), Double),
-                        .Quantity = CType(fields(3), Double),
-                        .Discount = CType(fields(4), Double)}
+                                   Let fields = line.Split(","c)
+                                   Let ordID = Convert.ToInt32(fields(0))
+                                   Where ordID = orderID
+                                   Select New OrderDetail With {
+                                    .OrderID = ordID,
+                                    .ProductID = CType(fields(1), Integer),
+                                    .UnitPrice = CType(fields(2), Double),
+                                    .Quantity = CType(fields(3), Double),
+                                    .Discount = CType(fields(4), Double)}
             Return ordDetailStrings.ToArray()
 
         End Function
@@ -1172,12 +1172,12 @@ End Class
 
             Return From line In orderDetails
                    Let fields = line.Split(","c)
-                       Select New OrderDetail With {
-                        .OrderID = CType(fields(0), Integer),
-                        .ProductID = CType(fields(1), Integer),
-                        .UnitPrice = CType(fields(2), Double),
-                        .Quantity = CType(fields(3), Double),
-                        .Discount = CType(fields(4), Double)}
+                   Select New OrderDetail With {
+                    .OrderID = CType(fields(0), Integer),
+                    .ProductID = CType(fields(1), Integer),
+                    .UnitPrice = CType(fields(2), Double),
+                    .Quantity = CType(fields(3), Double),
+                    .Discount = CType(fields(4), Double)}
         End Function
 #End Region
 

@@ -2,7 +2,7 @@
 title: Packages, metapackages, and frameworks - .NET Core
 description: Learn terminology for packages, metapackages, and frameworks.
 author: richlander
-ms.date: 06/20/2016
+ms.date: 04/29/2020
 ---
 # Packages, metapackages, and frameworks
 
@@ -49,7 +49,7 @@ Typically, rather than including each package, it's easier and more robust to in
 
 A metapackage is a NuGet package convention for describing a set of packages that are meaningful together. A metapackage represents this set of packages by making them dependencies. The metapackage can optionally establish a framework for the set of packages by specifying a framework.
 
-Previous versions of the .NET Core tools (both project.json and csproj-based tools) by default specified both a framework and a metapackage. Currently, however, the metapackage is implicitly referenced by the target framework, so that each metapackage is tied to a target framework. For example, the `netstandard1.6` framework references the NetStandard.Library version 1.6.0 metapackage. Similarly, the `netcoreapp2.1` framework references the Microsoft.NETCore.App Version 2.1.0 metapackage. For more information, see [Implicit metapackage package reference in the .NET Core SDK](https://github.com/dotnet/core/blob/master/release-notes/1.0/sdk/1.0-rc3-implicit-package-refs.md).
+Previous versions of the .NET Core tools (both *project.json* and *\*.csproj* based tools) by default specified both a framework and a metapackage. Currently, however, the metapackage is implicitly referenced by the target framework, so that each metapackage is tied to a target framework. For example, the `netstandard1.6` framework references the NETStandard.Library version 1.6.0 metapackage. Similarly, the `netcoreapp2.1` framework references the Microsoft.NETCore.App Version 2.1.0 metapackage. For more information, see [Implicit metapackage package reference in the .NET Core SDK](https://github.com/dotnet/core/blob/master/release-notes/1.0/sdk/1.0-rc3-implicit-package-refs.md).
 
 Targeting a framework and implicitly referencing a metapackage means that, in effect, you are adding a reference to each of its dependent packages as a single gesture. That makes all of the libraries in those packages available for IntelliSense (or similar experience) and for publishing your app.
 
@@ -114,7 +114,7 @@ The `netstandard` framework implicitly references the [`NETStandard.Library`](ht
 </Project>
 ```
 
-However, the framework and metapackage references in the project file do not need to match, and you can use the `<NetStandardImplicitPackageVersion>` element in your project file to specify a framework version that is lower than the metapackage version. For example, the following project file is valid.
+By adding the `<NetStandardImplicitPackageVersion>` element to your project file, which implicitly specifies a metapackage version, you can specify a framework version that's lower than the metapackage version. The `<NetStandardImplicitPackageVersion>` element is only applicable when targeting .NET Core and .NET Standard. For example, the following project file is valid.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -7,7 +7,7 @@ namespace SDKSamples
 {
    // CustomTextSource is our implementation of TextSource.  This is required to use the WPF
    // text engine. This implementation is very simplistic as is DOES NOT monitor spans of text
-   // for different properties. The entire text content is considered a single span and all 
+   // for different properties. The entire text content is considered a single span and all
    // changes to the size, alignment, font, etc. are applied across the entire text.
    class CustomTextSource : TextSource
    {

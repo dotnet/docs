@@ -38,7 +38,7 @@ internal static class NativeMethods
         [In, Out] int[] array, int size);
 
     // Declares a managed prototype for an array of integers by reference.
-    // The array size can change, but the array is not copied back 
+    // The array size can change, but the array is not copied back
     // automatically because the marshaler does not know the resulting size.
     // The copy must be performed manually.
     [DllImport("..\\LIB\\PinvokeLib.dll", CallingConvention = CallingConvention.Cdecl)]
@@ -72,7 +72,7 @@ public class App
 {
     public static void Main()
     {
-        // array ByVal 
+        // array ByVal
         int[] array1 = new int[10];
         Console.WriteLine("Integer array passed ByVal before call:");
         for (int i = 0; i < array1.Length; i++)
@@ -90,7 +90,7 @@ public class App
             Console.Write(" " + i);
         }
 
-        // array ByRef 
+        // array ByRef
         int[] array2 = new int[10];
         int size = array2.Length;
         Console.WriteLine("\n\nInteger array passed ByRef before call:");
@@ -122,7 +122,7 @@ public class App
             Console.WriteLine("\nArray after call is empty");
         }
 
-        // matrix ByVal 
+        // matrix ByVal
         const int DIM = 5;
         int[,] matrix = new int[DIM, DIM];
 
@@ -151,7 +151,7 @@ public class App
             Console.WriteLine("");
         }
 
-        // string array ByVal 
+        // string array ByVal
         string[] strArray = { "one", "two", "three", "four", "five" };
         Console.WriteLine("\n\nstring array before call:");
         foreach (string s in strArray)
@@ -167,7 +167,7 @@ public class App
             Console.Write(" " + s);
         }
 
-        // struct array ByVal 
+        // struct array ByVal
         MyPoint[] points = { new MyPoint(1, 1), new MyPoint(2, 2), new MyPoint(3, 3) };
         Console.WriteLine("\n\nPoints array before call:");
         foreach (MyPoint p in points)
@@ -183,7 +183,7 @@ public class App
             Console.WriteLine($"X = {p.X}, Y = {p.Y}");
         }
 
-        // struct with strings array ByVal 
+        // struct with strings array ByVal
         MyPerson[] persons =
         {
             new MyPerson("Kim", "Akers"),

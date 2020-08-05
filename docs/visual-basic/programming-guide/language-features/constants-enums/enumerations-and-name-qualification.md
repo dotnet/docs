@@ -44,13 +44,13 @@ Normally, when referring to a member of an enumeration, you must qualify the mem
   
 ## See also
 
-- [Constants and Enumerations](../../../../visual-basic/language-reference/constants-and-enumerations.md)
-- [How to: Declare an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-declare-enumerations.md)
-- [How to: Refer to an Enumeration Member](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-refer-to-an-enumeration-member.md)
-- [How to: Iterate Through An Enumeration in Visual Basic](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-iterate-through-an-enumeration.md)
-- [How to: Determine the String Associated with an Enumeration Value](../../../../visual-basic/programming-guide/language-features/constants-enums/how-to-determine-the-string-associated-with-an-enumeration-value.md)
-- [When to Use an Enumeration](../../../../visual-basic/programming-guide/language-features/constants-enums/when-to-use-an-enumeration.md)
-- [Constant and Literal Data Types](../../../../visual-basic/programming-guide/language-features/constants-enums/constant-and-literal-data-types.md)
-- [Enum Statement](../../../../visual-basic/language-reference/statements/enum-statement.md)
-- [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md)
-- [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
+- [Constants and Enumerations](../../../language-reference/constants-and-enumerations.md)
+- [How to: Declare an Enumeration](how-to-declare-enumerations.md)
+- [How to: Refer to an Enumeration Member](how-to-refer-to-an-enumeration-member.md)
+- [How to: Iterate Through An Enumeration in Visual Basic](how-to-iterate-through-an-enumeration.md)
+- [How to: Determine the String Associated with an Enumeration Value](how-to-determine-the-string-associated-with-an-enumeration-value.md)
+- [When to Use an Enumeration](when-to-use-an-enumeration.md)
+- [Constant and Literal Data Types](constant-and-literal-data-types.md)
+- [Enum Statement](../../../language-reference/statements/enum-statement.md)
+- [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md)
+- [Data Types](../../../language-reference/data-types/index.md)

@@ -56,26 +56,26 @@ Clears the `Listeners` collection for a trace source.
 <configuration>  
   <system.diagnostics>  
     <sources>  
-       <source name="TraceSourceApp" switchName="sourceSwitch"   
+       <source name="TraceSourceApp" switchName="sourceSwitch"
          switchType="System.Diagnostics.SourceSwitch">  
         <listeners>  
           <clear/>  
-          <add name="console"   
+          <add name="console"
             type="System.Diagnostics.ConsoleTraceListener"/>  
           <add name="textListener"/>  
         </listeners>  
       </source>  
     </sources>  
     <sharedListeners>  
-      <add name="textListener"   
-        type="System.Diagnostics.TextWriterTraceListener"   
+      <add name="textListener"
+        type="System.Diagnostics.TextWriterTraceListener"
         initializeData="myListener.log"/>  
     </sharedListeners>  
     <switches>  
       <add name="sourceSwitch" value="Warning"/>  
     </switches>  
   </system.diagnostics>  
-</configuration>   
+</configuration>
 ```  
   
 ## See also

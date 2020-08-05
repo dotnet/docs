@@ -38,9 +38,9 @@
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
-            // 
+            //
             // tbTarget
-            // 
+            //
             this.tbTarget.AccessibleDescription = "Target TextBox";
             this.tbTarget.AccessibleName = "tbTarget";
             this.tbTarget.AllowDrop = true;
@@ -49,9 +49,9 @@
             this.tbTarget.Name = "tbTarget";
             this.tbTarget.Size = new System.Drawing.Size(161, 20);
             this.tbTarget.TabIndex = 0;
-            // 
+            //
             // rtbTarget
-            // 
+            //
             this.rtbTarget.AcceptsTab = true;
             this.rtbTarget.AccessibleDescription = "Target RichTextBox";
             this.rtbTarget.AccessibleName = "rtbTarget";
@@ -60,9 +60,9 @@
             this.rtbTarget.Size = new System.Drawing.Size(161, 96);
             this.rtbTarget.TabIndex = 2;
             this.rtbTarget.Text = "";
-            // 
+            //
             // tbTargetMultiLine
-            // 
+            //
             this.tbTargetMultiLine.AcceptsReturn = true;
             this.tbTargetMultiLine.AcceptsTab = true;
             this.tbTargetMultiLine.AccessibleDescription = "Target multi-line TextBox";
@@ -74,9 +74,9 @@
             this.tbTargetMultiLine.Size = new System.Drawing.Size(161, 73);
             this.tbTargetMultiLine.TabIndex = 1;
             this.tbTargetMultiLine.Tag = "test";
-            // 
+            //
             // lblSingleLineTextBox
-            // 
+            //
             this.lblSingleLineTextBox.AccessibleDescription = "Label for single line TextBox";
             this.lblSingleLineTextBox.AccessibleName = "lblSingleLineTextBox";
             this.lblSingleLineTextBox.Location = new System.Drawing.Point(12, 223);
@@ -84,9 +84,9 @@
             this.lblSingleLineTextBox.Size = new System.Drawing.Size(101, 53);
             this.lblSingleLineTextBox.TabIndex = 3;
             this.lblSingleLineTextBox.Text = "Single Line TextBox (2 character limit) (tbTarget)";
-            // 
+            //
             // lblMultilineTextBox
-            // 
+            //
             this.lblMultilineTextBox.AccessibleDescription = "Label for multi-line TextBox";
             this.lblMultilineTextBox.AccessibleName = "lblMultiLineTextBox";
             this.lblMultilineTextBox.Location = new System.Drawing.Point(12, 12);
@@ -94,9 +94,9 @@
             this.lblMultilineTextBox.Size = new System.Drawing.Size(101, 50);
             this.lblMultilineTextBox.TabIndex = 4;
             this.lblMultilineTextBox.Text = "Multi-Line TextBox (tbTargetMultiLine)";
-            // 
+            //
             // lblRichTextBox
-            // 
+            //
             this.lblRichTextBox.AccessibleDescription = "Label for rich text TextBox";
             this.lblRichTextBox.AccessibleName = "lblRichTextBox";
             this.lblRichTextBox.Location = new System.Drawing.Point(12, 103);
@@ -104,9 +104,9 @@
             this.lblRichTextBox.Size = new System.Drawing.Size(94, 38);
             this.lblRichTextBox.TabIndex = 5;
             this.lblRichTextBox.Text = "RichTextBox (rtbTarget)";
-            // 
+            //
             // checkBox1
-            // 
+            //
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(15, 40);
             this.checkBox1.Name = "checkBox1";
@@ -115,9 +115,9 @@
             this.checkBox1.Text = "Read-only";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
+            //
             // checkBox2
-            // 
+            //
             this.checkBox2.AutoSize = true;
             this.checkBox2.Location = new System.Drawing.Point(15, 132);
             this.checkBox2.Name = "checkBox2";
@@ -126,9 +126,9 @@
             this.checkBox2.Text = "Read-only";
             this.checkBox2.UseVisualStyleBackColor = true;
             this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
+            //
             // checkBox3
-            // 
+            //
             this.checkBox3.AutoSize = true;
             this.checkBox3.Location = new System.Drawing.Point(15, 266);
             this.checkBox3.Name = "checkBox3";
@@ -137,9 +137,9 @@
             this.checkBox3.Text = "Read-only";
             this.checkBox3.UseVisualStyleBackColor = true;
             this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
+            //
             // Target
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(292, 312);

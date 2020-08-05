@@ -250,7 +250,7 @@ namespace DCSurrogateSample
                 foreach (ServiceEndpoint ep in serviceHost.Description.Endpoints)
                 {
                     foreach (OperationDescription op in ep.Contract.Operations)
-                    {                       
+                    {
                         DataContractSerializerOperationBehavior dataContractBehavior =
                             op.Behaviors.Find<DataContractSerializerOperationBehavior>()
                             as DataContractSerializerOperationBehavior;
@@ -296,7 +296,7 @@ namespace DCSurrogateSample
             //<snippet10>
             WsdlExporter exporter = new WsdlExporter();
             //or
-            //public void ExportContract(WsdlExporter exporter, 
+            //public void ExportContract(WsdlExporter exporter,
             // WsdlContractConversionContext context) { ... }
             object dataContractExporter;
             XsdDataContractExporter xsdInventoryExporter;

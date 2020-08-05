@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 public class Example
 {
    public static void Main()
-   {      
+   {
       string pattern = "(?s)^.+";
       string input = "This is one line and" + Environment.NewLine + "this is the second.";
 

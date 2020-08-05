@@ -75,7 +75,7 @@ namespace SDKSample
             matrixAnimation.PathGeometry = animationPath;
 
             // Set IsOffsetCumulative to true so that the animation
-            // values accumulate when its repeats. 
+            // values accumulate when its repeats.
             matrixAnimation.IsOffsetCumulative = true;
             matrixAnimation.Duration = TimeSpan.FromSeconds(5);
             matrixAnimation.RepeatBehavior = new RepeatBehavior(2);
@@ -83,9 +83,9 @@ namespace SDKSample
             // Set the animation to target the Matrix property
             // of the MatrixTransform named "ButtonMatrixTransform".
             Storyboard.SetTargetName(matrixAnimation, "ButtonMatrixTransform");
-            Storyboard.SetTargetProperty(matrixAnimation, 
+            Storyboard.SetTargetProperty(matrixAnimation,
                 new PropertyPath(MatrixTransform.MatrixProperty));
-      
+
             // Create a Storyboard to contain and apply the animation.
             Storyboard pathAnimationStoryboard = new Storyboard();
             pathAnimationStoryboard.Children.Add(matrixAnimation);
@@ -96,7 +96,7 @@ namespace SDKSample
                 // Start the storyboard.
                 pathAnimationStoryboard.Begin(this);
             };
-        }  
+        }
     }
 }
 // </SnippetMatrixAnimationUsingPathOffsetCumulativeWholePage>

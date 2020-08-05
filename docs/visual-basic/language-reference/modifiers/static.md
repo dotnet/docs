@@ -20,7 +20,7 @@ Specifies that one or more declared local variables are to continue to exist and
   
      You cannot use `Static` inside a structure procedure.  
   
-- The data types of `Static` local variables cannot be inferred. For more information, see [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).  
+- The data types of `Static` local variables cannot be inferred. For more information, see [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md).  
   
 - **Combined Modifiers.** You cannot specify `Static` together with `ReadOnly`, `Shadows`, or `Shared` in the same declaration.  
   
@@ -38,14 +38,14 @@ Specifies that one or more declared local variables are to continue to exist and
   
  The `Static` modifier can be used in this context:  
   
- [Dim Statement](../../../visual-basic/language-reference/statements/dim-statement.md)  
+ [Dim Statement](../statements/dim-statement.md)  
   
 ## See also
 
-- [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md)
-- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
-- [Lifetime in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/lifetime.md)
-- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
-- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
-- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
+- [Shadows](shadows.md)
+- [Shared](shared.md)
+- [Lifetime in Visual Basic](../../programming-guide/language-features/declared-elements/lifetime.md)
+- [Variable Declaration](../../programming-guide/language-features/variables/variable-declaration.md)
+- [Structures](../../programming-guide/language-features/data-types/structures.md)
+- [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md)
+- [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md)

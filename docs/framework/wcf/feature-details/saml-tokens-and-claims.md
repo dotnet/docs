@@ -1,5 +1,6 @@
 ---
 title: "SAML Tokens and Claims"
+description: Learn how WFC uses SAML tokens to carry statements that are sets of claims made by one entity about another entity. 
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -31,7 +32,7 @@ Security Assertions Markup Language (SAML) *tokens* are XML representations of c
  [!code-vb[c_CreateSTS#8](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#8)]  
   
 > [!NOTE]
-> When SAML tokens are serialized in messages, either when they are issued by a security token service or when they are presented by clients to services as part of authentication, the maximum message size quota must be sufficiently large to accommodate the SAML token and the other message parts. In normal cases, the default message size quotas are sufficient. However, in cases where a SAML token is large because it contains hundreds of claims, you may need to increase the quotas to accommodate the serialized token. For more information, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+> When SAML tokens are serialized in messages, either when they are issued by a security token service or when they are presented by clients to services as part of authentication, the maximum message size quota must be sufficiently large to accommodate the SAML token and the other message parts. In normal cases, the default message size quotas are sufficient. However, in cases where a SAML token is large because it contains hundreds of claims, you may need to increase the quotas to accommodate the serialized token. For more information, see [Security Considerations for Data](security-considerations-for-data.md).  
   
 ## From SamlAttributes to Claims  
  When SAML tokens are received in messages, the various statements in the SAML token are turned into <xref:System.IdentityModel.Policy.IAuthorizationPolicy> objects that are placed into the <xref:System.IdentityModel.Policy.AuthorizationContext>. The claims from each SAML statement are returned by the <xref:System.IdentityModel.Policy.AuthorizationContext.ClaimSets%2A> property of the <xref:System.IdentityModel.Policy.AuthorizationContext> and can be examined to determine whether to authenticate and authorize the user.  
@@ -41,10 +42,10 @@ Security Assertions Markup Language (SAML) *tokens* are XML representations of c
 - <xref:System.IdentityModel.Policy.AuthorizationContext>
 - <xref:System.IdentityModel.Policy.IAuthorizationPolicy>
 - <xref:System.IdentityModel.Claims.ClaimSet>
-- [Federation](../../../../docs/framework/wcf/feature-details/federation.md)
-- [How to: Create a Federated Client](../../../../docs/framework/wcf/feature-details/how-to-create-a-federated-client.md)
-- [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md)
-- [Managing Claims and Authorization with the Identity Model](../../../../docs/framework/wcf/feature-details/managing-claims-and-authorization-with-the-identity-model.md)
-- [Claims and Tokens](../../../../docs/framework/wcf/feature-details/claims-and-tokens.md)
-- [Claim Creation and Resource Values](../../../../docs/framework/wcf/feature-details/claim-creation-and-resource-values.md)
-- [How to: Create a Custom Claim](../../../../docs/framework/wcf/extending/how-to-create-a-custom-claim.md)
+- [Federation](federation.md)
+- [How to: Create a Federated Client](how-to-create-a-federated-client.md)
+- [How to: Configure Credentials on a Federation Service](how-to-configure-credentials-on-a-federation-service.md)
+- [Managing Claims and Authorization with the Identity Model](managing-claims-and-authorization-with-the-identity-model.md)
+- [Claims and Tokens](claims-and-tokens.md)
+- [Claim Creation and Resource Values](claim-creation-and-resource-values.md)
+- [How to: Create a Custom Claim](../extending/how-to-create-a-custom-claim.md)

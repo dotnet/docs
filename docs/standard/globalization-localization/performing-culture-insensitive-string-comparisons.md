@@ -37,5 +37,5 @@ You can download the [Sorting Weight Tables](https://www.microsoft.com/download/
 
 - <xref:System.String.Compare%2A?displayProperty=nameWithType>
 - <xref:System.String.CompareTo%2A?displayProperty=nameWithType>
-- [Performing Culture-Insensitive String Operations](../../../docs/standard/globalization-localization/performing-culture-insensitive-string-operations.md)
-- [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md)
+- [Performing Culture-Insensitive String Operations](performing-culture-insensitive-string-operations.md)
+- [Best Practices for Using Strings](../base-types/best-practices-strings.md)

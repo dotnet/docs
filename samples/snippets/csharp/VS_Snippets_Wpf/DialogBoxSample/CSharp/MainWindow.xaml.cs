@@ -84,7 +84,7 @@ namespace SDKSample
             dlg.Owner = this;
             dlg.DocumentMargin = this.documentTextBox.Margin;
 
-            // Open the dialog box modally 
+            // Open the dialog box modally
             dlg.ShowDialog();
 
             // Process data entered by user if dialog box is accepted
@@ -107,7 +107,7 @@ namespace SDKSample
             dlg.FontWeight = this.documentTextBox.FontWeight;
             dlg.FontStyle = this.documentTextBox.FontStyle;
 
-            // Open the dialog box modally 
+            // Open the dialog box modally
             dlg.ShowDialog();
 
             // Process data entered by user if dialog box is accepted

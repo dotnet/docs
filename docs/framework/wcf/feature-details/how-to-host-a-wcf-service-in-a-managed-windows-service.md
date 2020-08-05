@@ -1,5 +1,6 @@
 ---
 title: "How to: Host a WCF Service in a Managed Windows Service"
+description: Learn how to create a WCF service that is hosted by a Windows service. This hosting option is available in all versions of Windows.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -106,7 +107,7 @@ The service code includes a service implementation of the service contract, a Wi
 
      Right click the App.config file in the **Solution Explorer** and select **Properties**. Under **Copy to Output Directory** select **Copy if Newer**.
 
-     This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. In this example, because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> set to `true`, your service also has publishing metadata enabled. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).
+     This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. In this example, because the service has a <xref:System.ServiceModel.Description.ServiceMetadataBehavior> set to `true`, your service also has publishing metadata enabled. For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](../simplified-configuration.md) and [Simplified Configuration for WCF Services](../samples/simplified-configuration-for-wcf-services.md).
 
 ## Install and run the service
 
@@ -129,7 +130,7 @@ Like the "Self-Hosting" option, the Windows service hosting environment requires
 
 ## See also
 
-- [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md)
-- [Hosting in a Managed Application](../../../../docs/framework/wcf/feature-details/hosting-in-a-managed-application.md)
-- [Hosting Services](../../../../docs/framework/wcf/hosting-services.md)
+- [Simplified Configuration](../simplified-configuration.md)
+- [Hosting in a Managed Application](hosting-in-a-managed-application.md)
+- [Hosting Services](../hosting-services.md)
 - [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

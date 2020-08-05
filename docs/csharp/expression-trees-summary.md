@@ -19,7 +19,7 @@ an algorithm. You can not only examine that code. You can build new
 expression trees that represent modified versions of the original code.
 
 You can also use expression trees to look at an algorithm, and
-translate that algorithm into another language or environment. 
+translate that algorithm into another language or environment.
 
 ## Limitations
 

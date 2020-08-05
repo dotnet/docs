@@ -20,10 +20,14 @@ The <xref:System.Data.DataTable> object is often used for data binding. The <xre
      [!code-csharp[DP Custom CopyToDataTable Examples#ObjectShredderClass](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS/Program.cs#objectshredderclass)]
      [!code-vb[DP Custom CopyToDataTable Examples#ObjectShredderClass](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/VB/Module1.vb#objectshredderclass)]  
 
-    The preceding example assumes that the properties of the `DataColumn` are not nullable types. To handle properties with nullable types, use the following code:
+    The preceding example assumes that the properties and fields of the `DataColumn` are not nullable value types. To handle properties and fields with nullable value types, use the following code:
 
     ```csharp
+    // Nullable-aware code for properties.
     DataColumn dc = table.Columns.Contains(p.Name) ? table.Columns[p.Name] : table.Columns.Add(p.Name, Nullable.GetUnderlyingType(p.PropertyType) ?? p.PropertyType);
+
+    // Nullable-aware code for fields.
+    DataColumn dc = table.Columns.Contains(f.Name) ? table.Columns[f.Name] : table.Columns.Add(f.Name, Nullable.GetUnderlyingType(f.FieldType) ?? f.FieldType);
     ```
 
 2. Implement the custom `CopyToDataTable<T>` extension methods in a class:  

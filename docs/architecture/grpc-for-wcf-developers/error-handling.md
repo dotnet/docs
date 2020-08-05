@@ -12,7 +12,7 @@ Unfortunately, the current version of gRPC lacks the sophistication found with W
 
 | Status code | Problem |
 | ----------- | ------- |
-| `GRPC_STATUS_UNIMPLEMENTED` | Method hasn’t been written. |
+| `GRPC_STATUS_UNIMPLEMENTED` | Method hasn't been written. |
 | `GRPC_STATUS_UNAVAILABLE` | Problem with the whole service. |
 | `GRPC_STATUS_UNKNOWN` | Invalid response. |
 | `GRPC_STATUS_INTERNAL` | Problem with encoding/decoding. |

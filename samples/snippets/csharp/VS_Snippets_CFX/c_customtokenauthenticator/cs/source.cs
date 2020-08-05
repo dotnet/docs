@@ -20,17 +20,17 @@ namespace CustomTokenAuthenticator
     {
         protected override bool CanValidateTokenCore(SecurityToken token)
         {
-            // Check that the incoming token is a username token type that  
+            // Check that the incoming token is a username token type that
             // can be validated by this implementation.
             return (token is UserNameSecurityToken);
         }
 
-        protected override ReadOnlyCollection<IAuthorizationPolicy> 
+        protected override ReadOnlyCollection<IAuthorizationPolicy>
             ValidateTokenCore(SecurityToken token)
         {
             UserNameSecurityToken userNameToken = token as UserNameSecurityToken;
 
-            // Validate the information contained in the username token. For demonstration 
+            // Validate the information contained in the username token. For demonstration
             // purposes, this code just checks that the user name matches the password.
             if (userNameToken.UserName != userNameToken.Password)
             {
@@ -39,7 +39,7 @@ namespace CustomTokenAuthenticator
 
             // Create just one Claim instance for the username token - the name of the user.
             DefaultClaimSet userNameClaimSet = new DefaultClaimSet(
-                ClaimSet.System, 
+                ClaimSet.System,
                 new Claim(ClaimTypes.Name, userNameToken.UserName, Rights.PossessProperty));
             List<IAuthorizationPolicy> policies = new List<IAuthorizationPolicy>(1);
             policies.Add(new MyAuthorizationPolicy(userNameClaimSet));
@@ -49,7 +49,7 @@ namespace CustomTokenAuthenticator
     //</snippet1>
 
     //<snippet2>
-    internal class MyServiceCredentialsSecurityTokenManager : 
+    internal class MyServiceCredentialsSecurityTokenManager :
         ServiceCredentialsSecurityTokenManager
     {
         ServiceCredentials credentials;
@@ -62,7 +62,7 @@ namespace CustomTokenAuthenticator
         public override SecurityTokenAuthenticator CreateSecurityTokenAuthenticator
             (SecurityTokenRequirement tokenRequirement, out SecurityTokenResolver outOfBandTokenResolver)
         {
-            // Return your implementation of the SecurityTokenProvider based on the 
+            // Return your implementation of the SecurityTokenProvider based on the
             // tokenRequirement argument.
             SecurityTokenAuthenticator result;
             if (tokenRequirement.TokenType == SecurityTokenTypes.UserName)

@@ -20,15 +20,15 @@ public class Form1 :
     }
 
     //NOTE: The following procedure is required by the Windows Form Designer
-    //It can be modified using the Windows Form Designer.  
+    //It can be modified using the Windows Form Designer.
     //Do not modify it using the code editor.
 
     [System.Diagnostics.DebuggerStepThrough]
     private void InitializeComponent()
     {
-       
+
 // Form1
-// 
+//
         this.ClientSize = new System.Drawing.Size(292, 266);
 
         this.Name = "Form1";
@@ -45,7 +45,7 @@ public class Form1 :
         Application.Run(new Form1());
     }
 
-    //<snippet1>    
+    //<snippet1>
 
     protected void DrawCaps(PaintEventArgs e)
     {
@@ -78,25 +78,25 @@ public class Form1 :
         capPen.EndCap = endCap;
 
         // Create a line to draw.
-        Point[] points = { new Point(100, 100), new Point(200, 50), 
+        Point[] points = { new Point(100, 100), new Point(200, 50),
             new Point(250, 300) };
 
         // Draw the lines.
         e.Graphics.DrawLines(capPen, points);
         e.Graphics.DrawLines(customCapPen, points);
     }
-    //</snippet1>  
+    //</snippet1>
 
-    //<snippet2>  
+    //<snippet2>
     private void ExtractAssociatedIconEx()
     {
         Icon ico =
             Icon.ExtractAssociatedIcon(@"C:\WINDOWS\system32\notepad.exe");
         this.Icon = ico;
     }
-    //</snippet2> 
+    //</snippet2>
 
-    //<snippet3> 
+    //<snippet3>
     private void ConstructAnIconFromAType(PaintEventArgs e)
     {
 
@@ -208,7 +208,7 @@ public class Form1 :
         int width = image.Width;
         int height = image.Height;
 
-        float[][] colorMatrixElements = { 
+        float[][] colorMatrixElements = {
                 new float[] {1,  0,  0,  0, 0},
                 new float[] {0,  1,  0,  0, 0},
                 new float[] {0.5f,  0,  1,  0, 0},
@@ -226,8 +226,8 @@ public class Form1 :
 
         e.Graphics.DrawImage(
            image,
-           new Rectangle(150, 10, width, height),  // destination rectangle 
-            0, 0,        // upper-left corner of source rectangle 
+           new Rectangle(150, 10, width, height),  // destination rectangle
+            0, 0,        // upper-left corner of source rectangle
             width,       // width of source rectangle
             height,      // height of source rectangle
             GraphicsUnit.Pixel,
@@ -245,7 +245,7 @@ public class Form1 :
             {
                 if (ifc.Families[i].IsStyleAvailable(FontStyle.Regular))
                 {
-                    e.Graphics.DrawString(ifc.Families[i].Name, new Font(ifc.Families[i], 12), 
+                    e.Graphics.DrawString(ifc.Families[i].Name, new Font(ifc.Families[i], 12),
 			            Brushes.Black, x, y);
                     y += 20;
                     if (y % 700 == 0)
@@ -279,7 +279,7 @@ public class Form1 :
                     new Rectangle(0, 0, image.Width, image.Height),
                     GraphicsUnit.Pixel);
             }
-            
+
             return bitmap;
         }
     //<snippetGetThumbnail>

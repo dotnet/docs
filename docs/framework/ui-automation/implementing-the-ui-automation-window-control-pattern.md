@@ -15,7 +15,7 @@ ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
   
  The <xref:System.Windows.Automation.WindowPattern> control pattern is used to support controls that provide fundamental window-based functionality within a traditional graphical user interface (GUI). Examples of controls that must implement this control pattern include top-level application windows, multiple-document interface (MDI) child windows, resizable split pane controls, modal dialogs and balloon help windows.  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Window control pattern, note the following guidelines and conventions:  
   
@@ -29,7 +29,7 @@ ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
   
 - Full-screen mode is not supported by IWindowProvider as it is feature-specific to an application and is not typical window behavior.  
   
-<a name="Required_Members_for_IWindowProvider"></a>   
+<a name="Required_Members_for_IWindowProvider"></a>
 ## Required Members for IWindowProvider  
  The following properties, methods, and events are required for the IWindowProvider interface.  
   
@@ -48,7 +48,7 @@ ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
 |<xref:System.Windows.Automation.WindowPattern.WindowOpenedEvent>|Event|None|  
 |<xref:System.Windows.Automation.WindowInteractionState>|Event|Is not guaranteed to be <xref:System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction>|  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

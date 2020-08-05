@@ -41,7 +41,7 @@ This example shows how to use delegates to pass a procedure to another procedure
   
 ## See also
 
-- [Delegates](../../../../visual-basic/programming-guide/language-features/delegates/index.md)
-- [AddressOf Operator](../../../../visual-basic/language-reference/operators/addressof-operator.md)
-- [Delegate Statement](../../../../visual-basic/language-reference/statements/delegate-statement.md)
-- [How to: Invoke a Delegate Method](../../../../visual-basic/programming-guide/language-features/delegates/how-to-invoke-a-delegate-method.md)
+- [Delegates](index.md)
+- [AddressOf Operator](../../../language-reference/operators/addressof-operator.md)
+- [Delegate Statement](../../../language-reference/statements/delegate-statement.md)
+- [How to: Invoke a Delegate Method](how-to-invoke-a-delegate-method.md)

@@ -1,5 +1,6 @@
 ---
 title: "How to: Compile Conditionally with Trace and Debug"
+description: Learn how to compile conditionally with the TRACE and DEBUG conditional attributes when compiling a .NET application.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "trace compiler options"

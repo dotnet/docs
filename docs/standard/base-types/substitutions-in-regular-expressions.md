@@ -1,5 +1,6 @@
 ---
 title: "Substitutions in Regular Expressions"
+description: Make substitutions to replace matched text using regular expressions in .NET. Substitutions are language elements recognized only within replacement patterns.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -36,10 +37,10 @@ Substitutions are language elements that are recognized only within replacement 
  The only character that can appear either in a regular expression pattern or in a substitution is the `$` character, although it has a different meaning in each context. In a regular expression pattern, `$` is an anchor that matches the end of the string. In a replacement pattern, `$` indicates the beginning of a substitution.  
   
 > [!NOTE]
-> For functionality similar to a replacement pattern within a regular expression, use a backreference. For more information about backreferences, see [Backreference Constructs](../../../docs/standard/base-types/backreference-constructs-in-regular-expressions.md).  
+> For functionality similar to a replacement pattern within a regular expression, use a backreference. For more information about backreferences, see [Backreference Constructs](backreference-constructs-in-regular-expressions.md).  
 
 ## Substituting a Numbered Group  
- The `$`*number* language element includes the last substring matched by the *number* capturing group in the replacement string, where *number* is the index of the capturing group. For example, the replacement pattern `$1` indicates that the matched substring is to be replaced by the first captured group. For more information about numbered capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+ The `$`*number* language element includes the last substring matched by the *number* capturing group in the replacement string, where *number* is the index of the capturing group. For example, the replacement pattern `$1` indicates that the matched substring is to be replaced by the first captured group. For more information about numbered capturing groups, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).  
   
  All digits that follow `$` are interpreted as belonging to the *number* group. If this is not your intent, you can substitute a named group instead. For example, you can use the replacement string `${1}1` instead of `$11` to define the replacement string as the value of the first captured group along with the number "1". For more information, see [Substituting a Named Group](#substituting-a-named-group).  
   
@@ -64,7 +65,7 @@ Substitutions are language elements that are recognized only within replacement 
 |`(\s?\d+[.,]?\d*)`|Match a white space followed by one or more decimal digits, followed by zero or one period or comma, followed by zero or more decimal digits. This is the first capturing group. Because the replacement pattern is `$1`, the call to the <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method replaces the entire matched substring with this captured group.|  
 
 ## Substituting a Named Group  
- The `${`*name*`}` language element substitutes the last substring matched by the *name* capturing group, where *name* is the name of a capturing group defined by the `(?<`*name*`>)` language element. For more information about named capturing groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).  
+ The `${`*name*`}` language element substitutes the last substring matched by the *name* capturing group, where *name* is the name of a capturing group defined by the `(?<`*name*`>)` language element. For more information about named capturing groups, see [Grouping Constructs](grouping-constructs-in-regular-expressions.md).  
   
  If *name* doesn't specify a valid named capturing group defined in the regular expression pattern but consists of digits, `${`*name*`}` is interpreted as a numbered group.  
   
@@ -193,4 +194,4 @@ Substitutions are language elements that are recognized only within replacement 
   
 ## See also
 
-- [Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)
+- [Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)

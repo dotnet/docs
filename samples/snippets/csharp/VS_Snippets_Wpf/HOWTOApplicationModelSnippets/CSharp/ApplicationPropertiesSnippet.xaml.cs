@@ -16,7 +16,7 @@ namespace SDKSample {
   /// </summary>
 
   public class CustomType {}
-  
+
   public partial class ApplicationPropertiesSnippet : Window {
 
     public ApplicationPropertiesSnippet() {
@@ -30,7 +30,7 @@ namespace SDKSample {
       Application currentApplication = Application.Current;
       //</SnippetGetCurrentApplication>
     }
-    
+
     void SetApplicationProperties() {
       //<SnippetSetApplicationScopeProperty>
       // Set an application-scope property
@@ -51,7 +51,7 @@ namespace SDKSample {
       // NOTE: Need to convert since Application.Properties is a dictionary of System.Object
       string myApplicationScopeProperty = (string)Application.Current.Properties["MyApplicationScopeProperty"];
       //</SnippetGetApplicationScopeProperty>
-      
+
       //<SnippetGetApplicationScopePropertyCustomType>
       // Get an application-scope property
       // NOTE: Need to convert since Application.Properties is a dictionary of System.Object
@@ -65,7 +65,7 @@ namespace SDKSample {
       Application.Current.Resources["ApplicationScopeResource"] = Brushes.White;
       //</SnippetSetApplicationScopeResourceCODE>
     }
-    
+
     void GetApplicationScopeResources() {
       //<SnippetGetApplicationScopeResourceCODE>
       // Get an application-scope resource

@@ -40,11 +40,11 @@ class PropertyInfo_GetValue
    }
    // The example displays the following output:
    //       Character at position 6: g
-   //       
+   //
    //       The complete string:
    //       a b c d e f g h i j k l m n o p q r s t u v w x y z
-   // </Snippet1>   
-   
+   // </Snippet1>
+
    public string Show()
    {
       return b.Text;
@@ -54,8 +54,8 @@ class PropertyInfo_GetValue
 internal class TextBlock
 {
    private String s;
-   
-   public String Text 
+
+   public String Text
    {
       get { return s; }
       set { s = value; }

@@ -20,7 +20,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 ## Syntax  
   
 ```xml  
-<add name="name"   
+<add name="name"
   type="TraceListenerClassName, Version, Culture, PublicKeyToken"  
   initializeData="data"
   traceOutputOptions = "None"
@@ -80,10 +80,10 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 <configuration>  
   <system.diagnostics>  
     <sources>  
-      <source name="TraceSourceApp" switchName="sourceSwitch"   
+      <source name="TraceSourceApp" switchName="sourceSwitch"
         switchType="System.Diagnostics.SourceSwitch">  
         <listeners>  
-          <add name="console"   
+          <add name="console"
             type="System.Diagnostics.ConsoleTraceListener"/>  
           <add name="textListener"/>  
           <remove name="Default"/>  
@@ -91,15 +91,15 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
       </source>  
     </sources>  
     <sharedListeners>  
-      <add name="textListener"   
-        type="System.Diagnostics.TextWriterTraceListener"   
+      <add name="textListener"
+        type="System.Diagnostics.TextWriterTraceListener"
         initializeData="myListener.log"/>  
     </sharedListeners>  
     <switches>  
       <add name="sourceSwitch" value="Warning"/>  
     </switches>  
   </system.diagnostics>  
-</configuration>   
+</configuration>
 ```  
   
 ## See also

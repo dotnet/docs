@@ -23,7 +23,7 @@ Specifies the location of referenced assemblies.
 |`dirList`|Required. Semicolon-delimited list of directories for the compiler to look in if a referenced assembly is not found in either the current working directory (the directory from which you are invoking the compiler) or the common language runtime's system directory. If the directory name contains a space, enclose the name in quotation marks (" ").|  
   
 ## Remarks  
- The `-libpath` option specifies the location of assemblies referenced by the [-reference](../../../visual-basic/reference/command-line-compiler/reference.md) option.  
+ The `-libpath` option specifies the location of assemblies referenced by the [-reference](reference.md) option.  
   
  The compiler searches for assembly references that are not fully qualified in the following order:  
   
@@ -53,5 +53,5 @@ vbc -libpath:c:\;"c:\New Assemblies" -reference:t2.dll t2.vb
 ## See also
 
 - [Assemblies in .NET](../../../standard/assembly/index.md)
-- [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
-- [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
+- [Visual Basic Command-Line Compiler](index.md)
+- [Sample Compilation Command Lines](sample-compilation-command-lines.md)

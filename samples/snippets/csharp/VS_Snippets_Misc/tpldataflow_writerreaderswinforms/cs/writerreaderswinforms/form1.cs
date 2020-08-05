@@ -19,18 +19,18 @@ namespace WriterReadersWinForms
       // </snippet2>
 
       public Form1()
-      {         
+      {
          InitializeComponent();
 
          // <snippet3>
          // Create an ActionBlock<CheckBox> object that toggles the state
          // of CheckBox objects.
-         // Specifying the current synchronization context enables the 
+         // Specifying the current synchronization context enables the
          // action to run on the user-interface thread.
          var toggleCheckBox = new ActionBlock<CheckBox>(checkBox =>
          {
             checkBox.Checked = !checkBox.Checked;
-         }, 
+         },
          new ExecutionDataflowBlockOptions
          {
             TaskScheduler = TaskScheduler.FromCurrentSynchronizationContext()
@@ -44,12 +44,12 @@ namespace WriterReadersWinForms
          var taskSchedulerPair = new ConcurrentExclusiveSchedulerPair();
 
          // Create an ActionBlock<int> object for each reader CheckBox object.
-         // Each ActionBlock<int> object represents an action that can read 
+         // Each ActionBlock<int> object represents an action that can read
          // from a resource in parallel to other readers.
-         // Specifying the concurrent part of the scheduler pair enables the 
-         // reader to run in parallel to other actions that are managed by 
+         // Specifying the concurrent part of the scheduler pair enables the
+         // reader to run in parallel to other actions that are managed by
          // that scheduler.
-         var readerActions = 
+         var readerActions =
             from checkBox in new CheckBox[] {checkBox1, checkBox2, checkBox3}
             select new ActionBlock<int>(milliseconds =>
             {
@@ -69,10 +69,10 @@ namespace WriterReadersWinForms
             });
 
          // Create an ActionBlock<int> object for the writer CheckBox object.
-         // This ActionBlock<int> object represents an action that writes to 
+         // This ActionBlock<int> object represents an action that writes to
          // a resource, but cannot run in parallel to readers.
-         // Specifying the exclusive part of the scheduler pair enables the 
-         // writer to run in exclusively with respect to other actions that are 
+         // Specifying the exclusive part of the scheduler pair enables the
+         // writer to run in exclusively with respect to other actions that are
          // managed by the scheduler pair.
          var writerAction = new ActionBlock<int>(milliseconds =>
          {
@@ -92,7 +92,7 @@ namespace WriterReadersWinForms
          });
 
          // Link the broadcaster to each reader and writer block.
-         // The BroadcastBlock<T> class propagates values that it 
+         // The BroadcastBlock<T> class propagates values that it
          // receives to all connected targets.
          foreach (var readerAction in readerActions)
          {
@@ -112,7 +112,7 @@ namespace WriterReadersWinForms
       private void timer1_Tick(object sender, EventArgs e)
       {
          // Post a value to the broadcaster. The broadcaster
-         // sends this message to each target. 
+         // sends this message to each target.
          broadcaster.Post(1000);
       }
       // </snippet6>

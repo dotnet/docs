@@ -8,13 +8,13 @@ Module Module1
         ' <Snippet1>
         Dim cust1 As Customer = _
             (From cust In db.Customers _
-            Where cust.CustomerID = "BONAP" _
-            Select cust).First()
+             Where cust.CustomerID = "BONAP" _
+             Select cust).First()
 
         Dim cust2 As Customer = _
             (From cust In db.Customers _
-            Where cust.CustomerID = "BONAP" _
-            Select cust).First()
+             Where cust.CustomerID = "BONAP" _
+             Select cust).First()
         ' </Snippet1>
     End Sub
 
@@ -24,13 +24,13 @@ Module Module1
         ' <Snippet2>
         Dim cust1 As Customer = _
             (From cust In db.Customers _
-            Where cust.CustomerID = "BONAP" _
-            Select cust).First()
+             Where cust.CustomerID = "BONAP" _
+             Select cust).First()
 
         Dim cust2 As Customer = _
             (From ord In db.Orders _
-            Where ord.Customer.CustomerID = "BONAP" _
-            Select ord).First().Customer
+             Where ord.Customer.CustomerID = "BONAP" _
+             Select ord).First().Customer
         ' </Snippet2>
     End Sub
 

@@ -16,7 +16,7 @@ namespace DataflowBatchDatabase
    {
       // <snippet2>
       // The number of employees to add to the database.
-      // TODO: Change this value to experiment with different numbers of 
+      // TODO: Change this value to experiment with different numbers of
       // employees to insert into the database.
       static readonly int insertCount = 256;
 
@@ -36,7 +36,7 @@ namespace DataflowBatchDatabase
       // </snippet2>
 
       // <snippet3>
-      // Describes an employee. Each property maps to a 
+      // Describes an employee. Each property maps to a
       // column in the Employees table in the Northwind database.
       // For brevity, the Employee class does not contain
       // all columns from the Employees table.
@@ -55,7 +55,7 @@ namespace DataflowBatchDatabase
          // Possible random last names.
          static readonly string[] lastNames = { "Jones", "Smith", "Johnson", "Walker" };
 
-         // Creates an Employee object that contains random 
+         // Creates an Employee object that contains random
          // property values.
          public static Employee Random()
          {
@@ -103,7 +103,7 @@ namespace DataflowBatchDatabase
          }
       }
 
-      // Retrieves the number of entries in the Employees table in 
+      // Retrieves the number of entries in the Employees table in
       // the Northwind database.
       static int GetEmployeeCount(string connectionString)
       {
@@ -177,7 +177,7 @@ namespace DataflowBatchDatabase
          // Post several random Employee objects to the dataflow block.
          PostRandomEmployees(insertEmployee, count);
 
-         // Set the dataflow block to the completed state and wait for 
+         // Set the dataflow block to the completed state and wait for
          // all insert operations to complete.
          insertEmployee.Complete();
          insertEmployee.Completion.Wait();
@@ -209,7 +209,7 @@ namespace DataflowBatchDatabase
          // Post several random Employee objects to the batch block.
          PostRandomEmployees(batchEmployees, count);
 
-         // Set the batch block to the completed state and wait for 
+         // Set the batch block to the completed state and wait for
          // all insert operations to complete.
          batchEmployees.Complete();
          insertEmployees.Completion.Wait();
@@ -267,13 +267,13 @@ namespace DataflowBatchDatabase
                // Try to retrieve the ID for the employee from the database.
                e.EmployeeID = GetEmployeeID(e.LastName, e.FirstName, connectionString);
 
-               // Post the Employee object to the Employee target of 
+               // Post the Employee object to the Employee target of
                // the batched join block.
                selectEmployees.Target1.Post(e);
             }
             catch (NullReferenceException e)
             {
-               // GetEmployeeID throws NullReferenceException when there is 
+               // GetEmployeeID throws NullReferenceException when there is
                // no such employee with the given name. When this happens,
                // post the Exception object to the Exception target of
                // the batched join block.
@@ -281,7 +281,7 @@ namespace DataflowBatchDatabase
             }
          }
 
-         // Set the batched join block to the completed state and wait for 
+         // Set the batched join block to the completed state and wait for
          // all retrieval operations to complete.
          selectEmployees.Complete();
          printEmployees.Completion.Wait();
@@ -290,7 +290,7 @@ namespace DataflowBatchDatabase
          Console.WriteLine("Finished. There were {0} total errors.", totalErrors);
       }
       // </Snippet7>
-      
+
       static void Main(string[] args)
       {
          // Create a connection string for accessing the database.
@@ -301,7 +301,7 @@ namespace DataflowBatchDatabase
          // Create a Stopwatch object to time database insert operations.
          Stopwatch stopwatch = new Stopwatch();
 
-         // Start with a clean database file by copying the source database to 
+         // Start with a clean database file by copying the source database to
          // the temporary location.
          File.Copy(sourceDatabase, scratchDatabase, true);
 

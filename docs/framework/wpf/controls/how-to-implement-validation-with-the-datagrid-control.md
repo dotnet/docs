@@ -16,7 +16,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 ### To validate individual cell values  
   
-- Specify one or more validation rules on the binding used with a column. This is similar to validating data in simple controls, as described in [Data Binding Overview](../data/data-binding-overview.md).  
+- Specify one or more validation rules on the binding used with a column. This is similar to validating data in simple controls, as described in [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).  
   
      The following example shows a <xref:System.Windows.Controls.DataGrid> control with four columns bound to different properties of a business object. Three of the columns specify the <xref:System.Windows.Controls.ExceptionValidationRule> by setting the <xref:System.Windows.Data.Binding.ValidatesOnExceptions%2A> property to `true`.  
   

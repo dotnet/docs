@@ -27,11 +27,11 @@ Virtual members can be overridden, thus changing the behavior of the subclass. T
 
  The public members of a class should provide the right set of functionality for direct consumers of that class. Virtual members are designed to be overridden in subclasses, and protected accessibility is a great way to scope all virtual extensibility points to where they can be used.
 
- *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
+ *Portions &copy; 2005, 2009 Microsoft Corporation. All rights reserved.*
 
  *Reprinted by permission of Pearson Education, Inc. from [Framework Design Guidelines: Conventions, Idioms, and Patterns for Reusable .NET Libraries, 2nd Edition](https://www.informit.com/store/framework-design-guidelines-conventions-idioms-and-9780321545619) by Krzysztof Cwalina and Brad Abrams, published Oct 22, 2008 by Addison-Wesley Professional as part of the Microsoft Windows Development Series.*
 
 ## See also
 
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
-- [Designing for Extensibility](../../../docs/standard/design-guidelines/designing-for-extensibility.md)
+- [Framework Design Guidelines](index.md)
+- [Designing for Extensibility](designing-for-extensibility.md)

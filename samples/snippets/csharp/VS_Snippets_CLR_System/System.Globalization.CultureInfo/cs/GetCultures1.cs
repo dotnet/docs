@@ -8,25 +8,25 @@ public class Example
    {
       // Get all custom cultures.
       CultureInfo[] custom = CultureInfo.GetCultures(CultureTypes.UserCustomCulture);
-      if (custom.Length == 0) { 
+      if (custom.Length == 0) {
          Console.WriteLine("There are no user-defined custom cultures.");
       }
       else {
          Console.WriteLine("Custom cultures:");
-         foreach (var culture in custom) 
-            Console.WriteLine("   {0} -- {1}", culture.Name, culture.DisplayName);    
+         foreach (var culture in custom)
+            Console.WriteLine("   {0} -- {1}", culture.Name, culture.DisplayName);
       }
       Console.WriteLine();
-      
+
       // Get all replacement cultures.
       CultureInfo[] replacements = CultureInfo.GetCultures(CultureTypes.ReplacementCultures);
-      if (replacements.Length == 0) { 
+      if (replacements.Length == 0) {
          Console.WriteLine("There are no replacement cultures.");
-      }                                             
+      }
       else {
          Console.WriteLine("Replacement cultures:");
-         foreach (var culture in replacements) 
-            Console.WriteLine("   {0} -- {1}", culture.Name, culture.DisplayName);    
+         foreach (var culture in replacements)
+            Console.WriteLine("   {0} -- {1}", culture.Name, culture.DisplayName);
       }
       Console.WriteLine();
    }
@@ -35,6 +35,6 @@ public class Example
 //     Custom cultures:
 //        x-en-US-sample -- English (United States)
 //        fj-FJ -- Boumaa Fijian (Viti)
-//     
+//
 //     There are no replacement cultures.
 // </Snippet5>

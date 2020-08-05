@@ -29,7 +29,7 @@ Azure Functions support F# as a first-class language with efficient, reactive, s
 Other resources for using Azure Functions and F#:
 
 * [Scale Up Azure Functions in F# Using Suave](https://blog.tamizhvendan.in/blog/2016/09/19/scale-up-azure-functions-in-f-number-using-suave/)
-* [How to create Azure function in F#](https://mnie.github.io/2016-09-08-AzureFunctions/)
+* [How to create Azure function in F#](https://www.mnie.me/azurefunctions)
 * [Using the Azure Type Provider with Azure Functions](https://compositional-it.com/blog/2017/08-30-using-the-azure-type-provider-with-azure-functions/index.html)
 
 ## Using Azure Storage with F\#

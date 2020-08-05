@@ -1,7 +1,7 @@
 ---
 title: XAML overview
 description: Learn how the XAML language is structured and implemented by Windows Presentation Foundation (WPF) for .NET Core.
-author: thraka
+author: adegeo
 ms.date: 08/08/2019
 ms.author: adegeo
 dev_langs:

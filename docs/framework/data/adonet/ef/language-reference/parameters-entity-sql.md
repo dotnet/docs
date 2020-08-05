@@ -11,8 +11,8 @@ Parameters are variables that are defined outside [!INCLUDE[esql](../../../../..
 ## Example  
   
 ```sql  
-SELECT c   
-      FROM LOB.Customers AS c   
+SELECT c
+      FROM LOB.Customers AS c
       WHERE c.Name = @name  
 ```  
   

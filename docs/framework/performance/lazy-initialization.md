@@ -1,5 +1,6 @@
 ---
 title: "Lazy Initialization"
+description: Explore lazy initialization in .NET, a performance improvement that means an object creation is deferred until the object is first used.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -77,7 +78,7 @@ ms.assetid: 56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b
   
  Specifying <xref:System.Threading.LazyThreadSafetyMode.PublicationOnly?displayProperty=nameWithType> allows multiple threads to attempt to initialize the <xref:System.Lazy%601> instance. Only one thread can win this race, and all the other threads receive the value that was initialized by the successful thread. If an exception is thrown on a thread during initialization, that thread does not receive the value set by the successful thread. Exceptions are not cached, so a subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property can result in successful initialization. This differs from the way exceptions are treated in other modes, which is described in the following section. For more information, see the <xref:System.Threading.LazyThreadSafetyMode> enumeration.  
   
-<a name="ExceptionsInLazyObjects"></a>   
+<a name="ExceptionsInLazyObjects"></a>
 ## Exceptions in Lazy Objects  
  As stated earlier, a <xref:System.Lazy%601> object always returns the same object or value that it was initialized with, and therefore the <xref:System.Lazy%601.Value%2A> property is read-only. If you enable exception caching, this immutability also extends to exception behavior. If a lazy-initialized object has exception caching enabled and throws an exception from its initialization method when the <xref:System.Lazy%601.Value%2A> property is first accessed, that same exception is thrown on every subsequent attempt to access the <xref:System.Lazy%601.Value%2A> property. In other words, the constructor of the wrapped type is never re-invoked, even in multithreaded scenarios. Therefore, the <xref:System.Lazy%601> object cannot throw an exception on one access and return a value on a subsequent access.  
   

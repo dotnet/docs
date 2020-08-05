@@ -26,13 +26,13 @@ namespace MarqueeControlLibrary
             // This call is required by the Windows.Forms Form Designer.
             InitializeComponent();
 
-            // Minimize flickering during animation by enabling 
+            // Minimize flickering during animation by enabling
             // double buffering.
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
         // </snippet250>
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         protected override void Dispose( bool disposing )
@@ -50,8 +50,8 @@ namespace MarqueeControlLibrary
         // <snippet260>
         public void Start()
         {
-            // The MarqueeControl may contain any number of 
-            // controls that implement IMarqueeWidget, so 
+            // The MarqueeControl may contain any number of
+            // controls that implement IMarqueeWidget, so
             // find each IMarqueeWidget child and call its
             // StartMarquee method.
             foreach( Control cntrl in this.Controls )
@@ -66,7 +66,7 @@ namespace MarqueeControlLibrary
 
         public void Stop()
         {
-            // The MarqueeControl may contain any number of 
+            // The MarqueeControl may contain any number of
             // controls that implement IMarqueeWidget, so find
             // each IMarqueeWidget child and call its StopMarquee
             // method.
@@ -86,13 +86,13 @@ namespace MarqueeControlLibrary
         {
             base.OnLayout (levent);
 
-            // Repaint all IMarqueeWidget children if the layout 
+            // Repaint all IMarqueeWidget children if the layout
             // has changed.
             foreach( Control cntrl in this.Controls )
             {
                 if( cntrl is IMarqueeWidget )
                 {
-                    Control control = cntrl as Control; 
+                    Control control = cntrl as Control;
 
                     control.PerformLayout();
                 }
@@ -101,8 +101,8 @@ namespace MarqueeControlLibrary
         // </snippet270>
 
         #region Component Designer generated code
-        /// <summary> 
-        /// Required method for Designer support - do not modify 
+        /// <summary>
+        /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()

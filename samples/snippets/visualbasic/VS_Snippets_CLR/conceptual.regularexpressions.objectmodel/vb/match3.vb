@@ -5,16 +5,16 @@ Option Strict On
 Imports System.Text.RegularExpressions
 
 Module Example
-   Public Sub Main()
-      Dim pattern As String = "abc"
-      Dim input As String = "abc123abc456abc789"
-      Dim match As Match = Regex.Match(input, pattern)
-      Do While match.Success
-         Console.WriteLine("{0} found at position {1}.", _
-                           match.Value, match.Index)
-         match = match.NextMatch()                  
-      Loop                     
-   End Sub
+    Public Sub Main()
+        Dim pattern As String = "abc"
+        Dim input As String = "abc123abc456abc789"
+        Dim match As Match = Regex.Match(input, pattern)
+        Do While match.Success
+            Console.WriteLine("{0} found at position {1}.", _
+                              match.Value, match.Index)
+            match = match.NextMatch()
+        Loop
+    End Sub
 End Module
 ' The example displays the following output:
 '       abc found at position 0.

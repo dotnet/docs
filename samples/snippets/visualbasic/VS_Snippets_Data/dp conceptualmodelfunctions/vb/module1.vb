@@ -20,8 +20,8 @@ Module Module1
         Using context As New SchoolEntities()
             ' Retrieve instructors hired more than 10 years ago.
             Dim instructors = From p In context.People _
-                Where YearsSince(CType(p.HireDate, DateTime?)) > 10 _
-                Select p
+                              Where YearsSince(CType(p.HireDate, DateTime?)) > 10 _
+                              Select p
 
             For Each instructor In instructors
                 Console.WriteLine(instructor.LastName)
@@ -34,8 +34,8 @@ Module Module1
         Using context As New SchoolEntities()
             ' Retrieve instructors hired more than 10 years ago.
             Dim instructors = From p In context.People _
-                Where YearsSince(CType(p.HireDate, DateTime?)) > 10 _
-                Select p
+                              Where YearsSince(CType(p.HireDate, DateTime?)) > 10 _
+                              Select p
 
             For Each instructor In instructors
                 Console.WriteLine(instructor.LastName)

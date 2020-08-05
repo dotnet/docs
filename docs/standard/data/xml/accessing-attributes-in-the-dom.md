@@ -255,4 +255,4 @@ XmlAttribute attr = doc.DocumentElement.Attributes[0];
 
 ## See also
 
-- [XML Document Object Model (DOM)](../../../../docs/standard/data/xml/xml-document-object-model-dom.md)
+- [XML Document Object Model (DOM)](xml-document-object-model-dom.md)

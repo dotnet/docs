@@ -10,7 +10,7 @@ using System.Data.Services.Common;
 
 namespace NorthwindClient
 {
-    
+
     public class Source
     {
         public static Uri svcUri = new Uri("http://glengatest4-vm1/Northwind/Northwind.svc/");
@@ -22,7 +22,7 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            //<snippetGetAllCustomersSpecific>  
+            //<snippetGetAllCustomersSpecific>
             // Define a new query for Customers.
             DataServiceQuery<Customer> query = context.Customers;
             //</snippetGetAllCustomersSpecific>
@@ -96,7 +96,7 @@ namespace NorthwindClient
 
             // Define a new query for Customers.
             DataServiceQuery<Customer> query = context.CreateQuery<Customer>("Customers");
-            
+
             try
             {
                 // Enumerate over the query result.
@@ -143,7 +143,7 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Define the query to execute asynchronously that returns 
+            // Define the query to execute asynchronously that returns
             // all customers with their respective orders.
             DataServiceQuery<Customer> query = (DataServiceQuery<Customer>)(from cust in context.Customers.Expand("Orders")
                                                where cust.CustomerID == "ALFKI"
@@ -166,7 +166,7 @@ namespace NorthwindClient
         private static void OnCustomersQueryComplete(IAsyncResult result)
         {
             // Get the original query from the result.
-            DataServiceQuery<Customer> query = 
+            DataServiceQuery<Customer> query =
                 result as DataServiceQuery<Customer>;
 
             foreach (Customer customer in query.EndExecute(result))
@@ -178,7 +178,7 @@ namespace NorthwindClient
                         order.OrderID, order.Freight);
                 }
             }
-        }    
+        }
         //</snippetExecuteQueryAsync>
         public static void LoadRelatedOrderCustomer()
         {
@@ -197,7 +197,7 @@ namespace NorthwindClient
                     //</snippetLoadRelatedOrderCustomerSpecific>
 
                     // Write out customer and order information.
-                    Console.WriteLine("Customer: {0} - Order ID: {1}", 
+                    Console.WriteLine("Customer: {0} - Order ID: {1}",
                         order.Customer.CompanyName, order.OrderID);
                 }
             }
@@ -294,7 +294,7 @@ namespace NorthwindClient
                 // Enumerate over the results of the query.
                 foreach (Order order in selectedOrders)
                 {
-                    Console.WriteLine("Order ID: {0} - Ship Date: {1} - Freight: {2}", 
+                    Console.WriteLine("Order ID: {0} - Ship Date: {1} - Freight: {2}",
                         order.OrderID, order.ShippedDate, order.Freight);
                 }
             }
@@ -317,7 +317,7 @@ namespace NorthwindClient
             //<snippetAddQueryOptionsLinqSpecific>
             var selectedOrders = from o in context.Orders
                                  where o.Freight > 30
-                                 orderby o.ShippedDate descending 
+                                 orderby o.ShippedDate descending
                                  select o;
             //</snippetAddQueryOptionsLinqSpecific>
 
@@ -357,7 +357,7 @@ namespace NorthwindClient
                 foreach (Order currentOrder in selectedOrders)
                 {
                     Console.WriteLine("Order ID: {0} - Ship Date: {1} - Freight: {2}",
-                        currentOrder.OrderID, currentOrder.ShippedDate, 
+                        currentOrder.OrderID, currentOrder.ShippedDate,
                         currentOrder.Freight);
                 }
             }
@@ -406,21 +406,21 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Create the separate query URI's, one that returns 
+            // Create the separate query URI's, one that returns
             // a single customer and another that returns all Products.
-            Uri customerUri = new Uri(svcUri.AbsoluteUri + 
+            Uri customerUri = new Uri(svcUri.AbsoluteUri +
                 "/Customers('" + customerId + "')/?$expand=Orders");
             Uri productsUri = new Uri(svcUri.AbsoluteUri +
                "/Products");
 
             // Create the query requests.
-            DataServiceRequest<Customer> customerQuery = 
+            DataServiceRequest<Customer> customerQuery =
                 new DataServiceRequest<Customer>(customerUri);
             DataServiceRequest<Product> productsQuery =
                             new DataServiceRequest<Product>(productsUri);
 
             // Add the query requests to a batch request array.
-            DataServiceRequest[] batchRequests = 
+            DataServiceRequest[] batchRequests =
                 new DataServiceRequest[]{customerQuery, productsQuery};
 
             DataServiceResponse batchResponse;
@@ -433,7 +433,7 @@ namespace NorthwindClient
                 if (batchResponse.IsBatchResponse)
                 {
                     // Parse the batchResponse.BatchHeaders.
-                }  
+                }
                 // Enumerate over the results of the query.
                 foreach (QueryOperationResponse response in batchResponse)
                 {
@@ -500,9 +500,9 @@ namespace NorthwindClient
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
             // Define an existing customer to attach, including the key.
-            Customer customer = 
+            Customer customer =
                 Customer.CreateCustomer("ALFKI", "Alfreds Futterkiste");
-            
+
             // Set current property values.
             customer.Address = "Obere Str. 57";
             customer.City = "Berlin";
@@ -524,7 +524,7 @@ namespace NorthwindClient
 
                 // Send updates to the data service.
                 context.SaveChanges();
-                //</snippetAttachObjectSpecific>  
+                //</snippetAttachObjectSpecific>
             }
             catch (DataServiceClientException ex)
             {
@@ -538,7 +538,7 @@ namespace NorthwindClient
             //<snippetAddProduct>
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
-            
+
             //<snippetCreateNewProduct>
             // Create the new product.
             Product newProduct =
@@ -555,7 +555,7 @@ namespace NorthwindClient
                 //<snippetAddProductSpecific>
                 // Add the new product to the Products entity set.
                 context.AddToProducts(newProduct);
-                //</snippetAddProductSpecific>  
+                //</snippetAddProductSpecific>
 
                 // Send the insert to the data service.
                 DataServiceResponse response = context.SaveChanges();
@@ -603,7 +603,7 @@ namespace NorthwindClient
             var customerToChange = (from customer in context.Customers
                                     where customer.CustomerID == customerId
                                     select customer).Single();
-             
+
             // Change some property values.
             customerToChange.CompanyName = "Alfreds Futterkiste";
             customerToChange.ContactName = "Maria Anders";
@@ -614,7 +614,7 @@ namespace NorthwindClient
                 //<snippetModifyCustomerSpecific>
                 // Mark the customer as updated.
                 context.UpdateObject(customerToChange);
-                //</snippetModifyCustomerSpecific>  
+                //</snippetModifyCustomerSpecific>
 
                 // Send the update to the data service.
                 context.SaveChanges();
@@ -650,16 +650,16 @@ namespace NorthwindClient
                                       where product.ProductID == productID
                                       select product).Single();
 
-                //<snippetDeleteProductSpecific>    
-                // Mark the product for deletion.    
+                //<snippetDeleteProductSpecific>
+                // Mark the product for deletion.
                 context.DeleteObject(deletedProduct);
-                //</snippetDeleteProductSpecific>    
+                //</snippetDeleteProductSpecific>
 
                 // Send the delete to the data service.
                 context.SaveChanges();
             }
             // Handle the error that occurs when the delete operation fails,
-            // which can happen when there are entities with existing 
+            // which can happen when there are entities with existing
             // relationships to the product being deleted.
             catch (DataServiceRequestException ex)
             {
@@ -691,7 +691,7 @@ namespace NorthwindClient
                             where customer.CustomerID == customerId
                             select customer).Single();
 
-                // Get the first order. 
+                // Get the first order.
                 Order order = cust.Orders.FirstOrDefault();
 
                 // Create a new order detail for the specific product.
@@ -740,7 +740,7 @@ namespace NorthwindClient
                     "An error occurred when saving changes.", ex);
             }
 
-            // Handle any errors that may occur during insert, such as 
+            // Handle any errors that may occur during insert, such as
             // a constraint violation.
             catch (DataServiceRequestException ex)
             {
@@ -755,7 +755,7 @@ namespace NorthwindClient
                 context.SaveChanges();
             }
         }
- 
+
         public static void AddOrderDetailToOrderAuto()
         {
             //<snippetAddOrderDetailToOrderAuto>
@@ -779,7 +779,7 @@ namespace NorthwindClient
                             where customer.CustomerID == customerId
                             select customer).Single();
 
-                // Get the first order. 
+                // Get the first order.
                 Order order = cust.Orders.FirstOrDefault();
 
                 // Create a new order detail for the specific product.
@@ -798,7 +798,7 @@ namespace NorthwindClient
                 newItem.Order = order;
                 newItem.Product = selectedProduct;
                 //</snippetSetNavProps>
-               
+
                 // Send the changes to the data service.
                 DataServiceResponse response = context.SaveChanges();
 
@@ -816,7 +816,7 @@ namespace NorthwindClient
 
                             if (addedItem != null)
                             {
-                                Console.WriteLine("New {0} item added to order {1}.", 
+                                Console.WriteLine("New {0} item added to order {1}.",
                                     addedItem.Product.ProductName, addedItem.OrderID.ToString());
                             }
                         }
@@ -829,7 +829,7 @@ namespace NorthwindClient
                     "An error occurred when saving changes.", ex);
             }
 
-            // Handle any errors that may occur during insert, such as 
+            // Handle any errors that may occur during insert, such as
             // a constraint violation.
             catch (DataServiceRequestException ex)
             {
@@ -849,15 +849,15 @@ namespace NorthwindClient
             //<snippetCountAllCustomersValueOnly>
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
-         
+
             // Define a new query for Customers.
             DataServiceQuery<Customer> query = context.Customers;
-            
+
             try
-            {    
+            {
                 // Execute the query to just return the value of all customers in the set.
                 int totalCount = query.Count();
-                
+
                 // Retrieve the total count from the response.
                 Console.WriteLine("There are {0} customers in total.", totalCount);
             }
@@ -873,19 +873,19 @@ namespace NorthwindClient
             //<snippetCountAllCustomers>
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
-         
-            //<snippetCountAllCustomersSpecific>  
+
+            //<snippetCountAllCustomersSpecific>
             // Define a new query for Customers that includes the total count.
             DataServiceQuery<Customer> query = context.Customers.IncludeTotalCount();
             //</snippetCountAllCustomersSpecific>
 
             try
-            {    
-                //<snippetGetResponseSpecific> 
+            {
+                //<snippetGetResponseSpecific>
                 // Execute the query for all customers and get the response object.
-                QueryOperationResponse<Customer> response = 
+                QueryOperationResponse<Customer> response =
                     query.Execute() as QueryOperationResponse<Customer>;
-                //</snippetGetResponseSpecific> 
+                //</snippetGetResponseSpecific>
 
                 // Retrieve the total count from the response.
                 Console.WriteLine("There are a total of {0} customers.", response.TotalCount);
@@ -909,16 +909,16 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
             DataServiceQueryContinuation<Customer> token = null;
-            int pageCount = 0; 
+            int pageCount = 0;
 
             try
-            { 
+            {
                 // Execute the query for all customers and get the response object.
                 QueryOperationResponse<Customer> response =
                     context.Customers.Execute() as QueryOperationResponse<Customer>;
 
                 //<snippetLoadNextLink>
-                // With a paged response from the service, use a do...while loop 
+                // With a paged response from the service, use a do...while loop
                 // to enumerate the results before getting the next link.
                 do
                 {
@@ -968,7 +968,7 @@ namespace NorthwindClient
                     context.Customers.AddQueryOption("$expand", "Orders")
                     .Execute() as QueryOperationResponse<Customer>;
 
-                // With a paged response from the service, use a do...while loop 
+                // With a paged response from the service, use a do...while loop
                 // to enumerate the results before getting the next link.
                 do
                 {
@@ -989,7 +989,7 @@ namespace NorthwindClient
                         Console.WriteLine("\tCustomer Name: {0}", c.CompanyName);
                         Console.WriteLine("\tOrders Page {0}:", ++innerPageCount);
                         // Get the next link for the collection of related Orders.
-                        DataServiceQueryContinuation<Order> nextOrdersLink = 
+                        DataServiceQueryContinuation<Order> nextOrdersLink =
                             response.GetContinuation(c.Orders);
 
                         //<snippetLoadNextOrdersLink>
@@ -1026,18 +1026,18 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            //<snippetSelectCustomerAddressSpecific>  
-            // Define an anonymous LINQ query that projects the Customers type into 
+            //<snippetSelectCustomerAddressSpecific>
+            // Define an anonymous LINQ query that projects the Customers type into
             // a CustomerAddress type that contains only address properties.
-            //<snippetProjectWithInitializer> 
+            //<snippetProjectWithInitializer>
             var query = from c in context.Customers
                         where c.Country == "Germany"
-                        select new CustomerAddress { 
-                            CustomerID = c.CustomerID, 
-                            Address = c.Address, 
-                            City = c.City, 
+                        select new CustomerAddress {
+                            CustomerID = c.CustomerID,
+                            Address = c.Address,
+                            City = c.City,
                             Region = c.Region,
-                            PostalCode = c.PostalCode, 
+                            PostalCode = c.PostalCode,
                             Country = c.Country};
             //</snippetProjectWithInitializer>
             //</snippetSelectCustomerAddressSpecific>
@@ -1053,8 +1053,8 @@ namespace NorthwindClient
 
                     // Write out the current values.
                     Console.WriteLine("Customer ID: {0} \r\nStreet: {1} "
-                        + "\r\nCity: {2} \r\nState: {3} \r\nZip Code: {4} \r\nCountry: {5}", 
-                        item.CustomerID, item.Address, item.City, item.Region, 
+                        + "\r\nCity: {2} \r\nState: {3} \r\nZip Code: {4} \r\nCountry: {5}",
+                        item.CustomerID, item.Address, item.City, item.Region,
                         item.PostalCode, item.Country);
                 }
 
@@ -1074,17 +1074,17 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Define an anonymous LINQ query that projects the Customers type into 
+            // Define an anonymous LINQ query that projects the Customers type into
             // a CustomerAddress type that contains only address properties.
             var query = from c in context.Customers
                         where c.Country == "Germany"
                         select new CustomerAddressNonEntity
                         {
-                            CompanyName = c.CompanyName, 
+                            CompanyName = c.CompanyName,
                             Address = c.Address,
-                            City = c.City, 
+                            City = c.City,
                             Region = c.Region,
-                            PostalCode = c.PostalCode, 
+                            PostalCode = c.PostalCode,
                             Country = c.Country
                         };
 
@@ -1099,7 +1099,7 @@ namespace NorthwindClient
                         + "\nCity: {2} \nState: {3} \nZip Code: {4} \nCountry: {5}",
                         item.CompanyName, item.Address, item.City, item.Region,
                         item.PostalCode, item.Country);
-                }     
+                }
             }
             catch (DataServiceQueryException ex)
             {
@@ -1113,17 +1113,17 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Define an anonymous LINQ query that projects the Customers type into 
+            // Define an anonymous LINQ query that projects the Customers type into
             // a CustomerAddress type that contains only address properties.
-            //<snippetProjectWithConstructor> 
+            //<snippetProjectWithConstructor>
             var query = from c in context.Customers
                         where c.Country == "Germany"
                         select new CustomerAddress(
-                        c.CustomerID, 
-                        c.Address, 
-                        c.City, 
+                        c.CustomerID,
+                        c.Address,
+                        c.City,
                         c.Region,
-                        c.PostalCode, 
+                        c.PostalCode,
                         c.Country);
             //</snippetProjectWithConstructor>
 
@@ -1150,15 +1150,15 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Define an anonymous LINQ query that projects the Customers type into 
+            // Define an anonymous LINQ query that projects the Customers type into
             // a CustomerAddress type and tries to create a new Address string by
             // concatenating other properties.
-            //<snippetProjectWithTransform> 
+            //<snippetProjectWithTransform>
             var query = from c in context.Customers
                         where c.Country == "Germany"
                         select new CustomerAddress
                         {
-                            CustomerID = c.CustomerID, 
+                            CustomerID = c.CustomerID,
                             Address = "Full address:" + c.Address + ", " +
                             c.City + ", " + c.Region + " " + c.PostalCode,
                             City = c.City,
@@ -1191,9 +1191,9 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Define an anonymous LINQ query that projects the Customers type into 
+            // Define an anonymous LINQ query that projects the Customers type into
             // a CustomerAddress type that contains only address properties.
-            //<snippetProjectWithConvertion> 
+            //<snippetProjectWithConvertion>
             var query = from c in context.Customers
                         where c.Country == "Germany"
                         select new CustomerAddress
@@ -1235,7 +1235,7 @@ namespace NorthwindClient
             //<snippetLinqQueryPrecedenceSpecific>
             var ordersQuery = (from o in context.Orders
                                  where o.ShippedDate < DateTime.Today
-                                 orderby o.OrderDate descending, o.CustomerID 
+                                 orderby o.OrderDate descending, o.CustomerID
                                  select o).Skip(10).Take(10);
             //</snippetLinqQueryPrecedenceSpecific>
 
@@ -1405,7 +1405,7 @@ namespace NorthwindClient
             // Define a query for orders with a Freight value greater than 30.
             //<snippetLinqOrderByClauseSpecific>
             var sortedCustomers = from c in context.Customers
-                                 orderby c.CompanyName ascending, 
+                                 orderby c.CompanyName ascending,
                                  c.PostalCode descending
                                  select c;
             //</snippetLinqOrderByClauseSpecific>
@@ -1497,7 +1497,7 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Define a query that returns 25 orders after skipping the 
+            // Define a query that returns 25 orders after skipping the
             // first 50 orders returned by the query.
             //<snippetLinqSkipTakeMethodSpecific>
             var pagedOrders = (from o in context.Orders
@@ -1530,7 +1530,7 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri);
 
-            // Define a query that returns 25 orders after skipping the 
+            // Define a query that returns 25 orders after skipping the
             // first 50 orders returned by the query.
             //<snippetExplicitQuerySkipTakeMethodSpecific>
             var pagedOrders = context.Orders
@@ -1608,12 +1608,12 @@ namespace NorthwindClient
             var projectedQuery = context.Customers.Where(c => c.Country == "Germany")
                 .Select(c => new CustomerAddress
                 {
-                    CustomerID = c.CustomerID, 
+                    CustomerID = c.CustomerID,
                     Address = c.Address,
                     City = c.City,
                     Region = c.Region,
                     PostalCode = c.PostalCode,
-                    Country = c.Country});                   
+                    Country = c.Country});
             //</snippetLinqSelectMethodSpecific>
 
             try
@@ -1715,7 +1715,7 @@ namespace NorthwindClient
             }
             //</snippetLinqQueryExpandMethod>
         }
-        #endregion 
+        #endregion
         public static void LinqQueryClientEval()
         {
             //<snippetLinqQueryClientEval>
@@ -1726,7 +1726,7 @@ namespace NorthwindClient
             int basePrice = 100;
             decimal discount = .10M;
 
-            // Define a query that returns products based on a 
+            // Define a query that returns products based on a
             // calculation that is determined on the client.
             var productsQuery = from p in context.Products
                               where p.UnitPrice >
@@ -1763,8 +1763,8 @@ namespace NorthwindClient
 
             // Register to handle the SendingRequest event.
             // Note: If this must be done for every request to the data service, consider
-            // registering for this event by overriding the OnContextCreated partial method in 
-            // the entity container, in this case NorthwindEntities. 
+            // registering for this event by overriding the OnContextCreated partial method in
+            // the entity container, in this case NorthwindEntities.
             context.SendingRequest += new EventHandler<SendingRequestEventArgs>(OnSendingRequest);
 
             // Define a query for orders with a Freight value greater than 30.
@@ -1802,9 +1802,9 @@ namespace NorthwindClient
         //    // Create the DataServiceContext using the service URI.
         //    NorthwindEntities context = new NorthwindEntities(svcUri);
 
-        //    // Define an anonymous LINQ query that projects the Products type, 
+        //    // Define an anonymous LINQ query that projects the Products type,
         //    // checking for relationships that return a null reference.
-        //    //<snippetSelectProductWithNullsSpecific> 
+        //    //<snippetSelectProductWithNullsSpecific>
         //    var query = from p in context.Products
         //                where (p.Discontinued == false && p.ProductID > 77)
         //                select new Product
@@ -1829,7 +1829,7 @@ namespace NorthwindClient
         //        // Enumerate over the query result, which is executed implicitly.
         //        foreach (var item in query)
         //        {
-                    
+
         //            // Write out the current values.
         //            Console.WriteLine("Product ID: {0}/nUnits on order: {1}",
         //                item.ProductID, item.UnitsOnOrder);
@@ -1852,7 +1852,7 @@ namespace NorthwindClient
             // Define the service operation query parameter.
             string city = "London";
 
-            // Define the query URI to access the service operation with specific 
+            // Define the query URI to access the service operation with specific
             // query options relative to the service URI.
             string queryString = string.Format("GetOrdersByCity?city='{0}'", city)
                 + "&$orderby=ShippedDate desc"
@@ -1897,7 +1897,7 @@ namespace NorthwindClient
             NorthwindEntities context = new NorthwindEntities(svcUri2);
 
             // Use the CreateQuery method to create a query that accessess
-            // the service operation passing a single parameter.       
+            // the service operation passing a single parameter.
             var query = context.CreateQuery<Order>("GetOrdersByCity")
                 .AddQueryOption("city", string.Format("'{0}'", city))
                 .Expand("Order_Details");
@@ -1928,7 +1928,7 @@ namespace NorthwindClient
         public static void CallServiceOperationSingleEntity()
         {
             //<snippetCallServiceOperationSingleEntity>
-            // Define the query URI to access the service operation, 
+            // Define the query URI to access the service operation,
             // relative to the service URI.
             string queryString = "GetNewestOrder";
 
@@ -1958,7 +1958,7 @@ namespace NorthwindClient
         public static void CallServiceOperationEnumString()
         {
             //<snippetCallServiceOperationEnumString>
-            // Define the query URI to access the service operation, 
+            // Define the query URI to access the service operation,
             // relative to the service URI.
             string queryString = "GetCustomerNames";
 
@@ -1970,7 +1970,7 @@ namespace NorthwindClient
                 // Execute a service operation that returns only the newest single order.
                 IEnumerable<string> customerNames
                     = context.Execute<string>(new Uri(queryString, UriKind.Relative));
-                
+
                 foreach (string name in customerNames)
                 {
                     // Write out order information.
@@ -1989,7 +1989,7 @@ namespace NorthwindClient
         public static void CallServiceOperationSingleInt()
         {
             //<snippetCallServiceOperationSingleInt>
-            // Define the query URI to access the service operation, 
+            // Define the query URI to access the service operation,
             // relative to the service URI.
             string queryString = "CountOpenOrders";
 
@@ -1998,7 +1998,7 @@ namespace NorthwindClient
 
             try
             {
-                // Execute a service operation that returns the integer 
+                // Execute a service operation that returns the integer
                 // count of open orders.
                 int numOrders
                     = (context.Execute<int>(new Uri(queryString, UriKind.Relative)))
@@ -2020,7 +2020,7 @@ namespace NorthwindClient
         public static void CallServiceOperationVoid()
         {
             //<snippetCallServiceOperationVoid>
-            // Define the query URI to access the service operation, 
+            // Define the query URI to access the service operation,
             // relative to the service URI.
             string queryString = "ReturnsNoData";
 
@@ -2051,14 +2051,14 @@ namespace NorthwindClient
             NorthwindEntities context = new NorthwindEntities(svcUri2);
 
             // Use the CreateQuery method to create a query that accessess
-            // the service operation passing a single parameter.       
+            // the service operation passing a single parameter.
             var query = context.CreateQuery<Order>("GetOrdersByCity")
                 .AddQueryOption("city", string.Format("'{0}'", city))
                 .Expand("Order_Details");
 
-            // Execute the service operation that returns 
+            // Execute the service operation that returns
             // all orders for the specified city.
-            var results = 
+            var results =
                 query.BeginExecute(OnAsyncQueryExecutionComplete, query);
             //</snippetCallServiceOperationQueryAsync>
         }
@@ -2068,7 +2068,7 @@ namespace NorthwindClient
         {
             // Get the query back from the stored state.
             var query = result.AsyncState as DataServiceQuery<Order>;
-            
+
             try
             {
                 // Complete the exection and write out the results.
@@ -2090,7 +2090,7 @@ namespace NorthwindClient
                 Console.WriteLine(response.Error.Message);
             }
         }
-        //</snippetOnAsyncQueryExecutionComplete>    
+        //</snippetOnAsyncQueryExecutionComplete>
 
     public static void CallServiceOperationAsync()
         {
@@ -2098,7 +2098,7 @@ namespace NorthwindClient
             // Define the service operation query parameter.
             string city = "London";
 
-            // Define the query URI to access the service operation with specific 
+            // Define the query URI to access the service operation with specific
             // query options relative to the service URI.
             string queryString = string.Format("GetOrdersByCity?city='{0}'", city)
                 + "&$orderby=ShippedDate desc"
@@ -2107,20 +2107,20 @@ namespace NorthwindClient
             // Create the DataServiceContext using the service URI.
             NorthwindEntities context = new NorthwindEntities(svcUri2);
 
-            // Execute the service operation that returns 
+            // Execute the service operation that returns
             // all orders for the specified city.
             var results = context.BeginExecute<Order>(
                 new Uri(queryString, UriKind.Relative),
                 OnAsyncExecutionComplete, context);
             //</snippetCallServiceOperationAsync>
         }
-    
+
         //<snippetOnAsyncExecutionComplete>
         private static void OnAsyncExecutionComplete(IAsyncResult result)
         {
             // Get the context back from the stored state.
             var context = result.AsyncState as NorthwindEntities;
-            
+
             try
             {
                 // Complete the exection and write out the results.

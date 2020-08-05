@@ -1,5 +1,6 @@
 ---
 title: Create a WCF data service in Visual Studio
+description: Learn how to create a sample data service that uses WCF Data Services to expose an OData feed based on a sample database.
 ms.date: 08/24/2018
 dev_langs:
   - "csharp"

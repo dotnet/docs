@@ -53,4 +53,4 @@ The `GetValue` method of the `My.Computer.Registry` object can be used to read v
 
 - <xref:Microsoft.VisualBasic.MyServices.RegistryProxy>
 - <xref:Microsoft.Win32.RegistryHive>
-- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)
+- [Reading from and Writing to the Registry](reading-from-and-writing-to-the-registry.md)

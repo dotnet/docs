@@ -9,11 +9,11 @@ ms.assetid: 172cd5a8-a333-4c81-9456-fafccc19f382
 # Animation and Timing System Overview
 This topic describes how the timing system uses the animation, <xref:System.Windows.Media.Animation.Timeline>, and <xref:System.Windows.Media.Animation.Clock> classes to animate properties.  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  To understand this topic, you should be able to use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations to animate properties, as described in the [Animation Overview](animation-overview.md). It also helps to be familiar with dependency properties; for more information, see the [Dependency Properties Overview](../advanced/dependency-properties-overview.md).  
   
-<a name="timelinesandclocks"></a>   
+<a name="timelinesandclocks"></a>
 ## Timelines and Clocks  
  The [Animation Overview](animation-overview.md) described how a <xref:System.Windows.Media.Animation.Timeline> represents a segment of time, and an animation is a type of <xref:System.Windows.Media.Animation.Timeline> that produces output values. By itself, a <xref:System.Windows.Media.Animation.Timeline>, doesn't do anything other than just describe a segment of time. It's the timeline's <xref:System.Windows.Media.Animation.Clock> object that does the real work. Likewise, animation doesn't actually animate properties: an animation class describes how output values should be calculated, but it’s the <xref:System.Windows.Media.Animation.Clock> that was created for the animation that drives the animation output and applies it to properties.  
   
@@ -34,7 +34,7 @@ This topic describes how the timing system uses the animation, <xref:System.Wind
   
  In performance-intensive scenarios, such as animating large numbers of similar objects, managing your own <xref:System.Windows.Media.Animation.Clock> use can provide performance benefits.  
   
-<a name="timemanager"></a>   
+<a name="timemanager"></a>
 ## Clocks and the Time Manager  
  When you animate objects in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], it’s the time manager that manages the <xref:System.Windows.Media.MediaPlayer.Clock%2A> objects created for your timelines. The time manager is the root of a tree of <xref:System.Windows.Media.MediaPlayer.Clock%2A> objects and controls the flow of time in that tree.  A time manager is automatically created for each [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application and is invisible to the application developer. The time manager "ticks" many times per second; the actual number of ticks that occur each second varies depending on available system resources. During each one of these ticks, the time manager computes the state of all <xref:System.Windows.Media.Animation.ClockState.Active> <xref:System.Windows.Media.Animation.Clock> objects in the timing tree.  
   
@@ -70,7 +70,7 @@ A composition chain
   
  For more information about timing events, see the [Timing Events Overview](timing-events-overview.md).  
   
-<a name="currentvaluesbasevaluesofproperties"></a>   
+<a name="currentvaluesbasevaluesofproperties"></a>
 ## Current Values and Base Values of Properties  
  An animatable property can have two values: a base value and a current value. When you set property using its CLR accessor or the <xref:System.Windows.DependencyObject.SetValue%2A> method, you set its base value. When a property is not animated, its base and current values are the same.  
   

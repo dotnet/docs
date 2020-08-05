@@ -33,7 +33,7 @@ coclass ComCallUnmarshal {
 |`IMarshal`|Provides methods for creating, initializing, and managing a proxy in a client process.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.idl  
   
@@ -43,4 +43,4 @@ coclass ComCallUnmarshal {
   
 ## See also
 
-- [Hosting Coclasses](../../../../docs/framework/unmanaged-api/hosting/hosting-coclasses.md)
+- [Hosting Coclasses](hosting-coclasses.md)

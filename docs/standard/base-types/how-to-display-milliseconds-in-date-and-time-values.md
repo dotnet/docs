@@ -1,5 +1,6 @@
 ---
 title: "How to: Display Milliseconds in Date and Time Values"
+description: In this article, learn how to include a date and time's millisecond component in formatted date and time strings in .NET.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -46,4 +47,4 @@ The default date and time formatting methods, such as <xref:System.DateTime.ToSt
 ## See also
 
 - <xref:System.Globalization.DateTimeFormatInfo>
-- [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md)
+- [Custom Date and Time Format Strings](custom-date-and-time-format-strings.md)

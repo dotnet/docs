@@ -44,7 +44,7 @@ namespace VSMCustomControl
 
         //<SnippetEntireValueChangedCallback>
         //<SnippetValueChangedCallback>
-        private static void ValueChangedCallback(DependencyObject obj, 
+        private static void ValueChangedCallback(DependencyObject obj,
             DependencyPropertyChangedEventArgs args)
         {
             NumericUpDown ctl = (NumericUpDown)obj;
@@ -57,7 +57,7 @@ namespace VSMCustomControl
 
             // Call OnValueChanged to raise the ValueChanged event.
             ctl.OnValueChanged(
-                new ValueChangedEventArgs(NumericUpDown.ValueChangedEvent, 
+                new ValueChangedEventArgs(NumericUpDown.ValueChangedEvent,
                     newValue));
             //<SnippetValueChangedCallbackEnd>
         }

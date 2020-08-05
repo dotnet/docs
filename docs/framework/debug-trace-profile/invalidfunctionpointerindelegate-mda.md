@@ -1,5 +1,6 @@
 ---
 title: "invalidFunctionPointerInDelegate MDA"
+description: Review the invalidFunctionPointerInDelegate managed debugging assistant (MDA), which is invoked if an invalid function pointer is passed in to make a delegate.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "invalidFunctionPointerInDelegate MDA"

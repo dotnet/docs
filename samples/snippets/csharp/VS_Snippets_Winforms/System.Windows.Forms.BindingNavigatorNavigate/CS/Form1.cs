@@ -53,11 +53,11 @@ namespace System.Windows.Forms.BindingSourceCurrent
             // Convert the xml string to bytes and load into a memory stream.
             byte[] xmlBytes = Encoding.UTF8.GetBytes(xml);
             MemoryStream stream = new MemoryStream(xmlBytes, false);
-            
+
             // Create a DataSet and load the xml into it.
             DataSet set = new DataSet();
             set.ReadXml(stream);
-           
+
             // Set the DataSource to the DataSet, and the DataMember
             // to state.
             bindingSource1.DataSource = set;
@@ -67,7 +67,7 @@ namespace System.Windows.Forms.BindingSourceCurrent
             textBox2.DataBindings.Add("Text", bindingSource1, "capital");
         }
         //</snippet2>
-        
+
         [STAThread]
         public static void Main()
         {
@@ -78,7 +78,7 @@ namespace System.Windows.Forms.BindingSourceCurrent
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = 
+            System.ComponentModel.ComponentResourceManager resources =
                 new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -99,9 +99,9 @@ namespace System.Windows.Forms.BindingSourceCurrent
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // bindingNavigator1
-            // 
+            //
             this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
             this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
             this.bindingNavigator1.CountItemFormat = "of {0}";
@@ -127,90 +127,90 @@ namespace System.Windows.Forms.BindingSourceCurrent
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
             this.bindingNavigator1.TabIndex = 2;
             this.bindingNavigator1.Text = "bindingNavigator1";
-            // 
+            //
             // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.Image = 
+            //
+            this.bindingNavigatorAddNewItem.Image =
                 ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
+            //
             // bindingNavigatorCountItem
-            // 
+            //
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
+            //
             // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.Image = 
+            //
+            this.bindingNavigatorDeleteItem.Image =
                 ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
+            //
             // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.Image = 
+            //
+            this.bindingNavigatorMoveFirstItem.Image =
                 ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
+            //
             // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.Image = 
+            //
+            this.bindingNavigatorMovePreviousItem.Image =
                 ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
+            //
             // bindingNavigatorSeparator
-            // 
+            //
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            // 
+            //
             // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.DisplayStyle = 
+            //
+            this.bindingNavigatorPositionItem.DisplayStyle =
                 System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText;
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 25);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
+            //
             // bindingNavigatorSeparator1
-            // 
+            //
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-           
+
 	    // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.Image = 
+            //
+            this.bindingNavigatorMoveNextItem.Image =
                 ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
+            //
             // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.Image = 
+            //
+            this.bindingNavigatorMoveLastItem.Image =
                 ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
+            //
             // bindingNavigatorSeparator2
-            // 
+            //
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            // 
+            //
             // textBox1
-            // 
+            //
             this.textBox1.Location = new System.Drawing.Point(46, 64);
             this.textBox1.Name = "textBox1";
             this.textBox1.TabIndex = 3;
-            // 
+            //
             // textBox2
-            // 
+            //
             this.textBox2.Location = new System.Drawing.Point(46, 104);
             this.textBox2.Name = "textBox2";
             this.textBox2.TabIndex = 4;
-            // 
+            //
             // Form1
-            // 
+            //
             this.ClientSize = new System.Drawing.Size(292, 266);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);

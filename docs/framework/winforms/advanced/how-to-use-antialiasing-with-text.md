@@ -20,7 +20,7 @@ ms.assetid: 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
   
  [!code-csharp[System.Drawing.FontsAndText#21](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.FontsAndText/CS/Class1.cs#21)]
  [!code-vb[System.Drawing.FontsAndText#21](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.FontsAndText/VB/Class1.vb#21)]  
- 
+
  The following illustration shows the output of the example code:  
   
  ![Screenshot that shows text with two different quality settings.](./media/how-to-use-antialiasing-with-text/antialiasing-text-quality-settings.png)  

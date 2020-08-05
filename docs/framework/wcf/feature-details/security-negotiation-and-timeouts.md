@@ -9,4 +9,4 @@ When clients and services authenticate, Windows Communication Foundation (WCF) s
 ## See also
 
 - <xref:System.ServiceModel.Channels.LocalServiceSecuritySettings>
-- [How to: Set a Max Clock Skew](../../../../docs/framework/wcf/feature-details/how-to-set-a-max-clock-skew.md)
+- [How to: Set a Max Clock Skew](how-to-set-a-max-clock-skew.md)

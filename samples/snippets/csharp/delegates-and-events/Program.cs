@@ -12,9 +12,9 @@ namespace DelegatesAndEvents
             // <SnippetFileLogger>
             var file = new FileLogger("log.txt");
             // </SnippetFileLogger>
-            
+
             Logger.LogMessage(Severity.Warning, "Console", "This is a warning message");
-            
+
             Logger.LogMessage(Severity.Information, "Console", "Information message one");
             Logger.LogLevel = Severity.Information;
 

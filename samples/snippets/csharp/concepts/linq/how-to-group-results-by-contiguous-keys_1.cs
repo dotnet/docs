@@ -17,7 +17,7 @@ namespace ChunkIt
             // Flag to signal end of source sequence.
             const bool noMoreSourceElements = true;
 
-            // Auto-generated iterator for the source array.       
+            // Auto-generated iterator for the source array.
             var enumerator = source.GetEnumerator();
 
             // Move to the first element in the source sequence.
@@ -42,7 +42,7 @@ namespace ChunkIt
                 // returned only when the client code foreach's over this chunk. See Chunk.GetEnumerator for more info.
                 yield return current;
 
-                // Check to see whether (a) the chunk has made a copy of all its source elements or 
+                // Check to see whether (a) the chunk has made a copy of all its source elements or
                 // (b) the iterator has reached the end of the source sequence. If the caller uses an inner
                 // foreach loop to iterate the chunk items, and that loop ran to completion,
                 // then the Chunk.GetEnumerator method will already have made
@@ -56,11 +56,11 @@ namespace ChunkIt
             }
         }
 
-        // A Chunk is a contiguous group of one or more source elements that have the same key. A Chunk 
+        // A Chunk is a contiguous group of one or more source elements that have the same key. A Chunk
         // has a key and a list of ChunkItem objects, which are copies of the elements in the source sequence.
         class Chunk<TKey, TSource> : IGrouping<TKey, TSource>
         {
-            // INVARIANT: DoneCopyingChunk == true || 
+            // INVARIANT: DoneCopyingChunk == true ||
             //   (predicate != null && predicate(enumerator.Current) && current.Value == enumerator.Current)
 
             // A Chunk has a linked list of ChunkItems, which represent the elements in the current chunk. Each ChunkItem
@@ -114,7 +114,7 @@ namespace ChunkIt
                 m_Lock = new object();
             }
 
-            // Indicates that all chunk elements have been copied to the list of ChunkItems, 
+            // Indicates that all chunk elements have been copied to the list of ChunkItems,
             // and the source enumerator is either at the end, or else on an element with a new key.
             // the tail of the linked list is set to null in the CopyNextChunkElement method if the
             // key of the next element does not match the current chunk's key, or there are no more elements in the source.
@@ -146,7 +146,7 @@ namespace ChunkIt
             }
 
             // Called after the end of the last chunk was reached. It first checks whether
-            // there are more elements in the source sequence. If there are, it 
+            // there are more elements in the source sequence. If there are, it
             // Returns true if enumerator for this chunk was exhausted.
             internal bool CopyAllChunkElements()
             {
@@ -185,7 +185,7 @@ namespace ChunkIt
                     // Yield the current item in the list.
                     yield return current.Value;
 
-                    // Copy the next item from the source sequence, 
+                    // Copy the next item from the source sequence,
                     // if we are at the end of our local list.
                     lock (m_Lock)
                     {

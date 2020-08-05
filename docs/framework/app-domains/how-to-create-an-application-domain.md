@@ -1,5 +1,6 @@
 ---
 title: "How to: Create an Application Domain"
+description: Review how to create an application domain in .NET. You can create an application domain to load assemblies to manage personally, or create one to execute code.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

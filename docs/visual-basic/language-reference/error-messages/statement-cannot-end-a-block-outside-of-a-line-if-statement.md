@@ -19,4 +19,4 @@ A single-line `If` statement contains several statements separated by colons (:)
   
 ## See also
 
-- [If...Then...Else Statement](../../../visual-basic/language-reference/statements/if-then-else-statement.md)
+- [If...Then...Else Statement](../statements/if-then-else-statement.md)

@@ -3,22 +3,22 @@ Option Strict On
 
 ' <Snippet17>
 Imports System.Globalization
-Imports System.Threading 
+Imports System.Threading
 
 Module Example
-   Public Sub Main()
-      Dim cultureNames() As String = { "en-US", "fr-FR", "es-MX", "de-DE" }
-      Dim dateToFormat As Date = #5/28/2012 11:30AM#
-      
-      For Each cultureName In cultureNames
-         ' Change the current thread culture.
-         Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName)
-         Console.WriteLine("The current culture is {0}", 
-                           Thread.CurrentThread.CurrentCulture.Name)
-         Console.WriteLine(dateToFormat.ToString("F"))
-         Console.WriteLine()
-      Next                  
-   End Sub
+    Public Sub Main()
+        Dim cultureNames() As String = {"en-US", "fr-FR", "es-MX", "de-DE"}
+        Dim dateToFormat As Date = #5/28/2012 11:30AM#
+
+        For Each cultureName In cultureNames
+            ' Change the current thread culture.
+            Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureName)
+            Console.WriteLine("The current culture is {0}",
+                              Thread.CurrentThread.CurrentCulture.Name)
+            Console.WriteLine(dateToFormat.ToString("F"))
+            Console.WriteLine()
+        Next
+    End Sub
 End Module
 ' The example displays the following output:
 '       The current culture is en-US

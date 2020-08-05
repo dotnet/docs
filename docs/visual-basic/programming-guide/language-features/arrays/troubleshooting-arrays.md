@@ -16,7 +16,7 @@ This page lists some common problems that can occur when working with arrays.
 ## Compilation Errors Declaring and Initializing an Array  
  Compilation errors can arise from misunderstanding of the rules for declaring, creating, and initializing arrays. The most common causes of errors are the following:  
   
-- Supplying a [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) clause after specifying dimension lengths in the array variable declaration. The following code lines show invalid declarations of this type.  
+- Supplying a [New Operator](../../../language-reference/operators/new-operator.md) clause after specifying dimension lengths in the array variable declaration. The following code lines show invalid declarations of this type.  
   
      `Dim INVALIDsingleDimByteArray(2) As Byte = New Byte()`  
   
@@ -53,5 +53,5 @@ This page lists some common problems that can occur when working with arrays.
   
 ## See also
 
-- [Arrays](../../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [How to: Initialize an Array Variable in Visual Basic](../../../../visual-basic/programming-guide/language-features/arrays/how-to-initialize-an-array-variable.md)
+- [Arrays](index.md)
+- [How to: Initialize an Array Variable in Visual Basic](how-to-initialize-an-array-variable.md)

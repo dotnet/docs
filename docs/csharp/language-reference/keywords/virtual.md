@@ -13,7 +13,7 @@ ms.assetid: 5da9abae-bc1e-434f-8bea-3601b8dcb3b2
 The `virtual` keyword is used to modify a method, property, indexer, or event declaration and allow for it to be overridden in a derived class. For example, this method can be overridden by any class that inherits it:
 
 ```csharp
-public virtual double Area() 
+public virtual double Area()
 {
     return x * y;
 }

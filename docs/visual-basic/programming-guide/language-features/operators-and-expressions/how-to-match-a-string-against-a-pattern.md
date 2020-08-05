@@ -16,7 +16,7 @@ ms.assetid: 19a83804-b5af-4739-928b-ac93e64e457f
 ---
 # How to: Match a String against a Pattern (Visual Basic)
 
-If you want to find out if an expression of the [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md) satisfies a pattern, then you can use the [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md).
+If you want to find out if an expression of the [String Data Type](../../../language-reference/data-types/string-data-type.md) satisfies a pattern, then you can use the [Like Operator](../../../language-reference/operators/like-operator.md).
 
 `Like` takes two operands. The left operand is a string expression, and the right operand is a string containing the pattern to be used for matching. `Like` returns a `Boolean` value indicating whether the string expression satisfies the pattern.
 
@@ -24,7 +24,7 @@ You can match each character in the string expression against a specific charact
 
 ## To match a character in the string expression against a specific character
 
-Put the specific character directly in the pattern string. Certain special characters must be enclosed in brackets (`[ ]`). For more information, see [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md).
+Put the specific character directly in the pattern string. Certain special characters must be enclosed in brackets (`[ ]`). For more information, see [Like Operator](../../../language-reference/operators/like-operator.md).
 
 The following example tests whether `myString` consists exactly of the single character `H`.
 
@@ -64,7 +64,7 @@ Note that this match is case-sensitive.
 
 ### To match a character in the string expression against a list of characters or no character
 
-1. Call the `Like` operator twice on the same string expression, and connect the two calls with either the [Or Operator](../../../../visual-basic/language-reference/operators/or-operator.md) or the [OrElse Operator](../../../../visual-basic/language-reference/operators/orelse-operator.md).
+1. Call the `Like` operator twice on the same string expression, and connect the two calls with either the [Or Operator](../../../language-reference/operators/or-operator.md) or the [OrElse Operator](../../../language-reference/operators/orelse-operator.md).
 
 2. In the pattern string for the first `Like` clause, include the character list, enclosed in brackets (`[ ]`).
 
@@ -76,7 +76,7 @@ Note that this match is case-sensitive.
 
 ## See also
 
-- [Comparison Operators](../../../../visual-basic/language-reference/operators/comparison-operators.md)
-- [Operators and Expressions](../../../../visual-basic/programming-guide/language-features/operators-and-expressions/index.md)
-- [Like Operator](../../../../visual-basic/language-reference/operators/like-operator.md)
-- [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)
+- [Comparison Operators](../../../language-reference/operators/comparison-operators.md)
+- [Operators and Expressions](index.md)
+- [Like Operator](../../../language-reference/operators/like-operator.md)
+- [String Data Type](../../../language-reference/data-types/string-data-type.md)

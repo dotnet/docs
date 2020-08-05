@@ -10,7 +10,7 @@ This section covers the creation of Docker images for ASP.NET Core gRPC applicat
 
 ## Microsoft base images for ASP.NET Core applications
 
-Microsoft provides a range of base images for building and running .NET Core applications. To create an ASP.NET Core 3.0 image, you use two base images: 
+Microsoft provides a range of base images for building and running .NET Core applications. To create an ASP.NET Core 3.0 image, you use two base images:
 
 - An SDK image to build and publish the application.
 - A runtime image for deployment.
@@ -128,7 +128,7 @@ To run the image in your local Docker instance, use the `docker run` command.
 docker run -ti -p 5000:80 stockdata
 ```
 
-The `-ti` flag connects your current terminal to the container's terminal, and runs in interactive mode. The `-p 5000:80` publishes (links) port 80 on the container to port 80 on the localhost network interface.
+The `-ti` flag connects your current terminal to the container's terminal, and runs in interactive mode. The `-p 5000:80` publishes (links) port 80 on the container to port 5000 on the localhost network interface.
 
 ## Push the image to a registry
 

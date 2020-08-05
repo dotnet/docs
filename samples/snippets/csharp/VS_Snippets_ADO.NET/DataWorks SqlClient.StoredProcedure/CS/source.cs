@@ -29,7 +29,7 @@ class Program
             parameter.Direction = ParameterDirection.Input;
             parameter.Value = categoryName;
 
-            // Add the parameter to the Parameters collection. 
+            // Add the parameter to the Parameters collection.
             command.Parameters.Add(parameter);
 
             // Open the connection and execute the reader.

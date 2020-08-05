@@ -7,8 +7,8 @@ Imports System.Threading.Tasks.Dataflow
 ' and finds all reversed words that appear in that book.
 Module DataflowReversedWords
 
-   Sub Main()
-   End Sub
+    Sub Main()
+    End Sub
 
 End Module
 ' </snippet2> 

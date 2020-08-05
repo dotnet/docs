@@ -17,10 +17,11 @@ public class Disposable : IDisposable
       // Suppress finalization.
       GC.SuppressFinalize(this);
    }
-   // </Snippet7> 
+   // </Snippet7>
 
    // <Snippet8>
    protected virtual void Dispose(bool disposing)
+   {
+   }
    // </Snippet8>
-   {}
 }

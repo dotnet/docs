@@ -4,12 +4,12 @@ using System.Windows.Forms;
 
 public class DataGridViewObjectBinding : Form
 {
-    // These declarations and the Main() and New() methods 
-    // below can be replaced with designer-generated code. 
+    // These declarations and the Main() and New() methods
+    // below can be replaced with designer-generated code.
     private Button invoiceButton = new Button();
     private DataGridView dataGridView1 = new DataGridView();
 
-    // Entry point code. 
+    // Entry point code.
     [STAThreadAttribute()]
     public static void Main()
     {
@@ -41,13 +41,13 @@ public class DataGridViewObjectBinding : Form
         customers.Add(new Customer("Pris"));
 
         // Initialize and bind the DataGridView.
-        this.dataGridView1.SelectionMode = 
+        this.dataGridView1.SelectionMode =
             DataGridViewSelectionMode.FullRowSelect;
         this.dataGridView1.AutoGenerateColumns = true;
         this.dataGridView1.DataSource = customers;
     }
 
-    // Calls the SendInvoice() method for the Customer 
+    // Calls the SendInvoice() method for the Customer
     // object bound to each selected row.
     //<Snippet10>
     void invoiceButton_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ public class Customer
         {
             return nameValue;
         }
-        set 
+        set
         {
             nameValue = value;
         }

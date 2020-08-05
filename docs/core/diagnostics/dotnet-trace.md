@@ -34,7 +34,7 @@ The `dotnet-trace` tool:
 
 - **`--version`**
 
-  Displays the version of the dotnet-counters utility.
+  Displays the version of the dotnet-trace utility.
 
 - **`-h|--help`**
 

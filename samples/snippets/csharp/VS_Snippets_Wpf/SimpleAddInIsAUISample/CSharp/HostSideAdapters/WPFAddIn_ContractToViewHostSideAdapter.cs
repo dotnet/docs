@@ -27,7 +27,7 @@ namespace HostSideAdapters
             // host application uses the add-in
             this.wpfAddInContractHandle = new ContractHandle(wpfAddInContract);
 
-            // Convert the INativeHandleContract for the add-in UI that was passed 
+            // Convert the INativeHandleContract for the add-in UI that was passed
             // from the add-in side of the isolation boundary to a FrameworkElement
             string aqn = typeof(INativeHandleContract).AssemblyQualifiedName;
             INativeHandleContract inhc = (INativeHandleContract)wpfAddInContract.QueryContract(aqn);

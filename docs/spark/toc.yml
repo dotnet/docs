@@ -21,8 +21,14 @@
     href: tutorials/batch-processing.md
   - name: Structured streaming
     href: tutorials/streaming.md
+  - name: Sentiment analysis
+    href: tutorials/ml-sentiment-analysis.md
 - name: How-to guides
   items:
+  - name: Broadcast guide
+    href: how-to-guides/broadcast-guide.md
+  - name: UDF guide
+    href: how-to-guides/udf-guide.md
   - name: Debug your application
     href: how-to-guides/debug.md
   - name: Submit jobs to HDInsight
@@ -35,6 +41,9 @@
     href: how-to-guides/ubuntu-instructions.md    
   - name: Build application on Windows
     href: how-to-guides/windows-instructions.md
+  - name: Install interactive notebooks on Azure HDInsight
+    href: how-to-guides/hdinsight-notebook-installation.md
+
 - name: Reference
   items:
   - name: API Reference

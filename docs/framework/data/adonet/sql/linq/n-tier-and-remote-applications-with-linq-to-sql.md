@@ -17,7 +17,7 @@ You can create n-tier or multitier applications that use [!INCLUDE[vbtecdlinq](.
 
 - [LINQ to SQL N-Tier with ASP.NET](linq-to-sql-n-tier-with-aspnet.md)
 
-- [LINQ to SQL N-Tier with Web Services](linq-to-sql-n-tier-with-web-services.md) 
+- [LINQ to SQL N-Tier with Web Services](linq-to-sql-n-tier-with-web-services.md)
 
 - [Implementing N-Tier Business Logic](implementing-business-logic-linq-to-sql.md)
 

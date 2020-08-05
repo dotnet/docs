@@ -41,7 +41,7 @@ namespace SDKSample {
             break;
         }
         //<SnippetDPProps>
-        //<SnippetDPGetMetadataSingle>        
+        //<SnippetDPGetMetadataSingle>
         pm = dp.GetMetadata(dp.OwnerType);
         //</SnippetDPGetMetadataSingle>
         MetadataClass.Text = pm.GetType().Name;
@@ -60,9 +60,9 @@ namespace SDKSample {
             Inherits.Text = (fpm.Inherits) ? "Yes" : "No";
             IsDataBindingAllowed.Text = (fpm.IsDataBindingAllowed) ? "Yes" : "No";
             BindsTwoWayByDefault.Text = (fpm.BindsTwoWayByDefault) ? "Yes" : "No";
-        }         
+        }
         //</SnippetFPMProperties>
-        else 
+        else
         {
             AffectsArrange.Text = "N/A";
             AffectsMeasure.Text = "N/A";

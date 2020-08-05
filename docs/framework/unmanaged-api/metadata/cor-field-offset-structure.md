@@ -35,10 +35,10 @@ typedef struct COR_FIELD_OFFSET {
 |`ulOffset`|The field's offset within its class.|  
   
 ## Remarks  
- [IMetaDataImport::GetClassLayout](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-getclasslayout-method.md) and [IMetaDataEmit::SetClassLayout](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-setclasslayout-method.md) methods take a parameter of type `COR_FIELD_OFFSET`.  
+ [IMetaDataImport::GetClassLayout](imetadataimport-getclasslayout-method.md) and [IMetaDataEmit::SetClassLayout](imetadataemit-setclasslayout-method.md) methods take a parameter of type `COR_FIELD_OFFSET`.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorHdr.h, CorProf.idl  
   
@@ -46,6 +46,6 @@ typedef struct COR_FIELD_OFFSET {
   
 ## See also
 
-- [Metadata Structures](../../../../docs/framework/unmanaged-api/metadata/metadata-structures.md)
-- [IMetaDataEmit Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-interface.md)
-- [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md)
+- [Metadata Structures](metadata-structures.md)
+- [IMetaDataEmit Interface](imetadataemit-interface.md)
+- [IMetaDataImport Interface](imetadataimport-interface.md)

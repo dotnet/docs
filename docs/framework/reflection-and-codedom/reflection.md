@@ -61,7 +61,7 @@ For example, when you use the C# `typeof` operator (`GetType` in Visual Basic) t
   
 These runtime classes are `internal` (`Friend` in Visual Basic). They are not documented separately from their base classes, because their behavior is described by the base class documentation.  
   
-<a name="related_topics"></a>   
+<a name="related_topics"></a>
 
 ## Related Topics  
   

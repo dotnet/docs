@@ -19,14 +19,14 @@ namespace SDKSample
             TextBox myTextBox = new TextBox();
 
             // Begin the change block. Once BeginChange() is called
-            // no text content or selection change events will be raised 
+            // no text content or selection change events will be raised
             // until EndChange is called. Also, all edits made within
             // a BeginChange/EndChange block are wraped in a single undo block.
             myTextBox.BeginChange();
 
             // Put some initial text in the TextBox.
             myTextBox.Text = "Initial text in TextBox";
-            
+
             // Make other changes if desired...
 
             // Whenever BeginChange() is called EndChange() must also be

@@ -22,7 +22,7 @@ namespace SDKSample
             //<SnippetDelegateDefinition>
             popup1.CustomPopupPlacementCallback =
                 new CustomPopupPlacementCallback(placePopup);
-            //</SnippetDelegateDefinition> 
+            //</SnippetDelegateDefinition>
         }
 
         private void onClick(object sender, RoutedEventArgs args)

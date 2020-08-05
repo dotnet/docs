@@ -1,9 +1,9 @@
 ﻿/*
    This program implments the remote method which will be called by the
-   client.   
+   client.
 */
 using System;
-namespace RemotingSamples 
+namespace RemotingSamples
 {
    public class HelloServer : MarshalByRefObject
    {

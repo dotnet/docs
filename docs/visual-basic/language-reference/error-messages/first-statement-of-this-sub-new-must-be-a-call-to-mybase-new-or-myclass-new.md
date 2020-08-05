@@ -23,4 +23,4 @@ First statement of this 'Sub New' must be a call to 'MyBase.New' or 'MyClass.New
   
 ## See also
 
-- [Inheritance Basics](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)
+- [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md)

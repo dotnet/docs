@@ -40,7 +40,7 @@ namespace operators
                 byte[] bytes = { 1, 2, 3 };
                 fixed (byte* pointerToFirst = &bytes[0])
                 {
-                    // The address stored in pointerToFirst 
+                    // The address stored in pointerToFirst
                     // is valid only inside this fixed statement block.
                 }
             }

@@ -1,5 +1,6 @@
 ---
 title: "Isolated Storage"
+description: Explore isolated storage, which is a data storage mechanism that provides isolation & safety by defining standardized ways of associating code with saved data.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -101,6 +102,97 @@ The allowed usage specified by <xref:System.Security.Permissions.IsolatedStorage
 |<xref:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser>|Isolation by user. Typically, only administrative or debugging tools use this level of permission.|Access with this permission allows code to view or delete any of a user's isolated storage files or directories (regardless of assembly isolation). Risks include, but are not limited to, leaking information and data loss.|
 |<xref:System.Security.Permissions.IsolatedStorageContainment.UnrestrictedIsolatedStorage>|Isolation by all users, domains, and assemblies. Typically, only administrative or debugging tools use this level of permission.|This permission creates the potential for a total compromise of all isolated stores for all users.|
 
+## Safety of isolated storage components with regard to untrusted data
+
+__This section applies to the following frameworks:__
+
+- .NET Framework (all versions)
+- .NET Core 2.1+
+- .NET 5.0+
+
+The .NET Framework and .NET Core offer [isolated storage](/dotnet/standard/io/isolated-storage) as a mechanism to persist data for a user, an application, or a component. This is a legacy component primarily designed for now-deprecated Code Access Security scenarios.
+
+Various isolated storage APIs and tools can be used to read data across trust boundaries. For example, reading data from a machine-wide scope can aggregate data from other, possibly less-trusted user accounts on the machine. Components or applications which read from machine-wide isolated storage scopes should be aware of the consequences of reading this data.
+
+### Security-sensitive APIs which can read from the machine-wide scope
+
+Components or applications that call any of the following APIs read from the machine-wide scope:
+
+* [IsolatedStorageFile.GetEnumerator](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getenumerator), passing a scope that includes the IsolatedStorageScope.Machine flag
+* [IsolatedStorageFile.GetMachineStoreForApplication](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforapplication)
+* [IsolatedStorageFile.GetMachineStoreForAssembly](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestoreforassembly)
+* [IsolatedStorageFile.GetMachineStoreForDomain](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getmachinestorefordomain)
+* [IsolatedStorageFile.GetStore](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.getstore), passing a scope that includes the IsolatedStorageScope.Machine flag
+* [IsolatedStorageFile.Remove](/dotnet/api/system.io.isolatedstorage.isolatedstoragefile.remove), passing a scope that includes the `IsolatedStorageScope.Machine` flag
+
+The [isolated storage tool](/dotnet/framework/tools/storeadm-exe-isolated-storage-tool) `storeadm.exe` is impacted if called with the `/machine` switch, as shown in the following code:
+
+```txt
+storeadm.exe /machine [any-other-switches]
+```
+
+The isolated storage tool is provided as part of Visual Studio and the .NET Framework SDK.
+
+If the application doesn't involve calls to the preceding APIs, or if the workflow doesn't involve calling `storeadm.exe` in this manner, this document doesn't apply.
+
+### Impact in multi-user environments
+
+As mentioned previously, the security impact from these APIs results from data written from one trust environment is read from a different trust environment. Isolated storage generally uses one of three locations to read and write data:
+
+1. `%LOCALAPPDATA%\IsolatedStorage\`: For example, `C:\Users\<username>\AppData\Local\IsolatedStorage\`, for `User` scope.
+2. `%APPDATA%\IsolatedStorage\`: For example, `C:\Users\<username>\AppData\Roaming\IsolatedStorage\`, for `User|Roaming` scope.
+3. `%PROGRAMDATA%\IsolatedStorage\`: For example, `C:\ProgramData\IsolatedStorage\`, for `Machine` scope.
+
+The first two locations are isolated per-user. Windows ensures that different user accounts on the same machine cannot access each other's user profile folders. Two different user accounts who use the `User` or `User|Roaming` stores will not see each other's data and cannot interfere with each other's data.
+
+The third location is shared across all user accounts on the machine. Different accounts can read from and write to this location, and they're able to see each other's data.
+
+The preceding paths may differ based on the version of Windows in use.
+
+Now consider a multi-user system with two registered users _Mallory_ and _Bob_. Mallory has the ability to access her user profile directory `C:\Users\Mallory\`, and she can access the shared machine-wide storage location `C:\ProgramData\IsolatedStorage\`. She cannot access Bob's user profile directory `C:\Users\Bob\`.
+
+If Mallory wishes to attack Bob, she might write data to the machine-wide storage location, then attempt to influence Bob into reading from the machine-wide store. When Bob runs an app that reads from this store, that app will operate on the data Mallory placed there, but from within the context of Bob's user account. The remainder of this document contemplates various attack vectors and what steps apps can do to minimize their risk to these attacks.
+
+__Note:__ In order for such an attack to take place, Mallory requires:
+
+* A user account on the machine.
+* The ability to place a file into a known location on the file system.
+* Knowledge that Bob will at some point run an app which attempts to read this data.
+
+These are not threat vectors which apply to standard single-user desktop environments like home PCs or single-employee enterprise workstations.
+
+#### Elevation of privilege
+
+An __elevation of privilege__ attack occurs when Bob's app reads Mallory's file and automatically tries to take some action based on the contents of that payload. Consider an app that reads the contents of a startup script from the machine-wide store and passes those contents to `Process.Start`. If Mallory can place a malicious script inside the machine-wide store, when Bob launches his app:
+
+* His app parses and launches Mallory's malicious script _under the context of Bob's user profile_.
+* Mallory gaines access to Bob's account on the local machine.
+
+#### Denial of service
+
+A __denial of service__ attack occurs when Bob's app reads Mallory's file and crashes or otherwise stops functioning correctly. Consider again the app mentioned previously, which attempts to parse a startup script from the machine-wide store. If Mallory can place a file with malformed contents inside the machine-wide store, she might:
+
+* Cause Bob's app to throw an exception early in the startup path.
+* Prevent the app from launching successfully because of the exception.
+
+She has then denied Bob the ability to launch the app under his own user account.
+
+#### Information disclosure
+
+An __information disclosure__ attack occurs when Mallory can trick Bob into disclosing the contents of a file that Mallory does not normally have access to. Consider that Bob has a secret file *C:\Users\Bob\secret.txt* that Mallory wants to read. She knows the path to this file, but she cannot read it because Windows forbids her from gaining access to Bob's user profile directory.
+
+Instead, Mallory places a hard link into the machine-wide store. This is a special kind of file that itself does not contain any contents, rather, it points to another file on disk. Attempting to read the hard link file will instead read the contents of the file targeted by the link. After creating the hard link, Mallory still cannot read the file contents because she does not have access to the target (`C:\Users\Bob\secret.txt`) of the link. However, Bob _does_ have access to this file.
+
+When Bob's app reads from the machine-wide store, it now inadvertently reads the contents of his `secret.txt` file, just as if the file itself had been present in the machine-wide store. When Bob's app exits, if it attempts to resave the file to the machine-wide store, it will end up placing an actual copy of the file in the *C:\ProgramData\IsolatedStorage\* directory. Since this directory is readable by any user on the machine, Mallory can now read the contents of the file.
+
+### Best practices to defend against these attacks
+
+__Important:__ If your environment has multiple mutually untrusted users, __do not__ call the API `IsolatedStorageFile.GetEnumerator(IsolatedStorageScope.Machine)` or invoke the tool `storeadm.exe /machine /list`. Both of these assume that they're operating on trusted data. If an attacker can seed a malicious payload in the machine-wide store, that payload can lead to an elevation of privilege attack under the context of the user who runs these commands.
+
+If operating in a multi-user environment, reconsider use of isolated storage features which target the _Machine_ scope. If an app must read data from a machine-wide location, prefer to read the data from a location that are writable only by admin accounts. The `%PROGRAMFILES%` directory and the `HKLM` registry hive are examples of locations which are writable by only administrators and readable by everyone. Data read from those locations is therefore considered trustworthy.
+
+If an app must use the _Machine_ scope in a multi-user environment, validate the contents of any file that you read from the machine-wide store. If the app deserializing object graphs from these files, consider using safer serializers like `XmlSerializer` instead of dangerous serializers like `BinaryFormatter` or `NetDataContractSerializer`. Use caution with deeply nested object graphs or object graphs which perform resource allocation based on the file contents.
+
 <a name="isolated_storage_locations"></a>
 
 ## Isolated Storage Locations
@@ -160,16 +252,16 @@ Many applications use a database to store and isolate data, in which case one or
 
 |Title|Description|
 |-----------|-----------------|
-|[Types of Isolation](../../../docs/standard/io/types-of-isolation.md)|Describes the different types of isolation.|
-|[How to: Obtain Stores for Isolated Storage](../../../docs/standard/io/how-to-obtain-stores-for-isolated-storage.md)|Provides an example of using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class to obtain a store isolated by user and assembly.|
-|[How to: Enumerate Stores for Isolated Storage](../../../docs/standard/io/how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> method to calculate the size of all isolated storage for the user.|
-|[How to: Delete Stores in Isolated Storage](../../../docs/standard/io/how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> method in two different ways to delete isolated stores.|
-|[How to: Anticipate Out-of-Space Conditions with Isolated Storage](../../../docs/standard/io/how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Shows how to measure the remaining space in an isolated store.|
-|[How to: Create Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-create-files-and-directories-in-isolated-storage.md)|Provides some examples of creating files and directories in an isolated store.|
-|[How to: Find Existing Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|
-|[How to: Read and Write to Files in Isolated Storage](../../../docs/standard/io/how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|
-|[How to: Delete Files and Directories in Isolated Storage](../../../docs/standard/io/how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|
-|[File and Stream I/O](../../../docs/standard/io/index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|
+|[Types of Isolation](types-of-isolation.md)|Describes the different types of isolation.|
+|[How to: Obtain Stores for Isolated Storage](how-to-obtain-stores-for-isolated-storage.md)|Provides an example of using the <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class to obtain a store isolated by user and assembly.|
+|[How to: Enumerate Stores for Isolated Storage](how-to-enumerate-stores-for-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetEnumerator%2A?displayProperty=nameWithType> method to calculate the size of all isolated storage for the user.|
+|[How to: Delete Stores in Isolated Storage](how-to-delete-stores-in-isolated-storage.md)|Shows how to use the <xref:System.IO.IsolatedStorage.IsolatedStorageFile.Remove%2A?displayProperty=nameWithType> method in two different ways to delete isolated stores.|
+|[How to: Anticipate Out-of-Space Conditions with Isolated Storage](how-to-anticipate-out-of-space-conditions-with-isolated-storage.md)|Shows how to measure the remaining space in an isolated store.|
+|[How to: Create Files and Directories in Isolated Storage](how-to-create-files-and-directories-in-isolated-storage.md)|Provides some examples of creating files and directories in an isolated store.|
+|[How to: Find Existing Files and Directories in Isolated Storage](how-to-find-existing-files-and-directories-in-isolated-storage.md)|Demonstrates how to read the directory structure and files in isolated storage.|
+|[How to: Read and Write to Files in Isolated Storage](how-to-read-and-write-to-files-in-isolated-storage.md)|Provides an example of writing a string to an isolated storage file and reading it back.|
+|[How to: Delete Files and Directories in Isolated Storage](how-to-delete-files-and-directories-in-isolated-storage.md)|Demonstrates how to delete isolated storage files and directories.|
+|[File and Stream I/O](index.md)|Explains how you can perform synchronous and asynchronous file and data stream access.|
 
 <a name="reference"></a>
 

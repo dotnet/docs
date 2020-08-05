@@ -16,13 +16,13 @@ public interface ICelsius
 public class Temperature : ICelsius, IFahrenheit
 {
    private decimal _value;
-   
+
    public Temperature(decimal value)
    {
       // We assume that this is the Celsius value.
       _value = value;
-   } 
-   
+   }
+
    decimal IFahrenheit.GetTemperature()
    {
       return _value * 9 / 5 + 32;
@@ -31,7 +31,7 @@ public class Temperature : ICelsius, IFahrenheit
    decimal ICelsius.GetTemperature()
    {
       return _value;
-   } 
+   }
 }
 public class Example
 {
@@ -40,9 +40,9 @@ public class Example
       Temperature temp = new Temperature(100.0m);
       ICelsius cTemp = temp;
       IFahrenheit fTemp = temp;
-      Console.WriteLine("Temperature in Celsius: {0} degrees", 
+      Console.WriteLine("Temperature in Celsius: {0} degrees",
                         cTemp.GetTemperature());
-      Console.WriteLine("Temperature in Fahrenheit: {0} degrees", 
+      Console.WriteLine("Temperature in Fahrenheit: {0} degrees",
                         fTemp.GetTemperature());
    }
 }

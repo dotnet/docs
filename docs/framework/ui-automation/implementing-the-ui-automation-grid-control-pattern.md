@@ -15,7 +15,7 @@ ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
   
  The <xref:System.Windows.Automation.GridPattern> control pattern is used to support controls that act as containers for a collection of child elements. The children of this element must implement <xref:System.Windows.Automation.Provider.IGridItemProvider> and be organized in a two-dimensional logical coordinate system that can be traversed by row and column. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Grid control pattern, note the following guidelines and conventions:  
   
@@ -36,7 +36,7 @@ Example of a Grid Control with Empty Coordinates
   
 - Use a <xref:System.Windows.Automation.AutomationFocusChangedEventHandler> to track traversal through the items or cells of a grid.  
   
-<a name="Required_Members_for_IGridProvider"></a>   
+<a name="Required_Members_for_IGridProvider"></a>
 ## Required Members for IGridProvider  
  The following properties and methods are required for implementing the IGridProvider interface.  
   
@@ -48,7 +48,7 @@ Example of a Grid Control with Empty Coordinates
   
  This control pattern has no associated events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

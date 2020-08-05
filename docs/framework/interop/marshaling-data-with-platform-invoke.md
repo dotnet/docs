@@ -1,5 +1,6 @@
 ---
 title: "Marshaling Data with Platform Invoke"
+description: Marshal data with platform invoke in .NET. See a list of data types used in Windows APIs and C-style functions, and find their .NET managed type equivalents.
 ms.date: "03/20/2019"
 dev_langs:
   - "cpp"

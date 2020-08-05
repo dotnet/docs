@@ -14,7 +14,7 @@
 [System.ServiceModel.ServiceContractAttribute(ConfigurationName="IHello")]
 public interface IHello
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IHello/SayHello", ReplyAction="http://tempuri.org/IHello/SayHelloResponse")]
     string SayHello(string name);
 }
@@ -28,31 +28,31 @@ public interface IHelloChannel : IHello, System.ServiceModel.IClientChannel
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class HelloClient : System.ServiceModel.ClientBase<IHello>, IHello
 {
-    
+
     public HelloClient()
     {
     }
-    
-    public HelloClient(string endpointConfigurationName) : 
+
+    public HelloClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public HelloClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public HelloClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public HelloClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public HelloClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public HelloClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public HelloClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public string SayHello(string name)
     {
         return base.Channel.SayHello(name);

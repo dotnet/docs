@@ -11,7 +11,7 @@ public class person
 {
 }
 // Compilation produces a compiler warning like the following:
-//    Naming1.cs(11,14): warning CS3005: Identifier 'person' differing 
+//    Naming1.cs(11,14): warning CS3005: Identifier 'person' differing
 //                       only in case is not CLS-compliant
 //    Naming1.cs(6,14): (Location of symbol related to previous warning)
 // </Snippet16>
@@ -21,13 +21,13 @@ public class Size
 {
    private double a1;
    private double a2;
-   
+
    public double Å
    {
        get { return a1; }
        set { a1 = value; }
-   }         
-         
+   }
+
    public double Å
    {
        get { return a2; }

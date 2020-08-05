@@ -1,5 +1,6 @@
 ---
 title: "Enum Design"
+description: Design for enums, which are a special kind of value type. Simple enums hold small, closed sets of choices. Flag enums support bitwise operations on enum values.
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -96,5 +97,5 @@ If you have real data about application incompatibilities caused by additions to
 
 ## See also
 
-- [Type Design Guidelines](../../../docs/standard/design-guidelines/type.md)
-- [Framework Design Guidelines](../../../docs/standard/design-guidelines/index.md)
+- [Type Design Guidelines](type.md)
+- [Framework Design Guidelines](index.md)

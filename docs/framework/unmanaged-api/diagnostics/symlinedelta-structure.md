@@ -40,4 +40,4 @@ typedef struct _SYMLINEDELTA
   
 ## See also
 
-- [Diagnostics Symbol Store Structures](../../../../docs/framework/unmanaged-api/diagnostics/diagnostics-symbol-store-structures.md)
+- [Diagnostics Symbol Store Structures](diagnostics-symbol-store-structures.md)

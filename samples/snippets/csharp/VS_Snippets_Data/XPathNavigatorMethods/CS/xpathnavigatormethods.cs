@@ -88,7 +88,7 @@ class XPathNavigatorMethods
         childNodes.Load(new StringReader("<pages xmlns=\"http://www.contoso.com/books\">100</pages>"));
         XPathNavigator childNodesNavigator = childNodes.CreateNavigator();
 
-        if(childNodesNavigator.MoveToChild("pages", "http://www.contoso.com/books")) 
+        if(childNodesNavigator.MoveToChild("pages", "http://www.contoso.com/books"))
         {
             navigator.AppendChild(childNodesNavigator);
         }
@@ -130,7 +130,7 @@ class XPathNavigatorMethods
 
         while (nodes.MoveNext())
         {
-            // Clone the navigator returned by the Current property. 
+            // Clone the navigator returned by the Current property.
             // Use the cloned navigator to get the title element.
             XPathNavigator clone = nodes.Current.Clone();
             clone.MoveToFirstChild();
@@ -887,13 +887,13 @@ class XPathNavigatorMethods
         //<snippet39>
         XPathDocument document = new XPathDocument("books.xml");
         XPathNavigator navigator = document.CreateNavigator();
-        
+
         XPathNodeIterator nodes = navigator.Select("/bookstore/book");
         nodes.MoveNext();
         XPathNavigator nodesNavigator = nodes.Current;
-        
+
         XPathNodeIterator nodesText = nodesNavigator.SelectDescendants(XPathNodeType.Text, false);
-        
+
         while (nodesText.MoveNext())
             Console.WriteLine(nodesText.Current.Value);
         //</snippet39>
@@ -934,7 +934,7 @@ class XPathNavigatorMethods
             XPathNavigator nodesNavigator = nodes.Current;
 
             //select all the descendants of the current price node
-            XPathNodeIterator nodesText = 
+            XPathNodeIterator nodesText =
                nodesNavigator.SelectDescendants(XPathNodeType.Text, false);
 
             while(nodesText.MoveNext())
@@ -1145,27 +1145,27 @@ class XPathNavigatorMethods
         navigator = navigator.SelectSingleNode("//bk:book[last()]", manager);
         Console.WriteLine("Last book node: \n===============\n{0}", navigator.OuterXml);
 
-        // Move to the previous book node and write it to the console 
+        // Move to the previous book node and write it to the console
         // if the move was successful.
         if (navigator.MoveToPrevious())
         {
-            Console.WriteLine("\nSecond book node: \n=================\n{0}", 
+            Console.WriteLine("\nSecond book node: \n=================\n{0}",
                 navigator.OuterXml);
         }
 
-        // Move to the first book node and write it to the console 
+        // Move to the first book node and write it to the console
         // if the move was successful.
         if (navigator.MoveToFirst())
         {
-            Console.WriteLine("\nFirst book node: \n================\n{0}", 
+            Console.WriteLine("\nFirst book node: \n================\n{0}",
                 navigator.OuterXml);
         }
 
-        // Move to the parent bookstore node and write it to the console 
+        // Move to the parent bookstore node and write it to the console
         // if the move was successful.
         if (navigator.MoveToParent())
         {
-            Console.WriteLine("\nParent bookstore node: \n======================\n{0}", 
+            Console.WriteLine("\nParent bookstore node: \n======================\n{0}",
                 navigator.OuterXml);
         }
 

@@ -20,7 +20,7 @@ Class Program
         Console.ReadKey()
     End Sub
 
-   
+
 
 End Class
 
@@ -66,7 +66,7 @@ Class IntroCancellation
 
     End Sub
 
-   Shared Function DoComputation1() As Object
+    Shared Function DoComputation1() As Object
         DoComputation1 = New Object()
     End Function
 
@@ -120,7 +120,7 @@ Class IntroCancellation
         taskArray(2) = Task(Of Double).Factory.StartNew(Function() DoComputation3())
 
 
-        Dim results(taskArray.Length) As Double
+        Dim results(taskArray.Length - 1) As Double
         For i As Integer = 0 To taskArray.Length - 1
             results(i) = taskArray(i).Result
         Next
@@ -150,7 +150,7 @@ Class IntroCancellation
 
     End Sub
     '</snippet24>
-    
+
 End Class
 
 

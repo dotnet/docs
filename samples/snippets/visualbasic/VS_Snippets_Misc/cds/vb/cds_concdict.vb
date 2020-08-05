@@ -55,25 +55,25 @@ Namespace DictionaryHowToVB
             '  Add some key/value pairs from multiple threads.
             Dim tasks(1) As Task
 
-         tasks(0) = Task.Run(Sub()
-                                For i As Integer = 0 To 1
-                                   If cities.TryAdd(data(i).Name, data(i)) Then
-                                      Console.WriteLine($"Added {data(i).Name} on thread {Thread.CurrentThread.ManagedThreadId}")
-                                   Else
-                                      Console.WriteLine($"Could not add {data(i)}")
-                                   End If
-                                Next
-                             End Sub)
+            tasks(0) = Task.Run(Sub()
+                                    For i As Integer = 0 To 1
+                                        If cities.TryAdd(data(i).Name, data(i)) Then
+                                            Console.WriteLine($"Added {data(i).Name} on thread {Thread.CurrentThread.ManagedThreadId}")
+                                        Else
+                                            Console.WriteLine($"Could not add {data(i)}")
+                                        End If
+                                    Next
+                                End Sub)
 
-         tasks(1) = Task.Run(Sub()
-                                For i As Integer = 2 To data.Length - 1
-                                   If cities.TryAdd(data(i).Name, data(i)) Then
-                                       Console.WriteLine($"Added {data(i).Name} on thread {Thread.CurrentThread.ManagedThreadId}")
-                                   Else
-                                       Console.WriteLine($"Could not add {data(i)}")
-                                   End If
-                                Next
-                             End Sub)
+            tasks(1) = Task.Run(Sub()
+                                    For i As Integer = 2 To data.Length - 1
+                                        If cities.TryAdd(data(i).Name, data(i)) Then
+                                            Console.WriteLine($"Added {data(i).Name} on thread {Thread.CurrentThread.ManagedThreadId}")
+                                        Else
+                                            Console.WriteLine($"Could not add {data(i)}")
+                                        End If
+                                    Next
+                                End Sub)
 
             ' Output results so far.
             Task.WaitAll(tasks)

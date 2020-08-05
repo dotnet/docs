@@ -16,44 +16,44 @@ The topics in this section discuss Windows Communication Foundation (WCF) suppor
   
 - Disconnected operations. Sending, receiving, and processing operations can become disconnected when communicating over high-latency networks or limited-availability networks, such as in the case of mobile devices. Queues allow these operations to continue, even when the endpoints are disconnected. When the connection is reestablished, the queue forwards messages to the receiving application.  
   
- To use the queues feature in a WCF application, you can use one of the standard bindings, or you can create a custom binding if one of the standard bindings does not satisfy your requirements. For more information about relevant standard bindings and how to choose one, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md). For more information about creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
+ To use the queues feature in a WCF application, you can use one of the standard bindings, or you can create a custom binding if one of the standard bindings does not satisfy your requirements. For more information about relevant standard bindings and how to choose one, see [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md). For more information about creating custom bindings, see [Custom Bindings](../extending/custom-bindings.md).  
   
 ## In This Section  
- [Queues Overview](../../../../docs/framework/wcf/feature-details/queues-overview.md)  
+ [Queues Overview](queues-overview.md)  
  An overview of message queuing concepts.  
   
- [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)  
+ [Queuing in WCF](queuing-in-wcf.md)  
  An overview of WCF queue support.  
   
- [How to: Exchange Queued Messages with WCF Endpoints](../../../../docs/framework/wcf/feature-details/how-to-exchange-queued-messages-with-wcf-endpoints.md)  
+ [How to: Exchange Queued Messages with WCF Endpoints](how-to-exchange-queued-messages-with-wcf-endpoints.md)  
  Explains how to use the <xref:System.ServiceModel.NetMsmqBinding> class to communicate between a WCF client and WCF service.  
   
- [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
+ [How to: Exchange Messages with WCF Endpoints and Message Queuing Applications](how-to-exchange-messages-with-wcf-endpoints-and-message-queuing-applications.md)  
  Explains how to use the <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> to communicate between WCF and Message Queuing applications.  
   
- [Grouping Queued Messages in a Session](../../../../docs/framework/wcf/feature-details/grouping-queued-messages-in-a-session.md)  
+ [Grouping Queued Messages in a Session](grouping-queued-messages-in-a-session.md)  
  Explains how to group messages in a queue to facilitate correlated message processing by a single receiving application.  
   
- [Batching Messages in a Transaction](../../../../docs/framework/wcf/feature-details/batching-messages-in-a-transaction.md)  
+ [Batching Messages in a Transaction](batching-messages-in-a-transaction.md)  
  Explains how to batch messages in a transaction.  
   
- [Using Dead-Letter Queues to Handle Message Transfer Failures](../../../../docs/framework/wcf/feature-details/using-dead-letter-queues-to-handle-message-transfer-failures.md)  
+ [Using Dead-Letter Queues to Handle Message Transfer Failures](using-dead-letter-queues-to-handle-message-transfer-failures.md)  
  Explains how to handle message transfer and delivery failures using dead letter queues and how to process messages from the dead letter queue.  
   
- [Poison Message Handling](../../../../docs/framework/wcf/feature-details/poison-message-handling.md)  
+ [Poison Message Handling](poison-message-handling.md)  
  Explains how to handle poison messages (messages that have exceeded the maximum number of delivery attempts to the receiving application).  
   
- [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)  
+ [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](diff-in-queue-in-vista-server-2003-windows-xp.md)  
  Summarizes the differences in the WCF queues feature between Windows Vista, Windows Server 2003, and Windows XP.  
   
- [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
+ [Securing Messages Using Transport Security](securing-messages-using-transport-security.md)  
  Describes how to use transport security to secure queued messages.  
   
- [Securing Messages Using Message Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-message-security.md)  
+ [Securing Messages Using Message Security](securing-messages-using-message-security.md)  
  Describes how to use message security to secure queued messages.  
   
- [Troubleshooting Queued Messaging](../../../../docs/framework/wcf/feature-details/troubleshooting-queued-messaging.md)  
+ [Troubleshooting Queued Messaging](troubleshooting-queued-messaging.md)  
  Explains how to troubleshoot common queuing problems.  
   
- [Best Practices for Queued Communication](../../../../docs/framework/wcf/feature-details/best-practices-for-queued-communication.md)  
+ [Best Practices for Queued Communication](best-practices-for-queued-communication.md)  
  Explains best practices for using WCF queued communication.  

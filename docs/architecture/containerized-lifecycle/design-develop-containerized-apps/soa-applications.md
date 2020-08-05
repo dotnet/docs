@@ -11,7 +11,7 @@ Today, you can deploy those services as Docker containers, which solve deploymen
 
 Docker containers are useful (but not required) for both traditional service-oriented architectures and the more advanced microservices architectures.
 
-At the end of the day, the container clustering solutions are useful for both a traditional SOA architecture and for a more advanced microservices architecture in which each microservice owns its data model. And thanks to multiple databases, you also can scale out the data tier instead of working with monolithic databases shared by the SOA services. However, the discussion about splitting the data is purely about architecture and design.
+At the end of the day, the container clustering solutions are useful for both a traditional SOA architecture and for a more advanced microservices architecture in which each microservice owns its data model. And thanks to multiple databases, you can also scale out the data tier instead of working with monolithic databases shared by the SOA services. However, the discussion about splitting the data is purely about architecture and design.
 
 >[!div class="step-by-step"]
 >[Previous](state-and-data-in-docker-applications.md)

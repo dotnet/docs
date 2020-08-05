@@ -4,32 +4,32 @@
 public class ByteByByteFormatter : IFormatProvider, ICustomFormatter
 {
    public object GetFormat(Type formatType)
-   { 
+   {
       if (formatType == typeof(ICustomFormatter))
          return this;
       else
          return null;
    }
-   
-   public string Format(string format, object arg, 
+
+   public string Format(string format, object arg,
                           IFormatProvider formatProvider)
-   {   
+   {
       if (! formatProvider.Equals(this)) return null;
-      
+
       // Handle only hexadecimal format string.
       if (! format.StartsWith("X")) return null;
-      
+
       byte[] bytes;
       string output = null;
-      
+
       // Handle only integral types.
-      if (arg is Byte) 
+      if (arg is Byte)
          bytes = BitConverter.GetBytes((Byte) arg);
       else if (arg is Int16)
          bytes = BitConverter.GetBytes((Int16) arg);
       else if (arg is Int32)
          bytes = BitConverter.GetBytes((Int32) arg);
-      else if (arg is Int64)   
+      else if (arg is Int64)
          bytes = BitConverter.GetBytes((Int64) arg);
       else if (arg is SByte)
          bytes = BitConverter.GetBytes((SByte) arg);
@@ -43,8 +43,8 @@ public class ByteByByteFormatter : IFormatProvider, ICustomFormatter
          return null;
 
       for (int ctr = bytes.Length - 1; ctr >= 0; ctr--)
-         output += String.Format("{0:X2} ", bytes[ctr]);   
-      
+         output += String.Format("{0:X2} ", bytes[ctr]);
+
       return output.Trim();
    }
 }
@@ -55,13 +55,13 @@ public class Example
 {
    public static void Main()
    {
-      long value = 3210662321; 
+      long value = 3210662321;
       byte value1 = 214;
       byte value2 = 19;
-      
+
       Console.WriteLine(String.Format(new ByteByByteFormatter(), "{0:X}", value));
-      Console.WriteLine(String.Format(new ByteByByteFormatter(), "{0:X} And {1:X} = {2:X} ({2:000})", 
-                                      value1, value2, value1 & value2));                                
+      Console.WriteLine(String.Format(new ByteByByteFormatter(), "{0:X} And {1:X} = {2:X} ({2:000})",
+                                      value1, value2, value1 & value2));
       Console.WriteLine(String.Format(new ByteByByteFormatter(), "{0,10:N0}", value));
    }
 }

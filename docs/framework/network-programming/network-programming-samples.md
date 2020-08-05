@@ -1,10 +1,11 @@
 ---
 title: "Network Programming Samples"
+description: Use these downloadable network programming samples for .NET Framework System.Net and extended classes.
 ms.date: "03/30/2017"
 ms.assetid: 8efacc29-7367-47c2-8638-a4f66385ad91
 ---
 # Network Programming Samples
-This section contains descriptions and links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.Security>, <xref:System.Net.Sockets>, and related namespaces. 
+This section contains descriptions and links to downloadable network programming samples that use classes in the <xref:System.Net>, <xref:System.Net.Cache>, <xref:System.Net.Configuration>, <xref:System.Net.Mail>, <xref:System.Net.Mime>, <xref:System.Net.NetworkInformation>, <xref:System.Net.Security>, <xref:System.Net.Sockets>, and related namespaces.
   
 > [!NOTE]
 > All samples are available in the [.NET Framework SDK version 2.0 Samples Download](https://www.microsoft.com/download/confirmation.aspx?id=22181), which was released for the .NET Framework 2.0 and may be dated.
@@ -18,8 +19,8 @@ This section contains descriptions and links to downloadable network programming
   
  [HttpListener Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/y7cbb2y2(v=vs.85))  
  Shows how to process HTTP requests from within an application.  
- 
- [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90))   
+
+ [HttpListener ASPX Host Application Sample](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/dd767375(v%3dvs.90))
  Demonstrates how to use the features of the <xref:System.Net.HttpListener?displayProperty=nameWithType> class to create an HTTP server that routes calls to a hosted ASP.NET application.
   
  [Mailer Technology Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/whw7xbk2(v=vs.85))  

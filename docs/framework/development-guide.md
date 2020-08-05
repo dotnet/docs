@@ -1,16 +1,16 @@
 ---
 title: ".NET Framework Development Guide"
+description: Explore the .NET development guide, which explains how to create, configure, debug, secure, and deploy your .NET apps.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ".NET Framework, development guide"
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
 ---
-# .NET Framework Development Guide
+# .NET Framework development guide
+
 This section explains how to create, configure, debug, secure, and deploy your .NET Framework apps. The section also provides information about technology areas such as dynamic programming, interoperability, extensibility, memory management, and threading.  
   
-## In This Section  
- [Application Essentials](../standard/application-essentials.md)  
- Provides information about basic app development tasks, such as programming with app domains and assemblies, using attributes, formatting and parsing base types, using collections, handling events and exceptions, using files and data streams, and using generics.  
+## In This Section
   
  [Data and Modeling](./data/index.md)  
  Provides information about how to access data using ADO.NET, Language Integrated Query (LINQ), WCF Data Services, and XML.  
@@ -24,7 +24,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Service-Oriented Applications with WCF](./wcf/index.md)  
  Describes how to use Windows Communication Foundation (WCF) to build service-oriented apps that are secure and reliable.  
   
- [Building workflows with Windows Workflow Foundation](windows-workflow-foundation/index.md)     
+ [Building workflows with Windows Workflow Foundation](windows-workflow-foundation/index.md)
  Provides information about the programming model, samples, and tools for using Windows Workflow Foundation (WF).  
 
  [Windows Service Applications](./windows-services/index.md)  
@@ -36,7 +36,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Network Programming in the .NET Framework](./network-programming/index.md)  
  Describes the layered, extensible, and managed implementation of Internet services that you can quickly and easily integrate into your apps.  
   
- [Configuring .NET Framework Apps](configure-apps/index.md)    
+ [Configuring .NET Framework Apps](configure-apps/index.md)
  Explains how you can use configuration files to change settings without having to recompile your .NET Framework apps.  
   
  [Compiling Apps with .NET Native](./net-native/index.md)  
@@ -56,7 +56,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
   
  [Performance](./performance/index.md)  
  Provides information about caching, lazy initialization, reliability, and ETW events.  
- 
+
 ## Reference  
  [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)  
  Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.  

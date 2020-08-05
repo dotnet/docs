@@ -35,7 +35,7 @@ HRESULT SetVirtualMemLimit (
  The maximum size of the runtime's virtual memory can be changed dynamically.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** GCHost.idl, GCHost.h  
   
@@ -45,4 +45,4 @@ HRESULT SetVirtualMemLimit (
   
 ## See also
 
-- [IGCHost Interface](../../../../docs/framework/unmanaged-api/hosting/igchost-interface.md)
+- [IGCHost Interface](igchost-interface.md)

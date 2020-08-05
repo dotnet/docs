@@ -7,7 +7,7 @@ ms.custom: mvc
 ---
 # Tutorial: Migrate existing code with nullable reference types
 
-C# 8 introduces **nullable reference types**, which complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*. Any existing variables of a reference type would be interpreted as a non-nullable reference type. 
+C# 8 introduces **nullable reference types**, which complement reference types the same way nullable value types complement value types. You declare a variable to be a **nullable reference type** by appending a `?` to the type. For example, `string?` represents a nullable `string`. You can use these new types to more clearly express your design intent: some variables *must always have a value*, others *may be missing a value*. Any existing variables of a reference type would be interpreted as a non-nullable reference type.
 
 In this tutorial, you'll learn how to:
 
@@ -102,7 +102,7 @@ That code maps properties of the `ISyndicationItem` object to the `NewsStoryView
 
 Notice that because this class is small, and you've examined carefully, you should turn on the `#nullable enable` directive above this class declaration. The change to the constructor could have broken something, so it's worthwhile to run all the tests and test the application before moving on.
 
-The first set of changes showed you how to discover when the original design indicated that variables shouldn't be set to `null`. The technique is referred to as **correct by construction**. You declare that an object and its properties cannot be `null` when it's constructed. The compiler's flow analysis provides assurance that those properties aren't set to `null` after construction. Note that this constructor is called by external code, and that code is **nullable oblivious**. The new syntax doesn't provide runtime checking. External code might circumvent the compiler's flow analysis. 
+The first set of changes showed you how to discover when the original design indicated that variables shouldn't be set to `null`. The technique is referred to as **correct by construction**. You declare that an object and its properties cannot be `null` when it's constructed. The compiler's flow analysis provides assurance that those properties aren't set to `null` after construction. Note that this constructor is called by external code, and that code is **nullable oblivious**. The new syntax doesn't provide runtime checking. External code might circumvent the compiler's flow analysis.
 
 Other times, the structure of a class provides different clues to the intent. Open the *Error.cshtml.cs* file in the *Pages* folder. The `ErrorViewModel` contains the following code:
 

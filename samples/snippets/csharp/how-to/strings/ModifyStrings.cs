@@ -15,8 +15,6 @@ namespace HowToStrings
             RemoveText();
             ReplaceWithRegEx();
             ReplaceCharArray();
-
-            UnsafeSample();
         }
 
         private static void ReplaceCreatesNewString()
@@ -82,11 +80,11 @@ namespace HowToStrings
             // <Snippet5>
             string source = "The mountains are still there behind the clouds today.";
 
-            // Use Regex.Replace for more flexibility. 
+            // Use Regex.Replace for more flexibility.
             // Replace "the" or "The" with "many" or "Many".
             // using System.Text.RegularExpressions
             string replaceWith = "many ";
-            source = System.Text.RegularExpressions.Regex.Replace(source, "the\\s", LocalReplaceMatchCase, 
+            source = System.Text.RegularExpressions.Regex.Replace(source, "the\\s", LocalReplaceMatchCase,
                 System.Text.RegularExpressions.RegexOptions.IgnoreCase);
             Console.WriteLine(source);
 
@@ -134,7 +132,7 @@ namespace HowToStrings
             // constructing a string from a char array, prefix it with some additional characters
             char[] chars = { 'a', 'b', 'c', 'd', '\0' };
             int length = chars.Length + 2;
-            string result = string.Create (length, chars, (Span<char> strContent, char[] charArray) = >
+            string result = string.Create(length, chars, (Span<char> strContent, char[] charArray) =>
             {
 	            strContent[0] = '0';
 	            strContent[1] = '1';
@@ -143,7 +141,7 @@ namespace HowToStrings
 		            strContent[i + 2] = charArray[i];
 	            }
             });
-            
+
             Console.WriteLine(result);
             // </Snippet7>
         }

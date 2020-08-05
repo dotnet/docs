@@ -53,11 +53,11 @@ Serialization is the process of converting an object into a stream of bytes in o
  Designer serialization is a special form of serialization that involves the kind of object persistence usually associated with development tools. Designer serialization is the process of converting an object graph into a source file that can later be used to recover the object graph. A source file can contain code, markup, or even SQL table information.  
   
 ## <a name="BKMK_RelatedTopics"></a> Related Topics and Examples  
- [Walkthrough: Persisting an Object in Visual Studio (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md)  
+ [Walkthrough: Persisting an Object in Visual Studio (Visual Basic)](walkthrough-persisting-an-object-in-visual-studio.md)  
  Demonstrates how serialization can be used to persist an object's data between instances, allowing you to store values and retrieve them the next time the object is instantiated.  
   
- [How to: Read Object Data from an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-read-object-data-from-an-xml-file.md)  
+ [How to: Read Object Data from an XML File (Visual Basic)](how-to-read-object-data-from-an-xml-file.md)  
  Shows how to read object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
- [How to: Write Object Data to an XML File (Visual Basic)](../../../../visual-basic/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)  
+ [How to: Write Object Data to an XML File (Visual Basic)](how-to-write-object-data-to-an-xml-file.md)  
  Shows how to write the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.

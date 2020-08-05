@@ -34,7 +34,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
   
  Use the <xref:System.Windows.Media.FormattedText.MaxTextWidth%2A> property to constrain the text to a specific width. The text will automatically wrap to avoid exceeding the specified width. Use the <xref:System.Windows.Media.FormattedText.MaxTextHeight%2A> property to constrain the text to a specific height. The text will display an ellipsis, "…" for the text that exceeds the specified height.  
   
- ![Text displayed with wordwrap and ellipsis.](./media/drawing-formatted-text/formatted-text-wordwrap-ellipsis.png)    
+ ![Text displayed with wordwrap and ellipsis.](./media/drawing-formatted-text/formatted-text-wordwrap-ellipsis.png)
   
  You can apply multiple formatting styles to one or more characters. For example, you could call both the <xref:System.Windows.Media.FormattedText.SetFontSize%2A> and <xref:System.Windows.Media.FormattedText.SetForegroundBrush%2A> methods to change the formatting of the first five characters in the text.  
   
@@ -49,11 +49,11 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
  [!code-csharp[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets2)]
  [!code-vb[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets2)]  
   
-<a name="converting_formatted_text"></a>   
+<a name="converting_formatted_text"></a>
 ### Converting Formatted Text to a Geometry  
  You can convert formatted text into <xref:System.Windows.Media.Geometry> objects, allowing you to create other types of visually interesting text. For example, you could create a <xref:System.Windows.Media.Geometry> object based on the outline of a text string.  
   
- ![Text outline using a linear gradient brush](./media/typography-in-wpf/text-outline-linear-gradient.jpg)    
+ ![Text outline using a linear gradient brush](./media/typography-in-wpf/text-outline-linear-gradient.jpg)
   
  The following examples illustrate several ways of creating interesting visual effects by modifying the stroke, fill, and highlight of converted text.  
   
@@ -78,7 +78,7 @@ Sphere following the path geometry of text
   
  ![Video displaying in the path geometry of text](./media/drawing-formatted-text/video-displaying-text-path-geometry.png)
   
-<a name="win32_migration"></a>   
+<a name="win32_migration"></a>
 ## Win32 Migration  
  The features of <xref:System.Windows.Media.FormattedText> for drawing text are similar to the features of the Win32 DrawText function. For those developers migrating from the Win32 API, the following table lists the Win32 DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   

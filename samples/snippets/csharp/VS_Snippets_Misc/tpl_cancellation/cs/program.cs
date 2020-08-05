@@ -23,12 +23,12 @@ namespace CancellationWithOCE
             Task[] tasks = new Task[10];
 
             // Request cancellation of a single task when the token source is canceled.
-            // Pass the token to the user delegate, and also to the task so it can 
+            // Pass the token to the user delegate, and also to the task so it can
             // handle the exception correctly.
             tasks[0] = Task.Factory.StartNew(() => DoSomeWork(1, token), token);
 
             // Request cancellation of a task and its children. Note the token is passed
-            // to (1) the user delegate and (2) as the second argument to StartNew, so 
+            // to (1) the user delegate and (2) as the second argument to StartNew, so
             // that the task instance can correctly handle the OperationCanceledException.
             tasks[1] = Task.Factory.StartNew(() =>
             {
@@ -40,7 +40,7 @@ namespace CancellationWithOCE
                     tasks[i] = Task.Factory.StartNew(iteration =>
                                 DoSomeWork((int)iteration, token), i, token);
                 }
-                // Passing the same token again to do work on the parent task. 
+                // Passing the same token again to do work on the parent task.
                 // All will be signaled by the call to tokenSource.Cancel below.
                 DoSomeWork(2, token);
             }, token);
@@ -57,8 +57,8 @@ namespace CancellationWithOCE
                 // Optional: Observe the change in the Status property on the task.
                 // It is not necessary to wait on tasks that have canceled. However,
                 // if you do wait, you must enclose the call in a try-catch block to
-                // catch the OperationCanceledExceptions that are thrown. If you do 
-                // not wait, no OCE is thrown if the token that was passed to the 
+                // catch the OperationCanceledExceptions that are thrown. If you do
+                // not wait, no OCE is thrown if the token that was passed to the
                 // StartNew method is the same token that requested the cancellation.
 
                 #region Optional_WaitOnTasksToComplete

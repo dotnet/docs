@@ -16,4 +16,4 @@ Either you tried to load a file into a component, but the format of the data in 
   
 ## See also
 
-- [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)
+- [Error Types](../programming-guide/language-features/error-types.md)

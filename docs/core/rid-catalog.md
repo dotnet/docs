@@ -1,11 +1,11 @@
 ---
-title: .NET Core Runtime IDentifier (RID) catalog
+title: .NET Core Runtime Identifier (RID) catalog
 description: Learn about the Runtime IDentifier (RID) and how RIDs are used in .NET Core.
 ms.date: 02/22/2019
 ---
 # .NET Core RID Catalog
 
-RID is short for *Runtime IDentifier*. RID values are used to identify target platforms where the application runs.
+RID is short for *Runtime Identifier*. RID values are used to identify target platforms where the application runs.
 They're used by .NET packages to represent platform-specific assets in NuGet packages. The following values are examples of RIDs: `linux-x64`, `ubuntu.14.04-x64`, `win7-x64`, or `osx.10.12-x64`.
 For the packages with native dependencies, the RID designates on which platforms the package can be restored.
 
@@ -111,7 +111,8 @@ Only common values are listed. For the latest and complete version, see the [run
 - Portable (.NET Core 2.0 or later versions)
   - `linux-x64` (Most desktop distributions like CentOS, Debian, Fedora, Ubuntu, and derivatives)
   - `linux-musl-x64` (Lightweight distributions using [musl](https://wiki.musl-libc.org/projects-using-musl.html) like Alpine Linux)
-  - `linux-arm` (Linux distributions running on ARM like Raspberry Pi)
+  - `linux-arm` (Linux distributions running on ARM like Raspbian on Raspberry Pi Model 2+)
+  - `linux-arm64` (Linux distributions running on 64-bit ARM like Ubuntu Server 64-bit on Raspberry Pi Model 3+)
 - Red Hat Enterprise Linux
   - `rhel-x64` (Superseded by `linux-x64` for RHEL above version 6)
   - `rhel.6-x64` (.NET Core 2.0 or later versions)

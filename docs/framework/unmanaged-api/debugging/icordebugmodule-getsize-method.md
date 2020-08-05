@@ -34,7 +34,7 @@ HRESULT GetSize(
  If the module was produced from the native image generator (NGen.exe), the size of the module will be zero.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

@@ -1,5 +1,6 @@
 ---
 title: "Requesting Data"
+description: Learn how pluggable protocols let you develop applications that use a single interface to retrieve data from multiple protocols.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

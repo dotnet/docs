@@ -1,28 +1,32 @@
 ---
-title: "nameof operator - C# reference"
-ms.date: 07/12/2019
+title: "nameof expression - C# reference"
+ms.date: 04/23/2020
 f1_keywords:
   - "nameof_CSharpKeyword"
   - "nameof"
 helpviewer_keywords:
-  - "nameof operator [C#]"
+  - "nameof expression [C#]"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
 ---
-# nameof operator (C# reference)
+# nameof expression (C# reference)
 
-The `nameof` operator obtains the name of a variable, type, or member as the string constant:
+A `nameof` expression produces the name of a variable, type, or member as the string constant:
 
-[!code-csharp-interactive[nameof operator](snippets/NameOfOperator.cs#Examples)]
+[!code-csharp-interactive[nameof expression](snippets/NameOfOperator.cs#Examples)]
 
 As the preceding example shows, in the case of a type and a namespace, the produced name is usually not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
 
-The `nameof` operator is evaluated at compile time and has no effect at run time.
+In the case of [verbatim identifiers](../tokens/verbatim.md), the `@` character is not the part of a name, as the following example shows:
 
-You can use the `nameof` operator to make the argument-checking code more maintainable:
+[!code-csharp-interactive[nameof verbatim](snippets/NameOfOperator.cs#Verbatim)]
+
+A `nameof` expression is evaluated at compile time and has no effect at run time.
+
+You can use a `nameof` expression to make the argument-checking code more maintainable:
 
 [!code-csharp[nameof and argument check](snippets/NameOfOperator.cs#ExceptionMessage)]
 
-The `nameof` operator is available in C# 6 and later.
+A `nameof` expression is available in C# 6 and later.
 
 ## C# language specification
 

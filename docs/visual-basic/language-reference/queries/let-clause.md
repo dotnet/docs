@@ -37,8 +37,8 @@ Let variable = expression [, ...]
   
 ## See also
 
-- [Introduction to LINQ in Visual Basic](../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)
-- [Queries](../../../visual-basic/language-reference/queries/index.md)
-- [Select Clause](../../../visual-basic/language-reference/queries/select-clause.md)
-- [From Clause](../../../visual-basic/language-reference/queries/from-clause.md)
-- [Where Clause](../../../visual-basic/language-reference/queries/where-clause.md)
+- [Introduction to LINQ in Visual Basic](../../programming-guide/language-features/linq/introduction-to-linq.md)
+- [Queries](index.md)
+- [Select Clause](select-clause.md)
+- [From Clause](from-clause.md)
+- [Where Clause](where-clause.md)

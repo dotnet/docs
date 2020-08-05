@@ -10,7 +10,7 @@ ms.date: 02/15/2019
 Figure 3-1 shows the main pillars in the life cycle of Docker apps classified by the type of work delivered by multiple teams (app-development, DevOps infrastructure processes, and IT management and operations). Usually, in the enterprise, the profiles of "the persona" responsible for each area are different. So are their skills.
 
 :::image type="complex" source="./media/index/microsoft-tools-contanerized-docker-app.png" alt-text="Diagram showing the Microsoft tools needed to maintain Docker apps.":::
-Microsoft tools. For the Develop/Design workload: Docker engine for Windows, VS and VS Code, .NET Core, Azure Kubernetes Service. For the Build/Test/Ship workload: Azure DevOps, Team Foundation Server, Docker CLI, Azure Kubernetes Service. For the Run/Monitor/Manage workload: Azure Monitor, Azure Portal Azure Kubernetes Services, Service Fabric, other orchestrators.
+Microsoft tools. For the Develop/Design workload: Docker engine for Windows, Visual Studio and Visual Studio Code, .NET Core, Azure Kubernetes Service. For the Build/Test/Ship workload: Azure DevOps, Team Foundation Server, Docker CLI, Azure Kubernetes Service. For the Run/Monitor/Manage workload: Azure Monitor, Azure portal, Azure Kubernetes Services, Service Fabric, other orchestrators.
 :::image-end:::
 
 **Figure 3-1.** Main pillars in the life cycle for containerized Docker applications with Microsoft platform and tools
@@ -33,13 +33,13 @@ The Microsoft platform and tools for containerized Docker apps, as defined in Ta
 
 - **DevOps for Docker Apps** Developers creating Docker applications can use [Azure DevOps Services](https://azure.microsoft.com/services/devops/) or any other third-party product, like Jenkins, to build out a comprehensive automated application life-cycle management (ALM).
 
-  With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter-container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers also can automate their Docker application releases into Azure Kubernetes Service (AKS), from development to staging and production environments.
+  With Azure DevOps Services, developers can create container-focused DevOps for a fast, iterative process that covers source-code control from anywhere (Azure DevOps Services-Git, GitHub, any remote Git repository, or Subversion), Continuous Integration (CI), internal unit tests, inter-container/service integration tests, Continuous Delivery (CD), and release management (RM). Developers can also automate their Docker application releases into Azure Kubernetes Service (AKS), from development to staging and production environments.
 
 - **Management and Monitoring** IT can manage and monitor production applications and services in several ways, integrating both perspectives in a consolidated experience.
 
   - **Azure portal** If you're using open-source orchestrators, Azure Kubernetes Service (AKS), Service Fabric and other orchestrators help you to set up and maintain your Docker environments. If you're using Azure Service Fabric, the Service Fabric Explorer tool makes it possible for you to visualize and configure your cluster.
 
-  - **Docker tools** You can manage your container applications using familiar tools. There's no need to change your existing Docker management practices to move container workloads to the cloud. Use the application management tools you're already familiar with and connect via the standard API endpoints for the orchestrator of your choice. You also can use other third-party tools to manage your Docker applications, such as Docker Datacenter or even CLI Docker tools.
+  - **Docker tools** You can manage your container applications using familiar tools. There's no need to change your existing Docker management practices to move container workloads to the cloud. Use the application management tools you're already familiar with and connect via the standard API endpoints for the orchestrator of your choice. You can also use other third-party tools to manage your Docker applications, such as Docker Datacenter or even CLI Docker tools.
 
     Even if you're familiar with Linux commands, you can manage your container applications using Microsoft Windows and PowerShell with a Linux Subsystem command line and the products (Docker, Kubernetes…) clients running on this Linux Subsystem capability. You'll learn more about using these tools under Linux Subsystem using your favorite Microsoft Windows OS later in this book.
 

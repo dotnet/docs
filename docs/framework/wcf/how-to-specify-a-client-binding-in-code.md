@@ -1,5 +1,6 @@
 ---
 title: "How to: Specify a Client Binding in Code"
+description: Learn how to specify the binding for a WCF client imperatively in code. The client accesses a service in this example.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -20,7 +21,7 @@ In this example, a client is created to use a calculator service and the binding
 1. Use Svcutil.exe from the command line to generate code from service metadata.  
   
     ```console  
-    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>   
+    Svcutil.exe <service's Metadata Exchange (MEX) address or HTTP GET address>
     ```  
   
 2. The client that is generated contains the `ICalculator` interface that defines the service contract that the client implementation must satisfy.  

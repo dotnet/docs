@@ -1,5 +1,6 @@
 ---
 title: "How To: Read Settings at Run Time With C#"
+description: Learn how to read both Application-scoped and User-scoped settings at run time with C# via the Properties object.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application settings [Windows Forms], reading"

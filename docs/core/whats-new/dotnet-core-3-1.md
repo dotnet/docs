@@ -3,7 +3,7 @@ title: What's new in .NET Core 3.1
 description: Learn about the new features found in .NET Core 3.1.
 dev_langs:
   - "csharp"
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 12/04/2019
 ---
@@ -12,7 +12,7 @@ ms.date: 12/04/2019
 
 This article describes what is new in .NET Core 3.1. This release contains minor improvements to .NET Core 3.0, focusing on small, but important, fixes. The most important feature about .NET Core 3.1 is that it's a [long-term support (LTS)](#long-term-support) release.
 
-If you're using Visual Studio 2019, you must update to [Visual Studio 2019 version 16.4](https://visualstudio.microsoft.com/downloads/) to work with .NET Core 3.1 projects. For more information on what's new in Visual Studio, see [What's New in Visual Studio 2019 version 16.4](/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019-version-164).
+If you're using Visual Studio 2019, you must update to [Visual Studio 2019 version 16.4 or later](https://visualstudio.microsoft.com/downloads/) to work with .NET Core 3.1 projects. For information on what's new in Visual Studio version 16.4, see [What's New in Visual Studio 2019 version 16.4](/visualstudio/releases/2019/release-notes-v16.4#whats-new-in-visual-studio-2019-version-164).
 
 Visual Studio for Mac also supports and includes .NET Core 3.1 in Visual Studio for Mac 8.4.
 

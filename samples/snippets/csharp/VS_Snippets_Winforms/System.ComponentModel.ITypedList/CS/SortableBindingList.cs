@@ -17,10 +17,10 @@ namespace ITypedListCS
 
         public SortableBindingList() : base()
         {
-            // Get the 'shape' of the list. 
+            // Get the 'shape' of the list.
             // Only get the public properties marked with Browsable = true.
             PropertyDescriptorCollection pdc = TypeDescriptor.GetProperties(
-                typeof(T), 
+                typeof(T),
                 new Attribute[] { new BrowsableAttribute(true) });
 
             // Sort the properties.
@@ -51,10 +51,10 @@ namespace ITypedListCS
         // </snippet3>
 
         // <snippet4>
-        // This method is only used in the design-time framework 
+        // This method is only used in the design-time framework
         // and by the obsolete DataGrid control.
         public string GetListName(PropertyDescriptor[] listAccessors)
-        {   
+        {
             return typeof(T).Name;
         }
         // </snippet4>

@@ -37,4 +37,4 @@ The three central `My` objects that provide access to information and commonly u
 - <xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase>
 - <xref:Microsoft.VisualBasic.Devices.Computer>
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>
-- [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
+- [How My Depends on Project Type](how-my-depends-on-project-type.md)

@@ -1,5 +1,6 @@
 ---
 title: "How the Runtime Locates Assemblies"
+description: Learn how the common language runtime (CLR) locates and binds to the assemblies that make up your application in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "app.config files, assembly locations"
@@ -135,7 +136,7 @@ Safe mode can be set for the entire application or for selected assemblies. That
 ### Machine Configuration File
 Third, the runtime examines the machine configuration file. This file, called Machine.config, resides on the local computer in the Config subdirectory of the root directory where the runtime is installed. This file can be used by administrators to specify assembly binding restrictions that are local to that computer. The settings in the machine configuration file take precedence over all other configuration settings; however, this does not mean that all configuration settings should be put in this file. The version determined by the administrator policy file is final, and cannot be overridden. Overrides specified in the Machine.config file affect all applications. For more information about configuration files, see [Configuring Apps by using Configuration Files](../configure-apps/index.md).
 
-<a name="step2"></a> 
+<a name="step2"></a>
 
 ## Step 2: Checking for Previously Referenced Assemblies
 

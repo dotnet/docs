@@ -1,5 +1,6 @@
 ---
 title: "How to: Override a Global Proxy Selection"
+description: Follow this example to override the global proxy selection by sending a WebRequest to a URL, which overrides the selection with a proxy server.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

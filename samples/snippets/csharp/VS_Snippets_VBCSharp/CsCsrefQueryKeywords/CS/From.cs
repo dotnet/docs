@@ -13,7 +13,7 @@ namespace FromClause
     class LowNums
     {
         static void Main()
-        {   
+        {
             // A simple data source.
             int[] numbers = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
 
@@ -28,7 +28,7 @@ namespace FromClause
             {
                 Console.Write(i + " ");
             }
-        }        
+        }
     }
     // Output: 4 1 3 2 0
     //</snippet1>
@@ -45,8 +45,8 @@ namespace FromClause
 
         static void Main()
         {
-            
-            // Use a collection initializer to create the data source. Note that 
+
+            // Use a collection initializer to create the data source. Note that
             // each element in the list contains an inner sequence of scores.
             List<Student> students = new List<Student>
             {
@@ -54,8 +54,8 @@ namespace FromClause
                new Student {LastName="O'Donnell", Scores= new List<int> {75, 84, 91, 39}},
                new Student {LastName="Mortensen", Scores= new List<int> {88, 94, 65, 85}},
                new Student {LastName="Garcia", Scores= new List<int> {97, 89, 85, 82}},
-               new Student {LastName="Beebe", Scores= new List<int> {35, 72, 91, 70}} 
-            };        
+               new Student {LastName="Beebe", Scores= new List<int> {35, 72, 91, 70}}
+            };
 
             // Use a compound from to access the inner sequence within each element.
             // Note the similarity to a nested foreach statement.
@@ -63,23 +63,23 @@ namespace FromClause
                              from score in student.Scores
                                 where score > 90
                                 select new { Last = student.LastName, score };
-                        
+
             // Execute the queries.
             Console.WriteLine("scoreQuery:");
-            // Rest the mouse pointer on scoreQuery in the following line to 
-            // see its type. The type is IEnumerable<'a>, where 'a is an 
+            // Rest the mouse pointer on scoreQuery in the following line to
+            // see its type. The type is IEnumerable<'a>, where 'a is an
             // anonymous type defined as new {string Last, int score}. That is,
-            // each instance of this anonymous type has two members, a string 
+            // each instance of this anonymous type has two members, a string
             // (Last) and an int (score).
             foreach (var student in scoreQuery)
             {
                 Console.WriteLine("{0} Score: {1}", student.Last, student.score);
             }
-            
+
             // Keep the console window open in debug mode.
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
-        }       
+        }
     }
     /*
     scoreQuery:
@@ -158,7 +158,7 @@ namespace FromClause
     //</Snippet3>
 
     // NOT USED. DELETED FROM TOPIC
-    //<Snippet4> 
+    //<Snippet4>
     //class CompoundFrom3
     //{
     //    static void Main()

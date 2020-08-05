@@ -42,7 +42,7 @@ namespace Samples
 
         //</snippet2>
 
-        // It is a good practice to create a private constructor for a class that only 
+        // It is a good practice to create a private constructor for a class that only
         // defines static methods.
         private IssuedTokenClientCredentialsConfiguration() { }
     }

@@ -9,7 +9,7 @@ public class Example
       var t = Task.Run( () => { DateTime dat = DateTime.Now;
                                 if (dat == DateTime.MinValue)
                                    throw new ArgumentException("The clock is not working.");
-                                   
+
                                 if (dat.Hour > 17)
                                    return "evening";
                                 else if (dat.Hour > 12)

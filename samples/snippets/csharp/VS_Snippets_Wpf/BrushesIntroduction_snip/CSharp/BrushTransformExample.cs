@@ -1,4 +1,4 @@
-﻿// <SnippetBrushTransformExampleWholePage> 
+﻿// <SnippetBrushTransformExampleWholePage>
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -19,7 +19,7 @@ namespace BrushesIntroduction
             ImageBrush noTransformImageBrush = new ImageBrush();
             noTransformImageBrush.ImageSource =
                 new BitmapImage(new Uri(@"sampleImages\pinkcherries.jpg", UriKind.Relative));
-            
+
             // Use the brush to paint a rectangle.
             Rectangle noTransformImageBrushRectangle = new Rectangle();
             noTransformImageBrushRectangle.Width = 175;
@@ -40,7 +40,7 @@ namespace BrushesIntroduction
             // Create a 45 rotate transform about the brush's center
             // and apply it to the brush's RelativeTransform property.
             RotateTransform aRotateTransform = new RotateTransform();
-            aRotateTransform.CenterX = 0.5; 
+            aRotateTransform.CenterX = 0.5;
             aRotateTransform.CenterY = 0.5;
             aRotateTransform.Angle = 45;
             relativeTransformImageBrush.RelativeTransform = aRotateTransform;
@@ -91,4 +91,4 @@ namespace BrushesIntroduction
         }
     }
 }
-// </SnippetBrushTransformExampleWholePage> 
+// </SnippetBrushTransformExampleWholePage>

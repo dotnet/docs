@@ -22,7 +22,7 @@ namespace Microsoft.Samples.KeyFrameExamples
         public KeyTimesIllustration()
         {
             InitializeComponent();
-        }       
+        }
 
         private static Rectangle createGhostRectangle()
         {

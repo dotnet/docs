@@ -1,5 +1,6 @@
 ---
 title: "How to: Connect to a Database"
+description: Learn how to use DataContext to connect to a database in LINQ to SQL. Refer to these examples to use DataContext to connect to a database and to get rows.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

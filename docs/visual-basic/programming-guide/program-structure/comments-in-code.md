@@ -56,7 +56,7 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
 ## See also
 
 - [Basic Instincts - Documenting Your Code With XML Comments](https://docs.microsoft.com/archive/msdn-magazine/2009/may/documenting-your-code-with-xml-comments)
-- [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
-- [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
-- [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)
-- [REM Statement](../../../visual-basic/language-reference/statements/rem-statement.md)
+- [How to: Create XML Documentation](how-to-create-xml-documentation.md)
+- [XML Comment Tags](../../language-reference/xmldoc/index.md)
+- [Program Structure and Code Conventions](program-structure-and-code-conventions.md)
+- [REM Statement](../../language-reference/statements/rem-statement.md)

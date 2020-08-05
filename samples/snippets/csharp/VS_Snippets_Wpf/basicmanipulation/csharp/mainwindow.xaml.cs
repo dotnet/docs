@@ -24,23 +24,23 @@ namespace BasicManipulation
         }
         //</SnippetManipulationStarting>
 
-        //<SnippetManipulationDelta>        
+        //<SnippetManipulationDelta>
         void Window_ManipulationDelta(object sender, ManipulationDeltaEventArgs e)
         {
-            
+
             // Get the Rectangle and its RenderTransform matrix.
             Rectangle rectToMove = e.OriginalSource as Rectangle;
             Matrix rectsMatrix = ((MatrixTransform)rectToMove.RenderTransform).Matrix;
 
             // Rotate the Rectangle.
-            rectsMatrix.RotateAt(e.DeltaManipulation.Rotation, 
-                                 e.ManipulationOrigin.X, 
+            rectsMatrix.RotateAt(e.DeltaManipulation.Rotation,
+                                 e.ManipulationOrigin.X,
                                  e.ManipulationOrigin.Y);
 
-            // Resize the Rectangle.  Keep it square 
+            // Resize the Rectangle.  Keep it square
             // so use only the X value of Scale.
-            rectsMatrix.ScaleAt(e.DeltaManipulation.Scale.X, 
-                                e.DeltaManipulation.Scale.X, 
+            rectsMatrix.ScaleAt(e.DeltaManipulation.Scale.X,
+                                e.DeltaManipulation.Scale.X,
                                 e.ManipulationOrigin.X,
                                 e.ManipulationOrigin.Y);
 
@@ -67,23 +67,23 @@ namespace BasicManipulation
 
             e.Handled = true;
         }
-        //</SnippetManipulationDelta>        
+        //</SnippetManipulationDelta>
 
         //<SnippetManipulationInertiaStarting>
         void Window_InertiaStarting(object sender, ManipulationInertiaStartingEventArgs e)
         {
 
-            // Decrease the velocity of the Rectangle's movement by 
+            // Decrease the velocity of the Rectangle's movement by
             // 10 inches per second every second.
             // (10 inches * 96 pixels per inch / 1000ms^2)
             e.TranslationBehavior.DesiredDeceleration = 10.0 * 96.0 / (1000.0 * 1000.0);
 
-            // Decrease the velocity of the Rectangle's resizing by 
+            // Decrease the velocity of the Rectangle's resizing by
             // 0.1 inches per second every second.
             // (0.1 inches * 96 pixels per inch / (1000ms^2)
             e.ExpansionBehavior.DesiredDeceleration = 0.1 * 96 / (1000.0 * 1000.0);
 
-            // Decrease the velocity of the Rectangle's rotation rate by 
+            // Decrease the velocity of the Rectangle's rotation rate by
             // 2 rotations per second every second.
             // (2 * 360 degrees / (1000ms^2)
             e.RotationBehavior.DesiredDeceleration = 720 / (1000.0 * 1000.0);

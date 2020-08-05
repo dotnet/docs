@@ -30,14 +30,14 @@ Class Program
                     ' Display number of rows inserted.
                     Console.WriteLine("Inserted {0} rows.", rows)
 
-                ' Handle data errors.
+                    ' Handle data errors.
                 Catch exDb As DbException
                     Console.WriteLine("DbException.GetType: {0}", exDb.GetType())
                     Console.WriteLine("DbException.Source: {0}", exDb.Source)
                     Console.WriteLine("DbException.ErrorCode: {0}", exDb.ErrorCode)
                     Console.WriteLine("DbException.Message: {0}", exDb.Message)
 
-                ' Handle all other exceptions.
+                    ' Handle all other exceptions.
                 Catch ex As Exception
                     Console.WriteLine("Exception.Message: {0}", ex.Message)
                 End Try

@@ -45,7 +45,7 @@ HRESULT JITCompilationFinished(
   Although a value of `true` will not harm the runtime, it can skew the profiling results.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorProf.idl, CorProf.h  
   

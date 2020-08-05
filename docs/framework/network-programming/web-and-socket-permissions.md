@@ -1,5 +1,6 @@
 ---
 title: "Web and Socket Permissions"
+description: Learn how the WebPermission and SocketPermission classes provide internet security for using the System.Net namespace in the .NET Framework.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Networking"

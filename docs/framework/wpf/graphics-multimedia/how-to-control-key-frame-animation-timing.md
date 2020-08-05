@@ -60,7 +60,7 @@ The following illustration shows when the value of each key frame is reached.
 
 For simplicity, the code versions of this example use local animations, not storyboards, because only a single animation is being applied to a single property, but the examples may be modified to use storyboards instead. For an example showing how to declare a storyboard in code, see [Animate a Property by Using a Storyboard](how-to-animate-a-property-by-using-a-storyboard.md).
 
-For the complete sample, see [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012). For more information about key frame animations, see the [Key-Frame Animations Overview](key-frame-animations-overview.md).
+For the complete sample, see [KeyFrame Animation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Animation/KeyFrameAnimation). For more information about key frame animations, see the [Key-Frame Animations Overview](key-frame-animations-overview.md).
 
 ## See also
 

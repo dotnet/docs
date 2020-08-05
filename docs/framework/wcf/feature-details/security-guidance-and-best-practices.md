@@ -10,16 +10,16 @@ ms.assetid: 79e4e6f7-0c00-4045-b0f0-e6a7c37c7788
 The articles in this section present guidance for and items to consider when creating secure Windows Communication Foundation (WCF) applications. For more information about Windows Server AppFabric and security, see [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))  
   
 ## In this Section  
- [Best Practices for Security](../../../../docs/framework/wcf/feature-details/best-practices-for-security-in-wcf.md)  
+ [Best Practices for Security](best-practices-for-security-in-wcf.md)  
  Recommendations to help you secure your applications.  
   
- [Security Considerations](../../../../docs/framework/wcf/feature-details/security-considerations-in-wcf.md)  
+ [Security Considerations](security-considerations-in-wcf.md)  
  Items to consider when creating a WCF application.  
   
- [Performance Considerations](../../../../docs/framework/wcf/feature-details/performance-considerations.md)  
+ [Performance Considerations](performance-considerations.md)  
  Contains entries related to performance and security.  
   
 ## See also
 
-- [Basic WCF Programming](../../../../docs/framework/wcf/basic-wcf-programming.md)
+- [Basic WCF Programming](../basic-wcf-programming.md)
 - [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

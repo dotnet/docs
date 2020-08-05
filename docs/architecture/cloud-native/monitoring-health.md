@@ -1,11 +1,10 @@
 ---
 title: Monitoring and health
 description: Monitoring and Health
-ms.date: 09/23/2019
+ms.date: 05/13/2020
 ---
-# Monitoring and health
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+# Monitoring and health
 
 Microservices and cloud-native applications go hand in hand with good DevOps practices. DevOps is many things to many people but perhaps one of the better definitions comes from cloud advocate and DevOps evangelist Donovan Brown:
 

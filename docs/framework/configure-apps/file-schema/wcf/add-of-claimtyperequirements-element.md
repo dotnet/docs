@@ -33,7 +33,7 @@ Specifies the types of required and optional claims expected to appear in the fe
 |Attribute|Description|  
 |---------------|-----------------|  
 |claimType|A URI that defines the type of a claim. For example, to purchase a product from a Web site, the user must present a valid credit card with sufficient credit limit. The claim type would be the credit card URI.|  
-|isOptional|A Boolean value that specifies if this is for an optional claim. Set this attribute to `false` if this is a required claim.<br /><br /> You can use this attribute when the service asks for some information but does not require it. For example, if you require the user to enter his/her first name, last name and address, but decide that phone number is optional.|  
+|isOptional|A Boolean value that specifies if this is for an optional claim. Set this attribute to `false` if this is a required claim.<br /><br /> You can use this attribute when the service asks for some information but does not require it. For example, if you require the user to enter their first name, last name, and address, but decide that phone number is optional.|  
   
 ### Child Elements  
  None.  

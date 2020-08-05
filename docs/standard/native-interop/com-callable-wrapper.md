@@ -1,5 +1,6 @@
 ---
 title: "COM Callable Wrapper"
+description: When a COM client calls a .NET object, the CLR creates the managed object and a COM callable wrapper for it. COM clients call the wrapper for the object.
 ms.date: "10/23/2018"
 dev_langs:
   - "csharp"

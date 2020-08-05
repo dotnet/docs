@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Publisher Policy"
+description: Learn how assembly vendors can create a publisher policy file with an upgraded assembly in .NET, to stipulate that applications should use the newer version.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "publisher policy assembly"
@@ -103,7 +104,7 @@ gacutil /i policy.1.0.myAssembly.dll
 
 ## See also
 
-- [Programming with Assemblies](../../standard/assembly/program.md)
+- [Programming with Assemblies](../../standard/assembly/index.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps by using Configuration Files](index.md)
 - [Runtime Settings Schema](./file-schema/runtime/index.md)

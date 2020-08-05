@@ -22,13 +22,13 @@ Allows the host to report memory pressure conditions using an approach similar t
   
 |Method|Description|  
 |------------|-----------------|  
-|[OnMemoryNotification Method](../../../../docs/framework/unmanaged-api/hosting/iclrmemorynotificationcallback-onmemorynotification-method.md)|Notifies the common language runtime (CLR) of the memory load on the computer.|  
+|[OnMemoryNotification Method](iclrmemorynotificationcallback-onmemorynotification-method.md)|Notifies the common language runtime (CLR) of the memory load on the computer.|  
   
 ## Remarks  
  The host uses the `ICLRMemoryNotificationCallback` interface to request that the CLR free memory resources.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** MSCorEE.h  
   
@@ -38,5 +38,5 @@ Allows the host to report memory pressure conditions using an approach similar t
   
 ## See also
 
-- [IHostMemoryManager Interface](../../../../docs/framework/unmanaged-api/hosting/ihostmemorymanager-interface.md)
-- [Hosting Interfaces](../../../../docs/framework/unmanaged-api/hosting/hosting-interfaces.md)
+- [IHostMemoryManager Interface](ihostmemorymanager-interface.md)
+- [Hosting Interfaces](hosting-interfaces.md)

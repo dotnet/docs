@@ -1,5 +1,6 @@
 ---
 title: XpsDocumentWriter.raise__WritingPrintTicketRequired Method (System.Windows.Xps)
+description: Use the XpsDocumentWriter.raise__WritingPrintTicketRequired method, which raises the WritingPrintTicketRequired event for an XPS document in .NET.
 ms.date: 12/12/2007
 api_location:
 - system.printing.dll
@@ -18,7 +19,7 @@ Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired
 ## Syntax
 
 ```csharp
-public void raise__WritingPrintTicketRequired (object value0, 
+public void raise__WritingPrintTicketRequired (object value0,
   System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs value1);
 ```
 

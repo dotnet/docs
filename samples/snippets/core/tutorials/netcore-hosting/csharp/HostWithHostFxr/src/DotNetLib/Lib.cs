@@ -13,7 +13,7 @@ namespace DotNetLib
             public IntPtr Message;
             public int Number;
         }
-        
+
         public static int Hello(IntPtr arg, int argLength)
         {
             if (argLength < System.Runtime.InteropServices.Marshal.SizeOf(typeof(LibArgs)))

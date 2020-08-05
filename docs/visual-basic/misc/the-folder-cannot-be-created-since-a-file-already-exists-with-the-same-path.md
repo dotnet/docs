@@ -14,8 +14,8 @@ An attempt has been made to create a directory, but a file already exists with t
   
 ## See also
 
-- [How to: Create a Directory](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-create-a-directory.md)
+- [How to: Create a Directory](../developing-apps/programming/drives-directories-files/how-to-create-a-directory.md)
 - [My.Computer.FileSystem](xref:Microsoft.VisualBasic.FileIO.FileSystem)
 - [My.Computer.FileSystem.CreateDirectory](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.CreateDirectory%2A)
 - [My.Computer.FileSystem.RenameDirectory](xref:Microsoft.VisualBasic.MyServices.FileSystemProxy.RenameDirectory%2A)
-- [Creating, Deleting, and Moving Files and Directories](../../visual-basic/developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)
+- [Creating, Deleting, and Moving Files and Directories](../developing-apps/programming/drives-directories-files/creating-deleting-and-moving-files-and-directories.md)

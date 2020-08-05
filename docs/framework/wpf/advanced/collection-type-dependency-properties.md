@@ -14,11 +14,11 @@ ms.assetid: 99f96a42-3ab7-4f64-a16b-2e10d654e97c
 # Collection-Type Dependency Properties
 This topic provides guidance and suggested patterns for how to implement a dependency property where the type of the property is a collection type.  
 
-<a name="implementing"></a>   
+<a name="implementing"></a>
 ## Implementing a Collection-Type Dependency Property  
  For a dependency property in general, the implementation pattern that you follow is that you define a CLR property wrapper, where that property is backed by a <xref:System.Windows.DependencyProperty> identifier rather than a field or other construct. You follow this same pattern when you implement a collection-type property. However, a collection-type property introduces some complexity to the pattern whenever the type that is contained within the collection is itself a <xref:System.Windows.DependencyObject> or <xref:System.Windows.Freezable> derived class.  
   
-<a name="initializing"></a>   
+<a name="initializing"></a>
 ## Initializing the Collection Beyond the Default Value  
  When you create a dependency property, you do not specify the property default value as the initial field value. Instead, you specify the default value through the dependency property metadata. If your property is a reference type, the default value specified in dependency property metadata is not a default value per instance; instead it is a default value that applies to all instances of the type. Therefore you must be careful to not use the singular static collection defined by the collection property metadata as the working default value for newly created instances of your type. Instead, you must make sure that you deliberately set the collection value to a unique (instance) collection as part of your class constructor logic. Otherwise you will have created an unintentional singleton class.  
   

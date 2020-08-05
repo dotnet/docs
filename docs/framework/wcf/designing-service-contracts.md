@@ -1,5 +1,6 @@
 ---
 title: "Designing Service Contracts"
+description: Learn about service contracts, including how to create them, available operations and data types, and other aspects of service contracts in WCF programming.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -186,7 +187,7 @@ public interface ISampleService
   public string GetString();  
   
   [OperationContractAttribute]  
-  public int GetInt();    
+  public int GetInt();
 }  
 ```  
   
@@ -217,28 +218,28 @@ public interface IExplicitProtectionLevelSampleService
   public string GetString();  
   
   [OperationContractAttribute(ProtectionLevel=ProtectionLevel.None)]  
-  public int GetInt();    
+  public int GetInt();
   [OperationContractAttribute(ProtectionLevel=ProtectionLevel.EncryptAndSign)]  
-  public int GetGuid();    
+  public int GetGuid();
 }  
 ```  
   
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-<ServiceContract()> _   
-Public Interface IExplicitProtectionLevelSampleService   
-    <OperationContract()> _   
-    Public Function GetString() As String   
-    End Function   
+<ServiceContract()> _
+Public Interface IExplicitProtectionLevelSampleService
+    <OperationContract()> _
+    Public Function GetString() As String
+    End Function
   
-    <OperationContract(ProtectionLevel := ProtectionLevel.None)> _   
-    Public Function GetInt() As Integer   
-    End Function   
+    <OperationContract(ProtectionLevel := ProtectionLevel.None)> _
+    Public Function GetInt() As Integer
+    End Function
   
-    <OperationContractAttribute(ProtectionLevel := ProtectionLevel.EncryptAndSign)> _   
-    Public Function GetGuid() As Integer   
-    End Function   
+    <OperationContractAttribute(ProtectionLevel := ProtectionLevel.EncryptAndSign)> _
+    Public Function GetGuid() As Integer
+    End Function
   
 End Interface  
 ```  

@@ -3,6 +3,7 @@ title: Project structure for Blazor apps
 description: Learn how the project structures of ASP.NET Web Forms and Blazor projects compare.
 author: danroth27
 ms.author: daroth
+no-loc: [Blazor, WebAssembly]
 ms.date: 09/11/2019
 ---
 # Project structure for Blazor apps
@@ -117,7 +118,7 @@ Most files in Blazor projects are *.razor* files. Razor is a templating language
 
 Each Razor component file is compiled into a .NET class when the project is built. The generated class captures the component's state, rendering logic, lifecycle methods, event handlers, and other logic. We'll look at authoring components in the [Building reusable UI components with Blazor](./components.md) section.
 
-The *_Imports.razor* files aren't Razor component files. Instead, they define a set of Razor directives to import into other *.razor* files within the same folder and in its subfolders. For example, a *_Imports.razor* file is a conventional way to add `using` statements for commonly used namespaces:
+The *_Imports.razor* files aren't Razor component files. Instead, they define a set of Razor directives to import into other *.razor* files within the same folder and in its subfolders. For example, a *_Imports.razor* file is a conventional way to add `using` directives for commonly used namespaces:
 
 ```razor
 @using System.Net.Http

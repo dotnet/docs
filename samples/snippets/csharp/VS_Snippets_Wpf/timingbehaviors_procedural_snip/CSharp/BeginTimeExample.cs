@@ -19,10 +19,10 @@ namespace Microsoft.Samples.Animation.TimingBehaviors
     {
         public BeginTimeExample()
         {
-        
+
             // Create a name scope for the page.
             NameScope.SetNameScope(this, new NameScope());
-            
+
             this.WindowTitle = "BeginTime Example";
 
             StackPanel myStackPanel = new StackPanel();

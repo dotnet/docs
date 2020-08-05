@@ -38,9 +38,9 @@
          this.toolStripProgressBar4 = new System.Windows.Forms.ToolStripProgressBar();
          this.toolStrip1.SuspendLayout();
          this.SuspendLayout();
-         // 
+         //
          // toolStrip1
-         // 
+         //
          this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
             this.toolStripButton2,
@@ -53,9 +53,9 @@
          this.toolStrip1.Size = new System.Drawing.Size(579, 25);
          this.toolStrip1.TabIndex = 0;
          this.toolStrip1.Text = "toolStrip1";
-         // 
+         //
          // toolStripButton1
-         // 
+         //
          this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
          this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
          this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -63,9 +63,9 @@
          this.toolStripButton1.Size = new System.Drawing.Size(96, 22);
          this.toolStripButton1.Text = "Add Work Items";
          this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-         // 
+         //
          // toolStripButton2
-         // 
+         //
          this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
          this.toolStripButton2.Enabled = false;
          this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
@@ -74,30 +74,30 @@
          this.toolStripButton2.Size = new System.Drawing.Size(47, 22);
          this.toolStripButton2.Text = "Cancel";
          this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-         // 
+         //
          // toolStripProgressBar1
-         // 
+         //
          this.toolStripProgressBar1.Name = "toolStripProgressBar1";
          this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 22);
-         // 
+         //
          // toolStripProgressBar2
-         // 
+         //
          this.toolStripProgressBar2.Name = "toolStripProgressBar2";
          this.toolStripProgressBar2.Size = new System.Drawing.Size(100, 22);
-         // 
+         //
          // toolStripProgressBar3
-         // 
+         //
          this.toolStripProgressBar3.Name = "toolStripProgressBar3";
          this.toolStripProgressBar3.Size = new System.Drawing.Size(100, 22);
          this.toolStripProgressBar3.Step = 1;
-         // 
+         //
          // toolStripProgressBar4
-         // 
+         //
          this.toolStripProgressBar4.Name = "toolStripProgressBar4";
          this.toolStripProgressBar4.Size = new System.Drawing.Size(100, 22);
-         // 
+         //
          // Form1
-         // 
+         //
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
          this.ClientSize = new System.Drawing.Size(579, 29);

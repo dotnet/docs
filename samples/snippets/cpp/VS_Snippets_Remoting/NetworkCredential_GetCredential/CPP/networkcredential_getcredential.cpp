@@ -56,7 +56,7 @@ int main()
    {
       Console::WriteLine( "\nPlease enter a protected resource Url and other details as*  command line parameter as below:" );
       Console::WriteLine( "\nUsage: NetworkCredential_GetCredential URLname username password" );
-      Console::WriteLine( "\nExample: NetworkCredential_GetCredential http://www.microsoft.com/net/ george george123" );
+      Console::WriteLine( "\nExample: NetworkCredential_GetCredential http://dotnet.microsoft.com/ george george123" );
    }
    else
    {

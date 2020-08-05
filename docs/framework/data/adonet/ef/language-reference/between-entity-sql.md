@@ -9,7 +9,7 @@ Determines whether an expression results in a value in a specified range. The [!
 ## Syntax  
   
 ```csharp  
-expression [ NOT ] BETWEEN begin_expression AND end_expression    
+expression [ NOT ] BETWEEN begin_expression AND end_expression
 ```  
   
 ## Arguments  

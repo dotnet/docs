@@ -20,21 +20,21 @@ namespace SDKSample
             StreamGeometry geometry = new StreamGeometry();
             geometry.FillRule = FillRule.EvenOdd;
 
-            // Open a StreamGeometryContext that can be used to describe this StreamGeometry object's contents. 
+            // Open a StreamGeometryContext that can be used to describe this StreamGeometry object's contents.
             using (StreamGeometryContext ctx = geometry.Open())
             {
                 // Set the begin point of the shape.
                 ctx.BeginFigure(new Point(10, 100), true /* is filled */, false /* is closed */);
 
                 // Create an arc. Draw the arc from the begin point to 200,100 with the specified parameters.
-                ctx.ArcTo(new Point(200, 100), new Size(100, 50), 45 /* rotation angle */, true /* is large arc */, 
+                ctx.ArcTo(new Point(200, 100), new Size(100, 50), 45 /* rotation angle */, true /* is large arc */,
                           SweepDirection.Counterclockwise, true /* is stroked */, false /* is smooth join */);
             }
 
             // Freeze the geometry (make it unmodifiable)
             // for additional performance benefits.
             geometry.Freeze();
-            
+
             // specify the shape (arc) of the path using the StreamGeometry.
             myPath.Data = geometry;
 

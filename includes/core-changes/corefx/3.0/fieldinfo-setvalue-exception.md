@@ -23,7 +23,7 @@ Alternatively, you can remove the <xref:System.Reflection.FieldAttributes.InitOn
 
 #### Category
 
-CoreFx
+Core .NET libraries
 
 #### Affected APIs
 
@@ -32,7 +32,7 @@ CoreFx
 
 <!--
 
-### Affected APIs
+#### Affected APIs
 
 - `M:System.Reflection.FieldInfo.SetValue(System.Object,System.Object)`
 - `M:System.Reflection.FieldInfo.SetValue(System.Object,System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Globalization.CultureInfo)`

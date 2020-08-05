@@ -21,7 +21,7 @@ namespace cs_walk2
 
             // <Snippet3>
             // Query for customers who have placed orders.
-            var custQuery = 
+            var custQuery =
                 from cust in Customers
                 where cust.Orders.Any()
                 select cust;
@@ -40,7 +40,7 @@ namespace cs_walk2
             // Use a connection string.
             Northwind db = new Northwind(@"C:\linqtest5\northwnd.mdf");
 
-            // Query for customers from Seattle. 
+            // Query for customers from Seattle.
             var custQuery =
                 from cust in db.Customers
                 where cust.City == "Seattle"

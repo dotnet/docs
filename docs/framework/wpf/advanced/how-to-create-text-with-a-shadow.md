@@ -13,7 +13,7 @@ The examples in this section show how to create a shadow effect for displayed te
 ## Example  
  The <xref:System.Windows.Media.Effects.DropShadowEffect> object allows you to create a variety of drop shadow effects for [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] objects. The following example shows a drop shadow effect applied to text. In this case, the shadow is a soft shadow, which means the shadow color blurs.  
   
- ![Text shadow with Softness &#61; 0.25](./media/how-to-create-text-with-a-shadow/drop-shadow-text-effect.jpg) 
+ ![Text shadow with Softness &#61; 0.25](./media/how-to-create-text-with-a-shadow/drop-shadow-text-effect.jpg)
   
  You can control the width of a shadow by setting the <xref:System.Windows.Media.Effects.DropShadowEffect.ShadowDepth%2A> property. A value of `4.0` indicates a shadow width of 4 pixels. You can control the softness, or blur, of a shadow by modifying the <xref:System.Windows.Media.Effects.DropShadowEffect.BlurRadius%2A> property. A value of `0.0` indicates no blurring. The following code example shows how to create a soft shadow.  
   
@@ -24,7 +24,7 @@ The examples in this section show how to create a shadow effect for displayed te
   
  The following example shows a hard drop shadow effect applied to text. In this case, the shadow is not blurred.  
   
- ![Text shadow with Softness &#61; 0](./media/how-to-create-text-with-a-shadow/text-shadow-softness.jpg) 
+ ![Text shadow with Softness &#61; 0](./media/how-to-create-text-with-a-shadow/text-shadow-softness.jpg)
   
  You can create a hard shadow by setting the <xref:System.Windows.Media.Effects.DropShadowEffect.BlurRadius%2A> property to `0.0`, which indicates that no blurring is used. You can control the direction of the shadow by modifying the <xref:System.Windows.Media.Effects.DropShadowEffect.Direction%2A> property. Set the directional value of this property to a degree between `0` and `360`. The following illustration shows the directional values of the <xref:System.Windows.Media.Effects.DropShadowEffect.Direction%2A> property setting.  
   
@@ -50,7 +50,7 @@ The examples in this section show how to create a shadow effect for displayed te
   
  The following code example uses a <xref:System.Windows.Media.TranslateTransform> to offset text. In this example, a slightly offset copy of text below the primary text creates a shadow effect.  
   
- ![Text shadow using a TranslateTransform](./media/how-to-create-text-with-a-shadow/text-transform-shadow-effect.jpg)    
+ ![Text shadow using a TranslateTransform](./media/how-to-create-text-with-a-shadow/text-transform-shadow-effect.jpg)
   
  The following code example shows how to create a transform for a shadow effect.  
   

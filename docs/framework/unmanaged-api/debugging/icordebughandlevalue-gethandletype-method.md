@@ -32,7 +32,7 @@ HRESULT GetHandleType (
  [out] A pointer to a value of the CorDebugHandleType enumeration that indicates the type of this handle.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** CorDebug.idl, CorDebug.h  
   

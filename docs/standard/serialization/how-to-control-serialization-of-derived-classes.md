@@ -1,5 +1,6 @@
 ---
 title: "How to: Control Serialization of Derived Classes"
+description: You can customize an XML stream by deriving a class from an existing class and instructing the XmlSerializer instance how to serialize the new class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -232,6 +233,6 @@ public class Run
 - <xref:System.Xml.Serialization.XmlElementAttribute>
 - <xref:System.Xml.Serialization.XmlAttributes>
 - <xref:System.Xml.Serialization.XmlAttributeOverrides>
-- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [How to: Specify an Alternate Element Name for an XML Stream](../../../docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Specify an Alternate Element Name for an XML Stream](how-to-specify-an-alternate-element-name-for-an-xml-stream.md)

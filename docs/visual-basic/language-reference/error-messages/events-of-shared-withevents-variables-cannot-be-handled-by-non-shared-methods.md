@@ -19,5 +19,5 @@ A variable declared with the `Shared` modifier is a shared variable. A shared va
   
 ## See also
 
-- [Shared](../../../visual-basic/language-reference/modifiers/shared.md)
-- [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md)
+- [Shared](../modifiers/shared.md)
+- [WithEvents](../modifiers/withevents.md)

@@ -26,7 +26,7 @@ namespace Extension_Methods_Simple
         static void Main(string[] args)
         {
             string s = "The quick brown fox jumped over the lazy dog.";
-            // Call the method as if it were an 
+            // Call the method as if it were an
             // instance method on the type. Note that the first
             // parameter is not specified by the calling code.
             int i = s.WordCount();
@@ -49,7 +49,7 @@ namespace EnumExtension
 {
     // Define an extension method in a non-nested static class.
     public static class Extensions
-    {        
+    {
         public static Grades minPassing = Grades.D;
         public static bool Passing(this Grades grade)
         {
@@ -59,7 +59,7 @@ namespace EnumExtension
 
     public enum Grades { F = 0, D=1, C=2, B=3, A=4 };
     class Program
-    {       
+    {
         static void Main(string[] args)
         {
             Grades g1 = Grades.D;
@@ -87,22 +87,22 @@ namespace EnumExtension
 } //namespace Extension2
 
     //<snippet3>
-    class ExtensionMethods2    
+    class ExtensionMethods2
     {
-        
+
         static void Main()
-        {            
+        {
             int[] ints = { 10, 45, 15, 39, 21, 26 };
             var result = ints.OrderBy(g => g);
             foreach (var i in result)
             {
                 System.Console.Write(i + " ");
-            }           
-        }        
+            }
+        }
     }
     //Output: 10 15 21 26 39 45
     //</snippet3>
-    
+
 //<snippet4>
 namespace ExtensionMethods
 {
@@ -110,14 +110,14 @@ namespace ExtensionMethods
     {
         public static int WordCount(this String str)
         {
-            return str.Split(new char[] { ' ', '.', '?' }, 
+            return str.Split(new char[] { ' ', '.', '?' },
                              StringSplitOptions.RemoveEmptyEntries).Length;
         }
-    }   
+    }
 }
 //</snippet4>
 
-//<snippet5>       
+//<snippet5>
 // Define an interface named IMyInterface.
 namespace DefineIMyInterface
 {
@@ -137,7 +137,7 @@ namespace Extensions
     using System;
     using DefineIMyInterface;
 
-    // The following extension methods can be accessed by instances of any 
+    // The following extension methods can be accessed by instances of any
     // class that implements IMyInterface.
     public static class Extension
     {
@@ -153,7 +153,7 @@ namespace Extensions
                 ("Extension.MethodA(this IMyInterface myInterface, string s)");
         }
 
-        // This method is never called in ExtensionMethodsDemo1, because each 
+        // This method is never called in ExtensionMethodsDemo1, because each
         // of the three classes A, B, and C implements a method named MethodB
         // that has a matching signature.
         public static void MethodB(this IMyInterface myInterface)
@@ -206,7 +206,7 @@ namespace ExtensionMethodsDemo1
             //      -- MethodA with a string argument
             //      -- MethodB with no argument.
 
-            // A contains no MethodA, so each call to MethodA resolves to 
+            // A contains no MethodA, so each call to MethodA resolves to
             // the extension method that has a matching signature.
             a.MethodA(1);           // Extension.MethodA(IMyInterface, int)
             a.MethodA("hello");     // Extension.MethodA(IMyInterface, string)
@@ -220,7 +220,7 @@ namespace ExtensionMethodsDemo1
             b.MethodA(1);           // B.MethodA(int)
             b.MethodB();            // B.MethodB()
 
-            // B has no matching method for the following call, but 
+            // B has no matching method for the following call, but
             // class Extension does.
             b.MethodA("hello");     // Extension.MethodA(IMyInterface, string)
 

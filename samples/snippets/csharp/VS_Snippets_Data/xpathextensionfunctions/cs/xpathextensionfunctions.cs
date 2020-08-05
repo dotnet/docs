@@ -18,25 +18,25 @@ namespace XPathExtensionFunctions
                 Console.Write("\r\nEnter key character to count in names: ");
                 keychar = Console.ReadKey().KeyChar;
                 if (keychar.Equals('q')) return;
-                
+
                 try
                 {
                     // Load source XML into an XPathDocument object instance.
                     XPathDocument xmldoc = new XPathDocument("Tasks.xml");
 
-                    // Create an XPathNavigator from the XPathDocument.                    
+                    // Create an XPathNavigator from the XPathDocument.
                     XPathNavigator nav = xmldoc.CreateNavigator();
 
                     //Create argument list and add the parameters.
                     XsltArgumentList varList = new XsltArgumentList();
 
-                    varList.AddParam("charToCount", string.Empty, keychar); 
+                    varList.AddParam("charToCount", string.Empty, keychar);
 
-                    // Create an instance of custom XsltContext object. 
-                    // Pass in the XsltArgumentList object 
-                    // in which the user-defined variable will be defined.                    
+                    // Create an instance of custom XsltContext object.
+                    // Pass in the XsltArgumentList object
+                    // in which the user-defined variable will be defined.
                     CustomContext context = new CustomContext(new NameTable(), varList);
-                    
+
                     // Add a namespace definition for the namespace prefix that qualifies the
                     // user-defined function name in the query expression.
                     context.AddNamespace("Extensions", "http://xpathExtensions");
@@ -46,7 +46,7 @@ namespace XPathExtensionFunctions
                     XPathExpression xpath = XPathExpression.Compile(
                         "/Tasks/Name[Extensions:CountChar(., $charToCount) = 2]");
 
-                    xpath.SetContext(context);                  
+                    xpath.SetContext(context);
                     XPathNodeIterator iter = nav.Select(xpath);
 
                     if (iter.Count.Equals(0))
@@ -56,7 +56,7 @@ namespace XPathExtensionFunctions
                     {
                         Console.WriteLine("\n\n\rResults that contain 2 instances of : "
                                                                  + keychar.ToString());
-                        // Iterate over the selected nodes and output the 
+                        // Iterate over the selected nodes and output the
                         // results filtered by extension function.
                         while (iter.MoveNext())
                         {
@@ -90,9 +90,9 @@ namespace XPathExtensionFunctions
                 argList = args;
             }
 
-            // Function to resolve references to user-defined XPath extension 
-            // functions in XPath query expressions evaluated by using an 
-            // instance of this class as the XsltContext. 
+            // Function to resolve references to user-defined XPath extension
+            // functions in XPath query expressions evaluated by using an
+            // instance of this class as the XsltContext.
             public override System.Xml.Xsl.IXsltContextFunction ResolveFunction(
                                         string prefix, string name,
                                         System.Xml.XPath.XPathResultType[] argTypes)
@@ -119,13 +119,13 @@ namespace XPathExtensionFunctions
                         case "Left": // This function is implemented but not called.
                             return new XPathExtensionFunctions(2, 2, XPathResultType.String,
                                                                              argTypes, "Left");
-                    }                    
+                    }
                 }
                 // Return null if none of the functions match name.
                 return null;
             }
 
-            // Function to resolve references to user-defined XPath 
+            // Function to resolve references to user-defined XPath
             // extension variables in XPath query.
             public override System.Xml.Xsl.IXsltContextVariable ResolveVariable(
                                                              string prefix, string name)
@@ -139,15 +139,15 @@ namespace XPathExtensionFunctions
                 if (name.Equals("text") || name.Equals("charToCount") ||
                     name.Equals("right") || name.Equals("left"))
                 {
-                    // Create an instance of an XPathExtensionVariable 
-                    // (custom IXsltContextVariable implementation) object 
+                    // Create an instance of an XPathExtensionVariable
+                    // (custom IXsltContextVariable implementation) object
                     //  by supplying the name of the user-defined variable to resolve.
                     XPathExtensionVariable var;
                     var = new XPathExtensionVariable(prefix, name);
 
                     // The Evaluate method of the returned object will be used at run time
                     // to resolve the user-defined variable that is referenced in the XPath
-                    // query expression. 
+                    // query expression.
                     return var;
                 }
                 return null;
@@ -173,9 +173,9 @@ namespace XPathExtensionFunctions
                 }
             }
 
-            // The XsltArgumentList property is accessed by the Evaluate method of the 
-            // XPathExtensionVariable object that the ResolveVariable method returns. It is used 
-            // to resolve references to user-defined variables in XPath query expressions. 
+            // The XsltArgumentList property is accessed by the Evaluate method of the
+            // XPathExtensionVariable object that the ResolveVariable method returns. It is used
+            // to resolve references to user-defined variables in XPath query expressions.
             public XsltArgumentList ArgList
             {
                 get
@@ -188,7 +188,7 @@ namespace XPathExtensionFunctions
         //</snippet2>
 
         //<snippet3>
-        // The interface that resolves and executes a specified user-defined function. 
+        // The interface that resolves and executes a specified user-defined function.
         public class XPathExtensionFunctions : System.Xml.Xsl.IXsltContextFunction
         {
             // The data types of the arguments passed to XPath extension function.
@@ -202,7 +202,7 @@ namespace XPathExtensionFunctions
             // The name of the extension function.
             private string FunctionName;
 
-            // Constructor used in the ResolveFunction method of the custom XsltContext 
+            // Constructor used in the ResolveFunction method of the custom XsltContext
             // class to return an instance of IXsltContextFunction at run time.
             public XPathExtensionFunctions(int minArgs, int maxArgs,
                 XPathResultType returnType, XPathResultType[] argTypes, string functionName)
@@ -261,7 +261,7 @@ namespace XPathExtensionFunctions
                 return charCount;
             }
 
-            // This overload will not force the user 
+            // This overload will not force the user
             // to cast to string in the xpath expression
             private string FindTaskBy(XPathNodeIterator node, string text)
             {
@@ -281,7 +281,7 @@ namespace XPathExtensionFunctions
                 return str.Substring((str.Length - length), length);
             }
 
-            // Function to execute a specified user-defined XPath extension 
+            // Function to execute a specified user-defined XPath extension
             // function at run time.
             public object Invoke(System.Xml.Xsl.XsltContext xsltContext,
                            object[] args, System.Xml.XPath.XPathNavigator docContext)
@@ -291,7 +291,7 @@ namespace XPathExtensionFunctions
                                                      Convert.ToChar(args[1]));
                 if (FunctionName == "FindTaskBy")
                     return FindTaskBy((XPathNodeIterator)args[0],
-                                                  Convert.ToString(args[1])); 
+                                                  Convert.ToString(args[1]));
 
                 if (FunctionName == "Left")
                     return (Object)Left(Convert.ToString(args[0]),
@@ -299,7 +299,7 @@ namespace XPathExtensionFunctions
 
                 if (FunctionName == "Right")
                     return (Object)Right(Convert.ToString(args[0]),
-                                                     Convert.ToInt16(args[1]));                        
+                                                     Convert.ToInt16(args[1]));
 
                 return null;
             }
@@ -309,8 +309,8 @@ namespace XPathExtensionFunctions
 
         //<snippet4>
         // The interface used to resolve references to user-defined variables
-        // in XPath query expressions at run time. An instance of this class 
-        // is returned by the overridden ResolveVariable function of the 
+        // in XPath query expressions at run time. An instance of this class
+        // is returned by the overridden ResolveVariable function of the
         // custom XsltContext class.
         public class XPathExtensionVariable : IXsltContextVariable
         {

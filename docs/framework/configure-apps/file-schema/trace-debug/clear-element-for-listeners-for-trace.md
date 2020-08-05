@@ -60,15 +60,15 @@ Clears the `Listeners` collection for trace.
     <trace autoflush="false" indentsize="4">  
       <listeners>  
         <clear/>  
-        <add name="console"   
+        <add name="console"
           type="System.Diagnostics.ConsoleTraceListener" >  
-          <filter type="System.Diagnostics.EventTypeFilter"   
+          <filter type="System.Diagnostics.EventTypeFilter"
             initializeData="Error" />  
         </add>  
       </listeners>  
     </trace>  
   </system.diagnostics>  
-</configuration>   
+</configuration>
 ```  
   
 ## See also

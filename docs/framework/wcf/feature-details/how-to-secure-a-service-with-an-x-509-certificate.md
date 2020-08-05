@@ -9,11 +9,11 @@ ms.assetid: 2d06c2aa-d0d7-4e5e-ad7e-77416aa1c10b
 # How to: Secure a Service with an X.509 Certificate
 Securing a service with an X.509 certificate is a basic technique that most bindings in Windows Communication Foundation (WCF) use. This topic walks through the steps of configuring a self-hosted service with an X.509 certificate.  
   
- A prerequisite is a valid certificate that can be used to authenticate the server. The certificate must be issued to the server by a trusted certificate authority. If the certificate is not valid, any client trying to use the service will not trust the service, and consequently no connection will be made. For more information about using certificates, see [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
+ A prerequisite is a valid certificate that can be used to authenticate the server. The certificate must be issued to the server by a trusted certificate authority. If the certificate is not valid, any client trying to use the service will not trust the service, and consequently no connection will be made. For more information about using certificates, see [Working with Certificates](working-with-certificates.md).  
   
 ### To configure a service with a certificate using code  
   
-1. Create the service contract and the implemented service. For more information, see [Designing and Implementing Services](../../../../docs/framework/wcf/designing-and-implementing-services.md).  
+1. Create the service contract and the implemented service. For more information, see [Designing and Implementing Services](../designing-and-implementing-services.md).  
   
 2. Create an instance of the <xref:System.ServiceModel.WSHttpBinding> class and set its security mode to <xref:System.ServiceModel.SecurityMode.Message>, as shown in the following code.  
   
@@ -78,4 +78,4 @@ Securing a service with an X.509 certificate is a basic technique that most bind
   
 ## See also
 
-- [Working with Certificates](../../../../docs/framework/wcf/feature-details/working-with-certificates.md)
+- [Working with Certificates](working-with-certificates.md)

@@ -17,7 +17,7 @@ public class SignXML
             cspParams.KeyContainerName = "XML_DSIG_RSA_KEY";
             // </snippet2>
 
-            // Create a new RSA signing key and save it in the container. 
+            // Create a new RSA signing key and save it in the container.
             // <snippet3>
             RSACryptoServiceProvider rsaKey = new RSACryptoServiceProvider(cspParams);
             // </snippet3>
@@ -31,7 +31,7 @@ public class SignXML
             xmlDoc.Load("test.xml");
             // </snippet4>
 
-            // Sign the XML document. 
+            // Sign the XML document.
             SignXml(xmlDoc, rsaKey);
 
             Console.WriteLine("XML file signed.");
@@ -47,8 +47,8 @@ public class SignXML
         }
     }
 
-    // Sign an XML file. 
-    // This document cannot be verified unless the verifying 
+    // Sign an XML file.
+    // This document cannot be verified unless the verifying
     // code has the key with which it was signed.
     public static void SignXml(XmlDocument xmlDoc, RSA rsaKey)
     {

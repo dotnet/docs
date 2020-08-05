@@ -21,7 +21,7 @@ namespace Microsoft.WCF.Documentation
       try
       {
         //<snippet10>
-        // Download all metadata. 
+        // Download all metadata.
         ServiceEndpointCollection endpoints
           = MetadataResolver.Resolve(
             typeof(IStatefulService),

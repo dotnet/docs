@@ -1,5 +1,6 @@
 ---
 title: "Large Data and Streaming"
+description: Learn about considerations for WCF XML-based communication, encoders, and streaming data, including the transfer of binary data.
 ms.date: "03/30/2017"
 ms.assetid: ab2851f5-966b-4549-80ab-c94c5c0502d2
 ---
@@ -71,7 +72,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
  If your solution does not require interoperability, but you still want to use HTTP transport, you can compose the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> into a custom binding that uses the <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class for the transport. If a number of clients on your service require interoperability, it is recommended that you expose parallel endpoints that each has the appropriate transport and encoding choices for the respective clients enabled.  
   
 ### Enabling MTOM  
- When interoperability is a requirement and large binary data must be sent, then MTOM message encoding is the alternative encoding strategy that you can enable on the standard <xref:System.ServiceModel.BasicHttpBinding> or <xref:System.ServiceModel.WSHttpBinding> bindings by setting the respective `MessageEncoding` property to <xref:System.ServiceModel.WSMessageEncoding.Mtom> or by composing the <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> into a <xref:System.ServiceModel.Channels.CustomBinding>. The following example code, extracted from the [MTOM Encoding](../../../../docs/framework/wcf/samples/mtom-encoding.md) sample demonstrates how to enable MTOM in configuration.  
+ When interoperability is a requirement and large binary data must be sent, then MTOM message encoding is the alternative encoding strategy that you can enable on the standard <xref:System.ServiceModel.BasicHttpBinding> or <xref:System.ServiceModel.WSHttpBinding> bindings by setting the respective `MessageEncoding` property to <xref:System.ServiceModel.WSMessageEncoding.Mtom> or by composing the <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> into a <xref:System.ServiceModel.Channels.CustomBinding>. The following example code, extracted from the [MTOM Encoding](../samples/mtom-encoding.md) sample demonstrates how to enable MTOM in configuration.  
   
 ```xml  
 <system.serviceModel>  
@@ -82,7 +83,7 @@ Windows Communication Foundation (WCF) is an XML-based communications infrastruc
       </wsHttpBinding>  
     </bindings>  
      …  
-<system.serviceModel>  
+</system.serviceModel>  
 ```  
   
  As mentioned earlier, the decision to use MTOM encoding depends on the data volume you are sending. Also, because MTOM is enabled at the binding level, enabling MTOM affects all operations on a given endpoint.  
@@ -102,7 +103,7 @@ class MyData
     byte[] binaryBuffer;  
     [DataMember]  
     string someStringData;  
-}   
+}
 ```  
   
  When using MTOM, the preceding data contract is serialized according to the following rules:  
@@ -172,7 +173,7 @@ class MyData
       </basicHttpBinding>  
     </bindings>  
      …  
-<system.serviceModel>  
+</system.serviceModel>  
 ```  
   
  When you instantiate your binding in code, you must set the respective `TransferMode` property of the binding (or the transport binding element if you are composing a custom binding) to one of the previously mentioned values.  
@@ -212,7 +213,7 @@ public class UploadStreamMessage
    public string appRef;  
    [MessageBodyMember]  
    public Stream data;  
-}   
+}
 ```  
   
  Streamed transfers end and the message is closed when the stream reaches the end of file (EOF). When sending a message (returning a value or invoking an operation), you can pass a <xref:System.IO.FileStream> and the WCF infrastructure subsequently pulls all the data from that stream until the stream has been completely read and reached EOF. To transfer streamed data for the source that no such pre-built <xref:System.IO.Stream> derived class exists, construct such a class, overlay that class over your stream source, and use that as the argument or return value.  
@@ -228,11 +229,11 @@ public class UploadStreamMessage
   
  Therefore, restricting the maximum incoming message size is not enough in this case. The `MaxBufferSize` property is required to constrain the memory that WCF buffers. It is important to set this to a safe value (or keep it at the default value) when streaming. For example, suppose your service must receive files up to 4 GB in size and store them on the local disk. Suppose also that your memory is constrained in such a way that you can only buffer 64 KB of data at a time. Then you would set the `MaxReceivedMessageSize` to 4 GB and `MaxBufferSize` to 64 KB. Also, in your service implementation, you must ensure that you read only from the incoming stream in 64-KB chunks and do not read the next chunk before the previous one has been written to disk and discarded from memory.  
   
- It is also important to understand that this quota only limits the buffering done by WCF and cannot protect you against any buffering that you do in your own service or client implementation. For more information about additional security considerations, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md).  
+ It is also important to understand that this quota only limits the buffering done by WCF and cannot protect you against any buffering that you do in your own service or client implementation. For more information about additional security considerations, see [Security Considerations for Data](security-considerations-for-data.md).  
   
 > [!NOTE]
 > The decision to use either buffered or streamed transfers is a local decision of the endpoint. For HTTP transports, the transfer mode does not propagate across a connection or to proxy servers and other intermediaries. Setting the transfer mode is not reflected in the description of the service interface. After generating a WCF client to a service, you must edit the configuration file for services intended to be used with streamed transfers to set the mode. For TCP and named pipe transports, the transfer mode is propagated as a policy assertion.  
   
 ## See also
 
-- [How to: Enable Streaming](../../../../docs/framework/wcf/feature-details/how-to-enable-streaming.md)
+- [How to: Enable Streaming](how-to-enable-streaming.md)

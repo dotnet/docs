@@ -533,8 +533,8 @@ Module Module1
             Dim weight = CType(23.77, Decimal?)
             Dim query = _
                 From product In context.Products _
-                    Where product.Weight = weight _
-                    Select product
+                Where product.Weight = weight _
+                Select product
             '</SnippetCastToNullable>
             For Each product As Product In query
                 Console.WriteLine("Name: {0}", product.Name)
@@ -998,8 +998,8 @@ Module Module1
             Dim products = context.Products
 
             Dim query = From product In products _
-                    Where product.Color = color _
-                    Select product
+                        Where product.Color = color _
+                        Select product
 
             For Each product As Product In query
                 Console.WriteLine("Name: {0}", product.Name)
@@ -1223,7 +1223,7 @@ Module Module1
     ' </SnippetCompiledQuery7>
 #End Region
 
-	Sub ProjectToAnonType()
+    Sub ProjectToAnonType()
         '<snippetProjToAnonType1>
         Using context As New AdventureWorksEntities()
             Dim resultWithoutRelatedObjects = context.Contacts. _

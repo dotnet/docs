@@ -15,9 +15,9 @@ namespace NorthwindService
         {
             //<snippetEnableAccess>
             config.SetEntitySetAccessRule("Customers", EntitySetRights.ReadMultiple);
-            config.SetEntitySetAccessRule("Orders", EntitySetRights.AllRead  
+            config.SetEntitySetAccessRule("Orders", EntitySetRights.AllRead
                                         | EntitySetRights.WriteMerge);
-            config.SetEntitySetAccessRule("Order_Details", EntitySetRights.AllRead                             
+            config.SetEntitySetAccessRule("Order_Details", EntitySetRights.AllRead
                                         | EntitySetRights.AllWrite);
             config.SetEntitySetAccessRule("Products", EntitySetRights.ReadMultiple);
             //</snippetEnableAccess>
@@ -52,7 +52,7 @@ namespace NorthwindService
             this.Key = key;
             this.Prop = prop;
         }
-    
+
         public int Key {get; set;}
 
         public string Prop { get; set;}

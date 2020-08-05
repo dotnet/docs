@@ -28,15 +28,15 @@ namespace SDKSample
 
             // Create some transforms. These transforms
             // will be used to move and rotate the rectangle.
-            RotateTransform animatedRotateTransform = 
+            RotateTransform animatedRotateTransform =
                 new RotateTransform();
-            TranslateTransform animatedTranslateTransform = 
+            TranslateTransform animatedTranslateTransform =
                 new TranslateTransform();
 
             // Register the transforms' names with the page
             // so that they can be targeted by a Storyboard.
             this.RegisterName("AnimatedRotateTransform", animatedRotateTransform);
-            this.RegisterName("AnimatedTranslateTransform", animatedTranslateTransform);    
+            this.RegisterName("AnimatedTranslateTransform", animatedTranslateTransform);
 
             // Create a TransformGroup to contain the transforms
             // and apply the TransformGroup to the rectangle.
@@ -71,26 +71,26 @@ namespace SDKSample
             animationPath.Freeze();
 
             // Create a DoubleAnimationUsingPath to rotate the
-            // rectangle with the path by animating 
+            // rectangle with the path by animating
             // its RotateTransform.
-            DoubleAnimationUsingPath angleAnimation = 
+            DoubleAnimationUsingPath angleAnimation =
                 new DoubleAnimationUsingPath();
             angleAnimation.PathGeometry = animationPath;
             angleAnimation.Duration = TimeSpan.FromSeconds(5);
 
             // Set the Source property to Angle. This makes
             // the animation generate angle values from
-            // the path information. 
+            // the path information.
             angleAnimation.Source = PathAnimationSource.Angle;
 
             // Set the animation to target the Angle property
             // of the RotateTransform named "AnimatedRotateTransform".
             Storyboard.SetTargetName(angleAnimation, "AnimatedRotateTransform");
-            Storyboard.SetTargetProperty(angleAnimation, 
+            Storyboard.SetTargetProperty(angleAnimation,
                 new PropertyPath(RotateTransform.AngleProperty));
 
             // Create a DoubleAnimationUsingPath to move the
-            // rectangle horizontally along the path by animating 
+            // rectangle horizontally along the path by animating
             // its TranslateTransform.
             DoubleAnimationUsingPath translateXAnimation =
                 new DoubleAnimationUsingPath();
@@ -99,7 +99,7 @@ namespace SDKSample
 
             // Set the Source property to X. This makes
             // the animation generate horizontal offset values from
-            // the path information. 
+            // the path information.
             translateXAnimation.Source = PathAnimationSource.X;
 
             // Set the animation to target the X property
@@ -109,7 +109,7 @@ namespace SDKSample
                 new PropertyPath(TranslateTransform.XProperty));
 
             // Create a DoubleAnimationUsingPath to move the
-            // rectangle vertically along the path by animating 
+            // rectangle vertically along the path by animating
             // its TranslateTransform.
             DoubleAnimationUsingPath translateYAnimation =
                 new DoubleAnimationUsingPath();
@@ -118,15 +118,15 @@ namespace SDKSample
 
             // Set the Source property to Y. This makes
             // the animation generate vertical offset values from
-            // the path information. 
+            // the path information.
             translateYAnimation.Source = PathAnimationSource.Y;
 
             // Set the animation to target the Y property
             // of the TranslateTransform named "AnimatedTranslateTransform".
             Storyboard.SetTargetName(translateYAnimation, "AnimatedTranslateTransform");
             Storyboard.SetTargetProperty(translateYAnimation,
-                new PropertyPath(TranslateTransform.YProperty)); 
-      
+                new PropertyPath(TranslateTransform.YProperty));
+
             // Create a Storyboard to contain and apply the animations.
             Storyboard pathAnimationStoryboard = new Storyboard();
             pathAnimationStoryboard.RepeatBehavior = RepeatBehavior.Forever;

@@ -3,14 +3,14 @@
 public class Person
 {
    string name;
-   
+
 // <Snippet1>
    public string Name
    {
        get => name;
-       set => name = value ?? 
+       set => name = value ??
            throw new ArgumentNullException(paramName: nameof(value), message: "Name cannot be null");
-   }   
+   }
 // </Snippet1>
 }
 

@@ -25,7 +25,7 @@ class Program
         ConnectionStringSettingsCollection settings =
             ConfigurationManager.ConnectionStrings;
 
-        // Walk through the collection and return the first 
+        // Walk through the collection and return the first
         // connection string matching the providerName.
         if (settings != null)
         {

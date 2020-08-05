@@ -41,7 +41,7 @@ namespace SqlNullsCS
             Console.WriteLine("String.Equals instance method:");
             Console.WriteLine("  Two empty strings={0}", StringEquals(a, b));
         }
-        
+
         private static string SqlStringEquals(SqlString string1, SqlString string2)
         {
             // SqlString.Equals uses database semantics for evaluating nulls.

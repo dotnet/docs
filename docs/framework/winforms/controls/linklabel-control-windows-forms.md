@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: af1fd04e-e126-4fd7-9a4e-13b49010c5ca
 ---
 # LinkLabel Control (Windows Forms)
-The Windows Forms `LinkLabel` control enables you to add Web-style links to Windows Forms applications. You can use the `LinkLabel` control for everything that you can use the <xref:System.Windows.Forms.Label> control for; you also can set part of the text as a link to an object or Web page.  
+The Windows Forms `LinkLabel` control enables you to add Web-style links to Windows Forms applications. You can use the `LinkLabel` control for everything that you can use the <xref:System.Windows.Forms.Label> control for; you can also set part of the text as a link to an object or Web page.  
   
 ## In This Section  
  [LinkLabel Control Overview](linklabel-control-overview-windows-forms.md)  

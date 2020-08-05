@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Connection Pooling"
+description: Learn how ADO.NET minimizes the cost of opening connections by using SQL Server connection pooling, which reduces overhead for new connections.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -29,21 +30,21 @@ Connecting to a database server typically consists of several time-consuming ste
 using (SqlConnection connection = new SqlConnection(  
   "Integrated Security=SSPI;Initial Catalog=Northwind"))  
     {  
-        connection.Open();        
+        connection.Open();
         // Pool A is created.  
     }  
   
 using (SqlConnection connection = new SqlConnection(  
   "Integrated Security=SSPI;Initial Catalog=pubs"))  
     {  
-        connection.Open();        
+        connection.Open();
         // Pool B is created because the connection strings differ.  
     }  
   
 using (SqlConnection connection = new SqlConnection(  
   "Integrated Security=SSPI;Initial Catalog=Northwind"))  
     {  
-        connection.Open();        
+        connection.Open();
         // The connection string matches pool A.  
     }  
 ```  

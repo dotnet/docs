@@ -31,4 +31,4 @@ End Class
   
 ## See also
 
-- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md)

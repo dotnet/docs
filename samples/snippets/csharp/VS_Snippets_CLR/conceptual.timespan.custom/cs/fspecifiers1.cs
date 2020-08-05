@@ -9,14 +9,14 @@ public class Example
       string fmt;
       Console.WriteLine(ts.ToString("c"));
       Console.WriteLine();
-       
+
       for (int ctr = 1; ctr <= 7; ctr++) {
          fmt = new String('f', ctr);
          if (fmt.Length == 1) fmt = "%" + fmt;
          Console.WriteLine("{0,10}: {1:" + fmt + "}", fmt, ts);
-      } 
+      }
       Console.WriteLine();
-      
+
       for (int ctr = 1; ctr <= 7; ctr++) {
          fmt = new String('f', ctr);
          Console.WriteLine("{0,10}: {1:s\\." + fmt + "}", "s\\." + fmt, ts);
@@ -29,14 +29,14 @@ public class Example
       //            fffff: 87654
       //           ffffff: 876543
       //          fffffff: 8765432
-      //       
+      //
       //              s\.f: 29.8
       //             s\.ff: 29.87
       //            s\.fff: 29.876
       //           s\.ffff: 29.8765
       //          s\.fffff: 29.87654
       //         s\.ffffff: 29.876543
-      //        s\.fffffff: 29.8765432      
+      //        s\.fffffff: 29.8765432
       // </Snippet20>
    }
 }

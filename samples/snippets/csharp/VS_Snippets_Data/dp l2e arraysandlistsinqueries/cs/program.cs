@@ -43,8 +43,8 @@ namespace L2E_ArraysAndListsInQueriesCS
                                select p;
                 foreach (var product in products)
                 {
-                    Console.WriteLine("{0}: {1}, {2}", product.ProductID, 
-                                                       product.ProductModelID, 
+                    Console.WriteLine("{0}: {1}, {2}", product.ProductID,
+                                                       product.ProductModelID,
                                                        product.Size);
                 }
             }
@@ -59,7 +59,7 @@ namespace L2E_ArraysAndListsInQueriesCS
                 int?[] productModelIds = { 19, 26, 118 };
                 var products = AWEntities.Products.
                     Where(p => productModelIds.Contains(p.ProductModelID));
-               
+
                 foreach (var product in products)
                 {
                     Console.WriteLine("{0}: {1}", product.ProductModelID, product.ProductID);
@@ -74,13 +74,13 @@ namespace L2E_ArraysAndListsInQueriesCS
             using (AdventureWorksEntities AWEntities = new AdventureWorksEntities())
             {
                 var products = AWEntities.Products.
-                    Where(p => (new int?[] { 19, 26, 18 }).Contains(p.ProductModelID) || 
+                    Where(p => (new int?[] { 19, 26, 18 }).Contains(p.ProductModelID) ||
                                (new string[] { "L", "XL" }).Contains(p.Size));
-          
+
                 foreach (var product in products)
                 {
-                    Console.WriteLine("{0}: {1}, {2}", product.ProductID, 
-                                                       product.ProductModelID, 
+                    Console.WriteLine("{0}: {1}, {2}", product.ProductID,
+                                                       product.ProductModelID,
                                                        product.Size);
                 }
             }

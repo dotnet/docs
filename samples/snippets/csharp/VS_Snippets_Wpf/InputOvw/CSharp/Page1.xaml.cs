@@ -90,10 +90,10 @@ namespace Input_Ovw
         }
 
         //<SnippetInput_OvwHandlingInputKeyDownHandler>
-        private void OnOverviewKeyDown(object sender, KeyEventArgs e) 
+        private void OnOverviewKeyDown(object sender, KeyEventArgs e)
         {
             // If the "A" key is is pressed, open a MessageBox.
-            if (e.Key == Key.A) 
+            if (e.Key == Key.A)
             {
                 MessageBox.Show("The A key was pressed!");
             }
@@ -101,7 +101,7 @@ namespace Input_Ovw
         //</SnippetInput_OvwHandlingInputKeyDownHandler>
 
         //<SnippetInput_OvwHandlingInputClickHandler>
-        private void OnOverviewButtonClick(object sender, RoutedEventArgs e) 
+        private void OnOverviewButtonClick(object sender, RoutedEventArgs e)
         {
             // If the Button is clicked, open a MessageBox.
             MessageBox.Show("The Button was Clicked");
@@ -168,7 +168,7 @@ namespace Input_Ovw
         {
             handle();
             e.Handled = true;
-        } 
+        }
 
         public void handle()
         {

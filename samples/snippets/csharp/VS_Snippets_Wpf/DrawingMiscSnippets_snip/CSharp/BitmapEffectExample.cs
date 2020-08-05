@@ -7,7 +7,7 @@ using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 using System.Windows.Media.Effects;
 
-namespace SDKSample 
+namespace SDKSample
 {
 
     /// <summary>
@@ -34,9 +34,9 @@ namespace SDKSample
             pLineFigure.Segments.Add(pLineSegment);
             PathGeometry pGeometry = new PathGeometry();
             pGeometry.Figures.Add(pLineFigure);
-          
+
             GeometryDrawing drawing1 = new GeometryDrawing(
-                    Brushes.Lime, 
+                    Brushes.Lime,
                     new Pen(Brushes.Black, 10),
                     pGeometry
                 );
@@ -46,7 +46,7 @@ namespace SDKSample
                     new Pen(Brushes.Black, 2),
                     new EllipseGeometry(new Point(10,10), 5, 5)
                 );
-            
+
             // Create a DrawingGroup
             DrawingGroup drawingGroupWithoutBitmapEffect = new DrawingGroup();
             drawingGroupWithoutBitmapEffect.Children.Add(drawing1);
@@ -55,7 +55,7 @@ namespace SDKSample
             // Use an Image control and a DrawingImage to
             // display the drawing.
             DrawingImage drawingImage01 = new DrawingImage(drawingGroupWithoutBitmapEffect);
-            
+
             // Freeze the DrawingImage for performance benefits.
             drawingImage01.Freeze();
 
@@ -65,12 +65,12 @@ namespace SDKSample
             image01.HorizontalAlignment = HorizontalAlignment.Left;
 
             //
-            // Create another DrawingGroup and apply 
+            // Create another DrawingGroup and apply
             // a blur effect to it.
             //
 
             // Create a clone of the first DrawingGroup.
-            DrawingGroup drawingGroupWithBitmapEffect = 
+            DrawingGroup drawingGroupWithBitmapEffect =
                 drawingGroupWithoutBitmapEffect.Clone();
 
             // Create a blur effect.
@@ -83,7 +83,7 @@ namespace SDKSample
             // Use another Image control and DrawingImage
             // to display the drawing.
             DrawingImage drawingImage02 = new DrawingImage(drawingGroupWithBitmapEffect);
-            
+
             // Freeze the DrawingImage for performance benefits.
             drawingImage02.Freeze();
 
@@ -118,7 +118,7 @@ namespace SDKSample
             //
             // Use a DrawingBrush to create a checkered background for the page.
             //
-            GeometryDrawing backgroundSquareDrawing = 
+            GeometryDrawing backgroundSquareDrawing =
                 new GeometryDrawing(
                     Brushes.White,
                     null,
@@ -126,10 +126,10 @@ namespace SDKSample
             GeometryGroup twoRectangles = new GeometryGroup();
             twoRectangles.Children.Add(new RectangleGeometry(new Rect(0,0,0.5,0.5)));
             twoRectangles.Children.Add(new RectangleGeometry(new Rect(0.5,0.5,0.5,0.5)));
-            SolidColorBrush squaresBrush = 
+            SolidColorBrush squaresBrush =
                 new SolidColorBrush(Color.FromArgb(102,204,204,204));
             squaresBrush.Opacity = 0.4;
-            GeometryDrawing checkerDrawing = 
+            GeometryDrawing checkerDrawing =
                 new GeometryDrawing(
                     squaresBrush,
                     null,

@@ -65,4 +65,4 @@ End Module
 
 ## See also
 
-- [Handles](../../../visual-basic/language-reference/statements/handles-clause.md)
+- [Handles](../statements/handles-clause.md)

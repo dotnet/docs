@@ -52,13 +52,13 @@ For more information, see [Markup Extensions and WPF XAML](../../framework/wpf/a
 
 ## Property system
 
-WPF provides a set of services that can be used to extend the functionality of a type's [property](../../standard/base-types/common-type-system.md#Properties). Collectively, these services are referred to as the *WPF property system*. A property that is backed by the WPF property system is known as a dependency property.
+WPF provides a set of services that can be used to extend the functionality of a type's [property](../../standard/base-types/common-type-system.md#properties). Collectively, these services are referred to as the *WPF property system*. A property that is backed by the WPF property system is known as a dependency property.
 
 Dependency properties extend property functionality by providing the <xref:System.Windows.DependencyProperty> type that backs a property. The dependency property type is an alternative implementation of the standard pattern of backing the property with a private field.
 
 ### Dependency property
 
-In WPF, dependency properties are typically exposed as standard .NET [properties](../../standard/base-types/common-type-system.md#Properties). At a basic level, you could interact with these properties directly and never know that they're implemented as a dependency property.
+In WPF, dependency properties are typically exposed as standard .NET [properties](../../standard/base-types/common-type-system.md#properties). At a basic level, you could interact with these properties directly and never know that they're implemented as a dependency property.
 
 The purpose of dependency properties is to provide a way to compute the value of a property based on the value of other inputs. These other inputs might include system properties such as themes and user preferences, or just-in-time property from data binding and animations.
 

@@ -17,16 +17,16 @@ public class Class1
    }
 
    private static void UseStringFormat()
-   {   
+   {
       // <Snippet1>
       int numberOfFleas = 12;
       string miscInfo = String.Format("Your dog has {0} fleas. " +
-                                      "It is time to get a flea collar. " + 
-                                      "The current universal date is: {1:u}.", 
+                                      "It is time to get a flea collar. " +
+                                      "The current universal date is: {1:u}.",
                                       numberOfFleas, DateTime.Now);
       Console.WriteLine(miscInfo);
       // The example displays the following output:
-      //       Your dog has 12 fleas. It is time to get a flea collar. 
+      //       Your dog has 12 fleas. It is time to get a flea collar.
       //       The current universal date is: 2008-03-28 13:31:40Z.
       // </Snippet1>
    }
@@ -39,7 +39,7 @@ public class Class1
       Console.WriteLine(String.Concat(helloString1, ' ', helloString2));
       // The example displays the following output:
       //      Hello World!
-      // </Snippet2>      
+      // </Snippet2>
    }
 
    private static void UseStringJoin()
@@ -49,17 +49,17 @@ public class Class1
       Console.WriteLine(String.Join(" ", words));
       // The example displays the following output:
       //      Hello and welcome to my world!
-      // </Snippet3>      
+      // </Snippet3>
    }
 
    private static void UseStringInsert()
    {
        // <Snippet4>
-     string sentence = "Once a time.";   
+     string sentence = "Once a time.";
       Console.WriteLine(sentence.Insert(4, " upon"));
       // The example displays the following output:
       //      Once upon a time.
-      // </Snippet4>      
+      // </Snippet4>
    }
 
    private static void UseStringCopyTo()
@@ -73,6 +73,6 @@ public class Class1
       // The example displays the following output:
       //       The original character array: Where
       //       The new character array: Hello
-      // </Snippet5>      
+      // </Snippet5>
    }
 }

@@ -4,6 +4,7 @@ description: "Learn how to overload a C# operator and which C# operators are ove
 ms.date: 07/05/2019
 f1_keywords: 
   - "operator_CSharpKeyword"
+  - operator
 helpviewer_keywords: 
   - "operator keyword [C#]"
   - "operator overloading [C#]"

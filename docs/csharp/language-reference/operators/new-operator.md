@@ -1,6 +1,8 @@
 ---
 title: "new operator - C# reference"
 ms.date: 06/25/2019
+f1_keywords:
+ - new_CSharpKeyword
 helpviewer_keywords: 
   - "new operator keyword [C#]"
 ms.assetid: a212b697-a79b-4105-9923-1f7b108036e8

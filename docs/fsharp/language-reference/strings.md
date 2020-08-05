@@ -5,10 +5,10 @@ ms.date: 07/05/2019
 ---
 # Strings
 
-> [!NOTE]
-> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in .NET.
 
-The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in the .NET Framework.
+> [!NOTE]
+> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 ## Remarks
 

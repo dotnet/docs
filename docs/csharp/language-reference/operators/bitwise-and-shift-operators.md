@@ -10,6 +10,8 @@ f1_keywords:
   - "&_CSharpKeyword"
   - "^_CSharpKeyword"
   - "|_CSharpKeyword"
+  - "<<=_CSharpKeyword"
+  - ">>=_CSharpKeyword"
 helpviewer_keywords: 
   - "bitwise logical operators [C#]"
   - "shift operators [C#]"

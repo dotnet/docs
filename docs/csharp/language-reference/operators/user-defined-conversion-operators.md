@@ -5,6 +5,8 @@ ms.date: 07/09/2019
 f1_keywords: 
   - "explicit_CSharpKeyword"
   - "implicit_CSharpKeyword"
+  - "explicit"
+  - "implicit"
 helpviewer_keywords: 
   - "explicit keyword [C#]"
   - "implicit keyword [C#]"

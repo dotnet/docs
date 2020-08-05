@@ -3,10 +3,7 @@ title: "Import Declarations: The open Keyword"
 description: Learn about F# import declarations and how they specify a module or namespace whose elements you can reference without using a fully qualified name.
 ms.date: 04/04/2019
 ---
-# Import Declarations: The `open` Keyword
-
-> [!NOTE]
-> The API reference links in this article will take you to MSDN.  The docs.microsoft.com API reference is not complete.
+# Import declarations: The `open` keyword
 
 An *import declaration* specifies a module or namespace whose elements you can reference without using a fully qualified name.
 
@@ -17,6 +14,9 @@ open module-or-namespace-name
 ```
 
 ## Remarks
+
+> [!NOTE]
+> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 Referencing code by using the fully qualified namespace or module path every time can create code that is hard to write, read, and maintain. Instead, you can use the `open` keyword for frequently used modules and namespaces so that when you reference a member of that module or namespace, you can use the short form of the name instead of the fully qualified name. This keyword is similar to the `using` keyword in C#, `using namespace` in Visual C++, and `Imports` in Visual Basic.
 

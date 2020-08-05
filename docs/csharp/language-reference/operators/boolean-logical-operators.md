@@ -10,6 +10,9 @@ f1_keywords:
   - "|_CSharpKeyword"
   - "&&_CSharpKeyword"
   - "||_CSharpKeyword"
+  - "|=_CSharpKeyword"
+  - "^=_CSharpKeyword"
+  - "&=_CSharpKeyword"
 helpviewer_keywords: 
   - "logical operators [C#]"
   - "short-circuiting operators [C#]"

@@ -60,7 +60,7 @@ To complete adding Docker support, you can choose Windows or Linux. In this case
 
 With these simple steps, you have your ASP.NET Core 3.1 application running on a Linux container.
 
-In a similar way, we add a very simple WebApp application to consume the WebApi endpoint, although we don't get into the details here.
+In a similar way, we add a very simple WebApp application to consume the web API endpoint, although we don't get into the details here.
 
 After adding the WebApp project we add orchestrator support as shown next, in image 4-40.
 

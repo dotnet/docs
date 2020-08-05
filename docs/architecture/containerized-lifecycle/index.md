@@ -48,6 +48,8 @@ Participants and reviewers:
 > **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
 >
 > **Miguel Veloso**, Software Development Engineer at Plain Concepts
+>
+> **Sumit Ghosh**, Principal Consultant at Neudesic
 
 ## Copyright
 

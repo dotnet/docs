@@ -15,7 +15,7 @@ Figure 3-1 shows the main pillars in the life cycle of Docker apps classified by
 
 A containerized Docker life-cycle workflow can be initially prescriptive based on "by-default product choices," making it easier for developers to get started faster, but it's fundamental that under the hood there must be an open framework so that it will be a flexible workflow capable of adjusting to the different contexts from each organization or enterprise. The workflow infrastructure (components and products) must be flexible enough to cover the environment that each company will have in the future, even being capable of swapping development or DevOps products to others. This flexibility, openness, and the broad choice of technologies in the platform and infrastructure are precisely the Microsoft priorities for containerized Docker applications, as explained in the chapters that follow.
 
-Table 3-1 demonstrates that the intention of the Azure DevOps for containerized Docker applications is to provide an open DevOps workflow so that you can choose what products to use for each phase (Microsoft or third-party) while providing a simplified workflow that provides "by-default-products" already connected; thus, you can quickly get started with your enterprise-level DevOps workflow for Docker apps.
+Table 3-1 demonstrates that the intention of the Azure DevOps for containerized Docker applications is to provide an open DevOps workflow so that you can choose what products to use for each phase (Microsoft or third party) while providing a simplified workflow that provides "by-default-products" already connected; thus, you can quickly get started with your enterprise-level DevOps workflow for Docker apps.
 
 **Table 3-1.** Azure DevOps workflows, open to any technology
 

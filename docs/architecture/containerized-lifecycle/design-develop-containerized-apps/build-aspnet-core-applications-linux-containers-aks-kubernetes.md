@@ -26,7 +26,7 @@ This example uses a couple of simple projects based on Visual Studio templates, 
 
 ![Add new project window in Visual Studio, selecting ASP.NET Core Web Application.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-aspnet-core-application.png)
 
-**Figure 4-36**. Creating an ASP.NET Core Web Application in Visual Studio 2019.
+**Figure 4-35**. Creating an ASP.NET Core Web Application in Visual Studio 2019.
 
 To create the sample project in Visual Studio, select **File** > **New** > **Project**, select the **Web** project type and then the **ASP.NET Core Web Application** template. You can also search for the template if you need it.
 
@@ -34,13 +34,13 @@ Then enter the application name and location as shown in the next image.
 
 ![Enter the project name and location.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/enter-project-name-and-location.png)
 
-**Figure 4-37**. Enter the project name and location in Visual Studio 2019.
+**Figure 4-36**. Enter the project name and location in Visual Studio 2019.
 
 Verify that you've selected ASP.NET Core 3.1 as the framework. .NET Core 3.1 is included in the latest release of Visual Studio 2019 and is automatically installed and configured for you when you install Visual Studio.
 
 ![Visual Studio dialog for selecting the type of an ASP.NET Core Web Application with API option selected.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/create-web-api-application.png)
 
-**Figure 4-38**. Selecting ASP.NET CORE 3.1 and Web API project type
+**Figure 4-37**. Selecting ASP.NET CORE 3.1 and Web API project type
 
 Notice we're not enabling Docker support now, because we'll do it in a moment, just to show it can be done after project creation.
 
@@ -50,29 +50,29 @@ To show you can "Dockerize" your project at any time. We'll add Docker support n
 
 ![Context menu option to add Docker support to an existing project: Right click (on the project) > Add > Docker Support.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/add-docker-support-to-project.png)
 
-**Figure 4-39**. Adding Docker support to an existing project
+**Figure 4-38**. Adding Docker support to an existing project
 
 To complete adding Docker support, you can choose Windows or Linux. In this case, select **Linux**. AKS support for Windows container is currently in preview (as of early 2020).
 
 ![Option dialog to select Target OS for Dockerfile.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/select-linux-docker-support.png)
 
-**Figure 4-40**. Selecting Linux containers.
+**Figure 4-39**. Selecting Linux containers.
 
 With these simple steps, you have your ASP.NET Core 3.1 application running on a Linux container.
 
 In a similar way, we add a very simple WebApp application to consume the WebApi endpoint, although we don't get into the details here.
 
-After adding the WebApp project we add orchestrator support as shown next, in image 4-41.
+After adding the WebApp project we add orchestrator support as shown next, in image 4-40.
 
 ![Adding orchestrator support to WebApi project](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/add-orchestrator-support.png)
 
-**Figure 4-41**. Adding orchestrator support to WebApi project.
+**Figure 4-40**. Adding orchestrator support to WebApi project.
 
-When we choose the `Docker Compose` option, which is fine for local development, Visual Studio adds the docker-compose project, with the docker-compose files as shown in image 4-42.
+When we choose the `Docker Compose` option, which is fine for local development, Visual Studio adds the docker-compose project, with the docker-compose files as shown in image 4-41.
 
 ![Docker-compose added to solution](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/docker-compose-project-in-visual-studio.png)
 
-**Figure 4-42**. Adding orchestrator support to WebApi project.
+**Figure 4-41**. Adding orchestrator support to WebApi project.
 
 The initial files added are similar to these ones:
 
@@ -143,11 +143,11 @@ services:
     #...
 ```
 
-Now you can run your application with **F5** key, or by using the **Play** button, or the **Ctrl+F5** key, selecting the docker-compose project, as shown in image 4-43.
+Now you can run your application with **F5** key, or by using the **Play** button, or the **Ctrl+F5** key, selecting the docker-compose project, as shown in image 4-42.
 
 ![Running docker-compose project with Visual Studio](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/running-docker-compose-with-visual-studio.png)
 
-**Figure 4-43**. Adding orchestrator support to WebApi project.
+**Figure 4-42**. Adding orchestrator support to WebApi project.
 
 When running the docker-compose application as explained, you get:
 
@@ -160,13 +160,13 @@ Browser opened:
 
 ![Browser view with web app running](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/browser-opened.png)
 
-**Figure 4-44**. Browser window with an application running on multiple containers.
+**Figure 4-43**. Browser window with an application running on multiple containers.
 
 Container window:
 
 ![Visual Studio "Containers" window](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/visual-studio-containers-window.png)
 
-**Figure 4-45**. Visual Studio "Containers" window
+**Figure 4-44**. Visual Studio "Containers" window
 
 The **Containers** window lets you view running containers, browse available images, view environment variables, logs, and port mappings, inspect the filesystem, attach a debugger, or open a terminal window inside the container environment.
 
@@ -180,7 +180,7 @@ docker images
 
 ![Console output from the docker images command, shows a list with: Repository, Tag, Image ID, Created (date), and Size.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/docker-images-command.png)
 
-**Figure 4-46**. View of Docker images
+**Figure 4-45**. View of Docker images
 
 ## Register the Solution in an Azure Container Registry (ACR)
 
@@ -196,11 +196,11 @@ az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku 
 
 ### Create the image in Release mode
 
-We'll now create the image in **Release** mode (ready for production) by changing to **Release**, as shown in Figure 4-47, and running the application as we did before.
+We'll now create the image in **Release** mode (ready for production) by changing to **Release**, as shown in Figure 4-46, and running the application as we did before.
 
 ![Toolbar option in VS to build in release mode.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/select-release-mode.png)
 
-**Figure 4-47**. Selecting Release Mode
+**Figure 4-46**. Selecting Release Mode
 
 If you execute the `docker images` command, you'll see both images created, one for `debug` (**dev**) and the other for `release` (**latest**) mode.
 
@@ -212,7 +212,7 @@ You can view the `loginServer` name from the Azure portal, taking the informatio
 
 ![Browser view of the Azure container registry name, on the top right.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/loginServer-name.png)
 
-**Figure 4-48**. View of the name of the Registry
+**Figure 4-47**. View of the name of the Registry
 
 Or by running the following command:
 
@@ -222,7 +222,7 @@ az acr list --resource-group <resource-group-name> --query "[].{acrLoginServer:l
 
 ![Console output from the above command.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/az-cli-loginServer-name.png)
 
-**Figure 4-49**. Get the name of the registry using **az cli**
+**Figure 4-48**. Get the name of the registry using **az cli**
 
 In both cases, you'll obtain the name. In our example, `exploredocker.azurecr.io`.
 
@@ -236,7 +236,7 @@ After running the `docker tag` command, list the images with the `docker images`
 
 ![Console output from the docker images command.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/tagged-docker-images-list.png)
 
-**Figure 4-50**. View of tagged images
+**Figure 4-49**. View of tagged images
 
 ### Push the image into the Azure ACR
 
@@ -256,7 +256,7 @@ This command takes a while uploading the images but gives you feedback in the pr
 
 ![Console output from the docker push command.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/uploading-docker-images-complete.png)
 
-**Figure 4-51**. Console output from the push command.
+**Figure 4-50**. Console output from the push command.
 
 To deploy your multi-container app into your AKS cluster we need some manifest `.yaml` files that have, most of the properties taken from the `docker-compose.yml` and `docker-compose.override.yml` files.
 
@@ -371,7 +371,7 @@ az aks get-credentials --resource-group explore-docker-aks-rg --name explore-doc
 
 ![Console output from the above command: Merged "explore-docker-aks" as current context in C:\Users\Miguel.kube\config](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/getting-aks-credentials.png)
 
-**Figure 4-52**. Getting credentials from AKS into the kubectl environment.
+**Figure 4-51**. Getting credentials from AKS into the kubectl environment.
 
 We also have to allow the AKS cluster to pull images from the ACR, using this command:
 
@@ -390,13 +390,13 @@ kubectl get all
 
 ![Console output from the above commands: deployments applied. services created.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/kubectl-apply-command.png)
 
-**Figure 4-53**. Deployment to Kubernetes
+**Figure 4-52**. Deployment to Kubernetes
 
 You'll have to wait a while until the load balancer gets the external IP, checking with `kubectl get services`, and then the application should be available at that address, as shown in the next image:
 
 ![Browser view of the application deployed to AKS](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/aks-deployed-application.png)
 
-**Figure 4-54**. Deployment to Kubernetes
+**Figure 4-53**. Deployment to Kubernetes
 
 When the deployment completes, you can access the [Kubernetes Web UI](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/) with a local proxy, using an ssh tunnel.
 
@@ -416,7 +416,7 @@ A browser window should open at `http://127.0.0.1:8001` with a view similar to t
 
 ![Browser view of the Kubernetes dashboard, showing Deployments, Pods, Replica Sets, and Services.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/kubernetes-cluster-information.png)
 
-**Figure 4-55**. View Kubernetes cluster information
+**Figure 4-54**. View Kubernetes cluster information
 
 Now you have your ASP.NET Core application, running in Linux containers, and deployed to an AKS cluster on Azure.
 

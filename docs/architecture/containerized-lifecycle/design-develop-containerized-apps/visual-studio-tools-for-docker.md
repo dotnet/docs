@@ -56,7 +56,7 @@ From the main menu, choose **Tools > Options**, and expand **Container Tools > S
 
 ![Visual Studio Docker tools options, showing three pages: General, Single Project and Docker Compose, details in the article text.](media/visual-studio-docker-tools-options.png)
 
-**Figure 4-35**. Docker Tools Options
+**Figure 4-34**. Docker Tools Options
 
 The following table might help you decide how to set these options.
 

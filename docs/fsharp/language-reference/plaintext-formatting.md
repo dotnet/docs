@@ -81,7 +81,7 @@ where the type is interpreted as follows:
 | `%f`               | a basic floating point type | Formatted as a signed value having the form `[-]dddd.dddd`, where `dddd` is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision. |
 | `%g`, `%G` | a basic floating point type |  Formatted using as a signed value printed in `%f` or `%e` format, whichever is more compact for the given value and precision. |
 | `%M` | a `System.Decimal` value  |    Formatted using the `"G"` format specifier for `System.Decimal.ToString(format)` |
-| `%O` | any value  |   Formatted by boxing the object and valling its `System.Object.ToString()` method |
+| `%O` | any value  |   Formatted by boxing the object and calling its `System.Object.ToString()` method |
 | `%A` | any value  |   Formatted using [structured plain text formatting](plaintext-formatting.md) with the default layout settings |
 | `%a` | any value  |   Requires two arguments: a formatting function accepting a context parameter and the value, and the particular value to print |
 | `%t` | any value  |   Requires one argument: a formatting function accepting a context parameter that either outputs or returns the appropriate text |

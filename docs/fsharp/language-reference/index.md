@@ -45,6 +45,7 @@ The following table shows reference topics available that describe language conc
 |[Signatures](signature-files.md)|Describes signatures and signature files. A signature file contains information about the public signatures of a set of F# program elements, such as types, namespaces, and modules. It can be used to specify the accessibility of these program elements.|
 |[XML Documentation](xml-documentation.md)|Describes support for generating documentation files for XML doc comments, also known as triple slash comments. You can produce documentation from code comments in F# just as in other .NET languages.|
 |[Verbose Syntax](verbose-syntax.md)|Describes the syntax for F# constructs when lightweight syntax is not enabled. Verbose syntax is indicated by the `#light "off"` directive at the top of the code file.|
+|[Plain Text Formatting](plaintext-formatting.md)|Learn how to use sprintf and other plain text formatting in F# applications and scripts.|
 
 ## F# Types
 

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using Day = System.DayOfWeek;
 
 class DayOfWeekCollection

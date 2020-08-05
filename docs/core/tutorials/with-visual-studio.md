@@ -73,7 +73,7 @@ If the language you want to use is not shown, change the language selector at th
 
 ## Run the app
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to run the program without debugging.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
    A console window opens with the text "Hello World!" printed on the screen and some Visual Studio debug information.
 
@@ -96,7 +96,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to run the program without debugging.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 

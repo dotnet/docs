@@ -41,11 +41,11 @@ landingContent:
     linkLists:
       - linkListType: quickstart
         links:
-          - text: Set up Model Builder in Visual Studio
+          - text: Get started with the ML.NET API (code-first)
+            url: https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro
+          - text: Set up Model Builder in Visual Studio (low-code)
             url: how-to-guides/install-model-builder.md
-          - text: Get started with the ML.NET API
-            url: https://dotnet.microsoft.com/learn/ml-dotnet/get-started-tutorial/intro  
-          - text: Install the CLI on Mac OS, Windows, or Linux
+          - text: Install the CLI on macOS, Windows, or Linux (low-code)
             url: how-to-guides/install-ml-net-cli.md
 
  # Tutorials - scenarios
@@ -102,4 +102,3 @@ landingContent:
             url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet 
           - text: ML.NET samples
             url: https://github.com/dotnet/machinelearning-samples
-

@@ -104,7 +104,7 @@ This example shows a custom converter that serializes and deserializes <xref:Sys
 > [!NOTE]
 > The "R" standard format will always be 29 characters long.
 >
-> The "l" (lowercase "L") format is not documented with the other [standard date and time format strings](../base-types/standard-date-and-time-format-strings.md) because it is supported only by the `Utf8Parser` and `Utf8Formatter` types. The format is lowercase RFC 1123 (lowercase "R" format), for example: "thu, 25 jul 2019 06:36:07 gmt". 
+> The "l" (lowercase "L") format is not documented with the other [standard date and time format strings](../base-types/standard-date-and-time-format-strings.md) because it is supported only by the `Utf8Parser` and `Utf8Formatter` types. The format is lowercase RFC 1123 (a lowercase version of the "R" format), for example: "thu, 25 jul 2019 06:36:07 gmt". 
 
 #### Using `DateTime(Offset).Parse` as a fallback to the serializer's native parsing
 

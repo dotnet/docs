@@ -12,7 +12,7 @@ ms.assetid: 4eaa6535-d9fe-41a1-91d8-b437cfc16921
 
 # Code Access Security Basics
 
-[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
 Every application that targets the common language runtime (that is, every managed application) must interact with the runtime's security system. When a managed application is loaded, its host automatically grants it a set of permissions. These permissions are determined by the host's local security settings or by the sandbox the application is in. Depending on these permissions, the application either runs properly or generates a security exception.
 

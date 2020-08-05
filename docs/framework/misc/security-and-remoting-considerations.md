@@ -11,7 +11,7 @@ ms.assetid: 125d2ab8-55a4-4e5f-af36-a7d401a37ab0
 ---
 # Security and Remoting Considerations
 
-[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
 
 Remoting allows you to set up transparent calling between application domains, processes, or computers. However, the code access security stack walk cannot cross process or machine boundaries (it does apply between application domains of the same process).  
   

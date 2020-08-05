@@ -1,5 +1,6 @@
 ---
 title: "Overview of keyboard input"
+description: Learn about how keyboard input works in Windows Forms for .NET. Keyboard events are raised by forms and controls and represent keys that are down, pressed, or up.
 ms.date: "07/16/2020"
 ms.topic: overview
 dev_langs: 
@@ -10,6 +11,7 @@ helpviewer_keywords:
   - "controls [Windows Forms]"
   - "custom controls [Windows Forms]"
 ---
+
 # Overview of using the keyboard (Windows Forms .NET)
 
 In Windows Forms, user input is sent to applications in the form of [Windows messages](https://docs.microsoft.com/windows/win32/winmsg/about-messages-and-message-queues). A series of overridable methods process these messages at the application, form, and control level. When these methods receive mouse and keyboard messages, they raise events that can be handled to get information about the mouse or keyboard input. In many cases, Windows Forms applications will be able to process all user input simply by handling these events. In other cases, an application may need to override one of the methods that process messages in order to intercept a particular message before it is received by the application, form, or control.

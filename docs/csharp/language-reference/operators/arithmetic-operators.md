@@ -13,7 +13,6 @@ f1_keywords:
   - "-_CSharpKeyword"
   - "%=_CSharpKeyword"
   - "*=_CSharpKeyword"
-  - "_CSharpKeyword"
 helpviewer_keywords: 
   - "arithmetic operators [C#]"
   - "increment operator [C#]"

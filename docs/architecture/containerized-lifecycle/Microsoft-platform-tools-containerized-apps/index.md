@@ -19,7 +19,7 @@ Table 3-1 demonstrates that the intention of the Azure DevOps for containerized 
 
 **Table 3-1.** Azure DevOps workflows, open to any technology
 
-| Host | Microsoft technologies | Third-party—Azure pluggable |
+| Host | Microsoft technologies | Third party (Azure pluggable) |
 | ---------------------------| ----------------------------------------------------| --------------------------------------------------------------------------------|
 | Platform for Docker apps   | <li> Microsoft Visual Studio and Visual Studio Code<br /> <li> .NET<br /> <li> Microsoft Azure Kubernetes Service (AKS)<br /> <li> Azure Container Registry<br /> | <li> Any code editor (for example, Sublime)<br /> <li> Any language (Node.js, Java, Go, etc.)<br /> <li> Any orchestrator and scheduler<br /> <li> Any Docker registry<br /> |
 | DevOps for Docker apps     | <li> Azure DevOps Services<br /> <li> Microsoft Team Foundation Server<br /> <li> Azure Kubernetes Service (AKS)<br /> | <li> GitHub, Git, Subversion, etc.<br /> <li> Jenkins, Chef, Puppet, Velocity, CircleCI, TravisCI, etc.<br /> <li> On-premises Docker Datacenter, Kubernetes, Mesos DC/OS, etc.<br /> |

@@ -10,6 +10,9 @@ helpviewer_keywords:
 ms.assetid: 125d2ab8-55a4-4e5f-af36-a7d401a37ab0
 ---
 # Security and Remoting Considerations
+
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
+
 Remoting allows you to set up transparent calling between application domains, processes, or computers. However, the code access security stack walk cannot cross process or machine boundaries (it does apply between application domains of the same process).  
   
  Any class that is remotable (derived from a <xref:System.MarshalByRefObject> class) needs to take responsibility for security. Either the code should be used only in closed environments where the calling code can be implicitly trusted, or remoting calls should be designed so that they do not subject protected code to outside entry that could be used maliciously.  

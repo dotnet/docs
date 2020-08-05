@@ -1,7 +1,7 @@
 ---
 title: Docker terminology
 description: Learn some basic terminology that's used everyday when working with Docker.
-ms.date: 04/16/2020
+ms.date: 08/06/2020
 ---
 # Docker terminology
 

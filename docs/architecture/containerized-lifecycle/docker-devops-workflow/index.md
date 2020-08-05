@@ -1,7 +1,7 @@
 ---
 title: Docker application DevOps workflow with Microsoft tools
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools DevOps workflow with Microsoft tools
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 
 # Docker application DevOps workflow with Microsoft tools

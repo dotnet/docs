@@ -1,7 +1,7 @@
 ---
 title: Common container design principles
 description: Learn a fundamental principle of good container design, it's that a container should host just one process.
-ms.date: 07/30/2020
+ms.date: 08/06/2020
 ---
 # Common container design principles
 

@@ -1,7 +1,7 @@
 ---
 title: Steps in the outer-loop DevOps workflow for a Docker application
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.date: 07/30/2019
+ms.date: 08/06/2020
 ---
 # Creating CI/CD pipelines in Azure DevOps Services for a .NET Core application on Containers and deploying to a Kubernetes cluster
 

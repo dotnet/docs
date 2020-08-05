@@ -1,7 +1,7 @@
 ---
 title: Design Docker applications
 description: Find here a reference to an in-depth guide to microservices architecture, because that's a topic that it's not detailed in this guide.
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 # Design Docker applications
 

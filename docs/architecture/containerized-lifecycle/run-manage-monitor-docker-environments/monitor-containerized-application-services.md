@@ -1,7 +1,7 @@
 ---
 title: Monitor containerized application services
 description: Learn some key aspects of monitoring container architectures
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 # Monitor containerized application services
 

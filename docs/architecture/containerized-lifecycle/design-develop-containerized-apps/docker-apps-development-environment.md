@@ -1,7 +1,7 @@
 ---
 title: Development environment for Docker apps
 description: Get to know the most important development tool options that support the Docker development life-cycle.
-ms.date: 04/16/2020
+ms.date: 08/06/2020
 ---
 # Development environment for Docker apps
 

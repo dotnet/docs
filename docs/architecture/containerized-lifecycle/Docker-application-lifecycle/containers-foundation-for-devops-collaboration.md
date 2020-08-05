@@ -1,7 +1,7 @@
 ---
 title: Containers as the foundation for DevOps collaboration
 description: Understand the key role of containers to streamline DevOps.
-ms.date: 04/16/2020
+ms.date: 08/06/2020
 ---
 # Containers as the foundation for DevOps collaboration
 

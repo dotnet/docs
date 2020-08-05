@@ -1,7 +1,7 @@
 ---
 title: Run, manage, and monitor Docker production environments
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 
 # Run, manage, and monitor Docker production environments

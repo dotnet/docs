@@ -1,7 +1,7 @@
 ---
 title: Introduction to the Microsoft platform and tools for containerized apps
 description: Get to know Microsoft's offerings to support Docker applications lifecycle.
-ms.date: 07/30/2020
+ms.date: 08/06/2020
 ---
 # Introduction to the Microsoft platform and tools for containerized apps
 

@@ -1,7 +1,7 @@
 ---
 title: Inner-loop development workflow for Docker apps
 description: Learn about "inner-loop" development workflow for Docker applications.
-ms.date: 07/30/2020
+ms.date: 08/06/2020
 ---
 
 # Inner-loop development workflow for Docker apps

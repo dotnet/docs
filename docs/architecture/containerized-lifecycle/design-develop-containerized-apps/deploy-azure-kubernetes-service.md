@@ -1,33 +1,25 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: Learn how to deploy an app using Azure Kubernetes Service.
-ms.date: 07/30/2020
+ms.date: 08/06/2020
 ---
 
 # Deploy to Azure Kubernetes Service (AKS)
 
-You can interact with AKS using your preferred client operating system, here we show how to do it with Microsoft Windows and an embedded version of Ubuntu Linux in Windows, using Bash commands.
-
-Prerequisites to have before using AKS are:
-
-- Linux or Mac development machine
-- Windows development machine
-  - Developer Mode enabled on Windows
-  - Windows Subsystem for Linux
-- Azure-CLI installed on [Windows, Mac or Linux](https://docs.microsoft.com/cli/azure/install-azure-cli)
+You can interact with AKS using your preferred client operating system. You either need a Web Browser or Azure command-line interface(Azure CLI) to do so. For more details, please refer [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest)
 
 > [!NOTE]
 > To find complete information about:
 >
-> Azure-CLI: <https://docs.microsoft.com/cli/azure/index>
+> Azure CLI: <https://docs.microsoft.com/cli/azure/index>
 >
 > Windows Subsystem for Linux: <https://docs.microsoft.com/windows/wsl/about>
 
 ## Create the AKS environment in Azure
 
-There are several ways to create the AKS Environment. It can be done by using Azure-CLI commands or by using the Azure portal.
+There are several ways to create the AKS Environment. It can be done by using Azure CLI commands or by using the Azure portal.
 
-Here you can explore some examples using the Azure-CLI to create the cluster and the Azure portal to review the results. You also need to have Kubectl and Docker in your development machine.
+Here you can explore some examples using the Azure CLI to create the cluster and the Azure portal to review the results. You also need to have Kubectl and Docker in your development machine.
 
 ## Create the AKS cluster
 
@@ -60,7 +52,7 @@ The AKS cluster resource group:
 > [!IMPORTANT]
 > In general, you shouldn't need to modify the resources in the AKS cluster resource group. For example, the resource group is deleted when you delete the AKS cluster.
 
-You can also view the node created using `Azure-CLI` and `Kubectl`.
+You can also view the node created using `Azure CLI` and `Kubectl`.
 
 First, getting the credentials:
 
@@ -78,7 +70,7 @@ And then, getting nodes from Kubectl:
 kubectl get nodes
 ```
 
-![Console output from above command: List of nodes with status, age (time running), and version](media/deploy-azure-kubernetes-service/kubectl-get-nodes-command-result.png)
+![Console output from the above command: List of nodes with status, age (time running), and version](media/deploy-azure-kubernetes-service/kubectl-get-nodes-command-result.png)
 
 **Figure 4-20**. `kubectl get nodes` command result.
 

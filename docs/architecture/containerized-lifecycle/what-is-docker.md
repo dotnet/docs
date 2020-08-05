@@ -1,7 +1,7 @@
 ---
 title: What is Docker?
 description: Get a little deeper in your understanding of Docker, a simple analogy here might help you.
-ms.date: 04/16/2020
+ms.date: 08/06/2020
 ---
 # What is Docker?
 

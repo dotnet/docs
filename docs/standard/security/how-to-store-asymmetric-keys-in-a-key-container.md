@@ -23,7 +23,7 @@ ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
 Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, use a key container. For more information on key containers, see [Understanding machine-level and user-level RSA key containers](https://docs.microsoft.com/previous-versions/aspnet/f5cs0acs(v=vs.100)).
 
 > [!NOTE]
-> The code in this article applies to Windows.
+> The code in this article applies to Windows and uses features not available in .NET Core 2.2 and earlier versions. For more information, see [dotnet/runtime#23391](https://github.com/dotnet/runtime/issues/23391).
 
 ## Create an asymmetric key and save it in a key container
 

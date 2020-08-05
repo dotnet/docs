@@ -66,8 +66,8 @@ public class Startup
 
     app.UseEndpoints(endpoints =>
     {
-    endpoints.MapBlazorHub();
-    endpoints.MapFallbackToPage("/_Host");
+      endpoints.MapBlazorHub();
+      endpoints.MapFallbackToPage("/_Host");
    });
   }
  }
@@ -75,7 +75,7 @@ public class Startup
 
 Like the rest of ASP.NET Core, the Startup class is created with dependency injection principles.  The `IConfiguration` is provided to the constructor and stashed in a public property for later access during configuration.
 
-The `ConfigureServices` method introduced in ASP.NET Core allows for the various ASP.NET Core framework services to be configured for the framework's built-in dependency injection container.  The various `services.Add*` methods add services that enable features such as authentication, razor pages, MVC controller routing, SignalR, and Blazor Server interactions among many others.  This method was not needed in web forms, as the parsing and handling of the ASPX, ASCX, ASHX, and ASMX files was defined by referencing ASP.NET in the web.config configuration file.  More information about dependency injection in ASP.NET Core are available in the [online documentation](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection).
+The `ConfigureServices` method introduced in ASP.NET Core allows for the various ASP.NET Core framework services to be configured for the framework's built-in dependency injection container.  The various `services.Add*` methods add services that enable features such as authentication, razor pages, MVC controller routing, SignalR, and Blazor Server interactions among many others.  This method was not needed in web forms, as the parsing and handling of the ASPX, ASCX, ASHX, and ASMX files was defined by referencing ASP.NET in the web.config configuration file.  More information about dependency injection in ASP.NET Core is available in the [online documentation](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection).
 
 The `Configure` method introduces the concept of the HTTP pipeline to ASP.NET Core.  In this method, we declare from top to bottom the [Middleware](middleware.md) that will handle every request sent to our application. Most of these features in the default configuration were scattered across the web forms configuration files and are now in one place for ease of reference.
 

@@ -33,13 +33,13 @@ For the preceding reasons, don't rely on just the state of the component to resi
 - In a shopping cart application, persist the content of new items added to the cart in a database record. If the state on the server is lost, you can reconstitute it from the database records.
 - In a multi-part web form, your users will expect your application to remember values between each request. Write the data between each of your user's posts to a data store so that they can be fetched and assembled into the final form response structure when the multi-part form is completed.
 
-The signature of the .NET Framework `Session` object isn't the same as the ASP.NET Core `Session` object. Consider [the documentation for the new ASP.NET Core Session](/dotnet/api/microsoft.aspnetcore.http.isession) before deciding to migrate and use the new session state feature.
-
 For additional details on managing state in Blazor apps, see [ASP.NET Core Blazor state management](/aspnet/core/blazor/state-management).
 
 ## Maintain state with Session
 
 Web Forms developers could maintain information about the currently acting user with the <xref:Microsoft.AspNetCore.Http.ISession?displayProperty=nameWithType> dictionary object. It's easy enough to add an object with a string key to the `Session`, and that object would be available at a later time during the user's interactions with the application. In an attempt to eliminate managing interacting with HTTP, the `Session` object made it easy to maintain state.
+
+The signature of the .NET Framework `Session` object isn't the same as the ASP.NET Core `Session` object. Consider [the documentation for the new ASP.NET Core Session](/dotnet/api/microsoft.aspnetcore.http.isession) before deciding to migrate and use the new session state feature.
 
 Session is available in ASP.NET Core and Blazor Server, but is discouraged from use in favor of storing data in a data repository appropriately. Session state is also not functional if visitors decline the use HTTP cookies in your application due to privacy concerns.
 

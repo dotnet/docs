@@ -5,10 +5,10 @@ ms.date: 05/16/2016
 f1_keywords:
  - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
 ---
-# Interactive Programming with F\#
+# Interactive programming with F\#
 
 > [!NOTE]
-> This article currently describes the experience for Windows only. It will be rewritten.
+> This article currently describes the experience for Windows only.
 
 F# Interactive (fsi.exe) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
 
@@ -22,7 +22,7 @@ where `sku` is either `Community`, `Professional`, or `Enterprise`.
 
 For information about command line options available, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 
-To run F# Interactive through Visual Studio, you can click the appropriate toolbar button labeled **F# Interactive**, or use the keys **Ctrl+Alt+F**. Doing this will open the interactive window, a tool window running an F# Interactive session. You can also select some code that you want to run in the interactive window and hit the key combination **ALT+ENTER**. F# Interactive starts in a tool window labeled **F# Interactive**. When you use this key combination, make sure that the editor window has the focus.
+To run F# Interactive through Visual Studio, you can click the appropriate toolbar button labeled **F# Interactive**, or use the keys **Ctrl+Alt+F**. Doing this will open the interactive window, a tool window running an F# Interactive session. You can also select some code that you want to run in the interactive window and hit the key combination **Alt+Enter**. F# Interactive starts in a tool window labeled **F# Interactive**. When you use this key combination, make sure that the editor window has the focus.
 
 Whether you are using the console or Visual Studio, a command prompt appears and the interpreter awaits your input. You can enter code just as you would in a code file. To compile and execute the code, enter two semicolons (**;;**) to terminate a line or several lines of input.
 
@@ -40,7 +40,7 @@ You can control the F# Interactive command line arguments (options) by adjusting
 
 Scripts use the file extension **.fsx** or **.fsscript**. Instead of compiling source code and then later running the compiled assembly, you can just run **fsi.exe** and specify the filename of the script of F# source code, and F# interactive reads the code and executes it in real time.
 
-## Differences Between the Interactive, Scripting and Compiled Environments
+## Differences between the interactive, scripting, and compiled environments
 
 When you are compiling code in F# Interactive, whether you are running interactively or running a script, the symbol **INTERACTIVE** is defined. When you are compiling code in the compiler, the symbol **COMPILED** is defined. Thus, if code needs to be different in compiled and interactive modes, you can use preprocessor directives for conditional compilation to determine which to use.
 
@@ -88,7 +88,7 @@ test
 90
 ```
 
-## Related Topics
+## Related articles
 
 |Title|Description|
 |-----|-----------|

@@ -7,7 +7,10 @@ ms.date: 05/16/2016
 
 Arrays are fixed-size, zero-based, mutable collections of consecutive data elements that are all of the same type.
 
-## Creating Arrays
+> [!NOTE]
+> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
+
+## Create arrays
 
 You can create arrays in several ways. You can create a small array by listing consecutive values between `[|` and `|]` and separated by semicolons, as shown in the following examples.
 
@@ -32,7 +35,7 @@ To create an array in which all the elements are initialized to zero, use `Array
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet4.fs)]
 
-## Accessing Elements
+## Access elements
 
 You can access array elements by using a dot operator (`.`) and brackets (`[` and `]`).
 
@@ -46,13 +49,13 @@ You can also access array elements by using slice notation, which enables you to
 
 When slice notation is used, a new copy of the array is created.
 
-## Array Types and Modules
+## Array types and modules
 
 The type of all F# arrays is the .NET Framework type <xref:System.Array?displayProperty=nameWithType>. Therefore, F# arrays support all the functionality available in <xref:System.Array?displayProperty=nameWithType>.
 
 The library module [`Microsoft.FSharp.Collections.Array`](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1) supports operations on one-dimensional arrays. The modules `Array2D`, `Array3D`, and `Array4D` contain functions that support operations on arrays of two, three, and four dimensions, respectively. You can create arrays of rank greater than four by using <xref:System.Array?displayProperty=nameWithType>.
 
-### Simple Functions
+### Simple functions
 
 [`Array.get`](https://msdn.microsoft.com/library/dd93e85d-7e80-4d76-8de0-b6d45bcf07bc) gets an element. [`Array.length`](https://msdn.microsoft.com/library/0d775b6a-4a8f-4bd1-83e5-843b3251725f) gives the length of an array. [`Array.set`](https://msdn.microsoft.com/library/847edc0d-4dc5-4a39-98c7-d4320c60e790) sets an element to a specified value. The following code example illustrates the use of these functions.
 
@@ -64,7 +67,7 @@ The output is as follows.
 0 1 2 3 4 5 6 7 8 9
 ```
 
-### Functions That Create Arrays
+### Functions that create arrays
 
 Several functions create arrays without requiring an existing array. [`Array.empty`](https://msdn.microsoft.com/library/c3694b92-1c16-4c54-9bf2-fe398fadce32) creates a new array that does not contain any elements. [`Array.create`](https://msdn.microsoft.com/library/e848c8d6-1142-4080-9727-8dacc26066be) creates an array of a specified size and sets all the elements to provided values. [`Array.init`](https://msdn.microsoft.com/library/ee898089-63b0-40aa-910c-5ae7e32f6665) creates an array, given a dimension and a function to generate the elements. [`Array.zeroCreate`](https://msdn.microsoft.com/library/fa5b8e7a-1b5b-411c-8622-b58d7a14d3b2) creates an array in which all the elements are initialized to the zero value for the array's type. The following code demonstrates these functions.
 
@@ -174,7 +177,7 @@ The output is
 [|100; 36; 16; 4|]
 ```
 
-### Multidimensional Arrays
+### Multidimensional arrays
 
 A multidimensional array can be created, but there is no syntax for writing a multidimensional array literal. Use the operator [`array2D`](https://msdn.microsoft.com/library/1d52503d-2990-49fc-8fd3-6b0e508aa236) to create an array from a sequence of sequences of array elements. The sequences can be array or list literals. For example, the following code creates a two-dimensional array.
 
@@ -192,7 +195,7 @@ The type of a two-dimensional array is written out as `<type>[,]` (for example, 
 
 Only a subset of the functions available for one-dimensional arrays is also available for multidimensional arrays. For more information, see [`Collections.Array Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array-module-%5bfsharp%5d), [`Collections.Array2D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array2d-module-%5bfsharp%5d), [`Collections.Array3D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array3d-module-%5bfsharp%5d), and [`Collections.Array4D Module`](https://msdn.microsoft.com/visualfsharpdocs/conceptual/collections.array4d-module-%5bfsharp%5d).
 
-### Array Slicing and Multidimensional Arrays
+### Array slicing and multidimensional arrays
 
 In a two-dimensional array (a matrix), you can extract a sub-matrix by specifying ranges and using a wildcard (`*`) character to specify whole rows or columns.
 
@@ -289,7 +292,7 @@ module test =
     printfn "%A" firstCol
 ```
 
-### Boolean Functions on Arrays
+### Boolean functions on arrays
 
 The functions [`Array.exists`](https://msdn.microsoft.com/library/8e47ad6c-c065-4876-8cb4-ec960ec3e5c9) and [`Array.exists2`](https://msdn.microsoft.com/library/2e384a6a-f99d-4e23-b677-250ffbc1dd8e) test elements in either one or two arrays, respectively. These functions take a test function and return `true` if there is an element (or element pair for `Array.exists2`) that satisfies the condition.
 
@@ -319,7 +322,7 @@ true
 false
 ```
 
-### Searching Arrays
+### Search arrays
 
 [`Array.find`](https://msdn.microsoft.com/library/db6d920a-de19-4520-85a4-d83de77c1b33) takes a Boolean function and returns the first element for which the function returns `true`, or raises a <xref:System.Collections.Generic.KeyNotFoundException?displayProperty=nameWithType> if no element that satisfies the condition is found. [`Array.findIndex`](https://msdn.microsoft.com/library/5ae3a8f9-7b8f-44ea-a740-d5700f4d899f) is like `Array.find`, except that it returns the index of the element instead of the element itself.
 
@@ -363,7 +366,7 @@ Found an element 4096 with square root 64 and cube root 16.
 Did not find an element that is both a perfect square and a perfect cube.
 ```
 
-### Performing Computations on Arrays
+### Perform computations on arrays
 
 The [`Array.average`](https://msdn.microsoft.com/library/7029f2b9-91ea-41cb-be1b-466a5a0db20e) function returns the average of each element in an array. It is limited to element types that support exact division by an integer, which includes floating point types but not integral types. The [`Array.averageBy`](https://msdn.microsoft.com/library/e9d64609-06a3-48f0-bc07-226ab0f85c54) function returns the average of the results of calling a function on each element. For an array of integral type, you can use `Array.averageBy` and have the function convert each element to a floating point type for the computation.
 
@@ -379,7 +382,7 @@ The functions [`Array.fold`](https://msdn.microsoft.com/library/5ed9dd3b-3694-45
 
 These functions for performing computations correspond to the functions of the same name in the [List module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788). For usage examples, see [Lists](lists.md).
 
-### Modifying Arrays
+### Modify arrays
 
 [`Array.set`](https://msdn.microsoft.com/library/847edc0d-4dc5-4a39-98c7-d4320c60e790) sets an element to a specified value. [`Array.fill`](https://msdn.microsoft.com/library/c83c9886-81d9-44f9-a195-61c7b87f7df2) sets a range of elements in an array to a specified value. The following code provides an example of `Array.fill`.
 
@@ -393,19 +396,19 @@ The output is as follows.
 
 You can use [`Array.blit`](https://msdn.microsoft.com/library/675e13e4-7fb9-4e0d-a5be-a112830de667) to copy a subsection of one array to another array.
 
-### Converting to and from Other Types
+### Convert to and from other types
 
 [`Array.ofList`](https://msdn.microsoft.com/library/e7225239-f561-45a4-b0b5-69a1cdcae78b) creates an array from a list. [`Array.ofSeq`](https://msdn.microsoft.com/library/6bedf5e0-4b22-46da-b09c-6aa09eff220c) creates an array from a sequence. [`Array.toList`](https://msdn.microsoft.com/library/4deff724-0be4-4688-92e7-9d67a1097786) and [`Array.toSeq`](https://msdn.microsoft.com/library/ac28dbab-406c-4fe0-ab08-c1ce5e247af4) convert to these other collection types from the array type.
 
-### Sorting Arrays
+### Sort arrays
 
 Use [`Array.sort`](https://msdn.microsoft.com/library/c6679075-e7eb-463c-9be5-c89be140c312) to sort an array by using the generic comparison function. Use [`Array.sortBy`](https://msdn.microsoft.com/library/144498dc-091d-4575-a229-c0bcbd61426b) to specify a function that generates a value, referred to as a *key*, to sort by using the generic comparison function on the key. Use [`Array.sortWith`](https://msdn.microsoft.com/library/699d3638-4244-4f42-8496-45f53d43ce95) if you want to provide a custom comparison function. `Array.sort`, `Array.sortBy`, and `Array.sortWith` all return the sorted array as a new array. The variations [`Array.sortInPlace`](https://msdn.microsoft.com/library/36f39947-8a88-4823-9e9b-e9d838d292e0), [`Array.sortInPlaceBy`](https://msdn.microsoft.com/library/7fb9d2dd-d461-4c67-8b43-b5c59fc12c3f), and [`Array.sortInPlaceWith`](https://msdn.microsoft.com/library/454f9e11-972d-47a6-a854-8031cb0c7b0b) modify the existing array instead of returning a new one.
 
-### Arrays and Tuples
+### Arrays and tuples
 
 The functions [`Array.zip`](https://msdn.microsoft.com/library/23e086b8-b266-4db2-8b68-e88e6a8e2187) and [`Array.unzip`](https://msdn.microsoft.com/library/a529b47c-2e2b-4f79-ad44-c578432d2f48) convert arrays of tuple pairs to tuples of arrays and vice versa. [`Array.zip3`](https://msdn.microsoft.com/library/1745744a-d2ca-4c3e-b825-3f15d9f4000d) and [`Array.unzip3`](https://msdn.microsoft.com/library/bc3e6db0-f334-444f-8c30-813942880677) are similar except that they work with tuples of three elements or tuples of three arrays.
 
-## Parallel Computations on Arrays
+## Parallel computations on arrays
 
 The module [`Array.Parallel`](https://msdn.microsoft.com/library/60f30b77-5af4-4050-9a5c-bcdb3f5cbb09) contains functions for performing parallel computations on arrays. This module is not available in applications that target versions of the .NET Framework prior to version 4.
 

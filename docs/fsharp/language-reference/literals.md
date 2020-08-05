@@ -7,7 +7,10 @@ ms.date: 06/28/2019
 
 This article provides a table that shows how to specify the type of a literal in F#.
 
-## Literal Types
+> [!NOTE]
+> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
+
+## Literal types
 
 The following table shows the literal types in F#. Characters that represent digits in hexadecimal notation are not case-sensitive; characters that identify the type are case-sensitive.
 

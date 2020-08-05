@@ -3,9 +3,11 @@ title: Query Expressions
 description: Learn about query expression support for LINQ in the F# programming language.
 ms.date: 05/16/2016
 ---
-# Query Expressions
+# Query expressions
 
 Query expressions enable you to query a data source and put the data in a desired form. Query expressions provide support for LINQ in F#.
+> [!NOTE]
+> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 ## Syntax
 

@@ -5,11 +5,14 @@ ms.date: 02/11/2019
 fl_keywords:
  - "|>_FS"
 ---
-# Symbol and Operator Reference
+# Symbol and operator reference
 
-This topic includes a table of symbols and operators that are used in the F# language.
+This article includes a table of symbols and operators that are used in the F# language.
 
-## Table of Symbols and Operators
+> [!NOTE]
+> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
+
+## Table of symbols and operators
 
 The following table describes symbols used in the F# language and provides a brief description of some of the uses of the symbol and links for more information. Symbols are ordered according to the ASCII character set ordering.
 
@@ -107,7 +110,7 @@ The following table describes symbols used in the F# language and provides a bri
 |`~-`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary minus operator.<br /></li></ul>|
 |`~+`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary plus operator.<br /></li></ul>|
 
-## Operator Precedence
+## Operator precedence
 
 The following table shows the order of precedence of operators and other expression keywords in the F# language, in order from lowest precedence to the highest precedence. Also listed is the associativity, if applicable.
 

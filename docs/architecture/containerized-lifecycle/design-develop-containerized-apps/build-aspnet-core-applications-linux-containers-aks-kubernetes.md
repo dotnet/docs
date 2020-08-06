@@ -14,7 +14,7 @@ AKS main features are:
 - Automated upgrades
 - Self-healing
 - User-configurable scaling
-- Much simpler user experience for both developers and cluster operators.
+- Simpler user experience for both developers and cluster operators.
 
 The following examples explore the creation of an ASP.NET Core 3.1 application that runs on Linux and deploys to an AKS Cluster in Azure, while development is done using Visual Studio 2019.
 

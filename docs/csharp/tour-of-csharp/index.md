@@ -18,7 +18,7 @@ To ensure that C# programs and libraries can evolve over time in a compatible ma
 
 The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:
 
-:::code language="csharp" interactive="try-dotnet" source="./Snippets/hello/Program.cs":::
+:::code language="csharp" interactive="try-dotnet" source="./snippets/shared/HelloWorld.cs":::
 
 The "Hello, World" program starts with a `using` directive that references the `System` namespace. Namespaces provide a hierarchical means of organizing C# programs and libraries. Namespaces contain types and other namespaces—for example, the `System` namespace contains a number of types, such as the `Console` class referenced in the program, and a number of other namespaces, such as `IO` and `Collections`. A `using` directive that references a given namespace enables unqualified use of the types that are members of that namespace. Because of the `using` directive, the program can use `Console.WriteLine` as shorthand for `System.Console.WriteLine`.
 
@@ -77,7 +77,7 @@ Nullable value types also don't have to be declared before they can be used. For
 
 C#'s type system is unified such that a value of any type can be treated as an `object`. Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate base class of all types. Values of reference types are treated as objects simply by viewing the values as type `object`. Values of value types are treated as objects by performing *boxing* and *unboxing operations*. In the following example, an `int` value is converted to `object` and back again to `int`.
 
-:::code language="csharp" interactive="try-dotnet-method" source="./Snippets/types-and-variables/Program.cs" id="boxing" :::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/shared/types-and-variables/Program.cs" id="boxing" :::
 
 When a value of a value type is assigned to an `object` reference, a "box" is allocated to hold the value. That box is an instance of a reference type, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type. If the check succeeds, the value in the box is copied to the value type.
 
@@ -106,7 +106,7 @@ The key organizational concepts in C# are ***programs***, ***namespaces***, ***t
 
 As a small example, consider an assembly that contains the following code:
 
-:::code language="csharp" source="./Snippets/program-structure/Program.cs" id="SnippetStackExample":::
+:::code language="csharp" source="./snippets/shared/AcmeStack.cs":::
 
 The fully qualified name of this class is `Acme.Collections.Stack`. The class contains several members: a field named `top`, two methods named `Push` and `Pop`, and a nested class named `Entry`. The `Entry` class further contains three members: a field named `next`, a field named `data`, and a constructor. The `Stack` is a *generic* class. It has one type parameter, `T` that is replaced with a concrete type when it's used.
 
@@ -117,9 +117,9 @@ Assemblies contain executable code in the form of Intermediate Language (IL) ins
 
 Because an assembly is a self-describing unit of functionality containing both code and metadata, there's no need for `#include` directives and header files in C#. The public types and members contained in a particular assembly are made available in a C# program simply by referencing that assembly when compiling the program. For example, this program uses the `Acme.Collections.Stack` class from the `acme.dll` assembly:
 
-:::code language="csharp" source="./Snippets/program-structure/Program.cs" id="SnippetStackUsage":::
+:::code language="csharp" source="./snippets/shared/StackUsage.cs":::
 
-To compile this program, you would need to *reference* the assesmbly containing the stack class defined in the earlier example.
+To compile this program, you would need to *reference* the assembly containing the stack class defined in the earlier example.
 
 C# programs can be stored in several source files. When a C# program is compiled, all of the source files are processed together, and the source files can freely reference each other. Conceptually, it's as if all the source files were concatenated into one large file before being processed. Forward declarations are never needed in C# because, with few exceptions, declaration order is insignificant. C# doesn't limit a source file to declaring only one public type nor does it require the name of the source file to match a type declared in the source file.
 

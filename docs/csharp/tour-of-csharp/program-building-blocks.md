@@ -45,7 +45,7 @@ A field declared without the static modifier defines an instance field. Every in
 
 In the following example, each instance of the `Color` class has a separate copy of the `r`, `g`, and `b` instance fields, but there's only one copy of the `Black`, `White`, `Red`, `Green`, and `Blue` static fields:
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Color.cs" id="ColorClassDefinition":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="ColorClassDefinition":::
 
 As shown in the previous example, *read-only fields* may be declared with a `readonly` modifier. Assignment to a `readonly` field can only occur as part of the field’s declaration or in a constructor in the same class.
 
@@ -69,23 +69,23 @@ Value parameters can be optional, by specifying a default value so that correspo
 
 A *reference parameter* is used for passing arguments by reference. The argument passed for a reference parameter must be a variable with a definite value, and during execution of the method, the reference parameter represents the same storage location as the argument variable. A reference parameter is declared with the `ref` modifier. The following example shows the use of `ref` parameters.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/RefExample.cs" id="RefExample":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="RefExample":::
 
 An *output parameter* is used for passing arguments by reference. It's similar to a reference parameter, except that it doesn't require that you explicitly assign a value to the caller-provided argument. An output parameter is declared with the `out` modifier. The following example shows the use of `out` parameters using the syntax introduced in C# 7.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/OutExample.cs" id="OutExample":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="OutExample":::
 
 A *parameter array* permits a variable number of arguments to be passed to a method. A parameter array is declared with the `params` modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the <xref:System.Console?displayProperty=nameWithType> class are good examples of parameter array usage. They're declared as follows.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Program.cs" id="ConsoleExtract":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="ConsoleExtract":::
 
 Within a method that uses a parameter array, the parameter array behaves exactly like a regular parameter of an array type. However, in an invocation of a method with a parameter array, it's possible to pass either a single argument of the parameter array type or any number of arguments of the element type of the parameter array. In the latter case, an array instance is automatically created and initialized with the given arguments. This example
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Program.cs" id="UseParamsArgs":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="UseParamsArgs":::
 
 is equivalent to writing the following.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Program.cs" id="CompilerParams":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="CompilerParams":::
 
 ### Method body and local variables
 
@@ -93,7 +93,7 @@ A method’s body specifies the statements to execute when the method is invoked
 
 A method body can declare variables that are specific to the invocation of the method. Such variables are called *local variables*. A local variable declaration specifies a type name, a variable name, and possibly an initial value. The following example declares a local variable `i` with an initial value of zero and a local variable `j` with no initial value.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Squares.cs" id="SquaresClass":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="SquaresClass":::
 
 C# requires a local variable to be *definitely assigned* before its value can be obtained. For example, if the declaration of the previous `i` didn't include an initial value, the compiler would report an error for the subsequent usages of `i` because `i` wouldn't be definitely assigned at those points in the program.
 
@@ -107,7 +107,7 @@ A method declared without a static modifier is an *instance method*. An instance
 
 The following `Entity` class has both static and instance members.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Entity.cs" id="EntityClass":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="EntityClass":::
 
 Each `Entity` instance contains a serial number (and presumably some other information that isn't shown here). The `Entity` constructor (which is like an instance method) initializes the new instance with the next available serial number. Because the constructor is an instance member, it's permitted to access both the `serialNo` instance field and the `nextSerialNo` static field.
 
@@ -115,7 +115,7 @@ The `GetNextSerialNo` and `SetNextSerialNo` static methods can access the `nextS
 
 The following example shows the use of the Entity class.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Entity.cs" id="UsingEntity":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="UsingEntity":::
 
 The `SetNextSerialNo` and `GetNextSerialNo` static methods are invoked on the class whereas the `GetSerialNo` instance method is invoked on instances of the class.
 
@@ -131,11 +131,11 @@ An *abstract method* is a virtual method with no implementation. An abstract met
 
 The following example declares an abstract class, `Expression`, which represents an expression tree node, and three derived classes, `Constant`, `VariableReference`, and `Operation`, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This example is similar to, but not to be confused with the expression tree types).
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Expressions.cs" id="WorkingWithExpressions":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="WorkingWithExpressions":::
 
 The previous four classes can be used to model arithmetic expressions. For example, using instances of these classes, the expression `x + 3` can be represented as follows.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Program.cs" id="UseExpressions":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="UseExpressions":::
 
 The `Evaluate` method of an `Expression` instance is invoked to evaluate the given expression and produce a `double` value. The method takes a `Dictionary` argument that contains variable names (as keys of the entries) and values (as values of the entries). Because `Evaluate` is an abstract method, non-abstract classes derived from `Expression` must override `Evaluate`.
 
@@ -143,13 +143,13 @@ A `Constant`'s implementation of `Evaluate` simply returns the stored constant. 
 
 The following program uses the `Expression` classes to evaluate the expression `x * (y + 2)` for different values of `x` and `y`.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Expressions.cs" id="UsingExpressions":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="UsingExpressions":::
 
 ### Method overloading
 
 Method *overloading* permits multiple methods in the same class to have the same name as long as they have unique signatures. When compiling an invocation of an overloaded method, the compiler uses *overload resolution* to determine the specific method to invoke. Overload resolution finds the one method that best matches the arguments or reports an error if no single best match can be found. The following example shows overload resolution in effect. The comment for each invocation in the `UsageExample` method shows which method is invoked.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/Overloading.cs" id="Overloading":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="Overloading":::
 
 As shown by the example, a particular method can always be selected by explicitly casting the arguments to the exact parameter types and/or explicitly supplying type arguments.
 
@@ -162,7 +162,7 @@ The following example shows a generic class called `MyList<T>`, which implements
 > [!NOTE]
 > This example creates a `MyList` class, which is not the same as the .NET standard <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. It does illustrate the concepts needed for this tour, but is not a replacement for that class.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/ListBasedExamples.cs" id="ListExample":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="ListExample":::
 
 ### Constructors
 
@@ -172,7 +172,7 @@ A constructor is declared like a method with no return type and the same name as
 
 Instance constructors can be overloaded and can have optional parameters. For example, the `MyList<T>` class declares one instance constructor with a single optional `int` parameter. Instance constructors are invoked using the `new` operator. The following statements allocate two `MyList<string>` instances using the constructor of the `MyList` class with and without the optional argument.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/ListBasedExamples.cs" id="CreateLists":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="CreateLists":::
 
 Unlike other members, instance constructors aren't inherited, and a class has no instance constructors other than those constructors actually declared in the class. If no instance constructor is supplied for a class, then an empty one with no parameters is automatically provided.
 
@@ -188,7 +188,7 @@ A set accessor corresponds to a method with a single parameter named value and n
 
 The `MyList<T>` class declares two properties, `Count` and `Capacity`, which are read-only and read-write, respectively. The following code is an example of use of these properties:
 
-:::code language="csharp" source="./Snippets/classes-and-objects/ListBasedExamples.cs" id="AccessProperties":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="AccessProperties":::
 
 Similar to fields and methods, C# supports both instance properties and static properties. Static properties are declared with the static modifier, and instance properties are declared without it.
 
@@ -200,7 +200,7 @@ An *indexer* is a member that enables objects to be indexed in the same way as a
 
 The `MyList<T>` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `MyList<T>` instances with `int` values. For example:
 
-:::code language="csharp" source="./Snippets/classes-and-objects/ListBasedExamples.cs" id="ListAddition":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="ListAddition":::
 
 Indexers can be overloaded, meaning that a class can declare multiple indexers as long as the number or types of their parameters differ.
 
@@ -214,7 +214,7 @@ The `MyList<T>` class declares a single event member called `Changed`, which ind
 
 Clients react to events through *event handlers*. Event handlers are attached using the `+=` operator and removed using the `-=` operator. The following example attaches an event handler to the `Changed` event of a `MyList<string>`.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/ListBasedExamples.cs" id="RespondToEvents":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="RespondToEvents":::
 
 For advanced scenarios where control of the underlying storage of an event is desired, an event declaration can explicitly provide `add` and `remove` accessors, which are similar to the `set` accessor of a property.
 
@@ -224,7 +224,7 @@ An *operator* is a member that defines the meaning of applying a particular expr
 
 The `MyList<T>` class declares two operators, `operator ==` and `operator !=`, and thus gives new meaning to expressions that apply those operators to `MyList` instances. Specifically, the operators define equality of two `MyList<T>` instances as comparing each of the contained objects using their Equals methods. The following example uses the `==` operator to compare two `MyList<int>` instances.
 
-:::code language="csharp" source="./Snippets/classes-and-objects/ListBasedExamples.cs" id="ListAccess":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" id="ListAccess":::
 
 The first `Console.WriteLine` outputs `True` because the two lists contain the same number of objects with the same values in the same order. Had `MyList<T>` not defined `operator ==`, the first `Console.WriteLine` would have output `False` because `a` and `b` reference different `MyList<int>` instances.
 

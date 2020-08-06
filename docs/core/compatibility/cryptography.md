@@ -9,11 +9,18 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [System.Security.Cryptography.Oid is functionally init-only](#systemsecuritycryptographyoid-is-functionally-init-only) | 5.0 |
 | [BEGIN TRUSTED CERTIFICATE syntax no longer supported on Linux](#begin-trusted-certificate-syntax-no-longer-supported-for-root-certificates-on-linux) | 3.0 |
 | [EnvelopedCms defaults to AES-256 encryption](#envelopedcms-defaults-to-aes-256-encryption) | 3.0 |
 | [Minimum size for RSAOpenSsl key generation has increased](#minimum-size-for-rsaopenssl-key-generation-has-increased) | 3.0 |
 | [.NET Core 3.0 prefers OpenSSL 1.1.x to OpenSSL 1.0.x](#net-core-30-prefers-openssl-11x-to-openssl-10x) | 3.0 |
 | [Boolean parameter of SignedCms.ComputeSignature is respected](#boolean-parameter-of-signedcmscomputesignature-is-respected) | 2.1 |
+
+## .NET 5.0
+
+[!INCLUDE [cryptography-oid-init-only](../../../includes/core-changes/cryptography/5.0/cryptography-oid-init-only.md)]
+
+***
 
 ## .NET Core 3.0
 

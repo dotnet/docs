@@ -1,18 +1,18 @@
 ---
 title: A Tour of C# - C# Guide
 description: New to C#? Learn the basics of the language.
-ms.date: 08/03/2020
+ms.date: 08/06/2020
 ---
 
 # A tour of the C# language
 
 C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the language through interactive examples, try the [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
 
-C# is an object-oriented, ***component-oriented*** programming. C# provides language constructs to support directly these concepts, making C# a natural language in which to create and use software components. Since its inception, C# has added features to support new workloads and emerging software design practices.
+C# is an object-oriented, ***component-oriented*** programming. C# provides language constructs to support directly these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices.
 
-Several C# features aid in the construction of robust and durable applications. ***Garbage collection*** automatically reclaims memory occupied by unreachable unused objects. ***Exception handling*** provides a structured and extensible approach to error detection and recovery. ***Lambda expressions*** suppport functional programming techniques. ***Query syntax*** creates a common pattern for working with data from any source. Language support for ***asynchronous operations*** provides syntax for building distributed systems. ***Pattern matching*** provides syntax to easily separate data from algorithms in modern distributed systems. C# has a ***unified type system***. All C# types, including primitive types such as `int` and `double`, inherit from a single root `object` type. Thus, all types share a set of common operations, and values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types, allowing dynamic allocation of objects as well as in-line storage of lightweight structures.
+Several C# features aid in the construction of robust and durable applications. ***Garbage collection*** automatically reclaims memory occupied by unreachable unused objects. ***Exception handling*** provides a structured and extensible approach to error detection and recovery. ***Lambda expressions*** support functional programming techniques. ***Query syntax*** creates a common pattern for working with data from any source. Language support for ***asynchronous operations*** provides syntax for building distributed systems. ***Pattern matching*** provides syntax to easily separate data from algorithms in modern distributed systems. C# has a ***unified type system***. All C# types, including primitive types such as `int` and `double`, inherit from a single root `object` type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types. C# allows dynamic allocation of objects and in-line storage of lightweight structures.
 
-To ensure that C# programs and libraries can evolve over time in a compatible manner, much emphasis has been placed on ***versioning*** in C#'s design. Aspects of C#'s design that were directly influenced by versioning considerations include the separate `virtual` and `override` modifiers, the rules for method overload resolution, and support for explicit interface member declarations.
+C# emphasizes ***versioning*** to ensure programs and libraries can evolve over time in a compatible manner. Aspects of C#'s design that were directly influenced by versioning considerations include the separate `virtual` and `override` modifiers, the rules for method overload resolution, and support for explicit interface member declarations.
 
 ## Hello world
 
@@ -28,7 +28,7 @@ The output of the program is produced by the `WriteLine` method of the `Console`
 
 ## Types and variables
 
-There are two kinds of types in C#: *value types* and *reference types*. Variables of value types directly contain their data whereas variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and thus possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for `ref` and `out` parameter variables).
+There are two kinds of types in C#: *value types* and *reference types*. Variables of value types directly contain their data whereas variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for `ref` and `out` parameter variables).
 
 C#'s value types are further divided into *simple types*, *enum types*, *struct types*, and *nullable value types*. C#'s reference types are further divided into *class types*, *interface types*, *array types*, and *delegate types*.
 
@@ -73,17 +73,17 @@ The `class`, `struct`, `interface`, and `delegate` types all support generics, w
 
 C# supports single- and multi-dimensional arrays of any type. Unlike the types listed above, array types don't have to be declared before they can be used. Instead, array types are constructed by following a type name with square brackets. For example, `int[]` is a single-dimensional array of `int`, `int[,]` is a two-dimensional array of `int`, and `int[][]` is a single-dimensional array of single-dimensional array of `int`.
 
-Nullable value types also don't have to be declared before they can be used. For each non-nullable value type `T`, there is a corresponding nullable value type `T?`, which can hold an additional value, `null`. For instance, `int?` is a type that can hold any 32-bit integer or the value `null`.
+Nullable types don't require a separate definition. For each non-nullable type `T`, there's a corresponding nullable type `T?`, which can hold an additional value, `null`. For instance, `int?` is a type that can hold any 32-bit integer or the value `null`, and `string?` is a type that can hold any `string` or the value `null`.
 
 C#'s type system is unified such that a value of any type can be treated as an `object`. Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate base class of all types. Values of reference types are treated as objects simply by viewing the values as type `object`. Values of value types are treated as objects by performing *boxing* and *unboxing operations*. In the following example, an `int` value is converted to `object` and back again to `int`.
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/shared/types-and-variables/Program.cs" id="boxing" :::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/shared/types-and-variables/Program.cs" ID="boxing" :::
 
 When a value of a value type is assigned to an `object` reference, a "box" is allocated to hold the value. That box is an instance of a reference type, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type. If the check succeeds, the value in the box is copied to the value type.
 
 C#'s unified type system effectively means that value types are treated as `object` references "on demand." Because of the unification, general-purpose libraries that use type `object` can be used with all types that derive from `object`, including both reference types and value types.
 
-There are several kinds of *variables* in C#, including fields, array elements, local variables, and parameters. Variables represent storage locations, and every variable has a type that determines what values can be stored in the variable, as shown below.
+There are several kinds of *variables* in C#, including fields, array elements, local variables, and parameters. Variables represent storage locations. Every variable has a type that determines what values can be stored in the variable, as shown below.
 
 - Non-nullable value type
   - A value of that exact type

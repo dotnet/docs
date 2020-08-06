@@ -1,50 +1,50 @@
 ---
 title: A Tour of C# - C# Guide
 description: New to C#? Learn the basics of the language.
-ms.date: 08/03/2020
+ms.date: 08/06/2020
 ---
 # Major features
 
-## Arrays, collections and LINQ
+## Arrays, collections, and LINQ
 
-C# and .NET provide many different collection types. Arrays have syntax defined by the language. General collection types are listed in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. Specialized collections include <xref:System.Span%601?displayProperty=nameWithType> for accessing continuous memory on the stack frame, and <xref:System.Memory%601?displayProperty=nameWithType> for accessing continuous memory on the managed heap. All collections, including arrays, <xref:System.Span%601> and <xref:System.Memory%601> share a unifying principle for iteration. You use the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. This unifying principle means that any of the collection types can be used with LINQ queries or other algorithms. You write methods using <xref:System.Collections.Generic.IEnumerable%601> and those algorithms work with any collection.
+C# and .NET provide many different collection types. Arrays have syntax defined by the language. General collection types are listed in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. Specialized collections include <xref:System.Span%601?displayProperty=nameWithType> for accessing continuous memory on the stack frame, and <xref:System.Memory%601?displayProperty=nameWithType> for accessing continuous memory on the managed heap. All collections, including arrays, <xref:System.Span%601>, and <xref:System.Memory%601> share a unifying principle for iteration. You use the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. This unifying principle means that any of the collection types can be used with LINQ queries or other algorithms. You write methods using <xref:System.Collections.Generic.IEnumerable%601> and those algorithms work with any collection.
 
 ### Arrays
 
-An ***array*** is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type, and this type is called the ***element type*** of the array.
+An ***array*** is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type. This type is called the ***element type*** of the array.
 
 Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at runtime using the new operator. The new operation specifies the ***length*** of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from `0` to `Length - 1`. The `new` operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and `null` for all reference types.
 
 The following example creates an array of `int` elements, initializes the array, and prints out the contents of the array.
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="ArraysSample":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="ArraysSample":::
 
 This example creates and operates on a ***single-dimensional array***. C# also supports ***multi-dimensional arrays***. The number of dimensions of an array type, also known as the ***rank*** of the array type, is one plus the number of commas written between the square brackets of the array type. The following example allocates a single-dimensional, a two-dimensional, and a three-dimensional array, respectively.
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="DeclareArrays":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="DeclareArrays":::
 
 The `a1` array contains 10 elements, the `a2` array contains 50 (10 × 5) elements, and the `a3` array contains 100 (10 × 5 × 2) elements.
 The element type of an array can be any type, including an array type. An array with elements of an array type is sometimes called a ***jagged array*** because the lengths of the element arrays don't all have to be the same. The following example allocates an array of arrays of `int`:
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="ArrayOfArrays":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="ArrayOfArrays":::
 
-The first line creates an array with three elements, each of type `int[]` and each with an initial value of `null`. The subsequent lines then initialize the three elements with references to individual array instances of varying lengths.
+The first line creates an array with three elements, each of type `int[]` and each with an initial value of `null`. The next lines then initialize the three elements with references to individual array instances of varying lengths.
 
 The new operator permits the initial values of the array elements to be specified using an ***array initializer***, which is a list of expressions written between the delimiters `{` and `}`. The following example allocates and initializes an `int[]` with three elements.
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="InitializeArray":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeArray":::
 
-The length of the array is inferred from the number of expressions between { and }. Local variable and field declarations can be shortened further such that the array type does not have to be restated.
+The length of the array is inferred from the number of expressions between { and }. Local variable and field declarations can be shortened further such that the array type doesn't have to be restated.
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="InitializeShortened":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeShortened":::
 
 Both of the previous examples are equivalent to the following code:
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="InitializeGenerated":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeGenerated":::
 
 The `foreach` statement can be used to enumerate the elements of any collection. The following code enumerates the array from the preceding example:
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="EnumerateArray":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="EnumerateArray":::
 
 The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%601> interface, so can work with any collection.
 
@@ -52,13 +52,13 @@ The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%60
 
 C# ***string interpolation*** enables you to format strings by define expressions whose results are placed in a format string. For example, the following example prints the temperature on a given day from a set of weather data:
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="StringInterpolation":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="StringInterpolation":::
 
 An interpolated string is declared using the `$` token. String interpolation evaluates the expressions between `{` and `}`, then converts the result to a `string`, and replaces the text between the brackets with the string result of the expression. The `:` in the first expression, `{weatherData.Data:MM-DD-YYYY}` specifies the *format string*. In the preceding example, it specifies that the date should be printed in "MM-DD-YYYY" format.
 
 ## Pattern Matching
 
-The C# language provides ***pattern matching*** expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expresion for pattern matching.
+The C# language provides ***pattern matching*** expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
 
 ## Delegates and lambda expressions
 
@@ -66,7 +66,7 @@ A ***delegate type*** represents references to methods with a particular paramet
 
 The following example declares and uses a delegate type named `Function`.
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="DelegateExample":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="DelegateExample":::
 
 An instance of the `Function` delegate type can reference any method that takes a `double` argument and returns a `double` value. The `Apply` method applies a given Function to the elements of a `double[]`, returning a `double[]` with the results. In the `Main` method, `Apply` is used to apply three different functions to a `double[]`.
 
@@ -74,15 +74,15 @@ A delegate can reference either a static method (such as `Square` or `Math.Sin` 
 
 Delegates can also be created using anonymous functions, which are "inline methods" that are created when declared. Anonymous functions can see the local variables of the surrounding methods. The following example doesn't create a class:
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="UseDelegate":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="UseDelegate":::
 
-A delegate doesn't know or care about the class of the method it references; all that matters is that the referenced method has the same parameters and return type as the delegate.
+A delegate doesn't know or care about the class of the method it references. All that matters is that the referenced method has the same parameters and return type as the delegate.
 
 ## async / await
 
-C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the the method is asynchronous. The `aawit` operator tells the compiler that to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. This enables you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](https://docs.microsoft.com):
+C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the method is asynchronous. The `aawit` operator tells the compiler that to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. These features enable you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](https://docs.microsoft.com):
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="AsyncExample":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="AsyncExample":::
 
 This small sample shows the major features for asynchronous programming:
 
@@ -96,11 +96,11 @@ Types, members, and other entities in a C# program support modifiers that contro
 
 The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="DefineAttribute":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="DefineAttribute":::
 
 All attribute classes derive from the <xref:System.Attribute> base class provided by the standard library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` can be used as follows.
 
-:::code language="csharp" source="./snippets/shared/Features.cs" id="UseAttributes":::
+:::code language="csharp" source="./snippets/shared/Features.cs" ID="UseAttributes":::
 
 This example attaches a `HelpAttribute` to the `Widget` class. It adds another `HelpAttribute` to the `Display` method in the class. The public constructors of an attribute class control the information that must be provided when the attribute is attached to a program entity. Additional information can be provided by referencing public read-write properties of the attribute class (such as the reference to the `Topic` property previously).
 
@@ -108,7 +108,7 @@ The metadata defined by attributes can be read and manipulated at runtime using 
 
 The following code sample demonstrates how to get the `HelpAttribute` instances associated to the `Widget` class and its `Display` method.
 
-:::code language="csharp" source="./snippets/shared/attributes/Program.cs" id="ReadAttributes":::
+:::code language="csharp" source="./snippets/shared/attributes/Program.cs" ID="ReadAttributes":::
 
 ## Learn more
 

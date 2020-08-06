@@ -75,8 +75,6 @@ namespace TourOfCsharp
     // </EntityClass>
 
         // <WorkingWithExpressions>
-    using System;
-    using System.Collections.Generic;
     public abstract class Expression
     {
         public abstract double Evaluate(Dictionary<string, object> vars);

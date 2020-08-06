@@ -38,7 +38,7 @@ The following code implements a sample <xref:System.Diagnostics.Tracing.EventSou
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
-Create a [new .NET console app](../tools/dotnet-new.md#console) using the previous code snippet as a replacement for the _Program.cs_ file. Build and run the app. Then use `dotnet-counters ps` to see what its process ID is:
+With an <xref:System.Diagnostics.Tracing.EventSource> similar to the above, you could then use `dotnet-counters ps` to see what its process ID is:
 
 ```console
 dotnet-counters ps

@@ -1,5 +1,5 @@
 ---
-title: "Overview of keyboard input"
+title: "Using keyboard events"
 ms.date: "07/16/2020"
 ms.topic: overview
 dev_langs: 

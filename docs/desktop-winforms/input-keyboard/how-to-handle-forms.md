@@ -12,7 +12,7 @@ helpviewer_keywords:
   - "keyboards [Windows Forms], form-level input"
 ---
 
-# Handle keyboard input messages in the form (Windows Forms .NET)
+# How to handle keyboard input messages in the form (Windows Forms .NET)
 
 Windows Forms provides the ability to handle keyboard messages at the form level, before the messages reach a control. This article shows how to accomplish this task.
 

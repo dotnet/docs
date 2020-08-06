@@ -32,7 +32,7 @@ Forms and controls have access to the <xref:System.Windows.Forms.IMessageFilter>
 | <xref:System.Windows.Forms.Control.DefWndProc%2A>              | This method performs the default processing of Windows messages at the form and control level. This provides the minimal functionality of a window.|
 | <xref:System.Windows.Forms.Control.OnNotifyMessage%2A>         | This method intercepts messages at the form and control level, after they have been processed. The <xref:System.Windows.Forms.ControlStyles.EnableNotifyMessage> style bit must be set for this method to be called.|
 
-Keyboard and mouse messages are also processed by an additional set of overridable methods that are specific to those types of messages. For more information, see [How Keyboard Input Works](how-keyboard-input-works.md) and [How Mouse Input Works in Windows Forms](how-mouse-input-works-in-windows-forms.md).
+Keyboard and mouse messages are also processed by an additional set of overridable methods that are specific to those types of messages. For more information, see the [Preprocessing keys](#preprocessing-keys) section. <!-- todo mouse link -->.
 
 ## Types of keys
 
@@ -93,6 +93,9 @@ There are many methods available for overriding when a keyboard message is prepr
 - <xref:System.Windows.Forms.Keys>
 - <xref:System.Windows.Forms.Control.WndProc%2A>
 - <xref:System.Windows.Forms.Control.PreProcessMessage%2A>
-- [Position and layout of controls](layout.md)
-- [Label control overview (Windows Forms .NET)](labels.md)
+- [Using keyboard events (Windows Forms .NET)](events.md)
+- [How to modify keyboard key events (Windows Forms .NET)](how-to-change-key-press.md)
+- [How to Check for modifier key presses (Windows Forms .NET)](how-to-check-modifier-key.md)
+- [How to simulate keyboard events (Windows Forms .NET)](how-to-simulate-events.md)
+- [How to handle keyboard input messages in the form (Windows Forms .NET)](how-to-handle-forms.md)
 - [Add a control (Windows Forms .NET)](how-to-add-to-a-form.md)

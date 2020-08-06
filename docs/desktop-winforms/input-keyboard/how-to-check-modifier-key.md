@@ -25,7 +25,7 @@ helpviewer_keywords:
   - "Keys.Alt enumeration member"
   - "modifier keys"
 ---
-# Check for modifier key presses (Windows Forms .NET)
+# How to check for modifier key presses (Windows Forms .NET)
 
 As the user types keys into your application, you can monitor for pressed modifier keys such as the <kbd>SHIFT</kbd>, <kbd>ALT</kbd>, and <kbd>CTRL</kbd>. When a modifier key is pressed in combination with other keys or even a mouse click, your application can respond appropriately. For example, pressing the <kbd>S</kbd> key may cause an "s" to appear on the screen. If the keys <kbd>CTRL+S</kbd> are pressed, instead, the current document may be saved.
 

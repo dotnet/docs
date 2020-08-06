@@ -28,16 +28,9 @@ catch (MyException myEx)
 {
     // Handle 'myEx' here in case it was thrown directly.
 }
-catch (SerializationException serEx)
+catch (SerializationException serEx) when (serEx.InnerException is MyException myEx)
 {
-    if (serEx.InnerException is MyException myEx)
-    {
-        // Handle 'myEx' here in case it was wrapped in SerializationException.
-    }
-    else
-    {
-        throw;
-    }
+    // Handle 'myEx' here in case it was wrapped in SerializationException.
 }
 ```
 

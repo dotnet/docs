@@ -8,6 +8,8 @@ f1_keywords:
   - "as_CSharpKeyword"
   - "()_CSharpKeyword"
   - "typeof_CSharpKeyword"
+  - "as"
+  - "typeof"
 helpviewer_keywords: 
   - "type-testing operators [C#]"
   - "conversion operators [C#]"

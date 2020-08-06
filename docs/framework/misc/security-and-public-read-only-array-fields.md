@@ -7,6 +7,9 @@ helpviewer_keywords:
 ms.assetid: 3df28dee-2a9f-40ff-9852-bfdbe59c27f3
 ---
 # Security and Public Read-only Array Fields
+
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
+
 Never use read-only public array fields from managed libraries to define the boundary behavior or security of your applications because read-only public array fields can be modified.  
   
 ## Remarks  

@@ -25,7 +25,7 @@ This example uses [.NET Core](../../../core/index.yml) command-line tools. If yo
 
 Modify the `Main` method in *program.cs* as follows:
 
- [!code-csharp[csProgGuideMain#14](~../../../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#14)]
+ [!code-csharp[csProgGuideMain#14](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#14)]
 
 When a program is executed in Windows, any value returned from the `Main` function is stored in an environment variable. This environment variable can be retrieved using `ERRORLEVEL` from a batch file, or `$LastExitCode` from powershell.
 

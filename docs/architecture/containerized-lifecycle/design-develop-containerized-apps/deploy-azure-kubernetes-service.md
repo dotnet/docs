@@ -6,14 +6,12 @@ ms.date: 08/06/2020
 
 # Deploy to Azure Kubernetes Service (AKS)
 
-You can interact with AKS using your preferred client operating system. To do so, with valid Azure Subscription you also need either Web Browser or Azure command-line interface(Azure CLI). For more details, see [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
+You can interact with AKS using your preferred client operating system (Microsoft Windows, Mac and Linux). You also need to have either a Web Browser or Azure command-line interface(Azure CLI) installed in your development machine. For more details, see [Install the Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
 
 > [!NOTE]
 > To find complete information about:
 >
 > Azure CLI: <https://docs.microsoft.com/cli/azure/index>
->
-> Windows Subsystem for Linux: <https://docs.microsoft.com/windows/wsl/about>
 
 ## Create the AKS environment in Azure
 

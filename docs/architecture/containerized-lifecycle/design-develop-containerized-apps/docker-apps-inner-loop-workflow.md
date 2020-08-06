@@ -6,7 +6,7 @@ ms.date: 08/06/2020
 
 # Inner-loop development workflow for Docker apps
 
-Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-21). But in every case, you'll have an important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you're always developing and testing Docker containers, but locally.
+Before triggering the outer-loop workflow spanning the entire DevOps cycle, it all begins on each developer's machine, coding the app itself, using their preferred languages or platforms, and testing it locally (Figure 4-21). But in every case, you'll have an important point in common, no matter what language, framework, or platforms you choose. In this specific workflow, you're always developing and testing Docker containers in no other environments, but locally.
 
 ![Diagram showing the concept of an inner loop dev environment.](./media/docker-apps-inner-loop-workflow/inner-loop-development-context.png)
 
@@ -82,7 +82,7 @@ To install the Docker extension, press Ctrl+Shift+P, type `ext install`, and the
 
 ### Step 2: Create a DockerFile related to an existing image (plain OS or dev environments like .NET Core, Node.js, and Ruby)
 
-You'll need a `DockerFile` per custom image to be built and per container to be deployed. If your app is made up of a single custom service, you'll need a single `DockerFile`. But if your app is composed of multiple services (as in a microservices architecture), you'll need one `Dockerfile` per service.
+You'll need a `DockerFile` per custom image to be built and per container to be deployed. If your app is made up of single custom service, you'll need a single `DockerFile`. But if your app is composed of multiple services (as in a microservices architecture), you'll need one `Dockerfile` per service.
 
 The `DockerFile` is commonly placed in the root folder of your app or service and contains the required commands so that Docker knows how to set up and run that app or service. You can create your `DockerFile` and add it to your project along with your code (node.js, .NET Core, etc.), or, if you're new to the environment, take a look at the following Tip.
 
@@ -223,17 +223,17 @@ services:
     image: redis
 ```
 
-In this particular case, this file defines three services: the web API service (your custom service), a web application, and the redis service (a popular cache service). Each service will be deployed as a container, so you need to use a concrete Docker image for each. For this particular application:
+In this particular case, this file defines three services: the web API service (your custom service), a web application, and the Redis service (a popular cache service). Each service will be deployed as a container, so you need to use a concrete Docker image for each. For this particular application:
 
 - The web API service is built from the DockerFile in the `src/WebApi/Dockerfile` directory.
 
 - The host port 51080 is forwarded to the exposed port 80 on the `webapi` container.
 
-- The web API service depends on the redis service
+- The web API service depends on the Redis service
 
 - The web application accesses the web API service using the internal address: `http://webapi`.
 
-- The redis service uses the [latest public redis image](https://hub.docker.com/_/redis/) pulled from the Docker Hub registry. [redis](https://redis.io/) is a popular cache system for server-side applications.
+- The Redis service uses the [latest public redis image](https://hub.docker.com/_/redis/) pulled from the Docker Hub registry. [Redis](https://redis.io/) is a popular cache system for server-side applications.
 
 ### Step 5: Build and run your Docker app
 

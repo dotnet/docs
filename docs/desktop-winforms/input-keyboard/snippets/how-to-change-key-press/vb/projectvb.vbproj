@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>Sub Main</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
+</Project>

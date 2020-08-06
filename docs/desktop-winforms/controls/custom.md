@@ -121,6 +121,8 @@ The following information is out of date but may help you.
 
 ## See also
 
+<!-- TODO: link to the ..\custom-controls\ content -->
+
 - [Developing Custom Windows Forms Controls](developing-custom-windows-forms-controls.md)
 - [How to: Develop a Simple Windows Forms Control](how-to-develop-a-simple-windows-forms-control.md)
 - [Developing a Composite Windows Forms Control](developing-a-composite-windows-forms-control.md)

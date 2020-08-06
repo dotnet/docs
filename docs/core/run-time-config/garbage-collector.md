@@ -316,17 +316,17 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitSOH` | *hexadecimal value* | .NET 5.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitSOH` | *decimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitSOH` | *hexadecimal value* | .NET 5.0 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitLOH` | *hexadecimal value* | .NET 5.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitLOH` | *decimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitLOH` | *hexadecimal value* | .NET 5.0 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitPOH` | *hexadecimal value* | .NET 5.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitPOH` | *decimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitPOH` | *hexadecimal value* | .NET 5.0 |
 
 > [!TIP]
@@ -343,17 +343,17 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitSOHPercent` | *hexadecimal value* | .NET 5.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitSOHPercent` | *decimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitSOHPercent` | *hexadecimal value* | .NET 5.0 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitLOHPercent` | *hexadecimal value* | .NET 5.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitLOHPercent` | *decimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitLOHPercent` | *hexadecimal value* | .NET 5.0 |
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5.0 |
+| **runtimeconfig.json** | `System.GC.HeapHardLimitPOHPercent` | *decimal value* | .NET 5.0 |
 | **Environment variable** | `COMPLUS_GCHeapHardLimitPOHPercent` | *hexadecimal value* | .NET 5.0 |
 
 > [!TIP]
@@ -361,10 +361,20 @@ You can specify the GC's allowable heap usage on a per-object-heap basis. The di
 
 ### High memory percent
 
+Memory load is indicated by the percentage of physical memory in use. By default, when the physical memory load reaches **90%**, garbage collection becomes more aggressive about doing full, compacting garbage collections to avoid paging. When memory load is below 90%, GC favors background collections for full garbage collections, which have shorter pauses but don't reduce the total heap size by much. On machines with a significant amount of memory (80GB or more), the default load threshold is between 90% and 97%.
+
+The high memory load threshold can be adjusted by the `COMPlus_GCHighMemPercent` environment variable or `System.GC.HighMemoryPercent` JSON configuration setting. Consider adjusting the threshold if you want to control heap size. For example, for the dominant process on a machine with 64GB of memory, it's reasonable for GC to start reacting when there's 10% of memory available. But for smaller processes, for example, a process that only consumes 1GB of memory, GC can comfortably run with less than 10% of memory available. For these smaller processes, consider setting the threshold higher. On the other hand, if you want larger processes to have smaller heap sizes (even when there's plenty of physical memory available), lowering this threshold is an effective way for GC to react sooner to compact the heap down.
+
+> [!NOTE]
+> For processes running in a container, GC considers the physical memory based on the container limit.
+
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
-| **runtimeconfig.json** | `System.GC.HighMemoryPercent` |  | .NET 5.0 |
-| **Environment variable** | `COMPlus_GCHighMemPercent` |  | |
+| **runtimeconfig.json** | `System.GC.HighMemoryPercent` | *decimal value* | .NET 5.0 |
+| **Environment variable** | `COMPlus_GCHighMemPercent` | *hexadecimal value* | |
+
+> [!TIP]
+> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to set the high memory threshold to 75%, the values would be 75 for the JSON file and 0x4B or 4B for the environment variable.
 
 ### Retain VM
 

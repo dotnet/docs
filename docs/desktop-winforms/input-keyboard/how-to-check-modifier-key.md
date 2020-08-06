@@ -27,7 +27,7 @@ helpviewer_keywords:
 ---
 # Check for modifier key presses (Windows Forms .NET)
 
-As the user types keys into your application, you can monitor for pressed modifier keys such as the <kbd>SHIFT</kbd>, <kbd>ALT</kbd>, and <kbd>CTRL</kbd>. When a modifier key is pressed in combination with other keys or even a mouse click, your application can respond appropriately. For example, if the key <kbd>S</kbd> is pressed, this may cause an "s" to appear on the screen. If the keys <kbd>CTRL+S</kbd> are pressed, instead of writing "s" to the screen, the current document may be saved.
+As the user types keys into your application, you can monitor for pressed modifier keys such as the <kbd>SHIFT</kbd>, <kbd>ALT</kbd>, and <kbd>CTRL</kbd>. When a modifier key is pressed in combination with other keys or even a mouse click, your application can respond appropriately. For example, pressing the <kbd>S</kbd> key may cause an "s" to appear on the screen. If the keys <kbd>CTRL+S</kbd> are pressed, instead, the current document may be saved.
 
 If you handle the <xref:System.Windows.Forms.Control.KeyDown> event, the <xref:System.Windows.Forms.KeyEventArgs.Modifiers?displayProperty=nameWithType> property received by the event handler specifies which modifier keys are pressed. Also, the <xref:System.Windows.Forms.KeyEventArgs.KeyData?displayProperty=nameWithType> property specifies the character that was pressed along with any modifier keys combined with a bitwise OR.
 

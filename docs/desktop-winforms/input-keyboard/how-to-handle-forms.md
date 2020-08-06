@@ -11,9 +11,10 @@ helpviewer_keywords:
   - "Windows Forms, handling keyboard input"
   - "keyboards [Windows Forms], form-level input"
 ---
-# Check for modifier key presses
 
-Windows Forms provides the ability to handle keyboard messages at the form level, before the messages reach a control. This topic shows how to accomplish this task.
+# Handle keyboard input messages in the form (Windows Forms .NET)
+
+Windows Forms provides the ability to handle keyboard messages at the form level, before the messages reach a control. This article shows how to accomplish this task.
 
 ## Handle a keyboard message
 

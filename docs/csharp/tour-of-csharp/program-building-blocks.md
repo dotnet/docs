@@ -5,7 +5,7 @@ ms.date: 08/06/2020
 ---
 # Program Building blocks
 
-The types described in the previous article are built using these building blocks: ***members***, ***expressions, and ***statements***.
+The types described in the previous article are built using these building blocks: ***members***, ***expressions***, and ***statements***.
 
 ## Members
 

@@ -127,6 +127,14 @@ namespace TourOfCsharp
             // </ReadAttributes>
         }
 
+        static double[] Apply(double[] a, Function f)
+        {
+            double[] result = new double[a.Length];
+            for (int i = 0; i < a.Length; i++) result[i] = f(a[i]);
+            return result;
+        }
+
+
         static void ApplyDelegate()
         {
             double[] a = { 0.0, 0.5, 1.0 };
@@ -148,20 +156,22 @@ namespace TourOfCsharp
                 int[] a = { 1, 2, 3 };
                 // </InitializeShortened>
             }
-            // <InitializeGenerated>
-            int[] t = new int[3];
-            t[0] = 1;
-            t[1] = 2;
-            t[2] = 3;
-            int[] a = t;
-            // </InitializeGenerated>
-
-            // <EnumerateArray>
-            foreach (int item in a)
             {
-                Console.WriteLine(item);
+                // <InitializeGenerated>
+                int[] t = new int[3];
+                t[0] = 1;
+                t[1] = 2;
+                t[2] = 3;
+                int[] a = t;
+                // </InitializeGenerated>
+
+                // <EnumerateArray>
+                foreach (int item in a)
+                {
+                    Console.WriteLine(item);
+                }
+                // </EnumerateArray>
             }
-            // </EnumerateArray>
 
         }
 

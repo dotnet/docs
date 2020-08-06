@@ -15,8 +15,8 @@ New classes are created using class declarations. A class declaration starts wit
 - The name of the class
 - The base class (if given)
 - The interfaces implemented by the class.
-- 
-- The header is followed by the class body, which consists of a list of member declarations written between the delimiters `{` and `}`.
+
+The header is followed by the class body, which consists of a list of member declarations written between the delimiters `{` and `}`.
 
 The following code shows a declaration of a simple class named `Point`:
 

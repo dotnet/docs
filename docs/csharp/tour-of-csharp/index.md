@@ -77,7 +77,7 @@ Nullable types don't require a separate definition. For each non-nullable type `
 
 C#'s type system is unified such that a value of any type can be treated as an `object`. Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate base class of all types. Values of reference types are treated as objects simply by viewing the values as type `object`. Values of value types are treated as objects by performing *boxing* and *unboxing operations*. In the following example, an `int` value is converted to `object` and back again to `int`.
 
-:::code language="csharp" interactive="try-dotnet-method" source="./snippets/shared/types-and-variables/Program.cs" ID="boxing" :::
+:::code language="csharp" interactive="try-dotnet-method" source="./snippets/shared/Program.cs" ID="boxing" :::
 
 When a value of a value type is assigned to an `object` reference, a "box" is allocated to hold the value. That box is an instance of a reference type, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type. If the check succeeds, the value in the box is copied to the value type.
 

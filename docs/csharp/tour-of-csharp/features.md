@@ -108,7 +108,7 @@ The metadata defined by attributes can be read and manipulated at runtime using 
 
 The following code sample demonstrates how to get the `HelpAttribute` instances associated to the `Widget` class and its `Display` method.
 
-:::code language="csharp" source="./snippets/shared/attributes/Program.cs" ID="ReadAttributes":::
+:::code language="csharp" source="./snippets/shared/Program.cs" ID="ReadAttributes":::
 
 ## Learn more
 

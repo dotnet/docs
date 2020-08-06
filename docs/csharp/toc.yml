@@ -1289,75 +1289,75 @@
       href: programming-guide/interop/walkthrough-office-programming.md
     - name: Example COM Class
       href: programming-guide/interop/example-com-class.md
-- name: Language Reference
+- name: Language reference
   items:
   - name: Overview
     displayName: language reference
     href: language-reference/index.md
   - name: Configure language version
     href: language-reference/configure-language-version.md
-  - name: C# keywords
+  - name: Types
+    items:
+    - name: Value types
+      items:
+      - name: Overview
+        href: language-reference/builtin-types/value-types.md
+        displayName: "value types, simple types"
+      - name: Integral numeric types
+        href: language-reference/builtin-types/integral-numeric-types.md
+        displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer, literal
+      - name: Floating-point numeric types
+        href: language-reference/builtin-types/floating-point-numeric-types.md
+        displayName: float, decimal, double, rational, real, literal
+      - name: Built-in numeric conversions
+        href: language-reference/builtin-types/numeric-conversions.md
+      - name: bool
+        href: language-reference/builtin-types/bool.md
+        displayName: "Boolean, true, false"
+      - name: char
+        href: language-reference/builtin-types/char.md
+        displayName: "Unicode, character, UTF-16"
+      - name: Enumeration types
+        href: language-reference/builtin-types/enum.md
+        displayName: "enum, bit flags, bit field"
+      - name: Structure types
+        href: language-reference/builtin-types/struct.md
+        displayName: "struct type, readonly struct, ref struct, readonly ref struct"
+      - name: Tuple types
+        href: language-reference/builtin-types/value-tuples.md
+        displayName: "value tuples, ValueTuple"
+      - name: Nullable value types
+        href: language-reference/builtin-types/nullable-value-types.md
+        displayName: "? token, ? symbol"
+    - name: Reference types
+      items:
+      - name: Features of reference types
+        href: language-reference/keywords/reference-types.md
+      - name: Built-in reference types
+        displayName: object, delegate, dynamic, string
+        href: language-reference/builtin-types/reference-types.md
+      - name: class
+        href: language-reference/keywords/class.md
+      - name: interface
+        href: language-reference/keywords/interface.md
+      - name: Nullable reference types
+        href: language-reference/builtin-types/nullable-reference-types.md
+        displayName: "? token, ? symbol"
+    - name: void
+      href: language-reference/builtin-types/void.md
+    - name: var
+      href: language-reference/keywords/var.md
+    - name: Built-in types
+      href: language-reference/builtin-types/built-in-types.md
+    - name: Unmanaged types
+      href: language-reference/builtin-types/unmanaged-types.md
+    - name: Default values
+      href: language-reference/builtin-types/default-values.md
+  - name: Keywords
     items:
     - name: Overview
       displayName: keywords
       href: language-reference/keywords/index.md
-    - name: Types
-      items:
-      - name: Value types
-        items:
-        - name: Overview
-          href: language-reference/builtin-types/value-types.md
-          displayName: "value types, simple types"
-        - name: Integral numeric types
-          href: language-reference/builtin-types/integral-numeric-types.md
-          displayName: sbyte, byte, short, ushort, int, uint, long, ulong, integer, literal
-        - name: Floating-point numeric types
-          href: language-reference/builtin-types/floating-point-numeric-types.md
-          displayName: float, decimal, double, rational, real, literal
-        - name: Built-in numeric conversions
-          href: language-reference/builtin-types/numeric-conversions.md
-        - name: bool
-          href: language-reference/builtin-types/bool.md
-          displayName: "Boolean, true, false"
-        - name: char
-          href: language-reference/builtin-types/char.md
-          displayName: "Unicode, character, UTF-16"
-        - name: Enumeration types
-          href: language-reference/builtin-types/enum.md
-          displayName: "enum, bit flags, bit field"
-        - name: Structure types
-          href: language-reference/builtin-types/struct.md
-          displayName: "struct type, readonly struct, ref struct, readonly ref struct"
-        - name: Tuple types
-          href: language-reference/builtin-types/value-tuples.md
-          displayName: "value tuples, ValueTuple"
-        - name: Nullable value types
-          href: language-reference/builtin-types/nullable-value-types.md
-          displayName: "? token, ? symbol"
-      - name: Reference types
-        items:
-        - name: Features of reference types
-          href: language-reference/keywords/reference-types.md
-        - name: Built-in reference types
-          displayName: object, delegate, dynamic, string
-          href: language-reference/builtin-types/reference-types.md
-        - name: class
-          href: language-reference/keywords/class.md
-        - name: interface
-          href: language-reference/keywords/interface.md
-        - name: Nullable reference types
-          href: language-reference/builtin-types/nullable-reference-types.md
-          displayName: "? token, ? symbol"
-      - name: void
-        href: language-reference/builtin-types/void.md
-      - name: var
-        href: language-reference/keywords/var.md
-      - name: Built-in types
-        href: language-reference/builtin-types/built-in-types.md
-      - name: Unmanaged types
-        href: language-reference/builtin-types/unmanaged-types.md
-      - name: Default values
-        href: language-reference/builtin-types/default-values.md
     - name: Modifiers
       items:
       - name: Access Modifiers
@@ -1574,7 +1574,7 @@
         href: language-reference/keywords/by.md
       - name: in
         href: language-reference/keywords/in.md
-  - name: C# operators and expressions
+  - name: Operators and expressions
     items:
     - name: Overview
       href: language-reference/operators/index.md
@@ -1657,7 +1657,7 @@
       href: language-reference/operators/true-false-operators.md
     - name: Operator overloading
       href: language-reference/operators/operator-overloading.md
-  - name: C# special characters
+  - name: Special characters
     items:
     - name: Overview
       displayName: special characters
@@ -1680,7 +1680,7 @@
     - name: Nullable static analysis
       displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
       href: language-reference/attributes/nullable-analysis.md
-  - name: C# preprocessor directives
+  - name: Preprocessor directives
     items:
     - name: Overview
       displayName: preprocessor directives
@@ -1713,7 +1713,7 @@
       href: language-reference/preprocessor-directives/preprocessor-pragma-warning.md
     - name: "#pragma checksum"
       href: language-reference/preprocessor-directives/preprocessor-pragma-checksum.md
-  - name: C# compiler options
+  - name: Compiler options
     items:
     - name: Overview
       displayName: compiler options
@@ -1844,7 +1844,7 @@
         href: language-reference/compiler-options/win32manifest-compiler-option.md
       - name: -win32res
         href: language-reference/compiler-options/win32res-compiler-option.md
-  - name: C# compiler errors
+  - name: Compiler errors
     href: language-reference/compiler-messages/index.md
   - name: C# 6.0 draft specification
     href: language-reference/specification/

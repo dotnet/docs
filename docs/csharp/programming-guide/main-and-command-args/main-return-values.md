@@ -11,7 +11,7 @@ ms.assetid: c2f5a1d8-1676-4bea-bc7e-44a97e72d5bc
 
 The `Main` method can return `void`:
 
- [!code-csharp[csProgGuideMain#12](~../../../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
+ [!code-csharp[csProgGuideMain#12](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class3.cs#12)]
 
 It can also return an `int`:
 

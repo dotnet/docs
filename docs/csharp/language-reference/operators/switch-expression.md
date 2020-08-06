@@ -24,7 +24,7 @@ The *switch expression arms* are evaluated in text order. The compiler issues an
 
 ## Patterns and case guards
 
-Many patterns are supported in switch expression arms. The preceding example used a *value pattern*. A *value pattern* compares the range expression to a value. That value must be a compile time constant. The *type pattern* compares the range expression to a known type. The following example retrieves the third element from a sequence. It uses different methods based on the type of the sequence:
+Many patterns are supported in switch expression arms. The preceding example uses a *constant pattern*. A *constant pattern* compares the range expression to a value. That value must be a compile-time constant. The *type pattern* compares the range expression to a known type. The following example retrieves the third element from a sequence. It uses different methods based on the type of the sequence:
 
 :::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetTypePattern":::
 

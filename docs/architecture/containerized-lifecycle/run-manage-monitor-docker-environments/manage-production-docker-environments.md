@@ -1,7 +1,7 @@
 ---
 title: Manage production Docker environments
 description: Get to know the key points for managing a container-based production environment.
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 # Manage production Docker environments
 

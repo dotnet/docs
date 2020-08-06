@@ -52,6 +52,8 @@ The following code example demonstrates how to use the <xref:System.Windows.Form
 
 ## See also
 
-- [Keyboard Input in a Windows Forms Application](keyboard-input-in-a-windows-forms-application.md)
-- [User Input in a Windows Forms Application](user-input-in-a-windows-forms-application.md)
-- [How Keyboard Input Works](how-keyboard-input-works.md)
+- [Overview of using the keyboard (Windows Forms .NET)](overview.md)
+- [Using keyboard events (Windows Forms .NET)](events.md)
+- <xref:System.Windows.Forms.Keys>
+- <xref:System.Windows.Forms.Control.KeyDown>
+- <xref:System.Windows.Forms.Control.KeyPress>

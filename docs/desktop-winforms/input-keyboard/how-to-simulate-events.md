@@ -67,7 +67,10 @@ For more information about these events, see [Using keyboard events (Windows For
 
 ## See also
 
-- [Using keyboard events (Windows Forms .NET)](events.md).
-- [Using mouse events (Windows Forms .NET)](../input-mouse/events.md).
-- [How to simulate mouse events (Windows Forms .NET)](../input-mouse/how-to-simulate-events.md).
+- [Overview of using the keyboard (Windows Forms .NET)](overview.md)
+- [Using keyboard events (Windows Forms .NET)](events.md)
+- [Using mouse events (Windows Forms .NET)](../input-mouse/events.md)
 - <xref:System.Windows.Forms.SendKeys>
+- <xref:System.Windows.Forms.Keys>
+- <xref:System.Windows.Forms.Control.KeyDown>
+- <xref:System.Windows.Forms.Control.KeyPress>

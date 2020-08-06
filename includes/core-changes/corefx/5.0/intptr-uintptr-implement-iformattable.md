@@ -12,7 +12,7 @@ This change impacts scenarios like interpolated strings and <xref:System.Console
 
 #### Reason for change
 
-<xref:System.IntPtr> and <xref:System.UIntPtr> now have language support in C# through the `nint` and `nuint` keywords. The backing types were updated to provide near parity (where possible) with functionality exposed by other primitive types, such as <xref:System.Int32.Equals%2A?displayProperty=nameWithType>.
+<xref:System.IntPtr> and <xref:System.UIntPtr> now have language support in C# through the `nint` and `nuint` keywords. The backing types were updated to provide near parity (where possible) with functionality exposed by other primitive types, such as <xref:System.Int32?displayProperty=nameWithType>.
 
 #### Version introduced
 

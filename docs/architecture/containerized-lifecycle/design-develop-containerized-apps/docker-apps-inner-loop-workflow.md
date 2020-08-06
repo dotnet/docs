@@ -40,12 +40,12 @@ The way you develop your application is similar to the way you do it without Doc
 
 **Setting up your local environment**
 
-With the latest versions of Docker for Mac and Windows, it's easier than ever to develop Docker applications, and the setup is straightforward.
+With the latest versions of Docker Desktop for Mac and Windows, it's easier than ever to develop Docker applications, and the setup is straightforward.
 
 > [!TIP]
-> For instructions on setting up Docker for Windows, go to <https://docs.docker.com/docker-for-windows/>.
+> For instructions on setting up Docker Desktop for Windows, go to <https://docs.docker.com/docker-for-windows/>.
 >
-> For instructions on setting up Docker for Mac, go to <https://docs.docker.com/docker-for-mac/>.
+> For instructions on setting up Docker Desktop for Mac, go to <https://docs.docker.com/docker-for-mac/>.
 
 In addition, you'll need a code editor so that you can actually develop your application while using Docker CLI.
 
@@ -105,7 +105,7 @@ In Figure 4-24, you can see the steps to add the docker files to a project by us
 When you add a DockerFile, you specify what base Docker image you'll be using (like using `FROM mcr.microsoft.com/dotnet/core/aspnet`). You'll usually build your custom image on top of a base image that you get from any official repository at the [Docker Hub registry](https://hub.docker.com/) (like an [image for .NET Core](https://hub.docker.com/_/microsoft-dotnet-core/) or the one [for Node.js](https://hub.docker.com/_/node/)).
 
 > [!TIP]
-> You have to repeat this procedure for every project in your application. However, the extension will ask to overwrite the generated docker-compose file after the first time. You should reply to not overwrite it, so the extension creates separate docker-compose files, that you can then merge by hand, prior to running docker-compose.
+> You'll have to repeat this procedure for every project in your application. However, the extension will ask to overwrite the generated docker-compose file after the first time. You should reply to not overwrite it, so the extension creates separate docker-compose files, that you can then merge by hand, prior to running docker-compose.
 
 **_Use an existing official Docker image_**
 
@@ -164,7 +164,7 @@ For each custom service that comprises your app, you'll need to create a related
 > [!NOTE]
 > When taking into account the "outer-loop DevOps workflow", the images will be created by an automated build process whenever you push your source code to a Git repository (Continuous Integration), so the images will be created in that global environment from your source code.
 >
-> But before we consider going to that outer-loop route, we need to ensure that the Docker application is actually working properly so that they don't push code that might not work properly to the source control system (Git, etc.).
+> But before you consider going to that outer-loop route, you need to ensure that the Docker application is actually working properly so that they don't push code that might not work properly to the source control system (Git, etc.).
 >
 > Therefore, each developer first needs to do the entire inner-loop process to test locally and continue developing until they want to push a complete feature or change to the source control system.
 
@@ -223,7 +223,7 @@ services:
     image: redis
 ```
 
-In this particular case, this file defines three services: the web API service (your custom service), a web application, and the redis service (a popular cache service). Each service will be deployed as a container, so we need to use a concrete Docker image for each. For this particular application:
+In this particular case, this file defines three services: the web API service (your custom service), a web application, and the redis service (a popular cache service). Each service will be deployed as a container, so you need to use a concrete Docker image for each. For this particular application:
 
 - The web API service is built from the DockerFile in the `src/WebApi/Dockerfile` directory.
 

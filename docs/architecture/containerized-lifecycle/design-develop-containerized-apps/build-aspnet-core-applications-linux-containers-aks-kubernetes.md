@@ -42,13 +42,13 @@ Verify that you've selected ASP.NET Core 3.1 as the framework. .NET Core 3.1 is 
 
 **Figure 4-37**. Selecting ASP.NET CORE 3.1 and Web API project type
 
-Notice we're not enabling Docker support now, because we'll do it in a moment, just to show it can be done after project creation.
+Notice Docker support is not enabled now, just to show it can be done after project creation.
 
 If you have any previous version of .NET Core, you can download and install the 3.1 version from <https://dotnet.microsoft.com/download>.
 
-To show you can "Dockerize" your project at any time. We'll add Docker support now, so right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
+To show you can "Dockerize" your project at any time, you'll add Docker support now. So right-click on the project node in Solution Explorer and select **Add** > **Docker support** on the context menu.
 
-![Context menu option to add Docker support to an existing project: Right click (on the project) > Add > Docker Support.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/add-docker-support-to-project.png)
+![Context menu option to add Docker support to an existing project: Right-click (on the project) > Add > Docker Support.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/add-docker-support-to-project.png)
 
 **Figure 4-38**. Adding Docker support to an existing project
 
@@ -60,19 +60,19 @@ To complete adding Docker support, you can choose Windows or Linux. In this case
 
 With these simple steps, you have your ASP.NET Core 3.1 application running on a Linux container.
 
-In a similar way, we add a very simple WebApp application to consume the web API endpoint, although we don't get into the details here.
+In a similar way, you can also add a very simple **WebApp** project (Figure 4-40) to consume the web API endpoint, although the details are not discussed here.
 
-After adding the WebApp project we add orchestrator support as shown next, in image 4-40.
+After that, you add orchestrator support for your **WebApi** project as shown next, in image 4-40.
 
 ![Adding orchestrator support to WebApi project](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/add-orchestrator-support.png)
 
-**Figure 4-40**. Adding orchestrator support to WebApi project.
+**Figure 4-40**. Adding orchestrator support to *WebApi* project.
 
-When we choose the `Docker Compose` option, which is fine for local development, Visual Studio adds the docker-compose project, with the docker-compose files as shown in image 4-41.
+When you choose the `Docker Compose` option, which is fine for local development, Visual Studio adds the docker-compose project, with the docker-compose files as shown in image 4-41.
 
 ![Docker-compose added to solution](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/docker-compose-project-in-visual-studio.png)
 
-**Figure 4-41**. Adding orchestrator support to WebApi project.
+**Figure 4-41**. Adding orchestrator support to *WebApi* project.
 
 The initial files added are similar to these ones:
 
@@ -123,7 +123,7 @@ services:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
 ```
 
-To have our app running with Docker Compose we just have to make a few tweaks to `docker-compose.override.yml`
+To have you app running with Docker Compose you just have to make a few tweaks to `docker-compose.override.yml`
 
 ```yml
 services:
@@ -147,7 +147,7 @@ Now you can run your application with **F5** key, or by using the **Play** butto
 
 ![Running docker-compose project with Visual Studio](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/running-docker-compose-with-visual-studio.png)
 
-**Figure 4-42**. Adding orchestrator support to WebApi project.
+**Figure 4-42**. Adding orchestrator support to *WebApi* project.
 
 When running the docker-compose application as explained, you get:
 
@@ -162,7 +162,7 @@ Browser opened:
 
 **Figure 4-43**. Browser window with an application running on multiple containers.
 
-Container window:
+Containers window:
 
 ![Visual Studio "Containers" window](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/visual-studio-containers-window.png)
 
@@ -184,7 +184,7 @@ docker images
 
 ## Register the Solution in an Azure Container Registry (ACR)
 
-We'll upload the images to the [Azure Container Registry (ACR)](https://azure.microsoft.com/services/container-registry/), but we could also use Docker Hub or any other registry, so the images can be deployed to the AKS cluster from that registry.
+You can upload the images to the [Azure Container Registry (ACR)](https://azure.microsoft.com/services/container-registry/), but you could also use Docker Hub or any other registry, so the images can be deployed to the AKS cluster from that registry.
 
 ### Create an ACR instance
 
@@ -196,7 +196,7 @@ az acr create --name exploredocker --resource-group explore-docker-aks-rg --sku 
 
 ### Create the image in Release mode
 
-We'll now create the image in **Release** mode (ready for production) by changing to **Release**, as shown in Figure 4-46, and running the application as we did before.
+You'll now create the image in **Release** mode (ready for production) by changing to **Release**, as shown in Figure 4-46, and running the application as you did before.
 
 ![Toolbar option in VS to build in release mode.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/select-release-mode.png)
 
@@ -258,7 +258,7 @@ This command takes a while uploading the images but gives you feedback in the pr
 
 **Figure 4-50**. Console output from the push command.
 
-To deploy your multi-container app into your AKS cluster we need some manifest `.yaml` files that have, most of the properties taken from the `docker-compose.yml` and `docker-compose.override.yml` files.
+To deploy your multi-container app into your AKS cluster you need some manifest `.yaml` files that have, most of the properties taken from the `docker-compose.yml` and `docker-compose.override.yml` files.
 
 #### `deploy-webapi.yml`
 
@@ -373,7 +373,7 @@ az aks get-credentials --resource-group explore-docker-aks-rg --name explore-doc
 
 **Figure 4-51**. Getting credentials from AKS into the kubectl environment.
 
-We also have to allow the AKS cluster to pull images from the ACR, using this command:
+You also have to allow the AKS cluster to pull images from the ACR, using this command:
 
 ```console
 az aks update --name explore-docker-aks --resource-group explore-docker-aks-rg --attach-acr exploredocker

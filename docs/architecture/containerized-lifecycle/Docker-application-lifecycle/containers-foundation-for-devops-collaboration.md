@@ -33,17 +33,17 @@ The use of Docker containerization and microservices causes new challenges in th
 
 These challenges create new demands when using DevOps tools, so you'll have to define new processes in your DevOps activities, and find answers for the following type of questions:
 
-- Which tools can I use for development, CI/CD, management and operations?
+- Which tools can I use for development, CI/CD, management and operations??
 
 - How can my company manage errors in containers when running in production?
 
-- How can I change pieces of my software in production with minimum downtime?
+- How can we change pieces of our software in production with minimum downtime?
 
-- How can I scale and monitor my production system?
+- How can we scale and monitor our production system?
 
-- How can I include the testing and deployment of containers in my release pipeline?
+- How can we include the testing and deployment of containers in our release pipeline?
 
-- How can I use Open Source tools/platforms for containers in Microsoft Azure?
+- How can we use Open Source tools/platforms for containers in Microsoft Azure?
 
 If you can answer all those questions, you'll be better prepared to move your applications (existing or new apps) to Docker containers.
 

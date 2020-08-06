@@ -8,11 +8,6 @@ ms.date: 08/06/2020
 
 You can interact with AKS using your preferred client operating system (Windows, macOS, or Linux) with Azure command-line interface(Azure CLI) installed. For more details, refer [Azure CLI documentation](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest) and [Installation guide](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) for the available environments.
 
-> [!NOTE]
-> To find complete information about:
->
-> Azure CLI: <https://docs.microsoft.com/cli/azure/index>
-
 ## Create the AKS environment in Azure
 
 There are several ways to create the AKS Environment. It can be done by using Azure CLI commands or by using the Azure portal.

@@ -52,7 +52,7 @@ To show you can "Dockerize" your project at any time, you'll add Docker support 
 
 **Figure 4-38**. Adding Docker support to an existing project
 
-To complete adding Docker support, you can choose Windows or Linux. In this case, select **Linux**. AKS support for Windows container is currently in preview (as of early 2020).
+To complete adding Docker support, you can choose Windows or Linux. In this case, select **Linux**.
 
 ![Option dialog to select Target OS for Dockerfile.](media/build-aspnet-core-applications-linux-containers-aks-kubernetes/select-linux-docker-support.png)
 

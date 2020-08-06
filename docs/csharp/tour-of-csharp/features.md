@@ -1,17 +1,17 @@
 ---
-title: A Tour of C# - C# Guide
+title: A Tour of C# - Major language areas
 description: New to C#? Learn the basics of the language.
 ms.date: 08/06/2020
 ---
-# Major features
+# Major language areas
 
 ## Arrays, collections, and LINQ
 
-C# and .NET provide many different collection types. Arrays have syntax defined by the language. General collection types are listed in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. Specialized collections include <xref:System.Span%601?displayProperty=nameWithType> for accessing continuous memory on the stack frame, and <xref:System.Memory%601?displayProperty=nameWithType> for accessing continuous memory on the managed heap. All collections, including arrays, <xref:System.Span%601>, and <xref:System.Memory%601> share a unifying principle for iteration. You use the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. This unifying principle means that any of the collection types can be used with LINQ queries or other algorithms. You write methods using <xref:System.Collections.Generic.IEnumerable%601> and those algorithms work with any collection.
+C# and .NET provide many different collection types. `Arrays` have syntax defined by the language. General collection types are listed in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. Specialized collections include <xref:System.Span%601?displayProperty=nameWithType> for accessing continuous memory on the stack frame, and <xref:System.Memory%601?displayProperty=nameWithType> for accessing continuous memory on the managed heap. All collections, including arrays, <xref:System.Span%601>, and <xref:System.Memory%601> share a unifying principle for iteration. You use the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. This unifying principle means that any of the collection types can be used with LINQ queries or other algorithms. You write methods using <xref:System.Collections.Generic.IEnumerable%601> and those algorithms work with any collection.
 
 ### Arrays
 
-An ***array*** is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type. This type is called the ***element type*** of the array.
+An [***array***](../programming-guide/arrays/index.md) is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type. This type is called the ***element type*** of the array.
 
 Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at runtime using the new operator. The new operation specifies the ***length*** of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from `0` to `Length - 1`. The `new` operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and `null` for all reference types.
 
@@ -34,7 +34,7 @@ The new operator permits the initial values of the array elements to be specifie
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeArray":::
 
-The length of the array is inferred from the number of expressions between { and }. Local variable and field declarations can be shortened further such that the array type doesn't have to be restated.
+The length of the array is inferred from the number of expressions between `{` and `}`. Local variable and field declarations can be shortened further such that the array type doesn't have to be restated.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeShortened":::
 
@@ -50,7 +50,7 @@ The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%60
 
 ## string interpolation
 
-C# ***string interpolation*** enables you to format strings by define expressions whose results are placed in a format string. For example, the following example prints the temperature on a given day from a set of weather data:
+C# [***string interpolation***](../language-reference/tokens/interpolated.md) enables you to format strings by define expressions whose results are placed in a format string. For example, the following example prints the temperature on a given day from a set of weather data:
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="StringInterpolation":::
 
@@ -58,17 +58,17 @@ An interpolated string is declared using the `$` token. String interpolation eva
 
 ## Pattern Matching
 
-The C# language provides ***pattern matching*** expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
+The C# language provides [***pattern matching***](../pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
 
 ## Delegates and lambda expressions
 
-A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages. Unlike function pointers, delegates are object-oriented and type-safe.
+A [***delegate type***](../delegates-overview.md) represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages. Unlike function pointers, delegates are object-oriented and type-safe.
 
 The following example declares and uses a delegate type named `Function`.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="DelegateExample":::
 
-An instance of the `Function` delegate type can reference any method that takes a `double` argument and returns a `double` value. The `Apply` method applies a given Function to the elements of a `double[]`, returning a `double[]` with the results. In the `Main` method, `Apply` is used to apply three different functions to a `double[]`.
+An instance of the `Function` delegate type can reference any method that takes a `double` argument and returns a `double` value. The `Apply` method applies a given `Function` to the elements of a `double[]`, returning a `double[]` with the results. In the `Main` method, `Apply` is used to apply three different functions to a `double[]`.
 
 A delegate can reference either a static method (such as `Square` or `Math.Sin` in the previous example) or an instance method (such as `m.Multiply` in the previous example). A delegate that references an instance method also references a particular object, and when the instance method is invoked through the delegate, that object becomes `this` in the invocation.
 
@@ -92,7 +92,7 @@ This small sample shows the major features for asynchronous programming:
 
 ## Attributes
 
-Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this additional declarative information by defining and using ***attributes***.
+Types, members, and other entities in a C# program support modifiers that control certain aspects of their behavior. For example, the accessibility of a method is controlled using the `public`, `protected`, `internal`, and `private` modifiers. C# generalizes this capability such that user-defined types of declarative information can be attached to program entities and retrieved at run-time. Programs specify this additional declarative information by defining and using [***attributes***](../programming-guide/concepts/attributes/index.md).
 
 The following example declares a `HelpAttribute` attribute that can be placed on program entities to provide links to their associated documentation.
 

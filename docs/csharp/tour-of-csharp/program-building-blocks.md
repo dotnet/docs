@@ -5,7 +5,7 @@ ms.date: 08/06/2020
 ---
 # Program Building blocks
 
-The types described in the previous article are built using these building blocks: ***members***, ***expressions***, and ***statements***.
+The types described in the previous article are built using these building blocks: [***members***](../programming-guide/classes-and-structs/members.md), [***expressions***, and ***statements***](../programming-guide/statements-expressions-operators/index.md).
 
 ## Members
 
@@ -30,7 +30,7 @@ Each member of a class has an associated accessibility, which controls the regio
 
 - `public`: Access isn't limited.
 - `protected`: Access is limited to this class or classes derived from this class.
-- `internal`: Access is limited to the current assembly (.exe, .dll, and so on.).
+- `internal`: Access is limited to the current assembly (`.exe` or `.dll`).
 - `protected internal`: Access is limited to the containing class, classes derived from the containing class, or classes within the same assembly.
 - `private`: Access is limited to this class.
 - `private protected`: Access is limited to the containing class or classes derived from the containing type within the same assembly.
@@ -47,7 +47,7 @@ In the following example, each instance of the `Color` class has a separate copy
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ColorClassDefinition":::
 
-As shown in the previous example, *read-only fields* may be declared with a `readonly` modifier. Assignment to a `readonly` field can only occur as part of the field’s declaration or in a constructor in the same class.
+As shown in the previous example, *read-only fields* may be declared with a `readonly` modifier. Assignment to a read-only field can only occur as part of the field’s declaration or in a constructor in the same class.
 
 ## Methods
 
@@ -75,7 +75,7 @@ An *output parameter* is used for passing arguments by reference. It's similar t
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="OutExample":::
 
-A *parameter array* permits a variable number of arguments to be passed to a method. A parameter array is declared with the `params` modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The Write and WriteLine methods of the <xref:System.Console?displayProperty=nameWithType> class are good examples of parameter array usage. They're declared as follows.
+A *parameter array* permits a variable number of arguments to be passed to a method. A parameter array is declared with the `params` modifier. Only the last parameter of a method can be a parameter array, and the type of a parameter array must be a single-dimensional array type. The `Write` and `WriteLine` methods of the <xref:System.Console?displayProperty=nameWithType> class are good examples of parameter array usage. They're declared as follows.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ConsoleExtract":::
 
@@ -101,9 +101,9 @@ A method can use `return` statements to return control to its caller. In a metho
 
 ### Static and instance methods
 
-A method declared with a static modifier is a *static method*. A static method doesn't operate on a specific instance and can only directly access static members.
+A method declared with a `static` modifier is a *static method*. A static method doesn't operate on a specific instance and can only directly access static members.
 
-A method declared without a static modifier is an *instance method*. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as `this`. It's an error to refer to `this` in a static method.
+A method declared without a `static` modifier is an *instance method*. An instance method operates on a specific instance and can access both static and instance members. The instance on which an instance method was invoked can be explicitly accessed as `this`. It's an error to refer to `this` in a static method.
 
 The following `Entity` class has both static and instance members.
 
@@ -113,7 +113,7 @@ Each `Entity` instance contains a serial number (and presumably some other infor
 
 The `GetNextSerialNo` and `SetNextSerialNo` static methods can access the `nextSerialNo` static field, but it would be an error for them to directly access the `serialNo` instance field.
 
-The following example shows the use of the Entity class.
+The following example shows the use of the `Entity` class.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="UsingEntity":::
 
@@ -129,7 +129,7 @@ A virtual method can be *overridden* in a derived class. When an instance method
 
 An *abstract method* is a virtual method with no implementation. An abstract method is declared with the `abstract` modifier and is permitted only in an abstract class. An abstract method must be overridden in every non-abstract derived class.
 
-The following example declares an abstract class, `Expression`, which represents an expression tree node, and three derived classes, `Constant`, `VariableReference`, and `Operation`, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This example is similar to, but not to be confused with the expression tree types).
+The following example declares an abstract class, `Expression`, which represents an expression tree node, and three derived classes, `Constant`, `VariableReference`, and `Operation`, which implement expression tree nodes for constants, variable references, and arithmetic operations. (This example is similar to, but not related to the expression tree types).
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="WorkingWithExpressions":::
 
@@ -159,16 +159,13 @@ Members that contain executable code are collectively known as the *function mem
 
 The following example shows a generic class called `MyList<T>`, which implements a growable list of objects. The class contains several examples of the most common kinds of function members.
 
-> [!NOTE]
-> This example creates a `MyList` class, which is not the same as the .NET standard <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. It does illustrate the concepts needed for this tour, but is not a replacement for that class.
-
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ListExample":::
 
 ### Constructors
 
 C# supports both instance and static constructors. An *instance constructor* is a member that implements the actions required to initialize an instance of a class. A *static constructor* is a member that implements the actions required to initialize a class itself when it's first loaded.
 
-A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a static modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
+A constructor is declared like a method with no return type and the same name as the containing class. If a constructor declaration includes a `static` modifier, it declares a static constructor. Otherwise, it declares an instance constructor.
 
 Instance constructors can be overloaded and can have optional parameters. For example, the `MyList<T>` class declares one instance constructor with a single optional `int` parameter. Instance constructors are invoked using the `new` operator. The following statements allocate two `MyList<string>` instances using the constructor of the `MyList` class with and without the optional argument.
 
@@ -222,7 +219,7 @@ For advanced scenarios where control of the underlying storage of an event is de
 
 An *operator* is a member that defines the meaning of applying a particular expression operator to instances of a class. Three kinds of operators can be defined: unary operators, binary operators, and conversion operators. All operators must be declared as `public` and `static`.
 
-The `MyList<T>` class declares two operators, `operator ==` and `operator !=`. These overridden opeators give new meaning to expressions that apply those operators to `MyList` instances. Specifically, the operators define equality of two `MyList<T>` instances as comparing each of the contained objects using their Equals methods. The following example uses the `==` operator to compare two `MyList<int>` instances.
+The `MyList<T>` class declares two operators, `operator ==` and `operator !=`. These overridden opeators give new meaning to expressions that apply those operators to `MyList` instances. Specifically, the operators define equality of two `MyList<T>` instances as comparing each of the contained objects using their `Equals` methods. The following example uses the `==` operator to compare two `MyList<int>` instances.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ListAccess":::
 

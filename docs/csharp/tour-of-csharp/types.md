@@ -30,7 +30,7 @@ The memory occupied by an object is automatically reclaimed when the object is n
 
 ### Type parameters
 
-Generic classes define ***type parameters***. Type parameters are a list of type parameters names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
+Generic classes define [***type parameters***](programming-guide/generics/index.md). Type parameters are a list of type parameters names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DefinePairClass":::
 
@@ -55,13 +55,13 @@ An implicit conversion exists from a class type to any of its base class types. 
 
 ## Structs
 
-Classes define types that support inheritance and polymorphism. They enable you to create sophisticated behaviors based on hierarchies of derived classes. By contrast, ***struct*** types are simpler types whose primary purpose is to store data values. Structs can't declare a base type; they implicitly derive from <xref:System.ValueType?displayProperty=nameWithType>. You can't derive other `struct` types from a `struct` type. They're implicitly sealed.
+Classes define types that support inheritance and polymorphism. They enable you to create sophisticated behaviors based on hierarchies of derived classes. By contrast, [***struct***](../language-reference/builtin-types/value-types.md) types are simpler types whose primary purpose is to store data values. Structs can't declare a base type; they implicitly derive from <xref:System.ValueType?displayProperty=nameWithType>. You can't derive other `struct` types from a `struct` type. They're implicitly sealed.
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="PointStruct":::
 
 ## Interfaces
 
-An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+An [***interface***](programming-guide/interfaces/index.md) defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
 
 Interfaces may employ ***multiple inheritance***. In the following example, the interface `IComboBox` inherits from both `ITextBox` and `IListBox`.
 
@@ -77,7 +77,7 @@ When a class or struct implements a particular interface, instances of that clas
 
 ## Enums
 
-An ***Enum*** type defines a set of constant values. The following `enum` declares constants that define different root vegetables:
+An [***Enum***](../language-reference/builtin-types/enum.md) type defines a set of constant values. The following `enum` declares constants that define different root vegetables:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="EnumDeclaration":::
 
@@ -91,13 +91,13 @@ The following example shows declarations of both the preceding enums:
 
 ## Nullable types
 
-Variables of any type may be declared as ***non-nullable*** or ***nullable***. A nullable variable can hold an additional `null` value, indicating no value. Nullable Value types (structs or enums) are represented by <xref:System.Nullable%601?displayProperty=nameWithType>. Non-nullable and Nullable Reference types are both represented by the underlying reference type. The distinction is represented by metadata read by the compiler and some libraries. The compiler provides warnings when nullable references are de-referenced without first checking their value against `null`. The compiler also provides warnings when non-nullable references are assigned to a value that may be `null`. The following example declares a ***nullable int***, initializing it to `null`. Then, it sets the value to `5`. It demonstrates the same concept with a ***nullable string***.
+Variables of any type may be declared as ***non-nullable*** or ***nullable***. A nullable variable can hold an additional `null` value, indicating no value. Nullable Value types (structs or enums) are represented by <xref:System.Nullable%601?displayProperty=nameWithType>. Non-nullable and Nullable Reference types are both represented by the underlying reference type. The distinction is represented by metadata read by the compiler and some libraries. The compiler provides warnings when nullable references are de-referenced without first checking their value against `null`. The compiler also provides warnings when non-nullable references are assigned to a value that may be `null`. The following example declares a ***nullable int***, initializing it to `null`. Then, it sets the value to `5`. It demonstrates the same concept with a ***nullable string***. For more information, see [nullable value types](language-reference/builtin-types/nullable-value-types.md) and [nullable reference types](../nullable-references.md).
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DeclareNullable":::
 
 ## Tuples
 
-C# supports ***tuples, which provides concise syntax to group multiple data elements in a lightweight data structure. You instantiate a tuple by declaring the types and names of the members between `(` and `)`, as shown in the following example:
+C# supports [***tuples***](../language-reference/builtin-types/value-tuples.md), which provides concise syntax to group multiple data elements in a lightweight data structure. You instantiate a tuple by declaring the types and names of the members between `(` and `)`, as shown in the following example:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DeclareTuples":::
 

@@ -55,7 +55,7 @@ An implicit conversion exists from a class type to any of its base class types. 
 
 ## Structs
 
-Classes define types that support inheritance and polymorphism. They enable you to create sophisticated behaviors based on hierarchies of derived classes. By contrast, [***struct***](../language-reference/builtin-types/value-types.md) types are simpler types whose primary purpose is to store data values. Structs can't declare a base type; they implicitly derive from <xref:System.ValueType?displayProperty=nameWithType>. You can't derive other `struct` types from a `struct` type. They're implicitly sealed.
+Classes define types that support inheritance and polymorphism. They enable you to create sophisticated behaviors based on hierarchies of derived classes. By contrast, [***struct***](../language-reference/builtin-types/struct.md) types are simpler types whose primary purpose is to store data values. Structs can't declare a base type; they implicitly derive from <xref:System.ValueType?displayProperty=nameWithType>. You can't derive other `struct` types from a `struct` type. They're implicitly sealed.
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="PointStruct":::
 

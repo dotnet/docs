@@ -48,7 +48,7 @@ The `foreach` statement can be used to enumerate the elements of any collection.
 
 The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%601> interface, so can work with any collection.
 
-## string interpolation
+## String interpolation
 
 C# [***string interpolation***](../language-reference/tokens/interpolated.md) enables you to format strings by define expressions whose results are placed in a format string. For example, the following example prints the temperature on a given day from a set of weather data:
 
@@ -56,7 +56,7 @@ C# [***string interpolation***](../language-reference/tokens/interpolated.md) en
 
 An interpolated string is declared using the `$` token. String interpolation evaluates the expressions between `{` and `}`, then converts the result to a `string`, and replaces the text between the brackets with the string result of the expression. The `:` in the first expression, `{weatherData.Data:MM-DD-YYYY}` specifies the *format string*. In the preceding example, it specifies that the date should be printed in "MM-DD-YYYY" format.
 
-## Pattern Matching
+## Pattern matching
 
 The C# language provides [***pattern matching***](../pattern-matching.md) expressions to query the state of an object and execute code based on that state. You can inspect types and the values of properties and fields to determine which action to take. The `switch` expression is the primary expression for pattern matching.
 
@@ -80,7 +80,7 @@ A delegate doesn't know or care about the class of the method it references. All
 
 ## async / await
 
-C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the method is asynchronous. The `aawit` operator tells the compiler that to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. These features enable you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](https://docs.microsoft.com):
+C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the method is asynchronous. The `await` operator tells the compiler that to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. These features enable you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](https://docs.microsoft.com):
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="AsyncExample":::
 

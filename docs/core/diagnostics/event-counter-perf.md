@@ -42,7 +42,7 @@ The <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A?displayProperty=n
 
 ## Add an action filter
 
-The sample source code is an ASP.NET Core project. You can add an [action filter](/aspnet/core/mvc/controllers/filters#action-filters) globally that will log the total request time. Create a new file named *LogRequestTimeFilterAttribute.cs*, and used the C# code below:
+The sample source code is an ASP.NET Core project. You can add an [action filter](/aspnet/core/mvc/controllers/filters#action-filters) globally that will log the total request time. Create a new file named *LogRequestTimeFilterAttribute.cs*, and use the following code:
 
 ```csharp
 using System.Diagnostics;
@@ -80,7 +80,7 @@ public void ConfigureServices(IServiceCollection services) =>
 
 You logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless you access the statistics from of it, it is not useful. To get the statistics, you need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by creating a timer that fires as frequently as you want the events, as well as a listener to capture the events. To do that, you can use [dotnet-counters](dotnet-counters.md).
 
-Use the [dotnet-counters ps](dotnet-counters.md#dotnet-counters-ps) command, to display a list of .NET processes that can be monitored.
+Use the [dotnet-counters ps](dotnet-counters.md#dotnet-counters-ps) command to display a list of .NET processes that can be monitored.
 
 ```console
 dotnet-counters ps
@@ -89,7 +89,7 @@ dotnet-counters ps
 Using the process identifier from the output of the `dotnet-counters ps` command, you can start monitoring the event counter with the following `dotnet-counters monitor` command:
 
 ```console
-dotnet-counters monitor --process-id 2196 —providers Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
+dotnet-counters monitor --process-id 2196 Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
 ```
 
 While the `dotnet-counters monitor` command is running, hold <kbd>F5</kbd> on the browser to start issues continuous requests to the `https://localhost:5001/api/values` endpoint.
@@ -107,10 +107,10 @@ Press p to pause, r to resume, q to quit.
     Request Processing Time (ms)                      34.5
 ```
 
-The `dotnet-counters monitor` command is great for active monitoring, however; you may want to collect these diagnostic metrics for post processing and analysis. For that, use the `dotnet-counters collect` command. The `collect` switch command is similar to the `monitor` command, but accepts a few additional parameters. You can specify the desired output file name, and format. For a JSON file named *diagnostics.json* use the following command:
+The `dotnet-counters monitor` command is great for active monitoring. However, you may want to collect these diagnostic metrics for post processing and analysis. For that, use the `dotnet-counters collect` command. The `collect` switch command is similar to the `monitor` command, but accepts a few additional parameters. You can specify the desired output file name and format. For a JSON file named *diagnostics.json* use the following command:
 
 ```console
-dotnet-counters collect --process-id 2196 --format json -o diagnostics.json —providers Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
+dotnet-counters collect --process-id 2196 --format json -o diagnostics.json Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
 ```
 
 Again, while the command is running, hold <kbd>F5</kbd> on the browser to start issues continuous requests to the `https://localhost:5001/api/values` endpoint. After a few seconds stop. The *diagnostics.json* file is written.

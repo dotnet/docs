@@ -4,7 +4,7 @@ Throughout various .NET packages, basic metrics on GC, Just-in-Time (JIT), assem
 
 ### "System.Runtime" counters
 
-The following counters are published as part of .NET runtime, and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
+The following counters are published as part of .NET runtime, and are maintained in [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -30,7 +30,7 @@ The following counters are published as part of .NET runtime, and are maintained
 
 ### "Microsoft.AspNetCore.Hosting" counters
 
-The following counters are published as part of [ASP.NET Core](/aspnet/core), and are maintained in the [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
+The following counters are published as part of [ASP.NET Core](/aspnet/core) and are maintained in [`HostingEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Hosting/Hosting/src/Internal/HostingEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -41,7 +41,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core), an
 
 ### "Microsoft.AspNetCore.Http.Connections" counters
 
-The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction), and are maintained in the [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
+The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in the [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
 | Counter | Description |
 |--|--|
@@ -53,7 +53,7 @@ The following counters are published as part of [ASP.NET Core SignalR](/aspnet/c
 
 ### "Microsoft-AspNetCore-Server-Kestrel" counters
 
-The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel), and are maintained in the [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
+The following counters are published as part of the [ASP.NET Core Kestrel web server](/aspnet/core/fundamentals/servers/kestrel) and are maintained in [`KestrelEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/Servers/Kestrel/Core/src/Internal/Infrastructure/KestrelEventSource.cs).
 
 | Counter | Description |
 |--|--|

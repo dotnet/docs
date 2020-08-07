@@ -1,7 +1,7 @@
 ---
 title: Create a .NET Standard class library using Visual Studio
 description: Learn how to create a .NET Standard class library using Visual Studio.
-ms.date: 06/08/2020
+ms.date: 08/07/2020
 dev_langs:
   - "csharp"
   - "vb"
@@ -9,15 +9,15 @@ ms.custom: "vs-dotnet"
 ---
 # Tutorial: Create a .NET Standard library using Visual Studio
 
-In this tutorial, you create a simple utility library that contains a single string-handling method. You implement it as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
+In this tutorial, you create a simple class library that contains a single string-handling method.
 
-A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.0 allows your library to be called by any .NET implementation that supports that version of .NET Standard. When you finish your class library, you can distribute it as a third-party component or as a bundled component with one or more applications.
+A *class library* defines types and methods that are called by an application. A class library that targets .NET Standard 2.0 allows your library to be called by any .NET implementation that supports that version of .NET Standard.
+
+When you finish your class library, you can distribute it as a NuGet package or as a component bundled with the application that uses it.
 
 ## Prerequisites
 
 - [Visual Studio 2019 version 16.6 or a later version](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the **.NET Core cross-platform development** workload installed. .NET Core 3.1 SDK is automatically installed when you select this workload.
-
-  For more information, see the [Install with Visual Studio](../install/sdk.md?pivots=os-windows#install-with-visual-studio) section on the [Install the .NET Core SDK](../install/sdk.md?pivots=os-windows) article.
 
 ## Create a solution
 
@@ -120,7 +120,17 @@ Initially, the new console app project doesn't have access to the class library.
 
 ## Next steps
 
-In this tutorial, you created a solution, added a library project, and added a console app project that uses the library. In the next tutorial, you add a unit test project to the solution.
+In this tutorial, you created a class library. In the next tutorial, you learn how to unit test the class library.
 
 > [!div class="nextstepaction"]
-> [Test a .NET Standard library with .NET Core using Visual Studio](testing-library-with-visual-studio.md)
+> [Unit test a .NET Standard library using Visual Studio](testing-library-with-visual-studio.md)
+
+Or you can skip automated unit testing and learn how to share the library by creating a NuGet package:
+
+> [!div class="nextstepaction"]
+> [Create and publish a package using Visual Studio](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+
+Or learn how to publish a console app. If you publish the console app from the solution you created in this tutorial, the class library goes with it as a *.dll* file.
+
+> [!div class="nextstepaction"]
+> [Publish a .NET Core console application using Visual Studio](publishing-with-visual-studio.md)

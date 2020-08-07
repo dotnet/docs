@@ -172,7 +172,7 @@ EventCounters can be consumed by Azure Monitor, specifically Azure Application I
 
 #### dotnet-monitor
 
-The `dotnet-monitor` is an experimental tool that makes it easier to get access to diagnostics information in a .NET process. For more information, see [Introducing dotnet-monitor, an experimental tool](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor). 
+The `dotnet-monitor` is an experimental tool that makes it easier to get access to diagnostics information in a .NET process. For more information, see [Introducing dotnet-monitor, an experimental tool](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor).
 
 ### Consume in-proc
 

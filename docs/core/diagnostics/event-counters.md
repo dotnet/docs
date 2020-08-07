@@ -1,7 +1,7 @@
 ---
 title: EventCounters in .NET Core
 description: In this article, you'll learn what EventCounters are, how to implement them, and how to consume them.
-ms.date: 08/05/2020
+ms.date: 08/07/2020
 ---
 
 # EventCounters in .NET Core
@@ -24,12 +24,12 @@ There are two primary categories of counters. Some counters are for "rate" value
 
 The counters are represented by the following implementations:
 
- * <xref:System.Diagnostics.Tracing.EventCounter>
- * <xref:System.Diagnostics.Tracing.IncrementingEventCounter>
- * <xref:System.Diagnostics.Tracing.IncrementingPollingCounter>
- * <xref:System.Diagnostics.Tracing.PollingCounter>
- 
- An event listener specifies how long measurement intervals are. At the end of each interval a value is transmitted to the listener for each counter. The implementations of a counter determine what APIs and calculations are used to produce the value each interval.
+* <xref:System.Diagnostics.Tracing.EventCounter>
+* <xref:System.Diagnostics.Tracing.IncrementingEventCounter>
+* <xref:System.Diagnostics.Tracing.IncrementingPollingCounter>
+* <xref:System.Diagnostics.Tracing.PollingCounter>
+
+An event listener specifies how long measurement intervals are. At the end of each interval a value is transmitted to the listener for each counter. The implementations of a counter determine what APIs and calculations are used to produce the value each interval.
 
 1. The <xref:System.Diagnostics.Tracing.EventCounter> records a set of values. The <xref:System.Diagnostics.Tracing.EventCounter.WriteMetric%2A?displayProperty=nameWithType> method adds a new value to the set. With each interval, a statistical summary for the set is computed, such as the min, max, and mean. The [dotnet-counters](dotnet-counters.md) tool will always display the mean value. The <xref:System.Diagnostics.Tracing.EventCounter> is useful to describe a discrete set of operations. Common usage may include monitoring the average size in bytes of recent IO operations, or the average monetary value of a set of financial transactions.
 
@@ -45,7 +45,7 @@ The following code implements a sample <xref:System.Diagnostics.Tracing.EventSou
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
-With an <xref:System.Diagnostics.Tracing.EventSource> similar to the above, you could then use `dotnet-counters ps` to see what its process ID is:
+You use `dotnet-counters ps` to display a list of .NET processes that can be monitored:
 
 ```console
 dotnet-counters ps
@@ -56,10 +56,10 @@ dotnet-counters ps
    1400180 sample-counters C:\sample-counters\bin\Debug\netcoreapp3.1\sample-counters.exe
 ```
 
-Pass the <xref:System.Diagnostics.Tracing.EventSource> name as an argument to `--providers` to start monitoring your counter with the following command:
+Pass the <xref:System.Diagnostics.Tracing.EventSource> name to the `counter_list` switch to start monitoring your counter:
 
 ```console
-dotnet-counters monitor --process-id 1400180 --providers "Sample.EventCounter.Minimal"
+dotnet-counters monitor --process-id 1400180 Sample.EventCounter.Minimal
 ```
 
 The following example shows monitor output:
@@ -72,9 +72,11 @@ Press p to pause, r to resume, q to quit.
     Request Processing Time (ms)                            0.445
 ```
 
+Press <kbd>q</kbd> to stop the monitoring command.
+
 #### Conditional counters
 
-When implementing an <xref:System.Diagnostics.Tracing.EventSource>, the containing counters can be conditionally instantiated when the <xref:System.Diagnostics.Tracing.EventSource.OnEventCommand%2A?displayProperty=nameWithType> method is called with a <xref:System.Diagnostics.Tracing.EventCommandEventArgs.Command> value of enabled. To safely instantiate a counter instance only if it is `null`, use the [null-coalescing assignment operator](../../csharp/language-reference/operators/null-coalescing-operator.md). Additionally, custom methods can evaluate the <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A> method to whether or not the current event source is enabled.
+When implementing an <xref:System.Diagnostics.Tracing.EventSource>, the containing counters can be conditionally instantiated when the <xref:System.Diagnostics.Tracing.EventSource.OnEventCommand%2A?displayProperty=nameWithType> method is called with a <xref:System.Diagnostics.Tracing.EventCommandEventArgs.Command> value of `EventCommand.Enable`. To safely instantiate a counter instance only if it is `null`, use the [null-coalescing assignment operator](../../csharp/language-reference/operators/null-coalescing-operator.md). Additionally, custom methods can evaluate the <xref:System.Diagnostics.DiagnosticSource.IsEnabled%2A> method to determine whether or not the current event source is enabled.
 
 :::code language="csharp" source="snippets/EventCounters/ConditionalEventCounterSource.cs":::
 
@@ -159,7 +161,7 @@ Consuming EventCounters out-of-proc is a very common approach. You can use [dotn
 The `dotnet-trace` tool can be used to consume the counter data through an EventPipe. Here is an example using `dotnet-trace` to collect counter data.
 
 ```console
-dotnet-trace collect --process-id <pid> --providers Sample.EventCounter.Minimal:0:0:EventCounterIntervalSec=1
+dotnet-trace collect --process-id <pid> Sample.EventCounter.Minimal:0:0:EventCounterIntervalSec=1
 ```
 
 For more information on how to collect counter values over time, see the [dotnet-trace](dotnet-trace.md#use-dotnet-trace-to-collect-counter-values-over-time) documentation.
@@ -170,7 +172,7 @@ EventCounters can be consumed by Azure Monitor, specifically Azure Application I
 
 #### dotnet-monitor
 
-The `dotnet-monitor` is an experimental tool that makes it easier to get access to diagnostics information in a .NET process. For more information, see [Introducing dotnet-monitor, an experimental tool](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor).
+The `dotnet-monitor` is an experimental tool that makes it easier to get access to diagnostics information in a .NET process. For more information, see [Introducing dotnet-monitor, an experimental tool](https://devblogs.microsoft.com/dotnet/introducing-dotnet-monitor). 
 
 ### Consume in-proc
 
@@ -188,7 +190,10 @@ Here is a sample <xref:System.Diagnostics.Tracing.EventListener> class that prin
 
 As shown above, you _must_ make sure the `"EventCounterIntervalSec"` argument is set in the `filterPayload` argument when calling <xref:System.Diagnostics.Tracing.EventListener.EnableEvents%2A>. Otherwise the counters will not be able to flush out values since it doesn't know at which interval it should be getting flushed out.
 
-## Next steps
+## See also
 
-> [!div class="nextstepaction"]
-> [Tutorial: Measure performance using EventCounters](event-counter-perf.md)
+- [dotnet-counters](dotnet-counters.md)
+- [dotnet-trace](dotnet-trace.md)
+- <xref:System.Diagnostics.Tracing.EventCounter>
+- <xref:System.Diagnostics.Tracing.EventListener>
+- <xref:System.Diagnostics.Tracing.EventSource>

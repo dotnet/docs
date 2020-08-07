@@ -290,7 +290,7 @@ items:
     href: diagnostics/index.md
   - name: Managed debuggers
     href: diagnostics/managed-debuggers.md
-  - name: EventCounters overview
+  - name: EventCounters
     href: diagnostics/event-counters.md
   - name: Logging and tracing
     href: diagnostics/logging-tracing.md
@@ -304,7 +304,7 @@ items:
       href: diagnostics/dotnet-trace.md
   - name: .NET Core diagnostics tutorials
     items:
-    - name: Measure event frequency with EventCounters
+    - name: Get perf metrics with EventCounters
       href: diagnostics/event-counter-perf.md
     - name: Debug a memory leak
       href: diagnostics/debug-memory-leak.md

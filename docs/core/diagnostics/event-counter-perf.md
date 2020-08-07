@@ -1,7 +1,7 @@
 ---
 title: Measure performance using EventCounters in .NET Core
 description: In this tutorial, you'll learn how to measure performance using EventCounters.
-ms.date: 08/05/2020
+ms.date: 08/07/2020
 ms.topic: tutorial
 ---
 
@@ -24,17 +24,19 @@ The tutorial uses:
 
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
 - [dotnet-counters](dotnet-counters.md) to monitor event counters.
-- A [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios/) app to diagnose.
+- A [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) app to diagnose.
 
 ## Get the source
 
-The sample application will be used as a basis for monitoring. Clone the [sample ASP.NET Core repository](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) from GitHub. Build and run the application to ensure that it works properly, then stop the application.
+The sample application will be used as a basis for monitoring. The [sample ASP.NET Core repository](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) is available from the samples browser. You download the zip file, extract it once downloaded, and open it in your favorite IDE. Build and run the application to ensure that it works properly, then stop the application.
 
 ## Implement an EventSource
 
 For events that happen every few milliseconds, you'll want the overhead per event to be low (less than a millisecond). Otherwise, the impact on performance will be significant. Logging an event means you're going to write something to disk. If the disk is not fast enough, you will lose events. You need a solution other than logging the event itself.
 
-When dealing with a large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could get the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do. Below is an example of how to implement an <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>.
+When dealing with a large number of events, knowing the measure per event is not useful either. Most of the time all you need is just some statistics out of it. So you could get the statistics within the process itself and then write an event once in a while to report the statistics, that's what <xref:System.Diagnostics.Tracing.EventCounter> will do.
+
+Below is an example of how to implement an <xref:System.Diagnostics.Tracing.EventSource?displayProperty=fullName>. Create a new file named *MinimalEventCounterSource.cs* and use the code snippet as its source:
 
 :::code language="csharp" source="snippets/EventCounters/MinimalEventCounterSource.cs":::
 
@@ -78,6 +80,7 @@ public void ConfigureServices(IServiceCollection services) =>
 
 ## Monitor event counter
 
+With the implementation on an <xref:System.Diagnostics.Tracing.EventSource> and the custom action filter, build and launch the application.
 You logged the metric to the <xref:System.Diagnostics.Tracing.EventCounter>, but unless you access the statistics from of it, it is not useful. To get the statistics, you need to enable the <xref:System.Diagnostics.Tracing.EventCounter> by creating a timer that fires as frequently as you want the events, as well as a listener to capture the events. To do that, you can use [dotnet-counters](dotnet-counters.md).
 
 Use the [dotnet-counters ps](dotnet-counters.md#dotnet-counters-ps) command to display a list of .NET processes that can be monitored.
@@ -92,7 +95,7 @@ Using the process identifier from the output of the `dotnet-counters ps` command
 dotnet-counters monitor --process-id 2196 Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
 ```
 
-While the `dotnet-counters monitor` command is running, hold <kbd>F5</kbd> on the browser to start issues continuous requests to the `https://localhost:5001/api/values` endpoint.
+While the `dotnet-counters monitor` command is running, hold <kbd>F5</kbd> on the browser to start issuing continuous requests to the `https://localhost:5001/api/values` endpoint. After a few seconds stop by pressing <kbd>q</kbd>
 
 ```console
 Press p to pause, r to resume, q to quit.
@@ -113,7 +116,7 @@ The `dotnet-counters monitor` command is great for active monitoring. However, y
 dotnet-counters collect --process-id 2196 --format json -o diagnostics.json Sample.EventCounter.Minimal Microsoft.AspNetCore.Hosting[total-requests,requests-per-second] System.Runtime[cpu-usage]
 ```
 
-Again, while the command is running, hold <kbd>F5</kbd> on the browser to start issues continuous requests to the `https://localhost:5001/api/values` endpoint. After a few seconds stop. The *diagnostics.json* file is written.
+Again, while the command is running, hold <kbd>F5</kbd> on the browser to start issuing continuous requests to the `https://localhost:5001/api/values` endpoint. After a few seconds stop by pressing <kbd>q</kbd>. The *diagnostics.json* file is written. The JSON file that is written is not indented, however; for readability it is indented here.
 
 ```json
 {
@@ -203,398 +206,6 @@ Again, while the command is running, hold <kbd>F5</kbd> on the browser to start 
       "name": "Request Processing Time (ms)",
       "counterType": "Metric",
       "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:50Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:50Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:50Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 134
-    },
-    {
-      "timestamp": "2020-08-05 15:02:50Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:50Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:52Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:52Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 134
-    },
-    {
-      "timestamp": "2020-08-05 15:02:52Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:52Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:53Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:53Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 134
-    },
-    {
-      "timestamp": "2020-08-05 15:02:53Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:53Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:54Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:54Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 134
-    },
-    {
-      "timestamp": "2020-08-05 15:02:54Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:54Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:55Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:55Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 134
-    },
-    {
-      "timestamp": "2020-08-05 15:02:55Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:55Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:56Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 1
-    },
-    {
-      "timestamp": "2020-08-05 15:02:56Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 135
-    },
-    {
-      "timestamp": "2020-08-05 15:02:56Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 28
-    },
-    {
-      "timestamp": "2020-08-05 15:02:56Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:57Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 4
-    },
-    {
-      "timestamp": "2020-08-05 15:02:57Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 139
-    },
-    {
-      "timestamp": "2020-08-05 15:02:57Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 32.25
-    },
-    {
-      "timestamp": "2020-08-05 15:02:57Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 2
-    },
-    {
-      "timestamp": "2020-08-05 15:02:58Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 7
-    },
-    {
-      "timestamp": "2020-08-05 15:02:58Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 146
-    },
-    {
-      "timestamp": "2020-08-05 15:02:58Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 30.5714285714286
-    },
-    {
-      "timestamp": "2020-08-05 15:02:58Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 3
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 149
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 33
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 1
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 150
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 50
-    },
-    {
-      "timestamp": "2020-08-05 15:02:59Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:03:01Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 6
-    },
-    {
-      "timestamp": "2020-08-05 15:03:01Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 156
-    },
-    {
-      "timestamp": "2020-08-05 15:03:01Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 32.1666666666667
-    },
-    {
-      "timestamp": "2020-08-05 15:03:01Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 1
-    },
-    {
-      "timestamp": "2020-08-05 15:03:02Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 7
-    },
-    {
-      "timestamp": "2020-08-05 15:03:02Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 163
-    },
-    {
-      "timestamp": "2020-08-05 15:03:02Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 32.7142857142857
-    },
-    {
-      "timestamp": "2020-08-05 15:03:02Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:03:03Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 2
-    },
-    {
-      "timestamp": "2020-08-05 15:03:03Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 165
-    },
-    {
-      "timestamp": "2020-08-05 15:03:03Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 29.5
-    },
-    {
-      "timestamp": "2020-08-05 15:03:03Z",
-      "provider": "System.Runtime",
-      "name": "CPU Usage (%)",
-      "counterType": "Metric",
-      "value": 0
-    },
-    {
-      "timestamp": "2020-08-05 15:03:03Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Request Rate / 1 sec",
-      "counterType": "Rate",
-      "value": 6
-    },
-    {
-      "timestamp": "2020-08-05 15:03:03Z",
-      "provider": "Microsoft.AspNetCore.Hosting",
-      "name": "Total Requests",
-      "counterType": "Metric",
-      "value": 171
-    },
-    {
-      "timestamp": "2020-08-05 15:03:03Z",
-      "provider": "Sample.EventCounter.Minimal",
-      "name": "Request Processing Time (ms)",
-      "counterType": "Metric",
-      "value": 34.3333333333333
     }
   ]
 }
@@ -603,4 +214,4 @@ Again, while the command is running, hold <kbd>F5</kbd> on the browser to start 
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Tutorial: Debug a memory leak](debug-memory-leak.md)
+> [EventCounters](event-counters.md)

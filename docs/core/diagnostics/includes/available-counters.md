@@ -1,18 +1,18 @@
 ## Available counters
 
-Throughout various .NET packages, basic metrics on GC, Just-in-Time (JIT), assemblies, exceptions, threading, networking, and web requests are published using EventCounters.
+Throughout various .NET packages, basic metrics on Garbage Collection (GC), Just-in-Time (JIT), assemblies, exceptions, threading, networking, and web requests are published using EventCounters.
 
 ### "System.Runtime" counters
 
-The following counters are published as part of .NET runtime, and are maintained in [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
+The following counters are published as part of .NET runtime, and are maintained in the [`RuntimeEventSource.cs`](https://github.com/dotnet/coreclr/blob/master/src/System.Private.CoreLib/src/System/Diagnostics/Eventing/RuntimeEventSource.cs).
 
 | Counter | Description |
 |--|--|
-| :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | The percent of time in Garbage Collection (GC) since the last GC |
+| :::no-loc text="% Time in GC since last GC"::: (`time-in-gc`) | The percent of time in GC since the last GC |
 | :::no-loc text="Allocation Rate"::: (`alloc-rate`) | The rate of allocation in bytes |
 | :::no-loc text="CPU Usage"::: (`cpu-usage`) | The percent of CPU usage |
 | :::no-loc text="Exception Count"::: (`exception-count`) | The number of exceptions that have occurred |
-| :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of bytes thought to be allocated at a point in time |
+| :::no-loc text="GC Heap Size"::: (`gc-heap-size`) | The number of bytes thought to be allocated based on <xref:System.GC.GetTotalMemory(System.Boolean)?displayProperty=nameWithType> |
 | :::no-loc text="Gen 0 GC Count"::: (`gen-0-gc-count`) | The number of times GC has occurred for Gen 0 |
 | :::no-loc text="Gen 0 Size"::: (`gen-0-size`) | The number of bytes for Gen 0 GC |
 | :::no-loc text="Gen 1 GC Count"::: (`gen-1-gc-count`) | The number of times GC has occurred for Gen 1 |
@@ -20,13 +20,13 @@ The following counters are published as part of .NET runtime, and are maintained
 | :::no-loc text="Gen 2 GC Count"::: (`gen-2-gc-count`) | The number of times GC has occurred for Gen 2 |
 | :::no-loc text="Gen 2 Size"::: (`gen-2-size`) | The number of bytes for Gen 2 GC |
 | :::no-loc text="LOH Size"::: (`loh-size`) | The number of bytes for Gen 3 GC |
-| :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | The number of times there was contention when trying to take the monitor's lock |
-| :::no-loc text="Number of Active Timers"::: (`active-timer-count`) | The number of <xref:System.Threading.Timer> instances that are currently active |
+| :::no-loc text="Monitor Lock Contention Count"::: (`monitor-lock-contention-count`) | The number of times there was contention when trying to take the monitor's lock, based on <xref:System.Threading.Monitor.LockContentionCount?displayProperty=nameWithType> |
+| :::no-loc text="Number of Active Timers"::: (`active-timer-count`) | The number of <xref:System.Threading.Timer> instances that are currently active, based on <xref:System.Threading.Timer.ActiveCount?displayProperty=nameWithType> |
 | :::no-loc text="Number of Assemblies Loaded"::: (`assembly-count`) | The number of <xref:System.Reflection.Assembly> instances loaded into a process at a point in time |
 | :::no-loc text="ThreadPool Completed Work Item Count"::: (`threadpool-completed-items-count`) | The number of work items that have been processed so far in the <xref:System.Threading.ThreadPool> |
 | :::no-loc text="ThreadPool Queue Length"::: (`threadpool-queue-length`) | The number of work items that are currently queued to be processed in the <xref:System.Threading.ThreadPool> |
-| :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`) | The number of thread pool threads that currently exist in the <xref:System.Threading.ThreadPool> |
-| :::no-loc text="Working Set"::: (`working-set`) | The amount of physical memory mapped to the process context at a point in time |
+| :::no-loc text="ThreadPool Thread Count"::: (`threadpool-thread-count`) | The number of thread pool threads that currently exist in the <xref:System.Threading.ThreadPool>, based on <xref:System.Threading.ThreadPool.ThreadCount?displayProperty=nameWithType> |
+| :::no-loc text="Working Set"::: (`working-set`) | The amount of physical memory mapped to the process context at a point in time base on <xref:System.Environment.WorkingSet?displayProperty=nameWithType> |
 
 ### "Microsoft.AspNetCore.Hosting" counters
 
@@ -41,7 +41,7 @@ The following counters are published as part of [ASP.NET Core](/aspnet/core) and
 
 ### "Microsoft.AspNetCore.Http.Connections" counters
 
-The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in the [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
+The following counters are published as part of [ASP.NET Core SignalR](/aspnet/core/signalr/introduction) and are maintained in [`HttpConnectionsEventSource.cs`](https://github.com/dotnet/aspnetcore/blob/master/src/SignalR/common/Http.Connections/src/Internal/HttpConnectionsEventSource.cs).
 
 | Counter | Description |
 |--|--|

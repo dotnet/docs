@@ -25,7 +25,7 @@ Use the `operator` and `implicit` or `explicit` keywords to define an implicit o
 
 The following example demonstrates how to define an implicit and explicit conversion:
 
-[!code-csharp[implicit an explicit conversions](snippets/UserDefinedConversions.cs)]
+[!code-csharp[implicit an explicit conversions](snippets/shared/UserDefinedConversions.cs)]
 
 You also use the `operator` keyword to overload a predefined C# operator. For more information, see [Operator overloading](operator-overloading.md).
 

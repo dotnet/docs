@@ -4,7 +4,7 @@ description: Learn about the FSharpChecker operations queue used in F# tooling.
 ms.date: 8/6/2020
 ---
 
-## F# Compiler Service Queue
+# F# Compiler service queue
 
 An `FSharpChecker` maintains an operations queue. Items from the `FSharpChecker` operations queue are processed
 sequentially and in order.

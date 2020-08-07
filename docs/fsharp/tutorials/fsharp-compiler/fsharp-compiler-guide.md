@@ -1,12 +1,12 @@
 ---
 title: F# compiler guide
 description: Learn about the F# compiler, its various phases, and terminology in the F# compiler codebase.
-ms.date: 8/6/2020
+ms.date: 08/06/2020
 ---
 
-# F# Compiler Guide
+# F# compiler guide
 
-This guide discusses the F# Compiler source code and implementation from a technical point of view. The source code for the F# compiler and tools can be found at [`dotnet/fsharp` on GitHub.](https://github.com/dotnet/fsharp).
+This guide discusses the F# compiler source code and implementation from a technical point of view. The source code for the F# compiler and tools can be found at [`dotnet/fsharp` on GitHub](https://github.com/dotnet/fsharp).
 
 ## Overview
 
@@ -27,27 +27,27 @@ The `FSharp.Compiler.Private` is by far the largest of these components and cont
 The F# compiler repositories are used to produce a range of different artifacts.  For the purposes of this
 guide, the important ones are:
 
-### Key Data Formats and Representations 
+### Key data formats and representations
 
 The following are the key data formats and internal data representations of the F# compiler code in its various configurations:
 
 * _Input source files_  Read as Unicode text, or binary for referenced assemblies.
 
-* _Input command line arguments_  See [CompileOptions.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/CompileOptions.fs) for the full  code implementing the arguments table.  Command line arguments are also accepted by the F# Compiler Service API in project specifications, and as optional input to F# Interactive.
+* _Input command-line arguments_  See [CompileOptions.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/CompileOptions.fs) for the full code implementing the arguments table. Command-line arguments are also accepted by the F# Compiler Service API in project specifications, and as optional input to F# Interactive.
 
 * _Tokens_, see [pars.fsy](https://github.com/dotnet/fsharp/blob/master/src/fsharp/pars.fsy), [lex.fsl](https://github.com/dotnet/fsharp/blob/master/src/fsharp/lex.fsl), [lexhelp.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/lexhelp.fs) and related files.
 
-* _Abstract Syntax Tree (AST)_, see [SyntaxTree.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/SyntaxTree.fs), the untyped syntax tree resulting from parsing
+* _Abstract Syntax Tree (AST)_, see [SyntaxTree.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/SyntaxTree.fs), the untyped syntax tree resulting from parsing.
 
 * _Typed Abstract Syntax Tree (TAST)_, see [TypedTree.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TypedTree.fs), [TypedTreeBasics.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TypedTree.fs), [TypedTreeOps.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TypedTreeOps.fs), and related files. The typed, bound syntax tree including both type/module definitions and their backing expressions, resulting from type checking and the subject of successive phases of optimization and representation change.
 
 * _Type checking context/state_, see for example [`TcState` in CompileOps.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/CompileOps.fsi) and its constituent parts, particularly `TcEnv` in [TypeChecker.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TypeChecker.fsi) and `NameResolutionEnv` in [NameResolution.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/NameResolution.fsi). A set of tables representing the available names, assemblies etc. in scope during type checking, plus associated information.
 
-* _Abstract IL_, the output of code generation, then used for binary generation, and the input format when reading .NET assemblies, see [`ILModuleDef` in il.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/il.fsi)
+* _Abstract IL_, the output of code generation, then used for binary generation, and the input format when reading .NET assemblies, see [`ILModuleDef` in il.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/il.fsi).
 
 * _The .NET Binary format_ (with added "pickled" F# Metadata resource), the final output of fsc.exe, see the ECMA 335 specification and the [ilread.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilread.fs) and [ilwrite.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilwrite.fs) binary reader/generator implementations. The added F# metadata is stored in a binary resource, see [TypedTreePickle.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TypedTreePickle.fs).
 
-* _The incrementally emitted .NET reflection assembly,_ the incremental output of fsi.exe. See [ilreflect.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilreflect.fs)
+* _The incrementally emitted .NET reflection assembly,_ the incremental output of fsi.exe. See [ilreflect.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilreflect.fs).
 
 * The incremental project build engine state in [IncrementalBuild.fsi](https://github.com/fsharp/FSharp.Compiler.Service/tree/master/src/fsharp/service/IncrementalBuild.fsi)/[IncrementalBuild.fs](https://github.com/fsharp/FSharp.Compiler.Service/tree/master/src/fsharp/service/IncrementalBuild.fs), a part of the F# Compiler Service API.
 
@@ -61,9 +61,9 @@ TODO CLEAN THESE UP
 
 END TODO
 
-### Key Compiler Phases
+### Key compiler phases
 
-Below, you can see a diagram of how different phases of F# compiler work:
+The following is a diagram of how different phases of F# compiler work:
 
 ![F# compiler phases](../../../images/fsharp/fsharp-compiler-phases.png)
 
@@ -100,9 +100,9 @@ The following are the key phases and high-level logical operations of the F# com
 * _Abstract IL code rewriting_, see [EraseClosures.fs](https://github.com/dotnet/fsharp/blob/master/src/ilx/EraseClosures.fs) and
   [EraseUnions.fs](https://github.com/dotnet/fsharp/blob/master/src/ilx/EraseUnions.fs). Eliminates some constructs by rewriting Abstract IL nodes.
   
-* _Binary emit_, see [ilwrite.fsi](https://github.com/dotnet/fsharp/blob/master/src/absil/ilwrite.fsi)/[ilwrite.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilwrite.fs). 
+* _Binary emit_, see [ilwrite.fsi](https://github.com/dotnet/fsharp/blob/master/src/absil/ilwrite.fsi)/[ilwrite.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilwrite.fs).
 
-* _Reflection-Emit_, see [ilreflect.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilreflect.fs). 
+* _Reflection-Emit_, see [ilreflect.fs](https://github.com/dotnet/fsharp/blob/master/src/absil/ilreflect.fs).
 
 The above are the internal phases and transformations used to build the following:
 
@@ -112,7 +112,7 @@ The above are the internal phases and transformations used to build the followin
 
 * _The F# Compiler Shell_, see [fsc.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/fsc.fs) and [fscmain.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/fscmain.fs).
 
-## Coding Standards and Idioms
+## Coding standards and idioms
 
 ### Abbreviations
 
@@ -188,10 +188,9 @@ When formatting TAST objects such as ``TyconRef``s as text, you normally use eit
 
 When formatting "info" objects, see the functions in the ``NicePrint`` module.
 
-
 ### Notes on displaying types
 
-When displaying a type, you will normally want to "prettify" the type first (i.e. make the type "pretty"). 
+When displaying a type, you will normally want to "prettify" the type first (make the type "pretty").
 This converts any remaining type inference variables to new, better user-friendly type variables with names
 like ``'a``.  Various functions prettify types prior to display, e.g. ``NicePrint.layoutPrettifiedTypes``
 and others.
@@ -617,4 +616,3 @@ Note
 ### Attribution
 
 This document is based heavily on an [original document](http://fsharp.github.io/2015/09/29/fsharp-compiler-guide.html) published in 2015 by the [F# Software Foundation](http://fsharp.org).
-

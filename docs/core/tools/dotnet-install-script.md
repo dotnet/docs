@@ -17,7 +17,7 @@ Windows:
 dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-Channel <CHANNEL>] [-DryRun] [-FeedCredential]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
-    [-NoCdn] [-NoPath] [-ProxyAddress]
+    [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
     [-ProxyUseDefaultCredentials] [-Runtime <RUNTIME>]
     [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
     [-Version <VERSION>]
@@ -134,6 +134,10 @@ The install scripts do not update the registry on Windows. They just download th
 - **`-ProxyAddress`**
 
   If set, the installer uses the proxy when making web requests. (Only valid for Windows.)
+
+- **`-ProxyBypassList <LIST_OF_URLS>`**
+
+  If set with `ProxyAddress`, provides a list of comma-separated urls that will bypass the proxy. (Only valid for Windows.)
 
 - **`ProxyUseDefaultCredentials`**
 

@@ -59,10 +59,10 @@ namespace TourOfCsharp
     // </DefineAttribute>
 
     // <UseAttributes>
-    [Help("https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/attributes")]
+    [Help("https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/features")]
     public class Widget
     {
-        [Help("https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/attributes",
+        [Help("https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/features",
         Topic = "Display")]
         public void Display(string text) { }
     }

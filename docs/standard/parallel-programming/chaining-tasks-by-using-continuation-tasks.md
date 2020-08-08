@@ -140,7 +140,7 @@ Sometimes you may need to chain a continuation that returns a <xref:System.Threa
 The following example shows how to use continuations that wrap additional task returning functions. Each continuation can be unwrapped, exposing the inner task that was wrapped.
 
 :::code language="csharp" source="snippets/cs/unwrap.cs":::
-:::code language="csharp" source="snippets/vb/unwrap.vb":::
+:::code language="vb" source="snippets/vb/unwrap.vb":::
 
 For more information on using <xref:System.Threading.Tasks.TaskExtensions.Unwrap%2A>, see [How to: Unwrap a nested Task](how-to-unwrap-a-nested-task.md).
 

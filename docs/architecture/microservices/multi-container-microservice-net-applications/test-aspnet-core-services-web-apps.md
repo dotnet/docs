@@ -1,7 +1,7 @@
 ---
 title: Testing ASP.NET Core services and web apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Explore an architecture for testing ASP.NET Core services and web apps in containers.
-ms.date: 01/30/2020
+ms.date: 08/07/2020
 ---
 
 # Testing ASP.NET Core services and web apps
@@ -193,11 +193,11 @@ As you can see, these docker-compose files only start the Redis, RabbitMQ, SQL S
 
 ### Additional resources
 
-- **Tests README file** on the eShopOnContainers repo on GitHub \
-    <https://github.com/dotnet-architecture/eShopOnContainers/tree/dev/test>
+- **Unit & Integration testing** on the eShopOnContainers \
+    <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Unit-and-integration-testing>
 
-- **Load tests README file** on the eShopOnContainers repo on GitHub \
-    <https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/test/ServicesTests/LoadTest/>
+- **Load testing** on the eShopOnContainers \
+    <https://github.com/dotnet-architecture/eShopOnContainers/wiki/Load-testing>
 
 > [!div class="step-by-step"]
 > [Previous](subscribe-events.md)

@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 2e406ba2-70a0-4e62-841f-0934859de76e
 ---
 # How to: Style a Row in a ListView That Implements a GridView
-This example shows how to style a row in a <xref:System.Windows.Controls.ListView> control that implements a <xref:System.Windows.Controls.GridView><xref:System.Windows.Controls.ListView.View%2A> mode.  
+This example shows how to style a row in a <xref:System.Windows.Controls.ListView> control that implements a <xref:System.Windows.Controls.GridView> <xref:System.Windows.Controls.ListView.View%2A> mode.  
   
 ## Example  
  You can style a row in a <xref:System.Windows.Controls.ListView> control by setting an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> on the <xref:System.Windows.Controls.ListView> control. Set the style for its items that are represented as <xref:System.Windows.Controls.ListViewItem> objects. The <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> references the <xref:System.Windows.Controls.ControlTemplate> objects that are used to display the row content.  

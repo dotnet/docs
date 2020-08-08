@@ -228,37 +228,37 @@ For example, consider the following contrived example:
 
 ```fsharp
 and remapLinearExpr g compgen tmenv expr contf =
-    match expr with 
-    | Expr.Let (bind, bodyExpr, m, _) ->  
+    match expr with
+    | Expr.Let (bind, bodyExpr, m, _) ->
         ...
         // tailcall for the linear position
-        remapLinearExpr g compgen tmenvinner bodyExpr (contf << (fun bodyExpr' -> 
+        remapLinearExpr g compgen tmenvinner bodyExpr (contf << (fun bodyExpr' ->
             ...))
-      
-    | Expr.Sequential (expr1, expr2, dir, spSeq, m)  -> 
+
+    | Expr.Sequential (expr1, expr2, dir, spSeq, m)  ->
         ...
         // tailcall for the linear position
-        remapLinearExpr g compgen tmenv expr2 (contf << (fun expr2' -> 
+        remapLinearExpr g compgen tmenv expr2 (contf << (fun expr2' ->
             ...))
 
     | LinearMatchExpr (spBind, exprm, dtree, tg1, expr2, sp2, m2, ty) ->
         ...
         // tailcall for the linear position
         remapLinearExpr g compgen tmenv expr2 (contf << (fun expr2' ->  ...))
-        
-    | LinearOpExpr (op, tyargs, argsFront, argLast, m) -> 
+
+    | LinearOpExpr (op, tyargs, argsFront, argLast, m) ->
         ...
         // tailcall for the linear position
         remapLinearExpr g compgen tmenv argLast (contf << (fun argLast' -> ...))
 
-    | _ -> contf (remapExpr g compgen tmenv e) 
+    | _ -> contf (remapExpr g compgen tmenv e)
 
 and remapExpr (g: TcGlobals) (compgen:ValCopyFlag) (tmenv:Remap) expr =
     match expr with
     ...
-    | LinearOpExpr _ 
-    | LinearMatchExpr _ 
-    | Expr.Sequential _  
+    | LinearOpExpr _
+    | LinearMatchExpr _
+    | Expr.Sequential _
     | Expr.Let _ -> remapLinearExpr g compgen tmenv expr (fun x -> x)
 ```
 

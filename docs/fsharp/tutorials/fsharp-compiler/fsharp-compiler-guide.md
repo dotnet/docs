@@ -333,8 +333,8 @@ In [`LowerCallsAndSeqs.fs`](https://github.com/dotnet/fsharp/blob/master/src/fsh
 Consider the following example:
 
 ```fsharp
-let inline f k = (fun x -> k (x + 1)) 
-let inline g k = (fun x -> k (x + 2)) 
+let inline f k = (fun x -> k (x + 1))
+let inline g k = (fun x -> k (x + 2))
 
 let res = (f << g) id 1 // 4
 ```
@@ -349,7 +349,7 @@ On all platforms, the following factors affect startup performance:
 
 * Time to load compiler binaries. This depends on the size of the generated binaries, whether they are pre-compiled (for example, using NGEN or CrossGen), and the way the .NET implementation loads them.
 
-* Time to open referenced assemblies (for example, `mscorlib.dll`, `FSharp.Core.dll`) and analyze them for the types and namespaces defined. This depends particularly on whether this is correctly done in an on-demand way. 
+* Time to open referenced assemblies (for example, `mscorlib.dll`, `FSharp.Core.dll`) and analyze them for the types and namespaces defined. This depends particularly on whether this is correctly done in an on-demand way.
 
 * Time to process "open" declarations are the top of each file. Processing these declarations have been observed to take time in some cases of  F# compilation.
 
@@ -375,15 +375,15 @@ as the Visual Studio Managed Memory analysis. For example:
 
 ### Analyzing compiler memory usage
 
-To analyze memory usage of the Visual F# Tools in Visual Studio (with or without the Visual F# Power Tools) 
+To analyze memory usage of the Visual F# Tools in Visual Studio (with or without the Visual F# Power Tools)
 
 1. Take a process minidump of the devenv.exe process in Task Manager
 2. Open that .dmp file in another instance of Visual Studio and click on "Debug Managed Memory"
 
 You can also compare to a baseline generated without using the Visual F# Tools.
 
-This buckets memory usage by type and lets you analyze the roots keeping those objects alive. 
-At the time of writing, these were some of the top types consuming managed memory were as follows - the 
+This buckets memory usage by type and lets you analyze the roots keeping those objects alive.
+At the time of writing, these were some of the top types consuming managed memory were as follows - the
 percentages are approximate and depend on scenario. In some cases these have been bucketed:
 
 | Type                           |   Approx %  |  Category | Cause  |
@@ -391,7 +391,7 @@ percentages are approximate and depend on scenario. In some cases these have bee
 | `MemChannel`                 |  ~20%       | Typed Tree Abs/IL | In-memory representations of referenced DLLs. "System" DLLs are read using a memory-mapped file. |
 |  `ByteFile`                | | | |
 | + others  | | | |
-| `ValData`                 	 | ~12%         |  Typed Tree   | per-value data, one object for each F# value declared (or imported in optimization expressions)  |
+| `ValData`                  | ~12%         |  Typed Tree   | per-value data, one object for each F# value declared (or imported in optimization expressions)  |
 | + others  | | | |
 | `EntityData`                 | ~12%         | Typed Tree | various types for per-type-or-module-or-namespace-definition data, for each F# type declared, or F# or .NET type imported |
 | `TyconAugmentation`          | | | |
@@ -401,8 +401,8 @@ percentages are approximate and depend on scenario. In some cases these have bee
 | + others  | | | |
 | `ILTypeDefs`, `ILTypeDef`  | ~9%  | Typed Tree/AbsIL | various types and delayed thunks for reading IL type definitions from .NET assemblies |
 | `Tuple<ILScopeRef, ILAttributes, Lazy<ILTypeDef>>` | | | |
-| `Lazy<Tuple<ILScopeRef, ILAttributes, Lazy<ILTypeDef>>` |  |  |  | 
-| `Func<Tuple<ILScopeRef, ILAttributes, Lazy<ILTypeDef>>` |   | |  | 
+| `Lazy<Tuple<ILScopeRef, ILAttributes, Lazy<ILTypeDef>>` |  |  |  |
+| `Func<Tuple<ILScopeRef, ILAttributes, Lazy<ILTypeDef>>` |   | |  |
 | `Import+lazyModuleOrNamespaceTypeForNestedTypes@400`   | | | |
 | + others  | | | |
 | `MapNode<string,Item>`  | ~10%  | Typed Tree/NameResolution (in editor) | incremental TcState and name resolution environments stored for various open files and intermediate file points in an active Visual Studio sesson |
@@ -412,15 +412,15 @@ percentages are approximate and depend on scenario. In some cases these have bee
 | + others  | | | |
 | `Lazy<FSharpList<ILAttribute>>` | ~6%  | Typed Tree/AbsIL | various types for delayed thunks for reading lists of attributes about .NET assemblies |
 | `ILBinaryReader+seekReadCustomAttrs@2627` | | | |
-| `Func<FSharpList<ILAttribute>>` 	| | | |
-| `Attrib`	     | | | |
+| `Func<FSharpList<ILAttribute>>` | | | |
+| `Attrib`     | | | |
 | + others  | | | |
-| `Dictionary<Int32, String>`	 | ~3%         | Typed Tree/AbsIL   | various tables including those used in reading binaries |
+| `Dictionary<Int32, String>` | ~3%         | Typed Tree/AbsIL   | various tables including those used in reading binaries |
 | `Dictionary<String, String>` | ~2%  | Typed Tree/AbsIL | memoization tables for strings  |
-| `EntityRef`               	 | ~3%  | Typed Tree | nodes representing references to entities, pointing to an EntityData |
-| `NonLocalEntityRef`	     | | | |
+| `EntityRef`                | ~3%  | Typed Tree | nodes representing references to entities, pointing to an EntityData |
+| `NonLocalEntityRef`     | | | |
 | + others  | | | |
-| `SynExpr.App`               	 | ~3%  | AST | nodes for untyped syntax tree, kept by editor environment |
+| `SynExpr.App`                | ~3%  | AST | nodes for untyped syntax tree, kept by editor environment |
 | + others  | | | |
 | `ILMethodDefs`, `ILMethodDef`  | ~2%  | Typed Tree/AbsIL | various types for reading IL methode definitions from .NET assemblies |
 | + others  | | | |
@@ -429,9 +429,9 @@ percentages are approximate and depend on scenario. In some cases these have bee
 | `TType_app`                  | ~1.5%    | Typed Tree | node for constructed types like `list<int>` |
 | `FSharpList<TType>`          | ~1.5%    | Typed Tree | lists of types, usually in tuple and type applications |
 | `TyparData`                  | ~1.5%    | Typed Tree | data about type inference variables and generic parameters |
-| `ValLinkagePartialKey`	     | ~1%  | Typed Tree | data indicating how one assembly references a value/method/member in another |
-| `ILTypeRef`	     | ~1%  | Typed Tree/AbsIL | type references in AbstractIL metadata |
-| `XmlDoc`	     | ~1%  | AST | documentation strings |
+| `ValLinkagePartialKey`     | ~1%  | Typed Tree | data indicating how one assembly references a value/method/member in another |
+| `ILTypeRef`     | ~1%  | Typed Tree/AbsIL | type references in AbstractIL metadata |
+| `XmlDoc`     | ~1%  | AST | documentation strings |
 | + a long tail of other types, most of which probably belong in the previous general categories, increasing the totals to 100%  | | | |
 
 Looking at the previous analysis, the conclusions at the time of writing are
@@ -448,15 +448,15 @@ Looking at the previous analysis, the conclusions at the time of writing are
 5. There is a considerable "long tail" of memory usage when categorized by type
 
 An alternative way to look at the data is at which F# types are being used inefficiently in long-stored objects.
-For example: 
+For example:
 
 | F# Core Type                  |   Approx %  |  
 |:------------------------------|-----------:|
-| `FSharpList<...>`                 |  ~4%       | 
-| `FSharpOption<...>`                 |  ~1.5%       | 
-| `Tuple<...>`                 |  ~1.5%       | 
-| `FSharpMap<...>`                 |  ~1%       | 
-| `FSharpSet<...>`                 |  ~0% (negligible)       | 
+| `FSharpList<...>`                 |  ~4%       |
+| `FSharpOption<...>`                 |  ~1.5%       |
+| `Tuple<...>`                 |  ~1.5%       |
+| `FSharpMap<...>`                 |  ~1%       |
+| `FSharpSet<...>`                 |  ~0% (negligible)       |
 
 There are micro savings available here if you hunt carefully.
 
@@ -478,9 +478,9 @@ How does this work?
 
 Could we share? The thing is,  I have no idea how to share these nodes - either from a lifetime point of view nor from a correctness point of view.
 
-* Re correctness: the process of generating this blob (TastPickle `p_XYZ`) and resurrecting it (TastPickle `u_*`) does some transformations to the Typed Tree that are necessary for correctness of compilation, for example, https://github.com/dotnet/fsharp/blob/master/src/fsharp/TastPickle.fs#L737. So basically the Typed Tree nodes from the compilation of one assembly are _not_ valid when compiling a different assembly. 
+* Re correctness: the process of generating this blob (TastPickle `p_XYZ`) and resurrecting it (TastPickle `u_*`) does some transformations to the Typed Tree that are necessary for correctness of compilation, for example, [in `TastPickle`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TastPickle.fs#L737). So basically the Typed Tree nodes from the compilation of one assembly are _not_ valid when compiling a different assembly.
 
-  Indeed it's much worse than this - the Typed Tree nodes include CcuData nodes which have access to a number of callbacks into the TcImports compilation context for the assembly being compiled, for example, https://github.com/dotnet/fsharp/blob/master/src/fsharp/tast.fs#L4156. So Tast nodes are "tied to a particular compilation of a particular assembly".
+  Indeed it's much worse than this - the Typed Tree nodes include CcuData nodes which have access to a number of callbacks into the TcImports compilation context for the assembly being compiled, for example, [in `TypedTree`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/tast.fs#L4156). So Tast nodes are "tied to a particular compilation of a particular assembly".
 
   I don't think there's any way we can share these as a result without a **lot** of hard work digging out these assumption. Note that pretty much all the Typed Tree nodes for an assembly compilation are tied together in a graph.
 
@@ -496,15 +496,15 @@ This is done to ensure that long-running type-checking and other computations in
 
 To clarify:
 
-* `fsi.exe` (F# Interactive) and `fsc.exe` don't use time sliced computations – they force `eventually` computations synchronously without interruption. 
+* `fsi.exe` (F# Interactive) and `fsc.exe` don't use time sliced computations – they force `eventually` computations synchronously without interruption.
 
 * Instances of the F# compiler service use time slicing for two things:
 
-1.	The low-priority computations of the reactor thread (i.e. the background typechecking of the incremental builder)
-2.	The typechecking phase of TypeCheckOneFile which are high-priority computations on the reactor thread.
+1. The low-priority computations of the reactor thread (i.e. the background typechecking of the incremental builder)
+2. The typechecking phase of TypeCheckOneFile which are high-priority computations on the reactor thread.
 
-The first can be interrupted by having the incremental builder dependency graph 
-(see [IncrementalBuild.fsi](https://github.com/fsharp/FSharp.Compiler.Service/tree/master/src/fsharp/service/IncrementalBuild.fsi)/[IncrementalBuild.fs](https://github.com/fsharp/FSharp.Compiler.Service/tree/master/src/fsharp/service/IncrementalBuild.fs)) 
+The first can be interrupted by having the incremental builder dependency graph
+(see [IncrementalBuild.fsi](https://github.com/fsharp/FSharp.Compiler.Service/tree/master/src/fsharp/service/IncrementalBuild.fsi)/[IncrementalBuild.fs](https://github.com/fsharp/FSharp.Compiler.Service/tree/master/src/fsharp/service/IncrementalBuild.fs))
 decide not to bother continuing with the computation (it drops it on the floor)
 
 The second can be interrupted via having `isResultObsolete` to the F# Compiler Service API return true.
@@ -541,19 +541,21 @@ F# differs subtly to C# in how EmbeddedResource items in `.fsproj` files are han
 
 When the `Sample_VS2012_FSharp_ConsoleApp_net45_with_resource` EmbeddedResource specifications
 (minus the FsSrGen one) are used in a C# project we get roughly these command line arguments:
-``
+
+```console
 /resource:obj\Debug\ResxResource.resources
-/resource:obj\Debug\ResxResourceWithLogicalName.resources,The.Explicit.Name.Of.ResxResourceWithLogicalName 
-/resource:obj\Debug\SubDir.ResxResourceInSubDir.resources 
-/resource:obj\Debug\SubDir.ResxResourceWithLogicalNameInSubDir.resources,The.Explicit.Name.Of.ResxResourceWithLogicalNameInSubDir 
-/resource:NonResxResourceWithLogicalName.txt,The.Explicit.Name.Of.NonResxResourceWithLogicalName 
-/resource:NonResxResource.txt,NonResxResource.txt 
-/resource:SubDir\NonResxResourceInSubDir.txt,SubDir.NonResxResourceInSubDir.txt 
+/resource:obj\Debug\ResxResourceWithLogicalName.resources,The.Explicit.Name.Of.ResxResourceWithLogicalName
+/resource:obj\Debug\SubDir.ResxResourceInSubDir.resources
+/resource:obj\Debug\SubDir.ResxResourceWithLogicalNameInSubDir.resources,The.Explicit.Name.Of.ResxResourceWithLogicalNameInSubDir
+/resource:NonResxResourceWithLogicalName.txt,The.Explicit.Name.Of.NonResxResourceWithLogicalName
+/resource:NonResxResource.txt,NonResxResource.txt
+/resource:SubDir\NonResxResourceInSubDir.txt,SubDir.NonResxResourceInSubDir.txt
 /resource:SubDir\NonResxResourceWithLogicalNameInSubDir.txt,The.Explicit.Name.Of.NonResxResourceWithLogicalNameInSubDir
-``
+```
 
 This gives a .NET Binary with these resource names:
-``
+
+```console
 .mresource public ResxResource.resources
 .mresource public The.Explicit.Name.Of.ResxResourceWithLogicalName
 .mresource public SubDir.ResxResourceInSubDir.resources
@@ -562,25 +564,25 @@ This gives a .NET Binary with these resource names:
 .mresource public NonResxResource.txt
 .mresource public SubDir.NonResxResourceInSubDir.txt
 .mresource public The.Explicit.Name.Of.NonResxResourceWithLogicalNameInSubDir
-``
+```
 
 For F# on Windows using MSBuild we get these command line arguments:
 
-``
---resource:obj\Debug\ResxResource.resources 
---resource:obj\Debug\ResxResourceWithLogicalName.resources 
---resource:obj\Debug\SubDir.ResxResourceInSubDir.resources 
---resource:obj\Debug\SubDir.ResxResourceWithLogicalNameInSubDir.resources 
---resource:NonResxResourceWithLogicalName.txt 
---resource:NonResxResource.txt 
---resource:SubDir\NonResxResourceInSubDir.txt 
+```console
+--resource:obj\Debug\ResxResource.resources
+--resource:obj\Debug\ResxResourceWithLogicalName.resources
+--resource:obj\Debug\SubDir.ResxResourceInSubDir.resources
+--resource:obj\Debug\SubDir.ResxResourceWithLogicalNameInSubDir.resources
+--resource:NonResxResourceWithLogicalName.txt
+--resource:NonResxResource.txt
+--resource:SubDir\NonResxResourceInSubDir.txt
 --resource:SubDir\NonResxResourceWithLogicalNameInSubDir.txt
---resource:obj\Debug\FSComp.resources 
-``
+--resource:obj\Debug\FSComp.resources
+```
 
 This gives a .NET Binary with these resource names:
 
-``
+```console
 .mresource public ResxResource.resources
 .mresource public ResxResourceWithLogicalName.resources
 .mresource public SubDir.ResxResourceInSubDir.resources
@@ -590,43 +592,43 @@ This gives a .NET Binary with these resource names:
 .mresource public NonResxResourceInSubDir.txt
 .mresource public NonResxResourceWithLogicalNameInSubDir.txt
 .mresource public FSComp.resources
-``
+```
 
 For F# on Linux/OSX using Mono and XBuild we get:
 
-``
---resource:obj/Debug/ResxResource.resources 
---resource:obj/Debug/ResxResourceWithLogicalName.resources 
---resource:obj/Debug/ResxResourceInSubDir.resources 
---resource:obj/Debug/ResxResourceWithLogicalNameInSubDir.resources 
---resource:obj/Debug/FSComp.resources 
---resource:obj/Debug/FSCompLinkedInSuperDir.resources 
---resource:obj/Debug/FSCompLinkedInSameDir.resources 
---resource:obj/Debug/FSCompLinkedInSubDir.resources 
---resource:obj/Debug/NonResxResourceWithLogicalName.txt 
---resource:obj/Debug/NonResxResource.txt 
---resource:obj/Debug/NonResxResourceInSubDir.txt 
+```console
+--resource:obj/Debug/ResxResource.resources
+--resource:obj/Debug/ResxResourceWithLogicalName.resources
+--resource:obj/Debug/ResxResourceInSubDir.resources
+--resource:obj/Debug/ResxResourceWithLogicalNameInSubDir.resources
+--resource:obj/Debug/FSComp.resources
+--resource:obj/Debug/FSCompLinkedInSuperDir.resources
+--resource:obj/Debug/FSCompLinkedInSameDir.resources
+--resource:obj/Debug/FSCompLinkedInSubDir.resources
+--resource:obj/Debug/NonResxResourceWithLogicalName.txt
+--resource:obj/Debug/NonResxResource.txt
+--resource:obj/Debug/NonResxResourceInSubDir.txt
 --resource:obj/Debug/NonResxResourceWithLogicalNameInSubDir.txt
-``
+```
+
 This gives a .NET Binary with these resource names:
 
-``
-.mresource public ResxResource.resources 
-.mresource public ResxResourceWithLogicalName.resources 
-.mresource public ResxResourceInSubDir.resources 
-.mresource public ResxResourceWithLogicalNameInSubDir.resources 
-.mresource public FSComp.resources 
-.mresource public FSCompLinkedInSuperDir.resources 
-.mresource public FSCompLinkedInSameDir.resources 
-.mresource public FSCompLinkedInSubDir.resources 
-.mresource public NonResxResourceWithLogicalName.txt 
-.mresource public NonResxResource.txt 
-.mresource public NonResxResourceInSubDir.txt 
+```console
+.mresource public ResxResource.resources
+.mresource public ResxResourceWithLogicalName.resources
+.mresource public ResxResourceInSubDir.resources
+.mresource public ResxResourceWithLogicalNameInSubDir.resources
+.mresource public FSComp.resources
+.mresource public FSCompLinkedInSuperDir.resources
+.mresource public FSCompLinkedInSameDir.resources
+.mresource public FSCompLinkedInSubDir.resources
+.mresource public NonResxResourceWithLogicalName.txt
+.mresource public NonResxResource.txt
+.mresource public NonResxResourceInSubDir.txt
 .mresource public NonResxResourceWithLogicalNameInSubDir.txt
-``
-Note 
+```
 
-* For both C# and F# on Windows ResX resources in subdirectories have `SubDir` prefixed. This is correct (C# also adds a default namespace, but the `RootNamespace` property is not set by default in F# projects - I've removed it from the C# project). 
+Note that for both C# and F# on Windows ResX resources in subdirectories have `SubDir` prefixed. This is correct (C# also adds a default namespace, but the `RootNamespace` property is not set by default in F# projects - I've removed it from the C# project).
 
 ### Attribution
 

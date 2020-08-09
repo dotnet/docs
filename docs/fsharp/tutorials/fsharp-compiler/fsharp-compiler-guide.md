@@ -383,19 +383,50 @@ On Windows, the compiler delivered with Visual Studio currently uses NGEN to pre
 
 ## Compiler Memory Usage
 
-Overall memory usage is a primary determinant of the usability of the F# compiler and instances of the F# compiler service. Overly high memory usage results in poor throughput (particularly due to increased GC times) and low user interface responsivity in tools such as Visual Studio or other editing environments.
+Overall memory usage is a primary determinant of the usability of the F# compiler and instances of the F# compiler service. Overly high memory usage results in poor throughput (particularly due to increased GC times) and low user interface responsivity in tools such as Visual Studio or other editing environments. In some extreme cases, it can lead to Visual Studio crashing or another IDE becoming unusable due to constant paging from absurdly high memory usage. Luckily, these extreme cases are very rare.
 
-### Key scenarios for memory usage
+### Why memory usage matters
 
-Overall memory usage depends considerably on scenario,phase and configuration. Some key scenarios are:
+When you do a single compilation to produce a binary, memory usage typically doesn't matter much. It's often fine to allocate a lot of memory because it will just be reclaimed after compilation is over.
 
-* Overall memory usage of an instance of Visual Studio or another editing environment when editing F# projects
-* Overall memory usage of the Visual F# Power Tools in Visual Studio when editing and refactoring F# projects
-* Memory usage and throughput of the F# compiler `fsc.exe`
-* Memory usage and throughput of the F# Interactive dynamic scripting compiler fsi.exe
+However, the F# compiler is not simply a batch process that accepts source code as input and produces an assembly as output. When you consider the needs of editor and project tooling in IDEs, the F# compiler is:
 
-Analyzing memory usage of the F# Compiler and instances of the F# Compiler Service can be done using tools such
-as the Visual Studio Managed Memory analysis. For example:
+* An engine that processes syntax trees and outputs data at various stages of compilation
+* A database of syntactic and semantic data about the code hosted in an IDE
+* A server process that accepts requests for syntactic and semantic information
+* An API layer for tools to request tooling-specific data (e.g., F# tooltip information)
+
+Thinking about the F# compiler in these ways makes performance far more complicated than just throughput of a batch compilation process.
+
+### Kinds of data processed and served in F# tooling
+
+The following tables are split into two categories: syntactic and semantic. They contain common kinds of information requested, the kind of data that is involved, and roughly how expensive the operation is.
+
+Syntax:
+
+|  Action | Data inspeced | Data returned | Cost (S/M/L/XL) |
+|---------|---------------|---------------|-----------------|
+| Syntactic Classification | Current document's source text | Text span and classification type for each token in the document | S |
+| Breakpoint Resolution | Current document's syntax tree | Text span representing where breakpoing where resolve | S |
+| Debugging data tip info | Current document's source text | Text span representing the token being inspected | S |
+| Brace pair matching | Current document's source text | Text spans representing brace pairs that match in the input document | S |
+| "Smart" indentation | Current document's source text | Indentation location in a document | S |
+| Syntax-dependent code fixes | Current document's source text | Small text change for document | S |
+| XML doc template generation | Current document's syntax tree | Small (usually) text change for document | S |
+| Brace pair completion | Current line in a source document | Additional brace pair inserted into source text | S |
+| Souce document navigation (usually via dropdowns) | Current document's syntax tree | "Navigation Items" with optional child navigation items containing ranges in source code | S |
+| Code outlining | Current document's source text | Text spans representing blocks of F# code that are collapsable as a group | S - M |
+| Editor formatting | Current document's source text | New source text for the document | S - L |
+
+You likely noticed that nearly all of the syntactical operations are marked `S`. Aside from extreme cases, like files with 50k lines or higher, syntax-only operations typically finish very quickly. In addition to being computationally inexpensive, they are also run asynchronously and free-threaded.
+
+Most of the syntax operations require an entire document's source text or parse tree. It stands to reason that this could be improved by operating on a diff of a parse tree instead of the whole thing. This is likely a very complex thing to implement though, since none of the F# compiler infrastructure works in this way today.
+
+Semantics:
+
+|  Action | Data inspeced | Data returned | Cost (S/M/L/XL) |
+|---------|---------------|---------------|-----------------|
+| TODO | TODO | TODO | TODO |
 
 ### Analyzing compiler memory usage
 

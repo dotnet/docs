@@ -321,7 +321,20 @@ The inner function `offsetValues` will allocate a new tuple when called. However
 
 Currently, these optimizations are not applied to `struct` tuples or explicit `ValueTuple`s passed to a function. In most cases, this doesn't matter because the handling of `ValueTuple` is well-optimized and may be erased at runtime. However, in the previous `runWithTuple` function, the overhead of allocating a `ValueTuple` each call ends up being higher than the previous example with `inline` applied to `offsetValues`. This may be addressed in the future.
 
-In [`InnerLambdasToTopLevelFuncs.fs`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/InnerLambdasToTopLevelFuncs.fs), inner functions and lambdas are analyzed to determine if they can be split out into top-level functions. The benefit is that the resulting code is likely to recieve better treatment from the JIT.
+In [`InnerLambdasToTopLevelFuncs.fs`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/InnerLambdasToTopLevelFuncs.fs), inner functions and lambdas are analyzed and, if possible, rewritten into separate methods that do not require an `FSharpFunc` allocation.
+
+Consider the following implementation of `sumBy` on an F# list:
+
+```fsharp
+let sumBy f xs =
+    let rec loop xs acc =
+        match xs with
+        | [] -> acc
+        | x :: t -> loop t (f x + acc)
+    loop xs 0
+```
+
+The inner `loop` function is emitted as a separate static method named `loop@2` and incurs no overhead involved with allocatin an `FSharpFunc` at runtime.
 
 In [`LowerCallsAndSeqs.fs`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/LowerCallsAndSeqs.fs), a few optimizations are performed:
 
@@ -339,7 +352,18 @@ let inline g k = (fun x -> k (x + 2))
 let res = (f << g) id 1 // 4
 ```
 
-Despite being marked as `inline`, both `f` and `g` incur overhead due to their use of CPS-style compositions. More generally, any time a first-order function is passed as an argument to a second-order function, the first-order function is not inlined even if everything is marked as `inline`. This results in a performance penalty.
+Intermediate values that inherit from `FSharpFunc` are allocated at the call set of `res` to support function composition, even if the functions are marked as `inline`. Currently, if this overhead needs removal, you need to rewrite the code to be more like this:
+
+```fsharp
+let f x = x + 1
+let g x = x + 2
+
+let res = id 1 |> g |> f // 4
+```
+
+The downside of course being that the `id` function can't propagate to composed functions, meaning the code is now different despite yielding the same result.
+
+More generally, any time a first-order function is passed as an argument to a second-order function, the first-order function is not inlined even if everything is marked as `inline`. This results in a performance penalty.
 
 ## Compiler Startup Performance
 

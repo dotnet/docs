@@ -105,7 +105,7 @@ Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a st
 - A `ref` struct can't implement interfaces.
 - A `ref` struct can't be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
 - A `ref` struct can't be a type argument.
-- A `ref` struct variable can't be captured by a [lambda expression](../../programming-guide/statements-expressions-operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
+- A `ref` struct variable can't be captured by a [lambda expression](../operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
 - A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
 - A `ref` struct variable can't be used in [iterators](../../iterators.md).
 

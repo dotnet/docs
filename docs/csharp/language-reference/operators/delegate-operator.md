@@ -16,7 +16,7 @@ The `delegate` operator creates an anonymous method that can be converted to a d
 >
 > [!code-csharp-interactive[lambda expression](snippets/shared/DelegateOperator.cs#Lambda)]
 >
-> For more information about features of lambda expressions, for example, capturing outer variables, see [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md).
+> For more information about features of lambda expressions, for example, capturing outer variables, see [Lambda expressions](lambda-expressions.md).
 
 When you use the `delegate` operator, you might omit the parameter list. If you do that, the created anonymous method can be converted to a delegate type with any list of  parameters, as the following example shows:
 

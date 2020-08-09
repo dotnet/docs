@@ -53,8 +53,6 @@ This section provides detailed information on key C# language features and featu
   
  [LINQ Query Expressions](../linq/index.md)  
   
- [Lambda Expressions](./statements-expressions-operators/lambda-expressions.md)  
-  
  [Namespaces](./namespaces/index.md)  
   
  [Unsafe Code and Pointers](./unsafe-code-pointers/index.md)  

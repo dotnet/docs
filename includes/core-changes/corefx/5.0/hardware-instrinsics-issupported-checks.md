@@ -1,6 +1,6 @@
 ### Hardware intrinsic IsSupported checks may differ for nested types
 
-Checking `<Isa>.X64.IsSupported`, where `<isa>` refers to the classes in the <xref:System.Runtime.Intrinsics.X86?displayProperty=nameWithType> namespace, may now produce a different result to previous versions of .NET.
+Checking `<Isa>.X64.IsSupported`, where `<Isa>` refers to the classes in the <xref:System.Runtime.Intrinsics.X86?displayProperty=nameWithType> namespace, may now produce a different result to previous versions of .NET.
 
 > [!TIP]
 > *ISA* standard for industry standard architecture.
@@ -11,13 +11,13 @@ Checking `<Isa>.X64.IsSupported`, where `<isa>` refers to the classes in the <xr
 
 #### Change description
 
-In previous versions of .NET, some of the <xref:System.Runtime.Intrinsics.X86> hardware-intrinsic types, for example, <xref:System.Runtime.Intrinsics.X86.Aes?displayProperty=nameWithType>, didn't expose a nested `X64` class. For these types, calling `<Isa>.X64.IsSupported` resolved to an `IsSupported` property on a nested `X64` class of a parent class. This meant that the property could return `true` even when `<Isa>.IsSupported` returns `false`.
+In previous versions of .NET, some of the <xref:System.Runtime.Intrinsics.X86> hardware-intrinsic types, for example, <xref:System.Runtime.Intrinsics.X86.Aes?displayProperty=nameWithType>, didn't expose a nested `X64` class. For these types, calling `<Isa>.X64.IsSupported` resolved to an `IsSupported` property on a nested `X64` class of a parent class of `<Isa>`. This meant that the property could return `true` even when `<Isa>.IsSupported` returns `false`.
 
 In .NET 5.0 and later versions, all of the <xref:System.Runtime.Intrinsics.X86> types expose a nested `X64` class that appropriately reports support. This ensures that the general hierarchy remains correct, and that if `<Isa>.X64.IsSupported` is `true`, then `<Isa>.IsSupported` can also be assumed to be `true`.
 
 #### Reason for change
 
-It was intended that if `<Isa>.X64.IsSupported` is `true`, `<Isa>.IsSupported` is also implied to be `true`. However, due to how member resolution works in C#, classes that didn't have a nested `X64` class exposed a situation where this wasn't always the case, leading to bugs in user code.
+It was intended that if `<Isa>.X64.IsSupported` is `true`, `<Isa>.IsSupported` is also implied to be `true`. However, due to how member resolution works in C#, classes that didn't have a nested `X64` class exposed a situation where this wasn't always the case and led to bugs in user code.
 
 #### Recommended action
 

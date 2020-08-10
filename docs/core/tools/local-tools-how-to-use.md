@@ -1,6 +1,7 @@
 ---
 title: "Tutorial: Install and use .NET Core local tools"
 description: Learn how to install and use a .NET tool as a local tool.
+ms.topic: tutorial
 ms.date: 02/12/2020
 ---
 

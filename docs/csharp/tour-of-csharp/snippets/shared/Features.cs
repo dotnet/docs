@@ -77,7 +77,11 @@ namespace TourOfCsharp
 
             var weatherData = (Date: DateTime.Now, LowTemp: 5, HighTemp: 30);
             // <StringInterpolation>
-            Console.WriteLine($"The low and high temperature on {weatherData.Date:MM-DD-YYYY} was {weatherData.LowTemp} and {weatherData.HighTemp}");
+            Console.WriteLine($"The low and high temperature on {weatherData.Date:MM-DD-YYYY}");
+            Console.WriteLine($"    was {weatherData.LowTemp} and {weatherData.HighTemp}.");
+            // Output (similar to):
+            // The low and high temperature on 08-11-2020
+            //     was 5 and 30.
             // </StringInterpolation>
             DelegateExample.Main();
 
@@ -89,7 +93,7 @@ namespace TourOfCsharp
         public async Task<int> RetrieveDocsHomePage()
         {
             var client = new HttpClient();
-            byte[] content = await client.GetByteArrayAsync("https://docs.microsoft.com/en-us/");
+            byte[] content = await client.GetByteArrayAsync("https://docs.microsoft.com/");
 
             Console.WriteLine($"{nameof(RetrieveDocsHomePage)}: Finished downloading.");
             return content.Length;

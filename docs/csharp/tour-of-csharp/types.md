@@ -7,7 +7,7 @@ ms.date: 08/06/2020
 
 ## Classes and objects
 
-*Classes* are the most fundamental of C#’s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for dynamically created *instances* of the class, also known as *objects*. Classes support *inheritance* and *polymorphism*, mechanisms whereby *derived classes* can extend and specialize *base classes*.
+*Classes* are the most fundamental of C#’s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for *instances* of the class, also known as *objects*. Classes support *inheritance* and *polymorphism*, mechanisms whereby *derived classes* can extend and specialize *base classes*.
 
 New classes are created using class declarations. A class declaration starts with a header. The header specifies:
 
@@ -30,7 +30,7 @@ The memory occupied by an object is automatically reclaimed when the object is n
 
 ### Type parameters
 
-Generic classes define [***type parameters***](programming-guide/generics/index.md). Type parameters are a list of type parameter names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
+Generic classes define [***type parameters***](../programming-guide/generics/index.md). Type parameters are a list of type parameter names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DefinePairClass":::
 
@@ -61,7 +61,7 @@ Classes define types that support inheritance and polymorphism. They enable you 
 
 ## Interfaces
 
-An [***interface***](programming-guide/interfaces/index.md) defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
+An [***interface***](../programming-guide/interfaces/index.md) defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface typically doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
 
 Interfaces may employ ***multiple inheritance***. In the following example, the interface `IComboBox` inherits from both `ITextBox` and `IListBox`.
 
@@ -91,7 +91,7 @@ The following example shows declarations of both the preceding enums:
 
 ## Nullable types
 
-Variables of any type may be declared as ***non-nullable*** or ***nullable***. A nullable variable can hold an additional `null` value, indicating no value. Nullable Value types (structs or enums) are represented by <xref:System.Nullable%601?displayProperty=nameWithType>. Non-nullable and Nullable Reference types are both represented by the underlying reference type. The distinction is represented by metadata read by the compiler and some libraries. The compiler provides warnings when nullable references are dereferenced without first checking their value against `null`. The compiler also provides warnings when non-nullable references are assigned to a value that may be `null`. The following example declares a ***nullable int***, initializing it to `null`. Then, it sets the value to `5`. It demonstrates the same concept with a ***nullable string***. For more information, see [nullable value types](language-reference/builtin-types/nullable-value-types.md) and [nullable reference types](../nullable-references.md).
+Variables of any type may be declared as ***non-nullable*** or ***nullable***. A nullable variable can hold an additional `null` value, indicating no value. Nullable Value types (structs or enums) are represented by <xref:System.Nullable%601?displayProperty=nameWithType>. Non-nullable and Nullable Reference types are both represented by the underlying reference type. The distinction is represented by metadata read by the compiler and some libraries. The compiler provides warnings when nullable references are dereferenced without first checking their value against `null`. The compiler also provides warnings when non-nullable references are assigned to a value that may be `null`. The following example declares a ***nullable int***, initializing it to `null`. Then, it sets the value to `5`. It demonstrates the same concept with a ***nullable string***. For more information, see [nullable value types](../language-reference/builtin-types/nullable-value-types.md) and [nullable reference types](../nullable-references.md).
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DeclareNullable":::
 

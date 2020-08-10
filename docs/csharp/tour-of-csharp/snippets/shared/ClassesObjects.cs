@@ -114,7 +114,7 @@ namespace TourOfCsharp
         
         public override double Evaluate(Dictionary<string, object> vars)
         {
-            object value = vars[name] ?? throw new Exception($"Unknown variable: {name}");
+            object value = vars[_name] ?? throw new Exception($"Unknown variable: {_name}");
             return Convert.ToDouble(value);
         }
     }
@@ -136,7 +136,7 @@ namespace TourOfCsharp
         {
             double x = _left.Evaluate(vars);
             double y = _right.Evaluate(vars);
-            switch (op)
+            switch (_op)
             {
                 case '+': return x + y;
                 case '-': return x - y;
@@ -197,7 +197,7 @@ namespace TourOfCsharp
                 if (value != _items.Length)
                 {
                     T[] newItems = new T[value];
-                    Array.Copy(_items, 0, newItems, 0, count);
+                    Array.Copy(_items, 0, newItems, 0, _count);
                     _items = newItems;
                 }
             }
@@ -216,7 +216,7 @@ namespace TourOfCsharp
         public void Add(T item)
         {
             if (_count == Capacity) Capacity = _count * 2;
-            items[_count] = item;
+            _items[_count] = item;
             _count++;
             OnChanged();
         }
@@ -229,11 +229,11 @@ namespace TourOfCsharp
         static bool Equals(MyList<T> a, MyList<T> b)
         {
             if (Object.ReferenceEquals(a, null)) return Object.ReferenceEquals(b, null);
-            if (Object.ReferenceEquals(b, null) || a.count != b.count)
+            if (Object.ReferenceEquals(b, null) || a._count != b._count)
                 return false;
-            for (int i = 0; i < a.count; i++)
+            for (int i = 0; i < a._count; i++)
             {
-                if (!object.Equals(a.items[i], b.items[i]))
+                if (!object.Equals(a._items[i], b._items[i]))
                 {
                     return false;
                 }
@@ -268,7 +268,7 @@ namespace TourOfCsharp
             names.Add("Liz");
             names.Add("Martha");
             names.Add("Beth");
-            Console.WriteLine(changeCount); // "3"
+            Console.WriteLine(s_changeCount); // "3"
         }
     }
     // </RespondToEvents>

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 
 namespace Acme.Collections
 {
@@ -8,7 +8,7 @@ namespace Acme.Collections
         
         public void Push(T data)
         {
-            _top = new Entry(top, data);
+            _top = new Entry(_top, data);
         }
 
         public T Pop()

@@ -7,7 +7,7 @@ ms.date: 08/06/2020
 
 ## Arrays, collections, and LINQ
 
-C# and .NET provide many different collection types. Arrays have syntax defined by the language. General collection types are listed in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. Specialized collections include <xref:System.Span%601?displayProperty=nameWithType> for accessing continuous memory on the stack frame, and <xref:System.Memory%601?displayProperty=nameWithType> for accessing continuous memory on the managed heap. All collections, including arrays, <xref:System.Span%601>, and <xref:System.Memory%601> share a unifying principle for iteration. You use the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. This unifying principle means that any of the collection types can be used with LINQ queries or other algorithms. You write methods using <xref:System.Collections.Generic.IEnumerable%601> and those algorithms work with any collection.
+C# and .NET provide many different collection types. Arrays have syntax defined by the language. Generic collection types are listed in the <xref:System.Collections.Generic?displayProperty=fullName> namespace. Specialized collections include <xref:System.Span%601?displayProperty=nameWithType> for accessing continuous memory on the stack frame, and <xref:System.Memory%601?displayProperty=nameWithType> for accessing continuous memory on the managed heap. All collections, including arrays, <xref:System.Span%601>, and <xref:System.Memory%601> share a unifying principle for iteration. You use the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface. This unifying principle means that any of the collection types can be used with LINQ queries or other algorithms. You write methods using <xref:System.Collections.Generic.IEnumerable%601> and those algorithms work with any collection.
 
 ### Arrays
 
@@ -98,7 +98,7 @@ The following example declares a `HelpAttribute` attribute that can be placed on
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="DefineAttribute":::
 
-All attribute classes derive from the <xref:System.Attribute> base class provided by the standard library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` can be used as follows.
+All attribute classes derive from the <xref:System.Attribute> base class provided by the .NET library. Attributes can be applied by giving their name, along with any arguments, inside square brackets just before the associated declaration. If an attribute’s name ends in `Attribute`, that part of the name can be omitted when the attribute is referenced. For example, the `HelpAttribute` can be used as follows.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="UseAttributes":::
 

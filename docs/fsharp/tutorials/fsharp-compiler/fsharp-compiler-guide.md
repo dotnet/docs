@@ -466,6 +466,10 @@ For example, commands like Find All References and Rename can be cheap if a code
 
 In contrast, actions like highlighting all symbols in a document aren't terribly expensive even for very large file files. That's because the symbols to be inspected are ultimately only in a single document.
 
+Operations that use typecheck data execute on a single background thread (see [Reactor.fsi](https://github.com/dotnet/fsharp/blob/master/src/fsharp/service/Reactor.fsi)/[Reactor.fs](https://github.com/dotnet/fsharp/blob/master/src/fsharp/service/Reactor.fs)). Each operation is cancellable - for example, if you run an expensive Find All References but decide to do something else, the next action you take that requires semantic data will cancel the Find All References operation and start the one you requested.
+
+TODO for don --> why single-threaded? why no priority queue if can't be multithreaded?
+
 ### Analyzing compiler memory usage
 
 In general, the F# compiler allocates a lot of memory. More than it needs to. However, most of the "easy" sources of allocations have been squashed out and what remains are many smaller sources of allocations. The remaining "big" pieces allocate as a result of their current architecture, so it isn't straightforward to address them.
@@ -501,45 +505,41 @@ When analyzing a trace, there are a few things to look out for:
 
 After analyzing a trace, you should have a good idea of places that could see improvement. Often times a tuple can be made into a struct tuple, or some convenient string processing could be adjusted to use a `ReadonlySpan<'T>` or turned into a more verbose loop that avoids allocations.
 
-## From Compiler to Language Service
+### The cross-project references problem
 
-### Cross-project references
+The compiler is generally built to compile one assembly: the assumption that the compiler is compiling one assembly is baked into several aspects of the design of the Typed Tree.
 
-The compiler is generally built to compile one assembly: the assumption that we're compiling one assembly is baked into several aspects of the design of the Typed Tree.
+In contract, FCS supports compiling a graph of projects, each for a different assembly. The Typed Tree nodes are **not** shared between different project compilations. This means that representation of project references is roughly O(n^2) in memory usage. In practice it's not strictly O(n^2), but for very large codebases the proportionality is felt.
 
-In contract, FCS supports compiling a graph of projects, each for a different assembly. The Typed Tree nodes are **not** shared between different project compilations. (ILModuleReader are shared by artificially extending their lifetime via caches).
+Some key things to understand are:
 
-How does this work?
-
-* The [RawFSharpAssemblyData](https://github.com/dotnet/fsharp/blob/master/src/fsharp/service/service.fs#L2376) is the data blob that would normally be stuffed in the F# resource in the generated DLL  in a normal compilation. That's the "output" of checking each project.
+* The `RawFSharpAssemblyData` is the data blob that would normally be stuffed in the F# resource in the generated DLL  in a normal compilation. That's the "output" of checking each project.
 
 * This is used as "input" for the assembly reference of each consuming project (instead of an on-disk DLL)
 
-* Within each consuming project that blob is then resurrected to Typed Tree nodes via TastPickle.fs.
+* Within each consuming project that blob is then resurrected to Typed Tree nodes in `TypedTreePickle.fs`.
 
-Could we share? The thing is,  I have no idea how to share these nodes - either from a lifetime point of view nor from a correctness point of view.
+The biggest question is: could the compiler share this data across projects? In theory, yes. In practice, it's very tricky business.
 
-* Re correctness: the process of generating this blob (TastPickle `p_XYZ`) and resurrecting it (TastPickle `u_*`) does some transformations to the Typed Tree that are necessary for correctness of compilation, for example, [in `TastPickle`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TastPickle.fs#L737). So basically the Typed Tree nodes from the compilation of one assembly are _not_ valid when compiling a different assembly.
+From a correctness point of view: the process of generating this blob (TypedTreePickle `p_XYZ`) and resurrecting it (TypedTreePickle `u_*`) does some transformations to the Typed Tree that are necessary for correctness of compilation, for example, [in `TypedTreePickle`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/TypedTreePickle.fs#L737). Basically, the Typed Tree nodes from the compilation of one assembly are _not_ valid when compiling a different assembly.
 
-  Indeed it's much worse than this - the Typed Tree nodes include CcuData nodes which have access to a number of callbacks into the TcImports compilation context for the assembly being compiled, for example, [in `TypedTree`](https://github.com/dotnet/fsharp/blob/master/src/fsharp/tast.fs#L4156). So Tast nodes are "tied to a particular compilation of a particular assembly".
+The Typed Tree nodes include `CcuData` nodes, which have access to a number of callbacks into the `TcImports` compilation context for the assembly being compiled. TypedTree nodes are effectively tied to a particular compilation of a particular assembly due to this.
 
-  I don't think there's any way we can share these as a result without a **lot** of hard work digging out these assumption. Note that pretty much all the Typed Tree nodes for an assembly compilation are tied together in a graph.
+There isn't any way to share this data without losing correctness and invalidating many invariants held in the current design.
 
-* Re lifetime: the Typed Tree nodes are tied together in a graph, so sharing one or two of them might drag across the entire graph and extend lifetimes of that graph. That is risky.
+From a lifetime point of view: the Typed Tree nodes are tied together in a graph, so sharing one or two of them might drag across the entire graph and extend lifetimes of that graph. None of these interrelated nodes were designed to be shared across assemblies.
 
-To reiterate: the compiler is built to compile an assembly, and the assumption that we're compiling one assembly is baked into several aspects of the design of the Typed Tree.
+## `eventually` computations
 
-### `eventually` Computations
-
-Some parts of the F# codebase (specifically, the type checker) are written using `eventually` computation expressions, see [`EventuallyBuilder` in illib.fs](https://github.com/dotnet/fsharp/blob/8d048d87a4b1450073ce4f76e10dabad6df76712/src/absil/illib.fs). These define resumption-like computations which can be  time-sliced, suspended or discarded at "bind" points.
+Some parts of the F# codebase (specifically, the type checker) are written using `eventually` computation expressions. These define resumption-like computations which can be  time-sliced, suspended or discarded at "bind" points.
 
 This is done to ensure that long-running type-checking and other computations in the F# Compiler Service can be interrupted and cancelled. The documentation of the [F# Compiler Service Operations Queue](fsharp-compiler-service-queue.md) covers some aspects of this.
 
-To clarify:
+When compiling code with `fsc` or executing code with `fsi`, these computations are not time-sliced and simply run synchronously and without interruption (unless the user requests it).
 
-* `fsi.exe` (F# Interactive) and `fsc.exe` don't use time sliced computations – they force `eventually` computations synchronously without interruption.
+TODO for don --> is the below stuff still accurate?
 
-* Instances of the F# compiler service use time slicing for two things:
+Instances of the F# compiler service use time slicing for two things:
 
 1. The low-priority computations of the reactor thread (i.e. the background typechecking of the incremental builder)
 2. The typechecking phase of TypeCheckOneFile which are high-priority computations on the reactor thread.
@@ -566,13 +566,7 @@ The F# compiler is boostrapped. That is, an existing F# compiler is used to buil
 
 TODO - Update, especially as it pertains to .NET Core/.NET SDK
 
-`FSharp.Build.dll` and `Microsoft.FSharp.targets` give XBuild/MSBuild support for F# projects (`.fsproj`). Although
-not strictly part of the F# compiler, these components are always found in F# tool distributions for Mono and Windows.
-
-Also, Mono's XBuild targets files [Microsoft.Common.targets](https://github.com/mono/mono/blob/ef407901f8fdd9ed8c377dbec8123b5afb932ebb/mcs/tools/xbuild/data/12.0/Microsoft.Common.targets) processes EmbeddedResource items differently to MSBuild and this can lead to differences in how things work.
-
-The best test project for understanding what's going on with resource names is `tests\projects\Sample_VS2012_FSharp_ConsoleApp_net45_with_resource`.
-This includes various EmbeddedResource items and some custom "FsSrGen" items that give rise to resources.
+`FSharp.Build.dll` and `Microsoft.FSharp.targets` give MSBuild support for F# projects (`.fsproj`). Although not strictly part of the F# compiler, these components are always found in F# tool distributions for Mono and Windows.
 
 ### How F# handles EmbeddedResource items differently to C# (details)
 

@@ -81,7 +81,7 @@ Application data can also be stored client-side on the user's device so that is 
 - `localStorage` - scoped to the user's entire browser. If the page is reloaded, the browser is closed and reopened, or another tab is opened with the same URL then the same `localStorage` is provided by the browser
 - `sessionStorage` - scoped to the user's current browser tab. If the tab is reloaded, the state persists. However, if the user opens another tab to your application or closes and reopens the browser the state is lost.
 
-You can write some custom JavaScript code to interact with these features, or there are a number of NuGet packages that you can use that provide this functionality. One such package is [Microsoft.AspNetCore.ProtectedBrowserStorage](https://www.nuget.org/packages/Microsoft.AspNetCore.ProtectedBrowserStorage)
+You can write some custom JavaScript code to interact with these features, or there are a number of NuGet packages that you can use that provide this functionality. One such package is [Microsoft.AspNetCore.ProtectedBrowserStorage](https://www.nuget.org/packages/Microsoft.AspNetCore.ProtectedBrowserStorage).
 
 For instructions on utilizing this package to interact with `localStorage` and `sessionStorage`, see the [Blazor State Management](/aspnet/core/blazor/state-management#protected-browser-storage-experimental-package) article.
 

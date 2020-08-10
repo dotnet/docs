@@ -5,7 +5,7 @@ ms.date: 02/27/2020
 ms.assetid: a9bf82f4-efd1-4216-bd34-4ef0fa48c968
 ---
 
-# Interfaces
+# Interfaces in C\#
 
 An ***interface*** defines a contract that can be implemented by classes and structs. An interface can contain methods, properties, events, and indexers. An interface doesn't provide implementations of the members it defines—it merely specifies the members that must be supplied by classes or structs that implement the interface.
 

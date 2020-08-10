@@ -3,7 +3,8 @@ title: "Security"
 ms.date: "03/30/2017"
 ms.assetid: 737ec121-bfc5-4b75-a504-2d53c2c8af39
 ---
-# Security
+# Security <!-- TODO -->
+
 The SQL Workflow Instance Store uses the following database security roles to secure access to instance state information in the persistence database.  
   
 - **System.Activities.DurableInstancing.InstanceStoreUsers**. This role has read and write access to public views and execution rights to stored procedures that are involved in creating, loading and saving instances.  

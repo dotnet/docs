@@ -5,7 +5,7 @@ ms.date: 02/27/2020
 ms.assetid: 3cc27357-3ac2-43a1-aad0-86a77b88f884
 ---
 
-# Delegates
+# Delegates in C\#
 
 A ***delegate type*** represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are similar to the concept of function pointers found in some other languages. Unlike function pointers, delegates are object-oriented and type-safe.
 

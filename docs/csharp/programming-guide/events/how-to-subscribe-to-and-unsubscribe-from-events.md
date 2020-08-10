@@ -52,7 +52,7 @@ You subscribe to an event that is published by another class when you want to wr
     publisher.RaiseCustomEvent += new CustomEventHandler(HandleCustomEvent);  
     ```  
   
-     You can also use a [lambda expression](../statements-expressions-operators/lambda-expressions.md) to specify an event handler:
+     You can also use a [lambda expression](../../language-reference/operators/lambda-expressions.md) to specify an event handler:
   
     ```csharp
     public Form1()  

@@ -17,7 +17,7 @@ The most common extension methods are the LINQ standard query operators that add
 
 ### OrderBy Example
 
-The following example shows how to call the standard query operator `OrderBy` method on an array of integers. The expression in parentheses is a lambda expression. Many standard query operators take lambda expressions as parameters, but this isn't a requirement for extension methods. For more information, see [Lambda Expressions](../statements-expressions-operators/lambda-expressions.md).
+The following example shows how to call the standard query operator `OrderBy` method on an array of integers. The expression in parentheses is a lambda expression. Many standard query operators take lambda expressions as parameters, but this isn't a requirement for extension methods. For more information, see [Lambda Expressions](../../language-reference/operators/lambda-expressions.md).
 
 [!code-csharp[csProgGuideExtensionMethods#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExtensionMethods/cs/extensionmethods.cs#3)]
 
@@ -116,7 +116,7 @@ For a class library that you implemented, you shouldn't use extension methods to
 
 - [C# Programming Guide](../index.md)
 - [Parallel Programming Samples (these include many example extension methods)](/samples/browse/?products=dotnet-core%2Cdotnet-standard&term=parallel)
-- [Lambda Expressions](../statements-expressions-operators/lambda-expressions.md)
+- [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
 - [Standard Query Operators Overview](../concepts/linq/standard-query-operators-overview.md)
 - [Conversion rules for Instance parameters and their impact](https://docs.microsoft.com/archive/blogs/sreekarc/conversion-rules-for-instance-parameters-and-their-impact)
 - [Extension methods Interoperability between languages](https://docs.microsoft.com/archive/blogs/sreekarc/extension-methods-interoperability-between-languages)

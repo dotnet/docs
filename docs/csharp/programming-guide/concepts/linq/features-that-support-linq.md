@@ -91,7 +91,7 @@ For more information, see:
 
 - [Anonymous Functions](../../statements-expressions-operators/anonymous-functions.md)
 
-- [Lambda Expressions](../../statements-expressions-operators/lambda-expressions.md)
+- [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md)
 
 - [Expression Trees (C#)](../expression-trees/index.md)
 

@@ -1,6 +1,14 @@
 {
   "redirections": [
     {
+      "source_path": "docs/framework/configure-apps/file-schema/remove-element-for-configsections.md",
+      "redirect_url": "/dotnet/framework/configure-apps/file-schema/configuration-sections-schema#dep"
+    },
+    {
+      "source_path": "docs/framework/configure-apps/file-schema/clear-element-for-configsections.md",
+      "redirect_url": "/dotnet/framework/configure-apps/file-schema/configuration-sections-schema#dep"
+    },
+    {
       "source_path": "docs/about/index.md",
       "redirect_url": "/dotnet/standard/index"
     },
@@ -24,6 +32,10 @@
       "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
       "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implemenation-entity-framework-core.md",
+      "redirect_url": "/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/infrastructure-persistence-layer-implementation-entity-framework-core"
     },
     {
       "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/build-resilient-services-ready-for-the-cloud-embrace-transient-failures-in-the-cloud.md",
@@ -119,11 +131,11 @@
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-authenticate.md",
-      "redirect_url": "/dotnet/azure/sdk/authentication"
+      "redirect_url": "/dotnet/azure/authentication"
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-concepts.md",
-      "redirect_url": "/dotnet/azure/sdk"
+      "redirect_url": "/dotnet/azure/"
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-get-started.md",
@@ -131,19 +143,39 @@
     },
     {
       "source_path": "docs/azure/dotnet-sdk-azure-overview.md",
-      "redirect_url": "/dotnet/azure/sdk"
+      "redirect_url": "/dotnet/azure/"
     },
     {
       "source_path": "docs/azure/dotnet-sdk-vs2015-install.md",
-      "redirect_url": "/dotnet/azure/sdk/vs2015-install"
+      "redirect_url": "/dotnet/azure/vs2015-install"
     },
     {
       "source_path": "docs/azure/dotnet-tools.md",
-      "redirect_url": "/dotnet/azure/sdk/tools"
+      "redirect_url": "/dotnet/azure/tools"
     },
     {
       "source_path": "docs/azure/dotnet-tutorials.md",
       "redirect_url": "/dotnet/azure/"
+    },
+    {
+      "source_path": "docs/azure/sdk/index.yml",
+      "redirect_url": "/dotnet/azure/"
+    },
+    {
+      "source_path": "docs/azure/sdk/authentication.md",
+      "redirect_url": "/dotnet/azure/authentication"
+    },
+    {
+      "source_path": "docs/azure/sdk/logging.md",
+      "redirect_url": "/dotnet/azure/logging"
+    },
+    {
+      "source_path": "docs/azure/sdk/tools.md",
+      "redirect_url": "/dotnet/azure/tools"
+    },
+    {
+      "source_path": "docs/azure/sdk/vs2015-install.md",
+      "redirect_url": "/dotnet/azure/vs2015-install"
     },
     {
       "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
@@ -315,6 +347,10 @@
       "source_path": "docs/core/migrating-from-dnx.md",
       "redirect_url": "/dotnet/core/migration/from-dnx",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "/docs/core/packages.md",
+      "redirect_url": "/dotnet/core/deploying"
     },
     {
       "source_path": "docs/core/porting/nuget-packages.md",
@@ -501,8 +537,7 @@
     },
     {
       "source_path": "docs/core/preview3/tutorials/using-with-xplat-cli-msbuild.md",
-      "redirect_url": "/dotnet/core/tutorials/cli-create-console-app",
-      "redirect_document_id": true
+      "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
     },
     {
       "source_path": "docs/core/preview3/windows-prerequisites.md",
@@ -524,6 +559,10 @@
     {
       "source_path": "docs/core/tools/test-protocol.md",
       "redirect_url": "/dotnet/core/tools/dotnet-test"
+    },
+    {
+      "source_path": "docs/core/tutorials/aspnet-core.md",
+      "redirect_url": "/dotnet/core/tutorials"
     },
     {
       "source_path": "docs/core/tutorials/cli-console-app-tutorial-advanced.md",
@@ -579,7 +618,7 @@
     },
     {
       "source_path": "docs/core/tutorials/using-with-xplat-cli.md",
-      "redirect_url": "/dotnet/core/tutorials/cli-create-console-app"
+      "redirect_url": "/dotnet/core/tutorials/with-visual-studio-code"
     },
     {
       "source_path": "docs/core/versions/install-management.md",
@@ -650,12 +689,11 @@
     },
     {
       "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio-2017.md",
-      "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio",
-      "redirect_document_id": true
+      "redirect_url": "/nuget/quickstart/install-and-use-a-package-in-visual-studio"
     },
     {
       "source_path": "docs/csharp/getting-started/consuming-library-with-visual-studio.md",
-      "redirect_url": "/dotnet/core/tutorials/consuming-library-with-visual-studio"
+      "redirect_url": "/nuget/quickstart/install-and-use-a-package-in-visual-studio"
     },
     {
       "source_path": "docs/csharp/getting-started/debugging-with-visual-studio-2017.md",
@@ -710,7 +748,7 @@
     },
     {
       "source_path": "docs/csharp/implicitly-typed-lambda-expressions.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
     },
     {
       "source_path": "docs/csharp/interactive-with-bash.md",
@@ -738,7 +776,7 @@
     },
     {
       "source_path": "docs/csharp/lambda-expressions.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
     },
     {
       "source_path": "docs/csharp/language-reference/compiler-options/app-deployment.md",
@@ -1182,7 +1220,7 @@
     },
     {
       "source_path": "docs/csharp/methods-lambda-expressions.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
     },
     {
       "source_path": "docs/csharp/namespaces-and-assemblies.md",
@@ -1544,16 +1582,24 @@
       "redirect_url": "/dotnet/csharp/language-reference/operators/default"
     },
     {
+      "source_path": "docs/csharp/programming-guide/statements-expressions-operators/expressions.md",
+      "redirect_url": "/dotnet/csharp/language-reference/operators/index"
+    },
+    {
       "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md",
       "redirect_url": "/dotnet/csharp/language-reference/operators/user-defined-conversion-operators"
     },
     {
       "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/statements-expressions-operators/lambda-expressions"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
     },
     {
       "source_path": "docs/csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md",
       "redirect_url": "/dotnet/csharp/language-reference/operators/operator-overloading"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md",
+      "redirect_url": "/dotnet/csharp/language-reference/operators/lambda-expressions"
     },
     {
       "source_path": "docs/csharp/programming-guide/statements-expressions-operators/operators.md",
@@ -1719,12 +1765,48 @@
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
     },
     {
+      "source_path": "docs/csharp/tour-of-csharp/arrays.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/features#arrays-collections-and-LINQ"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/attributes.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/features#attributes"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/delegates.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/features#delegates-and-lambda-expressions"
+    },
+    {
       "source_path": "docs/csharp/tour-of-csharp/enums.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/enum"
     },
     {
+      "source_path": "docs/csharp/tour-of-csharp/expressions.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/program-building-blocks#expressions"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/interfaces.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/types#interfaces"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/program-structure.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/#program-structure"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/statements.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/program-building-blocks#statements"
+    },
+    {
       "source_path": "docs/csharp/tour-of-csharp/structs.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/types-and-variables.md",
+      "redirect_url": "/dotnet/csharp/tour-of-csharp/types"
+    },
+    {
+      "source_path": "docs/csharp/tuples.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-tuples"
     },
     {
       "source_path": "docs/csharp/tutorials/default-interface-members-versions.md",
@@ -3866,6 +3948,10 @@
       "source_path": "docs/standard/portability-analyzer.md",
       "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/standard/security/creating-a-cryptographic-scheme.md",
+      "redirect_url": "/dotnet/standard/security/cryptographic-services"
     },
     {
       "source_path": "docs/standard/serialization/add-element-for-xmlschemaimporterextensions.md",

@@ -1,5 +1,6 @@
 ---
 title: "Runtime Information ETW Events"
+description: See runtime information ETW events, which record the SKU, version number, how the runtime was activated (including command-line parameters), the GUID, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "runtime information events [.NET Framework]"

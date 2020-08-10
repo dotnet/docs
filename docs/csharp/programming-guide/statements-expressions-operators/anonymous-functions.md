@@ -1,5 +1,6 @@
 ---
 title: "Anonymous functions - C# Programming Guide"
+description: Learn about anonymous functions. You can use a lambda expression or anonymous method to create an anonymous function.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [C#], as anonymous functions"
@@ -11,7 +12,7 @@ ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365
 
 An anonymous function is an "inline" statement or expression that can be used wherever a delegate type is expected. You can use it to initialize a named delegate or pass it instead of a named delegate type as a method parameter.
 
-You can use a [lambda expression](lambda-expressions.md) or an [anonymous method](../../language-reference/operators/delegate-operator.md) to create an anonymous function. We recommend using lambda expressions as they provide more concise and expressive way to write inline code. Unlike anonymous methods, some types of lambda expressions can be converted to the expression tree types.
+You can use a [lambda expression](../../language-reference/operators/lambda-expressions.md) or an [anonymous method](../../language-reference/operators/delegate-operator.md) to create an anonymous function. We recommend using lambda expressions as they provide more concise and expressive way to write inline code. Unlike anonymous methods, some types of lambda expressions can be converted to the expression tree types.
 
 ## The Evolution of Delegates in C\#
 
@@ -28,6 +29,6 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 ## See also
 
 - [Statements, Expressions, and Operators](./index.md)
-- [Lambda Expressions](./lambda-expressions.md)
+- [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
 - [Delegates](../delegates/index.md)
 - [Expression Trees (C#)](../concepts/expression-trees/index.md)

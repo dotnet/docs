@@ -14,7 +14,7 @@ Starting with Visual Basic 2017, the Visual Basic language offers built-in suppo
 
 ## Instantiating and using a tuple
 
-You instantiate a tuple by enclosing its comma-delimited values im parentheses. Each of those values then becomes a field of the tuple. For example, the following code defines a triple (or 3-tuple) with a `Date` as its first value, a `String` as its second, and a `Boolean` as its third.
+You instantiate a tuple by enclosing its comma-delimited values in parentheses. Each of those values then becomes a field of the tuple. For example, the following code defines a triple (or 3-tuple) with a `Date` as its first value, a `String` as its second, and a `Boolean` as its third.
 
 [!code-vb[Instantiate](../../../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/tuple1.vb#1)]
 

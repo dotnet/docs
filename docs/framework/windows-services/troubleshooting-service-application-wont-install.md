@@ -1,5 +1,6 @@
 ---
 title: "Troubleshooting: Service Application Won't Install"
+description: Do troubleshooting if your service application won't install. Make sure the ServiceName property for the service class is set correctly.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "troubleshooting service applications"

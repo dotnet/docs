@@ -1,5 +1,6 @@
 ---
 title: ".NET Performance Tips"
+description: Explore performance tips to improve the execution speed of a program in .NET. See tips for boxing and unboxing, strings, and destructors.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "C# language, performance"

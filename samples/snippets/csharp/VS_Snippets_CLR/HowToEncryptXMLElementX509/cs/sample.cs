@@ -90,7 +90,7 @@ class Program
 
         ////////////////////////////////////////////////
         // Find the specified element in the XmlDocument
-        // object and create a new XmlElemnt object.
+        // object and create a new XmlElement object.
         ////////////////////////////////////////////////
 
         // <snippet8>

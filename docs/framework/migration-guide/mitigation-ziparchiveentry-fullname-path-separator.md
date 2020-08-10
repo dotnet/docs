@@ -1,5 +1,6 @@
 ---
 title: "Mitigation: ZipArchiveEntry.FullName Path Separator"
+description: Learn how the path separator for the ZipArchiveEntry.FullName property has changed starting with apps that target .NET Framework 4.6.1.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application compatibility"

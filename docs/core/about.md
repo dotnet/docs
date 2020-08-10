@@ -5,6 +5,9 @@ ms.date: 03/26/2020
 ---
 # .NET Core overview
 
+> [!div class="button"]
+> [Download .NET Core](https://dotnet.microsoft.com/download)
+
 .NET Core has the following characteristics:
 
 - **Cross platform:** Runs on Windows, macOS, and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).

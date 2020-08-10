@@ -1,5 +1,6 @@
 ---
 title: "Scope of Default Namespaces in C#"
+description: Learn how query in default XML namespaces in LINQ to XML in C#. Use an XNamespace variable and the local name to make a qualified name for the query.
 ms.date: 07/20/2015
 ms.assetid: fe826236-830f-457a-9027-7ad62c909fae
 ---

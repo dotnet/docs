@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Tree Overview"
+description: Read an overview about UI Automation trees. Learn about different views of a UI Automation tree, such as raw view, control view, and content view.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "automation tree"

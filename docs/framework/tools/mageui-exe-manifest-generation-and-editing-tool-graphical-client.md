@@ -1,5 +1,6 @@
 ---
 title: "MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)"
+description: Explore MageUI.exe, the Manifest Generation and Editing Tool, Graphical Client. Create, edit, and sign deployment and application manifests with this GUI tool.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Manifest Generation and Editing tool"

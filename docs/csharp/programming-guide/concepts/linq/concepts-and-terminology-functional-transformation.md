@@ -1,5 +1,6 @@
 ---
 title: "Concepts and Terminology (Functional Transformation) (C#)"
+description: Functional programming capabilities make it easier to transform XML. Learn about concepts and terminology of pure functional transformations in C#.
 ms.date: 07/20/2015
 ms.assetid: 03defb3a-7e17-4ab1-8efa-4dd66621e860
 ---
@@ -48,7 +49,7 @@ For more information, see [Standard Query Operators Overview (C#)](./standard-qu
 lambda expression \
 Essentially, an inline anonymous function that can be used wherever a delegate type is expected. This is a simplified definition of lambda expressions, but it is adequate for the purposes of this tutorial.
 
-For more information about, see [Lambda Expressions](../../statements-expressions-operators/lambda-expressions.md).
+For more information about, see [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md).
 
 collection \
 A structured set of data, usually of a uniform type. To be compatible with LINQ, a collection must implement the <xref:System.Collections.IEnumerable> interface or the <xref:System.Linq.IQueryable> interface (or one of their generic counterparts, <xref:System.Collections.Generic.IEnumerator%601> or <xref:System.Linq.IQueryable%601>).

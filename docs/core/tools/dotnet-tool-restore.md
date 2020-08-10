@@ -14,7 +14,7 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool restore <PACKAGE_NAME>
+dotnet tool restore
     [--configfile <FILE>] [--add-source <SOURCE>]
     [tool-manifest <PATH_TO_MANIFEST_FILE>] [--disable-parallel]
     [--ignore-failed-sources] [--no-cache] [--interactive]
@@ -26,12 +26,6 @@ dotnet tool restore -h|--help
 ## Description
 
 The `dotnet tool restore` command finds the tool manifest file that is in scope for the current directory and installs the tools that are listed in it. For information about manifest files, see [Install a local tool](global-tools.md#install-a-local-tool) and [Invoke a local tool](global-tools.md#invoke-a-local-tool).
-
-## Arguments
-
-- **`PACKAGE_NAME`**
-
-Name/ID of the NuGet package that contains the .NET Core tool to install.
 
 ## Options
 

@@ -1,5 +1,6 @@
 ---
 title: "How to retrieve the value of an element (LINQ to XML) (C#)"
+description: Learn how to get the value of elements. See examples using string casting, integer casting, and the Value property.
 ms.date: 07/20/2015
 ms.assetid: 4228c007-07c9-4cf2-a45b-e7074c109581
 ---

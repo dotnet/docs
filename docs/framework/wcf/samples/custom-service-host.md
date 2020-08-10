@@ -139,7 +139,7 @@ public class SelfDescribingServiceHostFactory : ServiceHostFactory
   
  To use a custom factory with a service implementation, we must add some additional metadata to the service's .svc file.  
   
-```xml
+```aspx-csharp
 <% @ServiceHost Service="Microsoft.ServiceModel.Samples.CalculatorService"
                Factory="Microsoft.ServiceModel.Samples.SelfDescribingServiceHostFactory"
                language=c# Debug="true" %>

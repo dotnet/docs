@@ -1,7 +1,7 @@
 ### YamlMime:Hub 
 
 title: Azure for .NET developers 
-summary: Find the information you need to use .NET on Azure 
+summary: .NET 💜 Azure
 brand: dotnet
 
 metadata: 
@@ -9,104 +9,202 @@ metadata:
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
   ms.prod: azure-dotnet
-  ms.date: 03/04/2020
+  ms.date: 07/31/2020
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new 
   items:
+    - itemType: overview 
+      title: Introduction to Azure and .NET
+      url: intro.md
     - itemType: quickstart 
       title: Deploy an ASP.NET web app
       url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
-    - itemType: quickstart 
-      title: Build a serverless function 
-      url: https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio
-    - itemType: quickstart 
-      title: ASP.NET Core and Docker 
-      url: https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2019
-    - itemType: learn
-      title: Azure fundamentals
-      url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
+    - itemType: quickstart
+      title: Build a serverless function
+      url: /azure/azure-functions/functions-create-your-first-function-visual-studio
     - itemType: tutorial
+      title: ASP.NET Core and Docker
+      url: /visualstudio/containers/container-tools?view=vs-2019
+    - itemType: deploy
       title: Deploy a .NET app with Azure DevOps
       url: https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
     - itemType: tutorial
-      title: Full stack authentication end-to-end in App Service
+      title: Authentication end-to-end in App Service
       url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-auth-aad
     - itemType: learn 
       title: Secure custom APIs with Microsoft Identity
       url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
-    - itemType: download
-      title: Sample code
-      url: https://docs.microsoft.com/samples/browse/?products=azure&languages=csharp%2Caspx-csharp%2Cfsharp%2Cvb
+    - itemType: learn
+      title: Azure fundamentals
+      url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
 
 conceptualContent:
+  title: Featured content
+  summary: Learn to develop .NET apps leveraging a variety of Azure services.
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
   items:
-    - title: Build web apps
+    - title: Create web apps
       links:
+        - itemType: overview
+          text: App Service overview
+          url: /azure/app-service/overview
+        - itemType: overview
+          text: Azure Functions overview
+          url: /azure/azure-functions/functions-overview
         - itemType: learn
-          text: Host a web application with Azure App Service
-          url: https://docs.microsoft.com/learn/modules/host-a-web-app-with-azure-app-service/
-        - itemType: tutorial
-          text: ASP.NET Core web app with App Service and Azure SQL Database
-          url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
-        - itemType: tutorial
-          text: Managed identity with ASP.NET and Azure SQL Database
-          url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-connect-msi
-        - itemType: tutorial
-          text: Web API with CORS in Azure App Service
-          url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-rest-api
+          text: Host a web app with Azure App Service
+          url: /learn/modules/host-a-web-app-with-azure-app-service/
+        - itemType: learn
+          text: Develop, test, and deploy an Azure Function with Visual Studio
+          url: /learn/modules/develop-test-deploy-azure-functions-with-visual-studio/
         - itemType: learn
           text: Publish and manage your APIs with Azure API Management
-          url: https://docs.microsoft.com/learn/modules/publish-manage-apis-with-azure-api-management/
-    - title: Build cloud native apps
+          url: /learn/modules/publish-manage-apis-with-azure-api-management/
+        - itemType: tutorial
+          text: ASP.NET Core web app with App Service and Azure SQL Database
+          url: /azure/app-service/app-service-web-tutorial-dotnet-sqldatabase
+        - itemType: tutorial
+          text: Managed identity with ASP.NET and Azure SQL Database
+          url: /azure/app-service/app-service-web-tutorial-connect-msi
+        - itemType: tutorial
+          text: Web API with CORS in Azure App Service
+          url: /azure/app-service/app-service-web-tutorial-rest-api
+    - title: Create cloud native apps
       links:
         - itemType: quickstart
           text: Run and debug a microservice in Kubernetes
-          url: https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio
-        - itemType: tutorial
-          text: ASP.NET Core app with Visual Studio container tools
-          url: https://docs.microsoft.com/visualstudio/containers/container-tools?view=vs-2019
+          url: /azure/dev-spaces/quickstart-netcore-visualstudio
+        - itemType: learn
+          text: Create and deploy a cloud-native ASP.NET Core microservice
+          url: /learn/modules/microservices-aspnet-core/
         - itemType: tutorial
           text: Deploy and debug multiple containers in AKS
-          url: https://docs.microsoft.com/azure/dev-spaces/multi-service-netcore-visualstudio
+          url: /azure/dev-spaces/multi-service-netcore-visualstudio
         - itemType: tutorial
           text: Dynamic configuration and feature flags using Azure App Config
-          url: https://docs.microsoft.com/azure/azure-app-configuration/use-feature-flags-dotnet-core
+          url: /azure/azure-app-configuration/use-feature-flags-dotnet-core
         - itemType: how-to-guide
           text: Deploy a .NET Core app to Azure Container Registry
-          url: https://docs.microsoft.com/en-us/visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
-    - title: Work with storage & data
+          url: /visualstudio/containers/hosting-web-apps-in-docker?view=vs-2019
+    - title: Create mobile apps
       links:
         - itemType: learn
-          text: Develop and configure an ASP.NET application that queries an Azure SQL database
-          url: https://docs.microsoft.com/learn/modules/develop-app-that-queries-azure-sql/
-        - itemType: learn
-          text: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
-          url: https://docs.microsoft.com/learn/modules/build-cosmos-db-app-with-vscode/
-        - itemType: learn
-          text: Store application data with Azure Blob storage
-          url: https://docs.microsoft.com/learn/modules/store-app-data-with-azure-blob-storage/
+          text: Consume REST services from Azure in Xamarin apps
+          url: /learn/modules/consume-rest-services/
+        - itemType: quickstart
+          text: Create a Xamarin.Forms app with .NET SDK and Azure Cosmos DB's API for MongoDB
+          url: /azure/cosmos-db/create-mongodb-xamarin
+        - itemType: quickstart
+          text: Azure Blob storage client library with Xamarin.Forms
+          url: /azure/storage/blobs/storage-quickstart-blobs-xamarin
         - itemType: tutorial
-          text: Create an ASP.NET web app with the Azure Cosmos DB SQL API
-          url: https://docs.microsoft.com/azure/cosmos-db/sql-api-dotnet-application
+          text: Send push notifications to Xamarin.Forms apps using ASP.NET Core and Azure Notification Hubs
+          url: /azure/notification-hubs/notification-hubs-backend-service-xamarin-forms
+        - itemType: concept
+          text: Add authentication and manage user identities in your mobile apps
+          url: /azure/developer/mobile-apps/authentication
+    - title: Work with storage & data
+      links:
+        - itemType: concept    
+          text: Choose the right data storage option
+          url: /azure/architecture/guide/technology-choices/data-store-overview
+        - itemType: quickstart
+          text: Use .NET to query a Azure SQL Database or Azure SQL Managed Instance
+          url: /azure/azure-sql/database/connect-query-dotnet-core
         - itemType: quickstart
           text: Use .NET to query Azure PostgreSQL
-          url: https://docs.microsoft.com/azure/postgresql/connect-csharp
+          url: /azure/postgresql/connect-csharp
+        - itemType: learn 
+          text: Develop and configure an ASP.NET application that queries an Azure SQL database
+          url: /learn/modules/develop-app-that-queries-azure-sql/
+        - itemType: learn
+          text: Build a .NET Core app for Azure Cosmos DB in Visual Studio Code
+          url: /learn/modules/build-cosmos-db-app-with-vscode/
+        - itemType: learn
+          text: Store application data with Azure Blob storage
+          url: /learn/modules/store-app-data-with-azure-blob-storage/
+        - itemType: learn
+          text: Persist and retrieve relational data with Entity Framework Core
+          url: /learn/modules/persist-data-ef-core/
+        - itemType: tutorial
+          text: Connect to and query an Azure Database for PostgreSQL database
+          url: /azure/postgresql/connect-csharp
     - title: Authentication and security
       links:
         - itemType: overview
-          text: Microsoft identity platform (Azure AD)
-          url: https://docs.microsoft.com/azure/active-directory/develop/
-        - itemType: tutorial
-          text: Use Azure Key Vault with ASP.NET Core
-          url: https://docs.microsoft.com/azure/key-vault/tutorial-net-create-vault-azure-web-app
-        - itemType: tutorial
-          text: Integrate Azure AD B2C with a web API
-          url: https://docs.microsoft.com/azure/active-directory-b2c/tutorial-single-page-app-webapi
+          text: Microsoft identity platform (Azure AD) overview
+          url: /azure/active-directory/develop/
+        - itemType: learn
+          text: Secure your application by using OpenID Connect and Azure AD
+          url: /learn/modules/secure-app-with-oidc-and-azure-ad/
+        - itemType: learn
+          text: Secure custom APIs with Microsoft Identity
+          url: /learn/modules/identity-secure-custom-api/
+        - itemType: learn
+          text: Secure an ASP.NET Core web app with the ASP.NET Identity framework
+          url: /learn/modules/secure-aspnet-core-identity/
         - itemType: tutorial
           text: Add sign-in to Microsoft to an ASP.NET web app
-          url: https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-asp-webapp
+          url: /azure/active-directory/develop/tutorial-v2-asp-webapp
+        - itemType: tutorial
+          text: End-to-end authentication in App Service
+          url: /azure/app-service/app-service-web-tutorial-auth-aad
+        - itemType: tutorial
+          text: Use Azure Key Vault with ASP.NET Core
+          url: /azure/key-vault/tutorial-net-create-vault-azure-web-app
+        - itemType: tutorial
+          text: Integrate Azure AD B2C with a web API
+          url: /azure/active-directory-b2c/tutorial-single-page-app-webapi
+        - itemType: reference
+          text: Azure Identity client library for .NET
+          url: /dotnet/api/overview/azure/identity-readme?view=azure-dotnet
+    - title: Messaging on Azure
+      links:
+        - itemType: overview
+          text: Storing messages with Azure queues
+          url: /azure/storage/queues/storage-queues-introduction
+        - itemType: overview
+          text: Inter-application messaging with Azure Service Bus
+          url: /azure/service-bus-messaging
+        - itemType: overview
+          text: Streaming big data with Event Hubs
+          url: /azure/event-hubs/event-hubs-about
+        - itemType: overview
+          text: Building event-based applications with Event Grid
+          url: /azure/event-grid/overview
+        - itemType: quickstart
+          text: Use Azure Queue Storage
+          url: /azure/storage/queues/storage-dotnet-how-to-use-queues?tabs=dotnet
+        - itemType: quickstart
+          text: Use Azure Service Bus queues
+          url: /azure/service-bus-messaging/service-bus-dotnet-get-started-with-queues
+        - itemType: quickstart
+          text: Ingest data in real-time through Azure Event Hubs
+          url: /azure/event-hubs/event-hubs-dotnet-standard-getstarted-send
+        - itemType: quickstart
+          text: Route custom events with Event Grid
+          url: /azure/event-grid/custom-event-quickstart
+    - title: Diagnostics and monitoring
+      links:
+        - itemType: overview
+          text: Azure Monitor
+          url: /azure/azure-monitor/overview
+        - itemType: learn
+          text: Capture and view page load times in your Azure web app
+          url: /learn/modules/capture-page-load-times-application-insights/
+        - itemType: how-to-guide
+          text: Troubleshoot ASP.NET Core on Azure App Service and IIS
+          url: /aspnet/core/test/troubleshoot-azure-iis
+        - itemType: how-to-guide
+          text: Application Insights with .NET Core ILogger
+          url: /azure/azure-monitor/app/ilogger
+        - itemType: how-to-guide
+          text: Application Insights for Worker Service applications
+          url: /azure/azure-monitor/app/worker-service
+        - itemType: how-to-guide
+          text: Troubleshoot an app in Azure App Service using Visual Studio
+          url: /azure/app-service/troubleshoot-dotnet-visual-studio
     - title: Migration
       links:
         - itemType: concept
@@ -121,52 +219,26 @@ conceptualContent:
         - itemType: how-to-guide
           text: Migrate a SQL Server database to Azure
           url: ./migration/sql.md
-    - title: Free .NET and Azure training
+    - title: Azure SDK for .NET
       links:
-        - itemType: learn
-          text: Microsoft Learn
-          url: https://docs.microsoft.com/learn/
-        - itemType: video
-          text: "Pluralsight: Developing with .NET and C# on Azure"
-          url: https://www.pluralsight.com/courses/developing-dotnet-microsoft-azure-getting-started?twoid=d6abac77-7dcc-4d33-9e03-f85e78989f02
-        - itemType: video
-          text: .NET 101 video series
-          url: https://dot.net/videos
-    - title: .NET architectural guides
-      links:
-        - itemType: overview
-          text: Introduction to Azure and .NET
-          url: intro.md
-        - itemType: learn
-          text: Architect modern applications in Azure
-          url: https://docs.microsoft.com/learn/paths/architect-modern-apps/
-        - itemType: architecture
-          text: ".NET Microservices: Architecture for containerized .NET apps"
-          url: https://docs.microsoft.com/dotnet/architecture/microservices/
-        - itemType: architecture
-          text: Architect modern web applications with ASP.NET Core and Azure
-          url: https://docs.microsoft.com/dotnet/architecture/modern-web-apps-azure/
-        - itemType: architecture
-          text: "Containerized Docker application lifecycle with Microsoft platform and tools"
-          url: https://docs.microsoft.com/dotnet/architecture/containerized-lifecycle/
-        - itemType: architecture
-          text: "Modernize existing .NET applications with Azure cloud and Windows containers"
-          url: https://docs.microsoft.com/dotnet/architecture/modernize-with-azure-containers/
-      footerLink:
-        url: https://docs.microsoft.com/dotnet/architecture/
-        text: See more
-tools:
-  title: Azure SDK for .NET 
-  items:
-    - imageSrc: https://www.nuget.org/Content/gallery/img/default-package-icon.svg
-      title: "NuGet packages"
-      url: https://www.nuget.org/packages?q=windowsazureofficial
-    - imageSrc: https://docs.microsoft.com/en-us/media/common/i_reference.svg
-      title: "Documentation"
-      url: ./sdk/index.yml
-    - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
-      title: "Tools"
-      url: ./sdk/tools.md
+        - itemType: download
+          text: Packages
+          url: packages.md
+        - itemType: concept
+          text: Authentication for apps
+          url: authentication.md
+        - itemType: concept
+          text: Logging
+          url: logging.md
+        - itemType: sample
+          text: SDK example app
+          url: /samples/dotnet/samples/azure-identity-resource-management-storage/
+        - itemType: download
+          text: Tools
+          url: tools.md
+        - itemType: reference
+          text: API reference
+          url: /dotnet/api/overview/azure/?view=azure-dotnet
 
 additionalContent:
   sections: 
@@ -175,9 +247,9 @@ additionalContent:
         - title: .NET
           links:
             - text: .NET documentation
-              url: https://docs.microsoft.com/dotnet
+              url: /dotnet
             - text: ASP.NET documentation
-              url: https://docs.microsoft.com/aspnet
+              url: /aspnet
         - title: Webcasts and shows
           links:
             - text: Azure Friday
@@ -186,8 +258,10 @@ additionalContent:
               url: https://channel9.msdn.com/Shows/The-Cloud-Native-Show
             - text: On .NET
               url: https://channel9.msdn.com/Shows/On-NET
-            - text: ASP.NET Community Standup
+            - text: .NET Community Standup
               url: https://dotnet.microsoft.com/platform/community/standup
+            - text: The .NET Docs Show
+              url: https://dotnetdocs.dev
         - title: Open Source
           links:
             - text: Azure SDK for .NET
@@ -198,4 +272,4 @@ additionalContent:
               url: https://github.com/dotnet/
 
   # footer (optional)
-  footer: "Contribute to .NET docs. Read our [contributor guide](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute)."
+  footer: "Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute)."

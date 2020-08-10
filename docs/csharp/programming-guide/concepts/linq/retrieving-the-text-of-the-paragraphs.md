@@ -1,5 +1,6 @@
 ---
 title: "Retrieving the Text of the Paragraphs (C#)"
+description: Learn how to use LINQ queries to get the text of each paragraph in a WordprocessingML document as a string in C#. This example uses chained queries.
 ms.date: 07/20/2015
 ms.assetid: 127d635e-e559-408f-90c8-2bb621ca50ac
 ---

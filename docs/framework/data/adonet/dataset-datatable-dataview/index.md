@@ -5,9 +5,10 @@ ms.date: "03/30/2017"
 ms.assetid: 6d4c4b69-8919-4224-8a65-6cca1c61b48f
 ---
 # DataSets, DataTables, and DataViews
+
 The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of data that provides a consistent relational programming model regardless of the source of the data it contains. A <xref:System.Data.DataSet> represents a complete set of data including the tables that contain, order, and constrain the data, as well as the relationships between the tables.  
   
- There are several ways of working with a <xref:System.Data.DataSet>, which can be applied independently or in combination. You can:  
+There are several ways of working with a <xref:System.Data.DataSet>, which can be applied independently or in combination. You can:  
   
 - Programmatically create a <xref:System.Data.DataTable>, <xref:System.Data.DataRelation>, and <xref:System.Data.Constraint> within a <xref:System.Data.DataSet> and populate the tables with data.  
   
@@ -15,9 +16,13 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
   
 - Load and persist the <xref:System.Data.DataSet> contents using XML. For more information, see [Using XML in a DataSet](using-xml-in-a-dataset.md).  
   
- A strongly typed <xref:System.Data.DataSet> can also be transported using an XML Web service. The design of the <xref:System.Data.DataSet> makes it ideal for transporting data using XML Web services. For an overview of XML Web services, see [XML Web Services Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w9fdtx28(v=vs.100)). For an example of consuming a <xref:System.Data.DataSet> from an XML Web service, see [Consuming a DataSet from an XML Web Service](consuming-a-dataset-from-an-xml-web-service.md).  
+A strongly typed <xref:System.Data.DataSet> can also be transported using an XML Web service. The design of the <xref:System.Data.DataSet> makes it ideal for transporting data using XML Web services. For an overview of XML Web services, see [XML Web Services Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/w9fdtx28(v=vs.100)). For an example of consuming a <xref:System.Data.DataSet> from an XML Web service, see [Consuming a DataSet from an XML Web Service](consuming-a-dataset-from-an-xml-web-service.md).  
   
-## In This Section  
+## In this section
+
+ [Security guidance](security-guidance.md)  
+ Provides security guidance for <xref:System.Data.DataSet> and <xref:System.Data.DataTable>.
+
  [Creating a DataSet](creating-a-dataset.md)  
  Describes the syntax for creating an instance of a <xref:System.Data.DataSet>.  
   
@@ -57,7 +62,8 @@ The ADO.NET <xref:System.Data.DataSet> is a memory-resident representation of da
  [Consuming a DataSet from an XML Web Service](consuming-a-dataset-from-an-xml-web-service.md)  
  Describes how to create an XML Web service that uses a <xref:System.Data.DataSet> to transport data.  
   
-## Related Sections  
+## Related sections
+
  [What's New in ADO.NET](../whats-new.md)  
  Introduces features that are new in ADO.NET.  
   

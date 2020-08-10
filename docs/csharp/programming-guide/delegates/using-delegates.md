@@ -1,5 +1,6 @@
 ---
 title: "Using Delegates - C# Programming Guide"
+description: Learn how to use delegates. Delegates are an object-oriented, type safe, and secure type that safely encapsulates a method.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "delegates [C#], how to use"

@@ -1,5 +1,6 @@
 ---
 title: "Performance of Chained Queries (LINQ to XML) (C#)"
+description: Learn about the performance of chained queries. A chained query is a query that uses another query as its source.
 ms.date: 07/20/2015
 ms.assetid: b2f1d715-8946-4dc0-8d56-fb3d1bba54a6
 ---

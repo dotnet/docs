@@ -1,5 +1,6 @@
 ---
 title: "In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (C#)"
+description: These examples change the shape of an XML document by modifying it in place and by using LINQ to XML functional construction in C#.
 ms.date: 07/20/2015
 ms.assetid: b5afc31d-a325-4ec6-bf17-0ff90a20ffca
 ---

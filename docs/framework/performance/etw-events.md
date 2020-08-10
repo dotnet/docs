@@ -1,5 +1,6 @@
 ---
 title: "ETW Events in the .NET Framework"
+description: See article links about event tracing for Windows (ETW) in .NET. ETW is a high-performance, low-overhead, scalable tracing system.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ".NET Framework ETW events"

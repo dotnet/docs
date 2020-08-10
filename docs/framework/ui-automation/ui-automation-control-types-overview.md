@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Control Types Overview"
+description: Read an overview of UI Automation control types, which are well-known identifiers that can be used to indicate what kind of control an element represents.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, control types"

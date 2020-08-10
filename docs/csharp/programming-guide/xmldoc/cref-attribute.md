@@ -1,5 +1,6 @@
 ---
 title: "cref attribute - C# programming guide"
+description: Learn about the cref attribute. The cref attribute means "code reference", and specifies that the inner text of the tag is a code element.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "cref [C#]"

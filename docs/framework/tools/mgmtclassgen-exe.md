@@ -1,5 +1,6 @@
 ---
 title: "Mgmtclassgen.exe (Management Strongly Typed Class Generator)"
+description: Understand Mgmtclassgen.exe, the Management Strongly Typed Class Generator. This tool lets you quickly generate an early-bound managed class for a WMI class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Delegates - C# Programming Guide"
+description: A delegate in C# is a type that refers to methods with a parameter list and return type. Delegates are used to pass methods as arguments to other methods.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, delegates"
@@ -33,7 +34,7 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) is a typ
   
 - Methods do not have to match the delegate type exactly. For more information, see [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md).  
   
-- C# version 2.0 introduced the concept of [anonymous methods](../../language-reference/operators/delegate-operator.md), which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types. Together, these features are now known as anonymous functions. For more information about lambda expressions, see [Lambda expressions](../statements-expressions-operators/lambda-expressions.md).
+- C# version 2.0 introduced the concept of [anonymous methods](../../language-reference/operators/delegate-operator.md), which allow code blocks to be passed as parameters in place of a separately defined method. C# 3.0 introduced lambda expressions as a more concise way of writing inline code blocks. Both anonymous methods and lambda expressions (in certain contexts) are compiled to delegate types. Together, these features are now known as anonymous functions. For more information about lambda expressions, see [Lambda expressions](../../language-reference/operators/lambda-expressions.md).
   
 ## In This Section  
   

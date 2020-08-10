@@ -84,7 +84,7 @@ Class Program
         End If
         '//////////////////////////////////////////////
         ' Find the specified element in the XmlDocument
-        ' object and create a new XmlElemnt object.
+        ' object and create a new XmlElement object.
         '//////////////////////////////////////////////
         ' <snippet5>
         Dim elementToEncrypt As XmlElement = Doc.GetElementsByTagName(EncryptionElement)(0) '
@@ -94,7 +94,7 @@ Class Program
             Throw New XmlException("The specified element was not found")
         End If
         ' </snippet5>
-        Dim sessionKey As RijndaelManaged = Nothing
+        Dim sessionKey As Aes = Nothing
 
         Try
             '////////////////////////////////////////////////
@@ -103,9 +103,8 @@ Class Program
             ' a new random symmetric key.
             '////////////////////////////////////////////////
             ' <snippet6>
-            ' Create a 256 bit Rijndael key.
-            sessionKey = New RijndaelManaged()
-            sessionKey.KeySize = 256
+            ' Create an AES key.
+            sessionKey = Aes.Create()
             ' </snippet6>
             ' <snippet7>
             Dim eXml As New EncryptedXml()

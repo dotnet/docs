@@ -1,10 +1,11 @@
 ---
 title: Choosing between anonymous and tuple types
 description: Learn when it's appropriate to choose between anonymous types, and tuple type.
+author: IEvangelist
+ms.author: dapine
 ms.date: 07/01/2020
 ms.technology: dotnet-standard
 ---
-
 # Choosing between anonymous and tuple types
 
 Choosing the appropriate type involves considering its usability, performance, and tradeoffs compared to other types. Anonymous types have been available since C# 3.0, while generic <xref:System.Tuple%602?displayProperty=nameWithType> types were introduced with .NET Framework 4.0. Since then new options have been introduced with language level support, such as <xref:System.ValueTuple%602?displayProperty=nameWithType> - which as the name implies, provide a value type with the flexibility of anonymous types. In this article, you'll learn when it's appropriate to choose one type over the other.
@@ -83,12 +84,7 @@ foreach (var (formatted, ticks) in
 }
 ```
 
-C# provides language support of tuples with the <xref:System.ValueTuple> type, and semantics for:
-
-- [Tuple assignment](../../csharp/tuples.md#assignment-and-tuples)
-- [Tuple deconstruction](../../csharp/deconstruct.md) (not limited to tuples)
-- [Tuple equality checks](../../csharp/tuples.md#equality-and-tuples)
-- [Tuple projection initializers](../../csharp/tuples.md#tuple-projection-initializers)
+For more information about tuples, see [Tuple types (C# reference)](../../csharp/language-reference/builtin-types/value-tuples.md) or [Tuples (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md).
 
 The previous examples are all functionally equivalent, however; there are slight differences in their usability and their underlying implementations.
 
@@ -98,7 +94,7 @@ You might want to always use <xref:System.ValueTuple> over <xref:System.Tuple>, 
 
 ### Key differences
 
-| Name                     | Access modifier | Type     | Custom property name | Deconstruction support | Expression tree support |
+| Name                     | Access modifier | Type     | Custom member name | Deconstruction support | Expression tree support |
 |--------------------------|-----------------|----------|----------------------|------------------------|-------------------------|
 | Anonymous types          | `internal`      | `class`  | ✔️                   | ❌                     | ✔️                     |
 | <xref:System.Tuple>      | `public`        | `class`  | ❌                   | ❌                     | ✔️                     |
@@ -120,5 +116,6 @@ As a developer choosing between tuples and anonymous types, there are several fa
 
 - [Anonymous types](../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
 - [Expression trees](../../csharp/expression-trees.md)
-- [Tuple types](../../csharp/tuples.md)
+- [Tuple types (C# reference)](../../csharp/language-reference/builtin-types/value-tuples.md)
+- [Tuples (Visual Basic)](../../visual-basic/programming-guide/language-features/data-types/tuples.md)
 - [Type design guidelines](../design-guidelines/type.md)

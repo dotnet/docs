@@ -1,33 +1,33 @@
 ---
 title: "How to: Encrypt XML Elements with Asymmetric Keys"
-ms.date: "03/30/2017"
+ms.date: 07/14/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "cryptography [.NET Framework], asymmetric keys"
+  - "cryptography [.NET], asymmetric keys"
   - "AES algorithm"
-  - "System.Security.Cryptography.RSACryptoServiceProvider class"
-  - "asymmetric keys [.NET Framework]"
+  - "System.Security.Cryptography.RSA class"
+  - "asymmetric keys [.NET]"
   - "System.Security.Cryptography.EncryptedXml class"
   - "XML encryption"
   - "key containers"
   - "Advanced Encryption Standard algorithm"
-  - "Rijndael"
-  - "encryption [.NET Framework], asymmetric keys"
+  - "encryption [.NET], asymmetric keys"
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
 ---
 # How to: Encrypt XML Elements with Asymmetric Keys
+
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption is a standard way to exchange or store encrypted XML data, without worrying about the data being easily read.  For more information about the XML Encryption standard, see the World Wide Web Consortium (W3C) specification for XML Encryption located at <https://www.w3.org/TR/xmldsig-core/>.  
   
  You can use XML Encryption to replace any XML element or document with an <`EncryptedData`> element that contains the encrypted XML data.  The <`EncryptedData`> element can also contain sub elements that include information about the keys and processes used during encryption.  XML Encryption allows a document to contain multiple encrypted elements and allows an element to be encrypted multiple times.  The code example in this procedure shows how to create an <`EncryptedData`> element along with several other sub elements that you can use later during decryption.  
   
- This example encrypts an XML element using two keys.  It generates an RSA public/private key pair and saves the key pair to a secure key container.  The example then creates a separate session key using the Advanced Encryption Standard (AES) algorithm, also called the Rijndael algorithm.  The example uses the AES session key to encrypt the XML document and then uses the RSA public key to encrypt the AES session key.  Finally, the example saves the encrypted AES session key and the encrypted XML data to the XML document within a new <`EncryptedData`> element.  
+ This example encrypts an XML element using two keys.  It generates an RSA public/private key pair and saves the key pair to a secure key container.  The example then creates a separate session key using the Advanced Encryption Standard (AES) algorithm.  The example uses the AES session key to encrypt the XML document and then uses the RSA public key to encrypt the AES session key.  Finally, the example saves the encrypted AES session key and the encrypted XML data to the XML document within a new <`EncryptedData`> element.  
   
  To decrypt the XML element, you retrieve the RSA private key from the key container, use it to decrypt the session key, and then use the session key to decrypt the document.  For more information about how to decrypt an XML element that was encrypted using this procedure, see [How to: Decrypt XML Elements with Asymmetric Keys](how-to-decrypt-xml-elements-with-asymmetric-keys.md).  
   
- This example is appropriate for situations where multiple applications need to share encrypted data or where an application needs to save encrypted data between the times that it runs.  
+ This example is appropriate for situations where multiple applications need to share encrypted data or where an application needs to save encrypted data between the times that it runs.
   
 ### To encrypt an XML element with an asymmetric key  
   
@@ -51,7 +51,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
      [!code-csharp[HowToEncryptXMLElementAsymmetric#5](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs/sample.cs#5)]
      [!code-vb[HowToEncryptXMLElementAsymmetric#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#5)]  
   
-5. Create a new session key using the <xref:System.Security.Cryptography.RijndaelManaged> class.  This key will encrypt the XML element, and then be encrypted itself and placed in the XML document.  
+5. Create a new session key using the <xref:System.Security.Cryptography.Aes> class.  This key will encrypt the XML element, and then be encrypted itself and placed in the XML document.  
   
      [!code-csharp[HowToEncryptXMLElementAsymmetric#6](../../../samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs/sample.cs#6)]
      [!code-vb[HowToEncryptXMLElementAsymmetric#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb/sample.vb#6)]  
@@ -123,18 +123,24 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## Compiling the Code  
   
-- To compile this example, you need to include a reference to `System.Security.dll`.  
+- In a project that targets .NET Framework, include a reference to `System.Security.dll`.
+
+- In a project that targets .NET Core or .NET 5, install NuGet package [System.Security.Cryptography.Xml](https://www.nuget.org/packages/System.Security.Cryptography.Xml).
   
 - Include the following namespaces: <xref:System.Xml>, <xref:System.Security.Cryptography>, and <xref:System.Security.Cryptography.Xml>.  
   
-## .NET Framework Security  
- Never store a symmetric cryptographic key in plaintext or transfer a symmetric key between machines in plaintext.  Additionally, never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md).  
+## .NET Security
+
+Never store a symmetric cryptographic key in plaintext or transfer a symmetric key between machines in plaintext.  Additionally, never store or transfer the private key of an asymmetric key pair in plaintext.  For more information about symmetric and asymmetric cryptographic keys, see [Generating Keys for Encryption and Decryption](generating-keys-for-encryption-and-decryption.md).  
   
- Never embed a key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.  
+Never embed a key directly into your source code.  Embedded keys can be easily read from an assembly using the [Ildasm.exe (IL Disassembler)](../../framework/tools/ildasm-exe-il-disassembler.md) or by opening the assembly in a text editor such as Notepad.  
   
- When you are done using a cryptographic key, clear it from memory by setting each byte to zero or by calling the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method of the managed cryptography class.  Cryptographic keys can sometimes be read from memory by a debugger or read from a hard drive if the memory location is paged to disk.  
+When you are done using a cryptographic key, clear it from memory by setting each byte to zero or by calling the <xref:System.Security.Cryptography.SymmetricAlgorithm.Clear%2A> method of the managed cryptography class.  Cryptographic keys can sometimes be read from memory by a debugger or read from a hard drive if the memory location is paged to disk.  
   
 ## See also
 
-- <xref:System.Security.Cryptography.Xml>
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)- <xref:System.Security.Cryptography.Xml>
 - [How to: Decrypt XML Elements with Asymmetric Keys](how-to-decrypt-xml-elements-with-asymmetric-keys.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

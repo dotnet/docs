@@ -1,5 +1,6 @@
 ---
 title: "Sample XSD File: Customers and Orders"
+description: This XSD file is used in various examples in the LINQ to XML documentation. It is a schema definition for a sample XML file that contains customers and orders.
 ms.date: 07/20/2015
 ms.assetid: ef9911a3-7ac4-44fd-b36e-a0c0ad0a157d
 ---

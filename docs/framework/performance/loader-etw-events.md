@@ -1,5 +1,6 @@
 ---
 title: "Loader ETW Events"
+description: Review loader ETW events, which include application domain events, CLR loader assembly events, module events, CLR domain module events, and module range events.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "loader events [.NET Framework]"

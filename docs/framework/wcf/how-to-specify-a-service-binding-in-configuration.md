@@ -71,7 +71,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
   
 4. Create a Service.svc file that contains the following line and place it in your Internet Information Services (IIS) virtual directory.  
   
-    ```  
+    ```aspx-csharp
     <%@ServiceHost language=c# Service="CalculatorService" %>
     ```  
   

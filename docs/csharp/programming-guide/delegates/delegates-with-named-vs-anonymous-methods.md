@@ -1,5 +1,6 @@
 ---
 title: "Delegates with Named vs. Anonymous Methods - C# Programming Guide"
+description: Learn about delegates with named vs. anonymous methods. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], with named vs. anonymous methods"

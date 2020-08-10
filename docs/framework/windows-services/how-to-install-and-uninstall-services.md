@@ -1,5 +1,6 @@
 ---
 title: "How to: Install and uninstall Windows services"
+description: See how to install and uninstall Windows services. If you're developing a Windows service with .NET, you can use InstallUtil.exe or PowerShell.
 ms.date: 02/05/2019
 helpviewer_keywords:
   - "Windows Service applications, deploying"

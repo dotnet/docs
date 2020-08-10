@@ -1,5 +1,6 @@
 ---
 title: "Instance Constructors - C# Programming Guide"
+description: Instance constructors in C# create and initialize any instance member variables when you use the new expression to create an object of a class.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "constructors [C#], instance constructors"

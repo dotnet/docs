@@ -1,5 +1,6 @@
 ---
 title: "marshalCleanupError MDA"
+description: Review the marshalCleanupError managed debugging assistant (MDA), which is invoked because an unexpected error occurred while cleaning up temporary structures.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "cleanup operations"

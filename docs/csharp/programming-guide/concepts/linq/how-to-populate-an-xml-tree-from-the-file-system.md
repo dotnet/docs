@@ -1,5 +1,6 @@
 ---
 title: "How to populate an XML tree from the file system (C#)"
+description: Learn how to populate an XML tree from the file system in C#. This example populates an XML, then queries the tree to calculate the total size of all files.
 ms.date: 07/20/2015
 ms.assetid: 2aa2ccac-4a22-47ae-9107-3bb8df232576
 ---

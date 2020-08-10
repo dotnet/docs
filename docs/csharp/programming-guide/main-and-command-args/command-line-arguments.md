@@ -1,5 +1,6 @@
 ---
 title: "Command-Line Arguments - C# Programming Guide"
+description: Learn about command-line arguments. See an example that uses command-line arguments in a console application.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "command-line arguments [C#]"

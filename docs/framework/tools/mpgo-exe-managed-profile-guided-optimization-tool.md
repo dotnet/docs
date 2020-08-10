@@ -1,5 +1,6 @@
 ---
 title: "Mpgo.exe (Managed Profile Guided Optimization Tool)"
+description: Use Mpgo.exe, the Managed Profile Guided Optimization Tool. With this tool, optimize native image assemblies created by the Native Image Generator (Ngen.exe).
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Mpgo.exe"

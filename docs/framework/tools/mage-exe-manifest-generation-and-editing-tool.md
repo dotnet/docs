@@ -1,5 +1,6 @@
 ---
 title: "Mage.exe (Manifest Generation and Editing Tool)"
+description: Get started with Mage.exe, the Manifest Generation and Editing Tool. This tool supports the creation and editing of application and deployment manifests.
 ms.date: "12/06/2018"
 helpviewer_keywords:
   - "Manifest Generation and Editing tool"

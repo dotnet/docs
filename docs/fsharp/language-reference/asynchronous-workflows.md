@@ -3,12 +3,12 @@ title: Asynchronous Workflows
 description: Learn about support in the F# programming language for performing computations asynchronously, which execute without blocking execution of other work.
 ms.date: 05/16/2016
 ---
-# Asynchronous Workflows
+# Asynchronous workflows
+
+This article describes support in F# for performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write applications that have UIs that remain responsive to users as the application performs other work.
 
 > [!NOTE]
-> The API reference link will take you to MSDN.  The docs.microsoft.com API reference is not complete.
-
-This topic describes support in F# for performing computations asynchronously, that is, without blocking execution of other work. For example, asynchronous computations can be used to write applications that have UIs that remain responsive to users as the application performs other work.
+> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 ## Syntax
 

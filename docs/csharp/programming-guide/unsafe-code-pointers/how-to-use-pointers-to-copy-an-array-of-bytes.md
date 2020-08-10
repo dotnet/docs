@@ -1,5 +1,6 @@
 ---
 title: "How to use pointers to copy an array of bytes - C# Programming Guide"
+description: Learn how to use pointers to copy an array of bytes. See a code example and additional available resources.
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "byte arrays [C#]"

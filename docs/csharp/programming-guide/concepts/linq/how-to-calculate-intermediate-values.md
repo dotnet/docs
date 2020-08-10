@@ -1,5 +1,6 @@
 ---
 title: "How to calculate intermediate values (C#)"
+description: This LINQ to XML example in C# shows how to calculate intermediate values that can be used in sorting, filtering, and selecting.
 ms.date: 07/20/2015
 ms.assetid: 7fd3001f-f8f9-4bce-879f-d4c7af8a04fe
 ---

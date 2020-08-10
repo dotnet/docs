@@ -1,5 +1,6 @@
 ---
 title: "Move a UI Automation Element"
+description: See example code that shows how to move a UI Automation element to a specified screen location. It uses the WindowPattern and TransformPattern control patterns.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

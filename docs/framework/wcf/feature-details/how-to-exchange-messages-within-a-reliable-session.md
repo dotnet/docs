@@ -28,7 +28,7 @@ For the source copy of this example, see [WS Reliable Session](../samples/ws-rel
 
 1. Create a *Service.svc* file that contains the line:
 
-   ```
+   ```aspx-csharp
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
 

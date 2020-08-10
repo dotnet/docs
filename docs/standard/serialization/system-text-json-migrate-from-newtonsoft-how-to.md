@@ -84,7 +84,7 @@ This is not an exhaustive list of `Newtonsoft.Json` features. The list includes 
 
 During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`. The default values are set in the [JsonOptions class](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L22-L28).
 
 ### Minimal character escaping
 
@@ -121,6 +121,8 @@ For more information about custom converter registration, see [Register a custom
 ### Maximum depth
 
 `Newtonsoft.Json` doesn't have a maximum depth limit by default. For <xref:System.Text.Json> there's a default limit  of 64, and it's configurable by setting <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
+
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, the default maximum depth limit is 32. The default value is the same as for model binding and is set in the [JsonOptions class](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L17-L20).
 
 ### JSON strings (property names and string values)
 
@@ -311,11 +313,27 @@ To make deserialization fail if no `Date` property is in the JSON, implement a c
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverter.cs)]
 
-Register this custom converter by [using an attribute on the POCO class](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
+Register this custom converter by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters?displayProperty=nameWithType> collection.
 
-If you follow this pattern, don't pass in the options object when recursively calling <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. The options object contains the <xref:System.Text.Json.JsonSerializerOptions.Converters%2A> collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
+This pattern of recursively calling the converter requires that you register the converter by using <xref:System.Text.Json.JsonSerializerOptions>, not by using an attribute. If you register the converter by using an attribute, the custom converter recursively calls into itself. The result is an infinite loop that ends in a stack overflow exception.
 
-The preceding converter code is a simplified example. Additional logic would be required if you need to handle attributes (such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options (such as custom encoders). Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
+When you register the converter by using the options object, avoid an infinite loop by not passing in the options object when recursively calling <xref:System.Text.Json.JsonSerializer.Serialize%2A> or <xref:System.Text.Json.JsonSerializer.Deserialize%2A>. The options object contains the <xref:System.Text.Json.JsonSerializerOptions.Converters%2A> collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
+
+There is an alternative pattern that can use `JsonConverterAttribute` registration on the class to be converted. In this approach, the converter code calls `Serialize` or `Deserialize` on a class that derives from the class to be converted. The derived class doesn't have a `JsonConverterAttribute` applied to it. In the following example of this alternative:
+
+* `WeatherForecastWithRequiredPropertyConverterAttribute` is the class to be deserialized and has the `JsonConverterAttribute` applied to it.
+* `WeatherForecastWithoutRequiredPropertyConverterAttribute` is the derived class that doesn't have the converter attribute.
+* The code in the converter calls `Serialize`and `Deserialize` on `WeatherForecastWithoutRequiredPropertyConverterAttribute` to avoid an infinite loop. There is a performance cost to this approach on serialization due to an extra object instantiation and copying of property values.
+
+Here are the `WeatherForecast*` types:
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecast.cs?name=SnippetWFWithReqPptyConverterAttr)]
+
+And here is the converter:
+
+[!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastRequiredPropertyConverterForAttributeRegistration.cs)]
+
+The required properties converter would require additional logic if you need to handle attributes such as [[JsonIgnore]](xref:System.Text.Json.Serialization.JsonIgnoreAttribute) or different options, such as custom encoders. Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
 
 * A property is missing from the JSON.
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
@@ -379,12 +397,14 @@ In <xref:System.Text.Json>, you can simulate callbacks by writing a custom conve
 
 [!code-csharp[](snippets/system-text-json-how-to/csharp/WeatherForecastCallbacksConverter.cs)]
 
-Register this custom converter by [using an attribute on the class](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
+Register this custom converter by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
 If you use a custom converter that follows the preceding sample:
 
 * The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
-* Don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the converter will be used, making an infinite loop that results in a stack overflow exception.
+* Avoid an infinite loop by registering the converter in the options object and not passing in the options object when recursively calling `Serialize` or `Deserialize`.
+
+For more information about custom converters that recursively call `Serialize` or `Deserialize`, see the [Required properties](#required-properties) section earlier in this article.
 
 ### Public and non-public fields
 

@@ -1,5 +1,6 @@
 ---
 title: "Tlbimp.exe (Type Library Importer)"
+description: Use Tlbimp.exe, the Type Library Importer. This tool converts type definitions found within a COM type library into equivalent definitions in a CLR assembly.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "type libraries [.NET Framework], importing"

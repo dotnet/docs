@@ -37,7 +37,7 @@ The major features of C# 1.0 included:
 - [Events](../events-overview.md)
 - [Properties](../properties.md)
 - [Delegates](../delegates-overview.md)
-- [Expressions](../programming-guide/statements-expressions-operators/expressions.md)
+- [Operators and expressions](../language-reference/operators/index.md)
 - [Statements](../programming-guide/statements-expressions-operators/statements.md)
 - [Attributes](../programming-guide/concepts/attributes/index.md)
 
@@ -78,7 +78,7 @@ C# version 3.0 came in late 2007, along with Visual Studio 2008, though the full
 - [Auto-implemented properties](../programming-guide/classes-and-structs/auto-implemented-properties.md)
 - [Anonymous types](../programming-guide/classes-and-structs/anonymous-types.md)
 - [Query expressions](../linq/query-expression-basics.md)
-- [Lambda expressions](../programming-guide/statements-expressions-operators/lambda-expressions.md)
+- [Lambda expressions](../language-reference/operators/lambda-expressions.md)
 - [Expression trees](../expression-trees.md)
 - [Extension methods](../programming-guide/classes-and-structs/extension-methods.md)
 - [Implicitly typed local variables](../language-reference/keywords/var.md)

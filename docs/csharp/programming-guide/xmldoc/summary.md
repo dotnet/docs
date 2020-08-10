@@ -1,5 +1,6 @@
 ---
 title: "<summary> - C# programming guide"
+description: Learn about the XML <summary> tag that is used to describe a type or a type member. See code examples and view additional available resources.
 ms.date: 07/20/2015
 f1_keywords:
   - "<summary>"

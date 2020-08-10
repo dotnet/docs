@@ -1,7 +1,7 @@
 ---
 title: dotnet tool update command
 description: The dotnet tool update command updates the specified .NET Core tool on your machine.
-ms.date: 02/14/2020
+ms.date: 07/08/2020
 ---
 # dotnet tool update
 
@@ -14,17 +14,24 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool update <PACKAGE_NAME> -g|--global
-    [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+dotnet tool update <PACKAGE_ID> -g|--global
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--disable-parallel] [--framework <FRAMEWORK>]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
-dotnet tool update <PACKAGE_NAME> --tool-path <PATH>
-    [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+dotnet tool update <PACKAGE_ID> --tool-path <PATH>
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--disable-parallel] [--framework <FRAMEWORK>]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
-dotnet tool update <PACKAGE_NAME>
-    [--configfile <FILE>] [--framework <FRAMEWORK>]
-    [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
+dotnet tool update <PACKAGE_ID> --local
+    [--add-source <SOURCE>] [--configfile <FILE>]
+    [--disable-parallel] [--framework <FRAMEWORK>]
+    [--ignore-failed-sources] [--interactive] [--no-cache]
+    [--tool-manifest <PATH>]
+    [-v|--verbosity <LEVEL>] [--version <VERSION>]
 
 dotnet tool update -h|--help
 ```
@@ -35,13 +42,13 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
 * To update a global tool that was installed in the default location, use the `--global` option
 * To update a global tool that was installed in a custom location, use the `--tool-path` option.
-* To update a local tool, omit the `--global` and `--tool-path` options.
+* To update a local tool, use the `--local` option.
 
 **Local tools are available starting with .NET Core SDK 3.0.**
 
 ## Arguments
 
-- **`PACKAGE_NAME`**
+- **`PACKAGE_ID`**
 
   Name/ID of the NuGet package that contains the .NET Core global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
@@ -55,9 +62,41 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
   The NuGet configuration (*nuget.config*) file to use.
 
+- **`--disable-parallel`**
+
+  Prevent restoring multiple projects in parallel.
+
 - **`--framework <FRAMEWORK>`**
 
   Specifies the [target framework](../../standard/frameworks.md) to update the tool for.
+
+- **`--ignore-failed-sources`**
+
+  Treat package source failures as warnings.
+
+- **`--interactive`**
+
+  Allows the command to stop and wait for user input or action (for example to complete authentication).
+
+- **`--local`**
+
+  Update the tool and the local tool manifest. Can't be combined with the `--global` option or the `--tool-path` option.
+
+- **`--no-cache`**
+
+  Do not cache packages and HTTP requests.
+
+- **`--tool-manifest <PATH>`**
+
+  Path to the manifest file.
+
+- **`--tool-path <PATH>`**
+
+  Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
+
+- **`--version <VERSION>`**
+
+  The version range of the tool package to update to. This cannot be used to downgrade versions, you must `uninstall` newer versions first.
 
 - **`-g|--global`**
 
@@ -66,10 +105,6 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 - **`-h|--help`**
 
   Prints out a short help for the command.
-
-- **`--tool-path <PATH>`**
-
-  Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -93,8 +128,17 @@ The `dotnet tool update` command provides a way for you to update .NET Core tool
 
   Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current directory.
 
+- **`dotnet tool update -g dotnetsay --version 2.0.*`**
+
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the latest patch version, with a major version of `2`, and a minor version of `0`.
+
+- **`dotnet tool update -g dotnetsay --version (2.0.*,2.1.4)`**
+
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool to the lowest version within the specified range `(> 2.0.0 && < 2.1.4)`, version `2.1.0` would be installed. For more information on semantic versioning ranges, see [NuGet packaging version ranges](/nuget/concepts/package-versioning#version-ranges).
+
 ## See also
 
 - [.NET Core tools](global-tools.md)
+- [Semantic versioning](https://semver.org)
 - [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
 - [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)

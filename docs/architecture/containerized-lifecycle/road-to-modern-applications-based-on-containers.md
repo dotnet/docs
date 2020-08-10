@@ -1,7 +1,7 @@
 ---
 title: Road to modern applications based on containers
 description: Understand that Docker, containers and a Microservices architecture are not a one-size-fits-all solution. Here you'll find some references that will help you decide.
-ms.date: 11/23/2018
+ms.date: 08/06/2020
 ---
 # Road to modern applications based on containers
 

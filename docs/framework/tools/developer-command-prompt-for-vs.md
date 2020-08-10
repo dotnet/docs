@@ -1,5 +1,6 @@
 ---
 title: "Developer Command Prompt for Visual Studio"
+description: Learn to use the Developer Command Prompt for Visual Studio, which lets you use .NET tools more easily. It automatically sets specific environment variables.
 ms.date: 01/05/2020
 helpviewer_keywords:
   - "command prompt, Windows SDK"

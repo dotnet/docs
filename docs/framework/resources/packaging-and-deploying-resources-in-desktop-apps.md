@@ -1,5 +1,6 @@
 ---
 title: "Packaging and Deploying Resources in .NET Apps"
+description: Package and deploy resources in .NET apps using a main assembly (hub) and satellite assemblies (spokes). A spoke contains localized resources but no code.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

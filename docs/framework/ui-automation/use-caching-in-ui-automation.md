@@ -1,5 +1,6 @@
 ---
 title: "Use Caching in UI Automation"
+description: See how to use caching in UI Automation. Review steps for activating a cache request, caching AutomationElement properties, and getting cached patterns.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

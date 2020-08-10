@@ -1,5 +1,6 @@
 ---
 title: "How to create a key in the registry - C# Programming Guide"
+description: Learn how to create a key in the registry. See a code example, compiling instructions, and additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry, adding keys and values [C#]"

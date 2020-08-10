@@ -1,5 +1,6 @@
 ---
 title: "<value> - C# programming guide"
+description: Learn about the XML <value> tag. This tag allows you to describe the value that a property represents.
 ms.date: 07/20/2015
 f1_keywords:
   - "<value>"

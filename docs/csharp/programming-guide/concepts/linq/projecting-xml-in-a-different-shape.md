@@ -1,5 +1,6 @@
 ---
 title: "Projecting XML in a Different Shape (C#)"
+description: Learn how to project XML in a different shape than the source XML. Review a code example that uses classes from the WindowsBase assembly.
 ms.date: 07/20/2015
 ms.assetid: 4cb6b14a-32dc-4a2a-813e-bf9368fa8d86
 ---

@@ -1,5 +1,6 @@
 ---
 title: "<example> - C# programming guide"
+description: Learn about the XML <example> tag. This tag lets you specify an example of how to use a method or other library member.
 ms.date: 07/20/2015
 f1_keywords:
   - "<example>"

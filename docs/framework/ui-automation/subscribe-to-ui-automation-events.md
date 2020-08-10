@@ -1,5 +1,6 @@
 ---
 title: "Subscribe to UI Automation Events"
+description: See how to subscribe to events raised by UI Automation providers. The example code registers an event handler for the event raised when a control is invoked.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

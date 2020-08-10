@@ -1,5 +1,6 @@
 ---
 title: "Emitting Dynamic Methods and Assemblies"
+description: Emit dynamic methods and assemblies using the System.Reflection.Emit namespace, which allows a compiler or tool to emit metadata and MSIL code at run time.
 ms.date: "08/30/2017"
 helpviewer_keywords: 
   - "reflection emit"

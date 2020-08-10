@@ -1,5 +1,6 @@
 ---
 title: "How to retrieve a single child element (LINQ to XML) (C#)"
+description: Learn how to use LINQ to XML to retrieve a single child element by name. In this C# example, the Element method returns the first specified child element.
 ms.date: 07/20/2015
 ms.assetid: ce37db9e-76fa-46eb-b4cc-e8f32d22ad90
 ---

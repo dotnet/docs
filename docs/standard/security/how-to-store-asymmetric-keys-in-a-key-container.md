@@ -7,13 +7,13 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "cryptography [.NET Framework], asymmetric keys"
+  - "cryptography [.NET], asymmetric keys"
   - "storing asymmetric keys"
   - "keys, asymmetric"
   - "encryption keys"
   - "keys, storing in key containers"
-  - "asymmetric keys [.NET Framework]"
-  - "encryption [.NET Framework], asymmetric keys"
+  - "asymmetric keys [.NET]"
+  - "encryption [.NET], asymmetric keys"
   - "decryption keys"
 ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
 ---
@@ -21,6 +21,9 @@ ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
 # Store asymmetric keys in a key container
 
 Asymmetric private keys should never be stored verbatim or in plain text on the local computer. If you need to store a private key, use a key container. For more information on key containers, see [Understanding machine-level and user-level RSA key containers](https://docs.microsoft.com/previous-versions/aspnet/f5cs0acs(v=vs.100)).
+
+> [!NOTE]
+> The code in this article applies to Windows and uses features not available in .NET Core 2.2 and earlier versions. For more information, see [dotnet/runtime#23391](https://github.com/dotnet/runtime/issues/23391).
 
 ## Create an asymmetric key and save it in a key container
 
@@ -239,7 +242,10 @@ Key deleted.
 
 ## See also
 
+- [Cryptography Model](cryptography-model.md)
+- [Cryptographic Services](cryptographic-services.md)
+- [Cross-Platform Cryptography](cross-platform-cryptography.md)
 - [Generating keys for encryption and decryption](generating-keys-for-encryption-and-decryption.md)
 - [Encrypting data](encrypting-data.md)
 - [Decrypting data](decrypting-data.md)
-- [Cryptographic services](cryptographic-services.md)
+- [ASP.NET Core Data Protection](/aspnet/core/security/data-protection/introduction)

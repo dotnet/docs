@@ -115,7 +115,7 @@ string label = "Colors used in the map";
 var pair = (count, label); // element names are "count" and "label"
 ```
 
-You can learn more about this feature in the [Tuples](../tuples.md) article.
+You can learn more about this feature in the [Tuple types](../language-reference/builtin-types/value-tuples.md) article.
 
 ## Pattern matching on generic type parameters
 

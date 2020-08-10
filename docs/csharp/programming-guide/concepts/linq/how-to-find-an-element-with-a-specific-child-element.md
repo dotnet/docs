@@ -1,5 +1,6 @@
 ---
 title: "How to find an element with a specific child element (C#)"
+description: Learn how to find an element that has a specific child element. See code examples and additional resources.
 ms.date: 07/20/2015
 ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
 ---

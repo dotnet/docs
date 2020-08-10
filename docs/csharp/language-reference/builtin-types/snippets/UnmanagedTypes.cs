@@ -1,4 +1,4 @@
-// <SnippetProgramExample>
+﻿// <SnippetProgramExample>
 using System;
 
 public struct Coords<T>

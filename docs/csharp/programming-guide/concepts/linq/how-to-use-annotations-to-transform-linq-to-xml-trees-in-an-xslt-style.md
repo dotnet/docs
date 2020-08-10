@@ -1,5 +1,6 @@
 ---
 title: "How to use annotations to transform LINQ to XML trees in an XSLT style (C#)"
+description: Learn how to use annotations to transform LINQ to XML trees in an XSLT style. See an example of transforming a tree by using the XForm function.
 ms.date: 07/20/2015
 ms.assetid: 12a95902-a6b7-4a1e-ad52-04a518db226f
 ---

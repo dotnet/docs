@@ -1,5 +1,6 @@
 ---
 title: "How to write a copy constructor - C# Programming Guide"
+description: Learn how to write a copy constructor in C# that takes an instance of class and returns a new instance with the values of the input.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# Language, copy constructor"

@@ -1,5 +1,6 @@
 ---
 title: "How to use lambda expressions in a query - C# Programming Guide"
+description: Learn how to use lambda expressions in a query. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [C#], in LINQ"
@@ -25,5 +26,5 @@ You do not use lambda expressions directly in query syntax, but you do use them 
   
 ## See also
 
-- [Lambda Expressions](./lambda-expressions.md)
+- [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
 - [Expression Trees (C#)](../concepts/expression-trees/index.md)

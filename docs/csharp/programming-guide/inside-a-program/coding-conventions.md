@@ -1,5 +1,6 @@
 ---
 title: "C# Coding Conventions - C# Programming Guide"
+description: Learn about coding conventions in C#. Coding conventions create a consistent look to the code and facilitate copying, changing, and maintaining the code.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "coding conventions, C#"

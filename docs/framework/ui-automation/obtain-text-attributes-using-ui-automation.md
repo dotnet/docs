@@ -1,5 +1,6 @@
 ---
 title: "Obtain Text Attributes Using UI Automation"
+description: Learn how to obtain text attributes using UI Automation. See a code example that gets text attributes from a text range.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

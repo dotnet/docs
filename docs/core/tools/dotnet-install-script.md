@@ -17,7 +17,7 @@ Windows:
 dotnet-install.ps1 [-Architecture <ARCHITECTURE>] [-AzureFeed]
     [-Channel <CHANNEL>] [-DryRun] [-FeedCredential]
     [-InstallDir <DIRECTORY>] [-JSonFile <JSONFILE>]
-    [-NoCdn] [-NoPath] [-ProxyAddress]
+    [-NoCdn] [-NoPath] [-ProxyAddress] [-ProxyBypassList <LIST_OF_URLS>]
     [-ProxyUseDefaultCredentials] [-Runtime <RUNTIME>]
     [-SkipNonVersionedFiles] [-UncachedFeed] [-Verbose]
     [-Version <VERSION>]
@@ -76,7 +76,7 @@ By default, the installation scripts download the SDK and install it. If you wis
 
 By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `-NoPath|--no-path` argument. The script doesn't set the `DOTNET_ROOT` environment variable.
 
-Before running the script, install the required [dependencies](../install/dependencies.md).
+Before running the script, install the required [dependencies](../install/windows.md#dependencies).
 
 You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version number, such as `2.1.0`. If the version isn't specified, the script installs the `latest` version.
 
@@ -134,6 +134,10 @@ The install scripts do not update the registry on Windows. They just download th
 - **`-ProxyAddress`**
 
   If set, the installer uses the proxy when making web requests. (Only valid for Windows.)
+
+- **`-ProxyBypassList <LIST_OF_URLS>`**
+
+  If set with `ProxyAddress`, provides a list of comma-separated urls that will bypass the proxy. (Only valid for Windows.)
 
 - **`ProxyUseDefaultCredentials`**
 

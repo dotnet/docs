@@ -1,5 +1,6 @@
 ---
 title: "Creating XML Trees in C# (LINQ to XML)"
+description: Learn about creating XML trees in C#, including constructing elements and using XElement constructors.
 ms.date: 08/31/2018
 ms.assetid: cc74234a-0bac-4327-9c8c-5a2ead15b595
 ---

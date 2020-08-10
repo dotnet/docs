@@ -2,6 +2,7 @@
 title: Troubleshoot .NET Core tool usage issues
 description: Discover the common issues when running .NET Core tools and possible solutions.
 author: kdollard
+ms.topic: troubleshooting
 ms.date: 02/14/2020
 ---
 

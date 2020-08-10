@@ -4,7 +4,7 @@ description: How metadata is used in gRPC to pass additional context between cli
 ms.date: 09/02/2019
 ---
 
-# Metadata
+# Metadata in gRPC
 
 *Metadata* refers to additional data that might be useful during the processing of requests and responses but that’s not part of the actual application data. Metadata might include authentication tokens, request identifiers and tags for monitoring purposes, and information about the data, like the number of records in a dataset.
 

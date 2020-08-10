@@ -4,7 +4,7 @@ description: Expressions, operands, and operators are building blocks of the C# 
 ms.date: 02/27/2020
 ms.assetid: 20d5eb10-7381-47b9-ad90-f1cc895aa27e
 ---
-# Expressions
+# Expressions in C\#
 
 *Expressions* are constructed from *operands* and *operators*. The operators of an expression indicate which operations to apply to the operands. Examples of operators include `+`, `-`, `*`, `/`, and `new`. Examples of operands include literals, fields, local variables, and expressions.
 

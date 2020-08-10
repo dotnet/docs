@@ -2,6 +2,7 @@
 title: .NET Core CLI
 titleSuffix: ""
 description: An overview of the .NET Core CLI and its features.
+ms.topic: overview
 ms.date: 02/13/2020
 ---
 # .NET Core CLI overview

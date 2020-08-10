@@ -2,6 +2,7 @@
 title: Manage dependencies in .NET Core
 description: Explains how to manage project dependencies for a .NET Core application.
 no-loc: [dotnet add package, dotnet remove package, dotnet list package]
+ms.topic: how-to
 ms.date: 02/25/2020
 ---
 # Manage dependencies in .NET Core applications

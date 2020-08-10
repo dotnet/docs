@@ -2,6 +2,7 @@
 title: .NET Core tools
 description: How to install, use, update, and remove .NET Core tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
+ms.topic: how-to
 ms.date: 02/12/2020
 ---
 # How to manage .NET Core tools

@@ -1,6 +1,7 @@
 ---
 title: "Tutorial: Install and use a .NET Core global tool"
 description: Learn how to install and use a .NET tool as a global tool.
+ms.topic: tutorial
 ms.date: 02/12/2020
 ---
 

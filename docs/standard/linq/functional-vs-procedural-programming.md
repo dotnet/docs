@@ -31,4 +31,4 @@ You can use LINQ to XML with either approach. You use the same classes, and in s
 
 To see the two approaches contrasted, see [In-memory XML tree modification vs. functional construction](in-memory-xml-tree-modification-vs-functional-construction.md).
 
-For a tutorial on writing functional transformations, see [Introduction to pure functional transformations](pure-functional-transformations.md).
+For a tutorial on writing functional transformations, see [Introduction to pure functional transformations](introduction-pure-functional-transformations.md).

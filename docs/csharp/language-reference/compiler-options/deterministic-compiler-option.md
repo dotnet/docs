@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "deterministic compiler option [C#]"
   - "/deterministic compiler option [C#]"
 ---
-# -deterministic
+# -deterministic compiler option (C#)
 
 Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs.
 

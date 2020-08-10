@@ -6,7 +6,7 @@ helpviewer_keywords:
   - "-deterministic compiler option [Visual Basic]"
   - "-deterministic compiler option [Visual Basic]"
 ---
-# -deterministic
+# -deterministic compiler option (Visual Basic)
 
 Causes the compiler to produce an assembly whose byte-for-byte output is identical across compilations for identical inputs.
 

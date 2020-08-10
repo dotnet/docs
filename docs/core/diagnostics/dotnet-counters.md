@@ -70,7 +70,7 @@ dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [count
 
 - **`--format <csv|json>`**
 
-  TThe format to be exported. Currently available: csv, json.
+  The format to be exported. Currently available: csv, json.
 
 - **`-o|--output <output>`**
 

@@ -8,6 +8,7 @@ namespace DeclareTypes
     {
         public double X { get; }
         public double Y { get; }
+        
         public Point(double x, double y) => (X, Y) = (x, y);
     }
     // </PointStruct>
@@ -17,31 +18,32 @@ namespace TourOfCsharp
     // <PointClass>
     public class Point
     {
-        public int x, y;
-        public Point(int x, int y)
-        {
-            this.x = x;
-            this.y = y;
-        }
+        public int X { get; }
+        public int Y { get; }
+        
+        public Point(int x, int y) => (X, Y) = (x, y);
     }
     // </PointClass>
 
     // <DefinePairClass>
     public class Pair<TFirst, TSecond>
     {
-        public TFirst First;
-        public TSecond Second;
+        public TFirst First { get; }
+        public TSecond Second { get; }
+        
+        public Pair(TFirst first, TSecond second) => 
+            (First, Second) = (first, second);
     }
     // </DefinePairClass>
 
     // <Create3DPoint>
     public class Point3D : Point
     {
-        public int z;
-        public Point3D(int x, int y, int z) :
-            base(x, y)
+        public int Z { get; set; }
+        
+        public Point3D(int x, int y, int z) : base(x, y)
         {
-            this.z = z;
+            Z = z;
         }
     }
     // </Create3DPoint>
@@ -51,14 +53,17 @@ namespace TourOfCsharp
     {
         void Paint();
     }
+    
     interface ITextBox : IControl
     {
         void SetText(string text);
     }
+    
     interface IListBox : IControl
     {
         void SetItems(string[] items);
     }
+    
     interface IComboBox : ITextBox, IListBox { }
     // </FirstInterfaces>
 
@@ -67,6 +72,7 @@ namespace TourOfCsharp
     {
         void Bind(Binder b);
     }
+    
     public class EditBox : IControl, IDataBound
     {
         public void Paint() { }
@@ -75,7 +81,6 @@ namespace TourOfCsharp
     // </ImplementInterfaces>
 
     // <EnumDeclaration>
-    // A traditional enumeration of some root vegetables.
     public enum SomeRootVegetables
     {
         HorseRadish,
@@ -85,7 +90,6 @@ namespace TourOfCsharp
     // </EnumDeclaration>
 
     // <FlagsEnumDeclaration>
-    // A bit field or flag enumeration of harvesting seasons.
     [Flags]
     public enum Seasons
     {
@@ -104,15 +108,15 @@ namespace TourOfCsharp
         public static void Examples()
         {
             // <CreatePoints>
-            Point p1 = new Point(0, 0);
-            Point p2 = new Point(10, 20);
+            var p1 = new Point(0, 0);
+            var p2 = new Point(10, 20);
             // </CreatePoints>
 
             // <CreatePairObject>
-            Pair<int, string> pair = new Pair<int, string> { First = 1, Second = "two" };
-            int i = pair.First;     // TFirst is int
-            string s = pair.Second; // TSecond is string
-                                    // </CreatePairObject>
+            var pair = new Pair<int, string>(1, "two");
+            int i = pair.First;     // TFirst int
+            string s = pair.Second; // TSecond string
+            // </CreatePairObject>
 
             // <ImplicitCastToBase>
             Point a = new Point(10, 20);

@@ -8,7 +8,7 @@ ms.date: 08/06/2020
 
 C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the language through interactive examples, try the [introduction to C#](../tutorials/intro-to-csharp/index.md) tutorials.
 
-C# is an object-oriented, ***component-oriented*** programming. C# provides language constructs to support directly these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices.
+C# is an object-oriented, ***component-oriented*** programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices.
 
 Several C# features aid in the construction of robust and durable applications. [***Garbage collection***](../../standard/garbage-collection/index.md) automatically reclaims memory occupied by unreachable unused objects. [***Exception handling***](../programming-guide/exceptions/index.md) provides a structured and extensible approach to error detection and recovery. [***Lambda expressions***](../programming-guide/statements-expressions-operators/lambda-expressions.md) support functional programming techniques. [***Query syntax***](../linq/index.md) creates a common pattern for working with data from any source. Language support for [***asynchronous operations***](../programming-guide/concepts/async/index.md) provides syntax for building distributed systems. [***Pattern matching***](..//pattern-matching.md) provides syntax to easily separate data from algorithms in modern distributed systems. C# has a [***unified type system***](../programming-guide/types/index.md). All C# types, including primitive types such as `int` and `double`, inherit from a single root `object` type. All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types. C# allows dynamic allocation of objects and in-line storage of lightweight structures.
 
@@ -40,7 +40,7 @@ The following outline provides an overview of C#'s type system.
   - [Simple types](../language-reference/builtin-types/value-types.md#built-in-value-types)
     - [Signed integral](../language-reference/builtin-types/integral-numeric-types.md): `sbyte`, `short`, `int`, `long`
     - [Unsigned integral](../language-reference/builtin-types/integral-numeric-types.md): `byte`, `ushort`, `uint`, `ulong`
-    - Unicode characters: `char`, which represents a UTF-16 code unit
+    - [Unicode characters](/dotnet/standard/base-types/character-encoding-introduction): `char`, which represents a UTF-16 code unit
     - [IEEE binary floating-point](../language-reference/builtin-types/floating-point-numeric-types.md): `float`, `double`
     - [High-precision decimal floating-point](../language-reference/builtin-types/floating-point-numeric-types.md): `decimal`
     - Boolean: `bool`, which represents Boolean values—values that are either `true` or `false`
@@ -55,12 +55,12 @@ The following outline provides an overview of C#'s type system.
 - [Reference types](../language-reference/keywords/reference-types.md)
   - [Class types](../language-reference/keywords/class.md)
     - Ultimate base class of all other types: `object`
-    - Unicode strings: `string`, which represents a sequence of UTF-16 code units
+    - [Unicode strings](/dotnet/standard/base-types/character-encoding-introduction): `string`, which represents a sequence of UTF-16 code units
     - User-defined types of the form `class C {...}`
   - [Interface types](../language-reference/keywords/interface.md)
     - User-defined types of the form `interface I {...}`
   - [Array types](../programming-guide/arrays/index.md)
-    - Single- and multi-dimensional, for example, `int[]` and `int[,]`
+    - Single- and multi-dimensional and jagged, for example, `int[]`, `int[,]`, and `int[][]`
   - [Delegate types](../language-reference/keywords/delegate.md)
     - User-defined types of the form `delegate int D(...)`
 
@@ -73,7 +73,7 @@ C# programs use *type declarations* to create new types. A type declaration spec
 
 The `class`, `struct`, `interface`, and `delegate` types all support generics, whereby they can be parameterized with other types.
 
-C# supports single- and multi-dimensional arrays of any type. Unlike the types listed above, array types don't have to be declared before they can be used. Instead, array types are constructed by following a type name with square brackets. For example, `int[]` is a single-dimensional array of `int`, `int[,]` is a two-dimensional array of `int`, and `int[][]` is a single-dimensional array of single-dimensional array of `int`.
+C# supports single- and multi-dimensional arrays of any type. Unlike the types listed above, array types don't have to be declared before they can be used. Instead, array types are constructed by following a type name with square brackets. For example, `int[]` is a single-dimensional array of `int`, `int[,]` is a two-dimensional array of `int`, and `int[][]` is a single-dimensional array of single-dimensional array or "jagged" array of `int`.
 
 Nullable types don't require a separate definition. For each non-nullable type `T`, there's a corresponding nullable type `T?`, which can hold an additional value, `null`. For instance, `int?` is a type that can hold any 32-bit integer or the value `null`, and `string?` is a type that can hold any `string` or the value `null`.
 

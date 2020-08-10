@@ -7,26 +7,25 @@ namespace TourOfCsharp
 
     // <DelegateExample>
     delegate double Function(double x);
+    
     class Multiplier
     {
-        double factor;
-        public Multiplier(double factor)
-        {
-            this.factor = factor;
-        }
-        public double Multiply(double x)
-        {
-            return x * factor;
-        }
+        double _factor;
+        
+        public Multiplier(double factor) => _factor = factor;
+        
+        public double Multiply(double x) => x * _factor;
     }
+    
     class DelegateExample
     {
         static double[] Apply(double[] a, Function f)
         {
-            double[] result = new double[a.Length];
+            var result = new double[a.Length];
             for (int i = 0; i < a.Length; i++) result[i] = f(a[i]);
             return result;
         }
+        
         public static void Main()
         {
             double[] a = { 0.0, 0.5, 1.0 };
@@ -41,19 +40,17 @@ namespace TourOfCsharp
     // <DefineAttribute>
     public class HelpAttribute : Attribute
     {
-        string url;
-        string topic;
-        public HelpAttribute(string url)
-        {
-            this.url = url;
-        }
+        string _url;        
+        string _topic;
+        
+        public HelpAttribute(string url) => _url = url;
 
-        public string Url => url;
+        public string Url => _url;
 
         public string Topic
         {
-            get { return topic; }
-            set { topic = value; }
+            get => _topic;
+            set => _topic = value;
         }
     }
     // </DefineAttribute>
@@ -105,7 +102,6 @@ namespace TourOfCsharp
             // <ReadAttributes>
             Type widgetType = typeof(Widget);
 
-            //Gets every HelpAttribute defined for the Widget type
             object[] widgetClassAttributes = widgetType.GetCustomAttributes(typeof(HelpAttribute), false);
 
             if (widgetClassAttributes.Length > 0)
@@ -116,7 +112,6 @@ namespace TourOfCsharp
 
             System.Reflection.MethodInfo displayMethod = widgetType.GetMethod(nameof(Widget.Display));
 
-            //Gets every HelpAttribute defined for the Widget.Display method
             object[] displayMethodAttributes = displayMethod.GetCustomAttributes(typeof(HelpAttribute), false);
 
             if (displayMethodAttributes.Length > 0)

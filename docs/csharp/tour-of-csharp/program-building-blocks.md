@@ -1,9 +1,9 @@
 ---
-title: "The building blocks of C# programs: Learn about members, expressions, and statements."
-description: Types contain members you write. Those members are built from statements and expressions.
+title: The building blocks of C# programs"
+description: Learn about C# members, expressions, and statements. Types contain members you write. Those members are built from statements and expressions.
 ms.date: 08/06/2020
 ---
-# Program Building blocks
+# Program building blocks
 
 The types described in the previous article are built using these building blocks: [***members***](../programming-guide/classes-and-structs/members.md), [***expressions***, and ***statements***](../programming-guide/statements-expressions-operators/index.md).
 
@@ -219,7 +219,7 @@ For advanced scenarios where control of the underlying storage of an event is de
 
 An *operator* is a member that defines the meaning of applying a particular expression operator to instances of a class. Three kinds of operators can be defined: unary operators, binary operators, and conversion operators. All operators must be declared as `public` and `static`.
 
-The `MyList<T>` class declares two operators, `operator ==` and `operator !=`. These overridden opeators give new meaning to expressions that apply those operators to `MyList` instances. Specifically, the operators define equality of two `MyList<T>` instances as comparing each of the contained objects using their `Equals` methods. The following example uses the `==` operator to compare two `MyList<int>` instances.
+The `MyList<T>` class declares two operators, `operator ==` and `operator !=`. These overridden operators give new meaning to expressions that apply those operators to `MyList` instances. Specifically, the operators define equality of two `MyList<T>` instances as comparing each of the contained objects using their `Equals` methods. The following example uses the `==` operator to compare two `MyList<int>` instances.
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ListAccess":::
 

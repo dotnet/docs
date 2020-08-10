@@ -13,7 +13,7 @@ C# and .NET provide many different collection types. Arrays have syntax defined 
 
 An [***array***](../programming-guide/arrays/index.md) is a data structure that contains a number of variables that are accessed through computed indices. The variables contained in an array, also called the ***elements*** of the array, are all of the same type. This type is called the ***element type*** of the array.
 
-Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at runtime using the new operator. The new operation specifies the ***length*** of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from `0` to `Length - 1`. The `new` operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and `null` for all reference types.
+Array types are reference types, and the declaration of an array variable simply sets aside space for a reference to an array instance. Actual array instances are created dynamically at runtime using the `new` operator. The `new` operation specifies the ***length*** of the new array instance, which is then fixed for the lifetime of the instance. The indices of the elements of an array range from `0` to `Length - 1`. The `new` operator automatically initializes the elements of an array to their default value, which, for example, is zero for all numeric types and `null` for all reference types.
 
 The following example creates an array of `int` elements, initializes the array, and prints out the contents of the array.
 
@@ -30,7 +30,7 @@ The element type of an array can be any type, including an array type. An array 
 
 The first line creates an array with three elements, each of type `int[]` and each with an initial value of `null`. The next lines then initialize the three elements with references to individual array instances of varying lengths.
 
-The new operator permits the initial values of the array elements to be specified using an ***array initializer***, which is a list of expressions written between the delimiters `{` and `}`. The following example allocates and initializes an `int[]` with three elements.
+The `new` operator permits the initial values of the array elements to be specified using an ***array initializer***, which is a list of expressions written between the delimiters `{` and `}`. The following example allocates and initializes an `int[]` with three elements.
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="InitializeArray":::
 
@@ -50,7 +50,7 @@ The `foreach` statement uses the <xref:System.Collections.Generic.IEnumerable%60
 
 ## String interpolation
 
-C# [***string interpolation***](../language-reference/tokens/interpolated.md) enables you to format strings by define expressions whose results are placed in a format string. For example, the following example prints the temperature on a given day from a set of weather data:
+C# [***string interpolation***](../language-reference/tokens/interpolated.md) enables you to format strings by defining expressions whose results are placed in a format string. For example, the following example prints the temperature on a given day from a set of weather data:
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="StringInterpolation":::
 
@@ -80,7 +80,7 @@ A delegate doesn't know or care about the class of the method it references. All
 
 ## async / await
 
-C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the method is asynchronous. The `await` operator tells the compiler that to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. These features enable you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](https://docs.microsoft.com):
+C# supports asynchronous programs with two keywords: `async` and `await`. You add the `async` modifier to a method declaration to declare the method is asynchronous. The `await` operator tells the compiler to asynchronously await for a result to finish. Control is returned to the caller, and the method returns a structure that manages the state of the asynchronous work. The structure is typically a <xref:System.Threading.Tasks.Task%601?displayProperty=nameWithType>, but can be any type that supports the awaiter pattern. These features enable you to write code that reads as its synchronous counterpart, but executes asynchronously. For example, the following code downloads the home page for [Microsoft docs](https://docs.microsoft.com):
 
 :::code language="csharp" source="./snippets/shared/Features.cs" ID="AsyncExample":::
 
@@ -88,7 +88,7 @@ This small sample shows the major features for asynchronous programming:
 
 - The method declaration includes the `async` modifier.
 - The body of the method `await`s the return of the `GetByteArrayAsync` method.
-- The type specified in the `return` statement matches the type argument in the `TaskL<T>` declaration for the method. (A method that returns a `Task` would use `return` statements without any argument).
+- The type specified in the `return` statement matches the type argument in the `Task<T>` declaration for the method. (A method that returns a `Task` would use `return` statements without any argument).
 
 ## Attributes
 

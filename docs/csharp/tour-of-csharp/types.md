@@ -13,7 +13,7 @@ New classes are created using class declarations. A class declaration starts wit
 
 - The attributes and modifiers of the class
 - The name of the class
-- The base class (if given)
+- The base class (when inheriting from a [base class](#base-classes))
 - The interfaces implemented by the class.
 
 The header is followed by the class body, which consists of a list of member declarations written between the delimiters `{` and `}`.
@@ -30,7 +30,7 @@ The memory occupied by an object is automatically reclaimed when the object is n
 
 ### Type parameters
 
-Generic classes define [***type parameters***](programming-guide/generics/index.md). Type parameters are a list of type parameters names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
+Generic classes define [***type parameters***](programming-guide/generics/index.md). Type parameters are a list of type parameter names enclosed in angle brackets. Type parameters follow the class name. The type parameters can then be used in the body of the class declarations to define the members of the class. In the following example, the type parameters of `Pair` are `TFirst` and `TSecond`:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DefinePairClass":::
 
@@ -47,7 +47,7 @@ A class declaration may specify a base class. Follow the class name and type par
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="Create3DPoint":::
 
-A class inherits the members of its base class. Inheritance means that a class implicitly contains almost all members of its base class. A class doesn't inherit the instance and static constructors, and the finalizer. A derived class can add new members to those members it inherits, but it can't remove the definition of an inherited member. In the previous example, `Point3D` inherits the `x` and `y` fields from `Point`, and every `Point3D` instance contains three fields, `x`, `y`, and `z`.
+A class inherits the members of its base class. Inheritance means that a class implicitly contains almost all members of its base class. A class doesn't inherit the instance and static constructors, and the finalizer. A derived class can add new members to those members it inherits, but it can't remove the definition of an inherited member. In the previous example, `Point3D` inherits the `X` and `Y` members from `Point`, and every `Point3D` instance contains three properties, `X`, `Y`, and `Z`.
 
 An implicit conversion exists from a class type to any of its base class types. A variable of a class type can reference an instance of that class or an instance of any derived class. For example, given the previous class declarations, a variable of type `Point` can reference either a `Point` or a `Point3D`:
 
@@ -81,7 +81,7 @@ An [***Enum***](../language-reference/builtin-types/enum.md) type defines a set 
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="EnumDeclaration":::
 
-You can also define an `enum` be used in combination as flags. The following declaration declares a set of flags for the four seasons. Any combination of the seasons may be applied, including an `All` value that includes all seasons:
+You can also define an `enum` to be used in combination as flags. The following declaration declares a set of flags for the four seasons. Any combination of the seasons may be applied, including an `All` value that includes all seasons:
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="FlagsEnumDeclaration":::
 
@@ -91,7 +91,7 @@ The following example shows declarations of both the preceding enums:
 
 ## Nullable types
 
-Variables of any type may be declared as ***non-nullable*** or ***nullable***. A nullable variable can hold an additional `null` value, indicating no value. Nullable Value types (structs or enums) are represented by <xref:System.Nullable%601?displayProperty=nameWithType>. Non-nullable and Nullable Reference types are both represented by the underlying reference type. The distinction is represented by metadata read by the compiler and some libraries. The compiler provides warnings when nullable references are de-referenced without first checking their value against `null`. The compiler also provides warnings when non-nullable references are assigned to a value that may be `null`. The following example declares a ***nullable int***, initializing it to `null`. Then, it sets the value to `5`. It demonstrates the same concept with a ***nullable string***. For more information, see [nullable value types](language-reference/builtin-types/nullable-value-types.md) and [nullable reference types](../nullable-references.md).
+Variables of any type may be declared as ***non-nullable*** or ***nullable***. A nullable variable can hold an additional `null` value, indicating no value. Nullable Value types (structs or enums) are represented by <xref:System.Nullable%601?displayProperty=nameWithType>. Non-nullable and Nullable Reference types are both represented by the underlying reference type. The distinction is represented by metadata read by the compiler and some libraries. The compiler provides warnings when nullable references are dereferenced without first checking their value against `null`. The compiler also provides warnings when non-nullable references are assigned to a value that may be `null`. The following example declares a ***nullable int***, initializing it to `null`. Then, it sets the value to `5`. It demonstrates the same concept with a ***nullable string***. For more information, see [nullable value types](language-reference/builtin-types/nullable-value-types.md) and [nullable reference types](../nullable-references.md).
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DeclareNullable":::
 
@@ -101,7 +101,7 @@ C# supports [***tuples***](../language-reference/builtin-types/value-tuples.md),
 
 :::code language="csharp" source="./snippets/shared/Types.cs" ID="DeclareTuples":::
 
-Tuples provide an alternative for data structure with multiple members, but doesn't use the building blocks described in the next article.
+Tuples provide an alternative for data structure with multiple members, without using the building blocks described in the next article.
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

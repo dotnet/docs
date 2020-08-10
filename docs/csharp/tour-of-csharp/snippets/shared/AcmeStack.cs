@@ -1,33 +1,37 @@
-﻿using System;
+using System;
+
 namespace Acme.Collections
 {
     public class Stack<T>
     {
-        Entry top;
+        Entry _top;
+        
         public void Push(T data)
         {
-            top = new Entry(top, data);
+            _top = new Entry(top, data);
         }
 
         public T Pop()
         {
-            if (top == null)
+            if (_top == null)
             {
                 throw new InvalidOperationException();
             }
-            T result = top.data;
-            top = top.next;
+            T result = _top.Data;
+            _top = _top.Next;
+            
             return result;
         }
 
         class Entry
         {
-            public Entry next;
-            public T data;
+            public Entry Next { get; set; }
+            public T Data { get; set; }
+            
             public Entry(Entry next, T data)
             {
-                this.next = next;
-                this.data = data;
+                Next = next;
+                Data = data;
             }
         }
     }

@@ -76,8 +76,8 @@ module Immutability =
 
     /// Binding a value to a name via 'let' makes it immutable.
     ///
-    /// The second line of code fails to compile because 'number' is immutable and bound.
-    /// Re-defining 'number' to be a different value is not allowed in F#.
+    /// The second line of code compiles, but 'number' from that point onward will shadow the previous definition.
+    /// There is no way to access the previous definition of 'number' due to shadowing.
     let number = 2
     // let number = 3
 

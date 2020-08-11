@@ -40,17 +40,17 @@ If interceptor support is present, you can write and register an interceptor typ
 * Has a public, parameterless constructor.
 * Has public, non-static methods named `PreControlBuilderInit` and `OnProcessGeneratedCode` that have the same signature and semantics as the <xref:System.Web.Compilation.ControlBuilderInterceptor.PreControlBuilderInit(System.Web.UI.ControlBuilder,System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary,System.Collections.IDictionary)> and <xref:System.Web.Compilation.ControlBuilderInterceptor.OnProcessGeneratedCode(System.Web.UI.ControlBuilder,System.CodeDom.CodeCompileUnit,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeMemberMethod,System.CodeDom.CodeMemberMethod,System.Collections.IDictionary)> methods, which exist in later versions of .NET Framework.
 
-Register the interceptor type by using the `aspnet:20ControlBuilderInterceptor` key in ASP.NET application settings (appSettings). This application setting must be listed in your computer or application *web.config* file. Specify the interceptor type by using its assembly-qualified type name. The following example shows how to register an interceptor type named `Fabrikam.Interceptor`.
+Register the interceptor type by using the `aspnet:20ControlBuilderInterceptor` key in ASP.NET application settings (`<appSettings>`). This application setting must be listed in your computer or application *web.config* file. Specify the interceptor type by using its assembly-qualified type name. The following example shows how to register an interceptor type named `Fabrikam.Interceptor`.
 
 ```xml
 <configuration>
   ...
   <appSettings>
     ...
-    <add key="aspnet:20ControlBuilderInterceptor" value="Fabrikam.Interceptor, Fabrikam, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2b3831f2f2b744f7" />
+    <add key="aspnet:20ControlBuilderInterceptor"
+         value="Fabrikam.Interceptor, Fabrikam, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2b3831f2f2b744f7" />
   </appSettings>
 </configuration>
-```
 
 To retrieve the assembly-qualified name of a type, use the <xref:System.Type.AssemblyQualifiedName?displayProperty=nameWithType> property, as demonstrated in the following code.
 

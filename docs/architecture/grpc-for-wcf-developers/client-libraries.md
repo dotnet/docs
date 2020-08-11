@@ -110,7 +110,7 @@ public class GrpcStreamSubscription<T> : IDisposable
                 return;
             }
 
-            observer.OnNext(_reader.Current);
+            _observer.OnNext(_reader.Current);
         }
 
         _completed = true;

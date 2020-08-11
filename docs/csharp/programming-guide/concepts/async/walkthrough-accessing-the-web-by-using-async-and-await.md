@@ -17,11 +17,11 @@ This tutorial starts with a synchronous Windows Presentation Foundation (WPF) ap
 If you don't want to build the applications yourself, you can download [Async Sample: Asynchronous programming with async and await in C#](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs).
 
 > [!NOTE]
-> To run the examples, you must have Visual Studio 2019 or newer and the .NET Core 3.1 or newer installed on your computer.
+> To run the examples, you must have Visual Studio 2019 (v16.7.0) or newer and the .NET 5.0 or newer installed on your computer.
 
 ## Create a WPF application
 
-1. Launch Visual Studio 2019 or newer.
+1. Launch Visual Studio 2019 (v16.7.0) or newer.
 1. From the **Get started** pane, select **Create a new project**.
      The **New Project** dialog box opens.
 1. Filter to: **C#**, **Windows**, and **Desktop**.

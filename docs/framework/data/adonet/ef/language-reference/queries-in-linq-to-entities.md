@@ -38,7 +38,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
 - [Query Expression Syntax Examples: Navigating Relationships](query-expression-syntax-examples-navigating-relationships.md)  
   
 ### Method-Based Query Syntax  
- Another way to compose LINQ to Entities queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md). For examples that demonstrate how to use method-based syntax, see the following topics:  
+ Another way to compose LINQ to Entities queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../../../csharp/language-reference/operators/lambda-expressions.md). For examples that demonstrate how to use method-based syntax, see the following topics:  
   
 - [Method-Based Query Syntax Examples: Projection](method-based-query-syntax-examples-projection.md)  
   

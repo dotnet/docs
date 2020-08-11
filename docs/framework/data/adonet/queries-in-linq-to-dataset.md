@@ -34,7 +34,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
  [!code-vb[DP LINQ to DataSet Examples#SelectSimple1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#selectsimple1)]  
   
 ### Method-Based Query Syntax  
- The other way to formulate LINQ to DataSet queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+ The other way to formulate LINQ to DataSet queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../csharp/language-reference/operators/lambda-expressions.md).  
   
  This example uses <xref:System.Linq.Enumerable.Select%2A> to return all the rows from `Product` and display the product names.  
   

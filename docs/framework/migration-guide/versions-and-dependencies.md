@@ -27,7 +27,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 - The check mark icon ✔️ denotes OS versions on which .NET Framework is installed by default.
 - The plus sign icon ➕ denotes OS versions on which .NET Framework doesn't come installed but can be installed.
-- The asterisk * denotes OS versions on which .NET Framework (whether preinstalled or not) must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) or, for Windows Server, through the Server Manager.
+- The asterisk **\*** denotes OS versions on which .NET Framework (whether preinstalled or not) must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) or, for Windows Server, through the Server Manager.
 
 | | |
 | - | - |

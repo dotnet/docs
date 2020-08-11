@@ -72,7 +72,7 @@ As we did with the method iterator, we can refactor the code from this example t
 
 ## Local functions vs. lambda expressions
 
-At first glance, local functions and [lambda expressions](../statements-expressions-operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a matter of style and personal preference. However, there are real differences in where you can use one or the other that you should be aware of.
+At first glance, local functions and [lambda expressions](../../language-reference/operators/lambda-expressions.md) are very similar. In many cases, the choice between using lambda expressions and local functions is a matter of style and personal preference. However, there are real differences in where you can use one or the other that you should be aware of.
 
 Let's examine the differences between the local function and lambda expression implementations of the factorial algorithm. First the version using a local function:
 

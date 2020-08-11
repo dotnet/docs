@@ -26,5 +26,5 @@ You do not use lambda expressions directly in query syntax, but you do use them 
   
 ## See also
 
-- [Lambda Expressions](./lambda-expressions.md)
+- [Lambda Expressions](../../language-reference/operators/lambda-expressions.md)
 - [Expression Trees (C#)](../concepts/expression-trees/index.md)

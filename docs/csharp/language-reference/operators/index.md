@@ -41,7 +41,7 @@ Here are some other kinds of expressions that C# provides:
 
   [!code-csharp-interactive[interpolated string](snippets/shared/Overview.cs#InterpolatedString)]
 
-- [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md) that allow you to create anonymous functions:
+- [Lambda expressions](lambda-expressions.md) that allow you to create anonymous functions:
 
   [!code-csharp-interactive[lambda expression](snippets/shared/Overview.cs#Lambda)]
 

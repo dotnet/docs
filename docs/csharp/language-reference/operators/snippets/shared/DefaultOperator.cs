@@ -39,7 +39,7 @@ namespace operators
             {
                 if (length < 0)
                 {
-                    return default;
+                    throw new ArgumentOutOfRangeException(nameof(length), "Array length must be nonnegative.");
                 }
 
                 var array = new T[length];

@@ -144,24 +144,27 @@ using System.Text;
 using System.Threading;  
   
 // State object for reading client data asynchronously  
-public class StateObject {  
-    // Client  socket.  
-    public Socket workSocket = null;  
+public class StateObject {
     // Size of receive buffer.  
-    public const int BufferSize = 1024;  
+    public const int BufferSize = 1024;
+
     // Receive buffer.  
-    public byte[] buffer = new byte[BufferSize];  
+    public byte[] buffer = new byte[BufferSize];
+
 // Received data string.  
     public StringBuilder sb = new StringBuilder();
+
+    // Client  socket.  
+    public Socket workSocket = null;
 }  
   
-public class AsynchronousSocketListener {  
+public class AsynchronousSocketListener {
     // Thread signal.  
-    public static ManualResetEvent allDone = new ManualResetEvent(false);  
-  
+    public static ManualResetEvent allDone = new ManualResetEvent(false);
+
     public AsynchronousSocketListener() {  
-    }  
-  
+    }
+
     public static void StartListening() {  
         // Establish the local endpoint for the socket.  
         // The DNS name of the computer  
@@ -200,8 +203,8 @@ public class AsynchronousSocketListener {
         Console.WriteLine("\nPress ENTER to continue...");  
         Console.Read();  
   
-    }  
-  
+    }
+
     public static void AcceptCallback(IAsyncResult ar) {  
         // Signal the main thread to continue.  
         allDone.Set();  
@@ -215,8 +218,8 @@ public class AsynchronousSocketListener {
         state.workSocket = handler;  
         handler.BeginReceive( state.buffer, 0, StateObject.BufferSize, 0,  
             new AsyncCallback(ReadCallback), state);  
-    }  
-  
+    }
+
     public static void ReadCallback(IAsyncResult ar) {  
         String content = String.Empty;  
   
@@ -249,8 +252,8 @@ public class AsynchronousSocketListener {
                 new AsyncCallback(ReadCallback), state);  
             }  
         }  
-    }  
-  
+    }
+
     private static void Send(Socket handler, String data) {  
         // Convert the string data to byte data using ASCII encoding.  
         byte[] byteData = Encoding.ASCII.GetBytes(data);  
@@ -258,8 +261,8 @@ public class AsynchronousSocketListener {
         // Begin sending the data to the remote device.  
         handler.BeginSend(byteData, 0, byteData.Length, 0,  
             new AsyncCallback(SendCallback), handler);  
-    }  
-  
+    }
+
     private static void SendCallback(IAsyncResult ar) {  
         try {  
             // Retrieve the socket from the state object.  
@@ -275,13 +278,13 @@ public class AsynchronousSocketListener {
         } catch (Exception e) {  
             Console.WriteLine(e.ToString());  
         }  
-    }  
-  
+    }
+
     public static int Main(String[] args) {  
         StartListening();  
         return 0;  
-    }  
-}  
+    }
+} 
 ```  
   
 ## See also

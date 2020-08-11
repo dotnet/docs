@@ -68,7 +68,7 @@ public class GrpcStreamSubscription<T> : IDisposable
 
     private readonly CancellationToken _token;
     private readonly CancellationTokenSource _tokenSource;
-    
+
     private readonly Task _task;
 
     private bool _completed;
@@ -77,7 +77,7 @@ public class GrpcStreamSubscription<T> : IDisposable
     {
         _reader = reader ?? throw new ArgumentNullException(nameof(reader));
         _observer = observer ?? throw new ArgumentNullException(nameof(observer));
-        
+
         _token = token;
         _tokenSource = new CancellationTokenSource();
         token.Register(_tokenSource.Cancel);

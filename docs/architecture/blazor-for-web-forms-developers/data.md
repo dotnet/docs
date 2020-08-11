@@ -103,7 +103,7 @@ When ASP.NET was first released, SOAP services were the preferred way for web se
 ```csharp
 services.AddHttpClient("github", client =>
 {
-    client.BaseAddress = new Uri("https://api.github.com/");
+    client.BaseAddress = new Uri("http://api.github.com/");
     // Github API versioning
     client.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
     // Github requires a user-agent

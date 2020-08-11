@@ -1,433 +1,332 @@
 ---
 title: "How to extend the async walkthrough by using Task.WhenAll (C#)"
 description: Learn how to improve performance of the async solution in C# by using Task.WhenAll. This method asynchronously awaits multiple asynchronous operations.
-ms.date: 07/20/2015
+ms.date: 08/11/2020
 ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
 ---
-# How to extend the async walkthrough by using Task.WhenAll (C#)
 
-You can improve the performance of the async solution in [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md) by using the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> method. This method asynchronously awaits multiple asynchronous operations, which are represented as a collection of tasks.
+# Extend the async tutorial using Task.WhenAll (C#)
 
-You might have noticed in the walkthrough that the websites download at different rates. Sometimes one of the websites is very slow, which delays all the remaining downloads. When you run the asynchronous solutions that you build in the walkthrough, you can end the program easily if you don't want to wait, but a better option would be to start all the downloads at the same time and let faster downloads continue without waiting for the one that’s delayed.
+You can improve the performance of the async solution in [Tutorial: Access the web with async and await (C#)](walkthrough-accessing-the-web-by-using-async-and-await.md) by using the <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> method. This method asynchronously awaits multiple asynchronous operations, which are represented as a collection of tasks.
 
-You apply the `Task.WhenAll` method to a collection of tasks. The application of `WhenAll` returns a single task that isn’t complete until every task in the collection is completed. The tasks appear to run in parallel, but no additional threads are created. The tasks can complete in any order.
+You might have noticed in the tutorial that the websites download at different rates. Sometimes one of the websites is slow, which delays all the remaining downloads. When you run the asynchronous solutions that you build in the walkthrough, you can end the program easily if you don't want to wait, but a better option would be to start all the downloads at the same time and let faster downloads continue without waiting for the one that's delayed.
+
+You apply the `Task.WhenAll` method to a collection of tasks. The application of `WhenAll` returns a single task that isn't complete until every task in the collection is completed. The tasks appear to run in parallel, but no additional threads are created. The tasks can complete in any order.
 
 > [!IMPORTANT]
-> The following procedures describe extensions to the async applications that are developed in [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the walkthrough or downloading the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
+> The following procedures describe extensions to the async applications that are developed in [Tutorial: Access the web with async and await (C#)](walkthrough-accessing-the-web-by-using-async-and-await.md). You can develop the applications by either completing the tutorial or downloading the code from [Code samples browser](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs).
 >
-> To run the example, you must have Visual Studio 2012 or later installed on your computer.
+> To run the example, you must have Visual Studio 2019 or later installed on your computer.
 
-### To add Task.WhenAll to your GetURLContentsAsync solution
+## Update the DisplayResults method
 
-1. Add the `ProcessURLAsync` method to the first application that's developed in [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md).
+Open the *MainWindow.xaml.cs* file, and navigate to the `DisplayResults` method. If you downloaded the code from [Code samples browser](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs), open the *SerialAsyncExample* project.
 
-    - If you downloaded the code from  [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough project, and then add `ProcessURLAsync` to the MainWindow.xaml.cs file.
+The `DisplayResults` method used string concatenation to append the `url` and the corresponding download size as an interpolated string to the `_resultsTextBox.Text`. Apply the following updates.
 
-    - If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that includes the `GetURLContentsAsync` method. The MainWindow.xaml.cs file for this application is the first example in the "Complete Code Examples from the Walkthrough" section.
-
-    The `ProcessURLAsync` method consolidates the actions in the body of the `foreach` loop in `SumPageSizesAsync` in the original walkthrough. The method asynchronously downloads the contents of a specified website as a byte array, and then displays and returns the length of the byte array.
-
-    ```csharp
-    private async Task<int> ProcessURLAsync(string url)
-    {
-        var byteArray = await GetURLContentsAsync(url);
-        DisplayResults(url, byteArray);
-        return byteArray.Length;
-    }
-    ```
-
-2. Comment out or delete the `foreach` loop in `SumPageSizesAsync`, as the following code shows.
-
-    ```csharp
-    //var total = 0;
-    //foreach (var url in urlList)
-    //{
-    //    byte[] urlContents = await GetURLContentsAsync(url);
-
-    //    // The previous line abbreviates the following two assignment statements.
-    //    // GetURLContentsAsync returns a Task<T>. At completion, the task
-    //    // produces a byte array.
-    //    //Task<byte[]> getContentsTask = GetURLContentsAsync(url);
-    //    //byte[] urlContents = await getContentsTask;
-
-    //    DisplayResults(url, urlContents);
-
-    //    // Update the total.
-    //    total += urlContents.Length;
-    //}
-    ```
-
-3. Create a collection of tasks. The following code defines a [query](../linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.
-
-    Add the following code to method `SumPageSizesAsync` after the declaration of `urlList`.
-
-    ```csharp
-    // Create a query.
-    IEnumerable<Task<int>> downloadTasksQuery =
-        from url in urlList select ProcessURLAsync(url);
-
-    // Use ToArray to execute the query and start the download tasks.
-    Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
-    ```
-
-4. Apply `Task.WhenAll` to the collection of tasks, `downloadTasks`. `Task.WhenAll` returns a single task that finishes when all the tasks in the collection of tasks have completed.
-
-    In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. The expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.
-
-    ```csharp
-    // Await the completion of all the running tasks.
-    int[] lengths = await Task.WhenAll(downloadTasks);
-
-    //// The previous line is equivalent to the following two statements.
-    //Task<int[]> whenAllTask = Task.WhenAll(downloadTasks);
-    //int[] lengths = await whenAllTask;
-    ```
-
-5. Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to calculate the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.
-
-    ```csharp
-    int total = lengths.Sum();
-    ```
-
-### To add Task.WhenAll to the HttpClient.GetByteArrayAsync solution
-
-1. Add the following version of `ProcessURLAsync` to the second application that's developed in [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md).
-
-    - If you downloaded the code from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f), open the AsyncWalkthrough_HttpClient project, and then add `ProcessURLAsync` to the MainWindow.xaml.cs file.
-
-    - If you developed the code by completing the walkthrough, add `ProcessURLAsync` to the application that uses the `HttpClient.GetByteArrayAsync` method. The MainWindow.xaml.cs file for this application is the second example in the "Complete Code Examples from the Walkthrough" section.
-
-    The `ProcessURLAsync` method consolidates the actions in the body of the `foreach` loop in `SumPageSizesAsync` in the original walkthrough. The method asynchronously downloads the contents of a specified website as a byte array, and then displays and returns the length of the byte array.
-
-    The only difference from the `ProcessURLAsync` method in the previous procedure is the use of the <xref:System.Net.Http.HttpClient> instance, `client`.
-
-    ```csharp
-    async Task<int> ProcessURLAsync(string url, HttpClient client)
-    {
-        byte[] byteArray = await client.GetByteArrayAsync(url);
-        DisplayResults(url, byteArray);
-        return byteArray.Length;
-    }
-    ```
-
-2. Comment out or delete the `For Each` or `foreach` loop in `SumPageSizesAsync`, as the following code shows.
-
-    ```csharp
-    //var total = 0;
-    //foreach (var url in urlList)
-    //{
-    //    // GetByteArrayAsync returns a Task<T>. At completion, the task
-    //    // produces a byte array.
-    //    byte[] urlContent = await client.GetByteArrayAsync(url);
-
-    //    // The previous line abbreviates the following two assignment
-    //    // statements.
-    //    Task<byte[]> getContentTask = client.GetByteArrayAsync(url);
-    //    byte[] urlContent = await getContentTask;
-
-    //    DisplayResults(url, urlContent);
-
-    //    // Update the total.
-    //    total += urlContent.Length;
-    //}
-    ```
-
-3. Define a [query](../linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.
-
-    Add the following code to method `SumPageSizesAsync` after the declaration of `client` and `urlList`.
-
-    ```csharp
-    // Create a query.
-    IEnumerable<Task<int>> downloadTasksQuery =
-        from url in urlList select ProcessURLAsync(url, client);
-
-    // Use ToArray to execute the query and start the download tasks.
-    Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
-    ```
-
-4. Next, apply `Task.WhenAll` to the collection of tasks, `downloadTasks`. `Task.WhenAll` returns a single task that finishes when all the tasks in the collection of tasks have completed.
-
-    In the following example, the `await` expression awaits the completion of the single task that `WhenAll` returns. When complete, the `await` expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.
-
-    ```csharp
-    // Await the completion of all the running tasks.
-    int[] lengths = await Task.WhenAll(downloadTasks);
-
-    //// The previous line is equivalent to the following two statements.
-    //Task<int[]> whenAllTask = Task.WhenAll(downloadTasks);
-    //int[] lengths = await whenAllTask;
-    ```
-
-5. Finally, use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.
-
-    ```csharp
-    int total = lengths.Sum();
-    ```
-
-### To test the Task.WhenAll solutions
-
-- For either solution, choose the F5 key to run the program, and then choose the **Start** button. The output should resemble the output from the async solutions in [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md). However, notice that the websites appear in a different order each time.
-
-## Example
-
-The following code shows the extensions to the project that uses the `GetURLContentsAsync` method to download content from the web.
+- Change the method return type to <xref:System.Threading.Tasks.Task>.
+- Wrap the expression-bodied member in a <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A?displayProperty=nameWithType>.
+- The `BeginInvoke` method returns a <xref:System.Windows.Threading.DispatcherOperation?displayProperty=nameWithType>, you need to access the <xref:System.Threading.Tasks.Task?displayProperty=nameWithType> that represents the operation.
+- Apply the "Async" suffix to the `DisplayResults` method.
 
 ```csharp
-// Add the following using directives, and add a reference for System.Net.Http.
-using System.Net.Http;
-using System.IO;
-using System.Net;
+Task DisplayResultsAsync(string url, byte[] content) =>
+    Dispatcher.BeginInvoke(() =>
+        _resultsTextBox.Text += $"{url,-60} {content.Length,10:#,#}\n")
+                .Task;
+```
 
-namespace AsyncExampleWPF_WhenAll
+The use of `Dispatcher` is required to ensure that all UI updates are correctly dispatched to the UI thread. Later, you use  that queues work on the thread pool.
+
+## Update the ProcessUrlAsync method
+
+The `ProcessUrlAsync` method is updated to call the task-returning `DisplayResultsAsync` method. Be sure to `await` the call.
+
+```csharp
+async Task<int> ProcessUrlAsync(string url, HttpClient client)
 {
-    public partial class MainWindow : Window
-    {
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
+    byte[] byteArray = await client.GetByteArrayAsync(url);
+    await DisplayResultsAsync(url, byteArray);
 
-        private async void startButton_Click(object sender, RoutedEventArgs e)
-        {
-            resultsTextBox.Clear();
-
-            // Two-step async call.
-            Task sumTask = SumPageSizesAsync();
-            await sumTask;
-
-            // One-step async call.
-            //await SumPageSizesAsync();
-
-            resultsTextBox.Text += "\r\nControl returned to startButton_Click.\r\n";
-        }
-
-        private async Task SumPageSizesAsync()
-        {
-            // Make a list of web addresses.
-            List<string> urlList = SetUpURLList();
-
-            // Create a query.
-            IEnumerable<Task<int>> downloadTasksQuery =
-                from url in urlList select ProcessURLAsync(url);
-
-            // Use ToArray to execute the query and start the download tasks.
-            Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
-
-            // You can do other work here before awaiting.
-
-            // Await the completion of all the running tasks.
-            int[] lengths = await Task.WhenAll(downloadTasks);
-
-            //// The previous line is equivalent to the following two statements.
-            //Task<int[]> whenAllTask = Task.WhenAll(downloadTasks);
-            //int[] lengths = await whenAllTask;
-
-            int total = lengths.Sum();
-
-            //var total = 0;
-            //foreach (var url in urlList)
-            //{
-            //    byte[] urlContents = await GetURLContentsAsync(url);
-
-            //    // The previous line abbreviates the following two assignment statements.
-            //    // GetURLContentsAsync returns a Task<T>. At completion, the task
-            //    // produces a byte array.
-            //    //Task<byte[]> getContentsTask = GetURLContentsAsync(url);
-            //    //byte[] urlContents = await getContentsTask;
-
-            //    DisplayResults(url, urlContents);
-
-            //    // Update the total.
-            //    total += urlContents.Length;
-            //}
-
-            // Display the total count for all of the websites.
-            resultsTextBox.Text +=
-                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
-        }
-
-        private List<string> SetUpURLList()
-        {
-            List<string> urls = new List<string>
-            {
-                "https://msdn.microsoft.com",
-                "https://msdn.microsoft.com/library/windows/apps/br211380.aspx",
-                "https://msdn.microsoft.com/library/hh290136.aspx",
-                "https://msdn.microsoft.com/library/ee256749.aspx",
-                "https://msdn.microsoft.com/library/hh290138.aspx",
-                "https://msdn.microsoft.com/library/hh290140.aspx",
-                "https://msdn.microsoft.com/library/dd470362.aspx",
-                "https://msdn.microsoft.com/library/aa578028.aspx",
-                "https://msdn.microsoft.com/library/ms404677.aspx",
-                "https://msdn.microsoft.com/library/ff730837.aspx"
-            };
-            return urls;
-        }
-
-        // The actions from the foreach loop are moved to this async method.
-        private async Task<int> ProcessURLAsync(string url)
-        {
-            var byteArray = await GetURLContentsAsync(url);
-            DisplayResults(url, byteArray);
-            return byteArray.Length;
-        }
-
-        private async Task<byte[]> GetURLContentsAsync(string url)
-        {
-            // The downloaded resource ends up in the variable named content.
-            var content = new MemoryStream();
-
-            // Initialize an HttpWebRequest for the current URL.
-            var webReq = (HttpWebRequest)WebRequest.Create(url);
-
-            // Send the request to the Internet resource and wait for
-            // the response.
-            using (WebResponse response = await webReq.GetResponseAsync())
-            {
-                // Get the data stream that is associated with the specified url.
-                using (Stream responseStream = response.GetResponseStream())
-                {
-                    await responseStream.CopyToAsync(content);
-                }
-            }
-
-            // Return the result as a byte array.
-            return content.ToArray();
-
-        }
-
-        private void DisplayResults(string url, byte[] content)
-        {
-            // Display the length of each website. The string format
-            // is designed to be used with a monospaced font, such as
-            // Lucida Console or Global Monospace.
-            var bytes = content.Length;
-            // Strip off the "https://".
-            var displayURL = url.Replace("https://", "");
-            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
-        }
-    }
+    return byteArray.Length;
 }
 ```
 
-## Example
+## Update the _urlList field
 
-The following code shows the extensions to the project that uses method `HttpClient.GetByteArrayAsync` to download content from the web.
+This tutorial exemplifies downloading website content in parallel, the app will be capable of processing many more URLs than before, in less time. Replace the existing `_urlList` field with the following:
 
 ```csharp
-// Add the following using directives, and add a reference for System.Net.Http.
-using System.Net.Http;
-using System.IO;
-using System.Net;
+readonly IEnumerable<string> _urlList = new string[]
+{
+    "https://docs.microsoft.com",
+    "https://docs.microsoft.com/azure",
+    "https://docs.microsoft.com/powershell",
+    "https://docs.microsoft.com/dotnet",
+    "https://docs.microsoft.com/aspnet/core",
+    "https://docs.microsoft.com/windows",
+    "https://docs.microsoft.com/office",
+    "https://docs.microsoft.com/enterprise-mobility-security",
+    "https://docs.microsoft.com/visualstudio",
+    "https://docs.microsoft.com/microsoft-365",
+    "https://docs.microsoft.com/sql",
+    "https://docs.microsoft.com/dynamics365",
+    "https://docs.microsoft.com/surface",
+    "https://docs.microsoft.com/xamarin",
+    "https://docs.microsoft.com/azure/devops",
+    "https://docs.microsoft.com/system-center",
+    "https://docs.microsoft.com/graph",
+    "https://docs.microsoft.com/education",
+    "https://docs.microsoft.com/gaming",
+};
+```
 
-namespace AsyncExampleWPF_HttpClient_WhenAll
+## Create a StartSumPageSizesAsync method
+
+Add the following code under the `OnStartButtonClick` event handler. The method will await the invocation to `SumPageSizesAsync`, and when it's completed the method will use the `MainWindow.Dispatcher` instance to update the results textbox and re-enable the start button on the UI thread.
+
+```csharp
+async Task StartSumPageSizesAsync()
+{
+    await SumPageSizesAsync();
+    await Dispatcher.BeginInvoke(() =>
+    {
+        _resultsTextBox.Text += $"\nControl returned to {nameof(OnStartButtonClick)}.";
+        _startButton.IsEnabled = true;
+    });
+}
+```
+
+## Update the OnStartButtonClick event handler
+
+The `OnStartButtonClick` event handler needs to be updated to call `Task.Run`. The event handler fires, and run synchronously. Disable the start button, and clear the previous results text.
+
+- Remove the `async` keyword from the event handler, it's no longer needed.
+- Add `Task.Run(StartSumPageSizesAsync)`.
+
+The event handler should resemble the following code:
+
+```csharp
+void OnStartButtonClick(object sender, RoutedEventArgs e)
+{
+    _startButton.IsEnabled = false;
+    _resultsTextBox.Clear();
+
+    Task.Run(StartSumPageSizesAsync);
+}
+```
+
+## Add Task.WhenAll to the solution
+
+Navigate to the `SumPageSizesAsync` method.
+
+1. Comment out or delete the `foreach` (or `For Each` in Visual Basic) loop in `SumPageSizesAsync`, as the following code shows.
+
+    ```csharp
+    //int total = 0;
+    //foreach (string url in _urlList)
+    //{
+    //    int contentLength = await ProcessUrlAsync(url, _client);
+    //    total += contentLength;
+    //}
+    ```
+
+1. Define a [query](../linq/index.md) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.
+
+    Add the following code to the `SumPageSizesAsync` method after the instantiation of `stopwatch` and the call to <xref:System.Diagnostics.Stopwatch.Start?displayProperty=nameWithType>.
+
+    ```csharp
+    IEnumerable<Task<int>> downloadTasksQuery =
+        from url in _urlList
+        select ProcessURLAsync(url, _client);
+
+    Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
+    ```
+
+    Calling <xref:System.Linq.Enumerable.ToArray%2A> is used to start the download tasks.
+
+1. Next, apply <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType> to the collection of tasks, `downloadTasks`. `Task.WhenAll` returns a single task that finishes when all the tasks in the collection of tasks have completed.
+
+    In the following example, the `await` expression awaits the completion of the single task that `Task.WhenAll` returns. When complete, the `await` expression evaluates to an array of integers, where each integer is the length of a downloaded website. Add the following code to `SumPageSizesAsync`, just after the code that you added in the previous step.
+
+    ```csharp
+    int[] lengths = await Task.WhenAll(downloadTasks);
+    ```
+
+1. Use the <xref:System.Linq.Enumerable.Sum%2A> method to get the sum of the lengths of all the websites. Add the following line to `SumPageSizesAsync`.
+
+    ```csharp
+    int total = lengths.Sum();
+    ```
+
+1. Finally, wrap the updates to the results textbox and the call to <xref:System.Diagnostics.Stopwatch.Stop?displayProperty=nameWithType> in the <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A?displayProperty=nameWithType>. Be sure to `await` the call.
+
+```csharp
+await Dispatcher.BeginInvoke(() =>
+{
+    stopwatch.Stop();
+
+    _resultsTextBox.Text += $"\nTotal bytes returned:  {total:#,#}";
+    _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
+});
+```
+
+The updated version of the `SumPageSizesAsync` method should be as follows:
+
+```csharp
+async Task SumPageSizesAsync()
+{
+    var stopwatch = new Stopwatch();
+    stopwatch.Start();
+
+    IEnumerable<Task<int>> downloadTasksQuery =
+        from url in _urlList
+        select ProcessURLAsync(url, _client);
+
+    Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
+
+    int[] lengths = await Task.WhenAll(downloadTasks);
+    int total = lengths.Sum();
+
+    await Dispatcher.BeginInvoke(() =>
+    {
+        stopwatch.Stop();
+
+        _resultsTextBox.Text += $"\nTotal bytes returned:  {total:#,#}";
+        _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
+    });
+}
+```
+
+## Test the Task.WhenAll solutions
+
+Select the <kbd>F5</kbd> key to run the program, and then select the **Start** button. The output should resemble the following output:
+
+```text
+https://docs.microsoft.com                                       39,530
+https://docs.microsoft.com/powershell                            58,131
+https://docs.microsoft.com/azure                                401,071
+https://docs.microsoft.com/windows                               25,471
+https://docs.microsoft.com/enterprise-mobility-security          28,904
+https://docs.microsoft.com/dotnet                                69,584
+https://docs.microsoft.com/visualstudio                          31,372
+https://docs.microsoft.com/office                                42,250
+https://docs.microsoft.com/aspnet/core                           87,662
+https://docs.microsoft.com/microsoft-365                         43,236
+https://docs.microsoft.com/surface                               33,055
+https://docs.microsoft.com/sql                                   53,384
+https://docs.microsoft.com/dynamics365                           50,714
+https://docs.microsoft.com/xamarin                               60,242
+https://docs.microsoft.com/azure/devops                          75,795
+https://docs.microsoft.com/system-center                         43,402
+https://docs.microsoft.com/graph                                 46,789
+https://docs.microsoft.com/education                             25,056
+https://docs.microsoft.com/gaming                                30,704
+
+Total bytes returned:  1,246,352
+Elapsed time:          00:00:01.2316864
+
+Control returned to OnStartButtonClick.
+```
+
+The order in which the download tasks occur is *not* important in this application, thus the tasks can run in parallel. Notice that the websites appear in a different order each time. Also, the elapsed time is faster. This is due to the fact that all fo the download tasks are running in parallel with `Task.WhenAll`.
+
+## Final source code
+
+The following code shows the extensions to the project to download content from the web.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
+
+namespace ParallelAsyncExample
 {
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        readonly HttpClient _client = new HttpClient { MaxResponseContentBufferSize = 1_000_000 };
+
+        readonly IEnumerable<string> _urlList = new string[]
         {
-            InitializeComponent();
+            "https://docs.microsoft.com",
+            "https://docs.microsoft.com/azure",
+            "https://docs.microsoft.com/powershell",
+            "https://docs.microsoft.com/dotnet",
+            "https://docs.microsoft.com/aspnet/core",
+            "https://docs.microsoft.com/windows",
+            "https://docs.microsoft.com/office",
+            "https://docs.microsoft.com/enterprise-mobility-security",
+            "https://docs.microsoft.com/visualstudio",
+            "https://docs.microsoft.com/microsoft-365",
+            "https://docs.microsoft.com/sql",
+            "https://docs.microsoft.com/dynamics365",
+            "https://docs.microsoft.com/surface",
+            "https://docs.microsoft.com/xamarin",
+            "https://docs.microsoft.com/azure/devops",
+            "https://docs.microsoft.com/system-center",
+            "https://docs.microsoft.com/graph",
+            "https://docs.microsoft.com/education",
+            "https://docs.microsoft.com/gaming",
+        };
+
+        void OnStartButtonClick(object sender, RoutedEventArgs e)
+        {
+            _startButton.IsEnabled = false;
+            _resultsTextBox.Clear();
+
+            Task.Run(StartSumPageSizesAsync);
         }
 
-        private async void startButton_Click(object sender, RoutedEventArgs e)
+        async Task StartSumPageSizesAsync()
         {
-            resultsTextBox.Clear();
-
-            // One-step async call.
             await SumPageSizesAsync();
-
-            // Two-step async call.
-            //Task sumTask = SumPageSizesAsync();
-            //await sumTask;
-
-            resultsTextBox.Text += "\r\nControl returned to startButton_Click.\r\n";
+            await Dispatcher.BeginInvoke(() =>
+            {
+                _resultsTextBox.Text += $"\nControl returned to {nameof(OnStartButtonClick)}.";
+                _startButton.IsEnabled = true;
+            });
         }
 
-        private async Task SumPageSizesAsync()
+        async Task SumPageSizesAsync()
         {
-            // Make a list of web addresses.
-            List<string> urlList = SetUpURLList();
+            var stopwatch = new Stopwatch();
+            stopwatch.Start();
 
-            // Declare an HttpClient object and increase the buffer size. The
-            // default buffer size is 65,536.
-            HttpClient client = new HttpClient() { MaxResponseContentBufferSize = 1000000 };
-
-            // Create a query.
             IEnumerable<Task<int>> downloadTasksQuery =
-                from url in urlList select ProcessURLAsync(url, client);
+                from url in _urlList
+                select ProcessUrlAsync(url, _client);
 
-            // Use ToArray to execute the query and start the download tasks.
             Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
 
-            // You can do other work here before awaiting.
-
-            // Await the completion of all the running tasks.
             int[] lengths = await Task.WhenAll(downloadTasks);
-
-            //// The previous line is equivalent to the following two statements.
-            //Task<int[]> whenAllTask = Task.WhenAll(downloadTasks);
-            //int[] lengths = await whenAllTask;
-
             int total = lengths.Sum();
 
-            //var total = 0;
-            //foreach (var url in urlList)
-            //{
-            //    // GetByteArrayAsync returns a Task<T>. At completion, the task
-            //    // produces a byte array.
-            //    byte[] urlContent = await client.GetByteArrayAsync(url);
-
-            //    // The previous line abbreviates the following two assignment
-            //    // statements.
-            //    Task<byte[]> getContentTask = client.GetByteArrayAsync(url);
-            //    byte[] urlContent = await getContentTask;
-
-            //    DisplayResults(url, urlContent);
-
-            //    // Update the total.
-            //    total += urlContent.Length;
-            //}
-
-            // Display the total count for all of the web addresses.
-            resultsTextBox.Text +=
-                $"\r\n\r\nTotal bytes returned:  {total}\r\n";
-        }
-
-        private List<string> SetUpURLList()
-        {
-            List<string> urls = new List<string>
+            await Dispatcher.BeginInvoke(() =>
             {
-                "https://msdn.microsoft.com",
-                "https://msdn.microsoft.com/library/hh290136.aspx",
-                "https://msdn.microsoft.com/library/ee256749.aspx",
-                "https://msdn.microsoft.com/library/hh290138.aspx",
-                "https://msdn.microsoft.com/library/hh290140.aspx",
-                "https://msdn.microsoft.com/library/dd470362.aspx",
-                "https://msdn.microsoft.com/library/aa578028.aspx",
-                "https://msdn.microsoft.com/library/ms404677.aspx",
-                "https://msdn.microsoft.com/library/ff730837.aspx"
-            };
-            return urls;
+                stopwatch.Stop();
+
+                _resultsTextBox.Text += $"\nTotal bytes returned:  {total:#,#}";
+                _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
+            });
         }
 
-        // The actions from the foreach loop are moved to this async method.
-        async Task<int> ProcessURLAsync(string url, HttpClient client)
+        async Task<int> ProcessUrlAsync(string url, HttpClient client)
         {
             byte[] byteArray = await client.GetByteArrayAsync(url);
-            DisplayResults(url, byteArray);
+            await DisplayResultsAsync(url, byteArray);
+
             return byteArray.Length;
         }
 
-        private void DisplayResults(string url, byte[] content)
-        {
-            // Display the length of each web site. The string format
-            // is designed to be used with a monospaced font, such as
-            // Lucida Console or Global Monospace.
-            var bytes = content.Length;
-            // Strip off the "https://".
-            var displayURL = url.Replace("https://", "");
-            resultsTextBox.Text += $"\n{displayURL,-58} {bytes,8}";
-        }
+        Task DisplayResultsAsync(string url, byte[] content) =>
+            Dispatcher.BeginInvoke(() =>
+                _resultsTextBox.Text += $"{url,-60} {content.Length,10:#,#}\n")
+                      .Task;
     }
 }
 ```
@@ -435,4 +334,5 @@ namespace AsyncExampleWPF_HttpClient_WhenAll
 ## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAll%2A?displayProperty=nameWithType>
-- [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Tutorial: Access the web with async and await (C#)](walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Code samples browser: async (C#)](https://docs.microsoft.com/samples/browse/?terms=async&languages=csharp)

@@ -180,14 +180,15 @@ _context.SaveChanges();
 
 In ASP.NET Core you can use Dependency Injection (DI) out of the box. You do not need to set up a third-party Inversion of Control (IoC) container, although you can plug your preferred IoC container into the ASP.NET Core infrastructure if you want. In this case, it means that you can directly inject the required EF DBContext or additional repositories through the controller constructor.
 
-In the example above of the `CatalogController` class, we are injecting an object of `CatalogContext` type plus other objects through the `CatalogController()` constructor.
+In the example above of the `CatalogController` class, we are injecting an object of `CatalogContext` which inherits from `DbContext` type and other required objects through the `CatalogController()` constructor.
 
-An important configuration to set up in the Web API project is the DbContext class registration into the service's IoC container. You typically do so in the `Startup` class by calling the `services.AddDbContext<DbContext>()` method inside the `ConfigureServices()` method, as shown in the following **simplified** example:
+An important configuration to set up in the Web API project is the DbContext class registration into the service's IoC container. You typically do so in the `Startup` class by calling the `services.AddDbContext<CatalogContext>()` method inside the `ConfigureServices()` method, as shown in the following **simplified** example:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
     // Additional code...
+    // Actual code reference : https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Catalog/Catalog.API/Startup.cs#L203
 
     services.AddDbContext<CatalogContext>(options =>
     {

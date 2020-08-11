@@ -13,7 +13,7 @@ In .NET 5.0 and later versions, a [change was made](https://github.com/dotnet/ru
 
 #### Reason for change
 
-The cost of potentially invoking the predicate more times is too great, even with the benefit of a lower overall complexity.
+The benefit of invoking the predicate fewer times outweighs a lower overall complexity, so the implementation that was introduced in .NET Core 1.0 was reverted.
 
 #### Version introduced
 

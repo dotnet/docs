@@ -1,7 +1,7 @@
 ---
 title: Additional class libraries and APIs
 description: Explore additional class libraries and APIs in .NET, including out-of-band (OOB) projects, platform-specific libraries, and private APIs.
-ms.date: 06/12/2020
+ms.date: 08/11/2020
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"

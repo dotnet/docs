@@ -1,6 +1,6 @@
 ---
 title: ControlBuilderInterceptor class
-ms.date: 08/06/2020
+ms.date: 08/11/2020
 api_name: 
   - System.Web.Compilation.ControlBuilderInterceptor
 api_location: 

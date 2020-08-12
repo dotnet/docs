@@ -159,7 +159,8 @@ public class StateObject
     public Socket workSocket = null;
 }  
   
-public class AsynchronousSocketListener {
+public class AsynchronousSocketListener
+{
     // Thread signal.  
     public static ManualResetEvent allDone = new ManualResetEvent(false);
 

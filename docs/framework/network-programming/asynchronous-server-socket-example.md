@@ -266,7 +266,8 @@ public class AsynchronousSocketListener
             new AsyncCallback(SendCallback), handler);  
     }
 
-    private static void SendCallback(IAsyncResult ar) {  
+    private static void SendCallback(IAsyncResult ar)
+    {
         try {  
             // Retrieve the socket from the state object.  
             Socket handler = (Socket) ar.AsyncState;  

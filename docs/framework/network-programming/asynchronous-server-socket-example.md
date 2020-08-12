@@ -155,7 +155,7 @@ public class StateObject
     // Received data string.
     public StringBuilder sb = new StringBuilder();
 
-    // Client  socket.  
+    // Client socket.
     public Socket workSocket = null;
 }  
   

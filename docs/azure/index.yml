@@ -9,7 +9,7 @@ metadata:
   description: Samples, tutorials, and education for .NET on Azure
   ms.topic: hub-page
   ms.prod: azure-dotnet
-  ms.date: 07/31/2020
+  ms.date: 08/12/2020
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new 
@@ -18,8 +18,8 @@ highlightedContent:
       title: Introduction to Azure and .NET
       url: intro.md
     - itemType: quickstart 
-      title: Deploy an ASP.NET web app
-      url: https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet
+      title: Create an ASP.NET Core web app in Azure
+      url: /azure/app-service/quickstart-dotnetcore
     - itemType: quickstart
       title: Build a serverless function
       url: /azure/azure-functions/functions-create-your-first-function-visual-studio
@@ -28,16 +28,16 @@ highlightedContent:
       url: /visualstudio/containers/container-tools?view=vs-2019
     - itemType: deploy
       title: Deploy a .NET app with Azure DevOps
-      url: https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
+      url: /azure/devops/pipelines/ecosystems/dotnet-core?view=azure-devops
     - itemType: tutorial
       title: Authentication end-to-end in App Service
-      url: https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-auth-aad
+      url: /azure/app-service/app-service-web-tutorial-auth-aad
     - itemType: learn 
       title: Secure custom APIs with Microsoft Identity
-      url: https://docs.microsoft.com/learn/modules/identity-secure-custom-api/
+      url: /learn/modules/identity-secure-custom-api/
     - itemType: learn
       title: Azure fundamentals
-      url: https://docs.microsoft.com/learn/paths/azure-fundamentals/
+      url: /learn/paths/azure-fundamentals/
 
 conceptualContent:
   title: Featured content

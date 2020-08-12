@@ -118,7 +118,7 @@ The resulting XAML should resemble the following:
     Copy the following code, and paste it above the `OnStartButtonClick` event handler in *MainWindow.xaml.cs*:
 
     ```csharp
-    readonly IEnumerable<string> _urlList = new string[]
+    private readonly IEnumerable<string> _urlList = new string[]
     {
         "https://docs.microsoft.com",
         "https://docs.microsoft.com/azure",
@@ -132,10 +132,9 @@ The resulting XAML should resemble the following:
     Copy the following methods, and paste them below the `OnStartButtonClick` event handler in *MainWindow.xaml.cs*:
 
     ```csharp
-    void SumPageSizes()
+    private void SumPageSizes()
     {
-        var stopwatch = new Stopwatch();
-        stopwatch.Start();
+        var stopwatch = Stopwatch.StartNew();
 
         int total = _urlList.Select(url => ProcessUrl(url)).Sum();
 
@@ -144,7 +143,7 @@ The resulting XAML should resemble the following:
         _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
     }
 
-    int ProcessUrl(string url)
+    private int ProcessUrl(string url)
     {
         using var memoryStream = new MemoryStream();
         var webReq = (HttpWebRequest)WebRequest.Create(url);
@@ -159,7 +158,7 @@ The resulting XAML should resemble the following:
         return content.Length;
     }
 
-    void DisplayResults(string url, byte[] content) =>
+    private void DisplayResults(string url, byte[] content) =>
         _resultsTextBox.Text += $"{url,-60} {content.Length,10:#,#}\n";
     ```
 
@@ -241,7 +240,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 1. All that remains to be done in `ProcessUrl` is to adjust the method signature. You can use the `await` operator only in methods that are marked with the [async](../../../language-reference/keywords/async.md) modifier. Add the modifier to mark the method as an *async method*, as the following code shows.
 
     ```csharp
-    async int ProcessUrl(string url)
+    private async int ProcessUrl(string url)
     ```
 
 1. The return type of an async method can only be <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `void` in C#. Typically, a return type of `void` is used only in an async event handler, where `void` is required. In other cases, you use `Task<T>` if the completed method has a [return](../../../language-reference/keywords/return.md) statement that returns a value of type T, and you use `Task` if the completed method doesn't return a meaningful value. You can think of the `Task` return type as meaning `Task<void>`.
@@ -256,13 +255,13 @@ Notice that it takes a few seconds to display the counts. During that time, the 
     The following code shows these changes.
 
     ```csharp
-    async Task<int> ProcessUrlAsync(string url)
+    private async Task<int> ProcessUrlAsync(string url)
     ```
 
     With those few changes, the conversion of `ProcessUrl` to an asynchronous method is complete.
 
     ```csharp
-    async Task<int> ProcessUrlAsync(string url)
+    private async Task<int> ProcessUrlAsync(string url)
     {
         using var memoryStream = new MemoryStream();
         var webReq = (HttpWebRequest)WebRequest.Create(url);
@@ -317,10 +316,9 @@ Notice that it takes a few seconds to display the counts. During that time, the 
     The conversion of `SumPageSizes` to `SumPageSizesAsync` is complete.
 
     ```csharp
-    async Task SumPageSizesAsync()
+    private async Task SumPageSizesAsync()
     {
-        var stopwatch = new Stopwatch();
-        stopwatch.Start();
+        var stopwatch = Stopwatch.StartNew();
 
         int total = 0;
         foreach (string url in _urlList)
@@ -365,7 +363,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 1. Finally, add the `async` modifier to the declaration so that the event handler can await `SumPagSizesAsync`.
 
     ```csharp
-    async void OnStartButtonClick(object sender, RoutedEventArgs e)
+    private async void OnStartButtonClick(object sender, RoutedEventArgs e)
     ```
 
      Typically, the names of event handlers aren't changed. The return type isn't changed to `Task` because event handlers must return `void`.
@@ -393,7 +391,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 1. In `ProcessUrlAsync`, replace the method body with the following code that relies on the `HttpClient` method.
 
     ```csharp
-    async Task<int> ProcessUrlAsync(string url, HttpClient client)
+    private async Task<int> ProcessUrlAsync(string url, HttpClient client)
     {
         byte[] content = await client.GetByteArrayAsync(url);
         DisplayResults(url, content);
@@ -427,9 +425,10 @@ namespace SerialAsyncExample
 {
     public partial class MainWindow : Window
     {
-        readonly HttpClient _client = new HttpClient { MaxResponseContentBufferSize = 1_000_000 };
+        private readonly HttpClient _client =
+            new HttpClient { MaxResponseContentBufferSize = 1_000_000 };
 
-        readonly IEnumerable<string> _urlList = new string[]
+        private readonly IEnumerable<string> _urlList = new string[]
         {
             "https://docs.microsoft.com",
             "https://docs.microsoft.com/azure",
@@ -439,7 +438,7 @@ namespace SerialAsyncExample
             "https://docs.microsoft.com/windows"
         };
 
-        async void OnStartButtonClick(object sender, RoutedEventArgs e)
+        private async void OnStartButtonClick(object sender, RoutedEventArgs e)
         {
             _startButton.IsEnabled = false;
             _resultsTextBox.Clear();
@@ -450,10 +449,9 @@ namespace SerialAsyncExample
             _startButton.IsEnabled = true;
         }
 
-        async Task SumPageSizesAsync()
+        private async Task SumPageSizesAsync()
         {
-            var stopwatch = new Stopwatch();
-            stopwatch.Start();
+            var stopwatch = Stopwatch.StartNew();
 
             int total = 0;
             foreach (string url in _urlList)
@@ -467,7 +465,7 @@ namespace SerialAsyncExample
             _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
         }
 
-        async Task<int> ProcessUrlAsync(string url, HttpClient client)
+        private async Task<int> ProcessUrlAsync(string url, HttpClient client)
         {
             byte[] content = await client.GetByteArrayAsync(url);
             DisplayResults(url, content);
@@ -475,7 +473,7 @@ namespace SerialAsyncExample
             return content.Length;
         }
 
-        void DisplayResults(string url, byte[] content) =>
+        private void DisplayResults(string url, byte[] content) =>
             _resultsTextBox.Text += $"{url,-60} {content.Length,10:#,#}\n";
 
         protected override void OnClosed(EventArgs e) => _client?.Dispose();

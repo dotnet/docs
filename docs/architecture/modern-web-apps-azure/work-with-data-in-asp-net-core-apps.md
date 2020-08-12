@@ -3,7 +3,8 @@ title: Work with data in ASP.NET Core Apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Working with data in ASP.NET Core apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/04/2019
+ms.date: 08/12/2020
+no-loc: [Blazor, WebAssembly]
 ---
 # Working with Data in ASP.NET Core Apps
 

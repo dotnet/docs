@@ -3,7 +3,8 @@ title: Developing ASP.NET Core MVC apps
 description: Architect Modern Web Applications with ASP.NET Core and Azure | developing ASP.NET Core MVC Apps
 author: ardalis
 ms.author: wiwagn
-ms.date: 07/28/2020
+ms.date: 08/12/2020
+no-loc: [Blazor, WebAssembly]
 ---
 # Develop ASP.NET Core MVC apps
 

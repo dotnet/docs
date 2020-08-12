@@ -28,20 +28,14 @@ On all supported versions of .NET Framework, .NET Core, and .NET, `DataSet` and 
 
 If the incoming XML data contains an object whose type is not in this list:
 
-* An exception is thrown with the following message and stack trace.
+* An exception is thrown with the following message and stack trace.  
+Error Message:  
+System.InvalidOperationException : Type '<Type Name>, Version=<n.n.n.n>, Culture=<culture>, PublicKeyToken=<token value>' is not allowed here. See [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227) for more details.  
+Stack Trace:  
+at System.Data.TypeLimiter.EnsureTypeIsAllowed(Type type, TypeLimiter capturedLimiter)  
+at System.Data.DataColumn.UpdateColumnType(Type type, StorageType typeCode)  
+at System.Data.DataColumn.set_DataType(Type value)  
 
-    Error Message:
-    
-       System.InvalidOperationException : Type '<Type Name>, Version=<n.n.n.n>, Culture=<culture>, PublicKeyToken=<token value>' is not allowed here. See [https://go.microsoft.com/fwlink/?linkid=2132227](https://go.microsoft.com/fwlink/?linkid=2132227) for more details.
-       
-      Stack Trace:
-      
-       at System.Data.TypeLimiter.EnsureTypeIsAllowed(Type type, TypeLimiter capturedLimiter)
-       
-       at System.Data.DataColumn.UpdateColumnType(Type type, StorageType typeCode)
-       
-       at System.Data.DataColumn.set_DataType(Type value)
-           
 * The deserialization operation fails.
 
 When loading XML into an existing `DataSet` or `DataTable` instance, the existing column definitions are also taken into account. If the table already contains a column definition of a custom type, that type is temporarily added to the allow list for the duration of the XML deserialization operation.

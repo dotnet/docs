@@ -5,7 +5,7 @@ ms.date: 08/07/2020
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: contperfq1
+ms.custom: "vs-dotnet,contperfq1"
 ---
 # Tutorial: Create a .NET Standard library using Visual Studio
 

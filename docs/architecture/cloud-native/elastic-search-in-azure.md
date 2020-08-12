@@ -55,7 +55,7 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 
 - [Exploring the different types of NoSQL Databases Part II](https://www.3pillarglobal.com/insights/exploring-the-different-types-of-nosql-databases)
 
-- [On RDBMS, NoSQL and NewSQL databases. Interview with John Ryan](https://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/)
+- [On RDBMS, NoSQL and NewSQL databases. Interview with John Ryan](http://www.odbms.org/blog/2018/03/on-rdbms-nosql-and-newsql-databases-interview-with-john-ryan/)
   
 - [SQL vs NoSQL vs NewSQL: The Full Comparison](https://www.xenonstack.com/blog/sql-vs-nosql-vs-newsql/)
 

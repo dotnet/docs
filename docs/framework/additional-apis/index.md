@@ -1,7 +1,7 @@
 ---
 title: Additional class libraries and APIs
 description: Explore additional class libraries and APIs in .NET, including out-of-band (OOB) projects, platform-specific libraries, and private APIs.
-ms.date: 06/12/2020
+ms.date: 08/11/2020
 helpviewer_keywords: 
   - "Additional class libraries"
   - "Additional managed libraries"
@@ -81,6 +81,7 @@ These APIs support the product infrastructure and are not intended or supported 
 * [System.Net.WebHeaderCollection.AddInternal method](system.net.webheadercollection.addinternal.md)
 * [System.ServiceModel.Channels.Message.BodyToString method](system.servicemodel.channels.message.bodytostring.md)
 * [System.ServiceModel.Channels.Message.WriteStartHeaders method](system.servicemodel.channels.message.writestartheaders.md)
+* [System.Web.Compilation.ControlBuilderInterceptor class](controlbuilderinterceptor-class.md)
 * [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes field](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [System.Windows.Forms.Design.DataMemberFieldEditor class](datamemberfieldeditor-class.md)
 * [System.Windows.Forms.Design.DataMemberListEditor class](datamemberlisteditor-class.md)

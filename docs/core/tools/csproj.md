@@ -1,6 +1,7 @@
 ---
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
+ms.topic: reference
 ms.date: 04/08/2019
 ---
 

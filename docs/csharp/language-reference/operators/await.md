@@ -14,14 +14,14 @@ The `await` operator suspends evaluation of the enclosing [async](../keywords/as
 
 In the following example, the <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A?displayProperty=nameWithType> method returns the `Task<byte[]>` instance, which represents an asynchronous operation that produces a byte array when it completes. Until the operation completes, the `await` operator suspends the `DownloadDocsMainPageAsync` method. When `DownloadDocsMainPageAsync` gets suspended, control is returned to the `Main` method, which is the caller of `DownloadDocsMainPageAsync`. The `Main` method executes until it needs the result of the asynchronous operation performed by the `DownloadDocsMainPageAsync` method. When <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> gets all the bytes, the rest of the `DownloadDocsMainPageAsync` method is evaluated. After that, the rest of the `Main` method is evaluated.
 
-[!code-csharp[await example](snippets/AwaitOperator.cs)]
+[!code-csharp[await example](snippets/shared/AwaitOperator.cs)]
 
 The preceding example uses the [async `Main` method](../../programming-guide/main-and-command-args/index.md), which is possible beginning with C# 7.1. For more information, see the [await operator in the Main method](#await-operator-in-the-main-method) section.
 
 > [!NOTE]
 > For an introduction to asynchronous programming, see [Asynchronous programming with async and await](../../programming-guide/concepts/async/index.md). Asynchronous programming with `async` and `await` follows the [task-based asynchronous pattern](../../../standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md).
 
-You can use the `await` operator only in a method, [lambda expression](../../programming-guide/statements-expressions-operators/lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous function, inside the block of a [lock statement](../keywords/lock-statement.md), and in an [unsafe](../keywords/unsafe.md) context.
+You can use the `await` operator only in a method, [lambda expression](lambda-expressions.md), or [anonymous method](delegate-operator.md) that is modified by the [async](../keywords/async.md) keyword. Within an async method, you can't use the `await` operator in the body of a synchronous function, inside the block of a [lock statement](../keywords/lock-statement.md), and in an [unsafe](../keywords/unsafe.md) context.
 
 The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharplang/spec/expressions.md#awaitable-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 

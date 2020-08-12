@@ -11,7 +11,7 @@ ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
 If you have used LINQ, you have experience with a rich library
 where the `Func` types are part of the API set. (If you are not familiar
 with LINQ, you probably want to read [the LINQ tutorial](linq/index.md) and
-the article about [lambda expressions](./programming-guide/statements-expressions-operators/lambda-expressions.md) before this one.)
+the article about [lambda expressions](language-reference/operators/lambda-expressions.md) before this one.)
 *Expression Trees* provide richer interaction with the arguments that
 are functions.
 

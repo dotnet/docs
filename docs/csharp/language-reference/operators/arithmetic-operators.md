@@ -11,6 +11,8 @@ f1_keywords:
   - "%_CSharpKeyword"
   - "+_CSharpKeyword"
   - "-_CSharpKeyword"
+  - "%=_CSharpKeyword"
+  - "*=_CSharpKeyword"
 helpviewer_keywords: 
   - "arithmetic operators [C#]"
   - "increment operator [C#]"
@@ -49,13 +51,13 @@ The increment operator is supported in two forms: the postfix increment operator
 
 The result of `x++` is the value of `x` *before* the operation, as the following example shows:
 
-[!code-csharp-interactive[postfix increment](snippets/ArithmeticOperators.cs#PostfixIncrement)]
+[!code-csharp-interactive[postfix increment](snippets/shared/ArithmeticOperators.cs#PostfixIncrement)]
 
 ### Prefix increment operator
 
 The result of `++x` is the value of `x` *after* the operation, as the following example shows:
 
-[!code-csharp-interactive[prefix increment](snippets/ArithmeticOperators.cs#PrefixIncrement)]
+[!code-csharp-interactive[prefix increment](snippets/shared/ArithmeticOperators.cs#PrefixIncrement)]
 
 ## Decrement operator --
 
@@ -67,19 +69,19 @@ The decrement operator is supported in two forms: the postfix decrement operator
 
 The result of `x--` is the value of `x` *before* the operation, as the following example shows:
 
-[!code-csharp-interactive[postfix decrement](snippets/ArithmeticOperators.cs#PostfixDecrement)]
+[!code-csharp-interactive[postfix decrement](snippets/shared/ArithmeticOperators.cs#PostfixDecrement)]
 
 ### Prefix decrement operator
 
 The result of `--x` is the value of `x` *after* the operation, as the following example shows:
 
-[!code-csharp-interactive[prefix decrement](snippets/ArithmeticOperators.cs#PrefixDecrement)]
+[!code-csharp-interactive[prefix decrement](snippets/shared/ArithmeticOperators.cs#PrefixDecrement)]
 
 ## Unary plus and minus operators
 
 The unary `+` operator returns the value of its operand. The unary `-` operator computes the numeric negation of its operand.
 
-[!code-csharp-interactive[unary plus and minus](snippets/ArithmeticOperators.cs#UnaryPlusAndMinus)]
+[!code-csharp-interactive[unary plus and minus](snippets/shared/ArithmeticOperators.cs#UnaryPlusAndMinus)]
 
 The [ulong](../builtin-types/integral-numeric-types.md) type doesn't support the unary `-` operator.
 
@@ -87,7 +89,7 @@ The [ulong](../builtin-types/integral-numeric-types.md) type doesn't support the
 
 The multiplication operator `*` computes the product of its operands:
 
-[!code-csharp-interactive[multiplication operator](snippets/ArithmeticOperators.cs#Multiplication)]
+[!code-csharp-interactive[multiplication operator](snippets/shared/ArithmeticOperators.cs#Multiplication)]
 
 The unary `*` operator is the [pointer indirection operator](pointer-related-operators.md#pointer-indirection-operator-).
 
@@ -99,17 +101,17 @@ The division operator `/` divides its left-hand operand by its right-hand operan
 
 For the operands of integer types, the result of the `/` operator is of an integer type and equals the quotient of the two operands rounded towards zero:
 
-[!code-csharp-interactive[integer division](snippets/ArithmeticOperators.cs#IntegerDivision)]
+[!code-csharp-interactive[integer division](snippets/shared/ArithmeticOperators.cs#IntegerDivision)]
 
 To obtain the quotient of the two operands as a floating-point number, use the `float`, `double`, or `decimal` type:
 
-[!code-csharp-interactive[integer as floating-point division](snippets/ArithmeticOperators.cs#IntegerAsFloatingPointDivision)]
+[!code-csharp-interactive[integer as floating-point division](snippets/shared/ArithmeticOperators.cs#IntegerAsFloatingPointDivision)]
 
 ### Floating-point division
 
 For the `float`, `double`, and `decimal` types, the result of the `/` operator is the quotient of the two operands:
 
-[!code-csharp-interactive[floating-point division](snippets/ArithmeticOperators.cs#FloatingPointDivision)]
+[!code-csharp-interactive[floating-point division](snippets/shared/ArithmeticOperators.cs#FloatingPointDivision)]
 
 If one of the operands is `decimal`, another operand can be neither `float` nor `double`, because neither `float` nor `double` is implicitly convertible to `decimal`. You must explicitly convert the `float` or `double` operand to the `decimal` type. For more information about conversions between numeric types, see [Built-in numeric conversions](../builtin-types/numeric-conversions.md).
 
@@ -121,7 +123,7 @@ The remainder operator `%` computes the remainder after dividing its left-hand o
 
 For the operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder is the same as that of the left-hand operand, as the following example shows:
 
-[!code-csharp-interactive[integer remainder](snippets/ArithmeticOperators.cs#IntegerRemainder)]
+[!code-csharp-interactive[integer remainder](snippets/shared/ArithmeticOperators.cs#IntegerRemainder)]
 
 Use the <xref:System.Math.DivRem%2A?displayProperty=nameWithType> method to compute both integer division and remainder results.
 
@@ -141,13 +143,13 @@ For the `decimal` operands, the remainder operator `%` is equivalent to the [rem
 
 The following example demonstrates the behavior of the remainder operator with floating-point operands:
 
-[!code-csharp-interactive[floating-point remainder](snippets/ArithmeticOperators.cs#FloatingPointRemainder)]
+[!code-csharp-interactive[floating-point remainder](snippets/shared/ArithmeticOperators.cs#FloatingPointRemainder)]
 
 ## Addition operator +
 
 The addition operator `+` computes the sum of its operands:
 
-[!code-csharp-interactive[addition operator](snippets/ArithmeticOperators.cs#Addition)]
+[!code-csharp-interactive[addition operator](snippets/shared/ArithmeticOperators.cs#Addition)]
 
 You can also use the `+` operator for string concatenation and delegate combination. For more information, see the [`+` and `+=` operators](addition-operator.md) article.
 
@@ -155,7 +157,7 @@ You can also use the `+` operator for string concatenation and delegate combinat
 
 The subtraction operator `-` subtracts its right-hand operand from its left-hand operand:
 
-[!code-csharp-interactive[subtraction operator](snippets/ArithmeticOperators.cs#Subtraction)]
+[!code-csharp-interactive[subtraction operator](snippets/shared/ArithmeticOperators.cs#Subtraction)]
 
 You can also use the `-` operator for delegate removal. For more information, see the [`-` and `-=` operators](subtraction-operator.md) article.
 
@@ -177,11 +179,11 @@ except that `x` is only evaluated once.
 
 The following example demonstrates the usage of compound assignment with arithmetic operators:
 
-[!code-csharp-interactive[compound assignment](snippets/ArithmeticOperators.cs#CompoundAssignment)]
+[!code-csharp-interactive[compound assignment](snippets/shared/ArithmeticOperators.cs#CompoundAssignment)]
 
 Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promotions), the result of the `op` operation might be not implicitly convertible to the type `T` of `x`. In such a case, if `op` is a predefined operator and the result of the operation is explicitly convertible to the type `T` of `x`, a compound assignment expression of the form `x op= y` is equivalent to `x = (T)(x op y)`, except that `x` is only evaluated once. The following example demonstrates that behavior:
 
-[!code-csharp-interactive[compound assignment with cast](snippets/ArithmeticOperators.cs#CompoundAssignmentWithCast)]
+[!code-csharp-interactive[compound assignment with cast](snippets/shared/ArithmeticOperators.cs#CompoundAssignmentWithCast)]
 
 You also use the `+=` and `-=` operators to subscribe to and unsubscribe from an [event](../keywords/event.md), respectively. For more information, see [How to subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -198,7 +200,7 @@ Binary arithmetic operators are left-associative. That is, operators with the sa
 
 Use parentheses, `()`, to change the order of evaluation imposed by operator precedence and associativity.
 
-[!code-csharp-interactive[precedence and associativity](snippets/ArithmeticOperators.cs#PrecedenceAndAssociativity)]
+[!code-csharp-interactive[precedence and associativity](snippets/shared/ArithmeticOperators.cs#PrecedenceAndAssociativity)]
 
 For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
@@ -217,7 +219,7 @@ In case of integer arithmetic overflow, an overflow checking context, which can 
 
 Along with the [checked and unchecked](../keywords/checked-and-unchecked.md) statements, you can use the `checked` and `unchecked` operators to control the overflow checking context, in which an expression is evaluated:
 
-[!code-csharp-interactive[checked and unchecked](snippets/ArithmeticOperators.cs#CheckedUnchecked)]
+[!code-csharp-interactive[checked and unchecked](snippets/shared/ArithmeticOperators.cs#CheckedUnchecked)]
 
 By default, arithmetic operations occur in an *unchecked* context.
 
@@ -225,7 +227,7 @@ By default, arithmetic operations occur in an *unchecked* context.
 
 Arithmetic operations with the `float` and `double` types never throw an exception. The result of arithmetic operations with those types can be one of special values that represent infinity and not-a-number:
 
-[!code-csharp-interactive[double non-finite values](snippets/ArithmeticOperators.cs#FloatingPointOverflow)]
+[!code-csharp-interactive[double non-finite values](snippets/shared/ArithmeticOperators.cs#FloatingPointOverflow)]
 
 For the operands of the `decimal` type, arithmetic overflow always throws an <xref:System.OverflowException> and division by zero always throws a <xref:System.DivideByZeroException>.
 
@@ -233,7 +235,7 @@ For the operands of the `decimal` type, arithmetic overflow always throws an <xr
 
 Because of general limitations of the floating-point representation of real numbers and floating-point arithmetic, round-off errors might occur in calculations with floating-point types. That is, the produced result of an expression might differ from the expected mathematical result. The following example demonstrates several such cases:
 
-[!code-csharp-interactive[round-off errors](snippets/ArithmeticOperators.cs#RoundOffErrors)]
+[!code-csharp-interactive[round-off errors](snippets/shared/ArithmeticOperators.cs#RoundOffErrors)]
 
 For more information, see remarks at the [System.Double](/dotnet/api/system.double#remarks), [System.Single](/dotnet/api/system.single#remarks), or [System.Decimal](/dotnet/api/system.decimal#remarks) reference pages.
 

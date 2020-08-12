@@ -27,7 +27,7 @@ The simplest C# expressions are literals (for example, [integer](../builtin-type
 
 In the following code, examples of expressions are at the right-hand side of assignments:
 
-[!code-csharp[expression examples](snippets/Overview.cs#Expressions)]
+[!code-csharp[expression examples](snippets/shared/Overview.cs#Expressions)]
 
 Typically, an expression produces a result and can be included in another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
 
@@ -39,15 +39,15 @@ Here are some other kinds of expressions that C# provides:
 
 - [Interpolated string expressions](../tokens/interpolated.md) that provide convenient syntax to create formatted strings:
 
-  [!code-csharp-interactive[interpolated string](snippets/Overview.cs#InterpolatedString)]
+  [!code-csharp-interactive[interpolated string](snippets/shared/Overview.cs#InterpolatedString)]
 
-- [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md) that allow you to create anonymous functions:
+- [Lambda expressions](lambda-expressions.md) that allow you to create anonymous functions:
 
-  [!code-csharp-interactive[lambda expression](snippets/Overview.cs#Lambda)]
+  [!code-csharp-interactive[lambda expression](snippets/shared/Overview.cs#Lambda)]
 
 - [Query expressions](../keywords/query-keywords.md) that allow you to use query capabilities directly in C#:
 
-  [!code-csharp-interactive[query expression](snippets/Overview.cs#Query)]
+  [!code-csharp-interactive[query expression](snippets/shared/Overview.cs#Query)]
 
 You can use an [expression body definition](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to provide a concise definition for a method, constructor, property, indexer, or finalizer.
 

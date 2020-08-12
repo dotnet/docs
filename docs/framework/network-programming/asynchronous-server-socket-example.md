@@ -164,10 +164,12 @@ public class AsynchronousSocketListener
     // Thread signal.  
     public static ManualResetEvent allDone = new ManualResetEvent(false);
 
-    public AsynchronousSocketListener() {  
+    public AsynchronousSocketListener()
+    {
     }
 
-    public static void StartListening() {  
+    public static void StartListening()
+    {
         // Establish the local endpoint for the socket.  
         // The DNS name of the computer  
         // running the listener is "host.contoso.com".  
@@ -207,7 +209,8 @@ public class AsynchronousSocketListener
   
     }
 
-    public static void AcceptCallback(IAsyncResult ar) {  
+    public static void AcceptCallback(IAsyncResult ar)
+    {
         // Signal the main thread to continue.  
         allDone.Set();  
   
@@ -222,7 +225,8 @@ public class AsynchronousSocketListener
             new AsyncCallback(ReadCallback), state);  
     }
 
-    public static void ReadCallback(IAsyncResult ar) {  
+    public static void ReadCallback(IAsyncResult ar)
+    {
         String content = String.Empty;  
   
         // Retrieve the state object and the handler socket  
@@ -280,12 +284,15 @@ public class AsynchronousSocketListener
             handler.Shutdown(SocketShutdown.Both);  
             handler.Close();  
   
-        } catch (Exception e) {  
+        }
+        catch (Exception e)
+        {
             Console.WriteLine(e.ToString());  
         }  
     }
 
-    public static int Main(String[] args) {  
+    public static int Main(String[] args)
+    {
         StartListening();  
         return 0;  
     }

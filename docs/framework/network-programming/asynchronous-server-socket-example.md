@@ -144,7 +144,8 @@ using System.Text;
 using System.Threading;  
   
 // State object for reading client data asynchronously  
-public class StateObject {
+public class StateObject
+{
     // Size of receive buffer.  
     public const int BufferSize = 1024;
 

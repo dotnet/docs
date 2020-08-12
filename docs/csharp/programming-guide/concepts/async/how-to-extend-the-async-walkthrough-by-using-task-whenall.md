@@ -1,7 +1,7 @@
 ---
 title: "How to extend the async walkthrough by using Task.WhenAll (C#)"
 description: Learn how to improve performance of the async solution in C# by using Task.WhenAll. This method asynchronously awaits multiple asynchronous operations.
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.assetid: f6927ef2-dc6c-43f8-bc82-bbeac42de423
 ---
 
@@ -161,33 +161,7 @@ Navigate to the `SumPageSizesAsync` method.
 
 1. Finally, wrap the updates to the results textbox and the call to <xref:System.Diagnostics.Stopwatch.Stop?displayProperty=nameWithType> in the <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A?displayProperty=nameWithType>. Be sure to `await` the call.
 
-```csharp
-await Dispatcher.BeginInvoke(() =>
-{
-    stopwatch.Stop();
-
-    _resultsTextBox.Text += $"\nTotal bytes returned:  {total:#,#}";
-    _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
-});
-```
-
-The updated version of the `SumPageSizesAsync` method should be as follows:
-
-```csharp
-async Task SumPageSizesAsync()
-{
-    var stopwatch = new Stopwatch();
-    stopwatch.Start();
-
-    IEnumerable<Task<int>> downloadTasksQuery =
-        from url in _urlList
-        select ProcessURLAsync(url, _client);
-
-    Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
-
-    int[] lengths = await Task.WhenAll(downloadTasks);
-    int total = lengths.Sum();
-
+    ```csharp
     await Dispatcher.BeginInvoke(() =>
     {
         stopwatch.Stop();
@@ -195,8 +169,34 @@ async Task SumPageSizesAsync()
         _resultsTextBox.Text += $"\nTotal bytes returned:  {total:#,#}";
         _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
     });
-}
-```
+    ```
+
+    The updated version of the `SumPageSizesAsync` method should be as follows:
+
+    ```csharp
+    async Task SumPageSizesAsync()
+    {
+        var stopwatch = new Stopwatch();
+        stopwatch.Start();
+
+        IEnumerable<Task<int>> downloadTasksQuery =
+            from url in _urlList
+            select ProcessURLAsync(url, _client);
+
+        Task<int>[] downloadTasks = downloadTasksQuery.ToArray();
+
+        int[] lengths = await Task.WhenAll(downloadTasks);
+        int total = lengths.Sum();
+
+        await Dispatcher.BeginInvoke(() =>
+        {
+            stopwatch.Stop();
+
+            _resultsTextBox.Text += $"\nTotal bytes returned:  {total:#,#}";
+            _resultsTextBox.Text += $"\nElapsed time:          {stopwatch.Elapsed}\n";
+        });
+    }
+    ```
 
 ## Test the Task.WhenAll solutions
 

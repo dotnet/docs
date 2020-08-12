@@ -2,7 +2,7 @@
 title: "Tutorial: Access the web with async and await (C#)"
 description: This tutorial converts a synchronous application into an asynchronous solution in C# that uses the async and await features.
 ms.topic: tutorial
-ms.date: 08/11/2020
+ms.date: 08/12/2020
 ms.assetid: c95d8d71-5a98-4bf0-aaf4-45fed2ebbacd
 ---
 
@@ -17,7 +17,7 @@ This tutorial starts with a synchronous Windows Presentation Foundation (WPF) ap
 If you don't want to build the applications yourself, you can download [Async Sample: Asynchronous programming with async and await in C#](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs).
 
 > [!NOTE]
-> To run the examples, you must have Visual Studio 2019 (v16.7.0) or newer and the .NET 5.0 or newer installed on your computer.
+> To run the examples, you must have Visual Studio 2019 (v16.7.0) or newer and .NET 5.0 or newer installed on your computer.
 
 ## Create a WPF application
 

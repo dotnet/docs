@@ -7,7 +7,7 @@ namespace TransformationCS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // <SnippetDeclareTestCompilation>
             Compilation test = CreateTestCompilation();
@@ -35,13 +35,13 @@ namespace TransformationCS
         private static Compilation CreateTestCompilation()
         {
             // <SnippetCreateTestCompilation>
-            String programPath = @"..\..\Program.cs";
+            String programPath = @"..\..\..\Program.cs";
             String programText = File.ReadAllText(programPath);
             SyntaxTree programTree =
                            CSharpSyntaxTree.ParseText(programText)
                                            .WithFilePath(programPath);
 
-            String rewriterPath = @".\..\TypeInferenceRewriter.cs";
+            String rewriterPath = @"..\..\..\TypeInferenceRewriter.cs";
             String rewriterText = File.ReadAllText(rewriterPath);
             SyntaxTree rewriterTree =
                            CSharpSyntaxTree.ParseText(rewriterText)

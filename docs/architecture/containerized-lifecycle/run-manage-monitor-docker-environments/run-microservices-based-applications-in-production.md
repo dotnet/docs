@@ -1,7 +1,7 @@
 ---
 title: Run composed and microservices-based applications in production environments
 description: Get to know the key components to run container-based applications in production
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 # Run composed and microservices-based applications in production environments
 

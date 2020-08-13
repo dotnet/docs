@@ -1,5 +1,6 @@
 ---
 title: "Controls by Category"
+description: Review Windows Presentation Foundation controls grouped into categories, which can help you select the appropriate control by comparing similar controls.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [WPF], listed by category"

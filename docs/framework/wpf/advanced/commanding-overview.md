@@ -1,5 +1,6 @@
 ---
 title: "Commanding Overview"
+description: Learn about commanding, an input mechanism in Windows Presentation Foundation which provides input handling at a more semantic level than device input.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

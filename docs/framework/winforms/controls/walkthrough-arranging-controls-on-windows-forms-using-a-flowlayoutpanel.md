@@ -1,5 +1,6 @@
 ---
 title: Arrange Controls Using FlowLayoutPanel
+description: Learn how to use the FlowLayoutPanel control and the TableLayoutPanel control to provide intuitive ways to arrange controls in your Windows Forms project.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "FlowLayoutPanel control [Windows Forms], walkthroughs"

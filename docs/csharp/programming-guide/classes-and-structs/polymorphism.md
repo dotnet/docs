@@ -1,5 +1,6 @@
 ---
 title: "Polymorphism - C# Programming Guide"
+description: Learn about polymorphism, a key concept in object-oriented programming languages like C#, which describes the relationship between base and derived classes.
 ms.date: 02/08/2020
 helpviewer_keywords: 
   - "C# language, polymorphism"
@@ -32,7 +33,7 @@ In C#, every type is polymorphic because all types, including user-defined types
 
 ### Virtual members
 
-When a derived class inherits from a base class, it gains all the methods, fields, properties, and events of the base class. The designer of the derived class can different choices for the behavior of virtual methods:
+When a derived class inherits from a base class, it gains all the methods, fields, properties, and events of the base class. The designer of the derived class has different choices for the behavior of virtual methods:
 
 - The derived class may override virtual members in the base class, defining new behavior.
 - The derived class inherit the closest base class method without overriding it, preserving the existing behavior but enabling further derived classes to override the method.

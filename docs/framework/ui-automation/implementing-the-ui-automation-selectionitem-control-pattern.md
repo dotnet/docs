@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation SelectionItem Control Pattern"
+description: See guidelines and conventions to implement the SelectionItem control pattern in UI Automation. Know required members for the ISelectionItemProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Selection Item control pattern"

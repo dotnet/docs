@@ -1,5 +1,6 @@
 ---
 title: "How To: Create a New Setting at Design Time"
+description: Learn how to create a new Windows Forms setting at design time by using the Settings designer in Visual Studio.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "application settings [Windows Forms], design time"

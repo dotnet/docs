@@ -1,5 +1,6 @@
 ---
 title: "COM Interop Sample: .NET Client and COM Server"
+description: Read a code sample that shows how a .NET client accesses a COM server to create a COM coclass instance and call class members to perform mortgage calculations.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

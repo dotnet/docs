@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Security Overview"
+description: Read an overview of the security model for Microsoft UI Automation. Understand user account control, tasks that require higher privileges, and manifest files.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "UI Automation, security model"

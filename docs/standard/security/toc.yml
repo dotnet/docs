@@ -4,7 +4,7 @@
   - name: Key Security Concepts
     href: key-security-concepts.md
   - name: .NET Core FIPS compliance
-    href: fips-compliance.md 
+    href: fips-compliance.md
   - name: Role-Based Security
     href: role-based-security.md
     items:
@@ -19,8 +19,11 @@
     - name: Impersonating and Reverting
       href: impersonating-and-reverting.md
   - name: Cryptography Model
-    href: cryptography-model.md
     items:
+    - name: Overview
+      href: cryptography-model.md
+    - name: Cross-platform cryptography
+      href: cross-platform-cryptography.md
     - name: Cryptographic Services
       href: cryptographic-services.md
     - name: Generating Keys for Encryption and Decryption
@@ -35,8 +38,6 @@
       href: cryptographic-signatures.md
     - name: Ensuring Data Integrity with Hash Codes
       href: ensuring-data-integrity-with-hash-codes.md
-    - name: Creating a Cryptographic Scheme
-      href: creating-a-cryptographic-scheme.md
     - name: "How to: Encrypt XML Elements with Symmetric Keys"
       href: how-to-encrypt-xml-elements-with-symmetric-keys.md
     - name: "How to: Decrypt XML Elements with Symmetric Keys"

@@ -1,4 +1,4 @@
-Imports System.Windows ' Window
+﻿Imports System.Windows ' Window
 
 Namespace SDKSample
 

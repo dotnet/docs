@@ -1,5 +1,6 @@
 ---
 title: "How to: Perform Lazy Initialization of Objects"
+description: See how to perform lazy initialization of objects using the System.Lazy<T> class. Lazy initialization means objects aren't created if they're never needed.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

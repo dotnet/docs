@@ -1,5 +1,6 @@
 ---
 title: "Serialization (C#)"
+description: Serialization converts an object into a stream of bytes to store the object or transmit it to memory, a database, or a file. 
 ms.date: 01/02/2020
 ---
 # Serialization (C#)
@@ -38,6 +39,8 @@ JSON serialization serializes the public properties of an object into a string, 
 The <xref:System.Runtime.Serialization> namespace contains classes for binary and XML serialization and deserialization.
 
 Binary serialization uses binary encoding to produce compact serialization for uses such as storage or socket-based network streams. In binary serialization, all members, even members that are read-only, are serialized, and performance is enhanced.
+
+[!INCLUDE [binary-serialization-warning](~/includes/binary-serialization-warning.md)]
 
 XML serialization serializes the public fields and properties of an object, or the parameters and return values of methods, into an XML stream that conforms to a specific XML Schema definition language (XSD) document. XML serialization results in strongly typed classes with public properties and fields that are converted to XML. <xref:System.Xml.Serialization> contains classes for serializing and deserializing XML. You apply attributes to classes and class members to control the way the <xref:System.Xml.Serialization.XmlSerializer> serializes or deserializes an instance of the class.
 

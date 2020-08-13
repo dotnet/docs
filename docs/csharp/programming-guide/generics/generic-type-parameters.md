@@ -1,5 +1,6 @@
 ---
 title: "Generic Type Parameters - C# Programming Guide"
+description: Learn about generic type definition in C#, where a type parameter is a placeholder for a type that a client specifies for an instance of the generic type.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], type parameters"

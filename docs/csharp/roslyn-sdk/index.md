@@ -17,7 +17,7 @@ increase our productivity. We rely on code analysis tools to improve our
 code quality, and code generators to aid in application construction. As
 these tools get smarter, they need access to more and more of the model
 that only compilers create as they process application code. This is the core mission of
-the Roslyn APIs: opening up the black boxes and allowing tools and end
+the Roslyn APIs: opening up the opaque boxes and allowing tools and end
 users to share in the wealth of information compilers have about our code.
 Instead of being opaque source-code-in and object-code-out translators,
 through Roslyn, compilers become platforms: APIs that you can use for

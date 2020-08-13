@@ -1,5 +1,6 @@
 ---
 title: "Focus Overview"
+description: "Learn about the two main concepts in Windows Presentation Foundation that pertain to focus: keyboard focus and logical focus."
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

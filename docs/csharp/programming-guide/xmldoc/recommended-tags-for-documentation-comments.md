@@ -1,5 +1,6 @@
 ---
 title: "Recommended tags for documentation comments - C# programming guide"
+description: Learn about the recommended tags for documentation comments. See a list of recommended tags and view additional available resources.
 ms.date: 01/21/2020
 helpviewer_keywords:
   - "XML [C#], tags"

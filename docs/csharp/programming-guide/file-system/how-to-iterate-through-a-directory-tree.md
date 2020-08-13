@@ -1,5 +1,6 @@
 ---
 title: "How to iterate through a directory tree - C# Programming Guide"
+description: Learn how to iterate through a directory tree. Access each file in each nested subdirectory under a specified root folder.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "iterating through folders [C#]"

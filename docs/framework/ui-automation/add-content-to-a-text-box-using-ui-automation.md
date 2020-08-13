@@ -1,5 +1,6 @@
 ---
 title: "Add Content to a Text Box Using UI Automation"
+description: See an example of how to add content into a single-line text box by using Microsoft UI Automation in .NET.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

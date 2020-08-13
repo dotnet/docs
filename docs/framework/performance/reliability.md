@@ -1,5 +1,6 @@
 ---
 title: "Reliability"
+description: Understand reliability in .NET. Protect against asynchronous exceptions in hosts executing in .NET, such as SQL Server.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "SQL Server [.NET Framework]"

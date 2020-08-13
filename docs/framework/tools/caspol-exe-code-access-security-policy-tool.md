@@ -1,5 +1,6 @@
 ---
 title: "Caspol.exe (Code Access Security Policy Tool)"
+description: Review the Caspol.exe, the Code Access Security (CAS) Policy tool. This tool lets users and administrators modify security policy for different policy levels.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "permission sets, modifying security policy"

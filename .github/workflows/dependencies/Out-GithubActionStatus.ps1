@@ -13,10 +13,10 @@
     None
 
 .NOTES
-    Version:        1.0
+    Version:        1.1
     Author:         adegeo@microsoft.com
-    Creation Date:  06/17/2020
-    Purpose/Change: Initial release
+    Creation Date:  06/24/2020
+    Purpose/Change: Change reporting items
 #>
 
 [CmdletBinding()]
@@ -35,9 +35,19 @@ if ($errors.Count -eq 0) {
 Write-Host "Total errors: $($errors.Count)"
 
 foreach ($er in $errors) {
-    Write-Host "::error file=$($er.InputFile)::----FILE:  $($er.InputFile)"
-    Write-Host "::error file=$($er.InputFile)::    ERROR: $($er.Error)"
-    Write-Host "::error file=$($er.InputFile)::    LINE:  $($er.Line)"
+
+    $lineColMatch = $er.Line | Select-String "(^.*)\((\d*),(\d*)\)" | Select-Object -ExpandProperty Matches | Select-Object -ExpandProperty Groups
+    $errorFile = $er.InputFile
+    $errorLineNumber = 0
+    $errorColNumber = 0
+
+    if ($lineColMatch.Count -eq 4) {
+        $errorFile = $lineColMatch[1].Value.Replace("D:\a\docs\docs\", "").Replace("\", "/")
+        $errorLineNumber = $lineColMatch[2].Value
+        $errorColNumber = $lineColMatch[3].Value
+    }
+
+    Write-Host "::error file=$errorFile,line=$errorLineNumber,col=$errorColNumber::$($er.Line)"
 }
 
 exit 1

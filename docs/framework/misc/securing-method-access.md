@@ -1,5 +1,6 @@
 ---
 title: "Securing Method Access"
+description: Learn how to make method access secure for methods that aren't intended for public use but still need to be public.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -12,15 +13,16 @@ helpviewer_keywords:
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
 ---
 # Securing Method Access
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Some methods might not be suitable to allow arbitrary untrusted code to call. Such methods pose several risks: The method might provide some restricted information; it might believe any information passed to it; it might not do error checking on the parameters; or with the wrong parameters, it might malfunction or do something harmful. You should be aware of these cases and take action to help protect the method.  
   
- In some cases, you might need to restrict methods that are not intended for public use but still must be public. For example, you might have an interface that needs to be called across your own DLLs and hence must be public, but you do not want to expose it publicly to prevent customers from using it or to prevent malicious code from exploiting the entry point into your component. Another common reason to restrict a method not intended for public use (but that must be public) is to avoid having to document and support what might be a very internal interface.  
+ In some cases, you might need to restrict methods that are not intended for public use but still must be public. For example, you might have an interface that needs to be called across your own DLLs and hence must be public, but you do not want to expose it publicly to prevent customers from using it or to prevent malicious code from exploiting the entry point into your component. Another common reason to restrict a method not intended for public use (but that must be public) is to avoid having to document and support what might be an internal interface.  
   
  Managed code offers several ways to restrict method access:  
   
-- Limit the scope of accessibility to the class, assembly, or derived classes, if they can be trusted. This is the simplest way to limit method access. Note that, in general, derived classes can be less trustworthy than the class they derive from, though in some cases they share the parent class's identity. In particular, do not infer trust from the keyword **protected**, which is not necessarily used in the security context.  
+- Limit the scope of accessibility to the class, assembly, or derived classes, if they can be trusted. This is the simplest way to limit method access. In general, derived classes can be less trustworthy than the class they derive from, though in some cases they share the parent class's identity. In particular, do not infer trust from the keyword `protected`, which is not necessarily used in the security context.  
   
 - Limit the method access to callers of a specified identity--essentially, any particular [evidence](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7y5x1hcd%28v=vs.100%29) (strong name, publisher, zone, and so on) you choose.  
   
@@ -49,7 +51,7 @@ public class Class1
 ```  
   
 ## Excluding Classes and Members from Use by Untrusted Code  
- Use the declarations shown in this section to prevent specific classes and methods, as well as properties and events, from being used by partially trusted code. By applying these declarations to a class, you apply the protection to all its methods, properties, and events; however, note that field access is not affected by declarative security. Note also that link demands help protect against only the immediate callers and might still be subject to luring attacks.  
+ Use the declarations shown in this section to prevent specific classes and methods, as well as properties and events, from being used by partially trusted code. By applying these declarations to a class, you apply the protection to all its methods, properties, and events. However, field access is not affected by declarative security. Note also that link demands help protect against only the immediate callers and might still be subject to luring attacks.  
   
 > [!NOTE]
 > A new transparency model has been introduced in the .NET Framework 4. The [Security-Transparent Code, Level 2](security-transparent-code-level-2.md) model identifies secure code with the <xref:System.Security.SecurityCriticalAttribute> attribute. Security-critical code requires both callers and inheritors to be fully trusted. Assemblies that are running under the code access security rules from earlier .NET Framework versions can call level 2 assemblies. In this case, the security-critical attributes will be treated as link demands for full trust.  
@@ -230,7 +232,7 @@ class Implemented : ICanCastToMe
   
  In the .NET Framework versions 1.0 and 1.1, you must be aware of a nuance of the type system accessibility when confirming that your code is unavailable to other assemblies. A method that is declared **virtual** and **internal** (**Overloads Overridable Friend** in Visual Basic) can override the parent class's vtable entry and can be used only from within the same assembly because it is internal. However, the accessibility for overriding is determined by the **virtual** keyword, and this can be overridden from another assembly as long as that code has access to the class itself. If the possibility of an override presents a problem, use declarative security to fix it, or remove the **virtual** keyword if it is not strictly required.  
   
- Note that even if a language compiler prevents these overrides with a compilation error, it is possible for code written with other compilers to override.  
+ Even if a language compiler prevents these overrides with a compilation error, it is possible for code written with other compilers to override.  
   
 ## See also
 

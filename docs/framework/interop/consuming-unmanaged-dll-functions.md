@@ -1,5 +1,6 @@
 ---
 title: "Consuming Unmanaged DLL Functions"
+description: Consume unmanaged DLL functions by using the platform invoke service, which lets managed code call unmanaged functions implemented in DLL libraries.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "unmanaged functions, calling"

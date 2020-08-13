@@ -1,5 +1,6 @@
 ---
 title: "Security and Serialization"
+description: Read about security and serialization. Use SecurityPermission with the SerializationFormatter flag specified to see or modify object instance data.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -11,12 +12,15 @@ helpviewer_keywords:
   - "security [.NET Framework], serialization"
 ms.assetid: b921bc94-bd3a-4c91-9ede-2c8d4f78ea9a
 ---
-# Security and Serialization
+# Security and serialization
+
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
+
 Because serialization can allow other code to see or modify object instance data that would otherwise be inaccessible, a special permission is required of code performing serialization: <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> flag specified. Under default policy, this permission is not given to Internet-downloaded or intranet code; only code on the local computer is granted this permission.  
   
  Normally, all fields of an object instance are serialized, meaning that data is represented in the serialized data for the instance. It is possible for code that can interpret the format to determine what the data values are, independent of the accessibility of the member. Similarly, deserialization extracts data from the serialized representation and sets object state directly, again irrespective of accessibility rules.  
   
- Any object that could contain security-sensitive data should be made nonserializable, if possible. If it must be serializable, try to make specific fields that hold sensitive data nonserializable. If this cannot be done, be aware that this data will be exposed to any code that has permission to serialize, and make sure that no malicious code can get this permission.  
+ Any object that could contain security-sensitive data should be made nonserializable, if possible. If it must be serializable, try to make specific fields that hold sensitive data nonserializable. If those fields cannot be made nonserializable, the sensitive data will be exposed to any code that has permission to serialize. Make sure that no malicious code can get this permission.  
   
  The <xref:System.Runtime.Serialization.ISerializable> interface is intended for use only by the serialization infrastructure. However, if unprotected, it can potentially release sensitive information. If you provide custom serialization by implementing **ISerializable**, make sure you take the following precautions:  
   

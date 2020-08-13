@@ -9,7 +9,7 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio for Mac](using-on-mac-vs.md).
+- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio for Mac](with-visual-studio-mac.md).
 
 ## Use Debug build configuration
 
@@ -21,7 +21,7 @@ By default, Visual Studio uses the Debug build configuration, so you don't need 
 
 1. Start Visual Studio for Mac.
 
-1. Open the project that you created in [Create a .NET Core console application in Visual Studio for Mac](using-on-mac-vs.md).
+1. Open the project that you created in [Create a .NET Core console application in Visual Studio for Mac](with-visual-studio-mac.md).
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 

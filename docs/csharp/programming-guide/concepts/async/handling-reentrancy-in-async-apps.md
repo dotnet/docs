@@ -1,5 +1,6 @@
 ---
 title: "Handling Reentrancy in Async Apps (C#)"
+description: Learn to handle reentrancy in C# async applications, which refers to reentering an asynchronous operation before it finishes with possible unexpected results.
 ms.date: 07/20/2015
 ms.assetid: 47c5075e-c448-45ce-9155-ed4e7e98c677
 ---

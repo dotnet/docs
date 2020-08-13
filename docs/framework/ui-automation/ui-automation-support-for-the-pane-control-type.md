@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Support for the Pane Control Type"
+description: Get information about UI Automation support for the Pane control type. Learn the required tree structure, properties, control patterns, and events.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, Pane control type"

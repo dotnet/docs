@@ -1,5 +1,6 @@
 ---
 title: "How to: Create and Bind to an ObservableCollection"
+description: Find out how to create and bind to a collection that derives from the ObservableCollection class in Windows Presentation Foundation.  
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

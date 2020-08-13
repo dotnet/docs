@@ -1,5 +1,6 @@
 ---
 title: "Generic Classes - C# Programming Guide"
+description: Learn about generic classes used in collections like linked lists, hash tables, stacks, queues, and trees.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, generic classes"

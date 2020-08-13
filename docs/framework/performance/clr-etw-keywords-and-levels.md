@@ -1,5 +1,6 @@
 ---
 title: "CLR ETW Keywords and Levels"
+description: Review common language runtime (CLR) event tracing for Windows (ETW) keywords and levels. Event CLR ETW keywords enable the filtering of events by category.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CLR ETW keywords"

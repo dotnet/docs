@@ -1,5 +1,6 @@
 ---
 title: "Finalizers - C# Programming Guide"
+description: Finalizers in C#, which are also called destructors, perform any necessary final clean-up when a class instance is being collected by the garbage collector.
 ms.date: 10/08/2018
 helpviewer_keywords: 
   - "~ [C#], in finalizers"

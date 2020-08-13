@@ -1,5 +1,6 @@
 ---
 title: "Anonymous Types - C# Programming Guide"
+description: Anonymous types in C# encapsulate a set of read-only properties in an object without having to explicitly define a type. The compiler generates a name.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "anonymous types [C#]"

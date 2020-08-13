@@ -3,6 +3,7 @@ title: Common client-side web technologies
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client-side web technologies
 author: ardalis
 ms.author: wiwagn
+no-loc: [Blazor]
 ms.date: 12/04/2019
 ---
 # Common client-side web technologies

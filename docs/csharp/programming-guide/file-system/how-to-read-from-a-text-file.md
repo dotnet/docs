@@ -1,5 +1,6 @@
 ---
 title: "How to read from a text file - C# Programming Guide"
+description: Learn how to read from a text file using static methods from the File class. See a code example and view additional available resources.
 ms.date: 07/20/2015
 f1_keywords: 
   - "StreamReader.ReadToEnd"

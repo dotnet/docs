@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Threading Issues"
+description: Read about issues with UI Automation threading. For example, conflicts may occur if a client application tries to interact with its own UI on the UI thread.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, threading issues"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Generate Interop Assemblies from Type Libraries"
+description: Generate interop assemblies from type libraries. Use Type Library Importer (Tlbimp.exe) to convert coclasses and interfaces from a COM type library to metadata.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "importing type library"

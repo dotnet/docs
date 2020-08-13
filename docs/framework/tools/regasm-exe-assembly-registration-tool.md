@@ -1,5 +1,6 @@
 ---
 title: "Regasm.exe (Assembly Registration Tool)"
+description: Use Regasm.exe, the Assembly Registration tool. Read assembly metadata and add the needed entries to the registry, allowing COM clients to create .NET classes.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Assembly Registration tool"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Debug Windows Service Applications"
+description: Understand how to debug Windows service applications, which aren't as straightforward to debug as other Visual Studio application types.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "debugging Windows Service applications"

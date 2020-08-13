@@ -1,5 +1,6 @@
 ---
 title: "Threading Model"
+description: Learn about situations where you might need multiple threads in your Windows Presentation Foundation application. Single threaded solutions are preferred.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

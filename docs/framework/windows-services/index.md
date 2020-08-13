@@ -1,5 +1,6 @@
 ---
 title: "Developing Windows Service Applications"
+description: See links to articles that explain how to develop Windows service apps by using Visual Studio or the .NET SDK.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ServiceInstaller class, Windows Service applications"

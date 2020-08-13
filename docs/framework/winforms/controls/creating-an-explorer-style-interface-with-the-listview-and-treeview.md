@@ -1,5 +1,6 @@
 ---
 title: "Walkthrough: Creating an Explorer Style Interface with the ListView and TreeView Controls Using the Designer"
+description: Learn how to create an Explorer style interface with the Windows Forms ListView and TreeView controls using the Designer.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

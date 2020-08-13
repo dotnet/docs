@@ -1,5 +1,6 @@
 ---
 title: "Default Marshaling for Objects"
+description: Understand default marshaling for objects. Review marshaling options. Marshal objects to interfaces or variants, variants to objects, and ByRef variants.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

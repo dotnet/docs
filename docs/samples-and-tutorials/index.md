@@ -82,9 +82,9 @@ This tutorial demonstrates many of the features of LINQ and the language element
 
 This tutorial shows you how to build a simple .NET Core console app using Visual Studio for Mac.
 
-**[Building a complete .NET Core solution on macOS using Visual Studio for Mac](../core/tutorials/using-on-mac-vs-full-solution.md)**
+**[Create a .NET Standard library on macOS using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md)**
 
-This tutorial shows you how to build a complete .NET Core solution that includes a reusable library and unit testing.
+This tutorial shows you how to build a .NET Standard library using Visual Studio for Mac.
 
 **[Creating a .NET Core application that supports plugins](../core/tutorials/creating-app-with-plugin-support.md)**
 

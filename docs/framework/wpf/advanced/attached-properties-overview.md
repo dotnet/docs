@@ -1,5 +1,6 @@
 ---
 title: "Attached Properties Overview"
+description: Learn about attached properties in Windows Presentation Foundation, which are global properties settable on any object.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

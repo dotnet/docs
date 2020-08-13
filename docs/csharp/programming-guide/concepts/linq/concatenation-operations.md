@@ -1,5 +1,6 @@
 ---
 title: "Concatenation Operations (C#)"
+description: Learn about concatenation and the standard query operator methods that perform concatenation in LINQ in C#.
 ms.date: 07/20/2015
 ms.assetid: 890ee104-c590-457e-8a7f-b2b5da0fb417
 ---

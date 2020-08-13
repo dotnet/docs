@@ -1,7 +1,7 @@
 ---
 title: Docker containers, images, and registries
 description: Learn the key role that registries play overall in the Docker way of deploying applications.
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 # Docker containers, images, and registries
 

@@ -1,5 +1,6 @@
 ---
 title: "Creating Prototypes in Managed Code"
+description: Create prototypes in .NET managed code, so you can access unmanaged functions and use attribute fields that annotate method definition in managed code.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

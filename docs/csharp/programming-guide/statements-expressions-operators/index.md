@@ -1,5 +1,6 @@
 ---
 title: "Statements, Expressions, and Operators - C# Programming Guide"
+description: Introduce yourself to the fundamental elements of statements, expressions, and operators in C# programming.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "expressions [C#]"
@@ -18,9 +19,9 @@ The C# code that comprises an application consists of statements made up of keyw
 
 - [Statements](statements.md)
 
-- [Expressions](expressions.md)
+- [Operators and expressions](../../language-reference/operators/index.md)
 
-  - [Expression-bodied members](expression-bodied-members.md)
+- [Expression-bodied members](expression-bodied-members.md)
 
 - [Anonymous Functions](anonymous-functions.md)
 

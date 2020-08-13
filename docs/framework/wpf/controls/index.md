@@ -1,5 +1,6 @@
 ---
 title: "Controls"
+description: Learn about Windows Presentation Foundation common UI components, referred to as controls, but which might not inherit from the Control class.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -31,10 +31,10 @@
     None
 
 .NOTES
-    Version:        1.1
+    Version:        1.3
     Author:         adegeo@microsoft.com
-    Creation Date:  06/17/2020
-    Purpose/Change: Update to GitHub actions and new framework.
+    Creation Date:  07/02/2020
+    Purpose/Change: Add support for config file. Select distinct on project files.
 #>
 
 [CmdletBinding()]
@@ -96,6 +96,27 @@ if (($RangeStart -ne 0) -and ($RangeEnd -ne 0)){
     $workingSet = $output[$RangeStart..$RangeEnd]
 }
 
+# Log working set items prior to filtering
+$workingSet | Write-Host
+
+# Remove duplicated projects
+$projects = @()
+$workingSetTemp = @()
+
+foreach ($item in $workingSet) {
+    $data = $item.Split('|')
+    if ($projects.Contains($data[2].Trim())) {
+        continue
+    }
+    if ($data[2].Trim() -ne "") {
+        $projects += $data[2].Trim()
+    }
+    $workingSetTemp += $item
+}
+
+$workingSet = $workingSetTemp
+
+# Process working set
 $counter = 1
 $length = $workingSet.Count
 $thisExitCode = 0
@@ -111,7 +132,28 @@ foreach ($item in $workingSet) {
         # Project found, build it
         if ([int]$data[0] -eq 0) {
             $projectFile = Resolve-Path "$RepoRootDir\$($data[2])"
-            $result = Invoke-Expression "dotnet build `"$projectFile`"" | Out-String
+            $configFile = [System.IO.Path]::Combine([System.IO.Path]::GetDirectoryName($projectFile), "snippets.5000.json")
+            
+            # Create the default build command
+            "dotnet build `"$projectFile`"" | Out-File ".\run.bat"
+
+            # Check for config file
+            if ([System.IO.File]::Exists($configFile) -eq $true) {
+                Write-Host "- Config file found"
+
+                $settings = $configFile | Get-ChildItem | Get-Content | ConvertFrom-Json
+
+                if ($settings.host -eq "visualstudio") {
+                    Write-Host "- Using visual studio as build host"
+
+                    # Create the visual studio build command
+                    "CALL `"C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\Tools\VsDevCmd.bat`"`n" +
+                    "msbuild.exe `"$projectFile`" -restore:True" `
+                    | Out-File ".\run.bat"
+                }
+            }
+
+            $result = Invoke-Expression ".\run.bat" | Out-String
             $thisExitCode = 0
 
             if ($LASTEXITCODE -ne 0) {
@@ -123,20 +165,22 @@ foreach ($item in $workingSet) {
 
         # No project found
         elseif ([int]$data[0] -eq 1) {
-            New-Result $data[1] "" 1 "No project found"
-            $thisExitCode = 1;
+            New-Result $data[1] "" 1 "😵 Project missing. A project (and optionally a solution file) must be in this directory or one of the parent directories to validate and build this code."
+
+            $thisExitCode = 1
         }
 
         # Too many projects found
         elseif ([int]$data[0] -eq 2) {
-            New-Result $data[1] $data[2] 2 "Too many projects found"
-            $thisExitCode = 2;
+            New-Result $data[1] $data[2] 2 "😕 Too many projects found. A single project or solution must existing in this directory or one of the parent directories."
+
+            $thisExitCode = 2
         }
 
         # Solution found, but no project
         elseif ([int]$data[0] -eq 3) {
-            New-Result $data[1] $data[2] 2 "Top-level solution found, but no project"
-            $thisExitCode = 3;
+            New-Result $data[1] $data[2] 2 "😲 Solution found, but missing project. A project is required to compile this code."
+            $thisExitCode = 3
         }
     }
     catch {
@@ -184,15 +228,18 @@ $transformedItems = $resultItems | ForEach-Object { New-Object ResultItem -Prope
 foreach ($item in $transformedItems) {
     $list = @()
 
-    # No project found OR 
+    # Clean
     if ($item.ExitCode -eq 0) {
-        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+        #$list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
     }
+    # No project found
+    # Too many projects found
+    # Solution found, but no project
     elseif ($item.ExitCode -ne 4) {
-        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = ""; Error = $item.BuildOutput }
+        $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $item.BuildOutput; Error = $item.BuildOutput }
         $item.ErrorCount = 1
     }
-    elseif ($item.ExitCode -ne 0) {
+    else {
         $errorInfo = $item.BuildOutput -Split [System.Environment]::NewLine |
                                          Select-String ": (?:Solution file error|error) ([^:]*)" | `
                                          Select-Object Line -ExpandProperty Matches | `
@@ -201,6 +248,12 @@ foreach ($item in $transformedItems) {
         $item.ErrorCount = $errorInfo.Count
         foreach ($err in $errorInfo) {
             $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = $err.Line; Error = $err.Groups[1].Value }
+        }
+
+        # Error count of 0 here means that no error was detected from build results, but there was still a failure of some kind
+        if ($item.ErrorCount -eq 0) {
+            $list += New-Object -TypeName "ResultItem+MSBuildError" -Property @{ Line = "Unknown error occurred. Check log and build output."; Error = "4" }
+            $item.ErrorCount = 1
         }
     }
 
@@ -211,3 +264,12 @@ foreach ($item in $transformedItems) {
 $transformedItems | ConvertTo-Json -Depth 3 | Out-File 'output.json'
 
 exit 0
+
+
+# Sample snippets.5000.json file
+<#
+{
+    "host": "visualstudio"
+}
+
+#>

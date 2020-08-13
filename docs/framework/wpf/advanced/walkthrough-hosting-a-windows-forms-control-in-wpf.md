@@ -1,5 +1,6 @@
 ---
 title: Host a Windows Forms control in WPF
+description: Learn how to host Windows Forms controls in Windows Presentation Foundation, which already provides many controls with a rich feature set.
 titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:

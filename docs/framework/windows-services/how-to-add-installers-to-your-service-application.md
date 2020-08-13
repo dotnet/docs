@@ -1,5 +1,6 @@
 ---
 title: "How to: Add Installers to Your Service Application"
+description: See how to add installers to your service application. Visual Studio ships installation components that can install resources associated with your service apps.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Service applications, deploying"

@@ -1,5 +1,6 @@
 ---
 title: "Generation Operations (C#)"
+description: Generation creates a new sequence of values. Learn about the standard query operator methods in LINQ in C# that perform generation.
 ms.date: 07/20/2015
 ms.assetid: 1c421b3a-5954-448c-bcac-a27798d1858f
 ---

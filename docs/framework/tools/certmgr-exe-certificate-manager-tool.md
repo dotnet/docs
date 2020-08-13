@@ -1,5 +1,6 @@
 ---
 title: "Certmgr.exe (Certificate Manager Tool)"
+description: Explore Certmgr.exe, the Certificate Manager tool. This tool manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Best Practices for Assembly Loading"
+description: Explore best practices for assembly loading in .NET. Avoid problems of type identity that can lead to invalid casts, missing methods, and other exceptions.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "assemblies,binding"

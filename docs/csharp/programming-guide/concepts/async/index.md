@@ -50,7 +50,7 @@ Let's start by updating this code so that the thread doesn't block while tasks a
 :::code language="csharp" source="snippets/index/AsyncBreakfast-V2/Program.cs" id="SnippetMain":::
 
 > [!IMPORTANT]
-> The total elapsed time is roughly the same as the initial synchonous version. The code has yet to take advantage of some of the key features asynchronous programming.
+> The total elapsed time is roughly the same as the initial synchonous version. The code has yet to take advantage of some of the key features of asynchronous programming.
 
 > [!TIP]
 > The method bodies of the `FryEggsAsync`, `FryBaconAsync`, and `ToastBreadAsync` have all been updated to return `Task<Egg>`, `Task<Bacon>`, and `Task<Toast>` respectively. The methods are renamed from their original version to include the "Async" suffix. Their implementations are shown as part of the [final version](#final-version) later in this article.

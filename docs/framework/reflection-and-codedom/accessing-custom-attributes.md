@@ -1,5 +1,6 @@
 ---
 title: "Accessing Custom Attributes"
+description: Access custom attributes in .NET. After attributes have been associated with program elements, you can use reflection to query their existence and values.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

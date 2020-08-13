@@ -1,5 +1,6 @@
 ---
 title: "Constraints on type parameters - C# Programming Guide"
+description: Learn about constraints on type parameters. Constraints tell the compiler what capabilities a type argument must have.
 ms.date: 04/12/2018
 helpviewer_keywords: 
   - "generics [C#], type constraints"

@@ -1,5 +1,6 @@
 ---
 title: "Dynamic Language Runtime Overview | Microsoft Docs"
+description: Read an overview of the dynamic language runtime (DLR) in .NET. The DLR is a runtime environment that adds a set of services for dynamic languages to the CLR.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "dynamic language runtime"

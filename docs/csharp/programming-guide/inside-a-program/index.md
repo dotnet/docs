@@ -1,5 +1,6 @@
 ---
 title: "Inside a C# program"
+description: Use these resources to understand the general structure of a C# program, including the standard example, Hello, World!
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, about C# program"

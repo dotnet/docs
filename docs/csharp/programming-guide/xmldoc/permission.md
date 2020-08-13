@@ -1,5 +1,6 @@
 ---
 title: "<permission> - C# programming guide"
+description: Learn about the XML <permission> tag. This tag lets you document the access of a member, while the PermissionSet class lets you specify access to a member.
 ms.date: 07/20/2015
 f1_keywords:
   - "permission"

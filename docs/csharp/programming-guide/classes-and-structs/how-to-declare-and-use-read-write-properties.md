@@ -1,5 +1,6 @@
 ---
 title: "How to declare and use read write properties - C# Programming Guide"
+description: Learn how to use read/write properties in C#. This sample includes two properties, each of which has get and set accessors, so the properties are read/write.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "get accessor [C#], declaring properties"

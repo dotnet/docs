@@ -1,5 +1,6 @@
 ---
 title: "Quantifier Operations (C#)"
+description: Learn about quantifier operations. These operations return a Boolean value indicating whether some or all elements in a sequence satisfy a condition.
 ms.date: 07/20/2015
 ms.assetid: 84ac2ac2-7a63-4581-bc4c-14e34be1493b
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Tracing and Instrumenting Applications"
+description: Trace and instrument applications in .NET. Tracing lets you monitor application execution while it's running. Instrumenting lets you measure performance level.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

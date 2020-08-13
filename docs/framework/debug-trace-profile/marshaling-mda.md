@@ -1,5 +1,6 @@
 ---
 title: "marshaling MDA"
+description: Review the marshaling managed debugging assistant (MDA), which is invoked if the CLR sets up marshaling information for a method parameter or a structure field.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "marshaling, run-time errors"

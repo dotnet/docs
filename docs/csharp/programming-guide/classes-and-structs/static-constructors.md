@@ -1,5 +1,6 @@
 ---
 title: "Static Constructors - C# Programming Guide"
+description: A static constructor in C# initializes static data or performs an action done only once before the first instance is created or static members are referenced.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "static constructors [C#]"

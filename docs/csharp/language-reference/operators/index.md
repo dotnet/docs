@@ -1,6 +1,7 @@
 ---
-title: "C# operators - C# reference"
-ms.date: 04/28/2020
+title: "C# operators and expressions - C# reference"
+description: "Learn about C# operators and expressions, operator precedence, and operator associativity"
+ms.date: 08/04/2020
 f1_keywords: 
   - "cs.operators"
 helpviewer_keywords: 
@@ -10,11 +11,45 @@ helpviewer_keywords:
   - "expressions [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
-# C# operators (C# reference)
+# C# operators and expressions (C# reference)
 
-C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../builtin-types/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
+C# provides a number of operators. Many of them are supported by the [built-in types](../builtin-types/built-in-types.md) and allow you to perform basic operations with values of those types. Those operators include the following groups:
 
-In an [expression](../../programming-guide/statements-expressions-operators/expressions.md), operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
+- [Arithmetic operators](arithmetic-operators.md) that perform arithmetic operations with numeric operands
+- [Comparison operators](comparison-operators.md) that compare numeric operands
+- [Boolean logical operators](boolean-logical-operators.md) that perform logical operations with [`bool`](../builtin-types/bool.md) operands
+- [Bitwise and shift operators](bitwise-and-shift-operators.md) that perform bitwise or shift operations with operands of the integral types
+- [Equality operators](equality-operators.md) that check if their operands are equal or not
+
+Typically, you can [overload](operator-overloading.md) those operators, that is, specify the operator behavior for the operands of a user-defined type.
+
+The simplest C# expressions are literals (for example, [integer](../builtin-types/integral-numeric-types.md#integer-literals) and [real](../builtin-types/floating-point-numeric-types.md#real-literals) numbers) and names of variables. You can combine them into complex expressions by using operators. Operator [precedence](#operator-precedence) and [associativity](#operator-associativity) determine the order in which the operations in an expression are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
+
+In the following code, examples of expressions are at the right-hand side of assignments:
+
+[!code-csharp[expression examples](snippets/shared/Overview.cs#Expressions)]
+
+Typically, an expression produces a result and can be included in another expression. A [`void`](../builtin-types/void.md) method call is an example of an expression that doesn't produce a result. It can be used only as a [statement](../../programming-guide/statements-expressions-operators/statements.md), as the following example shows:
+
+```csharp
+Console.WriteLine("Hello, world!");
+```
+
+Here are some other kinds of expressions that C# provides:
+
+- [Interpolated string expressions](../tokens/interpolated.md) that provide convenient syntax to create formatted strings:
+
+  [!code-csharp-interactive[interpolated string](snippets/shared/Overview.cs#InterpolatedString)]
+
+- [Lambda expressions](lambda-expressions.md) that allow you to create anonymous functions:
+
+  [!code-csharp-interactive[lambda expression](snippets/shared/Overview.cs#Lambda)]
+
+- [Query expressions](../keywords/query-keywords.md) that allow you to use query capabilities directly in C#:
+
+  [!code-csharp-interactive[query expression](snippets/shared/Overview.cs#Query)]
+
+You can use an [expression body definition](../../programming-guide/statements-expressions-operators/expression-bodied-members.md) to provide a concise definition for a method, constructor, property, indexer, or finalizer.
 
 ## Operator precedence
 
@@ -39,7 +74,7 @@ The following table lists the C# operators starting with the highest precedence 
 | [x.y](member-access-operators.md#member-access-expression-), [f(x)](member-access-operators.md#invocation-expression-), [a&#91;i&#93;](member-access-operators.md#indexer-operator-), [`x?.y`](member-access-operators.md#null-conditional-operators--and-), [`x?[y]`](member-access-operators.md#null-conditional-operators--and-), [x++](arithmetic-operators.md#increment-operator-), [x--](arithmetic-operators.md#decrement-operator---), [x!](null-forgiving.md), [new](new-operator.md), [typeof](type-testing-and-cast.md#typeof-operator), [checked](../keywords/checked.md), [unchecked](../keywords/unchecked.md), [default](default.md), [nameof](nameof.md), [delegate](delegate-operator.md), [sizeof](sizeof.md), [stackalloc](stackalloc.md), [x->y](pointer-related-operators.md#pointer-member-access-operator--) | Primary |
 | [+x](arithmetic-operators.md#unary-plus-and-minus-operators), [-x](arithmetic-operators.md#unary-plus-and-minus-operators), [\!x](boolean-logical-operators.md#logical-negation-operator-), [~x](bitwise-and-shift-operators.md#bitwise-complement-operator-), [++x](arithmetic-operators.md#increment-operator-), [--x](arithmetic-operators.md#decrement-operator---), [^x](member-access-operators.md#index-from-end-operator-), [(T)x](type-testing-and-cast.md#cast-expression), [await](await.md), [&x](pointer-related-operators.md#address-of-operator-), [*x](pointer-related-operators.md#pointer-indirection-operator-), [true and false](true-false-operators.md) | Unary |
 | [x..y](member-access-operators.md#range-operator-) | Range |
-| [switch](../../whats-new/csharp-8.md#switch-expressions) | `switch` expression |
+| [switch](switch-expression.md) | `switch` expression |
 | [x * y](arithmetic-operators.md#multiplication-operator-), [x / y](arithmetic-operators.md#division-operator-), [x % y](arithmetic-operators.md#remainder-operator-) | Multiplicative|
 | [x + y](arithmetic-operators.md#addition-operator-), [x – y](arithmetic-operators.md#subtraction-operator--) | Additive |
 | [x \<\<  y](bitwise-and-shift-operators.md#left-shift-operator-), [x >> y](bitwise-and-shift-operators.md#right-shift-operator-) | Shift |
@@ -84,9 +119,13 @@ Typically, all operator operands are evaluated. However, some operators evaluate
 
 ## C# language specification
 
-For more information, see the [Operators](~/_csharplang/spec/expressions.md#operators) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
+
+- [Expressions](~/_csharplang/spec/expressions.md)
+- [Operators](~/_csharplang/spec/expressions.md#operators)
 
 ## See also
 
 - [C# reference](../index.md)
-- [Expressions](../../programming-guide/statements-expressions-operators/expressions.md)
+- [Operator overloading](operator-overloading.md)
+- [Expression trees](../../programming-guide/concepts/expression-trees/index.md)

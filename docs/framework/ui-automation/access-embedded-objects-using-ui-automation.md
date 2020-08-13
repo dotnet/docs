@@ -1,5 +1,6 @@
 ---
 title: "Access Embedded Objects Using UI Automation"
+description: See how to access embedded objects using UI Automation within text control content. Embedded objects are considered children of the UI Automation text provider.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

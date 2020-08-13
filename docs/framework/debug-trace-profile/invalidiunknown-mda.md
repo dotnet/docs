@@ -1,5 +1,6 @@
 ---
 title: "invalidIUnknown MDA"
+description: Review the invalidIUnknown managed debugging assistant (MDA), which is activated when an invalid IUnknown pointer is passed to managed code from native code.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), invalid IUnknown pointer"

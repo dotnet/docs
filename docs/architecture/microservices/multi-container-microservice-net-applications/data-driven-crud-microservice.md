@@ -187,7 +187,7 @@ An important configuration to set up in the Web API project is the DbContext cla
 ```csharp
 public void ConfigureServices(IServiceCollection services)
 {
-    // Additional code...    
+    // Additional code...
     services.AddDbContext<CatalogContext>(options =>
     {
         options.UseSqlServer(Configuration["ConnectionString"],

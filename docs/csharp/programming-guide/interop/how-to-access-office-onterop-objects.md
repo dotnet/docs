@@ -29,7 +29,7 @@ To complete this walkthrough, you must have Microsoft Office Excel 2007 and Micr
 
 3. In the **Installed Templates** pane, expand **Visual C#**, and then click **Windows**.
 
-4. Look at the top of the **New Project** dialog box to make sure that **.NET Framework 4** (or later version) is selected as a target framework.
+4. Look at the top of the **New Project** dialog box to make sure that **.NET Framework 4** (or higher version) is selected as a target framework.
 
 5. In the **Templates** pane, click **Console Application**.
 

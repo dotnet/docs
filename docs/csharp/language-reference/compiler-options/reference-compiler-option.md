@@ -52,7 +52,7 @@ The **-reference** option causes the compiler to import [public](../keywords/pub
   
  Sometimes it is necessary to reference two different versions of the same component from within one assembly. To do this, use the alias suboption on the **-reference** switch for each file to distinguish between the two files. This alias will be used as a qualifier for the component name, and will resolve to the component in one of the files.  
   
- The csc response (.rsp) file, which references commonly used .NET Framework assemblies, is used by default. Use [-noconfig](./noconfig-compiler-option.md) if you do not want the compiler to use csc.rsp.  
+ The csc response (.rsp) file, which references commonly used .NET assemblies, is used by default. Use [-noconfig](./noconfig-compiler-option.md) if you do not want the compiler to use csc.rsp.  
   
 > [!NOTE]
 > In Visual Studio, use the **Add Reference** dialog box. For more information, see [How to: Add or Remove References By Using the Reference Manager](/visualstudio/ide/how-to-add-or-remove-references-by-using-the-reference-manager). To ensure equivalent behavior between adding references by using `-reference` and adding references by using the **Add Reference** dialog box, set the **Embed Interop Types** property to **False** for the assembly that you're adding. **True** is the default value for the property.  

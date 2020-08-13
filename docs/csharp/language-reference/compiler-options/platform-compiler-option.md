@@ -28,7 +28,7 @@ anycpu (default), anycpu32bitpreferred, ARM, x64, x86, or Itanium.
 
 - **anycpu** (default) compiles your assembly to run on any platform. Your application runs as a 64-bit process whenever possible and falls back to 32-bit when only that mode is available.
 
-- **anycpu32bitpreferred** compiles your assembly to run on any platform. Your application runs in 32-bit mode on systems that support both 64-bit and 32-bit applications. You can specify this option only for projects that target the .NET Framework 4.5.
+- **anycpu32bitpreferred** compiles your assembly to run on any platform. Your application runs in 32-bit mode on systems that support both 64-bit and 32-bit applications. You can specify this option only for projects that target .NET Framework 4.5 or higher.
 
 - **ARM** compiles your assembly to run on a computer that has an Advanced RISC Machine (ARM) processor.
 
@@ -50,7 +50,7 @@ On a 64-bit Windows operating system:
 
 - Executables compiled with **-platform:anycpu32bitpreferred** execute on the 32-bit CLR.
 
-The **anycpu32bitpreferred** setting is valid only for executable (.EXE) files, and it requires the .NET Framework 4.5.
+The **anycpu32bitpreferred** setting is valid only for executable (.EXE) files, and it requires .NET Framework 4.5 or higher.
 
 For more information about developing an application to run on a Windows 64-bit operating system, see [64-bit Applications](../../../framework/64-bit-apps.md).
 
@@ -60,7 +60,7 @@ For more information about developing an application to run on a Windows 64-bit 
 
 2. Click the **Build** property page.
 
-3. Modify the **Platform target** property and, for projects that target the .NET Framework 4.5, select or clear the **Prefer 32-bit** check box.
+3. Modify the **Platform target** property and, for projects that target .NET Framework 4.5 or higher, select or clear the **Prefer 32-bit** check box.
 
 > [!NOTE]
 > `-platform` is not available in the development environment in Visual C# Express.

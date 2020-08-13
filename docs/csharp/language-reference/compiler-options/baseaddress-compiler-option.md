@@ -23,7 +23,7 @@ The **-baseaddress** option lets you specify the preferred base address at which
  The base address for the DLL. This address can be specified as a decimal, hexadecimal, or octal number.  
   
 ## Remarks  
- The default base address for a DLL is set by the .NET Framework common language runtime.  
+ The default base address for a DLL is set by the .NET common language runtime.  
   
  Be aware that the lower-order word in this address will be rounded. For example, if you specify 0x11110001, it will be rounded to 0x11110000.  
   

@@ -23,7 +23,7 @@ When you include asynchronous code in your app, you should consider and possibly
 - [Reviewing and Running the Example App](#BKMD_SettingUpTheExample)
 
 > [!NOTE]
-> To run the example, you must have Visual Studio 2012 or newer and .NET Framework 4.5 or newer installed on your computer.
+> To run the example, you must have Visual Studio 2012 or newer and .NET Framework 4.5 or higher installed on your computer.
 
 > [!NOTE]
 > Transport Layer Security (TLS) version 1.2 is now the minimum version to use in your app development. If your app targets a .NET Framework version earlier than 4.7, refer to the following article for [Transport Layer Security (TLS) best practices with .NET Framework](../../../../framework/network-programming/tls.md).
@@ -547,7 +547,7 @@ The output shows the following patterns.
 To better understand the example app, you can download it, build it yourself, or review the code at the end of this topic without implementing the app.
 
 > [!NOTE]
-> To run the example as a Windows Presentation Foundation (WPF) desktop app, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
+> To run the example as a Windows Presentation Foundation (WPF) desktop app, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or higher installed on your computer.
 
 ### <a name="BKMK_DownloadingTheApp"></a> Downloading the App
 

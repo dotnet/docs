@@ -35,7 +35,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
 4. In the **Templates** pane, click **Excel \<version> Add-in**.
 
-5. Look at the top of the **Templates** pane to make sure that **.NET Framework 4**, or a later version, appears in the **Target Framework** box.
+5. Look at the top of the **Templates** pane to make sure that **.NET Framework 4**, or a higher version, appears in the **Target Framework** box.
 
 6. Type a name for your project in the **Name** box, if you want to.
 

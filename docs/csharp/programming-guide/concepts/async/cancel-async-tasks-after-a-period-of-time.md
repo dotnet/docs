@@ -11,7 +11,7 @@ You can cancel an asynchronous operation after a period of time by using the  <x
 This example adds to the code that’s developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.
 
 > [!NOTE]
-> To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
+> To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or higher installed on your computer.
 
 ## Download the example
 

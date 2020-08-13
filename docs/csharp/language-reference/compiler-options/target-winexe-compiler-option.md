@@ -19,7 +19,7 @@ The **-target:winexe** option causes the compiler to create an executable (EXE),
 ```  
   
 ## Remarks  
- The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET Framework library or with the Windows APIs.  
+ The executable file will be created with the .exe extension. A Windows program is one that provides a user interface from either the .NET library or with the Windows APIs.  
   
  Use [-target:exe](./target-exe-compiler-option.md) to create a console application.  
   

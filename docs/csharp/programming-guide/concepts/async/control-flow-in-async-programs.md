@@ -88,7 +88,7 @@ Length of the downloaded string: 33946.
 You can download the code that this topic uses from MSDN, or you can build it yourself.
 
 > [!NOTE]
-> To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
+> To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or higher installed on your computer.
 
 ### Download the program
 

@@ -25,6 +25,7 @@ This category consists of the following events:
 - [GCSuspendEE_V1 Event](#gcsuspendee_v1-event)
 - [GCSuspendEEEnd_V1 Event](#gcsuspendeeend_v1-event)
 - [GCAllocationTick_V2 Event](#gcallocationtick_v2-event)
+- [GCAllocationTick_V3 Event](#gcallocationtick_v3-event)
 - [GCFinalizersBegin_V1 Event](#gcfinalizersbegin_v1-event)
 - [GCFinalizersEnd_V1 Event](#gcfinalizersend_v1-event)
 - [GCCreateConcurrentThread_V1 Event](#gccreateconcurrentthread_v1-event)

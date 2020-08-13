@@ -29,7 +29,6 @@ Recursive functions - functions that call themselves - are identified explicitly
 
 The following example shows a recursive function that computes the *n*<sup>th</sup> Fibonacci number using the mathematical definition.
 
-
 ```fsharp
 let fib n =
     match n with

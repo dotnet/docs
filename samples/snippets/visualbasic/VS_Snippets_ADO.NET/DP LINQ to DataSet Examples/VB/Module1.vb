@@ -574,7 +574,7 @@ Module Module1
         For Each product In query
             Console.WriteLine("Name: " & product.Name)
             Console.WriteLine("Product number: " & product.ProductNumber)
-            Console.WriteLine("List price: $ " & product.ListPrice & vbNewLine)
+            Console.WriteLine("List price: $ " & product.ListPrice & Environment.NewLine)
         Next
         ' </SnippetWhere3>
     End Sub
@@ -637,7 +637,7 @@ Module Module1
         For Each product In query
             Console.WriteLine("Name: " & product.Name)
             Console.WriteLine("Product number: " & product.ProductNumber)
-            Console.WriteLine("List price: $" & product.ListPrice & vbNewLine)
+            Console.WriteLine("List price: $" & product.ListPrice & Environment.NewLine)
         Next
         ' </SnippetWhereIsNull>
     End Sub

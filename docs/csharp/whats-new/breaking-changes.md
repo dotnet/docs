@@ -1,7 +1,7 @@
 ---
 title: Breaking changes in the C# compiler
 description: Find any breaking changes in the C# compiler that you are using.
-ms.date: 12/12/2019
+ms.date: 08/14/2020
 ---
 
 # Learn about any breaking changes in the C# compiler

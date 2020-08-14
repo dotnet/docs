@@ -4,340 +4,1230 @@ updates:
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/pipelines" # Pipes.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/xunit-test" # xunit-test.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/new-in-6" # new-in-6.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/standard/assembly/snippets/inspect-contents-using-metadataloadcontext" # AssemblySnippets.csproj
   schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/docs/csharp/language-reference/operators/snippets" # operators.csproj
-  schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/safe-efficient-code/benchmark" # benchmark.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/getting-started/console-webapiclient" # webapiclient.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SemanticQuickStart" # SemanticQuickStart.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/MovieRecommendation/csharp" # MovieRecommendation.csproj
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/generatingahash" # generatingahash.vbproj
   schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/TransferLearningTF/csharp" # TransferLearningTF.csproj
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/TaxiFarePrediction/csharp" # TaxiFarePrediction.csproj
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/GitHubIssueClassification/csharp" # GitHubIssueClassification.csproj
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/TextClassificationTF/csharp" # TextClassificationTF.csproj
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/IrisFlowerClustering/csharp" # IrisFlowerClustering.csproj
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/SentimentAnalysis/csharp" # SentimentAnalysis.csproj
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/machine-learning/ProductSalesAnomalyDetection/csharp" # ProductSalesAnomalyDetection.csproj
-  schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/finished" # IssuePRreport.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/csharp/tutorials/snippets/generate-consume-asynchronous-streams/start" # IssuePRreport.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/csharp/language-reference/operators/snippets/shared" # operators.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/movie-recommendation/csharp" # MovieRecommendation.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/iris-clustering/csharp" # IrisFlowerClustering.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/predict-prices/csharp" # TaxiFarePrediction.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/image-classification/csharp" # TransferLearningTF.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/sentiment-analysis/csharp" # SentimentAnalysis.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/github-issue-classification/csharp" # GitHubIssueClassification.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/text-classification-tf/csharp" # TextClassificationTF.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/docs/machine-learning/tutorials/snippets/sales-anomaly-detection/csharp" # ProductSalesAnomalyDetection.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/xml/VS_Snippets_Data/edm_example_model/edm_example_model" # edm_example_model.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/BatchingSample" # BatchingSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/AggregateFunctionSample" # AggregateFunctionSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/SqliteProviderSample" # SqliteProviderSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/InteropSample" # InteropSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/InMemorySample" # InMemorySample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/DateAndTimeSample" # DateAndTimeSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/ScalarFunctionSample" # ScalarFunctionSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/BulkInsertSample" # BulkInsertSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/RegularExpressionSample" # RegularExpressionSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/AsyncSample" # AsyncSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/EncryptionSample" # EncryptionSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/DirtyReadSample" # DirtyReadSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/CollationSample" # CollationSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/DapperSample" # DapperSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/ExtensionsSample" # ExtensionsSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/SystemLibrarySample" # SystemLibrarySample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/StreamingSample" # StreamingSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/ResultMetadataSample" # ResultMetadataSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/BackupSample" # BackupSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/standard/data/sqlite/HelloWorldSample" # HelloWorldSample.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/cpp/VS_Snippets_Misc/astoria reflection provider/customdataserviceclient" # customdataserviceclient.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CFX/cfx_selfhost4/cs" # selfhost.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS" # LINQtoDataSetExamplesCS.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS" # DataViewSamples.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataView Samples/CS" # DataViewSamplesCS.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_ADO.NET/DP DataViewWinForms Sample/CS" # DataViewWinFormsSample.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_ADO.NET/DP Custom CopyToDataTable Examples/CS" # CustomCopyToDataTableCS.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementX509/cs" # encryptxml.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/cs" # decryptxml.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/cs" # encryptxml.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/cs" # encryptxml.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesignpattern/cs" # baggageinfocs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/generatingahash/cs" # generatingahash.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/cs" # verifyxml.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToDecryptXMLElementX509/cs" # decryptxml.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/conceptual.observerdesign.howto/cs" # temperaturemonitorcs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_CLR/HowToSignXMLDocumentRSA/cs" # signxml.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS" # CS.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS" # csrefDelegates.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csvariance/cs" # windowsformsapplication1.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuide/CS" # csProgGuide.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS" # csrefKeywordsModifiers.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS" # CSRefStrings.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS" # csLINQProgRef.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs" # coding conventions examples.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS" # csquerykeywords.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS" # GettingStarted.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/csFilesAndFolders/CS" # csFilesFolders.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_VBCSharp/vbdynamicwalkthrough/cs" # dynamicwalkthroughcs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqDataBinding/cs" # databinding.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqSQOTranslation/cs" # sqotranslation.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.objectchangeconflict/cs" # objconflict.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqUDFS/cs" # udfs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqObjectModel/cs" # objectmodel.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DP L2E Examples/CS" # l2e_examplescs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqWalk4CS/cs" # walk4.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs" # submittingchanges.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1ACS/cs" # walk1part2.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqCompositeKeys/cs" # compositekeys.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqSprox/cs" # sprox.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqDebuggingSupport/cs" # debuggingsupport.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqMismatch/cs" # mismatch.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefault/cs" # overridedefault.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.dataloadoptions/cs" # testmakenew.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqObjectIdentity/cs" # objectidentity.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqWalk3CS/cs" # walk3.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqCRUDOps/cs" # crudops.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/l2s_querycache/cs" # cs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqCustomize/cs" # customize.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqAdoNet/cs" # cs-adonet.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/dp l2e canonicalandstorefunctions/cs" # canonicalandstorefunctions.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqLocalMethodCall/cs" # cs-localmethodcall.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/dp conceptualmodelfunctions/cs" # conceptualmodelfunctions.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.conflictmodeenumeration/cs" # conflictmodeenum.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs" # overridedefaultsproc.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs" # entityservices.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqWalk2CS/cs" # walk2.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DP ObjectServices Concepts/CS" # objectservicesconceptscs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqGettingStarted/cs" # gettingstarted.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/dp l2e methods on objectcontext/cs" # methodsonobjectcontext.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqQuerying/cs" # querying.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqSerialization/cs" # serialization.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.table/cs" # table.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.memberchangeconflict/cs" # memconflict.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DP L2E Conceptual Examples/CS" # l2e_conceptualexamplescs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs" # updatecheck.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DP L2E Materialization Example/CS" # L2EMaterializationCS.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/system.data.linq.refreshmode/cs" # refreshmode.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/dp l2e arraysandlistsinqueries/cs" # l2e_arraysandlistsinqueriescs.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqWalk1CS/cs" # walk1part1.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqCascadeWorkaround/cs" # cascade.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqCommunicatingWithDatabase/cs" # CommWithDatabase.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/DLinqQueryConcepts/cs" # queryconcepts.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/csharp/VS_Snippets_Data/dp l2e maptodbfunction/cs" # CustomStoreFunction.csproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/TransformationCS" # TransformationCS.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxTransformationQuickStart/ConstructionCS" # ConstructionCS.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/SyntaxWalker" # SyntaxWalker.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/SyntaxQuickStart/HelloSyntaxTree" # HelloSyntaxTree.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/getting_started/ClassLibraryProjects/StringLibraryTest" # StringLibraryTest.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/XAMLOvwSupport/VisualBasic" # WpfApplication7.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/XLinqExample/visualbasic" # xlinqexample.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowClosingSnippets/visualbasic" # windowclosingsnippets.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/VisualBasic" # WpfLayoutHostingWfWithXaml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WinformWPFInk/VisualBasic" # WinformsWPFInk.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/vsmcustomcontrol/visualbasic" # vsmcustomcontrolvb2.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAAutomationID_snip/VisualBasic" # UIAAutomationID_snip.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WindowOwnerOwnedWindowsSnippets/visualbasic" # windowownerownedwindowssnippets.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementX509/vb" # encryptxml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementAsymmetric/vb" # decryptxml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementSymmetric/vb" # encryptxml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToEncryptXMLElementAsymmetric/vb" # encryptxml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesignpattern/vb" # baggageinfo.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToVerifyXMLDocumentRSA/vb" # verifyxml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToDecryptXMLElementX509/vb" # decryptxml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.observerdesign.howto/vb" # temperaturemonitorvb.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_CLR/HowToSignXMLDocumentRSA/vb" # signxml.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB" # vbvbalrlambdas.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowTos/VB" # VbLINQHowTos.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrRelaxedDelegates/VB" # VbVbalrRelaxedDelegates.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXmlSamples2/VB" # VbXmlSamples2.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrIteratorWalkthrough/VB" # VbVbalrIteratorWalkthrough.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqDataBinding/vb" # databinding.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqSQOTranslation/vb" # sqotranslation.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.objectchangeconflict/vb" # objconflict.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqUDFS/vb" # udfs.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectModel/vb" # objectmodel.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk1VB/vb" # walk1part1.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqSubmittingChanges/vb" # submittingchanges.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqCompositeKeys/vb" # compositekeys.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqSprox/vb" # sprox.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqDebuggingSupport/vb" # debuggingsupport.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqMismatch/vb" # mismatch.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefault/vb" # overridedefault.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.dataloadoptions/vb" # snip.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb" # objectidentity.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqCRUDOps/vb" # crudops.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk2VB/vb" # walk2.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqCustomize/vb" # customize.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqAdoNet/vb" # vb-adonet.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqLocalMethodCall/vb" # vb-localmethodcall.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.conflictmodeenumeration/vb" # conflictmodeenum.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb" # sprocexclus.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk3VB/vb" # walk3.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqGettingStarted/vb" # gettingstarted.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqQuerying/vb" # querying.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqSerialization/vb" # serialize.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.table/vb" # table.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.memberchangeconflict/vb" # memconflict.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.mapping.updatecheck/vb" # udpatecheck.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/system.data.linq.refreshmode/vb" # refreshmode.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk4VB/vb" # walk4.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqCascadeWorkaround/vb" # cascade.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqCommunicatingWithDatabase/vb" # CommWithDatabase.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryConcepts/vb" # queryconcepts.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqWalk1AVB/vb" # walk1part2.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb" # vb-DLinqQueryExamples.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/core/tutorials/snippets/library-with-visual-studio/vb/StringLibraryTest" # StringLibraryTest.vbproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/docs/core/tutorials/snippets/library-with-visual-studio/csharp/StringLibraryTest" # StringLibraryTest.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-using-mstest/csharp/PrimeService.Tests" # PrimeService.Tests.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests" # PrimeService.Tests.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-best-practices/csharp/before" # unit-testing-best-practices-before.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-best-practices/csharp/after" # unit-testing-best-practices-after.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-using-nunit/csharp/PrimeService.Tests" # PrimeService.Tests.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-vb-nunit/vb/PrimeService.Tests" # PrimeService.Tests.vbproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-vb-dotnet-test/vb/PrimeService.Tests" # PrimeService.Tests.vbproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/testing/unit-testing-vb-mstest/vb/PrimeService.Tests" # PrimeService.Tests.vbproj
   schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: nuget
-  directory: "/samples/snippets/core/tutorials/using-on-mac-vs-full-solution/csharp/TestLibrary" # TestLibrary.csproj
-  schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/XcopyablePlugin" # XcopyablePlugin.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/FrenchPlugin" # FrenchPlugin.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/JsonPlugin" # JsonPlugin.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/OldJsonPlugin" # OldJsonPlugin.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/creating-app-with-plugin-support/csharp/UVPlugin" # UVPlugin.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_cancellationwinforms/cs/cancellationwinforms" # cancellationwinforms.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader.Tests" # SimpleFeedReader.Tests.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/finished/SimpleFeedReader" # SimpleFeedReader.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader.Tests" # SimpleFeedReader.Tests.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/tutorials/nullable-reference-migration/start/SimpleFeedReader" # SimpleFeedReader.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test" # MakeConst.Test.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst" # MakeConst.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms" # cancellationwinforms.vbproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFWithWFAndDatabinding/VisualBasic/WPFWithWFAndDatabinding" # WPFWithWFAndDatabinding.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/VisualBasic/ResourcesSample" # ResourcesSample.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/VisualBasic/ResourceLibrary" # ResourceLibrary.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/VisualBasic/MyControls" # MyControls.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
+  open-pull-requests-limit: 10
+- package-ecosystem: nuget
+  directory: "/samples/snippets/visualbasic/VS_Snippets_Wpf/WpfHostingWindowsFormsControl/VisualBasic/WpfHost" # WpfHost.vbproj
+  schedule:
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10
 - package-ecosystem: nuget
   directory: "/samples/snippets/core/tutorials/testing-with-cli/csharp/test/NewTypesTests" # NewTypesTests.csproj
   schedule:
-    interval: daily
+    interval: "weekly"
+    day: "sunday"
   open-pull-requests-limit: 10

@@ -40,7 +40,7 @@ Public Class App
     Public Shared Sub Main()
         ' String as result.
         Dim str As String = NativeMethods.TestStringAsResult()
-        Console.WriteLine(vbNewLine + "String returned: {0}", str)
+        Console.WriteLine(Environment.NewLine + "String returned: {0}", str)
 
         ' Initializes buffer and appends something to the end so the whole
         ' buffer is passed to the unmanaged side.
@@ -53,7 +53,7 @@ Public Class App
         mss.size = mss.buffer.Length
 
         NativeMethods.TestStringInStruct(mss)
-        Console.WriteLine(vbNewLine + "Buffer after Unicode function call: {0}",
+        Console.WriteLine(Environment.NewLine + "Buffer after Unicode function call: {0}",
             mss.buffer)
 
         Dim buffer2 As New StringBuilder("content", 100)
@@ -65,7 +65,7 @@ Public Class App
         mss2.size = mss2.buffer.Length
 
         NativeMethods.TestStringInStructAnsi(mss2)
-        Console.WriteLine(vbNewLine + "Buffer after Ansi function call: {0}", mss2.buffer)
+        Console.WriteLine(Environment.NewLine + "Buffer after Ansi function call: {0}", mss2.buffer)
     End Sub
 End Class
 '</snippet15>

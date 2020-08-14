@@ -66,7 +66,6 @@ public class GrpcStreamSubscription<T> : IDisposable
     private readonly IAsyncStreamReader<T> _reader;
     private readonly IObserver<T> _observer;
 
-    private readonly CancellationToken _token;
     private readonly CancellationTokenSource _tokenSource;
 
     private readonly Task _task;
@@ -78,16 +77,15 @@ public class GrpcStreamSubscription<T> : IDisposable
         _reader = reader ?? throw new ArgumentNullException(nameof(reader));
         _observer = observer ?? throw new ArgumentNullException(nameof(observer));
 
-        _token = token;
         _tokenSource = new CancellationTokenSource();
         token.Register(_tokenSource.Cancel);
 
         _completed = false;
 
-        _task = Run();
+        _task = Run(_tokenSource.Token);
     }
 
-    private async Task Run()
+    private async Task Run(CancellationToken token)
     {
         while (!token.IsCancellationRequested)
         {

@@ -124,7 +124,7 @@ AnAttribute="abc"  IsNamespaceDeclaration:False
 ' Create a document with some white space child nodes of the document.  
 Dim root As XDocument = XDocument.Parse( _  
 "<?xml version='1.0' encoding='utf-8' standalone='yes'?>" & _  
-vbNewLine & "<Root/>" & vbNewLine & "<!--a comment-->" & vbNewLine, _  
+Environment.NewLine & "<Root/>" & Environment.NewLine & "<!--a comment-->" & Environment.NewLine, _  
 LoadOptions.PreserveWhitespace)  
   
 ' Count the white space child nodes using LINQ to XML.  

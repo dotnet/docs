@@ -62,7 +62,7 @@ Specifies that the compiler should compile without a reference to the Visual Bas
   
 - <xref:Microsoft.VisualBasic.Constants.vbLf> constant  
   
-- <xref:Microsoft.VisualBasic.Constants.vbNewLine> constant (This is obsolete starting with .NET 5.0)
+- <xref:Microsoft.VisualBasic.Constants.vbNewLine> constant (This is obsolete starting with .NET Core 3.0)
   
 - <xref:Microsoft.VisualBasic.Constants.vbNullChar> constant  
   

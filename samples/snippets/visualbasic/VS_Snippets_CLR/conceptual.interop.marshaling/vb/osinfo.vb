@@ -38,7 +38,7 @@ End Class
 '<snippet12>
 Public Class App
     Public Shared Sub Main()
-        Console.WriteLine(vbNewLine + "Passing OSVersionInfo as a class")
+        Console.WriteLine(Environment.NewLine + "Passing OSVersionInfo as a class")
 
         Dim osvi As New OSVersionInfo()
         osvi.OSVersionInfoSize = Marshal.SizeOf(osvi)
@@ -48,7 +48,7 @@ Public Class App
         Console.WriteLine("Class size:    {0}", osvi.OSVersionInfoSize)
         Console.WriteLine("OS Version:    {0}.{1}", osvi.MajorVersion, osvi.MinorVersion)
 
-        Console.WriteLine(vbNewLine + "Passing OSVersionInfo2 as a struct")
+        Console.WriteLine(Environment.NewLine + "Passing OSVersionInfo2 as a struct")
 
         Dim osvi2 As New OSVersionInfo2()
         osvi2.OSVersionInfoSize = Marshal.SizeOf(osvi2)

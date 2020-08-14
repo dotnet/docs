@@ -118,7 +118,7 @@ Module Module1
         Console.WriteLine("Before Transform")
         Console.WriteLine("----------------")
         Console.WriteLine(data)
-        Console.WriteLine(vbNewLine)
+        Console.WriteLine(Environment.NewLine)
 
         ' The XForm function, shown later in this topic, accomplishes the transform
         Dim newData As XElement = XForm(data)
@@ -324,7 +324,7 @@ Module Module1
         Console.WriteLine("Before Transform")
         Console.WriteLine("----------------")
         Console.WriteLine(root)
-        Console.WriteLine(vbNewLine)
+        Console.WriteLine(Environment.NewLine)
         Dim newRoot As XElement = XForm(root)
 
         Console.WriteLine("After Transform")

@@ -28,15 +28,15 @@ End Class
 '<snippet47>
 Public Class App
     Public Shared Sub Main()
-        Console.WriteLine("Calling SetData using AsAny..." + vbNewLine)
+        Console.WriteLine("Calling SetData using AsAny..." + Environment.NewLine)
         NativeMethods.SetData(NativeMethods.DataType.DT_I2, CShort(12))
         NativeMethods.SetData(NativeMethods.DataType.DT_I4, CLng(12))
         NativeMethods.SetData(NativeMethods.DataType.DT_R4, CSng(12))
         NativeMethods.SetData(NativeMethods.DataType.DT_R8, CDbl(12))
         NativeMethods.SetData(NativeMethods.DataType.DT_STR, "abcd")
 
-        Console.WriteLine(vbNewLine + "Calling SetData using overloading...")
-        Console.WriteLine(vbNewLine)
+        Console.WriteLine(Environment.NewLine + "Calling SetData using overloading...")
+        Console.WriteLine(Environment.NewLine)
         Dim d As Double = 12
         NativeMethods.SetData2(NativeMethods.DataType.DT_R8, d)
         NativeMethods.SetData2(NativeMethods.DataType.DT_STR, "abcd")

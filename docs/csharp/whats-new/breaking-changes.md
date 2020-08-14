@@ -14,3 +14,4 @@ The [Roslyn](https://github.com/dotnet/roslyn) team maintains a list of breaking
 - [Breaking changes in Roslyn 3.0 (VS2019) from Roslyn 2.* (VS2017)](https://github.com/dotnet/roslyn/blob/master/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20VS2019.md)
 - [Breaking changes in Roslyn 2.0 (VS2017) from Roslyn 1.* (VS2015) and native C# compiler (VS2013 and previous).](https://github.com/dotnet/roslyn/blob/master/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20VS2017.md)
 - [Breaking changes in Roslyn 1.0 (VS2015) from the native C# compiler (VS2013 and previous).](https://github.com/dotnet/roslyn/blob/master/docs/compilers/CSharp/Compiler%20Breaking%20Changes%20-%20VS2015.md)
+- [Unicode version change in C# 6](https://github.com/dotnet/roslyn/blob/master/docs/compilers/CSharp/Unicode%20Version.md)

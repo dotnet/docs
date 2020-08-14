@@ -483,13 +483,14 @@ Consider replacing the object model to use [Entity Framework](/ef). Entity Frame
 
 For apps that use `.aspx` SOAP endpoints, consider changing those endpoints to use [WCF](/dotnet/framework/wcf/). WCF is a more fully featured replacement for `.asmx` web services. WCF endpoints [can be exposed via SOAP](../../../wcf/feature-details/how-to-expose-a-contract-to-soap-and-web-clients.md) for compatibility with existing callers.
 
-## Roslyn static code analyzers
+## Code analyzers
 
-Roslyn analyzer security rules, which run as part of compiling source code, can help find vulnerabilities in C# and Visual Basic related to this security issue. Microsoft.CodeAnalysis.FxCopAnalyzers is a NuGet package of Roslyn analyzers, distributed on [nuget.org](https://www.nuget.org/).
+Code analyzer security rules, which run when your source code is compiled, can help to find vulnerabilities related to this security issue in C# and Visual Basic code. Microsoft.CodeAnalysis.FxCopAnalyzers is a NuGet package of code analyzers that's distributed on [nuget.org](https://www.nuget.org/).
 
-For an overview of Roslyn analyzers, see [Overview of source code analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview).
+For an overview of code analyzers, see [Overview of source code analyzers](https://docs.microsoft.com/visualstudio/code-quality/roslyn-analyzers-overview).
 
-The new Microsoft.CodeAnalysis.FxCopAnalyzers rules to enable are:
+Enable the following Microsoft.CodeAnalysis.FxCopAnalyzers rules:
+
 - [CA2350](https://docs.microsoft.com/visualstudio/code-quality/ca2350): Do not use DataTable.ReadXml() with untrusted data
 - [CA2351](https://docs.microsoft.com/visualstudio/code-quality/ca2351): Do not use DataSet.ReadXml() with untrusted data
 - [CA2352](https://docs.microsoft.com/visualstudio/code-quality/ca2352): Unsafe DataSet or DataTable in serializable type can be vulnerable to remote code execution attacks
@@ -502,6 +503,7 @@ The new Microsoft.CodeAnalysis.FxCopAnalyzers rules to enable are:
 
 For more information on configuring rules, see [Use rule sets to group code analysis rules](https://docs.microsoft.com/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules).
 
-These new rules are available in:
+The new security rules are available in the following NuGet packages:
+
 - Microsoft.CodeAnalysis.FxCopAnalyzers 3.3.0: for Visual Studio 2019 version 16.3 or later
 - Microsoft.CodeAnalysis.FxCopAnalyzers 2.9.11: for Visual Studio 2017 version 15.9 or later

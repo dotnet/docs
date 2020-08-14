@@ -157,7 +157,7 @@ One unique feature of F#'s type system is the ability to provide context for num
 
 [!code-fsharp[UnitsOfMeasure](~/samples/snippets/fsharp/tour.fs#L817-L842)]
 
-The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [FSharp.Data.UnitSystems.SI.UniitSymbols Namespace](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-data-unitsystems-si-unitsymbols.html).
+The F# Core library defines many SI unit types and unit conversions.  To learn more, check out the [FSharp.Data.UnitSystems.SI.UnitSymbols Namespace](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-data-unitsystems-si-unitsymbols.html).
 
 ## Classes and Interfaces
 

@@ -1652,7 +1652,7 @@ Module Module1
                     Console.WriteLine("Mininum TotalDue {0} for SalesOrderID {1}: ", _
                         ord.TotalDue, ord.SalesOrderID)
                 Next
-                Console.Write(vbNewLine)
+                Console.Write(Environment.NewLine)
             Next
         End Using
         ' </SnippetMinElements_MQ>
@@ -1719,7 +1719,7 @@ Module Module1
                     Console.WriteLine("Average total due for SalesOrderID {1} is: {0}", _
                         ord.TotalDue, ord.SalesOrderID)
                 Next
-                Console.Write(vbNewLine)
+                Console.Write(Environment.NewLine)
             Next
         End Using
         ' </SnippetAverageElements_MQ>
@@ -1786,7 +1786,7 @@ Module Module1
                     Console.WriteLine("MaxTotalDue {0} for SalesOrderID {1}: ", _
                         ord.TotalDue, ord.SalesOrderID)
                 Next
-                Console.Write(vbNewLine)
+                Console.Write(Environment.NewLine)
             Next
         End Using
         ' </SnippetMaxElements_MQ>

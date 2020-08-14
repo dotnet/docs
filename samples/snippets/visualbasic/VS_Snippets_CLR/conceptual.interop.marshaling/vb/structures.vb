@@ -99,13 +99,13 @@ Public Class App
         myStruct.vals(1) = 4
         myStruct.vals(2) = 9
 
-        Console.WriteLine(vbNewLine + "Structure with array before call:")
+        Console.WriteLine(Environment.NewLine + "Structure with array before call:")
         Console.WriteLine(myStruct.flag)
         Console.WriteLine("{0} {1} {2}", myStruct.vals(0),
             myStruct.vals(1), myStruct.vals(2))
 
         NativeMethods.TestArrayInStruct(myStruct)
-        Console.WriteLine(vbNewLine + "Structure with array after call:")
+        Console.WriteLine(Environment.NewLine + "Structure with array after call:")
         Console.WriteLine(myStruct.flag)
         Console.WriteLine("{0} {1} {2}", myStruct.vals(0),
             myStruct.vals(1), myStruct.vals(2))

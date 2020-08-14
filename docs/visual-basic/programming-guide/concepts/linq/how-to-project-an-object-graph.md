@@ -89,14 +89,14 @@ Class Address
   
     Public Overrides Function ToString() As String  
         Dim sb As StringBuilder = New StringBuilder()  
-        sb.Append(String.Format("Type: {0}" + vbNewLine, _  
+        sb.Append(String.Format("Type: {0}" + Environment.NewLine, _  
             IIf(AddressType = AddressUse.Shipping, "Shipping", "Billing")))  
-        sb.Append(String.Format("Name: {0}" + vbNewLine, Name))  
-        sb.Append(String.Format("Street: {0}" + vbNewLine, Street))  
-        sb.Append(String.Format("City: {0}" + vbNewLine, City))  
-        sb.Append(String.Format("State: {0}" + vbNewLine, State))  
-        sb.Append(String.Format("Zip: {0}" + vbNewLine, Zip))  
-        sb.Append(String.Format("Country: {0}" + vbNewLine, Country))  
+        sb.Append(String.Format("Name: {0}" + Environment.NewLine, Name))  
+        sb.Append(String.Format("Street: {0}" + Environment.NewLine, Street))  
+        sb.Append(String.Format("City: {0}" + Environment.NewLine, City))  
+        sb.Append(String.Format("State: {0}" + Environment.NewLine, State))  
+        sb.Append(String.Format("Zip: {0}" + Environment.NewLine, Zip))  
+        sb.Append(String.Format("Country: {0}" + Environment.NewLine, Country))  
         Return sb.ToString()  
     End Function  
 End Class  
@@ -165,15 +165,15 @@ Class PurchaseOrderItem
   
     Public Overrides Function ToString() As String  
         Dim sb As StringBuilder = New StringBuilder()  
-        sb.Append(String.Format("PartNumber: {0}" + vbNewLine, PartNumber))  
-        sb.Append(String.Format("ProductName: {0}" + vbNewLine, ProductName))  
-        sb.Append(String.Format("Quantity: {0}" + vbNewLine, Quantity))  
-        sb.Append(String.Format("USPrice: {0}" + vbNewLine, USPrice))  
+        sb.Append(String.Format("PartNumber: {0}" + Environment.NewLine, PartNumber))  
+        sb.Append(String.Format("ProductName: {0}" + Environment.NewLine, ProductName))  
+        sb.Append(String.Format("Quantity: {0}" + Environment.NewLine, Quantity))  
+        sb.Append(String.Format("USPrice: {0}" + Environment.NewLine, USPrice))  
         If (Comment <> Nothing) Then  
-            sb.Append(String.Format("Comment: {0}" + vbNewLine, Comment))  
+            sb.Append(String.Format("Comment: {0}" + Environment.NewLine, Comment))  
         End If  
         If (ShipDate <> DateTime.MinValue) Then  
-            sb.Append(String.Format("ShipDate: {0:d}" + vbNewLine, ShipDate))  
+            sb.Append(String.Format("ShipDate: {0:d}" + Environment.NewLine, ShipDate))  
         End If  
         Return sb.ToString()  
     End Function  
@@ -234,20 +234,20 @@ Class PurchaseOrder
     Public Overrides Function ToString() As String  
         Dim sb As StringBuilder = New StringBuilder()  
         sb.Append(String.Format("PurchaseOrderNumber: {0}" _  
-                    + vbNewLine, PurchaseOrderNumber))  
-        sb.Append(String.Format("OrderDate: {0:d}" + vbNewLine, OrderDate))  
-        sb.Append(vbNewLine)  
-        sb.Append("Addresses" + vbNewLine)  
-        sb.Append("=====" + vbNewLine)  
+                    + Environment.NewLine, PurchaseOrderNumber))  
+        sb.Append(String.Format("OrderDate: {0:d}" + Environment.NewLine, OrderDate))  
+        sb.Append(Environment.NewLine)  
+        sb.Append("Addresses" + Environment.NewLine)  
+        sb.Append("=====" + Environment.NewLine)  
         For Each address As Address In Addresses  
             sb.Append(address)  
-            sb.Append(vbNewLine)  
+            sb.Append(Environment.NewLine)  
         Next  
-        sb.Append("Items" + vbNewLine)  
-        sb.Append("=====" + vbNewLine)  
+        sb.Append("Items" + Environment.NewLine)  
+        sb.Append("=====" + Environment.NewLine)  
         For Each item As PurchaseOrderItem In Items  
             sb.Append(item)  
-            sb.Append(vbNewLine)  
+            sb.Append(Environment.NewLine)  
         Next  
         Return sb.ToString()  
     End Function  

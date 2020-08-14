@@ -44,8 +44,8 @@ public Order CreateOrder(Dictionary<string, string> attributes)
 
 For more information about Protobuf, see the official [Protobuf documentation](https://developers.google.com/protocol-buffers/docs/overview).
 
+[map-field]: https://developers.google.cn/protocol-buffers/docs/reference/csharp/class/google/protobuf/collections/map-field-t-key-t-value-
+
 >[!div class="step-by-step"]
 >[Previous](protobuf-enums.md)
 >[Next](wcf-services-to-grpc-comparison.md)
-
-[map-field]: https://developers.google.cn/protocol-buffers/docs/reference/csharp/class/google/protobuf/collections/map-field-t-key-t-value-

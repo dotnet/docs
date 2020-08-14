@@ -19,8 +19,8 @@ In the generated code, `repeated` fields are represented by read-only properties
 
 The `RepeatedField<T>` type includes the code required to serialize and deserialize the list to the binary wire format.
 
+[repeated-field]: https://developers.google.cn/protocol-buffers/docs/reference/csharp/class/google/protobuf/collections/repeated-field-t-
+
 >[!div class="step-by-step"]
 >[Previous](protobuf-nested-types.md)
 >[Next](protobuf-reserved.md)
-
-[repeated-field]: https://developers.google.cn/protocol-buffers/docs/reference/csharp/class/google/protobuf/collections/repeated-field-t-

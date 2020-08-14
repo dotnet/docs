@@ -1,6 +1,6 @@
 ---
 title: Collection Types
-description: Learn about F# collection types and how they differ from collection types in the .NET Framework.
+description: Learn about F# collection types and how they differ from collection types .NET.
 ms.date: 05/16/2016
 ---
 # F# Collection Types

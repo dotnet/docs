@@ -1,7 +1,7 @@
 ---
 title: Collection Types
 description: Learn about F# collection types and how they differ from collection types in the .NET Framework.
-ms.date: 05/16/2016
+ms.date: 08/13/2020
 ---
 # F# Collection Types
 
@@ -15,11 +15,11 @@ The following table shows F# collection types.
 
 |Type|Description|Related Links|
 |----|-----------|-------------|
-|[List](https://msdn.microsoft.com/library/c627b668-477b-4409-91ed-06d7f1b3e4a7)|An ordered, immutable series of elements of the same type. Implemented as a linked list.|[Lists](lists.md)<br /><br />[List Module](https://msdn.microsoft.com/library/a2264ba3-2d45-40dd-9040-4f7aa2ad9788)|
-|[Array](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1)|A fixed-size, zero-based, mutable collection of consecutive data elements that are all of the same type.|[Arrays](arrays.md)<br /><br />[Array Module](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1)<br /><br />[Array2D Module](https://msdn.microsoft.com/library/ae1a9746-7817-4430-bcdb-a79c2411bbd3)<br /><br />[Array3D Module](https://msdn.microsoft.com/library/c8355e2d-add8-48a4-8aa6-1c57ae74c560)|
-|[seq](https://msdn.microsoft.com/library/2f0c87c6-8a0d-4d33-92a6-10d1d037ce75)|A logical series of elements that are all of one type. Sequences are particularly useful when you have a large, ordered collection of data but don't necessarily expect to use all the elements. Individual sequence elements are computed only as required, so a sequence can perform better than a list if not all the elements are used. Sequences are represented by the `seq<'T>` type, which is an alias for `IEnumerable<T>`. Therefore, any .NET Framework type that implements `System.Collections.Generic.IEnumerable<'T>` can be used as a sequence.|[Sequences](sequences.md)<br /><br />[Seq Module](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684)|
-|[Map](https://msdn.microsoft.com/library/975316ea-55e3-4987-9994-90897ad45664)|An immutable dictionary of elements. Elements are accessed by key.|[Map Module](https://msdn.microsoft.com/library/bfe61ead-f16c-416f-af98-56dbcbe23e4f)|
-|[Set](https://msdn.microsoft.com/library/50cebdce-0cd7-4c5c-8ebc-f3a9e90b38d8)|An immutable set that's based on binary trees, where comparison is the F# structural comparison function, which potentially uses implementations of the `System.IComparable` interface on key values.|[Set Module](https://msdn.microsoft.com/library/61efa732-d55d-4c32-993f-628e2f98e6a0)|
+|[List](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharplist-1.html)|An ordered, immutable series of elements of the same type. Implemented as a linked list.|[Lists](lists.md)<br /><br />[List Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-listmodule.html)|
+|[Array](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-array-1.html)|A fixed-size, zero-based, mutable collection of consecutive data elements that are all of the same type.|[Arrays](arrays.md)<br /><br />[Array Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-arraymodule.html)<br /><br />[Array2D Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-array2dmodule.html)<br /><br />[Array3D Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-array3dmodule.html)|
+|[seq](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seq-1.html)|A logical series of elements that are all of one type. Sequences are particularly useful when you have a large, ordered collection of data but don't necessarily expect to use all the elements. Individual sequence elements are computed only as required, so a sequence can perform better than a list if not all the elements are used. Sequences are represented by the `seq<'T>` type, which is an alias for `IEnumerable<T>`. Therefore, any .NET Framework type that implements `System.Collections.Generic.IEnumerable<'T>` can be used as a sequence.|[Sequences](sequences.md)<br /><br />[Seq Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html)|
+|[Map](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpmap-2.html)|An immutable dictionary of elements. Elements are accessed by key.|[Map Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-mapmodule.html)|
+|[Set](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-fsharpset-1.html)|An immutable set that's based on binary trees, where comparison is the F# structural comparison function, which potentially uses implementations of the `System.IComparable` interface on key values.|[Set Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-setmodule.html)|
 
 ### Table of Functions
 

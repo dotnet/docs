@@ -279,7 +279,7 @@ Module Module1
                         Group prod By prod.CategoryID Into grouping = Group
 
         For Each grp In prodQuery
-            Console.WriteLine(vbNewLine & "CategoryID Key = {0}:", _
+            Console.WriteLine(Environment.NewLine & "CategoryID Key = {0}:", _
                 grp.CategoryID)
             For Each listing In grp.grouping
                 Console.WriteLine(vbTab & listing.ProductName)
@@ -334,7 +334,7 @@ Module Module1
                                   {cust.City, cust.Region} Into grouping = Group
 
         For Each grp In custRegionQuery
-            Console.WriteLine(vbNewLine & "Location Key: {0}", grp.Key)
+            Console.WriteLine(Environment.NewLine & "Location Key: {0}", grp.Key)
             For Each listing In grp.grouping
                 Console.WriteLine(vbTab & "{0}", listing)
             Next
@@ -501,7 +501,7 @@ Module Module1
                             Into grouping = Group
 
         For Each grp In prodQuery
-            Console.WriteLine(vbNewLine & "CategoryID {0}, SupplierID {1}", _
+            Console.WriteLine(Environment.NewLine & "CategoryID {0}, SupplierID {1}", _
                 grp.Key.CategoryID, grp.Key.SupplierID)
             For Each listing In grp.grouping
                 Console.WriteLine(vbTab & listing.ProductName)

@@ -1,7 +1,6 @@
 ---
 title: Register callbacks for cancellation requests
 ms.date: 08/14/2020
-ms.topic: how-to
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"

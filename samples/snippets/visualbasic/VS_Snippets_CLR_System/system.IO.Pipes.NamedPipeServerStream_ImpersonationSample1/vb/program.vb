@@ -11,8 +11,8 @@ Public Class PipeServer
         Dim i As Integer
         Dim servers(numThreads) As Thread
 
-        Console.WriteLine(vbNewLine + "*** Named pipe server stream with impersonation example ***" + vbNewLine)
-        Console.WriteLine("Waiting for client connect..." + vbNewLine)
+        Console.WriteLine(Environment.NewLine + "*** Named pipe server stream with impersonation example ***" + Environment.NewLine)
+        Console.WriteLine("Waiting for client connect..." + Environment.NewLine)
         For i = 0 To numThreads - 1
             servers(i) = New Thread(AddressOf ServerThread)
             servers(i).Start()
@@ -29,7 +29,7 @@ Public Class PipeServer
                 End If
             Next j
         End While
-        Console.WriteLine(vbNewLine + "Server threads exhausted, exiting.")
+        Console.WriteLine(Environment.NewLine + "Server threads exhausted, exiting.")
     End Sub
 
     Private Shared Sub ServerThread(data As Object)

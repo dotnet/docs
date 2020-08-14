@@ -21,7 +21,7 @@ End Class
 '<snippet21>
 Public Class App
     Public Shared Sub Main()
-        Console.WriteLine(vbNewLine + "Using marshal class" + vbNewLine)
+        Console.WriteLine(Environment.NewLine + "Using marshal class" + Environment.NewLine)
         UsingMarshaling()
         'Visual Basic 2005 cannot use unsafe code.
     End Sub

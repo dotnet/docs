@@ -203,7 +203,7 @@ An *indexer* is a member that enables objects to be indexed in the same way as a
 
 The `MyList<T>` class declares a single read-write indexer that takes an `int` parameter. The indexer makes it possible to index `MyList<T>` instances with `int` values. For example:
 
-:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ListAddition":::
+:::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="ListAccess":::
 
 Indexers can be overloaded. A class can declare multiple indexers as long as the number or types of their parameters differ.
 

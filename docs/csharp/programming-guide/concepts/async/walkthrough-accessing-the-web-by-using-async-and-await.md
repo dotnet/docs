@@ -15,7 +15,7 @@ This walkthrough starts with a synchronous Windows Presentation Foundation (WPF)
 If you don't want to build the applications yourself, you can download [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f).
 
 > [!NOTE]
-> To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or higher installed on your computer.
+> To run the examples, you must have the .NET Framework 4.5 or later installed on your computer.
 
 ## Create a WPF application
 
@@ -392,7 +392,7 @@ Notice that it takes a few seconds to display the counts. During that time, the 
 
 ## Replace method GetURLContentsAsync with a .NET method
 
-1. .NET Framework 4.5 and higher versions provide many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
+1. .NET Framework 4.5 and later versions provide many async methods that you can use. One of them, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%28System.String%29>, does just what you need for this walkthrough. You can use it instead of the `GetURLContentsAsync` method that you created in an earlier procedure.
 
      The first step is to create an `HttpClient` object in method `SumPageSizesAsync`. Add the following declaration at the start of the method.
 

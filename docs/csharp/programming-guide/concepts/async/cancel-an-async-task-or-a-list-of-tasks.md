@@ -11,7 +11,7 @@ You can set up a button that you can use to cancel an async application if you d
 The examples use the UI that [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md) describes.
 
 > [!NOTE]
-> To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or higher installed on your computer.
+> To run the examples, you must have the .NET Framework 4.5 or later installed on your computer.
 
 ## Cancel a task
 

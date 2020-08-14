@@ -13,27 +13,8 @@ In this tutorial, you'll explore the creation of an **analyzer** and an accompan
 
 ## Prerequisites
 
-> [!NOTE]
-> The current Visual Studio **Analyzer with code fix (.NET Standard)** template has a known bug in it and should be fixed in Visual Studio 2019 version 16.7. The projects in the template will not compile unless the following changes are made:
->
-> 1. Select **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**
->    - Select the plus button, to add a new source:
->    - Set the **Source** to `https://dotnet.myget.org/F/roslyn-analyzers/api/v3/index.json` and select **Update**
-> 1. From the **Solution Explorer**, right-click on the **MakeConst.Vsix** project, and select **Edit Project File**
->    - Update the `<AssemblyName>` node to add the `.Visx` suffix:
->      - `<AssemblyName>MakeConst.Vsix</AssemblyName>`
->    - Update the `<ProjectReference>` node on line 41 to alter the `TargetFramework` value:
->      - `<ProjectReference Update="@(ProjectReference)" AdditionalProperties="TargetFramework=netstandard2.0" />`
-> 1. Update the *MakeConstUnitTests.cs* file, in the *MakeConst.Test* project:
->    - Change line 9 to the following, notice namespace alteration:
->      - `using Verify = Microsoft.CodeAnalysis.CSharp.Testing.MSTest.CodeFixVerifier<`
->    - Change line 24 to the following method:
->      - `await Verify.VerifyAnalyzerAsync(test);`
->    - Change line 62 to the following method:
->      - `await Verify.VerifyCodeFixAsync(test, expected, fixtest);`
-
 - [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2017-and-other-products)
-- [Visual Studio 2019](https://www.visualstudio.com/downloads)
+- [Visual Studio 2019](https://www.visualstudio.com/downloads) 16.7+
 
 You'll need to install the **.NET Compiler Platform SDK** via the Visual Studio Installer:
 

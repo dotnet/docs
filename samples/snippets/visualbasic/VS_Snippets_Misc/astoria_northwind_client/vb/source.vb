@@ -917,9 +917,9 @@ Public Class SourceVb
             For Each item In query
                 item.Address += "Street"
 
-                Console.WriteLine("Company name: {0} " & vbNewLine & "Street: {1} " _
-                    & "" & vbNewLine & "City: {2} " & vbNewLine & "State: {3} " & vbNewLine & _
-                    "Zip Code: {4} " & vbNewLine & "Country: {5}", _
+                Console.WriteLine("Company name: {0} " & Environment.NewLine & "Street: {1} " _
+                    & "" & Environment.NewLine & "City: {2} " & Environment.NewLine & "State: {3} " & Environment.NewLine & _
+                    "Zip Code: {4} " & Environment.NewLine & "Country: {5}", _
                     item.CompanyName, item.Address, item.City, item.Region, _
                     item.PostalCode, item.Country)
             Next
@@ -1050,7 +1050,7 @@ Public Class SourceVb
 
             ' Enumerate over the results of the query.
             For Each o As Order In ordersQuery
-                Console.WriteLine("CustomerID:{0}" & vbNewLine & "{1}, {2}", _
+                Console.WriteLine("CustomerID:{0}" & Environment.NewLine & "{1}, {2}", _
                     o.ShipName, o.ShipCity, o.ShipCountry)
             Next
         Catch ex As DataServiceQueryException
@@ -1086,7 +1086,7 @@ Public Class SourceVb
 
             ' Enumerate over the results of the query.
             For Each address As CustomerAddress In projectedQuery
-                Console.WriteLine("Address:" & vbNewLine & "{0}" & vbNewLine & "{1}, {2}", _
+                Console.WriteLine("Address:" & Environment.NewLine & "{0}" & Environment.NewLine & "{1}, {2}", _
                     address.Address, address.City, address.Region)
             Next
         Catch ex As DataServiceQueryException
@@ -1342,7 +1342,7 @@ Public Class SourceVb
 
             ' Enumerate over the results of the query.
             For Each address As CustomerAddress In projectedQuery
-                Console.WriteLine("Address:" & vbNewLine & "{0}" & vbNewLine & "{1}, {2}", _
+                Console.WriteLine("Address:" & Environment.NewLine & "{0}" & Environment.NewLine & "{1}, {2}", _
                     address.Address, address.City, address.Region)
             Next
         Catch ex As DataServiceQueryException
@@ -1377,7 +1377,7 @@ Public Class SourceVb
 
             ' Enumerate over the results of the query.
             For Each address As CustomerAddress In projectedQuery
-                Console.WriteLine("Address:" & vbNewLine & "{0}" & vbNewLine & "{1}, {2}", _
+                Console.WriteLine("Address:" & Environment.NewLine & "{0}" & Environment.NewLine & "{1}, {2}", _
                     address.Address, address.City, address.Region)
             Next
         Catch ex As DataServiceQueryException
@@ -1507,8 +1507,8 @@ Public Class SourceVb
         Try
             ' Enumerate to execute the query.
             For Each cust As Customer In query
-                Console.WriteLine("Name: {0}" & vbNewLine & "Address:" & vbNewLine & "{1}" _
-                                  & vbNewLine & "{2}, {3}", _
+                Console.WriteLine("Name: {0}" & Environment.NewLine & "Address:" & Environment.NewLine & "{1}" _
+                                  & Environment.NewLine & "{2}, {3}", _
                     cust.CompanyName, cust.Address, cust.City, cust.Region)
             Next
         Catch ex As DataServiceQueryException

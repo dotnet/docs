@@ -2,6 +2,7 @@
 title: Breaking changes in the C# compiler
 description: Find any breaking changes in the C# compiler that you are using.
 ms.topic: troubleshooting
+ms.custom: updateeachrelease
 ms.date: 08/14/2020
 ---
 

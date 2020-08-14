@@ -16,7 +16,7 @@ Module Module1
 
         sr.DiscardBufferedData()
         sr.BaseStream.Seek(2, SeekOrigin.Begin)
-        Console.WriteLine(vbNewLine & "Back to offset 2 and read to end: ")
+        Console.WriteLine(Environment.NewLine & "Back to offset 2 and read to end: ")
         Console.WriteLine(sr.ReadToEnd())
         ' writes - "cdefghijklmnopqrstuvwxyz"
         ' without DiscardBufferedData, writes - "pqrstuvwxyzcdefghijklmnopqrstuvwxyz"

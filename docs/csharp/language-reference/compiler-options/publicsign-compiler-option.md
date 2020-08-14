@@ -30,7 +30,7 @@ The **-publicsign** and **-delaysign** options are mutually exclusive.
 
 Sometimes called "fake sign" or "OSS sign", public signing includes the public key in an output assembly and sets the "signed" flag, but doesn't actually sign the assembly with a private key. This is useful for open source projects where people want to build assemblies which are compatible with the released "fully signed" assemblies, but don't have access to the private key used to sign the assemblies. Since almost no consumers actually need to check if the assembly is fully signed, these publicly built assemblies are useable in almost every scenario where the fully signed one would be used.
 
-### To add this option in a csproj file
+### To set this compiler option in a csproj file
 
 Open the .csproj file for a project, and add the following element:
 

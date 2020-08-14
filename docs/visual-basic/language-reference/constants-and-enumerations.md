@@ -34,7 +34,7 @@ Visual Basic supplies a number of predefined constants and enumerations for deve
 |`vbCrLf`|Carriage return/linefeed character combination.|  
 |`vbCr`|Carriage return character.|  
 |`vbLf`|Linefeed character.|  
-|`vbNewLine`|Newline character.|  
+|`vbNewLine`|Newline character. This is obsolete starting with .NET 5.0|  
 |`vbNullChar`|Null character.|  
 |`vbNullString`|Not the same as a zero-length string (""); used for calling external procedures.|  
 |`vbObjectError`|Error number. User-defined error numbers should be greater than this value. For example:<br /><br /> `Err.Raise(Number) = vbObjectError + 1000`|  

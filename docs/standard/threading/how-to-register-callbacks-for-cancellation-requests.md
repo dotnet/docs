@@ -1,5 +1,5 @@
 ---
-title: "How to: Register callbacks for cancellation requests"
+title: "Register callbacks for cancellation requests"
 ms.date: 08/14/2020
 ms.topic: how-to
 ms.technology: dotnet-standard
@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 8838dd75-18ed-4b8b-b322-cd4531faac64
 ---
 
-# How to: Register callbacks for cancellation requests
+# Register callbacks for cancellation requests
 
 Learn how to register a delegate that will be invoked when a <xref:System.Threading.CancellationToken.IsCancellationRequested%2A> property becomes true. The value changes from false to true when a call to <xref:System.Threading.CancellationTokenSource.Cancel%2A> on the object that created the token is made. Use this technique for canceling asynchronous operations that do not natively support the unified cancellation framework, and for unblocking methods that might be waiting for an asynchronous operation to finish.
 

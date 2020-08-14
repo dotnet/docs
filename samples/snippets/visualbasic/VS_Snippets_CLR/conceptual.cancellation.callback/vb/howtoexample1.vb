@@ -7,7 +7,7 @@ Friend Class CancelWithCallback
             Dim token = cts.Token
             Task.Run(
                 Async Function()
-                    Using client As WebClient = New WebClient()
+                    Using client As New WebClient()
                         AddHandler client.DownloadDataCompleted,
                         Sub(__, args)
                             If args.Cancelled Then

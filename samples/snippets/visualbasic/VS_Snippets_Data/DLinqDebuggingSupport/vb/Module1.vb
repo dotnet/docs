@@ -67,9 +67,9 @@ Module Module1
         Next
 
         Dim dc As DbCommand = db.GetCommand(q)
-        Console.WriteLine(vbNewLine & "Command Text: " & vbNewLine & dc.CommandText)
-        Console.WriteLine(vbNewLine & "Command Type: {0}", dc.CommandType)
-        Console.WriteLine(vbNewLine & "Connection: {0}", dc.Connection)
+        Console.WriteLine(Environment.NewLine & "Command Text: " & Environment.NewLine & dc.CommandText)
+        Console.WriteLine(Environment.NewLine & "Command Type: {0}", dc.CommandType)
+        Console.WriteLine(Environment.NewLine & "Connection: {0}", dc.Connection)
 
         Console.ReadLine()
         ' </Snippet3>

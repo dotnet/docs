@@ -58,7 +58,7 @@ seq {
 }
 ```
 
-Specifying only `x` in the previous example will result in the sequence generating no values.
+The previous example will produce the value of `x` in addition to all values from `1` to `x` for each `x`.
 
 ## Examples
 

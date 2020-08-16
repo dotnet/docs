@@ -1,7 +1,7 @@
 ---
 title: Records
 description: Learn how F# records represent simple aggregates of named values, optionally with members.
-ms.date: 06/09/2019
+ms.date: 08/15/2020
 ---
 # Records
 

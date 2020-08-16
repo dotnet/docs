@@ -145,5 +145,5 @@ If you need reference equality for records, add the attribute `[<ReferenceEquali
 - [F# Types](fsharp-types.md)
 - [Classes](classes.md)
 - [F# Language Reference](index.md)
-- [Reference-Equality](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.referenceequalityattribute-class-%5bfsharp%5d)
+- [Reference-Equality](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-referenceequalityattribute.html)
 - [Pattern Matching](pattern-matching.md)

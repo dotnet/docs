@@ -58,7 +58,7 @@ You can specify multiple parameters in two ways: F#-style and .NET-style. Both w
 ```fsharp
 type INumeric1 =
     abstract Add: x: int -> y: int -> int
-    
+
 type INumeric2 =
     abstract Add: x: int * y: int -> int
 ```

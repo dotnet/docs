@@ -122,6 +122,39 @@ Point is on the x-axis. Value is 100.000000.
 Point is at (10.000000, 0.000000, -1.000000).
 ```
 
+## Records and members
+
+You can specify members on records much like you can with classes. There is no support for fields. A common approach is to define a `Default` static member for easy record construction:
+
+```fsharp
+type Person =
+  { Name: string
+    Age: int
+    Address: string }
+
+    static member Default =
+        { Name = "Phillip"
+          Age = 12
+          Address = "123 happy fun street" }
+
+let defaultPerson = Person.Default
+```
+
+If you use a self identifier, that identifier refers to the instance of the record whose member is called:
+
+```fsharp
+type Person =
+  { Name: string
+    Age: int
+    Address: string }
+
+    member this.WeirdToString() =
+        this.Name + this.Address + string this.Age
+
+let p = { Name = "a"; Age = 12; Address = "abc123 }
+let weirdString = p.WeirdToString()
+```
+
 ## Differences Between Records and Classes
 
 Record fields differ from classes in that they are automatically exposed as properties, and they are used in the creation and copying of records. Record construction also differs from class construction. In a record type, you cannot define a constructor. Instead, the construction syntax described in this topic applies. Classes have no direct relationship between constructor parameters, fields, and properties.

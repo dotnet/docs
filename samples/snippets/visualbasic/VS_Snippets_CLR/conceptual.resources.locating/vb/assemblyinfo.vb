@@ -36,6 +36,5 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyFileVersion("1.0.0.0")>
 
 ' <Snippet2>
-<Assembly: NeutralResourcesLanguageAttribute("en")>
+<Assembly: NeutralResourcesLanguage("en")>
 ' </Snippet2>
-

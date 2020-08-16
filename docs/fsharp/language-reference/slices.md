@@ -103,6 +103,7 @@ type ArraySegment<'TItem> with
 let arr = ArraySegment [| 1 .. 10 |]
 let slice = arr.[2..5] //[ 3; 4; 5]
 ```
+
 Another example using the <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> types:
 
 ```fsharp

@@ -142,7 +142,7 @@ Deny rules take precedence over allow rules. Now representing the same "allow al
 
 ## Checking access
 
-As you can imagine, having a large number of roles and scopes can make figuring out the effective permission of a service principal quite difficult. Piling deny rules on top of that, only serves to increase the complexity. Fortunately, there's a permissions calculator that can show the effective permissions for any service principal. It's typically found under the IAM tab in the portal, as shown in Figure 10-3.
+As you can imagine, having a large number of roles and scopes can make figuring out the effective permission of a service principal quite difficult. Piling deny rules on top of that, only serves to increase the complexity. Fortunately, there's a [permissions calculator](https://docs.microsoft.com/azure/role-based-access-control/check-access) that can show the effective permissions for any service principal. It's typically found under the IAM tab in the portal, as shown in Figure 10-3.
 
 ![Figure 9-4 Permission calculator for an app service](./media/check-rbac.png)
 

@@ -115,7 +115,7 @@ On Windows, `.gcdump` files can be viewed in PerfView (https://github.com/micros
 
 You can collect multiple `.gcdump`s and open them simultaneously in Visual Studio to get a comparison experience.
 
-## Known caveats
+## Troubleshoot
 
 - There is no type information in the gcdump.
 

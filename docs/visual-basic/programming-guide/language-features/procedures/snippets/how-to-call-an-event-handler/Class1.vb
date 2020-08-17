@@ -20,7 +20,7 @@
     Public Class RaisesEvent
         Public Event somethingHappened()
         Dim WithEvents happenObj As New RaisesEvent
-        Public Sub processHappen() Handles happenObj.somethingHappened
+        Public Sub ProcessHappen() Handles happenObj.somethingHappened
             ' Insert code to handle somethingHappened event.
         End Sub
     End Class

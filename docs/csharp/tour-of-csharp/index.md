@@ -40,7 +40,7 @@ The following outline provides an overview of C#'s type system.
   - [Simple types](../language-reference/builtin-types/value-types.md#built-in-value-types)
     - [Signed integral](../language-reference/builtin-types/integral-numeric-types.md): `sbyte`, `short`, `int`, `long`
     - [Unsigned integral](../language-reference/builtin-types/integral-numeric-types.md): `byte`, `ushort`, `uint`, `ulong`
-    - [Unicode characters](/dotnet/standard/base-types/character-encoding-introduction): `char`, which represents a UTF-16 code unit
+    - [Unicode characters](../../standard/base-types/character-encoding-introduction.md): `char`, which represents a UTF-16 code unit
     - [IEEE binary floating-point](../language-reference/builtin-types/floating-point-numeric-types.md): `float`, `double`
     - [High-precision decimal floating-point](../language-reference/builtin-types/floating-point-numeric-types.md): `decimal`
     - Boolean: `bool`, which represents Boolean values—values that are either `true` or `false`
@@ -55,13 +55,13 @@ The following outline provides an overview of C#'s type system.
 - [Reference types](../language-reference/keywords/reference-types.md)
   - [Class types](../language-reference/keywords/class.md)
     - Ultimate base class of all other types: `object`
-    - [Unicode strings](/dotnet/standard/base-types/character-encoding-introduction): `string`, which represents a sequence of UTF-16 code units
+    - [Unicode strings](../../standard/base-types/character-encoding-introduction.md): `string`, which represents a sequence of UTF-16 code units
     - User-defined types of the form `class C {...}`
   - [Interface types](../language-reference/keywords/interface.md)
     - User-defined types of the form `interface I {...}`
   - [Array types](../programming-guide/arrays/index.md)
     - Single- and multi-dimensional and jagged, for example, `int[]`, `int[,]`, and `int[][]`
-  - [Delegate types](../language-reference/keywords/delegate.md)
+  - [Delegate types](../language-reference/builtin-types/reference-types.md)
     - User-defined types of the form `delegate int D(...)`
 
 C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#'s categories of types are user-definable: class types, struct types, interface types, enum types, and delegate types.

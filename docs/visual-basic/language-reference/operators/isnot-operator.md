@@ -49,7 +49,7 @@ The following code example uses both the `Is` operator and the `IsNot` operator 
 
 ## Use TypeOf operator with IsNot operator
 
-Starting with Visual Basic 14, you can use the `TypeOf` operator with the `IsNot` operator. For example, instead of writing:
+Starting with Visual Basic 14, you can use the `TypeOf` operator with the `IsNot` operator to test whether an object is *not* compatible with a data type. For example:
 
 ```vb
 If TypeOf sender IsNot Button Then

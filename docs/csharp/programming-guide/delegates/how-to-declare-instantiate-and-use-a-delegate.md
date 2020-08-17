@@ -1,5 +1,6 @@
 ---
 title: "How to declare, instantiate, and use a delegate - C# Programming Guide"
+description: Learn how to declare, instantiate, and use a delegate. See examples that cover C# 1.0, 2.0, and 3.0 and later.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"
@@ -24,7 +25,7 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
  [!code-csharp[csProgGuideDelegates#31](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#31)]  
   
- For more information, see [Lambda Expressions](../statements-expressions-operators/lambda-expressions.md).  
+ For more information, see [Lambda Expressions](../../language-reference/operators/lambda-expressions.md).  
   
  The following example illustrates declaring, instantiating, and using a delegate. The `BookDB` class encapsulates a bookstore database that maintains a database of books. It exposes a method, `ProcessPaperbackBooks`, which finds all paperback books in the database and calls a delegate for each one. The `delegate` type that is used is named `ProcessBookDelegate`. The `Test` class uses this class to print the titles and average price of the paperback books.  
   

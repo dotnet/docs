@@ -1,5 +1,6 @@
 ---
 title: "How to: Detect When Text in a TextBox Has Changed"
+description: Learn how to use the TextChanged event to run a method whenever the text in a TextBox control changes in a Windows Presentation Foundation application.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Projection Operations (C#)"
+description: Learn about projection operations. These operations transform an object into a new form that often consists only of properties that will be used later.
 ms.date: 07/20/2015
 ms.assetid: 98df573a-aad9-4b8c-9a71-844be2c4fb41
 ---

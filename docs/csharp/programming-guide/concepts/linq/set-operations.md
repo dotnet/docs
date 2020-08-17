@@ -1,5 +1,6 @@
 ---
 title: "Set Operations (C#)"
+description: Learn about set operations and the standard query operator methods that perform set operations in LINQ in C#.
 ms.date: 07/20/2015
 ms.assetid: 7c589367-ef8f-4161-9050-642c47e6bf63
 ---

@@ -1,5 +1,6 @@
 ---
 title: "How to: Group, sort, and filter Data in the DataGrid control"
+description: Learn how to bind a Windows Presentation Foundation DataGrid control to a CollectionView that supports grouping, sorting, and filtering data in views.
 ms.date: "03/30/2017"
 dev_langs:
  - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "How to: Change the Cursor Type"
+description: Change the mouse pointer Cursor for an element and for an application in Windows Presentation Foundation. This example consists of XAML and a code-behind file.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

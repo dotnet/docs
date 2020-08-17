@@ -1,5 +1,6 @@
 ---
 title: "Using Exceptions - C# Programming Guide"
+description: Learn how to use exceptions. Exceptions are thrown by code that encounters an error and caught by code that corrects the error.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exception handling [C#], about exception handling"

@@ -52,6 +52,8 @@ Created a person object.
 Created an invalid person object.
 ```
 
+The reason why `then` is required instead of another `do` is that the `do` keyword has its standard meaning of delimiting a `unit`-returning expression when present in the body of an additional constructor. It only has special meaning in the context of primary constructors.
+
 ## Self identifiers in constructors
 
 In other members, you provide a name for the current object in the definition of each member. You can also put the self identifier on the first line of the class definition by using the `as` keyword immediately following the constructor parameters. The following example illustrates this syntax.

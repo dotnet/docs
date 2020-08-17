@@ -1,5 +1,6 @@
 ---
 title: "SqlMetal.exe (Code Generation Tool)"
+description: Understand SqlMetal.exe, the code generation tool. Use the tool to generate code and mapping for the LINQ to SQL component of .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "SQLMetal [LINQ to SQL]"

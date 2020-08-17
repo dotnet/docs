@@ -1,5 +1,6 @@
 ---
 title: "Client-Side UI Automation Provider Implementation"
+description: Understand client-side UI Automation provider implementation. Know how to distribute, register, and configure client-side providers.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, client-side provider implementation"

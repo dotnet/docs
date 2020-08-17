@@ -1,5 +1,6 @@
 ---
 title: "C# Programming Guide"
+description: Use these resources for detailed information on key C# language features and features accessible to C# through .NET.
 ms.date: 05/02/2017
 f1_keywords: 
   - "cs.langref"
@@ -51,8 +52,6 @@ This section provides detailed information on key C# language features and featu
  [Iterators](./concepts/iterators.md)
   
  [LINQ Query Expressions](../linq/index.md)  
-  
- [Lambda Expressions](./statements-expressions-operators/lambda-expressions.md)  
   
  [Namespaces](./namespaces/index.md)  
   

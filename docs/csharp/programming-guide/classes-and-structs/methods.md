@@ -1,5 +1,6 @@
 ---
 title: "Methods - C# Programming Guide"
+description: A method in C# is a code block that contains a series of statements. A program runs the statements by calling the method and specifying arguments.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "methods [C#]"

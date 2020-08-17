@@ -5,8 +5,8 @@ Imports System.Text
 Module Module1
     Sub Main()
         'This hash value is produced from "This is the original message!" 
-        'using SHA1Managed.  
-        Dim sentHashValue As Byte() = {59, 4, 248, 102, 77, 97, 142, 201, 210, 12, 224, 93, 25, 41, 100, 197, 213, 134, 130, 135}
+        'using SHA256.  
+        Dim sentHashValue As Byte() = {185, 203, 236, 22, 3, 228, 27, 130, 87, 23, 244, 15, 87, 88, 14, 43, 37, 61, 106, 224, 81, 172, 224, 211, 104, 85, 194, 197, 194, 25, 120, 217}
 
         'This is the string that corresponds to the previous hash value.
         Dim messageString As String = "This is the original message!"
@@ -22,7 +22,7 @@ Module Module1
 
         'Create a new instance of the SHA1Managed class to create 
         'the hash value.
-        Dim shHash As New SHA1Managed()
+        Dim shHash As SHA256 = SHA256.Create()
 
         'Create the hash value from the array of bytes.
         compareHashValue = shHash.ComputeHash(messageBytes)

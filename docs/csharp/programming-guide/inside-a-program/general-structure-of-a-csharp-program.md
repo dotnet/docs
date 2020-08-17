@@ -1,5 +1,6 @@
 ---
 title: "General Structure of a C# Program - C# Programming Guide"
+description: Learn about the structure of a C# program by using a skeleton program that contains all the required elements for a program.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, program structure"

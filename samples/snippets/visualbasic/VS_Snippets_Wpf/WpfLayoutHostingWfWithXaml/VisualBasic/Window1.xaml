@@ -1,7 +1,4 @@
-﻿<!--This file has snippets that set the IsRedirected and CompositionMode properties, which are new to dev11,
-    on the WindowsFormsHost elements.-->
-  
-  <Window x:Class="MainWindow"
+﻿  <Window x:Class="MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
@@ -66,7 +63,7 @@
     <!-- <snippet8b> -->
     <!-- Z-order demonstration. -->
     <Canvas Grid.Row="1" Grid.Column="1">
-      <WindowsFormsHost IsRedirected="True" CompositionMode="Full" Canvas.Top="20" Canvas.Left="20" Background="Yellow">
+      <WindowsFormsHost Canvas.Top="20" Canvas.Left="20" Background="Yellow">
         <wf:Button Text="Windows Forms control" FlatStyle="Flat"/>
       </WindowsFormsHost>
       <Label Content="A WPF label" FontSize="24"/>
@@ -109,7 +106,7 @@
 
       <Label Content="A WPF UIElement" Background="OrangeRed"/>
 
-      <WindowsFormsHost Background="Yellow" IsRedirected="True" CompositionMode="Full">
+      <WindowsFormsHost Background="Yellow">
         <wf:Button Text="Windows Forms control" FlatStyle="Flat"/>
       </WindowsFormsHost>
 
@@ -128,7 +125,7 @@
 
       <Label Content="A WPF element" Background="OrangeRed"/>
 
-      <WindowsFormsHost Background="Yellow" IsRedirected="True" CompositionMode="Full">
+      <WindowsFormsHost Background="Yellow">
         <wf:Button Text="Windows Forms control" FlatStyle="Flat"/>
       </WindowsFormsHost>
 

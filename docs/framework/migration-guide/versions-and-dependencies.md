@@ -1,5 +1,6 @@
 ---
 title: .NET Framework & Windows OS versions
+description: Learn about key features in each version of .NET Framework, including underlying CLR versions and versions installed by the Windows operating system.
 ms.custom: updateeachrelease
 ms.date: 01/17/2020
 helpviewer_keywords:
@@ -24,8 +25,9 @@ The CLR is identified by its own version number. The .NET Framework version numb
 
 The tables that follow summarize .NET Framework version history and correlate each version with Visual Studio, Windows, and Windows Server. Visual Studio supports multi-targeting, so you're not limited to the version of .NET Framework that's listed.
 
-- The check mark icon ✔️ denotes OS versions on which .NET Framework is installed but must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) (for Windows) or through the Server Manager (for Windows Server).
+- The check mark icon ✔️ denotes OS versions on which .NET Framework is installed by default.
 - The plus sign icon ➕ denotes OS versions on which .NET Framework doesn't come installed but can be installed.
+- The asterisk **\*** denotes OS versions on which .NET Framework (whether preinstalled or not) must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) or, for Windows Server, through the Server Manager.
 
 | | |
 | - | - |

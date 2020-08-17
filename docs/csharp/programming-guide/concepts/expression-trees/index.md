@@ -1,5 +1,6 @@
 ---
 title: "Expression Trees (C#)"
+description: Learn about expression trees. See how to compile and run code represented by these data structures, where each node is an expression.
 ms.date: 07/20/2015
 ms.assetid: 7d0ac21a-6d90-4e2e-8903-528cb78615b7
 ---
@@ -15,7 +16,7 @@ Expression trees represent code in a tree-like data structure, where each node i
 ## Creating Expression Trees from Lambda Expressions  
  When a lambda expression is assigned to a variable of type <xref:System.Linq.Expressions.Expression%601>, the compiler emits code to build an expression tree that represents the lambda expression.  
   
- The C# compiler can generate expression trees only from expression lambdas (or single-line lambdas). It cannot parse statement lambdas (or multi-line lambdas). For more information about lambda expressions in C#, see [Lambda Expressions](../../statements-expressions-operators/lambda-expressions.md).  
+ The C# compiler can generate expression trees only from expression lambdas (or single-line lambdas). It cannot parse statement lambdas (or multi-line lambdas). For more information about lambda expressions in C#, see [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md).  
   
  The following code examples demonstrate how to have the C# compiler create an expression tree that represents the lambda expression `num => num < 5`.  
   
@@ -146,6 +147,6 @@ Console.WriteLine(expr.Compile()(4));
 - <xref:System.Linq.Expressions>
 - [How to execute expression trees (C#)](./how-to-execute-expression-trees.md)
 - [How to modify expression trees (C#)](./how-to-modify-expression-trees.md)
-- [Lambda Expressions](../../statements-expressions-operators/lambda-expressions.md)
+- [Lambda Expressions](../../../language-reference/operators/lambda-expressions.md)
 - [Dynamic Language Runtime Overview](../../../../framework/reflection-and-codedom/dynamic-language-runtime-overview.md)
 - [Programming Concepts (C#)](../index.md)

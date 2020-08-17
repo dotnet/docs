@@ -1,5 +1,6 @@
 ---
 title: "Statements - C# Programming Guide"
+description: Learn about statements in C# programming. See a list of statement types, and view code examples and additional resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "statements [C#], about statements"
@@ -21,7 +22,7 @@ The following table lists the various types of statements in C# and their associ
 |Category|C# keywords / notes|
 |--------------|---------------------------|
 |[Declaration statements](#declaration-statements)|A declaration statement introduces a new variable or constant. A variable declaration can optionally assign a value to the variable. In a constant declaration, the assignment is required.|
-|[Expression statements](expressions.md)|Expression statements that calculate a value must store the value in a variable. For more information, see [Expression Statements](#expression-statements).|
+|[Expression statements](#expression-statements)|Expression statements that calculate a value must store the value in a variable.|
 |Selection statements|Selection statements enable you to branch to different sections of code, depending on one or more specified conditions. For more information, see the following topics: <ul><li>[if](../../language-reference/keywords/if-else.md)</li><li>[else](../../language-reference/keywords/if-else.md)</li><li>[switch](../../language-reference/keywords/switch.md)</li><li>[case](../../language-reference/keywords/switch.md)</li></ul>|
 |Iteration statements|Iteration statements enable you to loop through collections like arrays, or perform the same set of statements repeatedly until a specified condition is met. For more information, see the following topics: <ul><li>[do](../../language-reference/keywords/do.md)</li><li>[for](../../language-reference/keywords/for.md)</li><li>[foreach](../../language-reference/keywords/foreach-in.md)</li><li>[in](../../language-reference/keywords/foreach-in.md)</li><li>[while](../../language-reference/keywords/while.md)</li></ul>|
 |Jump statements|Jump statements transfer control to another section of code. For more information, see the following topics: <ul><li>[break](../../language-reference/keywords/break.md)</li><li>[continue](../../language-reference/keywords/continue.md)</li><li>[default](../../language-reference/keywords/switch.md)</li><li>[goto](../../language-reference/keywords/goto.md)</li><li>[return](../../language-reference/keywords/return.md)</li><li>[yield](../../language-reference/keywords/yield.md)</li></ul>|
@@ -85,5 +86,5 @@ For more information, see the [Statements](~/_csharplang/spec/statements.md) sec
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Statement keywords](../../language-reference/keywords/statement-keywords.md)  
-- [Expressions](expressions.md)  
+- [Statement keywords](../../language-reference/keywords/statement-keywords.md)
+- [C# operators and expressions](../../language-reference/operators/index.md)

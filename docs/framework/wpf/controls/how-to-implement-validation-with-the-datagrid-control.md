@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement Validation with the DataGrid Control"
+description: Learn how the Windows Presentation Foundation DataGrid control can perform validation at both the cell and row level and provide feedback for validation errors.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

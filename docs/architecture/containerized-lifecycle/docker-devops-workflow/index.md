@@ -1,7 +1,7 @@
 ---
 title: Docker application DevOps workflow with Microsoft tools
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools DevOps workflow with Microsoft tools
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 
 # Docker application DevOps workflow with Microsoft tools
@@ -18,7 +18,7 @@ The complexity of containerized application development increases steadily depen
 
 - Azure DevOps Services/Team Foundation Server source code management (based on Git or Team Foundation Version Control), Agile planning (Agile, Scrum, and CMMI are supported), CI, release management, and other tools for Agile teams.
 
-- Azure DevOps Services and Team Foundation Server include a powerful and growing ecosystem of first- and third-party extensions with which you easily can construct a CI, build, test, delivery, and release management pipeline for microservices.
+- Azure DevOps Services and Team Foundation Server include a powerful and growing ecosystem of first and third-party extensions with which you easily can construct a CI, build, test, delivery, and release management pipeline for microservices.
 
 - Run automated tests as part of your build pipeline in Azure DevOps Services.
 

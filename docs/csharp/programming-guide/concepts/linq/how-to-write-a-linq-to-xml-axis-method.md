@@ -1,5 +1,6 @@
 ---
 title: "How to write a LINQ to XML axis method (C#)"
+description: Learn how to write a LINQ to XML axis method. XML axis methods are used to retrieve collections from an XML tree.
 ms.date: 07/20/2015
 ms.assetid: 50aef06b-1d22-4718-a18a-21237e26d7c1
 ---

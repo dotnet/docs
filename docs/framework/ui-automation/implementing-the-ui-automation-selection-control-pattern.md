@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Selection Control Pattern"
+description: Review guidelines and conventions for implementing the Selection control pattern in UI Automation. See required members for the ISelectionProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Selection control pattern"

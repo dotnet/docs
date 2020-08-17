@@ -1,5 +1,6 @@
 ---
 title: "Cancel Remaining Async Tasks after One Is Complete (C#)"
+description: Use the Task.WhenAny method together with a CancellationToken in C# to cancel all remaining tasks when one task is complete in this example.
 ms.date: 07/20/2015
 ms.assetid: d3cebc74-c392-497b-b1e6-62a262eabe05
 ---

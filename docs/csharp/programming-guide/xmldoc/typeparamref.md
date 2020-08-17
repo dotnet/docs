@@ -1,5 +1,6 @@
 ---
 title: "<typeparamref> - C# programming guide"
+description: Learn about the XML <typeparamref> tag. This tag enables consumers of the documentation file to format the word in some distinct way, for example in italics.
 ms.date: 07/20/2015
 f1_keywords:
   - "typeparamref"

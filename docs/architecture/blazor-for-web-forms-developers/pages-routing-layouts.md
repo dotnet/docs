@@ -8,8 +8,6 @@ ms.date: 09/19/2019
 ---
 # Pages, routing, and layouts
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 ASP.NET Web Forms apps are composed of pages defined in *.aspx* files. Each page's address is based on its physical file path in the project. When a browser makes a request to the page, the contents of the page are dynamically rendered on the server. The rendering accounts for both the page's HTML markup and its server controls.
 
 In Blazor, each page in the app is a component, typically defined in a *.razor* file, with one or more specified routes. Routing mostly happens client-side without involving a specific server request. The browser first makes a request to the root address of the app. A root `Router` component in the Blazor app then handles intercepting navigation requests and them to the correct component.

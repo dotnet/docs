@@ -1,5 +1,6 @@
 ---
 title: "The Task Asynchronous Programming Model (TAP) with async and await (C#)"
+description: Learn about when and how to use Task-based async programming, a simplified approach to asynchronous programming in C#.
 ms.date: 05/22/2017
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
 ---

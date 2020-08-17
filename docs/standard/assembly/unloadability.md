@@ -24,7 +24,7 @@ This section contains a detailed step-by-step tutorial that shows a simple way t
 
 ### Create a collectible AssemblyLoadContext
 
-You need to derive your class from the <xref:System.Runtime.Loader.AssemblyLoadContext> and overload its <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> method. That method resolves references to all assemblies that are dependencies of assemblies loaded into that `AssemblyLoadContext`.
+You need to derive your class from the <xref:System.Runtime.Loader.AssemblyLoadContext> and override its <xref:System.Runtime.Loader.AssemblyLoadContext.Load%2A?displayProperty=nameWithType> method. That method resolves references to all assemblies that are dependencies of assemblies loaded into that `AssemblyLoadContext`.
 
 The following code is an example of the simplest custom `AssemblyLoadContext`:
 

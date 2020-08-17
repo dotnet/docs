@@ -1,5 +1,6 @@
 ---
 title: "Finding Text in Word Documents (C#)"
+description: Learn how to process a WordprocessingML document with LINQ in C#. This example finds all occurrences of a string in the document.
 ms.date: 07/20/2015
 ms.assetid: 82f86677-560b-49dc-a089-610409939b2a
 ---

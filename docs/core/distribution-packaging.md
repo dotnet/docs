@@ -105,7 +105,7 @@ The rest of the version isn't included in the version name. This allows the OS p
 The following lists the recommended packages:
 
 - `dotnet-sdk-[major].[minor]` - Installs the latest sdk for specific runtime
-  - **Version:** \<runtime version>
+  - **Version:** \<sdk version>
   - **Example:** dotnet-sdk-2.1
   - **Contains:** (3),(4)
   - **Dependencies:** `dotnet-runtime-[major].[minor]`, `aspnetcore-runtime-[major].[minor]`, `dotnet-targeting-pack-[major].[minor]`, `aspnetcore-targeting-pack-[major].[minor]`, `netstandard-targeting-pack-[netstandard_major].[netstandard_minor]`, `dotnet-apphost-pack-[major].[minor]`, `dotnet-templates-[major].[minor]`

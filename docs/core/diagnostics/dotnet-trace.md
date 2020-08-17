@@ -32,22 +32,22 @@ The `dotnet-trace` tool:
 
 ## Options
 
-- **`--version`**
-
-  Displays the version of the dotnet-trace utility.
-
 - **`-h|--help`**
 
   Shows command-line help.
 
+- **`--version`**
+
+  Displays the version of the dotnet-trace utility.
+
 ## Commands
 
-| Command                                                     |
-| ----------------------------------------------------------- |
-| [dotnet-trace collect](#dotnet-trace-collect)               |
-| [dotnet-trace convert](#dotnet-trace-convert)               |
-| [dotnet-trace ps](#dotnet-trace-ps) |
-| [dotnet-trace list-profiles](#dotnet-trace-list-profiles)   |
+| Command                                                   |
+|-----------------------------------------------------------|
+| [dotnet-trace collect](#dotnet-trace-collect)             |
+| [dotnet-trace convert](#dotnet-trace-convert)             |
+| [dotnet-trace ps](#dotnet-trace-ps)                       |
+| [dotnet-trace list-profiles](#dotnet-trace-list-profiles) |
 
 ## dotnet-trace collect
 
@@ -56,23 +56,45 @@ Collects a diagnostic trace from a running process.
 ### Synopsis
 
 ```console
-dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--output]
-    [--providers] [--profile <profile-name>] [--format]
+dotnet-trace collect [--buffersize <size>] [--clreventlevel <clreventlevel>] [--clrevents <clrevents>]
+    [--format <Chromium|NetTrace|Speedscope>] [-h|--help]
+    [-n, --name <name>]  [-o|--output <trace-file-path>] [-p|--process-id <pid>]
+    [--profile <profile-name>] [--providers <list-of-comma-separated-providers>]
 ```
 
 ### Options
-
-- **`-p|--process-id <PID>`**
-
-  The process to collect the trace from.
 
 - **`--buffersize <size>`**
 
   Sets the size of the in-memory circular buffer, in megabytes. Default 256 MB.
 
+- **`--clreventlevel <clreventlevel>`**
+
+  Verbosity of CLR events to be emitted.
+
+- **`--clrevents <clrevents>`**
+
+  List of CLR runtime events to emit.
+
+- **`--format {Chromium|NetTrace|Speedscope}`**
+
+  Sets the output format for the trace file conversion. The default is `NetTrace`.
+
+- **`-n, --name <name>`**
+
+  The name of the process to collect the trace from.
+
 - **`-o|--output <trace-file-path>`**
 
-  The output path for the collected trace data. If not specified it defaults to `trace.nettrace`.
+  The output path for the collected trace data. If not specified, it defaults to `trace.nettrace`.
+
+- **`-p|--process-id <PID>`**
+
+  The process id to collect the trace from.
+
+- **`--profile <profile-name>`**
+
+  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
 
 - **`--providers <list-of-comma-separated-providers>`**
 
@@ -84,14 +106,6 @@ dotnet-trace collect [-h|--help] [-p|--process-id] [--buffersize <size>] [-o|--o
   - `Provider` is in the form: `KnownProviderName[:Flags[:Level][:KeyValueArgs]]`.
   - `KeyValueArgs` is in the form: `[key1=value1][;key2=value2]`.
 
-- **`--profile <profile-name>`**
-
-  A named pre-defined set of provider configurations that allows common tracing scenarios to be specified succinctly.
-
-- **`--format {NetTrace|Speedscope}`**
-
-  Sets the output format for the trace file conversion. The default is `NetTrace`.
-
 ## dotnet-trace convert
 
 Converts `nettrace` traces to alternate formats for use with alternate trace analysis tools.
@@ -99,7 +113,7 @@ Converts `nettrace` traces to alternate formats for use with alternate trace ana
 ### Synopsis
 
 ```console
-dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
+dotnet-trace convert [<input-filename>] [--format <Chromium|NetTrace|Speedscope>] [-h|--help] [-o|--output <output-filename>]
 ```
 
 ### Arguments
@@ -110,7 +124,7 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
 ### Options
 
-- **`--format <NetTrace|Speedscope>`**
+- **`--format <Chromium|NetTrace|Speedscope>`**
 
   Sets the output format for the trace file conversion.
 
@@ -120,7 +134,7 @@ dotnet-trace convert [<input-filename>] [-h|--help] [--format] [-o|--output]
 
 ## dotnet-trace ps
 
-Lists dotnet processes that can be attached to.
+ Lists the dotnet processes that traces can be collected from.
 
 ### Synopsis
 

@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Windows Service Applications"
+description: Read an introduction to Windows service applications. Services let you create long-running executable applications that run in their own Windows sessions.
 ms.date: "03/30/2017"
 f1_keywords: 
   - "ServiceController"

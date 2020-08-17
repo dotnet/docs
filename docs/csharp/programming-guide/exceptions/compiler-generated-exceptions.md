@@ -1,5 +1,6 @@
 ---
 title: "Compiler-Generated Exceptions - C# Programming Guide"
+description: Learn about compiler-generated exceptions. Review a list of automatically thrown exceptions and their error conditions.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exceptions [C#], compiler-generated"

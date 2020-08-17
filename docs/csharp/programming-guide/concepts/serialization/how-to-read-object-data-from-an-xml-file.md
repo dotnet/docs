@@ -1,5 +1,6 @@
 ---
 title: "How to read object data from an XML file (C#)"
+description: This C# example reads object data that was previously written to an XML file using the XmlSerializer class.
 ms.date: 07/20/2015
 ms.assetid: 6ad60d96-a4d9-48e6-a8b0-d7f6f803cafa
 ---

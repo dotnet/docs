@@ -25,13 +25,13 @@ a = (b = c)
 
 The following example demonstrates the usage of the assignment operator with a local variable, a property, and an indexer element as its left-hand operand:
 
-[!code-csharp-interactive[simple assignment](snippets/AssignmentOperator.cs#Simple)]
+[!code-csharp-interactive[simple assignment](snippets/shared/AssignmentOperator.cs#Simple)]
 
 ## ref assignment operator
 
 Beginning with C# 7.3, you can use the ref assignment operator `= ref` to reassign a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable. The following example demonstrates the usage of the ref assignment operator:
 
-[!code-csharp[ref assignment operator](snippets/AssignmentOperator.cs#RefAssignment)]
+[!code-csharp[ref assignment operator](snippets/shared/AssignmentOperator.cs#RefAssignment)]
 
 In the case of the ref assignment operator, the both of its operands must be of the same type.
 
@@ -72,5 +72,5 @@ For more information about the ref assignment operator `= ref`, see the [feature
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - [ref keyword](../keywords/ref.md)

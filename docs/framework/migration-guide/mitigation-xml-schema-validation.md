@@ -1,5 +1,6 @@
 ---
 title: "Mitigation: XML Schema Validation"
+description: The XSD schema validation detects a violation of the unique constraint if a compound key is used and one key is empty in .NET Framework 4.6.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

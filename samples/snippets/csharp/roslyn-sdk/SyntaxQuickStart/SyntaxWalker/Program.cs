@@ -40,7 +40,7 @@ namespace TopLevel
 }";
         // </Snippet1>
 
-        static void Main(string[] args)
+        static void Main()
         {
             // <Snippet2>
             SyntaxTree tree = CSharpSyntaxTree.ParseText(programText);

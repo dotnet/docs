@@ -8,8 +8,6 @@ ms.date: 10/11/2019
 ---
 # Modules, handlers, and middleware
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 An ASP.NET Core app is built upon a series of *middleware*. Middleware is handlers that are arranged into a pipeline to handle requests and responses. In a Web Forms app, HTTP handlers and modules solve similar problems. In ASP.NET Core, modules, handlers, *Global.asax.cs*, and the app life cycle are replaced with middleware. In this chapter, you'll learn what middleware in the context of a Blazor app.
 
 ## Overview

@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Dock Control Pattern"
+description: Learn to implement the UI Automation dock control pattern. Use the DockPattern control pattern to expose a control's dock properties. Implement IDockProvider.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, dock"

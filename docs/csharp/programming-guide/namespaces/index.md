@@ -1,5 +1,6 @@
 ---
 title: "Namespaces - C# Programming Guide"
+description: Learn about namespaces in C# programming. See an overview of namespace properties and view additional resources.
 ms.date: 08/21/2018
 helpviewer_keywords: 
   - "C# language, namespaces"

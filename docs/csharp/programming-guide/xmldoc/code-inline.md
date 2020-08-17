@@ -1,5 +1,6 @@
 ---
 title: "<c> - C# programming guide"
+description: Learn about the XML <c> tag. This tag marks single-line text in a description as code, while <code> indicates multiple lines.
 ms.date: 07/20/2015
 f1_keywords:
   - "c"

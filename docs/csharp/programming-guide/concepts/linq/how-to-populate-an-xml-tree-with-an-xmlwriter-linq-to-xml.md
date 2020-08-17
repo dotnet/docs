@@ -1,5 +1,6 @@
 ---
 title: "How to populate an XML tree with an XmlWriter (LINQ to XML) (C#)"
+description: Learn how to populate an XML tree by using CreateWriter to create an XmlWriter, and then write to the XmlWriter in LINQ to XML in C#.
 ms.date: 07/20/2015
 ms.assetid: cd5674d1-5c54-4efc-ba68-e23b2875295f
 ---

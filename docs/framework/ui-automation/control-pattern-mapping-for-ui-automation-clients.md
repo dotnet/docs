@@ -1,5 +1,6 @@
 ---
 title: "Control Pattern Mapping for UI Automation Clients"
+description: View a control pattern mapping table for UI Automation clients. Actions for certain control types may be supported, conditionally supported, or not supported.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, for UI Automation clients"

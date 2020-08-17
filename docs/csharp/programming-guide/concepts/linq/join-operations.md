@@ -1,5 +1,6 @@
 ---
 title: "Join Operations (C#)"
+description: A join of two data sources associates objects with objects that share an attribute across data sources. Learn about join methods in the LINQ framework in C#.
 ms.date: 07/20/2015
 ms.assetid: 5105e0da-1267-4c00-837a-f0e9602279b8
 no-loc: [Join, GroupJoin]

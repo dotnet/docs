@@ -2,6 +2,7 @@
 title: .NET Core tools
 description: How to install, use, update, and remove .NET Core tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
+ms.topic: how-to
 ms.date: 02/12/2020
 ---
 # How to manage .NET Core tools
@@ -31,11 +32,11 @@ A .NET Core tool is a special NuGet package that contains a console application.
 
 Currently, .NET Core doesn't have a tool search feature. Here are some ways to find tools:
 
+* Search the [NuGet](https://www.nuget.org) website by using the ".NET tool" package type filter. For more information, see [Finding and choosing packages](/nuget/consume-packages/finding-and-choosing-packages).
 * See the list of tools in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.
 * Use [ToolGet](https://www.toolget.net/) to search for .NET tools.
 * See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
 * Learn about diagnostic tools at [.NET Core dotnet diagnostic tools](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
-* Search the [NuGet](https://www.nuget.org) website. However, the NuGet site doesn't yet have a feature that lets you search only for tool packages.
 
 ## Check the author and statistics
 

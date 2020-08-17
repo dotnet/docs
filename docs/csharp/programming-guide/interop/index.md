@@ -1,5 +1,6 @@
 ---
 title: "Interoperability - C# Programming Guide"
+description: Interoperability supports unmanaged code beside the code that runs under the common language runtime. Use these resources to understand interop options.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "COM interop"

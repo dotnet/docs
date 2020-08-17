@@ -10,7 +10,8 @@ namespace MakeConstTestProject
             int j = 2;
             int k = i + j;
 
-            int x = "abc";
+            // uncomment for analyzer test:
+            //int x = "abc";
 
             object s = "abc";
 

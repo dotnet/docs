@@ -1,5 +1,6 @@
 ---
 title: "How to subscribe to and unsubscribe from events - C# Programming Guide"
+description: Learn how to subscribe to and unsubscribe from events. Subscribe to events using the Visual Studio IDE, programmatically, or using an anonymous method.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event handlers [C#], creating"
@@ -51,7 +52,7 @@ You subscribe to an event that is published by another class when you want to wr
     publisher.RaiseCustomEvent += new CustomEventHandler(HandleCustomEvent);  
     ```  
   
-     You can also use a [lambda expression](../statements-expressions-operators/lambda-expressions.md) to specify an event handler:
+     You can also use a [lambda expression](../../language-reference/operators/lambda-expressions.md) to specify an event handler:
   
     ```csharp
     public Form1()  

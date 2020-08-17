@@ -1,5 +1,6 @@
 ---
 title: "Sample XML File: Test Configuration (LINQ to XML)"
+description: This XML file is used in various examples in the LINQ to XML documentation. The file is a test configuration file.
 ms.date: 07/20/2015
 ms.assetid: 45bfb509-c1d4-4b4f-9690-1cb0c9816516
 ---

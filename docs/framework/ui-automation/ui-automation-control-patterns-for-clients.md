@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Control Patterns for Clients"
+description: Read an overview about control patterns for UI Automation clients. Use control patterns to access information about the user interface (UI).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UI Automation, control patterns for clients"

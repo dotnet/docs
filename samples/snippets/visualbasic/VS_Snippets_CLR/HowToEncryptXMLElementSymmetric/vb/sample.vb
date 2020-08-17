@@ -10,11 +10,11 @@ Module Program
 
     Sub Main(ByVal args() As String)
         '<snippet2>
-        Dim key As RijndaelManaged = Nothing
+        Dim key As Aes = Nothing
 
         Try
-            ' Create a new Rijndael key.
-            key = New RijndaelManaged()
+            ' Create a new Aes key.
+            key = Aes.Create()
             '</snippet2>
             '<snippet3>
             ' Load an XML document.
@@ -97,23 +97,11 @@ Module Program
         '<snippet7>
         Dim encryptionMethod As String = Nothing
 
-        If TypeOf Key Is TripleDES Then
-            encryptionMethod = EncryptedXml.XmlEncTripleDESUrl
-        ElseIf TypeOf Key Is DES Then
-            encryptionMethod = EncryptedXml.XmlEncDESUrl
-        End If
-        If TypeOf Key Is Rijndael Then
-            Select Case Key.KeySize
-                Case 128
-                    encryptionMethod = EncryptedXml.XmlEncAES128Url
-                Case 192
-                    encryptionMethod = EncryptedXml.XmlEncAES192Url
-                Case 256
-                    encryptionMethod = EncryptedXml.XmlEncAES256Url
-            End Select
+        If TypeOf Key Is Aes Then
+            encryptionMethod = EncryptedXml.XmlEncAES256Url
         Else
             ' Throw an exception if the transform is not in the previous categories
-            Throw New CryptographicException("The specified algorithm is not supported for XML Encryption.")
+            Throw New CryptographicException("The specified algorithm is not supported or not recommended for XML Encryption.")
         End If
 
         edElement.EncryptionMethod = New EncryptionMethod(encryptionMethod)

@@ -1,5 +1,6 @@
 ---
 title: "How to get information about files, folders, and drives  - C# Programming Guide"
+description: Learn how to get information about files, folders, and drives. See a code example and additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [C#], getting information about"

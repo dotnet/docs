@@ -3,6 +3,7 @@ title: "Custom date and time format strings"
 description: Learn to use custom date and time format strings to convert DateTime or DateTimeOffset values into text representations, or to parse strings for dates & times.
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
+ms.topic: reference
 dev_langs: 
 - "csharp"
 - "vb"
@@ -16,6 +17,7 @@ helpviewer_keywords:
   - "date and time strings"
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
 ---
+
 # Custom date and time format strings
 
 A date and time format string defines the text representation of a <xref:System.DateTime> or <xref:System.DateTimeOffset> value that results from a formatting operation. It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time. A custom format string consists of one or more custom date and time format specifiers. Any string that is not a [standard date and time format string](standard-date-and-time-format-strings.md) is interpreted as a custom date and time format string.
@@ -40,59 +42,61 @@ In parsing operations, custom date and time format strings can be used with the 
 The following table describes the custom date and time format specifiers and displays a result string produced by each format specifier. By default, result strings reflect the formatting conventions of the en-US culture. If a particular format specifier produces a localized result string, the example also notes the culture to which the result string applies. For more information about using custom date and time format strings, see the [Notes](#notes) section.
 
 | Format specifier | Description | Examples |
-| ---------------------- | ----------------- | -------------- |
-|"d"|The day of the month, from 1 through 31.<br /><br /> More information: [The "d" Custom Format Specifier](#dSpecifier).|2009-06-01T13:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 15|
-|"dd"|The day of the month, from 01 through 31.<br /><br /> More information: [The "dd" Custom Format Specifier](#ddSpecifier).|2009-06-01T13:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 15|
-|"ddd"|The abbreviated name of the day of the week.<br /><br /> More information: [The "ddd" Custom Format Specifier](#dddSpecifier).|2009-06-15T13:45:30 -> Mon (en-US)<br /><br /> 2009-06-15T13:45:30 -> Пн (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lun. (fr-FR)|
-|"dddd"|The full name of the day of the week.<br /><br /> More information: [The "dddd" Custom Format Specifier](#ddddSpecifier).|2009-06-15T13:45:30 -> Monday (en-US)<br /><br /> 2009-06-15T13:45:30 -> понедельник (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lundi (fr-FR)|
-|"f"|The tenths of a second in a date and time value.<br /><br /> More information: [The "f" Custom Format Specifier](#fSpecifier).|2009-06-15T13:45:30.6170000 -> 6<br /><br /> 2009-06-15T13:45:30.05 -> 0|
-|"ff"|The hundredths of a second in a date and time value.<br /><br /> More information: [The "ff" Custom Format Specifier](#ffSpecifier).|2009-06-15T13:45:30.6170000 -> 61<br /><br /> 2009-06-15T13:45:30.0050000 -> 00|
-|"fff"|The milliseconds in a date and time value.<br /><br /> More information: [The "fff" Custom Format Specifier](#fffSpecifier).|6/15/2009 13:45:30.617 -> 617<br /><br /> 6/15/2009 13:45:30.0005 -> 000|
-|"ffff"|The ten thousandths of a second in a date and time value.<br /><br /> More information: [The "ffff" Custom Format Specifier](#ffffSpecifier).|2009-06-15T13:45:30.6175000 -> 6175<br /><br /> 2009-06-15T13:45:30.0000500  -> 0000|
-|"fffff"|The hundred thousandths of a second in a date and time value.<br /><br /> More information: [The "fffff" Custom Format Specifier](#fffffSpecifier).|2009-06-15T13:45:30.6175400 -> 61754<br /><br /> 6/15/2009 13:45:30.000005 -> 00000|
-|"ffffff"|The millionths of a second in a date and time value.<br /><br /> More information: [The "ffffff" Custom Format Specifier](#ffffffSpecifier).|2009-06-15T13:45:30.6175420 -> 617542<br /><br /> 2009-06-15T13:45:30.0000005 -> 000000|
-|"fffffff"|The ten millionths of a second in a date and time value.<br /><br /> More information: [The "fffffff" Custom Format Specifier](#fffffffSpecifier).|2009-06-15T13:45:30.6175425 -> 6175425<br /><br /> 2009-06-15T13:45:30.0001150 -> 0001150|
-|"F"|If non-zero, the tenths of a second in a date and time value.<br /><br /> More information: [The "F" Custom Format Specifier](#F_Specifier).|2009-06-15T13:45:30.6170000 -> 6<br /><br /> 2009-06-15T13:45:30.0500000 -> (no output)|
-|"FF"|If non-zero, the hundredths of a second in a date and time value.<br /><br /> More information: [The "FF" Custom Format Specifier](#FF_Specifier).|2009-06-15T13:45:30.6170000 -> 61<br /><br /> 2009-06-15T13:45:30.0050000 -> (no output)|
-|"FFF"|If non-zero, the milliseconds in a date and time value.<br /><br /> More information: [The "FFF" Custom Format Specifier](#FFF_Specifier).|2009-06-15T13:45:30.6170000 -> 617<br /><br /> 2009-06-15T13:45:30.0005000 -> (no output)|
-|"FFFF"|If non-zero, the ten thousandths of a second in a date and time value.<br /><br /> More information: [The "FFFF" Custom Format Specifier](#FFFF_Specifier).|2009-06-15T13:45:30.5275000 -> 5275<br /><br /> 2009-06-15T13:45:30.0000500 -> (no output)|
-|"FFFFF"|If non-zero, the hundred thousandths of a second in a date and time value.<br /><br /> More information: [The "FFFFF" Custom Format Specifier](#FFFFF_Specifier).|2009-06-15T13:45:30.6175400 -> 61754<br /><br /> 2009-06-15T13:45:30.0000050 -> (no output)|
-|"FFFFFF"|If non-zero, the millionths of a second in a date and time value.<br /><br /> More information: [The "FFFFFF" Custom Format Specifier](#FFFFFF_Specifier).|2009-06-15T13:45:30.6175420 -> 617542<br /><br /> 2009-06-15T13:45:30.0000005 -> (no output)|
-|"FFFFFFF"|If non-zero, the ten millionths of a second in a date and time value.<br /><br /> More information: [The "FFFFFFF" Custom Format Specifier](#FFFFFFF_Specifier).|2009-06-15T13:45:30.6175425 -> 6175425<br /><br /> 2009-06-15T13:45:30.0001150 -> 000115|
-|"g", "gg"|The period or era.<br /><br /> More information: [The "g" or "gg" Custom Format Specifier](#gSpecifier).|2009-06-15T13:45:30.6170000 -> A.D.|
-|"h"|The hour, using a 12-hour clock from 1 to 12.<br /><br /> More information: [The "h" Custom Format Specifier](#hSpecifier).|2009-06-15T01:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 1|
-|"hh"|The hour, using a 12-hour clock from 01 to 12.<br /><br /> More information: [The "hh" Custom Format Specifier](#hhSpecifier).|2009-06-15T01:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 01|
-|"H"|The hour, using a 24-hour clock from 0 to 23.<br /><br /> More information: [The "H" Custom Format Specifier](#H_Specifier).|2009-06-15T01:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 13|
-|"HH"|The hour, using a 24-hour clock from 00 to 23.<br /><br /> More information: [The "HH" Custom Format Specifier](#HH_Specifier).|2009-06-15T01:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 13|
-|"K"|Time zone information.<br /><br /> More information: [The "K" Custom Format Specifier](#KSpecifier).|With <xref:System.DateTime> values:<br /><br /> 2009-06-15T13:45:30, Kind Unspecified -><br /><br /> 2009-06-15T13:45:30, Kind Utc -> Z<br /><br /> 2009-06-15T13:45:30, Kind Local -> -07:00 (depends on local computer settings)<br /><br /> With <xref:System.DateTimeOffset> values:<br /><br /> 2009-06-15T01:45:30-07:00 --> -07:00<br /><br /> 2009-06-15T08:45:30+00:00 --> +00:00|
-|"m"|The minute, from 0 through 59.<br /><br /> More information: [The "m" Custom Format Specifier](#mSpecifier).|2009-06-15T01:09:30 -> 9<br /><br /> 2009-06-15T13:29:30 -> 29|
-|"mm"|The minute, from 00 through 59.<br /><br /> More information: [The "mm" Custom Format Specifier](#mmSpecifier).|2009-06-15T01:09:30 -> 09<br /><br /> 2009-06-15T01:45:30 -> 45|
-|"M"|The month, from 1 through 12.<br /><br /> More information: [The "M" Custom Format Specifier](#M_Specifier).|2009-06-15T13:45:30 -> 6|
-|"MM"|The month, from 01 through 12.<br /><br /> More information: [The "MM" Custom Format Specifier](#MM_Specifier).|2009-06-15T13:45:30 -> 06|
-|"MMM"|The abbreviated name of the month.<br /><br /> More information: [The "MMM" Custom Format Specifier](#MMM_Specifier).|2009-06-15T13:45:30 -> Jun (en-US)<br /><br /> 2009-06-15T13:45:30 -> juin (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> Jun (zu-ZA)|
-|"MMMM"|The full name of the month.<br /><br /> More information: [The "MMMM" Custom Format Specifier](#MMMM_Specifier).|2009-06-15T13:45:30 -> June (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> uJuni (zu-ZA)|
-|"s"|The second, from 0 through 59.<br /><br /> More information: [The "s" Custom Format Specifier](#sSpecifier).|2009-06-15T13:45:09 -> 9|
-|"ss"|The second, from 00 through 59.<br /><br /> More information: [The "ss" Custom Format Specifier](#ssSpecifier).|2009-06-15T13:45:09 -> 09|
-|"t"|The first character of the AM/PM designator.<br /><br /> More information: [The "t" Custom Format Specifier](#tSpecifier).|2009-06-15T13:45:30 -> P (en-US)<br /><br /> 2009-06-15T13:45:30 -> 午 (ja-JP)<br /><br /> 2009-06-15T13:45:30 ->  (fr-FR)|
-|"tt"|The AM/PM designator.<br /><br /> More information: [The "tt" Custom Format Specifier](#ttSpecifier).|2009-06-15T13:45:30 -> PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 午後 (ja-JP)<br /><br /> 2009-06-15T13:45:30 ->  (fr-FR)|
-|"y"|The year, from 0 to 99.<br /><br /> More information: [The "y" Custom Format Specifier](#ySpecifier).|0001-01-01T00:00:00 -> 1<br /><br /> 0900-01-01T00:00:00 -> 0<br /><br /> 1900-01-01T00:00:00 -> 0<br /><br /> 2009-06-15T13:45:30 -> 9<br /><br /> 2019-06-15T13:45:30 -> 19|
-|"yy"|The year, from 00 to 99.<br /><br /> More information: [The "yy" Custom Format Specifier](#yySpecifier).|0001-01-01T00:00:00 -> 01<br /><br /> 0900-01-01T00:00:00 -> 00<br /><br /> 1900-01-01T00:00:00 -> 00<br /><br /> 2019-06-15T13:45:30 -> 19|
-|"yyy"|The year, with a minimum of three digits.<br /><br /> More information: [The "yyy" Custom Format Specifier](#yyySpecifier).|0001-01-01T00:00:00 -> 001<br /><br /> 0900-01-01T00:00:00 -> 900<br /><br /> 1900-01-01T00:00:00 -> 1900<br /><br /> 2009-06-15T13:45:30 -> 2009|
-|"yyyy"|The year as a four-digit number.<br /><br /> More information: [The "yyyy" Custom Format Specifier](#yyyySpecifier).|0001-01-01T00:00:00 -> 0001<br /><br /> 0900-01-01T00:00:00 -> 0900<br /><br /> 1900-01-01T00:00:00 -> 1900<br /><br /> 2009-06-15T13:45:30 -> 2009|
-|"yyyyy"|The year as a five-digit number.<br /><br /> More information: [The "yyyyy" Custom Format Specifier](#yyyyySpecifier).|0001-01-01T00:00:00 -> 00001<br /><br /> 2009-06-15T13:45:30 -> 02009|
-|"z"|Hours offset from UTC, with no leading zeros.<br /><br /> More information: [The "z" Custom Format Specifier](#zSpecifier).|2009-06-15T13:45:30-07:00 -> -7|
-|"zz"|Hours offset from UTC, with a leading zero for a single-digit value.<br /><br /> More information: [The "zz" Custom Format Specifier](#zzSpecifier).|2009-06-15T13:45:30-07:00 -> -07|
-|"zzz"|Hours and minutes offset from UTC.<br /><br /> More information: [The "zzz" Custom Format Specifier](#zzzSpecifier).|2009-06-15T13:45:30-07:00 -> -07:00|
-|":"|The time separator.<br /><br /> More information: [The ":" Custom Format Specifier](#timeSeparator).|2009-06-15T13:45:30 -> : (en-US)<br /><br /> 2009-06-15T13:45:30 -> . (it-IT)<br /><br /> 2009-06-15T13:45:30 -> : (ja-JP)|
-|"/"|The date separator.<br /><br /> More Information: [The "/" Custom Format Specifier](#dateSeparator).|2009-06-15T13:45:30 -> / (en-US)<br /><br /> 2009-06-15T13:45:30 -> - (ar-DZ)<br /><br /> 2009-06-15T13:45:30 -> . (tr-TR)|
-|"*string*"<br /><br /> '*string*'|Literal string delimiter.<br /><br /> More information: [Character literals](#Literals).|2009-06-15T13:45:30 ("arr:" h:m t) -> arr: 1:45 P<br /><br /> 2009-06-15T13:45:30 ('arr:' h:m t) -> arr: 1:45 P|
-|%|Defines the following character as a custom format specifier.<br /><br /> More information:[Using Single Custom Format Specifiers](#UsingSingleSpecifiers).|2009-06-15T13:45:30 (%h) -> 1|
-|&#92;|The escape character.<br /><br /> More information: [Character literals](#Literals) and [Using the Escape Character](#escape).|2009-06-15T13:45:30 (h \h) -> 1 h|
-|Any other character|The character is copied to the result string unchanged.<br /><br /> More information: [Character literals](#Literals).|2009-06-15T01:45:30 (arr hh:mm t) -> arr 01:45 A|
+|--|--|--|
+| "d" | The day of the month, from 1 through 31.<br /><br /> More information: [The "d" Custom Format Specifier](#dSpecifier). | 2009-06-01T13:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 15 |
+| "dd" | The day of the month, from 01 through 31.<br /><br /> More information: [The "dd" Custom Format Specifier](#ddSpecifier). | 2009-06-01T13:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 15 |
+| "ddd" | The abbreviated name of the day of the week.<br /><br /> More information: [The "ddd" Custom Format Specifier](#dddSpecifier). | 2009-06-15T13:45:30 -> Mon (en-US)<br /><br /> 2009-06-15T13:45:30 -> Пн (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lun. (fr-FR) |
+| "dddd" | The full name of the day of the week.<br /><br /> More information: [The "dddd" Custom Format Specifier](#ddddSpecifier). | 2009-06-15T13:45:30 -> Monday (en-US)<br /><br /> 2009-06-15T13:45:30 -> понедельник (ru-RU)<br /><br /> 2009-06-15T13:45:30 -> lundi (fr-FR) |
+| "f" | The tenths of a second in a date and time value.<br /><br /> More information: [The "f" Custom Format Specifier](#fSpecifier). | 2009-06-15T13:45:30.6170000 -> 6<br /><br /> 2009-06-15T13:45:30.05 -> 0 |
+| "ff" | The hundredths of a second in a date and time value.<br /><br /> More information: [The "ff" Custom Format Specifier](#ffSpecifier). | 2009-06-15T13:45:30.6170000 -> 61<br /><br /> 2009-06-15T13:45:30.0050000 -> 00 |
+| "fff" | The milliseconds in a date and time value.<br /><br /> More information: [The "fff" Custom Format Specifier](#fffSpecifier). | 6/15/2009 13:45:30.617 -> 617<br /><br /> 6/15/2009 13:45:30.0005 -> 000 |
+| "ffff" | The ten thousandths of a second in a date and time value.<br /><br /> More information: [The "ffff" Custom Format Specifier](#ffffSpecifier). | 2009-06-15T13:45:30.6175000 -> 6175<br /><br /> 2009-06-15T13:45:30.0000500  -> 0000 |
+| "fffff" | The hundred thousandths of a second in a date and time value.<br /><br /> More information: [The "fffff" Custom Format Specifier](#fffffSpecifier). | 2009-06-15T13:45:30.6175400 -> 61754<br /><br /> 6/15/2009 13:45:30.000005 -> 00000 |
+| "ffffff" | The millionths of a second in a date and time value.<br /><br /> More information: [The "ffffff" Custom Format Specifier](#ffffffSpecifier). | 2009-06-15T13:45:30.6175420 -> 617542<br /><br /> 2009-06-15T13:45:30.0000005 -> 000000 |
+| "fffffff" | The ten millionths of a second in a date and time value.<br /><br /> More information: [The "fffffff" Custom Format Specifier](#fffffffSpecifier). | 2009-06-15T13:45:30.6175425 -> 6175425<br /><br /> 2009-06-15T13:45:30.0001150 -> 0001150 |
+| "F" | If non-zero, the tenths of a second in a date and time value.<br /><br /> More information: [The "F" Custom Format Specifier](#F_Specifier). | 2009-06-15T13:45:30.6170000 -> 6<br /><br /> 2009-06-15T13:45:30.0500000 -> (no output) |
+| "FF" | If non-zero, the hundredths of a second in a date and time value.<br /><br /> More information: [The "FF" Custom Format Specifier](#FF_Specifier). | 2009-06-15T13:45:30.6170000 -> 61<br /><br /> 2009-06-15T13:45:30.0050000 -> (no output) |
+| "FFF" | If non-zero, the milliseconds in a date and time value.<br /><br /> More information: [The "FFF" Custom Format Specifier](#FFF_Specifier). | 2009-06-15T13:45:30.6170000 -> 617<br /><br /> 2009-06-15T13:45:30.0005000 -> (no output) |
+| "FFFF" | If non-zero, the ten thousandths of a second in a date and time value.<br /><br /> More information: [The "FFFF" Custom Format Specifier](#FFFF_Specifier). | 2009-06-15T13:45:30.5275000 -> 5275<br /><br /> 2009-06-15T13:45:30.0000500 -> (no output) |
+| "FFFFF" | If non-zero, the hundred thousandths of a second in a date and time value.<br /><br /> More information: [The "FFFFF" Custom Format Specifier](#FFFFF_Specifier). | 2009-06-15T13:45:30.6175400 -> 61754<br /><br /> 2009-06-15T13:45:30.0000050 -> (no output) |
+| "FFFFFF" | If non-zero, the millionths of a second in a date and time value.<br /><br /> More information: [The "FFFFFF" Custom Format Specifier](#FFFFFF_Specifier). | 2009-06-15T13:45:30.6175420 -> 617542<br /><br /> 2009-06-15T13:45:30.0000005 -> (no output) |
+| "FFFFFFF" | If non-zero, the ten millionths of a second in a date and time value.<br /><br /> More information: [The "FFFFFFF" Custom Format Specifier](#FFFFFFF_Specifier). | 2009-06-15T13:45:30.6175425 -> 6175425<br /><br /> 2009-06-15T13:45:30.0001150 -> 000115 |
+| "g", "gg" | The period or era.<br /><br /> More information: [The "g" or "gg" Custom Format Specifier](#gSpecifier). | 2009-06-15T13:45:30.6170000 -> A.D. |
+| "h" | The hour, using a 12-hour clock from 1 to 12.<br /><br /> More information: [The "h" Custom Format Specifier](#hSpecifier). | 2009-06-15T01:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 1 |
+| "hh" | The hour, using a 12-hour clock from 01 to 12.<br /><br /> More information: [The "hh" Custom Format Specifier](#hhSpecifier). | 2009-06-15T01:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 01 |
+| "H" | The hour, using a 24-hour clock from 0 to 23.<br /><br /> More information: [The "H" Custom Format Specifier](#H_Specifier). | 2009-06-15T01:45:30 -> 1<br /><br /> 2009-06-15T13:45:30 -> 13 |
+| "HH" | The hour, using a 24-hour clock from 00 to 23.<br /><br /> More information: [The "HH" Custom Format Specifier](#HH_Specifier). | 2009-06-15T01:45:30 -> 01<br /><br /> 2009-06-15T13:45:30 -> 13 |
+| "K" | Time zone information.<br /><br /> More information: [The "K" Custom Format Specifier](#KSpecifier). | With <xref:System.DateTime> values:<br /><br /> 2009-06-15T13:45:30, Kind Unspecified -><br /><br /> 2009-06-15T13:45:30, Kind Utc -> Z<br /><br /> 2009-06-15T13:45:30, Kind Local -> -07:00 (depends on local computer settings)<br /><br /> With <xref:System.DateTimeOffset> values:<br /><br /> 2009-06-15T01:45:30-07:00 --> -07:00<br /><br /> 2009-06-15T08:45:30+00:00 --> +00:00 |
+| "m" | The minute, from 0 through 59.<br /><br /> More information: [The "m" Custom Format Specifier](#mSpecifier). | 2009-06-15T01:09:30 -> 9<br /><br /> 2009-06-15T13:29:30 -> 29 |
+| "mm" | The minute, from 00 through 59.<br /><br /> More information: [The "mm" Custom Format Specifier](#mmSpecifier). | 2009-06-15T01:09:30 -> 09<br /><br /> 2009-06-15T01:45:30 -> 45 |
+| "M" | The month, from 1 through 12.<br /><br /> More information: [The "M" Custom Format Specifier](#M_Specifier). | 2009-06-15T13:45:30 -> 6 |
+| "MM" | The month, from 01 through 12.<br /><br /> More information: [The "MM" Custom Format Specifier](#MM_Specifier). | 2009-06-15T13:45:30 -> 06 |
+| "MMM" | The abbreviated name of the month.<br /><br /> More information: [The "MMM" Custom Format Specifier](#MMM_Specifier). | 2009-06-15T13:45:30 -> Jun (en-US)<br /><br /> 2009-06-15T13:45:30 -> juin (fr-FR)<br /><br /> 2009-06-15T13:45:30 -> Jun (zu-ZA) |
+| "MMMM" | The full name of the month.<br /><br /> More information: [The "MMMM" Custom Format Specifier](#MMMM_Specifier). | 2009-06-15T13:45:30 -> June (en-US)<br /><br /> 2009-06-15T13:45:30 -> juni (da-DK)<br /><br /> 2009-06-15T13:45:30 -> uJuni (zu-ZA) |
+| "s" | The second, from 0 through 59.<br /><br /> More information: [The "s" Custom Format Specifier](#sSpecifier). | 2009-06-15T13:45:09 -> 9 |
+| "ss" | The second, from 00 through 59.<br /><br /> More information: [The "ss" Custom Format Specifier](#ssSpecifier). | 2009-06-15T13:45:09 -> 09 |
+| "t" | The first character of the AM/PM designator.<br /><br /> More information: [The "t" Custom Format Specifier](#tSpecifier). | 2009-06-15T13:45:30 -> P (en-US)<br /><br /> 2009-06-15T13:45:30 -> 午 (ja-JP)<br /><br /> 2009-06-15T13:45:30 ->  (fr-FR) |
+| "tt" | The AM/PM designator.<br /><br /> More information: [The "tt" Custom Format Specifier](#ttSpecifier). | 2009-06-15T13:45:30 -> PM (en-US)<br /><br /> 2009-06-15T13:45:30 -> 午後 (ja-JP)<br /><br /> 2009-06-15T13:45:30 ->  (fr-FR) |
+| "y" | The year, from 0 to 99.<br /><br /> More information: [The "y" Custom Format Specifier](#ySpecifier). | 0001-01-01T00:00:00 -> 1<br /><br /> 0900-01-01T00:00:00 -> 0<br /><br /> 1900-01-01T00:00:00 -> 0<br /><br /> 2009-06-15T13:45:30 -> 9<br /><br /> 2019-06-15T13:45:30 -> 19 |
+| "yy" | The year, from 00 to 99.<br /><br /> More information: [The "yy" Custom Format Specifier](#yySpecifier). | 0001-01-01T00:00:00 -> 01<br /><br /> 0900-01-01T00:00:00 -> 00<br /><br /> 1900-01-01T00:00:00 -> 00<br /><br /> 2019-06-15T13:45:30 -> 19 |
+| "yyy" | The year, with a minimum of three digits.<br /><br /> More information: [The "yyy" Custom Format Specifier](#yyySpecifier). | 0001-01-01T00:00:00 -> 001<br /><br /> 0900-01-01T00:00:00 -> 900<br /><br /> 1900-01-01T00:00:00 -> 1900<br /><br /> 2009-06-15T13:45:30 -> 2009 |
+| "yyyy" | The year as a four-digit number.<br /><br /> More information: [The "yyyy" Custom Format Specifier](#yyyySpecifier). | 0001-01-01T00:00:00 -> 0001<br /><br /> 0900-01-01T00:00:00 -> 0900<br /><br /> 1900-01-01T00:00:00 -> 1900<br /><br /> 2009-06-15T13:45:30 -> 2009 |
+| "yyyyy" | The year as a five-digit number.<br /><br /> More information: [The "yyyyy" Custom Format Specifier](#yyyyySpecifier). | 0001-01-01T00:00:00 -> 00001<br /><br /> 2009-06-15T13:45:30 -> 02009 |
+| "z" | Hours offset from UTC, with no leading zeros.<br /><br /> More information: [The "z" Custom Format Specifier](#zSpecifier). | 2009-06-15T13:45:30-07:00 -> -7 |
+| "zz" | Hours offset from UTC, with a leading zero for a single-digit value.<br /><br /> More information: [The "zz" Custom Format Specifier](#zzSpecifier). | 2009-06-15T13:45:30-07:00 -> -07 |
+| "zzz" | Hours and minutes offset from UTC.<br /><br /> More information: [The "zzz" Custom Format Specifier](#zzzSpecifier). | 2009-06-15T13:45:30-07:00 -> -07:00 |
+| ":" | The time separator.<br /><br /> More information: [The ":" Custom Format Specifier](#timeSeparator). | 2009-06-15T13:45:30 -> : (en-US)<br /><br /> 2009-06-15T13:45:30 -> . (it-IT)<br /><br /> 2009-06-15T13:45:30 -> : (ja-JP) |
+| "/" | The date separator.<br /><br /> More Information: [The "/" Custom Format Specifier](#dateSeparator). | 2009-06-15T13:45:30 -> / (en-US)<br /><br /> 2009-06-15T13:45:30 -> - (ar-DZ)<br /><br /> 2009-06-15T13:45:30 -> . (tr-TR) |
+| "*string*"<br /><br /> '*string*' | Literal string delimiter.<br /><br /> More information: [Character literals](#Literals). | 2009-06-15T13:45:30 ("arr:" h:m t) -> arr: 1:45 P<br /><br /> 2009-06-15T13:45:30 ('arr:' h:m t) -> arr: 1:45 P |
+| % | Defines the following character as a custom format specifier.<br /><br /> More information:[Using Single Custom Format Specifiers](#UsingSingleSpecifiers). | 2009-06-15T13:45:30 (%h) -> 1 |
+| &#92; | The escape character.<br /><br /> More information: [Character literals](#Literals) and [Using the Escape Character](#escape). | 2009-06-15T13:45:30 (h \h) -> 1 h |
+| Any other character | The character is copied to the result string unchanged.<br /><br /> More information: [Character literals](#Literals). | 2009-06-15T01:45:30 (arr hh:mm t) -> arr 01:45 A |
 
 The following sections provide additional information about each custom date and time format specifier. Unless otherwise noted, each specifier produces an identical string representation regardless of whether it's used with a <xref:System.DateTime> value or a <xref:System.DateTimeOffset> value.
 
-## <a name="dSpecifier"></a> The "d" custom format specifier
+## Day "d" format specifier
+
+### <a name="dSpecifier"></a> The "d" custom format specifier
 
 The "d" custom format specifier represents the day of the month as a number from 1 through 31. A single-digit day is formatted without a leading zero.
 
@@ -105,7 +109,7 @@ The following example includes the "d" custom format specifier in several format
 
 [Back to table](#table)
 
-## <a name="ddSpecifier"></a> The "dd" custom format specifier
+### <a name="ddSpecifier"></a> The "dd" custom format specifier
 
 The "dd" custom format string represents the day of the month as a number from 01 through 31. A single-digit day is formatted with a leading zero.
 
@@ -116,7 +120,7 @@ The following example includes the "dd" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="dddSpecifier"></a> The "ddd" custom format specifier
+### <a name="dddSpecifier"></a> The "ddd" custom format specifier
 
 The "ddd" custom format specifier represents the abbreviated name of the day of the week. The localized abbreviated name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedDayNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -127,7 +131,7 @@ The following example includes the "ddd" custom format specifier in a custom for
 
 [Back to table](#table)
 
-## <a name="ddddSpecifier"></a> The "dddd" custom format specifier
+### <a name="ddddSpecifier"></a> The "dddd" custom format specifier
 
 The "dddd" custom format specifier (plus any number of additional "d" specifiers) represents the full name of the day of the week. The localized name of the day of the week is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DayNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -138,7 +142,9 @@ The following example includes the "dddd" custom format specifier in a custom fo
 
 [Back to table](#table)
 
-## <a name="fSpecifier"></a> The "f" custom format specifier
+## Lowercase seconds "f" fraction specifier
+
+### <a name="fSpecifier"></a> The "f" custom format specifier
 
 The "f" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value.
 
@@ -153,7 +159,7 @@ The following example includes the "f" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="ffSpecifier"></a> The "ff" custom format specifier
+### <a name="ffSpecifier"></a> The "ff" custom format specifier
 
 The "ff" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value.
 
@@ -164,7 +170,7 @@ following example includes the "ff" custom format specifier in a custom format s
 
 [Back to table](#table)
 
-## <a name="fffSpecifier"></a> The "fff" custom format specifier
+### <a name="fffSpecifier"></a> The "fff" custom format specifier
 
 The "fff" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value.
 
@@ -175,7 +181,7 @@ The following example includes the "fff" custom format specifier in a custom for
 
 [Back to table](#table)
 
-## <a name="ffffSpecifier"></a> The "ffff" custom format specifier
+### <a name="ffffSpecifier"></a> The "ffff" custom format specifier
 
 The "ffff" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value.
 
@@ -183,7 +189,7 @@ Although it's possible to display the ten thousandths of a second component of a
 
 [Back to table](#table)
 
-## <a name="fffffSpecifier"></a> The "fffff" custom format specifier
+### <a name="fffffSpecifier"></a> The "fffff" custom format specifier
 
 The "fffff" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value.
 
@@ -191,7 +197,7 @@ Although it's possible to display the hundred thousandths of a second component 
 
 [Back to table](#table)
 
-## <a name="ffffffSpecifier"></a> The "ffffff" custom format specifier
+### <a name="ffffffSpecifier"></a> The "ffffff" custom format specifier
 
 The "ffffff" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value.
 
@@ -199,7 +205,7 @@ Although it's possible to display the millionths of a second component of a time
 
 [Back to table](#table)
 
-## <a name="fffffffSpecifier"></a> The "fffffff" custom format specifier
+### <a name="fffffffSpecifier"></a> The "fffffff" custom format specifier
 
 The "fffffff" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value.
 
@@ -207,7 +213,9 @@ Although it's possible to display the ten millionths of a second component of a 
 
 [Back to table](#table)
 
-## <a name="F_Specifier"></a> The "F" custom format specifier
+## Uppercase seconds "F" fraction specifier
+
+### <a name="F_Specifier"></a> The "F" custom format specifier
 
 The "F" custom format specifier represents the most significant digit of the seconds fraction; that is, it represents the tenths of a second in a date and time value. Nothing is displayed if the digit is zero.
 
@@ -222,7 +230,7 @@ The following example includes the "F" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="FF_Specifier"></a> The "FF" custom format specifier
+### <a name="FF_Specifier"></a> The "FF" custom format specifier
 
 The "FF" custom format specifier represents the two most significant digits of the seconds fraction; that is, it represents the hundredths of a second in a date and time value. However, trailing zeros or two zero digits aren't displayed.
 
@@ -233,7 +241,7 @@ The following example includes the "FF" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="FFF_Specifier"></a> The "FFF" custom format specifier
+### <a name="FFF_Specifier"></a> The "FFF" custom format specifier
 
 The "FFF" custom format specifier represents the three most significant digits of the seconds fraction; that is, it represents the milliseconds in a date and time value. However, trailing zeros or three zero digits aren't displayed.
 
@@ -244,7 +252,7 @@ The following example includes the "FFF" custom format specifier in a custom for
 
 [Back to table](#table)
 
-## <a name="FFFF_Specifier"></a> The "FFFF" custom format specifier
+### <a name="FFFF_Specifier"></a> The "FFFF" custom format specifier
 
 The "FFFF" custom format specifier represents the four most significant digits of the seconds fraction; that is, it represents the ten thousandths of a second in a date and time value. However, trailing zeros or four zero digits aren't displayed.
 
@@ -252,7 +260,7 @@ Although it's possible to display the ten thousandths of a second component of a
 
 [Back to table](#table)
 
-## <a name="FFFFF_Specifier"></a> The "FFFFF" custom format specifier
+### <a name="FFFFF_Specifier"></a> The "FFFFF" custom format specifier
 
 The "FFFFF" custom format specifier represents the five most significant digits of the seconds fraction; that is, it represents the hundred thousandths of a second in a date and time value. However, trailing zeros or five zero digits aren't displayed.
 
@@ -260,7 +268,7 @@ Although it's possible to display the hundred thousandths of a second component 
 
 [Back to table](#table)
 
-## <a name="FFFFFF_Specifier"></a> The "FFFFFF" custom format specifier
+### <a name="FFFFFF_Specifier"></a> The "FFFFFF" custom format specifier
 
 The "FFFFFF" custom format specifier represents the six most significant digits of the seconds fraction; that is, it represents the millionths of a second in a date and time value. However, trailing zeros or six zero digits aren't displayed.
 
@@ -268,7 +276,7 @@ Although it's possible to display the millionths of a second component of a time
 
 [Back to table](#table)
 
-## <a name="FFFFFFF_Specifier"></a> The "FFFFFFF" custom format specifier
+### <a name="FFFFFFF_Specifier"></a> The "FFFFFFF" custom format specifier
 
 The "FFFFFFF" custom format specifier represents the seven most significant digits of the seconds fraction; that is, it represents the ten millionths of a second in a date and time value. However, trailing zeros or seven zero digits aren't displayed.
 
@@ -276,7 +284,9 @@ Although it's possible to display the ten millionths of a second component of a 
 
 [Back to table](#table)
 
-## <a name="gSpecifier"></a> The "g" or "gg" custom format specifier
+## Era "g" format specifier
+
+### <a name="gSpecifier"></a> The "g" or "gg" custom format specifier
 
 The "g" or "gg" custom format specifiers (plus any number of additional "g" specifiers) represents the period or era, such as A.D. The formatting operation ignores this specifier if the date to be formatted doesn't have an associated period or era string.
 
@@ -289,7 +299,9 @@ The following example includes the "g" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="hSpecifier"></a> The "h" custom format specifier
+## Lowercase hour "h" format specifier
+
+### <a name="hSpecifier"></a> The "h" custom format specifier
 
 The "h" custom format specifier represents the hour as a number from 1 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted without a leading zero. For example, given a time of 5:43 in the morning or afternoon, this custom format specifier displays "5".
 
@@ -302,7 +314,7 @@ The following example includes the "h" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="hhSpecifier"></a> The "hh" custom format specifier
+### <a name="hhSpecifier"></a> The "hh" custom format specifier
 
 The "hh" custom format specifier (plus any number of additional "h" specifiers) represents the hour as a number from 01 through 12; that is, the hour is represented by a 12-hour clock that counts the whole hours since midnight or noon. A particular hour after midnight is indistinguishable from the same hour after noon. The hour is not rounded, and a single-digit hour is formatted with a leading zero. For example, given a time of 5:43 in the morning or afternoon, this format specifier displays "05".
 
@@ -313,7 +325,9 @@ The following example includes the "hh" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="H_Specifier"></a> The "H" custom format specifier
+## Uppercase hour "H" format specifier
+
+### <a name="H_Specifier"></a> The "H" custom format specifier
 
 The "H" custom format specifier represents the hour as a number from 0 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted without a leading zero.
 
@@ -326,7 +340,7 @@ The following example includes the "H" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="HH_Specifier"></a> The "HH" custom format specifier
+### <a name="HH_Specifier"></a> The "HH" custom format specifier
 
 The "HH" custom format specifier (plus any number of additional "H" specifiers) represents the hour as a number from 00 through 23; that is, the hour is represented by a zero-based 24-hour clock that counts the hours since midnight. A single-digit hour is formatted with a leading zero.
 
@@ -337,7 +351,9 @@ The following example includes the "HH" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="KSpecifier"></a> The "K" custom format specifier
+## Time zone "K" format specifier
+
+### <a name="KSpecifier"></a> The "K" custom format specifier
 
 The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with <xref:System.DateTime> values, the result string is defined by the value of the <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property:
 
@@ -358,7 +374,9 @@ The following example displays the string that results from using the "K" custom
 
 [Back to table](#table)
 
-## <a name="mSpecifier"></a> The "m" custom format specifier
+## Minute "m" format specifier
+
+### <a name="mSpecifier"></a> The "m" custom format specifier
 
 The "m" custom format specifier represents the minute as a number from 0 through 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted without a leading zero.
 
@@ -371,7 +389,7 @@ The following example includes the "m" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="mmSpecifier"></a> The "mm" custom format specifier
+### <a name="mmSpecifier"></a> The "mm" custom format specifier
 
 The "mm" custom format specifier (plus any number of additional "m" specifiers) represents the minute as a number from 00 through 59. The minute represents whole minutes that have passed since the last hour. A single-digit minute is formatted with a leading zero.
 
@@ -382,7 +400,9 @@ The following example includes the "mm" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="M_Specifier"></a> The "M" custom format specifier
+## Month "M" format specifier
+
+### <a name="M_Specifier"></a> The "M" custom format specifier
 
 The "M" custom format specifier represents the month as a number from 1 through 12 (or from 1 through 13 for calendars that have 13 months). A single-digit month is formatted without a leading zero.
 
@@ -395,7 +415,7 @@ The following example includes the "M" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="MM_Specifier"></a> The "MM" custom format specifier
+### <a name="MM_Specifier"></a> The "MM" custom format specifier
 
 The "MM" custom format specifier represents the month as a number from 01 through 12 (or from 1 through 13 for calendars that have 13 months). A single-digit month is formatted with a leading zero.
 
@@ -406,7 +426,7 @@ The following example includes the "MM" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="MMM_Specifier"></a> The "MMM" custom format specifier
+### <a name="MMM_Specifier"></a> The "MMM" custom format specifier
 
 The "MMM" custom format specifier represents the abbreviated name of the month. The localized abbreviated name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AbbreviatedMonthNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -417,7 +437,7 @@ The following example includes the "MMM" custom format specifier in a custom for
 
 [Back to table](#table)
 
-## <a name="MMMM_Specifier"></a> The "MMMM" custom format specifier
+### <a name="MMMM_Specifier"></a> The "MMMM" custom format specifier
 
 The "MMMM" custom format specifier represents the full name of the month. The localized name of the month is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.MonthNames%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -428,7 +448,9 @@ The following example includes the "MMMM" custom format specifier in a custom fo
 
 [Back to table](#table)
 
-## <a name="sSpecifier"></a> The "s" custom format specifier
+## Seconds "s" format specifier
+
+### <a name="sSpecifier"></a> The "s" custom format specifier
 
 The "s" custom format specifier represents the seconds as a number from 0 through 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted without a leading zero.
 
@@ -441,7 +463,7 @@ The following example includes the "s" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="ssSpecifier"></a> The "ss" custom format specifier
+### <a name="ssSpecifier"></a> The "ss" custom format specifier
 
 The "ss" custom format specifier (plus any number of additional "s" specifiers) represents the seconds as a number from 00 through 59. The result represents whole seconds that have passed since the last minute. A single-digit second is formatted with a leading zero.
 
@@ -452,7 +474,9 @@ The following example includes the "ss" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="tSpecifier"></a> The "t" custom format specifier
+## Meridiem "t" format specifier
+
+### <a name="tSpecifier"></a> The "t" custom format specifier
 
 The "t" custom format specifier represents the first character of the AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
 
@@ -465,7 +489,7 @@ The following example includes the "t" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="ttSpecifier"></a> The "tt" custom format specifier
+### <a name="ttSpecifier"></a> The "tt" custom format specifier
 
 The "tt" custom format specifier (plus any number of additional "t" specifiers) represents the entire AM/PM designator. The appropriate localized designator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.AMDesignator%2A?displayProperty=nameWithType> or <xref:System.Globalization.DateTimeFormatInfo.PMDesignator%2A?displayProperty=nameWithType> property of the current or specific culture. The AM designator is used for all times from 0:00:00 (midnight) to 11:59:59.999. The PM designator is used for all times from 12:00:00 (noon) to 23:59:59.999.
 
@@ -478,7 +502,9 @@ The following example includes the "tt" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="ySpecifier"></a> The "y" custom format specifier
+## Year "y" format specifier
+
+### <a name="ySpecifier"></a> The "y" custom format specifier
 
 The "y" custom format specifier represents the year as a one-digit or two-digit number. If the year has more than two digits, only the two low-order digits appear in the result. If the first digit of a two-digit year begins with a zero (for example, 2008), the number is formatted without a leading zero.
 
@@ -491,7 +517,7 @@ The following example includes the "y" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="yySpecifier"></a> The "yy" custom format specifier
+### <a name="yySpecifier"></a> The "yy" custom format specifier
 
 The "yy" custom format specifier represents the year as a two-digit number. If the year has more than two digits, only the two low-order digits appear in the result. If the two-digit year has fewer than two significant digits, the number is padded with leading zeros to produce two digits.
 
@@ -507,7 +533,7 @@ The following example includes the "yy" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="yyySpecifier"></a> The "yyy" custom format specifier
+### <a name="yyySpecifier"></a> The "yyy" custom format specifier
 
 The "yyy" custom format specifier represents the year with a minimum of three digits. If the year has more than three significant digits, they are included in the result string. If the year has fewer than three digits, the number is padded with leading zeros to produce three digits.
 
@@ -521,7 +547,7 @@ The following example includes the "yyy" custom format specifier in a custom for
 
 [Back to table](#table)
 
-## <a name="yyyySpecifier"></a> The "yyyy" custom format specifier
+### <a name="yyyySpecifier"></a> The "yyyy" custom format specifier
 
 The "yyyy" custom format specifier represents the year with a minimum of four digits. If the year has more than four significant digits, they are included in the result string. If the year has fewer than four digits, the number is padded with leading zeros to produce four digits.
 
@@ -535,7 +561,7 @@ The following example includes the "yyyy" custom format specifier in a custom fo
 
 [Back to table](#table)
 
-## <a name="yyyyySpecifier"></a> The "yyyyy" custom format specifier
+### <a name="yyyyySpecifier"></a> The "yyyyy" custom format specifier
 
 The "yyyyy" custom format specifier (plus any number of additional "y" specifiers) represents the year with a minimum of five digits. If the year has more than five significant digits, they are included in the result string. If the year has fewer than five digits, the number is padded with leading zeros to produce five digits.
 
@@ -548,7 +574,9 @@ The following example includes the "yyyyy" custom format specifier in a custom f
 
 [Back to table](#table)
 
-## <a name="zSpecifier"></a> The "z" custom format specifier
+## Offset "z" format specifier
+
+### <a name="zSpecifier"></a> The "z" custom format specifier
 
 With <xref:System.DateTime> values, the "z" custom format specifier represents the signed offset of the local operating system's time zone from Coordinated Universal Time (UTC), measured in hours. It doesn't reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "z" format specifier is not recommended for use with <xref:System.DateTime> values.
 
@@ -565,7 +593,7 @@ The following example includes the "z" custom format specifier in a custom forma
 
 [Back to table](#table)
 
-## <a name="zzSpecifier"></a> The "zz" custom format specifier
+### <a name="zzSpecifier"></a> The "zz" custom format specifier
 
 With <xref:System.DateTime> values, the "zz" custom format specifier represents the signed offset of the local operating system's time zone from UTC, measured in hours. It doesn't reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "zz" format specifier is not recommended for use with <xref:System.DateTime> values.
 
@@ -580,7 +608,7 @@ The following example includes the "zz" custom format specifier in a custom form
 
 [Back to table](#table)
 
-## <a name="zzzSpecifier"></a> The "zzz" custom format specifier
+### <a name="zzzSpecifier"></a> The "zzz" custom format specifier
 
 With <xref:System.DateTime> values, the "zzz" custom format specifier represents the signed offset of the local operating system's time zone from UTC, measured in hours and minutes. It doesn't reflect the value of an instance's <xref:System.DateTime.Kind%2A?displayProperty=nameWithType> property. For this reason, the "zzz" format specifier is not recommended for use with <xref:System.DateTime> values.
 
@@ -595,7 +623,9 @@ The following example includes the "zzz" custom format specifier in a custom for
 
 [Back to table](#table)
 
-## <a name="timeSeparator"></a> The ":" custom format specifier
+## Date and time separator specifiers
+
+### <a name="timeSeparator"></a> The ":" custom format specifier
 The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. The appropriate localized time separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
 
 > [!NOTE]
@@ -605,7 +635,7 @@ If the ":" format specifier is used without other custom format specifiers, it's
 
 [Back to table](#table)
 
-## <a name="dateSeparator"></a> The "/" custom format specifier
+### <a name="dateSeparator"></a> The "/" custom format specifier
 
 The "/" custom format specifier represents the date separator, which is used to differentiate years, months, and days. The appropriate localized date separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.DateSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.
 
@@ -618,14 +648,14 @@ If the "/" format specifier is used without other custom format specifiers, it's
 
 ## <a name="Literals"></a> Character literals
 
-The following characters in a custom date and time format string are reserved and are always interpreted as formatting characters or, in the case of ", ', /, and \\, as special characters.
+The following characters in a custom date and time format string are reserved and are always interpreted as formatting characters or, in the case of `"`, `'`, `/`, and `\`, as special characters.
 
-||||||
-|-|-|-|-|-|
-|F|H|K|M|d|
-|f|g|h|m|s|
-|t|y|z|%|:|
-|/|"|'|&#92;||
+|     |     |     |     |     |
+|-----|-----|-----|-----|-----|
+| `F` | `H` | `K` | `M` | `d` |
+| `f` | `g` | `h` | `m` | `s` |
+| `t` | `y` | `z` | `%` | `:` |
+| `/` | `"` | `'` | `\` |     |
 
 All other characters are always interpreted as character literals and, in a formatting operation, are included in the result string unchanged.  In a parsing operation, they must match the characters in the input string exactly; the comparison is case-sensitive.
 
@@ -661,7 +691,7 @@ For example, "`%h"` is interpreted as a custom date and time format string that 
 [!code-csharp-interactive[Formatting.DateAndTime.Custom#16](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/literal1.cs#16)]
 [!code-vb[Formatting.DateAndTime.Custom#16](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/literal1.vb#16)]
 
-### <a name="escape"></a> Using the Escape Character
+#### <a name="escape"></a> Using the Escape character
 
 The "d", "f", "F", "g", "h", "H", "K", "m", "M", "s", "t", "y", "z", ":", or "/" characters in a format string are interpreted as custom format specifiers rather than as literal characters. To prevent a character from being interpreted as a format specifier, you can precede it with a backslash (\\), which is the escape character. The escape character signifies that the following character is a character literal that should be included in the result string unchanged.
 
@@ -691,7 +721,7 @@ The result string produced by many of the custom date and time format specifiers
 
 - <xref:System.DateTime?displayProperty=nameWithType>
 - <xref:System.IFormatProvider?displayProperty=nameWithType>
-- [Formatting Types](formatting-types.md)
-- [Standard Date and Time Format Strings](standard-date-and-time-format-strings.md)
-- [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
-- [Sample: .NET Core WinForms Formatting Utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)
+- [Formatting types](formatting-types.md)
+- [Standard Date and Time format strings](standard-date-and-time-format-strings.md)
+- [Sample: .NET Core WinForms formatting utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-cs)
+- [Sample: .NET Core WinForms formatting utility (Visual Basic)](https://docs.microsoft.com/samples/dotnet/samples/windowsforms-formatting-utility-vb)

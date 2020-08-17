@@ -1,5 +1,6 @@
 ---
 title: "Refactoring Into Pure Functions (C#)"
+description: Learn how to refactor code using pure functions. See code examples and view additional available resources.
 ms.date: 07/20/2015
 ms.assetid: 2944a0d4-fd33-4e2e-badd-abb0f9be2fcc
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Dynamically Loading and Using Types"
+description: Dynamically load and use types in .NET. Use reflection, which provides infrastructure used by language compilers to implement implicit late binding.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

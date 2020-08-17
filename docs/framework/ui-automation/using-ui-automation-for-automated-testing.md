@@ -1,5 +1,6 @@
 ---
 title: "Using UI Automation for Automated Testing"
+description: Read an overview that describes how to use UI Automation as a framework for programmatic access in automated testing scenarios.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "automated testing"

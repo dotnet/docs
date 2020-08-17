@@ -1,5 +1,6 @@
 ---
 title: "Pointer Conversions - C# Programming Guide"
+description: Learn about pointer conversions. See tables of implicit and explicit pointer conversions, code examples, and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "pointers [C#], conversions"

@@ -305,16 +305,14 @@ namespace csrefKeywordsModifiers
                           1000, 500);
             var employee2 = new Employee("Bob", 1200);
 
-            Console.WriteLine("Employee4 " + employee1.name +
-                      " earned: " + employee1.CalculatePay());
-            Console.WriteLine("Employee4 " + employee2.name +
-                      " earned: " + employee2.CalculatePay());
+            Console.WriteLine($"Employee1 {employee1.name} earned: {employee1.CalculatePay()}");
+            Console.WriteLine($"Employee2 {employee2.name} earned: {employee2.CalculatePay()}");
         }
     }
     /*
         Output:
-        Employee4 Alice earned: 1500
-        Employee4 Bob earned: 1200
+        Employee1 Alice earned: 1500
+        Employee2 Bob earned: 1200
     */
     //</snippet9>
 

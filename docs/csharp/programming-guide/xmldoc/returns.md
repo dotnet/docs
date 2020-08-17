@@ -1,5 +1,6 @@
 ---
 title: "<returns> - C# programming guide"
+description: Learn about the XML <returns> tag. This tag is used in the comment for a method declaration to describe the return value.
 ms.date: 07/20/2015
 f1_keywords:
   - "returns"

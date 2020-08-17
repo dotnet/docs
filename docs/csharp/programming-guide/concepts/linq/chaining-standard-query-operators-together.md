@@ -1,5 +1,6 @@
 ---
 title: "Chaining Standard Query Operators Together (C#)"
+description: This example shows how standard query operators can also be chained together in C#. The query does not materialize intermediate results.
 ms.date: 07/20/2015
 ms.assetid: 66f2b0a9-2c23-4735-988e-bbc9dfb55c7b
 ---

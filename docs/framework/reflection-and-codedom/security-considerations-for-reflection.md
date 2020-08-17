@@ -1,5 +1,6 @@
 ---
 title: "Security Considerations for Reflection"
+description: Learn about security considerations for reflection in .NET. Getting information about types and members is allowed, but accessing members has restrictions.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "permissions [.NET Framework], reflection"

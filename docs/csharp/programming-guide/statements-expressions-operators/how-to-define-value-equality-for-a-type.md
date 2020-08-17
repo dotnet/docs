@@ -1,5 +1,6 @@
 ---
 title: "How to define value equality for a type - C# Programming Guide"
+description: Learn how to define value equality for a type. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "overriding Equals method [C#]"

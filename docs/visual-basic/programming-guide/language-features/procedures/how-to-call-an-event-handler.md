@@ -2,17 +2,17 @@
 title: "How to: Call an Event Handler"
 ms.date: 07/20/2015
 helpviewer_keywords:
-    - "Visual Basic code, procedures"
-    - "event handlers [Visual Basic], calling"
-    - "event handlers"
-    - "procedures [Visual Basic], event handlers"
-    - "procedures [Visual Basic], calling"
+  - "Visual Basic code, procedures"
+  - "event handlers [Visual Basic], calling"
+  - "event handlers"
+  - "procedures [Visual Basic], event handlers"
+  - "procedures [Visual Basic], calling"
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
 ---
 
 # How to: Call an Event Handler in Visual Basic
 
-An _event_ is an action or occurrence — such as a mouse click or a credit limit exceeded — that is recognized by some program component, and for which you can write code to respond. An _event handler_ is the code you write to respond to an event.
+An *event* is an action or occurrence — such as a mouse click or a credit limit exceeded — that is recognized by some program component, and for which you can write code to respond. An *event handler* is the code you write to respond to an event.
 
 An event handler in Visual Basic is a `Sub` procedure. However, you do not normally call it the same way as other `Sub` procedures. Instead, you identify the procedure as a handler for the event. You can do this either with a [Handles](../../../language-reference/statements/handles-clause.md) clause and a [WithEvents](../../../language-reference/modifiers/withevents.md) variable, or with an [AddHandler Statement](../../../language-reference/statements/addhandler-statement.md). Using a `Handles` clause is the default way to declare an event handler in Visual Basic. This is the way the event handlers are written by the designers when you program in the integrated development environment (IDE). The `AddHandler` statement is suitable for raising events dynamically at run time.
 

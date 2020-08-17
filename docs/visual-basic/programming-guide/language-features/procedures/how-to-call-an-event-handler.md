@@ -1,5 +1,5 @@
 ---
-title: "How to: Call an Event Handler"
+title: "How to call an event handler"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Visual Basic code, procedures"
@@ -7,9 +7,10 @@ helpviewer_keywords:
   - "event handlers"
   - "procedures [Visual Basic], event handlers"
   - "procedures [Visual Basic], calling"
+no-loc: [Handles, WithEvents]
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
 ---
-# How to: Call an Event Handler in Visual Basic
+# How to call an event handler in Visual Basic
 
 An *event* is an action or occurrence — such as a mouse click or a credit limit exceeded — that is recognized by some program component, and for which you can write code to respond. An *event handler* is the code you write to respond to an event.
 

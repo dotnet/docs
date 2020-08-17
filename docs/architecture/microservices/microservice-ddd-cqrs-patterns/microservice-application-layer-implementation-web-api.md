@@ -56,7 +56,7 @@ public class CreateOrderCommandHandler
 
         // Add/Update the Buyer AggregateRoot
         // DDD patterns comment: Add child entities and value-objects through the Order Aggregate-Root
-        // methods and constructor so validations, invariants and business logic 
+        // methods and constructor so validations, invariants and business logic
         // make sure that consistency is preserved across the whole aggregate
         var address = new Address(message.Street, message.City, message.State, message.Country, message.ZipCode);
         var order = new Order(message.UserId, message.UserName, address, message.CardTypeId, message.CardNumber, message.CardSecurityNumber, message.CardHolderName, message.CardExpiration);
@@ -212,9 +212,9 @@ The following example shows the simplified `CreateOrderCommand` class. This is a
 // DDD and CQRS patterns comment: Note that it is recommended to implement immutable Commands
 // In this case, its immutability is achieved by having all the setters as private
 // plus only being able to update the data just once, when creating the object through its constructor.
-// References on Immutable Commands:  
+// References on Immutable Commands:
 // http://cqrs.nu/Faq
-// https://docs.spine3.org/motivation/immutability.html 
+// https://docs.spine3.org/motivation/immutability.html
 // http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
 // https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-implement-a-lightweight-class-with-auto-implemented-properties
 
@@ -395,7 +395,7 @@ public class CreateOrderCommandHandler
 
         // Add/Update the Buyer AggregateRoot
         // DDD patterns comment: Add child entities and value-objects through the Order Aggregate-Root
-        // methods and constructor so validations, invariants and business logic 
+        // methods and constructor so validations, invariants and business logic
         // make sure that consistency is preserved across the whole aggregate
         var address = new Address(message.Street, message.City, message.State, message.Country, message.ZipCode);
         var order = new Order(message.UserId, message.UserName, address, message.CardTypeId, message.CardNumber, message.CardSecurityNumber, message.CardHolderName, message.CardExpiration);
@@ -658,7 +658,7 @@ public class IdentifiedCommandHandler<T, R> : IRequestHandler<IdentifiedCommand<
                     commandId,
                     command);
 
-                // Send the embeded business command to mediator so it runs its related CommandHandler 
+                // Send the embeded business command to mediator so it runs its related CommandHandler
                 var result = await _mediator.Send(command, cancellationToken);
 
                 _logger.LogInformation(
@@ -717,7 +717,7 @@ public class CreateOrderCommandHandler
 
         // Add/Update the Buyer AggregateRoot
         // DDD patterns comment: Add child entities and value-objects through the Order Aggregate-Root
-        // methods and constructor so validations, invariants and business logic 
+        // methods and constructor so validations, invariants and business logic
         // make sure that consistency is preserved across the whole aggregate
         var address = new Address(message.Street, message.City, message.State, message.Country, message.ZipCode);
         var order = new Order(message.UserId, message.UserName, address, message.CardTypeId, message.CardNumber, message.CardSecurityNumber, message.CardHolderName, message.CardExpiration);

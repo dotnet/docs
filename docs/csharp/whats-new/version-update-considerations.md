@@ -1,6 +1,7 @@
 ---
 title: Version and update considerations for C# developers
 description: Introducing new languages features in your library can impact the code that uses it.
+ms.topic: reference
 ms.date: 09/19/2018
 ---
 

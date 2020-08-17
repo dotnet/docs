@@ -7,7 +7,7 @@ namespace AsyncExamples
 {
     public static class AsyncStreamExample
     {
-        public static async Task Examples()
+        public static async Task ReadWordsAsync()
         {
             await foreach (string? word in ReadWordsFromStreamAsync())
             {
@@ -16,7 +16,7 @@ namespace AsyncExamples
         }
 
         // <GenerateAsyncStream>
-        private static async IAsyncEnumerable<string> ReadWordsFromStreamAsync()
+        static async IAsyncEnumerable<string> ReadWordsFromStreamAsync()
         {
             string data =
                 @"This is a line of text.

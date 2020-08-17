@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 public class FirstExample
 {
     // <LeisureHours>
-    public static async Task Main()
+    public static async Task ShowTodaysInfoAsync()
     {
         string message =
             $"Today is {DateTime.Today:D}\n" +

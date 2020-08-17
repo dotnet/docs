@@ -17,7 +17,7 @@ public class AsyncVoidExample
 {
     static readonly TaskCompletionSource<bool> s_tcs = new TaskCompletionSource<bool>();
 
-    public static async Task Main()
+    public static async Task MultipleEventHandlersAsync()
     {
         Task<bool> secondHandlerFinished = s_tcs.Task;
 

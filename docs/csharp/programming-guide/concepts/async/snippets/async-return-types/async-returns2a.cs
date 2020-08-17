@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 public class AwaitTaskExample
 {
-    public static async Task Main()
+    public static async Task DisplayCurrentInfoAsync()
     {
         // <AwaitTask>
         Task waitAndApologizeTask = WaitAndApologizeAsync();

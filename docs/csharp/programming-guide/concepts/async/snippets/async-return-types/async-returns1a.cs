@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 public class SecondExample
 {
-    public static async Task Main()
+    public static async Task ShowTodaysInfoAsync()
     {
         // <StoreTask>
         var getLeisureHoursTask = GetLeisureHoursAsync();

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 public class ExampleTask
 {
     // <TaskReturn>
-    public static async Task Main()
+    public static async Task DisplayCurrentInfoAsync()
     {
         await WaitAndApologizeAsync();
 

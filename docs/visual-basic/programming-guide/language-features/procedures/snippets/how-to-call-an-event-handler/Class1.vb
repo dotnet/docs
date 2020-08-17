@@ -4,11 +4,12 @@
     Public Class SpecialForm : Inherits System.Windows.Forms.Form
         '<Snippet5>
         ' Place these procedures inside a Form class definition.
-        Private Sub catchClose(sender As Object, e As System.ComponentModel.CancelEventArgs)
+        Private Sub OnFormClosing(sender As Object, e As System.ComponentModel.CancelEventArgs)
             ' Insert code to deal with impending closure of this form.
         End Sub
+
         Public Sub formOpened()
-            AddHandler Me.FormClosing, AddressOf catchClose
+            AddHandler Me.FormClosing, AddressOf OnFormClosing
         End Sub
         '</Snippet5>
     End Class

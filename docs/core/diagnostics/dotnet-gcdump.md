@@ -121,7 +121,6 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
    Prior to .NET Core 3.1, there was an issue where a type cache was not cleared between gcdumps when they were invoked with EventPipe. This resulted in the events needed for determining type information not being sent for the second and subsequent gcdumps. This was fixed in .NET Core 3.1-preview2.
 
-
 - COM and static types aren't in the GC dump.
 
    Prior to .NET Core 3.1-preview2, there was an issue where static and COM types weren't sent when the GC dump was invoked via EventPipe. This has been fixed in .NET Core 3.1-preview2.

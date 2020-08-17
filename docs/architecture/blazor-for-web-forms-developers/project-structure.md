@@ -8,8 +8,6 @@ ms.date: 09/11/2019
 ---
 # Project structure for Blazor apps
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Despite their significant project structure differences, ASP.NET Web Forms and Blazor share many similar concepts. Here, we'll look at the structure of a Blazor project and compare it to an ASP.NET Web Forms project.
 
 To create your first Blazor app, follow the instructions in the [Blazor getting started steps](/aspnet/core/blazor/get-started). You can follow the instructions to create either a Blazor Server app or a Blazor WebAssembly app hosted in ASP.NET Core. Except for the hosting model-specific logic, most of the code in both projects is the same.

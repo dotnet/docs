@@ -1522,7 +1522,7 @@ namespace RainyDay
                 // After assignment, tcB and tcA refer to the same object.
                 // They now have reference equality.
                 tcB = tcA;
-                Console.WriteLine("After asignment: ReferenceEquals(tcA, tcB) = {0}",
+                Console.WriteLine("After assignment: ReferenceEquals(tcA, tcB) = {0}",
                                     Object.ReferenceEquals(tcA, tcB)); // true
 
                 // Changes made to tcA are reflected in tcB. Therefore, objects
@@ -1540,7 +1540,7 @@ namespace RainyDay
                 // Value types are copied on assignment. tsD and tsC have
                 // the same values but are not the same object.
                 TestStruct tsD = tsC;
-                Console.WriteLine("After asignment: ReferenceEquals(tsC, tsD) = {0}",
+                Console.WriteLine("After assignment: ReferenceEquals(tsC, tsD) = {0}",
                                     Object.ReferenceEquals(tsC, tsD)); // false
                 #endregion
 
@@ -1582,9 +1582,9 @@ namespace RainyDay
 
     /* Output:
         ReferenceEquals(tcA, tcB) = False
-        After asignment: ReferenceEquals(tcA, tcB) = True
+        After assignment: ReferenceEquals(tcA, tcB) = True
         tcB.Name = TestClass 42 tcB.Num: 42
-        After asignment: ReferenceEquals(tsC, tsD) = False
+        After assignment: ReferenceEquals(tsC, tsD) = False
         ReferenceEquals(strA, strB) = True
         strA = "Goodbye world!" strB = "Hello world!"
         After strA changes, ReferenceEquals(strA, strB) = False

@@ -3,7 +3,8 @@ title: "Accessing WCF Services with a Windows Store Client App"
 ms.date: "03/30/2017"
 ms.assetid: e2002ef4-5dee-4a54-9d87-03b33d35fc52
 ---
-# Accessing WCF Services with a Windows Store Client App
+# Access WCF Services with a Windows Store Client App
+
 Windows 8 introduces a new type of application called Windows Store applications. These applications are designed around a touch screen interface. .NET Framework 4.5 enables Windows Store applications to call WCF services.  
   
 ## WCF Support in Windows Store Applications  
@@ -13,7 +14,7 @@ Windows 8 introduces a new type of application called Windows Store applications
 > Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](xref:Windows.Web.Syndication)  
   
 > [!WARNING]
-> Using Add Service Reference to add a web service reference to a Windows Runtime Component isn’t supported.  
+> Using Add Service Reference to add a web service reference to a Windows Runtime Component isn't supported.  
   
 ### Supported Bindings  
  The following WCF bindings are supported in Windows Store Applications:  
@@ -133,7 +134,7 @@ The following client credential types are supported in Windows Store application
  In order for Windows Store applications to access and send default Windows credentials, you must enable this functionality within the Package.appmanifest file. Open this file and select the Capabilities tab and select "Default Windows Credentials". This allows the application to connect to intranet resources that require domain credentials.  
   
 > [!IMPORTANT]
-> In order for Windows Store applications to make cross machine calls you must enable another capability called "Home/Work Networking". This setting is also in the Package.appmanifest file under the Capabilities tab. Select the Home/Work Networking checkbox. This gives your application inbound and outbound access to the networks of the user’s trusted places like home and work. Inbound critical ports are always blocked. For accessing services on the internet you must also enable Internet (Client) capability.  
+> In order for Windows Store applications to make cross machine calls you must enable another capability called "Home/Work Networking". This setting is also in the Package.appmanifest file under the Capabilities tab. Select the Home/Work Networking checkbox. This gives your application inbound and outbound access to the networks of the user's trusted places like home and work. Inbound critical ports are always blocked. For accessing services on the internet you must also enable Internet (Client) capability.  
   
 ### Misc  
  The use of the following classes is supported for Windows Store Applications:  
@@ -170,9 +171,5 @@ void async SomeMethod()
   
 ## See also
 
-- [WCF in Windows Store Apps Blog](https://docs.microsoft.com/archive/blogs/piyushjo/wcf-in-windows-8-metro-styled-apps-absolutely-supported)
-- [WCF Windows Store Clients and Security](https://docs.microsoft.com/archive/blogs/piyushjo/calling-a-wcf-service-from-a-metro-application-adding-security)
-- [Windows Store Apps and Cross Machine Calls](https://docs.microsoft.com/archive/blogs/piyushjo/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario)
-- [Calling a WCF Service Deployed in Azure from a Windows Store App](https://docs.microsoft.com/archive/blogs/piyushjo/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario)
 - [Programming WCF Security](programming-wcf-security.md)
 - [Bindings](../bindings.md)

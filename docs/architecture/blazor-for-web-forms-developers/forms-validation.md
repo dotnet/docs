@@ -8,8 +8,6 @@ ms.date: 09/19/2019
 ---
 # Forms and validation
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 The ASP.NET Web Forms framework includes a set of validation server controls that handle validating user input entered into a form (`RequiredFieldValidator`, `CompareValidator`, `RangeValidator`, and so on). The ASP.NET Web Forms framework also supports model binding and validating the model based on data annotations (`[Required]`, `[StringLength]`, `[Range]`, and so on). The validation logic can be enforced both on the server and on the client using unobtrusive JavaScript-based validation. The `ValidationSummary` server control is used to display a summary of the validation errors to the user.
 
 Blazor supports the sharing of validation logic between both the client and the server. ASP.NET provides pre-built JavaScript implementations of many common server validations. In many cases, the developer still has to write JavaScript to fully implement their app-specific validation logic. The same model types, data annotations, and validation logic can be used on both the server and client.

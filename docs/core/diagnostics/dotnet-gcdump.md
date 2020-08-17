@@ -108,3 +108,20 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 - **`-t|--report-type <HeapStat>`**
 
   The type of report to generate. Available options: heapstat (default).
+
+## Viewing the GC dump captured from dotnet-gcdump
+
+On Windows, `.gcdump` files can be viewed in PerfView (https://github.com/microsoft/perfview) for analysis or in Visual Studio. Currently, There is no way of opening a `.gcdump` on non-Windows platforms.
+
+You can collect multiple `.gcdump`s and open them simultaneously in Visual Studio to get a comparison experience.
+
+## Known caveats
+
+- There is no type information in the gcdump.
+
+   Prior to .NET Core 3.1, there was an issue where a type cache was not cleared between gcdumps when they were invoked with EventPipe. This resulted in the events needed for determining type information not being sent for the second and subsequent gcdumps. This was fixed in .NET Core 3.1-preview2.
+
+
+- COM and static types aren't in the GC dump.
+
+   Prior to .NET Core 3.1-preview2, there was an issue where static and COM types weren't sent when the GC dump was invoked via EventPipe. This has been fixed in .NET Core 3.1-preview2.

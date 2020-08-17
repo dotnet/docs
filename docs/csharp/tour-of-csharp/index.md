@@ -61,7 +61,7 @@ The following outline provides an overview of C#'s type system.
     - User-defined types of the form `interface I {...}`
   - [Array types](../programming-guide/arrays/index.md)
     - Single- and multi-dimensional and jagged, for example, `int[]`, `int[,]`, and `int[][]`
-  - [Delegate types](../language-reference/builtin-types/reference-types.md)
+  - [Delegate types](../language-reference/builtin-types/reference-types.md#the-delegate-type)
     - User-defined types of the form `delegate int D(...)`
 
 C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#'s categories of types are user-definable: class types, struct types, interface types, enum types, and delegate types.

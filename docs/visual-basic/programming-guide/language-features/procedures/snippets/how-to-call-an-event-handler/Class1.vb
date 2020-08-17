@@ -4,7 +4,7 @@ Public Class SpecialForm : Inherits System.Windows.Forms.Form
         AddHandler Me.FormClosing, AddressOf OnFormClosing
     End Sub
 
-    Private Sub OnFormClosing(sender As Object, e As System.ComponentModel.CancelEventArgs)
+    Private Sub OnFormClosing(sender As Object, e As FormClosingEventArgs)
         ' Insert code to deal with impending closure of this form.
     End Sub
     '</Snippet5>

@@ -29,6 +29,12 @@ The `dotnet-gcdump` global tool is a way to collect GC (Garbage Collector) dumps
 - Analyzing roots of objects (answering questions like, "what still has a reference to this type?").
 - Collecting general statistics about the counts of objects on the heap.
 
+### View the GC dump captured from dotnet-gcdump
+
+On Windows, `.gcdump` files can be viewed in [PerfView](https://github.com/microsoft/perfview) for analysis or in Visual Studio. Currently, There is no way of opening a `.gcdump` on non-Windows platforms.
+
+You can collect multiple `.gcdump`s and open them simultaneously in Visual Studio to get a comparison experience.
+
 ## Options
 
 - **`--version`**
@@ -108,12 +114,6 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 - **`-t|--report-type <HeapStat>`**
 
   The type of report to generate. Available options: heapstat (default).
-
-## Viewing the GC dump captured from dotnet-gcdump
-
-On Windows, `.gcdump` files can be viewed in [PerfView](https://github.com/microsoft/perfview) for analysis or in Visual Studio. Currently, There is no way of opening a `.gcdump` on non-Windows platforms.
-
-You can collect multiple `.gcdump`s and open them simultaneously in Visual Studio to get a comparison experience.
 
 ## Troubleshoot
 

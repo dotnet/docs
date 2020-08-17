@@ -325,31 +325,21 @@
         href: programming-guide/concepts/async/index.md
       - name: Task asynchronous programming model
         href: programming-guide/concepts/async/task-asynchronous-programming-model.md
-      - name: "Walkthrough: Accessing the Web by Using async and await"
-        href: programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md
-      - name: "How to extend the async walkthrough by using Task.WhenAll"
-        href: programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md
-      - name: "How to make multiple web requests in parallel by using async and await"
-        href: programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md
-      - name: Async Return Types
+      - name: Async return types
         href: programming-guide/concepts/async/async-return-types.md
-      - name: Control Flow in Async Programs
-        href: programming-guide/concepts/async/control-flow-in-async-programs.md
-      - name: Cancel tasks and processing completed tasks
+      - name: Cancel tasks and process completed tasks
         items:
         - name: Overview
           href: programming-guide/concepts/async/fine-tuning-your-async-application.md
-        - name: Cancel an Async Task or a List of Tasks
+        - name: Cancel a task or a list of tasks
           href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
-        - name: Cancel Async Tasks after a Period of Time
+        - name: Cancel tasks after a period of time
           href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md
-        - name: Cancel Remaining Async Tasks after One Is Complete
+        - name: Cancel remaining tasks after one is complete
           href: programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md
-        - name: Start Multiple Async Tasks and Process Them As They Complete
+        - name: Start multiple tasks and process them as they complete
           href: programming-guide/concepts/async/start-multiple-async-tasks-and-process-them-as-they-complete.md
-      - name: Handling Reentrancy in Async Apps
-        href: programming-guide/concepts/async/handling-reentrancy-in-async-apps.md
-      - name: Using Async for File Access
+      - name: Async file access
         href: programming-guide/concepts/async/using-async-for-file-access.md
     - name: Attributes
       items:

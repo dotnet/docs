@@ -4,6 +4,8 @@ ms.date: 07/20/2015
 f1_keywords: 
   - "vb.isnot"
 helpviewer_keywords: 
+  - "comparison operators [Visual Basic]"
+  - "TypeOf...IsNot expression"
   - "IsNot operator [Visual Basic]"
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
 ---

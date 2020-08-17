@@ -18,9 +18,9 @@
     '****************************************************************************
     '<Snippet4>
     Public Class RaisesEvent
-        Public Event somethingHappened()
+        Public Event SomethingHappened()
         Dim WithEvents happenObj As New RaisesEvent
-        Public Sub ProcessHappen() Handles happenObj.somethingHappened
+        Public Sub ProcessHappen() Handles happenObj.SomethingHappened
             ' Insert code to handle somethingHappened event.
         End Sub
     End Class

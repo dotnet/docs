@@ -153,7 +153,7 @@ For more information, see the following resources:
 
 - **`-p:PublishTrimmed=true`**
 
-  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK.
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK as a preview feature.
 
   We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
 
@@ -228,7 +228,7 @@ For more information, see the following resources:
 - [.NET Core application publishing overview](../deploying/index.md)
 - [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md)
 - [Target frameworks](../../standard/frameworks.md)
-- [Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)

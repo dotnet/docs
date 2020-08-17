@@ -89,7 +89,7 @@ The following table shows the standard operators and their corresponding generat
 |`..`|`op_Range`|
 |`.. ..`|`op_RangeStep`|
 
-Note that the `not` operator in F# does not emit `op_Inequality` because it is not a symbolic operator.
+Note that the `not` operator in F# does not emit `op_Inequality` because it is not a symbolic operator. It is a function that emits IL that negates a boolean expression.
 
 Other combinations of operator characters that are not listed here can be used as operators and have names that are made up by concatenating names for the individual characters from the following table. For example, +! becomes `op_PlusBang`.
 

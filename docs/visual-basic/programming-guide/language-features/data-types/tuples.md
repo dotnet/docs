@@ -78,14 +78,14 @@ If custom members, property and field validation, or immutability are important,
 
 A Visual Basic tuple does inherit the members of its **ValueTuple** type. In addition to its fields, these include the following methods:
 
-| Member | Description |
+| Method | Description |
 | ---|---|
 | CompareTo | Compares the current tuple to another tuple with the same number of elements. |
 | Equals | Determines whether the current tuple is equal to another tuple or object. |
 | GetHashCode | Calculates the hash code for the current instance. |
 | ToString | Returns the string representation of this tuple, which takes the form `(Item1, Item2...)`, where `Item1` and `Item2` represent the values of the tuple's fields. |
 
-In addition, the **ValueTuple** types implement <xref:System.Collections.IStructuralComparable> and <xref:System.Collections.IStructuralEquatable> interfaces, which allow you to define customer comparers.
+In addition, the **ValueTuple** types implement <xref:System.Collections.IStructuralComparable> and <xref:System.Collections.IStructuralEquatable> interfaces, which allow you to define custom comparers.
 
 ## Assignment and tuples
 

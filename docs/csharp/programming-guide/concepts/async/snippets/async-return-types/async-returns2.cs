@@ -3,27 +3,27 @@ using System.Threading.Tasks;
 
 public class ExampleTask
 {
-    // <SnippetTaskReturn>
-    public static async Task DisplayCurrentInfo()
+    // <TaskReturn>
+    public static async Task Main()
     {
-        await WaitAndApologize();
+        await WaitAndApologizeAsync();
+
         Console.WriteLine($"Today is {DateTime.Now:D}");
         Console.WriteLine($"The current time is {DateTime.Now.TimeOfDay:t}");
         Console.WriteLine("The current temperature is 76 degrees.");
     }
 
-    static async Task WaitAndApologize()
+    static async Task WaitAndApologizeAsync()
     {
-        // Task.Delay is a placeholder for actual work.
         await Task.Delay(2000);
-        // Task.Delay delays the following line by two seconds.
-        Console.WriteLine("\nSorry for the delay. . . .\n");
+
+        Console.WriteLine("Sorry for the delay...\n");
     }
     // The example displays the following output:
-    //    Sorry for the delay. . . .
+    //    Sorry for the delay...
     //
-    //    Today is Wednesday, May 24, 2017
-    //    The current time is 15:25:16.2935649
-    //    The current temperature is 76 degrees.
-    // </SnippetTaskReturn>
+    // Today is Monday, August 17, 2020
+    // The current time is 12:59:24.2183304
+    // The current temperature is 76 degrees.
+    // </TaskReturn>
 }

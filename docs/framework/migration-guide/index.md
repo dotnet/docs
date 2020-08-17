@@ -1,6 +1,5 @@
 ---
-title: "Migration Guide to the .NET Framework 4.8, 4.7, 4.6, and 4.5 "
-ms.custom: "updateeachrelease"
+title: "Migration Guide to the .NET Framework 4.8, 4.7, 4.6, and 4.5"
 ms.date: "04/18/2019"
 helpviewer_keywords: 
   - ".NET Framework, migrating applications to"

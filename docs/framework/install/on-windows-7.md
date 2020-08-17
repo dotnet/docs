@@ -1,6 +1,5 @@
 ---
 title: Install the .NET Framework on Windows 7 SP1
-ms.custom: "updateeachrelease"
 description: Learn how to install the .NET Framework on Windows 7 SP1.
 ms.date: 04/18/2019
 ---

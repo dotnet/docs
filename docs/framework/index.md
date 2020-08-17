@@ -1,7 +1,6 @@
 ---
 title: ".NET Framework documentation"
 ms.date: "04/02/2019"
-ms.custom: "updateeachrelease"
 f1_keywords: 
   - "f61f02f2-2f20-483d-8f56-a9c8f3a54986"
 helpviewer_keywords: 

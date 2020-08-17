@@ -1,6 +1,5 @@
 ---
 title: ".NET Framework deployment guide for developers"
-ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
 helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"

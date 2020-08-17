@@ -1,6 +1,5 @@
 ---
 title: "Install the .NET Framework developer pack or redistributable"
-ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
 helpviewer_keywords:
   - ".NET Framework redistributable package, downloading"

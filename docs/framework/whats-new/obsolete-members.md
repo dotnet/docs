@@ -1,6 +1,5 @@
 ---
 title: "Obsolete members - .NET Framework"
-ms.custom: "updateeachrelease"
 ms.date: "10/17/2017"
 helpviewer_keywords:
   - ".NET Framework, obsolete members"

@@ -1,6 +1,5 @@
 ---
 title: What's obsolete in .NET Framework
-ms.custom: "updateeachrelease"
 ms.date: "04/02/2019"
 helpviewer_keywords: 
   - "obsolete [.NET Framework]"

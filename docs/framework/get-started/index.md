@@ -1,6 +1,5 @@
 ---
 title: "Get started with the .NET Framework"
-ms.custom: "updateeachrelease"
 ms.date: "04/02/2019"
 helpviewer_keywords: 
   - ".NET Framework, getting started"

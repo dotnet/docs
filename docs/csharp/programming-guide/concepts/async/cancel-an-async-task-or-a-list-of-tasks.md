@@ -11,7 +11,7 @@ You can cancel an async console application if you don't want to wait for it to 
 
 ### Create example application
 
-FCreate a new .NET Core console application. You can do this by using the [dotnet new console](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the Program.cs file in your favorite .NET code editor.
+Create a new .NET Core console application. You can do this by using the [dotnet new console](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the Program.cs file in your favorite .NET code editor.
 
 ### Replace using statements
 
@@ -146,8 +146,6 @@ static async Task<int> ProcessUrlAsync(string url, HttpClient client, Cancellati
 
 For any given URL, the method will use the `client` instance provided to get the response as a `byte[]`. The <xref:System.Threading.CancellationToken> instance is passed into the <xref:System.Net.Http.HttpClient.GetAsync(System.String,System.Threading.CancellationToken)?displayProperty=nameWithType> and <xref:System.Net.Http.HttpContent.ReadAsByteArrayAsync(System.Threading.CancellationToken)?displayProperty=nameWithType> methods. The `token` is used to register for requested cancellation. The length is returned after the URL and length is written to the console.
 
-Run the program several times to verify that the downloaded lengths don't always appear in the same order.
-
 ## Complete example
 
 The following code is the complete text of the *Program.cs* file for the example.
@@ -159,3 +157,8 @@ The following code is the complete text of the *Program.cs* file for the example
 - <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>
 - [Asynchronous programming with async and await (C#)](index.md)
+
+## Next steps
+
+> [!div class="nextstepaction"]
+> [Cancel async tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)

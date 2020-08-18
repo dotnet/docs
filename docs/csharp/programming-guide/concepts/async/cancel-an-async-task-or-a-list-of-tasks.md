@@ -173,8 +173,8 @@ The following code is the complete text of the *Program.cs* file for the example
 
 ## See also
 
-- <xref:System.Threading.CancellationTokenSource>
 - <xref:System.Threading.CancellationToken>
+- <xref:System.Threading.CancellationTokenSource>
 - [Asynchronous programming with async and await (C#)](index.md)
 
 ## Next steps

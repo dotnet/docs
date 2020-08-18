@@ -318,7 +318,8 @@
     - name: Overview
       displayName: programming concepts
       href: programming-guide/concepts/index.md
-    - name: Asynchronous programming with async and await
+    - name: Asynchronous programming
+      displayName: async, await, asynchronous programming, task, cancellation
       items:
       - name: Overview
         displayName: asynchronous programming
@@ -327,9 +328,9 @@
         href: programming-guide/concepts/async/task-asynchronous-programming-model.md
       - name: Async return types
         href: programming-guide/concepts/async/async-return-types.md
-      - name: Cancel tasks and process completed tasks
+      - name: Cancel tasks
         items:
-        - name: Cancel a task or a list of tasks
+        - name: Cancel a list of tasks
           href: programming-guide/concepts/async/cancel-an-async-task-or-a-list-of-tasks.md
         - name: Cancel tasks after a period of time
           href: programming-guide/concepts/async/cancel-async-tasks-after-a-period-of-time.md

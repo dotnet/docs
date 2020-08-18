@@ -33,7 +33,12 @@ In the following example, the `WaitAndApologizeAsync` method doesn't contain a `
 
 :::code language="csharp" source="snippets/async-return-types/async-returns2.cs" id="TaskReturn":::
 
-`WaitAndApologizeAsync` is awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value.
+`WaitAndApologizeAsync` is awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value. To clarify the terms statement and expression, refer to the table below:
+
+| Await kind | Example                                      | Type                                   |
+|------------|----------------------------------------------|----------------------------------------|
+| Statement  | `await SomeTaskMethodAsync()`                | <xref:System.Threading.Tasks.Task>     |
+| Expression | `T result = await SomeTaskMethodAsync<T>();` | <xref:System.Threading.Tasks.Task%601> |
 
 You can separate the call to `WaitAndApologizeAsync` from the application of an await operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.
 
@@ -43,7 +48,7 @@ The following code separates calling the `WaitAndApologizeAsync` method from awa
 
 ## Task\<TResult\> return type
 
-The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/keywords/return.md) (C#) statement in which the operand is `TResult`.
+The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a [return](../../../language-reference/keywords/return.md) statement in which the operand is `TResult`.
 
 In the following example, the `GetLeisureHoursAsync` method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`. The <xref:System.Threading.Tasks.Task.FromResult%2A> async method is a placeholder for an operation that returns a <xref:System.DateTime.DayOfWeek>.
 
@@ -54,7 +59,9 @@ When `GetLeisureHoursAsync` is called from within an await expression in the `Sh
 You can better understand how `await` retrieves the result from a `Task<T>` by separating the call to `GetLeisureHoursAsync` from the application of `await`, as the following code shows. A call to method `GetLeisureHoursAsync` that isn't immediately awaited returns a `Task<int>`, as you would expect from the declaration of the method. The task is assigned to the `getLeisureHoursTask` variable in the example. Because `getLeisureHoursTask` is a <xref:System.Threading.Tasks.Task%601>, it contains a <xref:System.Threading.Tasks.Task%601.Result> property of type `TResult`. In this case, `TResult` represents an integer type. When `await` is applied to `getLeisureHoursTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task%601.Result%2A> property of `getLeisureHoursTask`. The value is assigned to the `ret` variable.
 
 > [!IMPORTANT]
-> The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly. <br/> The previous example retrieved the value of the <xref:System.Threading.Tasks.Task%601.Result%2A> property to block the main thread so that the `Main` method could print the `message` to the console before the application ended.
+> The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly.
+>
+> The previous example retrieved the value of the <xref:System.Threading.Tasks.Task%601.Result%2A> property to block the main thread so that the `Main` method could print the `message` to the console before the application ended.
 
 :::code language="csharp" source="snippets/async-return-types/async-returns1a.cs" id="StoreTask":::
 

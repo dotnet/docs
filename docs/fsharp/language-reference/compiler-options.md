@@ -1,7 +1,7 @@
 ---
 title: Compiler Options
 description: Use F# compiler command-line options to control the compilation of your F# apps and libraries.
-ms.date: 12/10/2018
+ms.date: 08/15/2020
 ---
 # Compiler options
 
@@ -59,7 +59,7 @@ The following table shows compiler options listed alphabetically. Some of the F#
 |`--times`|Displays timing information for compilation.|
 |`--utf8output`|Enables printing compiler output in the UTF-8 encoding.|
 |`--warn:warning-level`|Sets a warning level (0 to 5). The default level is 3. Each warning is given a level based on its severity. Level 5 gives more, but less severe, warnings than level 1.<br /><br />Level 5 warnings are: 21 (recursive use checked at runtime), 22 (`let rec` evaluated out of order), 45 (full abstraction), and 52 (defensive copy). All other warnings are level 2.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warn &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/warn-compiler-option.md).|
-|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option. In F# 3.0, only the 1182 (unused variables) warning is off by default.|
+|`--warnon:warning-number-list`|Enable specific warnings that might be off by default or disabled by another command-line option. The 1182 (unused variables) warning is off by default.|
 |<code>--warnaserror[+&#124;-] [warning-number-list]</code>|Enables or disables the option to report warnings as errors. You can provide specific warning numbers to be disabled or enabled. Options later in the command line override options earlier in the command line. For example, to specify the warnings that you don't want reported as errors, specify `--warnaserror+` `--warnaserror-:warning-number-list`.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;warnaserror &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/warnaserror-compiler-option.md).|
 |`--win32manifest:manifest-filename`|Adds a Win32 manifest file to the compilation. This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32manifest &#40;C&#35; Compiler Options&#41;](../../csharp/language-reference/compiler-options/win32manifest-compiler-option.md).|
 |`--win32res:resource-filename`|Adds a Win32 resource file to the compilation.<br /><br />This compiler option is equivalent to the C# compiler option of the same name. For more information, see [&#47;win32res (&#40;C&#35;) Compiler Options&#41;](../../csharp/language-reference/compiler-options/win32res-compiler-option.md).|

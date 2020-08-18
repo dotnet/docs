@@ -24,10 +24,10 @@ landingContent:
           url: https://dotnet.microsoft.com/download
       - linkListType: get-started
         links:
-          - text: Build a "Hello World" app
-            url: ../core/tutorials/vb-with-visual-studio.md
-          - text: Build a class library
-            url: ../core/tutorials/vb-library-with-visual-studio.md
+          - text: Create a .NET Core console application using Visual Studio
+            url: ../core/tutorials/with-visual-studio.md
+          - text: Create a .NET Standard library using Visual Studio
+            url: ../core/tutorials/library-with-visual-studio.md
           - text: Walkthroughs
             url: walkthroughs.md
           - text: Additional resources

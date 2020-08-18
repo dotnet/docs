@@ -306,4 +306,4 @@ You can only deploy a self-contained deployment with a third-party library to pl
 ## See also
 
 - [.NET Core Application Deployment](index.md)
-- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [.NET Core Runtime Identifier (RID) catalog](../rid-catalog.md)

@@ -1,13 +1,11 @@
 ---
 title: Query Expressions
 description: Learn about query expression support for LINQ in the F# programming language.
-ms.date: 05/16/2016
+ms.date: 08/15/2020
 ---
 # Query expressions
 
 Query expressions enable you to query a data source and put the data in a desired form. Query expressions provide support for LINQ in F#.
-> [!NOTE]
-> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 ## Syntax
 
@@ -39,9 +37,9 @@ query1
 |> Seq.iter (fun customer -> printfn "Company: %s Contact: %s" customer.CompanyName customer.ContactName)
 ```
 
-In the previous code example, the query expression is in curly braces. The meaning of the code in the expression is, return every customer in the Customers table in the database in the query results. Query expressions return a type that implements <xref:System.Linq.IQueryable%601> and <xref:System.Collections.Generic.IEnumerable%601>, and so they can be iterated using the [Seq module](https://msdn.microsoft.com/library/54e8f059-ca52-4632-9ae9-49685ee9b684) as the example shows.
+In the previous code example, the query expression is in curly braces. The meaning of the code in the expression is, return every customer in the Customers table in the database in the query results. Query expressions return a type that implements <xref:System.Linq.IQueryable%601> and <xref:System.Collections.Generic.IEnumerable%601>, and so they can be iterated using the [Seq module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html) as the example shows.
 
-Every computation expression type is built from a builder class. The builder class for the query computation expression is `QueryBuilder`. For more information, see [Computation Expressions](computation-expressions.md) and [Linq.QueryBuilder Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d).
+Every computation expression type is built from a builder class. The builder class for the query computation expression is `QueryBuilder`. For more information, see [Computation Expressions](computation-expressions.md) and [QueryBuilder Class](hhttps://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html).
 
 ## Query Operators
 
@@ -49,7 +47,7 @@ Query operators enable you to specify the details of the query, such as to put c
 
 Only expressions that can be translated to SQL are allowed in query expressions. For example, no function calls are allowed in the expressions when you use the `where` query operator.
 
-Table 1 shows available query operators. In addition, see Table2, which compares SQL queries and the equivalent F# query expressions later in this topic. Some query operators aren't supported by some type providers. In particular, the OData type provider is limited in the query operators that it supports due to limitations in OData. For more information, see [ODataService Type Provider (F#)](https://msdn.microsoft.com/library/bac609dd-9d12-4bf9-a662-24bdf4faa43e).
+Table 1 shows available query operators. In addition, see Table2, which compares SQL queries and the equivalent F# query expressions later in this topic. Some query operators aren't supported by some type providers. In particular, the OData type provider is limited in the query operators that it supports due to limitations in OData.
 
 This table assumes a database in the following form:
 
@@ -2433,5 +2431,5 @@ end
 ## See also
 
 - [F# Language Reference](index.md)
-- [Linq.QueryBuilder Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/linq.querybuilder-class-%5bfsharp%5d)
+- [QueryBuilder Class](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-linq-querybuilder.html)
 - [Computation Expressions](Computation-Expressions.md)

@@ -94,37 +94,51 @@ let myFun (a: decimal) b c = a + b + c
 let myFunBad (a:decimal)(b)c = a + b + c
 ```
 
-### Place parameters on a new line for long member definitions
+### Place parameters on a new line for long definitions
 
-If you have a very long member definition, place the parameters on new lines and indent them to match the indentation level of the subsequent parameter.
+If you have a very long function definition, place the parameters on new lines and indent them to match the indentation level of the subsequent parameter.
 
 ```fsharp
-type C() =
-    member _.LongMethodWithLotsOfParameters(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
-                                            aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse,
-                                            aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse) =
+module M =
+    let LongFunctionWithLotsOfParameters(aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+                                        (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+                                        (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+                                        =
         // ... the body of the method follows
 ```
 
-This also applies to constructors:
+This also applies to members, constructors, and parameters using tuples:
 
 ```fsharp
-type C(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
-       aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse,
-       aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse) =
+type TM() =
+    member _.LongMethodWithLotsOfParameters(aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+                                            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+                                            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse) =
+        // ... the body of the method
+
+type TC(aVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
+        aSecondVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse,
+        aThirdVeryLongCtorParam: AVeryLongTypeThatYouNeedToUse) =
     // ... the body of the class follows
 ```
 
-If there is an explicit return type annotation, it can either be at the end of the `)` and before the `=`, or on a new line. If the return type also has a long name, the latter might be preferable:
+If the parameters are currified or there's an explicit return type annotation, it is preferable to place the `=` character on a new line:
 
 ```fsharp
 type C() =
-    member _.LongMethodWithLotsOfParameters(aVeryLongType: AVeryLongTypeThatYouNeedToUse,
-                                            aSecondVeryLongType: AVeryLongTypeThatYouNeedToUse,
-                                            aThirdVeryLongType: AVeryLongTypeThatYouNeedToUse)
-                                            : AVeryLongReturnType =
-        // ... the body of the method follows
+    member _.LongMethodWithLotsOfParameters(aVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+                                            aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse,
+                                            aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+                                            : AReturnType =
+        // ... the body of the method
+    member _.LongMethodWithLotsOfCurrifiedParams(aVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+                                                (aSecondVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+                                                (aThirdVeryLongParam: AVeryLongTypeThatYouNeedToUse)
+                                                =
+        // ... the body of the method
 ```
+
+This is a way to avoid too long lines (in case return type might have long name) and have less line-damage when adding parameters.
 
 ### Type annotations
 

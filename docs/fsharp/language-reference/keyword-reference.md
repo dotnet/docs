@@ -74,9 +74,10 @@ f1_keywords:
 - global_FS
 - select_FS
 - use!_FS
+- const_FS
 dev_langs:
 - FSharp
-ms.date: 11/04/2019
+ms.date: 08/15/2020
 ---
 # Keyword Reference
 
@@ -158,6 +159,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`with`|[Match Expressions](match-expressions.md)<br /><br />[Object Expressions](object-expressions.md)<br /><br />[Copy and Update Record Expressions](copy-and-update-record-expressions.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Exceptions: The `try...with` Expression](./exception-handling/the-try-with-expression.md)|Used together with the `match` keyword in pattern matching expressions. Also used in object expressions, record copying expressions, and type extensions to introduce member definitions, and to introduce exception handlers.|
 |`yield`|[Lists](lists.md), [Arrays](arrays.md), [Sequences](sequences.md)|Used in a list, array, or sequence expression to produce a value for a sequence. Typically can be omitted, as it is implicit in most situations.|
 |`yield!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used in a computation expression to append the result of a given computation expression to a collection of results for the containing computation expression.|
+|`const`|[Type Providers](../tutorials/type-providers/index.md)| Type Providers allow the use of `const` as a keyword to specify a constant literal as a type parameter argument.|
 
 The following tokens are reserved in F# because they are keywords in the OCaml language:
 

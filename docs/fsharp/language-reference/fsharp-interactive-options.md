@@ -1,7 +1,7 @@
 ---
 title: Interactive options
 description: Learn about the command-line options supported by F# Interactive, fsi.exe.
-ms.date: 07/22/2020
+ms.date: 08/15/2020
 ---
 # F# Interactive options
 
@@ -38,7 +38,7 @@ Where lists appear in F# Interactive option arguments, list elements are separat
 |**--gui**[**+**&#124;**-**]|Enables or disables the Windows Forms event loop. The default is enabled.|
 |**--help**<br /><br />**-?**|Used to display the command-line syntax and a brief description of each option.|
 |**--lib:&lt;folder-list&gt;**<br /><br />**-I:&lt;folder-list&gt;**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
-|**--load:&lt;filename&gt;**|Compiles the given source code at startup and loads the compiled F# constructs into the session. If the target source contains scripting directives such as **#use** or **#load**, then you must use **--use** or **#use** instead of **--load** or **#load**.|
+|**--load:&lt;filename&gt;**|Compiles the given source code at startup and loads the compiled F# constructs into the session.|
 |**--mlcompatibility**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|
 |**--noframework**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md)|
 |**--nologo**|Same as the **fsc.exe** compiler option. For more information, see [Compiler Options](compiler-options.md).|

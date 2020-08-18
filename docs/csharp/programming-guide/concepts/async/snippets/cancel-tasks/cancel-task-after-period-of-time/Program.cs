@@ -40,7 +40,6 @@ class Program
     static async Task Main()
     {
         Console.WriteLine("Application started.");
-        Console.WriteLine("Press the ENTER key to cancel...\n");
 
         try
         {

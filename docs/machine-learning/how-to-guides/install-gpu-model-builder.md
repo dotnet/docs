@@ -4,7 +4,7 @@ description: Learn how to install GPU support in Model Builder
 ms.date: 08/18/2020
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to learn how to install GPU support for Model Builder
 ---
 
@@ -15,8 +15,8 @@ Learn how to install the GPU drivers to use your GPU with Model Builder.
 ## Prerequisites
 
 - Model Builder Visual Studio extension. The extension is built into Visual Studio as of version 16.6.1.
-- [Model Builder Visual Studio GPU support extension](https://marketplace.visualstudio.com/items?itemName=MLNET.ModelBuilderGPU)
-- At least one CUDA compatible GPU. For a list of compatible GPUs see [NVIDIA's guide](https://developer.nvidia.com/cuda-gpus).
+- [Model Builder Visual Studio GPU support extension](https://marketplace.visualstudio.com/items?itemName=MLNET.ModelBuilderGPU).
+- At least one CUDA compatible GPU. For a list of compatible GPUs, see [NVIDIA's guide](https://developer.nvidia.com/cuda-gpus).
 - NVIDIA developer account. If you don't have one, [create a free account](https://developer.nvidia.com/developer-program).
 
 ## Install dependencies

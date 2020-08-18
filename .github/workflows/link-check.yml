@@ -1,2 +1,10 @@
-- name: Link Checker
-  uses: peter-evans/link-checker@v1
+name: Markdown link checker
+
+on: push
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: peter-evans/link-checker@v1

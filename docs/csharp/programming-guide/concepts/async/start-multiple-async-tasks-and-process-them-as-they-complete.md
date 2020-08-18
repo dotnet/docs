@@ -9,7 +9,7 @@ ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
 
 By using <xref:System.Threading.Tasks.Task.WhenAny%2A?displayProperty=nameWithType>, you can start multiple tasks at the same time and process them one by one as they're completed rather than process them in the order in which they're started.
 
-The following example uses a query to create a collection of tasks. Each task downloads the contents of a specified website. In each iteration of a while loop, an awaited call to <xref:System.Threading.Tasks.Task.WhenAny> returns the task in the collection of tasks that finishes its download first. That task is removed from the collection and processed. The loop repeats until the collection contains no more tasks.
+The following example uses a query to create a collection of tasks. Each task downloads the contents of a specified website. In each iteration of a while loop, an awaited call to <xref:System.Threading.Tasks.Task.WhenAny%2A> returns the task in the collection of tasks that finishes its download first. That task is removed from the collection and processed. The loop repeats until the collection contains no more tasks.
 
 ## Create example application
 
@@ -41,30 +41,30 @@ static readonly HttpClient s_client = new HttpClient
 static readonly IEnumerable<string> s_urlList = new string[]
 {
     "https://docs.microsoft.com",
-    "https://docs.microsoft.com/azure",
-    "https://docs.microsoft.com/powershell",
-    "https://docs.microsoft.com/dotnet",
     "https://docs.microsoft.com/aspnet/core",
-    "https://docs.microsoft.com/windows",
-    "https://docs.microsoft.com/office",
-    "https://docs.microsoft.com/enterprise-mobility-security",
-    "https://docs.microsoft.com/visualstudio",
-    "https://docs.microsoft.com/microsoft-365",
-    "https://docs.microsoft.com/sql",
-    "https://docs.microsoft.com/dynamics365",
-    "https://docs.microsoft.com/surface",
-    "https://docs.microsoft.com/xamarin",
+    "https://docs.microsoft.com/azure",
     "https://docs.microsoft.com/azure/devops",
-    "https://docs.microsoft.com/system-center",
-    "https://docs.microsoft.com/graph",
+    "https://docs.microsoft.com/dotnet",
+    "https://docs.microsoft.com/dynamics365",
     "https://docs.microsoft.com/education",
-    "https://docs.microsoft.com/gaming"
+    "https://docs.microsoft.com/enterprise-mobility-security",
+    "https://docs.microsoft.com/gaming",
+    "https://docs.microsoft.com/graph",
+    "https://docs.microsoft.com/microsoft-365",
+    "https://docs.microsoft.com/office",
+    "https://docs.microsoft.com/powershell",
+    "https://docs.microsoft.com/sql",
+    "https://docs.microsoft.com/surface",
+    "https://docs.microsoft.com/system-center",
+    "https://docs.microsoft.com/visualstudio",
+    "https://docs.microsoft.com/windows",
+    "https://docs.microsoft.com/xamarin",
 };
 ```
 
-The `HttpClient` exposes the ability to send HTTP requests and receive HTTP responses. The `s_urlList` holds all of the URLs that the application is going to process.
+The `HttpClient` exposes the ability to send HTTP requests and receive HTTP responses. The `s_urlList` holds all of the URLs that the application plans to process.
 
-## Update Main method
+## Update application entry point
 
 The main entry point into the console application is the `Main` method. Replace the existing method with the following:
 
@@ -120,23 +120,23 @@ List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
 
 The `while` loop performs the following steps for each task in the collection:
 
-   1. Awaits a call to `WhenAny` to identify the first task in the collection that has finished its download.
+1. Awaits a call to `WhenAny` to identify the first task in the collection that has finished its download.
 
-   ```csharp
-   Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
-   ```
+    ```csharp
+    Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
+    ```
 
-   1. Removes that task from the collection.
+1. Removes that task from the collection.
 
-   ```csharp
-   downloadTasks.Remove(firstFinishedTask);
-   ```
+    ```csharp
+    downloadTasks.Remove(firstFinishedTask);
+    ```
 
-   1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property which would throw the `AggregateException`.
+1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property which would throw the `AggregateException`.
 
-   ```csharp
-   total += await finishedTask;
-   ```
+    ```csharp
+    total += await finishedTask;
+    ```
 
 ## Add process method
 
@@ -163,11 +163,9 @@ Run the program several times to verify that the downloaded lengths don't always
 
 The following code is the complete text of the *Program.cs* file for the example.
 
-:::code language="csharp" source="multiple-tasks/Program.cs":::
+:::code language="csharp" source="snippets/multiple-tasks/Program.cs":::
 
 ## See also
 
 - <xref:System.Threading.Tasks.Task.WhenAny%2A>
-- [Fine-Tuning Your Async Application (C#)](fine-tuning-your-async-application.md)
-- [Asynchronous Programming with async and await (C#)](index.md)
-- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)
+- [Asynchronous programming with async and await (C#)](index.md)

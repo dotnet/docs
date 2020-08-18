@@ -126,7 +126,7 @@ Because your app includes the .NET Core runtime and all of your app dependencies
   > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
   > [!TIP]
-  > There is a [preview Trim feature](trim-self-contained.md) that is available that can further reduce the size of your deployment but you are responsible for full end to end scenario testing for your app.
+  > There is a [preview Trim feature](trim-self-contained.md) that can further reduce the size of your deployment.
 
 - **Harder to update the .NET Core version**\
 .NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. However, .NET Core will update critical security patches as needed for the framework library in the client machine of your app but you are responsible for end to end validation for this scenario.

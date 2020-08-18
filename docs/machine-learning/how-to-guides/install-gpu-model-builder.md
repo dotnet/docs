@@ -4,7 +4,7 @@ description: Learn how to install and use GPUs in Model Builder
 ms.date: 08/18/2020
 author: luisquintanilla
 ms.author: luquinta
-ms.custom: how-to
+ms.topic: how-to
 #Customer intent: As a developer, I want to learn how to install GPU support for Model Builder
 ---
 

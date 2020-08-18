@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - name: Link Checker
         id: lc
-        uses: peter-evans/link-checker@v1
+        uses: peter-evans/link-checker@v1.2.2

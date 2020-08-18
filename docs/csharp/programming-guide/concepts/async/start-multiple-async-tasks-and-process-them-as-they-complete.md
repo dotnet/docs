@@ -112,34 +112,47 @@ The method starts by instantiating a <xref:System.Diagnostics.Stopwatch>. It the
     select ProcessUrlAsync(url, s_client);
 ```
 
-In the *MainWindow.xaml.cs* file of the project, make the following changes to the `AccessTheWebAsync` method:
+Due to [deferred execution](../linq/deferred-execution-example.md) with the LINQ, you call <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> to start each task.
 
-- Execute the query by applying <xref:System.Linq.Enumerable.ToList%2A?displayProperty=nameWithType> instead of <xref:System.Linq.Enumerable.ToArray%2A>.
+```csharp
+List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
+```
 
-    ```csharp
-    List<Task<int>> downloadTasks = downloadTasksQuery.ToList();
-    ```
+The `while` loop performs the following steps for each task in the collection:
 
-- Add a `while` loop that performs the following steps for each task in the collection:
+   1. Awaits a call to `WhenAny` to identify the first task in the collection that has finished its download.
 
-    1. Awaits a call to `WhenAny` to identify the first task in the collection to finish its download.
+   ```csharp
+   Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
+   ```
 
-        ```csharp
-        Task<int> firstFinishedTask = await Task.WhenAny(downloadTasks);
-        ```
+   1. Removes that task from the collection.
 
-    2. Removes that task from the collection.
+   ```csharp
+   downloadTasks.Remove(firstFinishedTask);
+   ```
 
-        ```csharp
-        downloadTasks.Remove(firstFinishedTask);
-        ```
+   1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property which would throw the `AggregateException`.
 
-    3. Awaits `firstFinishedTask`, which is returned by a call to `ProcessURLAsync`. The `firstFinishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TReturn` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the `Result` property which would throw the `AggregateException`.
+   ```csharp
+   total += await finishedTask;
+   ```
 
-        ```csharp
-        int length = await firstFinishedTask;
-        resultsTextBox.Text += $"\r\nLength of the download:  {length}";
-        ```
+## Add process method
+
+Add the following `ProcessUrlAsync` method below the `SumPageSizesAsync` method:
+
+```csharp
+static async Task<int> ProcessUrlAsync(string url, HttpClient client)
+{
+    byte[] content = await client.GetByteArrayAsync(url);
+    Console.WriteLine($"{url,-60} {content.Length,10:#,#}");
+
+    return content.Length;
+}
+```
+
+For any given URL, the method will use the `client` instance provided to get the response as a `byte[]`. The length is returned after the URL and length is written to the console.
 
 Run the program several times to verify that the downloaded lengths don't always appear in the same order.
 

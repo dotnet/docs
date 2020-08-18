@@ -13,7 +13,6 @@ The trim-self-contained deployment model is a specialized version of the self-co
 
 The trim mode for the applications can be configured via the TrimMode and will default (`copyused`) to bundle assemblies that are used in the application. Blazor WebAssembly applications will use a more aggressive mode (`link`) that will trim unused code within assemblies. Trim analysis warnings give information on code patterns where a full dependency analysis was not possible. These warnings are suppressed by default and can be turned on by setting the flag, `SuppressTrimAnalysisWarnings`, to false. More information on the trim options available can be found at the [ILLinker page](https://github.com/mono/linker/blob/master/docs/illink-options.md).
 
-
 > [!NOTE]
 > Trimming is an experimental feature in .NET Core 3.1, 5.0 and is _only_ available to applications that are published self-contained.
 

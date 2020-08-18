@@ -129,7 +129,7 @@ Because your app includes the .NET Core runtime and all of your app dependencies
   > There is a [preview Trim feature](trim-self-contained.md) that can further reduce the size of your deployment.
 
 - **Harder to update the .NET Core version**\
-.NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. However, .NET Core will update critical security patches as needed for the framework library in the client machine of your app but you are responsible for end to end validation for this scenario.
+.NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. However, .NET Core will update critical security patches as needed for the framework library in the  machine that your app runs on. You are responsible for end to end validation for this security patch scenario.
 
 ### Examples
 

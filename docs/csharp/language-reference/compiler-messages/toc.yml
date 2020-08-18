@@ -1,4 +1,4 @@
-- name: C# Compiler Errors
+- name: C# compiler messages
   href: index.md
   items:
   - name: Compiler Error CS0001
@@ -273,3 +273,5 @@
     href: cs1591.md
   - name: Compiler Warning (level 4) CS1610
     href: cs1610.md
+  - name: Compiler warning (level 5) CS8892
+    href: cs8892.md

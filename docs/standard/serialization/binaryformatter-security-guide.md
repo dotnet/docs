@@ -81,7 +81,6 @@ __Consider an app that moves from a desktop-install model to a cloud-first model
 ## Further resources
 
 * [YSoSerial.Net](https://github.com/pwntester/ysoserial.net) for research into how adversaries attack apps that utilize `BinaryFormatter`.
-* [Threat Modeling](/securityengineering/sdl/threatmodeling) for information on threat modeling apps and services.
 * General background on deserialization vulnerabilities:
   * [OWASP Top 10 - A8:2017-Insecure Deserialization](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A8-Insecure_Deserialization)
   * [CWE-502: Deserialization of Untrusted Data](https://cwe.mitre.org/data/definitions/502.html)

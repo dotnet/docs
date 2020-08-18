@@ -1,7 +1,6 @@
 ---
-title: "Migration Guide to the .NET Framework 4.8, 4.7, 4.6, and 4.5 "
+title: "Migration Guide to the .NET Framework 4.8, 4.7, 4.6, and 4.5"
 description: A guide for migrating to newer .NET Framework versions that includes resources for new features and application compatibility.
-ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
 helpviewer_keywords: 
   - ".NET Framework, migrating applications to"

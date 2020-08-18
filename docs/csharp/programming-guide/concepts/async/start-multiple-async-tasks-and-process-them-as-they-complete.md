@@ -58,7 +58,7 @@ static readonly IEnumerable<string> s_urlList = new string[]
     "https://docs.microsoft.com/system-center",
     "https://docs.microsoft.com/visualstudio",
     "https://docs.microsoft.com/windows",
-    "https://docs.microsoft.com/xamarin",
+    "https://docs.microsoft.com/xamarin"
 };
 ```
 
@@ -69,7 +69,7 @@ The `HttpClient` exposes the ability to send HTTP requests and receive HTTP resp
 The main entry point into the console application is the `Main` method. Replace the existing method with the following:
 
 ```csharp
- static Task Main() => SumPageSizesAsync();
+static Task Main() => SumPageSizesAsync();
 ```
 
 The updated `Main` method is now considered an [Async main](../../../whats-new/csharp-7-1.md#async-main), which allows for an asynchronous entry point into the executable. It is expressed a call to `SumPageSizesAsync`.
@@ -104,10 +104,10 @@ static async Task SumPageSizesAsync()
 }
 ```
 
-The method starts by instantiating a <xref:System.Diagnostics.Stopwatch>. It then includes a query that, when executed, creates a collection of tasks. Each call to `ProcessUrlAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
+The method starts by instantiating and starting a <xref:System.Diagnostics.Stopwatch>. It then includes a query that, when executed, creates a collection of tasks. Each call to `ProcessUrlAsync` in the following code returns a <xref:System.Threading.Tasks.Task%601>, where `TResult` is an integer:
 
 ```csharp
- IEnumerable<Task<int>> downloadTasksQuery =
+IEnumerable<Task<int>> downloadTasksQuery =
     from url in s_urlList
     select ProcessUrlAsync(url, s_client);
 ```

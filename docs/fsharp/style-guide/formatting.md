@@ -930,3 +930,48 @@ let MyUrl = "www.mywebsitethatiamworkingwith.com"
 ```
 
 Avoid placing the attribute on the same line as the value.
+
+## Formatting computation expression operations
+
+When creating custom operations for [computation expressions](../language-reference/computation-expressions.md) should use `CONVENTION` naming:
+
+```fsharp
+type MathBuilder () =
+    member _.Yield (_) = 0
+
+    // snake case
+    [<CustomOperation("add_one")>]
+    member _.AddOne (state: int) =
+        state + 1
+
+    // camel case
+    [<CustomOperation("subtractOne")>]
+    member _.SubtractOne (state: int) =
+        state - 1
+
+    // screaming case
+    [<CustomOperation("DIVIDEBY")>]
+    member _.DivideBy (state: int, divisor: int) =
+        state / divisor
+
+    // pascal case
+    [<CustomOperation("MultiplyBy")>]
+    member _.MultiplyBy (state: int, factor: int) =
+        state * factor
+
+let math = MathBuilder()
+
+// 10
+let myNumber =
+    math {
+        add_one
+        add_one
+        add_one
+
+        subtractOne
+
+        DIVIDEBY 2
+
+        MultiplyBy 10
+    }
+```

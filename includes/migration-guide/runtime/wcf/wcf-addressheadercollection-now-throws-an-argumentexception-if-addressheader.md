@@ -17,3 +17,11 @@ If you encounter compatibility issues with this change on the .NET Framework 4.7
 #### Affected APIs
 
 - <xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.ServiceModel.Channels.AddressHeaderCollection.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})`
+
+-->

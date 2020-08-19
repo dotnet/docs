@@ -13,3 +13,11 @@ A Popup with StaysOpen=False is supposed to close when you click outside the Pop
 #### Affected APIs
 
 - <xref:System.Windows.Controls.Primitives.Popup.StaysOpen?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Windows.Controls.Primitives.Popup.StaysOpen`
+
+-->

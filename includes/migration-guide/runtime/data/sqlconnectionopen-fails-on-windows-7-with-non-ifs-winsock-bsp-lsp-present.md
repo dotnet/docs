@@ -18,3 +18,12 @@ This bug has been fixed in the .NET Framework 4.5.2, so it can be avoided by upg
 
 - <xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType>
 - <xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Data.SqlClient.SqlConnection.Open`
+- `M:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)`
+
+-->

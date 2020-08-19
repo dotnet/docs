@@ -17,3 +17,11 @@ Code should be updated to not depend on <xref:System.AppDomainSetup.TargetFramew
 #### Affected APIs
 
 - <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.AppDomainSetup.TargetFrameworkName`
+
+-->

@@ -17,3 +17,11 @@ If the iteration occurs in .NET Framework 4.6.1 but not in earlier releases - th
 #### Affected APIs
 
 - <xref:System.Windows.Controls.VirtualizingStackPanel?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.VirtualizingStackPanel`
+
+-->

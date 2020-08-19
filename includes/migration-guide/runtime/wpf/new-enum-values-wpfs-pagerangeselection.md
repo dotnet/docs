@@ -17,3 +17,11 @@ In most cases, these changes won't impact user code. Code that depends on a part
 #### Affected APIs
 
 - <xref:System.Windows.Controls.PageRangeSelection?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.PageRangeSelection`
+
+-->

@@ -19,3 +19,13 @@ The change in decoder output should matter only if you store binary data instead
 - <xref:System.Net.WebUtility.HtmlDecode(System.String)?displayProperty=nameWithType>
 - <xref:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)?displayProperty=nameWithType>
 - <xref:System.Net.WebUtility.UrlDecode(System.String)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Net.WebUtility.HtmlDecode(System.String)`
+- `M:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)`
+- `M:System.Net.WebUtility.UrlDecode(System.String)`
+
+-->

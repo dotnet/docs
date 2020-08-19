@@ -20,3 +20,14 @@ There are two options to work around this issue:<ol><li>It may be avoided by cal
 - <xref:System.Windows.IInputElement.PreviewLostKeyboardFocus?displayProperty=nameWithType>
 - <xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=nameWithType>
 - <xref:System.Windows.UIElement3D.PreviewLostKeyboardFocus?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `E:System.Windows.ContentElement.PreviewLostKeyboardFocus`
+- `E:System.Windows.IInputElement.PreviewLostKeyboardFocus`
+- `E:System.Windows.UIElement.PreviewLostKeyboardFocus`
+- `E:System.Windows.UIElement3D.PreviewLostKeyboardFocus`
+
+-->

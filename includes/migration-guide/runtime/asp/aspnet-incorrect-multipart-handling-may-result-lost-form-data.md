@@ -19,3 +19,13 @@ Starting with applications running on .NET Framework 4.8, when targeting .NET Fr
 - <xref:System.Web.HttpRequest.Form?displayProperty=nameWithType>
 - <xref:System.Web.HttpRequest.Files?displayProperty=nameWithType>
 - <xref:System.Web.HttpRequest.ContentEncoding?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Web.HttpRequest.Form`
+- `P:System.Web.HttpRequest.Files`
+- `P:System.Web.HttpRequest.ContentEncoding`
+
+-->

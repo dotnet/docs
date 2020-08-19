@@ -31,3 +31,25 @@ If the limit of DTD entity expansion is too low 10,000,000, the value can be ove
 - <xref:System.Xml.XmlTextReader.%23ctor(System.String,System.Xml.XmlNameTable)>
 - <xref:System.Xml.XmlTextReader.%23ctor(System.String,System.Xml.XmlNodeType,System.Xml.XmlParserContext)>
 - <xref:System.Xml.XmlTextReader.%23ctor(System.Xml.XmlNameTable)>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Xml.XmlTextReader`
+- `M:System.Xml.XmlTextReader.#ctor`
+- `M:System.Xml.XmlTextReader.#ctor(System.IO.Stream)`
+- `M:System.Xml.XmlTextReader.#ctor(System.IO.Stream,System.Xml.XmlNameTable)`
+- `M:System.Xml.XmlTextReader.#ctor(System.IO.Stream,System.Xml.XmlNodeType,System.Xml.XmlParserContext)`
+- `M:System.Xml.XmlTextReader.#ctor(System.IO.TextReader)`
+- `M:System.Xml.XmlTextReader.#ctor(System.IO.TextReader,System.Xml.XmlNameTable)`
+- `M:System.Xml.XmlTextReader.#ctor(System.String)`
+- `M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.Stream)`
+- `M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.Stream,System.Xml.XmlNameTable)`
+- `M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.TextReader)`
+- `M:System.Xml.XmlTextReader.#ctor(System.String,System.IO.TextReader,System.Xml.XmlNameTable)`
+- `M:System.Xml.XmlTextReader.#ctor(System.String,System.Xml.XmlNameTable)`
+- `M:System.Xml.XmlTextReader.#ctor(System.String,System.Xml.XmlNodeType,System.Xml.XmlParserContext)`
+- `M:System.Xml.XmlTextReader.#ctor(System.Xml.XmlNameTable)`
+
+-->

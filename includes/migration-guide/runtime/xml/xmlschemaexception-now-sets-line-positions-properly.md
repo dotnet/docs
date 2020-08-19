@@ -17,3 +17,11 @@ Exception-handling code that assumes <xref:System.Xml.Schema.XmlSchemaException.
 #### Affected APIs
 
 - <xref:System.Xml.Linq.LoadOptions.SetLineInfo?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `F:System.Xml.Linq.LoadOptions.SetLineInfo`
+
+-->

@@ -18,3 +18,12 @@ Be aware that some glyph bounding box sizes have increased. These changes will u
 
 - <xref:System.Windows.Media.GlyphRun.ComputeInkBoundingBox?displayProperty=nameWithType>
 - <xref:System.Windows.Media.FormattedText.Extent?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Media.GlyphRun.ComputeInkBoundingBox`
+- `P:System.Windows.Media.FormattedText.Extent`
+
+-->

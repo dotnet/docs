@@ -17,3 +17,11 @@ Most apps should be unaffected, however data will be sorted differently in some 
 #### Affected APIs
 
 - <xref:System.Xml.Xsl.XslCompiledTransform?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Xml.Xsl.XslCompiledTransform`
+
+-->

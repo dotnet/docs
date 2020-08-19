@@ -18,3 +18,12 @@ This behavior was addressed in [GitHub Issue #339](https://github.com/Microsoft/
 
 - <xref:System.Diagnostics.Contracts.Contract.Invariant(System.Boolean)?displayProperty=nameWithType>
 - <xref:System.Diagnostics.Contracts.Contract.Requires(System.Boolean)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Diagnostics.Contracts.Contract.Invariant(System.Boolean)`
+- `M:System.Diagnostics.Contracts.Contract.Requires(System.Boolean)`
+
+-->

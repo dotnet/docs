@@ -20,3 +20,14 @@ Because the old sort algorithm was also unstable (though in slightly different w
 - <xref:System.Collections.Generic.List%601.Sort(System.Collections.Generic.IComparer{%600})?displayProperty=nameWithType>
 - <xref:System.Collections.Generic.List%601.Sort(System.Comparison{%600})?displayProperty=nameWithType>
 - <xref:System.Collections.Generic.List%601.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{%600})?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Collections.Generic.List`1.Sort`
+- `M:System.Collections.Generic.List`1.Sort(System.Collections.Generic.IComparer{`0})`
+- `M:System.Collections.Generic.List`1.Sort(System.Comparison{`0})`
+- `M:System.Collections.Generic.List`1.Sort(System.Int32,System.Int32,System.Collections.Generic.IComparer{`0})`
+
+-->

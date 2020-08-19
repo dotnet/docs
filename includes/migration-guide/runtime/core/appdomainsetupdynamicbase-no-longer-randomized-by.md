@@ -17,3 +17,11 @@ Be aware that enabling <code>UseRandomizedStringHashAlgorithm</code> will not re
 #### Affected APIs
 
 - <xref:System.AppDomainSetup.DynamicBase?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.AppDomainSetup.DynamicBase`
+
+-->

@@ -17,3 +17,11 @@ This issue may be worked around by programmatically unselecting items before <xr
 #### Affected APIs
 
 - <xref:System.Windows.Data.CollectionView.Refresh?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Data.CollectionView.Refresh`
+
+-->

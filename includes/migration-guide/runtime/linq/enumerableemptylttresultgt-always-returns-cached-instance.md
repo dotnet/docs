@@ -17,3 +17,11 @@ Because the previous behavior was non-deterministic, code is unlikely to depend 
 #### Affected APIs
 
 - <xref:System.Linq.Enumerable.Empty%60%601?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Linq.Enumerable.Empty``1`
+
+-->

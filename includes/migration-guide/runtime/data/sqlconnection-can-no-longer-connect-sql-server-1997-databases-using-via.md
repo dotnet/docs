@@ -18,3 +18,12 @@ The VIA protocol is deprecated, so an alternative protocol should be used to con
 
 - <xref:System.Data.SqlClient.SqlConnection.%23ctor(System.String)>
 - <xref:System.Data.SqlClient.SqlConnection.%23ctor(System.String,System.Data.SqlClient.SqlCredential)>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Data.SqlClient.SqlConnection.#ctor(System.String)`
+- `M:System.Data.SqlClient.SqlConnection.#ctor(System.String,System.Data.SqlClient.SqlCredential)`
+
+-->

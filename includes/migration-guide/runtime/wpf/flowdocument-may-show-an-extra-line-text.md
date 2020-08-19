@@ -21,3 +21,15 @@ In some cases, decreasing the display element's PageHeight property by one can r
 - <xref:System.Windows.Controls.FlowDocumentReader.%23ctor>
 - <xref:System.Windows.Controls.FlowDocumentPageViewer.%23ctor>
 - <xref:System.Windows.Controls.Primitives.DocumentPageView.%23ctor>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Documents.FlowDocument.#ctor`
+- `M:System.Windows.Documents.FlowDocument.#ctor(System.Windows.Documents.Block)`
+- `M:System.Windows.Controls.FlowDocumentReader.#ctor`
+- `M:System.Windows.Controls.FlowDocumentPageViewer.#ctor`
+- `M:System.Windows.Controls.Primitives.DocumentPageView.#ctor`
+
+-->

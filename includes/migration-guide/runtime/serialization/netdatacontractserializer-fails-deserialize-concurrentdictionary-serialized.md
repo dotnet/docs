@@ -17,3 +17,11 @@ There are a number of possible work-arounds for this issue:<ul><li>Upgrade the s
 #### Affected APIs
 
 - <xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)`
+
+-->

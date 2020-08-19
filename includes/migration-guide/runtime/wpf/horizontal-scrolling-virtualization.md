@@ -17,3 +17,11 @@ An app that uses a predicted value for <xref:System.Windows.Controls.Primitives.
 #### Affected APIs
 
 - <xref:System.Windows.Controls.Primitives.IScrollInfo?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.Primitives.IScrollInfo`
+
+-->

@@ -20,3 +20,14 @@ If your code relies on handling the <xref:System.NullReferenceException?displayP
 - <xref:System.Activities.AsyncCodeActivity.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)?displayProperty=nameWithType>
 - <xref:System.Activities.AsyncCodeActivity%601.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)?displayProperty=nameWithType>
 - <xref:System.Activities.WorkflowInvoker.Invoke?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Activities.CodeActivity.Execute(System.Activities.CodeActivityContext)`
+- `M:System.Activities.AsyncCodeActivity.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)`
+- `M:System.Activities.AsyncCodeActivity`1.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)`
+- `M:System.Activities.WorkflowInvoker.Invoke`
+
+-->

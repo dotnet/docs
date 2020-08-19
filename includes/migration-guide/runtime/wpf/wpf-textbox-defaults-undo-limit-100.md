@@ -17,3 +17,11 @@ If an undo limit of 100 is too low, the limit can be set explicitly with <xref:S
 #### Affected APIs
 
 - <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.TextBox`
+
+-->

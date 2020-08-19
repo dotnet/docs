@@ -18,3 +18,12 @@ Expect that <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=fullName> wi
 
 - <xref:System.Data.SqlClient.SqlBulkCopy?displayProperty=nameWithType>
 - <xref:System.Data.SqlClient.SqlBulkCopy.%23ctor(System.Data.SqlClient.SqlConnection)>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Data.SqlClient.SqlBulkCopy`
+- `M:System.Data.SqlClient.SqlBulkCopy.#ctor(System.Data.SqlClient.SqlConnection)`
+
+-->

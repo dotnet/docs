@@ -18,3 +18,12 @@ UI Automation tests for this app may need updated to account for the UIA tree no
 
 - <xref:System.Windows.DataTemplate.%23ctor>
 - <xref:System.Windows.DataTemplate.%23ctor(System.Object)>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.DataTemplate.#ctor`
+- `M:System.Windows.DataTemplate.#ctor(System.Object)`
+
+-->

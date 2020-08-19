@@ -19,3 +19,13 @@ Developers might want to review the usage of <xref:System.Security.Cryptography.
 - <xref:System.Security.Cryptography.Xml.Transform?displayProperty=nameWithType>
 - <xref:System.Security.Cryptography.Xml.XmlDsigXPathTransform?displayProperty=nameWithType>
 - <xref:System.Security.Cryptography.Xml.XmlDsigXsltTransform?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Security.Cryptography.Xml.Transform`
+- `T:System.Security.Cryptography.Xml.XmlDsigXPathTransform`
+- `T:System.Security.Cryptography.Xml.XmlDsigXsltTransform`
+
+-->

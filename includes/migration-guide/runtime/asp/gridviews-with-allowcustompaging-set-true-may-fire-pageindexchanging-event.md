@@ -17,3 +17,11 @@ This issue has been fixed in the .NET Framework 4.6 and may be addressed by upgr
 #### Affected APIs
 
 - <xref:System.Web.UI.WebControls.GridView.AllowCustomPaging?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Web.UI.WebControls.GridView.AllowCustomPaging`
+
+-->

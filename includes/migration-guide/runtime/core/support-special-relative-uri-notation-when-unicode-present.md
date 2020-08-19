@@ -19,3 +19,13 @@ Users depending on this behavior to disallow relative URIs should instead specif
 - <xref:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)?displayProperty=nameWithType>
 - <xref:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)?displayProperty=nameWithType>
 - <xref:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Uri.TryCreate(System.Uri,System.Uri,System.Uri@)`
+- `M:System.Uri.TryCreate(System.String,System.UriKind,System.Uri@)`
+- `M:System.Uri.TryCreate(System.Uri,System.String,System.Uri@)`
+
+-->

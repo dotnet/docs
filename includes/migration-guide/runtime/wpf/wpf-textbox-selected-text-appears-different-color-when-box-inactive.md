@@ -17,3 +17,11 @@ The previous (.NET Framework 4.0) behavior may be restored by setting the <xref:
 #### Affected APIs
 
 - <xref:System.Windows.Controls.TextBox?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Windows.Controls.TextBox`
+
+-->

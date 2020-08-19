@@ -18,3 +18,12 @@ Calling <xref:System.Collections.ObjectModel.Collection%601.Remove(%600)?display
 
 - <xref:System.Collections.ObjectModel.ObservableCollection%601.Move(System.Int32,System.Int32)?displayProperty=nameWithType>
 - <xref:System.Collections.ObjectModel.ObservableCollection%601.MoveItem(System.Int32,System.Int32)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)`
+- `M:System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)`
+
+-->

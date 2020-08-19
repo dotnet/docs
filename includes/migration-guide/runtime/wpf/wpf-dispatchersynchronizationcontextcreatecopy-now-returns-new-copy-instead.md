@@ -17,3 +17,11 @@ Be aware that <xref:System.Windows.Threading.DispatcherSynchronizationContext.Cr
 #### Affected APIs
 
 - <xref:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Windows.Threading.DispatcherSynchronizationContext.CreateCopy`
+
+-->

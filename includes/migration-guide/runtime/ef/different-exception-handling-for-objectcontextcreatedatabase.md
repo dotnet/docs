@@ -18,3 +18,12 @@ When catching an <xref:System.InvalidOperationException?displayProperty=fullName
 
 - <xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType>
 - <xref:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Data.Objects.ObjectContext.CreateDatabase`
+- `M:System.Data.Common.DbProviderServices.CreateDatabase(System.Data.Common.DbConnection,System.Nullable{System.Int32},System.Data.Metadata.Edm.StoreItemCollection)`
+
+-->

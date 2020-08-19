@@ -18,3 +18,12 @@ If Ssl3 is required, use one of the following configuration mechanisms to add Ss
 
 - <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols?displayProperty=nameWithType>
 - <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols`
+- `P:System.ServiceModel.TcpTransportSecurity.SslProtocols`
+
+-->

@@ -17,3 +17,11 @@ Applications working with URIs consistently containing Unicode could have concei
 #### Affected APIs
 
 - <xref:System.Uri?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Uri`
+
+-->

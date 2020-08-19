@@ -19,3 +19,13 @@ Review code and remove/change logic that depends on hard-coded Unicode character
 - <xref:System.Char.GetUnicodeCategory(System.Char)?displayProperty=nameWithType>
 - <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)?displayProperty=nameWithType>
 - <xref:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Char.GetUnicodeCategory(System.Char)`
+- `M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.Char)`
+- `M:System.Globalization.CharUnicodeInfo.GetUnicodeCategory(System.String,System.Int32)`
+
+-->

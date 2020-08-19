@@ -17,3 +17,11 @@ None. This change conforms to the expected behavior for controls inside a <xref:
 #### Affected APIs
 
 - <xref:System.Windows.UIElement.IsEnabled?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Windows.UIElement.IsEnabled`
+
+-->

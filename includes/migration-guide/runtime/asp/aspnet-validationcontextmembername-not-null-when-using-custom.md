@@ -17,3 +17,11 @@ Add the following setting to your *web.config* file for the property to return t
 #### Affected APIs
 
 - <xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.ComponentModel.DataAnnotations.ValidationContext.MemberName`
+
+-->

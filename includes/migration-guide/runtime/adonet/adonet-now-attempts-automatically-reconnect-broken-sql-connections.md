@@ -25,3 +25,19 @@ If this feature is undesirable due to compatibility concerns, it can be disabled
 - <xref:System.Data.SqlClient.SqlConnectionStringBuilder.%23ctor(System.String)>
 - <xref:System.Data.Common.DbConnectionStringBuilder.%23ctor>
 - <xref:System.Data.Common.DbConnectionStringBuilder.%23ctor(System.Boolean)>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Data.IDbConnection.ConnectionString`
+- `P:System.Data.SqlClient.SqlConnection.ConnectionString`
+- `P:System.Configuration.ConnectionStringSettings.ConnectionString`
+- `P:System.Data.Common.DbConnection.ConnectionString`
+- `P:System.Data.Common.DbConnectionStringBuilder.ConnectionString`
+- `M:System.Data.SqlClient.SqlConnectionStringBuilder.#ctor`
+- `M:System.Data.SqlClient.SqlConnectionStringBuilder.#ctor(System.String)`
+- `M:System.Data.Common.DbConnectionStringBuilder.#ctor`
+- `M:System.Data.Common.DbConnectionStringBuilder.#ctor(System.Boolean)`
+
+-->

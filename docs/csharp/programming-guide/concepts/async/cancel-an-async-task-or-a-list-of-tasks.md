@@ -2,12 +2,29 @@
 title: Cancel a list of tasks (C#)
 description: Learn how to use cancellation tokens to signal a cancellation request to a list of tasks.
 ms.date: 08/19/2020
+ms.topic: tutorial
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
 ---
 
 # Cancel a list of tasks (C#)
 
 You can cancel an async console application if you don't want to wait for it to finish. By following the example in this topic, you can add a cancellation to an application that downloads the contents of a list of websites. You can cancel many tasks by associating the <xref:System.Threading.CancellationTokenSource> instance with each task. If you select the <kbd>Enter</kbd> key, you cancel all tasks that aren't yet complete.
+
+This tutorial covers:
+
+> [!div class="checklist"]
+>
+> - Creating a .NET console application
+> - Writing an async application that supports cancellation
+> - Demonstrating signaling cancellation
+
+## Prerequisites
+
+This tutorial requires the following:
+
+- [.NET 5.0 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
+- Integrated development environment (IDE)
+  - [We recommend Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
 
 ### Create example application
 

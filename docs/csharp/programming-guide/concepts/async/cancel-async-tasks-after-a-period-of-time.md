@@ -2,6 +2,7 @@
 title: Cancel async tasks after a period of time (C#)"
 description: Learn how to schedule cancellation of any associated tasks that are not completed within a period of time.
 ms.date: 08/19/2020
+ms.topic: tutorial
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 ---
 
@@ -10,6 +11,22 @@ ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 You can cancel an asynchronous operation after a period of time by using the <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType> method if you don't want to wait for the operation to finish. This method schedules the cancellation of any associated tasks that aren't complete within the period of time that's designated by the `CancelAfter` expression.
 
 This example adds to the code that's developed in [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.
+
+This tutorial covers:
+
+> [!div class="checklist"]
+>
+> - Updating an existing .NET console application
+> - Scheduling a cancellation
+
+## Prerequisites
+
+This tutorial requires the following:
+
+- You're expected to have created an application in the [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md) tutorial
+- [.NET 5.0 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
+- Integrated development environment (IDE)
+  - [We recommend Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
 
 ## Update application entry point
 

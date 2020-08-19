@@ -84,7 +84,7 @@ The most important thing to understand in asynchronous programming is how the co
 
 :::image type="content" source="media/task-asynchronous-programming-model/navigation-trace-async-program.png" alt-text="Trace navigation of async control flow" lightbox="media/task-asynchronous-programming-model/navigation-trace-async-program.png":::
 
-The numbers in the diagram correspond to the following steps, initiated when the user clicks the "start" button.
+The numbers in the diagram correspond to the following steps, initiated when a calling method calls the async method.
 
 1. A calling method calls and awaits the `GetUrlContentLengthAsync` async method.
 
@@ -105,7 +105,7 @@ The numbers in the diagram correspond to the following steps, initiated when the
     > [!NOTE]
     > If `GetStringAsync` (and therefore `getStringTask`) completes before `GetUrlContentLengthAsync` awaits it, control remains in `GetUrlContentLengthAsync`. The expense of suspending and then returning to `GetUrlContentLengthAsync` would be wasted if the called asynchronous process `getStringTask` has already completed and `GetUrlContentLengthAsync` doesn't have to wait for the final result.
 
-    Inside the caller (the event handler in this example), the processing pattern continues. The caller might do other work that doesn't depend on the result from `GetUrlContentLengthAsync` before awaiting that result, or the caller might await immediately.   The event handler is waiting for `GetUrlContentLengthAsync`, and `GetUrlContentLengthAsync` is waiting for `GetStringAsync`.
+    Inside the calling method the processing pattern continues. The caller might do other work that doesn't depend on the result from `GetUrlContentLengthAsync` before awaiting that result, or the caller might await immediately. The calling method is waiting for `GetUrlContentLengthAsync`, and `GetUrlContentLengthAsync` is waiting for `GetStringAsync`.
 
 1. `GetStringAsync` completes and produces a string result. The string result isn't returned by the call to `GetStringAsync` in the way that you might expect. (Remember that the method already returned a task in step 3.) Instead, the string result is stored in the task that represents the completion of the method, `getStringTask`. The await operator retrieves the result from `getStringTask`. The assignment statement assigns the retrieved result to `contents`.
 

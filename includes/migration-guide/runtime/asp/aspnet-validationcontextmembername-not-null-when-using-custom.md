@@ -12,8 +12,8 @@ Add the following setting to your *web.config* file for the property to return t
 |:--------|:------------|
 | Scope   |Unknown|
 |Version|4.8|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType></li></ul>|
+- <xref:System.ComponentModel.DataAnnotations.ValidationContext.MemberName?displayProperty=nameWithType>

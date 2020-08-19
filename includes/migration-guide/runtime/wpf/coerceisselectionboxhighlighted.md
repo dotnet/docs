@@ -12,8 +12,8 @@ If possible, upgrade to .NET Framework 4.6.2.
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.6|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.ComboBox.IsSelectionBoxHighlighted?displayProperty=nameWithType>

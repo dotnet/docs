@@ -16,4 +16,4 @@ Be sure to upgrade .NET Framework versions on web servers that share state at th
 
 #### Affected APIs
 
--<xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=nameWithType></li></ul>|
+- <xref:System.Web.SessionState.SessionStateMode.StateServer?displayProperty=nameWithType>

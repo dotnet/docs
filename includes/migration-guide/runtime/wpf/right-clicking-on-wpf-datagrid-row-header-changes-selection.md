@@ -12,8 +12,8 @@ This issue has been fixed in the .NET Framework 4.6 and may be addressed by upgr
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.DataGrid.%23ctor></li></ul>|
+- <xref:System.Windows.Controls.DataGrid.%23ctor>

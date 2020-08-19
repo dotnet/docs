@@ -13,3 +13,5 @@ If there is a need for databinding, manually invoke databind in an event that is
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs header? -->

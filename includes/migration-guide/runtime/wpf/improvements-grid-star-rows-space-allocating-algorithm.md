@@ -13,3 +13,5 @@ In order for the application to benefit from these changes, it must run on the .
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

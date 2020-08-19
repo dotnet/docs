@@ -12,8 +12,8 @@ Code should be updated to unescape string parameters from a route. If the origin
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.5.2|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Web.Mvc.RouteAttribute.%23ctor(System.String)></li></ul>|
+- <xref:System.Web.Mvc.RouteAttribute.%23ctor(System.String)>

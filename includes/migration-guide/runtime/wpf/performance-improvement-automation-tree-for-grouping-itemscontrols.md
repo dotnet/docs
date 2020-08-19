@@ -9,3 +9,5 @@ Improved the performance of rebuilding the automation tree of an <xref:System.Wi
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

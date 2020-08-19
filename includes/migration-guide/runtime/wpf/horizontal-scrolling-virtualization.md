@@ -12,8 +12,8 @@ An app that uses a predicted value for <xref:System.Windows.Controls.Primitives.
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.6.2|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Windows.Controls.Primitives.IScrollInfo?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.Controls.Primitives.IScrollInfo?displayProperty=nameWithType>

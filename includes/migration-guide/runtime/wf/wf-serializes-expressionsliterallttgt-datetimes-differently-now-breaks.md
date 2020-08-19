@@ -13,3 +13,5 @@ This change allows <xref:System.DateTime?displayProperty=fullName> and <xref:Sys
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

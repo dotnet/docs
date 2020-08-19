@@ -12,8 +12,8 @@ Because the previous behavior was non-deterministic, code is unlikely to depend 
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Linq.Enumerable.Empty%60%601?displayProperty=nameWithType></li></ul>|
+- <xref:System.Linq.Enumerable.Empty%60%601?displayProperty=nameWithType>

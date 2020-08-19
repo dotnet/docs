@@ -9,3 +9,5 @@ Fixed a problem where a virtualizing<xref:System.Windows.Controls.ItemsControl> 
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

@@ -12,8 +12,10 @@ Starting with applications running on .NET Framework 4.8, when targeting .NET Fr
 |:--------|:------------|
 | Scope   |Unknown|
 |Version|4.8|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Web.HttpRequest.Form?displayProperty=nameWithType></li><li><xref:System.Web.HttpRequest.Files?displayProperty=nameWithType></li><li><xref:System.Web.HttpRequest.ContentEncoding?displayProperty=nameWithType></li></ul>|
+- <xref:System.Web.HttpRequest.Form?displayProperty=nameWithType>
+- <xref:System.Web.HttpRequest.Files?displayProperty=nameWithType>
+- <xref:System.Web.HttpRequest.ContentEncoding?displayProperty=nameWithType>

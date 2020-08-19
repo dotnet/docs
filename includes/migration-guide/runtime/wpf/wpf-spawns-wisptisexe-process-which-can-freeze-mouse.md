@@ -13,3 +13,5 @@ A fix for this issue is available in a servicing release of the .NET Framework 4
 | Scope   |Major|
 |Version|4.5.2|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

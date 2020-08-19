@@ -13,3 +13,5 @@ This change only affects code that uses QueryViews with 1-0..1 relationships whe
 | Scope   |Edge|
 |Version|4.5.2|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

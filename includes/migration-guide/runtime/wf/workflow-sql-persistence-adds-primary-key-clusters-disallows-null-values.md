@@ -13,3 +13,5 @@ The SQL file SqlWorkflowInstanceStoreSchemaUpgrade.sql must be applied to existi
 | Scope   |Edge|
 |Version|4.7|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

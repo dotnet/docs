@@ -13,3 +13,5 @@ Previously when overflows occurred, the result would be silently truncated. Now 
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

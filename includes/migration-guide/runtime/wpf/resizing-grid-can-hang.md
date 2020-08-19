@@ -13,3 +13,5 @@ Upgrade to .NET Framework 4.7.1.  Alternatively, if you don't need the 4.7 alloc
 | Scope   |Edge|
 |Version|4.7|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

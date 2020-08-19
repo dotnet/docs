@@ -13,3 +13,5 @@ Upgrade to .NET Framework 4.7.1.
 | Scope   |Minor|
 |Version|4.7|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

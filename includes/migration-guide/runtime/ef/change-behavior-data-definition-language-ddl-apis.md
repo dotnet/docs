@@ -13,3 +13,5 @@ These changes make it easier to build tools and applications that use the DDL AP
 | Scope   |Minor|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

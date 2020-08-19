@@ -12,8 +12,8 @@ If you encounter compatibility issues with this change on the .NET Framework 4.7
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.7.1|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})></li></ul>|
+- <xref:System.ServiceModel.Channels.AddressHeaderCollection.%23ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.AddressHeader})>

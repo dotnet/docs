@@ -13,3 +13,5 @@ A hotfix will be made available for this.
 | Scope   |Minor|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

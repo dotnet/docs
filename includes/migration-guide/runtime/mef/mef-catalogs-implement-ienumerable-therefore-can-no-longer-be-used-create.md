@@ -13,3 +13,5 @@ Can no longer use MEF to create a serializer
 | Scope   |Major|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

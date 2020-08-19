@@ -12,8 +12,8 @@ Code should be updated to not depend on <xref:System.AppDomainSetup.TargetFramew
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.6|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=nameWithType></li></ul>|
+- <xref:System.AppDomainSetup.TargetFrameworkName?displayProperty=nameWithType>

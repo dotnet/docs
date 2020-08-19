@@ -13,3 +13,5 @@ An <xref:System.IndexOutOfRangeException?displayProperty=fullName> exception is 
 | Scope   |Minor|
 |Version|4.5.1|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

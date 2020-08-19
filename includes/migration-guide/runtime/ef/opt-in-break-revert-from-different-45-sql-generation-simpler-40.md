@@ -13,3 +13,5 @@ This feature is disabled by default. If Entity Framework generates extra JOIN st
 | Scope   |Transparent|
 |Version|4.5.2|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

@@ -12,8 +12,8 @@ To output print content, you can do either of the following:<ul><li>Use the <xre
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Printing.PrintSystemJobInfo.JobStream?displayProperty=nameWithType></li></ul>|
+- <xref:System.Printing.PrintSystemJobInfo.JobStream?displayProperty=nameWithType>

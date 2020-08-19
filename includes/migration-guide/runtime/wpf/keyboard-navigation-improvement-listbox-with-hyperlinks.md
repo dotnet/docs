@@ -9,3 +9,5 @@ Fixed incorrect result of pressing an arrow key when the focus is on a hyperlink
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

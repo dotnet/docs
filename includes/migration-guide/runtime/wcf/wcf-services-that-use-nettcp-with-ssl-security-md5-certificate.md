@@ -45,3 +45,5 @@ The following configuration file does this:
 | Scope   | Minor   |
 | Version | 4.6     |
 | Type    | Runtime |
+
+<!-- TODO: Affected APIs? -->

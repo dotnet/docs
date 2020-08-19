@@ -13,3 +13,5 @@ Internet Explorer will fail to launch an application that uses managed browser h
 | Scope   |Minor|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

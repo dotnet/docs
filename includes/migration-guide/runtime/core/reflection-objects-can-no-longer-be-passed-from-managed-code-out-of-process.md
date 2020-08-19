@@ -13,3 +13,5 @@ Update marshaling code to work with non-reflection objects
 | Scope   |Minor|
 |Version|4.6|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

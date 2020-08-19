@@ -13,3 +13,5 @@ This issue has been fixed in the .NET Framework 4.6 and may be addressed by upgr
 | Scope   |Minor|
 |Version|4.5.1|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

@@ -13,3 +13,5 @@ A <xref:System.Runtime.Versioning.TargetFrameworkAttribute?displayProperty=fullN
 | Scope   |Major|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

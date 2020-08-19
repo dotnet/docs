@@ -13,3 +13,5 @@ If you run into compatibility issue with this change on the .NET Framework 4.7.1
 | Scope   |Minor|
 |Version|4.7.1|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

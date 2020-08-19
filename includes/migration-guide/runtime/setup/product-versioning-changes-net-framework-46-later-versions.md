@@ -13,3 +13,5 @@ In general, applications should depend on the recommended techniques for detecti
 | Scope   |Minor|
 |Version|4.6|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

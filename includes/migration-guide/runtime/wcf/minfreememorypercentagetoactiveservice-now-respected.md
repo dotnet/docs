@@ -13,3 +13,5 @@ An exception occurs if the free memory available on the web server is less than 
 | Scope   |Minor|
 |Version|4.5.1|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

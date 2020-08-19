@@ -13,3 +13,5 @@ In order for an application that targets an older version to benefit from this c
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

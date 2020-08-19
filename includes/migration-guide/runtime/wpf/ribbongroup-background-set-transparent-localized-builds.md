@@ -13,3 +13,5 @@ Upgrade to .NET Framework 4.7
 | Scope   |Edge|
 |Version|4.6.2|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

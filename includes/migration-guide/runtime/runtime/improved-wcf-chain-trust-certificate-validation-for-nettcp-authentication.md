@@ -13,3 +13,5 @@
 | Scope   |Minor|
 |Version|4.7.2|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

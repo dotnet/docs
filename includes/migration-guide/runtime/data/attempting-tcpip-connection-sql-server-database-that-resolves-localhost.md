@@ -13,3 +13,5 @@ This issue has been addressed and the previous behavior restored in the .NET Fra
 | Scope   |Minor|
 |Version|4.6|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

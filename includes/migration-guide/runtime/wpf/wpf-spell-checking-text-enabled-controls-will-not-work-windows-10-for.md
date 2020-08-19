@@ -13,3 +13,5 @@ Be aware that the language or text to be spell-checked must be added as an input
 | Scope   |Edge|
 |Version|4.6|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

@@ -16,4 +16,4 @@ If the log file name is important for an app, the app should be updated to expec
 
 #### Affected APIs
 
--<xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType></li></ul>|
+- <xref:System.Data.Objects.ObjectContext.CreateDatabase?displayProperty=nameWithType>

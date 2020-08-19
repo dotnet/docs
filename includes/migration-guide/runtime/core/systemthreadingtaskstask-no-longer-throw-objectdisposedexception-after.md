@@ -13,3 +13,5 @@ Be aware that Task methods may no longer throw <xref:System.ObjectDisposedExcept
 | Scope   |Minor|
 |Version|4.5|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

@@ -13,3 +13,5 @@ This behavior (whether to clip or not) can be explicitly set using the <code>&lt
 | Scope   |Minor|
 |Version|4.6|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

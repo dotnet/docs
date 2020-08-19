@@ -13,3 +13,5 @@ This change should be transparent. Developers can restore the previous behavior 
 | Scope   |Transparent|
 |Version|4.5.1|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

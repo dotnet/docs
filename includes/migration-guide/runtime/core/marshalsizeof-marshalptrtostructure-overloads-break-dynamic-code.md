@@ -13,3 +13,5 @@ Update scripts to clearly indicate which overload should be used. This can typic
 | Scope   |Minor|
 |Version|4.5.1|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

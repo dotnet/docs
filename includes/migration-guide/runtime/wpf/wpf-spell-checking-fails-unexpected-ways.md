@@ -13,3 +13,5 @@ Issue #1 - This has been fixed in .NET Framework 4.6.2 Issue #2 - WPF Spell Chec
 | Scope   |Edge|
 |Version|4.6.1|
 |Type|Runtime|
+
+<!-- TODO: Affected APIs? -->

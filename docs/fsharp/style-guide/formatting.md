@@ -946,7 +946,7 @@ type MathBuilder () =
     [<CustomOperation("subtractOne")>]
     member _.SubtractOne (state: int) =
         state - 1
-        
+
     [<CustomOperation("divideBy")>]
     member _.DivideBy (state: int, divisor: int) =
         state / divisor

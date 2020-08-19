@@ -43,7 +43,7 @@ public async ValueTask DisposeAsync()
     // Perform async cleanup.
     await DisposeAsyncCore();
 
-    // Dispose of managed resources.
+    // Dispose of unmanaged resources.
     Dispose(false);
     // Suppress finalization.
     GC.SuppressFinalize(this);

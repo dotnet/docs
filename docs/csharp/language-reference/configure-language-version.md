@@ -1,6 +1,7 @@
 ---
 title: C# language versioning - C# Guide
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice. Learn how to override the default manually.
+ms.custom: "updateeachrelease"
 ms.date: 05/20/2020
 ---
 

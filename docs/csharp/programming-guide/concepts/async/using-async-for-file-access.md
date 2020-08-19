@@ -13,21 +13,21 @@ You might consider the following reasons for adding asynchrony to file access ca
 
 > [!div class="checklist"]
 >
-> - Asynchrony makes UI applications more responsive because the UI thread that launches the operation can perform other work. If > the UI thread must execute code that takes a long time (for example, more than 50 milliseconds), the UI may freeze until the I/O > is complete and the UI thread can again process keyboard and mouse input and other events.
-> - Asynchrony improves the scalability of ASP.NET and other server-based applications by reducing the need for threads. If the > application uses a dedicated thread per response and a thousand requests are being handled simultaneously, a thousand threads > are needed. Asynchronous operations often don't need to use a thread during the wait. They use the existing I/O completion > thread briefly at the end.
-> - The latency of a file access operation might be very low under current conditions, but the latency may greatly increase in the > future. For example, a file may be moved to a server that's across the world.
+> - Asynchrony makes UI applications more responsive because the UI thread that launches the operation can perform other work. If the UI thread must execute code that takes a long time (for example, more than 50 milliseconds), the UI may freeze until the I/O is complete and the UI thread can again process keyboard and mouse input and other events.
+> - Asynchrony improves the scalability of ASP.NET and other server-based applications by reducing the need for threads. If the application uses a dedicated thread per response and a thousand requests are being handled simultaneously, a thousand threads are needed. Asynchronous operations often don't need to use a thread during the wait. They use the existing I/O completion thread briefly at the end.
+> - The latency of a file access operation might be very low under current conditions, but the latency may greatly increase in the future. For example, a file may be moved to a server that's across the world.
 > - The added overhead of using the Async feature is small.
 > - Asynchronous tasks can easily be run in parallel.
 
 ## Use appropriate classes
 
-The simple examples in this topic demonstrate <xref:System.IO.File.WriteAllTextAsync%2A?displayProperty=nameWithType> and <xref:System.IO.File.ReadAllTextAsync%2A?displayProperty=nameWithType>. For finite control over the file I/O operations use the <xref:System.IO.FileStream> class, which has an option that causes asynchronous I/O to occur at the operating system level. By using this option, you can avoid blocking a thread pool thread in many cases. To enable this option, you specify the `useAsync=true` or `options=FileOptions.Asynchronous` argument in the constructor call.
+The simple examples in this topic demonstrate <xref:System.IO.File.WriteAllTextAsync%2A?displayProperty=nameWithType> and <xref:System.IO.File.ReadAllTextAsync%2A?displayProperty=nameWithType>. For finite control over the file I/O operations, use the <xref:System.IO.FileStream> class, which has an option that causes asynchronous I/O to occur at the operating system level. By using this option, you can avoid blocking a thread pool thread in many cases. To enable this option, you specify the `useAsync=true` or `options=FileOptions.Asynchronous` argument in the constructor call.
 
-You can't use this option with <xref:System.IO.StreamReader> and <xref:System.IO.StreamWriter> if you open them directly by specifying a file path. However, you can use this option if you provide them a <xref:System.IO.Stream> that the <xref:System.IO.FileStream> class opened. Note that asynchronous calls are faster in UI apps even if a thread pool thread is blocked, because the UI thread isn't blocked during the wait.
+You can't use this option with <xref:System.IO.StreamReader> and <xref:System.IO.StreamWriter> if you open them directly by specifying a file path. However, you can use this option if you provide them a <xref:System.IO.Stream> that the <xref:System.IO.FileStream> class opened. Asynchronous calls are faster in UI apps even if a thread pool thread is blocked, because the UI thread isn't blocked during the wait.
 
 ## Write text
 
-The following examples write text to a file. At each await statement, the method immediately exits. When the file I/O is complete, the method resumes at the statement that follows the await statement. Note that the async modifier is in the definition of methods that use the await statement.
+The following examples write text to a file. At each await statement, the method immediately exits. When the file I/O is complete, the method resumes at the statement that follows the await statement. The async modifier is in the definition of methods that use the await statement.
 
 ### Simple example
 
@@ -74,7 +74,7 @@ For each file, the <xref:System.IO.Stream.WriteAsync%2A> method returns a task t
 
 The example closes all <xref:System.IO.FileStream> instances in a `finally` block after the tasks are complete. If each `FileStream` was instead created in a `using` statement, the `FileStream` might be disposed of before the task was complete.
 
-Note that any performance boost is almost entirely from the parallel processing and not the asynchronous processing. The advantages of asynchrony are that it doesn't tie up multiple threads, and that it doesn't tie up the user interface thread.
+Any performance boost is almost entirely from the parallel processing and not the asynchronous processing. The advantages of asynchrony are that it doesn't tie up multiple threads, and that it doesn't tie up the user interface thread.
 
 :::code language="csharp" source="snippets/file-access/file-access/Program.cs" id="ParallelWriteText":::
 

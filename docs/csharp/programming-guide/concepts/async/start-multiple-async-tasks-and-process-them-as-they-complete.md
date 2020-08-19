@@ -1,7 +1,7 @@
 ---
 title: Process asynchronous tasks as they complete
 description: This example shows how to use Task.WhenAny in C# to start multiple tasks and process their results as they finish, rather than process them in the order started.
-ms.date: 08/17/2020
+ms.date: 08/19/2020
 ms.assetid: 25331850-35a7-43b3-ab76-3908e4346b9d
 ---
 
@@ -13,11 +13,11 @@ The following example uses a query to create a collection of tasks. Each task do
 
 ## Create example application
 
-Create a new .NET Core console application. You can do this by using the [dotnet new console](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the Program.cs file in your favorite .NET code editor.
+Create a new .NET Core console application. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 
-Replace the existing using statements with the following:
+Replace the existing using statements with these declarations:
 
 ```csharp
 using System;
@@ -30,7 +30,7 @@ using System.Threading.Tasks;
 
 ## Add fields
 
-In the `Program` class defintion, add the following two fields:
+In the `Program` class definition, add the following two fields:
 
 ```csharp
 static readonly HttpClient s_client = new HttpClient
@@ -132,7 +132,7 @@ The `while` loop performs the following steps for each task in the collection:
     downloadTasks.Remove(firstFinishedTask);
     ```
 
-1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property which would throw the `AggregateException`.
+1. Awaits `finishedTask`, which is returned by a call to `ProcessUrlAsync`. The `finishedTask` variable is a <xref:System.Threading.Tasks.Task%601> where `TResult` is an integer. The task is already complete, but you await it to retrieve the length of the downloaded website, as the following example shows. If the task is faulted, `await` will throw the first child exception stored in the `AggregateException`, unlike reading the <xref:System.Threading.Tasks.Task%601.Result?displayProperty=nameWithType> property, which would throw the `AggregateException`.
 
     ```csharp
     total += await finishedTask;

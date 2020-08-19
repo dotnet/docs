@@ -1,21 +1,21 @@
 ---
 title: Cancel a list of tasks (C#)
 description: Learn how to use cancellation tokens to signal a cancellation request to a list of tasks.
-ms.date: 08/18/2020
+ms.date: 08/19/2020
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
 ---
 
 # Cancel a list of tasks (C#)
 
-You can cancel an async console application if you don't want to wait for it to finish. By following the example in this topic, you can add a cancellation to an application that downloads the contents of a list of websites. You can cancel many tasks by associating the a <xref:System.Threading.CancellationTokenSource> instance with each task. If you select the <kbd>Enter</kbd> key, you cancel all tasks that aren't yet complete.
+You can cancel an async console application if you don't want to wait for it to finish. By following the example in this topic, you can add a cancellation to an application that downloads the contents of a list of websites. You can cancel many tasks by associating the <xref:System.Threading.CancellationTokenSource> instance with each task. If you select the <kbd>Enter</kbd> key, you cancel all tasks that aren't yet complete.
 
 ### Create example application
 
-Create a new .NET Core console application. You can do this by using the [dotnet new console](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the Program.cs file in your favorite .NET code editor.
+Create a new .NET Core console application. You can create one by using the [dotnet new console](../../../../core/tools/dotnet-new.md#console) command or from [Visual Studio](/visualstudio/install/install-visual-studio). Open the *Program.cs* file in your favorite code editor.
 
 ### Replace using statements
 
-Replace the existing using statements with the following:
+Replace the existing using statements with these declarations:
 
 ```csharp
 using System;
@@ -28,7 +28,7 @@ using System.Threading.Tasks;
 
 ## Add fields
 
-In the `Program` class defintion, add the following three fields:
+In the `Program` class definition, add these three fields:
 
 ```csharp
 static readonly CancellationTokenSource s_cts = new CancellationTokenSource();
@@ -93,7 +93,7 @@ static async Task Main()
 }
 ```
 
-The updated `Main` method is now considered an [Async main](../../../whats-new/csharp-7-1.md#async-main), which allows for an asynchronous entry point into the executable. It writes a few instructional messages to the console, then declares a <xref:System.Threading.Tasks.Task> instance named `cancelTask` which will read console key strokes. If the <kbd>Enter</kbd> key is pressed a call to <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> is made. This will signal cancellation. Next, the `sumPageSizesTask` variable is assigned from the `SumPageSizesAsync` method. Both tasks are then passed to <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, which will continue when any of the two tasks have completed.
+The updated `Main` method is now considered an [Async main](../../../whats-new/csharp-7-1.md#async-main), which allows for an asynchronous entry point into the executable. It writes a few instructional messages to the console, then declares a <xref:System.Threading.Tasks.Task> instance named `cancelTask`, which will read console key strokes. If the <kbd>Enter</kbd> key is pressed, a call to <xref:System.Threading.CancellationTokenSource.Cancel?displayProperty=nameWithType> is made. This will signal cancellation. Next, the `sumPageSizesTask` variable is assigned from the `SumPageSizesAsync` method. Both tasks are then passed to <xref:System.Threading.Tasks.Task.WhenAny(System.Threading.Tasks.Task[])?displayProperty=nameWithType>, which will continue when any of the two tasks have completed.
 
 ## Create the asynchronous sum page sizes method
 

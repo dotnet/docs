@@ -29,7 +29,7 @@ You should see the following output:
 Hello World!
 ```
 
-Congratulations! You've created a simple .NET Core application. You can also use [Visual Studio Code](./tutorials/with-visual-studio-code.md), [Visual Studio](./tutorials/with-visual-studio.md) (Windows only), or [Visual Studio for Mac](./tutorials/using-on-mac-vs.md) (macOS only), to create a .NET Core application.
+Congratulations! You've created a simple .NET Core application. You can also use [Visual Studio Code](./tutorials/with-visual-studio-code.md), [Visual Studio](./tutorials/with-visual-studio.md) (Windows only), or [Visual Studio for Mac](tutorials/with-visual-studio-mac.md) (macOS only), to create a .NET Core application.
 
 ## Tutorials
 
@@ -68,7 +68,7 @@ Get started developing .NET Core applications by following these step-by-step tu
 
 - [Get started with .NET Core on macOS using Visual Studio Code](./tutorials/using-on-macos.md)
 - [Get started with .NET Core using the command-line](./tutorials/cli-create-console-app.md)
-- [Get started with .NET Core on macOS using Visual Studio for Mac](./tutorials/using-on-mac-vs.md)
+- [Tutorial: Create a .NET Core console application using Visual Studio for Mac](tutorials/with-visual-studio-mac.md)
 - [Build a .NET Standard library on macOS using Visual Studio for Mac](tutorials/library-with-visual-studio-mac.md)
 
 |   |   |

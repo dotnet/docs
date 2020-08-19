@@ -86,7 +86,7 @@ The most important thing to understand in asynchronous programming is how the co
 
 The numbers in the diagram correspond to the following steps, initiated when the user clicks the "start" button.
 
-1. An event handler calls and awaits the `GetUrlContentLengthAsync` async method.
+1. A calling method calls and awaits the `GetUrlContentLengthAsync` async method.
 
 1. `GetUrlContentLengthAsync` creates an <xref:System.Net.Http.HttpClient> instance and calls the <xref:System.Net.Http.HttpClient.GetStringAsync%2A> asynchronous method to download the contents of a website as a string.
 

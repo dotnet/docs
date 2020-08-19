@@ -156,32 +156,29 @@ Starting with C# 7.0, you can also specify any other return type, provided that 
 The following example shows how you declare and call a method that returns a <xref:System.Threading.Tasks.Task%601> or a <xref:System.Threading.Tasks.Task>:
 
 ```csharp
-// Signature specifies Task<TResult>
 async Task<int> GetTaskOfTResultAsync()
 {
     int hours = 0;
     await Task.Delay(0);
-    // Return statement specifies an integer result.
+
     return hours;
 }
 
-// Calls to GetTaskOfTResultAsync
+
 Task<int> returnedTaskTResult = GetTaskOfTResultAsync();
 int intResult = await returnedTaskTResult;
-// or, in a single statement
-int intResult = await GetTaskOfTResultAsync();
+// Single line
+// int intResult = await GetTaskOfTResultAsync();
 
-// Signature specifies Task
 async Task GetTaskAsync()
 {
     await Task.Delay(0);
-    // The method has no return statement.
+    // No return statement needed
 }
 
-// Calls to GetTaskAsync
 Task returnedTask = GetTaskAsync();
 await returnedTask;
-// or, in a single statement
+// Single line
 await GetTaskAsync();
 ```
 
@@ -193,7 +190,7 @@ An async method that has a `void` return type can't be awaited, and the caller o
 
 An async method can't declare [in](../../../language-reference/keywords/in-parameter-modifier.md), [ref](../../../language-reference/keywords/ref.md) or [out](../../../language-reference/keywords/out-parameter-modifier.md) parameters, but the method can call methods that have such parameters. Similarly, an async method can't return a value by reference, although it can call methods with ref return values.
 
-For more information and examples, see [Async Return Types (C#)](async-return-types.md). For more information about how to catch exceptions in async methods, see [try-catch](../../../language-reference/keywords/try-catch.md).
+For more information and examples, see [Async return types (C#)](async-return-types.md). For more information about how to catch exceptions in async methods, see [try-catch](../../../language-reference/keywords/try-catch.md).
 
 Asynchronous APIs in Windows Runtime programming have one of the following return types, which are similar to tasks:
 
@@ -206,7 +203,7 @@ Asynchronous APIs in Windows Runtime programming have one of the following retur
 
 By convention, methods that return commonly awaitable types (for example, `Task`, `Task<T>`, `ValueTask`, `ValueTask<T>`) should have names that end with "Async". Methods that start an asynchronous operation but do not return an awaitable type should not have names that end with "Async", but may start with "Begin", "Start", or some other verb to suggest this method does not return or throw the result of the operation.
 
-You can ignore the convention where an event, base class, or interface contract suggests a different name. For example, you shouldn't rename common event handlers, such as `Button1_Click`.
+You can ignore the convention where an event, base class, or interface contract suggests a different name. For example, you shouldn't rename common event handlers, such as `OnButtonClick`.
 
 ## <a name="BKMK_RelatedTopics"></a> Related topics and samples (Visual Studio)
 

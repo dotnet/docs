@@ -32,9 +32,11 @@ There are two main scenarios for populating the properties depending on whether 
 
 Additionally, the *\*.deps.json* files for any referenced frameworks are similarly parsed.
 
-Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional dependencies.
+Finally the environment variable `ADDITIONAL_DEPS` can be used to add additional dependencies.  `dotnet.exe` also contains an `--additional-deps` optional parameter to set this value on application startup.
 
 The `APP_PATHS` and `APP_NI_PATHS` properties are not populated by default and are omitted for most applications.
+
+The list of all *\*.deps.json* files used by the application can be accessed via `System.AppContext.GetData("APP_CONTEXT_DEPS_FILES")`.
 
 ### How do I see the probing properties from managed code?
 

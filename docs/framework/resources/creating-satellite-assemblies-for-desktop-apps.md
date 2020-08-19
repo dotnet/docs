@@ -89,13 +89,8 @@ The following is a simple "Hello world" example that displays a message box cont
 
 2. To indicate that English (en) is the application's default culture, add the following <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=nameWithType> attribute to the application's AssemblyInfo file or to the main source code file that will be compiled into the application's main assembly.
 
-    ```csharp
-    [assembly: NeutralResourcesLanguageAttribute("en")]
-    ```
-
-    ```vb
-    <Assembly: NeutralResourcesLanguageAttribute("en")>
-    ```
+    [!code-csharp[Conceptual.Resources.Locating#2](~/samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.locating/cs/assemblyinfo.cs#2)]
+    [!code-vb[Conceptual.Resources.Locating#2](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.locating/vb/assemblyinfo.vb#2)]  
   
 3. Add support for additional cultures (en-US, fr-FR, and ru-RU) to the application as follows:  
   

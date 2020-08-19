@@ -50,7 +50,7 @@ The following outline provides an overview of C#'s type system.
     - User-defined types of the form `struct S {...}`
   - [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)
     - Extensions of all other value types with a `null` value
-  - [Tuple value types](../tuples.md)
+  - [Tuple value types](/dotnet/csharp/language-reference/builtin-types/value-tuples)
     - User-defined types of the form `(T1, T2, ...)`
 - [Reference types](../language-reference/keywords/reference-types.md)
   - [Class types](../language-reference/keywords/class.md)

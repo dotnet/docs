@@ -20,7 +20,7 @@ This guide shows you how to create an ASP.NET Core web app and associated unit t
 
 ### Tutorials
 
-**[Writing .NET Core console apps using the .NET Core CLI: A step-by-step guide](../core/tutorials/cli-create-console-app.md)**
+**[Writing .NET Core console apps using the .NET Core CLI: A step-by-step guide](/dotnet/core/tutorials/with-visual-studio-code)**
 
 This guide shows you how to use the .NET Core CLI tooling to build cross-platform console apps. It starts with a basic console app and eventually spans multiple projects, including testing. You add features step-by-step, building your knowledge as you go. The [completed sample](https://github.com/dotnet/samples/tree/master/core/console-apps) is available in the dotnet/samples repository on GitHub.
 

@@ -6,7 +6,7 @@ ms.date: 08/07/2020
 ---
 # Make secure .NET Microservices and Web Applications
 
-There are so many aspects about security in microservices and web applications that the topic could easy take several books like this one so, in this section, you'll focus on authentication, authorization, and application secrets.
+There are so many aspects about security in microservices and web applications that the topic could easily take several books like this one. So, in this section, we'll focus on authentication, authorization, and application secrets.
 
 ## Implement authentication in .NET microservices and web applications
 

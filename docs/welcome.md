@@ -29,7 +29,7 @@ For information about the latest features added to the .NET implementations and 
 
 - [What's new in .NET Core 3.1](core/whats-new/dotnet-core-3-1.md)
 - [What's new in the .NET Framework](framework/whats-new/index.md)
-- [What's new in C#](/dotnet/csharp/whats-new/csharp-8)
+- [What's new in C#](csharp/whats-new/csharp-8.md)
 - [What's new for Visual Basic](visual-basic/getting-started/whats-new.md)
 
 ## Documentation

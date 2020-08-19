@@ -9,7 +9,7 @@ namespace AsyncExamples
     {
         public static async Task ReadWordsAsync()
         {
-            await foreach (string? word in ReadWordsFromStreamAsync())
+            await foreach (string word in ReadWordsFromStreamAsync())
             {
                 Console.WriteLine(word);
             }
@@ -26,10 +26,10 @@ namespace AsyncExamples
 
             using var readStream = new StringReader(data);
 
-            string? line = await readStream.ReadLineAsync();
+            string line = await readStream.ReadLineAsync();
             while (line != null)
             {
-                foreach (string? word in line.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+                foreach (string word in line.Split(' ', StringSplitOptions.RemoveEmptyEntries))
                 {
                     yield return word;
                 }

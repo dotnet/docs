@@ -933,29 +933,25 @@ Avoid placing the attribute on the same line as the value.
 
 ## Formatting computation expression operations
 
-When creating custom operations for [computation expressions](../language-reference/computation-expressions.md) should use `CONVENTION` naming:
+When creating custom operations for [computation expressions](../language-reference/computation-expressions.md) it is recommended to use camelCase naming:
 
 ```fsharp
 type MathBuilder () =
-    member _.Yield (_) = 0
+    member _.Yield _ = 0
 
-    // snake case
-    [<CustomOperation("add_one")>]
+    [<CustomOperation("addOne")>]
     member _.AddOne (state: int) =
         state + 1
 
-    // camel case
     [<CustomOperation("subtractOne")>]
     member _.SubtractOne (state: int) =
         state - 1
-
-    // screaming case
-    [<CustomOperation("DIVIDEBY")>]
+        
+    [<CustomOperation("divideBy")>]
     member _.DivideBy (state: int, divisor: int) =
         state / divisor
 
-    // pascal case
-    [<CustomOperation("MultiplyBy")>]
+    [<CustomOperation("multiplyBy")>]
     member _.MultiplyBy (state: int, factor: int) =
         state * factor
 
@@ -964,14 +960,14 @@ let math = MathBuilder()
 // 10
 let myNumber =
     math {
-        add_one
-        add_one
-        add_one
+        addOne
+        addOne
+        addOne
 
         subtractOne
 
-        DIVIDEBY 2
+        divideBy 2
 
-        MultiplyBy 10
+        multiplyBy 10
     }
 ```

@@ -3,12 +3,12 @@ title: .NET samples and tutorials
 description: Information on samples and tutorials for .NET Core, ASP.NET Core, and the C# language that help you learn about .NET.
 author: BillWagner
 ms.author: wiwagn
-ms.date: 04/11/2017
+ms.date: 08/19/2020
 ---
 
 # .NET samples and tutorials
 
-The .NET documentation contains a set of samples and tutorials that teach you about .NET. This topic describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#viewing-and-downloading-samples) section.
+The .NET documentation contains a set of samples and tutorials that teach you about .NET. This article describes how to find, view, and download .NET Core, ASP.NET Core, and C# samples and tutorials. Find resources to learn the F# programming language on the [F# Foundation's site](https://fsharp.org/learn/). If you're interested in exploring C# using an online code editor, start with [this interactive tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1) and continue with [C# interactive tutorial](../csharp/tutorials/intro-to-csharp/index.md). For instructions on how to view and download sample code, see the [Viewing and downloading samples](#view-and-download-samples) section.
 
 ## .NET Core
 
@@ -20,9 +20,9 @@ This guide shows you how to create an ASP.NET Core web app and associated unit t
 
 ### Tutorials
 
-**[Writing .NET Core console apps using the .NET Core CLI: A step-by-step guide](../core/tutorials/with-visual-studio-code.md)**
+**[Tutorial: Create a .NET Core console application using Visual Studio Code](../core/tutorials/with-visual-studio-code.md)**
 
-This guide shows you how to use the .NET Core CLI tooling to build cross-platform console apps. It starts with a basic console app and eventually spans multiple projects, including testing. You add features step-by-step, building your knowledge as you go. The [completed sample](https://github.com/dotnet/samples/tree/master/core/console-apps) is available in the dotnet/samples repository on GitHub.
+This tutorial shows how to create and run a .NET Core console application by using Visual Studio Code and the .NET Core CLI. Project tasks, such as creating, compiling, and running a project are done by using the .NET Core CLI.
 
 **[Writing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)**
 
@@ -96,7 +96,7 @@ This tutorial shows you how to build a simple application on .NET Core that supp
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
 
-## Viewing and downloading samples
+## View and download samples
 
 Many topics show source code and samples that are available for viewing or download from GitHub. To view a sample, just follow the sample link. To download the code, follow these instructions:
 

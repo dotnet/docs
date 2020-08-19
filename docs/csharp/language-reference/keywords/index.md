@@ -8,6 +8,7 @@ helpviewer_keywords:
   - "C# language, keywords"
   - "Visual C#, keywords"
   - "@ keyword"
+ms.custom: "updateeachrelease"
 ms.assetid: e929b0f2-4b92-4d37-8060-23d323b098ad
 ---
 # C# Keywords

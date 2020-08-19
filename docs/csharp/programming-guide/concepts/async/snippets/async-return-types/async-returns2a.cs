@@ -24,7 +24,7 @@ public class AwaitTaskExample
 
         Console.WriteLine("Sorry for the delay...\n");
     }
-    // The example displays the following output:
+    // Example output:
     //    Sorry for the delay...
     //
     // Today is Monday, August 17, 2020

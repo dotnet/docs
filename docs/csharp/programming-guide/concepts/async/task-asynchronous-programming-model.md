@@ -40,7 +40,7 @@ The following example shows an async method. Almost everything in the code shoul
 
 You can find a complete Windows Presentation Foundation (WPF) example available for download from [Asynchronous programming with async and await in C#](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs).
 
-:::code language="csharp" source="snippets/access-web/access-web/Program.cs" id="ControlFlow":::
+:::code language="csharp" source="snippets/access-web/Program.cs" id="ControlFlow":::
 
 You can learn several practices from the preceding sample. Start with the method signature. It includes the `async` modifier. The return type is `Task<int>` (See "Return Types" section for more options). The method name ends in `Async`. In the body of the method, `GetStringAsync` returns a `Task<string>`. That means that when you `await` the task you'll get a `string` (`contents`). Before awaiting the task, you can do work that doesn't rely on the `string` from `GetStringAsync`.
 

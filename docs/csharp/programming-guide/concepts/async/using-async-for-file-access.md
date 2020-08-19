@@ -31,11 +31,11 @@ The following examples write text to a file. At each await statement, the method
 
 ### Simple example
 
-:::code language="csharp" source="snippets/file-access/file-access/Program.cs" id="SimpleWrite":::
+:::code language="csharp" source="snippets/file-access/Program.cs" id="SimpleWrite":::
 
 ### Finite control example
 
-:::code language="csharp" source="snippets/file-access/file-access/Program.cs" id="WriteText":::
+:::code language="csharp" source="snippets/file-access/Program.cs" id="WriteText":::
 
 The original example has the statement `await sourceStream.WriteAsync(encodedText, 0, encodedText.Length);`, which is a contraction of the following two statements:
 
@@ -52,13 +52,13 @@ The following examples read text from a file.
 
 ### Simple example
 
-:::code language="csharp" source="snippets/file-access/file-access/Program.cs" id="SimpleRead":::
+:::code language="csharp" source="snippets/file-access/Program.cs" id="SimpleRead":::
 
 ### Finite control example
 
 The text is buffered and, in this case, placed into a <xref:System.Text.StringBuilder>. Unlike in the previous example, the evaluation of the await produces a value. The <xref:System.IO.Stream.ReadAsync%2A> method returns a <xref:System.Threading.Tasks.Task>\<<xref:System.Int32>>, so the evaluation of the await produces an `Int32` value `numRead` after the operation completes. For more information, see [Async Return Types (C#)](async-return-types.md).
 
-:::code language="csharp" source="snippets/file-access/file-access/Program.cs" id="ReadText":::
+:::code language="csharp" source="snippets/file-access/Program.cs" id="ReadText":::
 
 ## Parallel asynchronous I/O
 
@@ -66,7 +66,7 @@ The following examples demonstrate parallel processing by writing 10 text files.
 
 ### Simple example
 
-:::code language="csharp" source="snippets/file-access/file-access/Program.cs" id="SimpleParallelWrite":::
+:::code language="csharp" source="snippets/file-access/Program.cs" id="SimpleParallelWrite":::
 
 ### Finite control example
 
@@ -76,7 +76,7 @@ The example closes all <xref:System.IO.FileStream> instances in a `finally` bloc
 
 Any performance boost is almost entirely from the parallel processing and not the asynchronous processing. The advantages of asynchrony are that it doesn't tie up multiple threads, and that it doesn't tie up the user interface thread.
 
-:::code language="csharp" source="snippets/file-access/file-access/Program.cs" id="ParallelWriteText":::
+:::code language="csharp" source="snippets/file-access/Program.cs" id="ParallelWriteText":::
 
 When using the <xref:System.IO.Stream.WriteAsync%2A> and <xref:System.IO.Stream.ReadAsync%2A> methods, you can specify a <xref:System.Threading.CancellationToken>, which you can use to cancel the operation mid-stream. For more information, see [Cancellation in managed threads](../../../../standard/threading/cancellation-in-managed-threads.md).
 

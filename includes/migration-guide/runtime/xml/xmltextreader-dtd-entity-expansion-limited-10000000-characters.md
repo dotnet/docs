@@ -23,7 +23,8 @@ If the limit of DTD entity expansion is too low 10,000,000, the value can be ove
 - <xref:System.Xml.XmlTextReader.%23ctor(System.IO.Stream,System.Xml.XmlNodeType,System.Xml.XmlParserContext)>
 - <xref:System.Xml.XmlTextReader.%23ctor(System.IO.TextReader)>
 - <xref:System.Xml.XmlTextReader.%23ctor(System.IO.TextReader,System.Xml.XmlNameTable)>
-- <xref:System.Xml.XmlTextReader.%23ctor(System.String)></li><li><xref:System.Xml.XmlTextReader.%23ctor(System.String,System.IO.Stream)>
+- <xref:System.Xml.XmlTextReader.%23ctor(System.String)>
+- <xref:System.Xml.XmlTextReader.%23ctor(System.String,System.IO.Stream)>
 - <xref:System.Xml.XmlTextReader.%23ctor(System.String,System.IO.Stream,System.Xml.XmlNameTable)>
 - <xref:System.Xml.XmlTextReader.%23ctor(System.String,System.IO.TextReader)>
 - <xref:System.Xml.XmlTextReader.%23ctor(System.String,System.IO.TextReader,System.Xml.XmlNameTable)>

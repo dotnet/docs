@@ -1,24 +1,15 @@
 ---
-title: F# Interactive (fsi.exe) Reference
-description: Learn how F# Interactive (fsi.exe) is used to run F# code interactively at the console or to execute F# scripts.
-ms.date: 05/16/2016
+title: F# Interactive (dotnet) Reference
+description: Learn how F# Interactive (dotnet fsi) is used to run F# code interactively at the console or to execute F# scripts.
+ms.date: 08/20/2020
 f1_keywords:
  - VS.ToolsOptionsPages.F#_Tools.F#_Interactive
 ---
 # Interactive programming with F\#
 
-> [!NOTE]
-> This article currently describes the experience for Windows only.
+F# Interactive (dotnet fsi) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
 
-F# Interactive (fsi.exe) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
-
-To run F# Interactive from the console, run fsi.exe. You will find fsi.exe in:
-
-```console
-C:\Program Files (x86)\Microsoft Visual Studio\2019\<sku>\Common7\IDE\CommonExtensions\Microsoft\FSharp
-```
-
-where `sku` is either `Community`, `Professional`, or `Enterprise`.
+To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet fsi` in any .Net Core SDK.
 
 For information about command line options available, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 
@@ -38,7 +29,7 @@ You can control the F# Interactive command line arguments (options) by adjusting
 
 ## Scripting with F\#
 
-Scripts use the file extension **.fsx** or **.fsscript**. Instead of compiling source code and then later running the compiled assembly, you can just run **fsi.exe** and specify the filename of the script of F# source code, and F# interactive reads the code and executes it in real time.
+Scripts use the file extension **.fsx** or **.fsscript**. Instead of compiling source code and then later running the compiled assembly, you can just run **dotnet fsi** and specify the filename of the script of F# source code, and F# interactive reads the code and executes it in real time.
 
 ## Differences between the interactive, scripting, and compiled environments
 
@@ -86,6 +77,36 @@ Command line arguments:
 file1.fsx
 test
 90
+```
+
+## Package Management in F# Interactive
+
+[!NOTE] Package management is available as a preview feature in versions of `dotnet fsi` shipped in the `3.1.300' and greater versions of the .Net Core SDK, as well as all 5.* versions of the .Net SDK. To enable it in this preview release, run `dotnet fsi` with the `--langversion:preview` argument.
+
+The `#r` syntax for referencing a DLL in F# Interactive can also be used to reference a nuget package via the following syntax:
+
+```fsharp
+#r "nuget: <package name>
+```
+
+For example, to reference the `FSharp.Data` package, use the following `#r` reference:
+
+```fsharp
+#r "nuget: FSharp.Data"
+```
+
+After executing this line, the package `FSharp.Data` will be downloaded to your nuget cache and referenced in the current F# Interactive session.
+
+In addition to the package name, specific versions of a package can be referenced via a short syntax:
+
+```fsharp
+#r "nuget: FSharp.Data, 3.3.2"
+```
+
+or in a more explicit fashion:
+
+```fsharp
+#r "nuget: FSharp.Data, Version=3.3.2"
 ```
 
 ## Related articles

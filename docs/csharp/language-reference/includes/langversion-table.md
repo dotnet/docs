@@ -1,3 +1,7 @@
+---
+ms.custom: "updateeachrelease"
+---
+
 | Value                     | Meaning                                                                                                 |
 |---------------------------|---------------------------------------------------------------------------------------------------------|
 | `preview`                 | The compiler accepts all valid language syntax from the latest preview version.                         |

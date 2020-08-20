@@ -23,7 +23,7 @@ dotnet-gcdump [-h|--help] [--version] <command>
 
 ## Description
 
-The `dotnet-gcdump` global tool is a way to collect GC (Garbage Collector) dumps of live .NET processes. It uses the EventPipe technology, which is a cross-platform alternative to ETW on Windows. GC dumps are created by triggering a GC in the target process, turning on special events, and regenerating the graph of object roots from the event stream. This allows for GC dumps to be collected while the process is running, with minimal overhead. These dumps are useful for several scenarios:
+The `dotnet-gcdump` global tool is a way to collect GC (Garbage Collector) dumps of live .NET processes. It uses the EventPipe technology, which is a cross-platform alternative to ETW on Windows. GC dumps are created by triggering a GC in the target process, turning on special events, and regenerating the graph of object roots from the event stream. This process allows for GC dumps to be collected while the process is running and with minimal overhead. These dumps are useful for several scenarios:
 
 - Comparing the number of objects on the heap at several points in time.
 - Analyzing roots of objects (answering questions like, "what still has a reference to this type?").
@@ -63,7 +63,7 @@ dotnet-gcdump collect [-h|--help] [-p|--process-id <pid>] [-o|--output <gcdump-f
 
 - **`-p|--process-id <pid>`**
 
-  The process id to collect the GC dump from.
+  The process ID to collect the GC dump from.
 
 - **`-o|--output <gcdump-file-path>`**
 
@@ -109,7 +109,7 @@ dotnet-gcdump report [-h|--help] [-p|--process-id <pid>] [-t|--report-type <Heap
 
 - **`-p|--process-id <pid>`**
 
-  The process id to collect the GC dump from.
+  The process ID to collect the GC dump from.
 
 - **`-t|--report-type <HeapStat>`**
 

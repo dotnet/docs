@@ -971,3 +971,6 @@ let myNumber =
         multiplyBy 10
     }
 ```
+
+The naming convention used should ultimately be driven by the domain being modeled.
+If it is idiomatic to use a different convention, that convention should be used instead.

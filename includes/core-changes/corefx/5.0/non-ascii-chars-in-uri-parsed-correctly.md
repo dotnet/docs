@@ -11,8 +11,8 @@ Consider the output of the following code when run on Unix.
 ```csharp
 var myUri = new Uri("/üri");
 
-Console.WriteLine(myuri.AbsoluteUri);
-Console.WriteLine(myuri.ToString());
+Console.WriteLine($"AbsoluteUri: {myUri.AbsoluteUri}");
+Console.WriteLine($"ToString: {myUri.ToString()}");
 ```
 
 Output on previous .NET version:

@@ -9,7 +9,7 @@ In previous versions of .NET, absolute URI paths that contain non-ASCII characte
 Consider the output of the following code when run on Unix.
 
 ```csharp
-Uri myuri = new Uri("/üri");
+var myUri = new Uri("/üri");
 
 Console.WriteLine(myuri.AbsoluteUri);
 Console.WriteLine(myuri.ToString());

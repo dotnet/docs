@@ -159,7 +159,7 @@ See the [.NET guide](index.yml)
 
 ## .NET 5 and later versions
 
-A cross-platform, high-performance, open-source implementation of .NET. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-core-sdk).
+A cross-platform, high-performance, open-source implementation of .NET. Includes a Common Language Runtime ([CLR](#clr)), an [AOT](#aot) runtime ([CoreRT](#corert), in development), a Base Class Library ([BCL](#bcl)), and the [.NET SDK](#net-sdk).
 
 Earlier versions of this .NET implementation are known as .NET Core. .NET 5.0 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
 
@@ -195,7 +195,7 @@ See [Intro to .NET Native and CoreRT](https://github.com/dotnet/corert/blob/mast
 
 A set of libraries and tools that allow developers to create .NET applications and libraries for [.NET 5 and later versions (including .NET Core 2.1-3.1)](#net-5-and-later-versions). Also known as the .NET Core SDK.
 
-Includes the [.NET CLI](#net-core-cli) for building apps, .NET libraries and runtime for building and running apps, and the dotnet executable (*dotnet.exe*) that runs CLI commands and runs applications.
+Includes the [.NET CLI](#net-cli) for building apps, .NET libraries and runtime for building and running apps, and the dotnet executable (*dotnet.exe*) that runs CLI commands and runs applications.
 
 See [.NET SDK Overview](../core/sdk.md).
 

@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [URI paths with non-ASCII characters parse correctly on Unix](#uri-paths-with-non-ascii-characters-parse-correctly-on-unix) | 5.0 |
 | [Uri recognition of UNC paths on Unix](#uri-recognition-of-unc-paths-on-unix) | 5.0 |
 | [Environment.OSVersion returns the correct operating system version](#environmentosversion-returns-the-correct-operating-system-version) | 5.0 |
 | [Complexity of LINQ OrderBy.First{OrDefault} increased](#complexity-of-linq-orderbyfirstordefault-increased) | 5.0 |
@@ -42,6 +43,10 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [non-ascii-chars-in-uri-parsed-correctly](../../../includes/core-changes/corefx/5.0/non-ascii-chars-in-uri-parsed-correctly.md)]
+
+***
 
 [!INCLUDE [unc-path-recognition-unix](../../../includes/core-changes/corefx/5.0/unc-path-recognition-unix.md)]
 

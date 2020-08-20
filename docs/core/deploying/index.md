@@ -149,5 +149,5 @@ dotnet publish -r win-x64
 
 - [Deploying .NET Core Apps with .NET Core CLI.](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio.](deploy-with-vs.md)
-- [.NET Core Runtime IDentifier (RID) catalog.](../rid-catalog.md)
+- [.NET Core Runtime Identifier (RID) catalog.](../rid-catalog.md)
 - [Select the .NET Core version to use.](../versions/selection.md)

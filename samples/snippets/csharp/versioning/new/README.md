@@ -13,7 +13,7 @@ the `new` modifier when versioning .NET libraries.
 
 To build and run the sample, type the following two commands:
 
-```
+```console
 dotnet restore
 dotnet run
 ```

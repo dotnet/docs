@@ -63,7 +63,7 @@ As the preceding image shows, the published output includes the following files:
 
 1. Open a terminal and navigate to the *publish* folder. To do that, enter `cd` and then paste the path that you copied earlier. For example:
 
-   ```
+   ```console
    cd ~/Projects/HelloWorld/HelloWorld/bin/Release/netcoreapp3.1/publish/
    ```
 

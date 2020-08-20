@@ -45,13 +45,13 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    From:
 
-   ```
+   ```json
    "console": "internalConsole",
    ```
 
    To:
 
-   ```
+   ```json
    "console": "integratedTerminal",
    ```
 

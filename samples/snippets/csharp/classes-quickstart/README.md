@@ -12,7 +12,7 @@ This sample demonstrates introduction of object oriented programming with classe
 
 To build and run the sample, type the following two commands:
 
-```
+```console
 dotnet restore
 dotnet run
 ```

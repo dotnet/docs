@@ -13,7 +13,7 @@ and `await`, converting JSON objects into C# objects, and terminal output.
 
 To build and run the sample, type the following two commands:
 
-```
+```console
 dotnet restore
 dotnet run
 ```

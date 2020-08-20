@@ -14,7 +14,7 @@ using multicast delegates.
 
 To build and run the sample, type the following two commands:
 
-```
+```console
 dotnet restore
 dotnet run
 ```

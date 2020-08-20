@@ -13,7 +13,7 @@ This tutorial follows [Tutorial: Create a console application with .NET Core usi
 
 If you want to introduce new types into a console app, you can do so by adding files containing the types to the app. For example if you add files containing `AccountInformation` and `MonthlyReportRecords` types to your project, the project file structure is flat and easy to navigate:
 
-```
+```console
 /MyProject
 |__AccountInformation.cs
 |__MonthlyReportRecords.cs
@@ -25,7 +25,7 @@ However, this only works well when the size of your project is relatively small.
 
 To organize the project, create a new folder and name it *Models* to hold the type files. Place the type files into the *Models* folder:
 
-```
+```console
 /MyProject
 |__/Models
    |__AccountInformation.cs
@@ -46,7 +46,7 @@ The sample contains two types, `Dog` and `Cat`, and has them implement a common 
 
 Create the following folder structure with file content indicated:
 
-```
+```console
 /NewTypes
 |__/src
    |__/NewTypes
@@ -160,7 +160,7 @@ Optional exercise: If you added a `Bird` type earlier that yields a `Tweet!` to 
 
 The following shows the complete project structure:
 
-```
+```console
 /NewTypes
 |__/src
    |__/NewTypes

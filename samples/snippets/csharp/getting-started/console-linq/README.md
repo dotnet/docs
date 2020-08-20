@@ -10,7 +10,7 @@ This sample demonstrates querying data sources and processing them using Languag
 
 To build and run the sample, type the following two commands:
 
-```
+```console
 dotnet restore
 dotnet run
 ```

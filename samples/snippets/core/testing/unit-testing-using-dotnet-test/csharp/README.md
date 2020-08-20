@@ -10,7 +10,7 @@ This sample demonstrates creating a library and writing effective unit tests tha
 
 To run the tests, navigate to the *PrimeService.Tests* directory and type the following commands:
 
-```
+```console
 dotnet restore
 dotnet test
 ```

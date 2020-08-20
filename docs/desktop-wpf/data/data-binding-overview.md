@@ -168,12 +168,12 @@ You may need to apply custom logic so that the data is meaningful to your bound 
 
 Before getting into other features and usages of data binding, it is useful to introduce the <xref:System.Windows.Data.BindingExpression> class. As you have seen in previous sections, the <xref:System.Windows.Data.Binding> class is the high-level class for the declaration of a binding; it provides many properties that allow you to specify the characteristics of a binding. A related class, <xref:System.Windows.Data.BindingExpression>, is the underlying object that maintains the connection between the source and the target. A binding contains all the information that can be shared across several binding expressions. A <xref:System.Windows.Data.BindingExpression> is an instance expression that cannot be shared and contains all the instance information of the <xref:System.Windows.Data.Binding>.
 
-Consider the following example, where `myDataObject` is an instance of the `MyData` class, `myBinding` is the source <xref:System.Windows.Data.Binding> object, and `MyData` is a defined class that contains a string property named `MyDataProperty`. This example binds the text content of `myText`, an instance of <xref:System.Windows.Controls.TextBlock>, to `MyDataProperty`.
+Consider the following example, where `myDataObject` is an instance of the `MyData` class, `myBinding` is the source <xref:System.Windows.Data.Binding> object, and `MyData` is a defined class that contains a string property named `ColorName`. This example binds the text content of `myText`, an instance of <xref:System.Windows.Controls.TextBlock>, to `ColorName`.
 
 [!code-csharp[CodeOnlyBinding](~/samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/ManualBinding.cs#CodeOnlyBinding)]
 [!code-vb[CodeOnlyBinding](~/samples/snippets/desktop-guide/wpf/data-binding-overview/vb/ManualBinding.vb#CodeOnlyBinding)]
 
-You can use the same *myBinding* object to create other bindings. For example, you can use the *myBinding* object to bind the text content of a check box to *MyDataProperty*. In that scenario, there will be two instances of <xref:System.Windows.Data.BindingExpression> sharing the *myBinding* object.
+You can use the same *myBinding* object to create other bindings. For example, you can use the *myBinding* object to bind the text content of a check box to *ColorName*. In that scenario, there will be two instances of <xref:System.Windows.Data.BindingExpression> sharing the *myBinding* object.
 
 A <xref:System.Windows.Data.BindingExpression> object is returned by calling <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> on a data-bound object. The following articles demonstrate some of the usages of the <xref:System.Windows.Data.BindingExpression> class:
 

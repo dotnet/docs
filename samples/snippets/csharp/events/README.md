@@ -13,7 +13,7 @@ events, and release event handlers.
 
 To build and run the sample, type the following two commands:
 
-```console
+```dotnetcli
 dotnet restore
 dotnet run
 ```

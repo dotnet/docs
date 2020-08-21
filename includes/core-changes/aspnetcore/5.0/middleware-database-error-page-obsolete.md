@@ -36,7 +36,7 @@ Complete the following steps:
     }
     ```
 
-1. Ensure the developer exception page is added to your project. For example, call the <xref:Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions.UseDeveloperExceptionPage%2A> method in `Startup.Configure`:
+1. Add the developer exception page to your project. For example, call the <xref:Microsoft.AspNetCore.Builder.DeveloperExceptionPageExtensions.UseDeveloperExceptionPage%2A> method in `Startup.Configure`:
 
     ```csharp
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

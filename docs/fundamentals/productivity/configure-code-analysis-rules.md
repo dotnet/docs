@@ -6,14 +6,16 @@ ms.topic: conceptual
 ---
 # Configure code analysis rules
 
-You configure the severity of .NET code analysis rules by using an [EditorConfig file](https://editorconfig.org/). Add an entry for each rule you want to configure under the corresponding file extension, for example, `*.cs`. The syntax for the EditorConfig file is as follows:
+You configure the severity of .NET code analysis rules by using an [EditorConfig file](https://editorconfig.org/). Add an entry for each rule you want to configure under the corresponding file extension, for example, `*.cs`. The syntax for the *.editorconfig* file is as follows:
 
-`dotnet_diagnostic.<rule ID>.severity = <severity>`
+```ini
+dotnet_diagnostic.<rule ID>.severity = <severity>
+```
 
 The following example demonstrates setting the severity for rule `CA1822` to `error` for C# files.
 
 ```ini
-[*.cs]
+[*.{cs,vb}]
 dotnet_diagnostic.CA1822.severity = error
 ```
 
@@ -36,11 +38,15 @@ You can set the severity for a specific category of analyzer rules or for all an
 
 - Set rule severity for a category of analyzer rules:
 
-  `dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity>`
+  ```ini
+  dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity>
+  ```
 
 - Set rule severity for all analyzer rules:
 
-  `dotnet_analyzer_diagnostic.severity = <severity>`
+  ```ini
+  dotnet_analyzer_diagnostic.severity = <severity>
+  ```
 
 ## Precedence
 
@@ -77,6 +83,8 @@ generated_code = true
 
 To suppress a rule violation in an EditorConfig file, set the severity to `none`. For example:
 
-`dotnet_diagnostic.CA1822.severity = none`
+```ini
+dotnet_diagnostic.CA1822.severity = none
+```
 
 Visual Studio provides additional ways to suppress rule violations. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).

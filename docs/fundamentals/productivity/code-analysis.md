@@ -26,12 +26,12 @@ The following rules are enabled, by default, in .NET 5.0 Preview 8.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |
-| [CA1417](/visualstudio/code-quality/ca1417) | Interoperability | Warning | Do not use OutAttribute on string parameters for P/Invokes |
-| [CA1831](/visualstudio/code-quality/ca1831) | Performance | Warning | Use AsSpan instead of Range-based indexers for string when appropriate |
-| [CA2013](/visualstudio/code-quality/ca2013) | Reliability | Warning | Do not use ReferenceEquals with value types |
-| [CA2014](/visualstudio/code-quality/ca2014) | Reliability | Warning | Do not use stackalloc in loops |
-| [CA2015](/visualstudio/code-quality/ca2015) | Reliability | Warning | Do not define finalizers for types derived from MemoryManager<T> |
-| [CA2247](/visualstudio/code-quality/ca2247) | Usage | Warning | Argument passed to TaskCompletionSource constructor should be TaskCreationOptions enum instead of TaskContinuationOptions |
+| [CA1417](/visualstudio/code-quality/ca1417) | Interoperability | Warning | Do not use `OutAttribute` on string parameters for P/Invokes |
+| [CA1831](/visualstudio/code-quality/ca1831) | Performance | Warning | Use `AsSpan` instead of range-based indexers for string when appropriate |
+| [CA2013](/visualstudio/code-quality/ca2013) | Reliability | Warning | Do not use `ReferenceEquals` with value types |
+| [CA2014](/visualstudio/code-quality/ca2014) | Reliability | Warning | Do not use `stackalloc` in loops |
+| [CA2015](/visualstudio/code-quality/ca2015) | Reliability | Warning | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2247](/visualstudio/code-quality/ca2247) | Usage | Warning | Argument passed to TaskCompletionSource constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
 
 You can change the severity of these rules to disable them or elevate them to errors. For more information, see [Configure code analysis rules](configure-code-analysis-rules.md).
 
@@ -63,7 +63,6 @@ By default, you'll get the latest code analysis rules and default rule severitie
   > The default value for the `AnalysisLevel` property is `latest`, which means you always get the latest code analysis rules as you move to newer versions of the .NET SDK.
 
 - Install the code analyzers [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) to decouple rule updates from .NET SDK updates. Installing the package turns off the built-in SDK analyzers and generates a build warning if the SDK contains a newer analyzer assembly version than that of the NuGet package.
-
 
 ## See also
 

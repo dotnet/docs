@@ -10,4 +10,14 @@ Fixed incorrect result of pressing an arrow key when the focus is on a hyperlink
 |Version|4.8|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

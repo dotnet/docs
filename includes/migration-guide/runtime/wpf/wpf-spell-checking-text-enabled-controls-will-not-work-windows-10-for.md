@@ -14,4 +14,14 @@ Be aware that the language or text to be spell-checked must be added as an input
 |Version|4.6|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

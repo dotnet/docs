@@ -14,4 +14,14 @@ In general, applications should depend on the recommended techniques for detecti
 |Version|4.6|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

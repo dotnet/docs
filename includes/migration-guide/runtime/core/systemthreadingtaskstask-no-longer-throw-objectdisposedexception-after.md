@@ -14,4 +14,14 @@ Be aware that Task methods may no longer throw <xref:System.ObjectDisposedExcept
 |Version|4.5|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

@@ -14,4 +14,14 @@ If enabling the QI for IAgileObject breaks execution, you can disable this code 
 |Version|4.8|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

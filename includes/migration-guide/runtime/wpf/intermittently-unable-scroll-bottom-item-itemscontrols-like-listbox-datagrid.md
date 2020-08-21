@@ -14,4 +14,14 @@ This issue has been fixed in the .NET Framework 4.5.2 and may be addressed by up
 |Version|4.5|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

@@ -14,4 +14,14 @@ See [Mitigation: Deserialization of Objects Across App Domains](~/docs/framework
 |Version|4.5.1|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

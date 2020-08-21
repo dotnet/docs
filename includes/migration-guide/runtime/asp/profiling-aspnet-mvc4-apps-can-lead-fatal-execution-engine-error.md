@@ -14,4 +14,14 @@ This issue is fixed in the .NET Framework 4.5.2. Alternatively, the profiler may
 |Version|4.5|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs header? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

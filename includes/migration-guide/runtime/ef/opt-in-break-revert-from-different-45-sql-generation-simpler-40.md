@@ -14,4 +14,14 @@ This feature is disabled by default. If Entity Framework generates extra JOIN st
 |Version|4.5.2|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

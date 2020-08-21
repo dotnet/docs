@@ -14,4 +14,14 @@ If you find that regular expressions in your web application do not work after u
 |Version|4.7.2|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

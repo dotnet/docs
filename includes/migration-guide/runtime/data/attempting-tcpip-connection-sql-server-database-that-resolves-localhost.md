@@ -14,4 +14,14 @@ This issue has been addressed and the previous behavior restored in the .NET Fra
 |Version|4.6|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

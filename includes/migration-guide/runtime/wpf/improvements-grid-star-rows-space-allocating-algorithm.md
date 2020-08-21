@@ -14,4 +14,14 @@ In order for the application to benefit from these changes, it must run on the .
 |Version|4.8|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

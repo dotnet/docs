@@ -14,4 +14,14 @@ This change only affects code that uses QueryViews with 1-0..1 relationships whe
 |Version|4.5.2|
 |Type|Runtime|
 
-<!-- TODO: Affected APIs? -->
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

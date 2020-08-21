@@ -13,5 +13,3 @@ If iPad-specific capabilities are required, it is necessary to modify iPad behav
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
-
-<!-- TODO: Should this include #### Affected APIs heading with text "None" under it? -->

@@ -46,7 +46,7 @@ var log = new LoggerConfiguration()
 
 Logstash would use a configuration like the one shown in Figure 7-8.
 
-```conf
+```
 input {
     http {
         #default host 0.0.0.0:8080

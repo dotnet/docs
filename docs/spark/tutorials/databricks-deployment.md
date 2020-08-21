@@ -179,7 +179,7 @@ Your app runs on Azure Databricks through a job that runs **spark-submit**, whic
 
 3. Paste the following parameters in the job configuration. Then, select **Confirm**.
 
-   ```conf
+   ```
    ["--class","org.apache.spark.deploy.dotnet.DotnetRunner","/dbfs/spark-dotnet/microsoft-spark-2.4.x-0.6.0.jar","/dbfs/spark-dotnet/publish.zip","mySparkApp"]
    ```
 

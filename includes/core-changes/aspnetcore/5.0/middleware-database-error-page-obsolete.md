@@ -1,6 +1,6 @@
 ### Middleware: Database error page marked as obsolete
 
-The [DatabaseErrorPageMiddleware](/dotnet/api/microsoft.aspnetcore.diagnostics.entityframeworkcore.databaseerrorpagemiddleware?view=aspnetcore-3.0) and its associated extension methods were marked as obsolete in .NET 5.0. The middleware and extension methods will be removed in .NET 6.0. The functionality will instead be provided by `DatabaseDeveloperPageExceptionFilter` and its extension methods.
+The [DatabaseErrorPageMiddleware](/dotnet/api/microsoft.aspnetcore.diagnostics.entityframeworkcore.databaseerrorpagemiddleware?view=aspnetcore-3.0) and its associated extension methods were marked as obsolete in ASP.NET Core 5.0. The middleware and extension methods will be removed in ASP.NET Core 6.0. The functionality will instead be provided by `DatabaseDeveloperPageExceptionFilter` and its extension methods.
 
 For discussion, see the GitHub issue at [dotnet/aspnetcore#24987](https://github.com/dotnet/aspnetcore/issues/24987).
 

@@ -17,6 +17,7 @@ This category consists of the following events:
 - [GCStart_V1 Event](#gcstart_v1-event)
 - [GCEnd_V1 Event](#gcend_v1-event)
 - [GCHeapStats_V1 Event](#gcheapstats_v1-event)
+- [GCHeapStats_V2 Event](#gcheapstats_v2-event)
 - [GCCreateSegment_V1 Event](#gccreatesegment_v1-event)
 - [GCFreeSegment_V1 Event](#gcfreesegment_v1-event)
 - [GCRestartEEBegin_V1 Event](#gcrestarteebegin_v1-event)
@@ -24,6 +25,7 @@ This category consists of the following events:
 - [GCSuspendEE_V1 Event](#gcsuspendee_v1-event)
 - [GCSuspendEEEnd_V1 Event](#gcsuspendeeend_v1-event)
 - [GCAllocationTick_V2 Event](#gcallocationtick_v2-event)
+- [GCAllocationTick_V3 Event](#gcallocationtick_v3-event)
 - [GCFinalizersBegin_V1 Event](#gcfinalizersbegin_v1-event)
 - [GCFinalizersEnd_V1 Event](#gcfinalizersend_v1-event)
 - [GCCreateConcurrentThread_V1 Event](#gccreateconcurrentthread_v1-event)
@@ -107,6 +109,41 @@ The following table shows the event data:
 |SinkBlockCount|win:UInt32|The number of synchronization blocks in use.|
 |GCHandleCount|win:UInt32|The number of garbage collection handles in use.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+  
+## GCHeapStats_V2 Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|Informational (4)|
+
+The following table shows the event information:
+
+|Event|Event ID|Description|
+|-----------|--------------|-----------------|
+|`GCHeapStats_V2`|4|Shows the heap statistics at the end of each garbage collection.|
+
+The following table shows the event data:
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|GenerationSize0|win:UInt64|The size, in bytes, of generation 0 memory.|
+|TotalPromotedSize0|win:UInt64|The number of bytes that are promoted from generation 0 to generation 1.|
+|GenerationSize1|win:UInt64|The size, in bytes, of generation 1 memory.|
+|TotalPromotedSize1|win:UInt64|The number of bytes that are promoted from generation 1 to generation 2.|
+|GenerationSize2|win:UInt64|The size, in bytes, of generation 2 memory.|
+|TotalPromotedSize2|win:UInt64|The number of bytes that survived in generation 2 after the last collection.|
+|GenerationSize3|win:UInt64|The size, in bytes, of the large object heap.|
+|TotalPromotedSize3|win:UInt64|The number of bytes that survived in the large object heap after the last collection.|
+|FinalizationPromotedSize|win:UInt64|The total size, in bytes, of the objects that are ready for finalization.|
+|FinalizationPromotedCount|win:UInt64|The number of objects that are ready for finalization.|
+|PinnedObjectCount|win:UInt32|The number of pinned (unmovable) objects.|
+|SinkBlockCount|win:UInt32|The number of synchronization blocks in use.|
+|GCHandleCount|win:UInt32|The number of garbage collection handles in use.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|GenerationSize4|win:UInt64|The size, in bytes, of the pinned object heap.|
+|TotalPromotedSize4|win:UInt64|The number of bytes that survived in the pinned object heap after the last collection.|
   
 ## GCCreateSegment_V1 Event
 
@@ -249,6 +286,33 @@ The following table shows the event data:
 |TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
 |TypeName|win:UnicodeString|The name of the type that was allocated. When there are several types of objects that were allocated during this event, this is the type of the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
 |HeapIndex|win:UInt32|The heap where the object was allocated. This value is 0 (zero) when running with workstation garbage collection.|
+
+## GCAllocationTick_V3 Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|Informational (4)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`GCAllocationTick_V3`|10|Each time approximately 100 KB is allocated.|
+
+The following table shows the event data:
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|AllocationAmount|win:UInt32|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
+|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|AllocationAmount64|win:UInt64|The allocation size, in bytes. This value is accurate for very large allocations.|
+|TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
+|TypeName|win:UnicodeString|The name of the type that was allocated. When there are several types of objects that were allocated during this event, this is the type of the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
+|HeapIndex|win:UInt32|The heap where the object was allocated. This value is 0 (zero) when running with workstation garbage collection.|
+|Address|win:Pointer|The address of the last allocated object.|
 
 ## GCFinalizersBegin_V1 Event
 

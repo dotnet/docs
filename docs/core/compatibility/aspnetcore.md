@@ -22,6 +22,7 @@ The following breaking changes are documented on this page:
 - [Authorization: IAuthorizationPolicyProvider implementations require new method](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
 - [Authorization: Resource in endpoint routing is HttpContext](#authorization-resource-in-endpoint-routing-is-httpcontext)
 - [Azure: Microsoft-prefixed Azure integration packages removed](#azure-microsoft-prefixed-azure-integration-packages-removed)
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
 - [Blazor: Insignificant whitespace trimmed from components at compile time](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
 - [Blazor: Target framework of NuGet packages changed](#blazor-target-framework-of-nuget-packages-changed)
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
@@ -93,6 +94,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
+
+***
+
+[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
 
 ***
 

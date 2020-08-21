@@ -3,6 +3,7 @@ title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties and items that are understood by the .NET Core SDK.
 ms.date: 02/14/2020
 ms.topic: reference
+ms.custom: updateeachrelease
 ---
 # MSBuild reference for .NET Core SDK projects
 
@@ -159,6 +160,50 @@ The `LangVersion` property lets you specify a specific programming language vers
 ```
 
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
+
+## Code analysis properties
+
+### AnalysisLevel
+
+The `AnalysisLevel` property lets you specify a code analysis level. For example, if you want access to preview code analyzers, set `AnalysisLevel` to `preview`. The default value is `latest`.
+
+```xml
+<PropertyGroup>
+  <AnalysisLevel>preview</AnalysisLevel>
+</PropertyGroup>
+```
+
+The following table shows the available options.
+
+| Value | Meaning |
+|-|-|
+| `latest` | The latest code analyzers that have been released are used. This is the default. |
+| `preview` | The latest code analyzers are used, even if they are in preview. |
+| `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+| `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
+
+### CodeAnalysisTreatWarningsAsErrors
+
+The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code analysis warnings should be treated as warnings and break the build. If you use the `-warnaserror` flag when you build your projects, [.NET code analysis](../../fundamentals/productivity/code-analysis.md) warnings are also treated as errors. If you only want compiler warnings to be treated as errors, you can set the `CodeAnalysisTreatWarningsAsErrors` MSBuild property to `false` in your project file.
+
+```xml
+<PropertyGroup>
+  <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+</PropertyGroup>
+```
+
+### EnableNETAnalyzers
+
+[.NET Code analysis](../../fundamentals/productivity/code-analysis.md) is enabled, by default, for projects that target .NET 5.0 or later. You can enable .NET code analysis for projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to true.
+
+```xml
+<PropertyGroup>
+  <EnableNETAnalyzers>true</EnableNETAnalyzers>
+</PropertyGroup>
+```
+
+> [!TIP]
+> Another way to enable .NET code analysis on projects that target .NET versions prior to .NET 5.0 is to set the [AnalysisLevel](#analysislevel) property to `latest`.
 
 ## Run-time configuration properties
 

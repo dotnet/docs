@@ -1,7 +1,7 @@
 ---
 title: Configure code analysis rules
 description: Learn how to configure code analysis rules in an EditorConfig file and how to suppress rule violations.
-ms.date: 08/20/2020
+ms.date: 08/22/2020
 ms.topic: conceptual
 no-loc: ["EditorConfig"]
 ---

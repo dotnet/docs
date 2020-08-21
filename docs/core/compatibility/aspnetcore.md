@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 07/17/2020
+ms.date: 08/20/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -63,6 +63,7 @@ The following breaking changes are documented on this page:
 - [Localization: Obsolete constructor removed in request localization middleware](#localization-obsolete-constructor-removed-in-request-localization-middleware)
 - [Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Logging: DebugLogger class made internal](#logging-debuglogger-class-made-internal)
+- [Middleware: Database error page marked as obsolete](#middleware-database-error-page-marked-as-obsolete)
 - [MVC: Controller action Async suffix removed](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC: JsonResult moved to Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
 - [MVC: Precompilation tool deprecated](#mvc-precompilation-tool-deprecated)
@@ -153,6 +154,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
+
+***
+
+[!INCLUDE[Middleware: Database error page marked as obsolete](~/includes/core-changes/aspnetcore/5.0/middleware-database-error-page-obsolete.md)]
 
 ***
 

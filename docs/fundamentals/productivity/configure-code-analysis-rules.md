@@ -1,5 +1,6 @@
 ---
 title: Configure code analysis rules
+description: Learn how to configure code analysis rules in an EditorConfig file and how to suppress rule violations.
 ms.date: 08/20/2020
 ms.topic: conceptual
 ---
@@ -78,4 +79,4 @@ To suppress a rule violation in an EditorConfig file, set the severity to `none`
 
 `dotnet_diagnostic.CA1822.severity = none`
 
-Visual Studio provides additional ways to suppress rule violations. For more information, see [](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
+Visual Studio provides additional ways to suppress rule violations. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).

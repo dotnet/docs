@@ -1,6 +1,7 @@
 ---
 title: Code analysis in .NET
 titleSuffix: ""
+description: Learn about source code analysis in .NET.
 ms.date: 08/20/2020
 ms.topic: overview
 helpviewer_keywords:

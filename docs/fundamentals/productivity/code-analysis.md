@@ -13,6 +13,8 @@ helpviewer_keywords:
 
 .NET code analyzers inspect your C# or Visual Basic code for security, performance, design, and other issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. (Previously, you installed these analyzers as a [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers).)
 
+Code analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`.
+
 If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configure-code-analysis-rules.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
 
 > [!TIP]
@@ -33,11 +35,13 @@ The following rules are enabled, by default, in .NET 5.0 Preview 8.
 | [CA2015](/visualstudio/code-quality/ca2015) | Reliability | Warning | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
 | [CA2247](/visualstudio/code-quality/ca2247) | Usage | Warning | Argument passed to TaskCompletionSource constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
 
-You can change the severity of these rules to disable them or elevate them to errors. For more information, see [Configure code analysis rules](configure-code-analysis-rules.md).
+You can change the severity of these rules to disable them or elevate them to errors. In addition, you may want to enable additional rules that are included in this release but are disabled by default. For more information, see [Configure code analysis rules](configure-code-analysis-rules.md).
+
+For a full list of rules that are included with each .NET SDK version, see [analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md). This list also includes each rule's default severity. Some rules are enabled only as IDE suggestions with corresponding code fixes.
 
 ## Treat warnings as errors
 
-If you use the `/warnaserror` flag when you build your projects, .NET code analysis warnings are also treated as errors. If you only want compiler warnings to be treated as errors, you can add the set the `CodeAnalysisTreatWarningsAsErrors` MSBuild property to `false` in your project file.
+If you use the `-warnaserror` flag when you build your projects, .NET code analysis warnings are also treated as errors. If you only want compiler warnings to be treated as errors, you can set the `CodeAnalysisTreatWarningsAsErrors` MSBuild property to `false` in your project file.
 
 ```xml
 <PropertyGroup>
@@ -64,7 +68,7 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 For more information, and to see a list of possible values, see [AnalysisLevel](../../core/project-sdk/msbuild-props.md#analysislevel).
 
-- Install the code analyzers [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) to decouple rule updates from .NET SDK updates. Installing the package turns off the built-in SDK analyzers and generates a build warning if the SDK contains a newer analyzer assembly version than that of the NuGet package.
+- Install the [Microsoft.CodeAnalysis.NetAnalyzers NuGet package](https://github.com/dotnet/roslyn-analyzers#microsoftcodeanalysisnetanalyzers) to decouple rule updates from .NET SDK updates. Installing the package turns off the built-in SDK analyzers and generates a build warning if the SDK contains a newer analyzer assembly version than that of the NuGet package.
 
 ## See also
 

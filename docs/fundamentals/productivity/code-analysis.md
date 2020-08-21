@@ -23,5 +23,5 @@ If you're using Visual Studio, many analyzer rules have associated *code fixes* 
 
 - [Code analysis in Visual Studio](/visualstudio/code-quality/roslyn-analyzers-overview)
 - [Code analysis rule reference](/visualstudio/code-quality/code-analysis-for-managed-code-warnings)
-- [Tutorial: Write your first analyzer and code fix](../../csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
+- [Tutorial: Write your first analyzer and code fix](../../csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md)

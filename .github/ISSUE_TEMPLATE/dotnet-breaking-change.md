@@ -42,6 +42,7 @@ Also, remove this comment before submitting the issue.
 
 - ASP.NET Core
 - C#
+- Code analysis
 - Core .NET libraries
 - Cryptography
 - Data

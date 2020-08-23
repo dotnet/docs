@@ -106,7 +106,7 @@ To create the test methods:
 
    The terminal output shows that all tests passed.
 
-   ```console
+   ```output
    Starting test execution, please wait...
 
    A total of 1 test files matched the specified pattern.
@@ -136,7 +136,7 @@ If you're doing test-driven development (TDD), you write tests first and they fa
 
    The terminal output shows that one test fails, and it provides an error message for the failed test: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, no strings in the array after "Error" were tested.
 
-   ```console
+   ```output
    Starting test execution, please wait...
 
    A total of 1 test files matched the specified pattern.

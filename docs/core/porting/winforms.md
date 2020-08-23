@@ -89,7 +89,7 @@ dotnet new winforms -o MyFormsAppCore -n MyFormsCore
 
 After you create the **MyFormsCore.csproj**, your directory structure should look like the following:
 
-```console
+```
 SolutionFolder
 ├───MyApps.sln
 ├───MyFormsApp
@@ -187,7 +187,7 @@ Using the previous step's example, lets expand what projects and files we're wor
 | **MyControlsCore.csproj** | The name of the new .NET Core library project you create. |
 | **MyCoreControls.dll** | The .NET Core Windows Forms Controls library. |
 
-```console
+```
 SolutionFolder
 ├───MyApps.sln
 ├───MyFormsApp

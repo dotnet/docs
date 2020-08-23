@@ -133,7 +133,7 @@ The following diagram illustrates the relationship between the BMP and the surro
 
 When a *high surrogate* code point (`U+D800..U+DBFF`) is immediately followed by a *low surrogate* code point (`U+DC00..U+DFFF`), the pair is interpreted as a supplementary code point by using the following formula:
 
-```text
+```
 code point = 0x10000 +
   ((high surrogate code point - 0xD800) * 0x0400) +
   (low surrogate code point - 0xDC00)
@@ -141,7 +141,7 @@ code point = 0x10000 +
 
 Here's the same formula using decimal notation:
 
-```text
+```
 code point = 65,536 +
   ((high surrogate code point - 55,296) * 1,024) +
   (low surrogate code point - 56,320)
@@ -151,7 +151,7 @@ A *high* surrogate code point doesn't have a higher number value than a *low* su
 
 For example, the actual code point that corresponds to the surrogate pair `0xD83C` and `0xDF39`  is computed as follows:
 
-```text
+```
 actual = 0x10000 + ((0xD83C - 0xD800) * 0x0400) + (0xDF39 - 0xDC00)
        = 0x10000 + (          0x003C  * 0x0400) +           0x0339
        = 0x10000 +                      0xF000  +           0x0339
@@ -160,7 +160,7 @@ actual = 0x10000 + ((0xD83C - 0xD800) * 0x0400) + (0xDF39 - 0xDC00)
 
 Here's the same calculation using decimal notation:
 
-```text
+```
 actual =  65,536 + ((55,356 - 55,296) * 1,024) + (57,145 - 56320)
        =  65,536 + (              60  * 1,024) +             825
        =  65,536 +                     61,440  +             825
@@ -289,7 +289,7 @@ Like UTF-16, UTF-8 requires multiple code units to represent some Unicode scalar
 
 Here are some examples showing how the same Unicode code point is represented in each of these three Unicode encoding systems:
 
-```text
+```
 Scalar: U+0061 LATIN SMALL LETTER A ('a')
 UTF-8 : [ 61 ]           (1x  8-bit code unit  = 8 bits total)
 UTF-16: [ 0061 ]         (1x 16-bit code unit  = 16 bits total)

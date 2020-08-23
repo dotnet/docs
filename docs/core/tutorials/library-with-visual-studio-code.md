@@ -52,7 +52,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    The template "Class library" was created successfully.
    Processing post-creation actions...
    Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
@@ -69,7 +69,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
@@ -103,7 +103,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    Microsoft (R) Build Engine version 16.6.0 for .NET Core
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
@@ -128,7 +128,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    The template "Console Application" was created successfully.
    Processing post-creation actions...
    Running 'dotnet restore' on ShowCase\ShowCase.csproj...  
@@ -145,7 +145,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    Project `ShowCase\ShowCase.csproj` added to the solution.
    ```
 
@@ -171,7 +171,7 @@ Initially, the new console app project doesn't have access to the class library.
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
    ```
 
@@ -187,7 +187,7 @@ Initially, the new console app project doesn't have access to the class library.
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    Press <Enter> only to exit; otherwise, enter a string and press <Enter>:
 
    A string that starts with an uppercase letter

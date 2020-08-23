@@ -202,7 +202,7 @@ dotnet sln add src/TraderSys.PortfolioData
 
 After you've created the library and added it to the solution, delete the generated `Class1.cs` file and copy the files from the WCF solution's library into the new class library's folder, keeping the folder structure:
 
-```console
+```
 Models
   Portfolio.cs
   PortfolioItem.cs

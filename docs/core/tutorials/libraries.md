@@ -198,7 +198,7 @@ namespace MultitargetLib
 
 If you build this project with `dotnet build`, you'll notice three directories under the `bin/` folder:
 
-```console
+```
 net40/
 net45/
 netstandard1.4/

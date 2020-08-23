@@ -59,7 +59,7 @@ When porting a .NET Framework Windows Forms application, there are a few things 
 
 The new .NET Core 3.0 project you create must be in a different directory from your .NET Framework project. If they're both in the same directory, you may run into conflicts with the files that are generated in the **obj** directory. In this example, we'll create a directory named **MyFormsAppCore** in the **SolutionFolder** directory:
 
-```console
+```
 SolutionFolder
 ├───MyApps.sln
 ├───MyFormsApp

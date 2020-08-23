@@ -33,7 +33,7 @@ The .NET Core CLI is used to publish the app, so you can follow this tutorial wi
 
    The command output is similar to the following example:
 
-   ```console
+   ```output
    Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
    Copyright (C) Microsoft Corporation. All rights reserved.
 

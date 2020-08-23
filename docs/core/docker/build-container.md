@@ -44,7 +44,7 @@ dotnet new console -o App -n NetCore.Docker
 
 Your folder tree will look like the following:
 
-```console
+```
 docker-working
     └──App
         ├──NetCore.Docker.csproj
@@ -188,7 +188,7 @@ The `FROM` keyword requires a fully qualified Docker container image name. The M
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been omitted to save space in the article:
 
-```console
+```
 docker-working
     └──App
         ├──Dockerfile

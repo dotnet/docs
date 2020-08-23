@@ -48,7 +48,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
      - Verify you are able to run `spark-shell` from your command-line.
         Sample console output:
 
-        ```text
+        ```output
         Welcome to
               ____              __
              / __/__  ___ _____/ /__

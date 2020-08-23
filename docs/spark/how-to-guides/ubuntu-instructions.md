@@ -64,7 +64,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
 
        Sample mvn -version output:
 
-       ```text
+       ```output
        Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
        Maven home: ~/bin/apache-maven-3.6.0
        Java version: 1.8.0_191, vendor: Oracle Corporation, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre

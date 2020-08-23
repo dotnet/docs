@@ -39,7 +39,7 @@ public interface IAffiliate
   
  To construct a WCF client for the remote service the following example moniker string can be used.  
   
-```text
+```
 service4:mexAddress="http://servername/Affiliates/service.svc/mex",  
 address="http://servername/Affiliates/service.svc",  
 contract=IAffiliate, contractNamespace=http://Microsoft.ServiceModel.Demo,  

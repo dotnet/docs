@@ -14,7 +14,7 @@ An app using a 2.2-based library builds successfully.
 
 An app using a 2.2-based library fails compilation. An error containing a variation of the following text is provided:
 
-```text
+```output
 The type 'JsonResult' exists in both 'Microsoft.AspNetCore.Mvc.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' and 'Microsoft.AspNetCore.Mvc.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
 ```
 

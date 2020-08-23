@@ -41,7 +41,7 @@ Alternatively, you can use [Set Jar](https://docs.microsoft.com/azure/databricks
 
 3. Modify the following parameters to include the correct name for the executable that you published in place of `<your-app-name>`:
 
-    ```text
+    ```
     Main Class: org.apache.spark.deploy.dotnet.DotnetRunner
     Arguments /dbfs/apps/<your-app-name>.zip <your-app-name>
     ```

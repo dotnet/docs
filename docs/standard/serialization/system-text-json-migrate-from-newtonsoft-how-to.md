@@ -140,7 +140,7 @@ During deserialization, `Newtonsoft.Json` accepts property names surrounded by d
 
 A value enclosed in single quotes results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
-```text
+```output
 ''' is an invalid start of a value.
 ```
 
@@ -167,7 +167,7 @@ public class ExampleClass
 
 `System.Text.Json` doesn't deserialize non-string values into string properties. A non-string value received for a string field results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
-```text
+```output
 The JSON value could not be converted to System.String.
 ```
 

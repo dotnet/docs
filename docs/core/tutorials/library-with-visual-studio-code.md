@@ -36,7 +36,7 @@ Start by creating a blank solution to put the class library project in. A soluti
 
    The terminal output looks like the following example:
 
-   ```console
+   ```output
    The template "Solution File" was created successfully.
    ```
 

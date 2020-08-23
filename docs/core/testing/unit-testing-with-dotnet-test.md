@@ -13,7 +13,7 @@ This tutorial shows how to build a solution containing a unit test project and s
 
 In this section, a solution is created that contains the source and test projects. The completed solution has the following directory structure:
 
-```console
+```
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService

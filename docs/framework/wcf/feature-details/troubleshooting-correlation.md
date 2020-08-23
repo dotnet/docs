@@ -196,13 +196,13 @@ public class AddItemMessage
 
  This message contract is used by a <xref:System.ServiceModel.Activities.Receive> activity in a workflow. The `CartId` in the header of the message is used to correlate the message to the correct instance. If the XPath query that retrieves the `CartId` is created using the correlation dialogs in the workflow designer, the following incorrect XPath query is generated.
 
-```text
+```
 sm:body()/xg0:AddItemMessage/xg0:CartId
 ```
 
  This XPath query would be correct if the <xref:System.ServiceModel.Activities.Receive> activity used parameters for the data, but since it is using a message contract it is incorrect. The following XPath query is the correct XPath query to retrieve the `CartId` from the header.
 
-```text
+```
 sm:header()/tempuri:CartId
 ```
 

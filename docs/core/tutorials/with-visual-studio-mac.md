@@ -80,7 +80,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
 
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the <kbd>enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it displays these values in the console window.
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it displays these values in the console window.
 
    The `\n` represents a newline character.
 

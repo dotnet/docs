@@ -30,28 +30,29 @@ When the code is indirectly referencing an assembly through reflection, you can 
 
 ## Trim your app - CLI
 
-Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following three settings:
+Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
 
-- Publish as self-contained: `--self-contained true`
-- Enable trimming: `p:PublishTrimmed=true`
+- Publish as a self-contained app for a specific runtime: `-r win-x64`
+- Enable trimming: `/p:PublishTrimmed=true`
 
 The following example publishes an app for Windows as self-contained and trims the output.
 
 ```xml
-<ItemGroup>
+<PropertyGroup>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <SelfContained>true</SelfContained>
     <PublishTrimmed>true</PublishTrimmed>
-</ItemGroup>
+</PropertyGroup>
 ```
 
-The following example publishes an app in the aggressive trim mode where unused code within assemblies will be trimmed and  trimmer warnings enabled.
+The following example publishes an app in the aggressive trim mode where unused code within assemblies will be trimmed and trimmer warnings enabled.
 
 ```xml
-<ItemGroup>
+<PropertyGroup>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>true</PublishTrimmed>
     <TrimMode>link</TrimMode>
     <SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
-</ItemGroup>
+</PropertyGroup>
 ```
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).

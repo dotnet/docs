@@ -21,16 +21,19 @@ ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
     > [!NOTE]
     > Either apply the <xref:System.ComponentModel.DefaultValueAttribute> or provide `Reset`*PropertyName* and `ShouldSerialize`*PropertyName* methods. Do not use both.
 
+    > [!NOTE]
+    > These methods are invoked by the designer by convention, and as such can be made `private`.
+
  The `Reset`*PropertyName* method sets a property to its default value, as shown in the following code fragment.
 
 ```vb
-Public Sub ResetMyFont()
+Private Sub ResetMyFont()
    MyFont = Nothing
 End Sub
 ```
 
 ```csharp
-public void ResetMyFont() {
+private void ResetMyFont() {
    MyFont = null;
 }
 ```
@@ -43,7 +46,7 @@ public void ResetMyFont() {
 ```vb
 'Returns true if the font has changed; otherwise, returns false.
 ' The designer writes code to the form only if true is returned.
-Public Function ShouldSerializeMyFont() As Boolean
+Private Function ShouldSerializeMyFont() As Boolean
    Return Not (thefont Is Nothing)
 End Function
 ```
@@ -51,7 +54,7 @@ End Function
 ```csharp
 // Returns true if the font has changed; otherwise, returns false.
 // The designer writes code to the form only if true is returned.
-public bool ShouldSerializeMyFont() {
+private bool ShouldSerializeMyFont() {
    return thefont != null;
 }
 ```
@@ -90,11 +93,11 @@ Public Class MyControl
       End Set
    End Property
 
-   Public Function ShouldSerializeMyFont() As Boolean
+   Private Function ShouldSerializeMyFont() As Boolean
       Return Not (thefont Is Nothing)
    End Function
 
-   Public Sub ResetMyFont()
+   Private Sub ResetMyFont()
       MyFont = Nothing
    End Sub
 End Class
@@ -124,11 +127,11 @@ public class MyControl : Control {
       }
    }
 
-   public bool ShouldSerializeMyFont() {
+   private bool ShouldSerializeMyFont() {
       return thefont != null;
    }
 
-   public void ResetMyFont() {
+   private void ResetMyFont() {
       MyFont = null;
    }
 }

@@ -118,7 +118,7 @@ dotnet msbuild -pp:fullproject.xml
 If the project has multiple target frameworks, the results of the command should be focused on only one of them by specifying it as an MSBuild property:
 
 ```dotnetcli
-dotnet msbuild -p:TargetFramework=netcoreapp2.0 -pp:fullproject.xml
+dotnet msbuild -p:TargetFramework=netcoreapp3.1 -pp:fullproject.xml
 ```
 
 ## Additions
@@ -222,10 +222,10 @@ The following example provides the fallbacks for all targets in your project:
 </PackageTargetFallback >
 ```
 
-The following example specifies the fallbacks only for the `netcoreapp2.1` target:
+The following example specifies the fallbacks only for the `netcoreapp3.1` target:
 
 ```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp3.1'">
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```

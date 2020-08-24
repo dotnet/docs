@@ -136,7 +136,7 @@ A simple implementation might be similar to the nonstandard `Money` type that so
 package CustomTypes;
 
 // Example: 12345.6789 -> { units = 12345, nanos = 678900000 }
-message Decimal {
+message DecimalValue {
 
     // Whole units part of the amount
     int64 units = 1;
@@ -157,10 +157,10 @@ Conversion between this type and the BCL `decimal` type might be implemented in 
 ```csharp
 namespace CustomTypes
 {
-    public partial class GrpcDecimal
+    public partial class DecimalValue
     {
         private const decimal NanoFactor = 1_000_000_000;
-        public GrpcDecimal(long units, int nanos)
+        public DecimalValue(long units, int nanos)
         {
             Units = units;
             Nanos = nanos;
@@ -169,7 +169,7 @@ namespace CustomTypes
         public long Units { get; }
         public int Nanos { get; }
 
-        public static implicit operator decimal(CustomTypes.Decimal grpcDecimal)
+        public static implicit operator decimal(CustomTypes.DecimalValue grpcDecimal)
         {
             return grpcDecimal.Units + grpcDecimal.Nanos / NanoFactor;
         }

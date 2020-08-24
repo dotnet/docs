@@ -1,7 +1,7 @@
 ---
-title: "I/O pipelines - .NET"
+title: I/O pipelines - .NET
 description: Learn how to efficiently use I/O pipelines in .NET and avoid problems in your code.
-ms.date: "10/01/2019"
+ms.date: 08/19/2020
 ms.technology: dotnet-standard
 helpviewer_keywords:
   - "Pipelines"
@@ -10,9 +10,10 @@ helpviewer_keywords:
 author: rick-anderson
 ms.author: riande
 ---
+
 # System.IO.Pipelines in .NET
 
-<xref:System.IO.Pipelines> is a new library that is designed to make it easier to do high-performance I/O in .NET. It’s a library targeting .NET Standard that works on all .NET implementations.
+<xref:System.IO.Pipelines> is a new library that is designed to make it easier to do high-performance I/O in .NET. It's a library targeting .NET Standard that works on all .NET implementations.
 
 <a name="solve"></a>
 
@@ -342,4 +343,6 @@ The <xref:System.IO.Pipelines.IDuplexPipe> is a contract for types that support 
 
 ## Streams
 
-When reading or writing stream data, you typically read data using a de-serializer and write data using a serializer. Most of these read and write stream APIs have a `Stream` parameter. To make it easier to integrate with these existing APIs, `PipeReader` and `PipeWriter` expose an <xref:System.IO.Pipelines.PipeReader.AsStream%2A>.  <xref:System.IO.Pipelines.PipeWriter.AsStream%2A> returns a `Stream` implementation around the `PipeReader` or `PipeWriter`.
+When reading or writing stream data, you typically read data using a de-serializer and write data using a serializer. Most of these read and write stream APIs have a `Stream` parameter. To make it easier to integrate with these existing APIs, `PipeReader` and `PipeWriter` expose an <xref:System.IO.Pipelines.PipeReader.AsStream%2A> method. <xref:System.IO.Pipelines.PipeWriter.AsStream%2A> returns a `Stream` implementation around the `PipeReader` or `PipeWriter`.
+
+The `PipeReader` and `PipeWriter` instances can be created using the static `Create` methods given a <xref:System.IO.Stream> object and corresponding creation options. With `AsStream` and `Create` methods, `PipeReader` and `PipeWriter` objects can be created from streams or used as streams.

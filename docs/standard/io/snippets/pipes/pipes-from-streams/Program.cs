@@ -13,13 +13,14 @@ class Program
         using var stream = new StreamReader("lorem-ipsum.txt");
         using var cts = new CancellationTokenSource();
 
-        var reader = PipeReader.Create(stream.BaseStream, new StreamPipeReaderOptions());
-        var writer = PipeWriter.Create(Console.OpenStandardOutput(), new StreamPipeWriterOptions());
-
-        var processMessagesTask = ProcessMessagesAsync(reader, writer, cts.Token);
+        var reader = PipeReader.Create(stream.BaseStream);
+        var writer = PipeWriter.Create(
+            Console.OpenStandardOutput(), 
+            new StreamPipeWriterOptions(leaveOpen: true));
 
         WriteUserCancellationPrompt();
 
+        var processMessagesTask = ProcessMessagesAsync(reader, writer, cts.Token);
         var cancelProcessingTask = Task.Run(() =>
         {
             while (char.ToUpperInvariant(Console.ReadKey().KeyChar) != 'C')
@@ -33,10 +34,10 @@ class Program
             writer.CancelPendingFlush();
         });
 
-        await Task.WhenAny(new[] { cancelProcessingTask, processMessagesTask });
+        _ = await Task.WhenAny(new[] { cancelProcessingTask, processMessagesTask });
 
         Console.WriteLine(
-            $"Processing {(cts.IsCancellationRequested? "cancelled" : "completed")}.");
+            $"\n\nProcessing {(cts.IsCancellationRequested ? "cancelled" : "completed")}.\n");
     }
 
     static void WriteUserCancellationPrompt() =>
@@ -61,9 +62,11 @@ class Program
                         break;
                     }
 
-                    while (TryParseMessage(ref buffer, out string message))
+                    if (TryParseMessage(ref buffer, out string message))
                     {
-                        FlushResult flushResult = await WriteMessagesAsync(writer, message, cancellationToken);
+                        FlushResult flushResult =
+                            await WriteMessagesAsync(writer, message, cancellationToken);
+
                         if (flushResult.IsCanceled || flushResult.IsCompleted)
                         {
                             break;
@@ -84,6 +87,10 @@ class Program
                     reader.AdvanceTo(buffer.Start, buffer.End);
                 }
             }
+        }
+        catch (Exception ex)
+        {
+            Console.Error.WriteLine(ex);
         }
         finally
         {

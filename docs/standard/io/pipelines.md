@@ -339,10 +339,18 @@ The previous method of writing uses the buffers provided by the `PipeWriter`. Al
 
 The <xref:System.IO.Pipelines.IDuplexPipe> is a contract for types that support both reading and writing. For example, a network connection would be represented by an `IDuplexPipe`.
 
- Unlike `Pipe` which contains a `PipeReader` and a `PipeWriter`, `IDuplexPipe` represents a single side of a full duplex connection. That means what is written to the `PipeWriter` will not be read from the `PipeReader`.
+ Unlike `Pipe`, which contains a `PipeReader` and a `PipeWriter`, `IDuplexPipe` represents a single side of a full duplex connection. That means what is written to the `PipeWriter` will not be read from the `PipeReader`.
 
 ## Streams
 
 When reading or writing stream data, you typically read data using a de-serializer and write data using a serializer. Most of these read and write stream APIs have a `Stream` parameter. To make it easier to integrate with these existing APIs, `PipeReader` and `PipeWriter` expose an <xref:System.IO.Pipelines.PipeReader.AsStream%2A> method. <xref:System.IO.Pipelines.PipeWriter.AsStream%2A> returns a `Stream` implementation around the `PipeReader` or `PipeWriter`.
 
-The `PipeReader` and `PipeWriter` instances can be created using the static `Create` methods given a <xref:System.IO.Stream> object and corresponding creation options. With `AsStream` and `Create` methods, `PipeReader` and `PipeWriter` objects can be created from streams or used as streams.
+### Stream example
+
+`PipeReader` and `PipeWriter` instances can be created using the static `Create` methods given a <xref:System.IO.Stream> object and optional corresponding creation options.
+
+The following code demonstrates the creation of `PipeReader` and `PipeWriter` instances using the `Create` methods from a stream.
+
+:::code language="csharp" source="snippets/pipes/pipes-from-streams/Program.cs":::
+
+The application uses a <xref:System.IO.StreamReader> to read the *lorem-ipsum.txt* file as a stream. The base stream is passed to  , which instantiates a `PipeReader` object. The console application then passes its standard output stream to <xref:System.IO.Pipelines.PipeWriter.Create%2A?displayProperty=nameWithType> using <xref:System.Console.OpenStandardOutput?displayProperty=nameWithType>. The example supports [cancellation](#cancellation).

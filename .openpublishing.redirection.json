@@ -788,7 +788,7 @@
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/as.md",
-      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-conversion-operators#as-operator"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator"
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/await.md",
@@ -996,7 +996,7 @@
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/typeof.md",
-      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-conversion-operators#typeof-operator"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator"
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/types.md",
@@ -4523,6 +4523,34 @@
     {
       "source_path": "docs/standard/design-guidelines/choosing-between-anonymous-and-tuple.md",
       "redirect_url": "/dotnet/standard/base-types/choosing-between-anonymous-and-tuple"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/control-flow-in-async-programs.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#BKMK_WhatHappensUnderstandinganAsyncMethod"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
     }
   ]
 }

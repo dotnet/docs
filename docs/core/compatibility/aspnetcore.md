@@ -8,9 +8,13 @@ ms.author: scaddie
 ---
 # ASP.NET Core breaking changes
 
-ASP.NET Core provides the web app development features used by .NET Core.
+ASP.NET Core provides the web app development features used by .NET Core. Breaking changes for the following versions:
 
-The following breaking changes are documented on this page:
+* [ASP.NET 5.0](#aspnet-core-50)
+* [ASP.NET 3.1](#aspnet-core-31)
+* [ASP.NET 3.0](#aspnet-core-30)
+
+The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented on this page:
 
 - [Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
 - [Authentication: Google+ deprecation](#authentication-google-deprecated-and-replaced)

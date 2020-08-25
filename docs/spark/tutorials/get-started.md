@@ -1,9 +1,11 @@
 ---
 title: Get started with .NET for Apache Spark
-description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, macOS, and Ubuntu.
-ms.date: 06/25/2020
+description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, MacOS, and Ubuntu.
+ms.date: 08/24/2020
 ms.topic: tutorial
 ms.custom: mvc
+ms.author: luquinta
+author: luisquintanilla
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.
 ---
 
@@ -142,7 +144,10 @@ The `dotnet` command creates a `new` application of type `console` for you. The 
 
 To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your command prompt or terminal, run the following command:
 
-`dotnet add package Microsoft.Spark --version 0.8.0`
+`dotnet add package Microsoft.Spark`
+
+> [!NOTE]
+> This tutorial uses the latest version of the `Microsoft.Spark` NuGet package unless otherwise specified.
 
 ### 3. Code your app
 
@@ -150,35 +155,38 @@ Open *Program.cs* in Visual Studio Code, or any text editor, and replace all of 
 
 ```csharp
 using Microsoft.Spark.Sql;
+using static Microsoft.Spark.Sql.Functions;
 
-namespace MySparkApp
+namespace mySparkApp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // Create a Spark session.
-            SparkSession spark = SparkSession
-                .Builder()
-                .AppName("word_count_sample")
-                .GetOrCreate();
+            // Create spark session
+            SparkSession spark = 
+                SparkSession
+                    .Builder()
+                    .AppName("word_count_sample")
+                    .GetOrCreate();
 
-            // Create initial DataFrame.
+            // Create initial DataFrame
             DataFrame dataFrame = spark.Read().Text("input.txt");
 
-            // Count words.
-            DataFrame words = dataFrame
-                .Select(Functions.Split(Functions.Col("value"), " ").Alias("words"))
-                .Select(Functions.Explode(Functions.Col("words"))
-                .Alias("word"))
-                .GroupBy("word")
-                .Count()
-                .OrderBy(Functions.Col("count").Desc());
+            // Count words
+            DataFrame words = 
+                dataFrame
+                    .Select(Split(Col("value")," ").Alias("words"))
+                    .Select(Explode(Col("words")))
+                    .Alias("word")
+                    .GroupBy("word")
+                    .Count()
+                    .OrderBy(Col("count").Desc());
 
-            // Show results.
+            // Show results
             words.Show();
 
-            // Stop Spark session.
+            // Stop spark session
             spark.Stop();
         }
     }
@@ -201,6 +209,18 @@ This .NET app uses .NET for Apache Spark
 This .NET app counts words with Apache Spark
 ```
 
+  Save the changes.
+
+Open the *mySparkApp.csproj* file. Copy the newly created *input.txt* file to your build output directory by adding the following contents inside the `Project` tags:
+
+ ```xml
+<ItemGroup>
+    <Content Include="input.txt">
+    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+ </ItemGroup>
+ ```
+
 ## Run your .NET for Apache Spark app
 
 1. Run the following command to build your application:
@@ -209,14 +229,14 @@ This .NET app counts words with Apache Spark
    dotnet build
    ```
 
-2. Run the following command to submit your application to run on Apache Spark:
+2. Navigate to your build output directory and enter the following command to submit your application to run on Apache Spark:
 
    ```console
    spark-submit \
    --class org.apache.spark.deploy.dotnet.DotnetRunner \
    --master local \
    microsoft-spark-2.4.x-<version>.jar \
-   dotnet HelloSpark.dll
+   dotnet mySparkApp.dll
    ```
 
    > [!NOTE]

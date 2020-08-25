@@ -33,6 +33,9 @@ The compiler determines a default based on these rules:
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
 
+> [!TIP]
+> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler produce a diagnostic, CS8304, with a message containing the compiler version being used and the current selected language version.
+
 ## Override a default
 
 If you must specify your C# version explicitly, you can do so in several ways:

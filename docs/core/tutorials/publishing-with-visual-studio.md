@@ -81,7 +81,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Open a command prompt and navigate to the *publish* folder. To do that, enter `cd` and then paste the full path. For example:
 
-   ```
+   ```console
    cd C:\Projects\HelloWorld\bin\Release\netcoreapp3.1\publish\
    ```
 

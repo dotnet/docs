@@ -1,6 +1,7 @@
-Public Class SpecialForm : Inherits System.Windows.Forms.Form
+Public Class SpecialForm
     '<Snippet5>
     Sub New()
+        InitializeComponent()
         AddHandler Me.FormClosing, AddressOf OnFormClosing
     End Sub
 

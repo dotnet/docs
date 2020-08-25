@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 08/20/2020
+ms.date: 08/25/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -75,6 +75,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [MVC: Precompilation tool deprecated](#mvc-precompilation-tool-deprecated)
 - [MVC: Types changed to internal](#mvc-pubternal-types-changed-to-internal)
 - [MVC: Web API compatibility shim removed](#mvc-web-api-compatibility-shim-removed)
+- [Razor: RazorTemplateEngine API removed](#razor-razortemplateengine-api-removed)
 - [Razor: Runtime compilation moved to a package](#razor-runtime-compilation-moved-to-a-package)
 - [Security: Cookie name encoding removed](#security-cookie-name-encoding-removed)
 - [Security: IdentityModel NuGet package versions updated](#security-identitymodel-nuget-package-versions-updated)
@@ -348,6 +349,10 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 ***
 
 [!INCLUDE[MVC: Web API compatibility shim removed](~/includes/core-changes/aspnetcore/3.0/mvc-webapi-compat-shim-removed.md)]
+
+***
+
+[!INCLUDE[Razor: RazorTemplatEengine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
 
 ***
 

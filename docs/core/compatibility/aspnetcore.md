@@ -10,7 +10,7 @@ ms.author: scaddie
 
 ASP.NET Core provides the web app development features used by .NET Core. 
 
-Slect the following links for breaking changes in specific versions:
+Slect one of the following links for breaking changes in a specific version:
 
 * [ASP.NET 5.0](#aspnet-core-50)
 * [ASP.NET 3.1](#aspnet-core-31)

@@ -81,7 +81,7 @@ test
 
 ## Package Management in F# Interactive
 
-[!NOTE] Package management is available as a preview feature in versions of `dotnet fsi` shipped in the `3.1.300` and greater versions of the .Net Core SDK, as well as all `5.*` versions of the .Net SDK. To enable it in this preview release, run `dotnet fsi` with the `--langversion:preview` argument.
+[!NOTE] Package management is available as a preview feature in versions of `dotnet fsi` shipped in the `3.1.300` and greater versions of the .NET SDK, as well as all `5.*` versions of the .NET SDK. To enable it in this preview release, run `dotnet fsi` with the `--langversion:preview` argument.
 
 The `#r` syntax for referencing a DLL in F# Interactive can also be used to reference a nuget package via the following syntax:
 

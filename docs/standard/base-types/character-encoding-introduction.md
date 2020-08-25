@@ -80,7 +80,7 @@ In the preceding example, each character except the space is represented by two 
 
 A single Unicode emoji is also represented by two `char`s, as seen in the following example showing an ox emoji:
 
-```
+```output
 "🐂".Length = 2
 s[0] = '�' ('\ud83d')
 s[1] = '�' ('\udc02')

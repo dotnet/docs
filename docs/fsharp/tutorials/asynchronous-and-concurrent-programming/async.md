@@ -1,7 +1,7 @@
 ---
 title: Async Programming
 description: Learn how F# provides clean support for asynchrony based on a language-level programming model derived from core functional programming concepts.
-ms.date: 12/17/2018
+ms.date: 08/15/2020
 ---
 # Async programming in F\#
 
@@ -132,7 +132,7 @@ This will schedule `printTotalFileBytes` to execute in the order of the elements
 
 When you write async code in F#, you'll usually interact with a framework that handles scheduling of computations for you. However, this is not always the case, so it is good to learn the various starting functions to schedule asynchronous work.
 
-Because F# asynchronous computations are a _specification_ of work rather than a representation of work that is already executing, they must be explicitly started with a starting function. There are many [Async starting functions](https://msdn.microsoft.com/library/ee370232.aspx) that are helpful in different contexts. The following section describes some of the more common starting functions.
+Because F# asynchronous computations are a _specification_ of work rather than a representation of work that is already executing, they must be explicitly started with a starting function. There are many [Async starting methods](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-fsharpasync.html#section0) that are helpful in different contexts. The following section describes some of the more common starting functions.
 
 ### Async.StartChild
 

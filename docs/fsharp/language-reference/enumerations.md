@@ -1,7 +1,7 @@
 ---
 title: Enumerations
 description: Learn how to use F# enumerations in place of literals to make your code more readable and maintainable.
-ms.date: 05/16/2016
+ms.date: 08/15/2020
 ---
 # Enumerations
 
@@ -22,7 +22,7 @@ An enumeration looks much like a discriminated union that has simple values, exc
 
 The underlying type of the enumeration is determined from the literal that is used, so that, for example, you can use literals with a suffix, such as `1u`, `2u`, and so on, for an unsigned integer (`uint32`) type.
 
-When you refer to the named values, you must use the name of the enumeration type itself as a qualifier, that is, `enum-name.value1`, not just `value1`. This behavior differs from that of discriminated unions. This is because enumerations always have the [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15) attribute.
+When you refer to the named values, you must use the name of the enumeration type itself as a qualifier, that is, `enum-name.value1`, not just `value1`. This behavior differs from that of discriminated unions. This is because enumerations always have the [RequireQualifiedAccess](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-requirequalifiedaccessattribute.html) attribute.
 
 The following code shows the declaration and use of an enumeration.
 

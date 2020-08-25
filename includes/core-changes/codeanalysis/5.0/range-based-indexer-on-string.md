@@ -36,7 +36,7 @@ ReadOnlySpan<char> slice = str.AsSpan()[1..3];
 
 #### Category
 
-Core .NET libraries
+Code analysis
 
 #### Affected APIs
 

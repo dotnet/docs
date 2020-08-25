@@ -40,7 +40,7 @@ Additional comments are contained in source and project files.
 
 The expected output will come from the `DotNetLib` class library and include the arguments passed to the managed library from the host:
 
-```
+```output
 Hello, world! from Lib [count: 1]
 -- message: from host!
 -- number: 0

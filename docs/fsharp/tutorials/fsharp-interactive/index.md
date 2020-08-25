@@ -95,7 +95,7 @@ For example, to reference the `FSharp.Data` package, use the following `#r` refe
 #r "nuget: FSharp.Data"
 ```
 
-After executing this line, the package `FSharp.Data` will be downloaded to your nuget cache and referenced in the current F# Interactive session.
+After executing this line, the latest version of the `FSharp.Data` package will be downloaded to your nuget cache and referenced in the current F# Interactive session.
 
 In addition to the package name, specific versions of a package can be referenced via a short syntax:
 

@@ -9,7 +9,7 @@ f1_keywords:
 
 F# Interactive (dotnet fsi) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
 
-To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet fsi` in any .Net Core SDK.
+To run F# Interactive from the console, run `dotnet fsi`. You will find `dotnet fsi` in any .NET SDK.
 
 For information about command line options available, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 

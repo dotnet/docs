@@ -41,7 +41,7 @@ The most primitive SIMD-accelerated types in .NET are <xref:System.Numerics.Vect
 ```csharp
 var v1 = new Vector2(0.1f, 0.2f);
 var v2 = new Vector2(1.1f, 2.2f);
-var vResutl = v1 + v2;
+var vResult = v1 + v2;
 ```
 
 It's also possible to use .NET vectors to calculate other mathematical properties of vectors such as `Dot product`, `Transform`, `Clamp` and so on.
@@ -49,9 +49,9 @@ It's also possible to use .NET vectors to calculate other mathematical propertie
 ```csharp
 var v1 = new Vector2(0.1f, 0.2f);
 var v2 = new Vector2(1.1f, 2.2f);
-var vResutl1 = Vector2.Dot(v1, v2);
-var vResutl2 = Vector2.Distance(v1, v2);
-var vResutl3 = Vector2.Clamp(v1, Vector2.Zero, Vector2.One);
+var vResult1 = Vector2.Dot(v1, v2);
+var vResult2 = Vector2.Distance(v1, v2);
+var vResult3 = Vector2.Clamp(v1, Vector2.Zero, Vector2.One);
 ```
 
 ## Matrix

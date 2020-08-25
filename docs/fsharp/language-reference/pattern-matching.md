@@ -1,7 +1,7 @@
 ---
 title: Pattern Matching
 description: Learn how patterns are used in F# to compare data with logical structures, decompose data into constituent parts, or extract information from data.
-ms.date: 10/27/2019
+ms.date: 08/15/2020
 ---
 # Pattern Matching
 
@@ -127,7 +127,7 @@ The following example demonstrates the OR pattern.
 
 The AND pattern requires that the input match two patterns. The types of both sides of the AND pattern must be compatible.
 
-The following example is like `detectZeroTuple` shown in the [Tuple Pattern](https://msdn.microsoft.com/library/#tuple) section later in this topic, but here both `var1` and `var2` are obtained as values by using the AND pattern.
+The following example is like `detectZeroTuple` shown in the Tuple Pattern section later in this topic, but here both `var1` and `var2` are obtained as values by using the AND pattern.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4808.fs)]
 

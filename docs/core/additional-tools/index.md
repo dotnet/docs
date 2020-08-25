@@ -19,6 +19,8 @@ The [.NET Core Uninstall Tool](https://github.com/dotnet/cli-lab/releases) (`dot
 
 [dotnet-dump](../diagnostics/dotnet-dump.md) provides a way to collect and analyze Windows and Linux core dumps without a native debugger.
 
+[dotnet-gcdump](../diagnostics/dotnet-gcdump.md) provides a way to collect GC (Garbage Collector) dumps of live .NET processes.
+
 [dotnet-trace](../diagnostics/dotnet-trace.md) collects profiling data from your app that can help in scenarios where you need to find out what causes an app to run slow.
 
 ## WCF Web Service Reference tool

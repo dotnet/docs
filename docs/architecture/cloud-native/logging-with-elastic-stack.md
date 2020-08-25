@@ -76,7 +76,7 @@ Log messages that have been crafted to contain parameters or that have had param
 
 A query that searches for the top 10 pages visited by `jill@example.com`, appears in Figure 7-9.
 
-```
+```json
 "query": {
     "match": {
       "user": "jill@example.com"

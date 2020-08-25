@@ -1,11 +1,15 @@
 ---
 title: Language Reference
 description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
-ms.date: 05/16/2016
+ms.date: 08/13/2020
 ---
 # F# Language Reference
 
 This section is a reference for the F# language, a multi-paradigm programming language targeting .NET. The F# language supports functional, object-oriented, and imperative programming models.
+
+## F# Core Library API reference
+
+[F# Core Library (FSharp.Core) API reference](https://fsharp.github.io/fsharp-core-docs/) is the reference for all F# Core Library namespaces, modules, types, and functions.
 
 ## F# Tokens
 

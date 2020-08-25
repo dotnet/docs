@@ -5,6 +5,7 @@ metadata:
   description: In this tutorial, you'll use your browser to learn C# interactively. You write C# code and see the results of compiling and running your code directly in the browser.
   audience: Developer
   ms.custom: mvc
+  ms.topic: interactive-tutorial
   ms.date: 10/23/2018
   level: Beginner
   displayType: two-column
@@ -84,7 +85,7 @@ items:
       Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
     ```
 
-    You may not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it is -1, the item was not found.
+    You may not know if an item is in the list, so you should always check the index returned by <xref:System.Collections.Generic.List%601.IndexOf%2A>. If it is `-1`, the item was not found.
 
     The items in your list can be sorted as well. The <xref:System.Collections.Generic.List%601.Sort%2A> method sorts all the items in the list in their normal order (alphabetically for strings). Add this code and run again:
 

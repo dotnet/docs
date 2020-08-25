@@ -7,7 +7,7 @@ ms.date: 09/20/2018
 
 A microservice API is a contract between the service and its clients. You'll be able to evolve a microservice independently only if you do not break its API contract, which is why the contract is so important. If you change the contract, it will impact your client applications or your API Gateway.
 
-The nature of the API definition depends on which protocol you're using. For instance, if you're using messaging (like [AMQP](https://www.amqp.org/)), the API consists of the message types. If you're using HTTP and RESTful services, the API consists of the URLs and the request and response JSON formats.
+The nature of the API definition depends on which protocol you're using. For instance, if you're using messaging (like [AMQP](http://www.amqp.org/)), the API consists of the message types. If you're using HTTP and RESTful services, the API consists of the URLs and the request and response JSON formats.
 
 However, even if you're thoughtful about your initial contract, a service API will need to change over time. When that happens—and especially if your API is a public API consumed by multiple client applications — you typically can't force all clients to upgrade to your new API contract. You usually need to incrementally deploy new versions of a service in a way that both old and new versions of a service contract are running simultaneously. Therefore, it's important to have a strategy for your service versioning.
 

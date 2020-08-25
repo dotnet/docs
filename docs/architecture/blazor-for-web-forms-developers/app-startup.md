@@ -7,8 +7,6 @@ ms.date: 02/25/2020
 ---
 # App startup
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Applications that are written for ASP.NET typically have a `global.asax.cs` file that defines the `Application_Start` event that controls which services are configured and made available for both HTML rendering and .NET processing. This chapter looks at how things are slightly different with ASP.NET Core and Blazor Server.
 
 ## Application_Start and Web Forms

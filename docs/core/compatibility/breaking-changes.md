@@ -27,6 +27,7 @@ Select the .NET Core technology area that you're interested in. Individual chang
 > [!div class="op_single_selector"]
 >
 > - [ASP.NET Core](aspnetcore.md)
+> - [Code analysis](code-analysis.md)
 > - [Core .NET libraries](corefx.md)
 > - [Cryptography](cryptography.md)
 > - [EF Core](/ef/core/what-is-new/ef-core-3.0/breaking-changes)

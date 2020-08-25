@@ -11,7 +11,7 @@ The topics in this section describe the services and providers that transform qu
   
  [Entity Framework Data Providers](data-providers.md)  
   
- [Writing an Entity Framework Data Provider](writing-an-ef-data-provider.md)  
+ [Writing an Entity Framework Data Provider](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee789835(v=vs.100)))
   
 ## See also
 

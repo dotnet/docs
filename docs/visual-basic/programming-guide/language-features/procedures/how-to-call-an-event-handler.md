@@ -32,7 +32,7 @@ You can associate more than one event handler with the same event. In some cases
 
     The following example defines an event and a `WithEvents` variable that refers to the class that raises the event. The event-handling `Sub` procedure uses a `Handles` clause to specify the class and event it handles.
 
-    :::code language="vb" source="snippets/how-to-call-an-event-handler/Class1.vb" ID="4":::
+    :::code language="vb" source="snippets/how-to-call-an-event-handler/SpecialForm.vb" ID="4":::
 
 ## Call an event handler using AddHandler
 
@@ -44,7 +44,7 @@ You can associate more than one event handler with the same event. In some cases
 
     The following example uses the [AddHandler statement](../../../language-reference/statements/addhandler-statement.md) in the constructor to associate the `OnFormClosing` procedure as an event handler for <xref:System.Windows.Forms.Form.FormClosing>.
 
-    :::code language="vb" source="snippets/how-to-call-an-event-handler/Class1.vb" ID="5":::
+    :::code language="vb" source="snippets/how-to-call-an-event-handler/SpecialForm.vb" ID="5":::
 
     You can dissociate an event handler from an event by executing the [RemoveHandler statement](../../../language-reference/statements/removehandler-statement.md).
 

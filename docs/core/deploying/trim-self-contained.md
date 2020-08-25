@@ -11,7 +11,7 @@ The [framework-dependent deployment model](index.md#publish-framework-dependent)
 
 The trim-self-contained deployment model is a specialized version of the self-contained deployment model that is optimized to reduce deployment size. Minimizing deployment size is a critical requirement for some client-side scenarios like Blazor applications. Depending on the complexity of the application, only a subset of the framework assemblies are referenced, and a subset of the code within each assembly is required to run the application. The unused parts of the libraries are unnecessary and can be trimmed from the packaged application. 
 
-However, there is a risk that the build time analysis of the application can cause failures at runtime, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). Because reliability can't be guaranteed, this deployment model is offered as a preview feature. 
+However, there is a risk that the build time analysis of the application can cause failures at runtime, due to not being able to reliably analyze various problematic code patterns (largely centered on reflection use). Because reliability can't be guaranteed, this deployment model is offered as a preview feature.
 
 The build time analysis engine provides warnings to the developer of code patterns that are problemmatic to detect which other code is required. Code can be annotated with attributes to tell the trimmer what else to include. Many reflection patterns can be replaced with build-time code generation using [Source Generators](https://github.com/dotnet/roslyn/blob/master/docs/features/source-generators.md).
 

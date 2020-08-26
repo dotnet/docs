@@ -7,7 +7,7 @@ ms.date: 08/25/2020
 ---
 # Trimming options
 
-The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. More information about the ILLink command-line tool can be found at [illink options](https://github.com/mono/linker/blob/master/docs/illink-options.md).
+The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. More information about the `ILLink` command-line tool can be found at [illink options](https://github.com/mono/linker/blob/master/docs/illink-options.md).
 
 ## Enable trimming
 
@@ -82,7 +82,7 @@ For example, `MyRoots.xml` might root a specific method that is dynamically acce
 <linker>
   <assembly fullname="MyAssembly">
     <type fullname="MyAssembly.MyClass">
-      <method signature="System.Void DynamicallyAccessedMethod()" />
+      <method name="DynamicallyAccessedMethod" />
     </type>
   </assembly>
 </linker>

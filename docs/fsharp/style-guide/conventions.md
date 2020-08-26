@@ -102,34 +102,19 @@ open System.IO
 open System.Reflection
 open System.Text
 
-open Microsoft.FSharp.Compiler
-open Microsoft.FSharp.Compiler.AbstractIL
-open Microsoft.FSharp.Compiler.AbstractIL.Diagnostics
-open Microsoft.FSharp.Compiler.AbstractIL.IL
-open Microsoft.FSharp.Compiler.AbstractIL.ILBinaryReader
-open Microsoft.FSharp.Compiler.AbstractIL.Internal
-open Microsoft.FSharp.Compiler.AbstractIL.Internal.Library
+open FSharp.Compiler
+open FSharp.Compiler.AbstractIL
+open FSharp.Compiler.AbstractIL.Diagnostics
+open FSharp.Compiler.AbstractIL.IL
+open FSharp.Compiler.AbstractIL.ILBinaryReader
+open FSharp.Compiler.AbstractIL.Internal
+open FSharp.Compiler.AbstractIL.Internal.Library
 
-open Microsoft.FSharp.Compiler.AccessibilityLogic
-open Microsoft.FSharp.Compiler.Ast
-open Microsoft.FSharp.Compiler.CompileOps
-open Microsoft.FSharp.Compiler.CompileOptions
-open Microsoft.FSharp.Compiler.Driver
-open Microsoft.FSharp.Compiler.ErrorLogger
-open Microsoft.FSharp.Compiler.Infos
-open Microsoft.FSharp.Compiler.InfoReader
-open Microsoft.FSharp.Compiler.Lexhelp
-open Microsoft.FSharp.Compiler.Layout
-open Microsoft.FSharp.Compiler.Lib
-open Microsoft.FSharp.Compiler.NameResolution
-open Microsoft.FSharp.Compiler.PrettyNaming
-open Microsoft.FSharp.Compiler.Parser
-open Microsoft.FSharp.Compiler.Range
-open Microsoft.FSharp.Compiler.Tast
-open Microsoft.FSharp.Compiler.Tastops
-open Microsoft.FSharp.Compiler.TcGlobals
-open Microsoft.FSharp.Compiler.TypeChecker
-open Microsoft.FSharp.Compiler.SourceCodeServices.SymbolHelpers
+open FSharp.Compiler.AccessibilityLogic
+open FSharp.Compiler.Ast
+open FSharp.Compiler.CompileOps
+open FSharp.Compiler.CompileOptions
+open FSharp.Compiler.Driver
 
 open Internal.Utilities
 open Internal.Utilities.Collections
@@ -231,7 +216,7 @@ Use `nullArg`, `invalidArg` and `invalidOp` as the mechanism to throw `ArgumentN
 
 The `failwith` and `failwithf` functions should generally be avoided because they raise the base `Exception` type, not a specific exception. As per the [Exception Design Guidelines](../../standard/design-guidelines/exceptions.md), you want to raise more specific exceptions when you can.
 
-### Using exception-handling syntax
+### Use exception-handling syntax
 
 F# supports exception patterns via the `try...with` syntax:
 
@@ -437,18 +422,18 @@ Finally, automatic generalization is not always a boon for people who are new to
 
 ## Performance
 
-### Prefer structs for small data types
+### Consider structs for small types with high allocation rates
 
 Using structs (also called Value Types) can often result in higher performance for some code because it typically avoids allocating objects. However, structs are not always a "go faster" button: if the size of the data in a struct exceeds 16 bytes, copying the data can often result in more CPU time spend than using a reference type.
 
 To determine if you should use a struct, consider the following conditions:
 
 - If the size of your data is 16 bytes or smaller.
-- If you're likely to have many of these data types resident in memory in a running program.
+- If you're likely to have many instances of these types resident in memory in a running program.
 
 If the first condition applies, you should generally use a struct. If both apply, you should almost always use a struct. There may be some cases where the previous conditions apply, but using a struct is no better or worse than using a reference type, but they are likely to be rare. It's important to always measure when making changes like this, though, and not operate on assumption or intuition.
 
-#### Prefer struct tuples when grouping small value types
+#### Consider struct tuples when grouping small value types with high allocation rates
 
 Consider the following two functions:
 
@@ -480,7 +465,7 @@ When you benchmark these functions with a statistical benchmarking tool like [Be
 
 However, these results won't always be the case in your own code. If you mark a function as `inline`, code that uses reference tuples may get some additional optimizations, or code that would allocate could simply be optimized away. You should always measure results whenever performance is concerned, and never operate based on assumption or intuition.
 
-#### Prefer struct records when the data type is small
+#### Consider struct records when the type is small and has high allocation rates
 
 The rule of thumb described earlier also holds for [F# record types](../language-reference/records.md). Consider the following data types and functions that process them:
 
@@ -515,7 +500,7 @@ This is similar to the previous tuple code, but this time the example uses recor
 
 When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that `processStructPoint` runs nearly 60% faster and allocates nothing on the managed heap.
 
-#### Prefer struct discriminated unions when the data type is small
+#### Consider struct discriminated unions when the data type is small with high allocation rates
 
 The previous observations about performance with struct tuples and records also holds for [F# Discriminated Unions](../language-reference/discriminated-unions.md). Consider the following code:
 

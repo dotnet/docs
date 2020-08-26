@@ -21,7 +21,7 @@ This tutorial introduces the debugging tools available in Visual Studio.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
- By default, Visual Studio Code uses the Debug build configuration, so you don't need to change it before debugging.
+ By default, Visual Studio uses the Debug build configuration, so you don't need to change it before debugging.
 
 1. Start Visual Studio.
 
@@ -35,7 +35,7 @@ In the Debug configuration, a program compiles with full symbolic debug informat
 
 A *breakpoint* temporarily interrupts the execution of the application before the line with the breakpoint is executed.
 
-1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window on that line. The left margin is to the left of the line numbers.  Another way to set a breakpoint is by placing the cursor in the line of code and then choosing **Debug** > **Toggle Breakpoint** from the menu bar.
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window on that line. The left margin is to the left of the line numbers.  Other ways to set a breakpoint are by placing the cursor in the line of code and then pressing <kbd>F9</kbd> or choosing **Debug** > **Toggle Breakpoint** from the menu bar.
 
    As the following image shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red dot in the left margin.
 
@@ -121,7 +121,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. Press any key to close the console window and stop debugging.
 
-1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Another way to clear a breakpoint is by choosing **Debug > Toggle Breakpoint** while the line of code is selected.
+1. Clear the breakpoint by clicking on the dot in the left margin of the code window. Other ways to clear a breakpoint are by pressing <kbd>F9</kbd> or choosing **Debug > Toggle Breakpoint** while the line of code is selected.
 
 ## Step through a program
 

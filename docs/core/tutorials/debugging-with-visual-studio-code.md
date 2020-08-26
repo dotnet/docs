@@ -9,7 +9,7 @@ This tutorial introduces the debugging tools available in Visual Studio Code for
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
+- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio Code](with-visual-studio-code.md).
 
 ## Use Debug build configuration
 
@@ -21,7 +21,7 @@ By default, Visual Studio Code launch settings use the Debug build configuration
 
 1. Start Visual Studio Code.
 
-1. Open the folder of the project that you created in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
+1. Open the folder of the project that you created in [Create a .NET Core console application using Visual Studio Code](with-visual-studio-code.md).
 
 ## Set a breakpoint
 
@@ -45,13 +45,13 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    From:
 
-   ```
+   ```json
    "console": "internalConsole",
    ```
 
    To:
 
-   ```
+   ```json
    "console": "integratedTerminal",
    ```
 
@@ -218,4 +218,4 @@ dotnet run --configuration Release
 In this tutorial, you used Visual Studio Code debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application with Visual Studio Code](publishing-with-visual-studio-code.md)
+> [Publish a .NET Core console application using Visual Studio Code](publishing-with-visual-studio-code.md)

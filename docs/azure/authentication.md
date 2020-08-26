@@ -9,7 +9,7 @@ ms.custom: azure-sdk-dotnet
 
 ## Recommended: Azure.Identity
 
-The latest packages in the Azure SDK for .NET use a common authentication package to authenticate, `Azure.Identity`. Using `Azure.Identity` is recommended over other authentication mechanisms described later in this document. Packages supporting the credentials provided by `Azure.Identity` are built on top of `Azure.Core` and have package identifiers starting with *Azure.* [See the package list](packages.md) for an inventory of packages that use `Azure.Core`.
+The latest packages in the Azure SDK for .NET use a common authentication package to authenticate, `Azure.Identity`. Using `Azure.Identity` is recommended over other authentication mechanisms described later in this document. Packages supporting the credentials provided by `Azure.Identity` are built on top of `Azure.Core` and have package identifiers starting with *Azure*. [See the package list](packages.md) for an inventory of packages that use `Azure.Core`.
 
 For complete instructions on using `Azure.Identity` in your project, see the documentation for [Azure Identity client for .NET](/dotnet/api/overview/azure/identity-readme).
 

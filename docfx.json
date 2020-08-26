@@ -171,6 +171,7 @@
         "docs/desktop-wpf/**/**.md": "dotnet-desktop",
         "docs/framework/**/**.md": "dotnet-framework",
         "docs/fsharp/**/**.md": "dotnet-fsharp",
+        "docs/fundamentals/**/*.md": "dotnet",
         "docs/machine-learning/**/*.*": "dotnet-ml",
         "docs/standard/**/**.md": "dotnet",
         "docs/visual-basic/**/**.md": "dotnet-visualbasic",
@@ -260,6 +261,7 @@
         "docs/framework/wpf/**/**.md": "adegeo",
         "docs/framework/xaml-services/**/**.md": "adegeo",
         "docs/fsharp/**/**.md": "cartermp",
+        "docs/fundamentals/productivity/**/**.md": "gewarren",
         "docs/machine-learning/**/**.md": "luisquintanilla",
         "docs/spark/**/**.md": "luisquintanilla",
         "docs/standard/**/**.md": "gewarren",
@@ -346,6 +348,7 @@
         "docs/framework/wpf/**/**.md": "adegeo",
         "docs/framework/xaml-services/**/**.md": "adegeo",
         "docs/fsharp/**/**.md": "phcart",
+        "docs/fundamentals/productivity/**/*.md": "gewarren",
         "docs/machine-learning/**/**.md": "luquinta",
         "docs/spark/**/**.md": "luquinta",
         "docs/standard/**/**.md": "gewarren",
@@ -452,7 +455,8 @@
         "docs/framework/xaml-services/**/**.md": "dotnet-wpf",
         "docs/standard/data/**/**.md": "dotnet-data",
         "docs/standard/security/**/**.md": "dotnet-security",
-        "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
+        "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics",
+        "docs/visual-basic/misc/**/**.md": "vb-diagnostics"
       },
       "title": {
         "_csharplang/spec/introduction.md": "Introduction",
@@ -559,6 +563,7 @@
         "docs/framework/wpf/**/**.md": "WPF",
         "docs/fsharp/tutorials/**/**.md": "F#",
         "docs/fsharp/language-reference/**/**.md": "F#",
+        "docs/fundamentals/**/**.md": ".NET",
         "docs/core/additional-tools/**.md": ".NET Core",
         "docs/core/build/**.md": ".NET Core",
         "docs/core/compatibility/**.md": ".NET Core",

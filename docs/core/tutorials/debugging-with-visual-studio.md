@@ -13,7 +13,7 @@ This tutorial introduces the debugging tools available in Visual Studio.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio 2019](with-visual-studio.md).
+- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio](with-visual-studio.md).
 
 ## Use Debug build configuration
 
@@ -25,7 +25,7 @@ In the Debug configuration, a program compiles with full symbolic debug informat
 
 1. Start Visual Studio.
 
-1. Open the project that you created in [Create a .NET Core console application in Visual Studio 2019](with-visual-studio.md).
+1. Open the project that you created in [Create a .NET Core console application using Visual Studio](with-visual-studio.md).
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
@@ -182,4 +182,4 @@ When you press <kbd>F5</kbd> or choose **Build Solution** from the **Build** men
 In this tutorial, you used Visual Studio debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application with Visual Studio](publishing-with-visual-studio.md)
+> [Publish a .NET Core console application using Visual Studio](publishing-with-visual-studio.md)

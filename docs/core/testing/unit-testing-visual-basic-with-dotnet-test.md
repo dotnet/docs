@@ -7,7 +7,7 @@ ms.date: 05/18/2020
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and xUnit
 
-This tutorial shows how to build a solution containing a unit test project and library project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+This tutorial shows how to build a solution containing a unit test project and library project. To follow the tutorial using a pre-built solution, [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/getting-started/unit-testing-using-dotnet-test/). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#view-and-download-samples).
 
 ## Create the solution
 

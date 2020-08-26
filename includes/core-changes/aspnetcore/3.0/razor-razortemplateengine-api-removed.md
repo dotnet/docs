@@ -27,34 +27,35 @@ Use `RazorProjectEngine` instead of `RazorTemplateEngine`. Consider the followin
 ##### Create and configure the RazorProjectEngine
 
 ```csharp
-var projectEngine = RazorProjectEngine.Create(RazorConfiguration.Default,
-    RazorProjectFileSystem.Create(
-        @"C:/Users/nimullen/source/repos/ConsoleApp4/ConsoleApp4"),
-    builder =>
-    {
-        builder.ConfigureClass((document, classNode) =>
+RazorProjectEngine projectEngine =
+    RazorProjectEngine.Create(RazorConfiguration.Default,
+        RazorProjectFileSystem.Create(@"C:\source\repos\ConsoleApp4\ConsoleApp4"),
+        builder =>
         {
-            classNode.ClassName = "MyClassName";
+            builder.ConfigureClass((document, classNode) =>
+            {
+                classNode.ClassName = "MyClassName";
 
-            // Can also configure other aspects of the class here.
+                // Can also configure other aspects of the class here.
+            });
+
+            // More configuration can go here
         });
-
-        // More configuration can go here
-    });
 ```
 
 ##### Generate code for a Razor file
 
 ```csharp
-var item = projectEngine.FileSystem.GetItem(
-    @"C:\Users\nimullen\source\repos\ConsoleApp4\ConsoleApp4\Example.cshtml",
+RazorProjectItem item = projectEngine.FileSystem.GetItem(
+    @"C:\source\repos\ConsoleApp4\ConsoleApp4\Example.cshtml",
     FileKinds.Legacy);
-var output = projectEngine.Process(item);
+RazorCodeDocument output = projectEngine.Process(item);
 
 // Things available
-var syntaxTree = output.GetSyntaxTree();
-var intermediateDocument = output.GetDocumentIntermediateNode();
-var csharpDocument = output.GetCSharpDocument();
+RazorSyntaxTree syntaxTree = output.GetSyntaxTree();
+DocumentIntermediateNode intermediateDocument =
+    output.GetDocumentIntermediateNode();
+RazorCSharpDocument csharpDocument = output.GetCSharpDocument();
 ```
 
 #### Category

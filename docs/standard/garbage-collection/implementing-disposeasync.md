@@ -1,6 +1,6 @@
 ---
 title: Implement a DisposeAsync method
-description:
+description: Learn how to implement DisposeAsync and DisposeAsyncCore methods to perform asynchronous resource cleanup.
 author: IEvangelist
 ms.author: dapine
 ms.date: 08/25/2020

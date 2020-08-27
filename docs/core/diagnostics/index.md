@@ -45,6 +45,10 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 
 [dotnet-symbol](dotnet-symbol.md) downloads files (symbols, DAC/DBI, host files, etc.) needed to open a core dump or minidump. Use this tool if you need symbols and modules to debug a dump file captured on a different machine.
 
+### dotnet-sos
+
+[dotnet-sos](dotnet-sos.md) is used to install the [SOS debugging extension](https://docs.microsoft.com/dotnet/framework/tools/sos-dll-sos-debugging-extension) on Linux or MacOS (or on Windows if using older debugging tools).
+
 ## .NET Core diagnostics tutorials
 
 ### Debug a memory leak

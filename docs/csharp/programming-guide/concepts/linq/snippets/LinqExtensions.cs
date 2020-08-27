@@ -11,9 +11,9 @@ namespace linq
     {
         public static double Median(this IEnumerable<double>? source)
         {
-            var countOfElementsInTheSet = source?.Any() ?? false;
+            var hasElements = source?.Any() ?? false;
 
-            if (!countOfElementsInTheSet)
+            if (!hasElements)
             {
                 throw new InvalidOperationException("Cannot compute median for a null or empty set.");
             }

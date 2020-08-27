@@ -29,7 +29,7 @@ A *breakpoint* temporarily interrupts the execution of the application before th
 
 1. Open the *Program.cs* file.
 
-1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or selecting **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
+1. Set a *breakpoint* on the line that displays the name, date, and time, by clicking in the left margin of the code window. The left margin is to the left of the line numbers. Other ways to set a breakpoint are by pressing <kbd>F9</kbd> or choosing **Run** > **Toggle Breakpoint** from the menu while the line of code is selected.
 
    Visual Studio Code indicates the line on which the breakpoint is set by displaying a red dot in the left margin.
 
@@ -63,7 +63,7 @@ The breakpoint is located after a `Console.ReadLine` method call. The **Debug Co
 
    :::image type="content" source="media/debugging-with-visual-studio-code/select-debug-pane.png" alt-text="Open the Debug tab in Visual Studio Code":::
 
-1. Select the green arrow at the top of the pane, next to **.NET Core Launch (console)**. Another way to start the program in debugging mode is by choosing **Run** > **Start Debugging** from the menu.
+1. Select the green arrow at the top of the pane, next to **.NET Core Launch (console)**. Other ways to start the program in debugging mode are by pressing <kbd>F5</kbd> or choosing **Run** > **Start Debugging** from the menu.
 
    :::image type="content" source="media/debugging-with-visual-studio-code/start-debugging.png" alt-text="Start debugging":::
 
@@ -127,7 +127,7 @@ The program displays the string that the user enters. What happens if the user d
 
 1. In the **Terminal** tab, press the <kbd>Enter</kbd> key when prompted to enter your name.
 
-   Because the condition you specified (`name` is `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
+   Because the condition you specified (`name` is either `null` or <xref:System.String.Empty?displayProperty=nameWithType>) has been satisfied, program execution stops when it reaches the breakpoint and before the `Console.WriteLine` method executes.
 
    The **Variables** window shows that the value of the `name` variable is `""`, or <xref:System.String.Empty?displayProperty=nameWithType>.
 

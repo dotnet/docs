@@ -27,7 +27,6 @@ The following example shows two query expressions. In the first expression, the 
 
 [!code-csharp[csrefKeywordsTypes#18](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsTypes/CS/keywordsTypes.cs#18)]
 
-
 ## See also
 
 - [C# Reference](../index.md)

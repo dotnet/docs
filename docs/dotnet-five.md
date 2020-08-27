@@ -24,8 +24,6 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 > - Visual Studio, Visual Studio for Mac, and Visual Studio Code integration
 > - Flexible deployment
 
-
-
 ## .NET release schedule
 
 .NET has a formal release schedule, where a new major version is planned every November. .NET 5 will not have long-term support (LTS), however; .NET 6 in 2021 will be LTS. As major .NET versions ship, even-numbered releases will receive LTS. Minor releases will occur as needed.

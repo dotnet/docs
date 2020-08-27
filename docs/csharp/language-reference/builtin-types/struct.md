@@ -32,7 +32,7 @@ All data members of a `readonly` struct must be read-only as follows:
 - Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
 - Any property, including auto-implemented ones, must be read-only
 
-That guarantees that no member of a `readonly` struct modifies the state of the struct.
+That guarantees that no member of a `readonly` struct modifies the state of the struct. In C# 8.0 and later, that means that other instance members except constructors are implicitly [`readonly`](#readonly-instance-members).
 
 > [!NOTE]
 > In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.

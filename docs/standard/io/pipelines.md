@@ -364,6 +364,6 @@ The <xref:System.IO.Pipelines.StreamPipeWriterOptions> allow for control over th
 
 The following code demonstrates the creation of `PipeReader` and `PipeWriter` instances using the `Create` methods from a stream.
 
-:::code language="csharp" source="snippets/pipes/pipes-from-streams/Program.cs":::
+:::code language="csharp" source="snippets/pipelines/Program.cs":::
 
 The application uses a <xref:System.IO.StreamReader> to read the *lorem-ipsum.txt* file as a stream. The base stream is passed to  , which instantiates a `PipeReader` object. The console application then passes its standard output stream to <xref:System.IO.Pipelines.PipeWriter.Create%2A?displayProperty=nameWithType> using <xref:System.Console.OpenStandardOutput?displayProperty=nameWithType>. The example supports [cancellation](#cancellation).

@@ -7,7 +7,9 @@ ms.author: dapine
 author: IEvangelist
 ---
 
-The .NET ecosystem is being simplified with the convergence of .NET Core and .NET Framework. Naming things is hard, but unifying versions of two disparate .NET runtimes can be harder. This article details .NET 5, which can be thought of as .NET Core vNext. With .NET Core concluding at version 3.1 and .NET Framework at version 4.8, the next logical version to avoid ambiguity is .NET version 5.0.
+# What is .NET 5
+
+The .NET ecosystem is being simplified with the convergence of .NET Core and .NET Framework. Naming things is hard, but unifying versions of two disparate .NET implementations can be harder. This article details .NET 5, which can be thought of as .NET Core vNext. With .NET Core concluding at version 3.1 and .NET Framework at version 4.8, to avoid ambiguity the next logical version is .NET version 5.0.
 
 ## Evolution of .NET
 
@@ -23,6 +25,12 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 > - Command-line tooling
 > - Visual Studio, Visual Studio for Mac, and Visual Studio Code integration
 > - Flexible deployment
+
+In addition to all of these key characteristics, .NET 5 is making significant [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5).
+
+During Microsoft Build - 2020, Scott Hunter and Scott Hanselman presented "The Journey to One .NET".
+
+> [!VIDEO <https://channel9.msdn.com/Events/Build/2020/BOD106/player>]
 
 ## .NET release schedule
 

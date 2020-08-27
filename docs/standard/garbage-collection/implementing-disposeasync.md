@@ -56,7 +56,7 @@ public async ValueTask DisposeAsync()
 The `DisposeAsyncCore()` method is intended to perform the asynchronous cleanup of managed resources or for cascading calls to `DisposeAsync()`. It encapsulates the common asynchronous cleanup operations when a subclass inherits a base class that is an implementation of <xref:System.IAsyncDisposable>. The `DisposeAsyncCore()` method is `virtual` so that derived classes can define additional cleanup in their overrides.
 
 > [!TIP]
-> If an implementation of <xref:System.IAsyncDisposable> is `sealed` the `DisposeAsyncCore()` method is not needed, and the asynchronous cleanup can be performed directly in the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method.
+> If an implementation of <xref:System.IAsyncDisposable> is `sealed`, the `DisposeAsyncCore()` method is not needed, and the asynchronous cleanup can be performed directly in the <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> method.
 
 ## Implement the async dispose pattern
 

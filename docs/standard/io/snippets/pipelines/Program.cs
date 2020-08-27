@@ -3,24 +3,23 @@ using System.Buffers;
 using System.IO;
 using System.IO.Pipelines;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 class Program
 {
     static async Task Main()
     {
-        using var stream = new StreamReader("lorem-ipsum.txt");
-        using var cts = new CancellationTokenSource();
+        using var stream = File.OpenRead("lorem-ipsum.txt");
 
-        var reader = PipeReader.Create(stream.BaseStream);
+        var reader = PipeReader.Create(stream);
         var writer = PipeWriter.Create(
             Console.OpenStandardOutput(), 
             new StreamPipeWriterOptions(leaveOpen: true));
 
         WriteUserCancellationPrompt();
 
-        var processMessagesTask = ProcessMessagesAsync(reader, writer, cts.Token);
+        var processMessagesTask = ProcessMessagesAsync(reader, writer);
+        var userCanceled = false;
         var cancelProcessingTask = Task.Run(() =>
         {
             while (char.ToUpperInvariant(Console.ReadKey().KeyChar) != 'C')
@@ -28,16 +27,17 @@ class Program
                 WriteUserCancellationPrompt();
             }
 
-            cts.Cancel();
+            userCanceled = true;
 
+            // No exceptions thrown
             reader.CancelPendingRead();
             writer.CancelPendingFlush();
         });
 
-        _ = await Task.WhenAny(new[] { cancelProcessingTask, processMessagesTask });
+        await Task.WhenAny(cancelProcessingTask, processMessagesTask);
 
         Console.WriteLine(
-            $"\n\nProcessing {(cts.IsCancellationRequested ? "cancelled" : "completed")}.\n");
+            $"\n\nProcessing {(userCanceled ? "cancelled" : "completed")}.\n");
     }
 
     static void WriteUserCancellationPrompt() =>
@@ -45,14 +45,13 @@ class Program
 
     static async Task ProcessMessagesAsync(
         PipeReader reader,
-        PipeWriter writer,
-        CancellationToken cancellationToken)
+        PipeWriter writer)
     {
         try
         {
             while (true)
             {
-                ReadResult readResult = await reader.ReadAsync(cancellationToken);
+                ReadResult readResult = await reader.ReadAsync();
                 ReadOnlySequence<byte> buffer = readResult.Buffer;
 
                 try
@@ -65,7 +64,7 @@ class Program
                     if (TryParseMessage(ref buffer, out string message))
                     {
                         FlushResult flushResult =
-                            await WriteMessagesAsync(writer, message, cancellationToken);
+                            await WriteMessagesAsync(writer, message);
 
                         if (flushResult.IsCanceled || flushResult.IsCompleted)
                         {
@@ -75,7 +74,7 @@ class Program
 
                     if (readResult.IsCompleted)
                     {
-                        if (buffer.Length > 0)
+                        if (!buffer.IsEmpty)
                         {
                             throw new InvalidDataException("Incomplete message.");
                         }
@@ -95,6 +94,7 @@ class Program
         finally
         {
             await reader.CompleteAsync();
+            await writer.CompleteAsync();
         }
     }
 
@@ -105,7 +105,6 @@ class Program
 
     static ValueTask<FlushResult> WriteMessagesAsync(
         PipeWriter writer,
-        string message,
-        CancellationToken cancellationToken) =>
-        writer.WriteAsync(Encoding.ASCII.GetBytes(message), cancellationToken);
+        string message) =>
+        writer.WriteAsync(Encoding.ASCII.GetBytes(message));
 }

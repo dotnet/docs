@@ -25,11 +25,11 @@ The <xref:System.IAsyncDisposable> interface declares a single parameterless met
 - A `public` <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> implementation that has no parameters.
 - A `protected virtual ValueTask DisposeAsyncCore()` method whose signature is:
 
-```csharp
-protected virtual ValueTask DisposeAsyncCore()
-{
-}
-```
+  ```csharp
+  protected virtual ValueTask DisposeAsyncCore()
+  {
+  }
+  ```
 
 ### The DisposeAsync() method
 

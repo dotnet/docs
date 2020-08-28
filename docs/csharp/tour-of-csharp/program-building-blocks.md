@@ -187,8 +187,6 @@ A property is declared like a field, except that the declaration ends with a get
 
 A get accessor corresponds to a parameterless method with a return value of the property type. A set accessor corresponds to a method with a single parameter named value and no return type. The get accessor computes the value of the property. The set accessor provides a new value for the property. When the property is the target of an assignment, or the operand of `++` or `--`, the set accessor is invoked. In other cases where the property is referenced, the get accessor is invoked.
 
- When a property is referenced as the target of an assignment or as the operand of ++ or --, the set accessor is invoked with an argument that provides the new value.
-
 The `MyList<T>` class declares two properties, `Count` and `Capacity`, which are read-only and read-write, respectively. The following code is an example of use of these properties:
 
 :::code language="csharp" source="./snippets/shared/ClassesObjects.cs" ID="AccessProperties":::

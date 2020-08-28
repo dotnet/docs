@@ -131,7 +131,7 @@ When an instance method declaration includes a `virtual` modifier, the method is
 
 When a virtual method is invoked, the *run-time type* of the instance for which that invocation takes place determines the actual method implementation to invoke. In a nonvirtual method invocation, the *compile-time type* of the instance is the determining factor.
 
-A virtual method can be *overridden* in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. Aa virtual method declaration introduces a new method. An override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
+A virtual method can be *overridden* in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. A virtual method declaration introduces a new method. An override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
 
 An *abstract method* is a virtual method with no implementation. An abstract method is declared with the `abstract` modifier and is permitted only in an abstract class. An abstract method must be overridden in every non-abstract derived class.
 

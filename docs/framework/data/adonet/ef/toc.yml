@@ -77,38 +77,17 @@
         href: sqlclient-for-ef-types.md
       - name: Known Issues in SqlClient for Entity Framework
         href: known-issues-in-sqlclient-for-entity-framework.md
-  - name: Writing an Entity Framework Data Provider
-    href: writing-an-ef-data-provider.md
+  - name: Development and Deployment Considerations
+    href: development-and-deployment-considerations.md
     items:
-    - name: SQL Generation
-      href: sql-generation.md
-      items:
-      - name: The Shape of the Command Trees
-        href: the-shape-of-the-command-trees.md
-      - name: Generating SQL from Command Trees - Best Practices
-        href: generating-sql-from-command-trees-best-practices.md
-      - name: SQL Generation in the Sample Provider
-        href: sql-generation-in-the-sample-provider.md
-        items:
-        - name: Architecture and Design
-          href: architecture-and-design.md
-        - name: "Walkthrough: SQL Generation"
-          href: walkthrough-sql-generation.md
-    - name: Modification SQL Generation
-      href: modification-sql-generation.md
-    - name: Provider Manifest Specification
-      href: provider-manifest-specification.md
-- name: Development and Deployment Considerations
-  href: development-and-deployment-considerations.md
-  items:
-  - name: Security Considerations
-    href: security-considerations.md
-  - name: Performance Considerations
-    href: performance-considerations.md
-  - name: Migration Considerations
-    href: migration-considerations.md
-  - name: Deployment Considerations
-    href: deployment-considerations.md
+    - name: Security Considerations
+      href: security-considerations.md
+    - name: Performance Considerations
+      href: performance-considerations.md
+    - name: Migration Considerations
+      href: migration-considerations.md
+    - name: Deployment Considerations
+      href: deployment-considerations.md
 - name: Entity Framework Resources
   href: resources.md
 - name: Entity Framework Terminology
@@ -117,3 +96,4 @@
   href: getting-started.md
 - name: Language Reference
   href: language-reference/index.md
+  

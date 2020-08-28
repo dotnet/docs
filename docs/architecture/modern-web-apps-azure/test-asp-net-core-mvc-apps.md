@@ -157,7 +157,7 @@ public class BasicWebTests : IClassFixture<WebApplicationFactory<Startup>>
 {
     protected readonly HttpClient _client;
 
-    public BaseWebTest(WebApplicationFactory<Startup> factory)
+    public BasicWebTests(WebApplicationFactory<Startup> factory)
     {
         _client = factory.CreateClient();
     }

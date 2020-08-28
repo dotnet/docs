@@ -1,4 +1,5 @@
 ---
+description: "-out (C# Compiler Options)"
 title: "-out (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

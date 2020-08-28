@@ -104,23 +104,19 @@ let arr = ArraySegment [| 1 .. 10 |]
 let slice = arr.[2..5] //[ 3; 4; 5]
 ```
 
-### Use inlining to avoid boxing if it is necessary
-
-If you are defining slices for a type that is actually a struct, we recommend that you `inline` the `GetSlice` member. The F# compiler optimizes away the optional arguments, avoiding any heap allocations as a result of slicing. This is critically important for slicing constructs such as <xref:System.Span%601> that cannot be allocated on the heap.
+Another example using the <xref:System.Span%601> and <xref:System.ReadOnlySpan%601> types:
 
 ```fsharp
 open System
 
 type ReadOnlySpan<'T> with
-    // Note the 'inline' in the member definition
-    member inline sp.GetSlice(startIdx, endIdx) =
+    member sp.GetSlice(startIdx, endIdx) =
         let s = defaultArg startIdx 0
         let e = defaultArg endIdx sp.Length
         sp.Slice(s, e - s)
 
 type Span<'T> with
-    // Note the 'inline' in the member definition
-    member inline sp.GetSlice(startIdx, endIdx) =
+    member sp.GetSlice(startIdx, endIdx) =
         let s = defaultArg startIdx 0
         let e = defaultArg endIdx sp.Length
         sp.Slice(s, e - s)

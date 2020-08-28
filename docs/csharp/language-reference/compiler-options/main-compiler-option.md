@@ -1,4 +1,5 @@
 ---
+description: "-main (C# Compiler Options)"
 title: "-main (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords:

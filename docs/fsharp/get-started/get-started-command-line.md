@@ -1,7 +1,7 @@
 ---
 title: Get started with F# with command-line tools
 description: Learn how to build a simple multi-project solution on F# using the .NET Core CLI on any operating system (Windows, macOS, or Linux).
-ms.date: 03/26/2018
+ms.date: 08/15/2020
 ---
 # Get started with F# with the .NET Core CLI
 
@@ -57,7 +57,8 @@ module Library
 open Newtonsoft.Json
 
 let getJsonNetJson value =
-    sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value (JsonConvert.SerializeObject(value))
+    let json = JsonConvert.SerializeObject(value)
+    sprintf "I used to be %s but now I'm %s thanks to JSON.NET!" value json
 ```
 
 Add the Newtonsoft.Json NuGet package to the Library project.
@@ -106,9 +107,9 @@ open Library
 let main argv =
     printfn "Nice command-line arguments! Here's what JSON.NET has to say about them:"
 
-    argv
-    |> Array.map getJsonNetJson
-    |> Array.iter (printfn "%s")
+    for arg in argv do
+        let value = getJsonNetJson arg
+        printfn "%s" value
 
     0 // return an integer exit code
 ```

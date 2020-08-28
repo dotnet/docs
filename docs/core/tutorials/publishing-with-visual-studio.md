@@ -13,13 +13,13 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio 2019](with-visual-studio.md).
+- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio](with-visual-studio.md).
 
 ## Publish the app
 
 1. Start Visual Studio.
 
-1. Open the *HelloWorld* project that you created in [Create a .NET Core console application in Visual Studio](with-visual-studio.md).
+1. Open the *HelloWorld* project that you created in [Create a .NET Core console application using Visual Studio](with-visual-studio.md).
 
 1. Make sure that Visual Studio is using the Release build configuration. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
@@ -81,7 +81,7 @@ In the following steps, you'll look at the files created by the publish process.
 
 1. Open a command prompt and navigate to the *publish* folder. To do that, enter `cd` and then paste the full path. For example:
 
-   ```
+   ```console
    cd C:\Projects\HelloWorld\bin\Release\netcoreapp3.1\publish\
    ```
 
@@ -106,4 +106,4 @@ In the following steps, you'll look at the files created by the publish process.
 In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library in Visual Studio](library-with-visual-studio.md)
+> [Create a .NET Standard library using Visual Studio](library-with-visual-studio.md)

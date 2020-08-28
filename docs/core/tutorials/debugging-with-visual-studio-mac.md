@@ -9,7 +9,7 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio for Mac](with-visual-studio-mac.md).
+- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio for Mac](with-visual-studio-mac.md).
 
 ## Use Debug build configuration
 
@@ -17,11 +17,11 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
-By default, Visual Studio uses the Debug build configuration, so you don't need to change it before debugging.
+By default, Visual Studio for Mac uses the Debug build configuration, so you don't need to change it before debugging.
 
 1. Start Visual Studio for Mac.
 
-1. Open the project that you created in [Create a .NET Core console application in Visual Studio for Mac](with-visual-studio-mac.md).
+1. Open the project that you created in [Create a .NET Core console application using Visual Studio for Mac](with-visual-studio-mac.md).
 
    The current build configuration is shown on the toolbar. The following toolbar image shows that Visual Studio is configured to compile the Debug version of the app:
 
@@ -172,4 +172,4 @@ To build and test the Release version of the console application, do the followi
 In this tutorial, you used Visual Studio debugging tools. In the next tutorial, you publish a deployable version of the app.
 
 > [!div class="nextstepaction"]
-> [Publish a .NET Core console application with Visual Studio for Mac](publishing-with-visual-studio-mac.md)
+> [Publish a .NET Core console application using Visual Studio for Mac](publishing-with-visual-studio-mac.md)

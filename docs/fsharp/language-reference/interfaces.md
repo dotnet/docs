@@ -1,7 +1,7 @@
 ---
 title: Interfaces
 description: Learn how F# Interfaces specify sets of related members that other classes implement.
-ms.date: 05/16/2016
+ms.date: 08/15/2020
 ---
 # Interfaces
 
@@ -52,6 +52,16 @@ There are two ways to implement interfaces: by using object expressions, and by 
 The keywords `interface` and `end`, which mark the start and end of the definition, are optional when you use lightweight syntax. If you do not use these keywords, the compiler attempts to infer whether the type is a class or an interface by analyzing the constructs that you use. If you define a member or use other class syntax, the type is interpreted as a class.
 
 The .NET coding style is to begin all interfaces with a capital `I`.
+
+You can specify multiple parameters in two ways: F#-style and .NET-style. Both will compile the same way for .NET consumers, but F#-style will force F# callers to use F#-style parameter application and .NET-style will force F# callers to use tupled argument application.
+
+```fsharp
+type INumeric1 =
+    abstract Add: x: int -> y: int -> int
+
+type INumeric2 =
+    abstract Add: x: int * y: int -> int
+```
 
 ## Implementing Interfaces by Using Class Types
 

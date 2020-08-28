@@ -552,10 +552,6 @@ In Blazor, the equivalent markup is provided in a *Create.razor* file:
 
 The `EditForm` context includes validation support and can be wrapped around input. Data annotations are a common way to add validation. Such validation support can be added via the `DataAnnotationsValidator` component. For more information on this mechanism, see [ASP.NET Core Blazor forms and validation](/aspnet/core/blazor/forms-validation).
 
-## Migrate built-in Web Forms controls
-
-*This content is coming soon.*
-
 ## Migrate configuration
 
 In a Web Forms project, configuration data is most commonly stored in the *web.config* file. The configuration data is accessed with `ConfigurationManager`. Services were often required to parse objects. With .NET Framework 4.7.2, composability was added to configuration via `ConfigurationBuilders`. These builders allowed developers to add various sources for configuration that was then composed at runtime to retrieve the necessary values.

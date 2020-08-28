@@ -362,6 +362,9 @@ The <xref:System.IO.Pipelines.StreamPipeWriterOptions> allow for control over th
 - <xref:System.IO.Pipelines.StreamPipeWriterOptions.MinimumBufferSize?displayProperty=nameWithType> represents the minimum buffer size to use when renting memory from the <xref:System.IO.Pipelines.StreamPipeWriterOptions.Pool>, and defaults to `4096`.
 - <xref:System.IO.Pipelines.StreamPipeWriterOptions.Pool?displayProperty=nameWithType> is the `MemoryPool<byte>` used when allocating memory, and defaults to `null`.
 
+> [!IMPORTANT]
+> When creating `PipeReader` and `PipeWriter` instances using the `Create` methods, you need to consider the `Stream` object lifetime. If you need access to the stream after the reader or writer is done with it, you'll need to set the `LeaveOpen` flag to `true` on the creation options. Otherwise, the stream will be closed.
+
 The following code demonstrates the creation of `PipeReader` and `PipeWriter` instances using the `Create` methods from a stream.
 
 :::code language="csharp" source="snippets/pipelines/Program.cs":::

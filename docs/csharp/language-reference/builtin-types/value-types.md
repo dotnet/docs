@@ -1,5 +1,5 @@
 ---
-description: "Value types - C# reference"
+description: Learn about value types, its kinds, and the built-in ones in C#
 title: "Value types - C# reference"
 ms.date: 01/22/2020
 f1_keywords: 

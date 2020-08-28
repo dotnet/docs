@@ -1,5 +1,5 @@
 ---
-description: "bool type - C# reference"
+description: Learn about the built-in boolean type in C#
 title: "bool type - C# reference"
 ms.date: 11/26/2019
 f1_keywords: 

@@ -1,5 +1,5 @@
 ---
-description: "Unmanaged types - C# reference"
+description: Learn about unmanaged types in C#
 title: "Unmanaged types - C# reference"
 ms.date: 09/06/2019
 helpviewer_keywords: 

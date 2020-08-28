@@ -44,7 +44,7 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 ```bash
 wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-dpkg -i packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]

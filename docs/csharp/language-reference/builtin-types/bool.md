@@ -1,4 +1,5 @@
 ---
+description: "bool type - C# reference"
 title: "bool type - C# reference"
 ms.date: 11/26/2019
 f1_keywords: 

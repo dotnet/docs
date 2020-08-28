@@ -1,4 +1,5 @@
 ---
+description: "Built-in numeric conversions - C# reference"
 title: "Built-in numeric conversions - C# reference"
 ms.date: 10/22/2019
 helpviewer_keywords: 

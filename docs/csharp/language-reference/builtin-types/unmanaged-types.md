@@ -1,4 +1,5 @@
 ---
+description: "Unmanaged types - C# reference"
 title: "Unmanaged types - C# reference"
 ms.date: 09/06/2019
 helpviewer_keywords: 

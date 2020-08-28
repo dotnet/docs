@@ -1,4 +1,5 @@
 ---
+description: "char type - C# reference"
 title: "char type - C# reference"
 ms.date: 05/11/2020
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "Structure types - C# reference"
 title: "Structure types - C# reference"
 ms.date: 04/21/2020
 f1_keywords: 

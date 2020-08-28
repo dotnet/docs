@@ -1,4 +1,5 @@
 ---
+description: "-define (C# Compiler Options)"
 title: "-define (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

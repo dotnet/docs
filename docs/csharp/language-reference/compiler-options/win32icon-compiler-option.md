@@ -1,4 +1,5 @@
 ---
+description: "-win32icon (C# Compiler Options)"
 title: "-win32icon (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "C# Compiler Errors"
 title: "C# Compiler Errors"
 ms.date: 07/20/2015
 helpviewer_keywords: 

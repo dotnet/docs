@@ -1,4 +1,5 @@
 ---
+description: "private protected - C# Reference"
 title: "private protected - C# Reference"
 ms.date: 11/15/2017
 f1_keywords:

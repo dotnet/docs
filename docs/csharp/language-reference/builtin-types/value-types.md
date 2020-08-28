@@ -1,4 +1,5 @@
 ---
+description: "Value types - C# reference"
 title: "Value types - C# reference"
 ms.date: 01/22/2020
 f1_keywords: 

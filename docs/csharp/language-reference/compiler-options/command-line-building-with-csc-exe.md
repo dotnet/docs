@@ -1,4 +1,5 @@
 ---
+description: "Command-line build with csc.exe"
 title: "Command-line build with csc.exe"
 ms.date: 04/19/2017
 helpviewer_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "-pathmap (C# Compiler Options)"
 title: "-pathmap (C# Compiler Options)"
 ms.date: 05/16/2018
 f1_keywords: 

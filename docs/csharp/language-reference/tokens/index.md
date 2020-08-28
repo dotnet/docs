@@ -1,4 +1,5 @@
 ---
+description: "Special Characters - C# Reference"
 title: "Special Characters - C# Reference"
 ms.date: 02/14/2017
 f1_keywords: 

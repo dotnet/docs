@@ -1,4 +1,5 @@
 ---
+description: "-keycontainer (C# Compiler Options)"
 title: "-keycontainer (C# Compiler Options)"
 ms.date: 05/16/2018
 f1_keywords: 

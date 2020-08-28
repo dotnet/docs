@@ -1,5 +1,6 @@
 ---
 title: "How to write object data to an XML file (C#)"
+description: This C# example writes the object from a class to an XML file using the XmlSerializer class. Learn how to compile the code.
 ms.date: 07/20/2015
 ms.assetid: 7681eb98-703d-4005-a369-26a7bca0f894
 ---

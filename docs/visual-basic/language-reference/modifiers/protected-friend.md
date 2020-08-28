@@ -1,6 +1,8 @@
 ---
 title: "Protected Friend"
 ms.date: 05/10/2018
+f1_keywords:
+  - "vb.ProtectedFriend"
 helpviewer_keywords:
   - "Protected Friend keyword [Visual Basic]"
   - "Protected Friend keyword [Visual Basic], syntax"

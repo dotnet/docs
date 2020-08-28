@@ -8,9 +8,9 @@ Public Class Form1
     '</snippet4>
 
     '<snippet5>
-    Private Sub mWidget_PercentDone( 
-        ByVal Percent As Single, 
-        ByRef Cancel As Boolean 
+    Private Sub mWidget_PercentDone(
+        ByVal Percent As Single,
+        ByRef Cancel As Boolean
     ) Handles mWidget.PercentDone
         lblPercentDone.Text = CInt(100 * Percent) & "%"
         My.Application.DoEvents()
@@ -19,27 +19,27 @@ Public Class Form1
     '</snippet5>
 
     '<snippet6>
-    Private Sub Button2_Click( 
-        ByVal sender As Object, 
-        ByVal e As System.EventArgs 
+    Private Sub Button2_Click(
+        ByVal sender As Object,
+        ByVal e As System.EventArgs
     ) Handles Button2.Click
         mblnCancel = True
     End Sub
     '</snippet6>
 
     '<snippet7>
-    Private Sub Form1_Load( 
-        ByVal sender As System.Object, 
-        ByVal e As System.EventArgs 
+    Private Sub Form1_Load(
+        ByVal sender As System.Object,
+        ByVal e As System.EventArgs
     ) Handles MyBase.Load
         mWidget = New Widget
     End Sub
     '</snippet7>
 
     '<snippet8>
-    Private Sub Button1_Click( 
-        ByVal sender As Object, 
-        ByVal e As System.EventArgs 
+    Private Sub Button1_Click(
+        ByVal sender As Object,
+        ByVal e As System.EventArgs
     ) Handles Button1.Click
         mblnCancel = False
         lblPercentDone.Text = "0%"
@@ -49,7 +49,9 @@ Public Class Form1
     End Sub
     '</snippet8>
 
-    Sub extra()
+
+
+    Sub extra()
         '<snippet9>
         mWidget = New Widget
         ' Create a new Widget object.

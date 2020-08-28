@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>IntroToStylingAndTemplating</RootNamespace>
-    <UseWPF>true</UseWPF>
+    <UseWpf>true</UseWpf>
     <AssemblyName>IntroToStylingAndTemplating</AssemblyName>
     <EnableDefaultItems>false</EnableDefaultItems>
   </PropertyGroup>

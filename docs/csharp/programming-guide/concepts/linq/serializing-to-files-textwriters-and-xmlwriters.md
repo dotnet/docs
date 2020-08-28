@@ -1,5 +1,6 @@
 ---
 title: "Serializing to Files, TextWriters, and XmlWriters"
+description: Learn about options to serialize XML trees to a File, a TextWriter, or an XmlWriter in C# by using the ToString or Save methods.
 ms.date: 07/20/2015
 ms.assetid: bd3ea6f7-895b-4ff4-a625-fe2bb55b1886
 ---

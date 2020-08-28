@@ -260,7 +260,7 @@ namespace LINQGettingStarted_1
             // LINQ query using query syntax.
             IEnumerable<string> output =
                 from rad in radii
-                select $"Area = {rad * rad * Math.PI:F2}";
+                select $"Area for a circle with a radius of '{rad}' = {rad * rad * Math.PI:F2}";
             */
 
             foreach (string s in output)
@@ -274,9 +274,9 @@ namespace LINQGettingStarted_1
         }
     }
     /* Output:
-        Area = 3.14
-        Area = 12.57
-        Area = 28.27
+        Area for a circle with a radius of '1' = 3.14
+        Area for a circle with a radius of '2' = 12.57
+        Area for a circle with a radius of '3' = 28.27
     */
     // </snippet10>
 

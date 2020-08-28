@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Support for Standard Controls"
+description: Get information about UI Automation support for standard controls in applications developed for Windows Presentation Foundation (WPF), Win32, and Windows Forms.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls, UI Automation support for"

@@ -1,8 +1,8 @@
 ---
 title: "Main() and command-line arguments - C# Programming Guide"
+description: Learn about Main() and command-line arguments. The 'Main' method is the entry point of an executable program.
 ms.date: 08/02/2017
 f1_keywords:
-  - "CS5001"
   - "main_CSharpKeyword"
   - "Main"
 helpviewer_keywords:

@@ -21,10 +21,10 @@
 ######## API landing page ###########
 /api/ @dotnet/docs
 
-############ WHATS NEW ###############
+############ What's new ###############
 /docs/whats-new/ @billwagner
 
-############  GUIDES  ################
+############ Guides ################
 # .NET Core
 /docs/core/ @dotnet/docs
 
@@ -53,7 +53,7 @@
 /docs/architecture/ @nishanil
 
 # The Desktop WPF Guide:
-/docs/desktop-wpf/ @Thraka
+/docs/desktop-wpf/ @adegeo
 
 # Azure Guide
 /docs/azure/ @CamSoper
@@ -61,17 +61,22 @@
 # Includes files
 /includes/ @dotnet/docs
 
+############### .NET 5 ################
+
+# Code analysis
+/docs/fundamentals/productivity/ @gewarren
+
 ############### .NET Core ########################
 # What's New
-/docs/core/whats-new/ @Thraka
+/docs/core/whats-new/ @adegeo
 # Deployment
-/docs/core/deploying/ @Thraka
+/docs/core/deploying/ @adegeo
 # Diagnostics
 /docs/core/diagnostics/ @sdmaclea @dotnet/docs
 # Docker
 /docs/core/docker/ @IEvangelist
 # Install
-/docs/core/install/ @Thraka
+/docs/core/install/ @adegeo
 # Breaking changes
 /docs/core/compatibility/ @gewarren
 # Project SDKs
@@ -83,33 +88,33 @@
 # Tutorials
 /docs/core/tutorials/ @tdykstra
 
-################### .NET FRAMEWORK ##################
+################### .NET Framework ##################
 # App domains
 /docs/framework/app-domains/ @gewarren
 # Config - WinForms
-/docs/framework/configure-apps/file-schema/winforms/ @Thraka
+/docs/framework/configure-apps/file-schema/winforms/ @adegeo
 # Deployment
-/docs/framework/deployment/ @Thraka
+/docs/framework/deployment/ @adegeo
 # Installation
-/docs/framework/install/ @Thraka
+/docs/framework/install/ @adegeo
 # Migration guide
 /docs/framework/migration-guide/ @gewarren
 # Reflection
-/docs/framework/reflection-and-codedom/ @Thraka
+/docs/framework/reflection-and-codedom/ @adegeo
 # Resources
-/docs/framework/resources/ @Thraka
+/docs/framework/resources/ @adegeo
 # Tools
 /docs/framework/tools/ @tdykstra
 # UI Automation
-/docs/framework/ui-automation/ @Thraka
+/docs/framework/ui-automation/ @adegeo
 # What's New
 /docs/framework/whats-new/ @gewarren
 # Winforms
-/docs/framework/winforms/ @Thraka
+/docs/framework/winforms/ @adegeo
 # WPF
-/docs/framework/wpf/ @Thraka
+/docs/framework/wpf/ @adegeo
 # XAML Services
-/docs/framework/xaml-services/ @Thraka
+/docs/framework/xaml-services/ @adegeo
 # ADO.NET
 /docs/framework/data/ @stevestein
 # NCL
@@ -119,7 +124,7 @@
 /docs/framework/configure-apps/file-schema/wcf/ @HongGit
 /docs/framework/wcf/ @HongGit
 
-################## .NET STANDARD ##################
+################## .NET Standard ##################
 # Analyzers
 /docs/standard/analyzers/ @IEvangelist
 # Assembly
@@ -129,7 +134,7 @@
 # Attributes
 /docs/standard/attributes/ @tdykstra
 # Base types
-/docs/standard/base-types/ @Thraka
+/docs/standard/base-types/ @adegeo
 # Collections
 /docs/standard/collections/ @IEvangelist
 # Data
@@ -137,7 +142,7 @@
 # Data - SQLite
 /docs/standard/data/sqlite/ @bricelam
 # Datetime
-/docs/standard/datetime/ @Thraka
+/docs/standard/datetime/ @adegeo
 # Design guidelines
 /docs/standard/design-guidelines/ @BillWagner
 # Events
@@ -147,11 +152,11 @@
 # GC
 /docs/standard/garbage-collection/ @gewarren
 # Generics
-/docs/standard/generics/ @Thraka
+/docs/standard/generics/ @adegeo
 # Globalization
 /docs/standard/globalization-localization/ @dotnet/docs
 # I/O
-/docs/standard/io/ @Thraka
+/docs/standard/io/ @adegeo
 # Library guidance
 /docs/standard/library-guidance/ @jamesnk
 # LINQ
@@ -171,7 +176,7 @@
 # What's New
 /docs/standard/whats-new/ @dotnet/docs
 
-################## E-BOOKS ##################
+################## E-books ##################
 # Blazor:
 /docs/architecture/blazor-for-web-forms-developers/ @danroth27
 # gRPC:
@@ -190,11 +195,9 @@
 /samples/snippets/fsharp/ @cartermp
 
 # WPF folders:
-/samples/snippets/xaml/wpf/   @thraka
-/samples/snippets/csharp/wpf/   @thraka
-/samples/snippets/visualbasic/wpf/   @thraka
-/samples/snippets/desktop-guide/wpf/   @thraka
+/samples/snippets/xaml/wpf/   @adegeo
+/samples/snippets/csharp/wpf/   @adegeo
+/samples/snippets/visualbasic/wpf/   @adegeo
+/samples/snippets/desktop-guide/wpf/   @adegeo
 
-/samples/snippets/winforms/  @thraka
-
-
+/samples/snippets/winforms/  @adegeo

@@ -1,5 +1,6 @@
 ---
 title: Create resource files for .NET apps
+description: Make resource files for .NET apps. Build text files with string resources, XML or binary files programmatically, or XML files with string, image, or object data.
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -199,5 +200,5 @@ At compile time, Visual Studio first converts the .resx files in a project to bi
 ## See also
 
 - <xref:System.Resources>
-- [Resources in Desktop Apps](index.md)
+- [Resources in .NET Apps](index.md)
 - [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md)

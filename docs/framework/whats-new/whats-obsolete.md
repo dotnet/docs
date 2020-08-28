@@ -1,6 +1,6 @@
 ---
 title: What's obsolete in .NET Framework
-ms.custom: "updateeachrelease"
+description: See how the .NET class library marks members as obsolete. Understand the ObsoleteAttribute attribute, how to handle obsolete types and members, and more.
 ms.date: "04/02/2019"
 helpviewer_keywords: 
   - "obsolete [.NET Framework]"

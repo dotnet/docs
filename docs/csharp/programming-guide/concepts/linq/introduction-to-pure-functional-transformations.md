@@ -1,5 +1,6 @@
 ---
 title: "Introduction to Pure Functional Transformations (C#)"
+description: Learn about functional transformations, including underlying concepts and language constructs in C#. These resources use XML transformation for examples.
 ms.date: 07/20/2015
 ms.assetid: 8495c9d9-2d02-4aa0-8a10-9e8794b985fe
 ---

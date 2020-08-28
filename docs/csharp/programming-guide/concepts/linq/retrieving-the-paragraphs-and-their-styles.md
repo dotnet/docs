@@ -1,5 +1,6 @@
 ---
 title: "Retrieving the Paragraphs and Their Styles (C#)"
+description: Learn how to write a query that retrieves paragraphs, and then identifies the style of each paragraph.
 ms.date: 07/20/2015
 ms.assetid: c2f767f8-57b1-4b4b-af04-89ffb1f7067d
 ---

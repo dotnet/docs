@@ -1,5 +1,6 @@
 ---
 title: "Preserving White Space While Serializing3"
+description: Learn how to control white space when serializing an XML tree using methods in the XElement and XDocument classes.
 ms.date: 07/20/2015
 ms.assetid: 0c4f8b98-483b-4cf8-86be-fa146eef90dc
 ---

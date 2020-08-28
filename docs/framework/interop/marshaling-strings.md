@@ -1,5 +1,6 @@
 ---
 title: "Marshaling Strings"
+description: Review how to marshal strings. See options for marshaling strings by value or reference, as a result, in a structure or class by value or reference, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "marshaling, samples"

@@ -50,7 +50,7 @@ All simple types are structure types and differ from other structure types in th
 
 - Constant expressions, whose operands are all constants of the simple types, are evaluated at compile time.
 
-Beginning with C# 7.0, C# supports [value tuples](../../tuples.md). A value tuple is a value type, but not a simple type.
+Beginning with C# 7.0, C# supports [value tuples](value-tuples.md). A value tuple is a value type, but not a simple type.
 
 ## C# language specification
 

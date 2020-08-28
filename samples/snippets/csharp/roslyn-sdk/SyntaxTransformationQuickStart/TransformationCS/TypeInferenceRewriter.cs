@@ -2,7 +2,6 @@
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using Microsoft.CodeAnalysis.CSharp;
 // </SnippetAddUsings>
 
 namespace TransformationCS
@@ -32,20 +31,20 @@ namespace TransformationCS
             // </SnippetExclusions>
 
             // <SnippetExtractTypeSymbol>
-            VariableDeclaratorSyntax declarator = node.Declaration.Variables.First();
-            TypeSyntax variableTypeName = node.Declaration.Type;
+            var declarator = node.Declaration.Variables.First();
+            var variableTypeName = node.Declaration.Type;
 
-            ITypeSymbol variableType = (ITypeSymbol)SemanticModel
+            var variableType = (ITypeSymbol)SemanticModel
                 .GetSymbolInfo(variableTypeName)
                 .Symbol;
             // </SnippetExtractTypeSymbol>
 
             // <SnippetBindInitializer>
-            TypeInfo initializerInfo = SemanticModel.GetTypeInfo(declarator.Initializer.Value);
+            var initializerInfo = SemanticModel.GetTypeInfo(declarator.Initializer.Value);
             // </SnippetBindInitializer>
 
             // <SnippetReplaceNode>
-            if (variableType == initializerInfo.Type)
+            if (SymbolEqualityComparer.Default.Equals(variableType, initializerInfo.Type))
             {
                 TypeSyntax varTypeName = SyntaxFactory.IdentifierName("var")
                     .WithLeadingTrivia(variableTypeName.GetLeadingTrivia())

@@ -1,5 +1,6 @@
 ---
 title: "Reflection and Generic Types"
+description: Get started with reflection and generic types in .NET. Unlike an ordinary type, a generic type is associated with a set of type parameters or type arguments.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

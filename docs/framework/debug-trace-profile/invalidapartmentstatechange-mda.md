@@ -1,5 +1,6 @@
 ---
 title: "invalidApartmentStateChange MDA"
+description: Learn about the invalidApartmentStateChange managed debugging assistant (MDA) in .NET, which is activated if there are problems with the COM apartment state.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), invalid apartment state"

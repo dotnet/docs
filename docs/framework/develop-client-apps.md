@@ -1,5 +1,6 @@
 ---
 title: "Developing Windows-based client applications with the .NET Framework"
+description: Develop Windows-based applications with .NET. You can use Universal Windows Platform (UWP), Windows Presentation Foundation (WPF), or Windows Forms.
 ms.date: "01/09/2018"
 helpviewer_keywords: 
   - "client application services"

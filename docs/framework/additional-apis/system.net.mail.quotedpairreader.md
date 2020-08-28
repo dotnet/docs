@@ -5,8 +5,8 @@ ms.technology: dotnet-networking
 topic_type: 
   - apiref
 api_name: 
-  - System.Net.QuotedPairReader
-  - System.Net.QuotedPairReader.CountQuotedChars
+  - System.Net.Mail.QuotedPairReader
+  - System.Net.Mail.QuotedPairReader.CountQuotedChars
 api_location: 
   - System.dll
 api_type: 

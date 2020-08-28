@@ -1,7 +1,7 @@
 ---
 title: Build a .NET for Apache Spark application on Ubuntu
 description: Learn how to build your .NET for Apache Spark application on Ubuntu
-ms.date: 01/29/2020
+ms.date: 06/25/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -10,6 +10,8 @@ ms.custom: mvc,how-to
 # Learn how to build your .NET for Apache Spark application on Ubuntu
 
 This article teaches you how to build your .NET for Apache Spark applications on Ubuntu.
+
+[!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
 ## Prerequisites
 
@@ -62,7 +64,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
 
        Sample mvn -version output:
 
-       ```
+       ```output
        Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
        Maven home: ~/bin/apache-maven-3.6.0
        Java version: 1.8.0_191, vendor: Oracle Corporation, runtime: /usr/lib/jvm/java-8-openjdk-amd64/jre

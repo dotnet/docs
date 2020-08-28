@@ -1,5 +1,6 @@
 ---
 title: "Type Relationships in LINQ Query Operations (C#)"
+description: Learn how types of variables in a LINQ query relate to each other. LINQ query operations are strongly typed in the data source, in the query, and in execution.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "inferring type information [LINQ in C#]"

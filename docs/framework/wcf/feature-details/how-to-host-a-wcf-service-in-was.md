@@ -60,7 +60,7 @@ This topic outlines the basic steps required to create a Windows Process Activat
   
 4. Create a Service.svc file that contains the following code.  
   
-   ```
+   ```aspx-csharp
    <%@ServiceHost language=c# Service="CalculatorService" %>
    ```
   

@@ -2,6 +2,7 @@
 title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
+no-loc: [Blazor, "Blazor WebAssembly"]
 ms.date: 05/13/2020
 ---
 
@@ -23,10 +24,11 @@ gRPC offers comprehensive support across most popular development stacks, includ
 
 gRPC uses HTTP/2 for its transport protocol. While compatible with HTTP 1.1, HTTP/2 features many advanced capabilities:
 
-- A binary protocol for data transport - unlike HTTP 1.1, which sends data as clear text.
+- A binary framing protocol for data transport - unlike HTTP 1.1, which is text based.
 - Multiplexing support for sending multiple parallel requests over the same connection - HTTP 1.1 limits processing to one request/response message at a time.
 - Bidirectional full-duplex communication for sending both client requests and server responses simultaneously.
 - Built-in streaming enabling requests and responses to asynchronously stream large data sets.
+- Header compression that reduces network usage.
 
 gRPC is lightweight and highly performant. It can be up to 8x faster than JSON serialization with messages 60-80% smaller. In Microsoft [Windows Communication Foundation (WCF)](https://docs.microsoft.com/dotnet/framework/wcf/whats-wcf) parlance, gRPC performance exceeds the speed and efficiency of the highly optimized [NetTCP bindings](https://docs.microsoft.com/dotnet/api/system.servicemodel.nettcpbinding?view=netframework-4.8). Unlike NetTCP, which favors the Microsoft stack, gRPC is cross-platform.
 
@@ -76,7 +78,7 @@ Favor gRPC for the following scenarios:
 - Point-to-point real-time communication - gRPC can push messages in real time without polling and has excellent support for bi-directional streaming.
 - Network constrained environments – binary gRPC messages are always smaller than an equivalent text-based JSON message.
 
-At the time, of this writing, gRPC is primarily used with backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client. That said, there's an [early initiative](https://devblogs.microsoft.com/aspnet/grpc-web-experiment/) that enables gRPC communication from browser-based apps built with JavaScript or Blazor WebAssembly technologies. The  [gRPC-Web for .NET](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-WEB.md) enables an ASP.NET Core gRPC app to support gRPC features in browser apps:
+At the time, of this writing, gRPC is primarily used with backend services. Modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client. That said, there's support for [gRPC-Web with .NET](https://devblogs.microsoft.com/aspnet/grpc-web-for-net-now-available/) that enables gRPC communication from browser-based apps built with JavaScript or Blazor WebAssembly technologies. [gRPC-Web](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-WEB.md) enables an ASP.NET Core gRPC app to support gRPC features in browser apps:
 
 - Strongly typed, code-generated clients
 - Compact Protobuf messages

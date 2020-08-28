@@ -1,5 +1,6 @@
 ---
 title: "Data Transformations with LINQ (C#)"
+description: Learn how to use LINQ queries in C# to transform data. You can modify the sequence by sorting and grouping and create new types by using the select clause.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "LINQ [C#], data transformations"

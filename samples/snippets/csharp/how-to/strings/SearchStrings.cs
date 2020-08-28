@@ -24,7 +24,7 @@ namespace HowToStrings
 
             // Simple comparisons are always case sensitive!
             bool containsSearchResult = factMessage.Contains("extension");
-            Console.WriteLine($"Starts with \"extension\"? {containsSearchResult}");
+            Console.WriteLine($"Contains \"extension\"? {containsSearchResult}");
 
             // For user input and strings that will be displayed to the end user,
             // use the StringComparison parameter on methods that have it to specify how to match strings.

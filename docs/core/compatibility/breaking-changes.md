@@ -5,19 +5,38 @@ ms.date: 11/27/2019
 ---
 # Breaking change selectors
 
-The following version and area selectors provide a filtered list of applicable breaking changes between different versions of .NET Core, ASP.NET Core, and EF Core. You can also browse version to version or category articles in the table of contents.
+The following version and area selectors provide a filtered list of applicable breaking changes between different versions of .NET Core, ASP.NET Core, and EF Core. You can also browse version-to-version or technology area articles in the table of contents.
 
 ## By version
 
 Select the .NET version that you're currently targeting and then the .NET Core version you wish to migrate to:
 
-[!INCLUDE[versionselector](~/includes/core-changes/versionselector.md)]
+> [!div class="op_multi_selector" title1="From target version" title2="To migrated version"]
+>
+> - [(3.1 | 5.0)](3.1-5.0.md)
+> - [(3.0 | 3.1)](3.0-3.1.md)
+> - [(2.2 | 3.1)](2.2-3.1.md)
+> - [(2.2 | 3.0)](2.2-3.0.md)
+> - [(2.0 | 2.1)](2.0-2.1.md)
+> - [(.NET Framework | .NET Core)](fx-core.md)
 
-## By area
+## By technology area
 
 Select the .NET Core technology area that you're interested in. Individual changes are ordered by .NET Core version.
 
-[!INCLUDE[categoryselector](~/includes/core-changes/categoryselector.md)]
+> [!div class="op_single_selector"]
+>
+> - [ASP.NET Core](aspnetcore.md)
+> - [Code analysis](code-analysis.md)
+> - [Core .NET libraries](corefx.md)
+> - [Cryptography](cryptography.md)
+> - [EF Core](/ef/core/what-is-new/ef-core-3.0/breaking-changes)
+> - [Globalization](globalization.md)
+> - [Interop](interop.md)
+> - [Networking](networking.md)
+> - [Serialization](serialization.md)
+> - [Visual Basic](visualbasic.md)
+> - [Windows Forms](winforms.md)
 
 ## GitHub issues and announcements
 

@@ -1,5 +1,6 @@
 ---
 title: "Create a Client-Side UI Automation Provider"
+description: View an example of how to create a client-side UI Automation provider. The example implements a simple client-side provider for a console window.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

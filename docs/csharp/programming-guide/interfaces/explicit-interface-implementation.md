@@ -1,5 +1,6 @@
 ---
 title: "Explicit Interface Implementation - C# Programming Guide"
+description: A class can implement interfaces that contain a member with the same signature in C#. Explicit implementation creates a class member specific to one interface.
 ms.date: 01/24/2020
 helpviewer_keywords: 
   - "explicit interfaces [C#]"

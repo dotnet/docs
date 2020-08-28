@@ -1,5 +1,6 @@
 ---
 title: "XElement Class Overview (C#)"
+description: The XElement class represents an XML element in C#. It is one of the fundamental classes in LINQ to XML. Learn about the functionality provided by XElement.
 ms.date: 07/20/2015
 ms.assetid: 2b9f0cd8-a1d1-4037-accf-0f38a410fa11
 ---

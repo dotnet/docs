@@ -1,5 +1,6 @@
 ---
 title: "How to sort elements on multiple keys (C#)"
+description: Learn how to sort elements on multiple keys. See examples for sorting elements that use sample XML documents.
 ms.date: 07/20/2015
 ms.assetid: 3b2760b6-d607-4ac7-b784-5c6524e2a0e0
 ---

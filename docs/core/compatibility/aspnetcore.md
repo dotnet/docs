@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 06/11/2020
+ms.date: 08/25/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -10,7 +10,13 @@ ms.author: scaddie
 
 ASP.NET Core provides the web app development features used by .NET Core.
 
-The following breaking changes are documented on this page:
+Select one of the following links for breaking changes in a specific version:
+
+* [ASP.NET Core 5.0](#aspnet-core-50)
+* [ASP.NET Core 3.1](#aspnet-core-31)
+* [ASP.NET Core 3.0](#aspnet-core-30)
+
+The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented on this page:
 
 - [Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
 - [Authentication: Google+ deprecation](#authentication-google-deprecated-and-replaced)
@@ -20,7 +26,11 @@ The following breaking changes are documented on this page:
 - [Authorization: AddAuthorization overload moved to different assembly](#authorization-addauthorization-overload-moved-to-different-assembly)
 - [Authorization: IAllowAnonymous removed from AuthorizationFilterContext.Filters](#authorization-iallowanonymous-removed-from-authorizationfiltercontextfilters)
 - [Authorization: IAuthorizationPolicyProvider implementations require new method](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
+- [Authorization: Resource in endpoint routing is HttpContext](#authorization-resource-in-endpoint-routing-is-httpcontext)
 - [Azure: Microsoft-prefixed Azure integration packages removed](#azure-microsoft-prefixed-azure-integration-packages-removed)
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
+- [Blazor: Insignificant whitespace trimmed from components at compile time](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
+- [Blazor: Target framework of NuGet packages changed](#blazor-target-framework-of-nuget-packages-changed)
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
 - [Caching: Microsoft.Extensions.Caching.SqlServer uses new SqlClient package](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Caching: ResponseCaching "pubternal" types changed to internal](#caching-responsecaching-pubternal-types-changed-to-internal)
@@ -39,27 +49,36 @@ The following breaking changes are documented on this page:
 - [HTTP: Response body infrastructure changes](#http-response-body-infrastructure-changes)
 - [HTTP: Some cookie SameSite default values changed](#http-some-cookie-samesite-defaults-changed-to-none)
 - [HTTP: Synchronous IO disabled by default](#http-synchronous-io-disabled-in-all-servers)
+- [HttpSys: Client certificate renegotiation disabled by default](#httpsys-client-certificate-renegotiation-disabled-by-default)
 - [Identity: AddDefaultUI method overload removed](#identity-adddefaultui-method-overload-removed)
 - [Identity: UI Bootstrap version change](#identity-default-bootstrap-version-of-ui-changed)
 - [Identity: SignInAsync throws exception for unauthenticated identity](#identity-signinasync-throws-exception-for-unauthenticated-identity)
 - [Identity: SignInManager constructor accepts new parameter](#identity-signinmanager-constructor-accepts-new-parameter)
 - [Identity: UI uses static web assets feature](#identity-ui-uses-static-web-assets-feature)
+- [IIS: UrlRewrite middleware query strings are preserved](#iis-urlrewrite-middleware-query-strings-are-preserved)
 - [Kestrel: Configuration changes at run time detected by default](#kestrel-configuration-changes-at-run-time-detected-by-default)
 - [Kestrel: Connection adapters removed](#kestrel-connection-adapters-removed)
 - [Kestrel: Default supported TLS protocol versions changed](#kestrel-default-supported-tls-protocol-versions-changed)
 - [Kestrel: Empty HTTPS assembly removed](#kestrel-empty-https-assembly-removed)
+- [Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](#kestrel-http2-disabled-over-tls-on-incompatible-windows-versions)
+- [Kestrel: Libuv transport marked as obsolete](#kestrel-libuv-transport-marked-as-obsolete)
 - [Kestrel: Request trailer headers moved to new collection](#kestrel-request-trailer-headers-moved-to-new-collection)
 - [Kestrel: Transport abstraction layer changes](#kestrel-transport-abstractions-removed-and-made-public)
 - [Localization: APIs marked obsolete](#localization-resourcemanagerwithculturestringlocalizer-and-withculture-marked-obsolete)
 - [Localization: "Pubternal" APIs removed](#localization-pubternal-apis-removed)
+- [Localization: Obsolete constructor removed in request localization middleware](#localization-obsolete-constructor-removed-in-request-localization-middleware)
 - [Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Logging: DebugLogger class made internal](#logging-debuglogger-class-made-internal)
+- [Middleware: Database error page marked as obsolete](#middleware-database-error-page-marked-as-obsolete)
 - [MVC: Controller action Async suffix removed](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC: JsonResult moved to Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
 - [MVC: Precompilation tool deprecated](#mvc-precompilation-tool-deprecated)
 - [MVC: Types changed to internal](#mvc-pubternal-types-changed-to-internal)
 - [MVC: Web API compatibility shim removed](#mvc-web-api-compatibility-shim-removed)
+- [Razor: RazorTemplateEngine API removed](#razor-razortemplateengine-api-removed)
 - [Razor: Runtime compilation moved to a package](#razor-runtime-compilation-moved-to-a-package)
+- [Security: Cookie name encoding removed](#security-cookie-name-encoding-removed)
+- [Security: IdentityModel NuGet package versions updated](#security-identitymodel-nuget-package-versions-updated)
 - [Session state: Obsolete APIs removed](#session-state-obsolete-apis-removed)
 - [Shared framework: Assembly removal from Microsoft.AspNetCore.App](#shared-framework-assemblies-removed-from-microsoftaspnetcoreapp)
 - [Shared framework: Microsoft.AspNetCore.All removed](#shared-framework-removed-microsoftaspnetcoreall)
@@ -78,7 +97,23 @@ The following breaking changes are documented on this page:
 
 ## ASP.NET Core 5.0
 
+[!INCLUDE[Authorization: Resource in endpoint routing is HttpContext](~/includes/core-changes/aspnetcore/5.0/authorization-resource-in-endpoint-routing.md)]
+
+***
+
 [!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
+
+***
+
+[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
+
+***
+
+[!INCLUDE[Blazor: Insignificant whitespace trimmed from components at compile time](~/includes/core-changes/aspnetcore/5.0/blazor-components-trim-insignificant-whitespace.md)]
+
+***
+
+[!INCLUDE[Blazor: Target framework of NuGet packages changed](~/includes/core-changes/aspnetcore/5.0/blazor-packages-target-framework-changed.md)]
 
 ***
 
@@ -94,6 +129,14 @@ The following breaking changes are documented on this page:
 
 ***
 
+[!INCLUDE[HttpSys: Client certificate renegotiation disabled by default](~/includes/core-changes/aspnetcore/5.0/httpsys-client-certificate-renegotiation-disabled-by-default.md)]
+
+***
+
+[!INCLUDE[IIS: UrlRewrite middleware query strings are preserved](~/includes/core-changes/aspnetcore/5.0/iis-urlrewrite-middleware-query-strings-are-preserved.md)]
+
+***
+
 [!INCLUDE[Kestrel: Configuration changes at run time detected by default](~/includes/core-changes/aspnetcore/5.0/kestrel-configuration-changes-at-run-time-detected-by-default.md)]
 
 ***
@@ -101,11 +144,35 @@ The following breaking changes are documented on this page:
 
 ***
 
+[!INCLUDE[Kestrel: HTTP/2 disabled over TLS on incompatible Windows versions](~/includes/core-changes/aspnetcore/5.0/kestrel-disables-http2-over-tls.md)]
+
+***
+
+[!INCLUDE[Kestrel: Libuv transport marked as obsolete](~/includes/core-changes/aspnetcore/5.0/kestrel-libuv-transport-obsolete.md)]
+
+***
+
 [!INCLUDE[Localization: "Pubternal" APIs removed](~/includes/core-changes/aspnetcore/5.0/localization-pubternal-apis-removed.md)]
 
 ***
 
+[!INCLUDE[Localization: Obsolete constructor removed in request localization middleware](~/includes/core-changes/aspnetcore/5.0/localization-requestlocalizationmiddleware-constructor-removed.md)]
+
+***
+
 [!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
+
+***
+
+[!INCLUDE[Middleware: Database error page marked as obsolete](~/includes/core-changes/aspnetcore/5.0/middleware-database-error-page-obsolete.md)]
+
+***
+
+[!INCLUDE[Security: Cookie name encoding removed](~/includes/core-changes/aspnetcore/5.0/security-cookie-name-encoding-removed.md)]
+
+***
+
+[!INCLUDE[Security: IdentityModel NuGet package versions updated](~/includes/core-changes/aspnetcore/5.0/security-identitymodel-nuget-package-versions-updated.md)]
 
 ***
 
@@ -282,6 +349,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[MVC: Web API compatibility shim removed](~/includes/core-changes/aspnetcore/3.0/mvc-webapi-compat-shim-removed.md)]
+
+***
+
+[!INCLUDE[Razor: RazorTemplatEengine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
 
 ***
 

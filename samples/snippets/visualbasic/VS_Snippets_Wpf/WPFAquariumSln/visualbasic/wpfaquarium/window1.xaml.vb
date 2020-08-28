@@ -9,24 +9,24 @@ Imports WPFAquariumObjects
 
 
 Namespace WPFAquarium
-  ''' <summary>
-  ''' Interaction logic for Window1.xaml
-  ''' </summary>
+    ''' <summary>
+    ''' Interaction logic for Window1.xaml
+    ''' </summary>
 
-  Partial Public Class Window1
-	  Inherits Window
+    Partial Public Class Window1
+        Inherits Window
 
-	Public Sub New()
-	  InitializeComponent()
+        Public Sub New()
+            InitializeComponent()
 
-	End Sub
-	  Private Sub WashMe(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		  Dim aq As Aquarium = TryCast(sender, Aquarium)
-		  MessageBox.Show("Dirty!")
-	  End Sub
-	  Private Sub FireClean(ByVal sender As Object, ByVal e As RoutedEventArgs)
-		  Dim aq As Aquarium = CType(Me.FindName("theAquarium"), Aquarium)
-		  aq.RaiseEvent(New RoutedEventArgs(AquariumFilter.NeedsCleaningEvent))
-	  End Sub
-  End Class
+        End Sub
+        Private Sub WashMe(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            Dim aq As Aquarium = TryCast(sender, Aquarium)
+            MessageBox.Show("Dirty!")
+        End Sub
+        Private Sub FireClean(ByVal sender As Object, ByVal e As RoutedEventArgs)
+            Dim aq As Aquarium = CType(Me.FindName("theAquarium"), Aquarium)
+            aq.RaiseEvent(New RoutedEventArgs(AquariumFilter.NeedsCleaningEvent))
+        End Sub
+    End Class
 End Namespace

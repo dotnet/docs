@@ -1,5 +1,6 @@
 ---
 title: "How to: Create a Bitmap at Run Time"
+description: Learn how to create a bitmap object and display it in an existing Windows Forms PictureBox control.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

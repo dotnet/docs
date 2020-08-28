@@ -1,5 +1,6 @@
 ---
 title: "How to implement a lightweight class with auto-implemented properties - C# Programming Guide"
+description: Learn how to create an immutable lightweight class in C# that encapsulates auto-implemented properties. There are two implementation approaches.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "auto-implemented properties [C#]"

@@ -1,7 +1,7 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: Real production applications have to be deployed and managed with orchestrators that handle the health, workload and life cycles of all containers.
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 # Orchestrating microservices and multi-container applications for high scalability and availability
 
@@ -56,7 +56,7 @@ Figure 4-7 shows the structure of a Kubernetes cluster where a master node (VM) 
 
 ## Development environment for Kubernetes
 
-In the development environment that [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/), Kubernetes can also run in a single development machine (Windows 10 or macOS) by just installing [Docker Desktop](https://www.docker.com/community-edition). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-8.
+In the development environment that [Docker announced in July 2018](https://blog.docker.com/2018/07/kubernetes-is-now-available-in-docker-desktop-stable-channel/), Kubernetes can also run in a single development machine (Windows 10 or macOS) by just installing [Docker Desktop](https://www.docker.com/products/docker-desktop). You can later deploy to the cloud (AKS) for further integration tests, as shown in figure 4-8.
 
 ![Diagram showing Kubernetes on a dev machine then deployed to AKS.](./media/orchestrate-high-scalability-availability/kubernetes-development-environment.png)
 
@@ -68,7 +68,7 @@ To begin using AKS, you deploy an AKS cluster from the Azure portal or by using 
 
 There are no fees for any of the software installed by default as part of AKS. All default options are implemented with open-source software. AKS is available for multiple virtual machines in Azure. You're charged only for the compute instances you choose, as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for AKS itself.
 
-For further implementation information on deployment to Kubernetes based on `kubectl` and original `.yaml` files, see the post on [Setting eShopOnContainers up in AKS (Azure Kubernetes Service)](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.-Setting-the-solution-up-in-AKS-(Azure-Kubernetes-Service)).
+For further implementation information on deployment to Kubernetes based on `kubectl` and original `.yaml` files, see [Deploy to Azure Kubernetes Service (AKS)](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)).
 
 ## Deploy with Helm charts into Kubernetes clusters
 
@@ -80,7 +80,7 @@ Going further, Helm usage is also recommended because additional Kubernetes envi
 
 Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
 
-For further implementation information on Helm charts and Kubernetes, see the post on [Using Helm Charts to deploy eShopOnContainers to AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.1-Deploying-to-AKS-using-Helm-Charts).
+For further implementation information on Helm charts and Kubernetes, see the section called [Install eShopOnContainers using Helm](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)#install-eshoponcontainers-using-helm).
 
 ## Use Azure Dev Spaces for you Kubernetes application lifecycle
 
@@ -100,9 +100,9 @@ Azure Dev Spaces can transparently mix and match production microservices with d
 
 Azure Dev Spaces provides the concept of a space, which allows you to work in isolation and without the fear of breaking your team members. This feature is based on URL prefixes; if you use a dev space prefix in the URL for a container's request, Azure Dev Spaces runs a special version of the container that it deployed for that space, if one exists. Otherwise, it will run the global/consolidated version.
 
-You can see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/10.2-Using-Azure-Dev-Spaces-and-AKS) to get a practical view on a concrete example.
+For a concrete example, see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces).
 
-For further information, see the article on [Team Development with Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/team-development-netcore).
+For further information, see [Team Development with Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/team-development-netcore).
 
 ## Additional resources
 

@@ -1,5 +1,6 @@
 ---
 title: "Ilasm.exe (IL Assembler)"
+description: Get started with Ilasm.exe, the IL Assembler. This tool generates a portable executable (PE) file from intermediate language (IL).
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MSIL generators"

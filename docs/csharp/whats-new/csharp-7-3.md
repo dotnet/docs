@@ -135,7 +135,7 @@ The second theme provides improvements to features in the language. These featur
 
 ### Tuples support `==` and `!=`
 
-The C# tuple types now support `==` and `!=`. For more information, see the section covering [equality](../tuples.md#equality-and-tuples) in the article on [tuples](../tuples.md).
+The C# tuple types now support `==` and `!=`. For more information, see the [Tuple equality](../language-reference/builtin-types/value-tuples.md#tuple-equality) section of the [Tuple types](../language-reference/builtin-types/value-tuples.md) article.
 
 ### Attach attributes to the backing fields for auto-implemented properties
 

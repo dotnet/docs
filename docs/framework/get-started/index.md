@@ -1,6 +1,6 @@
 ---
 title: Get started with the .NET Framework
-ms.custom: "updateeachrelease"
+description: Get started with .NET, which is a runtime execution environment that manages apps. It contains a common language runtime (CLR) and an extensive class library.
 ms.date: "04/02/2019"
 helpviewer_keywords: 
   - ".NET Framework, getting started"

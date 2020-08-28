@@ -1,5 +1,6 @@
 ---
 title: "UI Automation TextPattern Overview"
+description: Read an overview of the TextPattern control pattern in UI Automation. This control pattern exposes the textual content of a control, including format and style.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "UI Automation, TextPattern class"

@@ -1,5 +1,6 @@
 ---
 title: "Performance Counters in the .NET Framework"
+description: Read about performance counters in .NET. There are performance counters for exceptions, interop, JIT compilers, loading, memory, networking, security, and more.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "performance, .NET Framework applications"

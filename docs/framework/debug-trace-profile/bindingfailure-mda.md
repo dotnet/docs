@@ -1,5 +1,6 @@
 ---
 title: "bindingFailure MDA"
+description: Read about the bindingFailure managed debugging assistant (MDA), which is activated when an assembly fails to load in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "binding failure"

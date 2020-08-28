@@ -1,5 +1,6 @@
 ---
 title: "How to stream XML fragments with access to header information (C#)"
+description: Learn how to stream XML fragments with access to header information. Streaming techniques help avoid excessive memory usage.
 ms.date: 07/20/2015
 ms.assetid: 7f242770-b0c7-418d-894b-643215e1f8aa
 ---

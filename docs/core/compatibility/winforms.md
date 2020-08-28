@@ -28,8 +28,6 @@ The following breaking changes are documented on this page:
 | [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported) | 3.0 |
 | [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
-| [Change of access for AccessibleObject.RuntimeIDFirstItem](#change-of-access-for-accessibleobjectruntimeidfirstitem) | 3.0 |
-| [Duplicated APIs removed from Windows Forms](#duplicated-apis-removed-from-windows-forms) | 3.0 |
 
 ## .NET 5.0
 
@@ -102,14 +100,6 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Switch.System.Windows.Forms.UseLegacyImages compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-uselegacyimages.md)]
-
-***
-
-[!INCLUDE[Change of access for AccessibleObject.RuntimeIDFirstItem](~/includes/core-changes/windowsforms/3.0/changed-access-for-runtimeidfirstitem.md)]
-
-***
-
-[!INCLUDE[Duplicated APIs removed from Windows Forms](~/includes/core-changes/windowsforms/3.0/remove-duplicated-apis.md)]
 
 ***
 

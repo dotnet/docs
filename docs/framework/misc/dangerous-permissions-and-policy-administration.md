@@ -1,5 +1,6 @@
 ---
 title: "Dangerous Permissions and Policy Administration"
+description: See links to the various dangerous permissions in .NET. These permissions should be given only to trustworthy code, and only when necessary.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "permissions [.NET Framework], policy administration"
@@ -10,6 +11,9 @@ helpviewer_keywords:
 ms.assetid: 1929e854-23a0-4bb1-94be-e8aa3b609e32
 ---
 # Dangerous Permissions and Policy Administration
+
+[!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]
+
 Several of the protected operations for which the .NET Framework provides permissions can potentially allow the security system to be circumvented. These dangerous permissions should be given only to trustworthy code, and then only as necessary. There is usually no defense against malicious code if it is granted these permissions.  
   
 > [!NOTE]

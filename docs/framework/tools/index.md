@@ -1,5 +1,6 @@
 ---
 title: ".NET Framework Tools"
+description: See a list of .NET tools that make it easier for you to create, deploy, and manage applications and components that target .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "command line, .NET Framework tools"

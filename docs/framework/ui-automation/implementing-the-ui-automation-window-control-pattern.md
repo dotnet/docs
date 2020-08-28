@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Window Control Pattern"
+description: Review guidelines and conventions to implement the Window control pattern in UI Automation. Know required members for the IWindowProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, Window"

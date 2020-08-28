@@ -35,7 +35,7 @@ namespace TraderSys
 To implement the equivalent class in Protobuf, you must declare it in the `.proto` file. The `protoc` compiler will then generate the .NET class as part of the build process.
 
 ```protobuf
-syntax "proto3";
+syntax = "proto3";
 
 option csharp_namespace = "TraderSys";
 

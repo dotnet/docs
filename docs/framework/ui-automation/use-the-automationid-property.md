@@ -1,5 +1,6 @@
 ---
 title: "Use the AutomationID Property"
+description: Review scenarios and sample code that shows how and when to use the AutomationID property to find an element within the UI Automation tree.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

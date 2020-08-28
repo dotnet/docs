@@ -1,5 +1,6 @@
 ---
 title: "How to: Implement a Dependency Property"
+description: Define a dependency property in Windows Presentation Foundation, by backing a common language runtime property with a DependencyProperty field.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

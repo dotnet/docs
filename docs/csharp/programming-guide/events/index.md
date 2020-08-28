@@ -1,5 +1,6 @@
 ---
 title: "Events - C# Programming Guide"
+description: Learn about events. Events enable a class or object to notify other classes or objects when something of interest occurs.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "classes [C#], events"

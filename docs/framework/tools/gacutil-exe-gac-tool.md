@@ -1,5 +1,6 @@
 ---
 title: "Gacutil.exe (Global Assembly Cache Tool)"
+description: Get details about Gacutil.exe, the Global Assembly Cache tool. This tool lets you view and manipulate the global assembly cache and download cache.
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "assemblies [.NET Framework], global assembly cache"

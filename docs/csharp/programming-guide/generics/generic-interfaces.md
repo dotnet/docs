@@ -1,5 +1,6 @@
 ---
 title: "Generic Interfaces - C# Programming Guide"
+description: Learn about using generic interfaces in C#. See code examples and view additional available resources.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, generic interfaces"

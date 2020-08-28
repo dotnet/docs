@@ -11,12 +11,12 @@ namespace CSCrypto
 		static void Main(string[] args)
 		{
 			//<snippet2>
-			RijndaelManaged key = null;
+			Aes key = null;
 
 			try
 			{
-				// Create a new Rijndael key.
-				key = new RijndaelManaged();
+				// Create a new AES key.
+				key = Aes.Create();
 				//</snippet2>
 				//<snippet3>
 				// Load an XML document.
@@ -64,7 +64,7 @@ namespace CSCrypto
 
 			////////////////////////////////////////////////
 			// Find the specified element in the XmlDocument
-			// object and create a new XmlElemnt object.
+			// object and create a new XmlElement object.
 			////////////////////////////////////////////////
 			//<snippet4>
 			XmlElement elementToEncrypt = Doc.GetElementsByTagName(ElementName)[0] as XmlElement;
@@ -104,33 +104,14 @@ namespace CSCrypto
 			//<snippet7>
 			string encryptionMethod = null;
 
-			if (Key is TripleDES)
+			if (Key is Aes)
 			{
-				encryptionMethod = EncryptedXml.XmlEncTripleDESUrl;
-			}
-			else if (Key is DES)
-			{
-				encryptionMethod = EncryptedXml.XmlEncDESUrl;
-			}
-			if (Key is Rijndael)
-			{
-				switch (Key.KeySize)
-				{
-					case 128:
-						encryptionMethod = EncryptedXml.XmlEncAES128Url;
-						break;
-					case 192:
-						encryptionMethod = EncryptedXml.XmlEncAES192Url;
-						break;
-					case 256:
-						encryptionMethod = EncryptedXml.XmlEncAES256Url;
-						break;
-				}
+				encryptionMethod = EncryptedXml.XmlEncAES256Url;
 			}
 			else
 			{
-				// Throw an exception if the transform is not in the previous categories
-				throw new CryptographicException("The specified algorithm is not supported for XML Encryption.");
+				// Throw an exception if the transform is not AES
+				throw new CryptographicException("The specified algorithm is not supported or not recommended for XML Encryption.");
 			}
 
 			edElement.EncryptionMethod = new EncryptionMethod(encryptionMethod);

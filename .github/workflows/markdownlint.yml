@@ -4,11 +4,15 @@ on:
   push:
     paths:
       - "**/*.md"
+      - ".markdownlint.json"
       - ".github/workflows/markdownlint.yml"
+      - ".github/workflows/markdownlint-problem-matcher.json"
   pull_request:
     paths:
       - "**/*.md"
+      - ".markdownlint.json"
       - ".github/workflows/markdownlint.yml"
+      - ".github/workflows/markdownlint-problem-matcher.json"
 
 jobs:
   lint:
@@ -23,5 +27,6 @@ jobs:
         node-version: 12.x
     - name: Run Markdownlint
       run: |
+        echo "::add-matcher::.github/workflows/markdownlint-problem-matcher.json"
         npm i -g markdownlint-cli
-        markdownlint "**/*.md" -i "samples/**/*.md"
+        markdownlint "**/*.md"

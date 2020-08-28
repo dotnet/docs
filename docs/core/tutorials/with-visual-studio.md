@@ -73,7 +73,7 @@ If the language you want to use is not shown, change the language selector at th
 
 ## Run the app
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to run the program without debugging.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
    A console window opens with the text "Hello World!" printed on the screen and some Visual Studio debug information.
 
@@ -90,13 +90,13 @@ Enhance the application to prompt the user for their name and display it along w
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
    :::code language="vb" source="./snippets/with-visual-studio/vb/Program.vb" id="MainMethod":::
 
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date` (`currentDate` in Visual Basic). Finally, it displays these values in the console window.
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>Enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date` (`currentDate` in Visual Basic). And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
 
    The `\n` (`vbCrLf` in Visual Basic) represents a newline character.
 
    The dollar sign (`$`) in front of a string lets you put expressions such as variable names in curly braces in the string. The expression value is inserted into the string in place of the expression. This syntax is referred to as [interpolated strings](../../csharp/language-reference/tokens/interpolated.md).
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to run the program without debugging.
+1. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the program without debugging.
 
 1. Respond to the prompt by entering a name and pressing the <kbd>Enter</kbd> key.
 
@@ -109,4 +109,4 @@ Enhance the application to prompt the user for their name and display it along w
 In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
-> [Debug a .NET Core console application in Visual Studio](debugging-with-visual-studio.md)
+> [Debug a .NET Core console application using Visual Studio](debugging-with-visual-studio.md)

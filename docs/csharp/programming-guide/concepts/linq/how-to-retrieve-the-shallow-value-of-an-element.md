@@ -1,5 +1,6 @@
 ---
 title: "How to retrieve the shallow value of an element (C#)"
+description: Learn how to get the shallow value of an element. The shallow value is for the specific element only.
 ms.date: 07/20/2015
 ms.assetid: 924a2699-72f6-4be1-aaa6-de62f8ec73b9
 ---

@@ -42,4 +42,3 @@ vbc -langversion:9.0 sample.vb
 
 - [Visual Basic Command-Line Compiler](index.md)
 - [Sample Compilation Command Lines](sample-compilation-command-lines.md)
-- [Targeting a Specific .NET Framework Version](/visualstudio/ide/visual-studio-multi-targeting-overview)

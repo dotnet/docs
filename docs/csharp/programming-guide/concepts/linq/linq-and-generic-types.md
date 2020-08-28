@@ -1,5 +1,6 @@
 ---
 title: "LINQ and Generic Types (C#)"
+description: Learn about the basic concepts of generic types in C# that support queries.  LINQ queries are based on generic types.
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "LINQ [C#], generic types"

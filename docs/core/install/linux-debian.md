@@ -1,7 +1,7 @@
 ---
 title: Install .NET Core on Debian - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Debian.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
 ---
@@ -44,7 +44,7 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 ```bash
 wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-dpkg -i packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -122,7 +122,26 @@ sudo apt-get update; \
 
 ## Dependencies
 
-[!INCLUDE [linux-install-dependencies](includes/linux-install-dependencies.md)]
+When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
+
+- libc6
+- libgcc1
+- libgssapi-krb5-2
+- libicu52 (for 8.x)
+- libicu57 (for 9.x)
+- libicu63 (for 10.x)
+- libicu67 (for 11.x)
+- libssl1.0.0 (for 8.x)
+- libssl1.1 (for 9.x-11.x)
+- libstdc++6
+- zlib1g
+
+For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
+
+- libgdiplus (version 6.0.1 or later)
+
+  > [!WARNING]
+  > You can install a recent version of *libgdiplus* by adding the Mono repository to your system. For more information, see <https://www.mono-project.com/download/stable/>.
 
 ## Scripted install
 

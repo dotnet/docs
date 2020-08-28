@@ -1,5 +1,6 @@
 ---
 title: "UI Automation and Screen Scaling"
+description: Read how Windows and UI Automation handle screen scaling. DWM does default scaling for all applications, which UI Automation client apps must take into account.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

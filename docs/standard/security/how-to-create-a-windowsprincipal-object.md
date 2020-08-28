@@ -1,21 +1,27 @@
 ---
 title: "How to: Create a WindowsPrincipal Object"
-ms.date: "03/30/2017"
+ms.date: 07/15/2020
 ms.technology: dotnet-standard
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
   - "WindowsPrincipal objects, creating"
-  - "security [.NET Framework], creating a WindowsPrincipal object"
-  - "security [.NET Framework], principals"
+  - "security [.NET], creating a WindowsPrincipal object"
+  - "security [.NET], principals"
   - "principal objects, creating"
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
 ---
 # How to: Create a WindowsPrincipal Object
+
+> [!NOTE]
+> This article applies to Windows.
+>
+> For information about ASP.NET Core, see [ASP.NET Core Security](/aspnet/core/security/).
+
 There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal> object, depending on whether code must repeatedly perform role-based validation or must perform it only once.  
   
- If code must repeatedly perform role-based validation, the first of the following procedures produces less overhead. When code needs to make role-based validations only once, you can create a <xref:System.Security.Principal.WindowsPrincipal> object by using the second of the following procedures.  
+If code must repeatedly perform role-based validation, the first of the following procedures produces less overhead. When code needs to make role-based validations only once, you can create a <xref:System.Security.Principal.WindowsPrincipal> object by using the second of the following procedures.  
   
 ### To create a WindowsPrincipal object for repeated validation  
   
@@ -72,3 +78,4 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
 ## See also
 
 - [Principal and Identity Objects](principal-and-identity-objects.md)
+- [ASP.NET Core Security](https://docs.microsoft.com/aspnet/core/security/)

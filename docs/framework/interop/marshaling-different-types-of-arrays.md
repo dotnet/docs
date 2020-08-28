@@ -1,5 +1,6 @@
 ---
 title: "Marshaling Different Types of Arrays"
+description: Marshal different array types, like integers by value or reference, 2-dimensional integers by value, strings by value, and structures with integers or strings.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: "Application Development"
+description: Learn how to build a variety of applications using the framework of Windows Presentation Foundation (WPF).
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "WPF [WPF], about application development"

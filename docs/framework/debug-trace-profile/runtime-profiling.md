@@ -1,5 +1,6 @@
 ---
 title: "Runtime Profiling"
+description: Explore runtime profiling in .NET, which is a method of gathering performance data in any development or deployment scenario.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "performance counters"

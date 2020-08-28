@@ -1,5 +1,6 @@
 ---
 title: "How to: Create an XML Documentation File Using CodeDOM"
+description: In this detailed example, see how to generate code that creates an XML documentation file using the Code Document Object Model (CodeDOM).
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

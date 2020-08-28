@@ -16,7 +16,7 @@ The following SDKs are available for .NET Core:
 | ID | Description | Repo|
 | - | - | - |
 | `Microsoft.NET.Sdk` | The .NET Core SDK | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Web` | The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/aspnet/websdk> |
+| `Microsoft.NET.Sdk.Web` | The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | The .NET Core [Razor SDK](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | The .NET Core Worker Service SDK |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET Core WinForms and WPF SDK |
@@ -170,6 +170,6 @@ You can configure how to use the custom target. Since it's an MSBuild target, it
 
 ## See also
 
-- [Install .NET Core](../install/index.md)
+- [Install .NET Core](../install/index.yml)
 - [How to use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk)
 - [Package custom MSBuild targets and props with NuGet](/nuget/create-packages/creating-a-package#include-msbuild-props-and-targets-in-a-package)

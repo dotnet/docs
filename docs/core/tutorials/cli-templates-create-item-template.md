@@ -1,7 +1,7 @@
 ---
 title: Create an item template for dotnet new - .NET Core CLI
 description: Learn how to create an item template for the dotnet new command. Item templates can contain any number of files.
-author: thraka
+author: adegeo
 ms.date: 06/25/2019
 ms.topic: tutorial
 ms.author: adegeo

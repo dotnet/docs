@@ -1,5 +1,6 @@
 ---
 title: "How to transform the shape of an XML tree (C#)"
+description: Learn how to transform the shape of an XML tree. The shape of an XML tree refers to its element and attribute names, and its hierarchy characteristics.
 ms.date: 07/20/2015
 ms.assetid: 93c5d426-dea2-4709-a991-60204de42e8f
 ---

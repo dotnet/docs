@@ -1,7 +1,7 @@
 ---
 title: Create a template pack for dotnet new
 description: Learn how to create a csproj file that will build a template pack for the dotnet new command.
-author: thraka
+author: adegeo
 ms.date: 12/10/2019
 ms.topic: tutorial
 ms.author: adegeo

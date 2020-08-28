@@ -6,6 +6,7 @@ metadata:
   audience: Developer
   ms.custom: mvc
   ms.date: 08/24/2018
+  ms.topic: interactive-tutorial
   level: Beginner
   displayType: two-column
   interactive: csharp
@@ -38,7 +39,7 @@ items:
   content: |
     In the previous step, you used string interpolation to insert one string inside of another. Each interpolation expression that is part of an interpolated string expression can be of any data type, though. Let's include values of various data type expressions in an interpolated string.
 
-    In the following example, we first define a [tuple](../../tuples.md) that has `Name`, `Price`, and `perPackage` members. Run the following code in the interactive window:
+    In the following example, we first define a [tuple](../../language-reference/builtin-types/value-tuples.md) that has `Name`, `Price`, and `perPackage` members. Run the following code in the interactive window:
 
     ```csharp
     var item = (Name: "eggplant", Price: 1.99m, perPackage: 3);

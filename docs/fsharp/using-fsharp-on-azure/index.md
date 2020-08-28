@@ -2,7 +2,7 @@
 title: Using F# on Azure
 description: Guide to using Azure services with F#
 author: sylvanc
-ms.date: 09/22/2016
+ms.date: 07/29/2020
 ---
 
 # Using F# on Azure
@@ -50,12 +50,14 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 * [F# Azure Web API example](https://github.com/fsprojects/azure-webapi-example)
 * [Hosting F# in a web application on Azure](https://github.com/isaacabraham/fsharp-demonstrator)
 
-## Using Apache Spark with F# with Azure HDInsight
+## Using Apache Spark with F# on Azure HDInsight or Azure Databricks
 
-[Apache Spark for Azure HDInsight](https://azure.microsoft.com/services/hdinsight/apache-spark/) is an open source processing framework that runs large-scale data analytics applications. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [Mobius](https://github.com/Microsoft/Mobius), a .NET API for Spark.
+[Apache Spark for Azure HDInsight](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-overview) is an open source processing framework that runs large-scale data analytics applications. [Azure Databricks](https://docs.microsoft.com/azure/databricks/scenarios/what-is-azure-databricks) is an Apache Spark-based analytics platform optimized for the Microsoft Azure cloud services platform. Azure makes Apache Spark easy and cost effective to deploy. Develop your Spark application in F# using [.NET for Apache Spark](../../spark/what-is-apache-spark-dotnet.md), a set of .NET bindings for Apache Spark.
 
-* [Implementing Spark Apps in F# using Mobius](https://github.com/Microsoft/Mobius/blob/master/notes/spark-fsharp-mobius.md)
-* [Example F# Spark Apps using Mobius](https://github.com/Microsoft/Mobius/tree/master/examples/fsharp)
+* [.NET for Apache Spark F# samples](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.FSharp.Examples)
+* [Install .NET Interactive Jupyter notebooks in Azure HDInsight](../../spark/how-to-guides/hdinsight-notebook-installation.md)
+* [Submit Apache Spark jobs to Azure HDInsight](../../spark/how-to-guides/hdinsight-deploy-methods.md)
+* [Submit Apache Spark jobs to Azure Databricks](../../spark/how-to-guides/databricks-deploy-methods.md)
 
 ## Using Azure Cosmos DB with F\#
 
@@ -106,7 +108,7 @@ Timers can be implemented in F# and hosted on Azure via an [Azure Function in F#
 
 Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/library/dn722415.aspx) and [Using Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
 
-Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure Cosmos DB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
+Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure Cosmos DB instances and manage Azure Notification Hubs programmatically from F# scripts.
 
 Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directly from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/).
 

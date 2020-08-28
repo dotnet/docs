@@ -1,5 +1,6 @@
 ---
 title: "<include> - C# programming guide"
+description: Learn about the XML <include> tag. This tag lets you refer to comments in another file that describe the types and members in your source code.
 ms.date: 07/20/2015
 f1_keywords:
   - "include"
@@ -33,7 +34,7 @@ ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
 
 - `id`
 
-The ID for the tag that precedes the comments. Enclose the ID in double quotation marks (" ").
+  The ID for the tag that precedes the comments. Enclose the ID in double quotation marks (" ").
 
 ## Remarks
 
@@ -69,7 +70,7 @@ The summary for this other type.
 
 ## Program output
 
-The following output is generated when you compile the Test and Test2 classes with the following command line: `-doc:DocFileName.xml.` In Visual Studio, you specify the XML doc comments option in the Build pane of the Project Designer. When the C# compiler sees the `<include>` tag, it searches for documentation comments in *xml_include_tag.doc* instead of the current source file. The compiler then generates *DocFileName.xml*, and this is the file that is consumed by documentation tools such as [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to produce the final documentation.  
+The following output is generated when you compile the Test and Test2 classes with the following command line: `-doc:DocFileName.xml.` In Visual Studio, you specify the XML doc comments option in the Build pane of the Project Designer. When the C# compiler sees the `<include>` tag, it searches for documentation comments in *xml_include_tag.doc* instead of the current source file. The compiler then generates *DocFileName.xml*, and this is the file that is consumed by documentation tools such as [Sandcastle](https://github.com/EWSoftware/SHFB) to produce the final documentation.  
   
 ```xml
 <?xml version="1.0"?>

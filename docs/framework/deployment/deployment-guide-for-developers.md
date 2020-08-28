@@ -1,6 +1,6 @@
 ---
 title: ".NET Framework deployment guide for developers"
-ms.custom: "updateeachrelease"
+description: Read the .NET deployment guide for developers. Use this information if you want to install any version of .NET from version 4.5 to 4.8 with your apps.
 ms.date: "01/17/2020"
 helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"

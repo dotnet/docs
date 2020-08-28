@@ -1,4 +1,4 @@
-namespace Hierarchy
+﻿namespace Hierarchy
 {
     // <SnippetFirstHierarchy>
     public class A

@@ -1,7 +1,7 @@
 ---
 title: Install .NET Core on Alpine - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Alpine.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
 ---
@@ -42,12 +42,11 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 - icu-libs
 - krb5-libs
+- libgcc
 - libintl
 - libssl1.1 (Alpine v3.9 or greater)
-- libssl1.0 (Alpine v3.8)
+- libssl1.0 (Alpine v3.8 or lower)
 - libstdc++
-- lttng-ust
-- numactl (optional)
 - zlib
 
 ## Scripted install

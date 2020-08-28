@@ -331,7 +331,7 @@ HTTP Headers: The destination in POST matches the URI in the `wsa10:To` element.
 
 The Content-Type header has the value of `application/soap+xml` as required by SOAP 1.2. Parameters `charset` and `action` are included. The `action` parameter of the Content-Type header matches the value of the `wsa10:Action` message header.
 
-```
+```http
 POST http://fabrikam123.com/Service HTTP/1.1
 Content-Type: application/soap+xml; charset=utf-8;  
               action="http://fabrikam123.com/Service/OneWay"
@@ -358,7 +358,7 @@ Proxy-Connection: Keep-Alive
 
 The receiver responds with an empty HTTP response and status 202. An example of the HTTP response:
 
-```
+```http
 HTTP/1.1 202 Accepted
 Date: Fri, 15 Jul 2005 08:56:07 GMT
 Server: Microsoft-IIS/6.0
@@ -467,19 +467,19 @@ While the requirement to use double quotation marks is not explicit in RFC 2387,
 
      CORRECT
 
-    ```
+    ```http
     Content-Type: multipart/related; type="application/xop+xml";start=" <part0@tempuri.org>";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1";start-info="text/xml"
     ```
 
      CORRECT
 
-    ```
+    ```http
     Content-Type: Multipart/Related; type="application/xop+xml";start-info="text/xml";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1"
     ```
 
      INCORRECT
 
-    ```
+    ```http
     Content-Type: Multipart/Related; type=application/xop+xml;start=" <part0@tempuri.org>";start-info="text/xml";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1"
     ```
 
@@ -531,14 +531,14 @@ MIME (RFC 2045) provides the Content-Transfer-Encoding header to communicate enc
 
 - R4148: SOAP1.1 Infoset part must contain Content-Type header with media type application/xop+xml and parameters type="text/xml" and charset
 
-    ```
+    ```http
     Content-Type: application/xop+xml;
                   charset=utf-8;type="text/xml"
     ```
 
 - R4149: The SOAP 1.2 Infoset part must contain the Content-Type header with media type `application/xop+xml` and parameters type="`application/soap+xml`" and `charset`.
 
-    ```
+    ```http
     Content-Type: application/xop+xml;
                   charset=utf-8;type="application/soap+xml"
     ```
@@ -574,7 +574,7 @@ MTOM is an encoding mechanism that is similar to `text/xml` and WCF Binary XML. 
 
 #### WCF SOAP 1.1 Message Encoded Using MTOM
 
-```
+```http
 POST http://131.107.72.15/Mtom/svc/service.svc/Soap11MtomUTF8 HTTP/1.1
 SOAPAction: "http://xmlsoap.org/echoBinaryAsString"
 Content-Type: multipart/related;type="application/xop+xml";
@@ -608,7 +608,7 @@ Content-Type: application/octet-stream
 #### WCF Secure SOAP 1.2 Message Encoded Using MTOM
 In this example, a message is encoded using MTOM and SOAP 1.2 that is protected using WS-Security. The binary parts identified for encoding are the contents of the `BinarySecurityToken`, `CipherValue` of the `EncryptedData` corresponding to the encrypted signature and encrypted body. Note that the `CipherValue` of the `EncryptedKey` was not identified for optimization by WCF, because its length is less then 1024 bytes.
 
-```
+```http
 POST http://131.107.72.15/Mtom/service.svc/Soap12MtomSecureSignEncrypt HTTP/1.1
 Content-Type: multipart/related; type="application/xop+xml";
               start="<http://tempuri.org/0>";

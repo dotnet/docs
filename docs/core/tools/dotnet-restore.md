@@ -155,10 +155,10 @@ There are three specific settings that `dotnet restore` ignores:
   dotnet restore
   ```
 
-- Restore dependencies and tools for the `app1` project found in the   given path:
+- Restore dependencies and tools for the `app1` project found in the given path:
 
   ```dotnetcli
-  dotnet restore ~/projects/app1/app1.csproj
+  dotnet restore ./projects/app1/app1.csproj
   ```
 
 - Restore the dependencies and tools for the project in the current   directory using the file path provided as the source:

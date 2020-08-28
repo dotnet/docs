@@ -1,5 +1,6 @@
 ---
 title: "LINQ to ADO.NET (Portal Page)"
+description: LINQ to ADO.NET enables you to query over any enumerable object in ADO.NET by using the LINQ programming model. Learn about the three ADO.NET LINQ technologies.
 ms.date: 07/20/2015
 ms.assetid: 6bd269b4-3509-4688-b672-836008704182
 ---

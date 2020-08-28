@@ -1,5 +1,6 @@
 ---
 title: "How to stream XML fragments from an XmlReader (C#)"
+description: Learn how to stream XML fragments from an XmlReader. This method is used for processing large XML files.
 ms.date: 07/20/2015
 ms.assetid: 4a8f0e45-768a-42e2-bc5f-68bdf0e0a726
 ---

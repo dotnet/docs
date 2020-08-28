@@ -45,7 +45,7 @@ a ? b : (c ? d : e)
 
 The following example demonstrates the usage of the conditional operator:
 
-[!code-csharp-interactive[non ref conditional](snippets/ConditionalOperator.cs#ConditionalValue)]
+[!code-csharp-interactive[non ref conditional](snippets/shared/ConditionalOperator.cs#ConditionalValue)]
 
 ## Conditional ref expression
 
@@ -63,13 +63,13 @@ In the case of the conditional ref expression, the type of `consequent` and `alt
 
 The following example demonstrates the usage of the conditional ref expression:
 
-[!code-csharp-interactive[conditional ref](snippets/ConditionalOperator.cs#ConditionalRef)]
+[!code-csharp-interactive[conditional ref](snippets/shared/ConditionalOperator.cs#ConditionalRef)]
 
 ## Conditional operator and an `if..else` statement
 
 Use of the conditional operator instead of an [if-else](../keywords/if-else.md) statement might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
 
-[!code-csharp[conditional and if-else](snippets/ConditionalOperator.cs#CompareWithIf)]
+[!code-csharp[conditional and if-else](snippets/shared/ConditionalOperator.cs#CompareWithIf)]
 
 ## Operator overloadability
 
@@ -84,7 +84,7 @@ For more information about the conditional ref expression, see the [feature prop
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - [if-else statement](../keywords/if-else.md)
 - [?. and ?[] operators](member-access-operators.md#null-conditional-operators--and-)
 - [?? and ??= operators](null-coalescing-operator.md)

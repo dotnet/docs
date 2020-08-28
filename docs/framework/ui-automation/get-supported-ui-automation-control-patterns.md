@@ -1,5 +1,6 @@
 ---
 title: "Get Supported UI Automation Control Patterns"
+description: Read an example that shows how to retrieve supported control pattern objects from UI Automation elements.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

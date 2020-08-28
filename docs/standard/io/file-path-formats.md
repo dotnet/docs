@@ -118,7 +118,7 @@ Almost all paths passed to Windows APIs are normalized. During normalization, Wi
 
 This normalization happens implicitly, but you can do it explicitly by calling the <xref:System.IO.Path.GetFullPath%2A?displayProperty=nameWithType> method, which wraps a call to the  [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea). You can also call the Windows [GetFullPathName() function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) directly using P/Invoke.
 
-### Identifying the path
+### Identify the path
 
 The first step in path normalization is identifying the type of path. Paths fall into one of a few categories:
 
@@ -132,13 +132,13 @@ The first step in path normalization is identifying the type of path. Paths fall
 
 The type of the path determines whether or not a current directory is applied in some way. It also determines what the "root" of the path is.
 
-### Handling legacy devices
+### Handle legacy devices
 
 If the path is a legacy DOS device such as `CON`, `COM1`, or `LPT1`, it is converted into a device path by prepending `\\.\` and returned.
 
 A path that begins with a legacy device name is always interpreted as a legacy device by the <xref:System.IO.Path.GetFullPath(System.String)?displayProperty=nameWithType> method. For example, the DOS device path for `CON.TXT` is `\\.\CON`, and the DOS device path for `COM1.TXT\file1.txt` is `\\.\COM1`.
 
-### Applying the current directory
+### Apply the current directory
 
 If a path isn't fully qualified, Windows applies the current directory to it. UNCs and device paths do not have the current directory applied. Neither does a full drive with separator C:\\.
 
@@ -151,11 +151,11 @@ If the path starts with something other than a separator, the current drive and 
 > [!IMPORTANT]
 > Relative paths are dangerous in multithreaded applications (that is, most applications) because the current directory is a per-process setting. Any thread can change the current directory at any time. Starting with .NET Core 2.1, you can call the <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> method to get an absolute path from a relative path and the base path (the current directory) that you want to resolve it against.
 
-### Canonicalizing separators
+### Canonicalize separators
 
 All forward slashes (`/`) are converted into the standard Windows separator, the back slash (`\`). If they are present, a series of slashes that follow the first two slashes are collapsed into a single slash.
 
-### Evaluating relative components
+### Evaluate relative components
 
 As the path is processed, any components or segments that are composed of a single or a double period (`.` or `..`) are evaluated:
 
@@ -165,7 +165,7 @@ As the path is processed, any components or segments that are composed of a sing
 
    Parent directories are only removed if they aren't past the root of the path. The root of the path depends on the type of path. It is the drive (`C:\`) for DOS paths, the server/share for UNCs (`\\Server\Share`), and the device path prefix for device paths (`\\?\` or `\\.\`).
 
-### Trimming characters
+### Trim characters
 
 Along with the runs of separators and relative segments removed earlier, some additional characters are removed during normalization:
 
@@ -178,7 +178,7 @@ Along with the runs of separators and relative segments removed earlier, some ad
    > [!IMPORTANT]
    > You should **never** create a directory or filename with a trailing space. Trailing spaces can make it difficult or impossible to access a directory, and applications commonly fail when attempting to handle directories or files whose names include trailing spaces.
 
-## Skipping normalization
+## Skip normalization
 
 Normally, any path passed to a Windows API is (effectively) passed to the [GetFullPathName function](/windows/desktop/api/fileapi/nf-fileapi-getfullpathnamea) and normalized. There is one important exception: a device path that begins with a question mark instead of a period. Unless the path starts exactly with `\\?\` (note the use of the canonical backslash), it is normalized.
 
@@ -216,4 +216,4 @@ creates a directory named TeStDiReCtOrY. If you rename a directory or file to ch
 [!code-csharp[case-and-renaming](~/samples/snippets/standard/io/file-names/cs/rename.cs)]
 [!code-vb[case-and-renaming](~/samples/snippets/standard/io/file-names/vb/rename.vb)]
 
-However, directory and file name comparisons are case-insensitive. If you search for a file named "test.txt", .NET file system APIs ignore case in the comparison. Test.txt, TEST.TXT, test.TXT, and any other combination of upper- and lowercase letters will match "test.txt".
+However, directory and file name comparisons are case-insensitive. If you search for a file named "test.txt", .NET file system APIs ignore case in the comparison. "Test.txt", "TEST.TXT", "test.TXT", and any other combination of uppercase and lowercase letters will match "test.txt".

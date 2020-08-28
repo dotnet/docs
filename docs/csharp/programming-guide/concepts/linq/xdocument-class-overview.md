@@ -1,5 +1,6 @@
 ---
 title: "XDocument Class Overview (C#)"
+description: The XDocument class in C# contains the information necessary for a valid XML document, including an XML declaration, processing instructions, and comments.
 ms.date: 07/20/2015
 ms.assetid: 63305603-ab54-49fc-84e4-f76eecc59549
 ---

@@ -1,5 +1,6 @@
 ---
 title: "Style Part of a WordprocessingML Document"
+description: Learn about the style part of an Office Open XML WordprocessingML document. Use the default style identifier to identify paragraphs that have the default style.
 ms.date: 07/20/2015
 ms.assetid: 5458bccf-3898-4661-904b-7d280c9239a9
 ---

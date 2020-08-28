@@ -1,5 +1,6 @@
 ---
 title: "Side-by-Side Execution in the .NET Framework"
+description: Explore side-by-side execution in .NET. Side-by-side execution lets you run many versions of an application or component on the same computer.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "side-by-side execution"

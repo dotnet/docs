@@ -1,5 +1,6 @@
 ---
 title: "How to: Position the Child Elements of a Grid"
+description: Learn how to use the get and set methods that are defined on a Windows Presentation Foundation Grid to position child elements.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

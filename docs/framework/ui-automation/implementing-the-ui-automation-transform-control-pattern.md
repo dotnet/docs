@@ -1,5 +1,6 @@
 ---
 title: "Implementing the UI Automation Transform Control Pattern"
+description: Review guidelines and conventions to implement the Transform control pattern in UI Automation. Know required members for the ITransformProvider interface.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns, Transform"

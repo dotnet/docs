@@ -1,5 +1,6 @@
 ---
 title: "Interoperating with unmanaged code"
+description: Review interoperation with unmanaged code. The CLR conceals from clients and servers how the object models of .NET components and unmanaged code differ.
 ms.date: "01/17/2018"
 helpviewer_keywords: 
   - "unmanaged code, interoperation"

@@ -1,5 +1,6 @@
 ---
 title: "Types - C# Programming Guide"
+description: Learn about types in C# programming, such as built-in types, custom types, value types, and reference types.
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "value types [C#]"

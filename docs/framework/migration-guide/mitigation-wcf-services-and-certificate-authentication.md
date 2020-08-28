@@ -1,5 +1,6 @@
 ---
 title: "Mitigation: WCF Services and Certificate Authentication"
+description: Learn how to mitigate certificate authentication issues from the changes to the WCF SSL protocol default list in .NET Framework 4.6.
 ms.date: "03/30/2017"
 ms.assetid: ef19c91a-b9df-4bf0-a28e-eb1e99c4bc95
 ---
@@ -9,7 +10,7 @@ The .NET Framework 4.6 adds TLS 1.1 and TLS 1.2 to the WCF SSL protocol default 
 
 ## Impact
 
-TLS 1.2 does not support MD5 certificate authentication. As a result, if a customer uses an SSL  certificate which uses MD5 for the hash algorithm, the WCF client fails to connect to the WCF service. For more information, see [Mitigation: WCF Services and Certificate Authentication](mitigation-wcf-services-and-certificate-authentication.md).
+TLS 1.2 does not support MD5 certificate authentication. As a result, if a customer uses an SSL certificate which uses MD5 for the hash algorithm, the WCF client fails to connect to the WCF service. For more information, see [Mitigation: WCF Services and Certificate Authentication](mitigation-wcf-services-and-certificate-authentication.md).
 
 ## Mitigation
 

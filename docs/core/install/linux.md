@@ -1,12 +1,18 @@
 ---
-title: Install .NET Core and Linux Distributions
+title: Install .NET Core on Linux Distributions
 description: Learn about what Linux distributions support installing .NET Core on Linux.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/01/2020
 ---
 
 # Install .NET Core on Linux
+
+> [!div class="op_single_selector"]
+>
+> - [Install on Windows](windows.md)
+> - [Install on macOS](macos.md)
+> - [Install on Linux](linux.md)
 
 .NET Core is available on different Linux distributions. Most Linux platforms and distributions have a major release each year, and most provide a package manager that is used to install .NET Core. This article describes what is currently supported and which package manager is used.
 
@@ -159,7 +165,7 @@ The following table represents the support status of Ubuntu and .NET Core.
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [20.04 (LTS)](linux-ubuntu.md#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [19.10](linux-ubuntu.md#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [19.10](linux-ubuntu.md#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ❌ [19.04](linux-ubuntu.md#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
 | ❌ [18.10](linux-ubuntu.md#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 | ✔️ [18.04 (LTS)](linux-ubuntu.md#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
@@ -169,3 +175,9 @@ The following table represents the support status of Ubuntu and .NET Core.
 | ✔️ [16.04 (LTS)](linux-ubuntu.md#1604-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 
 For more information, see [Install .NET Core on Ubuntu](linux-ubuntu.md).
+
+## Next steps
+
+- [How to check if .NET Core is already installed](how-to-detect-installed-versions.md?pivots=os-linux).
+- [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
+- [Tutorial: Containerize a .NET Core app](../docker/build-container.md).

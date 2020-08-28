@@ -1,5 +1,6 @@
 ---
 title: "Find and Highlight Text Using UI Automation"
+description: Find and highlight text using UI Automation. An example sequentially searches for and highlights each occurrence of a string within the text control content.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

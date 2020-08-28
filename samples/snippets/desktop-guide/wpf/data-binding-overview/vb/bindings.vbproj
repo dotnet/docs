@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>bindings</RootNamespace>
-    <UseWPF>true</UseWPF>
+    <UseWpf>true</UseWpf>
   </PropertyGroup>
 
   <ItemGroup>

@@ -13,6 +13,25 @@ In this tutorial, you'll explore the creation of an **analyzer** and an accompan
 
 ## Prerequisites
 
+> [!NOTE]
+> The current Visual Studio **Analyzer with code fix (.NET Standard)** template has a known bug in it and should be fixed in Visual Studio 2019 version 16.7. The projects in the template will not compile unless the following changes are made:
+>
+> 1. Select **Tools** > **Options** > **NuGet Package Manager** > **Package Sources**
+>    - Select the plus button, to add a new source:
+>    - Set the **Source** to `https://dotnet.myget.org/F/roslyn-analyzers/api/v3/index.json` and select **Update**
+> 1. From the **Solution Explorer**, right-click on the **MakeConst.Vsix** project, and select **Edit Project File**
+>    - Update the `<AssemblyName>` node to add the `.Visx` suffix:
+>      - `<AssemblyName>MakeConst.Vsix</AssemblyName>`
+>    - Update the `<ProjectReference>` node on line 41 to alter the `TargetFramework` value:
+>      - `<ProjectReference Update="@(ProjectReference)" AdditionalProperties="TargetFramework=netstandard2.0" />`
+> 1. Update the *MakeConstUnitTests.cs* file, in the *MakeConst.Test* project:
+>    - Change line 9 to the following, notice namespace alteration:
+>      - `using Verify = Microsoft.CodeAnalysis.CSharp.Testing.MSTest.CodeFixVerifier<`
+>    - Change line 24 to the following method:
+>      - `await Verify.VerifyAnalyzerAsync(test);`
+>    - Change line 62 to the following method:
+>      - `await Verify.VerifyCodeFixAsync(test, expected, fixtest);`
+
 - [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2017-and-other-products)
 - [Visual Studio 2019](https://www.visualstudio.com/downloads)
 
@@ -50,7 +69,7 @@ The analysis to determine whether a variable can be made constant is involved, r
 - Under **Visual C# > Extensibility**, choose **Analyzer with code fix (.NET Standard)**.
 - Name your project "**MakeConst**" and click OK.
 
-The analyzer with code fix template creates three projects: one contains the analyzer and code fix, the second is a unit test project, and the third is the VSIX project. The default startup project is the VSIX project. Press **F5** to start the VSIX project. This starts a second instance of Visual Studio that has loaded your new analyzer.
+The analyzer with code fix template creates three projects: one contains the analyzer and code fix, the second is a unit test project, and the third is the VSIX project. The default startup project is the VSIX project. Press <kbd>F5</kbd> to start the VSIX project. This starts a second instance of Visual Studio that has loaded your new analyzer.
 
 > [!TIP]
 > When you run your analyzer, you start a second copy of Visual Studio. This second copy uses a different registry hive to store settings. That enables you to differentiate the visual settings in the two copies of Visual Studio. You can pick a different theme for the experimental run of Visual Studio. In addition, don't roam your settings or login to your Visual Studio account using the experimental run of Visual Studio. That keeps the settings different.
@@ -165,7 +184,7 @@ The code just added ensures that the variable isn't modified, and can therefore 
 context.ReportDiagnostic(Diagnostic.Create(Rule, context.Node.GetLocation()));
 ```
 
-You can check your progress by pressing **F5** to run your analyzer. You can load the console application you created earlier and then add the following test code:
+You can check your progress by pressing <kbd>F5</kbd> to run your analyzer. You can load the console application you created earlier and then add the following test code:
 
 ```csharp
 int x = 0;
@@ -246,7 +265,7 @@ Add the following code to the end of the `MakeConstAsync` method:
 
 [!code-csharp[replace the declaration](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst/MakeConstCodeFixProvider.cs#ReplaceDocument  "Generate a new document by replacing the declaration")]
 
-Your code fix is ready to try.  Press F5 to run the analyzer project in a second instance of Visual Studio. In the second Visual Studio instance, create a new C# Console Application project and add a few local variable declarations initialized with constant values to the Main method. You'll see that they are reported as warnings as below.
+Your code fix is ready to try.  Press <kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio. In the second Visual Studio instance, create a new C# Console Application project and add a few local variable declarations initialized with constant values to the Main method. You'll see that they are reported as warnings as below.
 
 ![Can make const warnings](media/how-to-write-csharp-analyzer-code-fix/make-const-warning.png)
 
@@ -305,7 +324,7 @@ The preceding code also made a couple changes to the code that builds the expect
 
 [!code-csharp[string constants for fix test](~/samples/snippets/csharp/roslyn-sdk/Tutorials/MakeConst/MakeConst.Test/MakeConstUnitTests.cs#FirstFixTest "string constants for fix test")]
 
-Run these two tests to make sure they pass. In Visual Studio, open the **Test Explorer** by selecting **Test** > **Windows** > **Test Explorer**.  The press the **Run All** link.
+Run these two tests to make sure they pass. In Visual Studio, open the **Test Explorer** by selecting **Test** > **Windows** > **Test Explorer**. Then select the **Run All** link.
 
 ## Create tests for valid declarations
 
@@ -480,7 +499,7 @@ else if (variableType.IsReferenceType && constantValue.Value != null)
 }
 ```
 
-You must write a bit more code in your code fix provider to replace the var' keyword with the correct type name. Return to **CodeFixProvider.cs**. The code you'll add does the following steps:
+You must write a bit more code in your code fix provider to replace the `var` keyword with the correct type name. Return to **CodeFixProvider.cs**. The code you'll add does the following steps:
 
 - Check if the declaration is a `var` declaration, and if it is:
 - Create a new type for the inferred type.
@@ -498,12 +517,12 @@ You'll need to add one `using` directive to use the <xref:Microsoft.CodeAnalysis
 using Microsoft.CodeAnalysis.Simplification;
 ```
 
-Run your tests, and they should all pass. Congratulate yourself by running your finished analyzer. Press Ctrl+F5 to run the analyzer project in a second instance of Visual Studio with the Roslyn Preview extension loaded.
+Run your tests, and they should all pass. Congratulate yourself by running your finished analyzer. Press <kbd>Ctrl</kbd>+<kbd>F5</kbd> to run the analyzer project in a second instance of Visual Studio with the Roslyn Preview extension loaded.
 
 - In the second Visual Studio instance, create a new C# Console Application project and add `int x = "abc";` to the Main method. Thanks to the first bug fix, no warning should be reported for this local variable declaration (though there's a compiler error as expected).
 - Next, add `object s = "abc";` to the Main method. Because of the second bug fix, no warning should be reported.
 - Finally, add another local variable that uses the `var` keyword. You'll see that a warning is reported and a suggestion appears beneath to the left.
-- Move the editor caret over the squiggly underline and press Ctrl+. to display the suggested code fix. Upon selecting your code fix, note that the var' keyword is now handled correctly.
+- Move the editor caret over the squiggly underline and press <kbd>Ctrl</kbd>+<kbd>.</kbd>. to display the suggested code fix. Upon selecting your code fix, note that the `var` keyword is now handled correctly.
 
 Finally, add the following code:
 

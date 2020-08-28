@@ -1,4 +1,4 @@
-//<snippet3>
+﻿//<snippet3>
 using System;
 
 class ArgumentOutOfRangeExample

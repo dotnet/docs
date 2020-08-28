@@ -1,7 +1,7 @@
 ---
 title: Install .NET Core on Ubuntu - .NET Core
 description: Demonstrates the various ways to install .NET Core SDK and .NET Core Runtime on Ubuntu.
-author: thraka
+author: adegeo
 ms.author: adegeo
 ms.date: 06/04/2020
 ---
@@ -25,7 +25,7 @@ The following table is a list of currently supported .NET Core releases and the 
 | Ubuntu                   | .NET Core 2.1 | .NET Core 3.1 | .NET 5 Preview (manual install only) |
 |--------------------------|---------------|---------------|----------------|
 | ✔️ [20.04 (LTS)](#2004-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
-| ✔️ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
+| ❌ [19.10](#1910-)       | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
 | ❌ [19.04](#1904-)       | ✔️ 2.1        | ✔️ 3.1        | ❌ 5.0 Preview |
 | ❌ [18.10](#1810-)       | ✔️ 2.1        | ❌ 3.1        | ❌ 5.0 Preview |
 | ✔️ [18.04 (LTS)](#1804-) | ✔️ 2.1        | ✔️ 3.1        | ✔️ 5.0 Preview |
@@ -55,7 +55,9 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
 
-## 19.10 ✔️
+## 19.10 ❌
+
+[!INCLUDE [linux-not-supported](includes/linux-not-supported-ubuntu.md)]
 
 [!INCLUDE [linux-prep-intro-apt](includes/linux-prep-intro-apt.md)]
 
@@ -196,16 +198,17 @@ sudo apt-get update; \
 
 When you install with a package manager, these libraries are installed for you. But, if you manually install .NET Core or you publish a self-contained app, you'll need to make sure these libraries are installed:
 
-- liblttng-ust0
-- libcurl3 (for 14.x and 16.x)
-- libcurl4 (for 18.x)
-- libssl1.0.0
-- libkrb5-3
-- zlib1g
+- libc6
+- libgcc1
+- libgssapi-krb5-2
 - libicu52 (for 14.x)
 - libicu55 (for 16.x)
-- libicu57 (for 17.x)
 - libicu60 (for 18.x)
+- libicu66 (for 20.x)
+- libssl1.0.0 (for 14.x, 16.x)
+- libssl1.1 (for 18.x, 20.x)
+- libstdc++6
+- zlib1g
 
 For .NET Core apps that use the *System.Drawing.Common* assembly, you also need the following dependency:
 

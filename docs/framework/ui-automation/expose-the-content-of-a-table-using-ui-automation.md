@@ -1,5 +1,6 @@
 ---
 title: "Expose the Content of a Table Using UI Automation"
+description: See how to expose the content of a table using UI Automation. The content and intrinsic properties of each cell within a tabular control are exposed.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

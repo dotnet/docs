@@ -1,5 +1,6 @@
 ---
 title: "reportAvOnComRelease MDA"
+description: Review the reportAvOnComRelease managed debugging assistant (MDA), which may be activated because of access violations and memory corruption in .NET.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MDAs (managed debugging assistants), reference counting errors"

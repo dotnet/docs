@@ -1,5 +1,6 @@
 ---
 title: "UI Automation Control Patterns Overview"
+description: See an overview of UI Automation control patterns. Control patterns let you categorize and expose a control's functionality regardless of type or appearance.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "control patterns"

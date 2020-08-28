@@ -1,5 +1,6 @@
 ---
 title: "Aximp.exe (Windows Forms ActiveX Control Importer)"
+description: Understand Aximp.exe, the Windows Forms ActiveX Control Importer. This tool converts type definitions in a COM type library for ActiveX into Windows Forms.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ActiveX controls, hosting in Windows Forms"

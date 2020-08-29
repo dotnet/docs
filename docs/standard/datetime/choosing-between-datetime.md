@@ -46,6 +46,8 @@ The <xref:System.DateTimeOffset> type includes all of the functionality of the <
 
 - Uniquely and unambiguously identify a single point in time. The <xref:System.DateTimeOffset> type can be used to unambiguously define the meaning of "now", to log transaction times, to log the times of system or application events, and to record file creation and modification times.
 
+- Perform general date and time arithmetic.
+
 - Preserve multiple related times, as long as those times are stored as two separate values or as two members of a structure.
 
 > [!NOTE]

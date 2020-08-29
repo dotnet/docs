@@ -65,8 +65,6 @@ items:
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
   - name: .NET glossary
     href: ../standard/glossary.md
-  - name: Choose between .NET Core and .NET Framework for server apps
-    href: ../standard/choosing-core-framework-server.md
   - name: Tutorials
     items:
     - name: Use Visual Studio
@@ -187,10 +185,6 @@ items:
   items:
   - name: Tools and productivity
     items:
-    - name: Visual Studio Code
-      href: https://code.visualstudio.com/
-    - name: Visual Studio
-      href: https://visualstudio.microsoft.com/
     - name: .NET Core SDK overview
       href: ../core/sdk.md
     - name: .NET Core CLI
@@ -369,12 +363,6 @@ items:
     items:
     - name: Common Language Runtime (CLR)
       href: ../standard/clr.md
-    - name: Language independence
-      items:
-      - name: Overview
-        href: ../standard/language-independence.md
-      - name: Language-independent components
-        href: ../standard/language-independence-and-language-independent-components.md
     - name: Managed execution process
       href: ../standard/managed-execution-process.md
     - name: Assemblies in .NET
@@ -467,16 +455,22 @@ items:
           href: ../core//aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Target frameworks
       href: ../standard/frameworks.md
+    - name: Additions to the csproj format
+      href: ../core/tools/csproj.md
     - name: Dependency management
       href: ../core/tools/dependencies.md
 - name: Fundamental coding components
   items:
-  - name: Base types
+  - name: Base types overview
     items:
     - name: Common type system & common language specification
       href: ../standard/common-type-system.md
     - name: Common type system
       href: ../standard/base-types/common-type-system.md
+    - name: Language independence
+      href: ../standard/language-independence.md
+    - name: Language-independent components
+      href: ../standard/language-independence-and-language-independent-components.md
     - name: Type conversion in .NET
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
@@ -485,8 +479,6 @@ items:
       href: ../standard/framework-libraries.md
     - name: Class library overview
       href: ../standard/class-library-overview.md
-  - name: Anonymous and tuple types
-    href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
   - name: Generic types
     items:
     - name: Overview
@@ -571,12 +563,8 @@ items:
       href: ../standard/exceptions/handling-com-interop-exceptions.md
     - name: Best practices
       href: ../standard/exceptions/best-practices-for-exceptions.md  
-  - name: Numerics in .NET
-    items:
-    - name: Overview
-      href: ../standard/numerics.md
-    - name: SIMD-enabled types
-      href: ../standard/simd.md
+  - name: Numeric types
+    href: ../standard/numerics.md
   - name: Dates, times, and time zones
     href: ../standard/datetime/
   - name: Format numbers, dates, other types
@@ -613,98 +601,98 @@ items:
         href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
       - name: Display dates in non-Gregorian calendars
         href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
-    - name: Manipulate strings
-      items:
-      - name: Best practices for using strings
-        href: ../standard/base-types/best-practices-strings.md
-      - name: Basic string operations
-        items:
-        - name: Overview
-          href: ../standard/base-types/basic-string-operations.md
-          displayName: string operations
-        - name: Create new strings
-          href: ../standard/base-types/creating-new.md
-        - name: Trim and remove characters
-          href: ../standard/base-types/trimming.md
-        - name: Pad strings
-          href: ../standard/base-types/padding.md
-        - name: Compare strings
-          href: ../standard/base-types/comparing.md
-        - name: Change case
-          href: ../standard/base-types/changing-case.md
-        - name: Use the StringBuilder class
-          href: ../standard/base-types/stringbuilder.md
-        - name: "How to: Perform basic string manipulations"
-          href: ../standard/base-types/basic-manipulations.md
-      - name: Regular expressions in .NET
-        items:
-        - name: Overview
-          href: ../standard/base-types/regular-expressions.md
-          displayName: regular expressions
-        - name: Language reference
-          items:
-          - name: Overview
-            href: ../standard/base-types/regular-expression-language-quick-reference.md
-          - name: Character escapes
-            href: ../standard/base-types/character-escapes-in-regular-expressions.md
-          - name: Character classes
-            href: ../standard/base-types/character-classes-in-regular-expressions.md
-          - name: Anchors
-            href: ../standard/base-types/anchors-in-regular-expressions.md
-          - name: Grouping constructs
-            href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
-          - name: Quantifiers
-            href: ../standard/base-types/quantifiers-in-regular-expressions.md
-          - name: Backreference constructs
-            href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
-          - name: Alternation constructs
-            href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
-          - name: Substitutions
-            href: ../standard/base-types/substitutions-in-regular-expressions.md
-          - name: Regular expression options
-            href: ../standard/base-types/regular-expression-options.md
-          - name: Miscellaneous constructs
-            href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
-        - name: Best practices for regular expressions
-          href: ../standard/base-types/best-practices.md
-        - name: Regular expression object model
-          href: ../standard/base-types/the-regular-expression-object-model.md
-        - name: Regular expression behavior
-          items:
-          - name: Overview
-            href: ../standard/base-types/details-of-regular-expression-behavior.md
-          - name: Backtracking
-            href: ../standard/base-types/backtracking-in-regular-expressions.md
-          - name: Compilation and reuse
-            href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
-          - name: Thread safety
-            href: ../standard/base-types/thread-safety-in-regular-expressions.md
-        - name: Examples
-          items:
-          - name: Scan for HREFs
-            href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
-          - name: Change date formats
-            href: ../standard/base-types/regular-expression-example-changing-date-formats.md
-          - name: Extract a protocal and port number from a URL
-            href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
-          - name: Strip invalid characters from a string
-            href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
-          - name: Verify that strings are in valid email format
-            href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
+  - name: Manipulate strings
+    items:
     - name: Character encoding in .NET
       href: ../standard/base-types/character-encoding-introduction.md
     - name: How to use character encoding classes
       href: ../standard/base-types/character-encoding.md
-    - name: Parse strings
+    - name: Best practices for using strings
+      href: ../standard/base-types/best-practices-strings.md
+    - name: Basic string operations
       items:
       - name: Overview
-        href: ../standard/base-types/parsing-strings.md
-      - name: Parse numeric strings
-        href: ../standard/base-types/parsing-numeric.md
-      - name: Parse date and time strings
-        href: ../standard/base-types/parsing-datetime.md
-      - name: Parse other strings
-        href: ../standard/base-types/parsing-other.md
+        href: ../standard/base-types/basic-string-operations.md
+        displayName: string operations
+      - name: Create new strings
+        href: ../standard/base-types/creating-new.md
+      - name: Trim and remove characters
+        href: ../standard/base-types/trimming.md
+      - name: Pad strings
+        href: ../standard/base-types/padding.md
+      - name: Compare strings
+        href: ../standard/base-types/comparing.md
+      - name: Change case
+        href: ../standard/base-types/changing-case.md
+      - name: Use the StringBuilder class
+        href: ../standard/base-types/stringbuilder.md
+      - name: "How to: Perform basic string manipulations"
+        href: ../standard/base-types/basic-manipulations.md
+    - name: Regular expressions in .NET
+      items:
+      - name: Overview
+        href: ../standard/base-types/regular-expressions.md
+        displayName: regular expressions
+      - name: Language reference
+        items:
+        - name: Overview
+          href: ../standard/base-types/regular-expression-language-quick-reference.md
+        - name: Character escapes
+          href: ../standard/base-types/character-escapes-in-regular-expressions.md
+        - name: Character classes
+          href: ../standard/base-types/character-classes-in-regular-expressions.md
+        - name: Anchors
+          href: ../standard/base-types/anchors-in-regular-expressions.md
+        - name: Grouping constructs
+          href: ../standard/base-types/grouping-constructs-in-regular-expressions.md
+        - name: Quantifiers
+          href: ../standard/base-types/quantifiers-in-regular-expressions.md
+        - name: Backreference constructs
+          href: ../standard/base-types/backreference-constructs-in-regular-expressions.md
+        - name: Alternation constructs
+          href: ../standard/base-types/alternation-constructs-in-regular-expressions.md
+        - name: Substitutions
+          href: ../standard/base-types/substitutions-in-regular-expressions.md
+        - name: Regular expression options
+          href: ../standard/base-types/regular-expression-options.md
+        - name: Miscellaneous constructs
+          href: ../standard/base-types/miscellaneous-constructs-in-regular-expressions.md
+      - name: Best practices for regular expressions
+        href: ../standard/base-types/best-practices.md
+      - name: Regular expression object model
+        href: ../standard/base-types/the-regular-expression-object-model.md
+      - name: Regular expression behavior
+        items:
+        - name: Overview
+          href: ../standard/base-types/details-of-regular-expression-behavior.md
+        - name: Backtracking
+          href: ../standard/base-types/backtracking-in-regular-expressions.md
+        - name: Compilation and reuse
+          href: ../standard/base-types/compilation-and-reuse-in-regular-expressions.md
+        - name: Thread safety
+          href: ../standard/base-types/thread-safety-in-regular-expressions.md
+      - name: Examples
+        items:
+        - name: Scan for HREFs
+          href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
+        - name: Change date formats
+          href: ../standard/base-types/regular-expression-example-changing-date-formats.md
+        - name: Extract a protocal and port number from a URL
+          href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
+        - name: Strip invalid characters from a string
+          href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
+        - name: Verify that strings are in valid email format
+          href: ../standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md
+  - name: Parse strings
+    items:
+    - name: Overview
+      href: ../standard/base-types/parsing-strings.md
+    - name: Parse numeric strings
+      href: ../standard/base-types/parsing-numeric.md
+    - name: Parse date and time strings
+      href: ../standard/base-types/parsing-datetime.md
+    - name: Parse other strings
+      href: ../standard/base-types/parsing-other.md
   - name: Attributes
     items:
     - name: Overview
@@ -716,16 +704,24 @@ items:
       href: ../standard/attributes/writing-custom-attributes.md
     - name: Retrieve information stored in attributes
       href: ../standard/attributes/retrieving-information-stored-in-attributes.md  
+  - name: Choose between anonymous and tuple types
+    href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
 - name: Microsoft Extensions 
   items:
+  - name: Configuration
+    href: https://docs.microsoft.com/aspnet/core/fundamentals/configuration/
+  - name: Dependency injection
+    href: https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection/
+  - name: Logging
+    href: https://docs.microsoft.com/aspnet/core/fundamentals/logging/
 - name: Data access 
   items:
-  - name: Microsoft.Data.Sqlite
-    href: ../standard/data/sqlite/
-  - name: XML documents and data
-    href: ../standard/data/xml/
   - name: LINQ
     href: ../standard/using-linq.md
+  - name: XML documents and data
+    href: ../standard/data/xml/
+  - name: Microsoft.Data.Sqlite
+    href: ../standard/data/sqlite/
 - name: Parallel processing, concurrency, and async
   items:
   - name: Overview
@@ -879,16 +875,6 @@ items:
       href: ../standard/parallel-programming/for-further-reading-parallel-programming.md    
   - name: Threading
     href: ../standard/threading/
-
-
-
-
-
-
-
-
-
-
 - name: Serialization
   items:
   - name: Overview
@@ -1155,8 +1141,8 @@ items:
         href: ../standard/memory-and-spans/index.md
       - name: Memory<T> and Span<T> usage guidelines
         href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
-  - name: Globalization and localization
-    href: ../standard/globalization-localization/
+    - name: SIMD-enabled types
+      href: ../standard/simd.md
   - name: Native interoperability
     items:
     - name: Overview
@@ -1200,6 +1186,8 @@ items:
       href: ../standard/native-interop/exceptions-interoperability.md
   - name: .NET Core distribution packaging
     href: ../core/distribution-packaging.md
+  - name: Globalization and localization
+    href: ../standard/globalization-localization/
   - name: Open-source library guidance
     href: ../standard/library-guidance/
   - name: Framework design guidelines
@@ -1322,8 +1310,6 @@ items:
       href: ../core/tools/project-json-to-csproj.md
     - name: Changes in CLI overview
       href: ../core/tools/cli-msbuild-architecture.md
-    - name: Additions to the csproj format
-      href: ../core/tools/csproj.md
     - name: Migrate from DNX
       href: ../core/migration/from-dnx.md
   - name: Port from .NET Framework
@@ -1348,3 +1334,5 @@ items:
       href: ../core/../desktop-wpf/migration/convert-project-from-net-framework.md
     - name: Port C++/CLI projects
       href: ../core/porting/cpp-cli.md
+  - name: Choose between .NET Core and .NET Framework for server apps
+    href: ../standard/choosing-core-framework-server.md

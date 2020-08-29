@@ -1,4 +1,5 @@
 ---
+description: Learn more about void keyword in C#
 title: "void - C# reference"
 ms.date: 02/11/2020
 f1_keywords: 

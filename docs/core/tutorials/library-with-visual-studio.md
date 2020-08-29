@@ -64,7 +64,7 @@ To create the blank solution:
 
    `StartsWithUpper` is implemented as an [extension method](../../csharp/programming-guide/classes-and-structs/extension-methods.md) so that you can call it as if it were a member of the <xref:System.String> class.
 
-1. On the menu bar, select **Build** > **Build Solution** to verify that the project compiles without error.
+1. On the menu bar, select **Build** > **Build Solution** or press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to verify that the project compiles without error.
 
 ## Add a console app to the solution
 

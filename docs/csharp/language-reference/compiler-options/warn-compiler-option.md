@@ -1,4 +1,5 @@
 ---
+description: "-warn (C# Compiler Options)"
 title: "-warn (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

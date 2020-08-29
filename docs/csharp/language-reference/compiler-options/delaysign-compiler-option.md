@@ -1,4 +1,5 @@
 ---
+description: "-delaysign (C# Compiler Options)"
 title: "-delaysign (C# Compiler Options)"
 ms.date: 05/15/2018
 f1_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "Access Modifiers - C# Reference"
 title: "Access Modifiers - C# Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

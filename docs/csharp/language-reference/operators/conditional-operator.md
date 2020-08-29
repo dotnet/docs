@@ -1,4 +1,5 @@
 ---
+description: "?: operator - C# reference"
 title: "?: operator - C# reference"
 ms.date: "03/06/2020"
 f1_keywords:

@@ -40,6 +40,9 @@ at System.Data.DataColumn.set_DataType(Type value)
 
 When loading XML into an existing `DataSet` or `DataTable` instance, the existing column definitions are also taken into account. If the table already contains a column definition of a custom type, that type is temporarily added to the allow list for the duration of the XML deserialization operation.
 
+> [!NOTE]
+> Once you add columns to a `DataTable`, `ReadXml` will not read the schema from the XML, and if the schema does not match it will also not read in the records, so you will need to add all the columns yourself to use this method.
+
 ```cs
 XmlReader xmlReader = GetXmlReader();
 

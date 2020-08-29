@@ -1,4 +1,5 @@
 ---
+description: "extern modifier - C# Reference"
 title: "extern modifier - C# Reference"
 ms.date: 07/20/2015
 f1_keywords:

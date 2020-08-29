@@ -1,4 +1,5 @@
 ---
+description: "-addmodule (C# Compiler Options)"
 title: "-addmodule (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

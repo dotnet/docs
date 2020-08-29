@@ -171,18 +171,18 @@ items:
         href: ../core/tutorials/creating-app-with-plugin-support.md
     - name: More tutorials
       href: ../core/tutorials/index.md
-  - name: What's new in .NET Core
-    items:
-    - name: What's new in .NET Core 3.1
-      href: ../core/whats-new/dotnet-core-3-1.md
-    - name: What's new in .NET Core 3.0
-      href: ../core/whats-new/dotnet-core-3-0.md
-    - name: What's new in .NET Core 2.2
-      href: ../core/whats-new/dotnet-core-2-2.md
-    - name: What's new in .NET Core 2.1
-      href: ../core/whats-new/dotnet-core-2-1.md
-    - name: What's new in .NET Core 2.0
-      href: ../core/whats-new/dotnet-core-2-0.md
+- name: What's new in .NET Core
+  items:
+  - name: What's new in .NET Core 3.1
+    href: ../core/whats-new/dotnet-core-3-1.md
+  - name: What's new in .NET Core 3.0
+    href: ../core/whats-new/dotnet-core-3-0.md
+  - name: What's new in .NET Core 2.2
+    href: ../core/whats-new/dotnet-core-2-2.md
+  - name: What's new in .NET Core 2.1
+    href: ../core/whats-new/dotnet-core-2-1.md
+  - name: What's new in .NET Core 2.0
+    href: ../core/whats-new/dotnet-core-2-0.md
 - name: Environment and runtime components
   items:
   - name: Tools and productivity
@@ -365,110 +365,110 @@ items:
           href: ../standard/analyzers/portability-analyzer.md
         - name: Framework analyzer
           href: ../standard/analyzers/framework-analyzer.md
-    - name: Execution model
-      items:
-      - name: Common Language Runtime (CLR)
-        href: ../standard/clr.md
-      - name: Language independence
-        items:
-        - name: Overview
-          href: ../standard/language-independence.md
-        - name: Language-independent components
-          href: ../standard/language-independence-and-language-independent-components.md
-      - name: Managed execution process
-        href: ../standard/managed-execution-process.md
-      - name: Assemblies in .NET
-        href: ../standard/assembly/
-      - name: Metadata and self-describing components
-        href: ../standard/metadata-and-self-describing-components.md
-      - name: Dependency loading
-        items:
-        - name: Dependency loading
-          href: ../core/dependency-loading/overview.md
-        - name: Understand AssemblyLoadContext
-          href: ../core/dependency-loading/understanding-assemblyloadcontext.md
-        - name: Dependency loading details
-          items:
-          - name: Default dependency probing
-            href: ../core/dependency-loading/default-probing.md
-          - name: Load managed assemblies
-            href: ../core/dependency-loading/loading-managed.md
-          - name: Load satellite assemblies
-            href: ../core/dependency-loading/loading-resources.md
-          - name: Load unmanaged libraries
-            href: ../core/dependency-loading/loading-unmanaged.md
-        - name: Tutorials
-          items:
-          - name: Create a .NET Core application with plugins
-            href: ../core/tutorials/creating-app-with-plugin-support.md
-          - name: How to use and debug assembly unloadability in .NET Core
-            href: ../core/../standard/assembly/unloadability.md
-      - name: Versioning
-        items:
-        - name: Overview
-          href: ../core/versions/index.md
-        - name: .NET Core version selection
-          href: ../core/versions/selection.md
-      - name: Run-time configuration
-        items:
-        - name: Settings
-          href: ../core/run-time-config/index.md
-        - name: Compilation settings
-          href: ../core/run-time-config/compilation.md
-        - name: Debugging and profiling settings
-          href: ../core/run-time-config/debugging-profiling.md
-        - name: Garbage collector settings
-          href: ../core/run-time-config/garbage-collector.md
-        - name: Globalization settings
-          href: ../core/run-time-config/globalization.md
-        - name: Networking settings
-          href: ../core/run-time-config/networking.md
-        - name: Threading settings
-          href: ../core/run-time-config/threading.md
-    - name: Deployment models
+  - name: Execution model
+    items:
+    - name: Common Language Runtime (CLR)
+      href: ../standard/clr.md
+    - name: Language independence
       items:
       - name: Overview
-        href: ../core/deploying/index.md
-      - name: Deploy apps with Visual Studio
-        href: ../core/deploying/deploy-with-vs.md
-      - name: Create a NuGet package with the CLI
-        href: ../core/deploying/creating-nuget-packages.md
-      - name: Self-contained deployment runtime roll forward
-        href: ../core/deploying/runtime-patch-selection.md
-      - name: Trim self-contained deployments and executables
-        href: ../core/deploying/trim-self-contained.md
-      - name: Runtime package store
-        href: ../core/deploying/runtime-store.md
-      - name: Runtime Identifier (RID) catalog
-        href: ../core/rid-catalog.md
-      - name: Resource manifest names
-        href: ../core/resources/manifest-file-names.md
-      - name: Docker
-        items:
-        - name: Introduction to .NET and Docker
-          href: ../core/docker/introduction.md
-        - name: Containerize a .NET Core app
-          href: ../core/docker/build-container.md
-        - name: Container tools in Visual Studio
-          href: ../core//visualstudio/containers/overview
-    - name: MSBuild and project files
+        href: ../standard/language-independence.md
+      - name: Language-independent components
+        href: ../standard/language-independence-and-language-independent-components.md
+    - name: Managed execution process
+      href: ../standard/managed-execution-process.md
+    - name: Assemblies in .NET
+      href: ../standard/assembly/
+    - name: Metadata and self-describing components
+      href: ../standard/metadata-and-self-describing-components.md
+    - name: Dependency loading
       items:
-      - name: Project SDKs
+      - name: Dependency loading
+        href: ../core/dependency-loading/overview.md
+      - name: Understand AssemblyLoadContext
+        href: ../core/dependency-loading/understanding-assemblyloadcontext.md
+      - name: Dependency loading details
         items:
-        - name: Overview
-          href: ../core/project-sdk/overview.md
-        - name: Reference
-          items:
-          - name: Microsoft.NET.Sdk
-            href: ../core/project-sdk/msbuild-props.md
-          - name: Microsoft.NET.Sdk.Web
-            href: ../core//aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
-          - name: Microsoft.NET.Sdk.Razor
-            href: ../core//aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
-      - name: Target frameworks
-        href: ../standard/frameworks.md
-      - name: Dependency management
-        href: ../core/tools/dependencies.md
+        - name: Default dependency probing
+          href: ../core/dependency-loading/default-probing.md
+        - name: Load managed assemblies
+          href: ../core/dependency-loading/loading-managed.md
+        - name: Load satellite assemblies
+          href: ../core/dependency-loading/loading-resources.md
+        - name: Load unmanaged libraries
+          href: ../core/dependency-loading/loading-unmanaged.md
+      - name: Tutorials
+        items:
+        - name: Create a .NET Core application with plugins
+          href: ../core/tutorials/creating-app-with-plugin-support.md
+        - name: How to use and debug assembly unloadability in .NET Core
+          href: ../core/../standard/assembly/unloadability.md
+    - name: Versioning
+      items:
+      - name: Overview
+        href: ../core/versions/index.md
+      - name: .NET Core version selection
+        href: ../core/versions/selection.md
+    - name: Run-time configuration
+      items:
+      - name: Settings
+        href: ../core/run-time-config/index.md
+      - name: Compilation settings
+        href: ../core/run-time-config/compilation.md
+      - name: Debugging and profiling settings
+        href: ../core/run-time-config/debugging-profiling.md
+      - name: Garbage collector settings
+        href: ../core/run-time-config/garbage-collector.md
+      - name: Globalization settings
+        href: ../core/run-time-config/globalization.md
+      - name: Networking settings
+        href: ../core/run-time-config/networking.md
+      - name: Threading settings
+        href: ../core/run-time-config/threading.md
+  - name: Deployment models
+    items:
+    - name: Overview
+      href: ../core/deploying/index.md
+    - name: Deploy apps with Visual Studio
+      href: ../core/deploying/deploy-with-vs.md
+    - name: Create a NuGet package with the CLI
+      href: ../core/deploying/creating-nuget-packages.md
+    - name: Self-contained deployment runtime roll forward
+      href: ../core/deploying/runtime-patch-selection.md
+    - name: Trim self-contained deployments and executables
+      href: ../core/deploying/trim-self-contained.md
+    - name: Runtime package store
+      href: ../core/deploying/runtime-store.md
+    - name: Runtime Identifier (RID) catalog
+      href: ../core/rid-catalog.md
+    - name: Resource manifest names
+      href: ../core/resources/manifest-file-names.md
+    - name: Docker
+      items:
+      - name: Introduction to .NET and Docker
+        href: ../core/docker/introduction.md
+      - name: Containerize a .NET Core app
+        href: ../core/docker/build-container.md
+      - name: Container tools in Visual Studio
+        href: ../core//visualstudio/containers/overview
+  - name: MSBuild and project files
+    items:
+    - name: Project SDKs
+      items:
+      - name: Overview
+        href: ../core/project-sdk/overview.md
+      - name: Reference
+        items:
+        - name: Microsoft.NET.Sdk
+          href: ../core/project-sdk/msbuild-props.md
+        - name: Microsoft.NET.Sdk.Web
+          href: ../core//aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+        - name: Microsoft.NET.Sdk.Razor
+          href: ../core//aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Target frameworks
+      href: ../standard/frameworks.md
+    - name: Dependency management
+      href: ../core/tools/dependencies.md
 - name: Fundamental coding components
   items:
   - name: Base types

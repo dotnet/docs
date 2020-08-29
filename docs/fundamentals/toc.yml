@@ -301,6 +301,8 @@ items:
         href: ../core/tools/enable-tab-autocomplete.md
     - name: Publish apps with the CLI
       href: ../core/deploying/deploy-with-cli.md
+    - name: Continuous integration with the CLI
+      href: ../core/tools/using-ci-with-cli.md
     - name: .NET Core additional tools
       items:
       - name: Overview
@@ -469,185 +471,148 @@ items:
         href: ../core/tools/dependencies.md
 - name: Fundamental coding components
   items:
-- name: .NET base class libraries 
-  items:
-  - name: Async
+  - name: Base types
     items:
-- name: Microsoft Extensions 
-  items:
-- name: Data access 
-  items:
-  - name: Microsoft.Data.Sqlite
-    href: ../standard/data/sqlite/
-  - name: XML documents and data
-    href: ../standard/data/xml/
-- name: Serialization
-  items:
-  - name: Overview
-    href: ../standard/serialization/index.md
-  - name: JSON serialization
-    items:
-    - name: Overview
-      href: ../standard/serialization/system-text-json-overview.md
-      displayName: json serialization
-    - name: How to serialize and deserialize JSON
-      href: ../standard/serialization/system-text-json-how-to.md
-    - name: How to write custom converters
-      href: ../standard/serialization/system-text-json-converters-how-to.md
-    - name: How to migrate from Newtonsoft.Json
-      href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
-  - name: Binary serialization
-    items:
-    - name: Overview
-      href: ../standard/serialization/binary-serialization.md
-      displayName: binary serialization
-    - name: BinaryFormatter security guide
-      href: ../standard/serialization/binaryformatter-security-guide.md
-    - name: Serialization concepts
-      href: ../standard/serialization/serialization-concepts.md
-    - name: Basic serialization
-      href: ../standard/serialization/basic-serialization.md
-    - name: Selective serialization
-      href: ../standard/serialization/selective-serialization.md
-    - name: Custom serialization
-      href: ../standard/serialization/custom-serialization.md
-    - name: Steps in the serialization process
-      href: ../standard/serialization/steps-in-the-serialization-process.md
-    - name: Version-tolerant serialization
-      href: ../standard/serialization/version-tolerant-serialization.md
-    - name: Serialization guidelines
-      href: ../standard/serialization/serialization-guidelines.md
-    - name: "How to: Chunk serialized data"
-      href: ../standard/serialization/how-to-chunk-serialized-data.md
-    - name: "How to: Determine if a .NET Standard object is serializable"
-      href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
-    - name: Sample
-      href: ../standard/serialization/basic-serialization-technology-sample.md
-  - name: XML and SOAP serialization
-    items:
-    - name: Overview
-      href: ../standard/serialization/xml-and-soap-serialization.md
-    - name: XML serialization in depth
-      href: ../standard/serialization/introducing-xml-serialization.md
-    - name: Examples
-      href: ../standard/serialization/examples-of-xml-serialization.md
-    - name: The XML Schema Definition tool
-      href: ../standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md
-    - name: Control XML serialization using attributes
-      href: ../standard/serialization/controlling-xml-serialization-using-attributes.md
-    - name: Attributes that control XML serialization
-      href: ../standard/serialization/attributes-that-control-xml-serialization.md
-    - name: XML serialization with XML Web Services
-      href: ../standard/serialization/xml-serialization-with-xml-web-services.md
-    - name: Attributes that control encoded SOAP serialization
-      href: ../standard/serialization/attributes-that-control-encoded-soap-serialization.md
-    - name: How-tos
-      items:
-      - name: Serialize an object
-        href: ../standard/serialization/how-to-serialize-an-object.md
-      - name: Deserialize an object
-        href: ../standard/serialization/how-to-deserialize-an-object.md
-      - name: Use the XML Schema Definition tool to generate classes and XML schema documents
-        href: ../standard/serialization/xml-schema-def-tool-gen.md
-      - name: Control serialization of derived classes
-        href: ../standard/serialization/how-to-control-serialization-of-derived-classes.md
-      - name: Specify an alternate element name for an XML stream
-        href: ../standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
-      - name: Qualify XML element and XML attribute names
-        href: ../standard/serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
-      - name: Serialize an object as a SOAP-encoded XML stream
-        href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
-      - name: Override encoded SOAP XML serialization
-        href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
-    - name: XML serialization elements
-      items:
-      - name: system.xml.serialization
-        href: ../standard/serialization/system-xml-serialization-element.md
-      - name: dateTimeSerialization
-        href: ../standard/serialization/datetimeserialization-element.md
-      - name: schemaImporterExtensions
-        href: ../standard/serialization/schemaimporterextensions-element.md
-      - name: add element for schemaImporterExtensions
-        href: ../standard/serialization/add-element-for-schemaimporterextensions.md
-      - name: xmlSerializer
-        href: ../standard/serialization/xmlserializer-element.md
-    - name: Tools
-      items:
-      - name: XML Serializer Generator tool (Sgen.exe)
-        href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
-      - name: XML Schema Definition tool (Xsd.exe)
-        href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
-- name: I/O (files and streams)
-  items:
-- name: Testing (unit and integration)
-  items:
-- name: Security
-  href: ../standard/security/
-- name: Advanced topics
-  items: 
-- name: Migration guide
-  items: 
-
-
-
-- name: Open-source library guidance
-  href: ../standard/library-guidance/
-- name: Managed code
-  items:
-  - name: What is "managed code"?
-    href: ../standard/managed-code.md
-  - name: Automatic memory management
-    href: ../standard/automatic-memory-management.md
-- name: Framework libraries
-  items:
-  - name: Overview
-    href: ../standard/framework-libraries.md
-  - name: Class library overview
-    href: ../standard/class-library-overview.md
-  - name: Work with base types
-    items:
+    - name: Common type system & common language specification
+      href: ../standard/common-type-system.md
     - name: Common type system
       href: ../standard/base-types/common-type-system.md
     - name: Type conversion in .NET
       href: ../standard/base-types/type-conversion.md
     - name: Type conversion tables
       href: ../standard/base-types/conversion-tables.md
-    - name: Choose between anonymous and tuple types
-      href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-    - name: Format numbers, dates, other types
+    - name: Framework libraries
+      href: ../standard/framework-libraries.md
+    - name: Class library overview
+      href: ../standard/class-library-overview.md
+  - name: Anonymous and tuple types
+    href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
+  - name: Generic types
+    items:
+    - name: Overview
+      href: ../standard/generics/index.md
+    - name: Intro to generic types
+      href: ../standard/generics.md
+    - name: Generic collections in .NET
+      href: ../standard/generics/collections.md
+    - name: Generic delegates for manipulating arrays and lists
+      href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
+    - name: Generic interfaces
+      href: ../standard/generics/interfaces.md
+    - name: Covariance and contravariance
+      href: ../standard/generics/covariance-and-contravariance.md  
+  - name: Collections and data structures
+    items:
+    - name: Overview
+      href: ../standard/collections/index.md
+      displayName: collections, data structures
+    - name: Select a collection class
+      href: ../standard/collections/selecting-a-collection-class.md
+    - name: Commonly used collection types
+      href: ../standard/collections/commonly-used-collection-types.md
+    - name: When to use generic collections
+      href: ../standard/collections/when-to-use-generic-collections.md
+    - name: Comparisons and sorts within collections
+      href: ../standard/collections/comparisons-and-sorts-within-collections.md
+    - name: Sorted collection types
+      href: ../standard/collections/sorted-collection-types.md
+    - name: Hashtable and Dictionary types
+      href: ../standard/collections/hashtable-and-dictionary-collection-types.md
+    - name: Thread-safe collections
+      href: ../standard/collections/thread-safe/  
+  - name: Delegates and lambdas
+    href: ../standard/delegates-lambdas.md
+  - name: Events
+    items:
+    - name: Overview
+      href: ../standard/events/index.md
+      displayName: events 
+    - name: Raise and consume events
+      href: ../standard/events/how-to-raise-and-consume-events.md
+    - name: Handle multiple events using event properties
+      href: ../standard/events/how-to-handle-multiple-events-using-event-properties.md
+    - name: Consume events in a Web Forms app
+      href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
+    - name: Observer design pattern
       items:
       - name: Overview
-        href: ../standard/base-types/formatting-types.md
-      - name: Standard numeric format strings
-        href: ../standard/base-types/standard-numeric-format-strings.md
-      - name: Custom numeric format strings
-        href: ../standard/base-types/custom-numeric-format-strings.md
-      - name: Standard date and time format strings
-        href: ../standard/base-types/standard-date-and-time-format-strings.md
-      - name: Custom date and time format strings
-        href: ../standard/base-types/custom-date-and-time-format-strings.md
-      - name: Standard TimeSpan format strings
-        href: ../standard/base-types/standard-timespan-format-strings.md
-      - name: Custom TimeSpan format strings
-        href: ../standard/base-types/custom-timespan-format-strings.md
-      - name: Enumeration format strings
-        href: ../standard/base-types/enumeration-format-strings.md
-      - name: Composite formatting
-        href: ../standard/base-types/composite-formatting.md
-      - name: How-tos
-        items:
-        - name: Pad a number with leading zeros
-          href: ../standard/base-types/how-to-pad-a-number-with-leading-zeros.md
-        - name: Extract the day of the week from a date
-          href: ../standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md
-        - name: Use custom numeric format providers
-          href: ../standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md
-        - name: Round-trip date and time values
-          href: ../standard/base-types/how-to-round-trip-date-and-time-values.md
-        - name: Display milliseconds in date and time values
-          href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
-        - name: Display dates in non-Gregorian calendars
-          href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
+        href: ../standard/events/observer-design-pattern.md
+        displayName: Observer design pattern
+      - name: Best practices
+        href: ../standard/events/observer-design-pattern-best-practices.md
+      - name: "How to: Implement a provider"
+        href: ../standard/events/how-to-implement-a-provider.md
+      - name: "How to: Implement an observer"
+        href: ../standard/events/how-to-implement-an-observer.md  
+  - name: Exceptions
+    items:
+    - name: Overview
+      href: ../standard/exceptions/index.md
+      displayName: exceptions
+    - name: Exception class and properties
+      href: ../standard/exceptions/exception-class-and-properties.md
+    - name: How-tos
+      items:
+      - name: Use the try-catch block to catch exceptions
+        href: ../standard/exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md
+      - name: Use specific exceptions in a catch block
+        href: ../standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block.md
+      - name: Explicitly throw exceptions
+        href: ../standard/exceptions/how-to-explicitly-throw-exceptions.md
+      - name: Create user-defined exceptions
+        href: ../standard/exceptions/how-to-create-user-defined-exceptions.md
+      - name: Create user-defined exceptions with localized exception messages
+        href: ../standard/exceptions/how-to-create-localized-exception-messages.md
+      - name: Use finally blocks
+        href: ../standard/exceptions/how-to-use-finally-blocks.md
+    - name: Use user-filtered exception handlers
+      href: ../standard/exceptions/using-user-filtered-exception-handlers.md
+    - name: Handle COM interop exceptions
+      href: ../standard/exceptions/handling-com-interop-exceptions.md
+    - name: Best practices
+      href: ../standard/exceptions/best-practices-for-exceptions.md  
+  - name: Numerics in .NET
+    items:
+    - name: Overview
+      href: ../standard/numerics.md
+    - name: SIMD-enabled types
+      href: ../standard/simd.md
+  - name: Dates, times, and time zones
+    href: ../standard/datetime/
+  - name: Format numbers, dates, other types
+    items:
+    - name: Overview
+      href: ../standard/base-types/formatting-types.md
+    - name: Standard numeric format strings
+      href: ../standard/base-types/standard-numeric-format-strings.md
+    - name: Custom numeric format strings
+      href: ../standard/base-types/custom-numeric-format-strings.md
+    - name: Standard date and time format strings
+      href: ../standard/base-types/standard-date-and-time-format-strings.md
+    - name: Custom date and time format strings
+      href: ../standard/base-types/custom-date-and-time-format-strings.md
+    - name: Standard TimeSpan format strings
+      href: ../standard/base-types/standard-timespan-format-strings.md
+    - name: Custom TimeSpan format strings
+      href: ../standard/base-types/custom-timespan-format-strings.md
+    - name: Enumeration format strings
+      href: ../standard/base-types/enumeration-format-strings.md
+    - name: Composite formatting
+      href: ../standard/base-types/composite-formatting.md
+    - name: How-tos
+      items:
+      - name: Pad a number with leading zeros
+        href: ../standard/base-types/how-to-pad-a-number-with-leading-zeros.md
+      - name: Extract the day of the week from a date
+        href: ../standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md
+      - name: Use custom numeric format providers
+        href: ../standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md
+      - name: Round-trip date and time values
+        href: ../standard/base-types/how-to-round-trip-date-and-time-values.md
+      - name: Display milliseconds in date and time values
+        href: ../standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md
+      - name: Display dates in non-Gregorian calendars
+        href: ../standard/base-types/how-to-display-dates-in-non-gregorian-calendars.md
     - name: Manipulate strings
       items:
       - name: Best practices for using strings
@@ -740,95 +705,27 @@ items:
         href: ../standard/base-types/parsing-datetime.md
       - name: Parse other strings
         href: ../standard/base-types/parsing-other.md
-- name: Exception handling
-  items:
-  - name: Overview
-    href: ../standard/exceptions/index.md
-    displayName: exceptions
-  - name: Exception class and properties
-    href: ../standard/exceptions/exception-class-and-properties.md
-  - name: How-tos
-    items:
-    - name: Use the try-catch block to catch exceptions
-      href: ../standard/exceptions/how-to-use-the-try-catch-block-to-catch-exceptions.md
-    - name: Use specific exceptions in a catch block
-      href: ../standard/exceptions/how-to-use-specific-exceptions-in-a-catch-block.md
-    - name: Explicitly throw exceptions
-      href: ../standard/exceptions/how-to-explicitly-throw-exceptions.md
-    - name: Create user-defined exceptions
-      href: ../standard/exceptions/how-to-create-user-defined-exceptions.md
-    - name: Create user-defined exceptions with localized exception messages
-      href: ../standard/exceptions/how-to-create-localized-exception-messages.md
-    - name: Use finally blocks
-      href: ../standard/exceptions/how-to-use-finally-blocks.md
-  - name: Use user-filtered exception handlers
-    href: ../standard/exceptions/using-user-filtered-exception-handlers.md
-  - name: Handle COM interop exceptions
-    href: ../standard/exceptions/handling-com-interop-exceptions.md
-  - name: Best practices
-    href: ../standard/exceptions/best-practices-for-exceptions.md  
-- name: Memory management
-  items:
-  - name: Clean up unmanaged resources
+  - name: Attributes
     items:
     - name: Overview
-      href: ../standard/garbage-collection/unmanaged.md
-      displayName: unmanaged resources, memory management
-    - name: Implement a Dispose method
-      href: ../standard/garbage-collection/implementing-dispose.md
-      displayName: "using, Dispose, dispose pattern, IDisposable"
-    - name: Implement a DisposeAsync method
-      href: ../standard/garbage-collection/implementing-disposeasync.md
-      displayName: "await using, DisposeAsync, async dispose pattern, IAsyncDisposable"
-    - name: Use objects that implement IDisposable
-      href: ../standard/garbage-collection/using-objects.md
-  - name: Garbage collection
-    items:
-    - name: Overview
-      href: ../standard/garbage-collection/index.md
-      displayName: garbage collection
-    - name: Fundamentals
-      href: ../standard/garbage-collection/fundamentals.md
-    - name: Workstation and server GC
-      href: ../standard/garbage-collection/workstation-server-gc.md
-    - name: Background GC
-      href: ../standard/garbage-collection/background-gc.md
-    - name: The large object heap
-      href: ../standard/garbage-collection/large-object-heap.md
-    - name: Garbage collection and performance
-      href: ../standard/garbage-collection/performance.md
-    - name: Induced collections
-      href: ../standard/garbage-collection/induced.md
-    - name: Latency modes
-      href: ../standard/garbage-collection/latency.md
-    - name: Optimization for shared web hosting
-      href: ../standard/garbage-collection/optimization-for-shared-web-hosting.md
-    - name: Garbage collection notifications
-      href: ../standard/garbage-collection/notifications.md
-    - name: Application domain resource monitoring
-      href: ../standard/garbage-collection/app-domain-resource-monitoring.md
-    - name: Weak references
-      href: ../standard/garbage-collection/weak-references.md  
-- name: Generic types
+      href: ../standard/attributes/index.md
+      displayName: attributes
+    - name: Apply attributes
+      href: ../standard/attributes/applying-attributes.md
+    - name: Write custom attributes
+      href: ../standard/attributes/writing-custom-attributes.md
+    - name: Retrieve information stored in attributes
+      href: ../standard/attributes/retrieving-information-stored-in-attributes.md  
+- name: Microsoft Extensions 
   items:
-  - name: Overview
-    href: ../standard/generics/index.md
-  - name: Intro to generic types
-    href: ../standard/generics.md
-  - name: Generic collections in .NET
-    href: ../standard/generics/collections.md
-  - name: Generic delegates for manipulating arrays and lists
-    href: ../standard/generics/delegates-for-manipulating-arrays-and-lists.md
-  - name: Generic interfaces
-    href: ../standard/generics/interfaces.md
-  - name: Covariance and contravariance
-    href: ../standard/generics/covariance-and-contravariance.md  
-- name: Delegates and lambdas
-  href: ../standard/delegates-lambdas.md
-- name: LINQ
-  href: ../standard/using-linq.md
-- name: Common type system & common language specification
-  href: ../standard/common-type-system.md
+- name: Data access 
+  items:
+  - name: Microsoft.Data.Sqlite
+    href: ../standard/data/sqlite/
+  - name: XML documents and data
+    href: ../standard/data/xml/
+  - name: LINQ
+    href: ../standard/using-linq.md
 - name: Parallel processing, concurrency, and async
   items:
   - name: Overview
@@ -982,100 +879,112 @@ items:
       href: ../standard/parallel-programming/for-further-reading-parallel-programming.md    
   - name: Threading
     href: ../standard/threading/
-- name: Memory and span-related types
+
+
+
+
+
+
+
+
+
+
+- name: Serialization
   items:
   - name: Overview
-    href: ../standard/memory-and-spans/index.md
-  - name: Memory<T> and Span<T> usage guidelines
-    href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
-- name: Native interoperability
-  items:
-  - name: Overview
-    href: ../standard/native-interop/index.md
-    displayName: Native interop
-  - name: P/Invoke
-    href: ../standard/native-interop/pinvoke.md
-  - name: Type marshaling
-    href: ../standard/native-interop/type-marshaling.md
-  - name: Customize structure marshaling
-    href: ../standard/native-interop/customize-struct-marshaling.md
-  - name: Customize parameter marshaling
-    href: ../standard/native-interop/customize-parameter-marshaling.md
-  - name: Interop guidance
-    href: ../standard/native-interop/best-practices.md
-  - name: Charsets and marshaling
-    href: ../standard/native-interop/charset.md
-  - name: COM interop
+    href: ../standard/serialization/index.md
+  - name: JSON serialization
     items:
     - name: Overview
-      href: ../standard/native-interop/cominterop.md
-      displayName: COM interop
-    - name: COM wrappers
+      href: ../standard/serialization/system-text-json-overview.md
+      displayName: json serialization
+    - name: How to serialize and deserialize JSON
+      href: ../standard/serialization/system-text-json-how-to.md
+    - name: How to write custom converters
+      href: ../standard/serialization/system-text-json-converters-how-to.md
+    - name: How to migrate from Newtonsoft.Json
+      href: ../standard/serialization/system-text-json-migrate-from-newtonsoft-how-to.md
+  - name: Binary serialization
+    items:
+    - name: Overview
+      href: ../standard/serialization/binary-serialization.md
+      displayName: binary serialization
+    - name: BinaryFormatter security guide
+      href: ../standard/serialization/binaryformatter-security-guide.md
+    - name: Serialization concepts
+      href: ../standard/serialization/serialization-concepts.md
+    - name: Basic serialization
+      href: ../standard/serialization/basic-serialization.md
+    - name: Selective serialization
+      href: ../standard/serialization/selective-serialization.md
+    - name: Custom serialization
+      href: ../standard/serialization/custom-serialization.md
+    - name: Steps in the serialization process
+      href: ../standard/serialization/steps-in-the-serialization-process.md
+    - name: Version-tolerant serialization
+      href: ../standard/serialization/version-tolerant-serialization.md
+    - name: Serialization guidelines
+      href: ../standard/serialization/serialization-guidelines.md
+    - name: "How to: Chunk serialized data"
+      href: ../standard/serialization/how-to-chunk-serialized-data.md
+    - name: "How to: Determine if a .NET Standard object is serializable"
+      href: ../standard/serialization/how-to-determine-if-netstandard-object-is-serializable.md
+    - name: Sample
+      href: ../standard/serialization/basic-serialization-technology-sample.md
+  - name: XML and SOAP serialization
+    items:
+    - name: Overview
+      href: ../standard/serialization/xml-and-soap-serialization.md
+    - name: XML serialization in depth
+      href: ../standard/serialization/introducing-xml-serialization.md
+    - name: Examples
+      href: ../standard/serialization/examples-of-xml-serialization.md
+    - name: The XML Schema Definition tool
+      href: ../standard/serialization/the-xml-schema-definition-tool-and-xml-serialization.md
+    - name: Control XML serialization using attributes
+      href: ../standard/serialization/controlling-xml-serialization-using-attributes.md
+    - name: Attributes that control XML serialization
+      href: ../standard/serialization/attributes-that-control-xml-serialization.md
+    - name: XML serialization with XML Web Services
+      href: ../standard/serialization/xml-serialization-with-xml-web-services.md
+    - name: Attributes that control encoded SOAP serialization
+      href: ../standard/serialization/attributes-that-control-encoded-soap-serialization.md
+    - name: How-tos
       items:
-      - name: Overview
-        href: ../standard/native-interop/com-wrappers.md
-        displayName: COM wrappers
-      - name: Runtime-callable wrapper
-        href: ../standard/native-interop/runtime-callable-wrapper.md
-      - name: COM-callable wrapper
-        href: ../standard/native-interop/com-callable-wrapper.md
-    - name: Qualifying .NET types for COM interop
-      href: ../standard/native-interop/qualify-net-types-for-interoperation.md
-  - name: Apply interop attributes
-    href: ../standard/native-interop/apply-interop-attributes.md
-  - name: Exceptions
-    href: ../standard/native-interop/exceptions-interoperability.md
-- name: Collections and data structures
-  items:
-  - name: Overview
-    href: ../standard/collections/index.md
-    displayName: collections, data structures
-  - name: Select a collection class
-    href: ../standard/collections/selecting-a-collection-class.md
-  - name: Commonly used collection types
-    href: ../standard/collections/commonly-used-collection-types.md
-  - name: When to use generic collections
-    href: ../standard/collections/when-to-use-generic-collections.md
-  - name: Comparisons and sorts within collections
-    href: ../standard/collections/comparisons-and-sorts-within-collections.md
-  - name: Sorted collection types
-    href: ../standard/collections/sorted-collection-types.md
-  - name: Hashtable and Dictionary types
-    href: ../standard/collections/hashtable-and-dictionary-collection-types.md
-  - name: Thread-safe collections
-    href: ../standard/collections/thread-safe/  
-- name: Numerics in .NET
-  items:
-  - name: Overview
-    href: ../standard/numerics.md
-  - name: SIMD-enabled types
-    href: ../standard/simd.md
-- name: Dates, times, and time zones
-  href: ../standard/datetime/
-- name: Events
-  items:
-  - name: Overview
-    href: ../standard/events/index.md
-    displayName: events 
-  - name: Raise and consume events
-    href: ../standard/events/how-to-raise-and-consume-events.md
-  - name: Handle multiple events using event properties
-    href: ../standard/events/how-to-handle-multiple-events-using-event-properties.md
-  - name: Consume events in a Web Forms app
-    href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
-  - name: Observer design pattern
-    items:
-    - name: Overview
-      href: ../standard/events/observer-design-pattern.md
-      displayName: Observer design pattern
-    - name: Best practices
-      href: ../standard/events/observer-design-pattern-best-practices.md
-    - name: "How to: Implement a provider"
-      href: ../standard/events/how-to-implement-a-provider.md
-    - name: "How to: Implement an observer"
-      href: ../standard/events/how-to-implement-an-observer.md  
-- name: Create console apps
-  href: ../standard/building-console-apps.md
+      - name: Serialize an object
+        href: ../standard/serialization/how-to-serialize-an-object.md
+      - name: Deserialize an object
+        href: ../standard/serialization/how-to-deserialize-an-object.md
+      - name: Use the XML Schema Definition tool to generate classes and XML schema documents
+        href: ../standard/serialization/xml-schema-def-tool-gen.md
+      - name: Control serialization of derived classes
+        href: ../standard/serialization/how-to-control-serialization-of-derived-classes.md
+      - name: Specify an alternate element name for an XML stream
+        href: ../standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md
+      - name: Qualify XML element and XML attribute names
+        href: ../standard/serialization/how-to-qualify-xml-element-and-xml-attribute-names.md
+      - name: Serialize an object as a SOAP-encoded XML stream
+        href: ../standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md
+      - name: Override encoded SOAP XML serialization
+        href: ../standard/serialization/how-to-override-encoded-soap-xml-serialization.md
+    - name: XML serialization elements
+      items:
+      - name: system.xml.serialization
+        href: ../standard/serialization/system-xml-serialization-element.md
+      - name: dateTimeSerialization
+        href: ../standard/serialization/datetimeserialization-element.md
+      - name: schemaImporterExtensions
+        href: ../standard/serialization/schemaimporterextensions-element.md
+      - name: add element for schemaImporterExtensions
+        href: ../standard/serialization/add-element-for-schemaimporterextensions.md
+      - name: xmlSerializer
+        href: ../standard/serialization/xmlserializer-element.md
+    - name: Tools
+      items:
+      - name: XML Serializer Generator tool (Sgen.exe)
+        href: ../standard/serialization/xml-serializer-generator-tool-sgen-exe.md
+      - name: XML Schema Definition tool (Xsd.exe)
+        href: ../standard/serialization/xml-schema-definition-tool-xsd-exe.md
 - name: File and stream I/O
   items:
   - name: Overview
@@ -1147,121 +1056,295 @@ items:
     href: ../standard/io/buffers.md
   - name: Memory-mapped files
     href: ../standard/io/memory-mapped-files.md  
-- name: Globalization and localization
-  href: ../standard/globalization-localization/
-- name: Attributes
+- name: Unit testing
+  displayName: xUnit,NUnit,MSTest,unit testing,testing
   items:
   - name: Overview
-    href: ../standard/attributes/index.md
-    displayName: attributes
-  - name: Apply attributes
-    href: ../standard/attributes/applying-attributes.md
-  - name: Write custom attributes
-    href: ../standard/attributes/writing-custom-attributes.md
-  - name: Retrieve information stored in attributes
-    href: ../standard/attributes/retrieving-information-stored-in-attributes.md  
-- name: Framework design guidelines
+    href: ../core/testing/index.md
+  - name: Unit testing best practices
+    href: ../core/testing/unit-testing-best-practices.md
+  - name: xUnit
+    items:
+    - name: C# unit testing
+      href: ../core/testing/unit-testing-with-dotnet-test.md
+    - name: F# unit testing
+      href: ../core/testing/unit-testing-fsharp-with-dotnet-test.md
+    - name: VB unit testing
+      href: ../core/testing/unit-testing-visual-basic-with-dotnet-test.md
+  - name: NUnit
+    items:
+    - name: C# unit testing
+      href: ../core/testing/unit-testing-with-nunit.md
+    - name: F# unit testing
+      href: ../core/testing/unit-testing-fsharp-with-nunit.md
+    - name: VB unit testing
+      href: ../core/testing/unit-testing-visual-basic-with-nunit.md
+  - name: MSTest
+    items:
+    - name: C# unit testing
+      href: ../core/testing/unit-testing-with-mstest.md
+    - name: F# unit testing
+      href: ../core/testing/unit-testing-fsharp-with-mstest.md
+    - name: VB unit testing
+      href: ../core/testing/unit-testing-visual-basic-with-mstest.md
+  - name: Run selective unit tests
+    href: ../core/testing/selective-unit-tests.md
+  - name: Order unit tests
+    href: ../core/testing/order-unit-tests.md
+  - name: Unit test code coverage
+    href: ../core/testing/unit-testing-code-coverage.md
+  - name: Unit test published output
+    href: ../core/testing/unit-testing-published-output.md
+  - name: Live unit test .NET Core projects with Visual Studio
+    href: ../core//visualstudio/test/live-unit-testing-start
+- name: Security
+  href: ../standard/security/
+- name: Advanced topics
   items:
-  - name: Overview
-    href: ../standard/design-guidelines/index.md
-  - name: Naming guidelines
-    href: ../standard/design-guidelines/naming-guidelines.md
+  - name: Performance
     items:
-    - name: Capitalization conventions
-      href: ../standard/design-guidelines/capitalization-conventions.md
-    - name: General naming conventions
-      href: ../standard/design-guidelines/general-naming-conventions.md
-    - name: Names of assemblies and DLLs
-      href: ../standard/design-guidelines/names-of-assemblies-and-dlls.md
-    - name: Names of namespaces
-      href: ../standard/design-guidelines/names-of-namespaces.md
-    - name: Names of classes, structs, and interfaces
-      href: ../standard/design-guidelines/names-of-classes-structs-and-interfaces.md
-    - name: Names of type members
-      href: ../standard/design-guidelines/names-of-type-members.md
-    - name: Naming parameters
-      href: ../standard/design-guidelines/naming-parameters.md
-    - name: Naming resources
-      href: ../standard/design-guidelines/naming-resources.md
-  - name: Type design guidelines
-    href: ../standard/design-guidelines/type.md
+    - name: Memory management
+      items:
+      - name: What is "managed code"?
+        href: ../standard/managed-code.md
+      - name: Automatic memory management
+        href: ../standard/automatic-memory-management.md
+      - name: Clean up unmanaged resources
+        items:
+        - name: Overview
+          href: ../standard/garbage-collection/unmanaged.md
+          displayName: unmanaged resources, memory management
+        - name: Implement a Dispose method
+          href: ../standard/garbage-collection/implementing-dispose.md
+          displayName: "using, Dispose, dispose pattern, IDisposable"
+        - name: Implement a DisposeAsync method
+          href: ../standard/garbage-collection/implementing-disposeasync.md
+          displayName: "await using, DisposeAsync, async dispose pattern, IAsyncDisposable"
+        - name: Use objects that implement IDisposable
+          href: ../standard/garbage-collection/using-objects.md
+      - name: Garbage collection
+        items:
+        - name: Overview
+          href: ../standard/garbage-collection/index.md
+          displayName: garbage collection
+        - name: Fundamentals
+          href: ../standard/garbage-collection/fundamentals.md
+        - name: Workstation and server GC
+          href: ../standard/garbage-collection/workstation-server-gc.md
+        - name: Background GC
+          href: ../standard/garbage-collection/background-gc.md
+        - name: The large object heap
+          href: ../standard/garbage-collection/large-object-heap.md
+        - name: Garbage collection and performance
+          href: ../standard/garbage-collection/performance.md
+        - name: Induced collections
+          href: ../standard/garbage-collection/induced.md
+        - name: Latency modes
+          href: ../standard/garbage-collection/latency.md
+        - name: Optimization for shared web hosting
+          href: ../standard/garbage-collection/optimization-for-shared-web-hosting.md
+        - name: Garbage collection notifications
+          href: ../standard/garbage-collection/notifications.md
+        - name: Application domain resource monitoring
+          href: ../standard/garbage-collection/app-domain-resource-monitoring.md
+        - name: Weak references
+          href: ../standard/garbage-collection/weak-references.md  
+    - name: Memory and span-related types
+      items:
+      - name: Overview
+        href: ../standard/memory-and-spans/index.md
+      - name: Memory<T> and Span<T> usage guidelines
+        href: ../standard/memory-and-spans/memory-t-usage-guidelines.md
+  - name: Globalization and localization
+    href: ../standard/globalization-localization/
+  - name: Native interoperability
     items:
-    - name: Choose between class and struct
-      href: ../standard/design-guidelines/choosing-between-class-and-struct.md
-    - name: Abstract class design
-      href: ../standard/design-guidelines/abstract-class.md
-    - name: Static class design
-      href: ../standard/design-guidelines/static-class.md
-    - name: Interface design
-      href: ../standard/design-guidelines/interface.md
-    - name: Struct design
-      href: ../standard/design-guidelines/struct.md
-    - name: Enum design
-      href: ../standard/design-guidelines/enum.md
-    - name: Nested types
-      href: ../standard/design-guidelines/nested-types.md
-  - name: Member design guidelines
-    href: ../standard/design-guidelines/member.md
+    - name: Overview
+      href: ../standard/native-interop/index.md
+      displayName: Native interop
+    - name: P/Invoke
+      href: ../standard/native-interop/pinvoke.md
+    - name: Type marshaling
+      href: ../standard/native-interop/type-marshaling.md
+    - name: Customize structure marshaling
+      href: ../standard/native-interop/customize-struct-marshaling.md
+    - name: Customize parameter marshaling
+      href: ../standard/native-interop/customize-parameter-marshaling.md
+    - name: Interop guidance
+      href: ../standard/native-interop/best-practices.md
+    - name: Charsets and marshaling
+      href: ../standard/native-interop/charset.md
+    - name: Expose .NET Core components to COM
+      href: ../core/native-interop/expose-components-to-com.md
+    - name: Host .NET Core from native code
+      href: ../core/tutorials/netcore-hosting.md
+    - name: COM interop
+      items:
+      - name: Overview
+        href: ../standard/native-interop/cominterop.md
+        displayName: COM interop
+      - name: COM wrappers
+        items:
+        - name: Overview
+          href: ../standard/native-interop/com-wrappers.md
+          displayName: COM wrappers
+        - name: Runtime-callable wrapper
+          href: ../standard/native-interop/runtime-callable-wrapper.md
+        - name: COM-callable wrapper
+          href: ../standard/native-interop/com-callable-wrapper.md
+      - name: Qualifying .NET types for COM interop
+        href: ../standard/native-interop/qualify-net-types-for-interoperation.md
+    - name: Apply interop attributes
+      href: ../standard/native-interop/apply-interop-attributes.md
+    - name: Exceptions
+      href: ../standard/native-interop/exceptions-interoperability.md
+  - name: .NET Core distribution packaging
+    href: ../core/distribution-packaging.md
+  - name: Open-source library guidance
+    href: ../standard/library-guidance/
+  - name: Framework design guidelines
     items:
-    - name: Member overloading
-      href: ../standard/design-guidelines/member-overloading.md
-    - name: Property design
-      href: ../standard/design-guidelines/property.md
-    - name: Constructor design
-      href: ../standard/design-guidelines/constructor.md
-    - name: Event design
-      href: ../standard/design-guidelines/event.md
-    - name: Field design
-      href: ../standard/design-guidelines/field.md
-    - name: Extension methods
-      href: ../standard/design-guidelines/extension-methods.md
-    - name: Operator overloads
-      href: ../standard/design-guidelines/operator-overloads.md
-    - name: Parameter design
-      href: ../standard/design-guidelines/parameter-design.md
-  - name: Design for extensibility
-    href: ../standard/design-guidelines/designing-for-extensibility.md
+    - name: Overview
+      href: ../standard/design-guidelines/index.md
+    - name: Naming guidelines
+      href: ../standard/design-guidelines/naming-guidelines.md
+      items:
+      - name: Capitalization conventions
+        href: ../standard/design-guidelines/capitalization-conventions.md
+      - name: General naming conventions
+        href: ../standard/design-guidelines/general-naming-conventions.md
+      - name: Names of assemblies and DLLs
+        href: ../standard/design-guidelines/names-of-assemblies-and-dlls.md
+      - name: Names of namespaces
+        href: ../standard/design-guidelines/names-of-namespaces.md
+      - name: Names of classes, structs, and interfaces
+        href: ../standard/design-guidelines/names-of-classes-structs-and-interfaces.md
+      - name: Names of type members
+        href: ../standard/design-guidelines/names-of-type-members.md
+      - name: Naming parameters
+        href: ../standard/design-guidelines/naming-parameters.md
+      - name: Naming resources
+        href: ../standard/design-guidelines/naming-resources.md
+    - name: Type design guidelines
+      href: ../standard/design-guidelines/type.md
+      items:
+      - name: Choose between class and struct
+        href: ../standard/design-guidelines/choosing-between-class-and-struct.md
+      - name: Abstract class design
+        href: ../standard/design-guidelines/abstract-class.md
+      - name: Static class design
+        href: ../standard/design-guidelines/static-class.md
+      - name: Interface design
+        href: ../standard/design-guidelines/interface.md
+      - name: Struct design
+        href: ../standard/design-guidelines/struct.md
+      - name: Enum design
+        href: ../standard/design-guidelines/enum.md
+      - name: Nested types
+        href: ../standard/design-guidelines/nested-types.md
+    - name: Member design guidelines
+      href: ../standard/design-guidelines/member.md
+      items:
+      - name: Member overloading
+        href: ../standard/design-guidelines/member-overloading.md
+      - name: Property design
+        href: ../standard/design-guidelines/property.md
+      - name: Constructor design
+        href: ../standard/design-guidelines/constructor.md
+      - name: Event design
+        href: ../standard/design-guidelines/event.md
+      - name: Field design
+        href: ../standard/design-guidelines/field.md
+      - name: Extension methods
+        href: ../standard/design-guidelines/extension-methods.md
+      - name: Operator overloads
+        href: ../standard/design-guidelines/operator-overloads.md
+      - name: Parameter design
+        href: ../standard/design-guidelines/parameter-design.md
+    - name: Design for extensibility
+      href: ../standard/design-guidelines/designing-for-extensibility.md
+      items:
+      - name: Unsealed classes
+        href: ../standard/design-guidelines/unsealed-classes.md
+      - name: Protected members
+        href: ../standard/design-guidelines/protected-members.md
+      - name: Events and callbacks
+        href: ../standard/design-guidelines/events-and-callbacks.md
+      - name: Virtual members
+        href: ../standard/design-guidelines/virtual-members.md
+      - name: Abstractions (abstract types and interfaces)
+        href: ../standard/design-guidelines/abstractions-abstract-types-and-interfaces.md
+      - name: Base classes for implementing abstractions
+        href: ../standard/design-guidelines/base-classes-for-implementing-abstractions.md
+      - name: Sealing
+        href: ../standard/design-guidelines/sealing.md
+    - name: Exception design guidelines
+      href: ../standard/design-guidelines/exceptions.md
+      items:
+      - name: Exception throwing
+        href: ../standard/design-guidelines/exception-throwing.md
+      - name: Use standard exception types
+        href: ../standard/design-guidelines/using-standard-exception-types.md
+      - name: Exceptions and performance
+        href: ../standard/design-guidelines/exceptions-and-performance.md
+    - name: Usage guidelines
+      href: ../standard/design-guidelines/usage-guidelines.md
+      items:
+      - name: Arrays
+        href: ../standard/design-guidelines/arrays.md
+      - name: Attributes
+        href: ../standard/design-guidelines/attributes.md
+      - name: Collections
+        href: ../standard/design-guidelines/guidelines-for-collections.md
+      - name: Serialization
+        href: ../standard/design-guidelines/serialization.md
+      - name: System.Xml usage
+        href: ../standard/design-guidelines/system-xml-usage.md
+      - name: Equality operators
+        href: ../standard/design-guidelines/equality-operators.md
+    - name: Common design patterns
+      href: ../standard/design-guidelines/common-design-patterns.md
+      items:
+      - name: Dependency properties
+        href: ../standard/design-guidelines/dependency-properties.md  
+- name: Migration guide
+  items: 
+  - name: Breaking changes
+    displayName: app compatibility
+    href: ../core/compatibility/
+  - name: Migration
     items:
-    - name: Unsealed classes
-      href: ../standard/design-guidelines/unsealed-classes.md
-    - name: Protected members
-      href: ../standard/design-guidelines/protected-members.md
-    - name: Events and callbacks
-      href: ../standard/design-guidelines/events-and-callbacks.md
-    - name: Virtual members
-      href: ../standard/design-guidelines/virtual-members.md
-    - name: Abstractions (abstract types and interfaces)
-      href: ../standard/design-guidelines/abstractions-abstract-types-and-interfaces.md
-    - name: Base classes for implementing abstractions
-      href: ../standard/design-guidelines/base-classes-for-implementing-abstractions.md
-    - name: Sealing
-      href: ../standard/design-guidelines/sealing.md
-  - name: Exception design guidelines
-    href: ../standard/design-guidelines/exceptions.md
+    - name: .NET Core 2.0 to 2.1
+      href: ../core/migration/20-21.md
+    - name: Migrate from project.json
+      href: ../core/migration/index.md
+    - name: Map between project.json and csproj
+      href: ../core/tools/project-json-to-csproj.md
+    - name: Changes in CLI overview
+      href: ../core/tools/cli-msbuild-architecture.md
+    - name: Additions to the csproj format
+      href: ../core/tools/csproj.md
+    - name: Migrate from DNX
+      href: ../core/migration/from-dnx.md
+  - name: Port from .NET Framework
     items:
-    - name: Exception throwing
-      href: ../standard/design-guidelines/exception-throwing.md
-    - name: Use standard exception types
-      href: ../standard/design-guidelines/using-standard-exception-types.md
-    - name: Exceptions and performance
-      href: ../standard/design-guidelines/exceptions-and-performance.md
-  - name: Usage guidelines
-    href: ../standard/design-guidelines/usage-guidelines.md
-    items:
-    - name: Arrays
-      href: ../standard/design-guidelines/arrays.md
-    - name: Attributes
-      href: ../standard/design-guidelines/attributes.md
-    - name: Collections
-      href: ../standard/design-guidelines/guidelines-for-collections.md
-    - name: Serialization
-      href: ../standard/design-guidelines/serialization.md
-    - name: System.Xml usage
-      href: ../standard/design-guidelines/system-xml-usage.md
-    - name: Equality operators
-      href: ../standard/design-guidelines/equality-operators.md
-  - name: Common design patterns
-    href: ../standard/design-guidelines/common-design-patterns.md
-    items:
-    - name: Dependency properties
-      href: ../standard/design-guidelines/dependency-properties.md  
+    - name: Overview
+      href: ../core/porting/index.md
+    - name: Analyze third-party dependencies
+      href: ../core/porting/third-party-deps.md
+    - name: Port libraries
+      href: ../core/porting/libraries.md
+    - name: Organize projects for .NET Core
+      href: ../core/porting/project-structure.md
+    - name: Unavailable technologies
+      href: ../core/porting/net-framework-tech-unavailable.md
+    - name: Tools
+      href: ../core/porting/tools.md
+    - name: Use the Windows Compatibility Pack
+      href: ../core/porting/windows-compat-pack.md
+    - name: Port Windows Forms projects
+      href: ../core/porting/winforms.md
+    - name: Port WPF projects
+      href: ../core/../desktop-wpf/migration/convert-project-from-net-framework.md
+    - name: Port C++/CLI projects
+      href: ../core/porting/cpp-cli.md

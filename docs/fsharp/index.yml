@@ -77,3 +77,10 @@ landingContent:
             url: language-reference/functions/index.md
           - text: "F# types"
             url: language-reference/fsharp-types.md
+
+  - title: "F# Core Library reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "FSharp.Core API reference"
+            url: aka.ms/fsharp-core-reference

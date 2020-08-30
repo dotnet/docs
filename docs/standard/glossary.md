@@ -163,7 +163,7 @@ A cross-platform, high-performance, open-source implementation of .NET. Includes
 
 Earlier versions of this .NET implementation are known as .NET Core. .NET 5.0 is the next version following .NET Core 3.1. Version 4 was skipped to avoid confusing this newer implementation of .NET with the older implementation that is known as [.NET Framework](#net-framework). The current version of .NET Framework is 4.8.
 
-See [.NET](../core/index.yml).
+See [.NET fundamentals](../fundamentals/index.yml).
 
 ## .NET CLI
 
@@ -288,8 +288,7 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 
 ## See also
 
-- [.NET Guide](index.yml)
+- [.NET fundamentals](../fundamentals/index.yml)
 - [.NET Framework Guide](../framework/index.yml)
-- [.NET Core](../core/index.yml)
 - [ASP.NET Overview](/aspnet/index#pivot=aspnet)
 - [ASP.NET Core Overview](/aspnet/index#pivot=core)

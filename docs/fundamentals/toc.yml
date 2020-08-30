@@ -58,7 +58,7 @@ items:
   - name: Introduction to .NET Core
     href: ../core/introduction.md
   - name: .NET Core overview
-    href: ../core/about.md
+    href: ../core/introduction.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
   - name: What's new in .NET Standard
@@ -85,10 +85,10 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio.md
         displayName: tutorials, visual studio, vs
       - name: Install and use a package
-        href: ../core//nuget/quickstart/install-and-use-a-package-in-visual-studio
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio
         displayName: tutorials, visual studio, vs
       - name: Create and publish a package
-        href: ../core//nuget/quickstart/create-and-publish-a-package-using-visual-studio
+        href: /nuget/quickstart/create-and-publish-a-package-using-visual-studio
         displayName: tutorials, visual studio, vs
     - name: Use Visual Studio Code
       items:
@@ -108,10 +108,10 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio-code.md
         displayName: tutorials, visual studio code, vs code
       - name: Install and use a package
-        href: ../core//nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
+        href: /nuget/quickstart/install-and-use-a-package-using-the-dotnet-cli
         displayName: tutorials, cli
       - name: Create and publish a package
-        href: ../core//nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
         displayName: tutorials
     - name: Use Visual Studio for Mac
       items:
@@ -131,10 +131,10 @@ items:
         href: ../core/tutorials/testing-library-with-visual-studio-mac.md
         displayName: tutorials, visual studio for mac, vs for mac
       - name: Install and use a package
-        href: ../core//nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
+        href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
         displayName: tutorials, visual studio for mac, vs for mac
       - name: Create and publish a package
-        href: ../core//nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
+        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
         displayName: tutorials
     - name: Advanced topics
       items:
@@ -438,7 +438,7 @@ items:
       - name: Containerize a .NET Core app
         href: ../core/docker/build-container.md
       - name: Container tools in Visual Studio
-        href: ../core//visualstudio/containers/overview
+        href: /visualstudio/containers/overview
   - name: MSBuild and project files
     items:
     - name: Project SDKs
@@ -450,9 +450,9 @@ items:
         - name: Microsoft.NET.Sdk
           href: ../core/project-sdk/msbuild-props.md
         - name: Microsoft.NET.Sdk.Web
-          href: ../core//aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
         - name: Microsoft.NET.Sdk.Razor
-          href: ../core//aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Target frameworks
       href: ../standard/frameworks.md
     - name: Additions to the csproj format
@@ -1082,7 +1082,7 @@ items:
   - name: Unit test published output
     href: ../core/testing/unit-testing-published-output.md
   - name: Live unit test .NET Core projects with Visual Studio
-    href: ../core//visualstudio/test/live-unit-testing-start
+    href: /visualstudio/test/live-unit-testing-start
 - name: Security
   href: ../standard/security/
 - name: Advanced topics

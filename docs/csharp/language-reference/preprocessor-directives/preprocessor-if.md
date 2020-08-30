@@ -1,4 +1,5 @@
 ---
+description: "#if preprocessor directive - C# Reference"
 title: "#if preprocessor directive - C# Reference"
 ms.date: 10/27/2019
 f1_keywords: 

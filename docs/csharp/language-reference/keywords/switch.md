@@ -1,4 +1,5 @@
 ---
+description: "switch (C# reference)"
 title: C# switch statement
 ms.date: 04/09/2019
 f1_keywords:

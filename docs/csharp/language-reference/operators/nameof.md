@@ -1,4 +1,5 @@
 ---
+description: "nameof expression - C# reference"
 title: "nameof expression - C# reference"
 ms.date: 04/23/2020
 f1_keywords:

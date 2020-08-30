@@ -1,4 +1,5 @@
 ---
+description: "async - C# Reference"
 title: "async - C# Reference"
 ms.date: 05/22/2017
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "#define - C# Reference"
 title: "#define - C# Reference"
 ms.date: 06/30/2018
 f1_keywords: 

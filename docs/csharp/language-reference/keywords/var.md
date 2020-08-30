@@ -1,4 +1,5 @@
 ---
+description: "var - C# Reference"
 title: "var - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 

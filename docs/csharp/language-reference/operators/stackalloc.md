@@ -1,4 +1,5 @@
 ---
+description: "stackalloc expression - C# reference"
 title: "stackalloc expression - C# reference"
 ms.date: 03/13/2020
 f1_keywords: 

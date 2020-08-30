@@ -155,7 +155,7 @@ The umbrella term for [.NET Standard](#net-standard) and all [.NET implementatio
 
 When [.NET 5](#net-5-and-later-versions) (currently in preview) is released, it will be the recommended .NET implementation for all new .NET development, and so in some contexts ".NET" will imply ".NET 5 and later versions."
 
-See the [.NET guide](index.yml)
+See [.NET fundamentals](../fundamentals/index.yml)
 
 ## .NET 5 and later versions
 

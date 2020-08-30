@@ -18,14 +18,14 @@ landingContent:
     linkLists:
       - linkListType: download
         links:
-        - text: Download the .NET SDK
+        - text: Download .NET
           url: https://dotnet.microsoft.com/download
       - linkListType: overview
         links:
-          - text: Tour of .NET
-            url: ../standard/tour.md
           - text: What is .NET?
             url: https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet
+          - text: Tour of .NET
+            url: ../standard/tour.md
           - text: Introduction to .NET Core
             url: ../core/introduction.md
           - text: .NET Core overview
@@ -64,10 +64,6 @@ landingContent:
         links:
           - text: Select which .NET Core version to use 
             url: ../core/versions/selection.md
-      - linkListType: download
-        links:
-          - text: .NET Core downloads
-            url: https://dotnet.microsoft.com/download/dotnet-core
       - linkListType: how-to-guide
         links:
           - text: Install .NET Core SDK 

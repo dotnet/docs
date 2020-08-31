@@ -180,7 +180,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 }
 ```
 
-Up to this point, the above code snippet has only shown the example of performing regular Http requests. But the 'magic' comes in the following sections where it shows how all the HTTP requests made by `HttpClient`, can have resilient policies such as retries with exponential backoff, circuit breakers, security features using auth tokens, or even any other custom feature. And all of these can be done just by adding policies and delegating handlers to your registered Typed Clients.
+Up to this point, the above code snippet has only shown the example of performing regular HTTP requests. But the 'magic' comes in the following sections where it shows how all the HTTP requests made by `HttpClient`, can have resilient policies such as retries with exponential backoff, circuit breakers, security features using auth tokens, or even any other custom feature. And all of these can be done just by adding policies and delegating handlers to your registered Typed Clients.
 
 ## Additional resources
 

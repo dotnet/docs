@@ -55,14 +55,10 @@ items:
     href: ../standard/components.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
-  - name: Introduction to .NET Core
-    href: ../core/introduction.md
   - name: .NET Core overview
     href: ../core/introduction.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
-  - name: What's new in .NET Standard
-    href: ../standard/whats-new/whats-new-in-dotnet-standard.md
   - name: .NET glossary
     href: ../standard/glossary.md
   - name: Tutorials
@@ -136,40 +132,9 @@ items:
       - name: Create and publish a package
         href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
         displayName: tutorials
-    - name: Advanced topics
-      items:
-      - name: Unit test an app with xUnit
-        href: ../core/tutorials/testing-with-cli.md
-        displayName: tutorials, cli
-      - name: How to create libraries
-        href: ../core/tutorials/libraries.md
-      - name: Create templates for the CLI
-        items:
-        - name: 1 - Create an item template
-          href: ../core/tutorials/cli-templates-create-item-template.md
-          displayName: tutorials, cli
-        - name: 2 - Create a project template
-          href: ../core/tutorials/cli-templates-create-project-template.md
-          displayName: tutorials, cli
-        - name: 3 - Create a template pack
-          href: ../core/tutorials/cli-templates-create-template-pack.md
-          displayName: tutorials, cli
-      - name: Create tools for the CLI
-        items:
-        - name: 1 - Create a tool
-          displayName: tools, tutorials, cli
-          href: ../core/tools/global-tools-how-to-create.md
-        - name: 2 - Use a global tool
-          displayName: tools, tutorials, cli
-          href: ../core/tools/global-tools-how-to-use.md
-        - name: 3 - Use a local tool
-          href: ../core/tools/local-tools-how-to-use.md
-          displayName: tools, tutorials, cli
-      - name: Create an app with plugins
-        href: ../core/tutorials/creating-app-with-plugin-support.md
     - name: More tutorials
       href: ../core/tutorials/index.md
-- name: What's new in .NET Core
+- name: What's new
   items:
   - name: What's new in .NET Core 3.1
     href: ../core/whats-new/dotnet-core-3-1.md
@@ -181,6 +146,8 @@ items:
     href: ../core/whats-new/dotnet-core-2-1.md
   - name: What's new in .NET Core 2.0
     href: ../core/whats-new/dotnet-core-2-0.md
+  - name: What's new in .NET Standard
+    href: ../standard/whats-new/whats-new-in-dotnet-standard.md
 - name: Environment and runtime components
   items:
   - name: Tools and productivity
@@ -283,6 +250,17 @@ items:
           href: ../core/tools/global-tools.md
         - name: Troubleshoot tools
           href: ../core/tools/troubleshoot-usage-issues.md
+        - name: Create tools for the CLI
+          items:
+          - name: 1 - Create a tool
+            displayName: tools, tutorials, cli
+            href: ../core/tools/global-tools-how-to-create.md
+          - name: 2 - Use a global tool
+            displayName: tools, tutorials, cli
+            href: ../core/tools/global-tools-how-to-use.md
+          - name: 3 - Use a local tool
+            href: ../core/tools/local-tools-how-to-use.md
+            displayName: tools, tutorials, cli
       - name: global.json overview
         href: ../core/tools/global-json.md
       - name: Custom templates
@@ -297,6 +275,19 @@ items:
       href: ../core/deploying/deploy-with-cli.md
     - name: Continuous integration with the CLI
       href: ../core/tools/using-ci-with-cli.md
+    - name: Develop libraries with the CLI
+      href: ../core/tutorials/libraries.md
+    - name: Create templates for the CLI
+      items:
+      - name: 1 - Create an item template
+        href: ../core/tutorials/cli-templates-create-item-template.md
+        displayName: tutorials, cli
+      - name: 2 - Create a project template
+        href: ../core/tutorials/cli-templates-create-project-template.md
+        displayName: tutorials, cli
+      - name: 3 - Create a template pack
+        href: ../core/tutorials/cli-templates-create-template-pack.md
+        displayName: tutorials, cli
     - name: .NET Core additional tools
       items:
       - name: Overview
@@ -1057,6 +1048,9 @@ items:
       href: ../core/testing/unit-testing-fsharp-with-dotnet-test.md
     - name: VB unit testing
       href: ../core/testing/unit-testing-visual-basic-with-dotnet-test.md
+    - name: Organize a project and test with xUnit
+      href: ../core/tutorials/testing-with-cli.md
+      displayName: tutorials, cli
   - name: NUnit
     items:
     - name: C# unit testing
@@ -1336,3 +1330,5 @@ items:
       href: ../core/porting/cpp-cli.md
   - name: Choose between .NET Core and .NET Framework for server apps
     href: ../standard/choosing-core-framework-server.md
+  - name: Create an app with plugins
+    href: ../core/tutorials/creating-app-with-plugin-support.md

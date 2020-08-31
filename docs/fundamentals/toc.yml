@@ -263,22 +263,20 @@ items:
             displayName: tools, tutorials, cli
       - name: global.json overview
         href: ../core/tools/global-json.md
-      - name: Custom templates
-        href: ../core/tools/custom-templates.md
       - name: Telemetry
         href: ../core/tools/telemetry.md
       - name: Elevated access
         href: ../core/tools/elevated-access.md
       - name: Enable Tab completion
         href: ../core/tools/enable-tab-autocomplete.md
-    - name: Publish apps with the CLI
-      href: ../core/deploying/deploy-with-cli.md
     - name: Continuous integration with the CLI
       href: ../core/tools/using-ci-with-cli.md
     - name: Develop libraries with the CLI
       href: ../core/tutorials/libraries.md
     - name: Create templates for the CLI
       items:
+      - name: Custom templates
+        href: ../core/tools/custom-templates.md
       - name: 1 - Create an item template
         href: ../core/tutorials/cli-templates-create-item-template.md
         displayName: tutorials, cli
@@ -410,6 +408,8 @@ items:
       href: ../core/deploying/index.md
     - name: Deploy apps with Visual Studio
       href: ../core/deploying/deploy-with-vs.md
+    - name: Publish apps with the CLI
+      href: ../core/deploying/deploy-with-cli.md
     - name: Create a NuGet package with the CLI
       href: ../core/deploying/creating-nuget-packages.md
     - name: Self-contained deployment runtime roll forward

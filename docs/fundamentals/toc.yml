@@ -333,11 +333,11 @@ items:
     - name: Code analysis
       items:
       - name: Overview
-        href: ../core/../fundamentals/productivity/code-analysis.md
+        href: productivity/code-analysis.md
         displayName: code analysis, analyzers
       - name: Configure rules
-        href: ../core/../fundamentals/productivity/configure-code-analysis-rules.md
-      - name: Analyzers
+        href: productivity/configure-code-analysis-rules.md
+      - name: Standalone .NET analyzers
         items:
         - name: Overview
           href: ../standard/analyzers/index.md

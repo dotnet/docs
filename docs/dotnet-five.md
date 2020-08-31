@@ -30,7 +30,7 @@ In addition to all of these key characteristics, .NET 5 is making significant [p
 
 During Microsoft Build - 2020, Scott Hunter and Scott Hanselman presented "The Journey to One .NET".
 
-> [!VIDEO https://channel9.msdn.com/Events/Build/2020/BOD106/player]
+> [!VIDEO <https://channel9.msdn.com/Events/Build/2020/BOD106/player>]
 
 ## .NET release schedule
 

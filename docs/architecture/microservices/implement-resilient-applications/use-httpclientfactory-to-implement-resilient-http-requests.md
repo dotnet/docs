@@ -147,7 +147,7 @@ public class CatalogService : ICatalogService
 
 The Typed Client (`CatalogService` in the example) is activated by DI (Dependency Injection), that means it can accept any registered service in its constructor, in addition to `HttpClient`.
 
-A Typed Client is effectively a transient object, that means a new instance is created each time one is needed. And it will receive a new `HttpClient` instance each time it's constructed. However, the `HttpMessageHandler` objects in the pool are the objects that are reused by multiple `HttpClient` instances.
+A Typed Client is effectively a transient object, that means a new instance is created each time one is needed. It receives a new `HttpClient` instance each time it's constructed. However, the `HttpMessageHandler` objects in the pool are the objects that are reused by multiple `HttpClient` instances.
 
 ### Use your Typed Client classes
 

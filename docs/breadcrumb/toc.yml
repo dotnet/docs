@@ -1,3 +1,4 @@
+items:
 - name: Docs
   tocHref: /
   topicHref: /
@@ -117,9 +118,9 @@
       - name: Managed threading
         tocHref: /dotnet/standard/threading/
         topicHref: /dotnet/standard/threading/index
-    - name: .NET Core guide
-      tocHref: /dotnet/core/
-      topicHref: /dotnet/core/index
+    - name: .NET fundamentals
+      tocHref: /dotnet/fundamentals/
+      topicHref: /dotnet/fundamentals/index
       items:
       - name: Installation guide
         tocHref: /dotnet/core/install/

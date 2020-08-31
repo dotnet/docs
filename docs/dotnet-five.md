@@ -1,7 +1,7 @@
 ---
 title: What is .NET 5
 description: In this article you will learn about .NET 5, a cross platform, and open-source project that convergences .NET framework and .NET Core together.
-ms.date: 08/26/2020
+ms.date: 08/31/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -28,10 +28,6 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 
 In addition to all of these key characteristics, .NET 5 is making significant [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5).
 
-During Microsoft Build - 2020, Scott Hunter and Scott Hanselman presented "The Journey to One .NET".
-
-> [!VIDEO <https://channel9.msdn.com/Events/Build/2020/BOD106/player>]
-
 ## .NET release schedule
 
 .NET has a formal release schedule, where a new major version is planned every November. .NET 5 will not have long-term support (LTS), however; .NET 6 in 2021 will be LTS. As major .NET versions ship, even-numbered releases will receive LTS. Minor releases will occur as needed.
@@ -42,9 +38,13 @@ During Microsoft Build - 2020, Scott Hunter and Scott Hanselman presented "The J
 
 With .NET 5, .NET Standard is being de-emphasized. If you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your target framework moniker (TFM). For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
 
-## What happens to C\#
+## Language updates
 
-C# will move forward in lock-step with .NET releases. Developers writing .NET 5 apps will have access to the latest C# version and features. In other words .NET 5 is paired with C# 9. C# 9 is bringing many new features to the language, here are a few highlights:
+With .NET, the .NET languages are continuing to improve.
+
+### C# updates
+
+C# will move forward in lock-step with .NET releases. Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9. C# 9 brings many new features to the language, here are a few highlights:
 
 - Records: Immutable reference types that behave like value types, and introduce the new `with` keyword into the language.
 - Relational pattern matching: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
@@ -58,15 +58,52 @@ C# will move forward in lock-step with .NET releases. Developers writing .NET 5 
 
 For more information on the available C# 9 features, see [What's new in C# 9](csharp/whats-new/csharp-9.md).
 
-### Source generators
+#### Source generators
 
 In addition to some of the highlighted new C# features, source generators are making their way into developer projects. Source generators allow code that runs during compilation to inspect your program and produce additional files that are compiled together with the rest of your code.
 
 For more information on source generators, see [Introducing C# source generators](https://devblogs.microsoft.com/dotnet/introducing-c-source-generators) and [C# source generator samples](https://devblogs.microsoft.com/dotnet/new-c-source-generator-samples).
 
+### F# updates
+
+F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. Here are several new features of F# 5, for more information, see [Announcing F# 5](https://devblogs.microsoft.com/dotnet/announcing-net-5-0-preview-8).
+
+#### Interpolated strings
+
+Similar to interpolated string in C#, and even JavaScript - F# supports basic string interpolation.
+
+```fsharp
+let name = "David"
+let age = 36
+let message = $"{name} is {age} years old."
+```
+
+In addition to basic string interpolation, there is typed interpolation. With typed interpolation, a given type must match the format specifier.
+
+```fsharp
+let name = "David"
+let age = 36
+let message = $"%s{name} is %d{age} years old."
+```
+
+### Visual Basic updates
+
+Going forward, there is no plan to evolve Visual Basic as a language. This supports language stability and maintains compatibility between the .NET Core and .NET Framework versions of Visual Basic. Future features of .NET that require language changes may not be supported in Visual Basic.
+
+With .NET 5, Visual Basic support is extended to:
+
+- Class library
+- Console
+- Windows Forms
+- Windows Presentation Foundation (WPF)
+- Worker Service
+- ASP.NET Core Web API
+
+For more information, see [Visual Basic support planned for .NET 5](https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0).
+
 ## What happens to Xamarin
 
-As part of the .NET unification, [Xamarin.iOS](/xamarin/ios) and [Xamarin.Android](/xamarin/android) will become part of .NET 6 as .NET for iOS and .NET for Android. Because these bindings are projections of the SDKs shipped from Apple and Google, nothing changes there, however build tooling, target framework monikers, and runtime framework monikers will be updated to match all other .NET 6 workloads. Our commitment to keeping .NET developers up-to-date with the latest mobile SDKs is foundational to .NET MAUI and remains firm. When .NET 6 ships, we expect to ship a final release of Xamarin SDKs in their current form that will be serviced for a year. All modern work will at that time shift to .NET 6.
+As part of the .NET unification, [Xamarin.iOS](/xamarin/ios) and [Xamarin.Android](/xamarin/android) will become part of .NET 6 as .NET for iOS and .NET for Android. Because these bindings are projections of the SDKs shipped from Apple and Google, nothing changes there, however build tooling, target framework monikers, and runtime framework monikers will be updated to match all other .NET 6 workloads. Our commitment to keeping .NET developers up to date with the latest mobile SDKs is foundational to .NET MAUI and remains firm. When .NET 6 is released, the final release of Xamarin SDKs in their current form will also release, and they'll be serviced for a year. All modern work will at that time shift to .NET 6.
 
 [Xamarin.Forms](/xamarin/get-started) will ship a new major version later this year, and continue to ship minor and service releases every 6 weeks through .NET 6 GA in November 2021. The final release of Xamarin.Forms will be serviced for a year after shipping, and all modern work will shift to .NET MAUI.
 
@@ -95,3 +132,7 @@ View body() => new StackLayout
 ```
 
 For more information, see the [.NET MAUI roadmap](https://github.com/dotnet/maui/wiki/Roadmap), and [Introducing .NET MAUI](https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui) article.
+
+## See also
+
+- [The Journey to one .NET](https://channel9.msdn.com/Events/Build/2020/BOD106)

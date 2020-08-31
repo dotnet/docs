@@ -513,7 +513,7 @@ If the data or operations being performed are sensitive, be sure to review the s
 
 You'll find an example of a Blazor WebAssembly app in the [eShopOnWeb reference application](https://github.com/dotnet-architecture/eShopOnWeb), in the BlazorAdmin project. This project is hosted within the eShopOnWeb Web project, and allows users in the Administrators group to manage the items in the store. You can see a screenshot of the application in Figure 8-3.
 
-![eShopOnWeb Catalog Admin Screenshot](./media/image8-3.png)
+![eShopOnWeb Catalog Admin Screenshot](./media/image8-3.jpg)
 
 **Figure 8-3.** eShopOnWeb Catalog Admin Screenshot.
 

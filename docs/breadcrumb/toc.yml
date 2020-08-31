@@ -41,10 +41,61 @@ items:
       - name: Modernizing desktop apps
         tocHref: /dotnet/architecture/modernize-desktop/
         topicHref: /dotnet/architecture/modernize-desktop/index
-    - name: .NET guide
-      tocHref: /dotnet/standard/
-      topicHref: /dotnet/standard/index
+    - name: .NET fundamentals
+      tocHref: /dotnet/fundamentals/
+      topicHref: /dotnet/fundamentals/index
       items:
+      - name: Installation guide
+        tocHref: /dotnet/core/install/
+        topicHref: /dotnet/core/install/index
+      - name: What's new
+        tocHref: /dotnet/core/whats-new/
+        topicHref: /dotnet/core/whats-new/dotnet-core-3-0
+      - name: Breaking changes
+        tocHref: /dotnet/core/compatibility/
+        topicHref: /dotnet/core/compatibility/index
+      - name: Tutorials
+        tocHref: /dotnet/core/tutorials/
+        topicHref: /dotnet/core/tutorials/index
+      - name: Run-time configuration
+        tocHref: /dotnet/core/run-time-config/
+        topicHref: /dotnet/core/run-time-config/index
+      - name: Native interoperability
+        tocHref: /dotnet/core/native-interop/
+        topicHref: /dotnet/core/native-interop/expose-components-to-com
+      - name: Migration
+        tocHref: /dotnet/core/migration/
+        topicHref: /dotnet/core/migration/index
+      - name: Deployment
+        tocHref: /dotnet/core/deploying/
+        topicHref: /dotnet/core/deploying/index
+      - name: Docker
+        tocHref: /dotnet/core/docker/
+        topicHref: /dotnet/core/docker/introduction
+      - name: Diagnostic tools
+        tocHref: /dotnet/core/diagnostics/
+        topicHref: /dotnet/core/diagnostics/index
+      - name: Unit testing
+        tocHref: /dotnet/core/testing/
+        topicHref: /dotnet/core/testing/index
+      - name: Versioning
+        tocHref: /dotnet/core/versions/
+        topicHref: /dotnet/core/versions/index
+      - name: SDK projects
+        tocHref: /dotnet/core/project-sdk/
+        topicHref: /dotnet/core/project-sdk/overview
+      - name: Tools
+        tocHref: /dotnet/core/tools/
+        topicHref: /dotnet/core/tools/index
+      - name: Additional tools
+        tocHref: /dotnet/core/additional-tools/
+        topicHref: /dotnet/core/additional-tools/index
+      - name: Porting
+        tocHref: /dotnet/core/porting/
+        topicHref: /dotnet/core/porting/index
+      - name: Dependency loading
+        tocHref: /dotnet/core/dependency-loading/
+        topicHref: /dotnet/core/dependency-loading/overview
       - name: Assemblies in .NET
         tocHref: /dotnet/standard/assembly
         topicHref: /dotnet/standard/assembly/index
@@ -118,61 +169,6 @@ items:
       - name: Managed threading
         tocHref: /dotnet/standard/threading/
         topicHref: /dotnet/standard/threading/index
-    - name: .NET fundamentals
-      tocHref: /dotnet/fundamentals/
-      topicHref: /dotnet/fundamentals/index
-      items:
-      - name: Installation guide
-        tocHref: /dotnet/core/install/
-        topicHref: /dotnet/core/install/index
-      - name: What's new
-        tocHref: /dotnet/core/whats-new/
-        topicHref: /dotnet/core/whats-new/dotnet-core-3-0
-      - name: Breaking changes
-        tocHref: /dotnet/core/compatibility/
-        topicHref: /dotnet/core/compatibility/index
-      - name: Tutorials
-        tocHref: /dotnet/core/tutorials/
-        topicHref: /dotnet/core/tutorials/index
-      - name: Run-time configuration
-        tocHref: /dotnet/core/run-time-config/
-        topicHref: /dotnet/core/run-time-config/index
-      - name: Native interoperability
-        tocHref: /dotnet/core/native-interop/
-        topicHref: /dotnet/core/native-interop/expose-components-to-com
-      - name: Migration
-        tocHref: /dotnet/core/migration/
-        topicHref: /dotnet/core/migration/index
-      - name: Deployment
-        tocHref: /dotnet/core/deploying/
-        topicHref: /dotnet/core/deploying/index
-      - name: Docker
-        tocHref: /dotnet/core/docker/
-        topicHref: /dotnet/core/docker/introduction
-      - name: Diagnostic tools
-        tocHref: /dotnet/core/diagnostics/
-        topicHref: /dotnet/core/diagnostics/index
-      - name: Unit testing
-        tocHref: /dotnet/core/testing/
-        topicHref: /dotnet/core/testing/index
-      - name: Versioning
-        tocHref: /dotnet/core/versions/
-        topicHref: /dotnet/core/versions/index
-      - name: SDK projects
-        tocHref: /dotnet/core/project-sdk/
-        topicHref: /dotnet/core/project-sdk/overview
-      - name: Tools
-        tocHref: /dotnet/core/tools/
-        topicHref: /dotnet/core/tools/index
-      - name: Additional tools
-        tocHref: /dotnet/core/additional-tools/
-        topicHref: /dotnet/core/additional-tools/index
-      - name: Porting
-        tocHref: /dotnet/core/porting/
-        topicHref: /dotnet/core/porting/index
-      - name: Dependency loading
-        tocHref: /dotnet/core/dependency-loading/
-        topicHref: /dotnet/core/dependency-loading/overview
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index

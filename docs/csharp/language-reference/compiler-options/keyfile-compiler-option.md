@@ -1,4 +1,5 @@
 ---
+description: "-keyfile (C# Compiler Options)"
 title: "-keyfile (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

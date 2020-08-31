@@ -17,7 +17,7 @@ This tutorial introduces the debugging tools available in Visual Studio for Mac.
 
 In the Debug configuration, a program compiles with full symbolic debug information and no optimization. Optimization complicates debugging, because the relationship between source code and generated instructions is more complex. The release configuration of a program has no symbolic debug information and is fully optimized.
 
-By default, Visual Studio uses the Debug build configuration, so you don't need to change it before debugging.
+By default, Visual Studio for Mac uses the Debug build configuration, so you don't need to change it before debugging.
 
 1. Start Visual Studio for Mac.
 

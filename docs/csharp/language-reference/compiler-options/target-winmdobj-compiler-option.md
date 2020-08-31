@@ -1,4 +1,5 @@
 ---
+description: "-target:winmdobj (C# Compiler Options)"
 title: "-target:winmdobj (C# Compiler Options)"
 ms.date: 07/20/2015
 ms.assetid: 1819a045-659d-498a-9457-c466e902986f

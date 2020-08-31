@@ -1,4 +1,5 @@
 ---
+description: "where (generic type constraint) - C# Reference"
 title: "where (generic type constraint) - C# Reference"
 
 ms.date: 04/15/2020

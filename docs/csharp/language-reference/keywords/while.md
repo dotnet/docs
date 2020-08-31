@@ -1,4 +1,5 @@
 ---
+description: "while - C# Reference"
 title: "while - C# Reference"
 ms.date: 05/28/2018
 f1_keywords: 

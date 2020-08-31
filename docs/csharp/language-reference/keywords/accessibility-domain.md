@@ -1,4 +1,5 @@
 ---
+description: "Accessibility Domain - C# Reference"
 title: "Accessibility Domain - C# Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

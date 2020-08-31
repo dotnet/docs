@@ -1,4 +1,5 @@
 ---
+description: "-help, -? (C# Compiler Options)"
 title: "-help, -? (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

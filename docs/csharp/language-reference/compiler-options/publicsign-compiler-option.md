@@ -1,4 +1,5 @@
 ---
+description: "-publicsign (C# Compiler Options)"
 title: "-publicsign (C# Compiler Options)"
 ms.date: 05/15/2018
 f1_keywords: 

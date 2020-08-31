@@ -1,4 +1,5 @@
 ---
+description: "-nostdlib (C# Compiler Options)"
 title: "-nostdlib (C# Compiler Options)"
 ms.date: 12/20/2019
 f1_keywords:

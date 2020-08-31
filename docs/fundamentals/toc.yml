@@ -337,17 +337,10 @@ items:
         displayName: code analysis, analyzers
       - name: Configure rules
         href: ../core/../fundamentals/productivity/configure-code-analysis-rules.md
-      - name: Analyzers
-        items:
-        - name: Overview
-          href: ../standard/analyzers/index.md
-          displayName: analyzers
-        - name: API analyzer
-          href: ../standard/analyzers/api-analyzer.md
-        - name: Portability analyzer
-          href: ../standard/analyzers/portability-analyzer.md
-        - name: Framework analyzer
-          href: ../standard/analyzers/framework-analyzer.md
+      - name: API analyzer
+        href: ../standard/analyzers/api-analyzer.md
+      - name: Portability analyzer
+        href: ../standard/analyzers/portability-analyzer.md
   - name: Execution model
     items:
     - name: Common Language Runtime (CLR)

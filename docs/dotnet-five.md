@@ -40,7 +40,7 @@ With .NET 5, .NET Standard is being de-emphasized. If you're planning on sharing
 
 ## Language updates
 
-With .NET, the .NET languages are continuing to improve.
+With .NET 5, the .NET programming languages are continuing to improve.
 
 ### C# updates
 

@@ -128,9 +128,6 @@ items:
       - name: Installation guide
         tocHref: /dotnet/core/install/
         topicHref: /dotnet/core/install/index
-      - name: What's new
-        tocHref: /dotnet/core/whats-new/
-        topicHref: /dotnet/core/whats-new/dotnet-core-3-0
       - name: Breaking changes
         tocHref: /dotnet/core/compatibility/
         topicHref: /dotnet/core/compatibility/index
@@ -162,8 +159,11 @@ items:
         tocHref: /dotnet/core/project-sdk/
         topicHref: /dotnet/core/project-sdk/overview
       - name: Tools
+        tocHref: /dotnet/core/sdk/
+        topicHref: /dotnet/core/sdk
+      - name: Tools
         tocHref: /dotnet/core/tools/
-        topicHref: /dotnet/core/tools/index
+        topicHref: /dotnet/core/sdk
       - name: Additional tools
         tocHref: /dotnet/core/additional-tools/
         topicHref: /dotnet/core/additional-tools/index

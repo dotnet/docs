@@ -1,3 +1,4 @@
+items:
 - name: .NET Framework documentation
   href: index.yml
 - name: Overview of .NET Framework
@@ -720,6 +721,8 @@
     href: misc/using-the-assert-method.md
 - name: Create console apps
   href: ../standard/building-console-apps.md
+- name: Consume events in a Web Forms app
+  href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
 - name: Develop for multiple platforms
   items:
   - name: Overview

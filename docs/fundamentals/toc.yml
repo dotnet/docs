@@ -514,8 +514,6 @@ items:
       href: ../standard/events/how-to-raise-and-consume-events.md
     - name: Handle multiple events using event properties
       href: ../standard/events/how-to-handle-multiple-events-using-event-properties.md
-    - name: Consume events in a Web Forms app
-      href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
     - name: Observer design pattern
       items:
       - name: Overview
@@ -700,11 +698,11 @@ items:
 - name: Microsoft Extensions 
   items:
   - name: Configuration
-    href: https://docs.microsoft.com/aspnet/core/fundamentals/configuration/
+    href: /aspnet/core/fundamentals/configuration/
   - name: Dependency injection
-    href: https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection/
+    href: /aspnet/core/fundamentals/dependency-injection/
   - name: Logging
-    href: https://docs.microsoft.com/aspnet/core/fundamentals/logging/
+    href: /aspnet/core/fundamentals/logging/
 - name: Data access 
   items:
   - name: LINQ

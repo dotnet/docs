@@ -132,5 +132,5 @@ Because of this, custom builds of the .NET Core SDK shouldn't be located in dire
 
 ## See also
 
-- [.NET Core CLI Telemetry - 2019 Q2 Data](https://dotnet.microsoft.com/platform/telemetry/dotnet-core-cli-2019q2)
+- [.NET Core CLI Telemetry Data](https://dotnet.microsoft.com/platform/telemetry)
 - [Telemetry reference source (dotnet/sdk repository)](https://github.com/dotnet/sdk/tree/master/src/Cli/dotnet/Telemetry)

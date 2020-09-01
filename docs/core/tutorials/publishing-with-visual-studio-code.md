@@ -11,13 +11,13 @@ The .NET Core CLI is used to publish the app, so you can follow this tutorial wi
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
+- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio Code](with-visual-studio-code.md).
 
 ## Publish the app
 
 1. Start Visual Studio Code.
 
-1. Open the *HelloWorld* project folder that you created in [Create a .NET Core console application in Visual Studio Code](with-visual-studio-code.md).
+1. Open the *HelloWorld* project folder that you created in [Create a .NET Core console application using Visual Studio Code](with-visual-studio-code.md).
 
 1. Choose **View** > **Terminal** from the main menu.
 
@@ -33,7 +33,7 @@ The .NET Core CLI is used to publish the app, so you can follow this tutorial wi
 
    The command output is similar to the following example:
 
-   ```
+   ```output
    Microsoft (R) Build Engine version 16.6.0+5ff7b0c9e for .NET Core
    Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -106,4 +106,4 @@ In the following steps, you'll look at the files created by the publish process.
 In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library in Visual Studio Code](library-with-visual-studio-code.md)
+> [Create a .NET Standard library using Visual Studio Code](library-with-visual-studio-code.md)

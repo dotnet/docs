@@ -229,7 +229,7 @@ In this case, delete all the content of the *.csproj* file and replace it with t
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
         <TargetFramework>netcoreapp3.1</TargetFramework>
-        <UseWPF>true</UseWPF>
+        <UseWpf>true</UseWpf>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     </PropertyGroup>
 </Project>

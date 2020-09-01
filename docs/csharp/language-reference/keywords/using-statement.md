@@ -1,4 +1,5 @@
 ---
+description: "using statement - C# Reference"
 title: "using statement - C# Reference"
 ms.date: 05/29/2020
 helpviewer_keywords:

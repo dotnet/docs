@@ -46,7 +46,7 @@ dotnet-trace ps
 
 Take note of the process ID from your command output. Our process ID was `4807`, but yours will be different. Navigate to the following URL, which is an API endpoint on the sample site:
 
-[https://localhost:5001/api/diagscenario/deadlock](https://localhost:5001/api/diagscenario/deadlock)
+`https://localhost:5001/api/diagscenario/deadlock`
 
 The API request to the site will hang and not respond. Let the request run for about 10-15 seconds. Then create the core dump using the following command:
 

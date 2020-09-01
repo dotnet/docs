@@ -1,4 +1,5 @@
 ---
+description: "var - C# Reference"
 title: "var - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -18,6 +19,9 @@ int i = 10; // Explicitly typed.
 ```
 
 For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md) and [Type Relationships in LINQ Query Operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md).
+
+> [!IMPORTANT]
+> When `var` is used with nullable reference types enabled, it always implies a nullable reference type even if the expression type isn't nullable.
 
 ## Example
 

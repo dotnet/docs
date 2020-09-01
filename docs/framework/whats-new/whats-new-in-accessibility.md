@@ -1,7 +1,6 @@
 ---
 title: "What's new in accessibility in the .NET Framework"
 description: See what's new in .NET accessibility, starting with .NET Framework 4.7.1. Accessibility features let an app provide the right experience for Assistive Technology users.
-ms.custom: "updateeachrelease"
 ms.date: "04/18/2019"
 dev_langs:
   - "csharp"

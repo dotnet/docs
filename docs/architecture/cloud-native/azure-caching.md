@@ -52,7 +52,7 @@ Azure Cache for Redis is more than a simple cache server. It can support a numbe
   
 For advanced scenarios, a copy of the cached data can be [persisted to disk](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-how-to-premium-persistence). If a catastrophic event disables both the primary and replica caches, the cache is reconstructed from the most recent snapshot.
 
-Azure Redis Cache is available across a number of predefined configurations and pricing tiers.  The [Premium tier](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-premium-tier-intro) features many enterprise-level features such as clustering, data persistence, geo-replication, and virtual-network isolation.
+Azure Redis Cache is available across a number of predefined configurations and pricing tiers. The [Premium tier](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview#service-tiers) features many enterprise-level features such as clustering, data persistence, geo-replication, and virtual-network isolation.
 
 >[!div class="step-by-step"]
 >[Previous](relational-vs-nosql-data.md)

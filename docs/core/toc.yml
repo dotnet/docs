@@ -300,6 +300,8 @@ items:
       href: diagnostics/dotnet-counters.md
     - name: dotnet-dump
       href: diagnostics/dotnet-dump.md
+    - name: dotnet-gcdump
+      href: diagnostics/dotnet-gcdump.md
     - name: dotnet-trace
       href: diagnostics/dotnet-trace.md
   - name: .NET Core diagnostics tutorials
@@ -366,6 +368,13 @@ items:
     href: run-time-config/networking.md
   - name: Threading settings
     href: run-time-config/threading.md
+- name: Code analysis
+  items:
+  - name: Overview
+    href: ../fundamentals/productivity/code-analysis.md
+    displayName: code analysis, analyzers
+  - name: Configure rules
+    href: ../fundamentals/productivity/configure-code-analysis-rules.md
 - name: Migration
   items:
   - name: .NET Core 2.0 to 2.1

@@ -1,4 +1,5 @@
 ---
+description: "new constraint - C# Reference"
 title: "new constraint - C# Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

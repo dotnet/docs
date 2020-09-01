@@ -1,4 +1,5 @@
 ---
+description: "#undef - C# Reference"
 title: "#undef - C# Reference"
 ms.date: 06/30/2018
 f1_keywords: 

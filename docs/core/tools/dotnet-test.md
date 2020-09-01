@@ -98,7 +98,7 @@ Where `Microsoft.NET.Test.Sdk` is the test host, `xunit` is the test framework. 
   - 5400s
   - 5400000ms
 
-  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all testcases. This option is supported on Windows with netcoreapp2.1 and later, and on Linux with netcoreapp3.1 and later. macOS is not supported.
+  When no unit is used (for example, 5400000), the value is assumed to be in milliseconds. When used together with data driven tests, the timeout behavior depends on the test adapter used. For xUnit and NUnit the timeout is renewed after every test case. For MSTest, the timeout is used for all test cases. This option is supported on Windows with netcoreapp2.1 and later, and on Linux with netcoreapp3.1 and later. macOS is not supported.
 
 - **`-c|--configuration <CONFIGURATION>`**
 
@@ -268,5 +268,5 @@ For more information and examples on how to use selective unit test filtering, s
 ## See also
 
 - [Frameworks and Targets](../../standard/frameworks.md)
-- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [.NET Core Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)

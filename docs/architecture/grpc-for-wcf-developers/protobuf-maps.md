@@ -14,7 +14,7 @@ message StockPrices {
 }
 ```
 
-In the generated code, `map` fields use the `Google.Protobuf.Collections.MapField<TKey, TValue>` class. This class implements the standard .NET collection interfaces, including <xref:System.Collections.Generic.IDictionary%602>.
+In the generated code, `map` fields are represented by read-only properties of the [`Google.Protobuf.Collections.MapField<TKey, TValue>`][map-field] type. This type implements the standard .NET collection interfaces, including <xref:System.Collections.Generic.IDictionary%602>.
 
 Map fields can't be directly repeated in a message definition. But you can create a nested message that contains a map and use `repeated` on the message type, as in the following example:
 
@@ -43,6 +43,8 @@ public Order CreateOrder(Dictionary<string, string> attributes)
 ## Further reading
 
 For more information about Protobuf, see the official [Protobuf documentation](https://developers.google.com/protocol-buffers/docs/overview).
+
+[map-field]: https://developers.google.cn/protocol-buffers/docs/reference/csharp/class/google/protobuf/collections/map-field-t-key-t-value-
 
 >[!div class="step-by-step"]
 >[Previous](protobuf-enums.md)

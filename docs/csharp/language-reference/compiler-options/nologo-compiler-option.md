@@ -1,4 +1,5 @@
 ---
+description: "-nologo (C# Compiler Options)"
 title: "-nologo (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

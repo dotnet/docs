@@ -30,7 +30,7 @@ In addition to all of these key characteristics, .NET 5 is making significant [p
 
 ## .NET release schedule
 
-.NET has a formal release schedule, where a new major version is planned every November. .NET 5 will not have long-term support (LTS), however; .NET 6 in 2021 will be LTS. As major .NET versions ship, even-numbered releases will receive LTS. Minor releases will occur as needed.
+A new major version of .NET is planned to release every November. .NET 5 will not have long-term support (LTS), however; .NET 6 in 2021 will be LTS. As major .NET versions ship, even-numbered releases will receive LTS. Minor releases will occur as needed.
 
 :::image type="content" source="media/dotnet-schedule.svg" alt-text=".NET release schedule":::
 
@@ -85,7 +85,7 @@ let name = "David"
 let age = 36
 let message = $"%s{name} is %d{age} years old."
 ```
-
+This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs.
 ### Visual Basic updates
 
 Going forward, there is no plan to evolve Visual Basic as a language. This supports language stability and maintains compatibility between the .NET Core and .NET Framework versions of Visual Basic. Future features of .NET that require language changes may not be supported in Visual Basic.

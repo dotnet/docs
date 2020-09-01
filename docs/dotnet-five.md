@@ -1,7 +1,7 @@
 ---
-title: The evolution of .NET Core - .NET 5
+title: The evolution of .NET Core to .NET 5
 description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 08/31/2020
+ms.date: 09/01/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -23,13 +23,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 | Windows Communication Foundation (WCF) | [gRPC](/aspnet/core/grpc)                                   |
 | Windows Workflow (WF)                  | [Open-source CoreWF](https://github.com/UiPath-Open/corewf) |
 
-## .NET release schedule
-
-A new major version of .NET is planned to release every November. .NET 5 will not have long-term support (LTS), however; .NET 6 in 2021 will be LTS. As major .NET versions ship, even-numbered releases will receive LTS. Minor releases will occur as needed.
-
-:::image type="content" source="media/dotnet-schedule.svg" alt-text=".NET release schedule":::
-
-## What happens to .NET Standard
+## .NET Standard
 
 New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
@@ -63,7 +57,7 @@ For more information on source generators, see [Introducing C# source generators
 
 ### F# updates
 
-F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. Here are several new features of F# 5, for more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md).
+F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. Here are several new features of F# 5:
 
 #### Interpolated strings
 
@@ -83,44 +77,37 @@ let age = 36
 let message = $"%s{name} is %d{age} years old."
 ```
 
-This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs.
+This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs. For more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md)
 
 ### Visual Basic updates
 
 There are no new language features for Visual Basic in .NET 5. However, with .NET 5, Visual Basic support is extended to:
 
-- Console Application `console`
-- Class library `classlib`
-- WPF Application `wpf`
-- WPF Class library `wpflib`
-- WPF Custom Control Library `wpfcustomcontrollib`
-- WPF User Control Library `wpfusercontrollib`
-- Windows Forms (WinForms) Application `winforms`
-- Windows Forms (WinForms) Class library `winformslib`
-- Unit Test Project `mstest`
-- NUnit 3 Test Project `nunit`
-- NUnit 3 Test Item `nunit-test`
-- xUnit Test Project `xunit`
+| Description                            | `dotnet new` parameter |
+|----------------------------------------|------------------------|
+| Console Application                    | `console`              |
+| Class library                          | `classlib`             |
+| WPF Application                        | `wpf`                  |
+| WPF Class library                      | `wpflib`               |
+| WPF Custom Control Library             | `wpfcustomcontrollib`  |
+| WPF User Control Library               | `wpfusercontrollib`    |
+| Windows Forms (WinForms) Application   | `winforms`             |
+| Windows Forms (WinForms) Class library | `winformslib`          |
+| Unit Test Project                      | `mstest`               |
+| NUnit 3 Test Project                   | `nunit`                |
+| NUnit 3 Test Item                      | `nunit-test`           |
+| xUnit Test Project                     | `xunit`                |
 
 For more information on project templates from the .NET CLI, see [`dotnet new`](core/tools/dotnet-new.md).
 
-## What happens to Xamarin
-
-While this article focuses on .NET 5, it is hard not to discuss .NET 6. The [Mono](https://www.mono-project.com) runtime was the original cross-platform implementation of .NET, which empowered Xamarin. However, the groundwork in .NET 5 will enable Xamarin to rebase atop .NET 6. As part of the .NET unification, [Xamarin.iOS](/xamarin/ios) and [Xamarin.Android](/xamarin/android) will become part of .NET 6 as .NET for iOS and .NET for Android.
-
-> [!NOTE]
-> When .NET 6 is released, the final release of Xamarin SDKs in their current form will also release, and they'll be serviced for a year. All modern work will at that time shift to .NET 6.
-
-[Xamarin.Forms](/xamarin/get-started) is evolving into the .NET Multi-platform App UI, better known as ".NET MAUI". When .NET 6 ships, the final release of Xamarin.Forms will be serviced for a year after, and all modern work will shift to .NET MAUI.
-
-### .NET MAUI
+## .NET MAUI
 
 .NET MAUI is an evolution of the increasingly popular Xamarin.Forms toolkit, and is open-source on GitHub at [dotnet/maui](https://github.com/dotnet/maui). With .NET MAUI, the choice for .NET developers is simplified, providing a single stack that supports all modern workloads: Android, iOS, macOS, and Windows. With .NET MAUI, you get a single project developer experience that targets multiple platforms and devices.
 
 > [!IMPORTANT]
-> .NET MAUI is in early preview, and is planned for .NET 6. Sample source code can be found at [xamarin/net6-samples](https://github.com/xamarin/net6-samples).
+> .NET MAUI is in early preview. Sample source code can be found at [xamarin/net6-samples](https://github.com/xamarin/net6-samples).
 
-#### Model-View-Update pattern
+### Model-View-Update pattern
 
 Developers love modern development patterns. A fluent approach to UI development, inspired by "The Elm Architecture" is the [model-view-update](https://elmprogramming.com/model-view-update-part-1.html) or MVU pattern. MVU promotes a one-way flow of data and state management, as well as a code-first development experience that rapidly updates the UI by applying only the changes necessary.
 

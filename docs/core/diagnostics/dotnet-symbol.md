@@ -79,7 +79,7 @@ The `dotnet-symbol` global tool downloads files (symbols, DAC, modules, etc.) ne
 
   Shows command-line help.
 
-## Downloading symbols
+## Download symbols
 
 Running `dotnet-symbol` against a dump file will, by default, download all the modules, symbols, and DAC/DBI files needed to debug the dump including the managed assemblies. Because SOS can now download symbols when needed, most Linux core dumps can be analyzed using lldb with only the host (dotnet) and debugging modules. To get these files necessary for diagnosing a core dump with lldb run:
 

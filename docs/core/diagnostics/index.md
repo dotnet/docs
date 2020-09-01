@@ -23,11 +23,11 @@ This article helps you find the various tools you need.
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
 
-## Debugging Linux dumps
+## Debug Linux dumps
 
-[Debugging Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
+[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
 
-## .NET Core dotnet diagnostic Global Tools
+## .NET Core diagnostic global tools
 
 ### dotnet-counters
 

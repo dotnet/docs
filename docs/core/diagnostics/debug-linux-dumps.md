@@ -1,24 +1,24 @@
 ---
-title: Debugging Linux Dumps
+title: Debug Linux dumps
 description: In this article, you'll learn how to collect and analyze dumps from Linux environments.
 ms.date: 08/27/2020
 ---
 
-# Debugging Linux Dumps
+# Debug Linux dumps
 
 **This article applies to: ✔️** .NET Core 3.0 SDK and later versions
 
-## Collecting dumps on Linux
+## Collect dumps on Linux
 
 The two recommended ways of collecting dumps on Linux are the [`dotnet-dump`](dotnet-dump.md) or [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) tools.
 
 ### Managed dumps with `dotnet-dump`
 
-The [`dotnet-dump`](dotnet-dump.md) tool is the simplest to use and does not have a dependency on any native debuggers, so it works on a wide variety of Linux platforms (like Alpine or ARM32/ARM64) where traditional debugging tools may not be available. Note, however, that `dotnet-dump` only captures managed state so it can't be used for debugging issues in native code. Dumps collected by `dotnet-dump` must be analyzed in an environment with the the same OS and architecture the dump was created on. The [`dotnet-gcdump`](dotnet-gcdump.md) tool can be used as an alternative that only captures GC heap information but produces dumps that can be analyzed on Windows.
+The [`dotnet-dump`](dotnet-dump.md) tool is simple to use, and does not have a dependency on any native debuggers. `dotnet-dump` works on a wide variety of Linux platforms (like Alpine or ARM32/ARM64) where traditional debugging tools may not be available. However, `dotnet-dump` only captures managed state so it can't be used for debugging issues in native code. Dumps collected by `dotnet-dump` are analyzed in an environment with the the same OS and architecture the dump was created on. The [`dotnet-gcdump`](dotnet-gcdump.md) tool can be used as an alternative that only captures GC heap information but produces dumps that can be analyzed on Windows.
 
 ### Core dumps with `createdump`
 
-Whereas `dotnet-dump` creates managed-only dumps, [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) is the recommended tool for creating core dumps on Linux containing both native and managed information. Other tools like gdb or gcore can also be used to create core dumps but may miss state needed for managed debugging, resulting in "UNKNOWN" type or function names during analysis.
+Alternative to `dotnet-dump` which creates managed-only dumps, [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) is the recommended tool for creating core dumps on Linux containing both native and managed information. Other tools like gdb or gcore can also be used to create core dumps but may miss state needed for managed debugging, resulting in "UNKNOWN" type or function names during analysis.
 
 The `createdump` tools is installed with the .NET Core runtime and can be found next to libcoreclr.so (typically in "/usr/share/dotnet/shared/Microsoft.NETCore.App/[version]"). The tool takes a process ID to collect a dump from as its primary argument and can also take optional parameters specifying what kind of dump to collect (a minidump with heap is the default). Options include:
 
@@ -54,9 +54,9 @@ The `createdump` tools is installed with the .NET Core runtime and can be found 
 
 Note that collecting core dumps requires either the `SYS_PTRACE` capability or that `createdump` be run with sudo or su.
 
-## Analyzing dumps on Linux
+## Analyze dumps on Linux
 
-Dumps (either managed dumps collected with `dotnet-dump` or core dumps collected with `createdump`) can be analyzed with the `dotnet-dump` tool using the `dotnet-dump analyze` command. As mentioned previously, `dotnet dump` requires that the environment analyzing the dump has the same OS and architecture as the environment the dump was captured in.
+Both managed dumps collected with `dotnet-dump` and core dumps collected with `createdump` can be analyzed with the `dotnet-dump` tool using the `dotnet-dump analyze` command. The `dotnet dump` requires that the environment analyzing the dump has the same OS and architecture as the environment the dump was captured in.
 
 Alternatively, lldb can be used to analyze core dumps on Linux, which allows analysis of both managed and native frames. Lldb uses the SOS extension to debug managed code. The [`dotnet-sos`](dotnet-sos.md) CLI tool can be used to install SOS which has [many useful commands](https://github.com/dotnet/diagnostics/blob/master/documentation/sos-debugging-extension.md) for debugging managed code. In order to analyze .NET Core dumps, lldb and SOS require the following .NET Core binaries from the environment the dump was created in:
 

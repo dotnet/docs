@@ -13,7 +13,7 @@ class Program
                 ResetConsole();
 
             string input = Console.ReadLine();
-            if (string.IsNullOrEmpty(input)) break;
+            if (String.IsNullOrEmpty(input)) break;
             Console.WriteLine($"Input: {input} {"Begins with uppercase? ",30}: " +
                               $"{(input.StartsWithUpper() ? "Yes" : "No")}\n");
             row += 3;

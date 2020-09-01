@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 9.0 - C# Guide
 description: Get an overview of the new features available in C# 9.0.
-ms.date: 08/11/2020
+ms.date: 08/31/2020
 ---
 # What's new in C# 9.0
 
@@ -33,15 +33,7 @@ Record types make it easy to create immutable reference types in .NET. Historica
 
 There are a lot of advantages to immutable reference types as well. These advantages are more pronounced in concurrent programs with shared data. Unfortunately, C# forced you to write quite a bit of extra code to create immutable reference types. Records provide a type declaration for an immutable reference type that uses value semantics for equality. The synthesized methods for equality and hash codes consider two records equal if there properties are all equal. Consider this definition:
 
-```csharp
-public record Person
-{
-    public string LastName { get; }
-    public string FirstName { get; }
-
-    public Person(string first, string last) => (FirstName, LastName) = (first, last);
-}
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExample.cs" id="RecordDefinition":::
 
 That record definition creates a `Person` type that contains two readonly properties: `FirstName` and `LastName`. The `Person` type is a reference type. If you looked at the IL, it’s a class. It’s immutable in that none of the properties can be modified once its been created. When you define a record type, the compiler synthesizes several other methods for you:
 
@@ -53,36 +45,17 @@ That record definition creates a `Person` type that contains two readonly proper
 
 Records support inheritance. You can declare a new record derived from `Person` as follows:
 
-```csharp
-public record Teacher : Person
-{
-    public string Subject { get; }
-
-    public Teacher(string first, string last, string sub) : base(first, last) => Subject = sub;
-}
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExample.cs" id="InheritedRecord":::
 
 You can also seal records to prevent further derivation:
 
-```csharp
-public sealed record Student : Person
-{
-    public int Level { get; }
-
-    public Student(string first, string last, int level) : base(first, last) => Level = level;
-}
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExample.cs" id="SealedRecord":::
 
 The compiler generates different versions of the methods mentioned above depending on whether or not the record type is sealed and whether or not the direct base class is object. The compiler does this to ensure that equality for records means that the record types match and the values of each property of the records are equal. Consider the preceding small hierarchy. The compiler generates methods so that a `Person` could not be considered equal to a `Student` or a `Teacher`. In addition to the familiar `Equals` overloads, `operator ==` and `operator !=`, the compiler generates a new `EqualityContract` property. The property returns a `Type` object that matches the type of the record. If the base type is `object`, the property is `virtual`. It the base type is another record type, the property is an `override`. If the record type is `sealed`, the property is `sealed`. The synthesized `GetHashCode` uses the `GetHashCode` from all the public properties declared in the base type and the record type. These synthesized methods enforce value-based equality throughout an inheritance hierarchy. That means a `Student` will never be considered equal to a `Person` with the same name. The types of the two records must match as well as all properties shared among the record types being equal.
 
 Records also have a synthesized constructor and a "clone" method for creating copies. The synthesized constructor has one argument of the record type. It produces a new record with the same values for all properties of the record. This constructor is private if the record is sealed, otherwise it is protected. The synthesized "clone" method supports copy construction for record hierarchies. The term "clone" is in quotes because the actual name is compiler generated. You cannot create a method named `Clone` in a record type. The synthesized "clone" method returns the type of record being copied using virtual dispatch. If a record type is `abstract`, the clone method is also `abstract`. If a record type is `sealed`, the clone method is `sealed`. If the base type of the record is `object`, the clone method is `virtual`. Otherwise, it is `override`. The result of all these rules is the equality is implemented consistently across any hierarchy of record types. Two records are equal to each other if their properties are equal and there types are the same, as shown in the following example:
 
-```csharp
-Person p1 = new Person("Bill", "Wagner");
-Student s1 = new Student("Bill", "Wagner", 11);
-
-Console.WriteLine(s1 == p1); // false
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/RecordsExample.cs" id="RecordsEquality":::
 
 The compiler synthesizes two methods that support printed output: a <xref:System.ToString> override, and `PrintMembers`. The `PrintMembers` method returns a comma separated list of property names and values. The <xref:System.ToString> override returns the string produced by `PrintMembers`, surrounded by `{` and `}`. For example, the <xref:System.ToString> method for `Student` generates a `string` like the following:
 
@@ -92,54 +65,19 @@ Student { LastName = Wagner, FirstName = Bill, Level = 11 }
 
 The examples shown so far use traditional syntax to declare properties. There’s a more concise form called positional records.  Here are the three record types defined earlier using position record syntax:
 
-```csharp
-public record Person(string FirstName, string LastName);
-
-public record Teacher(string FirstName, string LastName, 
-    string Subject) 
-    : Person(FirstName, LastName);
-
-public sealed record Student(string FirstName, 
-    string LastName, string Subject) 
-    : Person(FirstName, LastName);
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" id="PositionalRecords":::
 
 These declarations create the same functionality as the earlier version (with a couple extra features covered in the following section). These declarations end with a semicolon instead of brackets because these records do not add additional methods. You can add a body, and include any additional methods as well:
 
-```csharp
-public record Pet(string Name)
-{
-    public void ShredTheFurniture() => 
-        Console.WriteLine("Shredding furniture");
-}
-
-public record Dog(string Name) : Pet(Name)
-{
-    public void WagTail() => 
-        Console.WriteLine("It's tail wagging time");
-
-    public override string ToString()
-    {
-        StringBuilder s = new();
-        base.PrintMembers(s);
-        return $"{s.ToString()} is a dog";
-    }
-}
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" id="RecordsWithMethods":::
 
 The compiler produces a `Deconstruct` method for positional records. The `Deconstruct` method has parameters that match the names of all public properties in the record type. The `Deconstruct` method can be used to deconstruct the record into its component properties:
 
-```csharp
-// Deconstruct is in the order declared in the record. (string first, string last) = p1;
-Console.WriteLine(first);
-Console.WriteLine(last);
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" id="DeconstructRecord":::
 
 Finally, records support ***with-expressions***. A ***with-expression*** instructs the compiler to create a something like copy of a record, but with specified properties modified:
 
-```csharp
-Person brother = p1 with { FirstName = "Paul" };
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" id="Wither":::
 
 The above line creates a new `Person` record where the `LastName` property is a copy of `p1`, and the `FirstName` is "Paul". You can set any number of properties in a with-expression.  Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler does not generate that method. The earlier `Dog` record example contains a hand coded <xref:System.ToString> method as an example.
 
@@ -172,11 +110,7 @@ namespace HelloWorld
 
 There’s only one line of code that does anything. With top level statements, you can replace all that boilerplate with the `using` statement and the single line that does the work:
 
-```csharp
-using System;
-
-Console.WriteLine("Hello World!");
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/Program.cs" id="TopLevelStatements":::
 
 Only one file in your application may use top level statements. If the compiler finds top level statements in multiple source files, it’s an error. It’s also an error if you combine top level statements with a declared program entry point method, typically a `Main` method. In a sense, you can think that one file contains the statements that would normally be in the `Main` method of a `Program` class.  
 
@@ -184,7 +118,7 @@ One of the most common uses for this feature is creating teaching materials. Beg
 
 Most importantly, top level statements do not limit your application’s scope or complexity. Those statements can access or use any .NET class. They also don’t limit your use of command line arguments or return values. Top level statements an access an array or strings named args. If the top level statements return an integer value, that value becomes the integer return code from a synthesized `Main` method. The top level statements may contain async expressions. In that case, the synthesized entry point returns a `Task`, or `Task<int>`.
 
-## Pattern matching enhancemenets
+## Pattern matching enhancements
 
 C# 9 includes new pattern matching improvements:
 
@@ -197,17 +131,11 @@ C# 9 includes new pattern matching improvements:
 
 These patterns enrich the syntax for patterns. Consider these examples:
 
-```csharp
-public static bool IsLetter(this char c) =>
-    c is >= 'a' and <= 'z' or >= 'A' and <= 'Z';
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" id="IsLetterPattern":::
 
 Alternatively, with optional parentheses to make it clear that and has higher precedence than or:
 
-```csharp
-public static bool IsLetterIsSeparator(this char c) => 
-    c is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z') or '.' or ',';
-```
+:::code language="csharp" source="snippets/whats-new-csharp9/PatternUtilities.cs" id="IsLetterOrSeparatorPattern":::
 
 One of the most common uses is a new clear syntax for a null check:
 

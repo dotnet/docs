@@ -1,21 +1,21 @@
 ---
 title: The evolution of .NET Core - .NET 5
-description: In this article you will learn about .NET 5, a cross platform, and open-source project that is the next evolution of .NET Core.
+description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
 ms.date: 08/31/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
 ---
 
-# The evolution of .NET Core - .NET 5
+# The evolution of .NET Core to .NET 5
 
-The .NET ecosystem is being simplified with the evolution of .NET Core. Naming things is hard, but unifying versions of two disparate .NET implementations can be harder. This article details .NET 5, which can be thought of as .NET Core vNext. With .NET Core concluding at version 3.1 and .NET Framework at version 4.8, to avoid ambiguity the next logical version is .NET version 5.0.
+This article details what is included in .NET 5, which is the next release of .NET Core following 3.1.  The version number is 5 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. It can be used to develop any app type on any platform.
 
 The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time. .NET 5 is cross-platform, allows for side-by-side installation, and continues support of small project files (SDK-style).
 
 ### What .NET 5 is not
 
-To be clear, .NET 5 is not a replacement for .NET Framework. There are no plans to port the following workloads from .NET Framework to .NET 5, as such there are recommended alternatives:
+.NET 5 is not a replacement for .NET Framework. There are no plans to port the following technologies from .NET Framework to .NET 5, but there are supported alternatives included in .NET 5:
 
 | Technology                             | Recommendation                                              |
 |----------------------------------------|-------------------------------------------------------------|
@@ -31,7 +31,7 @@ A new major version of .NET is planned to release every November. .NET 5 will no
 
 ## What happens to .NET Standard
 
-With .NET 5, .NET Standard is being de-emphasized. New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
+New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
 However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
 
@@ -41,7 +41,7 @@ With .NET 5, the .NET programming languages are continuing to improve.
 
 ### C# updates
 
-C# will move forward in lock-step with .NET releases. Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9. C# 9 brings many new features to the language, here are a few highlights:
+Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9. C# 9 brings many new features to the language, here are a few highlights:
 
 - Records: Immutable reference types that behave like value types, and introduce the new `with` keyword into the language.
 - Relational pattern matching: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.

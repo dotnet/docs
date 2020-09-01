@@ -40,7 +40,7 @@ Publish a single file application using the [dotnet publish](../tools/dotnet-pub
 - Publish as a self-contained app for a specific runtime: `-r win-x64`
 - Enable trimming: `/p:PublishSingleFile=true`
 
-The following example publishes an app for Windows as self-contained single file application.
+The following example publishes an app for Windows as a self-contained single file application.
 
 ```xml
 <PropertyGroup>

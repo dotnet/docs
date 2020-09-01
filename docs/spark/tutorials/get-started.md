@@ -1,6 +1,6 @@
 ---
 title: Get started with .NET for Apache Spark
-description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, MacOS, and Ubuntu.
+description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, macOS, and Ubuntu.
 ms.date: 06/25/2020
 ms.topic: tutorial
 ms.custom: mvc
@@ -9,7 +9,7 @@ ms.custom: mvc
 
 # Tutorial: Get started with .NET for Apache Spark
 
-This tutorial teaches you how to run a .NET for Apache Spark app using .NET Core on Windows, MacOS, and Ubuntu.
+This tutorial teaches you how to run a .NET for Apache Spark app using .NET Core on Windows, macOS, and Ubuntu.
 
 In this tutorial, you learn how to:
 
@@ -37,9 +37,9 @@ If the command runs and prints out information about how to use dotnet, can move
 
 ### 2. Install Java
 
-Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) for Windows and MacOS, or [OpenJDK 8](https://openjdk.java.net/install/) for Ubuntu.
+Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) for Windows and macOS, or [OpenJDK 8](https://openjdk.java.net/install/) for Ubuntu.
 
-Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine (as shown below) or **jdk-8u231-macosx-x64.dmg** for MacOS. Then, use the command `java` to verify the installation.
+Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine (as shown below) or **jdk-8u231-macosx-x64.dmg** for macOS. Then, use the command `java` to verify the installation.
 
 ![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
 
@@ -76,7 +76,7 @@ setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 ```
 
-Run the following commands to set the environment variables used to locate Apache Spark on **MacOS** and **Ubuntu**:
+Run the following commands to set the environment variables used to locate Apache Spark on **macOS** and **Ubuntu**:
 
 ```bash
 export SPARK_HOME=~/bin/spark-2.4.1-bin-hadoop2.7/
@@ -119,7 +119,7 @@ Run one of the following commands to set the `DOTNET_WORKER_DIR` Environment Var
 
 On **Windows**, create a [new environment variable](https://www.java.com/en/download/help/path.xml) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, `C:\bin\Microsoft.Spark.Worker\`).
 
-On **MacOS**, create a new environment variable using `export DOTNET_WORKER_DIR <your_path>` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker/*).
+On **macOS**, create a new environment variable using `export DOTNET_WORKER_DIR <your_path>` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker/*).
 
 On **Ubuntu**, create a [new environment variable](https://help.ubuntu.com/community/EnvironmentVariables) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker*).
 

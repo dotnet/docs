@@ -23,11 +23,9 @@ class DirectoryCopyExample
         }
 
         DirectoryInfo[] dirs = dir.GetDirectories();
-        // If the destination directory doesn't exist, create it.
-        if (!Directory.Exists(destDirName))
-        {
-            Directory.CreateDirectory(destDirName);
-        }
+        
+        // If the destination directory doesn't exist, create it.       
+        Directory.CreateDirectory(destDirName);        
 
         // Get the files in the directory and copy them to the new location.
         FileInfo[] files = dir.GetFiles();

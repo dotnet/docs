@@ -27,19 +27,19 @@ If all three components are present, the path is absolute. If no volume or drive
 
 |Path  |Description  |
 | -- | -- |
-| `C:\Documents\Newsletters\Summer2018.pdf` | An absolute file path from the root of drive C: |
+| `C:\Documents\Newsletters\Summer2018.pdf` | An absolute file path from the root of drive `C:`. |
 | `\Program Files\Custom Utilities\StringFinder.exe` | An absolute path from the root of the current drive. |
 | `2018\January.xlsx` | A relative path to a file in a subdirectory of the current directory. |
 | `..\Publications\TravelBrochure.pdf` | A relative path to file in a directory that is a peer of the current directory. |
-| `C:\Projects\apilibrary\apilibrary.sln` | An absolute path to a file from the root of drive C: |
-| `C:Projects\apilibrary\apilibrary.sln` | A relative path from the current directory of the C: drive. |
+| `C:\Projects\apilibrary\apilibrary.sln` | An absolute path to a file from the root of drive `C:`. |
+| `C:Projects\apilibrary\apilibrary.sln` | A relative path from the current directory of the `C:` drive. |
 
 > [!IMPORTANT]
-> Note the difference between the last two paths. Both specify the optional volume specifier (C: in both cases), but the first begins with the root of the specified volume, whereas the second does not. As result, the first is an absolute path from the root directory of drive C:, whereas the second is a relative path from the current directory of drive C:. Use of the second form when the first is intended is a common source of bugs that involve Windows file paths.
+> Note the difference between the last two paths. Both specify the optional volume specifier (`C:` in both cases), but the first begins with the root of the specified volume, whereas the second does not. As result, the first is an absolute path from the root directory of drive `C:`, whereas the second is a relative path from the current directory of drive `C:`. Use of the second form when the first is intended is a common source of bugs that involve Windows file paths.
 
 You can determine whether a file path is fully qualified (that is, it the path is independent of the current directory and does not change when the current directory changes) by calling the <xref:System.IO.Path.IsPathFullyQualified%2A?displayProperty=nameWthType> method. Note that such a path can include relative directory segments (`.` and `..`) and still be fully qualified if the resolved path always points to the same location.
 
-The following example illustrates the difference between absolute and relative paths. It assumes that the directory D:\FY2018\ exists, and that you haven't set any current directory for D:\ from the command prompt before running the example.
+The following example illustrates the difference between absolute and relative paths. It assumes that the directory `D:\FY2018\` exists, and that you haven't set any current directory for `D:\` from the command prompt before running the example.
 
 [!code-csharp[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/cs/paths.cs)]
 [!code-vb[absolute-and-relative-paths](~/samples/snippets/standard/io/file-names/vb/paths.vb)]
@@ -50,8 +50,8 @@ The following example illustrates the difference between absolute and relative p
 
 Universal naming convention (UNC) paths, which are used to access network resources, have the following format:
 
-- A server or host name, which is prefaced by \\\\. The server name can be a NetBIOS machine name or an IP/FQDN address (IPv4 as well as v6 are supported).
-- A share name, which is separated from the host name by \\. Together, the server and share name make up the volume.
+- A server or host name, which is prefaced by `\\`. The server name can be a NetBIOS machine name or an IP/FQDN address (IPv4 as well as v6 are supported).
+- A share name, which is separated from the host name by `\`. Together, the server and share name make up the volume.
 - A directory name. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates subdirectories within the nested directory hierarchy.
 - An optional filename. The [directory separator character](<xref:System.IO.Path.DirectorySeparatorChar>) separates the file path and the filename.
 
@@ -59,8 +59,8 @@ The following are some examples of UNC paths:
 
 |Path  |Description  |
 | -- | -- |
-| `\\system07\C$\` | The root directory of the C: drive on `system07`. |
-| `\\Server2\Share\Test\Foo.txt` | The Foo.txt file in the Test directory of the \\\\Server2\\Share volume.|
+| `\\system07\C$\` | The root directory of the `C:` drive on `system07`. |
+| `\\Server2\Share\Test\Foo.txt` | The `Foo.txt` file in the Test directory of the `\\Server2\Share` volume.|
 
 UNC paths must always be fully qualified. They can include relative directory segments (`.` and `..`), but these must be part of a fully qualified path. You can use relative paths only by mapping a UNC path to a drive letter.
 
@@ -95,7 +95,7 @@ The DOS device path consists of the following components:
   `\\.\UNC\Server\Share\Test\Foo.txt`
   `\\?\UNC\Server\Share\Test\Foo.txt`
 
-    For device UNCs, the server/share portion forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is server1\utilities. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume.
+    For device UNCs, the server/share portion forms the volume. For example, in `\\?\server1\e:\utilities\\filecomparer\`, the server/share portion is `server1\utilities`. This is significant when calling a method such as <xref:System.IO.Path.GetFullPath(System.String,System.String)?displayProperty=nameWithType> with relative directory segments; it is never possible to navigate past the volume.
 
 DOS device paths are fully qualified by definition. Relative directory segments (`.` and `..`) are not allowed. Current directories never enter into their usage.
 
@@ -140,7 +140,7 @@ A path that begins with a legacy device name is always interpreted as a legacy d
 
 ### Apply the current directory
 
-If a path isn't fully qualified, Windows applies the current directory to it. UNCs and device paths do not have the current directory applied. Neither does a full drive with separator C:\\.
+If a path isn't fully qualified, Windows applies the current directory to it. UNCs and device paths do not have the current directory applied. Neither does a full drive with separator `C:\`.
 
 If the path starts with a single component separator, the drive from the current directory is applied. For example, if the file path is `\utilities` and the current directory is `C:\temp\`, normalization produces `C:\utilities`.
 

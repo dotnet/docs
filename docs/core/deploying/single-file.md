@@ -92,7 +92,7 @@ For more information, see [Publish .NET Core apps with Visual Studio](deploy-wit
 
 ## Publish a Single File app - Visual Studio for Mac
 
-Visual Studio for Mac doesn't provide options to publish your app as a single file during publish. You'll need to publish manually by following the instructions from the [Publish a Single File app - CLI](#publish-a-single-file-app---CLI) section. For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
+Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the [Publish a Single File app - CLI](#publish-a-single-file-app---cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
 ## See also
 

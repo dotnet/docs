@@ -7,7 +7,7 @@ ms.date: 01/30/2020
 
 ![Book cover](./media/cover-small.png)
 
-**EDITION v3.1.1** - Updated to ASP.NET Core 3.1
+**EDITION v3.1.2** - Updated to ASP.NET Core 3.1
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.
 

@@ -2,7 +2,7 @@
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 no-loc: [Blazor, WebAssembly]
-ms.date: 04/10/2020
+ms.date: 09/01/2020
 ---
 # dotnet new
 
@@ -54,15 +54,15 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
 | Console Application                          | [console](#console)             | [C#], F#, VB | Common/Console                        | 1.0        |
 | Class library                                | [classlib](#classlib)           | [C#], F#, VB | Common/Library                        | 1.0        |
-| WPF Application                              | [wpf](#wpf)                     | [C#]         | Common/WPF                            | 3.0        |
-| WPF Class library                            | [wpflib](#wpf)                  | [C#]         | Common/WPF                            | 3.0        |
-| WPF Custom Control Library                   | [wpfcustomcontrollib](#wpf)     | [C#]         | Common/WPF                            | 3.0        |
-| WPF User Control Library                     | [wpfusercontrollib](#wpf)       | [C#]         | Common/WPF                            | 3.0        |
-| Windows Forms (WinForms) Application         | [winforms](#winforms)           | [C#]         | Common/WinForms                       | 3.0        |
-| Windows Forms (WinForms) Class library       | [winformslib](#winforms)        | [C#]         | Common/WinForms                       | 3.0        |
+| WPF Application                              | [wpf](#wpf)                     | [C#], VB     | Common/WPF                            | 3.0        |
+| WPF Class library                            | [wpflib](#wpf)                  | [C#], VB     | Common/WPF                            | 3.0        |
+| WPF Custom Control Library                   | [wpfcustomcontrollib](#wpf)     | [C#], VB     | Common/WPF                            | 3.0        |
+| WPF User Control Library                     | [wpfusercontrollib](#wpf)       | [C#], VB     | Common/WPF                            | 3.0        |
+| Windows Forms (WinForms) Application         | [winforms](#winforms)           | [C#], VB     | Common/WinForms                       | 3.0        |
+| Windows Forms (WinForms) Class library       | [winformslib](#winforms)        | [C#], VB     | Common/WinForms                       | 3.0        |
 | Worker Service                               | [worker](#web-others)           | [C#]         | Common/Worker/Web                     | 3.0        |
 | Unit Test Project                            | [mstest](#test)                 | [C#], F#, VB | Test/MSTest                           | 1.0        |
-| NUnit 3 Test Project                         | [nunit](#nunit)                  | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
+| NUnit 3 Test Project                         | [nunit](#nunit)                 | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
 | NUnit 3 Test Item                            | `nunit-test`                    | [C#], F#, VB | Test/NUnit                            | 2.2        |
 | xUnit Test Project                           | [xunit](#test)                  | [C#], F#, VB | Test/xUnit                            | 1.0        |
 | Razor Component                              | `razorcomponent`                | [C#]         | Web/ASP.NET                           | 3.0        |
@@ -70,7 +70,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 | MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2.0        |
 | MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
 | Blazor Server App                            | [blazorserver](#blazorserver)   | [C#]         | Web/Blazor                            | 3.0        |
-| Blazor WebAssembly App                       | `blazorwasm`                    | [C#]         | Web/Blazor/WebAssembly                            | 3.1.300    |
+| Blazor WebAssembly App                       | `blazorwasm`                    | [C#]         | Web/Blazor/WebAssembly                | 3.1.300    |
 | ASP.NET Core Empty                           | [web](#web)                     | [C#], F#     | Web/Empty                             | 1.0        |
 | ASP.NET Core Web App (Model-View-Controller) | [mvc](#web-options)             | [C#], F#     | Web/MVC                               | 1.0        |
 | ASP.NET Core Web App                         | [webapp, razor](#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0   |

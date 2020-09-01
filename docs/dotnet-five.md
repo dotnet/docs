@@ -1,32 +1,27 @@
 ---
-title: What is .NET 5
-description: In this article you will learn about .NET 5, a cross platform, and open-source project that convergences .NET framework and .NET Core together.
+title: The evolution of .NET Core - .NET 5
+description: In this article you will learn about .NET 5, a cross platform, and open-source project that is the next evolution of .NET Core.
 ms.date: 08/31/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
 ---
 
-# What is .NET 5
+# The evolution of .NET Core - .NET 5
 
-The .NET ecosystem is being simplified with the convergence of .NET Core and .NET Framework. Naming things is hard, but unifying versions of two disparate .NET implementations can be harder. This article details .NET 5, which can be thought of as .NET Core vNext. With .NET Core concluding at version 3.1 and .NET Framework at version 4.8, to avoid ambiguity the next logical version is .NET version 5.0.
+The .NET ecosystem is being simplified with the evolution of .NET Core. Naming things is hard, but unifying versions of two disparate .NET implementations can be harder. This article details .NET 5, which can be thought of as .NET Core vNext. With .NET Core concluding at version 3.1 and .NET Framework at version 4.8, to avoid ambiguity the next logical version is .NET version 5.0.
 
-## Evolution of .NET
+The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time. .NET 5 is cross-platform, allows for side-by-side installation, and continues support of small project files (SDK-style).
 
-The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time. With .NET 5, you get all of the things you loved about .NET Core:
+### What .NET 5 is not
 
-> [!div class="checklist"]
->
-> - Cross-platform
-> - Open-source and community-oriented
-> - Side-by-side installation
-> - Small project files (SDK-style)
-> - High performance
-> - Command-line tooling
-> - Visual Studio, Visual Studio for Mac, and Visual Studio Code integration
-> - Flexible deployment
+To be clear, .NET 5 is not a replacement for .NET Framework. There are no plans to port the following workloads from .NET Framework to .NET 5, as such there are recommended alternatives:
 
-In addition to all of these key characteristics, .NET 5 is making significant [performance improvements](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5).
+| Technology                             | Recommendation                                              |
+|----------------------------------------|-------------------------------------------------------------|
+| Web Forms                              | [ASP.NET Core Blazor](/aspnet/core/blazor)                  |
+| Windows Communication Foundation (WCF) | [gRPC](/aspnet/core/grpc)                                   |
+| Windows Workflow (WF)                  | [Open-source CoreWF](https://github.com/UiPath-Open/corewf) |
 
 ## .NET release schedule
 
@@ -36,7 +31,9 @@ A new major version of .NET is planned to release every November. .NET 5 will no
 
 ## What happens to .NET Standard
 
-With .NET 5, .NET Standard is being de-emphasized. If you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your target framework moniker (TFM). For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
+With .NET 5, .NET Standard is being de-emphasized. New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
+
+However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
 
 ## Language updates
 
@@ -66,7 +63,7 @@ For more information on source generators, see [Introducing C# source generators
 
 ### F# updates
 
-F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. Here are several new features of F# 5, for more information, see [Announcing F# 5](https://devblogs.microsoft.com/dotnet/announcing-net-5-0-preview-8).
+F# is the .NET functional programming language, and with .NET 5, developers have access to F# 5. Here are several new features of F# 5, for more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md).
 
 #### Interpolated strings
 
@@ -85,31 +82,43 @@ let name = "David"
 let age = 36
 let message = $"%s{name} is %d{age} years old."
 ```
+
 This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs.
+
 ### Visual Basic updates
 
-Going forward, there is no plan to evolve Visual Basic as a language. This supports language stability and maintains compatibility between the .NET Core and .NET Framework versions of Visual Basic. Future features of .NET that require language changes may not be supported in Visual Basic.
+There are no new language features for Visual Basic in .NET 5. However, with .NET 5, Visual Basic support is extended to:
 
-With .NET 5, Visual Basic support is extended to:
+- Console Application `console`
+- Class library `classlib`
+- WPF Application `wpf`
+- WPF Class library `wpflib`
+- WPF Custom Control Library `wpfcustomcontrollib`
+- WPF User Control Library `wpfusercontrollib`
+- Windows Forms (WinForms) Application `winforms`
+- Windows Forms (WinForms) Class library `winformslib`
+- Unit Test Project `mstest`
+- NUnit 3 Test Project `nunit`
+- NUnit 3 Test Item `nunit-test`
+- xUnit Test Project `xunit`
 
-- Class library
-- Console
-- Windows Forms
-- Windows Presentation Foundation (WPF)
-- Worker Service
-- ASP.NET Core Web API
-
-For more information, see [Visual Basic support planned for .NET 5](https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0).
+For more information on project templates from the .NET CLI, see [`dotnet new`](core/tools/dotnet-new.md).
 
 ## What happens to Xamarin
 
-As part of the .NET unification, [Xamarin.iOS](/xamarin/ios) and [Xamarin.Android](/xamarin/android) will become part of .NET 6 as .NET for iOS and .NET for Android. Because these bindings are projections of the SDKs shipped from Apple and Google, nothing changes there, however build tooling, target framework monikers, and runtime framework monikers will be updated to match all other .NET 6 workloads. Our commitment to keeping .NET developers up to date with the latest mobile SDKs is foundational to .NET MAUI and remains firm. When .NET 6 is released, the final release of Xamarin SDKs in their current form will also release, and they'll be serviced for a year. All modern work will at that time shift to .NET 6.
+While this article focuses on .NET 5, it is hard not to discuss .NET 6. The [Mono](https://www.mono-project.com) runtime was the original cross-platform implementation of .NET, which empowered Xamarin. However, the groundwork in .NET 5 will enable Xamarin to rebase atop .NET 6. As part of the .NET unification, [Xamarin.iOS](/xamarin/ios) and [Xamarin.Android](/xamarin/android) will become part of .NET 6 as .NET for iOS and .NET for Android.
 
-[Xamarin.Forms](/xamarin/get-started) will ship a new major version later this year, and continue to ship minor and service releases every 6 weeks through .NET 6 GA in November 2021. The final release of Xamarin.Forms will be serviced for a year after shipping, and all modern work will shift to .NET MAUI.
+> [!NOTE]
+> When .NET 6 is released, the final release of Xamarin SDKs in their current form will also release, and they'll be serviced for a year. All modern work will at that time shift to .NET 6.
+
+[Xamarin.Forms](/xamarin/get-started) is evolving into the .NET Multi-platform App UI, better known as ".NET MAUI". When .NET 6 ships, the final release of Xamarin.Forms will be serviced for a year after, and all modern work will shift to .NET MAUI.
 
 ### .NET MAUI
 
 .NET MAUI is an evolution of the increasingly popular Xamarin.Forms toolkit, and is open-source on GitHub at [dotnet/maui](https://github.com/dotnet/maui). With .NET MAUI, the choice for .NET developers is simplified, providing a single stack that supports all modern workloads: Android, iOS, macOS, and Windows. With .NET MAUI, you get a single project developer experience that targets multiple platforms and devices.
+
+> [!IMPORTANT]
+> .NET MAUI is in early preview, and is planned for .NET 6. Sample source code can be found at [xamarin/net6-samples](https://github.com/xamarin/net6-samples).
 
 #### Model-View-Update pattern
 
@@ -136,3 +145,4 @@ For more information, see the [.NET MAUI roadmap](https://github.com/dotnet/maui
 ## See also
 
 - [The Journey to one .NET](https://channel9.msdn.com/Events/Build/2020/BOD106)
+- [Performance improvements in .NET 5](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)

@@ -1,5 +1,5 @@
 ---
-title: "What's new for Visual Basic"
+title: What's new
 ms.date: 10/24/2018
 f1_keywords:
   - "VB.StartPage.WhatsNew"

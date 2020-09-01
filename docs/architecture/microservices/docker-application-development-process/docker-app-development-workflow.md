@@ -377,7 +377,7 @@ services:
       - sqldata
 
   sqldata:
-    image: mssql-server-linux:latest
+    image: mcr.microsoft.com/mssql/server:latest
     environment:
       - SA_PASSWORD=Pass@word
       - ACCEPT_EULA=Y

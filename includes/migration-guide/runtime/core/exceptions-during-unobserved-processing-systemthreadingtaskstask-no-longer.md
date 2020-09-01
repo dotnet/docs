@@ -35,10 +35,10 @@ If an app depends on unobserved asynchronous exceptions propagating to the final
 - `M:System.Threading.Tasks.Task.Run(System.Action,System.Threading.CancellationToken)`
 - `M:System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task})`
 - `M:System.Threading.Tasks.Task.Run(System.Func{System.Threading.Tasks.Task},System.Threading.CancellationToken)`
-- `M:System.Threading.Tasks.Task.Run``1(System.Func{``0})`
-- `M:System.Threading.Tasks.Task.Run``1(System.Func{``0},System.Threading.CancellationToken)`
-- `M:System.Threading.Tasks.Task.Run``1(System.Func{System.Threading.Tasks.Task{``0}})`
-- `M:System.Threading.Tasks.Task.Run``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)`
+- ``M:System.Threading.Tasks.Task.Run``1(System.Func{``0})``
+- ``M:System.Threading.Tasks.Task.Run``1(System.Func{``0},System.Threading.CancellationToken)``
+- ``M:System.Threading.Tasks.Task.Run``1(System.Func{System.Threading.Tasks.Task{``0}})``
+- ``M:System.Threading.Tasks.Task.Run``1(System.Func{System.Threading.Tasks.Task{``0}},System.Threading.CancellationToken)``
 - `M:System.Threading.Tasks.Task.Start`
 - `M:System.Threading.Tasks.Task.Start(System.Threading.Tasks.TaskScheduler)`
 

@@ -27,7 +27,7 @@ If your code relies on handling the <xref:System.NullReferenceException?displayP
 
 - `M:System.Activities.CodeActivity.Execute(System.Activities.CodeActivityContext)`
 - `M:System.Activities.AsyncCodeActivity.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)`
-- `M:System.Activities.AsyncCodeActivity`1.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)`
+- ``M:System.Activities.AsyncCodeActivity`1.BeginExecute(System.Activities.AsyncCodeActivityContext,System.AsyncCallback,System.Object)``
 - `M:System.Activities.WorkflowInvoker.Invoke`
 
 -->

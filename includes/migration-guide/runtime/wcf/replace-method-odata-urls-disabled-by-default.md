@@ -22,6 +22,6 @@ If the replace method is required (which is uncommon), it can be re-enabled thro
 
 #### Affected APIs
 
-- `T:System.Data.Services.DataService`1`
+- ``T:System.Data.Services.DataService`1``
 
 -->

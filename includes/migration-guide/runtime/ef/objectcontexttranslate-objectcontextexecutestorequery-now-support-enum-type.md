@@ -25,9 +25,9 @@ If Translate or ExecuteStoreQuery was called on an enum type in .NET Framework 4
 
 #### Affected APIs
 
-- `M:System.Data.Objects.ObjectContext.Translate``1(System.Data.Common.DbDataReader)`
-- `M:System.Data.Objects.ObjectContext.Translate``1(System.Data.Common.DbDataReader,System.String,System.Data.Objects.MergeOption)`
-- `M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.Object[])`
-- `M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.String,System.Data.Objects.MergeOption,System.Object[])`
+- ``M:System.Data.Objects.ObjectContext.Translate``1(System.Data.Common.DbDataReader)``
+- ``M:System.Data.Objects.ObjectContext.Translate``1(System.Data.Common.DbDataReader,System.String,System.Data.Objects.MergeOption)``
+- ``M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.Object[])``
+- ``M:System.Data.Objects.ObjectContext.ExecuteStoreQuery``1(System.String,System.String,System.Data.Objects.MergeOption,System.Object[])``
 
 -->

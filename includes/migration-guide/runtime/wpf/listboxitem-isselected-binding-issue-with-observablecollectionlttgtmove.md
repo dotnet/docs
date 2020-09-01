@@ -23,7 +23,7 @@ Calling <xref:System.Collections.ObjectModel.Collection%601.Remove(%600)?display
 
 #### Affected APIs
 
-- `M:System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)`
-- `M:System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)`
+- ``M:System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)``
+- ``M:System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)``
 
 -->

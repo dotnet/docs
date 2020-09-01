@@ -22,6 +22,6 @@ This issue is fixed in the .NET Framework 4.5.1. Upgrading to that Framework wil
 
 #### Affected APIs
 
-- `M:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek(`0@)`
+- ``M:System.Collections.Concurrent.ConcurrentQueue`1.TryPeek(`0@)``
 
 -->

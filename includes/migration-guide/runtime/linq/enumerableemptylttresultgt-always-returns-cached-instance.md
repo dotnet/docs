@@ -22,6 +22,6 @@ Because the previous behavior was non-deterministic, code is unlikely to depend 
 
 #### Affected APIs
 
-- `M:System.Linq.Enumerable.Empty``1`
+- ``M:System.Linq.Enumerable.Empty``1``
 
 -->

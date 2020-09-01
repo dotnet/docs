@@ -80,7 +80,7 @@ Enhance the application to prompt the user for their name and display it along w
 
    :::code language="csharp" source="./snippets/with-visual-studio/csharp/Program.cs" id="MainMethod":::
 
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the <kbd>enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it displays these values in the console window.
+   This code displays a prompt in the console window and waits until the user enters a string followed by the <kbd>enter</kbd> key. It stores this string in a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. And it displays these values in the console window. Finally, it displays a prompt in the console window and calls the <xref:System.Console.ReadKey(System.Boolean)?displayProperty=nameWithType> method to wait for user input.
 
    The `\n` represents a newline character.
 
@@ -99,4 +99,4 @@ Enhance the application to prompt the user for their name and display it along w
 In this tutorial, you created a .NET Core console application. In the next tutorial, you debug the app.
 
 > [!div class="nextstepaction"]
-> [Debug a .NET Core console application in Visual Studio](debugging-with-visual-studio-mac.md)
+> [Debug a .NET Core console application using Visual Studio for Mac](debugging-with-visual-studio-mac.md)

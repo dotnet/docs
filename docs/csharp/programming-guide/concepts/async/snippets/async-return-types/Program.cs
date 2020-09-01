@@ -6,12 +6,12 @@ namespace AsyncExamples
     {
         static async Task Main()
         {
-            await FirstExample.ShowTodaysInfo();
-            await SecondExample.ShowTodaysInfo();
-            await ExampleTask.DisplayCurrentInfo();
-            await AwaitTaskExample.DisplayCurrentInfo();
-            await AsyncVoidExample.Main();
-            await AsyncStreamExample.Examples();
+            await FirstExample.ShowTodaysInfoAsync();
+            await SecondExample.ShowTodaysInfoAsync();
+            await ExampleTask.DisplayCurrentInfoAsync();
+            await AwaitTaskExample.DisplayCurrentInfoAsync();
+            await AsyncVoidExample.MultipleEventHandlersAsync();
+            await AsyncStreamExample.ReadWordsAsync();
         }
     }
 }

@@ -200,5 +200,5 @@ At compile time, Visual Studio first converts the .resx files in a project to bi
 ## See also
 
 - <xref:System.Resources>
-- [Resources in Desktop Apps](index.md)
+- [Resources in .NET Apps](index.md)
 - [Packaging and Deploying Resources](packaging-and-deploying-resources-in-desktop-apps.md)

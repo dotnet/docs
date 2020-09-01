@@ -1,4 +1,5 @@
 ---
+description: "delegate operator - C# reference"
 title: "delegate operator - C# reference"
 ms.date: 07/18/2019
 helpviewer_keywords:

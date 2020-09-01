@@ -33,7 +33,7 @@ A useful step in analyzing a solution with many projects would be to visualize t
 
 To retrieve this, you may run the following command:
 
-```
+```console
 ApiPort.exe analyze -r DGML -f [directory or file]
 ```
 

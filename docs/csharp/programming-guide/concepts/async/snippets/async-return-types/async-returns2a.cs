@@ -3,30 +3,31 @@ using System.Threading.Tasks;
 
 public class AwaitTaskExample
 {
-    public static async Task DisplayCurrentInfo()
+    public static async Task DisplayCurrentInfoAsync()
     {
-        // <SnippetAwaitTask>
-        Task wait = WaitAndApologize();
+        // <AwaitTask>
+        Task waitAndApologizeTask = WaitAndApologizeAsync();
 
-        string output = $"Today is {DateTime.Now:D}\n" +
-                        $"The current time is {DateTime.Now.TimeOfDay:t}\n" +
-                        $"The current temperature is 76 degrees.\n";
-        await wait;
+        string output =
+            $"Today is {DateTime.Now:D}\n" +
+            $"The current time is {DateTime.Now.TimeOfDay:t}\n" +
+            "The current temperature is 76 degrees.\n";
+
+        await waitAndApologizeTask;
         Console.WriteLine(output);
-        // </SnippetAwaitTask>
+        // </AwaitTask>
     }
 
-    static async Task WaitAndApologize()
+    static async Task WaitAndApologizeAsync()
     {
-        // Task.Delay is a placeholder for actual work.
         await Task.Delay(2000);
-        // Task.Delay delays the following line by two seconds.
-        Console.WriteLine("\nSorry for the delay. . . .\n");
+
+        Console.WriteLine("Sorry for the delay...\n");
     }
+    // Example output:
+    //    Sorry for the delay...
+    //
+    // Today is Monday, August 17, 2020
+    // The current time is 12:59:24.2183304
+    // The current temperature is 76 degrees.
 }
-// The example displays the following output:
-//       Sorry for the delay. . . .
-//
-//       Today is Wednesday, May 24, 2017
-//       The current time is 15:25:16.2935649
-//       The current temperature is 76 degrees.

@@ -1,4 +1,5 @@
 ---
+description: "C# preprocessor directives"
 title: "C# preprocessor directives"
 ms.date: 07/20/2015
 f1_keywords: 

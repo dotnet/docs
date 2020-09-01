@@ -80,7 +80,7 @@ Press p to pause, r to resume, q to quit.
 
 With the web app running, immediately after startup, the CPU isn't being consumed at all and is reported at `0%`. Navigate to the `api/diagscenario/highcpu` route with `60000` as the route parameter:
 
-[https://localhost:5001/api/diagscenario/highcpu/60000](https://localhost:5001/api/diagscenario/highcpu/60000)
+`https://localhost:5001/api/diagscenario/highcpu/60000`
 
 Now, rerun the [dotnet-counters](dotnet-counters.md) command. To monitor just the `cpu-usage`, specify `System.Runtime[cpu-usage]` as part of the command.
 
@@ -122,7 +122,7 @@ export COMPlus_PerfMapEnabled=1
 dotnet run
 ```
 
-Exercise the high CPU API (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again. While it's running within the 1-minute request, run the `perf` command with your process ID:
+Exercise the high CPU API endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, run the `perf` command with your process ID:
 
 ```bash
 sudo perf record -p 2266 -g
@@ -147,7 +147,7 @@ This command generates a `flamegraph.svg` that you can view in the browser to in
 
 ### [Windows](#tab/windows)
 
-On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU (<https://localhost:5001/api/diagscenario/highcpu/60000>) endpoint again. While it's running within the 1-minute request, use the `collect` command as follows:
+On Windows, you can use the [dotnet-trace](dotnet-trace.md) tool as a profiler. Using the previous [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios), exercise the high CPU endpoint (`https://localhost:5001/api/diagscenario/highcpu/60000`) again. While it's running within the 1-minute request, use the `collect` command as follows:
 
 ```dotnetcli
 dotnet-trace collect -p 22884 --providers Microsoft-DotNETCore-SampleProfiler

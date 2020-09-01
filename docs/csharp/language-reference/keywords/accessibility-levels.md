@@ -1,4 +1,5 @@
 ---
+description: "Accessibility Levels - C# Reference"
 title: "Accessibility Levels - C# Reference"
 ms.date: 12/06/2017
 helpviewer_keywords: 

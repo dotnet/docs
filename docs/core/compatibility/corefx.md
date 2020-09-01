@@ -12,6 +12,11 @@ The following breaking changes are documented on this page:
 | Breaking change | Version introduced |
 | - | :-: |
 | [Hardware intrinsic IsSupported checks may differ for nested types](#hardware-intrinsic-issupported-checks-may-differ-for-nested-types) | 5.0 |
+| [Parameter names changed in reference assemblies](#parameter-names-changed-in-reference-assemblies) | 5.0 |
+| [URI paths with non-ASCII characters parse correctly on Unix](#uri-paths-with-non-ascii-characters-parse-correctly-on-unix) | 5.0 |
+| [Uri recognition of UNC paths on Unix](#uri-recognition-of-unc-paths-on-unix) | 5.0 |
+| [Environment.OSVersion returns the correct operating system version](#environmentosversion-returns-the-correct-operating-system-version) | 5.0 |
+| [Complexity of LINQ OrderBy.First{OrDefault} increased](#complexity-of-linq-orderbyfirstordefault-increased) | 5.0 |
 | [IntPtr and UIntPtr implement IFormattable](#intptr-and-uintptr-implement-iformattable) | 5.0 |
 | [PrincipalPermissionAttribute is obsolete as error](#principalpermissionattribute-is-obsolete-as-error) | 5.0 |
 | [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps) | 5.0 |
@@ -42,6 +47,26 @@ The following breaking changes are documented on this page:
 ## .NET 5.0
 
 [!INCLUDE [hardware-instrinsics-issupported-checks](../../../includes/core-changes/corefx/5.0/hardware-instrinsics-issupported-checks.md)]
+
+***
+
+[!INCLUDE [reference-assembly-parameter-names](../../../includes/core-changes/corefx/5.0/reference-assembly-parameter-names.md)]
+
+***
+
+[!INCLUDE [non-ascii-chars-in-uri-parsed-correctly](../../../includes/core-changes/corefx/5.0/non-ascii-chars-in-uri-parsed-correctly.md)]
+
+***
+
+[!INCLUDE [unc-path-recognition-unix](../../../includes/core-changes/corefx/5.0/unc-path-recognition-unix.md)]
+
+***
+
+[!INCLUDE [environment-osversion-returns-correct-version](../../../includes/core-changes/corefx/5.0/environment-osversion-returns-correct-version.md)]
+
+***
+
+[!INCLUDE [orderby-firstordefault-complexity-increase](../../../includes/core-changes/corefx/5.0/orderby-firstordefault-complexity-increase.md)]
 
 ***
 

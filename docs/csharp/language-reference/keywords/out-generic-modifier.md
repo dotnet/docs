@@ -1,4 +1,5 @@
 ---
+description: "out keyword (generic modifier) - C# Reference"
 title: "out keyword (generic modifier) - C# Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

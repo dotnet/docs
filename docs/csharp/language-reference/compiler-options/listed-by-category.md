@@ -1,4 +1,5 @@
 ---
+description: "C# Compiler Options Listed by Category"
 title: "C# Compiler Options Listed by Category"
 ms.date: 06/04/2020
 helpviewer_keywords: 

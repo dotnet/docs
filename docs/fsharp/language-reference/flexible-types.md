@@ -1,7 +1,7 @@
 ---
 title: Flexible Types
 description: Learn how to use F# flexible type annotation, which indicates that a parameter, variable, or value has a type that is compatible with a specified type.
-ms.date: 05/16/2016
+ms.date: 08/15/2020
 ---
 # Flexible Types
 
@@ -31,7 +31,7 @@ Consider the following two functions, one of which returns a sequence, the other
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet4101.fs)]
 
-As another example, consider the [Seq.concat](https://msdn.microsoft.com/library/2eeb69a9-fc2f-4b7d-8dee-101fa2b00712) library function:
+As another example, consider the [Seq.concat](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-collections-seqmodule.html#concat) library function:
 
 ```fsharp
 val concat: sequences:seq<#seq<'T>> -> seq<'T>

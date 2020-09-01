@@ -1,4 +1,5 @@
 ---
+description: "-target:library (C# Compiler Options)"
 title: "-target:library (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

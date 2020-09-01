@@ -1,16 +1,13 @@
 ---
 title: Symbol and Operator Reference
 description: Learn about the symbols and operators that are used in the F# programming language.
-ms.date: 02/11/2019
+ms.date: 08/15/2020
 fl_keywords:
  - "|>_FS"
 ---
 # Symbol and operator reference
 
 This article includes a table of symbols and operators that are used in the F# language.
-
-> [!NOTE]
-> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 ## Table of symbols and operators
 
@@ -70,9 +67,12 @@ The following table describes symbols used in the F# language and provides a bri
 |`<>?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "not equal" operation when the right side is a nullable type.<br /></li></ul>|
 |`<=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is less than or equal to the right side; otherwise, returns `false`.<br /></li></ul>|
 |`<=?`|[Nullable Operators](nullable-operators.md)|<ul><li>Computes the "less than or equal to" operation when the right side is a nullable type.<br /></li></ul>|
+|<code>&#124;></code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the left side to the function on the right side (forward pipe operator).<br /></li></ul>|
+|<code>&#124;&#124;></code>|[&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20||%3E%20))|<ul><li>Passes the tuple of two arguments on the left side to the function on the right side.<br /></li></ul>|
+|<code>&#124;&#124;&#124;></code>|[&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20|||%3E%20))|<ul><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li></ul>|
 |<code>&lt;&#124;</code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the expression on the right side to the function on left side (backward pipe operator).<br /></li></ul>|
-|<code>&lt;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-%5bhh-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li></ul>|
-|<code>&lt;&#124;&#124;&#124;</code>|[Operators.&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-%5bhhh-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li></ul>|
+|<code>&lt;&#124;&#124;</code>|[&#40; &#60;&#124;&#124; &#41;&#60;'T1,'T2,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%3C||%20))|<ul><li>Passes the tuple of two arguments on the right side to the function on left side.<br /></li></ul>|
+|<code>&lt;&#124;&#124;&#124;</code>|[&#40; &#60;&#124;&#124;&#124; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-operators.html#(%20%3C|||%20))|<ul><li>Passes the tuple of three arguments on the right side to the function on left side.<br /></li></ul>|
 |`<@...@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits a typed code quotation.<br /></li></ul>|
 |`<@@...@@>`|[Code Quotations](../code-quotations.md)|<ul><li>Delimits an untyped code quotation.<br /></li></ul>|
 |`=`|[Arithmetic Operators](arithmetic-operators.md)|<ul><li>Returns `true` if the left side is equal to the right side; otherwise, returns `false`.<br /></li></ul>|
@@ -102,9 +102,6 @@ The following table describes symbols used in the F# language and provides a bri
 |<code>&#124;</code>|[Match Expressions](../match-expressions.md)|<ul><li>Delimits individual match cases, individual discriminated union cases, and enumeration values.<br /></li></ul>|
 |<code>&#124;&#124;</code>|[Boolean Operators](boolean-operators.md)|<ul><li>Computes the Boolean OR operation.<br /></li></ul>|
 |<code>&#124;&#124;&#124;</code>|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise OR operation.<br /></li></ul>|
-|<code>&#124;></code>|[Functions](../functions/index.md)|<ul><li>Passes the result of the left side to the function on the right side (forward pipe operator).<br /></li></ul>|
-|<code>&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#62; &#41;&#60;'T1,'T2,'U&#62; Function](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-hh%5d-%5d%5b%27t1%2c%27t2%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of two arguments on the left side to the function on the right side.<br /></li></ul>|
-|<code>&#124;&#124;&#124;></code>|[Operators.&#40; &#124;&#124;&#124;&#62; &#41;&#60;'T1,'T2,'T3,'U&#62; Function](https://msdn.microsoft.com/visualfsharpdocs/conceptual/operators.%5b-hhh%5d-%5d%5b%27t1%2c%27t2%2c%27t3%2c%27u%5d-function-%5bfsharp%5d)|<ul><li>Passes the tuple of three arguments on the left side to the function on the right side.<br /></li></ul>|
 |`~~`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary negation operator.<br /></li></ul>|
 |`~~~`|[Bitwise Operators](bitwise-operators.md)|<ul><li>Computes the bitwise NOT operation.<br /></li></ul>|
 |`~-`|[Operator Overloading](../operator-overloading.md)|<ul><li>Used to declare an overload for the unary minus operator.<br /></li></ul>|

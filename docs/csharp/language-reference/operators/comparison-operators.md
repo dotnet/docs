@@ -37,25 +37,25 @@ The [`==` and `!=` operators](equality-operators.md) check if their operands are
 
 The `<` operator returns `true` if its left-hand operand is less than its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[less than example](snippets/ComparisonOperators.cs#Less)]
+[!code-csharp-interactive[less than example](snippets/shared/ComparisonOperators.cs#Less)]
 
 ## Greater than operator >
 
 The `>` operator returns `true` if its left-hand operand is greater than its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[greater than example](snippets/ComparisonOperators.cs#Greater)]
+[!code-csharp-interactive[greater than example](snippets/shared/ComparisonOperators.cs#Greater)]
 
 ## Less than or equal operator \<=
 
 The `<=` operator returns `true` if its left-hand operand is less than or equal to its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[less than or equal example](snippets/ComparisonOperators.cs#LessOrEqual)]
+[!code-csharp-interactive[less than or equal example](snippets/shared/ComparisonOperators.cs#LessOrEqual)]
 
 ## Greater than or equal operator >=
 
 The `>=` operator returns `true` if its left-hand operand is greater than or equal to its right-hand operand, `false` otherwise:
 
-[!code-csharp-interactive[greater than or equal example](snippets/ComparisonOperators.cs#GreaterOrEqual)]
+[!code-csharp-interactive[greater than or equal example](snippets/shared/ComparisonOperators.cs#GreaterOrEqual)]
 
 ## Operator overloadability
 
@@ -70,6 +70,6 @@ For more information, see the [Relational and type-testing operators](~/_csharpl
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - <xref:System.IComparable%601?displayProperty=nameWithType>
 - [Equality operators](equality-operators.md)

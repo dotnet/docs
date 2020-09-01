@@ -1,5 +1,6 @@
 ---
 title: "Sn.exe (Strong Name Tool)"
+description: Get started with Sn.exe, the Strong Name tool. Sign assemblies with strong names. Manage keys, and generate and verify signatures.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "public keys, signing files"

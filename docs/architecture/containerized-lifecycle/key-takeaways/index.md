@@ -1,7 +1,7 @@
 ---
 title: Key takeaways
 description: Review the key takeaways for the guide.
-ms.date: 04/20/2020
+ms.date: 08/06/2020
 ---
 
 # Key takeaways

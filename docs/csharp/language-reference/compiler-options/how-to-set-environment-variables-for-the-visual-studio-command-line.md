@@ -1,4 +1,5 @@
 ---
+description: "How to set environment variables for the Visual Studio Command Line"
 title: "How to set environment variables for the Visual Studio Command Line"
 ms.date: "12/20/2019"
 f1_keywords:

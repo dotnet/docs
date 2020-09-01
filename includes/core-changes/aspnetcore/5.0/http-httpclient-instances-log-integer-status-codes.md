@@ -10,7 +10,7 @@
 
 Logging uses the textual descriptions of HTTP status codes. Consider the following log messages:
 
-```
+```output
 Received HTTP response after 56.0044ms - OK
 End processing HTTP request after 70.0862ms - OK
 ```
@@ -19,7 +19,7 @@ End processing HTTP request after 70.0862ms - OK
 
 Logging uses the integer values of HTTP status codes. Consider the following log messages:
 
-```
+```output
 Received HTTP response after 56.0044ms - 200
 End processing HTTP request after 70.0862ms - 200
 ```

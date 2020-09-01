@@ -24,7 +24,6 @@
 ' *****************************************************************************
 Imports System.Collections.Generic
 Imports System.Text
-Imports System.Windows.Forms
 Imports System.Windows.Automation
 Imports System.Diagnostics
 Imports System.Threading

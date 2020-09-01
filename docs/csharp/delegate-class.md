@@ -139,7 +139,7 @@ phrases.Sort(comparer);
 ```
 
 In uses where the method being used as a delegate target is a small method,
-it's common to use [lambda expression](./programming-guide/statements-expressions-operators/lambda-expressions.md) syntax
+it's common to use [lambda expression](language-reference/operators/lambda-expressions.md) syntax
 to perform the assignment:
 
 ```csharp

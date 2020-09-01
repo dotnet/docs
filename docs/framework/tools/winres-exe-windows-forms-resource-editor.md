@@ -1,5 +1,6 @@
 ---
 title: "Winres.exe (Windows Resource Localization Editor)"
+description: Use Winres.exe, the Windows Resource Localization Editor. This visual layout tool helps localization experts localize Windows Forms UI resources used by forms.
 ms.date: 08/15/2018
 helpviewer_keywords:
   - "Winres.exe"

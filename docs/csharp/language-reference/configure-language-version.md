@@ -1,6 +1,7 @@
 ---
 title: C# language versioning - C# Guide
 description: Learn about how the C# language version is determined based on your project and the reasons behind that choice. Learn how to override the default manually.
+ms.custom: "updateeachrelease"
 ms.date: 05/20/2020
 ---
 
@@ -31,6 +32,9 @@ The compiler determines a default based on these rules:
 | .NET Framework   | all     | C# 7.3                      |
 
 When your project targets a preview framework that has a corresponding preview language version, the language version used is the preview language version. You use the latest features with that preview in any environment, without affecting projects that target a released .NET Core version.
+
+> [!TIP]
+> To know what language version you're currently using, put `#error version` (case sensitive) in your code. This makes the compiler produce a diagnostic, CS8304, with a message containing the compiler version being used and the current selected language version.
 
 ## Override a default
 

@@ -18,7 +18,7 @@ You also use the `default` keyword as the default case label within a [`switch` 
 
 The argument to the `default` operator must be the name of a type or a type parameter, as the following example shows:
 
-[!code-csharp-interactive[default of T](snippets/DefaultOperator.cs#WithOperand)]
+[!code-csharp-interactive[default of T](snippets/shared/DefaultOperator.cs#WithOperand)]
 
 ## default literal
 
@@ -31,7 +31,7 @@ Beginning with C# 7.1, you can use the `default` literal to produce the default 
 
 The following example shows the usage of the `default` literal:
 
-[!code-csharp-interactive[default literal](snippets/DefaultOperator.cs#DefaultLiteral)]
+[!code-csharp-interactive[default literal](snippets/shared/DefaultOperator.cs#DefaultLiteral)]
 
 ## C# language specification
 
@@ -42,6 +42,6 @@ For more information about the `default` literal, see the [feature proposal note
 ## See also
 
 - [C# reference](../index.md)
-- [C# operators](index.md)
+- [C# operators and expressions](index.md)
 - [Default values of C# types](../builtin-types/default-values.md)
 - [Generics in .NET](../../../standard/generics/index.md)

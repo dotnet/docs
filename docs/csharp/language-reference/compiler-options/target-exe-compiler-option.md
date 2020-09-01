@@ -1,4 +1,5 @@
 ---
+description: "-target:exe (C# Compiler Options)"
 title: "-target:exe (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

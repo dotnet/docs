@@ -1,7 +1,7 @@
 ---
 title: Lazy Expressions
 description: Learn how F# lazy expressions can improve the performance of your apps and libraries.
-ms.date: 03/13/2019
+ms.date: 08/15/2020
 ---
 # Lazy Expressions
 
@@ -15,7 +15,7 @@ let identifier = lazy ( expression )
 
 ## Remarks
 
-In the previous syntax, *expression* is code that is evaluated only when a result is required, and *identifier* is a value that stores the result. The value is of type [`Lazy<'T>`](https://msdn.microsoft.com/library/b29d0af5-6efb-4a55-a278-2662a4ecc489), where the actual type that is used for `'T` is determined from the result of the expression.
+In the previous syntax, *expression* is code that is evaluated only when a result is required, and *identifier* is a value that stores the result. The value is of type [`Lazy<'T>`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-lazy-1-0.html), where the actual type that is used for `'T` is determined from the result of the expression.
 
 Lazy expressions enable you to improve performance by restricting the execution of an expressions to only those situations in which a result is needed.
 
@@ -30,4 +30,4 @@ Lazy evaluation, but not the `Lazy` type, is also used for sequences. For more i
 ## See also
 
 - [F# Language Reference](index.md)
-- [LazyExtensions module](https://msdn.microsoft.com/library/86671f40-84a0-402a-867d-ae596218d948)
+- [LazyExtensions module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-control-lazyextensions.html)

@@ -7,7 +7,7 @@ namespace TransformationCS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             // <SnippetDeclareTestCompilation>
             Compilation test = CreateTestCompilation();

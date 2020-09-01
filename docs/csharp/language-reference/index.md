@@ -1,6 +1,9 @@
 ---
+description: "C# reference"
 title: "C# reference"
 ms.date: 02/14/2017
+f1_keywords: 
+  - _CSharpKeyword
 helpviewer_keywords: 
   - "Visual C#, language reference"
   - "language reference [C#]"
@@ -53,7 +56,7 @@ The features that have been implemented in C# versions after 6.0 are represented
  [C# 8.0 Specification Proposals](../../../_csharplang/proposals/csharp-8.0/nullable-reference-types.md)  
  C# 8.0 is available with .NET Core 3.0. The features include nullable reference types, recursive pattern matching, default interface methods, async streams, ranges and indexes, pattern based using and using declarations, null coalescing assignment, and readonly instance members.
   
-## Related Sections  
+## Related sections  
 
  [Using the Visual Studio Development Environment for C#](/visualstudio/get-started/csharp)  
  Provides links to conceptual and task topics that describe the IDE and Editor.  

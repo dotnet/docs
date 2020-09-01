@@ -1,27 +1,32 @@
 ---
-name: .NET Core breaking change
-about: Report a change in .NET Core that breaks something that worked in a previous version (intended mostly for product-team use)
+name: ".NET Core breaking change"
+about: Report a change in .NET Core that breaks something that worked in a previous
+  version (intended mostly for product-team use)
+title: ''
+labels: ''
+assignees: ''
+
 ---
 
 <!--
-This issue template is for use in creating issues that document breaking changes. This template can be used to create an issue:
+	This issue template is for use in creating issues that document breaking changes. This template can be used to create an issue:
 
-- By Microsoft product team members who are documenting a breaking change.
+	- By Microsoft product team members who are documenting a breaking change.
 
-- By Microsoft customers who are experiencing a compatibility issue between .NET Framework and .NET Core or between versions of .NET Core.
+	- By Microsoft customers who are experiencing a compatibility issue between .NET Framework and .NET Core or between versions of .NET Core.
 
-Text in brackets is a placeholder; replace the text with the requested information and remove the brackets before submitting the issue.
+	Text in brackets is a placeholder; replace the text with the requested information and remove the brackets before submitting the issue.
 
-Also, remove this comment before submitting the issue.
+	Also, remove this comment before submitting the issue.
 -->
 
-## [Change title]
+## <!-- Change title -->
 
-[Brief description of the change]
+<!-- Brief description of the change -->
 
 ### Version introduced
 
-[Version in which the breaking change first occurred (for example, 3.0 for .NET Core 3.0)]
+<!-- Version in which the breaking change first occurred (for example, 3.0 for .NET Core 3.0) -->
 
 ### Old behavior
 
@@ -31,42 +36,42 @@ Also, remove this comment before submitting the issue.
 
 ### Recommended action
 
-[ Suggested steps if user is affected go here:
-- Possible workarounds
-- Example of code changes to handle change
-]
+<!--
+	Suggested steps if user is affected go here:
+	- Possible workarounds
+	- Example of code changes to handle change
+-->
 
 ### Category
 
-[Choose a category from one of the following:
+<!-- Choose a category from one of the following: -->
 
-- ASP.NET Core
-- C#
-- Core
-- Core .NET libraries
-- Cryptography
-- Data
-- Debugger
-- Deployment for .NET Core
-- Globalization
-- Interop
-- JIT
-- LINQ
-- Managed Extensibility Framework (MEF)
-- MSBuild
-- Networking
-- Printing
-- Security
-- Serialization
-- Visual Basic
-- Windows Forms
-- Windows Presentation Foundation (WPF)
-- XML, XSLT
-]
+- [ ] ASP.NET Core
+- [ ] C#
+- [ ] Code analysis
+- [ ] Core .NET libraries
+- [ ] Cryptography
+- [ ] Data
+- [ ] Debugger
+- [ ] Deployment
+- [ ] Globalization
+- [ ] Interop
+- [ ] JIT
+- [ ] LINQ
+- [ ] Managed Extensibility Framework (MEF)
+- [ ] MSBuild
+- [ ] Networking
+- [ ] Printing
+- [ ] Security
+- [ ] Serialization
+- [ ] Visual Basic
+- [ ] Windows Forms
+- [ ] Windows Presentation Foundation (WPF)
+- [ ] XML, XSLT
 
 ### Affected APIs
 
-[ If no APIs are affected, this should read:
+<!-- If no APIs are affected, this should read:
      "Not detectable via API analysis"
 
   If affected APIs are identifiable, include a link for each. The link takes the form:
@@ -82,8 +87,7 @@ Also, remove this comment before submitting the issue.
   Otherwise, link to the individual method overload. For example:
 
   <https://docs.microsoft.com/dotnet/api/system.string.indexof#System_String_IndexOf_System_String_>
-
-]
+-->
 
 <!-- Do not modify anything below this line -->
 

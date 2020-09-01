@@ -1,4 +1,4 @@
-Module Program
+﻿Module Program
     Sub Main(args As String())
         ' <MainMethod>
         Console.WriteLine(vbCrLf + "What is your name? ")

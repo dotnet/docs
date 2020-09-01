@@ -1,4 +1,4 @@
-using System.Windows; // Window, RoutedEventArgs, MessageBox
+﻿using System.Windows; // Window, RoutedEventArgs, MessageBox
 
 namespace SDKSample
 {

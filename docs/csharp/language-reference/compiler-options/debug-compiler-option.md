@@ -1,4 +1,5 @@
 ---
+description: "-debug (C# Compiler Options)"
 title: "-debug (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

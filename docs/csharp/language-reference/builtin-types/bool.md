@@ -1,9 +1,14 @@
 ---
+description: Learn about the built-in boolean type in C#
 title: "bool type - C# reference"
 ms.date: 11/26/2019
 f1_keywords: 
-  - "bool"
-  - "bool_CSharpKeyword"
+  - bool
+  - bool_CSharpKeyword
+  - "true"
+  - "false"
+  - true_CSharpKeyword
+  - false_CSharpKeyword
 helpviewer_keywords: 
   - "bool data type [C#]"
   - "Boolean [C#]"

@@ -1,7 +1,7 @@
 ---
 title: "Secure coding guidelines for .NET"
 description: Design code to work with .NET-enforced permissions and other enforcement to help prevent malicious code from accessing data or performing other actions.
-ms.date: "06/28/2018"
+ms.date: 07/15/2020
 helpviewer_keywords: 
   - "managed wrapper to native code implementation"
   - "secure coding"
@@ -18,7 +18,7 @@ ms.assetid: 4f882d94-262b-4494-b0a6-ba9ba1f5f177
 ---
 # Secure coding guidelines
 
-Evidence-based security and code access security provide very powerful, explicit mechanisms to implement security. Most application code can simply use the infrastructure implemented by .NET. In some cases, additional application-specific security is required, built either by extending the security system or by using new ad hoc methods.
+Most application code can simply use the infrastructure implemented by .NET. In some cases, additional application-specific security is required, built either by extending the security system or by using new ad hoc methods.
 
 Using .NET enforced permissions and other enforcement in your code, you should erect barriers to prevent malicious code from accessing information that you don't want it to have or performing other undesirable actions. Additionally, you must strike a balance between security and usability in all the expected scenarios using trusted code.
 
@@ -72,12 +72,11 @@ Instead of giving unmanaged code rights to all applications that use these wrapp
 
 The following approach is the most powerful and hence potentially dangerous (if done incorrectly) for security coding: your library serves as an interface for other code to access certain resources that aren't otherwise available, just as the .NET classes enforce permissions for the resources they use. Wherever you expose a resource, your code must first demand the permission appropriate to the resource (that is, it must perform a security check) and then typically assert its rights to perform the actual operation.
 
-## Related topics
+## See also
 
-|Title|Description|
-|-----------|-----------------|
-|[Securing State Data](securing-state-data.md)|Describes how to protect private members.|
-|[Security and User Input](security-and-user-input.md)|Describes security concerns for applications that accept user input.|
-|[Security and Race Conditions](security-and-race-conditions.md)|Describes how to avoid race conditions in your code.|
-|[Security and On-the-Fly Code Generation](security-and-on-the-fly-code-generation.md)|Describes security concerns for applications that generate dynamic code.|
-|[Role-Based Security](role-based-security.md)|Describes .NET role-based security in detail and provides instructions for using it in your code.|
+- [Securing State Data](securing-state-data.md)
+- [Security and User Input](security-and-user-input.md)
+- [Security and Race Conditions](security-and-race-conditions.md)
+- [Security and On-the-Fly Code Generation](security-and-on-the-fly-code-generation.md)
+- [Role-Based Security](role-based-security.md)
+- [ASP.NET Core Security](/aspnet/core/security/)

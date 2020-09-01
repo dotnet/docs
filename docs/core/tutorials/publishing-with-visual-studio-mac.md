@@ -9,13 +9,13 @@ This tutorial shows how to publish a console app so that other users can run it.
 
 ## Prerequisites
 
-- This tutorial works with the console app that you create in [Create a .NET Core console application in Visual Studio for Mac](with-visual-studio-mac.md).
+- This tutorial works with the console app that you create in [Create a .NET Core console application using Visual Studio for Mac](with-visual-studio-mac.md).
 
 ## Publish the app
 
 1. Start Visual Studio for Mac.
 
-1. Open the HelloWorld project that you created in [Create a .NET Core console application in Visual Studio for Mac](with-visual-studio-mac.md).
+1. Open the HelloWorld project that you created in [Create a .NET Core console application using Visual Studio for Mac](with-visual-studio-mac.md).
 
 1. Make sure that Visual Studio is building the Release version of your application. If necessary, change the build configuration setting on the toolbar from **Debug** to **Release**.
 
@@ -63,7 +63,7 @@ As the preceding image shows, the published output includes the following files:
 
 1. Open a terminal and navigate to the *publish* folder. To do that, enter `cd` and then paste the path that you copied earlier. For example:
 
-   ```
+   ```console
    cd ~/Projects/HelloWorld/HelloWorld/bin/Release/netcoreapp3.1/publish/
    ```
 
@@ -82,4 +82,4 @@ As the preceding image shows, the published output includes the following files:
 In this tutorial, you published a console app. In the next tutorial, you create a class library.
 
 > [!div class="nextstepaction"]
-> [Create a .NET Standard library in Visual Studio for mac](library-with-visual-studio-mac.md)
+> [Create a .NET Standard library using Visual Studio for Mac](library-with-visual-studio-mac.md)

@@ -131,19 +131,16 @@ namespace CryptoWalkThru
         private void EncryptFile(string inFile)
         {
 
-            // Create instance of Rijndael for
-            // symetric encryption of the data.
-            RijndaelManaged rjndl = new RijndaelManaged();
-            rjndl.KeySize = 256;
-            rjndl.BlockSize = 256;
-            rjndl.Mode = CipherMode.CBC;
-            ICryptoTransform transform = rjndl.CreateEncryptor();
+            // Create instance of Aes for
+            // symmetric encryption of the data.
+            Aes aes = Aes.Create();
+            ICryptoTransform transform = aes.CreateEncryptor();
 
             // Use RSACryptoServiceProvider to
-            // enrypt the Rijndael key.
+            // encrypt the AES key.
             // rsa is previously instantiated:
             //    rsa = new RSACryptoServiceProvider(cspp);
-            byte[] keyEncrypted = rsa.Encrypt(rjndl.Key, false);
+            byte[] keyEncrypted = rsa.Encrypt(aes.Key, false);
 
             // Create byte arrays to contain
             // the length values of the key and IV.
@@ -152,7 +149,7 @@ namespace CryptoWalkThru
 
             int lKey = keyEncrypted.Length;
             LenK = BitConverter.GetBytes(lKey);
-            int lIV = rjndl.IV.Length;
+            int lIV = aes.IV.Length;
             LenIV = BitConverter.GetBytes(lIV);
 
             // Write the following to the FileStream
@@ -173,7 +170,7 @@ namespace CryptoWalkThru
                 outFs.Write(LenK, 0, 4);
                 outFs.Write(LenIV, 0, 4);
                 outFs.Write(keyEncrypted, 0, lKey);
-                outFs.Write(rjndl.IV, 0, lIV);
+                outFs.Write(aes.IV, 0, lIV);
 
                 // Now write the cipher text using
                 // a CryptoStream for encrypting.
@@ -187,7 +184,7 @@ namespace CryptoWalkThru
                     int offset = 0;
 
                     // blockSizeBytes can be any arbitrary size.
-                    int blockSizeBytes = rjndl.BlockSize / 8;
+                    int blockSizeBytes = aes.BlockSize / 8;
                     byte[] data = new byte[blockSizeBytes];
                     int bytesRead = 0;
 
@@ -217,12 +214,9 @@ namespace CryptoWalkThru
         private void DecryptFile(string inFile)
         {
 
-            // Create instance of Rijndael for
+            // Create instance of Aes for
             // symetric decryption of the data.
-            RijndaelManaged rjndl = new RijndaelManaged();
-            rjndl.KeySize = 256;
-            rjndl.BlockSize = 256;
-            rjndl.Mode = CipherMode.CBC;
+            Aes aes = Aes.Create();
 
             // Create byte arrays to get the length of
             // the encrypted key and IV.
@@ -231,7 +225,7 @@ namespace CryptoWalkThru
             byte[] LenK = new byte[4];
             byte[] LenIV = new byte[4];
 
-            // Consruct the file name for the decrypted file.
+            // Construct the file name for the decrypted file.
             string outFile = DecrFolder + inFile.Substring(0, inFile.LastIndexOf(".")) + ".txt";
 
             // Use FileStream objects to read the encrypted
@@ -256,7 +250,7 @@ namespace CryptoWalkThru
                 int lenC = (int)inFs.Length - startC;
 
                 // Create the byte arrays for
-                // the encrypted Rijndael key,
+                // the encrypted Aes key,
                 // the IV, and the cipher text.
                 byte[] KeyEncrypted = new byte[lenK];
                 byte[] IV = new byte[lenIV];
@@ -271,11 +265,11 @@ namespace CryptoWalkThru
                 Directory.CreateDirectory(DecrFolder);
                 //<Snippet10>
                 // Use RSACryptoServiceProvider
-                // to decrypt the Rijndael key.
+                // to decrypt the AES key.
                 byte[] KeyDecrypted = rsa.Decrypt(KeyEncrypted, false);
 
                 // Decrypt the key.
-                ICryptoTransform transform = rjndl.CreateDecryptor(KeyDecrypted, IV);
+                ICryptoTransform transform = aes.CreateDecryptor(KeyDecrypted, IV);
                 //</Snippet10>
 
                 // Decrypt the cipher text from
@@ -289,7 +283,7 @@ namespace CryptoWalkThru
                     int offset = 0;
 
                     // blockSizeBytes can be any arbitrary size.
-                    int blockSizeBytes = rjndl.BlockSize / 8;
+                    int blockSizeBytes = aes.BlockSize / 8;
                     byte[] data = new byte[blockSizeBytes];
 
                     // By decrypting a chunk a time,

@@ -23,10 +23,10 @@ Class DirectoryCopyExample
         End If
 
         Dim dirs As DirectoryInfo() = dir.GetDirectories()
+        
         ' If the destination directory doesn't exist, create it.
-        If Not Directory.Exists(destDirName) Then
-            Directory.CreateDirectory(destDirName)
-        End If
+        Directory.CreateDirectory(destDirName)
+        
         ' Get the files in the directory and copy them to the new location.
         Dim files As FileInfo() = dir.GetFiles()
         For Each file In files

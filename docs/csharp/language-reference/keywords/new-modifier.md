@@ -1,4 +1,5 @@
 ---
+description: "new modifier - C# Reference"
 title: "new modifier - C# Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

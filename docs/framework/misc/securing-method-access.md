@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
 ---
 # Securing Method Access
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Some methods might not be suitable to allow arbitrary untrusted code to call. Such methods pose several risks: The method might provide some restricted information; it might believe any information passed to it; it might not do error checking on the parameters; or with the wrong parameters, it might malfunction or do something harmful. You should be aware of these cases and take action to help protect the method.  

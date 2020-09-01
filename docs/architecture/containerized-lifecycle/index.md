@@ -1,25 +1,83 @@
 ---
-title: Introduction to Containers and Docker
-description: Get a high level overview of the main benefits of using Docker.
-ms.date: 02/15/2019
+title: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
+description: Get a high-level overview of the development and deployment process for developing and deploying containerized applications with Docker and Microsoft platform and tools.
+ms.date: 07/30/2020
 ---
-# Introduction to containers and Docker
+# Containerized Docker Application Lifecycle with Microsoft Platform and Tools
 
-*Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. You then can test the containerized application as a unit and deploy it as a container image instance to the host operating system (OS).*
+![Book cover](./media/devops-book-cover-large-we.png)
 
-Just as shipping containers allow goods to be transported by ship, train, or truck regardless of the cargo inside, software containers act as a standard unit of software deployment that can contain different code and dependencies. Containerizing software this way enables developers and IT professionals to deploy them across environments with little or no modification.
+**EDITION v3.1** - Updated to ASP.NET Core 3.1
 
-Containers also isolate applications from each other on a shared OS. Containerized applications run on top of a container host that in turn runs on the OS (Linux or Windows). Containers therefore have a much smaller footprint than virtual machine (VM) images.
+This guide is a general overview for developing and deploying containerized ASP.NET Core applications with Docker, using the Microsoft platform and tools. The guide includes a high-level introduction to Azure DevOps, for implementing CI/CD pipelines, as well as Azure Container Registry (ACR), and Azure Kubernetes Services AKS for deployment.
 
-Each container can run a whole web application or a service, as shown in Figure 1-1. In this example, Docker host is a container host, and App1, App2, Svc1, and Svc2 are containerized applications or services.
+For low-level, development-related details you can see the [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/architecture/microservices/) guide and it related reference application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers).
 
-![Diagram showing four containers running in a VM or a server.](./media/index/multiple-containers-single-host.png)
+## Send us your feedback!
 
-**Figure 1-1**. Multiple containers running on a container host
+We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
 
-Another benefit you can derive from containerization is scalability. You can scale out quickly by creating new containers for short-term tasks. From an application point of view, instantiating an image (creating a container) is similar to instantiating a process like a service or web app. For reliability, however, when you run multiple instances of the same image across multiple host servers, you typically want each container (image instance) to run in a different host server or VM in different fault domains.
+## Credits
 
-In short, containers offer the benefits of isolation, portability, agility, scalability, and control across the entire application lifecycle workflow. The most important benefit is the environment isolation provided between Dev and Ops.
+Author:
+
+> **Cesar de la Torre**, Sr. PM, .NET product team, Microsoft Corp.
+
+Acquisitions Editor:
+
+> **Janine Patrick**
+
+Developmental Editor:
+
+> **Bob Russell**, Solutions Professional at Microsoft
+>
+> [**Octal Publishing, Inc.**](http://www.octalpub.com/)
+
+Editorial Production:
+
+> [Dianne Russell](http://www.octalpub.com/)
+>
+> **Octal Publishing, Inc.**
+
+Copyeditor:
+
+> **Bob Russell**, Solutions Professional at Microsoft
+
+Participants and reviewers:
+
+> **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
+>
+> **Miguel Veloso**, Software Development Engineer at Plain Concepts
+>
+> **Sumit Ghosh**, Principal Consultant at Neudesic
+
+## Copyright
+
+PUBLISHED BY
+
+Microsoft Developer Division, .NET and Visual Studio product teams
+
+A division of Microsoft Corporation
+
+One Microsoft Way
+
+Redmond, Washington 98052-6399
+
+Copyright &copy; 2020 by Microsoft Corporation
+
+All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
+
+This book is provided "as-is" and expresses the author's views and opinions. The views, opinions and information expressed in this book, including URL and other Internet website references, may change without notice.
+
+Some examples depicted herein are provided for illustration only and are fictitious. No real association or connection is intended or should be inferred.
+
+Microsoft and the trademarks listed at <https://www.microsoft.com> on the "Trademarks" webpage are trademarks of the Microsoft group of companies.
+
+Mac and macOS are trademarks of Apple Inc.
+
+The Docker whale logo is a registered trademark of Docker, Inc. Used by permission.
+
+All other marks and logos are property of their respective owners.
 
 >[!div class="step-by-step"]
->[Next](what-is-docker.md)
+>[Next](introduction-to-containers-and-docker.md)

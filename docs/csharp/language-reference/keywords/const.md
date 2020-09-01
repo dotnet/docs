@@ -1,4 +1,5 @@
 ---
+description: "const keyword - C# Reference"
 title: "const keyword - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 

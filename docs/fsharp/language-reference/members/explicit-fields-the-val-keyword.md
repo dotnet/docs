@@ -1,7 +1,7 @@
 ---
 title: "Explicit Fields: The val Keyword"
 description: Learn about the F# 'val' keyword, which is used to declare a location to store a value in a class or structure type without initializing the type.
-ms.date: 05/16/2016
+ms.date: 08/15/2020
 ---
 # Explicit Fields: The val Keyword
 
@@ -19,7 +19,7 @@ The usual way to define fields in a class or structure type is to use a `let` bi
 
 Explicit fields can be static or non-static. The *access-modifier* can be `public`, `private`, or `internal`. By default, explicit fields are public. This differs from `let` bindings in classes, which are always private.
 
-The [DefaultValue](https://msdn.microsoft.com/library/a3a3307b-8c05-441e-b109-245511614d58) attribute is required on explicit fields in class types that have a primary constructor. This attribute specifies that the field is initialized to zero. The type of the field must support zero-initialization. A type supports zero-initialization if it is one of the following:
+The [DefaultValue](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-defaultvalueattribute.html) attribute is required on explicit fields in class types that have a primary constructor. This attribute specifies that the field is initialized to zero. The type of the field must support zero-initialization. A type supports zero-initialization if it is one of the following:
 
 - A primitive type that has a zero value.
 - A type that supports a null value, either as a normal value, as an abnormal value, or as a representation of a value. This includes classes, tuples, records, functions, interfaces, .NET reference types, the `unit` type, and discriminated union types.

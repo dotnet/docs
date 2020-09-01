@@ -1,4 +1,5 @@
 ---
+description: "new operator - C# reference"
 title: "new operator - C# reference"
 ms.date: 06/25/2019
 f1_keywords:

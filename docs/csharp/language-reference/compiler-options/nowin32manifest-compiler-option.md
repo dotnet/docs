@@ -1,4 +1,5 @@
 ---
+description: "-nowin32manifest (C# Compiler Options)"
 title: "-nowin32manifest (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

@@ -788,7 +788,7 @@
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/as.md",
-      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-conversion-operators#as-operator"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#as-operator"
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/await.md",
@@ -996,7 +996,7 @@
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/typeof.md",
-      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-conversion-operators#typeof-operator"
+      "redirect_url": "/dotnet/csharp/language-reference/operators/type-testing-and-cast#typeof-operator"
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/types.md",
@@ -1052,7 +1052,7 @@
     },
     {
       "source_path": "docs/csharp/language-reference/proposals/index.md",
-      "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-8.0/nullable-reference-types"
+      "redirect_url": "/dotnet/csharp/language-reference/proposals/csharp-9.0/records"
     },
     {
       "source_path": "docs/csharp/language-reference/operators/addition-assignment-operator.md",
@@ -2040,6 +2040,14 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/framework/data/adonet/ef/architecture-and-design.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee794151(v=vs.100)"
+    },
+    {
+      "source_path": "docs/framework/data/adonet/ef/generating-sql-from-command-trees-best-practices.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee794149(v=vs.100)"
+    },
+    {
       "source_path": "docs/framework/data/adonet/ef/language-reference/csdl-specification.md",
       "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/csdl-spec"
     },
@@ -2054,6 +2062,34 @@
     {
       "source_path": "docs/framework/data/adonet/ef/language-reference/ssdl-specification.md",
       "redirect_url": "/ef/ef6/modeling/designer/advanced/edmx/ssdl-spec"
+    },
+    {
+      "source_path": "docs/framework/data/adonet/ef/modification-sql-generation.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee828422(v=vs.100)"
+    },
+    {
+      "source_path": "docs/framework/data/adonet/ef/provider-manifest-specification.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee828423(v=vs.100)"
+    },
+    {
+      "source_path": "docs/framework/data/adonet/ef/sql-generation.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee789836(v=vs.100)"
+    },
+    {
+      "source_path": "docs/framework/data/adonet/ef/sql-generation-in-the-sample-provider.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee794152(v=vs.100)"
+    },
+    
+    { "source_path" : "docs/framework/data/adonet/ef/the-shape-of-the-command-trees.md",
+      "redirect_url" : "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee789837(v=vs.100)"
+    },
+    {
+      "source_path": "docs/framework/data/adonet/ef/walkthrough-sql-generation.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee794148(v=vs.100)"
+    },
+    {
+      "source_path": "docs/framework/data/adonet/ef/writing-an-ef-data-provider.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee789835(v=vs.100)"
     },
     {
       "source_path": "docs/framework/data/adonet/sql/linq/linq-to-sql-with-tightly-coupled-client-server-applications.md",
@@ -4491,6 +4527,34 @@
     {
       "source_path": "docs/standard/design-guidelines/choosing-between-anonymous-and-tuple.md",
       "redirect_url": "/dotnet/standard/base-types/choosing-between-anonymous-and-tuple"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/control-flow-in-async-programs.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async/task-asynchronous-programming-model#BKMK_WhatHappensUnderstandinganAsyncMethod"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/fine-tuning-your-async-application.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/handling-reentrancy-in-async-apps.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/async/cancel-remaining-async-tasks-after-one-is-complete.md",
+      "redirect_url": "/dotnet/csharp/programming-guide/concepts/async"
     }
   ]
 }

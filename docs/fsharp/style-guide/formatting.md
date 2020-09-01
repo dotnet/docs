@@ -1,7 +1,7 @@
 ---
 title: F# code formatting guidelines
 description: Learn guidelines for formatting F# code.
-ms.date: 11/04/2019
+ms.date: 08/31/2020
 ---
 # F# code formatting guidelines
 
@@ -893,6 +893,15 @@ type MyRecord =
       Label2: string }
 ```
 
+They should go after any XML documentation:
+
+```fsharp
+/// Module with some things in it.
+[<RequireQualifiedAccess>]
+module M =
+    let f x = x
+```
+
 ### Formatting attributes on parameters
 
 Attributes can also be placed on parameters. In this case, place then on the same line as the parameter and before the name:
@@ -930,3 +939,47 @@ let MyUrl = "www.mywebsitethatiamworkingwith.com"
 ```
 
 Avoid placing the attribute on the same line as the value.
+
+## Formatting computation expression operations
+
+When creating custom operations for [computation expressions](../language-reference/computation-expressions.md) it is recommended to use camelCase naming:
+
+```fsharp
+type MathBuilder () =
+    member _.Yield _ = 0
+
+    [<CustomOperation("addOne")>]
+    member _.AddOne (state: int) =
+        state + 1
+
+    [<CustomOperation("subtractOne")>]
+    member _.SubtractOne (state: int) =
+        state - 1
+
+    [<CustomOperation("divideBy")>]
+    member _.DivideBy (state: int, divisor: int) =
+        state / divisor
+
+    [<CustomOperation("multiplyBy")>]
+    member _.MultiplyBy (state: int, factor: int) =
+        state * factor
+
+let math = MathBuilder()
+
+// 10
+let myNumber =
+    math {
+        addOne
+        addOne
+        addOne
+
+        subtractOne
+
+        divideBy 2
+
+        multiplyBy 10
+    }
+```
+
+The naming convention used should ultimately be driven by the domain being modeled.
+If it is idiomatic to use a different convention, that convention should be used instead.

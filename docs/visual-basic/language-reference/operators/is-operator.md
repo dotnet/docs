@@ -1,5 +1,5 @@
 ---
-title: "Is Operator"
+title: Is operator
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.is"
@@ -10,16 +10,18 @@ helpviewer_keywords:
   - "Is operator [Visual Basic]"
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
 ---
-# Is Operator (Visual Basic)
-Compares two object reference variables.  
-  
-## Syntax  
-  
-```vb  
-result = object1 Is object2  
-```  
-  
-## Parts  
+# Is operator (Visual Basic)
+
+Compares two object reference variables.
+
+## Syntax
+
+```vb
+result = object1 Is object2
+```
+
+## Parts
+
  `result`  
  Required. Any `Boolean` value.  
   
@@ -29,21 +31,29 @@ result = object1 Is object2
  `object2`  
  Required. Any `Object` name.  
   
-## Remarks  
- The `Is` operator determines if two object references refer to the same object. However, it does not perform value comparisons. If `object1` and `object2` both refer to the exact same object instance, `result` is `True`; if they do not, `result` is `False`.  
-  
- `Is` can also be used with the `TypeOf` keyword to make a `TypeOf`...`Is` expression, which tests whether an object variable is compatible with a data type.  
-  
+## Remarks
+
+The `Is` operator determines if two object references refer to the same object. However, it does not perform value comparisons. If `object1` and `object2` both refer to the exact same object instance, `result` is `True`; if they do not, `result` is `False`.
+
 > [!NOTE]
-> The `Is` keyword is also used in the [Select...Case Statement](../statements/select-case-statement.md).  
+> The `Is` keyword is also used in the [Select...Case Statement](../statements/select-case-statement.md).
   
-## Example  
- The following example uses the `Is` operator to compare pairs of object references. The results are assigned to a `Boolean` value representing whether the two objects are identical.  
-  
- [!code-vb[VbVbalrOperators#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#27)]  
-  
- As the preceding example demonstrates, you can use the `Is` operator to test both early bound and late bound objects.  
-  
+## Example
+
+The following example uses the `Is` operator to compare pairs of object references. The results are assigned to a `Boolean` value representing whether the two objects are identical.
+
+[!code-vb[VbVbalrOperators#27](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#27)]
+
+As the preceding example demonstrates, you can use the `Is` operator to test both early bound and late bound objects.
+
+## Use TypeOf operator with Is operator
+
+`Is` operator can also be used with the `TypeOf` keyword to make a `TypeOf`...`Is` expression, which tests whether an object variable is compatible with a data type. For example:
+
+```vb
+If TypeOf sender Is Button Then
+```
+
 ## See also
 
 - [TypeOf Operator](typeof-operator.md)

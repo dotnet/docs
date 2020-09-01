@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 07/17/2020
+ms.date: 08/25/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -10,7 +10,13 @@ ms.author: scaddie
 
 ASP.NET Core provides the web app development features used by .NET Core.
 
-The following breaking changes are documented on this page:
+Select one of the following links for breaking changes in a specific version:
+
+* [ASP.NET Core 5.0](#aspnet-core-50)
+* [ASP.NET Core 3.1](#aspnet-core-31)
+* [ASP.NET Core 3.0](#aspnet-core-30)
+
+The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented on this page:
 
 - [Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
 - [Authentication: Google+ deprecation](#authentication-google-deprecated-and-replaced)
@@ -22,6 +28,7 @@ The following breaking changes are documented on this page:
 - [Authorization: IAuthorizationPolicyProvider implementations require new method](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
 - [Authorization: Resource in endpoint routing is HttpContext](#authorization-resource-in-endpoint-routing-is-httpcontext)
 - [Azure: Microsoft-prefixed Azure integration packages removed](#azure-microsoft-prefixed-azure-integration-packages-removed)
+- [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
 - [Blazor: Insignificant whitespace trimmed from components at compile time](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
 - [Blazor: Target framework of NuGet packages changed](#blazor-target-framework-of-nuget-packages-changed)
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
@@ -62,11 +69,13 @@ The following breaking changes are documented on this page:
 - [Localization: Obsolete constructor removed in request localization middleware](#localization-obsolete-constructor-removed-in-request-localization-middleware)
 - [Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](#localization-resourcemanagerwithculturestringlocalizer-class-and-withculture-interface-member-removed)
 - [Logging: DebugLogger class made internal](#logging-debuglogger-class-made-internal)
+- [Middleware: Database error page marked as obsolete](#middleware-database-error-page-marked-as-obsolete)
 - [MVC: Controller action Async suffix removed](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC: JsonResult moved to Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
 - [MVC: Precompilation tool deprecated](#mvc-precompilation-tool-deprecated)
 - [MVC: Types changed to internal](#mvc-pubternal-types-changed-to-internal)
 - [MVC: Web API compatibility shim removed](#mvc-web-api-compatibility-shim-removed)
+- [Razor: RazorTemplateEngine API removed](#razor-razortemplateengine-api-removed)
 - [Razor: Runtime compilation moved to a package](#razor-runtime-compilation-moved-to-a-package)
 - [Security: Cookie name encoding removed](#security-cookie-name-encoding-removed)
 - [Security: IdentityModel NuGet package versions updated](#security-identitymodel-nuget-package-versions-updated)
@@ -93,6 +102,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
+
+***
+
+[!INCLUDE [binaryformatter-serialization-obsolete](../../../includes/core-changes/corefx/5.0/binaryformatter-serialization-obsolete.md)]
 
 ***
 
@@ -148,6 +161,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Localization: ResourceManagerWithCultureStringLocalizer class and WithCulture interface member removed](~/includes/core-changes/aspnetcore/5.0/localization-members-removed.md)]
+
+***
+
+[!INCLUDE[Middleware: Database error page marked as obsolete](~/includes/core-changes/aspnetcore/5.0/middleware-database-error-page-obsolete.md)]
 
 ***
 
@@ -332,6 +349,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[MVC: Web API compatibility shim removed](~/includes/core-changes/aspnetcore/3.0/mvc-webapi-compat-shim-removed.md)]
+
+***
+
+[!INCLUDE[Razor: RazorTemplatEengine API removed](~/includes/core-changes/aspnetcore/3.0/razor-razortemplateengine-api-removed.md)]
 
 ***
 

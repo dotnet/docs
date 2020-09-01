@@ -104,7 +104,7 @@ let function3 x =
     function1 x
 ```
 
-Some modules have the attribute [RequireQualifiedAccess](https://msdn.microsoft.com/library/8b9b6ade-0471-4413-ac5d-638cd0de5f15), which means that the functions that they expose must be qualified with the name of the module. For example, the F# List module has this attribute.
+Some modules have the attribute [RequireQualifiedAccess](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-requirequalifiedaccessattribute.html), which means that the functions that they expose must be qualified with the name of the module. For example, the F# List module has this attribute.
 
 For more information on modules and access control, see [Modules](../modules.md) and [Access Control](../access-control.md).
 

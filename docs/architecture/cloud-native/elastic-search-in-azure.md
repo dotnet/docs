@@ -69,7 +69,7 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 
 - [Vitess](https://vitess.io/)
 
-- [Elasticsearch: The Definitive Guide](http://shop.oreilly.com/product/0636920028505.do)
+- [Elasticsearch: The Definitive Guide](https://shop.oreilly.com/product/0636920028505.do)
   
 - [Introduction to Apache Lucene](https://www.baeldung.com/lucene)
 

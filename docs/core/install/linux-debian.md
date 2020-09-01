@@ -44,7 +44,7 @@ The following versions of .NET Core are no longer supported. The downloads for t
 
 ```bash
 wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
-dpkg -i packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
 ```
 
 [!INCLUDE [linux-apt-install-31](includes/linux-install-31-apt.md)]
@@ -94,7 +94,7 @@ sudo apt-get upgrade
 
 This section provides information on common errors you may get while using APT to install .NET Core.
 
-### Unable to locate
+### Unable to locate \\ Some packages could not be installed
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]
 

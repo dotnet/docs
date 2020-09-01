@@ -1,4 +1,5 @@
 ---
+description: "do - C# Reference"
 title: "do - C# Reference"
 ms.date: 05/28/2018
 f1_keywords: 

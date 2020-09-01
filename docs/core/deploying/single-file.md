@@ -50,7 +50,7 @@ The following example publishes an app for Windows as a self-contained single fi
 </PropertyGroup>
 ```
 
-The following example publishes an app for Linux as Framework Dependent single file application..
+The following example publishes an app for Linux as a framework dependent single file application..
 
 ```xml
 <PropertyGroup>

@@ -50,10 +50,6 @@ The following breaking changes are documented on this page:
 
 ***
 
-[!INCLUDE [vectort-throws-notsupportedexception](../../../includes/core-changes/corefx/5.0/vectort-throws-notsupportedexception.md)]
-
-***
-
 [!INCLUDE [reference-assembly-parameter-names](../../../includes/core-changes/corefx/5.0/reference-assembly-parameter-names.md)]
 
 ***

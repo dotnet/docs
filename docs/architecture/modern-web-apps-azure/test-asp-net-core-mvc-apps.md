@@ -101,7 +101,7 @@ If a particular application class has many methods being tested (and thus many t
 
 ## Unit testing ASP.NET Core apps
 
-In a well-designed ASP.NET Core application, most of the complexity and business logic will be encapsulated in business entities and a variety of services. The ASP.NET Core MVC app itself, with its controllers, filters, viewmodels, and views, should require very few unit tests. Much of the functionality of a given action lies outside the action method itself. Testing whether routing works correctly, or global error handling, cannot be done effectively with a unit test. Likewise, any filters, including model validation and authentication and authorization filters, cannot be unit tested with a test targeting a controller's action method. Without these sources of behavior, most action methods should be trivially small, delegating the bulk of their work to services that can be tested independent of the controller that uses them.
+In a well-designed ASP.NET Core application, most of the complexity and business logic will be encapsulated in business entities and a variety of services. The ASP.NET Core MVC app itself, with its controllers, filters, viewmodels, and views, should require very few unit tests. Much of the functionality of a given action lies outside the action method itself. Testing whether routing or global error handling work correctly cannot be done effectively with a unit test. Likewise, any filters, including model validation and authentication and authorization filters, cannot be unit tested with a test targeting a controller's action method. Without these sources of behavior, most action methods should be trivially small, delegating the bulk of their work to services that can be tested independent of the controller that uses them.
 
 Sometimes you'll need to refactor your code in order to unit test it. Frequently this involves identifying abstractions and using dependency injection to access the abstraction in the code you'd like to test, rather than coding directly against infrastructure. For example, consider this simple action method for displaying images:
 
@@ -116,7 +116,7 @@ public IActionResult GetImage(int id)
 }
 ```
 
-Unit testing this method is made difficult by its direct dependency on `System.IO.File`, which it uses to read from the file system. You can test this behavior to ensure it works as expected, but doing so with real files is an integration test. It's worth noting you can't unit test this method's route – you'll see how to do this with a functional test shortly.
+Unit testing this method is made difficult by its direct dependency on `System.IO.File`, which it uses to read from the file system. You can test this behavior to ensure it works as expected, but doing so with real files is an integration test. It's worth noting you can't unit test this method's route&mdash;you'll see how to do this with a functional test shortly.
 
 If you can't unit test the file system behavior directly, and you can't test the route, what is there to test? Well, after refactoring to make unit testing possible, you may discover some test cases and missing behavior, such as error handling. What does the method do when a file isn't found? What should it do? In this example, the refactored method looks like this:
 
@@ -150,7 +150,7 @@ Most of the integration tests in your ASP.NET Core apps should be testing servic
 
 For ASP.NET Core applications, the `TestServer` class makes functional tests fairly easy to write. You configure a `TestServer` using a `WebHostBuilder` (or `HostBuilder`) directly (as you normally do for your application), or with the `WebApplicationFactory` type (available since version 2.1). Try to match your test host to your production host as closely as possible, so your tests exercise behavior similar to what the app will do in production. The `WebApplicationFactory` class is helpful for configuring the TestServer's ContentRoot, which is used by ASP.NET Core to locate static resource like Views.
 
-You can create simple functional tests by creating a test class that implements IClassFixture\<WebApplicationFactory\<TEntry>> where TEntry is your web application's Startup class. With this in place, your test fixture can create a client using the factory's CreateClient method:
+You can create simple functional tests by creating a test class that implements `IClassFixture\<WebApplicationFactory\<TEntry>>`, where `TEntry` is your web application's `Startup` class. With this in place, your test fixture can create a client using the factory's `CreateClient` method:
 
 ```cs
 public class BasicWebTests : IClassFixture<WebApplicationFactory<Startup>>
@@ -166,7 +166,7 @@ public class BasicWebTests : IClassFixture<WebApplicationFactory<Startup>>
 }
 ```
 
-Frequently, you'll want to perform some additional configuration of your site before each test runs, such as configuring the application to use an in memory data store and then seeding the application with test data. To do this, you should create your own subclass of WebApplicationFactory\<TEntry> and override its ConfigureWebHost method. The example below is from the eShopOnWeb FunctionalTests project and is used as part of the tests on the main web application.
+Frequently, you'll want to perform some additional configuration of your site before each test runs, such as configuring the application to use an in memory data store and then seeding the application with test data. To do this, create your own subclass of `WebApplicationFactory\<TEntry>` and override its `ConfigureWebHost` method. The example below is from the eShopOnWeb FunctionalTests project and is used as part of the tests on the main web application.
 
 ```cs
 using Microsoft.AspNetCore.Hosting;
@@ -285,7 +285,7 @@ namespace Microsoft.eShopWeb.FunctionalTests.WebRazorPages
 }
 ```
 
-This functional test exercises the full ASP.NET Core MVC / Razor Pages application stack, including all middleware, filters, binders, etc. that may be in place. It verifies that a given route ("/") returns the expected success status code and HTML output. It does so without setting up a real web server, and so avoids much of the brittleness that using a real web server for testing can experience (for example, problems with firewall settings). Functional tests that run against TestServer are usually slower than integration and unit tests, but are much faster than tests that would run over the network to a test web server. Use functional tests to ensure your application's front-end stack is working as expected. These tests are especially useful when you find duplication in your controllers or pages and you address the duplication by adding filters. Ideally, this refactoring won't change the behavior of the application, and a suite of functional tests will verify this is the case.
+This functional test exercises the full ASP.NET Core MVC / Razor Pages application stack, including all middleware, filters, and binders that may be in place. It verifies that a given route ("/") returns the expected success status code and HTML output. It does so without setting up a real web server, and avoids much of the brittleness that using a real web server for testing can experience (for example, problems with firewall settings). Functional tests that run against TestServer are usually slower than integration and unit tests, but are much faster than tests that would run over the network to a test web server. Use functional tests to ensure your application's front-end stack is working as expected. These tests are especially useful when you find duplication in your controllers or pages and you address the duplication by adding filters. Ideally, this refactoring won't change the behavior of the application, and a suite of functional tests will verify this is the case.
 
 > ### References – Test ASP.NET Core MVC apps
 >

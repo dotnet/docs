@@ -1,5 +1,6 @@
 ---
 title: How to retrieve a collection of elements - LINQ to XML
+description: Learn how to use the XContainer.Elements method to retrieve a collection of child elements of an element.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

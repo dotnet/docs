@@ -1,6 +1,6 @@
 ---
 title: How to sort elements on multiple keys - LINQ to XML
-description: Sort XML elements on multiple keys.
+description: Learn how to sort XML elements on multiple keys.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

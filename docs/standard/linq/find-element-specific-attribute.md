@@ -1,5 +1,6 @@
 ---
 title: How to find an element with a specific attribute - LINQ to XML
+description: Learn how to find an element whose attribute has a specific value.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

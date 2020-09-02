@@ -1,6 +1,6 @@
 ---
 title: How to read and write an encoded document - LINQ to XML
-description:
+description: Learn how to add an XDeclaration to an XML tree to create an encoded XML document.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

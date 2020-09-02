@@ -1,6 +1,6 @@
 ---
 title: How to retrieve a collection of attributes - LINQ to XML
-description: The XElement.Attribute method retrieves the attributes of an element.
+description: Learn how to use the XElement.Attributes method to retrieve the attributes of an element.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

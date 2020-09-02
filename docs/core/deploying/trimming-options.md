@@ -124,7 +124,7 @@ Symbols will normally be trimmed to match the trimmed assemblies. You can also r
 
 The SDK also makes it possible to disable debugger support using the property `DebuggerSupport`. When debugger support is disabled, trimming will remove symbols automatically (`TrimmerRemoveSymbols` will default to true).
 
-# Trimming framework library features
+## Trimming framework library features
 
 Several feature areas of the framework libraries come with linker directives that make it possible to remove the code for disabled features.
 
@@ -147,7 +147,7 @@ Several feature areas of the framework libraries come with linker directives tha
 - `<HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>`
 
     Remove dependencies related to diagnostics support for System.Net.Http.
-    
+
 - `<InvariantGlobalization>true</InvariantGlobalization>`
 
     Remove globalization specific code and data. See [Invariant mode](https://docs.microsoft.com/en-us/dotnet/core/run-time-config/globalization#invariant-mode) for more information.

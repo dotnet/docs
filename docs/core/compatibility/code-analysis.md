@@ -10,9 +10,14 @@ The following breaking changes are documented on this page:
 | Breaking change | Version introduced |
 | - | :-: |
 | [CA1831 Use AsSpan or AsMemory instead of Range-based indexer](#ca1831-use-asspan-or-asmemory-instead-of-range-based-indexer) | 5.0 |
+| [CA2014: Do not use stackalloc in loops](#ca2014-do-not-use-stackalloc-in-loops) | 5.0 |
 
 ## .NET 5.0
 
 [!INCLUDE [range-based-indexer-on-string](../../../includes/core-changes/codeanalysis/5.0/range-based-indexer-on-string.md)]
+
+***
+
+[!INCLUDE [stackalloc-in-loops](../../../includes/core-changes/codeanalysis/5.0/stackalloc-in-loops.md)]
 
 ***

@@ -39,7 +39,7 @@ For example, to place some files in the publish directory but not bundle them in
 
 Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
 
-- Publish as a self-contained app for a specific runtime: `-r win-x64`
+- Publish for a specific runtime: `-r win-x64`
 - Publish as a single-file: `-p:PublishSingleFile=true`
 
 The following example publishes an app for Windows as a self-contained single file application.
@@ -62,13 +62,13 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
 
-    :::image type="content" source="media/trim-self-contained/visual-studio-solution-explorer.png" alt-text="Solution Explorer with a right-click menu highlighting the Publish option.":::
+    :::image type="content" source="media/single-file/visual-studio-solution-explorer.png" alt-text="Solution Explorer with a right-click menu highlighting the Publish option.":::
 
     If you don't already have a publishing profile, follow the instructions to create one and choose the **Folder** target-type.
 
 01. Choose **Edit**.
 
-    :::image type="content" source="media/trim-self-contained/visual-studio-publish-edit-settings.png" alt-text="Visual studio publish profile with edit button.":::
+    :::image type="content" source="media/single-file/visual-studio-publish-edit-settings.png" alt-text="Visual studio publish profile with edit button.":::
 
 01. In the **Profile settings** dialog, set the following options:
 

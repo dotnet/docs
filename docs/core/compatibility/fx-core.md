@@ -66,7 +66,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 ## Networking
 
 - [WebClient.CancelAsync doesn't always cancel immediately](#webclientcancelasync-doesnt-always-cancel-immediately)
-- [Cookie Path handling now conforms to RFC 6265](#cookie-path-conforms-to-rfc6265)
+- [Cookie Path handling now conforms to RFC 6265](#cookie-path-handling-now-conforms-to-rfc-6265)
 
 ### .NET Core 2.0
 

@@ -1,7 +1,7 @@
 ---
 title: The evolution of .NET Core to .NET 5
 description: Learn about .NET 5, a cross platform and open-source development platform that is the next evolution of .NET Core.
-ms.date: 09/01/2020
+ms.date: 09/02/2020
 ms.topic: overview
 ms.author: dapine
 author: IEvangelist
@@ -9,9 +9,36 @@ author: IEvangelist
 
 # The evolution of .NET Core to .NET 5
 
-This article details what is included in .NET 5, which is the next release of .NET Core following 3.1.  The version number is 5 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. It can be used to develop any app type on any platform.
+This article details what is included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. It can be used to develop any app type on any platform.
 
-The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time. .NET 5 is cross-platform, allows for side-by-side installation, and continues support of small project files (SDK-style).
+The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time.
+
+.NET Core has several primary characteristics:
+
+> [!div class="checklist"]
+>
+> - Cross-platform
+> - Open-source
+> - Side-by-side installation
+> - Small project files (SDK-style)
+> - Flexible deployment
+
+.NET 5 extends these characteristics, making incremental improvements:
+
+- Single file apps
+- Windows ARM64, and ARM64 intrinsics
+- Consolidated GitHub repository footprint
+- Sweeping performance improvements to:
+  - [Garbage Collection (GC)](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#gc)
+  - [System.Text.Json](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#json)
+  - [System.Text.RegularExpressions](https://devblogs.microsoft.com/dotnet/regex-performance-improvements-in-net-5)
+  - [Async ValueTask pooling](https://devblogs.microsoft.com/dotnet/async-valuetask-pooling-in-net-5)
+  - [Many more areas](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5)
+- Container size optimizations
+- [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
+- [C# compiler enhancements](https://devblogs.microsoft.com/dotnet/automatically-find-latent-bugs-in-your-code-with-net-5)
+- Tooling support for dump debugging
+- Platform is 80% annotated for [nullable reference types](csharp/nullable-references.md)
 
 ### What .NET 5 is not
 
@@ -27,7 +54,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 
 New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
-However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
+The `net5.0` TFM combines and replaces `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
 
 ## Language updates
 

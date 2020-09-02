@@ -130,7 +130,7 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<DebuggerSupport>false</DebuggerSupport>`
 
-    Remove dependencies that enable better debugging experiences. This will also [remove symbols](#Removing-symbols).
+    Removes code that enables better debugging experiences. This will also [remove symbols](#Removing-symbols).
 
 - `<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>`
 

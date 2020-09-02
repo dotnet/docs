@@ -95,7 +95,7 @@ Public Class MyControl
    End Property
 
    Private Function ShouldSerializeMyFont() As Boolean
-      Return Not (thefont Is Nothing)
+      Return thefont IsNot Nothing
    End Function
 
    Private Sub ResetMyFont()

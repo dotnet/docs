@@ -11,7 +11,7 @@ helpviewer_keywords:
 ---
 # Overview of .NET source code analysis
 
-.NET code analyzers inspect your C# or Visual Basic code for security, performance, design, and other issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. (Previously, you installed these analyzers as a [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers).)
+.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for security, performance, design, and other issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. (Previously, you installed these analyzers as a [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers).)
 
 Code analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
 

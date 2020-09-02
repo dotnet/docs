@@ -1,6 +1,6 @@
 ---
 title: Find the default paragraph style - LINQ to XML
-description:
+description: Learn how to find the default style of paragraphs in a WordprocessingML document.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

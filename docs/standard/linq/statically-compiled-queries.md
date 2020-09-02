@@ -1,6 +1,6 @@
 ---
 title: Statically compiled queries - LINQ to XML
-description:
+description: Learn how LINQ to XML queries gain a performance advantage over XMLDocument by being statically compiled.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

@@ -1,5 +1,6 @@
 ---
 title: How to retrieve the value of an element - LINQ to XML
+description: "Learn the two main ways to get the value of an element or attribute: cast  to the desired type, or use the XElement.Value and XAttribute.Value properties."
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

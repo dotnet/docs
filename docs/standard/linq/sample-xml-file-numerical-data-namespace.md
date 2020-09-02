@@ -1,5 +1,6 @@
 ---
 title: "Sample XML file: Numerical data in a namespace - LINQ to XML"
+description: This XML file—which is used in examples—has numerical data in a namespace.
 ms.date: 07/20/2015
 ms.assetid: 51750cab-3c66-4511-90fb-b9d211308d31
 ---

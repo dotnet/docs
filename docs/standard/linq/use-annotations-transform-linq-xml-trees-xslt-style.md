@@ -1,6 +1,6 @@
 ---
 title: How to use annotations to transform LINQ to XML trees in an XSLT style - LINQ to XML
-description:
+description: Learn how to use annotations to transform XML documents that are document-centric with mixed content.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

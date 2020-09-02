@@ -1,5 +1,6 @@
 ---
 title: How to chain axis method calls - LINQ to XML
+description: Learn how to use the XContainer.Elements and Extensions.Elements methods to find all elements of a specified name at a given depth in the tree.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

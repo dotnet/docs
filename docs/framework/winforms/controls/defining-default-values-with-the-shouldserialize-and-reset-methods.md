@@ -128,7 +128,8 @@ public class MyControl : Control {
       }
    }
 
-   private bool ShouldSerializeMyFont() {
+   private bool ShouldSerializeMyFont()
+   {
       return thefont != null;
    }
 

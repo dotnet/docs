@@ -261,7 +261,7 @@ This article organizes the affected API members by namespace.
 | Member | Platforms that throw |
 | - | - |
 | <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)> | All |
-| <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature()?displayProperty=nameWithType> | All |
+| <xref:System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature?displayProperty=nameWithType> | All |
 
 ## System.Security.Cryptography.X509Certificates
 

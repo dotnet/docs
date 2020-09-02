@@ -15,7 +15,7 @@ There are some caveats that you need to be aware for single-file use, first of w
 
 Single-file don't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are left next to the bundle. On Windows, we prelink only the hosting code and both the runtime and application native libraries are left next to the bundle. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.
 
-## Exclude files being embedded in Single File
+## Exclude files from being embedded
 
 Certain files can be explicitly excluded from being embedded in the single-file by setting following meta-data:
 

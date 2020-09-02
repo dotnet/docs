@@ -7,7 +7,7 @@ ms.date: 08/28/2020
 ---
 # Single file deployment and executable
 
-Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5.0 where the code is directly executed from the single file in the client machine. On .NET Core 3.0 version, all files were first self-extracted into a temporary location before running.
+Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5.0 where the code is directly executed from the single file in the client machine. On the .NET Core 3.0 version, all files were first self-extracted into a temporary location before running.
 
 Single File deployment is available for both [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained application](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [Trim](trim-self-contained.md) and [ReadyToRun](../tools/dotnet-publish.md) publish options.
 

@@ -7,7 +7,7 @@ ms.date: 08/25/2020
 ---
 # Trimming options
 
-The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. More information about the `ILLink` command-line tool can be found at [illink options](https://github.com/mono/linker/blob/master/docs/illink-options.md).
+The following MSBuild properties and items influence the behavior of [trimmed self-contained deployments](trim-self-contained.md). Some of the options mention `ILLink`, which is the name of the underlying tool that implements trimming. More information about the underlying tool can be found at the [Linker documentation](https://github.com/mono/linker/tree/master/docs).
 
 ## Enable trimming
 
@@ -123,3 +123,37 @@ Symbols will normally be trimmed to match the trimmed assemblies. You can also r
     Remove symbols from the trimmed application, including embedded PDBs and separate PDB files. This applies to both the application code and any dependencies that come with symbols.
 
 The SDK also makes it possible to disable debugger support using the property `DebuggerSupport`. When debugger support is disabled, trimming will remove symbols automatically (`TrimmerRemoveSymbols` will default to true).
+
+# Trimming framework library features
+
+Several feature areas of the framework libraries come with linker directives that make it possible to remove the code for disabled features.
+
+- `<DebuggerSupport>false</DebuggerSupport>`
+
+    Remove dependencies that enable better debugging experiences. This will also [remove symbols](#Removing-symbols).
+
+- `<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>`
+
+    Remove BinaryFormatter serialization support. See [BinaryFormatter serialization methods are obsolete](https://docs.microsoft.com/en-us/dotnet/core/compatibility/corefx#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps) for more information.
+
+- `<EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>`
+
+    Remove insecure UTF-7 encoding code. See [UTF-7 code paths are obsolete](https://docs.microsoft.com/en-us/dotnet/core/compatibility/corefx#utf-7-code-paths-are-obsolete) for more information.
+
+- `<EventSourceSupport>false</EventSourceSupport>`
+
+    Remove EventSource related code or logic.
+
+- `<HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>`
+
+    Remove dependencies related to diagnostics support for System.Net.Http.
+    
+- `<InvariantGlobalization>true</InvariantGlobalization>`
+
+    Remove globalization specific code and data. See [Invariant mode](https://docs.microsoft.com/en-us/dotnet/core/run-time-config/globalization#invariant-mode) for more information.
+
+- `<UseSystemResourceKeys>true</UseSystemResourceKeys>`
+
+    Remove localizable resources for system assemblies.
+
+ These properties will cause the related code to be trimmed and will also also disable features via the [runtimeconfig](https://docs.microsoft.com/en-us/dotnet/core/run-time-config/) file. See [feature switches](https://github.com/dotnet/runtime/blob/master/docs/workflow/trimming/feature-switches.md) for more details about these properties, including the corresponding runtimeconfig options. Some SDKs may have default values for these properties.

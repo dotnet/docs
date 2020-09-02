@@ -17,7 +17,7 @@ Single-file don't bundle native libraries by default. On Linux, we prelink the r
 
 ## Exclude files from being embedded
 
-Certain files can be explicitly excluded from being embedded in the single-file by setting following meta-data:
+Certain files can be explicitly excluded from being embedded in the single-file by setting following metadata:
 
 ```xml
 <ExcludeFromSingleFile>true</ExcludeFromSingleFile>

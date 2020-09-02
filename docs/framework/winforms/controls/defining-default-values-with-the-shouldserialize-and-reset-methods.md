@@ -54,7 +54,8 @@ End Function
 ```csharp
 // Returns true if the font has changed; otherwise, returns false.
 // The designer writes code to the form only if true is returned.
-private bool ShouldSerializeMyFont() {
+private bool ShouldSerializeMyFont()
+{
    return thefont != null;
 }
 ```

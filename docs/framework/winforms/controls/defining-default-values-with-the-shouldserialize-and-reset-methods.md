@@ -133,7 +133,8 @@ public class MyControl : Control {
       return thefont != null;
    }
 
-   private void ResetMyFont() {
+   private void ResetMyFont()
+   {
       MyFont = null;
    }
 }

@@ -33,7 +33,8 @@ End Sub
 ```
 
 ```csharp
-private void ResetMyFont() {
+private void ResetMyFont()
+{
    MyFont = null;
 }
 ```

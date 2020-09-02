@@ -35,7 +35,7 @@ For example, to place some files in the publish directory but not bundle them in
 
 ```
 
-## Publish a Single File app - CLI
+## Publish a single file app - CLI
 
 Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
 

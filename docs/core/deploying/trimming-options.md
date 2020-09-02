@@ -130,7 +130,7 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<DebuggerSupport>false</DebuggerSupport>`
 
-    Removes code that enables better debugging experiences. This will also [remove symbols](#Removing-symbols).
+    Remove code that enables better debugging experiences. This will also [remove symbols](#Removing-symbols).
 
 - `<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>`
 
@@ -146,7 +146,7 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<HttpActivityPropagationSupport>false</HttpActivityPropagationSupport>`
 
-    Remove dependencies related to diagnostics support for System.Net.Http.
+    Remove code related to diagnostics support for System.Net.Http.
 
 - `<InvariantGlobalization>true</InvariantGlobalization>`
 
@@ -154,6 +154,6 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<UseSystemResourceKeys>true</UseSystemResourceKeys>`
 
-    Strips exception messages for System.* assemblies. When an exception is thrown from a System.* assembly, the message will be a simplified resource ID instead of the full message.
+    Strip exception messages for System.* assemblies. When an exception is thrown from a System.* assembly, the message will be a simplified resource ID instead of the full message.
 
  These properties will cause the related code to be trimmed and will also also disable features via the [runtimeconfig](https://docs.microsoft.com/en-us/dotnet/core/run-time-config/) file. See [feature switches](https://github.com/dotnet/runtime/blob/master/docs/workflow/trimming/feature-switches.md) for more details about these properties, including the corresponding runtimeconfig options. Some SDKs may have default values for these properties.

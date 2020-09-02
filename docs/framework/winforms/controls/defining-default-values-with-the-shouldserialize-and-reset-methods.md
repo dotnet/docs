@@ -47,7 +47,7 @@ private void ResetMyFont() {
 'Returns true if the font has changed; otherwise, returns false.
 ' The designer writes code to the form only if true is returned.
 Private Function ShouldSerializeMyFont() As Boolean
-   Return Not (thefont Is Nothing)
+   Return thefont IsNot Nothing
 End Function
 ```
 

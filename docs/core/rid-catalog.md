@@ -66,7 +66,7 @@ All RIDs eventually map back to the root `any` RID.
 
 There are some considerations about RIDs that you have to keep in mind when working with them:
 
-- RIDs are **opaque strings** and should be treated as black boxes.
+- Don't try to parse RIDs to retrieve component parts.
 - Don't build RIDs programmatically.
 - Use RIDs that are already defined for the platform.
 - The RIDs need to be specific, so don't assume anything from the actual RID value.

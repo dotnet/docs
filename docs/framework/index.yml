@@ -82,24 +82,16 @@ landingContent:
             url: windows-services/how-to-install-and-uninstall-services.md
 
   # Card
-  - title: Create Windows Forms apps
+  - title: Create desktop apps
     linkLists:
       - linkListType: overview
         links:
-          - text: Overview of Windows Forms
-            url: winforms/index.md
-      - linkListType: tutorial
-        links:
-          - text: Get started with Windows Forms Designer
-            url: /visualstudio/designers/walkthrough-windows-forms-designer
-          - text: Create a Windows Forms app from the command line
-            url: winforms/how-to-create-a-windows-forms-application-from-the-command-line.md
-      - linkListType: how-to-guide
-        links:
-          - text: Add and remove items from ComboBox, ListBox, and CheckedListBox controls 
-            url: winforms/controls/add-and-remove-items-from-a-wf-combobox.md
-          - text: Make thread-safe calls to controls
-            url: winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md
+          - text: Desktop guide Introduction
+            url: /dotnet/desktop/
+          - text: .NET Framework WPF
+            url: wpf/index.md
+          - text: .NET Framework Windows Forms
+            url: /dotnet/desktop/winforms/?view=netframework-4-8
 
   # Card
   - title: Create WPF apps

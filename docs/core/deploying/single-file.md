@@ -7,13 +7,13 @@ ms.date: 08/28/2020
 ---
 # Single file deployment and executable
 
-Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5.0 where the code is directly executed from the single file in the client machine. On the .NET Core 3.0 version, all files were first self-extracted into a temporary location before running.
+Bundling all application-dependent files into a single binary provides an application developer with the attractive option to deploy and distribute the application as a single file. This deployment model has been available since .NET Core 3.0 and has been enhanced in .NET 5.0 where the code is directly executed from the single file in the client machine. In the .NET Core 3.0 version, all files were first self-extracted into a temporary location before running.
 
-Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [Trim](trim-self-contained.md) and [ReadyToRun](../tools/dotnet-publish.md) publish options.
+Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [ReadyToRun](../tools/dotnet-publish.md) and [Trim (an experimental feature in .NET 5.0)](trim-self-contained.md) publish options.
 
 There are some caveats that you need to be aware for single-file use, chief of which is the use of path information to locate a file relative to the location of your application. The <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> API will return an empty string, which is the default behavior for assemblies loaded from memory. The compiler will give a warning for this API during build time to alert the developer to the specific behavior. If the path to the application directory is needed, the <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType> API will return the directory where the AppHost (the single-file bundle itself) resides. Managed C++ applications are not well suited for single-file deployment and we recommend that you write applications in C# to be single-file compatible.
 
-The single-file option for [self-contained applications](index.md#publish-self-contained) will not bundle native libraries on macOS and Windows machines for .NET 5.0. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. Linux will have all files bundled in .NET 5.0 and will execute the application from the single file. Windows and macOS machines will have an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.
+Single-file will not bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are left next to the bundle. On Windows, we prelink only the hosting code and both the runtime and application native libraries are left next to the bundle. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.
 
 ## Exclude files being embedded in Single File
 
@@ -27,7 +27,7 @@ For example, to place some files in the publish directory but not bundle them in
 
 ```xml
 <ItemGroup>
-    <Content Update="*.xml">
+    <Content Update="Plugin.dll">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
     </Content>
@@ -40,26 +40,18 @@ For example, to place some files in the publish directory but not bundle them in
 Publish a single file application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following properties:
 
 - Publish as a self-contained app for a specific runtime: `-r win-x64`
-- Enable trimming: `/p:PublishSingleFile=true`
+- Publish as a single-file: `-p:PublishSingleFile=true`
 
 The following example publishes an app for Windows as a self-contained single file application.
 
-```xml
-<PropertyGroup>
-    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>true</SelfContained>
-</PropertyGroup>
+```dotnet
+dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
 ```
 
 The following example publishes an app for Linux as a framework dependent single file application..
 
-```xml
-<PropertyGroup>
-    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
-    <PublishSingleFile>true</PublishSingleFile>
-    <SelfContained>false</SelfContained>
-</PropertyGroup>
+```dotnet
+dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 ```
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).

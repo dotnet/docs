@@ -14,7 +14,7 @@ The following breaking changes are documented on this page:
 | [EnvelopedCms defaults to AES-256 encryption](#envelopedcms-defaults-to-aes-256-encryption) | 3.0 |
 | [Minimum size for RSAOpenSsl key generation has increased](#minimum-size-for-rsaopenssl-key-generation-has-increased) | 3.0 |
 | [.NET Core 3.0 prefers OpenSSL 1.1.x to OpenSSL 1.0.x](#net-core-30-prefers-openssl-11x-to-openssl-10x) | 3.0 |
-| [System.Security.Cryptography.CryptoStream.Dispose is transforming final block only when writing](#systemsecuritycryptographycryptostreamdispose-is-transforming-final-block-only-when-writing) | 3.0 |
+| [CryptoStream.Dispose transforms final block only when writing](#cryptoStreamdispose-transforms-final-block-only-when-writing) | 3.0 |
 | [Boolean parameter of SignedCms.ComputeSignature is respected](#boolean-parameter-of-signedcmscomputesignature-is-respected) | 2.1 |
 
 ## .NET 5.0
@@ -41,7 +41,7 @@ The following breaking changes are documented on this page:
 
 ***
 
-[!INCLUDE [cryptography-cryptostream-dispose-final-block-write](../../../includes/core-changes/cryptography/3.0/cryptography-cryptostream-dispose-final-block-write.md)]
+[!INCLUDE [CryptoStream.Dispose transforms final block only when writing](~/includes/core-changes/cryptography/3.0/cryptography-cryptostream-dispose-final-block-write.md)]
 
 ***
 

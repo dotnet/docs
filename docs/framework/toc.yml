@@ -1,3 +1,4 @@
+items:
 - name: .NET Framework documentation
   href: index.yml
 - name: Overview of .NET Framework
@@ -718,3 +719,24 @@
     href: misc/using-libraries-from-partially-trusted-code.md
   - name: Using the Assert Method
     href: misc/using-the-assert-method.md
+- name: Create console apps
+  href: ../standard/building-console-apps.md
+- name: Consume events in a Web Forms app
+  href: ../standard/events/how-to-consume-events-in-a-web-forms-application.md
+- name: .NET Framework code analyzer
+  href: ../standard/analyzers/framework-analyzer.md
+- name: Develop for multiple platforms
+  items:
+  - name: Overview
+    href: ../standard/cross-platform/index.md
+    displayName: cross platform
+  - name: Portable Class Library
+    href: ../standard/cross-platform/cross-platform-development-with-the-portable-class-library.md
+  - name: Use Portable Class Library with MVVM
+    href: ../standard/cross-platform/using-portable-class-library-with-model-view-view-model.md
+  - name: App resources for libraries that target multiple platforms
+    href: ../standard/cross-platform/app-resources-for-libraries-that-target-multiple-platforms.md
+  - name: .NET Framework support for Microsoft Store apps and Windows Runtime
+    href: ../standard/cross-platform/support-for-windows-store-apps-and-windows-runtime.md
+  - name: Pass a URI to the Windows Runtime
+    href: ../standard/cross-platform/passing-a-uri-to-the-windows-runtime.md

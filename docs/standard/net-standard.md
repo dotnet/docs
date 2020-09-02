@@ -86,7 +86,7 @@ The specification is not singular, but an incrementally growing and linearly ver
 
 .NET Standard is not specific to any one .NET implementation, nor does it match the versioning scheme of any of those runtimes.
 
-APIs added to any of the implementations (such as, .NET Framework, .NET Core and Mono) can be considered as candidates to add to the specification, particularly if they are thought to be fundamental in nature. New [versions of .NET Standard](https://github.com/dotnet/standard/blob/master/docs/versions.md) are created based on .NET implementation releases, enabling you to target new APIs from a .NET Standard PCL. The versioning mechanics are described in more detail in [.NET Core Versioning](../core/versions/index.md).
+APIs added to any .NET implementation (for example, .NET Framework, .NET Core, and Mono) can be considered as candidates to add to the specification, particularly if they are thought to be fundamental in nature. New [versions of .NET Standard](https://github.com/dotnet/standard/blob/master/docs/versions.md) are created based on .NET implementation releases, enabling you to target new APIs from a .NET Standard portable class library (PCL). The versioning mechanics are described in more detail in [.NET Core Versioning](../core/versions/index.md).
 
 .NET Standard versioning is important for usage. Given a .NET Standard version, you can use libraries that target that same or lower version. The following approach describes the workflow for using .NET Standard PCLs, specific to .NET Standard targeting.
 

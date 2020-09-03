@@ -14,7 +14,7 @@ dev_langs:
 
 Language-Integrated Query (LINQ) provides language-level querying capabilities, and a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function) API to C# and Visual Basic, that enable you to write expressive declarative code.
 
-## Example: Language-level query syntax
+## Language-level query syntax
 
 This is the language-level query syntax:
 
@@ -42,7 +42,7 @@ Dim linqExperts = programmers.Where(Function(p) p.IsNewToLINQ).
                              Select(Function(p) New LINQExpert(p))
 ```
 
-## Example: LINQ is expressive
+## LINQ is expressive
 
 Imagine you have a list of pets, but want to convert it into a dictionary where you can access a pet directly by its `RFID` value.
 
@@ -79,7 +79,7 @@ Dim petLookup = pets.ToDictionary(Function(pet) pet.RFID)
 
 The code using LINQ is valuable because it evens the playing field between intent and code when reasoning as a programmer. Another bonus is code brevity. Imagine reducing large portions of a codebase by 1/3 as done above. Sweet deal, right?
 
-## Example: LINQ providers simplify data access
+## LINQ providers simplify data access
 
 For a significant chunk of software out in the wild, everything revolves around dealing with data from some source (Databases, JSON, XML, and so on). Often this involves learning a new API for each data source, which can be annoying. LINQ simplifies this by abstracting common elements of data access into a query syntax that looks the same no matter which data source you pick.
 
@@ -152,7 +152,7 @@ The answer to this question is **no** if...
 - You have no need to scope variables within your queries
 - You prefer the API syntax and it won't distract from your codebase
 
-## Examples: Essential LINQ
+## Essential LINQ
 
 For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/).
 
@@ -345,7 +345,7 @@ Public Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As 
 End Function
 ```
 
-## Example: PLINQ
+## PLINQ
 
 PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In other words, a regular LINQ expression can be trivially parallelized across any number of threads. This is accomplished via a call to `AsParallel()` preceding the expression.
 
@@ -387,7 +387,7 @@ In diagram form:
 
 Parallelizable CPU-bound jobs that can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs that _do_ have a side effect, consider using the [Task Parallel Library](../parallel-programming/task-parallel-library-tpl.md).
 
-## Further resources
+## More resources
 
 * [101 LINQ Samples](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/)
 * [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/Visual Basic

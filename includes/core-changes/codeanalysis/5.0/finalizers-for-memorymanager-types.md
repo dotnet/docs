@@ -24,12 +24,12 @@ Code analysis
 
 #### Affected APIs
 
-Not detectible via API analysis.
+Not detectable via API analysis.
 
 <!--
 
 #### Affected APIs
 
-Not detectible via API analysis.
+Not detectable via API analysis.
 
 -->

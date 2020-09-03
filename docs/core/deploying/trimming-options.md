@@ -19,11 +19,11 @@ When using `Microsoft.NET.Sdk`, this will perform assembly-level trimming of the
 
 ## Trimming granularity
 
-The following granularity settings control how aggressively unused IL is discarded. This can be set as a property, or as metadata on an [individual assembly](#Trimmed-assemblies).
+The following granularity settings control how aggressively unused IL is discarded. This can be set as a property, or as metadata on an [individual assembly](#trimmed-assemblies).
 
 - `<TrimMode>copyused</TrimMode>`
 
-   Enable assembly-level trimming, which will keep an entire assembly if any part of it is used (in a statically-understood way).
+   Enable assembly-level trimming, which will keep an entire assembly if any part of it is used (in a statically understood way).
 
 - `<TrimMode>link</TrimMode>`
 
@@ -33,7 +33,7 @@ Assemblies with `<IsTrimmable>true</IsTrimmable>` metadata but no explicit `Trim
 
 ## Trimmed assemblies
 
-When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` may have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. This example shows how to enable trimming of `MyAssembly`:
+When publishing a trimmed app, the SDK computes an `ItemGroup` called `ManagedAssemblyToLink` that represents the set of files to be processed for trimming. `ManagedAssemblyToLink` may have metadata that controls the trimming behavior per assembly. To set this metadata, create a target that runs before the built-in `PrepareForILLink` target. The following example shows how to enable trimming of `MyAssembly`.
 
 ```xml
 <Target Name="ConfigureTrimming"
@@ -54,11 +54,11 @@ Do not add or remove items to/from `ManagedAssemblyToLink`, because the SDK comp
 
 - `<TrimMode>copyused</TrimMode>` or `<TrimMode>link</TrimMode>`
 
-  Control the [trimming granularity](#Trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
+  Control the [trimming granularity](#trimming-granularity) of this assembly. This takes precedence over the global `TrimMode`. Setting `TrimMode` on an assembly implies `<IsTrimmable>true</IsTrimmable>`.
 
 ## Root assemblies
 
-All assemblies which do not have `<IsTrimmable>true</IsTrimmable>` are considered roots for the analysis, which means that they and all of their statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
+All assemblies that do not have `<IsTrimmable>true</IsTrimmable>` are considered roots for the analysis, which means that they and all of their statically understood dependencies will be kept. Additional assemblies may be "rooted" by name (without the `.dll` extension):
 
 ```xml
 <ItemGroup>
@@ -100,7 +100,7 @@ This will include warnings about the entire app, including your own code, librar
 
 ## Warning versions
 
-Trim analysis respects the [`AnalysisLevel`](../project-sdk/msbuild-props.md#AnalysisLevel) property that controls the version of analysis warnings across the SDK. There is another property that controls the version of trim analysis warnings independently (similar to `WarningLevel` for the compiler):
+Trim analysis respects the [`AnalysisLevel`](../project-sdk/msbuild-props.md#analysislevel) property that controls the version of analysis warnings across the SDK. There is another property that controls the version of trim analysis warnings independently (similar to `WarningLevel` for the compiler):
 
 - `<ILLinkWarningLevel>5</ILLinkWarningLevel>`
 

@@ -1,7 +1,7 @@
 ---
 description: "C# Compiler Options"
 title: "C# Compiler Options"
-ms.date: 07/20/2015
+ms.date: 08/28/2020
 f1_keywords: 
   - "cs.build.options"
 helpviewer_keywords: 
@@ -26,7 +26,7 @@ In Visual Studio, you set compiler options in the *web.config* file. For more in
 Information about building a Visual C# application from the command line.
 
 - [How to set environment variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
-Provides steps for running *vsvars32.bat* to enable command-line builds.
+Provides steps for running *VsDevCmd.bat* to enable command-line builds.
 
 - [C# Compiler Options Listed by Category](listed-by-category.md)
 A categorical listing of the compiler options.

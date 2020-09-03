@@ -32,7 +32,7 @@ There are two kinds of types in C#: *value types* and *reference types*. Variabl
 
 An ***identifier*** is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it is prefixed by `@`. That can be useful when interacting with other languages.
 
-C#'s value types are further divided into *simple types*, *enum types*, *struct types*, and *nullable value types*. C#'s reference types are further divided into *class types*, *interface types*, *array types*, and *delegate types*.
+C#'s value types are further divided into *simple types*, *enum types*, *struct types*, *nullable value types* and *tuple value types*. C#'s reference types are further divided into *class types*, *interface types*, *array types*, and *delegate types*.
 
 The following outline provides an overview of C#'s type system.
 
@@ -60,11 +60,11 @@ The following outline provides an overview of C#'s type system.
   - [Interface types](../language-reference/keywords/interface.md)
     - User-defined types of the form `interface I {...}`
   - [Array types](../programming-guide/arrays/index.md)
-    - Single- and multi-dimensional and jagged, for example, `int[]`, `int[,]`, and `int[][]`
+    - Single-dimensional, multi-dimensional and jagged. For example: `int[]`, `int[,]`, and `int[][]`
   - [Delegate types](../language-reference/builtin-types/reference-types.md#the-delegate-type)
     - User-defined types of the form `delegate int D(...)`
 
-C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Five of C#'s categories of types are user-definable: class types, struct types, interface types, enum types, and delegate types.
+C# programs use *type declarations* to create new types. A type declaration specifies the name and the members of the new type. Six of C#'s categories of types are user-definable: class types, struct types, interface types, enum types, delegate types and tuple value types.
 
 - A `class` type defines a data structure that contains data members (fields) and function members (methods, properties, and others). Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.
 - A `struct` type is similar to a class type in that it represents a structure with data members and function members. However, unlike classes, structs are value types and don't typically require heap allocation. Struct types don't support user-specified inheritance, and all struct types implicitly inherit from type `object`.
@@ -73,7 +73,7 @@ C# programs use *type declarations* to create new types. A type declaration spec
 
 The `class`, `struct`, `interface`, and `delegate` types all support generics, whereby they can be parameterized with other types.
 
-C# supports single- and multi-dimensional arrays of any type. Unlike the types listed above, array types don't have to be declared before they can be used. Instead, array types are constructed by following a type name with square brackets. For example, `int[]` is a single-dimensional array of `int`, `int[,]` is a two-dimensional array of `int`, and `int[][]` is a single-dimensional array of single-dimensional array or "jagged" array of `int`.
+C# supports single-dimensional and multi-dimensional arrays of any type. Unlike the types listed above, array types don't have to be declared before they can be used. Instead, array types are constructed by following a type name with square brackets. For example, `int[]` is a single-dimensional array of `int`, `int[,]` is a two-dimensional array of `int`, and `int[][]` is a single-dimensional array of single-dimensional arrays, or a "jagged" array, of `int`.
 
 Nullable types don't require a separate definition. For each non-nullable type `T`, there's a corresponding nullable type `T?`, which can hold an additional value, `null`. For instance, `int?` is a type that can hold any 32-bit integer or the value `null`, and `string?` is a type that can hold any `string` or the value `null`.
 

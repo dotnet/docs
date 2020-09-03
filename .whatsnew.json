@@ -6,12 +6,11 @@
         "linkFormat": "relative",
         "relativeLinkPrefix": "/dotnet/"
     },
-    "inclusionCriteria": {
-        "additionalMicrosoftOrgs": [
-            ".NET Platform"
-        ]
-    },
     "areas": [
+        {
+            "name": ".",
+            "heading": "Home"
+        },
         {
             "name": "architecture",
             "heading": "Architecture guides"

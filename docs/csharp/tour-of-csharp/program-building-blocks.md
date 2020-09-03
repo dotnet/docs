@@ -131,7 +131,7 @@ When an instance method declaration includes a `virtual` modifier, the method is
 
 When a virtual method is invoked, the *run-time type* of the instance for which that invocation takes place determines the actual method implementation to invoke. In a nonvirtual method invocation, the *compile-time type* of the instance is the determining factor.
 
-A virtual method can be *overridden* in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. Aa virtual method declaration introduces a new method. An override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
+A virtual method can be *overridden* in a derived class. When an instance method declaration includes an override modifier, the method overrides an inherited virtual method with the same signature. A virtual method declaration introduces a new method. An override method declaration specializes an existing inherited virtual method by providing a new implementation of that method.
 
 An *abstract method* is a virtual method with no implementation. An abstract method is declared with the `abstract` modifier and is permitted only in an abstract class. An abstract method must be overridden in every non-abstract derived class.
 
@@ -186,8 +186,6 @@ Unlike other members, instance constructors aren't inherited. A class has no ins
 A property is declared like a field, except that the declaration ends with a get accessor or a set accessor written between the delimiters `{` and `}` instead of ending in a semicolon. A property that has both a get accessor and a set accessor is a *read-write property*, a property that has only a get accessor is a *read-only property*, and a property that has only a set accessor is a *write-only property*.
 
 A get accessor corresponds to a parameterless method with a return value of the property type. A set accessor corresponds to a method with a single parameter named value and no return type. The get accessor computes the value of the property. The set accessor provides a new value for the property. When the property is the target of an assignment, or the operand of `++` or `--`, the set accessor is invoked. In other cases where the property is referenced, the get accessor is invoked.
-
- When a property is referenced as the target of an assignment or as the operand of ++ or --, the set accessor is invoked with an argument that provides the new value.
 
 The `MyList<T>` class declares two properties, `Count` and `Capacity`, which are read-only and read-write, respectively. The following code is an example of use of these properties:
 

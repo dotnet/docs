@@ -92,4 +92,4 @@ Visual Studio for Mac doesn't provide options to publish your app as a single fi
 - [.NET Core application deployment](index.md).
 - [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 - [Publish .NET Core apps with Visual Studio](deploy-with-vs.md).
-- [dotnet publish command](../tools/dotnet-publish.md).
+- [`dotnet publish` command](../tools/dotnet-publish.md).

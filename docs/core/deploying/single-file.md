@@ -55,7 +55,7 @@ dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
-## Publish a Single File app - Visual Studio
+## Publish a single file app - Visual Studio
 
 Visual Studio creates reusable publishing profiles that control how your application is published.
 

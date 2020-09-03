@@ -134,7 +134,7 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<EnableUnsafeBinaryFormatterSerialization>false</EnableUnsafeBinaryFormatterSerialization>`
 
-    Remove BinaryFormatter serialization support. See [BinaryFormatter serialization methods are obsolete](https://docs.microsoft.com/en-us/dotnet/core/compatibility/corefx#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps) for more information.
+    Remove BinaryFormatter serialization support. For more information, see [BinaryFormatter serialization methods are obsolete](../compatibility/corefx.md#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps).
 
 - `<EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>`
 

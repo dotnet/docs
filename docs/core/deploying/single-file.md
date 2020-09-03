@@ -43,7 +43,7 @@ Publish a single file application using the [dotnet publish](../tools/dotnet-pub
 
 The following example publishes an app for Windows as a self-contained single file application.
 
-```dotnet
+```dotnetcli
 dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
 ```
 

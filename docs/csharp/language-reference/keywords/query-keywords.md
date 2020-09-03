@@ -1,4 +1,5 @@
 ---
+description: "Query keywords - C# Reference"
 title: "Query keywords - C# Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 

@@ -1,4 +1,5 @@
 ---
+description: "-link (C# Compiler Options)"
 title: "-link (C# Compiler Options)"
 ms.date: 07/20/2015
 helpviewer_keywords:

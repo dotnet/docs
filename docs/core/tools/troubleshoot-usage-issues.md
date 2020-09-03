@@ -69,7 +69,7 @@ The name of the executable determines how you invoke the tool. The following tab
 
 ### Runtime not found
 
-.NET Core tools are [framework-dependent applications](../deploying/index.md#publish-runtime-dependent), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime isn't found, they follow normal .NET Core runtime roll-forward rules such as:
+.NET Core tools are [framework-dependent applications](../deploying/index.md#publish-framework-dependent), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime isn't found, they follow normal .NET Core runtime roll-forward rules such as:
 
 * An application rolls forward to the highest patch release of the specified major and minor version.
 * If there's no matching runtime with a matching major and minor version number, the next higher minor version is used.

@@ -8,8 +8,6 @@ ms.date: 09/19/2019
 ---
 # Migrate from ASP.NET Web Forms to Blazor
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Migrating a code base from ASP.NET Web Forms to Blazor is a time-consuming task that requires planning. This chapter outlines the process. Something that can ease the transition is to ensure the app adheres to an *N-tier* architecture, wherein the app model (in this case, Web Forms) is separate from the business logic. This logical separation of layers makes it clear what needs to move to .NET Core and Blazor.
 
 For this example, the eShop app available on [GitHub](https://github.com/dotnet-architecture/eShopOnBlazor) is used. eShop is a catalog service that provides CRUD capabilities via form entry and validation.
@@ -553,10 +551,6 @@ In Blazor, the equivalent markup is provided in a *Create.razor* file:
 ```
 
 The `EditForm` context includes validation support and can be wrapped around input. Data annotations are a common way to add validation. Such validation support can be added via the `DataAnnotationsValidator` component. For more information on this mechanism, see [ASP.NET Core Blazor forms and validation](/aspnet/core/blazor/forms-validation).
-
-## Migrate built-in Web Forms controls
-
-*This content is coming soon.*
 
 ## Migrate configuration
 

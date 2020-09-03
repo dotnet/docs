@@ -1,7 +1,7 @@
 ---
 title: "Recursive Functions: The rec Keyword"
 description: Learn how the F# 'rec' keyword is used with the 'let' keyword to define a recursive function.
-ms.date: 05/16/2016
+ms.date: 08/12/2020
 ---
 # Recursive Functions: The rec Keyword
 
@@ -12,28 +12,44 @@ The `rec` keyword is used together with the `let` keyword to define a recursive 
 ```fsharp
 // Recursive function:
 let rec function-nameparameter-list =
-function-body
+    function-body
 
 // Mutually recursive functions:
 let rec function1-nameparameter-list =
-function1-body
+    function1-body
+
 and function2-nameparameter-list =
-function2-body
+    function2-body
 ...
 ```
 
 ## Remarks
 
-Recursive functions, functions that call themselves, are identified explicitly in the F# language. This makes the identifer that is being defined available in the scope of the function.
+Recursive functions - functions that call themselves - are identified explicitly in the F# language with the `rec` keyword. The `rec` keyword makes the name of the `let` binding available in its body.
 
-The following code illustrates a recursive function that computes the *n*<sup>th</sup> Fibonacci number using the mathematical definition.
+The following example shows a recursive function that computes the *n*<sup>th</sup> Fibonacci number using the mathematical definition.
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet4001.fs)]
+```fsharp
+let fib n =
+    match n with
+    | 0 | 1 -> 1
+    | n -> fib (n-1) + fib (n-2)
+```
 
 > [!NOTE]
 > In practice, code like the previous sample is not ideal because it unecessarily recomputes values that have already been computed. This is because it is not tail recursive, which is explained further in this article.
 
-Methods are implicitly recursive within the type; there is no need to add the `rec` keyword. Let bindings within classes are not implicitly recursive.
+Methods are implicitly recursive within the type they are defined in, meaning there is no need to add the `rec` keyword. For example:
+
+```fsharp
+type MyClass() =
+    member this.Fib(n) =
+        match n with
+        | 0 | 1 -> 1
+        | n -> this.Fib(n-1) + this.Fib(n-2)
+```
+
+Let bindings within classes are not implicitly recursive, though. All `let`-bound functions require the `rec` keyword.
 
 ## Tail recursion
 
@@ -69,6 +85,14 @@ Sometimes functions are *mutually recursive*, meaning that calls form a circle, 
 The following example shows two mutually recursive functions.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet4002.fs)]
+
+## Recursive values
+
+You can also define a `let`-bound value to be recursive. This is sometimes done for logging. With F# 5 and the `nameof` function, you can do this:
+
+```fsharp
+let rec nameDoubles = nameof nameDoubles + nameof nameDoubles
+```
 
 ## See also
 

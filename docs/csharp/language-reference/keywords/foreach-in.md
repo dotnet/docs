@@ -1,4 +1,5 @@
 ---
+description: "foreach, in (C# reference)"
 title: C# foreach statement
 ms.date: 07/22/2020
 f1_keywords:

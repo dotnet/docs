@@ -1,4 +1,5 @@
 ---
+description: "-target:appcontainerexe (C# Compiler Options)"
 title: "-target:appcontainerexe (C# Compiler Options)"
 ms.date: 07/20/2015
 ms.assetid: e7e62229-23ea-4e53-bef5-380d951bf95f

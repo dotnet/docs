@@ -8,9 +8,7 @@ ms.date: 09/11/2019
 ---
 # Blazor for ASP.NET Web Forms Developers
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
-![Screenshot that shows the Serverless Apps e-book cover.](./media/index/blazor-for-web-forms-developers-cover.png)
+![Screenshot that shows the Serverless Apps e-book cover.](./media/index/blazor-for-aspnet-web-forms-developers.png)
 
 > DOWNLOAD available at: <https://aka.ms/blazor-ebook>
 
@@ -24,7 +22,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2019 by Microsoft Corporation
+Copyright © 2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 
@@ -47,6 +45,8 @@ Authors:
 > **[Taylor Southwick](https://github.com/twsouthwick)**, Senior Software Engineer, Microsoft Corp.
 
 > **[Scott Addie](https://github.com/scottaddie)**, Senior Content Developer, Microsoft Corp.
+
+> **[Steve "ardalis" Smith](https://ardalis.com)**, Software Architect and Trainer, Ardalis Services LLC
 
 ## Introduction
 

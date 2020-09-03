@@ -1,7 +1,7 @@
 ---
 title: Types
 description: Learn about the types that are used in F# and how F# types are named and described.
-ms.date: 05/16/2016
+ms.date: 08/15/2020
 ---
 # F# Types
 
@@ -11,7 +11,7 @@ This topic describes the types that are used in F# and how F# types are named an
 
 Some types are considered *primitive types*, such as the Boolean type `bool` and integral and floating point types of various sizes, which include types for bytes and characters. These types are described in [Primitive Types](basic-types.md).
 
-Other types that are built into the language include tuples, lists, arrays, sequences, records, and discriminated unions. If you have experience with other .NET languages and are learning F#, you should read the topics for each of these types. Links to more information about these types are included in the [Related Topics](https://msdn.microsoft.com/library/#rel) section of this topic. These F#-specific types support styles of programming that are common to functional programming languages. Many of these types have associated modules in the F# library that support common operations on these types.
+Other types that are built into the language include tuples, lists, arrays, sequences, records, and discriminated unions. If you have experience with other .NET languages and are learning F#, you should read the topics for each of these types. These F#-specific types support styles of programming that are common to functional programming languages. Many of these types have associated modules in the F# library that support common operations on these types.
 
 The type of a function includes information about the parameter types and return type.
 

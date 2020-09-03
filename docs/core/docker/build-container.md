@@ -69,7 +69,7 @@ The default template creates an app that prints to the terminal and then immedia
 > [!TIP]
 > If you're using Visual Studio Code, from the previous terminal session type the following command:
 >
-> ```
+> ```console
 > code .
 > ```
 >

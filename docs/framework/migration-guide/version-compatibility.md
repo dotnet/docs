@@ -1,7 +1,6 @@
 ---
 title: "Version compatibility in .NET Framework"
 description: Learn about compatibility between versions of .NET Framework, including backward compatibility and side-by-side execution.
-ms.custom: "updateeachrelease"
 ms.date: "04/02/2019"
 helpviewer_keywords: 
   - ".NET Framework, version compatibility"

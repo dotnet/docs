@@ -1,4 +1,5 @@
 ---
+description: Learn abouot the built-in character type in C#
 title: "char type - C# reference"
 ms.date: 05/11/2020
 f1_keywords:

@@ -1,4 +1,5 @@
 ---
+description: "-baseaddress (C# Compiler Options)"
 title: "-baseaddress (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

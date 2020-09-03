@@ -9,8 +9,6 @@ ms.date: 04/26/2020
 
 # Work with data
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 Data access is the backbone of an ASP.NET Web Forms app. If you're building forms for the web, what happens to that data? With Web Forms, there were multiple data access techniques you could use to interact with a database:
 
 - Data Sources

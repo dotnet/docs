@@ -1,4 +1,5 @@
 ---
+description: "out parameter modifier - C# Reference"
 title: "out parameter modifier - C# Reference"
 ms.date: 03/19/2020
 helpviewer_keywords: 

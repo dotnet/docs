@@ -114,7 +114,7 @@ To publish your app from Visual Studio, do the following:
 
    1. Right-click on your project (not the solution) in **Solution Explorer** and select **Edit SCD.csproj**.
 
-   1. Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets, and specify the runtime identifier (RID) of each platform that you target. You also need to add a semicolon to separate the RIDs. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers.
+   1. Create a `<RuntimeIdentifiers>` tag in the `<PropertyGroup>` section of your *csproj* file that defines the platforms your app targets, and specify the runtime identifier (RID) of each platform that you target. You also need to add a semicolon to separate the RIDs. See [Runtime identifier catalog](../rid-catalog.md) for a list of runtime identifiers.
 
    For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
@@ -306,4 +306,4 @@ You can only deploy a self-contained deployment with a third-party library to pl
 ## See also
 
 - [.NET Core Application Deployment](index.md)
-- [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [.NET Core Runtime Identifier (RID) catalog](../rid-catalog.md)

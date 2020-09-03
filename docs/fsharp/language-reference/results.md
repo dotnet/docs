@@ -1,11 +1,11 @@
 ---
 title: Results
 description: Learn how to use the F# 'Result' type to help you write error-tolerant code.
-ms.date: 04/24/2017
+ms.date: 08/13/2020
 ---
 # Results
 
-Starting with F# 4.1, there is a `Result<'T,'TFailure>` type which you can use for writing error-tolerant code which can be composed.
+The `Result<'T,'TFailure>` type lets you write error-tolerant code that can be composed.
 
 ## Syntax
 
@@ -21,7 +21,9 @@ type Result<'T,'TError> =
 
 ## Remarks
 
-Note that the result type is a [struct discriminated union](discriminated-unions.md#struct-discriminated-unions), which is another feature introduced in F# 4.1.  Structural equality semantics apply here.
+See the [`Result`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-resultmodule.html) module for the built-in combinators for the `Result`. type.
+
+Note that the result type is a [struct discriminated union](discriminated-unions.md#struct-discriminated-unions). Structural equality semantics apply here.
 
 The `Result` type is typically used in monadic error-handling, which is often referred to as [Railway-oriented Programming](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/posts/recipe-part2.html) within the F# community.  The following trivial example demonstrates this approach.
 

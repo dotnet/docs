@@ -1,4 +1,5 @@
 ---
+description: "-errorreport (C# Compiler Options)"
 title: "-errorreport (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

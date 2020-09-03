@@ -27,12 +27,11 @@ For example, to place some files in the publish directory but not bundle them in
 
 ```xml
 <ItemGroup>
-    <Content Update="Plugin.dll">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-    </Content>
-  </ItemGroup>
-
+  <Content Update="Plugin.dll">
+    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+  </Content>
+</ItemGroup>
 ```
 
 ## Publish a single file app - CLI
@@ -44,23 +43,23 @@ Publish a single file application using the [dotnet publish](../tools/dotnet-pub
 
 The following example publishes an app for Windows as a self-contained single file application.
 
-```dotnet
+```dotnetcli
 dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
 ```
 
-The following example publishes an app for Linux as a framework dependent single file application..
+The following example publishes an app for Linux as a framework dependent single file application.
 
-```dotnet
+```dotnetcli
 dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 ```
 
 For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
-## Publish a Single File app - Visual Studio
+## Publish a single file app - Visual Studio
 
 Visual Studio creates reusable publishing profiles that control how your application is published.
 
-01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
+01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish**.
 
     :::image type="content" source="media/single-file/visual-studio-solution-explorer.png" alt-text="Solution Explorer with a right-click menu highlighting the Publish option.":::
 
@@ -84,9 +83,9 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 For more information, see [Publish .NET Core apps with Visual Studio](deploy-with-vs.md).
 
-## Publish a Single File app - Visual Studio for Mac
+## Publish a single file app - Visual Studio for Mac
 
-Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the [Publish a Single File app - CLI](#publish-a-single-file-app---cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
+Visual Studio for Mac doesn't provide options to publish your app as a single file. You'll need to publish manually by following the instructions from the [Publish a single file app - CLI](#publish-a-single-file-app---cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
 ## See also
 

@@ -14,7 +14,7 @@ Rule CA2014 looks for C# code where a [stackalloc expression](../../../../docs/c
 
 #### Recommended action
 
-- Avoid using [stackalloc](../../../../docs/csharp/language-reference/operators/stackalloc.md) inside loops. Allocate the memory block outside the loop and reuse it inside the loop.
+- Avoid using [stackalloc](../../../../docs/csharp/language-reference/operators/stackalloc.md) inside loops. Allocate the memory block outside the loop and reuse it inside the loop. For more information, see [CA2014](/visualstudio/code-quality/ca2014).
 
 - To disable code analysis completely, set `EnableNETAnalyzers` to `false` in your project file. For more information, see [EnableNETAnalyzers](../../../../docs/core/project-sdk/msbuild-props.md#enablenetanalyzers).
 

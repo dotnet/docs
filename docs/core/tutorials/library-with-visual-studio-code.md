@@ -50,6 +50,8 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    dotnet new classlib -o StringLibrary
    ```
 
+   The `-o` or `--output` command specifies a location to place the generated output.
+
    The terminal output looks like the following example:
 
    ```output
@@ -194,9 +196,9 @@ Initially, the new console app project doesn't have access to the class library.
    Input: A string that starts with an uppercase letter
    Begins with uppercase? : Yes
 
-   A string that starts with a lowercase letter
-   Input: A string that starts with a lowercase letter
-   Begins with uppercase? : Yes
+   a string that starts with a lowercase letter
+   Input: a string that starts with a lowercase letter
+   Begins with uppercase? : No
    ```
 
 ## Additional resources

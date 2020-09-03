@@ -27,12 +27,11 @@ For example, to place some files in the publish directory but not bundle them in
 
 ```xml
 <ItemGroup>
-    <Content Update="Plugin.dll">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-    </Content>
-  </ItemGroup>
-
+  <Content Update="Plugin.dll">
+    <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+  </Content>
+</ItemGroup>
 ```
 
 ## Publish a single file app - CLI

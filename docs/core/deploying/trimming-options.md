@@ -150,7 +150,7 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<InvariantGlobalization>true</InvariantGlobalization>`
 
-    Remove globalization specific code and data. See [Invariant mode](https://docs.microsoft.com/en-us/dotnet/core/run-time-config/globalization#invariant-mode) for more information.
+    Remove globalization specific code and data. For more information, see [Invariant mode](../run-time-config/globalization.md#invariant-mode).
 
 - `<UseSystemResourceKeys>true</UseSystemResourceKeys>`
 

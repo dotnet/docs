@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
 ---
 # -linkresource (C# Compiler Options)
-Creates a link to a .NET Framework resource in the output file. The resource file is not added to the output file. This differs from the [-resource](./resource-compiler-option.md) option which does embed a resource file in the output file.  
+Creates a link to a .NET resource in the output file. The resource file is not added to the output file. This differs from the [-resource](./resource-compiler-option.md) option which does embed a resource file in the output file.  
   
 ## Syntax  
   
@@ -24,7 +24,7 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
   
 ## Arguments  
  `filename`  
- The .NET Framework resource file to which you want to link from the assembly.  
+ The .NET resource file to which you want to link from the assembly.  
   
  `identifier` (optional)  
  The logical name for the resource; the name that is used to load the resource. The default is the name of the file.  
@@ -37,7 +37,7 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
   
  **-linkresource** requires one of the [-target](./target-compiler-option.md) options other than **-target:module**.  
   
- If `filename` is a .NET Framework resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time.  
+ If `filename` is a .NET resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time.  
   
  The file specified in `filename` can be any format. For example, you may want to make a native DLL part of the assembly, so that it can be installed into the global assembly cache and accessed from managed code in the assembly. The second of the following examples shows how to do this. You can do the same thing in the Assembly Linker. The third of the following examples shows how to do this. For more information, see [Al.exe (Assembly Linker)](../../../framework/tools/al-exe-assembly-linker.md) and [Working with Assemblies and the Global Assembly Cache](../../../framework/app-domains/working-with-assemblies-and-the-gac.md).  
   

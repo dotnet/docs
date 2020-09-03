@@ -50,7 +50,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    dotnet new classlib -o StringLibrary
    ```
 
-   The `-o` or `--output` command specifies a location to place the generated output.
+   The `-o` or `--output` command specifies the location to place the generated output.
 
    The terminal output looks like the following example:
 

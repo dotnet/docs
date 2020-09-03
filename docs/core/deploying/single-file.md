@@ -49,7 +49,7 @@ dotnet publish -r win-x64 -p:PublishSingleFile=true --self-contained true
 
 The following example publishes an app for Linux as a framework dependent single file application..
 
-```dotnet
+```dotnetcli
 dotnet publish -r linux-x64 -p:PublishSingleFile=true --self-contained false
 ```
 

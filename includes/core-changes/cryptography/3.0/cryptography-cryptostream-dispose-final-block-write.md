@@ -29,7 +29,7 @@ Cryptography
 
 #### Affected APIs
 
-- <xref:System.Security.Cryptography.CryptoStream.Dispose?displayProperty=fullName>
+- <xref:System.Security.Cryptography.CryptoStream.Dispose%2A?displayProperty=fullName>
 
 <!--
 

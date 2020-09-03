@@ -12,6 +12,7 @@ The following breaking changes are documented on this page:
 | Breaking change | Version introduced |
 | - | :-: |
 | [Obsolete properties on ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5.0 |
+| [Hardware intrinsic IsSupported checks may differ for nested types](#hardware-intrinsic-issupported-checks-may-differ-for-nested-types) | 5.0 |
 | [Parameter names changed in reference assemblies](#parameter-names-changed-in-reference-assemblies) | 5.0 |
 | [URI paths with non-ASCII characters parse correctly on Unix](#uri-paths-with-non-ascii-characters-parse-correctly-on-unix) | 5.0 |
 | [Uri recognition of UNC paths on Unix](#uri-recognition-of-unc-paths-on-unix) | 5.0 |
@@ -47,6 +48,10 @@ The following breaking changes are documented on this page:
 ## .NET 5.0
 
 [!INCLUDE [obsolete-consoleloggeroptions-properties](../../../includes/core-changes/corefx/5.0/obsolete-consoleloggeroptions-properties.md)]
+
+***
+
+[!INCLUDE [hardware-instrinsics-issupported-checks](../../../includes/core-changes/corefx/5.0/hardware-instrinsics-issupported-checks.md)]
 
 ***
 

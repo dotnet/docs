@@ -32,7 +32,7 @@ There are four primary .NET implementations that Microsoft actively develops and
 
 .NET Core is a cross-platform implementation of .NET and designed to handle server and cloud workloads at scale. It runs on Windows, macOS, and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](../framework/winforms/windows-forms-overview.md), and [Windows Presentation Foundation (WPF)](../framework/wpf/index.md) all run on .NET Core.
 
-To learn more about .NET Core, see the [.NET Core Guide](../core/index.yml) and [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md).
+To learn more about .NET Core, see the [.NET Core introduction](../core/introduction.md) and [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md).
 
 ### .NET Framework
 
@@ -100,8 +100,8 @@ The official ISO/IEC documents are available from the ISO/IEC [Publicly Availabl
 ## See also
 
 - [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)
-- [.NET Standard](net-standard.md)
-- [.NET Core Guide](../core/index.yml)
+- [.NET Standard introduction](net-standard.md)
+- [.NET Core introduction](../core/introduction.md)
 - [.NET Framework Guide](../framework/index.yml)
 - [C# Guide](../csharp/index.yml)
 - [F# Guide](../fsharp/index.yml)

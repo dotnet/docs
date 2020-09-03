@@ -59,7 +59,7 @@ For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-wit
 
 Visual Studio creates reusable publishing profiles that control how your application is published.
 
-01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
+01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish**.
 
     :::image type="content" source="media/single-file/visual-studio-solution-explorer.png" alt-text="Solution Explorer with a right-click menu highlighting the Publish option.":::
 

@@ -22,7 +22,7 @@ This option causes the compiler to not generate an assembly manifest.
 ## Remarks  
  By default, the output file created by compiling with this option will have an extension of .netmodule.  
   
- A file that does not have an assembly manifest cannot be loaded by the .NET Framework common language runtime. However, such a file can be incorporated into the assembly manifest of an assembly by means of [-addmodule](./addmodule-compiler-option.md).  
+ A file that does not have an assembly manifest cannot be loaded by the .NET runtime. However, such a file can be incorporated into the assembly manifest of an assembly by means of [-addmodule](./addmodule-compiler-option.md).  
   
  If more than one module is created in a single compilation, [internal](../keywords/internal.md) types in one module will be available to other modules in the compilation. When code in one module references `internal` types in another module, then both modules must be incorporated into an assembly manifest, by means of **-addmodule**.  
   

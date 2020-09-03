@@ -54,7 +54,7 @@ conceptualContent:
     - title: Open-source .NET
       summary: Learn about .NET Core
       links:
-        - url: core/index.yml
+        - url: core/introduction.md
           itemType: overview
           text: .NET Core overview
         - url: core/whats-new/dotnet-core-3-1.md
@@ -85,7 +85,7 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
-        - url: standard/index.yml
+        - url: standard/tour.md
           itemType: overview
           text: Overview of .NET
         - url: standard/net-standard.md

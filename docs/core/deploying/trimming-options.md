@@ -138,7 +138,7 @@ Several feature areas of the framework libraries come with linker directives tha
 
 - `<EnableUnsafeUTF7Encoding>false</EnableUnsafeUTF7Encoding>`
 
-    Remove insecure UTF-7 encoding code. See [UTF-7 code paths are obsolete](https://docs.microsoft.com/en-us/dotnet/core/compatibility/corefx#utf-7-code-paths-are-obsolete) for more information.
+    Remove insecure UTF-7 encoding code. For more information, see [UTF-7 code paths are obsolete](../compatibility/corefx.md#utf-7-code-paths-are-obsolete).
 
 - `<EventSourceSupport>false</EventSourceSupport>`
 

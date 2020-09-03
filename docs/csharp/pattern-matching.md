@@ -85,7 +85,7 @@ Let's examine both of those rules in detail, beginning with scope. The variable
 `s` is in scope in the method `ComputeAreaModernIs`. That's because each
 branch of an `if` statement establishes a separate scope for variables. However, the `if` statement
 itself doesn't. That means variables declared in the `if` statement are in the
-same scope as the `if` statement (the method in this case.) This behavior isn't
+same scope as the `if` statement (the method in this case). This behavior isn't
 specific to pattern matching, but is the defined behavior for variable scopes
 and `if` and `else` statements.
 

@@ -244,6 +244,10 @@
             "redirect_document_id": true
         },
         {
+            "source_path": "docs/core/index.yml",
+            "redirect_url": "/dotnet/fundamentals/"
+        },
+        {
             "source_path": "docs/core/install/dependencies.md",
             "redirect_url": "/dotnet/core/install/windows"
         },
@@ -7192,6 +7196,10 @@
         {
             "source_path": "docs/standard/guidance-architecture.md",
             "redirect_url": "/dotnet/architecture/index"
+        },
+        {
+            "source_path": "docs/standard/index.yml",
+            "redirect_url": "/dotnet/fundamentals/"
         },
         {
             "source_path": "docs/standard/library.md",

@@ -7,7 +7,7 @@ no-loc: ["EditorConfig"]
 ---
 # Configure code analysis rules
 
-You configure the severity of .NET code analysis rules by using an [EditorConfig file](https://editorconfig.org/). Add an entry for each rule you want to configure under the corresponding file extension, for example, `*.cs`. The syntax for the *.editorconfig* file is as follows:
+You configure the severity of .NET code analysis rules by using an [EditorConfig file](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options). Add an entry for each rule you want to configure under the corresponding file extension, for example, `*.cs`. The syntax for the *.editorconfig* file is as follows:
 
 ```ini
 dotnet_diagnostic.<rule ID>.severity = <severity>

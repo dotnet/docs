@@ -20,7 +20,7 @@
 - <xref:System.Windows.Controls.Expander> controls are now correctly announced as groups (expand/collapse) by screen readers.
 - <xref:System.Windows.Controls.DataGridCell> controls are now correctly announced as data grid cell (localized) by screen readers.
 - Screen readers will now announce the name of an editable <xref:System.Windows.Controls.ComboBox>.
-- <xref:System.Windows.Controls.PasswordBox> controls are no longer announced as &quot;no item in view&quot; by screen readers.
+- <xref:System.Windows.Controls.PasswordBox> controls are no longer announced as "no item in view" by screen readers.
 
 **LiveRegion support**
 
@@ -35,10 +35,21 @@ In order for the application to benefit from these changes, it must run on .NET 
 - Target .NET Framework 4.7.1. This is the recommended approach. These accessibility changes are enabled by default on WPF applications that target .NET Framework 4.7.1 or later.
 - It opts out of the legacy accessibility behaviors by adding the following [AppContext Switch](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) in the `<runtime>` section of the app config file and setting it to `false`, as the following example shows.
 
-<pre><code class="lang-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#13;&#10;&lt;configuration&gt;&#13;&#10;&lt;startup&gt;&#13;&#10;&lt;supportedRuntime version=&quot;v4.0&quot; sku=&quot;.NETFramework,Version=v4.7&quot;/&gt;&#13;&#10;&lt;/startup&gt;&#13;&#10;&lt;runtime&gt;&#13;&#10;&lt;!-- AppContextSwitchOverrides value attribute is in the form of &#39;key1=true/false;key2=true/false  --&gt;&#13;&#10;&lt;AppContextSwitchOverrides value=&quot;Switch.UseLegacyAccessibilityFeatures=false&quot; /&gt;&#13;&#10;&lt;/runtime&gt;&#13;&#10;&lt;/configuration&gt;&#13;&#10;</code></pre>
+  ```xml
+  <?xml version="1.0" encoding="utf-8"?>
+  <configuration>
+    <startup>
+      <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7"/>
+    </startup>
+    <runtime>
+      <!-- AppContextSwitchOverrides value attribute is in the form of 'key1=true/false;key2=true/false'  -->
+      <AppContextSwitchOverrides value="Switch.UseLegacyAccessibilityFeatures=false" />
+    </runtime>
+  </configuration>
+  ```
 
 Applications that target .NET Framework 4.7.1 or later and want to preserve the legacy accessibility behavior can opt in to the use of legacy accessibility features by explicitly setting this AppContext switch to `true`.
-For an overview of UI automation, see the [UI Automation Overview](~/docs/framework/ui-automation/ui-automation-overview.md).
+For an overview of UI automation, see [UI Automation Overview](~/docs/framework/ui-automation/ui-automation-overview.md).
 
 | Name    | Value       |
 |:--------|:------------|

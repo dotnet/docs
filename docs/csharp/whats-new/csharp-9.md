@@ -71,7 +71,7 @@ The compiler synthesizes two methods that support printed output: a <xref:System
 "Student { LastName = Wagner, FirstName = Bill, Level = 11 }"
 ```
 
-The examples shown so far use traditional syntax to declare properties. There’s a more concise form called ***positional records***.  Here are the three record types defined earlier as positional records:
+The examples shown so far use traditional syntax to declare properties. There's a more concise form called ***positional records***.  Here are the three record types defined earlier as positional records:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="PositionalRecords":::
 

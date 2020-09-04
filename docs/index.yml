@@ -88,6 +88,9 @@ conceptualContent:
         - url: standard/tour.md
           itemType: overview
           text: Overview of .NET
+        - url: core/dotnet-five.md
+          itemType: concept
+          text: Evolution to .NET 5
         - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
@@ -97,9 +100,6 @@ conceptualContent:
         - url: /ef/core/
           itemType: overview
           text: Entity Framework Core
-        - url: standard/get-started.md
-          itemType: get-started
-          text: Get started
         - url: standard/components.md
           itemType: concept
           text: .NET architectural components

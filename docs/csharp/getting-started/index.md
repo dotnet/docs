@@ -12,7 +12,7 @@ This section provides short, simple tutorials that let you quickly build an appl
 
 The following topics are available:
 
-- [Introduction to the C# language and the .NET Framework](introduction-to-the-csharp-language-and-the-net-framework.md)
+- [Introduction to the C# language and .NET](introduction-to-the-csharp-language-and-the-net-framework.md)
 
      Provides an overview of the C# language and .NET.
 

@@ -13,11 +13,13 @@
 - The Keyboard focus on radio buttons is now visible. In previous versions of the .NET Framework, it was not.
 - The <xref:System.Windows.Controls.DataGrid> control's checkbox column now uses the expected colors for keyboard focus feedback. In previous versions of the .NET Framework, it did not.
 - the Keyboard focus visuals are now visible on <xref:System.Windows.Controls.ComboBox> and <xref:System.Windows.Controls.ListBox> controls. In previous versions of the .NET Framework, it was not.</p>
+    
 **Screen reader interaction improvements**
 <ul><li><xref:System.Windows.Controls.Expander> controls are now correctly announced as groups (expand/collapse) by screen readers.
 - <xref:System.Windows.Controls.DataGridCell> controls are now correctly announced as data grid cell (localized) by screen readers.
 - Screen readers will now announce the name of an editable <xref:System.Windows.Controls.ComboBox>.
 - <xref:System.Windows.Controls.PasswordBox> controls are no longer announced as &quot;no item in view&quot; by screen readers.</p>
+    
 **LiveRegion support**
 Screen readers such as Narrator help people know the UI contents of an application, usually by describing something about the UI that's currently focused, because that is probably the element of most interest to the user. However, if a UI element changes somewhere in the screen and it does not have the focus, the user may not be informed and miss important information. LiveRegions are meant to solve this problem. A developer can use them to inform the screen reader or any other [UI Automation](~/docs/framework/ui-automation/ui-automation-overview.md) client that an important change has been made to a UI element. The screen reader can then decide how and when to inform the user of this change. The LiveSetting property also lets the screen reader know how important it is to inform the user of the change made to the UI.
 

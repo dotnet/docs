@@ -87,7 +87,7 @@ Finally, records support ***with-expressions***. A ***with-expression*** instruc
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
 
-The above line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is "Paul". You can set any number of properties in a with-expression.  Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.ToString> method as an example.
+The above line creates a new `Person` record where the `LastName` property is a copy of `person`, and the `FirstName` is "Paul". You can set any number of properties in a with-expression.  Any of the synthesized members except the "clone" method may be written by you. If a record type has a method that matches the signature of any synthesized method, the compiler doesn't synthesize that method. The earlier `Dog` record example contains a hand coded <xref:System.String.ToString> method as an example.
 
 ## Init only setters
 

@@ -35,13 +35,13 @@ There are many advantages to immutable reference types as well. These advantages
 
 :::code language="csharp" source="snippets/whats-new-csharp9/RecordsExamples.cs" ID="RecordDefinition":::
 
-That record definition creates a `Person` type that contains two readonly properties: `FirstName` and `LastName`. The `Person` type is a reference type. If you looked at the IL, it’s a class. It’s immutable in that none of the properties can be modified once it's been created. When you define a record type, the compiler synthesizes several other methods for you:
+The record definition creates a `Person` type that contains two readonly properties: `FirstName` and `LastName`. The `Person` type is a reference type. If you looked at the IL, it’s a class. It’s immutable in that none of the properties can be modified once it's been created. When you define a record type, the compiler synthesizes several other methods for you:
 
 - Methods for value-based equality comparisons
-- Override for GetHashCode
+- Override for <xref:System.Object.GetHashCode>
 - Copy and Clone members
-- PrintMembers and ToString
-- Deconstruct method
+- `PrintMembers` and <xref:System.Object.ToString>
+- `Deconstruct` method
 
 Records support inheritance. You can declare a new record derived from `Person` as follows:
 
@@ -59,17 +59,16 @@ The compiler synthesizes different versions of the methods above. The method sig
 - Records can be copied with modification. These copy and modify operations supports non-destructive mutation.
 - All records support deconstruction.
 
-In addition to the familiar `Equals` overloads, `operator ==` and `operator !=`, the compiler synthesizes a new `EqualityContract` property. The property returns a `Type` object that matches the type of the record. If the base type is `object`, the property is `virtual`. If the base type is another record type, the property is an `override`. If the record type is `sealed`, the property is `sealed`. The synthesized `GetHashCode` uses the `GetHashCode` from all the public properties declared in the base type and the record type. These synthesized methods enforce value-based equality throughout an inheritance hierarchy. That means a `Student` will never be considered equal to a `Person` with the same name. The types of the two records must match as well as all properties shared among the record types being equal.
+In addition to the familiar `Equals` overloads, `operator ==`, and `operator !=`, the compiler synthesizes a new `EqualityContract` property. The property returns a `Type` object that matches the type of the record. If the base type is `object`, the property is `virtual`. If the base type is another record type, the property is an `override`. If the record type is `sealed`, the property is `sealed`. The synthesized `GetHashCode` uses the `GetHashCode` from all the public properties declared in the base type and the record type. These synthesized methods enforce value-based equality throughout an inheritance hierarchy. That means a `Student` will never be considered equal to a `Person` with the same name. The types of the two records must match as well as all properties shared among the record types being equal.
 
 Records also have a synthesized constructor and a "clone" method for creating copies. The synthesized constructor has one argument of the record type. It produces a new record with the same values for all properties of the record. This constructor is private if the record is sealed, otherwise it's protected. The synthesized "clone" method supports copy construction for record hierarchies. The term "clone" is in quotes because the actual name is compiler generated. You can't create a method named `Clone` in a record type. The synthesized "clone" method returns the type of record being copied using virtual dispatch. If a record type is `abstract`, the clone method is also `abstract`. If a record type is `sealed`, the clone method is `sealed`. If the base type of the record is `object`, the clone method is `virtual`. Otherwise, it's `override`. The result of all these rules is the equality is implemented consistently across any hierarchy of record types. Two records are equal to each other if their properties are equal and their types are the same, as shown in the following example:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/RecordsExamples.cs" ID="RecordsEquality":::
 
-The compiler synthesizes two methods that support printed output: a <xref:System.ToString> override, and `PrintMembers`. The `PrintMembers` method returns a comma-separated list of property names and values. The <xref:System.ToString> override returns the string produced by `PrintMembers`, surrounded by `{` and `}`. For example, the <xref:System.ToString> method for `Student` returns a `string` like the following code:
+The compiler synthesizes two methods that support printed output: a <xref:System.Object.ToString> override, and `PrintMembers`. The `PrintMembers` method returns a comma-separated list of property names and values. The <xref:System.Object.ToString> override returns the string produced by `PrintMembers`, surrounded by `{` and `}`. For example, the <xref:System.Object.ToString> method for `Student` returns a `string` like the following code:
 
-```text
-Student { LastName = Wagner, FirstName = Bill, Level = 11 }
-```
+```csharp
+"Student { LastName = Wagner, FirstName = Bill, Level = 11 }"
 
 The examples shown so far use traditional syntax to declare properties. There’s a more concise form called ***positional records***.  Here are the three record types defined earlier as positional records:
 
@@ -83,7 +82,7 @@ The compiler produces a `Deconstruct` method for positional records. The `Decons
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="DeconstructRecord":::
 
-Finally, records support ***with-expressions***. A ***with-expression*** instructs the compiler to create a something like copy of a record, but with specified properties modified:
+Finally, records support ***with-expressions***. A ***with-expression*** instructs the compiler to create a copy of a record, but *with* specified properties modified:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/PositionalRecords.cs" ID="Wither":::
 
@@ -183,7 +182,7 @@ These features can improve performance in some scenarios. They should be used on
 
 ## Fit and finish features
 
-Many of the other features help you write code more efficiently. In C# 9.0, you can omit the type in a new expression when the created object’s type is already known. The most common use is in field declarations:
+Many of the other features help you write code more efficiently. In C# 9.0, you can omit the type in a new expression when the created object's type is already known. The most common use is in field declarations:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="WeatherStationField":::
 

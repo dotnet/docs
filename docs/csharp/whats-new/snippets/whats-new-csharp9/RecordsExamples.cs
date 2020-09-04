@@ -36,10 +36,10 @@ namespace NewCsharp9
         public static void ExampleCode()
         {
             // <RecordsEquality>
-            Person p1 = new Person("Bill", "Wagner");
-            Student s1 = new Student("Bill", "Wagner", 11);
+            var person = new Person("Bill", "Wagner");
+            var student = new Student("Bill", "Wagner", 11);
 
-            Console.WriteLine(s1 == p1); // false
+            Console.WriteLine(student == person); // false
             // </RecordsEquality>
 
         }

@@ -10,7 +10,8 @@ namespace NewCsharp9
         public decimal PressureInMillibars { get; init; }
 
         public override string ToString() =>
-            $"At {RecordedAt.ToShortTimeString()} on {RecordedAt.ToShortDateString()}: Temp = {TemperatureInCelsius}, with {PressureInMillibars} pressure";
+            $"At {RecordedAt:h:mm tt} on {RecordedAt:M/d/yyyy}: " +
+            $"Temp = {TemperatureInCelsius}, with {PressureInMillibars} pressure";
     }
     // </DeclareWeatherObservation>
 

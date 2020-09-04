@@ -18,7 +18,7 @@ namespace NewCsharp9
         public string Location { get; init; }
 
         // <WeatherStationField>
-        private List<WeatherObservation> observations = new();
+        private List<WeatherObservation> _observations = new();
         // </WeatherStationField>
 
         // <ForecastSignature>

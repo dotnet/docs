@@ -43,10 +43,9 @@ namespace NewCsharp9
         public static void PositionalExamples()
         {
             // <DeconstructRecord>
-            Person person = new Person("Bill", "Wagner");
+            var person = new Person("Bill", "Wagner");
 
             var (first, last) = person;
-            // Deconstruct is in the order declared in the record. (string first, string last) = p1;
             Console.WriteLine(first);
             Console.WriteLine(last);
             // </DeconstructRecord>

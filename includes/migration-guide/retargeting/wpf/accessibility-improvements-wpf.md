@@ -13,7 +13,6 @@
 - The Keyboard focus on radio buttons is now visible. In previous versions of the .NET Framework, it was not.
 - The <xref:System.Windows.Controls.DataGrid> control's checkbox column now uses the expected colors for keyboard focus feedback. In previous versions of the .NET Framework, it did not.
 - the Keyboard focus visuals are now visible on <xref:System.Windows.Controls.ComboBox> and <xref:System.Windows.Controls.ListBox> controls. In previous versions of the .NET Framework, it was not.</p>
-    
 **Screen reader interaction improvements**
 <ul><li><xref:System.Windows.Controls.Expander> controls are now correctly announced as groups (expand/collapse) by screen readers.
 - <xref:System.Windows.Controls.DataGridCell> controls are now correctly announced as data grid cell (localized) by screen readers.

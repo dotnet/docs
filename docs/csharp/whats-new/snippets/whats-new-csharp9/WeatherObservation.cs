@@ -28,6 +28,7 @@ namespace NewCsharp9
             };
             // </UseWeatherObservation>
 
+            //now.TemperatureInCelsius = 12;
             Console.WriteLine(now);
         }
     }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace NewCsharp9
+﻿namespace NewCsharp9
 {
     public static class PatternUtilities
     {
@@ -14,7 +8,7 @@ namespace NewCsharp9
         // </IsLetterPattern>
 
         // <IsLetterOrSeparatorPattern>
-        public static bool IsLetterIsSeparator(this char c) =>
+        public static bool IsLetterOrSeparator(this char c) =>
             c is (>= 'a' and <= 'z') or (>= 'A' and <= 'Z') or '.' or ',';
         // </IsLetterOrSeparatorPattern>
 

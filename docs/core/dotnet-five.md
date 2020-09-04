@@ -37,7 +37,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - [C# compiler enhancements](https://devblogs.microsoft.com/dotnet/automatically-find-latent-bugs-in-your-code-with-net-5)
 - Tooling support for dump debugging
-- Platform is 80% annotated for [nullable reference types](csharp/nullable-references.md)
+- Platform is 80% annotated for [nullable reference types](../csharp/nullable-references.md)
 
 ### What .NET 5 is not
 
@@ -53,7 +53,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 
 New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
-The `net5.0` TFM combines and replaces `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
+The `net5.0` TFM combines and replaces `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](../standard/frameworks.md#how-to-specify-target-frameworks).
 
 ## Language updates
 
@@ -124,7 +124,7 @@ There are no new language features for Visual Basic in .NET 5. However, with .NE
 | NUnit 3 Test Item                      | `nunit-test`           |
 | xUnit Test Project                     | `xunit`                |
 
-For more information on project templates from the .NET CLI, see [`dotnet new`](core/tools/dotnet-new.md).
+For more information on project templates from the .NET CLI, see [`dotnet new`](tools/dotnet-new.md).
 
 ## .NET MAUI
 

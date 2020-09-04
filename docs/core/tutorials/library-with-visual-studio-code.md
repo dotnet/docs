@@ -59,7 +59,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    Processing post-creation actions...
    Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
      Determining projects to restore...
-     Restore completed in 328.13 ms for C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj.
+     Restored C:\Projects\ClassLibraryProjects\StringLibrary\StringLibrary.csproj (in 328 ms).
    Restore succeeded.
    ```
 
@@ -106,11 +106,10 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    The terminal output looks like the following example:
 
    ```output
-   Microsoft (R) Build Engine version 16.6.0 for .NET Core
+   Microsoft (R) Build Engine version 16.7.0+b89cb5fde for .NET
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
      All projects are up-to-date for restore.
-     You are using a preview version of .NET Core. See: https://aka.ms/dotnet-core-preview
      StringLibrary -> C:\Projects\ClassLibraryProjects\StringLibrary\bin\Debug\netstandard2.0\StringLibrary.dll
    Build succeeded.
        0 Warning(s)
@@ -135,7 +134,7 @@ Add a console application that uses the class library. The app will prompt the u
    Processing post-creation actions...
    Running 'dotnet restore' on ShowCase\ShowCase.csproj...  
      Determining projects to restore...
-     Restore completed in 210.78 ms for C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj.
+     Restored C:\Projects\ClassLibraryProjects\ShowCase\ShowCase.csproj (in 210 ms).
    Restore succeeded.
    ```
 

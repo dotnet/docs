@@ -17,6 +17,7 @@ namespace NewCsharp9
             : Person(FirstName, LastName);
         // </PositionalRecords>
 
+        /*
         // <RecordsWithMethods>
         public record Pet(string Name)
         {
@@ -37,6 +38,7 @@ namespace NewCsharp9
             }
         }
         // </RecordsWithMethods>
+        */
 
         public static void PositionalExamples()
         {

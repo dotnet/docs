@@ -28,10 +28,13 @@ The following table shows the different rule severities.
 |-|-|
 | `error` | Violations appear as build *errors* and cause builds to fail.|
 | `warning` | Violations appear as build *warnings* but do not cause builds to fail (unless you have an option set to treat warnings as errors). |
-| `suggestion` | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. Suggestions appear as three gray dots under the first two characters in Visual Studio. |
-| `silent` | Violations aren't visible to the user. Code generation features generate code in this style, however. Rules with silent severity participate in cleanup and appear in the Quick Actions and Refactorings menu. |
+| `suggestion` | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. |
+| `silent` | Violations aren't visible to the user. |
 | `none` | Rule is suppressed completely. |
 | `default` | The default severity of the rule is used. |
+
+> [!TIP]
+> For information about how rule severities surface in Visual Studio, see [Severity levels](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
 
 ## Configure multiple rules
 

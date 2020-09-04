@@ -71,7 +71,7 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
    System.Console.Write("Hello world!");
    ```
 
-- Functional pointers: Language constructs that expose intermediate language (IL) for the opcodes `ldftn` and `calli` opcodes.
+- Functional pointers: Language constructs that expose intermediate language (IL) for the `ldftn` and `calli` opcodes.
 
 <!-- For more information on the available C# 9 features, see [What's new in C# 9](csharp/whats-new/csharp-9.md). -->
 

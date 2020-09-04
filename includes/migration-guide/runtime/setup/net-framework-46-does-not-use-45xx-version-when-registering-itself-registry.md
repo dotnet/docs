@@ -13,3 +13,15 @@ Update apps probing for a .NET Framework 4.5 install by looking for 4.5 registry
 | Scope   |Edge|
 |Version|4.6|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

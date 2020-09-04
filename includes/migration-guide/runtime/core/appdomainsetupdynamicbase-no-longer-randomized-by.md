@@ -12,8 +12,16 @@ Be aware that enabling <code>UseRandomizedStringHashAlgorithm</code> will not re
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.6|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.AppDomainSetup.DynamicBase?displayProperty=nameWithType></li></ul>|
+- <xref:System.AppDomainSetup.DynamicBase?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.AppDomainSetup.DynamicBase`
+
+-->

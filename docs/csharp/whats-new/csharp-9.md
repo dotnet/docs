@@ -104,7 +104,7 @@ Callers can use property initializer syntax to set the values, while still prese
 But, changing an observation after initialization is an error by assigning to an init-only property outside of initialization:
 
 ```csharp
-// Error! CS8852. 
+// Error! CS8852.
 now.TempetureInCelsius = 18;
 ```
 

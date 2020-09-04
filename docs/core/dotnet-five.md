@@ -71,9 +71,9 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
    System.Console.Write("Hello world!");
    ```
 
-- Functional pointers: Language constructs that expose intermediate language (IL) the following opcodes `ldftn` and `calli`.
+- Functional pointers: Language constructs that expose intermediate language (IL) for the opcodes `ldftn` and `calli` opcodes.
 
-For more information on the available C# 9 features, see [What's new in C# 9](csharp/whats-new/csharp-9.md).
+<!-- For more information on the available C# 9 features, see [What's new in C# 9](csharp/whats-new/csharp-9.md). -->
 
 #### Source generators
 
@@ -103,7 +103,7 @@ let age = 36
 let message = $"%s{name} is %d{age} years old."
 ```
 
-This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs. For more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md)
+This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs. <!-- For more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md). -->
 
 ### Visual Basic updates
 

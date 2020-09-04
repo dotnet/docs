@@ -37,7 +37,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 - [App trimming](https://devblogs.microsoft.com/dotnet/app-trimming-in-net-5)
 - [C# compiler enhancements](https://devblogs.microsoft.com/dotnet/automatically-find-latent-bugs-in-your-code-with-net-5)
 - Tooling support for dump debugging
-- Platform is 80% annotated for [nullable reference types](csharp/nullable-references.md)
+- Platform is 80% annotated for [nullable reference types](../csharp/nullable-references.md)
 
 ### What .NET 5 is not
 
@@ -53,7 +53,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 
 New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
-The `net5.0` TFM combines and replaces `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](standard/frameworks.md#how-to-specify-target-frameworks).
+The `net5.0` TFM combines and replaces `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](../standard/frameworks.md#how-to-specify-target-frameworks).
 
 ## Language updates
 
@@ -73,7 +73,7 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
 
 - Function pointers: Language constructs that expose the following intermediate language (IL) opcodes: `ldftn` and `calli`.
 
-For more information on the available C# 9 features, see [What's new in C# 9](csharp/whats-new/csharp-9.md).
+<!-- For more information on the available C# 9 features, see [What's new in C# 9](csharp/whats-new/csharp-9.md). -->
 
 #### Source generators
 
@@ -103,7 +103,7 @@ let age = 36
 let message = $"%s{name} is %d{age} years old."
 ```
 
-This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs. For more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md)
+This is similar to the [`sprintf`](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-printfmodule.html#sprintf) function that formats a string based on type-safe inputs. <!-- For more information, see [What's new in F# 5](fsharp/whats-new/fsharp-50.md). -->
 
 ### Visual Basic updates
 
@@ -124,7 +124,7 @@ There are no new language features for Visual Basic in .NET 5. However, with .NE
 | NUnit 3 Test Item                      | `nunit-test`           |
 | xUnit Test Project                     | `xunit`                |
 
-For more information on project templates from the .NET CLI, see [`dotnet new`](core/tools/dotnet-new.md).
+For more information on project templates from the .NET CLI, see [`dotnet new`](tools/dotnet-new.md).
 
 ## .NET MAUI
 

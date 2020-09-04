@@ -174,7 +174,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 - Add multiple C# projects to a solution using a globbing pattern (Windows PowerShell only):
 
   ```dotnetcli
-  dotnet sln todo.sln add (ls **/*.csproj)
+  dotnet sln todo.sln add (ls -r **/*.csproj)
   ```
 
 - Remove multiple C# projects from a solution using a globbing pattern (Unix/Linux only):
@@ -186,5 +186,5 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 - Remove multiple C# projects from a solution using a globbing pattern (Windows PowerShell only):
 
   ```dotnetcli
-  dotnet sln todo.sln remove (ls **/*.csproj)
+  dotnet sln todo.sln remove (ls -r **/*.csproj)
   ```

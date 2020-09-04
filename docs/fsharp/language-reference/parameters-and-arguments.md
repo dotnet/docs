@@ -1,7 +1,7 @@
 ---
 title: Parameters and Arguments
 description: Learn about F# language support for defining parameters and passing arguments to functions, methods, and properties.
-ms.date: 12/04/2019
+ms.date: 08/15/2020
 ---
 # Parameters and Arguments
 
@@ -99,7 +99,7 @@ In a call to a class constructor, you can set the values of properties of the cl
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet3506.fs)]
 
-For more information, see [Constructors (F#)](https://msdn.microsoft.com/library/2cd0ed07-d214-4125-8317-4f288af99f05).
+For more information, see [Constructors (F#)](members/constructors.md).
 
 ## Optional Parameters
 

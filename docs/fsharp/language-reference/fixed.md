@@ -1,11 +1,11 @@
 ---
 title: The fixed keyword
 description: Learn how you can 'pin' a local onto the stack to prevent collection with the F# 'fixed' keyword.
-ms.date: 04/24/2017
+ms.date: 08/15/2020
 ---
 # The fixed keyword
 
-F# 4.1 introduces the `fixed` keyword, which allows you to "pin" a local onto the stack to prevent it from being collected or moved during garbage-collection.  It is used for low-level programming scenarios.
+The `fixed` keyword allows you to "pin" a local onto the stack to prevent it from being collected or moved during garbage-collection.  It is used for low-level programming scenarios.
 
 ## Syntax
 
@@ -57,4 +57,4 @@ doPointerWork()
 
 ## See also
 
-- [NativePtr Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/nativeinterop.nativeptr-module-%5Bfsharp%5D)
+- [NativePtr Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-nativeinterop-nativeptrmodule.html)

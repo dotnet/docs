@@ -1,4 +1,5 @@
 ---
+description: "sizeof operator - C# reference"
 title: "sizeof operator - C# reference"
 ms.date: 07/25/2019
 f1_keywords: 

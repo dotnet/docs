@@ -12,7 +12,6 @@ metadata:
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
 landingContent:
-
   # Card
   - title: Develop ASP.NET Core apps
     linkLists:
@@ -20,11 +19,11 @@ landingContent:
         links:
           - text: Architect modern web apps with ASP.NET Core and Azure
             url: modern-web-apps-azure/index.md
-          - text: Blazor for ASP.NET Web Forms developers (Preview)
+          - text: Blazor for ASP.NET Web Forms developers
             url: blazor-for-web-forms-developers/index.md
           - text: ASP.NET Core gRPC for WCF developers
             url: grpc-for-wcf-developers/index.md
-            
+
   # Card
   - title: Develop cloud-native .NET apps for Azure
     linkLists:
@@ -42,7 +41,7 @@ landingContent:
             url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
           - text: Create and deploy a cloud-native ASP.NET Core microservice
             url: https://docs.microsoft.com/learn/modules/microservices-aspnet-core
-             
+
   # Card
   - title: Migrate .NET apps to Azure
     linkLists:
@@ -52,7 +51,7 @@ landingContent:
             url: modernize-with-azure-containers/index.md
           - text: Migrate your .NET app to Azure
             url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
-            
+
   # Card
   - title: Understand DevOps for .NET
     linkLists:

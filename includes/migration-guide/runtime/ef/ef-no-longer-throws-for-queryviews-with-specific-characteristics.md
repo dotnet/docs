@@ -13,3 +13,15 @@ This change only affects code that uses QueryViews with 1-0..1 relationships whe
 | Scope   |Edge|
 |Version|4.5.2|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

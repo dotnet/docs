@@ -75,12 +75,13 @@ namespace Coding_Conventions_Examples
             // in the declaration.
             var var1 = "This is clearly a string.";
             var var2 = 27;
-            var var3 = Convert.ToInt32(Console.ReadLine());
             //</snippet8>
 
             //<snippet9>
             // When the type of a variable is not clear from the context, use an
-            // explicit type.
+            // explicit type. You generally don't assume the type clear from a method name.
+            // A variable type is considered clear if it's a new operator or an explicit cast.
+            int var3 = Convert.ToInt32(Console.ReadLine());
             int var4 = ExampleClass.ResultSoFar();
             //</snippet9>
 

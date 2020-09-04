@@ -1,0 +1,63 @@
+{
+    "$schema": "https://whatsnewapi.azurewebsites.net/schema",
+    "docSetProductName": ".NET",
+    "rootDirectory": "docs/",
+    "docLinkSettings": {
+        "linkFormat": "relative",
+        "relativeLinkPrefix": "/dotnet/"
+    },
+    "areas": [
+        {
+            "name": ".",
+            "heading": "Home"
+        },
+        {
+            "name": "architecture",
+            "heading": "Architecture guides"
+        },
+        {
+            "name": "azure",
+            "heading": "Azure .NET SDK"
+        },
+        {
+            "name": "core",
+            "heading": ".NET Core"
+        },
+        {
+            "name": "csharp",
+            "heading": "C# language"
+        },
+        {
+            "name": "desktop-wpf",
+            "heading": ".NET Core desktop"
+        },
+        {
+            "name": "framework",
+            "heading": ".NET Framework"
+        },
+        {
+            "name": "fsharp",
+            "heading": "F# language"
+        },
+        {
+            "name": "fundamentals",
+            "heading": ".NET fundamentals"
+        },
+        {
+            "name": "machine-learning",
+            "heading": "ML.NET"
+        },
+        {
+            "name": "spark",
+            "heading": ".NET for Apache Spark"
+        },
+        {
+            "name": "standard",
+            "heading": ".NET"
+        },
+        {
+            "name": "visual-basic",
+            "heading": "Visual Basic language"
+        }
+    ]
+}

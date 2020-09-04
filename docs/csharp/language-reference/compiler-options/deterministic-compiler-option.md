@@ -1,4 +1,5 @@
 ---
+description: "-deterministic (C# Compiler Options)"
 title: "-deterministic (C# Compiler Options)"
 ms.date: 04/12/2018
 f1_keywords:

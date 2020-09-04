@@ -16,7 +16,7 @@ The following SDKs are available for .NET Core:
 | ID | Description | Repo|
 | - | - | - |
 | `Microsoft.NET.Sdk` | The .NET Core SDK | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Web` | The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/aspnet/websdk> |
+| `Microsoft.NET.Sdk.Web` | The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | The .NET Core [Razor SDK](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | The .NET Core Worker Service SDK |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET Core WinForms and WPF SDK |

@@ -9,8 +9,25 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Introduced version |
 | - | - |
+| [WinHttpHandler removed from .NET runtime](#winhttphandler-removed-from-net-runtime) | 5.0 |
+| [MulticastOption.Group doesn't accept a null value](#multicastoptiongroup-doesnt-accept-a-null-value) | 5.0 |
+| [Cookie Path handling now conforms to RFC 6265](#cookie-path-handling-now-conforms-to-rfc-6265) | 5.0 |
 | [Default value of HttpRequestMessage.Version changed to 1.1](#default-value-of-httprequestmessageversion-changed-to-11) | 3.0 |
 | [WebClient.CancelAsync doesn't always cancel immediately](#webclientcancelasync-doesnt-always-cancel-immediately) | 2.0 |
+
+## .NET 5.0
+
+[!INCLUDE [winhttphandler-removed-from-runtime](../../../includes/core-changes/networking/5.0/winhttphandler-removed-from-runtime.md)]
+
+***
+
+[!INCLUDE [multicastoption-group-doesnt-accept-null](../../../includes/core-changes/networking/5.0/multicastoption-group-doesnt-accept-null.md)]
+
+***
+
+[!INCLUDE [cookie-path-conforms-to-rfc6265](../../../includes/core-changes/networking/5.0/cookie-path-conforms-to-rfc6265.md)]
+
+***
 
 ## .NET Core 3.0
 

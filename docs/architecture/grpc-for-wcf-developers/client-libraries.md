@@ -39,7 +39,7 @@ namespace Grpc.Core
         private readonly CancellationToken _token;
         private int _used;
 
-        public Observable(IAsyncStreamReader<T> reader, CancellationToken token = default)
+        public GrpcStreamObservable(IAsyncStreamReader<T> reader, CancellationToken token = default)
         {
             _reader = reader ?? throw new ArgumentNullException(nameof(reader));
             _token = token;
@@ -72,7 +72,7 @@ public class GrpcStreamSubscription<T> : IDisposable
 
     private bool _completed;
 
-    public Subscription(IAsyncStreamReader<T> reader, IObserver<T> observer, CancellationToken token = default)
+    public GrpcStreamSubscription(IAsyncStreamReader<T> reader, IObserver<T> observer, CancellationToken token = default)
     {
         _reader = reader ?? throw new ArgumentNullException(nameof(reader));
         _observer = observer ?? throw new ArgumentNullException(nameof(observer));

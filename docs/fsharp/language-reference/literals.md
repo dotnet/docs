@@ -1,14 +1,11 @@
 ---
 title: Literals
 description: Learn about the literal types in the F# programming language.
-ms.date: 06/28/2019
+ms.date: 08/15/2020
 ---
 # Literals
 
 This article provides a table that shows how to specify the type of a literal in F#.
-
-> [!NOTE]
-> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 ## Literal types
 
@@ -40,7 +37,7 @@ The following table shows the literal types in F#. Characters that represent dig
 
 ## Named literals
 
-Values that are intended to be constants can be marked with the [Literal](https://msdn.microsoft.com/library/465f36ce-d146-41c0-b425-679c509cd285) attribute. This attribute has the effect of causing a value to be compiled as a constant.
+Values that are intended to be constants can be marked with the [Literal](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-literalattribute.html) attribute. This attribute has the effect of causing a value to be compiled as a constant.
 
 In pattern matching expressions, identifiers that begin with lowercase characters are always treated as variables to be bound, rather than as literals, so you should generally use initial capitals when you define literals.
 
@@ -87,7 +84,3 @@ let valueAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
 let exampleSSN = 123_456_7890
 ```
-
-## See also
-
-- [Core.LiteralAttribute Class](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.literalattribute-class-%5bfsharp%5d)

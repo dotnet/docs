@@ -13,3 +13,15 @@ If you encounter issues in the comparison of 16-bit unsigned values in the .NET 
 | Scope   |Edge|
 |Version|4.7|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

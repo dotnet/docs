@@ -1,7 +1,6 @@
 ---
 title: "Install the .NET Framework developer pack or redistributable"
 description: "Developers can download and install the .NET Framework developer pack and targeting pack. You can include the .NET Framework redistributable with your apps."
-ms.custom: "updateeachrelease"
 ms.date: "01/17/2020"
 helpviewer_keywords:
   - ".NET Framework redistributable package, downloading"

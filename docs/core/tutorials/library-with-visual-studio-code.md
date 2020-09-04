@@ -36,7 +36,7 @@ Start by creating a blank solution to put the class library project in. A soluti
 
    The terminal output looks like the following example:
 
-   ```
+   ```output
    The template "Solution File" was created successfully.
    ```
 
@@ -50,9 +50,11 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
    dotnet new classlib -o StringLibrary
    ```
 
+   The `-o` or `--output` command specifies the location to place the generated output.
+
    The terminal output looks like the following example:
 
-   ```
+   ```output
    The template "Class library" was created successfully.
    Processing post-creation actions...
    Running 'dotnet restore' on StringLibrary\StringLibrary.csproj...
@@ -69,7 +71,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
 
    The terminal output looks like the following example:
 
-   ```
+   ```output
    Project `StringLibrary\StringLibrary.csproj` added to the solution.
    ```
 
@@ -103,7 +105,7 @@ Add a new .NET Standard class library project named "StringLibrary" to the solut
 
    The terminal output looks like the following example:
 
-   ```
+   ```output
    Microsoft (R) Build Engine version 16.6.0 for .NET Core
    Copyright (C) Microsoft Corporation. All rights reserved.
      Determining projects to restore...
@@ -128,7 +130,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    The terminal output looks like the following example:
 
-   ```
+   ```output
    The template "Console Application" was created successfully.
    Processing post-creation actions...
    Running 'dotnet restore' on ShowCase\ShowCase.csproj...  
@@ -145,7 +147,7 @@ Add a console application that uses the class library. The app will prompt the u
 
    The terminal output looks like the following example:
 
-   ```
+   ```output
    Project `ShowCase\ShowCase.csproj` added to the solution.
    ```
 
@@ -171,7 +173,7 @@ Initially, the new console app project doesn't have access to the class library.
 
    The terminal output looks like the following example:
 
-   ```
+   ```output
    Reference `..\StringLibrary\StringLibrary.csproj` added to the project.
    ```
 
@@ -187,16 +189,16 @@ Initially, the new console app project doesn't have access to the class library.
 
    The terminal output looks like the following example:
 
-   ```
+   ```output
    Press <Enter> only to exit; otherwise, enter a string and press <Enter>:
 
    A string that starts with an uppercase letter
    Input: A string that starts with an uppercase letter
    Begins with uppercase? : Yes
 
-   A string that starts with a lowercase letter
-   Input: A string that starts with a lowercase letter
-   Begins with uppercase? : Yes
+   a string that starts with a lowercase letter
+   Input: a string that starts with a lowercase letter
+   Begins with uppercase? : No
    ```
 
 ## Additional resources

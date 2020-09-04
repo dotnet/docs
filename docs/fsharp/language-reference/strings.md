@@ -1,14 +1,11 @@
 ---
 title: Strings
 description: Learn how the F# 'string' type represents immutable text as a sequence of Unicode characters.
-ms.date: 07/05/2019
+ms.date: 08/15/2020
 ---
 # Strings
 
 The `string` type represents immutable text as a sequence of Unicode characters. `string` is an alias for `System.String` in .NET.
-
-> [!NOTE]
-> The docs.microsoft.com API reference for F# is not complete. If you encounter any broken links, reference [F# Core Library Documentation](https://fsharp.github.io/fsharp-core-docs/) instead.
 
 ## Remarks
 
@@ -96,7 +93,7 @@ By using the `Chars` property of `System.String`, you can access the individual 
 
 ## String Module
 
-Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [Core.String Module](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.string-module-%5bfsharp%5d).
+Additional functionality for string handling is included in the `String` module in the `FSharp.Core` namespace. For more information, see [String Module](https://fsharp.github.io/fsharp-core-docs/reference/fsharp-core-stringmodule.html).
 
 ## See also
 

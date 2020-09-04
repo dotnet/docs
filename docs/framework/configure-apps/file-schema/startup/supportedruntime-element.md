@@ -1,7 +1,6 @@
 ---
 title: "<supportedRuntime> configuration element - .NET"
 ms.date: "04/02/2019"
-ms.custom: "updateeachrelease"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#supportedRuntime"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/supportedRuntime"

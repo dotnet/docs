@@ -5,38 +5,38 @@ using System.Threading.Tasks;
 
 namespace AsyncExamples
 {
-
     public static class AsyncStreamExample
     {
-
-        public static async Task Examples()
+        public static async Task ReadWordsAsync()
         {
-            await foreach (var word in ReadWordsFromStream())
+            await foreach (string word in ReadWordsFromStreamAsync())
+            {
                 Console.WriteLine(word);
+            }
         }
 
-        // <SnippetGenerateAsyncStream>
-        private static async IAsyncEnumerable<string> ReadWordsFromStream()
+        // <GenerateAsyncStream>
+        static async IAsyncEnumerable<string> ReadWordsFromStreamAsync()
         {
             string data =
-            @"This is a line of text.
-              Here is the second line of text.
-              And there is one more for good measure.
-              Wait, that was the penultimate line.";
+                @"This is a line of text.
+                  Here is the second line of text.
+                  And there is one more for good measure.
+                  Wait, that was the penultimate line.";
 
             using var readStream = new StringReader(data);
 
-            string? line = await readStream.ReadLineAsync();
+            string line = await readStream.ReadLineAsync();
             while (line != null)
             {
-                var words = line.Split(' ',StringSplitOptions.RemoveEmptyEntries);
-                foreach (var word in words)
+                foreach (string word in line.Split(' ', StringSplitOptions.RemoveEmptyEntries))
                 {
                     yield return word;
                 }
+
                 line = await readStream.ReadLineAsync();
             }
         }
-        // </SnippetGenerateAsyncStream>
+        // </GenerateAsyncStream>
     }
 }

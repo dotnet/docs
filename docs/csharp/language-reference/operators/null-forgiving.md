@@ -1,4 +1,5 @@
 ---
+description: "! (null-forgiving) operator - C# reference"
 title: "! (null-forgiving) operator - C# reference"
 ms.date: 10/11/2019
 f1_keywords: 

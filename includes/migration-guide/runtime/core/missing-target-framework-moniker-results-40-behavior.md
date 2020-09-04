@@ -13,3 +13,15 @@ A <xref:System.Runtime.Versioning.TargetFrameworkAttribute?displayProperty=fullN
 | Scope   |Major|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

@@ -1,4 +1,5 @@
 ---
+description: "Checked and Unchecked - C# Reference"
 title: "Checked and Unchecked - C# Reference"
 ms.date: 05/15/2018
 helpviewer_keywords: 

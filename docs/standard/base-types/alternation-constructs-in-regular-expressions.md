@@ -54,7 +54,7 @@ The regular expression `\b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as s
 |-------------|-----------------|  
 |`\b`|Start at a word boundary.|  
 |<code>(\d{2}-\d{7}&#124;\d{3}-\d{2}-\d{4})</code>|Match either of the following: two decimal digits followed by a hyphen followed by seven decimal digits; or three decimal digits, a hyphen, two decimal digits, another hyphen, and four decimal digits.|  
-|`\d`|End the match at a word boundary.|  
+|`\b`|End the match at a word boundary.|  
   
 <a name="Conditional_Expr"></a>
 ## Conditional matching with an expression

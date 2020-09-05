@@ -13,3 +13,15 @@ Derived classes cannot be marked with the <xref:System.Security.SecurityCritical
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

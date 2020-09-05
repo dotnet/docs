@@ -2,7 +2,7 @@
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
 no-loc: [Blazor, WebAssembly]
-ms.date: 09/01/2020
+ms.date: 09/04/2020
 ---
 # dotnet new
 
@@ -70,7 +70,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 | MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2.0        |
 | MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
 | Blazor Server App                            | [blazorserver](#blazorserver)   | [C#]         | Web/Blazor                            | 3.0        |
-| Blazor WebAssembly App                       | `blazorwasm`                    | [C#]         | Web/Blazor/WebAssembly                | 3.1.300    |
+| Blazor WebAssembly App                       | [blazorwasm](#blazorwasm)       | [C#]         | Web/Blazor/WebAssembly                | 3.1.300    |
 | ASP.NET Core Empty                           | [web](#web)                     | [C#], F#     | Web/Empty                             | 1.0        |
 | ASP.NET Core Web App (Model-View-Controller) | [mvc](#web-options)             | [C#], F#     | Web/MVC                               | 1.0        |
 | ASP.NET Core Web App                         | [webapp, razor](#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0   |
@@ -386,6 +386,110 @@ Each project template may have additional options available. The core templates 
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
+
+***
+
+### blazorwasm
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  Specifies the [framework](../../standard/frameworks.md) to target.
+
+  The following table lists the default values according to the SDK version number you're using:
+
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 5.0         | `net5.0`        |
+  | 3.1         | `netcoreapp3.1` |
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
+
+- **`-ho|--hosted`**
+
+  Includes an ASP.NET Core host for the Blazor WebAssembly app.
+
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
+
+  The type of authentication to use. The possible values are:
+
+  - `None` - No authentication (Default).
+  - `Individual` - Individual authentication.
+  - `IndividualB2C` - Individual authentication with Azure AD B2C.
+  - `SingleOrg` - Organizational authentication for a single tenant.
+
+- **`--authority <AUTHORITY>`**
+
+  The authority of the OIDC provider. Use with `Individual` authentication. The default value is `https://login.microsoftonline.com/`.
+
+- **`--aad-b2c-instance <INSTANCE>`**
+
+  The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://aadB2CInstance.b2clogin.com/`.
+
+- **`-ssp|--susi-policy-id <ID>`**
+
+  The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+
+- **`--aad-instance <INSTANCE>`**
+
+  The Azure Active Directory instance to connect to. Use with `SingleOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+
+- **`--client-id <ID>`**
+
+  The Client ID for this project. Use with `IndividualB2C`, `SingleOrg`, or `Individual` authentication in standalone scenarios. The default value is `33333333-3333-3333-33333333333333333`.
+
+- **`--domain <DOMAIN>`**
+
+  The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+
+- **`--app-id-uri <URI>`**
+
+  The App ID Uri for the server API you want to call. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `api.id.uri`.
+
+- **`--api-client-id <ID>`**
+
+  The Client ID for the API that the server hosts. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+
+- **`-s|--default-scope <SCOPE>`**
+
+  The API scope the client needs to request to provision an access token. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `user_impersonation`.
+
+- **`--tenant-id <ID>`**
+
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+
+- **`-r|--org-read-access`**
+
+  Allows this application read-access to the directory. Only applies to `SingleOrg` authentication.
+
+- **`--exclude-launch-settings`**
+
+  Excludes *launchSettings.json* from the generated template.
+
+- **`-p|--pwa`**
+
+  produces a Progressive Web Application (PWA) supporting installation and offline use.
+
+- **`--no-https`**
+
+  Turns off HTTPS. This option only applies if `Individual`, `IndividualB2C`, or `SingleOrg` aren't being used for `--auth`.
+
+- **`-uld|--use-local-db`**
+
+  Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+
+- **`--called-api-url <URL>`**
+
+  URL of the API to call from the web app. Only applies to `SingleOrg` or `IndividualB2C` authentication without an ASP.NET Core host specified. The default value is `https://graph.microsoft.com/v1.0/me`.
+
+- **`--calls-graph`**
+
+  Specifies if the web app calls Microsoft Graph. Only applies to `SingleOrg` authentication.
+
+- **`--called-api-scopes <SCOPES>`**
+
+  Scopes to request to call the API from the web app. Only applies to `SingleOrg` or `IndividualB2C` authentication without an ASP.NET Core host specified. The default is `user.read`.
 
 ***
 

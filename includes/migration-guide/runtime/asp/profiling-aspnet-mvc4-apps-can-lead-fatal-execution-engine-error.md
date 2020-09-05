@@ -13,3 +13,15 @@ This issue is fixed in the .NET Framework 4.5.2. Alternatively, the profiler may
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

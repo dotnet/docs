@@ -13,3 +13,15 @@ In the [Microsoft Service Trace Viewer tool](~/docs/framework/wcf/service-trace-
 | Scope   |Edge|
 |Version|4.8|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

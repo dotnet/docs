@@ -56,7 +56,7 @@ You can also used *named arguments* instead of positional arguments when invokin
 
 [!code-csharp[csSnippets.Methods#45](../../samples/snippets/csharp/concepts/methods/named1.cs#45)]
 
-You can invoke a method using both positional arguments and named arguments. However, a positional argument cannot follow a named argument. The following example invokes the `TestMotorcycle.Drive` method from the previous example using one positional argument and one named argument.
+You can invoke a method using both positional arguments and named arguments. However, positional arguments can only follow named arguments when the named arguments are in the correct positions. The following example invokes the `TestMotorcycle.Drive` method from the previous example using one positional argument and one named argument.
 
 [!code-csharp[csSnippets.Methods#46](../../samples/snippets/csharp/concepts/methods/named2.cs#46)]
 

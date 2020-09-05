@@ -12,8 +12,16 @@ Applications working with URIs consistently containing Unicode could have concei
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.7.2|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Uri?displayProperty=nameWithType></li></ul>|
+- <xref:System.Uri?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Uri`
+
+-->

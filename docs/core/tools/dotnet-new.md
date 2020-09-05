@@ -54,12 +54,12 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
 | Console Application                          | [console](#console)             | [C#], F#, VB | Common/Console                        | 1.0        |
 | Class library                                | [classlib](#classlib)           | [C#], F#, VB | Common/Library                        | 1.0        |
-| WPF Application                              | [wpf](#wpf)                     | [C#], VB     | Common/WPF                            | 3.0        |
-| WPF Class library                            | [wpflib](#wpf)                  | [C#], VB     | Common/WPF                            | 3.0        |
-| WPF Custom Control Library                   | [wpfcustomcontrollib](#wpf)     | [C#], VB     | Common/WPF                            | 3.0        |
-| WPF User Control Library                     | [wpfusercontrollib](#wpf)       | [C#], VB     | Common/WPF                            | 3.0        |
-| Windows Forms (WinForms) Application         | [winforms](#winforms)           | [C#], VB     | Common/WinForms                       | 3.0        |
-| Windows Forms (WinForms) Class library       | [winformslib](#winforms)        | [C#], VB     | Common/WinForms                       | 3.0        |
+| WPF Application                              | [wpf](#wpf)                     | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB)|
+| WPF Class library                            | [wpflib](#wpf)                  | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB)|
+| WPF Custom Control Library                   | [wpfcustomcontrollib](#wpf)     | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB)|
+| WPF User Control Library                     | [wpfusercontrollib](#wpf)       | [C#], VB     | Common/WPF                            | 3.0 (5.0 for VB)|
+| Windows Forms (WinForms) Application         | [winforms](#winforms)           | [C#], VB     | Common/WinForms                       | 3.0 (5.0 for VB)|
+| Windows Forms (WinForms) Class library       | [winformslib](#winforms)        | [C#], VB     | Common/WinForms                       | 3.0 (5.0 for VB)|
 | Worker Service                               | [worker](#web-others)           | [C#]         | Common/Worker/Web                     | 3.0        |
 | Unit Test Project                            | [mstest](#test)                 | [C#], F#, VB | Test/MSTest                           | 1.0        |
 | NUnit 3 Test Project                         | [nunit](#nunit)                 | [C#], F#, VB | Test/NUnit                            | 2.1.400    |

@@ -33,6 +33,9 @@ The following table shows the different rule severities.
 | `none` | Rule is suppressed completely. |
 | `default` | The default severity of the rule is used. |
 
+> [!TIP]
+> For information about how rule severities surface in Visual Studio, see [Severity levels](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
+
 ## Configure multiple rules
 
 You can set the severity for a specific category of analyzer rules or for all analyzer rules with a single entry in an EditorConfig file.

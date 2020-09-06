@@ -5,7 +5,7 @@ author: ardalis
 ms.date: 05/13/2020
 ---
 
-# Architecting Cloud Native .NET Applications for Azure
+# DAPR for .NET Developers
 
 ![cover image](./media/cover.png)
 
@@ -41,17 +41,13 @@ Authors:
 
 > **Rob Vettor**, Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](https://thinkingincloudnative.com/about/), Microsoft
 >
-> **Steve "ardalis" Smith**, Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
+> **Sander Molenkamp**, Principal Cloud Architect/Microsoft MVP - Info Support [])
+>
+> **Edwin van Wijk**, Principal Software Architect/Microsoft MVP - Info Support [])
 
 Participants and Reviewers:
 
-> **Cesar De la Torre**, Principal Program Manager, .NET team, Microsoft
->
 > **Nish Anil**, Senior Program Manager, .NET team, Microsoft
->
-> **Jeremy Likness**, Senior Program Manager, .NET team, Microsoft
->
-> **Cecil Phillip**, Senior Cloud Advocate, Microsoft
 
 Editors:
 

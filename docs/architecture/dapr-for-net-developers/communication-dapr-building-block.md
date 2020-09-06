@@ -1,11 +1,11 @@
 ---
-title: Architectural-patterns-address-by-dapr
-description: Mapping common distributed architecture patterns map to DAPR
-author: robvet
+title: Communication DAPR building block
+description: Blah
+author: 
 ms.date: 09/05/2020
 ---
 
-# Mapping distributed patterns to DAPR
+# The communication dapr building block
 
 Blah, blah
 
@@ -21,24 +21,20 @@ Blah, blah
 ![eShopOnContainers Architecture](./media/eshoponcontainers-architecture.png)
 **Figure 2-5**. The eShopOnContainers Architecture.
 
-## Pattern 1
+## its features
 
 Blah
 
-## Pattern 2
+## What is solves
 
 Blah
 
-# Summary
+## How it works
 
-In this chapter, we introduced DAPR. Blah. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
+Blah
 
-With the introduction behind, we now dive into a much more detailed look at cloud native.
-
-### References
-
-- [Cloud Native Computing Foundation](https://www.cncf.io/)
+## pluggable components
 
 >[!div class="step-by-step"]
->[Previous](architectural-patterns-address-by-dapr.md)
->[Next](installing-dapr.md)
+>[Previous](state-dapr-building-block.md)
+>[Next](pub-sub-dapr-building-block.md)

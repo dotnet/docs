@@ -1,11 +1,11 @@
 ---
-title: Installing dapr
-description: Installing DAPR both locally and for Kubernetes
-author: robvet
+title: Actor DAPR building block
+description: Blah
+author: 
 ms.date: 09/05/2020
 ---
 
-# Installing DAPR
+# The actor dapr building block
 
 Blah, blah
 
@@ -21,28 +21,20 @@ Blah, blah
 ![eShopOnContainers Architecture](./media/eshoponcontainers-architecture.png)
 **Figure 2-5**. The eShopOnContainers Architecture.
 
-## Installing DAPR locally
-Blah
-
-## Hosting DAPR in Kuberentes
+## its features
 
 Blah
 
-## A <F5> interloop experience with DAPR
+## What is solves
 
 Blah
 
+## How it works
 
-# Summary
+Blah
 
-In this chapter, we introduced DAPR. Blah. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
-
-With the introduction behind, we now dive into a much more detailed look at cloud native.
-
-### References
-
-- [Cloud Native Computing Foundation](https://www.cncf.io/)
+## pluggable components
 
 >[!div class="step-by-step"]
->[Previous](eshop-for-dapr.md)
->[Next](dapr-building-blocks.md)
+>[Previous](bindings-triggers-dapr-building-block.md)
+>[Next](observability-building-block.md)

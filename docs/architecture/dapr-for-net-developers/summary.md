@@ -1,7 +1,8 @@
 ---
 title: Summary
-description: A summary of key conclusions from the Architecting Cloud-Native .NET Apps for Azure guide/e-book.
-ms.date: 05/13/2020
+description: A summary of key conclusions from the DAPR for .NET developers guidance e-book.
+author: robvet
+ms.date: 09/05/2020
 ---
 
 # Summary
@@ -49,4 +50,4 @@ In summary, here are important conclusions from this guide:
 - **Code automation** is a requirement for cloud-native applications. Modern CI/CD systems help fulfill this principle. They provide separate build and deployment steps that help ensure consistent and quality code. The build stage transforms the code into a binary artifact. The release stage picks up the binary artifact, applies external environment configuration, and deploys it to a specified environment. Azure DevOps and GitHub are full-featured DevOps environments.
 
 >[!div class="step-by-step"]
->[Previous](application-bundles.md)
+>[Previous](road-ahead.md)

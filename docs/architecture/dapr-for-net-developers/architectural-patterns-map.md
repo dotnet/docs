@@ -1,11 +1,11 @@
 ---
-title: Installing dapr
-description: Installing DAPR both locally and for Kubernetes
+title: DAPR architectural patterns map
+description: Mapping common distributed architecture patterns map to DAPR
 author: robvet
 ms.date: 09/05/2020
 ---
 
-# Installing DAPR
+# Mapping distributed patterns to DAPR
 
 Blah, blah
 
@@ -21,17 +21,13 @@ Blah, blah
 ![eShopOnContainers Architecture](./media/eshoponcontainers-architecture.png)
 **Figure 2-5**. The eShopOnContainers Architecture.
 
-## Installing DAPR locally
-Blah
-
-## Hosting DAPR in Kuberentes
+## Pattern 1
 
 Blah
 
-## A <F5> interloop experience with DAPR
+## Pattern 2
 
 Blah
-
 
 # Summary
 
@@ -44,5 +40,5 @@ With the introduction behind, we now dive into a much more detailed look at clou
 - [Cloud Native Computing Foundation](https://www.cncf.io/)
 
 >[!div class="step-by-step"]
->[Previous](eshop-for-dapr.md)
->[Next](dapr-building-blocks.md)
+>[Previous](introducing-dapr.md)
+>[Next](eshop-for-dapr.md)

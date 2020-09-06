@@ -1,8 +1,8 @@
 ---
-title: Architecting Cloud Native .NET Applications for Azure
-description: A guide for building cloud-native applications leveraging containers, microservices, and serverless features of Azure.
-author: ardalis
-ms.date: 05/13/2020
+title: DAPR for .NET Developers
+description: A guide for to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
+author: robvet
+ms.date: 09/05/2020
 ---
 
 # DAPR for .NET Developers
@@ -65,15 +65,7 @@ A secondary audience is technical decision-makers who plan to choose whether to 
 
 ## How you can use this guide
 
-This guide begins by defining cloud native and introducing a reference application built using cloud-native principles and technologies. Beyond these first two chapters, the rest of the book is broken up into specific chapters focused on topics common to most cloud-native applications. You can jump to any of these chapters to learn about cloud-native approaches to:
-
-- Data and data access
-- Communication patterns
-- Scaling and scalability
-- Application resiliency
-- Monitoring and health
-- Identity and security
-- DevOps
+Blah
 
 This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-book/cloud-native-azure/pdf) form and online. Feel free to forward this document or links to its online version to your team to help ensure common understanding of these topics. Most of these topics benefit from a consistent understanding of the underlying principles and patterns, as well as the trade-offs involved in decisions related to these topics. Our goal with this document is to equip teams and their leaders with the information they need to make well-informed decisions for their applications' architecture, development, and hosting.
 
@@ -82,4 +74,4 @@ This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-bo
 This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
->[Next](introduction.md)
+>[Next](challenges-of-distributed-applications.md)

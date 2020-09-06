@@ -1,5 +1,5 @@
 ---
-title: DAPR @ 20,000 feet
+title: Introducing DAPR
 description: Gain a highlevel understanding of DAPR: What it is, what it does, and how it works
 author: robvet
 ms.date: 09/05/2020
@@ -73,5 +73,5 @@ With the introduction behind, we now dive into a much more detailed look at clou
 - [Cloud Native Computing Foundation](https://www.cncf.io/)
 
 >[!div class="step-by-step"]
->[Previous](introduction.md)
->[Next](architectural-patterns-address-by-dapr.md)
+>[Previous](challenges-of-distributed-applications.md)
+>[Next](architectural-patterns-map.md)

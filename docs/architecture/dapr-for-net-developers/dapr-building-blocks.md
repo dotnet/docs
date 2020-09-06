@@ -27,4 +27,4 @@ Blah
 
 >[!div class="step-by-step"]
 >[Previous](installing-dapr.md)
->[Next](state-dapr-building-block.md)
+>[Next](state-building-block.md)

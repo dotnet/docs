@@ -1,11 +1,11 @@
 ---
-title: Communication DAPR building block
+title: Pub/sub DAPR building block
 description: Blah
 author: 
 ms.date: 09/05/2020
 ---
 
-# The communication dapr building block
+# The pub/sub DAPR building block
 
 Blah, blah
 
@@ -36,5 +36,5 @@ Blah
 ## pluggable components
 
 >[!div class="step-by-step"]
->[Previous](state-dapr-building-block.md)
->[Next](pub-sub-dapr-building-block.md)
+>[Previous](communication-building-block.md)
+>[Next](bindings-triggers-building-block.md)

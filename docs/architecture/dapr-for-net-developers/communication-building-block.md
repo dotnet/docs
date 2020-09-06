@@ -1,11 +1,11 @@
 ---
-title: State DAPR Building Block
+title: Communication DAPR building block
 description: Blah
 author: 
 ms.date: 09/05/2020
 ---
 
-# The state dapr building block
+# The communication DAPR building block
 
 Blah, blah
 
@@ -36,5 +36,5 @@ Blah
 ## pluggable components
 
 >[!div class="step-by-step"]
->[Previous](dapr-building-blocks.md)
->[Next](communication-dapr-building-block.md)
+>[Previous](state-building-block.md)
+>[Next](pub-sub-building-block.md)

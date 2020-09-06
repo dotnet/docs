@@ -5,7 +5,7 @@ author: robvet
 ms.date: 09/05/2020
 ---
 
-# The observability dapr building block
+# The observability DAPR building block
 
 Blah, blah
 
@@ -36,5 +36,5 @@ Blah
 ## pluggable components
 
 >[!div class="step-by-step"]
->[Previous](actor-building-blocks.md)
+>[Previous](actor-building-block.md)
 >[Next](secrets-building-block.md)

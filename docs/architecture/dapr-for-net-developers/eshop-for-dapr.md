@@ -5,7 +5,7 @@ author: robvet
 ms.date: 09/05/2020
 ---
 
-# Mapping distributed patterns to DAPR
+# Introducing eShop for DAPR
 
 Blah, blah
 

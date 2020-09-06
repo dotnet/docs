@@ -1,11 +1,11 @@
 ---
-title: Resource bindings/triggers DAPR building block
+title: Actor DAPR building block
 description: Blah
 author: 
 ms.date: 09/05/2020
 ---
 
-# The resource bindings/triggers dapr building block
+# The actor DAPR building block
 
 Blah, blah
 
@@ -36,5 +36,5 @@ Blah
 ## pluggable components
 
 >[!div class="step-by-step"]
->[Previous](pub-sub-dapr-building-block.md)
->[Next](actor-dapr-building-block.md)
+>[Previous](bindings-triggers-building-block.md)
+>[Next](observability-building-block.md)

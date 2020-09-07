@@ -12,8 +12,16 @@ Any code depending on <xref:System.Security.Cryptography.X509Certificates.X509Ce
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.6|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Security.Cryptography.X509Certificates.X509Certificate2.ToString(System.Boolean)`
+
+-->

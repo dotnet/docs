@@ -13,3 +13,15 @@ This behavior (whether to clip or not) can be explicitly set using the <code>&lt
 | Scope   |Minor|
 |Version|4.6|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

@@ -136,6 +136,8 @@ items:
       href: ../core/tutorials/index.md
 - name: What's new
   items:
+  - name: Evolution of .NET Core to .NET 5
+    href: ../core/dotnet-five.md
   - name: What's new in .NET Core 3.1
     href: ../core/whats-new/dotnet-core-3-1.md
   - name: What's new in .NET Core 3.0
@@ -407,6 +409,8 @@ items:
       href: ../core/deploying/creating-nuget-packages.md
     - name: Self-contained deployment runtime roll forward
       href: ../core/deploying/runtime-patch-selection.md
+    - name: Single file deployment and executable
+      href: ../core/deploying/single-file.md
     - name: Trim self-contained deployments and executables
       href: ../core/deploying/trim-self-contained.md
     - name: Runtime package store
@@ -699,7 +703,7 @@ items:
 - name: Data access 
   items:
   - name: LINQ
-    href: ../standard/using-linq.md
+    href: ../standard/linq/
   - name: XML documents and data
     href: ../standard/data/xml/
   - name: Microsoft.Data.Sqlite

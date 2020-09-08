@@ -9,7 +9,7 @@ author: IEvangelist
 
 # The evolution of .NET Core to .NET 5
 
-This article details what is included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+This article details what is included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. ASP.NET Core retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Additionally, Entity Framework Core retains the name "Core" to avoid confusing it with Entity Framework 5 and 6. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time.
 
@@ -73,7 +73,7 @@ Developers writing .NET 5 apps will have access to the latest C# version and fea
 
 - Function pointers: Language constructs that expose the following intermediate language (IL) opcodes: `ldftn` and `calli`.
 
-<!-- For more information on the available C# 9 features, see [What's new in C# 9](csharp/whats-new/csharp-9.md). -->
+For more information on the available C# 9 features, see [What's new in C# 9](../csharp/whats-new/csharp-9.md).
 
 #### Source generators
 

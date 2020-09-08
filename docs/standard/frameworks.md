@@ -27,7 +27,7 @@ The following table defines the most common target frameworks, how they're refer
 | .NET Core             | 3.1                         | netcoreapp3.1                  | 2.1                                     |
 | .NET Framework        | 4.8                         | net48                          | 2.0                                     |
 
-## Supported versions
+## Supported target frameworks
 
 A target framework is typically referenced by a TFM. The following table shows the target frameworks supported by the .NET SDK and the NuGet client. Equivalents are shown within brackets. For example, `win81` is an equivalent TFM to `netcore451`.
 
@@ -109,7 +109,7 @@ The complete list of preprocessor symbols for .NET Core target frameworks is:
 
 [!INCLUDE [Preprocessor symbols](../../includes/preprocessor-symbols.md)]
 
-## Deprecated versions
+## Deprecated target frameworks
 
 The following target frameworks are deprecated. Packages that target these target frameworks should migrate to the indicated replacements.
 

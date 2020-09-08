@@ -12,8 +12,16 @@ Be aware that some early or late dates may be slightly different when using the 
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.6|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Globalization.PersianCalendar?displayProperty=nameWithType></li></ul>|
+- <xref:System.Globalization.PersianCalendar?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `T:System.Globalization.PersianCalendar`
+
+-->

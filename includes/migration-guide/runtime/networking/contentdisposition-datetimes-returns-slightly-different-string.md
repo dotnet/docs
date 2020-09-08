@@ -12,8 +12,18 @@ Do not expect that string representations of ContentDispositions from different 
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.6|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=nameWithType></li><li><xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=nameWithType></li></ul>|
+- <xref:System.Net.Mime.ContentDisposition.ToString?displayProperty=nameWithType>
+- <xref:System.Net.Mime.ContentDisposition.GetHashCode?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Net.Mime.ContentDisposition.ToString`
+- `M:System.Net.Mime.ContentDisposition.GetHashCode`
+
+-->

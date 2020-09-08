@@ -6,7 +6,7 @@ ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
 ---
 # .NET Core and open source
 
-This article provides a brief overview of what .NET Core is and shows how you can find more information. To find the complete list of documentation for .NET Core, visit the [.NET Core guide](../../core/index.yml).
+This article provides a brief overview of what .NET Core is and shows how you can find more information.
 
 ## What is .NET Core?  
 
@@ -41,5 +41,5 @@ The .NET Core platform is made up of several components, including the managed c
 ## See also
 
 - [.NET tutorial - Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
-- [.NET Core guide](../../core/index.yml)
+- [.NET Core introduction](../../core/introduction.md)
 - [ASP.NET Core docs](/aspnet/core/)

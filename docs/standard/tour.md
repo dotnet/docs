@@ -109,7 +109,7 @@ To learn more about async programming in .NET, start with the [Async overview](a
 
 LINQ is a powerful set of features for C# and Visual Basic that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, a SQL database, or an XML document), but the LINQ code you write typically doesn't differ by data source.
 
-To learn more and see some samples, see the [LINQ (Language Integrated Query)](using-linq.md) topic.
+To learn more and see some samples, see the [LINQ (Language Integrated Query) overview](./linq/index.md) article.
 
 ## Native interoperability
 

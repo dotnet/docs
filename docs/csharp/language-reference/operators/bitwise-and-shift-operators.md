@@ -90,7 +90,7 @@ For information about how the right-hand operand of the `>>` operator defines th
 
 ## <a name="logical-and-operator-"></a> Logical AND operator &amp;
 
-The `&` operator computes the bitwise logical AND of its operands:
+The `&` operator computes the bitwise logical AND of its integral operands:
 
 [!code-csharp-interactive[bitwise AND](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseAnd)]
 
@@ -98,7 +98,7 @@ For `bool` operands, the `&` operator computes the [logical AND](boolean-logical
 
 ## Logical exclusive OR operator ^
 
-The `^` operator computes the bitwise logical exclusive OR, also known as the bitwise logical XOR, of its operands:
+The `^` operator computes the bitwise logical exclusive OR, also known as the bitwise logical XOR, of its integral operands:
 
 [!code-csharp-interactive[bitwise XOR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseXor)]
 
@@ -106,7 +106,7 @@ For `bool` operands, the `^` operator computes the [logical exclusive OR](boolea
 
 ## Logical OR operator |
 
-The `|` operator computes the bitwise logical OR of its operands:
+The `|` operator computes the bitwise logical OR of its integral operands:
 
 [!code-csharp-interactive[bitwise OR](snippets/shared/BitwiseAndShiftOperators.cs#BitwiseOr)]
 

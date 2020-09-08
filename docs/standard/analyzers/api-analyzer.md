@@ -98,7 +98,7 @@ if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 }
 ```
 
-You can also conditionally compile per target framework/operating system, but you currently need to do that [manually](../frameworks.md#how-to-specify-target-frameworks).
+You can also conditionally compile per target framework/operating system, but you currently need to do that [manually](../frameworks.md#how-to-specify-a-target-framework).
 
 ## Supported diagnostics
 
@@ -106,7 +106,7 @@ Currently, the analyzer handles the following cases:
 
 - Usage of a .NET Standard API that throws <xref:System.PlatformNotSupportedException> (PC001).
 - Usage of a .NET Standard API that isn't available on the .NET Framework 4.6.1 (PC002).
-- Usage of a native API that doesn’t exist in UWP (PC003).
+- Usage of a native API that doesn't exist in UWP (PC003).
 - Usage of Delegate.BeginInvoke and EndInvoke APIs (PC004).
 - Usage of an API that is marked as deprecated (DEXXXX).
 

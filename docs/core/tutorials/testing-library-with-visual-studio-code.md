@@ -172,7 +172,7 @@ Now that the tests have all passed when running the Debug build of the library, 
 
 You can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio Code](debugging-with-visual-studio-code.md) to debug code using your unit test project. Instead of starting the ShowCase app project, open *StringLibraryTest/UnitTest1.cs*, and select **Run All Test** that between lines 7 and 8. If you can't find it, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette and enter **Reload Window**.
 
-Visual Studio code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
+Visual Studio Code starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
 
 ## Additional resources
 

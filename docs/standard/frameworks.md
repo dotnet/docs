@@ -119,7 +119,7 @@ public class MyClass
 }
 ```
 
-The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](## Supported target frameworks) table when you're using SDK-style projects. When using a symbol that represents a .NET Standard or .NET Core TFM, replace the dot with an underscore and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
+The build system is aware of preprocessor symbols representing the target frameworks shown in the [Supported target framework versions](#supported-target-frameworks) table when you're using SDK-style projects. When using a symbol that represents a .NET Standard or .NET Core TFM, replace the dot with an underscore and change lowercase letters to uppercase (for example, the symbol for `netstandard1.4` is `NETSTANDARD1_4`).
 
 The complete list of preprocessor symbols for .NET Core target frameworks is:
 

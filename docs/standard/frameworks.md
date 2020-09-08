@@ -33,7 +33,7 @@ A target framework is typically referenced by a TFM. The following table shows t
 
 | Target Framework           | TFM |
 | -------------------------- | --- |
-| .NET 5 (and .NET Core) and later versions | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0<br>net5.0-android<br>net5.0-ios<br>net5.0-macos<br>net5.0-tvos<br>net5.0-watchos<br>net5.0-windows |
+| .NET 5 (and .NET Core)     | netcoreapp1.0<br>netcoreapp1.1<br>netcoreapp2.0<br>netcoreapp2.1<br>netcoreapp2.2<br>netcoreapp3.0<br>netcoreapp3.1<br>net5.0* |
 | .NET Standard              | netstandard1.0<br>netstandard1.1<br>netstandard1.2<br>netstandard1.3<br>netstandard1.4<br>netstandard1.5<br>netstandard1.6<br>netstandard2.0<br>netstandard2.1 |
 | .NET Framework             | net11<br>net20<br>net35<br>net40<br>net403<br>net45<br>net451<br>net452<br>net46<br>net461<br>net462<br>net47<br>net471<br>net472<br>net48 |
 | Windows Store              | netcore [netcore45]<br>netcore45 [win] [win8]<br>netcore451 [win81] |
@@ -42,8 +42,24 @@ A target framework is typically referenced by a TFM. The following table shows t
 | Windows Phone              | wp [wp7]<br>wp7<br>wp75<br>wp8<br>wp81<br>wpa81 |
 | Universal Windows Platform | uap [uap10.0]<br>uap10.0 [win10] [netcore50] |
 
-> [!TIP]
-> For .NET 5 TFMS, you can also specify an optional OS version, for example, `net5.0-ios12.0`. For more information about .NET 5 TFMs, see [Target framework names in .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md).
+\* .NET 5.0 and later TFMs include OS-specific variations. For more information, see the following section, [.NET 5 OS-specific TFMs](#net-5-os-specific-tfms).
+
+### .NET 5 OS-specific TFMs
+
+For each .NET 5.0 and later TFM, for example, `net5.0`, there are TFM variations that include OS-specific bindings. These variations are shown in the following table.
+
+| OS-specific format | Example        |
+|--------------------|----------------|
+| \<base-tfm>-android | net5.0-android |
+| \<base-tfm>-ios     | net5.0-ios     |
+| \<base-tfm>-macos   | net5.0-macos   |
+| \<base-tfm>-tvos    | net5.0-tvos    |
+| \<base-tfm>-watchos | net5.0-watchos |
+| \<base-tfm>-windows | net5.0-windows |
+
+You can also specify an optional OS version, for example, `net5.0-ios12.0`.
+
+For more information about .NET 5 TFMs, see [Target framework names in .NET 5](https://github.com/dotnet/designs/blob/master/accepted/2020/net5/net5.md).
 
 ## How to specify a target framework
 

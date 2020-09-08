@@ -12,8 +12,20 @@ URI escaping has changed in .NET Framework 4.5 to support [RFC 3986](https://too
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType></li><li><xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType></li><li><xref:System.Uri.UnescapeDataString(System.String)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Uri.EscapeDataString(System.String)?displayProperty=nameWithType>
+- <xref:System.Uri.EscapeUriString(System.String)?displayProperty=nameWithType>
+- <xref:System.Uri.UnescapeDataString(System.String)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Uri.EscapeDataString(System.String)`
+- `M:System.Uri.EscapeUriString(System.String)`
+- `M:System.Uri.UnescapeDataString(System.String)`
+
+-->

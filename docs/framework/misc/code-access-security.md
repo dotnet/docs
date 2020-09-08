@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
 ---
 # Code Access Security
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Today's highly connected computer systems are frequently exposed to code originating from various, possibly unknown sources. Code can be attached to email, contained in documents, or downloaded over the Internet. Unfortunately, many computer users have experienced firsthand the effects of malicious mobile code, including viruses and worms, which can damage or destroy data and cost time and money.  

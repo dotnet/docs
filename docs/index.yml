@@ -54,7 +54,7 @@ conceptualContent:
     - title: Open-source .NET
       summary: Learn about .NET Core
       links:
-        - url: core/index.yml
+        - url: core/introduction.md
           itemType: overview
           text: .NET Core overview
         - url: core/whats-new/dotnet-core-3-1.md
@@ -85,9 +85,12 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
-        - url: standard/index.yml
+        - url: standard/tour.md
           itemType: overview
           text: Overview of .NET
+        - url: core/dotnet-five.md
+          itemType: concept
+          text: Evolution to .NET 5
         - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
@@ -97,9 +100,6 @@ conceptualContent:
         - url: /ef/core/
           itemType: overview
           text: Entity Framework Core
-        - url: standard/get-started.md
-          itemType: get-started
-          text: Get started
         - url: standard/components.md
           itemType: concept
           text: .NET architectural components
@@ -221,9 +221,9 @@ additionalContent:
             text: Universal Windows apps
           - url: desktop-wpf/index.yml
             text: Windows Presentation Foundation (.NET Core)
-          - url: framework/wpf/index.md
+          - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
             text: Windows Presentation Foundation (.NET Framework)
-          - url: framework/winforms/index.md
+          - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
             text: Windows Forms
           - url: /xamarin/mac
             text: Xamarin for macOS
@@ -234,7 +234,7 @@ additionalContent:
             text: Game development with Visual Studio
           - url: https://docs.cryengine.com/display/CEPROG/C%23+Programming
             text: Learn how to use CRYENGINE to build games with C#
-          - url: http://www.monogame.net/documentation/?page=main
+          - url: https://docs.monogame.net/?page=main
             text: Build games with C# using the MonoGame library
           - url: https://docs.unity3d.com/Manual/index.html
             text: Learn how to use Unity to build 2D and 3D games with C#

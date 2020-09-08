@@ -84,7 +84,7 @@ This is not an exhaustive list of `Newtonsoft.Json` features. The list includes 
 
 During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`. The default values are set in the [JsonOptions class](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L22-L28).
 
 ### Minimal character escaping
 
@@ -122,6 +122,8 @@ For more information about custom converter registration, see [Register a custom
 
 `Newtonsoft.Json` doesn't have a maximum depth limit by default. For <xref:System.Text.Json> there's a default limit  of 64, and it's configurable by setting <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
 
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, the default maximum depth limit is 32. The default value is the same as for model binding and is set in the [JsonOptions class](https://github.com/dotnet/aspnetcore/blob/1f56888ea03f6a113587a6c4ac4d8b2ded326ffa/src/Mvc/Mvc.Core/src/JsonOptions.cs#L17-L20).
+
 ### JSON strings (property names and string values)
 
 During deserialization, `Newtonsoft.Json` accepts property names surrounded by double quotes, single quotes, or without quotes. It accepts string values surrounded by double quotes or single quotes. For example, `Newtonsoft.Json` accepts the following JSON:
@@ -138,7 +140,7 @@ During deserialization, `Newtonsoft.Json` accepts property names surrounded by d
 
 A value enclosed in single quotes results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
-```
+```output
 ''' is an invalid start of a value.
 ```
 
@@ -165,7 +167,7 @@ public class ExampleClass
 
 `System.Text.Json` doesn't deserialize non-string values into string properties. A non-string value received for a string field results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
-```
+```output
 The JSON value could not be converted to System.String.
 ```
 

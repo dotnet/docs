@@ -1,219 +1,85 @@
 ---
-title: "Cancel Async Tasks after a Period of Time (C#)"
-description: Use the CancellationTokenSource.CancelAfter method in C# to schedule cancellation of any associated tasks not completed within a period in this example.
-ms.date: 07/20/2015
+title: Cancel async tasks after a period of time (C#)"
+description: Learn how to schedule cancellation of any associated tasks that are not completed within a period of time.
+ms.date: 08/19/2020
+ms.topic: tutorial
 ms.assetid: 194282c2-399f-46da-a7a6-96674e00b0b3
 ---
+
 # Cancel async tasks after a period of time (C#)
 
-You can cancel an asynchronous operation after a period of time by using the  <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType> method if you don't want to wait for the operation to finish. This method schedules the cancellation of any associated tasks that aren’t complete within the period of time that’s designated by the `CancelAfter` expression.
+You can cancel an asynchronous operation after a period of time by using the <xref:System.Threading.CancellationTokenSource.CancelAfter%2A?displayProperty=nameWithType> method if you don't want to wait for the operation to finish. This method schedules the cancellation of any associated tasks that aren't complete within the period of time that's designated by the `CancelAfter` expression.
 
-This example adds to the code that’s developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.
+This example adds to the code that's developed in [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md) to download a list of websites and to display the length of the contents of each one.
 
-> [!NOTE]
-> To run the examples, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
+This tutorial covers:
 
-## Download the example
+> [!div class="checklist"]
+>
+> - Updating an existing .NET console application
+> - Scheduling a cancellation
 
-You can download the complete Windows Presentation Foundation (WPF) project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea) and then follow these steps.
+## Prerequisites
 
-1. Decompress the file that you downloaded, and then start Visual Studio.
+This tutorial requires the following:
 
-2. On the menu bar, choose **File** > **Open** > **Project/Solution**.
+- You're expected to have created an application in the [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md) tutorial
+- [.NET 5.0 or later SDK](https://dotnet.microsoft.com/download/dotnet/5.0)
+- Integrated development environment (IDE)
+  - [We recommend Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com)
 
-3. In the **Open Project** dialog box, open the folder that holds the sample code that you decompressed, and then open the solution (.sln) file for AsyncFineTuningCS.
+## Update application entry point
 
-4. In **Solution Explorer**, open the shortcut menu for the **CancelAfterTime** project, and then choose **Set as StartUp Project**.
-
-5. Choose the **F5** key to run the project. (Or, press **Ctrl**+**F5** to run the project without debugging it).
-
-6. Run the program several times to verify that the output might show output for all websites, no websites, or some web sites.
-
-If you don't want to download the project, you can review the MainWindow.xaml.cs file at the end of this topic.
-
-## Build the example
-
-The example in this topic adds to the project that's developed in [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md) to cancel a list of tasks. The example uses the same UI, although the **Cancel** button isn’t used explicitly.
-
-To build the example yourself, step by step, follow the instructions in the "Downloading the Example" section, but choose **CancelAListOfTasks** as the **StartUp Project**. Add the changes in this topic to that project.
-
-To specify a maximum time before the tasks are marked as canceled, add a call to `CancelAfter` to `startButton_Click`, as the following example shows. The addition is marked with asterisks.
+Replace the existing `Main` method with the following:
 
 ```csharp
-private async void startButton_Click(object sender, RoutedEventArgs e)
+static async Task Main()
 {
-    // Instantiate the CancellationTokenSource.
-    cts = new CancellationTokenSource();
-
-    resultsTextBox.Clear();
+    Console.WriteLine("Application started.");
 
     try
     {
-        // ***Set up the CancellationTokenSource to cancel after 2.5 seconds. (You
-        // can adjust the time.)
-        cts.CancelAfter(2500);
+        s_cts.CancelAfter(3500);
 
-        await AccessTheWebAsync(cts.Token);
-        resultsTextBox.Text += "\r\nDownloads succeeded.\r\n";
+        await SumPageSizesAsync();
     }
-    catch (OperationCanceledException)
+    catch (TaskCanceledException)
     {
-        resultsTextBox.Text += "\r\nDownloads canceled.\r\n";
-    }
-    catch (Exception)
-    {
-        resultsTextBox.Text += "\r\nDownloads failed.\r\n";
+        Console.WriteLine("\nTasks cancelled: timed out.\n");
     }
 
-    cts = null;
+    Console.WriteLine("Application ending.");
 }
 ```
 
- Run the program several times to verify that the output might show output for all websites, no websites, or some web sites. The following output is a sample.
+The updated `Main` method writes a few instructional messages to the console. Within the [try catch](../../../language-reference/keywords/try-catch.md), a call to <xref:System.Threading.CancellationTokenSource.CancelAfter(System.Int32)?displayProperty=nameWithType> to schedule a cancellation. This will signal cancellation after a period of time.
 
-```output
-Length of the downloaded string: 35990.
+Next, the `SumPageSizesAsync` method is awaited. If processing all of the URLs occurs faster than the scheduled cancellation, the application ends. However, if the scheduled cancellation is triggered before all of the URLs are processed, a <xref:System.Threading.Tasks.TaskCanceledException> is thrown.
 
-Length of the downloaded string: 407399.
+### Example application output
 
-Length of the downloaded string: 226091.
+```console
+Application started.
 
-Downloads canceled.
+https://docs.microsoft.com                                       37,357
+https://docs.microsoft.com/aspnet/core                           85,589
+https://docs.microsoft.com/azure                                398,939
+https://docs.microsoft.com/azure/devops                          73,663
+
+Tasks cancelled: timed out.
+
+Application ending.
 ```
 
 ## Complete example
 
-The following code is the complete text of the MainWindow.xaml.cs file for the example. Asterisks mark the elements that were added for this example.
+The following code is the complete text of the *Program.cs* file for the example.
 
-Notice that you must add a reference for <xref:System.Net.Http>.
-
-You can download the project from [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea).
-
-```csharp
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-
-// Add a using directive and a reference for System.Net.Http.
-using System.Net.Http;
-
-// Add the following using directive.
-using System.Threading;
-
-namespace CancelAfterTime
-{
-    public partial class MainWindow : Window
-    {
-        // Declare a System.Threading.CancellationTokenSource.
-        CancellationTokenSource cts;
-
-        public MainWindow()
-        {
-            InitializeComponent();
-        }
-
-        private async void startButton_Click(object sender, RoutedEventArgs e)
-        {
-            // Instantiate the CancellationTokenSource.
-            cts = new CancellationTokenSource();
-
-            resultsTextBox.Clear();
-
-            try
-            {
-                // ***Set up the CancellationTokenSource to cancel after 2.5 seconds. (You
-                // can adjust the time.)
-                cts.CancelAfter(2500);
-
-                await AccessTheWebAsync(cts.Token);
-                resultsTextBox.Text += "\r\nDownloads succeeded.\r\n";
-            }
-            catch (OperationCanceledException)
-            {
-                resultsTextBox.Text += "\r\nDownloads canceled.\r\n";
-            }
-            catch (Exception)
-            {
-                resultsTextBox.Text += "\r\nDownloads failed.\r\n";
-            }
-
-            cts = null;
-        }
-
-        // You can still include a Cancel button if you want to.
-        private void cancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            if (cts != null)
-            {
-                cts.Cancel();
-            }
-        }
-
-        async Task AccessTheWebAsync(CancellationToken ct)
-        {
-            // Declare an HttpClient object.
-            HttpClient client = new HttpClient();
-
-            // Make a list of web addresses.
-            List<string> urlList = SetUpURLList();
-
-            foreach (var url in urlList)
-            {
-                // GetAsync returns a Task<HttpResponseMessage>.
-                // Argument ct carries the message if the Cancel button is chosen.
-                // Note that the Cancel button cancels all remaining downloads.
-                HttpResponseMessage response = await client.GetAsync(url, ct);
-
-                // Retrieve the website contents from the HttpResponseMessage.
-                byte[] urlContents = await response.Content.ReadAsByteArrayAsync();
-
-                resultsTextBox.Text +=
-                    $"\r\nLength of the downloaded string: {urlContents.Length}.\r\n";
-            }
-        }
-
-        private List<string> SetUpURLList()
-        {
-            List<string> urls = new List<string>
-            {
-                "https://msdn.microsoft.com",
-                "https://msdn.microsoft.com/library/windows/apps/br211380.aspx",
-                "https://msdn.microsoft.com/library/hh290136.aspx",
-                "https://msdn.microsoft.com/library/ee256749.aspx",
-                "https://msdn.microsoft.com/library/ms404677.aspx",
-                "https://msdn.microsoft.com/library/ff730837.aspx"
-            };
-            return urls;
-        }
-    }
-
-    // Sample Output:
-
-    // Length of the downloaded string: 35990.
-
-    // Length of the downloaded string: 407399.
-
-    // Length of the downloaded string: 226091.
-
-    // Downloads canceled.
-}
-```
+:::code language="csharp" source="snippets/cancel-tasks/cancel-task-after-period-of-time/Program.cs":::
 
 ## See also
 
-- [Asynchronous Programming with async and await (C#)](./index.md)
-- [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md)
-- [Cancel an Async Task or a List of Tasks (C#)](./cancel-an-async-task-or-a-list-of-tasks.md)
-- [Fine-Tuning Your Async Application (C#)](./fine-tuning-your-async-application.md)
-- [Async Sample: Fine Tuning Your Application](https://code.msdn.microsoft.com/Async-Fine-Tuning-Your-a676abea)
+- <xref:System.Threading.CancellationToken>
+- <xref:System.Threading.CancellationTokenSource>
+- [Asynchronous programming with async and await (C#)](index.md)
+- [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)

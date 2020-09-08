@@ -1,4 +1,5 @@
 ---
+description: "sizeof operator - C# reference"
 title: "sizeof operator - C# reference"
 ms.date: 07/25/2019
 f1_keywords: 
@@ -34,7 +35,7 @@ You also don't need to use an unsafe context when the operand of the `sizeof` op
 
 The following example demonstrates the usage of the `sizeof` operator:
 
-[!code-csharp[sizeof examples](snippets/SizeOfOperator.cs)]
+[!code-csharp[sizeof examples](snippets/shared/SizeOfOperator.cs)]
 
 The `sizeof` operator returns a number of bytes that would be allocated by the common language runtime in managed memory. For [struct](../builtin-types/struct.md) types, that value includes any padding, as the preceding example demonstrates. The result of the `sizeof` operator might differ from the result of the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method, which returns the size of a type in *unmanaged* memory.
 

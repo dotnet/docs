@@ -12,8 +12,16 @@ There are a number of possible work-arounds for this issue:<ul><li>Upgrade the s
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.5.1|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Runtime.Serialization.NetDataContractSerializer.Deserialize(System.IO.Stream)`
+
+-->

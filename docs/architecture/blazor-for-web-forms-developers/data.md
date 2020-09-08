@@ -4,12 +4,10 @@ description: Learn how to access and handle data in ASP.NET Web Forms and Blazor
 author: csharpfritz    
 ms.author: jefritz
 no-loc: [Blazor]
-ms.date: 04/26/2020
+ms.date: 09/08/2020
 ---
 
 # Work with data
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Data access is the backbone of an ASP.NET Web Forms app. If you're building forms for the web, what happens to that data? With Web Forms, there were multiple data access techniques you could use to interact with a database:
 
@@ -124,7 +122,7 @@ Whenever you need to access data from GitHub, create a client with a name of `gi
         var client = factory.CreateClient("github");
         var response = await client.GetAsync("repos/dotnet/docs/issues");
         response.EnsureStatusCode();
-        var content = async response.Content.ReadAsStringAsync();
+        var content = await response.Content.ReadAsStringAsync();
     }
 }
 ```

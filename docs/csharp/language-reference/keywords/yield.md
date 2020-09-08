@@ -1,4 +1,5 @@
 ---
+description: "yield contextual keyword - C# Reference"
 title: "yield contextual keyword - C# Reference"
 ms.date: 07/20/2015
 f1_keywords: 
@@ -41,7 +42,7 @@ The `yield` type of an iterator that returns <xref:System.Collections.IEnumerabl
 
 You can't include a `yield return` or `yield break` statement in:
 
-- [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md).
+- [Lambda expressions](../operators/lambda-expressions.md) and [anonymous methods](../operators/delegate-operator.md).
 
 - Methods that contain unsafe blocks. For more information, see [unsafe](unsafe.md).
 

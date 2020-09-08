@@ -45,7 +45,9 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 The `dotnet publish` command calls MSBuild, which invokes the `Publish` target. Any parameters passed to `dotnet publish` are passed to MSBuild. The `-c` and `-o` parameters map to MSBuild's `Configuration` and `PublishDir` properties, respectively.
 
-The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`. You can also set publish-related properties by referring to a *.pubxml* file, for example:
+The `dotnet publish` command accepts MSBuild options, such as `-p` for setting properties and `-l` to define a logger. For example, you can set an MSBuild property by using the format: `-p:<NAME>=<VALUE>`.
+
+You can also set publish-related properties by referring to a *.pubxml* file (available since .NET Core 3.1 SDK). For example:
 
 ```dotnetcli
 dotnet publish -p:PublishProfile=FolderProfile
@@ -115,7 +117,7 @@ For more information, see the following resources:
 
   Specifies the path for the output directory.
   
-  If not specified, it defaults to *[project_file_folder]./bin/[configuration]/[framework]/publish/* for a runtime-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
+  If not specified, it defaults to *[project_file_folder]./bin/[configuration]/[framework]/publish/* for a framework-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
 
   In a web project, if the output folder is in the project folder, successive `dotnet publish` commands result in nested output folders. For example, if the project folder is *myproject*, and the publish output folder is *myproject/publish*, and you run `dotnet publish` twice, the second run puts content files such as *.config* and *.json* files in *myproject/publish/publish*. To avoid nesting publish folders, specify a publish folder that is not **directly** under the project folder, or exclude the publish folder from the project. To exclude a publish folder named *publishoutput*, add the following element to a `PropertyGroup` element in the *.csproj* file:
 
@@ -151,7 +153,7 @@ For more information, see the following resources:
 
 - **`-p:PublishTrimmed=true`**
 
-  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK.
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK as a preview feature.
 
   We recommend that you specify this option in a publish profile rather than on the command line. For more information, see [MSBuild](#msbuild).
 
@@ -179,13 +181,13 @@ For more information, see the following resources:
 
 ## Examples
 
-- Create a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary) for the project in the current directory:
+- Create a [framework-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary) for the project in the current directory:
 
   ```dotnetcli
   dotnet publish
   ```
 
-  Starting with .NET Core 3.0 SDK, this example also creates a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the current platform.
+  Starting with .NET Core 3.0 SDK, this example also creates a [framework-dependent executable](../deploying/index.md#publish-framework-dependent) for the current platform.
 
 - Create a [self-contained executable](../deploying/index.md#publish-self-contained) for the project in the current directory, for a specific runtime:
 
@@ -195,7 +197,7 @@ For more information, see the following resources:
 
   The RID must be in the project file.
 
-- Create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the project in the current directory, for a specific platform:
+- Create a [framework-dependent executable](../deploying/index.md#publish-framework-dependent) for the project in the current directory, for a specific platform:
 
   ```dotnetcli
   dotnet publish --runtime osx.10.11-x64 --self-contained false
@@ -226,7 +228,7 @@ For more information, see the following resources:
 - [.NET Core application publishing overview](../deploying/index.md)
 - [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md)
 - [Target frameworks](../../standard/frameworks.md)
-- [Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Runtime Identifier (RID) catalog](../rid-catalog.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)

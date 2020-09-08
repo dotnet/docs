@@ -81,16 +81,17 @@ where the type is interpreted as follows:
 | `%f`               | a basic floating point type | Formatted as a signed value having the form `[-]dddd.dddd`, where `dddd` is one or more decimal digits. The number of digits before the decimal point depends on the magnitude of the number, and the number of digits after the decimal point depends on the requested precision. |
 | `%g`, `%G` | a basic floating point type |  Formatted using as a signed value printed in `%f` or `%e` format, whichever is more compact for the given value and precision. |
 | `%M` | a `System.Decimal` value  |    Formatted using the `"G"` format specifier for `System.Decimal.ToString(format)` |
-| `%O` | any value  |   Formatted by boxing the object and valling its `System.Object.ToString()` method |
+| `%O` | any value  |   Formatted by boxing the object and calling its `System.Object.ToString()` method |
 | `%A` | any value  |   Formatted using [structured plain text formatting](plaintext-formatting.md) with the default layout settings |
-| `%a` | any value  |   Requires two arguments - a formatting function accepting a context parameter and the value, and the particular value to print |
-| `%t` | any value  |   Requires one argument, a formatting function accepting a context parameter that either outputs or returns the appropriate text |
+| `%a` | any value  |   Requires two arguments: a formatting function accepting a context parameter and the value, and the particular value to print |
+| `%t` | any value  |   Requires one argument: a formatting function accepting a context parameter that either outputs or returns the appropriate text |
+| `%%` | (none)  |   Requires no arguments and prints a plain percent sign: `%` |
 
 Basic integer types are `byte` (`System.Byte`), `sbyte` (`System.SByte`), `int16` (`System.Int16`), `uint16` (`System.UInt16`), `int32` (`System.Int32`), `uint32` (`System.UInt32`), `int64` (`System.Int64`), `uint64` (`System.UInt64`), `nativeint`  (`System.IntPtr`), and `unativeint`  (`System.UIntPtr`).
  Basic floating point types are `float` (`System.Double`) and `float32` (`System.Single`).
 
 The optional width is an integer indicating the minimal width of the result. For instance, `%6d` prints an integer, prefixing it with spaces
-to fill at least 6 characters. If width is `*`, then an extra integer  argument is taken to specify the corresponding width.
+to fill at least six characters. If width is `*`, then an extra integer  argument is taken to specify the corresponding width.
 
 Valid flags are:
 
@@ -166,7 +167,7 @@ Culture 2: 12/31/1999 12:00:00 AM
 
 ### Structured values
 
-When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. The is shown in the previous example.
+When formatting plain text using the `%A` specifier, block indentation is used for F# lists and tuples. This shown in the previous example.
 The structure of arrays is also used, including multi-dimensional arrays.  Single-dimensional arrays are shown with `[| ... |]` syntax. For example,
 
 ```fsharp
@@ -206,12 +207,12 @@ produces
 ```
 
 Specifying a print width of 0 results in no print width being used. A single line of text will result, except where embedded strings in the
-output themselves contain linebreaks.  For example
+output contain line breaks.  For example
 
 ```fsharp
 printfn "%0A" [| for i in 1 .. 5 -> (i, i*i) |]
 
-printfn "%0A" [| for i in 1 .. 5 -> "abc\ndef |]
+printfn "%0A" [| for i in 1 .. 5 -> "abc\ndef" |]
 ```
 
 produces
@@ -239,7 +240,7 @@ produces
 seq [(1, 1); (2, 4); (3, 9); (4, 16); ...]
 ```
 
-Block indentation is also used for the the structure of public record and union values. For example,
+Block indentation is also used for the structure of public record and union values. For example,
 
 ```fsharp
 type R = { X : int list; Y : string list }
@@ -327,7 +328,7 @@ produces
 Lazy values are printed as `Value is not created` or equivalent text when the value has not yet been evaluated.
 
 Null values are printed as `null` unless the static type of the value is determined to be a union type where `null` is
-a permitted represenation.
+a permitted representation.
 
 F# function values are printed as their internally generated closure name, for example, `<fun:it@43-7>`.
 

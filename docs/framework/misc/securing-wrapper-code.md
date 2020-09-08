@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 1df6c516-5bba-48bd-b450-1070e04b7389
 ---
 # Securing Wrapper Code
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Wrapper code, especially where the wrapper has higher trust than code that uses it, can open a unique set of security weaknesses. Anything done on behalf of a caller, where the caller's limited permissions are not included in the appropriate security check, is a potential weakness to be exploited.  

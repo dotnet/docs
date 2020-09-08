@@ -1,4 +1,5 @@
 ---
+description: "=> operator - C# reference"
 title: "=> operator - C# reference"
 ms.date: 01/22/2019
 f1_keywords: 
@@ -14,21 +15,21 @@ The `=>` token is supported in two forms: as the [lambda operator](#lambda-opera
 
 ## Lambda operator
 
-In [lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md), the lambda operator `=>` separates the input parameters on the left side from the lambda body on the right side.
+In [lambda expressions](lambda-expressions.md), the lambda operator `=>` separates the input parameters on the left side from the lambda body on the right side.
 
 The following example uses the [LINQ](../../programming-guide/concepts/linq/index.md) feature with method syntax to demonstrate the usage of lambda expressions:
 
-[!code-csharp-interactive[infer types of input variables](snippets/LambdaOperator.cs#InferredTypes)]
+[!code-csharp-interactive[infer types of input variables](snippets/shared/LambdaOperator.cs#InferredTypes)]
 
 Input parameters of a lambda expression are strongly typed at compile time. When the compiler can infer the types of input parameters, like in the preceding example, you may omit type declarations. If you need to specify the type of input parameters, you must do that for each parameter, as the following example shows:
 
-[!code-csharp-interactive[specify types of input variables](snippets/LambdaOperator.cs#ExplicitTypes)]
+[!code-csharp-interactive[specify types of input variables](snippets/shared/LambdaOperator.cs#ExplicitTypes)]
 
 The following example shows how to define a lambda expression without input parameters:
 
-[!code-csharp-interactive[without input variables](snippets/LambdaOperator.cs#WithoutInput)]
+[!code-csharp-interactive[without input variables](snippets/shared/LambdaOperator.cs#WithoutInput)]
 
-For more information, see [Lambda expressions](../../programming-guide/statements-expressions-operators/lambda-expressions.md).
+For more information, see [Lambda expressions](lambda-expressions.md).
 
 ## Expression body definition
 

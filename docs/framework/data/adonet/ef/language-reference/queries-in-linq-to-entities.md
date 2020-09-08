@@ -17,7 +17,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
  LINQ to Entities queries can be composed in two different syntaxes: query expression syntax and method-based query syntax. Query expression syntax is new in C# 3.0 and Visual Basic 9.0, and it consists of a set of clauses written in a declarative syntax similar to Transact-SQL or XQuery. However, the .NET Framework common language runtime (CLR) cannot read the query expression syntax itself. Therefore, at compile time, query expressions are translated to something that the CLR does understand: method calls. These methods are known as the *standard query operators*. As a developer, you have the option of calling them directly by using method syntax, instead of using query syntax. For more information, see [Query Syntax and Method Syntax in LINQ](../../../../../csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq.md).  
   
 ### Query Expression Syntax  
- Query expressions are a declarative query syntax. This syntax enables a developer to write queries in a high-level language that is formatted similar to Transact-SQL. By using query expression syntax, you can perform even complex filtering, ordering, and grouping operations on data sources with minimal code. For more information, [Basic Query Operations (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md). For examples that demonstrate how to use the query expression syntax, see the following topics:  
+ Query expressions are a declarative query syntax. This syntax enables a developer to write queries in a high-level language that is formatted similar to Transact-SQL. By using query expression syntax, you can perform even complex filtering, ordering, and grouping operations on data sources with minimal code. For more information, see [Basic Query Operations (Visual Basic)](../../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md). For examples that demonstrate how to use the query expression syntax, see the following topics:  
   
 - [Query Expression Syntax Examples: Projection](query-expression-syntax-examples-projection.md)  
   
@@ -38,7 +38,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
 - [Query Expression Syntax Examples: Navigating Relationships](query-expression-syntax-examples-navigating-relationships.md)  
   
 ### Method-Based Query Syntax  
- Another way to compose LINQ to Entities queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md). For examples that demonstrate how to use method-based syntax, see the following topics:  
+ Another way to compose LINQ to Entities queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../../../csharp/language-reference/operators/lambda-expressions.md). For examples that demonstrate how to use method-based syntax, see the following topics:  
   
 - [Method-Based Query Syntax Examples: Projection](method-based-query-syntax-examples-projection.md)  
   

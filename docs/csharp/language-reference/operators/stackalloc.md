@@ -1,4 +1,5 @@
 ---
+description: "stackalloc expression - C# reference"
 title: "stackalloc expression - C# reference"
 ms.date: 03/13/2020
 f1_keywords: 
@@ -14,24 +15,24 @@ You can assign the result of a `stackalloc` expression to a variable of one of t
 
 - Beginning with C# 7.2, <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>, as the following example shows:
 
-  [!code-csharp[stackalloc span](snippets/StackallocOperator.cs#AssignToSpan)]
+  [!code-csharp[stackalloc span](snippets/shared/StackallocOperator.cs#AssignToSpan)]
 
   You don't have to use an [unsafe](../keywords/unsafe.md) context when you assign a stack allocated memory block to a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable.
 
   When you work with those types, you can use a `stackalloc` expression in [conditional](conditional-operator.md) or assignment expressions, as the following example shows:
 
-  [!code-csharp[stackalloc expression](snippets/StackallocOperator.cs#AsExpression)]
+  [!code-csharp[stackalloc expression](snippets/shared/StackallocOperator.cs#AsExpression)]
 
   Beginning with C# 8.0, you can use a `stackalloc` expression inside other expressions whenever a <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> variable is allowed, as the following example shows:
 
-  [!code-csharp[stackalloc in nested expressions](snippets/StackallocOperator.cs#Nested)]
+  [!code-csharp[stackalloc in nested expressions](snippets/shared/StackallocOperator.cs#Nested)]
 
   > [!NOTE]
   > We recommend using <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> types to work with stack allocated memory whenever possible.
 
 - A [pointer type](../../programming-guide/unsafe-code-pointers/pointer-types.md), as the following example shows:
 
-  [!code-csharp[stackalloc pointer](snippets/StackallocOperator.cs#AssignToPointer)]
+  [!code-csharp[stackalloc pointer](snippets/shared/StackallocOperator.cs#AssignToPointer)]
 
   As the preceding example shows, you must use an `unsafe` context when you work with pointer types.
 
@@ -41,7 +42,7 @@ The amount of memory available on the stack is limited. If you allocate too much
 
 - Limit the amount of memory you allocate with `stackalloc`:
 
-  [!code-csharp[limit stackalloc](snippets/StackallocOperator.cs#LimitStackalloc)]
+  [!code-csharp[limit stackalloc](snippets/shared/StackallocOperator.cs#LimitStackalloc)]
 
   Because the amount of memory available on the stack depends on the environment in which the code is executed, be conservative when you define the actual limit value.
 
@@ -51,7 +52,7 @@ The content of the newly allocated memory is undefined. You should initialize it
 
 Beginning with C# 7.3, you can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
 
-[!code-csharp[stackalloc initialization](snippets/StackallocOperator.cs#StackallocInit)]
+[!code-csharp[stackalloc initialization](snippets/shared/StackallocOperator.cs#StackallocInit)]
 
 In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value.
 

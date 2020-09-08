@@ -13,3 +13,15 @@ A fix for this issue is available in a servicing release of the .NET Framework 4
 | Scope   |Major|
 |Version|4.5.2|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

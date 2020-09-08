@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
 ---
 # How to: Run Partially Trusted Code in a Sandbox
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Sandboxing is the practice of running code in a restricted security environment, which limits the access permissions granted to the code. For example, if you have a managed library from a source you do not completely trust, you should not run it as fully trusted. Instead, you should place the code in a sandbox that limits its permissions to those that you expect it to need (for example, <xref:System.Security.Permissions.SecurityPermissionFlag.Execution> permission).  

@@ -1,6 +1,9 @@
 ---
+description: "new operator - C# reference"
 title: "new operator - C# reference"
 ms.date: 06/25/2019
+f1_keywords:
+ - new_CSharpKeyword
 helpviewer_keywords: 
   - "new operator keyword [C#]"
 ms.assetid: a212b697-a79b-4105-9923-1f7b108036e8
@@ -15,21 +18,21 @@ You can also use the `new` keyword as a [member declaration modifier](../keyword
 
 To create a new instance of a type, you typically invoke one of the [constructors](../../programming-guide/classes-and-structs/constructors.md) of that type using the `new` operator:
 
-[!code-csharp-interactive[invoke constructor](snippets/NewOperator.cs#Constructor)]
+[!code-csharp-interactive[invoke constructor](snippets/shared/NewOperator.cs#Constructor)]
 
 You can use an [object or collection initializer](../../programming-guide/classes-and-structs/object-and-collection-initializers.md) with the `new` operator to instantiate and initialize an object in one statement, as the following example shows:
 
-[!code-csharp-interactive[constructor with initializer](snippets/NewOperator.cs#ConstructorWithInitializer)]
+[!code-csharp-interactive[constructor with initializer](snippets/shared/NewOperator.cs#ConstructorWithInitializer)]
 
 ## Array creation
 
 You also use the `new` operator to create an array instance, as the following example shows:
 
-[!code-csharp-interactive[create array](snippets/NewOperator.cs#Array)]
+[!code-csharp-interactive[create array](snippets/shared/NewOperator.cs#Array)]
 
 Use array initialization syntax to create an array instance and populate it with elements in one statement. The following example shows various ways how you can do that:
 
-[!code-csharp-interactive[initialize array](snippets/NewOperator.cs#ArrayInitialization)]
+[!code-csharp-interactive[initialize array](snippets/shared/NewOperator.cs#ArrayInitialization)]
 
 For more information about arrays, see [Arrays](../../programming-guide/arrays/index.md).
 
@@ -37,7 +40,7 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 To create an instance of an [anonymous type](../../programming-guide/classes-and-structs/anonymous-types.md), use the `new` operator and object initializer syntax:
 
-[!code-csharp-interactive[anonymous type](snippets/NewOperator.cs#AnonymousType)]
+[!code-csharp-interactive[anonymous type](snippets/shared/NewOperator.cs#AnonymousType)]
 
 ## Destruction of type instances
 

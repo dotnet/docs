@@ -8,8 +8,6 @@ ms.date: 09/18/2019
 ---
 # Build reusable UI components with Blazor
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
 One of the beautiful things about ASP.NET Web Forms is how it enables encapsulation of reusable pieces of user interface (UI) code into reusable UI controls. Custom user controls can be defined in markup using *.ascx* files. You can also build elaborate server controls in code with full designer support.
 
 Blazor also supports UI encapsulation through *components*. A component:

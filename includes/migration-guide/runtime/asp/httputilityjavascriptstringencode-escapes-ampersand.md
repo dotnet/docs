@@ -12,8 +12,18 @@ If your app depends on the previous behavior of this method, you can add an aspn
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String)?displayProperty=nameWithType></li><li><xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String,System.Boolean)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String)?displayProperty=nameWithType>
+- <xref:System.Web.HttpUtility.JavaScriptStringEncode(System.String,System.Boolean)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Web.HttpUtility.JavaScriptStringEncode(System.String)`
+- `M:System.Web.HttpUtility.JavaScriptStringEncode(System.String,System.Boolean)`
+
+-->

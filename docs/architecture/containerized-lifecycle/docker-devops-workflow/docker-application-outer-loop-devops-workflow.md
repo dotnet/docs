@@ -1,7 +1,7 @@
 ---
 title: Steps in the outer-loop DevOps workflow for a Docker application
 description: Learn the steps for the "outer loop" of the DevOps workflow
-ms.date: 02/15/2019
+ms.date: 08/06/2020
 ---
 # Steps in the outer-loop DevOps workflow for a Docker application
 
@@ -89,7 +89,7 @@ With these Visual Studio Team Services tasks, a build Linux-Docker Host/VM provi
 >   <https://docs.microsoft.com/archive/blogs/stevelasker/building-net-core-linux-docker-images-with-visual-studio-team-services>
 >
 > - Building a Linux-based Visual Studio Team Service build machine with Docker support: \
->   <http://donovanbrown.com/post/2016/06/03/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support>
+>   <https://www.donovanbrown.com/post/Building-a-Linux-Based-Visual-Studio-Team-Service-Build-Machine-with-Docker-Support>
 
 ### Integrate, test, and validate multi-container Docker applications
 

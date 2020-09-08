@@ -12,8 +12,22 @@ There are two options to work around this issue:<ol><li>It may be avoided by cal
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Windows.ContentElement.PreviewLostKeyboardFocus?displayProperty=nameWithType></li><li><xref:System.Windows.IInputElement.PreviewLostKeyboardFocus?displayProperty=nameWithType></li><li><xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=nameWithType></li><li><xref:System.Windows.UIElement3D.PreviewLostKeyboardFocus?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.ContentElement.PreviewLostKeyboardFocus?displayProperty=nameWithType>
+- <xref:System.Windows.IInputElement.PreviewLostKeyboardFocus?displayProperty=nameWithType>
+- <xref:System.Windows.UIElement.PreviewLostKeyboardFocus?displayProperty=nameWithType>
+- <xref:System.Windows.UIElement3D.PreviewLostKeyboardFocus?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `E:System.Windows.ContentElement.PreviewLostKeyboardFocus`
+- `E:System.Windows.IInputElement.PreviewLostKeyboardFocus`
+- `E:System.Windows.UIElement.PreviewLostKeyboardFocus`
+- `E:System.Windows.UIElement3D.PreviewLostKeyboardFocus`
+
+-->

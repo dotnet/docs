@@ -1,7 +1,7 @@
 ---
 title: Introduction to the Docker application life cycle
 description: Begin here the journey of containerized application development.
-ms.date: 11/23/2018
+ms.date: 08/06/2020
 ---
 # Introduction to the Docker application life cycle
 

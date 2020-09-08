@@ -142,7 +142,7 @@ Deny rules take precedence over allow rules. Now representing the same "allow al
 
 ## Checking access
 
-As you can imagine, having a large number of roles and scopes can make figuring out the effective permission of a service principal quite difficult. Piling deny rules on top of that, only serves to increase the complexity. Fortunately, there's a permissions calculator that can show the effective permissions for any service principal. It's typically found under the IAM tab in the portal, as shown in Figure 10-3.
+As you can imagine, having a large number of roles and scopes can make figuring out the effective permission of a service principal quite difficult. Piling deny rules on top of that, only serves to increase the complexity. Fortunately, there's a [permissions calculator](https://docs.microsoft.com/azure/role-based-access-control/check-access) that can show the effective permissions for any service principal. It's typically found under the IAM tab in the portal, as shown in Figure 10-3.
 
 ![Figure 9-4 Permission calculator for an app service](./media/check-rbac.png)
 
@@ -196,7 +196,7 @@ kubectl apply -f ./secret.yaml
 
 These secrets can then be mounted into volumes or exposed to container processes through environment variables. The [Twelve-factor app](https://12factor.net/) approach to building applications suggests using the lowest common denominator to transmit settings to an application. Environment variables are the lowest common denominator, because they're supported no matter the operating system or application.
 
-An alternative to use the built-in Kubernetes secrets is to access the secrets in Azure Key Vault from within Kubernetes. The simplest way to do this is to assign an RBAC role to the container looking to load secrets. The application can then use the Azure Key Vault APIs to access the secrets. However, this approach requires modifications to the code and doesn't follow the pattern of using environment variables. Instead, it's possible to inject values into a container through the use of the [Azure Key Vault Injector](https://mrdevops.io/introducing-azure-key-vault-to-kubernetes-931f82364354). This approach is actually more secure than using the Kubernetes secrets directly, as they can be accessed by users on the cluster.
+An alternative to use the built-in Kubernetes secrets is to access the secrets in Azure Key Vault from within Kubernetes. The simplest way to do this is to assign an RBAC role to the container looking to load secrets. The application can then use the Azure Key Vault APIs to access the secrets. However, this approach requires modifications to the code and doesn't follow the pattern of using environment variables. Instead, it's possible to inject values into a container. This approach is actually more secure than using the Kubernetes secrets directly, as they can be accessed by users on the cluster.
 
 ## Encryption in transit and at rest
 

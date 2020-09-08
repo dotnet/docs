@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 5fd8f46d-3961-46a7-84af-2eb1f48e75cf
 ---
 # Security-Transparent Code, Level 1
+
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
   
  Transparency helps developers write more secure .NET Framework libraries that expose functionality to partially trusted code. Level 1 transparency was introduced in the .NET Framework version 2.0 and was primarily used only within Microsoft. Starting with the .NET Framework 4, you can use [level 2 transparency](security-transparent-code-level-2.md). However, level 1 transparency has been retained so that you can identify legacy code that must run with the earlier security rules.  

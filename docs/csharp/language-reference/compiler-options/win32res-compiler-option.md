@@ -1,4 +1,5 @@
 ---
+description: "-win32res (C# Compiler Options)"
 title: "-win32res (C# Compiler Options)"
 ms.date: 07/20/2015
 f1_keywords: 

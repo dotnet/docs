@@ -1,3 +1,4 @@
+items:
 - name: Docs
   tocHref: /
   topicHref: /
@@ -40,9 +41,12 @@
       - name: Modernizing desktop apps
         tocHref: /dotnet/architecture/modernize-desktop/
         topicHref: /dotnet/architecture/modernize-desktop/index
-    - name: .NET guide
+    - name: .NET fundamentals
+      tocHref: /dotnet/fundamentals/
+      topicHref: /dotnet/fundamentals/index
+    - name: .NET fundamentals
       tocHref: /dotnet/standard/
-      topicHref: /dotnet/standard/index
+      topicHref: /dotnet/fundamentals/index
       items:
       - name: Assemblies in .NET
         tocHref: /dotnet/standard/assembly
@@ -53,12 +57,6 @@
       - name: Asynchronous programming patterns
         tocHref: /dotnet/standard/asynchronous-programming-patterns/
         topicHref: /dotnet/standard/asynchronous-programming-patterns/index
-      - name: Extend metadata using attributes
-        tocHref: /dotnet/standard/attributes/
-        topicHref: /dotnet/standard/attributes/index
-      - name: Work with base types in .NET
-        tocHref: /dotnet/standard/base-types/
-        topicHref: /dotnet/standard/base-types/index
       - name: Collections and data structures
         tocHref: /dotnet/standard/collections/
         topicHref: /dotnet/standard/collections/index
@@ -66,9 +64,6 @@
         - name: Thread-safe collections
           tocHref: /dotnet/standard/collections/thread-safe/
           topicHref: /dotnet/standard/collections/thread-safe/index
-      - name: Develop for multiple platforms with .NET
-        tocHref: /dotnet/standard/cross-platform/
-        topicHref: /dotnet/standard/cross-platform/index
       - name: Microsoft.Data.Sqlite
         tocHref: /dotnet/standard/data/sqlite/
         topicHref: /dotnet/standard/data/sqlite/index
@@ -78,100 +73,22 @@
       - name: Dates, times, and time zones
         tocHref: /dotnet/standard/datetime/
         topicHref: /dotnet/standard/datetime/index
-      - name: Framework design guidelines
-        tocHref: /dotnet/standard/design-guidelines/
-        topicHref: /dotnet/standard/design-guidelines/index
-      - name: Handle and raise events
-        tocHref: /dotnet/standard/events/
-        topicHref: /dotnet/standard/events/index
-      - name: Handle and throw exceptions
-        tocHref: /dotnet/standard/exceptions/
-        topicHref: /dotnet/standard/exceptions/index
-      - name: Garbage collection
-        tocHref: /dotnet/standard/garbage-collection/
-        topicHref: /dotnet/standard/garbage-collection/index
-      - name: Generics in .NET
-        tocHref: /dotnet/standard/generics/
-        topicHref: /dotnet/standard/generics/index
       - name: Globalization and localization
         tocHref: /dotnet/standard/globalization-localization/
         topicHref: /dotnet/standard/globalization-localization/index
-      - name: File and stream I/O
-        tocHref: /dotnet/standard/io/
-        topicHref: /dotnet/standard/io/index
-      - name: Memory and span-related types
-        tocHref: /dotnet/standard/memory-and-spans/
-        topicHref: /dotnet/standard/memory-and-spans/index
-      - name: Native interoperability
-        tocHref: /dotnet/standard/native-interop/
-        topicHref: /dotnet/standard/native-interop/index
-      - name: Parallel programming in .NET
-        tocHref: /dotnet/standard/parallel-programming/
-        topicHref: /dotnet/standard/parallel-programming/index
       - name: Security in .NET
         tocHref: /dotnet/standard/security/
         topicHref: /dotnet/standard/security/index
-      - name: Serialization in .NET
-        tocHref: /dotnet/standard/serialization/
-        topicHref: /dotnet/standard/serialization/index
       - name: Managed threading
         tocHref: /dotnet/standard/threading/
         topicHref: /dotnet/standard/threading/index
-    - name: .NET Core guide
+    - name: .NET fundamentals
       tocHref: /dotnet/core/
-      topicHref: /dotnet/core/index
+      topicHref: /dotnet/fundamentals/index
       items:
-      - name: Installation guide
-        tocHref: /dotnet/core/install/
-        topicHref: /dotnet/core/install/index
-      - name: What's new
-        tocHref: /dotnet/core/whats-new/
-        topicHref: /dotnet/core/whats-new/dotnet-core-3-0
       - name: Breaking changes
         tocHref: /dotnet/core/compatibility/
         topicHref: /dotnet/core/compatibility/index
-      - name: Tutorials
-        tocHref: /dotnet/core/tutorials/
-        topicHref: /dotnet/core/tutorials/index
-      - name: Run-time configuration
-        tocHref: /dotnet/core/run-time-config/
-        topicHref: /dotnet/core/run-time-config/index
-      - name: Native interoperability
-        tocHref: /dotnet/core/native-interop/
-        topicHref: /dotnet/core/native-interop/expose-components-to-com
-      - name: Migration
-        tocHref: /dotnet/core/migration/
-        topicHref: /dotnet/core/migration/index
-      - name: Deployment
-        tocHref: /dotnet/core/deploying/
-        topicHref: /dotnet/core/deploying/index
-      - name: Docker
-        tocHref: /dotnet/core/docker/
-        topicHref: /dotnet/core/docker/introduction
-      - name: Diagnostic tools
-        tocHref: /dotnet/core/diagnostics/
-        topicHref: /dotnet/core/diagnostics/index
-      - name: Unit testing
-        tocHref: /dotnet/core/testing/
-        topicHref: /dotnet/core/testing/index
-      - name: Versioning
-        tocHref: /dotnet/core/versions/
-        topicHref: /dotnet/core/versions/index
-      - name: SDK projects
-        tocHref: /dotnet/core/project-sdk/
-        topicHref: /dotnet/core/project-sdk/overview
-      - name: Tools
-        tocHref: /dotnet/core/tools/
-        topicHref: /dotnet/core/tools/index
-      - name: Additional tools
-        tocHref: /dotnet/core/additional-tools/
-        topicHref: /dotnet/core/additional-tools/index
-      - name: Porting
-        tocHref: /dotnet/core/porting/
-        topicHref: /dotnet/core/porting/index
-      - name: Dependency loading
-        tocHref: /dotnet/core/dependency-loading/
-        topicHref: /dotnet/core/dependency-loading/overview
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index
@@ -397,28 +314,6 @@
         - name: Windows Forms controls
           tocHref: /dotnet/framework/winforms/controls/
           topicHref: /dotnet/framework/winforms/controls/index
-      - name: Windows Presentation Foundation
-        tocHref: /dotnet/framework/wpf/
-        topicHref: /dotnet/framework/wpf/index
-        items:
-        - name: Advanced
-          tocHref: /dotnet/framework/wpf/advanced/
-          topicHref: /dotnet/framework/wpf/advanced/index
-        - name: Application development
-          tocHref: /dotnet/framework/wpf/app-development/
-          topicHref: /dotnet/framework/wpf/app-development/index
-        - name: Controls
-          tocHref: /dotnet/framework/wpf/controls/
-          topicHref: /dotnet/framework/wpf/controls/index
-        - name: Data
-          tocHref: /dotnet/framework/wpf/data/
-          topicHref: /dotnet/framework/wpf/data/index
-        - name: Get started (WPF)
-          tocHref: /dotnet/framework/wpf/getting-started/
-          topicHref: /dotnet/framework/wpf/getting-started/index
-        - name: Graphics and multimedia
-          tocHref: /dotnet/framework/wpf/graphics-multimedia/
-          topicHref: /dotnet/framework/wpf/graphics-multimedia/index
       - name: XAML services
         tocHref: /dotnet/framework/xaml-services/
         topicHref: /dotnet/framework/xaml-services/index

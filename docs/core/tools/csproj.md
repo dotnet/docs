@@ -1,6 +1,7 @@
 ---
 title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
+ms.topic: reference
 ms.date: 04/08/2019
 ---
 
@@ -14,13 +15,13 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 
 ```xml
  <PropertyGroup>
-   <TargetFramework>netcoreapp2.1</TargetFramework>
+   <TargetFramework>netcoreapp3.1</TargetFramework>
  </PropertyGroup>
  ```
 
  ```xml
  <PropertyGroup>
-   <TargetFrameworks>netcoreapp2.1;net462</TargetFrameworks>
+   <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
  </PropertyGroup>
  ```
 
@@ -50,7 +51,7 @@ When referencing the `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` pa
 
 > Known issue: the .NET Core 2.1 SDK only supported this syntax when the project also uses Microsoft.NET.Sdk.Web. This is resolved in the .NET Core 2.2 SDK.
 
-These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#publish-runtime-dependent) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../distribution-packaging.md).
+These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#publish-framework-dependent) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../distribution-packaging.md).
 
 If a version *is* specified, it's treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as an *exact* version for self-contained deployments. This can have the following consequences:
 
@@ -110,11 +111,15 @@ To disable **all implicit globs**, you can set the `<EnableDefaultItems>` proper
 
 While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
 
-`dotnet msbuild -pp:fullproject.xml`
+```dotnetcli
+dotnet msbuild -pp:fullproject.xml
+```
 
 If the project has multiple target frameworks, the results of the command should be focused on only one of them by specifying it as an MSBuild property:
 
-`dotnet msbuild -p:TargetFramework=netcoreapp2.0 -pp:fullproject.xml`
+```dotnetcli
+dotnet msbuild -p:TargetFramework=netcoreapp3.1 -pp:fullproject.xml
+```
 
 ## Additions
 
@@ -217,10 +222,10 @@ The following example provides the fallbacks for all targets in your project:
 </PackageTargetFallback >
 ```
 
-The following example specifies the fallbacks only for the `netcoreapp2.1` target:
+The following example specifies the fallbacks only for the `netcoreapp3.1` target:
 
 ```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
+<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp3.1'">
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```

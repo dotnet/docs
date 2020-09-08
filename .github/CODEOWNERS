@@ -21,10 +21,10 @@
 ######## API landing page ###########
 /api/ @dotnet/docs
 
-############ WHATS NEW ###############
+############ What's new ###############
 /docs/whats-new/ @billwagner
 
-############  GUIDES  ################
+############ Guides ################
 # .NET Core
 /docs/core/ @dotnet/docs
 
@@ -41,7 +41,7 @@
 /docs/fsharp/ @cartermp
 
 # The Visual Basic Guide:
-/docs/visual-basic/ @KathleenDollard
+/docs/visual-basic/ @KathleenDollard @BillWagner
 
 # The ML.NET Guide:
 /docs/machine-learning/ @luisquintanilla
@@ -60,6 +60,11 @@
 
 # Includes files
 /includes/ @dotnet/docs
+
+############### .NET 5 ################
+
+# Code analysis
+/docs/fundamentals/productivity/ @gewarren
 
 ############### .NET Core ########################
 # What's New
@@ -83,7 +88,7 @@
 # Tutorials
 /docs/core/tutorials/ @tdykstra
 
-################### .NET FRAMEWORK ##################
+################### .NET Framework ##################
 # App domains
 /docs/framework/app-domains/ @gewarren
 # Config - WinForms
@@ -119,7 +124,7 @@
 /docs/framework/configure-apps/file-schema/wcf/ @HongGit
 /docs/framework/wcf/ @HongGit
 
-################## .NET STANDARD ##################
+################## .NET Standard ##################
 # Analyzers
 /docs/standard/analyzers/ @IEvangelist
 # Assembly
@@ -171,7 +176,7 @@
 # What's New
 /docs/standard/whats-new/ @dotnet/docs
 
-################## E-BOOKS ##################
+################## E-books ##################
 # Blazor:
 /docs/architecture/blazor-for-web-forms-developers/ @danroth27
 # gRPC:
@@ -196,5 +201,3 @@
 /samples/snippets/desktop-guide/wpf/   @adegeo
 
 /samples/snippets/winforms/  @adegeo
-
-

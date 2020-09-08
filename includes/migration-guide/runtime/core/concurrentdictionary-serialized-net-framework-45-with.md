@@ -13,3 +13,15 @@ If it is necessary to serialize and deserialize a <xref:System.Collections.Concu
 | Scope   |Minor|
 |Version|4.5.1|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

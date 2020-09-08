@@ -1,4 +1,5 @@
 ---
+description: "throw - C# Reference"
 title: "throw - C# Reference"
 ms.date: 03/02/2015
 f1_keywords: 
@@ -51,7 +52,7 @@ Starting with C# 7.0, `throw` can be used as an expression as well as a statemen
 
    [!code-csharp[csrefKeyword#5](~/samples/snippets/csharp/language-reference/keywords/throw/coalescing.cs#1)]
 
-- an expression-bodied [lambda](../../programming-guide/statements-expressions-operators/lambda-expressions.md) or method. The following example illustrates an expression-bodied method that throws an <xref:System.InvalidCastException> because a conversion to a <xref:System.DateTime> value is not supported.
+- an expression-bodied [lambda](../operators/lambda-expressions.md) or method. The following example illustrates an expression-bodied method that throws an <xref:System.InvalidCastException> because a conversion to a <xref:System.DateTime> value is not supported.
 
    [!code-csharp[csrefKeyword#6](~/samples/snippets/csharp/language-reference/keywords/throw/exp-bodied.cs#1)]
 

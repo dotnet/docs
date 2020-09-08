@@ -305,8 +305,8 @@ static int WriteLinesToFile(IEnumerable<string> lines)
                 skippedLines++;
             }
         }
+        return skippedLines;
     } // file is disposed here
-    return skippedLines;
 }
 ```
 

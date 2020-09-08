@@ -48,11 +48,11 @@ The API Analyzer uses API-specific error codes that begin with DE (which stands 
 
 When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, API Analyzer highlights it with a green squiggly line. When you hover over the API call, a light bulb is displayed with information about the API deprecation, as in the following example:
 
-!["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/green-squiggle.jpg)
+![Screenshot of WebClient API with green squiggly line and light bulb on the left.](media/api-analyzer/green-squiggle.jpg)
 
 The **Error List** window contains warnings with a unique ID per deprecated API, as shown in the following example (`DE004`):
 
-!["Screenshot of the Error List window showing warning's ID and description"](media/api-analyzer/warnings-id-and-descriptions.jpg "Error List window that includes warnings.")
+![Screenshot of the Error List window showing warning's ID and description.](media/api-analyzer/warnings-id-and-descriptions.jpg "Error List window that includes warnings.")
 
 By clicking on the ID, you go to a webpage with detailed information about why the API was deprecated and suggestions regarding alternative APIs that can be used.
 
@@ -64,17 +64,17 @@ Any warnings can be suppressed by right-clicking on the highlighted member and s
 ### Suppress warnings locally
 
 To suppress warnings locally, right-click on the member you want to suppress warnings for and then select **Quick Actions and Refactorings** > **Suppress *diagnostic ID*\<diagnostic ID>** > **in Source**. The [#pragma](../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md) warning preprocessor directive is added to your source code in the scope defined:
-!["Screenshot of code framed with #pragma warning disable"](media/api-analyzer/suppress-in-source.jpg)
+![Screenshot of code framed with #pragma warning disable.](media/api-analyzer/suppress-in-source.jpg)
 
 ### Suppress warnings globally
 
 To suppress warnings globally, right-click on the member you want to suppress warnings for and then select **Quick Actions and Refactorings** > **Suppress *diagnostic ID*\<diagnostic ID>** > **in Suppression File**.
 
-!["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/suppress-in-sup-file.jpg)
+![Screenshot of right-click menu showing options to suppress a warning in Visual Studio.](media/api-analyzer/suppress-in-sup-file.jpg)
 
 A *GlobalSuppressions.cs* file is added to your project after the first suppression. New global suppressions are appended to this file.
 
-!["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/suppression-file.jpg)
+![Screenshot of the GlobalSuppressions.cs file in Solution Explorer.](media/api-analyzer/suppression-file.jpg)
 
 Global suppression is the recommended way to ensure consistency of API usage across projects.
 
@@ -118,7 +118,7 @@ All these diagnostics are available not only in the IDE, but also on the command
 
 The user decides how the diagnostics should be treated: as warnings, errors, suggestions, or to be turned off. For example, as an architect, you can decide that compatibility issues should be treated as errors, calls to some deprecated APIs generate warnings, while others only generate suggestions. You can configure this separately by diagnostic ID and by project. To do so in **Solution Explorer**, navigate to the **Dependencies** node under your project. Expand the nodes **Dependencies** > **Analyzers** > **Microsoft.DotNet.Analyzers.Compatibility**. Right click on the diagnostic ID, select **Set Rule Set Severity** and pick the desired option.
 
-!["Screenshot of the Solution Explorer showing diagnostics and pop-up dialog with Rule Set Severity"](media/api-analyzer/disable-notifications.jpg)
+![Screenshot of Solution Explorer showing diagnostics and pop-up dialog with rule set severity.](media/api-analyzer/disable-notifications.jpg)
 
 ## See also
 

@@ -22,7 +22,7 @@ Starting in .NET 5.0, `OutputType` is automatically set to `WinExe` for WPF and 
 
 #### Reason for change
 
-It's assumed that most users don't want a console window to open when a WPF or Windows Forms is executed. In addition, [now that these application types use the .NET SDK](../../../../docs/core/compatibility/wpf.md#winforms-and-wpf-apps-use-microsoftnetsdk) instead of the Windows Desktop SDK, the correct default will be set. Further, when support for targeting iOS and Android is added, it will be easier to multi-target between multiple platforms if they all use the same output type.
+It's assumed that most users don't want a console window to open when a WPF or Windows Forms app is executed. In addition, [now that these application types use the .NET SDK](../../../../docs/core/compatibility/wpf.md#winforms-and-wpf-apps-use-microsoftnetsdk) instead of the Windows Desktop SDK, the correct default will be set. Further, when support for targeting iOS and Android is added, it will be easier to multi-target between multiple platforms if they all use the same output type.
 
 #### Version introduced
 
@@ -33,7 +33,7 @@ It's assumed that most users don't want a console window to open when a WPF or W
 No action is required in your part. However, if you want to revert to the old behavior, set the `DisableWinExeOutputInference` property to `true` in your project file.
 
 ```xml
-<DisableWinExeOutputInference>true</DisableWinExeOutputInference>>
+<DisableWinExeOutputInference>true</DisableWinExeOutputInference>
 ```
 
 #### Category

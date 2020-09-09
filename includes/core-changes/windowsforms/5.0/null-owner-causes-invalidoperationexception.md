@@ -25,7 +25,7 @@ Windows Forms
 The following table lists the affected properties and parameters:
 
 > [!div class="mx-tdBreakAll"]
-> | Property | Property name | Version added |
+> | Affected method or property | Validated property | Version added |
 > |-|-|-|
 > | <xref:System.Windows.Forms.DataGridViewButtonCell.DataGridViewButtonCellAccessibleObject.DoDefaultAction?displayProperty=nameWithType> | <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> | 5.0 |
 > | <xref:System.Windows.Forms.DataGridViewCheckBoxCell.DataGridViewCheckBoxCellAccessibleObject.DefaultAction?displayProperty=nameWithType> | <xref:System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Owner> | 5.0 |

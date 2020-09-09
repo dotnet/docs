@@ -18,6 +18,7 @@ C# 9.0 adds the following features and enhancements to the C# language:
 - static anonymous functions
 - Target-typed conditional expressions
 - Covariant return types
+- Extension `GetEnumerator` support for `foreach` loops
 - Lambda discard parameters
 - Attributes on local functions
 - Module initializers
@@ -211,7 +212,7 @@ You could call it as follows:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="TargetTypeNewArgument":::
 
-Another nice use for this feature is to combine it with init only properties to initialize a new object. The parentheses on `new` are optional:
+Another nice use for this feature is to combine it with init only properties to initialize a new object:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="InitWeatherStation":::
 
@@ -222,6 +223,8 @@ A similar feature improves the target type resolution of conditional expressions
 Starting in C# 9.0, you can add the `static` modifier to lambda expressions or anonymous methods. Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous function can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
 
 Covariant return types provide flexibility for the return types of overridden functions. An overridden virtual function can return a type derived from the return type declared in the base class method. This can be useful for Records, and for other types that support virtual clone or factory methods.
+
+In addition, the `foreach` loop will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
 
 Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument.
 

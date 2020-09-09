@@ -1,4 +1,4 @@
-### CA1831 Use AsSpan or AsMemory instead of Range-based indexer
+### CA1831: Use AsSpan instead of Range-based indexers for string
 
 .NET code analyzer rule [CA1831](/visualstudio/code-quality/ca1831) is enabled, by default, starting in .NET 5.0. It produces a build warning for any code where a <xref:System.Range>-based indexer is used on a string, but no copy was intended.
 

@@ -9,7 +9,7 @@ author: IEvangelist
 
 # The evolution of .NET Core to .NET 5
 
-This article details what is included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. ASP.NET Core retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Additionally, Entity Framework Core retains the name "Core" to avoid confusing it with Entity Framework 5 and 6. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
+This article details what's included in .NET 5, which is the next release of .NET Core following 3.1. The version number is 5.0 to avoid confusion with .NET Framework 4.x. And "Core" is dropped from the name because it is the main implementation of .NET going forward. ASP.NET Core retains the name "Core" to avoid confusing it with ASP.NET MVC 5. Additionally, Entity Framework Core retains the name "Core" to avoid confusing it with Entity Framework 5 and 6. .NET 5 supports more types of apps and more platforms than .NET Core or .NET Framework.
 
 The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It matured as an open-source project on GitHub, celebrating community contributions, and humbly improving over time.
 
@@ -26,7 +26,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 .NET 5 extends these characteristics, making incremental improvements:
 
 - Single file apps
-- Windows ARM64, and ARM64 intrinsics
+- Windows ARM64 and ARM64 intrinsics
 - Sweeping performance improvements to:
   - [Garbage Collection (GC)](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#gc)
   - [System.Text.Json](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/#json)
@@ -53,7 +53,7 @@ The advent of .NET Core has evolved the .NET ecosystem in compelling ways. It ma
 
 New application development can specify the `net5.0` target framework moniker (TFM) for all project types, including class libraries. Sharing code between .NET 5 workloads is simplified in that all you need is the `net5.0` TFM.
 
-The `net5.0` TFM combines and replaces `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you're planning on sharing code between .NET Framework, .NET Core, and .NET 5 workloads - you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](../standard/frameworks.md#how-to-specify-target-frameworks).
+The `net5.0` TFM combines and replaces the `netcoreapp` and `netstandard` names. This TFM will generally only include technologies that work cross-platform, like was done with .NET Standard. However, if you plan to share code between .NET Framework, .NET Core, and .NET 5 workloads, you can do so by specifying `netstandard2.0` as your TFM. For more information, see [How to specify target frameworks](../standard/frameworks.md#how-to-specify-a-target-framework).
 
 ## Language updates
 
@@ -61,7 +61,7 @@ With .NET 5, the .NET programming languages are continuing to improve.
 
 ### C# updates
 
-Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9. C# 9 brings many new features to the language, here are a few highlights:
+Developers writing .NET 5 apps will have access to the latest C# version and features. .NET 5 is paired with C# 9, which brings many new features to the language. Here are a few highlights:
 
 - Records: Immutable reference types that behave like value types, and introduce the new `with` keyword into the language.
 - Relational pattern matching: Extends pattern matching capabilities to relational operators for comparative evaluations and expressions, including logical patterns - new keywords `and`, `or`, and `not`.
@@ -87,7 +87,7 @@ F# is the .NET functional programming language, and with .NET 5, developers have
 
 #### Interpolated strings
 
-Similar to interpolated string in C#, and even JavaScript - F# supports basic string interpolation.
+Similar to interpolated string in C#, and even JavaScript, F# supports basic string interpolation.
 
 ```fsharp
 let name = "David"

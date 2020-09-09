@@ -21,7 +21,7 @@ on:
     branches: [ master ]
 
 env:
-  DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx-preview7'
+  DOTNET_INSTALLER_CHANNEL: 'release/5.0.1xx-preview8'
   DOTNET_DO_INSTALL: 'true'
   EnableNuGetPackageRestore: 'True'
 

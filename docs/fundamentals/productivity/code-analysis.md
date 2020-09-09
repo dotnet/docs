@@ -11,10 +11,10 @@ helpviewer_keywords:
 ---
 # Overview of .NET source code analysis
 
-.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. (Previously, you installed these analyzers as a [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers).)
+.NET compiler platform (Roslyn) analyzers inspect your C# or Visual Basic code for code quality and code style issues. Starting in .NET 5.0, these analyzers are included with the .NET SDK. (Previously, you installed code quality analyzers as a [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers), and code style analyzers were installed with Visual Studio.)
 
-- [Code quality analysis ("CA" rules)](#code-quality-analysis)
-- [Code style analysis ("IDE" rules)](#code-style-analysis)
+- [Code quality analysis ("CAxxxx" rules)](#code-quality-analysis)
+- [Code style analysis ("IDExxxx" rules)](#code-style-analysis)
 
 If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configure-code-analysis-rules.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
 
@@ -25,7 +25,7 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 ## Code quality analysis
 
-_Code quality analysis ("CA" rules)_ inspect your C# or Visual Basic code for security, performance, design and other issues. It is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
+_Code quality analysis ("CA") rules_ inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
 
 ### Enabled rules
 
@@ -42,20 +42,20 @@ The following rules are enabled, by default, in .NET 5.0 Preview 8.
 
 You can change the severity of these rules to disable them or elevate them to errors.
 
-### Enabling additional rules
+### Enable additional rules
 
-Starting with .NET 5.0 RC2, the .NET SDK ships with [all "CA" code quality rules](/visualstudio/code-quality/code-analysis-for-managed-code-warnings). For a full list of rules that are included with each .NET SDK version, see [analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
+Starting with .NET 5.0 RC2, the .NET SDK ships with all of the ["CA" code quality rules](/visualstudio/code-quality/code-analysis-for-managed-code-warnings). For a full list of rules that are included with each .NET SDK version, see [analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).
 
 #### Default analysis mode
 
-In the default analysis mode, some rules are [enabled by default](#enabled-rules) as build warnings. Some other rules are enabled by default only as Visual Studio IDE suggestions with corresponding code fixes. Rest of the rules are disabled by default. Full list of rules specified at [analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md) includes each rule's default severity and whether or not the rule is enabled by default in the default analysis mode.
+In the default analysis mode, some rules are [enabled by default](#enabled-rules) as build warnings. Some other rules are enabled by default only as Visual Studio IDE suggestions with corresponding code fixes. The remaining rules are disabled by default. The [full list of rules](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md) includes each rule's default severity and whether or not the rule is enabled by default in the default analysis mode.
 
 #### Custom analysis mode
 
-You can [configure code analysis rules](configure-code-analysis-rules.md) to enable or disable individual rule or a category of rules. Additionally, you can configure the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) to switch to below custom analysis modes:
+You can [configure code analysis rules](configure-code-analysis-rules.md) to enable or disable an individual rule or a category of rules. Additionally, you can use the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property to switch to one of the following custom analysis modes:
 
 - _Aggressive_ or _Opt-out_ mode: All rules are enabled by default as build warnings. You can selectively [opt out](configure-code-analysis-rules.md) of individual rules to disable them.
-- _Conservative_ or _Opt-in_ mode, where all rules are disabled by default. You can selectively [opt into](configure-code-analysis-rules.md) individual rules to enable them.
+- _Conservative_ or _Opt-in_ mode: All rules are disabled by default. You can selectively [opt into](configure-code-analysis-rules.md) individual rules to enable them.
 
 ### Treat warnings as errors
 
@@ -90,16 +90,16 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 ## Code style analysis
 
-_[Code style analysis](/visualstudio/ide/editorconfig-code-style-settings-reference) ("IDE" rules)_ enables you to define and maintain consistent code style in your codebase. Following are the default settings:
+_[Code style analysis](/visualstudio/ide/editorconfig-code-style-settings-reference) ("IDExxxx" rules)_ enables you to define and maintain consistent code style in your codebase. Following are the default settings:
 
-- Command line build: Code style analysis is disabled, by default, for all .NET projects on command line builds.
+- Command line build: Code style analysis is disabled, by default, for all .NET projects on command-line builds.
 - Visual Studio: Code style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
 
-Starting .NET 5.0 RC2, you can enable code style analysis on build, both on command line and inside Visual Studio. Code style violations will appear as warnings or errors on build with an "IDE" prefix. This enables you to strictly enforce consistent code styles at build time.
+Starting .NET 5.0 RC2, you can enable code style analysis on build, both at the command line and inside Visual Studio. Code style violations appear as warnings or errors with an "IDE" prefix. This enables you to enforce consistent code styles at build time.
 
 Steps to enable code style analysis on build:
 
-1. Set MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) property to `true`.
+1. Set the MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) to `true`.
 2. [Configure](configure-code-analysis-rules.md) each "IDE" code style rule that you wish to run on build as a warning or an error. For example:
 
    ```ini
@@ -108,7 +108,7 @@ Steps to enable code style analysis on build:
    dotnet_diagnostic.IDE0005.severity = warning
    ```
 
-   Alternatively, you can [configure the entire "Style" category](configure-code-analysis-rules.md#configure-multiple-rules) to be a warning or an error by default and selectively turn off rules that you do not wish to run on build. For example:
+   Alternatively, you can [configure the entire "Style" category](configure-code-analysis-rules.md#configure-multiple-rules) to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
 
    ```ini
    [*.{cs,vb}]

@@ -53,6 +53,7 @@ In the default analysis mode, some rules are [enabled by default](#enabled-rules
 #### Custom analysis mode
 
 You can [configure code analysis rules](configure-code-analysis-rules.md) to enable or disable individual rule or a category of rules. Additionally, you can configure the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) to switch to below custom analysis modes:
+
 - _Aggressive_ or _Opt-out_ mode: All rules are enabled by default as build warnings. You can selectively [opt out](configure-code-analysis-rules.md) of individual rules to disable them.
 - _Conservative_ or _Opt-in_ mode, where all rules are disabled by default. You can selectively [opt into](configure-code-analysis-rules.md) individual rules to enable them.
 

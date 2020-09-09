@@ -13,3 +13,15 @@ In order for an application that targets an older version to benefit from this c
 | Scope   |Major|
 |Version|4.8|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

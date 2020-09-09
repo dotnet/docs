@@ -13,3 +13,15 @@ If properly marshalling ByRef SafeArray parameters on COM Events breaks executio
 | Scope   |Minor|
 |Version|4.8|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

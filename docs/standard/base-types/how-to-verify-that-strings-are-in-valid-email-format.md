@@ -32,7 +32,7 @@ This regular expression is comparatively simple to what can actually be used as 
 
 ❌ DON'T use a regular expression as the only way you validate an email.
 
-If you try to create the perfect regular expression to validate the structure of an email is correct, the expression becomes so complex that it's incredibly difficult to debug or improve. Regular expressions can't validate an email exists, even if it's structured correctly. The best way to validate an email is to send a test email to the address.
+If you try to create the _perfect_ regular expression to validate that the structure of an email is correct, the expression becomes so complex that it's incredibly difficult to debug or improve. Regular expressions can't validate an email exists, even if it's structured correctly. The best way to validate an email is to send a test email to the address.
 
 [!INCLUDE [regex](../../../includes/regex.md)]
 
@@ -72,6 +72,9 @@ In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is 
 | `\.`      | Match a single period character.                                                         |
 | `[^@\s]+` | Match one or more occurrences of any character other than the @ character or whitespace. |
 | `$`       | End the match at the end of the string.                                                  |
+
+> [!IMPORTANT]
+> This regular expression is not intended to cover every aspect of a valid email address. It's provided as an example for you to extend as needed.
 
 ## See also
 

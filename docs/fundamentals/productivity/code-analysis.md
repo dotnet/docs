@@ -59,7 +59,7 @@ You can [configure code analysis rules](configure-code-analysis-rules.md) to ena
 
 ### Treat warnings as errors
 
-If you use the `-warnaserror` flag when you build your projects, .NET code analysis warnings are also treated as errors. If you only want compiler warnings to be treated as errors, you can set the `CodeAnalysisTreatWarningsAsErrors` MSBuild property to `false` in your project file.
+If you use the `-warnaserror` flag when you build your projects, all code analysis warnings are also treated as errors. If you do not want code quality warnings (CAxxxx) to be treated as errors in presence of `-warnaserror`, you can set the `CodeAnalysisTreatWarningsAsErrors` MSBuild property to `false` in your project file.
 
 ```xml
 <PropertyGroup>

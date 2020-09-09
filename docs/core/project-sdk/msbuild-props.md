@@ -182,6 +182,24 @@ The following table shows the available options.
 | `5.0` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
 | `5` | The set of rules that was enabled for the .NET 5.0 release is used, even if newer rules are available. |
 
+### AnalysisMode
+
+Starting with .NET 5.0 RC2, the .NET SDK ships with [all "CA" code quality rules](/visualstudio/code-quality/code-analysis-for-managed-code-warnings). By default, only [some rules are enabled by default](../../fundamentals/productivity/code-analysis.md#enabled-rules) as build warnings. The `AnalysisMode` property lets you customize the set of enabled by default rules. You can either switch to a more aggressive (opt-out) analysis mode or a more conservative (opt-in) analysis mode. For example, if you want to enable all rules by default as build warnings, you can set the value to `AllEnabledByDefault`.
+
+```xml
+<PropertyGroup>
+  <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+</PropertyGroup>
+```
+
+The following table shows the available options.
+
+| Value | Meaning |
+|-|-|
+| `Default` | Default mode, where certain rules are enabled as build warnings, certain rules are enabled as Visual Studio IDE suggestions, and remainder are disabled. |
+| `AllEnabledByDefault` | Aggressive or Opt-out mode, where all rules are enabled by default as build warnings. You can selectively [opt out](../../fundamentals/productivity/configure-code-analysis-rules.md) of individual rules to disable them. |
+| `AllDisabledByDefault` | Conservative or Opt-in mode, where all rules are disabled by default. You can selectively [opt into](../../fundamentals/productivity/configure-code-analysis-rules.md) individual rules to enable them. |
+
 ### CodeAnalysisTreatWarningsAsErrors
 
 The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code analysis warnings should be treated as warnings and break the build. If you use the `-warnaserror` flag when you build your projects, [.NET code analysis](../../fundamentals/productivity/code-analysis.md) warnings are also treated as errors. If you only want compiler warnings to be treated as errors, you can set the `CodeAnalysisTreatWarningsAsErrors` MSBuild property to `false` in your project file.
@@ -194,7 +212,7 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 ### EnableNETAnalyzers
 
-[.NET Code analysis](../../fundamentals/productivity/code-analysis.md) is enabled, by default, for projects that target .NET 5.0 or later. You can enable .NET code analysis for projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to true. To disable code analysis in any project, set this property to `false`.
+[.NET code quality analysis](../../fundamentals/productivity/code-analysis.md) is enabled, by default, for projects that target .NET 5.0 or later. You can enable .NET code analysis for projects that target earlier versions of .NET by setting the `EnableNETAnalyzers` property to `true`. To disable code analysis in any project, set this property to `false`.
 
 ```xml
 <PropertyGroup>
@@ -204,6 +222,18 @@ The `CodeAnalysisTreatWarningsAsErrors` property lets you configure whether code
 
 > [!TIP]
 > Another way to enable .NET code analysis on projects that target .NET versions prior to .NET 5.0 is to set the [AnalysisLevel](#analysislevel) property to `latest`.
+
+### EnforceCodeStyleInBuild
+
+[.NET code style analysis](../../fundamentals/productivity/code-analysis.md) is disabled, by default, on build for all .NET projects. You can enable code style analysis for .NET projects by setting the `EnforceCodeStyleInBuild` property to `true`.
+
+```xml
+<PropertyGroup>
+  <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+</PropertyGroup>
+```
+
+All code style rules that are [configured](../../fundamentals/productivity/code-analysis.md#enable-code-style-analysis-in-build) to be warnings or errors will execute on build and report violations.
 
 ## Run-time configuration properties
 

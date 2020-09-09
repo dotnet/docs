@@ -7,6 +7,8 @@ Before ASP.NET Core 5.0, the [Exception Handler Middleware](xref:Microsoft.AspNe
 
 To address the misleading error in ASP.NET Core 5.0, the `ExceptionHandlerMiddleware` throws the original exception if the exception handler can't be found. As a result, an HTTP 500 response is produced by the server. The response will be easier to examine in the server logs when debugging the error that occurred.
 
+For discussion, see GitHub issue [dotnet/aspnetcore#25288](https://github.com/dotnet/aspnetcore/issues/25288).
+
 #### Version introduced
 
 5.0 RC 1

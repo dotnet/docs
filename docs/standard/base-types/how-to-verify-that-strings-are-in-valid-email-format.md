@@ -79,3 +79,4 @@ In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is 
 ## See also
 
 - [.NET Framework Regular Expressions](regular-expressions.md)
+- [How far should one take e-mail address validation?](https://softwareengineering.stackexchange.com/questions/78353/how-far-should-one-take-e-mail-address-validation#78363)

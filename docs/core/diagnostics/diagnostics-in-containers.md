@@ -1,7 +1,6 @@
 ---
 title: Collect diagnostics in containers
 description: In this article, you'll learn how .NET Core diagnostics tools can be used in Docker containers.
-ms.topic: tutorial
 ms.date: 09/01/2020
 ---
 

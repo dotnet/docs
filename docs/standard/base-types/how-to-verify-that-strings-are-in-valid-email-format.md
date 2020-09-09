@@ -59,7 +59,7 @@ The `IsValidEmail` method merely determines whether the email format is valid fo
 
 :::code language="csharp" source="snippets/how-to-verify-that-strings-are-in-valid-email-format/csharp/RegexUtilities.cs":::
 
-:::code language="vbnet" source="snippets/how-to-verify-that-strings-are-in-valid-email-format/vb/RegexUtilities.vb":::
+:::code language="vb" source="snippets/how-to-verify-that-strings-are-in-valid-email-format/vb/RegexUtilities.vb":::
 
 In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is interpreted as shown in the following table. The regular expression is compiled using the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> flag.
 
@@ -72,18 +72,6 @@ In this example, the regular expression pattern `^[^@\s]+@[^@\s]+\.[^@\s]+$` is 
 | `\.`      | Match a single period character.                                                         |
 | `[^@\s]+` | Match one or more occurrences of any character other than the @ character or whitespace. |
 | `$`       | End the match at the end of the string.                                                  |
-
-## Compile the code
-
-The `IsValidEmail` and `DomainMapper` methods can be included in a library of regular expression utility methods, or they can be included as private static or instance methods in the application class.
-
-You can also use the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method to include this regular expression in a regular expression library.
-
-If they're used in a regular expression library, you can call them by using code such as the following:
-
-:::code language="csharp" source="snippets/how-to-verify-that-strings-are-in-valid-email-format/csharp/Program.cs" id="TestRegex":::
-
-:::code language="vbnet" source="snippets/how-to-verify-that-strings-are-in-valid-email-format/vb/Program.vb" id="TestRegex":::
 
 ## See also
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Runtime.InteropServices;
+using System.Threading;
 
 namespace test
 {
@@ -12,7 +13,7 @@ namespace test
     {
         public static void ThreadProc()
         {
-            // Issue preventing unlopading #4 - a thread running method inside of the TestAssemblyLoadContext at the unload time
+            // Issue preventing unloading #4 - a thread running method inside of the TestAssemblyLoadContext at the unload time
             Thread.Sleep(Timeout.Infinite);
         }
 

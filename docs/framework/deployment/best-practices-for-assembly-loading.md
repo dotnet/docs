@@ -57,7 +57,7 @@ This article discusses ways to avoid problems of type identity that can lead to 
   
  Loading assemblies by using the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method, or one of the other methods that load by path, has the following disadvantages:  
   
-- If an assembly with the same identity is already loaded, <xref:System.Reflection.Assembly.LoadFrom%2A> returns the loaded assembly even if a different path was specified.  
+- If an assembly with the same identity is already loaded in the load-from context, <xref:System.Reflection.Assembly.LoadFrom%2A> returns the loaded assembly even if a different path was specified.  
   
 - If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and later an assembly in the default load context tries to load the same assembly by display name, the load attempt fails. This can occur when an assembly is deserialized.  
   

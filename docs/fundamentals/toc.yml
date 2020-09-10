@@ -129,9 +129,6 @@ items:
       - name: Install and use a package
         href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
         displayName: tutorials, visual studio for mac, vs for mac
-      - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
-        displayName: tutorials
     - name: More tutorials
       href: ../core/tutorials/index.md
 - name: What's new
@@ -308,6 +305,8 @@ items:
         href: ../core/diagnostics/index.md
       - name: Managed debuggers
         href: ../core/diagnostics/managed-debuggers.md
+      - name: Debug Linux dumps
+        href: ../core/diagnostics/debug-linux-dumps.md        
       - name: EventCounters
         href: ../core/diagnostics/event-counters.md
       - name: Logging and tracing
@@ -322,6 +321,10 @@ items:
           href: ../core/diagnostics/dotnet-gcdump.md
         - name: dotnet-trace
           href: ../core/diagnostics/dotnet-trace.md
+        - name: dotnet-symbol
+          href: ../core/diagnostics/dotnet-symbol.md
+        - name: dotnet-sos
+          href: ../core/diagnostics/dotnet-sos.md                    
       - name: .NET Core diagnostics tutorials
         items:
         - name: Get perf metrics with EventCounters

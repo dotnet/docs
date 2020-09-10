@@ -1,36 +1,24 @@
 ﻿using System;
+using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
 
 public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 {
-    // To detect redundant calls
-    private bool _disposed = false;
+    private bool _disposed;
+    private Utf8JsonWriter _jsonWriter = new Utf8JsonWriter(new MemoryStream());
 
-    // Created in .ctor, omitted for brevity.
-    private Utf8JsonWriter _jsonWriter;
+    public void Dispose()
+    {
+        Dispose(disposing: true);
+        GC.SuppressFinalize(this);
+    }
 
     public async ValueTask DisposeAsync()
     {
         await DisposeAsyncCore();
 
-        Dispose(false);
-        GC.SuppressFinalize(this);
-    }
-
-    protected virtual async ValueTask DisposeAsyncCore()
-    {
-        // Cascade async dispose calls
-        if (_jsonWriter != null)
-        {
-            await _jsonWriter.DisposeAsync();
-            _jsonWriter = null;
-        }
-    }
-
-    public void Dispose()
-    {
-        Dispose(true);
+        Dispose(disposing: false);
         GC.SuppressFinalize(this);
     }
 
@@ -41,15 +29,28 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
             return;
         }
 
+        _disposed = true;
+
         if (disposing)
         {
             _jsonWriter?.Dispose();
-            // TODO: dispose managed state (managed objects).
         }
 
-        // TODO: free unmanaged resources (unmanaged objects) and override a finalizer below.
-        // TODO: set large fields to null.
+        _jsonWriter = null;
+    }
 
-        _disposed = true;
+    protected virtual async ValueTask DisposeAsyncCore()
+    {
+        if (!_disposed)
+        {
+            _disposed = true;
+
+            if (_jsonWriter is not null)
+            {
+                await _jsonWriter.DisposeAsync();
+            }
+
+            _jsonWriter = null;
+        }
     }
 }

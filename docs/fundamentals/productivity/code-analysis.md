@@ -29,7 +29,7 @@ _Code quality analysis ("CA") rules_ inspect your C# or Visual Basic code for se
 
 You can also enable or disable code analysis using the Project Properties window. To access the Project Properties window right-click on a project within Solution Explorer and select Properties. Next, select the Code Analysis tab where you can either select or clear the checkbox to Enable .NET analyzers.
 
-![Project Properties Code Analysis](images/project-properties.png)
+![Project Properties in Visual Studio - Enable .NET analyzers option.](images/project-properties.png)
 
 ### Enabled rules
 

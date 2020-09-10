@@ -1,21 +1,7 @@
-- name: "Architecting Cloud-Native .NET Apps for Azure"
+- name: "DAPR for .NET Developers"
   href: index.md
   items:
-  - name: Introduction to cloud-native applications
-    href: introduction.md
-    items:
-    - name: Defining Cloud Native
-      href: definition.md
-    - name: Candidate apps for Cloud Native
-      href: candidate-apps.md
-  - name: Introducing the eShopOnContainers reference app
-    href: introduce-eshoponcontainers-reference-app.md
-    items:
-    - name: Mapping eShopOnContainers to Azure Services
-      href: map-eshoponcontainers-azure-services.md
-    - name: Deploying eShopOnContainers to Azure
-      href: deploy-eshoponcontainers-azure.md
-    - name: Centralized configuration
-      href: centralized-configuration.md
+  - name: Challenges of distributed applications
+    href: challenges-of-distributed-applications.md    
   - name: Summary
     href: summary.md

@@ -21,7 +21,7 @@ In projects that target platforms for which APIs that they use aren't available,
   }
   ```
 
-- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is not supported in the browser (it's decorated with `[UnsupportedOSPlatform("browser")]`). The following code will produce a CA1416 warning at build time if the project uses the Blazor WebAssembly SDK (`<Project Sdk="Microsoft.NET.Blazor.WebAssembly.Sdk">`) or includes `browser` as a supported platform in the project file (`<SupportedPlatform Include="browser" />`).
+- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is not supported in the browser (it's decorated with `[UnsupportedOSPlatform("browser")]`). The following code will produce a CA1416 warning at build time if the project uses the Blazor WebAssembly SDK (`<Project Sdk="Microsoft.NET.Blazor.WebAssembly.Sdk">`) or includes `browser` as a supported platform (`<SupportedPlatform Include="browser" />`) in the project file.
 
   ```csharp
   public void CreateImage()
@@ -58,7 +58,7 @@ Ensure that platform-specific APIs are only called when the code is running on a
   }
   ```
 
-  ...or pass its result to <xref:System.Debug.Assert(System.Boolean)?displayProperty=nameWithType>:
+  ...or pass its result to <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>:
 
   ```csharp
   public void PlayCMajor()

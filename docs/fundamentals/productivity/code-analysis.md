@@ -27,6 +27,10 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 _Code quality analysis ("CA") rules_ inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
 
+You can also enable or disable code analysis using the Project Properties window. To access the Project Properties window right-click on a project within Solution Explorer and select Properties. Next, select the Code Analysis tab where you can either select or clear the checkbox to Enable .NET analyzers.
+
+![Project Properties Code Analysis](images/project-properties.png)
+
 ### Enabled rules
 
 The following rules are enabled, by default, in .NET 5.0 Preview 8.

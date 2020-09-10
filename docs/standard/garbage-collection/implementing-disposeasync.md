@@ -68,11 +68,11 @@ The preceding example uses the <xref:System.Text.Json.Utf8JsonWriter>. For more 
 
 ## Implement both dispose and async dispose patterns
 
-You may need to implement both the <xref:System.IDisposable> and <xref:System.IAsyncDisposable> interfaces, especially when your class scope contains instances of these implementations. Doing so ensures that you can properly cascade clean up calls. Here is an example class that implements both interfaces, and demonstrates the proper guidance for cleanup.
+You may need to implement both the <xref:System.IDisposable> and <xref:System.IAsyncDisposable> interfaces, especially when your class scope contains instances of these implementations. Doing so ensures that you can properly cascade clean up calls. Here is an example class that implements both interfaces and demonstrates the proper guidance for cleanup.
 
 :::code language="csharp" source="../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.asyncdisposable/dispose-and-disposeasync.cs":::
 
-The <xref:System.IDisposable.Dispose?displayProperty=nameWithType> and <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> implementations are both simple boilerplate code. The `Dispose(bool)` and `DisposeAsyncCore()` methods start by checking if `_disposed` is `true`, and will only run when `false`.
+The <xref:System.IDisposable.Dispose?displayProperty=nameWithType> and <xref:System.IAsyncDisposable.DisposeAsync?displayProperty=nameWithType> implementations are both simple boilerplate code. The `Dispose(bool)` and `DisposeAsyncCore()` methods start by checking if `_disposed` is `true`, and will only run when it's `false`.
 
 In the `Dispose(bool)` overload method, the <xref:System.IDisposable> instance is conditionally disposed of if it is not `null`. The <xref:System.IAsyncDisposable> instance is casted as <xref:System.IDisposable>, and if it is also not `null` it is disposed of as well. Both instances are then assigned to `null`.
 

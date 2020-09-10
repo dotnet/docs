@@ -104,8 +104,8 @@ Steps to enable code style analysis on build:
 
    ```ini
    [*.{cs,vb}]
-   # IDE0005: Using directive is unnecessary (escalated to a build warning)
-   dotnet_diagnostic.IDE0005.severity = warning
+   # IDE0040: Accessibility modifiers required (escalated to a build warning)
+   dotnet_diagnostic.IDE0040.severity = warning
    ```
 
    Alternatively, you can [configure the entire "Style" category](configure-code-analysis-rules.md#configure-multiple-rules) to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
@@ -116,8 +116,8 @@ Steps to enable code style analysis on build:
    # Default severity for analyzer diagnostics with category 'Style' (escalated to build warnings)
    dotnet_analyzer_diagnostic.category-Style.severity = warning
 
-   # IDE0005: Using directive is unnecessary (disabled on build)
-   dotnet_diagnostic.IDE0005.severity = silent
+   # IDE0040: Accessibility modifiers required (disabled on build)
+   dotnet_diagnostic.IDE0040.severity = silent
    ```
 
 ## See also

@@ -8,11 +8,11 @@ Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../.
 
 Rule CA1416, the platform compatibility analyzer, works hand-in-hand with some other features that are new in .NET 5.0. .NET 5.0 introduces the <xref:System.Runtime.Versioning.OSPlatformAttribute> (soon to be `SupportedOSPlatformAttribute`) and <xref:System.Runtime.Versioning.RemovedInOSPlatformAttribute> (soon to be `UnsupportedOSPlatformAttribute`) attributes, which let you specify which platforms an API *is* or *isn't* supported on. In the absence of these attributes, an API is assumed to be supported on all platforms. These attributes have been applied to platform-specific APIs in the core .NET libraries.
 
-In projects that target platforms for which APIs that they use aren't available, rule CA1416 flags any platform-specific API call where the platform context isn't verified. Most of the APIs that are now decorated with the `SupportedOSPlatform` and `UnsupportedOSPlatform` attributes throw <xref:System.PlatformNotSupportedException> exceptions when they're invoked on an unsupported operating system. Now that these APIs are marked as platform-specific, rule CA1416 helps you prevent <xref:System.PlatformNotSupportedException> exceptions from being thrown at run time by adding OS checks to your call sites.
+In projects that target platforms for which APIs that they use aren't available, rule CA1416 flags any platform-specific API call where the platform context isn't verified. Most of the APIs that are now decorated with the `SupportedOSPlatformAttribute` and `UnsupportedOSPlatformAttribute` attributes throw <xref:System.PlatformNotSupportedException> exceptions when they're invoked on an unsupported operating system. Now that these APIs are marked as platform-specific, rule CA1416 helps you prevent run-time <xref:System.PlatformNotSupportedException> exceptions by adding OS checks to your call sites.
 
 #### Examples
 
-- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows (`[SupportedOSPlatform("windows")]`). The following code will produce a CA1416 warning if the project [targets](../../../../docs/standard/frameworks.md) `net5.0` (but not `net5.0-windows`).
+- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows (it's decorated with `[SupportedOSPlatform("windows")]`). The following code will produce a CA1416 warning at build time if the project [targets](../../../../docs/standard/frameworks.md) `net5.0` (but not `net5.0-windows`). For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
 
   ```csharp
   public void PlayCMajor()
@@ -21,7 +21,7 @@ In projects that target platforms for which APIs that they use aren't available,
   }
   ```
 
-- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is *not* supported in the browser (`[UnsupportedOSPlatform("browser")]`). The following code will produce a CA1416 warning if the project uses the Blazor WebAssembly SDK (`<Project Sdk="Microsoft.NET.Blazor.WebAssembly.Sdk">`) or includes `browser` as a supported platform (`<SupportedPlatform Include="browser" />`).
+- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is not supported in the browser (it's decorated with `[UnsupportedOSPlatform("browser")]`). The following code will produce a CA1416 warning at build time if the project uses the Blazor WebAssembly SDK (`<Project Sdk="Microsoft.NET.Blazor.WebAssembly.Sdk">`) or includes `browser` as a supported platform in the project file (`<SupportedPlatform Include="browser" />`).
 
   ```csharp
   public void CreateImage()
@@ -36,9 +36,9 @@ In projects that target platforms for which APIs that they use aren't available,
 
 #### Recommended action
 
-Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this at build time using preprocessor directives, or at run time by using the <xref:System.OperatingSystem?displayProperty=nameWithType> methods:
+Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this at build time using preprocessor directives, or at run time by using the platform guards in the <xref:System.OperatingSystem?displayProperty=nameWithType> class:
 
-- Add a `#if` [preprocessor directive](../csharp/language-reference/preprocessor-directives/preprocessor-if.md) around platform-specific API calls:
+- Add a `#if` [preprocessor directive](../../../../docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) around platform-specific API calls:
 
   ```csharp
   #if NET50_WINDOWS
@@ -46,7 +46,7 @@ Ensure that platform-specific APIs are only called when the code is running on a
   #endif
   ```
 
-- Check the current operating system using one of the <xref:System.OperatingSystem?displayProperty=nameWithType> methods, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType>, before calling a platform-specific API. You can use these methods in the condition of an `if` statement:
+- Check the current operating system using one of the <xref:System.OperatingSystem?displayProperty=nameWithType> platform-checking methods, for example, `System.OperatingSystem.IsWindows()`, before calling a platform-specific API. You can use one of these methods in the condition of an `if` statement:
 
   ```csharp
   public void PlayCMajor()
@@ -58,7 +58,7 @@ Ensure that platform-specific APIs are only called when the code is running on a
   }
   ```
 
-  ...or as an argument to <xref:System.Debug.Assert(System.Boolean?displayProperty=nameWithType)>:
+  ...or pass its result to <xref:System.Debug.Assert(System.Boolean)?displayProperty=nameWithType>:
 
   ```csharp
   public void PlayCMajor()
@@ -68,7 +68,7 @@ Ensure that platform-specific APIs are only called when the code is running on a
   }
   ```
 
-  Use <xref:System.Debug.Assert(System.Boolean?displayProperty=nameWithType)> when you want the checks to be trimmed out of release builds.
+  Use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType> when you want the checks to be trimmed out of release builds.
 
 You can also mark your API as platform-specific, in which case the burden of checking requirements falls on your callers. You can mark specific methods or types or an entire assembly.
 
@@ -121,3 +121,7 @@ For Blazor WebAssembly platform:
 - ``
 
 -->
+
+#### See also
+
+- [.NET API analyzer](../../../../docs/standard/analyzers/api-analyzer.md)

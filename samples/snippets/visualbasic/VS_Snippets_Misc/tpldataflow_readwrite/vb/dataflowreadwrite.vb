@@ -17,17 +17,15 @@ Friend Class DataflowReadWrite
             Console.WriteLine(await bufferBlock.ReceiveAsync())
         Next i
 
-        '       Output:
-        '         0
-        '         1
-        '         2
-        '       
+        ' Output:
+        '   0
+        '   1
+        '   2
         ' </5>
     End Function
 
     Shared Sub Main(ByVal args() As String)
         ' <2>
-        ' Create a BufferBlock<int> object.
         Dim bufferBlock = New BufferBlock(Of Integer)()
 
         ' Post several messages to the block.
@@ -40,11 +38,10 @@ Friend Class DataflowReadWrite
             Console.WriteLine(bufferBlock.Receive())
         Next i
 
-        '       Output:
-        '         0
-        '         1
-        '         2
-        '       
+        ' Output:
+        '   0
+        '   1
+        '   2
         ' </2>
 
         ' <3>
@@ -59,11 +56,10 @@ Friend Class DataflowReadWrite
             Console.WriteLine(value)
         Loop
 
-        '       Output:
-        '         0
-        '         1
-        '         2
-        '       
+        ' Output:
+        '   0
+        '   1
+        '   2
         ' </3>
 
         ' <4>
@@ -80,11 +76,10 @@ Friend Class DataflowReadWrite
         Dim post2 = Task.Run(Sub() bufferBlock.Post(2))
         Task.WaitAll(post01, receive, post2)
 
-        '       Sample output:
-        '         2
-        '         0
-        '         1
-        '       
+        ' Output:
+        '   0
+        '   1
+        '   2
         ' </4>
 
         ' Demonstrate asynchronous dataflow operations.

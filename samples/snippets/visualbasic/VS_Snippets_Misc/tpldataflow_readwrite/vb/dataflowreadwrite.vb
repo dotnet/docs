@@ -1,4 +1,4 @@
-﻿' <snippet1>
+﻿' <1>
 Imports System.Threading.Tasks
 Imports System.Threading.Tasks.Dataflow
 
@@ -6,7 +6,7 @@ Imports System.Threading.Tasks.Dataflow
 Friend Class DataflowReadWrite
     ' Demonstrates asynchronous dataflow operations.
     Private Shared async Function AsyncSendReceive(ByVal bufferBlock As BufferBlock(Of Integer)) As Task
-        ' <snippet5>
+        ' <5>
         ' Post more messages to the block asynchronously.
         For i As Integer = 0 To 2
             await bufferBlock.SendAsync(i)
@@ -22,11 +22,11 @@ Friend Class DataflowReadWrite
         '         1
         '         2
         '       
-        ' </snippet5>
+        ' </5>
     End Function
 
     Shared Sub Main(ByVal args() As String)
-        ' <snippet2>
+        ' <2>
         ' Create a BufferBlock<int> object.
         Dim bufferBlock = New BufferBlock(Of Integer)()
 
@@ -45,9 +45,9 @@ Friend Class DataflowReadWrite
         '         1
         '         2
         '       
-        ' </snippet2>
+        ' </2>
 
-        ' <snippet3>
+        ' <3>
         ' Post more messages to the block.
         For i As Integer = 0 To 2
             bufferBlock.Post(i)
@@ -64,9 +64,9 @@ Friend Class DataflowReadWrite
         '         1
         '         2
         '       
-        ' </snippet3>
+        ' </3>
 
-        ' <snippet4>
+        ' <4>
         ' Write to and read from the message block concurrently.
         Dim post01 = Task.Run(Sub()
                                   bufferBlock.Post(0)
@@ -85,11 +85,11 @@ Friend Class DataflowReadWrite
         '         0
         '         1
         '       
-        ' </snippet4>
+        ' </4>
 
         ' Demonstrate asynchronous dataflow operations.
         AsyncSendReceive(bufferBlock).Wait()
     End Sub
 
 End Class
-' </snippet1>
+' </1>

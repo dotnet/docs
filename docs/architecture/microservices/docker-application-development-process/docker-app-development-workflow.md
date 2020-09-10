@@ -246,7 +246,7 @@ Then it would be just the same for every service, it would copy the whole soluti
 
 1. The copy process would only be executed the first time (and when rebuilding if a file is changed) and would use the cache for all other services and
 
-2. Since the larger image occurs in an intermediate stage it, doesn't affect the final image size.
+2. Since the larger image occurs in an intermediate stage, it doesn't affect the final image size.
 
 The next significant optimization involves the `restore` command executed in line 17, which is also different for every service of eShopOnContainers. If you change that line to just:
 

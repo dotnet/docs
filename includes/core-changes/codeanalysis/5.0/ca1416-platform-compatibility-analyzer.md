@@ -4,11 +4,11 @@
 
 #### Change description
 
-Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including CA1416. If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build. Rule CA1416 informs you when you're using platform-specific APIs from call sites that don't gate the call on the operating system (OS) that the code is running on.
+Starting in .NET 5.0, the .NET SDK includes [.NET source code analyzers](../../../../docs/fundamentals/productivity/code-analysis.md). Several of these rules are enabled, by default, including CA1416. If your project contains code that violates this rule and is configured to treat warnings as errors, this change could break your build. Rule CA1416 informs you when you're using platform-specific APIs from places where the platform context isn't verified.
 
-Starting in .NET 5.0, some .NET APIs are decorated with the `SupportedOSPlatform` and `UnsupportedOSPlatform` attributes. An API that's decorated with `SupportedOSPlatform`, which can be applied multiple times, is only supported on the specified platform(s). An API that's decorated with `UnsupportedOSPlatform`, which also can be applied multiple times, is supported on all platforms *except* those that are specified. For projects that target platforms for which APIs that they use aren't available, rule CA1416 flags any platform-specific API call where the platform context isn't verified.
+Rule CA1416, the platform compatibility analyzer, works hand-in-hand with some other features that are new in .NET 5.0. .NET 5.0 introduces the <xref:System.Runtime.Versioning.OSPlatformAttribute> (soon to be `SupportedOSPlatformAttribute`) and <xref:System.Runtime.Versioning.RemovedInOSPlatformAttribute> (soon to be `UnsupportedOSPlatformAttribute`) attributes, which let you specify which platforms an API *is* or *isn't* supported on. In the absence of these attributes, an API is assumed to be supported on all platforms. These attributes have been applied to platform-specific APIs in the core .NET libraries.
 
-Most of the APIs that are now decorated with the `SupportedOSPlatform` and `UnsupportedOSPlatform` attributes throw <xref:System.PlatformNotSupportedException> exceptions when they're invoked on an unsupported operating system. Now that these APIs are marked as platform-specific, rule CA1416 helps you prevent <xref:System.PlatformNotSupportedException> exceptions from being thrown at run time by adding OS checks to your call sites.
+In projects that target platforms for which APIs that they use aren't available, rule CA1416 flags any platform-specific API call where the platform context isn't verified. Most of the APIs that are now decorated with the `SupportedOSPlatform` and `UnsupportedOSPlatform` attributes throw <xref:System.PlatformNotSupportedException> exceptions when they're invoked on an unsupported operating system. Now that these APIs are marked as platform-specific, rule CA1416 helps you prevent <xref:System.PlatformNotSupportedException> exceptions from being thrown at run time by adding OS checks to your call sites.
 
 #### Examples
 
@@ -36,7 +36,7 @@ Most of the APIs that are now decorated with the `SupportedOSPlatform` and `Unsu
 
 #### Recommended action
 
-Ensure that you only call platform-specific APIs when running on an appropriate platform. You can achieve this at build time, using preprocessor directives, or at run time, by using the <xref:System.OperatingSystem?displayProperty=nameWithType> methods:
+Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this at build time using preprocessor directives, or at run time by using the <xref:System.OperatingSystem?displayProperty=nameWithType> methods:
 
 - Add a `#if` [preprocessor directive](../csharp/language-reference/preprocessor-directives/preprocessor-if.md) around platform-specific API calls:
 
@@ -46,7 +46,7 @@ Ensure that you only call platform-specific APIs when running on an appropriate 
   #endif
   ```
 
-- Check the current operating system using one of the <xref:System.OperatingSystem?displayProperty=nameWithType> methods before calling a platform-specific API. You can use these methods in a conditional `if` statement:
+- Check the current operating system using one of the <xref:System.OperatingSystem?displayProperty=nameWithType> methods, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType>, before calling a platform-specific API. You can use these methods in the condition of an `if` statement:
 
   ```csharp
   public void PlayCMajor()
@@ -86,7 +86,7 @@ If you don't want to fix all your call sites, you can choose one of the followin
 
   ```csharp
   public void PlayCMajor ()
-  { 
+  {
   #pragma warning disable CA1416
       Console.Beep(261, 1000);
   #pragma warning restore CA1416

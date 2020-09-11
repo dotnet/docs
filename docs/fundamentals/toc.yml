@@ -266,23 +266,23 @@ items:
       href: ../core/tools/elevated-access.md
     - name: Enable Tab completion
       href: ../core/tools/enable-tab-autocomplete.md
-  - name: Continuous integration with the CLI
-    href: ../core/tools/using-ci-with-cli.md
-  - name: Develop libraries with the CLI
-    href: ../core/tutorials/libraries.md
-  - name: Create templates for the CLI
-    items:
-    - name: Custom templates
-      href: ../core/tools/custom-templates.md
-    - name: 1 - Create an item template
-      href: ../core/tutorials/cli-templates-create-item-template.md
-      displayName: tutorials, cli
-    - name: 2 - Create a project template
-      href: ../core/tutorials/cli-templates-create-project-template.md
-      displayName: tutorials, cli
-    - name: 3 - Create a template pack
-      href: ../core/tutorials/cli-templates-create-template-pack.md
-      displayName: tutorials, cli
+    - name: Continuous integration with the CLI
+      href: ../core/tools/using-ci-with-cli.md
+    - name: Develop libraries with the CLI
+      href: ../core/tutorials/libraries.md
+    - name: Create templates for the CLI
+      items:
+      - name: Custom templates
+        href: ../core/tools/custom-templates.md
+      - name: 1 - Create an item template
+        href: ../core/tutorials/cli-templates-create-item-template.md
+        displayName: tutorials, cli
+      - name: 2 - Create a project template
+        href: ../core/tutorials/cli-templates-create-project-template.md
+        displayName: tutorials, cli
+      - name: 3 - Create a template pack
+        href: ../core/tutorials/cli-templates-create-template-pack.md
+        displayName: tutorials, cli
   - name: MSBuild and project files
     items:
     - name: Project SDKs

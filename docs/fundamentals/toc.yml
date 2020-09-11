@@ -129,9 +129,6 @@ items:
       - name: Install and use a package
         href: /nuget/quickstart/install-and-use-a-package-in-visual-studio-mac
         displayName: tutorials, visual studio for mac, vs for mac
-      - name: Create and publish a package
-        href: /nuget/quickstart/create-and-publish-a-package-using-the-dotnet-cli
-        displayName: tutorials
     - name: More tutorials
       href: ../core/tutorials/index.md
 - name: What's new
@@ -150,127 +147,125 @@ items:
     href: ../core/whats-new/dotnet-core-2-0.md
   - name: What's new in .NET Standard
     href: ../standard/whats-new/whats-new-in-dotnet-standard.md
-- name: Environment and runtime components
+- name: Tools and diagnostics
   items:
-  - name: Tools and productivity
+  - name: .NET Core SDK overview
+    href: ../core/sdk.md
+  - name: .NET Core CLI
     items:
-    - name: .NET Core SDK overview
-      href: ../core/sdk.md
-    - name: .NET Core CLI
+    - name: Overview
+      href: ../core/tools/index.md
+    - name: Reference
       items:
-      - name: Overview
-        href: ../core/tools/index.md
-      - name: Reference
+      - name: dotnet
+        href: ../core/tools/dotnet.md
+      - name: dotnet build
+        href: ../core/tools/dotnet-build.md
+      - name: dotnet build-server
+        href: ../core/tools/dotnet-build-server.md
+      - name: dotnet clean
+        href: ../core/tools/dotnet-clean.md
+      - name: dotnet help
+        href: ../core/tools/dotnet-help.md
+      - name: dotnet migrate
+        href: ../core/tools/dotnet-migrate.md
+      - name: dotnet msbuild
+        href: ../core/tools/dotnet-msbuild.md
+      - name: dotnet new
+        href: ../core/tools/dotnet-new.md
+      - name: dotnet nuget
         items:
-        - name: dotnet
-          href: ../core/tools/dotnet.md
-        - name: dotnet build
-          href: ../core/tools/dotnet-build.md
-        - name: dotnet build-server
-          href: ../core/tools/dotnet-build-server.md
-        - name: dotnet clean
-          href: ../core/tools/dotnet-clean.md
-        - name: dotnet help
-          href: ../core/tools/dotnet-help.md
-        - name: dotnet migrate
-          href: ../core/tools/dotnet-migrate.md
-        - name: dotnet msbuild
-          href: ../core/tools/dotnet-msbuild.md
-        - name: dotnet new
-          href: ../core/tools/dotnet-new.md
-        - name: dotnet nuget
-          items:
-          - name: dotnet nuget delete
-            href: ../core/tools/dotnet-nuget-delete.md
-          - name: dotnet nuget locals
-            href: ../core/tools/dotnet-nuget-locals.md
-          - name: dotnet nuget push
-            href: ../core/tools/dotnet-nuget-push.md
-          - name: dotnet nuget add source
-            href: ../core/tools/dotnet-nuget-add-source.md
-          - name: dotnet nuget disable source
-            href: ../core/tools/dotnet-nuget-disable-source.md
-          - name: dotnet nuget enable source
-            href: ../core/tools/dotnet-nuget-enable-source.md
-          - name: dotnet nuget list source
-            href: ../core/tools/dotnet-nuget-list-source.md
-          - name: dotnet nuget remove source
-            href: ../core/tools/dotnet-nuget-remove-source.md
-          - name: dotnet nuget update source
-            href: ../core/tools/dotnet-nuget-update-source.md
-        - name: dotnet pack
-          href: ../core/tools/dotnet-pack.md
-        - name: dotnet publish
-          href: ../core/tools/dotnet-publish.md
-        - name: dotnet restore
-          href: ../core/tools/dotnet-restore.md
-        - name: dotnet run
-          href: ../core/tools/dotnet-run.md
-        - name: dotnet sln
-          href: ../core/tools/dotnet-sln.md
-        - name: dotnet store
-          href: ../core/tools/dotnet-store.md
-        - name: dotnet test
-          href: ../core/tools/dotnet-test.md
-        - name: dotnet tool
-          items:
-          - name: dotnet tool install
-            href: ../core/tools/dotnet-tool-install.md
-          - name: dotnet tool list
-            href: ../core/tools/dotnet-tool-list.md
-          - name: dotnet tool restore
-            href: ../core/tools/dotnet-tool-restore.md
-          - name: dotnet tool run
-            href: ../core/tools/dotnet-tool-run.md
-          - name: dotnet tool uninstall
-            href: ../core/tools/dotnet-tool-uninstall.md
-          - name: dotnet tool update
-            href: ../core/tools/dotnet-tool-update.md
-        - name: dotnet vstest
-          href: ../core/tools/dotnet-vstest.md
-        - name: dotnet-install scripts
-          href: ../core/tools/dotnet-install-script.md
-        - name: Project reference commands
-          items:
-          - name: dotnet add reference
-            href: ../core/tools/dotnet-add-reference.md
-          - name: dotnet list reference
-            href: ../core/tools/dotnet-list-reference.md
-          - name: dotnet remove reference
-            href: ../core/tools/dotnet-remove-reference.md
-        - name: Project package commands
-          items:
-          - name: dotnet add package
-            href: ../core/tools/dotnet-add-package.md
-          - name: dotnet list package
-            href: ../core/tools/dotnet-list-package.md
-          - name: dotnet remove package
-            href: ../core/tools/dotnet-remove-package.md
-      - name: Global and local tools
+        - name: dotnet nuget delete
+          href: ../core/tools/dotnet-nuget-delete.md
+        - name: dotnet nuget locals
+          href: ../core/tools/dotnet-nuget-locals.md
+        - name: dotnet nuget push
+          href: ../core/tools/dotnet-nuget-push.md
+        - name: dotnet nuget add source
+          href: ../core/tools/dotnet-nuget-add-source.md
+        - name: dotnet nuget disable source
+          href: ../core/tools/dotnet-nuget-disable-source.md
+        - name: dotnet nuget enable source
+          href: ../core/tools/dotnet-nuget-enable-source.md
+        - name: dotnet nuget list source
+          href: ../core/tools/dotnet-nuget-list-source.md
+        - name: dotnet nuget remove source
+          href: ../core/tools/dotnet-nuget-remove-source.md
+        - name: dotnet nuget update source
+          href: ../core/tools/dotnet-nuget-update-source.md
+      - name: dotnet pack
+        href: ../core/tools/dotnet-pack.md
+      - name: dotnet publish
+        href: ../core/tools/dotnet-publish.md
+      - name: dotnet restore
+        href: ../core/tools/dotnet-restore.md
+      - name: dotnet run
+        href: ../core/tools/dotnet-run.md
+      - name: dotnet sln
+        href: ../core/tools/dotnet-sln.md
+      - name: dotnet store
+        href: ../core/tools/dotnet-store.md
+      - name: dotnet test
+        href: ../core/tools/dotnet-test.md
+      - name: dotnet tool
         items:
-        - name: Manage tools
-          href: ../core/tools/global-tools.md
-        - name: Troubleshoot tools
-          href: ../core/tools/troubleshoot-usage-issues.md
-        - name: Create tools for the CLI
-          items:
-          - name: 1 - Create a tool
-            displayName: tools, tutorials, cli
-            href: ../core/tools/global-tools-how-to-create.md
-          - name: 2 - Use a global tool
-            displayName: tools, tutorials, cli
-            href: ../core/tools/global-tools-how-to-use.md
-          - name: 3 - Use a local tool
-            href: ../core/tools/local-tools-how-to-use.md
-            displayName: tools, tutorials, cli
-      - name: global.json overview
-        href: ../core/tools/global-json.md
-      - name: Telemetry
-        href: ../core/tools/telemetry.md
-      - name: Elevated access
-        href: ../core/tools/elevated-access.md
-      - name: Enable Tab completion
-        href: ../core/tools/enable-tab-autocomplete.md
+        - name: dotnet tool install
+          href: ../core/tools/dotnet-tool-install.md
+        - name: dotnet tool list
+          href: ../core/tools/dotnet-tool-list.md
+        - name: dotnet tool restore
+          href: ../core/tools/dotnet-tool-restore.md
+        - name: dotnet tool run
+          href: ../core/tools/dotnet-tool-run.md
+        - name: dotnet tool uninstall
+          href: ../core/tools/dotnet-tool-uninstall.md
+        - name: dotnet tool update
+          href: ../core/tools/dotnet-tool-update.md
+      - name: dotnet vstest
+        href: ../core/tools/dotnet-vstest.md
+      - name: dotnet-install scripts
+        href: ../core/tools/dotnet-install-script.md
+      - name: Project reference commands
+        items:
+        - name: dotnet add reference
+          href: ../core/tools/dotnet-add-reference.md
+        - name: dotnet list reference
+          href: ../core/tools/dotnet-list-reference.md
+        - name: dotnet remove reference
+          href: ../core/tools/dotnet-remove-reference.md
+      - name: Project package commands
+        items:
+        - name: dotnet add package
+          href: ../core/tools/dotnet-add-package.md
+        - name: dotnet list package
+          href: ../core/tools/dotnet-list-package.md
+        - name: dotnet remove package
+          href: ../core/tools/dotnet-remove-package.md
+    - name: Global and local tools
+      items:
+      - name: Manage tools
+        href: ../core/tools/global-tools.md
+      - name: Troubleshoot tools
+        href: ../core/tools/troubleshoot-usage-issues.md
+      - name: Create tools for the CLI
+        items:
+        - name: 1 - Create a tool
+          displayName: tools, tutorials, cli
+          href: ../core/tools/global-tools-how-to-create.md
+        - name: 2 - Use a global tool
+          displayName: tools, tutorials, cli
+          href: ../core/tools/global-tools-how-to-use.md
+        - name: 3 - Use a local tool
+          href: ../core/tools/local-tools-how-to-use.md
+          displayName: tools, tutorials, cli
+    - name: global.json overview
+      href: ../core/tools/global-json.md
+    - name: Telemetry
+      href: ../core/tools/telemetry.md
+    - name: Elevated access
+      href: ../core/tools/elevated-access.md
+    - name: Enable Tab completion
+      href: ../core/tools/enable-tab-autocomplete.md
     - name: Continuous integration with the CLI
       href: ../core/tools/using-ci-with-cli.md
     - name: Develop libraries with the CLI
@@ -288,147 +283,6 @@ items:
       - name: 3 - Create a template pack
         href: ../core/tutorials/cli-templates-create-template-pack.md
         displayName: tutorials, cli
-    - name: .NET Core additional tools
-      items:
-      - name: Overview
-        href: ../core/additional-tools/index.md
-      - name: .NET Core Uninstall Tool
-        href: ../core/additional-tools/uninstall-tool.md
-      - name: WCF Web Service Reference Provider
-        href: ../core/additional-tools/wcf-web-service-reference-guide.md
-      - name: dotnet-svcutil
-        href: ../core/additional-tools/dotnet-svcutil-guide.md
-      - name: dotnet-svcutil.xmlserializer
-        href: ../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
-      - name: XML Serializer Generator
-        href: ../core/additional-tools/xml-serializer-generator.md
-    - name: Diagnostic tools
-      items:
-      - name: Overview
-        href: ../core/diagnostics/index.md
-      - name: Managed debuggers
-        href: ../core/diagnostics/managed-debuggers.md
-      - name: EventCounters
-        href: ../core/diagnostics/event-counters.md
-      - name: Logging and tracing
-        href: ../core/diagnostics/logging-tracing.md
-      - name: Collect diagnostics in containers
-        href: ../core/diagnostics/diagnostics-in-containers.md        
-      - name: .NET Core CLI global tools
-        items:
-        - name: dotnet-counters
-          href: ../core/diagnostics/dotnet-counters.md
-        - name: dotnet-dump
-          href: ../core/diagnostics/dotnet-dump.md
-        - name: dotnet-gcdump
-          href: ../core/diagnostics/dotnet-gcdump.md
-        - name: dotnet-trace
-          href: ../core/diagnostics/dotnet-trace.md
-      - name: .NET Core diagnostics tutorials
-        items:
-        - name: Get perf metrics with EventCounters
-          href: ../core/diagnostics/event-counter-perf.md
-        - name: Debug a memory leak
-          href: ../core/diagnostics/debug-memory-leak.md
-        - name: Debug high CPU usage
-          href: ../core/diagnostics/debug-highcpu.md
-        - name: Debug deadlock
-          href: ../core/diagnostics/debug-deadlock.md
-    - name: Code analysis
-      items:
-      - name: Overview
-        href: productivity/code-analysis.md
-        displayName: code analysis, analyzers
-      - name: Configure rules
-        href: productivity/configure-code-analysis-rules.md
-      - name: API analyzer
-        href: ../standard/analyzers/api-analyzer.md
-      - name: Portability analyzer
-        href: ../standard/analyzers/portability-analyzer.md
-  - name: Execution model
-    items:
-    - name: Common Language Runtime (CLR)
-      href: ../standard/clr.md
-    - name: Managed execution process
-      href: ../standard/managed-execution-process.md
-    - name: Assemblies in .NET
-      href: ../standard/assembly/
-    - name: Metadata and self-describing components
-      href: ../standard/metadata-and-self-describing-components.md
-    - name: Dependency loading
-      items:
-      - name: Dependency loading
-        href: ../core/dependency-loading/overview.md
-      - name: Understand AssemblyLoadContext
-        href: ../core/dependency-loading/understanding-assemblyloadcontext.md
-      - name: Dependency loading details
-        items:
-        - name: Default dependency probing
-          href: ../core/dependency-loading/default-probing.md
-        - name: Load managed assemblies
-          href: ../core/dependency-loading/loading-managed.md
-        - name: Load satellite assemblies
-          href: ../core/dependency-loading/loading-resources.md
-        - name: Load unmanaged libraries
-          href: ../core/dependency-loading/loading-unmanaged.md
-      - name: Tutorials
-        items:
-        - name: Create a .NET Core application with plugins
-          href: ../core/tutorials/creating-app-with-plugin-support.md
-        - name: How to use and debug assembly unloadability in .NET Core
-          href: ../core/../standard/assembly/unloadability.md
-    - name: Versioning
-      items:
-      - name: Overview
-        href: ../core/versions/index.md
-      - name: .NET Core version selection
-        href: ../core/versions/selection.md
-    - name: Run-time configuration
-      items:
-      - name: Settings
-        href: ../core/run-time-config/index.md
-      - name: Compilation settings
-        href: ../core/run-time-config/compilation.md
-      - name: Debugging and profiling settings
-        href: ../core/run-time-config/debugging-profiling.md
-      - name: Garbage collector settings
-        href: ../core/run-time-config/garbage-collector.md
-      - name: Globalization settings
-        href: ../core/run-time-config/globalization.md
-      - name: Networking settings
-        href: ../core/run-time-config/networking.md
-      - name: Threading settings
-        href: ../core/run-time-config/threading.md
-  - name: Deployment models
-    items:
-    - name: Overview
-      href: ../core/deploying/index.md
-    - name: Deploy apps with Visual Studio
-      href: ../core/deploying/deploy-with-vs.md
-    - name: Publish apps with the CLI
-      href: ../core/deploying/deploy-with-cli.md
-    - name: Create a NuGet package with the CLI
-      href: ../core/deploying/creating-nuget-packages.md
-    - name: Self-contained deployment runtime roll forward
-      href: ../core/deploying/runtime-patch-selection.md
-    - name: Single file deployment and executable
-      href: ../core/deploying/single-file.md
-    - name: Trim self-contained deployments and executables
-      href: ../core/deploying/trim-self-contained.md
-    - name: Runtime package store
-      href: ../core/deploying/runtime-store.md
-    - name: Runtime Identifier (RID) catalog
-      href: ../core/rid-catalog.md
-    - name: Resource manifest names
-      href: ../core/resources/manifest-file-names.md
-    - name: Docker
-      items:
-      - name: Introduction to .NET and Docker
-        href: ../core/docker/introduction.md
-      - name: Containerize a .NET Core app
-        href: ../core/docker/build-container.md
-      - name: Container tools in Visual Studio
-        href: /visualstudio/containers/overview
   - name: MSBuild and project files
     items:
     - name: Project SDKs
@@ -449,6 +303,153 @@ items:
       href: ../core/tools/csproj.md
     - name: Dependency management
       href: ../core/tools/dependencies.md
+  - name: .NET Core additional tools
+    items:
+    - name: Overview
+      href: ../core/additional-tools/index.md
+    - name: .NET Core Uninstall Tool
+      href: ../core/additional-tools/uninstall-tool.md
+    - name: WCF Web Service Reference Provider
+      href: ../core/additional-tools/wcf-web-service-reference-guide.md
+    - name: dotnet-svcutil
+      href: ../core/additional-tools/dotnet-svcutil-guide.md
+    - name: dotnet-svcutil.xmlserializer
+      href: ../core/additional-tools/dotnet-svcutil.xmlserializer-guide.md
+    - name: XML Serializer Generator
+      href: ../core/additional-tools/xml-serializer-generator.md
+  - name: Diagnostic tools
+    items:
+    - name: Overview
+      href: ../core/diagnostics/index.md
+    - name: Managed debuggers
+      href: ../core/diagnostics/managed-debuggers.md
+    - name: Debug Linux dumps
+      href: ../core/diagnostics/debug-linux-dumps.md        
+    - name: EventCounters
+      href: ../core/diagnostics/event-counters.md
+    - name: Logging and tracing
+      href: ../core/diagnostics/logging-tracing.md
+    - name: Collect diagnostics in containers
+      href: ../core/diagnostics/diagnostics-in-containers.md          
+    - name: .NET Core CLI global tools
+      items:
+      - name: dotnet-counters
+        href: ../core/diagnostics/dotnet-counters.md
+      - name: dotnet-dump
+        href: ../core/diagnostics/dotnet-dump.md
+      - name: dotnet-gcdump
+        href: ../core/diagnostics/dotnet-gcdump.md
+      - name: dotnet-trace
+        href: ../core/diagnostics/dotnet-trace.md
+      - name: dotnet-symbol
+        href: ../core/diagnostics/dotnet-symbol.md
+      - name: dotnet-sos
+        href: ../core/diagnostics/dotnet-sos.md                    
+    - name: .NET Core diagnostics tutorials
+      items:
+      - name: Get perf metrics with EventCounters
+        href: ../core/diagnostics/event-counter-perf.md
+      - name: Debug a memory leak
+        href: ../core/diagnostics/debug-memory-leak.md
+      - name: Debug high CPU usage
+        href: ../core/diagnostics/debug-highcpu.md
+      - name: Debug deadlock
+        href: ../core/diagnostics/debug-deadlock.md
+  - name: Code analysis
+    items:
+    - name: Overview
+      href: productivity/code-analysis.md
+      displayName: code analysis, analyzers
+    - name: Configure rules
+      href: productivity/configure-code-analysis-rules.md
+    - name: API analyzer
+      href: ../standard/analyzers/api-analyzer.md
+    - name: Portability analyzer
+      href: ../standard/analyzers/portability-analyzer.md
+- name: Execution model
+  items:
+  - name: Common Language Runtime (CLR)
+    href: ../standard/clr.md
+  - name: Managed execution process
+    href: ../standard/managed-execution-process.md
+  - name: Assemblies in .NET
+    href: ../standard/assembly/
+  - name: Metadata and self-describing components
+    href: ../standard/metadata-and-self-describing-components.md
+  - name: Dependency loading
+    items:
+    - name: Dependency loading
+      href: ../core/dependency-loading/overview.md
+    - name: Understand AssemblyLoadContext
+      href: ../core/dependency-loading/understanding-assemblyloadcontext.md
+    - name: Dependency loading details
+      items:
+      - name: Default dependency probing
+        href: ../core/dependency-loading/default-probing.md
+      - name: Load managed assemblies
+        href: ../core/dependency-loading/loading-managed.md
+      - name: Load satellite assemblies
+        href: ../core/dependency-loading/loading-resources.md
+      - name: Load unmanaged libraries
+        href: ../core/dependency-loading/loading-unmanaged.md
+    - name: Tutorials
+      items:
+      - name: Create a .NET Core application with plugins
+        href: ../core/tutorials/creating-app-with-plugin-support.md
+      - name: How to use and debug assembly unloadability in .NET Core
+        href: ../core/../standard/assembly/unloadability.md
+  - name: Versioning
+    items:
+    - name: Overview
+      href: ../core/versions/index.md
+    - name: .NET Core version selection
+      href: ../core/versions/selection.md
+  - name: Run-time configuration
+    items:
+    - name: Settings
+      href: ../core/run-time-config/index.md
+    - name: Compilation settings
+      href: ../core/run-time-config/compilation.md
+    - name: Debugging and profiling settings
+      href: ../core/run-time-config/debugging-profiling.md
+    - name: Garbage collector settings
+      href: ../core/run-time-config/garbage-collector.md
+    - name: Globalization settings
+      href: ../core/run-time-config/globalization.md
+    - name: Networking settings
+      href: ../core/run-time-config/networking.md
+    - name: Threading settings
+      href: ../core/run-time-config/threading.md
+- name: Deployment models
+  items:
+  - name: Overview
+    href: ../core/deploying/index.md
+  - name: Deploy apps with Visual Studio
+    href: ../core/deploying/deploy-with-vs.md
+  - name: Publish apps with the CLI
+    href: ../core/deploying/deploy-with-cli.md
+  - name: Create a NuGet package with the CLI
+    href: ../core/deploying/creating-nuget-packages.md
+  - name: Self-contained deployment runtime roll forward
+    href: ../core/deploying/runtime-patch-selection.md
+  - name: Single file deployment and executable
+    href: ../core/deploying/single-file.md
+  - name: Trim self-contained deployments and executables
+    href: ../core/deploying/trim-self-contained.md
+  - name: Runtime package store
+    href: ../core/deploying/runtime-store.md
+  - name: Runtime Identifier (RID) catalog
+    href: ../core/rid-catalog.md
+  - name: Resource manifest names
+    href: ../core/resources/manifest-file-names.md
+  - name: Docker
+    items:
+    - name: Introduction to .NET and Docker
+      href: ../core/docker/introduction.md
+    - name: Containerize a .NET Core app
+      href: ../core/docker/build-container.md
+    - name: Container tools in Visual Studio
+      href: /visualstudio/containers/overview
 - name: Fundamental coding components
   items:
   - name: Base types overview

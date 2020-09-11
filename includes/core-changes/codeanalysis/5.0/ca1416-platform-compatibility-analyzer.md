@@ -36,37 +36,29 @@ In projects that target platforms for which APIs that they use aren't available,
 
 #### Recommended action
 
-Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this using preprocessor directives, or at run time by using platform guards:
+Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can check the current operating system using one of the `Is<Platform>` methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class, for example, `System.OperatingSystem.IsWindows()`, before calling a platform-specific API.
 
-- Add a `#if` [preprocessor directive](../../../../docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) around platform-specific API calls:
+You can use one of the `Is<Platform>` methods in the condition of an `if` statement:
 
-  ```csharp
-  #if NET50_WINDOWS
-      Console.Beep(261, 1000);
-  #endif
-  ```
+```csharp
+public void PlayCMajor()
+{
+    if (OperatingSystem.IsWindows())
+    {
+        Console.Beep(261, 1000);
+    }
+}
+```
 
-- Check the current operating system using one of the `Is<Platform>` methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class, for example, `System.OperatingSystem.IsWindows()`, before calling a platform-specific API. You can use one of these methods in the condition of an `if` statement:
+Or, if you don't want the overhead of an additional `if` statement at run time, call <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType> instead:
 
-  ```csharp
-  public void PlayCMajor()
-  {
-      if (OperatingSystem.IsWindows())
-      {
-          Console.Beep(261, 1000);
-      }
-  }
-  ```
-
-  ...or, if you don't want the overhead of an additional `if` statement at run time, call <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType> instead:
-
-  ```csharp
-  public void PlayCMajor()
-  {
-      Debug.Assert(OperatingSystem.IsWindows());
-      Console.Beep(261, 1000);
-  }
-  ```
+```csharp
+public void PlayCMajor()
+{
+    Debug.Assert(OperatingSystem.IsWindows());
+    Console.Beep(261, 1000);
+}
+```
 
 You can also mark your API as platform-specific, in which case the burden of checking requirements falls on your callers. You can mark specific methods or types or an entire assembly.
 

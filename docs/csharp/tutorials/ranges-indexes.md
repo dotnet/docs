@@ -1,7 +1,7 @@
 ---
 title: Explore ranges of data using indices and ranges
-description: This advanced tutorial teaches you to explore data using indices and ranges to examine slices of a sequential data set.
-ms.date: 03/11/2020
+description: This advanced tutorial teaches you to explore data using indices and ranges to examine a continuous range of a sequential data set.
+ms.date: 09/11/2020
 ms.technology: csharp-fundamentals
 ms.custom: mvc
 ---
@@ -54,7 +54,7 @@ The following code creates a subrange with the words "quick", "brown", and "fox"
 
 [!code-csharp[Range](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_Range)]
 
-The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included. Add the following code as well:
+The following code returns the range with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included. Add the following code as well:
 
 [!code-csharp[LastRange](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_LastRange)]
 
@@ -72,9 +72,12 @@ The following sample shows many of the reasons for those choices. Modify `x`, `y
 
 ## Type support for indices and ranges
 
-Indexes and ranges provide clear, concise syntax to access a single element or a subrange of elements in a sequence. An index expression typically returns the type of the elements of a sequence. A range expression typically returns the same sequence type as the source sequence.
+Indexes and ranges provide clear, concise syntax to access a single element or a range of elements in a sequence. An index expression typically returns the type of the elements of a sequence. A range expression typically returns the same sequence type as the source sequence.
 
 Any type that provides an [indexer](../programming-guide/indexers/index.md) with an <xref:System.Index> or <xref:System.Range> parameter explicitly supports indices or ranges respectively. An indexer that takes a single <xref:System.Range> parameter may return a different sequence type, such as <xref:System.Span%601?displayProperty=nameWithType>.
+
+> [!IMPORTANT]
+> The range operator often allocates a copy to store the range of elements returned. This causes extra allocations and copies, impacting performance.
 
 A type is **countable** if it has a property named `Length` or `Count` with an accessible getter and a return type of `int`. A countable type that doesn't explicitly support indices or ranges may provide an implicit support for them. For more information, see the [Implicit Index support](~/_csharplang/proposals/csharp-8.0/ranges.md#implicit-index-support) and [Implicit Range support](~/_csharplang/proposals/csharp-8.0/ranges.md#implicit-range-support) sections of the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md). Ranges using implicit range support return the same sequence type as the source sequence.
 
@@ -84,8 +87,10 @@ For example, the following .NET types support both indices and ranges: <xref:Sys
 
 [!code-csharp[JaggedArrays](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_JaggedArrays)]
 
+In all cases, the range operator for <xref:System.Array> allocates an array to store the elements returned.
+
 ## Scenarios for indices and ranges
 
-You'll often use ranges and indices when you want to analyze a subrange of a larger sequence. The new syntax is clearer in reading exactly what subrange is involved. The local function `MovingAverage` takes a <xref:System.Range> as its argument. The method then enumerates just that range when calculating the min, max, and average. Try the following code in your project:
+You'll often use ranges and indices when you want to analyze a portion of a larger sequence. The new syntax is clearer in reading exactly what portion of the sequence is involved. The local function `MovingAverage` takes a <xref:System.Range> as its argument. The method then enumerates just that range when calculating the min, max, and average. Try the following code in your project:
 
 [!code-csharp[MovingAverages](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]

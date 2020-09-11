@@ -31,3 +31,11 @@ MSBuild
 #### Affected APIs
 
 N/A
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

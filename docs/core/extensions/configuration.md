@@ -52,8 +52,6 @@ Configuration providers that are added later override previous key settings. For
 
 ## Configure worker service apps
 
-
-
 ## Configuration providers
 
 The following table shows the configuration providers available to .NET Core apps.

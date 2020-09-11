@@ -52,6 +52,7 @@ There are several different dashboard technologies that may be used to surface t
 These charts can then be embedded in the Azure portal proper through use of the dashboard feature. For users with more exacting requirements, such as being able to drill down into several tiers of data, Azure Monitor data is available to [Power BI](https://powerbi.microsoft.com/). Power BI is an industry-leading, enterprise class, business intelligence tool that can aggregate data from many different data sources.
 
 ![An example Power BI dashboard](./media/powerbidashboard.png)
+
 **Figure 7-15**. An example Power BI dashboard.
 
 ## Alerts

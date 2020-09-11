@@ -27,6 +27,9 @@ If rule violations are found by an analyzer, they're reported as a suggestion, w
 
 _Code quality analysis ("CA") rules_ inspect your C# or Visual Basic code for security, performance, design and other issues. Analysis is enabled, by default, for projects that target .NET 5.0 or later. You can enable code analysis on projects that target earlier .NET versions by setting the [EnableNETAnalyzers](../../core/project-sdk/msbuild-props.md#enablenetanalyzers) property to `true`. You can also disable code analysis for your project by setting `EnableNETAnalyzers` to `false`.
 
+> [!TIP]
+> In Visual Studio, you can enable or disable code analysis using the Project Properties window. To access the Project Properties window, right-click on a project within Solution Explorer and select **Properties**. Next, select the **Code Analysis** tab, and then either select or clear the checkbox to **Enable .NET analyzers**.
+
 ### Enabled rules
 
 The following rules are enabled, by default, in .NET 5.0 Preview 8.
@@ -104,8 +107,8 @@ Steps to enable code style analysis on build:
 
    ```ini
    [*.{cs,vb}]
-   # IDE0005: Using directive is unnecessary (escalated to a build warning)
-   dotnet_diagnostic.IDE0005.severity = warning
+   # IDE0040: Accessibility modifiers required (escalated to a build warning)
+   dotnet_diagnostic.IDE0040.severity = warning
    ```
 
    Alternatively, you can [configure the entire "Style" category](configure-code-analysis-rules.md#configure-multiple-rules) to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
@@ -116,8 +119,8 @@ Steps to enable code style analysis on build:
    # Default severity for analyzer diagnostics with category 'Style' (escalated to build warnings)
    dotnet_analyzer_diagnostic.category-Style.severity = warning
 
-   # IDE0005: Using directive is unnecessary (disabled on build)
-   dotnet_diagnostic.IDE0005.severity = silent
+   # IDE0040: Accessibility modifiers required (disabled on build)
+   dotnet_diagnostic.IDE0040.severity = silent
    ```
 
 ## See also

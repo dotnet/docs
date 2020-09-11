@@ -25,7 +25,7 @@ Once the data is gathered, it can be manipulated, summarized, and plotted into c
 
 No modern application would be complete without some artificial intelligence or machine learning. To this end, data [can be passed](https://www.youtube.com/watch?v=Cuza-I1g9tw) to the various machine learning tools in Azure to allow you to extract trends and information that would otherwise be hidden.
 
-Application Insights provides a powerful (SQL-Like) query language called *Kusto* that can find records, summarize them, and even plot charts. For example, the following query will locate all records for the month of November 2007, group them by state, and plot the top 10 as a pie chart.
+Application Insights provides a powerful (SQL-like) query language called *Kusto* that can query records, summarize them, and even plot charts. For example, the following query will locate all records for the month of November 2007, group them by state, and plot the top 10 as a pie chart.
 
 ```kusto
 StormEvents

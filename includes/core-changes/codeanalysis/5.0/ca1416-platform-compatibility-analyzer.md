@@ -36,7 +36,7 @@ In projects that target platforms for which APIs that they use aren't available,
 
 #### Recommended action
 
-Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this at JIT-compile time using preprocessor directives, or at run time by using platform guards:
+Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this using preprocessor directives, or at run time by using platform guards:
 
 - Add a `#if` [preprocessor directive](../../../../docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) around platform-specific API calls:
 
@@ -58,7 +58,7 @@ Ensure that platform-specific APIs are only called when the code is running on a
   }
   ```
 
-  ...or pass its result to <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>:
+  ...or, if you don't want the overhead of an additional `if` statement at run time, call <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType> instead:
 
   ```csharp
   public void PlayCMajor()
@@ -67,8 +67,6 @@ Ensure that platform-specific APIs are only called when the code is running on a
       Console.Beep(261, 1000);
   }
   ```
-
-  Use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType> when you want the checks to be trimmed out of release builds.
 
 You can also mark your API as platform-specific, in which case the burden of checking requirements falls on your callers. You can mark specific methods or types or an entire assembly.
 

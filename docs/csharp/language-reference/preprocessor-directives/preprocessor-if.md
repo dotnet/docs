@@ -34,9 +34,12 @@ A symbol that you define with `-define` or with `#define` doesn't conflict with 
 
 The scope of a symbol created with `#define` is the file in which it was defined.
 
-The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET version.
+The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET implementation or version.
 
 [!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+
+> [!NOTE]
+> For traditional .NET Framework projects, you have to manually configure the conditional compilation symbols for the different target frameworks in Visual Studio via the project's properties pages.
 
 Other predefined symbols include the DEBUG and TRACE constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
 

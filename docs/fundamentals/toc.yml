@@ -283,6 +283,26 @@ items:
     - name: 3 - Create a template pack
       href: ../core/tutorials/cli-templates-create-template-pack.md
       displayName: tutorials, cli
+  - name: MSBuild and project files
+    items:
+    - name: Project SDKs
+      items:
+      - name: Overview
+        href: ../core/project-sdk/overview.md
+      - name: Reference
+        items:
+        - name: Microsoft.NET.Sdk
+          href: ../core/project-sdk/msbuild-props.md
+        - name: Microsoft.NET.Sdk.Web
+          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+        - name: Microsoft.NET.Sdk.Razor
+          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Target frameworks
+      href: ../standard/frameworks.md
+    - name: Additions to the csproj format
+      href: ../core/tools/csproj.md
+    - name: Dependency management
+      href: ../core/tools/dependencies.md
   - name: .NET Core additional tools
     items:
     - name: Overview
@@ -333,26 +353,6 @@ items:
         href: ../core/diagnostics/debug-highcpu.md
       - name: Debug deadlock
         href: ../core/diagnostics/debug-deadlock.md
-  - name: MSBuild and project files
-    items:
-    - name: Project SDKs
-      items:
-      - name: Overview
-        href: ../core/project-sdk/overview.md
-      - name: Reference
-        items:
-        - name: Microsoft.NET.Sdk
-          href: ../core/project-sdk/msbuild-props.md
-        - name: Microsoft.NET.Sdk.Web
-          href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
-        - name: Microsoft.NET.Sdk.Razor
-          href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
-    - name: Target frameworks
-      href: ../standard/frameworks.md
-    - name: Additions to the csproj format
-      href: ../core/tools/csproj.md
-    - name: Dependency management
-      href: ../core/tools/dependencies.md
   - name: Code analysis
     items:
     - name: Overview

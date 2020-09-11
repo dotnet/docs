@@ -36,7 +36,7 @@ In projects that target platforms for which APIs that they use aren't available,
 
 #### Recommended action
 
-Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this at build time using preprocessor directives, or at run time by using the platform guards in the <xref:System.OperatingSystem?displayProperty=nameWithType> class:
+Ensure that platform-specific APIs are only called when the code is running on an appropriate platform. You can achieve this at JIT-compile time using preprocessor directives, or at run time by using platform guards:
 
 - Add a `#if` [preprocessor directive](../../../../docs/csharp/language-reference/preprocessor-directives/preprocessor-if.md) around platform-specific API calls:
 
@@ -46,7 +46,7 @@ Ensure that platform-specific APIs are only called when the code is running on a
   #endif
   ```
 
-- Check the current operating system using one of the <xref:System.OperatingSystem?displayProperty=nameWithType> platform-checking methods, for example, `System.OperatingSystem.IsWindows()`, before calling a platform-specific API. You can use one of these methods in the condition of an `if` statement:
+- Check the current operating system using one of the `Is<Platform>` methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class, for example, `System.OperatingSystem.IsWindows()`, before calling a platform-specific API. You can use one of these methods in the condition of an `if` statement:
 
   ```csharp
   public void PlayCMajor()
@@ -74,7 +74,7 @@ You can also mark your API as platform-specific, in which case the burden of che
 
 ```csharp
 [SupportedOSPlatform("windows")]
-public void PlayCMajor ()
+public void PlayCMajor()
 {
     Console.Beep(261, 1000);
 }
@@ -85,7 +85,7 @@ If you don't want to fix all your call sites, you can choose one of the followin
 - To suppress rule CA1416, you can do so using `#pragma` or the [-nowarn](../../../../docs/csharp/language-reference/compiler-options/nowarn-compiler-option.md) compiler flag, or by [setting the rule's severity](../../../../docs/fundamentals/productivity/configure-code-analysis-rules.md#suppress-violations) to `none` in an .editorconfig file.
 
   ```csharp
-  public void PlayCMajor ()
+  public void PlayCMajor()
   {
   #pragma warning disable CA1416
       Console.Beep(261, 1000);

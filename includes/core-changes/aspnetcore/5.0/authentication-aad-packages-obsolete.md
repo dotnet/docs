@@ -4,6 +4,8 @@ In ASP.NET Core 2.1, integration with Azure Active Directory (Azure AD) and Azur
 
 In ASP.NET Core 5.0 and later, integration with Azure AD and Azure AD B2C authentication is provided by the [Microsoft.Identity.Web](https://www.nuget.org/packages/Microsoft.Identity.Web) package. This package is based on the Microsoft Identity Platform, which is formerly known as the Azure AD v2.0 endpoint. Consequently, the old APIs in the `Microsoft.AspNetCore.Authentication.AzureAD.UI` and `Microsoft.AspNetCore.Authentication.AzureADB2C.UI` packages were deprecated.
 
+For discussion, see GitHub issue [dotnet/aspnetcore#25807](https://github.com/dotnet/aspnetcore/issues/25807).
+
 #### Version introduced
 
 5.0 Preview 8

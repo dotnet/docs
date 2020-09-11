@@ -7,7 +7,16 @@ ms.date: 02/10/2020
 
 The following breaking changes are documented on this page:
 
-- [Resource manifest file name change](#resource-manifest-file-name-change)
+| Breaking change | Version introduced |
+| - | - |
+| [PublishDepsFilePath behavior change](#publishdepsfilepath-behavior-change) | 5.0 |
+| [Resource manifest file name change](#resource-manifest-file-name-change) | 3.0 |
+
+## .NET 5.0
+
+[!INCLUDE [publishdepsfilepath-behavior-change](../../../includes/core-changes/msbuild/5.0/publishdepsfilepath-behavior-change.md)]
+
+***
 
 ## .NET Core 3.0
 

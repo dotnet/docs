@@ -94,6 +94,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [SPAs: SpaServices and NodeServices console logger fallback default change](#spas-spaservices-and-nodeservices-no-longer-fall-back-to-console-logger)
 - [SPAs: SpaServices and NodeServices marked obsolete](#spas-spaservices-and-nodeservices-marked-obsolete)
 - [Static files: CSV content type changed to standards-compliant](#static-files-csv-content-type-changed-to-standards-compliant)
+- [System.Security.Cryptography APIs not supported on Blazor WebAssembly](#systemsecuritycryptography-apis-not-supported-on-blazor-webassembly)
 - [Target framework: .NET Framework not supported](#target-framework-net-framework-support-dropped)
 
 ## ASP.NET Core 5.0
@@ -190,6 +191,10 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 ***
 
 [!INCLUDE[SignalR: UseSignalR and UseConnections methods removed](~/includes/core-changes/aspnetcore/5.0/signalr-usesignalr-useconnections-removed.md)]
+
+***
+
+[!INCLUDE [cryptography-apis-not-supported-on-blazor-webassembly](../../../includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
 
 ***
 

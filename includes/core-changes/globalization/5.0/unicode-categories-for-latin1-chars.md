@@ -9,7 +9,7 @@ In previous .NET versions, <xref:System.Char> methods used a fixed list of Unico
 The following table shows the characters whose Unicode categories have changed in .NET 5.0:
 
 | Character    | Unicode category<br>in previous .NET versions | Unicode category<br>in .NET 5.0 and later versions |
-|--------------|-----------------------------------------------|----------------------------------------------------|
+|:------------:|:---------------------------------------------:|:--------------------------------------------------:|
 | § (\u00a7)   | `OtherSymbol`                                 | `OtherPunctuation`                                 |
 | ª (\u00aa)   | `LowercaseLetter`                             | `OtherLetter`                                      |
 | SHY (\u00ad) | `DashPunctuation`                             | `Format`                                           |
@@ -41,7 +41,7 @@ This change was made so that the categories returned by the <xref:System.Char> t
 - <xref:System.Char.IsSymbol%2A?displayProperty=fullName>
 - <xref:System.Char.IsLower%2A?displayProperty=fullName>
 
-Additionally, any class that depends on <xref:System.Char> to obtain the Unicode character category, for example, <xref:System.Text.RegularExpressions.Regex>, will be affected by this change.
+Additionally, any class that depends on <xref:System.Char> to obtain the Unicode character category, for example, <xref:System.Text.RegularExpressions.Regex>, is affected by this change.
 
 <!--
 

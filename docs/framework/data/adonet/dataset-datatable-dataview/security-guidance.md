@@ -451,11 +451,11 @@ using System.Data;
 using Newtonsoft.Json;
 
 public DataSet PerformDeserialization1(string json) {
-    return JsonConvert.DeserializeObect<DataSet>(data);
+    return JsonConvert.DeserializeObject<DataSet>(data);
 }
 
 public MyClass PerformDeserialization2(string json) {
-    return JsonConvert.DeserializeObect<MyClass>(data);
+    return JsonConvert.DeserializeObject<MyClass>(data);
 }
 
 public class MyClass

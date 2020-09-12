@@ -1,10 +1,10 @@
 ### System.Security.Cryptography APIs not supported on Blazor WebAssembly
 
-<xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> for projects that use the `Microsoft.NET.Sdk.BlazorWebAssembly` SDK.
+<xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> at run time on the `browser` platform.
 
 #### Change description
 
-In previous .NET versions, you can use the <xref:System.Security.Cryptography> APIs in the Blazor WebAssembly configuration. In .NET 5.0 and later versions, these APIs throw a <xref:System.PlatformNotSupportedException> when invoked from Blazor WebAssembly projects.
+In previous .NET versions, you can use the <xref:System.Security.Cryptography> APIs in the Blazor WebAssembly configuration. In .NET 5.0 and later versions, these APIs throw a <xref:System.PlatformNotSupportedException> when invoked from projects that use the `Microsoft.NET.Sdk.BlazorWebAssembly` SDK or that include `browser` as a supported platform in the project file.
 
 #### Reason for change
 
@@ -25,7 +25,18 @@ There are no good workarounds to suggest at this time.
 
 #### Affected APIs
 
-- <xref:System.Security.Cryptography?displayProperty=fullName>
+All <xref:System.Security.Cryptography?displayProperty=fullName> APIs except the following:
+
+- `System.Security.Cryptography.RandomNumberGenerator`
+- `System.Security.Cryptography.IncrementalHash`
+- `System.Security.Cryptography.SHA1`
+- `System.Security.Cryptography.SHA256`
+- `System.Security.Cryptography.SHA384`
+- `System.Security.Cryptography.SHA512`
+- `System.Security.Cryptography.SHA1Managed`
+- `System.Security.Cryptography.SHA256Managed`
+- `System.Security.Cryptography.SHA384Managed`
+- `System.Security.Cryptography.SHA512Managed`
 
 <!--
 

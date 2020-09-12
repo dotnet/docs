@@ -24,7 +24,7 @@ Feature flags also promote `trunk-based` development. It's a source-control bran
 
 At its core, a feature flag is a reference to a simple `decision object`. It returns a Boolean state of `on` or `off`. The flag typically wraps a block of code that encapsulates a feature capability. The state of the flag determines whether that code block executes for a given user. Figure 10-11 shows the implementation.
 
-```c#
+```csharp
 if (featureFlag) {
     // Run this code block if the featureFlag value is true
 } else {
@@ -44,7 +44,7 @@ Feature flags can be easily implemented in an [ASP.NET Core service](https://doc
 
 Once configured in your Startup class, you can add feature flag functionality at the controller, action, or middleware level. Figure 10-12 presents controller and action implementation:
 
-```c#
+```csharp
 [FeatureGate(MyFeatureFlags.FeatureA)]
 public class ProductController : Controller
 {
@@ -52,7 +52,7 @@ public class ProductController : Controller
 }
 ```
 
-```c#
+```csharp
 [FeatureGate(MyFeatureFlags.FeatureA)]
 public IActionResult UpdateProductStatus()
 {
@@ -66,7 +66,7 @@ If a feature flag is disabled, the user will receive a 404 (Not Found) status co
 
 Feature flags can also be injected directly into C# classes. Figure 10-13 shows feature flag injection:
 
-```c#
+```csharp
 public class ProductController : Controller
 {
     private readonly IFeatureManager _featureManager;

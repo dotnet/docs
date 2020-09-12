@@ -43,7 +43,7 @@ When loading XML into an existing `DataSet` or `DataTable` instance, the existin
 > [!NOTE]
 > Once you add columns to a `DataTable`, `ReadXml` will not read the schema from the XML, and if the schema does not match it will also not read in the records, so you will need to add all the columns yourself to use this method.
 
-```cs
+```csharp
 XmlReader xmlReader = GetXmlReader();
 
 // Assume the XML blob contains data for type MyCustomClass.
@@ -99,7 +99,7 @@ The following sample shows extending the allowed types list by adding the custom
 
 To retrieve the assembly qualified name of a type, use the [Type.AssemblyQualifiedName](/dotnet/api/system.type.assemblyqualifiedname) property, as demonstrated in the following code.
 
-```cs
+```csharp
 string assemblyQualifiedName = typeof(Fabrikam.CustomType).AssemblyQualifiedName;
 ```
 
@@ -130,7 +130,7 @@ If your app targets .NET Framework 2.0 or 3.5, you can still use the above _App.
 
 The list of allowed types can also be extended programmatically by using [AppDomain.SetData](/dotnet/api/system.appdomain.setdata) with the well-known key _System.Data.DataSetDefaultAllowedTypes_, as shown in the following code.
 
-```cs
+```csharp
 Type[] extraAllowedTypes = new Type[]
 {
     typeof(Fabrikam.CustomType),
@@ -258,7 +258,7 @@ For more information, see [".NET Core run-time configuration settings"](/dotnet/
 
 `AllowArbitraryDataSetTypeInstantiation` can also be set programmatically via [AppContext.SetSwitch](/dotnet/api/system.appcontext.setswitch) instead of using a configuration file, as shown in the following code:
 
-```cs
+```csharp
 // Warning: setting the following switch can introduce a security problem.
 AppContext.SetSwitch("Switch.System.Data.AllowArbitraryDataSetTypeInstantiation", true);
 ```
@@ -302,13 +302,13 @@ This document discusses safety considerations for the preceding scenarios.
 
 A `DataSet` instance can be populated from a `DataAdapter` by using [the `DataAdapter.Fill` method](/dotnet/api/system.data.common.dataadapter.fill), as shown in the following example.
 
-```cs
-// Assumes that connection is a valid SqlConnection object.  
+```csharp
+// Assumes that connection is a valid SqlConnection object.
 string queryString =
-  "SELECT CustomerID, CompanyName FROM dbo.Customers";  
-SqlDataAdapter adapter = new SqlDataAdapter(queryString, connection);  
-  
-DataSet customers = new DataSet();  
+  "SELECT CustomerID, CompanyName FROM dbo.Customers";
+SqlDataAdapter adapter = new SqlDataAdapter(queryString, connection);
+
+DataSet customers = new DataSet();
 adapter.Fill(customers, "Customers");
 ```
 
@@ -349,7 +349,7 @@ It is the consumer's sole responsibility to determine whether to utilize these A
 
 It is possible to accept a `DataSet` or a `DataTable` instance in an ASP.NET (SOAP) web service, as demonstrated in the following code:
 
-```cs
+```csharp
 using System.Data;
 using System.Web.Services;
 
@@ -366,7 +366,7 @@ public class MyService : WebService
 
 A variation on this is not to accept `DataSet` or `DataTable` directly as a parameter, but instead to accept it as part of the overall SOAP serialized object graph, as shown in the following code:
 
-```cs
+```csharp
 using System.Data;
 using System.Web.Services;
 
@@ -390,7 +390,7 @@ public class MyClass
 
 Or, using WCF instead of ASP.NET web services:
 
-```cs
+```csharp
 using System.Data;
 using System.ServiceModel;
 
@@ -417,7 +417,7 @@ In all of these cases, the threat model and security guarantees are the same as 
 
 Developers can use `XmlSerializer` to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
 
-```cs
+```csharp
 using System.Data;
 using System.IO;
 using System.Xml.Serialization;
@@ -446,7 +446,7 @@ In these cases, the threat model and security guarantees are the same as the [Da
 
 The popular third-party Newtonsoft library [JSON.NET](https://www.newtonsoft.com/json) can be used to deserialize `DataSet` and `DataTable` instances, as shown in the following code:
 
-```cs
+```csharp
 using System.Data;
 using Newtonsoft.Json;
 

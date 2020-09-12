@@ -285,7 +285,7 @@ By default, .NET assemblies can run in both a 32-bit and 64-bit version of the .
 
 The following code snippet shows an example of how to choose between the 32-bit and 64-bit definition at run time.
 
-```CSharp
+```csharp
 if (IntPtr.Size == 8)
 {
     // Use the STRRET_64 definition

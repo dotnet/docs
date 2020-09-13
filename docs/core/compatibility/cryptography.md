@@ -19,7 +19,7 @@ The following breaking changes are documented on this page:
 
 ## .NET 5.0
 
-[!INCLUDE [cryptography-apis-not-supported-on-blazor-webassembly](../../../includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
+[!INCLUDE[Cryptography APIs not supported on Blazor WebAssembly](~/includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
 
 ***
 

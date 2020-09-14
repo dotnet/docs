@@ -19,6 +19,7 @@ Select one of the following links for breaking changes in a specific version:
 The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented on this page:
 
 - [Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
+- [Authentication: AzureAD.UI and AzureADB2C.UI APIs and packages marked obsolete](#authentication-azureadui-and-azureadb2cui-apis-and-packages-marked-obsolete)
 - [Authentication: Google+ deprecation](#authentication-google-deprecated-and-replaced)
 - [Authentication: HttpContext.Authentication property removed](#authentication-httpcontextauthentication-property-removed)
 - [Authentication: Newtonsoft.Json types replaced](#authentication-newtonsoftjson-types-replaced)
@@ -98,6 +99,10 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [Target framework: .NET Framework not supported](#target-framework-net-framework-support-dropped)
 
 ## ASP.NET Core 5.0
+
+[!INCLUDE[Authentication: AzureAD.UI and AzureADB2C.UI APIs and packages marked obsolete](~/includes/core-changes/aspnetcore/5.0/authentication-aad-packages-obsolete.md)]
+
+***
 
 [!INCLUDE[Authorization: Resource in endpoint routing is HttpContext](~/includes/core-changes/aspnetcore/5.0/authorization-resource-in-endpoint-routing.md)]
 

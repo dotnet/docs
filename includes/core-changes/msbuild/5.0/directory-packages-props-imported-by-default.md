@@ -14,7 +14,7 @@ Starting in .NET 5.0, such a file *is* automatically imported if it exists in th
 
 #### Reason for change
 
-This change was made in order to support central package versioning for NuGet.
+This change was made in order to support [central package versioning](https://github.com/NuGet/Home/wiki/Centrally-managing-NuGet-package-versions) for NuGet.
 
 #### Recommended action
 

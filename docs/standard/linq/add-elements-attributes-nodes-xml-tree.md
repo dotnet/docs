@@ -12,7 +12,7 @@ ms.assetid: db911e4f-40aa-499a-9500-a9763bb6df56
 
 You can add content (elements, attributes, comments, processing instructions, text, and CDATA) to an XML tree.
 
-## Methods for Adding Content
+## Methods for adding content
 
 The following methods add child content to an <xref:System.Xml.Linq.XElement> or an <xref:System.Xml.Linq.XDocument>:
 
@@ -33,14 +33,14 @@ The following methods add content as sibling nodes of an <xref:System.Xml.Linq.X
 The following example creates two XML trees, and then modifies one of them.
 
 ```csharp
-XElement srcTree = new XElement("Root",
+var srcTree = new XElement("Root",
     new XElement("Element1", 1),
     new XElement("Element2", 2),
     new XElement("Element3", 3),
     new XElement("Element4", 4),
     new XElement("Element5", 5)
 );
-XElement xmlTree = new XElement("Root",
+var xmlTree = new XElement("Root",
     new XElement("Child1", 1),
     new XElement("Child2", 2),
     new XElement("Child3", 3),
@@ -60,7 +60,7 @@ Console.WriteLine(xmlTree);
 ```
 
 ```vb
-Dim srcTree As XElement = _
+Dim srcTree As XElement =
     <Root>
         <Element1>1</Element1>
         <Element2>2</Element2>
@@ -68,7 +68,7 @@ Dim srcTree As XElement = _
         <Element4>4</Element4>
         <Element5>5</Element5>
     </Root>
-Dim xmlTree As XElement = _
+Dim xmlTree As XElement =
     <Root>
         <Child1>1</Child1>
         <Child2>2</Child2>
@@ -80,7 +80,7 @@ Dim xmlTree As XElement = _
 xmlTree.Add(<NewChild>new content</NewChild>)
 xmlTree.Add( _
     From el In srcTree.Elements() _
-    Where CInt(el) > 3 _
+    Where CInt(el) > 3
     Select el)
 
 ' Even though Child9 doesn't exist in srcTree, the following statement

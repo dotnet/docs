@@ -30,10 +30,10 @@ This change was necessary to implement high-impact performance improvements in B
 
 #### Recommended action
 
-Most Blazor developers are unaffected by this change. The change is more likely to affect library/package authors, but only in rare cases. Specifically, if you're developing:
+Most Blazor developers are unaffected by this change. The change is more likely to affect library and package authors, but only in rare cases. Specifically, if you're developing:
 
-* An app and using ASP.NET Core 3.x or upgrading to 5.0 RC1 or later, you don't need to change your own code. However, if you depend on a library that needs to upgrade to account for this change, then you need to update to a newer version of that library.
-* A library and want to support only ASP.NET Core 5.0 RC1 or later, no action is needed. Just ensure that your project file declares the `<TargetFramework>` value of `net5.0`.
+* An app and using ASP.NET Core 3.x or upgrading to 5.0 RC1 or later, you don't need to change your own code. However, if you depend on a library that upgraded to account for this change, then you need to update to a newer version of that library.
+* A library and want to support only ASP.NET Core 5.0 RC1 or later, no action is needed. Just ensure that your project file declares a `<TargetFramework>` value of `net5.0` or a later version.
 * A library and want to support both ASP.NET Core 3.x *and* 5.0, determine whether your code reads any `RenderTreeFrame` members. For example, evaluating `someRenderTreeFrame.FrameType`.
   * Most libraries won't read `RenderTreeFrame` members, including libraries that contain `.razor` components. In this case, no action is needed.
   * However, if your library does that, you'll need to multi-target to support both `netstandard2.1` and `net5.0`. Apply the following changes in your project file:

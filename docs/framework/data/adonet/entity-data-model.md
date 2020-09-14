@@ -58,6 +58,6 @@ The Entity Data Model (EDM) is a set of concepts that describe the structure of 
   
 ## See also
 
-- [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
-- [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [ADO.NET Entity Data Model Tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
+- [.edmx File Overview](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [CSDL Specification](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

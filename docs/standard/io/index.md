@@ -40,7 +40,7 @@ You should always provide robust exception handling when calling filesystem meth
 
 In addition to using these classes, Visual Basic users can use the methods and properties provided by the <xref:Microsoft.VisualBasic.FileIO.FileSystem?displayProperty=nameWithType> class for file I/O.
 
-See [How to: Copy Directories](how-to-copy-directories.md), [How to: Create a Directory Listing](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100)), and [How to: Enumerate Directories and Files](how-to-enumerate-directories-and-files.md).
+See [How to: Copy Directories](how-to-copy-directories.md), [How to: Create a Directory Listing](/previous-versions/dotnet/netframework-4.0/5cf8zcfh(v=vs.100)), and [How to: Enumerate Directories and Files](how-to-enumerate-directories-and-files.md).
 
 ## Streams
 
@@ -122,7 +122,7 @@ See [How to: Compress and Extract Files](how-to-compress-and-extract-files.md).
 
 Isolated storage is a data storage mechanism that provides isolation and safety by defining standardized ways of associating code with saved data. The storage provides a virtual file system that is isolated by user, assembly, and (optionally) domain. Isolated storage is particularly useful when your application does not have permission to access user files. You can save settings or files for your application in a manner that is controlled by the computer's security policy.
 
-Isolated storage is not available for Windows 8.x Store apps; instead, use application data classes in the <xref:Windows.Storage?displayProperty=nameWithType> namespace. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917%28v=win.10%29).
+Isolated storage is not available for Windows 8.x Store apps; instead, use application data classes in the <xref:Windows.Storage?displayProperty=nameWithType> namespace. For more information, see [Application data](/previous-versions/windows/apps/hh464917(v=win.10)).
 
 The following classes are frequently used when implementing isolated storage:
 
@@ -142,7 +142,7 @@ Some important differences to note when using I/O operations in Windows 8.x Stor
 
 - Types specifically related to file operations, such as <xref:System.IO.File>, <xref:System.IO.FileInfo>, <xref:System.IO.Directory> and <xref:System.IO.DirectoryInfo>, are not included in the .NET for Windows 8.x Store apps. Instead, use the types in the <xref:Windows.Storage?displayProperty=nameWithType> namespace of the Windows Runtime, such as <xref:Windows.Storage.StorageFile> and <xref:Windows.Storage.StorageFolder>.
 
-- Isolated storage is not available; instead, use [application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)).
+- Isolated storage is not available; instead, use [application data](/previous-versions/windows/apps/hh464917(v=win.10)).
 
 - Use asynchronous methods, such as <xref:System.IO.Stream.ReadAsync%2A> and <xref:System.IO.Stream.WriteAsync%2A>, to prevent blocking the UI thread.
 
@@ -150,13 +150,13 @@ Some important differences to note when using I/O operations in Windows 8.x Stor
 
 You can convert between .NET Framework streams and Windows Runtime streams, if necessary. For more information, see [How to: Convert Between .NET Framework Streams and Windows Runtime Streams](how-to-convert-between-dotnet-streams-and-winrt-streams.md) or <xref:System.IO.WindowsRuntimeStreamExtensions>.
 
-For more information about I/O operations in a Windows 8.x Store app, see [Quickstart: Reading and writing files](https://docs.microsoft.com/previous-versions/windows/apps/hh758325(v=win.10)).
+For more information about I/O operations in a Windows 8.x Store app, see [Quickstart: Reading and writing files](/previous-versions/windows/apps/hh758325(v=win.10)).
 
 ## I/O and security
 
 When you use the classes in the <xref:System.IO?displayProperty=nameWithType> namespace, you must follow operating system security requirements such as access control lists (ACLs) to control access to files and directories. This requirement is in addition to any <xref:System.Security.Permissions.FileIOPermission> requirements. You can manage ACLs programmatically. For more information, see [How to: Add or Remove Access Control List Entries](how-to-add-or-remove-access-control-list-entries.md).
 
-Default security policies prevent Internet or intranet applications from accessing files on the user’s computer. Therefore, do not use the I/O classes that require a path to a physical file when writing code that will be downloaded over the Internet or intranet. Instead, use [isolated storage](isolated-storage.md) for traditional .NET Framework applications, or use [application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) for Windows 8.x Store apps.
+Default security policies prevent Internet or intranet applications from accessing files on the user’s computer. Therefore, do not use the I/O classes that require a path to a physical file when writing code that will be downloaded over the Internet or intranet. Instead, use [isolated storage](isolated-storage.md) for traditional .NET Framework applications, or use [application data](/previous-versions/windows/apps/hh464917(v=win.10)) for Windows 8.x Store apps.
 
 A security check is performed only when the stream is constructed. Therefore, do not open a stream and then pass it to less-trusted code or application domains.
 

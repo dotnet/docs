@@ -121,7 +121,7 @@ End Module
 
 ## See also
 
-- [Introducing the Office (2007) Open XML File Formats](https://docs.microsoft.com/previous-versions/office/developer/office-2007/aa338205(v=office.12))
-- [Overview of WordprocessingML](https://docs.microsoft.com/previous-versions/office/developer/office-2003/aa212812(v=office.11))
+- [Introducing the Office (2007) Open XML File Formats](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Overview of WordprocessingML](/previous-versions/office/developer/office-2003/aa212812(v=office.11))
 - [Anatomy of a WordProcessingML File](http://officeopenxml.com/anatomyofOOXML.php)
 - [Introduction to WordprocessingML](https://ericwhite.com/blog/introduction-to-wordprocessingml-series/)

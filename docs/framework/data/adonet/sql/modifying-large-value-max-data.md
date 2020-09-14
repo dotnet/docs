@@ -15,7 +15,7 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
  **SQL Server documentation**  
   
-1. [Using Large-Value Data Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
+1. [Using Large-Value Data Types](/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
   
 ## Large-Value Type Restrictions  
  The following restrictions apply to the `max` data types, which do not exist for smaller data types:  

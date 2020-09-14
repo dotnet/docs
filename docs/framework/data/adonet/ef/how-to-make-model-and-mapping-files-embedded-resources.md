@@ -35,4 +35,4 @@ The Entity Framework enables you to deploy model and mapping files as embedded r
 - [Modeling and Mapping](modeling-and-mapping.md)
 - [How to: Define the Connection String](how-to-define-the-connection-string.md)
 - [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md)
-- [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
+- [ADO.NET Entity Data Model Tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))

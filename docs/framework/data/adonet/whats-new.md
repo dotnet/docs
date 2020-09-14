@@ -42,15 +42,15 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 - SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Use Sparse Columns](/sql/relational-databases/tables/use-sparse-columns).
 
-- The assembly Microsoft.SqlServer.Types.dll, which contains the spatial data types, has been upgraded from version 10.0 to version 11.0. Applications that reference this assembly may fail. For more information, see [Breaking Changes to Database Engine Features](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/ms143179(v=sql.110)).
+- The assembly Microsoft.SqlServer.Types.dll, which contains the spatial data types, has been upgraded from version 10.0 to version 11.0. Applications that reference this assembly may fail. For more information, see [Breaking Changes to Database Engine Features](/previous-versions/sql/sql-server-2012/ms143179(v=sql.110)).
 
 ## ADO.NET Entity Framework
 
-The .NET Framework 4.5 adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://docs.microsoft.com/previous-versions/gg696190(v=vs.103)) and [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
+The .NET Framework 4.5 adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](/previous-versions/gg696190(v=vs.103)) and [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
 
 ## See also
 
 - [ADO.NET](index.md)
 - [ADO.NET Overview](ado-net-overview.md)
 - [SQL Server and ADO.NET](./sql/index.md)
-- [What's New in WCF Data Services 5.0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
+- [What's New in WCF Data Services 5.0](/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))

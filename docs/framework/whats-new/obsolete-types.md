@@ -652,7 +652,7 @@ The IEHost.dll and IEExec.exe assemblies have been removed from the .NET Framewo
 
 ### Assembly: Microsoft.VisualBasic.Compatibility.dll
 
-For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](https://docs.microsoft.com/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation).
+For information about migrating from Visual Basic 6, see [Visual Basic 6.0 Resource Center](/previous-versions/visualstudio/visual-basic-6/visual-basic-6.0-documentation).
 
 |Type|Message|
 |----------|-------------|

@@ -60,7 +60,7 @@ Starting with the .NET Framework 4.7, the `<System.Windows.Forms.ApplicationConf
 
 The `<System.Windows.Forms.ApplicationConfigurationSection>` element allows you to add one or more child `<add>` elements, each of which defines a specific configuration setting.
 
-For an overview of Windows Forms High DPI support, see [High DPI Support in Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md).
+For an overview of Windows Forms High DPI support, see [High DPI Support in Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms).
 
 ### DpiAwareness
 
@@ -92,7 +92,7 @@ The single default opt-in setting provided by setting `DpiAwareness` to `PerMoni
 
 Typically, you opt out of a particular feature because you've chosen to handle it programmatically.
 
-For more information on taking advantage of High DPI support in Windows Forms applications, see [High DPI Support in Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md).
+For more information on taking advantage of High DPI support in Windows Forms applications, see [High DPI Support in Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms).
 
 ### DisableDpiChangedMessageHandling
 
@@ -105,4 +105,4 @@ Single or multi-pass scaling influences the perceived responsiveness of the user
 ## See also
 
 - [Windows Forms Configuration Section](index.md)
-- [High DPI Support in Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md)
+- [High DPI Support in Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms)

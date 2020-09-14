@@ -43,7 +43,7 @@ To create an Azure Machine Learning workspace, the following are required:
     | Standard_NC12   | 12 | 112 | 680  | 2 | 24 | 48 | 2 |
     | Standard_NC24   | 24 | 224 | 1440 | 4 | 48 | 64 | 4 |
 
-    Visit the [NC-series Linux VM documentation](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) for more details on GPU optimized compute types.
+    Visit the [NC-series Linux VM documentation](/azure/virtual-machines/nc-series?bc=%252fazure%252fvirtual-machines%252flinux%252fbreadcrumb%252ftoc.json&toc=%252fazure%252fvirtual-machines%252flinux%252ftoc.json) for more details on GPU optimized compute types.
 - Compute priority
 
   - Low-priority: Suited for tasks with shorter execution times. May be impacted by interruptions and lack of availability. Usually costs less because it takes advantage of surplus capacity in Azure.

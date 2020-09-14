@@ -31,7 +31,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
 
 ## Deploy using Set Jar
 
-Alternatively, you can use [Set Jar](https://docs.microsoft.com/azure/databricks/jobs#--create-a-job) in your Databricks workspace to submit .NET for Apache Spark jobs to Databricks. *Set Jar* allows job submission to an existing active cluster.
+Alternatively, you can use [Set Jar](/azure/databricks/jobs#--create-a-job) in your Databricks workspace to submit .NET for Apache Spark jobs to Databricks. *Set Jar* allows job submission to an existing active cluster.
 
 ### One-time setup
 
@@ -52,7 +52,7 @@ Alternatively, you can use [Set Jar](https://docs.microsoft.com/azure/databricks
 
 1. Ensure you have published your app, and that your application code does not use `SparkSession.Stop()`.
 
-2. Use [Databricks CLI](https://docs.microsoft.com/azure/databricks/dev-tools/databricks-cli) to upload your application to your Databricks cluster. For example, use the following command to upload your published app to your cluster:
+2. Use [Databricks CLI](/azure/databricks/dev-tools/databricks-cli) to upload your application to your Databricks cluster. For example, use the following command to upload your published app to your cluster:
 
     ```console
     cd <path-to-your-app-publish-directory>
@@ -81,4 +81,4 @@ Alternatively, you can use [Set Jar](https://docs.microsoft.com/azure/databricks
 
 * [Get started with .NET for Apache Spark](../tutorials/get-started.md)
 * [Deploy a .NET for Apache Spark application to Databricks](../tutorials/databricks-deployment.md)
-* [Azure Databricks Documentation](https://docs.microsoft.com/azure/azure-databricks/)
+* [Azure Databricks Documentation](/azure/azure-databricks/)

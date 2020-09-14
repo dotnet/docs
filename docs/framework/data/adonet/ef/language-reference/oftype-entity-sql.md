@@ -54,7 +54,7 @@ OfType(executives, NamespaceName.Manager)
 |OFTYPE(Collection(RowType), RowType)|Throws|  
   
 ## Example  
- The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the OFTYPE operator to return a collection of OnsiteCourse objects from a collection of Course objects. The query is based on the [School Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)).  
+ The following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query uses the OFTYPE operator to return a collection of OnsiteCourse objects from a collection of Course objects. The query is based on the [School Model](/previous-versions/dotnet/netframework-4.0/bb896300(v=vs.100)).  
   
  [!code-sql[DP EntityServices Concepts#OFTYPE](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#oftype)]  
   

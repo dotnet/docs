@@ -48,7 +48,7 @@ Get started developing .NET Core applications by following these step-by-step tu
 | ![movie camera icon for video](./media/video-icon.png "Watch a video") | Watch the [how to install and use Visual Studio Code and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/) video on Channel 9. |
 | ![movie camera icon for video](./media/video-icon.png "Watch a video") | Watch the [.NET Core 101](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) videos on YouTube. |
 
-See the [.NET Core dependencies and requirements](install/dependencies.md?pivots=os-windows) article for a list of the supported Windows versions.
+See the [.NET Core dependencies and requirements](./install/windows.md?pivots=os-windows) article for a list of the supported Windows versions.
 
 # [Linux](#tab/linux)
 
@@ -60,7 +60,7 @@ Get started developing .NET Core applications by following these step-by-step tu
 |---|---|
 | ![movie camera icon for video](./media/video-icon.png "Watch a video") | Watch a video on [getting started with Visual Studio Code using C# and .NET Core on Ubuntu](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-Csharp-dotnet-Core-Ubuntu). |
 
-See the [.NET Core dependencies and requirements](install/dependencies.md?pivots=os-linux) article for a list of the supported Linux distros and versions.
+See the [.NET Core dependencies and requirements](./install/windows.md?pivots=os-linux) article for a list of the supported Linux distros and versions.
 
 # [macOS](#tab/macos)
 
@@ -74,6 +74,6 @@ Get started developing .NET Core applications by following these step-by-step tu
 |---|---|
 | ![movie camera icon for video](media/video-icon.png "Watch a video") | Watch a video on [getting started with Visual Studio Code using C# and .NET Core on macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-VSCode-NET-Core-Mac). |
 
-See the [.NET Core dependencies and requirements](install/dependencies.md?pivots=os-macos) article for a list of the supported OS X / macOS versions.
+See the [.NET Core dependencies and requirements](./install/windows.md?pivots=os-macos) article for a list of the supported OS X / macOS versions.
 
 ---

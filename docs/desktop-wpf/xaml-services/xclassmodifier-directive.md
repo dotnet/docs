@@ -30,7 +30,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 
 ## Dependencies
 
-[x:Class](xclass-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+[x:Class](xclass-directive.md) must also be provided on the same element, and that element must be the root element in a page. For more information, see [\[MS-XAML\] Section 4.3.1.8](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
 ## Remarks
 
@@ -53,7 +53,7 @@ The access level as declared in `x:ClassModifier` is still subject to interpreta
 ## See also
 
 - [x:Class Directive](xclass-directive.md)
-- [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [Code-Behind and XAML in WPF](/dotnet/desktop/wpf/advanced/code-behind-and-xaml-in-wpf)
 - [x:FieldModifier Directive](xfieldmodifier-directive.md)
-- [Security (WPF)](../../framework/wpf/security-wpf.md)
-- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)
+- [Security (WPF)](/dotnet/desktop/wpf/security-wpf)
+- [Types Migrated from WPF to System.Xaml](/dotnet/desktop/wpf/advanced/types-migrated-from-wpf-to-system)

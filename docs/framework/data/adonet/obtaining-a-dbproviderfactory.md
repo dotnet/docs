@@ -94,5 +94,5 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 
 - [DbProviderFactories](dbproviderfactories.md)
 - [Connection Strings](connection-strings.md)
-- [Using the Configuration Classes](https://docs.microsoft.com/previous-versions/aspnet/ms228063(v=vs.100))
+- [Using the Configuration Classes](/previous-versions/aspnet/ms228063(v=vs.100))
 - [ADO.NET Overview](ado-net-overview.md)

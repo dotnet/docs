@@ -54,7 +54,7 @@ For more information, see [Consuming Unmanaged DLL Functions](../../../framework
   
 ## See also
 
-- [Improving Interop Performance](https://docs.microsoft.com/previous-versions/msp-n-p/ff647812%28v=pandp.10%29)
+- [Improving Interop Performance](/previous-versions/msp-n-p/ff647812(v=pandp.10))
 - [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)
 - [Introduction to COM Interop in Visual Basic](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
 - [Marshaling between Managed and Unmanaged Code](../../../framework/interop/interop-marshaling.md)

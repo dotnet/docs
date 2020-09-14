@@ -86,7 +86,7 @@ For more information, see the following resources:
 |Resource|Description|
 |--------------|-----------------|
 |[SQL Server Security](./sql/sql-server-security.md)|Provides an overview of SQL Server security with application scenarios that provide guidance for creating secure ADO.NET applications that target SQL Server.|
-|[Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|
+|[Recommendations for Data Access Strategies](/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|
 
 ## Security Policy and Administration
 
@@ -96,8 +96,8 @@ For more information, see the following resources:
 
 |Resource|Description|
 |--------------|-----------------|
-|[Security Policy Management](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))|Provides information on creating and administering security policy.|
-|[Security Policy Best Practices](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/sa4se9bc(v=vs.100))|Provides links describing how to administer security policy.|
+|[Security Policy Management](/previous-versions/dotnet/netframework-4.0/c1k0eed6(v=vs.100))|Provides information on creating and administering security policy.|
+|[Security Policy Best Practices](/previous-versions/dotnet/netframework-4.0/sa4se9bc(v=vs.100))|Provides links describing how to administer security policy.|
 
 ## See also
 

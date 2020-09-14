@@ -143,7 +143,7 @@ In this sample, the host can now call `managedDelegate` to run the `ManagedWorke
 
 Alternatively, the `coreclr_execute_assembly` function can be used to launch a managed executable. This API takes an assembly path and array of arguments as input parameters. It loads the assembly at that path and invokes its main method.
 
-```C++
+```c++
 int hr = executeAssembly(
         hostHandle,
         domainId,
@@ -196,7 +196,7 @@ With an `ICLRRuntimeHost4` in-hand, we can now specify runtime-wide startup flag
 
 The runtime is started with a call to the `Start` function.
 
-```C++
+```c++
 hr = runtimeHost->Start();
 ```
 
@@ -238,7 +238,7 @@ With an AppDomain up and running, the host can now start executing managed code.
 
 Another option, if `ExecuteAssembly` doesn't meet your host's needs, is to use `CreateDelegate` to create a function pointer to a static managed method. This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point. The assembly name provided in the second parameter is the [full managed assembly name](../../standard/assembly/names.md) of the library to load.
 
-```C++
+```c++
 void *pfnDelegate = NULL;
 hr = runtimeHost->CreateDelegate(
     domainId,

@@ -22,7 +22,7 @@ Starting with .NET 5, the <xref:System.Globalization.StringInfo> and <xref:Syste
 
 Consider the following C# code:
 
-```cs
+```csharp
 using System.Globalization;
 
 static void Main(string[] args)

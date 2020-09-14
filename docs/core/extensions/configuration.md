@@ -42,8 +42,8 @@ New .NET console applications created using [dotnet new](../tools/dotnet-new.md)
 The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order:
 
 1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source. In the default configuration case, adds the host configuration and setting it as the first source for the _app_ configuration.
-1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md##file-configuration-provider).
-1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md##file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
+1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
+1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
 1. App secrets when the app runs in the `Development` environment.
 1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
 1. Command-line arguments using the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider).
@@ -61,7 +61,7 @@ The following table shows the configuration providers available to .NET Core app
 | [Azure App configuration provider](/azure/azure-app-configuration/quickstart-aspnet-core-app)                          | Azure App Configuration            |
 | Azure Key Vault configuration provider                                                                                 | Azure Key Vault                    |
 | [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider)                  | Command-line parameters            |
-| [Custom configuration provider](configuration-providers.md#custom-configuration-provider)                              | Custom source                      |
+| [Custom configuration provider](custom-configuration-provider.md)                                                      | Custom source                      |
 | [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider) | Environment variables              |
 | [File configuration provider](configuration-providers.md#file-configuration-provider)                                  | INI, JSON, and XML files           |
 | [Key-per-file configuration provider](configuration-providers.md#key-per-file-configuration-provider)                  | Directory files                    |

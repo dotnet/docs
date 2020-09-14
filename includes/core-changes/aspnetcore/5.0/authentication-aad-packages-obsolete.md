@@ -24,7 +24,7 @@ The Azure AD and Azure AD B2C authentication functionality was migrated to Micro
 
 #### Recommended action
 
-Follow the `Microsoft.Identity.Web` API documentation for [web apps](https://github.com/azuread/microsoft-identity-web/wiki/web-apps) and [web APIs](https://github.com/azuread/microsoft-identity-web/wiki/web-apis).
+Follow the `Microsoft.Identity.Web` API guidance for [web apps](https://github.com/azuread/microsoft-identity-web/wiki/web-apps) and [web APIs](https://github.com/azuread/microsoft-identity-web/wiki/web-apis).
 
 #### Category
 

@@ -25,7 +25,7 @@ For a class to enable atomized objects, the constructor for the class must be pr
 The following code creates some <xref:System.Xml.Linq.XElement> objects and demonstrates that identical names share the same instance.
 
 ```csharp
-XElement r1 = new XElement("Root", "data1");
+var r1 = new XElement("Root", "data1");
 XElement r2 = XElement.Parse("<Root>data2</Root>");
 
 if ((object)r1.Name == (object)r2.Name)
@@ -72,7 +72,7 @@ As mentioned earlier, the benefit of atomized objects is that when you use one o
 The following example passes an <xref:System.Xml.Linq.XName> to the <xref:System.Xml.Linq.XContainer.Descendants%2A> method call, which then has better performance because of the atomization pattern.
 
 ```csharp
-XElement root = new XElement("Root",
+var root = new XElement("Root",
     new XElement("C1", 1),
     new XElement("Z1",
         new XElement("C1", 2),
@@ -91,9 +91,9 @@ foreach (var z in query)
 ```vb
 Dim root As New XElement("Root", New XElement("C1", 1), New XElement("Z1", New XElement("C1", 2), New XElement("C1", 1)))
 
-Dim query = From e In root.Descendants("C1") Where CInt(e) = 1e
+Dim query = From e In root.Descendants("C1") Where CInt(e) = 1
 
-For Each z As var In query
+For Each z In query
     Console.WriteLine(z)
 Next
 ```

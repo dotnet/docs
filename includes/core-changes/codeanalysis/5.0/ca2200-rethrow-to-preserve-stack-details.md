@@ -11,7 +11,7 @@ Rule CA2200 flags code where exceptions are rethrown and the exception variable 
 The following code snippet does not produce a warning for rule CA2200. The commented line *would* trigger a violation, however.
 
 ```csharp
-catch(ArithmeticException e)
+catch (ArithmeticException e)
 {
     // throw e;
     throw;

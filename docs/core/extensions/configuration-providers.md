@@ -1,5 +1,5 @@
 ---
-title: Configuration providers in .NET
+Enabled: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
@@ -147,39 +147,35 @@ Call `ConfigureAppConfiguration` when building the host to specify the app's con
 })
 ```
 
-<a name="mcp"></a>
-
 ## Memory configuration provider
 
 The <xref:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider> uses an in-memory collection as configuration key-value pairs.
 
 The following code adds a memory collection to the configuration system:
 
-[!code-csharp[](index/samples/3.x/ConfigSample/ProgramArray.cs?name=snippet6)]
+:::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="16-23":::
 
-The following code from the [sample download](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/configuration/index/samples/3.x/ConfigSample) displays the preceding configurations settings:
-
-[!code-csharp[](index/samples/3.x/ConfigSample/Pages/Test.cshtml.cs?name=snippet)]
-
-In the preceding code, `config.AddInMemoryCollection(Dict)` is added after the [default configuration providers](#default). For an example of ordering the configuration providers, see [JSON configuration provider](#jcp).
-
-See [Bind an array](#boa) for another example using `MemoryConfigurationProvider`.
+In the preceding code, `configuration.AddInMemoryCollection(IEnumerable<KeyValuePair<string, string>>)` is added after the [default configuration providers](#default). For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
 
 ## Environment variable configuration provider
 
-Using the [default](#default) configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and [Secret manager](xref:security/app-secrets). Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
+Using the default configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and [Secret manager](xref:security/app-secrets). Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
 
-[!INCLUDE[](~/includes/environmentVarableColon.md)]
+The `:` separator doesn't work with environment variable hierarchical keys on all platforms. `__`, the double underscore, is:
+
+- Supported by all platforms. For example, the `:` separator is not supported by [Bash](https://linuxhint.com/bash-environment-variables), but `__` is.
+- Automatically replaced by a `:`
 
 The following `set` commands:
 
 - Set the environment keys and values of the [preceding example](#appsettingsjson) on Windows.
-- Test the settings when using the [sample download](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/configuration/index/samples/3.x/ConfigSample). The `dotnet run` command must be run in the project directory.
+- Test the settings by changing them from their default values. The `dotnet run` command must be run in the project directory.
 
 ```dotnetcli
-set MyKey="My key from Environment"
-set Position__Title=Environment_Editor
-set Position__Name=Environment_Rick
+set SecretKey="Secret key from environment"
+set TransientFaultHandlingOptions__Enabled=true
+set TransientFaultHandlingOptions__AutoRetryDelay=00:00:13
+
 dotnet run
 ```
 
@@ -191,9 +187,9 @@ The preceding environment settings:
 The following [setx](/windows-server/administration/windows-commands/setx) commands can be used to set the environment keys and values on Windows. Unlike `set`, `setx` settings are persisted. `/M` sets the variable in the system environment. If the `/M` switch isn't used, a user environment variable is set.
 
 ```cmd
-setx MyKey "My key from setx Environment" /M
-setx Position__Title Setx_Environment_Editor /M
-setx Position__Name Environment_Rick /M
+setx SecretKey "Secret key from setx environment" /M
+setx TransientFaultHandlingOptions__Enabled true /M
+setx TransientFaultHandlingOptions__AutoRetryDelay 00:00:05 /M
 ```
 
 To test that the preceding commands override *appsettings.json* and *appsettings.*`Environment`*.json*:
@@ -203,27 +199,29 @@ To test that the preceding commands override *appsettings.json* and *appsettings
 
 Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables> with a string to specify a prefix for environment variables:
 
-[!code-csharp[](~/fundamentals/configuration/index/samples/3.x/ConfigSample/Program.cs?name=snippet4&highlight=12)]
+:::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="16-17":::
 
 In the preceding code:
 
-- `config.AddEnvironmentVariables(prefix: "MyCustomPrefix_")` is added after the default configuration providers. For an example of ordering the configuration providers, see [JSON configuration provider](#json-configuration-provider).
-- Environment variables set with the `MyCustomPrefix_` prefix override the default configuration providers. This includes environment variables without the prefix.
+- `config.AddEnvironmentVariables(prefix: "CustomPrefix_")` is added after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
+- Environment variables set with the `CustomPrefix_` prefix override the default configuration providers. This includes environment variables without the prefix.
 
 The prefix is stripped off when the configuration key-value pairs are read.
 
 The following commands test the custom prefix:
 
 ```dotnetcli
-set MyCustomPrefix_MyKey="My key with MyCustomPrefix_ Environment"
-set MyCustomPrefix_Position__Title=Editor_with_customPrefix
-set MyCustomPrefix_Position__Name=Environment_Rick_cp
+set CustomPrefix__SecretKey="Secret key with CustomPrefix_ environment"
+set CustomPrefix_TransientFaultHandlingOptions__Enabled=true
+set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
+
 dotnet run
 ```
 
-The [default configuration](#default) loads environment variables and command line arguments prefixed with `DOTNET_` and `ASPNETCORE_`. The `DOTNET_` and `ASPNETCORE_` prefixes are used by ASP.NET Core for [host and app configuration](xref:fundamentals/host/generic-host#host-configuration), but not for user configuration. For more information on host and app configuration, see [.NET Generic Host](xref:fundamentals/host/generic-host).
+The default configuration loads environment variables and command line arguments prefixed with `DOTNET_` and `ASPNETCORE_`. The `DOTNET_` and `ASPNETCORE_` prefixes are used by .NET for host and app configuration, but not for user configuration.
+<!-- For more information on host and app configuration, see .NET Generic Host. -->
 
-On [Azure App Service](https://azure.microsoft.com/services/app-service/), select **New application setting** on the **Settings > Configuration** page. Azure App Service application settings are:
+On [Azure App Service](https://azure.microsoft.com/services/app-service), select **New application setting** on the **Settings > Configuration** page. Azure App Service application settings are:
 
 - Encrypted at rest and transmitted over an encrypted channel.
 - Exposed as environment variables.
@@ -236,14 +234,12 @@ See [Connection string prefixes](#constr) for information on Azure database conn
 
 Environment variables set in *launchSettings.json* override those set in the system environment.
 
-<a name="clcp"></a>
-
 ## Command-line configuration provider
 
 Using the default configuration, the <xref:Microsoft.Extensions.Configuration.CommandLine.CommandLineConfigurationProvider> loads configuration from command-line argument key-value pairs after the following configuration sources:
 
 - *appsettings.json* and *appsettings*.`Environment`.*json* files.
-- [App secrets (Secret Manager)](xref:security/app-secrets) in the Development environment.
+- App secrets (Secret Manager) in the **Development** environment.
 - Environment variables.
 
 By default, configuration values set on the command-line override configuration values set with all the other configuration providers.
@@ -253,24 +249,24 @@ By default, configuration values set on the command-line override configuration 
 The following command sets keys and values using `=`:
 
 ```dotnetcli
-dotnet run MyKey="My key from command line" Position:Title=Cmd Position:Name=Cmd_Rick
+dotnet run SecretKey="Secret key from command line" TransientFaultHandlingOptions:Enabled=Cmd TransientFaultHandlingOptions:AutoRetryDelay=Cmd_Rick
 ```
 
 The following command sets keys and values using `/`:
 
 ```dotnetcli
-dotnet run /MyKey "Using /" /Position:Title=Cmd_ /Position:Name=Cmd_Rick
+dotnet run /SecretKey "Using /" /TransientFaultHandlingOptions:Enabled=Cmd_true /TransientFaultHandlingOptions:AutoRetryDelay=Cmd_00:00:02
 ```
 
 The following command sets keys and values using `--`:
 
 ```dotnetcli
-dotnet run --MyKey "Using --" --Position:Title=Cmd-- --Position:Name=Cmd--Rick
+dotnet run --SecretKey "Using --" --TransientFaultHandlingOptions:Enabled=Cmd--true --TransientFaultHandlingOptions:AutoRetryDelay=Cmd--00:00:04
 ```
 
 The key value:
 
 - Must follow `=`, or the key must have a prefix of `--` or `/` when the value follows a space.
-- Isn't required if `=` is used. For example, `MySetting=`.
+- Isn't required if `=` is used. For example, `SomeKey=`.
 
 Within the same command, don't mix command-line argument key-value pairs that use `=` with key-value pairs that use a space.

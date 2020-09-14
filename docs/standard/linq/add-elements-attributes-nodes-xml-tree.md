@@ -78,8 +78,8 @@ Dim xmlTree As XElement =
     </Root>
 
 xmlTree.Add(<NewChild>new content</NewChild>)
-xmlTree.Add( _
-    From el In srcTree.Elements() _
+xmlTree.Add(
+    From el In srcTree.Elements()
     Where CInt(el) > 3
     Select el)
 

@@ -368,7 +368,7 @@ Because of testing or debugging reasons, if you wanted to directly access to the
 
 **Figure 6-36**. Direct access to a microservice for testing purposes
 
-But the application is configured so it accesses all the microservices through the API Gateways, not though the direct port "shortcuts".
+But the application is configured so it accesses all the microservices through the API Gateways, not through the direct port "shortcuts".
 
 ### The Gateway aggregation pattern in eShopOnContainers
 

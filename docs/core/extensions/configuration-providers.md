@@ -3,13 +3,13 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/11/2020
+ms.date: 09/14/2020
 ms.topic: overview
 ---
 
 # Configuration providers in .NET
 
-Configuration in .NET is possible with configuration providers. There are several types of providers that rely on various configuration sources. This article details all of the different configuration providers.
+Configuration in .NET is possible with configuration providers. There are several types of providers that rely on various configuration sources. This article details all of the different configuration providers and their corresponding sources.
 
 > [!div class="checklist"]
 >
@@ -29,94 +29,82 @@ The <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> is the b
 
 ### INI configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> loads configuration from INI file key-value pairs at runtime.
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> loads configuration from an INI file at runtime, and relies on the `Microsoft.Extensions.Configuration.Ini` NuGet package.
 
-The following code clears all the configuration providers and adds several configuration providers:
+The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs":::
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" highlight="18-24":::
 
-[!code-csharp[](index/samples/3.x/ConfigSample/ProgramINI.cs?name=snippet&highlight=10-30)]
-
-In the preceding code, settings in the *MyIniConfig.ini* and  *MyIniConfig*.`Environment`.*ini* files are overridden by settings in the:
-
-* [Environment variables configuration provider](#environment-variable-configuration-provider)
-* [Command-line configuration provider](#command-line-configuration-provider).
-
-The [sample download](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/configuration/index/samples/3.x/ConfigSample) contains the following *MyIniConfig.ini* file:
+An example *appsettings.ini* file with various configuration settings follows:
 
 :::code language="ini" source="snippets/configuration/console-ini/appsettings.ini":::
 
-The following code displays the preceding configurations settings by writing them to the console window:
+The following code displays the preceding configuration settings by writing them to the console window:
 
 :::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="26-30":::
 
 ### JSON configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> loads configuration from JSON file key-value pairs.
+The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> loads configuration from a JSON file, and relies on the `Microsoft.Extensions.Configuration.Json` NuGet package.
 
 Overloads can specify:
 
-* Whether the file is optional.
-* Whether the configuration is reloaded if the file changes.
+- Whether the file is optional.
+- Whether the configuration is reloaded if the file changes.
 
 Consider the following code:
 
-[!code-csharp[](index/samples/3.x/ConfigSample/ProgramJSON.cs?name=snippet&highlight=12-14)]
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" highlight="18-24":::
 
 The preceding code:
 
-* Configures the JSON configuration provider to load the *MyConfig.json* file with the following options:
-  * `optional: true`: The file is optional.
-  * `reloadOnChange: true` : The file is reloaded when changes are saved.
-* Reads the [default configuration providers](#default) before the *MyConfig.json* file. Settings in the *MyConfig.json* file override setting in the default configuration providers, including the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
+- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
+- Configures the JSON configuration provider to load the *appsettings.json* and  *appsettings*.`Environment`.*json* files with the following options:
+  - `optional: true`: The file is optional.
+  - `reloadOnChange: true` : The file is reloaded when changes are saved.
+- The JSON settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
 
-You typically ***don't*** want a custom JSON file overriding values set in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
-
-The following code clears all the configuration providers and adds several configuration providers:
-
-[!code-csharp[](index/samples/3.x/ConfigSample/ProgramJSON2.cs?name=snippet)]
-
-In the preceding code, settings in the *MyConfig.json* and  *MyConfig*.`Environment`.*json* files:
-
-* Override settings in the *appsettings.json* and *appsettings*.`Environment`.*json* files.
-* Are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
-
-The [sample download](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/configuration/index/samples/3.x/ConfigSample) contains the following  *MyConfig.json* file:
+An example *appsettings.json* file with various configuration settings follows:
 
 :::code language="json" source="snippets/configuration/console-json/appsettings.json":::
 
-The following code displays the preceding configurations settings by writing them to the console window:
+From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of option objects, and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="26-30":::
+The following code builds the root, binds a configuration section to a [record type](../../csharp/whats-new/csharp-9.md#record-types), and prints the bound values to the console window:
+
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="26-33":::
+
+The `TransientFaultHandlingOptions` record is defined as follows:
+
+:::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs":::
 
 ### XML configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> loads configuration from XML file key-value pairs at runtime.
+The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> loads configuration from an XML file at runtime, and relies on the `Microsoft.Extensions.Configuration.Xml` NuGet package.
 
-The following code clears all the configuration providers and adds several configuration providers:
+The following code clears all the existing configuration providers, and then adds several configuration providers:
 
-[!code-csharp[](index/samples/3.x/ConfigSample/ProgramXML.cs?name=snippet)]
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="18-29":::
 
-In the preceding code, settings in the *MyXMLFile.xml* and  *MyXMLFile*.`Environment`.*xml* files are overridden by settings in the:
+- Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
+- Configures the XML configuration provider to load the *appsettings.xml* and *repeating-example.xml* files with the following options:
+  - `optional: true`: The file is optional.
+  - `reloadOnChange: true` : The file is reloaded when changes are saved.
+- Configures the environment variables configuration provider.
+- Configures the command-line configuration provider if the given `args` contains arguments.
+- The XML settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
 
-* [Environment variables configuration provider](#environment-variable-configuration-provider)
-* [Command-line configuration provider](#command-line-configuration-provider).
-
-The [sample download](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/configuration/index/samples/3.x/ConfigSample) contains the following *MyXMLFile.xml* file:
+An example *appsettings.xml* file with various configuration settings follows:
 
 :::code language="xml" source="snippets/configuration/console-xml/appsettings.xml":::
 
-The following code displays the preceding configurations settings by writing them to the console window:
-
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="26-30":::
-
 Repeating elements that use the same element name work if the `name` attribute is used to distinguish the elements:
 
-[!code-xml[](index/samples/3.x/ConfigSample/MyXMLFile3.xml)]
+:::code language="xml" source="snippets/configuration/console-xml/repeating-example.xml":::
 
 The following code reads the previous configuration file and displays the keys and values:
 
-[!code-csharp[](index/samples/3.x/ConfigSample/Pages/XML/Index.cshtml.cs?name=snippet)]
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="31-46":::
 
 Attributes can be used to supply values:
 
@@ -132,8 +120,8 @@ Attributes can be used to supply values:
 
 The previous configuration file loads the following keys with `value`:
 
-* key:attribute
-* section:key:attribute
+- key:attribute
+- section:key:attribute
 
 ## Key-per-file configuration provider
 
@@ -143,8 +131,8 @@ To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Conf
 
 Overloads permit specifying:
 
-* An `Action<KeyPerFileConfigurationSource>` delegate that configures the source.
-* Whether the directory is optional and the path to the directory.
+- An `Action<KeyPerFileConfigurationSource>` delegate that configures the source.
+- Whether the directory is optional and the path to the directory.
 
 The double-underscore (`__`) is used as a configuration key delimiter in file names. For example, the file name `Logging__LogLevel__System` produces the configuration key `Logging:LogLevel:System`.
 
@@ -185,8 +173,8 @@ Using the [default](#default) configuration, the <xref:Microsoft.Extensions.Conf
 
 The following `set` commands:
 
-* Set the environment keys and values of the [preceding example](#appsettingsjson) on Windows.
-* Test the settings when using the [sample download](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/configuration/index/samples/3.x/ConfigSample). The `dotnet run` command must be run in the project directory.
+- Set the environment keys and values of the [preceding example](#appsettingsjson) on Windows.
+- Test the settings when using the [sample download](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/configuration/index/samples/3.x/ConfigSample). The `dotnet run` command must be run in the project directory.
 
 ```dotnetcli
 set MyKey="My key from Environment"
@@ -197,8 +185,8 @@ dotnet run
 
 The preceding environment settings:
 
-* Are only set in processes launched from the command window they were set in.
-* Won't be read by browsers launched with Visual Studio.
+- Are only set in processes launched from the command window they were set in.
+- Won't be read by browsers launched with Visual Studio.
 
 The following [setx](/windows-server/administration/windows-commands/setx) commands can be used to set the environment keys and values on Windows. Unlike `set`, `setx` settings are persisted. `/M` sets the variable in the system environment. If the `/M` switch isn't used, a user environment variable is set.
 
@@ -210,8 +198,8 @@ setx Position__Name Environment_Rick /M
 
 To test that the preceding commands override *appsettings.json* and *appsettings.*`Environment`*.json*:
 
-* With Visual Studio: Exit and restart Visual Studio.
-* With the CLI: Start a new command window and enter `dotnet run`.
+- With Visual Studio: Exit and restart Visual Studio.
+- With the CLI: Start a new command window and enter `dotnet run`.
 
 Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables> with a string to specify a prefix for environment variables:
 
@@ -219,8 +207,8 @@ Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.Add
 
 In the preceding code:
 
-* `config.AddEnvironmentVariables(prefix: "MyCustomPrefix_")` is added after the default configuration providers. For an example of ordering the configuration providers, see [JSON configuration provider](#json-configuration-provider).
-* Environment variables set with the `MyCustomPrefix_` prefix override the default configuration providers. This includes environment variables without the prefix.
+- `config.AddEnvironmentVariables(prefix: "MyCustomPrefix_")` is added after the default configuration providers. For an example of ordering the configuration providers, see [JSON configuration provider](#json-configuration-provider).
+- Environment variables set with the `MyCustomPrefix_` prefix override the default configuration providers. This includes environment variables without the prefix.
 
 The prefix is stripped off when the configuration key-value pairs are read.
 

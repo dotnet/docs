@@ -17,23 +17,38 @@ namespace ConsoleXml.Example
                 {
                     configuration.Sources.Clear();
 
-                    IHostEnvironment env = hostingContext.HostingEnvironment;
-
                     configuration
                         .AddXmlFile("appsettings.xml", optional: true, reloadOnChange: true)
-                        .AddXmlFile($"appsettings.{env.EnvironmentName}.xml", true, true);
+                        .AddXmlFile("repeating-example.xml", optional: true, reloadOnChange: true);
 
-                    foreach ((string key, string value) in
-                        configuration.Build().AsEnumerable().Where(t => t.Value is not null))
+                    configuration.AddEnvironmentVariables();
+
+                    if (args is { Length: > 0 })
                     {
-                        Console.WriteLine($"{key}={value}");
+                        configuration.AddCommandLine(args);
                     }
+
+                    IConfigurationRoot configurationRoot = configuration.Build();
+
+                    string key00 = "section:section0:key:key0";
+                    string key01 = "section:section0:key:key1";
+                    string key10 = "section:section1:key:key0";
+                    string key11 = "section:section1:key:key1";
+
+                    string val00 = configurationRoot[key00];
+                    string val01 = configurationRoot[key01];
+                    string val10 = configurationRoot[key10];
+                    string val11 = configurationRoot[key11];
+
+                    Console.WriteLine($"{key00} = {val00}");
+                    Console.WriteLine($"{key01} = {val01}");
+                    Console.WriteLine($"{key10} = {val10}");
+                    Console.WriteLine($"{key10} = {val11}");
                 });
         // Sample output:
-        //    TransientFaultHandlingOptions:Enabled=True
-        //    TransientFaultHandlingOptions:AutoRetryDelay=00:00:07
-        //    SecretKey=Secret key value
-        //    Logging:LogLevel:Microsoft=Warning
-        //    Logging:LogLevel:Default=Information
+        //    section:section0:key:key0 = value 00
+        //    section:section0:key:key1 = value 01
+        //    section:section1:key:key0 = value 10
+        //    section:section1:key:key0 = value 11
     }
 }

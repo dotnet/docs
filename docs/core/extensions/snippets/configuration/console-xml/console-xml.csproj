@@ -8,9 +8,13 @@
 
   <ItemGroup>
     <None Remove="appsettings.xml" />
+    <None Remove="repeating-example.xml" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="repeating-example.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="appsettings.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

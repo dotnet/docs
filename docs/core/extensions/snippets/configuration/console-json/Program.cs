@@ -23,17 +23,17 @@ namespace ConsoleJson.Example
                         .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                         .AddJsonFile($"appsettings.{env.EnvironmentName}.json", true, true);
 
-                    foreach ((string key, string value) in
-                        configuration.Build().AsEnumerable().Where(t => t.Value is not null))
-                    {
-                        Console.WriteLine($"{key}={value}");
-                    }
+                    IConfigurationRoot configurationRoot = configuration.Build();
+
+                    var options = new TransientFaultHandlingOptions();
+                    configurationRoot.GetSection(nameof(TransientFaultHandlingOptions))
+                                     .Bind(options);
+
+                    Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
+                    Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
                 });
         // Sample output:
-        //    TransientFaultHandlingOptions:Enabled=True
-        //    TransientFaultHandlingOptions:AutoRetryDelay=00:00:07
-        //    SecretKey=Secret key value
-        //    Logging:LogLevel:Microsoft=Warning
-        //    Logging:LogLevel:Default=Information
+        //    TransientFaultHandlingOptions.Enabled=True
+        //    TransientFaultHandlingOptions.AutoRetryDelay=00:00:07
     }
 }

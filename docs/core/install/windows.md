@@ -91,7 +91,7 @@ The following Windows versions are supported with .NET Core 3.1:
 
 | OS                            | Version                        | Architectures   |
 | ----------------------------- | ------------------------------ | --------------- |
-| Windows Client                | 8.1                            | x64, x86        |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1609+                  | x64, x86        |
 | Windows Server                | 2012 R2+                       | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |

@@ -54,7 +54,7 @@ Configuration providers that are added later override previous key settings. For
 
 The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder2%A> method:
 
-- Sets the [content root](xref:fundamentals/index#content-root) to the path returned by <xref:System.IO.Directory.GetCurrentDirectory*>.
+- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory2%A>.
 - Loads host configuration from:
   - Environment variables prefixed with `DOTNET_`.
   - Command-line arguments.

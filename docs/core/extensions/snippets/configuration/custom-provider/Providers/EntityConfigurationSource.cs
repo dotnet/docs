@@ -11,9 +11,7 @@ namespace CustomProvider.Example.Providers
         public EntityConfigurationSource(Action<DbContextOptionsBuilder> optionsAction) =>
             _optionsAction = optionsAction;
 
-        public IConfigurationProvider Build(IConfigurationBuilder builder)
-        {
-            return new EntityConfigurationProvider(_optionsAction);
-        }
+        public IConfigurationProvider Build(IConfigurationBuilder builder) =>
+            new EntityConfigurationProvider(_optionsAction);
     }
 }

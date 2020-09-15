@@ -21,23 +21,22 @@ namespace CustomProvider.Example.Providers
             _optionsAction(builder);
 
             using var dbContext = new EntityConfigurationContext(builder.Options);
+
             dbContext.Database.EnsureCreated();
 
-            Data = !dbContext.Settings.Any()
-                ? CreateAndSaveDefaultValues(dbContext)
-                : dbContext.Settings.ToDictionary(c => c.Id, c => c.Value);
+            Data = dbContext.Settings.Any()
+                ? dbContext.Settings.ToDictionary(c => c.Id, c => c.Value)
+                : CreateAndSaveDefaultValues(dbContext);
         }
 
         static IDictionary<string, string> CreateAndSaveDefaultValues(
             EntityConfigurationContext context)
         {
-            // Quotes (c) 2005 Universal Pictures: Serenity
-            // https://www.uphe.com/movies/serenity
             var settings = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
             {
-                ["quote1"] = "I aim to misbehave.",
-                ["quote2"] = "I swallowed a bug.",
-                ["quote3"] = "You can't stop the signal, Mal."
+                ["EndpointId"] = "b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67",
+                ["DisplayLabel"] = "Widgets Incorporated, LLC.",
+                ["WidgetRoute"] = "api/widgets"
             };
 
             context.Settings.AddRange(

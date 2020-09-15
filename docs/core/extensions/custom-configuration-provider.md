@@ -3,7 +3,7 @@ title: Implement a custom configuration provider in .NET
 description: Learn how to implement a custom configuration provider in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/14/2020
+ms.date: 09/15/2020
 ms.topic: how-to
 ---
 
@@ -21,7 +21,7 @@ The provider has the following characteristics:
 - The provider reads a database table into configuration at startup. The provider doesn't query the database on a per-key basis.
 - Reload-on-change isn't implemented, so updating the database after the app starts has no effect on the app's configuration.
 
-Define a `Settings` record entity for storing configuration values in the database.
+Define a `Settings` [record](../../csharp/whats-new/csharp-9.md#record-types) entity for storing configuration values in the database.
 
 *Models/Settings.cs*:
 
@@ -45,7 +45,7 @@ Create the custom configuration provider by inheriting from <xref:Microsoft.Exte
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Providers/EntityConfigurationProvider.cs":::
 
-An `AddEntityConfiguration` extension method permits adding the configuration source to a `ConfigurationBuilder`.
+An `AddEntityConfiguration` extension method permits adding the configuration source to a <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance.
 
 *Extensions/ConfigurationBuilderExtensions.cs*:
 
@@ -54,3 +54,8 @@ An `AddEntityConfiguration` extension method permits adding the configuration so
 The following code shows how to use the custom `EntityConfigurationProvider` in *Program.cs*:
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Program.cs" highlight="21-22":::
+
+## See also
+
+- [Configuration in .NET](configuration.md)
+- [Configuration providers in .NET](configuration-providers.md)

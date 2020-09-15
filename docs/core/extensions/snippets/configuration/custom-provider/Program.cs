@@ -1,9 +1,9 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Linq;
 
 namespace CustomProvider.Example
 {
@@ -28,8 +28,8 @@ namespace CustomProvider.Example
                     }
                 });
         // Sample output:
-        //    quote3=You can't stop the signal, Mal.
-        //    quote2=I swallowed a bug.
-        //    quote1=I aim to misbehave.
+        //    WidgetRoute=api/widgets
+        //    EndpointId=b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67
+        //    DisplayLabel =Widgets Incorporated, LLC.
     }
 }

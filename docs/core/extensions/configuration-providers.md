@@ -3,8 +3,7 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/14/2020
-ms.topic: overview
+ms.date: 09/15/2020
 ---
 
 # Configuration providers in .NET
@@ -291,3 +290,8 @@ The key value:
 - Isn't required if `=` is used. For example, `SomeKey=`.
 
 Within the same command, don't mix command-line argument key-value pairs that use `=` with key-value pairs that use a space.
+
+## See also
+
+- [Configuration in .NET](configuration.md)
+- [Implement a custom configuration provider](custom-configuration-provider.md)

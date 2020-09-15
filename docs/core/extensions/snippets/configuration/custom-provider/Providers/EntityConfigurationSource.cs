@@ -9,7 +9,7 @@ namespace CustomProvider.Example.Providers
         readonly Action<DbContextOptionsBuilder> _optionsAction;
 
         public EntityConfigurationSource(Action<DbContextOptionsBuilder> optionsAction) =>
-            _optionsAction = optionsAction;
+            _optionsAction = optionsAction ?? throw new ArgumentNullException(nameof(optionsAction));
 
         public IConfigurationProvider Build(IConfigurationBuilder builder) =>
             new EntityConfigurationProvider(_optionsAction);

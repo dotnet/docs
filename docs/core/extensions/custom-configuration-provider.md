@@ -21,11 +21,13 @@ The provider has the following characteristics:
 - The provider reads a database table into configuration at startup. The provider doesn't query the database on a per-key basis.
 - Reload-on-change isn't implemented, so updating the database after the app starts has no effect on the app's configuration.
 
-Define a `Settings` [record](../../csharp/whats-new/csharp-9.md#record-types) entity for storing configuration values in the database.
+Define a `Settings` record type entity for storing configuration values in the database.
 
 *Models/Settings.cs*:
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Models/Settings.cs":::
+
+For more information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
 
 Add an `EntityConfigurationContext` to store and access the configured values.
 

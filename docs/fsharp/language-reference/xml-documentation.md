@@ -36,11 +36,15 @@ You can generate the XML file at compile time by doing one of the following:
 
 - If you are developing an application using Visual Studio, right-click on the project and select **Properties**. In the properties dialog, select the **Build** tab, and check **XML documentation file**. You can also change the location to which the compiler writes the file.
 
-- If you are compiling a .NET application from the command line, add the [-doc compiler option](./compiler-options.md) when compiling.  
+- If you are compiling a .NET application from the command line, add the [-doc compiler option](./compiler-options.md) when compiling.
 
 ### Writing XML Documentation
 
-There are two ways to write XML documentation comments. One is to just write the documentation directly in a triple-slash comment, without using XML tags. If you do this, the entire comment text is taken as the summary documentation for the code construct that immediately follows. Use this method when you want to write only a brief summary for each construct. The other method is to use XML tags to provide more structured documentation. The second method enables you to specify separate notes for a short summary, additional remarks, documentation for each parameter and type parameter and exceptions thrown, and a description of the return value. 
+There are two ways to write XML documentation comments. One is to just write the documentation directly in a triple-slash
+comment, without using XML tags. If you do this, the entire comment text is taken as the summary documentation for the code
+construct that immediately follows. Use this method when you want to write only a brief summary for each construct. The other
+method is to use XML tags to provide more structured documentation. The second method enables you to specify separate notes
+for a short summary, additional remarks, documentation for each parameter and type parameter and exceptions thrown, and a description of the return value.
 
 ## Comments without XML tags
 
@@ -48,7 +52,7 @@ If a comment does not start with a `<` then the comment is interpreted as a `<su
 so characters such as `<`, `>` and `&` need not be escaped. If you don't specify a summary tag explicitly, you should
 not specify other tags, such as **param** or **returns** tags.
 
-The following example shows the alternative method, without XML tags. In this example, the entire text in the comment is considered a summary. 
+The following example shows the alternative method, without XML tags. In this example, the entire text in the comment is considered a summary.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet7102.fs)]
 
@@ -112,19 +116,19 @@ type SomeType
 
 As of F# 5.0, some features of XML documentation in C# and other .NET languages are not supported in C#.
 
-- In F#, cross-references must use the full XML signature of the corresponding symbol, for example <see cref="T:System.Console"/>.  
-  Simple C#-style cross-references such as <see cref="Console"/> are not elaborated to full XML signatures
+- In F#, cross-references must use the full XML signature of the corresponding symbol, for example `cref="T:System.Console"`.
+  Simple C#-style cross-references such as `cref="Console"` are not elaborated to full XML signatures
   and these elements are not checked by the F# compiler. Some documentation tooling
   may allow the use of these these cross-references by subsequent processing, howevr in general the full signatures should be used.
   
-- The tags `<include>`, `<inheritdoc>` are not supported by the F# compiler.  No error is given if they are used, but
+- The tags `<include>`, `<inheritdoc>` are not supported by the F# compiler. No error is given if they are used, but
   they are simply copied to the generated documentation file without otherwise affecting the documentation generated.
 
 - Cross-references are not checked by the F# compiler, even when `/warnon:3390` is used. 
 
-- The names used in the tags `<typeparam>` and `<typeparamref>` are not checked by the F# compiler, even when `/warnon:3390` is used. 
+- The names used in the tags `<typeparam>` and `<typeparamref>` are not checked by the F# compiler, even when `/warnon:3390` is used.
 
-- No warnings are given if documentation is missing, even when `/warnon:3390` is used. 
+- No warnings are given if documentation is missing, even when `/warnon:3390` is used.
 
 ## Recommendations
 
@@ -132,7 +136,7 @@ Documenting code is recommended for many reasons. What follows are some best pra
 
 - Enable the option `/warnon:3390` in your code to help ensure your XML documentation is valid XML.
 
-- Consider adding signature files to separate long XML documentation comments from your implementation
+- Consider adding signature files to separate long XML documentation comments from your implementation.
 
 - For the sake of consistency, all publicly visible types and their members should be documented. If you must do it, do it all.
 

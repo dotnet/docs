@@ -71,7 +71,7 @@ I want to use LINQ...
 
 I still need some more information...
 
-- [WCF Data Services Team Blog](https://docs.microsoft.com/archive/blogs/astoriateam/)
+- [WCF Data Services Team Blog](/archive/blogs/astoriateam/)
 
 - [Resources](wcf-data-services-resources.md)
 
@@ -81,7 +81,7 @@ I still need some more information...
 
 Provides an overview of the features and functionality available in WCF Data Services.
 
-[What's New in WCF Data Services 5.0](https://docs.microsoft.com/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
+[What's New in WCF Data Services 5.0](/previous-versions/dotnet/wcf-data-services/ee373845(v=vs.103))
 
 Describes new functionality in WCF Data Services and support for new OData features.
 

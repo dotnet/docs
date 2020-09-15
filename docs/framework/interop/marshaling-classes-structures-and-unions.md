@@ -30,7 +30,7 @@ The following table lists marshaling options for classes, structures, and unions
 |----------|-----------------|------------|
 |Class by value.|Passes a class with integer members as an In/Out parameter, like the managed case.|[SysTime sample](#systime-sample)|
 |Structure by value.|Passes structures as In parameters.|[Structures sample](#structures-sample)|
-|Structure by reference.|Passes structures as In/Out parameters.|[OSInfo sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|
+|Structure by reference.|Passes structures as In/Out parameters.|[OSInfo sample](/previous-versions/dotnet/netframework-4.0/795sy883(v=vs.100))|
 |Structure with nested structures (flattened).|Passes a class that represents a structure with nested structures in the unmanaged function. The structure is flattened to one big structure in the managed prototype.|[FindFile sample](#findfile-sample)|
 |Structure with a pointer to another structure.|Passes a structure that contains a pointer to a second structure as a member.|[Structures Sample](#structures-sample)|
 |Array of structures with integers by value.|Passes an array of structures that contain only integers as an In/Out parameter. Members of the array can be changed.|[Arrays Sample](marshaling-different-types-of-arrays.md)|
@@ -38,7 +38,7 @@ The following table lists marshaling options for classes, structures, and unions
 |Unions with value types.|Passes unions with value types (integer and double).|[Unions sample](#unions-sample)|
 |Unions with mixed types.|Passes unions with mixed types (integer and string).|[Unions sample](#unions-sample)|
 |Struct with platform-specific layout.|Passes a type with native-packing definitions.|[Platform sample](#platform-sample)|
-|Null values in structure.|Passes a null reference (**Nothing** in Visual Basic) instead of a reference to a value type.|[HandleRef sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/hc662t8k(v=vs.85))|
+|Null values in structure.|Passes a null reference (**Nothing** in Visual Basic) instead of a reference to a value type.|[HandleRef sample](/previous-versions/dotnet/netframework-3.0/hc662t8k(v=vs.85))|
 
 ## Structures sample
 
@@ -128,7 +128,7 @@ Structures as arguments to methods are passed by value unless the parameter cont
 
 ## FindFile sample
 
-This sample demonstrates how to pass a structure that contains a second, embedded structure to an unmanaged function. It also demonstrates how to use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to declare a fixed-length array within the structure. In this sample, the embedded structure elements are added to the parent structure. For a sample of an embedded structure that is not flattened, see [Structures Sample](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/eadtsekz(v=vs.100)).
+This sample demonstrates how to pass a structure that contains a second, embedded structure to an unmanaged function. It also demonstrates how to use the <xref:System.Runtime.InteropServices.MarshalAsAttribute> attribute to declare a fixed-length array within the structure. In this sample, the embedded structure elements are added to the parent structure. For a sample of an embedded structure that is not flattened, see [Structures Sample](/previous-versions/dotnet/netframework-4.0/eadtsekz(v=vs.100)).
 
 The FindFile sample uses the following unmanaged function, shown with its original function declaration:
 
@@ -326,7 +326,7 @@ typedef struct _SYSTEMTIME {
 
 In this sample, the `SystemTime` class contains the elements of the original structure represented as class members. The <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute is set to ensure that the members are arranged in memory sequentially, in the order in which they appear.
 
-The `NativeMethods` class contains a managed prototype of the `GetSystemTime` method, which passes the `SystemTime` class as an In/Out parameter by default. The parameter must be declared with the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes because classes, which are reference types, are passed as In parameters by default. For the caller to receive the results, these [directional attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100)) must be applied explicitly. The `App` class creates a new instance of the `SystemTime` class and accesses its data fields.
+The `NativeMethods` class contains a managed prototype of the `GetSystemTime` method, which passes the `SystemTime` class as an In/Out parameter by default. The parameter must be declared with the <xref:System.Runtime.InteropServices.InAttribute> and <xref:System.Runtime.InteropServices.OutAttribute> attributes because classes, which are reference types, are passed as In parameters by default. For the caller to receive the results, these [directional attributes](/previous-versions/dotnet/netframework-4.0/77e6taeh(v=vs.100)) must be applied explicitly. The `App` class creates a new instance of the `SystemTime` class and accesses its data fields.
 
 ### Code Samples
 

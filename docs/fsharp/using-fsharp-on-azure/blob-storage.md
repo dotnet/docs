@@ -176,7 +176,7 @@ The following example creates a new append blob and appends some data to it, sim
 
 [!code-fsharp[BlobStorage](~/samples/snippets/fsharp/azure/blob-storage.fsx#L174-L203)]
 
-See [Understanding Block Blobs, Page Blobs, and Append Blobs](https://msdn.microsoft.com/library/azure/ee691964.aspx) for more information about the differences between the three types of blobs.
+See [Understanding Block Blobs, Page Blobs, and Append Blobs](/rest/api/storageservices/Understanding-Block-Blobs--Append-Blobs--and-Page-Blobs) for more information about the differences between the three types of blobs.
 
 ## Concurrent access
 
@@ -238,8 +238,8 @@ A free, standalone app from Microsoft that enables you to work visually with Azu
 
 ### Related guides
 
-- [Azure Blob Storage Samples for .NET](https://docs.microsoft.com/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
+- [Azure Blob Storage Samples for .NET](/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
 - [Get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
-- [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)
+- [Azure Storage Team Blog](/archive/blogs/windowsazurestorage/)
 - [Quickstart: Use .NET to create a blob in object storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet)

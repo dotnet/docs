@@ -82,7 +82,7 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
 </Root>  
 ```  
   
- For more information, see [Creating XML Trees in C# (LINQ to XML)](./creating-xml-trees-linq-to-xml-2.md).  
+ For more information, see [Creating XML Trees in C# (LINQ to XML)](../../../../standard/linq/create-xml-trees.md).  
   
 ## Performing Operations on Source Elements  
  An output sequence might not contain any elements or element properties from the source sequence. The output might instead be a sequence of values that is computed by using the source elements as input arguments.
@@ -101,6 +101,6 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
 - [Language-Integrated Query (LINQ) (C#)](./index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
-- [LINQ to XML (C#)](./linq-to-xml-overview.md)
+- [LINQ to XML (C#)](../../../../standard/linq/linq-xml-overview.md)
 - [LINQ Query Expressions](../../../linq/index.md)
 - [select clause](../../../language-reference/keywords/select-clause.md)

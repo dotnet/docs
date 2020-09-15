@@ -136,7 +136,7 @@ This filter is useful if you know that the messages you are receiving contain a 
 
 Because XPath queries often contain unique namespaces, which are often lengthy or complex string values, the XPath filter allows you to use the namespace table to define unique prefixes for your namespaces. For more information about the namespace table, see [Message Filters](message-filters.md).
 
-For more information about designing XPath queries, see [XPath Syntax](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms256471(v=vs.100)).
+For more information about designing XPath queries, see [XPath Syntax](/previous-versions/dotnet/netframework-4.0/ms256471(v=vs.100)).
 
 ## See also
 

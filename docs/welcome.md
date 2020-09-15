@@ -29,7 +29,7 @@ For information about the latest features added to the .NET implementations and 
 
 - [What's new in .NET Core 3.1](core/whats-new/dotnet-core-3-1.md)
 - [What's new in the .NET Framework](framework/whats-new/index.md)
-- [What's new in C#](csharp/whats-new/index.md)
+- [What's new in C#](./csharp/whats-new/csharp-9.md)
 - [What's new for Visual Basic](visual-basic/whats-new/index.md)
 
 ## Documentation
@@ -45,7 +45,7 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [.NET for Apache Spark](spark/index.yml)
 - [.NET Application Architecture](architecture/index.yml)
 
-Additionally, you can browse the [.NET API reference](/dotnet/api).
+Additionally, you can browse the [.NET API reference](../api/index.md).
 
 ## Videos
 

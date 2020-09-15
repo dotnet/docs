@@ -42,4 +42,4 @@ For elements that are derived classes of <xref:System.Windows.FrameworkElement> 
 
 ## See also
 
-- [Globalization for WPF](../../framework/wpf/advanced/globalization-for-wpf.md)
+- [Globalization for WPF](/dotnet/desktop/wpf/advanced/globalization-for-wpf)

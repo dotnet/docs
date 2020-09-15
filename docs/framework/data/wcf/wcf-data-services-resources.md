@@ -26,7 +26,7 @@ WCF Data Services introductory topics can be found in the following locations. M
  [WCF Data Services Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)  
  Data programming support for WCF Data Services developers.  
   
- [WCF Data Services Team Blog](https://docs.microsoft.com/archive/blogs/astoriateam/)  
+ [WCF Data Services Team Blog](/archive/blogs/astoriateam/)  
  Blog that contains updates and discussion of WCF Data Services features and functionality.  
   
  [OData website](https://www.odata.org/)  
@@ -38,10 +38,10 @@ WCF Data Services introductory topics can be found in the following locations. M
  [OData Blog](https://www.odata.org/blog/)  
  Blog that contains discussions about OData programming.  
   
- [Overview: WCF Data Services](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc956153(v=msdn.10))  
+ [Overview: WCF Data Services](/previous-versions/visualstudio/visual-studio-2008/cc956153(v=msdn.10))  
  A white paper that provides more high-level information about the benefits of WCF Data Services.  
   
- [Using Microsoft WCF Data Services](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc907912(v=msdn.10))  
+ [Using Microsoft WCF Data Services](/previous-versions/visualstudio/visual-studio-2008/cc907912(v=msdn.10))  
  A white paper that provides additional information and examples for creating data services and accessing data services in client applications.  
   
  [The Entity-Relationship Model: Toward a Unified View of Data](https://dl.acm.org/doi/10.1145/320434.320440) by Peter Pin-Shan Chen, Massachusetts Institute of Technology  

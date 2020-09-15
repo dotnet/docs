@@ -46,4 +46,4 @@ Child2 was attached
   
 ## See also
 
-- [Creating XML Trees (Visual Basic)](creating-xml-trees.md)
+- [Creating XML Trees (Visual Basic)](../../../../standard/linq/xml-literals.md)

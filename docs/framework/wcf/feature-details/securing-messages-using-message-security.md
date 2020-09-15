@@ -35,7 +35,7 @@ This section discusses WCF message security when using <xref:System.ServiceModel
   
  Given the disconnected nature of queues, the client and the service may not be online at the same time. As such, the client and service have to exchange certificates out-of-band. In particular, the client, by virtue of holding the service's certificate (which can be chained to a certification authority) in its trusted store, must trust that it is communicating with the correct service. For authenticating the client, the service uses the X.509 certificate attached with the message to matches it with the certificate in its store to verify the authenticity of the client. Again, the certificate must be chained to a certification authority.  
   
- On a computer running Windows, certificates are held in several kinds of stores. For more information about the different stores, see [Certificate stores](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757138(v=ws.10)).  
+ On a computer running Windows, certificates are held in several kinds of stores. For more information about the different stores, see [Certificate stores](/previous-versions/windows/it-pro/windows-server-2003/cc757138(v=ws.10)).  
   
 ### Windows  
  Windows message credential type uses the Kerberos protocol.  

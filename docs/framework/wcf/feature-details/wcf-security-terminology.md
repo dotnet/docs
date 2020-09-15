@@ -179,4 +179,4 @@ Some of the terminology used when discussing security may be unfamiliar. This to
 
 - [Fundamental Windows Communication Foundation Concepts](../fundamental-concepts.md)
 - [Security Concepts](security-concepts.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

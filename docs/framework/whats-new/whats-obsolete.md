@@ -70,10 +70,10 @@ To target a specific version of .NET Framework, assign one of the following stri
 
 ## Obsolete APIs for previous versions
 
-- [Obsolete Types in .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee461503(v=vs.100))
-- [Obsolete Members in .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ee471421(v=vs.100))
-- [.NET Framework 3.5 Obsolete List](https://docs.microsoft.com/previous-versions/cc835481(v=msdn.10))
-- [.NET Framework 2.0 Obsolete List](https://docs.microsoft.com/previous-versions/aa497286(v=msdn.10))
+- [Obsolete Types in .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee461503(v=vs.100))
+- [Obsolete Members in .NET Framework 4](/previous-versions/dotnet/netframework-4.0/ee471421(v=vs.100))
+- [.NET Framework 3.5 Obsolete List](/previous-versions/cc835481(v=msdn.10))
+- [.NET Framework 2.0 Obsolete List](/previous-versions/aa497286(v=msdn.10))
 
 ## See also
 

@@ -56,7 +56,7 @@ Here is the style from the previous section, but declared with the `x:Key` attri
 
 [!code-xaml[ExplicitStyleDeclare](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowExplicitStyle.xaml#ExplicitStyleDeclare)]
 
-To apply the style, set the <xref:System.Windows.FrameworkElement.Style%2A> property on the element to the `x:Key` value, using a [StaticResource markup extension](../../framework/wpf/advanced/staticresource-markup-extension.md), as shown here.
+To apply the style, set the <xref:System.Windows.FrameworkElement.Style%2A> property on the element to the `x:Key` value, using a [StaticResource markup extension](/dotnet/desktop/wpf/advanced/staticresource-markup-extension), as shown here.
 
 [!code-xaml[ExplicitStyleReference](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/WindowExplicitStyle.xaml#ExplicitStyleReference)]
 

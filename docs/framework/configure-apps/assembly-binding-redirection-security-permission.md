@@ -27,6 +27,6 @@ Explicit assembly binding redirection in an application configuration file requi
   
 ## See also
 
-- [Publisher Policy Files and Side-by-Side Execution](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/06d2bae3(v=vs.100))
+- [Publisher Policy Files and Side-by-Side Execution](/previous-versions/dotnet/netframework-4.0/06d2bae3(v=vs.100))
 - [How to: Enable and Disable Automatic Binding Redirection](how-to-enable-and-disable-automatic-binding-redirection.md)
 - [Side-by-Side Execution](../deployment/side-by-side-execution.md)

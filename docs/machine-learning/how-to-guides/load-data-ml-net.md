@@ -62,7 +62,7 @@ ML.NET Operates through column names. If you want to change the name of a column
 
 ## Load data from a single file
 
-To load data from a file use the [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile*) method along with the data model for the data to be loaded. Since `separatorChar` parameter is tab-delimited by default, change it for your data file as needed. If your file has a header, set the `hasHeader` parameter to `true` to ignore the first line in the file and begin to load data from the second line.
+To load data from a file use the [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%2A) method along with the data model for the data to be loaded. Since `separatorChar` parameter is tab-delimited by default, change it for your data file as needed. If your file has a header, set the `hasHeader` parameter to `true` to ignore the first line in the file and begin to load data from the second line.
 
 ```csharp
 //Create MLContext
@@ -78,7 +78,7 @@ In the event that your data is stored in multiple files, as long as the data sch
 
 ### Load from files in a single directory
 
-When all of your data files are in the same directory, use wildcards in the [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile*) method.
+When all of your data files are in the same directory, use wildcards in the [`LoadFromTextFile`](xref:Microsoft.ML.TextLoaderSaverCatalog.LoadFromTextFile%2A) method.
 
 ```csharp
 //Create MLContext
@@ -90,7 +90,7 @@ IDataView data = mlContext.Data.LoadFromTextFile<HousingData>("Data/*", separato
 
 ### Load from files in multiple directories
 
-To load data from multiple directories, use the [`CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader*) method to create a [`TextLoader`](xref:Microsoft.ML.Data.TextLoader). Then, use the [`TextLoader.Load`](xref:Microsoft.ML.DataLoaderExtensions.Load*) method and specify the individual file paths (wildcards can't be used).
+To load data from multiple directories, use the [`CreateTextLoader`](xref:Microsoft.ML.TextLoaderSaverCatalog.CreateTextLoader%2A) method to create a [`TextLoader`](xref:Microsoft.ML.Data.TextLoader). Then, use the [`TextLoader.Load`](xref:Microsoft.ML.DataLoaderExtensions.Load%2A) method and specify the individual file paths (wildcards can't be used).
 
 ```csharp
 //Create MLContext
@@ -196,10 +196,10 @@ HousingData[] inMemoryCollection = new HousingData[]
 };
 ```
 
-Load the in-memory collection into an [`IDataView`](xref:Microsoft.ML.IDataView) with the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) method:
+Load the in-memory collection into an [`IDataView`](xref:Microsoft.ML.IDataView) with the [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable%2A) method:
 
 > [!IMPORTANT]
-> [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable*) assumes that the [`IEnumerable`](xref:System.Collections.IEnumerable) it loads from is thread-safe.
+> [`LoadFromEnumerable`](xref:Microsoft.ML.DataOperationsCatalog.LoadFromEnumerable%2A) assumes that the [`IEnumerable`](xref:System.Collections.IEnumerable) it loads from is thread-safe.
 
 ```csharp
 // Create MLContext

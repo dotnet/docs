@@ -1,7 +1,7 @@
 ---
 title: XML Documentation
 description: Learn about support in F# for generating documentation from comments.
-ms.date: 05/16/2016
+ms.date: 09/15/2020
 ---
 
 # Document your code with XML comments

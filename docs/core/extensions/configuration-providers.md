@@ -71,7 +71,7 @@ From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instanc
 
 The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` [record type](../../csharp/whats-new/csharp-9.md#record-types), and prints the bound values to the console window:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="26-33":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="25-32":::
 
 The `TransientFaultHandlingOptions` record is defined as follows:
 
@@ -83,7 +83,7 @@ The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> loads
 
 The following code demonstrates configuration of XML files using the XML configuration provider.
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-28,46-53" highlight="17-28":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-28,46,52-53" highlight="17-28":::
 
 The preceding code:
 
@@ -105,7 +105,7 @@ Repeating elements that use the same element name work if the `name` attribute i
 
 The following code reads the previous configuration file and displays the keys and values:
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="31-46":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="30-45,47-51":::
 
 Attributes can be used to supply values:
 
@@ -140,11 +140,12 @@ The double-underscore (`__`) is used as a configuration key delimiter in file na
 Call `ConfigureAppConfiguration` when building the host to specify the app's configuration:
 
 ```csharp
-.ConfigureAppConfiguration((hostingContext, config) =>
+.ConfigureAppConfiguration((_, configuration) =>
 {
     var path = Path.Combine(
         Directory.GetCurrentDirectory(), "path/to/files");
-    config.AddKeyPerFile(directoryPath: path, optional: true);
+
+    configuration.AddKeyPerFile(directoryPath: path, optional: true);
 })
 ```
 

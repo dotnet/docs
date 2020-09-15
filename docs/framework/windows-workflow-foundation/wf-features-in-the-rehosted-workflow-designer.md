@@ -116,7 +116,7 @@ Windows Workflow Foundation (WF) in .NET Framework 4.5 introduced many new featu
  In addition to flowchart and sequential workflow development models, this release includes State Machine workflows, and contract-first workflow services.  
   
 ### State machine workflows  
- State machine workflows were introduced as part of the .NET Framework 4.0.1 in the [Microsoft .NET Framework 4 Platform Update 1](https://docs.microsoft.com/archive/blogs/endpoint/microsoft-net-framework-4-platform-update-1). This update included several new classes and activities which allowed developers to create state machine workflows. These classes and activities have been updated for .NET Framework 4.5. Updates include:  
+ State machine workflows were introduced as part of the .NET Framework 4.0.1 in the [Microsoft .NET Framework 4 Platform Update 1](/archive/blogs/endpoint/microsoft-net-framework-4-platform-update-1). This update included several new classes and activities which allowed developers to create state machine workflows. These classes and activities have been updated for .NET Framework 4.5. Updates include:  
   
 1. The ability to set breakpoints on states  
   

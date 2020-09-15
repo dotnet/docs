@@ -185,4 +185,4 @@ You can also select the resource group name to open the resource group page, and
 In this tutorial, you deployed your .NET for Apache Spark application to Azure HDInsight. To learn more about HDInsight, continue to the Azure HDInsight Documentation.
 
 > [!div class="nextstepaction"]
-> [Azure HDInsight Documentation](https://docs.microsoft.com/azure/hdinsight/)
+> [Azure HDInsight Documentation](/azure/hdinsight/)

@@ -12,7 +12,7 @@ ms.assetid: 13ec5580-05ce-4a1f-9d3d-8660be7891a2
   
 - Aggregate queries typically return a number instead of a collection.  
   
-     For more information, see [Aggregation Operations](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb546138(v=vs.120)).  
+     For more information, see [Aggregation Operations](/previous-versions/visualstudio/visual-studio-2013/bb546138(v=vs.120)).  
   
 - You cannot call aggregates against anonymous types.  
   

@@ -21,7 +21,7 @@ Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framewo
   
 - SQL Server databases: [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
   
-- XML documents: [LINQ to XML (Visual Basic)](linq-to-xml.md)  
+- XML documents: [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md)  
   
 - ADO.NET Datasets: [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   

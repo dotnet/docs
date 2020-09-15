@@ -176,7 +176,7 @@ Child Four Text
 - <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType>
 - [Standard Query Operators Overview (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Projection Operations (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
-- [Basic Queries (LINQ to XML) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
+- [Basic Queries (LINQ to XML) (Visual Basic)](./find-element-specific-attribute.md)
 - [XML Child Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
 - [XML Attribute Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
 - [XML Value Property](../../visual-basic/language-reference/xml-axis/xml-value-property.md)

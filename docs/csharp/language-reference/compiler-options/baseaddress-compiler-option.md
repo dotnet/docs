@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: ce13c965-dfe4-4433-94f5-63b476e3a608
 ---
 # -baseaddress (C# Compiler Options)
-The **-baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](https://docs.microsoft.com/archive/blogs/larryosterman/why-should-i-even-bother-to-use-dlls-in-my-system).  
+The **-baseaddress** option lets you specify the preferred base address at which to load a DLL. For more information about when and why to use this option, see [Larry Osterman's WebLog](/archive/blogs/larryosterman/why-should-i-even-bother-to-use-dlls-in-my-system).  
   
 ## Syntax  
   

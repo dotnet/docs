@@ -8,7 +8,7 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](edm-generator-edmge
   
 ### To generate object-layer code for the School model for a Visual Basic project using EdmGen.exe  
   
-1. Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
+1. Create the School database. For more information, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
   
 2. Generate the School model or obtain the School.csdl file. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).  
   
@@ -21,7 +21,7 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](edm-generator-edmge
   
 ### To generate object-layer code for the School model for a C# project using EdmGen.exe  
   
-1. Create the School database. For more information, see [Creating the School Sample Database](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
+1. Create the School database. For more information, see [Creating the School Sample Database](/previous-versions/dotnet/netframework-4.0/bb399731(v=vs.100)).  
   
 2. Generate the School model or obtain the School.csdl file. For more information, see [How to: Use EdmGen.exe to Generate the Model and Mapping Files](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md).  
   
@@ -35,7 +35,7 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](edm-generator-edmge
 ## See also
 
 - [Modeling and Mapping](modeling-and-mapping.md)
-- [How to: Manually Configure an Entity Framework Project](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))
-- [ADO.NET Entity Data Model  Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
-- [How to: Pre-Generate Views to Improve Query Performance](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))
+- [How to: Manually Configure an Entity Framework Project](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100))
+- [ADO.NET Entity Data Model  Tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
+- [How to: Pre-Generate Views to Improve Query Performance](/previous-versions/dotnet/netframework-4.0/bb896240(v=vs.100))
 - [How to: Use EdmGen.exe to Generate the Model and Mapping Files](how-to-use-edmgen-exe-to-generate-the-model-and-mapping-files.md)

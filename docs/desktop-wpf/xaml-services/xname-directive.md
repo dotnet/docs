@@ -31,7 +31,7 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
 
 After `x:Name` is applied to a framework's backing programming model, the name is equivalent to the variable that holds an object reference or an instance as returned by a constructor.
 
-The value of an `x:Name` directive usage must be unique within a XAML namescope. By default when used by .NET XAML Services API, the primary XAML namescope is defined at the XAML root element of a single XAML production, and encompasses the elements that are contained in that XAML production. Additional discrete XAML namescopes that might occur within a single XAML production can be defined by frameworks to address specific scenarios. For example, in WPF, new XAML namescopes are defined and created by any template that is also defined on that XAML production. For more information about XAML namescopes (written for WPF but relevant for many XAML namescope concepts), see [WPF XAML Namescopes](../../framework/wpf/advanced/wpf-xaml-namescopes.md).
+The value of an `x:Name` directive usage must be unique within a XAML namescope. By default when used by .NET XAML Services API, the primary XAML namescope is defined at the XAML root element of a single XAML production, and encompasses the elements that are contained in that XAML production. Additional discrete XAML namescopes that might occur within a single XAML production can be defined by frameworks to address specific scenarios. For example, in WPF, new XAML namescopes are defined and created by any template that is also defined on that XAML production. For more information about XAML namescopes (written for WPF but relevant for many XAML namescope concepts), see [WPF XAML Namescopes](/dotnet/desktop/wpf/advanced/wpf-xaml-namescopes).
 
 In general, `x:Name` should not be applied in situations that also use `x:Key`. XAML implementations by specific existing frameworks have introduced substitution concepts between `x:Key` and `x:Name`, but that is not a recommended practice. .NET XAML Services does not support such substitution concepts when handling name/key information such as <xref:System.Windows.Markup.INameScope> or <xref:System.Windows.Markup.DictionaryKeyPropertyAttribute>.
 
@@ -45,7 +45,7 @@ Using.NET XAML Services, the backing logic for XAML namescope support can be def
 
 Under the standard build configuration for a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] application that uses XAML, partial classes, and code-behind, the specified `x:Name` becomes the name of a field that is created in the underlying code when [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is processed by a markup compilation build task, and that field holds a reference to the object. By default, the created field is internal. You can change field access by specifying the [x:FieldModifier attribute](xfieldmodifier-directive.md). In WPF and Silverlight, the sequence is that the markup compile defines and names the field in a partial class, but the value is initially empty. Then, a generated method named `InitializeComponent` is called from within the class constructor. `InitializeComponent` consists of `FindName` calls using each of the `x:Name` values that exist in the XAML-defined part of the partial class as input strings. The return values are then assigned to the like-named field reference to fill the field values with objects that were created from XAML parsing. The execution of `InitializeComponent` make it possible to reference the run time object graph using the `x:Name` / field name directly, rather than having to call `FindName` explicitly any time you need a reference to a XAML-defined object.
 
-For a WPF application that uses the Microsoft Visual Basic targets and includes XAML files with `Page` build action, a separate reference property is created during compilation that adds the `WithEvents` keyword to all elements that have an `x:Name`, to support `Handles` syntax for event handler delegates. This property is always public. For more information, see [Visual Basic and WPF Event Handling](../../framework/wpf/advanced/visual-basic-and-wpf-event-handling.md).
+For a WPF application that uses the Microsoft Visual Basic targets and includes XAML files with `Page` build action, a separate reference property is created during compilation that adds the `WithEvents` keyword to all elements that have an `x:Name`, to support `Handles` syntax for event handler delegates. This property is always public. For more information, see [Visual Basic and WPF Event Handling](/dotnet/desktop/wpf/advanced/visual-basic-and-wpf-event-handling).
 
 `x:Name` is used by the WPF XAML processor to register a name into a XAML namescope at load time, even for cases where the page is not markup-compiled by build actions (for example, loose XAML of a resource dictionary). One reason for this behavior is because the `x:Name` is potentially needed for <xref:System.Windows.Data.Binding.ElementName%2A> binding. For details, see [Data Binding Overview](../data/data-binding-overview.md).
 
@@ -63,10 +63,10 @@ If <xref:System.Windows.FrameworkElement.Name%2A> is available as a property on 
 
 ## Silverlight Usage Notes
 
-`x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).
+`x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).
 
 ## See also
 
 - <xref:System.Windows.FrameworkElement.Name%2A?displayProperty=nameWithType>
 - <xref:System.Windows.FrameworkContentElement.Name%2A?displayProperty=nameWithType>
-- [Trees in WPF](../../framework/wpf/advanced/trees-in-wpf.md)
+- [Trees in WPF](/dotnet/desktop/wpf/advanced/trees-in-wpf)

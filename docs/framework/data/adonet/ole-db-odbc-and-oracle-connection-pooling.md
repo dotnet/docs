@@ -17,7 +17,7 @@ Provider=SQLOLEDB;OLE DB Services=-4;Data Source=localhost;Integrated Security=S
 
  We recommend that you always close or dispose of a connection when you are finished using it in order to return the connection to the pool. Connections that are not explicitly closed may not get returned to the pool. For example, a connection that has gone out of scope but that has not been explicitly closed will only be returned to the connection pool if the maximum pool size has been reached and the connection is still valid.
 
- For more information about OLE DB session or resource pooling, as well as how to disable pooling by overriding OLE DB provider service defaults, see the [OLE DB Programmer's Guide](https://docs.microsoft.com/previous-versions/windows/desktop/ms713643(v=vs.85)).
+ For more information about OLE DB session or resource pooling, as well as how to disable pooling by overriding OLE DB provider service defaults, see the [OLE DB Programmer's Guide](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
 ## ODBC
  Connection pooling for the .NET Framework Data Provider for ODBC is managed by the ODBC Driver Manager that is used for the connection, and is not affected by the .NET Framework Data Provider for ODBC.

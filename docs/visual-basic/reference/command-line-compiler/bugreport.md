@@ -63,4 +63,4 @@ vbc -bugreport:problem.txt t2.vb
 - [-debug (Visual Basic)](debug.md)
 - [-errorreport](errorreport.md)
 - [Sample Compilation Command Lines](sample-compilation-command-lines.md)
-- [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/as399f0x(v=vs.100))
+- [trustLevel Element for securityPolicy (ASP.NET Settings Schema)](/previous-versions/dotnet/netframework-4.0/as399f0x(v=vs.100))

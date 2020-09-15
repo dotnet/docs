@@ -33,6 +33,6 @@ Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. L
 ## See also
 
 - [ORDER BY](order-by-entity-sql.md)
-- [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [How to: Page Through Query Results](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
 - [Paging](paging-entity-sql.md)
 - [TOP](top-entity-sql.md)

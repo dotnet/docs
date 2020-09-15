@@ -22,7 +22,7 @@ landingContent:
       - linkListType: whats-new
         links:
         - text: "What's new in .NET docs"
-          url: /dotnet/whats-new/index
+          url: ../whats-new/index.yml
       - linkListType: overview
         links:
           - text: What is .NET for Apache Spark?
@@ -30,7 +30,7 @@ landingContent:
       - linkListType: reference
         links:
           - text: API Reference
-            url: /dotnet/api/?view=spark-dotnet
+            url: ../../api/index.md?view=spark-dotnet
           - text: GitHub
             url: https://github.com/dotnet/spark
   - title: Get started in 10 minutes

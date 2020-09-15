@@ -108,4 +108,4 @@ Windows Communication Foundation (WCF) is a SOAP message-based distributed progr
 - [System-Provided Bindings](../system-provided-bindings.md)
 - [Endpoint Creation Overview](../endpoint-creation-overview.md)
 - [Extending Security](../extending/extending-security.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

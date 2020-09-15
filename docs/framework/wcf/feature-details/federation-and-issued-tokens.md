@@ -59,4 +59,4 @@ With Windows Communication Foundation (WCF), you can create clients that communi
 
 - [Authorization](authorization-in-wcf.md)
 - [Custom Tokens](../extending/custom-tokens.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

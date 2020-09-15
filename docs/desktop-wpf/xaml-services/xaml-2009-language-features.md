@@ -13,7 +13,7 @@ XAML 2009 is the shorthand term for new XAML language features that extend the e
 
 In WPF, you can use XAML 2009 features, but only for XAML that is not WPF markup-compiled. Markup-compiled XAML and the BAML form of XAML do not currently support the XAML 2009 language keywords and features.
 
-Note that existing techniques for loading loose XAML in WPF also have possible security and access restrictions to CLR types and the type system that are more restrictive than for markup-compiled XAML. For more information, see [Security (WPF)](../../framework/wpf/security-wpf.md) or [WPF Security Strategy - Platform Security](../../framework/wpf/wpf-security-strategy-platform-security.md).
+Note that existing techniques for loading loose XAML in WPF also have possible security and access restrictions to CLR types and the type system that are more restrictive than for markup-compiled XAML. For more information, see [Security (WPF)](/dotnet/desktop/wpf/security-wpf) or [WPF Security Strategy - Platform Security](/dotnet/desktop/wpf/wpf-security-strategy-platform-security).
 
 XAML 2009 also introduces additional features that either modify the previous XAML 2006 constructs or that modify the basic markup forms.
 

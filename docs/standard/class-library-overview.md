@@ -101,7 +101,7 @@ ms.assetid: 7e4c5921-955d-4b06-8709-101873acf157
   
  In addition to the base data types, the <xref:System> namespace contains over 100 classes, ranging from classes that handle exceptions to classes that deal with core runtime concepts, such as application domains and the garbage collector. The <xref:System> namespace also contains many second-level namespaces.  
   
- For more information about namespaces, use the [.NET API Browser](https://docs.microsoft.com/dotnet/api) to browse the .NET Class Library. The API reference documentation provides documentation on each namespace, its types, and each of their members.  
+ For more information about namespaces, use the [.NET API Browser](../../api/index.md) to browse the .NET Class Library. The API reference documentation provides documentation on each namespace, its types, and each of their members.  
   
 ## See also
 

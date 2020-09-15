@@ -10,11 +10,11 @@ ms.topic: overview
 <!-- TODO:
 
 - Overview of Microsoft.Extensions article
-- Generic Host article
+- Configuration / Config providers
 - Dependency injection article
+- Generic Host article
 - Logging article
 - Options pattern article
-- Configuration / Config providers
 
 -->
 

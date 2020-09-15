@@ -1,5 +1,5 @@
 ---
-Enabled: Configuration providers in .NET
+title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
@@ -127,7 +127,7 @@ The previous configuration file loads the following keys with `value`:
 
 The <xref:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider> uses a directory's files as configuration key-value pairs. The key is the file name. The value contains the file's contents. The Key-per-file configuration provider is used in Docker hosting scenarios.
 
-To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
+To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile%2A> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
 
 Overloads permit specifying:
 
@@ -155,11 +155,11 @@ The following code adds a memory collection to the configuration system:
 
 :::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="16-23":::
 
-In the preceding code, `configuration.AddInMemoryCollection(IEnumerable<KeyValuePair<string, string>>)` is added after the [default configuration providers](#default). For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
+In the preceding code, `configuration.AddInMemoryCollection(IEnumerable<KeyValuePair<string, string>>)` is added after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
 
 ## Environment variable configuration provider
 
-Using the default configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and [Secret manager](xref:security/app-secrets). Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
+Using the default configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager. Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
 
 The `:` separator doesn't work with environment variable hierarchical keys on all platforms. `__`, the double underscore, is:
 
@@ -168,7 +168,7 @@ The `:` separator doesn't work with environment variable hierarchical keys on al
 
 The following `set` commands:
 
-- Set the environment keys and values of the [preceding example](#appsettingsjson) on Windows.
+- Set the environment keys and values of the preceding example on Windows.
 - Test the settings by changing them from their default values. The `dotnet run` command must be run in the project directory.
 
 ```dotnetcli
@@ -197,7 +197,7 @@ To test that the preceding commands override *appsettings.json* and *appsettings
 - With Visual Studio: Exit and restart Visual Studio.
 - With the CLI: Start a new command window and enter `dotnet run`.
 
-Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables> with a string to specify a prefix for environment variables:
+Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string to specify a prefix for environment variables:
 
 :::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="16-17":::
 
@@ -228,7 +228,28 @@ On [Azure App Service](https://azure.microsoft.com/services/app-service), select
 
 <!-- For more information, see [Azure Apps: Override app configuration using the Azure Portal](xref:host-and-deploy/azure-apps/index#override-app-configuration-using-the-azure-portal). -->
 
-See [Connection string prefixes](#constr) for information on Azure database connection strings.
+### Connection string prefixes
+
+The Configuration API has special processing rules for four connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the table are loaded into the app with the [default configuration](#default) or when no prefix is supplied to `AddEnvironmentVariables`.
+
+| Connection string prefix | Provider                                                                |
+|--------------------------|-------------------------------------------------------------------------|
+| `CUSTOMCONNSTR_`         | Custom provider                                                         |
+| `MYSQLCONNSTR_`          | [MySQL](https://www.mysql.com)                                          |
+| `SQLAZURECONNSTR_`       | [Azure SQL Database](https://azure.microsoft.com/services/sql-database) |
+| `SQLCONNSTR_`            | [SQL Server](https://www.microsoft.com/sql-server)                      |
+
+When an environment variable is discovered and loaded into configuration with any of the four prefixes shown in the table:
+
+- The configuration key is created by removing the environment variable prefix and adding a configuration key section (`ConnectionStrings`).
+- A new configuration key-value pair is created that represents the database connection provider (except for `CUSTOMCONNSTR_`, which has no stated provider).
+
+| Environment variable key | Converted configuration key | Provider configuration entry                                                    |
+|--------------------------|-----------------------------|---------------------------------------------------------------------------------|
+| `CUSTOMCONNSTR_{KEY} `   | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `MYSQLCONNSTR_{KEY}`     | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
+| `SQLAZURECONNSTR_{KEY}`  | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
+| `SQLCONNSTR_{KEY}`       | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 
 ### Environment variables set in launchSettings.json
 

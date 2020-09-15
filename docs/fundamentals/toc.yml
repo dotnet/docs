@@ -698,12 +698,16 @@ items:
 - name: Microsoft Extensions 
   items:
   - name: Configuration
-    href: /aspnet/core/fundamentals/configuration/
+    href: ../core/extensions/configuration.md
   - name: Dependency injection
-    href: /aspnet/core/fundamentals/dependency-injection/
+    href: /aspnet/core/fundamentals/dependency-injection
+  - name: Generic host
+    href: /aspnet/core/fundamentals/host/generic-host
   - name: Logging
-    href: /aspnet/core/fundamentals/logging/
-- name: Data access 
+    href: /aspnet/core/fundamentals/logging
+  - name: Options pattern
+    href: /aspnet/core/fundamentals/configuration/options
+- name: Data access
   items:
   - name: LINQ
     href: ../standard/linq/

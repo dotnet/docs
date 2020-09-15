@@ -89,7 +89,7 @@ The following table describes the tags for use inside description sections:
 
 ### User-defined tags
 
-Tthe tags described above represent those that are recognized by the F# compiler and typical F# IDE tooling. However, a user is free to define their own tags.
+The previous tags represent those that are recognized by the F# compiler and typical F# editor tooling. However, a user is free to define their own tags.
 Tools like fsdocs bring support for extra tags like [\<namespacedoc>](https://github.com/fsharp/fslang-design/blob/master/tooling/FST-1031-xmldoc-extensions.md).
 Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.
 

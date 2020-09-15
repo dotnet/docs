@@ -74,6 +74,6 @@ Get started developing .NET Core applications by following these step-by-step tu
 |---|---|
 | ![movie camera icon for video](media/video-icon.png "Watch a video") | Watch a video on [getting started with Visual Studio Code using C# and .NET Core on macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-VSCode-NET-Core-Mac). |
 
-See the [.NET Core dependencies and requirements](./install/windows.md?pivots=os-macos) article for a list of the supported OS X / macOS versions.
+See the [.NET Core dependencies and requirements](./install/macos.md) article for a list of the supported OS X / macOS versions.
 
 ---

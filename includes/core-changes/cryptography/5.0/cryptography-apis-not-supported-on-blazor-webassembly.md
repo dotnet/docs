@@ -1,10 +1,10 @@
 ### System.Security.Cryptography APIs not supported on Blazor WebAssembly
 
-<xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> at run time on the `browser` platform.
+<xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> at run time when run on a browser.
 
 #### Change description
 
-In previous .NET versions, you can use the <xref:System.Security.Cryptography> APIs in the Blazor WebAssembly configuration. In .NET 5.0 and later versions, these APIs throw a <xref:System.PlatformNotSupportedException> when invoked from projects that use the `Microsoft.NET.Sdk.BlazorWebAssembly` SDK or that include `browser` as a supported platform in the project file.
+In previous .NET versions, the <xref:System.Security.Cryptography> APIs aren't available to Blazor WebAssembly apps. Starting in .NET 5.0, Blazor WebAssembly apps target the full .NET 5 API surface area, however, not all .NET 5 APIs are supported due to browser sandbox constraints. In .NET 5.0 and later versions, the <xref:System.Security.Cryptography> APIs throw a <xref:System.PlatformNotSupportedException> when running on WebAssembly.
 
 #### Reason for change
 

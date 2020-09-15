@@ -21,7 +21,7 @@ In projects that target platforms for which APIs that they use aren't available,
   }
   ```
 
-- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is not supported in the browser and is decorated with `[UnsupportedOSPlatform("browser")]`. The following code will produce a CA1416 warning at build time if the project includes `browser` as a supported platform (`<SupportedPlatform Include="browser" />`) in the project file.
+- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is not supported in the browser and is decorated with `[UnsupportedOSPlatform("browser")]`. The following code will produce a CA1416 warning at build time if the project supports the browser platform.
 
   ```csharp
   public void CreateImage()

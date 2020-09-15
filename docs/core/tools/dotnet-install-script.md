@@ -125,7 +125,7 @@ The install scripts do not update the registry on Windows. They just download th
 
 - **`-NoCdn|--no-cdn`**
 
-  Disables downloading from the [Azure Content Delivery Network (CDN)](https://docs.microsoft.com/azure/cdn/cdn-overview) and uses the uncached feed directly.
+  Disables downloading from the [Azure Content Delivery Network (CDN)](/azure/cdn/cdn-overview) and uses the uncached feed directly.
 
 - **`-NoPath|--no-path`**
 

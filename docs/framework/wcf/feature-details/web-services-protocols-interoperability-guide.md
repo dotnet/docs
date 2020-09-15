@@ -67,7 +67,7 @@ Infrastructure protocols interoperability is provided by the WS-* specifications
 
 |Specification/Document|Link|
 |-----------------------------|----------|
-|WS-Coordination|[Web Services Coordination](https://docs.microsoft.com/previous-versions/ms951231(v=msdn.10))|
+|WS-Coordination|[Web Services Coordination](/previous-versions/ms951231(v=msdn.10))|
 |WS-AtomicTransaction|[Web Services Atomic Transaction](http://specs.xmlsoap.org/ws/2004/10/wsat/wsat.pdf)|
 
 The <xref:System.ServiceModel.Description.MetadataExporter>, <xref:System.ServiceModel.Description.MetadataImporter>, <xref:System.ServiceModel.Description.WsdlExporter>, <xref:System.ServiceModel.Description.WsdlImporter>, and <xref:System.ServiceModel.Description.MetadataResolver> classes provide support for the following metadata specifications:

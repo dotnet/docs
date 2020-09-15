@@ -36,4 +36,4 @@ Provides the [ResolveTypeLib method](resolvetypelib-method.md), which resolves t
 ## See also
 
 - [Tlbexp Helper Functions](index.md)
-- [LoadTypeLibEx function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+- [LoadTypeLibEx function](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

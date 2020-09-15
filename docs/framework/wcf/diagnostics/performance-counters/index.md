@@ -121,7 +121,7 @@ Several files are installed in the SDK install folder so that you can access the
 - *\_SMSvcHostPerfCounters.vrg*
 - *\_TransactionBridgePerfCounters.vrg*
   
-For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
+For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
   
 ## See also
 

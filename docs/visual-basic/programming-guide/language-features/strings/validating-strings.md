@@ -27,4 +27,4 @@ This section discusses how to validate strings in Visual Basic.
 ## See also
 
 - [Strings](index.md)
-- [MaskedTextBox Control](../../../../framework/winforms/controls/maskedtextbox-control-windows-forms.md)
+- [MaskedTextBox Control](/dotnet/desktop/winforms/controls/maskedtextbox-control-windows-forms)

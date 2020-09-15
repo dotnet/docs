@@ -50,7 +50,7 @@ Server.Database.DatabaseSchema.DatabaseObject
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[User-Schema Separation](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms190387(v=sql.105))|Describes the changes introduced by user-schema separation. Includes new behavior, its impact on ownership, catalog views, and permissions.|  
+|[User-Schema Separation](/previous-versions/sql/sql-server-2008-r2/ms190387(v=sql.105))|Describes the changes introduced by user-schema separation. Includes new behavior, its impact on ownership, catalog views, and permissions.|  
   
 ## See also
 

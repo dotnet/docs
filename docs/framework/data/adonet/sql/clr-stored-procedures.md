@@ -17,9 +17,9 @@ For more detailed information, see the version of [SQL Server documentation](/sq
   
  **SQL Server documentation**
 
-1. [CLR Stored Procedures](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms131094(v=sql.100))  
+1. [CLR Stored Procedures](/previous-versions/sql/sql-server-2008/ms131094(v=sql.100))  
   
 ## See also
 
-- [Creating SQL Server 2005 Objects In Managed Code](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/6s0s2at1(v=vs.90))
+- [Creating SQL Server 2005 Objects In Managed Code](/previous-versions/visualstudio/visual-studio-2008/6s0s2at1(v=vs.90))
 - [ADO.NET Overview](../ado-net-overview.md)

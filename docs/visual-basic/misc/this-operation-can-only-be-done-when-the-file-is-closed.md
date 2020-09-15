@@ -14,4 +14,4 @@ When a file is open, an attempt has been made to perform an operation that can o
 
 - <xref:System.Security.Permissions.FileIOPermission>
 - <xref:Microsoft.VisualBasic.FileSystem.FileClose%2A>
-- [How to: Get Information About a File in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))
+- [How to: Get Information About a File in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))

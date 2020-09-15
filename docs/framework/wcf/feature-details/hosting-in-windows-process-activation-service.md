@@ -20,7 +20,7 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
 - Centralized application configuration and management.  
   
 - Allows applications to take advantage of the IIS process model without requiring the deployment footprint of a full IIS installation.  
-[Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)) works with IIS 7.0 and Windows Process Activation Service (WAS) to provide a rich application hosting environment for NET4 WCF and WF services. These benefits include process life-cycle management, process recycling, shared hosting, rapid failure protection, process orphaning, on-demand activation, and health monitoring. For detailed information, see [AppFabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10)) and [AppFabric Hosting Concepts](https://docs.microsoft.com/previous-versions/appfabric/ee677371(v=azure.10)).  
+[Windows Server AppFabric](/previous-versions/appfabric/ff384253(v=azure.10)) works with IIS 7.0 and Windows Process Activation Service (WAS) to provide a rich application hosting environment for NET4 WCF and WF services. These benefits include process life-cycle management, process recycling, shared hosting, rapid failure protection, process orphaning, on-demand activation, and health monitoring. For detailed information, see [AppFabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10)) and [AppFabric Hosting Concepts](/previous-versions/appfabric/ee677371(v=azure.10)).  
   
 ## Elements of the WAS Addressing Model  
  Applications have Uniform Resource Identifier (URI) addresses, which are the code units whose lifetime and execution environment are managed by the server. A single WAS server instance can be home to many different applications. Servers organize applications into groups called *sites*. Within a site, applications are arranged in a hierarchical manner that reflects the structure of the URIs that serve as their external addresses.  
@@ -49,4 +49,4 @@ The Windows Process Activation Service (WAS) manages the activation and lifetime
 - [Configuring WAS for Use with WCF](configuring-the-wpa--service-for-use-with-wcf.md)
 - [How to: Install and Configure WCF Activation Components](how-to-install-and-configure-wcf-activation-components.md)
 - [How to: Host a WCF Service in WAS](how-to-host-a-wcf-service-in-was.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

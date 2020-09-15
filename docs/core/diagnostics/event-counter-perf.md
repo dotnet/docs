@@ -24,11 +24,11 @@ The tutorial uses:
 
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
 - [dotnet-counters](dotnet-counters.md) to monitor event counters.
-- A [sample debug target](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) app to diagnose.
+- A [sample debug target](/samples/dotnet/samples/diagnostic-scenarios) app to diagnose.
 
 ## Get the source
 
-The sample application will be used as a basis for monitoring. The [sample ASP.NET Core repository](https://docs.microsoft.com/samples/dotnet/samples/diagnostic-scenarios) is available from the samples browser. You download the zip file, extract it once downloaded, and open it in your favorite IDE. Build and run the application to ensure that it works properly, then stop the application.
+The sample application will be used as a basis for monitoring. The [sample ASP.NET Core repository](/samples/dotnet/samples/diagnostic-scenarios) is available from the samples browser. You download the zip file, extract it once downloaded, and open it in your favorite IDE. Build and run the application to ensure that it works properly, then stop the application.
 
 ## Implement an EventSource
 

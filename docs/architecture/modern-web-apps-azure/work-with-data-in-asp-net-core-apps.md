@@ -367,7 +367,7 @@ In addition to relational and NoSQL storage options, ASP.NET Core applications c
 **References – Azure Storage**
 
 - Azure Storage Introduction
-  <https://docs.microsoft.com/azure/storage/storage-introduction>
+  <https://docs.microsoft.com/azure/storage/common/storage-introduction>
 
 ## Caching
 

@@ -31,7 +31,7 @@ Configures XAML markup compilation to join partial classes between markup and co
 
 ## Dependencies
 
-`x:Class` can only be specified on the root element of a XAML production. `x:Class` is invalid on any object that has a parent in the XAML production. For more information, see [\[MS-XAML\] Section 4.3.1.6](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+`x:Class` can only be specified on the root element of a XAML production. `x:Class` is invalid on any object that has a parent in the XAML production. For more information, see [\[MS-XAML\] Section 4.3.1.6](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
 ## Remarks
 
@@ -43,24 +43,24 @@ The value of the `x:Class` directive must be a string that specifies the fully q
 
 The code-behind file for a page or application definition must be within a code file that is included as part of the project that produces a compiled application and involves markup compilation. You must follow name rules for CLR classes. For more information, see [Framework Design Guidelines](../../../api/index.md). By default, the code-behind class must be `public`; however, you can define it at a different access level by using the [x:ClassModifier Directive](xclassmodifier-directive.md).
 
-This interpretation of the `x:Class` attribute applies only to a CLR-based XAML implementation, in particular to .NET XAML Services. Other XAML implementations that are not based on CLR and that do not use .NET XAML Services might use a different resolution formula for connecting XAML markup and backing run-time code. For more information about more general interpretations of `x:Class`, see [\[MS-XAML\]](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+This interpretation of the `x:Class` attribute applies only to a CLR-based XAML implementation, in particular to .NET XAML Services. Other XAML implementations that are not based on CLR and that do not use .NET XAML Services might use a different resolution formula for connecting XAML markup and backing run-time code. For more information about more general interpretations of `x:Class`, see [\[MS-XAML\]](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
 At a certain level of architecture, the meaning of `x:Class` is undefined in .NET XAML Services. This is because .NET XAML Services does not specify the programming model by which XAML markup and backing code are connected. Additional uses of the `x:Class` directive might be implemented by specific frameworks that use programming models or application models to define how to connect XAML markup and CLR-based code-behind. Each framework can have its own build actions that enable some of the behavior or specific components that must be included in the build environment. Within a framework, build actions can also vary depending on the specific CLR language that is used for the code-behind.
 
 ## x:Class in the WPF Programming Model
 
-In WPF applications and the WPF application model, `x:Class` can be declared as an attribute for any element that is the root of a XAML file and is being compiled (where the XAML is included in a WPF application project with `Page` build action), or for the <xref:System.Windows.Application> root in the application definition of a compiled WPF application. Declaring `x:Class` on an element other than a page root or application root, or on a WPF XAML file that is not compiled, causes a compile-time error under the .NET Framework 3.0 and .NET Framework 3.5 WPF XAML compiler. For information about other aspects of `x:Class` handling in WPF, see [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md).
+In WPF applications and the WPF application model, `x:Class` can be declared as an attribute for any element that is the root of a XAML file and is being compiled (where the XAML is included in a WPF application project with `Page` build action), or for the <xref:System.Windows.Application> root in the application definition of a compiled WPF application. Declaring `x:Class` on an element other than a page root or application root, or on a WPF XAML file that is not compiled, causes a compile-time error under the .NET Framework 3.0 and .NET Framework 3.5 WPF XAML compiler. For information about other aspects of `x:Class` handling in WPF, see [Code-Behind and XAML in WPF](/dotnet/desktop/wpf/advanced/code-behind-and-xaml-in-wpf).
 
 ## x:Class for Windows Workflow Foundation
 For Windows Workflow Foundation, `x:Class` names the class of a custom activity composed entirely in XAML, or names the partial class of the XAML page for  an activity designer with code-behind.
 
 ## Silverlight Usage Notes
 
-`x:Class` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).
+`x:Class` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).
 
 ## See also
 
 - [x:Subclass Directive](xsubclass-directive.md)
-- [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML and Custom Classes for WPF](/dotnet/desktop/wpf/advanced/xaml-and-custom-classes-for-wpf)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)
-- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)
+- [Types Migrated from WPF to System.Xaml](/dotnet/desktop/wpf/advanced/types-migrated-from-wpf-to-system)

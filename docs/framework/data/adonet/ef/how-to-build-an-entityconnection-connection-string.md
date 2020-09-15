@@ -11,7 +11,7 @@ This topic provides an example of how to build an <xref:System.Data.EntityClient
   
 ### To run the code in this example  
   
-1. Add the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) to your project and configure your project to use the Entity Framework. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
+1. Add the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks) to your project and configure your project to use the Entity Framework. For more information, see [How to: Use the Entity Data Model Wizard](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
 2. In the code page for your application, add the following `using` statements (`Imports` in Visual Basic):  
   
@@ -26,5 +26,5 @@ This topic provides an example of how to build an <xref:System.Data.EntityClient
   
 ## See also
 
-- [How to: Use EntityConnection with an Object Context](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738461(v=vs.100))
+- [How to: Use EntityConnection with an Object Context](/previous-versions/dotnet/netframework-4.0/bb738461(v=vs.100))
 - [EntityClient Provider for the Entity Framework](entityclient-provider-for-the-entity-framework.md)

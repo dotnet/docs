@@ -10,7 +10,7 @@ In .NET Core 3.0 and later versions, <xref:System.Security.Cryptography.CryptoSt
 
 #### Reason for change
 
-This change enables incomplete reads from the crypto stream when a network operation is cancelled, without the need to catch an exception.
+This change enables incomplete reads from the crypto stream when a network operation is canceled, without the need to catch an exception.
 
 #### Version introduced
 

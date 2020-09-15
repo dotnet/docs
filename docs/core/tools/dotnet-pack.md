@@ -180,6 +180,6 @@ Web projects aren't packable by default. To override the default behavior, add t
 
   For information about how to use `NuspecFile`, `NuspecBasePath`, and `NuspecProperties`, see the following resources:
   
-  - [Packing using a .nuspec](https://docs.microsoft.com/nuget/reference/msbuild-targets#packing-using-a-nuspec)
-  - [Advanced extension points to create customized package](https://docs.microsoft.com/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
-  - [Global properties](https://docs.microsoft.com/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)
+  - [Packing using a .nuspec](/nuget/reference/msbuild-targets#packing-using-a-nuspec)
+  - [Advanced extension points to create customized package](/nuget/reference/msbuild-targets#advanced-extension-points-to-create-customized-package)
+  - [Global properties](/visualstudio/msbuild/msbuild-properties?view=vs-2019#global-properties)

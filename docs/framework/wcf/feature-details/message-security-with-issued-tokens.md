@@ -13,4 +13,4 @@ The issued token client enables the federated security scenario in Windows Commu
 ## See also
 
 - [Federation and Issued Tokens](federation-and-issued-tokens.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

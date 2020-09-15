@@ -60,7 +60,7 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder2%A> method:
   - Command-line arguments.
 - Loads app configuration from:
   - *appsettings.json*.
-  - *appsettings.{Environment}.json*.
+  - *appsettings.`Environment`.json*.
   - Secret Manager when the app runs in the `Development` environment.
   - Environment variables.
   - Command-line arguments.

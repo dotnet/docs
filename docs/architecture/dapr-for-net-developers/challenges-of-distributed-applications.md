@@ -24,7 +24,7 @@ For years, we designed, developed, and deployed applications as a single, monoli
 
 **Figure 1-x**. Monolithic architecture.
 
-Note in the previous figure how modules for Ordering, Identity, Marketing, and others, all reside in a single server process. Applicaiton state is stored inside a shared reltaional database. Business functionality is exposed via an HTML and RESTFul interface.
+In the previous figure, note how modules for Ordering, Identity, Marketing, and others, all reside in a single server process. Applicaiton state is stored inside a shared reltaional database. Business functionality is exposed via HTML and RESTFul interfaces.
 
 Although simple and straightforward, monolithic architectures face a number of challenges:
 
@@ -32,9 +32,9 @@ Although simple and straightforward, monolithic architectures face a number of c
 - Deployment
 - Scaling
 
-The challenges become more pronounced as the application grows in size, complexity, and volume.
+As the application grows in size, complexity, and volumne, these challenges become more pronounced. Eventually, you enter the `Fear Cycle`. The *fear cycle* is a state in which you have lost control of your monolithic application.
 
-In the Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/), reference is made to the `Fear Cycle`. The *fear cycle* is a state in which you have lost control of your monolithic application. Obvious giveways include:
+The Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/), provide the obvious giveways:
 
 - The app has become so overwhelmingly complicated that no single person understands it.
 - You fear making changes - each change has unintended and costly side effects.
@@ -46,7 +46,7 @@ In the Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure]
 - Architectural erosion sets in as the code base deteriorates with never-ending "special cases."
 - The consultants tell you to rewrite it.
 
-As applications become increasingly complex and users demand more and more, businesses require speed and agility. They need an architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.
+Instead of fear, business need speed and agility. They need an architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.
 
 Many organizations have addressed the monolithic fear cycle and are gaining speed and agility by adopting a distributed architectural approach to building systems. Figure 1-x shows the same system built applying cloud-native techniques and practices.
 

@@ -140,7 +140,7 @@ Documenting code is recommended for many reasons. What follows are some best pra
 
 - For the sake of consistency, all publicly visible types and their members should be documented. If you must do it, do it all.
 
-- At a bare minimum, modules, types and their members should have a plain `///` comment or `<summary>` tag because its content is needed for auto-complete.
+- At a bare minimum, modules, types and their members should have a plain `///` comment or `<summary>` tag. This will show in an autocompletion tooltip window in F# editing tools.
 
 - Documentation text should be written using complete sentences ending with full stops.
 

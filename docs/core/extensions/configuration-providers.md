@@ -159,7 +159,7 @@ The following code adds a memory collection to the configuration system:
 
 :::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="16-23":::
 
-In the preceding code, `configuration.AddInMemoryCollection(IEnumerable<KeyValuePair<string, string>>)` is added after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
+In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})?displayProperty=nameWithType> is added after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
 
 ## Environment variable configuration provider
 

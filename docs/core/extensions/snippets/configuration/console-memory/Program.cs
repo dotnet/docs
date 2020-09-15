@@ -12,7 +12,7 @@ namespace ConsoleMemory.Example
 
         static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureAppConfiguration((hostingContext, configuration) =>
+                .ConfigureAppConfiguration((_, configuration) =>
                     configuration.AddInMemoryCollection(
                         new Dictionary<string, string>
                         {

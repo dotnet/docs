@@ -52,9 +52,9 @@ Configuration providers that are added later override previous key settings. For
 
 ## Default builder settings
 
-The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder2%A> method:
+The <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder> method:
 
-- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory2%A>.
+- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory?displayProperty=nameWithType>.
 - Loads host configuration from:
   - Environment variables prefixed with `DOTNET_`.
   - Command-line arguments.

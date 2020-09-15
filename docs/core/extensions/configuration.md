@@ -3,7 +3,7 @@ title: Configuration in .NET
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/11/2020
+ms.date: 09/15/2020
 ms.topic: overview
 ---
 
@@ -48,9 +48,28 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[]
 1. Environment variables using the [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider).
 1. Command-line arguments using the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider).
 
-Configuration providers that are added later override previous key settings. For example, if `MyKey` is set in both *appsettings.json* and the environment, the environment value is used. Using the default configuration providers, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all other providers.
+Configuration providers that are added later override previous key settings. For example, if `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used. Using the default configuration providers, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all other providers.
 
-<!-- For more information on `CreateDefaultBuilder`, see [Default builder settings](xref:fundamentals/host/generic-host#default-builder-settings). -->
+## Default builder settings
+
+The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder2%A> method:
+
+- Sets the [content root](xref:fundamentals/index#content-root) to the path returned by <xref:System.IO.Directory.GetCurrentDirectory*>.
+- Loads host configuration from:
+  - Environment variables prefixed with `DOTNET_`.
+  - Command-line arguments.
+- Loads app configuration from:
+  - *appsettings.json*.
+  - *appsettings.{Environment}.json*.
+  - Secret Manager when the app runs in the `Development` environment.
+  - Environment variables.
+  - Command-line arguments.
+- Adds the following logging providers:
+  - Console
+  - Debug
+  - EventSource
+  - EventLog (only when running on Windows)
+- Enables scope validation and [dependency validation](xref:Microsoft.Extensions.DependencyInjection.ServiceProviderOptions.ValidateOnBuild) when the environment is `Development`.
 
 ## Configuration providers
 
@@ -69,3 +88,8 @@ The following table shows the configuration providers available to .NET Core app
 | Secret Manager                                                                                                         | File in the user profile directory |
 
 For more information on various configuration providers, see [Configuration providers in .NET](configuration-providers.md).
+
+## See also
+
+- [Configuration providers in .NET](configuration-providers.md)
+- [Implement a custom configuration provider](custom-configuration-provider.md)

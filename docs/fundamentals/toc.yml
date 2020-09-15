@@ -698,7 +698,16 @@ items:
 - name: Microsoft Extensions 
   items:
   - name: Configuration
-    href: ../core/extensions/configuration.md
+    items:
+    - name: Overview
+      href: ../core/extensions/configuration.md
+      displayName: configuration,config,configuration sources,config sources
+    - name: Configuration providers
+      href: ../core/extensions/configuration-providers.md
+      displayName: configuration providers,config providers
+    - name: Implement a custom configuration provider
+      href: ../core/extensions/custom-configuration-provider.md
+      displayName: custom configuration,custom config,custom configuration provider,custom config provider
   - name: Dependency injection
     href: /aspnet/core/fundamentals/dependency-injection
   - name: Generic host

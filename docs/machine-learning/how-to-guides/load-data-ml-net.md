@@ -112,7 +112,7 @@ ML.NET supports loading data from a variety of relational databases supported by
 
 Given a database with a table named `House` and the following schema:
 
-```SQL
+```sql
 CREATE TABLE [House] (
     [HouseId] INT NOT NULL IDENTITY,
     [Size] INT NOT NULL,

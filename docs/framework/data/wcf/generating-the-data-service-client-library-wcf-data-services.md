@@ -13,9 +13,9 @@ A data service that implements the Open Data Protocol (OData) can return a servi
 - Requests the service metadata document from the data service and interprets the returned metadata.  
   
     > [!NOTE]
-    > The returned metadata is stored in the client project as an .edmx file. This .edmx file cannot be opened by using the Entity Data Model designer because it does not have the same format an .edmx file used by the Entity Framework. You can view this metadata file by using the XML editor or any text editor. For more information, see [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](https://docs.microsoft.com/openspecs/windows_protocols/mc-edmx/5dff5e25-56a1-408b-9d44-bff6634c7d16).
+    > The returned metadata is stored in the client project as an .edmx file. This .edmx file cannot be opened by using the Entity Data Model designer because it does not have the same format an .edmx file used by the Entity Framework. You can view this metadata file by using the XML editor or any text editor. For more information, see [\[MC-EDMX\]: Entity Data Model for Data Services Packaging Format](/openspecs/windows_protocols/mc-edmx/5dff5e25-56a1-408b-9d44-bff6634c7d16).
   
-- Generates a representation of the service as an entity container class that inherits from <xref:System.Data.Services.Client.DataServiceContext>. This generated entity container class resembles the entity container that the Entity Data Model tools generate. For more information, see [Object Services Overview (Entity Framework)](https://docs.microsoft.com/previous-versions/bb386871(v=vs.100)).  
+- Generates a representation of the service as an entity container class that inherits from <xref:System.Data.Services.Client.DataServiceContext>. This generated entity container class resembles the entity container that the Entity Data Model tools generate. For more information, see [Object Services Overview (Entity Framework)](/previous-versions/bb386871(v=vs.100)).  
   
 - Generates data classes for the data model types that it discovers in the service metadata.  
   

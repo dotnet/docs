@@ -70,7 +70,7 @@ As the figure shows, data binding is essentially the bridge between your binding
 
 - The target property must be a dependency property. Most <xref:System.Windows.UIElement> properties are dependency properties, and most dependency properties, except read-only ones, support data binding by default. (Only types derived from <xref:System.Windows.DependencyObject> can define dependency properties; and all <xref:System.Windows.UIElement> types derive from `DependencyObject`.)
 
-- Although not shown in the figure, it should be noted that the binding source object is not restricted to being a custom .NET object. WPF data binding supports data in the form of .NET objects and XML. To provide some examples, your binding source may be a <xref:System.Windows.UIElement>, any list object, an ADO.NET or Web Services object, or an XmlNode that contains your XML data. For more information, see [Binding sources overview](../../framework/wpf/data/binding-sources-overview.md).
+- Although not shown in the figure, it should be noted that the binding source object is not restricted to being a custom .NET object. WPF data binding supports data in the form of .NET objects and XML. To provide some examples, your binding source may be a <xref:System.Windows.UIElement>, any list object, an ADO.NET or Web Services object, or an XmlNode that contains your XML data. For more information, see [Binding sources overview](/dotnet/desktop/wpf/data/binding-sources-overview).
 
 It is important to remember that when you are establishing a binding, you are binding a binding target *to* a binding source. For example, if you are displaying some underlying XML data in a <xref:System.Windows.Controls.ListBox> using data binding, you are binding your `ListBox` to the XML data.
 
@@ -94,7 +94,7 @@ This figure illustrates the different types of data flow:
 
 - Not illustrated in the figure is <xref:System.Windows.Data.BindingMode.OneTime> binding, which causes the source property to initialize the target property but does not propagate subsequent changes. If the data context changes or the object in the data context changes, the change is *not* reflected in the target property. This type of binding is appropriate if either a snapshot of the current state is appropriate or the data is truly static. This type of binding is also useful if you want to initialize your target property with some value from a source property and the data context is not known in advance. This mode is essentially a simpler form of <xref:System.Windows.Data.BindingMode.OneWay> binding that provides better performance in cases where the source value does not change.
 
-To detect source changes (applicable to <xref:System.Windows.Data.BindingMode.OneWay> and <xref:System.Windows.Data.BindingMode.TwoWay> bindings), the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. See [How to: Implement property change notification](../../framework/wpf/data/how-to-implement-property-change-notification.md) for an example of an <xref:System.ComponentModel.INotifyPropertyChanged> implementation.
+To detect source changes (applicable to <xref:System.Windows.Data.BindingMode.OneWay> and <xref:System.Windows.Data.BindingMode.TwoWay> bindings), the source must implement a suitable property change notification mechanism such as <xref:System.ComponentModel.INotifyPropertyChanged>. See [How to: Implement property change notification](/dotnet/desktop/wpf/data/how-to-implement-property-change-notification) for an example of an <xref:System.ComponentModel.INotifyPropertyChanged> implementation.
 
 The <xref:System.Windows.Data.Binding.Mode?displayProperty=nameWithType> property provides more information about binding modes and an example of how to specify the direction of a binding.
 
@@ -120,7 +120,7 @@ The following table provides an example scenario for each <xref:System.Windows.D
 | `PropertyChanged` | As you type into the <xref:System.Windows.Controls.TextBox>. | TextBox controls in a chat room window. |
 | `Explicit` | When the app calls <xref:System.Windows.Data.BindingExpression.UpdateSource%2A>. | TextBox controls in an editable form (updates the source values only when the user clicks the submit button). |
 
-For an example, see [How to: Control when the TextBox text updates the source](../../framework/wpf/data/how-to-control-when-the-textbox-text-updates-the-source.md).
+For an example, see [How to: Control when the TextBox text updates the source](/dotnet/desktop/wpf/data/how-to-control-when-the-textbox-text-updates-the-source).
 
 ## Creating a binding
 
@@ -130,7 +130,7 @@ Consider the following example, in which the binding source object is a class na
 
 [!code-xaml[BindNonTextProperty](~/samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/AutoConvertPropertyToColor.xaml#BindAutoConvertColor)]
 
-For more information on the binding declaration syntax and examples of how to set up a binding in code, see [Binding Declarations Overview](../../framework/wpf/data/binding-declarations-overview.md).
+For more information on the binding declaration syntax and examples of how to set up a binding in code, see [Binding Declarations Overview](/dotnet/desktop/wpf/data/binding-declarations-overview).
 
 If we apply this example to our basic diagram, the resulting figure looks like the following. This figure describes a <xref:System.Windows.Data.BindingMode.OneWay> binding because the Background property supports <xref:System.Windows.Data.BindingMode.OneWay> binding by default.
 
@@ -146,7 +146,7 @@ There are several ways to specify the binding source object. Using the <xref:Sys
 
 [!code-xaml[BindNonTextPropertyCompactBinding](~/samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/AutoConvertPropertyToColor.xaml#BindAutoConvertColorCompactBinding)]
 
-Other than setting the <xref:System.Windows.FrameworkElement.DataContext%2A> property on an element directly, inheriting the <xref:System.Windows.FrameworkElement.DataContext%2A> value from an ancestor (such as the button in the first example), and explicitly specifying the binding source by setting the <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> property on the binding (such as the button the last example), you can also use the <xref:System.Windows.Data.Binding.ElementName?displayProperty=nameWithType> property or the <xref:System.Windows.Data.Binding.RelativeSource?displayProperty=nameWithType> property to specify the binding source. The <xref:System.Windows.Data.Binding.ElementName%2A> property is useful when you are binding to other elements in your app, such as when you are using a slider to adjust the width of a button. The <xref:System.Windows.Data.Binding.RelativeSource%2A> property is useful when the binding is specified in a <xref:System.Windows.Controls.ControlTemplate> or a <xref:System.Windows.Style>. For more information, see [How to: Specify the binding source](../../framework/wpf/data/how-to-specify-the-binding-source.md).
+Other than setting the <xref:System.Windows.FrameworkElement.DataContext%2A> property on an element directly, inheriting the <xref:System.Windows.FrameworkElement.DataContext%2A> value from an ancestor (such as the button in the first example), and explicitly specifying the binding source by setting the <xref:System.Windows.Data.Binding.Source%2A?displayProperty=nameWithType> property on the binding (such as the button the last example), you can also use the <xref:System.Windows.Data.Binding.ElementName?displayProperty=nameWithType> property or the <xref:System.Windows.Data.Binding.RelativeSource?displayProperty=nameWithType> property to specify the binding source. The <xref:System.Windows.Data.Binding.ElementName%2A> property is useful when you are binding to other elements in your app, such as when you are using a slider to adjust the width of a button. The <xref:System.Windows.Data.Binding.RelativeSource%2A> property is useful when the binding is specified in a <xref:System.Windows.Controls.ControlTemplate> or a <xref:System.Windows.Style>. For more information, see [How to: Specify the binding source](/dotnet/desktop/wpf/data/how-to-specify-the-binding-source).
 
 ### Specifying the path to the value
 
@@ -177,9 +177,9 @@ You can use the same *myBinding* object to create other bindings. For example, y
 
 A <xref:System.Windows.Data.BindingExpression> object is returned by calling <xref:System.Windows.Data.BindingOperations.GetBindingExpression%2A> on a data-bound object. The following articles demonstrate some of the usages of the <xref:System.Windows.Data.BindingExpression> class:
 
-- [Get the binding object from a bound target property](../../framework/wpf/data/how-to-get-the-binding-object-from-a-bound-target-property.md)
+- [Get the binding object from a bound target property](/dotnet/desktop/wpf/data/how-to-get-the-binding-object-from-a-bound-target-property)
 
-- [Control When the TextBox text updates the source](../../framework/wpf/data/how-to-control-when-the-textbox-text-updates-the-source.md)
+- [Control When the TextBox text updates the source](/dotnet/desktop/wpf/data/how-to-control-when-the-textbox-text-updates-the-source)
 
 ## Data conversion
 
@@ -226,7 +226,7 @@ As shown in this diagram, to bind an <xref:System.Windows.Controls.ItemsControl>
 
 You can enumerate over any collection that implements the <xref:System.Collections.IEnumerable> interface. However, to set up dynamic bindings so that insertions or deletions in the collection update the UI automatically, the collection must implement the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. This interface exposes an event that should be raised whenever the underlying collection changes.
 
-WPF provides the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a built-in implementation of a data collection that exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. To fully support transferring data values from source objects to targets, each object in your collection that supports bindable properties must also implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Binding sources overview](../../framework/wpf/data/binding-sources-overview.md).
+WPF provides the <xref:System.Collections.ObjectModel.ObservableCollection%601> class, which is a built-in implementation of a data collection that exposes the <xref:System.Collections.Specialized.INotifyCollectionChanged> interface. To fully support transferring data values from source objects to targets, each object in your collection that supports bindable properties must also implement the <xref:System.ComponentModel.INotifyPropertyChanged> interface. For more information, see [Binding sources overview](/dotnet/desktop/wpf/data/binding-sources-overview).
 
 Before implementing your own collection, consider using <xref:System.Collections.ObjectModel.ObservableCollection%601> or one of the existing collection classes, such as <xref:System.Collections.Generic.List%601>, <xref:System.Collections.ObjectModel.Collection%601>, and <xref:System.ComponentModel.BindingList%601>, among many others. If you have an advanced scenario and want to implement your own collection, consider using <xref:System.Collections.IList>, which provides a non-generic collection of objects that can be individually accessed by the index, and thus provides the best performance.
 
@@ -264,7 +264,7 @@ The following table shows what view data types are created as the default collec
 
 Specifying a collection view as a binding source is one way to create and use a collection view. WPF also creates a default collection view for every collection used as a binding source. If you bind directly to a collection, WPF binds to its default view. This default view is shared by all bindings to the same collection, so a change made to a default view by one bound control or code (such as sorting or a change to the current item pointer, discussed later) is reflected in all other bindings to the same collection.
 
-To get the default view, you use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A> method. For an example, see [Get the default view of a data collection](../../framework/wpf/data/how-to-get-the-default-view-of-a-data-collection.md).
+To get the default view, you use the <xref:System.Windows.Data.CollectionViewSource.GetDefaultView%2A> method. For an example, see [Get the default view of a data collection](/dotnet/desktop/wpf/data/how-to-get-the-default-view-of-a-data-collection).
 
 #### Collection views with ADO.NET DataTables
 
@@ -272,7 +272,7 @@ To improve performance, collection views for ADO.NET <xref:System.Data.DataTable
 
 #### Sorting
 
-As mentioned before, views can apply a sort order to a collection. As it exists in the underlying collection, your data may or may not have a relevant, inherent order. The view over the collection allows you to impose an order, or change the default order, based on comparison criteria that you supply. Because it is a client-based view of the data, a common scenario is that the user might want to sort columns of tabular data per the value that the column corresponds to. Using views, this user-driven sort can be applied, again without making any changes to the underlying collection or even having to requery for the collection content. For an example, see [Sort a GridView column when a header is clicked](../../framework/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked.md).
+As mentioned before, views can apply a sort order to a collection. As it exists in the underlying collection, your data may or may not have a relevant, inherent order. The view over the collection allows you to impose an order, or change the default order, based on comparison criteria that you supply. Because it is a client-based view of the data, a common scenario is that the user might want to sort columns of tabular data per the value that the column corresponds to. Using views, this user-driven sort can be applied, again without making any changes to the underlying collection or even having to requery for the collection content. For an example, see [Sort a GridView column when a header is clicked](/dotnet/desktop/wpf/controls/how-to-sort-a-gridview-column-when-a-header-is-clicked).
 
 The following example shows the sorting logic of the "Sort by category and date" <xref:System.Windows.Controls.CheckBox> of the app UI in the [What is data binding](#what-is-data-binding) section.
 
@@ -291,7 +291,7 @@ The *ShowOnlyBargainsFilter* event handler has the following implementation.
 [!code-csharp[FilterEvent](~/samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/CollectionView.xaml.cs#FilterEvent)]
 [!code-vb[FilterEvent](~/samples/snippets/desktop-guide/wpf/data-binding-overview/vb/CollectionView.xaml.vb#FilterEvent)]
 
-If you are using one of the <xref:System.Windows.Data.CollectionView> classes directly instead of <xref:System.Windows.Data.CollectionViewSource>, you would use the <xref:System.Windows.Data.CollectionView.Filter%2A> property to specify a callback. For an example, see [Filter Data in a View](../../framework/wpf/data/how-to-filter-data-in-a-view.md).
+If you are using one of the <xref:System.Windows.Data.CollectionView> classes directly instead of <xref:System.Windows.Data.CollectionViewSource>, you would use the <xref:System.Windows.Data.CollectionView.Filter%2A> property to specify a callback. For an example, see [Filter Data in a View](/dotnet/desktop/wpf/data/how-to-filter-data-in-a-view).
 
 #### Grouping
 
@@ -302,11 +302,11 @@ The following example shows the logic of the "Group by category" <xref:System.Wi
 [!code-csharp[ListingGroupCheck](~/samples/snippets/desktop-guide/wpf/data-binding-overview/csharp/CollectionView.xaml.cs#ListingGroupCheck)]
 [!code-vb[ListingGroupCheck](~/samples/snippets/desktop-guide/wpf/data-binding-overview/vb/CollectionView.xaml.vb#ListingGroupCheck)]
 
-For another grouping example, see [Group Items in a ListView That Implements a GridView](../../framework/wpf/controls/how-to-group-items-in-a-listview-that-implements-a-gridview.md).
+For another grouping example, see [Group Items in a ListView That Implements a GridView](/dotnet/desktop/wpf/controls/how-to-group-items-in-a-listview-that-implements-a-gridview).
 
 #### Current item pointers
 
-Views also support the notion of a current item. You can navigate through the objects in a collection view. As you navigate, you are moving an item pointer that allows you to retrieve the object that exists at that particular location in the collection. For an example, see [Navigate through the objects in a data CollectionView](../../framework/wpf/data/how-to-navigate-through-the-objects-in-a-data-collectionview.md).
+Views also support the notion of a current item. You can navigate through the objects in a collection view. As you navigate, you are moving an item pointer that allows you to retrieve the object that exists at that particular location in the collection. For an example, see [Navigate through the objects in a data CollectionView](/dotnet/desktop/wpf/data/how-to-navigate-through-the-objects-in-a-data-collectionview).
 
 Because WPF binds to a collection only by using a view (either a view you specify, or the collection's default view), all bindings to collections have a current item pointer. When binding to a view, the slash ("/") character in a `Path` value designates the current item of the view. In the following example, the data context is a collection view. The first line binds to the collection. The second line binds to the current item in the collection. The third line binds to the `Description` property of the current item in the collection.
 
@@ -334,7 +334,7 @@ You can implement the master-detail scenario simply by having two or more contro
 
 Notice that both of the controls are bound to the same source, the *listingDataView* static resource (see the definition of this resource in the [How to create a view section](#how-to-create-a-view)). This binding works because when a singleton object (the <xref:System.Windows.Controls.ContentControl> in this case) is bound to a collection view, it automatically binds to the <xref:System.Windows.Data.CollectionView.CurrentItem%2A> of the view. The <xref:System.Windows.Data.CollectionViewSource> objects automatically synchronize currency and selection. If your list control is not bound to a <xref:System.Windows.Data.CollectionViewSource> object as in this example, then you would need to set its <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> property to `true` for this to work.
 
-For other examples, see [Bind to a collection and display information based on selection](../../framework/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection.md) and [Use the master-detail pattern with hierarchical data](../../framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md).
+For other examples, see [Bind to a collection and display information based on selection](/dotnet/desktop/wpf/data/how-to-bind-to-a-collection-and-display-information-based-on-selection) and [Use the master-detail pattern with hierarchical data](/dotnet/desktop/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data).
 
 You may have noticed that the above example uses a template. In fact, the data would not be displayed the way we wish without the use of templates (the one explicitly used by the <xref:System.Windows.Controls.ContentControl> and the one implicitly used by the <xref:System.Windows.Controls.ListBox>). We now turn to data templating in the next section.
 
@@ -352,7 +352,7 @@ To solve that problem, the app defines <xref:System.Windows.DataTemplate?text=Da
 
 With the use of those two DataTemplates, the resulting UI is the one shown in the [What is data binding](#what-is-data-binding) section. As you can see from that screenshot, in addition to letting you place data in your controls, DataTemplates allow you to define compelling visuals for your data. For example, <xref:System.Windows.DataTrigger>s are used in the above <xref:System.Windows.DataTemplate> so that *AuctionItem*s with *SpecialFeatures* value of *HighLight* would be displayed with an orange border and a star.
 
-For more information about data templates, see the [Data templating overview](../../framework/wpf/data/data-templating-overview.md).
+For more information about data templates, see the [Data templating overview](/dotnet/desktop/wpf/data/data-templating-overview).
 
 ## Data validation
 
@@ -401,7 +401,7 @@ If your <xref:System.Windows.Data.Binding> has associated validation rules but y
 
 ![Data binding validation error](./media/data-binding-overview/demo-validation-price.png "DataBindingDemo_ValidationDefault")
 
-For an example of how to provide logic to validate all controls in a dialog box, see the Custom Dialog Boxes section in the [Dialog boxes overview](../../framework/wpf/app-development/dialog-boxes-overview.md).
+For an example of how to provide logic to validate all controls in a dialog box, see the Custom Dialog Boxes section in the [Dialog boxes overview](/dotnet/desktop/wpf/app-development/dialog-boxes-overview).
 
 ### Validation process
 
@@ -436,10 +436,10 @@ You can set the attached property <xref:System.Diagnostics.PresentationTraceSour
 ## See also
 
 - <xref:System.Windows.Controls.DataErrorValidationRule>
-- [Bind to the results of a LINQ query](../../framework/wpf/data/how-to-bind-to-the-results-of-a-linq-query.md)
-- [Data binding](../../framework/wpf/advanced/optimizing-performance-data-binding.md)
+- [Bind to the results of a LINQ query](/dotnet/desktop/wpf/data/how-to-bind-to-the-results-of-a-linq-query)
+- [Data binding](/dotnet/desktop/wpf/advanced/optimizing-performance-data-binding)
 - [Data binding demo][data-binding-demo]
-- [How-to articles](../../framework/wpf/data/data-binding-how-to-topics.md)
-- [Bind to an ADO.NET data source](../../framework/wpf/data/how-to-bind-to-an-ado-net-data-source.md)
+- [How-to articles](/dotnet/desktop/wpf/data/data-binding-how-to-topics)
+- [Bind to an ADO.NET data source](/dotnet/desktop/wpf/data/how-to-bind-to-an-ado-net-data-source)
 
 [data-binding-demo]: https://github.com/microsoft/WPF-Samples/tree/master/Sample%20Applications/DataBindingDemo "data binding demo app"

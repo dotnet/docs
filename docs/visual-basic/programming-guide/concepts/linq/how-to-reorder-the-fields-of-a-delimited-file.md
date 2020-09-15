@@ -73,4 +73,4 @@ End Class
 
 - [LINQ and Strings (Visual Basic)](linq-and-strings.md)
 - [LINQ and File Directories (Visual Basic)](linq-and-file-directories.md)
-- [How to: Generate XML from CSV Files](how-to-generate-xml-from-csv-files.md)
+- [How to: Generate XML from CSV Files](../../../../standard/linq/generate-xml-csv-files.md)

@@ -213,10 +213,10 @@ If you have many source files that would need to be excluded this way, you can d
 
 ### A brief aside on multi-pass compilers
 
-After removing the offending file from the Bean Trader sample, you can re-build and will get four errors. Didn't you have one before? Why did the number of errors go up? The C# compiler is a [multi-pass compiler](https://docs.microsoft.com/archive/blogs/ericlippert/how-many-passes). This means that it goes through each source file twice. First, the compiler just looks at metadata and declarations in each source file and identifies any declaration-level problems. Those are the errors you've fixed. Then it goes through the code again to build the C# source into IL; those are the second set of errors that you're seeing now.
+After removing the offending file from the Bean Trader sample, you can re-build and will get four errors. Didn't you have one before? Why did the number of errors go up? The C# compiler is a [multi-pass compiler](/archive/blogs/ericlippert/how-many-passes). This means that it goes through each source file twice. First, the compiler just looks at metadata and declarations in each source file and identifies any declaration-level problems. Those are the errors you've fixed. Then it goes through the code again to build the C# source into IL; those are the second set of errors that you're seeing now.
 
 > [!NOTE]
-> The C# compiler does [more than just two passes](https://docs.microsoft.com/archive/blogs/ericlippert/how-many-passes), but the end result is that compiler errors for large code changes like this tend to come in two waves.
+> The C# compiler does [more than just two passes](/archive/blogs/ericlippert/how-many-passes), but the end result is that compiler errors for large code changes like this tend to come in two waves.
 
 ### Third-party dependency fixes (Castle.Windsor)
 

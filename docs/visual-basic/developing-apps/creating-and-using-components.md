@@ -57,9 +57,9 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
   
 ## Related Sections  
 
- [Troubleshooting Control and Component Authoring](../../framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
+ [Troubleshooting Control and Component Authoring](/dotnet/desktop/winforms/controls/troubleshooting-control-and-component-authoring)  
  Explains how to fix common problems.  
   
 ## See also
 
-- [How to: Access Design-Time Support in Windows Forms](../../framework/winforms/controls/developing-windows-forms-controls-at-design-time.md)
+- [How to: Access Design-Time Support in Windows Forms](/dotnet/desktop/winforms/controls/developing-windows-forms-controls-at-design-time)

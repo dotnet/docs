@@ -48,7 +48,7 @@ For more information, see the following resources.
 
 |Resource|Description|
 |--------------|-----------------|
-|[Module Signing](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms345102(v=sql.100))|Describes module signing, providing a sample scenario and links to the relevant Transact-SQL articles.|
+|[Module Signing](/previous-versions/sql/sql-server-2008/ms345102(v=sql.100))|Describes module signing, providing a sample scenario and links to the relevant Transact-SQL articles.|
 |[Signing Stored Procedures with a Certificate](/sql/relational-databases/tutorial-signing-stored-procedures-with-a-certificate)|Provides a tutorial for signing a stored procedure with a certificate.|
 
 ## See also

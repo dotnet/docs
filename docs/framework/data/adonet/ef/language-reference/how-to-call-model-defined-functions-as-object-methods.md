@@ -11,7 +11,7 @@ This topic describes how to call a model-defined function as a method on an <xre
   
  Whether you call a model-defined function as an <xref:System.Data.Objects.ObjectContext> method or as a static method on a custom class, you must first map the method to the model-defined function with an <xref:System.Data.Objects.DataClasses.EdmFunctionAttribute>. However, when you define a method on the <xref:System.Data.Objects.ObjectContext> class, you must use the <xref:System.Data.Objects.ObjectContext.QueryProvider%2A> property to expose the LINQ provider, whereas when you define a static method on a custom class, you must use the <xref:System.Linq.IQueryable.Provider%2A> property to expose the LINQ provider. For more information, see the examples that follow the procedures below.  
   
- The procedures below provide high-level outlines for calling a model-defined function as a method on an <xref:System.Data.Objects.ObjectContext> object and as a static method on a custom class. The examples that follow provide more detail about the steps in the procedures. The procedures assume that you have defined a function in the conceptual model. For more information, see [How to: Define Custom Functions in the Conceptual Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).  
+ The procedures below provide high-level outlines for calling a model-defined function as a method on an <xref:System.Data.Objects.ObjectContext> object and as a static method on a custom class. The examples that follow provide more detail about the steps in the procedures. The procedures assume that you have defined a function in the conceptual model. For more information, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).  
   
 ### To call a model-defined function as a method on an ObjectContext object  
   
@@ -42,7 +42,7 @@ This topic describes how to call a model-defined function as a method on an <xre
   
  The following example demonstrates how to call a model-defined function as a method on an <xref:System.Data.Objects.ObjectContext> object. The example uses the [AdventureWorks Sales Model](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks).  
   
- Consider the conceptual model function below that returns product revenue for a specified product. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).)  
+ Consider the conceptual model function below that returns product revenue for a specified product. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).)  
   
  [!code-xml[DP L2E Methods on ObjectContext#4](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#4)]  
 
@@ -83,7 +83,7 @@ This topic describes how to call a model-defined function as a method on an <xre
 > [!NOTE]
 > When you call a model-defined function as a static method on a custom class, the model-defined function must accept a collection and return an aggregation of values in the collection.  
   
- Consider the conceptual model function below that returns product revenue for a SalesOrderDetail collection. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).).  
+ Consider the conceptual model function below that returns product revenue for a SalesOrderDetail collection. (For information about adding the function to your conceptual model, see [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100)).).  
   
  [!code-xml[DP L2E Methods on ObjectContext#1](../../../../../../samples/snippets/xml/VS_Snippets_Data/dp l2e methods on objectcontext/xml/adventureworks.edmx#1)]
   
@@ -101,6 +101,6 @@ This topic describes how to call a model-defined function as a method on an <xre
   
 ## See also
 
-- [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [.edmx File Overview](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
 - [Queries in LINQ to Entities](queries-in-linq-to-entities.md)
 - [Calling Functions in LINQ to Entities Queries](calling-functions-in-linq-to-entities-queries.md)

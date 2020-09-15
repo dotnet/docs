@@ -12,9 +12,9 @@ This tutorial illustrates the processing model when you chain queries together. 
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)|Describes the concepts of deferred execution and lazy evaluation.|  
-|[Deferred Execution Example (Visual Basic)](deferred-execution-example.md)|Provides an example of deferred execution.|  
+|[Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](../../../../standard/linq/deferred-execution-lazy-evaluation.md)|Describes the concepts of deferred execution and lazy evaluation.|  
+|[Deferred Execution Example (Visual Basic)](../../../../standard/linq/deferred-execution-example.md)|Provides an example of deferred execution.|  
   
 ## See also
 
-- [Pure Functional Transformations of XML (Visual Basic)](pure-functional-transformations-of-xml.md)
+- [Pure Functional Transformations of XML (Visual Basic)](../../../../standard/linq/introduction-pure-functional-transformations.md)

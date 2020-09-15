@@ -49,4 +49,4 @@ In WPF, `x:Shared` is only valid under the following conditions:
 
 - <xref:System.Windows.ResourceDictionary>
 - [XAML Resources](../fundamentals/xaml-resources-define.md)
-- [Base Elements](../../framework/wpf/advanced/base-elements.md)
+- [Base Elements](/dotnet/desktop/wpf/advanced/base-elements)

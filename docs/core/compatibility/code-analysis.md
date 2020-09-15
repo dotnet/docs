@@ -15,6 +15,7 @@ The following breaking changes are documented on this page:
 | [CA2013: Do not use ReferenceEquals with value types](#ca2013-do-not-use-referenceequals-with-value-types) | 5.0 |
 | [CA2014: Do not use stackalloc in loops](#ca2014-do-not-use-stackalloc-in-loops) | 5.0 |
 | [CA2015: Do not define finalizers for types derived from MemoryManager\<T>](#ca2015-do-not-define-finalizers-for-types-derived-from-memorymanagert) | 5.0 |
+| [CA2200: Rethrow to preserve stack details](#ca2200-rethrow-to-preserve-stack-details) | 5.0 |
 | [CA2247: Argument to TaskCompletionSource constructor should be TaskCreationOptions value](#ca2247-argument-to-taskcompletionsource-constructor-should-be-taskcreationoptions-value) | 5.0 |
 
 ## .NET 5.0
@@ -40,6 +41,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE [finalizers-for-memorymanager-types](../../../includes/core-changes/codeanalysis/5.0/ca2015-finalizers-for-memorymanager-types.md)]
+
+***
+
+[!INCLUDE [ca2200-rethrow-to-preserve-stack-details](../../../includes/core-changes/codeanalysis/5.0/ca2200-rethrow-to-preserve-stack-details.md)]
 
 ***
 

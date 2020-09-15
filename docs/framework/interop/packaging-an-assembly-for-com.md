@@ -54,7 +54,7 @@ COM developers can benefit from the following information about the managed type
 
   Regardless of the mechanism you choose, only public types defined in the assembly you supply are included in the generated type library.
 
-For instructions, see [How to: Embed Type Libraries as Win32 Resources in .NET-Based Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100)).
+For instructions, see [How to: Embed Type Libraries as Win32 Resources in .NET-Based Applications](/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100)).
 
 <a name="cpconpackagingassemblyforcomanchor1"></a>
 
@@ -92,4 +92,4 @@ The [.NET Services Installation Tool (Regsvcs.exe)](../tools/regsvcs-exe-net-ser
 - [Assembly Security Considerations](../../standard/assembly/security-considerations.md)
 - [Tlbexp.exe (Type Library Exporter)](../tools/tlbexp-exe-type-library-exporter.md)
 - [Registering Assemblies with COM](registering-assemblies-with-com.md)
-- [How to: Embed Type Libraries as Win32 Resources in Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100))
+- [How to: Embed Type Libraries as Win32 Resources in Applications](/previous-versions/dotnet/netframework-4.0/ww9a897z(v=vs.100))

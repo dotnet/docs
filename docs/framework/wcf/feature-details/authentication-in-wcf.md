@@ -35,4 +35,4 @@ The following topics show a number of different mechanisms in Windows Communicat
 ## See also
 
 - [Security Overview](security-overview.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

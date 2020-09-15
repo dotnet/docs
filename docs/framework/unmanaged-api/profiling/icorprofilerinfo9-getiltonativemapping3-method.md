@@ -49,7 +49,7 @@ When tiered compilation is enabled, a method may have more than one native code 
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?pivots=os-windows).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 

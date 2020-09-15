@@ -91,7 +91,7 @@ The following Windows versions are supported with .NET Core 3.1:
 
 | OS                            | Version                        | Architectures   |
 | ----------------------------- | ------------------------------ | --------------- |
-| Windows Client                | 8.1                            | x64, x86        |
+| Windows Client                | 7 SP1+, 8.1                    | x64, x86        |
 | Windows 10 Client             | Version 1609+                  | x64, x86        |
 | Windows Server                | 2012 R2+                       | x64, x86        |
 | Nano Server                   | Version 1803+                  | x64, ARM32      |
@@ -185,7 +185,7 @@ The requirements above are also required if you come across one of the following
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for CI automation and non-admin installs of the runtime. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `Channel` switch. Include the `Runtime` switch to install a runtime. Otherwise, the script installs the [SDK](sdk.md).
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `Channel` switch. Include the `Runtime` switch to install a runtime. Otherwise, the script installs the SDK.
 
 ```powershell
 dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore

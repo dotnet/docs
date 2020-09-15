@@ -64,4 +64,4 @@ Message security has the following disadvantages:
 - [Securing Services and Clients](securing-services-and-clients.md)
 - [Transport Security](transport-security.md)
 - [How to: Use Transport Security and Message Credentials](how-to-use-transport-security-and-message-credentials.md)
-- [Microsoft Patterns and Practices, Chapter 3: Implementing Transport and Message Layer Security](https://docs.microsoft.com/previous-versions/msp-n-p/ff647370(v=pandp.10))
+- [Microsoft Patterns and Practices, Chapter 3: Implementing Transport and Message Layer Security](/previous-versions/msp-n-p/ff647370(v=pandp.10))

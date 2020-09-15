@@ -18,7 +18,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |Resource|Description|  
 |--------------|-----------------|  
 |[Protecting Connection Information](protecting-connection-information.md)|Describes security best practices and techniques for protecting connection information, such as using protected configuration to encrypt connection strings.|  
-|[Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|  
+|[Recommendations for Data Access Strategies](/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))|Provides recommendations for accessing data and performing database operations.|  
 |[Connection String Builders](connection-string-builders.md)|Describes how to build connection strings from user input at run time.|  
 |[Overview of SQL Server Security](./sql/overview-of-sql-server-security.md)|Describes the SQL Server security architecture.|  
   
@@ -40,7 +40,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Script Exploits Overview](https://docs.microsoft.com/previous-versions/aspnet/w1sw53ds(v=vs.100))|Describes how to guard against scripting and SQL statement exploits.|  
+|[Script Exploits Overview](/previous-versions/aspnet/w1sw53ds(v=vs.100))|Describes how to guard against scripting and SQL statement exploits.|  
   
 ## Probing Attacks  
  Attackers often use information from an exception, such as the name of your server, database, or table, to mount an attack on your system. Because exceptions can contain specific information about your application or data source, you can help keep your application and data source better protected by only exposing essential information to the client.  
@@ -59,7 +59,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Security Considerations and Guidance for Access 2007](https://docs.microsoft.com/previous-versions/office/developer/office-2007/bb421308(v=office.12))|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
+|[Security Considerations and Guidance for Access 2007](/previous-versions/office/developer/office-2007/bb421308(v=office.12))|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
 |[Introduction to Access 2010 security](https://support.office.com/article/Introduction-to-Access-2010-security-CAE6D764-0318-4622-955F-68D9F186D6CA)|Provides an overview of the security features offered by Access 2010.|  
 ## Enterprise Services  
  COM+ contains its own security model that relies on Windows NT accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
@@ -68,7 +68,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Role-Based Security](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/s6y8k15h(v=vs.71))|Discusses how to integrate managed code with COM+ security services.|  
+|[Role-Based Security](/previous-versions/dotnet/netframework-1.1/s6y8k15h(v=vs.71))|Discusses how to integrate managed code with COM+ security services.|  
   
 ## Interoperating with Unmanaged Code  
  The .NET Framework provides for interaction with unmanaged code, including COM components, COM+ services, external type libraries, and many operating system services. Working with unmanaged code involves going outside the security perimeter for managed code. Both your code and any code that calls it must have unmanaged code permission (<xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode> flag specified). Unmanaged code can introduce unintended security vulnerabilities into your application. Therefore, you should avoid interoperating with unmanaged code unless it is absolutely necessary.  
@@ -78,13 +78,13 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
 |Resource|Description|  
 |--------------|-----------------|  
 |[Interoperating with Unmanaged Code](../../interop/index.md)|Contains topics describing how to expose COM components to the .NET Framework and how to expose .NET Framework components to COM.|
-|[Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|
+|[Advanced COM Interoperability](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))|Contains advanced topics such as primary interop assemblies, threading and custom marshaling.|
 
 ## See also
 
 - [Securing ADO.NET Applications](securing-ado-net-applications.md)
 - [SQL Server Security](./sql/sql-server-security.md)
-- [Recommendations for Data Access Strategies](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
+- [Recommendations for Data Access Strategies](/previous-versions/visualstudio/visual-studio-2008/8fxztkff(v=vs.90))
 - [Protecting Connection Information](protecting-connection-information.md)
 - [Connection String Builders](connection-string-builders.md)
 - [ADO.NET Overview](ado-net-overview.md)

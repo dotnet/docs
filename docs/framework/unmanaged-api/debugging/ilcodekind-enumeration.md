@@ -50,4 +50,4 @@ typedef enum ILCodeKind {
 
 - [Debugging Enumerations](debugging-enumerations.md)
 - [ICorDebugILFrame4 Interface](icordebugilframe4-interface.md)
-- [ReJIT: A How-To Guide](https://docs.microsoft.com/archive/blogs/davbr/rejit-a-how-to-guide)
+- [ReJIT: A How-To Guide](/archive/blogs/davbr/rejit-a-how-to-guide)

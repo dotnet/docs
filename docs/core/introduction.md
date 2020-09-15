@@ -7,7 +7,7 @@ ms.custom: "updateeachrelease"
 ---
 # Introduction to .NET Core
 
-[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux for x64, x86, ARM32, and ARM64 processors using multiple programming languages. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](../desktop-wpf/overview/index.md), and [machine learning](/dotnet/machine-learning/).
+[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux for x64, x86, ARM32, and ARM64 processors using multiple programming languages. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](../desktop-wpf/overview/index.md), and [machine learning](../machine-learning/index.yml).
 
 [Download the .NET Core SDK](https://dotnet.microsoft.com/download) to try .NET Core on your machine. The latest version is [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
@@ -16,7 +16,7 @@ ms.custom: "updateeachrelease"
 You can get .NET Core in the following ways:
 
 * [Installers for Windows and macOS](https://dotnet.microsoft.com/download)
-* [Linux packages](https://docs.microsoft.com/dotnet/core/install/linux-package-managers)
+* [Linux packages](./install/linux.md)
 * [Docker containers](https://hub.docker.com/_/microsoft-dotnet-core/)
 * [Zips and tarballs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 * [Install scripts](https://dotnet.microsoft.com/download/dotnet-core/scripts)

@@ -5,7 +5,7 @@ ms.assetid: 1644f885-c408-4d5f-a5c7-a1a907bc8acd
 ---
 # Troubleshoot setup issues
 
-This article describes how to troubleshoot Windows Communication Foundation (WCF) set up issues.  
+This article describes how to troubleshoot Windows Communication Foundation (WCF) setup issues.  
   
 ## Some Windows Communication Foundation Registry Keys are not Repaired by Performing an MSI Repair Operation on the .NET Framework 3.0  
  If you delete any of the following registry keys:  
@@ -47,7 +47,7 @@ This article describes how to troubleshoot Windows Communication Foundation (WCF
   
  The following steps must be followed to resolve the problem described previously.  
   
-1. Run the [WMI Diagnosis Utility](https://www.microsoft.com/download/details.aspx?id=7684) to repair the WMI service. For more information about using this tool, see [WMI Diagnosis Utility](https://docs.microsoft.com/previous-versions/tn-archive/ff404265(v%3dmsdn.10)).  
+1. Run the WMI Diagnosis Utility to repair the WMI service. For more information about using this tool, see [WMI Diagnosis Utility](https://docs.microsoft.com/previous-versions/tn-archive/ff404265(v%3dmsdn.10)).  
   
  Repair the .NET Framework 3.0 installation by using the **Add/Remove Programs** applet located in **Control Panel**, or uninstall/reinstall the .NET Framework 3.0.  
   

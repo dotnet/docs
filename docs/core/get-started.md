@@ -48,7 +48,7 @@ Get started developing .NET Core applications by following these step-by-step tu
 | ![movie camera icon for video](./media/video-icon.png "Watch a video") | Watch the [how to install and use Visual Studio Code and .NET Core](https://channel9.msdn.com/Blogs/dotnet/Get-started-with-VS-Code-using-CSharp-and-NET-Core/) video on Channel 9. |
 | ![movie camera icon for video](./media/video-icon.png "Watch a video") | Watch the [.NET Core 101](https://www.youtube.com/playlist?list=PLdo4fOcmZ0oWoazjhXQzBKMrFuArxpW80) videos on YouTube. |
 
-See the [.NET Core dependencies and requirements](./install/windows.md?pivots=os-windows) article for a list of the supported Windows versions.
+See the [.NET Core dependencies and requirements](./install/windows.md) article for a list of the supported Windows versions.
 
 # [Linux](#tab/linux)
 

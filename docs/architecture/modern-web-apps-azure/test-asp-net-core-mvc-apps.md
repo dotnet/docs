@@ -144,7 +144,7 @@ In most cases, you'll want to use global exception handlers in your controllers,
 
 ## Integration testing ASP.NET Core apps
 
-Most of the integration tests in your ASP.NET Core apps should be testing services and other implementation types defined in your Infrastructure project. For example, you could [test that EF Core was successfully updating and retrieving the data that you expect](https://docs.microsoft.com/ef/core/miscellaneous/testing/) from your data access classes residing in the Infrastructure project. The best way to test that your ASP.NET Core MVC project is behaving correctly is with functional tests that run against your app running in a test host.
+Most of the integration tests in your ASP.NET Core apps should be testing services and other implementation types defined in your Infrastructure project. For example, you could [test that EF Core was successfully updating and retrieving the data that you expect](/ef/core/miscellaneous/testing/) from your data access classes residing in the Infrastructure project. The best way to test that your ASP.NET Core MVC project is behaving correctly is with functional tests that run against your app running in a test host.
 
 ## Functional testing ASP.NET Core apps
 

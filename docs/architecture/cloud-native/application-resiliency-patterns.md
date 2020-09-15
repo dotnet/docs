@@ -41,7 +41,7 @@ Next, let's expand on retry and circuit breaker patterns.
 
 In a distributed cloud-native environment, calls to services and cloud resources can fail because of transient (short-lived) failures, which typically correct themselves after a brief period of time. Implementing a retry strategy helps a cloud-native service mitigate these scenarios.
 
-The [Retry pattern](https://docs.microsoft.com/azure/architecture/patterns/retry) enables a service to retry a failed request operation a (configurable) number of times with an exponentially increasing wait time. Figure 6-2 shows a retry in action.
+The [Retry pattern](/azure/architecture/patterns/retry) enables a service to retry a failed request operation a (configurable) number of times with an exponentially increasing wait time. Figure 6-2 shows a retry in action.
 
 ![Retry pattern in action](./media/retry-pattern.png)
 
@@ -65,7 +65,7 @@ To make things worse, executing continual retry operations on a non-responsive s
 
 In these situations, it would be preferable for the operation to fail immediately and only attempt to invoke the service if it's likely to succeed.
 
-The [Circuit Breaker pattern](https://docs.microsoft.com/azure/architecture/patterns/circuit-breaker) can prevent an application from repeatedly trying to execute an operation that's likely to fail. After a pre-defined number of failed calls, it blocks all traffic to the service. Periodically, it will allow a trial call to determine whether the fault has resolved. Figure 6-3 shows the Circuit Breaker pattern in action.
+The [Circuit Breaker pattern](/azure/architecture/patterns/circuit-breaker) can prevent an application from repeatedly trying to execute an operation that's likely to fail. After a pre-defined number of failed calls, it blocks all traffic to the service. Periodically, it will allow a trial call to determine whether the fault has resolved. Figure 6-3 shows the Circuit Breaker pattern in action.
 
 ![Circuit breaker pattern in action](./media/circuit-breaker-pattern.png)
 

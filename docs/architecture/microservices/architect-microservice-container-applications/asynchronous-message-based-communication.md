@@ -54,7 +54,7 @@ An important point is that you might want to communicate to multiple microservic
 
 In asynchronous event-driven communication, one microservice publishes events to an event bus and many microservices can subscribe to it, to get notified and act on it. Your implementation will determine what protocol to use for event-driven, message-based communications. [AMQP](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol) can help achieve reliable queued communication.
 
-When you use an event bus, you might want to use an abstraction level (like an event bus interface) based on a related implementation in classes with code using the API from a message broker like [RabbitMQ](https://www.rabbitmq.com/) or a service bus like [Azure Service Bus with Topics](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Alternatively, you might want to use a higher-level service bus like NServiceBus, MassTransit, or Brighter to articulate your event bus and publish/subscribe system.
+When you use an event bus, you might want to use an abstraction level (like an event bus interface) based on a related implementation in classes with code using the API from a message broker like [RabbitMQ](https://www.rabbitmq.com/) or a service bus like [Azure Service Bus with Topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). Alternatively, you might want to use a higher-level service bus like NServiceBus, MassTransit, or Brighter to articulate your event bus and publish/subscribe system.
 
 ## A note about messaging technologies for production systems
 
@@ -70,7 +70,7 @@ A challenge when implementing an event-driven architecture across multiple micro
 
 - Using [transaction log mining](https://www.scoop.it/t/sql-server-transaction-log-mining).
 
-- Using full [Event Sourcing](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing) pattern.
+- Using full [Event Sourcing](/azure/architecture/patterns/event-sourcing) pattern.
 
 - Using the [Outbox pattern](https://www.kamilgrzybek.com/design/the-outbox-pattern/): a transactional database table as a message queue that will be the base for an event-creator component that would create the event and publish it.
 

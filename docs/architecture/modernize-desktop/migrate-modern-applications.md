@@ -109,7 +109,7 @@ You can continue to use ODBC on .NET Core since Microsoft is providing the `Syst
 
 ### OLE DB
 
-[OLE DB](https://docs.microsoft.com/previous-versions/windows/desktop/ms722784(v=vs.85)) has been a great way to access various data sources in a uniform manner. But it was based on COM, which is a Windows-only technology, and as such wasn't the best fit for a cross-platform technology such as .NET Core. It's also unsupported in SQL Server versions 2014 and later. For those reasons, OLE DB won't be supported by .NET Core.
+[OLE DB](/previous-versions/windows/desktop/ms722784(v=vs.85)) has been a great way to access various data sources in a uniform manner. But it was based on COM, which is a Windows-only technology, and as such wasn't the best fit for a cross-platform technology such as .NET Core. It's also unsupported in SQL Server versions 2014 and later. For those reasons, OLE DB won't be supported by .NET Core.
 
 ### ADO.NET
 

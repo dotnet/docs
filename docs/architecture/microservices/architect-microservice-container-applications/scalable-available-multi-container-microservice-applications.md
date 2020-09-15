@@ -62,7 +62,7 @@ In the development environment, [Docker announced in July 2018](https://blog.doc
 
 ## Getting started with Azure Kubernetes Service (AKS)
 
-To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying a Kubernetes cluster in Azure, see [Deploy an Azure Kubernetes Service (AKS) cluster](https://docs.microsoft.com/azure/aks/kubernetes-walkthrough-portal).
+To begin using AKS, you deploy an AKS cluster from the Azure portal or by using the CLI. For more information on deploying a Kubernetes cluster in Azure, see [Deploy an Azure Kubernetes Service (AKS) cluster](/azure/aks/kubernetes-walkthrough-portal).
 
 There are no fees for any of the software installed by default as part of AKS. All default options are implemented with open-source software. AKS is available for multiple virtual machines in Azure. You're charged only for the compute instances you choose, as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for AKS itself.
 
@@ -74,7 +74,7 @@ When deploying an application to a Kubernetes cluster, you can use the original 
 
 Helm Charts helps you define, version, install, share, upgrade or rollback even the most complex Kubernetes application.
 
-Going further, Helm usage is also recommended because additional Kubernetes environments in Azure, such as [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces) are also based on Helm charts.
+Going further, Helm usage is also recommended because additional Kubernetes environments in Azure, such as [Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) are also based on Helm charts.
 
 Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) - in collaboration with Microsoft, Google, Bitnami and the Helm contributor community.
 
@@ -82,7 +82,7 @@ For more implementation information on Helm charts and Kubernetes, see the [Usin
 
 ## Use Azure Dev Spaces for your Kubernetes application lifecycle
 
-[Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
+[Azure Dev Spaces](/azure/dev-spaces/azure-dev-spaces) provides a rapid, iterative Kubernetes development experience for teams. With minimal dev machine setup, you can iteratively run and debug containers directly in Azure Kubernetes Service (AKS). Develop on Windows, Mac, or Linux using familiar tools like Visual Studio, Visual Studio Code, or the command line.
 
 As mentioned, Azure Dev Spaces uses Helm charts when deploying the container-based applications.
 
@@ -102,7 +102,7 @@ This feature is based on URL prefixes, so when using any dev space prefix in the
 
 To get a practical view on a concrete example, see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces).
 
-For further information check the article on [Team Development with Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/team-development-netcore).
+For further information check the article on [Team Development with Azure Dev Spaces](/azure/dev-spaces/team-development-netcore).
 
 ## Additional resources
 

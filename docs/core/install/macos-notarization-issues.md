@@ -12,7 +12,7 @@ Beginning with macOS Catalina (version 10.15), all software built after June 1, 
 
 ## Installing .NET Core
 
-The installers for .NET Core (both runtime and SDK) versions 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. You can manually install a non-notarized version of .NET Core by first downloading the installer, and then using the `sudo installer` command. For more information, see [Download and manually install for macOS](./windows.md?pivots=os-macos#download-and-manually-install).
+The installers for .NET Core (both runtime and SDK) versions 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. You can manually install a non-notarized version of .NET Core by first downloading the installer, and then using the `sudo installer` command. For more information, see [Download and manually install for macOS](./macos.md#download-and-manually-install).
 
 Beginning with the following versions, the .NET Core installers are notarized:
 

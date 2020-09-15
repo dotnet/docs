@@ -140,7 +140,7 @@ macOS RIDs use the older "OSX" branding. Only common values are listed. For the 
 - macOS 10.14 Mojave (.NET Core 1.1 or later versions)
   - `osx.10.14-x64`
 
-For more information, see [.NET Core dependencies and requirements](./install/windows.md?pivots=os-macos).
+For more information, see [.NET Core dependencies and requirements](./install/macos.md#dependencies).
 
 ## See also
 

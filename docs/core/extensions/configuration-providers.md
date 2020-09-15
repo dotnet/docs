@@ -246,7 +246,7 @@ When an environment variable is discovered and loaded into configuration with an
 
 | Environment variable key | Converted configuration key | Provider configuration entry                                                    |
 |--------------------------|-----------------------------|---------------------------------------------------------------------------------|
-| `CUSTOMCONNSTR_{KEY} `   | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `CUSTOMCONNSTR_{KEY}`   | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
 | `MYSQLCONNSTR_{KEY}`     | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
 | `SQLAZURECONNSTR_{KEY}`  | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 | `SQLCONNSTR_{KEY}`       | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |

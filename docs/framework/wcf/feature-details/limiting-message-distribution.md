@@ -13,7 +13,7 @@ The concept of `PeerHopCount` is similar to TTL (Time-To-Live) used in IP protoc
 
 Hop count may be added to a message by adding `PeerHopCount` as an attribute to the applicable property or field in the implementation of the message class. You can set this to a specific value before sending the message to the mesh. In this manner, you can use hop count to limit distribution of messages throughout the mesh when necessary, potentially avoiding unnecessary message duplication. This is useful in cases where the mesh contains a high amount of redundant data, or for sending a message to immediate neighbors, or neighbors within a few hops.
 
-- For code snippets and related information, see the [The PeerHopCount Attribute: Controlling Message Distribution](https://docs.microsoft.com/archive/blogs/peerchan/the-peerhopcount-attribute-controlling-message-distribution) post on the Peer Channel blog.
+- For code snippets and related information, see the [The PeerHopCount Attribute: Controlling Message Distribution](/archive/blogs/peerchan/the-peerhopcount-attribute-controlling-message-distribution) post on the Peer Channel blog.
 
 ## Message Propagation Filter
 
@@ -21,7 +21,7 @@ Hop count may be added to a message by adding `PeerHopCount` as an attribute to 
 
 <xref:System.ServiceModel.PeerMessagePropagationFilter> is a base abstract class with a single function, <xref:System.ServiceModel.PeerMessagePropagationFilter.ShouldMessagePropagate%2A>. The first argument of the method call passes in a full copy of the message. Any changes made to the message do not affect the actual message. The last argument of the method call identifies the origin of the message (`PeerMessageOrigination.Local` or `PeerMessageOrigination.Remote`). Concrete implementations of this method must return a constant from the <xref:System.ServiceModel.PeerMessagePropagation> enumeration indicating that the message is to be forwarded to the local application (`Local`), forwarded to remote clients (`Remote`), both (`LocalAndRemote`), or neither (`None`). This filter can be applied by accessing the corresponding `PeerNode` object and specifying an instance of the derived propagation filter class in the `PeerNode.MessagePropagationFilter` property. Ensure that the propagation filter is attached before opening the Peer Channel.
 
-- For code snippets and related information, see the [Peer Channel and MessagePropagationFilter](https://docs.microsoft.com/archive/blogs/peerchan/peer-channel-and-messagepropagationfilter) post on the Peer Channel blog.
+- For code snippets and related information, see the [Peer Channel and MessagePropagationFilter](/archive/blogs/peerchan/peer-channel-and-messagepropagationfilter) post on the Peer Channel blog.
 
 ## Contacting an Individual Node in the Mesh
 

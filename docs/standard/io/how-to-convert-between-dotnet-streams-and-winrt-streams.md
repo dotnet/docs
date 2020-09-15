@@ -9,7 +9,7 @@ ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
 ---
 # How to: Convert between .NET Framework and Windows Runtime streams (Windows only)
 
-The .NET Framework for UWP apps is a subset of the full .NET Framework. Because of security and other requirements for UWP apps, you can't use the full set of .NET Framework APIs to open and read files. For more information, see [.NET for UWP apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140)). However, you may want to use .NET Framework APIs for other stream manipulation operations. To manipulate these streams, you can convert between a .NET Framework stream type such as <xref:System.IO.MemoryStream> or <xref:System.IO.FileStream>, and a Windows Runtime stream such as <xref:Windows.Storage.Streams.IInputStream>, <xref:Windows.Storage.Streams.IOutputStream>, or <xref:Windows.Storage.Streams.IRandomAccessStream>.
+The .NET Framework for UWP apps is a subset of the full .NET Framework. Because of security and other requirements for UWP apps, you can't use the full set of .NET Framework APIs to open and read files. For more information, see [.NET for UWP apps overview](/previous-versions/windows/apps/br230302(v=vs.140)). However, you may want to use .NET Framework APIs for other stream manipulation operations. To manipulate these streams, you can convert between a .NET Framework stream type such as <xref:System.IO.MemoryStream> or <xref:System.IO.FileStream>, and a Windows Runtime stream such as <xref:Windows.Storage.Streams.IInputStream>, <xref:Windows.Storage.Streams.IOutputStream>, or <xref:Windows.Storage.Streams.IRandomAccessStream>.
 
 The <xref:System.IO.WindowsRuntimeStreamExtensions?displayProperty=nameWithType> class contains methods that make these conversions easy. However, underlying differences between .NET Framework and Windows Runtime streams affect the results of using these methods, as described in the following sections:
 
@@ -63,6 +63,6 @@ To run this example, create a UWP XAML app that targets the .NET Framework 4.5.1
 
 ## See also
 
-- [Quickstart: Read and write a file (Windows)](https://docs.microsoft.com/previous-versions/windows/apps/hh464978(v=win.10))  
-- [.NET for Windows Store apps overview](https://docs.microsoft.com/previous-versions/windows/apps/br230302(v=vs.140))  
-- [.NET for Windows Store apps APIs](https://docs.microsoft.com/previous-versions/br230232(v=vs.120))  
+- [Quickstart: Read and write a file (Windows)](/previous-versions/windows/apps/hh464978(v=win.10))  
+- [.NET for Windows Store apps overview](/previous-versions/windows/apps/br230302(v=vs.140))  
+- [.NET for Windows Store apps APIs](/previous-versions/br230232(v=vs.120))

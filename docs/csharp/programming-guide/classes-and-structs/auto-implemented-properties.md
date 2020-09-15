@@ -30,4 +30,4 @@ The class that is shown in the previous example is mutable. Client code can chan
 ## See also
 
 - [Properties](./properties.md)
-- [Modifiers](/dotnet/csharp/language-reference/keywords)
+- [Modifiers](../../language-reference/keywords/index.md)

@@ -33,4 +33,4 @@ ms.assetid: 9cb10eb8-957f-4beb-a271-5f682016fed2
 ## See also
 
 - [N-Tier and Remote Applications with LINQ to SQL](n-tier-and-remote-applications-with-linq-to-sql.md)
-- [LinqDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100))
+- [LinqDataSource Web Server Control Overview](/previous-versions/aspnet/bb547113(v=vs.100))

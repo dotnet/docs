@@ -139,7 +139,7 @@ After you are familiar with the basic concepts of working with queries, you are 
 
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 
-- [LINQ to XML](linq-to-xml.md)
+- [LINQ to XML](../../../../standard/linq/linq-xml-overview.md)
 
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
 

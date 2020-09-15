@@ -16,7 +16,7 @@ SQL Server 2008 introduces new data types for handling date and time information
   
  **SQL Server documentation**  
   
-1. [Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
+1. [Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
   
 ## Date/Time Data Types Introduced in SQL Server 2008  
  The following table describes the new date and time data types.  
@@ -41,7 +41,7 @@ SQL Server 2008 introduces new data types for handling date and time information
 > [!NOTE]
 > The YDM date format is not supported when converting from a string format to `date`, `time`, `datetime2`, or `datetimeoffset`.  
   
- For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
+ For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
   
 ## Date/Time Data Types and Parameters  
  The following enumerations have been added to <xref:System.Data.SqlDbType> to support the new date and time data types.  
@@ -231,7 +231,7 @@ command.Parameters.AddWithValue( _
 |Topic|Description|  
 |-----------|-----------------|  
 |[Date and Time Data Types and Functions (Transact-SQL)](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql)|Provides an overview of all Transact-SQL date and time data types and functions.|  
-|[Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Provides information about the date and time data types and functions, and examples of using them.|  
+|[Using Date and Time Data](/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Provides information about the date and time data types and functions, and examples of using them.|  
 |[Data Types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)|Describes system data types in SQL Server.|  
   
 ## See also

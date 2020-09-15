@@ -25,7 +25,7 @@ There are two ways to make this type information available to your application:
 
 - Using design-time-only interop assemblies: Beginning with the .NET Framework 4, you can instruct the compiler to embed type information from the interop assembly into your executable. The compiler embeds only the type information that your application uses. You do not have to deploy the interop assembly with your application. This is the recommended technique.
 
-- Deploying interop assemblies: You can create a standard reference to the interop assembly. In this case, the interop assembly must be deployed with your application. If you employ this technique, and you are not using a private COM component, always reference the primary interop assembly (PIA) published by the author of the COM component you intend to incorporate in your managed code. For more information about producing and using primary interop assemblies, see [Primary Interop Assemblies](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+- Deploying interop assemblies: You can create a standard reference to the interop assembly. In this case, the interop assembly must be deployed with your application. If you employ this technique, and you are not using a private COM component, always reference the primary interop assembly (PIA) published by the author of the COM component you intend to incorporate in your managed code. For more information about producing and using primary interop assemblies, see [Primary Interop Assemblies](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 When you use design-time-only interop assemblies, you can embed type information from the primary interop assembly published by the author of the COM component. However, you do not have to deploy the primary interop assembly with your application.
 
@@ -61,18 +61,18 @@ After you locate the type library that contains the implementation of your targe
 
   - Knowledge of the type library-to-assembly conversion rules.
 
-  Writing a custom wrapper is an advanced technique. For additional information about how to generate a custom wrapper, see [Customizing Standard Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100)).
+  Writing a custom wrapper is an advanced technique. For additional information about how to generate a custom wrapper, see [Customizing Standard Wrappers](/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100)).
 
- For more information about the COM interop import process, see [Type Library to Assembly Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100)).
+ For more information about the COM interop import process, see [Type Library to Assembly Conversion Summary](/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100)).
 
 ## See also
 
 - <xref:System.Runtime.InteropServices.TypeLibConverter>
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
-- [Type Library to Assembly Conversion Summary](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
+- [Type Library to Assembly Conversion Summary](/previous-versions/dotnet/netframework-4.0/k83zzh38(v=vs.100))
 - [Tlbimp.exe (Type Library Importer)](../tools/tlbimp-exe-type-library-importer.md)
-- [Customizing Standard Wrappers](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100))
-- [Using COM Types in Managed Code](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
+- [Customizing Standard Wrappers](/previous-versions/dotnet/netframework-4.0/h7hx9abd(v=vs.100))
+- [Using COM Types in Managed Code](/previous-versions/dotnet/netframework-4.0/3y76b69k(v=vs.100))
 - [Compiling an Interop Project](compiling-an-interop-project.md)
 - [Deploying an Interop Application](deploying-an-interop-application.md)
 - [How to: Add References to Type Libraries](how-to-add-references-to-type-libraries.md)

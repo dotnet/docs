@@ -98,7 +98,7 @@ For an example, see [Create a template for a control](../themes/how-to-create-ap
 
 ### TemplateBinding
 
-You may have noticed that the template resource defined in the previous section uses the [TemplateBinding Markup Extension](../../framework/wpf/advanced/templatebinding-markup-extension.md). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` is useful for binding parts of the template to properties of the control. For example, each control has a <xref:System.Windows.Controls.Control.BorderThickness> property. Use a `TemplateBinding` to manage which element in the template is affected by this control setting.
+You may have noticed that the template resource defined in the previous section uses the [TemplateBinding Markup Extension](/dotnet/desktop/wpf/advanced/templatebinding-markup-extension). A `TemplateBinding` is an optimized form of a binding for template scenarios, analogous to a binding constructed with `{Binding RelativeSource={RelativeSource TemplatedParent}}`. `TemplateBinding` is useful for binding parts of the template to properties of the control. For example, each control has a <xref:System.Windows.Controls.Control.BorderThickness> property. Use a `TemplateBinding` to manage which element in the template is affected by this control setting.
 
 ### ContentControl and ItemsControl
 
@@ -131,7 +131,7 @@ Essentially, the <xref:System.Windows.DataTemplate> in the above example defines
 
 ![Photo image](./media/styles-and-templates-overview/stylingintro-photosasimages.png "StylingIntro_PhotosAsImages")
 
-The data templating model provides other features. For example, if you are displaying collection data that contains other collections using a <xref:System.Windows.Controls.HeaderedItemsControl> type such as a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.TreeView>, there is the <xref:System.Windows.HierarchicalDataTemplate>. Another data templating feature is the <xref:System.Windows.Controls.DataTemplateSelector>, which allows you to choose a <xref:System.Windows.DataTemplate> to use based on custom logic. For more information, see [Data Templating Overview](../../framework/wpf/data/data-templating-overview.md), which provides a more in-depth discussion of the different data templating features.
+The data templating model provides other features. For example, if you are displaying collection data that contains other collections using a <xref:System.Windows.Controls.HeaderedItemsControl> type such as a <xref:System.Windows.Controls.Menu> or a <xref:System.Windows.Controls.TreeView>, there is the <xref:System.Windows.HierarchicalDataTemplate>. Another data templating feature is the <xref:System.Windows.Controls.DataTemplateSelector>, which allows you to choose a <xref:System.Windows.DataTemplate> to use based on custom logic. For more information, see [Data Templating Overview](/dotnet/desktop/wpf/data/data-templating-overview), which provides a more in-depth discussion of the different data templating features.
 
 ## Triggers
 
@@ -157,7 +157,7 @@ Another type of trigger is the <xref:System.Windows.EventTrigger>, which starts 
 
 [!code-xaml[StyleEventTriggers](~/samples/snippets/desktop-guide/wpf/styles-and-templates-intro/csharp/Window6.xaml#SnippetStyleEventTriggers)]
 
-For more information, see the [Storyboards overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
+For more information, see the [Storyboards overview](/dotnet/desktop/wpf/graphics-multimedia/storyboards-overview).
 
 In the following illustration, the mouse is pointing to the third item.
 
@@ -207,7 +207,7 @@ For example, the following XAML code watches the `CommonStates.MouseOver` state 
         ...
 ```
 
-For more information about storyboards, see [Storyboards Overview](../../framework/wpf/graphics-multimedia/storyboards-overview.md).
+For more information about storyboards, see [Storyboards Overview](/dotnet/desktop/wpf/graphics-multimedia/storyboards-overview).
 
 ## Shared resources and themes
 
@@ -231,12 +231,12 @@ To share a set of resources, including styles and templates, across apps, you ca
 
 It is the sharing of `shared.xaml`, which itself defines a <xref:System.Windows.ResourceDictionary> that contains a set of style and brush resources, that enables the controls in an app to have a consistent look.
 
-For more information, see [Merged resource dictionaries](../../framework/wpf/advanced/merged-resource-dictionaries.md).
+For more information, see [Merged resource dictionaries](/dotnet/desktop/wpf/advanced/merged-resource-dictionaries).
 
-If you are creating a theme for your custom control, see the **Defining resources at the theme level** section of the [Control authoring overview](../../framework/wpf/controls/control-authoring-overview.md#defining-resources-at-the-theme-level).
+If you are creating a theme for your custom control, see the **Defining resources at the theme level** section of the [Control authoring overview](/dotnet/desktop/wpf/controls/control-authoring-overview#defining-resources-at-the-theme-level).
 
 ## See also
 
-- [Pack URIs in WPF](../../framework/wpf/app-development/pack-uris-in-wpf.md)
-- [How to: Find ControlTemplate-Generated Elements](../../framework/wpf/controls/how-to-find-controltemplate-generated-elements.md)
-- [Find DataTemplate-Generated Elements](../../framework/wpf/data/how-to-find-datatemplate-generated-elements.md)
+- [Pack URIs in WPF](/dotnet/desktop/wpf/app-development/pack-uris-in-wpf)
+- [How to: Find ControlTemplate-Generated Elements](/dotnet/desktop/wpf/controls/how-to-find-controltemplate-generated-elements)
+- [Find DataTemplate-Generated Elements](/dotnet/desktop/wpf/data/how-to-find-datatemplate-generated-elements)

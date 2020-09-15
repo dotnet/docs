@@ -1,7 +1,7 @@
 ---
 title: Observability patterns
 description: Observability patterns for cloud-native applications
-ms.date: 05/13/2020
+ms.date: 08/10/2020
 ---
 
 # Observability patterns
@@ -10,7 +10,7 @@ Just as patterns have been developed to aid in the layout of code in application
 
 ## When to use logging
 
-No matter how careful we are, applications almost always behave in unexpected ways in production. When users report problems with an application, it's extremely useful to be able to see what was going on with the app when the problem occurred. One of the most tried and true ways of capturing information about what an application is doing while it's running is to have the application write down what it's doing. This process is known as logging. Any time failures or problems occur in production, the goal should be to reproduce the conditions under which the failures occurred, in a non-production environment. Having good logging in place provides a roadmap for developers to follow in order to duplicate problems in an environment that can be tested and experimented with.
+No matter how careful we are, applications almost always behave in unexpected ways in production. When users report problems with an application, it's useful to be able to see what was going on with the app when the problem occurred. One of the most tried and true ways of capturing information about what an application is doing while it's running is to have the application write down what it's doing. This process is known as logging. Anytime failures or problems occur in production, the goal should be to reproduce the conditions under which the failures occurred, in a non-production environment. Having good logging in place provides a roadmap for developers to follow in order to duplicate problems in an environment that can be tested and experimented with.
 
 ### Challenges when logging with cloud-native applications
 

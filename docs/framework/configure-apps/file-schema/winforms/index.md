@@ -47,4 +47,4 @@ The `<System.Windows.Forms.ApplicationConfigurationSection>` element can include
 ## See also
 
 - [Configuration File Schema](../index.md)
-- [High DPI Support in Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md)
+- [High DPI Support in Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms)

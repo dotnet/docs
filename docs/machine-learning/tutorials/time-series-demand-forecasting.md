@@ -69,7 +69,7 @@ The original dataset contains several columns corresponding to seasonality and w
 
 The original dataset is mapped to a database table with the following schema in a SQL Server database.
 
-```SQL
+```sql
 CREATE TABLE [Rentals] (
     [RentalDate] DATE NOT NULL,
     [Year] INT NOT NULL,

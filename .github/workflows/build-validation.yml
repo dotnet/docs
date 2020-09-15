@@ -13,6 +13,9 @@ on:
       - "**.razor"
       - "**.cshtml"
       - "**.vbhtml"
+      - "**.csproj"
+      - "**.vbproj"
+      - "**.fsproj"
       - "**global.json"
       - "**snippets.5000.json"
     branches: [ master ]

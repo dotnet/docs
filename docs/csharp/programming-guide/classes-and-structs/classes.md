@@ -96,7 +96,7 @@ The following example defines a public class that contains an [auto-implemented 
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Object-Oriented Programming](../concepts/object-oriented-programming.md)
+- [Object-Oriented Programming](../../tutorials/intro-to-csharp/object-oriented-programming.md)
 - [Polymorphism](polymorphism.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
 - [Members](members.md)

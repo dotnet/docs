@@ -18,7 +18,7 @@ This tutorial shows how to create and run a .NET Core console application using 
 * [Visual Studio for Mac version 8.6 or later](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). Select the option to install .NET Core. Installing Xamarin is optional for .NET Core development. For more information, see the following resources:
 
   * [Tutorial: Install Visual Studio for Mac](/visualstudio/mac/installation).
-  * [Supported macOS versions](../install/windows.md?pivots=os-macos).
+  * [Supported macOS versions](../install/windows.md).
   * [.NET Core versions supported by Visual Studio for Mac](/visualstudio/mac/net-core-support).
 
 ## Create the app

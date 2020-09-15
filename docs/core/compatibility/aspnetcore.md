@@ -194,7 +194,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 
 ***
 
-[!INCLUDE [cryptography-apis-not-supported-on-blazor-webassembly](../../../includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
+[!INCLUDE[Cryptography APIs not supported on Blazor WebAssembly](~/includes/core-changes/cryptography/5.0/cryptography-apis-not-supported-on-blazor-webassembly.md)]
 
 ***
 

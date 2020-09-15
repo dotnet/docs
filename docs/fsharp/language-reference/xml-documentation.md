@@ -124,7 +124,7 @@ As of F# 5.0, some features of XML documentation in C# and other .NET languages 
 - The tags `<include>`, `<inheritdoc>` are not supported by the F# compiler. No error is given if they are used, but
   they are simply copied to the generated documentation file without otherwise affecting the documentation generated.
 
-- Cross-references are not checked by the F# compiler, even when `/warnon:3390` is used. 
+- Cross-references are not checked by the F# compiler, even when `/warnon:3390` is used.
 
 - The names used in the tags `<typeparam>` and `<typeparamref>` are not checked by the F# compiler, even when `/warnon:3390` is used.
 

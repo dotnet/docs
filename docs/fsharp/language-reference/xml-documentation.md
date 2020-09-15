@@ -119,7 +119,7 @@ Some features of XML documentation in C# and other .NET languages are not suppor
 - In F#, cross-references must use the full XML signature of the corresponding symbol, for example `cref="T:System.Console"`.
   Simple C#-style cross-references such as `cref="Console"` are not elaborated to full XML signatures
   and these elements are not checked by the F# compiler. Some documentation tooling
-  may allow the use of these these cross-references by subsequent processing, howevr in general the full signatures should be used.
+  may allow the use of these these cross-references by subsequent processing, but the full signatures should be used.
   
 - The tags `<include>`, `<inheritdoc>` are not supported by the F# compiler. No error is given if they are used, but
   they are simply copied to the generated documentation file without otherwise affecting the documentation generated.

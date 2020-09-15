@@ -102,7 +102,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `win10-arm`
   - `win10-arm64`
 
-For more information, see [.NET Core dependencies and requirements](./install/windows.md?pivots=os-windows).
+For more information, see [.NET Core dependencies and requirements](./install/windows.md#dependencies).
 
 ## Linux RIDs
 

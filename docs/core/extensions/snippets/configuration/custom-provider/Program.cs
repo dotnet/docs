@@ -30,6 +30,6 @@ namespace CustomProvider.Example
         // Sample output:
         //    WidgetRoute=api/widgets
         //    EndpointId=b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67
-        //    DisplayLabel =Widgets Incorporated, LLC.
+        //    DisplayLabel=Widgets Incorporated, LLC.
     }
 }

@@ -53,7 +53,7 @@ In the following example outlines the steps to establish trust between two machi
 
 This procedure requires the MMC Certificates snap-in. The snap-in can be accessed by opening the Start/Run menu, typing "mmc" in the input box and pressing OK. Then, in the **Console1** window, navigate to **the File/Add-Remove** Snap-in, click Add, and choose **Certificates** from the **Available Standalone Snapins** list. Finally, select **Computer Account** to manage and click **OK**. The **Certificates** node appears in the snap-in console.
 
-You must already possess the required certificates to establish trust. To learn how to create and install new certificates prior to the following steps, see [How to: Create and Install Temporary Client Certificates in WCF During Development](https://docs.microsoft.com/previous-versions/msp-n-p/ff650751(v=pandp.10)).
+You must already possess the required certificates to establish trust. To learn how to create and install new certificates prior to the following steps, see [How to: Create and Install Temporary Client Certificates in WCF During Development](/previous-versions/msp-n-p/ff650751(v=pandp.10)).
 
 1. On machine A, using the MMC Certificates snap-in, import the existing certificate (certA) into the LocalMachine\MY (Personal Node) and LocalMachine\ROOT store (trusted root certification authority node). To import a certificate to a specific node, right-click the node and choose **All Tasks/Import**.
 

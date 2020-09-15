@@ -26,7 +26,7 @@ Provides a unique identifier for markup elements. In many scenarios, this unique
 
 ## Remarks
 
-In [MS-XAML], `x:Uid` is defined as a directive. For more information, see [\[MS-XAML\] Section 5.3.6](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).
+In [MS-XAML], `x:Uid` is defined as a directive. For more information, see [\[MS-XAML\] Section 5.3.6](/previous-versions/msp-n-p/ff650760(v=pandp.10)).
 
 `x:Uid` is discrete from `x:Name` both because of the stated XAML localization scenario and so that identifiers that are used for localization have no dependencies on the programming model implications of `x:Name`. Also, `x:Name` is governed by the XAML namescope; however, `x:Uid` is not governed by any XAML language defined concept of uniqueness enforcement. XAML processors in a broad sense (processors that are not part of the localization process) are not expected to enforce uniqueness of `x:Uid` values. That responsibility is conceptually on the originator of the values. The expectation of uniqueness of `x:Uid` values within a single XAML source is reasonable for consumers of the values, such as dedicated globalization processes or tools. The typical uniqueness model is that `x:Uid` values are unique within an XML-encoded file that represents XAML.
 
@@ -36,10 +36,10 @@ Frameworks can specify a particular property in their object model to be an alia
 
 ## WPF Usage Notes
 
-For more information about the role of `x:Uid` in the WPF localization process and in the BAML form of XAML, see [Globalization for WPF](../../framework/wpf/advanced/globalization-for-wpf.md) or <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>
+For more information about the role of `x:Uid` in the WPF localization process and in the BAML form of XAML, see [Globalization for WPF](/dotnet/desktop/wpf/advanced/globalization-for-wpf) or <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>
 
 ## See also
 
 - <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>
 - <xref:Microsoft.Build.Tasks.Windows.UidManager>
-- [Globalization for WPF](../../framework/wpf/advanced/globalization-for-wpf.md)
+- [Globalization for WPF](/dotnet/desktop/wpf/advanced/globalization-for-wpf)

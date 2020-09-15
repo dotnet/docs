@@ -169,7 +169,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 4
 
-[New features](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
+[New features](/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
 
 |||
 |-|-|
@@ -181,7 +181,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 3.5
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
+[New features](/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
 
 - LINQ
 - Expression trees
@@ -202,7 +202,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 3.0
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
+[New features](/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
 
 - Windows Presentation Foundation
 - Windows Communication Foundation
@@ -218,7 +218,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 2.0
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/t357fb32%28v%3dvs.90%29):
+[New features](/previous-versions/visualstudio/visual-studio-2008/t357fb32(v=vs.90)):
 
 - Generics
 - Debugger edit and continue
@@ -237,7 +237,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 1.1
 
-[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/h88tthh0%28v%3dvs.90%29):
+[New features](/previous-versions/visualstudio/visual-studio-2008/h88tthh0(v=vs.90)):
 
 - ASP.NET mobile controls
 - Side-by-side execution

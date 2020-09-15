@@ -33,7 +33,7 @@ cmd.CommandText = @"SELECT VALUE p
 ## Managing Transactions  
  In the Entity Framework, there are two ways to use transactions: automatic and explicit. Automatic transactions use the <xref:System.Transactions> namespace, and explicit transactions use the <xref:System.Data.EntityClient.EntityTransaction> class.  
   
- To update data that is exposed through a conceptual model, see [How to: Manage Transactions in the Entity Framework](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100)).  
+ To update data that is exposed through a conceptual model, see [How to: Manage Transactions in the Entity Framework](/previous-versions/dotnet/netframework-4.0/bb738523(v=vs.100)).  
   
 ## In This Section  
  [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md)  
@@ -58,6 +58,6 @@ cmd.CommandText = @"SELECT VALUE p
   
 ## See also
 
-- [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
+- [Managing Connections and Transactions](/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
 - [ADO.NET Entity Framework](index.md)
 - [Language Reference](./language-reference/index.md)

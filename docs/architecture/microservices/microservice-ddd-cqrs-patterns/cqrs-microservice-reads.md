@@ -167,7 +167,7 @@ public class OrderSummary
 }
 ```
 
-This is another reason why explicit returned types are better than dynamic types, in the long term. When using the `ProducesResponseType` attribute, you can also specify what is the expected outcome in regards possible HTTP errors/codes, like 200, 400, etc.
+This is another reason why explicit returned types are better than dynamic types, in the long term. When using the `ProducesResponseType` attribute, you can also specify what is the expected outcome in regards to possible HTTP errors/codes, like 200, 400, etc.
 
 In the following image, you can see how Swagger UI shows the ResponseType information.
 

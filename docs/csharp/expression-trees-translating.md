@@ -237,7 +237,7 @@ This sample shows a small subset of the code you would build to traverse
 and interpret the algorithms represented by an expression tree. For a complete
 discussion of all the work necessary to build a general purpose library that
 translates expression trees into another language, please read
-[this series](https://docs.microsoft.com/archive/blogs/mattwar/linq-building-an-iqueryable-provider-series)
+[this series](/archive/blogs/mattwar/linq-building-an-iqueryable-provider-series)
 by Matt Warren. It goes into great detail on how to translate any of the code
 you might find in an expression tree.
 

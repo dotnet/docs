@@ -11,7 +11,7 @@ The topics in this section discuss features in SQL Server that are targeted at d
   
  **SQL Server documentation**  
   
-1. [Development (Database Engine)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb500155(v=sql.100))  
+1. [Development (Database Engine)](/previous-versions/sql/sql-server-2008/bb500155(v=sql.100))  
   
 ## In This Section  
  [Enumerating Instances of SQL Server (ADO.NET)](enumerating-instances-of-sql-server.md)  

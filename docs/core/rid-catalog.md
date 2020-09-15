@@ -121,7 +121,7 @@ Only common values are listed. For the latest and complete version, see the [run
   - `tizen.4.0.0`
   - `tizen.5.0.0`
 
-For more information, see [.NET Core dependencies and requirements](./install/windows.md?pivots=os-linux).
+For more information, see [.NET Core dependencies and requirements](./install/linux.md).
 
 ## macOS RIDs
 

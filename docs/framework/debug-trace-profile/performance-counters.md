@@ -10,7 +10,7 @@ ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
 ---
 # Performance counters in the .NET Framework
 
-This topic provides a list of performance counters you can find in the [Windows Performance Monitor](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249%28v=ws.11%29).  
+This topic provides a list of performance counters you can find in the [Windows Performance Monitor](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
 
 ## Exception performance counters  
  The Performance console .NET CLR Exceptions category includes counters that provide information about the exceptions thrown by an application. The following table describes these performance counters.  

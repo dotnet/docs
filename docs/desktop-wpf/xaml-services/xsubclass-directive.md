@@ -57,4 +57,4 @@ When you define both `x:Class` and `x:Subclass`, you do not need to provide any 
 ## See also
 
 - [x:Class Directive](xclass-directive.md)
-- [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
+- [XAML and Custom Classes for WPF](/dotnet/desktop/wpf/advanced/xaml-and-custom-classes-for-wpf)

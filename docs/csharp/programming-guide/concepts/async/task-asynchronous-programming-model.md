@@ -38,7 +38,7 @@ The [async](../../../language-reference/keywords/async.md) and [await](../../../
 
 The following example shows an async method. Almost everything in the code should look familiar to you.
 
-You can find a complete Windows Presentation Foundation (WPF) example available for download from [Asynchronous programming with async and await in C#](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs).
+You can find a complete Windows Presentation Foundation (WPF) example available for download from [Asynchronous programming with async and await in C#](/samples/dotnet/samples/async-and-await-cs).
 
 :::code language="csharp" source="snippets/access-web/Program.cs" id="ControlFlow":::
 
@@ -116,7 +116,7 @@ If you are new to asynchronous programming, take a minute to consider the differ
 
 You might be wondering where to find methods such as `GetStringAsync` that support async programming. .NET Framework 4.5 or higher and .NET Core contain many members that work with `async` and `await`. You can recognize them by the "Async" suffix that's appended to the member name, and by their return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>. For example, the `System.IO.Stream` class contains methods such as <xref:System.IO.Stream.CopyToAsync%2A>, <xref:System.IO.Stream.ReadAsync%2A>, and <xref:System.IO.Stream.WriteAsync%2A> alongside the synchronous methods <xref:System.IO.Stream.CopyTo%2A>, <xref:System.IO.Stream.Read%2A>, and <xref:System.IO.Stream.Write%2A>.
 
-The Windows Runtime also contains many methods that you can use with `async` and `await` in Windows apps. For more information, see [Threading and async programming](/windows/uwp/threading-async/) for UWP development, and [Asynchronous programming (Windows Store apps)](https://docs.microsoft.com/previous-versions/windows/apps/hh464924(v=win.10)) and [Quickstart: Calling asynchronous APIs in C# or Visual Basic](https://docs.microsoft.com/previous-versions/windows/apps/hh452713(v=win.10)) if you use earlier versions of the Windows Runtime.
+The Windows Runtime also contains many methods that you can use with `async` and `await` in Windows apps. For more information, see [Threading and async programming](/windows/uwp/threading-async/) for UWP development, and [Asynchronous programming (Windows Store apps)](/previous-versions/windows/apps/hh464924(v=win.10)) and [Quickstart: Calling asynchronous APIs in C# or Visual Basic](/previous-versions/windows/apps/hh452713(v=win.10)) if you use earlier versions of the Windows Runtime.
 
 ## <a name="BKMK_Threads"></a> Threads
 
@@ -209,7 +209,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 | Title | Description | Sample |
 |--|--|--|
-| [How to make multiple web requests in parallel by using async and await (C#)](how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md) | Demonstrates how to start several tasks at the same time. | [Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e) |
+| [How to make multiple web requests in parallel by using async and await (C#)](./index.md) | Demonstrates how to start several tasks at the same time. | [Async Sample: Make Multiple Web Requests in Parallel](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e) |
 | [Async return types (C#)](async-return-types.md) | Illustrates the types that async methods can return, and explains when each type is appropriate. |  |
 | Cancel tasks with a cancellation token as a signaling mechanism. | Shows how to add the following functionality to your async solution:<br><br> - [Cancel a list of tasks (C#)](cancel-an-async-task-or-a-list-of-tasks.md)<br>- [Cancel tasks after a period of time (C#)](cancel-async-tasks-after-a-period-of-time.md)<br>- [Process asynchronous task as they complete (C#)](start-multiple-async-tasks-and-process-them-as-they-complete.md) |  |
 | [Using async for file access (C#)](using-async-for-file-access.md) | Lists and demonstrates the benefits of using async and await to access files. |  |

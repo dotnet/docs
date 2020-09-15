@@ -29,7 +29,7 @@ In particular, do not use fields from classes in UIAutomationClient.dll such as 
 
 ## Provider Implementation by Windows Presentation Foundation Elements
 
-For more information on this topic, please see [UI Automation of a WPF Custom Control](../wpf/controls/ui-automation-of-a-wpf-custom-control.md).
+For more information on this topic, please see [UI Automation of a WPF Custom Control](/dotnet/desktop/wpf/controls/ui-automation-of-a-wpf-custom-control).
 
 <a name="Provider_Implementation_by_non_WPF_Elements"></a>
 

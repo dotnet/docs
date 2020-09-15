@@ -14,4 +14,4 @@ An attempt was made to obtain information about a file that is currently open fo
 
 - <xref:System.IO.FileInfo>
 - <xref:System.Security.Permissions.FileIOPermission>
-- [How to: Get Information About a File in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))
+- [How to: Get Information About a File in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))

@@ -40,7 +40,7 @@ UNION ALL
 FROM … );  
 ```  
   
- The following example demonstrates how to properly nest expressions in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]: [How to: Order the Union of Two Queries](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896299(v=vs.100)).  
+ The following example demonstrates how to properly nest expressions in [!INCLUDE[esql](../../../../../../includes/esql-md.md)]: [How to: Order the Union of Two Queries](/previous-versions/dotnet/netframework-4.0/bb896299(v=vs.100)).  
   
 ## Nested Queries in Projection  
  Nested queries in the project clause might get translated into Cartesian product queries on the server. In some backend servers, including SQL Server, this can cause the TempDB table to get very large, which can adversely affect server performance.  

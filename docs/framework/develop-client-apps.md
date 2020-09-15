@@ -20,8 +20,8 @@ ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
 There are several ways to develop Windows-based applications with .NET Framework. You can use any of these tools and frameworks:
 
 - [Universal Windows Platform (UWP)](/windows/uwp/)
-- [Windows Presentation Foundation (WPF)](./wpf/index.md)
-- [Windows Forms](./winforms/index.md)
+- [Windows Presentation Foundation (WPF)](/dotnet/desktop/wpf/)
+- [Windows Forms](/dotnet/desktop/winforms/)
 
 This section contains articles that describe how to create Windows-based applications by using Windows Presentation Foundation or Windows Forms. However, you can also create web applications using .NET Framework and client applications for computers or devices that you make available through Microsoft Store (UWP apps).
 
@@ -30,7 +30,7 @@ This section contains articles that describe how to create Windows-based applica
 [Universal Windows Platform](/windows/uwp/)\
 Describes how to create UWP applications that you can make available to users through Microsoft Store.
 
-[.NET API for UWP apps](/dotnet/api/index?view=dotnet-uwp-10.0)\
+[.NET API for UWP apps](../../api/index.md?view=dotnet-uwp-10.0)\
 Reference for .NET types that support UWP apps.
   
 [Develop for Multiple Platforms](../standard/cross-platform/index.md)\
@@ -39,7 +39,7 @@ Describes the different methods you can use .NET Framework to target multiple cl
 [Get Started with ASP.NET Web Sites](https://dotnet.microsoft.com/apps/aspnet/web-apps)\
 Describes the ways you can develop web apps using ASP.NET.
 
-[.NET API for Windows Phone Silverlight](https://docs.microsoft.com/previous-versions/windows/apps/jj207211\(v=vs.105\))\
+[.NET API for Windows Phone Silverlight](/previous-versions/windows/apps/jj207211\(v=vs.105\))\
 Lists .NET Framework APIs you can use for building apps with Windows Phone Silverlight.
 
 ## See also

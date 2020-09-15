@@ -61,9 +61,9 @@ For example, the following is a simple array of two strings, with the `sys` pref
 </x:Array>
 ```
 
-For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md).
+For custom types that are used as array elements, the class must also support the requirements for being instantiated in XAML as object elements. For more information, see [XAML and Custom Classes for WPF](/dotnet/desktop/wpf/advanced/xaml-and-custom-classes-for-wpf).
 
 ## See also
 
-- [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md)
-- [Types Migrated from WPF to System.Xaml](../../framework/wpf/advanced/types-migrated-from-wpf-to-system.md)
+- [Markup Extensions and WPF XAML](/dotnet/desktop/wpf/advanced/markup-extensions-and-wpf-xaml)
+- [Types Migrated from WPF to System.Xaml](/dotnet/desktop/wpf/advanced/types-migrated-from-wpf-to-system)

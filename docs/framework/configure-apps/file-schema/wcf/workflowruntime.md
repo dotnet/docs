@@ -56,7 +56,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
- For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
+ For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
   
 ## Example  
   
@@ -83,4 +83,4 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 - <xref:System.ServiceModel.Configuration.WorkflowRuntimeElement>
 - <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>
 - <xref:System.Workflow.Runtime.WorkflowRuntime>
-- [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
+- [Workflow Configuration Files](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))

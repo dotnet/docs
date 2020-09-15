@@ -35,7 +35,7 @@ Adds the specified security token handler to the token handler collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|The CLR type name of the token handler to be added. For more information about how to specify the `type` attribute, see [Custom Type References](https://docs.microsoft.com/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references).|  
+|type|The CLR type name of the token handler to be added. For more information about how to specify the `type` attribute, see [Custom Type References](/previous-versions/windows-identity-foundation/gg638728(v=msdn.10)#custom-type-references).|  
   
 ### Child Elements  
   

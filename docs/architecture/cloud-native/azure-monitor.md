@@ -1,19 +1,19 @@
 ---
 title: Azure Monitor
 description: Using Azure Monitor to gain visibility into your system is running.
-ms.date: 05/13/2020
+ms.date: 07/05/2020
 ---
 
 # Azure Monitor
 
-No other cloud provider has as mature of a cloud application monitoring solution as that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system, insights into any problems, and optimization of your application.
+No other cloud provider has as mature of a cloud application monitoring solution than that found in Azure. Azure Monitor is an umbrella name for a collection of tools designed to provide visibility into the state of your system. It helps you understand how your cloud-native services are performing and proactively identifies issues affecting them. Figure 7-12 presents a high level of view of Azure Monitor.
 
-![Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.](./media/azure-monitor.png)
-**Figure 7-12**. Azure Monitor, a collection to tools to provide insight into how a cloud-native application is functioning.
+![High-level view of Azure Monitor.](./media/azure-monitor.png)
+**Figure 7-12**. High-level view of Azure Monitor.
 
 ## Gathering logs and metrics
 
-The first step in any monitoring solution is to gather as much data as possible. The more data that can be gathered, the deeper the insights that can be obtained. Instrumenting systems has traditionally been difficult. Simple Network Management Protocol (SNMP) was the gold standard protocol for collecting machine level information but it required a great deal of knowledge and configuring. Fortunately, much of this hard work has been eliminated as the most common metrics are gathered automatically by Azure Monitor.
+The first step in any monitoring solution is to gather as much data as possible. The more data gathered, the deeper the insights. Instrumenting systems has traditionally been difficult. Simple Network Management Protocol (SNMP) was the gold standard protocol for collecting machine level information, but it required a great deal of knowledge and configuration. Fortunately, much of this hard work has been eliminated as the most common metrics are gathered automatically by Azure Monitor.
 
 Application level metrics and events aren't possible to instrument automatically because they're specific to the application being deployed. In order to gather these metrics, there are [SDKs and APIs available](https://docs.microsoft.com/azure/azure-monitor/app/api-custom-events-metrics) to directly report such information, such as when a customer signs up or completes an order. Exceptions can also be captured and reported back into Azure Monitor via Application Insights. The SDKs support most every language found in Cloud Native Applications including Go, Python, JavaScript, and the .NET languages.
 
@@ -25,7 +25,7 @@ Once the data is gathered, it can be manipulated, summarized, and plotted into c
 
 No modern application would be complete without some artificial intelligence or machine learning. To this end, data [can be passed](https://www.youtube.com/watch?v=Cuza-I1g9tw) to the various machine learning tools in Azure to allow you to extract trends and information that would otherwise be hidden.
 
-Application Insights provides a powerful query language called Kusto that can be used to find records, summarize them, and even plot charts. For instance, this query will locate all the records for the month of November 2007, group them by state, and plot the top 10 as a pie chart.
+Application Insights provides a powerful (SQL-like) query language called *Kusto* that can query records, summarize them, and even plot charts. For example, the following query will locate all records for the month of November 2007, group them by state, and plot the top 10 as a pie chart.
 
 ```kusto
 StormEvents
@@ -35,21 +35,24 @@ StormEvents
 | render piechart
 ```
 
-![The result of the Application Insights Query](./media/azure-monitor.png)
-**Figure 7-13**. The result of the Application Insights Query.
+Figure 7-13 shows the results of this Application Insights Query.
 
-There is a [playground for experimenting with Kusto](https://dataexplorer.azure.com/clusters/help/databases/Samples) queries, which is a fantastic place to spend an hour or two. Reading [sample queries](https://docs.microsoft.com/azure/kusto/query/samples) can also be instructive.
+![Application Insights query results](./media/application_insights_example.png)
+**Figure 7-13**. Application Insights query results.
+
+There is a [playground for experimenting with Kusto](https://dataexplorer.azure.com/clusters/help/databases/Samples) queries. Reading [sample queries](https://docs.microsoft.com/azure/kusto/query/samples) can also be instructive.
 
 ## Dashboards
 
 There are several different dashboard technologies that may be used to surface the information from Azure Monitor. Perhaps the simplest is to just run queries in Application Insights and [plot the data into a chart](https://docs.microsoft.com/azure/azure-monitor/learn/tutorial-app-dashboards).
 
-![An example of Application Insights charts embedded in the main Azure Dashboard](./media/azure-monitor.png)
+![An example of Application Insights charts embedded in the main Azure Dashboard](./media/azure_dashboard.png)
 **Figure 7-14**. An example of Application Insights charts embedded in the main Azure Dashboard.
 
 These charts can then be embedded in the Azure portal proper through use of the dashboard feature. For users with more exacting requirements, such as being able to drill down into several tiers of data, Azure Monitor data is available to [Power BI](https://powerbi.microsoft.com/). Power BI is an industry-leading, enterprise class, business intelligence tool that can aggregate data from many different data sources.
 
-![An example Power BI dashboard](./media/azure-monitor.png)
+![An example Power BI dashboard](./media/powerbidashboard.png)
+
 **Figure 7-15**. An example Power BI dashboard.
 
 ## Alerts

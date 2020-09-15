@@ -139,6 +139,6 @@ This document lists the guidelines to consider when designing an API to be seria
 - [Data Contract Serializer](../../framework/wcf/feature-details/data-contract-serializer.md)
 - [Types Supported by the Data Contract Serializer](../../framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)
 - [Binary Serialization](binary-serialization.md)
-- [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
+- [.NET Remoting](/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))
 - [XML and SOAP Serialization](xml-and-soap-serialization.md)
 - [Security and Serialization](../../framework/misc/security-and-serialization.md)

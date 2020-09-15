@@ -74,7 +74,7 @@ FIPS-compliant AES encryption does not work in duplex callbacks under identifica
 
 - Do a `p/invoke` of `CertGetCertificateContextProperty`, and inspect `dwProvType` on the returned `CertGetCertificateContextProperty`.
 
-- Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](https://docs.microsoft.com/previous-versions/orphan-topics/ws.10/cc772619(v=ws.10)).
+- Use the  `certutil` command from the command line for querying certificates. For more information, see [Certutil tasks for troubleshooting certificates](/previous-versions/orphan-topics/ws.10/cc772619(v=ws.10)).
 
 ## Message security fails if using ASP.NET impersonation and ASP.NET compatibility is required
 

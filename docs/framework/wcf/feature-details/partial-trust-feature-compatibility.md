@@ -121,7 +121,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 - <xref:System.IO.Log>  
 
-- [System.ServiceModel.Internal.TransactionBridge](https://docs.microsoft.com/previous-versions/aa346556(v=vs.110))]
+- [System.ServiceModel.Internal.TransactionBridge](/previous-versions/aa346556(v=vs.110))]
   
  The following members of the <xref:System.Diagnostics.TraceOptions> enumeration should not be specified:  
   
@@ -139,7 +139,7 @@ Windows Communication Foundation (WCF) supports a limited subset of functionalit
   
 ## Other Limitations  
 
-  WCF is generally limited to the security considerations imposed upon it by the hosting application. For example, if WCF is hosted in a XAML Browser Application (XBAP), it is subject to XBAP limitations, as described in [Windows Presentation Foundation Partial Trust Security](../../wpf/wpf-partial-trust-security.md).  
+  WCF is generally limited to the security considerations imposed upon it by the hosting application. For example, if WCF is hosted in a XAML Browser Application (XBAP), it is subject to XBAP limitations, as described in [Windows Presentation Foundation Partial Trust Security](/dotnet/desktop/wpf/wpf-partial-trust-security).  
   
  The following additional features are not enabled when running indigo2 in a partial trust environment:  
   

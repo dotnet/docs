@@ -48,8 +48,8 @@ By default, the partial class for the root element is public; however, you can m
 
 ## See also
 
-- [XAML and Custom Classes for WPF](../../framework/wpf/advanced/xaml-and-custom-classes-for-wpf.md)
-- [Code-Behind and XAML in WPF](../../framework/wpf/advanced/code-behind-and-xaml-in-wpf.md)
+- [XAML and Custom Classes for WPF](/dotnet/desktop/wpf/advanced/xaml-and-custom-classes-for-wpf)
+- [Code-Behind and XAML in WPF](/dotnet/desktop/wpf/advanced/code-behind-and-xaml-in-wpf)
 - [x:Name Directive](xname-directive.md)
-- [Building a WPF Application (WPF)](../../framework/wpf/app-development/building-a-wpf-application-wpf.md)
+- [Building a WPF Application (WPF)](/dotnet/desktop/wpf/app-development/building-a-wpf-application-wpf)
 - [x:ClassModifier Directive](xclassmodifier-directive.md)

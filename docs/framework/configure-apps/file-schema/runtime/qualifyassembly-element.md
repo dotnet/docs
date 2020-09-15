@@ -71,4 +71,4 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 
 - [Runtime Settings Schema](index.md)
 - [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
-- [Partial Assembly References](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0a7zy9z5(v=vs.100))
+- [Partial Assembly References](/previous-versions/dotnet/netframework-4.0/0a7zy9z5(v=vs.100))

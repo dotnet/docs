@@ -71,7 +71,7 @@ Windows RT devices are quite locked down. Third-party profilers simply cannot be
 
 In a number of scenarios discussed in the following sections, your Profiler UI desktop application needs to consume some new Windows Runtime APIs. You’ll want to consult the documentation to understand which Windows Runtime APIs can be used from desktop applications, and whether their behavior is different when called from desktop applications and Windows Store apps.
 
-If your Profiler UI is written in managed code, there will be a few steps you’ll need to do to make consuming those Windows Runtime APIs easy. For more information, see the [Managed desktop apps and Windows Runtime](https://docs.microsoft.com/previous-versions/windows/apps/jj856306(v=win.10)) article.
+If your Profiler UI is written in managed code, there will be a few steps you’ll need to do to make consuming those Windows Runtime APIs easy. For more information, see the [Managed desktop apps and Windows Runtime](/previous-versions/windows/apps/jj856306(v=win.10)) article.
 
 ## Loading the Profiler DLL
 
@@ -93,7 +93,7 @@ When Windows attempts to load your Profiler DLL, it verifies that your Profiler 
 
 - Ensure that your Profiler DLL is signed.
 
-- Tell your user that they must install a developer license on their Windows 8 machine before using your tool. This can be done automatically from Visual Studio or manually from a command prompt. For more information, see [Get a developer license](https://docs.microsoft.com/previous-versions/windows/apps/hh974578(v=win.10)).
+- Tell your user that they must install a developer license on their Windows 8 machine before using your tool. This can be done automatically from Visual Studio or manually from a command prompt. For more information, see [Get a developer license](/previous-versions/windows/apps/hh974578(v=win.10)).
 
 **File system permissions**
 
@@ -266,7 +266,7 @@ You might find that you absolutely cannot do without a particular API and cannot
 
 ### Reduced permissions
 
-It’s outside the scope of this topic to list all the ways that Windows Store app permissions differ from desktop apps. But certainly the behavior will be different every time your Profiler DLL (when loaded into a Windows Store app as compared to a desktop app) tries to access any resources. The file system is the most common example. There are but a few places on disk that a given Windows Store app is allowed to access (see [File access and permissions (Windows Runtime apps](https://docs.microsoft.com/previous-versions/windows/apps/hh967755(v=win.10))), and your Profiler DLL will be under the same restrictions. Test your code thoroughly.
+It’s outside the scope of this topic to list all the ways that Windows Store app permissions differ from desktop apps. But certainly the behavior will be different every time your Profiler DLL (when loaded into a Windows Store app as compared to a desktop app) tries to access any resources. The file system is the most common example. There are but a few places on disk that a given Windows Store app is allowed to access (see [File access and permissions (Windows Runtime apps](/previous-versions/windows/apps/hh967755(v=win.10))), and your Profiler DLL will be under the same restrictions. Test your code thoroughly.
 
 ### Inter-process communication
 
@@ -373,11 +373,11 @@ The garbage collector and managed heap are not fundamentally different in a Wind
 
 When doing memory profiling, your Profiler DLL typically creates a separate thread from which to call the [ForceGC Method](icorprofilerinfo-forcegc-method.md) method. This is nothing new. But what might be surprising is that the act of doing a garbage collection inside a Windows Store app may transform your thread into a managed thread (for example, a Profiling API ThreadID will be created for that thread).
 
-To understand the consequences of this, it’s important to understand the differences between synchronous and asynchronous calls as defined by the CLR Profiling API. Note that this is very different from the concept of asynchronous calls in Windows Store apps. See the blog post [Why we have CORPROF_E_UNSUPPORTED_CALL_SEQUENCE](https://docs.microsoft.com/archive/blogs/davbr/why-we-have-corprof_e_unsupported_call_sequence) for more information.
+To understand the consequences of this, it’s important to understand the differences between synchronous and asynchronous calls as defined by the CLR Profiling API. Note that this is very different from the concept of asynchronous calls in Windows Store apps. See the blog post [Why we have CORPROF_E_UNSUPPORTED_CALL_SEQUENCE](/archive/blogs/davbr/why-we-have-corprof_e_unsupported_call_sequence) for more information.
 
 The relevant point is that calls made on threads created by your profiler are always considered synchronous, even if those calls are made from outside an implementation of one of your Profiler DLL’s [ICorProfilerCallback](icorprofilercallback-interface.md) methods. At least, that used to be the case. Now that the CLR has turned your profiler’s thread into a managed thread because of your call to [ForceGC Method](icorprofilerinfo-forcegc-method.md), that thread is no longer considered your profiler’s thread. As such, the CLR enforces a more stringent definition of what qualifies as synchronous for that thread—namely that a call must originate from inside one of your Profiler DLL’s [ICorProfilerCallback](icorprofilercallback-interface.md) methods to qualify as synchronous.
 
-What does this mean in practice? Most [ICorProfilerInfo](icorprofilerinfo-interface.md) methods are only safe to be called synchronously, and will immediately fail otherwise. So if your Profiler DLL reuses your [ForceGC Method](icorprofilerinfo-forcegc-method.md) thread for other calls typically made on profiler-created threads (for example, to [RequestProfilerDetach](icorprofilerinfo3-requestprofilerdetach-method.md), [RequestReJIT](icorprofilerinfo4-requestrejit-method.md), or [RequestRevert](icorprofilerinfo4-requestrevert-method.md)), you’re going to have trouble. Even an asynchronous-safe function such as [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) has special rules when called from managed threads. (See the blog post [Profiler stack walking: Basics and beyond](https://docs.microsoft.com/archive/blogs/davbr/profiler-stack-walking-basics-and-beyond) for more information.)
+What does this mean in practice? Most [ICorProfilerInfo](icorprofilerinfo-interface.md) methods are only safe to be called synchronously, and will immediately fail otherwise. So if your Profiler DLL reuses your [ForceGC Method](icorprofilerinfo-forcegc-method.md) thread for other calls typically made on profiler-created threads (for example, to [RequestProfilerDetach](icorprofilerinfo3-requestprofilerdetach-method.md), [RequestReJIT](icorprofilerinfo4-requestrejit-method.md), or [RequestRevert](icorprofilerinfo4-requestrevert-method.md)), you’re going to have trouble. Even an asynchronous-safe function such as [DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) has special rules when called from managed threads. (See the blog post [Profiler stack walking: Basics and beyond](/archive/blogs/davbr/profiler-stack-walking-basics-and-beyond) for more information.)
 
 Therefore, we recommend that any thread your Profiler DLL creates to call [ForceGC Method](icorprofilerinfo-forcegc-method.md) should be used *only* for the purpose of triggering GCs and then responding to the GC callbacks. It should not call into the Profiling API to perform other tasks like stack sampling or detaching.
 
@@ -405,8 +405,8 @@ It is possible to use the CLR Profiling API to analyze managed code running insi
 
 **Windows Store apps**
 
-- [File access and permissions (Windows Runtime apps](https://docs.microsoft.com/previous-versions/windows/apps/hh967755%28v=win.10%29)
+- [File access and permissions (Windows Runtime apps](/previous-versions/windows/apps/hh967755(v=win.10))
 
-- [Get a developer license](https://docs.microsoft.com/previous-versions/windows/apps/hh974578%28v=win.10%29)
+- [Get a developer license](/previous-versions/windows/apps/hh974578(v=win.10))
 
 - [IPackageDebugSettings Interface](/windows/desktop/api/shobjidl_core/nn-shobjidl_core-ipackagedebugsettings)

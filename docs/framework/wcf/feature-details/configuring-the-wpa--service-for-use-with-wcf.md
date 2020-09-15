@@ -93,4 +93,4 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
 ## See also
 
 - [Hosting in Windows Process Activation Service](hosting-in-windows-process-activation-service.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

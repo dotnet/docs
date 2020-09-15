@@ -58,7 +58,7 @@ The following example shows the alternative method, without XML tags. In this ex
 
 ## Comments with XML tags
 
-If the comment body begins with `<` then it is treated as an XML formatted comment body using XML tags. The following is a typical XML documentation comment in a signature file:
+If a comment body begins with `<` then it is treated as an XML formatted comment body using XML tags. The following is a typical XML documentation comment in a signature file:
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet7101.fs)]
 

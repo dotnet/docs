@@ -119,8 +119,8 @@ In most cases you declare a method within a class definition. However, C# also s
 
 For more information, see:
 
-- [Methods](../classes-and-structs/methods.md)
-- [Extension Methods](../classes-and-structs/extension-methods.md)
+- [Methods](../../programming-guide/classes-and-structs/methods.md)
+- [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md)
 
 #### Constructors
 
@@ -138,7 +138,7 @@ public class SampleClass
 }
 ```
 
-For more information, see [Constructors](../classes-and-structs/constructors.md).
+For more information, see [Constructors](../../programming-guide/classes-and-structs/constructors.md).
 
 #### Finalizers
 
@@ -189,7 +189,7 @@ The following access modifiers are available:
 | [protected internal](../../language-reference/keywords/protected-internal.md) | The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly. |
 | [private protected](../../language-reference/keywords/private-protected.md) | The type or member can be accessed by code in the same class or in a derived class within the base class assembly. |
 
-For more information, see [Access Modifiers](../classes-and-structs/access-modifiers.md).
+For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
 
 ### Instantiating classes
 
@@ -222,7 +222,7 @@ var sampleObject = new SampleClass
 For more information, see:
 
 - [new Operator](../../language-reference/operators/new-operator.md)
-- [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
+- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
 
 ### Static Classes and Members
 
@@ -262,7 +262,7 @@ var sampleObject = new
 };
 ```
 
-For more information, see: [Anonymous Types](../classes-and-structs/anonymous-types.md).
+For more information, see: [Anonymous Types](../../programming-guide/classes-and-structs/anonymous-types.md).
 
 ## Inheritance
 
@@ -334,7 +334,7 @@ class SampleClass : ISampleInterface
 }
 ```
 
-For more information, see the programming guide article on [Interfaces](../interfaces/index.md) and the language reference article on the [interface](../../language-reference/keywords/interface.md) keyword.
+For more information, see the programming guide article on [Interfaces](../../programming-guide/interfaces/index.md) and the language reference article on the [interface](../../language-reference/keywords/interface.md) keyword.
 
 ## Generics
 
@@ -359,7 +359,7 @@ sampleObject.Field = "Sample string";
 For more information, see:
 
 - [Generics in .NET](../../../standard/generics/index.md)
-- [Generics - C# Programming Guide](../generics/index.md)
+- [Generics - C# Programming Guide](../../programming-guide/generics/index.md)
 
 ## Delegates
 
@@ -394,7 +394,7 @@ class SampleClass
 }
 ```
 
-For more information, see the programming guide article on [Delegates](../delegates/index.md) and the language reference article on the [delegate](../../language-reference/builtin-types/reference-types.md) keyword.
+For more information, see the programming guide article on [Delegates](../../programming-guide/delegates/index.md) and the language reference article on the [delegate](../../language-reference/builtin-types/reference-types.md) keyword.
 
 ## See also
 

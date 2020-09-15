@@ -64,7 +64,7 @@ If the comment body begins with `<` then it is treated as an XML formatted comme
 
 ## Recommended Tags
 
-If using XML tags, the following table describes the outer tags recognized in F# XML code comments.
+If you are using XML tags, the following table describes the outer tags recognized in F# XML code comments.
 
 |Tag syntax|Description|
 |----------|-----------|

@@ -28,7 +28,7 @@ The <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> is the b
 
 ### INI configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> loads configuration from an INI file at runtime, and relies on the `Microsoft.Extensions.Configuration.Ini` NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> loads configuration from an INI file at runtime, and relies on the [`Microsoft.Extensions.Configuration.Ini` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini).
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
@@ -44,7 +44,7 @@ The following code displays the preceding configuration settings by writing them
 
 ### JSON configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> loads configuration from a JSON file, and relies on the `Microsoft.Extensions.Configuration.Json` NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> loads configuration from a JSON file, and relies on the [`Microsoft.Extensions.Configuration.Json` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json).
 
 Overloads can specify:
 
@@ -69,7 +69,7 @@ An example *appsettings.json* file with various configuration settings follows:
 
 From the <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder> instance, after configuration providers have been added you can call <xref:Microsoft.Extensions.Configuration.IConfigurationBuilder.Build?displayProperty=nameWithType> to get the <xref:Microsoft.Extensions.Configuration.IConfigurationRoot> object. The configuration root represents the root of a configuration hierarchy. Sections from the configuration can be bound to instances of option objects, and later provided as <xref:Microsoft.Extensions.Options.IOptions%601> through dependency injection.
 
-The following code builds the root, binds a configuration section to a [record type](../../csharp/whats-new/csharp-9.md#record-types), and prints the bound values to the console window:
+The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` [record type](../../csharp/whats-new/csharp-9.md#record-types), and prints the bound values to the console window:
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="26-33":::
 
@@ -79,11 +79,13 @@ The `TransientFaultHandlingOptions` record is defined as follows:
 
 ### XML configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> loads configuration from an XML file at runtime, and relies on the `Microsoft.Extensions.Configuration.Xml` NuGet package.
+The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> loads configuration from an XML file at runtime, and relies on the [`Microsoft.Extensions.Configuration.Xml` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml).
 
-The following code clears all the existing configuration providers, and then adds several configuration providers:
+The following code demonstrates configuration of XML files using the XML configuration provider.
 
-:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="18-29":::
+:::code language="csharp" source="snippets/configuration/console-xml/Program.cs" range="1-28,46-53" highlight="17-28":::
+
+The preceding code:
 
 - Clears all existing configuration providers that were added by default in the <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])> method.
 - Configures the XML configuration provider to load the *appsettings.xml* and *repeating-example.xml* files with the following options:
@@ -185,10 +187,12 @@ The preceding environment settings:
 
 The following [setx](/windows-server/administration/windows-commands/setx) commands can be used to set the environment keys and values on Windows. Unlike `set`, `setx` settings are persisted. `/M` sets the variable in the system environment. If the `/M` switch isn't used, a user environment variable is set.
 
-```cmd
+```dotnetcli
 setx SecretKey "Secret key from setx environment" /M
 setx TransientFaultHandlingOptions__Enabled true /M
 setx TransientFaultHandlingOptions__AutoRetryDelay 00:00:05 /M
+
+dotnet run
 ```
 
 To test that the preceding commands override *appsettings.json* and *appsettings.*`Environment`*.json*:
@@ -198,7 +202,7 @@ To test that the preceding commands override *appsettings.json* and *appsettings
 
 Call <xref:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions.AddEnvironmentVariables%2A> with a string to specify a prefix for environment variables:
 
-:::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="16-17":::
+:::code language="csharp" source="snippets/configuration/console-env/Program.cs" highlight="15-16":::
 
 In the preceding code:
 
@@ -259,7 +263,7 @@ Environment variables set in *launchSettings.json* override those set in the sys
 Using the default configuration, the <xref:Microsoft.Extensions.Configuration.CommandLine.CommandLineConfigurationProvider> loads configuration from command-line argument key-value pairs after the following configuration sources:
 
 - *appsettings.json* and *appsettings*.`Environment`.*json* files.
-- App secrets (Secret Manager) in the **Development** environment.
+- App secrets (Secret Manager) in the `Development` environment.
 - Environment variables.
 
 By default, configuration values set on the command-line override configuration values set with all the other configuration providers.

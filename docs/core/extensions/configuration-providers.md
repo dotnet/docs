@@ -57,7 +57,7 @@ Overloads can specify:
 
 Consider the following code:
 
-:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-33,37-38" highlight="18-24":::
+:::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="1-33,37-38" highlight="17-23":::
 
 The preceding code:
 

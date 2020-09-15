@@ -95,7 +95,7 @@ Custom or in-house documentation generation tools can also be used with the stan
 
 ## Compile-time checking
 
-For F# 5.0+, when `/warnon:3390` is enabled, the compiler verifies the syntax of the XML and the parameters referred to in `<param>` and `<paramref>` tags.
+For F# 5.0 and later, when `-warnon:3390` is enabled, the compiler verifies the syntax of the XML and the parameters referred to in `<param>` and `<paramref>` tags.
 
 ## Documenting F# Constructs
 

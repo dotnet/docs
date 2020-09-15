@@ -7,24 +7,9 @@ ms.date: 09/05/2020
 
 # The world is distributed
 
-> Notes:
-
-> Proposing to change title as think the reader has to come into it with a clear definition and understanding. We may understand what a distributed app, but there are many who will not. 
-
-
-> Outline:
-> - Intro thought
-> - Mono vs. distritubed apps
-> - What happens when we migrate a component to a service?
-> - What is the appeal
-> - What are the challenges
-> - Lead into how DAPR addresses the challenges
-
--- Start:
-
 Modern, distributed systems are in and, monolithics apps are out! Just ask any 'cool kid.'
 
-But, interestingly, they aren't the only ones saying it. More and more, corporate architects and IT leaders are designing new and replatforming existing enterprise applications to fit this mold. 
+But, interestingly, they aren't the only ones saying it. More and more, corporate architects and IT leaders are designing new and replatforming existing enterprise applications to fit this mold.
 
 As a developer, architect, or IT leader...
 
@@ -76,15 +61,8 @@ But, while distributed applications can help bring agilty and speed, they bring 
 - Complexity
 - Interservice communication
 - State management
-- Messaging - 
+- Messaging
 - Observability - End-to-end monitoring of processes executing on different machines
-
-
-
-
-
-
-### blah
 
 So, what exactly is DAPR? Sit back, relax, and let us help you explore this new world.
 

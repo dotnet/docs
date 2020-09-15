@@ -48,8 +48,8 @@ The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> loa
 
 Overloads can specify:
 
-- Whether the file is optional.
-- Whether the configuration is reloaded if the file changes.
+- Whether the file is optional
+- Whether the configuration is reloaded if the file changes
 
 Consider the following code:
 
@@ -224,7 +224,7 @@ set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
 dotnet run
 ```
 
-The default configuration loads environment variables and command line arguments prefixed with `DOTNET_` and `ASPNETCORE_`. The `DOTNET_` and `ASPNETCORE_` prefixes are used by .NET for host and app configuration, but not for user configuration.
+The default configuration loads environment variables and command-line arguments prefixed with `DOTNET_` and `ASPNETCORE_`. The `DOTNET_` and `ASPNETCORE_` prefixes are used by .NET for host and app configuration, but not for user configuration.
 <!-- For more information on host and app configuration, see .NET Generic Host. -->
 
 On [Azure App Service](https://azure.microsoft.com/services/app-service), select **New application setting** on the **Settings > Configuration** page. Azure App Service application settings are:

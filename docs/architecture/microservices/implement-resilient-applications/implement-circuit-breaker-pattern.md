@@ -93,7 +93,7 @@ You can then check the status using the URI `http://localhost:5103/failing`, as 
 
 **Figure 8-5**. Checking the state of the "Failing" ASP.NET middleware – In this case, disabled.
 
-At this point, the Basket microservice responds with status code 500 whenever your call invokes it.
+At this point, the Basket microservice responds with status code 500 whenever you call/invoke it.
 
 Once the middleware is running, you can try making an order from the MVC web application. Because the requests fail, the circuit will open.
 

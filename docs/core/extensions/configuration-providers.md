@@ -138,41 +138,6 @@ The application would write the following sample output:
 
 :::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="32-37":::
 
-## Key-per-file configuration provider
-
-The <xref:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider> uses a directory's files as configuration key-value pairs. The key is the file name. The value is the file's contents. The Key-per-file configuration provider is used in Docker hosting scenarios.
-
-To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile%2A> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
-
-Overloads permit specifying:
-
-- An `Action<KeyPerFileConfigurationSource>` delegate that configures the source.
-- Whether the directory is optional and the path to the directory.
-
-The double-underscore (`__`) is used as a configuration key delimiter in file names. For example, the file name `Logging__LogLevel__System` produces the configuration key `Logging:LogLevel:System`.
-
-Call `ConfigureAppConfiguration` when building the host to specify the app's configuration:
-
-```csharp
-.ConfigureAppConfiguration((_, configuration) =>
-{
-    var path = Path.Combine(
-        Directory.GetCurrentDirectory(), "path/to/files");
-
-    configuration.AddKeyPerFile(directoryPath: path, optional: true);
-})
-```
-
-## Memory configuration provider
-
-The <xref:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider> uses an in-memory collection as configuration key-value pairs.
-
-The following code adds a memory collection to the configuration system:
-
-:::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="16-23":::
-
-In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})?displayProperty=nameWithType> adds the memory provider after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
-
 ## Environment variable configuration provider
 
 Using the default configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager. Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
@@ -304,6 +269,41 @@ The key value:
 - Isn't required if `=` is used. For example, `SomeKey=`.
 
 Within the same command, don't mix command-line argument key-value pairs that use `=` with key-value pairs that use a space.
+
+## Key-per-file configuration provider
+
+The <xref:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider> uses a directory's files as configuration key-value pairs. The key is the file name. The value is the file's contents. The Key-per-file configuration provider is used in Docker hosting scenarios.
+
+To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile%2A> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
+
+Overloads permit specifying:
+
+- An `Action<KeyPerFileConfigurationSource>` delegate that configures the source.
+- Whether the directory is optional and the path to the directory.
+
+The double-underscore (`__`) is used as a configuration key delimiter in file names. For example, the file name `Logging__LogLevel__System` produces the configuration key `Logging:LogLevel:System`.
+
+Call `ConfigureAppConfiguration` when building the host to specify the app's configuration:
+
+```csharp
+.ConfigureAppConfiguration((_, configuration) =>
+{
+    var path = Path.Combine(
+        Directory.GetCurrentDirectory(), "path/to/files");
+
+    configuration.AddKeyPerFile(directoryPath: path, optional: true);
+})
+```
+
+## Memory configuration provider
+
+The <xref:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider> uses an in-memory collection as configuration key-value pairs.
+
+The following code adds a memory collection to the configuration system:
+
+:::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="16-23":::
+
+In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})?displayProperty=nameWithType> adds the memory provider after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
 
 ## See also
 

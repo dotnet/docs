@@ -79,7 +79,7 @@ Any type that provides an [indexer](../programming-guide/indexers/index.md) with
 > [!IMPORTANT]
 > The performance of code using the range operator depends on the source collection operand.
 >
-> The time complexity of the range operator depends on the storage type. For example, if the storage is a `string` or an array, then the result is a copy of the specified section of the input, so the time complexity is *O(N)* (where N is the length of the range). On the other hand, if it's a <xref:System.Memory%601.Span%2A?displayProperty=nameWithType> or a <xref:System.Memory%601?displayProperty=nameWithType>, the result references the same backing store, which means there is no copy and the operation is *O(1)*.
+> The time complexity of the range operator depends on the storage type. For example, if the storage is a `string` or an array, then the result is a copy of the specified section of the input, so the time complexity is *O(N)* (where N is the length of the range). On the other hand, if it's a <xref:System.Span%601?displayProperty=nameWithType> or a <xref:System.Memory%601?displayProperty=nameWithType>, the result references the same backing store, which means there is no copy and the operation is *O(1)*.
 >
 > In addition to the time complexity, this causes extra allocations and copies, impacting performance. In performance sensitive code, consider using `Span<T>` or `Memory<T>` as the sequence type, since the range operator does not allocate for them.
 

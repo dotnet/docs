@@ -9,7 +9,7 @@ ms.date: 09/14/2020
 
 **This article applies to:** ✔️ .NET Core 5.0.100 SDK and later versions
 
-When SDK issues error NETSDK1145, the targeting or apphost pack is not installed and NuGet package restore is not supported. This is typically caused by having a newer SDK than the one included in VS for C++/CLI projects. Please upgrade VS, remove global.json if it specifies a certain SDK version and uninstall the newer SDK. Alternatively, you could override the targeting or apphost version: Find the version existed under pack directory from the error message and matching the target framework of the project. Add the following to the project
+When SDK issues error NETSDK1145, the targeting or apphost pack is not installed and NuGet package restore is not supported. This is typically caused by having a newer SDK than the one included in VS for C++/CLI projects. Upgrade VS, remove global.json if it specifies a certain SDK version and uninstall the newer SDK. Alternatively, you could override the targeting or apphost version: Find the version that exists under the pack directory from the error message and matches the target framework of the project. Add the following to the project:
 
 For apphost pack
 

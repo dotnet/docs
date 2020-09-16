@@ -58,9 +58,9 @@ Core .NET libraries
 
 #### Affected APIs
 
-- <xref:System.Runtime.Versioning.MinimumOSPlatformAttribute?displayProperty=fullName>
-- <xref:System.Runtime.Versioning.ObsoletedInOSPlatformAttribute?displayProperty=fullName>
-- <xref:System.Runtime.Versioning.RemovedInOSPlatformAttribute?displayProperty=fullName>
+- `System.Runtime.Versioning.MinimumOSPlatformAttribute`
+- `System.Runtime.Versioning.ObsoletedInOSPlatformAttribute`
+- `System.Runtime.Versioning.RemovedInOSPlatformAttribute`
 
 <!--
 

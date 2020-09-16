@@ -208,7 +208,7 @@ On [Azure App Service](https://azure.microsoft.com/services/app-service), select
 
 ### Connection string prefixes
 
-The Configuration API has special processing rules for four connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the table are loaded into the app with the [default configuration](#default) or when no prefix is supplied to `AddEnvironmentVariables`.
+The Configuration API has special processing rules for four connection string environment variables. These connection strings are involved in configuring Azure connection strings for the app environment. Environment variables with the prefixes shown in the table are loaded into the app with the default configuration or when no prefix is supplied to `AddEnvironmentVariables`.
 
 | Connection string prefix | Provider                                                                |
 |--------------------------|-------------------------------------------------------------------------|

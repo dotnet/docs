@@ -40,13 +40,13 @@ The following data is only for the `AssemblyLoadStop` event:
 
 ### Resolution steps
 
-These events represent each step of the resolution flow during a load and allow the determination of which steps in were taken and their results. This resolution flow corresponds to step (2) of the [managed assembly loading algorithm](loading-managed.md#algorithm).
+These events represent each step of the resolution flow during a load and allow the determination of which steps were taken and their results. This resolution flow corresponds to step (2) of the [managed assembly loading algorithm](loading-managed.md#algorithm).
 
 | Event               | Event ID | Description |
 | ------------------- | -------: | ----------- |
 | ResolutionAttempted |      292 | Resolution of a managed assembly was attempted during a load. |
 
-The events have the following data:
+The event has the following data:
 
 | Field                 | Description |
 | --------------------- | ----------- |
@@ -85,9 +85,9 @@ The following data is only for the `AssemblyLoadContextResolvingHandlerInvoked` 
 ### Path probing
 | Event           | Event ID | Description |
 | --------------- | -------: | ----------- |
-| KnownPathProbed |      296 | Path was probed during as part of the [default probing logic](default-probing.md). |
+| KnownPathProbed |      296 | Path was probed as part of the [default probing logic](default-probing.md). |
 
-The events have the following data:
+The event has the following data:
 
 | Field     | Description |
 | --------- | ----------- |

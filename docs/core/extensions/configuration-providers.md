@@ -118,7 +118,7 @@ The previous configuration file loads the following keys with `value`:
 - `key:attribute`
 - `section:key:attribute`
 
-## INI configuration provider
+### INI configuration provider
 
 The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
 

@@ -1,14 +1,15 @@
 ---
-title: "Basic Queries (LINQ to XML) (C#)"
+title: Basic Queries (LINQ to XML)
 description: View examples of basic queries for LINQ to XML, such as how to find an element with a specific attribute.
 ms.date: 07/20/2015
 ms.assetid: d333bb7d-20c1-448a-95b7-e5ba07915744
 ---
-# Basic Queries (LINQ to XML) (C#)
-This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries.  
-  
-## In This Section  
-  
+# Basic Queries (LINQ to XML)
+
+This section provides examples of basic LINQ to XML queries.
+
+## In this section
+
 |Topic|Description|  
 |-----------|-----------------|  
 |[How to find an element with a specific attribute (C#)](../../../../standard/linq/find-element-specific-attribute.md)|Shows how to find a particular element that has an attribute that has a specific value.|
@@ -27,4 +28,4 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltec
   
 ## See also
 
-- [Querying XML Trees (C#)](../../../../standard/linq/find-element-specific-attribute.md)
+- [Querying XML Trees](find-element-specific-attribute.md)

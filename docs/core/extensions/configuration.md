@@ -11,16 +11,14 @@ ms.topic: overview
 
 Configuration in .NET is performed using one or more [configuration providers](#configuration-providers). Configuration providers read configuration data from key-value pairs using a variety of configuration sources:
 
-> [!div class="checklist"]
->
-> - Settings files, such as *appsettings.json*
-> - Environment variables
-> - [Azure Key Vault](/azure/key-vault/general/overview)
-> - [Azure App Configuration](/azure/azure-app-configuration/overview)
-> - Command-line arguments
-> - Custom providers, installed or created
-> - Directory files
-> - In-memory .NET objects
+- Settings files, such as *appsettings.json*
+- Environment variables
+- [Azure Key Vault](/azure/key-vault/general/overview)
+- [Azure App Configuration](/azure/azure-app-configuration/overview)
+- Command-line arguments
+- Custom providers, installed or created
+- Directory files
+- In-memory .NET objects
 
 ## Configure console apps
 
@@ -57,7 +55,7 @@ The following table shows the configuration providers available to .NET Core app
 | [File configuration provider](configuration-providers.md#file-configuration-provider)                                  | JSON, XML, and INI files           |
 | [Key-per-file configuration provider](configuration-providers.md#key-per-file-configuration-provider)                  | Directory files                    |
 | [Memory configuration provider](configuration-providers.md#memory-configuration-provider)                              | In-memory collections              |
-| Secret Manager                                                                                                         | File in the user profile directory |
+| [App secrets (Secret Manager)](/aspnet/core/security/app-secrets)                                                      | File in the user profile directory |
 
 For more information on various configuration providers, see [Configuration providers in .NET](configuration-providers.md).
 

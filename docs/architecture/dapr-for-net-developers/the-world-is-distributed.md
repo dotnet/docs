@@ -7,7 +7,7 @@ ms.date: 09/05/2020
 
 # The world is distributed
 
-Modern, distributed systems are in and, monolithics apps are out! Just ask any 'cool kid.'
+Modern, distributed systems are in and, monolithic apps are out! Just ask any 'cool kid.'
 
 But, interestingly, they aren't the only ones saying it. More and more, corporate architects and IT leaders are designing new and replatforming existing enterprise applications to fit this mold.
 
@@ -22,19 +22,19 @@ For years, we designed, developed, and deployed applications as a single, monoli
 
 ![Monolithic architecture.](./media/monolithic-design.png)
 
-**Figure 1-x**. Monolithic architecture.
+**Figure 1**. Monolithic architecture.
 
-In the previous figure, note how modules for Ordering, Identity, Marketing, and others, all reside in a single server process. Applicaiton state is stored inside a shared reltaional database. Business functionality is exposed via HTML and RESTFul interfaces.
+In the previous figure, note how modules for Ordering, Identity, Marketing, and others, all reside in a single-server process. Application state is stored inside a shared relational database. Business functionality is exposed via HTML and RESTFul interfaces.
 
-Although simple and straightforward, monolithic architectures face a number of challenges:
+Although straightforward, monolithic architectures present many  challenges:
 
 - Coupling
 - Deployment
 - Scaling
 
-As the application grows in size, complexity, and volumne, these challenges become more pronounced. Eventually, you enter the `Fear Cycle`. The *fear cycle* is a state in which you have lost control of your monolithic application.
+As the application grows in size, complexity, and volume, these challenges become more pronounced. Eventually, you enter the `Fear Cycle`. The *fear cycle* is a state in which you have lost control of your monolithic application.
 
-The Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/), provide the obvious giveways:
+The Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/), provide the obvious giveaways:
 
 - The app has become so overwhelmingly complicated that no single person understands it.
 - You fear making changes - each change has unintended and costly side effects.
@@ -46,17 +46,17 @@ The Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](ht
 - Architectural erosion sets in as the code base deteriorates with never-ending "special cases."
 - The consultants tell you to rewrite it.
 
-Instead of fear, business need speed and agility. They need an architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.
+Instead of fear, businesses need speed and agility. They seek an architectural style enables them to rapidly respond to market conditions. They can instantaneously update small areas of a live, complex application, and individually scale those areas as needed.
 
-Many organizations have addressed the monolithic fear cycle and are gaining speed and agility by adopting a distributed architectural approach to building systems. Figure 1-x shows the same system built applying cloud-native techniques and practices.
+Many organizations are mitigating the monolithic fear cycle. They are gaining speed and agility by adopting a distributed architectural approach to building systems. Figure 1 shows the same system built applying cloud-native techniques and practices.
 
 ![Distributed architecture.](./media/distributed-design.png)
 
-**Figure 1-x**. Distributed architecture.
+**Figure 1**. Distributed architecture.
 
 Note in the previous figure how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a large relational database, each service owns it own datastore, the type of which vary based upon the data needs. Note how some services depend on a relational database, but other on NoSQL databases. One service stores its state in a distributed cache. Note how all traffic routes through an API Gateway service that is responsible for directing traffic to the core back-end services and enforcing many cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
-But, while distributed applications can help bring agilty and speed, they bring many challenges. Consdier, for example:
+But, while distributed applications can help bring agility and speed, they bring many challenges. Consider, for example:
 
 - Complexity
 - Interservice communication

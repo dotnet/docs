@@ -9,9 +9,9 @@ namespace WorkerServiceOptions.Example
 {
     public class WorkerWithOptions : BackgroundService
     {
-        bool _hasWrittenSettings;
-        readonly ILogger<WorkerWithOptions> _logger;
-        readonly CustomSettings _settings;
+        private bool _hasWrittenSettings;
+        private readonly ILogger<WorkerWithOptions> _logger;
+        private readonly CustomSettings _settings;
 
         public WorkerWithOptions(
             ILogger<WorkerWithOptions> logger,

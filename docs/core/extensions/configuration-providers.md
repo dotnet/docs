@@ -20,7 +20,7 @@ Configuration in .NET is possible with configuration providers. There are severa
 
 ## File configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> is the base class for loading configuration from the file system. The following configuration providers derive from `FileConfigurationProvider`:
+<xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> is the base class for loading configuration from the file system. The following configuration providers derive from `FileConfigurationProvider`:
 
 - [INI configuration provider](#ini-configuration-provider)
 - [JSON configuration provider](#json-configuration-provider)
@@ -28,7 +28,7 @@ The <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> is the b
 
 ### INI configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> loads configuration from an INI file at runtime, and relies on the [`Microsoft.Extensions.Configuration.Ini` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini).
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
 
 The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
 
@@ -48,7 +48,7 @@ The application would write the following sample output:
 
 ### JSON configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> loads configuration from a JSON file, and relies on the [`Microsoft.Extensions.Configuration.Json` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json).
+The <xref:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider> class loads configuration from a JSON file. Install the [`Microsoft.Extensions.Configuration.Json`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json) NuGet package.
 
 Overloads can specify:
 
@@ -65,7 +65,8 @@ The preceding code:
 - Configures the JSON configuration provider to load the *appsettings.json* and  *appsettings*.`Environment`.*json* files with the following options:
   - `optional: true`: The file is optional.
   - `reloadOnChange: true` : The file is reloaded when changes are saved.
-- The JSON settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
+
+The JSON settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
 
 An example *appsettings.json* file with various configuration settings follows:
 
@@ -77,7 +78,7 @@ Consider the `TransientFaultHandlingOptions` record type defined as follows:
 
 :::code language="csharp" source="snippets/configuration/console-json/TransientFaultHandlingOptions.cs":::
 
-For more information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
+For information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
 
 The following code builds the configuration root, binds a section to the `TransientFaultHandlingOptions` record type, and prints the bound values to the console window:
 
@@ -89,7 +90,7 @@ The application would write the following sample output:
 
 ### XML configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> loads configuration from an XML file at runtime, and relies on the [`Microsoft.Extensions.Configuration.Xml` NuGet package](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml).
+The <xref:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider> class loads configuration from an XML file at runtime. Install the [`Microsoft.Extensions.Configuration.Xml`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Xml) NuGet package.
 
 The following code demonstrates configuration of XML files using the XML configuration provider.
 
@@ -103,7 +104,8 @@ The preceding code:
   - `reloadOnChange: true` : The file is reloaded when changes are saved.
 - Configures the environment variables configuration provider.
 - Configures the command-line configuration provider if the given `args` contains arguments.
-- The XML settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
+
+The XML settings are overridden by settings in the [Environment variables configuration provider](#environment-variable-configuration-provider) and the [Command-line configuration provider](#command-line-configuration-provider).
 
 An example *appsettings.xml* file with various configuration settings follows:
 
@@ -140,7 +142,7 @@ The previous configuration file loads the following keys with `value`:
 
 ## Key-per-file configuration provider
 
-The <xref:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider> uses a directory's files as configuration key-value pairs. The key is the file name. The value contains the file's contents. The Key-per-file configuration provider is used in Docker hosting scenarios.
+The <xref:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider> uses a directory's files as configuration key-value pairs. The key is the file name. The value is the file's contents. The Key-per-file configuration provider is used in Docker hosting scenarios.
 
 To activate key-per-file configuration, call the <xref:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions.AddKeyPerFile%2A> extension method on an instance of <xref:Microsoft.Extensions.Configuration.ConfigurationBuilder>. The `directoryPath` to the files must be an absolute path.
 
@@ -171,16 +173,14 @@ The following code adds a memory collection to the configuration system:
 
 :::code language="csharp" source="snippets/configuration/console-memory/Program.cs" highlight="16-23":::
 
-In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})?displayProperty=nameWithType> is added after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
+In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions.AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})?displayProperty=nameWithType> adds the memory provider after the default configuration providers. For an example of ordering the configuration providers, see [XML configuration provider](#xml-configuration-provider).
 
 ## Environment variable configuration provider
 
 Using the default configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager. Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
 
-The `:` separator doesn't work with environment variable hierarchical keys on all platforms. `__`, the double underscore, is:
-
-- Supported by all platforms. For example, the `:` separator is not supported by [Bash](https://linuxhint.com/bash-environment-variables), but `__` is.
-- Automatically replaced by a `:`
+The `:` separator doesn't work with environment variable hierarchical keys on all platforms. The double underscore (`__`) is automatically replaced by a `:` and is supported by all platforms. For example, the `:` separator is not supported by [Bash](https://linuxhint.com/bash-environment-variables), but `__` is.
+- 
 
 The following `set` commands:
 
@@ -198,7 +198,7 @@ dotnet run
 The preceding environment settings:
 
 - Are only set in processes launched from the command window they were set in.
-- Won't be read by browsers launched with Visual Studio.
+- Won't be read by web apps launched with Visual Studio.
 
 The following [setx](/windows-server/administration/windows-commands/setx) commands can be used to set the environment keys and values on Windows. Unlike `set`, `setx` settings are persisted. `/M` sets the variable in the system environment. If the `/M` switch isn't used, a user environment variable is set.
 
@@ -281,7 +281,7 @@ Using the default configuration, the <xref:Microsoft.Extensions.Configuration.Co
 - App secrets (Secret Manager) in the `Development` environment.
 - Environment variables.
 
-By default, configuration values set on the command-line override configuration values set with all the other configuration providers.
+By default, configuration values set on the command line override configuration values set with all the other configuration providers.
 
 ### Command-line arguments
 

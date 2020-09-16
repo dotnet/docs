@@ -8,7 +8,7 @@ namespace WorkerService.Example
 {
     public class Worker : BackgroundService
     {
-        readonly ILogger<Worker> _logger;
+        private readonly ILogger<Worker> _logger;
 
         public Worker(ILogger<Worker> logger) =>
             _logger = logger;

@@ -9,7 +9,7 @@ ms.topic: how-to
 
 # Implement a custom configuration provider in .NET
 
-There are many [configuration providers](configuration-providers.md) available for common configuration sources such as INI, JSON, and XML files. You may need to implement a custom configuration provider when one of the available providers doesn't suit your application needs. In this article, you'll learn how to implement a custom configuration provider that relies on a database as its configuration source.
+There are many [configuration providers](configuration-providers.md) available for common configuration sources such as JSON, XML, and INI files. You may need to implement a custom configuration provider when one of the available providers doesn't suit your application needs. In this article, you'll learn how to implement a custom configuration provider that relies on a database as its configuration source.
 
 ## Custom configuration provider
 
@@ -21,13 +21,11 @@ The provider has the following characteristics:
 - The provider reads a database table into configuration at startup. The provider doesn't query the database on a per-key basis.
 - Reload-on-change isn't implemented, so updating the database after the app starts has no effect on the app's configuration.
 
-Define a `Settings` record type entity for storing configuration values in the database.
-
-*Models/Settings.cs*:
+Define a `Settings` record type entity for storing configuration values in the database. For example, you could add a *Settings.cs* file in your *Models* folder:
 
 :::code language="csharp" source="snippets/configuration/custom-provider/Models/Settings.cs":::
 
-For more information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
+For information on record types, see [Record types in C# 9](../../csharp/whats-new/csharp-9.md#record-types).
 
 Add an `EntityConfigurationContext` to store and access the configured values.
 

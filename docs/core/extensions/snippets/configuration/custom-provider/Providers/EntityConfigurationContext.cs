@@ -7,7 +7,8 @@ namespace CustomProvider.Example.Providers
     {
         public DbSet<Settings> Settings { get; set; }
 
-        public EntityConfigurationContext(DbContextOptions options) : base(options)
+        public EntityConfigurationContext(DbContextOptions options) 
+            : base(options)
         {
         }
     }

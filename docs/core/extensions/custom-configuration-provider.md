@@ -3,7 +3,7 @@ title: Implement a custom configuration provider in .NET
 description: Learn how to implement a custom configuration provider in .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/15/2020
+ms.date: 09/16/2020
 ms.topic: how-to
 ---
 

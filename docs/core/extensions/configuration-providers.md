@@ -3,48 +3,26 @@ title: Configuration providers in .NET
 description: Learn how the Configuration provider API is used to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/15/2020
+ms.date: 09/16/2020
 ---
 
 # Configuration providers in .NET
 
 Configuration in .NET is possible with configuration providers. There are several types of providers that rely on various configuration sources. This article details all of the different configuration providers and their corresponding sources.
 
-> [!div class="checklist"]
->
-> - [File configuration provider](#file-configuration-provider)
-> - [Key-per-file configuration provider](#key-per-file-configuration-provider)
-> - [Memory configuration provider](#memory-configuration-provider)
-> - [Environment variable configuration provider](#environment-variable-configuration-provider)
-> - [Command-line configuration provider](#command-line-configuration-provider)
+- [File configuration provider](#file-configuration-provider)
+- [Environment variable configuration provider](#environment-variable-configuration-provider)
+- [Command-line configuration provider](#command-line-configuration-provider)
+- [Key-per-file configuration provider](#key-per-file-configuration-provider)
+- [Memory configuration provider](#memory-configuration-provider)
 
 ## File configuration provider
 
 <xref:Microsoft.Extensions.Configuration.FileConfigurationProvider> is the base class for loading configuration from the file system. The following configuration providers derive from `FileConfigurationProvider`:
 
-- [INI configuration provider](#ini-configuration-provider)
 - [JSON configuration provider](#json-configuration-provider)
 - [XML configuration provider](#xml-configuration-provider)
-
-### INI configuration provider
-
-The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
-
-The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
-
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-31,38-39" highlight="18-24":::
-
-An example *appsettings.ini* file with various configuration settings follows:
-
-:::code language="ini" source="snippets/configuration/console-ini/appsettings.ini":::
-
-The following code displays the preceding configuration settings by writing them to the console window:
-
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="26-30":::
-
-The application would write the following sample output:
-
-:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="32-37":::
+- [INI configuration provider](#ini-configuration-provider)
 
 ### JSON configuration provider
 
@@ -137,8 +115,28 @@ Attributes can be used to supply values:
 
 The previous configuration file loads the following keys with `value`:
 
-- key:attribute
-- section:key:attribute
+- `key:attribute`
+- `section:key:attribute`
+
+### INI configuration provider
+
+The <xref:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider> class loads configuration from an INI file at runtime. Install the [`Microsoft.Extensions.Configuration.Ini`](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Ini)  NuGet package.
+
+The following code clears all the configuration providers and adds the `IniConfigurationProvider` with two INI files as the source:
+
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="1-31,38-39" highlight="18-24":::
+
+An example *appsettings.ini* file with various configuration settings follows:
+
+:::code language="ini" source="snippets/configuration/console-ini/appsettings.ini":::
+
+The following code displays the preceding configuration settings by writing them to the console window:
+
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="26-30":::
+
+The application would write the following sample output:
+
+:::code language="csharp" source="snippets/configuration/console-ini/Program.cs" range="32-37":::
 
 ## Key-per-file configuration provider
 
@@ -180,7 +178,6 @@ In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurat
 Using the default configuration, the <xref:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider> loads configuration from environment variable key-value pairs after reading *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager. Therefore, key values read from the environment override values read from *appsettings.json*, *appsettings.*`Environment`*.json*, and Secret manager.
 
 The `:` separator doesn't work with environment variable hierarchical keys on all platforms. The double underscore (`__`) is automatically replaced by a `:` and is supported by all platforms. For example, the `:` separator is not supported by [Bash](https://linuxhint.com/bash-environment-variables), but `__` is.
-- 
 
 The following `set` commands:
 
@@ -236,15 +233,13 @@ set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
 dotnet run
 ```
 
-The default configuration loads environment variables and command-line arguments prefixed with `DOTNET_` and `ASPNETCORE_`. The `DOTNET_` and `ASPNETCORE_` prefixes are used by .NET for host and app configuration, but not for user configuration.
+The default configuration loads environment variables and command-line arguments prefixed with `DOTNET_`. The `DOTNET_` prefix is used by .NET for host and app configuration, but not for user configuration.
 <!-- For more information on host and app configuration, see .NET Generic Host. -->
 
 On [Azure App Service](https://azure.microsoft.com/services/app-service), select **New application setting** on the **Settings > Configuration** page. Azure App Service application settings are:
 
 - Encrypted at rest and transmitted over an encrypted channel.
 - Exposed as environment variables.
-
-<!-- For more information, see [Azure Apps: Override app configuration using the Azure Portal](xref:host-and-deploy/azure-apps/index#override-app-configuration-using-the-azure-portal). -->
 
 ### Connection string prefixes
 
@@ -264,7 +259,7 @@ When an environment variable is discovered and loaded into configuration with an
 
 | Environment variable key | Converted configuration key | Provider configuration entry                                                    |
 |--------------------------|-----------------------------|---------------------------------------------------------------------------------|
-| `CUSTOMCONNSTR_{KEY}`   | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
+| `CUSTOMCONNSTR_{KEY}`    | `ConnectionStrings:{KEY}`   | Configuration entry not created.                                                |
 | `MYSQLCONNSTR_{KEY}`     | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `MySql.Data.MySqlClient` |
 | `SQLAZURECONNSTR_{KEY}`  | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
 | `SQLCONNSTR_{KEY}`       | `ConnectionStrings:{KEY}`   | Key: `ConnectionStrings:{KEY}_ProviderName`:<br>Value: `System.Data.SqlClient`  |
@@ -288,19 +283,19 @@ By default, configuration values set on the command line override configuration 
 The following command sets keys and values using `=`:
 
 ```dotnetcli
-dotnet run SecretKey="Secret key from command line" TransientFaultHandlingOptions:Enabled=Cmd TransientFaultHandlingOptions:AutoRetryDelay=Cmd_Rick
+dotnet run SecretKey="Secret key from command line"
 ```
 
 The following command sets keys and values using `/`:
 
 ```dotnetcli
-dotnet run /SecretKey "Using /" /TransientFaultHandlingOptions:Enabled=Cmd_true /TransientFaultHandlingOptions:AutoRetryDelay=Cmd_00:00:02
+dotnet run /SecretKey "Secret key set from forward slash"
 ```
 
 The following command sets keys and values using `--`:
 
 ```dotnetcli
-dotnet run --SecretKey "Using --" --TransientFaultHandlingOptions:Enabled=Cmd--true --TransientFaultHandlingOptions:AutoRetryDelay=Cmd--00:00:04
+dotnet run --SecretKey "Secret key set from double hyphen"
 ```
 
 The key value:

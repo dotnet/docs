@@ -3,20 +3,9 @@ title: Configuration in .NET
 description: Learn how to use the Configuration API to configure .NET applications.
 author: IEvangelist
 ms.author: dapine
-ms.date: 09/15/2020
+ms.date: 09/16/2020
 ms.topic: overview
 ---
-
-<!-- TODO:
-
-- Overview of Microsoft.Extensions article
-- Configuration / Config providers
-- Dependency injection article
-- Generic Host article
-- Logging article
-- Options pattern article
-
--->
 
 # Configuration in .NET
 
@@ -41,7 +30,7 @@ New .NET console applications created using [dotnet new](../tools/dotnet-new.md)
 
 The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[])?displayProperty=nameWithType> method provides default configuration for the app in the following order:
 
-1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source. In the default configuration case, adds the host configuration and setting it as the first source for the _app_ configuration.
+1. [ChainedConfigurationProvider](xref:Microsoft.Extensions.Configuration.ChainedConfigurationSource) : Adds an existing `IConfiguration` as a source.
 1. *appsettings.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider).
 1. *appsettings.*`Environment`*.json* using the [JSON configuration provider](configuration-providers.md#file-configuration-provider). For example, *appsettings*.***Production***.*json* and *appsettings*.***Development***.*json*.
 1. App secrets when the app runs in the `Development` environment.
@@ -50,26 +39,9 @@ The <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder(System.String[]
 
 Configuration providers that are added later override previous key settings. For example, if `SomeKey` is set in both *appsettings.json* and the environment, the environment value is used. Using the default configuration providers, the [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider) overrides all other providers.
 
-## Default builder settings
+### Binding
 
-The <xref:Microsoft.AspNetCore.WebHost.CreateDefaultBuilder> method:
-
-- Sets the content root to the path returned by <xref:System.IO.Directory.GetCurrentDirectory?displayProperty=nameWithType>.
-- Loads host configuration from:
-  - Environment variables prefixed with `DOTNET_`.
-  - Command-line arguments.
-- Loads app configuration from:
-  - *appsettings.json*.
-  - *appsettings.`Environment`.json*.
-  - Secret Manager when the app runs in the `Development` environment.
-  - Environment variables.
-  - Command-line arguments.
-- Adds the following logging providers:
-  - Console
-  - Debug
-  - EventSource
-  - EventLog (only when running on Windows)
-- Enables scope validation and [dependency validation](xref:Microsoft.Extensions.DependencyInjection.ServiceProviderOptions.ValidateOnBuild) when the environment is `Development`.
+One of the key advantages to configuration in .NET is the ability to bind configuration values to instances of .NET objects. For example, the JSON configuration provider can be used to map *appsettings.json* files to .NET objects and is used with dependency injection. This enables the options pattern, the options pattern uses classes to provide strongly typed access to groups of related settings.
 
 ## Configuration providers
 
@@ -82,7 +54,7 @@ The following table shows the configuration providers available to .NET Core app
 | [Command-line configuration provider](configuration-providers.md#command-line-configuration-provider)                  | Command-line parameters            |
 | [Custom configuration provider](custom-configuration-provider.md)                                                      | Custom source                      |
 | [Environment Variables configuration provider](configuration-providers.md#environment-variable-configuration-provider) | Environment variables              |
-| [File configuration provider](configuration-providers.md#file-configuration-provider)                                  | INI, JSON, and XML files           |
+| [File configuration provider](configuration-providers.md#file-configuration-provider)                                  | JSON, XML, and INI files           |
 | [Key-per-file configuration provider](configuration-providers.md#key-per-file-configuration-provider)                  | Directory files                    |
 | [Memory configuration provider](configuration-providers.md#memory-configuration-provider)                              | In-memory collections              |
 | Secret Manager                                                                                                         | File in the user profile directory |

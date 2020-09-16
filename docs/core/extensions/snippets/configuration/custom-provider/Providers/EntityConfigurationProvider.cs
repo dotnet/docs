@@ -11,8 +11,9 @@ namespace CustomProvider.Example.Providers
     {
         private readonly Action<DbContextOptionsBuilder> _optionsAction;
 
-        public EntityConfigurationProvider(Action<DbContextOptionsBuilder> optionsAction) =>
-            _optionsAction = optionsAction ?? throw new ArgumentNullException(nameof(optionsAction));
+        public EntityConfigurationProvider(
+            Action<DbContextOptionsBuilder> optionsAction) =>
+            _optionsAction = optionsAction;
 
         public override void Load()
         {
@@ -32,7 +33,8 @@ namespace CustomProvider.Example.Providers
         static IDictionary<string, string> CreateAndSaveDefaultValues(
             EntityConfigurationContext context)
         {
-            var settings = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+            var settings = new Dictionary<string, string>(
+                StringComparer.OrdinalIgnoreCase)
             {
                 ["EndpointId"] = "b3da3c4c-9c4e-4411-bc4d-609e2dcc5c67",
                 ["DisplayLabel"] = "Widgets Incorporated, LLC.",

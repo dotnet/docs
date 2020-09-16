@@ -23,7 +23,7 @@ This document provides an overview of key concepts and services .NET developers 
 
 **Managed services**: Azure provides some services where you provide data or information to Azure, and Azure's implementation takes the appropriate action. One example is Azure Blob Storage, where you provide files and Azure handles reading, writing, and persisting them.
 
-**Azure SDK for .NET**: Sometimes referred to as the **Azure libraries for .NET**, this collectively refers to the [NuGet packages](packages.md) you install in your project that provide various interactions and functionality with Azure services. These packages also include management libraries used to provision and administer the resources.
+**Azure SDK for .NET** collectively refers to the [NuGet packages](packages.md) you install in your project that provide various interactions and functionality with Azure services. These packages also include management libraries used to provision and administer the resources.
 
 ## Choosing a hosting option
 

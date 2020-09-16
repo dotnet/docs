@@ -64,9 +64,9 @@ But, while distributed applications can help bring agility and speed, they bring
 - Messaging
 - Observability - End-to-end monitoring of processes executing on different machines
 
-So, what exactly is DAPR? Sit back, relax, and let us help you explore this new world.
+So, what exactly is Dapr? Sit back, relax, and let us help you explore this new world.
 
-In this chapter, we introduced DAPR. Blah. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
+In this chapter, we introduced Dapr. Blah. We provided a definition along with the key capabilities that drive a cloud-native application. We looked at the types of applications that might justify this investment and effort.
 
 With the introduction behind, we now dive into a much more detailed look at cloud native.
 

@@ -1,11 +1,11 @@
 ---
-title: DAPR for .NET Developers
+title: Dapr for .NET Developers
 description: A guide for to understand and leverage the full power of Microsoft's open source Distributed Application Runtime.
 author: robvet
 ms.date: 09/05/2020
 ---
 
-# DAPR for .NET Developers
+# Dapr for .NET Developers
 
 ![cover image](./media/cover.png)
 

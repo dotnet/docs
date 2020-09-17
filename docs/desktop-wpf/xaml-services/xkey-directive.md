@@ -57,19 +57,19 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 - Some WPF types declare an implicit key for dictionary usage. For example, a <xref:System.Windows.Style> with a <xref:System.Windows.Style.TargetType%2A>, or a <xref:System.Windows.DataTemplate> with a <xref:System.Windows.DataTemplate.DataType%2A>, can be  in a <xref:System.Windows.ResourceDictionary> and use the implicit key.  
   
-- WPF supports a merged resource dictionary concept. Keys can be shared between the merged dictionaries, and the shared key behavior can be accessed using <xref:System.Windows.FrameworkContentElement.FindResource%2A>. For more information, see [Merged Resource Dictionaries](../../framework/wpf/advanced/merged-resource-dictionaries.md).  
+- WPF supports a merged resource dictionary concept. Keys can be shared between the merged dictionaries, and the shared key behavior can be accessed using <xref:System.Windows.FrameworkContentElement.FindResource%2A>. For more information, see [Merged Resource Dictionaries](/dotnet/desktop/wpf/advanced/merged-resource-dictionaries).  
   
  In the overall WPF XAML implementation and application model, key uniqueness is not checked by the XAML markup compiler. Instead, missing or nonunique `x:Key` values cause load-time XAML parser errors. However, Visual Studio handling of dictionaries for WPF can often note such errors in the design phase.  
   
- Note that in the syntax shown, the <xref:System.Windows.ResourceDictionary> object is implicit in how the WPF XAML processor produces a collection to populate a <xref:System.Windows.FrameworkElement.Resources%2A> collection. A <xref:System.Windows.ResourceDictionary> is not typically provided explicitly as an element in markup, although it can be in some cases if wanted for clarity (it would be a collection object element between the <xref:System.Windows.FrameworkElement.Resources%2A> property element and the items within that populate the dictionary). For information about why a collection object is almost always an implicit element in markup, see [XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md).  
+ Note that in the syntax shown, the <xref:System.Windows.ResourceDictionary> object is implicit in how the WPF XAML processor produces a collection to populate a <xref:System.Windows.FrameworkElement.Resources%2A> collection. A <xref:System.Windows.ResourceDictionary> is not typically provided explicitly as an element in markup, although it can be in some cases if wanted for clarity (it would be a collection object element between the <xref:System.Windows.FrameworkElement.Resources%2A> property element and the items within that populate the dictionary). For information about why a collection object is almost always an implicit element in markup, see [XAML Syntax In Detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail).  
   
  In the WPF XAML implementation, the handling for resource dictionary keys is defined by the <xref:System.Windows.ResourceKey> abstract class. However the WPF XAML processor produces different underlying extension types for keys based on their usages. For example, the key for a <xref:System.Windows.DataTemplate> or any derived class is handled separately, and produces a distinct <xref:System.Windows.DataTemplateKey> object.  
   
- Keys and names use different directives and language elements (`x:Key` versus `x:Name`) in the basic XAML definition. Keys and names are also used in different situations by the WPF definition and application of these concepts. For details, see [WPF XAML Namescopes](../../framework/wpf/advanced/wpf-xaml-namescopes.md).  
+ Keys and names use different directives and language elements (`x:Key` versus `x:Name`) in the basic XAML definition. Keys and names are also used in different situations by the WPF definition and application of these concepts. For details, see [WPF XAML Namescopes](/dotnet/desktop/wpf/advanced/wpf-xaml-namescopes).  
   
- As stated previously, the value of a key can be supplied through a markup extension and can be other than a string value. An example WPF scenario is that the value of `x:Key` may be a [ComponentResourceKey](../../framework/wpf/advanced/componentresourcekey-markup-extension.md). Certain controls expose a style key of that type for a custom style resource that influences part of the appearance and behavior of that control without totally replacing the style. An example of such a key is <xref:System.Windows.Controls.ToolBar.ButtonStyleKey%2A>.  
+ As stated previously, the value of a key can be supplied through a markup extension and can be other than a string value. An example WPF scenario is that the value of `x:Key` may be a [ComponentResourceKey](/dotnet/desktop/wpf/advanced/componentresourcekey-markup-extension). Certain controls expose a style key of that type for a custom style resource that influences part of the appearance and behavior of that control without totally replacing the style. An example of such a key is <xref:System.Windows.Controls.ToolBar.ButtonStyleKey%2A>.  
   
- The WPF merged dictionary feature introduces additional considerations for key uniqueness and key lookup behavior. For more information, see [Merged Resource Dictionaries](../../framework/wpf/advanced/merged-resource-dictionaries.md).  
+ The WPF merged dictionary feature introduces additional considerations for key uniqueness and key lookup behavior. For more information, see [Merged Resource Dictionaries](/dotnet/desktop/wpf/advanced/merged-resource-dictionaries).  
   
 ## XAML 2009  
  XAML 2009 relaxes the restriction that `x:Key` always be provided in attribute form.  
@@ -102,10 +102,10 @@ keyObject
 - `keyObject` could also be a markup extension usage in object element form, rather than a direct object instance.  
   
 ## Silverlight Usage Notes  
- `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  
+ `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  
   
 ## See also
 
 - [XAML Resources](../fundamentals/xaml-resources-define.md)
-- [Resources and Code](../../framework/wpf/advanced/resources-and-code.md)
-- [StaticResource Markup Extension](../../framework/wpf/advanced/staticresource-markup-extension.md)
+- [Resources and Code](/dotnet/desktop/wpf/advanced/resources-and-code)
+- [StaticResource Markup Extension](/dotnet/desktop/wpf/advanced/staticresource-markup-extension)

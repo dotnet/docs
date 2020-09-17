@@ -34,7 +34,7 @@ Objects larger than the large object heap threshold will be allocated on the lar
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?pivots=os-windows).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/windows.md?pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 

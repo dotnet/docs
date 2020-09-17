@@ -173,7 +173,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
   
  [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   
- [LINQ to XML (C#)](./linq-to-xml-overview.md)  
+ [LINQ to XML (C#)](../../../../standard/linq/linq-xml-overview.md)  
   
  [LINQ to Objects (C#)](./linq-to-objects.md)  
   

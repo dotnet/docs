@@ -22,7 +22,7 @@ LINQ is a set of features that extends powerful query capabilities to the langua
  [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
  Includes links to topics that explain how to use LINQ to Objects to access in-memory data structures,  
   
- [LINQ to XML (Visual Basic)](linq-to-xml.md)  
+ [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md)  
  Includes links to topics that explain how to use LINQ to XML, which provides the in-memory document modification capabilities of the Document Object Model (DOM), and supports LINQ query expressions.  
   
  [LINQ to ADO.NET (Portal Page)](linq-to-adonet-portal-page.md)  

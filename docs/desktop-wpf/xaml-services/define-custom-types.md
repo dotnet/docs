@@ -38,7 +38,7 @@ Factory methods are a XAML 2009 feature. They modify the XAML principle that obj
 
 Enumerations have XAML native type conversion behavior. Enumeration constant names specified in XAML are resolved against the underlying enumeration type, and return the enumeration value to a XAML object writer.
 
-XAML supports a flags-style usage for enumerations with <xref:System.FlagsAttribute> applied. For more information, see [XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md). ([XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md) is written for the WPF audience, but most of the information in that topic is relevant for XAML that is not specific to a particular implementing framework.)
+XAML supports a flags-style usage for enumerations with <xref:System.FlagsAttribute> applied. For more information, see [XAML Syntax In Detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail). ([XAML Syntax In Detail](/dotnet/desktop/wpf/advanced/xaml-syntax-in-detail) is written for the WPF audience, but most of the information in that topic is relevant for XAML that is not specific to a particular implementing framework.)
 
 ## Member Definitions
 

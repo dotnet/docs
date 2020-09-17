@@ -23,7 +23,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
  The path to migrate an existing application to the Entity Framework depends both on the type of application and on the existing data access strategy. However, you must always perform the following tasks when you migrate an existing application to the Entity Framework.  
   
 > [!NOTE]
-> All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
+> All of these tasks are performed automatically when you use the Entity Data Model tools starting with Visual Studio 2008. For more information, see [How to: Use the Entity Data Model Wizard](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
 1. Upgrade the application.  
   
@@ -31,12 +31,12 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
   
 2. Define the models and mapping.  
   
-     The model and mapping files define entities in the conceptual model; structures in the data source, such as tables, stored procedures, and views; and the mapping between the entities and data source structures. For more information, see [How to: Manually Define the Model and Mapping Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399785(v=vs.100)).  
+     The model and mapping files define entities in the conceptual model; structures in the data source, such as tables, stored procedures, and views; and the mapping between the entities and data source structures. For more information, see [How to: Manually Define the Model and Mapping Files](/previous-versions/dotnet/netframework-4.0/bb399785(v=vs.100)).  
   
-     Types that are defined in the storage model must match the name of objects in the data source. If the existing application exposes data as objects, you must ensure that the entities and properties that are defined in the conceptual model match the names of these existing data classes and properties. For more information, see [How to: Customize Modeling and Mapping Files to Work with Custom Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738625(v=vs.100)).  
+     Types that are defined in the storage model must match the name of objects in the data source. If the existing application exposes data as objects, you must ensure that the entities and properties that are defined in the conceptual model match the names of these existing data classes and properties. For more information, see [How to: Customize Modeling and Mapping Files to Work with Custom Objects](/previous-versions/dotnet/netframework-4.0/bb738625(v=vs.100)).  
   
     > [!NOTE]
-    > The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)).  
+    > The Entity Data Model Designer can be used to rename entities in the conceptual model to match existing objects. For more information, see [Entity Data Model Designer](/previous-versions/dotnet/netframework-4.0/cc716685(v=vs.100)).  
   
 3. Define the connection string.  
   
@@ -44,10 +44,10 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
   
 4. Configure the Visual Studio project.  
   
-     References to Entity Framework assemblies and the model and mapping files must be added to the Visual Studio project. You can add these mapping files to the project to ensure that they are deployed with the application in the location that is indicated in the connection string. For more information, see [How to: Manually Configure an Entity Framework Project](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).  
+     References to Entity Framework assemblies and the model and mapping files must be added to the Visual Studio project. You can add these mapping files to the project to ensure that they are deployed with the application in the location that is indicated in the connection string. For more information, see [How to: Manually Configure an Entity Framework Project](/previous-versions/dotnet/netframework-4.0/bb738546(v=vs.100)).  
   
 ## Considerations for Applications with Existing Objects  
- Starting with the .NET Framework 4, the Entity Framework supports "plain old" CLR objects (POCO), also called persistence-ignorant objects. In most cases, your existing objects can work with the Entity Framework by making minor changes. For more information, see [Working with POCO Entities](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456853(v=vs.100)). You can also migrate an application to the Entity Framework and use the data classes that are generated by the Entity Framework tools. For more information, see [How to: Use the Entity Data Model Wizard](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
+ Starting with the .NET Framework 4, the Entity Framework supports "plain old" CLR objects (POCO), also called persistence-ignorant objects. In most cases, your existing objects can work with the Entity Framework by making minor changes. For more information, see [Working with POCO Entities](/previous-versions/dotnet/netframework-4.0/dd456853(v=vs.100)). You can also migrate an application to the Entity Framework and use the data classes that are generated by the Entity Framework tools. For more information, see [How to: Use the Entity Data Model Wizard](/previous-versions/dotnet/netframework-4.0/bb738677(v=vs.100)).  
   
 ## Considerations for Applications that Use ADO.NET Providers  
  ADO.NET providers, such as SqlClient, enable you to query a data source to return tabular data. Data can also be loaded into an ADO.NET DataSet. The following list describes considerations for upgrading an application that uses an existing ADO.NET provider:  
@@ -71,30 +71,30 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
   
   If your application enumerates the results of a query to display data in a <xref:System.Windows.Forms.DataGridView> or other type of control that supports data binding, you can modify your application to bind the control to the result of an <xref:System.Data.Objects.ObjectQuery%601>.  
   
-  For more information, see [Binding Objects to Controls](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100)).  
+  For more information, see [Binding Objects to Controls](/previous-versions/dotnet/netframework-4.0/bb738469(v=vs.100)).  
   
 - ASP.NET data source controls.  
 
-  The Entity Framework includes a data source control designed to simplify data binding in ASP.NET Web applications. For more information, see [EntityDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/cc488502(v=vs.100)).  
+  The Entity Framework includes a data source control designed to simplify data binding in ASP.NET Web applications. For more information, see [EntityDataSource Web Server Control Overview](/previous-versions/aspnet/cc488502(v=vs.100)).  
   
 ## Other Considerations  
  The following are considerations that may apply when you migrate specific types of applications to the Entity Framework.  
   
 - Applications that expose data services.  
 
-  Web services and applications that are based on the Windows Communication Foundation (WCF) expose data from an underlying data source by using an XML request/response messaging format. The Entity Framework supports the serialization of entity objects by using binary, XML, or WCF data contract serialization. Binary and WCF serialization both support full serialization of object graphs. For more information, see [Building N-Tier Applications](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896304(v=vs.100)).  
+  Web services and applications that are based on the Windows Communication Foundation (WCF) expose data from an underlying data source by using an XML request/response messaging format. The Entity Framework supports the serialization of entity objects by using binary, XML, or WCF data contract serialization. Binary and WCF serialization both support full serialization of object graphs. For more information, see [Building N-Tier Applications](/previous-versions/dotnet/netframework-4.0/bb896304(v=vs.100)).  
   
 - Applications that use XML data.  
 
   Object serialization enables you to create Entity Framework data services. These services provide data to applications that consume XML data, such as AJAX-based Internet applications. In these cases, consider using WCF Data Services. These data services are based on the Entity Data Model and provide dynamic access to entity data by using standard Representational State Transfer (REST) HTTP actions, such as GET, PUT, and POST. For more information, see [WCF Data Services 4.5](../../wcf/index.md).  
   
-  The Entity Framework does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100)).  
+  The Entity Framework does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100)).  
   
-  If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) or [LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md).  
+  If your application requires the ability to query XML data, you can still take advantage of the benefits of LINQ queries by using LINQ to XML. For more information, see [LINQ to XML (C#)](../../../../standard/linq/linq-xml-overview.md) or [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md).  
   
 - Applications that maintain state.  
 
-  ASP.NET Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
+  ASP.NET Web applications must frequently maintain the state of a Web page or of a user session. Objects in an <xref:System.Data.Objects.ObjectContext> instance can be stored in the client view state or in the session state on the server, and later retrieved and reattached to a new object context. For more information, see [Attaching and Detaching Objects](/previous-versions/dotnet/netframework-4.0/bb896271(v=vs.100)).  
   
 ## See also
 

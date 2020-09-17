@@ -300,6 +300,6 @@ The common type system defines how types are declared, used, and managed in the 
   
 ## See also
 
-- [.NET API Browser](/dotnet/api)
+- [.NET API Browser](../../../api/index.md)
 - [Common Language Runtime](../clr.md)
 - [Type Conversion in .NET](type-conversion.md)

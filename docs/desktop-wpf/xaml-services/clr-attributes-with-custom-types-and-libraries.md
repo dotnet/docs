@@ -133,7 +133,7 @@ The definition inherits to all derived types that are assignable to the defining
 
 Apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to your type, referencing your type converter implementation. You can define type converters for XAML on classes, structures, or interfaces. You do not need to provide type conversion for enumerations, that conversion is enabled natively.
 
-Your type converter should be able to convert from a string that is used for attributes or initialization text in markup, into your intended destination type. For more information, see [TypeConverters and XAML](../../framework/wpf/advanced/typeconverters-and-xaml.md).
+Your type converter should be able to convert from a string that is used for attributes or initialization text in markup, into your intended destination type. For more information, see [TypeConverters and XAML](/dotnet/desktop/wpf/advanced/typeconverters-and-xaml).
 
 Rather than applying to all values of a type, a type converter behavior for XAML can also be established on a specific property. In this case, you apply <xref:System.ComponentModel.TypeConverterAttribute> to the property definition (the outer definition, not the specific `get` and `set` definitions).
 

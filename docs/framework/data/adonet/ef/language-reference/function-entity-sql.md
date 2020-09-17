@@ -55,7 +55,7 @@ FUNCTION function-name
   
  `A()`  
   
- For more information, see [How to: Call a User-Defined Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100)).  
+ For more information, see [How to: Call a User-Defined Function](/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100)).  
   
  Functions can also be declared in the model itself. Functions declared in the model are executed in the same way as functions declared inline in the command. For more information, see [User-Defined Functions](user-defined-functions-entity-sql.md).  
   

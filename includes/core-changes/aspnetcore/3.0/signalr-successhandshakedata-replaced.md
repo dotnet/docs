@@ -28,7 +28,7 @@ ASP.NET Core
 
 #### Affected APIs
 
-<xref:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol.SuccessHandshakeData?displayProperty=namewithType>
+<xref:Microsoft.AspNetCore.SignalR.Protocol.HandshakeProtocol.SuccessHandshakeData?displayProperty=nameWithType>
 
 <!--
 

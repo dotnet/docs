@@ -447,7 +447,7 @@ The above command will create a new container instance from the specified image,
 
 In this case, the command binds the internal port 5000 of the container to port 80 of the host machine. This means that the host is listening on port 80 and forwarding to port 5000 on the container.
 
-The hash shown is the container ID and it’s also assigned a random readable name if the `--name` option is not used.
+The hash shown is the container ID and it's also assigned a random readable name if the `--name` option is not used.
 
 #### Using Visual Studio
 
@@ -490,7 +490,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 ### Additional resources
 
 - **Deploy an ASP.NET container to a remote Docker host** \
-  <https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker>
+  <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
 
 ### A note about testing and deploying with orchestrators
 

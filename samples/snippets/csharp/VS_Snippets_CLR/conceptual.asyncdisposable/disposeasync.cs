@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 {
-    private bool _disposed;
     private Utf8JsonWriter _jsonWriter = new Utf8JsonWriter(new MemoryStream());
 
     public void Dispose()
@@ -24,13 +23,6 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 
     protected virtual void Dispose(bool disposing)
     {
-        if (_disposed)
-        {
-            return;
-        }
-
-        _disposed = true;
-
         if (disposing)
         {
             _jsonWriter?.Dispose();
@@ -41,16 +33,11 @@ public class ExampleAsyncDisposable : IAsyncDisposable, IDisposable
 
     protected virtual async ValueTask DisposeAsyncCore()
     {
-        if (!_disposed)
+        if (_jsonWriter is not null)
         {
-            _disposed = true;
-
-            if (_jsonWriter is not null)
-            {
-                await _jsonWriter.DisposeAsync();
-            }
-
-            _jsonWriter = null;
+            await _jsonWriter.DisposeAsync();
         }
+
+        _jsonWriter = null;
     }
 }

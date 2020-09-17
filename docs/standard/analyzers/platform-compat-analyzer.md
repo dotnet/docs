@@ -12,7 +12,7 @@ By now everybody must heard of the mojo of `One .NET` - a single unified platfor
 But using platform-dependent APIs on a component makes the code no longer work across all platforms. We needed a way to detect this at design-time so that developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal we introduced [platform compatibility analyzer](/visualstudio/code-quality/ca1416) and complementary APIs help developers identify and use platform-specific APIs where appropriate, the new APIs include:
 
 - Added <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> to annotate APIs as being platform-specific and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> to express that and API is unsupported on a particular OS, optionally including the version numbers. These attributes have been applied to platform-specific APIs in the core .NET libraries (still in progress).
-- Added `Is<Platform>()` and `Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)` style static methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class for safely calling platform dependent APIs, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType> could be used for guarding a call of windows specific APIs and  <xref:System.OperatingSystem.IsWindowsVersionAtLeast%2A?displayProperty=nameWithType>() could be used for guarding a versioned windows specific API call. Learn [more](#the-platform-specific-API-calls-guarded-with-guard-methods-examples) about how they used as guards of platform-specific API references.
+- Added `Is<Platform>()` and `Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)` style static methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class for safely calling platform dependent APIs, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType> could be used for guarding a call of windows specific APIs and  <xref:System.OperatingSystem.IsWindowsVersionAtLeast%2A?displayProperty=nameWithType>() could be used for guarding a versioned windows specific API call. Learn [more](#the-platform-specific-api-calls-in-the-above-examples-guarded-with-guard-methods) about how they used as guards of platform-specific API references.
 
 > [!Tip]
 > Platform compatibility analyzer upgrades/replaces [Discovering cross-platform issues](../../standard/analyzers/api-analyzer.md#discover-cross-platform-issues) feature of the [.NET API analyzer](../../standard/analyzers/api-analyzer.md).
@@ -162,7 +162,7 @@ The recommend way to deal with these diagnostics is by making sure you only call
 
 1. **Guard the call**. You can either achieve this by excluding the code at build time using `#if` and multi-targeting or by conditionally calling the code at runtime. Check whether you’re running on desired `Platform` by using any of platform check methods, like `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`.
 
-2. **Mark the call site as platform-specific**. You can also choose to mark your own APIs as being platform-specific, thus effectively just forwarding the requirements to your callers. You can mark the containing method or type or the entire assembly with same attributes as of the referenced platform-dependent call. [Examples](#call-site-marked-as-platform-specific-for-platform-specific-API-calls-in-above-examples)
+2. **Mark the call site as platform-specific**. You can also choose to mark your own APIs as being platform-specific, thus effectively just forwarding the requirements to your callers. You can mark the containing method or type or the entire assembly with same attributes as of the referenced platform-dependent call. [Examples](#call-site-marked-as-platform-specific-for-platform-specific-api-calls-in-above-examples)
 
 3. **Assert the call site with platform check**. If you don't want the overhead of an additional if statement at run time, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check)
 
@@ -227,7 +227,7 @@ Guard methods platform name should match with the calling platform dependent API
   }
   ```
 
-### Call-site marked as platform-specific for platform specific API calls in above examples
+### Call site marked as platform specific for platform specific API calls in above examples
 
 Platform names should match with the calling platform dependent API. If platform string include version:
 
@@ -339,7 +339,7 @@ Platform names should match with the calling platform dependent API. If platform
   ```
 
 ### Assert the call-site with platform check
-All conditional checks used for [platform guard examples](#the-platform-specific-API-calls-in-the-above-examples-guarded-with-guard-methods) can be used as the condition for <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>
+All conditional checks used for [platform guard examples](#the-platform-specific-api-calls-in-the-above-examples-guarded-with-guard-methods) can be used as the condition for <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>
 
   ```csharp
   // an API supported only on linux

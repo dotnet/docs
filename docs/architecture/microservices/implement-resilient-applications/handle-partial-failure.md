@@ -13,7 +13,7 @@ For example, consider the Order details page from the eShopOnContainers sample a
 
 **Figure 8-1**. Partial failures because of dependencies that impact service thread availability
 
-In a large microservices-based application, any partial failure can be amplified, especially if most of the internal microservices interaction is based on synchronous HTTP calls (which is considered an anti-pattern). Think about a system that receives millions of incoming calls per day. If your system has a bad design that's based on long chains of synchronous HTTP calls, these incoming calls might result in many more millions of outgoing calls (let's suppose a ratio of 1:4) to dozens of internal microservices as synchronous dependencies. This situation is shown in Figure 8-2, especially dependency \#3, that starts a chain, calling dependency #4. which the calls #5.
+In a large microservices-based application, any partial failure can be amplified, especially if most of the internal microservices interaction is based on synchronous HTTP calls (which is considered an anti-pattern). Think about a system that receives millions of incoming calls per day. If your system has a bad design that's based on long chains of synchronous HTTP calls, these incoming calls might result in many more millions of outgoing calls (let's suppose a ratio of 1:4) to dozens of internal microservices as synchronous dependencies. This situation is shown in Figure 8-2, especially dependency \#3, that starts a chain, calling dependency #4, which then calls #5.
 
 ![Diagram showing multiple distributed dependencies.](./media/handle-partial-failure/multiple-distributed-dependencies.png)
 

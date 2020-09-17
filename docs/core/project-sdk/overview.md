@@ -2,7 +2,7 @@
 title: .NET Core project SDK overview
 titleSuffix: ""
 description: Learn about the .NET Core project SDKs.
-ms.date: 02/02/2020
+ms.date: 09/17/2020
 ms.topic: conceptual
 ---
 # .NET Core project SDKs
@@ -11,15 +11,17 @@ ms.topic: conceptual
 
 ## Available SDKs
 
-The following SDKs are available for .NET Core:
+The following SDKs are available:
 
 | ID | Description | Repo|
 | - | - | - |
-| `Microsoft.NET.Sdk` | The .NET Core SDK | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Web` | The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
-| `Microsoft.NET.Sdk.Razor` | The .NET Core [Razor SDK](/aspnet/core/razor-pages/sdk) |
-| `Microsoft.NET.Sdk.Worker` | The .NET Core Worker Service SDK |
-| `Microsoft.NET.Sdk.WindowsDesktop` | The .NET Core WinForms and WPF SDK |
+| `Microsoft.NET.Sdk` | The .NET SDK | <https://github.com/dotnet/sdk> |
+| `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
+| `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
+| `Microsoft.NET.Sdk.Worker` | The .NET Worker Service SDK |
+| `Microsoft.NET.Sdk.WindowsDesktop` | The WinForms and WPF SDK\* |
+
+\* Starting in .NET 5.0, Windows Forms and Windows Presentation Foundation (WPF) projects should specify the .NET SDK (`Microsoft.NET.Sdk`) instead of `Microsoft.NET.Sdk.WindowsDesktop`. For these projects, setting `TargetFramework` to `net5.0-windows` and `UseWPF` or `UseWindowsForms` to `true` will automatically import the Windows desktop SDK. If your project targets .NET 5.0 or later and specifies the `Microsoft.NET.Sdk.WindowsDesktop` SDK, you'll get build warning NETSDK1137.
 
 The .NET Core SDK is the base SDK for .NET Core. The other SDKs reference the .NET Core SDK, and projects that are associated with the other SDKs have all the .NET Core SDK properties available to them. The Web SDK, for example, depends on both the .NET Core SDK and the Razor SDK.
 

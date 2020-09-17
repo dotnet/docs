@@ -11,7 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
-| [Parameter names changed in RC1](#parameter-names-change-in-rc1) | 5.0 |
+| [Parameter names changed in RC1](#parameter-names-changed-in-rc1) | 5.0 |
 | [OSPlatform attributes renamed or removed](#osplatform-attributes-renamed-or-removed) | 5.0 |
 | [Thread.Abort is obsolete](#threadabort-is-obsolete) | 5.0 |
 | [Obsolete properties on ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5.0 |

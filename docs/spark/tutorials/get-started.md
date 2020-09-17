@@ -76,8 +76,8 @@ Run the following commands to set the environment variables used to locate Apach
 # [Windows](#tab/windows)
 
 ```console
-setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
-setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
+setx /M HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
+setx /M SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%"
 ```
 
@@ -127,13 +127,13 @@ Run one of the following commands to set the `DOTNET_WORKER_DIR` environment var
 # [Windows](tab/windows)
 
 ```console
-setx DOTNET_WORKER_DIR=<PATH-DOTNET_WORKER_DIR>
+setx /M DOTNET_WORKER_DIR <PATH-DOTNET_WORKER_DIR>
 ```
 
 # [Mac/Linux](tab/unix)
 
 ```bash
-export DOTNET_WORKER_DIR <your_path>
+export DOTNET_WORKER_DIR=<your_path>
 ```
 
 ---

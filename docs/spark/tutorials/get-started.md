@@ -75,7 +75,7 @@ Run the following commands to set the environment variables used to locate Apach
 
 #### [Windows](#tab/windows)
 
-```text
+```console
 setx /M HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx /M SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin"
@@ -93,7 +93,7 @@ source ~/.bashrc
 
 Once you've installed everything and set your environment variables, open a **new** command prompt or terminal and run the following command:
 
-```console
+```text
 spark-submit --version
 ```
 

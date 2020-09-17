@@ -5,7 +5,7 @@ summary: Welcome to what's new in .NET docs. Use this page to quickly find the l
 metadata:
   title: .NET documentation what's new?
   description: Learn about new and updated content in .NET docs.
-  ms.date: 06/30/2020
+  ms.date: 09/17/2020
   ms.topic: landing-page
 landingContent:
 - title: Find .NET updates
@@ -24,6 +24,16 @@ landingContent:
       url: dotnet-2020-04.md
     - text: March 2020
       url: dotnet-2020-03.md
+- title: Find language updates
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: What's new in C# 9
+      url: ../csharp/whats-new/csharp-9.md
+    - text: What's new in F# 4.7
+      url: ../fsharp/whats-new/fsharp-47.md
+    - text: What's new for Visual Basic
+      url: ../visual-basic/whats-new/index.md
 - title: Get involved - contribute
   linkLists:
   - linkListType: overview
@@ -44,8 +54,12 @@ landingContent:
       url: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
     - text: .NET samples contributor guide
       url: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
-- title: Community
+- title: .NET developers
   linkLists:
+  - linkListType: sample
+    links:
+    - text: .NET samples browser
+      url: https://docs.microsoft.com/samples/browse/?products=dotnet
   - linkListType: whats-new
     links:
     - text: Community

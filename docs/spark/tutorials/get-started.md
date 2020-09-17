@@ -287,9 +287,9 @@ Congratulations! You successfully authored and ran a .NET for Apache Spark app.
 In this tutorial, you learned how to:
 > [!div class="checklist"]
 >
-> * Prepare your Windows environment for .NET for Apache Spark
+> * Prepare your environment for .NET for Apache Spark
 > * Write your first .NET for Apache Spark application
-> * Build and run your simple .NET for Apache Spark application
+> * Build and run your .NET for Apache Spark application
 
 To see a video explaining the steps above, check out the [.NET for Apache Spark 101 video series](https://channel9.msdn.com/Series/NET-for-Apache-Spark-101/Run-Your-First-NET-for-Apache-Spark-App).
 

@@ -1,7 +1,7 @@
 ---
 description: "foreach, in (C# reference)"
 title: C# foreach statement
-ms.date: 07/22/2020
+ms.date: 09/18/2020
 f1_keywords:
   - "foreach"
   - "foreach_CSharpKeyword"
@@ -19,8 +19,8 @@ The `foreach` statement executes a statement or a block of statements for each e
 
 The `foreach` statement isn't limited to those types. You can use it with an instance of any type that satisfies the following conditions:
 
-- a type has the public parameterless `GetEnumerator` method whose return type is either class, struct, or interface type,
-- the return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.
+- A type has the public parameterless `GetEnumerator` method whose return type is either class, struct, or interface type. Beginning with C# 9.0, the `GetEnumerator` method can be a type's [extension method](../../programming-guide/classes-and-structs/extension-methods.md).
+- The return type of the `GetEnumerator` method has the public `Current` property and the public parameterless `MoveNext` method whose return type is <xref:System.Boolean>.
 
 The following example uses the `foreach` statement with an instance of the <xref:System.Span%601?displayProperty=nameWithType> type, which doesn't implement any interfaces:
 
@@ -60,6 +60,11 @@ In the preceding form, type `T` of a collection element must be implicitly or ex
 ## C# language specification
 
 For more information, see [The foreach statement](~/_csharplang/spec/statements.md#the-foreach-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+For more information about features added in C# 8.0 and later, see the following feature proposal notes:
+
+- [Async streams (C# 8.0)](~/_csharplang/proposals/csharp-8.0/async-streams.md)
+- [Extension `GetEnumerator` support for `foreach` loops (C# 9.0)](~/_csharplang/proposals/csharp-9.0/extension-getenumerator.md)
 
 ## See also
 

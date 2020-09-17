@@ -73,7 +73,7 @@ To extract the Apache Spark files:
 
 Run the following commands to set the environment variables used to locate Apache Spark. On Windows, make sure to run the command prompt in administrator mode.
 
-# [Windows](#tab/windows)
+#### [Windows](#tab/windows)
 
 ```text
 setx /M HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
@@ -81,7 +81,7 @@ setx /M SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin"
 ```
 
-# [Mac/Linux](#tab/linux)
+#### [Mac/Linux](#tab/linux)
 
 ```bash
 export SPARK_HOME=~/bin/spark-2.4.1-bin-hadoop2.7/
@@ -129,13 +129,13 @@ Run one of the following commands to set the `DOTNET_WORKER_DIR` environment var
 #### [Windows](#tab/windows)
 
 ```console
-setx /M DOTNET_WORKER_DIR <PATH-DOTNET_WORKER_DIR>
+setx /M DOTNET_WORKER_DIR <PATH-DOTNET-WORKER-DIR>
 ```
 
 #### [Mac/Linux](#tab/linux)
 
 ```bash
-export DOTNET_WORKER_DIR=<your_path>
+export DOTNET_WORKER_DIR=<PATH-DOTNET-WORKER-DIR>
 ```
 
 ---
@@ -166,7 +166,7 @@ dotnet add package Microsoft.Spark
 > [!NOTE]
 > This tutorial uses the latest version of the `Microsoft.Spark` NuGet package unless otherwise specified.
 
-### 3. Code your app
+### 3. Write your app
 
 Open *Program.cs* in Visual Studio Code, or any text editor, and replace all of the code with the following:
 
@@ -234,7 +234,7 @@ dotnet build
 
 1. Navigate to your build output directory and use the `spark-submit` command to submit your application to run on Apache Spark, Make sure to replace  `<version>` with the version of your .NET worker and `<path-of-input.txt>` with the path of your *input.txt* file is stored.
 
-# [Windows](#tab/windows)
+### [Windows](#tab/windows)
 
 ```console
 spark-submit ^
@@ -244,7 +244,7 @@ microsoft-spark-2.4.x-<version>.jar ^
 dotnet MySparkApp.dll <path-of-input.txt>
 ```
 
-# [Mac/Linux](#tab/linux)
+### [Mac/Linux](#tab/linux)
 
 ```bash
 spark-submit \

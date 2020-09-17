@@ -1,6 +1,6 @@
 ---
 title: Get started with .NET for Apache Spark
-description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, MacOS, and Ubuntu.
+description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, macOS, and Ubuntu.
 ms.date: 09/17/2020
 ms.topic: tutorial
 ms.custom: mvc
@@ -63,7 +63,7 @@ To extract the nested **.tar** file:
 
 To extract the Apache Spark files:
 
-* Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
+* Right-click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
 * Enter **C:\bin** in the **Extract to** field.
 * Uncheck the checkbox below the **Extract to** field.
 * Select **OK**.
@@ -108,7 +108,7 @@ Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) 
 To extract the Microsoft.Spark.Worker:
 
 * Locate the **Microsoft.Spark.Worker.netcoreapp3.1.win-x64-0.8.0.zip** file that you downloaded.
-* Right click and select **7-Zip -> Extract files...**.
+* Right-click and select **7-Zip -> Extract files...**.
 * Enter **C:\bin** in the **Extract to** field.
 * Uncheck the checkbox below the **Extract to** field.
 * Select **OK**.
@@ -153,7 +153,7 @@ dotnet new console -o MySparkApp
 cd MySparkApp
 ```
 
-The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named *MySparkApp* where your app is stored and populates it with the required files. The `cd MySparkApp` command changes the directory to the app directory you just created.
+The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named *MySparkApp* where your app is stored and populates it with the required files. The `cd MySparkApp` command changes the directory to the app directory you created.
 
 ### 2. Install NuGet package
 
@@ -210,7 +210,7 @@ namespace MySparkApp
 }
 ```
 
-[SparkSession](xref:Microsoft.Spark.Sql.SparkSession) is the entrypoint of Apache Spark applications which manages the context and information of your application. Using the [Text](xref:Microsoft.Spark.Sql.DataFrameReader.Text%2A) method, the text data from the file specified by the `filePath` is read into a [DataFrame](xref:Microsoft.Spark.Sql.DataFrame). A DataFrame is a way of organizing data into a set of named columns. Then, a series of transformations are applied to split the sentences in the file, group each of the words, count them and order them in descending order. The result of these operations are stored in another DataFrame. Note that at this point, no operations have taken place because .NET for Apache Spark lazily evaluates the data. It's not until the [Show](xref:Microsoft.Spark.Sql.DataFrame.Show%2A) method is called to display the contents of the `words` transformed DataFrame to the console that the operations defined in the lines above execute. Once you no longer need the Spark session, use the [Stop](xref:Microsoft.Spark.Sql.SparkSession.Stop%2A) method to stop your session.
+[SparkSession](xref:Microsoft.Spark.Sql.SparkSession) is the entrypoint of Apache Spark applications, which manages the context and information of your application. Using the [Text](xref:Microsoft.Spark.Sql.DataFrameReader.Text%2A) method, the text data from the file specified by the `filePath` is read into a [DataFrame](xref:Microsoft.Spark.Sql.DataFrame). A DataFrame is a way of organizing data into a set of named columns. Then, a series of transformations is applied to split the sentences in the file, group each of the words, count them and order them in descending order. The result of these operations is stored in another DataFrame. Note that at this point, no operations have taken place because .NET for Apache Spark lazily evaluates the data. It's not until the [Show](xref:Microsoft.Spark.Sql.DataFrame.Show%2A) method is called to display the contents of the `words` transformed DataFrame to the console that the operations defined in the lines above execute. Once you no longer need the Spark session, use the [Stop](xref:Microsoft.Spark.Sql.SparkSession.Stop%2A) method to stop your session.
 
 ### 4. Create data file
 
@@ -232,7 +232,7 @@ Run the following command to build your application:
 dotnet build
 ```
 
-Navigate to your build output directory and use the `spark-submit` command to submit your application to run on Apache Spark, Make sure to replace  `<version>` with the version of your .NET worker and `<path-of-input.txt>` with the path of your *input.txt* file is stored.
+Navigate to your build output directory and use the `spark-submit` command to submit your application to run on Apache Spark. Make sure to replace  `<version>` with the version of your .NET worker and `<path-of-input.txt>` with the path of your *input.txt* file is stored.
 
 ### [Windows](#tab/windows)
 
@@ -291,7 +291,7 @@ In this tutorial, you learned how to:
 > * Write your first .NET for Apache Spark application
 > * Build and run your simple .NET for Apache Spark application
 
-To see a video explaining the steps above, checkout the [.NET for Apache Spark 101 video series](https://channel9.msdn.com/Series/NET-for-Apache-Spark-101/Run-Your-First-NET-for-Apache-Spark-App).
+To see a video explaining the steps above, check out the [.NET for Apache Spark 101 video series](https://channel9.msdn.com/Series/NET-for-Apache-Spark-101/Run-Your-First-NET-for-Apache-Spark-App).
 
 Check out the resources page to learn more.
 > [!div class="nextstepaction"]

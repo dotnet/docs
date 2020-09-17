@@ -81,7 +81,7 @@ Global suppression is the recommended way to ensure consistency of API usage acr
 ## Discover cross-platform issues
 
 > [!NOTE]
-> In 5.0 we have introduced new [Platform Compatability Analyzer](platform-compat-analyzer.md) as replacement of this feature. Which is included in SDK (no need separate install) and ON by default.
+> .NET 5.0 introduces the [Platform compatibility analyzer](platform-compat-analyzer.md) as a replacement of this feature. The platform compatibility analyzer is included in the .NET SDK (no need to install it separately) and is on by default.
 
 Similar to deprecated APIs, the analyzer identifies all APIs that are not cross-platform. For example, <xref:System.Console.WindowWidth?displayProperty=nameWithType> works on Windows but not on Linux and macOS. The diagnostic ID is shown in the **Error List** window. You can suppress that warning by right-clicking and selecting **Quick Actions and Refactorings**. Unlike deprecation cases where you have two options (either keep using the deprecated member and suppress warnings or not use it at all), here if you're developing your code only for certain platforms, you can suppress all warnings for all other platforms you don't plan to run your code on. To do so, you just need to edit your project file and add the `PlatformCompatIgnore` property that lists all platforms to be ignored. The accepted values are: `Linux`, `macOS`, and `Windows`.
 

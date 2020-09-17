@@ -19,7 +19,7 @@ In this tutorial, you learn how to:
 >
 > * Prepare your environment for .NET for Apache Spark
 > * Write your first .NET for Apache Spark application
-> * Build and run your simple .NET for Apache Spark application
+> * Build and run your .NET for Apache Spark application
 
 [!INCLUDE [spark-preview-note](../../../includes/spark-preview-note.md)]
 
@@ -71,20 +71,25 @@ To extract the Apache Spark files:
 
 ![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
 
-Run the following commands to set the environment variables used to locate Apache Spark on **Windows**:
+Run the following commands to set the environment variables used to locate Apache Spark.
+
+# [Windows](#tab/windows)
 
 ```console
 setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
+setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%"
 ```
 
-Run the following commands to set the environment variables used to locate Apache Spark on **macOS** and **Ubuntu**:
+# [Mac/Linux](#tab/unix)
 
 ```bash
 export SPARK_HOME=~/bin/spark-2.4.1-bin-hadoop2.7/
 export PATH="$SPARK_HOME/bin:$PATH"
 source ~/.bashrc
 ```
+
+---
 
 Once you've installed everything and set your environment variables, open a **new** command prompt or terminal and run the following command:
 
@@ -117,13 +122,21 @@ To extract the Microsoft.Spark.Worker:
 
 ### 7. Set DOTNET_WORKER_DIR and check dependencies
 
-Run one of the following commands to set the `DOTNET_WORKER_DIR` Environment Variable, which is used by .NET apps to locate .NET for Apache Spark.
+Run one of the following commands to set the `DOTNET_WORKER_DIR` environment variable, which is used by .NET apps to locate .NET for Apache Spark. Make sure to replace `<PATH-DOTNET_WORKER_DIR>` with the directory where you downloaded and extracted the Microsoft.Spark.Worker
 
-On **Windows**, create a [new environment variable](https://www.java.com/en/download/help/path.xml) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, `C:\bin\Microsoft.Spark.Worker\`).
+# [Windows](tab/windows)
 
-On **macOS**, create a new environment variable using `export DOTNET_WORKER_DIR <your_path>` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker/*).
+```console
+setx DOTNET_WORKER_DIR=<PATH-DOTNET_WORKER_DIR>
+```
 
-On **Ubuntu**, create a [new environment variable](https://help.ubuntu.com/community/EnvironmentVariables) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *~/bin/Microsoft.Spark.Worker*).
+# [Mac/Linux](tab/unix)
+
+```bash
+export DOTNET_WORKER_DIR <your_path>
+```
+
+---
 
 Finally, double-check that you can run `dotnet`, `java`, `spark-shell` from your command line before you move to the next section.
 
@@ -209,38 +222,40 @@ This .NET app counts words with Apache Spark
 
 Save the changes and close the file.
 
-## Run your .NET for Apache Spark app
+## 5. Run your .NET for Apache Spark app
 
 1. Run the following command to build your application:
 
-   ```dotnetcli
-   dotnet build
-   ```
+```dotnetcli
+dotnet build
+```
 
 2. Navigate to your build output directory and use the `spark-submit` command to submit your application to run on Apache Spark, Make sure to replace  `<version>` with the version of your .NET worker and `<path-of-input.txt>` with the path of your *input.txt* file is stored.
 
-    # [Windows](#tab/windows)
+# [Windows](#tab/windows)
 
-    ```console
-    spark-submit ^
-    --class org.apache.spark.deploy.dotnet.DotnetRunner ^
-    --master local ^
-    microsoft-spark-2.4.x-<version>.jar ^
-    dotnet MySparkApp.dll <path-of-input.txt>
-    ```
+```console
+spark-submit ^
+--class org.apache.spark.deploy.dotnet.DotnetRunner ^
+--master local ^
+microsoft-spark-2.4.x-<version>.jar ^
+dotnet MySparkApp.dll <path-of-input.txt>
+```
 
-    # [Mac/Linux](#tab/unix)
+# [Mac/Linux](#tab/unix)
 
-    ```bash
-    spark-submit \
-    --class org.apache.spark.deploy.dotnet.DotnetRunner \
-    --master local \
-    microsoft-spark-2.4.x-<version>.jar \
-    dotnet MySparkApp.dll <path-of-input.txt>
-    ```
+```bash
+spark-submit \
+--class org.apache.spark.deploy.dotnet.DotnetRunner \
+--master local \
+microsoft-spark-2.4.x-<version>.jar \
+dotnet MySparkApp.dll <path-of-input.txt>
+```
 
-   > [!NOTE]
-   > This command assumes you have downloaded Apache Spark and added it to your PATH environment variable to be able to use `spark-submit`. Otherwise, you'd have to use the full path (for example, *C:\bin\apache-spark\bin\spark-submit* or *~/spark/bin/spark-submit*).
+---
+
+> [!NOTE]
+> This command assumes you have downloaded Apache Spark and added it to your PATH environment variable to be able to use `spark-submit`. Otherwise, you'd have to use the full path (for example, *C:\bin\apache-spark\bin\spark-submit* or *~/spark/bin/spark-submit*).
 
 3. When your app runs, the word count data of the *input.txt* file is written to the console.
 

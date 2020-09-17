@@ -124,13 +124,13 @@ To extract the Microsoft.Spark.Worker:
 
 Run one of the following commands to set the `DOTNET_WORKER_DIR` environment variable, which is used by .NET apps to locate .NET for Apache Spark. Make sure to replace `<PATH-DOTNET_WORKER_DIR>` with the directory where you downloaded and extracted the Microsoft.Spark.Worker
 
-# [Windows](tab/windows)
+#### [Windows](tab/windows)
 
 ```console
 setx /M DOTNET_WORKER_DIR <PATH-DOTNET_WORKER_DIR>
 ```
 
-# [Mac/Linux](tab/unix)
+#### [Mac/Linux](tab/unix)
 
 ```bash
 export DOTNET_WORKER_DIR=<your_path>

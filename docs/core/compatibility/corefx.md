@@ -11,6 +11,7 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [Parameter names changed in RC1](#parameter-names-change-in-rc1) | 5.0 |
 | [OSPlatform attributes renamed or removed](#osplatform-attributes-renamed-or-removed) | 5.0 |
 | [Thread.Abort is obsolete](#threadabort-is-obsolete) | 5.0 |
 | [Obsolete properties on ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5.0 |
@@ -48,6 +49,10 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [reference-assembly-parameter-names-rc1](../../../includes/core-changes/corefx/5.0/reference-assembly-parameter-names-rc1.md)]
+
+***
 
 [!INCLUDE [os-platform-attributes-renamed](../../../includes/core-changes/corefx/5.0/os-platform-attributes-renamed.md)]
 

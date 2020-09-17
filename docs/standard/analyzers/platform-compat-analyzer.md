@@ -14,12 +14,12 @@ But using platform-dependent APIs on a component makes the code no longer work a
 - Added <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> to annotate APIs as being platform-specific and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> to express that and API is unsupported on a particular OS, optionally including the version numbers. These attributes have been applied to platform-specific APIs in the core .NET libraries (still in progress).
 - Added `Is<Platform>()` and `Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)` style static methods in the <xref:System.OperatingSystem?displayProperty=nameWithType> class for safely calling platform dependent APIs, for example, <xref:System.OperatingSystem.IsWindows?displayProperty=nameWithType> could be used for guarding a call of windows specific APIs and  <xref:System.OperatingSystem.IsWindowsVersionAtLeast%2A?displayProperty=nameWithType>() could be used for guarding a versioned windows specific API call. Learn [more](#the-platform-specific-api-calls-in-the-above-examples-guarded-with-guard-methods) about how they used as guards of platform-specific API references.
 
-> [!Tip]
+> [!TIP]
 > Platform compatibility analyzer upgrades/replaces [Discovering cross-platform issues](../../standard/analyzers/api-analyzer.md#discover-cross-platform-issues) feature of the [.NET API analyzer](../../standard/analyzers/api-analyzer.md).
 
 ## Prerequisites
 
-Platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting from .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/productivity/code-analysis.md). For older .Net versions you can install code quality analyzers from [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers). The platform compatibility analyzer is enabled by default only for projects targeting `net5.0` or later. However, you can [enable](/visualstudio/code-quality/ca1416.md#configurability) it for projects targeting other frameworks.
+The platform compatibility analyzer is one of the Roslyn code quality analyzers. Starting in .NET 5.0, these analyzers are [included with the .NET SDK](../../fundamentals/productivity/code-analysis.md). For older .NET versions, you can install code quality analyzers from [NuGet package](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers). The platform compatibility analyzer is enabled by default only for projects that target `net5.0` or a later version. However, you can [enable](/visualstudio/code-quality/ca1416.md#configurability) it for projects that target other frameworks.
 
 ### How the analyzer detect platform dependency using the `SupportedOSPlatform` and `UnsupportedOSPlatform` attributes?
 
@@ -86,7 +86,7 @@ See [examples of how the attributes work and what diagnostics they cause](#examp
 ### Examples of how the attributes work and what diagnostics they produce
 
   ```csharp Examples
-  // an API supported only on windows
+  // An API supported only on Windows.
   [SupportedOSPlatform("windows")]
   public void WindowsOnlyApi() { }
 
@@ -160,17 +160,17 @@ See [examples of how the attributes work and what diagnostics they cause](#examp
 
 The recommend way to deal with these diagnostics is by making sure you only call these APIs when running on the appropriate platforms. You have five options on how you can address these warnings, choose which ever appropriate for your situation.
 
-1. **Guard the call**. You can either achieve this by excluding the code at build time using `#if` and multi-targeting or by conditionally calling the code at runtime. Check whether you’re running on desired `Platform` by using any of platform check methods, like `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`.
+- **Guard the call**. You can either achieve this by excluding the code at build time using `#if` and multi-targeting or by conditionally calling the code at run time. Check whether you’re running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`.
 
 2. **Mark the call site as platform-specific**. You can also choose to mark your own APIs as being platform-specific, thus effectively just forwarding the requirements to your callers. You can mark the containing method or type or the entire assembly with same attributes as of the referenced platform-dependent call. [Examples](#call-site-marked-as-platform-specific-for-platform-specific-api-calls-in-above-examples)
 
-3. **Assert the call site with platform check**. If you don't want the overhead of an additional if statement at run time, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check)
+- **Assert the call site with platform check**. If you don't want the overhead of an additional `if` statement at run time, use <xref:System.Diagnostics.Debug.Assert(System.Boolean)?displayProperty=nameWithType>. [Example](#assert-the-call-site-with-platform-check).
 
 4. **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users, but for cases where a cross-platform alternative exists, you’re likely better off using that over platform-specific APIs.
 
 5. **Suppress the warning**. You can of course cheat and simply suppress the warning, either via editor.config or #pragma warning disable. However, you should prefer options (1), (2) and (3) when using platform-specific APIs.
 
-### The platform specific API calls in the above examples guarded with guard methods
+### Guard platform-specific APIs with guard methods
 
 Guard methods platform name should match with the calling platform dependent API platform name. If platform string of the calling API include version:
 

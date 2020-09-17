@@ -71,17 +71,17 @@ To extract the Apache Spark files:
 
 ![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
 
-Run the following commands to set the environment variables used to locate Apache Spark.
+Run the following commands to set the environment variables used to locate Apache Spark. For Windows, make sure to run the command prompt in administrator mode.
 
 # [Windows](#tab/windows)
 
 ```console
 setx /M HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx /M SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
-setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%"
+setx /M PATH "%PATH%;%HADOOP_HOME%;%SPARK_HOME%\bin"
 ```
 
-# [Mac/Linux](#tab/unix)
+# [Mac/Linux](#tab/linux)
 
 ```bash
 export SPARK_HOME=~/bin/spark-2.4.1-bin-hadoop2.7/
@@ -93,7 +93,9 @@ source ~/.bashrc
 
 Once you've installed everything and set your environment variables, open a **new** command prompt or terminal and run the following command:
 
-`%SPARK_HOME%\bin\spark-submit --version`
+```console
+spark-submit --version
+```
 
 If the command runs and prints version information, you can move to the next step.
 
@@ -124,13 +126,13 @@ To extract the Microsoft.Spark.Worker:
 
 Run one of the following commands to set the `DOTNET_WORKER_DIR` environment variable, which is used by .NET apps to locate .NET for Apache Spark. Make sure to replace `<PATH-DOTNET_WORKER_DIR>` with the directory where you downloaded and extracted the Microsoft.Spark.Worker
 
-#### [Windows](tab/windows)
+# [Windows](tab/windows)
 
 ```console
 setx /M DOTNET_WORKER_DIR <PATH-DOTNET_WORKER_DIR>
 ```
 
-#### [Mac/Linux](tab/unix)
+# [Mac/Linux](tab/linux)
 
 ```bash
 export DOTNET_WORKER_DIR=<your_path>
@@ -242,7 +244,7 @@ microsoft-spark-2.4.x-<version>.jar ^
 dotnet MySparkApp.dll <path-of-input.txt>
 ```
 
-# [Mac/Linux](#tab/unix)
+# [Mac/Linux](#tab/linux)
 
 ```bash
 spark-submit \

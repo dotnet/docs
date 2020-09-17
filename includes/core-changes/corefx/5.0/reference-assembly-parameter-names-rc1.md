@@ -4,16 +4,16 @@ Some reference assembly parameter names have changed to match parameter names in
 
 #### Change description
 
-In previous .NET 5.0 preview versions, some [reference assembly](../../../../docs/standard/assembly/reference-assemblies.md) parameter names are different to their corresponding parameters in the implementation assembly. This can cause problems while using named arguments and reflection.
+In previous .NET 5.0 preview and RC versions, some [reference assembly](../../../../docs/standard/assembly/reference-assemblies.md) parameter names are different to their corresponding parameters in the implementation assembly. This can cause problems while using named arguments and reflection.
 
-In .NET 5.0 RC1, these mismatched parameter names were updated in the reference assemblies to exactly match the corresponding parameter names in the implementation assemblies.
+In .NET 5.0 RC2, these mismatched parameter names were updated in the reference assemblies to exactly match the corresponding parameter names in the implementation assemblies.
 
 The following table shows the APIs and parameter names that changed.
 
 | API | Old parameter name | New parameter name |
 | - | - | - |
 | <xref:System.Diagnostics.ActivityContext.%23ctor(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags,System.String,System.Boolean)> | `traceOptions` | `traceFlags` |
-| <xref:System.Globalization.CompareInfo.IsPrefix(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Globalization.CompareOptions,System.Int32@)?displayProperty=nameWithType> | `suffix` | `prefix` | .NET 5.0 RC2 |
+| <xref:System.Globalization.CompareInfo.IsPrefix(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.Globalization.CompareOptions,System.Int32@)?displayProperty=nameWithType> | `suffix` | `prefix` |
 
 #### Reason for change
 
@@ -21,7 +21,7 @@ The parameter names were changed for consistency and to avoid failures when usin
 
 #### Version introduced
 
-5.0 RC1
+5.0 RC2
 
 #### Recommended action
 

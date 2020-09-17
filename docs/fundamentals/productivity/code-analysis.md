@@ -36,6 +36,7 @@ The following rules are enabled, by default, in .NET 5.0 Preview 8.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |
+| [CA1416](/visualstudio/code-quality/ca1416) | Interoperability | Warning | Platform compatibility analyzer |
 | [CA1417](/visualstudio/code-quality/ca1417) | Interoperability | Warning | Do not use `OutAttribute` on string parameters for P/Invokes |
 | [CA1831](/visualstudio/code-quality/ca1831) | Performance | Warning | Use `AsSpan` instead of range-based indexers for string when appropriate |
 | [CA2013](/visualstudio/code-quality/ca2013) | Reliability | Warning | Do not use `ReferenceEquals` with value types |

@@ -320,7 +320,7 @@ Class Source
         '</snippetReturnNestedCollectionWithEntityCommand> 
     End Sub
 
-    Public Shared Sub ReturnEntityTypeWithObectQuery()
+    Public Shared Sub ReturnEntityTypeWithObjectQuery()
         '<snippetQueryEntityTypeCollection> 
         Using context As New AdventureWorksEntities()
 

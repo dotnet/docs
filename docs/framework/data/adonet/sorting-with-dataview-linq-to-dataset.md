@@ -79,4 +79,4 @@ The ability to sort data based on specific criteria and then present the data to
 
 - [Data Binding and LINQ to DataSet](data-binding-and-linq-to-dataset.md)
 - [Filtering with DataView](filtering-with-dataview-linq-to-dataset.md)
-- [Sorting Data](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb546145(v=vs.120))
+- [Sorting Data](/previous-versions/visualstudio/visual-studio-2013/bb546145(v=vs.120))

@@ -22,4 +22,4 @@ Physical paging can be performed by using the [SKIP](skip-entity-sql.md) and [LI
 
 - [Entity SQL Reference](entity-sql-reference.md)
 - [Entity SQL Overview](entity-sql-overview.md)
-- [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [How to: Page Through Query Results](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))

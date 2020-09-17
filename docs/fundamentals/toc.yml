@@ -55,8 +55,10 @@ items:
     href: ../standard/components.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
-  - name: .NET Core overview
+  - name: Introduction to .NET Core
     href: ../core/introduction.md
+  - name: .NET Core overview
+    href: ../core/about.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
   - name: .NET glossary
@@ -432,8 +434,12 @@ items:
     href: ../core/deploying/runtime-patch-selection.md
   - name: Single file deployment and executable
     href: ../core/deploying/single-file.md
-  - name: Trim self-contained deployments and executables
-    href: ../core/deploying/trim-self-contained.md
+  - name: Trim self-contained deployments
+    items:
+    - name: Overview and how-to
+      href: ../core/deploying/trim-self-contained.md
+    - name: Options
+      href: ../core/deploying/trimming-options.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -696,12 +702,25 @@ items:
 - name: Microsoft Extensions 
   items:
   - name: Configuration
-    href: /aspnet/core/fundamentals/configuration/
+    items:
+    - name: Overview
+      href: ../core/extensions/configuration.md
+      displayName: configuration,config,configuration sources,config sources
+    - name: Configuration providers
+      href: ../core/extensions/configuration-providers.md
+      displayName: configuration providers,config providers
+    - name: Implement a custom configuration provider
+      href: ../core/extensions/custom-configuration-provider.md
+      displayName: custom configuration,custom config,custom configuration provider,custom config provider
   - name: Dependency injection
-    href: /aspnet/core/fundamentals/dependency-injection/
+    href: /aspnet/core/fundamentals/dependency-injection
+  - name: Generic host
+    href: /aspnet/core/fundamentals/host/generic-host
   - name: Logging
-    href: /aspnet/core/fundamentals/logging/
-- name: Data access 
+    href: /aspnet/core/fundamentals/logging
+  - name: Options pattern
+    href: /aspnet/core/fundamentals/configuration/options
+- name: Data access
   items:
   - name: LINQ
     href: ../standard/linq/

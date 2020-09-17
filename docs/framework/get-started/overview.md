@@ -70,9 +70,9 @@ As you would expect from an object-oriented class library, the .NET Framework ty
 
 - Console apps. See [Building Console Applications](../../standard/building-console-apps.md).
 
-- Windows GUI apps (Windows Forms). See [Windows Forms](../winforms/index.md).
+- Windows GUI apps (Windows Forms). See [Windows Forms](/dotnet/desktop/winforms/).
 
-- Windows Presentation Foundation (WPF) apps. See [Windows Presentation Foundation](../wpf/index.md).
+- Windows Presentation Foundation (WPF) apps. See [Windows Presentation Foundation](/dotnet/desktop/wpf/).
 
 - ASP.NET apps. See [Web Applications with ASP.NET](../develop-web-apps-with-aspnet.md).
 

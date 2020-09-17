@@ -11,7 +11,7 @@ This topic provides links to the Visual Basic and C# solutions that contain [!IN
  [Sample Queries (Visual Basic)](../../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   
  C# version of the SampleQueries solution  
- [Sample Queries](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb397972(v=vs.90))  
+ [Sample Queries](/previous-versions/visualstudio/visual-studio-2008/bb397972(v=vs.90))  
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
   
@@ -19,9 +19,9 @@ This topic provides links to the Visual Basic and C# solutions that contain [!IN
   
 - Participate in the [LINQ Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), where you can discuss more complex topics in detail with experts.  
   
-- Study the white paper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](https://docs.microsoft.com/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
+- Study the white paper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   
 ## See also
 
 - [LINQ to SQL](index.md)
-- [LINQ to SQL Walkthroughs](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb386295(v=vs.90))
+- [LINQ to SQL Walkthroughs](/previous-versions/visualstudio/visual-studio-2008/bb386295(v=vs.90))

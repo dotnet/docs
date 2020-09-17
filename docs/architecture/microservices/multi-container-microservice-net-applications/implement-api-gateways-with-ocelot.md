@@ -82,7 +82,7 @@ The HTTP request will end up running that kind of C# code accessing the microser
 
 Regarding the microservice URL, when the containers are deployed in your local development PC (local Docker host), each microservice's container always has an internal port (usually port 80) specified in its dockerfile, as in the following dockerfile:
 
-```Dockerfile
+```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
@@ -368,7 +368,7 @@ Because of testing or debugging reasons, if you wanted to directly access to the
 
 **Figure 6-36**. Direct access to a microservice for testing purposes
 
-But the application is configured so it accesses all the microservices through the API Gateways, not though the direct port "shortcuts".
+But the application is configured so it accesses all the microservices through the API Gateways, not through the direct port "shortcuts".
 
 ### The Gateway aggregation pattern in eShopOnContainers
 

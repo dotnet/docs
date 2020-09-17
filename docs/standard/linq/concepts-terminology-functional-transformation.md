@@ -49,7 +49,7 @@ For more information, see [Standard Query Operators Overview (C#)](../../csharp/
 lambda expression \
 Essentially, an inline anonymous function that can be used wherever a delegate type is expected. This is a simplified definition of lambda expressions, but it's adequate for the purposes of this tutorial.
 
-For more information, see [Lambda expressions (C# Programming Guide)](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) and [Lambda Expressions (Visual Basic))](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).
+For more information, see [Lambda expressions (C# Programming Guide)](../../csharp/language-reference/operators/lambda-expressions.md) and [Lambda Expressions (Visual Basic))](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).
 
 collection \
 A structured set of data, usually of a uniform type. To be compatible with LINQ, a collection must implement the <xref:System.Collections.IEnumerable> interface or the <xref:System.Linq.IQueryable> interface (or one of their generic counterparts, <xref:System.Collections.Generic.IEnumerator%601> or <xref:System.Linq.IQueryable%601>).
@@ -67,9 +67,9 @@ For more information, see [Implicitly typed local variables (C# Programming Guid
 deferred execution and lazy evaluation \
 The delaying of evaluation of an expression until its resolved value is actually required. Deferred execution is supported in collections.
 
-For more C# information, see [Introduction to LINQ Queries (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](../../csharp/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).
+For more C# information, see [Introduction to LINQ Queries (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (C#)](./deferred-execution-lazy-evaluation.md).
 
-For more Visual Basic information, see [Basic Query Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).
+For more Visual Basic information, see [Basic Query Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md) and [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](./deferred-execution-lazy-evaluation.md).
 
 These language features will be used in code samples throughout this section.
 

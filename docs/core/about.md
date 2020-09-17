@@ -33,7 +33,7 @@ Editor integration is provided, in part, by the contributors of the [OmniSharp](
 
 * Cloud apps with [ASP.NET Core](/aspnet/core/)
 * Mobile apps with [Xamarin](/xamarin)
-* IoT apps with [System.Device.GPIO](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0)
+* IoT apps with [System.Device.GPIO](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0)
 * Windows client apps with [WPF](../desktop-wpf/overview/index.md) and Windows Forms
 * Machine learning [ML.NET](../machine-learning/index.yml)
 
@@ -58,7 +58,7 @@ Many APIs are included that satisfy common needs:
 
 ### Open source
 
-[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux for x64, x86, ARM32, and ARM64 processors. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](../desktop-wpf/overview/index.md), and [machine learning](../machine-learning/index.yml).
+[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux for x64, x86, ARM32, and ARM64 processors. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](../desktop-wpf/overview/index.md), and [machine learning](../machine-learning/index.yml).
 
 ## Support
 

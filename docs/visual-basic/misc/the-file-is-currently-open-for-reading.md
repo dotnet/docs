@@ -13,6 +13,6 @@ An attempt has been made to access a file that is currently open for reading.
 ## See also
 
 - <xref:System.Security.Permissions.FileIOPermission>
-- [How to: Get Information About a File in Visual Basic](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))
+- [How to: Get Information About a File in Visual Basic](/previous-versions/visualstudio/visual-studio-2010/abtzf6f7(v=vs.100))
 - [How to: Read from Text Files](../developing-apps/programming/drives-directories-files/how-to-read-from-text-files.md)
 - [How to: Read From Binary Files](../developing-apps/programming/drives-directories-files/how-to-read-from-binary-files.md)

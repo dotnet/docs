@@ -97,7 +97,7 @@ Using an official .NET image repository from Docker Hub with a version number en
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
-```Dockerfile
+```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 ARG source
 WORKDIR /app
@@ -167,7 +167,7 @@ Probably the best way to understand multi-stage is going through a Dockerfile in
 
 The initial Dockerfile might look something like this:
 
-```Dockerfile
+```dockerfile
  1  FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
  2  WORKDIR /app
  3  EXPOSE 80
@@ -238,7 +238,7 @@ You'll take advantage of Docker's layer cache feature, which is quite simple: if
 
 So, let's focus on the **build** stage, lines 5-6 are mostly the same, but lines 7-17 are different for every service from eShopOnContainers, so they have to execute every single time, however if you changed lines 7-16 to:
 
-```Dockerfile
+```dockerfile
 COPY . .
 ```
 
@@ -250,7 +250,7 @@ Then it would be just the same for every service, it would copy the whole soluti
 
 The next significant optimization involves the `restore` command executed in line 17, which is also different for every service of eShopOnContainers. If you change that line to just:
 
-```Dockerfile
+```dockerfile
 RUN dotnet restore
 ```
 
@@ -270,7 +270,7 @@ For the final optimization, it just happens that line 20 is redundant, as line 2
 
 The resulting file is then:
 
-```Dockerfile
+```dockerfile
  1  FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
  2  WORKDIR /app
  3  EXPOSE 80
@@ -447,7 +447,7 @@ The above command will create a new container instance from the specified image,
 
 In this case, the command binds the internal port 5000 of the container to port 80 of the host machine. This means that the host is listening on port 80 and forwarding to port 5000 on the container.
 
-The hash shown is the container ID and it’s also assigned a random readable name if the `--name` option is not used.
+The hash shown is the container ID and it's also assigned a random readable name if the `--name` option is not used.
 
 #### Using Visual Studio
 
@@ -490,7 +490,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2019
 ### Additional resources
 
 - **Deploy an ASP.NET container to a remote Docker host** \
-  <https://docs.microsoft.com/azure/vs-azure-tools-docker-hosting-web-apps-in-docker>
+  <https://docs.microsoft.com/visualstudio/containers/hosting-web-apps-in-docker>
 
 ### A note about testing and deploying with orchestrators
 
@@ -553,7 +553,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 [Windows Containers](https://docs.microsoft.com/virtualization/windowscontainers/about/index) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 
-```Dockerfile
+```dockerfile
 FROM mcr.microsoft.com/windows/servercore
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
 RUN powershell -Command Add-WindowsFeature Web-Server
@@ -562,7 +562,7 @@ CMD [ "ping", "localhost", "-t" ]
 
 In this case, we are using a Windows Server Core base image (the FROM setting) and installing IIS with a PowerShell command (the RUN setting). In a similar way, you could also use PowerShell commands to set up additional components like ASP.NET 4.x, .NET 4.6, or any other Windows software. For example, the following command in a Dockerfile sets up ASP.NET 4.5:
 
-```Dockerfile
+```dockerfile
 RUN powershell add-windowsfeature web-asp-net45
 ```
 

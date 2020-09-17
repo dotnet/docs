@@ -73,5 +73,5 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
 - [Persisting an Object in Visual Basic](programming-guide/concepts/serialization/walkthrough-persisting-an-object-in-visual-studio.md)  
  Demonstrates how to create a simple object and persist its data to a file.
 
-- [Walkthrough: Test-First Support with the Generate From Usage Feature] 
+- [Walkthrough: Test-First Support with the Generate From Usage Feature]
  Demonstrates how to do test-first development, in which you first write unit tests and then write the source code to make the tests succeed.

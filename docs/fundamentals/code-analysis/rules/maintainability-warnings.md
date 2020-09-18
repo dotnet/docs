@@ -30,4 +30,4 @@ Maintainability warnings support library and application maintenance.
 
 ## See also
 
-- [Measure Complexity and Maintainability of Managed Code](code-metrics-values.md)
+- [Measure Complexity and Maintainability of Managed Code](/visualstudio/code-quality/code-metrics-values)

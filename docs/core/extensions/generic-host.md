@@ -31,7 +31,7 @@ The host is typically configured, built, and run by code in the `Program` class.
 - Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> to create an <xref:Microsoft.Extensions.Hosting.IHost> instance.
 - Calls <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run%2A> or <xref:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync%2A> method on the host object.
 
-The .NET Worker Service template generate the following code to create a Generic Host:
+The .NET Worker Service templates generate the following code to create a Generic Host:
 
 ```csharp
 public class Program
@@ -124,8 +124,6 @@ Host configuration is used for the properties of the <xref:Microsoft.Extensions.
 Host configuration is available from [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration) inside <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration%2A>. After `ConfigureAppConfiguration`, `HostBuilderContext.Configuration` is replaced with the app config.
 
 To add host configuration, call <xref:Microsoft.Extensions.Hosting.HostBuilder.ConfigureHostConfiguration%2A> on `IHostBuilder`. `ConfigureHostConfiguration` can be called multiple times with additive results. The host uses whichever option sets a value last on a given key.
-
-The environment variable provider with prefix `DOTNET_` and command-line arguments are included by `CreateDefaultBuilder`.
 
 The following example creates host configuration:
 

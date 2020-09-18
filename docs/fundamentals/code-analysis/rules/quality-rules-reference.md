@@ -13,7 +13,7 @@ ms.author: midumont
 
 The following table lists code quality analysis rules by rule identifier.
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol2BreakAll"]
 > | RuleId | Warning | Description |
 > | - | - | - |
 > | CA1000 | [CA1000: Do not declare static members on generic types](ca1000.md) | When a static member of a generic type is called, the type argument must be specified for the type. When a generic instance member that does not support inference is called, the type argument must be specified for the member. In these two cases, the syntax for specifying the type argument is different and easily confused. |

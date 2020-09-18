@@ -326,7 +326,7 @@ items:
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
     - name: Debug Linux dumps
-      href: ../core/diagnostics/debug-linux-dumps.md        
+      href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
       href: ../core/diagnostics/event-counters.md
     - name: Logging and tracing
@@ -344,7 +344,7 @@ items:
       - name: dotnet-symbol
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
-        href: ../core/diagnostics/dotnet-sos.md                    
+        href: ../core/diagnostics/dotnet-sos.md
     - name: .NET Core diagnostics tutorials
       items:
       - name: Get perf metrics with EventCounters
@@ -362,7 +362,7 @@ items:
       displayName: code analysis, analyzers
     - name: Configure rules
       href: code-analysis/configure-rules.md
-    - name: Rules reference
+    - name: Code quality rule reference
       items:
       - name: Overview
         href: code-analysis/rules/rules-reference.md
@@ -671,7 +671,7 @@ items:
         - name: "CA2119: Seal methods that satisfy private interfaces"
           href: code-analysis/rules/ca2119.md
         - name: "CA2153: Avoid handling Corrupted State Exceptions"
-          href: code-analysis/rules/ca2153.md        
+          href: code-analysis/rules/ca2153.md
         - name: "CA2153: Avoid Handling Corrupted State Exceptions"
           href: code-analysis/rules/ca2153.md
         - name: "CA2300: Do not use insecure deserializer BinaryFormatter"
@@ -1042,7 +1042,7 @@ items:
     - name: Generic interfaces
       href: ../standard/generics/interfaces.md
     - name: Covariance and contravariance
-      href: ../standard/generics/covariance-and-contravariance.md  
+      href: ../standard/generics/covariance-and-contravariance.md
   - name: Collections and data structures
     items:
     - name: Overview
@@ -1061,14 +1061,14 @@ items:
     - name: Hashtable and Dictionary types
       href: ../standard/collections/hashtable-and-dictionary-collection-types.md
     - name: Thread-safe collections
-      href: ../standard/collections/thread-safe/  
+      href: ../standard/collections/thread-safe/
   - name: Delegates and lambdas
     href: ../standard/delegates-lambdas.md
   - name: Events
     items:
     - name: Overview
       href: ../standard/events/index.md
-      displayName: events 
+      displayName: events
     - name: Raise and consume events
       href: ../standard/events/how-to-raise-and-consume-events.md
     - name: Handle multiple events using event properties
@@ -1083,7 +1083,7 @@ items:
       - name: "How to: Implement a provider"
         href: ../standard/events/how-to-implement-a-provider.md
       - name: "How to: Implement an observer"
-        href: ../standard/events/how-to-implement-an-observer.md  
+        href: ../standard/events/how-to-implement-an-observer.md
   - name: Exceptions
     items:
     - name: Overview
@@ -1110,7 +1110,7 @@ items:
     - name: Handle COM interop exceptions
       href: ../standard/exceptions/handling-com-interop-exceptions.md
     - name: Best practices
-      href: ../standard/exceptions/best-practices-for-exceptions.md  
+      href: ../standard/exceptions/best-practices-for-exceptions.md
   - name: Numeric types
     href: ../standard/numerics.md
   - name: Dates, times, and time zones
@@ -1251,10 +1251,10 @@ items:
     - name: Write custom attributes
       href: ../standard/attributes/writing-custom-attributes.md
     - name: Retrieve information stored in attributes
-      href: ../standard/attributes/retrieving-information-stored-in-attributes.md  
+      href: ../standard/attributes/retrieving-information-stored-in-attributes.md
   - name: Choose between anonymous and tuple types
     href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-- name: Microsoft Extensions 
+- name: Microsoft Extensions
   items:
   - name: Configuration
     items:
@@ -1433,7 +1433,7 @@ items:
     - name: Lambda expressions in PLINQ and TPL
       href: ../standard/parallel-programming/lambda-expressions-in-plinq-and-tpl.md
     - name: Further reading
-      href: ../standard/parallel-programming/for-further-reading-parallel-programming.md    
+      href: ../standard/parallel-programming/for-further-reading-parallel-programming.md
   - name: Threading
     href: ../standard/threading/
 - name: Serialization
@@ -1602,7 +1602,7 @@ items:
   - name: Work with buffers
     href: ../standard/io/buffers.md
   - name: Memory-mapped files
-    href: ../standard/io/memory-mapped-files.md  
+    href: ../standard/io/memory-mapped-files.md
 - name: Unit testing
   displayName: xUnit,NUnit,MSTest,unit testing,testing
   items:
@@ -1698,7 +1698,7 @@ items:
         - name: Application domain resource monitoring
           href: ../standard/garbage-collection/app-domain-resource-monitoring.md
         - name: Weak references
-          href: ../standard/garbage-collection/weak-references.md  
+          href: ../standard/garbage-collection/weak-references.md
     - name: Memory and span-related types
       items:
       - name: Overview
@@ -1858,9 +1858,9 @@ items:
       href: ../standard/design-guidelines/common-design-patterns.md
       items:
       - name: Dependency properties
-        href: ../standard/design-guidelines/dependency-properties.md  
+        href: ../standard/design-guidelines/dependency-properties.md
 - name: Migration guide
-  items: 
+  items:
   - name: Breaking changes
     displayName: app compatibility
     href: ../core/compatibility/

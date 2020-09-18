@@ -251,7 +251,7 @@ f1_keywords:
 author: mikadumont
 ms.author: midumont
 ---
-# Code quality analysis rules by rule ID
+# Code quality rules
 
 The following table lists code quality analysis rules by rule identifier.
 

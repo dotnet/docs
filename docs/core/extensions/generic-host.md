@@ -105,7 +105,7 @@ The <xref:Microsoft.Extensions.Hosting.IHostLifetime> implementation controls wh
 
 `Microsoft.Extensions.Hosting.Internal.ConsoleLifetime` is the default `IHostLifetime` implementation. `ConsoleLifetime`:
 
-- Listens for <kbd>Ctrl</kbd>+<kbd>C</kbd>/SIGINT or SIGTERM and calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A> to start the shutdown process.
+- Listens for <kbd>Ctrl</kbd>+<kbd>C</kbd> and calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A> to start the shutdown process.
 - Unblocks extensions such as `RunAsync` and `WaitForShutdownAsync`.
 
 ## IHostEnvironment
@@ -136,3 +136,8 @@ App configuration is created by calling <xref:Microsoft.Extensions.Hosting.HostB
 The configuration created by `ConfigureAppConfiguration` is available at [HostBuilderContext.Configuration](xref:Microsoft.Extensions.Hosting.HostBuilderContext.Configuration%2A) for subsequent operations and as a service from DI. The host configuration is also added to the app configuration.
 
 For more information, see [Configuration in .NET](configuration.md).
+
+## See also
+
+- [Configuration in .NET](configuration.md)
+- [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)

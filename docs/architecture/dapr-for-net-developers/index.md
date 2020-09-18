@@ -74,4 +74,4 @@ This guide is available both in [PDF](https://dotnet.microsoft.com/download/e-bo
 This book and related samples are constantly evolving, so your feedback is welcomed! If you have comments about how this book can be improved, use the feedback section at the bottom of any page built on [GitHub issues](https://github.com/dotnet/docs/issues).
 
 >[!div class="step-by-step"]
->[Next](challenges-of-distributed-applications.md)
+>[Next](the-world-is-distributed.md)

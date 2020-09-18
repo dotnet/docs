@@ -34,7 +34,7 @@ Although straightforward, monolithic architectures present many  challenges:
 
 As the application grows in size, complexity, and volume, these challenges become more pronounced. Eventually, you enter the `Fear Cycle`. The *fear cycle* is a state in which you have lost control of your monolithic application.
 
-The Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/), provide the obvious giveaways:
+The Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/dotnet/architecture/cloud-native/), provide the obvious giveaways:
 
 - The app has become so overwhelmingly complicated that no single person understands it.
 - You fear making changes - each change has unintended and costly side effects.

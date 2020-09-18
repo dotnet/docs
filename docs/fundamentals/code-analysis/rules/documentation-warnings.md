@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "warnings, documentation"
 author: mavasani
 ms.author: mavasani
-ms.workload:
-  - "multiple"
 ---
 # Documentation warnings
 

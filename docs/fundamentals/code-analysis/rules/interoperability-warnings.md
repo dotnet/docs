@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "warnings, interoperability"
 author: gewarren
 ms.author: gewarren
-ms.workload:
-  - "multiple"
 ---
 # Portability and Interoperability warnings
 

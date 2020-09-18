@@ -1,5 +1,5 @@
 ---
-title: Security Warnings
+title: Security Warnings (code analysis)
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
@@ -9,12 +9,8 @@ helpviewer_keywords:
 - security warnings
 - managed code analysis warnings, security warnings
 - warnings, security
-ms.assetid: 60d4e8ea-230a-494f-aa6a-b91db77540e4
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
-ms.workload:
-- multiple
+author: gewarren
+ms.author: gewarren
 ---
 # Security warnings
 

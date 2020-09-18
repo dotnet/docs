@@ -1,5 +1,5 @@
 ---
-title: Publish Warnings
+title: Publish Warnings (code analysis)
 ms.date: 09/04/2020
 ms.topic: reference
 f1_keywords:
@@ -8,12 +8,8 @@ helpviewer_keywords:
 - warnings, publish
 - managed code analysis warnings, publish warnings
 - publish warnings
-ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
-ms.workload:
-- multiple
+author: gewarren
+ms.author: gewarren
 ---
 # Publish warnings
 

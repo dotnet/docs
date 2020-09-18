@@ -1,5 +1,5 @@
 ---
-title: Globalization Warnings
+title: Globalization Warnings (code analysis)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,17 +9,13 @@ helpviewer_keywords:
 - globalization warnings
 - globalization [Visual Studio], warnings
 - managed code analysis warnings, globalization warnings
-ms.assetid: a8d12d41-14bf-4b43-af24-168312d7c390
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
-ms.workload:
-- multiple
+author: gewarren
+ms.author: gewarren
 ---
-# Globalization Warnings
+# Globalization warnings
 Globalization warnings support world-ready libraries and applications.
 
-## In This Section
+## In this section
 
 |Rule|Description|
 |----------|-----------------|

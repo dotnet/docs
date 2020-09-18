@@ -1,5 +1,5 @@
 ---
-title: Portability and Interoperability Warnings
+title: Portability and Interoperability Warnings (code analysis)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,18 +11,16 @@ helpviewer_keywords:
   - "warnings, portability"
   - "interoperability warnings"
   - "warnings, interoperability"
-ms.assetid: 95de6eb3-40c4-4063-9f59-25cb70e3b2b3
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
+author: gewarren
+ms.author: gewarren
 ms.workload:
   - "multiple"
 ---
-# Portability and Interoperability Warnings
+# Portability and Interoperability warnings
 
 Portability warnings support portability across different platforms. Interoperability warnings support interaction with COM clients.
 
-## In This Section
+## In this section
 
 | Rule | Description |
 | - | - |

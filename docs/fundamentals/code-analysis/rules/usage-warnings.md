@@ -1,5 +1,5 @@
 ---
-title: Usage Warnings
+title: Usage Warnings (code analysis)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,18 +8,14 @@ helpviewer_keywords:
 - warnings, usage
 - managed code analysis warnings, usage warnings
 - usage warnings
-ms.assetid: fe7dc2a3-289d-4bf7-a1e4-0947a81287c4
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
-ms.workload:
-- multiple
+author: gewarren
+ms.author: gewarren
 ---
-# Usage Warnings
+# Usage warnings
 
 Usage warnings support proper usage of .NET.
 
-## In This Section
+## In this section
 
 |Rule|Description|
 |----------|-----------------|

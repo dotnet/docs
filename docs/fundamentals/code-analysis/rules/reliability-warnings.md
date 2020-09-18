@@ -1,5 +1,5 @@
 ---
-title: Reliability Warnings
+title: Reliability Warnings (code analysis)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,12 +8,8 @@ helpviewer_keywords:
 - warnings, reliability
 - reliability warnings
 - managed code analysis warnings, reliability warnings
-ms.assetid: 77886846-10a2-4585-968a-7eb60ebe07e8
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
-ms.workload:
-- multiple
+author: gewarren
+ms.author: gewarren
 ---
 # Reliability warnings
 

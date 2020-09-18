@@ -1,5 +1,5 @@
 ---
-title: Performance Warnings
+title: Performance Warnings (code analysis)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -9,21 +9,17 @@ helpviewer_keywords:
 - performance warnings
 - performance, warnings
 - managed code analysis warnings, performance warnings
-ms.assetid: e014ac3a-02e6-46d9-942c-3491dd63782f
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
-ms.workload:
-- multiple
+author: gewarren
+ms.author: gewarren
 ---
-# Performance Warnings
+# Performance warnings
 Performance warnings support high-performance libraries and applications.
 
-## In This Section
+## In this section
 
 | Rule | Description |
 | - | - |
-| [CA1802: Use Literals Where Appropriate](../code-quality/ca1802.md) | A field is declared static and read-only (Shared and ReadOnly in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]), and is initialized with a value that is computable at compile time. Because the value that is assigned to the targeted field is computable at compile time, change the declaration to a const (Const in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) field so that the value is computed at compile time instead of at run time. |
+| [CA1802: Use Literals Where Appropriate](../code-quality/ca1802.md) | A field is declared static and read-only (Shared and ReadOnly in Visual Basic), and is initialized with a value that is computable at compile time. Because the value that is assigned to the targeted field is computable at compile time, change the declaration to a const (Const in Visual Basic) field so that the value is computed at compile time instead of at run time. |
 | [CA1805: Do not initialize unnecessarily](../code-quality/ca1805.md) | The .NET runtime initializes all fields of reference types to their default values before running the constructor. In most cases, explicitly initializing a field to its default value is redundant, which adds to maintenance costs and may degrade performance (such as with increased assembly size). |
 | [CA1806: Do not ignore method results](../code-quality/ca1806.md) | A new object is created but never used, or a method that creates and returns a new string is called and the new string is never used, or a Component Object Model (COM) or P/Invoke method returns an HRESULT or error code that is never used. |
 | [CA1810: Initialize reference type static fields inline](../code-quality/ca1810.md) | When a type declares an explicit static constructor, the just-in-time (JIT) compiler adds a check to each static method and instance constructor of the type to make sure that the static constructor was previously called. Static constructor checks can decrease performance. |
@@ -34,7 +30,7 @@ Performance warnings support high-performance libraries and applications.
 | [CA1819: Properties should not return arrays](../code-quality/ca1819.md) | Arrays that are returned by properties are not write-protected, even if the property is read-only. To keep the array tamper-proof, the property must return a copy of the array. Typically, users will not understand the adverse performance implications of calling such a property. |
 | [CA1820: Test for empty strings using string length](../code-quality/ca1820.md) | Comparing strings by using the String.Length property or the String.IsNullOrEmpty method is significantly faster than using Equals. |
 | [CA1821: Remove empty finalizers](../code-quality/ca1821.md) | Whenever you can, avoid finalizers because of the additional performance overhead that is involved in tracking object lifetime. An empty finalizer incurs added overhead without any benefit. |
-| [CA1822: Mark members as static](../code-quality/ca1822.md) | Members that do not access instance data or call instance methods can be marked as static (Shared in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code. |
+| [CA1822: Mark members as static](../code-quality/ca1822.md) | Members that do not access instance data or call instance methods can be marked as static (Shared in Visual Basic). After you mark the methods as static, the compiler will emit nonvirtual call sites to these members. This can give you a measurable performance gain for performance-sensitive code. |
 | [CA1823: Avoid unused private fields](../code-quality/ca1823.md) | Private fields were detected that do not appear to be accessed in the assembly. |
 | [CA1824: Mark assemblies with NeutralResourcesLanguageAttribute](../code-quality/ca1824.md) | The NeutralResourcesLanguage attribute informs the Resource Manager of the language that was used to display the resources of a neutral culture for an assembly. This improves lookup performance for the first resource that you load and can reduce your working set. |
 | [CA1825: Avoid zero-length array allocations](../code-quality/ca1825.md) | Initializing a zero-length array leads to unnecessary memory allocation. Instead, use the statically allocated empty array instance by calling <xref:System.Array.Empty%2A?displayProperty=nameWithType>. The memory allocation is shared across all invocations of this method. |

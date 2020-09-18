@@ -115,7 +115,7 @@ Steps to enable code style analysis on build:
 
    ```ini
    [*.{cs,vb}]
-  
+
    # Default severity for analyzer diagnostics with category 'Style' (escalated to build warnings)
    dotnet_analyzer_diagnostic.category-Style.severity = warning
 

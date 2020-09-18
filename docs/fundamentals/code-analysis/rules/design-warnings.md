@@ -1,5 +1,5 @@
 ---
-title: Design Warnings
+title: Design Warnings (code analysis)
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -8,18 +8,14 @@ helpviewer_keywords:
 - design warnings
 - managed code analysis warnings, design warnings
 - warnings, design
-ms.assetid: 34e65a18-560c-423f-814f-519089e318cf
-author: mikejo5000
-ms.author: mikejo
-manager: jillfra
-ms.workload:
-- multiple
+author: gewarren
+ms.author: gewarren
 ---
 # Design warnings
 
 Design warnings support adherence to the [.NET Framework Design Guidelines](/dotnet/standard/design-guidelines/).
 
-## In This Section
+## In this section
 
 | Rule | Description |
 | - | - |
@@ -61,7 +57,7 @@ Design warnings support adherence to the [.NET Framework Design Guidelines](/dot
 | [CA1055: URI return values should not be strings](../code-quality/ca1055.md) | This rule assumes that the method returns a URI. A string representation of a URI is prone to parsing and encoding errors, and can lead to security vulnerabilities. The System.Uri class provides these services in a safe and secure manner. |
 | [CA1056: URI properties should not be strings](../code-quality/ca1056.md) | This rule assumes that the property represents a URI. A string representation of a URI is prone to parsing and encoding errors, and can lead to security vulnerabilities. The System.Uri class provides these services in a safe and secure manner. |
 | [CA1058: Types should not extend certain base types](../code-quality/ca1058.md) | An externally visible type extends certain base types. Use one of the alternatives. |
-| [CA1060: Move P/Invokes to NativeMethods class](../code-quality/ca1060.md) | Platform Invocation methods, such as those marked with the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> or methods defined by using the Declare keyword in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], access unmanaged code. These methods should be of the NativeMethods, SafeNativeMethods, or UnsafeNativeMethods class. |
+| [CA1060: Move P/Invokes to NativeMethods class](../code-quality/ca1060.md) | Platform Invocation methods, such as those marked with the <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> or methods defined by using the Declare keyword in Visual Basic, access unmanaged code. These methods should be of the NativeMethods, SafeNativeMethods, or UnsafeNativeMethods class. |
 | [CA1061: Do not hide base class methods](../code-quality/ca1061.md) | A method in a base type is hidden by an identically named method in a derived type, when the parameter signature of the derived method differs only by types that are more weakly derived than the corresponding types in the parameter signature of the base method. |
 | [CA1062: Validate arguments of public methods](../code-quality/ca1062.md) | All reference arguments that are passed to externally visible methods should be checked against null. |
 | [CA1063: Implement IDisposable correctly](../code-quality/ca1063.md) | All IDisposable types should implement the Dispose pattern correctly. |

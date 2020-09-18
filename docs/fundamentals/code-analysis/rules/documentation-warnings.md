@@ -1,5 +1,5 @@
 ---
-title: Documentation warnings
+title: Documentation warnings (code analysis)
 ms.date: 09/16/2019
 ms.topic: reference
 f1_keywords:
@@ -10,7 +10,6 @@ helpviewer_keywords:
   - "warnings, documentation"
 author: mavasani
 ms.author: mavasani
-manager: jillfra
 ms.workload:
   - "multiple"
 ---

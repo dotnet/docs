@@ -45,6 +45,8 @@ The following rules are enabled, by default, in .NET 5.0 Preview 8.
 
 You can change the severity of these rules to disable them or elevate them to errors.
 
+For a full list of available code quality rules, see [Code quality rules](rules/quality-rules-reference.md).
+
 ### Enable additional rules
 
 Starting with .NET 5.0 RC2, the .NET SDK ships with all of the ["CA" code quality rules](/visualstudio/code-quality/code-analysis-for-managed-code-warnings). For a full list of rules that are included with each .NET SDK version, see [analyzer releases](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Core/AnalyzerReleases.Shipped.md).

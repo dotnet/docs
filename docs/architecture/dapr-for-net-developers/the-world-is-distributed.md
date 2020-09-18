@@ -2,7 +2,7 @@
 title: The World is Distributed
 description: Gain an understanding of the challenges of distributed applications
 author: robvet
-ms.date: 09/05/2020
+ms.date: 09/17/2020
 ---
 
 # The world is distributed
@@ -56,13 +56,14 @@ Many organizations are mitigating the monolithic fear cycle. They are gaining sp
 
 Note in the previous figure how the same application is decomposed across a set of distributed services. Each is self-contained and encapsulates its own code, data, and dependencies. Each is deployed in a software container and managed by a container orchestrator. Instead of a large relational database, each service owns it own datastore, the type of which vary based upon the data needs. Note how some services depend on a relational database, but other on NoSQL databases. One service stores its state in a distributed cache. Note how all traffic routes through an API Gateway service that is responsible for directing traffic to the core back-end services and enforcing many cross-cutting concerns. Most importantly, the application takes full advantage of the scalability, availability, and resiliency features found in modern cloud platforms.
 
-But, while distributed applications can help bring agility and speed, they bring many challenges. Consider, for example:
+But, while distributed applications can help bring agility and speed, they bring many challenges. 
 
-- Complexity
-- Interservice communication
-- State management
-- Messaging
-- Observability - End-to-end monitoring of processes executing on different machines
+| Challenge | Description |
+| :-------- | :-------- |
+| State Management | Maintaining contextual information during a transaction |
+| Interservice Communication | Communicate with other independent services |
+| Messaging |  |
+| Obseraviblity | End-to-end monitoring of processes executing on different machines |
 
 So, what exactly is Dapr? Sit back, relax, and let us help you explore this new world.
 

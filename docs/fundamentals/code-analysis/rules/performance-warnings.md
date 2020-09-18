@@ -13,6 +13,7 @@ author: gewarren
 ms.author: gewarren
 ---
 # Performance warnings
+
 Performance warnings support high-performance libraries and applications.
 
 ## In this section

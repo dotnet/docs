@@ -13,6 +13,7 @@ author: gewarren
 ms.author: gewarren
 ---
 # Globalization warnings
+
 Globalization warnings support world-ready libraries and applications.
 
 ## In this section

@@ -105,7 +105,7 @@ The <xref:Microsoft.Extensions.Hosting.IHostLifetime> implementation controls wh
 
 `Microsoft.Extensions.Hosting.Internal.ConsoleLifetime` is the default `IHostLifetime` implementation. `ConsoleLifetime`:
 
-- Listens for <kbd>Ctrl</kbd>+<kbd>C</kbd> and calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A> to start the shutdown process.
+- Listens for <kbd>Ctrl</kbd>+<kbd>C</kbd>, `SIGINT`, or `SIGTERM` and calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A> to start the shutdown process.
 - Unblocks extensions such as `RunAsync` and `WaitForShutdownAsync`.
 
 ## IHostEnvironment

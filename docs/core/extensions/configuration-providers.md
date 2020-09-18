@@ -198,8 +198,9 @@ set CustomPrefix_TransientFaultHandlingOptions__AutoRetryDelay=00:00:21
 dotnet run
 ```
 
-The default configuration loads environment variables and command-line arguments prefixed with `DOTNET_`. The `DOTNET_` prefix is used by .NET for host and app configuration, but not for user configuration.
-<!-- For more information on host and app configuration, see .NET Generic Host. -->
+The default configuration loads environment variables and command-line arguments prefixed with `DOTNET_`. The `DOTNET_` prefix is used by .NET for [host](generic-host.md#host-configuration) and [app configuration](generic-host.md#app-configuration), but not for user configuration.
+
+For more information on host and app configuration, see [.NET Generic Host](generic-host.md).
 
 On [Azure App Service](https://azure.microsoft.com/services/app-service), select **New application setting** on the **Settings > Configuration** page. Azure App Service application settings are:
 
@@ -308,4 +309,5 @@ In the preceding code, <xref:Microsoft.Extensions.Configuration.MemoryConfigurat
 ## See also
 
 - [Configuration in .NET](configuration.md)
+- [.NET Generic Host](generic-host.md)
 - [Implement a custom configuration provider](custom-configuration-provider.md)

@@ -20,8 +20,8 @@ Publish warnings for .NET.
 
 |Rule|Description|
 |----------|-----------------|
-|[IL3000 Avoid accessing Assembly file path when publishing as a single file](../code-quality/il3000.md)|Avoid using accessing Assembly file path when publishing as a single file|
-|[IL3001 Avoid accessing Assembly file path when publishing as a single-file](../code-quality/il3001.md)|Avoid accessing Assembly file path when publishing as a single-file|
+|[IL3000 Avoid accessing Assembly file path when publishing as a single file](il3000.md)|Avoid using accessing Assembly file path when publishing as a single file|
+|[IL3001 Avoid accessing Assembly file path when publishing as a single-file](il3001.md)|Avoid accessing Assembly file path when publishing as a single-file|
 
 ## See also
 

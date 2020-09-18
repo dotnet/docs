@@ -16,7 +16,7 @@ helpviewer_keywords:
 - [Code quality analysis ("CAxxxx" rules)](#code-quality-analysis)
 - [Code style analysis ("IDExxxx" rules)](#code-style-analysis)
 
-If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configure-code-analysis-rules.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
+If rule violations are found by an analyzer, they're reported as a suggestion, warning, or error, depending on how each rule is [configured](configure-rules.md). Code analysis violations appear with the prefix "CA" or "IDE" to differentiate them from compiler errors.
 
 > [!TIP]
 >
@@ -57,10 +57,10 @@ In the default analysis mode, some rules are [enabled by default](#enabled-rules
 
 #### Custom analysis mode
 
-You can [configure code analysis rules](configure-code-analysis-rules.md) to enable or disable an individual rule or a category of rules. Additionally, you can use the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property to switch to one of the following custom analysis modes:
+You can [configure code analysis rules](configure-rules.md) to enable or disable an individual rule or a category of rules. Additionally, you can use the [AnalysisMode](../../core/project-sdk/msbuild-props.md#analysismode) property to switch to one of the following custom analysis modes:
 
-- _Aggressive_ or _Opt-out_ mode: All rules are enabled by default as build warnings. You can selectively [opt out](configure-code-analysis-rules.md) of individual rules to disable them.
-- _Conservative_ or _Opt-in_ mode: All rules are disabled by default. You can selectively [opt into](configure-code-analysis-rules.md) individual rules to enable them.
+- _Aggressive_ or _Opt-out_ mode: All rules are enabled by default as build warnings. You can selectively [opt out](configure-rules.md) of individual rules to disable them.
+- _Conservative_ or _Opt-in_ mode: All rules are disabled by default. You can selectively [opt into](configure-rules.md) individual rules to enable them.
 
 ### Treat warnings as errors
 
@@ -105,7 +105,7 @@ Starting .NET 5.0 RC2, you can enable code style analysis on build, both at the 
 Steps to enable code style analysis on build:
 
 1. Set the MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) to `true`.
-2. [Configure](configure-code-analysis-rules.md) each "IDE" code style rule that you wish to run on build as a warning or an error. For example:
+2. [Configure](configure-rules.md) each "IDE" code style rule that you wish to run on build as a warning or an error. For example:
 
    ```ini
    [*.{cs,vb}]
@@ -113,7 +113,7 @@ Steps to enable code style analysis on build:
    dotnet_diagnostic.IDE0040.severity = warning
    ```
 
-   Alternatively, you can [configure the entire "Style" category](configure-code-analysis-rules.md#configure-multiple-rules) to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
+   Alternatively, you can [configure the entire "Style" category](configure-rules.md#configure-multiple-rules) to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
 
    ```ini
    [*.{cs,vb}]

@@ -1,5 +1,6 @@
 ---
 title: Security Warnings (code analysis)
+description: "Learn about code analysis rule Security Warnings"
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:

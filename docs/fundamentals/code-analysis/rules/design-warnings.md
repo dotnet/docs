@@ -1,5 +1,6 @@
 ---
 title: Design Warnings (code analysis)
+description: "Learn about code analysis rule Design Warnings"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:

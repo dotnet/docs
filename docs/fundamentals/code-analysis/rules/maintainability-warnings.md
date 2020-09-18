@@ -1,5 +1,6 @@
 ---
 title: Maintainability Warnings (code analysis)
+description: "Learn about code analysis rule Maintainability Warnings"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:

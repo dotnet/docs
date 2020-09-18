@@ -1,5 +1,6 @@
 ---
 title: Naming Warnings (code analysis)
+description: "Learn about code analysis rule Naming Warnings"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:

@@ -1,5 +1,6 @@
 ---
 title: Globalization Warnings (code analysis)
+description: "Learn about code analysis rule Globalization Warnings"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:

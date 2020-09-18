@@ -1,5 +1,6 @@
 ---
 title: Publish Warnings (code analysis)
+description: "Learn about code analysis rule Publish Warnings"
 ms.date: 09/04/2020
 ms.topic: reference
 f1_keywords:

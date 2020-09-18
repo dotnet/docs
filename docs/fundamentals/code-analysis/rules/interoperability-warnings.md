@@ -1,5 +1,6 @@
 ---
 title: Portability and Interoperability Warnings (code analysis)
+description: "Learn about code analysis rule Portability and Interoperability Warnings"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:

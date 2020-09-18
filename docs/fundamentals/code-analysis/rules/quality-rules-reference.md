@@ -2,256 +2,14 @@
 title: Code quality rules overview
 ms.date: 09/01/2020
 ms.topic: reference
-f1_keywords:
-- CA1000
-- CA1001
-- CA1002
-- CA1003
-- CA1005
-- CA1008
-- CA1010
-- CA1012
-- CS1014
-- CA1016
-- CA1017
-- CA1018
-- CA1019
-- CA1021
-- CA1024
-- CA1027
-- CA1028
-- CA1029
-- CA1030
-- CA1031
-- CA1032
-- CA1033
-- CA1034
-- CA1036
-- CA1040
-- CA1041
-- CA1043
-- CA1044
-- CA1045
-- CA1046
-- CA1047
-- CA1050
-- CA1051
-- CA1052
-- CA1053
-- CA1054
-- CA1055
-- CA1056
-- CA1058
-- CA1060
-- CA1061
-- CA1062
-- CA1063
-- CA1064
-- CA1065
-- CA1066
-- CA1067
-- CA1068
-- CA1069
-- CA1070
-- CA1200
-- CA1303
-- CA1304
-- CA1305
-- CA1307
-- CA1308
-- CA1309
-- CA1310
-- CA1401
-- CA1416
-- CA1417
-- CA1501
-- CA1502
-- CA1505
-- CA1506
-- CA1507
-- CA1508
-- CA1509
-- CA1700
-- CA1707
-- CA1708
-- CA1710
-- CA1711
-- CA1712
-- CA1713
-- CA1714
-- CA1715
-- CA1716
-- CA1717
-- CA1720
-- CA1721
-- CA1724
-- CA1725
-- CA1801
-- CA1802
-- CA1805
-- CA1806
-- CA1810
-- CA1812
-- CA1813
-- CA1814
-- CA1815
-- CA1816
-- CA1819
-- CA1820
-- CA1821
-- CA1822
-- CA1823
-- CA1824
-- CA1825
-- CA1826
-- CA1827
-- CA1828
-- CA1829
-- CA1830
-- CA1831
-- CA1832
-- CA1833
-- CA1834
-- CA1835
-- CA1836
-- CA1837
-- CA1838
-- CA2000
-- CA2002
-- CA2007
-- CA2008
-- CA2009
-- CA2011
-- CA2012
-- CA2013
-- CA2014
-- CA2015
-- CA2016
-- CA2100
-- CA2101
-- CA2109
-- CA2119
-- CA2153
-- CA2200
-- CA2201
-- CA2207
-- CA2208
-- CA2211
-- CA2213
-- CA2214
-- CA2215
-- CA2216
-- CA2217
-- CA2219
-- CA2225
-- CA2226
-- CA2227
-- CA2229
-- CA2231
-- CA2234
-- CA2235
-- CA2237
-- CA2241
-- CA2242
-- CA2243
-- CA2245
-- CA2246
-- CA2247
-- CA2248
-- CA2249
-- CA2300
-- CA2301
-- CA2302
-- CA2305
-- CA2310
-- CA2311
-- CA2312
-- CA2315
-- CA2321
-- CA2322
-- CA2326
-- CA2327
-- CA2328
-- CA2329
-- CA2330
-- CA2350
-- CA2351
-- CA2352
-- CA2353
-- CA2354
-- CA2355
-- CA2356
-- CA2361
-- CA2362
-- CA3001
-- CA3002
-- CA3003
-- CA3004
-- CA3005
-- CA3006
-- CA3007
-- CA3008
-- CA3009
-- CA3010
-- CA3011
-- CA3012
-- CA3061
-- CA3075
-- CA3076
-- CA3077
-- CA5347
-- CA5350
-- CA5351
-- CA5359
-- CA5360
-- CA5361
-- CA5362
-- CA5363
-- CA5364
-- CA5365
-- CA5366
-- CA5367
-- CA5368
-- CA5369
-- CA5370
-- CA5371
-- CA5372
-- CA5373
-- CA5374
-- CA5375
-- CA5376
-- CA5377
-- CA5378
-- CA5379
-- CA5380
-- CA5381
-- CA5382
-- CA5383
-- CA5384
-- CA5385
-- CA5386
-- CA5387
-- CA5388
-- CA5389
-- CA5390
-- CA5391
-- CA5392
-- CA5393
-- CA5394
-- CA5395
-- CA5397
-- CA5398
-- CA5399
-- CA5400
-- CA5401
-- CA5402
-- CA5403
-- IL3000
-- IL3001
 author: mikadumont
 ms.author: midumont
 ---
 # Code quality rules
+
+.NET code analysis provides rules that aim to improve code quality. The rules are organized into areas such as design, globalization, performance, and security. Certain rules are specific to .NET API usage, while others are about generic code quality.
+
+## Index of rules
 
 The following table lists code quality analysis rules by rule identifier.
 
@@ -503,3 +261,20 @@ The following table lists code quality analysis rules by rule identifier.
 | CA5403 | [CA5403: Do not hard-code certificate](../code-quality/ca5403.md) | The `data` or `rawData` parameter of a <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor is hard-coded. |
 | IL3000 | [IL3000 Avoid accessing Assembly file path when publishing as a single file](../code-quality/il3000.md) | Avoid using accessing Assembly file path when publishing as a single file |
 | IL3001 | [IL3001 Avoid accessing Assembly file path when publishing as a single-file](../code-quality/il3001.md) | Avoid accessing Assembly file path when publishing as a single-file |
+
+## Legend
+
+The following table shows the type of information that is provided for each rule in the reference documentation.
+
+|Item|Description|
+|----------|-----------------|
+|Type|The TypeName for the rule.|
+|RuleId|The unique identifier for the rule. RuleId and Category are used for in-source suppression of a warning.|
+|Category|The category of the rule, for example, security.|
+|Breaking change|Whether the fix for a violation of the rule is a breaking change. Breaking change means that an assembly that has a dependency on the target that caused the violation will not recompile with the new fixed version or might fail at run time because of the change. When multiple fixes are available and at least one fix is a breaking change and one fix is not, both 'Breaking' and 'Non-breaking' are specified.|
+|Cause|The specific managed code that causes the rule to generate a warning.|
+|Description|Discusses the issues that are behind the warning.|
+|How to Fix Violations|Explains how to change the source code to satisfy the rule and prevent it from generating a warning.|
+|When to Suppress Warnings|Describes when it is safe to suppress a warning from the rule.|
+|Example Code|Examples that violate the rule and corrected examples that satisfy the rule.|
+|Related Rules|Related rules.|

@@ -32,7 +32,7 @@ Although straightforward, monolithic architectures present many  challenges:
 - Deployment
 - Scaling
 
-As the application grows in size, complexity, and volume, these challenges become more pronounced. Eventually, you enter the `Fear Cycle`. The *fear cycle* is a state in which you have lost control of your monolithic application. 
+As the application grows in size, complexity, and volume, these challenges become more pronounced. Eventually, you enter the `Fear Cycle`. The *fear cycle* is a state in which you have lost control of your monolithic application.
 
 The Microsoft guidance eBook, [Architecting Cloud-Native .NET Apps for Azure](https://docs.microsoft.com/en-us/dotnet/architecture/cloud-native/), provide the obvious giveaways:
 

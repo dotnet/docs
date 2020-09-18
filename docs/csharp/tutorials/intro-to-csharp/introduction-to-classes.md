@@ -206,4 +206,11 @@ Run your program to see the results.
 
 If you got stuck, you can see the source for this tutorial [in our GitHub repo](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/classes-quickstart/).
 
-Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md).
+You can continue with the [object oriented programming](object-oriented-programming.md) tutorial.
+
+You can learn more about these concepts in these articles:
+
+- [If and else statement](../../language-reference/keywords/if-else.md)
+- [While statement](../../language-reference/keywords/while.md)
+- [Do statement](../../language-reference/keywords/do.md)
+- [For statement](../../language-reference/keywords/for.md)

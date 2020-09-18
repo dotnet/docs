@@ -1,8 +1,7 @@
 ---
 title: "Object-Oriented Programming (C#)"
 description: C# provides full support for object-oriented programming including abstraction, encapsulation, inheritance, and polymorphism.
-ms.date: 05/13/2020
-ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
+ms.date: 09/16/2020
 ---
 # Object-Oriented programming (C#)
 
@@ -13,9 +12,21 @@ C# provides full support for object-oriented programming including abstraction, 
 - *Inheritance* describes the ability to create new classes based on an existing class.
 - *Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
 
+In the preceding tutorial, [introduction to classes](introduction-to-classes.md) you saw both *abstraction* and *encapsulation*. The `BankAccount` class provided an abstraction for the concept of a bank account. You could modify its implementation without affecting any of the code that used the `BankAccount` class. Both the `BankAccount` and `Transaction` classes provide encapsulation of the components needed to describe those concepts in code.
+
+In this tutorial, you'll extend that application to make use of *inheritance* and *polymorphism* to add new features.
+
+Outline:
+
+1. Create hierarchy of interest earning account, line of credit, fixed loan.
+1. Define virtual and abstract methods
+1. Implement and run tests
+
+existing text follows to ensure we don't miss concepts.
+
 ## Classes and objects
 
-The terms *class* and *object* describe the *type* of objects, and the *instances* of classes, respectively. So, the act of creating an object is called *instantiation*. Using the blueprint analogy, a class is a blueprint, and an object is a building made from that blueprint.
+The terms *class* describes a *type*. The term*object* describe the *instances* of that type. So, the act of creating an object is called *instantiation*. Using the blueprint analogy, a class is a blueprint, and an object is a building made from that blueprint.
 
 To define a class:
 
@@ -396,6 +407,13 @@ class SampleClass
 
 For more information, see the programming guide article on [Delegates](../../programming-guide/delegates/index.md) and the language reference article on the [delegate](../../language-reference/builtin-types/reference-types.md) keyword.
 
-## See also
+## Next steps
 
-- [C# Programming Guide](../index.md)
+You can learn more about these concepts in these articles:
+
+- [If and else statement](../../language-reference/keywords/if-else.md)
+- [While statement](../../language-reference/keywords/while.md)
+- [Do statement](../../language-reference/keywords/do.md)
+- [For statement](../../language-reference/keywords/for.md)
+
+Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md).

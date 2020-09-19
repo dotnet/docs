@@ -56,6 +56,8 @@ Complete the following steps:
         services.AddDatabaseDeveloperPageExceptionFilter();
     }
     ```
+    
+1. Add the `Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore` NuGet package to the project file.
 
 #### Category
 

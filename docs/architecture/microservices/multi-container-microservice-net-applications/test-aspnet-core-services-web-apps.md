@@ -135,7 +135,7 @@ The reference application (eShopOnContainers) tests were recently restructured a
 
 3. **Application functional/integration tests**, which focus on microservices integration, with test cases that exert several microservices. These tests are located in project **Application.FunctionalTests**.
 
-While unit and integration tests are contained in a test folder in each microservice, application and load tests are contained under the test folder in the solution folder, as shown in Figure 6-25.
+While unit and integration tests are organized in a test folder within the microservice project, application and load tests are managed separately under the root folder, as shown in Figure 6-25.
 
 ![Screenshot of VS pointing out some of the test projects in the solution.](./media/test-aspnet-core-services-web-apps/eshoponcontainers-test-folder-structure.png)
 

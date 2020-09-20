@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
 ---
 # Directories and Files Summary (Visual Basic)
+
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
  Using the `My` feature gives you greater productivity and performance in file I/O operations than using these members. For more information, see <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  

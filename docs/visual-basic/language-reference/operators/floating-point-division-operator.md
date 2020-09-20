@@ -18,6 +18,7 @@ helpviewer_keywords:
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
 ---
 # / Operator (Visual Basic)
+
 Divides two numbers and returns a floating-point result.  
   
 ## Syntax  
@@ -27,6 +28,7 @@ expression1 / expression2
 ```  
   
 ## Parts  
+
  `expression1`  
  Required. Any numeric expression.  
   
@@ -34,14 +36,17 @@ expression1 / expression2
  Required. Any numeric expression.  
   
 ## Supported Types  
+
  All numeric types, including the unsigned and floating-point types and `Decimal`.  
   
 ## Result  
+
  The result is the full quotient of `expression1` divided by `expression2`, including any remainder.  
   
  The [\ Operator (Visual Basic)](integer-division-operator.md) returns the integer quotient, which drops the remainder.  
   
 ## Remarks  
+
  The data type of the result depends on the types of the operands. The following table shows how the data type of the result is determined.  
   
 |Operand data types|Result data type|  
@@ -56,6 +61,7 @@ expression1 / expression2
  If `expression1` or `expression2` evaluates to [Nothing](../nothing.md), it is treated as zero.  
   
 ## Attempted Division by Zero  
+
  If `expression2` evaluates to zero, the `/` operator behaves differently for different operand data types. The following table shows the possible behaviors.  
   
 |Operand data types|Behavior if `expression2` is zero|  
@@ -68,6 +74,7 @@ expression1 / expression2
 > The `/` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
+
  This example uses the `/` operator to perform floating-point division. The result is the quotient of the two operands.  
   
  [!code-vb[VbVbalrOperators#16](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#16)]  

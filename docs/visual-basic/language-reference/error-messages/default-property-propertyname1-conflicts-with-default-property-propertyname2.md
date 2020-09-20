@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 692ccf76-5715-4f11-a972-84cf9de30bc1
 ---
 # Default property '\<propertyname1>' conflicts with default property '\<propertyname2>' in '\<classname>' and so should be declared 'Shadows'
+
 A property is declared with the same name as a property defined in the base class. In this situation, the property in this class should shadow the base class property.  
   
  This message is a warning. `Shadows` is assumed by default. For more information about hiding warnings or treating warnings as errors, see [Configuring Warnings in Visual Basic](/visualstudio/ide/configuring-warnings-in-visual-basic).  

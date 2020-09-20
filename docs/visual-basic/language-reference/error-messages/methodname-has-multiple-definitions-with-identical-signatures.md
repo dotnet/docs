@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 39489621-6617-4e5c-9b24-c2faf8273891
 ---
 # '\<methodname>' has multiple definitions with identical signatures
+
 A `Function` or `Sub` procedure declaration uses the identical procedure name and argument list as a previous declaration. One possible cause is an attempt to overload the original procedure. Overloaded procedures must have different argument lists.  
   
  **Error ID:** BC30269  

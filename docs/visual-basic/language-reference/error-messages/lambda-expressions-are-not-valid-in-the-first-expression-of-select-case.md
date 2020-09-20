@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 74609979-9c03-4864-bbce-f588aa2e0917
 ---
 # Lambda expressions are not valid in the first expression of a 'Select Case' statement
+
 You cannot use a lambda expression for the test expression in a `Select Case` statement. Lambda expression definitions return functions, and the test expression of a `Select Case` statement must be an elementary data type.  
   
  The following code causes this error:  

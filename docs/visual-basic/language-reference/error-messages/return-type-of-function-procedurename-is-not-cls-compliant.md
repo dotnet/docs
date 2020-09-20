@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 33c088c7-48e7-400c-920e-6d8967e1f3fc
 ---
 # Return type of function '\<procedurename>' is not CLS-compliant
+
 A `Function` procedure is marked as `<CLSCompliant(True)>` but returns a type that is marked as `<CLSCompliant(False)>`, is not marked, or does not qualify because it is a noncompliant type.  
   
  For a procedure to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types. This applies to the types of the parameters, the return type, and the types of all its local variables.  

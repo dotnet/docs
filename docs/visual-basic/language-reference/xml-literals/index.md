@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 16b28c40-8768-423f-bd9c-22ff10de2b54
 ---
 # XML Literals (Visual Basic)
+
 The topics in this section document the syntax of XML literals in Visual Basic. The XML literal syntax enables you to incorporate XML directly in your code.  
   
 ## In This Section  

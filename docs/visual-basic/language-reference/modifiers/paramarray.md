@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: a5f18789-92bd-488f-9c7e-cf3719963635
 ---
 # ParamArray (Visual Basic)
+
 Specifies that a procedure parameter takes an optional array of elements of the specified type. `ParamArray` can be used only on the last parameter of a parameter list.  
   
 ## Remarks  
+
  `ParamArray` allows you to pass an arbitrary number of arguments to the procedure. A `ParamArray` parameter is always declared using [ByVal](byval.md).  
   
  You can supply one or more arguments to a `ParamArray` parameter by passing an array of the appropriate data type, a comma-separated list of values, or nothing at all. For details, see "Calling a ParamArray" in [Parameter Arrays](../../programming-guide/language-features/procedures/parameter-arrays.md).  

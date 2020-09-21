@@ -54,7 +54,7 @@ The body of an expression lambda can consist of a method call. However, if you a
 
 ## Statement lambdas
 
-A statement lambda resembles an expression lambda except that the statement(s) is enclosed in braces:
+A statement lambda resembles an expression lambda except that its statements are enclosed in braces:
 
 ```csharp  
 (input-parameters) => { <sequence-of-statements> }

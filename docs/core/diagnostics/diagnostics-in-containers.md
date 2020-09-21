@@ -6,11 +6,11 @@ ms.date: 09/01/2020
 
 # Collect diagnostics in containers
 
-**This article applies to: ✔️** .NET Core 2.1 SDK and later versions
-
 The same diagnostics tools that are useful for diagnosing .NET Core issues in other scenarios also work in Docker containers. However, some of the tools require special steps to work in a container. This article covers how tools for gathering performance traces and collecting dumps can be used in Docker containers.
 
 ## Using .NET Core CLI tools in a container
+
+**These tools apply to: ✔️** .NET Core 3.0 SDK and later versions
 
 The .NET Core global CLI diagnostic tools ([`dotnet-counters`](dotnet-counters.md), [`dotnet-dump`](dotnet-dump.md), [`dotnet-gcdump`](dotnet-gcdump.md), and [`dotnet-trace`](dotnet-trace.md)) are designed to work in a wide variety of environments and should all work directly in Docker containers. Because of this, these tools are the preferred method of collecting diagnostic information for .NET Core scenarios targeting .NET Core 3.0 or above (or 3.1 or above in the case of `dotnet-gcdump`) in containers.
 
@@ -42,6 +42,8 @@ If you would like to use .NET Core global CLI diagnostic tools to diagnose proce
 
 ## Using `PerfCollect` in a container
 
+**This article applies to: ✔️** .NET Core 2.1 and later versions
+
 The [`PerfCollect`](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/linux-performance-tracing.md) script is useful for collecting performance traces and is the recommended tool for collecting traces prior to .NET Core 3.0. If using `PerfCollect` in a container, keep the following requirements in mind:
 
 1. `PerfCollect` requires the [`SYS_ADMIN` capability](https://man7.org/linux/man-pages/man7/capabilities.7.html) (in order to run the `perf` tool), so be sure the container is [started with that capability](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
@@ -58,6 +60,8 @@ If you would like to run `PerfCollect` in one container to profile a .NET Core p
 3. The two containers must [share a process namespace](https://docs.docker.com/engine/reference/run/#pid-settings---pid).
 
 ## Using `createdump` in a container
+
+**This tool applies to: ✔️** .NET Core 2.1 and later versions
 
 An alternative to `dotnet-dump`, [`createdump`](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) can be used for creating core dumps on Linux containing both native and managed information. The `createdump` tool is installed with the .NET Core runtime and can be found next to libcoreclr.so (typically in "/usr/share/dotnet/shared/Microsoft.NETCore.App/[version]"). The tool works the same in a container as it does in non-containerized Linux environments with the single exception that the tool requires the [`SYS_PTRACE` capability](https://man7.org/linux/man-pages/man7/capabilities.7.html), so the Docker container must be [started with that capability](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities).
 

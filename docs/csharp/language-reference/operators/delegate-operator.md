@@ -1,7 +1,7 @@
 ---
 description: "delegate operator - C# reference"
 title: "delegate operator - C# reference"
-ms.date: 07/18/2019
+ms.date: 09/22/2020
 helpviewer_keywords:
   - "delegate [C#]"
   - "anonymous method [C#]"
@@ -24,6 +24,12 @@ When you use the `delegate` operator, you might omit the parameter list. If you 
 [!code-csharp-interactive[no parameter list](snippets/shared/DelegateOperator.cs#WithoutParameterList)]
 
 That's the only functionality of anonymous methods that is not supported by lambda expressions. In all other cases, a lambda expression is a preferred way to write inline code.
+
+Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
+
+[!code-csharp[discard parameters](snippets/shared/DelegateOperator.cs#Discards)]
+
+For backwards compatibility, if only a single parameter is named `_`, `_` is treated as the name of that parameter within an anonymous method.
 
 You also use the `delegate` keyword to declare a [delegate type](../builtin-types/reference-types.md#the-delegate-type).
 

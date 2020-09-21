@@ -62,7 +62,7 @@ A statement lambda resembles an expression lambda except that the statement(s) i
 
 The body of a statement lambda can consist of any number of statements; however, in practice there are typically no more than two or three.
 
-[!code-csharp-interactive[statement lambda](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#StatementLambda)]
+:::code interactive="try-dotnet" source="snippets/lambda-expressions/ExpressionAndStatementLambdas.cs" id="SnippetStatementLambda":::
 
 You cannot use statement lambdas to create expression trees.
 

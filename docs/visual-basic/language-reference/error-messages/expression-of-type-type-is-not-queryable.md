@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6f1f5860-bf97-4885-9ebb-bc87d028095c
 ---
 # Expression of type \<type> is not queryable
+
 Expression of type \<type> is not queryable. Make sure you are not missing an assembly reference and/or namespace import for the LINQ provider.  
   
  Queryable types are defined in the <xref:System.Linq>, <xref:System.Data.Linq>, and <xref:System.Xml.Linq> namespaces. You must import one or more of these namespaces to perform LINQ queries.  

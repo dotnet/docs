@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b2c83de9-a132-449a-870b-e7c409d4d7ee
 ---
 # Overflow (Visual Basic Error)
+
 A literal represents a value outside the limits of the data type to which it is being assigned.  
   
  **Error ID:** BC30036  

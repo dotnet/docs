@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 43c1b509-15f9-4e91-bcad-90bcb5f6f191
 ---
 # Statement is not valid in a namespace
+
 The statement cannot appear at the level of a namespace. The only declarations allowed at namespace level are module, interface, class, delegate, enumeration, and structure declarations.  
   
  **Error ID:** BC30001  

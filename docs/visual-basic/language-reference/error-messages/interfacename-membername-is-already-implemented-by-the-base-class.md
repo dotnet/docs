@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 658c070a-113e-4bd8-b294-12c243191160
 ---
 # '\<interfacename>.\<membername>' is already implemented by the base class '\<baseclassname>'. Re-implementation of \<type> assumed
+
 A property, procedure, or event in a derived class uses an `Implements` clause specifying an interface member that is already implemented in the base class.  
   
  A derived class can reimplement an interface member that is implemented by its base class. This is not the same as overriding the base class implementation. For more information, see [Implements](../statements/implements-clause.md).  

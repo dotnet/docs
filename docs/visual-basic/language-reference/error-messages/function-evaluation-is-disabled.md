@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 561e593a-f50a-4b72-a708-4cab60ec7b28
 ---
 # Function evaluation is disabled because a previous function evaluation timed out
+
 Function evaluation is disabled because a previous function evaluation timed out. To re-enable function evaluation, step again or restart debugging.  
   
  In the Visual Studio debugger, an expression specifies a procedure call, but another evaluation has timed out.  

@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
 ---
 # Get Statement
+
 Declares a `Get` property procedure used to retrieve the value of a property.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ End Get
 |`End Get`|Required. Terminates the definition of the `Get` property procedure.|  
   
 ## Remarks  
+
  Every property must have a `Get` property procedure unless the property is marked `WriteOnly`. The `Get` procedure is used to return the current value of the property.  
   
  Visual Basic automatically calls a property's `Get` procedure when an expression requests the property's value.  
@@ -72,6 +74,7 @@ End Get
      [!code-vb[VbVbalrStatements#29](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#29)]  
   
 ## Example  
+
  The following example uses the `Get` statement to return the value of a property.  
   
  [!code-vb[VbVbalrStatements#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#30)]  

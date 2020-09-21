@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 13918600-6087-40d7-8134-32aa9d3bfda4
 ---
 # '\<functionname>' is not declared (Smart Device/Visual Basic Compiler Error)
+
 <`functionname`> is not declared. File I/O functionality is normally available in the `Microsoft.VisualBasic` namespace, but the targeted version of the .NET Compact Framework does not support it.  
   
  **Error ID:** BC30766  

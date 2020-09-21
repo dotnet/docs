@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 259afdfa-3608-4760-adcb-88ec0da5020d
 ---
 # \<type1>'\<typename>' must implement '\<membername>' for interface '\<interfacename>'
+
 '\<typename>' must implement '\<membername>' for interface '\<interfacename>'. Implementing property must have matching 'ReadOnly'/'WriteOnly' specifiers.  
   
  A class or structure claims to implement an interface but does not implement a procedure, property, or event defined by the interface. Every member of the interface must be implemented.  

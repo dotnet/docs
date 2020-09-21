@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6909aa0b-b4a1-46f5-a18c-ba3e565c1dd8
 ---
 # Variable '\<variablename>' is used before it has been assigned a value
+
 Variable '\<variablename>' is used before it has been assigned a value. A null reference exception could result at run time.  
   
  An application has at least one possible path through its code that reads a variable before any value is assigned to it.  

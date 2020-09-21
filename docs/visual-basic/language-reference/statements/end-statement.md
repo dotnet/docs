@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
 ---
 # End Statement
+
 Terminates execution immediately.  
   
 ## Syntax  
@@ -25,6 +26,7 @@ End
 ```  
   
 ## Remarks  
+
  You can place the `End` statement anywhere in a procedure to force the entire application to stop running. `End` closes any files opened with an `Open` statement and clears all the application's variables. The application closes as soon as there are no other programs holding references to its objects and none of its code is running.  
   
 > [!NOTE]
@@ -42,11 +44,13 @@ End
  When followed by an additional keyword, [End \<keyword> Statement](end-keyword-statement.md) delineates the end of the definition of the appropriate procedure or block. For example, `End Function` terminates the definition of a `Function` procedure.  
   
 ## Example  
+
  The following example uses the `End` statement to terminate code execution if the user requests it.  
   
  [!code-vb[VbVersHelp60Controls#64](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVersHelp60Controls/VB/Form1.vb#64)]  
   
 ## Smart Device Developer Notes  
+
  This statement is not supported.  
   
 ## See also

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 4039f51b-e0ee-4789-a89b-45d06de06b5d
 ---
 # Statement cannot end a block outside of a line 'If' statement
+
 A single-line `If` statement contains several statements separated by colons (:), one of which is an `End` statement for a control block outside the single-line `If`. Single-line `If` statements do not use the `End If` statement.  
   
  **Error ID:** BC32005  

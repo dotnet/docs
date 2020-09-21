@@ -27,7 +27,7 @@ That's the only functionality of anonymous methods that is not supported by lamb
 
 Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of an anonymous method that aren't used by the method:
 
-[!code-csharp[discard parameters](snippets/shared/DelegateOperator.cs#Discards)]
+:::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetDiscards" :::
 
 For backwards compatibility, if only a single parameter is named `_`, `_` is treated as the name of that parameter within an anonymous method.
 

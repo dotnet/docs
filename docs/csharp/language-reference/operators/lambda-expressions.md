@@ -88,7 +88,7 @@ Input parameter types must be all explicit or all implicit; otherwise, a [CS0748
 
 Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
-[!code-csharp[discard parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#Discards)]
+:::code language="csharp" source="snippets/lambda-expressions/ExpressionAndStatementLambdas.cs" id="SnippetDiscards":::
 
 That feature may be useful when you use a lambda expression to [provide an event handler](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 

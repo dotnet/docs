@@ -8,7 +8,7 @@ ms.date: 09/18/2020
 
 # .NET Generic Host
 
-The Worker Service templates create a .NET Generic Host, <xref:Microsoft.Extensions.Hosting.HostBuilder>. The Generic Host can be used with other types of .NET applications, such as Console apps. 
+The Worker Service templates create a .NET Generic Host, <xref:Microsoft.Extensions.Hosting.HostBuilder>. The Generic Host can be used with other types of .NET applications, such as Console apps.
 
 A *host* is an object that encapsulates an app's resources, such as:
 
@@ -19,7 +19,7 @@ A *host* is an object that encapsulates an app's resources, such as:
 
 When a host starts, it calls <xref:Microsoft.Extensions.Hosting.IHostedService.StartAsync%2A?displayProperty=nameWithType> on each implementation of <xref:Microsoft.Extensions.Hosting.IHostedService> registered in the service container's collection of hosted services. In a worker service app, all `IHostedService` implementations that contain <xref:Microsoft.Extensions.Hosting.BackgroundService> instances have their <xref:Microsoft.Extensions.Hosting.BackgroundService.ExecuteAsync%2A?displayProperty=nameWithType> methods called.
 
-The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown.
+The main reason for including all of the app's interdependent resources in one object is lifetime management: control over app startup and graceful shutdown. This is achieved with the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package.
 
 ## Set up a host
 
@@ -101,7 +101,7 @@ The <xref:Microsoft.Extensions.Hosting.IHostLifetime> implementation controls wh
 
 `Microsoft.Extensions.Hosting.Internal.ConsoleLifetime` is the default `IHostLifetime` implementation. `ConsoleLifetime`:
 
-- Listens for <kbd>Ctrl</kbd>+<kbd>C</kbd>, `SIGINT`, or `SIGTERM` and calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A> to start the shutdown process.
+- Listens for <kbd>Ctrl</kbd>+<kbd>C</kbd>, [SIGINT](https://en.wikipedia.org/wiki/Signal_(IPC)#SIGINT), or [SIGTERM](https://en.wikipedia.org/wiki/Signal_(IPC)#SIGTERM) and calls <xref:Microsoft.Extensions.Hosting.IHostApplicationLifetime.StopApplication%2A> to start the shutdown process.
 - Unblocks extensions such as `RunAsync` and `WaitForShutdownAsync`.
 
 ## IHostEnvironment

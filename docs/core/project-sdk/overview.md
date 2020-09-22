@@ -19,7 +19,7 @@ The following SDKs are available:
 | `Microsoft.NET.Sdk.Web` | The .NET [Web SDK](/aspnet/core/razor-pages/web-sdk) | <https://github.com/dotnet/sdk> |
 | `Microsoft.NET.Sdk.Razor` | The .NET [Razor SDK](/aspnet/core/razor-pages/sdk) |
 | `Microsoft.NET.Sdk.Worker` | The .NET Worker Service SDK |
-| `Microsoft.NET.Sdk.WindowsDesktop` | The WinForms and WPF SDK\* |
+| `Microsoft.NET.Sdk.WindowsDesktop` | The WinForms and WPF SDK\* | <https://github.com/dotnet/winforms> and <https://github.com/dotnet/wpf> |
 
 The .NET SDK is the base SDK for .NET. The other SDKs reference the .NET SDK, and projects that are associated with the other SDKs have all the .NET SDK properties available to them. The Web SDK, for example, depends on both the .NET SDK and the Razor SDK.
 

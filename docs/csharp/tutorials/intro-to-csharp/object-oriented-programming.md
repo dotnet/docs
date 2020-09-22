@@ -16,6 +16,34 @@ In the preceding tutorial, [introduction to classes](introduction-to-classes.md)
 
 In this tutorial, you'll extend that application to make use of *inheritance* and *polymorphism* to add new features.
 
+## Create different types of accounts
+
+After building this program, you get requests to add features to it. It works great in the situation where there is only one kind of bank account, but needs change, and related account types are requested:
+
+- An interest earning account that accrues at the end of each month.
+- A line of credit that can have a negative balance, but when there is a balance, there's an interest charge each month.
+- A pre-paid gift card account that starts with a single deposit, and only can be paid down. It can be re-filled once at the start of each month.
+
+All of these different accounts are similar to `BankAccount` class defined in the earlier tutorial. You could copy that code, rename the classes, and make modifications. That would work in the short term, but it would be more work over time. Any changes would need to be replicated across all the affected classes.
+
+Instead, you can create new bank account types that inherit methods and data from the `BankAccount` class created in the preceding tutorial. These new classes can extend the `BankAccount` class with the specific behavior needed for each type:
+
+```csharp
+public class InterestEarningAccount : BankAccount
+{
+}
+
+public class LineOfCreditAccount : BankAccount
+{
+}
+
+public class GiftCardAccount : BankAccount
+{
+}
+```
+
+Each of these classes will add new behavior 
+
 Outline:
 
 1. Create hierarchy of interest earning account, line of credit, fixed loan.

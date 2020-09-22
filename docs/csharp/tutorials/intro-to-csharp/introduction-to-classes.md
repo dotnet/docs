@@ -115,11 +115,11 @@ Your bank account class needs to accept deposits and withdrawals to work correct
 
 Let's start by creating a new type to represent a transaction. This is a simple type that doesn't have any responsibilities. It needs a few properties. Create a new file named *Transaction.cs*. Add the following code to it:
 
-[!code-csharp[Transaction](./snippets/introduction-to-classes/Transaction.cs)]
+:::code language="csharp" source="./snippets/introduction-to-classes/Transaction.cs":::
 
 Now, let's add a <xref:System.Collections.Generic.List%601> of `Transaction` objects to the `BankAccount` class. Add the following declaration after the constructor in your *BankAccount.cs* file:
 
-[!code-csharp[TransactionDecl](./snippets/introduction-to-classes/BankAccount.cs#TransactionDeclaration)]
+:::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="TransactionDeclaration":::
 
 The <xref:System.Collections.Generic.List%601> class requires you to import a different namespace. Add the following at the beginning of *BankAccount.cs*:
 
@@ -129,7 +129,7 @@ using System.Collections.Generic;
 
 Now, let's change how the `Balance` is reported.  It can be found by summing the values of all transactions. Modify the declaration of `Balance` in the `BankAccount` class to the following:
 
-[!code-csharp[BalanceComputation](./snippets/introduction-to-classes/BankAccount.cs#BalanceComputation)]
+:::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="BalanceComputation":::
 
 This example shows an important aspect of ***properties***. You're now computing the balance when another programmer asks for the value. Your computation enumerates all transactions, and provides the sum as the current balance.
 
@@ -137,13 +137,13 @@ Next, implement the `MakeDeposit` and `MakeWithdrawal` methods. These methods wi
 
 This introduces the concept of ***exceptions***. The standard way of indicating that a method cannot complete its work successfully is to throw an exception. The type of exception and the message associated with it describe the error. Here, the `MakeDeposit` method throws an exception if the amount of the deposit is negative. The `MakeWithdrawal` method throws an exception if the withdrawal amount is negative, or if applying the withdrawal results in a negative balance. Add the following code after the declaration of the `allTransactions` list:
 
-[!code-csharp[DepositAndWithdrawal](./snippets/introduction-to-classes/BankAccount.cs#DepositAndWithdrawal)]
+:::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="DepositAndWithdrawal":::
 
 The [`throw`](../../language-reference/keywords/throw.md) statement **throws** an exception. Execution of the current block ends, and control transfers to the first matching `catch` block found in the call stack. You'll add a `catch` block to test this code a little later on.
 
 The constructor should get one change so that it adds an initial transaction, rather than updating the balance directly. Since you already wrote the `MakeDeposit` method, call it from your constructor. The finished constructor should look like this:
 
-[!code-csharp[Constructor](./snippets/introduction-to-classes/BankAccount.cs#Constructor)]
+:::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="Constructor":::
 
 <xref:System.DateTime.Now?displayProperty=nameWithType> is a property that returns the current date and time. Test this by adding a few deposits and withdrawals in your `Main` method, following the code that creates a new `BankAccount`:
 
@@ -190,7 +190,7 @@ Save the file and type `dotnet run` to try it.
 
 To finish this tutorial, you can write the `GetAccountHistory` method that creates a `string` for the transaction history. Add this method to the `BankAccount` type:
 
-[!code-csharp[History](./snippets/introduction-to-classes/BankAccount.cs#History)]
+:::code language="csharp" source="./snippets/introduction-to-classes/BankAccount.cs" id="History":::
 
 This uses the <xref:System.Text.StringBuilder> class to format a string that contains one line for each transaction. You've seen the string formatting code earlier in these tutorials. One new character is `\t`. That inserts a tab to format the output.
 

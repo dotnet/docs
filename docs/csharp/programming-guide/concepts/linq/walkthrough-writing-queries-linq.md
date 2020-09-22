@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 2962a610-419a-4276-9ec8-4b7f2af0c081
 ---
 # Walkthrough: Writing Queries in C# (LINQ)
+
 This walkthrough demonstrates the C# language features that are used to write LINQ query expressions.  
   
 ## Create a C# Project  
@@ -34,6 +35,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
 5. Notice that your project has a reference to System.Core.dll and a `using` directive for the <xref:System.Linq?displayProperty=nameWithType> namespace.  
   
 ## Create an in-Memory Data Source  
+
  The data source for the queries is a simple list of `Student` objects. Each `Student` record has a first name, last name, and an array of integers that represents their test scores in the class. Copy this code into your project. Note the following characteristics:  
   
 - The `Student` class consists of auto-implemented properties.  
@@ -167,6 +169,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
      [!code-csharp[csLINQGettingStarted#21](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#21)]  
   
 ## Next Steps  
+
  After you are familiar with the basic aspects of working with queries in C#, you are ready to read the documentation and samples for the specific type of LINQ provider you are interested in:  
   
  [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
 ---
 # How to compare the contents of two folders (LINQ) (C#)
+
 This example demonstrates three ways to compare two file listings:  
   
 - By querying for a Boolean value that specifies whether the two file lists are identical.  
@@ -121,6 +122,7 @@ namespace QueryCompareTwoDirs
 ```  
   
 ## Compiling the Code  
+
  Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.  
   
 ## See also

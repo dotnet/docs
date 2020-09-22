@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 4e62d82c-61b7-4f18-b9a1-86723746d7d2
 ---
 # How to reorder the fields of a delimited file (LINQ) (C#)
+
 A comma-separated value (CSV) file is a text file that is often used to store spreadsheet data or other tabular data that is represented by rows and columns. By using the <xref:System.String.Split%2A> method to separate the fields, it is very easy to query and manipulate CSV files by using LINQ. In fact, the same technique can be used to reorder the parts of any structured line of text; it is not limited to CSV files.  
   
  In the following example, assume that the three columns represent students' "last name," "first name", and "ID." The fields are in alphabetical order based on the students' last names. The query produces a new sequence in which the ID column appears first, followed by a second column that combines the student's first name and last name. The lines are reordered according to the ID field. The results are saved into a new file and the original data is not modified.  
@@ -71,6 +72,7 @@ class CSVFiles
 ```  
   
 ## Compiling the Code  
+
 Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
   
 ## See also

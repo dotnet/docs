@@ -41,6 +41,7 @@ You can also define a static constructor with an expression body definition, as 
 For more information and examples, see [Static Constructors](./static-constructors.md).  
   
 ## In This Section  
+
  [Using Constructors](./using-constructors.md)  
   
  [Instance Constructors](./instance-constructors.md)  

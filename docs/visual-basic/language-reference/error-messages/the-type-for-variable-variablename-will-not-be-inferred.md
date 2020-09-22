@@ -58,6 +58,7 @@ By default, this message is a warning. For information about how to hide warning
   ```
 
 ## Example
+
  The following code shows the earlier example with the first correction in place.
 
 ```vb

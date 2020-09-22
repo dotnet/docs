@@ -15,7 +15,7 @@ In addition to querying a single table, you can also perform cross-table queries
   
  The <xref:System.Linq.Enumerable.GroupJoin%2A> operators have no direct equivalent in relational database terms; they implement a superset of inner joins and left outer joins. A left outer join is a join that returns each element of the first (left) collection, even if it has no correlated elements in the second collection.  
   
- For more information about joins, see [Join Operations](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb397908(v=vs.120)).  
+ For more information about joins, see [Join Operations](/previous-versions/visualstudio/visual-studio-2013/bb397908(v=vs.120)).  
   
 ## Example  
  The following example performs a traditional join of the `SalesOrderHeader` and `SalesOrderDetail` tables from the AdventureWorks sample database to obtain online orders from the month of August.  
@@ -28,5 +28,5 @@ In addition to querying a single table, you can also perform cross-table queries
 - [Querying DataSets](querying-datasets-linq-to-dataset.md)
 - [Single-Table Queries](single-table-queries-linq-to-dataset.md)
 - [Querying Typed DataSets](querying-typed-datasets.md)
-- [Join Operations](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/bb397908(v=vs.120))
+- [Join Operations](/previous-versions/visualstudio/visual-studio-2013/bb397908(v=vs.120))
 - [LINQ to DataSet Examples](linq-to-dataset-examples.md)

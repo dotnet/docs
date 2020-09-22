@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 15c5d8eb-3a8c-4141-8f41-33151afabf97
 ---
 # Operator declaration must be one of:  +,-,*,\,/,^, &amp;, Like, Mod, And, Or, Xor, Not, \<\<, >>...
+
 You can declare only an operator that is eligible for overloading. The following table lists the operators you can declare.  
   
 |Type|Operators|  

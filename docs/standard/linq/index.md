@@ -106,7 +106,7 @@ End Function
 
 Writing code to manually traverse the XML document to do this task would be far more challenging.
 
-Interacting with XML isn't the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn't a library that does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
+Interacting with XML isn't the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn't a library that does what you need, you can also [write your own LINQ Provider](/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
 ## Reasons to use the query syntax
 
@@ -154,7 +154,7 @@ The answer to this question is **no** if...
 
 ## Essential LINQ
 
-For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/).
+For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](/samples/dotnet/try-samples/101-linq-samples/).
 
 The following examples are a quick demonstration of some of the essential pieces of LINQ. This is in no way comprehensive, as LINQ provides more functionality than what is showcased here.
 
@@ -389,6 +389,6 @@ Parallelizable CPU-bound jobs that can be easily expressed via LINQ (in other wo
 
 ## More resources
 
-* [101 LINQ Samples](https://docs.microsoft.com/samples/dotnet/try-samples/101-linq-samples/)
+* [101 LINQ Samples](/samples/dotnet/try-samples/101-linq-samples/)
 * [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/Visual Basic
 * [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented

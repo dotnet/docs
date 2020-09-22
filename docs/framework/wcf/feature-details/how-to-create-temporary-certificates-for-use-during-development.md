@@ -16,7 +16,7 @@ When developing a secure service or client using Windows Communication Foundatio
 >
 > By default, the [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate) cmdlet creates certificates that are self-signed and these certificates are insecure. Placing the self-signed certificates in the Trusted Root Certification Authorities store enables you to create a development environment that more closely simulates your deployment environment.
 
- For more information about creating and using certificates, see [Working with Certificates](working-with-certificates.md). For more information about using a certificate as a credential, see [Securing Services and Clients](securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](https://docs.microsoft.com/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85)).
+ For more information about creating and using certificates, see [Working with Certificates](working-with-certificates.md). For more information about using a certificate as a credential, see [Securing Services and Clients](securing-services-and-clients.md). For a tutorial about using Microsoft Authenticode technology, see [Authenticode Overviews and Tutorials](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms537360(v=vs.85)).
 
 ## To create a self-signed root authority certificate and export the private key
 

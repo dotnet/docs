@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 23996dca-250f-4320-8211-1560e90172df
 ---
 # Unable to write output to memory
+
 There was a problem writing output to memory.  
   
  **Error ID:** BC31020  

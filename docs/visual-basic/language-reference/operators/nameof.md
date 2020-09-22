@@ -2,6 +2,9 @@
 title: "NameOf operator"
 description: "Learn how to use the NameOf operator in Visual Basic"
 ms.date: 10/27/2019
+f1_keywords:
+  - "NameOf"
+  - "vb.NameOf"
 helpviewer_keywords:
   - "NameOf operator [Visual Basic]"
 ---

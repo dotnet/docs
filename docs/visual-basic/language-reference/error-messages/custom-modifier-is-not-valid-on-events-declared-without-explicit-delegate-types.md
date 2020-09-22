@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6911f0d1-641a-473b-906d-8ee5681194be
 ---
 # 'Custom' modifier is not valid on events declared without explicit delegate types
+
 Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause following the event name that explicitly specifies the delegate type for the event.  
   
  Non-custom events can be defined either with an `As` clause and an explicit delegate type, or with a parameter list immediately following the event name.  
@@ -30,6 +31,7 @@ Unlike a non-custom event, a `Custom Event` declaration requires an `As` clause 
      [!code-vb[VbVbalrEventError#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#19)]  
   
 ## Example  
+
  This example declares a `Custom Event` and specifies the required `As` clause with a delegate type.  
   
  [!code-vb[VbVbalrEventError#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEventError/VB/VbVbalrEventError.vb#2)]  

@@ -6,9 +6,11 @@ helpviewer_keywords:
 ms.assetid: 1cbd7703-8d3b-48fd-831e-14c9cc85675a
 ---
 # Statements (Visual Basic)
+
 The topics in this section contain tables of the Visual Basic declaration and executable statements, and of important lists that apply to many statements.  
   
 ## In This Section  
+
  [A-E Statements](a-e-statements.md)  
   
  [F-P Statements](f-p-statements.md)  
@@ -26,5 +28,6 @@ The topics in this section contain tables of the Visual Basic declaration and ex
  [Type List](type-list.md)  
   
 ## Related Sections  
+
  [Visual Basic Language Reference](../index.md)  
   

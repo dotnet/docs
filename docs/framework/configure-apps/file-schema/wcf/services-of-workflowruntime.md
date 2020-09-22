@@ -11,4 +11,4 @@ Represents a collection of services that will be added to the <xref:System.Workf
 - <xref:System.Workflow.Runtime.WorkflowRuntime>
 - <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>
 - <xref:System.Workflow.Runtime.WorkflowRuntime>
-- [Workflow Configuration Files](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))
+- [Workflow Configuration Files](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90))

@@ -55,8 +55,10 @@ items:
     href: ../standard/components.md
   - name: .NET class libraries
     href: ../standard/class-libraries.md
-  - name: .NET Core overview
+  - name: Introduction to .NET Core
     href: ../core/introduction.md
+  - name: .NET Core overview
+    href: ../core/about.md
   - name: .NET Standard overview
     href: ../standard/net-standard.md
   - name: .NET glossary
@@ -324,7 +326,7 @@ items:
     - name: Managed debuggers
       href: ../core/diagnostics/managed-debuggers.md
     - name: Debug Linux dumps
-      href: ../core/diagnostics/debug-linux-dumps.md        
+      href: ../core/diagnostics/debug-linux-dumps.md
     - name: EventCounters
       href: ../core/diagnostics/event-counters.md
     - name: Logging and tracing
@@ -342,7 +344,7 @@ items:
       - name: dotnet-symbol
         href: ../core/diagnostics/dotnet-symbol.md
       - name: dotnet-sos
-        href: ../core/diagnostics/dotnet-sos.md                    
+        href: ../core/diagnostics/dotnet-sos.md
     - name: .NET Core diagnostics tutorials
       items:
       - name: Get perf metrics with EventCounters
@@ -432,8 +434,12 @@ items:
     href: ../core/deploying/runtime-patch-selection.md
   - name: Single file deployment and executable
     href: ../core/deploying/single-file.md
-  - name: Trim self-contained deployments and executables
-    href: ../core/deploying/trim-self-contained.md
+  - name: Trim self-contained deployments
+    items:
+    - name: Overview and how-to
+      href: ../core/deploying/trim-self-contained.md
+    - name: Options
+      href: ../core/deploying/trimming-options.md
   - name: Runtime package store
     href: ../core/deploying/runtime-store.md
   - name: Runtime Identifier (RID) catalog
@@ -481,7 +487,7 @@ items:
     - name: Generic interfaces
       href: ../standard/generics/interfaces.md
     - name: Covariance and contravariance
-      href: ../standard/generics/covariance-and-contravariance.md  
+      href: ../standard/generics/covariance-and-contravariance.md
   - name: Collections and data structures
     items:
     - name: Overview
@@ -500,7 +506,7 @@ items:
     - name: Hashtable and Dictionary types
       href: ../standard/collections/hashtable-and-dictionary-collection-types.md
     - name: Thread-safe collections
-      href: ../standard/collections/thread-safe/  
+      href: ../standard/collections/thread-safe/
   - name: Delegates and lambdas
     href: ../standard/delegates-lambdas.md
   - name: Events
@@ -522,7 +528,7 @@ items:
       - name: "How to: Implement a provider"
         href: ../standard/events/how-to-implement-a-provider.md
       - name: "How to: Implement an observer"
-        href: ../standard/events/how-to-implement-an-observer.md  
+        href: ../standard/events/how-to-implement-an-observer.md
   - name: Exceptions
     items:
     - name: Overview
@@ -549,7 +555,7 @@ items:
     - name: Handle COM interop exceptions
       href: ../standard/exceptions/handling-com-interop-exceptions.md
     - name: Best practices
-      href: ../standard/exceptions/best-practices-for-exceptions.md  
+      href: ../standard/exceptions/best-practices-for-exceptions.md
   - name: Numeric types
     href: ../standard/numerics.md
   - name: Dates, times, and time zones
@@ -664,7 +670,7 @@ items:
           href: ../standard/base-types/regular-expression-example-scanning-for-hrefs.md
         - name: Change date formats
           href: ../standard/base-types/regular-expression-example-changing-date-formats.md
-        - name: Extract a protocal and port number from a URL
+        - name: Extract a protocol and port number from a URL
           href: ../standard/base-types/how-to-extract-a-protocol-and-port-number-from-a-url.md
         - name: Strip invalid characters from a string
           href: ../standard/base-types/how-to-strip-invalid-characters-from-a-string.md
@@ -690,18 +696,31 @@ items:
     - name: Write custom attributes
       href: ../standard/attributes/writing-custom-attributes.md
     - name: Retrieve information stored in attributes
-      href: ../standard/attributes/retrieving-information-stored-in-attributes.md  
+      href: ../standard/attributes/retrieving-information-stored-in-attributes.md
   - name: Choose between anonymous and tuple types
     href: ../standard/base-types/choosing-between-anonymous-and-tuple.md
-- name: Microsoft Extensions 
+- name: Microsoft Extensions
   items:
   - name: Configuration
-    href: /aspnet/core/fundamentals/configuration/
+    items:
+    - name: Overview
+      href: ../core/extensions/configuration.md
+      displayName: configuration,config,configuration sources,config sources
+    - name: Configuration providers
+      href: ../core/extensions/configuration-providers.md
+      displayName: configuration providers,config providers
+    - name: Implement a custom configuration provider
+      href: ../core/extensions/custom-configuration-provider.md
+      displayName: custom configuration,custom config,custom configuration provider,custom config provider
   - name: Dependency injection
-    href: /aspnet/core/fundamentals/dependency-injection/
+    href: /aspnet/core/fundamentals/dependency-injection
+  - name: Generic host
+    href: ../core/extensions/generic-host.md
   - name: Logging
-    href: /aspnet/core/fundamentals/logging/
-- name: Data access 
+    href: /aspnet/core/fundamentals/logging
+  - name: Options pattern
+    href: /aspnet/core/fundamentals/configuration/options
+- name: Data access
   items:
   - name: LINQ
     href: ../standard/linq/
@@ -1028,7 +1047,7 @@ items:
   - name: Work with buffers
     href: ../standard/io/buffers.md
   - name: Memory-mapped files
-    href: ../standard/io/memory-mapped-files.md  
+    href: ../standard/io/memory-mapped-files.md
 - name: Unit testing
   displayName: xUnit,NUnit,MSTest,unit testing,testing
   items:

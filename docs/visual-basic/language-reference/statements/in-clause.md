@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 2f003a85-8fb6-4280-822b-6ac12839b915
 ---
 # In Clause (Visual Basic)
+
 Specifies the group that the loop variable is to traverse in a `For Each` loop, or specifies the collection to query in a `From`, `Join`, or `Group Join` clause.  
   
 ## Remarks  
+
  The `In` keyword can be used in the following contexts:  
   
  [For Each...Next Statement](for-each-next-statement.md)  

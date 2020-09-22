@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b17821b7-fa14-4397-a211-6e2a14079f09
 ---
 # '\<expression>' cannot be used as a type constraint
+
 A constraint list includes an expression that does not represent a valid constraint on a type parameter.  
   
  A constraint list imposes requirements on the type argument passed to the type parameter. You can specify the following requirements in any combination:  

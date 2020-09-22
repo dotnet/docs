@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
 ---
 # Partial (Visual Basic)
+
 Indicates that a type declaration is a partial definition of the type.  
   
  You can divide the definition of a type among several declarations by using the `Partial` keyword. You can use as many partial declarations as you want, in as many different source files as you want. However, all the declarations must be in the same assembly and the same namespace.  
@@ -56,6 +57,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
 |`End Class` or `End Structure`|Ends this partial `Class` or `Structure` definition.|  
   
 ## Remarks  
+
  Visual Basic uses partial-class definitions to separate generated code from user-authored code in separate source files. For example, the **Windows Form Designer** defines partial classes for controls such as <xref:System.Windows.Forms.Form>. You should not modify the generated code in these controls.  
   
  All the rules for class, structure, interface, and module creation, such as those for modifier usage and inheritance, apply when creating a partial type.  
@@ -81,6 +83,7 @@ Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]
  [Structure Statement](../statements/structure-statement.md)  
   
 ## Example  
+
  The following example splits the definition of class `sampleClass` into two declarations, each of which defines a different `Sub` procedure.  
   
  [!code-vb[VbVbalrKeywords#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#3)]  

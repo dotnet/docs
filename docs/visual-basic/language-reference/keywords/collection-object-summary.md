@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: c4586369-d817-4453-9cb0-1a272fc66737
 ---
 # Collection Object Summary (Visual Basic)
+
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  

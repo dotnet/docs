@@ -24,7 +24,7 @@ This section includes information on unmanaged APIs that can be used by managed-
  [Constants](constants-unmanaged-api-reference.md)  
  Describes the constants that are defined in CorSym.idl.  
   
- [Custom Interface Attributes](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms231946(v=vs.100))  
+ [Custom Interface Attributes](/previous-versions/dotnet/netframework-4.0/ms231946(v=vs.100))  
  Describes component object model (COM) custom interface attributes.  
   
  [Debugging](./debugging/index.md)  
@@ -55,4 +55,4 @@ This section includes information on unmanaged APIs that can be used by managed-
  Describes the two helper functions and interface used by the Type Library Exporter (Tlbexp.exe) during the assembly-to-type-library conversion process.  
   
 ## Related Sections  
- [Development Guide](../development-guide.md)  
+ [Development Guide](../development-guide.md)

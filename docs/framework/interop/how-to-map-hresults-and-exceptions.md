@@ -137,5 +137,5 @@ CMyClass::MethodThatThrows
   
 ## See also
 
-- [Advanced COM Interoperability](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))
+- [Advanced COM Interoperability](/previous-versions/dotnet/netframework-4.0/bd9cdfyx(v=vs.100))
 - [Exceptions](../../standard/exceptions/index.md)

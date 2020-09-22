@@ -168,6 +168,10 @@ sudo apt-get upgrade
 
 This section provides information on common errors you may get while using APT to install .NET Core.
 
+### Unable to find package
+
+[!INCLUDE [linux-install-package-manager-x64-vs-arm](includes/linux-install-package-manager-x64-vs-arm.md)]
+
 ### Unable to locate \\ Some packages could not be installed
 
 [!INCLUDE [package-manager-failed-to-find-deb](includes/package-manager-failed-to-find-deb.md)]

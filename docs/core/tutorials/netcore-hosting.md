@@ -142,7 +142,7 @@ In this sample, the host can now call `managedDelegate` to run the `ManagedWorke
 
 Alternatively, the `coreclr_execute_assembly` function can be used to launch a managed executable. This API takes an assembly path and array of arguments as input parameters. It loads the assembly at that path and invokes its main method.
 
-```C++
+```c++
 int hr = executeAssembly(
         hostHandle,
         domainId,

@@ -54,6 +54,6 @@ OData defines a set of extensions to the Atom Publishing Protocol (AtomPub). It 
 - [WCF Data Services 4.5](index.md)
 - [Getting Started](getting-started-with-wcf-data-services.md)
 - [Defining WCF Data Services](defining-wcf-data-services.md)
-- [Accessing Data Service Resources (WCF Data Services)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd728283(v=vs.100))
+- [Accessing Data Service Resources (WCF Data Services)](/previous-versions/dotnet/netframework-4.0/dd728283(v=vs.100))
 - [WCF Data Services Client Library](wcf-data-services-client-library.md)
 - [Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)

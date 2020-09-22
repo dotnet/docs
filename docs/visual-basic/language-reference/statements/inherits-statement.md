@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 9e6fe042-9af3-4341-8093-fc3537770cf2
 ---
 # Inherits Statement
+
 Causes the current class or interface to inherit the attributes, variables, properties, procedures, and events from another class or set of interfaces.  
   
 ## Syntax  
@@ -25,6 +26,7 @@ Inherits basetypenames
 |`basetypenames`|Required. The name of the class from which this class derives.<br /><br /> -or-<br /><br /> The names of the interfaces from which this interface derives. Use commas to separate multiple names.|  
   
 ## Remarks  
+
  If used, the `Inherits` statement must be the first non-blank, non-comment line in a class or interface definition. It should immediately follow the `Class` or `Interface` statement.  
   
  You can use `Inherits` only in a class or interface. This means the declaration context for an inheritance cannot be a source file, namespace, structure, module, procedure, or block.  
@@ -46,11 +48,13 @@ Inherits basetypenames
  An example of interface inheritance in the .NET Framework is the <xref:System.Collections.ICollection> interface, which inherits from the <xref:System.Collections.IEnumerable> interface. This causes <xref:System.Collections.ICollection> to inherit the definition of the enumerator required to traverse a collection.  
   
 ## Example  
+
  The following example uses the `Inherits` statement to show how a class named `thisClass` can inherit all the members of a base class named `anotherClass`.  
   
  [!code-vb[VbVbalrStatements#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#37)]  
   
 ## Example  
+
  The following example shows inheritance of multiple interfaces.  
   
  [!code-vb[VbVbalrStatements#38](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#38)]  

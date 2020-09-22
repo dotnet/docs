@@ -159,7 +159,7 @@ With eventing, we move from queuing technology to *topics*. A [topic](https://do
 
 **Figure 4-16**. Topic architecture
 
-In the previous figure, publishers send messages to the topic. At the end, subscribers receive messages from subscriptions. In the middle, the topic forwards messages to subscriptions based on a set of *rules*, shown in dark blue boxes. Rules act as a filter that forward specific messages to a subscription. Here, a "CreateOrder" event would be sent to Subscription \#1 and Subscription \#3, but not to Subscription \#2. An "OrderCompleted" event would be sent to Subscription \#2 and Subscription \#3.
+In the previous figure, publishers send messages to the topic. At the end, subscribers receive messages from subscriptions. In the middle, the topic forwards messages to subscriptions based on a set of rules, shown in dark blue boxes. Rules act as a filter that forward specific messages to a subscription. Here, a "GetPrice" event would be sent to the price and logging subscriptions as the logging subscription has chosen to receive all messages.  A "GetInformation" event would be sent to the information and logging subscriptions.
 
 The Azure cloud supports two different topic services: Azure Service Bus Topics and Azure EventGrid.
 

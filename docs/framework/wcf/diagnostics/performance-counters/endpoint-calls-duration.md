@@ -8,4 +8,4 @@ The average duration of calls to this endpoint.  The average duration is calcula
   
 ## See also
 
-- [PERF_COUNTER_TYPE](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10))
+- [PERF_COUNTER_TYPE](/previous-versions/windows/it-pro/windows-server-2003/cc740048(v=ws.10))

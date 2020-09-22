@@ -6,8 +6,6 @@ namespace Samples
 {
     public class CustomDisposable : IDisposable, IAsyncDisposable
     {
-        bool _disposed;
-
         IDisposable _disposableResource = new MemoryStream();
         IAsyncDisposable _asyncDisposableResource = new MemoryStream();
 
@@ -27,44 +25,34 @@ namespace Samples
 
         protected virtual void Dispose(bool disposing)
         {
-            if (!_disposed)
+            if (disposing)
             {
-                _disposed = true;
-
-                if (disposing)
-                {
-                    _disposableResource?.Dispose();
-                    (_asyncDisposableResource as IDisposable)?.Dispose();
-                }
-
-                _disposableResource = null;
-                _asyncDisposableResource = null;
+                _disposableResource?.Dispose();
+                (_asyncDisposableResource as IDisposable)?.Dispose();
             }
+
+            _disposableResource = null;
+            _asyncDisposableResource = null;
         }
 
         protected virtual async ValueTask DisposeAsyncCore()
         {
-            if (!_disposed)
+            if (_asyncDisposableResource is not null)
             {
-                _disposed = true;
-
-                if (_asyncDisposableResource is not null)
-                {
-                    await _asyncDisposableResource.DisposeAsync().ConfigureAwait(false);
-                }
-
-                if (_disposableResource is IAsyncDisposable disposable)
-                {
-                    await disposable.DisposeAsync().ConfigureAwait(false);
-                }
-                else
-                {
-                    _disposableResource.Dispose();
-                }
-
-                _asyncDisposableResource = null;
-                _disposableResource = null;
+                await _asyncDisposableResource.DisposeAsync().ConfigureAwait(false);
             }
+
+            if (_disposableResource is IAsyncDisposable disposable)
+            {
+                await disposable.DisposeAsync().ConfigureAwait(false);
+            }
+            else
+            {
+                _disposableResource.Dispose();
+            }
+
+            _asyncDisposableResource = null;
+            _disposableResource = null;
         }
     }
 }

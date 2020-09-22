@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6f75060c-2db4-4a79-b5d1-5780c09a74cd
 ---
 # 'Optional' expected
+
 An optional argument in a procedure declaration is followed by a required argument. Every argument following an optional argument must also be optional.  
   
  **Error ID:** BC30202  

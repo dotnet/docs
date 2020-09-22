@@ -393,7 +393,7 @@ namespace Microsoft.Samples.Entity
             //</snippetReturnNestedCollectionWithEntityCommand>
         }
 
-        static public void ReturnEntityTypeWithObectQuery()
+        static public void ReturnEntityTypeWithObjectQuery()
         {
             //<snippetQueryEntityTypeCollection>
             using (AdventureWorksEntities context =

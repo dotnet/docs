@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6540c1d0-bb19-4051-a579-2e4f9094585e
 ---
 # Friend assembly reference \<reference> is invalid
+
 Friend assembly reference \<reference> is invalid. Strong-name signed assemblies must specify a public key in their InternalsVisibleTo declarations.  
   
  The assembly name passed to the <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> attribute constructor identifies a strong-named assembly, but it does not include a `PublicKey` attribute.  

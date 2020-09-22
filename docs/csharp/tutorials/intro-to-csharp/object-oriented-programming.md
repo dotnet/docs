@@ -42,7 +42,9 @@ public class GiftCardAccount : BankAccount
 }
 ```
 
-Each of these classes will add new behavior 
+Each of these classes *inherit* the shared behavior from their shared *base class*, the `BankAccount` class. You need to write the implementations for new and different functionality in each of the *derived classes*.
+
+
 
 Outline:
 

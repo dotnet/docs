@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
 ---
 # Interfaces (Visual Basic)
+
 *Interfaces* define the properties, methods, and events that classes can implement. Interfaces allow you to define features as small groups of closely related properties, methods, and events; this reduces compatibility problems because you can develop enhanced implementations for your interfaces without jeopardizing existing code. You can add new features at any time by developing additional interfaces and implementations.  
   
  There are several other reasons why you might want to use interfaces instead of class inheritance:  
@@ -22,6 +23,7 @@ ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
 - Interfaces are useful when you cannot use class inheritance. For example, structures cannot inherit from classes, but they can implement interfaces.  
   
 ## Declaring Interfaces  
+
  Interface definitions are enclosed within the `Interface` and `End Interface` statements. Following the `Interface` statement, you can add an optional `Inherits` statement that lists one or more inherited interfaces. The `Inherits` statements must precede all other statements in the declaration except comments. The remaining statements in the interface definition should be `Event`, `Sub`, `Function`, `Property`, `Interface`, `Class`, `Structure`, and `Enum` statements. Interfaces cannot contain any implementation code or statements associated with implementation code, such as `End Sub` or `End Property`.  
   
  In a namespace, interface statements are `Friend` by default, but they can also be explicitly declared as `Public` or `Friend`. Interfaces defined within classes, modules, interfaces, and structures are `Public` by default, but they can also be explicitly declared as `Public`, `Friend`, `Protected`, or `Private`.  
@@ -34,12 +36,15 @@ ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
  [!code-vb[VbVbalrOOP#17](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#17)]  
   
 ## Implementing Interfaces  
+
  The Visual Basic reserved word `Implements` is used in two ways. The `Implements` statement signifies that a class or structure implements an interface. The `Implements` keyword signifies that a class member or structure member implements a specific interface member.  
   
 ### Implements Statement  
+
  If a class or structure implements one or more interfaces, it must include the `Implements` statement immediately after the `Class` or `Structure` statement. The `Implements` statement requires a comma-separated list of interfaces to be implemented by a class. The class or structure must implement all interface members using the `Implements` keyword.  
   
 ### Implements Keyword  
+
  The `Implements` keyword requires a comma-separated list of interface members to be implemented. Generally, only a single interface member is specified, but you can specify multiple members. The specification of an interface member consists of the interface name, which must be specified in an implements statement within the class; a period; and the name of the member function, property, or event to be implemented. The name of a member that implements an interface member can use any legal identifier, and it is not limited to the `InterfaceName_MethodName` convention used in earlier versions of Visual Basic.  
   
  For example, the following code shows how to declare a subroutine named `Sub1` that implements a method of an interface:  
@@ -57,6 +62,7 @@ ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
  You can use a private member to implement an interface member. When a private member implements a member of an interface, that member becomes available by way of the interface even though it is not available directly on object variables for the class.  
   
 ### Interface Implementation Examples  
+
  Classes that implement an interface must implement all its properties, methods, and events.  
   
  The following example defines two interfaces. The second interface, `Interface2`, inherits `Interface1` and defines an additional property and method.  

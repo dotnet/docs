@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 9a1acf9b-7e2c-40cb-bba4-656ee2bc2ed0
 ---
 # Validating Strings in Visual Basic
+
 This section discusses how to validate strings in Visual Basic.  
   
 ## In This Section  
+
  [How to: Validate File Names and Paths in Visual Basic](how-to-validate-file-names-and-paths.md)  
  How to determine whether a string represents a file name or path.  
   

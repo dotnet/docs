@@ -32,6 +32,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [BinaryFormatter serialization methods are obsolete and prohibited in ASP.NET apps](#binaryformatter-serialization-methods-are-obsolete-and-prohibited-in-aspnet-apps)
 - [Blazor: Insignificant whitespace trimmed from components at compile time](#blazor-insignificant-whitespace-trimmed-from-components-at-compile-time)
 - [Blazor: JSObjectReference and JSInProcessObjectReference types changed to internal](#blazor-jsobjectreference-and-jsinprocessobjectreference-types-changed-to-internal)
+- [Blazor: ProtectedBrowserStorage feature moved to shared framework](#blazor-protectedbrowserstorage-feature-moved-to-shared-framework)
 - [Blazor: RenderTreeFrame readonly public fields have become properties](#blazor-rendertreeframe-readonly-public-fields-have-become-properties)
 - [Blazor: Target framework of NuGet packages changed](#blazor-target-framework-of-nuget-packages-changed)
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
@@ -122,6 +123,10 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 ***
 
 [!INCLUDE[Blazor: JSObjectReference and JSInProcessObjectReference types changed to internal](~/includes/core-changes/aspnetcore/5.0/blazor-jsobjectreference-to-internal.md)]
+
+***
+
+[!INCLUDE[Blazor: ProtectedBrowserStorage feature moved to shared framework](~/includes/core-changes/aspnetcore/5.0/blazor-protectedbrowserstorage-moved.md)]
 
 ***
 

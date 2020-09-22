@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 6c034821-a260-4837-af1c-c11f8eba6d54
 ---
 # Insufficient security permissions to set the system time
+
 The security permissions are insufficient to set the system time.  
   
 ## To correct this error  

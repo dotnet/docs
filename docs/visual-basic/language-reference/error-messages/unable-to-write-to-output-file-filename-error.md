@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 0845b245-11bb-46fd-95ca-f6cef3c318ef
 ---
 # Unable to write to output file '\<filename>': \<error>
+
 There was a problem creating the file.  
   
  An output file cannot be opened for writing. The file (or the folder containing the file) may be opened for exclusive use by another process, or it may have its read-only attribute set.  

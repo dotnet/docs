@@ -15,9 +15,11 @@ helpviewer_keywords:
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
 ---
 # Common Tasks Performed with Visual Basic Operators
+
 Operators perform many common tasks involving one or more expressions called *operands*.  
   
 ## Arithmetic and Bit-shift Tasks  
+
  The following table summarizes the available arithmetic and bit-shift operations.  
   
 |To|See|  
@@ -34,6 +36,7 @@ Operators perform many common tasks involving one or more expressions called *op
 |Shift the bit pattern of a numeric value to the right|[>> Operator](../../../language-reference/operators/right-shift-operator.md)|  
   
 ## Comparison Tasks  
+
  The following table summarizes the available comparison operations.  
   
 |To|See|  
@@ -49,6 +52,7 @@ Operators perform many common tasks involving one or more expressions called *op
 |Determine whether an object is of a specific type|[TypeOf Operator](../../../language-reference/operators/typeof-operator.md)|  
   
 ## Concatenation Tasks  
+
  The following table summarizes the available concatenation operations.  
   
 |To|See|  
@@ -57,6 +61,7 @@ Operators perform many common tasks involving one or more expressions called *op
 |Join numeric values with string values|`+` Operator ([Concatenation Operators in Visual Basic](concatenation-operators.md))|  
   
 ## Logical and Bitwise Tasks  
+
  The following table summarizes the available logical and bitwise operations.  
   
 |To|See|  

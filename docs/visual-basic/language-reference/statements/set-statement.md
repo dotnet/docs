@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
 ---
 # Set Statement (Visual Basic)
+
 Declares a `Set` property procedure used to assign a value to a property.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ End Set
 ```  
   
 ## Parts  
+
  `attributelist`  
  Optional. See [Attribute List](attribute-list.md).  
   
@@ -52,6 +54,7 @@ End Set
  Required. Terminates the definition of the `Set` property procedure.  
   
 ## Remarks  
+
  Every property must have a `Set` property procedure unless the property is marked `ReadOnly`. The `Set` procedure is used to set the value of the property.  
   
  Visual Basic automatically calls a property's `Set` procedure when an assignment statement provides a value to be stored in the property.  
@@ -77,6 +80,7 @@ End Set
      The `Exit Property` and `Return` statements cause an immediate exit from a property procedure. Any number of `Exit Property` and `Return` statements can appear anywhere in the procedure, and you can mix `Exit Property` and `Return` statements.  
   
 ## Example  
+
  The following example uses the `Set` statement to set the value of a property.  
   
  [!code-vb[VbVbalrStatements#55](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#55)]  

@@ -10,6 +10,7 @@ namespace operators
             AnonymousMethod();
             Lambda();
             WithoutParameterList();
+            Discards();
         }
 
         private static void AnonymousMethod()
@@ -41,6 +42,14 @@ namespace operators
             // Hello!
             // This is world!
             // </SnippetWithoutParameterList>
+        }
+
+        private static void Discards()
+        {
+            // <SnippetDiscards>
+            Func<int, int, int> constant = delegate (int _, int _) { return 42; };
+            Console.WriteLine(constant(3, 4));  // output: 42
+            // </SnippetDiscards>
         }
     }
 }

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 9e3544e2-cfc9-463a-8c0c-ed82e5e6462f
 ---
 # Connection to type library or object library for remote process has been lost
+
 You lost your connection to the remote process's object library or type library.  
   
 ## To correct this error  

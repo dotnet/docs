@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6be0d61c-f2f9-4f9b-ab90-8871a0d7206d
 ---
 # Delegate class '\<classname>' has no Invoke method, so an expression of this type cannot be the target of a method call
+
 A call to `Invoke` through a delegate has failed because `Invoke` is not implemented on the delegate class.  
   
  **Error ID:** BC30220  

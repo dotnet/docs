@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
 ---
 # XML Document Literal (Visual Basic)
+
 A literal representing an <xref:System.Xml.Linq.XDocument> object.  
   
 ## Syntax  
@@ -32,9 +33,11 @@ rootElement
 |`rootElement`|Required. Root element of the document. The format is one of the following:<br /><br /> <ul><li>[XML Element Literal](xml-element-literal.md).</li><li>Embedded expression of the form `<%=` `elementExp` `%>`. The `elementExp` returns one of the following:<br /><br /> <ul><li>An <xref:System.Xml.Linq.XElement> object.</li><li>A collection that contains one <xref:System.Xml.Linq.XElement> object and any number of <xref:System.Xml.Linq.XProcessingInstruction> and <xref:System.Xml.Linq.XComment> objects.</li></ul></li></ul><br /> For more information, see [Embedded Expressions in XML](../../programming-guide/language-features/xml/embedded-expressions-in-xml.md).|  
   
 ## Return Value  
+
  An <xref:System.Xml.Linq.XDocument> object.  
   
 ## Remarks  
+
  An XML document literal is identified by the XML declaration at the start of the literal. Although each XML document literal must have exactly one root XML element, it can have any number of XML processing instructions and XML comments.  
   
  An XML document literal cannot appear in an XML element.  
@@ -45,6 +48,7 @@ rootElement
  The Visual Basic compiler converts the XML document literal into calls to the <xref:System.Xml.Linq.XDocument.%23ctor%2A> and <xref:System.Xml.Linq.XDeclaration.%23ctor%2A> constructors.  
   
 ## Example  
+
  The following example creates an XML document that has an XML declaration, a processing instruction, a comment, and an element that contains another element.  
   
  [!code-vb[VbXMLSamples#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples13.vb#30)]  

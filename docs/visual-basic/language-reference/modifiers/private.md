@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
 ---
 # Private (Visual Basic)
+
 Specifies that one or more declared programming elements are accessible only from within their declaration context, including from within any contained types.  
   
 ## Remarks  
+
  If a programming element represents proprietary functionality, or contains confidential data, you usually want to limit access to it as strictly as possible. You achieve the maximum limitation by allowing only the module, class, or structure that defines it to access it. To limit access to an element in this way, you can declare it with `Private`.  
 
 > [!NOTE]

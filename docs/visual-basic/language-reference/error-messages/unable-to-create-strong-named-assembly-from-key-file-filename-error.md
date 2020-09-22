@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 5dd09785-bc10-4ae7-ba24-b795057aca31
 ---
 # Unable to create strong-named assembly from key file '\<filename>': \<error>
+
 A strong-named assembly could not be created from the specified key file.  
   
  **Error ID:** BC31026  

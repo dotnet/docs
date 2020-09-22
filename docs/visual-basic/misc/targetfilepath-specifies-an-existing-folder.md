@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 2334f49e-d080-4ee2-b036-f95c7f76c3ec
 ---
 # TargetFilePath specifies an existing folder
+
 The parameter `TargetFilePath` specifies an existing directory but must specify the new directory's name.  
   
 ## To correct this error  

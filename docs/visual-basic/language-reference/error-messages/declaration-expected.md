@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: da6b1df3-fe6b-4415-88e6-0977e5189e0b
 ---
 # Declaration expected
+
 A nondeclarative statement, such as an assignment or loop statement, occurs outside any procedure. Only declarations are allowed outside procedures.  
   
  Alternatively, a programming element is declared without a declaration keyword such as `Dim` or `Const`.  

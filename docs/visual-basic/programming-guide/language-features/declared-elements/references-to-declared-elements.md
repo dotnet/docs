@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
 ---
 # References to Declared Elements (Visual Basic)
+
 When your code refers to a declared element, the Visual Basic compiler matches the name in your reference to the appropriate declaration of that name. If more than one element is declared with the same name, you can control which of those elements is to be referenced by *qualifying* its name.  
   
  The compiler attempts to match a name reference to a name declaration with the *narrowest scope*. This means it starts with the code making the reference and works outward through successive levels of containing elements.  
@@ -36,6 +37,7 @@ End Module
 ```  
   
 ## Qualifying an Element Name  
+
  If you want to override this search process and specify a name declared in a broader scope, you must *qualify* the name with the containing element of the broader scope. In some cases, you might also have to qualify the containing element.  
   
  Qualifying a name means preceding it in your source statement with information that identifies where the target element is defined. This information is called a *qualification string*. It can include one or more namespaces and a module, class, or structure.  
@@ -99,6 +101,7 @@ Dim winLabel As New win.Label()
 ```  
   
 ## Members of Other Containing Elements  
+
  When you use a nonshared member of another class or structure, you must first qualify the member name with a variable or expression that points to an instance of the class or structure. In the following example, `demoClass` is an instance of a class named `class1`.  
   
 ```vb  
@@ -144,6 +147,7 @@ End Module
 ```  
   
 ## References to Projects  
+
  To use [Public](../../../language-reference/modifiers/public.md) elements defined in another project, you must first set a *reference* to that project's assembly or type library. To set a reference, click **Add Reference** on the **Project** menu, or use the [-reference (Visual Basic)](../../../reference/command-line-compiler/reference.md) command-line compiler option.  
   
  For example, you can use the XML object model of the .NET Framework. If you set a reference to the <xref:System.Xml> namespace, you can declare and use any of its classes, such as <xref:System.Xml.XmlDocument>. The following example uses <xref:System.Xml.XmlDocument>.  
@@ -155,6 +159,7 @@ Dim xDoc As System.Xml.XmlDocument
 ```  
   
 ## Importing Containing Elements  
+
  You can use the [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md) to *import* the namespaces that contain the modules or classes that you want to use. This enables you to refer to the elements defined in an imported namespace without fully qualifying their names. The following example rewrites the previous example to import the <xref:System.Xml> namespace.  
   
 ```vb  
@@ -180,11 +185,13 @@ Dim xDoc As xD.XmlDocument
  You can also use the `Imports` statement to import modules, classes, structures, and enumerations. You can then use the members of such imported elements without qualification. However, you must always qualify nonshared members of classes and structures with a variable or expression that evaluates to an instance of the class or structure.  
   
 ## Naming Guidelines  
+
  When you define two or more programming elements that have the same name, a *name ambiguity* can result when the compiler attempts to resolve a reference to that name. If more than one definition is in scope, or if no definition is in scope, the reference is irresolvable. For an example, see "Qualified Reference Example" on this Help page.  
   
  You can avoid name ambiguity by giving all your elements unique names. Then you can make reference to any element without having to qualify its name with a namespace, module, or class. You also reduce the chances of accidentally referring to the wrong element.  
   
 ## Shadowing  
+
  When two programming elements share the same name, one of them can hide, or *shadow*, the other one. A shadowed element is not available for reference; instead, when your code uses the shadowed element name, the Visual Basic compiler resolves it to the shadowing element. For a more detailed explanation with examples, see [Shadowing in Visual Basic](shadowing.md).  
   
 ## See also

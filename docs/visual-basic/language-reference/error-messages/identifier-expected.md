@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: c05162ee-55d0-4d7f-84bb-e7758d4c5081
 ---
 # Identifier expected
+
 A programming element that is not a recognizable declared element name occurs where the context requires an element name. One possible cause is that an attribute has been specified somewhere other than at the beginning of the statement.  
   
  **Error ID:** BC30203  

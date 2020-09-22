@@ -14,9 +14,11 @@ helpviewer_keywords:
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
 ---
 # Calling a Property or Method Using a String Name (Visual Basic)
+
 In most cases, you can discover the properties and methods of an object at design time, and write code to handle them. However, in some cases you may not know about an object's properties and methods in advance, or you may just want the flexibility of enabling an end user to specify properties or execute methods at run time.  
   
 ## CallByName Function  
+
  Consider, for example, a client application that evaluates expressions entered by the user by passing an operator to a COM component. Suppose you are constantly adding new functions to the component that require new operators. When you use standard object access techniques, you must recompile and redistribute the client application before it could use the new operators. To avoid this, you can use the `CallByName` function to pass the new operators as strings, without changing the application.  
   
  The `CallByName` function lets you use a string to specify a property or method at run time. The signature for the `CallByName` function looks like this:  

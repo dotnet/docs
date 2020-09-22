@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 4575554d-3615-46e4-9c6a-18e9c338e4ed
 ---
 # Bad checksum value, non hex digits or odd number of hex digits
+
 A checksum value contains invalid hexadecimal digits or has an odd number of digits.  
   
  When ASP.NET generates a Visual Basic source file (extension .vb), it calculates a checksum and places it in a hidden source file identified by `#externalchecksum`. It is possible for a user generating a .vb file to do this also, but this process is best left to internal use.  

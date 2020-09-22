@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: eefb77a4-efbc-4000-8871-edce7ef7f2df
 ---
 # String constants must end with a double quote
+
 String constants must begin and end with quotation marks.  
   
  **ErrorID:** BC30648  

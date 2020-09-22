@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
 ---
 # -reference (Visual Basic)
+
 Causes the compiler to make type information in the specified assemblies available to the project you are currently compiling.  
   
 ## Syntax  
@@ -32,6 +33,7 @@ or
 |`fileList`|Required. Comma-delimited list of assembly file names. If the file name contains a space, enclose the name in quotation marks.|  
   
 ## Remarks  
+
  The file(s) you import must contain assembly metadata. Only public types are visible outside the assembly. The [-addmodule](addmodule.md) option imports metadata from a module.  
   
  If you reference an assembly (Assembly A) which itself references another assembly (Assembly B), you need to reference Assembly B if:  
@@ -49,6 +51,7 @@ or
  The short form of `-reference` is `-r`.  
   
 ## Example  
+
  The following command compiles source file `Input.vb` and reference assemblies from `Metad1.dll` and `Metad2.dll` to produce `Out.exe`.  
   
 ```console

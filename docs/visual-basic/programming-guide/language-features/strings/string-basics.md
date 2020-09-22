@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
 ---
 # String Basics in Visual Basic
+
 The `String` data type represents a series of characters (each representing in turn an instance of the `Char` data type). This topic introduces the basic concepts of strings in Visual Basic.  
   
 ## String Variables  
+
  An instance of a string can be assigned a literal value that represents a series of characters. For example:  
   
  [!code-vb[VbVbalrStrings#63](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#63)]  
@@ -44,6 +46,7 @@ World]]></xml>.Value
 ```  
   
 ## Characters in Strings  
+
  A string can be thought of as a series of `Char` values, and the `String` type has built-in functions that allow you to perform many manipulations on a string that resemble the manipulations allowed by arrays. Like all array in .NET Framework, these are zero-based arrays. You may refer to a specific character in a string through the `Chars` property, which provides a way to access a character by the position in which it appears in the string. For example:  
   
  [!code-vb[VbVbalrStrings#67](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#67)]  
@@ -55,6 +58,7 @@ World]]></xml>.Value
  The variable `myArray` now contains an array of `Char` values, each representing a character from `myString`.  
   
 ## The Immutability of Strings  
+
  A string is *immutable*, which means its value cannot be changed once it has been created. However, this does not prevent you from assigning more than one value to a string variable. Consider the following example:  
   
  [!code-vb[VbVbalrStrings#69](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#69)]  

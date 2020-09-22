@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 5215585e-2efa-485a-9efe-9833a1cc83a0
 ---
 # '#ElseIf' must be preceded by a matching '#If' or '#ElseIf'
+
 `#ElseIf` is a conditional compilation directive. An `#ElseIf` clause must be preceded by a matching `#If` or `#ElseIf` clause.  
   
  **Error ID:** BC30014  

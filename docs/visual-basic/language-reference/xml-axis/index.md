@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 7e400e20-5d1e-4d22-a65c-9df79d5c1621
 ---
 # XML Axis Properties (Visual Basic)
+
 The topics in this section document the syntax of XML axis properties in Visual Basic. The XML axis properties make it easy to access XML directly in your code.  
   
 ## In This Section  

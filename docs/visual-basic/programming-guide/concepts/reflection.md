@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: d991bc0f-d16a-4ac5-9351-70e5c5b9891b
 ---
 # Reflection (Visual Basic)
+
 Reflection provides objects (of type <xref:System.Type>) that describe assemblies, modules and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using attributes in your code, reflection enables you to access them. For more information, see [Attributes](../../../standard/attributes/index.md).  
   
  Here's a simple example of reflection using the static method `GetType` - inherited by all types from the `Object` base class - to obtain the type of a variable:  
@@ -32,6 +33,7 @@ System.Console.WriteLine(info)
  `mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
 ## Reflection Overview  
+
  Reflection is useful in the following situations:  
   
 - When you have to access attributes in your program's metadata. For more information, see [Retrieving Information Stored in Attributes](../../../standard/attributes/retrieving-information-stored-in-attributes.md).  
@@ -43,6 +45,7 @@ System.Console.WriteLine(info)
 - For performing late binding, accessing methods on types created at run time. See the topic [Dynamically Loading and Using Types](../../../framework/reflection-and-codedom/dynamically-loading-and-using-types.md).  
   
 ## Related Sections  
+
  For more information:  
   
 - [Reflection](../../../framework/reflection-and-codedom/reflection.md)  

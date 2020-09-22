@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
 ---
 # Extension Indexer Property (Visual Basic)
+
 Provides access to individual elements in a collection.  
   
 ## Syntax  
@@ -29,9 +30,11 @@ object(index)
 |)|Required. Denotes the end of the indexer property.|  
   
 ## Return Value  
+
  The object from the specified location in the collection, or `Nothing` if the index is out of range.  
   
 ## Remarks  
+
  You can use the extension indexer property to access individual elements in a collection. This indexer property is typically used on the output of XML axis properties. The XML child and XML descendent axis properties return collections of <xref:System.Xml.Linq.XElement> objects or an attribute value.  
   
  The Visual Basic compiler converts extension indexer properties to calls to the `ElementAtOrDefault` method. Unlike an array indexer, the `ElementAtOrDefault` method returns `Nothing` if the index is out of range. This behavior is useful when you cannot easily determine the number of elements in a collection.  
@@ -41,6 +44,7 @@ object(index)
  To access the value of the first element in a collection of <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XAttribute> objects, you can use the XML `Value` property. For more information, see [XML Value Property](xml-value-property.md).  
   
 ## Example  
+
  The following example shows how to use the extension indexer to access the second child node in a collection of <xref:System.Xml.Linq.XElement> objects. The collection is accessed by using the child axis property, which gets all child elements named `phone` in the `contact` object.  
   
  [!code-vb[VbXMLSamples#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples11.vb#24)]  

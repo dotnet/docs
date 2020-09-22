@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
 ---
 # How to: Control the Scope of a Variable (Visual Basic)
+
 Normally, a variable is in *scope*, or visible for reference, throughout the region in which you declare it. In some cases, the variable's *access level* can influence its scope.  
   
  For more information, see [Scope in Visual Basic](scope.md).  
@@ -33,6 +34,7 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
      You can refer to the variable only from within the procedure, including inside any block contained in the procedure.  
   
 ## Scope at Module or Namespace Level  
+
  For convenience, the single term *module level* applies equally to modules, classes, and structures. The access level of a module level variable determines its scope. The namespace that contains the module, class, or structure also influences the scope.  
   
 #### To make a variable visible throughout a module, class, or structure  
@@ -52,6 +54,7 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
 3. You can refer to the variable from anywhere within the namespace containing the module, class, or structure.  
   
 ## Example  
+
  The following example declares a variable at module level and limits its visibility to code within the module.  
   
 ```vb  
@@ -75,9 +78,11 @@ Public strMsg As String
 ```  
   
 ## Robust Programming  
+
  The narrower the scope of a variable, the fewer opportunities you have for accidentally referring to it in place of another variable with the same name. You can also minimize problems of reference matching.  
   
 ## .NET Framework Security  
+
  The narrower the scope of a variable, the smaller the chances that malicious code can make improper use of it.  
   
 ## See also

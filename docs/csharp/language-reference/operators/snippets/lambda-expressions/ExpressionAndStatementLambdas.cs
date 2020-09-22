@@ -10,6 +10,10 @@ namespace lambda_expressions
             Action line = () => Console.WriteLine();
             // </SnippetZeroParameters>
 
+            // <SnippetOneParameter>
+            Func<double, double> cube = x => x * x * x;
+            // </SnippetOneParameter>
+
             // <SnippetTwoParameters>
             Func<int, int, bool> testForEquality = (x, y) => x == y;
             // </SnippetTwoParameters>
@@ -17,6 +21,10 @@ namespace lambda_expressions
             // <SnippetExplicitlyTypedParameters>
             Func<int, string, bool> isTooLong = (int x, string s) => s.Length > x;
             // </SnippetExplicitlyTypedParameters>
+
+            // <SnippetDiscards>
+            Func<int, int, int> constant = (_, _) => 42;
+            // </SnippetDiscards>
 
             // <SnippetStatementLambda>
             Action<string> greet = name =>

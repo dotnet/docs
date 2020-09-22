@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 7973aa82-a681-440c-9bca-242627d7ba86
 ---
 # '\<keyword>' is valid only within an instance method
+
 The `Me`, `MyClass`, and `MyBase` keywords refer to specific class instances. You cannot use them inside a shared `Function` or `Sub` procedure.  
   
  **Error ID:** BC30043  

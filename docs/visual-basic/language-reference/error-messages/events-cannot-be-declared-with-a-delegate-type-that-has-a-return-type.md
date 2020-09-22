@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6111c5ca-d30b-490a-812e-dd422e221c7d
 ---
 # Events cannot be declared with a delegate type that has a return type
+
 A delegate was specified for a function procedure.  
   
  **Error ID:** BC31084  

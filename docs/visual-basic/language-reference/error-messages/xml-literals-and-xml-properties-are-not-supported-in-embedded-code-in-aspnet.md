@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 053e8cba-8584-45cc-9fa0-43d122779772
 ---
 # XML literals and XML properties are not supported in embedded code within ASP.NET
+
 XML literals and XML properties are not supported in embedded code within ASP.NET. To use XML features, move the code to code-behind.  
   
  An XML literal or XML axis property is defined within embedded code (`<%= =>`) in an ASP.NET file.  

@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 80b3c5e8-3a5c-4d60-b1ac-b7460f0b30b0
 ---
 # The file is currently open for writing
+
 An attempt has been made to access a file that is currently open for writing.  
   
 ## To correct this error  

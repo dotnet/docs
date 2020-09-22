@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 5b9bc5d6-792e-48bc-a974-012e07ad95f3
 ---
 # Division by zero (Visual Basic Run-Time Error)
+
 An expression being used as a divisor has a value of zero.  
   
 ## To correct this error  

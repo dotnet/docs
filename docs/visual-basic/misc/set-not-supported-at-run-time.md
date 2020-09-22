@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: cb7285d3-778f-423d-a2be-88573be8ad48
 ---
 # Set not supported at run time
+
 You tried to set or change a property whose value can only be set at design time.  
   
 ## To correct this error  

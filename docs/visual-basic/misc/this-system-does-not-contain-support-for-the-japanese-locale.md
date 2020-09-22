@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 986d0379-c9d1-4004-b9ac-8d3bd95dfe85
 ---
 # This system does not contain support for the Japanese locale
+
 You are attempting to use the `VbStrConv.Japanese` enumeration member, but your system does not support the Japanese locale.  
   
 ## To correct this error  

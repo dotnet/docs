@@ -8,7 +8,7 @@ ms.date: 09/21/2020
 # ReadyToRun Compilation
 Startup time and application latency can be improved by compiling your application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation.
 
-R2R binaries improve startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. The binaries contain similar native code compared to what the JIT would produce. However, R2R binaries are larger because they contain both intermediate language (IL) code, which is still needed for some scenarios, and the native version of the same code. R2R is only available when you publish a self-contained app that targets specific runtime environments (RID) such as Linux x64 or Windows x64.
+R2R binaries improve startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. The binaries contain similar native code compared to what the JIT would produce. However, R2R binaries are larger because they contain both intermediate language (IL) code, which is still needed for some scenarios, and the native version of the same code. R2R is only available when you publish an app that targets specific runtime environments (RID) such as Linux x64 or Windows x64.
 
 To compile your project as ReadyToRun, do the following:
 
@@ -20,7 +20,7 @@ To compile your project as ReadyToRun, do the following:
     </PropertyGroup>
     ```
 
-02. Publish an application. For example, this command creates a app for the 64-bit version of Windows:
+02. Publish an application. For example, this command creates an app for the 64-bit version of Windows:
 
     ```dotnetcli
     dotnet publish -c Release -r win-x64
@@ -44,7 +44,8 @@ The SDK will precompile the assemblies that are distributed with the application
 The compiler will attempt to pre-compile as many methods as it can. However various reasons it is not expected that using the ReadyToRun feature will result in preventing the JIT from executing.
 
 Such reasons may include, but are not limited to:
-- Use of generic types defined in seperate assemblies
+
+- Use of generic types defined in separate assemblies
 - Interop with native code
 - Use of hardware intrinsics which the compiler cannot prove are safe to use at publish time
 - Certain unusual IL patterns
@@ -59,7 +60,6 @@ The ReadyToRun compiler does not support completely general purpose cross-compil
 | Windows X64  | Windows X86, Windows X64, Windows ARM32, Windows ARM64 |
 | Windows X86  | Windows X86, Windows ARM32 |
 | Linux X64    | Linux X86, Linux X64, Linux ARM32, Linux ARM64 |
-| Linux AMR32  | Linux ARM32 |
-| Linux AMR64  | Linux ARM64 |
+| Linux ARM32  | Linux ARM32 |
+| Linux ARM64  | Linux ARM64 |
 | macOS X64    | macOS X64 |
-

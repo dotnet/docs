@@ -9,16 +9,22 @@ ms.date: 09/20/2020
 
 Ladies and Gentlemen, please welcome Dapr.
 
-Dapr, or *Distributed Application Runtime*, is the new kid on the block. At its core, it's a portable, event-driven runtime. 
+Dapr, or *Distributed Application Runtime*, is the new kid on the block. What started as a <blah>, give some history, has grown to <blah> with a 1.0 release. 
 
- - Portable, in that Dapr can run your applications across public clouds and edge devices. It can self-host for local development, run inside a VM, or a Kubernetes or Service Fabric cluster. 
+At its core, it's a portable, event-driven runtime. 
+
+ - Portable, in that you write your application once and run it across different public clouds and edge devices. You simply swap out Dapr configuration files for specific service components for the new environment. Dapr can self-host for local development, run inside a VM, a Kubernetes, or Service Fabric cluster. 
 
  - Event-driven, in that you register external services, invoke them or get invoked without taking a direct reference to them. 
 
  - Runtime that encapsulates and exposes Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
 
 Dapr addresses a large gap in modern app development: Simplifying the complexities of distributed microservices applications. Through an architecture of pluggable components, Dapr abstracts 
-service components from the business logic of your application. It provides a *dynamic glue* that fuses together the plumbing without tightly coupled references, while providing baked-in industry best practices. Figure 2-x provides a shot of Dapr from 20,000 feet.
+external service components from the business logic of your application.
+
+Dapr provides a *dynamic glue* that fuses together the plumbing without tightly coupled references, while providing baked-in industry best practices. For example, your service may need to write state to a store. You might consider writing a wrapper around Azure Redis Cache and communicating with it. Howevere, with Dapr, you could make a call to a Dapr state building block, dynamically bind it to Redis Cache, and have Dapr implement the  call to Redis on your behalf. Dapr is responsbile for REdis implementation. Your code has no direct reference to Redis.
+
+Figure 2-x provides a shot of Dapr from 20,000 feet.
 
 ![Dapr at 20,000 feet](./media/dapr-high-level.png)
 **Figure 2-x**. Dapr at 20,000 feet.

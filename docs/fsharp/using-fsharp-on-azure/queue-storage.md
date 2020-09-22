@@ -3,6 +3,7 @@ title: Get started with Azure Queue storage using F#
 description: Azure Queues provide reliable, asynchronous messaging between application components. Cloud messaging enables your application components to scale independently.
 author: sylvanc
 ms.date: 09/20/2016
+ms.custom: "devx-track-fsharp"
 ---
 # Get started with Azure Queue storage using F\#
 

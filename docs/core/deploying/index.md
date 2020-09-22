@@ -147,13 +147,15 @@ dotnet publish -r win-x64
 
 ## Publish with ReadyToRun images
 
-Publishing with ReadyToRun images will improve the startup time of your application at the cost of increasing the size of your application. In order to publish with ReadyToRun see (ReadyToRun)[ready-to-run.md] for more details.
+Publishing with ReadyToRun images will improve the startup time of your application at the cost of increasing the size of your application. In order to publish with ReadyToRun see [ReadyToRun](ready-to-run.md) for more details.
 
 ### Advantages
+
 - **Improved startup time**\
 The application will spend less time running the JIT.
 
 ### Disadvantages
+
 - **Larger size**\
 The application will be larger on disk.
 

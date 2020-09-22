@@ -17,20 +17,21 @@ There are 2 general approaches to do this:
 01. Specify the PublishReadyToRun flag directly to the dotnet publish command. See [dotnet publish](../tools/dotnet-publish.md) for details.
 
 02. Specify the property in the project
-  - Add the `<PublishReadyToRun>` setting to your project:
 
-    ```xml
-    <PropertyGroup>
-      <PublishReadyToRun>true</PublishReadyToRun>
-    </PropertyGroup>
-    ```
+- Add the `<PublishReadyToRun>` setting to your project:
 
-  - Publish the application without any special parameters
+```xml
+<PropertyGroup>
+  <PublishReadyToRun>true</PublishReadyToRun>
+</PropertyGroup>
+```
 
-    ```dotnetcli
-    dotnet publish -c Release -r win-x64
+- Publish the application without any special parameters
 
-    ```
+
+```dotnetcli
+dotnet publish -c Release -r win-x64
+```
 
 ## Impact of using the ReadyToRun feature
 

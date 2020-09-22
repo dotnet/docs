@@ -7,22 +7,59 @@ ms.date: 09/20/2020
 
 # Dapr @ 20,000 feet
 
-Dapr is the new kid on the block. At its core, it's a portable, event-driven runtime. It addresses a large gap in modern app development: The need for the agility that distributed microservices applications can provide. 
+Ladies and Gentlemen, please welcome Dapr.
 
-Dapr provides the *glue* that help piece together the moving parts of these applications. It does so by abstracting the complexity of distributed applications. The block that we speak of is more than just the Microsoft stack. 
+Dapr, or *Distributed Application Runtime*, is the new kid on the block. At its core, it's a portable, event-driven runtime. 
 
-Dapr is truly an open platform  cross-platform and open-source. To start, the code is written in Google's Golang language. It runs on any public cloud and on edge devvices. 
+ - Portable, in that Dapr can run your applications across public clouds and edge devices. It can self-host for local development, run inside a VM, or a Kubernetes or Service Fabric cluster. 
+
+ - Event-driven, in that you register external services, invoke them or get invoked without taking a direct reference to them. 
+
+ - Runtime that encapsulates and exposes Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
+
+Dapr addresses a large gap in modern app development: Simplifying the complexities of distributed microservices applications. Through an architecture of pluggable components, Dapr abstracts 
+service components from the business logic of your application. It provides a *dynamic glue* that fuses together the plumbing without tightly coupled references, while providing baked-in industry best practices. Figure 2-x provides a shot of Dapr from 20,000 feet.
+
+![Dapr at 20,000 feet](./media/dapr-high-level.png)
+**Figure 2-x**. Dapr at 20,000 feet.
+
+The previous figure presents the end-to-end picture of Dapr.
+
+Dapr is truly an open platform - both cross-platform and open-source. To start, Dapr is written in Google's Golang language. Out of the box, it supports language agnostic RESTful HTTP and gRPC APIs. In the previous figure, note how Dapr provides language typed SDKs for many popular programming platforms, including Go, Node.js, Python, .NET, Java, and JavaScript.   
+
+The blue boxes across the center of the figure present the distributed system building blocks. Each block is independent, enabling you to integrate those services that are helpful for your application.
+
+Dapr version 1.0 features support for interservice communication, state management, pub/sub messaging, actors, observablity, and secrets. Chapter x provides detail about the different building blocks.
+
+Finally, the previous figure shows the portability of Dapr running across many different environments.
+ 
+## Side car architecture
+
+
+
+## Sevice mesh
+
+
+
+
+## .NET SDK for Dapr
+
+
+
+
+
+
 
 
 ## What dapr does
 
-Dapr reduces the complexity of constructing microservice and evevnt-driven applications. Companies can implement interservice-communication, state, resource binding, and asyncshcronous pub/sub messaging with open APIs and extensible components that are community-driven.
+Dapr reduces the complexity of constructing microservice and evevnt-driven applications. Companies can implement interservice-communication, state, resource binding, and asynchronous pub/sub messaging with open APIs and extensible components that are community-driven.
 
 
 
-baked-in industry best practices
 
 
+provides the *glue* that fuses decoupled service components with your business application b. At the same time, it greatly abstracts the complexity of distributed components and provides baked-in industry best practices. Figure 2-x provides a shot of Dapr from 20,000 feet.
 
 
 

@@ -7,6 +7,13 @@ ms.date: 09/20/2020
 
 # Dapr concents
 
+
+Dapr codifies the best practices for building microservice applications into open,
+independent, building blocks that enable you to build portable applications with the language and framework of
+your choice. Each building block is completely independent and you can use one, some, or all of them in your
+application.
+
+
 Blah, blah
 
 ## Building blocks
@@ -16,11 +23,6 @@ Blah, blah
 > include discussion of supported communication protocols - https/grpc
 
 ## Components
-
-Blah, blah
-
-
-## Supported platforms
 
 Blah, blah
 

@@ -371,257 +371,257 @@ items:
         - name: Overview
           displayName: "design warnings"
           href: code-analysis/rules/design-warnings.md
-        - name: "CA1000: Do not declare static members on generic types"
+        - name: CA1000
           href: code-analysis/rules/ca1000.md
-        - name: "CA1001: Types that own disposable fields should be disposable"
+        - name: CA1001
           href: code-analysis/rules/ca1001.md
-        - name: "CA1002: Do not expose generic lists"
+        - name: CA1002
           href: code-analysis/rules/ca1002.md
-        - name: "CA1003: Use generic event handler instances"
+        - name: CA1003
           href: code-analysis/rules/ca1003.md
-        - name: "CA1005: Avoid excessive parameters on generic types"
+        - name: CA1005
           href: code-analysis/rules/ca1005.md
-        - name: "CA1008: Enums should have zero value"
+        - name: CA1008
           href: code-analysis/rules/ca1008.md
-        - name: "CA1010: Collections should implement generic interface"
+        - name: CA1010
           href: code-analysis/rules/ca1010.md
-        - name: "CA1012: Abstract types should not have constructors"
+        - name: CA1012
           href: code-analysis/rules/ca1012.md
-        - name: "CA1014: Mark assemblies with CLSCompliantAttribute"
+        - name: CA1014
           href: code-analysis/rules/ca1014.md
-        - name: "CA1016: Mark assemblies with AssemblyVersionAttribute"
+        - name: CA1016
           href: code-analysis/rules/ca1016.md
-        - name: "CA1017: Mark assemblies with ComVisibleAttribute"
+        - name: CA1017
           href: code-analysis/rules/ca1017.md
-        - name: "CA1018: Mark attributes with AttributeUsageAttribute"
+        - name: CA1018
           href: code-analysis/rules/ca1018.md
-        - name: "CA1019: Define accessors for attribute arguments"
+        - name: CA1019
           href: code-analysis/rules/ca1019.md
-        - name: "CA1021: Avoid out parameters"
+        - name: CA1021
           href: code-analysis/rules/ca1021.md
-        - name: "CA1024: Use properties where appropriate"
+        - name: CA1024
           href: code-analysis/rules/ca1024.md
-        - name: "CA1027: Mark enums with FlagsAttribute"
+        - name: CA1027
           href: code-analysis/rules/ca1027.md
-        - name: "CA1028: Enum storage should be Int32"
+        - name: CA1028
           href: code-analysis/rules/ca1028.md
-        - name: "CA1030: Use events where appropriate"
+        - name: CA1030
           href: code-analysis/rules/ca1030.md
-        - name: "CA1031: Do not catch general exception types"
+        - name: CA1031
           href: code-analysis/rules/ca1031.md
-        - name: "CA1032: Implement standard exception constructors"
+        - name: CA1032
           href: code-analysis/rules/ca1032.md
-        - name: "CA1033: Interface methods should be callable by child types"
+        - name: CA1033
           href: code-analysis/rules/ca1033.md
-        - name: "CA1034: Nested types should not be visible"
+        - name: CA1034
           href: code-analysis/rules/ca1034.md
-        - name: "CA1036: Override methods on comparable types"
+        - name: CA1036
           href: code-analysis/rules/ca1036.md
-        - name: "CA1040: Avoid empty interfaces"
+        - name: CA1040
           href: code-analysis/rules/ca1040.md
-        - name: "CA1041: Provide ObsoleteAttribute message"
+        - name: CA1041
           href: code-analysis/rules/ca1041.md
-        - name: "CA1043: Use integral or string argument for indexers"
+        - name: CA1043
           href: code-analysis/rules/ca1043.md
-        - name: "CA1044: Properties should not be write only"
+        - name: CA1044
           href: code-analysis/rules/ca1044.md
-        - name: "CA1045: Do not pass types by reference"
+        - name: CA1045
           href: code-analysis/rules/ca1045.md
-        - name: "CA1046: Do not overload operator equals on reference types"
+        - name: CA1046
           href: code-analysis/rules/ca1046.md
-        - name: "CA1047: Do not declare protected members in sealed types"
+        - name: CA1047
           href: code-analysis/rules/ca1047.md
-        - name: "CA1050: Declare types in namespaces"
+        - name: CA1050
           href: code-analysis/rules/ca1050.md
-        - name: "CA1051: Do not declare visible instance fields"
+        - name: CA1051
           href: code-analysis/rules/ca1051.md
-        - name: "CA1052: Static holder types should be sealed"
+        - name: CA1052
           href: code-analysis/rules/ca1052.md
-        - name: "CA1053: Static holder types should not have constructors"
+        - name: CA1053
           href: code-analysis/rules/ca1053.md
-        - name: "CA1054: URI parameters should not be strings"
+        - name: CA1054
           href: code-analysis/rules/ca1054.md
-        - name: "CA1055: URI return values should not be strings"
+        - name: CA1055
           href: code-analysis/rules/ca1055.md
-        - name: "CA1056: URI properties should not be strings"
+        - name: CA1056
           href: code-analysis/rules/ca1056.md
-        - name: "CA1058: Types should not extend certain base types"
+        - name: CA1058
           href: code-analysis/rules/ca1058.md
-        - name: "CA1060: Move P-Invokes to NativeMethods class"
+        - name: CA1060
           href: code-analysis/rules/ca1060.md
-        - name: "CA1061: Do not hide base class methods"
+        - name: CA1061
           href: code-analysis/rules/ca1061.md
-        - name: "CA1062: Validate arguments of public methods"
+        - name: CA1062
           href: code-analysis/rules/ca1062.md
-        - name: "CA1063: Implement IDisposable correctly"
+        - name: CA1063
           href: code-analysis/rules/ca1063.md
-        - name: "CA1064: Exceptions should be public"
+        - name: CA1064
           href: code-analysis/rules/ca1064.md
-        - name: "CA1065: Do not raise exceptions in unexpected locations"
+        - name: CA1065
           href: code-analysis/rules/ca1065.md
-        - name: "CA1066: Implement IEquatable when overriding Equals"
+        - name: CA1066
           href: code-analysis/rules/ca1066.md
-        - name: "CA1067: Override Equals when implementing IEquatable"
+        - name: CA1067
           href: code-analysis/rules/ca1067.md
-        - name: "CA1068: CancellationToken parameters must come last"
+        - name: CA1068
           href: code-analysis/rules/ca1068.md
-        - name: "CA1069: Enums should not have duplicate values"
+        - name: CA1069
           href: code-analysis/rules/ca1069.md
-        - name: "CA1070: Do not declare event fields as virtual"
+        - name: CA1070
           href: code-analysis/rules/ca1070.md
       - name: Documentation warnings
         items:
         - name: Overview
           displayName: "documentation warnings"
           href: code-analysis/rules/documentation-warnings.md
-        - name: "CA1200: Avoid using cref tags with a prefix"
+        - name: CA1200
           href: code-analysis/rules/ca1200.md
       - name: Globalization warnings
         items:
         - name: Overview
           displayName: "globalization warnings"
           href: code-analysis/rules/globalization-warnings.md
-        - name: "CA1303: Do not pass literals as localized parameters"
+        - name: CA1303
           href: code-analysis/rules/ca1303.md
-        - name: "CA1304: Specify CultureInfo"
+        - name: CA1304
           href: code-analysis/rules/ca1304.md
-        - name: "CA1305: Specify IFormatProvider"
+        - name: CA1305
           href: code-analysis/rules/ca1305.md
-        - name: "CA1307: Specify StringComparison for clarity"
+        - name: CA1307
           href: code-analysis/rules/ca1307.md
-        - name: "CA1308: Normalize strings to uppercase"
+        - name: CA1308
           href: code-analysis/rules/ca1308.md
-        - name: "CA1309: Use ordinal StringComparison"
+        - name: CA1309
           href: code-analysis/rules/ca1309.md
-        - name: "CA1310: Specify StringComparison for correctness"
+        - name: CA1310
           href: code-analysis/rules/ca1310.md
-        - name: "CA2101: Specify marshaling for P-Invoke string arguments"
+        - name: CA2101
           href: code-analysis/rules/ca2101.md
       - name: Portability and Interoperability warnings
         items:
         - name: Overview
           displayName: "portability and interoperability warnings"
           href: code-analysis/rules/interoperability-warnings.md
-        - name: "CA1401: P-Invokes should not be visible"
+        - name: CA1401
           href: code-analysis/rules/ca1401.md
-        - name: "CA1416: Validate platform compatibility"
+        - name: CA1416
           href: code-analysis/rules/ca1416.md
-        - name: "CA1417: Do not use OutAttribute on string parameters for P/Invokes"
+        - name: CA1417
           href: code-analysis/rules/ca1417.md
       - name: Maintainability warnings
         items:
         - name: Overview
           displayName: "maintainability warnings"
           href: code-analysis/rules/maintainability-warnings.md
-        - name: "CA1501: Avoid excessive inheritance"
+        - name: CA1501
           href: code-analysis/rules/ca1501.md
-        - name: "CA1502: Avoid excessive complexity"
+        - name: CA1502
           href: code-analysis/rules/ca1502.md
-        - name: "CA1505: Avoid unmaintainable code"
+        - name: CA1505
           href: code-analysis/rules/ca1505.md
-        - name: "CA1506: Avoid excessive class coupling"
+        - name: CA1506
           href: code-analysis/rules/ca1506.md
-        - name: "CA1507: Use nameof in place of string"
+        - name: CA1507
           href: code-analysis/rules/ca1507.md
-        - name: "CA1508: Avoid dead conditional code"
+        - name: CA1508
           href: code-analysis/rules/ca1508.md
-        - name: "CA1509: Invalid entry in code metrics configuration file"
+        - name: CA1509
           href: code-analysis/rules/ca1509.md
       - name: Naming warnings
         items:
         - name: Overview
           displayName: "naming warnings"
           href: code-analysis/rules/naming-warnings.md
-        - name: "CA1700: Do not name enum values 'Reserved'"
+        - name: CA1700
           href: code-analysis/rules/ca1700.md
-        - name: "CA1707: Identifiers should not contain underscores"
+        - name: CA1707
           href: code-analysis/rules/ca1707.md
-        - name: "CA1708: Identifiers should differ by more than case"
+        - name: CA1708
           href: code-analysis/rules/ca1708.md
-        - name: "CA1710: Identifiers should have correct suffix"
+        - name: CA1710
           href: code-analysis/rules/ca1710.md
-        - name: "CA1711: Identifiers should not have incorrect suffix"
+        - name: CA1711
           href: code-analysis/rules/ca1711.md
-        - name: "CA1712: Do not prefix enum values with type name"
+        - name: CA1712
           href: code-analysis/rules/ca1712.md
-        - name: "CA1713: Events should not have before or after prefix"
+        - name: CA1713
           href: code-analysis/rules/ca1713.md
-        - name: "CA1714: Flags enums should have plural names"
+        - name: CA1714
           href: code-analysis/rules/ca1714.md
-        - name: "CA1715: Identifiers should have correct prefix"
+        - name: CA1715
           href: code-analysis/rules/ca1715.md
-        - name: "CA1716: Identifiers should not match keywords"
+        - name: CA1716
           href: code-analysis/rules/ca1716.md
-        - name: "CA1717: Only FlagsAttribute enums should have plural names"
+        - name: CA1717
           href: code-analysis/rules/ca1717.md
-        - name: "CA1720: Identifiers should not contain type names"
+        - name: CA1720
           href: code-analysis/rules/ca1720.md
-        - name: "CA1721: Property names should not match get methods"
+        - name: CA1721
           href: code-analysis/rules/ca1721.md
-        - name: "CA1724: Type Names Should Not Match Namespaces"
+        - name: CA1724
           href: code-analysis/rules/ca1724.md
-        - name: "CA1725: Parameter names should match base declaration"
+        - name: CA1725
           href: code-analysis/rules/ca1725.md
       - name: Performance warnings
         items:
         - name: Overview
           displayName: "performance warnings"
           href: code-analysis/rules/performance-warnings.md
-        - name: "CA1802: Use Literals Where Appropriate"
+        - name: CA1802
           href: code-analysis/rules/ca1802.md
-        - name: "CA1805: Do not initialize unnecessarily"
+        - name: CA1805
           href: code-analysis/rules/ca1805.md
-        - name: "CA1806: Do not ignore method results"
+        - name: CA1806
           href: code-analysis/rules/ca1806.md
-        - name: "CA1810: Initialize reference type static fields inline"
+        - name: CA1810
           href: code-analysis/rules/ca1810.md
-        - name: "CA1812: Avoid uninstantiated internal classes"
+        - name: CA1812
           href: code-analysis/rules/ca1812.md
-        - name: "CA1813: Avoid unsealed attributes"
+        - name: CA1813
           href: code-analysis/rules/ca1813.md
-        - name: "CA1814: Prefer jagged arrays over multidimensional"
+        - name: CA1814
           href: code-analysis/rules/ca1814.md
-        - name: "CA1815: Override equals and operator equals on value types"
+        - name: CA1815
           href: code-analysis/rules/ca1815.md
-        - name: "CA1819: Properties should not return arrays"
+        - name: CA1819
           href: code-analysis/rules/ca1819.md
-        - name: "CA1820: Test for empty strings using string length"
+        - name: CA1820
           href: code-analysis/rules/ca1820.md
-        - name: "CA1821: Remove empty finalizers"
+        - name: CA1821
           href: code-analysis/rules/ca1821.md
-        - name: "CA1822: Mark members as static"
+        - name: CA1822
           href: code-analysis/rules/ca1822.md
-        - name: "CA1823: Avoid unused private fields"
+        - name: CA1823
           href: code-analysis/rules/ca1823.md
-        - name: "CA1824: Mark assemblies with NeutralResourcesLanguageAttribute"
+        - name: CA1824
           href: code-analysis/rules/ca1824.md
-        - name: "CA1825: Avoid zero-length array allocations"
+        - name: CA1825
           href: code-analysis/rules/ca1825.md
-        - name: "CA1826: Use property instead of Linq Enumerable method"
+        - name: CA1826
           href: code-analysis/rules/ca1826.md
-        - name: "CA1827: Do not use Count/LongCount when Any can be used"
+        - name: CA1827
           href: code-analysis/rules/ca1827.md
-        - name: "CA1828: Do not use CountAsync/LongCountAsync when AnyAsync can be used"
+        - name: CA1828
           href: code-analysis/rules/ca1828.md
-        - name: "CA1829: Use Length/Count property instead of Enumerable.Count method"
+        - name: CA1829
           href: code-analysis/rules/ca1829.md
-        - name: "CA1830: Prefer strongly-typed Append and Insert method overloads on StringBuilder"
+        - name: CA1830
           href: code-analysis/rules/ca1830.md
-        - name: "CA1831: Use AsSpan instead of Range-based indexers for string when appropriate"
+        - name: CA1831
           href: code-analysis/rules/ca1831.md
-        - name: "CA1832: Use AsSpan or AsMemory instead of Range-based indexers for getting ReadOnlySpan or ReadOnlyMemory portion of an array"
+        - name: CA1832
           href: code-analysis/rules/ca1832.md
-        - name: "CA1833: Use AsSpan or AsMemory instead of Range-based indexers for getting Span or Memory portion of an array"
+        - name: CA1833
           href: code-analysis/rules/ca1833.md
-        - name: "CA1834: Use StringBuilder.Append(char) for single character strings"
+        - name: CA1834
           href: code-analysis/rules/ca1834.md
-        - name: "CA1835: Prefer the memory overloads of Stream ReadAsync/WriteAsync methods"
+        - name: CA1835
           href: code-analysis/rules/ca1835.md
-        - name: "CA1836: Prefer IsEmpty over Count when available"
+        - name: CA1836
           href: code-analysis/rules/ca1836.md
-        - name: "CA1837: Use Environment.ProcessId instead of Process.GetCurrentProcess().Id"
+        - name: CA1837
           href: code-analysis/rules/ca1837.md
-        - name: "CA1838: Avoid StringBuilder parameters for P/Invokes"
+        - name: CA1838
           href: code-analysis/rules/ca1838.md
       - name: Publish warnings
         items:
@@ -637,285 +637,285 @@ items:
         - name: Overview
           displayName: "reliability warnings"
           href: code-analysis/rules/reliability-warnings.md
-        - name: "CA2000: Dispose objects before losing scope"
+        - name: CA2000
           href: code-analysis/rules/ca2000.md
-        - name: "CA2002: Do not lock on objects with weak identity"
+        - name: CA2002
           href: code-analysis/rules/ca2002.md
-        - name: "CA2007: Do not directly await a Task"
+        - name: CA2007
           href: code-analysis/rules/ca2007.md
-        - name: "CA2008: Do not create tasks without passing a TaskScheduler"
+        - name: CA2008
           href: code-analysis/rules/ca2008.md
-        - name: "CA2009: Do not call ToImmutableCollection on an ImmutableCollection value"
+        - name: CA2009
           href: code-analysis/rules/ca2009.md
-        - name: "CA2011: Do not assign property within its setter"
+        - name: CA2011
           href: code-analysis/rules/ca2011.md
-        - name: "CA2012: Use ValueTasks correctly"
+        - name: CA2012
           href: code-analysis/rules/ca2012.md
-        - name: "CA2013: Do not use ReferenceEquals with value types"
+        - name: CA2013
           href: code-analysis/rules/ca2013.md
-        - name: "CA2014: Do not use stackalloc in loops"
+        - name: CA2014
           href: code-analysis/rules/ca2014.md
-        - name: "CA2015: Do not define finalizers for types derived from MemoryManager<T>"
+        - name: CA2015
           href: code-analysis/rules/ca2015.md
-        - name: "CA2016: Forward the CancellationToken parameter to methods that take one"
+        - name: CA2016
           href: code-analysis/rules/ca2016.md
       - name: Security warnings
         items:
         - name: Overview
           displayName: "security warnings"
           href: code-analysis/rules/security-warnings.md
-        - name: "CA2100: Review SQL queries for security vulnerabilities"
+        - name: CA2100
           href: code-analysis/rules/ca2100.md
-        - name: "CA2109: Review visible event handlers"
+        - name: CA2109
           href: code-analysis/rules/ca2109.md
-        - name: "CA2119: Seal methods that satisfy private interfaces"
+        - name: CA2119
           href: code-analysis/rules/ca2119.md
-        - name: "CA2153: Avoid handling Corrupted State Exceptions"
+        - name: CA2153
           href: code-analysis/rules/ca2153.md
-        - name: "CA2153: Avoid Handling Corrupted State Exceptions"
+        - name: CA2153
           href: code-analysis/rules/ca2153.md
-        - name: "CA2300: Do not use insecure deserializer BinaryFormatter"
+        - name: CA2300
           href: code-analysis/rules/ca2300.md
-        - name: "CA2301: Do not call BinaryFormatter.Deserialize without first setting BinaryFormatter.Binder"
+        - name: CA2301
           href: code-analysis/rules/ca2301.md
-        - name: "CA2302: Ensure BinaryFormatter.Binder is set before calling BinaryFormatter.Deserialize"
+        - name: CA2302
           href: code-analysis/rules/ca2302.md
-        - name: "CA2305: Do not use insecure deserializer LosFormatter"
+        - name: CA2305
           href: code-analysis/rules/ca2305.md
-        - name: "CA2310: Do not use insecure deserializer NetDataContractSerializer"
+        - name: CA2310
           href: code-analysis/rules/ca2310.md
-        - name: "CA2311: Do not deserialize without first setting NetDataContractSerializer.Binder"
+        - name: CA2311
           href: code-analysis/rules/ca2311.md
-        - name: "CA2312: Ensure NetDataContractSerializer.Binder is set before deserializing"
+        - name: CA2312
           href: code-analysis/rules/ca2312.md
-        - name: "CA2315: Do not use insecure deserializer ObjectStateFormatter"
+        - name: CA2315
           href: code-analysis/rules/ca2315.md
-        - name: "CA2321: Do not deserialize with JavaScriptSerializer using a SimpleTypeResolver"
+        - name: CA2321
           href: code-analysis/rules/ca2321.md
-        - name: "CA2322: Ensure JavaScriptSerializer is not initialized with SimpleTypeResolver before deserializing"
+        - name: CA2322
           href: code-analysis/rules/ca2322.md
-        - name: "CA2326: Do not use TypeNameHandling values other than None"
+        - name: CA2326
           href: code-analysis/rules/ca2326.md
-        - name: "CA2327: Do not use insecure JsonSerializerSettings"
+        - name: CA2327
           href: code-analysis/rules/ca2327.md
-        - name: "CA2328: Ensure that JsonSerializerSettings are secure"
+        - name: CA2328
           href: code-analysis/rules/ca2328.md
-        - name: "CA2329: Do not deserialize with JsonSerializer using an insecure configuration"
+        - name: CA2329
           href: code-analysis/rules/ca2329.md
-        - name: "CA2350: Ensure DataTable.ReadXml()'s input is trusted"
+        - name: CA2350
           href: code-analysis/rules/ca2350.md
-        - name: "CA2351: Ensure DataSet.ReadXml()'s input is trusted"
+        - name: CA2351
           href: code-analysis/rules/ca2351.md
-        - name: "CA2352: Unsafe DataSet or DataTable in serializable type can be vulnerable to remote code execution attacks"
+        - name: CA2352
           href: code-analysis/rules/ca2352.md
-        - name: "CA2353: Unsafe DataSet or DataTable in serializable type"
+        - name: CA2353
           href: code-analysis/rules/ca2353.md
-        - name: "CA2354: Unsafe DataSet or DataTable in deserialized object graph can be vulnerable to remote code execution attack"
+        - name: CA2354
           href: code-analysis/rules/ca2354.md
-        - name: "CA2355: Unsafe DataSet or DataTable in deserialized object graph"
+        - name: CA2355
           href: code-analysis/rules/ca2355.md
-        - name: "CA2356: Unsafe DataSet or DataTable type in web deserialized object graph"
+        - name: CA2356
           href: code-analysis/rules/ca2356.md
-        - name: "CA2361: Ensure autogenerated class containing DataSet.ReadXml() is not used with untrusted data"
+        - name: CA2361
           href: code-analysis/rules/ca2361.md
-        - name: "CA2362: Unsafe DataSet or DataTable in autogenerated serializable type can be vulnerable to remote code execution attacks"
+        - name: CA2362
           href: code-analysis/rules/ca2362.md
-        - name: "CA2330: Ensure that JsonSerializer has a secure configuration when deserializing"
+        - name: CA2330
           href: code-analysis/rules/ca2330.md
-        - name: "CA3001: Review code for SQL injection vulnerabilities"
+        - name: CA3001
           href: code-analysis/rules/ca3001.md
-        - name: "CA3002: Review code for XSS vulnerabilities"
+        - name: CA3002
           href: code-analysis/rules/ca3002.md
-        - name: "CA3003: Review code for file path injection vulnerabilities"
+        - name: CA3003
           href: code-analysis/rules/ca3003.md
-        - name: "CA3004: Review code for information disclosure vulnerabilities"
+        - name: CA3004
           href: code-analysis/rules/ca3004.md
-        - name: "CA3005: Review code for LDAP injection vulnerabilities"
+        - name: CA3005
           href: code-analysis/rules/ca3005.md
-        - name: "CA3006: Review code for process command injection vulnerabilities"
+        - name: CA3006
           href: code-analysis/rules/ca3006.md
-        - name: "CA3007: Review code for open redirect vulnerabilities"
+        - name: CA3007
           href: code-analysis/rules/ca3007.md
-        - name: "CA3008: Review code for XPath injection vulnerabilities"
+        - name: CA3008
           href: code-analysis/rules/ca3008.md
-        - name: "CA3009: Review code for XML injection vulnerabilities"
+        - name: CA3009
           href: code-analysis/rules/ca3009.md
-        - name: "CA3010: Review code for XAML injection vulnerabilities"
+        - name: CA3010
           href: code-analysis/rules/ca3010.md
-        - name: "CA3011: Review code for DLL injection vulnerabilities"
+        - name: CA3011
           href: code-analysis/rules/ca3011.md
-        - name: "CA3012: Review code for regex injection vulnerabilities"
+        - name: CA3012
           href: code-analysis/rules/ca3012.md
-        - name: "CA3061: Do not add schema by URL"
+        - name: CA3061
           href: code-analysis/rules/ca3061.md
-        - name: "CA3075: Insecure DTD Processing"
+        - name: CA3075
           href: code-analysis/rules/ca3075.md
-        - name: "CA3076: Insecure XSLT Script Execution"
+        - name: CA3076
           href: code-analysis/rules/ca3076.md
-        - name: "CA3077: Insecure Processing in API Design, XML Document and XML Text Reader"
+        - name: CA3077
           href: code-analysis/rules/ca3077.md
-        - name: "CA3147: Mark verb handlers with ValidateAntiForgeryToken"
+        - name: CA3147
           href: code-analysis/rules/ca3147.md
-        - name: "CA5350: Do Not Use Weak Cryptographic Algorithms"
+        - name: CA5350
           href: code-analysis/rules/ca5350.md
         - name: "CA5351 Do Not Use Broken Cryptographic Algorithms"
           href: code-analysis/rules/ca5351.md
-        - name: "CA5358: Do Not Use Unsafe Cipher Modes"
+        - name: CA5358
           href: code-analysis/rules/ca5358.md
-        - name: "CA5359: Do not disable certificate validation"
+        - name: CA5359
           href: code-analysis/rules/ca5359.md
-        - name: "CA5360: Do not call dangerous methods in deserialization"
+        - name: CA5360
           href: code-analysis/rules/ca5360.md
-        - name: "CA5361: Do not disable Schannel use of strong crypto"
+        - name: CA5361
           href: code-analysis/rules/ca5361.md
-        - name: "CA5362: Potential reference cycle in deserialized object graph"
+        - name: CA5362
           href: code-analysis/rules/ca5362.md
-        - name: "CA5363: Do not disable request validation"
+        - name: CA5363
           href: code-analysis/rules/ca5363.md
-        - name: "CA5364: Do not use deprecated security protocols"
+        - name: CA5364
           href: code-analysis/rules/ca5364.md
-        - name: "CA5365: Do Not Disable HTTP Header Checking"
+        - name: CA5365
           href: code-analysis/rules/ca5365.md
-        - name: "CA5366: Use XmlReader For DataSet Read XML"
+        - name: CA5366
           href: code-analysis/rules/ca5366.md
-        - name: "CA5367: Do Not Serialize Types With Pointer Fields"
+        - name: CA5367
           href: code-analysis/rules/ca5367.md
-        - name: "CA5368: Set ViewStateUserKey For Classes Derived From Page"
+        - name: CA5368
           href: code-analysis/rules/ca5368.md
-        - name: "CA5369: Use XmlReader for Deserialize"
+        - name: CA5369
           href: code-analysis/rules/ca5369.md
-        - name: "CA5370: Use XmlReader for validating reader"
+        - name: CA5370
           href: code-analysis/rules/ca5370.md
-        - name: "CA5371: Use XmlReader for schema read"
+        - name: CA5371
           href: code-analysis/rules/ca5371.md
-        - name: "CA5372: Use XmlReader for XPathDocument"
+        - name: CA5372
           href: code-analysis/rules/ca5372.md
-        - name: "CA5373: Do not use obsolete key derivation function"
+        - name: CA5373
           href: code-analysis/rules/ca5373.md
-        - name: "CA5374: Do Not Use XslTransform"
+        - name: CA5374
           href: code-analysis/rules/ca5374.md
-        - name: "CA5375: Do not use account shared access signature"
+        - name: CA5375
           href: code-analysis/rules/ca5375.md
-        - name: "CA5376: Use SharedAccessProtocol HttpsOnly"
+        - name: CA5376
           href: code-analysis/rules/ca5376.md
-        - name: "CA5377: Use container level access policy"
+        - name: CA5377
           href: code-analysis/rules/ca5377.md
-        - name: "CA5378: Do not disable ServicePointManagerSecurityProtocols"
+        - name: CA5378
           href: code-analysis/rules/ca5378.md
-        - name: "CA5379: Do not use weak key derivation function algorithm"
+        - name: CA5379
           href: code-analysis/rules/ca5379.md
-        - name: "CA5380: Do not add certificates to root store"
+        - name: CA5380
           href: code-analysis/rules/ca5380.md
-        - name: "CA5381: Ensure certificates are not added to root store"
+        - name: CA5381
           href: code-analysis/rules/ca5381.md
-        - name: "CA5382: Use secure cookies in ASP.NET Core"
+        - name: CA5382
           href: code-analysis/rules/ca5382.md
-        - name: "CA5383: Ensure use secure cookies in ASP.NET Core"
+        - name: CA5383
           href: code-analysis/rules/ca5383.md
-        - name: "CA5384: Do not use digital signature algorithm (DSA)"
+        - name: CA5384
           href: code-analysis/rules/ca5384.md
-        - name: "CA5385: Use Rivest–Shamir–Adleman (RSA) algorithm with sufficient key size"
+        - name: CA5385
           href: code-analysis/rules/ca5385.md
-        - name: "CA5386: Avoid hardcoding SecurityProtocolType value"
+        - name: CA5386
           href: code-analysis/rules/ca5386.md
-        - name: "CA5387: Do not use weak key derivation function with insufficient iteration count"
+        - name: CA5387
           href: code-analysis/rules/ca5387.md
-        - name: "CA5388: Ensure sufficient iteration count when using weak key derivation function"
+        - name: CA5388
           href: code-analysis/rules/ca5388.md
-        - name: "CA5389: Do not add archive item's path to the target file system path"
+        - name: CA5389
           href: code-analysis/rules/ca5389.md
-        - name: "CA5390: Do not hard-code encryption key"
+        - name: CA5390
           href: code-analysis/rules/ca5390.md
-        - name: "CA5391: Use antiforgery tokens in ASP.NET Core MVC controllers"
+        - name: CA5391
           href: code-analysis/rules/ca5391.md
-        - name: "CA5392: Use DefaultDllImportSearchPaths attribute for P/Invokes"
+        - name: CA5392
           href: code-analysis/rules/ca5392.md
-        - name: "CA5393: Do not use unsafe DllImportSearchPath value"
+        - name: CA5393
           href: code-analysis/rules/ca5393.md
-        - name: "CA5394: Do not use insecure randomness"
+        - name: CA5394
           href: code-analysis/rules/ca5394.md
-        - name: "CA5395: Miss HttpVerb attribute for action methods"
+        - name: CA5395
           href: code-analysis/rules/ca5395.md
-        - name: "CA5396: Set HttpOnly to true for HttpCookie"
+        - name: CA5396
           href: code-analysis/rules/ca5396.md
-        - name: "CA5397: Do not use deprecated SslProtocols values"
+        - name: CA5397
           href: code-analysis/rules/ca5397.md
-        - name: "CA5398: Avoid hardcoded SslProtocols values"
+        - name: CA5398
           href: code-analysis/rules/ca5398.md
-        - name: "CA5399: Definitely disable HttpClient certificate revocation list check"
+        - name: CA5399
           href: code-analysis/rules/ca5399.md
-        - name: "CA5400: Ensure HttpClient certificate revocation list check is not disabled"
+        - name: CA5400
           href: code-analysis/rules/ca5400.md
-        - name: "CA5401: Do not use CreateEncryptor with non-default IV"
+        - name: CA5401
           href: code-analysis/rules/ca5401.md
-        - name: "CA5402: Use CreateEncryptor with the default IV"
+        - name: CA5402
           href: code-analysis/rules/ca5402.md
-        - name: "CA5403: Do not hard-code certificate"
+        - name: CA5403
           href: code-analysis/rules/ca5403.md
       - name: Usage warnings
         items:
         - name: Overview
           displayName: "usage warnings"
           href: code-analysis/rules/usage-warnings.md
-        - name: "CA1801: Review unused parameters"
+        - name: CA1801
           href: code-analysis/rules/ca1801.md
-        - name: "CA1816: Call GC.SuppressFinalize correctly"
+        - name: CA1816
           href: code-analysis/rules/ca1816.md
-        - name: "CA2200: Rethrow to preserve stack details"
+        - name: CA2200
           href: code-analysis/rules/ca2200.md
-        - name: "CA2201: Do not raise reserved exception types"
+        - name: CA2201
           href: code-analysis/rules/ca2201.md
-        - name: "CA2207: Initialize value type static fields inline"
+        - name: CA2207
           href: code-analysis/rules/ca2207.md
-        - name: "CA2208: Instantiate argument exceptions correctly"
+        - name: CA2208
           href: code-analysis/rules/ca2208.md
-        - name: "CA2211: Non-constant fields should not be visible"
+        - name: CA2211
           href: code-analysis/rules/ca2211.md
-        - name: "CA2213: Disposable fields should be disposed"
+        - name: CA2213
           href: code-analysis/rules/ca2213.md
-        - name: "CA2214: Do not call overridable methods in constructors"
+        - name: CA2214
           href: code-analysis/rules/ca2214.md
-        - name: "CA2215: Dispose methods should call base class dispose"
+        - name: CA2215
           href: code-analysis/rules/ca2215.md
-        - name: "CA2216: Disposable types should declare finalizer"
+        - name: CA2216
           href: code-analysis/rules/ca2216.md
-        - name: "CA2217: Do not mark enums with FlagsAttribute"
+        - name: CA2217
           href: code-analysis/rules/ca2217.md
-        - name: "CA2219: Do not raise exceptions in exception clauses"
+        - name: CA2219
           href: code-analysis/rules/ca2219.md
-        - name: "CA2225: Operator overloads have named alternates"
+        - name: CA2225
           href: code-analysis/rules/ca2225.md
-        - name: "CA2226: Operators should have symmetrical overloads"
+        - name: CA2226
           href: code-analysis/rules/ca2226.md
-        - name: "CA2227: Collection properties should be read only"
+        - name: CA2227
           href: code-analysis/rules/ca2227.md
-        - name: "CA2229: Implement serialization constructors"
+        - name: CA2229
           href: code-analysis/rules/ca2229.md
-        - name: "CA2231: Overload operator equals on overriding ValueType.Equals"
+        - name: CA2231
           href: code-analysis/rules/ca2231.md
-        - name: "CA2234: Pass System.Uri objects instead of strings"
+        - name: CA2234
           href: code-analysis/rules/ca2234.md
-        - name: "CA2235: Mark all non-serializable fields"
+        - name: CA2235
           href: code-analysis/rules/ca2235.md
-        - name: "CA2237: Mark ISerializable types with SerializableAttribute"
+        - name: CA2237
           href: code-analysis/rules/ca2237.md
-        - name: "CA2241: Provide correct arguments to formatting methods"
+        - name: CA2241
           href: code-analysis/rules/ca2241.md
-        - name: "CA2242: Test for NaN correctly"
+        - name: CA2242
           href: code-analysis/rules/ca2242.md
-        - name: "CA2243: Attribute string literals should parse correctly"
+        - name: CA2243
           href: code-analysis/rules/ca2243.md
-        - name: "CA2244: Do not duplicate indexed element initializations"
+        - name: CA2244
           href: code-analysis/rules/ca2244.md
-        - name: "CA2245: Do not assign a property to itself"
+        - name: CA2245
           href: code-analysis/rules/ca2245.md
-        - name: "CA2246: Do not assign a symbol and its member in the same statement"
+        - name: CA2246
           href: code-analysis/rules/ca2246.md
-        - name: "CA2247: Argument passed to TaskCompletionSource constructor should be TaskCreationOptions enum instead of TaskContinuationOptions enum"
+        - name: CA2247
           href: code-analysis/rules/ca2247.md
-        - name: "CA2248: Provide correct enum argument to Enum.HasFlag"
+        - name: CA2248
           href: code-analysis/rules/ca2248.md
-        - name: "CA2249: Consider using String.Contains instead of String.IndexOf"
+        - name: CA2249
           href: code-analysis/rules/ca2249.md
     - name: API analyzer
       href: ../standard/analyzers/api-analyzer.md

@@ -3,6 +3,7 @@ title: Using F# on Azure
 description: Guide to using Azure services with F#
 author: sylvanc
 ms.date: 07/29/2020
+ms.custom: "devx-track-fsharp"
 ---
 
 # Using F# on Azure

@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 640e5796-2796-433c-af37-4d2a2334895b
 ---
 # Visual Basic Programming Guide
+
 As with any modern programming language, Visual Basic supports many common programming constructs and language elements. This guide describes all the major elements of programming with Visual Basic.  
   
 ## In This Section  
+
  [Program Structure and Code Conventions](program-structure/program-structure-and-code-conventions.md)  
  Contains documentation on the basic structure and code conventions of Visual Basic, such as naming conventions, comments in code, and limitations within Visual Basic.  
   
@@ -21,6 +23,7 @@ As with any modern programming language, Visual Basic supports many common progr
  Explains the interoperability issues associated with creating and using component object model (COM) objects with Visual Basic.  
   
 ## Related Sections  
+
  [Visual Basic Language Reference](../language-reference/index.md)  
  Provides reference information about various aspects of Visual Basic programming.  
   

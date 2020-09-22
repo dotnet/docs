@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: c8aba36e-fa47-4a33-8b68-cb2009218270
 ---
 # Constants and Enumerations in Visual Basic
+
 Constants are a way to use meaningful names in place of a value that does not change. Constants store values that, as the name implies, remain constant throughout the execution of an application. You can use constants to provide meaningful names, instead of numbers, making your code more readable.  
   
  Enumerations provide a convenient way to work with sets of related constants, and to associate constant values with names. For example, you can declare an enumeration for a set of integer constants associated with the days of the week, and then use the names of the days rather than their integer values in your code.  

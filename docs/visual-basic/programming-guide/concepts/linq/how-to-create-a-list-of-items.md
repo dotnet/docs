@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: fe941aba-6340-455c-8b1f-ffd9c3eb1ac5
 ---
 # How to: Create a List of Items
+
 The code in this topic defines a `Student` class and creates a list of instances of the class. The list is designed to support the topic [Walkthrough: Writing Queries in Visual Basic](walkthrough-writing-queries.md). It also can be used for any application that requires a list of objects. The code defines the items in the list of students by using object initializers.  
   
 ## Example  
+
  If you are working on the walkthrough, you can use this code for the Module1.vb file of the project that is created there. Just replace the lines marked with **** in the `Main` method with the queries and query executions that are provided in the walkthrough.  
   
  [!code-vb[VbLINQHowToCreateList#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQHowToCreateList/VB/Class1.vb#1)]  

@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: c43edfae-9114-4096-9ebc-8c5c957a1067
 ---
 # Parameter Arrays (Visual Basic)
+
 Usually, you cannot call a procedure with more arguments than the procedure declaration specifies. When you need an indefinite number of arguments, you can declare a *parameter array*, which allows a procedure to accept an array of values for a parameter. You do not have to know the number of elements in the parameter array when you define the procedure. The array size is determined individually by each call to the procedure.  
   
 ## Declaring a ParamArray  
+
  You use the [ParamArray](../../../language-reference/modifiers/paramarray.md) keyword to denote a parameter array in the parameter list. The following rules apply:  
   
 - A procedure can define only one parameter array, and it must be the last parameter in the procedure definition.  
@@ -26,6 +28,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
 - All parameters preceding the parameter array must be required. The parameter array must be the only optional parameter.  
   
 ## Calling a ParamArray  
+
  When you call a procedure that defines a parameter array, you can supply the argument in any one of the following ways:  
   
 - Nothing — that is, you can omit the [ParamArray](../../../language-reference/modifiers/paramarray.md) argument. In this case, an empty array is passed to the procedure. If you explicitly pass the [Nothing](../../../language-reference/nothing.md) keyword, a null array is passed to the procedure and may result in a NullReferenceException if the called procedure does not check for this condition.
@@ -40,6 +43,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
 > Whenever you deal with an array which can be indefinitely large, there is a risk of overrunning some internal capacity of your application. If you accept a parameter array, you should test for the size of the array that the calling code passed to it. Take appropriate steps if it is too large for your application. For more information, see [Arrays](../arrays/index.md).  
   
 ## Example  
+
  The following example defines and calls the function `calcSum`. The `ParamArray` modifier for the parameter `args` enables the function to accept a variable number of arguments.  
   
  [!code-vb[VbVbalrStatements#26](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#26)]  

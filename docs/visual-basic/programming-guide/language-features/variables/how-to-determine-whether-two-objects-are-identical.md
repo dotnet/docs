@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
 ---
 # How to: Determine Whether Two Objects Are Identical (Visual Basic)
+
 In Visual Basic, two variable references are considered identical if their pointers are the same, that is, if both variables point to the same class instance in memory. For example, in a Windows Forms application, you might want to make a comparison to determine whether the current instance (`Me`) is the same as a particular instance, such as `Form2`.  
   
  Visual Basic provides two operators to compare pointers. The [Is Operator](../../../language-reference/operators/is-operator.md) returns `True` if the objects are identical, and the [IsNot Operator](../../../language-reference/operators/isnot-operator.md) returns `True` if they are not.  
@@ -23,6 +24,7 @@ In Visual Basic, two variable references are considered identical if their point
      `Is` returns `True` if the objects point to the same class instance.  
   
 ## Determining if Two Objects Are Not Identical  
+
  Sometimes you want to perform an action if the two objects are not identical, and it can be awkward to combine `Not` and `Is`, for example `If Not obj1 Is obj2`. In such a case you can use the `IsNot` operator.  
   
 #### To determine if two objects are not identical  
@@ -34,6 +36,7 @@ In Visual Basic, two variable references are considered identical if their point
      `IsNot` returns `True` if the objects do not point to the same class instance.  
   
 ## Example  
+
  The following example tests pairs of `Object` variables to see if they point to the same class instance.  
   
  [!code-vb[VbVbalrKeywords#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/class7.vb#14)]  

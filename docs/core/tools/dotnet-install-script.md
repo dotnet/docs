@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET Core SDK and the shared runtime.
-ms.date: 04/30/2020
+ms.date: 09/22/2020
 ---
 # dotnet-install scripts reference
 
@@ -179,7 +179,6 @@ The install scripts do not update the registry on Windows. They just download th
   Represents a specific build version. The possible values are:
 
   - `latest` - Latest build on the channel (used with the `-Channel` option).
-  - `coherent` - Latest coherent build on the channel; uses the latest stable package combination (used with Branch name `-Channel` options).
   - Three-part version in X.Y.Z format representing a specific build version; supersedes the `-Channel` option. For example: `2.0.0-preview2-006120`.
 
   If not specified, `-Version` defaults to `latest`.

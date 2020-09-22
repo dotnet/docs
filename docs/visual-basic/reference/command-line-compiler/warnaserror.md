@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
 ---
 # -warnaserror (Visual Basic)
+
 Causes the compiler to treat the first occurrence of a warning as an error.  
   
 ## Syntax  
@@ -24,6 +25,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
 |`numberList`|Optional. Comma-delimited list of the warning ID numbers to which the `-warnaserror` option applies. If no warning ID is specified, the `-warnaserror` option applies to all warnings.|  
   
 ## Remarks  
+
  The `-warnaserror` option treats all warnings as errors. Any messages that would ordinarily be reported as warnings are instead reported as errors. The compiler reports subsequent occurrences of the same warning as warnings.  
   
  By default, `-warnaserror-` is in effect, which causes the warnings to be informational only. The `-warnaserror` option, which is the same as `-warnaserror+`, causes warnings to be treated as errors.  
@@ -42,6 +44,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**.<br />2.  Click the **Compile** tab.<br />3.  Make sure the **Disable all warnings** check box is unchecked.<br />4.  Make sure the **Treat all warnings as errors** check box is unchecked.<br />5.  Select **Error** from the **Notification** column adjacent to the warning that should be treated as an error.|  
   
 ## Example  
+
  The following code compiles `In.vb` and directs the compiler to display an error for the first occurrence of every warning it finds.  
   
 ```console
@@ -49,6 +52,7 @@ vbc -warnaserror in.vb
 ```  
   
 ## Example  
+
  The following code compiles `T2.vb` and treats only the warning for unused local variables (42024) as an error.  
   
 ```console

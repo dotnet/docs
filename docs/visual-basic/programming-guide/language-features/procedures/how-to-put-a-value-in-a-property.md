@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
 ---
 # How to: Put a Value in a Property (Visual Basic)
+
 You store a value in a property by putting the property name on the left side of an assignment statement.  
   
  The property's `Set` procedure stores a value, but you do not explicitly call it by name. You use the property just as you would use a variable. Visual Basic makes the calls to the property's procedures.  

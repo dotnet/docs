@@ -19,11 +19,13 @@ helpviewer_keywords:
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
 ---
 # Enumerations and Name Qualification (Visual Basic)
+
 Normally, when referring to a member of an enumeration, you must qualify the member name with the enumeration name. For example, to refer to the `Sunday` member of your `Days` enumeration, you would use the following syntax:  
   
  [!code-vb[VbEnumsTask#18](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class2.vb#18)]  
   
 ## Using the Imports Statement  
+
  You can avoid using fully qualified names by adding an `Imports` statement to the namespace declarations section of your code, as in the following example:  
   
  [!code-vb[VbEnumsTask#22](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbEnumsTask/VB/Class1.vb#22)]  

@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 5fcb0631-dce5-45ff-8abb-353cae21e14f
 ---
 # Element Operations (Visual Basic)
+
 Element operations return a single, specific element from a sequence.  
   
  The standard query operator methods that perform element operations are listed in the following section.  

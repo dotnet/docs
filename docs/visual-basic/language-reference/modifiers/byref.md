@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
 ---
 # ByRef (Visual Basic)
+
 Specifies that an argument is passed in such a way that the called procedure can change the value of a variable underlying the argument in the calling code.  
   
 ## Remarks  
+
  The `ByRef` modifier can be used in these contexts:  
   
  [Declare Statement](../statements/declare-statement.md)  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: c7ffbd6d-05c6-4261-b44b-1bcd521bb350
 ---
 # Unable to load information for class '\<classname>'
+
 A reference was made to a class that is not available.  
   
  **Error ID:** BC30712  

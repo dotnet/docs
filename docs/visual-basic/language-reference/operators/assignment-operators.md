@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 43b7e40c-b7af-45f6-b100-198a90f2561e
 ---
 # Assignment Operators (Visual Basic)
+
 The following are the assignment operators defined in Visual Basic.  
   
  [= Operator](assignment-operator.md)  

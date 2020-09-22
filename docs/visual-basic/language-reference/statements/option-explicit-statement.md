@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
 ---
 # Option Explicit Statement (Visual Basic)
+
 Forces explicit declaration of all variables in a file, or allows implicit declarations of variables.  
   
 ## Syntax  
@@ -22,6 +23,7 @@ Option Explicit { On | Off }
 ```  
   
 ## Parts  
+
  `On`  
  Optional. Enables `Option Explicit` checking. If `On` or `Off` is not specified, the default is `On`.  
   
@@ -29,6 +31,7 @@ Option Explicit { On | Off }
  Optional. Disables `Option Explicit` checking.  
   
 ## Remarks  
+
  When `Option Explicit On` or `Option Explicit` appears in a file, you must explicitly declare all variables by using the `Dim` or `ReDim` statements. If you try to use an undeclared variable name, an error occurs at compile time. The `Option Explicit Off` statement allows implicit declaration of variables.  
   
  If used, the `Option Explicit` statement must appear in a file before any other source code statements.  
@@ -37,6 +40,7 @@ Option Explicit { On | Off }
 > Setting `Option Explicit` to `Off` is generally not a good practice. You could misspell a variable name in one or more locations, which would cause unexpected results when the program is run.  
   
 ## When an Option Explicit Statement Is Not Present  
+
  If the source code does not contain an `Option Explicit` statement, the **Option Explicit** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. If the command-line compiler is used, the [-optionexplicit](../../reference/command-line-compiler/optionexplicit.md) compiler option is used.  
   
 #### To set Option Explicit in the IDE  
@@ -54,6 +58,7 @@ Option Explicit { On | Off }
 - Include the [-optionexplicit](../../reference/command-line-compiler/optionexplicit.md) compiler option in the **vbc** command.  
   
 ## Example  
+
  The following example uses the `Option Explicit` statement to force explicit declaration of all variables. Attempting to use an undeclared variable causes an error at compile time.  
   
  [!code-vb[VbVbalrStatements#47](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#47)]  

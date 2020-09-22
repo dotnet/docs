@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
 ---
 # From Clause (Visual Basic)
+
 Specifies one or more range variables and a collection to query.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ From element [ As type ] In collection [ _ ]
 |`collection`|Required. Refers to the collection to be queried. Must be an enumerable type.|  
   
 ## Remarks  
+
  The `From` clause is used to identify the source data for a query and the variables that are used to refer to an element from the source collection. These variables are called *range variables*. The `From` clause is required for a query, except when the `Aggregate` clause is used to identify a query that returns only aggregated results. For more information, see [Aggregate Clause](aggregate-clause.md).  
   
  You can specify multiple `From` clauses in a query to identify multiple collections to be joined. When multiple collections are specified, they are iterated over independently, or you can join them if they are related. You can join collections implicitly by using the `Select` clause, or explicitly by using the `Join` or `Group Join` clauses. As an alternative, you can specify multiple range variables and collections in a single `From` clause, with each related range variable and collection separated from the others by a comma. The following code example shows both syntax options for the `From` clause.  
@@ -59,6 +61,7 @@ From element [ As type ] In collection [ _ ]
 - Identify parts of the result to return by using the `Skip`, `Take`, `Skip While`, and `Take While` clauses.  
   
 ## Example  
+
  The following query expression uses a `From` clause to declare a range variable `cust` for each `Customer` object in the `customers` collection. The `Where` clause uses the range variable to restrict the output to customers from the specified region. The `For Each` loop displays the company name for each customer in the query result.  
   
  [!code-vb[VbSimpleQuerySamples#23](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbSimpleQuerySamples/VB/QuerySamples1.vb#23)]  

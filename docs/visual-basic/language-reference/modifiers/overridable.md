@@ -18,9 +18,11 @@ helpviewer_keywords:
 ms.assetid: 612581e7-8a4c-4a5d-beff-3402fffa6f35
 ---
 # Overridable (Visual Basic)
+
 Specifies that a property or procedure can be overridden by an identically named property or procedure in a derived class.  
   
 ## Remarks  
+
  The `Overridable` modifier allows a property or method in a class to be overridden in a derived class. The [NotOverridable](notoverridable.md) modifier prevents a property or method from being overridden in a derived class.  For more information, see [Inheritance Basics](../../programming-guide/language-features/objects-and-classes/inheritance-basics.md).  
   
  If the `Overridable` or `NotOverridable` modifier is not specified, the default setting depends on whether the property or method overrides a base class property or method. If the property or method overrides a base class property or method, the default setting is `Overridable`; otherwise, it is `NotOverridable`.  
@@ -32,6 +34,7 @@ Specifies that a property or procedure can be overridden by an identically named
  You can use `Overridable` only in a property or procedure declaration statement.  
   
 ## Combined Modifiers  
+
  You cannot specify `Overridable` or `NotOverridable` for a `Private` method.  
   
  You cannot specify `Overridable` together with `MustOverride`, `NotOverridable`, or `Shared` in the same declaration.  
@@ -39,6 +42,7 @@ Specifies that a property or procedure can be overridden by an identically named
  Because an overriding element is implicitly overridable, you cannot combine `Overridable` with `Overrides`.  
   
 ## Usage  
+
  The `Overridable` modifier can be used in these contexts:  
   
  [Function Statement](../statements/function-statement.md)  

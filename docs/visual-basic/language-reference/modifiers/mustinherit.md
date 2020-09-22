@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
 ---
 # MustInherit (Visual Basic)
+
 Specifies that a class can be used only as a base class and that you cannot create an object directly from it.  
   
 ## Remarks  
+
  The purpose of a *base class* (also known as an *abstract class*) is to define functionality that is common to all the classes derived from it. This saves the derived classes from having to redefine the common elements. In some cases, this common functionality is not complete enough to make a usable object, and each derived class defines the missing functionality. In such a case, you want the consuming code to create objects only from the derived classes. You use `MustInherit` on the base class to enforce this.  
   
  Another use of a `MustInherit` class is to restrict a variable to a set of related classes. You can define a base class and derive all these related classes from it. The base class does not need to provide any functionality common to all the derived classes, but it can serve as a filter for assigning values to variables. If your consuming code declares a variable as the base class, Visual Basic allows you to assign only an object from one of the derived classes to that variable.  
@@ -28,6 +30,7 @@ Specifies that a class can be used only as a base class and that you cannot crea
 - **Combined Modifiers.** You cannot specify `MustInherit` together with `NotInheritable` in the same declaration.  
   
 ## Example  
+
  The following example illustrates both forced inheritance and forced overriding. The base class `shape` defines a variable `acrossLine`. The classes `circle` and `square` derive from `shape`. They inherit the definition of `acrossLine`, but they must define the function `area` because that calculation is different for each kind of shape.  
   
  [!code-vb[VbVbalrKeywords#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrKeywords/VB/Class1.vb#2)]  
@@ -37,6 +40,7 @@ Specifies that a class can be used only as a base class and that you cannot crea
  Because they are declared as `shape`, the variables `shape1` and `shape2` are restricted to objects from the derived classes `circle` and `square`. Visual Basic does not allow you to assign any other object to these variables, which gives you a high level of type safety.  
   
 ## Usage  
+
  The `MustInherit` modifier can be used in this context:  
   
  [Class Statement](../statements/class-statement.md)  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b5c2c4bd-3b2a-4a73-aaeb-55728eb03b68
 ---
 # Using the iteration variable in a lambda expression may have unexpected results
+
 Using the iteration variable in a lambda expression may have unexpected results. Instead, create a local variable within the loop and assign it the value of the iteration variable.  
   
  This warning appears when you use a loop iteration variable in a lambda expression that is declared inside the loop. For example, the following example causes the warning to appear.  

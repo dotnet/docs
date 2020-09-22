@@ -6,12 +6,15 @@ helpviewer_keywords:
 ms.assetid: cc814d79-6f7f-4e54-8b9d-5ecfdd77a0b8
 ---
 # My.Computer Object
+
 Provides properties for manipulating computer components such as audio, the clock, the keyboard, the file system, and so on.  
   
 ## Remarks  
+
  For information about the methods and properties of the `My.Computer` object, see <xref:Microsoft.VisualBasic.Devices.Computer>. The base class <xref:Microsoft.VisualBasic.Devices.ServerComputer> provides the members that are available in all projects.  
   
 ## Requirements  
+
  **Namespace:** <xref:Microsoft.VisualBasic.Devices>  
   
  **Class:** <xref:Microsoft.VisualBasic.Devices.Computer> (the base class <xref:Microsoft.VisualBasic.Devices.ServerComputer> provides the members that are available in all projects).  

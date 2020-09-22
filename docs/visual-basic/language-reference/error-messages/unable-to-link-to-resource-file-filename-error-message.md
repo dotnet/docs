@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 67ae276e-80d4-4162-ba00-e546c9294340
 ---
 # Unable to link to resource file '\<filename>': \<error message>
+
 The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error linking to a native COM+ resource file from the assembly.  
   
  **Error ID:** BC30144  

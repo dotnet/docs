@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: e7658ebc-da45-451b-a409-a0f8915f0beb
 ---
 # Variable '\<variablename>' hides a variable in an enclosing block
+
 A variable enclosed in a block has the same name as another local variable.  
   
  **Error ID:** BC30616  

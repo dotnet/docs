@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 06800966-9c3b-4844-9f13-83ac95607d32
 ---
 # Property '\<propertyname>' doesn't return a value on all code paths
+
 Property '\<propertyname>' doesn't return a value on all code paths. A null reference exception could occur at run time when the result is used.  
   
  A property `Get` procedure has at least one possible path through its code that does not return a value.  

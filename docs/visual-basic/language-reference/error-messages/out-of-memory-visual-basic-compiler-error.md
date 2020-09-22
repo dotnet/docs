@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6bc0939c-e279-4875-a91c-f4076860b5b9
 ---
 # Out of memory (Visual Basic Compiler Error)
+
 More memory was required than is available.  
   
  **Error ID:** BC2004  

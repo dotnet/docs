@@ -14,6 +14,7 @@ If you run into compatibility issue with this change on the .NET Framework 4.7.1
     <AppContextSwitchOverrides value="Switch.System.ServiceModel.UseSha1InPipeConnectionGetHashAlgorithm=true" />
   </runtime>
 </configuration>
+```
 
 | Name    | Value   |
 |:--------|:--------|

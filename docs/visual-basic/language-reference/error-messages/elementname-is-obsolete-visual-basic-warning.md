@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 729e3eb5-76ac-4c55-9fdd-78350e0de55e
 ---
 # '\<elementname>' is obsolete (Visual Basic Warning)
+
 A statement attempts to access a programming element which has been marked with the <xref:System.ObsoleteAttribute> attribute and the directive to treat it as a warning.  
   
  You can mark any programming element as being no longer in use by applying <xref:System.ObsoleteAttribute> to it. If you do this, you can set the attribute's <xref:System.ObsoleteAttribute.IsError%2A> property to either `True` or `False`. If you set it to `True`, the compiler treats an attempt to use the element as an error. If you set it to `False`, or let it default to `False`, the compiler issues a warning if there is an attempt to use the element.  

@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
 ---
 # Declaration Contexts and Default Access Levels (Visual Basic)
+
 This topic describes which Visual Basic types can be declared within which other types, and what their access levels default to if not specified.  
   
 ## Declaration Context Levels  
+
  The *declaration context* of a programming element is the region of code in which it is declared. This is often another programming element, which is then called the *containing element*.  
   
  The levels for declaration contexts are the following:  

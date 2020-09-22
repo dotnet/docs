@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 2c5363e1-62c2-4f5a-b675-c7337aeb363d
 ---
 # Number of indices exceeds the number of dimensions of the indexed array
+
 The number of indices used to access an array element must be exactly the same as the rank of the array, that is, the number of dimensions declared for it.  
   
  **Error ID:** BC30106  

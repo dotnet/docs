@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
 ---
 # Delegate Statement
+
 Used to declare a delegate. A delegate is a reference type that refers to a `Shared` method of a type or to an instance method of an object. Any procedure with matching parameter and return types can be used to create an instance of this delegate class. The procedure can then later be invoked by means of the delegate instance.  
   
 ## Syntax  
@@ -33,6 +34,7 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
 |`type`|Required if you specify a `Function` procedure. Data type of the return value.|  
   
 ## Remarks  
+
  The `Delegate` statement defines the parameter and return types of a delegate class. Any procedure with matching parameters and return types can be used to create an instance of this delegate class. The procedure can then later be invoked by means of the delegate instance, by calling the delegate's `Invoke` method.  
   
  Delegates can be declared at the namespace, module, class, or structure level, but not within a procedure.  
@@ -54,6 +56,7 @@ Used to declare a delegate. A delegate is a reference type that refers to a `Sha
  For more information about delegates, see [Delegates](../../programming-guide/language-features/delegates/index.md).  
   
 ## Example  
+
  The following example uses the `Delegate` statement to declare a delegate for operating on two numbers and returning a number. The `DelegateTest` method takes an instance of a delegate of this type and uses it to operate on pairs of numbers.  
   
  [!code-vb[VbVbalrDelegates#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDelegates/VB/Class1.vb#14)]  

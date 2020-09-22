@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 45f552c8-57c6-44c0-97d3-e510119b257a
 ---
 # Late bound resolution; runtime errors could occur
+
 An object is assigned to a variable declared to be of the [Object Data Type](../data-types/object-data-type.md).  
   
  When you declare a variable as `Object`, the compiler must perform *late binding*, which causes extra operations at run time. It also exposes your application to potential run-time errors. For example, if you assign a <xref:System.Windows.Forms.Form> to the `Object` variable and then try to access the <xref:System.Xml.XmlDocument.NameTable%2A?displayProperty=nameWithType> property, the runtime throws a <xref:System.MemberAccessException> because the <xref:System.Windows.Forms.Form> class does not expose a `NameTable` property.  

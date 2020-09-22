@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 7459562b-cd4f-4590-95e0-6126ae3589a5
 ---
 # Ordinal is not valid
+
 Your call to a dynamic-link library (DLL) indicated to use a number instead of a procedure name, using the `#num` syntax. This error has the following possible causes:  
   
 - An attempt to convert the `#num` expression to an ordinal failed.  

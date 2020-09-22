@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 65292704-6e7d-4622-9f50-eb655a59b016
 ---
 # Input past end of file
+
 Either an `Input` statement is reading from a file that is empty or one in which all the data is used, or you used the `EOF` function with a file opened for binary access.  
   
 ## To correct this error  

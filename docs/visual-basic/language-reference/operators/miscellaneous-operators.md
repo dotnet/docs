@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 2423b3c5-fc3f-479c-bcd2-2c6ebe92814f
 ---
 # Miscellaneous operators (Visual Basic)
+
 The following are miscellaneous operators defined in Visual Basic.  
   
 [?. null-conditional operator](null-conditional-operators.md)

@@ -218,15 +218,15 @@ Another nice use for this feature is to combine it with init only properties to 
 
 You can return an instance created by the default constructor using a `return new();` expression.
 
-A similar feature improves the target type resolution of conditional expressions. With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
+A similar feature improves the target type resolution of [conditional expressions](../language-reference/operators/conditional-operator.md). With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
 
 Starting in C# 9.0, you can add the `static` modifier to lambda expressions or anonymous methods. Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous function can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
 
 Covariant return types provide flexibility for the return types of overridden functions. An overridden virtual function can return a type derived from the return type declared in the base class method. This can be useful for Records, and for other types that support virtual clone or factory methods.
 
-In addition, the `foreach` loop will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
+In addition, the [`foreach` loop](../language-reference/keywords/foreach-in.md) will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
 
-Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument.
+Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument. For more information, see the [Input parameters of a lambda expression](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../language-reference/operators/lambda-expressions.md) article.
 
 Finally, you can now apply attributes to local functions. For example, you can apply nullable attribute annotations to local functions.
 

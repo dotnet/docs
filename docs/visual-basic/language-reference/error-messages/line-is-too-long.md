@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 27270ec3-82a4-4693-a948-dd4664a5f060
 ---
 # Line is too long
+
 Source text lines cannot exceed 65535 characters.  
   
  **Error ID:** BC30494  

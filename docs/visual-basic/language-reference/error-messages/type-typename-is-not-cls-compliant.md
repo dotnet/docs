@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 634132c2-5646-44aa-98c6-f773e2e63882
 ---
 # Type \<typename> is not CLS-compliant
+
 A variable, property, or function return is declared with a data type that is not CLS-compliant.  
   
  For an application to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), it must use only CLS-compliant types.  

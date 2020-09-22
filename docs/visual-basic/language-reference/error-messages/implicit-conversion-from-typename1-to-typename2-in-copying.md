@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: ae48c738-dff8-4c0f-8931-bbb70b2c8b03
 ---
 # Implicit conversion from '\<typename1>' to '\<typename2>' in copying the value of 'ByRef' parameter '\<parametername>' back to the matching argument.
+
 A procedure is called with a [ByRef](../modifiers/byref.md) argument of a different type than that of its corresponding parameter.  
   
  If you pass an argument `ByRef`, Visual Basic sometimes copies the argument value into a local variable in the procedure instead of passing a reference. In such a case, when the procedure returns, Visual Basic must then copy the local variable value back into the argument in the calling code.  

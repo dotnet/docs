@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
 ---
 # Option Strict Statement
+
 Restricts implicit data type conversions to only widening conversions, disallows late binding, and disallows implicit typing that results in an `Object` type.  
   
 ## Syntax  
@@ -29,6 +30,7 @@ Option Strict { On | Off }
 |`Off`|Optional. Disables `Option Strict` checking.|  
   
 ## Remarks  
+
  When `Option Strict On` or `Option Strict` appears in a file, the following conditions cause a compile-time error:  
   
 - Implicit narrowing conversions  
@@ -53,6 +55,7 @@ Option Strict { On | Off }
 - It speeds up the execution of code. One reason for this is that if you do not specify a data type for a programming element, the Visual Basic compiler assigns it the `Object` type. Compiled code might have to convert back and forth between `Object` and other data types, which reduces performance.  
   
 ## Implicit Narrowing Conversion Errors  
+
  Implicit narrowing conversion errors occur when there is an implicit data type conversion that is a narrowing conversion.  
   
  Visual Basic can convert many data types to other data types. Data loss can occur when the value of one data type is converted to a data type that has less precision or a smaller capacity. A run-time error occurs if such a narrowing conversion fails. `Option Strict` ensures compile-time notification of these narrowing conversions so that you can avoid them. For more information, see [Implicit and Explicit Conversions](../../programming-guide/language-features/data-types/implicit-and-explicit-conversions.md) and [Widening and Narrowing Conversions](../../programming-guide/language-features/data-types/widening-and-narrowing-conversions.md).  
@@ -76,9 +79,11 @@ Option Strict { On | Off }
  Implicit narrowing conversion errors are suppressed at compile-time for conversions from the elements in a `For Each…Next` collection to the loop control variable. This occurs even if `Option Strict` is on. For more information, see the "Narrowing Conversions" section in [For Each...Next Statement](for-each-next-statement.md).  
   
 ## Late Binding Errors  
+
  An object is late bound when it is assigned to a property or method of a variable that is declared to be of type `Object`. For more information, see [Early and Late Binding](../../programming-guide/language-features/early-late-binding/index.md).  
   
 ## Implicit Object Type Errors  
+
  Implicit object type errors occur when an appropriate type cannot be inferred for a declared variable, so a type of `Object` is inferred. This primarily occurs when you use a `Dim` statement to declare a variable without using an `As` clause, and `Option Infer` is off. For more information, see [Option Infer Statement](option-infer-statement.md) and the [Visual Basic Language Specification](../../reference/language-specification/index.md).  
   
  For method parameters, the `As` clause is optional if `Option Strict` is off. However, if any one parameter uses an `As` clause, they all must use it. If `Option Strict` is on, the `As` clause is required for every parameter definition.  
@@ -86,6 +91,7 @@ Option Strict { On | Off }
  If you declare a variable without using an `As` clause and set it to `Nothing`, the variable has a type of `Object`. No compile-time error occurs in this case when `Option Strict` is on and `Option Infer` is on. An example of this is `Dim something = Nothing`.  
   
 ### Default Data Types and Values  
+
  The following table describes the results of various combinations of specifying the data type and initializer in a [Dim Statement](dim-statement.md).  
   
 |Data type specified?|Initializer specified?|Example|Result|  
@@ -96,11 +102,13 @@ Option Strict { On | Off }
 |Yes|Yes|`Dim qty  As Integer = 5`|If the data type of the initializer is not convertible to the specified data type, a compile-time error occurs.|  
   
 ## When an Option Strict Statement Is Not Present  
+
  If the source code does not contain an `Option Strict` statement, the **Option strict** setting on the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) is used. The **Compile Page** has settings that provide additional control over the conditions that generate an error.  
   
  If you are using the command-line compiler, you can use the [-optionstrict](../../reference/command-line-compiler/optionstrict.md) compiler option to specify a setting for `Option Strict`.  
   
 ### To set Option Strict in the IDE  
+
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 1. In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
@@ -108,6 +116,7 @@ Option Strict { On | Off }
 2. On the **Compile** tab, set the value in the **Option Strict** box.  
   
 ### <a name="conditions"></a> To set warning configurations in the IDE  
+
  When you use the [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic) instead of an `Option Strict` statement, you have additional control over the conditions that generate errors. The **Warning configurations** section of the **Compile Page** has settings that correspond to the three conditions that cause a compile-time error when `Option Strict` is on. Following are these settings:  
   
 - **Implicit conversion**  
@@ -121,24 +130,29 @@ Option Strict { On | Off }
  You can individually change each warning configuration setting to **None**, **Warning**, or **Error**. If all three warning configuration settings are set to **Error**, `On` appears in the `Option strict` box. If all three are set to **None**, `Off` appears in this box. For any other combination of these settings, **(custom)** appears.  
   
 ### To set the Option Strict default setting for new projects  
+
  When you create a project, the **Option Strict** setting on the **Compile** tab is set to the **Option Strict** setting in the **Options** dialog box.  
   
  To set `Option Strict` in this dialog box, on the **Tools** menu, click **Options**. In the **Options** dialog box, expand **Projects and Solutions**, and then click **VB Defaults**. The initial default setting in **VB Defaults** is `Off`.  
   
 ### To set Option Strict on the command line  
+
  Include the [-optionstrict](../../reference/command-line-compiler/optionstrict.md) compiler option in the **vbc** command.  
   
 ## Example  
+
  The following examples demonstrate compile-time errors caused by implicit type conversions that are narrowing conversions. This category of errors corresponds to the **Implicit conversion** condition on the **Compile Page**.  
   
  [!code-vb[VbVbalrStatements#161](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#161)]  
   
 ## Example  
+
  The following example demonstrates a compile-time error caused by late binding. This category of errors corresponds to the **Late binding; call could fail at run time** condition on the **Compile Page**.  
   
  [!code-vb[VbVbalrStatements#162](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#162)]  
   
 ## Example  
+
  The following examples demonstrate errors caused by variables that are declared with an implicit type of `Object`. This category of errors corresponds to the **Implicit type; object assumed** condition on the **Compile Page**.  
   
  [!code-vb[VbVbalrStatements#163](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/class13.vb#163)]  

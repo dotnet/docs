@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 060c4b08-798e-40f1-94cf-c05c524f1b8a
 ---
 # Non-CLS-compliant \<membername> is not allowed in a CLS-compliant interface
+
 A property, procedure, or event in an interface is marked as `<CLSCompliant(True)>` when the interface itself is marked as `<CLSCompliant(False)>` or is not marked.  
   
  For an interface to be compliant with the [Language Independence and Language-Independent Components](../../../standard/language-independence-and-language-independent-components.md) (CLS), all its members must be compliant.  

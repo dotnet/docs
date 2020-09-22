@@ -14,6 +14,7 @@ If you encounter compatibility issues with this change on the .NET Framework 4.7
     <AppContextSwitchOverrides value="Switch.System.ServiceModel.DisableAddressHeaderCollectionValidation=true" />
   </runtime>
 </configuration>
+```
 
 | Name    | Value   |
 |:--------|:--------|

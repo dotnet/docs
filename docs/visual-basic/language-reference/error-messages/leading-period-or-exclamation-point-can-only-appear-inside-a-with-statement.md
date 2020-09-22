@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 70daaee1-14f9-45b7-9f30-53794310b95e
 ---
 # Leading '.' or '!' can only appear inside a 'With' statement
+
 A period (.) or exclamation point (!) that is not inside a `With` block occurs without an expression on the left. Member access (`.`) and dictionary member access (`!`) require an expression specifying the element that contains the member. This must appear immediately to the left of the accessor or as the target of a `With` block containing the member access.  
   
  **Error ID:** BC30157  

@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
 ---
 # Or Operator (Visual Basic)
+
 Performs a logical disjunction on two `Boolean` expressions, or a bitwise disjunction on two numeric expressions.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ result = expression1 Or expression2
 ```  
   
 ## Parts  
+
  `result`  
  Required. Any `Boolean` or numeric expression. For `Boolean` comparison, `result` is the inclusive logical disjunction of two `Boolean` values. For bitwise operations, `result` is a numeric value representing the inclusive bitwise disjunction of two numeric bit patterns.  
   
@@ -36,6 +38,7 @@ result = expression1 Or expression2
  Required. Any `Boolean` or numeric expression.  
   
 ## Remarks  
+
  For `Boolean` comparison, `result` is `False` if and only if both `expression1` and `expression2` evaluate to `False`. The following table illustrates how `result` is determined.  
   
 |If `expression1` is|And `expression2` is|The value of `result` is|  
@@ -61,14 +64,17 @@ result = expression1 Or expression2
 > Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
   
 ## Data Types  
+
  If the operands consist of one `Boolean` expression and one numeric expression, Visual Basic converts the `Boolean` expression to a numeric value (–1 for `True` and 0 for `False`) and performs a bitwise operation.  
   
  For a `Boolean` comparison, the data type of the result is `Boolean`. For a bitwise comparison, the result data type is a numeric type appropriate for the data types of `expression1` and `expression2`. See the "Relational and Bitwise Comparisons" table in [Data Types of Operator Results](data-types-of-operator-results.md).  
   
 ## Overloading  
+
  The `Or` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, be sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
+
  The following example uses the `Or` operator to perform an inclusive logical disjunction on two expressions. The result is a `Boolean` value that represents whether either of the two expressions is `True`.  
   
  [!code-vb[VbVbalrOperators#35](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#35)]  
@@ -76,6 +82,7 @@ result = expression1 Or expression2
  The preceding example produces results of `True`, `True`, and `False`, respectively.  
   
 ## Example  
+
  The following example uses the `Or` operator to perform inclusive logical disjunction on the individual bits of two numeric expressions. The bit in the result pattern is set if either of the corresponding bits in the operands is set to 1.  
   
  [!code-vb[VbVbalrOperators#36](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#36)]  

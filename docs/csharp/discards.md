@@ -2,7 +2,7 @@
 title: Discards - C# Guide
 description: Describes C#'s support for discards, which are unassigned, discardable variables, and the ways in which discards can be used.
 ms.technology: csharp-fundamentals
-ms.date: 07/21/2017
+ms.date: 09/22/2020
 ---
 # Discards - C# Guide
 
@@ -14,12 +14,14 @@ You indicate that a variable is a discard by assigning it the underscore (`_`) a
 (_, _, area) = city.GetCityInformation(cityName);
 ```
 
-In C# 7.0, discards are supported in assignments in the following contexts:
+In C# 7.0 and later, discards are supported in assignments in the following contexts:
 
 - Tuple and object [deconstruction](deconstruct.md).
 - Pattern matching with [is](language-reference/keywords/is.md) and [switch](language-reference/keywords/switch.md).
 - Calls to methods with `out` parameters.
 - A standalone `_` when no `_` is in scope.
+
+Beginning with C# 9.0, you can use discards to specify unused input parameters of a lambda expression. For more information, see the [Input parameters of a lambda expression](language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](language-reference/operators/lambda-expressions.md) article.
 
 When `_` is a valid discard, attempting to retrieve its value or use it in an assignment operation generates compiler error CS0301, "The name '\_' does not exist in the current context". This is because `_` is not assigned a value, and may not even be assigned a storage location. If it were an actual variable, you could not discard more than one value, as the previous example did.
 

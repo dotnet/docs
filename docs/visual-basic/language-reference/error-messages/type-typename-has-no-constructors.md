@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: aff3e1df-abe6-4bc0-9abc-a1e70514c561
 ---
 # Type '\<typename>' has no constructors
+
 A type does not support a call to `Sub New()`. One possible cause is a corrupted compiler or binary file.  
   
  **Error ID:** BC30251  

@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
 ---
 # As Clause (Visual Basic)
+
 Introduces an `As` clause, which identifies a data type in a declaration statement or a constraint list on a generic type parameter.  
   
 ## Remarks  
+
  The `As` keyword can be used in these contexts:  
   
  [Aggregate Clause](../queries/aggregate-clause.md)  

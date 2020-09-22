@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b0faf204-57fd-44de-8c05-9db027eea663
 ---
 # Type '\<typename>' is not defined
+
 The statement has made reference to a type that has not been defined. You can define a type in a declaration statement such as `Enum`, `Structure`, `Class`, or `Interface`.  
   
  **Error ID:** BC30002  

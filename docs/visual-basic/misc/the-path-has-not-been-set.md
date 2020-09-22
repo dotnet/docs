@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 2e61146f-1b42-4798-b823-bd1041d9d248
 ---
 # The path has not been set
+
 A file operation, such as moving or copying a file, has been attempted without supplying the necessary path. This may result from incorrectly parsing the path.  
   
 ## To correct this error  

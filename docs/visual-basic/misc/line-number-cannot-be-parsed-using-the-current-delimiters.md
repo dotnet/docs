@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 1f8d4c2d-0334-4da8-acff-5460159835b3
 ---
 # Line \<number> cannot be parsed using the current Delimiters
+
 The specified line cannot be parsed because it uses delimiters other than those specified.  
   
 ## To correct this error  

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: abbde904-c191-4911-8822-c9dd2f81d616
 ---
 # Argument '\<argumentname>' is Nothing
+
 An expression contains a null argument.  
   
 ## To correct this error  

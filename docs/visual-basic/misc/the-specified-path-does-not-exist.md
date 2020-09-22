@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: b0855f92-03c2-446b-94c1-856c87359c54
 ---
 # The specified path does not exist
+
 A specified path does not exist, perhaps due to an error combining strings.  
   
 ## To correct this error  

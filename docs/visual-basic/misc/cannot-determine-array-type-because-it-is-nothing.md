@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: de70697d-e2aa-4661-bfbb-f7ba34539516
 ---
 # Cannot determine array type because it is Nothing
+
 The type of your array cannot be determined because it has been set to the value `Nothing`.  
   
 ## To correct this error  

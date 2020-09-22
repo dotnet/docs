@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 197d17cb-2904-4e12-8e45-aba23bddec8c
 ---
 # This system does not contain support for the SimplifiedChinese locale
+
 You are attempting to use the `VbStrConv.SimplifiedChinese` enumeration member, but your system does not support the Simplified Chinese locale.  
   
 ## To correct this error  

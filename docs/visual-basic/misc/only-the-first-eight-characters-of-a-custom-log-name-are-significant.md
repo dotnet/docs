@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: db2a0252-9ddd-4e93-a239-6a690cc09557
 ---
 # Only the first eight characters of a custom log name are significant
+
 When checking event log names for uniqueness, only the first eight characters are considered. A conflict may result from event logs that share their first eight characters.  
   
 ## To correct this error  

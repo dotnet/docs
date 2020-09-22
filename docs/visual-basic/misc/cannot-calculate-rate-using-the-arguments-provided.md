@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 17d5c8eb-4716-4b72-977f-a640c02e630d
 ---
 # Cannot calculate rate using the arguments provided
+
 The rate calculation does not contain the required arguments.  
   
 ## To correct this error  

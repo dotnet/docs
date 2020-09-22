@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 1819a045-659d-498a-9457-c466e902986f
 ---
 # -target:winmdobj (C# Compiler Options)
+
 If you use the **-target:winmdobj** compiler option, the compiler creates an intermediate .winmdobj file that you can convert to a Windows Runtime binary (.winmd) file. The .winmd file can then be consumed by JavaScript and C++ programs, in addition to managed language programs.  
   
 ## Syntax  
@@ -14,6 +15,7 @@ If you use the **-target:winmdobj** compiler option, the compiler creates an int
 ```  
   
 ## Remarks  
+
  The **winmdobj** setting signals to the compiler that an intermediate module is required. In response, Visual Studio compiles the C# class library as a .winmdobj file. The .winmdobj file can then be fed through the <xref:Microsoft.Build.Tasks.WinMDExp> export tool to produce a Windows metadata (.winmd) file. The .winmd file contains both the code from the original library and the WinMD metadata that is used by JavaScript or C++ and by the Windows Runtime.  
   
  The output of a file that’s compiled by using the **-target:winmdobj** compiler option is designed to be used only as input for the WimMDExp export tool; the .winmdobj file itself isn’t referenced directly.  
@@ -35,6 +37,7 @@ If you use the **-target:winmdobj** compiler option, the compiler creates an int
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## Example  
+
  The following command compiles `filename.cs` into an intermediate .winmdobj file.  
   
 ```console  

@@ -3,6 +3,7 @@ using System.IO;
 
 namespace ca1001
 {
+    //<snippet1>
     // This class violates the rule.
     public class NoDisposeMethod
     {
@@ -40,4 +41,5 @@ namespace ca1001
             GC.SuppressFinalize(this);
         }
     }
+    //</snippet1>
 }

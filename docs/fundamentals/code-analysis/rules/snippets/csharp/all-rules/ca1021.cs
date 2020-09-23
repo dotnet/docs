@@ -125,7 +125,7 @@ namespace ca1021
     {
         static void UseTheComplicatedClass()
         {
-            // Using the version with the ref and out parameters. 
+            // Using the version with the ref and out parameters.
             // You do not have to initialize an out parameter.
 
             string[] reply = new string[5];
@@ -170,7 +170,7 @@ namespace ca1021
             UseTheSimplifiedClass();
         }
     }
-    //<snippet2>
+    //</snippet2>
 
     //<snippet3>
     public class ReferenceTypesAndParameters

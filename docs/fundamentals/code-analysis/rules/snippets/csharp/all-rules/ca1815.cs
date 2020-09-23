@@ -3,7 +3,7 @@
 namespace ca1815
 {
     //<snippet1>
-    // Violates this rule    
+    // Violates this rule
     public struct Point
     {
         public Point(int x, int y)
@@ -21,7 +21,7 @@ namespace ca1815
 
 namespace ca1815_2
 {
-    //<snippet2
+    //<snippet2>
     public struct Point : IEquatable<Point>
     {
         public Point(int x, int y)

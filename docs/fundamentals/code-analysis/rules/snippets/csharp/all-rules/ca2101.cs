@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace ca2101
 {
-    //<snippet1
+    //<snippet1>
     class NativeMethods
     {
         // Violates rule: SpecifyMarshalingForPInvokeStringArguments.

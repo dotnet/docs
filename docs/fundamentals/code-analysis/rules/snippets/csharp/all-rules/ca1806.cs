@@ -9,7 +9,7 @@
         {
             if (title != null)
             {
-                // Violates this rule                
+                // Violates this rule
                 title.Trim();
             }
 
@@ -26,7 +26,7 @@
 
 namespace ca1806_2
 {
-    //<snippet2
+    //<snippet2>
     public class Book
     {
         private readonly string _Title;
@@ -60,7 +60,7 @@ namespace ca1806_3
 
         public static Book CreateBook()
         {
-            // Violates this rule            
+            // Violates this rule
             new Book();
             return new Book();
         }

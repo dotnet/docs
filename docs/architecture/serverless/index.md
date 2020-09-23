@@ -69,7 +69,7 @@ Participants and reviewers:
 
 This guide focuses on cloud native development of applications that use serverless. The book highlights the benefits and exposes the potential drawbacks of developing serverless apps and provides a survey of serverless architectures. Many examples of how serverless can be used are illustrated along with various serverless design patterns.
 
-This guide explains the components of the Azure serverless platform and focuses specifically on implementation of serverless using [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview). You'll learn about triggers and bindings as well as how to implement serverless apps that rely on state using durable functions. Finally, business examples and case studies will help provide context and a frame of reference to determine whether serverless is the right approach for your projects.
+This guide explains the components of the Azure serverless platform and focuses specifically on implementation of serverless using [Azure Functions](/azure/azure-functions/functions-overview). You'll learn about triggers and bindings as well as how to implement serverless apps that rely on state using durable functions. Finally, business examples and case studies will help provide context and a frame of reference to determine whether serverless is the right approach for your projects.
 
 ## Evolution of cloud platforms
 
@@ -111,12 +111,12 @@ Another feature of serverless is micro-billing. It's common for web applications
 
 ## What this guide doesn't cover
 
-This guide specifically emphasizes architecture approaches and design patterns and isn't a deep dive into the implementation details of Azure Functions, [Logic Apps](https://docs.microsoft.com/azure/logic-apps/logic-apps-what-are-logic-apps), or other serverless platforms. This guide doesn't cover, for example, advanced workflows with Logic Apps or features of Azure Functions such as configuring Cross-Origin Resource Sharing (CORS), applying custom domains, or uploading SSL certificates. These details are available through the online [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/functions-reference).
+This guide specifically emphasizes architecture approaches and design patterns and isn't a deep dive into the implementation details of Azure Functions, [Logic Apps](/azure/logic-apps/logic-apps-what-are-logic-apps), or other serverless platforms. This guide doesn't cover, for example, advanced workflows with Logic Apps or features of Azure Functions such as configuring Cross-Origin Resource Sharing (CORS), applying custom domains, or uploading SSL certificates. These details are available through the online [Azure Functions documentation](/azure/azure-functions/functions-reference).
 
 ### Additional resources
 
-- [Azure Architecture center](https://docs.microsoft.com/azure/architecture/)
-- [Best practices for cloud applications](https://docs.microsoft.com/azure/architecture/best-practices/api-design)
+- [Azure Architecture center](/azure/architecture/)
+- [Best practices for cloud applications](/azure/architecture/best-practices/api-design)
 
 ## Who should use the guide
 

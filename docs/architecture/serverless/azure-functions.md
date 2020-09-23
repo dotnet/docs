@@ -13,7 +13,7 @@ Azure functions provide a serverless compute experience. A function is invoked b
 
 The current runtime version 3.0 supports cross-platform .NET Core 3.1 applications. Additional languages besides C# such as JavaScript, F#, and Java are supported. Functions created in the portal provide a rich scripting syntax. Functions created as standalone projects can be deployed with full platform support and capabilities.
 
-For more information, see [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions).
+For more information, see [Azure Functions documentation](/azure/azure-functions).
 
 ## Programming language support
 
@@ -29,15 +29,15 @@ The following languages are all supported in general availability (GA).
 |**TypeScript**|Node 10 & 12 (via JavaScript)|
 |**PowerShell**|PowerShell Core 6|
 
-For more information, see [Supported languages](https://docs.microsoft.com/azure/azure-functions/supported-languages).
+For more information, see [Supported languages](/azure/azure-functions/supported-languages).
 
 ## App service plans
 
 Functions are backed by an *app service plan*. The plan defines the resources used by the functions app. You can assign plans to a region, determine the size and number of virtual machines that will be used, and pick a pricing tier. For a true serverless approach, function apps may use the **consumption** plan. The consumption plan will scale the back end automatically based on load.
 
-Another hosting option for function apps is the [Premium plan](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan). This plan provides an "always on" instance to avoid cold start, supports advanced features like VNet connectivity, and runs on premium hardware.
+Another hosting option for function apps is the [Premium plan](/azure/azure-functions/functions-premium-plan). This plan provides an "always on" instance to avoid cold start, supports advanced features like VNet connectivity, and runs on premium hardware.
 
-For more information, see [App service plans](https://docs.microsoft.com/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).
+For more information, see [App service plans](/azure/app-service/azure-web-sites-web-hosting-plans-in-depth-overview).
 
 ## Create your first function
 
@@ -47,11 +47,11 @@ There are three common ways you can create function apps.
 - Create the necessary resources using the Azure CLI.
 - Build functions locally using your favorite IDE and publish them to Azure.
 
-For more information on creating a scripted function in the portal, see [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function).
+For more information on creating a scripted function in the portal, see [Create your first function in the Azure portal](/azure/azure-functions/functions-create-first-azure-function).
 
-To build from the Azure CLI, see [Create your first function using the Azure CLI](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function-azure-cli).
+To build from the Azure CLI, see [Create your first function using the Azure CLI](/azure/azure-functions/functions-create-first-azure-function-azure-cli).
 
-To create a function from Visual Studio, see [Create your first function using Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-create-your-first-function-visual-studio).
+To create a function from Visual Studio, see [Create your first function using Visual Studio](/azure/azure-functions/functions-create-your-first-function-visual-studio).
 
 ## Understand triggers and bindings
 
@@ -108,7 +108,7 @@ public static string Run(Stream myBlob, string name, TraceWriter log)
 
 The example is a simple function that takes the name of the file that was modified or uploaded to blob storage, and places it on a queue for later processing.
 
-For a full list of triggers and bindings, see [Azure Functions triggers and bindings concepts](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings).
+For a full list of triggers and bindings, see [Azure Functions triggers and bindings concepts](/azure/azure-functions/functions-triggers-bindings).
 
 >[!div class="step-by-step"]
 >[Previous](azure-serverless-platform.md)

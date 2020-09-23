@@ -173,7 +173,7 @@ When using Entity Framework Core, the <xref:Microsoft.Extensions.DependencyInjec
 > - Resolve a singleton service from a scoped or transient service.
 > - Resolve a scoped service from another scoped or transient service.
 
-By default, in the development environment, resolving a service from another service with a longer lifetime throws an exception. For more information, see [Scope validation](#sv).
+By default, in the development environment, resolving a service from another service with a longer lifetime throws an exception. For more information, see [Scope validation](#scope-validation).
 
 ### Singleton
 

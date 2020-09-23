@@ -1,5 +1,5 @@
 ---
-title: Ready to Run
+title: ReadyToRun deployment overview
 description: Learn what ReadyToRun is and why you should consider using it as part of the deployment.
 author: davidwr
 ms.author: davidwr

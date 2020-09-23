@@ -9,7 +9,7 @@ ms.topic: tutorial
 
 # Tutorial: Use dependency injection in .NET
 
-To use [dependency injection (DI) in .NET](dependency-injection.md), you first must consider the workload and type of application you're developing. With *Microsoft Extensions*, DI is a first-class citizen where services are added and configured in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Later, an <xref:Microsoft.Extensions.Hosting.IHost> is created that exposes the <xref:System.IServiceProvider> instance which acts as a container of all the registered services. From this, you as a developer have an extensive application programming interface (API) for all types of .NET workloads that can leverage DI.
+To use [dependency injection (DI) in .NET](dependency-injection.md), you first must consider the workload and type of application you're developing. With *Microsoft Extensions*, DI is a first-class citizen where services are added and configured in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Later, an <xref:Microsoft.Extensions.Hosting.IHost> is created that exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services. From this, you as a developer have an extensive application programming interface (API) for all types of .NET workloads that can leverage DI.
 
 In this tutorial, you learn how to:
 
@@ -35,13 +35,17 @@ Using either the [dotnet new](../tools/dotnet-new.md) command or the available I
 
 ## Add interfaces
 
-Add the following interfaces:
+Add the following interfaces to the project root directory:
 
 *IOperation.cs*
 
 :::code language="csharp" source="snippets/configuration/console-di/IOperation.cs":::
 
 The `IOperation` interface defines a single `OperationId` property.
+
+*ITransientOperation.cs*
+
+:::code language="csharp" source="snippets/configuration/console-di/ITransientOperation.cs":::
 
 *IScopedOperation.cs*
 
@@ -51,13 +55,11 @@ The `IOperation` interface defines a single `OperationId` property.
 
 :::code language="csharp" source="snippets/configuration/console-di/ISingletonOperation.cs":::
 
-*ITransientOperation.cs*
-
-:::code language="csharp" source="snippets/configuration/console-di/ITransientOperation.cs":::
-
-All of the sub-interfaces of `IOperation` name their intended service lifetime. For example, "Transient" or "Singleton". Add the following default implementation for these interfaces:
+All of the subinterfaces of `IOperation` name their intended service lifetime. For example, "Transient" or "Singleton".
 
 ## Add default implementation
+
+Add the following default implementation for the various operations:
 
 *DefaultOperation.cs*
 
@@ -65,21 +67,21 @@ All of the sub-interfaces of `IOperation` name their intended service lifetime. 
 
 The `DefaultOperation` implements all of the named/marker interfaces and initializes the `OperationId` property to the last four characters of a new globally unique identifier (GUID).
 
-Add the following operation logger object:
+## Add service that requires DI
 
-## Define a service that requires DI
+Add the following operation logger object, which acts as a service to your console application:
 
 *OperationLogger.cs*
 
 :::code language="csharp" source="snippets/configuration/console-di/OperationLogger.cs":::
 
-The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, i.e.; `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method will log each operation's unique identifier with the scope string and message.
+The `OperationLogger` defines a constructor that requires each of the aforementioned marker interfaces, that is; `ITransientOperation`, `IScopedOperation`, and `ISingletonOperation`. The object exposes a single method that allows the consumer to log the operations with a given `scope` parameter. When invoked, the `LogOperations` method will log each operation's unique identifier with the scope string and message.
 
 ## Register services for DI
 
-Finally, update the *Program.cs* file with the following:
+Finally, update the *Program.cs* file to match following:
 
-:::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="38-42":::
+:::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="22-26":::
 
 The application starts by:
 
@@ -90,14 +92,30 @@ The application starts by:
 
 ## Conclusion
 
-When running the application, you could expect to see simple output to the following:
+When running the application, you could expect to see similar output to the following:
 
-:::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="19-34":::
+```console
+Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ 80f4...Always different        ]
+Scope 1-Call 1 .GetRequiredService<OperationLogger>(): IScopedOperation    [ c878...Changes only with scope ]
+Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
+...
+Scope 1-Call 2 .GetRequiredService<OperationLogger>(): ITransientOperation [ f3c0...Always different        ]
+Scope 1-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ c878...Changes only with scope ]
+Scope 1-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
+
+Scope 2-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ f9af...Always different        ]
+Scope 2-Call 1 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd0...Changes only with scope ]
+Scope 2-Call 1 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
+...
+Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ITransientOperation [ fa65...Always different        ]
+Scope 2-Call 2 .GetRequiredService<OperationLogger>(): IScopedOperation    [ 2bd0...Changes only with scope ]
+Scope 2-Call 2 .GetRequiredService<OperationLogger>(): ISingletonOperation [ 1586...Always the same         ]
+```
 
 From the application output, you can see that:
 
 - Transient operations are always different, meaning a new instance is created with every retrieval of the service.
-- Scoped operations change only with a new scope, but are others the same instance within a scope.
+- Scoped operations change only with a new scope, but are the same instance within a scope.
 - Singleton operations are always the same, meaning a new instance is only created once.
 
 ## Next steps

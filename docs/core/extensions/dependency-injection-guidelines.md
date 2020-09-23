@@ -9,7 +9,7 @@ ms.topic: guide
 
 # Dependency injection guidelines
 
-In this article, you'll general guidelines and best practices for implementing dependency injection in your .NET applications. From design principles to proper disposal patterns
+In this article, you'll learn general guidelines and best practices for implementing dependency injection in your .NET applications. From design principles to proper disposal patterns, thread safety, and service lifetime management - these recommendations are tried and true.
 
 ## Design services for dependency injection
 
@@ -19,11 +19,11 @@ When designing services for dependency injection:
 - Avoid direct instantiation of dependent classes within services. Direct instantiation couples the code to a particular implementation.
 - Make services small, well-factored, and easily tested.
 
-If a class has a lot of injected dependencies, it might be a sign that the class has too many responsibilities and violates the [Single Responsibility Principle (SRP)](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#single-responsibility). Attempt to refactor the class by moving some of its responsibilities into new classes. Keep in mind that Razor Pages page model classes and MVC controller classes should focus on UI concerns.
+If a class has many injected dependencies, it might be a sign that the class has too many responsibilities and violates the [Single Responsibility Principle (SRP)](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#single-responsibility). Attempt to refactor the class by moving some of its responsibilities into new classes. Keep in mind that Razor Pages page model classes and MVC controller classes should focus on UI concerns.
 
 ### Disposal of services
 
-The container manages clean up of types it creates by calling <xref:System.IDisposable.Dispose%2A> on <xref:System.IDisposable> instances. Services resolved from the container should never be disposed by the developer. If a type or factory is registered as a singleton, the container disposes the singleton automatically.
+The container is responsible for cleanup of types it creates, and calls <xref:System.IDisposable.Dispose%2A> on <xref:System.IDisposable> instances. Services resolved from the container should never be disposed by the developer. If a type or factory is registered as a singleton, the container disposes the singleton automatically.
 
 In the following example, the services are created by the service container and disposed automatically:
 
@@ -104,14 +104,14 @@ The app requires a shared <xref:System.IDisposable> instance across multiple ser
 
 Register the instance with a scoped lifetime. Use <xref:Microsoft.Extensions.DependencyInjection.IServiceScopeFactory.CreateScope%2A?displayProperty=nameWithType> to create a new <xref:Microsoft.Extensions.DependencyInjection.IServiceScope>. Use the scope's <xref:System.IServiceProvider> to get required services. Dispose the scope when it's no longer needed.
 
-#### General IDisposable guidelines
+#### General `IDisposable` guidelines
 
 - Don't register <xref:System.IDisposable> instances with a transient lifetime. Use the factory pattern instead.
 - Don't resolve <xref:System.IDisposable> instances with a transient or scoped lifetime in the root scope. The only exception to this is if the app creates/recreates and disposes <xref:System.IServiceProvider>, but this isn't an ideal pattern.
 - Receiving an <xref:System.IDisposable> dependency via DI doesn't require that the receiver implement <xref:System.IDisposable> itself. The receiver of the <xref:System.IDisposable> dependency shouldn't call <xref:System.IDisposable.Dispose%2A> on that dependency.
 - Use scopes to control the lifetimes of services. Scopes aren't hierarchical, and there's no special connection among scopes.
 
-For more information on resource clean up, see [Implement a Dispose method](../../standard/garbage-collection/implementing-dispose.md)
+For more information on resource cleanup, see [Implement a Dispose method](../../standard/garbage-collection/implementing-dispose.md)
 
 ## Default service container replacement
 
@@ -149,9 +149,13 @@ The factory method of single service, such as the second argument to [AddSinglet
 - Avoid using the *service locator pattern*. For example, don't invoke <xref:System.IServiceProvider.GetService%2A> to obtain a service instance when you can use DI instead.
 - Another service locator variation to avoid is injecting a factory that resolves dependencies at runtime. Both of these practices mix [Inversion of Control](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#dependency-inversion) strategies.
 - Avoid calls to <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> in `ConfigureServices`. Calling `BuildServiceProvider` typically happens when the developer wants to resolve a service in `ConfigureServices`.
-- Disposable transient services are captured by the container for disposal. This can turn into a memory leak if resolved from the top level container.
+- Disposable transient services are captured by the container for disposal. This can turn into a memory leak if resolved from the top-level container.
 - Enable scope validation to make sure the app doesn't have singletons that capture scoped services. For more information, see [Scope validation](dependency-injection.md#scope-validation).
 
 Like all sets of recommendations, you may encounter situations where ignoring a recommendation is required. Exceptions are rare, mostly special cases within the framework itself.
 
 DI is an *alternative* to static/global object access patterns. You may not be able to realize the benefits of DI if you mix it with static object access.
+
+## See also
+
+- [Dependency injection in .NET](dependency-injection.md)

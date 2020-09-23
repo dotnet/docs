@@ -25,6 +25,7 @@ namespace ConsoleDI.Example
 
         private static void LogOperation<T>(T operation, string scope, string message)
             where T : IOperation =>
-            Console.WriteLine($"{scope}: {typeof(T).Name,-19} [ {operation.OperationId}...{message,-23} ]");
+            Console.WriteLine(
+                $"{scope}: {typeof(T).Name,-19} [ {operation.OperationId}...{message,-23} ]");
     }
 }

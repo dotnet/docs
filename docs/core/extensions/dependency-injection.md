@@ -50,7 +50,7 @@ The class creates and directly depends on the `MessageWriter` class. Code depend
 Dependency injection addresses these problems through:
 
 - The use of an interface or base class to abstract the dependency implementation.
-- Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start up, and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added you use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
+- Registration of the dependency in a service container. .NET provides a built-in service container, <xref:System.IServiceProvider>. Services are typically registered at the app's start-up, and appended to an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Once all services are added, you use <xref:Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider%2A> to create the service container.
 - *Injection* of the service into the constructor of the class where it's used. The framework takes on the responsibility of creating an instance of the dependency and disposing of it when it's no longer needed.
 
 As an example, the `IMessageWriter` interface defines the `Write` method:
@@ -67,11 +67,11 @@ The sample code registers the `IMessageWriter` service with the concrete type `M
 
 In the sample app, the `IMessageWriter` service is requested and used to call the `Write` method:
 
-:::code language="csharp" source="snippets/configuration/dependency-injection/Worker.cs" highlight="16":::
+:::code language="csharp" source="snippets/configuration/dependency-injection/Worker.cs":::
 
 By using the DI pattern, the worker service:
 
-- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface it implements. That makes it easy to change the implementation that the controller uses without modifying the controller.
+- Doesn't use the concrete type `MessageWriter`, only the `IMessageWriter` interface that implements it. That makes it easy to change the implementation that the controller uses without modifying the controller.
 - Doesn't create an instance of `MessageWriter`, it's created by the DI container.
 
 The implementation of the `IMessageWriter` interface can be improved by using the built-in logging API:
@@ -195,8 +195,6 @@ In apps that process requests, singleton services are disposed when the <xref:Mi
 
 The framework provides service registration extension methods that are useful in specific scenarios:
 
-<!-- Review: Auto disposal at end of app lifetime is not what you think of auto disposal  -->
-
 | Method | Automatic<br>object<br>disposal | Multiple<br>implementations | Pass args |
 |--|:-:|:-:|:-:|
 | `Add{LIFETIME}<{SERVICE}, {IMPLEMENTATION}>()`<br><br>Example:<br><br>`services.AddSingleton<IMyDep, MyDep>();` | Yes | Yes | No |
@@ -225,7 +223,7 @@ For more information, see:
 - <xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddScoped%2A>
 - <xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddSingleton%2A>
 
-The [TryAddEnumerable(ServiceDescriptor)](xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddEnumerable%2A) methods register the service only if there isn't already an implementation *of the same type*. Multiple services are resolved via `IEnumerable<{SERVICE}>`. When registering services, the developer should add an instance if one of the same type hasn't already been added. Generally, library authors use `TryAddEnumerable` to avoid registering multiple copies of an implementation in the container.
+The [TryAddEnumerable(ServiceDescriptor)](xref:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions.TryAddEnumerable%2A) methods register the service only if there isn't already an implementation *of the same type*. Multiple services are resolved via `IEnumerable<{SERVICE}>`. When registering services, the developer should add an instance if one of the same types hasn't already been added. Generally, library authors use `TryAddEnumerable` to avoid registering multiple copies of an implementation in the container.
 
 In the following example, the first call to `TryAddEnumerable` registers `MessageWriter` as an implementation for `IMessageWriter1`. The second call registers `MessageWriter` for `IMessageWriter2`. The third call has no effect because `IMessageWriter1` already has a registered implementation of `MessageWriter`:
 
@@ -275,7 +273,7 @@ When services are resolved by `ActivatorUtilities`, constructor injection requir
 
 ## Scope validation
 
-When the app runs in the Development environment and calls [CreateDefaultBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
+When the app runs in the `Development` environment and calls [CreateDefaultBuilder](generic-host.md#default-builder-settings) to build the host, the default service provider performs checks to verify that:
 
 - Scoped services aren't resolved from the root service provider.
 - Scoped services aren't injected into singletons.

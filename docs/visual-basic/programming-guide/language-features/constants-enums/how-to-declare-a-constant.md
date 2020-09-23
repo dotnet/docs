@@ -25,6 +25,7 @@ helpviewer_keywords:
 ms.assetid: f901b4fa-481f-4621-822e-427060577ad1
 ---
 # How to: Declare A Constant (Visual Basic)
+
 You use the `Const` statement to declare a constant and set its value. By declaring a constant, you assign a meaningful name to a value. Once a constant is declared, it cannot be modified or assigned a new value.  
   
  You declare a constant within a procedure or in the declarations section of a module, class, or structure. Class or structure-level constants are `Private` by default, but may also be declared as `Public`, `Friend`, `Protected`, or `Protected Friend` for the appropriate level of code access.  

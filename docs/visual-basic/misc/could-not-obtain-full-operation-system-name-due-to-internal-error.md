@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: f69da02b-eb9a-4284-bb9e-3025517ae6c1
 ---
 # Could not obtain full operation system name due to internal error
+
 Could not obtain full operation system name due to internal error. This might be caused by WMI not existing on the current machine.  
   
  A call to the `My.Computer.Info.OSFullName` property failed. A possible cause for this failure is if Windows Management Instrumentation (WMI) is not installed on the current computer.  

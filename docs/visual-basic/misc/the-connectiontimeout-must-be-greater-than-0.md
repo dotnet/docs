@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 15ac09a7-47f0-44f3-9e84-5bd10bd07450
 ---
 # The ConnectionTimeout must be greater than 0
+
 When uploading and downloading files with the [My.Computer.Network](xref:Microsoft.VisualBasic.Devices.Network), you must specify a `connectionTimeout` greater than `0`.  
   
 ## To correct this error  

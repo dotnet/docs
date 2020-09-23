@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 4bcc4724-2b4e-4df8-9b4b-16054607f87d
 ---
 # How to: Return a Value from a Procedure (Visual Basic)
+
 A `Function` procedure returns a value to the calling code either by executing a `Return` statement or by encountering an `Exit Function` or `End Function` statement.  
   
 ### To return a value using the Return statement  

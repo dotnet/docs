@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
 ---
 # Declared Element Characteristics (Visual Basic)
+
 A *characteristic* of a declared element is an aspect of that element that affects how code can interact with it. Every declared element has one or more of the following characteristics associated with it:  
   
 - *Data type* — the values the element can hold, and how it stores those values. For more information, see [Data Types](../../../language-reference/data-types/index.md).  
@@ -26,6 +27,7 @@ A *characteristic* of a declared element is an aspect of that element that affec
 - *Access level* — the permission for code to make use of the element. For more information, see [How to: Control the Availability of a Variable](how-to-control-the-availability-of-a-variable.md).  
   
 ## Characteristics of the Elements  
+
  The following table shows the declared elements and the characteristics that apply to each one.  
   
 |Element|Data Type|Lifetime|Scope <sup>1</sup>|Access Level|  

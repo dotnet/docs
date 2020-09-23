@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 15d556eb-4d0c-4497-98a3-7f60abb7d6a1
 ---
 # Caller Information (Visual Basic)
+
 By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain file path of the source code, the line number in the source code, and the member name of the caller. This information is helpful for tracing, debugging, and creating diagnostic tools.  
   
  To obtain this information, you use attributes that are applied to optional parameters, each of which has a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace:  
@@ -15,6 +16,7 @@ By using Caller Info attributes, you can obtain information about the caller to 
 |<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method or property name of the caller. See [Member Names](#MEMBERNAMES) later in this topic.|`String`|  
   
 ## Example  
+
  The following example shows how to use Caller Info attributes. On each call to the `TraceMessage` method, the caller information is substituted as arguments to the optional parameters.  
   
 ```vb  
@@ -41,6 +43,7 @@ End Sub
 ```  
   
 ## Remarks  
+
  You must specify an explicit default value for each optional parameter. You can't apply Caller Info attributes to parameters that aren't specified as optional.  
   
  The Caller Info attributes don't make a parameter optional. Instead, they affect the default value that's passed in when the argument is omitted.  
@@ -50,6 +53,7 @@ End Sub
  You can explicitly supply the optional arguments to control the caller information or to hide caller information.  
   
 ### <a name="MEMBERNAMES"></a> Member Names  
+
  You can use the `CallerMemberName` attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that **Rename Refactoring** doesn't change the `String` values. This benefit is especially useful for the following tasks:  
   
 - Using tracing and diagnostic routines.  

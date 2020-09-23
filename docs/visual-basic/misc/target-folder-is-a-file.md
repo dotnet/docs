@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: c5e40bcb-2414-4484-b2b9-a9c391ad0029
 ---
 # Target folder is a file
+
 You are specifying a file while attempting to perform a folder-related action.  
   
 ## To correct this error  

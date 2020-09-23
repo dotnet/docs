@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
 ---
 # Unable to obtain a stream for the log
+
 Unable to obtain a stream for the log. Potential file names based on \<name> are already in use.  
   
  The <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener> class could not create a new log file because all potential log file names based on \<name> are already in use.  

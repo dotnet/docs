@@ -12,7 +12,7 @@ R2R binaries improve startup performance by reducing the amount of work the just
 
 To compile your project as ReadyToRun, the application must be published with the PublishReadyToRun property set to true.
 
-There are 2 general approaches to do this:
+There are two ways to publish your app as ReadyToRun:
 
 01. Specify the PublishReadyToRun flag directly to the dotnet publish command. See [dotnet publish](../tools/dotnet-publish.md) for details.
 

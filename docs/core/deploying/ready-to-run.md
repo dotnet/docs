@@ -28,7 +28,6 @@ There are 2 general approaches to do this:
 
 - Publish the application without any special parameters
 
-
 ```dotnetcli
 dotnet publish -c Release -r win-x64
 ```

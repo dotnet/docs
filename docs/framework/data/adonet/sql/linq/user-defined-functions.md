@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3304c9b2-5c7a-4a95-9d45-4f260dcb606e
 ---
 # User-Defined Functions
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] uses methods in your object model to represent user-defined functions. You designate methods as functions by applying the <xref:System.Data.Linq.Mapping.FunctionAttribute> attribute and, where required, the <xref:System.Data.Linq.Mapping.ParameterAttribute> attribute. For more information, see [The LINQ to SQL Object Model](the-linq-to-sql-object-model.md).  
   
  To avoid an <xref:System.InvalidOperationException>, user-defined functions in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] must be in one of the following forms:  
@@ -17,6 +18,7 @@ ms.assetid: 3304c9b2-5c7a-4a95-9d45-4f260dcb606e
  The topics in this section show how to form and call these methods in your application if you write the code yourself. Developers using Visual Studio would typically use the Object Relational Designer to map user-defined functions.  
   
 ## In This Section  
+
  [How to: Use Scalar-Valued User-Defined Functions](how-to-use-scalar-valued-user-defined-functions.md)  
  Describes how to implement a function that returns scalar values.  
   

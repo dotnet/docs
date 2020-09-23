@@ -8,11 +8,13 @@ ms.assetid: 33e09965-61d5-48cc-9e8c-3b047cc4f194
 Securing an application is an ongoing process. There will never be a point where a developer can guarantee that an application is safe from all attacks, because it is impossible to predict what kinds of future attacks new technologies will bring about. Conversely, just because nobody has yet discovered (or published) security flaws in a system does not mean that none exist or could exist. You need to plan for security during the design phase of the project, as well as plan how security will be maintained over the lifetime of the application.
 
 ## Design for Security
+
  One of the biggest problems in developing secure applications is that security is often an afterthought, something to implement after a project is code-complete. Not building security into an application at the outset leads to insecure applications because little thought has been given to what makes an application secure.
 
  Last-minute security implementation leads to more bugs, as software breaks under the new restrictions or has to be rewritten to accommodate unanticipated functionality. Every line of revised code contains the possibility of introducing a new bug. For this reason, you should consider security early in the development process so that it can proceed in tandem with the development of new features.
 
 ### Threat Modeling
+
  You cannot protect a system against attack unless you understand all the potential attacks that it is exposed to. The process of evaluating security threats, called *threat modeling*, is necessary to determine the likelihood and ramifications of security breaches in your ADO.NET application.
 
  Threat modeling is composed of three high-level steps: understanding the adversary’s view, characterizing the security of the system, and determining threats.
@@ -26,6 +28,7 @@ For more information, see the following resources:
 |The [Threat Modeling](https://www.microsoft.com/securityengineering/sdl/threatmodeling) site on the Security Engineering Portal|The resources on this page will help you understand the threat modeling process and build threat models that you can use to secure your own applications|
 
 ## The Principle of Least Privilege
+
  When you design, build, and deploy your application, you must assume that your application will be attacked. Often these attacks come from malicious code that executes with the permissions of the user running the code. Others can originate with well-intentioned code that has been exploited by an attacker. When planning security, always assume the worst-case scenario will occur.
 
  One counter-measure you can employ is to try to erect as many walls around your code as possible by running with least privilege. The principle of least privilege says that any given privilege should be granted to the least amount of code necessary for the shortest duration of time that is required to get the job done.

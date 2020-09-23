@@ -8,9 +8,11 @@ dev_langs:
 ms.assetid: 29efe5e5-897b-46c2-a35f-e599a273acc8
 ---
 # Implementing an Explicit Transaction using CommittableTransaction
+
 The <xref:System.Transactions.CommittableTransaction> class provides an explicit way for applications to use a transaction, as opposed to using the <xref:System.Transactions.TransactionScope> class implicitly. It is useful for applications that want to use the same transaction across multiple function calls or multiple thread calls. Unlike the <xref:System.Transactions.TransactionScope> class, the application writer needs to specifically call the <xref:System.Transactions.CommittableTransaction.Commit%2A> and <xref:System.Transactions.Transaction.Rollback%2A> methods in order to commit or abort the transaction.  
   
 ## Overview of the CommittableTransaction class  
+
  The <xref:System.Transactions.CommittableTransaction> class derives from the <xref:System.Transactions.Transaction> class, therefore providing all the functionality of the latter. Specifically useful is the <xref:System.Transactions.Transaction.Rollback%2A> method on the <xref:System.Transactions.Transaction> class that can also be used to rollback a <xref:System.Transactions.CommittableTransaction> object.  
   
  The  <xref:System.Transactions.Transaction> class is similar to the <xref:System.Transactions.CommittableTransaction> class but does not offer a `Commit` method. This enables you to pass the transaction object (or clones of it) to other methods (potentially on other threads) while still controlling when the transaction is committed. The called code is able to enlist and vote on the transaction, but only the creator of the <xref:System.Transactions.CommittableTransaction> object has the ability to commit the transaction.  
@@ -22,6 +24,7 @@ The <xref:System.Transactions.CommittableTransaction> class provides an explicit
 - A <xref:System.Transactions.CommittableTransaction> object cannot be reused. Once a <xref:System.Transactions.CommittableTransaction> object has been committed or rolled back, it cannot be used again in a transaction. That is, it cannot be set as the current ambient transaction context.  
   
 ## Creating a CommittableTransaction  
+
  The following sample creates a new <xref:System.Transactions.CommittableTransaction> and commits it.  
   
  [!code-csharp[Tx_CommittableTx#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/tx_committabletx/cs/committabletxwithsql.cs#1)]
@@ -34,6 +37,7 @@ The <xref:System.Transactions.CommittableTransaction> class provides an explicit
  A <xref:System.Transactions.CommittableTransaction> object can be used across function calls and threads. However, it is up to the application developer to handle exceptions and specifically call the <xref:System.Transactions.Transaction.Rollback%28System.Exception%29> method in case of failures.  
   
 ## Asynchronous Commit  
+
  The <xref:System.Transactions.CommittableTransaction> class also provides a mechanism for committing a transaction asynchronously. A transaction commit can take substantial time, as it might involve multiple database access and possible network latency. When you want to avoid deadlocks in high throughput applications, you can use asynchronous commit to finish the transactional work as soon as possible, and run the commit operation as a background task. The <xref:System.Transactions.CommittableTransaction.BeginCommit%2A> and <xref:System.Transactions.CommittableTransaction.EndCommit%2A> methods of the <xref:System.Transactions.CommittableTransaction> class allow you to do so.  
   
  You can call <xref:System.Transactions.CommittableTransaction.BeginCommit%2A> to dispatch the commit holdup to a thread from the thread pool. You can also call <xref:System.Transactions.CommittableTransaction.EndCommit%2A> to determine if the transaction has actually been committed. If the transaction failed to commit for whatever reason, <xref:System.Transactions.CommittableTransaction.EndCommit%2A> raises a transaction exception. If the transaction is not yet committed by the time <xref:System.Transactions.CommittableTransaction.EndCommit%2A> is called, the caller is blocked until the transaction is committed or aborted.  

@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 78203093-f242-4572-9b31-9495b10926aa
 ---
 # Find the Minimum Value in a Numeric Sequence
+
 Use the <xref:System.Linq.Enumerable.Min%2A> operator to return the minimum value from a sequence of numeric values.  
   
 ## Example  
+
  The following example finds the lowest unit price of any product.  
   
  If you run this query against the Northwind sample database, the output is: `2.5000`.  
@@ -18,6 +20,7 @@ Use the <xref:System.Linq.Enumerable.Min%2A> operator to return the minimum valu
  [!code-vb[DLinqQueryExamples#9](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#9)]  
   
 ## Example  
+
  The following example finds the lowest freight amount for any order.  
   
  If you run this query against the Northwind sample database, the output is: `0.0200`.  
@@ -26,6 +29,7 @@ Use the <xref:System.Linq.Enumerable.Min%2A> operator to return the minimum valu
  [!code-vb[DLinqQueryExamples#10](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#10)]  
   
 ## Example  
+
  The following example uses Min to find the `Products` that have the lowest unit price in each category. The output is arranged by category.  
   
  [!code-csharp[DLinqQueryExamples#11](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqQueryExamples/cs/Program.cs#11)]

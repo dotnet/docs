@@ -8,11 +8,13 @@ ms.assetid: 9c9ee36d-f294-4c8b-a196-f0114c94f559
 This article describes the differences between Entity SQL and Transact-SQL.  
   
 ## Inheritance and Relationships Support  
+
  Entity SQL works directly with conceptual entity schemas and supports conceptual model features such as inheritance and relationships.  
   
  When working with inheritance, it is often useful to select instances of a subtype from a collection of supertype instances. The [oftype](oftype-entity-sql.md) operator in Entity SQL (similar to `oftype` in C# Sequences) provides this capability.  
   
 ## Support for Collections  
+
  Entity SQL treats collections as first-class entities. For example:  
   
 - Collection expressions are valid in a `from` clause.  
@@ -26,6 +28,7 @@ This article describes the differences between Entity SQL and Transact-SQL.
 - Joins operate on collections.  
   
 ## Support for Expressions  
+
  Transact-SQL has subqueries (tables) and expressions (rows and columns).  
   
  To support collections and nested collections, Entity SQL makes everything an expression. Entity SQL is more composable than Transact-SQL—every expression can be used anywhere. Query expressions always result in collections of the projected types and can be used anywhere a collection expression is allowed. For information about Transact-SQL expressions that are not supported in Entity SQL, see [Unsupported Expressions](unsupported-expressions-entity-sql.md).  
@@ -42,16 +45,19 @@ set(e1)
 ```  
   
 ## Uniform Treatment of Subqueries  
+
  Given its emphasis on tables, Transact-SQL performs contextual interpretation of subqueries. For example, a subquery in the `from` clause is considered to be a multiset (table). But the same subquery used in the `select` clause is considered to be a scalar subquery. Similarly, a subquery used on the left side of an `in` operator is considered to be a scalar subquery, while the right side is expected to be a multiset subquery.  
   
  Entity SQL eliminates these differences. An expression has a uniform interpretation that does not depend on the context in which it is used. Entity SQL considers all subqueries to be multiset subqueries. If a scalar value is desired from the subquery, Entity SQL provides the `anyelement` operator that operates on a collection (in this case, the subquery), and extracts a singleton value from the collection.  
   
 ### Avoiding Implicit Coercions for Subqueries  
+
  A related side effect of uniform treatment of subqueries is implicit conversion of subqueries to scalar values. Specifically, in Transact-SQL, a multiset of rows (with a single field) is implicitly converted into a scalar value whose data type is that of the field.  
   
  Entity SQL does not support this implicit coercion. Entity SQL provides the `ANYELEMENT` operator to extract a singleton value from a collection, and a `select value` clause to avoid creating a row-wrapper during a query expression.  
   
 ## Select Value: Avoiding the Implicit Row Wrapper  
+
  The select clause in a Transact-SQL subquery implicitly creates a row wrapper around the items in the clause. This implies that we cannot create collections of scalars or objects. Transact-SQL allows an implicit coercion between a `rowtype` with one field and a singleton value of the same data type.  
   
  Entity SQL provides the `select value` clause to skip the implicit row construction. Only one item may be specified in a `select value` clause. When such a clause is used, no row wrapper is constructed around the items in the `select` clause, and a collection of the desired shape may be produced, for example, `select value a`.  
@@ -61,6 +67,7 @@ set(e1)
  `select a, b, c`  
   
 ## Left Correlation and Aliasing  
+
  In Transact-SQL, expressions in a given scope (a single clause like `select` or `from`) cannot reference expressions defined earlier in the same scope. Some dialects of SQL (including Transact-SQL) do support limited forms of these in the `from` clause.  
   
  Entity SQL generalizes left correlations in the `from` clause, and treats them uniformly. Expressions in the `from` clause can reference earlier definitions (definitions to the left) in the same clause without the need for additional syntax.  
@@ -78,6 +85,7 @@ SELET k FROM T AS t GROUP BY (t.x + t.y) AS k
 ```  
   
 ## Referencing Columns (Properties) of Tables (Collections)  
+
  All column references in Entity SQL must be qualified with the table alias. The following construct (assuming that `a` is a valid column of table `T`) is valid in Transact-SQL but not in Entity SQL.  
   
 ```sql  
@@ -97,6 +105,7 @@ SELET Tab.a FROM Tab
 ```  
   
 ## Navigation Through Objects  
+
  Transact-SQL uses the "." notation for referencing columns of (a row of) a table. Entity SQL extends this notation (borrowed from programming languages) to support navigation through properties of an object.  
   
  For example, if `p` is an expression of type Person, the following is the Entity SQL syntax for referencing the city of the address of this person.  
@@ -106,6 +115,7 @@ p.Address.City
 ```  
   
 ## No Support for \*  
+
  Transact-SQL supports the unqualified \* syntax as an alias for the entire row, and the qualified \* syntax (t.\*) as a shortcut for the fields of that table. In addition, Transact-SQL allows for a special count(\*) aggregate, which includes nulls.  
   
  Entity SQL does not support the * construct. Transact-SQL queries of the form `select * from T` and `select T1.* from T1, T2...` can be expressed in Entity SQL as `select value t from T as t` and `select value t1 from T1 as t1, T2 as t2...`, respectively. Additionally, these constructs handle inheritance (value substitutability), while the `select *` variants are restricted to top-level properties of the declared type.  
@@ -113,6 +123,7 @@ p.Address.City
  Entity SQL does not support the `count(*)` aggregate. Use `count(0)` instead.  
   
 ## Changes to Group By  
+
  Entity SQL supports aliasing of `group by` keys. Expressions in the `select` clause and `having` clause must refer to the `group by` keys via these aliases. For example, this Entity SQL syntax:  
   
 ```sql  
@@ -130,6 +141,7 @@ GROUP BY b + c
 ```  
   
 ## Collection-Based Aggregates  
+
  Entity SQL supports two kinds of aggregates.  
   
  Collection-based aggregates operate on collections and produce the aggregated result. These can appear anywhere in the query, and do not require a `group by` clause. For example:  
@@ -145,6 +157,7 @@ SELECT a, sum(t.b) FROM T AS t GROUP BY t.a AS a
 ```  
   
 ## ORDER BY Clause Usage  
+
 Transact-SQL allows `ORDER BY` clauses to be specified only in the topmost `SELECT .. FROM .. WHERE` block. In Entity SQL, you can use a nested `ORDER BY` expression and it can be placed anywhere in the query, but ordering in a nested query is not preserved.  
   
 ```sql  
@@ -163,9 +176,11 @@ SELECT C2.FirstName, C2.LastName
 ```  
   
 ## Identifiers  
+
  In Transact-SQL, identifier comparison is based on the collation of the current database. In Entity SQL, identifiers are always case insensitive and accent sensitive (that is, Entity SQL distinguishes between accented and unaccented characters; for example, 'a' is not equal to 'ấ'). Entity SQL treats versions of letters that appear the same but are from different code pages as different characters. For more information, see [Input Character Set](input-character-set-entity-sql.md).  
   
 ## Transact-SQL Functionality Not Available in Entity SQL  
+
  The following Transact-SQL functionality is not available in Entity SQL.  
   
  DML  

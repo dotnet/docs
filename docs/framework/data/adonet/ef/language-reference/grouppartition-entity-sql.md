@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d0482e9b-086c-451c-9dfa-ccb024a9efb6
 ---
 # GROUPPARTITION (Entity SQL)
+
 Returns a collection of argument values that are projected off the current group partition to which the aggregate is related. The `GroupPartition` aggregate is a group-based aggregate and has no collection-based form.  
   
 ## Syntax  
@@ -13,10 +14,12 @@ GROUPPARTITION( [ALL|DISTINCT] expression )
 ```  
   
 ## Arguments  
+
  `expression`  
  Any [!INCLUDE[esql](../../../../../../includes/esql-md.md)] expression.  
   
 ## Remarks  
+
  The following query produces a list of products and a collection of order line quantities per each product:  
   
 ```sql  
@@ -64,6 +67,7 @@ SELECT groupkey, GroupPartition(b > a) FROM {1,2,3} AS a INNER JOIN {4,5,6} AS b
 ```  
   
 ## Example  
+
  The following example shows how to use the GROUPPARTITION clause with the GROUP BY clause. The GROUP BY clause groups `SalesOrderHeader` entities by their `Contact`. The GROUPPARTITION clause then projects the `TotalDue` property for each group, resulting in a collection of decimals.  
   
  [!code-sql[DP EntityServices Concepts#Collection_GroupPartition](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#collection_grouppartition)]

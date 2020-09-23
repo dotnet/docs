@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 90b0c685-5ef2-461b-98b4-c3c0a2b253c7
 ---
 # Query Plan Caching (Entity SQL)
+
 Whenever an attempt to execute a query is made, the query pipeline looks up its query plan cache to see whether the exact query is already compiled and available. If so, it reuses the cached plan rather than building a new one. If a match is not found in the query plan cache, the query is compiled and cached. A query is identified by its [!INCLUDE[esql](../../../../../../includes/esql-md.md)] text and parameter collection (names and types). All text comparisons are case-sensitive.  
   
 ## Configuration  
+
  Query plan caching is configurable through the <xref:System.Data.EntityClient.EntityCommand>.  
   
  To enable or disable query plan caching through <xref:System.Data.EntityClient.EntityCommand.EnablePlanCaching%2A?displayProperty=nameWithType>, set this property to `true` or `false`. Disabling plan caching for individual dynamic queries that are unlikely to be used more then once improves performance.  
@@ -14,6 +16,7 @@ Whenever an attempt to execute a query is made, the query pipeline looks up its 
  You can enable query plan caching through <xref:System.Data.Objects.ObjectQuery.EnablePlanCaching%2A>.  
   
 ## Recommended Practice  
+
  Dynamic queries should be avoided, in general. The following dynamic query example is vulnerable to SQL injection attacks, because it takes user input directly without any validation.  
   
  ```csharp

@@ -4,6 +4,7 @@ ms.date: "07/23/2018"
 ms.assetid: 4ed76327-54a7-414b-82a9-7579bfcec04b
 ---
 # SQL-CLR Type Mapping
+
 In LINQ to SQL, the data model of a relational database maps to an object model that is expressed in the programming language of your choice. When the application runs, LINQ to SQL translates the language-integrated queries in the object model into SQL and sends them to the database for execution. When the database returns the results, LINQ to SQL translates the results back to objects that you can work with in your own programming language.  
   
  In order to translate data between the object model and the database, a *type mapping* must be defined. LINQ to SQL uses a type mapping to match each common language runtime (CLR) type with a particular SQL Server type. You can define type mappings and other mapping information, such as database structure and table relationships, inside the object model with attribute-based mapping. Alternatively, you can specify the mapping information outside the object model with an external mapping file. For more information, see [Attribute-Based Mapping](attribute-based-mapping.md) and [External Mapping](external-mapping.md).  
@@ -29,13 +30,17 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 - [Miscellaneous Mapping](#MiscMapping)  
   
 <a name="DefaultTypeMapping"></a>
+
 ## Default Type Mapping  
+
  You can create the object model or external mapping file automatically with the Object Relational Designer (O/R Designer) or the SQLMetal command-line tool. The default type mappings for these tools define which CLR types are chosen to map to columns inside the SQL Server database. For more information about using these tools, see [Creating the Object Model](creating-the-object-model.md).  
   
  You can also use the <xref:System.Data.Linq.DataContext.CreateDatabase%2A> method to create a SQL Server database based on the mapping information in the object model or external mapping file. The default type mappings for the <xref:System.Data.Linq.DataContext.CreateDatabase%2A> method define which type of SQL Server columns are created to map to the CLR types in the object model. For more information, see [How to: Dynamically Create a Database](how-to-dynamically-create-a-database.md).  
   
 <a name="BehaviorMatrix"></a>
+
 ## Type Mapping Run-time Behavior Matrix  
+
  The following diagram shows the expected run-time behavior of specific type mappings when data is retrieved from or saved to the database. With the exception of serialization, LINQ to SQL does not support mapping between any CLR or SQL Server data types that are not specified in this matrix. For more information on serialization support, see [Binary Serialization](#BinarySerialization).  
 
 ![SQL Server to SQL CLR data type mapping table](./media/sql-clr-type-mapping.png)
@@ -44,10 +49,13 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 > Some type mappings may result in overflow or data loss exceptions while translating to or from the database.  
   
 ### Custom Type Mapping  
+
  With LINQ to SQL, you are not limited to the default type mappings used by the O/R Designer, SQLMetal, and the <xref:System.Data.Linq.DataContext.CreateDatabase%2A> method. You can create custom type mappings by explicitly specifying them in a DBML file. Then you can use that DBML file to create the object model code and mapping file. For more information, see [SQL-CLR Custom Type Mappings](sql-clr-custom-type-mappings.md).  
   
 <a name="BehaviorDiffs"></a>
+
 ## Behavior Differences Between CLR and SQL Execution  
+
  Because of differences in precision and execution between the CLR and SQL Server, you may receive different results or experience different behavior depending on where you perform your calculations. Calculations performed in LINQ to SQL queries are actually translated to Transact-SQL and then executed on the SQL Server database. Calculations performed outside LINQ to SQL queries are executed within the context of the CLR.  
   
  For example, the following are some differences in behavior between the CLR and SQL Server:  
@@ -59,7 +67,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 - SQL Server may return different values for some mapped functions than the CLR. For example, equality functions will differ because SQL Server considers two strings to be equal if they only differ in trailing white space; whereas the CLR considers them to be not equal.  
   
 <a name="EnumMapping"></a>
+
 ## Enum Mapping  
+
  LINQ to SQL supports mapping the CLR <xref:System.Enum?displayProperty=nameWithType> type to SQL Server types in two ways:  
   
 - Mapping to SQL numeric types (`TINYINT`, `SMALLINT`, `INT`, `BIGINT`)  
@@ -80,7 +90,9 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  The <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method creates a SQL column of numeric type to map a CLR <xref:System.Enum?displayProperty=nameWithType> type.  
   
 <a name="NumericMapping"></a>
+
 ## Numeric Mapping  
+
  LINQ to SQL lets you map many CLR and SQL Server numeric types. The following table shows the CLR types that O/R Designer and SQLMetal select when building an object model or external mapping file based on your database.  
   
 |SQL Server Type|Default CLR Type mapping used by O/R Designer and SQLMetal|  
@@ -116,12 +128,15 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  There are many other numeric mappings you can choose, but some may result in overflow or data loss exceptions while translating to or from the database. For more information, see the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix).  
   
 ### Decimal and Money Types  
+
  The default precision of SQL Server `DECIMAL` type (18 decimal digits to the left and right of the decimal point) is much smaller than the precision of the CLR <xref:System.Decimal?displayProperty=nameWithType> type that it is paired with by default. This can result in precision loss when you save data to the database. However, just the opposite can happen if the SQL Server `DECIMAL` type is configured with greater than 29 digits of precision. When a SQL Server `DECIMAL` type has been configured with a greater precision than the CLR <xref:System.Decimal?displayProperty=nameWithType>, precision loss can occur when retrieving data from the database.  
   
  The SQL Server `MONEY` and `SMALLMONEY` types, which are also paired with the CLR <xref:System.Decimal?displayProperty=nameWithType> type by default, have a much smaller precision, which can result in overflow or data loss exceptions when saving data to the database.  
   
 <a name="TextMapping"></a>
+
 ## Text and XML Mapping  
+
  There are also many text-based and XML types that you can map with LINQ to SQL. The following table shows the CLR types that O/R Designer and SQLMetal select when building an object model or external mapping file based on your database.  
   
 |SQL Server Type|Default CLR Type mapping used by O/R Designer and SQLMetal|  
@@ -146,6 +161,7 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  There are many other text-based and XML mappings you can choose, but some may result in overflow or data loss exceptions while translating to or from the database. For more information, see the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix).  
   
 ### XML Types  
+
  The SQL Server `XML` data type is available starting in Microsoft SQL Server 2005. You can map the SQL Server `XML` data type to <xref:System.Xml.Linq.XElement>, <xref:System.Xml.Linq.XDocument>, or <xref:System.String>. If the column stores XML fragments that cannot be read into <xref:System.Xml.Linq.XElement>, the column must be mapped to <xref:System.String> to avoid run-time errors. XML fragments that must be mapped to <xref:System.String> include the following:  
   
 - A sequence of XML elements  
@@ -159,13 +175,16 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  Although you can map <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> to SQL Server as shown in the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix), the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method has no default SQL Server type mapping for these types.  
   
 ### Custom Types  
+
  If a class implements `Parse()` and `ToString()`, you can map the object to any SQL text type (`CHAR`, `NCHAR`, `VARCHAR`, `NVARCHAR`, `TEXT`, `NTEXT`, `XML`). The object is stored in the database by sending the value returned by `ToString()` to the mapped database column. The object is reconstructed by invoking `Parse()` on the string returned by the database.  
   
 > [!NOTE]
 > LINQ to SQL does not support serialization by using <xref:System.Xml.Serialization.IXmlSerializable?displayProperty=nameWithType>.  
   
 <a name="DateMapping"></a>
+
 ## Date and Time Mapping  
+
  With LINQ to SQL, you can map many SQL Server date and time types. The following table shows the CLR types that O/R Designer and SQLMetal select when building an object model or external mapping file based on your database.  
   
 |SQL Server Type|Default CLR Type mapping used by O/R Designer and SQLMetal|  
@@ -191,17 +210,21 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 > The SQL Server types `DATETIME2`, `DATETIMEOFFSET`, `DATE`, and `TIME` are available starting with Microsoft SQL Server 2008. LINQ to SQL supports mapping to these new types starting with the .NET Framework version 3.5 SP1.  
   
 ### System.Datetime  
+
  The range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType> type is greater than the range and precision of the SQL Server `DATETIME` type, which is the default type mapping for the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method. To help avoid exceptions related to dates outside the range of `DATETIME`, use `DATETIME2`, which is available starting with Microsoft SQL Server 2008. `DATETIME2` can match the range and precision of the CLR <xref:System.DateTime?displayProperty=nameWithType>.  
   
  SQL Server dates have no concept of <xref:System.TimeZone>, a feature that is richly supported in the CLR. <xref:System.TimeZone> values are saved as is to the database without <xref:System.TimeZone> conversion, regardless of the original <xref:System.DateTimeKind> information. When <xref:System.DateTime> values are retrieved from the database, their value is loaded as is into a <xref:System.DateTime> with a <xref:System.DateTimeKind> of <xref:System.DateTimeKind.Unspecified>. For more information about supported <xref:System.DateTime?displayProperty=nameWithType> methods, see [System.DateTime Methods](system-datetime-methods.md).  
   
 ### System.TimeSpan  
+
  Microsoft SQL Server 2008 and the .NET Framework 3.5 SP1 let you map the CLR <xref:System.TimeSpan?displayProperty=nameWithType> type to the SQL Server `TIME` type. However, there is a large difference between the range that the CLR <xref:System.TimeSpan?displayProperty=nameWithType> supports and what the SQL Server `TIME` type supports. Mapping values less than 0 or greater than 23:59:59.9999999 hours to the SQL `TIME` will result in overflow exceptions. For more information, see [System.TimeSpan Methods](system-timespan-methods.md).  
   
  In Microsoft SQL Server 2000 and SQL Server 2005, you cannot map database fields to <xref:System.TimeSpan>. However, operations on <xref:System.TimeSpan> are supported because <xref:System.TimeSpan> values can be returned from <xref:System.DateTime> subtraction or introduced into an expression as a literal or bound variable.  
   
 <a name="BinaryMapping"></a>
+
 ## Binary Mapping  
+
  There are many SQL Server types that can map to the CLR type <xref:System.Data.Linq.Binary?displayProperty=nameWithType>. The following table shows the SQL Server types that cause O/R Designer and SQLMetal to define a CLR <xref:System.Data.Linq.Binary?displayProperty=nameWithType> type when building an object model or external mapping file based on your database.  
   
 |SQL Server Type|Default CLR Type mapping used by O/R Designer and SQLMetal|  
@@ -224,16 +247,21 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
  There are many other binary mappings you can choose, but some may result in overflow or data loss exceptions while translating to or from the database. For more information, see the [Type Mapping Run Time Behavior Matrix](#BehaviorMatrix).  
   
 ### SQL Server FILESTREAM  
+
  The `FILESTREAM` attribute for `VARBINARY(MAX)` columns is available starting with Microsoft SQL Server 2008; you can map to it with LINQ to SQL starting with the .NET Framework version 3.5 SP1.  
   
  Although you can map `VARBINARY(MAX)` columns with the `FILESTREAM` attribute to <xref:System.Data.Linq.Binary> objects, the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method is unable to automatically create columns with the `FILESTREAM` attribute. For more information about `FILESTREAM`, see [FILESTREAM Overview](/previous-versions/sql/sql-server-2008-r2/bb933993(v=sql.105)).  
   
 <a name="BinarySerialization"></a>
+
 ### Binary Serialization  
+
  If a class implements the <xref:System.Runtime.Serialization.ISerializable> interface, you can serialize an object to any SQL binary field (`BINARY`, `VARBINARY`, `IMAGE`). The object is serialized and deserialized according to how the <xref:System.Runtime.Serialization.ISerializable> interface is implemented. For more information, see [Binary Serialization](../../../../../standard/serialization/binary-serialization.md).
   
 <a name="MiscMapping"></a>
+
 ## Miscellaneous Mapping  
+
  The following table shows the default type mappings for some miscellaneous types that have not yet been mentioned. The following table shows the CLR types that O/R Designer and SQLMetal select when building an object model or external mapping file based on your database.  
   
 |SQL Server Type|Default CLR Type mapping used by O/R Designer and SQLMetal|  

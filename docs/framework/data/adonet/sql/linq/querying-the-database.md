@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: eefb8b0c-ff07-4e86-a3d3-567479523fe9
 ---
 # Querying the Database
+
 This group of topics describes how to develop and execute queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] projects.  
   
 ## In This Section  
+
  [How to: Query for Information](how-to-query-for-information.md)  
  Briefly shows how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries are basically the same as LINQ queries generally.  
   

@@ -4,12 +4,15 @@ ms.date: "03/30/2017"
 ms.assetid: d58a5edd-7b5c-48e1-b5d7-a326ff426aa4
 ---
 # Identifiers (Entity SQL)
+
 Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to represent query expression aliases, variable references, properties of objects, functions, and so on. [!INCLUDE[esql](../../../../../../includes/esql-md.md)] provides two kinds of identifiers: simple identifiers and quoted identifiers.  
   
 ## Simple Identifiers  
+
  A simple identifier in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] is a sequence of alphanumeric and underscore characters. The first character of the identifier must be an alphabetical character (a-z or A-Z).  
   
 ## Quoted Identifiers  
+
  A quoted identifier is any sequence of characters enclosed in square brackets ([]). Quoted identifiers let you specify identifiers with characters that are not valid in identifiers. All characters between the square brackets become part of the identifier, including all white space.  
   
  A quoted identifier cannot include the following characters:  
@@ -45,6 +48,7 @@ Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 
  For quoted identifier comparison semantics, see [Input Character Set](input-character-set-entity-sql.md).  
   
 ## Aliasing Rules  
+
  We recommend specifying aliases in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] queries whenever needed, including the following [!INCLUDE[esql](../../../../../../includes/esql-md.md)] constructs:  
   
 - Fields of a row constructor.  
@@ -56,9 +60,11 @@ Identifiers are used in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] 
 - Items in the GROUP BY clause of a query expression.  
   
 ### Valid Aliases  
+
  Valid aliases in [!INCLUDE[esql](../../../../../../includes/esql-md.md)] are any simple identifier or quoted identifier.  
   
 ### Alias Generation  
+
  If no alias is specified in an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query expression, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] tries to generate an alias based on the following simple rules:  
   
 - If the query expression (for which the alias is unspecified) is a simple or quoted identifier, that identifier is used as the alias. For example, `ROW(a, [b])` becomes `ROW(a AS a, [b] AS [b])`.  
@@ -80,6 +86,7 @@ SELECT 1 AS X, 2 AS X …
 ```  
   
 ## Scoping Rules  
+
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] defines scoping rules that determine when particular variables are visible in the query language. Some expressions or statements introduce new names. The scoping rules determine where those names can be used, and when or where a new declaration with the same name as another can hide its predecessor.  
   
  When names are defined in an [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query, they are said to be defined within a scope. A scope covers an entire region of the query. All expressions or name references within a certain scope can see names that are defined within that scope. Before a scope begins and after it ends, names that are defined within the scope cannot be referenced.  
@@ -95,6 +102,7 @@ SELECT 1 AS X, 2 AS X …
  Parameters are not in a scope. Because references to parameters include special syntax, names of parameters will never collide with other names in the query.  
   
 ### Query Expressions  
+
  An [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query expression introduces a new scope. Names that are defined in the FROM clause are introduced into the from scope in order of appearance, left to right. In the join list, expressions can refer to names that were defined earlier in the list. Public properties (fields and so on) of elements identified in the FROM clause are not added to the from-scope. They must be always referenced by the alias-qualified name. Typically, all parts of the SELECT expression are considered within the from-scope.  
   
  The GROUP BY clause also introduces a new sibling scope. Each group can have a group name that refers to the collection of elements in the group. Each grouping expression will also introduce a new name into the group-scope. Additionally, the nest aggregate (or the named group) is also added to the scope. The grouping expressions themselves are within the from-scope. However, when a GROUP BY clause is used, the select-list (projection), HAVING clause, and ORDER BY clause are considered to be within the group-scope, and not the from-scope. Aggregates receive special treatment, as described in the following bulleted list.  
@@ -108,6 +116,7 @@ SELECT 1 AS X, 2 AS X …
 - The order of evaluation of clauses within the SELECT expression determines the order that names are introduced into the scope. The FROM clause is evaluated first, followed by the WHERE clause, GROUP BY clause, HAVING clause, SELECT clause, and finally the ORDER BY clause.  
   
 ### Aggregate Handling  
+
  [!INCLUDE[esql](../../../../../../includes/esql-md.md)] supports two forms of aggregates: collection-based aggregates and group-based aggregates. Collection-based aggregates are the preferred construct in [!INCLUDE[esql](../../../../../../includes/esql-md.md)], and group-based aggregates are supported for SQL compatibility.  
   
  When resolving an aggregate, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] first tries to treat it as a collection-based aggregate. If that fails, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] transforms the aggregate input into a reference to the nest aggregate and tries to resolve this new expression, as illustrated in the following example.  

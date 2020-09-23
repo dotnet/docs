@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
 ---
 # Optimistic Concurrency: Overview
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports optimistic concurrency control. The following table describes terms that apply to optimistic concurrency in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] documentation:  
   
 |Terms|Description|  
@@ -26,6 +27,7 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
 > Only members mapped as <xref:System.Data.Linq.Mapping.UpdateCheck.Always> or <xref:System.Data.Linq.Mapping.UpdateCheck.WhenChanged> participate in optimistic concurrency checks. No check is performed for members marked <xref:System.Data.Linq.Mapping.UpdateCheck.Never>. For more information, see <xref:System.Data.Linq.Mapping.UpdateCheck>.  
   
 ## Example  
+
  For example, in the following scenario, User1 starts to prepare an update by querying the database for a row. User1 receives a row with values of Alfreds, Maria, and Sales.  
   
  User1 wants to change the value of the Manager column to Alfred and the value of the Department column to Marketing. Before User1 can submit those changes, User2 has submitted changes to the database. So now the value of the Assistant column has been changed to Mary and the value of the Department column to Service.  
@@ -41,6 +43,7 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
  You can resolve conflicts such as this in different ways. For more information, see [How to: Manage Change Conflicts](how-to-manage-change-conflicts.md).  
   
 ## Conflict Detection and Resolution Checklist  
+
  You can detect and resolve conflicts at any level of detail. At one extreme, you can resolve all conflicts in one of three ways (see <xref:System.Data.Linq.RefreshMode>) without additional consideration. At the other extreme, you can designate a specific action for each type of conflict on every member in conflict.  
   
 - Specify or revise <xref:System.Data.Linq.Mapping.UpdateCheck> options in your object model.  
@@ -60,6 +63,7 @@ ms.assetid: c2e38512-d0c8-4807-b30a-cb7e30338694
      For more information, see [How to: Resolve Conflicts by Retaining Database Values](how-to-resolve-conflicts-by-retaining-database-values.md), [How to: Resolve Conflicts by Overwriting Database Values](how-to-resolve-conflicts-by-overwriting-database-values.md), and [How to: Resolve Conflicts by Merging with Database Values](how-to-resolve-conflicts-by-merging-with-database-values.md).  
   
 ## LINQ to SQL Types That Support Conflict Discovery and Resolution  
+
  Classes and features to support the resolution of conflicts in optimistic concurrency in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] include the following:  
   
 - <xref:System.Data.Linq.ObjectChangeConflict?displayProperty=nameWithType>  

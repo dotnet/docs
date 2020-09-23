@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
 ---
 # Specifying an Assembly's Location
+
 There are two ways to specify an assembly's location:  
   
 - Using the [\<codeBase>](./file-schema/runtime/codebase-element.md) element.  
@@ -18,6 +19,7 @@ There are two ways to specify an assembly's location:
  You can also use the [.NET Framework Configuration Tool (Mscorcfg.msc)](/previous-versions/dotnet/netframework-4.0/2bc0cxhc(v=vs.100)) to specify assembly locations or specify locations for the common language runtime to probe for assemblies.  
   
 ## Using the \<codeBase> Element  
+
  You can use the **\<codeBase>** element only in machine configuration or publisher policy files that also redirect the assembly version. When the runtime determines which assembly version to use, it applies the code base setting from the file that determines the version. If no code base is indicated, the runtime probes for the assembly in the normal way. For details, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).  
   
  The following example shows how to specify an assembly's location.  
@@ -44,6 +46,7 @@ There are two ways to specify an assembly's location:
 > If you are supplying a code base hint for an assembly that is not strong-named, the hint must point to the application base or a subdirectory of the application base directory.  
   
 ## Using the \<probing> Element  
+
  The runtime locates assemblies that do not have a code base by probing. For more information about probing, see [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md).  
   
  You can use the [\<probing>](./file-schema/runtime/probing-element.md) element in the application configuration file to specify subdirectories the runtime should search when locating an assembly. The following example shows how to specify directories the runtime should search.  

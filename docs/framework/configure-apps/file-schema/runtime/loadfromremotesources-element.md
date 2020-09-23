@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
 ---
 # \<loadFromRemoteSources> element
+
 Specifies whether assemblies loaded from remote sources should be granted full trust in .NET Framework 4 and later.
   
 > [!NOTE]
@@ -24,6 +25,7 @@ Specifies whether assemblies loaded from remote sources should be granted full t
 ```  
   
 ## Attributes and elements
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Specifies whether assemblies loaded from remote sources should be granted full t
 |`true`|Grant full trust to applications from remote sources.|  
   
 ### Child elements  
+
  None.  
   
 ### Parent elements  

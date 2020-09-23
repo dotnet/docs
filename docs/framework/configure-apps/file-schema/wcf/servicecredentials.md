@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 96db336c-4f7a-4193-81a5-910b8ffd804f
 ---
 # \<serviceCredentials>
+
 Specifies the credential to be used in authenticating the service and the client credential validation-related settings.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ Specifies the credential to be used in authenticating the service and the client
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

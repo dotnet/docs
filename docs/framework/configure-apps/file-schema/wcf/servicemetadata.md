@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2b4c3b4c-31d4-4908-a9b7-5bb411c221f2
 ---
 # \<serviceMetadata>
+
 Specifies the publication of service metadata and associated information.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -29,6 +30,7 @@ Specifies the publication of service metadata and associated information.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -47,6 +49,7 @@ Specifies the publication of service metadata and associated information.
 |policyVersion|A string that specifies the version of the WS-Policy specification being used. This attribute is of type <xref:System.ServiceModel.Description.PolicyVersion>.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -56,6 +59,7 @@ Specifies the publication of service metadata and associated information.
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
+
  This configuration element allows you to control the metadata publishing features of a service. To prevent unintentional disclosure of potentially sensitive service metadata, the default configuration for Windows Communication Foundation (WCF) services disables metadata publishing. This behavior is secure by default, but also means that you cannot use a metadata import tool (such as Svcutil.exe) to generate the client code required to call the service unless the service’s metadata publishing behavior is explicitly enabled in configuration. Using this configuration element, you can enable this publishing behavior for your service.  
   
  For a detailed example of configuring this behavior, see [Metadata Publishing Behavior](../../../wcf/samples/metadata-publishing-behavior.md).  
@@ -76,6 +80,7 @@ Specifies the publication of service metadata and associated information.
 ```  
   
 ## Example  
+
  The following example configure a service to expose metadata by using the \<serviceMetadata> element. It also configures an endpoint to expose the `IMetadataExchange` contract as an implementation of a WS-MetadataExchange (MEX) protocol. The example uses the `mexHttpBinding`, which is a convenience standard binding that is equivalent to the `wsHttpBinding` with the security mode set to `None`. A relative address of "mex" is used in the endpoint, which when resolved against the services base address results in an endpoint address of `http://localhost/servicemodelsamples/service.svc/mex`.  
   
 ```xml  

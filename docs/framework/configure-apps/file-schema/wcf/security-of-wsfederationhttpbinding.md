@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a8e5e854-b8dc-4921-843d-34b6a4a6a8ba
 ---
 # \<security> of \<wsFederationHttpBinding>
+
 Defines the security settings of the [\<wsFederationHttpBinding>](wsfederationhttpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -74,6 +75,7 @@ Defines the security settings of the [\<wsFederationHttpBinding>](wsfederationht
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

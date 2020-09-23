@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c7b6fc35-d4b2-4c18-98bd-83e09591f1d3
 ---
 # \<scopedCertificates> Element
+
 Represents a collection of X.509 certificates provided by specific services (scoped) for authentication. This collection is typically used to specify the service certificates for Security Token Services in a federated scenario.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,9 +29,11 @@ Represents a collection of X.509 certificates provided by specific services (sco
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -46,6 +49,7 @@ Represents a collection of X.509 certificates provided by specific services (sco
 |[\<serviceCertificate>](servicecertificate-of-servicecredentials.md)|Specifies a certificate to use when authenticating a service to the client.|  
   
 ## Remarks  
+
  This collection enables the client to configure the service certificates to use based on the URL of the service it communicates with. This is especially useful in issued token scenarios where a client can be communicating to multiple services (the end service as well as intermediary security token services). For bindings that use certificate-based message security, this certificate is used to encrypt messages to the service, and is expected to be used by the service for signing replies to the client.  
   
  If a binding requires a certificate for the service and no specific certificate for the service URL is found in the ScopedCertificates, the default certificate is used.  
@@ -53,6 +57,7 @@ Represents a collection of X.509 certificates provided by specific services (sco
  For more information, see the "Scoped Certificates" section of [How to: Create a Federated Client](../../../wcf/feature-details/how-to-create-a-federated-client.md).  
   
 ## Example  
+
  The following example specifies a service certificate for the client to use when communicating with endpoints whose domain name is `http://www.contoso.com` over the HTTP protocol.  
   
 ```xml  

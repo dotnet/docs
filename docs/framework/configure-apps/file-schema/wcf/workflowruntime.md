@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 304c70fa-78d1-4d0f-b89f-0ca23d734c6f
 ---
 # \<workflowRuntime>
+
 Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -56,6 +58,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
+
  For more information on using a configuration file to control the behavior of a <xref:System.Workflow.Runtime.WorkflowRuntime> object of a Windows Workflow Foundation host application, see [Workflow Configuration Files](/previous-versions/dotnet/netframework-3.5/ms732240(v=vs.90)).  
   
 ## Example  

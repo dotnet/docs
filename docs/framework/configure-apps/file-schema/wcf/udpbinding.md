@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fa291901-8340-45c6-9c44-5d9281c70bc3
 ---
 # \<udpBinding>
+
 A configuration element used to configure the <xref:System.ServiceModel.UdpBinding> binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -39,6 +40,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -73,9 +75,11 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The UdpBinding allows WCF services to communicate over the UDP transport. It allows for "fire and forget" message exchanges where a client sends a message to a service and expects no response back.  
   
 ## Example  
+
  The following example shows how to configure the <xref:System.ServiceModel.UdpBinding> using the <`udpBinding`> element.  
   
 ```xml  

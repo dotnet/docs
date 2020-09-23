@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f30ee941-aca9-4c67-82a5-421568496f07
 ---
 # Message Encoding
+
 Encoding is the process of transforming a set of Unicode characters into a sequence of bytes. Decoding is the reverse process. Windows Communication Foundation (WCF) includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  
   
  The `binaryMessageEncoding` configuration section specifies the character encoding and message versioning used for binary-based XML messages. The binary message encoder encodes Windows Communication Foundation (WCF) messages in binary on the wire. While this encoding results in very fast transmission of messages, interoperability based on the WS-* standards is lost.  

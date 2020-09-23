@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
 ---
 # \<messageLogging>
+
 This element defines the settings for the message-logging capabilities of Windows Communication Foundation (WCF).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ This element defines the settings for the message-logging capabilities of Window
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -57,6 +59,7 @@ This element defines the settings for the message-logging capabilities of Window
 |diagnostics|Defines WCF settings for runtime inspection and control for the administrator.|  
   
 ## Remarks  
+
  Messages are logged at three different levels in the stack: service, transport, and malformed. Each level can be activated separately.  
   
  XPath filters can be added to log specific messages at the transport and service levels. If no filters are defined, all messages are logged. Filters are applied only to the headers of the message. The body is ignored. WCF ignores the message body to improve performance. If you want to filter based on the content of the body, you can create a custom listener with a filter that does so.  

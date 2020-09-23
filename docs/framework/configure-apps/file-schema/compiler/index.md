@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: c020b139-8699-4f0d-9ac9-70d0c5b2a8c8
 ---
 # Compiler and Language Provider Settings Schema
+
 Compiler and language provider settings specify compiler configuration elements for available language providers. Each compiler configuration element specifies the code provider type name, compiler parameters, supported language names, and supported file extensions.  
   
 The .NET Framework defines the initial compiler settings in the machine configuration file (Machine.config). Developers and compiler vendors can add configuration settings for a new <xref:System.CodeDom.Compiler.CodeDomProvider> implementation. Use the <xref:System.CodeDom.Compiler.CodeDomProvider.GetAllCompilerInfo%2A?displayProperty=nameWithType> method to programmatically enumerate language provider and compiler configuration settings on a computer.  
@@ -29,6 +30,7 @@ The .NET Framework defines the initial compiler settings in the machine configur
 |[\<compiler>](compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
   
 ## Example  
+
  The following example illustrates a typical compiler configuration element.  
   
 ```xml  

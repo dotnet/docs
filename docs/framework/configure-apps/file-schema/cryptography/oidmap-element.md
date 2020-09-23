@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
 ---
 # \<oidMap> Element
+
 Contains ASN.1 object identifier (OID) mappings to classes.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -25,9 +26,11 @@ Contains ASN.1 object identifier (OID) mappings to classes.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -45,6 +48,7 @@ Contains ASN.1 object identifier (OID) mappings to classes.
 |`mscorlib`|Contains the `cryptographySettings` element.|  
   
 ## Example  
+
  The following example shows how to use the **\<oidMap>** element to contain a mapping of an OID for the RIPEMD-160 hash algorithm to an implementation of that hash algorithm.  
   
 ```xml  

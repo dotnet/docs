@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bbadd8dd-60a2-4007-b959-89373a8a7d60
 ---
 # \<byteStreamMessageEncoding>
+
 Specifies the message encoding as a stream of bytes, with the option to specify the character encoding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Specifies the message encoding as a stream of bytes, with the option to specify 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

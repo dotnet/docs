@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
 ---
 # \<identity>
+
 The identity element allows a client developer to specify at design time the expected identity of the service. In the handshake process between the client and service, the Windows Communication Foundation (WCF) infrastructure will ensure that the identity of the expected service matches the values of this element, and thus can be authenticated. For more information, see [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,9 +31,11 @@ The identity element allows a client developer to specify at design time the exp
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

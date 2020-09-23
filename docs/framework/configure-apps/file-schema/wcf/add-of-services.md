@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6bdc4590-aa9c-4ec8-9345-879d780cd141
 ---
 # \<add> of \<services>
+
 Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRuntime> for hosting workflow-based Windows Communication Foundation (WCF) services. This element is of type <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 |type|A string that specifies the assembly-qualified type name of the service to be initialized. The service specified must follow certain rules about the signatures of their constructors. See <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> for more information.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -44,6 +47,7 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 |[\<services>](services-of-workflowruntime.md)|A collection of services that will be added to the <xref:System.Workflow.Runtime.WorkflowRuntime> engine. The elements are of type <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement>.  The services specified in the collection will be initialized by the workflow runtime engine and added to its services when the appropriate <xref:System.Workflow.Runtime.WorkflowRuntime> constructor is called. Therefore, the services specified in the collection must follow certain rules about the signatures of their constructors. See <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> for more information.|  
   
 ## Remarks  
+
  The service specified in this element will be initialized by the workflow runtime engine and added to its services when the appropriate <xref:System.Workflow.Runtime.WorkflowRuntime> constructor is called. Therefore, the service specified must follow certain rules about the signatures of their constructors. See <xref:System.Workflow.Runtime.Configuration.WorkflowRuntimeServiceElement> for more information.  
   
 ## Example  

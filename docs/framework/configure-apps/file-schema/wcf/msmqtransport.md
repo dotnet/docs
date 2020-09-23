@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
 ---
 # \<msmqTransport>
+
 Causes a channel to transfers messages on the MSMQ transport when it is included in a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -40,6 +41,7 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -77,6 +79,7 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  The `msmqTransport` element enables the user to set the properties of the queued communication channel. The queued communication channel uses Message Queuing for its transport.  
   
  This binding element is the default binding element used by the Message Queuing standard binding (`netMsmqBinding`).  

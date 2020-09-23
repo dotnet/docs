@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 00a8580b-face-47a4-838d-b9fed48e72df
 ---
 # \<netNamedPipeBinding>
+
 Defines a binding that is secure, reliable, optimized for on-machine cross process communication. By default, it generates a runtime communication stack with WS-ReliableMessaging for reliability, transport security for transfer security, named pipes for message delivery, and binary message encoding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -41,6 +42,7 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -75,11 +77,13 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The `NetNamedPipeBinding` generates a run-time communication stack by default, which uses transport security, named pipes for message delivery, and a binary message encoding. This binding is an appropriate Windows Communication Foundation (WCF) system-provided choice for on-machine communication. It also supports transactions.  
   
  The default configuration for the `NetNamedPipeBinding` is similar to the configuration provided by the `NetTcpBinding`, but it is simpler because the WCF implementation is only meant for on-machine use and consequently there are fewer exposed features. The most notable difference is that the `securityMode` setting only offers the `None` and `Transport` options. SOAP security support is not an included option. The security behavior is configurable using the optional `securityMode` attribute.  
   
 ## Example  
+
  The following example demonstrates the netNamedPipeBinding binding, which provides cross-process communication on the same machine. Named pipes do not work across machines.  
   
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the `<endpoint>` element. If you want to configure the netNamedPipeBinding binding and change some of its settings, you must define a binding configuration. The endpoint must reference the binding configuration by name with a `bindingConfiguration` attribute. In this example, the binding configuration is named Binding1.  

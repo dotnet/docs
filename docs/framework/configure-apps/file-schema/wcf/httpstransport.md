@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f6ed4bc0-7e38-4348-9259-30bf61eb9435
 ---
 # \<httpsTransport>
+
 Specifies an HTTP transport for transmitting SOAP messages for a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,6 +35,7 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -57,6 +59,7 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
 |useDefaultWebProxy|A Boolean value that specifies whether the machine-wide proxy settings are used rather than the user specific settings. The default is `true`.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -66,6 +69,7 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  The `httpsTransport` element is the starting point for creating a custom binding that implements the HTTPS transport protocol. HTTPS is the primary transport used for secure interoperability purposes. HTTPS is supported by the Windows Communication Foundation (WCF) to ensure interoperability with other Web services stacks.  
   
 ## See also

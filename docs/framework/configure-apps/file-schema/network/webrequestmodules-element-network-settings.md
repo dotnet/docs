@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
 ---
 # \<webRequestModules> Element (Network Settings)
+
 Specifies modules to use to request information from network hosts.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -24,9 +25,11 @@ Specifies modules to use to request information from network hosts.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -44,14 +47,17 @@ Specifies modules to use to request information from network hosts.
 |[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Remarks  
+
  The `webRequestModules` element registers descendants of the <xref:System.Net.WebRequest> class to handle information requests to network hosts. Web request modules must implement the <xref:System.Net.IWebRequestCreate> interface.  
   
  The .NET Framework includes Web request modules for URIs that begin with `http://`, `https://`, and `file://`. You can override the default modules only by registering a custom module in the configuration file.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example registers the default HTTP module. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
   
 ```xml  

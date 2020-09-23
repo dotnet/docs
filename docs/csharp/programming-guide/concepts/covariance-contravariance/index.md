@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 066d9a3c-aab7-4ea6-826d-0b1a85399c74
 ---
 # Covariance and Contravariance (C#)
+
 In C#, covariance and contravariance enable implicit reference conversion for array types, delegate types, and generic type arguments. Covariance preserves assignment compatibility and contravariance reverses it.  
   
  The following code demonstrates the difference between assignment compatibility, covariance, and contravariance.  

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 7681eb98-703d-4005-a369-26a7bca0f894
 ---
 # How to write object data to an XML file (C#)
+
 This example writes the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
 ## Example  
@@ -40,9 +41,11 @@ public class XMLWrite
 ```  
   
 ## Compiling the Code  
+
  The class being serialized must have a public constructor without parameters.  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The class being serialized does not have a public, parameterless constructor.  
@@ -54,6 +57,7 @@ public class XMLWrite
 - The disk is full (<xref:System.IO.IOException>).  
   
 ## .NET Security  
+
  This example creates a new file, if the file does not already exist. If an application needs to create a file, that application needs `Create` access for the folder. If the file already exists, the application needs only `Write` access, a lesser privilege. Where possible, it is more secure to create the file during deployment, and only grant `Read` access to a single file, rather than `Create` access for a folder.  
   
 ## See also

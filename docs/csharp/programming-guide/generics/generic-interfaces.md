@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: a8fa49a1-6e78-4a09-87e5-84a0b9f5ffbe
 ---
 # Generic Interfaces (C# Programming Guide)
+
 It is often useful to define interfaces either for generic collection classes, or for the generic classes that represent items in the collection. The preference for generic classes is to use generic interfaces, such as <xref:System.IComparable%601> rather than <xref:System.IComparable>, in order to avoid boxing and unboxing operations on value types. The .NET class library defines several generic interfaces for use with the collection classes in the <xref:System.Collections.Generic> namespace.  
   
  When an interface is specified as a constraint on a type parameter, only types that implement the interface can be used. The following code example shows a `SortedList<T>` class that derives from the `GenericList<T>` class. For more information, see [Introduction to Generics](./index.md). `SortedList<T>` adds the constraint `where T : IComparable<T>`. This enables the `BubbleSort` method in `SortedList<T>` to use the generic <xref:System.IComparable%601.CompareTo%2A> method on list elements. In this example, list elements are a simple class, `Person`, that implements `IComparable<Person>`.  

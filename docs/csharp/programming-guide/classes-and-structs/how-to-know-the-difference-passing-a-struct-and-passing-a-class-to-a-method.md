@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 9c1313a6-32a8-4ea7-a59f-450f66af628b
 ---
 # How to know the difference between passing a struct and passing a class reference to a method (C# Programming Guide)
+
 The following example demonstrates how passing a [struct](../../language-reference/builtin-types/struct.md) to a method differs from passing a [class](../../language-reference/keywords/class.md) instance to a method. In the example, both of the arguments (struct and class instance) are passed by value, and both methods change the value of one field of the argument. However, the results of the two methods are not the same because what is passed when you pass a struct differs from what is passed when you pass an instance of a class.  
   
  Because a struct is a [value type](../../language-reference/builtin-types/value-types.md), when you [pass a struct by value](./passing-value-type-parameters.md) to a method, the method receives and operates on a copy of the struct argument. The method has no access to the original struct in the calling method and therefore can't change it in any way. The method can change only the copy.  
@@ -18,6 +19,7 @@ The following example demonstrates how passing a [struct](../../language-referen
  The output of the following example illustrates the difference. The value of the `willIChange` field of the class instance is changed by the call to method `ClassTaker` because the method uses the address in the parameter to find the specified field of the class instance. The `willIChange` field of the struct in the calling method is not changed by the call to method `StructTaker` because the value of the argument is a copy of the struct itself, not a copy of its address. `StructTaker` changes the copy, and the copy is lost when the call to `StructTaker` is completed.  
   
 ## Example  
+
  [!code-csharp[csProgGuideObjects#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#32)]  
   
 ## See also

@@ -10,7 +10,7 @@ Startup time and application latency can be improved by compiling your applicati
 
 R2R binaries improve startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. The binaries contain similar native code compared to what the JIT would produce. However, R2R binaries are larger because they contain both intermediate language (IL) code, which is still needed for some scenarios, and the native version of the same code. R2R is only available when you publish an app that targets specific runtime environments (RID) such as Linux x64 or Windows x64.
 
-To compile your project as ReadyToRun, the application must be published, with the PublishReadyToRun property set to true.
+To compile your project as ReadyToRun, the application must be published with the PublishReadyToRun property set to true.
 
 There are 2 general approaches to do this:
 

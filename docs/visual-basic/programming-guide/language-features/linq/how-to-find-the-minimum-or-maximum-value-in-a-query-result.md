@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 238b763b-7dcd-4b14-8050-b65500a4f71c
 ---
 # How to: Find the Minimum or Maximum Value in a Query Result by Using LINQ (Visual Basic)
+
 Language-Integrated Query (LINQ) makes it easy to access database information and execute queries.  
   
  The following example shows how to create a new application that performs queries against a SQL Server database. The sample determines the minimum and maximum values for the results by using the `Aggregate` and `Group By` clauses. For more information, see [Aggregate Clause](../../../language-reference/queries/aggregate-clause.md) and [Group By Clause](../../../language-reference/queries/group-by-clause.md).  

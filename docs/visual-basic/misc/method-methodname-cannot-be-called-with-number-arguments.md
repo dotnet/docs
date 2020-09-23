@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
 ---
 # Method '\<methodname>' cannot be called with \<number> arguments
+
 A method call contains the wrong number of arguments.  
   
 ## To correct this error  

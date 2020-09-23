@@ -58,6 +58,7 @@ The method must be in scope when it is called.
      The result this time is: `or not!!!`.
 
 ## Example
+
  The following code is a complete example of the creation and use of a simple extension method.
 
 ```vb

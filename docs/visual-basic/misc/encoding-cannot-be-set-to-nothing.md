@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 59f7c731-8291-4a85-bf51-c225e48cdc84
 ---
 # Encoding cannot be set to Nothing
+
 An attempt to read from or write to a file has failed because the parameter `encoding` has been set to `Nothing` but requires a valid value.  
   
  <xref:System.Text.Encoding> is used to determine what encoding to use when writing to a file. The default is UTF-8.  

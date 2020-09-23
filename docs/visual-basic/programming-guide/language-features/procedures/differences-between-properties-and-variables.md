@@ -16,15 +16,19 @@ helpviewer_keywords:
 ms.assetid: 7a03a8be-5381-431f-bd7c-16e887e4e07b
 ---
 # Differences Between Properties and Variables in Visual Basic
+
 Variables and properties both represent values that you can access. However, there are differences in storage and implementation.  
   
 ## Variables  
+
  A *variable* corresponds directly to a memory location. You define a variable with a single declaration statement. A variable can be a *local variable*, defined inside a procedure and available only within that procedure, or it can be a *member variable*, defined in a module, class, or structure but not inside any procedure. A member variable is also called a *field*.  
   
 ## Properties  
+
  A *property* is a data element defined on a module, class, or structure. You define a property with a code block between the `Property` and `End Property` statements. The code block contains a `Get` procedure, a `Set` procedure, or both. These procedures are called *property procedures* or *property accessors*. In addition to retrieving or storing the property's value, they can also perform custom actions, such as updating an access counter.  
   
 ## Differences  
+
  The following table shows some important differences between variables and properties.  
   
 |Point of difference|Variable|Property|  

@@ -22,6 +22,7 @@ You can compare two objects to determine the relationship, if any, between the c
     <xref:System.Type.IsInstanceOfType%2A> returns `True` if its argument type inherits from the <xref:System.Type?displayProperty=nameWithType> object type.
 
 ## Example
+
  The following example determines whether one object represents a class derived from another object's class.
 
 ```vb

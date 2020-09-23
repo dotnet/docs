@@ -9,17 +9,21 @@ helpviewer_keywords:
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
 ---
 # How to: Call Windows APIs (Visual Basic)
+
 This example defines and calls the `MessageBox` function in user32.dll and then passes a string to it.  
   
 ## Example  
+
  [!code-vb[VbVbalrInterop#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#1)]  
   
 ## Compile the code  
+
  This example requires:  
   
 - A reference to the <xref:System> namespace.  
   
 ## Robust Programming  
+
  The following conditions may cause an exception:  
   
 - The method is not static, is abstract, or has been previously defined. The parent type is an interface, or the length of *name* or *dllName* is zero. (<xref:System.ArgumentException>)  

@@ -38,6 +38,7 @@ helpviewer_keywords:
 ms.assetid: 89f771d9-ecbb-4737-88b8-116b63c6cf4d
 ---
 # Generic Types in Visual Basic (Visual Basic)
+
 A *generic type* is a single programming element that adapts to perform the same functionality for a variety of data types. When you define a generic class or procedure, you do not have to define a separate version for each data type for which you might want to perform that functionality.  
   
  An analogy is a screwdriver set with removable heads. You inspect the screw you need to turn and select the correct head for that screw (slotted, crossed, starred). Once you insert the correct head in the screwdriver handle, you perform the exact same function with the screwdriver, namely turning the screw.  
@@ -55,6 +56,7 @@ A *generic type* is a single programming element that adapts to perform the same
  For more information on using a generic type, see [How to: Use a Generic Class](how-to-use-a-generic-class.md).  
   
 ## Example of a Generic Class  
+
  The following example shows a skeleton definition of a generic class.  
   
  [!code-vb[VbVbalrDataTypes#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#2)]  
@@ -70,11 +72,13 @@ A *generic type* is a single programming element that adapts to perform the same
  For a more complete example, see [How to: Define a Class That Can Provide Identical Functionality on Different Data Types](how-to-define-a-class-that-can-provide-identical-functionality.md).  
   
 ## Eligible Programming Elements  
+
  You can define and use generic classes, structures, interfaces, procedures, and delegates. Note that the .NET Framework defines several generic classes, structures, and interfaces that represent commonly used generic elements. The <xref:System.Collections.Generic?displayProperty=nameWithType> namespace provides dictionaries, lists, queues, and stacks. Before defining your own generic element, see if it is already available in <xref:System.Collections.Generic?displayProperty=nameWithType>.  
   
  Procedures are not types, but you can define and use generic procedures. See [Generic Procedures in Visual Basic](generic-procedures.md).  
   
 ## Advantages of Generic Types  
+
  A generic type serves as a basis for declaring several different programming elements, each of which operates on a specific data type. The alternatives to a generic type are:  
   
 1. A single type operating on the `Object` data type.  
@@ -98,9 +102,11 @@ A *generic type* is a single programming element that adapts to perform the same
 - **Generic Algorithms.** Abstract algorithms that are type-independent are good candidates for generic types. For example, a generic procedure that sorts items using the <xref:System.IComparable> interface can be used with any data type that implements <xref:System.IComparable>.  
   
 ## Constraints  
+
  Although the code in a generic type definition should be as type-independent as possible, you might need to require a certain capability of any data type supplied to your generic type. For example, if you want to compare two items for the purpose of sorting or collating, their data type must implement the <xref:System.IComparable> interface. You can enforce this requirement by adding a *constraint* to the type parameter.  
   
 ### Example of a Constraint  
+
  The following example shows a skeleton definition of a class with a constraint that requires the type argument to implement <xref:System.IComparable>.  
   
  [!code-vb[VbVbalrDataTypes#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#5)]  
@@ -108,6 +114,7 @@ A *generic type* is a single programming element that adapts to perform the same
  If subsequent code attempts to construct a class from `itemManager` supplying a type that does not implement <xref:System.IComparable>, the compiler signals an error.  
   
 ### Types of Constraints  
+
  Your constraint can specify the following requirements in any combination:  
   
 - The type argument must implement one or more interfaces  
@@ -123,11 +130,13 @@ A *generic type* is a single programming element that adapts to perform the same
  For more information on constraints, see [Type List](../../../language-reference/statements/type-list.md).  
   
 ### Example of Multiple Constraints  
+
  The following example shows a skeleton definition of a generic class with a constraint list on the type parameter. In the code that creates an instance of this class, the type argument must implement both the <xref:System.IComparable> and <xref:System.IDisposable> interfaces, be a reference type, and expose an accessible parameterless constructor.  
   
  [!code-vb[VbVbalrDataTypes#6](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#6)]  
   
 ## Important Terms  
+
  Generic types introduce and use the following terms:  
   
 - *Generic Type*. A definition of a class, structure, interface, procedure, or delegate for which you supply at least one data type when you declare it.  

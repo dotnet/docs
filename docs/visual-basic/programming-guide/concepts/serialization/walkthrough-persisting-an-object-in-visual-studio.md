@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
 ---
 # Walkthrough: Persisting an Object in Visual Studio (Visual Basic)
+
 Although you can set an object's properties to default values at design time, any values entered at run time are lost when the object is destroyed. You can use serialization to persist an object's data between instances, which enables you to store values and retrieve them the next time that the object is instantiated.  
   
 > [!NOTE]
@@ -21,6 +22,7 @@ Although you can set an object's properties to default values at design time, an
 > The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, click **Import and Export Settings** on the **Tools** menu. For more information, see [Personalize the Visual Studio IDE](/visualstudio/ide/personalizing-the-visual-studio-ide).  
   
 ## Creating the Loan Object  
+
  The first step is to create a `Loan` class and a test application that uses the class.  
   
 ### To create the Loan class  
@@ -117,6 +119,7 @@ Although you can set an object's properties to default values at design time, an
  In the real world, interest rates change periodically, but not necessarily every time that the application is run. Rather than making the user update the interest rate every time that the application runs, it is better to preserve the most recent interest rate between instances of the application. In the next step, you will do just that by adding serialization to the Loan class.  
   
 ## Using Serialization to Persist the Object  
+
  In order to persist the values for the Loan class, you must first mark the class with the `Serializable` attribute.  
   
 ### To mark a class as serializable  

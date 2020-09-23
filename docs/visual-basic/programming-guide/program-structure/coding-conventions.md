@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: c1df130b-fec6-49a5-becf-0a7e494a1d0f
 ---
 # Visual Basic Coding Conventions
+
 Microsoft develops samples and documentation that follow the guidelines in this topic. If you follow the same coding conventions, you may gain the following benefits:  
   
 - Your code will have a consistent look, so that readers can better focus on content, not layout.  
@@ -80,6 +81,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
      [!code-vb[VbVbalrGuidelines#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#5)]  
   
 ### Relaxed Delegates in Event Handlers  
+
  Do not explicitly qualify the arguments (Object and EventArgs) to event handlers. If you are not using the event arguments that are passed to an event (for example, sender as Object, e as EventArgs), use relaxed delegates, and leave out the event arguments in your code:  
   
  [!code-vb[VbVbalrGuidelines#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#7)]  
@@ -115,14 +117,17 @@ Microsoft develops samples and documentation that follow the guidelines in this 
      [!code-vb[VbVbalrGuidelines#13](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#13)]  
   
 ### Use the With Keyword  
+
  When you make a series of calls to one object, consider using the `With` keyword:  
   
  [!code-vb[VbVbalrGuidelines#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrGuidelines/VB/Class1.vb#15)]  
   
 ### Use the Try...Catch and Using Statements when you use Exception Handling  
+
  Do not use `On Error Goto`.  
   
 ### Use the IsNot Keyword  
+
  Use the `IsNot` keyword instead of `Not...Is Nothing`.  
   
 ### New Keyword  
@@ -156,9 +161,11 @@ Microsoft develops samples and documentation that follow the guidelines in this 
 - Do not verify whether an event is `Nothing` (null) before you call the `RaiseEvent` method. `RaiseEvent` checks for `Nothing` before it raises the event.  
   
 ### Using Shared Members  
+
  Call `Shared` members by using the class name, not from an instance variable.  
   
 ### Use XML Literals  
+
  XML literals simplify the most common tasks that you encounter when you work with XML (for example, load, query, and transform). When you develop with XML, follow these guidelines:  
   
 - Use XML literals to create XML documents and fragments instead of calling XML APIs directly.  

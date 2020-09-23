@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 7f662a68-021a-4432-947a-6bde48061257
 ---
 # The file is currently open for reading
+
 An attempt has been made to access a file that is currently open for reading.  
   
 ## To correct this error  

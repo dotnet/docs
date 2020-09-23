@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: ea2fe85a-a198-4c12-8754-ab38c36bef4c
 ---
 # Insufficient security permissions to set the system date
+
 The security permissions are insufficient to set the system date.  
   
 ## To correct this error  

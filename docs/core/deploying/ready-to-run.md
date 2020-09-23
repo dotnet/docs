@@ -56,7 +56,7 @@ Such reasons may include, but are not limited to:
 - Certain unusual IL patterns
 - Dynamic method creation via reflection, or LINQ
 
-#### Cross platform/architecture restrictions
+## Cross platform/architecture restrictions
 
 For some SDK platforms the ReadyToRun compiler is capable of cross-compiling for other target platforms. Supported compilation targets are described in the table below.
 

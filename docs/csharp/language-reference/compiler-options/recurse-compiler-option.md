@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 4e8212e5-04e3-45b1-8a42-41bc50e683b0
 ---
 # -recurse (C# Compiler Options)
+
 The -recurse option enables you to compile source code files in all child directories of either the specified directory (dir) or of the project directory.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ The -recurse option enables you to compile source code files in all child direct
 ```  
   
 ## Arguments  
+
  `dir` (optional)  
  The directory in which you want the search to begin. If this is not specified, the search begins in the project directory.  
   
@@ -27,6 +29,7 @@ The -recurse option enables you to compile source code files in all child direct
  The file(s) to search for. Wildcard characters are allowed.  
   
 ## Remarks  
+
  The **-recurse** option lets you compile source code files in all child directories of either the specified directory (`dir`) or of the project directory.  
   
  You can use wildcards in a file name to compile all matching files in the project directory without using **-recurse**.  
@@ -34,6 +37,7 @@ The -recurse option enables you to compile source code files in all child direct
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  
   
 ## Example  
+
  Compiles all C# files in the current directory:  
   
 ```console  

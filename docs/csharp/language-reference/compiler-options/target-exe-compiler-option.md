@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: bda5717d-1b91-4848-956b-fcf85c30e432
 ---
 # -target:exe (C# Compiler Options)
+
 The **-target:exe** option causes the compiler to create an executable (EXE), console application.  
   
 ## Syntax  
@@ -20,6 +21,7 @@ The **-target:exe** option causes the compiler to create an executable (EXE), co
 ```  
   
 ## Remarks  
+
  The **-target:exe** option is in effect by default. The executable file will be created with the .exe extension.  
   
  Use [-target:winexe](./target-winexe-compiler-option.md) to create a Windows program executable.  
@@ -41,6 +43,7 @@ The **-target:exe** option causes the compiler to create an executable (EXE), co
  For information on how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   
 ## Example  
+
  Each of the following command lines will compile `in.cs`, creating `in.exe`:  
   
 ```console  

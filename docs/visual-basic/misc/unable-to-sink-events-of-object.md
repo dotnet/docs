@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: e40b19a2-8100-43ff-a1a4-0ddee3cc7f9a
 ---
 # Unable to sink events of object because the object is already firing events to the maximum number of event receivers it supports
+
 The maximum number of event receivers supported by the object has been exceeded.  
   
 ### To correct the error  

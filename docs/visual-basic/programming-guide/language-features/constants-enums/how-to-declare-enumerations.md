@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: db4ca1c3-f429-4c81-ae81-29e0157b29fd
 ---
 # How to: Declare Enumerations (Visual Basic)
+
 You create an enumeration with the `Enum` statement in the declarations section of a class or module. You cannot declare an enumeration within a method. To specify the appropriate level of access, use `Private`, `Protected`, `Friend`, or `Public`.  
   
  An `Enum` type has a name, an underlying type, and a set of fields, each representing a constant. The name must be a valid Visual Basic .NET qualifier. The underlying type must be one of the integer types—`Byte`, `Short`, `Long` or `Integer`. `Integer` is the default. Enumerations are always strongly typed and are not interchangeable with integer number types.  

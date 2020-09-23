@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
 ---
 # Walkthrough: Handling Events (Visual Basic)
+
 This is the second of two topics that demonstrate how to work with events. The first topic, [Walkthrough: Declaring and Raising Events](walkthrough-declaring-and-raising-events.md), shows how to declare and raise events. This section uses the form and class from that walkthrough to show how to handle events when they take place.  
   
  The `Widget` class example uses traditional event-handling statements. Visual Basic provides other techniques for working with events. As an exercise, you can modify this example to use the `AddHandler` and `Handles` statements.  
@@ -28,6 +29,7 @@ This is the second of two topics that demonstrate how to work with events. The f
      The variable `mblnCancel` is used to cancel the `LongTask` method.  
   
 ## Writing Code to Handle an Event  
+
  As soon as you declare a variable using `WithEvents`, the variable name appears in the left drop-down list of the class's **Code Editor**. When you select `mWidget`, the `Widget` class's events appear in the right drop-down list. Selecting an event displays the corresponding event procedure, with the prefix `mWidget` and an underscore. All the event procedures associated with a `WithEvents` variable are given the variable name as a prefix.  
   
 #### To handle an event  
@@ -52,6 +54,7 @@ This is the second of two topics that demonstrate how to work with events. The f
  If the user clicks the **Cancel** button while `LongTask` is running, the `Button2_Click` event is executed as soon as the `DoEvents` statement allows event processing to occur. The class-level variable `mblnCancel` is set to `True`, and the `mWidget_PercentDone` event then tests it and sets the `ByRef Cancel` argument to `True`.  
   
 ## Connecting a WithEvents Variable to an Object  
+
  `Form1` is now set up to handle a `Widget` object's events. All that remains is to find a `Widget` somewhere.  
   
  When you declare a variable `WithEvents` at design time, no object is associated with it. A `WithEvents` variable is just like any other object variable. You have to create an object and assign a reference to it with the `WithEvents` variable.  

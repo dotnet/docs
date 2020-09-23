@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: f0e53e96-c3de-41e2-bf98-e72f93802dfa
 ---
 # Code resource not found
+
 A call was made to a procedure in a code resource, but the code resource could not be found.  
   
 ## To correct this error  

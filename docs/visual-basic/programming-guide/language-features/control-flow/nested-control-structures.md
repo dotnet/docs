@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
 ---
 # Nested Control Structures (Visual Basic)
+
 You can place control statements inside other control statements, for example an `If...Then...Else` block within a `For...Next` loop. A control statement placed inside another control statement is said to be *nested*.  
   
 ## Nesting Levels  
+
  Control structures in Visual Basic can be nested to as many levels as you want. It is common practice to make nested structures more readable by indenting the body of each one. The integrated development environment (IDE) editor automatically does this.  
   
  In the following example, the procedure `sumRows` adds together the positive elements of each row of the matrix.  
@@ -41,6 +43,7 @@ End Sub
 > For many control structures, when you click a keyword, all of the keywords in the structure are highlighted. For instance, when you click `If` in an `If...Then...Else` construction, all instances of `If`, `Then`, `ElseIf`, `Else`, and `End If` in the construction are highlighted. To move to the next or previous highlighted keyword, press CTRL+SHIFT+DOWN ARROW or CTRL+SHIFT+UP ARROW.  
   
 ## Nesting Different Kinds of Control Structures  
+
  You can nest one kind of control structure within another kind. The following example uses a `With` block inside a `For Each` loop and nested `If` blocks inside the `With` block.  
   
 ```vb
@@ -59,6 +62,7 @@ Next ctl
 ```  
   
 ## Overlapping Control Structures  
+
  You cannot overlap control structures. This means that any nested structure must be completely contained within the next innermost structure. For example, the following arrangement is invalid because the `For` loop terminates before the inner `With` block terminates.  
   
  ![Diagram that shows an example of invalid nesting.](./media/nested-control-structures/example-invalid-nesting.gif)

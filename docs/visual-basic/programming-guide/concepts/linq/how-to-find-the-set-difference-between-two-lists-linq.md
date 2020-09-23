@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: b5b25474-10a8-4df6-aab5-75621bb6b68e
 ---
 # How to: Find the Set Difference Between Two Lists (LINQ) (Visual Basic)
+
 This example shows how to use LINQ to compare two lists of strings and output those lines that are in names1.txt but not in names2.txt.  
   
 ### To create the data files  
@@ -48,6 +49,7 @@ End Class
  Some types of query operations in Visual Basic, such as <xref:System.Linq.Enumerable.Except%2A>, <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Union%2A>, and <xref:System.Linq.Enumerable.Concat%2A>, can only be expressed in method-based syntax.  
   
 ## Compile the code  
+
 Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
   
 ## See also

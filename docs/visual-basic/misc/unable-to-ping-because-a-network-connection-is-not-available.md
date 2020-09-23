@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 8d2bac12-bc6a-42ae-b28b-80b026dfabce
 ---
 # Unable to ping because a network connection is not available
+
 The operation cannot be performed because no network connection is available.  
   
 ## To correct this error  

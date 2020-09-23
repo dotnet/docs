@@ -13,14 +13,17 @@ helpviewer_keywords:
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
 ---
 # Composite Data Types (Visual Basic)
+
 In addition to the elementary data types Visual Basic supplies, you can also assemble items of different types to create *composite data types* such as structures, arrays, and classes. You can build composite data types from elementary types and from other composite types. For example, you can define an array of structure elements, or a structure with array members.  
   
 ## Data Types  
+
  A composite type is different from the data type of any of its components. For example, an array of `Integer` elements is not of the `Integer` data type.  
   
  An array data type is normally represented using the element type, parentheses, and commas as necessary. For example, a one-dimensional array of `String` elements is represented as `String()`, and a two-dimensional array of `Boolean` elements is represented as `Boolean(,)`.  
   
 ## Structure Types  
+
  There is no single data type comprising all structures. Instead, each definition of a structure represents a unique data type, even if two structures define identical elements in the same order. However, if you create two or more instances of the same structure, Visual Basic considers them to be of the same data type.  
   
 ## Tuples
@@ -28,6 +31,7 @@ In addition to the elementary data types Visual Basic supplies, you can also ass
 A tuple is a lightweight structure that contains two or more fields whose types are predefined. Tuples are supported starting with Visual Basic 2017. Tuples are most commonly used to return multiple values from a single method call without having to pass arguments by reference or packaging the returned fields in a more heavy-weight class or structure. See the [Tuples](tuples.md) topic for more information on tuples.
 
 ## Array Types  
+
  There is no single data type comprising all arrays. The data type of a particular instance of an array is determined by the following:  
   
 - The fact of being an array  
@@ -51,6 +55,7 @@ Dim arrayE( , ) As Short = New Short(4, 10) {}
  For more information on arrays, see [Arrays](../arrays/index.md).  
   
 ## Class Types  
+
  There is no single data type comprising all classes. Although one class can inherit from another class, each is a separate data type. Multiple instances of the same class are of the same data type. If you assign one class instance variable to another, not only do they have the same data type, they point to the same class instance in memory.  
   
  For more information on classes, see [Objects and Classes](../objects-and-classes/index.md).  

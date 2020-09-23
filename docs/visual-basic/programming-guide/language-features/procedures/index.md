@@ -10,12 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
 ---
 # Procedures in Visual Basic
+
 A *procedure* is a block of Visual Basic statements enclosed by a declaration statement (`Function`, `Sub`, `Operator`, `Get`, `Set`) and a matching `End` declaration. All executable statements in Visual Basic must be within some procedure.  
   
 ## Calling a Procedure  
+
  You invoke a procedure from some other place in the code. This is known as a *procedure call*. When the procedure is finished running, it returns control to the code that invoked it, which is known as the *calling code*. The calling code is a statement, or an expression within a statement, that specifies the procedure by name and transfers control to it.  
   
 ## Returning from a Procedure  
+
  A procedure returns control to the calling code when it has finished running. To do this, it can use a [Return Statement](../../../language-reference/statements/return-statement.md), the appropriate [Exit Statement](../../../language-reference/statements/exit-statement.md) statement for the procedure, or the procedure's [End \<keyword> Statement](../../../language-reference/statements/end-keyword-statement.md) statement. Control then passes to the calling code following the point of the procedure call.  
   
 - With a `Return` statement, control returns immediately to the calling code. Statements following the `Return` statement do not run. You can have more than one `Return` statement in the same procedure.  
@@ -25,9 +28,11 @@ A *procedure* is a block of Visual Basic statements enclosed by a declaration st
 - If a procedure has no `Return` or `Exit` statements, it concludes with an `End Sub` or `End Function`, `End Get`, or `End Set` statement following the last statement of the procedure body. The `End` statement returns control immediately to the calling code. You can have only one `End` statement in a procedure.  
   
 ## Parameters and Arguments  
+
  In most cases, a procedure needs to operate on different data each time you call it. You can pass this information to the procedure as part of the procedure call. The procedure defines zero or more *parameters*, each of which represents a value it expects you to pass to it. Corresponding to each parameter in the procedure definition is an *argument* in the procedure call. An argument represents the value you pass to the corresponding parameter in a given procedure call.  
   
 ## Types of Procedures  
+
  Visual Basic uses several types of procedures:  
   
 - [Sub Procedures](./sub-procedures.md) perform actions but do not return a value to the calling code.  
@@ -45,6 +50,7 @@ A *procedure* is a block of Visual Basic statements enclosed by a declaration st
 - [Generic Procedures in Visual Basic](../data-types/generic-procedures.md) define one or more *type parameters* in addition to their normal parameters, so the calling code can pass specific data types each time it makes a call.  
   
 ## Procedures and Structured Code  
+
  Every line of executable code in your application must be inside some procedure, such as `Main`, `calculate`, or `Button1_Click`. If you subdivide large procedures into smaller ones, your application is more readable.  
   
  Procedures are useful for performing repeated or shared tasks, such as frequently used calculations, text and control manipulation, and database operations. You can call a procedure from many different places in your code, so you can use procedures as building blocks for your application.  

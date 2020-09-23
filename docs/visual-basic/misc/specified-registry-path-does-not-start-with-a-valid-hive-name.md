@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: afb1a03b-4516-450b-aab1-827a93f9e99d
 ---
 # Specified registry path does not start with a valid hive name
+
 The specified registry path does not begin with a valid hive name. Valid hive names are:  
   
 - `HKEY_CLASSES_ROOT`  

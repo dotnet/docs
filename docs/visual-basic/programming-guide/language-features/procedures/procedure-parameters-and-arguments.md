@@ -20,6 +20,7 @@ helpviewer_keywords:
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
 ---
 # Procedure Parameters and Arguments (Visual Basic)
+
 In most cases, a procedure needs some information about the circumstances in which it has been called. A procedure that performs repeated or shared tasks uses different information for each call. This information consists of variables, constants, and expressions that you pass to the procedure when you call it.  
   
  A *parameter* represents a value that the procedure expects you to supply when you call it. The procedure's declaration defines its parameters.  
@@ -35,6 +36,7 @@ In most cases, a procedure needs some information about the circumstances in whi
  For more information, see [Differences Between Parameters and Arguments](./differences-between-parameters-and-arguments.md).  
   
 ## Parameter Data Type  
+
  You define a data type for a parameter by using the `As` clause in its declaration. For example, the following function accepts a string and an integer.  
   
  [!code-vb[VbVbcnProcedures#32](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#32)]  
@@ -50,6 +52,7 @@ In most cases, a procedure needs some information about the circumstances in whi
 - Use a conversion keyword to explicitly convert the data type.  
   
 ### Type Parameters  
+
  A *generic procedure* also defines one or more *type parameters* in addition to its normal parameters. A generic procedure allows the calling code to pass different data types each time it calls the procedure, so it can tailor the data types to the requirements of each individual call. See [Generic Procedures in Visual Basic](../data-types/generic-procedures.md).  
   
 ## See also

@@ -5,6 +5,7 @@ ms.assetid: 09202d12-88d3-49cc-953b-703bcc1690eb
 author: "BrucePerlerMS"
 ---
 # \<samlSecurityTokenRequirement>
+
 Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> class, the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class, or a derived class of either of these classes. Represented by the <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> class.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -37,6 +38,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -63,6 +65,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
 |[\<add>](add.md)|Adds the specified security token handler to the token handler collection.|  
   
 ## Remarks  
+
  The `<samlSecurityTokenRequirement>` element is represented by the <xref:System.IdentityModel.Tokens.SamlSecurityTokenRequirement> class in the object model and is used to configure the `SamlSecurityTokenRequirement` property on a <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler> or a <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>.  
   
 ## Example  

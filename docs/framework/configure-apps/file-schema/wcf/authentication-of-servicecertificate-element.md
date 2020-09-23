@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
 ---
 # \<authentication> of \<serviceCertificate> Element
+
 Specifies the settings used by the client proxy to authenticate service certificates that are obtained using SSL/TLS negotiation.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies the settings used by the client proxy to authenticate service certific
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -61,6 +63,7 @@ Specifies the settings used by the client proxy to authenticate service certific
 |Enumeration|One of the following values: LocalMachine or CurrentUser. The default is CurrentUser. If the client application is running under a system account, then the certificate is typically under LocalMachine. If the client application is running under a user account, then the certificate is typically in CurrentUser.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -70,11 +73,13 @@ Specifies the settings used by the client proxy to authenticate service certific
 |[\<serviceCertificate>](servicecertificate-of-clientcredentials-element.md)|Specifies a certificate to use when authenticating a service to the client.|  
   
 ## Remarks  
+
  The `certificateValidationMode` attribute of this configuration element specifies the level of trust used to authenticate certificates. By default, the level is set to `ChainTrust`, which specifies that each certificate must be found in a hierarchy of certificates ending in a trusted certification authority at the top of the chain. This is the most secure mode. You can also set the value to `PeerOrChainTrust`, which specifies that self-issued certificates (peer trust) are accepted as well as certificates that are in a trusted chain. This value is used when developing and debugging clients and services because self-issued certificates need not be purchased from a trusted authority. When deploying a client, use the `ChainTrust` value instead. You can also set the value to `Custom` or `None`. To use the `Custom` value, you must also set the `customCertificateValidator` attribute to an assembly and type used to validate the certificate. To create your own custom validator, you must inherit from the abstract X509CertificateValidator class. For more information, see [How to: Create a Service that Employs a Custom Certificate Validator](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
  The `revocationMode` attribute specifies how certificates are checked for revocation. The default is `online` which indicates that certificates will be checked automatically for revocation. For more information, see [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md).  
   
 ## Example  
+
  The following example does two tasks. It first specifies a service certificate for the client to use when communicating with endpoints whose domain name is `www.contoso.com` over the HTTP protocol. Second, it specifies the revocation mode and store location used during authentication.  
   
 ```xml  

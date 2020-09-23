@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 594a7b3b-af23-4cfa-b616-0b2dddb1a705
 ---
 # \<add> Element for schemeSettings (Uri Settings)
+
 Adds a scheme setting for a scheme name.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Adds a scheme setting for a scheme name.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Adds a scheme setting for a scheme name.
 |genericUriParserOptions|The parser options for this scheme. The only supported value is genericUriParserOptions= "DontUnescapePathDotsAndSlashes".|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -45,6 +48,7 @@ Adds a scheme setting for a scheme name.
 |[\<schemeSettings> Element (Uri Settings)](schemesettings-element-uri-settings.md)|Specifies how a <xref:System.Uri> will be parsed for specific schemes.|  
   
 ## Remarks  
+
  By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
   
  `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`  
@@ -60,9 +64,11 @@ Adds a scheme setting for a scheme name.
  This default behavior can be modified to not un-escape percent encoded path delimiters using the schemeSettings configuration option for a specific scheme.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example shows a configuration used by the <xref:System.Uri> class to support not escaping percent-encoded path delimiters for the http scheme.  
   
 ```xml  

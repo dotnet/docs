@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
 ---
 # \<security> of \<netTcpBinding>
+
 Defines the security settings for a binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Defines the security settings for a binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -56,6 +58,7 @@ Defines the security settings for a binding.
 |binding|The binding element of the [\<netTcpBinding>](nettcpbinding.md).|  
   
 ## Remarks  
+
  Each of the standard bindings provides parameters for controlling the transfer security requirements. These parameters typically include the security mode that specified whether message-level or transport-level security is used and the choice of client credential type. Based on the choice of options these parameters present, a channel stack is constructed with appropriate security.  
   
  The system-provided bindings supplied by Windows Communication Foundation (WCF) are a set designed to meet some of the most common scenario requirements. Each of these bindings allows the specification of security requirements for some specific targeted scenarios.  

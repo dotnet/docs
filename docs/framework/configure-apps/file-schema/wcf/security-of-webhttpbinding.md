@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
 ---
 # \<security> of \<webHttpBinding>
+
 Specifies the security requirements for an endpoint configured with a [\<webHttpBinding>](webhttpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ Specifies the security requirements for an endpoint configured with a [\<webHttp
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

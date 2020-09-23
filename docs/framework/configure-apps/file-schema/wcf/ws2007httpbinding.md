@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
 ---
 # \<ws2007HttpBinding>
+
 Defines an interoperable binding that provides support for the correct versions of the <xref:System.ServiceModel.WSHttpBinding.Security%2A>, <xref:System.ServiceModel.ReliableSession>, and <xref:System.ServiceModel.WSHttpBindingBase.TransactionFlow%2A> binding elements.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -53,6 +54,7 @@ Defines an interoperable binding that provides support for the correct versions 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -90,6 +92,7 @@ Defines an interoperable binding that provides support for the correct versions 
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The `WS2007HttpBinding` adds a system-provided binding similar to `WSHttpBinding` but uses the Organization for the Advancement of Structured Information Standards (OASIS) standard versions of the ReliableSession, Security, and TransactionFlow protocols. No changes to the object model or default settings are required when using this binding.  
   
 ## Example  

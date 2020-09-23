@@ -5,6 +5,7 @@ ms.assetid: d818c917-07b4-40db-9801-8676561859fd
 author: "BrucePerlerMS"
 ---
 # \<trustedIssuers>
+
 Configures the list of trusted issuer certificates used by the configuration-based issuer name registry (<xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry>).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -36,9 +37,11 @@ Configures the list of trusted issuer certificates used by the configuration-bas
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None  
   
 ### Child Elements  
@@ -56,11 +59,13 @@ Configures the list of trusted issuer certificates used by the configuration-bas
 |[\<issuerNameRegistry>](issuernameregistry.md)|Configures the issuer name registry. **Important:**  The `type` attribute of the `<issuerNameRegistry>` element must reference the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class for the `<trustedIssuers>` element to be valid.|  
   
 ## Remarks  
+
  Windows Identity Foundation (WIF) provides a single implementation of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class out of the box, the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class. The configuration issuer name registry maintains a list of trusted issuers that is loaded from configuration. The list associates each issuer name with the X.509 certificate that is needed to verify the signature of tokens produced by the issuer. The list of trusted issuer certificates is specified under the `<trustedIssuers>` element. Each element in the list associates a mnemonic issuer name with the X.509 certificate that is needed to verify the signature of tokens produced by that issuer. Trusted certificates are specified using the ASN.1 encoded form of the certificate thumbprint and are added the collection by using `<add>` element. You can clear or remove issuers (certificates) from the list by using the `<clear>` and `<remove>` elements.  
   
  The `type` attribute of the `<issuerNameRegistry>` element must reference the <xref:System.IdentityModel.Tokens.ConfigurationBasedIssuerNameRegistry> class for the `<trustedIssuers>` element to be valid.  
   
 ## Example  
+
  The following XML shows how to specify the configuration based issuer name registry.  
   
 ```xml  

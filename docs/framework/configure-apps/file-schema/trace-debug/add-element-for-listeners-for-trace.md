@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
 ---
 # \<add> Element for \<listeners> for \<trace>
+
 Adds a listener to the **Listeners** collection.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ Adds a listener to the **Listeners** collection.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -53,6 +55,7 @@ Adds a listener to the **Listeners** collection.
 |`trace`|Contains listeners that collect, store, and route tracing messages.|  
   
 ## Remarks  
+
  The <xref:System.Diagnostics.Debug> and <xref:System.Diagnostics.Trace> classes share the same **Listeners** collection. If you add a listener object to the collection in one of these classes, the other class uses the same listener. The listener classes derive from the <xref:System.Diagnostics.TraceListener>.  
   
  If you do not specify the `name` attribute of the trace listener, the <xref:System.Diagnostics.TraceListener.Name%2A> of the trace listener defaults to an empty string (""). If your application has only one listener, you can add it without specifying a name, and remove it by specifying an empty string for the name. However, if your application has more than one listener, you should specify unique names for each trace listener, which allows you to identify and manage individual trace listeners within the <xref:System.Diagnostics.Debug.Listeners%2A> and <xref:System.Diagnostics.Trace.Listeners%2A> collections.  
@@ -77,6 +80,7 @@ Adds a listener to the **Listeners** collection.
 |<xref:System.Diagnostics.XmlWriterTraceListener?displayProperty=nameWithType>|The name of the file that the <xref:System.Diagnostics.XmlWriterTraceListener> writes to.|  
   
 ## Example  
+
  The following example shows how to use **\<add>** elements to add the listeners `MyListener` and `MyEventListener` to the **Listeners** collection. `MyListener` creates a file called `MyListener.log` and writes the output to the file. `MyEventListener` creates an entry in the event log.  
   
 ```xml  

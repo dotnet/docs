@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5454cd19-6bf5-4ba8-94d1-f58d10dc1917
 ---
 # \<findCriteria>
+
 A configuration element that supplies a set of criteria used by a client application to search for a discovery service. Criteria can be grouped into search criteria (specifying what services you’re looking for) and find termination criteria (how long the search should last).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -42,6 +43,7 @@ A configuration element that supplies a set of criteria used by a client applica
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

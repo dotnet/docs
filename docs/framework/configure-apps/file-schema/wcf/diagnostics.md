@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
 ---
 # \<diagnostics>
+
 The `diagnostics` element defines settings that can be used by an administrator for run-time inspection and control.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -59,6 +61,7 @@ The `diagnostics` element defines settings that can be used by an administrator 
 |serviceModel|The root element of all WCF configuration elements.|  
   
 ## Remarks  
+
  The `diagnostics` section defines the diagnostics settings for all services located in an assembly. It is not possible to define separate diagnostics settings at the service level unless there is only one service in the assembly. Attributes are set according to the requirements of the section.  
   
 ## Example  

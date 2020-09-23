@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
 ---
 # \<endToEndTracing>
+
 A configuration element that allows you to enable and disable different aspects of end-to-end tracing during the running of a service application.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ A configuration element that allows you to enable and disable different aspects 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ A configuration element that allows you to enable and disable different aspects 
 |`propagateActivity`|A Boolean value that specifies whether the propagate attribute is set to true.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

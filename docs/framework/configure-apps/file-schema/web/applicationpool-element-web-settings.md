@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 46d1baaa-e343-4639-b70d-2a43a9f62b2a
 ---
 # \<applicationPool> Element (Web Settings)
+
 Specifies configuration settings that are used by ASP.NET to manage process-wide behavior when an ASP.NET application is running in Integrated mode on IIS 7.0 or a later version.  
   
 > [!IMPORTANT]
@@ -38,6 +39,7 @@ The following sections describe attributes, child elements, and parent elements.
 |`requestQueueLimit`|Specifies the maximum number of requests that can be queued for ASP.NET in a single process. When two or more ASP.NET applications run in a single application pool, the cumulative set of requests being made to any application in the application pool is subject to this setting.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

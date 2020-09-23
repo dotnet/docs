@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: de6238ae-bbf8-48e9-a1b5-e24c0bea8afa
 ---
 # \<endpoint> of \<client>
+
 Specifies contract, binding, and address properties of the channel endpoint, which is used by clients to connect to service endpoints on the server.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -55,6 +57,7 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 |[\<client>](client.md)|A configuration section that defines a list of endpoints that a client can connect to.|  
   
 ## Example  
+
  This is an example of a channel endpoint configuration.  
   
 ```xml  

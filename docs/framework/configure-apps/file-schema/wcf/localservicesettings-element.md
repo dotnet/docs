@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
 ---
 # \<localServiceSettings> element
+
 Specifies the security settings of a local service for this binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -36,6 +37,7 @@ Specifies the security settings of a local service for this binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -58,6 +60,7 @@ Specifies the security settings of a local service for this binding.
 |`timestampValidityDuration`|A positive <xref:System.TimeSpan> that specifies the duration in which a time stamp is valid. The default is "00:15:00".|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -68,6 +71,7 @@ Specifies the security settings of a local service for this binding.
 |[\<secureConversationBootstrap>](secureconversationbootstrap.md)|Specifies the default values used for initiating a secure conversation service.|  
   
 ## Remarks  
+
  The settings are local because they are not published as part of the security policy of the service and do not affect the client's binding.  
   
  The following attributes of the `localServiceSecuritySettings` element can help mitigate a denial-of-service (DOS) security attack:  

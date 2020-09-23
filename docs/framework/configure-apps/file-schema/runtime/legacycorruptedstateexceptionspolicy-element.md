@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
 ---
 # \<legacyCorruptedStateExceptionsPolicy> Element
+
 Specifies whether the common language runtime allows managed code to catch access violations and other corrupted state exceptions.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Specifies whether the common language runtime allows managed code to catch acces
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Specifies whether the common language runtime allows managed code to catch acces
 |`true`|The application will catch corrupting state exception failures such as access violations.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,6 +49,7 @@ Specifies whether the common language runtime allows managed code to catch acces
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  In the .NET Framework version 3.5 and earlier, the common language runtime allowed managed code to catch exceptions that were raised by corrupted process states. An access violation is an example of this type of exception.  
   
  Starting with the .NET Framework 4, managed code no longer catches these types of exceptions in `catch` blocks. However, you can override this change and maintain the handling of corrupted state exceptions in two ways:  
@@ -59,6 +63,7 @@ Specifies whether the common language runtime allows managed code to catch acces
  This configuration element is available only in the .NET Framework 4 and later.  
   
 ## Example  
+
  The following example shows how to specify that the application should revert to the behavior before the .NET Framework 4, and catch all corrupting state exception failures.  
   
 ```xml  

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
 ---
 # \<CompatSortNLSVersion> Element
+
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
 |4096|The locale ID that represents an alternate sort order. In this case, 4096 represents the sort order of the .NET Framework 3.5 and earlier versions.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -49,6 +52,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
+
  Because string comparison, sorting, and casing operations performed by the <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class in the .NET Framework 4 conform to the Unicode 5.1 standard, the results of string comparison methods such as <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> may differ from previous versions of the .NET Framework. If your application depends on legacy behavior, you can restore the string comparison and sorting rules used in the .NET Framework 3.5 and earlier versions by including the `<CompatSortNLSVersion>` element in your application's configuration file.  
   
 > [!IMPORTANT]
@@ -57,6 +61,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
  You can also use legacy string sorting and comparison rules in a specific application domain by passing the string "NetFx40_Legacy20SortingBehavior" to the <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A> method when you create the application domain.  
   
 ## Example  
+
  The following example instantiates two <xref:System.String> objects and calls the <xref:System.String.Compare%28System.String%2CSystem.String%2CSystem.StringComparison%29?displayProperty=nameWithType> method to compare them by using the conventions of the current culture.  
   
  [!code-csharp[String.BreakingChanges#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/string.breakingchanges/cs/example1.cs#1)]

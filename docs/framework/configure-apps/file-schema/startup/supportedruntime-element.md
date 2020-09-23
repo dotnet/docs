@@ -49,7 +49,9 @@ If the **\<supportedRuntime>** element with the `sku` attribute is present in th
 We recommend that you test applications with all the .NET Framework versions that they can run on.
 
 <a name="version"></a>
+
 ## "runtime version" values
+
 The `runtime` attribute specifies the Common Language Runtime (CLR) version that is required for a given application. Note that all .NET Framework v4.x versions specify the `v4.0` CLR. The following table lists valid values for the *runtime version* value of the `version` attribute.
 
 |.NET Framework version|`version` attribute|

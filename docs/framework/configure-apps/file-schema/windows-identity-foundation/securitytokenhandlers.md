@@ -5,6 +5,7 @@ ms.assetid: f11a631d-4094-4e11-bb03-4ede74b30281
 author: "BrucePerlerMS"
 ---
 # \<securityTokenHandlers>
+
 Specifies a collection of security token handlers that are registered with the endpoint.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Specifies a collection of security token handlers that are registered with the e
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -48,6 +50,7 @@ Specifies a collection of security token handlers that are registered with the e
 |[\<identityConfiguration>](identityconfiguration.md)|Specifies service-level identity settings.|  
   
 ## Remarks  
+
  You can specify one or more named collections of security token handlers in a service configuration. You can specify a name for a collection by using the `name` attribute. The only names that the framework handles are "ActAs" and "OnBehalfOf". If handlers exist in these collections, they are used by a security token service (STS) instead of the default handlers when processing `ActAs` and `OnBehalfOf` tokens.  
   
  By default, the collection is populated with the following handler types: <xref:System.IdentityModel.Tokens.SamlSecurityTokenHandler>, <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler>, <xref:System.IdentityModel.Tokens.KerberosSecurityTokenHandler>, <xref:System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler>, <xref:System.IdentityModel.Tokens.RsaSecurityTokenHandler>, <xref:System.IdentityModel.Tokens.X509SecurityTokenHandler>, and <xref:System.IdentityModel.Tokens.EncryptedSecurityTokenHandler>. You can modify the collection by using the `<add>`, `<remove>`, and `<clear>` elements. You must ensure that only a single handler of any particular type exists in the collection. For example, if you derive a handler from the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> class, either your handler or the <xref:System.IdentityModel.Tokens.Saml2SecurityTokenHandler> may be configured in a single collection, but not both.  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ee2b7be3-7148-4a3a-b861-48e7330615e5
 ---
 # \<knownType>
+
 Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSerializer> during deserialization. The element specifies a "known type" that is returned by a field or property of a "declared type." For more information, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,9 +24,11 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
 ```  
   
 ## Type  
+
  `string`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -47,6 +50,7 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
 |[\<add>](add-of-declaredtypes-element.md)|Adds a declared type to the collection of declared types.|  
   
 ## Remarks  
+
  For more information about known types, see [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md) and <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
  See the [\<dataContractSerializer>](datacontractserializer-element.md) for an example of using this element.  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
 ---
 # \<serviceCertificate> of \<clientCredentials> Element
+
 Specifies a certificate to use when authenticating a service to the client.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,9 +22,11 @@ Specifies a certificate to use when authenticating a service to the client.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -41,6 +44,7 @@ Specifies a certificate to use when authenticating a service to the client.
 |[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used by the client to authenticate itself to a service.|  
   
 ## Remarks  
+
  This configuration element specifies the settings used by the client to validate the certificate presented by the service using SSL authentication. It also contains any certificate for the service that is explicitly configured on the client to use for encrypting messages to the service using message security.  
   
  The attributes of the `serviceCertificate` element are identical to the attributes of the [\<clientCertificate>](clientcertificate-of-clientcredentials-element.md).  

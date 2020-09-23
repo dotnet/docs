@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
 ---
 # \<tcpTransport>
+
 Defines a TCP transport that can be used by a channel to transfers messages for a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -38,6 +39,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -61,6 +63,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 |connectionPoolSettings|Specifies additional connection pool settings for a Named Pipe binding.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -70,6 +73,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  This transport uses URIs of the form "net.tcp://hostname:port/path". Other URI components are optional.  
   
  The `tcpTransport` element is the starting point for creating a custom binding that implements the TCP transport protocol. This transport is optimized for WCF-to-WCF communication.  

@@ -5,6 +5,7 @@ ms.assetid: 54dcd1d1-038f-4fc8-a3a4-56ba7a1ca0fd
 author: "BrucePerlerMS"
 ---
 # \<clear>
+
 Clears all security token handlers from the current token handler collection.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,12 +28,15 @@ Clears all security token handlers from the current token handler collection.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  

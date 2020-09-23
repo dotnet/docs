@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
 ---
 # \<system.diagnostics> Element
+
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -23,9 +24,11 @@ Specifies trace listeners that collect, store, and route messages and the level 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -46,6 +49,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
   
 ## Example  
+
  The following example shows how to embed a trace switch and a trace listener inside the **\<system.diagnostics>** element. The `General` trace switch is set to the <xref:System.Diagnostics.TraceLevel> level. The trace listener `myListener` creates a file called `MyListener.log` and writes the output to the file.  
   
 > [!NOTE]

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
 ---
 # \<peer> of \<serviceCredentials>
+
 Specifies the current credentials for a peer node.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,9 +26,11 @@ Specifies the current credentials for a peer node.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

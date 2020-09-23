@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: fd8ac4e2-5641-473b-9115-73f14ab1c065
 ---
 # \<wsDualHttpBinding>
+
 Defines a secure, reliable and interoperable binding that is suitable for duplex service contracts or communication through SOAP intermediaries.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -49,6 +50,7 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -86,6 +88,7 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The `WSDualHttpBinding` provides the same support for Web Service protocols as the `WSHttpBinding`, but for use with duplex contracts. `WSDualHttpBinding` only supports SOAP security and requires reliable messaging. This binding requires that the client has a public URI that provides a callback endpoint for the service. This is provided by the `clientBaseAddress` attribute. A dual binding exposes the IP address of the client to the service. The client should use security to ensure that it only connects to services it trusts.  
   
  This binding can be used to communicate reliably through one or more SOAP intermediaries.  

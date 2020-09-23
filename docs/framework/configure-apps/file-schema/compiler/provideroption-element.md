@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 014f2e0b-c0b5-4fc4-92d3-73f02978b2a1
 ---
 # \<providerOption> Element
+
 Specifies the compiler version attributes for a language provider.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Specifies the compiler version attributes for a language provider.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -38,6 +40,7 @@ Specifies the compiler version attributes for a language provider.
 |`value`|Required attribute.<br /><br /> Specifies the value for the option; for example, "v3.5".|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -50,6 +53,7 @@ Specifies the compiler version attributes for a language provider.
 |[\<compiler> Element](compiler-element.md)|Specifies the compiler configuration attributes for a language provider.|  
   
 ## Remarks  
+
  In the .NET Framework version 3.5, Code Document Object Model (CodeDOM) code providers can support provider-specific options by using the `<providerOption>` element.  
   
  The .NET Framework 3.5 includes updated .NET Framework 2.0 assemblies and provides new version 3.5 assemblies that contain new types. The Microsoft C# and Visual Basic code providers are contained in .NET Framework 2.0 assemblies but have been updated to support version 3.5 compilers. By default, the updated code providers generate code for version 2.0 compilers. You can use the `<providerOption>` element to change the target compiler version to 3.5. To do this, specify "CompilerVersion" for the `name` attribute and "v3.5" for the `value` attribute. You must precede the version number with a lower-case "v".  
@@ -59,6 +63,7 @@ Specifies the compiler version attributes for a language provider.
  CodeDOM code provider implementers can process custom options by providing a constructor that takes a `providerOptions` parameter of type <xref:System.Collections.Generic.IDictionary%602>.  
   
 ## Example  
+
  The following example demonstrates how to specify that version 3.5 of the C# code provider should be used.  
   
 ```xml  

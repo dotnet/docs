@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 679644c7-e3fc-422c-b14a-b44b683900d0
 ---
 # Asynchronous Operations (WCF Data Services)
+
 Web applications must accommodate higher latency between client and server than applications that run inside internal networks. To optimize the performance and user experience of your application, we recommend using the asynchronous methods of the <xref:System.Data.Services.Client.DataServiceContext> and <xref:System.Data.Services.Client.DataServiceQuery%601> classes when accessing WCF Data Services servers over the Web.  
   
  Although the WCF Data Services servers process HTTP requests asynchronously, some methods of the WCF Data Services client libraries are synchronous and wait until the entire request-response exchange is completed before continuing execution. The asynchronous methods of the WCF Data Services client libraries do not wait for this exchange to complete and can allow your application to maintain a responsive user interface in the meantime.  
@@ -28,6 +29,7 @@ Web applications must accommodate higher latency between client and server than 
 |Saving changes to objects in the <xref:System.Data.Services.Client.DataServiceContext>|-   <xref:System.Data.Services.Client.DataServiceContext.BeginSaveChanges%2A><br />-   <xref:System.Data.Services.Client.DataServiceContext.EndSaveChanges%2A>|  
   
 ## Threading Considerations for Asynchronous Operations  
+
  In a multi-threaded application, the delegate that is registered as a callback for the asynchronous operation is not necessarily invoked on the same thread that was used to call the *Begin* method, which creates the initial request. In an application where the callback must be invoked on a specific thread, you must explicitly marshal the execution of the *End* method, which handles the response, to the desired thread. For example, in Windows Presentation Foundation (WPF)-based applications and Silverlight-based applications, the response must be marshaled back to the UI thread by using the <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A> method on the <xref:System.Windows.Threading.Dispatcher> object. For more information, see [Querying the Data Service (WCF Data Services/Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc903932(v=vs.95)).  
   
 ## See also

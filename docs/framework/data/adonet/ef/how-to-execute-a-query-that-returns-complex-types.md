@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: c2209fdb-70ef-4dea-8bb8-097fe96f5563
 ---
 # How to: Execute a Query that Returns Complex Types
+
 This topic shows how to execute an [!INCLUDE[esql](../../../../../includes/esql-md.md)] query that returns entity type objects that contain a property of a complex type.  
   
 ### To run the code in this example  
@@ -25,6 +26,7 @@ This topic shows how to execute an [!INCLUDE[esql](../../../../../includes/esql-
      For information about creating and modifying complex types by using the Entity Data Model Wizard, see [How to: Refactor Existing Properties into a Complex Type Property](/previous-versions/dotnet/netframework-4.0/dd456814(v=vs.100)) and [How to: Create and Modify Complex Types](/previous-versions/dotnet/netframework-4.0/dd456820(v=vs.100)).  
   
 ## Example  
+
  The following example executes a query that returns a collection of `Contact` objects and displays two properties of the `Contact` objects: `ContactID` and the values of the `EmailPhoneComplexType` complex type.  
   
  [!code-csharp[DP EntityServices Concepts#ComplexTypeWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#complextypewithentitycommand)]

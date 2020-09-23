@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: a4a564fb-c1c4-4135-b6c2-b030e51195e4
 ---
 # Adding DataRelations
+
 In a <xref:System.Data.DataSet> with multiple <xref:System.Data.DataTable> objects, you can use <xref:System.Data.DataRelation> objects to relate one table to another, to navigate through the tables, and to return child or parent rows from a related table.  
   
  The arguments required to create a **DataRelation** are a name for the **DataRelation** being created, and an array of one or more <xref:System.Data.DataColumn> references to the columns that serve as the parent and child columns in the relationship. After you have created a **DataRelation**, you can use it to navigate between tables and to retrieve values.  

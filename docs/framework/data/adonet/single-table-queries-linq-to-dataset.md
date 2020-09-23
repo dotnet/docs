@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 0b74bcf8-3f87-449f-bff7-6bcb0d69d212
 ---
 # Single-Table Queries (LINQ to DataSet)
+
 Language-Integrated Query (LINQ) queries work on data sources that implement the <xref:System.Collections.Generic.IEnumerable%601> interface or the <xref:System.Linq.IQueryable%601> interface. The <xref:System.Data.DataTable> class does not implement either interface, so you must call the <xref:System.Data.DataTableExtensions.AsEnumerable%2A> method if you want to use the <xref:System.Data.DataTable> as a source in the `From` clause of a LINQ query.  
   
  The following example gets all the online orders from the SalesOrderHeader table and outputs the order ID, order date, and order number to the console.  

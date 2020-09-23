@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c44d2ebe-f66f-42cb-9741-4a3f0c2dcffb
 ---
 # How to: Use EdmGen.exe to Generate Object-Layer Code
+
 This topic shows how to use the [EDM Generator (EdmGen.exe)](edm-generator-edmgen-exe.md) tool to generate object-layer code  based on the .csdl file.  
   
 ### To generate object-layer code for the School model for a Visual Basic project using EdmGen.exe  

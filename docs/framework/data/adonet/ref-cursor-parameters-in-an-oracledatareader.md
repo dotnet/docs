@@ -6,6 +6,7 @@ dev_langs:
 ms.assetid: 801dff0f-2508-45aa-9416-f45d6887740c
 ---
 # REF CURSOR Parameters in an OracleDataReader
+
 This Microsoft Visual Basic example executes a PL/SQL stored procedure that returns a REF CURSOR parameter, and reads the value as an <xref:System.Data.OracleClient.OracleDataReader>.  
   
 ```vb  

@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 5bd1a748-3df7-4d0a-a607-14f25e3175e9
 ---
 # How to: Build an EntityConnection Connection String
+
 This topic provides an example of how to build an <xref:System.Data.EntityClient.EntityConnection>.  
   
 ### To run the code in this example  
@@ -19,6 +20,7 @@ This topic provides an example of how to build an <xref:System.Data.EntityClient
      [!code-vb[DP EntityServices Concepts#Namespaces](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#namespaces)]  
   
 ## Example  
+
  The following example initializes the <xref:System.Data.SqlClient.SqlConnectionStringBuilder?displayProperty=nameWithType> for the underlying provider, then initializes the <xref:System.Data.EntityClient.EntityConnectionStringBuilder?displayProperty=nameWithType> object and passes this object to the constructor of the <xref:System.Data.EntityClient.EntityConnection>.  
   
  [!code-csharp[DP EntityServices Concepts#BuildingConnectionStringWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#buildingconnectionstringwithentitycommand)]

@@ -7,14 +7,17 @@ helpviewer_keywords:
 ms.assetid: 90872d0c-e989-4490-b3e9-54afb10d33d4
 ---
 # Using a Data Service in a Client Application (WCF Data Services)
+
 You can access a service that exposes an Open Data Protocol (OData) feed by supplying a URI to a Web browser. The URI provides the address of a resource, and request messages are sent to these addresses to access or change the underlying data that the resource represents. The browser issues an HTTP GET command and returns the requested resource as an OData feed. For more information, see [Accessing the Service from a Web Browser](accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).  
   
  Although a Web browser may be useful for testing that an OData service returns the expected data, production OData services that enable you to also create, update, and delete data are generally accessed by application code or scripting languages in a Web page. This topic provides an overview of how to access OData feeds from a client application.  
   
 ## Accessing and Changing Data Using REST Semantics  
+
  OData helps guarantee interoperability between services that expose OData feeds and applications that consume OData feeds. Applications access and change data in an OData-based service by sending request messages of a specific HTTP action and with a URI that addresses an entity resource against which the action should be performed. When entity data must be supplied, it is supplied as a specifically encoded payload in the body of the message.  
   
 ### HTTP Actions  
+
  OData supports the following HTTP actions to perform create, read, update, and delete operations on the entity data that the addressed resource represents:  
   
 - **HTTP GET** - This is the default action when a resource is accessed from a browser. No payload is supplied in the request message, and a response method with a payload that contains the requested data is returned.  
@@ -30,6 +33,7 @@ You can access a service that exposes an Open Data Protocol (OData) feed by supp
  For more information, see [OData: Operations](https://www.odata.org/documentation/odata-version-2-0/operations/).
   
 ### Payload Formats  
+
  For an HTTP PUT, HTTP POST, or HTTP MERGE request, the payload of a request message contains the entity data that you send to the data service. The contents of the payload depend on the data format of the message. The HTTP responses to all actions except DELETE also contain such a payload. OData supports the following payload formats for accessing and changing data with the service:  
   
 - **Atom** - An XML-based message encoding that is defined by OData as an extension to the Atom Publishing Protocol (AtomPub) to enable data exchange over HTTP for Web feeds, podcasts, wikis, and XML-based Internet functionality. For more information, see [OData: Atom Format](https://www.odata.org/documentation/odata-version-2-0/atom-format/).
@@ -39,6 +43,7 @@ You can access a service that exposes an Open Data Protocol (OData) feed by supp
  The message format of the payload is requested in the header of the HTTP request message. For more information, see [OData: Operations](https://www.odata.org/documentation/odata-version-2-0/operations/).
   
 ## Accessing and Changing Data Using Client Libraries  
+
  WCF Data Services includes client libraries that enable you to more easily consume an OData feed from .NET Framework and Silverlight-based client applications. These libraries simplify sending and receiving HTTP messages. They also translate the message payload into CLR objects that represent entity data. The client libraries feature the two core classes <xref:System.Data.Services.Client.DataServiceContext> and <xref:System.Data.Services.Client.DataServiceQuery%601>. These classes enable you to query a data service and then work with the returned entity data as CLR objects. For more information, see [WCF Data Services Client Library](wcf-data-services-client-library.md) and [WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95)).  
   
  You can use the **Add Service Reference** dialog in Visual Studio to add a reference to a data service. This tool requests the service metadata from a referenced data service and generates the <xref:System.Data.Services.Client.DataServiceContext> that represents a data service, as well as generates the client data service classes that represent entities. For more information, see [Generating the Data Service Client Library](generating-the-data-service-client-library-wcf-data-services.md).  

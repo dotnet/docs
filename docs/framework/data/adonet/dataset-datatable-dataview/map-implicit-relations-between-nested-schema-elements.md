@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6b25002a-352e-4d9b-bae3-15129458a355
 ---
 # Map Implicit Relations Between Nested Schema Elements
+
 An XML Schema definition language (XSD) schema can have complex types nested inside one another. In this case, the mapping process applies default mapping and creates the following in the <xref:System.Data.DataSet>:  
   
 - One table for each of the complex types (parent and child).  

@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 0b67fab5-1722-4d2b-bfc1-247a75f0f1ee
 ---
 # Managing DataViews
+
 You can use a <xref:System.Data.DataViewManager> to manage view settings for all the tables in a <xref:System.Data.DataView>. If you have a control that you want to bind to multiple tables, such as a grid that navigates relationships, a **DataViewManager** is ideal.  
   
  The **DataViewManager** contains a collection of <xref:System.Data.DataViewSetting> objects that are used to set the view setting of the tables in the <xref:System.Data.DataSet>. The <xref:System.Data.DataViewSettingCollection> contains one <xref:System.Data.DataViewSetting> object for each table in a **DataSet**. You can set the default **ApplyDefaultSort**, **Sort**, **RowFilter**, and **RowStateFilter** properties of the referenced table by using its **DataViewSetting**. You can reference the **DataViewSetting** for a particular table by name or ordinal reference, or by passing a reference to that specific table object. You can access the collection of **DataViewSetting** objects in a **DataViewManager** by using the **DataViewSettings** property.  

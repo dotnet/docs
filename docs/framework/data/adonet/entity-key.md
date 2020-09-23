@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0d447a6d-fa7a-4db0-8e7a-fd45e385fca0
 ---
 # entity key
+
 An *entity key* is a [property](property.md) or a set of properties of an [entity type](entity-type.md) that are used to determine identity. The properties that make up an entity key are chosen at design time. The values of entity key properties must uniquely identify an entity type instance within an [entity set](entity-set.md) at run time. The properties that make up an entity key should be chosen to guarantee uniqueness of instances in an entity set.  
   
  The following are the requirements for a set of properties to be an entity key:  
@@ -17,6 +18,7 @@ An *entity key* is a [property](property.md) or a set of properties of an [entit
 - When an entity is involved in an inheritance hierarchy, the root entity must contain all the properties that make up the entity key, and the entity key must be defined on the root entity type. For more information, see [Entity Data Model: Inheritance](entity-data-model-inheritance.md).  
   
 ## Example  
+
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`. The properties of each entity type that make up its entity key are denoted with "(Key)". Note that the `Author` entity type has an entity key that consists of two properties, `Name` and `Address`.  
   
  ![Example model with three entity types](./media/entity-key/example-model-three-entity-types.gif)  

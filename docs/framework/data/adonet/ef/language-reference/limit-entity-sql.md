@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c22ffede-0a52-44d1-99b9-4a91e651e1b9
 ---
 # LIMIT (Entity SQL)
+
 Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. LIMIT can not be used separately from ORDER BY clause.  
   
 ## Syntax  
@@ -13,6 +14,7 @@ Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. L
 ```  
   
 ## Arguments  
+
  `n`  
  The number of items that will be selected.  
   
@@ -22,6 +24,7 @@ Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. L
 > An Entity Sql query will be considered invalid if TOP modifier and SKIP sub-clause is present in the same query expression. The query should be rewritten by changing TOP expression to LIMIT expression.  
   
 ## Example  
+
  The following Entity SQL query uses the ORDER BY operator with LIMIT to specify the sort order used on objects returned in a SELECT statement. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  

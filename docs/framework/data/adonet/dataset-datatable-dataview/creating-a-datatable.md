@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: eecf9d78-60e3-4fdc-8de0-e56c13a89414
 ---
 # Creating a DataTable
+
 A <xref:System.Data.DataTable>, which represents one table of in-memory relational data, can be created and used independently, or can be used by other .NET Framework objects, most commonly as a member of a <xref:System.Data.DataSet>.  
   
  You can create a **DataTable** object by using the appropriate **DataTable** constructor. You can add it to the **DataSet** by using the **Add** method to add it to the **DataTable** object's **Tables** collection.  

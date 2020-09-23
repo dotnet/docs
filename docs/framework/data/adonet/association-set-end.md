@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fe4bf1d3-047a-4a37-98c5-a66e70811346
 ---
 # association set end
+
 An *association set end* identifies the [entity type](entity-type.md) and the [entity set](entity-set.md) at the end of an [association set](association-set.md). Association set ends are defined as part of an association set; an association set must have exactly two association set ends.  
   
  An association set end definition contains the following information:  
@@ -13,6 +14,7 @@ An *association set end* identifies the [entity type](entity-type.md) and the [e
 - The entity set for the entity type involved in the association set. (Required)  
   
 ## Example  
+
  The diagram below shows a conceptual model with two associations: `WrittenBy` and `PublishedBy`.  
   
  ![Example model with three entity types](./media/association-set-end/example-model-three-entity-types.gif)  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 26a47873-e87d-4ba2-9e2c-3787c21efe89
 ---
 # CASE (Entity SQL)
+
 Evaluates a set of `Boolean` expressions to determine the result.  
   
 ## Syntax  
@@ -19,6 +20,7 @@ END
 ```  
   
 ## Arguments  
+
  `n`  
  Is a placeholder that indicates that multiple WHEN `Boolean_expression` THEN `result_expression` clauses can be used.  
   
@@ -32,9 +34,11 @@ END
  Is the `Boolean` expression evaluated when the searched CASE format is used. `Boolean_expression` is any valid `Boolean` expression.  
   
 ## Return Value  
+
  Returns the highest precedence type from the set of types in the `result_expression` and the optional `else_result_expression`.  
   
 ## Remarks  
+
  The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] case expression resembles the Transact-SQL case expression. You use the case expression to make a series of conditional tests to determine which expression will yield the appropriate result. This form of the case expression applies to a series of one or more `Boolean` expressions to determine the correct resulting expression.  
   
  The CASE function evaluates `Boolean_expression` for each WHEN clause in the order specified, and returns `result_expression` of the first `Boolean_expression` that evaluates to `true`. The remaining expressions are not evaluated. If no `Boolean_expression` evaluates to `true`, the Database Engine returns the `else_result_expression` if an ELSE clause is specified, or a null value if no ELSE clause is specified.  
@@ -42,6 +46,7 @@ END
  A CASE statement cannot return a multiset.  
   
 ## Example  
+
  The following Entity SQL query uses the CASE expression to evaluate a set of `Boolean` expressions in order to determine the result. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  

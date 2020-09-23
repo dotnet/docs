@@ -44,6 +44,7 @@ Download the AdventureWorks sample database for SQL Server from the following Gi
 After you download one of the database backup (\*.bak) files, restore the backup to an instance of SQL Server by using SQL Server Management Studio (SSMS). See [Get SQL Server Management Studio](#get_ssms).
 
 ## <a name="get_ssms"></a> Get SQL Server Management Studio
+
 If you want to view or modify a database that you've downloaded, you can use SQL Server Management Studio (SSMS). Download SSMS from the following page:
 
 [Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)

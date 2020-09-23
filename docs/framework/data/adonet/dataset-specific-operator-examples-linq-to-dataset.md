@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 8fdd64af-6ad0-46cd-91c8-dbe26620eeb1
 ---
 # DataSet-Specific Operator Examples (LINQ to DataSet)
+
 The examples in this topic demonstrate how to use the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method and the <xref:System.Data.DataRowComparer> class.  
   
  The `FillDataSet` method used in these examples is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md).  
@@ -23,6 +24,7 @@ The examples in this topic demonstrate how to use the <xref:System.Data.DataTabl
 ## CopyToDataTable  
   
 ### Example  
+
  This example loads a <xref:System.Data.DataTable> with query results by using the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method.  
   
  [!code-csharp[DP LINQ to DataSet Examples#LoadDataTableWithQueryResults](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#loaddatatablewithqueryresults)]
@@ -31,6 +33,7 @@ The examples in this topic demonstrate how to use the <xref:System.Data.DataTabl
 ## DataRowComparer  
   
 ### Example  
+
  This example compares two different data rows by using <xref:System.Data.DataRowComparer>.  
   
  [!code-csharp[DP LINQ to DataSet Examples#CompareDifferentDataRows](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#comparedifferentdatarows)]  

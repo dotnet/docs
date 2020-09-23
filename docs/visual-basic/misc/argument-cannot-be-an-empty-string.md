@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: 17dd3385-8655-44f6-bf36-3ef570afb1cb
 ---
 # Argument cannot be an empty string
+
 An argument has been defined as an empty string ("").  
   
 ## To correct this error  

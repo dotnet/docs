@@ -31,11 +31,11 @@ This guidance includes a reference application, _eShopOnWeb_, that demonstrates 
 
 ## Cloud-hosted and scalable
 
-ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud) because it is low-memory and high-throughput. The smaller footprint of ASP.NET Core applications means you can host more of them on the same hardware, and you pay for fewer resources when using pay-as-you go cloud hosting services. The higher-throughput means you can serve more customers from an application given the same hardware, further reducing the need to invest in servers and hosting infrastructure.
+ASP.NET Core is optimized for the cloud (public cloud, private cloud, any cloud) because it is low-memory and high-throughput. The smaller footprint of ASP.NET Core applications means you can host more of them on the same hardware, and you pay for fewer resources when using pay-as-you-go cloud hosting services. The higher-throughput means you can serve more customers from an application given the same hardware, further reducing the need to invest in servers and hosting infrastructure.
 
 ## Cross platform
 
-ASP.NET Core is cross-platform and can run on Linux, macOS, and Windows. This opens up many new options for both development and deployment of apps built with ASP.NET Core. Docker containers - both Linux and Windows - can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices/index.md).
+ASP.NET Core is cross-platform and can run on Linux, macOS, and Windows. This opens up many new options for both the development and deployment of apps built with ASP.NET Core. Docker containers - both Linux and Windows - can host ASP.NET Core applications, allowing them to take advantage of the benefits of [containers and microservices](../microservices/index.md).
 
 ## Modular and loosely coupled
 
@@ -69,7 +69,7 @@ Blazor is included with ASP.NET Core 3.0 and later. It provides a new mechanism 
 
 Server-side Blazor was released in 2019 with ASP.NET Core 3.0. As its name implies, it runs on the server, rendering changes to the client document back to the browser over the network. Server-side Blazor provides a rich client experience without requiring client-side JavaScript and without requiring separate page loads for each client page interaction. Changes in the loaded page are requested from and processed by the server and then sent back to the client using SignalR.
 
-Client-side Blazor will be released in 2020 and will eliminate the need to render changes on the server. Instead, it will leverage WebAssembly to run .NET code within the client. The client can still make API calls to the server if needed to request data, but all client-side behavior runs in the client via WebAssembly, which is already supported by all major browsers and is just a Javascript library.
+Client-side Blazor released in May 2020 eliminates the need to render changes on the server. Instead, it leverages WebAssembly to run .NET code within the client. The client can still make API calls to the server if needed to request data, but all client-side behavior runs in the client via WebAssembly, which is already supported by all major browsers and is just a Javascript library.
 
 > ### References – Modern Web Applications
 >

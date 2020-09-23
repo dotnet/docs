@@ -13,3 +13,15 @@ This issue is fixed in EntityFramework 6.0.2. Update EntityFramework to avoid th
 | Scope   |Edge|
 |Version|4.5|
 |Type|Runtime|
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+<!--
+
+#### Affected APIs
+
+Not detectable via API analysis.
+
+-->

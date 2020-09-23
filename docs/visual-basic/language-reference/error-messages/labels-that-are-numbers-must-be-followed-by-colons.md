@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 67743319-2d1c-496e-bfd9-22b046b43b5a
 ---
 # Labels that are numbers must be followed by colons
+
 Line numbers follow the same rules as other kinds of labels, and must contain a colon.  
   
  **Error ID:** BC30801  

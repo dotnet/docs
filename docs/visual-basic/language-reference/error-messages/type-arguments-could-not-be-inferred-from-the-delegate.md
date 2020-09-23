@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 21312807-e1cd-4ac1-ae1c-c28a9c25164d
 ---
 # Type arguments could not be inferred from the delegate
+
 An assignment statement uses `AddressOf` to assign the address of a generic procedure to a delegate, but it does not supply any type arguments to the generic procedure.  
   
  Normally, when you invoke a generic type, you supply a type argument for each type parameter that the generic type defines. If you do not supply any type arguments, the compiler attempts to infer the types to be passed to the type parameters. If the context does not provide enough information for the compiler to infer the types, an error is generated.  

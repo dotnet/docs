@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
 ---
 # Basic Query Operations (Visual Basic)
+
 This topic provides a brief introduction to Language-Integrated Query (LINQ) expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query. For more information, see the following topics:  
   
  [Introduction to LINQ in Visual Basic](../../language-features/linq/introduction-to-linq.md)  
@@ -26,6 +27,7 @@ This topic provides a brief introduction to Language-Integrated Query (LINQ) exp
  [Walkthrough: Writing Queries in Visual Basic](walkthrough-writing-queries.md)  
   
 ## Specifying the Data Source (From)  
+
  In a LINQ query, the first step is to specify the data source that you want to query. Therefore, the `From` clause in a query always comes first. Query operators select and shape the result based on the type of the source.  
   
  [!code-vb[VbLINQBasicOps#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#1)]  
@@ -35,6 +37,7 @@ This topic provides a brief introduction to Language-Integrated Query (LINQ) exp
  For more information about how to use the `From` clause in Visual Basic, see [From Clause](../../../language-reference/queries/from-clause.md).  
   
 ## Filtering Data (Where)  
+
  Probably the most common query operation is applying a filter in the form of a Boolean expression. The query then returns only those elements for which the expression is true. A `Where` clause is used to perform the filtering. The filter specifies which elements in the data source to include in the resulting sequence. In the following example, only those customers who have an address in London are included.  
   
  [!code-vb[VbLINQBasicOps#2](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#2)]  
@@ -54,6 +57,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  For more information about how to use the `Where` clause in Visual Basic, see [Where Clause](../../../language-reference/queries/where-clause.md).  
   
 ## Ordering Data (Order By)  
+
  It often is convenient to sort returned data into a particular order. The `Order By` clause will cause the elements in the returned sequence to be sorted on a specified field or fields. For example, the following query sorts the results based on the `Name` property. Because `Name` is a string, the returned data will be sorted alphabetically, from A to Z.  
   
  [!code-vb[VbLINQBasicOps#3](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#3)]  
@@ -63,6 +67,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  For more information about how to use the `Order By` clause in Visual Basic, see [Order By Clause](../../../language-reference/queries/order-by-clause.md).  
   
 ## Selecting Data (Select)  
+
  The `Select` clause specifies the form and content of returned elements. For example, you can specify whether your results will consist of complete `Customer` objects, just one `Customer` property, a subset of properties, a combination of properties from various data sources, or some new result type based on a computation. When the `Select` clause produces something other than a copy of the source element, the operation is called a *projection*.  
   
  To retrieve a collection that consists of complete `Customer` objects, select the range variable itself:  
@@ -92,6 +97,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  For more information about how to use the `Select` clause in Visual Basic, see [Select Clause](../../../language-reference/queries/select-clause.md).  
   
 ## Joining Data (Join and Group Join)  
+
  You can combine more than one data source in the `From` clause in several ways. For example, the following code uses two data sources and implicitly combines properties from both of them in the result. The query selects students whose last names start with a vowel.  
   
  [!code-vb[VbLINQBasicOps#9](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#9)]  
@@ -106,6 +112,7 @@ Where cust.City = "London" Or cust.City = "Paris"
  `Group Join` combines collections into a single hierarchical collection, just like a `LEFT JOIN` in SQL. For more information, see [Join Clause](../../../language-reference/queries/join-clause.md) and [Group Join Clause](../../../language-reference/queries/group-join-clause.md).  
   
 ## Grouping Data (Group By)  
+
  You can add a `Group By` clause to group the elements in a query result according to one or more fields of the elements. For example, the following code groups students by class year.  
   
  [!code-vb[VbLINQBasicOps#11](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#11)]  

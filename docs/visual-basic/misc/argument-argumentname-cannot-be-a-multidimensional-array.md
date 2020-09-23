@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 3b44521a-44e3-4cbe-9a99-1e0ac6ccf537
 ---
 # Argument '\<argumentname>' cannot be a multidimensional array
+
 The rank of an array argument is greater than 1, but it can only be a one-dimensional array.  
   
 ## To correct this error  

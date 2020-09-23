@@ -40,6 +40,7 @@ Use the access modifiers, `public`, `protected`, `internal`, or `private`, to sp
  The accessibility of a nested type depends on its [accessibility domain](./accessibility-domain.md), which is determined by both the declared accessibility of the member and the accessibility domain of the immediately containing type. However, the accessibility domain of a nested type cannot exceed that of the containing type.  
   
 ## C# Language Specification  
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also

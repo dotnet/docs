@@ -67,5 +67,5 @@ You could modify a string in a fixed block with unsafe code, but it is **strongl
 
 ## See also
 
-- [.NET Framework regular expressions](../../standard/base-types/regular-expressions.md)
+- [.NET regular expressions](../../standard/base-types/regular-expressions.md)
 - [Regular expression language - quick reference](../../standard/base-types/regular-expression-language-quick-reference.md)

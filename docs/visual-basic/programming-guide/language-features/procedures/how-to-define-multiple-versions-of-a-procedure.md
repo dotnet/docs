@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
 ---
 # How to: Define Multiple Versions of a Procedure (Visual Basic)
+
 You can define a procedure in multiple versions by *overloading* it, using the same name but a different parameter list for each version. The purpose of overloading is to define several closely related versions of a procedure without having to differentiate them by name.  
   
  For more information, see [Procedure Overloading](./procedure-overloading.md).  
@@ -25,6 +26,7 @@ You can define a procedure in multiple versions by *overloading* it, using the s
 4. Terminate each version of the procedure with the `End Sub` or `End Function` statement as appropriate.  
   
 ## Example  
+
  The following example defines a `Sub` procedure to post a transaction against a customer's balance. It uses the `Overloads` keyword to define two versions of the procedure, one that accepts the customer by name and the other by account number.  
   
  [!code-vb[VbVbcnProcedures#72](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#72)]  
@@ -34,6 +36,7 @@ You can define a procedure in multiple versions by *overloading* it, using the s
  For information on how to call these versions of the `post` procedure, see [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md).  
   
 ## Compile the code  
+
  Make sure each of your overloaded versions has the same procedure name but a different parameter list.  
   
 ## See also

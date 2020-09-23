@@ -7,7 +7,7 @@ no-loc: ["EditorConfig"]
 ---
 # Configure code analysis rules
 
-You configure the severity of .NET code analysis rules by using an [EditorConfig file](https://docs.microsoft.com/visualstudio/ide/create-portable-custom-editor-options). Add an entry for each rule you want to configure under the corresponding file extension, for example, `*.cs`. The syntax for the *.editorconfig* file is as follows:
+You configure the severity of .NET code analysis rules by using an [EditorConfig file](/visualstudio/ide/create-portable-custom-editor-options). Add an entry for each rule you want to configure under the corresponding file extension, for example, `*.cs`. The syntax for the *.editorconfig* file is as follows:
 
 ```ini
 dotnet_diagnostic.<rule ID>.severity = <severity>
@@ -33,6 +33,9 @@ The following table shows the different rule severities.
 | `none` | Rule is suppressed completely. |
 | `default` | The default severity of the rule is used. |
 
+> [!TIP]
+> For information about how rule severities surface in Visual Studio, see [Severity levels](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
+
 ## Configure multiple rules
 
 You can set the severity for a specific category of analyzer rules or for all analyzer rules with a single entry in an EditorConfig file.
@@ -56,7 +59,7 @@ If you have multiple entries that are applicable to the same rule ID, precedence
 - Severity entry for an individual rule by ID takes precedence over severity entry for a category.
 - Severity entry for a category takes precedence over severity entry for all analyzer rules.
 
-Consider the following EditorConfig example, where [CA1822](https://docs.microsoft.com/visualstudio/code-quality/ca1822) has the category "Performance":
+Consider the following EditorConfig example, where [CA1822](/visualstudio/code-quality/ca1822) has the category "Performance":
 
 ```ini
 [*.cs]

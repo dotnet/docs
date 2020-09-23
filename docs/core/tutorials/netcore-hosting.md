@@ -20,6 +20,7 @@ Because hosts are native applications, this tutorial covers constructing a C++ a
 You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://dotnet.microsoft.com/download) and [build a small .NET Core test app](with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
 
 ## Hosting APIs
+
 There are three different APIs that can be used to host .NET Core. This article (and its associated [samples](https://github.com/dotnet/samples/tree/master/core/hosting)) covers all options.
 
 * The preferred method of hosting the .NET Core runtime in .NET Core 3.0 and above is with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
@@ -143,7 +144,7 @@ In this sample, the host can now call `managedDelegate` to run the `ManagedWorke
 
 Alternatively, the `coreclr_execute_assembly` function can be used to launch a managed executable. This API takes an assembly path and array of arguments as input parameters. It loads the assembly at that path and invokes its main method.
 
-```C++
+```c++
 int hr = executeAssembly(
         hostHandle,
         domainId,
@@ -168,14 +169,17 @@ As mentioned previously, CoreClrHost.h is now the preferred method of hosting th
 The [CoreRun host](https://github.com/dotnet/runtime/tree/master/src/coreclr/src/hosts/corerun) shows a more complex, real-world example of hosting using mscoree.h.
 
 ### A note about mscoree.h
+
 The `ICLRRuntimeHost4` .NET Core hosting interface is defined in [MSCOREE.IDL](https://github.com/dotnet/runtime/blob/master/src/coreclr/src/inc/MSCOREE.IDL). A header version of this file (mscoree.h), which your host will need to reference, is produced via MIDL when the [.NET Core runtime](https://github.com/dotnet/runtime/) is built. If you do not want to build the .NET Core runtime, mscoree.h is also available as a [pre-built header](https://github.com/dotnet/runtime/blob/master/src/coreclr/src/pal/prebuilt/inc/) in the dotnet/runtime repository.
 
 ### Step 1 - Identify the managed entry point
+
 After referencing necessary headers ([mscoree.h](https://github.com/dotnet/runtime/blob/master/src/coreclr/src/pal/prebuilt/inc/mscoree.h) and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using. In our sample host, this is done by just taking the first command-line argument to our host as the path to a managed binary whose `main` method will be executed.
 
 [!code-cpp[NetCoreHost#1](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#1)]
 
 ### Step 2 - Find and load CoreCLR
+
 The .NET Core runtime APIs are in *CoreCLR.dll* (on Windows). To get our hosting interface (`ICLRRuntimeHost4`), it's necessary to find and load *CoreCLR.dll*. It is up to the host to define a convention for how it will locate *CoreCLR.dll*. Some hosts expect the file to be present in a well-known machine-wide location (such as *%programfiles%\dotnet\shared\Microsoft.NETCore.App\2.1.6*). Others expect that *CoreCLR.dll* will be loaded from a location next to either the host itself or the app to be hosted. Still others might consult an environment variable to find the library.
 
 On Linux or macOS, the core runtime library is *libcoreclr.so* or *libcoreclr.dylib*, respectively.
@@ -185,22 +189,25 @@ Our sample host probes a few common locations for *CoreCLR.dll*. Once found, it 
 [!code-cpp[NetCoreHost#2](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#2)]
 
 ### Step 3 - Get an ICLRRuntimeHost4 Instance
+
 The `ICLRRuntimeHost4` hosting interface is retrieved by calling `GetProcAddress` (or `dlsym` on Linux/macOS) on `GetCLRRuntimeHost`, and then invoking that function.
 
 [!code-cpp[NetCoreHost#3](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#3)]
 
 ### Step 4 - Set startup flags and start the runtime
+
 With an `ICLRRuntimeHost4` in-hand, we can now specify runtime-wide startup flags and start the runtime. Startup flags determine which garbage collector (GC) to use (concurrent or server), whether we will use a single AppDomain or multiple AppDomains, and what loader optimization policy to use (for domain-neutral loading of assemblies).
 
 [!code-cpp[NetCoreHost#4](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#4)]
 
 The runtime is started with a call to the `Start` function.
 
-```C++
+```c++
 hr = runtimeHost->Start();
 ```
 
 ### Step 5 - Preparing AppDomain settings
+
 Once the runtime is started, we will want to set up an AppDomain. There are a number of options that must be specified when creating a .NET AppDomain, however, so it's necessary to prepare those first.
 
 AppDomain flags specify AppDomain behaviors related to security and interop. Older Silverlight hosts used these settings to sandbox user code, but most modern .NET Core hosts run user code as full trust and enable interop.
@@ -227,18 +234,20 @@ In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/h
 [!code-cpp[NetCoreHost#6](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#6)]
 
 ### Step 6 - Create the AppDomain
+
 Once all AppDomain flags and properties are prepared, `ICLRRuntimeHost4::CreateAppDomainWithManager` can be used to set up the AppDomain. This function optionally takes a fully qualified assembly name and type name to use as the domain's AppDomain manager. An AppDomain manager can allow a host to control some aspects of AppDomain behavior and may provide entry points for launching managed code if the host doesn't intend to invoke user code directly.
 
 [!code-cpp[NetCoreHost#7](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#7)]
 
 ### Step 7 - Run managed code!
+
 With an AppDomain up and running, the host can now start executing managed code. The easiest way to do this is to use `ICLRRuntimeHost4::ExecuteAssembly` to invoke a managed assembly's entry point method. Note that this function only works in single-domain scenarios.
 
 [!code-cpp[NetCoreHost#8](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#8)]
 
 Another option, if `ExecuteAssembly` doesn't meet your host's needs, is to use `CreateDelegate` to create a function pointer to a static managed method. This requires the host to know the signature of the method it is calling into (in order to create the function pointer type) but allows hosts the flexibility to invoke code other than an assembly's entry point. The assembly name provided in the second parameter is the [full managed assembly name](../../standard/assembly/names.md) of the library to load.
 
-```C++
+```c++
 void *pfnDelegate = NULL;
 hr = runtimeHost->CreateDelegate(
     domainId,
@@ -251,6 +260,7 @@ hr = runtimeHost->CreateDelegate(
 ```
 
 ### Step 8 - Clean up
+
 Finally, the host should clean up after itself by unloading AppDomains, stopping the runtime, and releasing the `ICLRRuntimeHost4` reference.
 
 [!code-cpp[NetCoreHost#9](~/samples/snippets/core/tutorials/netcore-hosting/csharp/HostWithMscoree/host.cpp#9)]
@@ -258,6 +268,7 @@ Finally, the host should clean up after itself by unloading AppDomains, stopping
 CoreCLR does not support unloading. Do not unload the CoreCLR library.
 
 ## Conclusion
+
 Once your host is built, it can be tested by running it from the command line and passing any arguments the host expects (like the managed app to run for the mscoree example host). When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by `dotnet build`. Executables (.exe files) produced by `dotnet publish` for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name.
 
 If things don't work initially, double-check that *coreclr.dll* is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32-bit or 64-bit) matches how the host was built.

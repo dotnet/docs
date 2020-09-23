@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: a006d57d-4dd3-46a7-9026-ca9a31470da7
 ---
 # 'Sub Main' was not found in '\<name>'
+
 `Sub Main` is missing, or the wrong location has been specified for it.  
   
  **Error ID:** BC30420  

@@ -12,8 +12,20 @@ If this behavior is undesirable, the connection pool blocking period can be conf
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.6.2|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType></li><li><xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType></li></ul>|
+- <xref:System.Data.Common.DbConnection.OpenAsync?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlConnection.Open?displayProperty=nameWithType>
+- <xref:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `M:System.Data.Common.DbConnection.OpenAsync`
+- `M:System.Data.SqlClient.SqlConnection.Open`
+- `M:System.Data.SqlClient.SqlConnection.OpenAsync(System.Threading.CancellationToken)`
+
+-->

@@ -88,6 +88,9 @@ conceptualContent:
         - url: standard/tour.md
           itemType: overview
           text: Overview of .NET
+        - url: core/dotnet-five.md
+          itemType: concept
+          text: Evolution to .NET 5
         - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
@@ -97,9 +100,6 @@ conceptualContent:
         - url: /ef/core/
           itemType: overview
           text: Entity Framework Core
-        - url: standard/get-started.md
-          itemType: get-started
-          text: Get started
         - url: standard/components.md
           itemType: concept
           text: .NET architectural components
@@ -193,11 +193,11 @@ additionalContent:
       # Card
       - title: Cloud native and microservices
         links:
-          - url: /dotnet/azure/
+          - url: ./azure/index.yml
             text: Azure for .NET documentation
           - url: /azure/storage
             text: Storage
-          - url: /dotnet/fsharp/using-fsharp-on-azure/
+          - url: ./fsharp/using-fsharp-on-azure/index.md
             text: Using F# on Azure
           - url: architecture/serverless/index.md
             text: "Serverless apps: Architecture, patterns, and Azure implementation"
@@ -221,9 +221,9 @@ additionalContent:
             text: Universal Windows apps
           - url: desktop-wpf/index.yml
             text: Windows Presentation Foundation (.NET Core)
-          - url: framework/wpf/index.md
+          - url: /dotnet/desktop/wpf/?view=netframeworkdesktop-4.8
             text: Windows Presentation Foundation (.NET Framework)
-          - url: framework/winforms/index.md
+          - url: /dotnet/desktop/winforms/?view=netframeworkdesktop-4.8
             text: Windows Forms
           - url: /xamarin/mac
             text: Xamarin for macOS
@@ -254,7 +254,7 @@ additionalContent:
         links:
           - url: https://channel9.msdn.com/Shows/On-NET/IoT-support-for-NET-Core
             text: "On .NET: Learn about IoT support in .NET Core"
-          - url: https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0
+          - url: /archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0
             text: Cross-Platform IoT Programming with .NET Core 3.0
           - url: https://github.com/dotnet/iot
             text: .NET Core IoT libraries
@@ -267,23 +267,23 @@ additionalContent:
         # Card
       - title: ".NET Core API reference"
         summary: API reference documentation for .NET Core
-        url: https://docs.microsoft.com/dotnet/api/?view=netcore-3.1
+        url: ../api/index.md?view=netcore-3.1
       # Card
       - title: ".NET Framework API reference"
         summary: API reference documentation for .NET Framework
-        url: https://docs.microsoft.com/dotnet/api/?view=netframework-4.8
+        url: ../api/index.md?view=netframework-4.8
       # Card
       - title: "ASP.NET Core API reference"
         summary: API reference documentation for ASP.NET Core
-        url: https://docs.microsoft.com/dotnet/api/?view=aspnetcore-3.1
+        url: ../api/index.md?view=aspnetcore-3.1
       # Card
       - title: "ML.NET API reference"
         summary: API reference documentation for ML.NET
-        url: https://docs.microsoft.com/dotnet/api/?view=ml-dotnet
+        url: ../api/index.md?view=ml-dotnet
       # Card
       - title: ".NET for Apache Spark API reference"
         summary: API reference documentation for .NET for Apache Spark
-        url: https://docs.microsoft.com/dotnet/api/?view=spark-dotnet
+        url: ../api/index.md?view=spark-dotnet
       # Card
       - title: "C# language reference"
         summary: C# language reference and specification
@@ -297,4 +297,4 @@ additionalContent:
         summary: Visual Basic language reference and specification
         url: visual-basic/language-reference/index.md
   # footer (optional)
-  footer: "Contribute to .NET docs. Read our [contributor guide](https://docs.microsoft.com/contribute/dotnet/dotnet-contribute)."
+  footer: "Contribute to .NET docs. Read our [contributor guide](/contribute/dotnet/dotnet-contribute)."

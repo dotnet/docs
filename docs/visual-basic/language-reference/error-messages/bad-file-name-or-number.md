@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: d0e96aea-7621-48f6-a78b-5d37d18aaa4e
 ---
 # Bad file name or number
+
 An error occurred while trying to access the specified file. Among the possible causes for this error are:  
   
 - A statement refers to a file with a file name or number that was not specified in the `FileOpen` statement or that was specified in a `FileOpen` statement but was subsequently closed.  

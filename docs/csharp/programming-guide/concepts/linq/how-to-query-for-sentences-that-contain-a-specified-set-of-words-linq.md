@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 0724b429-4b87-4d26-a7b1-409358f3fc20
 ---
 # How to query for sentences that contain a specified set of words (LINQ) (C#)
+
 This example shows how to find sentences in a text file that contain matches for each of a specified set of words. Although the array of search terms is hard-coded in this example, it could also be populated dynamically at runtime. In this example, the query returns the sentences that contain the words "Historically," "data," and "integrated."  
   
 ## Example  
@@ -17,7 +18,7 @@ class FindSentences
         string text = @"Historically, the world of data and the world of objects " +  
         @"have not been well integrated. Programmers work in C# or Visual Basic " +  
         @"and also in SQL or XQuery. On the one side are concepts such as classes, " +  
-        @"objects, fields, inheritance, and .NET Framework APIs. On the other side " +  
+        @"objects, fields, inheritance, and .NET APIs. On the other side " +  
         @"are tables, columns, rows, nodes, and separate languages for dealing with " +  
         @"them. Data types often require translation between the two worlds; there are " +  
         @"different standard functions. Because the object world has no notion of query, a " +  
@@ -62,6 +63,7 @@ Historically, the world of data and the world of objects have not been well inte
  In the call to <xref:System.String.Split%2A>, the punctuation marks are used as separators in order to remove them from the string. If you did not do this, for example you could have a string "Historically," that would not match "Historically" in the `wordsToMatch` array. You may have to use additional separators, depending on the types of punctuation found in the source text.  
   
 ## Compiling the Code  
+
 Create a C# console application project, with `using` directives for the System.Linq and System.IO namespaces.
 
 ## See also

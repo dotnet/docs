@@ -95,7 +95,7 @@ public static int Main(string[] args)
 
 There's an important caveat when applying migrations and seeding a database during container startup. Since the database server might not be available for whatever reason, you must handle retries while waiting for the server to be available. This retry logic is handled by the `MigrateDbContext()` extension method, as shown in the following code:
 
-```cs
+```csharp
 public static IWebHost MigrateDbContext<TContext>(
     this IWebHost host,
     Action<TContext,

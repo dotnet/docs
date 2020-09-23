@@ -6,6 +6,7 @@ ms.date: 06/20/2016
 # Migrating from DNX to .NET Core CLI (project.json)
 
 ## Overview
+
 The RC1 release of .NET Core and ASP.NET Core 1.0 introduced DNX tooling. The RC2 release of .NET
 Core and ASP.NET Core 1.0 moved from DNX to the .NET Core CLI.
 
@@ -23,9 +24,11 @@ This migration guide will cover the essentials on how to migrate projects off of
 starting a project on .NET Core from scratch, you can freely skip this document.
 
 ## Main changes in the tooling
+
 There are some general changes in the tooling that should be outlined first.
 
 ### No more DNVM
+
 DNVM, short for *DotNet Version Manager* was a bash/PowerShell script used to install a DNX on your machine. It helped
 users get the DNX they need from the feed they specified (or default ones) as well as mark a certain DNX "active", which
 would put it on the $PATH for the given session. This would allow you to use the various tools.
@@ -44,6 +47,7 @@ your application will be able to use the new runtime bits. Getting these bits to
 you install the runtime via one of the native installers it supports or via its install script.
 
 ### Different commands
+
 If you were using DNX, you used some commands from one of its three parts (DNX, DNU or DNVM). With the CLI, some of these
 commands change, some are not available and some are the same but have slightly different semantics.
 
@@ -64,11 +68,13 @@ The table below shows the mapping between the DNX/DNU commands and their CLI cou
 (\*) - these features are not supported in the CLI by design.
 
 ## DNX features that are not supported
+
 As the table above shows, there are features from the DNX world that we decided not to support in the CLI, at least for
 the time being. This section will go through the most important ones and outline the rationale behind not supporting
 them as well as workarounds if you do need them.
 
 ### Global commands
+
 DNU came with a concept called "global commands". These were, essentially, console applications packaged up as NuGet
 packages with a shell script that would invoke the DNX you specified to run the application.
 
@@ -76,10 +82,12 @@ The CLI does not support this concept. It does, however, support the concept of 
 invoked using the familiar `dotnet <command>` syntax.
 
 ### Installing dependencies
+
 As of v1, the .NET Core CLI doesn't have an `install` command for installing dependencies. In order to install a
 package from NuGet, you would need to add it as a dependency to your `project.json` file and then run `dotnet restore` ([see note](#dotnet-restore-note)).
 
 ### Running your code
+
 There are two main ways to run your code. One is from source, with `dotnet run`. Unlike `dnx run`, this will not do any
 in-memory compilation. It will actually invoke `dotnet build` to build your code and then run the built binary.
 
@@ -87,6 +95,7 @@ Another way is using the `dotnet` itself to run your code. This is done by provi
 `dotnet path/to/an/assembly.dll`.
 
 ## Migrating your DNX project to .NET Core CLI
+
 In addition to using new commands when working with your code, there are three major things left in migrating from DNX:
 
 1. Migrate the `global.json` file if you have it to be able to use CLI.
@@ -94,6 +103,7 @@ In addition to using new commands when working with your code, there are three m
 3. Migrating off of any DNX APIs to their BCL counterparts.
 
 ### Changing the global.json file
+
 The `global.json` file acts like a solution file for both the RC1 and RC2 (or later) projects. In order for the .NET Core CLI (as well
 as Visual Studio) to differentiate between RC1 and later versions, they use the `"sdk": { "version" }` property to make the distinction
 which project is RC1 or later. If `global.json` doesn't have this node at all, it is assumed to be the latest.

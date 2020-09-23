@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
 ---
 # Xor Operator (Visual Basic)
+
 Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusion on two numeric expressions.  
   
 ## Syntax  
@@ -25,6 +26,7 @@ result = expression1 Xor expression2
 ```  
   
 ## Parts  
+
  `result`  
  Required. Any `Boolean` or numeric variable. For Boolean comparison, `result` is the logical exclusion (exclusive logical disjunction) of two `Boolean` values. For bitwise operations, `result` is a numeric value that represents the bitwise exclusion (exclusive bitwise disjunction) of two numeric bit patterns.  
   
@@ -35,6 +37,7 @@ result = expression1 Xor expression2
  Required. Any `Boolean` or numeric expression.  
   
 ## Remarks  
+
  For Boolean comparison, `result` is `True` if and only if exactly one of `expression1` and `expression2` evaluates to `True`. That is, if and only if `expression1` and `expression2` evaluate to opposite `Boolean` values. The following table illustrates how `result` is determined.  
   
 |If `expression1` is|And `expression2` is|The value of `result` is|  
@@ -62,14 +65,17 @@ result = expression1 Xor expression2
  For example, 5 `Xor` 3 is 6. To see why this is so, convert 5 and 3 to their binary representations, 101 and 011. Then use the previous table to determine that 101 Xor 011 is 110, which is the binary representation of the decimal number 6.  
   
 ## Data Types  
+
  If the operands consist of one `Boolean` expression and one numeric expression, Visual Basic converts the `Boolean` expression to a numeric value (–1 for `True` and 0 for `False`) and performs a bitwise operation.  
   
  For a `Boolean` comparison, the data type of the result is `Boolean`. For a bitwise comparison, the result data type is a numeric type appropriate for the data types of `expression1` and `expression2`. See the "Relational and Bitwise Comparisons" table in [Data Types of Operator Results](data-types-of-operator-results.md).  
   
 ## Overloading  
+
  The `Xor` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, make sure you understand its redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
+
  The following example uses the `Xor` operator to perform logical exclusion (exclusive logical disjunction) on two expressions. The result is a `Boolean` value that represents whether exactly one of the expressions is `True`.  
   
  [!code-vb[VbVbalrOperators#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#40)]  
@@ -77,6 +83,7 @@ result = expression1 Xor expression2
  The previous example produces results of `False`, `True`, and `False`, respectively.  
   
 ## Example  
+
  The following example uses the `Xor` operator to perform logical exclusion (exclusive logical disjunction) on the individual bits of two numeric expressions. The bit in the result pattern is set if exactly one of the corresponding bits in the operands is set to 1.  
   
  [!code-vb[VbVbalrOperators#41](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#41)]  

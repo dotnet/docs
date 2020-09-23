@@ -17,38 +17,38 @@ In the .NET Framework 4, Microsoft is releasing the second major version of Wind
   
 ## WF migration white papers and cookbooks
 
- The [WF Migration Overview](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10)) topic provides a broad overview of the relationship between WF3 and WF4 and migration strategies. Companion topics drill into specific topics.  
+ The [WF Migration Overview](/previous-versions/appfabric/ff383417(v=azure.10)) topic provides a broad overview of the relationship between WF3 and WF4 and migration strategies. Companion topics drill into specific topics.  
   
- [WF Migration Overview](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Migration Overview](/previous-versions/appfabric/ff383417(v=azure.10))  
  Describes the relationship between WF3 and WF4, and the choices you have as a user or a potential user of workflow technology in .NET 4.  
   
- [WF Migration: Best Practices for WF3 Development](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Migration: Best Practices for WF3 Development](/previous-versions/appfabric/ff383417(v=azure.10))  
  Discusses how to design WF3 artifacts so they can be more easily migrated to WF4.  
   
- [WF Guidance: Rules](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Guidance: Rules](/previous-versions/appfabric/ff383417(v=azure.10))  
  Discusses how to bring rules-related investments forward into .NET Framework 4 solutions.  
   
- [WF Guidance: State Machine](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Guidance: State Machine](/previous-versions/appfabric/ff383417(v=azure.10))  
  Discusses WF4 control flow modeling in the absence of a State-Machine activity.  
   
- Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. For more information about state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/hh290669(v=vs.100)) and [State Machine Workflows](state-machine-workflows.md).  
+ Note that this guidance only applies to workflow projects that target .NET Framework 4. State Machine workflows were added in .NET 4.0.1 with the release of Platform Update 1, and were included as part of .NET Framework 4.5. For more information about state machine workflows in .NET 4.0.1 - 4.0.3 and .NET Framework 4.5, see [Update 4.0.1 for Microsoft .NET Framework 4 Features](/previous-versions/dotnet/netframework-4.0/hh290669(v=vs.100)) and [State Machine Workflows](state-machine-workflows.md).  
   
- [WF Migration Cookbook: Custom Activities](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Migration Cookbook: Custom Activities](/previous-versions/appfabric/ff383417(v=azure.10))  
  Provides examples and instructions for redesigning WF3 custom activities on WF4.  
   
- [WF Migration Cookbook: Advanced Custom Activities](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Migration Cookbook: Advanced Custom Activities](/previous-versions/appfabric/ff383417(v=azure.10))  
  Provides guidance for redesigning advanced WF3 custom activities that use WF3 queues and schedule child activities as WF4 custom activities.  
   
- [WF Migration Cookbook: Workflows](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Migration Cookbook: Workflows](/previous-versions/appfabric/ff383417(v=azure.10))  
  Provides examples and instructions for redesigning WF3 workflows on WF4.  
   
- [WF Migration Cookbook: Workflow Hosting](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Migration Cookbook: Workflow Hosting](/previous-versions/appfabric/ff383417(v=azure.10))  
  Provides guidance for redesigning WF3 hosting code as WF4 hosting code. The goal is to cover the key differences in workflow hosting between WF3 and WF4.  
   
- [WF Migration Cookbook: Workflow Tracking](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Migration Cookbook: Workflow Tracking](/previous-versions/appfabric/ff383417(v=azure.10))  
  Provides guidance for redesigning WF3 tracking code and configuration using equivalent WF4 tracking code and configuration.  
   
- [WF Guidance: Workflow Services](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  
+ [WF Guidance: Workflow Services](/previous-versions/appfabric/ff383417(v=azure.10))  
  Provides example-oriented step-by-step instructions for redesigning workflows that implement Windows Communication Foundation (WCF) web services (commonly referred to as workflow services) created in WF3 to use WF4, for common scenarios for out-of-box activities.  
   
 ## See also

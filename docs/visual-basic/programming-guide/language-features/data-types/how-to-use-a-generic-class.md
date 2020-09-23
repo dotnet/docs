@@ -23,6 +23,7 @@ helpviewer_keywords:
 ms.assetid: 242dd2a6-86c4-4ce7-83f2-f2661803f752
 ---
 # How to: Use a Generic Class (Visual Basic)
+
 A class that takes *type parameters* is called a *generic class*. If you are using a generic class, you can generate a *constructed class* from it by supplying a *type argument* for each of these parameters. You can then declare a variable of the constructed class type, and you can create an instance of the constructed class and assign it to that variable.  
   
  In addition to classes, you can also define and use generic structures, interfaces, procedures, and delegates.  

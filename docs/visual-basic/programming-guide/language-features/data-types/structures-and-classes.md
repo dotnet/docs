@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
 ---
 # Structures and Classes (Visual Basic)
+
 Visual Basic unifies the syntax for structures and classes, with the result that both entities support most of the same features. However, there are also important differences between structures and classes.  
   
  Classes have the advantage of being reference types — passing a reference is more efficient than passing a structure variable with all its data. On the other hand, structures do not require allocation of memory on the global heap.  
@@ -18,6 +19,7 @@ Visual Basic unifies the syntax for structures and classes, with the result that
  Because you cannot inherit from a structure, structures should be used only for objects that do not need to be extended. Use structures when the object you wish to create has a small instance size, and take into account the performance characteristics of classes versus structures.  
   
 ## Similarities  
+
  Structures and classes are similar in the following respects:  
   
 - Both are *container* types, meaning that they contain other types as members.  
@@ -35,6 +37,7 @@ Visual Basic unifies the syntax for structures and classes, with the result that
 - Both can declare and raise events, and both can declare delegates.  
   
 ## Differences  
+
  Structures and classes differ in the following particulars:  
   
 - Structures are *value types*; classes are *reference types*. A variable of a structure type contains the structure's data, rather than containing a reference to the data as a class type does.  
@@ -64,6 +67,7 @@ Visual Basic unifies the syntax for structures and classes, with the result that
  Every structure has an implicit public constructor without parameters. This constructor initializes all the structure's data elements to their default values. You cannot redefine this behavior.  
   
 ## Instances and Variables  
+
  Because structures are value types, each structure variable is permanently bound to an individual structure instance. But classes are reference types, and an object variable can refer to various class instances at different times. This distinction affects your usage of structures and classes in the following ways:  
   
 - **Initialization.** A structure variable implicitly includes an initialization of the elements using the structure's parameterless constructor. Therefore, `Dim s As struct1` is equivalent to `Dim s As struct1 = New struct1()`.  

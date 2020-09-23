@@ -131,7 +131,7 @@ It's important to consider that applications or frameworks (including ASP.NET Co
 
 Above all else, be sure to test your app after trimming.
 
-For more information about the IL Linker tool, see the [documentation](https://aka.ms/dotnet-illink) or visit the [mono/linker]( https://github.com/mono/linker) repo.
+For more information about the IL Linker tool, see the [documentation](../deploying/trim-self-contained.md) or visit the [mono/linker]( https://github.com/mono/linker) repo.
 
 ### Tiered compilation
 
@@ -324,9 +324,9 @@ Windows offers a rich native API in the form of flat C APIs, COM, and WinRT. Whi
 
 ### MSIX Deployment
 
-[MSIX](https://docs.microsoft.com/windows/msix/) is a new Windows application package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
+[MSIX](/windows/msix/) is a new Windows application package format. It can be used to deploy .NET Core 3.0 desktop applications to Windows 10.
 
-The [Windows Application Packaging Project](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#publish-self-contained) .NET Core applications.
+The [Windows Application Packaging Project](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net), available in Visual Studio 2019, allows you to create MSIX packages with [self-contained](../deploying/index.md#publish-self-contained) .NET Core applications.
 
 The .NET Core project file must specify the supported runtimes in the `<RuntimeIdentifiers>` property:
 

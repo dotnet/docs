@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 21266dbb-f4a1-4c5d-a646-27909cf53248
 ---
 # Internal error (Visual Basic)
+
 An internal malfunction has occurred in Visual Basic.  
   
 ## To correct this error  

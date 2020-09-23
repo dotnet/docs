@@ -20,12 +20,15 @@ This topic discusses these options.
 ## How to Enable LINQ Querying of Your Data Source
 
 ### In-Memory Data
+
  There are two ways you can enable LINQ querying of in-memory data. If the data is of a type that implements <xref:System.Collections.Generic.IEnumerable%601>, you can query the data by using LINQ to Objects. If it does not make sense to enable enumeration of your type by implementing the <xref:System.Collections.Generic.IEnumerable%601> interface, you can define LINQ standard query operator methods in that type or create LINQ standard query operator methods that extend the type. Custom implementations of the standard query operators should use deferred execution to return the results.
 
 ### Remote Data
+
  The best option for enabling LINQ querying of a remote data source is to implement the <xref:System.Linq.IQueryable%601> interface. However, this differs from extending a provider such as [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] for a data source. No provider models for extending existing LINQ technologies, such as [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)], to other types of data source are available in Visual Studio 2008.
 
 ## IQueryable LINQ Providers
+
  LINQ providers that implement <xref:System.Linq.IQueryable%601> can vary widely in their complexity. This section discusses the different levels of complexity.
 
  A less complex `IQueryable` provider might interface with a single method of a Web service. This type of provider is very specific because it expects specific information in the queries that it handles. It has a closed type system, perhaps exposing a single result type. Most of the execution of the query occurs locally, for example by using the <xref:System.Linq.Enumerable> implementations of the standard query operators. A less complex provider might examine only one method call expression in the expression tree that represents the query, and let the remaining logic of the query be handled elsewhere.

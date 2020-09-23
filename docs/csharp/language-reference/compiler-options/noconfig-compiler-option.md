@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: cd26967e-e494-4c8c-b5c9-af13b2f78b2e
 ---
 # -noconfig (C# Compiler Options)
+
 The **-noconfig** option tells the compiler not to compile with the csc.rsp file, which is located in and loaded from the same directory as the csc.exe file.  
   
 ## Syntax  
@@ -21,7 +22,8 @@ The **-noconfig** option tells the compiler not to compile with the csc.rsp file
 ```  
   
 ## Remarks  
- The csc.rsp file references all the assemblies shipped with the .NET Framework. The actual references that the Visual Studio .NET development environment includes depend on the project type.  
+
+ The csc.rsp file references all the assemblies shipped with .NET Framework. The actual references that the Visual Studio .NET development environment includes depend on the project type.  
   
  You can modify the csc.rsp file and specify additional compiler options that should be included in every compilation from the command line with csc.exe (except the **-noconfig** option).  
   

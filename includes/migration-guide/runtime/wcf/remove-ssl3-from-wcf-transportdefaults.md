@@ -6,14 +6,29 @@ When using NetTcp with transport security and a credential type of certificate, 
 
 #### Suggestion
 
-If Ssl3 is required, use one of the following configuration mechanisms to add Ssl3 to the list of negotiated protocols.<ul><li><xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols></li><li><xref:System.ServiceModel.TcpTransportSecurity.SslProtocols></li><li>[<](~/docs/framework/configure-apps/file-schema/wcf/transport-of-nettcpbinding.md)</li><li>[&lt;sslStreamSecurity&gt; section of &lt;customBinding&gt;]~/docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md)</li></ul>
+If Ssl3 is required, use one of the following configuration mechanisms to add Ssl3 to the list of negotiated protocols.
 
-| Name    | Value       |
-|:--------|:------------|
-| Scope   |Edge|
-|Version|4.6.2|
-|Type|Runtime
+- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols>
+- <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols>
+- [\<transport> of \<netTcpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/transport-of-nettcpbinding.md)
+- [\<sslStreamSecurity>](../../../../docs/framework/configure-apps/file-schema/wcf/sslstreamsecurity.md)
+
+| Name    | Value   |
+|:--------|:--------|
+| Scope   | Edge    |
+| Version | 4.6.2   |
+| Type    | Runtime |
 
 #### Affected APIs
 
--<xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols?displayProperty=nameWithType></li><li><xref:System.ServiceModel.TcpTransportSecurity.SslProtocols?displayProperty=nameWithType></li></ul>|
+- <xref:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols?displayProperty=nameWithType>
+- <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.ServiceModel.Channels.SslStreamSecurityBindingElement.SslProtocols`
+- `P:System.ServiceModel.TcpTransportSecurity.SslProtocols`
+
+-->

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 1b29dbc5-8268-45fe-bfc2-b2070a5c845c
 ---
 # Reference required to assembly '\<assemblyidentity>' containing type '\<typename>', but a suitable reference could not be found due to ambiguity between projects '\<projectname1>' and '\<projectname2>'
+
 An expression uses a type, such as a class, structure, interface, enumeration, or delegate, that is defined outside your project. However, you have project references to more than one assembly defining that type.  
   
  The cited projects produce assemblies with the same name. Therefore, the compiler cannot determine which assembly to use for the type you are accessing.  

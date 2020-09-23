@@ -208,7 +208,7 @@ Deploying Windows Containers with either full .NET Framework / ASP.NET or SQL Se
 
 As main conclusion, using Azure Container Instances is a very compelling option for Dev/Test scenarios and for CI/CD pipelines.
 
-## Next steps
+### Next steps
 
 Explore this content more in-depth on the GitHub wiki:
 
@@ -270,7 +270,7 @@ With Kubernetes, developers can progress from thinking about physical and virtua
 
 - Application health checks
 
-## Next steps
+### Next steps
 
 Explore this content more in-depth on the GitHub wiki: <https://github.com/dotnet-architecture/eShopModernizing/wiki/04.-How-to-deploy-your-Windows-Containers-based-apps-into-Kubernetes-in-Azure-Container-Service-(Including-CI-CD)>
 
@@ -298,7 +298,7 @@ The goal of this walkthrough is to learn how to deploy a Windows Container–bas
 
 Deploying to Azure App Service for Containers offers the benefits of containers paired with the PaaS benefits of Azure App Service. The app service can easily be scaled both vertically and horizontally, and can be configured to autoscale to meet changing demands. Updates can be performed with zero downtime and configuration of continuous deployment from a registry is easily configured as well.
 
-## Next steps
+### Next steps
 
 Explore this content more in-depth on the GitHub wiki: <https://github.com/dotnet-architecture/eShopModernizing/wiki/Deploy-Windows-Container-to-Azure-App-Service>
 

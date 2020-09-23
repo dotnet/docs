@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 5b9fceb4-ab11-41bb-ad3b-6f1a9da8ae7e
 ---
 # Events of shared WithEvents variables cannot be handled by non-shared methods
+
 A variable declared with the `Shared` modifier is a shared variable. A shared variable identifies exactly one storage location. A variable declared with the `WithEvents` modifier asserts that the type to which the variable belongs handles the set of events the variable raises. When a value is assigned to the variable, the property created by the `WithEvents` declaration unhooks any existing event handler and hooks up the new event handler via the `Add` method.  
   
  **Error ID:** BC30594  

@@ -34,5 +34,5 @@ The topics in this section describe how to call functions in LINQ to Entities qu
 
 - [Queries in LINQ to Entities](queries-in-linq-to-entities.md)
 - [Canonical Functions](canonical-functions.md)
-- [.edmx File Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
-- [How to: Define Custom Functions in the Conceptual Model](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100))
+- [.edmx File Overview](/previous-versions/dotnet/netframework-4.0/cc982042(v=vs.100))
+- [How to: Define Custom Functions in the Conceptual Model](/previous-versions/dotnet/netframework-4.0/dd456812(v=vs.100))

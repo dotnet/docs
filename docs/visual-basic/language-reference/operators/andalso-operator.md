@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
 ---
 # AndAlso Operator (Visual Basic)
+
 Performs short-circuiting logical conjunction on two expressions.  
   
 ## Syntax  
@@ -30,6 +31,7 @@ result = expression1 AndAlso expression2
 |`expression2`|Required. Any `Boolean` expression.|  
   
 ## Remarks  
+
  A logical operation is said to be *short-circuiting* if the compiled code can bypass the evaluation of one expression depending on the result of another expression. If the result of the first expression evaluated determines the final result of the operation, there is no need to evaluate the second expression, because it cannot change the final result. Short-circuiting can improve performance if the bypassed expression is complex, or if it involves procedure calls.  
   
  If both expressions evaluate to `True`, `result` is `True`. The following table illustrates how `result` is determined.  
@@ -41,13 +43,16 @@ result = expression1 AndAlso expression2
 |`False`|(not evaluated)|`False`|  
   
 ## Data Types  
+
  The `AndAlso` operator is defined only for the [Boolean Data Type](../data-types/boolean-data-type.md). Visual Basic converts each operand as necessary to `Boolean` before evaluating the expression. If you assign the result to a numeric type, Visual Basic converts it from `Boolean` to that type such that `False` becomes `0` and `True` becomes `-1`.
 For more information, see [Boolean Type Conversions](../data-types/boolean-data-type.md#type-conversions).
   
 ## Overloading  
+
  The [And Operator](and-operator.md) and the [IsFalse Operator](isfalse-operator.md) can be *overloaded*, which means that a class or structure can redefine their behavior when an operand has the type of that class or structure. Overloading the `And` and `IsFalse` operators affects the behavior of the `AndAlso` operator. If your code uses `AndAlso` on a class or structure that overloads `And` and `IsFalse`, be sure you understand their redefined behavior. For more information, see [Operator Procedures](../../programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
+
  The following example uses the `AndAlso` operator to perform a logical conjunction on two expressions. The result is a `Boolean` value that represents whether the entire conjoined expression is true. If the first expression is `False`, the second is not evaluated.  
   
  [!code-vb[VbVbalrOperators#24](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#24)]  
@@ -55,6 +60,7 @@ For more information, see [Boolean Type Conversions](../data-types/boolean-data-
  The preceding example produces results of `True`, `False`, and `False`, respectively. In the calculation of `secondCheck`, the second expression is not evaluated because the first is already `False`. However, the second expression is evaluated in the calculation of `thirdCheck`.  
   
 ## Example  
+
  The following example shows a `Function` procedure that searches for a given value among the elements of an array. If the array is empty, or if the array length has been exceeded, the `While` statement does not test the array element against the search value.  
   
  [!code-vb[VbVbalrOperators#25](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class1.vb#25)]  

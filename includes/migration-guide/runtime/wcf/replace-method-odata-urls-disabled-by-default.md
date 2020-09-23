@@ -12,8 +12,16 @@ If the replace method is required (which is uncommon), it can be re-enabled thro
 |:--------|:------------|
 | Scope   |Edge|
 |Version|4.5|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Data.Services.DataService%601?displayProperty=nameWithType></li></ul>|
+- <xref:System.Data.Services.DataService%601?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- ``T:System.Data.Services.DataService`1``
+
+-->

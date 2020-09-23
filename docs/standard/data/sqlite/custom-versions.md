@@ -1,6 +1,6 @@
 ---
 title: Custom SQLite versions
-ms.date: 05/14/2020
+ms.date: 09/04/2020
 description: Learn how to use a custom version of the native SQLite library.
 ---
 
@@ -17,6 +17,7 @@ description: Learn how to use a custom version of the native SQLite library.
 | [SQLitePCLRaw.bundle_e_sqlite3](https://www.nuget.org/packages/SQLitePCLRaw.bundle_e_sqlite3) | Provides a consistent version of SQLite on all platforms. Includes the FTS4, FTS5, JSON1, and R*Tree extensions. This is the default. |
 | [SQLitePCLRaw.bundle_e_sqlcipher](https://www.nuget.org/packages/SQLitePCLRaw.bundle_e_sqlcipher) | Provides an unofficial, open-source build of `SQLCipher`. |
 | [SQLitePCLRaw.bundle_green](https://www.nuget.org/packages/SQLitePCLRaw.bundle_green) | Same as `bundle_e_sqlite3`, except on iOS where it uses the system SQLite library. |
+| [SQLitePCLRaw.bundle_sqlite3](https://www.nuget.org/packages/SQLitePCLRaw.bundle_sqlite3) | Uses the system SQLite library. |
 | [SQLitePCLRaw.bundle_winsqlite3](https://www.nuget.org/packages/SQLitePCLRaw.bundle_winsqlite3) | Uses `winsqlite3.dll`, the system SQLite library on Windows 10. |
 | [SQLitePCLRaw.bundle_zetetic](https://www.nuget.org/packages/SQLitePCLRaw.bundle_zetetic) | Uses the official `SQLCipher` builds from Zetetic (not included). |
 

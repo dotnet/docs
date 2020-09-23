@@ -1,7 +1,7 @@
 ---
 title: Get started with F#
 description: Find out how to get started with the F# programming language.
-ms.date: 12/08/2018
+ms.date: 09/12/2020
 ---
 # Get Started with F\#
 
@@ -23,5 +23,5 @@ In general, there is no specific that is better than the rest. We recommend tryi
 
 If you'd rather not install F# and .NET on your machine, you can also get started with F# in the browser:
 
-* [Introduction to F# on Binder](https://mybinder.org/v2/gh/dotnet/try/master?urlpath=lab) is a [Jupyter notebook](https://jupyter.org/) on hosted via the free [Binder](https://mybinder.org/) service. No sign-up needed!
+* [Introduction to F# on Binder](https://mybinder.org/v2/gh/dotnet/interactive/main?urlpath=lab) is a [Jupyter notebook](https://jupyter.org/) on hosted via the free [Binder](https://mybinder.org/) service. No sign-up needed!
 * [The Fable REPL](https://fable.io/repl/) is an interactive, in-browser REPL that uses [Fable](https://fable.io/) to translate F# code into JavaScript. Check out the numerous samples that range from F# basics to a fully fledged video game all executing in your browser!

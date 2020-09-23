@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
 ---
 # How to: Group Related Constant Values Together (Visual Basic)
+
 An enumeration is the best way to group related constants together. You create an enumeration with the `Enum` statement in the declarations section of a class or a module. For more information, see [How to: Declare an Enumeration](how-to-declare-enumerations.md).  
   
 ### To group related constant values  

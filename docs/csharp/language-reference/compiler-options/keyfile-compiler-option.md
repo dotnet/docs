@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 0815f9de-ace4-4e98-b4c6-13c55dea40c2
 ---
 # -keyfile (C# Compiler Options)
+
 Specifies the filename containing the cryptographic key.  
   
 ## Syntax  
@@ -26,6 +27,7 @@ Specifies the filename containing the cryptographic key.
 |`file`|The name of the file containing the strong name key.|  
   
 ## Remarks  
+
  When this option is used, the compiler inserts the public key from the specified file into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type sn -k `file` at the command line.  
   
  If you compile with **-target:module**, the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly with [-addmodule](./addmodule-compiler-option.md).  

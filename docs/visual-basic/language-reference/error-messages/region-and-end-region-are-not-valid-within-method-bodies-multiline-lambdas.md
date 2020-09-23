@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 43707bf1-1c6b-4d82-b081-e5a17dca51c1
 ---
 # '#Region' and '#End Region' statements are not valid within method bodies/multiline lambdas
+
 The `#Region` block must be declared at a class, module, or namespace level. A collapsible region can include one or more procedures, but it cannot begin or end inside of a procedure.  
   
  **Error ID:** BC32025  

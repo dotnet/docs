@@ -16,7 +16,7 @@ This topic outlines the basic steps required to create a Windows Communication F
   
 ### To create a service hosted by IIS  
   
-1. Confirm that IIS is installed and running on your computer. For more information about installing and configuring IIS see [Installing and Configuring IIS 7.0](https://docs.microsoft.com/iis/install/installing-iis-7/installing-necessary-iis-components-on-windows-vista)  
+1. Confirm that IIS is installed and running on your computer. For more information about installing and configuring IIS see [Installing and Configuring IIS 7.0](/iis/install/installing-iis-7/installing-necessary-iis-components-on-windows-vista)  
   
 2. Create a new folder for your application files called "IISHostedCalcService", ensure that ASP.NET has access to the contents of the folder, and use the IIS management tool to create a new IIS application that is physically located in this application directory. When creating an alias for the application directory use "IISHostedCalc".  
   
@@ -76,4 +76,4 @@ This topic outlines the basic steps required to create a Windows Communication F
 - [Hosting Services](../hosting-services.md)
 - [WCF Services and ASP.NET](wcf-services-and-aspnet.md)
 - [Security](security.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

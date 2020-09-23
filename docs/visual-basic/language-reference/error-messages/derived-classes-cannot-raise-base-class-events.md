@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 63afa1c6-2f93-4512-a2f0-372455979771
 ---
 # Derived classes cannot raise base class events
+
 An event can be raised only from the declaration space in which it is declared. Therefore, a class cannot raise events from any other class, even one from which it is derived.  
   
  **Error ID:** BC30029  

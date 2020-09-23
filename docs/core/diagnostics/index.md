@@ -23,7 +23,11 @@ This article helps you find the various tools you need.
 
 [Unit testing](../testing/index.md) is a key component of continuous integration and deployment of high-quality software. Unit tests are designed to give you an early warning when you break something.
 
-## .NET Core dotnet diagnostic Global Tools
+## Debug Linux dumps
+
+[Debug Linux dumps](debug-linux-dumps.md) explains how to collect and analyze dumps on Linux.
+
+## .NET Core diagnostic global tools
 
 ### dotnet-counters
 
@@ -40,6 +44,14 @@ The [dotnet-gcdump](dotnet-gcdump.md) tool is a way to collect GC (Garbage Colle
 ### dotnet-trace
 
 .NET Core includes what is called the `EventPipe` through which diagnostics data is exposed. The [dotnet-trace](dotnet-trace.md) tool allows you to consume interesting profiling data from your app that can help in scenarios where you need to root cause apps running slow.
+
+### dotnet-symbol
+
+[dotnet-symbol](dotnet-symbol.md) downloads files (symbols, DAC/DBI, host files, etc.) needed to open a core dump or minidump. Use this tool if you need symbols and modules to debug a dump file captured on a different machine.
+
+### dotnet-sos
+
+[dotnet-sos](dotnet-sos.md) is used to install the [SOS debugging extension](../../framework/tools/sos-dll-sos-debugging-extension.md) on Linux or MacOS (or on Windows if using older debugging tools).
 
 ## .NET Core diagnostics tutorials
 

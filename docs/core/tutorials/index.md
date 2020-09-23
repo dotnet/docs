@@ -2,7 +2,7 @@
 title: .NET Core Tutorials
 description: Follow tutorials for learning .NET Core to build apps and libraries on Mac, Linux, and Windows.
 author: richlander
-ms.date: 03/16/2017
+ms.date: 09/09/2020
 titleSuffix: ""
 ---
 # Learn .NET Core and the .NET Core SDK tools by exploring these tutorials
@@ -36,8 +36,12 @@ Choose these tutorials if you want to use Visual Studio Code or some other code 
 ## Use Visual Studio for Mac
 
 - [Create a console app](with-visual-studio-mac.md)
-- [Create a library and unit test it](library-with-visual-studio-mac.md)
+- [Debug an app](debugging-with-visual-studio-mac.md)
+- [Publish an app](publishing-with-visual-studio-mac.md)
+- [Create a class library](library-with-visual-studio-mac.md)
+- [Unit test a class library](testing-library-with-visual-studio-mac.md)
 - [Install and use a package](/nuget/quickstart/install-and-use-a-package-in-visual-studio-mac)
+- [Create an F# console app](../../fsharp/get-started/get-started-with-visual-studio-for-mac.md)
 
 ## Advanced topics
 

@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 3ffd1bdf-1b8d-47f5-87eb-75b659f64294
 ---
 # COM Interop (Visual Basic)
+
 The Component Object Model (COM) allows an object to expose its functionality to other components and to host applications. Most of today's software includes COM objects. Although .NET assemblies are the best choice for new applications, you may at times need to employ COM objects. This section covers some of the issues associated with creating and using COM objects with Visual Basic.  
   
 ## In This Section  
+
  [Introduction to COM Interop](introduction-to-com-interop.md)  
  Provides an overview of COM interoperability.  
   
@@ -41,6 +43,7 @@ The Component Object Model (COM) allows an object to expose its functionality to
  Describes using existing COM objects as the basis for new objects.  
   
 ## Related Sections  
+
  [Interoperating with Unmanaged Code](../../../framework/interop/index.md)  
  Describes interoperability services provided by the common language runtime.  
   

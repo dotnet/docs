@@ -12,7 +12,7 @@ A deadlock may result in a Reentrant service, which restricts instances of the s
 
 To address this issue, you can do the following:
 
-- Set the service's concurrency mode to <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=nameWithType> or &lt;System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType&gt;. For example:
+- Set the service's concurrency mode to <xref:System.ServiceModel.ConcurrencyMode.Single?displayProperty=nameWithType> or <xref:System.ServiceModel.ConcurrencyMode.Multiple?displayProperty=nameWithType>. For example:
 
 ```csharp
 [ServiceBehavior(ConcurrencyMode = ConcurrencyMode.Reentrant)]

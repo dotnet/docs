@@ -4,6 +4,7 @@ ms.date: 07/20/2015
 ms.assetid: ec1aecdb-5339-4a93-be71-eec56b1d7438
 ---
 # Invalid pattern string
+
 The pattern string specified in the `Like` operation of a search is invalid.  
   
 ## To correct this error  

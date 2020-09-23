@@ -66,7 +66,7 @@ Together with the Entity Framework runtime, Visual Studio includes the mapping a
 
 To learn more about the Entity Framework, see:
 
-[Getting Started](getting-started.md) - Provides information about how to get up and running quickly using the [Quickstart](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399182(v=vs.100)), which shows how to create a simple Entity Framework application.
+[Getting Started](getting-started.md) - Provides information about how to get up and running quickly using the [Quickstart](/previous-versions/dotnet/netframework-4.0/bb399182(v=vs.100)), which shows how to create a simple Entity Framework application.
 
 [Entity Framework Terminology](terminology.md) - Defines many of the terms that are introduced by the Entity Data Model and the Entity Framework and that are used in Entity Framework documentation.
 

@@ -11,6 +11,10 @@ The following breaking changes are documented on this page:
 
 | Breaking change | Version introduced |
 | - | :-: |
+| [Parameter names changed in RC1](#parameter-names-changed-in-rc1) | 5.0 |
+| [OSPlatform attributes renamed or removed](#osplatform-attributes-renamed-or-removed) | 5.0 |
+| [Thread.Abort is obsolete](#threadabort-is-obsolete) | 5.0 |
+| [Obsolete properties on ConsoleLoggerOptions](#obsolete-properties-on-consoleloggeroptions) | 5.0 |
 | [Hardware intrinsic IsSupported checks may differ for nested types](#hardware-intrinsic-issupported-checks-may-differ-for-nested-types) | 5.0 |
 | [Parameter names changed in reference assemblies](#parameter-names-changed-in-reference-assemblies) | 5.0 |
 | [URI paths with non-ASCII characters parse correctly on Unix](#uri-paths-with-non-ascii-characters-parse-correctly-on-unix) | 5.0 |
@@ -45,6 +49,22 @@ The following breaking changes are documented on this page:
 | [Process.StartInfo throws InvalidOperationException for processes you didn't start](#processstartinfo-throws-invalidoperationexception-for-processes-you-didnt-start) | 1.0 |
 
 ## .NET 5.0
+
+[!INCLUDE [reference-assembly-parameter-names-rc1](../../../includes/core-changes/corefx/5.0/reference-assembly-parameter-names-rc1.md)]
+
+***
+
+[!INCLUDE [os-platform-attributes-renamed](../../../includes/core-changes/corefx/5.0/os-platform-attributes-renamed.md)]
+
+***
+
+[!INCLUDE [thread-abort-obsolete](../../../includes/core-changes/corefx/5.0/thread-abort-obsolete.md)]
+
+***
+
+[!INCLUDE [obsolete-consoleloggeroptions-properties](../../../includes/core-changes/corefx/5.0/obsolete-consoleloggeroptions-properties.md)]
+
+***
 
 [!INCLUDE [hardware-instrinsics-issupported-checks](../../../includes/core-changes/corefx/5.0/hardware-instrinsics-issupported-checks.md)]
 

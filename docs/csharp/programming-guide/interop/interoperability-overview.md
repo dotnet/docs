@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: c025b2e0-2357-4c27-8461-118f0090aeff
 ---
 # Interoperability Overview (C# Programming Guide)
+
 The topic describes methods to enable interoperability between C# managed code and unmanaged code.  
   
 ## Platform Invoke  
+
  *Platform invoke* is a service that enables managed code to call unmanaged functions that are implemented in dynamic link libraries (DLLs), such as those in the Microsoft Windows API. It locates and invokes an exported function and marshals its arguments (integers, strings, arrays, structures, and so on) across the interoperation boundary as needed.  
   
 For more information, see [Consuming Unmanaged DLL Functions](../../../framework/interop/consuming-unmanaged-dll-functions.md) and [How to use platform invoke to play a WAV file](./how-to-use-platform-invoke-to-play-a-wave-file.md).
@@ -22,9 +24,11 @@ For more information, see [Consuming Unmanaged DLL Functions](../../../framework
 > The [Common Language Runtime](../../../standard/clr.md) (CLR) manages access to system resources. Calling unmanaged code that is outside the CLR bypasses this security mechanism, and therefore presents a security risk. For example, unmanaged code might call resources in unmanaged code directly, bypassing CLR security mechanisms. For more information, see [Security in .NET](../../../standard/security/index.md).  
   
 ## C++ Interop  
+
  You can use C++ interop, also known as It Just Works (IJW), to wrap a native C++ class so that it can be consumed by code that is authored in C# or another .NET language. To do this, you write C++ code to wrap a native DLL or COM component. Unlike other .NET languages, Visual C++ has interoperability support that enables managed and unmanaged code to be located in the same application and even in the same file. You then build the C++ code by using the **/clr** compiler switch to produce a managed assembly. Finally, you add a reference to the assembly in your C# project and use the wrapped objects just as you would use other managed classes.  
   
 ## Exposing COM Components to C\#
+
  You can consume a COM component from a C# project. The general steps are as follows:  
   
 1. Locate a COM component to use and register it. Use regsvr32.exe to register or un–register a COM DLL.  
@@ -40,6 +44,7 @@ For more information, see [Consuming Unmanaged DLL Functions](../../../framework
  For more information, see [Exposing COM Components to the .NET Framework](../../../framework/interop/exposing-com-components.md).  
   
 ## Exposing C# to COM  
+
  COM clients can consume C# types that have been correctly exposed. The basic steps to expose C# types are as follows:  
   
 1. Add interop attributes in the C# project.  
@@ -54,7 +59,7 @@ For more information, see [Consuming Unmanaged DLL Functions](../../../framework
   
 ## See also
 
-- [Improving Interop Performance](https://docs.microsoft.com/previous-versions/msp-n-p/ff647812%28v=pandp.10%29)
+- [Improving Interop Performance](/previous-versions/msp-n-p/ff647812(v=pandp.10))
 - [Introduction to Interoperability between COM and .NET](/office/client-developer/outlook/pia/introduction-to-interoperability-between-com-and-net)
 - [Introduction to COM Interop in Visual Basic](../../../visual-basic/programming-guide/com-interop/introduction-to-com-interop.md)
 - [Marshaling between Managed and Unmanaged Code](../../../framework/interop/interop-marshaling.md)

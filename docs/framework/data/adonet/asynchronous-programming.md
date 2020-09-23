@@ -34,9 +34,9 @@ For more information about the asynchronous programming feature that was introdu
 
 - [Asynchronous Programming with Async and Await (Visual Basic)](../../../visual-basic/programming-guide/concepts/async/index.md)
 
-- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 1)](https://docs.microsoft.com/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5)
+- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 1)](/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5)
 
-- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 2)](https://docs.microsoft.com/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples)
+- [Using SqlDataReader’s new async methods in .NET 4.5 (Part 2)](/archive/blogs/adonet/using-sqldatareaders-new-async-methods-in-net-4-5-part-2-examples)
 
 When your user interface is unresponsive or your server does not scale, it is likely that you need your code to be more asynchronous. Writing asynchronous code has traditionally involved installing a callback (also called continuation) to express the logic that occurs after the asynchronous operation finishes. This complicates the structure of asynchronous code as compared with synchronous code.
 
@@ -177,7 +177,7 @@ class A {
 
 You may need to create a tool that is able to connect to different databases and execute queries. You can use the base provider model and the new asynchronous feature.
 
-The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions. For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](https://docs.microsoft.com/previous-versions/commerce-server/dd327979(v=cs.90)).
+The Microsoft Distributed Transaction Controller (MSDTC) must be enabled on the server to use distributed transactions. For information on how to enable MSDTC, see [How to Enable MSDTC on a Web Server](/previous-versions/commerce-server/dd327979(v=cs.90)).
 
 ```csharp
 using System;

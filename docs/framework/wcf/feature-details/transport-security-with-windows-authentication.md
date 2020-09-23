@@ -116,4 +116,4 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 
 - [Security Overview](security-overview.md)
 - [How to: Secure a Service with Windows Credentials](../how-to-secure-a-service-with-windows-credentials.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

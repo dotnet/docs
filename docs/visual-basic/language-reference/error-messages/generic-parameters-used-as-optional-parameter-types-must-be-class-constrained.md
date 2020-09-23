@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 55aa8b2a-9ce3-4620-a710-2f9b0feb6143
 ---
 # Generic parameters used as optional parameter types must be class constrained
+
 A procedure is declared with an optional parameter that uses a type parameter that is not constrained to be a reference type.  
   
  You must always supply a default value for each optional parameter. If the parameter is of a reference type, the optional value must be `Nothing`, which is a valid value for any reference type. However, if the parameter is of a value type, that type must be an elementary data type predefined by Visual Basic. This is because a composite value type, such as a user-defined structure, has no valid default value.  

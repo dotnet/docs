@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 914d0563-b53c-492c-ac62-d833ce805f2f
 ---
 # Dates and Times Summary (Visual Basic)
+
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  

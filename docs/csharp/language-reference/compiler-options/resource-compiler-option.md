@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 5212666e-98ab-47e4-a497-b5545ab15c7f
 ---
 # -resource (C# Compiler Options)
+
 Embeds the specified resource into the output file.  
   
 ## Syntax  
@@ -23,8 +24,9 @@ Embeds the specified resource into the output file.
 ```  
   
 ## Arguments  
+
  `filename`  
- The .NET Framework resource file that you want to embed in the output file.  
+ The .NET resource file that you want to embed in the output file.  
   
  `identifier` (optional)  
  The logical name for the resource; the name that is used to load the resource. The default is the name of the file name.  
@@ -33,11 +35,12 @@ Embeds the specified resource into the output file.
  The accessibility of the resource: public or private. The default is public.  
   
 ## Remarks  
+
  Use [-linkresource](./linkresource-compiler-option.md) to link a resource to an assembly and not add the resource file to the output file.  
   
  By default, resources are public in the assembly when they are created by using the C# compiler. To make the resources private, specify `private` as the accessibility modifier. No other accessibility other than `public` or `private` is allowed.  
   
- If `filename` is a .NET Framework resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time.  
+ If `filename` is a .NET resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time.  
   
  **-res** is the short form of **-resource**.  
   
@@ -56,6 +59,7 @@ Embeds the specified resource into the output file.
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.FileProperties2.BuildAction%2A>.  
   
 ## Example  
+
  Compile `in.cs` and attach resource file `rf.resource`:  
   
 ```console  

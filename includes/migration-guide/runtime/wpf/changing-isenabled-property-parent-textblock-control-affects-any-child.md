@@ -12,8 +12,16 @@ None. This change conforms to the expected behavior for controls inside a <xref:
 |:--------|:------------|
 | Scope   |Minor|
 |Version|4.6.2|
-|Type|Runtime
+|Type|Runtime|
 
 #### Affected APIs
 
--<xref:System.Windows.UIElement.IsEnabled?displayProperty=nameWithType></li></ul>|
+- <xref:System.Windows.UIElement.IsEnabled?displayProperty=nameWithType>
+
+<!--
+
+#### Affected APIs
+
+- `P:System.Windows.UIElement.IsEnabled`
+
+-->

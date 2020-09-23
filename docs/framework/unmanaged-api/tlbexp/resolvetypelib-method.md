@@ -32,7 +32,7 @@ HRESULT ResolveTypeLib(
   
 ## Parameters  
  `bstrSimpleName`  
- [in] A [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) that contains the simple name of the type library.  
+ [in] A [BSTR](/previous-versions/windows/desktop/automat/bstr) that contains the simple name of the type library.  
   
  `tlbid`  
  [in] The GUID assigned to the type library in the registry.  
@@ -50,12 +50,12 @@ HRESULT ResolveTypeLib(
  [in] A [SYSKIND](/windows/win32/api/oaidl/ne-oaidl-syskind) flag that identifies the operating environment. Common values are SYS_WIN32 and SYS_WIN64.  
   
  `pbstrResolvedTlbName`  
- [out] A pointer to a [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  
+ [out] A pointer to a [BSTR](/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  
   
 ## Remarks  
  The `ResolveTypeLib` method is called by the [LoadTypeLibWithResolver function](loadtypelibwithresolver-function.md) during [Tlbexp.exe (Type Library Exporter)](../../tools/tlbexp-exe-type-library-exporter.md) processing.  
   
- Custom implementations of this interface must return a [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  
+ Custom implementations of this interface must return a [BSTR](/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
@@ -69,4 +69,4 @@ HRESULT ResolveTypeLib(
 ## See also
 
 - [Tlbexp Helper Functions](index.md)
-- [LoadTypeLibEx](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)
+- [LoadTypeLibEx](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

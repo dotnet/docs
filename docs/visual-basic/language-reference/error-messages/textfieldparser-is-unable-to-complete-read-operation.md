@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 36565e82-8458-4a08-86af-d9a7a2c32937
 ---
 # TextFieldParser is unable to complete the read operation because maximum buffer size has been exceeded
+
 The operation cannot be completed because the maximum buffer size (10,000,000 bytes) has been exceeded.  
   
 ## To correct this error  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3d07f6d0-9a2f-49ca-94e8-1e354932e855
 ---
 # Identifier is too long
+
 The name, or identifier, of every programming element is limited to 1023 characters. In addition, a fully qualified name cannot exceed 1023 characters. This means that the entire identifier string (`<namespace>.<...>.<namespace>.<class>.<element>`) cannot be more than 1023 characters long, including the member-access operator (`.`) characters.  
   
  **Error ID:** BC30033  

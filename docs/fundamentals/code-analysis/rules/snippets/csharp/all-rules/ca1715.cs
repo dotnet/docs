@@ -26,7 +26,7 @@
     }
     //</snippet2>
 
-    //<snippet3
+    //<snippet3>
     // Violation.
     public class Collection<Item>
     {

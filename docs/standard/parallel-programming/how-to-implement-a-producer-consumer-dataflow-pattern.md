@@ -15,7 +15,7 @@ ms.assetid: 47a1d38c-fe9c-44aa-bd15-937bd5659b0b
 
 # How to: Implement a producer-consumer dataflow pattern
 
-In this article you'll learn how to use the TPL dataflow library to implement a producer-consumer pattern. In this pattern, the *producer* sends messages to a message block, and the *consumer* reads messages from that block.
+In this article, you'll learn how to use the TPL dataflow library to implement a producer-consumer pattern. In this pattern, the *producer* sends messages to a message block, and the *consumer* reads messages from that block.
 
 [!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
 

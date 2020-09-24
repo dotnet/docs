@@ -361,15 +361,19 @@ items:
       href: code-analysis/overview.md
       displayName: code analysis, analyzers
     - name: Configure rules
-      href: code-analysis/configure-rules.md
+      items:
+      - name: Overview
+        href: code-analysis/configure-rules.md
+      - name: Configure code quality rules
+        href: code-analysis/configure-code-quality-rules.md
     - name: Code quality rule reference
       items:
       - name: Overview
         href: code-analysis/rules/quality-rules-reference.md
-      - name: Design warnings
+      - name: Design rules
         items:
         - name: Overview
-          displayName: "design warnings"
+          displayName: "design rules"
           href: code-analysis/rules/design-warnings.md
         - name: CA1000
           href: code-analysis/rules/ca1000.md
@@ -469,17 +473,17 @@ items:
           href: code-analysis/rules/ca1069.md
         - name: CA1070
           href: code-analysis/rules/ca1070.md
-      - name: Documentation warnings
+      - name: Documentation rules
         items:
         - name: Overview
-          displayName: "documentation warnings"
+          displayName: "documentation rules"
           href: code-analysis/rules/documentation-warnings.md
         - name: CA1200
           href: code-analysis/rules/ca1200.md
-      - name: Globalization warnings
+      - name: Globalization rules
         items:
         - name: Overview
-          displayName: "globalization warnings"
+          displayName: "globalization rules"
           href: code-analysis/rules/globalization-warnings.md
         - name: CA1303
           href: code-analysis/rules/ca1303.md
@@ -497,10 +501,10 @@ items:
           href: code-analysis/rules/ca1310.md
         - name: CA2101
           href: code-analysis/rules/ca2101.md
-      - name: Portability and Interoperability warnings
+      - name: Portability and interoperability rules
         items:
         - name: Overview
-          displayName: "portability and interoperability warnings"
+          displayName: "portability and interoperability rules"
           href: code-analysis/rules/interoperability-warnings.md
         - name: CA1401
           href: code-analysis/rules/ca1401.md
@@ -508,10 +512,10 @@ items:
           href: code-analysis/rules/ca1416.md
         - name: CA1417
           href: code-analysis/rules/ca1417.md
-      - name: Maintainability warnings
+      - name: Maintainability rules
         items:
         - name: Overview
-          displayName: "maintainability warnings"
+          displayName: "maintainability rules"
           href: code-analysis/rules/maintainability-warnings.md
         - name: CA1501
           href: code-analysis/rules/ca1501.md
@@ -527,10 +531,10 @@ items:
           href: code-analysis/rules/ca1508.md
         - name: CA1509
           href: code-analysis/rules/ca1509.md
-      - name: Naming warnings
+      - name: Naming rules
         items:
         - name: Overview
-          displayName: "naming warnings"
+          displayName: "naming rules"
           href: code-analysis/rules/naming-warnings.md
         - name: CA1700
           href: code-analysis/rules/ca1700.md
@@ -562,10 +566,10 @@ items:
           href: code-analysis/rules/ca1724.md
         - name: CA1725
           href: code-analysis/rules/ca1725.md
-      - name: Performance warnings
+      - name: Performance rules
         items:
         - name: Overview
-          displayName: "performance warnings"
+          displayName: "performance rules"
           href: code-analysis/rules/performance-warnings.md
         - name: CA1802
           href: code-analysis/rules/ca1802.md
@@ -623,19 +627,19 @@ items:
           href: code-analysis/rules/ca1837.md
         - name: CA1838
           href: code-analysis/rules/ca1838.md
-      - name: Publish warnings
+      - name: Publish rules
         items:
         - name: Overview
-          displayName: "publish warnings"
+          displayName: "publish rules"
           href: code-analysis/rules/publish-warnings.md
-        - name: "IL3000: Avoid accessing Assembly file path when publishing as a single file"
+        - name: IL3000
           href: code-analysis/rules/il3000.md
-        - name: "IL3001: Avoid accessing Assembly file path when publishing as a single file"
+        - name: IL3001
           href: code-analysis/rules/il3001.md
-      - name: Reliability warnings
+      - name: Reliability rules
         items:
         - name: Overview
-          displayName: "reliability warnings"
+          displayName: "reliability rules"
           href: code-analysis/rules/reliability-warnings.md
         - name: CA2000
           href: code-analysis/rules/ca2000.md
@@ -659,10 +663,10 @@ items:
           href: code-analysis/rules/ca2015.md
         - name: CA2016
           href: code-analysis/rules/ca2016.md
-      - name: Security warnings
+      - name: Security rules
         items:
         - name: Overview
-          displayName: "security warnings"
+          displayName: "security rules"
           href: code-analysis/rules/security-warnings.md
         - name: CA2100
           href: code-analysis/rules/ca2100.md
@@ -758,7 +762,7 @@ items:
           href: code-analysis/rules/ca3147.md
         - name: CA5350
           href: code-analysis/rules/ca5350.md
-        - name: "CA5351 Do Not Use Broken Cryptographic Algorithms"
+        - name: CA5351
           href: code-analysis/rules/ca5351.md
         - name: CA5358
           href: code-analysis/rules/ca5358.md
@@ -852,10 +856,10 @@ items:
           href: code-analysis/rules/ca5402.md
         - name: CA5403
           href: code-analysis/rules/ca5403.md
-      - name: Usage warnings
+      - name: Usage rules
         items:
         - name: Overview
-          displayName: "usage warnings"
+          displayName: "usage rules"
           href: code-analysis/rules/usage-warnings.md
         - name: CA1801
           href: code-analysis/rules/ca1801.md

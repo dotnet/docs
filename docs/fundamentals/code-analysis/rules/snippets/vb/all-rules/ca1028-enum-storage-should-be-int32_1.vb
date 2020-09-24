@@ -1,7 +1,7 @@
 ﻿Imports System
 
 Namespace ca1028
-
+    '<snippet1>
     <Flags()>
     Public Enum Days As UInteger
         None = 0
@@ -19,11 +19,11 @@ Namespace ca1028
         Orange = 3
         Yellow = 4
     End Enum
-
+    '</snippet1>
 End Namespace
 
 Namespace ca1028_2
-
+    '<snippet2>
     <Flags()>
     Public Enum Days As Integer
         None = 0
@@ -41,5 +41,5 @@ Namespace ca1028_2
         Orange = 3
         Yellow = 4
     End Enum
-
+    '</snippet2>
 End Namespace

@@ -17,11 +17,8 @@ namespace ca2215
 
         public void Dispose()
         {
-
             Dispose(true);
-
             GC.SuppressFinalize(this);
-
         }
 
         // Disposable types implement a finalizer.
@@ -31,4 +28,17 @@ namespace ca2215
         }
     }
     //</snippet1>
+
+    //<snippet2>
+    public class TypeB : TypeA
+    {
+        protected override void Dispose(bool disposing)
+        {
+            if (!disposing)
+            {
+                base.Dispose(false);
+            }
+        }
+    }
+    //</snippet2>
 }

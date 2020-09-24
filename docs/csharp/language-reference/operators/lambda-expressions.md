@@ -82,7 +82,7 @@ Two or more input parameters are separated by commas:
 
 Sometimes the compiler can't infer the types of input parameters. You can specify the types explicitly as shown in the following example:
 
-[!code-csharp[explicitly typed parameters](snippets/lambda-expressions/GeneralExamples.cs#ExplicitlyTypedParameters)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="ExplicitlyTypedParameters":::
 
 Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
 

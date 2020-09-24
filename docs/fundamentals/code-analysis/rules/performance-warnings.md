@@ -1,21 +1,21 @@
 ---
-title: Performance Warnings (code analysis)
-description: "Learn about code analysis rule Performance Warnings"
+title: Performance rules (code analysis)
+description: "Learn about code analysis performance rules."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.performancerules
 helpviewer_keywords:
-- warnings, performance
-- performance warnings
-- performance, warnings
-- managed code analysis warnings, performance warnings
+- rules, performance
+- performance rules
+- performance, rules
+- managed code analysis rules, performance rules
 author: gewarren
 ms.author: gewarren
 ---
-# Performance warnings
+# Performance rules
 
-Performance warnings support high-performance libraries and applications.
+Performance rules support high-performance libraries and applications.
 
 ## In this section
 

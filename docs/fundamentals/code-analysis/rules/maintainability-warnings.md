@@ -1,20 +1,20 @@
 ---
-title: Maintainability Warnings (code analysis)
-description: "Learn about code analysis rule Maintainability Warnings"
+title: Maintainability rules (code analysis)
+description: "Learn about code analysis maintainability rules."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.maintainabilityrules
 helpviewer_keywords:
-- warnings, maintainability
-- managed code analysis warnings, maintainability warnings
-- maintainability warnings
+- rules, maintainability
+- managed code analysis rules, maintainability rules
+- maintainability rules
 author: gewarren
 ms.author: gewarren
 ---
-# Maintainability warnings
+# Maintainability rules
 
-Maintainability warnings support library and application maintenance.
+Maintainability rules support library and application maintenance.
 
 ## In this section
 

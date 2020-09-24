@@ -1,23 +1,23 @@
 ---
-title: Portability and Interoperability Warnings (code analysis)
-description: "Learn about code analysis rule Portability and Interoperability Warnings"
+title: Portability and Interoperability rules (code analysis)
+description: "Learn about code analysis rule Portability and Interoperability rules"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
   - "vs.codeanalysis.Portablityrules"
   - "vs.codeanalysis.Interoperabilityrules"
 helpviewer_keywords:
-  - "managed code analysis warnings, interoperability warnings, portability warnings"
-  - "portability warnings"
+  - "managed code analysis rules, interoperability rules, portability rules"
+  - "portability rules"
   - "warnings, portability"
-  - "interoperability warnings"
+  - "interoperability rules"
   - "warnings, interoperability"
 author: gewarren
 ms.author: gewarren
 ---
-# Portability and Interoperability warnings
+# Portability and interoperability rules
 
-Portability warnings support portability across different platforms. Interoperability warnings support interaction with COM clients.
+Portability rules support portability across different platforms. Interoperability rules support interaction with COM clients.
 
 ## In this section
 

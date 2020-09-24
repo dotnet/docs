@@ -1,21 +1,21 @@
 ---
-title: Security Warnings (code analysis)
-description: "Learn about code analysis rule Security Warnings"
+title: Security rules (code analysis)
+description: "Learn about code analysis security rules."
 ms.date: 10/02/2019
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.securityrules
 helpviewer_keywords:
 - security [Visual Studio ALM], Enterprise Templates
-- security warnings
-- managed code analysis warnings, security warnings
-- warnings, security
+- security rules
+- managed code analysis rules, security rules
+- rules, security
 author: gewarren
 ms.author: gewarren
 ---
-# Security warnings
+# Security rules
 
-Security warnings support safer libraries and applications. These warnings help prevent security flaws in your program. If you disable any of these warnings, you should clearly mark the reason in code and also inform the designated security officer for your development project.
+Security rules support safer libraries and applications. These rules help prevent security flaws in your program. If you disable any of these rules, you should clearly mark the reason in code and also inform the designated security officer for your development project.
 
 ## In this section
 
@@ -76,14 +76,14 @@ Security warnings support safer libraries and applications. These warnings help 
 |[CA5364: Do not use deprecated security protocols](ca5364.md)|Transport Layer Security (TLS) secures communication between computers, most commonly with Hypertext Transfer Protocol Secure (HTTPS). Older protocol versions of TLS are less secure than TLS 1.2 and TLS 1.3 and are more likely to have new vulnerabilities. Avoid older protocol versions to minimize risk.|
 |[CA5365: Do Not Disable HTTP Header Checking](ca5365.md)|HTTP header checking enables encoding of the carriage return and newline characters, \r and \n, that are found in response headers. This encoding can help to avoid injection attacks that exploit an application that echoes untrusted data contained by the header.|
 |[CA5366: Use XmlReader For DataSet Read XML](ca5366.md)|Using a <xref:System.Data.DataSet> to read XML with untrusted data may load dangerous external references, which should be restricted by using an <xref:System.Xml.XmlReader> with a secure resolver or with DTD processing disabled.|
-|[CA5367: Do Not Serialize Types With Pointer Fields](ca5367.md)|This rule checks whether there’s a serializable class with a pointer field or property. Members that can’t be serialized can be a pointer, such as static members or fields marked with <xref:System.NonSerializedAttribute>.|
+|[CA5367: Do Not Serialize Types With Pointer Fields](ca5367.md)|This rule checks whether there's a serializable class with a pointer field or property. Members that can't be serialized can be a pointer, such as static members or fields marked with <xref:System.NonSerializedAttribute>.|
 |[CA5368: Set ViewStateUserKey For Classes Derived From Page](ca5368.md)|Setting the <xref:System.Web.UI.Page.ViewStateUserKey> property can help you prevent attacks on your application by allowing you to assign an identifier to the view-state variable for individual users so that attackers cannot use the variable to generate an attack. Otherwise, there will be vulnerabilities to cross-site request forgery.|
 |[CA5369: Use XmlReader for Deserialize](ca5369.md)|Processing untrusted DTD and XML schemas may enable loading dangerous external references, which should be restricted by using an XmlReader with a secure resolver or with DTD and XML inline schema processing disabled.|
 |[CA5370: Use XmlReader for validating reader](ca5370.md)|Processing untrusted DTD and XML schemas may enable loading dangerous external references. This dangerous loading can be restricted by using an XmlReader with a secure resolver or with DTD and XML inline schema processing disabled.|
 |[CA5371: Use XmlReader for schema read](ca5371.md)|Processing untrusted DTD and XML schemas may enable loading dangerous external references. Using an XmlReader with a secure resolver or with DTD and XML inline schema processing disabled restricts this.|
 |[CA5372: Use XmlReader for XPathDocument](ca5372.md)|Processing XML from untrusted data may load dangerous external references, which can be restricted by using an XmlReader with a secure resolver or with DTD processing disabled.|
 |[CA5373: Do not use obsolete key derivation function](ca5373.md)|This rule detects the invocation of weak key derivation methods <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> and `Rfc2898DeriveBytes.CryptDeriveKey`. <xref:System.Security.Cryptography.PasswordDeriveBytes?displayProperty=fullName> used a weak algorithm PBKDF1.|
-|[CA5374: Do Not Use XslTransform](ca5374.md)|This rule checks if <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> is instantiated in the code. <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> is now obsolete and shouldn’t be used.|
+|[CA5374: Do Not Use XslTransform](ca5374.md)|This rule checks if <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> is instantiated in the code. <xref:System.Xml.Xsl.XslTransform?displayProperty=nameWithType> is now obsolete and shouldn't be used.|
 |[CA5375: Do not use account shared access signature](ca5375.md)|An account SAS can delegate access to read, write, and delete operations on blob containers, tables, queues, and file shares that are not permitted with a service SAS. However, it doesn't support container-level policies and has less flexibility and control over the permissions that are granted. Once malicious users get it, your storage account will be compromised easily.|
 |[CA5376: Use SharedAccessProtocol HttpsOnly](ca5376.md)|SAS is sensitive data that can't be transported in plain text on HTTP.|
 |[CA5377: Use container level access policy](ca5377.md)|A container-level access policy can be modified or revoked at any time. It provides greater flexibility and control over the permissions that are granted.|

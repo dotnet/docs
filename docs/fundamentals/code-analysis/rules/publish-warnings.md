@@ -1,20 +1,20 @@
 ---
-title: Publish Warnings (code analysis)
-description: "Learn about code analysis rule Publish Warnings"
+title: Publish rules (code analysis)
+description: "Learn about code analysis publish rules."
 ms.date: 09/04/2020
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.publishrules
 helpviewer_keywords:
-- warnings, publish
-- managed code analysis warnings, publish warnings
-- publish warnings
+- rules, publish
+- managed code analysis rules, publish rules
+- publish rules
 author: gewarren
 ms.author: gewarren
 ---
-# Publish warnings
+# Publish rules
 
-Publish warnings for .NET.
+Publish rules for .NET.
 
 ## In this section
 

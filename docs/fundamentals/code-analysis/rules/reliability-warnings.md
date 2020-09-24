@@ -1,20 +1,20 @@
 ---
-title: Reliability Warnings (code analysis)
-description: "Learn about code analysis rule Reliability Warnings"
+title: Reliability rules (code analysis)
+description: "Learn about code analysis reliability rules."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.reliabilityrules
 helpviewer_keywords:
-- warnings, reliability
-- reliability warnings
-- managed code analysis warnings, reliability warnings
+- rules, reliability
+- reliability rules
+- managed code analysis rules, reliability rules
 author: gewarren
 ms.author: gewarren
 ---
-# Reliability warnings
+# Reliability rules
 
-Reliability warnings support library and application reliability, such as correct memory and thread usage. The reliability rules include:
+Reliability rules support library and application reliability, such as correct memory and thread usage. The reliability rules include:
 
 |Rule|Description|
 |----------|-----------------|

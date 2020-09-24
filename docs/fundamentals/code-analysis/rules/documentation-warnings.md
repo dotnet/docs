@@ -1,20 +1,20 @@
 ---
-title: Documentation warnings (code analysis)
-description: "Learn about code analysis rule Documentation warnings"
+title: Documentation rules (code analysis)
+description: "Learn about code analysis rule Documentation rules"
 ms.date: 09/16/2019
 ms.topic: reference
 f1_keywords:
   - "vs.codeanalysis.documentationrules"
 helpviewer_keywords:
-  - "documentation warnings"
-  - "managed code analysis warnings, documentation warnings"
+  - "documentation rules"
+  - "managed code analysis rules, documentation rules"
   - "warnings, documentation"
 author: mavasani
 ms.author: mavasani
 ---
-# Documentation warnings
+# Documentation rules
 
-Documentation warnings support writing well-documented libraries through the correct use of [XML documentation comments](../../../csharp/codedoc.md) for externally visible APIs.
+Documentation rules support writing well-documented libraries through the correct use of [XML documentation comments](../../../csharp/codedoc.md) for externally visible APIs.
 
 ## In this section
 

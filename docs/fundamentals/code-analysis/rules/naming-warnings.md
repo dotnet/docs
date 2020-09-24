@@ -1,20 +1,20 @@
 ---
-title: Naming Warnings (code analysis)
-description: "Learn about code analysis rule Naming Warnings"
+title: Naming rules (code analysis)
+description: "Learn about code analysis naming rules."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.namingrules
 helpviewer_keywords:
-- managed code analysis warnings, naming warnings
-- naming warnings
-- warnings, naming
+- managed code analysis rules, naming rules
+- naming rules
+- rules, naming
 author: gewarren
 ms.author: gewarren
 ---
-# Naming warnings
+# Naming rules
 
-Naming warnings support adherence to the naming conventions of the .NET Design Guidelines.
+Naming rules support adherence to the naming conventions of the .NET Design Guidelines.
 
 ## In this section
 

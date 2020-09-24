@@ -1,20 +1,20 @@
 ---
-title: Usage Warnings (code analysis)
-description: "Learn about code analysis rule Usage Warnings"
+title: Usage rules (code analysis)
+description: "Learn about code analysis usage rules."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.usagerules
 helpviewer_keywords:
-- warnings, usage
-- managed code analysis warnings, usage warnings
-- usage warnings
+- rules, usage
+- managed code analysis rules, usage rules
+- usage rules
 author: gewarren
 ms.author: gewarren
 ---
-# Usage warnings
+# Usage rules
 
-Usage warnings support proper usage of .NET.
+Usage rules support proper usage of .NET.
 
 ## In this section
 

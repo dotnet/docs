@@ -1,20 +1,20 @@
 ---
-title: Design Warnings (code analysis)
-description: "Learn about code analysis rule Design Warnings"
+title: Design rules (code analysis)
+description: "Learn about code analysis design rules."
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.designrules
 helpviewer_keywords:
-- design warnings
-- managed code analysis warnings, design warnings
-- warnings, design
+- design rules
+- managed code analysis rules, design rules
+- rules, design
 author: gewarren
 ms.author: gewarren
 ---
-# Design warnings
+# Design rules
 
-Design warnings support adherence to the [.NET Framework Design Guidelines](../../../standard/design-guidelines/index.md).
+Design rules support adherence to the [.NET Framework Design Guidelines](../../../standard/design-guidelines/index.md).
 
 ## In this section
 

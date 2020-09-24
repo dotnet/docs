@@ -1,21 +1,21 @@
 ---
-title: Globalization Warnings (code analysis)
-description: "Learn about code analysis rule Globalization Warnings"
+title: Globalization rules (code analysis)
+description: "Learn about code analysis rule Globalization rules"
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - vs.codeanalysis.globalizationrules
 helpviewer_keywords:
-- warnings, globalization
-- globalization warnings
-- globalization [Visual Studio], warnings
-- managed code analysis warnings, globalization warnings
+- rules, globalization
+- globalization rules
+- globalization [Visual Studio], rules
+- managed code analysis rules, globalization rules
 author: gewarren
 ms.author: gewarren
 ---
-# Globalization warnings
+# Globalization rules
 
-Globalization warnings support world-ready libraries and applications.
+Globalization rules support world-ready libraries and applications.
 
 ## In this section
 

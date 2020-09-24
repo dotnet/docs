@@ -713,7 +713,16 @@ items:
       href: ../core/extensions/custom-configuration-provider.md
       displayName: custom configuration,custom config,custom configuration provider,custom config provider
   - name: Dependency injection
-    href: /aspnet/core/fundamentals/dependency-injection
+    items:
+    - name: Overview
+      href: ../core/extensions/dependency-injection.md
+      displayName: dependency injection,di,ioc,ioc container,dependency container,inversion of control
+    - name: Use dependency injection
+      href: ../core/extensions/dependency-injection-usage.md
+      displayName: use dependency injection,di,di examples,ioc,ioc container,dependency container,inversion of control
+    - name: Dependency injection guidelines
+      href: ../core/extensions/dependency-injection-guidelines.md
+      displayName: dependency injection best practices,guidelines,di,ioc,ioc container,dependency container,inversion of control
   - name: Generic host
     href: ../core/extensions/generic-host.md
   - name: Logging

@@ -42,7 +42,7 @@ If you would like to use .NET Core global CLI diagnostic tools to diagnose proce
 
 ## Using `PerfCollect` in a container
 
-**This article applies to: ✔️** .NET Core 2.1 and later versions
+**This tool applies to: ✔️** .NET Core 2.1 and later versions
 
 The [`PerfCollect`](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/linux-performance-tracing.md) script is useful for collecting performance traces and is the recommended tool for collecting traces prior to .NET Core 3.0. If using `PerfCollect` in a container, keep the following requirements in mind:
 

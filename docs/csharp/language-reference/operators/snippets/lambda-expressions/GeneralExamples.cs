@@ -2,7 +2,7 @@
 
 namespace lambda_expressions
 {
-    public static class ExpressionAndStatementLambdas
+    public static class GeneralExamples
     {
         public static void Examples()
         {
@@ -36,6 +36,10 @@ namespace lambda_expressions
             // Output:
             // Hello World!
             // </SnippetStatementLambda>
+
+            // <SnippetStatic>
+            Func<double, double> square = static x => x * x;
+            // </SnippetStatic>
         }
     }
 }

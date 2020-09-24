@@ -260,7 +260,7 @@ The following table lists code quality analysis rules.
 > | [CA5401 Do not use CreateEncryptor with non-default IV](ca5401.md) | Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks. |
 > | [CA5402 Use CreateEncryptor with the default IV](ca5402.md) | Symmetric encryption should always use a non-repeatable initialization vector to prevent dictionary attacks. |
 > | [CA5403: Do not hard-code certificate](ca5403.md) | The `data` or `rawData` parameter of a <xref:System.Security.Cryptography.X509Certificates.X509Certificate> or <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> constructor is hard-coded. |
-> | [IL3000 Avoid accessing Assembly file path when publishing as a single file](il3000.md) | Avoid using accessing Assembly file path when publishing as a single file. |
+> | [IL3000 Avoid accessing Assembly file path when publishing as a single file](il3000.md) | Avoid accessing Assembly file path when publishing as a single file. |
 > | [IL3001 Avoid accessing Assembly file path when publishing as a single-file](il3001.md) | Avoid accessing Assembly file path when publishing as a single file. |
 
 ## Legend

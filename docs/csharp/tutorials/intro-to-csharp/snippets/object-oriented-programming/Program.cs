@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace classes
+namespace OOProgramming
 {
     class Program
     {

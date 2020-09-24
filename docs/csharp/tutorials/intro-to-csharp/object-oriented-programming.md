@@ -42,9 +42,42 @@ public class GiftCardAccount : BankAccount
 }
 ```
 
-Each of these classes *inherit* the shared behavior from their shared *base class*, the `BankAccount` class. You need to write the implementations for new and different functionality in each of the *derived classes*.
+Each of these classes *inherit* the shared behavior from their shared *base class*, the `BankAccount` class. You need to write the implementations for new and different functionality in each of the *derived classes*.  
+
+It's a good practice to create each new class in a different source file. In [Visual Studio](https://visualstudio.com), you can right-click on the project, and select *add class* to add a new class in a new file. In [Visual Studio Code](https://code.visualstudio.com), select *file* then *new* to create a new source file. In either tool, name the file to match the class.
+
+When you create the classes as shown in the preceding sample, you'll find that none of your derived classes compile. The `BankAccount` class declares one public constructor with the following signature:
+
+```csharp
+public BankAccount(string name, decimal initialBalance)
+```
+
+Each derived class must call a base class constructor from its own constructor. In many cases, you don't need to write code for this to work. If you don't write any constructors, the compiler generates a *parameterless constructor*. Any derived class generates a call to the base class's parameterless constructor. In this case, the doesn't generate a parameterless constructor for the `BankAccount` class because it has a constructor defined. In those cases, you must declare a constructor that can pass arguments to the base class constructor.  The following code shows the constructor for the `InterestEarningAccount`:
+
+:::code language="csharp" source="./snippets/object-oriented-programming/InterestEarningAccount.cs" id="DerivedConstructor":::
+
+The parameters to this new constructor match the type and names of the base class. You use the `: base()` syntax to indicate a call to a base class constructor. Some classes define multiple constructors, and this syntax enables you to pick which base class constructor you call.
+
+The requirements for the new classes can be stated as follows:
+
+- An interest earning account:
+  - Will get a credit of 2% of the month-ending-balance.
+- A line of credit:
+  - Can have a negative balance, but not be greater in absolute value than the credit limit.
+  - Will incur an interest charge each month where the end of month balance is not 0.
+- A gift card account:
+  - Can be refilled once each month, on the last day of the month.
+
+You can see that all three of these account types have an action that take places at the end of each month. However, each account type does different tasks. You use *polymorphism* to implement this code. You'll create a single `virtual` method in the `BankAccount` class:
+
+:::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" id="DeclareMonthEndTransactions":::
+
+The preceding code shows how you use the `virtual` keyword to declare a method in the base class that a derived class may provide a different implementation for. A `virtual` method is a method where any derived class may chose to re-implement. The derived classes use the `override` keyword to define the new implementation. Typically you refer to this as "overridng the base class implementation". You chose the `virtual` keyword and provide an empty implementation because you still want to use the basic `BankAccount` type for some bank accounts. The `BankAccount` class doesn't perform any actions at month end because no actions are needed. Often, creating a `virtual` function that has no implementation should make you consider an `abstract` method instead. If you didn't want to create instances of `BankAccount` objects, you could declare the `PerformMonthEndTransactions` method as `abstract`. You would make the `BankAccount` class `abstract` as well.
 
 
+
+. Define the virtual methods (or change some to be virtual)
+. 
 
 Outline:
 

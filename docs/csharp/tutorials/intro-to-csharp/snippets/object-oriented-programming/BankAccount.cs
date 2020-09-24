@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace classes
+namespace OOProgramming
 {
     public class BankAccount
     {
@@ -71,5 +71,11 @@ namespace classes
 
             return report.ToString();
         }
+
+        // Added for OO tutorial:
+
+        // <DeclareMonthEndTransactions>
+        public virtual void PerformMonthEndTransactions(decimal? optionalDeposit) { }
+        // </DeclareMonthEndTransactions>
     }
 }

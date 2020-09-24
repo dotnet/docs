@@ -1,16 +1,16 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
-description: Reference for the MSBuild properties and items that are understood by the .NET Core SDK.
+description: Reference for the MSBuild properties and items that are understood by the .NET SDK.
 ms.date: 02/14/2020
 ms.topic: reference
 ms.custom: updateeachrelease
 ---
-# MSBuild reference for .NET Core SDK projects
+# MSBuild reference for .NET SDK projects
 
-This page is a reference for the MSBuild properties and items that you can use to configure .NET Core projects.
+This page is a reference for the MSBuild properties and items that you can use to configure .NET projects.
 
 > [!NOTE]
-> This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
+> This page is a work in progress and does not list all of the useful MSBuild properties for the .NET SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
 
 ## Framework properties
 
@@ -117,7 +117,7 @@ The following XML excludes the `System.Security` assembly from trimming.
 
 ### UseAppHost
 
-The `UseAppHost` property was introduced in the 2.1.400 version of the .NET Core SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
+The `UseAppHost` property was introduced in the 2.1.400 version of the .NET SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
 
 In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
 
@@ -127,7 +127,7 @@ In .NET Core 3.0 and later versions, a framework-dependent executable is created
 </PropertyGroup>
 ```
 
-For more information about deployment, see [.NET Core application deployment](../deploying/index.md).
+For more information about deployment, see [.NET application deployment](../deploying/index.md).
 
 ## Compile properties
 
@@ -141,7 +141,7 @@ The `EmbeddedResourceUseDependentUponConvention` property defines whether resour
 > [!NOTE]
 > If `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for an `EmbeddedResource` item, the generated manifest file name for that resource file is based on that metadata instead.
 
-By default, in a new .NET Core project, this property is set to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file. For more information, see [How resource manifest files are named](../resources/manifest-file-names.md).
+By default, in a new .NET project, this property is set to `true`. If set to `false`, and no `LogicalName`, `ManifestResourceName`, or `DependentUpon` metadata is specified for the `EmbeddedResource` item in the project file, the resource manifest file name is based off the root namespace for the project and the relative file path to the *.resx* file. For more information, see [How resource manifest files are named](../resources/manifest-file-names.md).
 
 ```xml
 <PropertyGroup>
@@ -237,7 +237,7 @@ All code style rules that are [configured](../../fundamentals/productivity/code-
 
 ## Run-time configuration properties
 
-You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [.NET Core run-time configuration settings](../run-time-config/index.md).
+You can configure some run-time behaviors by specifying MSBuild properties in the project file of the app. For information about other ways of configuring run-time behavior, see [Run-time configuration settings](../run-time-config/index.md).
 
 - [ConcurrentGarbageCollection](#concurrentgarbagecollection)
 - [InvariantGlobalization](#invariantglobalization)

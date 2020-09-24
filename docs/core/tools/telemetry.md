@@ -8,7 +8,7 @@ ms.date: 08/27/2019
 
 The [.NET Core SDK](index.md) includes a telemetry feature that collects usage data and exception information when the .NET Core CLI crashes. The .NET Core CLI comes with the .NET Core SDK and is the set of verbs that enable you to build, test, and publish your .NET Core apps. It's important that the .NET team understands how the tools are used so they can be improved. Information on failures helps the team resolve problems and fix bugs.
 
-The collected data is anonymous and published in aggregate under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
+The collected data is published in aggregate under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Scope
 
@@ -35,7 +35,7 @@ The .NET Core SDK displays text similar to the following when you first run one 
 ```console
 Telemetry
 ---------
-The .NET Core tools collect usage data in order to help us improve your experience. The data is anonymous. It is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
+The .NET Core tools collect usage data in order to help us improve your experience. The data is collected by Microsoft and shared with the community. You can opt-out of telemetry by setting the DOTNET_CLI_TELEMETRY_OPTOUT environment variable to '1' or 'true' using your favorite shell.
 
 Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 ```
@@ -62,7 +62,7 @@ The telemetry feature collects the following data:
 | >=2.0        | Command arguments and options: several arguments and options are collected (not arbitrary strings). See [collected options](#collected-options). Hashed after 2.1.300. |
 | >=2.0         | Whether the SDK is running in a container. |
 | >=2.0         | Target frameworks (from the `TargetFramework` event), hashed starting in 2.1. |
-| >=2.0         | Hashed Media Access Control (MAC) address: a cryptographically (SHA256) anonymous and unique ID for a machine. |
+| >=2.0         | Hashed Media Access Control (MAC) address (SHA256). |
 | >=2.0         | Hashed current working directory. |
 | >=2.0         | Install success report, with hashed installer exe filename. |
 | >=2.1.300     | Kernel version. |

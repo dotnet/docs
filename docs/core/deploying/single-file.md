@@ -11,7 +11,29 @@ Bundling all application-dependent files into a single binary provides an applic
 
 Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [ReadyToRun](../tools/dotnet-publish.md) and [Trim (an experimental feature in .NET 5.0)](trim-self-contained.md) publish options.
 
-There are some caveats that you need to be aware for single-file use, first of which is the use of path information to locate a file relative to the location of your application. The <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> API will return an empty string, which is the default behavior for assemblies loaded from memory. The compiler will give a warning for this API during build time to alert the developer to the specific behavior. If the path to the application directory is needed, the <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType> API will return the directory where the AppHost (the single-file bundle itself) resides. Managed C++ applications aren't well suited for single-file deployment and we recommend that you write applications in C# to be single-file compatible.
+## API Compatibility
+
+Some APIs are not compatible with single-file deployment and applications may require modification if they use these APIs. If you use a third-party framework or package, it's possible that they may also use one of these APIs and need modification. The most common cause of problems is dependence on file paths for files or DLLs shipped with the application. The following APIs are known to behave differently in single file deployment:
+
+* <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> returns an empty string for assemblies in the bundle
+
+* <xref:System.Reflection.Assembly.CodeBase?displayProperty=nameWithType> throws an exception for assemblies in the bundle
+
+* <xref:System.Reflection.Assembly.GetFiles?displayProperty=nameWithType> throws an exception for assemblies in the bundle
+
+* <xref:System.Reflection.Module.GetFullyQualifiedName?displayProperty=nameWithType> will throw an exception or return `<Unknown>` for modules in the bundle
+
+We have some recommendations for fixing common scenarios:
+
+* To access files next to the executable, use <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType>
+
+* To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs()?displayProperty=nameWithType>
+
+* To avoid shipping loose files entirely, consider using [embedded resources](https://docs.microsoft.com/en-us/dotnet/framework/resources/creating-resource-files-for-desktop-apps)
+
+Also note that managed C++ applications aren't well suited for single-file deployment and we recommend that you write applications in C# to be single-file compatible.
+
+## Native libraries
 
 Single-file doesn't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are deployed to the same directory as the single-file app. On Windows, we prelink only the hosting code and both the runtime and application native libraries are deployed to the same directory as the single-file app. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.
 

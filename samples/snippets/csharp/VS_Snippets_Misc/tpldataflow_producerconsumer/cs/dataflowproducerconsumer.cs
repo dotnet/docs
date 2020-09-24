@@ -50,8 +50,8 @@ class DataflowProducerConsumer
 
 class Program2
 {
-   // <snippet2>
-   static async Task<int> ConsumeAsync(IReceivableSourceBlock<byte[]> source)
+    // <snippet2>
+    static async Task<int> ConsumeAsync(IReceivableSourceBlock<byte[]> source)
     {
         int bytesProcessed = 0;
         while (await source.OutputAvailableAsync())
@@ -63,5 +63,5 @@ class Program2
         }
         return bytesProcessed;
     }
-   // </snippet2>
+    // </snippet2>
 }

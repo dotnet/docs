@@ -44,7 +44,6 @@ End Class
 
 Friend Class Program2
     ' <snippet2>
-    ' Demonstrates the consumption end of the producer and consumer pattern.
     Private Shared Async Function ConsumeAsync(
         ByVal source As IReceivableSourceBlock(Of Byte())) As Task(Of Integer)
         Dim bytesProcessed As Integer = 0

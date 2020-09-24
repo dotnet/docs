@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a6dee9ab-9e4a-48f2-a169-3f79cc15821c
 ---
 # entity type
+
 The *entity type* is the fundamental building block for describing the structure of data with the Entity Data Model (EDM). In a conceptual model, an entity type represents the structure of top-level concepts, such as customers or orders. An entity type is a template for entity type instances. Each template contains the following information:  
   
 - A unique name. (Required.)  
@@ -19,6 +20,7 @@ The *entity type* is the fundamental building block for describing the structure
  Two entity type instances are considered equal only if they are of the same type and the values of their entity keys are the same.  
   
 ## Example  
+
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`:  
   
  ![Example model with three entity types](./media/entity-type/example-model-three-entity-types.gif)  

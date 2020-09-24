@@ -31,8 +31,8 @@ class DirectoryCopyExample
         FileInfo[] files = dir.GetFiles();
         foreach (FileInfo file in files)
         {
-            string temppath = Path.Combine(destDirName, file.Name);
-            file.CopyTo(temppath, false);
+            string tempPath = Path.Combine(destDirName, file.Name);
+            file.CopyTo(tempPath, false);
         }
 
         // If copying subdirectories, copy them and their contents to new location.
@@ -40,8 +40,8 @@ class DirectoryCopyExample
         {
             foreach (DirectoryInfo subdir in dirs)
             {
-                string temppath = Path.Combine(destDirName, subdir.Name);
-                DirectoryCopy(subdir.FullName, temppath, copySubDirs);
+                string tempPath = Path.Combine(destDirName, subdir.Name);
+                DirectoryCopy(subdir.FullName, tempPath, copySubDirs);
             }
         }
     }

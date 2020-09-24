@@ -49,7 +49,7 @@ The large degree of coupling in the previous image suggests the services weren't
 
 ### Materialized View pattern
 
-A popular option for removing microservice coupling is the [Materialized View pattern](https://docs.microsoft.com/azure/architecture/patterns/materialized-view). With this pattern, a microservice stores its own local, denormalized copy of data that's owned by other services. Instead of the Shopping Basket microservice querying the Product Catalog and Pricing microservices, it maintains its own local copy of that data. This pattern eliminates unnecessary coupling and improves reliability and response time. The entire operation executes inside a single process. We explore this pattern and other data concerns in Chapter 5.
+A popular option for removing microservice coupling is the [Materialized View pattern](/azure/architecture/patterns/materialized-view). With this pattern, a microservice stores its own local, denormalized copy of data that's owned by other services. Instead of the Shopping Basket microservice querying the Product Catalog and Pricing microservices, it maintains its own local copy of that data. This pattern eliminates unnecessary coupling and improves reliability and response time. The entire operation executes inside a single process. We explore this pattern and other data concerns in Chapter 5.
 
 ### Service Aggregator Pattern
 
@@ -89,7 +89,7 @@ In chapter 1, we talked about *backing services*. Backing services are ancillary
 
 Azure storage queues offer a simple queueing infrastructure that is fast, affordable, and backed by Azure storage accounts.
 
-[Azure Storage Queues](https://docs.microsoft.com/azure/storage/queues/storage-queues-introduction) feature a REST-based queuing mechanism with reliable and persistent messaging. They provide a minimal feature set, but are inexpensive and store millions of messages. Their capacity ranges up to 500 TB. A single message can be up to 64 KB in size.
+[Azure Storage Queues](/azure/storage/queues/storage-queues-introduction) feature a REST-based queuing mechanism with reliable and persistent messaging. They provide a minimal feature set, but are inexpensive and store millions of messages. Their capacity ranges up to 500 TB. A single message can be up to 64 KB in size.
 
 You can access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. Storage queues can scale out to large numbers of concurrent clients to handle traffic spikes.
 
@@ -117,13 +117,13 @@ Azure Storage queues are an economical option to implement command messaging in 
 
 For more complex messaging requirements, consider Azure Service Bus queues.
 
-Sitting atop a robust message infrastructure, [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview) supports a *brokered messaging model*. Messages are reliably stored in a broker (the queue) until received by the consumer. The queue guarantees First-In/First-Out (FIFO) message delivery, respecting the order in which messages were added to the queue.
+Sitting atop a robust message infrastructure, [Azure Service Bus](/azure/service-bus-messaging/service-bus-messaging-overview) supports a *brokered messaging model*. Messages are reliably stored in a broker (the queue) until received by the consumer. The queue guarantees First-In/First-Out (FIFO) message delivery, respecting the order in which messages were added to the queue.
 
-The size of a message can be much larger, up to 256 KB. Messages are persisted in the queue for an unlimited period of time. Service Bus supports not only HTTP-based calls, but also provides full support for the [AMQP protocol](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-amqp-overview). AMQP is an open-standard across vendors that supports a binary protocol and higher degrees of reliability.
+The size of a message can be much larger, up to 256 KB. Messages are persisted in the queue for an unlimited period of time. Service Bus supports not only HTTP-based calls, but also provides full support for the [AMQP protocol](/azure/service-bus-messaging/service-bus-amqp-overview). AMQP is an open-standard across vendors that supports a binary protocol and higher degrees of reliability.
 
-Service Bus provides a rich set of features, including [transaction support](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions) and a [duplicate detection feature](https://docs.microsoft.com/azure/service-bus-messaging/duplicate-detection). The queue guarantees "at most once delivery" per message. It automatically discards a message that has already been sent. If a producer is in doubt, it can resend the same message, and Service Bus guarantees that only one copy will be processed. Duplicate detection frees you from  having to build additional infrastructure plumbing.
+Service Bus provides a rich set of features, including [transaction support](/azure/service-bus-messaging/service-bus-transactions) and a [duplicate detection feature](/azure/service-bus-messaging/duplicate-detection). The queue guarantees "at most once delivery" per message. It automatically discards a message that has already been sent. If a producer is in doubt, it can resend the same message, and Service Bus guarantees that only one copy will be processed. Duplicate detection frees you from  having to build additional infrastructure plumbing.
 
-Two more enterprise features are partitioning and sessions. A conventional Service Bus queue is handled by a single message broker and stored in a single message store. But, [Service Bus Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning) spreads the queue across multiple message brokers and message stores. The overall throughput is no longer limited by the performance of a single message broker or messaging store. A temporary outage of a messaging store doesn't render a partitioned queue unavailable.
+Two more enterprise features are partitioning and sessions. A conventional Service Bus queue is handled by a single message broker and stored in a single message store. But, [Service Bus Partitioning](/azure/service-bus-messaging/service-bus-partitioning) spreads the queue across multiple message brokers and message stores. The overall throughput is no longer limited by the performance of a single message broker or messaging store. A temporary outage of a messaging store doesn't render a partitioned queue unavailable.
 
 [Service Bus Sessions](https://codingcanvas.com/azure-service-bus-sessions/) provide a way to group-related messages. Imagine a workflow scenario where messages must be processed together and the operation completed at the end. To take advantage, sessions must be explicitly enabled for the queue and each related messaged must contain the same session ID.
 
@@ -143,7 +143,7 @@ Message queuing is an effective way to implement communication where a producer 
 
 To address this scenario, we move to the third type of message interaction, the *event*. One microservice announces that an action had occurred. Other microservices, if interested, react to the action, or event.
 
-Eventing is a two-step process. For a given state change, a microservice publishes an event to a message broker, making it available to any other interested microservice. The interested microservice is notified by subscribing to the event in the message broker. You use the [Publish/Subscribe](https://docs.microsoft.com/azure/architecture/patterns/publisher-subscriber) pattern to implement [event-based communication](https://docs.microsoft.com/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/integration-event-based-microservice-communications).
+Eventing is a two-step process. For a given state change, a microservice publishes an event to a message broker, making it available to any other interested microservice. The interested microservice is notified by subscribing to the event in the message broker. You use the [Publish/Subscribe](/azure/architecture/patterns/publisher-subscriber) pattern to implement [event-based communication](/dotnet/standard/microservices-architecture/multi-container-microservice-net-applications/integration-event-based-microservice-communications).
 
 Figure 4-15 shows a shopping basket microservice publishing an event with two other microservices subscribing to it.
 
@@ -153,7 +153,7 @@ Figure 4-15 shows a shopping basket microservice publishing an event with two ot
 
 Note the *event bus* component that sits in the middle of the communication channel. It's a custom class that encapsulates the message broker and decouples it from the underlying application. The ordering and inventory microservices independently operate the event with no knowledge of each other, nor the shopping basket microservice. When the registered event is published to the event bus, they act upon it.
 
-With eventing, we move from queuing technology to *topics*. A [topic](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue, but supports a one-to-many messaging pattern. One microservice publishes a message. Multiple subscribing microservices can choose to receive and act upon that message. Figure 4-16 shows a topic architecture.
+With eventing, we move from queuing technology to *topics*. A [topic](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions) is similar to a queue, but supports a one-to-many messaging pattern. One microservice publishes a message. Multiple subscribing microservices can choose to receive and act upon that message. Figure 4-16 shows a topic architecture.
 
 ![Topic architecture](./media/topic-architecture.png)
 
@@ -165,17 +165,17 @@ The Azure cloud supports two different topic services: Azure Service Bus Topics 
 
 ### Azure Service Bus Topics
 
-Sitting on top of the same robust brokered message model of Azure Service Bus queues are [Azure Service Bus Topics](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). A topic can receive messages from multiple independent publishers and send messages to up to 2,000 subscribers. Subscriptions can be dynamically added or removed at runtime without stopping the system or recreating the topic.
+Sitting on top of the same robust brokered message model of Azure Service Bus queues are [Azure Service Bus Topics](/azure/service-bus-messaging/service-bus-dotnet-how-to-use-topics-subscriptions). A topic can receive messages from multiple independent publishers and send messages to up to 2,000 subscribers. Subscriptions can be dynamically added or removed at runtime without stopping the system or recreating the topic.
 
-Many advanced features from Azure Service Bus queues are also available for topics, including [Duplicate Detection](https://docs.microsoft.com/azure/service-bus-messaging/duplicate-detection) and [Transaction support](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-transactions). By default, Service Bus topics are handled by a single message broker and stored in a single message store. But, [Service Bus Partitioning](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-partitioning) scales a topic by spreading it across many message brokers and message stores.
+Many advanced features from Azure Service Bus queues are also available for topics, including [Duplicate Detection](/azure/service-bus-messaging/duplicate-detection) and [Transaction support](/azure/service-bus-messaging/service-bus-transactions). By default, Service Bus topics are handled by a single message broker and stored in a single message store. But, [Service Bus Partitioning](/azure/service-bus-messaging/service-bus-partitioning) scales a topic by spreading it across many message brokers and message stores.
 
-[Scheduled Message Delivery](https://docs.microsoft.com/azure/service-bus-messaging/message-sequencing) tags a message with a specific time for processing. The message won't appear in the topic before that time. [Message Deferral](https://docs.microsoft.com/azure/service-bus-messaging/message-deferral) enables you to defer a retrieval of a message to a later time. Both are commonly used in workflow processing scenarios where operations are processed in a particular order. You can postpone processing of received messages until prior work has been completed.
+[Scheduled Message Delivery](/azure/service-bus-messaging/message-sequencing) tags a message with a specific time for processing. The message won't appear in the topic before that time. [Message Deferral](/azure/service-bus-messaging/message-deferral) enables you to defer a retrieval of a message to a later time. Both are commonly used in workflow processing scenarios where operations are processed in a particular order. You can postpone processing of received messages until prior work has been completed.
 
 Service Bus topics are a robust and proven technology for enabling publish/subscribe communication in your cloud-native systems.
 
 ### Azure Event Grid
 
-While Azure Service Bus is a battle-tested messaging broker with a full set of enterprise features, [Azure Event Grid](https://docs.microsoft.com/azure/event-grid/overview) is the new kid on the block.
+While Azure Service Bus is a battle-tested messaging broker with a full set of enterprise features, [Azure Event Grid](/azure/event-grid/overview) is the new kid on the block.
 
 At first glance, Event Grid may look like just another topic-based messaging system. However, it's different in many ways. Focused on event-driven workloads, it enables real-time event processing, deep Azure integration, and an open-platform - all on serverless infrastructure. It's designed for contemporary cloud-native and serverless applications
 
@@ -201,9 +201,9 @@ Event Grid is a fully managed serverless cloud service. It dynamically scales ba
 
 ### Streaming messages in the Azure cloud
 
-Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events like a new document has been inserted into a Cosmos DB. But, what if your cloud-native system needs to process a *stream of related events*? [Event streams](https://docs.microsoft.com/archive/msdn-magazine/2015/february/microsoft-azure-the-rise-of-event-stream-oriented-systems) are more complex. They're typically time-ordered, interrelated, and must be processed as a group.
+Azure Service Bus and Event Grid provide great support for applications that expose single, discrete events like a new document has been inserted into a Cosmos DB. But, what if your cloud-native system needs to process a *stream of related events*? [Event streams](/archive/msdn-magazine/2015/february/microsoft-azure-the-rise-of-event-stream-oriented-systems) are more complex. They're typically time-ordered, interrelated, and must be processed as a group.
 
-[Azure Event Hub](https://azure.microsoft.com/services/event-hubs/) is a data streaming platform and event ingestion service that collects, transforms, and stores events. It's fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context. The service is highly scalable and can store and [process millions of events per second](https://docs.microsoft.com/azure/event-hubs/event-hubs-about). Shown in Figure 4-18, it's often a front door for an event pipeline, decoupling ingest stream from event consumption.
+[Azure Event Hub](https://azure.microsoft.com/services/event-hubs/) is a data streaming platform and event ingestion service that collects, transforms, and stores events. It's fine-tuned to capture streaming data, such as continuous event notifications emitted from a telemetry context. The service is highly scalable and can store and [process millions of events per second](/azure/event-hubs/event-hubs-about). Shown in Figure 4-18, it's often a front door for an event pipeline, decoupling ingest stream from event consumption.
 
 ![Azure Event Hub](./media/azure-event-hub.png)
 
@@ -211,9 +211,9 @@ Azure Service Bus and Event Grid provide great support for applications that exp
 
 Event Hub supports low latency and configurable time retention. Unlike queues and topics, Event Hubs keep event data after it's been read by a consumer. This feature enables other data analytic services, both internal and external, to replay the data for further analysis. Events stored in event hub are only deleted upon expiration of the retention period, which is one day by default, but configurable.
 
-Event Hub supports common event publishing protocols including HTTPS and AMQP. It also supports Kafka 1.0. [Existing Kafka applications can communicate with Event Hub](https://docs.microsoft.com/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview) using the Kafka protocol providing an alternative to managing large Kafka clusters. Many open-source cloud-native systems embrace Kafka.
+Event Hub supports common event publishing protocols including HTTPS and AMQP. It also supports Kafka 1.0. [Existing Kafka applications can communicate with Event Hub](/azure/event-hubs/event-hubs-for-kafka-ecosystem-overview) using the Kafka protocol providing an alternative to managing large Kafka clusters. Many open-source cloud-native systems embrace Kafka.
 
-Event Hubs implements message streaming through a [partitioned consumer model](https://docs.microsoft.com/azure/event-hubs/event-hubs-features) in which each consumer only reads a specific subset, or partition, of the message stream. This pattern enables tremendous horizontal scale for event processing and provides other stream-focused features that are unavailable in queues and topics. A partition is an ordered sequence of events that is held in an event hub. As newer events arrive, they're added to the end of this sequence. Figure 4-19 shows partitioning in an Event Hub.
+Event Hubs implements message streaming through a [partitioned consumer model](/azure/event-hubs/event-hubs-features) in which each consumer only reads a specific subset, or partition, of the message stream. This pattern enables tremendous horizontal scale for event processing and provides other stream-focused features that are unavailable in queues and topics. A partition is an ordered sequence of events that is held in an event hub. As newer events arrive, they're added to the end of this sequence. Figure 4-19 shows partitioning in an Event Hub.
 
 ![Event Hub partitioning](./media/event-hub-partitioning.png)
 

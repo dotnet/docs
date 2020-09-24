@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 78918102-2898-46e0-9ea8-6b8afe65603e
 ---
 # \<baseAddresses>
+
 Represents a collection of `baseAddress` elements, which are base addresses for a service host in a self-hosted environment. If a base address is present, endpoints can be configured with addresses relative to the base address.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,12 +23,15 @@ Represents a collection of `baseAddress` elements, which are base addresses for 
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

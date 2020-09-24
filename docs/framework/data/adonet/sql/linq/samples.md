@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 3fcc0c4a-b952-4cfe-9e09-0c0cf874ba2c
 ---
 # Samples
+
 This topic provides links to the Visual Basic and C# solutions that contain [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] sample code.  
   
 ## In This Section  
+
  Visual Basic version of the SampleQueries solution  
  [Sample Queries (Visual Basic)](../../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
   

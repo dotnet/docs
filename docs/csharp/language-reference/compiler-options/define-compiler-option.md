@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: f17d7b4d-82d0-4133-8563-68cced1cac6e
 ---
 # -define (C# Compiler Options)
+
 The **-define** option defines `name` as a symbol in all source code files your program.  
   
 ## Syntax  
@@ -23,10 +24,12 @@ The **-define** option defines `name` as a symbol in all source code files your 
 ```  
   
 ## Arguments  
+
  `name`, `name2`  
  The name of one or more symbols that you want to define.  
   
 ## Remarks  
+
  The **-define** option has the same effect as using a [#define](../preprocessor-directives/preprocessor-define.md) preprocessor directive except that the compiler option is in effect for all files in the project. A symbol remains defined in a source file until an [#undef](../preprocessor-directives/preprocessor-undef.md) directive in the source file removes the definition. When you use the -define option, an `#undef` directive in one file has no effect on other source code files in the project.  
   
  You can use symbols created by this option with [#if](../preprocessor-directives/preprocessor-if.md), [#else](../preprocessor-directives/preprocessor-else.md), [#elif](../preprocessor-directives/preprocessor-elif.md), and [#endif](../preprocessor-directives/preprocessor-endif.md) to compile source files conditionally.  

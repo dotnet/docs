@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4d332d32-3806-4451-b7af-25af269194ae
 ---
 # Sequence Operators
+
 Generally speaking, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support sequence operators that have one or more of the following qualities:  
   
 - Take a lambda with an index parameter.  
@@ -37,6 +38,7 @@ Generally speaking, [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-
 |<xref:System.Linq.Enumerable.SequenceEqual%2A?displayProperty=nameWithType>|  
   
 ## Differences from .NET  
+
  All supported sequence operators work as expected in the common language runtime (CLR) except for `Average`. `Average` returns a value of the same type as the type being averaged, whereas in the CLR `Average` always returns either a <xref:System.Double> or a <xref:System.Decimal>. If the source argument is explicitly cast to double / decimal or the selector casts to double / decimal, the resulting SQL will also have such a conversion and the result will be as expected.  
   
 ## See also

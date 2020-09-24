@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ddcbdaa1-e7fa-4d85-a379-313b49965c07
 ---
 # Code Generation in LINQ to SQL
+
 You can generate code to represent a database by using either the Object Relational Designer or the SQLMetal command-line tool. In either case, end-to-end code generation occurs in three stages:  
   
 1. The *DBML Extractor* extracts schema information from the database and reassembles the information into an XML-formatted DBML file.  
@@ -15,12 +16,15 @@ You can generate code to represent a database by using either the Object Relatio
  For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md). Developers using Visual Studio can also use the Object Relational Designer to generate code. See [LINQ to SQL Tools in Visual Studio](/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2).  
   
 ## DBML Extractor  
+
  The DBML Extractor is a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] component that takes database metadata as input and produces a DBML file as output.  
   
 ## Code Generator  
+
  The Code Generator is a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] component that translates DBML files to Visual Basic, C#, or XML mapping files.  
   
 ## XML Schema Definition File  
+
  The DBML file must be valid against the following schema definition as an XSD file.  
   
  Distinguish this schema definition file from the schema definition file that is used to validate an external mapping file. For more information, see [External Mapping](external-mapping.md)).  
@@ -237,6 +241,7 @@ elementFormDefault="qualified" >
 ```  
   
 ## Sample DBML File  
+
  The following code is an excerpt from the DBML file created from the Northwind sample database. You can generate the whole file by using SQLMetal with the **/xml** option. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../tools/sqlmetal-exe-code-generation-tool.md).  
   
 ```xml  

@@ -20,6 +20,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

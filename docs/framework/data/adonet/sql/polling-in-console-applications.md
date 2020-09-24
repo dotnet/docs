@@ -7,11 +7,13 @@ dev_langs:
 ms.assetid: 4ff084d5-5956-4db1-8e18-c5a66b000882
 ---
 # Polling in Console Applications
+
 Asynchronous operations in ADO.NET allow you to initiate time-consuming database operations on one thread while performing other tasks on another thread. In most scenarios, however, you will eventually reach a point where your application should not continue until the database operation is complete. For such cases, it is useful to poll the asynchronous operation to determine whether the operation has completed or not.  
   
  You can use the <xref:System.IAsyncResult.IsCompleted%2A> property to find out whether or not the operation has completed.  
   
 ## Example  
+
  The following console application updates data within the **AdventureWorks** sample database, doing its work asynchronously. In order to emulate a long-running process, this example inserts a WAITFOR statement in the command text. Normally, you would not try to make your commands run slower, but doing so in this case makes it easier to demonstrate asynchronous behavior.  
   
 ```vb  

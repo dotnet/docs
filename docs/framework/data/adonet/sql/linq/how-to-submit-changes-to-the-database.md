@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: c7cba174-9d40-491d-b32c-f2d73b7e9eab
 ---
 # How to: Submit Changes to the Database
+
 Regardless of how many changes you make to your objects, changes are made only to in-memory replicas. You have made no changes to the actual data in the database. Your changes are not transmitted to the server until you explicitly call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> on the <xref:System.Data.Linq.DataContext>.  
   
  When you make this call, the <xref:System.Data.Linq.DataContext> tries to translate your changes into equivalent SQL commands. You can use your own custom logic to override these actions, but the order of submission is orchestrated by a service of the <xref:System.Data.Linq.DataContext> known as the *change processor*. The sequence of events is as follows:  
@@ -22,6 +23,7 @@ Regardless of how many changes you make to your objects, changes are made only t
  At this point, any errors detected by the database cause the submission process to stop, and an exception is raised. All changes to the database are rolled back as if no submissions ever occurred. The <xref:System.Data.Linq.DataContext> still has a full recording of all changes. You can therefore try to correct the problem and call <xref:System.Data.Linq.DataContext.SubmitChanges%2A> again, as in the code example that follows.  
   
 ## Example  
+
  When the transaction around the submission is completed successfully, the <xref:System.Data.Linq.DataContext> accepts the changes to the objects by ignoring the change-tracking information.  
   
  [!code-csharp[DLinqSubmittingChanges#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqSubmittingChanges/cs/Program.cs#1)]

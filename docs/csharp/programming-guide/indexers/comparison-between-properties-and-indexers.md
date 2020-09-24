@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 3358a89f-44a0-4a4d-bf8c-07237a90af39
 ---
 # Comparison Between Properties and Indexers (C# Programming Guide)
+
 Indexers are like properties. Except for the differences shown in the following table, all the rules that are defined for property accessors apply to indexer accessors also.  
   
 |Property|Indexer|  

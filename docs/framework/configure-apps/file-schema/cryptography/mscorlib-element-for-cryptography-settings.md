@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
 ---
 # \<mscorlib> Element for Cryptography Settings
+
 Contains the [\<cryptographySettings> element](cryptographysettings-element.md).  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -23,9 +24,11 @@ Contains the [\<cryptographySettings> element](cryptographysettings-element.md).
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -41,6 +44,7 @@ Contains the [\<cryptographySettings> element](cryptographysettings-element.md).
 |`configuration`|The root element in every configuration file used by the common language runtime and .NET Framework applications.|  
   
 ## Example  
+
  The following example shows how to use the **\<mscorlib>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
 ```xml  

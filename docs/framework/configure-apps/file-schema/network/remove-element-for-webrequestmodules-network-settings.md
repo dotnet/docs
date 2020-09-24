@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: dd84d2fe-2f4f-457a-9d3c-441d0d21cc10
 ---
 # \<remove> Element for webRequestModules (Network Settings)
+
 Removes a custom Web request module from the application.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Removes a custom Web request module from the application.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Removes a custom Web request module from the application.
 |`prefix`|The URI prefix for requests handled by this Web request module.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,11 +49,13 @@ Removes a custom Web request module from the application.
 |[webRequestModules](webrequestmodules-element-network-settings.md)|Specifies modules to use to request information from network hosts.|  
   
 ## Remarks  
+
  The `remove` element removes the registered Web request module for the specified URI prefix.  
   
  The value for the `prefix` attribute should be the leading characters of a valid URI -- for example, "`http`", or "`http://www.contoso.com`".  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  

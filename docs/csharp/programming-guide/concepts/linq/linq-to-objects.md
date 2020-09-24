@@ -23,6 +23,7 @@ The term "LINQ to Objects" refers to the use of LINQ queries with any <xref:Syst
  The purpose of this section is to demonstrate the LINQ approach with some select examples. It's not intended to be exhaustive.  
   
 ## In This Section  
+
  [LINQ and Strings (C#)](./linq-and-strings.md)  
  Explains how LINQ can be used to query and transform strings and collections of strings. Also includes links to articles that demonstrate these principles.  
   

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0bb04c18-4a14-42a4-baa9-a63d556c9f49
 ---
 # Entity Framework Resources
+
 The following external resources provide information and support for creating Entity Framework applications.  
   
  [ADO.NET Team Blog](/archive/blogs/adonet/)  

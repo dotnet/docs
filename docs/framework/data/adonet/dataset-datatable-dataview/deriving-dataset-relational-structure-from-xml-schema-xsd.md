@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8f6cd04d-6197-4bc4-9096-8c51c7e4acae
 ---
 # Deriving DataSet Relational Structure from XML Schema (XSD)
+
 This section provides an overview of how the relational schema of a `DataSet` is built from an XML Schema definition language (XSD) schema document. In general, for each `complexType` child element of a schema element, a table is generated in the `DataSet`. The table structure is determined by the definition of the complex type. Tables are created in the `DataSet` for top-level elements in the schema. However, a table is only created for a top-level `complexType` element when the `complexType` element is nested inside another `complexType` element, in which case the nested `complexType` element is mapped to a `DataTable` within the `DataSet`.  
   
  For more information about the XSD, see the World Wide Web Consortium (W3C) [XML Schema Part 0: Primer Recommendation](https://www.w3.org/TR/xmlschema-0/), the [XML Schema Part 1: Structures Recommendation](https://www.w3.org/TR/xmlschema-1/), and the [XML Schema Part 2: Datatypes Recommendation](https://www.w3.org/TR/xmlschema-2/).  
@@ -77,6 +78,7 @@ OutOfStateCustomers (CustomerID, CompanyName, Phone)
 ```  
   
 ## In This Section  
+
  [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)  
  Describes the XML Schema elements used to create unique and foreign key constraints in a `DataSet`.  
   
@@ -87,6 +89,7 @@ OutOfStateCustomers (CustomerID, CompanyName, Phone)
  Describes how relations are created implicitly when using XML Schema elements to create constraints in a `DataSet`.  
   
 ## Related Sections  
+
  [Using XML in a DataSet](using-xml-in-a-dataset.md)  
  Describes how to load and persist the relational structure and data in a `DataSet` as XML data.  
   

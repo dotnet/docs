@@ -24,6 +24,7 @@ child node, repeat the process used at the root node: determine the
 type, and if the type has children, visit each of the children.
 
 ## Examining an Expression with No Children
+
 Let's start by visiting each node in a simple expression tree.
 Here's the code that creates a constant expression and then
 examines its properties:

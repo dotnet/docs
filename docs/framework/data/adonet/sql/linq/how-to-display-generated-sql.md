@@ -8,9 +8,11 @@ dev_langs:
 ms.assetid: 626492c0-5ee3-4675-88e8-8c40379510b6
 ---
 # How to: Display Generated SQL
+
 You can view the SQL code generated for queries and change processing by using the <xref:System.Data.Linq.DataContext.Log%2A> property. This approach can be useful for understanding [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] functionality and for debugging specific problems.  
   
 ## Example  
+
  The following example uses the <xref:System.Data.Linq.DataContext.Log%2A> property to display SQL code in the console window before the code is executed.  You can use this property with query, insert, update, and delete commands.  
   
  The lines from the console window are what you see when you execute the Visual Basic or C# code that follows.  

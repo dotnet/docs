@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: e63a9baf-699c-42e2-b11f-fba57bcc14df
 ---
 # WCF Data Services Resources
+
 WCF Data Services introductory topics can be found in the following locations. Many of these topics also contain links to related topics that contain more detailed information.  
   
  [Overview](wcf-data-services-overview.md)  
@@ -21,6 +22,7 @@ WCF Data Services introductory topics can be found in the following locations. M
  Includes terms used in WCF Data Services and OData documentation.  
   
 ## External Resources  
+
  The following external resources provide additional information and support for creating WCF Data Services applications that expose and consume OData feeds.  
   
  [WCF Data Services Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
 ---
 # \<peer> of \<clientCredentials> Element
+
 Specifies credentials used when authenticating peer-to-peer clients.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,9 +26,11 @@ Specifies credentials used when authenticating peer-to-peer clients.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -45,6 +48,7 @@ Specifies credentials used when authenticating peer-to-peer clients.
 |[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate a client to a service.|  
   
 ## Remarks  
+
  This configuration element specifies the credentials that a peer node uses to authenticate itself to other nodes in the mesh, as well as authentication settings that a peer node uses to authenticate other peer nodes. For more information, see [Peer Channel Message Authentication](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90)) and [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md).  
   
 ## See also

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
 ---
 # \<security> of \<ws2007HttpBinding>
+
 Represents the security settings used with the [\<ws2007HttpBinding>](ws2007httpbinding.md) element.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -33,6 +34,7 @@ Represents the security settings used with the [\<ws2007HttpBinding>](ws2007http
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -64,6 +66,7 @@ Represents the security settings used with the [\<ws2007HttpBinding>](ws2007http
 |[\<ws2007HttpBinding>](ws2007httpbinding.md)|A secure binding for HTTP transport applications.|  
   
 ## Remarks  
+
  This element is designed for interoperation with services that implement WS-* specifications. The transport security for this binding is Secure Sockets Layer (SSL) over HTTP, or HTTPS.  
   
 ## See also

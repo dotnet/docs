@@ -5,6 +5,7 @@ ms.assetid: fa1624dd-2d74-4ae3-942e-498cee261ac5
 author: "BrucePerlerMS"
 ---
 # \<system.identityModel.services>
+
 Configuration section for authentication using the WS-Federation protocol.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,9 +21,11 @@ Configuration section for authentication using the WS-Federation protocol.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None  
   
 ### Child Elements  
@@ -32,9 +35,11 @@ Configuration section for authentication using the WS-Federation protocol.
 |[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) HTTP modules.|  
   
 ### Parent Elements  
+
  None  
   
 ## Remarks  
+
  Add a `<system.identityModel.services>` section to your application’s configuration file to provide settings for the SAM and WSFAM.  
   
 > [!IMPORTANT]
@@ -43,6 +48,7 @@ Configuration section for authentication using the WS-Federation protocol.
  The `<system.identityModel.services>` section is represented by the <xref:System.IdentityModel.Services.Configuration.SystemIdentityModelServicesSection> class. The collection of child `<federationConfiguration>` elements configured in the section is represented by the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection> class.  
   
 ## Example  
+
  The following XML shows how to add a `<system.identityModel.services>` section to a configuration file. You must first add section declarations for both the `<system.identityModel.services>` section and the `<system.identityModel>` sections. (When you add a `<system.identityModel.services>` section, you should also add a declaration for the `<system.identityModel>` section to ensure that a default `<identityConfiguration>` section can be created by the runtime if necessary.) After the section declarations have been added, you can configure federated authentication settings under the `<system.identityModel.services>` element.  
   
 ```xml  

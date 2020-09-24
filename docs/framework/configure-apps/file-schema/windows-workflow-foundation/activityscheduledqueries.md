@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: ca6e82f1-54f2-48d6-899c-9873065b5547
 ---
 # \<activityScheduledQueries>
+
 Represents a collection of queries that are used to track an activity scheduled for execution by a parent activity. The query is necessary for a tracking participant to subscribe to activity scheduled records.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
@@ -32,9 +33,11 @@ Represents a collection of queries that are used to track an activity scheduled 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  

@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
 ---
 # \<add> Element for connectionManagement (Network Settings)
+
 Adds an IP address or DNS name to the connection management list.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -29,6 +30,7 @@ Adds an IP address or DNS name to the connection management list.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Adds an IP address or DNS name to the connection management list.
 |`maxconnection`|The maximum number of connections allowed to a server. If not supplied, the default is 2.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -48,14 +51,17 @@ Adds an IP address or DNS name to the connection management list.
 |[connectionManagement](connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
   
 ## Remarks  
+
  The value of the `address` attribute should be either an asterisk to indicate all connections, or a string of the form `<schema>://<idn_hostname>[:<port>]`.  
   
  If the URI passed to any HTTP APIs contains Unicode, the name will be converted internally using <xref:System.Uri.DnsSafeHost%2A> which might return a punicode string (behavior dependent on the current IDN configuration).  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example configures an application to use four connections to the server `www.contoso.com` and two connections to all other servers.  
   
 ```xml  

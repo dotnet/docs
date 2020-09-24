@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
 ---
 # \<remove> Element for connectionManagement (Network Settings)
+
 Removes an IP address or DNS name from the connection management list.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Removes an IP address or DNS name from the connection management list.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Removes an IP address or DNS name from the connection management list.
 |`address`|An IP address or DNS name.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,14 +49,17 @@ Removes an IP address or DNS name from the connection management list.
 |[connectionManagement](connectionmanagement-element-network-settings.md)|Specifies the maximum number of connections to a network host.|  
   
 ## Remarks  
+
  The `remove` element removes the connection management list entry for the specified server.  
   
  The value of the `address` attribute should be a valid IP address or host name.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example removes any connection management list entries for the server `www.adventure-works.com` and then configures an application to use four connections to the server `www.contoso.com` and two connections to all other servers.  
   
 ```xml  

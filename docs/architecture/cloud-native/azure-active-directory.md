@@ -14,7 +14,7 @@ Azure AD supports company branded sign-in screens, multi-factory authentication,
 
 ## References
 
-- [Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/)
+- [Microsoft identity platform](/azure/active-directory/develop/)
 
 >[!div class="step-by-step"]
 >[Previous](authentication-authorization.md)

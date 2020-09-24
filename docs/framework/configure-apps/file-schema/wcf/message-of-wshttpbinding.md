@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
 ---
 # \<message> of \<wsHttpBinding>
+
 Defines settings for message-level security of the [\<wsHttpBinding>](wshttpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,9 +25,11 @@ Defines settings for message-level security of the [\<wsHttpBinding>](wshttpbind
 ```  
   
 ## Type  
+
  <xref:System.ServiceModel.NonDualMessageSecurityOverHttp>  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -70,6 +73,7 @@ Defines settings for message-level security of the [\<wsHttpBinding>](wshttpbind
 |Windows|Allows the SOAP exchanges to be under the authenticated context of a Windows credential. If the `negotiateServiceCredential` attribute is set to `true`, this either performs an SSPI Negotiation or Kerberos (an interoperable standard).|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  

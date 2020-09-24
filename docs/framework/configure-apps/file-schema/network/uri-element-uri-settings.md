@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c22bab8b-477c-4ae4-8498-65ad409e0847
 ---
 # \<uri> Element (Uri Settings)
+
 Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -17,9 +18,11 @@ Contains settings that specify how the .NET Framework handles web addresses expr
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -37,11 +40,13 @@ Contains settings that specify how the .NET Framework handles web addresses expr
 |[configuration](../configuration-element.md)|Contains settings for all namespaces.|  
   
 ## Remarks  
+
  The `uri` element contains settings for members of the <xref:System.Uri> class used by classes in the <xref:System.Net> namespace. The settings configure support for IRI and IDN.  
   
 ## Example  
   
 ### Description  
+
  The following example shows a configuration used by the <xref:System.Uri> class to support IRI parsing and IDN names. The example also clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.  
   
 ### Code  

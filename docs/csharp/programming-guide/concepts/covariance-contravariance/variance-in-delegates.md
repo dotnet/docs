@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 19de89d2-8224-4406-8964-2965b732b890
 ---
 # Variance in Delegates (C#)
+
 .NET Framework 3.5 introduced variance support for matching method signatures with delegate types in all delegates in C#. This means that you can assign to delegates not only methods that have matching signatures, but also methods that return more derived types (covariance) or that accept parameters that have less derived types (contravariance) than that specified by the delegate type. This includes both generic and non-generic delegates.  
   
  For example, consider the following code, which has two classes and two delegates: generic and non-generic.  
@@ -60,6 +61,7 @@ SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;
  For more examples, see [Using Variance in Delegates (C#)](./using-variance-in-delegates.md) and [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md).  
   
 ## Variance in Generic Type Parameters  
+
  In .NET Framework 4 or later you can enable implicit conversion between delegates, so that generic delegates that have different types specified by generic type parameters can be assigned to each other, if the types are inherited from each other as required by variance.  
   
  To enable implicit conversion, you must explicitly declare generic parameters in a delegate as covariant or contravariant by using the `in` or `out` keyword.  
@@ -121,6 +123,7 @@ public static void Test()
  For more information and examples, see [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md).  
   
 ### Declaring Variant Type Parameters in Generic Delegates  
+
  If a generic delegate has covariant or contravariant generic type parameters, it can be referred to as a *variant generic delegate*.  
   
  You can declare a generic type parameter covariant in a generic delegate by using the `out` keyword. The covariant type can be used only as a method return type and not as a type of method arguments. The following code example shows how to declare a covariant generic delegate.  
@@ -145,6 +148,7 @@ public delegate R DVariant<in A, out R>(A a);
 ```  
   
 ### Instantiating and Invoking Variant Generic Delegates  
+
  You can instantiate and invoke variant delegates just as you instantiate and invoke invariant delegates. In the following example, the delegate is instantiated by a lambda expression.  
   
 ```csharp  
@@ -166,6 +170,7 @@ Action<string> actStr = x => Console.WriteLine("string: {0}", x);
 ```  
   
 ## Variance in Generic Type Parameters for Value and Reference Types  
+
  Variance for generic type parameters is supported for reference types only. For example, `DVariant<int>` can't be implicitly converted to `DVariant<Object>` or `DVariant<long>`, because integer is a value type.  
   
  The following example demonstrates that variance in generic type parameters is not supported for value types.  

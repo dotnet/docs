@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: 576079e4-debe-4ab5-9204-fcbe2ca7a5e2
 ---
 # Enabling Multiple Active Result Sets
+
 Multiple Active Result Sets (MARS) is a feature that works with SQL Server to allow the execution of multiple batches on a single connection. When MARS is enabled for use with SQL Server, each command object used adds a session to the connection.  
   
 > [!NOTE]
@@ -47,9 +48,11 @@ string connectionString = "Data Source=MSSQL1;" +
 ```  
   
 ## Special Considerations When Using MARS  
+
  In general, existing applications should not need modification to use a MARS-enabled connection. However, if you wish to use MARS features in your applications, you should understand the following special considerations.  
   
 ### Statement Interleaving  
+
  MARS operations execute synchronously on the server. Statement interleaving of SELECT and BULK INSERT statements is allowed. However, data manipulation language (DML) and data definition language (DDL) statements execute atomically. Any statements attempting to execute while an atomic batch is executing are blocked. Parallel execution at the server is not a MARS feature.  
   
  If two batches are submitted under a MARS connection, one of them containing a SELECT statement, the other containing a DML statement, the DML can begin execution within execution of the SELECT statement. However, the DML statement must run to completion before the SELECT statement can make progress. If both statements are running under the same transaction, any changes made by a DML statement after the SELECT statement has started execution are not visible to the read operation.  
@@ -57,15 +60,19 @@ string connectionString = "Data Source=MSSQL1;" +
  A WAITFOR statement inside a SELECT statement does not yield the transaction while it is waiting, that is, until the first row is produced. This implies that no other batches can execute within the same connection while a WAITFOR statement is waiting.  
   
 ### MARS Session Cache  
+
  When a connection is opened with MARS enabled, a logical session is created, which adds additional overhead. To minimize overhead and enhance performance, **SqlClient** caches the MARS session within a connection. The cache contains at most 10 MARS sessions. This value is not user adjustable. If the session limit is reached, a new session is created—an error is not generated. The cache and sessions contained in it are per-connection; they are not shared across connections. When a session is released, it is returned to the pool unless the pool's upper limit has been reached. If the cache pool is full, the session is closed. MARS sessions do not expire. They are only cleaned up when the connection object is disposed. The MARS session cache is not preloaded. It is loaded as the application requires more sessions.  
   
 ### Thread Safety  
+
  MARS operations are not thread-safe.  
   
 ### Connection Pooling  
+
  MARS-enabled connections are pooled like any other connection. If an application opens two connections, one with MARS enabled and one with MARS disabled, the two connections are in separate pools. For more information, see [SQL Server Connection Pooling (ADO.NET)](../sql-server-connection-pooling.md).  
   
 ### SQL Server Batch Execution Environment  
+
  When a connection is opened, a default environment is defined. This environment is then copied into a logical MARS session.  
   
  The batch execution environment includes the following components:  
@@ -83,6 +90,7 @@ string connectionString = "Data Source=MSSQL1;" +
  With MARS, a default execution environment is associated to a connection. Every new batch that starts executing under a given connection receives a copy of the default environment. Whenever code is executed under a given batch, all changes made to the environment are scoped to the specific batch. Once execution finishes, the execution settings are copied into the default environment. In the case of a single batch issuing several commands to be executed sequentially under the same transaction, semantics are the same as those exposed by connections involving earlier clients or servers.  
   
 ### Parallel Execution  
+
  MARS is not designed to remove all requirements for multiple connections in an application. If an application needs true parallel execution of commands against a server, multiple connections should be used.  
   
  For example, consider the following scenario. Two command objects are created, one for processing a result set and another for updating data; they share a common connection via MARS. In this scenario, the `Transaction`.`Commit` fails on the update until all the results have been read on the first command object, yielding the following exception:  
@@ -104,6 +112,7 @@ string connectionString = "Data Source=MSSQL1;" +
 3. Don't use MARS; instead use a separate connection for each command object as you would have before MARS.  
   
 ### Detecting MARS Support  
+
  An application can check for MARS support by reading the `SqlConnection.ServerVersion` value. The major number should be 9 for SQL Server 2005 and 10 for SQL Server 2008.  
   
 ## See also

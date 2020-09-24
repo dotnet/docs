@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9e7d8837-28c5-429d-a824-7bafb59724cf
 ---
 # Entity SQL Language
+
 Entity SQL is a storage-independent query language that is similar to SQL. Entity SQL allows you to query entity data, either as objects or in a tabular form. You should consider using Entity SQL in the following cases:  
   
 - When a query must be dynamically constructed at runtime. In this case, you should also consider using the query builder methods of <xref:System.Data.Objects.ObjectQuery%601> instead of constructing an Entity SQL query string at runtime.  
@@ -15,6 +16,7 @@ Entity SQL is a storage-independent query language that is similar to SQL. Entit
 - If you are already an expert in SQL-based query languages, Entity SQL may seem the most natural to you.  
   
 ## Using Entity SQL with the EntityClient provider  
+
  If you want to use Entity SQL with the EntityClient provider, see the following topics for more information:  
   
  [EntityClient Provider for the Entity Framework](../entityclient-provider-for-the-entity-framework.md)  
@@ -40,6 +42,7 @@ Entity SQL is a storage-independent query language that is similar to SQL. Entit
  [How to: Navigate Relationships with the Navigate Operator](../how-to-navigate-relationships-with-the-navigate-operator.md)  
   
 ## Using Entity SQL with object queries  
+
  If you want to use Entity SQL with object queries, see the following topics for more information:  
   
  [How to: Execute a Query that Returns Entity Type Objects](/previous-versions/dotnet/netframework-4.0/bb738694(v=vs.100))  
@@ -69,6 +72,7 @@ Entity SQL is a storage-independent query language that is similar to SQL. Entit
  [How to: Page Through Query Results](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))  
   
 ## In This Section  
+
  [Entity SQL Overview](entity-sql-overview.md)  
   
  [Entity SQL Reference](entity-sql-reference.md)  

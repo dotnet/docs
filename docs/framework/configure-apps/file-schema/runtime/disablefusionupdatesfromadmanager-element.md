@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
 ---
 # \<disableFusionUpdatesFromADManager> Element
+
 Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
 |1|Disable the ability to override Fusion settings. This reverts to the behavior of earlier versions of the .NET Framework.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,6 +49,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  Starting with the .NET Framework 4, the default behavior is to allow the <xref:System.AppDomainManager> object to override configuration settings by using the <xref:System.AppDomainSetup.ConfigurationFile%2A> property or the <xref:System.AppDomainSetup.SetConfigurationBytes%2A> method of the <xref:System.AppDomainSetup> object that is passed to your implementation of the <xref:System.AppDomainManager.InitializeNewDomain%2A?displayProperty=nameWithType> method, in your subclass of <xref:System.AppDomainManager>. For the default application domain, the settings you change override the settings that were specified by the application configuration file. For other application domains, they override the configuration settings that were passed to the <xref:System.AppDomainManager.CreateDomain%2A?displayProperty=nameWithType> or <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> method.  
   
  You can either pass new configuration information, or pass null (`Nothing` in Visual Basic) to eliminate configuration information that was passed in.  
@@ -57,6 +61,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
  As an alternative to using the `<disableFusionUpdatesFromADManager>` element, you can disable the default behavior by creating a registry setting or by setting an environment variable. In the registry, create a DWORD value named `COMPLUS_disableFusionUpdatesFromADManager` under `HKCU\Software\Microsoft\.NETFramework` or `HKLM\Software\Microsoft\.NETFramework`, and set the value to 1. At the command line, set the environment variable `COMPLUS_disableFusionUpdatesFromADManager` to 1.  
   
 ## Example  
+
  The following example shows how to disable the ability to override Fusion settings by using the `<disableFusionUpdatesFromADManager>` element.  
   
 ```xml  

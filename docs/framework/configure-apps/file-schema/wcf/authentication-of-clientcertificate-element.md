@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
 ---
 # \<authentication> of \<clientCertificate> Element
+
 Specifies authentication behaviors for client certificates used by a service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,6 +28,7 @@ Specifies authentication behaviors for client certificates used by a service.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -65,6 +67,7 @@ Specifies authentication behaviors for client certificates used by a service.
 |Enumeration|One of the following values: `LocalMachine` or `CurrentUser`. The default is `CurrentUser`. If the client application is running under a system account then the certificate is typically under `LocalMachine`. If the client application is running under a user account then the certificate is typically in `CurrentUser`.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -74,11 +77,13 @@ Specifies authentication behaviors for client certificates used by a service.
 |[\<clientCertificate>](clientcertificate-of-servicecredentials.md)|Defines an X.509 certificate used to authenticate a client to a service.|  
   
 ## Remarks  
+
  The `<authentication>` element corresponds to the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> class. It enables you to customize how clients are authenticated. You can set the `certificateValidationMode` attribute to `None`, `ChainTrust`, `PeerOrChainTrust`, `PeerTrust`, or `Custom`. By default, the level is set to `ChainTrust`, which specifies that each certificate must be found in a hierarchy of certificates ending in a *root authority* at the top of the chain. This is the most secure mode. You can also set the value to `PeerOrChainTrust`, which specifies that self-issued certificates (peer trust) are accepted as well as certificates that are in a trusted chain. This value is used when developing and debugging clients and services because self-issued certificates need not be purchased from a trusted authority. When deploying a client, use the `ChainTrust` value instead.  
   
  You can also set the value to `Custom`. When set to the `Custom` value, you must also set the `customCertificateValidatorType` attribute to an assembly and type used to validate the certificate. To create your own custom validator, you must inherit from the abstract <xref:System.IdentityModel.Selectors.X509CertificateValidator> class. For more information, see [How to: Create a Service that Employs a Custom Certificate Validator](../../../wcf/extending/how-to-create-a-service-that-employs-a-custom-certificate-validator.md).  
   
 ## Example  
+
  The following code specifies an X.509 certificate and a custom validation type in the `<authentication>` element.  
   
 ```xml  

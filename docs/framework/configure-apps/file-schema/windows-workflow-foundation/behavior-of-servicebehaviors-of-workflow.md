@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: 6a4b718a-1b40-4957-935a-f6122819ab3c
 ---
 # \<behavior> of \<serviceBehaviors> of workflow
+
 The **behavior** element contains a collection of settings for the behavior of a service. Each behavior is indexed by its **name**. Services can link to each behavior through this name using the **behaviorConfiguration** attribute of the [\<endpoint>](../wcf/endpoint-element.md) element. This allows endpoints to share common behavior configurations without redefining the settings.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -46,6 +47,7 @@ The **behavior** element contains a collection of settings for the behavior of a
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

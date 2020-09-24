@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 128aaabe-3f1a-4c3b-b59f-898d0f02910f
 ---
 # \<add> of \<knownCertificates>
+
 Adds an X.509 certificate to the collection of known certificates.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ Adds an X.509 certificate to the collection of known certificates.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -64,6 +66,7 @@ Adds an X.509 certificate to the collection of known certificates.
 |Enumeration|Values include: AddressBook, AuthRoot, CertificateAuthority, Disallowed, My, Root, TrustedPeople, and TrustedPublisher.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -73,6 +76,7 @@ Adds an X.509 certificate to the collection of known certificates.
 |[\<knownCertificates>](knowncertificates.md)|Represents a collection of X.509 certificates that are provided by a Security Token Service (STS) for validation of security tokens.|  
   
 ## Remarks  
+
  The issued token scenario has three stages. In the first stage, a client trying to access a service is referred to a *secure token service*. The secure token service then authenticates the client and subsequently issues the client a token, typically a Security Assertions Markup Language (SAML) token. The client then returns to the service with the token. The service examines the token for data that allows the service to authenticate the token and therefore the client. To authenticate the token, the certificate the secure token service uses must be known to the service.  
   
  The [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates>](knowncertificates.md). Insert an [\<add> element \<knownCertificates> Element](add-of-knowncertificates.md) for each certificate, as shown in the following example.  
@@ -93,6 +97,7 @@ Adds an X.509 certificate to the collection of known certificates.
  To review conditions required for a client to be authenticated by a federated service, as well as more information on using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md). For more information about federated scenarios, see [Federation and Issued Tokens](../../../wcf/feature-details/federation-and-issued-tokens.md).  
   
 ## Example  
+
  The following example adds certificate to the repository for any STS certificates.  
   
 ```xml  

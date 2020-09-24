@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
 ---
 # \<cryptoNameMapping> Element
+
 Contains mappings of classes to friendly names.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -25,9 +26,11 @@ Contains mappings of classes to friendly names.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -47,6 +50,7 @@ Contains mappings of classes to friendly names.
 |`mscorlib`|Contains the \<cryptographySettings> element.|  
   
 ## Example  
+
  The following example shows how to use the **\<cryptoNameMapping>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
 ```xml  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 341bbf84-4734-4d44-8723-ccedee954e21
 ---
 # Oracle BFILEs
+
 The .NET Framework Data Provider for Oracle includes the <xref:System.Data.OracleClient.OracleBFile> class, which is used to work with the Oracle <xref:System.Data.OracleClient.OracleType.BFile> data type.  
   
  The Oracle **BFILE** data type is an Oracle **LOB** data type that contains a reference to binary data with a maximum size of 4 gigabytes. An Oracle **BFILE** differs from other Oracle **LOB** data types in that its data is stored in a physical file in the operating system instead of on the server. Note that the **BFILE** data type provides read-only access to data.  
@@ -25,6 +26,7 @@ The .NET Framework Data Provider for Oracle includes the <xref:System.Data.Oracl
 2. The file name of the underlying physical file, which is located in the directory associated with the DIRECTORY object.  
   
 ## Example  
+
  The following C# example demonstrates how you can create a **BFILE** in an Oracle table and then retrieve it in the form of an **OracleBFile** object. The example demonstrates using the <xref:System.Data.OracleClient.OracleDataReader> object and the **OracleBFile** **Seek** and **Read** methods. Note that in order to use this sample, you must first create a directory named "c:\\\bfiles" and file named "MyFile.jpg" on the Oracle server.  
   
 ```csharp  

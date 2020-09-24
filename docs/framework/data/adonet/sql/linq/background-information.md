@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 724888f2-d3f1-4bea-b9a1-a0adb8a00f3b
 ---
 # Background Information
+
 The topics in this section pertain to concepts and procedures that extend beyond the basics about using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
  Follow these steps to find additional examples of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] code and applications:  
@@ -15,6 +16,7 @@ The topics in this section pertain to concepts and procedures that extend beyond
 - Study the white paper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   
 ## In This Section  
+
  [ADO.NET and LINQ to SQL](ado-net-and-linq-to-sql.md)  
  Describes the relationship of ADO.NET and [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
@@ -76,5 +78,6 @@ The topics in this section pertain to concepts and procedures that extend beyond
  Describes how to map user-defined functions at design time and how to call them from your application.  
   
 ## Related Sections  
+
  [Programming Guide](programming-guide.md)  
  Includes links to sections that explain various aspects of the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].

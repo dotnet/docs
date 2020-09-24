@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
 ---
 # \<webHttpBinding>
+
 Defines a binding element that is used to configure endpoints for Windows Communication Foundation (WCF) Web services that respond to HTTP requests instead of SOAP messages.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -45,6 +46,7 @@ Defines a binding element that is used to configure endpoints for Windows Commun
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -81,6 +83,7 @@ Defines a binding element that is used to configure endpoints for Windows Commun
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The WCF Web Programming Model allows developers to expose WCF Web services through HTTP requests that use "plain old XML" (POX) style messaging instead of SOAP-based messaging. For clients to communicate with a service using HTTP requests, an endpoint of the service must be configured with the [\<webHttpBinding>](webhttpbinding.md) that has the \<WebHttpBehavior> attached to it.  
   
  Support in WCF for syndication and ASP.AJAX integration are both built on top of the Web Programming Model. For more information on the model, see [WCF Web HTTP Programming Model](../../../wcf/feature-details/wcf-web-http-programming-model.md).  

@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 5e2cbebd-5df3-47c7-b0e2-49a17ab22bfb
 ---
 # String Canonical Functions
+
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes string canonical functions.  
   
 ## Remarks  
+
  The following table shows the string [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions.  
   
 |Function|Description|  

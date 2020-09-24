@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
 ---
 # External Mapping
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] supports *external mapping*, a process by which you use a separate XML file to specify mapping between the data model of the database and your object model. Advantages of using an external mapping file include the following:  
   
 - You can keep your mapping code out of your application code. This approach reduces clutter in your application code.  
@@ -11,6 +12,7 @@ ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
 - You can treat an external mapping file something like a configuration file. For example, you can update how your application behaves after shipping the binaries by just swapping out the external mapping file.  
   
 ## Requirements  
+
  The mapping file must be an XML file, and the file must validate against a [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] schema definition (.xsd) file.  
   
  The following rules apply:  
@@ -24,6 +26,7 @@ ms.assetid: 076606b8-d889-4ba0-b5da-ae577b146f23
 - [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] does not support the hybrid use of the two mapping approaches (attribute-based and external).  
   
 ## XML Schema Definition File  
+
  External mapping in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] must be valid against the following XML schema definition.  
   
  Distinguish this schema definition file from the schema definition file that is used to validate a DBML file. For more information, see [Code Generation in LINQ to SQL](code-generation-in-linq-to-sql.md)).  

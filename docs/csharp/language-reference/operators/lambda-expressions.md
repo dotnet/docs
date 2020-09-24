@@ -70,7 +70,7 @@ You cannot use statement lambdas to create expression trees.
 
 You enclose input parameters of a lambda expression in parentheses. Specify zero input parameters with empty parentheses:  
 
-[!code-csharp[zero parameters](snippets/lambda-expressions/GeneralExamples.cs#ZeroParameters)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="ZeroParameters":::
 
 If a lambda expression has only one input parameter, parentheses are optional:
 

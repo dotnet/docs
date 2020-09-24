@@ -9,7 +9,7 @@ ms.topic: guide
 
 # Dependency injection guidelines
 
-In this article, you'll learn general guidelines and best practices for implementing dependency injection in your .NET applications. From design principles to proper disposal patterns, thread safety, and service lifetime management - these recommendations are tried and true.
+This article provides general guidelines and best practices for implementing dependency injection in .NET applications.
 
 ## Design services for dependency injection
 
@@ -19,7 +19,7 @@ When designing services for dependency injection:
 - Avoid direct instantiation of dependent classes within services. Direct instantiation couples the code to a particular implementation.
 - Make services small, well-factored, and easily tested.
 
-If a class has many injected dependencies, it might be a sign that the class has too many responsibilities and violates the [Single Responsibility Principle (SRP)](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#single-responsibility). Attempt to refactor the class by moving some of its responsibilities into new classes. Keep in mind that Razor Pages page model classes and MVC controller classes should focus on UI concerns.
+If a class has many injected dependencies, it might be a sign that the class has too many responsibilities and violates the [Single Responsibility Principle (SRP)](/dotnet/standard/modern-web-apps-azure-architecture/architectural-principles#single-responsibility). Attempt to refactor the class by moving some of its responsibilities into new classes.
 
 ### Disposal of services
 

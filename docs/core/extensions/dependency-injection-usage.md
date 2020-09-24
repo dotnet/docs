@@ -9,7 +9,7 @@ ms.topic: tutorial
 
 # Tutorial: Use dependency injection in .NET
 
-To use [dependency injection (DI) in .NET](dependency-injection.md), you first must consider the workload and type of application you're developing. With *Microsoft Extensions*, DI is a first-class citizen where services are added and configured in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. Later, an <xref:Microsoft.Extensions.Hosting.IHost> is created that exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services. From this, you as a developer have an extensive application programming interface (API) for all types of .NET workloads that can leverage DI.
+This tutorial shows how to use [dependency injection (DI) in .NET](dependency-injection.md). With *Microsoft Extensions*, DI is a first-class citizen where services are added and configured in an <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. The <xref:Microsoft.Extensions.Hosting.IHost> interface exposes the <xref:System.IServiceProvider> instance, which acts as a container of all the registered services.
 
 In this tutorial, you learn how to:
 
@@ -22,16 +22,13 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-This tutorial uses:
-
 - [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core) or a later version.
-- An Integrated Developer Environment (IDE), [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com) are all valid choices
-- Ability to create new .NET applications
-- Familiarity with NuGet packages
+- An Integrated Development Environment (IDE), [Visual Studio, Visual Studio Code, or Visual Studio for Mac](https://visualstudio.microsoft.com) are all valid choices.
+- Familiarity with creating new .NET applications and installing NuGet packages.
 
 ## Create a new console application
 
-Using either the [dotnet new](../tools/dotnet-new.md) command or the available IDE new project wizard, create a new .NET console application named **ConsoleDI.Example**. Add the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to the project.
+Using either the [dotnet new](../tools/dotnet-new.md) command or an IDE new project wizard, create a new .NET console application named **ConsoleDI.Example**. Add the [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) NuGet package to the project.
 
 ## Add interfaces
 
@@ -83,16 +80,16 @@ Finally, update the *Program.cs* file to match following:
 
 :::code language="csharp" source="snippets/configuration/console-di/Program.cs" range="1-18,35-60" highlight="22-26":::
 
-The application starts by:
+The application:
 
-- Creating an <xref:Microsoft.Extensions.Hosting.IHostBuilder> instance with the [default binder settings](generic-host.md#default-builder-settings).
-- Services are configured and added with their corresponding service lifetime.
-- The host builder instance calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build>, and assigns an instance of <xref:Microsoft.Extensions.Hosting.IHost>.
-- The `host` instance calls `ExemplifyScoping` passing in the <xref:Microsoft.Extensions.Hosting.IHost.Services?displayProperty=nameWithType>.
+- Creates an <xref:Microsoft.Extensions.Hosting.IHostBuilder> instance with the [default binder settings](generic-host.md#default-builder-settings).
+- Configures services and adds them with their corresponding service lifetime.
+- Calls <xref:Microsoft.Extensions.Hosting.IHostBuilder.Build> and assigns an instance of <xref:Microsoft.Extensions.Hosting.IHost>.
+- Calls `ExemplifyScoping`, passing in the <xref:Microsoft.Extensions.Hosting.IHost.Services?displayProperty=nameWithType>.
 
 ## Conclusion
 
-When running the application, you could expect to see similar output to the following:
+The application produces output similar to the following example:
 
 ```console
 Scope 1-Call 1 .GetRequiredService<OperationLogger>(): ITransientOperation [ 80f4...Always different        ]

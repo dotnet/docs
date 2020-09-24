@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a68b44d7-7799-43a3-9e63-f07c782810a6
 ---
 # \<netMsmqBinding>
+
 Defines a queued binding suitable for cross-machine communication.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -55,6 +56,7 @@ Defines a queued binding suitable for cross-machine communication.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -96,6 +98,7 @@ Defines a queued binding suitable for cross-machine communication.
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The `netMsmqBinding` binding provides support for queuing by leveraging Microsoft Message Queuing (MSMQ) as a transport and enables support for loosely coupled applications, failure isolation, load leveling and disconnected operations. For a discussion of these features, see [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md).  
   
 ## Example  

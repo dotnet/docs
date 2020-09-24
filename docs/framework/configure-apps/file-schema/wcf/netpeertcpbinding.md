@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
 ---
 # \<netPeerTcpBinding>
+
 Defines a binding for peer channel specific TCP messaging.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,6 +35,7 @@ Defines a binding for peer channel specific TCP messaging.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -65,9 +67,11 @@ Defines a binding for peer channel specific TCP messaging.
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  This binding provides support for the creation of peer-to-peer or multiparty applications using peer transport over TCP. Each peer node can host multiple peer channels defined with this binding type.  
   
 ## Example  
+
  The following example demonstrates using the NetPeerTcpBinding binding, which provides multiparty communication using a peer channel. For a detailed scenario of using this binding, see [Net Peer TCP](/previous-versions/dotnet/netframework-3.5/ms751426(v=vs.90)).  
   
 ```xml  

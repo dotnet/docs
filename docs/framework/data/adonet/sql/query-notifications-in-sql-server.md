@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0f0ba1a1-3180-4af8-87f7-c795dc8f8f55
 ---
 # Query Notifications in SQL Server
+
 Built upon the Service Broker infrastructure, query notifications allow applications to be notified when data has changed. This feature is particularly useful for applications that provide a cache of information from a database, such as a Web application, and need to be notified when the source data is changed.  
   
  There are three ways you can implement query notifications using ADO.NET:  
@@ -34,6 +35,7 @@ Built upon the Service Broker infrastructure, query notifications allow applicat
 - [Developer's Guide (Service Broker)](/previous-versions/sql/sql-server-2008-r2/bb522908(v=sql.105))  
   
 ## In This Section  
+
  [Enabling Query Notifications](enabling-query-notifications.md)  
  Discusses how to use query notifications, including the requirements for enabling and using them.  
   
@@ -47,6 +49,7 @@ Built upon the Service Broker infrastructure, query notifications allow applicat
  Demonstrates configuring a <xref:System.Data.SqlClient.SqlCommand> object to work with a query notification.  
   
 ## Reference  
+
  <xref:System.Data.Sql.SqlNotificationRequest>  
  Describes the <xref:System.Data.Sql.SqlNotificationRequest> class and all of its members.  
   

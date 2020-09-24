@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: d2cda293-1e2f-4878-af0e-5aaf0d092120
 ---
 # How to: Specify Which Members are Tested for Concurrency Conflicts
+
 Apply one of three enums to the [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> property on a <xref:System.Data.Linq.Mapping.ColumnAttribute> attribute to specify which members are to be included in update checks for the detection of optimistic concurrency conflicts.  
   
  The <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> property (mapped at design time) is used together with run-time concurrency features in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)]. For more information, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).  
@@ -35,6 +36,7 @@ Apply one of three enums to the [!INCLUDE[vbtecdlinq](../../../../../../includes
 2. Set the <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A> property value to `WhenChanged`.  
   
 ## Example  
+
  The following example specifies that `HomePage` objects should never be tested during update checks. For more information, see <xref:System.Data.Linq.Mapping.ColumnAttribute.UpdateCheck%2A>.  
   
  [!code-csharp[System.Data.Linq.Mapping.UpdateCheck#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.mapping.updatecheck/cs/northwind.cs#1)]

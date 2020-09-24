@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 76796bb2-9c0b-4526-8135-8bf18b16d8d9
 ---
 # \<clear> Element for \<listeners> for \<source>
+
 Clears the `Listeners` collection for a trace source.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -25,12 +26,15 @@ Clears the `Listeners` collection for a trace source.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -44,12 +48,15 @@ Clears the `Listeners` collection for a trace source.
 |`listeners`|Specifies listeners that collect, store, and route messages.|  
   
 ## Remarks  
+
  The `<clear>` element removes all listeners from the `Listeners` collection for a trace source, including the <xref:System.Diagnostics.DefaultTraceListener>. You can use the `<clear>` element before using the `<add>` element to be certain there are no other active listeners in the collection.  
   
 ## Configuration File  
+
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
   
 ## Example  
+
  The following example shows how to use the `<clear>` element before using the `<add>` elements to add the listeners `console` and `textListener` to the `Listeners` collection for the trace source `TraceSourceApp`.  
   
 ```xml  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 70812717-888a-4748-9640-0df6715ff029
 ---
 # \<endpointDiscovery>
+
 Specifies the various discovery settings for an endpoint, such as its discoverability, scopes, and any custom extensions to its metadata.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -55,11 +57,13 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
 |||  
   
 ## Remarks  
+
  When added to the endpoint’s behavior configuration and with the `enabled` attribute set to `true`, this configuration element enables its discoverability. In addition, you can use the [\<scopes>](scopes.md)child element to specifying custom scope Uris that can be used to filter service endpoints during query, as well as the [\<extensions>](extensions.md) child element to specify custom metadata that should be published along with the standard discoverable metadata (EPR, ContractTypeName, BindingName, Scope and ListenURI).  
   
  This configuration element is dependent on the [\<serviceDiscovery>](servicediscovery.md) element that provides the service level control of discoverability. This means that this element’s settings are ignored if [\<serviceDiscovery>](servicediscovery.md) is not present in the configuration.  
   
 ## Example  
+
  The following configuration example specifies filtering scopes and extension metadata to be published for an endpoint.  
   
 ```xml  

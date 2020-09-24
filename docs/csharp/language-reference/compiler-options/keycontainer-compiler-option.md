@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: b3982b6d-2382-4f7e-bebd-ce98eaa30763
 ---
 # -keycontainer (C# Compiler Options)
+
 Specifies the name of the cryptographic key container.  
   
 ## Syntax  
@@ -20,10 +21,12 @@ Specifies the name of the cryptographic key container.
 ```  
   
 ## Arguments  
+
  `string`  
  The name of the strong name key container.  
   
 ## Remarks  
+
  When the **-keycontainer** option is used, the compiler creates a sharable component. The compiler inserts a public key from the specified container into the assembly manifest and signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. `sn -i` installs the key pair into a container. This option is not supported when the compiler runs on CoreCLR. To sign an assembly when building on CoreCLR, use the [-keyfile](keyfile-compiler-option.md) option.
   
  If you compile with [-target:module](./target-module-compiler-option.md), the name of the key file is held in the module and incorporated into the assembly when you compile this module into an assembly with [-addmodule](./addmodule-compiler-option.md).  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 6432708d-5465-4bd9-bfc2-466742db99cb
 ---
 # \<security> of \<basicHttpBinding>
+
 Defines the security capabilities of the [\<basicHttpBinding>](basichttpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](basichttpbinding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -58,6 +60,7 @@ Defines the security capabilities of the [\<basicHttpBinding>](basichttpbinding.
 |binding|The binding element of the [\<basicHttpBinding>](basichttpbinding.md).|  
   
 ## Remarks  
+
  By default, the SOAP message is not secured and the client is not authenticated. This element enables you to configure additional security settings for the `basicHttpBinding` element.  
   
 ## See also

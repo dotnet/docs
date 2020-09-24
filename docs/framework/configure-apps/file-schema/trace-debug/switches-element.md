@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 4cf36786-b89a-40e2-a0f1-86bb9b783343
 ---
 # \<switches> Element
+
 Contains trace switches and the level where the trace switches are set.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -25,9 +26,11 @@ Contains trace switches and the level where the trace switches are set.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -44,9 +47,11 @@ Contains trace switches and the level where the trace switches are set.
 |`System.diagnostics`|Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.|  
   
 ## Remarks  
+
  You can change the level of a trace switch by putting it in a configuration file. If the switch is a <xref:System.Diagnostics.BooleanSwitch>, you can turn it on and off. If the switch is a <xref:System.Diagnostics.TraceSwitch>, you can assign different levels to it to specify the types of trace or debug messages the application outputs.  
   
 ## Example  
+
  The following example shows how to use the **\<switch>** element to set the `General` trace switch to the <xref:System.Diagnostics.TraceLevel> level, and enable the `Data` Boolean trace switch.  
   
 ```xml  

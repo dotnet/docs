@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 3c33f750-6948-4c7e-a27e-bef98f77255b
 ---
 # -win32res (C# Compiler Options)
+
 The **-win32res** option inserts a Win32 resource in the output file.  
   
 ## Syntax  
@@ -21,10 +22,12 @@ The **-win32res** option inserts a Win32 resource in the output file.
 ```  
   
 ## Arguments  
+
  `filename`  
  The resource file that you want to add to your output file.  
   
 ## Remarks  
+
  A Win32 resource file can be created with the [Resource Compiler](resource-compiler-option.md). The Resource Compiler is invoked when you compile a Visual C++ program; a .res file is created from the .rc file.  
   
  A Win32 resource can contain version or bitmap (icon) information that would help identify your application in the File Explorer. If you do not specify **-win32res**, the compiler will generate version information based on the assembly version.  
@@ -40,6 +43,7 @@ The **-win32res** option inserts a Win32 resource in the output file.
 3. Click on the **Resource File** button and choose a file by using the combo box.  
   
 ## Example  
+
  Compile `in.cs` and attach a Win32 resource file `rf.res` to produce `in.exe`:  
   
 ```console  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3af4805b-dc72-4f68-b168-da4fba8c6170
 ---
 # \<add> of \<entries>
+
 Represents a routing entry that maps a filter to a client endpoint that was previously defined. Messages matching this filter will be sent to this destination.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -44,6 +46,7 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 |priority|An integer that specifies the priority of this entry.<br /><br /> Entries in the routing table will be evaluated based on priority, with 0 being the lowest priority. All entries for a specific priority are evaluated simultaneously, if no matching entry is found for the current priority, the next priority level will be evaluated.<br /><br /> This value is optional.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

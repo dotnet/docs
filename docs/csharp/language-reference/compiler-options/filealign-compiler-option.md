@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: 15cf1c98-3798-4ced-9f08-60619308a073
 ---
 # -filealign (C# Compiler Options)
+
 The **-filealign** option lets you specify the size of sections in your output file.  
   
 ## Syntax  
@@ -28,10 +29,12 @@ The **-filealign** option lets you specify the size of sections in your output f
 ```  
   
 ## Arguments  
+
  `number`  
  A value that specifies the size of sections in the output file. Valid values are 512, 1024, 2048, 4096, and 8192. These values are in bytes.  
   
 ## Remarks  
+
  Each section will be aligned on a boundary that is a multiple of the **-filealign** value. There is no fixed default. If **-filealign** is not specified, the common language runtime picks a default at compile time.  
   
  By specifying the section size, you affect the size of the output file. Modifying section size may be useful for programs that will run on smaller devices.  

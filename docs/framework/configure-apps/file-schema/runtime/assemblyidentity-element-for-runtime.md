@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
 ---
 # \<assemblyIdentity> Element for \<runtime>
+
 Contains identifying information about the assembly.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -29,6 +30,7 @@ culture="assembly culture"/>
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -50,6 +52,7 @@ culture="assembly culture"/>
 |`x86`|A 32-bit x86 processor, either native or in the Windows on Windows (WOW) environment on a 64-bit platform.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -62,6 +65,7 @@ culture="assembly culture"/>
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  Every **\<dependentAssembly>** element must have one **\<assemblyIdentity>** child element.  
   
  If the `processorArchitecture` attribute is present, the `<assemblyIdentity>` element applies only to the assembly with the corresponding processor architecture. If the `processorArchitecture` attribute is not present, the `<assemblyIdentity>` element can apply to an assembly with any processor architecture.  
@@ -96,6 +100,7 @@ culture="assembly culture"/>
  If a configuration file contains an `<assemblyIdentity>` element with no `processorArchitecture` attribute, and does not contain an element that matches the platform, the element without the `processorArchitecture` attribute is used.  
   
 ## Example  
+
  The following example shows how to provide information about an assembly.  
   
 ```xml  

@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 1369fa25-0fbd-4b92-98d0-8df79c49c27a
 ---
 # Debugging Expression Trees in Visual Studio (C#)
+
 You can analyze the structure and content of expression trees when you debug your applications. To get a quick overview of the expression tree structure, you can use the `DebugView` property, which represents expression trees [using a special syntax](debugview-syntax.md). (Note that `DebugView` is available only in debug mode.)  
 
 ![Screenshot of the DebugView of an expression tree within VS debugger.](media/debugging-expression-trees-in-visual-studio/debugview-expression-tree.png)

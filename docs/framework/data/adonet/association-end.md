@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 2c345213-0296-4d90-ac6d-cef179798a75
 ---
 # association end
+
 An *association end* identifies the [entity type](entity-type.md) on one end of an [association](association-type.md) and the number of entity type instances that can exist at that end of an association. Association ends are defined as part of an association; an association must have exactly two association ends. [Navigation properties](navigation-property.md) allow for navigation from one association end to the other.  
   
  An association end definition contains the following information:  
@@ -20,6 +21,7 @@ An *association end* identifies the [entity type](entity-type.md) on one end of 
 - Information about operations that are performed on the association end, such as cascade on delete. (Optional)  
   
 ## Example  
+
  The diagram below shows a conceptual model with two associations: `PublishedBy` and `WrittenBy`. The association ends for the `PublishedBy` association are the `Book` and `Publisher` entity types. The multiplicity of the `Publisher` end is one (1) and the multiplicity of the `Book` end is many (\*), indicating that a publisher publishes many books and a book is published by one publisher.  
   
  ![Example model with three entity types](./media/association-end/example-model-three-entity-types.gif)  

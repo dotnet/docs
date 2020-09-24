@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: e93fea43-7e03-4d7d-9fee-2517b8b88cba
 ---
 # How to: Execute a Parameterized Entity SQL Query Using EntityCommand
+
 This topic shows how to execute an [!INCLUDE[esql](../../../../../includes/esql-md.md)] query that has parameters by using an <xref:System.Data.EntityClient.EntityCommand> object.  
   
 ### To run the code in this example  
@@ -19,6 +20,7 @@ This topic shows how to execute an [!INCLUDE[esql](../../../../../includes/esql-
      [!code-vb[DP EntityServices Concepts#Namespaces](../../../../../samples/snippets/visualbasic/VS_Snippets_Data/dp entityservices concepts/vb/source.vb#namespaces)]  
   
 ## Example  
+
  The following example shows how to construct a query string with two parameters. It then creates an <xref:System.Data.EntityClient.EntityCommand>, adds two parameters to the <xref:System.Data.EntityClient.EntityParameter> collection of that <xref:System.Data.EntityClient.EntityCommand>, and iterates through the collection of `Contact` items.  
   
  [!code-csharp[DP EntityServices Concepts#ParameterizedQueryWithEntityCommand](../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts/cs/source.cs#parameterizedquerywithentitycommand)]

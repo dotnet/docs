@@ -10,11 +10,13 @@ helpviewer_keywords:
 ms.assetid: 99aa52f7-b435-43f9-936e-2470af734c4e
 ---
 # Abstract and Sealed Classes and Class Members (C# Programming Guide)
+
 The [abstract](../../language-reference/keywords/abstract.md) keyword enables you to create classes and [class](../../language-reference/keywords/class.md) members that are incomplete and must be implemented in a derived class.  
   
  The [sealed](../../language-reference/keywords/sealed.md) keyword enables you to prevent the inheritance of a class or certain class members that were previously marked [virtual](../../language-reference/keywords/virtual.md).  
   
 ## Abstract Classes and Class Members  
+
  Classes can be declared as abstract by putting the keyword `abstract` before the class definition. For example:  
   
  [!code-csharp[csProgGuideInheritance#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#13)]  
@@ -32,6 +34,7 @@ The [abstract](../../language-reference/keywords/abstract.md) keyword enables yo
  If a `virtual` method is declared `abstract`, it is still virtual to any class inheriting from the abstract class. A class inheriting an abstract method cannot access the original implementation of the method—in the previous example, `DoWork` on class F cannot call `DoWork` on class D. In this way, an abstract class can force derived classes to provide new method implementations for virtual methods.  
   
 ## Sealed Classes and Class Members  
+
  Classes can be declared as [sealed](../../language-reference/keywords/sealed.md) by putting the keyword `sealed` before the class definition. For example:  
   
  [!code-csharp[csProgGuideInheritance#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#16)]  

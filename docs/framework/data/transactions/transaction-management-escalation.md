@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1e96331e-31b6-4272-bbbd-29ed1e110460
 ---
 # Transaction Management Escalation
+
 Windows hosts a set of services and modules that together constitute a transaction manager. Transaction management escalation describes the process of migrating a transaction from one of the transaction manager's components to another.  
   
  <xref:System.Transactions> includes a transaction manager component that coordinates a transaction involving at most, a single durable resource or multiple volatile resources. Because the transaction manager uses only intra-application domain calls, it yields the best performance. Developers need not interact with the transaction manager directly. Instead, a common infrastructure that defines interfaces, common behavior, and helper classes is provided by the <xref:System.Transactions> namespace.  
@@ -14,6 +15,7 @@ Windows hosts a set of services and modules that together constitute a transacti
  Between the <xref:System.Transactions> transaction and MSDTC transaction, there is an intermediary type of transaction that is made available through the Promotable Single Phase Enlistment (PSPE). PSPE is another important mechanism in <xref:System.Transactions> for performance optimization. It allows a remote durable resource, located in a different application domain, process or computer, to participate in a <xref:System.Transactions> transaction without causing it to be escalated to an MSDTC transaction. For more information about PSPE, see [Enlisting Resources as Participants in a Transaction](enlisting-resources-as-participants-in-a-transaction.md).  
   
 ## How Escalation is Initiated  
+
  Transaction escalation reduces performance because the MSDTC resides in a separate process, and escalating a transaction to the MSDTC results in messages being sent across process. To improve performance, you should delay or avoid escalation to MSDTC; thus, you need to know how and when the escalation is initiated.  
   
  As long as the <xref:System.Transactions> infrastructure handles volatile resources and at most one durable resource that supports single-phase notifications, the transaction remains in the ownership of the <xref:System.Transactions> infrastructure. The transaction manager avails itself only to those resources that live in the same application domain and for which logging (writing the transaction outcome to disk) is not required. An escalation that results in the <xref:System.Transactions> infrastructure transferring the ownership of the transaction to MSDTC happens when:  

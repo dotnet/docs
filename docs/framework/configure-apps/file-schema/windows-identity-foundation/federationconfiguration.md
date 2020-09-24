@@ -5,6 +5,7 @@ ms.assetid: 8b14054c-6d07-46ab-ab58-03f14beac0f2
 author: "BrucePerlerMS"
 ---
 # \<federationConfiguration>
+
 Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) when using federated authentication through the WS-Federation protocol. Configures the <xref:System.Security.Claims.ClaimsAuthorizationManager> when using the <xref:System.IdentityModel.Services.ClaimsPrincipalPermission> or the <xref:System.IdentityModel.Services.ClaimsPrincipalPermissionAttribute> class to provide claims-based access control.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -45,6 +47,7 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
 |[\<system.identityModel.services>](system-identitymodel-services.md)|Configuration section for authentication using the WS-Federation protocol.|  
   
 ## Remarks  
+
  The \<federationConfiguration> element provides settings in two different scenarios:  
   
 - When using WS-Federation in a passive Web application, the element contains settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM). It also references the identity configuration to be used to configure security token handlers and certificates, and components like the claims authorization manager and the claims authentication manager.  
@@ -66,6 +69,7 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
  The `<federationConfiguration>` element is represented by the <xref:System.IdentityModel.Services.Configuration.FederationConfigurationElement> class. The configuration object itself is represented by the <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> class. A single <xref:System.IdentityModel.Services.Configuration.FederationConfiguration> instance is set on the <xref:System.IdentityModel.Services.FederatedAuthentication.FederationConfiguration%2A?displayProperty=nameWithType> property and provides federated configuration for the application.  
   
 ## Example  
+
  The following XML shows a `<federationConfiguration>` element that specifies settings for the WSFAM and specifies that the default cookie handler (an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class) be used by the SAM.  
   
 > [!WARNING]

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ad545e6f-f06e-4549-ac92-09d758d5c636
 ---
 # \<peerAuthentication>
+
 Specifies authentication settings for a peer certificate used by a peer node.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies authentication settings for a peer certificate used by a peer node.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Specifies authentication settings for a peer certificate used by a peer node.
 |`trustedStoreLocation`|Optional enumeration. Specifies the trusted store location where the peer certificate is validated by the WCF security system. This attribute is of type <xref:System.Security.Cryptography.X509Certificates.StoreLocation>.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,6 +49,7 @@ Specifies authentication settings for a peer certificate used by a peer node.
 |[\<peer>](peer-of-servicecredentials.md)|Specifies the current credentials for a peer node.|  
   
 ## Remarks  
+
  The `<authentication>` element corresponds to the <xref:System.ServiceModel.Security.X509PeerCertificateAuthentication> class. This element specifies a validator, which is invoked during neighbor-to-neighbor authentication in the mesh. When a new peer tries to establish a neighbor connection, it passes its own credential to the responding peer. The validator of the responder is invoked to verify the credential of the remote party. Whenever a peer connection is established in the mesh, both peers are mutually authenticated, meaning validators on both ends are invoked.  
   
 ## See also

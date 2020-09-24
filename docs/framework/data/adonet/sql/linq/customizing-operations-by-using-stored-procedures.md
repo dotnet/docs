@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: aedbecc1-c33c-4fb4-8861-fdf7e1dc6b8a
 ---
 # Customizing Operations By Using Stored Procedures
+
 Stored procedures represent a common approach to overriding default behavior. The examples in this topic show how you can use generated method wrappers for stored procedures, and how you can call stored procedures directly.  
   
  If you are using Visual Studio, you can use the Object Relational Designer to assign stored procedures to perform inserts, updates, and deletes.  
@@ -17,27 +18,33 @@ Stored procedures represent a common approach to overriding default behavior. Th
 ## Example  
   
 ### Description  
+
  In the following example, assume that the `Northwind` class contains two methods to call stored procedures that are being used for overrides in a derived class.  
   
 ### Code  
+
  [!code-csharp[DLinqOverrideDefaultSproc#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs/northwind.cs#1)]
  [!code-vb[DLinqOverrideDefaultSproc#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb/northwind.vb#1)]  
   
 ## Example  
   
 ### Description  
+
  The following class uses these methods for the override.  
   
 ### Code  
+
  [!code-csharp[DLinqOverrideDefaultSproc#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs/northwind.cs#2)]
  [!code-vb[DLinqOverrideDefaultSproc#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb/northwind.vb#2)]  
   
 ## Example  
   
 ### Description  
+
  You can use `NorthwindThroughSprocs` exactly as you would use `Northwnd`.  
   
 ### Code  
+
  [!code-csharp[DLinqOverrideDefaultSproc#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqOverrideDefaultSproc/cs/Program.cs#3)]
  [!code-vb[DLinqOverrideDefaultSproc#3](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqOverrideDefaultSproc/vb/Module1.vb#3)]  
   

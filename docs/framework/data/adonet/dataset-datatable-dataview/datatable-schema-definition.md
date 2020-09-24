@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: efbcdda4-f5a9-421d-8be2-4c194c74552f
 ---
 # DataTable Schema Definition
+
 The schema, or structure, of a table is represented by columns and constraints. You define the schema of a <xref:System.Data.DataTable> using <xref:System.Data.DataColumn> objects as well as <xref:System.Data.ForeignKeyConstraint> and <xref:System.Data.UniqueConstraint> objects. The columns in a table can map to columns in a data source, contain calculated values from expressions, automatically increment their values, or contain primary key values.  
   
  References by name to columns, relations, and constraints in a table are case-sensitive. Two or more columns, relations, or constraints can therefore exist in a table that have the same name, but that differ in case. For example, you can have **Col1** and **col1**. In such as case, a reference to one of the columns by name must match the case of the column name exactly; otherwise an exception is thrown. For example, if the table **myTable** contains the columns **Col1** and **col1**, you would reference **Col1** by name as **myTable.Columns["Col1"]**, and **col1** as **myTable.Columns["col1"]**. Attempting to reference either of the columns as **myTable.Columns["COL1"]** would generate an exception.  
@@ -14,6 +15,7 @@ The schema, or structure, of a table is represented by columns and constraints. 
 > The <xref:System.Data.DataTable.CaseSensitive%2A> property of the **DataTable** does not affect this behavior. The **CaseSensitive** property applies to the data in a table and affects sorting, searching, filtering, enforcing constraints, and so on, but not to references to the columns, relations, and constraints.  
   
 ## In This Section  
+
  [Adding Columns to a DataTable](adding-columns-to-a-datatable.md)  
  Describes how to define the columns of a table using **DataColumn** objects.  
   

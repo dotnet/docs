@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
 ---
 # LINQ to SQL
+
 [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] is a component of .NET Framework version 3.5 that provides a run-time infrastructure for managing relational data as objects.  
   
 > [!NOTE]
@@ -17,6 +18,7 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  The documentation that is included with this release of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] describes the basic building blocks, processes, and techniques you need for building [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] applications. You can also search Microsoft Docs for specific issues, and you can participate in the [LINQ Forum](https://social.msdn.microsoft.com/forums/home?forum=linqtosql), where you can discuss more complex topics in detail with experts. Finally, the [LINQ to SQL: .NET Language-Integrated Query for Relational Data](/previous-versions/dotnet/articles/bb425822(v=msdn.10)) white paper details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples.  
   
 ## In This Section  
+
  [Getting Started](getting-started.md)  
  Provides a condensed overview of [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] along with information about how to get started using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)].  
   
@@ -30,6 +32,7 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  Provides links to Visual Basic and C# samples.  
   
 ## Related Sections  
+
  [Language-Integrated Query (LINQ) - C#](../../../../../csharp/programming-guide/concepts/linq/index.md)\
  Provides overviews of LINQ technologies in C#.
 

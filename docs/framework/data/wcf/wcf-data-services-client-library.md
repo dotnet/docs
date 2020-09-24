@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 21075e50-8917-413e-a8ea-35a0f6e65aa5
 ---
 # WCF Data Services Client Library
+
 Any application can interact with an Open Data Protocol (OData)-based data service if it can send an HTTP request and process the OData feed that a data service returns. This interoperability enables you to access OData-based services from a broad range of Web-enabled applications. WCF Data Services includes client libraries that provide a richer programming experience when you consume OData feeds from .NET Framework or Silverlight-based applications.  
   
  The two main classes of the client library are the <xref:System.Data.Services.Client.DataServiceContext> class and the <xref:System.Data.Services.Client.DataServiceQuery%601> class. The <xref:System.Data.Services.Client.DataServiceContext> class encapsulates operations that are supported against a specified data service. Although OData services are stateless, the context is not. Therefore, you can use the <xref:System.Data.Services.Client.DataServiceContext> class to maintain state on the client between interactions with the data service in order to support features such as change management. This class also manages identities and tracks changes. The <xref:System.Data.Services.Client.DataServiceQuery%601> class represents a query against a specific entity set.  
@@ -16,6 +17,7 @@ Any application can interact with an Open Data Protocol (OData)-based data servi
  This section describes how to use client libraries to access and change data from a .NET Framework client application. For more information about how to use the WCF Data Services client library with a Silverlight-based application, see [WCF Data Services (Silverlight)](/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95)). Other client libraries are available that enable you to consume an OData feed in other kinds of applications. For more information on OData SDK, see [OData SDK - Sample Code](https://www.odata.org/ecosystem/#sdk).
   
 ## In This Section  
+
  [Generating the Data Service Client Library](generating-the-data-service-client-library-wcf-data-services.md)  
  Describes how to generate a client library and client data service classes that are based on OData feeds.  
   

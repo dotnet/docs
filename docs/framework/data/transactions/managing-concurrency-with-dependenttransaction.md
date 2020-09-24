@@ -5,11 +5,13 @@ ms.date: "03/30/2017"
 ms.assetid: b85a97d8-8e02-4555-95df-34c8af095148
 ---
 # Managing Concurrency with DependentTransaction
+
 The <xref:System.Transactions.Transaction> object is created using the <xref:System.Transactions.Transaction.DependentClone%2A> method. Its sole purpose is to guarantee that the transaction cannot commit while some other pieces of code (for example, a worker thread) are still performing work on the transaction. When the work done within the cloned transaction is complete and ready to be committed, it can notify the creator of the transaction using the <xref:System.Transactions.DependentTransaction.Complete%2A> method. Thus, you can preserve the consistency and correctness of data.  
   
  The <xref:System.Transactions.DependentTransaction> class can also be used to manage concurrency between asynchronous tasks. In this scenario, the parent can continue to execute any code while the dependent clone works on its own tasks. In other words, the parent's execution is not blocked until the dependent completes.  
   
 ## Creating a Dependent Clone  
+
  To create a dependent transaction, call the <xref:System.Transactions.Transaction.DependentClone%2A> method and pass the <xref:System.Transactions.DependentCloneOption> enumeration as a parameter. This parameter defines the behavior of the transaction if `Commit` is called on the parent transaction before the dependent clone indicates that it is ready for the transaction to commit (by calling the <xref:System.Transactions.DependentTransaction.Complete%2A> method). The following values are valid for this parameter:  
   
 - <xref:System.Transactions.DependentCloneOption.BlockCommitUntilComplete> creates a dependent transaction that blocks the commit process of the parent transaction until the parent transaction times out, or until <xref:System.Transactions.DependentTransaction.Complete%2A> is called on all dependents indicating their completion. This is useful when the client does not want the parent transaction to commit until the dependent transactions have completed. If the parent finishes its work earlier than the dependent transaction and calls <xref:System.Transactions.CommittableTransaction.Commit%2A> on the transaction, the commit process is blocked in a state where additional work can be done on the transaction and new enlistments can be created, until all of the dependents call <xref:System.Transactions.DependentTransaction.Complete%2A>. As soon as all of them have finished their work and call <xref:System.Transactions.DependentTransaction.Complete%2A>, the commit process for the transaction begins.  
@@ -68,6 +70,7 @@ using(TransactionScope scope = new TransactionScope())
  Because the dependent transaction is created with <xref:System.Transactions.DependentCloneOption.BlockCommitUntilComplete>, you are guaranteed that the transaction cannot be committed until all of the transactional work done on the second thread is finished and <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the dependent transaction. This means that if the client's scope ends (when it tries to dispose of the transaction object at the end of the `using` statement) before the new thread calls <xref:System.Transactions.DependentTransaction.Complete%2A> on the dependent transaction, the client code blocks until <xref:System.Transactions.DependentTransaction.Complete%2A> is called on the dependent. Then the transaction can finish committing or aborting.  
   
 ## Concurrency Issues  
+
  There are a few additional concurrency issues that you need to be aware of when using the <xref:System.Transactions.DependentTransaction> class:  
   
 - If the worker thread rolls back the transaction but the parent tries to commit it, a <xref:System.Transactions.TransactionAbortedException> is thrown.  

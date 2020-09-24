@@ -72,6 +72,7 @@ If you're using the Azure SDK for .NET to access or manage your Azure resources,
 * **REST API**: The Azure SDK for .NET is an abstraction built on the [Azure REST API](/rest/api/azure/). The Azure REST API may be used in lieu of or alongside the Azure SDK for .NET if desired.
 
 ## Diagnosing problems in the Cloud
+
 Once you deploy your application to Azure, you may run into cases where it worked in development but doesn't in Azure. Below are two good places to start when diagnosing issues:
 
 * **Remote debug from Visual Studio**: Most Azure compute services (including the services discussed in this document) support remote debugging with Visual Studio and acquiring logs. To explore Visual Studio's capabilities with your application, open the Cloud Explorer tool window by typing 'Cloud Explorer' into Visual Studio's quick launch toolbar (in the upper-right corner), and then locate your application in the tree. For details, see [Troubleshoot a web app in Azure App Service using Visual Studio](/azure/app-service/web-sites-dotnet-troubleshoot-visual-studio#remotedebug).

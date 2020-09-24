@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48
 ---
 # \<windowsAuthentication> of \<serviceCredentials>
+
 Specifies the settings of a Windows service credential.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ Specifies the settings of a Windows service credential.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -32,6 +34,7 @@ Specifies the settings of a Windows service credential.
 |`allowAnonymousLogons`|An optional Boolean attribute that specifies whether anonymous, unauthenticated callers are allowed. The default is `false`.<br /><br /> When the `clientCredentialType` attribute of a binding is set to `Windows`, the system does not allow anonymous callers. This means that only domain or workgroup authenticated callers are allowed to access the system. You can override this behavior by using this attribute.<br /><br /> Use this setting with extreme caution.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -41,6 +44,7 @@ Specifies the settings of a Windows service credential.
 |[\<serviceCredentials>](servicecredentials.md)|Specifies the credential to be used in authenticating the service, and the client credential validation-related settings.|  
   
 ## Remarks  
+
  Use this element to specify whether to allow anonymous Windows users access by setting the `allowAnonymousLogons` attribute. You can also specify whether to include group information to which users belong in the AuthorizationContext by setting the `includeWindowsGroups` attribute. If it is set to `true` (the default setting), the service can determine the Windows groups to which the client belongs.  
   
 ## See also

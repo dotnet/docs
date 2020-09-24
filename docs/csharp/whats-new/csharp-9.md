@@ -7,10 +7,10 @@ ms.date: 09/04/2020
 
 C# 9.0 adds the following features and enhancements to the C# language:
 
-- Records
-- Init only setters
-- Top-level statements
-- Pattern matching enhancements
+- [Records](#record-types)
+- [Init only setters](#init-only-setters)
+- [Top-level statements](#top-level-statements)
+- [Pattern matching enhancements](#pattern-matching-enhancements)
 - Native sized integers
 - Function pointers
 - Suppress emitting localsinit flag

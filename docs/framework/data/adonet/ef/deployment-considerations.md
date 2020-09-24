@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3a847a22-4eb8-4565-b18b-453bbca070db
 ---
 # Deployment Considerations (Entity Framework)
+
 This topic provides information about deploying applications that use the ADO.NET Entity Framework for data access. For more information about the Entity Framework, see [Getting Started](getting-started.md).  
   
  The Entity Framework provides a set of tools that integrate with and make it easier to develop in Visual Studio. For more information, see [ADO.NET Entity Data Model Tools](/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)). This topic does not describe how to use specific technologies to deploy an Entity Framework–based application.  

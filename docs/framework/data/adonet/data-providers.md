@@ -8,6 +8,7 @@ dev_langs:
 ms.assetid: 03a9fc62-2d24-491a-9fe6-d6bdb6dcb131
 ---
 # .NET Framework Data Providers
+
 A .NET Framework data provider is used for connecting to a database, executing commands, and retrieving results. Those results are either processed directly, placed in a <xref:System.Data.DataSet> in order to be exposed to the user as needed, combined with data from multiple sources, or remoted between tiers. .NET Framework data providers are lightweight, creating a minimal layer between the data source and code, increasing performance without sacrificing functionality.  
   
  The following table lists the data providers that are included in the .NET Framework.  
@@ -22,6 +23,7 @@ A .NET Framework data provider is used for connecting to a database, executing c
 |.NET Framework Data Provider for SQL Server Compact 4.0.|Provides data access for Microsoft SQL Server Compact 4.0. Uses the [System.Data.SqlServerCe](/previous-versions/sql/compact/sql-server-compact-4.0/ec4st0e3(v=vs.100)) namespace.|  
   
 ## Core Objects of .NET Framework Data Providers  
+
  The following table outlines the four core objects that make up a .NET Framework data provider.  
   
 |Object|Description|  
@@ -44,6 +46,7 @@ A .NET Framework data provider is used for connecting to a database, executing c
 |`ClientPermission`|Provided for .NET Framework data provider code access security attributes. The base class for all `ClientPermission` objects is the <xref:System.Data.Common.DBDataPermission> class.|  
   
 ## .NET Framework Data Provider for SQL Server (SqlClient)  
+
  The .NET Framework Data Provider for SQL Server (SqlClient) uses its own protocol to communicate with SQL Server. It is lightweight and performs well because it is optimized to access a SQL Server directly without adding an OLE DB or Open Database Connectivity (ODBC) layer. The following illustration contrasts the .NET Framework Data Provider for SQL Server with the .NET Framework Data Provider for OLE DB. The .NET Framework Data Provider for OLE DB communicates to an OLE DB data source through both the OLE DB Service component, which provides connection pooling and transaction services, and the OLE DB provider for the data source.  
   
 > [!NOTE]
@@ -67,6 +70,7 @@ using System.Data.SqlClient;
 ```  
   
 ## .NET Framework Data Provider for OLE DB  
+
  The .NET Framework Data Provider for OLE DB (OleDb) uses native OLE DB through COM interop to enable data access. The .NET Framework Data Provider for OLE DB supports both local and distributed transactions. For distributed transactions, the .NET Framework Data Provider for OLE DB, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  The following table shows the providers that have been tested with ADO.NET.  
@@ -95,6 +99,7 @@ using System.Data.OleDb;
 ```  
   
 ## .NET Framework Data Provider for ODBC  
+
  The .NET Framework Data Provider for ODBC (Odbc) uses the native ODBC Driver Manager (DM) to enable data access. The ODBC data provider supports both local and distributed transactions. For distributed transactions, the ODBC data provider, by default, automatically enlists in a transaction and obtains transaction details from Windows Component Services. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  The following table shows the ODBC drivers tested with ADO.NET.  
@@ -121,6 +126,7 @@ using System.Data.Odbc;
 > The .NET Framework Data Provider for ODBC requires MDAC 2.6 or a later version, and MDAC 2.8 SP1 is recommended. You can download MDAC 2.8 SP1 from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=5793).
   
 ## .NET Framework Data Provider for Oracle  
+
  The .NET Framework Data Provider for Oracle (OracleClient) enables data access to Oracle data sources through Oracle client connectivity software. The data provider supports Oracle client software version 8.1.7 or a later version. The data provider supports both local and distributed transactions. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  
   
  The .NET Framework Data Provider for Oracle requires Oracle client software (version 8.1.7 or a later version) on the system before you can connect to an Oracle data source.  
@@ -140,6 +146,7 @@ using System.Data.OracleClient;
 ```  
   
 ## Choosing a .NET Framework Data Provider  
+
  Depending on the design and data source for your application, your choice of .NET Framework data provider can improve the performance, capability, and integrity of your application. The following table discusses the advantages and limitations of each .NET Framework data provider.  
   
 |Provider|Notes|  
@@ -150,6 +157,7 @@ using System.Data.OracleClient;
 |.NET Framework Data Provider for Oracle|Recommended for middle and single-tier applications that use Oracle data sources.|  
   
 ## EntityClient Provider  
+
  The EntityClient provider is used for accessing data based on an Entity Data Model (EDM). Unlike the other .NET Framework data providers, it does not interact directly with a data source. Instead, it uses Entity SQL to communicate with the underlying data provider. For more information, see [EntityClient Provider for the Entity Framework](./ef/entityclient-provider-for-the-entity-framework.md).  
   
 ## See also

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1e40b5c9-0df2-4d66-afc5-a99d0e4ae7a4
 ---
 # \<wsHttpContextBinding>
+
 Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that requires that the protection level be signed.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -56,6 +57,7 @@ Provides a context for the <xref:System.ServiceModel.WSHttpBinding> that require
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  

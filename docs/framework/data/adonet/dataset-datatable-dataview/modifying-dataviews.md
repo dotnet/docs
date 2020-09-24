@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 697a3991-b660-4a5a-8a54-1a2304ff158e
 ---
 # Modifying DataViews
+
 You can use the <xref:System.Data.DataView> to add, delete, or modify rows of data in the underlying table. The ability to use the **DataView** to modify data in the underlying table is controlled by setting one of three Boolean properties of the **DataView**. These properties are <xref:System.Data.DataView.AllowNew%2A>, <xref:System.Data.DataView.AllowEdit%2A>, and <xref:System.Data.DataView.AllowDelete%2A>. They are set to **true** by default.  
   
  If **AllowNew** is **true**, you can use the <xref:System.Data.DataView.AddNew%2A> method of the **DataView** to create a new <xref:System.Data.DataRowView>. Note that a new row is not actually added to the underlying <xref:System.Data.DataTable> until the <xref:System.Data.DataRowView.EndEdit%2A> method of the **DataRowView** is called. If the <xref:System.Data.DataRowView.CancelEdit%2A> method of the **DataRowView** is called, the new row is discarded. Note also that you can edit only one **DataRowView** at a time. If you call the **AddNew** or **BeginEdit** method of the **DataRowView** while a pending row exists, **EndEdit** is implicitly called on the pending row. When **EndEdit** is called, the changes are applied to the underlying **DataTable** and can later be committed or rejected using the **AcceptChanges** or **RejectChanges** methods of the **DataTable**, **DataSet**, or **DataRow** object. If **AllowNew** is **false**, an exception is thrown if you call the **AddNew** method of the **DataRowView**.  

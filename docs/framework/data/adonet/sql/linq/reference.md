@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: 312c3935-a947-4220-a837-0039d9fc458b
 ---
 # Reference
+
 This section provides reference information for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] developers.  
   
  You are also encouraged to search Microsoft Docs for specific issues, and especially to participate in the [LINQ Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), where you can discuss more complex topics in detail with experts. In addition, you can study a white paper detailing [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   
 ## In This Section  
+
  [Data Types and Functions](data-types-and-functions.md)  
  Describes how common language runtime (CLR) constructs have corresponding expressions in SQL only where [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] has explicitly provided a conversion in the translation engine.  
   
@@ -31,6 +33,7 @@ This section provides reference information for [!INCLUDE[vbtecdlinq](../../../.
  Describes how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates Standard Query Operators to SQL commands.  
   
 ## Related Sections  
+
  [LINQ to SQL](index.md)  
  Provides a portal for [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] topics.  
   

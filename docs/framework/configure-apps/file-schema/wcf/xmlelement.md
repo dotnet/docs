@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
 ---
 # \<xmlElement>
+
 Specifies an XML element that is sent in the message body to the Security Token Service when requesting a token.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies an XML element that is sent in the message body to the Security Token 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -34,6 +36,7 @@ Specifies an XML element that is sent in the message body to the Security Token 
 |xmlElement|A string specifying an XML element that is sent in the message body to the Security Token Service when requesting a token.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

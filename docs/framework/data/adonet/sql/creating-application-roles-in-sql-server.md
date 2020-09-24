@@ -4,12 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 27442435-dfb2-4062-8c59-e2960833a638
 ---
 # Creating Application Roles in SQL Server
+
 Application roles provide a way to assign permissions to an application instead of a database role or user. Users can connect to the database, activate the application role, and assume the permissions granted to the application. The permissions granted to the application role are in force for the duration of the connection.  
   
 > [!IMPORTANT]
 > Application roles are activated when a client application supplies an application role name and a password in the connection string. They present a security vulnerability in a two-tier application because the password must be stored on the client computer. In a three-tier application, you can store the password so that it cannot be accessed by users of the application.  
   
 ## Application Role Features  
+
  Application roles have the following features:  
   
 - Unlike database roles, application roles contain no members.  
@@ -31,12 +33,15 @@ Application roles provide a way to assign permissions to an application instead 
 - Built-in functions that return login names, such as SYSTEM_USER, return the name of the login that invoked the application role. Built-in functions that return database user names return the name of the application role.  
   
 ### The Principle of Least Privilege  
+
  Application roles should be granted only required permissions in case the password is compromised. Permissions to the `public` role should be revoked in any database using an application role. Disable the `guest` account in any database you do not want callers of the application role to have access to.  
   
 ### Application Role Enhancements  
+
  The execution context can be switched back to the original caller after activating an application role, removing the need to disable connection pooling. The `sp_setapprole` procedure has a new option that creates a cookie, which contains context information about the caller. You can revert the session by calling the `sp_unsetapprole` procedure, passing it the cookie.  
   
 ## Application Role Alternatives  
+
  Application roles depend on the security of a password, which presents a potential security vulnerability. Passwords may be exposed by being embedded in application code or saved on disk.  
   
  You may want to consider the following alternatives.  
@@ -46,6 +51,7 @@ Application roles provide a way to assign permissions to an application instead 
 - Sign stored procedures with certificates, granting only permission to execute the procedures. For more information, see [Signing Stored Procedures in SQL Server](signing-stored-procedures-in-sql-server.md).  
   
 ## External Resources  
+
  For more information, see the following resources.  
   
 |Resource|Description|  

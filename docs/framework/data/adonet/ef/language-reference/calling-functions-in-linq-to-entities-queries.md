@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: 12a525a9-727c-4464-a0c7-71a0ef541792
 ---
 # Calling Functions in LINQ to Entities Queries
+
 The topics in this section describe how to call functions in LINQ to Entities queries.  
   
  The <xref:System.Data.Objects.EntityFunctions> and <xref:System.Data.Objects.SqlClient.SqlFunctions> classes provide access to canonical and database functions as part of the Entity Framework. For more information, see [How to: Call Canonical Functions](how-to-call-canonical-functions.md) and [How to: Call Database Functions](how-to-call-database-functions.md).  
@@ -20,6 +21,7 @@ The topics in this section describe how to call functions in LINQ to Entities qu
  For more information, see the topics in this section.  
   
 ## In This Section  
+
  [How to: Call Canonical Functions](how-to-call-canonical-functions.md)  
   
  [How to: Call Database Functions](how-to-call-database-functions.md)  

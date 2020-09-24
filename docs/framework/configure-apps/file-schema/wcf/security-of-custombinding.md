@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 243a5148-bbd1-447f-a8a5-6e7792c0a3f1
 ---
 # \<security> of \<customBinding>
+
 Specifies the security options for a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -36,6 +37,7 @@ Specifies the security options for a custom binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -97,9 +99,11 @@ Specifies the security options for a custom binding.
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  For more information about using this element, see [SecurityBindingElement Authentication Modes](../../../wcf/feature-details/securitybindingelement-authentication-modes.md) and [How to: Create a Custom Binding Using the SecurityBindingElement](../../../wcf/feature-details/how-to-create-a-custom-binding-using-the-securitybindingelement.md).  
   
 ## Example  
+
  The following example demonstrates how to configure security using a custom binding. It shows how to use a custom binding to enable message-level security together with a secure transport. This is useful when a secure transport is required to transmit the messages between client and service and simultaneously the messages must be secure on the message level. This configuration is not supported by system-provided bindings.  
   
  The service configuration defines a custom binding that supports TCP communication protected using TLS/SSL protocol, and Windows message security. The custom binding uses a service certificate to authenticate the service on the transport level and to protect the messages during the transmission between client and service. This is accomplished by the [\<sslStreamSecurity>](sslstreamsecurity.md) binding element. The service's certificate is configured using a service behavior.  

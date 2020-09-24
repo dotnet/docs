@@ -14,6 +14,7 @@ helpviewer_keywords:
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
 ---
 # -linkresource (C# Compiler Options)
+
 Creates a link to a .NET resource in the output file. The resource file is not added to the output file. This differs from the [-resource](./resource-compiler-option.md) option which does embed a resource file in the output file.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ Creates a link to a .NET resource in the output file. The resource file is not a
 ```  
   
 ## Arguments  
+
  `filename`  
  The .NET resource file to which you want to link from the assembly.  
   
@@ -33,6 +35,7 @@ Creates a link to a .NET resource in the output file. The resource file is not a
  The accessibility of the resource: public or private. The default is public.  
   
 ## Remarks  
+
  By default, linked resources are public in the assembly when they are created with the C# compiler. To make the resources private, specify `private` as the accessibility modifier. No other modifier other than `public` or `private` is allowed.  
   
  **-linkresource** requires one of the [-target](./target-compiler-option.md) options other than **-target:module**.  
@@ -46,6 +49,7 @@ Creates a link to a .NET resource in the output file. The resource file is not a
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  
   
 ## Example  
+
  Compile `in.cs` and link to resource file `rf.resource`:  
   
 ```console  
@@ -53,6 +57,7 @@ csc -linkresource:rf.resource in.cs
 ```  
   
 ## Example  
+
  Compile `A.cs` into a DLL, link to a native DLL N.dll, and put the output in the Global Assembly Cache (GAC). In this example, both A.dll and N.dll will reside in the GAC.  
   
 ```console  
@@ -61,6 +66,7 @@ gacutil -i A.dll
 ```  
   
 ## Example  
+
  This example does the same thing as the previous one, but by using Assembly Linker options.  
   
 ```console  

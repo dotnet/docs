@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1e6eef0d-a34e-4d74-b0f7-f65d2181858d
 ---
 # \<clientCredentials>
+
 Specifies the credentials used to authenticate the client to a service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,6 +35,7 @@ Specifies the credentials used to authenticate the client to a service.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -61,6 +63,7 @@ Specifies the credentials used to authenticate the client to a service.
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## Remarks  
+
  Client credentials are used to authenticate the client to services in cases where mutual authentication is required. This configuration section can also be used to specify service certificates for scenarios where the client must secure messages to a service with the service's certificate.  
   
 ## See also

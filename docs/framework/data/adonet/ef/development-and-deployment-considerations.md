@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 535e6611-02de-484c-b5ff-6ffeed04d740
 ---
 # Development and Deployment Considerations
+
 Topics in this section address issues to consider when developing or deploying an application that is based on the ADO.NET Entity Framework.  
   
 ## In This Section  
+
  [Security Considerations](security-considerations.md)  
   
  [Performance Considerations](performance-considerations.md)  

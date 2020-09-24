@@ -220,7 +220,7 @@ You can return an instance created by the default constructor using a `return ne
 
 A similar feature improves the target type resolution of [conditional expressions](../language-reference/operators/conditional-operator.md). With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
 
-Starting in C# 9.0, you can add the `static` modifier to lambda expressions or anonymous methods. Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous function can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
+Starting in C# 9.0, you can add the `static` modifier to [lambda expressions](../language-reference/operators/lambda-expressions.md) or [anonymous methods](../language-reference/operators/delegate-operator.md). Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous method can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
 
 Covariant return types provide flexibility for the return types of overridden functions. An overridden virtual function can return a type derived from the return type declared in the base class method. This can be useful for Records, and for other types that support virtual clone or factory methods.
 

@@ -2,7 +2,6 @@
 
 namespace ca2215
 {
-    //<snippet1>
     public class TypeA : IDisposable
     {
         protected virtual void Dispose(bool disposing)
@@ -27,9 +26,7 @@ namespace ca2215
             Dispose(false);
         }
     }
-    //</snippet1>
 
-    //<snippet2>
     public class TypeB : TypeA
     {
         protected override void Dispose(bool disposing)
@@ -40,5 +37,4 @@ namespace ca2215
             }
         }
     }
-    //</snippet2>
 }

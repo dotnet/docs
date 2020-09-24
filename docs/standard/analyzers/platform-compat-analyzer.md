@@ -48,11 +48,6 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
     - **Doesn't warn** if you're building an app that doesn't target the unsupported platform or is multi-targeted and the platform is not included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/master/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group.
 - Both attributes can be instantiated with or without version numbers as part of the platform name.
   - Version numbers are in the format of `major.minor[.build[.revision]]`; `major.minor` is required and the `build` and `revision` parts are optional. For example, "Windows7.0" indicates Windows version 7.0, but "Windows" is interpreted as Windows 0.0.
-- Platform attributes can be applied to types, members (methods, fields, properties, and events) and assemblies.
-  - Attributes applied at the top level `target` affect all of its members and types.
-- The same `platform` attribute can be applied across the symbol tree for different symbols only with different versions. For example, an assembly has a `[SupportedOSPlatform("windows")]` attribute and there is a new type added with `Windows 10.0.17763.0` release; that type should be annotated with `[SupportedOSPlatform("window10.0.17763.0")]`.
-  - If `[SupportedOSPlatform("platformVersion")]` is applied more than twice for the referenced member with the same `platform`, only the minimum and maximum versions are considered by the analyzer.
-  - If `[UnsupportedOSPlatform("platformVersion")]` is applied more than twice for the referenced member with the same `platform`, only the two earliest versions are considered by the analyzer.
 
 For more information, see [examples of how the attributes work and what diagnostics they cause](#examples-of-how-the-attributes-work-and-what-diagnostics-they-produce).
 
@@ -81,6 +76,13 @@ For more information, see [examples of how the attributes work and what diagnost
 
   - **Inconsistent list**. If the lowest version for some platforms is `[SupportedOSPlatform]` while it is `[UnsupportedOSPlatform]` for other platforms, is considered inconsistent, which is not supported for the analyzer.
   - If the lowest versions of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are equal, the analyzer considers the platform as part of the **Supported only list**.
+- Platform attributes can be applied to types, members (methods, fields, properties, and events) and assemblies with different platform name and / or version.
+  - Attributes applied at the top level `target` affect all of its members and types.
+  - Child level attributes only apply if they adhere to the rule `child annotations can narrow the platforms support, but they cannot widen it`.
+    - When parent has **Supported only** list, then child member attributes could not add a new platform support as that would be extending parent support, a new platform support can only added to the parent itself. But it can have `Supported` attribute for same platform with later versions as that will narrow the support. Also it can have `Unsupported` attribute with same platform as that will also narrow parent support.
+    - When parent has **Unsupported only** list, then child member attributes could add a new platform support as that would be narrowing parent support, but it cannot have `Supported` attribute for same platform as in the parent, that would extend parent support. Support for the same platform can be added only to parent level where the original `Unsupported` attribute applied.
+  - If `[SupportedOSPlatform("platformVersion")]` is applied more than once for an API with the same `platform` name only the one with minimum version is considered by the analyzer.
+  - If `[UnsupportedOSPlatform("platformVersion")]` is applied more than twice for an API with the same `platform` name, only the two with earliest versions are considered by the analyzer.
   
   > [!NOTE]
   > An API that was supported initially but unsupported (removed) in a later version is not expected to get resupported in an even later version.
@@ -224,9 +226,11 @@ The guard method's platform name should match with the calling platform-dependen
   }
   ```
 
-- if you need to guard code that targets netstandard or netcoreapp where new <xref:System.OperatingSystem> APIs are not available <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType> API is useful and will be respected. But it's not as optimized as the new APIs added in <xref:System.OperatingSystem>. In case the platform is not supported in <xref:System.Runtime.InteropServices.OSPlatform> struct, you can use <xref:System.Runtime.InteropServices.OSPlatform.Create%2A?displayProperty=nameWithType>("platform") which is also respected by the analyzer.
+- if you need to guard a code that targets netstandard or netcoreapp where new <xref:System.OperatingSystem> APIs are not available <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType> API can be used and will be respected by the analyzer. But it's not as optimized as the new APIs added in <xref:System.OperatingSystem>. In case the platform is not supported in <xref:System.Runtime.InteropServices.OSPlatform> struct, you can use <xref:System.Runtime.InteropServices.OSPlatform.Create%2A?displayProperty=nameWithType>("platform") which is also respected by the analyzer.
 
   ```csharp
+  public void CallingSupportedOnlyApis()
+  {
       if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
       {
           SupportedOnWindowsAndLinuxOnly(); // will not warn
@@ -234,8 +238,9 @@ The guard method's platform name should match with the calling platform-dependen
 
       if (RuntimeInformation.IsOSPlatform(OSPlatform.Create("browser")))
       {
-          ApiOnlySupportedOnBrowser(); // call browser specific API
+          ApiOnlySupportedOnBrowser(); // call of browser specific API
       }
+  }
   ```
 
 ### Mark call site as platform-specific

@@ -8,15 +8,13 @@ ms.date: 09/24/2020
 
 # Logging in .NET
 
-.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers.
-
-Most of the code examples shown in this article are from ASP.NET Core apps. The logging-specific parts of these code snippets apply to any .NET Core app that uses the [Generic Host](generic-host.md). The ASP.NET Core web app templates use the Generic Host.
+.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. All of the code examples shown in this article are from .NET apps. The logging-specific parts of these code snippets apply to any .NET app that uses the [Generic Host](generic-host.md).
 
 ## Logging providers
 
-Logging providers store logs, except for the `Console` provider which displays logs. For example, the Azure Application Insights provider stores logs in Azure Application Insights. Multiple providers can be enabled.
+Logging providers persist logs, except for the `Console` provider which only displays logs as standard output. For example, the Azure Application Insights provider stores logs in Azure Application Insights. Multiple providers can be enabled.
 
-The default ASP.NET Core web app templates:
+The default .NET Worker app templates:
 
 - Use the [Generic Host](generic-host.md).
 - Call <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A>, which adds the following logging providers:
@@ -27,7 +25,7 @@ The default ASP.NET Core web app templates:
 
 [!code-csharp[](index/samples/3.x/TodoApiDTO/Program.cs?name=snippet_TemplateCode&highlight=9)]
 
-The preceding code shows the `Program` class created with the ASP.NET Core web app templates. The next several sections provide samples based on the ASP.NET Core web app templates, which use the Generic Host. [Non-host console apps](#non-host-console-app) are discussed later in this document.
+The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host. [Non-host console apps](#non-host-console-app) are discussed later in this article.
 
 To override the default set of logging providers added by `Host.CreateDefaultBuilder`, call `ClearProviders` and add the required logging providers. For example, the following code:
 
@@ -99,7 +97,7 @@ Any logs below the minimum level are ***not***:
 
 To suppress all logs, specify [LogLevel.None](xref:Microsoft.Extensions.Logging.LogLevel). `LogLevel.None` has a value of 6, which is higher than `LogLevel.Critical` (5).
 
-If a provider supports [log scopes](#logscopes), `IncludeScopes` indicates whether they're enabled. For more information, see [log scopes](#logscopes)
+If a provider supports [log scopes](#log-scopes), `IncludeScopes` indicates whether they're enabled. For more information, see [log scopes](#log-scopes)
 
 The following *appsettings.json* file contains all the providers enabled by default:
 
@@ -108,7 +106,7 @@ The following *appsettings.json* file contains all the providers enabled by defa
 In the preceding sample:
 
 - The categories and levels are not suggested values. The sample is provided to show all the default providers.
-- Settings in `Logging.{providername}.LogLevel` override settings in `Logging.LogLevel`. For example, the level in `Debug.LogLevel.Default` overrides the level in `LogLevel.Default`.
+- Settings in `Logging.{ProviderName}.LogLevel` override settings in `Logging.LogLevel`. For example, the level in `Debug.LogLevel.Default` overrides the level in `LogLevel.Default`.
 - Each default provider *alias* is used. Each provider defines an *alias* that can be used in configuration in place of the fully qualified type name. The built-in providers aliases are:
   - Console
   - Debug
@@ -118,11 +116,9 @@ In the preceding sample:
   - AzureAppServicesBlob
   - ApplicationInsights
 
-## Set log level by command line, environment variables, and other configuration
+### Set log level by command line, environment variables, and other configuration
 
-Log level can be set by any of the [configuration providers](xref:fundamentals/configuration/index).
-
-[!INCLUDE[](~/includes/environmentVarableColon.md)]
+Log level can be set by any of the [configuration providers](configuration-providers.md).
 
 The following commands:
 
@@ -150,9 +146,7 @@ On [Azure App Service](https://azure.microsoft.com/services/app-service/), selec
 - Encrypted at rest and transmitted over an encrypted channel.
 - Exposed as environment variables.
 
-For more information, see [Azure Apps: Override app configuration using the Azure Portal](xref:host-and-deploy/azure-apps/index#override-app-configuration-using-the-azure-portal).
-
-For more information on setting ASP.NET Core configuration values using environment variables, see [environment variables](xref:fundamentals/configuration/index#environment-variables). For information on using other configuration sources, including the command line, Azure Key Vault, Azure App Configuration, other file formats, and more, see <xref:fundamentals/configuration/index>.
+For more information on setting .NET configuration values using environment variables, see [environment variables](configuration-providers.md#environment-variable-configuration-provider).
 
 ## How filtering rules are applied
 
@@ -216,7 +210,7 @@ The [Log](xref:Microsoft.Extensions.Logging.LoggerExtensions) method's first par
 
 [!code-csharp[](index/samples/3.x/TodoApiDTO/Controllers/TestController.cs?name=snippet0&highlight=6-7)]
 
-`MyLogEvents.TestItem` is the event ID. `MyLogEvents` is part of the sample app and is displayed in the [Log event ID](#leid) section.
+`MyLogEvents.TestItem` is the event ID. `MyLogEvents` is part of the sample app and is displayed in the [Log event ID](#log-event-id) section.
 
 [!INCLUDE[](~/includes/MyDisplayRouteInfoBoth.md)]
 
@@ -224,7 +218,7 @@ The following code creates `Information` and `Warning` logs:
 
 [!code-csharp[](index/samples/3.x/TodoApiDTO/Controllers/TodoItemsController.cs?name=snippet_CallLogMethods&highlight=4,10)]
 
-In the preceding code, the first `Log{LogLevel}` parameter,`MyLogEvents.GetItem`, is the [Log event ID](#leid). The second parameter is a message template with placeholders for argument values provided by the remaining method parameters. The method parameters are explained in the [message template](#lmt) section later in this document.
+In the preceding code, the first `Log{LogLevel}` parameter,`MyLogEvents.GetItem`, is the [Log event ID](#log-event-id). The second parameter is a message template with placeholders for argument values provided by the remaining method parameters. The method parameters are explained in the [message template](#log-message-template) section later in this document.
 
 Call the appropriate `Log{LogLevel}` method to control how much log output is written to a particular storage medium. For example:
 
@@ -237,34 +231,9 @@ Call the appropriate `Log{LogLevel}` method to control how much log output is wr
   - Set to `Warning`.
   - Add `Trace` or `Information` messages when troubleshooting. To limit output, set `Trace` or `Information` only for the categories under investigation.
 
-```console
-info: Microsoft.AspNetCore.Hosting.Diagnostics[1]
-      Request starting HTTP/2 GET https://localhost:5001/Privacy
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[0]
-      Executing endpoint '/Privacy'
-info: Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker[3]
-      Route matched with {page = "/Privacy"}. Executing page /Privacy
-info: Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker[101]
-      Executing handler method DefaultRP.Pages.PrivacyModel.OnGet - ModelState is Valid
-info: Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker[102]
-      Executed handler method OnGet, returned result .
-info: Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker[103]
-      Executing an implicit handler method - ModelState is Valid
-info: Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker[104]
-      Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
-info: Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.PageActionInvoker[4]
-      Executed page /Privacy in 74.5188ms
-info: Microsoft.AspNetCore.Routing.EndpointMiddleware[1]
-      Executed endpoint '/Privacy'
-info: Microsoft.AspNetCore.Hosting.Diagnostics[2]
-      Request finished in 149.3023ms 200 text/html; charset=utf-8
-```
-
 The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 
 [!code-json[](index/samples/3.x/TodoApiDTO/appsettings.MSFT.json)]
-
-<a name="leid"></a>
 
 ## Log event ID
 
@@ -288,9 +257,8 @@ warn: TodoApi.Controllers.TodoItemsController[4000]
 
 Some logging providers store the event ID in a field, which allows for filtering on the ID.
 
-<a name="lmt"></a>
-
 ## Log message template
+
 <!-- Review, Each log API uses a message template. -->
 Each log API uses a message template. The message template can contain placeholders for which arguments are provided. Use names for the placeholders, not numbers.
 
@@ -381,15 +349,13 @@ To view more categories in the console window, set **appsettings.Development.jso
 
 <!-- Review: What other providers support scopes? Console is not generally used in staging/production  -->
 
-<a name="logscopes"></a>
-
 ## Log scopes
 
  A *scope* can group a set of logical operations. This grouping can be used to attach the same data to each log that's created as part of a set. For example, every log created as part of processing a transaction can include the transaction ID.
 
 A scope:
 
-- Is an <xref:System.IDisposable> type that's returned by the <xref:Microsoft.Extensions.Logging.ILogger.BeginScope*> method.
+- Is an <xref:System.IDisposable> type that's returned by the <xref:Microsoft.Extensions.Logging.ILogger.BeginScope%2A> method.
 - Lasts until it's disposed.
 
 The following providers support scopes:
@@ -411,8 +377,6 @@ The following code enables scopes for the console provider:
 
 Generally, logging should be specified in configuration and not code.
 
-<a name="bilp"></a>
-
 ## Built-in logging providers
 
 ASP.NET Core includes the following logging providers as part of the shared framework:
@@ -422,13 +386,10 @@ ASP.NET Core includes the following logging providers as part of the shared fram
 - [EventSource](#event-source)
 - [EventLog](#welog)
 
-The following logging providers are shipped by Microsoft, but not as part of the 
-shared framework. They must be installed as additional nuget.
+The following logging providers are shipped by Microsoft, but not as part of the shared framework. They must be installed as additional nuget.
 
 - [AzureAppServicesFile and AzureAppServicesBlob](#azure-app-service)
 - [ApplicationInsights](#azure-application-insights)
-
-For information on `stdout` and debug logging with the ASP.NET Core Module, see <xref:test/troubleshoot-azure-iis> and <xref:host-and-deploy/aspnet-core-module#log-creation-and-redirection>.
 
 ### Console
 
@@ -449,9 +410,9 @@ The `EventSource` provider writes to a cross-platform event source with the name
 
 #### dotnet trace tooling
 
-The [dotnet-trace](/dotnet/core/diagnostics/dotnet-trace) tool is a cross-platform CLI global tool that enables the collection of .NET Core traces of a running process. The tool collects <xref:Microsoft.Extensions.Logging.EventSource> provider data using a <xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource>.
+The [dotnet-trace](../diagnostics/dotnet-trace.md) tool is a cross-platform CLI global tool that enables the collection of .NET Core traces of a running process. The tool collects <xref:Microsoft.Extensions.Logging.EventSource> provider data using a <xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource>.
 
-See [dotnet-trace](/dotnet/core/diagnostics/dotnet-trace) for installation instructions.
+See [dotnet-trace](../diagnostics/dotnet-trace.md) for installation instructions.
 
 Use the dotnet trace tooling to collect a trace from an app:
 
@@ -604,18 +565,10 @@ If the app doesn't build the host with `CreateDefaultBuilder`, add the [Event So
 
 For more information, see:
 
-- [Trace for performance analysis utility (dotnet-trace)](/dotnet/core/diagnostics/dotnet-trace) (.NET Core documentation)
-- [Trace for performance analysis utility (dotnet-trace)](https://github.com/dotnet/diagnostics/blob/master/documentation/dotnet-trace-instructions.md) (dotnet/diagnostics GitHub repository documentation)
+- [Trace for performance analysis utility (dotnet-trace)](../diagnostics/dotnet-trace.md)
 - [LoggingEventSource Class](xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource) (.NET API Browser)
 - <xref:System.Diagnostics.Tracing.EventLevel>
 - [LoggingEventSource reference source (3.0)](https://github.com/dotnet/extensions/blob/release/3.0/src/Logging/Logging.EventSource/src/LoggingEventSource.cs): To obtain reference source for a different version, change the branch to `release/{Version}`, where `{Version}` is the version of ASP.NET Core desired.
-- [Perfview](#perfview): Useful for viewing Event Source traces.
-
-#### Perfview
-
-Use the [PerfView utility](https://github.com/Microsoft/perfview) to collect and view logs. There are other tools for viewing ETW logs, but PerfView provides the best experience for working with the ETW events emitted by ASP.NET Core.
-
-To configure PerfView for collecting events logged by this provider, add the string `*Microsoft-Extensions-Logging` to the **Additional Providers** list. Don't miss the `*` at the start of the string.
 
 <a name="welog"></a>
 

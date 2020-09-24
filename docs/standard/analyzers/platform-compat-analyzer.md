@@ -1,15 +1,15 @@
 ---
 title: Platform compatibility analyzer
-description: A Roslyn analyzer that can help detect platform compatibility issues in cross-platform .NET 5.0 apps.
+description: A Roslyn analyzer that can help detect platform compatibility issues in cross-platform apps and libraries.
 author: buyaa-n
 ms.date: 09/17/2020
 ---
 
 # Platform compatibility analyzer
 
-You've probably heard the motto of "One .NET": a single, unified platform for building any type of application. The .NET 5.0 SDK includes ASP.NET Core, Entity Framework Core, WinForms, WPF, Xamarin, and ML.NET, and will add support for more platforms over time. .NET 5.0 strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You'll continue to be able to call OS-specific APIs, for example, P/Invokes, WinRT, or the Xamarin bindings for iOS and Android.
+You've probably heard the motto of "One .NET": a single, unified platform for building any type of application. The .NET 5.0 SDK includes ASP.NET Core, Entity Framework Core, WinForms, WPF, Xamarin, and ML.NET, and will add support for more platforms over time. .NET 5.0 strives to provide an experience where you don't have to reason about the different flavors of .NET, but doesn't attempt to fully abstract away the underlying operating system (OS). You'll continue to be able to call platform-specific APIs, for example, P/Invokes, WinRT, or the Xamarin bindings for iOS and Android.
 
-But using platform-dependent APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5.0 introduces the [platform compatibility analyzer](/visualstudio/code-quality/ca1416) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
+But using platform-specific APIs on a component means the code no longer works across all platforms. We needed a way to detect this at design time so developers get diagnostics when they inadvertently use platform-specific APIs. To achieve this goal, .NET 5.0 introduces the [platform compatibility analyzer](/visualstudio/code-quality/ca1416) and complementary APIs to help developers identify and use platform-specific APIs where appropriate.
 The new APIs include:
 
 - <xref:System.Runtime.Versioning.SupportedOSPlatformAttribute> to annotate APIs as being platform-specific and <xref:System.Runtime.Versioning.UnsupportedOSPlatformAttribute> to annotate APIs as being unsupported on a particular OS. These attributes can optionally include the version number, and have already been applied to some platform-specific APIs in the core .NET libraries.
@@ -36,7 +36,7 @@ The platform compatibility analyzer is one of the Roslyn code quality analyzers.
 - An API marked with `[UnsupportedOSPlatform("platform")]` is considered unsupported only on the specified OS `platform` but supported for all other platforms.
   - The attribute can be applied multiple times with different platforms, for example, `[UnsupportedOSPlatform("iOS"), UnsupportedOSPlatform("Android6.0")]`.
   - The analyzer produces a **warning** only if the `platform` is effective for the call site:
-    - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("browser")]` and the call site targets `<TargetFramework>net5.0-browser</TargetFramework>`).
+    - **Warns** if the project targets the platform that's attributed as unsupported (for example, if the API is attributed with `[UnsupportedOSPlatform("windows")]` and the call site targets `<TargetFramework>net5.0-windows</TargetFramework>`).
     - **Warns** if the project is multi-targeted and the `platform` is included in the default [MSBuild `<SupportedPlatform>`](https://github.com/dotnet/sdk/blob/master/src/Tasks/Microsoft.NET.Build.Tasks/targets/Microsoft.NET.SupportedPlatforms.props) items group, or the `platform` is manually included within the `MSBuild` \<SupportedPlatform> items group:
 
       ```XML
@@ -59,7 +59,7 @@ For more information, see [examples of how the attributes work and what diagnost
 ### Advanced scenarios for combining attributes
 
 - If a combination of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are present, all attributes are grouped by OS platform identifier:
-  - **Allow list**. If the lowest version for each OS platform is a `[SupportedOSPlatform]` attribute, the API is considered to only be supported by the listed platforms and unsupported by all other platforms. The optional `[UnsupportedOSPlatform]` attributes for each platform can only have higher version of the minimum supported version, which denotes that the API is removed starting from the specified version.
+  - **Supported only list**. If the lowest version for each OS platform is a `[SupportedOSPlatform]` attribute, the API is considered to only be supported by the listed platforms and unsupported by all other platforms. The optional `[UnsupportedOSPlatform]` attributes for each platform can only have higher version of the minimum supported version, which denotes that the API is removed starting from the specified version.
 
     ```csharp
     // The API only supported on Windows 8.0 and later, not supported for all other.
@@ -69,7 +69,7 @@ For more information, see [examples of how the attributes work and what diagnost
     public void ApiSupportedFromWindows80SupportFromCertainVersion();
     ```
 
-  - **Deny list**. If the lowest version for each OS platform is an `[UnsupportedOSPlatform]` attribute, then the API is considered to only be unsupported by the listed platforms and supported by all other platforms. The list could have `[SupportedOSPlatform]` attribute with the same platform but a higher version, which denotes that the API is supported starting from that version.
+  - **Unsupported only list**. If the lowest version for each OS platform is an `[UnsupportedOSPlatform]` attribute, then the API is considered to only be unsupported by the listed platforms and supported by all other platforms. The list could have `[SupportedOSPlatform]` attribute with the same platform but a higher version, which denotes that the API is supported starting from that version.
   
     ```csharp
     // The API was unsupported on Windows until version 10.0.19041.0.
@@ -80,7 +80,7 @@ For more information, see [examples of how the attributes work and what diagnost
     ```
 
   - **Inconsistent list**. If the lowest version for some platforms is `[SupportedOSPlatform]` while it is `[UnsupportedOSPlatform]` for other platforms, is considered inconsistent, which is not supported for the analyzer.
-  - If the lowest versions of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are equal, the analyzer considers the platform as part of the **Deny list**.
+  - If the lowest versions of `[SupportedOSPlatform]` and `[UnsupportedOSPlatform]` attributes are equal, the analyzer considers the platform as part of the **Supported only list**.
   
   > [!NOTE]
   > An API that was supported initially but unsupported (removed) in a later version is not expected to get resupported in an even later version.
@@ -162,7 +162,7 @@ For more information, see [examples of how the attributes work and what diagnost
 
 The recommended way to deal with these diagnostics is to make sure you only call platform-specific APIs when running on an appropriate platform. Following are the options you can use to address the warnings; choose whichever is most appropriate for your situation:
 
-- **Guard the call**. You can either achieve this by excluding the code at build time using `#if` and multi-targeting or by conditionally calling the code at run time. Check whether you’re running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`.
+- **Guard the call**. You can achieve this by conditionally calling the code at run time. Check whether you’re running on a desired `Platform` by using one of platform-check methods, for example, `OperatingSystem.Is<Platform>()` or `OperatingSystem.Is<Platform>VersionAtLeast(int major, int minor = 0, int build = 0, int revision = 0)`.
 
 - **Mark the call site as platform-specific**. You can also choose to mark your own APIs as being platform-specific, thus effectively just forwarding the requirements to your callers. Mark the containing method or type or the entire assembly with the same attributes as the referenced platform-dependent call. [Examples](#mark-call-site-as-platform-specific).
 
@@ -170,7 +170,7 @@ The recommended way to deal with these diagnostics is to make sure you only call
 
 - **Delete the code**. Generally not what you want because it means you lose fidelity when your code is used by Windows users. For cases where a cross-platform alternative exists, you’re likely better off using that over platform-specific APIs.
 
-- **Suppress the warning**. You can also simply suppress the warning, either via editor.config or `#pragma warning disable`. However, this option should be a last resort when using platform-specific APIs.
+- **Suppress the warning**. You can also simply suppress the warning, either via editor.config or `#pragma warning disable ca1416`. However, this option should be a last resort when using platform-specific APIs.
 
 ### Guard platform-specific APIs with guard methods
 
@@ -184,17 +184,12 @@ The guard method's platform name should match with the calling platform-dependen
   {
       if (OperatingSystem.IsWindows())
       {
-          WindowsOnlyApi(); // not warn
+          WindowsOnlyApi(); // will not warn
       }
 
       if (OperatingSystem.IsLinux())
       {
-          SupportedOnWindowsAndLinuxOnly(); // nor warn, within one of the supported context
-      }
-
-      if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows)) // traditional method
-      {
-          SupportedOnWindowsAndLinux(); // not warn
+          SupportedOnWindowsAndLinuxOnly(); // will not warn, within one of the supported context
       }
 
       // Can use &&, || logical operators to guard combined attributes
@@ -209,24 +204,38 @@ The guard method's platform name should match with the calling platform-dependen
       }
   }
 
-  public void CallingUnsupportedApis() // Deny list calls
+  public void CallingUnsupportedApis()
   {
       if (!OperatingSystem.IsAndroid())
       {
-          DoesNotWorkOnAndroid(); // no diagnostic
+          DoesNotWorkOnAndroid(); // will not warn
       }
 
       if (!OperatingSystem.IsWindows() || OperatingSystem.IsWindowsVersionAtLeast(8))
       {
-          StartedWindowsSupportFromVersion8(); // no diagnostic
+          StartedWindowsSupportFromVersion8(); // will not warn
       }
 
-      if (!OperatingSystem.IsWindows() || // supported all other platform
+      if (!OperatingSystem.IsWindows() || // supported all other platforms
          (OperatingSystem.IsWindowsVersionAtLeast(8) && !OperatingSystem.IsWindowsVersionAtLeast(10, 0, 1903)))
       {
-          StartedWindowsSupportFrom8UnsupportedFrom10(); // no diagnostic
+          StartedWindowsSupportFrom8UnsupportedFrom10(); // will not warn
       }
   }
+  ```
+
+- if you need to guard code that targets netstandard or netcoreapp where new <xref:System.OperatingSystem> APIs are not available <xref:System.Runtime.InteropServices.RuntimeInformation.IsOSPlatform%2A?displayProperty=nameWithType> API is useful and will be respected. But it's not as optimized as the new APIs added in <xref:System.OperatingSystem>. In case the platform is not supported in <xref:System.Runtime.InteropServices.OSPlatform> struct, you can use <xref:System.Runtime.InteropServices.OSPlatform.Create%2A?displayProperty=nameWithType>("platform") which is also respected by the analyzer.
+
+  ```csharp
+      if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+      {
+          SupportedOnWindowsAndLinuxOnly(); // will not warn
+      }
+
+      if (RuntimeInformation.IsOSPlatform(OSPlatform.Create("browser")))
+      {
+          ApiOnlySupportedOnBrowser(); // call browser specific API
+      }
   ```
 
 ### Mark call site as platform-specific
@@ -260,12 +269,12 @@ Platform names should match the calling platform-dependent API. If the platform 
   [SupportedOSPlatform("windows8.0")] // call site attributed Windows 8.0 or above.
   public void Caller()
   {
-      WindowsOnlyApi(); // Not warn as call site is for Windows.
+      WindowsOnlyApi(); // will not warn as call site is for Windows.
 
-      // Not warn as call site is for Windows.
+      // will not warn as call site is for Windows.
       SupportedOnWindowsAndLinuxOnly();
 
-      // Not warn for the API's [SupportedOSPlatform("windows8.0")] attribute.
+      // will not warn for the API's [SupportedOSPlatform("windows8.0")] attribute.
       // Warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is unsupported on 'windows' 10.0.19041.0 and later
       ApiSupportedFromWindows8UnsupportFromWindows10();
 
@@ -280,7 +289,7 @@ Platform names should match the calling platform-dependent API. If the platform 
       // Warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is unsupported on 'windows' 10.0.19041.0 and later
       ApiSupportedFromWindows8UnsupportFromWindows10();
 
-      // Not warn as call site version higher than calling API.
+      // will not warn as call site version higher than calling API.
       AssemblySupportedOnWindowsApiSupportedFromWindows10();
   }
 
@@ -288,7 +297,7 @@ Platform names should match the calling platform-dependent API. If the platform 
   [UnsupportedOSPlatform("windows10.0.19041.0")] // call site supports Windows from version 8.0 to 10.0.19041.0.
   public void Caller3()
   {
-      // Not warn as caller has exact same attributes.
+      // will not warn as caller has exact same attributes.
       ApiSupportedFromWindows8UnsupportFromWindows10();
 
       // Warns: 'ApiSupportedFromWindows8UnsupportFromWindows10' is supported on 'windows' 10.0.19041.0 and later
@@ -319,10 +328,10 @@ Platform names should match the calling platform-dependent API. If the platform 
   {
       DoesNotWorkOnAndroid(); // warns 'DoesNotWorkOnAndroid' is unsupported on 'Android'.
 
-      // not warns as the call site not support Windows at all, but supports all other.
+      // will not warns as the call site not support Windows at all, but supports all other.
       StartedWindowsSupportFromVersion8();
 
-      // same, not warns as the call site not support Windows at all, but supports all other.
+      // same, will not warns as the call site not support Windows at all, but supports all other.
       StartedWindowsSupportFrom8UnsupportedFrom10();
   }
 
@@ -330,12 +339,12 @@ Platform names should match the calling platform-dependent API. If the platform 
   [UnsupportedOSPlatform("android")] // Caller not support Windows and Android for any version.
   public void Caller4()
   {
-      DoesNotWorkOnAndroid(); // not warn as call site not supports Android.
+      DoesNotWorkOnAndroid(); // will not warn as call site not supports Android.
 
-      // not warns as the call site not support Windows at all, but supports all other.
+      // will not warns as the call site not support Windows at all, but supports all other.
       StartedWindowsSupportFromVersion8();
 
-      // same, not warns as the call site not support Windows at all, but supports all other.
+      // same, will not warns as the call site not support Windows at all, but supports all other.
       StartedWindowsSupportFrom8UnsupportedFrom10();
   }
   ```
@@ -353,7 +362,7 @@ All the conditional checks used in the [platform guard examples](#guard-platform
   {
       Debug.Assert(OperatingSystem.IsLinux());
 
-      LinuxOnlyApi(); // No diagnostic
+      LinuxOnlyApi(); // will not warn
   }
   ```
 

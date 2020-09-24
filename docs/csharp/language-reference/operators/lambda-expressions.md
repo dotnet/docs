@@ -70,19 +70,19 @@ You cannot use statement lambdas to create expression trees.
 
 You enclose input parameters of a lambda expression in parentheses. Specify zero input parameters with empty parentheses:  
 
-:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="ZeroParameters":::
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetZeroParameters":::
 
 If a lambda expression has only one input parameter, parentheses are optional:
 
-:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="OneParameter":::
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetOneParameter":::
 
 Two or more input parameters are separated by commas:
 
-:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="TwoParameters":::
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetTwoParameters":::
 
 Sometimes the compiler can't infer the types of input parameters. You can specify the types explicitly as shown in the following example:
 
-:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="ExplicitlyTypedParameters":::
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetExplicitlyTypedParameters":::
 
 Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
 

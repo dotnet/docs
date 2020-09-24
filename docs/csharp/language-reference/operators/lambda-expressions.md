@@ -74,7 +74,7 @@ You enclose input parameters of a lambda expression in parentheses. Specify zero
 
 If a lambda expression has only one input parameter, parentheses are optional:
 
-[!code-csharp[one parameter](snippets/lambda-expressions/GeneralExamples.cs#OneParameter)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="OneParameter":::
 
 Two or more input parameters are separated by commas:
 

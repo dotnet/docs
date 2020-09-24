@@ -56,7 +56,7 @@ Each derived class must call a base class constructor from its own constructor. 
 
 :::code language="csharp" source="./snippets/object-oriented-programming/InterestEarningAccount.cs" id="DerivedConstructor":::
 
-The parameters to this new constructor match the type and names of the base class. You use the `: base()` syntax to indicate a call to a base class constructor. Some classes define multiple constructors, and this syntax enables you to pick which base class constructor you call.
+The parameters to this new constructor match the type and names of the base class. You use the `: base()` syntax to indicate a call to a base class constructor. Some classes define multiple constructors, and this syntax enables you to pick which base class constructor you call. Once you've updated these 
 
 The requirements for the new classes can be stated as follows:
 

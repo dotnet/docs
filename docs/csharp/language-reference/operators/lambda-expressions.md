@@ -78,7 +78,7 @@ If a lambda expression has only one input parameter, parentheses are optional:
 
 Two or more input parameters are separated by commas:
 
-[!code-csharp[two parameters](snippets/lambda-expressions/GeneralExamples.cs#TwoParameters)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="TwoParameters":::
 
 Sometimes the compiler can't infer the types of input parameters. You can specify the types explicitly as shown in the following example:
 

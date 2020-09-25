@@ -7,7 +7,7 @@ no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
 
-Code analysis code analysis rules have various configuration options. The most common option you'll configure is a rule's severity. You can configure severity level for both [code quality rules](rules/quality-rules-reference.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions). Code quality rules have additional configuration options, such as which method names the rule should apply to, or whether only the public API surface should be analyzed.
+Code analysis code analysis rules have various configuration options. The most common option you'll configure is a rule's severity. You can configure severity level for both [code quality rules](quality-rules/index.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions). Code quality rules have additional configuration options, such as which method names the rule should apply to, or whether only the public API surface should be analyzed.
 
 You specify configuration options in an [EditorConfig file](/visualstudio/ide/create-portable-custom-editor-options). You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
 
@@ -87,7 +87,7 @@ In the preceding example, all three severity entries are applicable to CA1822. H
 
 ### Severity level
 
-The following table shows the different rule severities that you can configure for both [code quality](rules/quality-rules-reference.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
+The following table shows the different rule severities that you can configure for both [code quality](quality-rules/index.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
 
 | Severity | Build-time behavior |
 |-|-|

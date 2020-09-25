@@ -274,7 +274,19 @@ To log events lower than <xref:Microsoft.Extensions.Logging.LogLevel.Warning?dis
 
 The following code changes the `SourceName` from the default value of `".NET Runtime"` to `MyLogs`:
 
-[!code-csharp[](index/samples/3.x/MyMain/Program.cs?name=snippetEventLog)]
+```csharp
+public class Program
+{
+    public static Task Main(string[] args) =>
+        CreateHostBuilder(args).Build().RunAsync();
+
+    static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureLogging(logging =>
+                logging.AddEventLog(configuration =>
+                    configuration.SourceName = "CustomLogs"));
+}
+```
 
 ### Azure App Service
 
@@ -284,7 +296,29 @@ The provider package isn't included in the shared framework. To use the provider
 
 To configure provider settings, use <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions> and <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions>, as shown in the following example:
 
-[!code-csharp[](index/samples/3.x/MyMain/Program.cs?name=snippet_AzLogOptions)]
+```csharp
+class Program
+{
+    static Task Main(string[] args) =>
+        CreateHostBuilder(args).Build().RunAsync();
+
+    static IHostBuilder CreateHostBuilder(string[] args) =>
+        Host.CreateDefaultBuilder(args)
+            .ConfigureLogging(logging =>
+                logging.AddAzureWebAppDiagnostics())
+            .ConfigureServices(services =>
+                services.Configure<AzureFileLoggerOptions>(options =>
+                {
+                    options.FileName = "azure-diagnostics-";
+                    options.FileSizeLimit = 50 * 1024;
+                    options.RetainedFileCountLimit = 5;
+                })
+                .Configure<AzureBlobLoggerOptions>(options =>
+                {
+                    options.BlobName = "log.txt";
+                }));
+}
+```
 
 When deployed to Azure App Service, the app uses the settings in the [App Service logs](/azure/app-service/web-sites-enable-diagnostic-log/#enable-application-logging-windows) section of the **App Service** page of the Azure portal. When the following settings are updated, the changes take effect immediately without requiring a restart or redeployment of the app.
 

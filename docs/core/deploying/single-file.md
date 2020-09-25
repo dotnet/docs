@@ -11,29 +11,29 @@ Bundling all application-dependent files into a single binary provides an applic
 
 Single File deployment is available for both the [framework-dependent deployment model](index.md#publish-framework-dependent) and [self-contained applications](index.md#publish-self-contained). The size of the single file in a self-contained application will be large since it will include the runtime and the framework libraries. The single file deployment option can be combined with [ReadyToRun](../tools/dotnet-publish.md) and [Trim (an experimental feature in .NET 5.0)](trim-self-contained.md) publish options.
 
-## API Incompatibility
+## API incompatibility
 
-There are some caveats that you need to be aware for single-file use, first of which is the use of path information to locate a file relative to the location of your application. The <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> API will return an empty string, which is the default behavior for assemblies loaded from memory. The compiler will give a [warning](https://docs.microsoft.com/visualstudio/code-quality/il3000) for this API during build time to alert the developer to the specific behavior. If the path to the application directory is needed, the <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType> API will return the directory where the AppHost (the single-file bundle itself) resides. There is also an option, `ExcludeFromSingleFile`, to exclude files from being bundled that is described [below](#exclude-files-from-being-embedded) in detail.
+There are some caveats that you need to be aware for single-file use, first of which is the use of path information to locate a file relative to the location of your application. The <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> API will return an empty string, which is the default behavior for assemblies loaded from memory. The compiler will give a [warning](https://docs.microsoft.com/visualstudio/code-quality/il3000) for this API during build time to alert the developer to the specific behavior. If the path to the application directory is needed, the <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType> API will return the directory where the application executable resides. There is also an option, `ExcludeFromSingleFile`, to exclude files from being bundled that is described [below](#exclude-files-from-being-embedded) in detail.
 
 The table below has the relevant runtime library API details for single-file use.
 
 | API                                                                                     | Note |
 | ---------------------------------------------------------------------------------------  | ------- |
-| Assembly.Location | Returns an empty string, use AppContext.BaseDirectory |
-| Module.FullyQualifiedName  | Returns a `<Unknown>` string |
+| `Assembly.Location` | Returns an empty string, use `AppContext.BaseDirectory` |
+| `Module.FullyQualifiedName`  | Returns a `<Unknown>` string |
 | `Module.Name`  | Returns a `<Unknown>` string |
-| Assembly.GetFile  | Will throw `IOException` |
-| Assembly.GetFiles  | Will throw `IOException` |
-| Assembly.CodeBase  | Will throw `PlatformNotSupportedException` |
-| Assembly.EscapedCodeBase  | Will throw `PlatformNotSupportedException` |
-| AssemblyName.CodeBase  | Returns null |
-| AssemblyName.EscapedCodeBase  | Returns null |
+| `Assembly.GetFile`  | Will throw `IOException` |
+| `Assembly.GetFiles`  | Will throw `IOException` |
+| `Assembly.CodeBase`  | Will throw `PlatformNotSupportedException` |
+| `Assembly.EscapedCodeBase`  | Will throw `PlatformNotSupportedException` |
+| `AssemblyName.CodeBase`  | Returns null |
+| `AssemblyName.EscapedCodeBase`  | Returns null |
 
 ## Other considerations
 
 Single-file doesn't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are deployed to the same directory as the single-file app. On Windows, we prelink only the hosting code and both the runtime and application native libraries are deployed to the same directory as the single-file app. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.
 
-Single-file application will have all related PDB files alongside it and will not be bundled by default. If you want to include PDBs inside the application, set the `DebugType` to `embedded` as described [below](#include-pdb-files-inside-the-bundle) in detail.
+Single-file application will have all related PDB files alongside it and will not be bundled by default. If you want to include PDBs inside the assembly for projects you build, set the `DebugType` to `embedded` as described [below](#include-pdb-files-inside-the-bundle) in detail.
 
 Managed C++ components aren't well suited for single-file deployment and we recommend that you write applications in C# or another non-managed C++ language to be single-file compatible.
 
@@ -58,13 +58,13 @@ For example, to place some files in the publish directory but not bundle them in
 
 ## Include PDB files inside the bundle
 
-The PDB file for an assembly can be bundled with single-file by setting the following property:
+The PDB file for an assembly can be embedded into the assembly itself (the `.dll`) using the setting below. Since the symbols are part of the assembly, they will be part of the single-file application as well:
 
 ```xml
 <DebugType>embedded</DebugType>
 ```
 
-For example, add the following property to the project file of an assembly to bundle the PDB file with the single-file:
+For example, add the following property to the project file of an assembly to embed the PDB file to that assembly:
 
 ```xml
 <PropertyGroup>

@@ -61,7 +61,7 @@ Or, for Mono development:
 > mono nuget.exe install WindowsAzure.Storage -ExcludeVersion
 ```
 
-This     will add `WindowsAzure.Storage` to your set of package dependencies for the project in the current directory, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
+This will add `WindowsAzure.Storage` to your set of package dependencies for the project in the current directory, and download the package. If you have previously set up dependencies, or are working with a project where dependencies have been set up by another developer, you can resolve and install dependencies locally like this:
 
 ```console
 > nuget restore

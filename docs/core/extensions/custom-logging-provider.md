@@ -62,5 +62,5 @@ Running this simple application will render similar to the following console win
 ## See also
 
 - [Logging in .NET](logging.md).
-- [Implement a custom logging provider in .NET](logging-providers.md).
-- [High-performance logging with LoggerMessage in .NET](loggermesssage.md).
+- [Logging providers in .NET](logging-providers.md).
+- [High-performance logging in .NET](loggermesssage.md).

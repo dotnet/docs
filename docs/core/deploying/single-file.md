@@ -19,7 +19,7 @@ The table below has the relevant runtime library API details for single-file use
 
 | API                                                                                     | Note |
 | ---------------------------------------------------------------------------------------  | ------- |
-| `Assembly.Location` | Returns an empty string, use `AppContext.BaseDirectory` |
+| `Assembly.Location` | Returns an empty string |
 | `Module.FullyQualifiedName`  | Returns "<Unknown>" or throws an exception |
 | `Module.Name`  | Returns a `<Unknown>` string |
 | `Assembly.GetFile`  | Will throw `IOException` |

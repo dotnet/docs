@@ -15,7 +15,7 @@ Code analysis rules have various configuration options. These options are specif
 
 The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](rules/quality-rules-reference.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions).
 
-You can also configure additional options to customize rule semantics.
+You can also configure additional options to customize rule behavior.
 
 - Code quality rules have [additional configuration options](code-quality-rule-options.md), such as which method names the rule should apply to, or whether only the public API surface should be analyzed.
 - Code style rules have [custom code style options](/visualstudio/ide/editorconfig-code-style-settings-reference) for style configuration.

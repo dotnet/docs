@@ -36,6 +36,7 @@ We have some recommendations for fixing common scenarios:
 * To find the file name of the executable, use the first element of <xref:System.Environment.GetCommandLineArgs()?displayProperty=nameWithType>
 
 * To avoid shipping loose files entirely, consider using [embedded resources](https://docs.microsoft.com/en-us/dotnet/framework/resources/creating-resource-files-for-desktop-apps)
+
 ## Other considerations
 
 Single-file doesn't bundle native libraries by default. On Linux, we prelink the runtime into the bundle and only application native libraries are deployed to the same directory as the single-file app. On Windows, we prelink only the hosting code and both the runtime and application native libraries are deployed to the same directory as the single-file app. This is to ensure a good debugging experience, which requires native files to be excluded from the single file. There is an option to set a flag, `IncludeNativeLibrariesForSelfExtract`, to include native libraries in the single file bundle, but these files will be extracted to a temporary directory in the client machine when the single file application is run.

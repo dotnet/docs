@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 59bfa215-556b-4bfa-8f25-b090ea83298d
 ---
 # This system does not contain support for the Locale specified
+
 You are attempting to use the `VbStrConv` enumeration, but your system does not support the specified locale.  
   
 ## To correct this error  

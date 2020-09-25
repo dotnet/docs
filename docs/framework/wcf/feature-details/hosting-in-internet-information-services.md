@@ -19,7 +19,7 @@ WCF can be hosted on the following versions of IIS on the following operating sy
 
 - IIS 7.0 on Windows Vista and Windows Server 2008. IIS 7.0 provides the same advanced process model as IIS 6.0, but uses the Windows Process Activation Service (WAS) to allow activation and network communication over protocols other than HTTP. This environment is suitable for the development of WCF services that communicate over any network protocol supported by WCF (including HTTP, net.tcp, net.pipe, and net.msmq). For more information about WAS, see [Hosting in Windows Process Activation Service](hosting-in-windows-process-activation-service.md).
 
-- [Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)) works with IIS 7.0 and Windows Process Activation Service (WAS) to provide a rich application hosting environment for NET4 WCF and WF services. These benefits include process life-cycle management, process recycling, shared hosting, rapid failure protection, process orphaning, on-demand activation, and health monitoring. For detailed information, see [AppFabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10)) and [AppFabric Hosting Concepts](https://docs.microsoft.com/previous-versions/appfabric/ee677371(v=azure.10)).
+- [Windows Server AppFabric](/previous-versions/appfabric/ff384253(v=azure.10)) works with IIS 7.0 and Windows Process Activation Service (WAS) to provide a rich application hosting environment for NET4 WCF and WF services. These benefits include process life-cycle management, process recycling, shared hosting, rapid failure protection, process orphaning, on-demand activation, and health monitoring. For detailed information, see [AppFabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10)) and [AppFabric Hosting Concepts](/previous-versions/appfabric/ee677371(v=azure.10)).
 
 ## Benefits of IIS hosting
 
@@ -62,4 +62,4 @@ WCF services can be hosted either side-by-side with ASP.NET or in ASP.NET Compat
 - [WCF Services and ASP.NET](wcf-services-and-aspnet.md)
 - [Internet Information Services Hosting Best Practices](internet-information-services-hosting-best-practices.md)
 - [Configuring Internet Information Services 7.0 for Windows Communication Foundation](configuring-iis-for-wcf.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

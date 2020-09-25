@@ -239,4 +239,4 @@ The following table lists the client credential types available when using a bin
 - [Selecting a Credential Type](selecting-a-credential-type.md)
 - [Security Capabilities with Custom Bindings](security-capabilities-with-custom-bindings.md)
 - [Security Behaviors](security-behaviors-in-wcf.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

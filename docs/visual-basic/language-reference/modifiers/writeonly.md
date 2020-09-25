@@ -13,16 +13,19 @@ helpviewer_keywords:
 ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
 ---
 # WriteOnly (Visual Basic)
+
 Specifies that a property can be written but not read.  
   
 ## Remarks  
   
 ## Rules  
+
  **Declaration Context.** You can use `WriteOnly` only at module level. This means the declaration context for a `WriteOnly` property must be a class, structure, or module, and cannot be a source file, namespace, or procedure.  
   
  You can declare a property as `WriteOnly`, but not a variable.  
   
 ## When to Use WriteOnly  
+
  Sometimes you want the consuming code to be able to set a value but not discover what it is. For example, sensitive data, such as a social registration number or a password, needs to be protected from access by any component that did not set it. In these cases, you can use a `WriteOnly` property to set the value.  
   
 > [!IMPORTANT]

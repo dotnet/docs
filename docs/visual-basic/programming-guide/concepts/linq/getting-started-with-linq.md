@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
 ---
 # Getting Started with LINQ in Visual Basic
+
 This section contains overviews, examples, and background information that will help you understand and use Visual Basic and Language-Integrated Query (LINQ).  
   
 ## In This Section  
+
  [Writing Your First LINQ Query](writing-your-first-linq-query.md)  
  Describes the three stages in writing a basic LINQ query: obtaining the data source, writing the query, and executing the query.  
   
@@ -29,6 +31,7 @@ This section contains overviews, examples, and background information that will 
  Step-by-step instructions for creating a Visual Basic LINQ project, adding a simple data source, and performing some basic query operations.  
   
 ## Related Sections  
+
  [Introduction to LINQ in Visual Basic](../../language-features/linq/introduction-to-linq.md)  
  Includes an overview of queries in LINQ and provides links to additional resources.  
   
@@ -47,7 +50,7 @@ This section contains overviews, examples, and background information that will 
  [LINQ to Objects (Visual Basic)](linq-to-objects.md)  
  Includes a selection of How-to topics for using LINQ with in-memory collections.  
   
- [LINQ to XML (Visual Basic)](linq-to-xml.md)  
+ [LINQ to XML (Visual Basic)](../../../../standard/linq/linq-xml-overview.md)  
  Includes links to topics that explain how to use LINQ to XML, which provides the in-memory document modification capabilities of the Document Object Model (DOM), and supports LINQ query expressions.  
   
  [Language-Integrated Query (LINQ) (Visual Basic)](index.md)  

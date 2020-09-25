@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 79038d52-f122-4fd4-9bfb-aaa22d6a114b
 ---
 # Retrieving Database Schema Information
+
 Obtaining schema information from a database is accomplished with the process of schema discovery. Schema discovery allows applications to request that managed providers find and return information about the database schema, also known as *metadata*, of a given database. Different database schema elements such as tables, columns, and stored-procedures are exposed through schema collections. Each schema collection contains a variety of schema information specific to the provider being used.  
   
  Each of the .NET Framework managed providers implement the **GetSchema** method in the **Connection** class, and the schema information that is returned from the **GetSchema** method comes in the form of a <xref:System.Data.DataTable>. The **GetSchema** method is an overloaded method that provides optional parameters for specifying the schema collection to return, and restricting the amount of information returned.  
@@ -13,6 +14,7 @@ Obtaining schema information from a database is accomplished with the process of
  The .NET Framework Data Provider for OLE DB also exposes schema information by using the <xref:System.Data.OleDb.OleDbConnection.GetOleDbSchemaTable%2A> method of the <xref:System.Data.OleDb.OleDbConnection> object. As arguments, **GetOleDbSchemaTable** takes an <xref:System.Data.OleDb.OleDbSchemaGuid> that identifies the schema information to return, and an array of restrictions on those returned columns. **GetOleDbSchemaTable** returns a <xref:System.Data.DataTable> populated with the requested schema information.  
   
 ## In This Section  
+
  [GetSchema and Schema Collections](getschema-and-schema-collections.md)  
  Describes the **GetSchema** method and how it can be used to retrieve and restrict schema information from a database.  
   
@@ -35,6 +37,7 @@ Obtaining schema information from a database is accomplished with the process of
  Describes the schema collections for OLE DB providers.  
   
 ## Reference  
+
  <xref:System.Data.Common.DbConnection.GetSchema%2A>  
  Describes the **GetSchema** method of the <xref:System.Data.Common.DbConnection> class.  
   

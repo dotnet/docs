@@ -5,6 +5,7 @@ ms.date: "05/22/2018"
 ms.assetid: 646ddbf5-dd4e-4285-8e4a-f565f666c5cc
 ---
 # Authentication in SQL Server
+
 SQL Server supports two authentication modes, Windows authentication mode and mixed mode.  
   
 - Windows authentication is the default, and is often referred to as integrated security because this SQL Server security model is tightly integrated with Windows. Specific Windows user and group accounts are trusted to log in to SQL Server. Windows users who have already been authenticated do not have to present additional credentials.  
@@ -24,6 +25,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 > Logins are distinct from database users. You must map logins or Windows groups to database users or roles in a separate operation. You then grant permissions to users or roles to access database objects.  
   
 ## Authentication Scenarios  
+
  Windows authentication is usually the best choice in the following situations:  
   
 - There is a domain controller.  
@@ -44,6 +46,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 > Specifying Windows authentication does not disable SQL Server logins. Use the ALTER LOGIN DISABLE Transact-SQL statement to disable highly-privileged SQL Server logins.  
   
 ## Login Types  
+
  SQL Server supports three types of logins:  
   
 - A local Windows user account or trusted domain account. SQL Server relies on Windows to authenticate the Windows user accounts.  
@@ -56,6 +59,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 > SQL Server provides logins created from certificates or asymmetric keys that are used only for code signing. They cannot be used to connect to SQL Server.  
   
 ## Mixed Mode Authentication  
+
  If you must use mixed mode authentication, you must create SQL Server logins, which are stored in SQL Server. You then have to supply the SQL Server user name and password at run time.  
   
 > [!IMPORTANT]
@@ -67,6 +71,7 @@ SQL Server supports two authentication modes, Windows authentication mode and mi
 > Concatenating connection strings from user input can leave you vulnerable to a connection string injection attack. Use the <xref:System.Data.SqlClient.SqlConnectionStringBuilder> to create syntactically valid connection strings at run time. For more information, see [Connection String Builders](../connection-string-builders.md).  
   
 ## External Resources  
+
  For more information, see the following resources.  
   
 |Resource|Description|  

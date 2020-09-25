@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 4f80700c-e83f-4ab6-af0f-1c9a606e1133
 ---
 # System.DateTime Methods
+
 The following LINQ to SQL-supported methods, operators, and properties are available to use in LINQ to SQL queries. When a method, operator or property is unsupported, LINQ to SQL cannot translate the member for execution on the SQL Server. You may use these members in your code, however, they must be evaluated before the query is translated to Transact-SQL or after the results have been retrieved from the database.  
   
 ## Supported System.DateTime Members  
+
  Once mapped in the object model or external mapping file, LINQ to SQL allows you to call the following <xref:System.DateTime?displayProperty=nameWithType> members inside LINQ to SQL queries.  
   
 |Supported <xref:System.DateTime> Methods|Supported <xref:System.DateTime> Operators|Supported <xref:System.DateTime> Properties|  
@@ -26,6 +28,7 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
 |||<xref:System.DateTime.Year%2A>|  
   
 ## Members Not Supported by LINQ to SQL  
+
  The following members are not supported inside LINQ to SQL queries.  
   
 |||  
@@ -41,6 +44,7 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
 |<xref:System.DateTime.FromOADate%2A>|<xref:System.DateTime.GetDateTimeFormats%2A>|  
   
 ## Method Translation Example  
+
  All methods supported by LINQ to SQL are translated to Transact-SQL before they are sent to   SQL Server. For example, consider the following pattern.  
   
  `(dateTime1 – dateTime2).{Days, Hours, Milliseconds, Minutes, Months, Seconds, Years}`  
@@ -50,6 +54,7 @@ The following LINQ to SQL-supported methods, operators, and properties are avail
  `DATEDIFF({DatePart}, @dateTime1, @dateTime2)`  
   
 ## SQLMethods Date and Time Methods  
+
  In addition to the methods offered by the <xref:System.DateTime> structure, LINQ to SQL offers the methods listed in the following table from the <xref:System.Data.Linq.SqlClient.SqlMethods?displayProperty=nameWithType> class for working with date and time.  
   
 ||||  

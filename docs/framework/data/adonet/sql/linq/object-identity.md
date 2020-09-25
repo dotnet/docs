@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: c788f2f9-65cc-4455-9907-e8388a268e00
 ---
 # Object Identity
+
 Objects in the runtime have unique identities. Two variables that refer to the same object actually refer to the same instance of the object. Because of this fact, changes that you make by way of a path through one variable are immediately visible through the other.  
   
  Rows in a relational database table do not have unique identities. Because each row has a unique primary key, no two rows share the same key value. However, this fact constrains only the contents of the database table.  
@@ -25,12 +26,14 @@ Objects in the runtime have unique identities. Two variables that refer to the s
 ## Examples  
   
 ### Object Caching Example 1  
+
  In this example, if you execute the same query two times, you receive a reference to the same object in memory every time.  
   
  [!code-csharp[DLinqObjectIdentity#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectIdentity/cs/Program.cs#1)]
  [!code-vb[DLinqObjectIdentity#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqObjectIdentity/vb/Module1.vb#1)]  
   
 ### Object Caching Example 2  
+
  In this example, if you execute different queries that return the same row from the database, you receive a reference to the same object in memory every time.  
   
  [!code-csharp[DLinqObjectIdentity#2](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqObjectIdentity/cs/Program.cs#2)]

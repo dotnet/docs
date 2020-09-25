@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 70cfaf24-a91c-4e56-ac47-d2ed87a963b3
 ---
 # \<tracking> of WCF
+
 Represents a configuration section for defining tracking settings for a workflow service.  
   
  For more information in workflow tracking and its configuration, see [Workflow Tracking and Tracing](../../../windows-workflow-foundation/workflow-tracking-and-tracing.md) and [Configuring Tracking for a Workflow](../../../windows-workflow-foundation/configuring-tracking-for-a-workflow.md).  
@@ -71,9 +72,11 @@ Represents a configuration section for defining tracking settings for a workflow
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -90,6 +93,7 @@ Represents a configuration section for defining tracking settings for a workflow
 |system.ServiceModel|The root element of all workflow configuration elements.|  
   
 ## Remarks  
+
  Tracking provides you with the ability to examine the execution of a workflow. The workflow tracking infrastructure instruments a workflow to emit records reflecting key events during the execution. For example, when a workflow instance starts or completes tracking records are emitted. Tracking can also extract business relevant data associated with the workflow variables. For example, if the workflow represents an order processing system the order id can be extracted along with the tracking record. In general, enabling WF tracking facilitates diagnostics or business analytics over a workflow execution.  
   
 ## See also

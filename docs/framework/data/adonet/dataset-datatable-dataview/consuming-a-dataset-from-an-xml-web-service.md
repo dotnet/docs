@@ -265,5 +265,5 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
 - [Populating a DataSet from a DataAdapter](../populating-a-dataset-from-a-dataadapter.md)
 - [Updating Data Sources with DataAdapters](../updating-data-sources-with-dataadapters.md)
 - [DataAdapter Parameters](../dataadapter-parameters.md)
-- [Web Services Description Language Tool (Wsdl.exe)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100))
+- [Web Services Description Language Tool (Wsdl.exe)](/previous-versions/dotnet/netframework-4.0/7h3ystb6(v=vs.100))
 - [ADO.NET Overview](../ado-net-overview.md)

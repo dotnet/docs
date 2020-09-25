@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: 8a4e4214-fc51-4f4d-b968-0427c37a9520
 ---
 # \<sqlWorkflowInstanceStore>
+
 A service behavior that allows you to configure the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> feature, which supports persisting state information for workflow service instances into an SQL Server 2005 or SQL Server 2008 database. For more information on this feature, see [SQL Workflow Instance Store](../../../windows-workflow-foundation/sql-workflow-instance-store.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ A service behavior that allows you to configure the <xref:System.Activities.Dura
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -47,6 +49,7 @@ A service behavior that allows you to configure the <xref:System.Activities.Dura
 |runnableInstancesDetectionPeriod||  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

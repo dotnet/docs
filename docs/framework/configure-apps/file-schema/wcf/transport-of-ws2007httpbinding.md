@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 692befa3-8b0b-4ec5-b601-755874e98eb0
 ---
 # \<transport> of \<ws2007HttpBinding>
+
 Defines authentication settings for the HTTP transport.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -23,9 +24,11 @@ Defines authentication settings for the HTTP transport.
 ```  
   
 ## Type  
+
  <xref:System.ServiceModel.HttpTransportSecurity>  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -59,6 +62,7 @@ Defines authentication settings for the HTTP transport.
 |Certificate|Uses X.509 certificates to authenticate the client.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 8be5aa0d-d236-4ac3-aa9c-5044f9f6562b
 ---
 # Value of type '\<typename1>' cannot be converted to '\<typename2>' (Multiple file references)
+
 Value of type '\<typename1>' cannot be converted to '\<typename2>'. Type mismatch could be due to mixing a file reference to '\<filepath1>' in project '\<projectname1>' with a file reference to '\<filepath2>' in project '\<projectname2>'. If both assemblies are identical, try replacing these references so both references are from the same location.  
   
  In a situation where a project makes more than one file reference to an assembly, the compiler cannot guarantee that one type can be converted to another.  

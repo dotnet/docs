@@ -5,6 +5,7 @@ ms.topic: "reference"
 ms.assetid: 619414f2-61c2-4427-9977-d05009e343db
 ---
 # \<state>
+
 Represents a collection of subscribed states from the tracked workflow instance when the tracking records are created.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../windows-workflow-foundation/tracking-profiles.md)  
@@ -38,6 +39,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -47,6 +49,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
 |name|A string that specifies a subscribed state from the tracked workflow instance when the tracking record is created.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -56,6 +59,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
 |[\<states>](states.md)|A collection of subscribed states from the tracked workflow instance when the tracking records are created.|  
   
 ## Remarks  
+
  The returned records are filtered by the states in this collection.  
   
  Possible state values are described in the following table.  
@@ -77,6 +81,7 @@ Represents a collection of subscribed states from the tracked workflow instance 
 |Unsuspended|The workflow instance is unsuspended.|  
   
 ## Example  
+
  The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
 ```xml  

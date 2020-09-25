@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1d71edd9-c085-4c2e-b6d3-980c313366f9
 ---
 # \<message> element of \<netTcpBinding>
+
 Defines the type of message-level security requirements for an endpoint configured with the [\<netTcpBinding>](nettcpbinding.md).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -22,6 +23,7 @@ Defines the type of message-level security requirements for an endpoint configur
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -63,6 +65,7 @@ Defines the type of message-level security requirements for an endpoint configur
 |IssuedToken|Specifies a custom token, usually issued by a Security Token Service (STS).|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -72,6 +75,7 @@ Defines the type of message-level security requirements for an endpoint configur
 |[\<security>](security-of-nettcpbinding.md)|Defines the security capabilities for the <xref:System.ServiceModel.Configuration.NetTcpBindingElement>.|  
   
 ## Remarks  
+
  Message uses message-level security for the integrity and confidentiality of the SOAP message, and for mutual authentication of the communication peers. If this security mode is selected on a binding, the channel stack is configured with message security binding elements and the SOAP messages are secured in compliance with WS-Security* standards.  
   
 ## See also

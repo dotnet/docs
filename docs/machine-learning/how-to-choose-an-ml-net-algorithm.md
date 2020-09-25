@@ -29,7 +29,7 @@ Before training with a linear algorithm, the features should be normalized. This
 
 In general linear algorithms are scalable and fast, cheap to train, cheap to predict. They scale by the number of features and approximately by the size of the training data set.
 
-Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint*) to your ML.NET pipeline before appending the trainer, will make the training run faster.
+Linear algorithms make multiple passes over the training data. If your dataset fits into memory, then adding a [cache checkpoint](xref:Microsoft.ML.LearningPipelineExtensions.AppendCacheCheckpoint%2A) to your ML.NET pipeline before appending the trainer, will make the training run faster.
 
 **Linear Trainers**
 

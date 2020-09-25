@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 2963cf3f-c527-4aa7-b67c-ee80b6d23186
 ---
 # Expression has the type '\<typename>' which is a restricted type and cannot be used to access members inherited from 'Object' or 'ValueType'
+
 An expression evaluates to a type that cannot be boxed by the common language runtime (CLR) but accesses a member that requires boxing.  
   
  *Boxing* refers to the processing necessary to convert a type to `Object` or, on occasion, to <xref:System.ValueType>. The common language runtime cannot box certain structure types, for example <xref:System.ArgIterator>, <xref:System.RuntimeArgumentHandle>, and <xref:System.TypedReference>.  

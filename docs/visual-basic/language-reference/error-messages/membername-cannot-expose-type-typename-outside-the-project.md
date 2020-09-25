@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: ffa7395d-e182-4087-8ce8-079810fdae54
 ---
 # '\<membername>' cannot expose type '\<typename>' outside the project through \<containertype> '\<containertypename>'
+
 A variable, procedure parameter, or function return is exposed outside its container, but it is declared as a type that must not be exposed outside the container.  
   
  The following skeleton code shows a situation that generates this error.  

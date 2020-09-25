@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
 ---
 # Type Conversions in Visual Basic
+
 The process of changing a value from one data type to another type is called *conversion*. Conversions are either *widening* or *narrowing*, depending on the data capacities of the types involved. They are also *implicit* or *explicit*, depending on the syntax in the source code.  
   
 ## In This Section  
+
  [Widening and Narrowing Conversions](widening-and-narrowing-conversions.md)  
  Explains conversions classified by whether the destination type can hold the data.  
   
@@ -31,6 +33,7 @@ The process of changing a value from one data type to another type is called *co
  Steps you through the process of converting between arrays of different data types.  
   
 ## Related Sections  
+
  [Data Types](index.md)  
  Introduces the Visual Basic data types and describes how to use them.  
   

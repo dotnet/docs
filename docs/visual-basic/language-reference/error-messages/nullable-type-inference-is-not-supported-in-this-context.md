@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 0a1e2dbc-d9a4-433d-9306-c5540782b81d
 ---
 # Nullable type inference is not supported in this context
+
 Value types and structures can be declared nullable.  
   
 ```vb  

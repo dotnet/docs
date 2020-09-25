@@ -38,9 +38,9 @@ Note how this approach separates the decision logic from the feature code.
 
 In chapter 1, we discussed the `Twelve-Factor App`. The guidance recommended keeping configuration settings external from application executable code. When needed, settings can be read in from the external source. Feature flag configuration values should also be independent from their codebase. By externalizing flag configuration in a separate repository, you can change flag state without modifying and redeploying the application.
 
-[Azure App Configuration](https://docs.microsoft.com/azure/azure-app-configuration/overview) provides a centralized repository for feature flags. With it, you define different kinds of feature flags and manipulate their states quickly and confidently. You add the App Configuration client libraries to your application to enable feature flag functionality. Various programming language frameworks are supported.
+[Azure App Configuration](/azure/azure-app-configuration/overview) provides a centralized repository for feature flags. With it, you define different kinds of feature flags and manipulate their states quickly and confidently. You add the App Configuration client libraries to your application to enable feature flag functionality. Various programming language frameworks are supported.
 
-Feature flags can be easily implemented in an [ASP.NET Core service](https://docs.microsoft.com/azure/azure-app-configuration/use-feature-flags-dotnet-core). Installing the .NET Feature Management libraries and App Configuration provider enable you to declaratively add feature flags to your code. They enable `FeatureGate` attributes so that you don't have to manually write if statements across your codebase.
+Feature flags can be easily implemented in an [ASP.NET Core service](/azure/azure-app-configuration/use-feature-flags-dotnet-core). Installing the .NET Feature Management libraries and App Configuration provider enable you to declaratively add feature flags to your code. They enable `FeatureGate` attributes so that you don't have to manually write if statements across your codebase.
 
 Once configured in your Startup class, you can add feature flag functionality at the controller, action, or middleware level. Figure 10-12 presents controller and action implementation:
 

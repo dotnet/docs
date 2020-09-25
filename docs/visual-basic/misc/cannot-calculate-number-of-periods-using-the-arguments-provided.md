@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: a96fed1c-73e6-4a2b-9906-0190bc3d4c3c
 ---
 # Cannot calculate number of periods using the arguments provided
+
 A call to the `NPer` function does not contain all of the required arguments.  
   
 ## To correct this error  

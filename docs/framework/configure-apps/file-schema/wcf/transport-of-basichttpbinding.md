@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 4c5ba293-3d7e-47a6-b84e-e9022857b7e5
 ---
 # \<transport> of \<basicHttpBinding>
+
 Defines properties that control authentication parameters for the HTTP transport.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -35,6 +36,7 @@ Defines properties that control authentication parameters for the HTTP transport
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -69,6 +71,7 @@ Defines properties that control authentication parameters for the HTTP transport
 |Certificate|Performs client authentication using a certificate. This option works only if the `Mode` attribute of the parent `security` element is set to Transport, and will not work if it is set to TransportCredentialOnly.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -78,6 +81,7 @@ Defines properties that control authentication parameters for the HTTP transport
 |[\<security>](security-of-basichttpbinding.md)|Defines the security capabilities for the [\<basicHttpBinding>](basichttpbinding.md).|  
   
 ## Example  
+
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
   
 ```xml  

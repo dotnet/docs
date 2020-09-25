@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: bbe0b526-d6b6-430a-92e2-9e8051847595
 ---
 # Get not supported (write-only property)
+
 A property cannot be read because it is write only.  
   
 ## To correct this error  

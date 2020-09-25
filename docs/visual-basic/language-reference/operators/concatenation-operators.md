@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: d787368b-3713-47ff-bce8-f112720a673a
 ---
 # Concatenation Operators (Visual Basic)
+
 The following are the concatenation operators defined in Visual Basic.  
   
  [& Operator](concatenation-operator.md)  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ada536cf-97dc-4cd7-89ec-ed1466c1c557
 ---
 # \<serviceTimeouts>
+
 Specifies the timeout for a service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,9 +21,11 @@ Specifies the timeout for a service.
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -32,6 +35,7 @@ Specifies the timeout for a service.
 |`transactionTimeout`|A <xref:System.TimeSpan> value that specifies the interval of time a transaction must flow from client to server. The default is "00:00:00".|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

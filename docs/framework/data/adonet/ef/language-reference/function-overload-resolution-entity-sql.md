@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9c648054-3808-4a69-9d3e-98e6a4f9c5ca
 ---
 # Function Overload Resolution (Entity SQL)
+
 This topic describes how [!INCLUDE[esql](../../../../../../includes/esql-md.md)] functions are resolved.  
   
  More than one function can be defined with the same name, as long as the functions have unique signatures.  

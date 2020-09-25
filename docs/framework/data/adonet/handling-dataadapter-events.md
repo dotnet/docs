@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 11515b25-ee49-4b1d-9294-a142147c1ec5
 ---
 # Handling DataAdapter Events
+
 The ADO.NET <xref:System.Data.Common.DataAdapter> exposes three events that you can use to respond to changes made to data at the data source. The following table shows the `DataAdapter` events.  
   
 |Event|Description|  
@@ -16,6 +17,7 @@ The ADO.NET <xref:System.Data.Common.DataAdapter> exposes three events that you 
 |`FillError`|An error has occurred during a `Fill` operation.|  
   
 ## RowUpdating and RowUpdated  
+
  `RowUpdating` is raised before any update to a row from the <xref:System.Data.DataSet> has been processed at the data source. `RowUpdated` is raised after any update to a row from the `DataSet` has been processed at the data source. As a result, you can use `RowUpdating` to modify update behavior before it happens, to provide additional handling when an update will occur, to retain a reference to an updated row, to cancel the current update and schedule it for a batch process to be processed later, and so on. `RowUpdated` is useful for responding to errors and exceptions that occur during the update. You can add error information to the `DataSet`, as well as retry logic, and so on.  
   
  The <xref:System.Data.Common.RowUpdatingEventArgs> and <xref:System.Data.Common.RowUpdatedEventArgs> arguments passed to the `RowUpdating` and `RowUpdated` events include the following: a `Command` property that references the `Command` object being used to perform the update; a `Row` property that references the `DataRow` object containing the updated information; a `StatementType` property for what type of update is being performed; the `TableMapping`, if applicable; and the `Status` of the operation.  
@@ -119,6 +121,7 @@ protected static void OnRowUpdated(
 ```  
   
 ## FillError  
+
  The `DataAdapter` issues the `FillError` event when an error occurs during a `Fill` operation. This type of error commonly occurs when the data in the row being added could not be converted to a .NET Framework type without some loss of precision.  
   
  If an error occurs during a `Fill` operation, the current row is not added to the `DataTable`. The `FillError` event enables you to resolve the error and add the row, or to ignore the excluded row and continue the `Fill` operation.  

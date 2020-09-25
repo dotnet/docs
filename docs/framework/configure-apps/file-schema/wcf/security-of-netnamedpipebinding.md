@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: bb3cb022-637e-49fd-92e8-6766038affa7
 ---
 # \<security> of \<netNamedPipeBinding>
+
 Defines the security settings for a binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -26,6 +27,7 @@ Defines the security settings for a binding.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

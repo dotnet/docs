@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 3f40bacd-3fac-4741-b204-852f693d4340
 ---
 # No accessible 'Main' method with an appropriate signature was found in '\<name>'
+
 Command-line applications must have a `Sub Main` defined. `Main` must be declared as `Public Shared` if it is defined in a class, or as `Public` if defined in a module.  
   
  **Error ID:** BC30737  

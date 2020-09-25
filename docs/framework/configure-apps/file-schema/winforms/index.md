@@ -4,6 +4,7 @@ ms.date: "04/07/2017"
 ms.assetid: 6eb142d5-fc98-40e2-9d90-84733f2a27ba
 ---
 # Windows Forms Configuration Section
+
 Windows Forms configuration settings allow a Windows Forms app to store and retrieve information about customized application settings such as multi-monitor support, high DPI support, and other predefined configuration settings.
 
 Windows Forms application configuration settings are stored in an application configuration file's `System.Windows.Forms.ApplicationConfigurationSection` element.
@@ -47,4 +48,4 @@ The `<System.Windows.Forms.ApplicationConfigurationSection>` element can include
 ## See also
 
 - [Configuration File Schema](../index.md)
-- [High DPI Support in Windows Forms](../../../winforms/high-dpi-support-in-windows-forms.md)
+- [High DPI Support in Windows Forms](/dotnet/desktop/winforms/high-dpi-support-in-windows-forms)

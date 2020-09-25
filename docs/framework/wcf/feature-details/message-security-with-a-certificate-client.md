@@ -142,4 +142,4 @@ The following scenario shows a Windows Communication Foundation (WCF) client and
 - [Security Overview](security-overview.md)
 - [Service Identity and Authentication](service-identity-and-authentication.md)
 - [Working with Certificates](working-with-certificates.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: d9b3d625-be3f-4768-8e0d-1b7e6929f6a8
 ---
 # \<dataContractSerializer> of \<system.runtime.serialization>
+
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -31,6 +32,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -53,6 +55,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 |[\<system.runtime.serialization>](system-runtime-serialization.md)|Represents the root element for the <xref:System.Runtime.Serialization> namespace section and contains elements for setting options of the <xref:System.Runtime.Serialization.DataContractSerializer>.|  
   
 ## Remarks  
+
  For more information about known types, see <xref:System.Runtime.Serialization.DataContractSerializer> and [Data Contract Known Types](../../../wcf/feature-details/data-contract-known-types.md).  
   
 ## See also

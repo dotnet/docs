@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 ---
 # Data Transformations with LINQ (C#)
+
 Language-Integrated Query (LINQ) is not only about retrieving data. It is also a powerful tool for transforming data. By using a LINQ query, you can use a source sequence as input and modify it in many ways to create a new output sequence. You can modify the sequence itself without modifying the elements themselves by sorting and grouping. But perhaps the most powerful feature of LINQ queries is the ability to create new types. This is accomplished in the [select](../../../language-reference/keywords/select-clause.md) clause. For example, you can perform the following tasks:  
   
 - Merge multiple input sequences into a single output sequence that has a new type.  
@@ -26,6 +27,7 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
  These are just several examples. Of course, these transformations can be combined in various ways in the same query. Furthermore, the output sequence of one query can be used as the input sequence for a new query.  
   
 ## Joining Multiple Inputs into One Output Sequence  
+
  You can use a LINQ query to create an output sequence that contains elements from more than one input sequence. The following example shows how to combine two in-memory data structures, but the same principles can be applied to combine data from XML or SQL or DataSet sources. Assume the following two class types:  
   
  [!code-csharp[CsLINQGettingStarted#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#7)]  
@@ -37,6 +39,7 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
  For more information, see [join clause](../../../language-reference/keywords/join-clause.md) and [select clause](../../../language-reference/keywords/select-clause.md).  
   
 ## Selecting a Subset of each Source Element  
+
  There are two primary ways to select a subset of each element in the source sequence:  
   
 1. To select just one member of the source element, use the dot operation. In the following example, assume that a `Customer` object contains several public properties including a string named `City`. When executed, this query will produce an output sequence of strings.  
@@ -56,6 +59,7 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
  For more information, see [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md) and [Anonymous Types](../../classes-and-structs/anonymous-types.md).  
   
 ## Transforming in-Memory Objects into XML  
+
  LINQ queries make it easy to transform data between in-memory data structures, SQL databases, ADO.NET Datasets and XML streams or documents. The following example transforms objects in an in-memory data structure into XML elements.  
   
  [!code-csharp[CsLINQGettingStarted#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#9)]  
@@ -82,9 +86,10 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
 </Root>  
 ```  
   
- For more information, see [Creating XML Trees in C# (LINQ to XML)](./creating-xml-trees-linq-to-xml-2.md).  
+ For more information, see [Creating XML Trees in C# (LINQ to XML)](../../../../standard/linq/create-xml-trees.md).  
   
 ## Performing Operations on Source Elements  
+
  An output sequence might not contain any elements or element properties from the source sequence. The output might instead be a sequence of values that is computed by using the source elements as input arguments.
 
  The following query will take a sequence of numbers that represent radii of circles, calculate the area for each radius, and return an output sequence containing strings formatted with the calculated area.
@@ -101,6 +106,6 @@ Language-Integrated Query (LINQ) is not only about retrieving data. It is also a
 - [Language-Integrated Query (LINQ) (C#)](./index.md)
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
-- [LINQ to XML (C#)](./linq-to-xml-overview.md)
+- [LINQ to XML (C#)](../../../../standard/linq/linq-xml-overview.md)
 - [LINQ Query Expressions](../../../linq/index.md)
 - [select clause](../../../language-reference/keywords/select-clause.md)

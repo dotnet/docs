@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: 08fa34e8-2ffa-470d-ba62-e511a5f8558e
 ---
 # Managing Permissions with Stored Procedures in SQL Server
+
 One method of creating multiple lines of defense around your database is to implement all data access using stored procedures or user-defined functions. You revoke or deny all permissions to underlying objects, such as tables, and grant EXECUTE permissions on stored procedures. This effectively creates a security perimeter around your data and database objects.  
   
 ## Stored Procedure Benefits  
+
  Stored procedures have the following benefits:  
   
 - Data logic and business rules can be encapsulated so that users can access data and objects only in ways that developers and database administrators intend.  
@@ -25,9 +27,11 @@ One method of creating multiple lines of defense around your database is to impl
 - Stored procedures can reduce network traffic by combining multiple operations into one procedure call.  
   
 ## Stored Procedure Execution  
+
  Stored procedures take advantage of ownership chaining to provide access to data so that users do not need to have explicit permission to access database objects. An ownership chain exists when objects that access each other sequentially are owned by the same user. For example, a stored procedure can call other stored procedures, or a stored procedure can access multiple tables. If all objects in the chain of execution have the same owner, then SQL Server only checks the EXECUTE permission for the caller, not the caller's permissions on other objects. Therefore you need to grant only EXECUTE permissions on stored procedures; you can revoke or deny all permissions on the underlying tables.  
   
 ## Best Practices  
+
  Simply writing stored procedures isn't enough to adequately secure your application. You should also consider the following potential security holes.  
   
 - Grant EXECUTE permissions on the stored procedures for database roles you want to be able to access the data.  
@@ -45,6 +49,7 @@ One method of creating multiple lines of defense around your database is to impl
 - Avoid dynamic SQL unless absolutely necessary. Use the Transact-SQL QUOTENAME() function to delimit a string value and escape any occurrence of the delimiter in the input string.  
   
 ## External Resources  
+
  For more information, see the following resources.  
   
 |Resource|Description|  

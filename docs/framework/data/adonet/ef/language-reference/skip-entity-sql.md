@@ -32,11 +32,11 @@ If a SKIP expression sub-clause is present in an ORDER BY clause, the results wi
 > SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP 5L
 > ```
 
-The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.
+The [!INCLUDE[esql](../../../../../../includes/esql-md.md)] query in [How to: Page Through Query Results](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100)) uses the ORDER BY operator with SKIP to specify the sort order used on objects returned in a SELECT statement.
 
 ## See also
 
 - [ORDER BY](order-by-entity-sql.md)
-- [How to: Page Through Query Results](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
+- [How to: Page Through Query Results](/previous-versions/dotnet/netframework-4.0/bb738702(v=vs.100))
 - [Paging](paging-entity-sql.md)
 - [TOP](top-entity-sql.md)

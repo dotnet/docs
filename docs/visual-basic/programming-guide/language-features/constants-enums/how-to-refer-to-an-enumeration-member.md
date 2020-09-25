@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: bbb5c3cc-7cdb-4814-8d6a-a6d91546ed1e
 ---
 # How to: Refer to an Enumeration Member (Visual Basic)
+
 Enumerations provide a convenient way to work with sets of related constants and to associate constant values with names. For example, you can declare an enumeration for a set of integer constants associated with the days of the week, and then use the names of the days rather than their integer values in your code.  
   
  You can avoid using fully qualified names with the `Imports` statement. For more information, see [Enumerations and Name Qualification](enumerations-and-name-qualification.md).  

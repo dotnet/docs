@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
 ---
 # \<service>
+
 The `service` element contains the settings for a Windows Communication Foundation (WCF) service. It also contains endpoints that expose the service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ The `service` element contains the settings for a Windows Communication Foundati
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -43,6 +45,7 @@ The `service` element contains the settings for a Windows Communication Foundati
 |[\<services>](services.md)|The root element of all WCF configuration elements.|  
   
 ## Remarks  
+
  Services are defined in the `services` section of the configuration file. An assembly can contain any number of services. Each service has its own `service` configuration section. This section and its content define the service contract, behavior, and endpoints of the particular service.  
   
  The `behaviorConfiguration` element is also optional. It identifies the behavior the service uses. The behavior specified in this attribute must link to a behavior in scope in the same configuration file.  
@@ -50,6 +53,7 @@ The `service` element contains the settings for a Windows Communication Foundati
  Each service exposes one or more endpoints, which has its own address and binding. All bindings used within the configuration file must be defined in the scope of the file. Binding are linked to endpoints through the combination of the attributes `name` and `bindingConfiguration`. The `name` attribute describes the section the binding is defined in. The `bindingConfiguration` attribute defines which configuration within the binding section is used. A binding section can define several configurations.  
   
 ## Example  
+
  This is an example of a service configuration.  
   
 ```xml  

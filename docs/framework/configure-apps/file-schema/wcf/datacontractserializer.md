@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a47513a4-a96c-4350-8586-daacb05dee71
 ---
 # dataContractSerializer
+
 Contains configuration data for the <xref:System.Runtime.Serialization.DataContractSerializer>.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 |maxItemsInObjectGraph|An integer that specifies the maximum number of items to serialize or deserialize.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -40,6 +43,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 |[\<behavior>](behavior-of-endpointbehaviors.md)|Specifies an endpoint behavior.|  
   
 ## Remarks  
+
  See the <xref:System.Runtime.Serialization.DataContractSerializer> documentation for more information about known types.  
   
 > [!CAUTION]

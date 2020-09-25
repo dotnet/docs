@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9b3d9233-ef35-477a-bf5d-efd1e80a52f4
 ---
 # \<certificate> Element
+
 Specifies an X.509 certificate to use for signing and encrypting messages for peer-to-peer clients.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 |`X509FindType`|Defines the type of X.509 search to be executed. Valid values include the following:<br /><br /> -   FindByThumbPrint<br />-   FindBySubjectName<br />-   FindBySubjectDistinguishedName<br />-   FindByIssuerName<br />-   FindByIssuerDistinguishedName<br />-   FindBySerialNumber<br />-   FindByTimeValid<br />-   FindByTimeNotYetValid<br />-   FindByTemplateName<br />-   FindByApplicationPolicy<br />-   FindByCertificatePolicy<br />-   FindByExtension<br />-   FindByKeyUsage<br />-   FindBySubjectKeyIdentifier<br /><br /> The type contained in the `findValue` attribute must satisfy the requirements of the specified `X509FindType`.<br /><br /> The default value is FindBySubjectDistinguishedName.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,11 +49,13 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 |[\<peer>](peer-of-clientcredentials-element.md)|Specifies credentials used when authenticating peer-to-peer clients.|  
   
 ## Remarks  
+
  This configuration element contains a X509Certificate2 instance used when authenticating neighbors in the peer mesh.  
   
  For more information about peer-to-peer programming, see [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md).  
   
 ## Example  
+
  The following code specifies how to find the certificate used in a peer-to-peer scenario.  
   
 ```xml  
@@ -77,6 +82,6 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 - <xref:System.ServiceModel.Security.PeerCredential.Certificate%2A>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Peer Channel Message Authentication](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Peer Channel Custom Authentication](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

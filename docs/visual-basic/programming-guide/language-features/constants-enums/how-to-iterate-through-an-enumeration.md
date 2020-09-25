@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: e5aa10eb-cfcd-4a3b-8e76-f06b8f2002be
 ---
 # How to: Iterate Through An Enumeration in Visual Basic
+
 Enumerations provide a convenient way to work with sets of related constants, and to associate constant values with names. To iterate through an enumeration, you can move it into an array using the <xref:System.Enum.GetValues%2A> method. You could also iterate through an enumeration using a `For...Each` statement, using the <xref:System.Enum.GetNames%2A> or <xref:System.Enum.GetValues%2A> method to extract the string or numeric value.  
   
 ### To iterate through an enumeration  

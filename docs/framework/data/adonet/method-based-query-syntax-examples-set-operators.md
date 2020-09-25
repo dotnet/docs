@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: fa93af15-28af-4b5e-846b-897308410edb
 ---
 # Method-Based Query Syntax Examples: Set Operators (LINQ to DataSet)
+
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Except%2A>, <xref:System.Linq.Enumerable.Intersect%2A>, and <xref:System.Linq.Enumerable.Union%2A> operators to perform value-based comparison operations on sets of data rows.[Loading Data Into a DataSet](loading-data-into-a-dataset.md) See [Comparing DataRows](comparing-datarows-linq-to-dataset.md) for more information on <xref:System.Data.DataRowComparer>.  
   
  The `FillDataSet` method used in these examples is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md).  
@@ -23,6 +24,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Distinct  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.Distinct%2A> method to remove duplicate elements in a sequence.  
   
  [!code-csharp[DP LINQ to DataSet Examples#DistinctRows](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#distinctrows)]
@@ -31,6 +33,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Except  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.Except%2A> method to return contacts that appear in the first table but not in the second.  
   
  [!code-csharp[DP LINQ to DataSet Examples#Except2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#except2)]
@@ -39,6 +42,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Intersect  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.Intersect%2A> method to return contacts that appear in both tables.  
   
  [!code-csharp[DP LINQ to DataSet Examples#Intersect2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#intersect2)]
@@ -47,6 +51,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Union  
   
 ### Example  
+
  This example uses the <xref:System.Linq.Enumerable.Union%2A> method to return unique contacts from either of the two tables.  
   
  [!code-csharp[DP LINQ to DataSet Examples#Union2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#union2)]

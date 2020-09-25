@@ -7,12 +7,14 @@ dev_langs:
 ms.assetid: ee3b8673-a2e7-4b2d-9b5c-4972ff9e665d
 ---
 # Return the Average Value From a Numeric Sequence
+
 The <xref:System.Linq.Enumerable.Average%2A> operator computes the average of a sequence of numeric values.  
   
 > [!NOTE]
 > The [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translation of `Average` of integer values is computed as an integer, not as a double.  
   
 ## Example  
+
  The following example returns the average of `Freight` values in the `Orders` table.  
   
  Results from the sample Northwind database would be `78.2442`.  
@@ -21,6 +23,7 @@ The <xref:System.Linq.Enumerable.Average%2A> operator computes the average of a 
  [!code-vb[DLinqQueryExamples#1](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#1)]  
   
 ## Example  
+
  The following example returns the average of the unit price of all `Products` in the `Products` table.  
   
  Results from the sample Northwind database would be `28.8663`.  
@@ -29,6 +32,7 @@ The <xref:System.Linq.Enumerable.Average%2A> operator computes the average of a 
  [!code-vb[DLinqQueryExamples#2](../../../../../../samples/snippets/visualbasic/VS_Snippets_Data/DLinqQueryExamples/vb/Module1.vb#2)]  
   
 ## Example  
+
  The following example uses the `Average` operator to find those `Products` whose unit price is higher than the average unit price of the category it belongs to. The example then displays the results in groups.  
   
  Note that this example requires the use of the `var` keyword in C#, because the return type is anonymous.  

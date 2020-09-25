@@ -16,6 +16,7 @@ helpviewer_keywords:
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
 ---
 # Named and Optional Arguments (C# Programming Guide)
+
 C# 4 introduces named and optional arguments. *Named arguments* enable you to specify an argument for a particular parameter by associating the argument with the parameter's name rather than with the parameter's position in the parameter list. *Optional arguments* enable you to omit arguments for some parameters. Both techniques can be used with methods, indexers, constructors, and delegates.  
   
  When you use named and optional arguments, the arguments are evaluated in the order in which they appear in the argument list, not the parameter list.  
@@ -23,6 +24,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
  Named and optional parameters, when used together, enable you to supply arguments for only a few parameters from a list of optional parameters. This capability greatly facilitates calls to COM interfaces such as the Microsoft Office Automation APIs.  
   
 ## Named Arguments  
+
  Named arguments free you from the need to remember or to look up the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called in the standard way by sending arguments by position, in the order defined by the function.
   
  `PrintOrderDetails("Gift Shop", 31, "Red Mug");`
@@ -53,11 +55,13 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
  ```
   
 ## Example  
+
  The following code implements the examples from this section along with some additional ones.  
   
  [!code-csharp[csProgGuideNamedAndOptional#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/program.cs#1)]  
   
 ## Optional Arguments  
+
  The definition of a method, constructor, indexer, or delegate can specify that its parameters are required or that they are optional. Any call must provide arguments for all required parameters, but can omit arguments for optional parameters.  
   
  Each optional parameter has a default value as part of its definition. If no argument is sent for that parameter, the default value is used. A default value must be one of the following types of expressions:  
@@ -88,11 +92,13 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
 > You can also declare optional parameters by using the .NET <xref:System.Runtime.InteropServices.OptionalAttribute> class. `OptionalAttribute` parameters do not require a default value.  
   
 ## Example  
+
  In the following example, the constructor for `ExampleClass` has one parameter, which is optional. Instance method `ExampleMethod` has one required parameter, `required`, and two optional parameters, `optionalstr` and `optionalint`. The code in `Main` shows the different ways in which the constructor and method can be invoked.  
   
  [!code-csharp[csProgGuideNamedAndOptional#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/optional.cs#2)]  
   
 ## COM Interfaces  
+
  Named and optional arguments, along with support for dynamic objects and other enhancements, greatly improve interoperability with COM APIs, such as Office Automation APIs.  
   
  For example, the <xref:Microsoft.Office.Interop.Excel.Range.AutoFormat%2A> method in the Microsoft Office Excel <xref:Microsoft.Office.Interop.Excel.Range> interface has seven parameters, all of which are optional. These parameters are shown in the following illustration:  
@@ -110,6 +116,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
  For more information and examples, see [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../interop/how-to-access-office-onterop-objects.md).  
   
 ## Overload Resolution  
+
  Use of named and optional arguments affects overload resolution in the following ways:  
   
 - A method, indexer, or constructor is a candidate for execution if each of its parameters either is optional or corresponds, by name or by position, to a single argument in the calling statement, and that argument can be converted to the type of the parameter.  
@@ -119,6 +126,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
 - If two candidates are judged to be equally good, preference goes to a candidate that does not have optional parameters for which arguments were omitted in the call. This is a consequence of a general preference in overload resolution for candidates that have fewer parameters.  
   
 ## C# Language Specification  
+
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also

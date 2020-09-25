@@ -13,11 +13,13 @@ helpviewer_keywords:
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
 ---
 # How to: Use a Class that Defines Operators (Visual Basic)
+
 If you are using a class or structure that defines its own operators, you can access those operators from Visual Basic.  
   
  Defining an operator on a class or structure is also called *overloading* the operator.  
   
 ## Example  
+
  The following example accesses the SQL structure <xref:System.Data.SqlTypes.SqlString>, which defines the conversion operators ([CType Function](../../../language-reference/functions/ctype-function.md)) in both directions between a SQL string and a Visual Basic string. Use `CType(`*SQL string expression*, `String)` to convert a SQL string to a Visual Basic string, and `CType(`*Visual Basic string expression*, <xref:System.Data.SqlTypes.SqlString>`)` to convert in the other direction.  
   
  [!code-vb[VbVbcnProcedures#30](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnProcedures/VB/Class1.vb#30)]  
@@ -27,6 +29,7 @@ If you are using a class or structure that defines its own operators, you can ac
  The <xref:System.Data.SqlTypes.SqlString> structure defines a conversion operator ([CType Function](../../../language-reference/functions/ctype-function.md)) from `String` to <xref:System.Data.SqlTypes.SqlString> and another from <xref:System.Data.SqlTypes.SqlString> to `String`. The statement that assigns `title` to `jobTitle` makes use of the first operator, and the <xref:Microsoft.VisualBasic.Interaction.MsgBox%2A> function call uses the second.  
   
 ## Compile the code  
+
  Be sure the class or structure you are using defines the operator you want to use. Do not assume that the class or structure has defined every operator available for overloading. For a list of available operators, see [Operator Statement](../../../language-reference/statements/operator-statement.md).  
   
  Include the appropriate `Imports` statement for the SQL string at the beginning of your source file (in this case <xref:System.Data.SqlTypes>).  

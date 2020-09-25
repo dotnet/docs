@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
 ---
 # Walkthrough: Validating That Passwords Are Complex (Visual Basic)
+
 This method checks for some strong-password characteristics and updates a string parameter with information about which checks the password fails.  
   
  Passwords can be used in a secure system to authorize a user. However, the passwords must be difficult for unauthorized users to guess. Attackers can use a *dictionary attack* program, which iterates through all of the words in a dictionary (or multiple dictionaries in different languages) and tests whether any of the words work as a user's password. Weak passwords such as "Yankees" or "Mustang" can be guessed quickly. Stronger passwords, such as "?You'L1N3vaFiNdMeyeP@sSWerd!", are much less likely to be guessed. A password-protected system should ensure that users choose strong passwords.  
@@ -15,9 +16,11 @@ This method checks for some strong-password characteristics and updates a string
 ## Example  
   
 ### Code  
+
  [!code-vb[VbVbcnRegEx#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnRegEx/VB/Class1.vb#1)]  
   
 ## Compile the code  
+
  Call this method by passing the string that contains that password.  
   
  This example requires:  
@@ -25,7 +28,8 @@ This method checks for some strong-password characteristics and updates a string
 - Access to the members of the <xref:System.Text.RegularExpressions> namespace. Add an `Imports` statement if you are not fully qualifying member names in your code. For more information, see [Imports Statement (.NET Namespace and Type)](../../../language-reference/statements/imports-statement-net-namespace-and-type.md).  
   
 ## Security  
- If you're moving the password across a network, you need to use a secure method for transferring data. For more information, see [ASP.NET Web Application Security](https://docs.microsoft.com/previous-versions/aspnet/330a99hc(v=vs.100)).
+
+ If you're moving the password across a network, you need to use a secure method for transferring data. For more information, see [ASP.NET Web Application Security](/previous-versions/aspnet/330a99hc(v=vs.100)).
   
  You can improve the accuracy of the `ValidatePassword` function by adding additional complexity checks:  
   
@@ -40,4 +44,4 @@ This method checks for some strong-password characteristics and updates a string
 ## See also
 
 - <xref:System.Text.RegularExpressions.Regex>
-- [ASP.NET Web Application Security](https://docs.microsoft.com/previous-versions/aspnet/330a99hc(v=vs.100))
+- [ASP.NET Web Application Security](/previous-versions/aspnet/330a99hc(v=vs.100))

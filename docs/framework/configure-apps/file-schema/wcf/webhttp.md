@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1f9d0754-d41e-44ce-a298-e51cb3096c64
 ---
 # \<webHttp>
+
 This element specifies the <xref:System.ServiceModel.Description.WebHttpBehavior> on an endpoint through configuration. This behavior, when used in conjunction with the [\<webHttpBinding>](webhttpbinding.md) standard binding, enables the Web programming model for a Windows Communication Foundation (WCF) service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -20,6 +21,7 @@ This element specifies the <xref:System.ServiceModel.Description.WebHttpBehavior
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -33,6 +35,7 @@ This element specifies the <xref:System.ServiceModel.Description.WebHttpBehavior
 |helpEnabled|Gets or sets a value that determines if the Help page is enabled.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

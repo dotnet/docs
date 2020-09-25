@@ -15,7 +15,7 @@ This chapter provides an overview of both logical and physical architecture patt
 
 Modern business applications follow a variety of architecture patterns. This section represents a survey of common patterns. The patterns listed here aren't necessarily all best practices, but illustrate different approaches.
 
-For more information, see [Azure application architecture guide](https://docs.microsoft.com/azure/architecture/guide/).
+For more information, see [Azure application architecture guide](/azure/architecture/guide/).
 
 ## Monoliths
 
@@ -59,7 +59,7 @@ Serverless may be used to implement one or more layers.
 
 ## Microservices
 
-**[Microservices](https://docs.microsoft.com/azure/architecture/guide/architecture-styles/microservices)** architectures contain common characteristics that include:
+**[Microservices](/azure/architecture/guide/architecture-styles/microservices)** architectures contain common characteristics that include:
 
 - Applications are composed of several small services.
 - Each service runs in its own process.

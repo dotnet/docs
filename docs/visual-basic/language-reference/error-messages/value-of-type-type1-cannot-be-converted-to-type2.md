@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 03d50c31-addd-4c90-9c53-725b84f9782e
 ---
 # Value of type 'type1' cannot be converted to 'type2'
+
 Value of type 'type1' cannot be converted to 'type2'. You can use the 'Value' property to get the string value of the first element of '\<parentElement>'.  
   
  An attempt has been made to implicitly cast an XML literal to a specific type. The XML literal cannot be implicitly cast to the specified type.  

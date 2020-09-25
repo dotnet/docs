@@ -5,6 +5,7 @@ ms.date: "03/30/2017"
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
 ---
 # ADO.NET Overview
+
 ADO.NET provides consistent access to data sources such as SQL Server and XML, and to data sources exposed through OLE DB and ODBC. Data-sharing consumer applications can use ADO.NET to connect to these data sources and retrieve, handle, and update the data that they contain.  
   
  ADO.NET separates data access from data manipulation into discrete components that can be used separately or in tandem. ADO.NET includes .NET Framework data providers for connecting to a database, executing commands, and retrieving results. Those results are either processed directly, placed in an ADO.NET <xref:System.Data.DataSet> object in order to be exposed to the user in an ad hoc manner, combined with data from multiple sources, or passed between tiers. The `DataSet` object can also be used independently of a .NET Framework data provider to manage data local to the application or sourced from XML.  
@@ -18,6 +19,7 @@ ADO.NET provides consistent access to data sources such as SQL Server and XML, a
  **Privacy Statement**: The System.Data.dll, System.Data.Design.dll, System.Data.OracleClient.dll, System.Data.SqlXml.dll, System.Data.Linq.dll, System.Data.SqlServerCe.dll, and System.Data.DataSetExtensions.dll assemblies do not distinguish between a user's private data and non-private data.  These assemblies do not collect, store, or transport any user's private data. However, third-party applications might collect, store, or transport a user's private data using these assemblies.  
   
 ## In This Section  
+
  [ADO.NET Architecture](ado-net-architecture.md)  
  Provides an overview of the architecture and components of ADO.NET.  
   
@@ -40,6 +42,7 @@ ADO.NET provides consistent access to data sources such as SQL Server and XML, a
  Provides code samples that retrieve data using the ADO.NET data providers.  
   
 ## Related Sections  
+
  [What's New in ADO.NET](whats-new.md)  
  Introduces features that are new in ADO.NET.  
   

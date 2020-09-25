@@ -70,6 +70,7 @@ From a Windows, macOS, or Linux command window perform the following steps:
     ```
 
     # [dotnet-svcutil 1.x](#tab/dotnetsvcutil1x)
+
     Open the `HelloSvcutil.csproj` project file in your editor, edit the `Project` element, and add the [`dotnet-svcutil` NuGet package](https://nuget.org/packages/dotnet-svcutil) as a CLI tool reference, using the following code:
 
     ```xml
@@ -152,6 +153,7 @@ You should see the following output:
 "Hello dotnet-svcutil!"
 
 For a detailed description of the `dotnet-svcutil` tool parameters, invoke the tool passing the help parameter as follows:
+
 # [dotnet-svcutil 2.x](#tab/dotnetsvcutil2x)
 
 ```dotnetcli

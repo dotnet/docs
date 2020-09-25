@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: cf4f4972-4724-4945-ba44-943a08549139
 ---
 # GROUP BY (Entity SQL)
+
 Specifies groups into which objects returned by a query ([SELECT](select-entity-sql.md)) expression are to be placed.  
   
 ## Syntax  
@@ -13,10 +14,12 @@ Specifies groups into which objects returned by a query ([SELECT](select-entity-
 ```  
   
 ## Arguments  
+
  `aliasedExpression`  
  Any valid query expression on which grouping is performed. `expression` can be a property or a non-aggregate expression that references a property returned by the FROM clause. Each expression in a GROUP BY clause must evaluate to a type that can be compared for equality. These types are generally scalar primitives such as numbers, strings, and dates. You cannot group by a collection.  
   
 ## Remarks  
+
  If aggregate functions are included in the SELECT clause \<select list>, GROUP BY calculates a summary value for each group. When GROUP BY is specified, either each property name in any nonaggregate expression in the select list should be included in the GROUP BY list, or the GROUP BY expression must exactly match the select list expression.  
   
 > [!NOTE]
@@ -54,6 +57,7 @@ GROUP BY 1   -- BAD, a constant is not allowed
  For an example of using GROUP BY, see [HAVING](having-entity-sql.md).  
   
 ## Example  
+
  The following Entity SQL query uses the GROUP BY operator to specify groups into which objects are returned by a query. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns PrimitiveType Results](../how-to-execute-a-query-that-returns-primitivetype-results.md).  

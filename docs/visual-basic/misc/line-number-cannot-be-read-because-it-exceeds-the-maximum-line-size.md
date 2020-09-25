@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: c59116d9-9856-47af-b32d-616d8f2d10d3
 ---
 # Line \<number> cannot be read because it exceeds the maximum line size.
+
 The line cannot be read because it exceeds the maximum line size. Usually this means that there is an opening quotation mark in the file, but no closing quotation mark.  
   
 ## To correct this error  

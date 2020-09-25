@@ -124,4 +124,4 @@ mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyT
 - [Ngen.exe (Native Image Generator)](ngen-exe-native-image-generator.md)
 - [Command Prompts](developer-command-prompt-for-vs.md)
 - [Improving Launch Performance for your Desktop Applications](https://devblogs.microsoft.com/dotnet/improving-launch-performance-for-your-desktop-applications/)
-- [An Overview of Performance Improvements in .NET 4.5](https://docs.microsoft.com/archive/msdn-magazine/2012/april/clr-an-overview-of-performance-improvements-in-net-4-5)
+- [An Overview of Performance Improvements in .NET 4.5](/archive/msdn-magazine/2012/april/clr-an-overview-of-performance-improvements-in-net-4-5)

@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 36ad5d1b-11f7-4012-8932-41962ac327d1
 ---
 # \<c> (Visual Basic)
+
 Indicates that text within a description is code.  
   
 ## Syntax  
@@ -22,11 +23,13 @@ Indicates that text within a description is code.
 |`text`|The text you would like to indicate as code.|  
   
 ## Remarks  
+
  The `<c>` tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](code.md) to indicate multiple lines as code.  
   
  Compile with [-doc](../../reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
+
  This example uses the `<c>` tag in the summary section to indicate that `Counter` is code.  
   
  [!code-vb[VbVbcnXmlDocComments#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnXmlDocComments/VB/Class1.vb#1)]  

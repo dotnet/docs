@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 678e21b4-6493-47c3-8359-fcf0d37e2138
 ---
 # \<knownCertificates>
+
 Represents a collection of X.509 certificates that are provided to authenticate security credentials issued from a Security Token Service (STS).  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -27,9 +28,11 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -45,6 +48,7 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 |[\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md)|Specifies a token issued as a service credential.|  
   
 ## Remarks  
+
  The issued token scenario has three stages. In the first stage, a client trying to access a service is referred to a *secure token service*. The secure token service then authenticates the client and subsequently issues the client a token, typically a Security Assertions Markup Language (SAML) token. The client then returns to the service with the token. The service examines the token for data that allows the service to authenticate the token and therefore the client. To authenticate the token, the certificate the secure token service uses must be known to the service.  
   
  The [\<issuedTokenAuthentication>](issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates> element](knowncertificates.md). Insert an [\<add>](add-of-knowncertificates.md) for each certificate, as shown in the following example.  

@@ -6,6 +6,7 @@ helpviewer_keywords:
 ms.assetid: 167f77d4-7cb2-4a31-9dc9-0fd0b26fda7e
 ---
 # Arrays Summary (Visual Basic)
+
 Visual Basic language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  

@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
 ---
 # \<nameEntry> Element
+
 Maps a class name to a friendly algorithm name, which allows one class to have many friendly names.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -25,6 +26,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 |**class**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<cryptoClass>](cryptoclass-element.md) element.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -45,9 +48,11 @@ Maps a class name to a friendly algorithm name, which allows one class to have m
 |`system.web`|Specifies the root element for the ASP.NET configuration section.|  
   
 ## Remarks  
+
  The **name** attribute can be the name of one of the abstract classes found in the <xref:System.Security.Cryptography> namespace. When you call the **Create** method on an abstract cryptography class, the abstract class name is passed to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A> method. **CreateFromName** returns an instance of the type indicated by the **class** attribute. If the **name** attribute is a short name, such as RSA, you can use that name when calling the **CreateFromName** method.  
   
 ## Example  
+
  The following example shows how to use the **\<nameEntry>** element to reference a cryptography class and to configure the runtime. You can then pass the string "RSA" to the <xref:System.Security.Cryptography.CryptoConfig.CreateFromName%2A?displayProperty=nameWithType> method and use the <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create%2A> method to return a `MyCryptoRSAClass` object.  
   
 ```xml  

@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
 ---
 # RaiseEvent Statement
+
 Triggers an event declared at module level within a class, form, or document.  
   
 ## Syntax  
@@ -21,6 +22,7 @@ RaiseEvent eventname[( argumentlist )]
 ```  
   
 ## Parts  
+
  `eventname`  
  Required. Name of the event to trigger.  
   
@@ -28,6 +30,7 @@ RaiseEvent eventname[( argumentlist )]
  Optional. Comma-delimited list of variables, arrays, or expressions. The `argumentlist` argument must be enclosed by parentheses. If there are no arguments, the parentheses must be omitted.  
   
 ## Remarks  
+
  The required `eventname` is the name of an event declared within the module. It follows Visual Basic variable naming conventions.  
   
  If the event has not been declared within the module in which it is raised, an error occurs. The following code fragment illustrates an event declaration and a procedure in which the event is raised.  
@@ -45,6 +48,7 @@ RaiseEvent eventname[( argumentlist )]
 > You can change the default behavior of events by defining a custom event. For custom events, the `RaiseEvent` statement invokes the event's `RaiseEvent` accessor. For more information on custom events, see [Event Statement](event-statement.md).  
   
 ## Example  
+
  The following example uses events to count down seconds from 10 to 0. The code illustrates several of the event-related methods, properties, and statements, including the `RaiseEvent` statement.  
   
  The class that raises an event is the event source, and the methods that process the event are the event handlers. An event source can have multiple handlers for the events it generates. When the class raises the event, that event is raised on every class that has elected to handle events for that instance of the object.  
@@ -60,6 +64,7 @@ RaiseEvent eventname[( argumentlist )]
  [!code-vb[VbVbalrEvents#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#14)]  
   
 ## Example  
+
  Add the following code to the code for `Form1`. Replace any duplicate procedures that may exist, such as `Form_Load`, or `Button_Click`.  
   
  [!code-vb[VbVbalrEvents#15](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrEvents/VB/Class1.vb#15)]  

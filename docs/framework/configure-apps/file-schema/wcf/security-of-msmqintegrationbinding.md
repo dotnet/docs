@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ae5c68a8-14a2-4c6e-b9e0-3e94e3e9135e
 ---
 # \<security> of \<msmqIntegrationBinding>
+
 Defines the transport security settings for the Message Queuing (MSMQ) integration channel.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -32,6 +33,7 @@ Defines the transport security settings for the Message Queuing (MSMQ) integrati
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  

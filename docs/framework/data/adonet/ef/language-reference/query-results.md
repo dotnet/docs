@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: bcd7b699-4e50-4523-8c33-2f54a103d94e
 ---
 # Query Results
+
 After a LINQ to Entities query is converted to command trees and executed, the query results are usually returned as one of the following:  
   
 - A collection of zero or more typed entity objects or a projection of complex types in the conceptual model.  

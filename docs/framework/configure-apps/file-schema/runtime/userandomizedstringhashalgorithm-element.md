@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
 ---
 # \<UseRandomizedStringHashAlgorithm> Element
+
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Determines whether the common language runtime calculates hash codes for strings
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -40,6 +42,7 @@ Determines whether the common language runtime calculates hash codes for strings
 |`1`|The common language runtime computes hash codes for strings on a per application domain basis. Identical strings in different application domains and in different processes will have different hash codes.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -50,6 +53,7 @@ Determines whether the common language runtime calculates hash codes for strings
 |`runtime`|Contains information about runtime initialization options.|  
   
 ## Remarks  
+
  By default, the <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> method use a single hashing algorithm that produces a consistent hash code across application domains. This is equivalent to setting the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `0`. This is the hashing algorithm used in the .NET Framework 4.  
   
  The <xref:System.StringComparer> class and the <xref:System.String.GetHashCode%2A?displayProperty=nameWithType> method can also use a different hashing algorithm that computes hash codes on a per application domain basis. As a result, hash codes for equivalent strings will differ across application domains. This is an opt-in feature; to take advantage of it, you must set the `enabled` attribute of the `<UseRandomizedStringHashAlgorithm>` element to `1`.  
@@ -57,6 +61,7 @@ Determines whether the common language runtime calculates hash codes for strings
  The string lookup in a hash table is typically an O(1) operation. However, when a large number of collisions occur, the lookup can become an O(n<sup>2</sup>) operation. You can use the `<UseRandomizedStringHashAlgorithm>` configuration element to generate a random hashing algorithm per application domain, which in turn limits the number of potential collisions, particularly when the keys from which the hash codes are calculated are based on data input by users.  
   
 ## Example  
+
  The following example defines a `DisplayString` class that includes a private string constant, `s`, whose value is "This is a string." It also includes a `ShowStringHashCode` method that displays the string value and its hash code along with the name of the application domain in which the method is executing.  
   
  [!code-csharp[System.String.GetHashCode#2](../../../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.String.GetHashCode/CS/perdomain.cs#2)]

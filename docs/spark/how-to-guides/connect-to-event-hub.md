@@ -80,4 +80,4 @@ In this article, you will learn how to hook up your [.NET for Apache Spark](http
 
 ## Next steps
 
-* [Connect your Apache Spark application with Azure Event Hubs](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-kafka-spark-tutorial)
+* [Connect your Apache Spark application with Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/event-hubs-kafka-spark-tutorial)

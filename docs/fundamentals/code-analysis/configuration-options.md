@@ -15,11 +15,11 @@ Code analysis rules have various configuration options. These options are specif
 
 The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](rules/quality-rules-reference.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions).
 
-You can also configure additional options to customize rule behavior.
+You can also configure additional options to customize rule behavior:
 
-- Code quality rules have [additional configuration options](code-quality-rule-options.md), such as which method names the rule should apply to, or whether only the public API surface should be analyzed.
-- Code style rules have [custom code style options](/visualstudio/ide/editorconfig-code-style-settings-reference) for style configuration.
-- Third party analyzer rules can define their own configuration options, with custom key names and value format.
+- Code quality rules have [additional options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
+- Code style rules have [custom code style options](/visualstudio/ide/editorconfig-code-style-settings-reference).
+- Third party analyzer rules can define their own configuration options, with custom key names and value formats.
 
 You specify configuration options in an [EditorConfig file](/visualstudio/ide/create-portable-custom-editor-options). You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
 

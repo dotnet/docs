@@ -1,7 +1,7 @@
 ---
 description: "delegate operator - C# reference"
 title: "delegate operator - C# reference"
-ms.date: 09/22/2020
+ms.date: 09/25/2020
 helpviewer_keywords:
   - "delegate [C#]"
   - "anonymous method [C#]"
@@ -30,6 +30,12 @@ Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two 
 :::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetDiscards" :::
 
 For backwards compatibility, if only a single parameter is named `_`, `_` is treated as the name of that parameter within an anonymous method.
+
+Also beginning with C# 9.0, you can use the `static` modifier at the declaration of an anonymous method:
+
+:::code language="csharp" source="snippets/shared/DelegateOperator.cs" id="SnippetStatic" :::
+
+A static anonymous method can't capture local variables or instance state from enclosing scopes.
 
 You also use the `delegate` keyword to declare a [delegate type](../builtin-types/reference-types.md#the-delegate-type).
 

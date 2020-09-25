@@ -11,6 +11,7 @@ namespace operators
             Lambda();
             WithoutParameterList();
             Discards();
+            Static();
         }
 
         private static void AnonymousMethod()
@@ -50,6 +51,14 @@ namespace operators
             Func<int, int, int> constant = delegate (int _, int _) { return 42; };
             Console.WriteLine(constant(3, 4));  // output: 42
             // </SnippetDiscards>
+        }
+
+        private static void Static()
+        {
+            // <SnippetStatic>
+            Func<int, int, int> sum = static delegate (int a, int b) { return a + b; };
+            Console.WriteLine(sum(10, 4));  // output: 14
+            // </SnippetStatic>
         }
     }
 }

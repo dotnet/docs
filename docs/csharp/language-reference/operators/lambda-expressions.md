@@ -1,7 +1,7 @@
 ---
 title: "Lambda expressions - C# reference"
 description: Learn about lambda expressions. There are expression lambdas that have an expression as its body, or statement lambdas that have a statement block as its body.
-ms.date: 09/22/2020
+ms.date: 09/25/2020
 helpviewer_keywords: 
   - "lambda expressions [C#]"
   - "outer variables [C#]"
@@ -62,7 +62,7 @@ A statement lambda resembles an expression lambda except that its statements are
 
 The body of a statement lambda can consist of any number of statements; however, in practice there are typically no more than two or three.
 
-:::code interactive="try-dotnet" source="snippets/lambda-expressions/ExpressionAndStatementLambdas.cs" id="SnippetStatementLambda":::
+:::code language="csharp" interactive="try-dotnet-method" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatementLambda":::
 
 You cannot use statement lambdas to create expression trees.
 
@@ -70,25 +70,25 @@ You cannot use statement lambdas to create expression trees.
 
 You enclose input parameters of a lambda expression in parentheses. Specify zero input parameters with empty parentheses:  
 
-[!code-csharp[zero parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#ZeroParameters)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetZeroParameters":::
 
 If a lambda expression has only one input parameter, parentheses are optional:
 
-[!code-csharp[one parameter](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#OneParameter)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetOneParameter":::
 
 Two or more input parameters are separated by commas:
 
-[!code-csharp[two parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#TwoParameters)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetTwoParameters":::
 
 Sometimes the compiler can't infer the types of input parameters. You can specify the types explicitly as shown in the following example:
 
-[!code-csharp[explicitly typed parameters](snippets/lambda-expressions/ExpressionAndStatementLambdas.cs#ExplicitlyTypedParameters)]
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetExplicitlyTypedParameters":::
 
 Input parameter types must be all explicit or all implicit; otherwise, a [CS0748](../../misc/cs0748.md) compiler error occurs.
 
 Beginning with C# 9.0, you can use [discards](../../discards.md) to specify two or more input parameters of a lambda expression that aren't used in the expression:
 
-:::code language="csharp" source="snippets/lambda-expressions/ExpressionAndStatementLambdas.cs" id="SnippetDiscards":::
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetDiscards":::
 
 Lambda discard parameters may be useful when you use a lambda expression to [provide an event handler](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
@@ -225,11 +225,20 @@ The following rules apply to variable scope in lambda expressions:
 
 - A lambda expression cannot contain a [goto](../keywords/goto.md), [break](../keywords/break.md), or [continue](../keywords/continue.md) statement if the target of that jump statement is outside the lambda expression block. It's also an error to have a jump statement outside the lambda expression block if the target is inside the block.
 
+Beginning with C# 9.0, you can apply the `static` modifier to a lambda expression to prevent unintentional capture of local variables or instance state by the lambda:
+
+:::code language="csharp" source="snippets/lambda-expressions/GeneralExamples.cs" id="SnippetStatic":::
+
+A static lambda can't capture local variables or instance state from enclosing scopes, but may reference static members and constant definitions.
+
 ## C# language specification
 
 For more information, see the [Anonymous function expressions](~/_csharplang/spec/expressions.md#anonymous-function-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
-For more information about lambda discard parameters, see the [feature proposal note](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+For more information about features added in C# 9.0, see the following feature proposal notes:
+
+- [Lambda discard parameters](~/_csharplang/proposals/csharp-9.0/lambda-discard-parameters.md)
+- [Static anonymous functions](~/_csharplang/proposals/csharp-9.0/static-anonymous-functions.md)
 
 ## See also
 

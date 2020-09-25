@@ -51,22 +51,38 @@ Rule-specific options can be applied to a single rule, a set of rules, or all ru
 - [Rule severity level](#severity-level)
 - [Options specific to *code-quality* rules](code-quality-rule-options.md)
 
-To set one of these options for a single rule, use the following syntax.
+### Severity level
+
+The following table shows the different rule severities that you can configure for both [code quality](rules/quality-rules-reference.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
+
+| Severity | Build-time behavior |
+|-|-|
+| `error` | Violations appear as build *errors* and cause builds to fail.|
+| `warning` | Violations appear as build *warnings* but do not cause builds to fail (unless you have an option set to treat warnings as errors). |
+| `suggestion` | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. |
+| `silent` | Violations aren't visible to the user. |
+| `none` | Rule is suppressed completely. |
+| `default` | The default severity of the rule is used. |
+
+> [!TIP]
+> For information about how rule severities surface in Visual Studio, see [Severity levels](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
+
+To set the rule severity for a single rule, use the following syntax.
 
 ```ini
-dotnet_diagnostic.<rule ID>.<option name> = <option value>
+dotnet_diagnostic.<rule ID>.severity = <severity value>
 ```
 
-To set one of these options for a category of analyzer rules, use the following syntax.
+To set the default rule severity for a category of analyzer rules, use the following syntax.
 
 ```ini
-dotnet_analyzer_diagnostic.category-<rule category>.<option name> = <option value>
+dotnet_analyzer_diagnostic.category-<rule category>.severity = <severity value>
 ```
 
-To set one of these options for all analyzer rules, use the following syntax.
+To set the default rule severity for all analyzer rules, use the following syntax.
 
 ```ini
-dotnet_analyzer_diagnostic.<option name> = <option value>
+dotnet_analyzer_diagnostic.severity = <severity value>
 ```
 
 If you have multiple entries that can be applied to the same rule ID, precedence is chosen in the following order:
@@ -84,19 +100,3 @@ dotnet_analyzer_diagnostic.severity = suggestion
 ```
 
 In the preceding example, all three severity entries are applicable to CA1822. However, using the specified precedence rules, the first rule ID-based entry wins over the next entries. In this example, CA1822 will have an effective severity of `error`. All other rules within the "Performance" category will have a severity of `warning`.
-
-### Severity level
-
-The following table shows the different rule severities that you can configure for both [code quality](rules/quality-rules-reference.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
-
-| Severity | Build-time behavior |
-|-|-|
-| `error` | Violations appear as build *errors* and cause builds to fail.|
-| `warning` | Violations appear as build *warnings* but do not cause builds to fail (unless you have an option set to treat warnings as errors). |
-| `suggestion` | Violations appear as build *messages* and as suggestions in the Visual Studio IDE. |
-| `silent` | Violations aren't visible to the user. |
-| `none` | Rule is suppressed completely. |
-| `default` | The default severity of the rule is used. |
-
-> [!TIP]
-> For information about how rule severities surface in Visual Studio, see [Severity levels](/visualstudio/ide/editorconfig-language-conventions#severity-levels).

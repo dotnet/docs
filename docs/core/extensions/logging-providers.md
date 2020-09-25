@@ -138,7 +138,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    The following table defines the Keyword:
 
    | Keyword | Description                                                                                                                  |
-   |:-------:|------------------------------------------------------------------------------------------------------------------------------|
+   |---------|------------------------------------------------------------------------------------------------------------------------------|
    | 1       | Log meta events about the `LoggingEventSource`. Doesn't log events from `ILogger`.                                           |
    | 2       | Turns on the `Message` event when `ILogger.Log()` is called. Provides information in a programmatic (not formatted) way.     |
    | 4       | Turns on the `FormatMessage` event when `ILogger.Log()` is called. Provides the formatted string version of the information. |
@@ -147,7 +147,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    The following table lists the provider levels:
 
    | Provider Level | Description     |
-   |:--------------:|-----------------|
+   |----------------|-----------------|
    | 0              | `LogAlways`     |
    | 1              | `Critical`      |
    | 2              | `Error`         |
@@ -158,7 +158,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    The parsing for a category level can be either a string or a number:
 
    | Category named value | Numeric value |
-   |:--------------------:|---------------|
+   |----------------------|---------------|
    | `Trace`              | 0             |
    | `Debug`              | 1             |
    | `Information`        | 2             |
@@ -174,7 +174,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    If no  are specified, then the `EventSourceLogger` implementation attempts to convert the provider level to a category level and applies it to all categories.
 
    | Provider Level     | Category Level   |
-   |:------------------:|------------------|
+   |--------------------|------------------|
    | `Verbose`(5)       | `Debug`(1)       |
    | `Informational`(4) | `Information`(2) |
    | `Warning`(3)       | `Warning`(3)     |

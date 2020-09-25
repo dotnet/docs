@@ -75,7 +75,7 @@ namespace OOProgramming
         // Added for OO tutorial:
 
         // <DeclareMonthEndTransactions>
-        public virtual void PerformMonthEndTransactions(decimal? optionalDeposit) { }
+        public virtual void PerformMonthEndTransactions() { }
         // </DeclareMonthEndTransactions>
     }
 }

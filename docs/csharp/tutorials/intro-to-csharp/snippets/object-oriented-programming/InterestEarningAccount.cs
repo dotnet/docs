@@ -12,9 +12,15 @@ namespace OOProgramming
         }
         // </DerivedConstructor>
 
-        public override void PerformMonthEndTransactions(decimal? optionalDeposit)
+        // <ApplyMonthendInterest>
+        public override void PerformMonthEndTransactions()
         {
-            base.PerformMonthEndTransactions(optionalDeposit);
+            if (Balance > 500m)
+            {
+                var interest = Balance * 0.05m;
+                MakeDeposit(interest, DateTime.Now, "apply monthly interest");
+            }
         }
+        // </ApplyMonthendInterest>
     }
 }

@@ -66,7 +66,7 @@ The requirements for the new classes can be stated as follows:
   - Can have a negative balance, but not be greater in absolute value than the credit limit.
   - Will incur an interest charge each month where the end of month balance is not 0.
 - A gift card account:
-  - Can be refilled once each month, on the last day of the month.
+  - Can be refilled with a specified amount once each month, on the last day of the month.
 
 You can see that all three of these account types have an action that take places at the end of each month. However, each account type does different tasks. You use *polymorphism* to implement this code. You'll create a single `virtual` method in the `BankAccount` class:
 
@@ -74,8 +74,27 @@ You can see that all three of these account types have an action that take place
 
 The preceding code shows how you use the `virtual` keyword to declare a method in the base class that a derived class may provide a different implementation for. A `virtual` method is a method where any derived class may chose to re-implement. The derived classes use the `override` keyword to define the new implementation. Typically you refer to this as "overridng the base class implementation". You chose the `virtual` keyword and provide an empty implementation because you still want to use the basic `BankAccount` type for some bank accounts. The `BankAccount` class doesn't perform any actions at month end because no actions are needed. Often, creating a `virtual` function that has no implementation should make you consider an `abstract` method instead. If you didn't want to create instances of `BankAccount` objects, you could declare the `PerformMonthEndTransactions` method as `abstract`. You would make the `BankAccount` class `abstract` as well.
 
+Next, you need to define the implementation for two of the new classes you've created. Start with the `InterestEarningAccount`:
 
+:::code language="csharp" source="./snippets/object-oriented-programming/InterestEarningAccount.cs" id="ApplyMonthendInterest":::
 
+Add the following code to the `LineOfCreditAccount`. The code negates the balance to compute a positive interest charge:
+
+:::code language="csharp" source="./snippets/object-oriented-programming/LineOfCreditAccount.cs" id="ApplyMonthendInterest":::
+
+The `GiftCardAccount` class needs two changes to implement its month-end functionality. First, modify the constructor to include an optional amount to add each month:
+
+:::code language="csharp" source="./snippets/object-oriented-programming/GiftCardAccount.cs" id="GiftCardAccountConstruction":::
+
+The constructor provides a default value for the `monthlyDeposit` value so callers don't need to provide one for zero. Next, override the `PerformMonthEndTransactions` method to add the monthly deposit, if it was set to a non-zero value in the constructor:
+
+:::code language="csharp" source="./snippets/object-oriented-programming/GiftCardAccount.cs" id="AddMonthlyDeposit":::
+
+The override applies the monthly deposit if it was set in the constructor.
+
+## Test the implementation
+
+. it works, except for the line of credit.
 . Define the virtual methods (or change some to be virtual)
 . 
 

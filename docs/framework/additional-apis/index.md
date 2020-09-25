@@ -2,7 +2,7 @@
 title: Additional class libraries and APIs
 description: Explore additional class libraries and APIs in .NET, including out-of-band (OOB) projects, platform-specific libraries, and private APIs.
 ms.date: 08/11/2020
-helpviewer_keywords: 
+helpviewer_keywords:
   - "Additional class libraries"
   - "Additional managed libraries"
   - ".NET Framework out-of-band releases"
@@ -18,25 +18,25 @@ This article lists .NET Framework APIs that either were released out of band, ta
 
 To improve cross-platform development and introduce new functionality early, some .NET Framework features were released out of band (OOB).
 
-| Project | Description |  
-| ------- | ----------- |  
+| Project | Description |
+| ------- | ----------- |
 | <xref:System.Collections.Immutable> | Provides collections that are thread safe and guaranteed to never change their contents. |
 | <xref:System.Net.Http.WinHttpHandler> | Provides a message handler for <xref:System.Net.Http.HttpClient> based on the WinHTTP interface of Windows. |
 | <xref:System.Numerics> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.|
-| <xref:System.Threading.Tasks.Dataflow> | The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications. |  
+| <xref:System.Threading.Tasks.Dataflow> | The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications. |
 
 ## Platform-specific libraries
 
 Some libraries target specific platforms. For example, the <xref:System.Text.CodePagesEncodingProvider> class makes code page encodings available to UWP apps developed using .NET Framework.
-  
-| Project | Description |  
-| ------- | ----------- |  
-| <xref:System.Text.CodePagesEncodingProvider> | Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform. |  
-  
-## Private APIs  
 
-These APIs support the product infrastructure and are not intended or supported to be used directly from your code.  
-  
+| Project | Description |
+| ------- | ----------- |
+| <xref:System.Text.CodePagesEncodingProvider> | Extends the <xref:System.Text.EncodingProvider> class to make code page encodings available to apps that target the Universal Windows Platform. |
+
+## Private APIs
+
+These APIs support the product infrastructure and are not intended or supported to be used directly from your code.
+
 * [Microsoft.SqlServer.Server.SmiOrderProperty.Item property](microsoft.sqlserver.server.smiorderproperty.item.md)
 * [System.Exception.PrepForRemoting method](system.exception.prepforremoting.md)
 * [System.Data.SqlTypes.SqlChars.Stream property](system.data.sqltypes.sqlchars.stream.md)
@@ -82,6 +82,7 @@ These APIs support the product infrastructure and are not intended or supported 
 * [System.ServiceModel.Channels.Message.BodyToString method](system.servicemodel.channels.message.bodytostring.md)
 * [System.ServiceModel.Channels.Message.WriteStartHeaders method](system.servicemodel.channels.message.writestartheaders.md)
 * [System.Web.Compilation.ControlBuilderInterceptor class](controlbuilderinterceptor-class.md)
+* [System.Windows.Controls.GridViewHeaderRowPresenter methods](system.windows.controls.gridviewheaderrowpresenter.md)
 * [System.Windows.Diagnostics.VisualDiagnostics.s\_isDebuggerCheckDisabledForTestPurposes field](s-isdebuggercheckdisabledfortestpurposes-field.md)
 * [System.Windows.Forms.Design.DataMemberFieldEditor class](datamemberfieldeditor-class.md)
 * [System.Windows.Forms.Design.DataMemberListEditor class](datamemberlisteditor-class.md)
@@ -97,7 +98,7 @@ These APIs support the product infrastructure and are not intended or supported 
 * [stdole.IPictureDisp.Handle property](stdole.ipicturedisp.handle.md)
 * [stdole.StdFont interface](stdole.stdfont.md)
 * [stdole.StdPicture interface](stdole.stdpicture.md)
-  
+
 ## See also
 
 * [.NET Framework and Out-of-Band Releases](../get-started/the-net-framework-and-out-of-band-releases.md)

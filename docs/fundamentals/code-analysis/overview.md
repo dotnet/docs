@@ -45,7 +45,7 @@ The following rules are enabled, by default, in .NET 5.0 Preview 8.
 
 You can change the severity of these rules to disable them or elevate them to errors.
 
-For a full list of available code quality rules, see [Code quality rules](rules/quality-rules-reference.md).
+For a full list of available code quality rules, see [Code quality rules](quality-rules/index.md).
 
 ### Enable additional rules
 
@@ -140,7 +140,7 @@ For more information about rule severities, see [Configure rule severity](config
 
 ## See also
 
-- [Code quality analysis rule reference](rules/quality-rules-reference.md)
+- [Code quality analysis rule reference](quality-rules/index.md)
 - [Code style analysis rule reference](/visualstudio/ide/editorconfig-code-style-settings-reference)
 - [Code analysis in Visual Studio](/visualstudio/code-quality/roslyn-analyzers-overview)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)

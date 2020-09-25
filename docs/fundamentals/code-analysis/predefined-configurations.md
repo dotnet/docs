@@ -1,6 +1,6 @@
 ---
-title: Configure code analysis rules
-description: Learn how to configure code analysis rules in an EditorConfig file.
+title: Predefined configuration files (code analysis)
+description: Learn about using predefined editorconfig and rule set files to target specific types of code analysis.
 ms.date: 09/24/2020
 ms.topic: conceptual
 ---

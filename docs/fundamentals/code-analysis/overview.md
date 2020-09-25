@@ -114,7 +114,7 @@ Steps to enable code style analysis on build:
    dotnet_diagnostic.IDE0040.severity = warning
    ```
 
-   Alternatively, you can [configure the entire "Style" category](configuration-options.md#configure-multiple-rules) to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
+   Alternatively, you can configure the entire "Style" category to be a warning or error, by default, and then selectively turn off rules that you don't want to run on build. For example:
 
    ```ini
    [*.{cs,vb}]

@@ -13,7 +13,7 @@ Single File deployment is available for both the [framework-dependent deployment
 
 ## API incompatibility
 
-There are some caveats that you need to be aware for single-file use, first of which is the use of path information to locate a file relative to the location of your application. The <xref:System.Reflection.Assembly.Location?displayProperty=nameWithType> API will return an empty string, which is the default behavior for assemblies loaded from memory. The compiler will give a [warning](https://docs.microsoft.com/visualstudio/code-quality/il3000) for this API during build time to alert the developer to the specific behavior. If the path to the application directory is needed, the <xref:System.AppContext.BaseDirectory?displayProperty=nameWithType> API will return the directory where the application executable resides. There is also an option, `ExcludeFromSingleFile`, to exclude files from being bundled that is described [below](#exclude-files-from-being-embedded) in detail.
+Some APIs are not compatible with single-file deployment and applications may require modification if they use these APIs. If you use a third-party framework or package, it's possible that they may also use one of these APIs and need modification. The most common cause of problems is dependence on file paths for files or DLLs shipped with the application.
 
 The table below has the relevant runtime library API details for single-file use.
 

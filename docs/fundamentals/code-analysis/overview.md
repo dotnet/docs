@@ -36,11 +36,13 @@ The following rules are enabled, by default, in .NET 5.0 Preview 8.
 
 | Diagnostic ID | Category | Severity | Description |
 | - | - | - | - |
+| [CA1416](/visualstudio/code-quality/ca1416) | Interoperability | Warning | Platform compatibility analyzer |
 | [CA1417](/visualstudio/code-quality/ca1417) | Interoperability | Warning | Do not use `OutAttribute` on string parameters for P/Invokes |
 | [CA1831](/visualstudio/code-quality/ca1831) | Performance | Warning | Use `AsSpan` instead of range-based indexers for string when appropriate |
 | [CA2013](/visualstudio/code-quality/ca2013) | Reliability | Warning | Do not use `ReferenceEquals` with value types |
 | [CA2014](/visualstudio/code-quality/ca2014) | Reliability | Warning | Do not use `stackalloc` in loops |
 | [CA2015](/visualstudio/code-quality/ca2015) | Reliability | Warning | Do not define finalizers for types derived from <xref:System.Buffers.MemoryManager%601> |
+| [CA2200](/visualstudio/code-quality/ca2200) | Usage | Warning | Rethrow to preserve stack details
 | [CA2247](/visualstudio/code-quality/ca2247) | Usage | Warning | Argument passed to TaskCompletionSource constructor should be <xref:System.Threading.Tasks.TaskCreationOptions> enum instead of <xref:System.Threading.Tasks.TaskContinuationOptions> |
 
 You can change the severity of these rules to disable them or elevate them to errors.

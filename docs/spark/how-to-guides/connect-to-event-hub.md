@@ -22,9 +22,9 @@ In this article, you will learn how to hook up your [.NET for Apache Spark](http
     1. Update **BOOTSTRAP_SERVERS** to `hostname:9093` (9093 is the port used to communicate with Event Hubs, see [troubleshooting guide](https://docs.microsoft.com/azure/event-hubs/troubleshooting-guide))
     2. Update **EH_SASL** with the Connection string obtained from Step 2 like so:
 
-    ```csharp
-    string EH_SASL = "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"$ConnectionString\" password=\"<CONNECTION_STRING>\";";
-    ```
+        ```csharp
+        string EH_SASL = "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"$ConnectionString\" password=\"<CONNECTION_STRING>\";";
+        ```
 
 4. You can now start streaming with Event Hubs as you would with Kafka. Sample code as shown below:
 

@@ -17,7 +17,7 @@ The default .NET Worker app templates:
   - [Console](#console)
   - [Debug](#debug)
   - [EventSource](#event-source)
-  - [EventLog](#welog): Windows only
+  - [EventLog](#windows-eventlog): Windows only
 
 :::code language="csharp" source="snippets/configuration/console/Program.cs" highlight="12":::
 
@@ -28,12 +28,35 @@ To override the default set of logging providers added by `Host.CreateDefaultBui
 - Calls <xref:Microsoft.Extensions.Logging.LoggingBuilderExtensions.ClearProviders%2A> to remove all the <xref:Microsoft.Extensions.Logging.ILoggerProvider> instances from the builder.
 - Adds the [Console](#console) logging provider.
 
-[!code-csharp[](index/samples/3.x/TodoApiDTO/Program.cs?name=snippet_AddProvider&highlight=5-6)]
+```csharp
+static IHostBuilder CreateHostBuilder(string[] args) =>
+    Host.CreateDefaultBuilder(args)
+        .ConfigureLogging(logging =>
+        {
+            logging.ClearProviders();
+            logging.AddConsole();
+        });
+```
 
 For additional providers, see:
 
-- [Built-in logging providers](logging.md#built-in-logging-providers).
-- [Third-party logging providers](logging.md#third-party-logging-providers).
+- [Built-in logging providers](#built-in-logging-providers).
+- [Third-party logging providers](#third-party-logging-providers).
+
+## Configure a service that depends on ILogger
+
+To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there is no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
+
+```csharp
+.ConfigureServices(services =>
+    services.AddSingleton<IExampleService>(container =>
+        new DefaultExampleService
+        {
+            Logger = container.GetRequiredService<ILogger<IExampleService>>()
+        }));
+```
+
+The preceding code is a [Func<IServiceProvider, IExampleService>](/dotnet/api/system.func-2) that runs the first time the DI container needs to construct an instance of `IExampleService`. You can access any of the registered services in this way.
 
 ## Built-in logging providers
 
@@ -42,7 +65,7 @@ Microsoft Extensions include the following logging providers as part of the shar
 - [Console](#console)
 - [Debug](#debug)
 - [EventSource](#event-source)
-- [EventLog](#windows-eventLog)
+- [EventLog](#windows-eventlog)
 
 The following logging providers are shipped by Microsoft, but not as part of the shared framework. They must be installed as additional nuget.
 
@@ -51,7 +74,7 @@ The following logging providers are shipped by Microsoft, but not as part of the
 
 ### Console
 
-The `Console` provider logs output to the console. For more information on viewing `Console` logs in development, see [Logging output from dotnet run and Visual Studio](#logging-output-from-dotnet-run-and-visual-studio).
+The `Console` provider logs output to the console. For more information on viewing `Console` logs in development, see [Logging output from dotnet run and Visual Studio](logging.md#logging-output-from-dotnet-run-and-visual-studio).
 
 ### Debug
 
@@ -217,14 +240,14 @@ Use the dotnet trace tooling to collect a trace from an app:
 
    The trace is saved with the name *trace.nettrace* in the folder where the `dotnet trace` command is executed.
 
-1. Open the trace with [Perfview](#perfview). Open the *trace.nettrace* file and explore the trace events.
+1. Open the trace with Perfview. Open the *trace.nettrace* file and explore the trace events.
 
-If the app doesn't build the host with `CreateDefaultBuilder`, add the [Event Source provider](#event-source-provider) to the app's logging configuration.
+If the app doesn't build the host with `CreateDefaultBuilder`, add the Event Source provider to the app's logging configuration.
 
 For more information, see:
 
 - [Trace for performance analysis utility (dotnet-trace)](../diagnostics/dotnet-trace.md)
-- [LoggingEventSource Class](xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource) (.NET API Browser)
+- [LoggingEventSource class](xref:Microsoft.Extensions.Logging.EventSource.LoggingEventSource) (.NET API Browser)
 - <xref:System.Diagnostics.Tracing.EventLevel>
 
 ### Windows EventLog
@@ -299,23 +322,32 @@ For more information, see the following resources:
 - [Application Insights logging adapters](/azure/azure-monitor/app/asp-net-trace-logs).
 - [Install, configure, and initialize the Application Insights SDK](/learn/modules/instrument-web-app-code-with-application-insights) - Interactive tutorial on the Microsoft Learn site.
 
-## Configure a service that depends on ILogger
+## Third-party logging providers
 
-To configure a service that depends on `ILogger<T>`, use constructor injection or provide a factory method. The factory method approach is recommended only if there is no other option. For example, consider a service that needs an `ILogger<T>` instance provided by DI:
+Third-party logging frameworks that work with various .NET workloads:
 
-```csharp
-.ConfigureServices(services =>
-    services.AddSingleton<IExampleService>(container =>
-        new DefaultExampleService
-        {
-            Logger = container.GetRequiredService<ILogger<IExampleService>>()
-        }));
-```
+- [elmah.io](https://elmah.io) ([GitHub repo](https://github.com/elmahio/Elmah.Io.Extensions.Logging))
+- [Gelf](https://docs.graylog.org/en/2.3/pages/gelf.html) ([GitHub repo](https://github.com/mattwcole/gelf-extensions-logging))
+- [JSNLog](https://jsnlog.com) ([GitHub repo](https://github.com/mperdeck/jsnlog))
+- [KissLog.net](https://kisslog.net) ([GitHub repo](https://github.com/catalingavan/KissLog-net))
+- [Log4Net](https://logging.apache.org/log4net) ([GitHub repo](https://github.com/apache/logging-log4net))
+- [Loggr](https://loggr.net) ([GitHub repo](https://github.com/imobile3/Loggr.Extensions.Logging))
+- [NLog](https://nlog-project.org) ([GitHub repo](https://github.com/NLog/NLog.Extensions.Logging))
+- [Sentry](https://sentry.io/welcome) ([GitHub repo](https://github.com/getsentry/sentry-dotnet))
+- [Serilog](https://serilog.net) ([GitHub repo](https://github.com/serilog/serilog-sinks-console))
+- [Stackdriver](https://cloud.google.com/dotnet/docs/stackdriver#logging) ([Github repo](https://github.com/googleapis/google-cloud-dotnet))
 
-The preceding code is a [Func<IServiceProvider, IExampleService>](/dotnet/api/system.func-2) that runs the first time the DI container needs to construct an instance of `IExampleService`. You can access any of the registered services in this way.
+Some third-party frameworks can perform [semantic logging, also known as structured logging](https://softwareengineering.stackexchange.com/questions/312197/benefits-of-structured-logging-vs-basic-logging).
+
+Using a third-party framework is similar to using one of the built-in providers:
+
+1. Add a NuGet package to your project.
+1. Call an `ILoggerFactory` or `ILoggingBuilder` extension method provided by the logging framework.
+
+For more information, see each provider's documentation. Third-party logging providers aren't supported by Microsoft.
 
 ## See also
 
 - [Logging in .NET](logging.md).
-- [Implement a custom logging provider in .NET](custom-logging-providers.md).
-- [High-performance logging in .NET](loggermesssage.md).
+- [Implement a custom logging provider in .NET](custom-logging-provider.md).
+- [High-performance logging in .NET](high-performance-logging.md).

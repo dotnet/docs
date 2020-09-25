@@ -12,6 +12,7 @@ namespace WorkerServiceOptions.Example
         static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((_, services) =>
-                    services.AddHostedService<WorkerWithOptions>());
+                    services.AddHostedService<Worker>()
+                            .AddTransient<PriorityQueue>());
     }
 }

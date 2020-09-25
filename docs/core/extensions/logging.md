@@ -35,7 +35,7 @@ In the preceding JSON:
 - The `"Microsoft"` category applies to all categories that start with `"Microsoft"`.
 - The `"Microsoft"` category logs at log level `Warning` and higher.
 - The `"Microsoft.Hosting.Lifetime"` category is more specific than the `"Microsoft"` category, so the `"Microsoft.Hosting.Lifetime"` category logs at log level "Information" and higher.
-- A specific log provider is not specified, so `LogLevel` applies to all the enabled logging providers except for the [Windows EventLog](#windows-eventLog).
+- A specific log provider is not specified, so `LogLevel` applies to all the enabled logging providers except for the [Windows EventLog](logging-providers.md#windows-eventLog).
 
 The `Logging` property can have <xref:Microsoft.Extensions.Logging.LogLevel> and log provider properties. The `LogLevel` specifies the minimum [level](#log-level) to log for selected categories. In the preceding JSON, `Information` and `Warning` log levels are specified. `LogLevel` indicates the severity of the log and ranges from 0 to 6:
 
@@ -511,5 +511,5 @@ public class Program
 
 - [Logging providers in .NET](logging-providers.md).
 - [Implement a custom logging provider in .NET](custom-logging-provider.md).
-- [High-performance logging in .NET](loggermesssage.md).
+- [High-performance logging in .NET](high-performance-logging.md).
 - Logging bugs should be created in the [github.com/dotnet/runtime/](https://github.com/dotnet/runtime/issues) repo.

@@ -53,7 +53,7 @@ The `ILoggingBuilder` creates one or more `ILogger` instances. The `ILogger` ins
 
 For the preceding code, provide at least one extension method for the `ILoggerFactory`:
 
-:::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerExtensions.cs":::
+:::code language="csharp" source="snippets/configuration/console-custom-logging/Extensions/ColorConsoleLoggerExtensions.cs":::
 
 Running this simple application will render similar to the following console window:
 
@@ -63,4 +63,4 @@ Running this simple application will render similar to the following console win
 
 - [Logging in .NET](logging.md).
 - [Logging providers in .NET](logging-providers.md).
-- [High-performance logging in .NET](loggermesssage.md).
+- [High-performance logging in .NET](high-performance-logging.md).

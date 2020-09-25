@@ -13,7 +13,7 @@ Code analysis rules have various configuration options. These options are specif
 <option key> = <option value>
 ```
 
-The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](rules/quality-rules-reference.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions).
+The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions).
 
 You can also configure additional options to customize rule behavior:
 
@@ -65,7 +65,7 @@ Rule-specific options can be applied to a single rule, a set of rules, or all ru
 
 ### Severity level
 
-The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](rules/quality-rules-reference.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
+The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](quality-rules/index.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
 
 | Severity | Build-time behavior |
 |-|-|

@@ -65,7 +65,7 @@ dotnet_separate_import_directive_groups = true
 | **Option name** | dotnet_sort_system_directives_first |
 | **Applicable languages** | C# and Visual Basic |
 | **Introduced version** | Visual Studio 2017 version 15.3 |
-| **Option values** | `true` - Sort System. `using` directives alphabetically, and place them before other using directives.<br /><br />`false` - Do not place System. `using` directives before other `using` directives. |
+| **Option values** | `true` - Sort `System.*` `using` directives alphabetically, and place them before other using directives.<br /><br />`false` - Do not place `System.*` `using` directives before other `using` directives. |
 
 Code examples:
 
@@ -150,7 +150,7 @@ The formatting rules in this section apply only to C# code.
 - [Wrap options](#wrap-options)
   - csharp_preserve_single_line_statements
   - csharp_preserve_single_line_blocks
-- [Using directive options](#using-directive-options) 
+- [Using directive options](#using-directive-options)
   - csharp_using_directive_placement
 
 ### New-line options

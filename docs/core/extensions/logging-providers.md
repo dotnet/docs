@@ -203,7 +203,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    Consider the following command:
 
    ```dotnetcli
-   dotnet trace collect -p %PID% 
+   dotnet trace collect -p %PID%
    --providers Microsoft-Extensions-Logging:4:5:\"FilterSpecs=*:5\"
    ```
 

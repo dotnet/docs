@@ -18,6 +18,7 @@ In this tutorial, you'll be introduced to how to add attributes to your code, ho
 attributes that are built into .NET Core.
 
 ## Prerequisites
+
 You’ll need to set up your machine to run .NET core. You can find the
 installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download) page.
 You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container.

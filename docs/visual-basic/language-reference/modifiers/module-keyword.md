@@ -10,9 +10,11 @@ helpviewer_keywords:
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
 ---
 # Module \<keyword> (Visual Basic)
+
 Specifies that an attribute at the beginning of a source file applies to the current assembly module.  
   
 ## Remarks  
+
  Many attributes pertain to an individual programming element, such as a class or property. You apply such an attribute by attaching the attribute block, within angle brackets (`< >`), directly to the declaration statement.  
   
  If an attribute pertains not only to the following element but to the current assembly module, you place the attribute block at the beginning of the source file and identify the attribute with the `Module` keyword. If it applies to the entire assembly, you use the [Assembly](assembly.md) keyword.  

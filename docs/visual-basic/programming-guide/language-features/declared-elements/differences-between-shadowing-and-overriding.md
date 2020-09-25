@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: 2d014a0b-7630-407d-8f4e-24bd87987923
 ---
 # Differences Between Shadowing and Overriding (Visual Basic)
+
 When you define a class that inherits from a base class, you sometimes want to redefine one or more of the base class elements in the derived class. Shadowing and overriding are both available for this purpose.  
   
 ## Comparison  
+
  Shadowing and overriding are both used when a derived class inherits from a base class, and both redefine one declared element with another. But there are significant differences between the two.  
   
  The following table compares shadowing with overriding.  
@@ -33,6 +35,7 @@ When you define a class that inherits from a base class, you sometimes want to r
  <sup>3</sup> If the shadowing element is inaccessible in a further derived class, shadowing is not inherited. For example, if you declare the shadowing element as `Private`, a class deriving from your derived class inherits the original element instead of the shadowing element.  
   
 ## Guidelines  
+
  You normally use overriding in the following cases:  
   
 - You are defining polymorphic derived classes.  

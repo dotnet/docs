@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 756db378-e758-48a9-88ff-496bc55bc0b6
 ---
 # Unable to find required file '\<filename>'
+
 A file that is required by Visual Studio is missing or damaged.  
   
  **Error ID:** BC30655  

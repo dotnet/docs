@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c
 ---
 # Configuring the Data Service (WCF Data Services)
+
 With WCF Data Services, you can create data services that expose Open Data Protocol (OData) feeds. Data in these feeds can come from a variety of data sources. WCF Data Services uses data providers to expose this data as an OData feed. These providers include an Entity Framework provider, a reflection provider, and a set of custom data service provider interfaces. The provider implementation defines the data model for the service. For more information, see [Data Services Providers](data-services-providers-wcf-data-services.md).  
   
  In WCF Data Services, a data service is a class that inherits from the <xref:System.Data.Services.DataService%601> class, where the type of the data service is the entity container of the data model. This entity container has one or more properties that return an <xref:System.Linq.IQueryable%601>, which are used to access entity sets in the data model.  
@@ -19,6 +20,7 @@ With WCF Data Services, you can create data services that expose Open Data Proto
 [!code-vb[Astoria Northwind Service#DataServiceConfigComplete](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_service/vb/northwind.svc.vb#dataserviceconfigcomplete)]  
   
 ## Data Service Configuration Settings  
+
  The <xref:System.Data.Services.DataServiceConfiguration> class enables you to specify the following data service behaviors:  
   
 |Member|Behavior|  
@@ -42,7 +44,9 @@ With WCF Data Services, you can create data services that expose Open Data Proto
 |<xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A>|This configuration property enables you to more easily troubleshoot a data service by returning more information in the error response message. This option is not intended to be used in a production environment. For more information, see [Developing and Deploying WCF Data Services](developing-and-deploying-wcf-data-services.md).|  
   
 <a name="accessRequirements"></a>
+
 ## Minimum Resource Access Requirements  
+
  The following table details the minimum entity set rights that must be granted to execute a specific operation. Path examples are based on the Northwind data service that is created when you complete the [quickstart](quickstart-wcf-data-services.md). Because both the <xref:System.Data.Services.EntitySetRights> enumeration and the <xref:System.Data.Services.ServiceOperationRights> enumeration are defined by using the <xref:System.FlagsAttribute>, you can use a logical OR operator to specify multiple permissions for a single entity set or operation. For more information, see [How to: Enable Access to the Data Service](how-to-enable-access-to-the-data-service-wcf-data-services.md).  
   
 |Path/Action|`GET`|`DELETE`|`MERGE`|`POST`|`PUT`|  
@@ -63,12 +67,14 @@ With WCF Data Services, you can create data services that expose Open Data Proto
 |`/Customers?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -and-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Not supported|Not supported|`Customers`: <xref:System.Data.Services.EntitySetRights.WriteAppend>|Not supported|  
 |`/Customers('ALFKI')?$select=Orders/*&$expand=Orders`|`Customers`: <xref:System.Data.Services.EntitySetRights.ReadSingle><br /><br /> -and-<br /><br /> `Orders`: <xref:System.Data.Services.EntitySetRights.ReadMultiple>|Not supported|Not supported|Not supported|Not supported|  
   
- <sup>1</sup> In this example, `Address` represents a complex type property of the `Customers` entity that has a property named `StreetAddress`. The model used by the Northwind data services does not explicitly define this complex type. When the data model is defined by using the Entity Framework provider, you can use the Entity Data Model tools to define such a complex type. For more information, see [How to: Create and Modify Complex Types](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd456820(v=vs.100)).  
+ <sup>1</sup> In this example, `Address` represents a complex type property of the `Customers` entity that has a property named `StreetAddress`. The model used by the Northwind data services does not explicitly define this complex type. When the data model is defined by using the Entity Framework provider, you can use the Entity Data Model tools to define such a complex type. For more information, see [How to: Create and Modify Complex Types](/previous-versions/dotnet/netframework-4.0/dd456820(v=vs.100)).  
   
  <sup>2</sup> This URI is supported when a property that returns a binary large object (BLOB) is defined as the media resource that belongs to an entity that is a media link entry, which in this case, is `Customers`. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).  
   
 <a name="versioning"></a>
+
 ## Versioning Requirements  
+
  The following data service configuration behaviors require version 2 of the OData protocol, or later versions:  
   
 - Support for count requests.  

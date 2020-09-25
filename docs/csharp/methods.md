@@ -116,13 +116,14 @@ Passing a reference-type parameter allows you to change the value of the referen
 
 Sometimes, the requirement that you specify the exact number of arguments to your method is restrictive. By using the `params` keyword to indicate that a parameter is a parameter array, you allow your method to be called with a variable number of arguments. The parameter tagged with the `params` keyword must be an array type, and it must be the last parameter in the method's parameter list.
 
-A caller can then invoke the method in either of three ways:
+A caller can then invoke the method in either of four ways:
 
 - By passing an array of the appropriate type that contains the desired number of elements.
 - By passing a comma-separated list of individual arguments of the appropriate type to the method.
+- By passing `null`.
 - By not providing an argument to the parameter array.
 
-The following example defines a method named `GetVowels` that returns all the vowels from a parameter array. The `Main` method illustrates all three ways of invoking the method. Callers are not required to supply any arguments for parameters that include the `params` modifier. In that case, the parameter is `null`.
+The following example defines a method named `GetVowels` that returns all the vowels from a parameter array. The `Main` method illustrates all four ways of invoking the method. Callers are not required to supply any arguments for parameters that include the `params` modifier. In that case, the parameter is an empty array.
 
 [!code-csharp[csSnippets.Methods#75](~/samples/snippets/csharp/concepts/methods/params75.cs#75)]
 

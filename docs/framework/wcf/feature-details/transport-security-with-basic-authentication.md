@@ -113,4 +113,4 @@ The following illustration shows a Windows Communication Foundation (WCF) servic
 - [How to: Configure a Port with an SSL Certificate](how-to-configure-a-port-with-an-ssl-certificate.md)
 - [Security Overview](security-overview.md)
 - [\<clientCredentials>](../../configure-apps/file-schema/wcf/clientcredentials.md)
-- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [Security Model for Windows Server App Fabric](/previous-versions/appfabric/ee677202(v=azure.10))

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 7b5d149f-be91-4ac3-8262-86a360894e7d
 ---
 # 'Dir' function must first be called with a 'PathName' argument
+
 An initial call to the `Dir` function does not include the `PathName` argument. The first call to `Dir` must include a `PathName`, but subsequent calls to `Dir` do not need to include parameters to retrieve the next item.  
   
 ## To correct this error  

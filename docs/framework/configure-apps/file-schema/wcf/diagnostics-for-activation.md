@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1486e0eb-fe2a-46c3-b584-c924889477dd
 ---
 # \<diagnostics> for Activation
+
 Configures Windows Communication Foundation (WCF) listener's diagnostics functionalities.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,9 +22,11 @@ Configures Windows Communication Foundation (WCF) listener's diagnostics functio
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -33,6 +36,7 @@ Configures Windows Communication Foundation (WCF) listener's diagnostics functio
 |`performanceCountersEnabled`|A Boolean value that indicates whether performance counters are enabled for diagnostic purposes.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

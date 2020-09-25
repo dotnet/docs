@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: 154dd3d3-137b-4de6-a5aa-699b18dfb639
 ---
 # Else Statement (Visual Basic)
+
 Introduces a group of statements to be run or compiled if no other conditional group of statements has been run or compiled.  
   
 ## Remarks  
+
  The `Else` keyword can be used in these contexts:  
   
  [If...Then...Else Statement](if-then-else-statement.md)  

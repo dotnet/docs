@@ -119,4 +119,4 @@ This is the start of a sentence.  This is the second sentence.
 
 ## See also
 
-- [LINQ to XML for XPath Users (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [LINQ to XML for XPath Users (Visual Basic)](./comparison-xpath-linq-xml.md)

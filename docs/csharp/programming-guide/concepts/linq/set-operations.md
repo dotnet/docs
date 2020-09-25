@@ -5,6 +5,7 @@ ms.date: 07/20/2015
 ms.assetid: 7c589367-ef8f-4161-9050-642c47e6bf63
 ---
 # Set Operations (C#)
+
 Set operations in LINQ refer to query operations that produce a result set that is based on the presence or absence of equivalent elements within the same or separate collections (or sets).  
   
  The standard query operator methods that perform set operations are listed in the following section.  
@@ -21,6 +22,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
 ## Comparison of Set Operations  
   
 ### Distinct  
+
  The following example depicts the behavior of the <xref:System.Linq.Enumerable.Distinct%2A?displayProperty=nameWithType> method on a sequence of characters. The returned sequence contains the unique elements from the input sequence.  
   
  ![Graphic showing the behavior of Distinct&#40;&#41;.](./media/set-operations/distinct-method-behavior.png)  
@@ -28,6 +30,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
  [!code-csharp-interactive[Distinct](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#1)]
   
 ### Except  
+
  The following example depicts the behavior of <xref:System.Linq.Enumerable.Except%2A?displayProperty=nameWithType>. The returned sequence contains only the elements from the first input sequence that are not in the second input sequence.  
   
  ![Graphic showing the action of Except&#40;&#41;.](./media/set-operations/except-behavior-graphic.png "Shows the behavior of Except.")  
@@ -35,6 +38,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
 [!code-csharp-interactive[Except](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#2)]
 
 ### Intersect  
+
  The following example depicts the behavior of <xref:System.Linq.Enumerable.Intersect%2A?displayProperty=nameWithType>. The returned sequence contains the elements that are common to both of the input sequences.  
   
  ![Graphic showing the intersection of two sequences.](./media/set-operations/intersection-two-sequences.png)  
@@ -42,6 +46,7 @@ Set operations in LINQ refer to query operations that produce a result set that 
 [!code-csharp-interactive[Intersect](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQSetOperation/CS/SetOperation.cs#3)]
 
 ### Union  
+
  The following example depicts a union operation on two sequences of characters. The returned sequence contains the unique elements from both input sequences.  
   
  ![Graphic showing the union of two sequences.](./media/set-operations/union-operation-two-sequences.png)  

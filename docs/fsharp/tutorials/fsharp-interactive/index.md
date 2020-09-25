@@ -114,4 +114,3 @@ or in a more explicit fashion:
 |Title|Description|
 |-----|-----------|
 |[F# Interactive Options](../../language-reference/fsharp-interactive-options.md)|Describes command-line syntax and options for the F# Interactive, fsi.exe.|
-|[F# Interactive Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-interactive-library-reference)|Describes library functionality available when executing code in F# interactive.|

@@ -58,4 +58,4 @@ PurchaseOrders
 
 ## See also
 
-- [LINQ to XML for XPath Users (Visual Basic)](/../../visual-basic/programming-guide/concepts/linq/linq-to-xml-for-xpath-users.md)
+- [Comparison of XPath and LINQ to XML](comparison-xpath-linq-xml.md)

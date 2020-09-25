@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: dc575d41-b376-4b05-bbbe-6de1e98385f1
 ---
 # Argument 'Period' must be less than or equal to argument 'Life'
+
 The value of the `Period` argument, which specifies the period for which asset depreciation is calculated, is greater than the value of the `Life` argument.  
   
 ## To correct this error  

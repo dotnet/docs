@@ -27,7 +27,7 @@ The Event-based Asynchronous Pattern provides a standardized way to package a cl
 
 For an example that implements the Event-based Asynchronous Pattern, see [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md).
 
-For simple asynchronous operations, you may find the <xref:System.ComponentModel.BackgroundWorker> component suitable. For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md).
+For simple asynchronous operations, you may find the <xref:System.ComponentModel.BackgroundWorker> component suitable. For more information about <xref:System.ComponentModel.BackgroundWorker>, see [How to: Run an Operation in the Background](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background).
 
 The following list describes the features of the Event-based Asynchronous Pattern discussed in this topic.
 
@@ -257,8 +257,8 @@ public class MethodNameCompletedEventArgs : System.ComponentModel.AsyncCompleted
 - <xref:System.ComponentModel.ProgressChangedEventArgs>
 - <xref:System.ComponentModel.AsyncCompletedEventArgs>
 - [How to: Implement a Component That Supports the Event-based Asynchronous Pattern](component-that-supports-the-event-based-asynchronous-pattern.md)
-- [How to: Run an Operation in the Background](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
-- [How to: Implement a Form That Uses a Background Operation](../../framework/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation.md)
+- [How to: Run an Operation in the Background](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
+- [How to: Implement a Form That Uses a Background Operation](/dotnet/desktop/winforms/controls/how-to-implement-a-form-that-uses-a-background-operation)
 - [Deciding When to Implement the Event-based Asynchronous Pattern](deciding-when-to-implement-the-event-based-asynchronous-pattern.md)
 - [Best Practices for Implementing the Event-based Asynchronous Pattern](best-practices-for-implementing-the-event-based-asynchronous-pattern.md)
 - [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)

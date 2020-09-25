@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 45707363-55e4-4151-892d-d8729106355b
 ---
 # XML axis properties do not support late binding
+
 An XML axis property has been referenced for an untyped object.  
   
  **Error ID:** BC31168  

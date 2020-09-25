@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: 0eee8ced-ad68-427d-b95a-97260e98deed
 ---
 # \<wsHttpBinding>
+
 Defines a secure, reliable, interoperable binding suitable for non-duplex service contracts. The binding implements the following specifications: WS-Reliable Messaging for reliability, and WS-Security for message security and authentication. The transport is HTTP, and message encoding is Text/XML encoding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -55,6 +56,7 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -82,8 +84,8 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
 |Element|Description|  
 |-------------|-----------------|  
 |[\<security>](security-of-wshttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.WSHttpSecurityElement>.|  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
-|[\<reliableSession>](https://docs.microsoft.com/previous-versions/ms731375(v=vs.90))|Specifies if reliable sessions are established between channel endpoints.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<reliableSession>](/previous-versions/ms731375(v=vs.90))|Specifies if reliable sessions are established between channel endpoints.|  
   
 ### Parent Elements  
   
@@ -92,6 +94,7 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The `WSHttpBinding` is similar to the `BasicHttpBinding` but provides more Web service features. It uses the HTTP transport and provides message security, as does BasicHttpBinding, but it also provides transactions, reliable messaging, and WS-Addressing, either enabled by default or available through a single control setting.  
   
 ## Example  

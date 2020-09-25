@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
 ---
 # \<schemeSettings> Element (Uri Settings)
+
 Specifies how a <xref:System.Uri> will be parsed for specific schemes.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -18,9 +19,11 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None  
   
 ### Child Elements  
@@ -38,6 +41,7 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 |[uri](uri-element-uri-settings.md)|Contains settings that specify how the .NET Framework handles web addresses expressed using uniform resource identifiers (URIs).|  
   
 ## Remarks  
+
  By default, the <xref:System.Uri?displayProperty=nameWithType> class un-escapes percent encoded path delimiters before executing path compression. This was implemented as a security mechanism against attacks like the following:  
   
  `http://www.contoso.com/..%2F..%2F/Windows/System32/cmd.exe?/c+dir+c:\`  
@@ -53,9 +57,11 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
  This default behavior can be modified to not un-escape percent encoded path delimiters using the schemeSettings configuration option for a specific scheme.  
   
 ## Configuration Files  
+
  This element can be used in the application configuration file or the machine configuration file (Machine.config).  
   
 ## Example  
+
  The following example shows a configuration used by the <xref:System.Uri> class to support not escaping percent-encoded path delimiters for the http scheme.  
   
 ```xml  

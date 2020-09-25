@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
 ---
 # \<sslStreamSecurity>
+
 Represents a custom binding element that supports channel security using an SSL stream.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -21,6 +22,7 @@ Represents a custom binding element that supports channel security using an SSL 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -31,6 +33,7 @@ Represents a custom binding element that supports channel security using an SSL 
 |sslProtocols|A SslProtocols enum flag value that specifies which SslProtocols are supported. The default is Ssl3&#124;Tls&#124;Tls11&#124;Tls12.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  

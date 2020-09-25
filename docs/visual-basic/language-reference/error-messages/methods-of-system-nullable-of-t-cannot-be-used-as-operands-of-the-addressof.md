@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 2325668b-e2ad-40ee-a1ec-30450236c20d
 ---
 # Methods of 'System.Nullable(Of T)' cannot be used as operands of the 'AddressOf' operator
+
 A statement uses the `AddressOf` operator with an operand that represents a procedure of the <xref:System.Nullable%601> structure.  
   
  **Error ID:** BC32126  

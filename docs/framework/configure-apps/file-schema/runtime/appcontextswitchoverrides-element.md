@@ -23,6 +23,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 ```
 
 ## Attributes and Elements
+
  The following sections describe attributes, child elements, and parent elements.
 
 ### Attributes
@@ -38,6 +39,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |"name=value"|A predefined switch name along with its value (`true` or `false`). Multiple switch name/value pairs are separated by semicolons (";"). For a list of predefined switch names supported by the .NET Framework, see the Remarks section.|
 
 ### Child Elements
+
  None.
 
 ### Parent Elements
@@ -48,6 +50,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`runtime`|Contains information about runtime initialization options.|
 
 ## Remarks
+
  Starting with .NET Framework 4.6, the `<AppContextSwitchOverrides>` element in a configuration file allows callers of an API to determine whether their app can take advantage of new functionality or preserve compatibility with previous versions of a library. For example, if the behavior of an API has changed between two versions of a library, the `<AppContextSwitchOverrides>` element allows callers of that API to opt out of the new behavior on versions of the library that support the new functionality. For apps that call APIs in the .NET Framework, the `<AppContextSwitchOverrides>` element can also allow callers whose apps target an earlier version of the .NET Framework to opt into new functionality if their app is running on a version of the .NET Framework that includes that functionality.
 
  The `value` attribute of the `<AppContextSwitchOverrides>` element consists of a single string that consists of one or more semicolon-delimited name/value pairs.  Each name identifies a compatibility switch, and its corresponding value is a Boolean (`true` or `false`) that indicates whether the switch is set. By default, the switch is `false`, and libraries  provide the new functionality. They only provide the previous functionality if the switch is set (that is, its value is `true`). This allows libraries to provide new behavior for an existing API while allowing callers who depend on the previous behavior to opt out of the new functionality.
@@ -64,7 +67,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 |`Switch.System.Diagnostics.`<br/>`IgnorePortablePDBsInStackTraces`|Controls whether stack traces obtain when using portable PDBs can include source file and line information. `false` to include source file and line information; otherwise, `true`.|.NET Framework 4.7.2|
 |`Switch.System.Drawing.`<br/>`DontSupportPngFramesInIcons`|Controls whether the <xref:System.Drawing.Icon.ToBitmap%2A?displayProperty=nameWithType> method throws an exception when an <xref:System.Drawing.Icon> object has PNG frames. For more information, see [Mitigation: PNG Frames in Icon Objects](../../../migration-guide/mitigation-png-frames-in-icon-objects.md).|.NET Framework 4.6|
 |`Switch.System.Drawing.Text.`<br/>`DoNotRemoveGdiFontsResourcesFromFontCollection`|Determines whether <xref:System.Drawing.Text.PrivateFontCollection?displayProperty=nameWithType> objects are properly disposed when added to the collection by the <xref:System.Drawing.Text.PrivateFontCollection.AddFontFile(System.String)?displayProperty=nameWithType> method. `true` to maintain the legacy behavior; `false` to dispose of all private font objects. |.NET Framework 4.7.2|
-|`Switch.System.Drawing.Printing.`<br>`OptimizePrintPreview`|Controls whether the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> is optimized for network printers. For more information, see [PrintPreviewDialog control overview](../../../winforms/controls/printpreviewdialog-control-overview-windows-forms.md).|.NET Framework 4.6|
+|`Switch.System.Drawing.Printing.`<br>`OptimizePrintPreview`|Controls whether the performance of the <xref:System.Windows.Forms.PrintPreviewDialog> is optimized for network printers. For more information, see [PrintPreviewDialog control overview](/dotnet/desktop/winforms/controls/printpreviewdialog-control-overview-windows-forms).|.NET Framework 4.6|
 |`Switch.System.Globalization.EnforceJapaneseEraYearRanges`|Controls whether year range checks for Japanese calendar eras are enforced. `true` to enforce year range checks, and `false` to disable them (the default behavior). For more information, see [Working with calendars](../../../../standard/datetime/working-with-calendars.md).|.NET Framework 4.6|
 |`Switch.System.Globalization.EnforceLegacyJapaneseDateParsing`|Controls whether only "1" is recognized as the first year of a Japanese calendar era in parsing operations. `true` to recognize only "1"; `false` to recognize either "1" or Gannen (the default behavior). For more information, see [Working with calendars](../../../../standard/datetime/working-with-calendars.md).|.NET Framework 4.6|
 |`Switch.System.Globalization.FormatJapaneseFirstYearAsANumber`|Controls whether the first year of a Japanese calendar era is represented as "1" or Gannen in formatting operations. `true` to format the era's first year as "1"; `false` to format it as Gannen (the default behavior). For more information, see [Working with calendars](../../../../standard/datetime/working-with-calendars.md).|.NET Framework 4.6|

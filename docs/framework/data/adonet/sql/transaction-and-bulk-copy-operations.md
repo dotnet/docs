@@ -7,11 +7,13 @@ dev_langs:
 ms.assetid: f6f0cbc9-f7bf-4d6e-875f-ad1ba0b4aa62
 ---
 # Transaction and Bulk Copy Operations
+
 Bulk copy operations can be performed as isolated operations or as part of a multiple step transaction. This latter option enables you to perform more than one bulk copy operation within the same transaction, as well as perform other database operations (such as inserts, updates, and deletes) while still being able to commit or roll back the entire transaction.  
   
  By default, a bulk copy operation is performed as an isolated operation. The bulk copy operation occurs in a non-transacted way, with no opportunity for rolling it back. If you need to roll back all or part of the bulk copy when an error occurs, you can use a <xref:System.Data.SqlClient.SqlBulkCopy>-managed transaction, perform the bulk copy operation within an existing transaction, or be enlisted in a **System.Transactions**<xref:System.Transactions.Transaction>.  
   
 ## Performing a Non-transacted Bulk Copy Operation  
+
  The following Console application shows what happens when a non-transacted bulk copy operation encounters an error partway through the operation.  
   
  In the example, the source table and destination table each include an `Identity` column named **ProductID**. The code first prepares the destination table by deleting all rows and then inserting a single row whose **ProductID** is known to exist in the source table. By default, a new value for the `Identity` column is generated in the destination table for each row added. In this example, an option is set when the connection is opened that forces the bulk load process to use the `Identity` values from the source table instead.  
@@ -25,6 +27,7 @@ Bulk copy operations can be performed as isolated operations or as part of a mul
  [!code-vb[DataWorks SqlBulkCopy.DefaultTransaction#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.DefaultTransaction/VB/source.vb#1)]  
   
 ## Performing a Dedicated Bulk Copy Operation in a Transaction  
+
  By default, a bulk copy operation is its own transaction. When you want to perform a dedicated bulk copy operation, create a new instance of <xref:System.Data.SqlClient.SqlBulkCopy> with a connection string, or use an existing <xref:System.Data.SqlClient.SqlConnection> object without an active transaction. In each scenario, the bulk copy operation creates, and then commits or rolls back the transaction.  
   
  You can explicitly specify the <xref:System.Data.SqlClient.SqlBulkCopyOptions.UseInternalTransaction> option in the <xref:System.Data.SqlClient.SqlBulkCopy> class constructor to explicitly cause a bulk copy operation to execute in its own transaction, causing each batch of the bulk copy operation to execute within a separate transaction.  
@@ -41,6 +44,7 @@ Bulk copy operations can be performed as isolated operations or as part of a mul
  [!code-vb[DataWorks SqlBulkCopy.InternalTransaction#1](../../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SqlBulkCopy.InternalTransaction/VB/source.vb#1)]  
   
 ## Using Existing Transactions  
+
  You can specify an existing <xref:System.Data.SqlClient.SqlTransaction> object as a parameter in a <xref:System.Data.SqlClient.SqlBulkCopy> constructor. In this situation, the bulk copy operation is performed in an existing transaction, and no change is made to the transaction state (that is, it is neither committed nor aborted). This allows an application to include the bulk copy operation in a transaction with other database operations. However, if you do not specify a <xref:System.Data.SqlClient.SqlTransaction> object and pass a null reference, and the connection has an active transaction, an exception is thrown.  
   
  If you need to roll back the entire bulk copy operation because an error occurs, or if the bulk copy should execute as part of a larger process that can be rolled back, you can provide a <xref:System.Data.SqlClient.SqlTransaction> object to the <xref:System.Data.SqlClient.SqlBulkCopy> constructor.  

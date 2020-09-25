@@ -7,12 +7,14 @@ dev_langs:
 ms.assetid: 43dfb23b-5cef-46f2-8d87-78f0fba1eb8c
 ---
 # Loading DataSet Schema Information from XML
+
 The schema of a <xref:System.Data.DataSet> (its tables, columns, relations, and constraints) can be defined programmatically, created by the **Fill** or **FillSchema** methods of a <xref:System.Data.Common.DataAdapter>, or loaded from an XML document. To load **DataSet** schema information from an XML document, you can use either the **ReadXmlSchema** or the **InferXmlSchema** method of the **DataSet**. **ReadXmlSchema** allows you to load or infer **DataSet** schema information from the document containing XML Schema definition language (XSD) schema, or an XML document with inline XML Schema. **InferXmlSchema** allows you to infer the schema from the XML document while ignoring certain XML namespaces that you specify.  
   
 > [!NOTE]
 > Table ordering in a **DataSet** might not be preserved when you use Web services or XML serialization to transfer a **DataSet** that was created in-memory by using XSD constructs (such as nested relations). Therefore, the recipient of the **DataSet** should not depend on table ordering in this case. However, table ordering is always preserved if the schema of the **DataSet** being transferred was read from XSD files, instead of being created in-memory.  
   
 ## ReadXmlSchema  
+
  To load the schema of a **DataSet** from an XML document without loading any data, you can use the **ReadXmlSchema** method of the **DataSet**. **ReadXmlSchema** creates **DataSet** schema defined using XML Schema definition language (XSD) schema.  
   
  The **ReadXmlSchema** method takes a single argument of a file name, a stream, or an **XmlReader** containing the XML document to be loaded. The XML document can contain only schema, or can contain schema inline with XML elements containing data. For details about writing inline schema as XML Schema, see [Deriving DataSet Relational Structure from XML Schema (XSD)](deriving-dataset-relational-structure-from-xml-schema-xsd.md).  
@@ -48,6 +50,7 @@ xmlStream.Close();
 ```  
   
 ## InferXmlSchema  
+
  You can also instruct the **DataSet** to infer its schema from an XML document using the **InferXmlSchema** method of the **DataSet**. **InferXmlSchema** functions the same as do both **ReadXml** with an **XmlReadMode** of **InferSchema** (loads data as well as infers schema), and **ReadXmlSchema** if the document being read contains no inline schema. However, **InferXmlSchema** provides the additional capability of allowing you to specify particular XML namespaces to be ignored when the schema is inferred. **InferXmlSchema** takes two required arguments: the location of the XML document, specified by a file name, a stream, or an **XmlReader**; and a string array of XML namespaces to be ignored by the operation.  
   
  For example, consider the following XML:  

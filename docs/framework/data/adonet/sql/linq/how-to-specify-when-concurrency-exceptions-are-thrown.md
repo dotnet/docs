@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 344ae068-ff63-4a2e-8b00-af22e143675f
 ---
 # How to: Specify When Concurrency Exceptions are Thrown
+
 In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a <xref:System.Data.Linq.ChangeConflictException> exception is thrown when objects do not update because of optimistic concurrency conflicts. For more information, see [Optimistic Concurrency: Overview](optimistic-concurrency-overview.md).  
   
  Before you submit your changes to the database, you can specify when concurrency exceptions should be thrown:  
@@ -18,6 +19,7 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], a <xref:
  When thrown, the <xref:System.Data.Linq.ChangeConflictException> exception provides access to a <xref:System.Data.Linq.ChangeConflictCollection> collection. This collection provides details for each conflict (mapped to a single failed update try), including access to the <xref:System.Data.Linq.ObjectChangeConflict.MemberConflicts%2A> collection. Each member conflict maps to a single member in the update that failed the concurrency check.  
   
 ## Example  
+
  The following code shows examples of both values.  
   
  [!code-csharp[System.Data.Linq.ConflictModeEnumeration#1](../../../../../../samples/snippets/csharp/VS_Snippets_Data/system.data.linq.conflictmodeenumeration/cs/program.cs#1)]

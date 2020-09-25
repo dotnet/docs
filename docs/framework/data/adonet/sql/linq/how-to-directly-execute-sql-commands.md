@@ -7,9 +7,11 @@ dev_langs:
 ms.assetid: 04671bb0-40c0-4465-86e5-77986f454661
 ---
 # How to: Directly Execute SQL Commands
+
 Assuming a <xref:System.Data.Linq.DataContext> connection, you can use <xref:System.Data.Linq.DataContext.ExecuteCommand%2A> to execute SQL commands that do not return objects.  
   
 ## Example  
+
  The following example causes SQL Server to increase UnitPrice by 1.00.  
   
  [!code-csharp[DLinqCommunicatingWithDatabase#3](../../../../../../samples/snippets/csharp/VS_Snippets_Data/DLinqCommunicatingWithDatabase/cs/Program.cs#3)]

@@ -69,17 +69,17 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Install .NET Core SDK 
-            url: ../core/install/sdk.md
+            url: ../core/install/windows.md
           - text: Install .NET Core runtime
-            url: ../core/install/runtime.md
+            url: ../core/install/windows.md
           - text: Use a Linux package manager to install
-            url: ../core/install/linux-package-manager-ubuntu-1904.md
+            url: ../core/install/linux-ubuntu.md
           - text: Check installed versions
             url: ../core/install/how-to-detect-installed-versions.md
       - linkListType: reference
         links:
           - text: .NET Core SDK and runtime dependencies
-            url: ../core/install/dependencies.md
+            url: ../core/install/windows.md
 
   # Card
   - title: Get started with .NET Core
@@ -119,7 +119,7 @@ landingContent:
       - linkListType: tutorial
         links:
           - text: Get started using the CLI
-            url: ../core/tutorials/cli-create-console-app.md
+            url: ../core/tutorials/with-visual-studio-code.md
       - linkListType: deploy
         links:
           - text: Publish apps
@@ -271,4 +271,3 @@ landingContent:
             url: ../standard/parallel-programming/how-to-write-a-simple-parallel-foreach-loop.md
           - text: Return a value from a task
             url: ../standard/parallel-programming/how-to-return-a-value-from-a-task.md
-

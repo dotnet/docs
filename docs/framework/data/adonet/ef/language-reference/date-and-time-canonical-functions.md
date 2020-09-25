@@ -4,9 +4,11 @@ ms.date: "03/30/2017"
 ms.assetid: 9628b74f-1585-436a-b385-8b02ed0cdd63
 ---
 # Date and Time Canonical Functions
+
 [!INCLUDE[esql](../../../../../../includes/esql-md.md)] includes date and time canonical functions.  
   
 ## Remarks  
+
  The following table shows the date and time [!INCLUDE[esql](../../../../../../includes/esql-md.md)] canonical functions. `datetime` is a <xref:System.DateTime> value.  
   
 |Function|Description|  

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: c0a308ee-5876-40af-be4b-1979397835df
 ---
 # Specified DLL function not found
+
 The dynamic-link library (DLL) in a user library reference was found, but the DLL function specified was not found within the DLL.  
   
 ## To correct this error  

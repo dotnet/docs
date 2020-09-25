@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6e183fe0-8888-43ed-a062-01571079455f
 ---
 # Initializer expected
+
 You have tried to declare an instance of a class by using an object initializer in which the initialization list is empty, as shown in the following example.  
   
  `' Not valid.`  

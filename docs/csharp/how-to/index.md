@@ -107,15 +107,15 @@ and work with different data sources.
 - [Use lambda expressions in a query](../programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md).
 - [Use `var` in query expressions](../programming-guide/classes-and-structs/how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 - [Return subsets of element properties from a query](../programming-guide/classes-and-structs/how-to-return-subsets-of-element-properties-in-a-query.md).
-- [Write queries with complex filtering](../programming-guide/concepts/linq/how-to-write-queries-with-complex-filtering.md).
-- [Sort elements of a data source](../programming-guide/concepts/linq/how-to-sort-elements.md).
-- [Sort elements on multiple keys](../programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md).
-- [Control the type of a projection](../programming-guide/concepts/linq/how-to-control-the-type-of-a-projection.md).
+- [Write queries with complex filtering](../../standard/linq/write-queries-complex-filtering.md).
+- [Sort elements of a data source](../../standard/linq/sort-elements.md).
+- [Sort elements on multiple keys](../../standard/linq/sort-elements-multiple-keys.md).
+- [Control the type of a projection](../../standard/linq/control-type-projection.md).
 - [Count occurrences of a value in a source sequence](../programming-guide/concepts/linq/how-to-count-occurrences-of-a-word-in-a-string-linq.md).
-- [Calculate intermediate values](../programming-guide/concepts/linq/how-to-calculate-intermediate-values.md).
+- [Calculate intermediate values](../../standard/linq/calculate-intermediate-values.md).
 - [Merge data from multiple sources](../programming-guide/concepts/linq/how-to-populate-object-collections-from-multiple-sources-linq.md).
 - [Find the set difference between two sequences](../programming-guide/concepts/linq/how-to-find-the-set-difference-between-two-lists-linq.md).
-- [Debug empty query results](../programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md).
+- [Debug empty query results](../../standard/linq/debug-empty-query-results-sets.md).
 - [Add custom methods to LINQ queries](../programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries.md).
 
 ## Multiple threads and async processing
@@ -123,8 +123,8 @@ and work with different data sources.
 Modern programs often use asynchronous operations. These articles will help you learn
 to use these techniques.
 
-- [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
-- [Make multiple web requests in parallel using `async` and `await`](../programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md).
+- [Improve async performance using `System.Threading.Tasks.Task.WhenAll`](../programming-guide/concepts/async/index.md).
+- [Make multiple web requests in parallel using `async` and `await`](../programming-guide/concepts/async/index.md).
 - [Use a thread pool](../../standard/threading/the-managed-thread-pool.md#using-the-thread-pool).
 
 ## Command line args to your program

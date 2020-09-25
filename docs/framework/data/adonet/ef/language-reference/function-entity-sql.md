@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 0bb88992-37ed-4991-ace5-55be612a2c4d
 ---
 # FUNCTION (Entity SQL)
+
 Defines a function in the scope of an Entity SQL query command.  
   
 ## Syntax  
@@ -23,6 +24,7 @@ FUNCTION function-name
 ```  
   
 ## Arguments  
+
  `function-name`  
  Name of the function.  
   
@@ -45,6 +47,7 @@ FUNCTION function-name
  An expression that returns anonymous, structurally typed records from one or more values. For more information, see [ROW](row-entity-sql.md).  
   
 ## Remarks  
+
  Multiple functions with the same name can be declared inline, as long as the function signatures are different. For more information, see [Function Overload Resolution](function-overload-resolution-entity-sql.md).  
   
  An inline function can be called in an Entity SQL command only after it has been defined in that command. However, an inline function can be called inside another inline function either before or after the called function has been defined. In the following example, function A calls function B before function B is defined:  
@@ -55,16 +58,18 @@ FUNCTION function-name
   
  `A()`  
   
- For more information, see [How to: Call a User-Defined Function](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100)).  
+ For more information, see [How to: Call a User-Defined Function](/previous-versions/dotnet/netframework-4.0/dd490951(v=vs.100)).  
   
  Functions can also be declared in the model itself. Functions declared in the model are executed in the same way as functions declared inline in the command. For more information, see [User-Defined Functions](user-defined-functions-entity-sql.md).  
   
 ## Example  
+
  The following Entity SQL command defines a function `Products` that takes an integer value to filter the returned products.  
   
  [!code-sql[DP EntityServices Concepts#FUNCTION1](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#function1)]  
   
 ## Example  
+
  The following Entity SQL command defines a function `StringReturnsCollection` that takes a collection of strings to filter the returned contacts.  
   
  [!code-sql[DP EntityServices Concepts#FUNCTION2](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#function2)]  

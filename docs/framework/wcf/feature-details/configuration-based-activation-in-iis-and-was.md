@@ -40,4 +40,4 @@ Configuration-based activation takes the metadata that used to be placed in the 
 - [Hosting Services](../hosting-services.md)
 - [Hosting Workflow Services Overview](hosting-workflow-services-overview.md)
 - [\<serviceHostingEnvironment>](../../configure-apps/file-schema/wcf/servicehostingenvironment.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

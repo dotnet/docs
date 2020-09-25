@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 9fc3f42f-43e2-4ab1-8bc7-3c95a9220df1
 ---
 # \<namedPipeTransport>
+
 Defines a transport that causes a channel to transfer messages using named pipes when it is included in a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -34,9 +35,11 @@ Defines a transport that causes a channel to transfer messages using named pipes
 ```  
   
 ## Attributes and Elements  
+
 The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
 None.  
   
 ### Child Elements  
@@ -63,6 +66,7 @@ None.
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
 This transport uses URIs of the form "net.pipe://hostname/path". Other URI components are optional.  
   
 The `namedPipeTransport` element is the starting point for creating a custom binding that implements the named pipes transport protocol. This transport is used for on-machine Windows Communication Foundation (WCF)-to-WCF communication.  

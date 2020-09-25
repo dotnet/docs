@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 8399d7ae-bc0a-49e6-81dc-2e7229708bc9
 ---
 # Expression does not produce a value
+
 You have tried to use an expression that does not produce a value in a value-producing context, such as calling a `Sub` in a context where a `Function` is expected.  
   
  **Error ID:** BC30491  

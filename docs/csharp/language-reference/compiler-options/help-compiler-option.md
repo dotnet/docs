@@ -15,6 +15,7 @@ helpviewer_keywords:
 ms.assetid: 8d53f6ba-5c3b-4183-976e-9c0f26fd3680
 ---
 # -help, -? (C# Compiler Options)
+
 This option sends a listing of compiler options, and a brief description of each option, to stdout.  
   
 ## Syntax  
@@ -25,6 +26,7 @@ This option sends a listing of compiler options, and a brief description of each
 ```  
   
 ## Remarks  
+
  If this option is included in a compilation, no output file will be created and no compilation will take place.  
   
  This compiler option is unavailable in Visual Studio and cannot be changed programmatically.  

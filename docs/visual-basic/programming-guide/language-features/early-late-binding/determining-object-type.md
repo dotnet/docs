@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: d95e7ad1-cd63-41d6-9a28-d7a1380d49c1
 ---
 # Determining Object Type (Visual Basic)
+
 Generic object variables (that is, variables you declare as `Object`) can hold objects from any class. When using variables of type `Object`, you may need to take different actions based on the class of the object; for example, some objects might not support a particular property or method. Visual Basic provides two means of determining which type of object is stored in an object variable: the `TypeName` function and the `TypeOf...Is` operator.  
   
 ## TypeName and TypeOf…Is  
+
  The `TypeName` function returns a string and is the best choice when you need to store or display the class name of an object, as shown in the following code fragment:  
   
  [!code-vb[VbVbalrOOP#92](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#92)]  

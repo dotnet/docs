@@ -19,6 +19,7 @@ helpviewer_keywords:
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
 ---
 # Variable Declaration in Visual Basic
+
 You declare a variable to specify its name and characteristics. The declaration statement for variables is the [Dim Statement](../../../language-reference/statements/dim-statement.md). Its location and contents determine the variable's characteristics.  
   
  For variable naming rules and considerations, see [Declared Element Names](../declared-elements/declared-element-names.md).  
@@ -26,14 +27,17 @@ You declare a variable to specify its name and characteristics. The declaration 
 ## Declaration Levels  
   
 ### Local and Member Variables  
+
  A *local variable* is one that is declared within a procedure. A *member variable* is a member of a Visual Basic type; it is declared at module level, inside a class, structure, or module, but not within any procedure internal to that class, structure, or module.  
   
 ### Shared and Instance Variables  
+
  In a class or structure, the category of a member variable depends on whether or not it is shared. If it is declared with the [Shared](../../../language-reference/modifiers/shared.md) keyword, it is a *shared variable*, and it exists in a single copy shared among all instances of the class or structure.  
   
  Otherwise it is an *instance variable*, and a separate copy of it is created for each instance of the class or structure. A given copy of an instance variable is available only to the instance of the class or structure in which it was created. It is independent of a copy of the instance variable in any other instance of the class or structure.  
   
 ## Declaring Data Type  
+
  The [As](../../../language-reference/statements/as-clause.md) clause in the declaration statement allows you to define the data type or object type of the variable you are declaring. You can specify any of the following types for a variable:  
   
 - An elementary data type, such as `Boolean`, `Long`, or `Decimal`  
@@ -55,9 +59,10 @@ Dim l, m As Long, x, y As Single
 ' In the preceding statement, l and m are Long, x and y are Single.  
 ```  
   
- For more information on data types, see [Data Types](../data-types/index.md). For more information on objects, see [Objects and Classes](../objects-and-classes/index.md) and [Programming with Components](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120)).  
+ For more information on data types, see [Data Types](../data-types/index.md). For more information on objects, see [Objects and Classes](../objects-and-classes/index.md) and [Programming with Components](/previous-versions/visualstudio/visual-studio-2013/0ffkdtkf(v=vs.120)).  
   
 ## Local Type Inference  
+
  *Type inference* is used to determine the data types of local variables declared without an `As` clause. The compiler infers the type of the variable from the type of the initialization expression. This enables you to declare variables without explicitly stating a type. In the following example, both `num1` and `num2` are strongly typed as integers.  
   
  [!code-vb[VbVbalrTypeInference#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTypeInference/VB/Class1.vb#1)]  
@@ -65,6 +70,7 @@ Dim l, m As Long, x, y As Single
  If you want to use local type inference, `Option Infer` must be set to `On`. For more information, see [Local Type Inference](local-type-inference.md) and [Option Infer Statement](../../../language-reference/statements/option-infer-statement.md).  
   
 ## Characteristics of Declared Variables  
+
  The *lifetime* of a variable is the period of time during which it is available for use. In general, a variable exists as long as the element that declares it (such as a procedure or class) continues to exist. If the variable does not need to continue existing beyond the lifetime of its containing element, you do not need to do anything special in the declaration. If the variable needs to continue to exist longer than its containing element, you can include the `Static` or `Shared` keyword in its `Dim` statement. For more information, see [Lifetime in Visual Basic](../declared-elements/lifetime.md).  
   
  The *scope* of a variable is the set of all code that can refer to it without qualifying its name. A variable's scope is determined by where it is declared. Code located in a given region can use the variables defined in that region without having to qualify their names. For more information, see [Scope in Visual Basic](../declared-elements/scope.md).  

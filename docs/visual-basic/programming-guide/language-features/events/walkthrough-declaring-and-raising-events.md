@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
 ---
 # Walkthrough: Declaring and Raising Events (Visual Basic)
+
 This walkthrough demonstrates how to declare and raise events for a class named `Widget`. After you complete the steps, you might want to read the companion topic, [Walkthrough: Handling Events](walkthrough-handling-events.md), which shows how to use events from `Widget` objects to provide status information in an application.  
   
 ## The Widget Class  
+
  Assume for the moment that you have a `Widget` class. Your `Widget` class has a method that can take a long time to execute, and you want your application to be able to put up some kind of completion indicator.  
   
  Of course, you could make the `Widget` object show a percent-complete dialog box, but then you would be stuck with that dialog box in every project in which you used the `Widget` class. A good principle of object design is to let the application that uses an object handle the user interface—unless the whole purpose of the object is to manage a form or dialog box.  

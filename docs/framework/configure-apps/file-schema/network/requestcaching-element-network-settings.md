@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
 ---
 # \<requestCaching> Element (Network Settings)
+
 Controls the caching mechanism for network requests.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -30,6 +31,7 @@ Controls the caching mechanism for network requests.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -68,6 +70,7 @@ Controls the caching mechanism for network requests.
 |[system.net](system-net-element-network-settings.md)|Contains settings that specify how the .NET Framework connects to the network.|  
   
 ## Example  
+
  The following example shows how to disable all caching.  
   
 ```xml  

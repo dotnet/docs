@@ -7,10 +7,10 @@ ms.date: 09/04/2020
 
 C# 9.0 adds the following features and enhancements to the C# language:
 
-- Records
-- Init only setters
-- Top-level statements
-- Pattern matching enhancements
+- [Records](#record-types)
+- [Init only setters](#init-only-setters)
+- [Top-level statements](#top-level-statements)
+- [Pattern matching enhancements](#pattern-matching-enhancements)
 - Native sized integers
 - Function pointers
 - Suppress emitting localsinit flag
@@ -42,7 +42,6 @@ The record definition creates a `Person` type that contains two readonly propert
 - Override for <xref:System.Object.GetHashCode>
 - Copy and Clone members
 - `PrintMembers` and <xref:System.Object.ToString>
-- `Deconstruct` method
 
 Records support inheritance. You can declare a new record derived from `Person` as follows:
 
@@ -58,7 +57,6 @@ The compiler synthesizes different versions of the methods above. The method sig
 - Records have a consistent string representation generated for you.
 - Records support copy construction. Correct copy construction must include inheritance hierarchies, and properties added by developers.
 - Records can be copied with modification. These copy and modify operations supports non-destructive mutation.
-- All records support deconstruction.
 
 In addition to the familiar `Equals` overloads, `operator ==`, and `operator !=`, the compiler synthesizes a new `EqualityContract` property. The property returns a `Type` object that matches the type of the record. If the base type is `object`, the property is `virtual`. If the base type is another record type, the property is an `override`. If the record type is `sealed`, the property is `sealed`. The synthesized `GetHashCode` uses the `GetHashCode` from all properties and fields declared in the base type and the record type. These synthesized methods enforce value-based equality throughout an inheritance hierarchy. That means a `Student` will never be considered equal to a `Person` with the same name. The types of the two records must match as well as all properties shared among the record types being equal.
 
@@ -218,15 +216,15 @@ Another nice use for this feature is to combine it with init only properties to 
 
 You can return an instance created by the default constructor using a `return new();` expression.
 
-A similar feature improves the target type resolution of conditional expressions. With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a common type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
+A similar feature improves the target type resolution of [conditional expressions](../language-reference/operators/conditional-operator.md). With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
 
-Starting in C# 9.0, you can add the `static` modifier to lambda expressions or anonymous methods. Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous function can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
+Starting in C# 9.0, you can add the `static` modifier to [lambda expressions](../language-reference/operators/lambda-expressions.md) or [anonymous methods](../language-reference/operators/delegate-operator.md). Static lambda expressions are analogous to the `static` local functions: a static lambda or anonymous method can't capture local variables or instance state. The `static` modifier prevents accidentally capturing other variables.
 
 Covariant return types provide flexibility for the return types of overridden functions. An overridden virtual function can return a type derived from the return type declared in the base class method. This can be useful for Records, and for other types that support virtual clone or factory methods.
 
-In addition, the `foreach` loop will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
+In addition, the [`foreach` loop](../language-reference/keywords/foreach-in.md) will recognize and use an extension method `GetEnumerator` that otherwise satisfies the `foreach` pattern. This change means `foreach` is consistent with other pattern-based constructions such as the async pattern, and pattern-based deconstruction. In practice, this change means you can add `foreach` support to any type. You should limit its use to when enumerating an object makes sense in your design.
 
-Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument.
+Next, you can use discards as parameters to lambda expressions. This convenience enables you to avoid naming the argument, and the compiler may avoid using it. You use the `_` for any argument. For more information, see the [Input parameters of a lambda expression](../language-reference/operators/lambda-expressions.md#input-parameters-of-a-lambda-expression) section of the [Lambda expressions](../language-reference/operators/lambda-expressions.md) article.
 
 Finally, you can now apply attributes to local functions. For example, you can apply nullable attribute annotations to local functions.
 

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
 ---
 # \<tcpTransport>
+
 Defines a TCP transport that can be used by a channel to transfers messages for a custom binding.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -38,6 +39,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -56,11 +58,12 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 |maxPendingConnections|Gets or sets the maximum number of connections awaiting dispatch on the service.|  
 |maxReceivedMessageSize|Gets and sets the maximum allowable message size that can be received.|  
 |portSharingEnabled|A Boolean value that specifies if TCP port sharing is enabled for this connection. If this is `false`, each binding will use its own exclusive port. The default is `false`.<br /><br /> This setting is relevant only to services. Clients are not affected.<br /><br /> Using this setting requires enabling the Windows Communication Foundation (WCF) TCP Port Sharing Service by changing its Startup Type to Manual or Automatic|  
-|teredoEnabled|A Boolean value that specifies whether Teredo (a technology for addressing clients that are behind firewalls) is enabled. The default is `false`.<br /><br /> This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10)).<br /><br /> This property is applicable only on Windows XP SP2 and Windows Server 2003. Windows Vista has a machine-wide configuration option for Teredo, so when running Vista, this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage.|  
+|teredoEnabled|A Boolean value that specifies whether Teredo (a technology for addressing clients that are behind firewalls) is enabled. The default is `false`.<br /><br /> This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10)).<br /><br /> This property is applicable only on Windows XP SP2 and Windows Server 2003. Windows Vista has a machine-wide configuration option for Teredo, so when running Vista, this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage.|  
 |transferMode|Gets or sets a value that indicates whether the messages are buffered or streamed with the connection-oriented transport.|  
 |connectionPoolSettings|Specifies additional connection pool settings for a Named Pipe binding.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -70,6 +73,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 |[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
+
  This transport uses URIs of the form "net.tcp://hostname:port/path". Other URI components are optional.  
   
  The `tcpTransport` element is the starting point for creating a custom binding that implements the TCP transport protocol. This transport is optimized for WCF-to-WCF communication.  

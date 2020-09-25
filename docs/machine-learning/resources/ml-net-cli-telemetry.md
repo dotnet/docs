@@ -8,7 +8,7 @@ ms.custom: mlnet-tooling
 
 # Telemetry collection by the ML.NET CLI
 
-The [ML.NET CLI](https://aka.ms/mlnet-cli) includes a telemetry feature that collects anonymous usage data that is aggregated for use by Microsoft.
+The [ML.NET CLI](../automate-training-with-cli.md) includes a telemetry feature that collects anonymous usage data that is aggregated for use by Microsoft.
 
 ## How Microsoft uses the data
 

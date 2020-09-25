@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab
 ---
 # Nesting DataRelations
+
 In a relational representation of data, individual tables contain rows that are related to one another using a column or set of columns. In the ADO.NET <xref:System.Data.DataSet>, the relationship between tables is implemented using a <xref:System.Data.DataRelation>. When you create a **DataRelation**, the parent-child relationships of the columns are managed only through the relation. The tables and columns are separate entities. In the hierarchical representation of data that XML provides, the parent-child relationships are represented by parent elements that contain nested child elements.  
   
  To facilitate the nesting of child objects when a **DataSet** is synchronized with an <xref:System.Xml.XmlDataDocument> or written as XML data using **WriteXml**, the **DataRelation** exposes a **Nested** property. Setting the **Nested** property of a **DataRelation** to **true** causes the child rows of the relation to be nested within the parent column when written as XML data or synchronized with an **XmlDataDocument**. The **Nested** property of the **DataRelation** is **false**, by default.  

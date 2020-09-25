@@ -209,7 +209,7 @@ The default behavior when the app runs is configured to use Docker as well. Figu
 
 **Figure 3-7**. Visual Studio Docker Run Options
 
-In addition to local development, [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
+In addition to local development, [Azure Dev Spaces](/azure/dev-spaces/) provides a convenient way for multiple developers to work with their own Kubernetes configurations within Azure. As you can see in Figure 3-7, you can also run the application in Azure Dev Spaces.
 
 Also, at any time you can add Docker support to an existing ASP.NET Core application. From the Visual Studio Solution Explorer, right click on the project and **Add** > **Docker Support**, as shown in Figure 3-8.
 

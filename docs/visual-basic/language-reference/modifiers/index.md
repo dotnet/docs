@@ -4,9 +4,11 @@ ms.date: 07/20/2015
 ms.assetid: a49a0e51-d700-4705-9196-3e0eb582dda6
 ---
 # Modifiers (Visual Basic)
+
 The topics in this section document Visual Basic run-time modifiers.  
   
 ## In This Section  
+
  [Ansi](ansi.md)  
   
  [Assembly](assembly.md)  
@@ -82,4 +84,5 @@ The topics in this section document Visual Basic run-time modifiers.
  [WriteOnly](writeonly.md)  
   
 ## Related Sections  
+
  [Visual Basic Language Reference](../index.md)  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 06da96e8-55d7-486c-991a-4e514d837ff9
 ---
 # ROW (Entity SQL)
+
 Constructs anonymous, structurally typed records from one or more values.  
   
 ## Syntax  
@@ -13,6 +14,7 @@ ROW ( expression [ AS alias ] [,...] )
 ```  
   
 ## Arguments  
+
  `expression`  
  Any valid query expression that returns a value to construct in a row type.  
   
@@ -20,9 +22,11 @@ ROW ( expression [ AS alias ] [,...] )
  Specifies an alias for the value specified in a row type. If an alias is not provided, [!INCLUDE[esql](../../../../../../includes/esql-md.md)] tries to generate an alias based on the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] alias generation rules.  
   
 ## Return Value  
+
  A row type.  
   
 ## Remarks  
+
  You use row constructors in the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] to construct anonymous, structurally typed records from one or more values. The result type of a row constructor is a row type whose field types correspond to the types of the values that were used to construct the row. For example, the following expression constructs a value of type `Record(a int, b string, c int)`.  
   
 ```sql  
@@ -40,6 +44,7 @@ ROW(1 AS a, "abc" AS b, a+34 AS c)
  For more information about query constructors, see [Constructing Types](constructing-types-entity-sql.md).  
   
 ## Example  
+
  The following Entity SQL query uses the ROW operator to construct anonymous, structurally typed records. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
 1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
 ---
 # Interface Statement (Visual Basic)
+
 Declares the name of an interface and introduces the definitions of the members that the interface comprises.  
   
 ## Syntax  
@@ -51,6 +52,7 @@ End Interface
 |`End Interface`|Terminates the `Interface` definition.|  
   
 ## Remarks  
+
  An *interface* defines a set of members, such as properties and procedures, that classes and structures can implement. The interface defines only the signatures of the members and not their internal workings.  
   
  A class or structure implements the interface by supplying code for every member defined by the interface. Finally, when the application creates an instance from that class or structure, an object exists and runs in memory. For more information, see [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md) and [Interfaces](../../programming-guide/language-features/interfaces/index.md).  
@@ -100,6 +102,7 @@ End Interface
 - **Lifetime.** An interface does not itself have a lifetime, nor do its members. When a class implements an interface and an object is created as an instance of that class, the object has a lifetime within the application in which it is running. For more information, see "Lifetime" in [Class Statement](class-statement.md).  
   
 ## Example  
+
  The following example uses the `Interface` statement to define an interface named `thisInterface`, which must be implemented with a `Property` statement and a `Function` statement.  
   
  [!code-vb[VbVbalrStatements#40](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStatements/VB/Class1.vb#40)]  

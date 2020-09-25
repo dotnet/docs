@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 18143304-d5c7-4c95-9995-678088d0c142
 ---
 # OracleTypes
+
 The .NET Framework Data Provider for Oracle includes several structures you can use to work with Oracle data types. These include <xref:System.Data.OracleClient.OracleNumber> and <xref:System.Data.OracleClient.OracleString>.  
   
 > [!NOTE]
@@ -16,6 +17,7 @@ The .NET Framework Data Provider for Oracle includes several structures you can 
 - Use an <xref:System.Data.OracleClient.OracleDataReader> to access the data, and use several <xref:System.Data.OracleClient.OracleType> structures to display the data.  
   
 ## Creating an Oracle Table  
+
  This example creates an Oracle table and loads it with data. You must run this example before running the next example.  
   
 ```csharp  
@@ -46,6 +48,7 @@ public void Setup(string connectionString)
 ```  
   
 ## Retrieving Data from the Oracle Table  
+
  This example uses an **OracleDataReader** to access the data, and uses several **OracleType** structures to display the data.  
   
 ```csharp  

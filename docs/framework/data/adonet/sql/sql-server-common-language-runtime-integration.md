@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: c7a324c4-160d-44c2-b593-641af06eca61
 ---
 # SQL Server Common Language Runtime Integration
+
 SQL Server 2005 introduced the integration of the common language runtime (CLR) component of the .NET Framework for Microsoft Windows. This means that you can write stored procedures, triggers, user-defined types, user-defined functions, user-defined aggregates, and streaming table-valued functions, using any .NET Framework language, including Microsoft Visual Basic .NET and Microsoft Visual C#. The <xref:Microsoft.SqlServer.Server> namespace contains a set of new application programming interfaces (APIs) so that managed code can interact with the Microsoft SQL Server environment.  
   
  This section describes features and behaviors that are specific to SQL Server common language runtime (CLR) integration and the SQL Server in-process specific extensions to ADO.NET.  
@@ -15,6 +16,7 @@ SQL Server 2005 introduced the integration of the common language runtime (CLR) 
 1. [Common Language Runtime (CLR) Integration Programming Concepts](/sql/relational-databases/clr-integration/common-language-runtime-clr-integration-programming-concepts)  
   
 ## In This Section  
+
  [Introduction to SQL Server CLR Integration](introduction-to-sql-server-clr-integration.md)  
  Provides an introduction to SQL Server CLR integration. Provides links to additional topics.  
   

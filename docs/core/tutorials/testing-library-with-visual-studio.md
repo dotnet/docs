@@ -181,6 +181,12 @@ To test the Release build:
 
 1. Run the unit tests by choosing **Test Run** > **All Tests** from the menu bar. The tests pass.
 
+## Debug tests
+
+If you're using Visual Studio as your IDE, you can use the same process shown in [Tutorial: Debug a .NET Core console application using Visual Studio](debugging-with-visual-studio.md) to debug code using your unit test project. Instead of starting the *ShowCase* app project, right-click the **StringLibraryTests** project, and select **Debug Tests** from the context menu.
+
+Visual Studio starts the test project with the debugger attached. Execution will stop at any breakpoint you've added to the test project or the underlying library code.
+
 ## Additional resources
 
 * [Unit test basics - Visual Studio](/visualstudio/test/unit-test-basics)

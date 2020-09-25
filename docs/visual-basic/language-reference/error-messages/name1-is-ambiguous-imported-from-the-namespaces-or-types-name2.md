@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 761091f7-1018-4299-b481-3966a4a2c126
 ---
 # '\<name1>' is ambiguous, imported from the namespaces or types '\<name2>'
+
 You have provided a name that is ambiguous and therefore conflicts with another name. The Visual Basic compiler does not have any conflict resolution rules; you must disambiguate names yourself.  
   
  **Error ID:** BC30561  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 3b3fa000-3434-4142-a178-11903bdd2c5d
 ---
 # \<clientCertificate> of \<clientCredentials> Element
+
 Defines an X.509 certificate used to authenticate a client to a service.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -24,6 +25,7 @@ Defines an X.509 certificate used to authenticate a client to a service.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -36,6 +38,7 @@ Defines an X.509 certificate used to authenticate a client to a service.
 |X509FindType|Defines the type of X.509 search to be executed. The type contained in the `findValue` attribute must satisfy the requirements of this attribute. Valid values include the following:<br /><br /> -   FindByThumbPrint<br />-   FindBySubjectName<br />-   FindBySubjectDistinguishedName<br />-   FindByIssuerName<br />-   FindByIssuerDistinguishedName<br />-   FindBySerialNumber<br />-   FindByTimeValid<br />-   FindByTimeNotYetValid<br />-   FindByTemplateName<br />-   FindByApplicationPolicy<br />-   FindByCertificatePolicy<br />-   FindByExtension<br />-   FindByKeyUsage<br />-   FindBySubjectKeyIdentifier<br /><br /> The default value is FindBySubjectDistinguishedName. This attribute is of type <xref:System.Security.Cryptography.X509Certificates.X509FindType>.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -45,6 +48,7 @@ Defines an X.509 certificate used to authenticate a client to a service.
 |[\<clientCredentials>](clientcredentials.md)|Specifies the credentials used to authenticate the client to a service.|  
   
 ## Remarks  
+
  This configuration element specifies the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../wcf/how-to-specify-client-credential-values.md).  
   
 ## See also

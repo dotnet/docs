@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
 ---
 # \<sharedListeners> Element
+
 Contains listeners that any source or trace element can reference.  These listeners do not receive any traces by default, and it is not possible to retrieve these listeners at run time. Listeners identified as shared listeners can be added to sources or traces by name.  
   
 [**\<configuration>**](../configuration-element.md)  
@@ -28,9 +29,11 @@ Contains listeners that any source or trace element can reference.  These listen
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -47,11 +50,13 @@ Contains listeners that any source or trace element can reference.  These listen
 |`system.diagnostics`|Specifies the root element for the ASP.NET configuration section.|  
   
 ## Remarks  
+
  Adding a listener to the shared listeners collection does not make it an active listener. It must still be added to a trace source or a trace by adding it to the `Listeners` collection for that trace element. The listener classes in the .NET Framework derive from the <xref:System.Diagnostics.TraceListener> class.  
   
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
   
 ## Example  
+
  The following example shows how to use the `<sharedListeners>` element to add the listener `console` to the `Listeners` collection for both the <xref:System.Diagnostics.TraceSource> and <xref:System.Diagnostics.Trace> classes. The console trace listener writes trace information to the console through calls to either <xref:System.Diagnostics.TraceSource> or <xref:System.Diagnostics.Trace>.  
   
 ```xml  

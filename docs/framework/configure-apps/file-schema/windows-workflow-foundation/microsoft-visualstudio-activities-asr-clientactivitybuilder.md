@@ -11,6 +11,7 @@ api_type:
 ms.assetid: e7287d3f-59ee-448f-b7fe-b640508501a5
 ---
 # Microsoft.VisualStudio.Activities.Asr.ClientActivityBuilder
+
 Use this class to create and configure a <xref:System.Activities.ActivityBuilder> object that provides data for a workflow activity.  
   
 ## Syntax  

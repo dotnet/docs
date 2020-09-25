@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ff122116-6042-4792-9f21-275b4f97a105
 ---
 # \<netHttpsBinding>
+
 Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate over HTTPS. When used with a duplex contract, Web Sockets will be used, otherwise HTTPS will be used.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -48,9 +49,11 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 ```  
   
 ## Type  
+
  `Type`  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -80,7 +83,7 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 |Element|Description|  
 |-------------|-----------------|  
 |[\<security>](security-of-nethttpbinding.md)|Defines the security settings for the binding. This element is of type <xref:System.ServiceModel.Configuration.BasicHttpsSecurityElement>. |  
-|[\<readerQuotas>](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
+|[\<readerQuotas>](/previous-versions/dotnet/netframework-4.0/ms731325(v=vs.100))|Defines the constraints on the complexity of SOAP messages that can be processed by endpoints configured with this binding. This element is of type <xref:System.ServiceModel.Configuration.XmlDictionaryReaderQuotasElement>.|  
   
 ### Parent Elements  
   
@@ -89,11 +92,13 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 |[\<bindings>](bindings.md)|This element holds a collection of standard and custom bindings.|  
   
 ## Remarks  
+
  The NetHttpsBinding uses HTTPS as the transport for sending messages. When used with a duplex contract, Web Sockets will be used.  When used with a request-reply contract NetHttpsBinding will behave like a BasicHttpsBinding with a binary encoder.  
   
  Security is turned off by default, but can be added setting the mode attribute of the [\<security>](security-of-basichttpbinding.md) child element to a value other than `None`. It uses a "Text" message encoding and UTF-8 text encoding by default.  
   
 ## Example  
+
  The following example demonstrates the use of <xref:System.ServiceModel.NetHttpBinding> that provides HTTPS communication and maximum interoperability with first- and second-generation Web services. The binding is specified in the configuration files for the client and service. The binding type is specified using the `binding` attribute of the `<endpoint>` element. If you want to configure the basic binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration by name by using the `bindingConfiguration` attribute of the `<endpoint>` element, as shown in the following configuration code for the service.  
   
 ```xml  
@@ -131,6 +136,7 @@ Represents a binding that a Windows Communication Foundation (WCF) service can u
 ```  
   
 ## Example  
+
  Starting with .NET Framework 4, bindings and behaviors are not required to have a name. The functionality from the previous example can be accomplished by removing the bindingConfiguration from the endpoint address and the name from the binding.  
   
 ```xml  

@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
 ---
 # property
+
 *Properties* are the fundamental building blocks of [entity types](entity-type.md) and [complex types](complex-type.md). Properties define the shape and characteristics of data that an entity type instance or complex type instance will contain. Properties in a conceptual model are analogous to properties defined on a class. In the same way that properties on a class define the shape of the class and carry information about objects, properties in a conceptual model define the shape of an entity type and carry information about entity type instances.  
   
 > [!NOTE]
@@ -23,6 +24,7 @@ ms.assetid: a941c53f-fc97-42c2-8832-0fb9f1d55c06
 > A complex type can, itself, have properties that are complex types.  
   
 ## Example  
+
  The diagram below shows a conceptual model with three entity types: `Book`, `Publisher`, and `Author`. Each entity type has several properties, although type information for each property is not conveyed in the diagram. Properties that are [entity keys](entity-key.md) are denoted with (Key).  
   
  ![Example model with three entity types](./media/property/example-model-three-entity-types.gif)  

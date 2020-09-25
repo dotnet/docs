@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: e380edac-da67-4276-80a5-b64decae4947
 ---
 # Optimistic Concurrency
+
 In a multiuser environment, there are two models for updating data in a database: optimistic concurrency and pessimistic concurrency. The <xref:System.Data.DataSet> object is designed to encourage the use of optimistic concurrency for long-running activities, such as remoting data and interacting with data.  
   
  Pessimistic concurrency involves locking rows at the data source to prevent other users from modifying data in a way that affects the current user. In a pessimistic model, when a user performs an action that causes a lock to be applied, other users cannot perform actions that would conflict with the lock until the lock owner releases it. This model is primarily used in environments where there is heavy contention for data, so that the cost of protecting data with locks is less than the cost of rolling back transactions if concurrency conflicts occur.  
@@ -57,6 +58,7 @@ In a multiuser environment, there are two models for updating data in a database
  At this point, User1 encounters an optimistic concurrency violation because the value in the database ("Robert") no longer matches the original value that User1 was expecting ("Bob"). The concurrency violation simply lets you know that the update failed. The decision now needs to be made whether to overwrite the changes supplied by User2 with the changes supplied by User1, or to cancel the changes by User1.  
   
 ## Testing for Optimistic Concurrency Violations  
+
  There are several techniques for testing for an optimistic concurrency violation. One involves including a timestamp column in the table. Databases commonly provide timestamp functionality that can be used to identify the date and time when the record was last updated. Using this technique, a timestamp column is included in the table definition. Whenever the record is updated, the timestamp is updated to reflect the current date and time. In a test for optimistic concurrency violations, the timestamp column is returned with any query of the contents of the table. When an update is attempted, the timestamp value in the database is compared to the original timestamp value contained in the modified row. If they match, the update is performed and the timestamp column is updated with the current time to reflect the update. If they do not match, an optimistic concurrency violation has occurred.  
   
  Another technique for testing for an optimistic concurrency violation is to verify that all the original column values in a row still match those found in the database. For example, consider the following query:  
@@ -90,11 +92,13 @@ UPDATE Table1 Set Col1 = @NewVal1
  You may also choose to apply less restrictive criteria when using an optimistic concurrency model. For example, using only the primary key columns in the WHERE clause causes the data to be overwritten regardless of whether the other columns have been updated since the last query. You can also apply a WHERE clause only to specific columns, resulting in data being overwritten unless particular fields have been updated since they were last queried.  
   
 ### The DataAdapter.RowUpdated Event  
+
  The **RowUpdated** event of the <xref:System.Data.Common.DataAdapter> object can be used in conjunction with the techniques described earlier, to provide notification to your application of optimistic concurrency violations. **RowUpdated** occurs after each attempt to update a **Modified** row from a **DataSet**. This enables you to add special handling code, including processing when an exception occurs, adding custom error information, adding retry logic, and so on. The <xref:System.Data.Common.RowUpdatedEventArgs> object returns a **RecordsAffected** property containing the number of rows affected by a particular update command for a modified row in a table. By setting the update command to test for optimistic concurrency, the **RecordsAffected** property will, as a result, return a value of 0 when an optimistic concurrency violation has occurred, because no records were updated. If this is the case, an exception is thrown. The **RowUpdated** event enables you to handle this occurrence and avoid the exception by setting an appropriate **RowUpdatedEventArgs.Status** value, such as **UpdateStatus.SkipCurrentRow**. For more information about the **RowUpdated** event, see [Handling DataAdapter Events](handling-dataadapter-events.md).  
   
  Optionally, you can set **DataAdapter.ContinueUpdateOnError** to **true**, before calling **Update**, and respond to the error information stored in the **RowError** property of a particular row when the **Update** is completed. For more information, see [Row Error Information](./dataset-datatable-dataview/row-error-information.md).  
   
 ## Optimistic Concurrency Example  
+
  The following is a simple example that sets the **UpdateCommand** of a **DataAdapter** to test for optimistic concurrency, and then uses the **RowUpdated** event to test for optimistic concurrency violations. When an optimistic concurrency violation is encountered, the application sets the **RowError** of the row that the update was issued for to reflect an optimistic concurrency violation.  
   
  Note that the parameter values passed to the WHERE clause of the UPDATE command are mapped to the **Original** values of their respective columns.  

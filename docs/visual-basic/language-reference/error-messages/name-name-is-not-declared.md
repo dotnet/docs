@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 765f099b-e21e-47c6-a906-a065444e56b3
 ---
 # Name '\<name>' is not declared
+
 A statement refers to a programming element, but the compiler cannot find an element with that exact name.  
   
  **Error ID:** BC30451  

@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 319e95b5-5176-4fe1-bc04-90075594b397
 ---
 # Unable to embed resource file '\<filename>': \<error message>
+
 The Visual Basic compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error embedding a native COM+ resource file directly into the assembly.  
   
  **Error ID:** BC30143  

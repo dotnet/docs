@@ -5,9 +5,11 @@ ms.date: "03/30/2017"
 ms.assetid: e458cef9-63b5-4401-b448-1536dcd9d9e5
 ---
 # Features Provided by System.Transactions
+
 This section describes how you can use the features provided by the <xref:System.Transactions> namespace to write your own transactional application and resource manager. Specifically, this section covers how to create and participate in a transaction (local or distributed) with one or multiple participants.  
   
 ## Overview of System.Transactions  
+
  The infrastructure provided by the classes in the <xref:System.Transactions> namespace makes transactional programming simple and efficient by supporting transactions initiated in SQL Server, ADO.NET, Message Queuing (MSMQ), and the Microsoft Distributed Transaction Coordinator (MSDTC). The <xref:System.Transactions> namespace provides both an explicit programming model based on the <xref:System.Transactions.Transaction> class, as well as an implicit programming model using the <xref:System.Transactions.TransactionScope> class, in which transactions are automatically managed by the infrastructure. For more information on how to create a transactional application using these two models, see [Writing a Transactional Application](writing-a-transactional-application.md).  
   
  The <xref:System.Transactions> namespace also provides types for you to implement a resource manager. A resource manager manages durable or volatile data used in a transaction, and work in cooperation with the transaction manager to provide the application with a guarantee of atomicity and isolation. The transaction manager that is provided by the <xref:System.Transactions> infrastructure supports transactions involving multiple volatile resources or a single durable resource. For more information on implementing a resource manager, see [Implementing a Resource Manager](implementing-a-resource-manager.md).  
@@ -23,6 +25,7 @@ This section describes how you can use the features provided by the <xref:System
 ## In this section  
   
 ### Writing A Transactional Application  
+
  The <xref:System.Transactions> namespace provides two models for creating transactional applications. [Implementing an Implicit Transaction using Transaction Scope](implementing-an-implicit-transaction-using-transaction-scope.md) describes how the <xref:System.Transactions> namespace supports creating implicit transactions using the <xref:System.Transactions.TransactionScope> class.  
   
  [Implementing an Explicit Transaction using CommittableTransaction](implementing-an-explicit-transaction-using-committabletransaction.md) describes how the <xref:System.Transactions> namespace supports creating explicit transactions using the <xref:System.Transactions.CommittableTransaction> class.  
@@ -30,4 +33,5 @@ This section describes how you can use the features provided by the <xref:System
  For additional topics covering writing a transactional application, see [Writing a Transactional Application](writing-a-transactional-application.md).  
   
 ### Implementing A Resource Manager  
+
  To implement a resource manager that can participate in a transaction, see [Implementing a Resource Manager](implementing-a-resource-manager.md). This section covers the enlistment of a resource, committing a transaction, recovery after failure, and optimization best practices.

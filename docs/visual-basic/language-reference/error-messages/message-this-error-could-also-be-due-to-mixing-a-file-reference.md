@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 75d2e8b5-2fdc-4623-8b32-cba805dab7db
 ---
 # \<message> This error could also be due to mixing a file reference with a project reference to assembly '\<assemblyname>'
+
 \<message> This error could also be due to mixing a file reference with a project reference to assembly '\<assemblyname>. In this case, try replacing the file reference to '\<assemblyfilename>' in project '\<projectname1>' with a project reference to '\<projectname2>'.  
   
  Code in your project accesses a member of another project, but the configuration of your solution does not allow the Visual Basic compiler to resolve the reference.  

@@ -18,7 +18,7 @@ The build time analysis engine provides warnings to the developer of code patter
 The trim mode for the applications is configured with the `TrimMode` setting. The default value is `copyused` and bundles referenced assemblies with the application. The `link` value is used with Blazor WebAssembly applications and trims unused code within assemblies. Trim analysis warnings give information on code patterns where a full dependency analysis was not possible. These warnings are suppressed by default and can be turned on by setting the flag `SuppressTrimAnalysisWarnings` to `false`. For more information about the trim options available, see [Trimming options](trimming-options.md).
 
 > [!NOTE]
-> Trimming is an experimental feature in .NET Core 3.1, 5.0 and is _only_ available to applications that are published self-contained.
+> Trimming is an experimental feature in .NET Core 3.1 and .NET 5.0. Trimming is _only_ available to applications that are published self-contained.
 
 ## Prevent assemblies from being trimmed
 

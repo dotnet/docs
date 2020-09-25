@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: f1ddf364-9a00-45d3-b989-ff381c154ce6
 ---
 # \<defaultCertificate> Element
+
 Specifies an X.509 certificate to be used when a service or STS does not provide one via a negotiation protocol.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies an X.509 certificate to be used when a service or STS does not provide
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements  
   
 ### Attributes  
@@ -61,6 +63,7 @@ Specifies an X.509 certificate to be used when a service or STS does not provide
 |Enumeration|Values include: AddressBook, AuthRoot, CertificateAuthority, Disallowed, My, Root, TrustedPeople, and TrustedPublisher.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -70,9 +73,11 @@ Specifies an X.509 certificate to be used when a service or STS does not provide
 |[\<serviceCertificate>](servicecertificate-of-clientcredentials-element.md)|Specifies a certificate to use when authenticating a service to the client.|  
   
 ## Remarks  
+
  For bindings that use certificate-based message security, certificate specified by this configuration element is used to encrypt messages to the service and is expected to be used by the service for signing replies to the client. It stores a single certificate to be used when no certificate is specified by a service.  
   
 ## Example  
+
  The following example specifies a certificate to use for endpoints whose URI begins with `http://www.contoso.com` and a certificate to use for all other endpoints that do not perform certificate negotiation.  
   
 ```xml  

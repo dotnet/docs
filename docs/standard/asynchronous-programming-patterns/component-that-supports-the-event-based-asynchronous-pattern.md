@@ -247,6 +247,6 @@ If you are writing a class with some operations that may incur noticeable delays
   
 ## See also
 
-- [How to: Run an Operation in the Background](../../framework/winforms/controls/how-to-run-an-operation-in-the-background.md)
+- [How to: Run an Operation in the Background](/dotnet/desktop/winforms/controls/how-to-run-an-operation-in-the-background)
 - [Event-based Asynchronous Pattern Overview](event-based-asynchronous-pattern-overview.md)
 - [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md)

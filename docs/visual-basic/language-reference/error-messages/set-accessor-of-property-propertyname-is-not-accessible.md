@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: 6f7b31b7-3656-4ae1-8851-90f5f4c6950a
 ---
 # 'Set' accessor of property '\<propertyname>' is not accessible
+
 A statement attempts to store the value of a property when it does not have access to the property's `Set` procedure.  
   
  If the [Set Statement](../statements/set-statement.md) is marked with a more restrictive access level than its [Property Statement](../statements/property-statement.md), an attempt to set the property value could fail in the following cases:  

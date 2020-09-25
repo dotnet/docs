@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 2e6642c9-bfc6-425c-b3a7-e4912ffa6c1f
 ---
 # Row States and Row Versions
+
 ADO.NET manages rows in tables using row states and versions. A row state indicates the status of a row; row versions maintain the values stored in a row as it is modified, including current, original, and default values. For example, after you have made a modification to a column in a row, the row will have a row state of `Modified`, and two row versions: `Current`, which contains the current row values, and `Original`, which contains the row values before the column was modified.  
   
  Each <xref:System.Data.DataRow> object has a <xref:System.Data.DataRow.RowState%2A> property that you can examine to determine the current state of the row. The following table gives a brief description of each `RowState` enumeration value.  

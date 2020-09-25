@@ -5,6 +5,7 @@ ms.assetid: 6ec3bac1-b014-49ae-843c-c54518cb709a
 author: "BrucePerlerMS"
 ---
 # \<userNameSecurityTokenHandlerRequirement>
+
 Provides configuration for the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> class or derived classes.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -30,6 +31,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -39,6 +41,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
 |membershipProviderName|Specifies the <xref:System.Web.Security.MembershipProvider> that should be used by the security token handler.|  
   
 ### Child Elements  
+
  None  
   
 ### Parent Elements  
@@ -48,6 +51,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
 |[\<add>](add.md)|Adds the specified security token handler to the token handler collection.|  
   
 ## Remarks  
+
  The `<userNameSecurityTokenHandlerRequirement>` element sets the <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider%2A> property when a <xref:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler> object is initialized from configuration.  
   
 ## Example  

@@ -48,7 +48,7 @@ Relational databases typically provide consistency and availability, but not par
 
 Many relational database systems support built-in replication features where copies of the primary database can be made to other secondary server instances. Write operations are made to the primary instance and replicated to each of the secondaries. Upon a failure, the primary instance can fail over to a secondary to provide high availability. Secondaries can also be used to distribute read operations. While writes operations always go against the primary replica, read operations can be routed to any of the secondaries to reduce system load.
 
-Data can also be horizontally partitioned across multiple nodes, such as with [sharding](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction). But, sharding dramatically increases operational overhead by spitting data across many pieces that cannot easily communicate. It can be costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
+Data can also be horizontally partitioned across multiple nodes, such as with [sharding](/azure/sql-database/sql-database-elastic-scale-introduction). But, sharding dramatically increases operational overhead by spitting data across many pieces that cannot easily communicate. It can be costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
 
 If data replicas were to lose network connectivity in a "highly consistent" relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to the other data replica. Every data replica has to update before the transaction can complete.
 
@@ -105,15 +105,15 @@ You can provision an Azure database in minutes by selecting the amount of proces
 ## Azure SQL Database
 
 Development teams with expertise in Microsoft SQL Server should consider
-[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/). It's a fully managed relational database-as-a-service (DBaaS) based on the Microsoft SQL Server Database Engine. The service shares many features found in the on-premises version of SQL Server and runs the latest stable version of the SQL Server Database Engine.
+[Azure SQL Database](/azure/sql-database/). It's a fully managed relational database-as-a-service (DBaaS) based on the Microsoft SQL Server Database Engine. The service shares many features found in the on-premises version of SQL Server and runs the latest stable version of the SQL Server Database Engine.
 
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment options:
 
-- A Single Database represents a fully managed SQL Database running on an [Azure SQL Database server](https://docs.microsoft.com/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](https://docs.microsoft.com/sql/relational-databases/databases/contained-databases) as it has no configuration dependencies on the underlying database server.
+- A Single Database represents a fully managed SQL Database running on an [Azure SQL Database server](/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](/sql/relational-databases/databases/contained-databases) as it has no configuration dependencies on the underlying database server.
   
-- A [Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine that provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) for better isolation.
+- A [Managed Instance](/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine that provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](/azure/virtual-network/virtual-networks-overview) for better isolation.
 
-- [Azure SQL Database serverless](https://docs.microsoft.com/azure/sql-database/sql-database-serverless) is a compute tier for a single database that automatically scales based on workload demand. It bills only for the amount of compute used per second. The service is well suited for workloads with intermittent, unpredictable usage patterns, interspersed with periods of inactivity. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns.
+- [Azure SQL Database serverless](/azure/sql-database/sql-database-serverless) is a compute tier for a single database that automatically scales based on workload demand. It bills only for the amount of compute used per second. The service is well suited for workloads with intermittent, unpredictable usage patterns, interspersed with periods of inactivity. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns.
 
 Beyond the traditional Microsoft SQL Server stack, Azure also features managed versions of three popular open-source databases.
 
@@ -147,7 +147,7 @@ MariaDB has a strong community and is used by many large enterprises. While Orac
 
 Azure Database for PostgreSQL is available with two deployment options:
 
-- The [Single Server](https://docs.microsoft.com/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases to which you can deploy many databases. The pricing is structured per-server based upon cores and storage.
+- The [Single Server](/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases to which you can deploy many databases. The pricing is structured per-server based upon cores and storage.
 
 - The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/) is powered by Citus Data technology. It enables high performance by *horizontally scaling* a single database across hundreds of nodes to deliver fast performance and scale. This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster.
 
@@ -171,7 +171,7 @@ You can distribute Cosmos databases across regions or around the world, placing 
 
 Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any of your database regions to support *both writes and reads*.
 
-The [Multi-Master](https://docs.microsoft.com/azure/cosmos-db/multi-master-benefits) protocol is an important feature in Cosmos DB that enables the following functionality:
+The [Multi-Master](/azure/cosmos-db/multi-master-benefits) protocol is an important feature in Cosmos DB that enables the following functionality:
 
 - Unlimited elastic write and read scalability.
 
@@ -179,7 +179,7 @@ The [Multi-Master](https://docs.microsoft.com/azure/cosmos-db/multi-master-benef
 
 - Guaranteed reads and writes served in less than 10 milliseconds at the 99th percentile.
 
-With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally), your microservice is automatically aware of the nearest Azure region and sends requests to it. The nearest region is identified by Cosmos DB without any configuration changes. Should a region become unavailable, the Multi-Homing feature will automatically route requests to the next nearest available region.
+With the Cosmos DB [Multi-Homing APIs](/azure/cosmos-db/distribute-data-globally), your microservice is automatically aware of the nearest Azure region and sends requests to it. The nearest region is identified by Cosmos DB without any configuration changes. Should a region become unavailable, the Multi-Homing feature will automatically route requests to the next nearest available region.
 
 ### Multi-model support
 
@@ -198,7 +198,7 @@ Development teams can migrate existing Mongo, Gremlin, or Cassandra databases in
 
 > Internally, Cosmos stores the data in a simple struct format made up of primitive data types. For each request, the database engine translates the primitive data into the model representation you've selected.
 
-In the previous table, note the [Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. The following table contrasts the features.
+In the previous table, note the [Table API](/azure/cosmos-db/table-introduction) option. This API is an evolution of Azure Table Storage. Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. The following table contrasts the features.
 
 |  | Azure Table Storage  | Azure Cosmos DB  |
 | :-------- | :-------- |:-------- |
@@ -216,7 +216,7 @@ Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data
 
 Most distributed databases allow developers to choose between two consistency models: strong consistency and eventual consistency. *Strong consistency* is the gold standard of data programmability. It guarantees that a query will always return the most current data - even if the system must incur latency waiting for an update to replicate across all database copies. While a database configured for *eventual consistency* will return data immediately, even if that data isn't the most current copy. The latter option enables higher availability, greater scale, and increased performance.
 
-Azure Cosmos DB offers five well-defined [consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-13.
+Azure Cosmos DB offers five well-defined [consistency models](/azure/cosmos-db/consistency-levels) shown in Figure 5-13.
 
 ![Cosmos DB consistency graph](./media/cosmos-consistency-level-graph.png)
 
@@ -236,7 +236,7 @@ In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explaine
 
 ### Partitioning
 
-Azure Cosmos DB embraces automatic [partitioning](https://docs.microsoft.com/azure/cosmos-db/partitioning-overview) to scale a database to meet the performance needs of your cloud-native services.
+Azure Cosmos DB embraces automatic [partitioning](/azure/cosmos-db/partitioning-overview) to scale a database to meet the performance needs of your cloud-native services.
 
 You manage data in Cosmos DB data by creating databases, containers, and items.
 
@@ -250,7 +250,7 @@ To partition the container, items are divided into distinct subsets called logi
 
 Note in the  previous figure how each item includes a partition key of either ‘city’ or ‘airport’. The key determines the item’s logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
 
-Internally, Cosmos DB automatically manages the placement of [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) on physical partitions to satisfy the scalability and performance needs of the container. As application throughput and storage requirements  increase, Azure Cosmos DB redistributes logical partitions across a greater number of servers. Redistribution operations are managed by Cosmos DB and invoked without interruption or downtime.
+Internally, Cosmos DB automatically manages the placement of [logical partitions](/azure/cosmos-db/partition-data) on physical partitions to satisfy the scalability and performance needs of the container. As application throughput and storage requirements  increase, Azure Cosmos DB redistributes logical partitions across a greater number of servers. Redistribution operations are managed by Cosmos DB and invoked without interruption or downtime.
 
 ## NewSQL databases
 

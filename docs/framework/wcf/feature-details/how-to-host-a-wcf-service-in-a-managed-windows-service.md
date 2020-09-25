@@ -133,4 +133,4 @@ Like the "Self-Hosting" option, the Windows service hosting environment requires
 - [Simplified Configuration](../simplified-configuration.md)
 - [Hosting in a Managed Application](hosting-in-a-managed-application.md)
 - [Hosting Services](../hosting-services.md)
-- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))
+- [Windows Server App Fabric Hosting Features](/previous-versions/appfabric/ee677189(v=azure.10))

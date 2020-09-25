@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
 ---
 # \<messageSenderAuthentication>
+
 Specifies authentication settings for peer certificate used by a message sender.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Specifies authentication settings for peer certificate used by a message sender.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -37,6 +39,7 @@ Specifies authentication settings for peer certificate used by a message sender.
 |`trustedStoreLocation`|Optional enumeration. Specifies the trusted store location where the peer certificate is validated by the WCF security system. This attribute is of type <xref:System.Security.Cryptography.X509Certificates.StoreLocation>.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -46,6 +49,7 @@ Specifies authentication settings for peer certificate used by a message sender.
 |[\<peer>](peer-of-servicecredentials.md)|Specifies the current credentials for a peer node.|  
   
 ## Remarks  
+
  This element must be configured if message authentication is chosen. For output channels, each message is signed using the certificate provided by [\<certificate>](certificate-element.md). All messages, before delivered to the application, are checked against the message credential using the validator specified by the `customCertificateValidatorType` attribute of this element. The validator can either accept or reject the credential.  
   
 ## See also
@@ -56,6 +60,6 @@ Specifies authentication settings for peer certificate used by a message sender.
 - <xref:System.ServiceModel.Configuration.PeerCredentialElement.MessageSenderAuthentication%2A>
 - [Working with Certificates](../../../wcf/feature-details/working-with-certificates.md)
 - [Peer-to-Peer Networking](../../../wcf/feature-details/peer-to-peer-networking.md)
-- [Peer Channel Message Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
-- [Peer Channel Custom Authentication](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
+- [Peer Channel Message Authentication](/previous-versions/dotnet/netframework-3.5/aa967730(v=vs.90))
+- [Peer Channel Custom Authentication](/previous-versions/dotnet/netframework-3.5/ms751447(v=vs.90))
 - [Securing Peer Channel Applications](../../../wcf/feature-details/securing-peer-channel-applications.md)

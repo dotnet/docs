@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: b6929bf4-a365-4a70-8dc9-6b0fc09e1468
 ---
 # Function '\<procedurename>' doesn't return a value on all code paths
+
 Function '\<procedurename>' doesn't return a value on all code paths. Are you missing a 'Return' statement?  
   
  A `Function` procedure has at least one possible path through its code that does not return a value.  

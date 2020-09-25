@@ -11,13 +11,13 @@ LINQ to XML is the new model in the .NET Framework version 3.5 for processing XM
   
  LINQ to XML leverages the language-integrated query (LINQ) technology in the .NET Framework version 3.5. LINQ extends the language syntax of C# and Visual Basic to provide powerful query capabilities that can be extended to potentially any data store.  
   
- For a detailed discussion of its use, see [LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) and [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md). For an overview of the LINQ framework, see [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md) or [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md).  
+ For a detailed discussion of its use, see [LINQ to XML (C#)](../../linq/linq-xml-overview.md) and [LINQ to XML (Visual Basic)](../../linq/linq-xml-overview.md). For an overview of the LINQ framework, see [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md) or [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md).  
   
 ## See also
 
 - <xref:System.Xml.Linq>
 - <xref:System.Linq>
-- [LINQ to XML vs. DOM (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml-vs-dom.md)
-- [LINQ to XML vs. DOM (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-dom.md)
-- [LINQ to XML vs. Other XML Technologies (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md)
-- [LINQ to XML vs. Other XML Technologies (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md)
+- [LINQ to XML vs. DOM (C#)](../../linq/linq-xml-vs-dom.md)
+- [LINQ to XML vs. DOM (Visual Basic)](../../linq/linq-xml-vs-dom.md)
+- [LINQ to XML vs. Other XML Technologies (C#)](../../linq/linq-xml-vs-xml-technologies.md)
+- [LINQ to XML vs. Other XML Technologies (Visual Basic)](../../linq/linq-xml-vs-xml-technologies.md)

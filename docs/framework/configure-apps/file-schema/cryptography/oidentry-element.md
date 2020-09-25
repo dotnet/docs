@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
 ---
 # \<oidEntry> Element
+
 Maps an ASN.1 object identifier (OID) to a friendly name.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -25,6 +26,7 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -35,6 +37,7 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 |**name**|Required attribute.<br /><br /> Specifies the value for the **name** attribute in the [\<nameEntry>](nameentry-element.md) tag.|  
   
 ### Child Elements  
+
  None.  
   
 ### Parent Elements  
@@ -47,9 +50,11 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 |`oidMap`|Contains ASN.1 object identifier (OID) mappings to classes.|  
   
 ## Remarks  
+
  ASN.1 object identifiers identify algorithms in some cryptographic formats. Map object identifiers to friendly names for the algorithms you want to identify.  
   
 ## Example  
+
  The following example shows how to use the **\<oidEntry>** element to map an object identifier for the RIPEMD-160 hash algorithm to an implementation of that hash algorithm.  
   
 ```xml  

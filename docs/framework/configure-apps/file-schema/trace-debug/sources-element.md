@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
 ---
 # \<sources> Element
+
 Specifies trace sources that initiate tracing messages.  
 
 [**\<configuration>**](../configuration-element.md)\
@@ -26,9 +27,11 @@ Specifies trace sources that initiate tracing messages.
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
+
  None.  
   
 ### Child Elements  
@@ -45,9 +48,11 @@ Specifies trace sources that initiate tracing messages.
 |`system.diagnostics`|Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.|  
   
 ## Remarks  
+
  This element can be used in the machine configuration file (Machine.config) and the application configuration file.  
   
 ## Example  
+
  The following example shows how to use the `<sources>` element to add the trace source `mySource` and to set the level for the source switch named `sourceSwitch`. A console trace listener is added that writes trace information to the console.  
   
 ```xml  

@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
 ---
 # \<bindingRedirect> Element
+
 Redirects one assembly version to another.  
   
 [**\<configuration>**](../configuration-element.md)\
@@ -28,6 +29,7 @@ newVersion="new assembly version"/>
 ```  
   
 ## Attributes and Elements  
+
  The following sections describe attributes, child elements, and parent elements.  
   
 ### Attributes  
@@ -53,6 +55,7 @@ newVersion="new assembly version"/>
 |`runtime`|Contains information about assembly binding and garbage collection.|  
   
 ## Remarks  
+
  When you build a .NET Framework application against a strong-named assembly, the application uses that version of the assembly at run time by default, even if a new version is available. However, you can configure the application to run against a newer version of the assembly. For details on how the runtime uses these files to determine which assembly version to use, see [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md).  
   
  You can redirect more than one assembly version by including multiple `bindingRedirect` elements in a `dependentAssembly` element. You can also redirect from a newer version to an older version of the assembly.  
@@ -60,6 +63,7 @@ newVersion="new assembly version"/>
  Explicit assembly binding redirection in an application configuration file requires a security permission. This applies to redirection of .NET Framework assemblies and assemblies from third parties. The permission is granted by setting the <xref:System.Security.Permissions.SecurityPermissionFlag> flag on the <xref:System.Security.Permissions.SecurityPermission>. For more information, see [Assembly Binding Redirection Security Permission](../../assembly-binding-redirection-security-permission.md).  
   
 ## Example  
+
  The following example shows how to redirect one assembly version to another.  
   
 ```xml  

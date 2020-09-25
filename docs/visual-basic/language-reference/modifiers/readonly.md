@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
 ---
 # ReadOnly (Visual Basic)
+
 Specifies that a variable or property can be read but not written.
 
 ## Remarks

@@ -7,6 +7,7 @@ dev_langs:
 ms.assetid: 653a4a97-1e4a-4b2d-8d24-7dbe1f2a5c84
 ---
 # Query Expression Syntax Examples: Ordering (LINQ to DataSet)
+
 The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.OrderByDescending%2A>, <xref:System.Linq.Enumerable.Reverse%2A>, and <xref:System.Linq.Enumerable.ThenByDescending%2A> methods to query a <xref:System.Data.DataSet> and order the results using the query expression syntax.  
   
  The `FillDataSet` method used in these examples is specified in [Loading Data Into a DataSet](loading-data-into-a-dataset.md).  
@@ -23,12 +24,14 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## OrderBy  
   
 ### Example  
+
  This example uses <xref:System.Linq.Enumerable.OrderBy%2A> to return a list of contacts ordered by last name.  
   
  [!code-csharp[DP LINQ to DataSet Examples#OrderBySimple1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#orderbysimple1)]
  [!code-vb[DP LINQ to DataSet Examples#OrderBySimple1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#orderbysimple1)]  
   
 ### Example  
+
  This example uses <xref:System.Linq.Enumerable.OrderBy%2A> to sort a list of contacts by length of last name.  
   
  [!code-csharp[DP LINQ to DataSet Examples#OrderBySimple2](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#orderbysimple2)]
@@ -37,6 +40,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## OrderByDescending  
   
 ### Example  
+
  This example uses `orderby… descending` (`Order By … Descending`), which is equivalent to the <xref:System.Linq.Enumerable.OrderByDescending%2A> method, to sort the price list from highest to lowest.  
   
  [!code-csharp[DP LINQ to DataSet Examples#OrderByDescendingSimple1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#orderbydescendingsimple1)]
@@ -45,6 +49,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## Reverse  
   
 ### Example  
+
  This example uses <xref:System.Linq.Enumerable.Reverse%2A> to create a list of orders where `OrderDate` is earlier than Feb 20, 2002.  
   
  [!code-csharp[DP LINQ to DataSet Examples#Reverse](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#reverse)]
@@ -53,6 +58,7 @@ The examples in this topic demonstrate how to use the <xref:System.Linq.Enumerab
 ## ThenByDescending  
   
 ### Example  
+
  This example uses `OrderBy… Descending` , which is equivalent to the <xref:System.Linq.Enumerable.ThenByDescending%2A> method, to sort a list of products, first by name and then by list price, from highest to lowest.  
   
  [!code-csharp[DP LINQ to DataSet Examples#ThenByDescendingSimple](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#thenbydescendingsimple)]

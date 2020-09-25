@@ -80,7 +80,7 @@ Inspect the app's console output:
 ```console
 info: LoggerMessageSample.Pages.IndexModel[2]
       => RequestId:0HL90M6E7PHK5:0000000A RequestPath:/ => /Index
-      Quote added (Quote = 'You can avoid reality, but you cannot avoid the 
+      Quote added (Quote = 'You can avoid reality, but you cannot avoid the
           consequences of avoiding reality. - Ayn Rand')
 ```
 
@@ -103,7 +103,7 @@ When a quote is successfully deleted, inspect the app's console output:
 ```console
 info: LoggerMessageSample.Pages.IndexModel[4]
       => RequestId:0HL90M6E7PHK5:00000016 RequestPath:/ => /Index
-      Quote deleted (Quote = 'You can avoid reality, but you cannot avoid the 
+      Quote deleted (Quote = 'You can avoid reality, but you cannot avoid the
           consequences of avoiding reality. - Ayn Rand' Id = 1)
 ```
 

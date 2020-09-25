@@ -19,6 +19,7 @@ In this article, you learn how to connect to an ADLS (Azure Data Lake Storage) G
     1. Set the `JAVA_HOME` property using the DOS path (since Hadoop doesn't like spaces in `JAVA_HOME`). This should look something like this: `C:\Progra~1\Java\jdk1.8.0_241` (Pointing to whatever version of Java you have installed on your local machine).
     2. Append `%HADOOP_HOME%\share\hadoop\tools\lib\*` to `HADOOP_CLASSPATH`.
     Your final `hadoop-env.cmd` file should look something like this:
+
     ![Final hadoop-env.cmd file](./media/connect-external-sources/hadoop-env.png)
 
 ## Steps to configure Hadoop to connect to your Storage account

@@ -26,20 +26,20 @@ In this article, you learn how to connect to an ADLS (Azure Data Lake Storage) G
 1. Open the ADLS Gen 2 or WASB storage account you want to connect to through the [Azure portal](https://portal.azure.com) and open the **Access keys** panel under the **Settings** blade and copy the value of **Key** from under key1.
 2. Now in order to configure Hadoop to access your ADLS Gen2 account you would have to edit your `core-site.xml` (located in `%HADOOP_HOME%\etc\hadoop\` ) file which contains cluster-wide configuration. Add the following properties inside the `<configuration>` tags in this file:
 
-  ```xml
-  <configuration>
-    <property>
-      <name>fs.azure.account.auth.type.YOUR_ACCOUNT_NAME.dfs.core.windows.net</name>
-      <value>SharedKey</value>
-      <description></description>
-    </property>
-    <property>
-      <name>fs.azure.account.key.YOUR_ACCOUNT_NAME.dfs.core.windows.net</name>
-      <value>YOUR ACCESS KEY (copied from Step 1)</value>
-      <description>The secret password. Never share these.</description>
-    </property>
-  </configuration>
-  ```
+    ```xml
+    <configuration>
+      <property>
+        <name>fs.azure.account.auth.type.YOUR_ACCOUNT_NAME.dfs.core.windows.net</name>
+        <value>SharedKey</value>
+        <description></description>
+      </property>
+      <property>
+        <name>fs.azure.account.key.YOUR_ACCOUNT_NAME.dfs.core.windows.net</name>
+        <value>YOUR ACCESS KEY (copied from Step 1)</value>
+        <description>The secret password. Never share these.</description>
+      </property>
+    </configuration>
+    ```
 
 3. If you are trying to connect to a WASB account, replace `dfs` with `blob` in the property names, for example, `fs.azure.account.auth.type.YOUR_ACCOUNT_NAME.blob.core.windows.net`.
 4. You can test the connectivity to your Storage Account from Hadoop by running the following command from your `%HADOOP_HOME%` directory:

@@ -43,7 +43,7 @@ Subscribing to a topic works a bit differently. Upon startup, the Dapr runtime w
 
 The `<appPort>` part will be filled with the port that your application is listening on. You specify this when starting your application with Dapr.
 
-The application needs to return a response containing the list of topics it wants to subscribe to. With each topic, you also need to specify the end-point on your application must be called when a message comes in on that topic. This is what the expected structure of the response is:
+The application needs to return a response containing the list of topics it wants to subscribe to. With each topic, it also needs to specify the end-point on the application that must be called when a message comes in on that topic. This is what the expected structure of the response is:
 
 ```json
 [

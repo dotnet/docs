@@ -602,8 +602,12 @@ items:
     items:
     - name: GridViewHeaderRowPresenter class
       items:
-      - name: FindHeaderByColumn, MakeParentItemsControlGotFocus, and PrepareHeaderDrag methods
-        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.md
+      - name: FindHeaderByColumn method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.findheaderbycolumn.md
+      - name: MakeParentItemsControlGotFocus method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.makeparentitemscontrolgotfocus.md
+      - name: PrepareHeaderDrag method
+        href: additional-apis/system.windows.controls.gridviewheaderrowpresenter.prepareheaderdrag.md
   - name: System.Windows.Diagnostics
     items:
     - name: VisualDiagnostics class

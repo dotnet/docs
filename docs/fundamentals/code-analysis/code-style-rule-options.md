@@ -11,13 +11,17 @@ ms.author: gewarren
 You can define and maintain consistent *code style* in your codebase by defining .NET code style rule options in an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options.md) file. These rules are respected by various development IDEs, such as Visual Studio, during edit time. These rules can also be [enforced at build time](overview.md#code-style-analysis) for .NET projects. You can enable or disable individual rules and configure the degree to which you want each rule enforced, via a severity level.
 
 > [!TIP]
+>
 > - When you define code style options in an EditorConfig file, you're configuring how you want the [code style analyzers](overview.md#code-style-analysis) to analyze your code. The EditorConfig file is the configuration file for these analyzers.
+>
 > - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup.md) dialog. These are per-user options, which are only respected while editing in Visual Studio. These options are not respected at build time or by other development IDEs. They are also not respected for other users. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from EditorConfig file take precedence.
 
 Code style rules are divided into following sub-categories:
 
 - [Language rules](style-rules/language-rules.md)
+
 - [Formatting rules](style-rules/formatting-rules.md)
+
 - [Naming rules](style-rules/naming-rules.md)
 
 Each of these sub-categories defines it's own syntax for specifying options. For more information about these rules and the corresponding options, see [Code style rule reference](style-rules/index.md).
@@ -215,26 +219,26 @@ dotnet_naming_rule.non_field_members_should_be_pascal_case.style = pascal_case
 
 dotnet_naming_symbols.interface.applicable_kinds = interface
 dotnet_naming_symbols.interface.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.interface.required_modifiers = 
+dotnet_naming_symbols.interface.required_modifiers =
 
 dotnet_naming_symbols.types.applicable_kinds = class, struct, interface, enum
 dotnet_naming_symbols.types.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.types.required_modifiers = 
+dotnet_naming_symbols.types.required_modifiers =
 
 dotnet_naming_symbols.non_field_members.applicable_kinds = property, event, method
 dotnet_naming_symbols.non_field_members.applicable_accessibilities = public, internal, private, protected, protected_internal, private_protected
-dotnet_naming_symbols.non_field_members.required_modifiers = 
+dotnet_naming_symbols.non_field_members.required_modifiers =
 
 # Naming styles
 
-dotnet_naming_style.pascal_case.required_prefix = 
-dotnet_naming_style.pascal_case.required_suffix = 
-dotnet_naming_style.pascal_case.word_separator = 
+dotnet_naming_style.pascal_case.required_prefix =
+dotnet_naming_style.pascal_case.required_suffix =
+dotnet_naming_style.pascal_case.word_separator =
 dotnet_naming_style.pascal_case.capitalization = pascal_case
 
 dotnet_naming_style.begins_with_i.required_prefix = I
-dotnet_naming_style.begins_with_i.required_suffix = 
-dotnet_naming_style.begins_with_i.word_separator = 
+dotnet_naming_style.begins_with_i.required_suffix =
+dotnet_naming_style.begins_with_i.word_separator =
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
 
 ```

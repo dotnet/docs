@@ -62,7 +62,7 @@ The following list shows the allowable values, and you can specify multiple valu
 - local
 - local_function
 
-> [!NOTE] 
+> [!NOTE]
 > Tuple members aren't currently supported.
 
 ### Accessibility levels of symbols

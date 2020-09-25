@@ -20,6 +20,7 @@ Code style language rules affect how various constructs of .NET programming lang
 - [C# style rules](#c-style-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_style_` prefix.
 
 > [!TIP]
+>
 > - To see the code examples in your preferred programming language, choose it using the language picker at the top-right corner of the browser window.
 >
 >   ![Code language picker control](media/code-language-picker.png)
@@ -76,7 +77,6 @@ The style rules in this section are applicable to both C# and Visual Basic.
   - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 - [Parameter preferences](#parameter-preferences)
   - dotnet\_code\_quality\_unused\_parameters
-
 
 ### <a name="this-and-me"></a>"This." and "Me." qualifiers
 

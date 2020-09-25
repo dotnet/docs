@@ -17,7 +17,7 @@ In this article, you will learn how to hook up your [.NET for Apache Spark](http
 ## Steps to get your application connected to Event Hubs
 
 1. Create an Event Hubs Namespace and an event hub, refer to [this document](https://docs.microsoft.com/azure/event-hubs/event-hubs-create) for a step-by-step guide on how to do that. Make sure to select the Standard Pricing tier while creating the Event Hub Namespace.
-2. Get the Event Hubs connection string and fully qualified domain name (FQDN) for later use. For instructions, see [Get an Event Hubs connection string](https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-get-connection-string).
+2. Get the Event Hubs connection string and fully qualified domain name (FQDN) for later use. For instructions, see [Get an Event Hubs connection string](https://docs.microsoft.com/azure/event-hubs/event-hubs-get-connection-string).
 3. Set the following configurations with details from your namespace in your code to start reading from Event Hubs for Kafka:
     1. Update **BOOTSTRAP_SERVERS** to `hostname:9093` (9093 is the port used to communicate with Event Hubs, see [troubleshooting guide](https://docs.microsoft.com/en-us/azure/event-hubs/troubleshooting-guide))
     2. Update **EH_SASL** with the Connection string obtained from Step 2 like so:

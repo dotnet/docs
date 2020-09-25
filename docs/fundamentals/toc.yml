@@ -726,7 +726,15 @@ items:
   - name: Generic host
     href: ../core/extensions/generic-host.md
   - name: Logging
-    href: /aspnet/core/fundamentals/logging
+    items:
+    - name: Overview
+      href: ../core/extensions/logging.md
+    - name: Logging providers
+      href: ../core/extensions/logging-providers.md
+    - name: Implement a custom logging provider
+      href: ../core/extensions/custom-logging-provider.md
+    - name: High-performance logging
+      href: ../core/extensions/loggermessage.md
   - name: Options pattern
     href: /aspnet/core/fundamentals/configuration/options
 - name: Data access

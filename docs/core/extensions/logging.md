@@ -10,35 +10,6 @@ ms.date: 09/24/2020
 
 .NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. All of the code examples shown in this article are from .NET apps. The logging-specific parts of these code snippets apply to any .NET app that uses the [Generic Host](generic-host.md).
 
-## Logging providers
-
-Logging providers persist logs, except for the `Console` provider which only displays logs as standard output. For example, the Azure Application Insights provider stores logs in Azure Application Insights. Multiple providers can be enabled.
-
-The default .NET Worker app templates:
-
-- Use the [Generic Host](generic-host.md).
-- Call <xref:Microsoft.Extensions.Hosting.Host.CreateDefaultBuilder%2A>, which adds the following logging providers:
-  - [Console](#console)
-  - [Debug](#debug)
-  - [EventSource](#event-source)
-  - [EventLog](#welog): Windows only
-
-[!code-csharp[](index/samples/3.x/TodoApiDTO/Program.cs?name=snippet_TemplateCode&highlight=9)]
-
-The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host. [Non-host console apps](#non-host-console-app) are discussed later in this article.
-
-To override the default set of logging providers added by `Host.CreateDefaultBuilder`, call `ClearProviders` and add the required logging providers. For example, the following code:
-
-- Calls <xref:Microsoft.Extensions.Logging.LoggingBuilderExtensions.ClearProviders%2A> to remove all the <xref:Microsoft.Extensions.Logging.ILoggerProvider> instances from the builder.
-- Adds the [Console](#console) logging provider.
-
-[!code-csharp[](index/samples/3.x/TodoApiDTO/Program.cs?name=snippet_AddProvider&highlight=5-6)]
-
-For additional providers, see:
-
-- [Built-in logging providers](#built-in-logging-providers).
-- [Third-party logging providers](#third-party-logging-providers).
-
 ## Create logs
 
 To create logs, use an <xref:Microsoft.Extensions.Logging.ILogger%601> object from [dependency injection (DI)](dependency-injection.md).
@@ -46,7 +17,7 @@ To create logs, use an <xref:Microsoft.Extensions.Logging.ILogger%601> object fr
 The following example:
 
 - Creates a logger, `ILogger<AboutModel>`, which uses a log *category* of the fully qualified name of the type `AboutModel`. The log category is a string that is associated with each log.
-- Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation*> to log at the `Information` level. The Log *level* indicates the severity of the logged event.
+- Calls <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogInformation%2A> to log at the `Information` level. The Log *level* indicates the severity of the logged event.
 
 [!code-csharp[](index/samples/3.x/TodoApiDTO/Pages/About.cshtml.cs?name=snippet_CallLogMethods&highlight=5,14)]
 
@@ -327,25 +298,6 @@ The preceding code displays console logs when the category contains `Controller`
 
 Generally, log levels should be specified in configuration and not code.
 
-## ASP.NET Core and EF Core categories
-
-The following table contains some categories used by ASP.NET Core and Entity Framework Core, with notes about the logs:
-
-| Category                            | Notes                                                                                                             |
-|-------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Microsoft.AspNetCore                | General ASP.NET Core diagnostics.                                                                                 |
-| Microsoft.AspNetCore.DataProtection | Which keys were considered, found, and used.                                                                      |
-| Microsoft.AspNetCore.HostFiltering  | Hosts allowed.                                                                                                    |
-| Microsoft.AspNetCore.Hosting        | How long HTTP requests took to complete and what time they started. Which hosting startup assemblies were loaded. |
-| Microsoft.AspNetCore.Mvc            | MVC and Razor diagnostics. Model binding, filter execution, view compilation, action selection.                   |
-| Microsoft.AspNetCore.Routing        | Route matching information.                                                                                       |
-| Microsoft.AspNetCore.Server         | Connection start, stop, and keep alive responses. HTTPS certificate information.                                  |
-| Microsoft.AspNetCore.StaticFiles    | Files served.                                                                                                     |
-| Microsoft.EntityFrameworkCore       | General Entity Framework Core diagnostics. Database activity and configuration, change detection, migrations.     |
-
-To view more categories in the console window, set **appsettings.Development.json** to the following:
-
-[!code-json[](index/samples/3.x/MyMain/appsettings.Trace.json)]
 
 <!-- Review: What other providers support scopes? Console is not generally used in staging/production  -->
 
@@ -443,7 +395,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    When using a PowerShell command shell, enclose the `--providers` value in single quotes (`'`):
 
    ```dotnetcli
-   dotnet trace collect -p {PID} 
+   dotnet trace collect -p {PID}
        --providers 'Microsoft-Extensions-Logging:{Keyword}:{Provider Level}
            :FilterSpecs=\"
                {Logger Category 1}:{Category Level 1};
@@ -680,9 +632,9 @@ For more information, see each provider's documentation. Third-party logging pro
 
 For an example of how to use the Generic Host in a non-web console app, see the *Program.cs* file of the [Background Tasks sample app](https://github.com/dotnet/AspNetCore.Docs/tree/master/aspnetcore/fundamentals/host/hosted-services/samples) (<xref:fundamentals/host/hosted-services>).
 
-Logging code for apps without Generic Host differs in the way [providers are added](#add-providers) and [loggers are created](#create-logs). 
+Logging code for apps without Generic Host differs in the way [providers are added](#add-providers) and [loggers are created](#create-logs).
 
-### Logging providers
+### Register providers
 
 In a non-host console app, call the provider's `Add{provider name}` extension method while creating a `LoggerFactory`:
 
@@ -701,8 +653,6 @@ In the following example, the logger is used to create logs with `Information` a
 [!code-csharp[](index/samples/3.x/LoggingConsoleApp/Program.cs?name=snippet_LoggerFactory&highlight=15)]
 
 [Levels](#log-level) and [categories](#log-category) are explained in more detail in this document.
-
-<a name="lhc"></a>
 
 ## Log during host construction
 
@@ -769,8 +719,6 @@ public class Program
 }
 ```
 
-<a name="csdi"></a>
-
 ## Configure a service that depends on ILogger
 
 Constructor injection of a logger into `Startup` works in earlier versions of ASP.NET Core because a separate DI container is created for the Web Host. For information about why only one container is created for the Generic Host, see the [breaking change announcement](https://github.com/aspnet/Announcements/issues/353).
@@ -781,52 +729,30 @@ To configure a service that depends on `ILogger<T>`, use constructor injection o
 
 The preceding highlighted code is a [Func](/dotnet/api/system.func-2) that runs the first time the DI container needs to construct an instance of `MyService`. You can access any of the registered services in this way.
 
-<a name="clms"></a>
-
 ## Create logs in Main
 
 The following code logs in `Main` by getting an `ILogger` instance from DI after building the host:
 
 [!code-csharp[](index/samples/3.x/TodoApiDTO/Program.cs?name=snippet_LogProgram)]
 
-### Create logs in Startup
-
-The following code writes logs in `Startup.Configure`:
-
-[!code-csharp[](index/samples/3.x/TodoApiDTO/Startup.cs?name=snippet_Configure)]
-
-Writing logs before completion of the DI container setup in the `Startup.ConfigureServices` method is not supported:
-
-- Logger injection into the `Startup` constructor is not supported.
-- Logger injection into the `Startup.ConfigureServices` method signature is not supported
-
-The reason for this restriction is that logging depends on DI and on configuration, which in turns depends on DI. The DI container isn't set up until `ConfigureServices` finishes.
-
-For information on configuring a service that depends on `ILogger<T>` or why constructor injection of a logger into `Startup` worked in earlier versions, see [Configure a service that depends on ILogger](#csdi)
-
 ### No asynchronous logger methods
 
 Logging should be so fast that it isn't worth the performance cost of asynchronous code. If a logging data store is slow, don't write to it directly. Consider writing the log messages to a fast store initially, then moving them to the slow store later. For example, when logging to SQL Server, don't do so directly in a `Log` method, since the `Log` methods are synchronous. Instead, synchronously add log messages to an in-memory queue and have a background worker pull the messages out of the queue to do the asynchronous work of pushing data to SQL Server. For more information, see [this](https://github.com/dotnet/AspNetCore.Docs/issues/11801) GitHub issue.
 
-<a name="clib"></a>
-
 ## Change log levels in a running app
 
-The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers are capable of reloading configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](xref:fundamentals/configuration/index#file-configuration-provider), reloads logging configuration by default. If configuration is changed in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload*) to update the app's logging configuration.
+The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers are capable of reloading configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](configuration-providers.md#file-configuration-provider), reloads logging configuration by default. If configuration is changed in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
 
 ## ILogger and ILoggerFactory
 
-The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensions.Logging.ILoggerFactory> interfaces and implementations are included in the .NET Core SDK. They are also available in the following NuGet packages:  
+The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensions.Logging.ILoggerFactory> interfaces and implementations are included in the .NET Core SDK. They are also available in the following NuGet packages:
 
 - The interfaces are in [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions/).
 - The default implementations are in [Microsoft.Extensions.Logging](https://www.nuget.org/packages/microsoft.extensions.logging/).
 
-<!-- review. Why would you want to hard code filtering rules in code? -->
-<a name="fric"></a>
-
 ## Apply log filter rules in code
 
-The preferred approach for setting log filter rules is by using [Configuration](xref:fundamentals/configuration/index).
+The preferred approach for setting log filter rules is by using [Configuration](configuration.md).
 
 The following example shows how to register filter rules in code:
 
@@ -839,68 +765,6 @@ The following example shows how to register filter rules in code:
 - The `Debug` logging provider.
 - Log level `Information` and higher.
 - All categories starting with `"Microsoft"`.
-
-## Create a custom logger
-
-To add a custom logger, add an <xref:Microsoft.Extensions.Logging.ILoggerProvider> with <xref:Microsoft.Extensions.Logging.ILoggerFactory>:
-
-```csharp
-public void Configure(
-    IApplicationBuilder app,
-    IWebHostEnvironment env,
-    ILoggerFactory loggerFactory)
-{
-    loggerFactory.AddProvider(new CustomLoggerProvider(new CustomLoggerConfiguration()));
-```
-
-The `ILoggerProvider` creates one or more `ILogger` instances. The `ILogger` instances are used by the framework to log the information.
-
-### Sample custom logger configuration
-
-The sample:
-
-- Is designed to be a very basic sample that sets the color of the log console by event ID and log level. Loggers generally don't change by event ID and are not specific to log level.
-- Creates different color console entries per log level and event ID using the following configuration type:
-
-[!code-csharp[](index/samples/3.x/CustomLogger/ColorConsoleLogger/ColorConsoleLoggerConfiguration.cs?name=snippet)]
-
-The preceding code sets the default level to `Warning` and the color to `Yellow`. If the `EventId` is set to 0, we will log all events.
-
-### Create the custom logger
-
-The `ILogger` implementation category name is typically the logging source. For example, the type where the logger is created:
-
-[!code-csharp[](index/samples/3.x/CustomLogger/ColorConsoleLogger/ColorConsoleLogger.cs?name=snippet)]
-
-The preceding code:
-
-- Creates a logger instance per category name.
-- Checks `logLevel == _config.LogLevel` in `IsEnabled`, so each `logLevel` has a unique logger. Generally, loggers should also be enabled for all higher log levels:
-
-```csharp
-public bool IsEnabled(LogLevel logLevel)
-{
-    return logLevel >= _config.LogLevel;
-}
-```
-
-### Create the custom LoggerProvider
-
-The `LoggerProvider` is the class that creates the logger instances. Maybe it is not needed to create a logger instance per category, but this makes sense for some Loggers, like NLog or log4net. Doing this you are also able to choose different logging output targets per category if needed:
-
-[!code-csharp[](index/samples/3.x/CustomLogger/ColorConsoleLogger/ColorConsoleLoggerProvider.cs?name=snippet)]
-
-In the preceding code, <xref:Microsoft.Build.Logging.LoggerDescription.CreateLogger*> creates a single instance of the `ColorConsoleLogger` per category name and stores it in the [`ConcurrentDictionary<TKey,TValue>`](/dotnet/api/system.collections.concurrent.concurrentdictionary-2);
-
-### Usage and registration of the custom logger
-
-Register the logger in the `Startup.Configure`:
-
-[!code-csharp[](index/samples/3.x/CustomLogger/Startup.cs?name=snippet)]
-
-For the preceding code, provide at least one extension method for the `ILoggerFactory`:
-
-[!code-csharp[](index/samples/3.x/CustomLogger/ColorConsoleLogger/ColorConsoleLoggerExtensions.cs?name=snippet)]
 
 ## See also
 

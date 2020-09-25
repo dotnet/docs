@@ -27,13 +27,16 @@ Named and optional parameters enable you to supply arguments for selected parame
 
 Named arguments free you from matching the order of parameters in the parameter lists of called methods. The parameter for each argument can be specified by parameter name. For example, a function that prints order details (such as, seller name, order number & product name) can be called by sending arguments by position, in the order defined by the function.
 
-`PrintOrderDetails("Gift Shop", 31, "Red Mug");`
+```csharp
+PrintOrderDetails("Gift Shop", 31, "Red Mug");
+```
 
 If you don't remember the order of the parameters but know their names, you can send the arguments in any order.
 
-`PrintOrderDetails(orderNum: 31, productName: "Red Mug", sellerName: "Gift Shop");`
-
-`PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);`
+```csharp
+PrintOrderDetails(orderNum: 31, productName: "Red Mug", sellerName: "Gift Shop");
+PrintOrderDetails(productName: "Red Mug", sellerName: "Gift Shop", orderNum: 31);
+```
 
 Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` can't be null or white space. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
   
@@ -41,11 +44,15 @@ Named arguments, when used with positional arguments, are valid as long as
 
 - they're not followed by any positional arguments, or
 
-`PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");`
+    ```csharp
+    PrintOrderDetails("Gift Shop", 31, productName: "Red Mug");
+    ```
 
 - _starting with C# 7.2_, they're used in the correct position. In the example below, the parameter `orderNum` is in the correct position but isn't explicitly named.
 
-`PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");`
+    ```csharp
+    PrintOrderDetails(sellerName: "Gift Shop", 31, productName: "Red Mug");
+    ```
 
 Positional arguments that follow any out-of-order named arguments are invalid.
 
@@ -76,11 +83,15 @@ Optional parameters are defined at the end of the parameter list, after any requ
 
 The following call to `ExampleMethod` causes a compiler error, because an argument is provided for the third parameter but not for the second.
 
-`//anExample.ExampleMethod(3, ,4);`
+```csharp
+//anExample.ExampleMethod(3, ,4);
+```
 
 However, if you know the name of the third parameter, you can use a named argument to accomplish the task.
 
-`anExample.ExampleMethod(3, optionalint: 4);`
+```csharp
+anExample.ExampleMethod(3, optionalint: 4);
+```
 
 IntelliSense uses brackets to indicate optional parameters, as shown in the following illustration:
 

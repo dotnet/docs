@@ -32,8 +32,7 @@ The column whose header should be found and returned.
 
 ## Return value
 
-<xref:System.Windows.Controls.GridViewColumnHeader>
-
+<xref:System.Windows.Controls.GridViewColumnHeader>\
 The header of the specified column, or `null` if the specified column doesn't exist.
 
 ## Requirements

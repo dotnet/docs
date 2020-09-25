@@ -53,7 +53,7 @@ Rule-specific options can be applied to a single rule, a set of rules, or all ru
 
 ### Severity level
 
-The following table shows the different rule severities that you can configure for both [code quality](rules/quality-rules-reference.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
+The following table shows the different rule severities that you can configure for all analyzer rules, including both [code quality](rules/quality-rules-reference.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
 
 | Severity | Build-time behavior |
 |-|-|

@@ -12,7 +12,7 @@ In projects that target platforms for which APIs that they use aren't available,
 
 #### Examples
 
-- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows (it's decorated with `[SupportedOSPlatform("windows")]`). The following code will produce a CA1416 warning at build time if the project [targets](../../../../docs/standard/frameworks.md) `net5.0` (but not `net5.0-windows`). For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
+- The <xref:System.Console.Beep(System.Int32,System.Int32)?displayProperty=nameWithType> method is only supported on Windows and is decorated with `[SupportedOSPlatform("windows")]`. The following code will produce a CA1416 warning at build time if the project [targets](../../../../docs/standard/frameworks.md) `net5.0` (but not `net5.0-windows`). For actions you can take to avoid the warning, see [Recommended action](#recommended-action).
 
   ```csharp
   public void PlayCMajor()
@@ -21,7 +21,7 @@ In projects that target platforms for which APIs that they use aren't available,
   }
   ```
 
-- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is not supported in the browser (it's decorated with `[UnsupportedOSPlatform("browser")]`). The following code will produce a CA1416 warning at build time if the project uses the Blazor WebAssembly SDK (`<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">`) or includes `browser` as a supported platform (`<SupportedPlatform Include="browser" />`) in the project file.
+- The <xref:System.Drawing.Image.FromFile(System.String)?displayProperty=nameWithType> method is not supported in the browser and is decorated with `[UnsupportedOSPlatform("browser")]`. The following code will produce a CA1416 warning at build time if the project supports the browser platform.
 
   ```csharp
   public void CreateImage()
@@ -29,6 +29,17 @@ In projects that target platforms for which APIs that they use aren't available,
       Image newImage = Image.FromFile("SampImag.jpg");
   }
   ```
+
+  > [!TIP]
+  >
+  > - Blazor WebAssembly projects and Razor class library projects include browser support automatically.
+  > - To manually add the browser as a supported platform for your project, add the following entry to your project file:
+  >
+  >  ```xml
+  >  <ItemGroup>
+  >    <SupportedPlatform Include="browser" />
+  >  </ItemGroup>
+  >  ```
 
 #### Version introduced
 
@@ -60,7 +71,7 @@ public void PlayCMajor()
 }
 ```
 
-You can also mark your API as platform-specific, in which case the burden of checking requirements falls on your callers. You can mark specific methods or types or an entire assembly.
+If you're authoring a library, you can mark your API as platform-specific. In this case, the burden of checking requirements falls on your callers. You can mark specific methods or types or an entire assembly.
 
 ```csharp
 [SupportedOSPlatform("windows")]

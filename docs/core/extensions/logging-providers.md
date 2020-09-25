@@ -203,7 +203,8 @@ Use the dotnet trace tooling to collect a trace from an app:
    Consider the following command:
 
    ```dotnetcli
-   dotnet trace collect -p %PID%  --providers Microsoft-Extensions-Logging:4:5:\"FilterSpecs=*:5\"
+   dotnet trace collect -p %PID% 
+   --providers Microsoft-Extensions-Logging:4:5:\"FilterSpecs=*:5\"
    ```
 
    The preceding command:
@@ -214,13 +215,15 @@ Use the dotnet trace tooling to collect a trace from an app:
    The following command captures debug messages because category level 1 specifies `Debug`.
 
    ```dotnetcli
-   dotnet trace collect -p %PID%  --providers Microsoft-Extensions-Logging:4:5:\"FilterSpecs=*:1\"
+   dotnet trace collect -p %PID%
+   --providers Microsoft-Extensions-Logging:4:5:\"FilterSpecs=*:1\"
    ```
 
    The following command captures debug messages because category specifies `Debug`.
 
    ```dotnetcli
-   dotnet trace collect -p %PID%  --providers Microsoft-Extensions-Logging:4:5:\"FilterSpecs=*:Debug\"
+   dotnet trace collect -p %PID%
+   --providers Microsoft-Extensions-Logging:4:5:\"FilterSpecs=*:Debug\"
    ```
 
    `FilterSpecs` entries for `{Logger Category}` and `{Category Level}` represent additional log filtering conditions. Separate `FilterSpecs` entries with the `;` semicolon character.
@@ -228,7 +231,8 @@ Use the dotnet trace tooling to collect a trace from an app:
    Example using a Windows command shell:
 
    ```dotnetcli
-   dotnet trace collect -p %PID% --providers Microsoft-Extensions-Logging:4:2:FilterSpecs=\"Microsoft.Extensions.Hosting*:4\"
+   dotnet trace collect -p %PID%
+   --providers Microsoft-Extensions-Logging:4:2:FilterSpecs=\"Microsoft.Extensions.Hosting*:4\"
    ```
 
    The preceding command activates:
@@ -240,7 +244,7 @@ Use the dotnet trace tooling to collect a trace from an app:
 
    The trace is saved with the name *trace.nettrace* in the folder where the `dotnet trace` command is executed.
 
-1. Open the trace with Perfview. Open the *trace.nettrace* file and explore the trace events.
+1. Open the trace with PerfView. Open the *trace.nettrace* file and explore the trace events.
 
 If the app doesn't build the host with `CreateDefaultBuilder`, add the Event Source provider to the app's logging configuration.
 

@@ -36,7 +36,7 @@ In this article, you learn how to connect to an SQL server instance from your [.
         ```
         jdbc:sqlserver://<SQL_server_IP_address>:1433;instanceName=<instance_name>;databaseName=<database_name>;
         ```
-    
+
     2. **dbtable**: Name of table being accessed.
     3. **user**: Login user set up in Step 1 of configuring the SQL server.
     4. **password**: Password of user set up in Step 1 of configuring the SQL server.

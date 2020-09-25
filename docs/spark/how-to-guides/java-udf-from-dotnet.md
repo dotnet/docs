@@ -20,7 +20,7 @@ In this article, you learn how to call a Java UDF (User-Defined Function) from y
     2. `org.apache.spark.spark-sql_2.11.<version>`
 2. Define your Java UDF by implementing the [relevant interface](https://github.com/apache/spark/blob/master/sql/core/src/main/java/org/apache/spark/sql/api/java/UDF1.java) (according to your UDF's signature) and importing the relevant package as shown below in a simple example
 
-	![Java UDF example](./media/invoke-external-udfs/JavaUdf.png)
+    ![Java UDF example](./media/invoke-external-udfs/JavaUdf.png)
 
 3. Compile and package your project to create and executable jar say `UdfApp-0.0.1.jar`.
 
@@ -31,13 +31,13 @@ In this article, you learn how to call a Java UDF (User-Defined Function) from y
 3. Use `SparkSession.Sql` to call the UDF on the table view using Spark SQL.
 A basic example to illustrate the above steps:
 
-	![.NET for Apache Spark application](./media/invoke-external-udfs/sparkdotnetapp.png)
+    ![.NET for Apache Spark application](./media/invoke-external-udfs/sparkdotnetapp.png)
 
 4. Submit this application using `spark-submit` by passing the previously compiled Java UDF jar through the `--jars` option:
 
-	```bash
-	spark-submit --master local --jars UdfApp-0.0.1.jar --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-3.0.x-0.12.1.jar InterRuntimeUDFs.exe
-	```
+    ```bash
+    spark-submit --master local --jars UdfApp-0.0.1.jar --class org.apache.spark.deploy.dotnet.DotnetRunner microsoft-spark-3.0.x-0.12.1.jar InterRuntimeUDFs.exe
+    ```
 
 The resultant `dfUdf` DataFrame had the number 5 added to each row of the input column as defined by `JavaUdf`:
 

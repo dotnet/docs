@@ -79,6 +79,8 @@ The following table shows the different rule severities that you can configure f
 > [!TIP]
 > For information about how rule severities surface in Visual Studio, see [Severity levels](/visualstudio/ide/editorconfig-language-conventions#severity-levels).
 
+#### Scope
+
 To set the rule severity for a single rule, use the following syntax.
 
 ```ini
@@ -96,6 +98,8 @@ To set the default rule severity for all analyzer rules, use the following synta
 ```ini
 dotnet_analyzer_diagnostic.severity = <severity value>
 ```
+
+#### Precedence
 
 If you have multiple entries that can be applied to the same rule ID, precedence is chosen in the following order:
 

@@ -8,7 +8,7 @@ ms.date: 09/25/2020
 
 # Logging providers in .NET
 
-Logging providers persist logs, except for the `Console` provider which only displays logs as standard output. For example, the Azure Application Insights provider stores logs in Azure Application Insights. Multiple providers can be enabled.
+Logging providers persist logs, except for the `Console` provider, which only displays logs as standard output. For example, the Azure Application Insights provider stores logs in Azure Application Insights. Multiple providers can be enabled.
 
 The default .NET Worker app templates:
 
@@ -67,7 +67,7 @@ Microsoft Extensions include the following logging providers as part of the shar
 - [EventSource](#event-source)
 - [EventLog](#windows-eventlog)
 
-The following logging providers are shipped by Microsoft, but not as part of the shared framework. They must be installed as additional nuget.
+The following logging providers are shipped by Microsoft, but not as part of the shared framework. They must be installed as additional NuGet.
 
 - [AzureAppServicesFile and AzureAppServicesBlob](#azure-app-service)
 - [ApplicationInsights](#azure-application-insights)
@@ -102,7 +102,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    - On Windows, use one of the following approaches:
      - Task Manager (Ctrl+Alt+Del)
      - [tasklist command](/windows-server/administration/windows-commands/tasklist)
-     - [Get-Process Powershell command](/powershell/module/microsoft.powershell.management/get-process)
+     - [Get-Process PowerShell command](/powershell/module/microsoft.powershell.management/get-process)
    - On Linux, use the [pidof command](https://refspecs.linuxfoundation.org/LSB_5.0.0/LSB-Core-generic/LSB-Core-generic/pidof.html).
 
    Find the PID for the process that has the same name as the app's assembly.
@@ -171,7 +171,7 @@ Use the dotnet trace tooling to collect a trace from an app:
    - Are in reverse order.
    - The string constants aren't all identical.
 
-   If no `FilterSpecs` are specified then the `EventSourceLogger` implementation attempts to convert the provider level to a category level and applies it to all categories.
+   If no  are specified, then the `EventSourceLogger` implementation attempts to convert the provider level to a category level and applies it to all categories.
 
    | Provider Level     | Category Level   |
    |:------------------:|------------------|
@@ -198,7 +198,7 @@ Use the dotnet trace tooling to collect a trace from an app:
 
    - Captures debug messages.
    - Doesn't apply a `FilterSpecs`.
-   - Specifies level 5 which maps category Debug.
+   - Specifies level 5, which maps category Debug.
 
    Consider the following command:
 
@@ -369,7 +369,7 @@ Third-party logging frameworks that work with various .NET workloads:
 - [NLog](https://nlog-project.org) ([GitHub repo](https://github.com/NLog/NLog.Extensions.Logging))
 - [Sentry](https://sentry.io/welcome) ([GitHub repo](https://github.com/getsentry/sentry-dotnet))
 - [Serilog](https://serilog.net) ([GitHub repo](https://github.com/serilog/serilog-sinks-console))
-- [Stackdriver](https://cloud.google.com/dotnet/docs/stackdriver#logging) ([Github repo](https://github.com/googleapis/google-cloud-dotnet))
+- [Stackdriver](https://cloud.google.com/dotnet/docs/stackdriver#logging) ([GitHub repo](https://github.com/googleapis/google-cloud-dotnet))
 
 Some third-party frameworks can perform [semantic logging, also known as structured logging](https://softwareengineering.stackexchange.com/questions/312197/benefits-of-structured-logging-vs-basic-logging).
 

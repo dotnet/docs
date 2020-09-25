@@ -49,7 +49,7 @@ The <xref:System.Action> is invoked through a strongly-typed extension method. T
 
 `FailedToProcessWorkItem` is called on the logger in the `ExecuteAsync` method in *Worker.cs* when an error occurs:
 
-:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="14-17":::
+:::code language="csharp" source="snippets/configuration/worker-service-options/Worker.cs" range="18-39" highlight="15-18":::
 
 Inspect the app's console output:
 

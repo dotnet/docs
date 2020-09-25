@@ -1,6 +1,6 @@
 ---
 title: Implement a custom logging provider in .NET
-description: Learn how to implement a custom logging provider in a .NET applications.
+description: Learn how to implement a custom logging provider in your .NET applications.
 author: IEvangelist
 ms.author: dapine
 ms.date: 09/25/2020
@@ -15,7 +15,7 @@ There are many [logging providers](logging-providers.md) available for common lo
 
 The sample:
 
-- Is designed to be a very basic sample that sets the color of the log console by event ID and log level. Loggers generally don't change by event ID and are not specific to log level.
+- Is designed to be a basic sample that sets the color of the log console by event ID and log level. Loggers generally don't change by event ID and are not specific to log level.
 - Creates different color console entries per log level and event ID using the following configuration type:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerConfiguration.cs":::

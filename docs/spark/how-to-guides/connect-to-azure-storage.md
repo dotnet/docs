@@ -51,12 +51,13 @@ In this article, you learn how to connect to an ADLS (Azure Data Lake Storage) G
 
 This should display a list of all files/folders in the path provided by your URI.
 
-> NOTE: The format to derive the URI to your Storage account is as follows:
-
-```
-For ADLS: abfs[s]://<file_system>@<account_name>.dfs.core.windows.net/<path>/<file_name>
-For WASB: wasb[s]://<file_system>@<account_name>.blob.core.windows.net/<path>/<file_name>
-```
+> [!NOTE]
+> The format to derive the URI to your Storage account is as follows:
+>
+> ```
+> For ADLS: abfs[s]://<file_system>@<account_name>.dfs.core.windows.net/<path>/<file_name>
+> For WASB: wasb[s]://<file_system>@<account_name>.blob.core.windows.net/<path>/<file_name>
+> ```
 
 ## Connect to the account using local .NET for Apache Spark instance
 

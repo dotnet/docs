@@ -19,7 +19,7 @@ In this article you will learn how to use UDFs in a .NET for Apache Spark intera
 
 [.NET for Apache Spark](https://github.com/dotnet/spark) uses [.NET Interactive](https://devblogs.microsoft.com/dotnet/net-interactive-is-here-net-notebooks-preview-2/) to provide .NET support for interactive experience inside Spark. Kindly go through the [official docs](https://github.com/dotnet/interactive) to understand how to setup the environment to try .NET Interactive with Jupyter notebooks.
 
-Also, it is recommended to go through [this article about UDF serialization in .NET for Apache Spark](udf-guide.md) to understand what UDFs are and how they are serialized in .NET for Apache Spark. 
+Also, it is recommended to go through [this article about UDF serialization in .NET for Apache Spark](udf-guide.md) to understand what UDFs are and how they are serialized in .NET for Apache Spark.
 We will be using Jupyter Notebooks to illustrate how to use UDFs in an interactive experience.
 
 ## UDF serialization in .NET Interactive
@@ -47,7 +47,7 @@ Now let's see what happens if we call the UDF in the same cell where it is defin
 
 ![failing UDF call](./media/dotnet-interactive/udf_fails.png)
 
-The above highlighted error is because the UDF assemblies need to first be compiled and shipped to the workers before it can be called on a DataFrame. 
+The above highlighted error is because the UDF assemblies need to first be compiled and shipped to the workers before it can be called on a DataFrame.
 
 ## Why Broadcast Variables don't work with .NET Interactive
 
@@ -63,4 +63,3 @@ As recommended in the previous sections, we define both the UDF and the object i
 If we mark the [`SparSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) class as `[Serializable]`, we can get this to work, but this is not an ideal solution as we don't want to give the user the ability to serialize a SparkSession object, as that could lead to some very weird undesirable behavior. This is a known issue and being tracked [here](https://github.com/dotnet/spark/issues/619) and will be resolved in future versions.
 
 These are a few important things to keep in mind while implementing UDFs in .NET for Apache Spark interactive experience (such as [Azure Synapse Notebooks](https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-development-using-notebooks)).
-

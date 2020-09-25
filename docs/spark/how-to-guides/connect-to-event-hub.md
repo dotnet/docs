@@ -25,55 +25,57 @@ In this article, you will learn how to hook up your [.NET for Apache Spark](http
     ```csharp
     string EH_SASL = "org.apache.kafka.common.security.plain.PlainLoginModule required username=\"$ConnectionString\" password=\"<CONNECTION_STRING>\";";
     ```
+
 4. You can now start streaming with Event Hubs as you would with Kafka. Sample code as shown below:
 
-```csharp
-SparkSession spark = SparkSession
-    .Builder()
-    .AppName("Connect Event Hub")
-    .GetOrCreate();
+    ```csharp
+    SparkSession spark = SparkSession
+        .Builder()
+        .AppName("Connect Event Hub")
+        .GetOrCreate();
 
-DataFrame df = spark
-    .ReadStream()
-    .Format("kafka")
-    .Option("kafka.bootstrap.servers", BOOTSTRAP_SERVERS)
-    .Option(subscribeType, "spark-test")
-    .Option("kafka.sasl.mechanism", "PLAIN")
-    .Option("kafka.security.protocol", "SASL_SSL")
-    .Option("kafka.sasl.jaas.config", EH_SASL)
-    .Option("kafka.request.timeout.ms", "60000")
-    .Option("kafka.session.timeout.ms", "60000")
-    .Option("failOnDataLoss", "false")
-    .Load();
+    DataFrame df = spark
+        .ReadStream()
+        .Format("kafka")
+        .Option("kafka.bootstrap.servers", BOOTSTRAP_SERVERS)
+        .Option(subscribeType, "spark-test")
+        .Option("kafka.sasl.mechanism", "PLAIN")
+        .Option("kafka.security.protocol", "SASL_SSL")
+        .Option("kafka.sasl.jaas.config", EH_SASL)
+        .Option("kafka.request.timeout.ms", "60000")
+        .Option("kafka.session.timeout.ms", "60000")
+        .Option("failOnDataLoss", "false")
+        .Load();
 
-DataFrame dfWrite = df
-    .WriteStream()
-    .OutputMode("append")
-    .Format("console")
-    .Start();
-```
+    DataFrame dfWrite = df
+        .WriteStream()
+        .OutputMode("append")
+        .Format("console")
+        .Start();
+    ```
 
 5. You can also write to Event Hubs in the same way, as shown below:
 
-```csharp
-// df is the DataFrame to write
+    ```csharp
+    // df is the DataFrame to write
 
-df.WriteStream()
-    .Format("kafka")
-    .Option("topic", topics)
-    .Option("kafka.bootstrap.servers", BOOTSTRAP_SERVERS)
-    .Option("kafka.sasl.mechanism", "PLAIN")
-    .Option("kafka.security.protocol", "SASL_SSL")
-    .Option("kafka.sasl.jaas.config", EH_SASL)
-    .Option("checkpointLocation", "./checkpoint")
-    .Start();
-```
+    df.WriteStream()
+        .Format("kafka")
+        .Option("topic", topics)
+        .Option("kafka.bootstrap.servers", BOOTSTRAP_SERVERS)
+        .Option("kafka.sasl.mechanism", "PLAIN")
+        .Option("kafka.security.protocol", "SASL_SSL")
+        .Option("kafka.sasl.jaas.config", EH_SASL)
+        .Option("checkpointLocation", "./checkpoint")
+        .Start();
+    ```
 
 6. In order to run your .NET for Apache Spark application, you should define the `spark-sql-kafka-0-10` module as part of the build definition in your Spark project, e.g. as a `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`) you should use the `--packages` command-line option like so:
 
-```bash
-spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.5
-```
+    ```bash
+    spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.5
+    ```
+    
 > Note: Make sure to include the package version in accordance with the version of Spark being run.
 
 ## Next steps

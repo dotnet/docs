@@ -21,13 +21,48 @@ The Dapr Publish/Subscribe building block is an abstraction of the Publish/Subsc
 
 ## How it works
 
-[TODO Example by direct invocation (HTTP)]
+The Dapr Publish/Subscribe building block offers a standard API you can use in your application code to send or receive messages. It is possible to use this API directly over HTTP or gRPC. In order to publish a message using Dapr, you can use the following end-point on the Dapr sidecar:
 
-The Dapr Publish/Subscribe building block offers a standard API you can use in your application code to send or receive messages. It is possible to use this API directly over HTTP or gRPC,
+`http://localhost:<daprPort>/v1.0/publish/<pubsubname>/<topic>`
 
-[Examples with .NET SDK]
+- You must fill `<daprPort>` with the port the Dapr sidecar is listening on.
+- You must fill `<pubsubname>` with the name of the Publish/Subscribe component that must be used (we will come back to components later on).
+- You must fill `<topic>` with the name of the topic the message must be published to.
 
-but most SDKs also disclose this API for your convenience. For example, the Dapr client that is part of the .NET SDK offers the following method:
+This is a simple example where the command-line tool *curl* is used to publish a message over the Dapr Publish/Subscribe API:
+
+```
+curl -X POST http://localhost:3500/v1.0/publish/pubsub/newOrder \
+  -H "Content-Type: application/json" \
+  -d '{ "orderId": "1234", "productId": "5678", "amount": 2 }'
+```
+
+Subscribing to a topic works a bit differently. Upon startup, the Dapr runtime will query your application (using a GET request) on a well-known end-point to ask for the subscriptions you want to create. This is the end-point that will be called:
+
+`http://localhost:<appPort>/dapr/subscribe`
+
+The `<appPort>` part will be filled with the port that your application is listening on. You specify this when starting your application with Dapr.
+
+The application needs to return a response containing the list of topics it wants to subscribe to. With each topic, you also need to specify the end-point on your application must be called when a message comes in on that topic. This is what the expected structure of the response is:
+
+```json
+[
+  {
+    "pubsubname": "pubsub",
+    "topic": "newOrder",
+    "route": "/orders"
+  },
+  {
+    "pubsubname": "pubsub",
+    "topic": "newProduct",
+    "route": "/productCatalog/products"
+  }
+]
+```
+
+### Using the Dapr .NET SDK
+
+Obviously, using the Dapr APIs over HTTP is fine, but you need to handle serialization, HTTP response codes and things like that yourself. But there is a more convenient way of doing Publish/Subscribe when you use one of the available SDKs. The .NET SDK offers a Dapr client that offers a method for publishing a message using Dapr:
 
 ```csharp
 public Task PublishEventAsync<TData>(

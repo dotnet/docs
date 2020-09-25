@@ -360,567 +360,575 @@ items:
     - name: Overview
       href: code-analysis/overview.md
       displayName: code analysis, analyzers
-    - name: Configure rules
+    - name: Configuration
       items:
-      - name: Overview
-        href: code-analysis/configure-rules.md
-      - name: Configure code quality rules
-        href: code-analysis/configure-code-quality-rules.md
-    - name: Code quality rule reference
+      - name: General options
+        href: code-analysis/configuration-options.md
+      - name: Code quality rules
+        items:
+        - name: Rule options
+          href: code-analysis/code-quality-rule-options.md
+        - name: Predefined configurations
+          href: predefined-configurationss.md
+    - name: Rule reference
       items:
-      - name: Overview
-        href: code-analysis/rules/quality-rules-reference.md
-      - name: Design rules
+      - name: Code quality rules
         items:
         - name: Overview
-          displayName: "design rules"
-          href: code-analysis/rules/design-warnings.md
-        - name: CA1000
-          href: code-analysis/rules/ca1000.md
-        - name: CA1001
-          href: code-analysis/rules/ca1001.md
-        - name: CA1002
-          href: code-analysis/rules/ca1002.md
-        - name: CA1003
-          href: code-analysis/rules/ca1003.md
-        - name: CA1005
-          href: code-analysis/rules/ca1005.md
-        - name: CA1008
-          href: code-analysis/rules/ca1008.md
-        - name: CA1010
-          href: code-analysis/rules/ca1010.md
-        - name: CA1012
-          href: code-analysis/rules/ca1012.md
-        - name: CA1014
-          href: code-analysis/rules/ca1014.md
-        - name: CA1016
-          href: code-analysis/rules/ca1016.md
-        - name: CA1017
-          href: code-analysis/rules/ca1017.md
-        - name: CA1018
-          href: code-analysis/rules/ca1018.md
-        - name: CA1019
-          href: code-analysis/rules/ca1019.md
-        - name: CA1021
-          href: code-analysis/rules/ca1021.md
-        - name: CA1024
-          href: code-analysis/rules/ca1024.md
-        - name: CA1027
-          href: code-analysis/rules/ca1027.md
-        - name: CA1028
-          href: code-analysis/rules/ca1028.md
-        - name: CA1030
-          href: code-analysis/rules/ca1030.md
-        - name: CA1031
-          href: code-analysis/rules/ca1031.md
-        - name: CA1032
-          href: code-analysis/rules/ca1032.md
-        - name: CA1033
-          href: code-analysis/rules/ca1033.md
-        - name: CA1034
-          href: code-analysis/rules/ca1034.md
-        - name: CA1036
-          href: code-analysis/rules/ca1036.md
-        - name: CA1040
-          href: code-analysis/rules/ca1040.md
-        - name: CA1041
-          href: code-analysis/rules/ca1041.md
-        - name: CA1043
-          href: code-analysis/rules/ca1043.md
-        - name: CA1044
-          href: code-analysis/rules/ca1044.md
-        - name: CA1045
-          href: code-analysis/rules/ca1045.md
-        - name: CA1046
-          href: code-analysis/rules/ca1046.md
-        - name: CA1047
-          href: code-analysis/rules/ca1047.md
-        - name: CA1050
-          href: code-analysis/rules/ca1050.md
-        - name: CA1051
-          href: code-analysis/rules/ca1051.md
-        - name: CA1052
-          href: code-analysis/rules/ca1052.md
-        - name: CA1053
-          href: code-analysis/rules/ca1053.md
-        - name: CA1054
-          href: code-analysis/rules/ca1054.md
-        - name: CA1055
-          href: code-analysis/rules/ca1055.md
-        - name: CA1056
-          href: code-analysis/rules/ca1056.md
-        - name: CA1058
-          href: code-analysis/rules/ca1058.md
-        - name: CA1060
-          href: code-analysis/rules/ca1060.md
-        - name: CA1061
-          href: code-analysis/rules/ca1061.md
-        - name: CA1062
-          href: code-analysis/rules/ca1062.md
-        - name: CA1063
-          href: code-analysis/rules/ca1063.md
-        - name: CA1064
-          href: code-analysis/rules/ca1064.md
-        - name: CA1065
-          href: code-analysis/rules/ca1065.md
-        - name: CA1066
-          href: code-analysis/rules/ca1066.md
-        - name: CA1067
-          href: code-analysis/rules/ca1067.md
-        - name: CA1068
-          href: code-analysis/rules/ca1068.md
-        - name: CA1069
-          href: code-analysis/rules/ca1069.md
-        - name: CA1070
-          href: code-analysis/rules/ca1070.md
-      - name: Documentation rules
-        items:
-        - name: Overview
-          displayName: "documentation rules"
-          href: code-analysis/rules/documentation-warnings.md
-        - name: CA1200
-          href: code-analysis/rules/ca1200.md
-      - name: Globalization rules
-        items:
-        - name: Overview
-          displayName: "globalization rules"
-          href: code-analysis/rules/globalization-warnings.md
-        - name: CA1303
-          href: code-analysis/rules/ca1303.md
-        - name: CA1304
-          href: code-analysis/rules/ca1304.md
-        - name: CA1305
-          href: code-analysis/rules/ca1305.md
-        - name: CA1307
-          href: code-analysis/rules/ca1307.md
-        - name: CA1308
-          href: code-analysis/rules/ca1308.md
-        - name: CA1309
-          href: code-analysis/rules/ca1309.md
-        - name: CA1310
-          href: code-analysis/rules/ca1310.md
-        - name: CA2101
-          href: code-analysis/rules/ca2101.md
-      - name: Portability and interoperability rules
-        items:
-        - name: Overview
-          displayName: "portability and interoperability rules"
-          href: code-analysis/rules/interoperability-warnings.md
-        - name: CA1401
-          href: code-analysis/rules/ca1401.md
-        - name: CA1416
-          href: code-analysis/rules/ca1416.md
-        - name: CA1417
-          href: code-analysis/rules/ca1417.md
-      - name: Maintainability rules
-        items:
-        - name: Overview
-          displayName: "maintainability rules"
-          href: code-analysis/rules/maintainability-warnings.md
-        - name: CA1501
-          href: code-analysis/rules/ca1501.md
-        - name: CA1502
-          href: code-analysis/rules/ca1502.md
-        - name: CA1505
-          href: code-analysis/rules/ca1505.md
-        - name: CA1506
-          href: code-analysis/rules/ca1506.md
-        - name: CA1507
-          href: code-analysis/rules/ca1507.md
-        - name: CA1508
-          href: code-analysis/rules/ca1508.md
-        - name: CA1509
-          href: code-analysis/rules/ca1509.md
-      - name: Naming rules
-        items:
-        - name: Overview
-          displayName: "naming rules"
-          href: code-analysis/rules/naming-warnings.md
-        - name: CA1700
-          href: code-analysis/rules/ca1700.md
-        - name: CA1707
-          href: code-analysis/rules/ca1707.md
-        - name: CA1708
-          href: code-analysis/rules/ca1708.md
-        - name: CA1710
-          href: code-analysis/rules/ca1710.md
-        - name: CA1711
-          href: code-analysis/rules/ca1711.md
-        - name: CA1712
-          href: code-analysis/rules/ca1712.md
-        - name: CA1713
-          href: code-analysis/rules/ca1713.md
-        - name: CA1714
-          href: code-analysis/rules/ca1714.md
-        - name: CA1715
-          href: code-analysis/rules/ca1715.md
-        - name: CA1716
-          href: code-analysis/rules/ca1716.md
-        - name: CA1717
-          href: code-analysis/rules/ca1717.md
-        - name: CA1720
-          href: code-analysis/rules/ca1720.md
-        - name: CA1721
-          href: code-analysis/rules/ca1721.md
-        - name: CA1724
-          href: code-analysis/rules/ca1724.md
-        - name: CA1725
-          href: code-analysis/rules/ca1725.md
-      - name: Performance rules
-        items:
-        - name: Overview
-          displayName: "performance rules"
-          href: code-analysis/rules/performance-warnings.md
-        - name: CA1802
-          href: code-analysis/rules/ca1802.md
-        - name: CA1805
-          href: code-analysis/rules/ca1805.md
-        - name: CA1806
-          href: code-analysis/rules/ca1806.md
-        - name: CA1810
-          href: code-analysis/rules/ca1810.md
-        - name: CA1812
-          href: code-analysis/rules/ca1812.md
-        - name: CA1813
-          href: code-analysis/rules/ca1813.md
-        - name: CA1814
-          href: code-analysis/rules/ca1814.md
-        - name: CA1815
-          href: code-analysis/rules/ca1815.md
-        - name: CA1819
-          href: code-analysis/rules/ca1819.md
-        - name: CA1820
-          href: code-analysis/rules/ca1820.md
-        - name: CA1821
-          href: code-analysis/rules/ca1821.md
-        - name: CA1822
-          href: code-analysis/rules/ca1822.md
-        - name: CA1823
-          href: code-analysis/rules/ca1823.md
-        - name: CA1824
-          href: code-analysis/rules/ca1824.md
-        - name: CA1825
-          href: code-analysis/rules/ca1825.md
-        - name: CA1826
-          href: code-analysis/rules/ca1826.md
-        - name: CA1827
-          href: code-analysis/rules/ca1827.md
-        - name: CA1828
-          href: code-analysis/rules/ca1828.md
-        - name: CA1829
-          href: code-analysis/rules/ca1829.md
-        - name: CA1830
-          href: code-analysis/rules/ca1830.md
-        - name: CA1831
-          href: code-analysis/rules/ca1831.md
-        - name: CA1832
-          href: code-analysis/rules/ca1832.md
-        - name: CA1833
-          href: code-analysis/rules/ca1833.md
-        - name: CA1834
-          href: code-analysis/rules/ca1834.md
-        - name: CA1835
-          href: code-analysis/rules/ca1835.md
-        - name: CA1836
-          href: code-analysis/rules/ca1836.md
-        - name: CA1837
-          href: code-analysis/rules/ca1837.md
-        - name: CA1838
-          href: code-analysis/rules/ca1838.md
-      - name: Publish rules
-        items:
-        - name: Overview
-          displayName: "publish rules"
-          href: code-analysis/rules/publish-warnings.md
-        - name: IL3000
-          href: code-analysis/rules/il3000.md
-        - name: IL3001
-          href: code-analysis/rules/il3001.md
-      - name: Reliability rules
-        items:
-        - name: Overview
-          displayName: "reliability rules"
-          href: code-analysis/rules/reliability-warnings.md
-        - name: CA2000
-          href: code-analysis/rules/ca2000.md
-        - name: CA2002
-          href: code-analysis/rules/ca2002.md
-        - name: CA2007
-          href: code-analysis/rules/ca2007.md
-        - name: CA2008
-          href: code-analysis/rules/ca2008.md
-        - name: CA2009
-          href: code-analysis/rules/ca2009.md
-        - name: CA2011
-          href: code-analysis/rules/ca2011.md
-        - name: CA2012
-          href: code-analysis/rules/ca2012.md
-        - name: CA2013
-          href: code-analysis/rules/ca2013.md
-        - name: CA2014
-          href: code-analysis/rules/ca2014.md
-        - name: CA2015
-          href: code-analysis/rules/ca2015.md
-        - name: CA2016
-          href: code-analysis/rules/ca2016.md
-      - name: Security rules
-        items:
-        - name: Overview
-          displayName: "security rules"
-          href: code-analysis/rules/security-warnings.md
-        - name: CA2100
-          href: code-analysis/rules/ca2100.md
-        - name: CA2109
-          href: code-analysis/rules/ca2109.md
-        - name: CA2119
-          href: code-analysis/rules/ca2119.md
-        - name: CA2153
-          href: code-analysis/rules/ca2153.md
-        - name: CA2153
-          href: code-analysis/rules/ca2153.md
-        - name: CA2300
-          href: code-analysis/rules/ca2300.md
-        - name: CA2301
-          href: code-analysis/rules/ca2301.md
-        - name: CA2302
-          href: code-analysis/rules/ca2302.md
-        - name: CA2305
-          href: code-analysis/rules/ca2305.md
-        - name: CA2310
-          href: code-analysis/rules/ca2310.md
-        - name: CA2311
-          href: code-analysis/rules/ca2311.md
-        - name: CA2312
-          href: code-analysis/rules/ca2312.md
-        - name: CA2315
-          href: code-analysis/rules/ca2315.md
-        - name: CA2321
-          href: code-analysis/rules/ca2321.md
-        - name: CA2322
-          href: code-analysis/rules/ca2322.md
-        - name: CA2326
-          href: code-analysis/rules/ca2326.md
-        - name: CA2327
-          href: code-analysis/rules/ca2327.md
-        - name: CA2328
-          href: code-analysis/rules/ca2328.md
-        - name: CA2329
-          href: code-analysis/rules/ca2329.md
-        - name: CA2350
-          href: code-analysis/rules/ca2350.md
-        - name: CA2351
-          href: code-analysis/rules/ca2351.md
-        - name: CA2352
-          href: code-analysis/rules/ca2352.md
-        - name: CA2353
-          href: code-analysis/rules/ca2353.md
-        - name: CA2354
-          href: code-analysis/rules/ca2354.md
-        - name: CA2355
-          href: code-analysis/rules/ca2355.md
-        - name: CA2356
-          href: code-analysis/rules/ca2356.md
-        - name: CA2361
-          href: code-analysis/rules/ca2361.md
-        - name: CA2362
-          href: code-analysis/rules/ca2362.md
-        - name: CA2330
-          href: code-analysis/rules/ca2330.md
-        - name: CA3001
-          href: code-analysis/rules/ca3001.md
-        - name: CA3002
-          href: code-analysis/rules/ca3002.md
-        - name: CA3003
-          href: code-analysis/rules/ca3003.md
-        - name: CA3004
-          href: code-analysis/rules/ca3004.md
-        - name: CA3005
-          href: code-analysis/rules/ca3005.md
-        - name: CA3006
-          href: code-analysis/rules/ca3006.md
-        - name: CA3007
-          href: code-analysis/rules/ca3007.md
-        - name: CA3008
-          href: code-analysis/rules/ca3008.md
-        - name: CA3009
-          href: code-analysis/rules/ca3009.md
-        - name: CA3010
-          href: code-analysis/rules/ca3010.md
-        - name: CA3011
-          href: code-analysis/rules/ca3011.md
-        - name: CA3012
-          href: code-analysis/rules/ca3012.md
-        - name: CA3061
-          href: code-analysis/rules/ca3061.md
-        - name: CA3075
-          href: code-analysis/rules/ca3075.md
-        - name: CA3076
-          href: code-analysis/rules/ca3076.md
-        - name: CA3077
-          href: code-analysis/rules/ca3077.md
-        - name: CA3147
-          href: code-analysis/rules/ca3147.md
-        - name: CA5350
-          href: code-analysis/rules/ca5350.md
-        - name: CA5351
-          href: code-analysis/rules/ca5351.md
-        - name: CA5358
-          href: code-analysis/rules/ca5358.md
-        - name: CA5359
-          href: code-analysis/rules/ca5359.md
-        - name: CA5360
-          href: code-analysis/rules/ca5360.md
-        - name: CA5361
-          href: code-analysis/rules/ca5361.md
-        - name: CA5362
-          href: code-analysis/rules/ca5362.md
-        - name: CA5363
-          href: code-analysis/rules/ca5363.md
-        - name: CA5364
-          href: code-analysis/rules/ca5364.md
-        - name: CA5365
-          href: code-analysis/rules/ca5365.md
-        - name: CA5366
-          href: code-analysis/rules/ca5366.md
-        - name: CA5367
-          href: code-analysis/rules/ca5367.md
-        - name: CA5368
-          href: code-analysis/rules/ca5368.md
-        - name: CA5369
-          href: code-analysis/rules/ca5369.md
-        - name: CA5370
-          href: code-analysis/rules/ca5370.md
-        - name: CA5371
-          href: code-analysis/rules/ca5371.md
-        - name: CA5372
-          href: code-analysis/rules/ca5372.md
-        - name: CA5373
-          href: code-analysis/rules/ca5373.md
-        - name: CA5374
-          href: code-analysis/rules/ca5374.md
-        - name: CA5375
-          href: code-analysis/rules/ca5375.md
-        - name: CA5376
-          href: code-analysis/rules/ca5376.md
-        - name: CA5377
-          href: code-analysis/rules/ca5377.md
-        - name: CA5378
-          href: code-analysis/rules/ca5378.md
-        - name: CA5379
-          href: code-analysis/rules/ca5379.md
-        - name: CA5380
-          href: code-analysis/rules/ca5380.md
-        - name: CA5381
-          href: code-analysis/rules/ca5381.md
-        - name: CA5382
-          href: code-analysis/rules/ca5382.md
-        - name: CA5383
-          href: code-analysis/rules/ca5383.md
-        - name: CA5384
-          href: code-analysis/rules/ca5384.md
-        - name: CA5385
-          href: code-analysis/rules/ca5385.md
-        - name: CA5386
-          href: code-analysis/rules/ca5386.md
-        - name: CA5387
-          href: code-analysis/rules/ca5387.md
-        - name: CA5388
-          href: code-analysis/rules/ca5388.md
-        - name: CA5389
-          href: code-analysis/rules/ca5389.md
-        - name: CA5390
-          href: code-analysis/rules/ca5390.md
-        - name: CA5391
-          href: code-analysis/rules/ca5391.md
-        - name: CA5392
-          href: code-analysis/rules/ca5392.md
-        - name: CA5393
-          href: code-analysis/rules/ca5393.md
-        - name: CA5394
-          href: code-analysis/rules/ca5394.md
-        - name: CA5395
-          href: code-analysis/rules/ca5395.md
-        - name: CA5396
-          href: code-analysis/rules/ca5396.md
-        - name: CA5397
-          href: code-analysis/rules/ca5397.md
-        - name: CA5398
-          href: code-analysis/rules/ca5398.md
-        - name: CA5399
-          href: code-analysis/rules/ca5399.md
-        - name: CA5400
-          href: code-analysis/rules/ca5400.md
-        - name: CA5401
-          href: code-analysis/rules/ca5401.md
-        - name: CA5402
-          href: code-analysis/rules/ca5402.md
-        - name: CA5403
-          href: code-analysis/rules/ca5403.md
-      - name: Usage rules
-        items:
-        - name: Overview
-          displayName: "usage rules"
-          href: code-analysis/rules/usage-warnings.md
-        - name: CA1801
-          href: code-analysis/rules/ca1801.md
-        - name: CA1816
-          href: code-analysis/rules/ca1816.md
-        - name: CA2200
-          href: code-analysis/rules/ca2200.md
-        - name: CA2201
-          href: code-analysis/rules/ca2201.md
-        - name: CA2207
-          href: code-analysis/rules/ca2207.md
-        - name: CA2208
-          href: code-analysis/rules/ca2208.md
-        - name: CA2211
-          href: code-analysis/rules/ca2211.md
-        - name: CA2213
-          href: code-analysis/rules/ca2213.md
-        - name: CA2214
-          href: code-analysis/rules/ca2214.md
-        - name: CA2215
-          href: code-analysis/rules/ca2215.md
-        - name: CA2216
-          href: code-analysis/rules/ca2216.md
-        - name: CA2217
-          href: code-analysis/rules/ca2217.md
-        - name: CA2219
-          href: code-analysis/rules/ca2219.md
-        - name: CA2225
-          href: code-analysis/rules/ca2225.md
-        - name: CA2226
-          href: code-analysis/rules/ca2226.md
-        - name: CA2227
-          href: code-analysis/rules/ca2227.md
-        - name: CA2229
-          href: code-analysis/rules/ca2229.md
-        - name: CA2231
-          href: code-analysis/rules/ca2231.md
-        - name: CA2234
-          href: code-analysis/rules/ca2234.md
-        - name: CA2235
-          href: code-analysis/rules/ca2235.md
-        - name: CA2237
-          href: code-analysis/rules/ca2237.md
-        - name: CA2241
-          href: code-analysis/rules/ca2241.md
-        - name: CA2242
-          href: code-analysis/rules/ca2242.md
-        - name: CA2243
-          href: code-analysis/rules/ca2243.md
-        - name: CA2244
-          href: code-analysis/rules/ca2244.md
-        - name: CA2245
-          href: code-analysis/rules/ca2245.md
-        - name: CA2246
-          href: code-analysis/rules/ca2246.md
-        - name: CA2247
-          href: code-analysis/rules/ca2247.md
-        - name: CA2248
-          href: code-analysis/rules/ca2248.md
-        - name: CA2249
-          href: code-analysis/rules/ca2249.md
+          href: code-analysis/rules/quality-rules-reference.md
+        - name: Design rules
+          items:
+          - name: Overview
+            displayName: "design rules"
+            href: code-analysis/rules/design-warnings.md
+          - name: CA1000
+            href: code-analysis/rules/ca1000.md
+          - name: CA1001
+            href: code-analysis/rules/ca1001.md
+          - name: CA1002
+            href: code-analysis/rules/ca1002.md
+          - name: CA1003
+            href: code-analysis/rules/ca1003.md
+          - name: CA1005
+            href: code-analysis/rules/ca1005.md
+          - name: CA1008
+            href: code-analysis/rules/ca1008.md
+          - name: CA1010
+            href: code-analysis/rules/ca1010.md
+          - name: CA1012
+            href: code-analysis/rules/ca1012.md
+          - name: CA1014
+            href: code-analysis/rules/ca1014.md
+          - name: CA1016
+            href: code-analysis/rules/ca1016.md
+          - name: CA1017
+            href: code-analysis/rules/ca1017.md
+          - name: CA1018
+            href: code-analysis/rules/ca1018.md
+          - name: CA1019
+            href: code-analysis/rules/ca1019.md
+          - name: CA1021
+            href: code-analysis/rules/ca1021.md
+          - name: CA1024
+            href: code-analysis/rules/ca1024.md
+          - name: CA1027
+            href: code-analysis/rules/ca1027.md
+          - name: CA1028
+            href: code-analysis/rules/ca1028.md
+          - name: CA1030
+            href: code-analysis/rules/ca1030.md
+          - name: CA1031
+            href: code-analysis/rules/ca1031.md
+          - name: CA1032
+            href: code-analysis/rules/ca1032.md
+          - name: CA1033
+            href: code-analysis/rules/ca1033.md
+          - name: CA1034
+            href: code-analysis/rules/ca1034.md
+          - name: CA1036
+            href: code-analysis/rules/ca1036.md
+          - name: CA1040
+            href: code-analysis/rules/ca1040.md
+          - name: CA1041
+            href: code-analysis/rules/ca1041.md
+          - name: CA1043
+            href: code-analysis/rules/ca1043.md
+          - name: CA1044
+            href: code-analysis/rules/ca1044.md
+          - name: CA1045
+            href: code-analysis/rules/ca1045.md
+          - name: CA1046
+            href: code-analysis/rules/ca1046.md
+          - name: CA1047
+            href: code-analysis/rules/ca1047.md
+          - name: CA1050
+            href: code-analysis/rules/ca1050.md
+          - name: CA1051
+            href: code-analysis/rules/ca1051.md
+          - name: CA1052
+            href: code-analysis/rules/ca1052.md
+          - name: CA1053
+            href: code-analysis/rules/ca1053.md
+          - name: CA1054
+            href: code-analysis/rules/ca1054.md
+          - name: CA1055
+            href: code-analysis/rules/ca1055.md
+          - name: CA1056
+            href: code-analysis/rules/ca1056.md
+          - name: CA1058
+            href: code-analysis/rules/ca1058.md
+          - name: CA1060
+            href: code-analysis/rules/ca1060.md
+          - name: CA1061
+            href: code-analysis/rules/ca1061.md
+          - name: CA1062
+            href: code-analysis/rules/ca1062.md
+          - name: CA1063
+            href: code-analysis/rules/ca1063.md
+          - name: CA1064
+            href: code-analysis/rules/ca1064.md
+          - name: CA1065
+            href: code-analysis/rules/ca1065.md
+          - name: CA1066
+            href: code-analysis/rules/ca1066.md
+          - name: CA1067
+            href: code-analysis/rules/ca1067.md
+          - name: CA1068
+            href: code-analysis/rules/ca1068.md
+          - name: CA1069
+            href: code-analysis/rules/ca1069.md
+          - name: CA1070
+            href: code-analysis/rules/ca1070.md
+        - name: Documentation rules
+          items:
+          - name: Overview
+            displayName: "documentation rules"
+            href: code-analysis/rules/documentation-warnings.md
+          - name: CA1200
+            href: code-analysis/rules/ca1200.md
+        - name: Globalization rules
+          items:
+          - name: Overview
+            displayName: "globalization rules"
+            href: code-analysis/rules/globalization-warnings.md
+          - name: CA1303
+            href: code-analysis/rules/ca1303.md
+          - name: CA1304
+            href: code-analysis/rules/ca1304.md
+          - name: CA1305
+            href: code-analysis/rules/ca1305.md
+          - name: CA1307
+            href: code-analysis/rules/ca1307.md
+          - name: CA1308
+            href: code-analysis/rules/ca1308.md
+          - name: CA1309
+            href: code-analysis/rules/ca1309.md
+          - name: CA1310
+            href: code-analysis/rules/ca1310.md
+          - name: CA2101
+            href: code-analysis/rules/ca2101.md
+        - name: Portability and interoperability rules
+          items:
+          - name: Overview
+            displayName: "portability and interoperability rules"
+            href: code-analysis/rules/interoperability-warnings.md
+          - name: CA1401
+            href: code-analysis/rules/ca1401.md
+          - name: CA1416
+            href: code-analysis/rules/ca1416.md
+          - name: CA1417
+            href: code-analysis/rules/ca1417.md
+        - name: Maintainability rules
+          items:
+          - name: Overview
+            displayName: "maintainability rules"
+            href: code-analysis/rules/maintainability-warnings.md
+          - name: CA1501
+            href: code-analysis/rules/ca1501.md
+          - name: CA1502
+            href: code-analysis/rules/ca1502.md
+          - name: CA1505
+            href: code-analysis/rules/ca1505.md
+          - name: CA1506
+            href: code-analysis/rules/ca1506.md
+          - name: CA1507
+            href: code-analysis/rules/ca1507.md
+          - name: CA1508
+            href: code-analysis/rules/ca1508.md
+          - name: CA1509
+            href: code-analysis/rules/ca1509.md
+        - name: Naming rules
+          items:
+          - name: Overview
+            displayName: "naming rules"
+            href: code-analysis/rules/naming-warnings.md
+          - name: CA1700
+            href: code-analysis/rules/ca1700.md
+          - name: CA1707
+            href: code-analysis/rules/ca1707.md
+          - name: CA1708
+            href: code-analysis/rules/ca1708.md
+          - name: CA1710
+            href: code-analysis/rules/ca1710.md
+          - name: CA1711
+            href: code-analysis/rules/ca1711.md
+          - name: CA1712
+            href: code-analysis/rules/ca1712.md
+          - name: CA1713
+            href: code-analysis/rules/ca1713.md
+          - name: CA1714
+            href: code-analysis/rules/ca1714.md
+          - name: CA1715
+            href: code-analysis/rules/ca1715.md
+          - name: CA1716
+            href: code-analysis/rules/ca1716.md
+          - name: CA1717
+            href: code-analysis/rules/ca1717.md
+          - name: CA1720
+            href: code-analysis/rules/ca1720.md
+          - name: CA1721
+            href: code-analysis/rules/ca1721.md
+          - name: CA1724
+            href: code-analysis/rules/ca1724.md
+          - name: CA1725
+            href: code-analysis/rules/ca1725.md
+        - name: Performance rules
+          items:
+          - name: Overview
+            displayName: "performance rules"
+            href: code-analysis/rules/performance-warnings.md
+          - name: CA1802
+            href: code-analysis/rules/ca1802.md
+          - name: CA1805
+            href: code-analysis/rules/ca1805.md
+          - name: CA1806
+            href: code-analysis/rules/ca1806.md
+          - name: CA1810
+            href: code-analysis/rules/ca1810.md
+          - name: CA1812
+            href: code-analysis/rules/ca1812.md
+          - name: CA1813
+            href: code-analysis/rules/ca1813.md
+          - name: CA1814
+            href: code-analysis/rules/ca1814.md
+          - name: CA1815
+            href: code-analysis/rules/ca1815.md
+          - name: CA1819
+            href: code-analysis/rules/ca1819.md
+          - name: CA1820
+            href: code-analysis/rules/ca1820.md
+          - name: CA1821
+            href: code-analysis/rules/ca1821.md
+          - name: CA1822
+            href: code-analysis/rules/ca1822.md
+          - name: CA1823
+            href: code-analysis/rules/ca1823.md
+          - name: CA1824
+            href: code-analysis/rules/ca1824.md
+          - name: CA1825
+            href: code-analysis/rules/ca1825.md
+          - name: CA1826
+            href: code-analysis/rules/ca1826.md
+          - name: CA1827
+            href: code-analysis/rules/ca1827.md
+          - name: CA1828
+            href: code-analysis/rules/ca1828.md
+          - name: CA1829
+            href: code-analysis/rules/ca1829.md
+          - name: CA1830
+            href: code-analysis/rules/ca1830.md
+          - name: CA1831
+            href: code-analysis/rules/ca1831.md
+          - name: CA1832
+            href: code-analysis/rules/ca1832.md
+          - name: CA1833
+            href: code-analysis/rules/ca1833.md
+          - name: CA1834
+            href: code-analysis/rules/ca1834.md
+          - name: CA1835
+            href: code-analysis/rules/ca1835.md
+          - name: CA1836
+            href: code-analysis/rules/ca1836.md
+          - name: CA1837
+            href: code-analysis/rules/ca1837.md
+          - name: CA1838
+            href: code-analysis/rules/ca1838.md
+        - name: Publish rules
+          items:
+          - name: Overview
+            displayName: "publish rules"
+            href: code-analysis/rules/publish-warnings.md
+          - name: IL3000
+            href: code-analysis/rules/il3000.md
+          - name: IL3001
+            href: code-analysis/rules/il3001.md
+        - name: Reliability rules
+          items:
+          - name: Overview
+            displayName: "reliability rules"
+            href: code-analysis/rules/reliability-warnings.md
+          - name: CA2000
+            href: code-analysis/rules/ca2000.md
+          - name: CA2002
+            href: code-analysis/rules/ca2002.md
+          - name: CA2007
+            href: code-analysis/rules/ca2007.md
+          - name: CA2008
+            href: code-analysis/rules/ca2008.md
+          - name: CA2009
+            href: code-analysis/rules/ca2009.md
+          - name: CA2011
+            href: code-analysis/rules/ca2011.md
+          - name: CA2012
+            href: code-analysis/rules/ca2012.md
+          - name: CA2013
+            href: code-analysis/rules/ca2013.md
+          - name: CA2014
+            href: code-analysis/rules/ca2014.md
+          - name: CA2015
+            href: code-analysis/rules/ca2015.md
+          - name: CA2016
+            href: code-analysis/rules/ca2016.md
+        - name: Security rules
+          items:
+          - name: Overview
+            displayName: "security rules"
+            href: code-analysis/rules/security-warnings.md
+          - name: CA2100
+            href: code-analysis/rules/ca2100.md
+          - name: CA2109
+            href: code-analysis/rules/ca2109.md
+          - name: CA2119
+            href: code-analysis/rules/ca2119.md
+          - name: CA2153
+            href: code-analysis/rules/ca2153.md
+          - name: CA2153
+            href: code-analysis/rules/ca2153.md
+          - name: CA2300
+            href: code-analysis/rules/ca2300.md
+          - name: CA2301
+            href: code-analysis/rules/ca2301.md
+          - name: CA2302
+            href: code-analysis/rules/ca2302.md
+          - name: CA2305
+            href: code-analysis/rules/ca2305.md
+          - name: CA2310
+            href: code-analysis/rules/ca2310.md
+          - name: CA2311
+            href: code-analysis/rules/ca2311.md
+          - name: CA2312
+            href: code-analysis/rules/ca2312.md
+          - name: CA2315
+            href: code-analysis/rules/ca2315.md
+          - name: CA2321
+            href: code-analysis/rules/ca2321.md
+          - name: CA2322
+            href: code-analysis/rules/ca2322.md
+          - name: CA2326
+            href: code-analysis/rules/ca2326.md
+          - name: CA2327
+            href: code-analysis/rules/ca2327.md
+          - name: CA2328
+            href: code-analysis/rules/ca2328.md
+          - name: CA2329
+            href: code-analysis/rules/ca2329.md
+          - name: CA2350
+            href: code-analysis/rules/ca2350.md
+          - name: CA2351
+            href: code-analysis/rules/ca2351.md
+          - name: CA2352
+            href: code-analysis/rules/ca2352.md
+          - name: CA2353
+            href: code-analysis/rules/ca2353.md
+          - name: CA2354
+            href: code-analysis/rules/ca2354.md
+          - name: CA2355
+            href: code-analysis/rules/ca2355.md
+          - name: CA2356
+            href: code-analysis/rules/ca2356.md
+          - name: CA2361
+            href: code-analysis/rules/ca2361.md
+          - name: CA2362
+            href: code-analysis/rules/ca2362.md
+          - name: CA2330
+            href: code-analysis/rules/ca2330.md
+          - name: CA3001
+            href: code-analysis/rules/ca3001.md
+          - name: CA3002
+            href: code-analysis/rules/ca3002.md
+          - name: CA3003
+            href: code-analysis/rules/ca3003.md
+          - name: CA3004
+            href: code-analysis/rules/ca3004.md
+          - name: CA3005
+            href: code-analysis/rules/ca3005.md
+          - name: CA3006
+            href: code-analysis/rules/ca3006.md
+          - name: CA3007
+            href: code-analysis/rules/ca3007.md
+          - name: CA3008
+            href: code-analysis/rules/ca3008.md
+          - name: CA3009
+            href: code-analysis/rules/ca3009.md
+          - name: CA3010
+            href: code-analysis/rules/ca3010.md
+          - name: CA3011
+            href: code-analysis/rules/ca3011.md
+          - name: CA3012
+            href: code-analysis/rules/ca3012.md
+          - name: CA3061
+            href: code-analysis/rules/ca3061.md
+          - name: CA3075
+            href: code-analysis/rules/ca3075.md
+          - name: CA3076
+            href: code-analysis/rules/ca3076.md
+          - name: CA3077
+            href: code-analysis/rules/ca3077.md
+          - name: CA3147
+            href: code-analysis/rules/ca3147.md
+          - name: CA5350
+            href: code-analysis/rules/ca5350.md
+          - name: CA5351
+            href: code-analysis/rules/ca5351.md
+          - name: CA5358
+            href: code-analysis/rules/ca5358.md
+          - name: CA5359
+            href: code-analysis/rules/ca5359.md
+          - name: CA5360
+            href: code-analysis/rules/ca5360.md
+          - name: CA5361
+            href: code-analysis/rules/ca5361.md
+          - name: CA5362
+            href: code-analysis/rules/ca5362.md
+          - name: CA5363
+            href: code-analysis/rules/ca5363.md
+          - name: CA5364
+            href: code-analysis/rules/ca5364.md
+          - name: CA5365
+            href: code-analysis/rules/ca5365.md
+          - name: CA5366
+            href: code-analysis/rules/ca5366.md
+          - name: CA5367
+            href: code-analysis/rules/ca5367.md
+          - name: CA5368
+            href: code-analysis/rules/ca5368.md
+          - name: CA5369
+            href: code-analysis/rules/ca5369.md
+          - name: CA5370
+            href: code-analysis/rules/ca5370.md
+          - name: CA5371
+            href: code-analysis/rules/ca5371.md
+          - name: CA5372
+            href: code-analysis/rules/ca5372.md
+          - name: CA5373
+            href: code-analysis/rules/ca5373.md
+          - name: CA5374
+            href: code-analysis/rules/ca5374.md
+          - name: CA5375
+            href: code-analysis/rules/ca5375.md
+          - name: CA5376
+            href: code-analysis/rules/ca5376.md
+          - name: CA5377
+            href: code-analysis/rules/ca5377.md
+          - name: CA5378
+            href: code-analysis/rules/ca5378.md
+          - name: CA5379
+            href: code-analysis/rules/ca5379.md
+          - name: CA5380
+            href: code-analysis/rules/ca5380.md
+          - name: CA5381
+            href: code-analysis/rules/ca5381.md
+          - name: CA5382
+            href: code-analysis/rules/ca5382.md
+          - name: CA5383
+            href: code-analysis/rules/ca5383.md
+          - name: CA5384
+            href: code-analysis/rules/ca5384.md
+          - name: CA5385
+            href: code-analysis/rules/ca5385.md
+          - name: CA5386
+            href: code-analysis/rules/ca5386.md
+          - name: CA5387
+            href: code-analysis/rules/ca5387.md
+          - name: CA5388
+            href: code-analysis/rules/ca5388.md
+          - name: CA5389
+            href: code-analysis/rules/ca5389.md
+          - name: CA5390
+            href: code-analysis/rules/ca5390.md
+          - name: CA5391
+            href: code-analysis/rules/ca5391.md
+          - name: CA5392
+            href: code-analysis/rules/ca5392.md
+          - name: CA5393
+            href: code-analysis/rules/ca5393.md
+          - name: CA5394
+            href: code-analysis/rules/ca5394.md
+          - name: CA5395
+            href: code-analysis/rules/ca5395.md
+          - name: CA5396
+            href: code-analysis/rules/ca5396.md
+          - name: CA5397
+            href: code-analysis/rules/ca5397.md
+          - name: CA5398
+            href: code-analysis/rules/ca5398.md
+          - name: CA5399
+            href: code-analysis/rules/ca5399.md
+          - name: CA5400
+            href: code-analysis/rules/ca5400.md
+          - name: CA5401
+            href: code-analysis/rules/ca5401.md
+          - name: CA5402
+            href: code-analysis/rules/ca5402.md
+          - name: CA5403
+            href: code-analysis/rules/ca5403.md
+        - name: Usage rules
+          items:
+          - name: Overview
+            displayName: "usage rules"
+            href: code-analysis/rules/usage-warnings.md
+          - name: CA1801
+            href: code-analysis/rules/ca1801.md
+          - name: CA1816
+            href: code-analysis/rules/ca1816.md
+          - name: CA2200
+            href: code-analysis/rules/ca2200.md
+          - name: CA2201
+            href: code-analysis/rules/ca2201.md
+          - name: CA2207
+            href: code-analysis/rules/ca2207.md
+          - name: CA2208
+            href: code-analysis/rules/ca2208.md
+          - name: CA2211
+            href: code-analysis/rules/ca2211.md
+          - name: CA2213
+            href: code-analysis/rules/ca2213.md
+          - name: CA2214
+            href: code-analysis/rules/ca2214.md
+          - name: CA2215
+            href: code-analysis/rules/ca2215.md
+          - name: CA2216
+            href: code-analysis/rules/ca2216.md
+          - name: CA2217
+            href: code-analysis/rules/ca2217.md
+          - name: CA2219
+            href: code-analysis/rules/ca2219.md
+          - name: CA2225
+            href: code-analysis/rules/ca2225.md
+          - name: CA2226
+            href: code-analysis/rules/ca2226.md
+          - name: CA2227
+            href: code-analysis/rules/ca2227.md
+          - name: CA2229
+            href: code-analysis/rules/ca2229.md
+          - name: CA2231
+            href: code-analysis/rules/ca2231.md
+          - name: CA2234
+            href: code-analysis/rules/ca2234.md
+          - name: CA2235
+            href: code-analysis/rules/ca2235.md
+          - name: CA2237
+            href: code-analysis/rules/ca2237.md
+          - name: CA2241
+            href: code-analysis/rules/ca2241.md
+          - name: CA2242
+            href: code-analysis/rules/ca2242.md
+          - name: CA2243
+            href: code-analysis/rules/ca2243.md
+          - name: CA2244
+            href: code-analysis/rules/ca2244.md
+          - name: CA2245
+            href: code-analysis/rules/ca2245.md
+          - name: CA2246
+            href: code-analysis/rules/ca2246.md
+          - name: CA2247
+            href: code-analysis/rules/ca2247.md
+          - name: CA2248
+            href: code-analysis/rules/ca2248.md
+          - name: CA2249
+            href: code-analysis/rules/ca2249.md
+      - name: Code style rules
+        href: /visualstudio/ide/editorconfig-language-conventions
     - name: API analyzer
       href: ../standard/analyzers/api-analyzer.md
     - name: Portability analyzer

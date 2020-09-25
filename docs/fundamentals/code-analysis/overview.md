@@ -95,7 +95,7 @@ By default, you'll get the latest code analysis rules and default rule severitie
 
 ## Code style analysis
 
-_[Code style analysis](/visualstudio/ide/editorconfig-code-style-settings-reference) ("IDExxxx" rules)_ enables you to define and maintain consistent code style in your codebase. Following are the default settings:
+[Code style analysis](/visualstudio/ide/editorconfig-code-style-settings-reference) ("IDExxxx" rules) enables you to define and maintain consistent code style in your codebase. Following are the default settings:
 
 - Command line build: Code style analysis is disabled, by default, for all .NET projects on command-line builds.
 - Visual Studio: Code style analysis is enabled, by default, for all .NET projects inside Visual Studio as [code refactoring quick actions](/visualstudio/ide/code-generation-in-visual-studio).
@@ -105,7 +105,8 @@ Starting .NET 5.0 RC2, you can enable code style analysis on build, both at the 
 Steps to enable code style analysis on build:
 
 1. Set the MSBuild property [EnforceCodeStyleInBuild](../../core/project-sdk/msbuild-props.md#enforcecodestyleinbuild) to `true`.
-2. [Configure](configure-rules.md) each "IDE" code style rule that you wish to run on build as a warning or an error. For example:
+
+1. In an *.editorconfig* file, [configure](configure-rules.md) each "IDE" code style rule that you wish to run on build as a warning or an error. For example:
 
    ```ini
    [*.{cs,vb}]
@@ -125,10 +126,22 @@ Steps to enable code style analysis on build:
    dotnet_diagnostic.IDE0040.severity = silent
    ```
 
+## Suppress a warning
+
+To suppress a rule violation, set the severity option for that rule ID to `none` in an EditorConfig file. For example:
+
+```ini
+dotnet_diagnostic.CA1822.severity = none
+```
+
+Visual Studio provides additional ways to suppress warnings from code analysis rules. For more information, see [Suppress violations](/visualstudio/code-quality/use-roslyn-analyzers#suppress-violations).
+
+For more information about rule severities, see [Configure rule severity](configure-rules.md#severity-level).
+
 ## See also
 
-- [Code analysis in Visual Studio](/visualstudio/code-quality/roslyn-analyzers-overview)
-- [Code quality analysis rule reference](/visualstudio/code-quality/code-analysis-for-managed-code-warnings)
+- [Code quality analysis rule reference](rules/quality-rules-reference.md)
 - [Code style analysis rule reference](/visualstudio/ide/editorconfig-code-style-settings-reference)
+- [Code analysis in Visual Studio](/visualstudio/code-quality/roslyn-analyzers-overview)
 - [.NET Compiler Platform SDK](../../csharp/roslyn-sdk/index.md)
 - [Tutorial: Write your first analyzer and code fix](../../csharp/roslyn-sdk/tutorials/how-to-write-csharp-analyzer-code-fix.md)

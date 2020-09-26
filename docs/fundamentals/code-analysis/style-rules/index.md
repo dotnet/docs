@@ -35,3 +35,9 @@ The following table shows the type of information that is provided for each rule
 | **Default option value** |Default code style option value for the rule option, if any.
 | **Introduced version** |Version of the .NET SDK and/or Visual Studio when the rule was first introduced.|
 |Code examples|Examples for different code styles corresponding to the rule.|
+
+## See also
+
+- [Enforce code style on build](overview.md#code-style-analysis)
+- [Quick Actions in Visual Studio](/visualstudio/ide/quick-actions.md)
+- [Create portable custom editor options in Visual Studio](/visualstudio/ide/create-portable-custom-editor-options.md)

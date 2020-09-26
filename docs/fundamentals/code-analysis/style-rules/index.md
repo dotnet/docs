@@ -38,6 +38,6 @@ The following table shows the type of information that is provided for each rule
 
 ## See also
 
-- [Enforce code style on build](overview.md#code-style-analysis)
+- [Enforce code style on build](../overview.md#code-style-analysis)
 - [Quick Actions in Visual Studio](/visualstudio/ide/quick-actions.md)
 - [Create portable custom editor options in Visual Studio](/visualstudio/ide/create-portable-custom-editor-options.md)

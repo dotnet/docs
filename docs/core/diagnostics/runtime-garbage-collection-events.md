@@ -324,11 +324,3 @@ The following table shows the event data:
 |----------------|---------------|-----------------|
 |Count|win:UInt32|The number of finalizers that were run.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-
-
-## BulkType Event
-
-// Fire an ETW event for all the types we batched so far, and then reset our state
-// so we can start batching new types at the beginning of the array.
-
-

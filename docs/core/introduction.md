@@ -198,7 +198,7 @@ For more information, see [NuGet documentation](/nuget/).
 
 ### CLR
 
-The .NET [CLR](../standard/clr.md) is a cross-platform runtime that includes support for Windows, macOS, and Linux. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code on-the-fly using a JIT compiler.
+The .NET [CLR](../standard/clr.md) is a cross-platform runtime that includes support for Windows, macOS, and Linux. The CLR handles memory allocation and management. The CLR is also a virtual machine that not only executes apps but also generates and compiles code using a just-in-time (JIT) compiler.
 
 For more information, see [Common Language Runtime (CLR) overview](../standard/clr.md).
 
@@ -296,7 +296,7 @@ For more information, see [LINQ (Language Integrated Query) overview](../standar
 
 ## .NET terminology
 
-To understand the .NET documentation, it can help to know how certain terms are used.
+To understand .NET documentation, it can help to know how the usage of some terms has changed over time.
 
 ### .NET Core and .NET 5
 
@@ -319,7 +319,7 @@ Some of the terminology for .NET can be confusing because the same word is used 
   |Context  |"runtime" meaning |
   |---------|---------|
   | [Common Language Runtime (CLR)](#clr)| The execution environment for a managed program. The OS is part of the runtime environment but isn't part of the .NET runtime. |
-  | [.NET download page](https://dotnet.microsoft.com/download/dotnet-core) | When you select a version to download, the page lets you choose the SDK or one of three *runtimes*. The *.NET runtime* in this context is the [CLR](#clr) together with the [runtime libraries](#runtime-libraries). This runtime provides support for running [framework-dependent](#deployment-models) console apps. The other runtime choices are for running ASP.NET Core server apps and Windows desktop apps. |
+  | [.NET runtime on the .NET download page](https://dotnet.microsoft.com/download/dotnet-core) | The [CLR](#clr) and [runtime libraries](#runtime-libraries), which together provide support for running [framework-dependent](#deployment-models) apps. The page also offers runtime choices for ASP.NET Core server apps and Windows desktop apps. |
   | [Runtime Identifier (RID)](rid-catalog.md) | The OS platform and CPU architecture that a .NET app runs on. For example: Windows x64, Linux x64. |
 
 * **framework**
@@ -327,9 +327,9 @@ Some of the terminology for .NET can be confusing because the same word is used 
   |Context  | "framework" meaning |
   |---------|---------------------|
   | .NET Framework | The original, Windows-only implementation of .NET. "Framework" is capitalized. |
-  | target framework | The collection of APIs that a .NET app or library relies on, identified by a reference to the .NET implementation and version. Examples: .NET Core 3.1, .NET Standard 2.0 |
+  | target framework | The collection of APIs that a .NET app or library relies on. Examples: .NET Core 3.1, .NET Standard 2.0 |
   | Target Framework Moniker (TFM)  | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
-  | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet-core). "Framework" in this usage is the same thing as the ".NET runtime" that you download from the .NET download page. |
+  | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet-core). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
   
 * **platform**
 

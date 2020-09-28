@@ -1,3 +1,13 @@
+---
+title: "Garbage Collection Runtime Events"
+description: View detailed information about garbage collection events.
+ms.date: "09/27/2020"
+helpviewer_keywords:
+  - "GC events"
+  - "garbage collection events [.NET Core]"
+  - "ETW, garbage collection events (CoreCLR)"
+ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
+---
 # Garbage Collection Events
 
 These events collect information pertaining to garbage collection. They help in diagnostics and debugging, including determining how many times garbage collection was performed, how much memory was freed during garbage collection, etc.

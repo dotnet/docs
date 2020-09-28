@@ -1,3 +1,13 @@
+---
+title: "Method Runtime Events"
+description: See ETW events that collect information specific to methods, like CLR method events, CLR method marker or CLR method verbose events, and MethodJittingStarted.
+ms.date: "09/27/2020"
+helpviewer_keywords:
+  - "ETW, method events (CoreCLR)"
+  - "method events [.NET Core]"
+ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
+----
+
 # Method ETW Events
 
 These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as the number of times a method was called.

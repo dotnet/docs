@@ -80,7 +80,7 @@ The following table shows the event information:
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
 
-## MethodUnLoad_V1
+## MethodUnLoad_V1 Event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
@@ -103,7 +103,7 @@ The following table shows the event information:
 |MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-## MethodUnLoad_V2
+## MethodUnLoad_V2 Event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|

@@ -405,17 +405,16 @@ The following table shows the keyword and level:
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
-|`MethodILToNativeMap`|||
+|`MethodILToNativeMap`|190|Maps the IL-to-native map event for JIT-compiled methods.|
 
-TODO
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |MethodID|win:UInt64|Unique identifier of a method.|
 |ReJITID|win:UInt64|The ReJIT ID of the method.|
-|MethodExtent||
+|MethodExtent|The extent for the jitted method.|
 |CountOfMapEntries|win:UInt8|Number of map entries|
-|ILOffsets|win:UInt32|Offset of the IL from beginning of the method.|
-|NativeOffsets|win:UInt32||
+|ILOffsets|win:UInt32|The IL offset.|
+|NativeOffsets|win:UInt32|The native code offset.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 

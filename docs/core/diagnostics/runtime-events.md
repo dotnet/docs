@@ -1,6 +1,6 @@
 ---
 title: "Runtime Events"
-description: Review events emitted by CoreCLR runtime, which include #TODO.
+description: Review events emitted by CoreCLR runtime.
 ms.date: "09/14/2020"
 helpviewer_keywords: 
   - "loader events [.NET Core]"

@@ -68,9 +68,9 @@ services.Configure<TransientFaultHandlingOptions>(
 
 Using the preceding code, the following code reads the position options:
 
-:::code language="csharp" source="snippets/configuration/console-json/ExampleService.cs" range="25-32":::
+:::code language="csharp" source="snippets/configuration/console-json/ExampleService.cs":::
 
-In the preceding code, changes to the JSON configuration file after the app has started are ***not*** read. To read changes after the app has started, use [IOptionsSnapshot](#ios).
+In the preceding code, changes to the JSON configuration file after the app has started are ***not*** read. To read changes after the app has started, use [IOptionsSnapshot](#use-ioptionssnapshot-to-read-updated-data).
 
 ## Options interfaces
 
@@ -78,14 +78,14 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 - Does ***not*** support:
   - Reading of configuration data after the app has started.
-  - [Named options](#named)
+  - [Named options](#named-options-support-using-iconfigurenamedoptions)
 - Is registered as a [Singleton](dependency-injection.md#singleton) and can be injected into any [service lifetime](dependency-injection.md#service-lifetimes).
 
 <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>:
 
-- Is useful in scenarios where options should be recomputed on every request. For more information, see [Use IOptionsSnapshot to read updated data](#ios).
+- Is useful in scenarios where options should be recomputed on every request. For more information, see [Use IOptionsSnapshot to read updated data](#use-ioptionssnapshot-to-read-updated-data).
 - Is registered as [Scoped](dependency-injection.md#scoped) and therefore cannot be injected into a Singleton service.
-- Supports [named options](#named)
+- Supports [named options](#named-options-support-using-iconfigurenamedoptions)
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>:
 
@@ -94,7 +94,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 - Supports:
   - Change notifications
   - [Named options](#named-options-support-with-iconfigurenamedoptions)
-  - [Reloadable configuration](#ios)
+  - [Reloadable configuration](#use-ioptionssnapshot-to-read-updated-data)
   - Selective options invalidation (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601>)
   
 [Post-configuration](#options-post-configuration) scenarios enable setting or changing options after all <xref:Microsoft.Extensions.Options.IConfigureOptions%601> configuration occurs.
@@ -102,8 +102,6 @@ In the preceding code, changes to the JSON configuration file after the app has 
 <xref:Microsoft.Extensions.Options.IOptionsFactory%601> is responsible for creating new options instances. It has a single <xref:Microsoft.Extensions.Options.IOptionsFactory%601.Create%2A> method. The default implementation takes all registered <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601> and runs all the configurations first, followed by the post-configuration. It distinguishes between <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> and <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and only calls the appropriate interface.
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> is used by <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> to cache `TOptions` instances. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> invalidates options instances in the monitor so that the value is recomputed (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryRemove%2A>). Values can be manually introduced with <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryAdd%2A>. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.Clear%2A> method is used when all named instances should be recreated on demand.
-
-<a name="ios"></a>
 
 ## Use IOptionsSnapshot to read updated data
 
@@ -116,27 +114,33 @@ The difference between `IOptionsMonitor` and `IOptionsSnapshot` is that:
 
 The following code uses <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>.
 
-[!code-csharp[](options/samples/3.x/OptionsSample/Pages/TestSnap.cshtml.cs?name=snippet)]
+:::code language="csharp" source="snippets/configuration/console-json/ScopedService.cs":::
 
-The following code registers a configuration instance which `MyOptions` binds against:
+The following code registers a configuration instance which `TransientFaultHandlingOptions` binds against:
 
-[!code-csharp[](~/fundamentals/configuration/options/samples/3.x/OptionsSample/Startup3.cs?name=snippet_Example2)]
+```csharp
+services.Configure<TransientFaultHandlingOptions>(
+    configurationRoot.GetSection(
+        nameof(TransientFaultHandlingOptions)));
+```
 
 In the preceding code, changes to the JSON configuration file after the app has started are read.
 
 ## IOptionsMonitor
 
-The following code registers a configuration instance which `MyOptions` binds against.
+The following code registers a configuration instance which `TransientFaultHandlingOptions` binds against.
 
-[!code-csharp[](~/fundamentals/configuration/options/samples/3.x/OptionsSample/Startup3.cs?name=snippet_Example2)]
+```csharp
+services.Configure<TransientFaultHandlingOptions>(
+    configurationRoot.GetSection(
+        nameof(TransientFaultHandlingOptions)));
+```
 
 The following example uses <xref:Microsoft.Extensions.Options.IOptionsMonitor%601>:
 
-[!code-csharp[](options/samples/3.x/OptionsSample/Pages/TestMonitor.cshtml.cs?name=snippet)]
+:::code language="csharp" source="snippets/configuration/console-json/MonitorService.cs":::
 
 In the preceding code, by default, changes to the JSON configuration file after the app has started are read.
-
-<a name="named"></a>
 
 ## Named options support using IConfigureNamedOptions
 
@@ -147,20 +151,65 @@ Named options:
 
 Consider the following *appsettings.json* file:
 
-[!code-json[](~/fundamentals/configuration/options/samples/3.x/OptionsSample/appsettings.NO.json)]
+```json
+{
+  "Features": {
+    "Personalize": {
+      "Enabled": true,
+      "ApiKey": "aGEgaGEgeW91IHRob3VnaHQgdGhhdCB3YXMgcmVhbGx5IHNvbWV0aGluZw=="
+    },
+    "WeatherStation": {
+      "Enabled": true,
+      "ApiKey": "QXJlIHlvdSBhdHRlbXB0aW5nIHRvIGhhY2sgdXM/"
+    }
+  }
+}
+```
 
 Rather than creating two classes to bind `TopItem:Month` and `TopItem:Year`,
 the following class is used for each section:
 
-[!code-csharp[](~/fundamentals/configuration/options/samples/3.x/OptionsSample/Models/TopItemSettings.cs)]
+```csharp
+public class Features
+{
+    public const string Personalize = nameof(Month);
+    public const string WeatherStation = nameof(WeatherStation);
+
+    public bool Enabled { get; set; }
+    public string ApiKey { get; set; }
+}
+```
 
 The following code configures the named options:
 
-[!code-csharp[](~/fundamentals/configuration/options/samples/3.x/OptionsSample/StartupNO.cs?name=snippet_Example2)]
+```csharp
+ConfigureServices(services =>
+{
+    services.Configure<Features>(
+        Features.Personalize,
+        Configuration.GetSection("Features:Personalize"));
+
+    services.Configure<Features>(
+        Features.WeatherStation,
+        Configuration.GetSection("Features:WeatherStation"));
+});
+```
 
 The following code displays the named options:
 
-[!code-csharp[](options/samples/3.x/OptionsSample/Pages/TestNO.cshtml.cs?name=snippet)]
+```csharp
+public class Service
+{
+    private readonly Features _personalizeFeature;
+    private readonly Features _weatherStationFeature;
+
+    public Service(IOptionsSnapshot<Features> namedOptionsAccessor)
+    {
+        _personalizeFeature = namedOptionsAccessor.Get(Features.Personalize);
+        _weatherStationFeature = namedOptionsAccessor.Get(Features.WeatherStation);
+    }
+}
+```
 
 All options are named instances. <xref:Microsoft.Extensions.Options.IConfigureOptions%601> instances are treated as targeting the `Options.DefaultName` instance, which is `string.Empty`. <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> also implements <xref:Microsoft.Extensions.Options.IConfigureOptions%601>. The default implementation of the <xref:Microsoft.Extensions.Options.IOptionsFactory%601> has logic to use each appropriately. The `null` named option is used to target all of the named instances instead of a specific named instance. <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll%2A> and <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll%2A> use this convention.
 
@@ -168,7 +217,7 @@ All options are named instances. <xref:Microsoft.Extensions.Options.IConfigureOp
 
 <xref:Microsoft.Extensions.Options.OptionsBuilder%601> is used to configure `TOptions` instances. `OptionsBuilder` streamlines creating named options as it's only a single parameter to the initial `AddOptions<TOptions>(string optionsName)` call instead of appearing in all of the subsequent calls. Options validation and the `ConfigureOptions` overloads that accept service dependencies are only available via `OptionsBuilder`.
 
-`OptionsBuilder` is used in the [Options validation](#val) section.
+`OptionsBuilder` is used in the [Options validation](#options-validation) section.
 
 ## Use DI services to configure options
 
@@ -186,8 +235,6 @@ Services can be accessed from dependency injection while configuring options in 
 - Create a type that implements <xref:Microsoft.Extensions.Options.IConfigureOptions%601> or <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> and register the type as a service.
 
 We recommend passing a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A), since creating a service is more complex. Creating a type is equivalent to what the framework does when calling [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A). Calling [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) registers a transient generic <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601>, which has a constructor that accepts the generic service types specified.
-
-<a name="val"></a>
 
 ## Options validation
 

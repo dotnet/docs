@@ -8,7 +8,7 @@ ms.date: 09/28/2020
 
 # Options pattern in .NET
 
-The options pattern uses classes to provide strongly typed access to groups of related settings. When [configuration settings](configuration.md) are isolated by scenario into separate classes, the app adheres to two important software engineering principles:
+The options pattern uses classes to provide strongly-typed access to groups of related settings. When [configuration settings](configuration.md) are isolated by scenario into separate classes, the app adheres to two important software engineering principles:
 
 - The [Interface Segregation Principle (ISP) or Encapsulation](../../architecture/modern-web-apps-azure/architectural-principles.md#encapsulation): Scenarios (classes) that depend on configuration settings depend only on the configuration settings that they use.
 - [Separation of Concerns](../../architecture/modern-web-apps-azure/architectural-principles.md#separation-of-concerns): Settings for different parts of the app aren't dependent or coupled to one another.
@@ -147,7 +147,7 @@ In the preceding code, by default, changes to the JSON configuration file after 
 Named options:
 
 - Are useful when multiple configuration sections bind to the same properties.
-- Are case sensitive.
+- Are case-sensitive.
 
 Consider the following *appsettings.json* file:
 

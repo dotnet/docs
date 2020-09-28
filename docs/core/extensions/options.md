@@ -93,7 +93,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 - Is registered as a [Singleton](dependency-injection.md#singleton) and can be injected into any [service lifetime](dependency-injection.md#service-lifetimes).
 - Supports:
   - Change notifications
-  - [Named options](#named-options-support-with-iconfigurenamedoptions)
+  - [Named options](#named-options-support-using-iconfigurenamedoptions)
   - [Reloadable configuration](#use-ioptionssnapshot-to-read-updated-data)
   - Selective options invalidation (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601>)
   
@@ -172,7 +172,7 @@ the following class is used for each section:
 ```csharp
 public class Features
 {
-    public const string Personalize = nameof(Month);
+    public const string Personalize = nameof(Personalize);
     public const string WeatherStation = nameof(WeatherStation);
 
     public bool Enabled { get; set; }
@@ -223,7 +223,7 @@ All options are named instances. <xref:Microsoft.Extensions.Options.IConfigureOp
 
 Services can be accessed from dependency injection while configuring options in two ways:
 
-- Pass a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) on [OptionsBuilder\<TOptions>](xref:Microsoft.Extensions.Options.OptionsBuilder%601). `OptionsBuilder<TOptions>` provides overloads of [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%60.Configure%2A) that allow use of up to five services to configure options:
+- Pass a configuration delegate to [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) on [OptionsBuilder\<TOptions>](xref:Microsoft.Extensions.Options.OptionsBuilder%601). `OptionsBuilder<TOptions>` provides overloads of [Configure](xref:Microsoft.Extensions.Options.OptionsBuilder%601.Configure%2A) that allow use of up to five services to configure options:
 
   ```csharp
   services.AddOptions<MyOptions>("optionalName")

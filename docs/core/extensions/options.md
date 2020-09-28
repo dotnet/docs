@@ -227,9 +227,9 @@ Services can be accessed from dependency injection while configuring options in 
 
   ```csharp
   services.AddOptions<MyOptions>("optionalName")
-      .Configure<Service1, Service2, Service3, Service4, Service5>(
-          (o, s, s2, s3, s4, s5) =>
-              o.Property = DoSomethingWith(s, s2, s3, s4, s5));
+      .Configure<ExampleService, ScopedService, MonitorService>(
+          (options, es, ss, ms) =>
+              options.Property = DoSomethingWith(es, ss, ms));
   ```
 
 - Create a type that implements <xref:Microsoft.Extensions.Options.IConfigureOptions%601> or <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> and register the type as a service.
@@ -242,113 +242,101 @@ Options validation enables option values to be validated.
 
 Consider the following *appsettings.json* file:
 
-[!code-json[](~/fundamentals/configuration/options/samples/3.x/OptionsValidationSample/appsettings.Dev2.json)]
+```json
+{
+  "Settings": {
+    "SiteTitle": "Amazing docs from Awesome people!",
+    "Scale": 10,
+    "VerbosityLevel": 32
+  }
+}
+```
 
-The following class binds to the `"MyConfig"` configuration section and applies a couple of `DataAnnotations` rules:
+The following class binds to the `"Settings"` configuration section and applies a couple of `DataAnnotations` rules:
 
-[!code-csharp[](options/samples/3.x/OptionsValidationSample/Configuration/MyConfigOptions.cs?name=snippet)]
+:::code language="csharp" source="snippets/configuration/console-json/SettingsOptions.cs":::
 
 The following code:
 
-- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%2A> to get an [OptionsBuilder\<TOptions>](xref:Microsoft.Extensions.Options.OptionsBuilder%601) that binds to the `MyConfigOptions` class.
+- Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions%2A> to get an [OptionsBuilder\<TOptions>](xref:Microsoft.Extensions.Options.OptionsBuilder%601) that binds to the `SettingsOptions` class.
 - Calls <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations%2A> to enable validation using `DataAnnotations`.
 
-[!code-csharp[](options/samples/3.x/OptionsValidationSample/Startup.cs?name=snippet)]
+```csharp
+services.AddOptions<SettingsOptions>()
+    .Bind(Configuration.GetSection(SettingsOptions.Settings))
+    .ValidateDataAnnotations();
+```
 
-The `ValidateDataAnnotations` extension method is defined in the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package. For web apps that use the `Microsoft.NET.Sdk.Web` SDK, this package is referenced implicitly from the shared framework.
+The `ValidateDataAnnotations` extension method is defined in the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) NuGet package.
 
 The following code displays the configuration values or the validation errors:
 
-[!code-csharp[](options/samples/3.x/OptionsValidationSample/Controllers/HomeController.cs?name=snippet)]
+:::code language="csharp" source="snippets/configuration/console-json/ValidationService.cs":::
 
 The following code applies a more complex validation rule using a delegate:
 
-[!code-csharp[](options/samples/3.x/OptionsValidationSample/Startup2.cs?name=snippet)]
+```csharp
+services.AddOptions<SettingsOptions>()
+    .Bind(Configuration.GetSection(SettingsOptions.Settings))
+    .ValidateDataAnnotations()
+    .Validate(config =>
+    {
+        if (config.Scale != 0)
+        {
+            return config.VerbosityLevel > config.Scale;
+        }
+
+        return true;
+    }, "VerbosityLevel must be > than Scale.");
+```
 
 ### IValidateOptions for complex validation
 
 The following class implements <xref:Microsoft.Extensions.Options.IValidateOptions%601>:
 
-[!code-csharp[](options/samples/3.x/OptionsValidationSample/Configuration/MyConfigValidation.cs?name=snippet)]
+:::code language="csharp" source="snippets/configuration/console-json/ValidateSettingsOptions.cs":::
 
-`IValidateOptions` enables moving the validation code out of `StartUp` and into a class.
+`IValidateOptions` enables moving the validation code into a class.
 
-Using the preceding code, validation is enabled in `Startup.ConfigureServices` with the following code:
-
-[!code-csharp[](options/samples/3.x/OptionsValidationSample/StartupValidation.cs?name=snippet)]
-
-<!-- The following comment doesn't seem that useful 
-Options validation doesn't guard against options modifications after the options instance is created. For example, `IOptionsSnapshot` options are created and validated once per request when the options are first accessed. The `IOptionsSnapshot` options aren't validated again on subsequent access attempts *for the same request*.
-
-The `Validate` method accepts a `Func<TOptions, bool>`. To fully customize validation, implement `IValidateOptions<TOptions>`, which allows:
-
-* Validation of multiple options types: `class ValidateTwo : IValidateOptions<Option1>, IValidationOptions<Option2>`
-* Validation that depends on another option type: `public DependsOnAnotherOptionValidator(IOptionsMonitor<AnotherOption> options)`
-
-`IValidateOptions` validates:
-
-* A specific named options instance.
-* All options when `name` is `null`.
-
-Return a `ValidateOptionsResult` from your implementation of the interface:
+Using the preceding code, validation is enabled in `ConfigureServices` with the following code:
 
 ```csharp
-public interface IValidateOptions<TOptions> where TOptions : class
-{
-    ValidateOptionsResult Validate(string name, TOptions options);
-}
+services.Configure<SettingsOptions>(
+    Configuration.GetSection(
+        SettingsOptions.Settings));
+services.TryAddEnumerable(
+    ServiceDescriptor.Singleton
+        <IValidateOptions<SettingsOptions>, ValidateSettingsOptions>());
 ```
-
-Data Annotation-based validation is available from the [Microsoft.Extensions.Options.DataAnnotations](https://www.nuget.org/packages/Microsoft.Extensions.Options.DataAnnotations) package by calling the <xref:Microsoft.Extensions.DependencyInjection.OptionsBuilderDataAnnotationsExtensions.ValidateDataAnnotations*> method on `OptionsBuilder<TOptions>`. `Microsoft.Extensions.Options.DataAnnotations` is implicitly referenced in ASP.NET Core apps.
-
--->
 
 ## Options post-configuration
 
 Set post-configuration with <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601>. Post-configuration runs after all <xref:Microsoft.Extensions.Options.IConfigureOptions%601> configuration occurs:
 
 ```csharp
-services.PostConfigure<MyOptions>(myOptions =>
+services.PostConfigure<CustomOptions>(customOptions =>
 {
-    myOptions.Option1 = "post_configured_option1_value";
+    customOptions.Option1 = "post_configured_option1_value";
 });
 ```
 
 <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601.PostConfigure%2A> is available to post-configure named options:
 
 ```csharp
-services.PostConfigure<MyOptions>("named_options_1", myOptions =>
+services.PostConfigure<CustomOptions>("named_options_1", customOptions =>
 {
-    myOptions.Option1 = "post_configured_option1_value";
+    customOptions.Option1 = "post_configured_option1_value";
 });
 ```
 
 Use <xref:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll%2A> to post-configure all configuration instances:
 
 ```csharp
-services.PostConfigureAll<MyOptions>(myOptions =>
+services.PostConfigureAll<CustomOptions>(customOptions =>
 {
-    myOptions.Option1 = "post_configured_option1_value";
+    customOptions.Option1 = "post_configured_option1_value";
 });
 ```
-
-## Accessing options during startup
-
-<xref:Microsoft.Extensions.Options.IOptions%601> and <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> can be used in `Startup.Configure`, since services are built before the `Configure` method executes.
-
-```csharp
-public void Configure(IApplicationBuilder app,
-    IOptionsMonitor<MyOptions> optionsAccessor)
-{
-    var option1 = optionsAccessor.CurrentValue.Option1;
-}
-```
-
-Don't use <xref:Microsoft.Extensions.Options.IOptions%601> or <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> in `Startup.ConfigureServices`. An inconsistent options state may exist due to the ordering of service registrations.
-
-## Options.ConfigurationExtensions NuGet package
-
-The [Microsoft.Extensions.Options.ConfigurationExtensions](https://www.nuget.org/packages/Microsoft.Extensions.Options.ConfigurationExtensions/) package is implicitly referenced in ASP.NET Core apps.
 
 ## See also
 

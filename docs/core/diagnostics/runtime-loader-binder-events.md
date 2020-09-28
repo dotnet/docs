@@ -1,7 +1,5 @@
 # Loader ETW Events
 These events collect information relating to loading and unloading assemblies and modules.  
-  
- All loader events are raised under the `LoaderKeyword` (0x8) keyword. The `DCStart` and the `DCEnd` events are raised under `LoaderRundownKeyword` (0x8) with `StartRundown`/`EndRundown` enabled. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
 
 This category consists of the following events:
 - [DomainModuleLoad_V1](#domainmoduleload_v1-event)

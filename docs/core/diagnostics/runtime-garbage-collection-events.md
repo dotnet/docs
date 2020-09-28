@@ -30,7 +30,6 @@ This category consists of the following events:
 - [GCFinalizersBegin_V1 Event](#gcfinalizersbegin_v1-event)
 - [GCFinalizersEnd_V1 Event](#gcfinalizersend_v1-event)
 ## GCStart_V2 Event
-The following table shows the keyword and level. For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|

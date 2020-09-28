@@ -16,7 +16,7 @@ All method events have a level of "Informational (4)". All method verbose events
 
 All method events are raised by the `JITKeyword` (0x10) keyword or the `NGenKeyword` (0x20) keyword under the runtime provider, or `JitRundownKeyword` (0x10) or `NGENRundownKeyword` (0x20) under the rundown provider.
 
-The following table shows the keyword and level. For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md). The V2 versions of these events include the ReJITID, the V1 versions do not.
+The V2 versions of these events include the ReJITID, the V1 versions do not.
 
 This category consists of the following events:
 

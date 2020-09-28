@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: pattern matching to return a value"
+title: "Tutorial: Build algorithms with pattern matching"
 description: This advanced tutorial demonstrates how to use pattern matching techniques to create functionality using data and algorithms that are created separately.
 ms.date: 03/13/2019
 ms.technology: csharp-whats-new

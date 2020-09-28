@@ -28,7 +28,7 @@ Tutorials related to C# 8.0 language features:
 
 - [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
 - [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/tutorials/generate-consume-asynchronous-stream.md)
-- [Tutorial: Using pattern matching features to extend data types](../../csharp/tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](../../csharp/tutorials/pattern-matching.md)
 
 Language enhancements were added to support the following API features detailed below:
 

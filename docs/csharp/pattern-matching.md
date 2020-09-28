@@ -265,4 +265,4 @@ storage concerns from the behavior concerns.
 
 ## See also
 
-- [Tutorial: Use pattern matching to conditionally return a value](tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](tutorials/pattern-matching.md)

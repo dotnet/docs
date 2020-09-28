@@ -5,7 +5,7 @@ ms.date: 03/13/2019
 ms.technology: csharp-whats-new
 ms.custom: contperfq1
 ---
-# Tutorial: Using pattern matching features to extend data types
+# Tutorial: Use pattern matching to build type-driven and data-driven algorithms.
 
 C# 7 introduced basic pattern matching features. Those features are extended in C# 8 with new expressions and patterns. You can write functionality that behaves as though you extended types that may be in other libraries. Another use for patterns is to create functionality your application requires that isn't a fundamental feature of the type being extended.
 

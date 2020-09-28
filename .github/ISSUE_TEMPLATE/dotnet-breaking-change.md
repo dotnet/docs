@@ -95,3 +95,4 @@ assignees: ''
 #### Issue metadata
 
 * Issue type: breaking-change
+* Issue type: doc-idea

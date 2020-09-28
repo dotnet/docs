@@ -33,7 +33,6 @@ This category consists of the following events:
 
 ## MethodLoad_V1 Event
 
-
 The following table shows the event information:
 
 |Event|Event ID|Description|
@@ -61,12 +60,10 @@ The following table shows the event information:
 |----------------|---------------|-----------------|
 |`MethodLoad_V2`|141|Raised when a method is just-in-time loaded (JIT-loaded) or an NGEN image is loaded. Dynamic and generic methods do not use this version for method loads. JIT helpers never use this version.|
 
-
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`JITKeyword` (0x10) runtime provider|Informational (4)|
 |`NGenKeyword` (0x20) runtime provider|Informational (4)|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -79,19 +76,16 @@ The following table shows the event information:
 |ReJITID|win:UInt64|ReJIT ID of the method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-
 ## MethodUnLoad_V1 Event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
 |`MethodUnLoad_V1`|142|Raised when a module is unloaded, or an application domain is destroyed. Dynamic methods never use this version for method unloads.|
 
-
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`JITKeyword` (0x10)|Informational (4)|
 |`NGenKeyword` (0x20)|Informational (4)|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -108,7 +102,6 @@ The following table shows the event information:
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
 |`MethodUnLoad_V2`|142|Raised when a module is unloaded, or an application domain is destroyed. Dynamic methods never use this version for method unloads.|
-
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -132,12 +125,10 @@ The following table shows the event information:
 |----------------|---------------|-----------------|
 |`R2RGetEntryPoint`|159|Raised when an R2R entry point lookup ends.|
 
-
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`JITKeyword` (0x10) |Informational (4)|
 |`NGenKeyword` (0x20) |Informational (4)|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -148,19 +139,16 @@ The following table shows the event information:
 |EntryPoint|win:UInt64|The pointer to the entry point of the R2R method|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-
 ## R2RGetEntryPointStart Event
 
 |Event|Event ID|Description|
 |----------------|---------------|-----------------|
 |`R2RGetEntryPointStart`|160|Raised when an R2R entry point lookup starts.|
 
-
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`JITKeyword` (0x10) |Informational (4)|
 |`NGenKeyword` (0x20) |Informational (4)|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -191,7 +179,6 @@ The following table shows the event information:
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-
 ## MethodLoadVerbose_V2 Event
 
 |Event|Event ID|Description|
@@ -217,7 +204,6 @@ The following table shows the event information:
 |ReJITID|win:UInt64|ReJIT ID of the method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-
 ## MethodUnLoadVerbose_V1 Event
 
 |Event|Event ID|Description|
@@ -241,7 +227,6 @@ The following table shows the event information:
 |MethodName|win:UnicodeString|Full class name associated with the method.|
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-
 
 ## MethodUnLoadVerbose_V2 Event
 
@@ -268,8 +253,6 @@ The following table shows the event information:
 |ReJITID|win:UInt64|ReJIT ID of the method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-nt16|Unique ID for the instance of CLR or CoreCLR.|
-
 ## MethodJittingStarted_V1 Event
 
 The following table shows the keyword and level:
@@ -294,18 +277,15 @@ The following table shows the keyword and level:
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-
 ## MethodJitInliningSucceeded Event
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`JITTracingKeyword` (0x1000) |Verbose (5)|
 
-
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
 |`MethodJitInliningSucceeded`|185|Raised when a method is successfully inlined by the JIT compiler.|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -325,7 +305,6 @@ The following table shows the keyword and level:
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
 |`JITTracingKeyword` (0x1000) |Verbose (5)|
-
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -371,7 +350,6 @@ The following table shows the keyword and level:
 |TailCallType|win:UInt32|The type of tail call.<br/><br/>0: Optimized tail call (epilog + jmp)<br/><br/>1: Recursive tail call (method tail calls itself)<br/><br/>2: Helper assisted tail call|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-
 ## MethodJitTailCallFailed Event
 
 |Keyword for raising the event|Level|
@@ -407,7 +385,6 @@ The following table shows the keyword and level:
 |----------------|---------------|-----------------|
 |`MethodILToNativeMap`|190|Maps the IL-to-native map event for JIT-compiled methods.|
 
-
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |MethodID|win:UInt64|Unique identifier of a method.|
@@ -417,4 +394,3 @@ The following table shows the keyword and level:
 |ILOffsets|win:UInt32|The IL offset.|
 |NativeOffsets|win:UInt32|The native code offset.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-

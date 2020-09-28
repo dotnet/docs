@@ -12,7 +12,6 @@ ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
 
 These events collect information pertaining to garbage collection. They help in diagnostics and debugging, including determining how many times garbage collection was performed, how much memory was freed during garbage collection, etc.
 
-
 This category consists of the following events:
 
 - [GCStart_V2 Event](#gcstart_v2-event)
@@ -29,6 +28,7 @@ This category consists of the following events:
 - [GCTerminateConcurrentThread_V1 Event](#gcterminateconcurrentthread_v1-event)
 - [GCFinalizersBegin_V1 Event](#gcfinalizersbegin_v1-event)
 - [GCFinalizersEnd_V1 Event](#gcfinalizersend_v1-event)
+
 ## GCStart_V2 Event
 
 |Keyword for raising the event|Level|
@@ -72,7 +72,6 @@ The following table shows the event data:
 |Count|win:UInt32|The *n*th garbage collection.|
 |Depth|win:UInt32|The generation that was collected.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-
 
 ## GCHeapStats_V2 Event
 
@@ -155,7 +154,6 @@ The following table shows the event data:
 |Address|win:UInt64|The address of the segment.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
-
 ## GCRestartEEBegin_V1 Event
 
 The following table shows the keyword and level:
@@ -172,7 +170,6 @@ The following table shows the event information:
 
 This event does not have any event data.
 
-
 ## GCRestartEEEnd_V1 Event
 
 The following table shows the keyword and level:
@@ -188,7 +185,6 @@ The following table shows the event information:
 |`GCRestartEEEnd_V1`|3|Resumption from common language runtime suspension has ended.|
 
 This event does not have any event data.
-
 
 ## GCSuspendEEEnd_V1 Event
 
@@ -219,7 +215,6 @@ The following table shows the event information:
 |Event|Event ID|Raised when|
 |-----------|--------------|-----------------|
 |`GCSuspendEEBegin_V1`|8|Start of suspension of the execution engine for garbage collection.|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -252,7 +247,6 @@ The following table shows the event data:
 |HeapIndex|win:UInt32|The heap where the object was allocated. This value is 0 (zero) when running with workstation garbage collection.|
 |Address|win:Pointer|The address of the last allocated object.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-
 
 ## GCCreateConcurrentThread_V1 Event
 
@@ -303,6 +297,7 @@ The following table shows the event information:
 |`GCFinalizersBegin_V1`|14|The start of running finalizers.|
 
 This event does not have any event data.
+
 ## GCFinalizersEnd_V1 Event
 
 The following table shows the keyword and level:

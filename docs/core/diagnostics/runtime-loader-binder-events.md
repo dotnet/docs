@@ -18,7 +18,6 @@ This category consists of the following events:
 - [AssemblyLoadFromResolveHandlerInvoked](#assemblyloadfromresolvehandlerinvoked-event)
 - [KnownPathProbed](#knownpathprobed-event)
 
-
 ## DomainModuleLoad_V1 Event
 
 |Keyword for raising the event|Event|Level|  
@@ -28,7 +27,6 @@ This category consists of the following events:
 |Event|Event ID|Description|  
 |-----------|--------------|-----------------|  
 |`DomainModuleLoad_V1`|151|Raised when a module is loaded for an application domain.|  
-
 
 ## ModuleLoad_V2 Event
 
@@ -65,31 +63,32 @@ This category consists of the following events:
 |Event|Event ID|Description|  
 |-----------|--------------|-----------------|  
 |`ModuleUnload_V2`|153|Raised when a module is unloaded during the lifetime of a process.| 
-|Field name|Data type|Description|  
-|----------------|---------------|-----------------|  
-|ModuleID|win:UInt64|Unique ID for the module.|  
-|AssemblyID|win:UInt64|ID of the assembly in which this module resides.|  
-|ModuleFlags|win:UInt32|0x1: Domain neutral module.<br /><br /> 0x2: Module has a native image.<br /><br /> 0x4: Dynamic module.<br /><br /> 0x8: Manifest module.|  
-|Reserved1|win:UInt32|Reserved field.|  
-|ModuleILPath|win:UnicodeString|Path of the Microsoft intermediate language (MSIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|  
-|ModuleNativePath|win:UnicodeString|Path of the module native image, if present (null-terminated).|  
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module. (See Remarks.)|  
-|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module. (See Remarks.)|  
-|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name. (See Remarks.)|  
-|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable. (See Remarks.)|  
-|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable. (See Remarks.)|  
+|Field name|Data type|Description| 
+
+|----------------|---------------|-----------------| 
+|ModuleID|win:UInt64|Unique ID for the module.| 
+|AssemblyID|win:UInt64|ID of the assembly in which this module resides.| 
+|ModuleFlags|win:UInt32|0x1: Domain neutral module.<br /><br /> 0x2: Module has a native image.<br /><br /> 0x4: Dynamic module.<br /><br /> 0x8: Manifest module.| 
+|Reserved1|win:UInt32|Reserved field.| 
+|ModuleILPath|win:UnicodeString|Path of the Microsoft intermediate language (MSIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).| 
+|ModuleNativePath|win:UnicodeString|Path of the module native image, if present (null-terminated).| 
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.| 
+|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module. (See Remarks.)| 
+|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module. (See Remarks.)| 
+|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name. (See Remarks.)| 
+|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable. (See Remarks.)| 
+|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable. (See Remarks.)| 
 |NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name. (See Remarks.)|
 
 ## ModuleDCStart_V2 Event
 
 |Keyword for raising the event|Event|Level|  
-|-----------------------------------|-----------|-----------|  
-|`LoaderKeyword` (0x8)|`DomainModuleLoad_V1`|Informational (4)|  
+|-----------------------------------|-----------|-----------| 
+|`LoaderKeyword` (0x8)|`DomainModuleLoad_V1`|Informational (4)| 
 
-|Event|Event ID|Description|  
-|-----------|--------------|-----------------|  
-|`ModuleDCStart_V2`|153|Enumerates modules during a start rundown.|  
+|Event|Event ID|Description| 
+|-----------|--------------|-----------------| 
+|`ModuleDCStart_V2`|153|Enumerates modules during a start rundown.| 
 
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  

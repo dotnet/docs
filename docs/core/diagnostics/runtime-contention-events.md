@@ -1,6 +1,5 @@
 # Contention Events
 
-
 These runtime events capture information about managed thread contentions.
 
 This category consists of the following events:

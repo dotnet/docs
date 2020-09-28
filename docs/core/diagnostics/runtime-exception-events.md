@@ -32,7 +32,6 @@ This category consists of the following events:
 |ExceptionFlags|win:UInt16|0x01: HasInnerException.<br /><br /> 0x02: IsNestedException.<br /><br /> 0x04: IsRethrownException.<br /><br /> 0x08: IsCorruptedStateException (indicates that the process state is corrupt; see [Handling Corrupted State Exceptions](https://docs.microsoft.com/archive/msdn-magazine/2009/february/clr-inside-out-handling-corrupted-state-exceptions)).<br /><br /> 0x10: IsCLSCompliant (an exception that derives from <xref:System.Exception> is CLS-compliant; otherwise, it is not CLS-compliant).|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
 
-
 ## ExceptionCatchStart Event
 
 This event is emitted when a managed exception catch handler begins.
@@ -54,7 +53,6 @@ This event is emitted when a managed exception catch handler begins.
 |MethodName|win:String|Name of the method where exception occurred.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
 
-
 ## ExceptionCatchStop Event
 
 This event is emitted when a managed exception catch handler ends.
@@ -68,7 +66,6 @@ This event is emitted when a managed exception catch handler ends.
 |Event|Event ID|Raised when|  
 |-----------|--------------|-----------------|  
 |`ExceptionCatchStop`|251|A managed exception catch handler is done.|
-
 
 ## ExceptionFinallyStart Event
 
@@ -90,7 +87,6 @@ This event is emitted when a managed exception finally handler begins.
 |MethodID|win:Pointer|Pointer to the method descriptor on the method where exception occurred.|
 |MethodName|win:String|Name of the method where exception occurred.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-
 
 ## ExceptionFinallyStop Event
 
@@ -127,7 +123,6 @@ This event is emitted when a managed exception filtering begins.
 |MethodName|win:String|Name of the method where exception occurred.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
 
-
 ## ExceptionFilterStop Event
 
 This event is emitted when a managed exception filtering ends.
@@ -155,4 +150,3 @@ This event is emitted when the runtime is done handling a managed exception that
 |Event|Event ID|Raised when|  
 |-----------|--------------|-----------------|  
 |`ExceptionThrownStop`|256|A managed exception filtering ends.|  
-

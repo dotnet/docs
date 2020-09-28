@@ -2,7 +2,6 @@
 
 These events collect information relating to loading types.
 
-
 ## TypeLoadStart Event
 
 |Keyword for raising the event|Event|Level|  
@@ -13,14 +12,12 @@ These events collect information relating to loading types.
 |-----------|--------------|-----------------|  
 |`TypeLoadStart`|73|Raised when a module is loaded for an application domain.|  
 
-
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
 |TypeLoadStartID|win:UInt32|ID for the type load operation.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
 
 ## TypeLoadStop Event
-
 
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|-----------|  
@@ -29,7 +26,6 @@ These events collect information relating to loading types.
 |Event|Event ID|Description|  
 |-----------|--------------|-----------------|  
 |`TypeLoadStop`|74|Raised when a module is loaded for an application domain.|  
-
 
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  

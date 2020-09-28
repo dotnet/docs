@@ -10,7 +10,6 @@ helpviewer_keywords:
 
 For runtime events in .NET Framework, please refer to the [CLR ETW Events document](../../framework/performance/clr-etw-events.md).
 
-
 ## In This Section
 
  [Garbage Collection Events](runtime-garbage-collection-events.md)
@@ -32,3 +31,4 @@ For runtime events in .NET Framework, please refer to the [CLR ETW Events docume
  These events collect information about worker and I/O threads.  
 
  [Type Events](runtime-type-events.md)
+ 

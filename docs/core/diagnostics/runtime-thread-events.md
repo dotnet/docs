@@ -14,7 +14,6 @@ These events collect information about worker and I/O threads.
 |-----------------------------------|-----------|-----------|  
 |`ThreadingKeyword` (0x10000)|Informational (4)|  
 
-
 |Event|Event ID|Description|  
 |-----------|--------------|-----------------|  
 |`WorkerThreadRetire`|151|Raised when a module is loaded for an application domain.|  
@@ -42,14 +41,13 @@ These events collect information about worker and I/O threads.
 |NumRetired|win:UInt64|Number of retired worker threads.|  
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
 
-
 ## IOThreadTerminate_V1 Event
  The following table shows the keyword and level. 
 
-|Keyword for raising the event|Level|  
-|-----------------------------------|-----------|  
-|`ThreadingKeyword` (0x10000)|Informational (4)|  
-  
+|Keyword for raising the event|Level| 
+|-----------------------------------|-----------| 
+|`ThreadingKeyword` (0x10000)|Informational (4)| 
+
  The following table shows the event information.  
   
 |Event|Event ID|Raised when|  
@@ -153,7 +151,6 @@ These events collect information about worker and I/O threads.
 |ActiveWorkerThreadCount|win:UInt32|Number of worker threads available to process work, including those that are already processing work.|  
 |RetiredWorkerThreadCount|win:UInt32|Number of worker threads that are not available to process work, but that are being held in reserve in case more threads are needed later.|  
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-
 
 ## ThreadPoolWorkerThreadRetirementStart Event
 

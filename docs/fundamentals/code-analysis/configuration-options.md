@@ -7,7 +7,7 @@ no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
 
-Code analysis rules have various configuration options. These options are specified as key-value pairs in a configuration file. For example,
+Code analysis rules have various configuration options. These options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md). For example,
 
 ```ini
 <option key> = <option value>
@@ -21,23 +21,11 @@ You can also configure additional options to customize rule behavior:
 - Code style rules have [custom code style options](/visualstudio/ide/editorconfig-code-style-settings-reference).
 - Third party analyzer rules can define their own configuration options, with custom key names and value formats.
 
-You specify configuration options in an [EditorConfig file](/visualstudio/ide/create-portable-custom-editor-options). You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
-
-The syntax for configuring a specific rule's severity in an *.editorconfig* file is as follows:
+The syntax for configuring a specific rule's severity in an [analyzer configuration file](configuration-files.md) is as follows:
 
 ```ini
 dotnet_diagnostic.<rule ID>.severity = <severity>
 ```
-
-The following example demonstrates setting the severity for rule `CA1822` to `error` for C# and Visual Basic files.
-
-```ini
-[*.{cs,vb}]
-dotnet_diagnostic.CA1822.severity = error
-```
-
-> [!TIP]
-> Visual Studio provides an *.editorconfig* item template that makes is easy to add one of these files to your project. For more information, see [Add an EditorConfig file to a project](/visualstudio/ide/create-portable-custom-editor-options#add-an-editorconfig-file-to-a-project).
 
 ## General options
 

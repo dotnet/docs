@@ -342,7 +342,7 @@ The following table shows the keyword and level:
 |InlineeNamespace|win:UnicodeString|The namespace of inlinee ("child") method.|
 |InlineeName|win:UnicodeString|Name of the inlinee ("child") method.|
 |InlineeNameSignature|win:UnicodeString|Signature of the inlinee ("child") method (comma-separated list of type names).|
-|FailAlways|win:Boolean||Whether the method is marked as not inlinable.|
+|FailAlways|win:Boolean|Whether the method is marked as not inlinable.|
 |FailReason|win:UnicodeString|Reason inlining failed.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
@@ -367,7 +367,7 @@ The following table shows the keyword and level:
 |CalleeNamespace|win:UnicodeString|Namespace of the callee method.|
 |CalleeName|win:UnicodeString|Name of the callee method.|
 |CalleeNameSignature|win:UnicodeString|Signature of the callee method (Comma-separated list of type names).|
-|TailPrefix|win:Boolean||
+|TailPrefix|win:Boolean|Whether it is a tail prefix instruction.|
 |TailCallType|win:UInt32|The type of tail call.<br/><br/>0: Optimized tail call (epilog + jmp)<br/><br/>1: Recursive tail call (method tail calls itself)<br/><br/>2: Helper assisted tail call|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
@@ -393,7 +393,7 @@ The following table shows the keyword and level:
 |CalleeNamespace|win:UnicodeString|Namespace of the callee method.|
 |CalleeName|win:UnicodeString|Name of the callee method.|
 |CalleeNameSignature|win:UnicodeString|Signature of the callee method (Comma-separated list of type names).|
-|TailPrefix|win:Boolean||
+|TailPrefix|win:Boolean|Whether it is a tail prefix instruction.|
 |FailReason|win:UnicodeString|Reason tail call failed.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 

@@ -5,7 +5,7 @@ ms.date: "09/27/2020"
 helpviewer_keywords:
   - "GC events"
   - "garbage collection events [.NET Core]"
-  - "ETW, garbage collection events (CoreCLR)"
+  - "ETW, EventPipe, LTTng garbage collection events (CoreCLR)"
 ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
 ---
 # Garbage Collection Events

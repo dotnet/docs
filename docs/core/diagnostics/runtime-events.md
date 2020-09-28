@@ -31,4 +31,3 @@ For runtime events in .NET Framework, please refer to the [CLR ETW Events docume
  These events collect information about worker and I/O threads.  
 
  [Type Events](runtime-type-events.md)
- 

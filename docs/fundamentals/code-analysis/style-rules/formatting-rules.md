@@ -1,5 +1,6 @@
 ---
 title: Code style formatting rules
+description: Learn about the code style rules for formatting indentations, spaces, and new lines.
 ms.date: 09/25/2020
 ms.topic: reference
 author: gewarren
@@ -14,20 +15,20 @@ helpviewer_keywords:
 ---
 # Formatting rules
 
-Formatting rules affect how the indentation, spaces and new lines are aligned around .NET programming language constructs. They fall into the below categories:
+Formatting rules affect how indentation, spaces, and new lines are aligned around .NET programming language constructs. The rules fall into the following categories:
 
 - [.NET formatting rules](#net-formatting-rules): Rules that apply to both C# and Visual Basic. The EditorConfig option names for these rules start with `dotnet_` prefix.
 - [C# formatting rules](#c-formatting-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_` prefix.
 
 ## Rule ID: "IDE0055" (Fix formatting)
 
-All formatting options have rule ID `IDE0055` and title `Fix formatting`. Severity of formatting violations can be configured in an EditorConfig file with the following option:
+All formatting options have rule ID `IDE0055` and title `Fix formatting`. Set the severity of a formatting violation in an EditorConfig file using the following configuration line.
 
 ```ini
 dotnet_diagnostic.IDE0055.severity = <severity value>
 ```
 
-The value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
+The severity value must be `warning` or `error` to be [enforced on build](../overview.md#code-style-analysis). For all possible severity values, see [severity level](../configuration-options.md#severity-level).
 
 ## Option format
 

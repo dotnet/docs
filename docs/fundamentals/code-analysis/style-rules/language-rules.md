@@ -1,5 +1,6 @@
 ---
 title: Code style language rules
+description: Learn about the different code style rules for using C# and Visual Basic language constructs.
 ms.date: 09/25/2020
 ms.topic: reference
 author: gewarren
@@ -14,7 +15,7 @@ helpviewer_keywords:
 ---
 # Language rules
 
-Code style language rules affect how various constructs of .NET programming languages are used, for example, modifiers and parentheses. They fall into the below categories:
+Code style language rules affect how various constructs of .NET programming languages, for example, modifiers and parentheses, are used. The rules fall into the following categories:
 
 - [.NET style rules](#net-style-rules): Rules that apply to both C# and Visual Basic. The EditorConfig option names for these rules start with `dotnet_style_` prefix.
 - [C# style rules](#c-style-rules): Rules that are specific to C# language only. The EditorConfig option names for these rules start with `csharp_style_` prefix.
@@ -38,7 +39,7 @@ Options for language rules can be specified in an EditorConfig file with the fol
 
 > [!TIP]
 >
-> Starting in Visual Studio 2019 version 16.3, you can configure code style rules from the [Quick Actions](/visualstudio/ide/quick-actions.md) light bulb menu after a style violation occurs. For more information, see [Automatically configure code styles in Visual Studio](/visualstudio/ide/editorconfig-language-conventions#automatically-configure-code-styles-in-visual-studio)
+> Starting in Visual Studio 2019 version 16.3, you can configure code style rules from the [Quick Actions](/visualstudio/ide/quick-actions) light bulb menu after a style violation occurs. For more information, see [Automatically configure code styles in Visual Studio](/visualstudio/ide/editorconfig-language-conventions#automatically-configure-code-styles-in-visual-studio).
 
 ## .NET style rules
 

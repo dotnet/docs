@@ -1,5 +1,6 @@
 ---
 title: Code style naming rules
+description: Learn about the .NET code style rules for naming code elements.
 ms.date: 09/25/2020
 ms.topic: reference
 author: gewarren
@@ -14,7 +15,7 @@ helpviewer_keywords:
 ---
 # Naming rules
 
-Naming rules concern the naming of .NET programming language code elements such as classes, properties, and methods. For example, you can specify that public members must be capitalized or that private fields must begin with `_`.
+Naming rules concern the naming of .NET programming language code elements, such as classes, properties, and methods. For example, you can specify that public members must be capitalized or that private fields must begin with `_`.
 
 For each naming rule, you must specify the symbols it applies to, a naming style, and a severity for enforcing the convention, using the properties described below. The order of the properties is not important.
 

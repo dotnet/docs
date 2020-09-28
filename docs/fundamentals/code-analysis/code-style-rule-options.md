@@ -8,15 +8,15 @@ ms.author: gewarren
 ---
 # Code style rule options
 
-You can define and maintain consistent *code style* in your codebase by defining .NET code style rule options in an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options.md) file. These rules are respected by various development IDEs, such as Visual Studio, during edit time. These rules can also be [enforced at build time](overview.md#code-style-analysis) for .NET projects. You can enable or disable individual rules and configure the degree to which you want each rule enforced, via a severity level.
+You can define and maintain consistent *code style* in your codebase by defining .NET code style rule options in an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options.md) file. These rules are surfaced by various development IDEs, such as Visual Studio, as you edit your code. For .NET projects, these rules can also be [enforced at build time](overview.md#code-style-analysis). You can enable or disable individual rules and configure the degree to which you want each rule enforced, via a severity level.
 
 > [!TIP]
 >
 > - When you define code style options in an EditorConfig file, you're configuring how you want the [code style analyzers](overview.md#code-style-analysis) to analyze your code. The EditorConfig file is the configuration file for these analyzers.
 >
-> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup.md) dialog. These are per-user options, which are only respected while editing in Visual Studio. These options are not respected at build time or by other development IDEs. They are also not respected for other users. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from EditorConfig file take precedence.
+> - Code style options can also be set in Visual Studio in the [Text editor options](/visualstudio/ide/code-styles-and-code-cleanup.md) dialog. These are per-user options that are only respected while editing in Visual Studio. These options are not respected at build time or by other IDEs. Additionally, if the project or solution opened inside Visual Studio has an EditorConfig file, then options from the EditorConfig file take precedence.
 
-Code style rules are divided into following sub-categories:
+Code style rules are divided into following subcategories:
 
 - [Language rules](style-rules/language-rules.md)
 
@@ -24,14 +24,14 @@ Code style rules are divided into following sub-categories:
 
 - [Naming rules](style-rules/naming-rules.md)
 
-Each of these sub-categories defines it's own syntax for specifying options. For more information about these rules and the corresponding options, see [Code style rule reference](style-rules/index.md).
+Each of these subcategories defines its own syntax for specifying options. For more information about these rules and the corresponding options, see [Code style rule reference](style-rules/index.md).
 
 ## Example EditorConfig file
 
 To help you get started, here is an example *.editorconfig* file with the default options.
 
 > [!TIP]
-> In Visual Studio, you can generate this file and save it to a project at **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**. Then, click the **Generate .editorconfig file from settings** button. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup.md).
+> In Visual Studio, you can generate this file and save it to a project at **Tools** > **Options** > **Text Editor** > [**C#** or  **Basic**] > **Code Style** > **General**. Then, click the **Generate .editorconfig file from settings** button. For more information, see [Code style preferences](/visualstudio/ide/code-styles-and-code-cleanup).
 
 ```ini
 # Remove the line below if you want to inherit .editorconfig settings from higher directories
@@ -247,7 +247,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 
 - [Code style analysis rule reference](style-rules/index.md)
 - [Enforce code style on build](overview.md#code-style-analysis)
-- [Quick Actions in Visual Studio](/visualstudio/ide/quick-actions.md)
-- [Create portable custom editor options in Visual Studio](/visualstudio/ide/create-portable-custom-editor-options.md)
+- [Quick Actions in Visual Studio](/visualstudio/ide/quick-actions)
+- [Create portable custom editor options in Visual Studio](/visualstudio/ide/create-portable-custom-editor-options)
 - [.NET Compiler Platform "Roslyn" .editorconfig file](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
 - [.NET Compiler Platform Runtime .editorconfig file](https://github.com/dotnet/runtime/blob/master/.editorconfig)

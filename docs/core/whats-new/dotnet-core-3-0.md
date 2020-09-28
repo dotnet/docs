@@ -22,7 +22,13 @@ For more information about the release, see the [.NET Core 3.0 announcement](htt
 
 ## Language improvements C# 8.0
 
-C# 8.0 is also part of this release, which includes the [nullable reference types](../../csharp/tutorials/nullable-reference-types.md) feature, [async streams](../../csharp/tutorials/generate-consume-asynchronous-stream.md), and [more patterns](../../csharp/tutorials/pattern-matching.md). For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
+C# 8.0 is also part of this release, which includes the [nullable reference types](../../csharp/language-reference/builtin-types/nullable-reference-types.md) feature, async streams, and more patterns. For more information about C# 8.0 features, see [What's new in C# 8.0](../../csharp/whats-new/csharp-8.md).
+
+Tutorials related to C# 8.0 language features:
+
+- [Tutorial: Express your design intent more clearly with nullable and non-nullable reference types](../../csharp/tutorials/nullable-reference-types.md)
+- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../csharp/tutorials/generate-consume-asynchronous-stream.md)
+- [Tutorial: Using pattern matching features to extend data types](../../csharp/tutorials/pattern-matching.md)
 
 Language enhancements were added to support the following API features detailed below:
 

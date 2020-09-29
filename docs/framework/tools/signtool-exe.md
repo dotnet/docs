@@ -11,6 +11,10 @@ ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
  This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
+ 
+> [!Note]  
+> Beginning in Windows 10 SDK (10.0.19041.0), Windows 10 HLK (10.0.xxxx) and Windows 10 ADK (10.0.yyyy), the SignTool sign command requires the /fd `file digest algorithm` and the /td `timestamp digest algorithm` option to be specified during signing and timestamping, respectively. A warning (error code 0, initially) will be thrown if /fd is not specified during signing and if /td is not specified during timestamping. In later versions of SignTool, the warning will become an error. SHA256 is recommended and considered to be more secure than SHA1 by the industry.  
+
   
  At the command prompt, type the following:  
   
@@ -70,7 +74,7 @@ signtool [command] [options] [file_name | ...]
 |`/d`  *Desc*|Specifies a description of the signed content.|  
 |`/du`  *URL*|Specifies a Uniform Resource Locator (URL) for the expanded description of the signed content.|  
 |`/f`  *SignCertFile*|Specifies the signing certificate in a file. If the file is in Personal Information Exchange (PFX) format and protected by a password, use the `/p` option to specify the password. If the file does not contain private keys, use the `/csp` and `/kc` options to specify the CSP and private key container name.|  
-|`/fd`|Specifies the file digest algorithm to use for creating file signatures. The default is SHA1.|  
+|`/fd`|Specifies the file digest algorithm to use for creating file signatures. </br> **Note:** A warning is generated if <strong>/fd</strong> switch is not provided while signing. The default alg is SHA1 but SHA256 is recommended.|
 |`/i`  *IssuerName*|Specifies the name of the issuer of the signing certificate. This value can be a substring of the entire issuer name.|  
 |`/kc`  *PrivKeyContainerName*|Specifies the private key container name.|  
 |`/n`  *SubjectName*|Specifies the name of the subject of the signing certificate. This value can be a substring of the entire subject name.|  
@@ -85,7 +89,7 @@ signtool [command] [options] [file_name | ...]
 |`/sha1`  *Hash*|Specifies the SHA1 hash of the signing certificate. The SHA1 hash is commonly specified when multiple certificates satisfy the criteria specified by the remaining switches.|  
 |`/sm`|Specifies that a machine store, instead of a user store, is used.|  
 |`/t`  *URL*|Specifies the URL of the time stamp server. If this option (or `/tr`) is not present, the signed file will not be time stamped. A warning is generated if time stamping fails. This option cannot be used with the `/tr` option.|  
-|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server.|  
+|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** A warning is generated if <strong>/td</strong> switch is not provided while timestamping. The default alg is SHA1 but SHA256 is recommended. <br/> The <strong>/td</strong> switch must be declared after the <strong>/tr</strong> switch, not before. If the <strong>/td</strong> switch is declared before the <strong>/tr</strong> switch, the timestamp that is returned is from an SHA1 algorithm instead of the intended SHA256 algorithm. |
 |`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. If this option (or `/t`) is not present, the signed file will not be time stamped. A warning is generated if time stamping fails. This option cannot be used with the `/t` option.|  
 |`/u`  *Usage*|Specifies the enhanced key usage (EKU) that must be present in the signing certificate. The usage value can be specified by OID or string. The default usage is "Code Signing" (1.3.6.1.5.5.7.3.3).|  
 |`/uw`|Specifies usage of "Windows System Component Verification" (1.3.6.1.4.1.311.10.3.6).|  
@@ -100,7 +104,7 @@ signtool [command] [options] [file_name | ...]
 |----------------------|-----------------|  
 |`/p7`|Time stamps PKCS #7 files.|  
 |`/t`  *URL*|Specifies the URL of the time stamp server. The file being time stamped must have previously been signed. Either the `/t` or the `/tr` option is required.|  
-|`/td`  *alg*|Requests a digest algorithm used by the RFC 3161 time stamp server. `/td` is used with the `/tr` option.|  
+|`/td`  *alg*|Used with the `/tr` option to request a digest algorithm used by the RFC 3161 time stamp server. </br> **Note:** A warning is generated if <strong>/td</strong> switch is not provided while timestamping. The default alg is SHA1 but SHA256 is recommended. <br/> The <strong>/td</strong> switch must be declared after the <strong>/tr</strong> switch, not before. If the <strong>/td</strong> switch is declared before the <strong>/tr</strong> switch, the timestamp that is returned is from an SHA1 algorithm instead of the intended SHA256 algorithm. |
 |`/tp` *index*|Time stamps the signature at *index*.|  
 |`/tr`  *URL*|Specifies the URL of the RFC 3161 time stamp server. The file being time stamped must have previously been signed. Either the `/tr` or the `/t` option is required.|  
   
@@ -151,37 +155,37 @@ signtool catdb /v /u MyCatalogFileName.cat
  The following command signs a file automatically by using the best certificate.  
   
 ```console  
-signtool sign /a MyFile.exe  
+signtool sign /a MyFile.exe /fd SHA256
 ```  
   
  The following command digitally signs a file by using a certificate stored in a password-protected PFX file.  
   
 ```console  
-signtool sign /f MyCert.pfx /p MyPassword MyFile.exe  
+signtool sign /f MyCert.pfx /p MyPassword MyFile.exe /fd SHA256
 ```  
   
  The following command digitally signs and time-stamps a file. The certificate used to sign the file is stored in a PFX file.  
   
 ```console  
-signtool sign /f MyCert.pfx /t http://timestamp.digicert.com MyFile.exe  
+signtool sign /f MyCert.pfx /t http://timestamp.digicert.com MyFile.exe /fd SHA256
 ```  
   
  The following command signs a file by using a certificate located in the `My` store that has a subject name of `My Company Certificate`.  
   
 ```console  
-signtool sign /n "My Company Certificate" MyFile.exe  
+signtool sign /n "My Company Certificate" MyFile.exe /fd SHA256
 ```  
   
  The following command signs an ActiveX control and provides information that is displayed by Internet Explorer when the user is prompted to install the control.  
   
 ```console  
-Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html MyControl.exe  
+Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html MyControl.exe /fd SHA256
 ```  
   
  The following command time-stamps a file that has already been digitally signed.  
   
 ```console  
-signtool timestamp /t http://timestamp.digicert.com MyFile.exe  
+signtool timestamp /t http://timestamp.digicert.com MyFile.exe /td SHA256 
 ```  
   
  The following command verifies that a file has been signed.  

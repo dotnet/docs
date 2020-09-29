@@ -28,7 +28,7 @@ The `ILogger` implementation category name is typically the logging source. For 
 The preceding code:
 
 - Creates a logger instance per category name.
-- Checks `logLevel == _config.LogLevel` in `IsEnabled`, so each `logLevel` has a unique logger. Generally, loggers should also be enabled for all higher log levels:
+- Checks `logLevel == _config.LogLevel` in `IsEnabled`, so each `logLevel` has a unique logger. Loggers should also be enabled for all higher log levels:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLogger.cs" range="16-17":::
 

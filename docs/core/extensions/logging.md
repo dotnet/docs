@@ -126,21 +126,11 @@ The following algorithm is used for each provider when an `ILogger` is created f
 - Select all rules that match the provider or its alias. If no match is found, select all rules with an empty provider.
 - From the result of the preceding step, select rules with longest matching category prefix. If no match is found, select all rules that don't specify a category.
 - If multiple rules are selected, take the **last** one.
-- If no rules are selected, use `MinimumLevel`.
-
-## Logging output from dotnet run and Visual Studio
-
-Logs created with the [default logging providers](logging-providers.md) are displayed:
-
-- In Visual Studio
-  - In the Debug output window when debugging.
-- In the console window when the app is run with `dotnet run`.
-
-Logs that begin with "Microsoft" categories are from .NET code, and application code use the same logging API and providers.
+- If no rules are selected, use <xref:Microsoft.Extensions.Logging.LoggingBuilderExtensions.SetMinimumLevel(Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.LogLevel)?displayProperty=nameWithType> to specify the minimum logging level.
 
 ## Log category
 
-When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service might be `"Example.DefaultService"`.:
+When an `ILogger` object is created, a *category* is specified. That category is included with each log message created by that instance of `ILogger`. The category string is arbitrary, but the convention is to use the class name. For example, in an application with a service define like the following object, the category might be `"Example.DefaultService"`:
 
 ```csharp
 namespace Example
@@ -206,7 +196,7 @@ public void LogDetails()
 }
 ```
 
-`AppLogEvents.CustomId` is the event ID. `AppLogEvents` is a class that exposes various named identifier constants and is displayed in the [Log event ID](#log-event-id) section.
+`AppLogEvents.Details` is the event ID, and is implicitly represented by a constant <xref:System.Int32> value. `AppLogEvents` is a class that exposes various named identifier constants and is displayed in the [Log event ID](#log-event-id) section.
 
 The following code creates `Information` and `Warning` logs:
 
@@ -225,9 +215,9 @@ public async Task<T> GetAsync<T>(string id)
 }
 ```
 
-In the preceding code, the first `Log{LogLevel}` parameter,`AppLogEvents.GetItem`, is the [Log event ID](#log-event-id). The second parameter is a message template with placeholders for argument values provided by the remaining method parameters. The method parameters are explained in the [message template](#log-message-template) section later in this article.
+In the preceding code, the first `Log{LogLevel}` parameter,`AppLogEvents.Read`, is the [Log event ID](#log-event-id). The second parameter is a message template with placeholders for argument values provided by the remaining method parameters. The method parameters are explained in the [message template](#log-message-template) section later in this article.
 
-Call the appropriate `Log{LogLevel}` method to control how much log output is written to a particular storage medium. For example:
+Configure the the appropriate log level and call the correct `Log{LogLevel}` methods to control how much log output is written to a particular storage medium. For example:
 
 - In production:
   - Logging at the `Trace` or `Information` levels produces a high-volume of detailed log messages. To control costs and not exceed data storage limits, log `Trace` and `Information` level messages to a high-volume, low-cost data store. Consider limiting `Trace` and `Information` to specific categories.
@@ -244,7 +234,7 @@ The following JSON sets `Logging:Console:LogLevel:Microsoft:Information`:
 
 ## Log event ID
 
-Each log can specify an *event identifer*. An <xref:Microsoft.Extensions.Logging.EventId> The sample source code uses the `AppLogEvents` class to define event IDs:
+Each log can specify an *event identifer*, the <xref:Microsoft.Extensions.Logging.EventId> is a structure with an `Id` and optional `Name` readonly properties. The sample source code uses the `AppLogEvents` class to define event IDs:
 
 ```csharp
 internal static class AppLogEvents
@@ -508,7 +498,7 @@ public class Program
 
 ## See also
 
-- [Logging providers in .NET](logging-providers.md).
-- [Implement a custom logging provider in .NET](custom-logging-provider.md).
-- [High-performance logging in .NET](high-performance-logging.md).
-- Logging bugs should be created in the [github.com/dotnet/runtime/](https://github.com/dotnet/runtime/issues) repo.
+- [Logging providers in .NET](logging-providers.md)
+- [Implement a custom logging provider in .NET](custom-logging-provider.md)
+- [High-performance logging in .NET](high-performance-logging.md)
+- Logging bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo

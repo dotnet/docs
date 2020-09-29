@@ -9,19 +9,19 @@ no-loc: ["EditorConfig"]
 
 Code analysis rules have various [configuration options](configuration-options.md). These options are specified as key-value pairs in an analyzer configuration file. Following configuration files can be used to specify these options:
 
-- [EditorConfig](#editorconfig) file: File or folder specific configuration options
+- [EditorConfig](#editorconfig) file: File or folder based configuration options
 - [Global AnalyzerConfig](#global-analyzerconfig) file: Project level configuration options
 
 ## EditorConfig
 
-You specify analyzer configuration options in an [EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) file. EditorConfig files are used to provide **options that apply to specific source files or folders**. Options are placed under section headers to identify the applicable files and folders. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
+[EditorConfig](/visualstudio/ide/create-portable-custom-editor-options) files are used to provide **options that apply to specific source files or folders**. Options are placed under section headers to identify the applicable files and folders. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
 
 ```ini
 [*.cs]
 <%option_name%> = <%option_value%>
 ```
 
-In the above example, `[*.cs]` is an editorconfig section header to select all C# files with `.cs` file extension within the current folder, including sub-folders. The subsequent entry `<%option_name%> = <%option_value%>` is an analyzer option that will be applied to all these C# files.
+In the above example, `[*.cs]` is an editorconfig section header to select all C# files with `.cs` file extension within the current folder, including subfolders. The subsequent entry `<%option_name%> = <%option_value%>` is an analyzer option that will be applied to all these C# files.
 
 You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. These options will be applied when executing the analysis at build time as well as inside Visual Studio.
 

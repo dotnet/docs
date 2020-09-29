@@ -10,7 +10,7 @@ no-loc: ["EditorConfig"]
 Code analysis rules have various [configuration options](configuration-options.md). These options are specified as key-value pairs in an analyzer configuration file. Following configuration files can be used to specify these options:
 
 - [EditorConfig](#editorconfig) file: File or folder specific configuration options
-- [Global AnalyzerConfig](#globalanalyzerconfig) file: Project level configuration options
+- [Global AnalyzerConfig](#global-analyzerconfig) file: Project level configuration options
 
 ## EditorConfig
 
@@ -114,6 +114,6 @@ Both EditorConfig files and Global AnalyzerConfig files specify key-value pair o
 
 > [!NOTE]
 >
-> - Diagnostic severity options specified from the compiler command line (`/nowarn` or `/warnaserror`) always override the diagnostic [severity configuration](configuration-options#severity-level) options specified in EditorConfig and Global AnalyzerConfig files.
+> - Diagnostic severity options specified from the compiler command line (`/nowarn` or `/warnaserror`) always override the diagnostic [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and Global AnalyzerConfig files.
 >
 > - Diagnostic severity options can also be specified with a [Ruleset](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) file. However, rulesets files are deprecated in favor of EditorConfig and Global AnalyzerConfig files. It is recommended that you [convert a ruleset file to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers?view=vs-2019#convert-an-existing-ruleset-file-to-editorconfig-file). Precedence for conflicting diagnostic severity entries from a ruleset file and EditorConfig/Global AnalyzerConfig files is _undefined_.

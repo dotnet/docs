@@ -147,3 +147,13 @@ install_name_tool -change "libicuuc.67.dylib" "@loader_path/libicuuc.67.dylib" /
 ```
 LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-current_version -Wl,$(SO_TARGET_VERSION) -install_name @loader_path/$(notdir $(MIDDLE_SO_TARGET))
 ```
+
+## ICU on WebAssembly
+In order to provide globalization compatibility with desktop profiles we aslo ship a special version of ICU for WebAssembly workloads. To make it as small as possible we had to introduce a couple of limitations, it allowed us to reduce ICU data file size from 24Mb down to 1.4Mb (~0.3Mb if compressed with Brotli). The following APIs are either not supported or supported with limitations:
+- `CultureInfo.EnglishName`
+- `CultureInfo.NativeName`
+- `DateTimeFormatInfo.NativeCalendarName`
+- `RegionInfo.NativeName`
+- `String.Normalize` and `String.IsNormalized` don't support rarely used `NormalizationForm.FormKC` and `NormalizationForm.FormKD` forms.
+- `RegionInfo.CurrencyNativeName` returns the same value as `CurrencyEnglishName`.
+- List of supported locales can be found [here](https://github.com/dotnet/icu/blob/0f49268ddfd3331ca090f1c51d2baa2f75f6c6c0/icu-filters/optimal.json#L6-L54)

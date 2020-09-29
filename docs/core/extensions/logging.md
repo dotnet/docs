@@ -344,7 +344,6 @@ public class Program
 }
 ```
 
-
 ### Filter function
 
 A filter function is invoked for all providers and categories that don't have rules assigned to them by configuration or code:

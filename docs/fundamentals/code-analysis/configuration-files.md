@@ -103,7 +103,7 @@ dotnet_style_qualification_for_method = true:warning
 dotnet_diagnostic.CA1000.severity = warning
 ```
 
-## Precedence rules for entries in Editorconfig and Global AnalyzerConfig
+## Precedence rules for entries in Editorconfig and Global AnalyzerConfig files
 
 Both EditorConfig files and global AnalyzerConfig files specify a key-value pair for each option. Conflicts arise when there are multiple entries with the same key but different values. The following precedence rules are used for resolving these conflicts:
 

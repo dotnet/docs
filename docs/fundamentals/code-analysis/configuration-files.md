@@ -7,10 +7,10 @@ no-loc: ["EditorConfig"]
 ---
 # Configuration files for code analysis rules
 
-Code analysis rules have various [configuration options](configuration-options.md). These options are specified as key-value pairs in an analyzer configuration file. Following configuration files can be used to specify these options:
+Code analysis rules have various [configuration options](configuration-options.md). These options are specified as key-value pairs in an analyzer configuration file. The following configuration files can be used to specify these options:
 
-- [EditorConfig](#editorconfig) file: File or folder based configuration options
-- [Global AnalyzerConfig](#global-analyzerconfig) file: Project level configuration options
+- [EditorConfig](#editorconfig) file: File-based or folder-based configuration options.
+- [Global AnalyzerConfig](#global-analyzerconfig) file: Project-level configuration options.
 
 ## EditorConfig
 
@@ -18,7 +18,7 @@ Code analysis rules have various [configuration options](configuration-options.m
 
 ```ini
 [*.cs]
-<%option_name%> = <%option_value%>
+<option_name> = <option_value>
 ```
 
 In the above example, `[*.cs]` is an editorconfig section header to select all C# files with `.cs` file extension within the current folder, including subfolders. The subsequent entry `<%option_name%> = <%option_value%>` is an analyzer option that will be applied to all these C# files.
@@ -60,9 +60,9 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Global AnalyzerConfig
 
-Starting with .NET5 SDK (which is supported starting with Visual Studio 2019 16.8), you can also configure analyzer options with Global AnalyzerConfig files. These files are used to provide **options that apply to all the source files in the project**, regardless of the actual file names or file paths of these source files.
+Starting with the .NET 5.0 SDK (which is supported starting with Visual Studio 2019 version 16.8), you can also configure analyzer options with global AnalyzerConfig files. These files are used to provide **options that apply to all the source files in a project**, regardless of their file names or file paths.
 
-Unlike [EditorConfig](#editorconfig) files, global config files are not designed to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project level analyzer configuration options.
+Unlike [EditorConfig](#editorconfig) files, global config files can't be used to configure editor style settings for IDEs, such as indent size or whether to trim trailing whitespace. Instead, they are designed purely for specifying project-level analyzer configuration options.
 
 ### Naming
 
@@ -76,15 +76,15 @@ Unlike EditorConfig files, which must be named `.editorconfig`, global config fi
 
 ### Format
 
-Unlike EditorConfig files, which must have section headers, such as `[*.cs]`, to identify the applicable files and folders, Global AnalyzerConfig do not have section headers. Instead, they require a top level entry of the form `is_global = true`. This indicates that all the options in the file apply globally to the entire project. For example,
+Unlike EditorConfig files, which must have section headers, such as `[*.cs]`, to identify the applicable files and folders, global AnalyzerConfig files don't have section headers. Instead, they require a top level entry of the form `is_global = true`. This indicates that all the options in the file apply globally to the entire project. For example:
 
 ```ini
 is_global = true
-<%option_name%> = <%option_value%>
+<option_name> = <option_value>
 ```
 
 ### Example
-Following is an example Global AnalyzerConfig file to configure options and rule severity at project level:
+Following is an example Global AnalyzerConfig file to configure options and rule severity at the project level:
 
 ```ini
 # Top level entry required to mark this as a Global AnalyzerConfig file
@@ -105,19 +105,19 @@ dotnet_diagnostic.CA1000.severity = warning
 
 ## Precedence rules for entries in Editorconfig and Global AnalyzerConfig
 
-Both EditorConfig files and Global AnalyzerConfig files specify key-value pair of options. Conflicts arise when there are multiple entries with the same key, but different value. Following precedence rules are used for resolving these conflicts:
+Both EditorConfig files and global AnalyzerConfig files specify a key-value pair for each option. Conflicts arise when there are multiple entries with the same key but different values. The following precedence rules are used for resolving these conflicts:
 
-1. Conflicting entries in same configuration file: Entry which appears later in the file wins. This is true for conflicting entries within a single EditorConfig file and also within a single Global AnalyzerConfig file.
-2. Conflicting entries in two EditorConfig files: Entry in the EditorConfig file which is deeper in the file system, and hence has a longer file path, wins.
-3. Conflicting entries in two Global AnalyzerConfig files: A compiler warning is reported and both entries are ignored.
-4. Conflicting entries in an EditorConfig file and a Global AnalyzerConfig file: Entry in the EditorConfig file wins.
+1. Conflicting entries in same configuration file: The entry that appears later in the file wins. This is true for conflicting entries within a single EditorConfig file and also within a single global AnalyzerConfig file.
+2. Conflicting entries in two EditorConfig files: The entry in the EditorConfig file that's deeper in the file system, and hence has a longer file path, wins.
+3. Conflicting entries in two global AnalyzerConfig files: A compiler warning is reported and both entries are ignored.
+4. Conflicting entries in an EditorConfig file and a Global AnalyzerConfig file: The entry in the EditorConfig file wins.
 
 > [!NOTE]
 >
 > - Diagnostic severity options specified from the compiler command line (`/nowarn` or `/warnaserror`) always override the diagnostic [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and Global AnalyzerConfig files.
 >
-> - Diagnostic severity options can also be specified with a [Ruleset](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) file. However, rulesets files are deprecated in favor of EditorConfig and Global AnalyzerConfig files. It is recommended that you [convert a ruleset file to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers#convert-an-existing-ruleset-file-to-editorconfig-file). Precedence for conflicting diagnostic severity entries from a ruleset file and EditorConfig/Global AnalyzerConfig files is _undefined_.
+> - Diagnostic severity options can also be specified with a [Ruleset](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) file. However, rulesets files are deprecated in favor of EditorConfig and global AnalyzerConfig files. It's recommended that you [convert a ruleset file to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers#convert-an-existing-ruleset-file-to-editorconfig-file). Precedence for conflicting diagnostic severity entries from a ruleset file and EditorConfig/Global AnalyzerConfig files is _undefined_.
 
 ## See also
 
-- [EditorConfig vs Global AnalyzerConfig design issue](https://github.com/dotnet/roslyn/issues/47707)
+- [EditorConfig vs global AnalyzerConfig design issue](https://github.com/dotnet/roslyn/issues/47707)

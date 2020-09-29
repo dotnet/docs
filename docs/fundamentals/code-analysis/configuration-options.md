@@ -7,7 +7,7 @@ no-loc: ["EditorConfig"]
 ---
 # Configuration options for code analysis
 
-Code analysis rules have various configuration options. These options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md). For example,
+Code analysis rules have various configuration options. These options are specified as key-value pairs in an [analyzer configuration file](configuration-files.md) using the syntax `<option key> = <option value>`.
 
 ```ini
 <option key> = <option value>

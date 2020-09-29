@@ -150,6 +150,7 @@ LD_SONAME = -Wl,-compatibility_version -Wl,$(SO_TARGET_VERSION_MAJOR) -Wl,-curre
 
 ## ICU on WebAssembly
 In order to provide globalization compatibility with desktop profiles we aslo ship a special version of ICU for WebAssembly workloads. To make it as small as possible we had to introduce a couple of limitations, it allowed us to reduce ICU data file size from 24Mb down to 1.4Mb (~0.3Mb if compressed with Brotli). The following APIs are either not supported or supported with limitations:
+
 - `CultureInfo.EnglishName`
 - `CultureInfo.NativeName`
 - `DateTimeFormatInfo.NativeCalendarName`

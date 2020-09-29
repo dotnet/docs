@@ -288,7 +288,7 @@ This category consists of the following events:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`AppDomainAssemblyResolveHandlerInvoked`|294|An [AppDomain.AssemblyResolve](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain.assemblyresolve) handler has been invoked.|
+|`AppDomainAssemblyResolveHandlerInvoked`|294|An <xref:System.AppDomain.AssemblyResolve?displayProperty=nameWithType> handler has been invoked.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|

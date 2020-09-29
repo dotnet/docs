@@ -57,7 +57,7 @@ For more information, see the [list of project repositories on GitHub.com](https
 
 ## Support
 
-.NET is supported by Microsoft on Windows, macOS, and Linux. It's updated for security and quality regularly, on the second Tuesday of each month.
+.NET is supported by Microsoft on Windows, macOS, and Linux. It's updated regularly for security and quality, on the second Tuesday of each month.
 
 .NET binary distributions from Microsoft are built and tested on Microsoft-maintained servers in Azure and follow Microsoft engineering and security practices.
 
@@ -115,7 +115,7 @@ The integrated development environments for .NET include:
 
 * [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/)
 
-  For developing .NET apps and games for iOS, Android, and web.
+  Runs on macOS only. For developing .NET apps and games for iOS, Android, and web.
 
 * [GitHub Codespaces](https://github.com/features/codespaces)
 
@@ -212,7 +212,7 @@ For more information, see [Common Language Runtime (CLR) overview](../standard/c
 
 Higher-level .NET languages, such as C#, compile down to a hardware-agnostic instruction set, which is called Intermediate Language (IL). When an app runs, the JIT compiler translates IL to machine code that the processor understands. JIT compilation happens on the same machine that the code is going to run on.
 
-Since JIT compilation occurs during execution of the application, compile time is part of the run time. Therefore, JIT compilers have to balance time spent optimizing code against the savings that the resulting code can produce. But a JIT compiler knows the actual hardware and can free developers from having to ship different implementations for different platforms.
+Since JIT compilation occurs during execution of the application, the compilation time is part of the run time. Therefore, JIT compilers have to balance time spent optimizing code against the savings that the resulting code can produce. But a JIT compiler knows the actual hardware and can free developers from having to ship different implementations for different platforms.
 
 The .NET JIT compiler can do *tiered compilation*, which means it can recompile individual methods at run time. This feature lets it compile quickly while still being able to produce a highly tuned version of the code for frequently used methods.
 
@@ -220,7 +220,7 @@ For more information, see [Managed execution process](../standard/managed-execut
 
 ### AOT compiler
 
-The default experience for most .NET workloads is the JIT-compiler, but .NET offers two forms of ahead-of-time (AOT) compilation:
+The default experience for most .NET workloads is the JIT compiler, but .NET offers two forms of ahead-of-time (AOT) compilation:
 
 * Some scenarios require 100% AOT compilation. An example is [iOS](/xamarin/ios/).
 * In other scenarios, most of an app's code is AOT-compiled but some is JIT-compiled. Some code patterns aren't friendly to AOT (like generics). An example of this form of AOT compilation is the [ready-to-run](whats-new/dotnet-core-3-0.md#readytorun-images) publish option. This form of AOT offers the benefits of AOT without its drawbacks.
@@ -290,7 +290,7 @@ For more information, see the [dotnet/extensions repository on GitHub](https://g
 
 ### Entity Framework Core
 
-Entity Framework (EF) Core is an [open source](https://github.com/aspnet/EntityFrameworkCore) and cross platform data access technology that can serve as an ORM. EF Core lets you work with a database by referring to .NET objects in code. It reduces the amount of data-access code you would otherwise need to write and test. EF Core supports many database engines.
+Entity Framework (EF) Core is an [open source](https://github.com/aspnet/EntityFrameworkCore) and cross-platform data-access technology that can serve as an ORM. EF Core lets you work with a database by referring to .NET objects in code. It reduces the amount of data-access code you would otherwise need to write and test. EF Core supports many database engines.
 
 For more information, see [Entity Framework Core](/ef/core/) and [Database Providers](/ef/core/providers/).
 
@@ -308,7 +308,7 @@ To understand .NET documentation, it can help to know how the usage of some term
 
 In 2002, Microsoft released [.NET Framework](../framework/get-started/overview.md), a development platform for creating Windows apps. Today .NET Framework is at version 4.8 and is still [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework).
 
-In 2014, Microsoft began writing a cross platform open source successor to .NET Framework. This new implementation of .NET was named .NET Core until it reached version 3.1. The next version after .NET Core 3.1 is .NET 5, currently in preview. Version number 4 was skipped to avoid confusion between this implementation of .NET and .NET Framework 4.8. The name "Core" was dropped to make clear that this is now the main implementation of .NET.
+In 2014, Microsoft began writing a cross-platform, open-source successor to .NET Framework. This new implementation of .NET was named .NET Core until it reached version 3.1. The next version after .NET Core 3.1 is .NET 5.0, which will be released in November 2020. Version number 4 was skipped to avoid confusion between this implementation of .NET and .NET Framework 4.8. The name "Core" was dropped to make clear that this is now the main implementation of .NET.
 
 This article is about .NET 5, but much of the documentation for .NET 5 still has references to ".NET Core" or ".NET Framework". In addition, "Core" remains in the names [ASP.NET Core](/aspnet/core/) and [Entity Framework Core](/ef/core/).
 
@@ -354,13 +354,13 @@ The following sections explain some capabilities of .NET that are useful in adva
 
 Every operating system includes an application programming interface (API) that provides system services. .NET provides several ways to call those APIs.
 
-The main way to do native interoperability is via "platform invoke" or P/Invoke for short. P/Invoke is supported across Linux and Windows platforms. A Windows-only way of doing native interoperability is known as "COM interop," which is used to work with [COM components](/cpp/atl/introduction-to-com) in managed code. It's built on top of the P/Invoke infrastructure, but it works in subtly different ways.
+The main way to interoperate with native APIs is via "platform invoke" or P/Invoke for short. P/Invoke is supported across Linux and Windows platforms. A Windows-only way of interoperating is known as "COM interop," which works with [COM components](/cpp/atl/introduction-to-com) in managed code. It's built on top of the P/Invoke infrastructure, but it works in subtly different ways.
 
 For more information, see [Native interoperability](../standard/native-interop/index.md).
 
 ### Unsafe code
 
-Depending on language support, the CLR lets you access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it's necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible and test that code thoroughly.
+Depending on language support, the CLR lets you access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it's necessary to interoperate with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible and test that code thoroughly.
 
 For more information, see [Unsafe code and pointers](../csharp/programming-guide/unsafe-code-pointers/index.md).
 

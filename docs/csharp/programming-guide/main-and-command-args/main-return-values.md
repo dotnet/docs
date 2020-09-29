@@ -31,7 +31,7 @@ When a program is executed in Windows, any value returned from the `Main` functi
 
 You can build the application using the [dotnet CLI](../../../core/tools/dotnet.md) `dotnet build` command.
 
-Next, create a PowerShell script to run the application and display the result. Paste the following code into a text file and save it as `test.ps1` in the folder that contains the project. Run the PowerShell script by typing `test.ps1` at the powershell prompt.
+Next, create a PowerShell script to run the application and display the result. Paste the following code into a text file and save it as `test.ps1` in the folder that contains the project. Run the PowerShell script by typing `test.ps1` at the PowerShell prompt.
 
 Because the code returns zero, the batch file will report success. However, if you change MainReturnValTest.cs to return a non-zero value and then recompile the program, subsequent execution of the PowerShell script will report failure.
 

@@ -6,9 +6,11 @@ namespace OOProgramming
 {
     class LineOfCreditAccount : BankAccount
     {
-        public LineOfCreditAccount(string name, decimal initialBalance) : base(name, initialBalance)
+        // <ConstructLineOfCredit>
+        public LineOfCreditAccount(string name, decimal initialBalance, decimal creditLimit) : base(name, initialBalance, -creditLimit)
         {
         }
+        // </ConstructLineOfCredit>
 
         // <ApplyMonthendInterest>
         public override void PerformMonthEndTransactions()
@@ -18,9 +20,15 @@ namespace OOProgramming
                 // Negate the balance to get a positive interest charge:
                 var interest = -Balance * 0.07m;
                 MakeWithdrawal(interest, DateTime.Now, "Charge monthly interest");
-
             }
         }
         // </ApplyMonthendInterest>
+
+        // <AddOverdraftFee>
+        protected override Transaction? CheckWithdrawalLimit(bool isOverdrawn) =>
+            isOverdrawn
+            ? new Transaction(-20, DateTime.Now, "Apply overdraft fee")
+            : default;
+        // </AddOverdraftFee>
     }
 }

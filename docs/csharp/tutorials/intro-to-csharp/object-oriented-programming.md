@@ -92,410 +92,92 @@ The constructor provides a default value for the `monthlyDeposit` value so calle
 
 The override applies the monthly deposit if it was set in the constructor.
 
-## Test the implementation
+Add the following code to the `Main` method to test these changes for the `GiftCardAccount` and the `InterestEarningAccount`:
 
-. it works, except for the line of credit.
-. Define the virtual methods (or change some to be virtual)
-. 
+:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" id="FirstTests":::
 
-Outline:
+Those work fine. Now, add a similar set of test code for the `LineOfCreditAccount`:
 
-1. Create hierarchy of interest earning account, line of credit, fixed loan.
-1. Define virtual and abstract methods
-1. Implement and run tests
+:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" id="TestLineOfCredit":::
 
-existing text follows to ensure we don't miss concepts.
+When you add the preceding code and run the program, you'll see something like the following error:
 
-## Classes and objects
-
-The terms *class* describes a *type*. The term*object* describe the *instances* of that type. So, the act of creating an object is called *instantiation*. Using the blueprint analogy, a class is a blueprint, and an object is a building made from that blueprint.
-
-To define a class:
-
-```csharp
-class SampleClass
-{
-}
+```console
+Unhandled exception. System.ArgumentOutOfRangeException: Amount of deposit must be positive (Parameter 'amount')
+   at OOProgramming.BankAccount.MakeDeposit(Decimal amount, DateTime date, String note) in BankAccount.cs:line 42
+   at OOProgramming.BankAccount..ctor(String name, Decimal initialBalance) in BankAccount.cs:line 31
+   at OOProgramming.LineOfCreditAccount..ctor(String name, Decimal initialBalance) in LineOfCreditAccount.cs:line 9
+   at OOProgramming.Program.Main(String[] args) in Program.cs:line 29
 ```
-
-C# also provides types called *structures* that are useful when you don't need support for inheritance or polymorphism. For more information, see [Choosing between class and struct](../../../standard/design-guidelines/choosing-between-class-and-struct.md).
-
-To define a structure:
-
-```csharp
-struct SampleStruct
-{
-}
-```
-
-For more information, see the articles on the [class](../../language-reference/keywords/class.md) and [struct](../../language-reference/builtin-types/struct.md) keywords.
-
-### Class members
-
-Each class can have different *class members* that include properties that describe class data, methods that define class behavior, and events that provide communication between different classes and objects.
-
-#### Properties and fields
-
-Fields and properties represent information that an object contains. Fields are like variables because they can be read or set directly, subject to applicable access modifiers.
-
-To define a field that can be accessed from within instances of the class:
-
-```csharp
-public class SampleClass
-{
-    string sampleField;
-}
-```
-
-Properties have `get` and `set` accessors, which provide more control on how values are set or returned.
-
-C# allows you either to create a private field for storing the property value or use auto-implemented properties that create this field automatically behind the scenes and provide the basic logic for the property procedures.
-
-To define an auto-implemented property:
-
-```csharp
-class SampleClass
-{
-    public int SampleProperty { get; set; }
-}
-```
-
-If you need to perform some additional operations for reading and writing the property value, define a field for storing the property value and provide the basic logic for storing and retrieving it:
-
-```csharp
-class SampleClass
-{
-    private int _sample;
-    public int Sample
-    {
-        // Return the value stored in a field.
-        get => _sample;
-        // Store the value in the field.
-        set =>  _sample = value;
-    }
-}
-```
-
-Most properties have methods or procedures to both set and get the property value. However, you can create read-only or write-only properties to restrict them from being modified or read. In C#, you can omit the `get` or `set` property method. However, auto-implemented properties cannot be write-only. Read-only auto-implemented properties can be set in constructors of the containing class.
-
-For more information, see:
-
-- [get](../../language-reference/keywords/get.md)
-- [set](../../language-reference/keywords/set.md)
-
-#### Methods
-
-A *method* is an action that an object can perform.
-
-To define a method of a class:
-
-```csharp
-class SampleClass
-{
-    public int SampleMethod(string sampleParam)
-    {
-        // Insert code here
-    }
-}
-```
-
-A class can have several implementations, or *overloads*, of the same method that differ in the number of parameters or parameter types.
-
-To overload a method:
-
-```csharp
-public int SampleMethod(string sampleParam) { }
-public int SampleMethod(int sampleParam) { }
-```
-
-In most cases you declare a method within a class definition. However, C# also supports *extension methods* that allow you to add methods to an existing class outside the actual definition of the class.
-
-For more information, see:
-
-- [Methods](../../programming-guide/classes-and-structs/methods.md)
-- [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md)
-
-#### Constructors
-
-Constructors are class methods that are executed automatically when an object of a given type is created. Constructors usually initialize the data members of the new object. A constructor can run only once when a class is created. Furthermore, the code in the constructor always runs before any other code in a class. However, you can create multiple constructor overloads in the same way as for any other method.
-
-To define a constructor for a class:
-
-```csharp
-public class SampleClass
-{
-    public SampleClass()
-    {
-        // Add code here
-    }
-}
-```
-
-For more information, see [Constructors](../../programming-guide/classes-and-structs/constructors.md).
-
-#### Finalizers
-
-A finalizer is used to destruct instances of classes. In .NET, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need finalizers to clean up any unmanaged resources that your application creates. There can be only one finalizer for a class.
-
-For more information about finalizers and garbage collection in .NET, see [Garbage Collection](../../../standard/garbage-collection/index.md).
-
-#### Events
-
-Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../../../standard/events/index.md).
-
-- To declare an event in a class, use the [event](../../language-reference/keywords/event.md) keyword.
-- To raise an event, invoke the event delegate.
-- To subscribe to an event, use the `+=` operator; to unsubscribe from an event, use the `-=` operator.
-
-#### Nested classes
-
-A class defined within another class is called *nested*. By default, the nested class is private.
-
-```csharp
-class Container
-{
-    class Nested
-    {
-        // Add code here.
-    }
-}
-```
-
-To create an instance of the nested class, use the name of the container class followed by the dot and then followed by the name of the nested class:
-
-```csharp
-Container.Nested nestedInstance = new Container.Nested()
-```
-
-### Access modifiers and access levels
-
-All classes and class members can specify what access level they provide to other classes by using *access modifiers*.
-
-The following access modifiers are available:
-
-| C# Modifier | Definition |
-|--|--|
-| [public](../../language-reference/keywords/public.md) | The type or member can be accessed by any other code in the same assembly or another assembly that references it. |
-| [private](../../language-reference/keywords/private.md) | The type or member can only be accessed by code in the same class. |
-| [protected](../../language-reference/keywords/protected.md) | The type or member can only be accessed by code in the same class or in a derived class. |
-| [internal](../../language-reference/keywords/internal.md) | The type or member can be accessed by any code in the same assembly, but not from another assembly. |
-| [protected internal](../../language-reference/keywords/protected-internal.md) | The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly. |
-| [private protected](../../language-reference/keywords/private-protected.md) | The type or member can be accessed by code in the same class or in a derived class within the base class assembly. |
-
-For more information, see [Access Modifiers](../../programming-guide/classes-and-structs/access-modifiers.md).
-
-### Instantiating classes
-
-To create an object, you need to instantiate a class, or create a class instance.
-
-```csharp
-SampleClass sampleObject = new SampleClass();
-```
-
-After instantiating a class, you can assign values to the instance's properties and fields and invoke class methods.
-
-```csharp
-// Set a property value.
-sampleObject.sampleProperty = "Sample String";
-// Call a method.
-sampleObject.SampleMethod();
-```
-
-To assign values to properties during the class instantiation process, use object initializers:
-
-```csharp
-// Set a property value.
-var sampleObject = new SampleClass
-{
-    FirstProperty = "A",
-    SecondProperty = "B"
-};
-```
-
-For more information, see:
-
-- [new Operator](../../language-reference/operators/new-operator.md)
-- [Object and Collection Initializers](../../programming-guide/classes-and-structs/object-and-collection-initializers.md)
-
-### Static Classes and Members
-
-A static member of the class is a property, procedure, or field that is shared by all instances of a class.
-
-To define a static member:
-
-```csharp
-static class SampleClass
-{
-    public static string SampleString = "Sample String";
-}
-```
-
-To access the static member, use the name of the class without creating an object of this class:
-
-```csharp
-Console.WriteLine(SampleClass.SampleString);
-```
-
-Static  classes in C# have static members only and cannot be instantiated. Static members also cannot access non-static  properties, fields or methods
-
-For more information, see: [static](../../language-reference/keywords/static.md).
-
-### Anonymous types
-
-Anonymous types enable you to create objects without writing a class definition for the data type. Instead, the compiler generates a class for you. The class has no usable name and contains the properties you specify in declaring the object.
-
-To create an instance of an anonymous type:
-
-```csharp
-// sampleObject is an instance of a simple anonymous type.
-var sampleObject = new
-{
-    FirstProperty = "A",
-    SecondProperty = "B"
-};
-```
-
-For more information, see: [Anonymous Types](../../programming-guide/classes-and-structs/anonymous-types.md).
-
-## Inheritance
-
-Inheritance enables you to create a new class that reuses, extends, and modifies the behavior that is defined in another class. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. However, all classes in C# implicitly inherit from the <xref:System.Object> class that supports .NET class hierarchy and provides low-level services to all classes.
 
 > [!NOTE]
-> C# doesn't support multiple inheritance. That is, you can specify only one base class for a derived class.
+> The actual output includes the full path to the folder with the project. The folder names were omitted for brevity. Also, depending on your code format, the line numbers may be slightly different.
 
-To inherit from a base class:
+This code fails because the `BankAccount` assumes that the initial balance must be greater than 0. Another assumption baked into the `BankAccount` class is that the balance cannot go negative. Instead, any withdrawal that overdraws the account is rejected. Both of those assumptions need to change. The line of credit account starts at 0, and generally will have a negative balance. Also, if a customer borrows too much money, they incur a fee. The transaction is accepted, it just costs more. The first rule can be implemented by adding an optional argument to the `BankAccount` constructor that specifies the minimum balance. The default is `0`. The second rule requires a mechanism that enables derived classes to modify the default algorithm. In a sense, the base class "asks" the derived type what should happen when there's an overdraft. The default behavior is to reject the transaction by throwing an exception.
+
+Let's start by adding a second constructor that includes an optional `minimumBalance` parameter. This new constructor performs all the actions performed by the existing constructor. In addition, it sets the minimum balance property. You could copy the body of the existing constructor. but that means two locations to change in the future. Instead, you can use *constructor chaining* to have one constructor call another. The following code shows the two constructors and the new additional field:
+
+ :::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" id="ConstructorModifications":::
+
+The preceding code shows two new techniques. First, the `minimumBalance` field is marked as `readonly`. That means the value cannot be changed after the object is constructed. Once a `BankAccount` is created, the `minimumBalance` cannot change. Second, the constructor that takes two parameters uses `: this(name, initialBalance, 0) { }` as its implementation. The `: this()` expression calls the other constructor, the one with three parameters. This technique allows you to have a single implementation for initializing an object even though client code can choose one of many constructors.
+
+This implementation calls `MakeDeposit` only if the initial balance is greater than `0`. That preserves the rule that deposits must be positive, yet lets the credit account open with a `0` balance.
+
+Now that the `BankAccount` class has a read-only field for the minimum balance, the final change is to change the hard code `0` to `minimumBalance` in the `MakeWithdrawal` method:
 
 ```csharp
-class DerivedClass:BaseClass { }
+if (Balance - amount < minimumBalance)
 ```
 
-By default all classes can be inherited. However, you can specify whether a class must not be used as a base class, or create a class that can be used as a base class only.
+After extending the `BankAccount` class, you can modify the `LineOfCreditAccount` constructor to call the new base constructor, as shown in the following code:
 
-To specify that a class cannot be used as a base class:
+:::code language="csharp" source="./snippets/object-oriented-programming/LineOfCreditAccount.cs" id="ConstructLineOfCredit":::
 
-```csharp
-public sealed class A { }
-```
+Notice that the `LineOfCreditAccount` constructor changes the sign of the `creditLimit` parameter so it matches the meaning of the `minimumBalance` parameter.
 
-To specify that a class can be used as a base class only and cannot be instantiated:
+## Different overdraft rules
 
-```csharp
-public abstract class B { }
-```
+The last feature to add enables the `LineOfCreditAccount` to charge a fee for going over the credit limit instead of refusing the transaction.
 
-For more information, see:
-
-- [sealed](../../language-reference/keywords/sealed.md)
-- [abstract](../../language-reference/keywords/abstract.md)
-
-### Overriding Members
-
-By default, a derived class inherits all members from its base class. If you want to change the behavior of the inherited member, you need to override it. That is, you can define a new implementation of the method, property or event in the derived class.
-
-The following modifiers are used to control how properties and methods are overridden:
-
-| C# Modifier | Definition |
-|--|--|
-| [virtual](../../language-reference/keywords/virtual.md) | Allows a class member to be overridden in a derived class. |
-| [override](../../language-reference/keywords/override.md) | Overrides a virtual (overridable) member defined in the base class. |
-| [abstract](../../language-reference/keywords/abstract.md) | Requires that a class member to be overridden in the derived class. |
-| [new Modifier](../../language-reference/keywords/new-modifier.md) | Hides a member inherited from a base class |
-
-## Interfaces
-
-Interfaces, like classes, define a set of properties, methods, and events. But unlike classes, interfaces do not provide implementation. They are implemented by classes, and defined as separate entities from classes. An interface represents a contract, in that a class that implements an interface must implement every aspect of that interface exactly as it is defined.
-
-To define an interface:
+One technique is to define a virtual function where you implement the desired behavior. The `Bank Account` class refactors the `MakeWithdrawal` method into two methods. The new method performs the specified action when the withdrawal takes the balance below the minimum. The existing `MakeWithdrawal` method has the following code:
 
 ```csharp
-interface ISampleInterface
+public void MakeWithdrawal(decimal amount, DateTime date, string note)
 {
-    void DoSomething();
-}
-```
-
-To implement an interface in a class:
-
-```csharp
-class SampleClass : ISampleInterface
-{
-    void ISampleInterface.DoSomething()
+    if (amount <= 0)
     {
-        // Method implementation.
+        throw new ArgumentOutOfRangeException(nameof(amount), "Amount of withdrawal must be positive");
     }
-}
-```
-
-For more information, see the programming guide article on [Interfaces](../../programming-guide/interfaces/index.md) and the language reference article on the [interface](../../language-reference/keywords/interface.md) keyword.
-
-## Generics
-
-Classes, structures, interfaces, and methods in .NET can include *type parameters* that define types of objects that they can store or use. The most common example of generics is a collection, where you can specify the type of objects to be stored in a collection.
-
-To define a generic class:
-
-```csharp
-public class SampleGeneric<T>
-{
-    public T Field;
-}
-```
-
-To create an instance of a generic class:
-
-```csharp
-var sampleObject = new SampleGeneric<string>();
-sampleObject.Field = "Sample string";
-```
-
-For more information, see:
-
-- [Generics in .NET](../../../standard/generics/index.md)
-- [Generics - C# Programming Guide](../../programming-guide/generics/index.md)
-
-## Delegates
-
-A *delegate* is a type that defines a method signature, and can provide a reference to any method with a compatible signature. You can invoke (or call) the method through the delegate. Delegates are used to pass methods as arguments to other methods.
-
-> [!NOTE]
-> Event handlers are nothing more than methods that are invoked through delegates. For more information about using delegates in event handling, see [Events](../../../standard/events/index.md).
-
-To create a delegate:
-
-```csharp
-public delegate void SampleDelegate(string str);
-```
-
-To create a reference to a method that matches the signature specified by the delegate:
-
-```csharp
-class SampleClass
-{
-    // Method that matches the SampleDelegate signature.
-    public static void SampleMethod(string message)
+    if (Balance - amount < minimumBalance)
     {
-        // Add code here.
+        throw new InvalidOperationException("Not sufficient funds for this withdrawal");
     }
-
-    // Method that instantiates the delegate.
-    void SampleDelegate()
-    {
-        SampleDelegate sd = sampleMethod;
-        sd("Sample string");
-    }
+    var withdrawal = new Transaction(-amount, date, note);
+    allTransactions.Add(withdrawal);
 }
 ```
 
-For more information, see the programming guide article on [Delegates](../../programming-guide/delegates/index.md) and the language reference article on the [delegate](../../language-reference/builtin-types/reference-types.md) keyword.
+Replace it with the following:
 
-## Next steps
+:::code language="csharp" source="./snippets/object-oriented-programming/BankAccount.cs" id="RefactoredMakeWithdrawal":::
 
-You can learn more about these concepts in these articles:
+The added method is `protected` which means that it can be called only from derived classes. That declaration prevents other clients from calling the method. It's also `virtual` so that derived classes can change the behavior. The return type is a `Transaction?`. The `?` annotation indicates that the method may return `null`. Add the following implementation in the `LineOfCreditAccount` to charge a fee when the withdrawal limit is exceeded:
 
-- [If and else statement](../../language-reference/keywords/if-else.md)
-- [While statement](../../language-reference/keywords/while.md)
-- [Do statement](../../language-reference/keywords/do.md)
-- [For statement](../../language-reference/keywords/for.md)
+:::code language="csharp" source="./snippets/object-oriented-programming/LineOfCreditAccount.cs" id="AddOverdraftFee":::
+
+The override returns a fee transaction when the account is overdrawn. If the withdrawal doesn't go over the limit, the method returns a `null` transaction. That indicates there's no fee. Test these changes by adding the following code to your `Main` method in the `Program` class:
+
+:::code language="csharp" source="./snippets/object-oriented-programming/Program.cs" id="TestLineOfCredit":::
+
+Run the program, and check the results.
+
+## Summary
+
+This tutorial demonstrated many of the techniques used in Object Oriented programming:
+
+- You used *Abstraction* when you kept many details `private` in each class.
+- You used *Encapsulation* when you defined classes for each of the different account types. Those described the behavior for that type of account.
+- You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code. 
+- You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.
 
 Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md).

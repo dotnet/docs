@@ -167,7 +167,7 @@ And here's one for a web app:
 </Project>
 ```
 
-In these examples, the `Sdk` attribute of the `Project` element specifies a set of MSBuild targets and tasks that build the project.  The `TargetFramework` element specifies the .NET version that the app depends on. You can add targets and tasks to the project file, for example, to automatically publish the app after it's built.
+In these examples, the `Sdk` attribute of the `Project` element specifies a set of MSBuild targets and tasks that build the project.  The `TargetFramework` element specifies the .NET version that the app depends on. You can edit the project file to add additional targets and tasks specific to the project.
 
 For more information, see [.NET project SDK overview](project-sdk/overview.md) and [Target frameworks](../standard/frameworks.md).
 
@@ -190,7 +190,13 @@ For more information, see [NuGet documentation](/nuget/).
 
 ### .NET Interactive
 
-[.NET interactive](https://github.com/dotnet/interactive/blob/main/docs/README.md) is a group of CLI tools and APIs that enable users to create interactive experiences across the web, markdown, and notebooks. For an example, see the [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1).
+.NET Interactive is a group of CLI tools and APIs that enable users to create interactive experiences across the web, markdown, and notebooks.
+
+For more information, see the following resources:
+
+* [.NET In-Browser Tutorial](https://dotnet.microsoft.com/learn/dotnet/in-browser-tutorial/1)
+* [Using .NET notebooks with Jupyter on your machine](https://github.com/dotnet/interactive/blob/main/docs/NotebooksLocalExperience.md)
+* [.NET Interactive documentation](https://github.com/dotnet/interactive/blob/main/docs/README.md)
 
 ## Execution models
 

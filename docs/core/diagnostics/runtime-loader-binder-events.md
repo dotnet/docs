@@ -306,7 +306,7 @@ This category consists of the following events:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`AssemblyLoadFromResolveHandlerInvoked`|295|An [Assembly.LoadFrom](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.assembly.loadfrom) handler has been invoked.|
+|`AssemblyLoadFromResolveHandlerInvoked`|295|An <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> handler has been invoked.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -334,4 +334,3 @@ This category consists of the following events:
 |Source|win:UInt16|Source of the path probed.<br/><br/>0x0:Application Assemblies.<br/><br/>0x1:App native image path.<br/><br/>0x2:App path.</br><br/>0x3:Platform resource roots.<br/><br/>0x4:Satellite Subdirectory.</br>|
 |Result|win:win:UInt32|HRESULT for the probe.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-

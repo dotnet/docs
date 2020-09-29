@@ -125,7 +125,7 @@ The integrated development environments for .NET include:
 
 The [.NET SDK](sdk.md) is a set of libraries and tools for developing and running .NET applications.
 
-When you [download .NET](https://dotnet.microsoft.com/download/dotnet-core/), you can choose the SDK or a *runtime*. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
+When you [download .NET](https://dotnet.microsoft.com/download/dotnet-core/), you can choose the SDK or a *runtime*, such as the .NET runtime or the ASP.NET Core runtime. Install a runtime on a machine that you want to prepare for running .NET apps. Install the SDK on a machine that you want to use for development. When you download the SDK, you automatically get the runtimes with it.
 
 The SDK download includes the following components:
 

@@ -1,6 +1,6 @@
 ---
-title: Ready to Run
-description: Learn what ReadyToRun is and why you should consider using it as part of the deployment.
+title: ReadyToRun deployment overview
+description: Learn what ReadyToRun deployments are and why you should consider using it as part of the publishing your app with .NET 5 and .NET Core 3.0 and later.
 author: davidwr
 ms.author: davidwr
 ms.date: 09/21/2020
@@ -11,9 +11,9 @@ ms.date: 09/21/2020
 
 R2R binaries improve startup performance by reducing the amount of work the just-in-time (JIT) compiler needs to do as your application loads. The binaries contain similar native code compared to what the JIT would produce. However, R2R binaries are larger because they contain both intermediate language (IL) code, which is still needed for some scenarios, and the native version of the same code. R2R is only available when you publish an app that targets specific runtime environments (RID) such as Linux x64 or Windows x64.
 
-To compile your project as ReadyToRun, the application must be published, with the PublishReadyToRun property set to true.
+To compile your project as ReadyToRun, the application must be published with the PublishReadyToRun property set to true.
 
-There are two approaches to push with R2R:
+There are two ways to publish your app as ReadyToRun:
 
 01. Specify the PublishReadyToRun flag directly to the dotnet publish command. See [dotnet publish](../tools/dotnet-publish.md) for details.
 
@@ -31,7 +31,7 @@ There are two approaches to push with R2R:
     </PropertyGroup>
     ```
 
-- Publish the application without any special parameters.
+    - Publish the application without any special parameters.
 
     ```dotnetcli
     dotnet publish -c Release -r win-x64
@@ -63,7 +63,7 @@ Such reasons may include, but are not limited to:
 - Certain unusual IL patterns
 - Dynamic method creation via reflection, or LINQ
 
-### Cross platform/architecture restrictions
+## Cross platform/architecture restrictions
 
 For some SDK platforms, the ReadyToRun compiler is capable of cross-compiling for other target platforms. Supported compilation targets are described in the table below.
 

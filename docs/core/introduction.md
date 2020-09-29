@@ -337,6 +337,13 @@ Some of the terminology for .NET can be confusing because the same word is used 
   | Target Framework Moniker (TFM)  | A TFM is a standardized token format for specifying the target framework of a .NET app or library. Example: `net462` for .NET Framework 4.6.2. |
   | framework-dependent app | An app that can only run on a machine where you've installed the runtime from the [.NET download page](https://dotnet.microsoft.com/download/dotnet-core). "Framework" in this usage is the same thing as the "runtime" that you download from the .NET download page. |
   
+* **SDK**
+
+  |Context  | "SDK" meaning |
+  |---------|---------------|
+  | [SDK on the .NET download page](#sdk-and-runtimes)  | A collection of tools and libraries that you download and install to develop and run .NET apps. Includes the CLI, MSBuild, the .NET runtime, and other components.|
+  | [SDK-style project](#project-system-and-msbuild) | A set of MSBuild targets and tasks that specifies how to build a project for a particular app type. The SDK in this sense is specified by using the `Sdk` attribute of the `Project` element in a project file. |
+
 * **platform**
 
   |Context  | "platform" meaning |

@@ -265,4 +265,4 @@ storage concerns from the behavior concerns.
 
 ## See also
 
-- [Tutorial: Using pattern matching features to extend data types](tutorials/pattern-matching.md)
+- [Tutorial: Use pattern matching to build type-driven and data-driven algorithms](tutorials/pattern-matching.md)

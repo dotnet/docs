@@ -15,6 +15,12 @@ Dapr @ 20,000 feet
     - Building blocks
     - Components
     - Sidecar architecture
+    - Service meshes vs. Dapr
+
+ - Challenges
+    - LCM for a component
+    - Overhead - 3 hops for 1
+    - Not support database access
 
  - Supported platforms
     - REST Api

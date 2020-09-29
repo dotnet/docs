@@ -11,18 +11,21 @@ Ladies and Gentlemen, please welcome Dapr.
 
 Dapr, or *Distributed Application Runtime*, is the new kid on the block. What started as a <blah>, give some history, has grown to <blah> with a 1.0 release. 
 
+Since the announcement of Dapr at the 2019 Microsoft Ignite Conference, Microsoft has cloesly partnered with customers and the open source community to build and extend Dapr. This conceted effort validates the willingness of developers from all backgrounds to solve some of the toughest challenges when developing distributed applications.     
+
+## What is Dapr?
+
 At its core, Dapr is a *portable, event-driven runtime*. 
 
- - Portable, in that you write your application code once and can run it across public clouds and edge devices. In your code, you provide a Dapr configuration file. It specifies external service components that you wish to include  components in your environment. If you need to move your app, you simply swap out the configuration file with bindings to the correct service components. Dapr can self-host for local development, run inside a VM, a Kubernetes, or Service Fabric cluster. 
+ - Portable, in that you write your application code once and run it across public clouds and edge devices. You expose a Dapr configuration file. It specifies external service components that you wish to include in your chosen environment. If you wish to move your app, you simply swap out the configuration file with bindings to service components in the new environment. Dapr can self-host for local development, run inside a VM, a Kubernetes, or Service Fabric cluster. 
 
- - Event-driven, in that you register external services, invoke them or get invoked without taking a direct reference to them. 
+ - Event-driven, in that you register external services. You can invoke them or have them invoke you - with minimal code and without taking a direct reference to them. 
 
- - Runtime, in that you encapsulate and exposes Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
+ - Runtime, in that you encapsulate and expose Dapr functionality via a side car architecture - your application does not include any Dapr runtime code.
 
-Dapr addresses a large gap in modern app development: Simplifying the complexities of distributed microservices applications. Through an architecture of pluggable components, Dapr abstracts 
-external service components from the business logic of your application.
+Dapr addresses a large challenge in modern distributed app development: Complexity. Simplifying the complexities of distributed microservices applications is a key Dapr design goal. Through an architecture of pluggable components, Dapr abstracts external service components from the business logic of your application.
 
-Dapr provides a *dynamic glue* that fuses together the plumbing without tightly coupled references, while providing baked-in industry best practices. For example, your service may need to write to a state store. You might consider writing a wrapper around Azure Redis Cache and communicating with it. Howevere, with Dapr, you could make a call to a Dapr state building block, dynamically bind it to Redis Cache, and have Dapr implement the  call to Redis on your behalf. Dapr is responsbile for REdis implementation. Your code has no direct reference to Redis.
+Dapr provides a *dynamic glue* that fuses together service component plumbing without tightly coupled references, while providing baked-in industry best practices. For example, you may have a service that requires a state store. You could write a wrapper around Azure Redis Cache, register, and inject an instance into your system. Instead, with Dapr, you call a Dapr state building block. That block dynamically binds to Redis Cache via configuratoin. You delegate the call to Dapr, which calls Redis on your behalf.  Your code has no SDK, library, or reference to Redis.
 
 Figure 2-x shows Dapr from 20,000 feet.
 
@@ -38,12 +41,77 @@ The blue boxes across the center of the figure present the distributed system bu
 Dapr version 1.0 features support for interservice communication, state management, pub/sub messaging, actors, observablity, and secrets. Chapter x provides detail about the different building blocks.
 
 Finally, the previous figure shows the portability of Dapr running across many different environments.
- 
-## Side car architecture
+
+## Key concepts
 
 
 
-## Sevice mesh
+### Buildilng blocks
+
+As we saw in Figure 2-x, Dapr exposes a set of `Building Blocks`. Each block is API that abstracts an underlying service component. The APIs represent common services that a distributed application requires:
+
+ - Service-to-service communication
+ - Asynchronous messaging
+ - State
+ - Observability
+ - Secrets
+ - Actors
+ - Resource bindings
+
+Your application invokes building block services by either HTTP or gRPC.
+
+The APIs exposed by building blocks bind to one or more underlying `components` that provide the service implementation. Components are 'pluggable' so that you can swap out one component with the same interface for another. You simply change defintion in the Dapr configuration file.
+
+
+ > start with Dapr #4 detail
+
+
+
+The building blocks in Dapr essentially expose the API that you work with. But the underlying functionality is performed by one or more components that you configure. All components are pluggable so that you can swap out one component with the same interface for another. For
+example, if you use Redis as a state store, you can substitute it with Cosmos DB just by
+changing the definition of your state component. Having applied then new component
+definition, all requests for state store will go to Cosmos DB.
+
+Treats service as a black box
+
+simple—to bring distributed system building blocks to user code through a sidecar container or process.
+
+without polluting that code with any SDKs or libraries; it worked with any programming language
+
+profound impacts on framework design and distributed application development
+
+
+
+### Components
+
+
+
+### Sidecar architecture
+
+
+### Sevice meshes vs Dapr
+
+
+## Dapr challenges
+
+Dapr is not without challenges. Consider the following:
+
+ - When consuming a service component from Dapr, you're communicating with it through an abstraction. The abstraction can expose common functionality that all such components would expose. Some componenets may have custom features that are not exposed by the Dapr common interfaces. In these sceaniros, you may need to reference the component directly.
+ - Overhead. With it's sidecar archtecture, Dapr invokes multiple hops per call. Figure 2-x contrasts the differenes.  It's important to keep in mind that a tremendous amount of engineering effort has gone into to making Dapr efficient. As well, calls between Dapr sidecars are always made with gRPC, which delivers high performance and small, binary payloads. In most cases, the additional overhead should be in milliseconds. 
+
+ ![Dapr overhead](./media/dapr-high-level.png)
+**Figure 2-x**. Dapr at 20,000 feet.
+
+  
+   
+- Finally, while Dapr covers the gamut of distributed component services, it does not provide support for database interaction. 
+
+
+## Supported platforms
+
+
+
+
 
 
 

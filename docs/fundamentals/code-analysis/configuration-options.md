@@ -13,12 +13,12 @@ Code analysis rules have various configuration options. These options are specif
 <option key> = <option value>
 ```
 
-The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](/visualstudio/ide/editorconfig-language-conventions).
+The most common option you'll configure is a rule's severity. You can configure severity level for all analyzer rules, including [code quality rules](quality-rules/index.md) and [code style rules](style-rules/index.md).
 
 You can also configure additional options to customize rule behavior:
 
 - Code quality rules have [additional options](code-quality-rule-options.md) to configure behavior, such as which method names a rule should apply to.
-- Code style rules have [custom code style options](/visualstudio/ide/editorconfig-code-style-settings-reference).
+- Code style rules have [custom code style options](code-style-rule-options.md).
 - Third party analyzer rules can define their own configuration options, with custom key names and value formats.
 
 You specify configuration options in an [EditorConfig file](/visualstudio/ide/create-portable-custom-editor-options). You can apply EditorConfig file conventions to a folder, a project, or an entire repo by placing the file in the corresponding directory. If you have an existing *.editorconfig* file for editor settings such as indent size or whether to trim trailing whitespace, you can place your code analysis configuration options in the same file. Add an entry for each rule you want to configure, and place it under the corresponding file extension section, for example, `[*.cs]`.
@@ -65,7 +65,7 @@ Rule-specific options can be applied to a single rule, a set of rules, or all ru
 
 ### Severity level
 
-The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](quality-rules/index.md) and [code style](/visualstudio/ide/editorconfig-language-conventions) rules.
+The following table shows the different rule severities that you can configure for all analyzer rules, including [code quality](quality-rules/index.md) and [code style](style-rules/index.md) rules.
 
 | Severity | Build-time behavior |
 |-|-|

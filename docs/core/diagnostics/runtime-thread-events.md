@@ -223,7 +223,7 @@ These events collect information about worker and I/O threads.
 |----------------|---------------|-----------------|
 |AverageThroughput|win:Double|Average throughput of a sample of measurements.|
 |NewWorkerThreadCount|win:UInt32|New number of active worker threads.|
-|Reason|win:UInt32|Reason for the adjustment.<br /><br /> 0x00 - Warmup.<br /><br /> 0x01 - Initializing.<br /><br /> 0x02 - Random move.<br /><br /> 0x03 - Climbing move.<br /><br /> 0x04 - Change point.<br /><br /> 0x05 - Stabilizing.<br /><br /> 0x06 - Starvation.<br /><br /> 0x07 - Thread timed out.|
+|Reason|win:UInt32|Reason for the adjustment.<br /><br /> `0x0` - Warmup.<br /><br /> `0x1` - Initializing.<br /><br /> `0x2` - Random move.<br /><br /> `0x3` - Climbing move.<br /><br /> `0x4` - Change point.<br /><br /> `0x5` - Stabilizing.<br /><br /> `0x6` - Starvation.<br /><br /> `0x7` - Thread timed out.|
 |ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
 ## ThreadPoolWorkerThreadAdjustmentStats Event

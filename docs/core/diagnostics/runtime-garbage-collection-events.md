@@ -47,8 +47,8 @@ The following table shows the event data:
 |----------------|---------------|-----------------|
 |Count|win:UInt32|The *n*th garbage collection.|
 |Depth|win:UInt32|The generation that is being collected.|
-|Reason|win:UInt32|Why the garbage collection was triggered:<br /><br /> 0x0 - Small object heap allocation.<br /><br /> 0x1 - Induced.<br /><br /> 0x2 - Low memory.<br /><br /> 0x3 - Empty.<br /><br /> 0x4 - Large object heap allocation.<br /><br /> 0x5 - Out of space (for small object heap).<br /><br /> 0x6 - Out of space (for large object heap).<br /><br /> 0x7 - Induced but not forced as blocking.|
-|Type|win:UInt32|0x0 - Blocking garbage collection occurred outside background garbage collection.<br /><br /> 0x1 - Background garbage collection.<br /><br /> 0x2 - Blocking garbage collection occurred during background garbage collection.|
+|Reason|win:UInt32|Why the garbage collection was triggered:<br /><br /> `0x0` - Small object heap allocation.<br /><br /> `0x1` - Induced.<br /><br /> `0x2` - Low memory.<br /><br /> `0x3` - Empty.<br /><br /> `0x4` - Large object heap allocation.<br /><br /> `0x5` - Out of space (for small object heap).<br /><br /> `0x6` - Out of space (for large object heap).<br /><br /> `0x7` - Induced but not forced as blocking.|
+|Type|win:UInt32|`0x0` - Blocking garbage collection occurred outside background garbage collection.<br /><br /> `0x1` - Background garbage collection.<br /><br /> `0x2` - Blocking garbage collection occurred during background garbage collection.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
 ## GCEnd_V1 Event
@@ -219,7 +219,7 @@ The following table shows the event information:
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |Count|win:UInt32|The *n*th garbage collection.|
-|Reason|win:UInt32|Reason for EE suspension.<br/><br/>0: Suspend for Other<br/><br/>1: Suspend for GC.<br/><br/>2: Suspend for AppDomain shutdown.<br/><br/>3: Suspend for code pitching.<br/><br/>4: Suspend for shutdown.<br/><br/>5: Suspend for debugger.<br/><br/>6: Suspend for GC Prep.<br/><br/>7: Suspend for debugger sweep|
+|Reason|win:UInt32|Reason for EE suspension.<br/><br/>`0x0`: Suspend for Other<br/><br/>`0x1`: Suspend for GC.<br/><br/>`0x2`: Suspend for AppDomain shutdown.<br/><br/>`0x3`: Suspend for code pitching.<br/><br/>`0x4`: Suspend for shutdown.<br/><br/>`0x5`: Suspend for debugger.<br/><br/>`0x6`: Suspend for GC Prep.<br/><br/>`0x7`: Suspend for debugger sweep|
 
 ## GCAllocationTick_V3 Event
 
@@ -240,7 +240,7 @@ The following table shows the event data:
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AllocationAmount|win:UInt32|The allocation size, in bytes. This value is accurate for allocations that are less than the length of a ULONG (4,294,967,295 bytes). If the allocation is greater, this field contains a truncated value. Use `AllocationAmount64` for very large allocations.|
-|AllocationKind|win:UInt32|0x0 - Small object allocation (allocation is in small object heap).<br /><br /> 0x1 - Large object allocation (allocation is in large object heap).|
+|AllocationKind|win:UInt32|`0x0` - Small object allocation (allocation is in small object heap).<br /><br /> `0x1` - Large object allocation (allocation is in large object heap).|
 |AllocationAmount64|win:UInt64|The allocation size, in bytes. This value is accurate for very large allocations.|
 |TypeId|win:Pointer|The address of the MethodTable. When there are several types of objects that were allocated during this event, this is the address of the MethodTable that corresponds to the last object allocated (the object that caused the 100 KB threshold to be exceeded).|
 |TypeName|win:UnicodeString|The name of the type that was allocated. When there are several types of objects that were allocated during this event, this is the type of the last object allocated (the object that caused the 100 KB threshold to be exceeded).|

@@ -8,7 +8,7 @@ ms.date: 09/25/2020
 
 # Logging in .NET
 
-.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. All of the code examples shown in this article are from .NET apps. The logging-specific parts of these code snippets apply to any .NET app that uses the [Generic Host](generic-host.md).
+.NET supports a logging API that works with a variety of built-in and third-party logging providers. This article shows how to use the logging API with built-in providers. The code examples shown in this article apply to any .NET app that uses the [Generic Host](generic-host.md).
 
 ## Create logs
 
@@ -68,7 +68,7 @@ To suppress all logs, specify [LogLevel.None](xref:Microsoft.Extensions.Logging.
 
 If a provider supports [log scopes](#log-scopes), `IncludeScopes` indicates whether they're enabled. For more information, see [log scopes](#log-scopes)
 
-The following *appsettings.json* file contains all the providers enabled by default:
+The following *appsettings.json* file contains settings for all of the built-in providers:
 
 :::code language="json" source="snippets/configuration/worker-service/appsettings.Production.json":::
 
@@ -76,7 +76,7 @@ In the preceding sample:
 
 - The categories and levels are not suggested values. The sample is provided to show all the default providers.
 - Settings in `Logging.{ProviderName}.LogLevel` override settings in `Logging.LogLevel`. For example, the level in `Debug.LogLevel.Default` overrides the level in `LogLevel.Default`.
-- Each default provider *alias* is used. Each provider defines an *alias* that can be used in configuration in place of the fully qualified type name. The built-in providers aliases are:
+- Each provider's *alias* is used. Each provider defines an *alias* that can be used in configuration in place of the fully qualified type name. The built-in providers' aliases are:
   - Console
   - Debug
   - EventSource
@@ -102,7 +102,7 @@ dotnet run
 The preceding environment setting:
 
 - Is only set in processes launched from the command window they were set in.
-- Isn't read by browsers launched with Visual Studio.
+- Isn't read by apps launched with Visual Studio.
 
 The following [setx](/windows-server/administration/windows-commands/setx) command also sets the environment key and value on Windows. Unlike `set`, `setx` settings are persisted. The `/M` switch sets the variable in the system environment. If `/M` isn't used, a user environment variable is set.
 
@@ -190,7 +190,7 @@ The following table lists the <xref:Microsoft.Extensions.Logging.LogLevel> value
 | [Warning](xref:Microsoft.Extensions.Logging.LogLevel) | 3 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogWarning%2A> | For abnormal or unexpected events. Typically includes errors or conditions that don't cause the app to fail. |
 | [Error](xref:Microsoft.Extensions.Logging.LogLevel) | 4 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogError%2A> | For errors and exceptions that cannot be handled. These messages indicate a failure in the current operation or request, not an app-wide failure. |
 | [Critical](xref:Microsoft.Extensions.Logging.LogLevel) | 5 | <xref:Microsoft.Extensions.Logging.LoggerExtensions.LogCritical%2A> | For failures that require immediate attention. Examples: data loss scenarios, out of disk space. |
-| [None](xref:Microsoft.Extensions.Logging.LogLevel) | 6 |  | Specifies that a logging category should not write any messages. |
+| [None](xref:Microsoft.Extensions.Logging.LogLevel) | 6 |  | Specifies that no messages should be written. |
 
 In the previous table, the `LogLevel` is listed from lowest to highest severity.
 
@@ -266,7 +266,7 @@ internal static class AppLogEvents
 
 An event ID associates a set of events. For example, all logs related to reading values from a repository might be `1001`.
 
-The logging provider may store the event ID in an ID field, in the logging message, or not at all. The Debug provider doesn't show event IDs. The console provider shows event IDs in brackets after the category:
+The logging provider may log the event ID in an ID field, in the logging message, or not at all. The Debug provider doesn't show event IDs. The console provider shows event IDs in brackets after the category:
 
 ```console
 info: Example.DefaultService.GetAsync[1001]
@@ -293,7 +293,7 @@ The preceding code creates a log message with the parameter values in sequence:
 Parameter values: param1, param2
 ```
 
-This approach allows logging providers to implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. For example, consider the following logger method:
+This approach allows logging providers to implement [semantic or structured logging](https://github.com/NLog/NLog/wiki/How-to-use-structured-logging). The arguments themselves are passed to the logging system, not just the formatted message template. This enables logging providers to store the parameter values as fields. Consider the following logger method:
 
 ```csharp
 _logger.LogInformation("Getting item {Id} at {RunTime}", id, DateTime.Now);
@@ -354,7 +354,6 @@ public class Program
 }
 ```
 
-Generally, log levels should be specified in configuration and not code.
 
 ### Filter function
 
@@ -469,9 +468,9 @@ Logging should be so fast that it isn't worth the performance cost of asynchrono
 
 ## Change log levels in a running app
 
-The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers are capable of reloading configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](configuration-providers.md#file-configuration-provider), reloads logging configuration by default. If configuration is changed in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
+The Logging API doesn't include a scenario to change log levels while an app is running. However, some configuration providers are capable of reloading configuration, which takes immediate effect on logging configuration. For example, the [File Configuration Provider](configuration-providers.md#file-configuration-provider) reloads logging configuration by default. If configuration is changed in code while an app is running, the app can call [IConfigurationRoot.Reload](xref:Microsoft.Extensions.Configuration.IConfigurationRoot.Reload%2A) to update the app's logging configuration.
 
-## ILogger and ILoggerFactory
+## NuGet packages
 
 The <xref:Microsoft.Extensions.Logging.ILogger%601> and <xref:Microsoft.Extensions.Logging.ILoggerFactory> interfaces and implementations are included in the .NET Core SDK. They are also available in the following NuGet packages:
 

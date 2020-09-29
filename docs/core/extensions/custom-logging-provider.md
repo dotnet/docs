@@ -13,10 +13,7 @@ There are many [logging providers](logging-providers.md) available for common lo
 
 ### Sample custom logger configuration
 
-The sample:
-
-- Is designed to be a basic sample that sets the color of the log console by event ID and log level. Loggers generally don't change by event ID and are not specific to log level.
-- Creates different color console entries per log level and event ID using the following configuration type:
+The sample creates different color console entries per log level and event ID using the following configuration type:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerConfiguration.cs":::
 
@@ -37,7 +34,7 @@ The preceding code:
 
 ## Custom logger provider
 
-The `ILoggerProvider` is responsible for creating logger instances. Maybe it is not needed to create a logger instance per category, but this makes sense for some Loggers, like NLog or log4net. Doing this you are also able to choose different logging output targets per category if needed:
+The `ILoggerProvider` object is responsible for creating logger instances. Maybe it is not needed to create a logger instance per category, but this makes sense for some loggers, like NLog or log4net. Doing this you are also able to choose different logging output targets per category if needed:
 
 :::code language="csharp" source="snippets/configuration/console-custom-logging/ColorConsoleLoggerProvider.cs":::
 

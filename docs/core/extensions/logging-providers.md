@@ -1,6 +1,6 @@
 ---
 title: Logging providers in .NET
-description: Learn how the Logging provider API is used in .NET applications.
+description: Learn how the logging provider API is used in .NET applications.
 author: IEvangelist
 ms.author: dapine
 ms.date: 09/25/2020
@@ -23,7 +23,7 @@ The default .NET Worker app templates:
 
 The preceding code shows the `Program` class created with the .NET Worker app templates. The next several sections provide samples based on the .NET Worker app templates, which use the Generic Host.
 
-To override the default set of logging providers added by `Host.CreateDefaultBuilder`, call `ClearProviders` and add the required logging providers. For example, the following code:
+To override the default set of logging providers added by `Host.CreateDefaultBuilder`, call `ClearProviders` and add the logging providers you want. For example, the following code:
 
 - Calls <xref:Microsoft.Extensions.Logging.LoggingBuilderExtensions.ClearProviders%2A> to remove all the <xref:Microsoft.Extensions.Logging.ILoggerProvider> instances from the builder.
 - Adds the [Console](#console) logging provider.
@@ -60,14 +60,14 @@ The preceding code is a [Func<IServiceProvider, IExampleService>](/dotnet/api/sy
 
 ## Built-in logging providers
 
-Microsoft Extensions include the following logging providers as part of the shared framework:
+Microsoft Extensions include the following logging providers as part of the runtime libraries:
 
 - [Console](#console)
 - [Debug](#debug)
 - [EventSource](#event-source)
 - [EventLog](#windows-eventlog)
 
-The following logging providers are shipped by Microsoft, but not as part of the shared framework. They must be installed as additional NuGet.
+The following logging providers are shipped by Microsoft, but not as part of the runtime libraries. They must be installed as additional NuGet packages.
 
 - [AzureAppServicesFile and AzureAppServicesBlob](#azure-app-service)
 - [ApplicationInsights](#azure-application-insights)
@@ -276,7 +276,7 @@ To log events lower than <xref:Microsoft.Extensions.Logging.LogLevel.Warning?dis
 - `SourceName`: ".NET Runtime"
 - `MachineName`: The local machine name is used.
 
-The following code changes the `SourceName` from the default value of `".NET Runtime"` to `MyLogs`:
+The following code changes the `SourceName` from the default value of `".NET Runtime"` to `CustomLogs`:
 
 ```csharp
 public class Program
@@ -296,7 +296,7 @@ public class Program
 
 The [Microsoft.Extensions.Logging.AzureAppServices](https://www.nuget.org/packages/Microsoft.Extensions.Logging.AzureAppServices) provider package writes logs to text files in an Azure App Service app's file system and to [blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet#what-is-blob-storage) in an Azure Storage account.
 
-The provider package isn't included in the shared framework. To use the provider, add the provider package to the project.
+The provider package isn't included in the runtime libraries. To use the provider, add the provider package to the project.
 
 To configure provider settings, use <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureFileLoggerOptions> and <xref:Microsoft.Extensions.Logging.AzureAppServices.AzureBlobLoggerOptions>, as shown in the following example:
 
@@ -362,7 +362,7 @@ For more information, see the following resources:
 
 ## Third-party logging providers
 
-Third-party logging frameworks that work with various .NET workloads:
+Here are some third-party logging frameworks that work with various .NET workloads:
 
 - [elmah.io](https://elmah.io) ([GitHub repo](https://github.com/elmahio/Elmah.Io.Extensions.Logging))
 - [Gelf](https://docs.graylog.org/en/2.3/pages/gelf.html) ([GitHub repo](https://github.com/mattwcole/gelf-extensions-logging))

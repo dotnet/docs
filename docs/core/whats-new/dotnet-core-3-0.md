@@ -201,6 +201,8 @@ Exceptions to cross-targeting:
 - Windows x86 can be used to compile Windows ARM32 images.
 - Linux x64 can be used to compile Linux ARM32 and ARM64 images.
 
+For more information, see [Ready to Run](../deploying/ready-to-run.md).
+
 ## Runtime/SDK
 
 ### Major-version runtime roll forward

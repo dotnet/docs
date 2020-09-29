@@ -17,17 +17,17 @@ Some APIs are not compatible with single-file deployment and applications may re
 
 The table below has the relevant runtime library API details for single-file use.
 
-| API                                                                                     | Note |
-| ---------------------------------------------------------------------------------------  | ------- |
-| `Assembly.Location` | Returns an empty string |
-| `Module.FullyQualifiedName`  | Returns `<Unknown>` or throws an exception |
-| `Module.Name`  | Returns a `<Unknown>` string |
-| `Assembly.GetFile`  | Will throw `IOException` |
-| `Assembly.GetFiles`  | Will throw `IOException` |
-| `Assembly.CodeBase`  | Will throw `PlatformNotSupportedException` |
-| `Assembly.EscapedCodeBase`  | Will throw `PlatformNotSupportedException` |
-| `AssemblyName.CodeBase`  | Returns null |
-| `AssemblyName.EscapedCodeBase`  | Returns null |
+| API                            | Note                                                                   |
+|--------------------------------|------------------------------------------------------------------------|
+| `Assembly.Location`            | Returns an empty string.                                               |
+| `Module.FullyQualifiedName`    | Returns a string with the value of `<Unknown>` or throws an exception. |
+| `Module.Name`                  | Returns a string with the value of `<Unknown>`.                        |
+| `Assembly.GetFile`             | Throws <xref:System.IO.IOException>.                                   |
+| `Assembly.GetFiles`            | Throws <xref:System.IO.IOException>.                                   |
+| `Assembly.CodeBase`            | Throws <xref:System.PlatformNotSupportedException>.                    |
+| `Assembly.EscapedCodeBase`     | Throws <xref:System.PlatformNotSupportedException>.                    |
+| `AssemblyName.CodeBase`        | Returns `null`.                                                        |
+| `AssemblyName.EscapedCodeBase` | Returns `null`.                                                        |
 
 We have some recommendations for fixing common scenarios:
 

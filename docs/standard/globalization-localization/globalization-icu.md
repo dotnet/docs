@@ -160,4 +160,5 @@ The following APIs are not supported:
 - <xref:System.Globalization.RegionInfo.NativeName?displayProperty=nameWithType>
 - `String.Normalize` and `String.IsNormalized` don't support rarely used `NormalizationForm.FormKC` and `NormalizationForm.FormKD` forms.
 - `RegionInfo.CurrencyNativeName` returns the same value as `CurrencyEnglishName`.
-- List of supported locales can be found [here](https://github.com/dotnet/icu/blob/0f49268ddfd3331ca090f1c51d2baa2f75f6c6c0/icu-filters/optimal.json#L6-L54)
+
+In addition, a list of supported locales can be found on the [dotnet/icu repo](https://github.com/dotnet/icu/blob/0f49268ddfd3331ca090f1c51d2baa2f75f6c6c0/icu-filters/optimal.json#L6-L54)

@@ -289,3 +289,4 @@ Scoped services are disposed by the container that created them. If a scoped ser
 - [NDC Conference Patterns for DI app development](https://www.youtube.com/watch?v=x-C-CNBVTaY)
 - [Explicit dependencies principle](../../architecture/modern-web-apps-azure/architectural-principles.md#explicit-dependencies)
 - [Inversion of control containers and the dependency injection pattern (Martin Fowler)](https://www.martinfowler.com/articles/injection.html)
+- DI bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo

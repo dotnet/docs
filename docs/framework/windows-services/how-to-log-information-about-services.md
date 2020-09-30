@@ -1,6 +1,6 @@
 ---
 title: "How to: Log Information About Services"
-description: Know how to log information about services. Set the Auto-Log property if you want your Windows Service project to interact with the Application event log.
+description: Know how to log information about services. Set the AutoLog property if you want your Windows Service project to interact with the Application event log.
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,11 +13,12 @@ helpviewer_keywords:
   - "application event logs, service applications"
   - "logs, service applications"
 ms.assetid: c0d8140f-c055-4d8e-a2e0-37358a550116
+author: "ghogen"
 ---
 # How to: Log Information About Services
 By default, all Windows Service projects have the ability to interact with the Application event log and write information and exceptions to it. You use the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to indicate whether you want this functionality in your application. By default, logging is turned on for any service you create with the Windows Service project template. You can use a static form of the <xref:System.Diagnostics.EventLog> class to write service information to a log without having to create an instance of an <xref:System.Diagnostics.EventLog> component or manually register a source.  
   
- When logging is turned on, the installer for your service automatically registers each service in your project as a valid source of events with the Application log on the computer where the service is installed. The service logs information each time the service is started, stopped, paused, resumed, installed, or uninstalled. It also logs any failures that occur. You do not need to write any code to write entries to the log when using the default behavior; the service handles this for you automatically.  
+ The installer for your service automatically registers each service in your project as a valid source of events with the Application log on the computer where the service is installed, when logging is turned on. The service logs information each time the service is started, stopped, paused, resumed, installed, or uninstalled. It also logs any failures that occur. You do not need to write any code to write entries to the log when using the default behavior; the service handles this for you automatically.  
   
  If you want to write to an event log other than the Application log, you must set the <xref:System.ServiceProcess.ServiceBase.AutoLog%2A> property to `false`, create your own custom event log within your services code, and register your service as a valid source of entries for that log. You must then write code to record entries to the log whenever an action you're interested in occurs.  
   

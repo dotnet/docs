@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Windows Service applications, creating"
   - "templates, Windows Service"
 ms.assetid: 0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff
+author: "ghogen"
 ---
 # How to: Create Windows Services
 When you create a service, you can use a Visual Studio project template called **Windows Service**. This template automatically does much of the work for you by referencing the appropriate classes and namespaces, setting up the inheritance from the base class for services, and overriding several of the methods you're likely to want to override.  
@@ -57,7 +58,7 @@ When you create a service, you can use a Visual Studio project template called *
 7. Build your project by selecting **Build Solution** from the **Build** menu.  
   
     > [!NOTE]
-    > Do not press F5 to run your project—you cannot run a service project in this way.  
+    > Do not press F5 to run your project — you cannot run a service project in this way.  
   
 8. Install the service. For more information, see [How to: Install and Uninstall Services](how-to-install-and-uninstall-services.md).  
   

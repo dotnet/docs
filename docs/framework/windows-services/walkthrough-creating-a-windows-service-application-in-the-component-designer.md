@@ -9,6 +9,7 @@ helpviewer_keywords:
   - "Windows service applications, walkthroughs"
   - "Windows service applications, creating"
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
+author: "ghogen"
 ---
 # Tutorial: Create a Windows service app
 
@@ -176,7 +177,7 @@ The following code shows how you to override the <xref:System.ServiceProcess.Ser
 
 ## Set service status
 
-Services report their status to the [Service Control Manager](/windows/desktop/Services/service-control-manager) so that a user can tell whether a service is functioning correctly. By default, a service that inherits from <xref:System.ServiceProcess.ServiceBase> reports a limited set of status settings, which include SERVICE_STOPPED, SERVICE_PAUSED, and SERVICE_RUNNING. If a service takes a while to start, it's useful to report a SERVICE_START_PENDING status.
+Services report their status to the [Service Control Manager](/windows/desktop/Services/service-control-manager) so that a user can tell whether a service is functioning correctly. By default, a service that inherits from <xref:System.ServiceProcess.ServiceBase> reports a limited set of status settings, which include SERVICE_STOPPED, SERVICE_PAUSED, and SERVICE_RUNNING. If a service takes a while to start up, it's useful to report a SERVICE_START_PENDING status.
 
 You can implement the SERVICE_START_PENDING and SERVICE_STOP_PENDING status settings by adding code that calls the Windows [SetServiceStatus](/windows/desktop/api/winsvc/nf-winsvc-setservicestatus) function.
 
@@ -448,7 +449,7 @@ Each Windows service has a registry entry under the **HKEY_LOCAL_MACHINE\SYSTEM\
    End Sub
    ```
 
-   Typically, this value contains the full path to the executable for the Windows service. For the service to start correctly, the user must supply quotation marks for the path and each individual parameter. A user can change the parameters in the **ImagePath** registry entry to change the startup parameters for the Windows service. However, a better way is to change the value programmatically and expose the functionality in a user-friendly way, such as by using a management or configuration utility.
+   Typically, this value contains the full path to the executable for the Windows service. For the service to start up correctly, the user must supply quotation marks for the path and each individual parameter. A user can change the parameters in the **ImagePath** registry entry to change the startup parameters for the Windows service. However, a better way is to change the value programmatically and expose the functionality in a user-friendly way, such as by using a management or configuration utility.
 
 ## Build the service
 
@@ -508,7 +509,7 @@ For more information, see [How to: Install and uninstall services](how-to-instal
 
 2. In **Event Viewer**, expand **Applications and Services Logs**.
 
-3. Locate the listing for **MyNewLog** or **MyLogFile1** if you followed the procedure to add command-line arguments) and expand it. You should see the entries for the start and stop actions that your service performed.
+3. Locate the listing for **MyNewLog** (or **MyLogFile1** if you followed the procedure to add command-line arguments) and expand it. You should see the entries for the two actions (start and stop) that your service performed.
 
      ![Use the Event Viewer to see the event log entries](./media/windows-service-event-viewer.png)
 

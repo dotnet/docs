@@ -171,7 +171,8 @@
       "processor-meta-custom": {
         "issuetype": {
           "(?i)breaking-change$": {
-            "labels-add": "breaking-change"
+            "labels-add": "breaking-change",
+            "labels-add": "doc-idea"
           }
         }
       }

@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "uninstalling Windows services"
   - "installutil.exe tool"
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
-author: "ghogen"
 ---
 # How to: Install and uninstall Windows services
 

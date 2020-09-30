@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 09/18/2020
+ms.date: 09/29/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -77,6 +77,7 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 - [Middleware: Exception Handler Middleware throws original exception if handler not found](#middleware-exception-handler-middleware-throws-original-exception-if-handler-not-found)
 - [MVC: Controller action Async suffix removed](#mvc-async-suffix-trimmed-from-controller-action-names)
 - [MVC: JsonResult moved to Microsoft.AspNetCore.Mvc.Core](#mvc-jsonresult-moved-to-microsoftaspnetcoremvccore)
+- [MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate](#mvc-objectmodelvalidator-calls-a-new-overload-of-validationvisitorvalidate)
 - [MVC: Precompilation tool deprecated](#mvc-precompilation-tool-deprecated)
 - [MVC: Types changed to internal](#mvc-pubternal-types-changed-to-internal)
 - [MVC: Web API compatibility shim removed](#mvc-web-api-compatibility-shim-removed)
@@ -191,6 +192,10 @@ The following breaking changes in ASP.NET Core 3.0, 3.1, and 5.0 are documented 
 ***
 
 [!INCLUDE[Middleware: Exception Handler Middleware throws original exception if handler not found](~/includes/core-changes/aspnetcore/5.0/middleware-exception-handler-throws-original-exception.md)]
+
+***
+
+[!INCLUDE[MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate](~/includes/core-changes/aspnetcore/5.0/mvc-objectmodelvalidator-calls-new-overload.md)]
 
 ***
 

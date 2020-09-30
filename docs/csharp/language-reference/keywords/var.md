@@ -32,6 +32,7 @@ Beginning with C# 9.0, you can use a target-typed [`new` expression](../operator
 ```csharp
 List<int> xs = new();
 List<int>? ys = new();
+```
 
 ## Example
 

@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "services, creating"
   - "Windows Service applications, creating"
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
-author: "ghogen"
 ---
 # How to: Write Services Programmatically
 If you choose not to use the Windows Service project template, you can write your own services by setting up the inheritance and other infrastructure elements yourself. When you create a service programmatically, you must perform several steps that the template would otherwise handle for you:  
@@ -59,7 +58,7 @@ If you choose not to use the Windows Service project template, you can write you
 8. Build your project by selecting **Build Solution** from the **Build** menu.  
   
     > [!NOTE]
-    > Do not press F5 to run your project — you cannot run a service project in this way.  
+    > Do not press F5 to run your project—you cannot run a service project in this way.  
   
 9. Create a setup project and the custom actions to install your service. For an example, see [Walkthrough: Creating a Windows Service Application in the Component Designer](walkthrough-creating-a-windows-service-application-in-the-component-designer.md).  
   

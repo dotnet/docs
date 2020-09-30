@@ -1,7 +1,7 @@
 ---
-description: "var - C# Reference"
-title: "var - C# Reference"
-ms.date: 07/20/2015
+description: "var - C# reference"
+title: "var - C# reference"
+ms.date: 10/02/2020
 f1_keywords: 
   - "var"
   - "var_CSharpKeyword"
@@ -9,19 +9,29 @@ helpviewer_keywords:
   - "var keyword [C#]"
 ms.assetid: 0777850a-2691-4e3e-927f-0c850f5efe15
 ---
-# var (C# Reference)
+# var (C# reference)
 
-Beginning in Visual C# 3.0, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed just as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `i` are functionally equivalent:
+Beginning with C# 3, variables that are declared at method scope can have an implicit "type" `var`. An implicitly typed local variable is strongly typed just as if you had declared the type yourself, but the compiler determines the type. The following two declarations of `i` are functionally equivalent:
 
 ```csharp
 var i = 10; // Implicitly typed.
 int i = 10; // Explicitly typed.
 ```
 
-For more information, see [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md) and [Type Relationships in LINQ Query Operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md).
-
 > [!IMPORTANT]
-> When `var` is used with nullable reference types enabled, it always implies a nullable reference type even if the expression type isn't nullable.
+> When `var` is used with [nullable reference types](../builtin-types/nullable-reference-types.md) enabled, it always implies a nullable reference type even if the expression type isn't nullable.
+
+A common use of the `var` keyword is with constructor invocation expressions. The use of `var` allows you to not repeat a type name in a variable declaration and object instantiation, as the following example shows:
+
+```csharp
+var xs = new List<int>();
+```
+
+Beginning with C# 9.0, you can use a target-typed [`new` expression](../operators/new-operator.md) as an alternative:
+
+```csharp
+List<int> xs = new();
+```
 
 ## Example
 
@@ -31,6 +41,6 @@ The following example shows two query expressions. In the first expression, the 
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [Implicitly Typed Local Variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
+- [C# reference](../index.md)
+- [Implicitly typed local variables](../../programming-guide/classes-and-structs/implicitly-typed-local-variables.md)
+- [Type relationships in LINQ query operations](../../programming-guide/concepts/linq/type-relationships-in-linq-query-operations.md)

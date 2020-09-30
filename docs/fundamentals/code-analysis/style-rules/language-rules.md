@@ -37,7 +37,7 @@ Options for language rules can be specified in an EditorConfig file with the fol
 
 The style rules in this section are applicable to both C# and Visual Basic.
 
-- ["This." and "Me." qualifiers](ide0003_ide0009.md)
+- ['this.' and 'Me.' qualifiers](ide0003_ide0009.md)
   - dotnet\_style\_qualification\_for_field
   - dotnet\_style\_qualification\_for_property
   - dotnet\_style\_qualification\_for_method

@@ -154,7 +154,7 @@ A version of ICU is available that's specifically for WebAssembly workloads. Thi
 
 The following APIs are not supported:
 
-- `CultureInfo.EnglishName`
+- <xref:System.Globalization.CultureInfo.EnglishName?displayProperty=nameWithType>
 - `CultureInfo.NativeName`
 - `DateTimeFormatInfo.NativeCalendarName`
 - `RegionInfo.NativeName`

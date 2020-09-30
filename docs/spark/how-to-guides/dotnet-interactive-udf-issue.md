@@ -62,4 +62,4 @@ As recommended in the previous sections, we define both the UDF and the object i
 
 If we mark the [`SparSession`](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark/Sql/SparkSession.cs#L20) class as `[Serializable]`, we can get this to work, but this is not an ideal solution as we don't want to give the user the ability to serialize a SparkSession object, as that could lead to some very weird undesirable behavior. This is a known issue and being tracked [here](https://github.com/dotnet/spark/issues/619) and will be resolved in future versions.
 
-These are a few important things to keep in mind while implementing UDFs in .NET for Apache Spark interactive experience (such as [Azure Synapse Notebooks](https://docs.microsoft.com/en-us/azure/synapse-analytics/spark/apache-spark-development-using-notebooks)).
+These are a few important things to keep in mind while implementing UDFs in .NET for Apache Spark interactive experience (such as [Azure Synapse Notebooks](https://docs.microsoft.com/azure/synapse-analytics/spark/apache-spark-development-using-notebooks)).

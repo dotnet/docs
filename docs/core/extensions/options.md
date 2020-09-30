@@ -3,7 +3,7 @@ title: Options pattern in .NET
 author: IEvangelist
 description: Learn how to use the options pattern to represent groups of related settings in .NET apps.
 ms.author: dapine
-ms.date: 09/28/2020
+ms.date: 09/30/2020
 ---
 
 # Options pattern in .NET
@@ -27,9 +27,8 @@ Create the following `TransientFaultHandlingOptions` class:
 
 An options class:
 
-* Must be non-abstract with a public parameterless constructor.
-* All public read-write properties of the type are bound.
-* Fields are ***not*** bound.
+* Must be non-abstract with a public parameterless constructor
+* Contain public read-write properties to bind (fields are ***not*** bound)
 
 The following code:
 
@@ -83,7 +82,7 @@ In the preceding code, changes to the JSON configuration file after the app has 
 
 <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>:
 
-- Is useful in scenarios where options should be recomputed on every request. For more information, see [Use IOptionsSnapshot to read updated data](#use-ioptionssnapshot-to-read-updated-data).
+- Is useful in scenarios where options should be recomputed on every injection resolution, in [scoped or transient lifetimes](dependency-injection.md#service-lifetimes). For more information, see [Use IOptionsSnapshot to read updated data](#use-ioptionssnapshot-to-read-updated-data).
 - Is registered as [Scoped](dependency-injection.md#scoped) and therefore cannot be injected into a Singleton service.
 - Supports [named options](#named-options-support-using-iconfigurenamedoptions)
 
@@ -309,7 +308,7 @@ services.TryAddEnumerable(
 
 ## Options post-configuration
 
-Set post-configuration with <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601>. Post-configuration runs after all <xref:Microsoft.Extensions.Options.IConfigureOptions%601> configuration occurs:
+Set post-configuration with <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601>. Post-configuration runs after all <xref:Microsoft.Extensions.Options.IConfigureOptions%601> configuration occurs, and can be useful in scenarios when you need to override configuration:
 
 ```csharp
 services.PostConfigure<CustomOptions>(customOptions =>

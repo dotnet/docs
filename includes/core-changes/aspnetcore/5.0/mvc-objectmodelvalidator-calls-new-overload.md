@@ -1,6 +1,6 @@
 ### MVC: ObjectModelValidator calls a new overload of ValidationVisitor.Validate
 
-In ASP.NET Core 5.0, an overload was added to the <xref:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor> class. The overload accepts the top-level model instance that contains properties:
+In ASP.NET Core 5.0, an overload of the <xref:Microsoft.AspNetCore.Mvc.ModelBinding.Validation.ValidationVisitor.Validate%2A?displayProperty=nameWithType> was added. The new overload accepts the top-level model instance that contains properties:
 
 ```diff
   bool Validate(ModelMetadata metadata, string key, object model, bool alwaysValidateAtTopLevel);
@@ -37,7 +37,7 @@ This change was introduced to support validators, such as <xref:System.Component
 
 #### Recommended action
 
-Validation frameworks that rely on `ObjectModelValidator` to invoke the existing overload of `ValidationVisitor` must override the new method when targeting .NET 5:
+Validation frameworks that rely on `ObjectModelValidator` to invoke the existing overload of `ValidationVisitor` must override the new method when targeting .NET 5.0 or later:
 
 ```csharp
 public class MyCustomValidationVisitor : ValidationVisitor

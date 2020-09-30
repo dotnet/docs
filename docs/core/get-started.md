@@ -1,20 +1,20 @@
 ---
-title: Get started with .NET Core
-description: Find resources to learn how to build .NET Core applications on Windows, Linux, and macOS.
+title: Get started with .NET
+description: Create a Hello World app and find resources for learning how to build .NET applications on Windows, Linux, and macOS.
 author: adegeo
 ms.author: adegeo
-ms.date: 12/03/2019
+ms.date: 09/29/2020
 ms.custom: vs-dotnet
 ---
-# Get started with .NET Core
+# Get started with .NET
 
-This article provides information on getting started with .NET Core. .NET Core can be installed on Windows, Linux, and macOS. You can code in your favorite text editor and produce cross-platform libraries and applications.
+This article tells you how to create and run a "Hello World!" app.
 
-If you're unsure what .NET Core is or how it relates to other .NET technologies, start with the [What is .NET](https://dotnet.microsoft.com/learn/dotnet/what-is-dotnet) overview. Put simply, .NET Core is an open-source, cross-platform implementation of .NET.
+If you're unsure what .NET is, start with the [.NET introduction](introduction.md).
 
 ## Create an application
 
-First, download and install the [.NET Core SDK](https://dotnet.microsoft.com/download) on your computer.
+First, download and install the [.NET SDK](https://dotnet.microsoft.com/download) on your computer.
 
 Next, open a terminal such as **PowerShell**, **Command Prompt**, or **bash**. Enter the following `dotnet` commands to create and run a C# application:
 
@@ -23,13 +23,45 @@ dotnet new console --output sample1
 dotnet run --project sample1
 ```
 
-You should see the following output:
+You see the following output:
 
-```console
+```output
 Hello World!
 ```
 
-Congratulations! You've created a simple .NET Core application. You can also use [Visual Studio Code](./tutorials/with-visual-studio-code.md), [Visual Studio](./tutorials/with-visual-studio.md) (Windows only), or [Visual Studio for Mac](tutorials/with-visual-studio-mac.md) (macOS only), to create a .NET Core application.
+Congratulations! You've created a simple .NET application.
+
+You created two files: a code file named *Program.cs* and a project file named *sample1.csproj*:
+
+***Program.cs***
+
+```csharp
+namespace sample1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
+    }
+}
+```
+
+**sample1.csproj**
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
+```
+
+You can also use [Visual Studio Code](./tutorials/with-visual-studio-code.md), [Visual Studio](./tutorials/with-visual-studio.md) (Windows only), or [Visual Studio for Mac](tutorials/with-visual-studio-mac.md) (macOS only), to create a .NET Core application.
 
 ## Tutorials
 

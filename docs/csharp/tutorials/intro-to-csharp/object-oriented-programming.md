@@ -42,7 +42,7 @@ public class GiftCardAccount : BankAccount
 }
 ```
 
-Each of these classes inherits* the shared behavior from their shared *base class*, the `BankAccount` class. Write the implementations for new and different functionality in each of the *derived classes*.  These derived classes already have all the behavior defined in the `BankAccount` class.
+Each of these classes *inherits* the shared behavior from their shared *base class*, the `BankAccount` class. Write the implementations for new and different functionality in each of the *derived classes*.  These derived classes already have all the behavior defined in the `BankAccount` class.
 
 It's a good practice to create each new class in a different source file. In [Visual Studio](https://visualstudio.com), you can right-click on the project, and select *add class* to add a new class in a new file. In [Visual Studio Code](https://code.visualstudio.com), select *File* then *New* to create a new source file. In either tool, name the file to match the class: *InterestEarningAccount.cs*, *LineOfCreditAccount.cs*, and *GiftCardAccount.cs*.
 

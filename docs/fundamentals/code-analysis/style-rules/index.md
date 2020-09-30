@@ -22,19 +22,32 @@ ms.author: gewarren
 
    Rules that pertain to the naming of code elements. For example, you can specify that `async` method names must have an "Async" suffix.
 
+## Index
+
+The following pages list all the code style rules by rule ID and corresponding option(s), if any.
+
+> [!div class="mx-tdCol4BreakAll"]
+> | Rule ID | Title | Option | Option Group |
+> | - | - | - | - |
+> | [IDE0003](ide0003_ide0009.md) | Remove 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003_ide0009.md#dotnet\_style\_qualification\_for_field)<br/> [dotnet_style_qualification_for_property](ide0003_ide0009.md#dotnet\_style\_qualification\_for_property)<br/> [dotnet_style_qualification_for_method](ide0003_ide0009.md#dotnet\_style\_qualification\_for_method)<br/> [dotnet_style_qualification_for_event](ide0003_ide0009.md#dotnet\_style\_qualification\_for_event) | 'this.' and 'Me.' qualifiers
+> | [IDE0009](ide0003_ide0009.md) | Add 'this' or 'Me' qualification | [dotnet_style_qualification_for_field](ide0003_ide0009.md#dotnet\_style\_qualification\_for_field)<br/> [dotnet_style_qualification_for_property](ide0003_ide0009.md#dotnet\_style\_qualification\_for_property)<br/> [dotnet_style_qualification_for_method](ide0003_ide0009.md#dotnet\_style\_qualification\_for_method)<br/> [dotnet_style_qualification_for_event](ide0003_ide0009.md#dotnet\_style\_qualification\_for_event) | 'this.' and 'Me.' qualifiers
+> | [IDE0049](ide0049.md) | Use language keywords instead of framework type names for type references | [dotnet_style_predefined_type_for_locals_parameters_members](ide0049.md#dotnet\_style\_predefined\_type\_for\_locals\_parameters_members)<br/> [dotnet_style_predefined_type_for_member_access](ide0049.md#dotnet\_style\_predefined\_type\_for\_member_access)<br/> | Use language keywords instead of framework type names for type references
+
 ## Legend
 
 The following table shows the type of information that is provided for each rule in the reference documentation.
 
 |Item|Description|
 |----------|-----------------|
-| **Option name** |The code style option name for the rule, if any. Options for customizing style are specified in an EditorConfig file.|
 | **Rule ID** |The unique identifier for the rule. The rule ID is used for configuring rule severity and suppressing warnings in the code file.|
-| **Applicable languages** |Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.|
+| **Option name** |The code style option name for the rule, if any. Options for customizing style are specified in an EditorConfig file.|
 | **Option values** |The code style option values for the rule option, if any.|
 | **Default option value** |Default code style option value for the rule option, if any.
+| **Category** | The category for the rule. |
+| **Sub-category** | The sub-category for the rule, such as Language rules, Formatting rules or Naming rules. |
+| **Applicable languages** |Applicable .NET languages (C# or Visual Basic), along with the minimum language version, if applicable.|
 | **Introduced version** |Version of the .NET SDK or Visual Studio when the rule was first introduced.|
-| **Code examples** |Examples for different code styles corresponding to the rule.|
+| **Examples** |Examples for different code styles corresponding to the rule.|
 
 ## See also
 

@@ -124,7 +124,7 @@ Both EditorConfig files and global AnalyzerConfig files specify a key-value pair
 
 The above [general precedence rules](#general-options) apply for all options specified in configuration files. For diagnostic [severity configuration](configuration-options.md#severity-level) options, following additional precedence rules apply:
 
-- Diagnostic severity options specified from the compiler command line (`/nowarn` or `/warnaserror`) always override the diagnostic [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and Global AnalyzerConfig files.
+- Diagnostic severity options specified from the compiler command line (`/nowarn` or `/warnaserror`) always override the diagnostic [severity configuration](configuration-options.md#severity-level) options specified in EditorConfig and global AnalyzerConfig files.
 
 - Diagnostic severity options can also be specified with a [Ruleset](/visualstudio/code-quality/using-rule-sets-to-group-code-analysis-rules) file. However, rulesets files are deprecated in favor of EditorConfig and global AnalyzerConfig files. It's recommended that you [convert a ruleset file to an equivalent EditorConfig file](/visualstudio/code-quality/use-roslyn-analyzers#convert-an-existing-ruleset-file-to-editorconfig-file). Precedence for conflicting diagnostic severity entries from a ruleset file and EditorConfig/Global AnalyzerConfig files is _undefined_.
 

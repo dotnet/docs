@@ -38,7 +38,7 @@ The following code:
 
 :::code language="csharp" source="snippets/configuration/console-json/Program.cs" range="25-32":::
 
-In the preceding code, by default, changes to the JSON configuration file after the app has started are read.
+In the preceding code, changes to the JSON configuration file after the app has started are read.
 
 [`ConfigurationBinder.Get<T>`](xref:Microsoft.Extensions.Configuration.ConfigurationBinder.Get%2A) binds and returns the specified type. `ConfigurationBinder.Get<T>` may be more convenient than using `ConfigurationBinder.Bind`. The following code shows how to use `ConfigurationBinder.Get<T>` with the `TransientFaultHandlingOptions` class:
 
@@ -53,14 +53,14 @@ Console.WriteLine($"TransientFaultHandlingOptions.Enabled={options.Enabled}");
 Console.WriteLine($"TransientFaultHandlingOptions.AutoRetryDelay={options.AutoRetryDelay}");
 ```
 
-In the preceding code, by default, changes to the JSON configuration file after the app has started are read.
+In the preceding code, changes to the JSON configuration file after the app has started are read.
 
-An alternative approach when using the ***options pattern*** is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
+An alternative approach when using the options pattern is to bind the `"TransientFaultHandlingOptions"` section and add it to the [dependency injection service container](dependency-injection.md). In the following code, `TransientFaultHandlingOptions` is added to the service container with <xref:Microsoft.Extensions.DependencyInjection.OptionsConfigurationServiceCollectionExtensions.Configure%2A> and bound to configuration:
 
 ```csharp
 services.Configure<TransientFaultHandlingOptions>(
     configurationRoot.GetSection(
-        nameof(TransientFaultHandlingOptions)));
+        key: nameof(TransientFaultHandlingOptions)));
 ```
 
 > [!TIP]
@@ -97,15 +97,13 @@ In the preceding code, changes to the JSON configuration file after the app has 
   - [Reloadable configuration](#use-ioptionssnapshot-to-read-updated-data)
   - Selective options invalidation (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601>)
   
-[Post-configuration](#options-post-configuration) scenarios enable setting or changing options after all <xref:Microsoft.Extensions.Options.IConfigureOptions%601> configuration occurs.
-
 <xref:Microsoft.Extensions.Options.IOptionsFactory%601> is responsible for creating new options instances. It has a single <xref:Microsoft.Extensions.Options.IOptionsFactory%601.Create%2A> method. The default implementation takes all registered <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and <xref:Microsoft.Extensions.Options.IPostConfigureOptions%601> and runs all the configurations first, followed by the post-configuration. It distinguishes between <xref:Microsoft.Extensions.Options.IConfigureNamedOptions%601> and <xref:Microsoft.Extensions.Options.IConfigureOptions%601> and only calls the appropriate interface.
 
 <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> is used by <xref:Microsoft.Extensions.Options.IOptionsMonitor%601> to cache `TOptions` instances. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601> invalidates options instances in the monitor so that the value is recomputed (<xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryRemove%2A>). Values can be manually introduced with <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.TryAdd%2A>. The <xref:Microsoft.Extensions.Options.IOptionsMonitorCache%601.Clear%2A> method is used when all named instances should be recreated on demand.
 
 ## Use IOptionsSnapshot to read updated data
 
-Using <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>, options are computed once per request when accessed and cached for the lifetime of the request. Changes to the configuration are read after the app starts when using configuration providers that support reading updated configuration values.
+when you use <xref:Microsoft.Extensions.Options.IOptionsSnapshot%601>, options are computed once per request when accessed and are cached for the lifetime of the request. Changes to the configuration are read after the app starts when using configuration providers that support reading updated configuration values.
 
 The difference between `IOptionsMonitor` and `IOptionsSnapshot` is that:
 
@@ -140,7 +138,7 @@ The following example uses <xref:Microsoft.Extensions.Options.IOptionsMonitor%60
 
 :::code language="csharp" source="snippets/configuration/console-json/MonitorService.cs":::
 
-In the preceding code, by default, changes to the JSON configuration file after the app has started are read.
+In the preceding code, changes to the JSON configuration file after the app has started are read.
 
 ## Named options support using IConfigureNamedOptions
 
@@ -166,7 +164,7 @@ Consider the following *appsettings.json* file:
 }
 ```
 
-Rather than creating two classes to bind `TopItem:Month` and `TopItem:Year`,
+Rather than creating two classes to bind `Features:Personalize` and `Features:WeatherStation`,
 the following class is used for each section:
 
 ```csharp

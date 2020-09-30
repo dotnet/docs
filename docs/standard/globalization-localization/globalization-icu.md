@@ -158,7 +158,10 @@ The following APIs are not supported:
 - <xref:System.Globalization.CultureInfo.NativeName?displayProperty=nameWithType>
 - <xref:System.Globalization.DateTimeFormatInfo.NativeCalendarName?displayProperty=nameWithType>
 - <xref:System.Globalization.RegionInfo.NativeName?displayProperty=nameWithType>
-- `String.Normalize` and `String.IsNormalized` don't support rarely used `NormalizationForm.FormKC` and `NormalizationForm.FormKD` forms.
+
+The following APIs are supported with limitations:
+
+- <xref:System.String.Normalize(System.Text.NormalizationForm)?displayProperty=nameWithType> and <xref:System.String.IsNormalized(System.Text.NormalizationForm)?displayProperty=nameWithType> don't support the rarely used <xref:System.Text.NormalizationForm.FormKC?displayProperty=nameWithType> and <xref:System.Text.NormalizationForm.FormKD?displayProperty=nameWithType> forms.
 - `RegionInfo.CurrencyNativeName` returns the same value as `CurrencyEnglishName`.
 
 In addition, a list of supported locales can be found on the [dotnet/icu repo](https://github.com/dotnet/icu/blob/0f49268ddfd3331ca090f1c51d2baa2f75f6c6c0/icu-filters/optimal.json#L6-L54)

@@ -70,7 +70,7 @@ In this article, you will learn how to hook up your [.NET for Apache Spark](http
         .Start();
     ```
 
-6. In order to run your .NET for Apache Spark application, you should define the `spark-sql-kafka-0-10` module as part of the build definition in your Spark project, e.g. as a `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`) you should use the `--packages` command-line option like so:
+6. In order to run your .NET for Apache Spark application, you should define the `spark-sql-kafka-0-10` module as part of the build definition in your Spark project, using `libraryDependency` in `build.sbt` for sbt projects. For Spark environments such as `spark-submit` (or `spark-shell`) you should use the `--packages` command-line option like so:
 
     ```bash
     spark-shell --packages org.apache.spark:spark-sql-kafka-0-10_2.12:2.4.5

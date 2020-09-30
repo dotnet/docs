@@ -154,7 +154,7 @@ Add the following `ProcessUrlAsync` method below the `SumPageSizesAsync` method:
 static async Task<int> ProcessUrlAsync(string url, HttpClient client, CancellationToken token)
 {
     HttpResponseMessage response = await client.GetAsync(url, token);
-    byte[] content = await response.Content.ReadAsByteArrayAsync(token);
+    byte[] content = await response.Content.ReadAsByteArrayAsync();
     Console.WriteLine($"{url,-60} {content.Length,10:#,#}");
 
     return content.Length;

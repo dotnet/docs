@@ -372,6 +372,10 @@ items:
           href: code-analysis/code-quality-rule-options.md
         - name: Predefined configurations
           href: code-analysis/predefined-configurations.md
+      - name: Code style rules
+        items:
+        - name: Rule options
+          href: code-analysis/code-style-rule-options.md
     - name: Rule reference
       items:
       - name: Code quality rules
@@ -930,7 +934,24 @@ items:
           - name: CA2249
             href: code-analysis/quality-rules/ca2249.md
       - name: Code style rules
-        href: /visualstudio/ide/editorconfig-language-conventions
+        items:
+        - name: Overview
+          href: code-analysis/style-rules/index.md
+        - name: Language rules
+          items:
+          - name: Overview
+            displayName: "language rules"
+            href: code-analysis/style-rules/language-rules.md
+        - name: Formatting rules
+          items:
+          - name: Overview
+            displayName: "formatting rules"
+            href: code-analysis/style-rules/formatting-rules.md
+        - name: Naming rules
+          items:
+          - name: Overview
+            displayName: "naming rules"
+            href: code-analysis/style-rules/naming-rules.md
     - name: Platform compatibility analyzer
       href: ../standard/analyzers/platform-compat-analyzer.md
     - name: API analyzer

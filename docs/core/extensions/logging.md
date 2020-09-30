@@ -3,7 +3,7 @@ title: Logging in .NET
 author: IEvangelist
 description: Learn how to use the logging framework provided by the Microsoft.Extensions.Logging NuGet package.
 ms.author: dapine
-ms.date: 09/25/2020
+ms.date: 09/30/2020
 ---
 
 # Logging in .NET
@@ -333,9 +333,9 @@ With the preceding setup, navigating to the privacy or home page produces many `
 The following code sets the default log level when the default log level is not set in configuration:
 
 ```csharp
-public class Program
+class Program
 {
-    public static Task Main(string[] args) =>
+    static Task Main(string[] args) =>
         CreateHostBuilder(args).Build().RunAsync();
 
     static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -349,9 +349,9 @@ public class Program
 A filter function is invoked for all providers and categories that don't have rules assigned to them by configuration or code:
 
 ```csharp
-public class Program
+class Program
 {
-    public static Task Main(string[] args) =>
+    static Task Main(string[] args) =>
         CreateHostBuilder(args).Build().RunAsync();
 
     static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -426,6 +426,32 @@ class Program
 }
 ```
 
+## Non-host console app
+
+Logging code for apps without a [Generic Host](generic-host.md) differs in the way [providers are added](#add-providers) and [loggers are created](#create-logs). In a non-host console app, call the provider's `Add{provider name}` extension method while creating a `LoggerFactory`:
+
+```csharp
+class Program
+{
+    static void Main(string[] args)
+    {
+        using var loggerFactory = LoggerFactory.Create(builder =>
+        {
+            builder
+                .AddFilter("Microsoft", LogLevel.Warning)
+                .AddFilter("System", LogLevel.Warning)
+                .AddFilter("LoggingConsoleApp.Program", LogLevel.Debug)
+                .AddConsole();
+        });
+
+        ILogger logger = loggerFactory.CreateLogger<Program>();
+        logger.LogInformation("Example log message");
+    }
+}
+```
+
+The `loggerFactory` object is used to create an <xref:Microsoft.Extensions.Logging.ILogger> instance.
+
 ## Create logs in Main
 
 The following code logs in `Main` by getting an `ILogger` instance from DI after building the host:
@@ -473,9 +499,9 @@ The preferred approach for setting log filter rules is by using [Configuration](
 The following example shows how to register filter rules in code:
 
 ```csharp
-public class Program
+class Program
 {
-    public static Task Main(string[] args) =>
+    static Task Main(string[] args) =>
         CreateHostBuilder(args).Build().RunAsync();
 
     static IHostBuilder CreateHostBuilder(string[] args) =>

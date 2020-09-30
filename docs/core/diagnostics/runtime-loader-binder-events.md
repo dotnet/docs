@@ -1,3 +1,15 @@
+---
+title: "Loader and Binder Runtime Events"
+description: Review loader and binder ETW events, which collect information about the assembly loader and binder.
+ms.date: "09/27/2020"
+ms.topic: reference
+helpviewer_keywords
+  - "Assembly Loader events [.NET Core]"
+  - "Assembly Binder events [.NET Core]"
+  - "ETW, EventPipe, LTTng assembly loader and binder events (CoreCLR)"
+ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
+---
+
 # Loader ETW Events
 These events collect information relating to loading and unloading assemblies and modules.
 
@@ -44,15 +56,15 @@ This category consists of the following events:
 |AssemblyID|win:UInt64|ID of the assembly in which this module resides.|
 |ModuleFlags|win:UInt32|0x1: Domain neutral module.<br /><br /> 0x2: Module has a native image.<br /><br /> 0x4: Dynamic module.<br /><br /> 0x8: Manifest module.|
 |Reserved1|win:UInt32|Reserved field.|
-|ModuleILPath|win:UnicodeString|Path of the Microsoft intermediate language (MSIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|
+|ModuleILPath|win:UnicodeString|Path of the Common Intermediate Language (CIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|
 |ModuleNativePath|win:UnicodeString|Path of the module native image, if present (null-terminated).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module. (See Remarks.)|
-|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module. (See Remarks.)|
-|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name. (See Remarks.)|
-|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable. (See Remarks.)|
-|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable. (See Remarks.)|
-|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name. (See Remarks.)|
+|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module.|
+|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module.|
+|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name.|
+|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable.|
+|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable.|
+|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name.|
 
 ## ModuleUnload_V2 Event
 
@@ -65,30 +77,30 @@ This category consists of the following events:
 |`ModuleUnload_V2`|153|Raised when a module is unloaded during the lifetime of a process.
 |Field name|Data type|Description
 
-|----------------|---------------|-----------------
-|ModuleID|win:UInt64|Unique ID for the module.
-|AssemblyID|win:UInt64|ID of the assembly in which this module resides.
-|ModuleFlags|win:UInt32|0x1: Domain neutral module.<br /><br /> 0x2: Module has a native image.<br /><br /> 0x4: Dynamic module.<br /><br /> 0x8: Manifest module.
-|Reserved1|win:UInt32|Reserved field.
-|ModuleILPath|win:UnicodeString|Path of the Microsoft intermediate language (MSIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).
-|ModuleNativePath|win:UnicodeString|Path of the module native image, if present (null-terminated).
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.
-|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module. (See Remarks.)
-|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module. (See Remarks.)
-|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name. (See Remarks.)
-|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable. (See Remarks.)
-|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable. (See Remarks.)
-|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name. (See Remarks.)|
+|----------------|---------------|-----------------|
+|ModuleID|win:UInt64|Unique ID for the module.|
+|AssemblyID|win:UInt64|ID of the assembly in which this module resides.|
+|ModuleFlags|win:UInt32|0x1: Domain neutral module.<br /><br /> 0x2: Module has a native image.<br /><br /> 0x4: Dynamic module.<br /><br /> 0x8: Manifest module.|
+|Reserved1|win:UInt32|Reserved field.|
+|ModuleILPath|win:UnicodeString|Path of the Common Intermediate Language (CIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|
+|ModuleNativePath|win:UnicodeString|Path of the module native image, if present (null-terminated).|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module.|
+|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module.|
+|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name.|
+|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable.|
+|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable.|
+|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name.|
 
 ## ModuleDCStart_V2 Event
 
 |Keyword for raising the event|Event|Level|
-|-----------------------------------|-----------|-----------
+|-----------------------------------|-----------|-----------|
 |`LoaderKeyword` (0x8)|`DomainModuleLoad_V1`|Informational (4)
 
 |Event|Event ID|Description
-|-----------|--------------|-----------------
-|`ModuleDCStart_V2`|153|Enumerates modules during a start rundown.
+|-----------|--------------|-----------------|
+|`ModuleDCStart_V2`|153|Enumerates modules during a start rundown.|
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -96,15 +108,15 @@ This category consists of the following events:
 |AssemblyID|win:UInt64|ID of the assembly in which this module resides.|
 |ModuleFlags|win:UInt32|0x1: Domain neutral module.<br /><br /> 0x2: Module has a native image.<br /><br /> 0x4: Dynamic module.<br /><br /> 0x8: Manifest module.|
 |Reserved1|win:UInt32|Reserved field.|
-|ModuleILPath|win:UnicodeString|Path of the Microsoft intermediate language (MSIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|
+|ModuleILPath|win:UnicodeString|Path of the Common Intermediate Language (CIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|
 |ModuleNativePath|win:UnicodeString|Path of the module native image, if present (null-terminated).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
-|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module. (See Remarks.)|
-|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module. (See Remarks.)|
-|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name. (See Remarks.)|
-|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable. (See Remarks.)|
-|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable. (See Remarks.)|
-|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name. (See Remarks.)|
+|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module.|
+|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module.|
+|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name.|
+|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable.|
+|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable.|
+|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name.|
 
 ## ModuleDCEnd_V2 Event
 
@@ -122,16 +134,15 @@ This category consists of the following events:
 |AssemblyID|win:UInt64|ID of the assembly in which this module resides.|
 |ModuleFlags|win:UInt32|0x1: Domain neutral module.<br /><br /> 0x2: Module has a native image.<br /><br /> 0x4: Dynamic module.<br /><br /> 0x8: Manifest module.|
 |Reserved1|win:UInt32|Reserved field.|
-|ModuleILPath|win:UnicodeString|Path of the Microsoft intermediate language (MSIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|
+|ModuleILPath|win:UnicodeString|Path of the Common Intermediate Language (CIL) image for the module, or dynamic module name if it is a dynamic assembly (null-terminated).|
 |ModuleNativePath|win:UnicodeString|Path of the module native image, if present (null-terminated).|
-|ClrInstanceID|win:UInt16|Unique ID for the instance       of CLR or CoreCLR.|
-|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module. (See Remarks.)|
-|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module. (See Remarks.)|
-|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name. (See Remarks.)|
-|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable. (See Remarks.)|
-|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable. (See Remarks.)|
-|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name. (See Remarks.)|
-
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|ManagedPdbSignature|win:GUID|GUID signature of the managed program database (PDB) that matches this module.|
+|ManagedPdbAge|win:UInt32|Age number written to the managed PDB that matches this module.|
+|ManagedPdbBuildPath|win:UnicodeString|Path to the location where the managed PDB that matches this module was built. In some cases, this may just be a file name.|
+|NativePdbSignature|win:GUID|GUID signature of the Native Image Generator (NGen) PDB that matches this module, if applicable.|
+|NativePdbAge|win:UInt32|Age number written to the NGen PDB that matches this module, if applicable.|
+|NativePdbBuildPath|win:UnicodeString|Path to the location where the NGen PDB that matches this module was built, if applicable. In some cases, this may just be a file name.|
 
 ## AssemblyLoad_V1 Event
 
@@ -142,7 +153,6 @@ This category consists of the following events:
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
 |`AssemblyLoad_V1`|154|Raised when an assembly is loaded.|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -170,7 +180,7 @@ This category consists of the following events:
 |BindingID|win:UInt64|ID that uniquely identifies the assembly binding.|
 |AssemblyFlags|win:UInt32|0x1: Domain neutral assembly.<br /><br /> 0x2: Dynamic assembly.<br /><br /> 0x4: Assembly has a native image.<br /><br /> 0x8: Collectible assembly.|
 |AssemblyName|win:UnicodeString|Fully qualified assembly name.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
 ## AssemblyDCStart_V1
 
@@ -182,7 +192,6 @@ This category consists of the following events:
 |-----------|--------------|-----------------|
 |`AssemblyDCStart_V1`|155|Enumerates assemblies during a start rundown.|
 
-
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AssemblyID|win:UInt64|Unique ID for the assembly.|
@@ -191,7 +200,6 @@ This category consists of the following events:
 |AssemblyFlags|win:UInt32|0x1: Domain neutral assembly.<br /><br /> 0x2: Dynamic assembly.<br /><br /> 0x4: Assembly has a native image.<br /><br /> 0x8: Collectible assembly.|
 |AssemblyName|win:UnicodeString|Fully qualified assembly name.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-
 
 ## AssemblyLoadStart Event
 
@@ -207,11 +215,10 @@ This category consists of the following events:
 |----------------|---------------|-----------------|
 |AssemblyName|win:UnicodeString|Name of assembly name.|
 |AssemblyPath|win:UnicodeString|Path of assembly name.|
-|RequestingAssembly|win:UnicodeString|Name of the requesting ("parent") assemb.|
+|RequestingAssembly|win:UnicodeString|Name of the requesting ("parent") assembly.|
 |AssemblyLoadContext|win:UnicodeString|Load context of the assembly.|
 |RequestingAssemblyLoadContext|win:UnicodeString|Load context of the requesting ("parent") assembly.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
-
 
 ## AssemblyLoadStop Event
 
@@ -223,12 +230,11 @@ This category consists of the following events:
 |-----------|--------------|-----------------|
 |`AssemblyLoadStart`|291|An assembly load has been requested.
 
-
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AssemblyName|win:UnicodeString|Name of assembly name.|
 |AssemblyPath|win:UnicodeString|Path of assembly name.|
-|RequestingAssembly|win:UnicodeString|Name of the requesting ("parent") assemb.|
+|RequestingAssembly|win:UnicodeString|Name of the requesting ("parent") assembly.|
 |AssemblyLoadContext|win:UnicodeString|Load context of the assembly.|
 |RequestingAssemblyLoadContext|win:UnicodeString|Load context of the requesting ("parent") assembly.|
 |Success|win:Boolean|Whether the assembly load succeeded.|
@@ -247,7 +253,6 @@ This category consists of the following events:
 |-----------|--------------|-----------------|
 |`ResolutionAttempted`|292|An assembly load has been requested.
 
-
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |AssemblyName|win:UnicodeString|Name of assembly name.|
@@ -261,7 +266,6 @@ This category consists of the following events:
 
 ## AssemblyLoadContextResolvingHandlerInvoked Event
 
-
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|-----------|
 |`Binder` (0x4)|Informational (4)|
@@ -269,7 +273,6 @@ This category consists of the following events:
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
 |`AssemblyLoadContextResolvingHandlerInvoked`|293|An [AssemblyLoadContext.Resolving](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.loader.assemblyloadcontext.resolving) handler has been invoked.|
-
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -318,11 +321,9 @@ This category consists of the following events:
 
 ## KnownPathProbed Event
 
-
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|-----------|
 |`Binder` (0x4)|Informational (4)|
-
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|

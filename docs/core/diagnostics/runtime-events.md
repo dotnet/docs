@@ -2,9 +2,10 @@
 title: "Runtime Events"
 description: Review events emitted by CoreCLR runtime.
 ms.date: "09/14/2020"
+ms.topic: reference
 helpviewer_keywords: 
-  - "loader events [.NET Core]"
-  - "ETW, EventPipe loader events (CoreCLR)"
+  - "runtime events [.NET Core]"
+  - "ETW, EventPipe runtime events (CoreCLR)"
 ---
 # .NET Core runtime events
 
@@ -19,7 +20,7 @@ For runtime events in .NET Framework, please refer to the [CLR ETW Events docume
  These runtime events capture information about exceptions that are thrown.
 
  [Interop Events](runtime-interop-events.md)  
- These runtime events capture information about Microsoft intermediate language (MSIL) stub generation.  
+ These runtime events capture information about Common Intermediate Language (CIL) stub generation.
 
  [Loader and Binder Events](runtime-loader-binder-events.md)
  These events collect information relating to loading and unloading assemblies and modules.  

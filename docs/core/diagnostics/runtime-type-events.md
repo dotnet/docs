@@ -1,3 +1,14 @@
+---
+title: "Type Runtime Events"
+description: See ETW events that collect information specific to the type system, such as TypeLoadStart and TypeLoadStop.
+ms.date: "09/27/2020"
+ms.topic: reference
+helpviewer_keywords:
+  - "type system events" [.NET Core]"
+  - "ETW, EventPipe, LTTng type system events (CoreCLR)"
+ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
+---
+
 # Runtime Type Events
 
 These events collect information relating to loading types.
@@ -10,7 +21,7 @@ These events collect information relating to loading types.
 
 |Event|Event ID|Description|  
 |-----------|--------------|-----------------|  
-|`TypeLoadStart`|73|Raised when a module is loaded for an application domain.|  
+|`TypeLoadStart`|73|A type load has started.|
 
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  
@@ -25,7 +36,7 @@ These events collect information relating to loading types.
 
 |Event|Event ID|Description|  
 |-----------|--------------|-----------------|  
-|`TypeLoadStop`|74|Raised when a module is loaded for an application domain.|  
+|`TypeLoadStop`|74|A type load is finished.|
 
 |Field name|Data type|Description|  
 |----------------|---------------|-----------------|  

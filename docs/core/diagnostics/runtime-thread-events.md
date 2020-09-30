@@ -2,23 +2,15 @@
 title: "ThreadPool Runtime Events"
 description: Review thread pool ETW events, which collect information about threads in .NET Core. Thread pool events are worker thread pool events or I/O thread pool events.
 ms.date: "09/27/2020"
+ms.topic: reference
 helpviewer_keywords
   - "ThreadPool events [.NET Core]"
   - "ETW, thread pool events (CoreCLR)"
 ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
 ---
 # Threading Events
-These events collect information about worker and I/O threads.
+These events collect information about worker and I/O threads in the threadpool.
 
-|Keyword for raising the event|Level|
-|-----------------------------------|-----------|-----------|
-|`ThreadingKeyword` (0x10000)|Informational (4)|
-
-|Event|Event ID|Description|
-|-----------|--------------|-----------------|
-|`WorkerThreadRetire`|151|Raised when a module is loaded for an application domain.|
-
-|Field name|Data type|Description|
 
 ## IOThreadCreate_V1 Event
  The following table shows the keyword and level.
@@ -30,7 +22,7 @@ These events collect information about worker and I/O threads.
  The following table shows the event information.
 
 |Event|Event ID|Raised when|
-|-|-|-|
+|-----------------------------------|-----------|
 |`IOThreadCreate_V1`|44|An I/O thread is created in the thread pool.|
 
  The following table shows the event data.

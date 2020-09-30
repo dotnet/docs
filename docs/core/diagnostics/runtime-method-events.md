@@ -10,7 +10,7 @@ ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
 
 # Method ETW Events
 
-These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as the number of times a method was called.
+These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as methods that are loaded and unloaded.
 
 All method events have a level of "Informational (4)". All method verbose events have a level of "Verbose (5)".
 
@@ -271,7 +271,7 @@ The following table shows the keyword and level:
 |MethodID|win:UInt64|Unique identifier of the method.|
 |ModuleID|win:UInt64|Identifier of the module to which this method belongs.|
 |MethodToken|win:UInt32|0 for dynamic methods and JIT helpers.|
-|MethodILSize|win:UInt32|The size of the Microsoft intermediate language (MSIL) for the method that is being JIT-compiled.|
+|MethodILSize|win:UInt32|The size of the Common Intermediate Language (CIL) for the method that is being JIT-compiled.|
 |MethodNameSpace|win:UnicodeString|Full class name associated with the method.|
 |MethodName|win:UnicodeString|Name of the method.|
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|

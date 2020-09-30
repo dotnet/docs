@@ -2,6 +2,7 @@
 title: "Garbage Collection Runtime Events"
 description: View detailed information about garbage collection events.
 ms.date: "09/27/2020"
+ms.topic: reference
 helpviewer_keywords:
   - "GC events"
   - "garbage collection events [.NET Core]"
@@ -104,9 +105,9 @@ The following table shows the event data:
 |PinnedObjectCount|win:UInt32|The number of pinned (unmovable) objects.|
 |SinkBlockCount|win:UInt32|The number of synchronization blocks in use.|
 |GCHandleCount|win:UInt32|The number of garbage collection handles in use.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 |GenerationSize4|win:UInt64|The size, in bytes, of the pinned object heap.|
 |TotalPromotedSize4|win:UInt64|The number of bytes that survived in the pinned object heap after the last collection.|
-|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
 ## GCCreateSegment_V1 Event
 

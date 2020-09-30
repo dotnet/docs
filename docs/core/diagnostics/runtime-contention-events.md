@@ -1,3 +1,14 @@
+---
+title: "Thread Contention Events"
+description: See ETW events that collect information specific to the managed thread contention.
+ms.date: "09/27/2020"
+ms.topic: reference
+helpviewer_keywords:
+  - "thread contention events" [.NET Core]"
+  - "ETW, EventPipe, LTTng contention events (CoreCLR)"
+ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
+---
+
 # Contention Events
 
 These runtime events capture information about managed thread contentions.

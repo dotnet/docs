@@ -24,7 +24,7 @@ ms.author: gewarren
 
 ## Index
 
-The following pages list all the code style rules by rule ID and corresponding option(s), if any.
+The following table list all the code style rules by ID and option(s), if any.
 
 > [!div class="mx-tdCol4BreakAll"]
 > | Rule ID | Title | Option | Option Group |

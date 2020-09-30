@@ -156,7 +156,7 @@ The following APIs are not supported:
 
 - <xref:System.Globalization.CultureInfo.EnglishName?displayProperty=nameWithType>
 - <xref:System.Globalization.CultureInfo.NativeName?displayProperty=nameWithType>
-- `DateTimeFormatInfo.NativeCalendarName`
+- <xref:System.Globalization.DateTimeFormatInfo.NativeCalendarName?displayProperty=nameWithType>
 - `RegionInfo.NativeName`
 - `String.Normalize` and `String.IsNormalized` don't support rarely used `NormalizationForm.FormKC` and `NormalizationForm.FormKD` forms.
 - `RegionInfo.CurrencyNativeName` returns the same value as `CurrencyEnglishName`.

@@ -85,7 +85,7 @@ dotnet_analyzer_diagnostic.severity = <severity value>
 
 #### Precedence
 
-If you have multiple configuration entries that can be applied to the same rule ID, precedence is chosen in the following order:
+If you have multiple diagnostic severity configuration entries that can be applied to the same rule ID, precedence is chosen in the following order:
 
 - An entry for an individual rule by ID takes precedence over an entry for a category.
 - An entry for a category takes precedence over an entry for all analyzer rules.
@@ -100,3 +100,5 @@ dotnet_analyzer_diagnostic.severity = suggestion
 ```
 
 In the preceding example, all three severity entries are applicable to CA1822. However, using the specified precedence rules, the first rule ID-based entry wins over the next entries. In this example, CA1822 will have an effective severity of `error`. All other rules within the "Performance" category will have a severity of `warning`.
+
+For information about how inter-file precedence is decided, see [Precedence](configuration-files.md#precedence) section.

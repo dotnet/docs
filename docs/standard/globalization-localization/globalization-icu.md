@@ -155,7 +155,7 @@ A version of ICU is available that's specifically for WebAssembly workloads. Thi
 The following APIs are not supported:
 
 - <xref:System.Globalization.CultureInfo.EnglishName?displayProperty=nameWithType>
-- `CultureInfo.NativeName`
+- <xref:System.Globalization.CultureInfo.NativeName?displayProperty=nameWithType>
 - `DateTimeFormatInfo.NativeCalendarName`
 - `RegionInfo.NativeName`
 - `String.Normalize` and `String.IsNormalized` don't support rarely used `NormalizationForm.FormKC` and `NormalizationForm.FormKD` forms.

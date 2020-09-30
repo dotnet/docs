@@ -1,6 +1,6 @@
 ---
 title: "How to: Specify the Security Context for Services"
-description: Specify the security context for services. Services run in the default system account context have other system resource access rights than the logged-in user.
+description: Specify the security context for services. Services run in the default system account context has other system resource access rights than the logged-in user.
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Service applications, security"
@@ -11,10 +11,9 @@ helpviewer_keywords:
   - "services, security"
   - "ServiceInstaller class, security context"
 ms.assetid: 02187c7b-dbf2-45f2-96c2-e11010225a22
-author: "ghogen"
 ---
 # How to: Specify the Security Context for Services
-By default, services run in a different security context than that of the logged-in user. Services run in the context of the default system account, called `LocalSystem`, which gives them different access privileges to system resources than the user. You can change this behavior to specify a different user account under which your service should run.  
+By default, services run in a different security context than the logged-in user. Services runs in the context of the default system account, called `LocalSystem`, which gives them different access privileges to system resources than the user. You can change this behavior to specify a different user account under which your service should run.  
   
  You set the security context by manipulating the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> property for the process within which the service runs. This property allows you to set the service to one of four account types:  
   
@@ -35,7 +34,7 @@ By default, services run in a different security context than that of the logged
 2. In the designer, access the `ProjectInstaller` class and click the service process installer for the service you are working with.  
   
     > [!NOTE]
-    > For every service application, there are at least two installation components in the `ProjectInstaller` class — one that installs the processes for all services in the project, and one installer for each service the application contains. In this instance, you want to select <xref:System.ServiceProcess.ServiceProcessInstaller>.  
+    > For every service application, there are at least two installation components in the `ProjectInstaller` class—one that installs the processes for all services in the project, and one installer for each service the application contains. In this instance, you want to select <xref:System.ServiceProcess.ServiceProcessInstaller>.  
   
 3. In the **Properties** window, set the <xref:System.ServiceProcess.ServiceProcessInstaller.Account%2A> to the appropriate value.  
   

@@ -6,6 +6,7 @@ helpviewer_keywords:
   - "Windows Service applications, starting"
   - "services, starting"
 ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
+author: "ghogen"
 ---
 # How to: Start Services
 
@@ -16,7 +17,7 @@ Services can be set up to start automatically or manually. A service that starts
 > [!NOTE]
 > By default, services created with Visual Studio are set to start manually.
 
-There are several ways you can manually start a service—from **Server Explorer**, from the **Services Control Manager**, or from code using a component called the <xref:System.ServiceProcess.ServiceController>.
+There are several ways you can manually start a service — from **Server Explorer**, from the **Services Control Manager**, or from code using a component called the <xref:System.ServiceProcess.ServiceController>.
 
 You set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property on the <xref:System.ServiceProcess.ServiceInstaller> class to determine whether a service should be started manually or automatically.
 
@@ -24,9 +25,9 @@ You set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property 
 
 1. After creating your service, add the necessary installers for it. For more information, see [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md).
 
-2. In the designer, click the service installer for the service you're working with.
+2. In the designer, click the service installer for the service you are working with.
 
-3. In the **Properties** window, set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to one of the following values:
+3. In the **Properties** window, set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property to one of the following:
 
     |To have your service install|Set this value|
     |----------------------------------|--------------------|
@@ -39,7 +40,7 @@ You set the <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> property 
     > [!NOTE]
     > These and other properties can be changed after your service is installed.
 
-    There are several ways you can start a service that has its <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> process set to **Manual**—from **Server Explorer**, from the **Windows Services Control Manager**, or from code. It's important to note that not all of these methods actually start the service in the context of the **Services Control Manager**. **Server Explorer** and programmatic methods of starting the service actually manipulate the controller.
+    There are several ways you can start a service that has its <xref:System.ServiceProcess.ServiceInstaller.StartType%2A> process set to **Manual** — from **Server Explorer**, from the **Windows Services Control Manager**, or from code. It is important to note that not all of these methods actually start the service in the context of the **Services Control Manager**; **Server Explorer** and programmatic methods of starting the service actually manipulate the controller.
 
 ### To manually start a service from Server Explorer
 

@@ -12,6 +12,7 @@ helpviewer_keywords:
   - "uninstalling Windows services"
   - "installutil.exe tool"
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
+author: "ghogen"
 ---
 # How to: Install and uninstall Windows services
 
@@ -67,7 +68,7 @@ You can't run Windows service projects directly from the Visual Studio developme
 
 2. Access the directory where your project's compiled executable file is located.
 
-3. Run the [**New-Service**](/powershell/module/microsoft.powershell.management/new-service) cmdlet with your project's output and a service name as parameters:
+3. Run the [**New-Service**](/powershell/module/microsoft.powershell.management/new-service) cmdlet with the with your project's output and a service name as parameters:
 
     ```powershell
     New-Service -Name "YourServiceName" -BinaryPathName <yourproject>.exe

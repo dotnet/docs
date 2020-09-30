@@ -319,3 +319,182 @@ The following table shows the event data:
 |----------------|---------------|-----------------|
 |Count|win:UInt32|The number of finalizers that were run.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+
+## SetGCHandle Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCHandleKeyword` (0x2)|Informational (4)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`SetGCHandle`|30|A GC Handle has been set.|
+
+The following table shows the event data:
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|HandleID|win:Pointer|The address of the allocated handle.|
+|ObjectID|win:Pointer|The address of the object whose handle was created.|
+|Kind|win:UInt32|The type of GC handle that was set. <br /><br />`0x0`: WeakShort <br/><br/>`0x1`: WeakLong <br /><br />`0x2`: Strong <br /><br />`0x3`: Pinned <br /><br />`0x4`: Variable<br /><br />`0x5`: RefCounted <br /><br />`0x6`: Dependent<br /><br />`0x7`: AsyncPinned<br /><br />`0x8`: SizedRef|
+|Generation|win:UInt32|The generation of the object whose handle was created.|
+|AppDomainID|win:UInt64|The AppDomain ID.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## DestroyGCHandle Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCHandleKeyword` (0x2)|Informational (4)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`DestroyGCHandle`|31|A GC Handle is destroyed.|
+
+The following table shows the event data:
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|HandleID|win:Pointer|The address of the destroyed handle.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## PinObjectAtGCTime Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|Verbose (5)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`PinObjectAtGCTime`|33|An object was pinned during a GC.|
+
+The following table shows the event data:
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|HandleID|win:Pointer|The address of the handle.|
+|ObjectID|win:Pointer|The address of the pinned object.|
+|ObjectSize|win:UInt64|The size of the pinned object.|
+|TypeName|win:UnicodeString|The name of the type of the pinned object.| 
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## GCTriggered Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|Verbose (5)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`GCTriggered`|33|A GC has been triggered.|
+
+The following table shows the event data:
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|Reason|win:UInt32|The reason a GC was triggered.<br/><br/>`0x0`: AllocSmall<br/><br/>`0x1`: Induced <br/><br/>`0x2`: LowMemory <br/><br/>`0x3`: Empty <br/><br/>`0x4`: AllocLarge <br/><br/>`0x5`: OutOfSpaceSmallObjectHeap <br/><br/>`0x6`: OutOfSpaceLargeObjectHeap <br/><br/>`0x7`:InducedNoForce <br/><br/>`0x8`: Stress <br/><br/>`0x9`: InducedLowMemory|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## IncreaseMemoryPressure Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|202|Information (4)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------------------------------|-----------|
+|`IncreaseMemoryPressure`|200|Memory pressure was increased.|
+
+The following table shows the event data:
+
+|Field Name|Data type|Description|
+|-----------------------------------|-----------|
+|BytesAllocated|win:UInt64|Bytes allocated.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## DecreaseMemoryPressure Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|202|Information (4)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------------------------------|-----------|
+|`DecreaseMemoryPressure`|201|Memory pressure was decreased.|
+
+The following table shows the event data:
+
+|Field Name|Data type|Description|
+|-----------------------------------|-----------|
+|BytesFreed|win:UInt32|Bytes freed.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## GCMarkWithType Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|202|Information (4)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------------------------------|-----------|
+|`GCMarkWithType`|202|A GC root has been marked during GC mark phase.|
+
+The following table shows the event data:
+
+|Field Name|Data type|Description|
+|-----------------------------------|-----------|
+|HeapNum|win:UInt32|The heap number.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+|Type|win:UInt32|The GC root type.<br/><br/>`0x0`: Stack<br/><br/>`0x1`: Finalizer<br/><br/>`0x2`: Handle<br/><br/>`0x3`: Older<br/><br/>`0x4`: SizedRef<br/><br/>`0x5`: Overflow<br/><br/>|
+|Bytes|win:UInt64|The number of bytes marked.|
+
+## GCJoin_V2 Event
+
+The following table shows the keyword and level:
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`GCKeyword` (0x1)|Verbose (5)|
+
+The following table shows the event information:
+
+|Event|Event ID|Raised when|
+|-----------|--------------|-----------------|
+|`GCJoin_V2`|203|A GC thread joined.|
+
+The following table shows the event data:
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|Heap|win:UInt32|The heap number|
+|JoinTime|UInt32|Indicates whether this event is fired at the start of a join or end of a join (`0x0` for join start, `0x1` for join end)|
+|JoinType|UInt32|The join type. <br/><br/>`0x0`: Last Join<br/><br/>`0x1`: Join <br/><br/>`0x2`: Restart <br/><br/>`0x3`: First Reverse Join<br/><br/>`0x4`: Reverse Join<br/><br/>|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|

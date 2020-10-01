@@ -89,7 +89,7 @@ provides an overview of the logging techniques it supports.
 - [C# String Interpolation](../../csharp/language-reference/tokens/interpolated.md)
  can simplify writing logging code.
 
-- [Runtime Provider Event List](./runtime-events.md)
+- [Runtime Provider Event List](../../fundamentals/diagnostics/runtime-events.md)
 
 - The <xref:System.Exception.Message?displayProperty=nameWithType> property is useful for logging exceptions.
 

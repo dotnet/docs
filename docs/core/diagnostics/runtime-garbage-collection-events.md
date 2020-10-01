@@ -387,7 +387,7 @@ The following table shows the event data:
 |HandleID|win:Pointer|The address of the handle.|
 |ObjectID|win:Pointer|The address of the pinned object.|
 |ObjectSize|win:UInt64|The size of the pinned object.|
-|TypeName|win:UnicodeString|The name of the type of the pinned object.| 
+|TypeName|win:UnicodeString|The name of the type of the pinned object.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
 
 ## GCTriggered Event

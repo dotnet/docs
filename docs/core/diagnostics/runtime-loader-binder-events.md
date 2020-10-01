@@ -14,6 +14,7 @@ ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
 These events collect information relating to loading and unloading assemblies and modules.
 
 This category consists of the following events:
+
 - [DomainModuleLoad_V1](#domainmoduleload_v1-event)
 - [ModuleLoad_V2](#moduleload_v2-event)
 - [ModuleUnload_V2](#moduleunload_v2-event)

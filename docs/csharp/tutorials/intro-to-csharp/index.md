@@ -69,7 +69,13 @@ This tutorial assumes that you've finished the lessons listed above.
 
 ## [Introduction to classes](introduction-to-classes.md)
 
-This final tutorial is only available to run on your machine, using your own local development environment and .NET Core.
+This tutorial is only available to run on your machine, using your own local development environment and .NET Core.
 You'll build a console application and see the basic object-oriented features that are part of the C# language.
 
 This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and [Visual Studio Code](https://code.visualstudio.com/).
+
+## [Object oriented programming](object-oriented-programming.md)
+
+This tutorial teaches the concepts used in object-oriented programming. You'll learn the concepts of *abstraction*, *encapsulation*, *inheritance*, and *polymorphism* using C# examples.
+
+This tutorial assumes you've finished the online introductory tutorials, and you've installed [.NET Core SDK](https://dotnet.microsoft.com/download) and either [Visual Studio Code](https://code.visualstudio.com/) or [Visual Studio](https://visualstudio.com) on your development machine.

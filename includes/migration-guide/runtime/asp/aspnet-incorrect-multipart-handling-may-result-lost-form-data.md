@@ -2,7 +2,7 @@
 
 #### Details
 
-In applications that target .NET Framework 4.7.2 and earlier versions, ASP.Net might incorrectly parse multipart boundary values, resulting in form data being unavailable during request execution. Applications that target .NET Framework 4.8 or later versions correctly parse multipart data, so form values are available during request execution.
+In applications that target .NET Framework 4.7.2 and earlier versions, ASP.NET might incorrectly parse multipart boundary values, resulting in form data being unavailable during request execution. Applications that target .NET Framework 4.8 or later versions correctly parse multipart data, so form values are available during request execution.
 
 #### Suggestion
 

@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "Windows service applications, walkthroughs"
   - "Windows service applications, creating"
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
-author: "ghogen"
 ---
 # Tutorial: Create a Windows service app
 

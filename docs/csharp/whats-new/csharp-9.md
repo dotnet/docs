@@ -198,11 +198,11 @@ These features can improve performance in some scenarios. They should be used on
 
 ## Fit and finish features
 
-Many of the other features help you write code more efficiently. In C# 9.0, you can omit the type in a new expression when the created object's type is already known. The most common use is in field declarations:
+Many of the other features help you write code more efficiently. In C# 9.0, you can omit the type in a [`new` expression](../language-reference/operators/new-operator.md) when the created object's type is already known. The most common use is in field declarations:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="WeatherStationField":::
 
-Target type new can also be used when you need to create a new object to pass as a parameter to a method. Consider a `ForecastFor()` method with the following signature:
+Target-typed `new` can also be used when you need to create a new object to pass as an argument to a method. Consider a `ForecastFor()` method with the following signature:
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="ForecastSignature":::
 
@@ -214,7 +214,7 @@ Another nice use for this feature is to combine it with init only properties to 
 
 :::code language="csharp" source="snippets/whats-new-csharp9/FitAndFinish.cs" ID="InitWeatherStation":::
 
-You can return an instance created by the default constructor using a `return new();` expression.
+You can return an instance created by the default constructor using a `return new();` statement.
 
 A similar feature improves the target type resolution of [conditional expressions](../language-reference/operators/conditional-operator.md). With this change, the two expressions need not have an implicit conversion from one to the other, but may both have implicit conversions to a target type. You likely won’t notice this change. What you will notice is that some conditional expressions that previously required casts or wouldn’t compile now just work.
 

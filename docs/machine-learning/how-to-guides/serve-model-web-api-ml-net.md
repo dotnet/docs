@@ -15,7 +15,7 @@ Learn how to serve a pre-trained ML.NET machine learning model on the web using 
 ## Prerequisites
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or later or Visual Studio 2017 version 15.6 or later with the ".NET Core cross-platform development" workload installed.
-- Powershell.
+- PowerShell.
 - Pre-trained model. Use the [ML.NET Sentiment Analysis tutorial](../tutorials/sentiment-analysis.md) to build your own model or download this [pre-trained sentiment analysis machine learning model](https://github.com/dotnet/samples/blob/master/machine-learning/models/sentimentanalysis/sentiment_model.zip)
 
 ## Create ASP.NET Core Web API project
@@ -189,7 +189,7 @@ This code assigns the `PredictionEnginePool` by passing it to the controller's c
 Once everything is set up, it's time to test the application.
 
 1. Run the application.
-1. Open Powershell and enter the following code where PORT is the port your application is listening on.
+1. Open PowerShell and enter the following code where PORT is the port your application is listening on.
 
     ```powershell
     Invoke-RestMethod "https://localhost:<PORT>/api/predict" -Method Post -Body (@{SentimentText="This was a very bad steak"} | ConvertTo-Json) -ContentType "application/json"

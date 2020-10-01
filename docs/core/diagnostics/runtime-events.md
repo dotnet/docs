@@ -13,6 +13,9 @@ For runtime events in .NET Framework, please refer to the [CLR ETW Events docume
 
 ## In This Section
 
+ [Contention Events](runtime-contention-events.md)
+ These events collect information about monitor lock contentions.
+
  [Garbage Collection Events](runtime-garbage-collection-events.md)
  These events collect information pertaining to garbage collection. They help in diagnostics and debugging, including determining how many times garbage collection was performed, how much memory was freed during garbage collection, etc.
 

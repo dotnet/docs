@@ -1,6 +1,6 @@
 ---
 title: "Thread Contention Events"
-description: See ETW events that collect information specific to the managed thread contention.
+description: See ETW events that collect information specific to the monitor lock contentions.
 ms.date: "09/27/2020"
 ms.topic: reference
 helpviewer_keywords:
@@ -11,7 +11,7 @@ ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
 
 # Contention Events
 
-These runtime events capture information about managed thread contentions.
+These runtime events capture information about monitor lock contentions such as with Monitor.Enter or the C# lock keyword.
 
 This category consists of the following events:
 

@@ -11,7 +11,6 @@ ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
 # Threading Events
 These events collect information about worker and I/O threads in the threadpool.
 
-
 ## IOThreadCreate_V1 Event
  The following table shows the keyword and level.
 
@@ -245,5 +244,156 @@ These events collect information about worker and I/O threads in the threadpool.
 |ThroughputRatio|win:Double|The relative improvement in throughput caused by variations in active worker thread count during this interval.|
 |Confidence|win:Double|A measure of the validity of the ThroughputRatio field.|
 |NewcontrolSetting|win:Double|The number of active worker threads that will serve as the baseline for future variations in active thread count.|
-|NewThreadWaveMagnitude|Win:UInt16|The magnitude of future variations in active thread count.|
-|ClrInstanceID|Win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+|NewThreadWaveMagnitude|win:UInt16|The magnitude of future variations in active thread count.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
+
+## ThreadPoolEnqueue Event
+
+ The following table shows the keyword and level.
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ThreadingKeyword` (0x10000)|Verbose (5)
+
+ The following table shows the event information.
+
+|Event|Event ID|Description|
+|-----------|--------------|-----------------|
+|`ThreadPoolEnqueue`|61|A work item was enqueued in the thread pool queue.|
+
+ The following table shows the event data
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|WorkID|win:Pointer|Pointer to the work request.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## ThreadPoolDequeue Event
+
+ The following table shows the keyword and level.
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ThreadingKeyword` (0x10000)|Verbose (5)
+
+ The following table shows the event information.
+
+|Event|Event ID|Description|
+|-----------|--------------|-----------------|
+|`ThreadPoolEnqueue`|61|A work item was dequeued from the thread pool queue.|
+
+ The following table shows the event data
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|WorkID|win:Pointer|Pointer to the work request.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## ThreadPoolIOEnqueue Event
+
+ The following table shows the keyword and level.
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ThreadingKeyword` (0x10000)|Verbose (5)
+
+ The following table shows the event information.
+
+|Event|Event ID|Description|
+|-----------|--------------|-----------------|
+|`ThreadPoolIOEnqueue`|63|A thread enqueues an IO completion notification after an async IO completion occurs.|
+
+ The following table shows the event data
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|NativeOverlapped|win:Pointer|Reserved for internal use.|
+|Overlapped|win:Pointer|Reserved for internal use.|
+|MultiDequeues|win:Boolean|Reserved for internal use.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## ThreadPoolIODequeue Event
+
+ The following table shows the keyword and level.
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ThreadingKeyword` (0x10000)|Verbose (5)
+
+ The following table shows the event information.
+
+|Event|Event ID|Description|
+|-----------|--------------|-----------------|
+|`ThreadPoolIODequeue`|64|A thread dequeues the IO completion notification.|
+
+ The following table shows the event data
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|NativeOverlapped|win:Pointer|Reserved for internal use.|
+|Overlapped|win:Pointer|Reserved for internal use.|
+|MultiDequeues|win:Boolean|Reserved for internal use.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## ThreadPoolIOPack Event
+
+ The following table shows the keyword and level.
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ThreadingKeyword` (0x10000)|Verbose (5)|
+
+ The following table shows the event information.
+
+|Event|Event ID|Description|
+|-----------|--------------|-----------------|
+|`ThreadPoolIOPack`|65|ThreadPool overlapped IO pack is called.|
+
+ The following table shows the event data
+
+|Field name|Data type|Description|
+|----------------|---------------|-----------------|
+|NativeOverlapped|win:Pointer|Reserved for internal use.|
+|Overlapped|win:Pointer|Reserved for internal use.|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## ThreadCreating Event
+
+ The following table shows the keywords and level.
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ThreadingKeyword` (0x10000)|Informational (4)|
+
+ The following table shows the event information.
+
+|Event|Event ID|Description|
+|-----------------------------------|-----------|
+|`ThreadCreating|70|Thread has been created.|
+
+ The following table shows the event data.
+
+|Field name|Data type|Description|
+|-----------------------------------|-----------|
+|ID|win:Pointer|Thread ID|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|
+
+## ThreadRunning Event
+ The following table shows the keywords and level.
+
+|Keyword for raising the event|Level|
+|-----------------------------------|-----------|
+|`ThreadingKeyword` (0x10000)|Informational (4)|
+
+ The following table shows the event information.
+
+|Event|Event ID|Description|
+|-----------------------------------|-----------|
+|`ThreadRunning|71|Thread has started running.|
+
+ The following table shows the event data.
+
+|Field name|Data type|Description|
+|-----------------------------------|-----------|
+|ID|win:Pointer|Thread ID|
+|ClrInstanceID|win:UInt16|Unique ID for the instance of CoreCLR.|

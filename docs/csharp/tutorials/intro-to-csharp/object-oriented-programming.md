@@ -5,7 +5,7 @@ ms.date: 09/30/2020
 ---
 # Object-Oriented programming (C#)
 
-C# is, at its core, an object-oriented language. Four of the key techniques used in object-oriented programming are:
+C# is an object-oriented language. Four of the key techniques used in object-oriented programming are:
 
 - *Abstraction* means hiding the unnecessary details from type consumers.
 - *Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.
@@ -175,4 +175,4 @@ This tutorial demonstrated many of the techniques used in Object-Oriented progra
 - You used *Inheritance* when you leveraged the implementation already created in the `BankAccount` class to save code.
 - You used *Polymorphism* when you created `virtual` methods that derived classes could override to create specific behavior for that account type.
 
-Congratulations, you've finished all our introduction to C# tutorials. If you're eager to learn more, try more of our [tutorials](../index.md).
+Congratulations, you've finished all our introduction to C# tutorials. To learn more, try more of our [tutorials](../index.md).

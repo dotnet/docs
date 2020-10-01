@@ -38,17 +38,18 @@ Options for language rules can be specified in an EditorConfig file with the fol
 The style rules in this section are applicable to both C# and Visual Basic.
 
 - ['this.' and 'Me.' qualifiers](ide0003-ide0009.md)
-  - dotnet\_style\_qualification\_for_field
-  - dotnet\_style\_qualification\_for_property
-  - dotnet\_style\_qualification\_for_method
-  - dotnet\_style\_qualification\_for_event
+  - [dotnet\_style\_qualification\_for_field](ide0003-ide0009.md#dotnet\_style\_qualification\_for_field)
+  - [dotnet\_style\_qualification\_for_property](ide0003-ide0009.md#dotnet\_style\_qualification\_for_property)
+  - [dotnet\_style\_qualification\_for_method](ide0003-ide0009.md#dotnet\_style\_qualification\_for_method)
+  - [dotnet\_style\_qualification\_for_event](ide0003-ide0009.md#dotnet\_style\_qualification\_for_event)
 - [Language keywords instead of framework type names for type references](ide0049.md)
-  - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
-  - dotnet\_style\_predefined\_type\_for\_member_access
-- [Modifier preferences](#normalize-modifiers)
-  - dotnet\_style\_require\_accessibility_modifiers
-  - visual\_basic\_preferred\_modifier_order
-  - dotnet\_style\_readonly\_field
+  - [dotnet\_style\_predefined\_type\_for\_locals\_parameters_members](ide0049.md#dotnet\_style\_predefined\_type\_for\_locals\_parameters_members)
+  - [dotnet\_style\_predefined\_type\_for\_member_access](ide0049.md#dotnet\_style\_predefined\_type\_for\_member_access)
+- [Modifier preferences](modifier-preferences.md)
+  - [dotnet\_style\_require\_accessibility_modifiers](ide0040.md#dotnet\_style\_require\_accessibility_modifiers)
+  - [csharp\_preferred\_modifier_order](ide0036.md#csharp\_preferred\_modifier_order)
+  - [visual\_basic\_preferred\_modifier_order](ide0036.md#visual\_basic\_preferred\_modifier_order)
+  - [dotnet\_style\_readonly\_field](ide0044.md#dotnet\_style\_readonly\_field)
 - [Parentheses preferences](#parentheses-preferences)
   - dotnet\_style\_parentheses\_in\_arithmetic\_binary\_operators
   - dotnet\_style\_parentheses\_in\_other\_binary\_operators
@@ -70,102 +71,6 @@ The style rules in this section are applicable to both C# and Visual Basic.
   - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
 - [Parameter preferences](#parameter-preferences)
   - dotnet\_code\_quality\_unused\_parameters
-
-### <a name="normalize-modifiers"></a>Modifier preferences
-
-The style rules in this section concern modifier preferences, including requiring accessibility modifiers, specifying the desired modifier sort order, and requiring the read-only modifier.
-
-These rules could appear in an *.editorconfig* file as follows:
-
-```ini
-# CSharp and Visual Basic code style settings:
-[*.{cs,vb}]
-dotnet_style_require_accessibility_modifiers = always:suggestion
-dotnet_style_readonly_field = true:warning
-
-# CSharp code style settings:
-[*.cs]
-csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:suggestion
-
-# Visual Basic code style settings:
-[*.vb]
-visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async:suggestion
-```
-
-#### dotnet\_style\_require\_accessibility_modifiers
-
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_style_require_accessibility_modifiers |
-| **Rule ID** | IDE0040 |
-| **Applicable languages** | C# and Visual Basic |
-| **Option values** | `always` - Prefer accessibility modifiers to be specified.<br /><br />`for_non_interface_members` - Prefer accessibility modifiers to be declared except for public interface members. (This is the same as **always** and has been added for future-proofing if C# adds default interface methods.)<br /><br />`never` - Do not prefer accessibility modifiers to be specified.<br /><br />`omit_if_default` - Prefer accessibility modifiers to be specified except if they are the default modifier. |
-| **Default option value** | `for_non_interface_members:silent` |
-| **Introduced version** | Visual Studio 2017 version 15.5 |
-
-Code examples:
-
-```csharp
-// dotnet_style_require_accessibility_modifiers = always
-// dotnet_style_require_accessibility_modifiers = for_non_interface_members
-class MyClass
-{
-    private const string thisFieldIsConst = "constant";
-}
-
-// dotnet_style_require_accessibility_modifiers = never
-class MyClass
-{
-    const string thisFieldIsConst = "constant";
-}
-```
-
-#### csharp_preferred_modifier_order
-
-|Property|Value|
-|-|-|
-| **Option name** | csharp_preferred_modifier_order |
-| **Rule ID** | IDE0036 |
-| **Applicable languages** | C# |
-| **Option values** | One or more C# modifiers, such as `public`, `private`, and `protected` |
-| **Default option value** | `public, private, protected, internal, static, extern, new, virtual, abstract, sealed, override, readonly, unsafe, volatile, async:silent` |
-| **Introduced version** | Visual Studio 2017 version 15.5 |
-
-- When this rule is set to a list of modifiers, prefer the specified ordering.
-- When this rule is omitted from the file, do not prefer a modifier order.
-
-Code examples:
-
-```csharp
-// csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async
-class MyClass
-{
-    private static readonly int _daysInYear = 365;
-}
-```
-
-#### visual_basic_preferred_modifier_order
-
-|Property|Value|
-|-|-|
-| **Option name** | visual_basic_preferred_modifier_order |
-| **Rule ID** | IDE0036 |
-| **Applicable languages** | Visual Basic |
-| **Option values** | One or more Visual Basic modifiers, such as `Partial`, `Private`, and `Public` |
-| **Default option value** | `Partial, Default, Private, Protected, Public, Friend, NotOverridable, Overridable, MustOverride, Overloads, Overrides, MustInherit, NotInheritable, Static, Shared, Shadows, ReadOnly, WriteOnly, Dim, Const,WithEvents, Widening, Narrowing, Custom, Async:silent` |
-| **Introduced version** | Visual Studio 2017 version 15.5 |
-
-- When this rule is set to a list of modifiers, prefer the specified ordering.
-- When this rule is omitted from the file, do not prefer a modifier order.
-
-Code examples:
-
-```vb
-' visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public,Friend,NotOverridable,Overridable,MustOverride,Overloads,Overrides,MustInherit,NotInheritable,Static,Shared,Shadows,ReadOnly,WriteOnly,Dim,Const,WithEvents,Widening,Narrowing,Custom,Async
-Public Class MyClass
-    Private Shared ReadOnly daysInYear As Int = 365
-End Class
-```
 
 #### visual_basic_style_unused_value_expression_statement_preference
 
@@ -202,34 +107,6 @@ Code examples:
 
 Dim unused = Computation()
 Dim x = 1;
-```
-
-#### dotnet_style_readonly_field
-
-|Property|Value|
-|-|-|
-| **Option name** | dotnet_style_readonly_field |
-| **Rule ID** | IDE0044 |
-| **Applicable languages** | C# and Visual Basic |
-| **Option values** | `true` - Prefer that fields should be marked with `readonly` (C#) or `ReadOnly` (Visual Basic) if they are only ever assigned inline, or inside of a constructor<br /><br />`false` - Specify no preference over whether fields should be marked with `readonly` (C#) or `ReadOnly` (Visual Basic) |
-| **Default option value** | `true:suggestion` |
-| **Introduced version** | Visual Studio 2017 version 15.7 |
-
-Code examples:
-
-```csharp
-// dotnet_style_readonly_field = true
-class MyClass
-{
-    private readonly int _daysInYear = 365;
-}
-```
-
-```vb
-' dotnet_style_readonly_field = true
-Public Class MyClass
-    Private ReadOnly daysInYear As Int = 365
-End Class
 ```
 
 ### Parentheses preferences

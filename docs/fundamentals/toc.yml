@@ -942,10 +942,24 @@ items:
           - name: Overview
             displayName: "language rules"
             href: code-analysis/style-rules/language-rules.md
-          - name: "IDE0003 and IDE0009 ('this' and 'Me' qualifiers)"
-            href: code-analysis/style-rules/ide0003-ide0009.md
-          - name: IDE0049: Use language keywords instead of framework type names for type references
-            href: code-analysis/style-rules/ide0049.md
+          - name: 'this' and 'Me' preferences
+            items:
+            - name: IDE0003, IDE0009
+              href: code-analysis/style-rules/ide0003-ide0009.md
+          - name: Use language keywords instead of framework type names for type references
+            items:
+            - name: IDE0049
+              href: code-analysis/style-rules/ide0049.md
+          - name: Modifier preferences
+            displayName: "modifier preferences"
+            href: code-analysis/style-rules/modifier-preferences.md
+            items:
+            - name: IDE0036 (Order modifiers)
+              href: code-analysis/style-rules/ide0036.md
+            - name: IDE0040 (Add accessibility modifiers)
+              href: code-analysis/style-rules/ide0040.md
+            - name: IDE0044 (Add readonly modifier)
+              href: code-analysis/style-rules/ide0044.md
         - name: Formatting rules
           items:
           - name: Overview

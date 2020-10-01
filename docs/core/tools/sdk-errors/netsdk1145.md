@@ -1,11 +1,11 @@
 ---
-title: Resolve targeting or apphost pack missing while NuGet package restore is not supported
+title: Resolve NETSDK1145, targeting or apphost pack missing
 description: How to resolve the issue of targeting pack missing while NuGet package restore is not supported
 author: wli3
-ms.topic: how-to
+ms.topic: error-reference
 ms.date: 09/14/2020
 ---
-# Resolve targeting/apphost pack missing while NuGet package restore is not supported
+# Resolve NETSDK1145, targeting or apphost pack missing
 
 **This article applies to:** ✔️ .NET 5.0.100 SDK and later versions
 

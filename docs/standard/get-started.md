@@ -12,9 +12,9 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
 ## Tutorials for creating apps
 
 * Create a console app
-  * [using Visual Studio Code](tutorials/with-visual-studio-code.md)
-  * [using Visual Studio](tutorials/with-visual-studio.md) (Windows)
-  * [using Visual Studio for Mac](tutorials/with-visual-studio-mac.md) (macOS)
+  * [using Visual Studio Code](../core/tutorials/with-visual-studio-code.md)
+  * [using Visual Studio](../core/tutorials/with-visual-studio.md) (Windows)
+  * [using Visual Studio for Mac](../core/tutorials/with-visual-studio-mac.md) (macOS)
 * Create a web app
   * [with server-side web UI](/aspnet/core/tutorials/razor-pages/razor-pages-start)
   * [with client-side web UI](https://dotnet.microsoft.com/learn/aspnet/blazor-tutorial/intro)
@@ -32,9 +32,10 @@ The following step-by-step tutorials run on Windows, Linux, or macOS, except as 
 
 ## Tutorials for creating class libraries
 
-* [Create a .NET class library using Visual Studio Code](tutorials/library-with-visual-studio-code.md)
-* [Create a .NET class library using Visual Studio](tutorials/library-with-visual-studio.md) (Windows)
-* [Create a .NET class library using Visual Studio for Mac](tutorials/library-with-visual-studio-mac.md) (macOS)
+* Create a class library
+  * [using Visual Studio Code](../core/tutorials/library-with-visual-studio-code.md)
+  * [using Visual Studio](../core/tutorials/library-with-visual-studio.md) (Windows)
+  * [using Visual Studio for Mac](../core/tutorials/library-with-visual-studio-mac.md) (macOS)
 
 ## Resources for learning .NET languages
 
@@ -51,4 +52,4 @@ The following resources are for getting started with developing .NET apps but ar
 
 ## Next steps
 
-To learn more aout .NET, see [Introduction to .NET](../core/introduction.md).
+To learn more about .NET, see [Introduction to .NET](../core/introduction.md).

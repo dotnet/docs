@@ -15,7 +15,7 @@ Streaming support will also enable middle-tier applications to scale better, esp
 > [!WARNING]
 > Asynchronous calls are not supported if an application also uses the `Context Connection` connection string keyword.
 >
-> The members added to support streaming are used to retrieve data from queries and to pass parameters to queries and stored procedures. The streaming feature addresses basic OLTP and data migration scenarios and is applicable to on premise and off premise data migrations environments.
+> The members added to support streaming are used to retrieve data from queries and to pass parameters to queries and stored procedures. The streaming feature addresses basic OLTP and data migration scenarios and is applicable to on premises and off premises data migrations environments.
 
 ## Streaming Support from SQL Server
 

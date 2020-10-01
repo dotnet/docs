@@ -75,9 +75,9 @@ This category consists of the following events:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
-|`ModuleUnload_V2`|153|Raised when a module is unloaded during the lifetime of a process.
-|Field name|Data type|Description
+|`ModuleUnload_V2`|153|Raised when a module is unloaded during the lifetime of a process.|
 
+|Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |ModuleID|win:UInt64|Unique ID for the module.|
 |AssemblyID|win:UInt64|ID of the assembly in which this module resides.|

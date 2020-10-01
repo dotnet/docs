@@ -417,7 +417,7 @@ The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`GCKeyword` (0x1)|202|Information (4)|
+|`GCKeyword` (0x1)|Information (4)|
 
 The following table shows the event information:
 
@@ -438,7 +438,7 @@ The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`GCKeyword` (0x1)|202|Information (4)|
+|`GCKeyword` (0x1)|Information (4)|
 
 The following table shows the event information:
 
@@ -459,7 +459,7 @@ The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
-|`GCKeyword` (0x1)|202|Information (4)|
+|`GCKeyword` (0x1)|Information (4)|
 
 The following table shows the event information:
 

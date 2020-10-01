@@ -946,24 +946,60 @@ items:
             items:
             - name: IDE0003 and IDE0009
               href: code-analysis/style-rules/ide0003-ide0009.md
-          - name: Use language keywords instead of framework type names for type references
+          - name: Use language keywords for types
             items:
             - name: IDE0049
               href: code-analysis/style-rules/ide0049.md
           - name: Modifier preferences
-            displayName: "modifier preferences"
-            href: code-analysis/style-rules/modifier-preferences.md
             items:
-            - name: IDE0036 (Order modifiers)
+            - name: Overview
+              href: code-analysis/style-rules/modifier-preferences.md
+            - name: IDE0036
               href: code-analysis/style-rules/ide0036.md
-            - name: IDE0040 (Add accessibility modifiers)
+            - name: IDE0040
               href: code-analysis/style-rules/ide0040.md
-            - name: IDE0044 (Add readonly modifier)
+            - name: IDE0044
               href: code-analysis/style-rules/ide0044.md
           - name: Parentheses preferences
             items:
             - name: IDE0047 and IDE0048
               href: code-analysis/style-rules/ide0047-ide0048.md
+          - name: Expression-level preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/expression-level-preferences.md
+            - name: IDE0017
+              href: code-analysis/style-rules/ide0017.md
+            - name: IDE0028
+              href: code-analysis/style-rules/ide0028.md
+            - name: IDE0032
+              href: code-analysis/style-rules/ide0032.md
+            - name: IDE0033
+              href: code-analysis/style-rules/ide0033.md
+            - name: IDE0037
+              href: code-analysis/style-rules/ide0037.md
+            - name: IDE0045
+              href: code-analysis/style-rules/ide0045.md
+            - name: IDE0046
+              href: code-analysis/style-rules/ide0046.md
+            - name: IDE0054
+              href: code-analysis/style-rules/ide0054.md
+          - name: Null-checking preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/null-checking-preferences.md
+            - name: IDE0029
+              href: code-analysis/style-rules/ide0029.md
+            - name: IDE0031
+              href: code-analysis/style-rules/ide0031.md
+            - name: IDE0041
+              href: code-analysis/style-rules/ide0041.md
+          - name: Parameter preferences
+            items:
+            - name: Overview
+              href: code-analysis/style-rules/parameter-preferences.md
+            - name: IDE0060
+              href: code-analysis/style-rules/ide0060.md
         - name: Formatting rules
           items:
           - name: Overview

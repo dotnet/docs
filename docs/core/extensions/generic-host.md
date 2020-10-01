@@ -137,3 +137,4 @@ For more information, see [Configuration in .NET](configuration.md).
 
 - [Configuration in .NET](configuration.md)
 - [ASP.NET Core Web Host](/aspnet/core/fundamentals/host/web-host)
+- Generic host bugs should be created in the [github.com/dotnet/extensions](https://github.com/dotnet/extensions/issues) repo

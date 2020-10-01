@@ -40,7 +40,7 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
  A .xamlx file that defines a workflow service must contain a <`Service`> root element or a root element that contains any type derived from <xref:System.Workflow.ComponentModel.Activity>. When using the Visual Studio activity template, a .xamlx file is created. When using the WCF Workflow Service template, a .xamlx file is created.
 
 ## Hosting Workflow Services under Windows Server App Fabric
- Hosting a workflow service under Windows Server App Fabric is done in the same way as hosting under IIS/WAS. The only difference is the fact that Windows Server App Fabric is installed. Windows Server App Fabric provides tools that are added to Internet Information Services Manager, as well as powershell commandlets. These tools simplify deploying, managing, and tracking of workflow services and WCF services.
+ Hosting a workflow service under Windows Server App Fabric is done in the same way as hosting under IIS/WAS. The only difference is the fact that Windows Server App Fabric is installed. Windows Server App Fabric provides tools that are added to Internet Information Services Manager, as well as PowerShell commandlets. These tools simplify deploying, managing, and tracking of workflow services and WCF services.
 
 ## Referencing Custom Activities
  References to custom activities must be added to the <`Assemblies`> section under <`System.Web.Compilation`> so that they are loaded into the Application Domain and the XAML deserializer is able to locate the types. These settings can be made at the application level or in the root Web.config if the settings should be applied to all applications on the machine.

@@ -280,7 +280,8 @@ Libraries for some commonly used application functionality aren't included in th
 | [Microsoft.Extensions.Hosting](https://www.nuget.org/packages/Microsoft.Extensions.Hosting) | [Application lifetime management (Generic Host)](extensions/generic-host.md) |
 | [Microsoft.Extensions.DependencyInjection](https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection) | [Dependency injection (DI)](extensions/dependency-injection.md)
 | [Microsoft.Extensions.Configuration](https://www.nuget.org/packages/Microsoft.Extensions.Configuration) | [Configuration](extensions/configuration.md) |
-| [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) | [Logging](/aspnet/core/fundamentals/logging) |
+| [Microsoft.Extensions.Logging](https://www.nuget.org/packages/Microsoft.Extensions.Logging) | [Logging](extensions/logging) |
+| [Microsoft.Extensions.Options](https://www.nuget.org/packages/Microsoft.Extensions.Options) | [Options pattern](extensions/options) |
 
 For more information, see the [dotnet/extensions repository on GitHub](https://github.com/dotnet/extensions).
 
